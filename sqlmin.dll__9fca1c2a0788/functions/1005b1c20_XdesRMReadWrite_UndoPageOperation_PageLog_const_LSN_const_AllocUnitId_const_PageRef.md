@@ -1,0 +1,200 @@
+# XdesRMReadWrite::UndoPageOperation(PageLog const *,LSN const &,AllocUnitId const &,PageRef &)
+
+- ea: `0x1005b1c20`
+- end: `0x1005b22d0`
+- name: `?UndoPageOperation@XdesRMReadWrite@@IEAAXPEBVPageLog@@AEBVLSN@@AEBVAllocUnitId@@AEAVPageRef@@@Z`
+- size: `1712`
+- prototype: `void __fastcall(XdesRMReadWrite *__hidden this, const struct PageLog *, const struct LSN *, const struct AllocUnitId *, struct PageRef *)`
+- caller_count: `1`
+- callee_count: `74`
+- tags: ``
+
+## callers
+
+- `0x1005b4980`
+
+## callees
+
+- `0x100401010`
+- `0x100401490`
+- `0x100402000`
+- `0x1004025c0`
+- `0x100403030`
+- `0x10040da80`
+- `0x10040fc00`
+- `0x100415830`
+- `0x100415e90`
+- `0x100416bb0`
+- `0x1004279c0`
+- `0x10042d750`
+- `0x10042d820`
+- `0x10043e090`
+- `0x10043e660`
+- `0x1004410c0`
+- `0x100441e00`
+- `0x100444450`
+- `0x100445560`
+- `0x100445640`
+- `0x100445e80`
+- `0x100450f60`
+- `0x100455720`
+- `0x100456310`
+- `0x10046bf90`
+- `0x1004729d0`
+- `0x10047bc10`
+- `0x10047ffb0`
+- `0x100480030`
+- `0x1004839e0`
+- `0x100485a40`
+- `0x10049bfd0`
+- `0x1004b8e80`
+- `0x10052a260`
+- `0x10052b550`
+- `0x1005683c0`
+- `0x1005684e0`
+- `0x10056afe0`
+- `0x10056b1c0`
+- `0x10056b280`
+- `0x10056b530`
+- `0x10058cca0`
+- `0x1005af8f0`
+- `0x1005b0b80`
+- `0x1005b10b0`
+- `0x1005b1c20`
+- `0x1005b6770`
+- `0x1005b6b60`
+- `0x1005def40`
+- `0x1012c5d10`
+
+## import_xrefs
+
+- `KERNEL32!VirtualProtect` at `0x101d85d41`
+- `KERNEL32!VirtualProtect` at `0x101d88bf9`
+- `KERNEL32!VirtualProtect` at `0x101d85d41`
+- `KERNEL32!VirtualProtect` at `0x101d88bf9`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d844cd`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d84b5b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d84bef`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d8533d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d853cc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d856b7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d85781`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d85921`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d859dd`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d86219`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d862c3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d8630b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d86e12`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d86eb0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d875e8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d876a1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87a2c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87a57`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87a82`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87ef5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87f20`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87ff3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d8801e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88049`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88129`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88154`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88469`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88508`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d8856a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88801`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d888ec`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88b3a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d844cd`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d84b5b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d84bef`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d8533d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d853cc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d856b7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d85781`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d85921`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d859dd`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d86219`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d862c3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d8630b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d86e12`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d86eb0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d875e8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d876a1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87a2c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87a57`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87a82`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87ef5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87f20`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d87ff3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d8801e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88049`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88129`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88154`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88469`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88508`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d8856a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88801`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d888ec`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101d88b3a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d84a1e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d8636d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87059`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d8710b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d871bc`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d873a3`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87443`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d877af`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d8786a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87924`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87c51`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87cfe`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d84a1e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d8636d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87059`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d8710b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d871bc`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d873a3`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87443`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d877af`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d8786a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87924`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87c51`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101d87cfe`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101d844fd`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101d844fd`
+- `sqldk!SystemThread_TlsIndex` at `0x1005b1ddc`
+- `sqldk!SystemThread_TlsIndex` at `0x101d86ffc`
+- `sqldk!SystemThread_TlsIndex` at `0x101d870ae`
+- `sqldk!SystemThread_TlsIndex` at `0x101d8715f`
+- `sqldk!SystemThread_TlsIndex` at `0x101d87346`
+- `sqldk!SystemThread_TlsIndex` at `0x101d873e6`
+- `sqldk!SystemThread_TlsIndex` at `0x101d87752`
+- `sqldk!SystemThread_TlsIndex` at `0x101d8780d`
+- `sqldk!SystemThread_TlsIndex` at `0x101d878c7`
+- `sqldk!SystemThread_TlsIndex` at `0x101d87bf4`
+- `sqldk!SystemThread_TlsIndex` at `0x101d87ca1`
+- `sqldk!SystemThread_TlsOffset` at `0x1005b1de5`
+- `sqldk!SystemThread_TlsOffset` at `0x101d87005`
+- `sqldk!SystemThread_TlsOffset` at `0x101d870b7`
+- `sqldk!SystemThread_TlsOffset` at `0x101d87168`
+- `sqldk!SystemThread_TlsOffset` at `0x101d8734f`
+- `sqldk!SystemThread_TlsOffset` at `0x101d873ef`
+- `sqldk!SystemThread_TlsOffset` at `0x101d8775b`
+- `sqldk!SystemThread_TlsOffset` at `0x101d87816`
+- `sqldk!SystemThread_TlsOffset` at `0x101d878d0`
+- `sqldk!SystemThread_TlsOffset` at `0x101d87bfd`
+- `sqldk!SystemThread_TlsOffset` at `0x101d87caa`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101d85e8f`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101d85ebb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101d85e8f`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101d85ebb`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101d84c38`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101d84c38`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101d84c44`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101d84c44`
+
+## pseudocode
+
+```c
+
+```

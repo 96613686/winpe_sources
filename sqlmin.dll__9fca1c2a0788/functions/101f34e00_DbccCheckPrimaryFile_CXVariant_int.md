@@ -1,0 +1,167 @@
+# DbccCheckPrimaryFile(CXVariant *,int)
+
+- ea: `0x101f34e00`
+- end: `0x101f36565`
+- name: `?DbccCheckPrimaryFile@@YAXPEAVCXVariant@@H@Z`
+- size: `5989`
+- prototype: `void __fastcall(struct CXVariant *, int)`
+- caller_count: `0`
+- callee_count: `21`
+- tags: ``
+
+## callees
+
+- `0x100401490`
+- `0x100401fcf`
+- `0x100402000`
+- `0x1004025c0`
+- `0x10042f110`
+- `0x100432c80`
+- `0x100433170`
+- `0x100472440`
+- `0x1004deb10`
+- `0x10061fb80`
+- `0x101808570`
+- `0x101808f40`
+- `0x101809b10`
+- `0x1018ad4d0`
+- `0x101f34e00`
+- `0x101f798a0`
+- `0x101f79e20`
+- `0x101f7a810`
+- `0x101f7ae40`
+- `0x101f7b140`
+- `0x101f7b410`
+
+## import_xrefs
+
+- `KERNEL32!SetLastError` at `0x101f36529`
+- `KERNEL32!SetLastError` at `0x101f36529`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35560`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35648`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35700`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35c94`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35d7c`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35560`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35648`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35700`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35c94`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101f35d7c`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f3507c`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f360ed`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36137`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36176`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f361b5`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f361f4`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36243`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36282`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36303`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f3634f`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f3507c`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f360ed`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36137`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36176`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f361b5`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f361f4`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36243`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36282`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f36303`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101f3634f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f34e9a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f351ba`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f35f06`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f34e9a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f351ba`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f35f06`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101f35126`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101f35b57`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101f364b0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101f35126`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101f35b57`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101f364b0`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f35fce`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f3604c`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f35fce`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f3604c`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f35fda`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f36058`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f35fda`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f36058`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35010`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35267`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f352dd`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35353`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f353c9`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f3543f`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f354b5`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f3552b`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35613`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f357ac`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f3581d`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35be9`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35c5f`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35d47`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35e2f`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35010`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35267`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f352dd`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35353`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f353c9`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f3543f`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f354b5`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f3552b`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35613`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f357ac`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f3581d`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35be9`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35c5f`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35d47`
+- `sqllang!?SetColumn@CColMetaData@@QEAAXGAEBVCTypeInfo@@PEB_WEHUColMDStatus@@1GHH@Z` at `0x101f35e2f`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f34fce`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35228`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f3529b`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35311`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35387`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f353fd`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35473`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f354e9`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f355d0`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f356b8`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f3576c`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f357de`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35ba7`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35c1d`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35d04`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35dec`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f34fce`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35228`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f3529b`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35311`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35387`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f353fd`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35473`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f354e9`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f355d0`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f356b8`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f3576c`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f357de`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35ba7`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35c1d`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35d04`
+- `sqllang!?GetColMDStatUnset@@YA?AUColMDStatus@@XZ` at `0x101f35dec`
+- `sqllang!??1CColMetaData@@UEAA@XZ` at `0x101f364e5`
+- `sqllang!??1CColMetaData@@UEAA@XZ` at `0x101f364e5`
+- `sqllang!?FUnstructuredEndResultSet@CConnectionOutput@@QEAAHHPEA_KPEB_KH@Z` at `0x101f3515b`
+- `sqllang!?FUnstructuredEndResultSet@CConnectionOutput@@QEAAHHPEA_KPEB_KH@Z` at `0x101f35b8c`
+- `sqllang!?FUnstructuredEndResultSet@CConnectionOutput@@QEAAHHPEA_KPEB_KH@Z` at `0x101f364da`
+- `sqllang!?FUnstructuredEndResultSet@CConnectionOutput@@QEAAHHPEA_KPEB_KH@Z` at `0x101f3515b`
+- `sqllang!?FUnstructuredEndResultSet@CConnectionOutput@@QEAAHHPEA_KPEB_KH@Z` at `0x101f35b8c`
+- `sqllang!?FUnstructuredEndResultSet@CConnectionOutput@@QEAAHHPEA_KPEB_KH@Z` at `0x101f364da`
+- `sqllang!?Release@CSECDEK@@QEAAXXZ` at `0x101f364f4`
+- `sqllang!?Release@CSECDEK@@QEAAXXZ` at `0x101f364f4`
+
+## pseudocode
+
+```c
+
+```

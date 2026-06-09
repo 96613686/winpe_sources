@@ -1,0 +1,174 @@
+# RESOURCE::InitControl(IMemObj *)
+
+- ea: `0x101b9f550`
+- end: `0x101b9fe71`
+- name: `?InitControl@RESOURCE@@QEAAHPEAVIMemObj@@@Z`
+- size: `2337`
+- prototype: `__int64 __fastcall(RESOURCE *__hidden this, struct IMemObj *)`
+- caller_count: `0`
+- callee_count: `7`
+- tags: `registry_config, loader_planting, service_task, broker_com_uri`
+
+## callees
+
+- `0x100418690`
+- `0x100848a30`
+- `0x101b9f550`
+- `0x1023aea90`
+- `0x1023aecb0`
+- `0x10249a820`
+- `0x10249b000`
+
+## import_xrefs
+
+- `USER32!CharUpperW` at `0x101b9f879`
+- `USER32!CharUpperW` at `0x101b9f879`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101b9f8bc`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101b9f8bc`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101b9f8e2`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101b9f8e2`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x101b9f63a`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x101b9f6ae`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x101b9f90c`
+- `sqldk!?SOS_OS_OsInfo@@3VOsInfo@@A` at `0x101b9fe31`
+- `sqldk!?IsLinux@OsInfo@@QEBA?B_NXZ` at `0x101b9fe38`
+- `sqldk!?IsLinux@OsInfo@@QEBA?B_NXZ` at `0x101b9fe38`
+- `sqldk!?GetCommittedPotentialPages@MemoryNode@@SA_JXZ` at `0x101b9fbb9`
+- `sqldk!?GetCommittedPotentialPages@MemoryNode@@SA_JXZ` at `0x101b9fbb9`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101b9f58e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101b9f58e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101b9fa89`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101b9fa89`
+- `sqldk!SystemThread_TlsIndex` at `0x101b9fa33`
+- `sqldk!SystemThread_TlsIndex` at `0x101b9faf1`
+- `sqldk!SystemThread_TlsOffset` at `0x101b9fa3c`
+- `sqldk!SystemThread_TlsOffset` at `0x101b9fafa`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101b9f68a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101b9f906`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101b9fad5`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101b9f68a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101b9f906`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101b9fad5`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101b9fa57`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101b9fb15`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101b9fa57`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101b9fb15`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101b9fbf7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101b9fbf7`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101b9fb9a`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101b9fbae`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101b9fb9a`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101b9fbae`
+- `api-ms-win-crt-string-l1-1-0!iswspace` at `0x101b9fb75`
+- `api-ms-win-crt-string-l1-1-0!iswspace` at `0x101b9fb75`
+- `api-ms-win-crt-string-l1-1-0!iswcntrl` at `0x101b9fb82`
+- `api-ms-win-crt-string-l1-1-0!iswcntrl` at `0x101b9fb82`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi` at `0x101b9fba5`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi` at `0x101b9fba5`
+- `sqllang!?InitTdsControl@@YA_NPEAVIMemObj@@PEB_WKPEFAJJGH@Z` at `0x101b9f66f`
+- `sqllang!?InitTdsControl@@YA_NPEAVIMemObj@@PEB_WKPEFAJJGH@Z` at `0x101b9f66f`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f6c7`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f6e6`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f6f3`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f703`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f719`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f726`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f733`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f740`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f75a`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f767`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f774`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f781`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f78e`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7ad`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7ba`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7ca`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7e9`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7f6`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f80d`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f822`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f838`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f858`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f86c`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f87f`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f8ec`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f919`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f94a`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f97b`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fbfd`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fc12`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fc27`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fc3f`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fc70`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fca1`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fcd2`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fd03`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fd5b`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fdd7`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fe04`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fe42`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fe4f`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f6c7`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f6e6`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f6f3`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f703`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f719`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f726`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f733`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f740`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f75a`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f767`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f774`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f781`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f78e`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7ad`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7ba`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7ca`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7e9`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f7f6`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f80d`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f822`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f838`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f858`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f86c`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f87f`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f8ec`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f919`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f94a`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9f97b`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fbfd`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fc12`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fc27`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fc3f`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fc70`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fca1`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fcd2`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fd03`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fd5b`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fdd7`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fe04`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fe42`
+- `sqllang!?GetTdsHandle@@YAPEAUtds_handle@@XZ` at `0x101b9fe4f`
+- `sqllang!?GetCurrentInstance@CFeatureSwitchesLangSvc@@SAPEBV1@XZ` at `0x101b9f5eb`
+- `sqllang!?GetCurrentInstance@CFeatureSwitchesLangSvc@@SAPEBV1@XZ` at `0x101b9f7da`
+- `sqllang!?GetCurrentInstance@CFeatureSwitchesLangSvc@@SAPEBV1@XZ` at `0x101b9f845`
+- `sqllang!?GetCurrentInstance@CFeatureSwitchesLangSvc@@SAPEBV1@XZ` at `0x101b9f5eb`
+- `sqllang!?GetCurrentInstance@CFeatureSwitchesLangSvc@@SAPEBV1@XZ` at `0x101b9f7da`
+- `sqllang!?GetCurrentInstance@CFeatureSwitchesLangSvc@@SAPEBV1@XZ` at `0x101b9f845`
+- `sqlfabric!GetAnalyticalServiceTypeFromWinFabProperty` at `0x101b9f8b2`
+- `sqlfabric!GetAnalyticalServiceTypeFromWinFabProperty` at `0x101b9f8b2`
+- `hostregdll!HostReg_GetApplicationName` at `0x101b9f88c`
+- `hostregdll!HostReg_GetApplicationName` at `0x101b9f88c`
+
+## string_xrefs
+
+- `0x101b9fd1a`: `VnetPrivateLinkIPv6WithPolicyPrefix`
+- `0x101b9fe22`: `UriForceRefresh`
+- `0x101b9fce9`: `VnetPrivateLinkIPv6Prefix`
+- `0x101b9fa76`: `sql\ntdbms\common\serverconfig.cpp`
+
+## pseudocode
+
+```c
+
+```

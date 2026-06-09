@@ -1,0 +1,259 @@
+# FidoClientProperties::Parse(IXMLDOMDocument *)
+
+- ea: `0x1023db280`
+- end: `0x1023dc948`
+- name: `?Parse@FidoClientProperties@@QEAAJPEAUIXMLDOMDocument@@@Z`
+- size: `5832`
+- prototype: `__int64 __fastcall(FidoClientProperties *__hidden this, struct IXMLDOMDocument *)`
+- caller_count: `3`
+- callee_count: `11`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x1023d7c50`
+- `0x1023d8ce0`
+- `0x1023d9070`
+
+## callees
+
+- `0x100401490`
+- `0x1004025c0`
+- `0x100415e90`
+- `0x10042d820`
+- `0x10042d8d4`
+- `0x10045e1b8`
+- `0x100626050`
+- `0x100999ad0`
+- `0x1023db280`
+- `0x1023e1380`
+- `0x1024a0070`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db36e`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db405`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db51c`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db5a5`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db6b7`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db8f3`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db9ba`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dbb2e`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dbbfe`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dbd81`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dbe51`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc0d6`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc1a6`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc329`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc3f9`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc587`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db36e`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db405`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db51c`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db5a5`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db6b7`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db8f3`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023db9ba`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dbb2e`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dbbfe`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dbd81`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dbe51`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc0d6`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc1a6`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc329`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc3f9`
+- `OLEAUT32!__imp_SysAllocString` at `0x1023dc587`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023db4ab`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023db64d`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023db941`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dba70`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dbb7c`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dbcc4`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dbdcf`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc004`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc124`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc26e`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc377`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc4c9`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc5d5`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc6d6`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc727`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc776`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023db4ab`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023db64d`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023db941`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dba70`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dbb7c`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dbcc4`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dbdcf`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc004`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc124`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc26e`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc377`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc4c9`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc5d5`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc6d6`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc727`
+- `OLEAUT32!__imp_SysFreeString` at `0x1023dc776`
+- `OLEAUT32!__imp_VariantClear` at `0x1023db4e5`
+- `OLEAUT32!__imp_VariantClear` at `0x1023db687`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dbaaa`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dbcf9`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dc045`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dc2a3`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dc4fe`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dc63a`
+- `OLEAUT32!__imp_VariantClear` at `0x1023db4e5`
+- `OLEAUT32!__imp_VariantClear` at `0x1023db687`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dbaaa`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dbcf9`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dc045`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dc2a3`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dc4fe`
+- `OLEAUT32!__imp_VariantClear` at `0x1023dc63a`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db349`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db3e2`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db4f7`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db582`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db692`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db8cc`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db995`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dbb07`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dbbd9`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dbd5a`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dbe2c`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc0af`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc181`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc302`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc3d4`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc560`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db349`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db3e2`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db4f7`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db582`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db692`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db8cc`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023db995`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dbb07`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dbbd9`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dbd5a`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dbe2c`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc0af`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc181`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc302`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc3d4`
+- `sqldk!??2@YAPEAX_K@Z` at `0x1023dc560`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023db457`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023db5f7`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023db758`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dbc59`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dbf46`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dbfae`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dc212`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dc46d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023db457`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023db5f7`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023db758`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dbc59`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dbf46`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dbfae`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dc212`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023dc46d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023db9ff`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1023db9ff`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023db8bd`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dbaf8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dbd4b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dbeef`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dc0a0`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dc2f3`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dc551`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023db8bd`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dbaf8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dbd4b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dbeef`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dc0a0`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dc2f3`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1023dc551`
+- `sqldk!SystemThread_TlsIndex` at `0x1023db2d5`
+- `sqldk!SystemThread_TlsOffset` at `0x1023db2df`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023db4d5`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023db677`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023db819`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023db965`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dba15`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dba9a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dbba0`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dbce8`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dbdf3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc02e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc148`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc292`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc39b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc4ed`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc5f9`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc6fa`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc74b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc79a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023db4d5`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023db677`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023db819`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023db965`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dba15`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dba9a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dbba0`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dbce8`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dbdf3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc02e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc148`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc292`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc39b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc4ed`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc5f9`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc6fa`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc74b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1023dc79a`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1023db2fa`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1023db2fa`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023db46d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023db4c3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023db60e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023db665`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023db82f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023db842`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023db859`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023db953`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023dba88`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023dbb8e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023dbc69`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023dbcd6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023dbde1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023dbf58`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023dbfc0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1023dc01c`
+
+## string_xrefs
+
+- `0x1023db323`: `[%ls] Empty XML.`
+- `0x1023db3b3`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023db4eb`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023db74b`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023db8a1`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023db9ee`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dbade`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dbc4a`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dbd2f`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dbed3`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dbefb`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dbf9f`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dc084`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dc205`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dc2d7`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dc460`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+- `0x1023dc535`: `Sql\Ntdbms\storeng\fido\common\FidoAgent.cpp`
+
+## pseudocode
+
+```c
+
+```

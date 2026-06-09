@@ -1,0 +1,223 @@
+# RBPEXImpl::Init(RecoveryUnit *,ulong,ulong,bool,HkDatabase * *,HkTable * *)
+
+- ea: `0x101adb690`
+- end: `0x101add867`
+- name: `?Init@RBPEXImpl@@QEAAXPEAVRecoveryUnit@@KK_NPEAPEAUHkDatabase@@PEAPEAUHkTable@@@Z`
+- size: `8663`
+- prototype: `void __usercall(RBPEXImpl *__hidden this@<rcx>, struct RecoveryUnit *@<rdx>, unsigned int@<r8d>, unsigned int@<r9d>, bool, struct HkDatabase **, struct HkTable **)`
+- caller_count: `2`
+- callee_count: `31`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x101ad59f0`
+- `0x101ad60e0`
+
+## callees
+
+- `0x100401fcf`
+- `0x100403030`
+- `0x10040eca0`
+- `0x10047ffb0`
+- `0x1005aebe0`
+- `0x10120ec50`
+- `0x1016c9e80`
+- `0x1018c9d70`
+- `0x101abc610`
+- `0x101acb420`
+- `0x101acb4d0`
+- `0x101acb6f0`
+- `0x101acc120`
+- `0x101ace230`
+- `0x101adb690`
+- `0x101add870`
+- `0x101adebf0`
+- `0x101adf530`
+- `0x101ae04e0`
+- `0x101ae6860`
+- `0x101ae6a90`
+- `0x101b08140`
+- `0x101b08210`
+- `0x101b1cad0`
+- `0x101b1d8e0`
+- `0x101b37f70`
+- `0x101b38590`
+- `0x101bc5260`
+- `0x101bc58e0`
+- `0x1023aea90`
+- `0x1023aecb0`
+
+## import_xrefs
+
+- `KERNEL32!VirtualProtect` at `0x101add65d`
+- `KERNEL32!VirtualProtect` at `0x101add65d`
+- `KERNEL32!InterlockedPushEntrySList` at `0x101adc24a`
+- `KERNEL32!InterlockedPushEntrySList` at `0x101adc24a`
+- `KERNEL32!GetCurrentThreadId` at `0x101adc6e4`
+- `KERNEL32!GetCurrentThreadId` at `0x101add3f1`
+- `KERNEL32!GetCurrentThreadId` at `0x101adc6e4`
+- `KERNEL32!GetCurrentThreadId` at `0x101add3f1`
+- `sqldk!?CreateHiddenScheduler@SOS_Node@@QEAAPEAVSOS_Scheduler@@_KJH_N@Z` at `0x101adce88`
+- `sqldk!?CreateHiddenScheduler@SOS_Node@@QEAAPEAVSOS_Scheduler@@_KJH_N@Z` at `0x101adce88`
+- `sqldk!?EnqueueTask@SOS_Scheduler@@QEAA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@@Z` at `0x101adcedd`
+- `sqldk!?EnqueueTask@SOS_Scheduler@@QEAA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@@Z` at `0x101adcedd`
+- `sqldk!?sm_Priority@SOS_PublicGlobals@@2HA` at `0x101adce74`
+- `sqldk!?sm_NodeManager@SOS_PublicGlobals@@2VNodeManager@@A` at `0x101adce4e`
+- `sqldk!?m_CollectingStatistics@CommonGlobalState@@2_NA` at `0x101add4fc`
+- `sqldk!?VirtualAlloc@MemoryClerkInternal@@QEAAPEAXPEAX_KKK@Z` at `0x101adc1ce`
+- `sqldk!?VirtualAlloc@MemoryClerkInternal@@QEAAPEAXPEAX_KKK@Z` at `0x101adc3e4`
+- `sqldk!?VirtualAlloc@MemoryClerkInternal@@QEAAPEAXPEAX_KKK@Z` at `0x101adcb41`
+- `sqldk!?VirtualAlloc@MemoryClerkInternal@@QEAAPEAXPEAX_KKK@Z` at `0x101adcbe6`
+- `sqldk!?VirtualAlloc@MemoryClerkInternal@@QEAAPEAXPEAX_KKK@Z` at `0x101adc1ce`
+- `sqldk!?VirtualAlloc@MemoryClerkInternal@@QEAAPEAXPEAX_KKK@Z` at `0x101adc3e4`
+- `sqldk!?VirtualAlloc@MemoryClerkInternal@@QEAAPEAXPEAX_KKK@Z` at `0x101adcb41`
+- `sqldk!?VirtualAlloc@MemoryClerkInternal@@QEAAPEAXPEAX_KKK@Z` at `0x101adcbe6`
+- `sqldk!?CreateMemoryClerk@SOS_Node@@SAPEAVMemoryClerk@@PEB_WW4SOSHOST_MEMORYCLERK_TYPE@@W4SOS_CallerType@@@Z` at `0x101adbc97`
+- `sqldk!?CreateMemoryClerk@SOS_Node@@SAPEAVMemoryClerk@@PEB_WW4SOSHOST_MEMORYCLERK_TYPE@@W4SOS_CallerType@@@Z` at `0x101adbc97`
+- `sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z` at `0x101adcdc0`
+- `sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z` at `0x101adcdf1`
+- `sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z` at `0x101adce35`
+- `sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z` at `0x101add118`
+- `sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z` at `0x101adcdc0`
+- `sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z` at `0x101adcdf1`
+- `sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z` at `0x101adce35`
+- `sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z` at `0x101add118`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adbf10`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc01f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc51c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adcf58`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101add353`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adbf10`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc01f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc51c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adcf58`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101add353`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adbac5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc20c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc2c7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc385`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc3b5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc41f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc4c0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc642`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc742`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc7de`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc884`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc9e4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adca2e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adcb7f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adcfd3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adcfff`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101add0d5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101add261`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101add29d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101add2d6`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adbac5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc20c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc2c7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc385`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc3b5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc41f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc4c0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc642`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc742`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc7de`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc884`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adc9e4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adca2e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adcb7f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adcfd3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101adcfff`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101add0d5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101add261`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101add29d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101add2d6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101adb92d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101adbd87`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101add84d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101adb92d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101adbd87`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101add84d`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101add54a`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101add54a`
+- `sqldk!?CreateMemObject@MemoryObjectFactory@@SAPEAVIMemObj@@W4SOSHOST_MEMOBJ_ID@@KPEAVPageAllocator@@FF@Z` at `0x101adbcd5`
+- `sqldk!?CreateMemObject@MemoryObjectFactory@@SAPEAVIMemObj@@W4SOSHOST_MEMOBJ_ID@@KPEAVPageAllocator@@FF@Z` at `0x101adbcd5`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adbe24`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc5a0`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc68d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc928`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adca9d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101add469`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adbe24`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc5a0`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc68d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adc928`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101adca9d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101add469`
+- `sqldk!SystemThread_TlsIndex` at `0x101add51a`
+- `sqldk!SystemThread_TlsIndex` at `0x101add55d`
+- `sqldk!SystemThread_TlsOffset` at `0x101add523`
+- `sqldk!SystemThread_TlsOffset` at `0x101add566`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101adbfcb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101adc0da`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101adcf9e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101add051`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101add088`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101adbfcb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101adc0da`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101adcf9e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101add051`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101add088`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101adc6a2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101adc944`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101add485`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101adc6a2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101adc944`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101add485`
+- `hkengine!HkTableDrop` at `0x101adb9f7`
+- `hkengine!HkTableDrop` at `0x101adb9f7`
+- `hkengine!HkCursorHeapGetFirstEx` at `0x101adccf3`
+- `hkengine!HkCursorHeapGetFirstEx` at `0x101adccf3`
+- `hkengine!HkCursorHeapGetNextEx` at `0x101adcd59`
+- `hkengine!HkCursorHeapGetNextEx` at `0x101adcd59`
+- `hkengine!HkCursorHeapFreeEx` at `0x101adcd71`
+- `hkengine!HkCursorHeapFreeEx` at `0x101adcd71`
+- `hkengine!HkCursorHeapAllocEx` at `0x101adcca6`
+- `hkengine!HkCursorHeapAllocEx` at `0x101adcca6`
+- `hkengine!HkDatabaseGetNextTableIdEx` at `0x101adb83f`
+- `hkengine!HkDatabaseGetNextTableIdEx` at `0x101adb83f`
+- `hkengine!HkTransactionAbort` at `0x101adb947`
+- `hkengine!HkTransactionAbort` at `0x101adba9b`
+- `hkengine!HkTransactionAbort` at `0x101adcd86`
+- `hkengine!HkTransactionAbort` at `0x101adb947`
+- `hkengine!HkTransactionAbort` at `0x101adba9b`
+- `hkengine!HkTransactionAbort` at `0x101adcd86`
+- `hkengine!HkTransactionAlloc` at `0x101adb80f`
+- `hkengine!HkTransactionAlloc` at `0x101adb9cb`
+- `hkengine!HkTransactionAlloc` at `0x101adcc59`
+- `hkengine!HkTransactionAlloc` at `0x101adb80f`
+- `hkengine!HkTransactionAlloc` at `0x101adb9cb`
+- `hkengine!HkTransactionAlloc` at `0x101adcc59`
+
+## string_xrefs
+
+- `0x101adbe11`: `Sql\DkTemp\sos\include\soscache.inl`
+- `0x101adc591`: `Sql\DkTemp\sos\include\soscache.inl`
+- `0x101adca8e`: `Sql\DkTemp\sos\include\soscache.inl`
+- `0x101adb7f0`: `createWbMetadataExTable`
+- `0x101adb81d`: `createWbMetadataExTable`
+- `0x101adb84d`: `createWbMetadataExTable`
+- `0x101adb886`: `createWbMetadataExTable`
+- `0x101adb8e7`: `createWbMetadataExTable`
+- `0x101adce9d`: `%s: Failed to create dedicated scheduler for OnLruRefresh thread.`
+- `0x101adceb2`: `%s: Starting OnLruRefresh thread on a dedicated scheduler.`
+- `0x101adbf54`: `%s: Failed to create HotSegmentTracker.`
+- `0x101adc063`: `%s: Failed to create HotSimulatedSegmentTracker.`
+- `0x101add3fa`: `wbCheckpointCreate`
+
+## pseudocode
+
+```c
+
+```

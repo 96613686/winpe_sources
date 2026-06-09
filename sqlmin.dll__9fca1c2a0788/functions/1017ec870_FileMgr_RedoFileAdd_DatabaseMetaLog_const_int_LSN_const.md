@@ -1,0 +1,215 @@
+# FileMgr::RedoFileAdd(DatabaseMetaLog const *,int,LSN const &)
+
+- ea: `0x1017ec870`
+- end: `0x1017ef72f`
+- name: `?RedoFileAdd@FileMgr@@QEAAXPEBVDatabaseMetaLog@@HAEBVLSN@@@Z`
+- size: `11967`
+- prototype: `void __fastcall(FileMgr *__hidden this, const struct DatabaseMetaLog *, int, const struct LSN *)`
+- caller_count: `2`
+- callee_count: `64`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x101cb6e50`
+- `0x101cc0b80`
+
+## callees
+
+- `0x100401380`
+- `0x1004013f0`
+- `0x100401490`
+- `0x100401fcf`
+- `0x100402000`
+- `0x100402620`
+- `0x100402d60`
+- `0x100403030`
+- `0x10040da40`
+- `0x10040da80`
+- `0x10040eca0`
+- `0x100418690`
+- `0x10042b3d0`
+- `0x100432c80`
+- `0x100445560`
+- `0x10045cdf0`
+- `0x10046bfd0`
+- `0x1004729d0`
+- `0x10047ffb0`
+- `0x100480030`
+- `0x1004a77a0`
+- `0x1004a7cc0`
+- `0x1004ae200`
+- `0x100559190`
+- `0x1005d36b0`
+- `0x1005d9f70`
+- `0x100625f90`
+- `0x100626050`
+- `0x100652b20`
+- `0x100652cd0`
+- `0x10069f4f0`
+- `0x100b60210`
+- `0x100b61020`
+- `0x100b61560`
+- `0x1016c9e80`
+- `0x101773550`
+- `0x101790e00`
+- `0x1017cc880`
+- `0x1017cf7e0`
+- `0x1017e3780`
+- `0x1017e3950`
+- `0x1017e3fd0`
+- `0x1017e6b70`
+- `0x1017ec760`
+- `0x1017ec870`
+- `0x1017ef7b0`
+- `0x1017f1550`
+- `0x1017f2160`
+- `0x1017f4420`
+- `0x1017f8a20`
+
+## import_xrefs
+
+- `KERNEL32!VirtualProtect` at `0x1017ede17`
+- `KERNEL32!VirtualProtect` at `0x1017edf63`
+- `KERNEL32!VirtualProtect` at `0x1017ee7be`
+- `KERNEL32!VirtualProtect` at `0x1017ede17`
+- `KERNEL32!VirtualProtect` at `0x1017edf63`
+- `KERNEL32!VirtualProtect` at `0x1017ee7be`
+- `ole32!StringFromGUID2` at `0x1017ece93`
+- `ole32!StringFromGUID2` at `0x1017eced0`
+- `ole32!StringFromGUID2` at `0x1017ed6fd`
+- `ole32!StringFromGUID2` at `0x1017ed73a`
+- `ole32!StringFromGUID2` at `0x1017ece93`
+- `ole32!StringFromGUID2` at `0x1017eced0`
+- `ole32!StringFromGUID2` at `0x1017ed6fd`
+- `ole32!StringFromGUID2` at `0x1017ed73a`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x1017ee5b9`
+- `sqldk!?m_CollectingStatistics@CommonGlobalState@@2_NA` at `0x1017edc9b`
+- `sqldk!?m_PerfCountersEnabled@CommonGlobalState@@2_NA` at `0x1017ef638`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x1017ef0f0`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x1017ef423`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x1017ef0f0`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x1017ef423`
+- `sqldk!?hdl_prntbackout@@YAHHHHHPEAD@Z` at `0x1017eed09`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1017eec42`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1017eec69`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1017eec42`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1017eec69`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x1017ed625`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x1017ed656`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x1017ed69f`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x1017ed7f7`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x1017ed625`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x1017ed656`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x1017ed69f`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x1017ed7f7`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1017ec9a7`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1017ec9a7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ecba5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ecc27`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed0f7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed239`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed2a4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed308`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed374`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed465`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed561`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed5a9`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed901`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed982`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017eda63`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017edb00`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017edb31`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017eeabe`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017eefb2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ef379`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ecba5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ecc27`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed0f7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed239`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed2a4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed308`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed374`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed465`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed561`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed5a9`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed901`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ed982`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017eda63`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017edb00`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017edb31`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017eeabe`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017eefb2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ef379`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1017eea65`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1017eee1e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1017ef13f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1017ef31f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1017eea65`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1017eee1e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1017ef13f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1017ef31f`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1017edce8`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1017edce8`
+- `sqldk!SystemThread_TlsIndex` at `0x1017edaa6`
+- `sqldk!SystemThread_TlsIndex` at `0x1017edcb9`
+- `sqldk!SystemThread_TlsIndex` at `0x1017edcfb`
+- `sqldk!SystemThread_TlsIndex` at `0x1017ee223`
+- `sqldk!SystemThread_TlsIndex` at `0x1017ee611`
+- `sqldk!SystemThread_TlsIndex` at `0x1017ef0b8`
+- `sqldk!SystemThread_TlsIndex` at `0x1017ef3eb`
+- `sqldk!SystemThread_TlsOffset` at `0x1017edaaf`
+- `sqldk!SystemThread_TlsOffset` at `0x1017edcc2`
+- `sqldk!SystemThread_TlsOffset` at `0x1017edd04`
+- `sqldk!SystemThread_TlsOffset` at `0x1017ee22c`
+- `sqldk!SystemThread_TlsOffset` at `0x1017ee61a`
+- `sqldk!SystemThread_TlsOffset` at `0x1017ef0c1`
+- `sqldk!SystemThread_TlsOffset` at `0x1017ef3f4`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1017eccc7`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1017eec2f`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1017ef15f`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1017ef6f3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1017eccc7`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1017eec2f`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1017ef15f`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1017ef6f3`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1017ef0da`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1017ef40d`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1017ef0da`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1017ef40d`
+- `VCRUNTIME140!wcsrchr` at `0x1017ed3b4`
+- `VCRUNTIME140!wcsrchr` at `0x1017ed3b4`
+- `sqlfabric!RefreshContainerSecrets` at `0x1017ecf75`
+- `sqlfabric!RefreshContainerSecrets` at `0x1017ecf75`
+- `sqlfabric!RefreshRemoteReplicas` at `0x1017ed99c`
+- `sqlfabric!RefreshRemoteReplicas` at `0x1017ed99c`
+- `sqlfabric!ReportFaultOnDbId` at `0x1017ed9f1`
+- `sqlfabric!ReportFaultOnDbId` at `0x1017ed9f1`
+- `rbio!RbIoGetRbIoPrefixedPath` at `0x1017eda3b`
+- `rbio!RbIoGetRbIoPrefixedPath` at `0x1017eda3b`
+- `rbio!RbIoConnectionFindByPageId` at `0x1017ed94f`
+- `rbio!RbIoConnectionFindByPageId` at `0x1017ed94f`
+- `rbio!RbIoFsInitPageLsnCache` at `0x1017eef0b`
+- `rbio!RbIoFsInitPageLsnCache` at `0x1017eef0b`
+- `rbio!RbIoConnectionRelease` at `0x1017ed9fc`
+- `rbio!RbIoConnectionRelease` at `0x1017ed9fc`
+- `rbio!RbIoConnectionFind` at `0x1017ed9bb`
+- `rbio!RbIoConnectionFind` at `0x1017ed9bb`
+
+## string_xrefs
+
+- `0x1017ed4cb`: `$(DefaultDataPath)`
+- `0x1017ed86c`: `$(DefaultDataPath)`
+- `0x1017ed5c6`: `Redo file Add: Remap the data file path to %ls.`
+- `0x1017ed7b2`: `Redo file Add: Remap the Remote data file path to %ls.`
+- `0x1017ed66c`: `[FileMgr::RedoFileAdd]: Restore is skipping file path validation.`
+- `0x1017ed9cd`: `%ls Error during Redo File Add. Reporting permanent fault.`
+- `0x1017ed80b`: `[FileMgr::RedoFileAdd]: The file being is already prepared. This should be a no-op in redo and handled below.`
+- `0x1017eeea4`: `Race condition hit [%d] during new replica creation and new file %d addition`
+- `0x1017ef039`: `File was discovered, FCB doesn't exist and not a secondary Compute for file %d in database %d.`
+
+## pseudocode
+
+```c
+
+```

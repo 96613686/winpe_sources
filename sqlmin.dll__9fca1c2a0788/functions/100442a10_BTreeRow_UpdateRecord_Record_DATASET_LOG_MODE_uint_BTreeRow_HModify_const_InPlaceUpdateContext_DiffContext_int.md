@@ -1,0 +1,195 @@
+# BTreeRow::UpdateRecord(Record &,DATASET_LOG_MODE,uint,BTreeRow::HModify const &,InPlaceUpdateContext *,DiffContext *,int)
+
+- ea: `0x100442a10`
+- end: `0x100443154`
+- name: `?UpdateRecord@BTreeRow@@QEAA?AW4UpdateReturnCode@1@AEAVRecord@@W4DATASET_LOG_MODE@@IAEBVHModify@1@PEAUInPlaceUpdateContext@@PEAUDiffContext@@H@Z`
+- size: `1860`
+- prototype: ``
+- caller_count: `5`
+- callee_count: `43`
+- tags: `installer_update`
+
+## callers
+
+- `0x1004421f0`
+- `0x1005af8f0`
+- `0x1013e4910`
+- `0x1013e52f0`
+- `0x1014068c0`
+
+## callees
+
+- `0x100401490`
+- `0x100402000`
+- `0x100403030`
+- `0x10040f500`
+- `0x1004152e0`
+- `0x100415e90`
+- `0x10041a060`
+- `0x100427970`
+- `0x10043d0b0`
+- `0x10043d650`
+- `0x10043e090`
+- `0x10043e1c0`
+- `0x10043e270`
+- `0x100441e00`
+- `0x100441e40`
+- `0x100442a10`
+- `0x100443460`
+- `0x1004437c0`
+- `0x100456940`
+- `0x10046bf90`
+- `0x10046c170`
+- `0x100470cc0`
+- `0x1004729d0`
+- `0x10047b5f0`
+- `0x100480030`
+- `0x10048c200`
+- `0x100496c20`
+- `0x100499de0`
+- `0x10049bfd0`
+- `0x1005ad670`
+- `0x1005b7610`
+- `0x1005f7d80`
+- `0x1012c9010`
+- `0x1013b28f0`
+- `0x101424570`
+- `0x101431560`
+- `0x1018bfbe0`
+- `0x1021d5c70`
+- `0x1021d8a90`
+- `0x1021e8a60`
+- `0x1021e8ae0`
+- `0x1021eab40`
+- `0x1021ed230`
+
+## import_xrefs
+
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141e2a8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141e2d0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141e706`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141e7b3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141ef0c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141efde`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f707`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f730`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f75c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f84a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f876`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f93e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f967`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f990`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141fa6f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141fa98`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141fc1d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141fcd2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142003e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101420069`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101420097`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142022d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1014202e7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1014207d6`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142089b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101420a2c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101420ad8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1014213d8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142147f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142163e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101421698`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141e2a8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141e2d0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141e706`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141e7b3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141ef0c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141efde`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f707`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f730`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f75c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f84a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f876`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f93e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f967`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141f990`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141fa6f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141fa98`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141fc1d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10141fcd2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142003e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101420069`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101420097`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142022d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1014202e7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1014207d6`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142089b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101420a2c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101420ad8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1014213d8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142147f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10142163e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101421698`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141e946`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141e9fa`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141eaac`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141ec99`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141ed3a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f108`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f1c6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f27f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f4a2`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f54f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141fdc6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141fe7e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141ff34`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1014201ec`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1014202a7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141e946`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141e9fa`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141eaac`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141ec99`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141ed3a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f108`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f1c6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f27f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f4a2`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141f54f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141fdc6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141fe7e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10141ff34`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1014201ec`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1014202a7`
+- `sqldk!SystemThread_TlsIndex` at `0x10141e8e9`
+- `sqldk!SystemThread_TlsIndex` at `0x10141e99d`
+- `sqldk!SystemThread_TlsIndex` at `0x10141ea4f`
+- `sqldk!SystemThread_TlsIndex` at `0x10141ec3c`
+- `sqldk!SystemThread_TlsIndex` at `0x10141ecdd`
+- `sqldk!SystemThread_TlsIndex` at `0x10141f0ab`
+- `sqldk!SystemThread_TlsIndex` at `0x10141f169`
+- `sqldk!SystemThread_TlsIndex` at `0x10141f222`
+- `sqldk!SystemThread_TlsIndex` at `0x10141f445`
+- `sqldk!SystemThread_TlsIndex` at `0x10141f4f2`
+- `sqldk!SystemThread_TlsIndex` at `0x10141fd69`
+- `sqldk!SystemThread_TlsIndex` at `0x10141fe21`
+- `sqldk!SystemThread_TlsIndex` at `0x10141fed7`
+- `sqldk!SystemThread_TlsIndex` at `0x101420197`
+- `sqldk!SystemThread_TlsIndex` at `0x101420252`
+- `sqldk!SystemThread_TlsOffset` at `0x10141e8f2`
+- `sqldk!SystemThread_TlsOffset` at `0x10141e9a6`
+- `sqldk!SystemThread_TlsOffset` at `0x10141ea58`
+- `sqldk!SystemThread_TlsOffset` at `0x10141ec45`
+- `sqldk!SystemThread_TlsOffset` at `0x10141ece6`
+- `sqldk!SystemThread_TlsOffset` at `0x10141f0b4`
+- `sqldk!SystemThread_TlsOffset` at `0x10141f172`
+- `sqldk!SystemThread_TlsOffset` at `0x10141f22b`
+- `sqldk!SystemThread_TlsOffset` at `0x10141f44e`
+- `sqldk!SystemThread_TlsOffset` at `0x10141f4fb`
+- `sqldk!SystemThread_TlsOffset` at `0x10141fd72`
+- `sqldk!SystemThread_TlsOffset` at `0x10141fe2a`
+- `sqldk!SystemThread_TlsOffset` at `0x10141fee0`
+- `sqldk!SystemThread_TlsOffset` at `0x1014201a0`
+- `sqldk!SystemThread_TlsOffset` at `0x10142025b`
+
+## pseudocode
+
+```c
+
+```

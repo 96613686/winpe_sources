@@ -1,0 +1,185 @@
+# CXteUpdate::IntermediateCompile(IMemObj *,CRemapContext *,CVRMappingDynArray *)
+
+- ea: `0x100589570`
+- end: `0x100589af2`
+- name: `?IntermediateCompile@CXteUpdate@@MEAAXPEAVIMemObj@@PEAVCRemapContext@@PEAVCVRMappingDynArray@@@Z`
+- size: `1410`
+- prototype: `void __fastcall(CXteUpdate *__hidden this, struct IMemObj *, struct CRemapContext *, struct CVRMappingDynArray *)`
+- caller_count: `0`
+- callee_count: `25`
+- tags: `installer_update, broker_com_uri`
+
+## callees
+
+- `0x1004e88e0`
+- `0x1004e90f0`
+- `0x1004e9c70`
+- `0x1004ec070`
+- `0x1004ee060`
+- `0x1005875b0`
+- `0x100589570`
+- `0x100589b00`
+- `0x1005c65f0`
+- `0x1005f9f00`
+- `0x10060c330`
+- `0x100c61d70`
+- `0x100c61e60`
+- `0x100c61fc0`
+- `0x100c62120`
+- `0x100c62280`
+- `0x100c623e0`
+- `0x100c62540`
+- `0x100c626a0`
+- `0x100c62800`
+- `0x100c62960`
+- `0x100c62ac0`
+- `0x100c62c20`
+- `0x100c62ea0`
+- `0x100c62fe0`
+
+## import_xrefs
+
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1005896f0`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100589a6e`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058dd67`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100c85492`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100c854cc`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1005896f0`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100589a6e`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058dd67`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100c85492`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100c854cc`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058998d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058dda9`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058dde0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058de17`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100c85d91`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058998d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058dda9`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058dde0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058de17`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100c85d91`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85409`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85431`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85459`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c854f7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8551f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8554a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85574`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c855a8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c855fc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8569d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c856f5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8573e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85787`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c857d0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85819`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85862`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c858ab`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c858f4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8593d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85986`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c859cf`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85a08`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85a32`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85a76`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85ad8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85c14`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85dfe`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85e2d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85409`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85431`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85459`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c854f7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8551f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8554a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85574`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c855a8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c855fc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8569d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c856f5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8573e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85787`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c857d0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85819`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85862`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c858ab`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c858f4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c8593d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85986`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c859cf`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85a08`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85a32`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85a76`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85ad8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85c14`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85dfe`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x100c85e2d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x100589aeb`
+- `sqllang!?CreateIdentExpr@@YAPEAVCOptExpr@@PEAVIMemObj@@PEAVCValEsCompile@@@Z` at `0x100c85c91`
+- `sqllang!?CreateIdentExpr@@YAPEAVCOptExpr@@PEAVIMemObj@@PEAVCValEsCompile@@@Z` at `0x100c85cdf`
+- `sqllang!?CreateIdentExpr@@YAPEAVCOptExpr@@PEAVIMemObj@@PEAVCValEsCompile@@@Z` at `0x100c85d24`
+- `sqllang!?CreateIdentExpr@@YAPEAVCOptExpr@@PEAVIMemObj@@PEAVCValEsCompile@@@Z` at `0x100c85c91`
+- `sqllang!?CreateIdentExpr@@YAPEAVCOptExpr@@PEAVIMemObj@@PEAVCValEsCompile@@@Z` at `0x100c85cdf`
+- `sqllang!?CreateIdentExpr@@YAPEAVCOptExpr@@PEAVIMemObj@@PEAVCValEsCompile@@@Z` at `0x100c85d24`
+- `sqllang!??0CScaOp_Const@@QEAA@PEAVIMemObj@@E_JVCQODouble@@@Z` at `0x10058de43`
+- `sqllang!??0CScaOp_Const@@QEAA@PEAVIMemObj@@E_JVCQODouble@@@Z` at `0x10058de43`
+- `sqllang!?CompileInGroup@CEs@@SAXPEAVCEsCompGroup@@PEBVCOptExpr@@PEAPEAVCEsComp@@PEAVIMemObj@@@Z` at `0x100c85cb3`
+- `sqllang!?CompileInGroup@CEs@@SAXPEAVCEsCompGroup@@PEBVCOptExpr@@PEAPEAVCEsComp@@PEAVIMemObj@@@Z` at `0x100c85d01`
+- `sqllang!?CompileInGroup@CEs@@SAXPEAVCEsCompGroup@@PEBVCOptExpr@@PEAPEAVCEsComp@@PEAVIMemObj@@@Z` at `0x100c85d46`
+- `sqllang!?CompileInGroup@CEs@@SAXPEAVCEsCompGroup@@PEBVCOptExpr@@PEAPEAVCEsComp@@PEAVIMemObj@@@Z` at `0x100c85cb3`
+- `sqllang!?CompileInGroup@CEs@@SAXPEAVCEsCompGroup@@PEBVCOptExpr@@PEAPEAVCEsComp@@PEAVIMemObj@@@Z` at `0x100c85d01`
+- `sqllang!?CompileInGroup@CEs@@SAXPEAVCEsCompGroup@@PEBVCOptExpr@@PEAPEAVCEsComp@@PEAVIMemObj@@@Z` at `0x100c85d46`
+- `sqllang!??0COptExpr@@QEAA@PEAVIMemObj@@PEAVCOpArg@@@Z` at `0x10058de54`
+- `sqllang!??0COptExpr@@QEAA@PEAVIMemObj@@PEAVCOpArg@@@Z` at `0x10058de54`
+
+## string_xrefs
+
+- `0x1005896e3`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x10058997d`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x100589a61`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x10058dd5a`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x10058dd9a`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x10058ddd1`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x10058de08`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x100c85485`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x100c854bf`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x100c85d82`: `sql\ntdbms\query\qecomp\xupdate.cpp`
+- `0x100c853f9`: `xupdate.cpp`
+- `0x100c85421`: `xupdate.cpp`
+- `0x100c85449`: `xupdate.cpp`
+- `0x100c854e7`: `xupdate.cpp`
+- `0x100c8550f`: `xupdate.cpp`
+- `0x100c85539`: `xupdate.cpp`
+- `0x100c85561`: `xupdate.cpp`
+- `0x100c85593`: `xupdate.cpp`
+- `0x100c855ec`: `xupdate.cpp`
+- `0x100c8568d`: `xupdate.cpp`
+- `0x100c856e5`: `xupdate.cpp`
+- `0x100c8572e`: `xupdate.cpp`
+- `0x100c85777`: `xupdate.cpp`
+- `0x100c857c0`: `xupdate.cpp`
+- `0x100c85809`: `xupdate.cpp`
+- `0x100c85852`: `xupdate.cpp`
+- `0x100c8589b`: `xupdate.cpp`
+- `0x100c858e4`: `xupdate.cpp`
+- `0x100c8592d`: `xupdate.cpp`
+- `0x100c85976`: `xupdate.cpp`
+- `0x100c859bf`: `xupdate.cpp`
+- `0x100c859f8`: `xupdate.cpp`
+- `0x100c85a22`: `xupdate.cpp`
+- `0x100c85a66`: `xupdate.cpp`
+- `0x100c85ac8`: `xupdate.cpp`
+- `0x100c85c01`: `xupdate.cpp`
+- `0x100c85ded`: `xupdate.cpp`
+- `0x100c85e1a`: `xupdate.cpp`
+- `0x100c85c08`: `ipvrCopy < m_cpvrCopy`
+- `0x100c85450`: `m_rgpvrCopyDst == nullptr`
+- `0x100c85428`: `m_rgpvrCopySrc == nullptr`
+- `0x100c85581`: `CXteUpdate valref has been previously defined`
+
+## pseudocode
+
+```c
+
+```

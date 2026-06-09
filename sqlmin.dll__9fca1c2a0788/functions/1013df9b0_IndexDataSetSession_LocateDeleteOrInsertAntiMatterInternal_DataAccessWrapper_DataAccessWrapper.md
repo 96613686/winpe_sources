@@ -1,0 +1,203 @@
+# IndexDataSetSession::LocateDeleteOrInsertAntiMatterInternal(DataAccessWrapper *,DataAccessWrapper *)
+
+- ea: `0x1013df9b0`
+- end: `0x1013e230b`
+- name: `?LocateDeleteOrInsertAntiMatterInternal@IndexDataSetSession@@UEAA?AW4LocateAndDeleteRetCode@@PEAVDataAccessWrapper@@0@Z`
+- size: `10587`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `56`
+- tags: `file_ops`
+
+## callees
+
+- `0x100401490`
+- `0x100401fcf`
+- `0x100402000`
+- `0x1004025c0`
+- `0x10040dab0`
+- `0x100415e90`
+- `0x10043d5a0`
+- `0x10043db30`
+- `0x10043e1c0`
+- `0x10043fcb0`
+- `0x100441e00`
+- `0x10045c500`
+- `0x10045f950`
+- `0x10045f9d0`
+- `0x10045fab0`
+- `0x10045faf0`
+- `0x10046bf90`
+- `0x100470cc0`
+- `0x10048e2f0`
+- `0x100490a40`
+- `0x100490a60`
+- `0x100492f80`
+- `0x10049a590`
+- `0x10049a5d0`
+- `0x10049c6c0`
+- `0x10049dc80`
+- `0x100524680`
+- `0x10053aa60`
+- `0x100565a20`
+- `0x1005d9f70`
+- `0x1005fdac0`
+- `0x100990b80`
+- `0x1012c6450`
+- `0x1012c6490`
+- `0x1012c6680`
+- `0x1012c6690`
+- `0x1013df9b0`
+- `0x1013e4910`
+- `0x10140e780`
+- `0x10140ebf0`
+- `0x101430690`
+- `0x101430880`
+- `0x101912570`
+- `0x101912590`
+- `0x10212a120`
+- `0x1021d45f0`
+- `0x1021d8a90`
+- `0x1021dd320`
+- `0x1021dd9f0`
+- `0x1021e0730`
+
+## import_xrefs
+
+- `KERNEL32!HeapAlloc` at `0x1013e1bfc`
+- `KERNEL32!HeapAlloc` at `0x1013e1e4f`
+- `KERNEL32!HeapAlloc` at `0x1013e1bfc`
+- `KERNEL32!HeapAlloc` at `0x1013e1e4f`
+- `KERNEL32!GetProcessHeap` at `0x1013e1beb`
+- `KERNEL32!GetProcessHeap` at `0x1013e1e3e`
+- `KERNEL32!GetProcessHeap` at `0x1013e1beb`
+- `KERNEL32!GetProcessHeap` at `0x1013e1e3e`
+- `sqldk!??0CDStream@@QEAA@XZ` at `0x1013e1be4`
+- `sqldk!??0CDStream@@QEAA@XZ` at `0x1013e1e37`
+- `sqldk!??0CDStream@@QEAA@XZ` at `0x1013e1be4`
+- `sqldk!??0CDStream@@QEAA@XZ` at `0x1013e1e37`
+- `sqldk!??1CDStream@@QEAA@XZ` at `0x1013e1c5e`
+- `sqldk!??1CDStream@@QEAA@XZ` at `0x1013e1eb1`
+- `sqldk!??1CDStream@@QEAA@XZ` at `0x1013e1c5e`
+- `sqldk!??1CDStream@@QEAA@XZ` at `0x1013e1eb1`
+- `sqldk!?AddDevice@CDStream@@QEAAHPEAVCDumpStream@@@Z` at `0x1013e1c2f`
+- `sqldk!?AddDevice@CDStream@@QEAAHPEAVCDumpStream@@@Z` at `0x1013e1e82`
+- `sqldk!?AddDevice@CDStream@@QEAAHPEAVCDumpStream@@@Z` at `0x1013e1c2f`
+- `sqldk!?AddDevice@CDStream@@QEAAHPEAVCDumpStream@@@Z` at `0x1013e1e82`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1013e1fda`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1013e1fda`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013dfcc1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013dfe81`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013dff21`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013dffbf`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e01ca`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0255`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e039d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0444`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e04ec`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0703`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e078e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0b15`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0bbc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0c64`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0e76`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0f01`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e15f6`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e1af7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e1ee3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e1f24`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e2044`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013dfcc1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013dfe81`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013dff21`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013dffbf`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e01ca`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0255`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e039d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0444`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e04ec`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0703`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e078e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0b15`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0bbc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0c64`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0e76`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e0f01`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e15f6`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e1af7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e1ee3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e1f24`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1013e2044`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013dfe5e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013dfefe`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013dff9c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e01a7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0232`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0377`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e041e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e04c6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e06e0`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e076b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0aef`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0b96`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0c3e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0e53`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0ede`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e1279`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e133b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e13b8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e16ca`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e1781`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e18d2`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013dfe5e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013dfefe`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013dff9c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e01a7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0232`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0377`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e041e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e04c6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e06e0`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e076b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0aef`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0b96`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0c3e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0e53`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e0ede`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e1279`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e133b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e13b8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e16ca`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e1781`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013e18d2`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1013dfae5`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1013e1b7d`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1013e1dc1`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1013dfae5`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1013e1b7d`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1013e1dc1`
+- `sqldk!SystemThread_TlsIndex` at `0x1013dfab6`
+- `sqldk!SystemThread_TlsIndex` at `0x1013e1b46`
+- `sqldk!SystemThread_TlsIndex` at `0x1013e1d89`
+- `sqldk!SystemThread_TlsIndex` at `0x1013e2215`
+- `sqldk!SystemThread_TlsOffset` at `0x1013dfabf`
+- `sqldk!SystemThread_TlsOffset` at `0x1013e1b4f`
+- `sqldk!SystemThread_TlsOffset` at `0x1013e1d92`
+- `sqldk!SystemThread_TlsOffset` at `0x1013e221e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1013e1b06`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1013e1b06`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1013e2239`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1013e2239`
+
+## string_xrefs
+
+- `0x1013e1fc7`: `Sql\Ntdbms\storeng\dfs\access\IndexDataSet.cpp`
+- `0x1013e1bd1`: `Delete row -> DAM inserted (dbid=%d rowsetid=%I64d) by xact (xactid=%I64d, xts=%I64d)\n`
+- `0x1013e1e24`: `Delete row (dbid=%d rowsetid=%I64d anti-matter=%d) by xact (xactid=%I64d, xts=%I64d)\n`
+- `0x1013e1aeb`: `locateCode == LocateDeleteSuccess`
+
+## pseudocode
+
+```c
+
+```

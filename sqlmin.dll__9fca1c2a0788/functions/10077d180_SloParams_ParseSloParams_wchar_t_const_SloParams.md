@@ -1,0 +1,245 @@
+# SloParams::ParseSloParams(wchar_t const *,SloParams *)
+
+- ea: `0x10077d180`
+- end: `0x10077f843`
+- name: `?ParseSloParams@SloParams@@SAHPEB_WPEAU1@@Z`
+- size: `9923`
+- prototype: `static int(const wchar_t *, struct SloParams *)`
+- caller_count: `2`
+- callee_count: `6`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x10077d070`
+- `0x101ba4480`
+
+## callees
+
+- `0x100401490`
+- `0x100415f24`
+- `0x100772c40`
+- `0x100772d90`
+- `0x10077d180`
+- `0x1023aee60`
+
+## import_xrefs
+
+- `sqldk!?sm_SchedNum@SOS_PublicGlobals@@2IA` at `0x10077d1fc`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d2f2`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d30a`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d332`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d3d4`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d3ec`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d416`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077ded5`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077deed`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077df11`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077dfa1`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077dfb9`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077dfdd`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e071`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e089`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e0ad`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e5b4`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e5cc`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e5f0`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e681`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e699`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e6bd`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f455`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f46d`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f493`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f526`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f53e`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f566`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d2f2`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d30a`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d332`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d3d4`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d3ec`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077d416`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077ded5`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077deed`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077df11`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077dfa1`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077dfb9`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077dfdd`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e071`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e089`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e0ad`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e5b4`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e5cc`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e5f0`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e681`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e699`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077e6bd`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f455`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f46d`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f493`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f526`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f53e`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x10077f566`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x10077d682`
+- `sqldk!?GetErrorReportingManager@@YAAEAVIErrorReportingManager@@XZ` at `0x10077d682`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077d324`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077d34c`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077d406`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077d430`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077df07`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077df2b`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077dfd3`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077dff7`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e0a3`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e0c7`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e5e6`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e60a`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e6b3`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e6d7`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077f485`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077f4ad`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077f558`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077f580`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077d324`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077d34c`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077d406`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077d430`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077df07`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077df2b`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077dfd3`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077dff7`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e0a3`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e0c7`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e5e6`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e60a`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e6b3`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077e6d7`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077f485`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077f4ad`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077f558`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x10077f580`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077d304`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077d3e6`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077dee7`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077dfb3`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077e083`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077e5c6`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077e693`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077f467`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077f538`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077d304`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077d3e6`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077dee7`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077dfb3`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077e083`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077e5c6`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077e693`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077f467`
+- `api-ms-win-crt-string-l1-1-0!_wcslwr_s_l` at `0x10077f538`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d45e`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d472`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d4c0`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d4d4`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d527`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d53b`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d5b4`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d5c8`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d604`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d618`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d6cd`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d6e1`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d71d`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d731`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d76d`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d781`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d7c8`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d7dc`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d814`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d828`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d863`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d877`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d8f2`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d906`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d981`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d995`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d9cc`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077d9e0`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077da19`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077da2d`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077da64`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077da78`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dad1`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dae5`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077db2f`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077db43`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077db7c`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077db90`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dbc7`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dbdb`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dc12`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dc26`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dc5d`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dc71`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dcaa`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dcbe`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dcfa`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dd0e`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dd4a`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dd5e`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077dd9c`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077ddb0`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077ddf5`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077de09`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077de49`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077de5d`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e0f9`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e10d`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e14d`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e161`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e1a2`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e1b6`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e1f3`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e207`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e241`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e255`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e28f`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e2a3`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e2e6`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e2fa`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e340`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e354`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e392`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e3a6`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e3e8`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e3fc`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e439`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e44d`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e487`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e49b`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e4d2`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e4e6`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e523`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e537`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e70b`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e71f`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e761`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e775`
+- `api-ms-win-crt-string-l1-1-0!iswdigit` at `0x10077e7b4`
+
+## string_xrefs
+
+- `0x10077dd80`: `compute_units`
+- `0x10077de2d`: `shared_overcommit_enabled`
+- `0x10077e225`: `group_log_rollback_factor`
+- `0x10077f102`: `group_log_rollback_factor`
+- `0x10077e1d7`: `group_log_commit_fee`
+- `0x10077f0b1`: `group_log_commit_fee`
+- `0x10077e4b6`: `group_log_temp_db_byte_factor`
+- `0x10077f3a0`: `group_log_temp_db_byte_factor`
+- `0x10077e8e3`: `pool_log_commit_fee`
+
+## pseudocode
+
+```c
+
+```
