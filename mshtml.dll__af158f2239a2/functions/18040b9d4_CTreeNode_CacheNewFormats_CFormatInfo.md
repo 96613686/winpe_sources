@@ -1,0 +1,281 @@
+# CTreeNode::CacheNewFormats(CFormatInfo *)
+
+- ea: `0x18040b9d4`
+- end: `0x180411297`
+- name: `?CacheNewFormats@CTreeNode@@QEAAJPEAVCFormatInfo@@@Z`
+- size: `22723`
+- prototype: `__int64 __fastcall(CTreeNode *__hidden this, struct CFormatInfo *)`
+- caller_count: `6`
+- callee_count: `108`
+- tags: ``
+
+## callers
+
+- `0x18009ca30`
+- `0x1800dce90`
+- `0x1803b9158`
+- `0x1803bc820`
+- `0x1803c5f88`
+- `0x180409ca0`
+
+## callees
+
+- `0x1800148b0`
+- `0x180021f6c`
+- `0x180023974`
+- `0x18002586c`
+- `0x18006f7c8`
+- `0x180076740`
+- `0x1800786e4`
+- `0x180078cf8`
+- `0x180078ff0`
+- `0x18009f7bc`
+- `0x1800c4ecc`
+- `0x1800e4c70`
+- `0x1800e79ac`
+- `0x1800ea468`
+- `0x1800eeabc`
+- `0x1800fdfb4`
+- `0x18011f0ac`
+- `0x18014277c`
+- `0x180142bd8`
+- `0x180142cb8`
+- `0x180142d88`
+- `0x180142e58`
+- `0x18014a898`
+- `0x18014dc50`
+- `0x18014ed4c`
+- `0x18014eec0`
+- `0x18014eef4`
+- `0x1801509b0`
+- `0x180150d60`
+- `0x1801b5280`
+- `0x1801b968c`
+- `0x1801bcad8`
+- `0x1801bf698`
+- `0x1801c4278`
+- `0x1801c44a4`
+- `0x1801c63b8`
+- `0x1801c6e00`
+- `0x1801c7940`
+- `0x1801c7df8`
+- `0x1801c8108`
+- `0x1801c8954`
+- `0x1801cd5ac`
+- `0x1801cd614`
+- `0x1801f9828`
+- `0x18021a9dc`
+- `0x180272d4c`
+- `0x180273e3c`
+- `0x1802740f8`
+- `0x180282d0c`
+- `0x18028fe1c`
+
+## import_xrefs
+
+- `KERNEL32!RaiseFailFastException` at `0x18040ba8a`
+- `KERNEL32!RaiseFailFastException` at `0x18040bb6b`
+- `KERNEL32!RaiseFailFastException` at `0x18040bbb9`
+- `KERNEL32!RaiseFailFastException` at `0x18040be0f`
+- `KERNEL32!RaiseFailFastException` at `0x18040beb8`
+- `KERNEL32!RaiseFailFastException` at `0x18040bee9`
+- `KERNEL32!RaiseFailFastException` at `0x18040c797`
+- `KERNEL32!RaiseFailFastException` at `0x18040c878`
+- `KERNEL32!RaiseFailFastException` at `0x18040c90c`
+- `KERNEL32!RaiseFailFastException` at `0x18040cb12`
+- `KERNEL32!RaiseFailFastException` at `0x18040cb9d`
+- `KERNEL32!RaiseFailFastException` at `0x18040cd66`
+- `KERNEL32!RaiseFailFastException` at `0x18040ce14`
+- `KERNEL32!RaiseFailFastException` at `0x18040ce7e`
+- `KERNEL32!RaiseFailFastException` at `0x18040cf14`
+- `KERNEL32!RaiseFailFastException` at `0x18040cfab`
+- `KERNEL32!RaiseFailFastException` at `0x18040e1fd`
+- `KERNEL32!RaiseFailFastException` at `0x18040e897`
+- `KERNEL32!RaiseFailFastException` at `0x18040ea4a`
+- `KERNEL32!RaiseFailFastException` at `0x18040eb0f`
+- `KERNEL32!RaiseFailFastException` at `0x18040eb21`
+- `KERNEL32!RaiseFailFastException` at `0x18040eb72`
+- `KERNEL32!RaiseFailFastException` at `0x18040ebb3`
+- `KERNEL32!RaiseFailFastException` at `0x18040eec4`
+- `KERNEL32!RaiseFailFastException` at `0x18040efc7`
+- `KERNEL32!RaiseFailFastException` at `0x18040efd9`
+- `KERNEL32!RaiseFailFastException` at `0x18040f030`
+- `KERNEL32!RaiseFailFastException` at `0x18040f0bf`
+- `KERNEL32!RaiseFailFastException` at `0x18040f1de`
+- `KERNEL32!RaiseFailFastException` at `0x18040f30d`
+- `KERNEL32!RaiseFailFastException` at `0x18040f41d`
+- `KERNEL32!RaiseFailFastException` at `0x18040f44e`
+- `KERNEL32!RaiseFailFastException` at `0x18040f4ca`
+- `KERNEL32!RaiseFailFastException` at `0x18040f585`
+- `KERNEL32!RaiseFailFastException` at `0x18040f99a`
+- `KERNEL32!RaiseFailFastException` at `0x18040ff6a`
+- `KERNEL32!RaiseFailFastException` at `0x180410016`
+- `KERNEL32!RaiseFailFastException` at `0x1804100cd`
+- `KERNEL32!RaiseFailFastException` at `0x180410149`
+- `KERNEL32!RaiseFailFastException` at `0x180410380`
+- `KERNEL32!RaiseFailFastException` at `0x180410392`
+- `KERNEL32!RaiseFailFastException` at `0x1804104c0`
+- `KERNEL32!RaiseFailFastException` at `0x18041059a`
+- `KERNEL32!RaiseFailFastException` at `0x1804105b1`
+- `KERNEL32!RaiseFailFastException` at `0x180410a12`
+- `KERNEL32!RaiseFailFastException` at `0x180410aa2`
+- `KERNEL32!RaiseFailFastException` at `0x180410ab4`
+- `KERNEL32!RaiseFailFastException` at `0x180410b38`
+- `KERNEL32!RaiseFailFastException` at `0x180410b4a`
+- `KERNEL32!RaiseFailFastException` at `0x180410b5c`
+- `KERNEL32!RaiseFailFastException` at `0x180410b6e`
+- `KERNEL32!RaiseFailFastException` at `0x180410b9e`
+- `KERNEL32!RaiseFailFastException` at `0x180410bb0`
+- `KERNEL32!RaiseFailFastException` at `0x180410bc2`
+- `KERNEL32!RaiseFailFastException` at `0x180410bd4`
+- `KERNEL32!RaiseFailFastException` at `0x180410be6`
+- `KERNEL32!RaiseFailFastException` at `0x180410bf8`
+- `KERNEL32!RaiseFailFastException` at `0x180410c0a`
+- `KERNEL32!RaiseFailFastException` at `0x180410c1c`
+- `KERNEL32!RaiseFailFastException` at `0x180410c2e`
+- `KERNEL32!RaiseFailFastException` at `0x180410c40`
+- `KERNEL32!RaiseFailFastException` at `0x180410c52`
+- `KERNEL32!RaiseFailFastException` at `0x180410c64`
+- `KERNEL32!RaiseFailFastException` at `0x180410c76`
+- `KERNEL32!RaiseFailFastException` at `0x180410c88`
+- `KERNEL32!RaiseFailFastException` at `0x180410c9a`
+- `KERNEL32!RaiseFailFastException` at `0x180410d06`
+- `KERNEL32!RaiseFailFastException` at `0x180410d18`
+- `KERNEL32!RaiseFailFastException` at `0x180410d2a`
+- `KERNEL32!RaiseFailFastException` at `0x180410d3c`
+- `KERNEL32!RaiseFailFastException` at `0x180410d4e`
+- `KERNEL32!RaiseFailFastException` at `0x180410d60`
+- `KERNEL32!RaiseFailFastException` at `0x180410d72`
+- `KERNEL32!RaiseFailFastException` at `0x180410d84`
+- `KERNEL32!RaiseFailFastException` at `0x180410d96`
+- `KERNEL32!RaiseFailFastException` at `0x180410da8`
+- `KERNEL32!RaiseFailFastException` at `0x180410dba`
+- `KERNEL32!RaiseFailFastException` at `0x180410dcc`
+- `KERNEL32!RaiseFailFastException` at `0x180410dde`
+- `KERNEL32!RaiseFailFastException` at `0x180410df0`
+- `KERNEL32!RaiseFailFastException` at `0x180410e02`
+- `KERNEL32!RaiseFailFastException` at `0x180410e14`
+- `KERNEL32!RaiseFailFastException` at `0x180410e26`
+- `KERNEL32!RaiseFailFastException` at `0x180410e38`
+- `KERNEL32!RaiseFailFastException` at `0x180410e4a`
+- `KERNEL32!RaiseFailFastException` at `0x180410f4a`
+- `KERNEL32!RaiseFailFastException` at `0x180410f5c`
+- `KERNEL32!RaiseFailFastException` at `0x180410f6e`
+- `KERNEL32!RaiseFailFastException` at `0x180410f80`
+- `KERNEL32!RaiseFailFastException` at `0x180410fb0`
+- `KERNEL32!RaiseFailFastException` at `0x180410fc2`
+- `KERNEL32!RaiseFailFastException` at `0x180410fd4`
+- `KERNEL32!RaiseFailFastException` at `0x180410fe6`
+- `KERNEL32!RaiseFailFastException` at `0x180410ff8`
+- `KERNEL32!RaiseFailFastException` at `0x18041100a`
+- `KERNEL32!RaiseFailFastException` at `0x18041101c`
+- `KERNEL32!RaiseFailFastException` at `0x18041102e`
+- `KERNEL32!RaiseFailFastException` at `0x180411040`
+- `KERNEL32!RaiseFailFastException` at `0x180411052`
+- `KERNEL32!RaiseFailFastException` at `0x180411064`
+- `KERNEL32!RaiseFailFastException` at `0x180411076`
+- `KERNEL32!RaiseFailFastException` at `0x1804110e2`
+- `KERNEL32!RaiseFailFastException` at `0x1804110f4`
+- `KERNEL32!RaiseFailFastException` at `0x180411106`
+- `KERNEL32!RaiseFailFastException` at `0x180411118`
+- `KERNEL32!RaiseFailFastException` at `0x18041112a`
+- `KERNEL32!RaiseFailFastException` at `0x18041113c`
+- `KERNEL32!RaiseFailFastException` at `0x18041114e`
+- `KERNEL32!RaiseFailFastException` at `0x180411160`
+- `KERNEL32!RaiseFailFastException` at `0x180411172`
+- `KERNEL32!RaiseFailFastException` at `0x180411184`
+- `KERNEL32!RaiseFailFastException` at `0x180411196`
+- `KERNEL32!RaiseFailFastException` at `0x1804111a8`
+- `KERNEL32!RaiseFailFastException` at `0x1804111ba`
+- `KERNEL32!RaiseFailFastException` at `0x1804111cc`
+- `KERNEL32!RaiseFailFastException` at `0x1804111de`
+- `KERNEL32!RaiseFailFastException` at `0x1804111f0`
+- `KERNEL32!RaiseFailFastException` at `0x18040ba8a`
+- `KERNEL32!RaiseFailFastException` at `0x18040bb6b`
+- `KERNEL32!RaiseFailFastException` at `0x18040bbb9`
+- `KERNEL32!RaiseFailFastException` at `0x18040be0f`
+- `KERNEL32!RaiseFailFastException` at `0x18040beb8`
+- `KERNEL32!RaiseFailFastException` at `0x18040bee9`
+- `KERNEL32!RaiseFailFastException` at `0x18040c797`
+- `KERNEL32!RaiseFailFastException` at `0x18040c878`
+- `KERNEL32!RaiseFailFastException` at `0x18040c90c`
+- `KERNEL32!RaiseFailFastException` at `0x18040cb12`
+- `KERNEL32!RaiseFailFastException` at `0x18040cb9d`
+- `KERNEL32!RaiseFailFastException` at `0x18040cd66`
+- `KERNEL32!RaiseFailFastException` at `0x18040ce14`
+- `KERNEL32!RaiseFailFastException` at `0x18040ce7e`
+- `KERNEL32!RaiseFailFastException` at `0x18040cf14`
+- `KERNEL32!RaiseFailFastException` at `0x18040cfab`
+- `KERNEL32!RaiseFailFastException` at `0x18040e1fd`
+- `KERNEL32!RaiseFailFastException` at `0x18040e897`
+- `KERNEL32!RaiseFailFastException` at `0x18040ea4a`
+- `KERNEL32!RaiseFailFastException` at `0x18040eb0f`
+- `KERNEL32!RaiseFailFastException` at `0x18040eb21`
+- `KERNEL32!RaiseFailFastException` at `0x18040eb72`
+- `KERNEL32!RaiseFailFastException` at `0x18040ebb3`
+- `KERNEL32!RaiseFailFastException` at `0x18040eec4`
+- `KERNEL32!RaiseFailFastException` at `0x18040efc7`
+- `KERNEL32!RaiseFailFastException` at `0x18040efd9`
+- `KERNEL32!RaiseFailFastException` at `0x18040f030`
+- `KERNEL32!RaiseFailFastException` at `0x18040f0bf`
+- `KERNEL32!RaiseFailFastException` at `0x18040f1de`
+- `KERNEL32!RaiseFailFastException` at `0x18040f30d`
+- `KERNEL32!RaiseFailFastException` at `0x18040f41d`
+- `KERNEL32!RaiseFailFastException` at `0x18040f44e`
+- `KERNEL32!RaiseFailFastException` at `0x18040f4ca`
+- `KERNEL32!RaiseFailFastException` at `0x18040f585`
+- `KERNEL32!RaiseFailFastException` at `0x18040f99a`
+- `KERNEL32!RaiseFailFastException` at `0x18040ff6a`
+- `KERNEL32!RaiseFailFastException` at `0x180410016`
+- `KERNEL32!RaiseFailFastException` at `0x1804100cd`
+- `KERNEL32!RaiseFailFastException` at `0x180410149`
+- `KERNEL32!RaiseFailFastException` at `0x180410380`
+- `KERNEL32!RaiseFailFastException` at `0x180410392`
+- `KERNEL32!RaiseFailFastException` at `0x1804104c0`
+- `KERNEL32!RaiseFailFastException` at `0x18041059a`
+- `KERNEL32!RaiseFailFastException` at `0x1804105b1`
+- `KERNEL32!RaiseFailFastException` at `0x180410a12`
+- `KERNEL32!RaiseFailFastException` at `0x180410aa2`
+- `KERNEL32!RaiseFailFastException` at `0x180410ab4`
+- `KERNEL32!RaiseFailFastException` at `0x180410b38`
+- `KERNEL32!RaiseFailFastException` at `0x180410b4a`
+- `KERNEL32!RaiseFailFastException` at `0x180410b5c`
+- `KERNEL32!RaiseFailFastException` at `0x180410b6e`
+- `KERNEL32!RaiseFailFastException` at `0x180410b9e`
+- `KERNEL32!RaiseFailFastException` at `0x180410bb0`
+- `KERNEL32!RaiseFailFastException` at `0x180410bc2`
+- `KERNEL32!RaiseFailFastException` at `0x180410bd4`
+- `KERNEL32!RaiseFailFastException` at `0x180410be6`
+- `KERNEL32!RaiseFailFastException` at `0x180410bf8`
+- `KERNEL32!RaiseFailFastException` at `0x180410c0a`
+- `KERNEL32!RaiseFailFastException` at `0x180410c1c`
+- `KERNEL32!RaiseFailFastException` at `0x180410c2e`
+- `KERNEL32!RaiseFailFastException` at `0x180410c40`
+- `KERNEL32!RaiseFailFastException` at `0x180410c52`
+- `KERNEL32!RaiseFailFastException` at `0x180410c64`
+- `KERNEL32!RaiseFailFastException` at `0x180410c76`
+- `KERNEL32!RaiseFailFastException` at `0x180410c88`
+- `KERNEL32!RaiseFailFastException` at `0x180410c9a`
+- `KERNEL32!RaiseFailFastException` at `0x180410d06`
+- `KERNEL32!RaiseFailFastException` at `0x180410d18`
+- `KERNEL32!RaiseFailFastException` at `0x180410d2a`
+- `KERNEL32!RaiseFailFastException` at `0x180410d3c`
+- `KERNEL32!RaiseFailFastException` at `0x180410d4e`
+- `KERNEL32!RaiseFailFastException` at `0x180410d60`
+- `KERNEL32!RaiseFailFastException` at `0x180410d72`
+- `KERNEL32!RaiseFailFastException` at `0x180410d84`
+- `KERNEL32!RaiseFailFastException` at `0x180410d96`
+- `KERNEL32!RaiseFailFastException` at `0x180410da8`
+- `KERNEL32!RaiseFailFastException` at `0x180410dba`
+- `KERNEL32!RaiseFailFastException` at `0x180410dcc`
+- `KERNEL32!RaiseFailFastException` at `0x180410dde`
+- `KERNEL32!RaiseFailFastException` at `0x180410df0`
+- `KERNEL32!RaiseFailFastException` at `0x180410e02`
+- `KERNEL32!RaiseFailFastException` at `0x180410e14`
+- `KERNEL32!RaiseFailFastException` at `0x180410e26`
+
+## pseudocode
+
+```c
+
+```
