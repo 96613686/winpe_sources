@@ -1,0 +1,39 @@
+# RtlCopyVolatileMemory
+
+- ea: `0x140003950`
+- end: `0x140003955`
+- name: `RtlCopyVolatileMemory`
+- size: `5`
+- prototype: `void *__cdecl(void *, const void *Src, size_t Size)`
+- caller_count: `5`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x140002fc0`
+- `0x14000d0b0`
+- `0x14000d8cc`
+- `0x140016fa0`
+- `0x140017284`
+
+## callees
+
+- `0x140003a80`
+
+## pseudocode
+
+```c
+// attributes: thunk
+void *__cdecl RtlCopyVolatileMemory(void *a1, const void *Src, size_t Size)
+{
+  return memmove(a1, Src, Size);
+}
+
+```
+
+## disassembly
+
+```asm
+0x140003950  jmp     memmove
+```

@@ -1,0 +1,184 @@
+# FltpDeleteTxVolContextList
+
+- ea: `0x180070b30`
+- end: `0x180070bec`
+- name: `FltpDeleteTxVolContextList`
+- size: `188`
+- prototype: `void __fastcall(__int64)`
+- caller_count: `1`
+- callee_count: `6`
+- tags: `file_ops`
+
+## callers
+
+- `0x180068e20`
+
+## callees
+
+- `0x180009f20`
+- `0x180012d80`
+- `0x18004fbf0`
+- `0x18005dcc0`
+- `0x180060e10`
+- `0x180070b30`
+
+## import_xrefs
+
+- `ntoskrnl!ObfDereferenceObject` at `0x18007adec`
+- `ntoskrnl!ObfDereferenceObject` at `0x18007adec`
+- `ntoskrnl!KeEnterGuardedRegion` at `0x180070b3d`
+- `ntoskrnl!KeEnterGuardedRegion` at `0x180070b3d`
+- `ntoskrnl!KeLeaveGuardedRegion` at `0x180070b8b`
+- `ntoskrnl!KeLeaveGuardedRegion` at `0x180070b8b`
+- `ntoskrnl!ZwClose` at `0x18007adfc`
+- `ntoskrnl!ZwClose` at `0x18007adfc`
+- `ntoskrnl!ExAcquireAutoExpandPushLockExclusive` at `0x180070b55`
+- `ntoskrnl!ExAcquireAutoExpandPushLockExclusive` at `0x180070b55`
+- `ntoskrnl!ExReleaseAutoExpandPushLockExclusive` at `0x180070b7f`
+- `ntoskrnl!ExReleaseAutoExpandPushLockExclusive` at `0x180070b7f`
+- `ntoskrnl!TmReadOnlyEnlistment` at `0x18007adc0`
+- `ntoskrnl!TmReadOnlyEnlistment` at `0x18007adc0`
+
+## pseudocode
+
+```c
+void __fastcall FltpDeleteTxVolContextList(__int64 a1)
+{
+  __int64 v2; // r9
+  __int64 v3; // rax
+  __int64 v4; // rcx
+  __int64 v5; // rbx
+  __int64 v6; // rdi
+  __int64 v7; // rbx
+  struct _KENLISTMENT *v8; // rcx
+  NTSTATUS OnlyEnlistment; // eax
+  char *v10; // rcx
+
+  KeEnterGuardedRegion();
+  ExAcquireAutoExpandPushLockExclusive(a1 + 2040, 0);
+  v3 = TreeUnlinkMulti((_QWORD *)(a1 + 2056), 0xFFFFFFFFFFFFFFFFuLL, -1, v2);
+  v4 = a1 + 2040;
+  v5 = v3;
+  ExReleaseAutoExpandPushLockExclusive(v4, 0);
+  KeLeaveGuardedRegion();
+  if ( v5 )
+  {
+    do
+    {
+      v6 = *(_QWORD *)(v5 + 16);
+      v7 = v5 - 88;
+      v8 = *(struct _KENLISTMENT **)(v7 + 24);
+      if ( v8 == (struct _KENLISTMENT *)-1LL )
+      {
+        FltpObjectPointerDereference(*(char **)(v7 + 8));
+      }
+      else
+      {
+        OnlyEnlistment = TmReadOnlyEnlistment(v8, 0);
+        if ( (int)FltpDbgStatus(OnlyEnlistment) < 0 )
+        {
+          if ( (*(_DWORD *)(v7 + 148) & 8) == 0 )
+            _InterlockedOr((volatile signed __int32 *)(v7 + 148), 8u);
+        }
+        else
+        {
+          ObfDereferenceObject(*(PVOID *)(v7 + 24));
+          ZwClose(*(HANDLE *)(v7 + 16));
+          v10 = *(char **)(v7 + 8);
+          *(_QWORD *)(v7 + 24) = -1;
+          *(_QWORD *)(v7 + 16) = 0;
+          FltpObjectPointerDereference(v10);
+          FltpReleaseTxVolContext((char *)v7);
+        }
+      }
+      FltpFreeTxVolStreamListCtrlEntries(v7);
+      FltpReleaseTxVolContext((char *)v7);
+      v5 = v6;
+    }
+    while ( v6 );
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x180070b30  mov     [rsp+arg_8], rbx
+0x180070b35  push    rdi
+0x180070b36  sub     rsp, 20h
+0x180070b3a  mov     rbx, rcx
+0x180070b3d  call    cs:__imp_KeEnterGuardedRegion
+0x180070b44  nop     dword ptr [rax+rax+00h]
+0x180070b49  lea     rdi, [rbx+7F8h]
+0x180070b50  xor     edx, edx
+0x180070b52  mov     rcx, rdi
+0x180070b55  call    cs:__imp_ExAcquireAutoExpandPushLockExclusive
+0x180070b5c  nop     dword ptr [rax+rax+00h]
+0x180070b61  mov     rdx, 0FFFFFFFFFFFFFFFFh
+0x180070b68  lea     rcx, [rbx+808h]
+0x180070b6f  mov     r8, rdx
+0x180070b72  call    TreeUnlinkMulti
+0x180070b77  xor     edx, edx
+0x180070b79  mov     rcx, rdi
+0x180070b7c  mov     rbx, rax
+0x180070b7f  call    cs:__imp_ExReleaseAutoExpandPushLockExclusive
+0x180070b86  nop     dword ptr [rax+rax+00h]
+0x180070b8b  call    cs:__imp_KeLeaveGuardedRegion
+0x180070b92  nop     dword ptr [rax+rax+00h]
+0x180070b97  test    rbx, rbx
+0x180070b9a  jnz     short loc_180070BDD
+0x180070b9c  mov     rbx, [rsp+28h+arg_8]
+0x180070ba1  add     rsp, 20h
+0x180070ba5  pop     rdi
+0x180070ba6  retn
+0x180070ba8  mov     eax, [rbx+94h]
+0x180070bae  test    al, 8
+0x180070bb0  jnz     short loc_180070BBA
+0x180070bb2  lock or dword ptr [rbx+94h], 8
+0x180070bba  mov     rcx, rbx
+0x180070bbd  call    FltpFreeTxVolStreamListCtrlEntries
+0x180070bc2  mov     rcx, rbx; Entry
+0x180070bc5  call    FltpReleaseTxVolContext
+0x180070bca  mov     rbx, rdi
+0x180070bcd  test    rdi, rdi
+0x180070bd0  jnz     loc_18007ADAC
+0x180070bd6  mov     rsi, [rsp+28h+arg_0]
+0x180070bdb  jmp     short loc_180070B9C
+0x180070bdd  mov     [rsp+28h+arg_0], rsi
+0x180070be2  mov     esi, 540h
+0x180070be7  jmp     loc_18007ADAC
+0x18007adac  mov     rdi, [rbx+10h]
+0x18007adb0  add     rbx, 0FFFFFFFFFFFFFFA8h
+0x18007adb4  mov     rcx, [rbx+18h]; Enlistment
+0x18007adb8  cmp     rcx, 0FFFFFFFFFFFFFFFFh
+0x18007adbc  jz      short loc_18007AE2F
+0x18007adbe  xor     edx, edx; TmVirtualClock
+0x18007adc0  call    cs:__imp_TmReadOnlyEnlistment
+0x18007adc7  nop     dword ptr [rax+rax+00h]
+0x18007adcc  xor     r9d, r9d
+0x18007adcf  lea     rdx, aMinkernelFsFil_26; "minkernel\\fs\\filtermgr\\filter\\txvol"...
+0x18007add6  mov     ecx, eax
+0x18007add8  mov     r8d, esi
+0x18007addb  call    FltpDbgStatus
+0x18007ade0  test    eax, eax
+0x18007ade2  js      loc_180070BA8
+0x18007ade8  mov     rcx, [rbx+18h]; Object
+0x18007adec  call    cs:__imp_ObfDereferenceObject
+0x18007adf3  nop     dword ptr [rax+rax+00h]
+0x18007adf8  mov     rcx, [rbx+10h]; Handle
+0x18007adfc  call    cs:__imp_ZwClose
+0x18007ae03  nop     dword ptr [rax+rax+00h]
+0x18007ae08  mov     rcx, [rbx+8]
+0x18007ae0c  mov     qword ptr [rbx+18h], 0FFFFFFFFFFFFFFFFh
+0x18007ae14  mov     qword ptr [rbx+10h], 0
+0x18007ae1c  call    FltpObjectPointerDereference
+0x18007ae21  mov     rcx, rbx; Entry
+0x18007ae24  call    FltpReleaseTxVolContext
+0x18007ae29  nop
+0x18007ae2a  jmp     loc_180070BBA
+0x18007ae2f  mov     rcx, [rbx+8]
+0x18007ae33  call    FltpObjectPointerDereference
+0x18007ae38  nop
+0x18007ae39  jmp     loc_180070BBA
+```

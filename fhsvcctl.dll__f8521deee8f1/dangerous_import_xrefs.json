@@ -1,0 +1,263 @@
+[
+  {
+    "import": "ADVAPI32!AllocateAndInitializeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000342b",
+        "from_func": "0x180003230",
+        "from_func_name": "FhServiceOpenPipe",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x18000342b",
+        "from_func": "0x180003230",
+        "from_func_name": "FhServiceOpenPipe",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!CloseServiceHandle",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800028a1",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!CloseServiceHandle"
+      },
+      {
+        "from_ea": "0x1800028aa",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!CloseServiceHandle"
+      },
+      {
+        "from_ea": "0x1800028a1",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!CloseServiceHandle"
+      },
+      {
+        "from_ea": "0x1800028aa",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!CloseServiceHandle"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!FreeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800035ae",
+        "from_func": "0x180003230",
+        "from_func_name": "FhServiceOpenPipe",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x1800035ae",
+        "from_func": "0x180003230",
+        "from_func_name": "FhServiceOpenPipe",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x180009000",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ADVAPI32!FreeSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenServiceW",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000272b",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!OpenServiceW"
+      },
+      {
+        "from_ea": "0x18000272b",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!OpenServiceW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!QueryServiceStatus",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180002789",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!QueryServiceStatus"
+      },
+      {
+        "from_ea": "0x180002852",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!QueryServiceStatus"
+      },
+      {
+        "from_ea": "0x180002789",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!QueryServiceStatus"
+      },
+      {
+        "from_ea": "0x180002852",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!QueryServiceStatus"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000238f",
+        "from_func": "0x1800022f0",
+        "from_func_name": "FhQueryConfiguredUsersCount",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000238f",
+        "from_func": "0x1800022f0",
+        "from_func_name": "FhQueryConfiguredUsersCount",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!StartServiceW",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800027f7",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!StartServiceW"
+      },
+      {
+        "from_ea": "0x1800027f7",
+        "from_func": "0x180002680",
+        "from_func_name": "?StartFhService@@YAJXZ",
+        "import": "ADVAPI32!StartServiceW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001c4b",
+        "from_func": "0x180001c04",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001c4b",
+        "from_func": "0x180001c04",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcStringBindingComposeW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000336c",
+        "from_func": "0x180003230",
+        "from_func_name": "FhServiceOpenPipe",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      },
+      {
+        "from_ea": "0x18000336c",
+        "from_func": "0x180003230",
+        "from_func_name": "FhServiceOpenPipe",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180004ebf",
+        "from_func": "0x180004e68",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180001ad6",
+        "from_func": "0x180001ad6",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180004ebf",
+        "from_func": "0x180004e68",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ed6",
+        "from_func": "0x180001ed6",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "msvcrt!__CxxFrameHandler3"
+      }
+    ]
+  }
+]

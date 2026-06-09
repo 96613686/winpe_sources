@@ -1,0 +1,113 @@
+# wil::details::SubscribeFeatureStateCacheToConfigurationChanges(wil_details_FeatureStateCache *,wil_FeatureChangeTime,uint)
+
+- ea: `0x18002d7b8`
+- end: `0x18002d846`
+- name: `?SubscribeFeatureStateCacheToConfigurationChanges@details@wil@@YAXPEATwil_details_FeatureStateCache@@W4wil_FeatureChangeTime@@I@Z`
+- size: `142`
+- prototype: `__int64 __fastcall(_QWORD, _QWORD, _QWORD)`
+- caller_count: `11`
+- callee_count: `3`
+- tags: `registry_config`
+
+## callers
+
+- `0x180028f84`
+- `0x180029068`
+- `0x180029148`
+- `0x180029228`
+- `0x180029308`
+- `0x1800293e8`
+- `0x1800294c8`
+- `0x1800295a8`
+- `0x180029688`
+- `0x180029768`
+- `0x18002abf4`
+
+## callees
+
+- `0x180027a6c`
+- `0x18002d7b8`
+- `0x18002e58c`
+
+## import_xrefs
+
+- `KERNEL32!AcquireSRWLockExclusive` at `0x18002d7dd`
+- `KERNEL32!AcquireSRWLockExclusive` at `0x18002d7dd`
+
+## pseudocode
+
+```c
+void __fastcall wil::details::SubscribeFeatureStateCacheToConfigurationChanges(
+        volatile signed __int32 *a1,
+        int a2,
+        int a3)
+{
+  _DWORD v6[2]; // [rsp+20h] [rbp-38h] BYREF
+  volatile signed __int32 *v7; // [rsp+28h] [rbp-30h]
+  RTL_SRWLOCK *v8; // [rsp+78h] [rbp+20h] BYREF
+
+  if ( wil::details::g_enabledStateManager )
+  {
+    AcquireSRWLockExclusive(&SRWLock);
+    v8 = &SRWLock;
+    if ( !a3
+      || a3 != dword_180040424
+      || (v6[1] = 0,
+          v6[0] = a2,
+          v7 = a1,
+          !wil::details_abi::heap_buffer::push_back((wil::details_abi::heap_buffer *)qword_180040448, v6, 0x10u)) )
+    {
+      _InterlockedAnd(a1, a2 != 0 ? -5 : -2111);
+    }
+    wil::details::unique_storage<wil::details::resource_policy<_RTL_SRWLOCK *,void (*)(_RTL_SRWLOCK *),&void ReleaseSRWLockExclusive(_RTL_SRWLOCK *),wistd::integral_constant<unsigned __int64,1>,_RTL_SRWLOCK *,_RTL_SRWLOCK *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<_RTL_SRWLOCK *,void (*)(_RTL_SRWLOCK *),&void ReleaseSRWLockExclusive(_RTL_SRWLOCK *),wistd::integral_constant<unsigned __int64,1>,_RTL_SRWLOCK *,_RTL_SRWLOCK *,0,std::nullptr_t>>(&v8);
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x18002d7b8  push    rbx
+0x18002d7ba  push    rbp
+0x18002d7bb  push    rsi
+0x18002d7bc  push    rdi
+0x18002d7bd  sub     rsp, 38h
+0x18002d7c1  mov     eax, cs:?g_enabledStateManager@details@wil@@3V?$shutdown_aware_object@VEnabledStateManager@details@wil@@@2@A; wil::shutdown_aware_object<wil::details::EnabledStateManager> wil::details::g_enabledStateManager
+0x18002d7c7  mov     esi, r8d
+0x18002d7ca  mov     ebx, edx
+0x18002d7cc  mov     rdi, rcx
+0x18002d7cf  test    eax, eax
+0x18002d7d1  jz      short loc_18002D83D
+0x18002d7d3  lea     rbp, SRWLock
+0x18002d7da  mov     rcx, rbp; SRWLock
+0x18002d7dd  call    cs:__imp_AcquireSRWLockExclusive
+0x18002d7e3  mov     eax, cs:dword_180040424
+0x18002d7e9  mov     [rsp+58h+arg_18], rbp
+0x18002d7ee  test    esi, esi
+0x18002d7f0  jz      short loc_18002D822
+0x18002d7f2  cmp     esi, eax
+0x18002d7f4  jnz     short loc_18002D822
+0x18002d7f6  mov     r8d, 10h; unsigned __int64
+0x18002d7fc  mov     [rsp+58h+var_34], 0
+0x18002d804  lea     rdx, [rsp+58h+var_38]; void *
+0x18002d809  mov     [rsp+58h+var_38], ebx
+0x18002d80d  lea     rcx, qword_180040448; this
+0x18002d814  mov     [rsp+58h+var_30], rdi
+0x18002d819  call    ?push_back@heap_buffer@details_abi@wil@@QEAA_NPEBX_K@Z; wil::details_abi::heap_buffer::push_back(void const *,unsigned __int64)
+0x18002d81e  test    al, al
+0x18002d820  jnz     short loc_18002D833
+0x18002d822  neg     ebx
+0x18002d824  sbb     eax, eax
+0x18002d826  and     eax, 83Ah
+0x18002d82b  add     eax, 0FFFFF7C1h
+0x18002d830  lock and [rdi], eax
+0x18002d833  lea     rcx, [rsp+58h+arg_18]
+0x18002d838  call    ??1?$unique_storage@U?$resource_policy@PEAU_RTL_SRWLOCK@@P6AXPEAU1@@Z$1?ReleaseSRWLockExclusive@@YAX0@ZU?$integral_constant@_K$00@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::resource_policy<_RTL_SRWLOCK *,void (*)(_RTL_SRWLOCK *),&ReleaseSRWLockExclusive(_RTL_SRWLOCK *),wistd::integral_constant<unsigned __int64,1>,_RTL_SRWLOCK *,_RTL_SRWLOCK *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<_RTL_SRWLOCK *,void (*)(_RTL_SRWLOCK *),&ReleaseSRWLockExclusive(_RTL_SRWLOCK *),wistd::integral_constant<unsigned __int64,1>,_RTL_SRWLOCK *,_RTL_SRWLOCK *,0,std::nullptr_t>>(void)
+0x18002d83d  add     rsp, 38h
+0x18002d841  pop     rdi
+0x18002d842  pop     rsi
+0x18002d843  pop     rbp
+0x18002d844  pop     rbx
+0x18002d845  retn
+```

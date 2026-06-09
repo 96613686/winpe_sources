@@ -1,0 +1,2562 @@
+[
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x18000267c",
+    "function_file": "functions/18000267c_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalStorage<wil::details_abi::ThreadLocalData>::~ThreadLocalStorage<wil::details_abi::ThreadLocalData>(void)",
+    "ea": "0x18000391c",
+    "function_file": "functions/18000391c_wil_details_abi_ThreadLocalStorage_wil_details_abi_ThreadLocalData_ThreadLocalStorage_wil_details_abi_ThreadLo.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ThreadLocalStorage@UThreadLocalData@details_abi@wil@@@details_abi@wil@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 1203,
+    "size": 218,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::details::ProcessHeapAlloc(ulong,unsigned __int64)",
+    "ea": "0x1800054fc",
+    "function_file": "functions/1800054fc_wil_details_ProcessHeapAlloc_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?ProcessHeapAlloc@details@wil@@YAPEAXK_K@Z",
+    "prototype": "void *__fastcall(DWORD dwFlags, SIZE_T dwBytes, unsigned __int64)",
+    "rank_score": 857,
+    "size": 158,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x18000287c",
+    "function_file": "functions/18000287c_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "WriteNameRecords",
+    "ea": "0x18000f364",
+    "function_file": "functions/18000f364_WriteNameRecords.md",
+    "matched_imports": [
+      "msvcrt!qsort"
+    ],
+    "matched_strings": [],
+    "name": "WriteNameRecords",
+    "prototype": "",
+    "rank_score": 627,
+    "size": 1279,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::SemaphoreValue::TryGetValueInternal(ushort const *,bool,unsigned __int64 *,bool *)",
+    "ea": "0x180006c50",
+    "function_file": "functions/180006c50_wil_details_abi_SemaphoreValue_TryGetValueInternal_ushort_const_bool_unsigned_int64_bool.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!OpenSemaphoreW"
+    ],
+    "matched_strings": [],
+    "name": "?TryGetValueInternal@SemaphoreValue@details_abi@wil@@CAJPEBG_NPEA_KPEA_N@Z",
+    "prototype": "__int64 __fastcall(STRSAFE_PCNZWCH pszSrc, bool, unsigned __int64 *, bool *)",
+    "rank_score": 622,
+    "size": 412,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "wil::details::LogFailure(void *,uint,char const *,char const *,char const *,void *,wil::FailureType,wil::details::ResultStatus const &,ushort const *,bool,ushort *,unsigned __int64,char *,unsigned __int64,wil::FailureFlags,wil::FailureInfo *)",
+    "ea": "0x180004d34",
+    "function_file": "functions/180004d34_wil_details_LogFailure_void_uint_char_const_char_const_char_const_void_wil_FailureType_wil_details_ResultStatu.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!IsDebuggerPresent",
+      "KERNEL32!OutputDebugStringW"
+    ],
+    "matched_strings": [],
+    "name": "?LogFailure@details@wil@@YAXPEAXIPEBD110W4FailureType@2@AEBUResultStatus@12@PEBG_NPEAG_KPEAD7W4FailureFlags@2@PEAUFailureInfo@2@@Z",
+    "prototype": "",
+    "rank_score": 617,
+    "size": 760,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_Return<1>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x1800031ec",
+    "function_file": "functions/1800031ec_wil_details_ReportFailure_Return_1_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!IsDebuggerPresent",
+      "KERNEL32!OutputDebugStringW"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Return@$00@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 660,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "MicrosoftTelemetryAssertTriggeredNoArgs",
+    "ea": "0x18001975c",
+    "function_file": "functions/18001975c_MicrosoftTelemetryAssertTriggeredNoArgs.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleExA",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "MicrosoftTelemetryAssertTriggeredNoArgs",
+    "prototype": "",
+    "rank_score": 467,
+    "size": 162,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::WilFailureNotifyWatchers(uint,WilFailureReport const *,WilFailureReportInformation *)",
+    "ea": "0x180006f28",
+    "function_file": "functions/180006f28_wil_details_WilFailureNotifyWatchers_uint_WilFailureReport_const_WilFailureReportInformation.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?WilFailureNotifyWatchers@details@wil@@YAXIPEBUWilFailureReport@@PEAUWilFailureReportInformation@@@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, unsigned int, const struct WilFailureReport *, struct WilFailureReportInformation *)",
+    "rank_score": 454,
+    "size": 133,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData> * *)",
+    "ea": "0x180003c38",
+    "function_file": "functions/180003c38_wil_details_abi_ProcessLocalStorageData_wil_details_abi_ProcessLocalData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "KERNEL32!CreateMutexExW",
+      "KERNEL32!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "",
+    "rank_score": 435,
+    "size": 405,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "?create@?$semaphore_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@QEAAJJJPEBGKPEAU_SECURITY_ATTRIBUTES@@PEA_N@Z",
+    "ea": "0x1800070f4",
+    "function_file": "functions/1800070f4_create_semaphore_t_V_unique_storage_U_resource_policy_PEAXP6AXPEAX_E_1_CloseHandle_details_wil_YAX0_ZU_integra.md",
+    "matched_imports": [
+      "KERNEL32!CreateSemaphoreExW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?create@?$semaphore_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@QEAAJJJPEBGKPEAU_SECURITY_ATTRIBUTES@@PEA_N@Z",
+    "prototype": "",
+    "rank_score": 424,
+    "size": 82,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "wil::GetFailureLogString(ushort *,unsigned __int64,wil::FailureInfo const &)",
+    "ea": "0x180004284",
+    "function_file": "functions/180004284_wil_GetFailureLogString_ushort_unsigned_int64_wil_FailureInfo_const.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetFailureLogString@wil@@YAJPEAG_KAEBUFailureInfo@1@@Z",
+    "prototype": "__int64 __fastcall(wil *__hidden this, unsigned __int16 *, unsigned __int64, const struct wil::FailureInfo *)",
+    "rank_score": 412,
+    "size": 694,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalFailureInfo::Set(wil::FailureInfo const &,uint)",
+    "ea": "0x180005afc",
+    "function_file": "functions/180005afc_wil_details_abi_ThreadLocalFailureInfo_Set_wil_FailureInfo_const_uint.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?Set@ThreadLocalFailureInfo@details_abi@wil@@QEAAXAEBUFailureInfo@3@I@Z",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalFailureInfo *__hidden this, const struct wil::FailureInfo *, unsigned int)",
+    "rank_score": 410,
+    "size": 310,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>::~ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>(void)",
+    "ea": "0x1800038c4",
+    "function_file": "functions/1800038c4_wil_details_abi_ThreadLocalStorage_wil_details_ThreadFailureCallbackHolder_ThreadLocalStorage_wil_details_Thre.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ThreadLocalStorage@PEAVThreadFailureCallbackHolder@details@wil@@@details_abi@wil@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 402,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wil::details::WilDynamicLoadRaiseFailFastException(_EXCEPTION_RECORD *,_CONTEXT *,ulong)",
+    "ea": "0x180006e20",
+    "function_file": "functions/180006e20_wil_details_WilDynamicLoadRaiseFailFastException_EXCEPTION_RECORD_CONTEXT_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?WilDynamicLoadRaiseFailFastException@details@wil@@YAXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct _EXCEPTION_RECORD *, struct _CONTEXT *, unsigned int)",
+    "rank_score": 263,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_GetNtDllModuleHandle(void)",
+    "ea": "0x180007320",
+    "function_file": "functions/180007320_wil_details_GetNtDllModuleHandle_void.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?wil_details_GetNtDllModuleHandle@@YAPEAUHINSTANCE__@@XZ",
+    "prototype": "HINSTANCE(void)",
+    "rank_score": 253,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::StopWatching(void)",
+    "ea": "0x180006a54",
+    "function_file": "functions/180006a54_wil_details_ThreadFailureCallbackHolder_StopWatching_void.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [
+      "MEMORY CORRUPTION: Calling code is leaking an activity thread-watcher and releasing it on another thread"
+    ],
+    "name": "?StopWatching@ThreadFailureCallbackHolder@details@wil@@QEAAXXZ",
+    "prototype": "void __fastcall(wil::details::ThreadFailureCallbackHolder *__hidden this)",
+    "rank_score": 244,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ReadAllocFormat12CharGlyphMapList",
+    "ea": "0x18000e9e8",
+    "function_file": "functions/18000e9e8_ReadAllocFormat12CharGlyphMapList.md",
+    "matched_imports": [
+      "msvcrt!qsort"
+    ],
+    "matched_strings": [],
+    "name": "ReadAllocFormat12CharGlyphMapList",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 610,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::ActivityBase<FontSubsettingTelemetryProvider,0,0,5,0,_TlgReflectorTag_Param0IsProviderType>::LockExclusive(void)",
+    "ea": "0x180004cac",
+    "function_file": "functions/180004cac_wil_ActivityBase_FontSubsettingTelemetryProvider_0_0_5_0_TlgReflectorTag_Param0IsProviderType_LockExclusive_vo.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?LockExclusive@?$ActivityBase@VFontSubsettingTelemetryProvider@@$0A@$0A@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@AEAA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAU_RTL_SRWLOCK@@P6AXPEAU1@@Z$1?ReleaseSRWLockExclusive@@YAX0@ZU?$integral_constant@_K$00@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@2@XZ",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 129,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::details::unique_storage<wil::details::resource_policy<_RTL_SRWLOCK *,void (*)(_RTL_SRWLOCK *),&ReleaseSRWLockExclusive(_RTL_SRWLOCK *),wistd::integral_constant<unsigned __int64,1>,_RTL_SRWLOCK *,_RTL_SRWLOCK *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<_RTL_SRWLOCK *,void (*)(_RTL_SRWLOCK *),&ReleaseSRWLockExclusive(_RTL_SRWLOCK *),wistd::integral_constant<unsigned __int64,1>,_RTL_SRWLOCK *,_RTL_SRWLOCK *,0,std::nullptr_t>>(void)",
+    "ea": "0x180003a64",
+    "function_file": "functions/180003a64_wil_details_unique_storage_wil_details_resource_policy_RTL_SRWLOCK_void_RTL_SRWLOCK_ReleaseSRWLockExclusive_RT.md",
+    "matched_imports": [
+      "KERNEL32!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "??1?$unique_storage@U?$resource_policy@PEAU_RTL_SRWLOCK@@P6AXPEAU1@@Z$1?ReleaseSRWLockExclusive@@YAX0@ZU?$integral_constant@_K$00@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 23,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "SortByTag",
+    "ea": "0x18000f294",
+    "function_file": "functions/18000f294_SortByTag.md",
+    "matched_imports": [
+      "msvcrt!qsort"
+    ],
+    "matched_strings": [],
+    "name": "SortByTag",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details_abi::ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>::GetLocal(bool)",
+    "ea": "0x1800045dc",
+    "function_file": "functions/1800045dc_wil_details_abi_ThreadLocalStorage_wil_details_ThreadFailureCallbackHolder_GetLocal_bool.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetLocal@?$ThreadLocalStorage@PEAVThreadFailureCallbackHolder@details@wil@@@details_abi@wil@@QEAAPEAPEAVThreadFailureCallbackHolder@details@3@_N@Z",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 158,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FontSubsettingTelemetry::CreateFontPackage::Stop(ulong)",
+    "ea": "0x18000611c",
+    "function_file": "functions/18000611c_FontSubsettingTelemetry_CreateFontPackage_Stop_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?Stop@CreateFontPackage@FontSubsettingTelemetry@@QEAAXK@Z",
+    "prototype": "void __fastcall(FontSubsettingTelemetry::CreateFontPackage *__hidden this, unsigned int)",
+    "rank_score": 211,
+    "size": 597,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FontSubsettingTelemetry::MergeFontPackage::Stop(ulong)",
+    "ea": "0x180006378",
+    "function_file": "functions/180006378_FontSubsettingTelemetry_MergeFontPackage_Stop_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?Stop@MergeFontPackage@FontSubsettingTelemetry@@QEAAXK@Z",
+    "prototype": "void __fastcall(FontSubsettingTelemetry::MergeFontPackage *__hidden this, unsigned int)",
+    "rank_score": 211,
+    "size": 597,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "FontSubsettingTelemetry::CreateFontPackage::StopActivity(void)",
+    "ea": "0x1800065e0",
+    "function_file": "functions/1800065e0_FontSubsettingTelemetry_CreateFontPackage_StopActivity_void.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?StopActivity@CreateFontPackage@FontSubsettingTelemetry@@MEAAXXZ",
+    "prototype": "void __fastcall(FontSubsettingTelemetry::CreateFontPackage *__hidden this)",
+    "rank_score": 210,
+    "size": 556,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "FontSubsettingTelemetry::MergeFontPackage::StopActivity(void)",
+    "ea": "0x180006820",
+    "function_file": "functions/180006820_FontSubsettingTelemetry_MergeFontPackage_StopActivity_void.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?StopActivity@MergeFontPackage@FontSubsettingTelemetry@@MEAAXXZ",
+    "prototype": "void __fastcall(FontSubsettingTelemetry::MergeFontPackage *__hidden this)",
+    "rank_score": 210,
+    "size": 556,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "_tlgWriteTransfer_EventWriteTransfer",
+    "ea": "0x180001f18",
+    "function_file": "functions/180001f18_tlgWriteTransfer_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FontSubsettingTelemetry::CreateFontPackage::StartActivity(void)",
+    "ea": "0x180005f70",
+    "function_file": "functions/180005f70_FontSubsettingTelemetry_CreateFontPackage_StartActivity_void.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?StartActivity@CreateFontPackage@FontSubsettingTelemetry@@QEAAXXZ",
+    "prototype": "void __fastcall(FontSubsettingTelemetry::CreateFontPackage *__hidden this)",
+    "rank_score": 207,
+    "size": 150,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FontSubsettingTelemetry::MergeFontPackage::StartActivity(void)",
+    "ea": "0x18000600c",
+    "function_file": "functions/18000600c_FontSubsettingTelemetry_MergeFontPackage_StartActivity_void.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?StartActivity@MergeFontPackage@FontSubsettingTelemetry@@QEAAXXZ",
+    "prototype": "void __fastcall(FontSubsettingTelemetry::MergeFontPackage *__hidden this)",
+    "rank_score": 207,
+    "size": 150,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::StartWatching(void)",
+    "ea": "0x1800060a8",
+    "function_file": "functions/1800060a8_wil_details_ThreadFailureCallbackHolder_StartWatching_void.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?StartWatching@ThreadFailureCallbackHolder@details@wil@@QEAAXXZ",
+    "prototype": "void __fastcall(wil::details::ThreadFailureCallbackHolder *__hidden this)",
+    "rank_score": 205,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "wil::details::GetContextAndNotifyFailure(wil::FailureInfo *,char *,unsigned __int64)",
+    "ea": "0x1800041d0",
+    "function_file": "functions/1800041d0_wil_details_GetContextAndNotifyFailure_wil_FailureInfo_char_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetContextAndNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@PEAD_K@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct wil::FailureInfo *, char *, unsigned __int64)",
+    "rank_score": 204,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::GetThreadContext(wil::FailureInfo *,wil::details::ThreadFailureCallbackHolder *,char *,unsigned __int64)",
+    "ea": "0x1800047ac",
+    "function_file": "functions/1800047ac_wil_details_ThreadFailureCallbackHolder_GetThreadContext_wil_FailureInfo_wil_details_ThreadFailureCallbackHold.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadContext@ThreadFailureCallbackHolder@details@wil@@SA_NPEAUFailureInfo@3@PEAV123@PEAD_K@Z",
+    "prototype": "bool __fastcall(struct wil::FailureInfo *, struct wil::details::ThreadFailureCallbackHolder *, char *, unsigned __int64)",
+    "rank_score": 204,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::WriteResultString<char const *>(uchar *,uchar *,char const *,char const * *)",
+    "ea": "0x1800035b0",
+    "function_file": "functions/1800035b0_wil_details_WriteResultString_char_const_uchar_uchar_char_const_char_const.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "??$WriteResultString@PEBD@details@wil@@YAPEAEPEAE0PEBDPEAPEBD@Z",
+    "prototype": "__int64 __fastcall(void *Destination)",
+    "rank_score": 204,
+    "size": 113,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::WriteResultString<ushort const *>(uchar *,uchar *,ushort const *,ushort const * *)",
+    "ea": "0x180003628",
+    "function_file": "functions/180003628_wil_details_WriteResultString_ushort_const_uchar_uchar_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "??$WriteResultString@PEBG@details@wil@@YAPEAEPEAE0PEBGPEAPEBG@Z",
+    "prototype": "__int64 __fastcall(void *Destination)",
+    "rank_score": 204,
+    "size": 104,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::GetThreadLocalDataCache(bool)",
+    "ea": "0x180004890",
+    "function_file": "functions/180004890_wil_details_abi_GetThreadLocalDataCache_bool.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadLocalDataCache@details_abi@wil@@YAPEAUThreadLocalData@12@_N@Z",
+    "prototype": "struct wil::details_abi::ThreadLocalData *__fastcall(wil::details_abi *__hidden this, bool)",
+    "rank_score": 204,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 17,
+    "demangled": "memset_0",
+    "ea": "0x18001abfa",
+    "function_file": "functions/18001abfa_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 117,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::static_lazy<FontSubsettingTelemetryProvider>::Completer::~Completer(void)",
+    "ea": "0x180003abc",
+    "function_file": "functions/180003abc_wil_details_static_lazy_FontSubsettingTelemetryProvider_Completer_Completer_void.md",
+    "matched_imports": [
+      "KERNEL32!InitOnceComplete"
+    ],
+    "matched_strings": [],
+    "name": "??1Completer@?$static_lazy@VFontSubsettingTelemetryProvider@@@details@wil@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 114,
+    "size": 90,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_GetNtDllProcedureAddress(char const *)",
+    "ea": "0x180007350",
+    "function_file": "functions/180007350_wil_details_GetNtDllProcedureAddress_char_const.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [],
+    "name": "?wil_details_GetNtDllProcedureAddress@@YAP6A_JXZPEBD@Z",
+    "prototype": "__int64 (*__fastcall(const char *))(void)",
+    "rank_score": 113,
+    "size": 32,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180002855",
+    "function_file": "functions/180002855_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "Mem_ReAlloc",
+    "ea": "0x180011590",
+    "function_file": "functions/180011590_Mem_ReAlloc.md",
+    "matched_imports": [
+      "msvcrt!realloc"
+    ],
+    "matched_strings": [],
+    "name": "Mem_ReAlloc",
+    "prototype": "",
+    "rank_score": 106,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "memmove_0",
+    "ea": "0x18001abee",
+    "function_file": "functions/18001abee_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 26,
+    "caller_count": 1,
+    "demangled": "CreateDeltaTTFEx",
+    "ea": "0x180007fa4",
+    "function_file": "functions/180007fa4_CreateDeltaTTFEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateDeltaTTFEx",
+    "prototype": "",
+    "rank_score": 70,
+    "size": 1898,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "UnCompactSubset1Font",
+    "ea": "0x18000c874",
+    "function_file": "functions/18000c874_UnCompactSubset1Font.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UnCompactSubset1Font",
+    "prototype": "",
+    "rank_score": 55,
+    "size": 2188,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlDllShutdownInProgress(void)",
+    "ea": "0x180005ac0",
+    "function_file": "functions/180005ac0_wil_details_RtlDllShutdownInProgress_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RtlDllShutdownInProgress"
+    ],
+    "name": "?RtlDllShutdownInProgress@details@wil@@YAEXZ",
+    "prototype": "unsigned __int8 __fastcall(wil::details *__hidden this)",
+    "rank_score": 53,
+    "size": 54,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CreateFontPackage",
+    "ea": "0x180002a70",
+    "function_file": "functions/180002a70_CreateFontPackage.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CreateFontPackage"
+    ],
+    "name": "CreateFontPackage",
+    "prototype": "unsigned int __cdecl(const unsigned __int8 *puchSrcBuffer, const unsigned int ulSrcBufferSize, unsigned __int8 **ppuchFontPackageBuffer, unsigned int *pulFontPackageBufferSize, unsigned int *pulBytesWritten, const unsigned __int16 usFlag, const unsigned __int16 usTTCIndex, const unsigned __int16 usSubsetFormat, const unsigned __int16 usSubsetLanguage, const unsigned __int16 usSubsetPlatform, const unsigned __int16 usSubsetEncoding, const unsigned __int16 *pusSubsetKeepList, const unsigned __int16 usSubsetListCount, CFP_ALLOCPROC lpfnAllocate, CFP_REALLOCPROC lpfnReAllocate, CFP_FREEPROC lpfnFree, void *lpvReserved)",
+    "rank_score": 52,
+    "size": 513,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_NoReturn<3>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions)",
+    "ea": "0x180003138",
+    "function_file": "functions/180003138_wil_details_ReportFailure_NoReturn_3_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_NoReturn@$02@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@@Z",
+    "prototype": "",
+    "rank_score": 46,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_GetLastError<3>(void *,uint,char const *,char const *,char const *,void *)",
+    "ea": "0x180002f48",
+    "function_file": "functions/180002f48_wil_details_ReportFailure_GetLastError_3_void_uint_char_const_char_const_char_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_GetLastError@$02@details@wil@@YAKPEAXIPEBD110@Z",
+    "prototype": "",
+    "rank_score": 45,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 72,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18001ac90",
+    "function_file": "functions/18001ac90_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CompressCmapSubTables",
+    "ea": "0x1800115ac",
+    "function_file": "functions/1800115ac_CompressCmapSubTables.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompressCmapSubTables",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 777,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CompactMaxpLocaTable",
+    "ea": "0x1800075f4",
+    "function_file": "functions/1800075f4_CompactMaxpLocaTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompactMaxpLocaTable",
+    "prototype": "",
+    "rank_score": 35,
+    "size": 518,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 51,
+    "demangled": "ReadGeneric",
+    "ea": "0x18001a3bc",
+    "function_file": "functions/18001a3bc_ReadGeneric.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadGeneric",
+    "prototype": "",
+    "rank_score": 33,
+    "size": 435,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "UpdateKeepWithCoverage",
+    "ea": "0x180018b84",
+    "function_file": "functions/180018b84_UpdateKeepWithCoverage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateKeepWithCoverage",
+    "prototype": "",
+    "rank_score": 33,
+    "size": 1985,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 45,
+    "demangled": "WriteGeneric",
+    "ea": "0x18001a808",
+    "function_file": "functions/18001a808_WriteGeneric.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteGeneric",
+    "prototype": "",
+    "rank_score": 33,
+    "size": 431,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18001c010",
+    "function_file": "functions/18001c010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 33,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "CompressTables",
+    "ea": "0x18000d45c",
+    "function_file": "functions/18000d45c_CompressTables.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompressTables",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 933,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::SemaphoreValue::CreateFromValueInternal(ushort const *,bool,unsigned __int64)",
+    "ea": "0x180003e00",
+    "function_file": "functions/180003e00_wil_details_abi_SemaphoreValue_CreateFromValueInternal_ushort_const_bool_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateFromValueInternal@SemaphoreValue@details_abi@wil@@AEAAJPEBG_N_K@Z",
+    "prototype": "int(wil::details_abi::SemaphoreValue *__hidden this, const unsigned __int16 *, bool, unsigned __int64)",
+    "rank_score": 30,
+    "size": 272,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 38,
+    "demangled": "Mem_Alloc",
+    "ea": "0x180011538",
+    "function_file": "functions/180011538_Mem_Alloc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Mem_Alloc",
+    "prototype": "__int64 __fastcall(size_t Size)",
+    "rank_score": 28,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 28,
+    "demangled": "TTTableOffset",
+    "ea": "0x180019e64",
+    "function_file": "functions/180019e64_TTTableOffset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TTTableOffset",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 35,
+    "demangled": "Mem_Free",
+    "ea": "0x180011574",
+    "function_file": "functions/180011574_Mem_Free.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Mem_Free",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 19,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 14,
+    "demangled": "CopyTableOver",
+    "ea": "0x1800198f8",
+    "function_file": "functions/1800198f8_CopyTableOver.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyTableOver",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 322,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 28,
+    "demangled": "GetGenericSize",
+    "ea": "0x18001a2cc",
+    "function_file": "functions/18001a2cc_GetGenericSize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetGenericSize",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 116,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 9,
+    "demangled": "UpdateDirEntry",
+    "ea": "0x180019ec0",
+    "function_file": "functions/180019ec0_UpdateDirEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateDirEntry",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 202,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CalcUncompactFontSize",
+    "ea": "0x1800089c8",
+    "function_file": "functions/1800089c8_CalcUncompactFontSize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CalcUncompactFontSize",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 664,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ComputeMaxPStats",
+    "ea": "0x1800175f4",
+    "function_file": "functions/1800175f4_ComputeMaxPStats.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputeMaxPStats",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 751,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CopySbitSubTable",
+    "ea": "0x180014dc0",
+    "function_file": "functions/180014dc0_CopySbitSubTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopySbitSubTable",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 1667,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WriteTableFromStructure",
+    "ea": "0x180016e9c",
+    "function_file": "functions/180016e9c_WriteTableFromStructure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteTableFromStructure",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 1874,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CreateDeltaTTF",
+    "ea": "0x180007cd4",
+    "function_file": "functions/180007cd4_CreateDeltaTTF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateDeltaTTF",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 713,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 20,
+    "demangled": "GetGeneric",
+    "ea": "0x180019a40",
+    "function_file": "functions/180019a40_GetGeneric.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetGeneric",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "ReadWord",
+    "ea": "0x18001a680",
+    "function_file": "functions/18001a680_ReadWord.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadWord",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180002320",
+    "function_file": "functions/180002320_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18001ab64",
+    "function_file": "functions/18001ab64_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "UnCompactHDMX",
+    "ea": "0x18000c350",
+    "function_file": "functions/18000c350_UnCompactHDMX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UnCompactHDMX",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 561,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "GetComponentGlyphList",
+    "ea": "0x18000de24",
+    "function_file": "functions/18000de24_GetComponentGlyphList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetComponentGlyphList",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 487,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "SetFileChecksum",
+    "ea": "0x180019c00",
+    "function_file": "functions/180019c00_SetFileChecksum.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetFileChecksum",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 289,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "UpdatePrivateTable",
+    "ea": "0x1800087e8",
+    "function_file": "functions/1800087e8_UpdatePrivateTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdatePrivateTable",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 416,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WriteIndexSubTables",
+    "ea": "0x180013c38",
+    "function_file": "functions/180013c38_WriteIndexSubTables.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteIndexSubTables",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 673,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "UnCompactLOCA",
+    "ea": "0x18000c588",
+    "function_file": "functions/18000c588_UnCompactLOCA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UnCompactLOCA",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 375,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "UnCompactXmtx",
+    "ea": "0x18000d108",
+    "function_file": "functions/18000d108_UnCompactXmtx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UnCompactXmtx",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 612,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180002364",
+    "function_file": "functions/180002364_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ComputeFormat4CmapData",
+    "ea": "0x18000d8e4",
+    "function_file": "functions/18000d8e4_ComputeFormat4CmapData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputeFormat4CmapData",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 636,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "UpdateDirEntryAll",
+    "ea": "0x180019f90",
+    "function_file": "functions/180019f90_UpdateDirEntryAll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateDirEntryAll",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 201,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 17,
+    "demangled": "ZeroLongWordAlign",
+    "ea": "0x18001a060",
+    "function_file": "functions/18001a060_ZeroLongWordAlign.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ZeroLongWordAlign",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "UnCompactLTSH",
+    "ea": "0x18000c708",
+    "function_file": "functions/18000c708_UnCompactLTSH.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UnCompactLTSH",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 355,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 14,
+    "demangled": "TTTableLength",
+    "ea": "0x180019e04",
+    "function_file": "functions/180019e04_TTTableLength.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TTTableLength",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "WriteByte",
+    "ea": "0x18001a76c",
+    "function_file": "functions/18001a76c_WriteByte.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteByte",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "ea": "0x180003a84",
+    "function_file": "functions/180003a84_1_unique_storage_U_resource_policy_PEAXP6AXPEAX_E_1_CloseHandle_details_wil_YAX0_ZU_integral_constant_K_0A_wis.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 22,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CopyOffsetDirectoryTables",
+    "ea": "0x1800079b8",
+    "function_file": "functions/1800079b8_CopyOffsetDirectoryTables.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyOffsetDirectoryTables",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 790,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetCompositeGlyphStats",
+    "ea": "0x1800178ec",
+    "function_file": "functions/1800178ec_GetCompositeGlyphStats.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetCompositeGlyphStats",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 341,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "WriteWord",
+    "ea": "0x18001aadc",
+    "function_file": "functions/18001aadc_WriteWord.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteWord",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::ActivityBase<FontSubsettingTelemetryProvider,0,0,5,0,_TlgReflectorTag_Param0IsProviderType>::zInternalStop(void)",
+    "ea": "0x1800073d4",
+    "function_file": "functions/1800073d4_wil_ActivityBase_FontSubsettingTelemetryProvider_0_0_5_0_TlgReflectorTag_Param0IsProviderType_zInternalStop_vo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?zInternalStop@?$ActivityBase@VFontSubsettingTelemetryProvider@@$0A@$0A@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXXZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 48,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ComputeFormat12CmapData",
+    "ea": "0x18000d808",
+    "function_file": "functions/18000d808_ComputeFormat12CmapData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputeFormat12CmapData",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 212,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ReadTableIntoStructure",
+    "ea": "0x1800168d0",
+    "function_file": "functions/1800168d0_ReadTableIntoStructure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadTableIntoStructure",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 1280,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18001ac30",
+    "function_file": "functions/18001ac30_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 9,
+    "demangled": "CopyBlockOver",
+    "ea": "0x18001986c",
+    "function_file": "functions/18001986c_CopyBlockOver.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyBlockOver",
+    "prototype": "__int64 __fastcall(int, int, int, int, size_t Size)",
+    "rank_score": 14,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "ReadGenericRepeat",
+    "ea": "0x18001a578",
+    "function_file": "functions/18001a578_ReadGenericRepeat.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadGenericRepeat",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 159,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "GetLoca",
+    "ea": "0x18000e214",
+    "function_file": "functions/18000e214_GetLoca.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetLoca",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 306,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CalcNewUncompactSize",
+    "ea": "0x180008990",
+    "function_file": "functions/180008990_CalcNewUncompactSize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CalcNewUncompactSize",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 47,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CopyForgottenTables",
+    "ea": "0x180007800",
+    "function_file": "functions/180007800_CopyForgottenTables.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyForgottenTables",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 431,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ReadAllocFormat4CharGlyphMapList",
+    "ea": "0x18000ec50",
+    "function_file": "functions/18000ec50_ReadAllocFormat4CharGlyphMapList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadAllocFormat4CharGlyphMapList",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 711,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AscendingGlyphIndexCompare",
+    "ea": "0x180014d90",
+    "function_file": "functions/180014d90_AscendingGlyphIndexCompare.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AscendingGlyphIndexCompare",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AscendingNameRecordCompare",
+    "ea": "0x18000d3c0",
+    "function_file": "functions/18000d3c0_AscendingNameRecordCompare.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AscendingNameRecordCompare",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 61,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AscendingOffsetCompare",
+    "ea": "0x18000d410",
+    "function_file": "functions/18000d410_AscendingOffsetCompare.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AscendingOffsetCompare",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 19,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AscendingRecordIndexCompare",
+    "ea": "0x18000d380",
+    "function_file": "functions/18000d380_AscendingRecordIndexCompare.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AscendingRecordIndexCompare",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 19,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AscendingTagCompare",
+    "ea": "0x18000d3a0",
+    "function_file": "functions/18000d3a0_AscendingTagCompare.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AscendingTagCompare",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 17,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CompareSegments",
+    "ea": "0x18000d430",
+    "function_file": "functions/18000d430_CompareSegments.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompareSegments",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 37,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DescendingStringLengthCompare",
+    "ea": "0x18000db70",
+    "function_file": "functions/18000db70_DescendingStringLengthCompare.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DescendingStringLengthCompare",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180002760",
+    "function_file": "functions/180002760_DllMain.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "FindCmapSubtable",
+    "ea": "0x18000db8c",
+    "function_file": "functions/18000db8c_FindCmapSubtable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FindCmapSubtable",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 523,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "GetTTDirectory",
+    "ea": "0x180019b9c",
+    "function_file": "functions/180019b9c_GetTTDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetTTDirectory",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "MarkTableForDeletion",
+    "ea": "0x18000e34c",
+    "function_file": "functions/18000e34c_MarkTableForDeletion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MarkTableForDeletion",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 120,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "ReadAllocCmapFormat4",
+    "ea": "0x18000e4c8",
+    "function_file": "functions/18000e4c8_ReadAllocCmapFormat4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadAllocCmapFormat4",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 329,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ReadAllocNameRecords",
+    "ea": "0x18000ef20",
+    "function_file": "functions/18000ef20_ReadAllocNameRecords.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadAllocNameRecords",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 460,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "ReadByte",
+    "ea": "0x18001a348",
+    "function_file": "functions/18001a348_ReadByte.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadByte",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "WriteGenericRepeat",
+    "ea": "0x18001a9c0",
+    "function_file": "functions/18001a9c0_WriteGenericRepeat.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteGenericRepeat",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 159,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x1800015e0",
+    "function_file": "functions/1800015e0_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@G@@U2@U3@U2@U3@U4@U2@U3@U4@U2@U2@U3@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@G@@454564564454@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 802,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<char>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &)",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@G@@U2@U3@U2@U3@U4@U2@U3@U4@U2@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@G@@45456456445@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 790,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "ea": "0x18001b040",
+    "function_file": "functions/18001b040_wil_details_dynamic_atexit_destructor_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "ea": "0x180002090",
+    "function_file": "functions/180002090_wil_details_dynamic_initializer_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "CheckOutOffset",
+    "ea": "0x18001a234",
+    "function_file": "functions/18001a234_CheckOutOffset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CheckOutOffset",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<char>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &)",
+    "ea": "0x180001a98",
+    "function_file": "functions/180001a98_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@G@@U2@U3@U2@U3@U4@U2@U3@U4@U2@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@G@@45456456445@Z",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 752,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil::details::HrToNtStatus(long)",
+    "ea": "0x180004aa0",
+    "function_file": "functions/180004aa0_wil_details_HrToNtStatus_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HrToNtStatus@details@wil@@YAJJ@Z",
+    "prototype": "__int64 __fastcall(wil::details *__hidden this, int)",
+    "rank_score": 10,
+    "size": 444,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "wil::details::WilFailFast(wil::FailureInfo const &)",
+    "ea": "0x180006e78",
+    "function_file": "functions/180006e78_wil_details_WilFailFast_wil_FailureInfo_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WilFailFast@details@wil@@YAXAEBUFailureInfo@2@@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *__hidden this, const struct wil::FailureInfo *)",
+    "rank_score": 10,
+    "size": 167,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "CalcChecksum",
+    "ea": "0x18001a138",
+    "function_file": "functions/18001a138_CalcChecksum.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CalcChecksum",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "CheckInOffset",
+    "ea": "0x18001a208",
+    "function_file": "functions/18001a208_CheckInOffset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CheckInOffset",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "FontSubsettingTelemetryProvider::Provider(void)",
+    "ea": "0x1800055ac",
+    "function_file": "functions/1800055ac_FontSubsettingTelemetryProvider_Provider_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Provider@FontSubsettingTelemetryProvider@@SAPEBU_tlgProvider_t@@XZ",
+    "prototype": "const struct _tlgProvider_t *(void)",
+    "rank_score": 9,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ReadAllocCmapFormat4Segs",
+    "ea": "0x18000e754",
+    "function_file": "functions/18000e754_ReadAllocCmapFormat4Segs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadAllocCmapFormat4Segs",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 409,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "ReadCmapLength",
+    "ea": "0x18000f198",
+    "function_file": "functions/18000f198_ReadCmapLength.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadCmapLength",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 196,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &)",
+    "ea": "0x18000132c",
+    "function_file": "functions/18000132c_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@G@@U2@U3@U2@U3@U4@U2@U3@U4@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@G@@45456456@Z",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 683,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "ReadAllocCmapFormat12",
+    "ea": "0x18000e3cc",
+    "function_file": "functions/18000e3cc_ReadAllocCmapFormat12.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadAllocCmapFormat12",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 246,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ReadAllocCmapFormat4Ids",
+    "ea": "0x18000e618",
+    "function_file": "functions/18000e618_ReadAllocCmapFormat4Ids.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadAllocCmapFormat4Ids",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 310,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ReadAllocCmapFormat6",
+    "ea": "0x18000e8f4",
+    "function_file": "functions/18000e8f4_ReadAllocCmapFormat6.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadAllocCmapFormat6",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 235,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "ReadBytes",
+    "ea": "0x18001a380",
+    "function_file": "functions/18001a380_ReadBytes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadBytes",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "ReadLong",
+    "ea": "0x18001a620",
+    "function_file": "functions/18001a620_ReadLong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadLong",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "WriteOutFormat4CmapData",
+    "ea": "0x18000f928",
+    "function_file": "functions/18000f928_WriteOutFormat4CmapData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteOutFormat4CmapData",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 425,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "CopyBlock",
+    "ea": "0x180019804",
+    "function_file": "functions/180019804_CopyBlock.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyBlock",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 97,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "GetNumGlyphs",
+    "ea": "0x180019ac4",
+    "function_file": "functions/180019ac4_GetNumGlyphs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetNumGlyphs",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "WriteBytes",
+    "ea": "0x18001a7b8",
+    "function_file": "functions/18001a7b8_WriteBytes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteBytes",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "wil::ActivityBase<FontSubsettingTelemetryProvider,0,0,5,0,_TlgReflectorTag_Param0IsProviderType>::IgnoreCurrentThread(void)",
+    "ea": "0x180004c64",
+    "function_file": "functions/180004c64_wil_ActivityBase_FontSubsettingTelemetryProvider_0_0_5_0_TlgReflectorTag_Param0IsProviderType_IgnoreCurrentThr.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IgnoreCurrentThread@?$ActivityBase@VFontSubsettingTelemetryProvider@@$0A@$0A@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXXZ",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ReadCmapFormat0",
+    "ea": "0x18000f0f4",
+    "function_file": "functions/18000f0f4_ReadCmapFormat0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadCmapFormat0",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ReadSubTableInfo",
+    "ea": "0x1800167ac",
+    "function_file": "functions/1800167ac_ReadSubTableInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReadSubTableInfo",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 286,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "log2ui16",
+    "ea": "0x180014ca0",
+    "function_file": "functions/180014ca0_log2ui16.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "log2ui16",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 219,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::GetContextAndNotifyFailure(wil::FailureInfo *,char *,unsigned __int64)",
+    "ea": "0x180004104",
+    "function_file": "functions/180004104_wil_details_ThreadFailureCallbackHolder_GetContextAndNotifyFailure_wil_FailureInfo_char_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetContextAndNotifyFailure@ThreadFailureCallbackHolder@details@wil@@SAXPEAUFailureInfo@3@PEAD_K@Z",
+    "prototype": "void __fastcall(struct wil::FailureInfo *, char *, unsigned __int64)",
+    "rank_score": 6,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)",
+    "ea": "0x180005a94",
+    "function_file": "functions/180005a94_wil_details_in1diag3_Return_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void(wil::details::in1diag3 *__hidden this, void *, unsigned int, const char *, int)",
+    "rank_score": 6,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "FreeCmapFormat4",
+    "ea": "0x18000dda0",
+    "function_file": "functions/18000dda0_FreeCmapFormat4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FreeCmapFormat4",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TTDirectoryEntryOffset",
+    "ea": "0x180019d28",
+    "function_file": "functions/180019d28_TTDirectoryEntryOffset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TTDirectoryEntryOffset",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WriteLong",
+    "ea": "0x18001aa68",
+    "function_file": "functions/18001aa68_WriteLong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteLong",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WriteOutFormat12CmapData",
+    "ea": "0x18000f86c",
+    "function_file": "functions/18000f86c_WriteOutFormat12CmapData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriteOutFormat12CmapData",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x180001a08",
+    "function_file": "functions/180001a08_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@44@Z",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 138,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x180001978",
+    "function_file": "functions/180001978_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@4@Z",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil::ActivityBase<FontSubsettingTelemetryProvider,0,0,5,0,_TlgReflectorTag_Param0IsProviderType>::EnsureWatchingCurrentThread(void)",
+    "ea": "0x180004004",
+    "function_file": "functions/180004004_wil_ActivityBase_FontSubsettingTelemetryProvider_0_0_5_0_TlgReflectorTag_Param0IsProviderType_EnsureWatchingCu.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EnsureWatchingCurrentThread@?$ActivityBase@VFontSubsettingTelemetryProvider@@$0A@$0A@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@IEAAXXZ",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalData::SetLastError(wil::FailureInfo const &)",
+    "ea": "0x180005e98",
+    "function_file": "functions/180005e98_wil_details_abi_ThreadLocalData_SetLastError_wil_FailureInfo_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetLastError@ThreadLocalData@details_abi@wil@@QEAAXAEBUFailureInfo@3@@Z",
+    "prototype": "void(wil::details_abi::ThreadLocalData *__hidden this, const struct wil::FailureInfo *)",
+    "rank_score": 5,
+    "size": 207,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCopyWorkerW",
+    "ea": "0x180006ba4",
+    "function_file": "functions/180006ba4_StringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 4,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteActivityAutoStop<0,5>(_tlgProvider_t const *,_GUID const *)",
+    "ea": "0x180003698",
+    "function_file": "functions/180003698_tlgWriteActivityAutoStop_0_5_tlgProvider_t_const_GUID_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_tlgWriteActivityAutoStop@$0A@$04@@YAXPEBU_tlgProvider_t@@PEBU_GUID@@@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x180001908",
+    "function_file": "functions/180001908_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FontSubsettingTelemetry::CreateFontPackage::~CreateFontPackage(void)",
+    "ea": "0x180003b1c",
+    "function_file": "functions/180003b1c_FontSubsettingTelemetry_CreateFontPackage_CreateFontPackage_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CreateFontPackage@FontSubsettingTelemetry@@QEAA@XZ",
+    "prototype": "void __fastcall(FontSubsettingTelemetry::CreateFontPackage *__hidden this)",
+    "rank_score": 3,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::~ThreadFailureCallbackHolder(void)",
+    "ea": "0x180003b9c",
+    "function_file": "functions/180003b9c_wil_details_ThreadFailureCallbackHolder_ThreadFailureCallbackHolder_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1ThreadFailureCallbackHolder@details@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details::ThreadFailureCallbackHolder *__hidden this)",
+    "rank_score": 3,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wistd::unique_ptr<void,wil::process_heap_deleter>::~unique_ptr<void,wil::process_heap_deleter>(void)",
+    "ea": "0x180003a3c",
+    "function_file": "functions/180003a3c_wistd_unique_ptr_void_wil_process_heap_deleter_unique_ptr_void_wil_process_heap_deleter_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@XUprocess_heap_deleter@wil@@@wistd@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_tlgEnableCallback",
+    "ea": "0x180001e70",
+    "function_file": "functions/180001e70_tlgEnableCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgEnableCallback",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 2,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::IsWatching(void)",
+    "ea": "0x180004c9c",
+    "function_file": "functions/180004c9c_wil_details_ThreadFailureCallbackHolder_IsWatching_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsWatching@ThreadFailureCallbackHolder@details@wil@@QEBA_NXZ",
+    "prototype": "bool __fastcall(wil::details::ThreadFailureCallbackHolder *__hidden this)",
+    "rank_score": 2,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "wistd::operator==<void,wil::process_heap_deleter>(wistd::unique_ptr<void,wil::process_heap_deleter> const &,std::nullptr_t)",
+    "ea": "0x180002e9c",
+    "function_file": "functions/180002e9c_wistd_operator_void_wil_process_heap_deleter_wistd_unique_ptr_void_wil_process_heap_deleter_const_std_nullptr_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$?8XUprocess_heap_deleter@wil@@@wistd@@YA_NAEBV?$unique_ptr@XUprocess_heap_deleter@wil@@@0@$$T@Z",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "wistd::unique_ptr<void,wil::process_heap_deleter>::release(void)",
+    "ea": "0x18000720c",
+    "function_file": "functions/18000720c_wistd_unique_ptr_void_wil_process_heap_deleter_release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?release@?$unique_ptr@XUprocess_heap_deleter@wil@@@wistd@@QEAAPEAXXZ",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 11,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "wistd::unique_ptr<void,wil::process_heap_deleter>::unique_ptr<void,wil::process_heap_deleter>(void *)",
+    "ea": "0x180002e8c",
+    "function_file": "functions/180002e8c_wistd_unique_ptr_void_wil_process_heap_deleter_unique_ptr_void_wil_process_heap_deleter_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$?0$00X@?$unique_ptr@XUprocess_heap_deleter@wil@@@wistd@@QEAA@PEAX@Z",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "FontSubsettingTelemetry::CreateFontPackage::WasAlreadyReportedToTelemetry(long)",
+    "ea": "0x180006e00",
+    "function_file": "functions/180006e00_FontSubsettingTelemetry_CreateFontPackage_WasAlreadyReportedToTelemetry_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WasAlreadyReportedToTelemetry@CreateFontPackage@FontSubsettingTelemetry@@MEAA_NJ@Z",
+    "prototype": "bool __fastcall(FontSubsettingTelemetry::CreateFontPackage *__hidden this, int)",
+    "rank_score": 0,
+    "size": 14,
+    "tags": []
+  }
+]
