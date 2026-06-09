@@ -1,0 +1,207 @@
+# VfRlrsEntry
+
+- ea: `0x140639800`
+- end: `0x140639c2e`
+- name: `VfRlrsEntry`
+- size: `1070`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `5`
+- tags: `loader_planting, broker_com_uri`
+
+## callees
+
+- `0x140538640`
+- `0x140639800`
+- `0x1406d9d70`
+- `0x140bd2374`
+- `0x140bd24a0`
+
+## string_xrefs
+
+- `0x1406398da`: `MmAllocateContiguousMemorySpecifyCache`
+- `0x1406398cf`: `MmAllocateContiguousMemorySpecifyCacheNode`
+- `0x1406398f6`: `MmAllocateNonCachedMemory`
+- `0x140639a6e`: `IoAllocateDriverObjectExtension`
+- `0x140639a94`: `IoSetCompletionRoutineEx`
+- `0x140639ae8`: `KeDelayExecutionThread`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x140639800  mov     [rsp-8+arg_0], rbx
+0x140639805  mov     [rsp-8+arg_8], rdi
+0x14063980a  push    rbp
+0x14063980b  lea     rbp, [rsp-290h]
+0x140639813  sub     rsp, 390h
+0x14063981a  mov     rax, cs:__security_cookie
+0x140639821  xor     rax, rsp
+0x140639824  mov     [rbp+290h+var_10], rax
+0x14063982b  xor     edi, edi
+0x14063982d  mov     [rsp+390h+var_368], 19Dh
+0x140639835  lea     rax, ViRlrsUnload
+0x14063983c  mov     [rsp+390h+var_360], rdi
+0x140639841  mov     cs:qword_140EF2128, rax
+0x140639848  lea     rax, aExallocatepool_0; "ExAllocatePool"
+0x14063984f  mov     [rsp+390h+var_370], rax
+0x140639854  lea     rax, aExallocatepool_1; "ExAllocatePoolWithTag"
+0x14063985b  mov     [rsp+390h+var_350], rax
+0x140639860  lea     rax, aExallocatepool_15; "ExAllocatePoolWithTagPriority"
+0x140639867  mov     [rsp+390h+var_330], rax
+0x14063986c  lea     rax, aExallocatepool; "ExAllocatePool2"
+0x140639873  mov     [rbp+290h+var_310], rax
+0x140639877  lea     rax, aExallocatepool_13; "ExAllocatePool3"
+0x14063987e  mov     [rbp+290h+var_2F0], rax
+0x140639882  lea     rax, aMmprobeandlock; "MmProbeAndLockPages"
+0x140639889  mov     [rbp+290h+var_2D0], rax
+0x14063988d  lea     rax, ViRlrsMmProbeAndLockProcessPages_Entry
+0x140639894  mov     [rbp+290h+var_2C0], rax
+0x140639898  lea     rax, aMmprobeandlock_2; "MmProbeAndLockProcessPages"
+0x14063989f  mov     [rbp+290h+var_2B0], rax
+0x1406398a3  lea     rax, ViRlrsMmProbeAndLockProcessPages_Entry
+0x1406398aa  mov     [rbp+290h+var_2A0], rax
+0x1406398ae  lea     rax, aMmmapiospace; "MmMapIoSpace"
+0x1406398b5  mov     [rbp+290h+var_290], rax
+0x1406398b9  lea     rax, aMmallocatemapp_2; "MmAllocateMappingAddress"
+0x1406398c0  mov     [rbp+290h+var_270], rax
+0x1406398c4  lea     rax, aMmallocatecont_0; "MmAllocateContiguousMemory"
+0x1406398cb  mov     [rbp+290h+var_250], rax
+0x1406398cf  lea     rax, aMmallocatecont_11; "MmAllocateContiguousMemorySpecifyCacheN"...
+0x1406398d6  mov     [rbp+290h+var_230], rax
+0x1406398da  lea     rax, aMmallocatecont_9; "MmAllocateContiguousMemorySpecifyCache"
+0x1406398e1  mov     [rbp+290h+var_210], rax
+0x1406398e8  lea     rax, aMmallocatecont_7; "MmAllocateContiguousNodeMemory"
+0x1406398ef  mov     [rbp+290h+var_1F0], rax
+0x1406398f6  lea     rax, aMmallocatenonc_0; "MmAllocateNonCachedMemory"
+0x1406398fd  mov     [rbp+290h+var_1D0], rax
+0x140639904  lea     rax, aMmallocatepage_3; "MmAllocatePagesForMdl"
+0x14063990b  mov     [rbp+290h+var_1B0], rax
+0x140639912  lea     rax, aMmallocatepage; "MmAllocatePagesForMdlEx"
+0x140639919  mov     [rsp+390h+var_358], rdi
+0x14063991e  mov     [rsp+390h+var_348], 19Eh
+0x140639926  mov     [rsp+390h+var_340], rdi
+0x14063992b  mov     [rsp+390h+var_338], rdi
+0x140639930  mov     [rsp+390h+var_328], 19Fh
+0x140639938  mov     [rsp+390h+var_320], rdi
+0x14063993d  mov     [rsp+390h+var_318], rdi
+0x140639942  mov     [rbp+290h+var_308], 1A3h
+0x140639949  mov     [rbp+290h+var_300], rdi
+0x14063994d  mov     [rbp+290h+var_2F8], rdi
+0x140639951  mov     [rbp+290h+var_2E8], 1A2h
+0x140639958  mov     [rbp+290h+var_2E0], rdi
+0x14063995c  mov     [rbp+290h+var_2D8], rdi
+0x140639960  mov     [rbp+290h+var_2C8], 0D9h
+0x140639967  mov     [rbp+290h+var_2B8], rdi
+0x14063996b  mov     [rbp+290h+var_2A8], 0D8h
+0x140639972  mov     [rbp+290h+var_298], rdi
+0x140639976  mov     [rbp+290h+var_288], 0DDh
+0x14063997d  mov     [rbp+290h+var_280], rdi
+0x140639981  mov     [rbp+290h+var_278], rdi
+0x140639985  mov     [rbp+290h+var_268], 0E9h
+0x14063998c  mov     [rbp+290h+var_260], rdi
+0x140639990  mov     [rbp+290h+var_258], rdi
+0x140639994  mov     [rbp+290h+var_248], 0EEh
+0x14063999b  mov     [rbp+290h+var_240], rdi
+0x14063999f  mov     [rbp+290h+var_238], rdi
+0x1406399a3  mov     [rbp+290h+var_228], 0EBh
+0x1406399aa  mov     [rbp+290h+var_220], rdi
+0x1406399ae  mov     [rbp+290h+var_218], rdi
+0x1406399b2  mov     [rbp+290h+var_208], 0ECh
+0x1406399bc  mov     [rbp+290h+var_200], rdi
+0x1406399c3  mov     [rbp+290h+var_1F8], rdi
+0x1406399ca  mov     [rbp+290h+var_1E8], 0EAh
+0x1406399d4  mov     [rbp+290h+var_1E0], rdi
+0x1406399db  mov     [rbp+290h+var_1D8], rdi
+0x1406399e2  mov     [rbp+290h+var_1C8], 0E7h
+0x1406399ec  mov     [rbp+290h+var_1C0], rdi
+0x1406399f3  mov     [rbp+290h+var_1B8], rdi
+0x1406399fa  mov     [rbp+290h+var_1A8], 0E6h
+0x140639a04  mov     [rbp+290h+var_1A0], rdi
+0x140639a0b  mov     [rbp+290h+var_198], rdi
+0x140639a12  mov     [rbp+290h+var_190], rax
+0x140639a19  lea     r9, ViRandomFailureSetting
+0x140639a20  lea     rax, aMmallocatenode; "MmAllocateNodePagesForMdlEx"
+0x140639a27  mov     [rbp+290h+var_188], 0E5h
+0x140639a31  mov     [rbp+290h+var_170], rax
+0x140639a38  lea     edx, [rdi+1Bh]
+0x140639a3b  lea     rax, aMmmaplockedpag_3; "MmMapLockedPages"
+0x140639a42  mov     [rbp+290h+var_180], rdi
+0x140639a49  mov     [rbp+290h+var_150], rax
+0x140639a50  lea     r8d, [rdi+2]
+0x140639a54  lea     rax, ViRlrsMmMapLockedPages_Entry
+0x140639a5b  mov     [rbp+290h+var_178], rdi
+0x140639a62  mov     [rbp+290h+var_140], rax
+0x140639a69  lea     rcx, [rsp+390h+var_370]
+0x140639a6e  lea     rax, aIoallocatedriv; "IoAllocateDriverObjectExtension"
+0x140639a75  mov     [rbp+290h+var_168], 0E8h
+0x140639a7f  mov     [rbp+290h+var_130], rax
+0x140639a86  lea     rax, aIoallocateerro_0; "IoAllocateErrorLogEntry"
+0x140639a8d  mov     [rbp+290h+var_110], rax
+0x140639a94  lea     rax, aIosetcompletio_0; "IoSetCompletionRoutineEx"
+0x140639a9b  mov     [rbp+290h+var_F0], rax
+0x140639aa2  lea     rax, aIoallocateirp_1; "IoAllocateIrp"
+0x140639aa9  mov     [rbp+290h+var_D0], rax
+0x140639ab0  lea     rax, aIoallocatework_1; "IoAllocateWorkItem"
+0x140639ab7  mov     [rbp+290h+var_B0], rax
+0x140639abe  lea     rax, aIoallocatemdl_0; "IoAllocateMdl"
+0x140639ac5  mov     [rbp+290h+var_90], rax
+0x140639acc  lea     rax, aKewaitforsingl_0; "KeWaitForSingleObject"
+0x140639ad3  mov     [rbp+290h+var_70], rax
+0x140639ada  lea     rax, aKewaitformulti_0; "KeWaitForMultipleObjects"
+0x140639ae1  mov     [rbp+290h+var_50], rax
+0x140639ae8  lea     rax, aKedelayexecuti_0; "KeDelayExecutionThread"
+0x140639aef  mov     [rbp+290h+var_30], rax
+0x140639af6  mov     [rbp+290h+var_160], rdi
+0x140639afd  mov     [rbp+290h+var_158], rdi
+0x140639b04  mov     [rbp+290h+var_148], 0DCh
+0x140639b0e  mov     [rbp+290h+var_138], rdi
+0x140639b15  mov     [rbp+290h+var_128], 171h
+0x140639b1f  mov     [rbp+290h+var_120], rdi
+0x140639b26  mov     [rbp+290h+var_118], rdi
+0x140639b2d  mov     [rbp+290h+var_108], 170h
+0x140639b37  mov     [rbp+290h+var_100], rdi
+0x140639b3e  mov     [rbp+290h+var_F8], rdi
+0x140639b45  mov     [rbp+290h+var_E8], 13Ah
+0x140639b4f  mov     [rbp+290h+var_E0], rdi
+0x140639b56  mov     [rbp+290h+var_D8], rdi
+0x140639b5d  mov     [rbp+290h+var_C8], 16Eh
+0x140639b67  mov     [rbp+290h+var_C0], rdi
+0x140639b6e  mov     [rbp+290h+var_B8], rdi
+0x140639b75  mov     [rbp+290h+var_A8], 16Ch
+0x140639b7f  mov     [rbp+290h+var_A0], rdi
+0x140639b86  mov     [rbp+290h+var_98], rdi
+0x140639b8d  mov     [rbp+290h+var_88], 16Dh
+0x140639b97  mov     [rbp+290h+var_80], rdi
+0x140639b9e  mov     [rbp+290h+var_78], rdi
+0x140639ba5  mov     [rbp+290h+var_68], 0F0h
+0x140639baf  mov     [rbp+290h+var_60], rdi
+0x140639bb6  mov     [rbp+290h+var_58], rdi
+0x140639bbd  mov     [rbp+290h+var_48], 0F1h
+0x140639bc7  mov     [rbp+290h+var_40], rdi
+0x140639bce  mov     [rbp+290h+var_38], rdi
+0x140639bd5  mov     [rbp+290h+var_28], 121h
+0x140639bdf  mov     [rbp+290h+var_20], rdi
+0x140639be6  mov     [rbp+290h+var_18], rdi
+0x140639bed  call    DifRegisterPlugin
+0x140639bf2  mov     ebx, eax
+0x140639bf4  call    VfFaultsInitPhase0
+0x140639bf9  cmp     cs:VfDifRunningWithoutReboot, dil
+0x140639c00  jz      short loc_140639C07
+0x140639c02  call    VfFaultsInitPhase1
+0x140639c07  mov     eax, ebx
+0x140639c09  mov     rcx, [rbp+290h+var_10]
+0x140639c10  xor     rcx, rsp; StackCookie
+0x140639c13  call    __security_check_cookie
+0x140639c18  lea     r11, [rsp+390h+var_s0]
+0x140639c20  mov     rbx, [r11+10h]
+0x140639c24  mov     rdi, [r11+18h]
+0x140639c28  mov     rsp, r11
+0x140639c2b  pop     rbp
+0x140639c2c  retn
+```

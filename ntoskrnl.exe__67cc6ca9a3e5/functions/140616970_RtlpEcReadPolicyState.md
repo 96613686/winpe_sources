@@ -1,0 +1,103 @@
+# RtlpEcReadPolicyState
+
+- ea: `0x140616970`
+- end: `0x140616a10`
+- name: `RtlpEcReadPolicyState`
+- size: `160`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `2`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x1406168f0`
+
+## callees
+
+- `0x140616970`
+- `0x140616aa4`
+
+## string_xrefs
+
+- `0x1406169d4`: `TemporaryEnterpriseFeatureControlState_Mirrored`
+- `0x1406169db`: `\Registry\Machine\SYSTEM\CurrentControlSet\Control\FeatureManagement`
+- `0x14061698f`: `TemporaryEnterpriseFeatureControlState`
+- `0x140616988`: `\UpdatePolicy\PolicyState`
+- `0x1406169a4`: `\Registry\Machine\SOFTWARE\Microsoft\WindowsUpdate`
+- `0x1406169ab`: `WindowsUpdate`
+
+## pseudocode
+
+```c
+__int64 __fastcall RtlpEcReadPolicyState(bool *a1)
+{
+  int DwordFromPersistedState; // edx
+  int v4; // [rsp+48h] [rbp+10h] BYREF
+
+  v4 = 0;
+  DwordFromPersistedState = RtlpEtcGetDwordFromPersistedState(
+                              (unsigned int)L"WindowsUpdate",
+                              (unsigned int)L"\\Registry\\Machine\\SOFTWARE\\Microsoft\\WindowsUpdate",
+                              26,
+                              (unsigned int)L"\\UpdatePolicy\\PolicyState",
+                              (__int64)L"TemporaryEnterpriseFeatureControlState",
+                              (__int64)&v4);
+  if ( DwordFromPersistedState >= 0
+    || (DwordFromPersistedState = RtlpEtcGetDwordFromPersistedState(
+                                    (unsigned int)L"FeatureManagement",
+                                    (unsigned int)L"\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control\\FeatureManagement",
+                                    10,
+                                    (unsigned int)L"\\Policies",
+                                    (__int64)L"TemporaryEnterpriseFeatureControlState_Mirrored",
+                                    (__int64)&v4),
+        DwordFromPersistedState >= 0) )
+  {
+    *a1 = (unsigned int)(v4 - 1) <= 1;
+  }
+  return (unsigned int)DwordFromPersistedState;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140616970  push    rbx
+0x140616972  sub     rsp, 30h
+0x140616976  lea     rax, [rsp+38h+arg_8]
+0x14061697b  mov     [rsp+38h+arg_8], 0
+0x140616983  mov     [rsp+38h+var_10], rax
+0x140616988  lea     r9, aUpdatepolicyPo; "\\UpdatePolicy\\PolicyState"
+0x14061698f  lea     rax, aTemporaryenter_0; "TemporaryEnterpriseFeatureControlState"
+0x140616996  mov     rbx, rcx
+0x140616999  mov     r8d, 1Ah
+0x14061699f  mov     [rsp+38h+var_18], rax
+0x1406169a4  lea     rdx, aRegistryMachin_176; "\\Registry\\Machine\\SOFTWARE\\Microsof"...
+0x1406169ab  lea     rcx, aWindowsupdate; "WindowsUpdate"
+0x1406169b2  call    RtlpEtcGetDwordFromPersistedState
+0x1406169b7  mov     edx, eax
+0x1406169b9  test    eax, eax
+0x1406169bb  jns     short loc_1406169F9
+0x1406169bd  lea     rax, [rsp+38h+arg_8]
+0x1406169c2  mov     r8d, 0Ah
+0x1406169c8  mov     [rsp+38h+var_10], rax
+0x1406169cd  lea     r9, aPolicies_0; "\\Policies"
+0x1406169d4  lea     rax, aTemporaryenter; "TemporaryEnterpriseFeatureControlState_"...
+0x1406169db  lea     rdx, aRegistryMachin_172; "\\Registry\\Machine\\SYSTEM\\CurrentCon"...
+0x1406169e2  mov     [rsp+38h+var_18], rax
+0x1406169e7  lea     rcx, aFeaturemanagem; "FeatureManagement"
+0x1406169ee  call    RtlpEtcGetDwordFromPersistedState
+0x1406169f3  mov     edx, eax
+0x1406169f5  test    eax, eax
+0x1406169f7  js      short loc_140616A07
+0x1406169f9  mov     eax, [rsp+38h+arg_8]
+0x1406169fd  dec     eax
+0x1406169ff  cmp     eax, 1
+0x140616a02  setbe   al
+0x140616a05  mov     [rbx], al
+0x140616a07  mov     eax, edx
+0x140616a09  add     rsp, 30h
+0x140616a0d  pop     rbx
+0x140616a0e  retn
+```

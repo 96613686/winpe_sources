@@ -1,0 +1,331 @@
+# BiLoadHive
+
+- ea: `0x140987a10`
+- end: `0x140987cee`
+- name: `BiLoadHive`
+- size: `734`
+- prototype: `__int64 __fastcall(PCWSTR SourceString)`
+- caller_count: `1`
+- callee_count: `12`
+- tags: `reparse_path, authz_impersonation, registry_config, broker_com_uri`
+
+## callers
+
+- `0x14098afbc`
+
+## callees
+
+- `0x1403f2d50`
+- `0x1406daa70`
+- `0x1406daad0`
+- `0x1406dca70`
+- `0x1406dca90`
+- `0x1406de3d0`
+- `0x140987a10`
+- `0x140987cf4`
+- `0x140988fc8`
+- `0x140989064`
+- `0x14098aea4`
+- `0x14098be90`
+
+## string_xrefs
+
+- `0x140987aa7`: `\Registry\Machine`
+- `0x140987ac5`: `\Registry\Machine`
+- `0x140987b87`: `\Registry\Machine`
+- `0x140987acc`: `Failed open key %ws. Status: %x`
+- `0x140987c7f`: `Failed open newly loaded key %ws. Flags: 0x%x Status: %x`
+
+## pseudocode
+
+```c
+__int64 __fastcall BiLoadHive(PCWSTR SourceString, __int64 a2, HANDLE *a3)
+{
+  unsigned int i; // esi
+  void *v6; // rdi
+  NTSTATUS v7; // ebx
+  int v8; // eax
+  int v9; // eax
+  __int64 v10; // rcx
+  __int64 v12; // [rsp+20h] [rbp-D8h]
+  __int64 v13; // [rsp+28h] [rbp-D0h]
+  __int64 v14; // [rsp+30h] [rbp-C8h] BYREF
+  void *v15; // [rsp+38h] [rbp-C0h] BYREF
+  OBJECT_ATTRIBUTES ObjectAttributes; // [rsp+40h] [rbp-B8h] BYREF
+  _BYTE v17[48]; // [rsp+70h] [rbp-88h] BYREF
+  UNICODE_STRING DestinationString; // [rsp+A0h] [rbp-58h] BYREF
+  UNICODE_STRING v19; // [rsp+B0h] [rbp-48h] BYREF
+
+  memset(v17, 0, 44);
+  memset(&ObjectAttributes, 0, 44);
+  v14 = 0;
+  v19 = 0;
+  DestinationString = 0;
+  for ( i = 0; ; ++i )
+  {
+    v6 = 0;
+    v15 = 0;
+    if ( (unsigned __int8)BiDoesHiveExist(a2) )
+    {
+      v8 = BiOpenKeyNonBcd(0, L"\\Registry\\Machine", 983103, &v15);
+      v7 = v8;
+      if ( v8 >= 0 )
+      {
+        RtlInitUnicodeString(&DestinationString, SourceString);
+        ObjectAttributes.Length = 48;
+        v6 = v15;
+        ObjectAttributes.RootDirectory = v15;
+        ObjectAttributes.Attributes = 576;
+        ObjectAttributes.ObjectName = &DestinationString;
+        *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+        RtlInitUnicodeString(&v19, (PCWSTR)(a2 + 12));
+        *(_DWORD *)v17 = 48;
+        *(_QWORD *)&v17[8] = 0;
+        *(_DWORD *)&v17[24] = 576;
+        *(_QWORD *)&v17[16] = &v19;
+        *(_OWORD *)&v17[32] = 0;
+        v9 = BiAcquirePrivilege(18, &v14);
+        v7 = v9;
+        if ( v9 >= 0 )
+        {
+          v7 = ZwLoadKey2(&ObjectAttributes, v17, 6016);
+          if ( v7 < 0 )
+            v7 = ZwLoadKey2(&ObjectAttributes, v17, 4992);
+          if ( v7 < 0 )
+            v7 = ZwLoadKey(&ObjectAttributes, v17);
+          BiReleasePrivilege(&v14);
+          if ( v7 >= 0 )
+          {
+            v7 = ZwOpenKey(a3, 0x20019u, &ObjectAttributes);
+            if ( v7 < 0 )
+            {
+              BiAcquirePrivilege(17, &v14);
+              ZwUnloadKey(&ObjectAttributes);
+              BiReleasePrivilege(&v14);
+              LODWORD(v12) = v7;
+              BiLogMessage(4, L"Failed open newly loaded key %ws. Flags: 0x%x Status: %x", SourceString, 576, v12);
+            }
+          }
+          else
+          {
+            v10 = 2;
+            if ( v7 != -1073741790 )
+              v10 = 4;
+            LODWORD(v13) = v7;
+            BiLogMessage(
+              v10,
+              L"Failed load key %ws. Flags: 0x%x File: %s Status: %x",
+              SourceString,
+              576,
+              a2 + 12,
+              v13,
+              v14);
+          }
+        }
+        else
+        {
+          BiLogMessage(
+            4,
+            L"Failed to acquire permissions to load hive. Status: %x",
+            L"\\Registry\\Machine",
+            (unsigned int)v9);
+        }
+      }
+      else
+      {
+        BiLogMessage(4, L"Failed open key %ws. Status: %x", L"\\Registry\\Machine", (unsigned int)v8);
+        v6 = v15;
+      }
+    }
+    else
+    {
+      v7 = -1073741809;
+    }
+    if ( v6 )
+      ZwClose(v6);
+    if ( v7 != -1073741443 )
+      break;
+    __debugbreak();
+    if ( i >= 5 )
+      break;
+  }
+  return (unsigned int)v7;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140987a10  mov     r11, rsp
+0x140987a13  mov     [r11+18h], r8
+0x140987a17  mov     [r11+10h], rdx
+0x140987a1b  mov     [r11+8], rcx
+0x140987a1f  push    rbx
+0x140987a20  push    rsi
+0x140987a21  push    rdi
+0x140987a22  push    r12
+0x140987a24  push    r13
+0x140987a26  push    r14
+0x140987a28  push    r15
+0x140987a2a  sub     rsp, 0C0h
+0x140987a31  mov     r13, rdx
+0x140987a34  mov     r15, rcx
+0x140987a37  xor     eax, eax
+0x140987a39  xorps   xmm0, xmm0
+0x140987a3c  movups  [rsp+0F8h+var_88], xmm0
+0x140987a41  movups  xmmword ptr [r11-78h], xmm0
+0x140987a46  movups  xmmword ptr [r11-6Ch], xmm0
+0x140987a4b  movups  xmmword ptr [rsp+0F8h+ObjectAttributes.Length], xmm0
+0x140987a50  movups  xmmword ptr [rsp+0F8h+ObjectAttributes.ObjectName], xmm0
+0x140987a55  movups  xmmword ptr [rsp+0F8h+ObjectAttributes+1Ch], xmm0
+0x140987a5a  mov     [rsp+0F8h+var_C8], rax
+0x140987a5f  movups  xmmword ptr [r11-48h], xmm0
+0x140987a64  xorps   xmm1, xmm1
+0x140987a67  movups  xmmword ptr [r11-58h], xmm1
+0x140987a6c  xor     esi, esi
+0x140987a6e  lea     r14d, [rax+4]
+0x140987a72  mov     r12d, 240h
+0x140987a78  xor     edi, edi
+0x140987a7a  mov     [rsp+0F8h+var_C0], rdi
+0x140987a7f  mov     rcx, r13
+0x140987a82  call    BiDoesHiveExist
+0x140987a87  test    al, al
+0x140987a89  jnz     short loc_140987A9C
+0x140987a8b  mov     ebx, 0C000000Fh
+0x140987a90  mov     [rsp+0F8h+arg_18], ebx
+0x140987a97  jmp     loc_140987C8E
+0x140987a9c  lea     r9, [rsp+0F8h+var_C0]
+0x140987aa1  mov     r8d, 0F003Fh
+0x140987aa7  lea     rdx, aRegistryMachin_231; "\\Registry\\Machine"
+0x140987aae  xor     ecx, ecx
+0x140987ab0  call    BiOpenKeyNonBcd
+0x140987ab5  mov     ebx, eax
+0x140987ab7  mov     [rsp+0F8h+arg_18], eax
+0x140987abe  test    eax, eax
+0x140987ac0  jns     short loc_140987AE5
+0x140987ac2  mov     r9d, eax
+0x140987ac5  lea     r8, aRegistryMachin_231; "\\Registry\\Machine"
+0x140987acc  lea     rdx, aFailedOpenKeyW; "Failed open key %ws. Status: %x"
+0x140987ad3  mov     ecx, r14d
+0x140987ad6  call    BiLogMessage
+0x140987adb  mov     rdi, [rsp+0F8h+var_C0]
+0x140987ae0  jmp     loc_140987C8E
+0x140987ae5  mov     rdx, r15; SourceString
+0x140987ae8  lea     rcx, [rsp+0F8h+DestinationString]; DestinationString
+0x140987af0  call    RtlInitUnicodeString
+0x140987af5  mov     [rsp+0F8h+ObjectAttributes.Length], 30h ; '0'
+0x140987afd  mov     rdi, [rsp+0F8h+var_C0]
+0x140987b02  mov     [rsp+0F8h+ObjectAttributes.RootDirectory], rdi
+0x140987b07  mov     [rsp+0F8h+ObjectAttributes.Attributes], r12d
+0x140987b0c  lea     rax, [rsp+0F8h+DestinationString]
+0x140987b14  mov     [rsp+0F8h+ObjectAttributes.ObjectName], rax
+0x140987b19  xorps   xmm0, xmm0
+0x140987b1c  movdqu  xmmword ptr [rsp+0F8h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140987b22  lea     rdx, [r13+0Ch]; SourceString
+0x140987b26  lea     rcx, [rsp+0F8h+var_48]; DestinationString
+0x140987b2e  call    RtlInitUnicodeString
+0x140987b33  mov     dword ptr [rsp+0F8h+var_88], 30h ; '0'
+0x140987b3b  mov     qword ptr [rsp+0F8h+var_88+8], 0
+0x140987b44  mov     [rsp+0F8h+var_70], r12d
+0x140987b4c  lea     rax, [rsp+0F8h+var_48]
+0x140987b54  mov     [rsp+0F8h+var_78], rax
+0x140987b5c  xorps   xmm0, xmm0
+0x140987b5f  movdqu  [rsp+0F8h+var_68], xmm0
+0x140987b68  lea     rdx, [rsp+0F8h+var_C8]
+0x140987b6d  mov     ecx, 12h
+0x140987b72  call    BiAcquirePrivilege
+0x140987b77  mov     ebx, eax
+0x140987b79  mov     [rsp+0F8h+arg_18], eax
+0x140987b80  test    eax, eax
+0x140987b82  jns     short loc_140987BA2
+0x140987b84  mov     r9d, eax
+0x140987b87  lea     r8, aRegistryMachin_231; "\\Registry\\Machine"
+0x140987b8e  lea     rdx, aFailedToAcquir; "Failed to acquire permissions to load h"...
+0x140987b95  mov     ecx, r14d
+0x140987b98  call    BiLogMessage
+0x140987b9d  jmp     loc_140987C8E
+0x140987ba2  mov     r8d, 1780h
+0x140987ba8  lea     rdx, [rsp+0F8h+var_88]
+0x140987bad  lea     rcx, [rsp+0F8h+ObjectAttributes]
+0x140987bb2  call    ZwLoadKey2
+0x140987bb7  mov     ebx, eax
+0x140987bb9  test    eax, eax
+0x140987bbb  jns     short loc_140987BD4
+0x140987bbd  mov     r8d, 1380h
+0x140987bc3  lea     rdx, [rsp+0F8h+var_88]
+0x140987bc8  lea     rcx, [rsp+0F8h+ObjectAttributes]
+0x140987bcd  call    ZwLoadKey2
+0x140987bd2  mov     ebx, eax
+0x140987bd4  test    ebx, ebx
+0x140987bd6  jns     short loc_140987BE9
+0x140987bd8  lea     rdx, [rsp+0F8h+var_88]
+0x140987bdd  lea     rcx, [rsp+0F8h+ObjectAttributes]
+0x140987be2  call    ZwLoadKey
+0x140987be7  mov     ebx, eax
+0x140987be9  lea     rcx, [rsp+0F8h+var_C8]
+0x140987bee  call    BiReleasePrivilege
+0x140987bf3  test    ebx, ebx
+0x140987bf5  jns     short loc_140987C2E
+0x140987bf7  mov     [rsp+0F8h+arg_18], ebx
+0x140987bfe  mov     ecx, 2
+0x140987c03  cmp     ebx, 0C0000022h
+0x140987c09  cmovnz  ecx, r14d
+0x140987c0d  mov     dword ptr [rsp+0F8h+var_D0], ebx
+0x140987c11  lea     rax, [r13+0Ch]
+0x140987c15  mov     [rsp+0F8h+var_D8], rax
+0x140987c1a  mov     r9d, r12d
+0x140987c1d  mov     r8, r15
+0x140987c20  lea     rdx, aFailedLoadKeyW; "Failed load key %ws. Flags: 0x%x File: "...
+0x140987c27  call    BiLogMessage
+0x140987c2c  jmp     short loc_140987C8E
+0x140987c2e  lea     r8, [rsp+0F8h+ObjectAttributes]; ObjectAttributes
+0x140987c33  mov     edx, 20019h; DesiredAccess
+0x140987c38  mov     rcx, [rsp+0F8h+KeyHandle]; KeyHandle
+0x140987c40  call    ZwOpenKey
+0x140987c45  mov     ebx, eax
+0x140987c47  mov     [rsp+0F8h+arg_18], eax
+0x140987c4e  test    eax, eax
+0x140987c50  jns     short loc_140987C8E
+0x140987c52  lea     rdx, [rsp+0F8h+var_C8]
+0x140987c57  mov     ecx, 11h
+0x140987c5c  call    BiAcquirePrivilege
+0x140987c61  lea     rcx, [rsp+0F8h+ObjectAttributes]
+0x140987c66  call    ZwUnloadKey
+0x140987c6b  lea     rcx, [rsp+0F8h+var_C8]
+0x140987c70  call    BiReleasePrivilege
+0x140987c75  mov     dword ptr [rsp+0F8h+var_D8], ebx
+0x140987c79  mov     r9d, r12d
+0x140987c7c  mov     r8, r15
+0x140987c7f  lea     rdx, aFailedOpenNewl; "Failed open newly loaded key %ws. Flags"...
+0x140987c86  mov     ecx, r14d
+0x140987c89  call    BiLogMessage
+0x140987c8e  test    rdi, rdi
+0x140987c91  jz      short loc_140987C9B
+0x140987c93  mov     rcx, rdi; Handle
+0x140987c96  call    ZwClose
+0x140987c9b  cmp     ebx, 0C000017Dh
+0x140987ca1  jnz     short loc_140987CD8
+0x140987ca3  int     3; Trap to Debugger
+0x140987ca4  jmp     short loc_140987CCC
+0x140987ca6  mov     esi, 5
+0x140987cab  lea     r14d, [rsi-1]
+0x140987caf  mov     r12d, 240h
+0x140987cb5  mov     r13, [rsp+0F8h+arg_8]
+0x140987cbd  mov     r15, [rsp+0F8h+arg_0]
+0x140987cc5  mov     ebx, [rsp+0F8h+arg_18]
+0x140987ccc  cmp     esi, 5
+0x140987ccf  jnb     short loc_140987CD8
+0x140987cd1  inc     esi
+0x140987cd3  jmp     loc_140987A78
+0x140987cd8  mov     eax, ebx
+0x140987cda  add     rsp, 0C0h
+0x140987ce1  pop     r15
+0x140987ce3  pop     r14
+0x140987ce5  pop     r13
+0x140987ce7  pop     r12
+0x140987ce9  pop     rdi
+0x140987cea  pop     rsi
+0x140987ceb  pop     rbx
+0x140987cec  retn
+```

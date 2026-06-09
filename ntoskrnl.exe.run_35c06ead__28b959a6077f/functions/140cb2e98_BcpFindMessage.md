@@ -1,0 +1,243 @@
+# BcpFindMessage
+
+- ea: `0x140cb2e98`
+- end: `0x140cb305a`
+- name: `BcpFindMessage`
+- size: `450`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `2`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callers
+
+- `0x1406cf1b4`
+- `0x140cb3060`
+
+## callees
+
+- `0x140befdc4`
+- `0x140cb2e98`
+
+## string_xrefs
+
+- `0x140cb300e`: `%1% complete`
+- `0x140cb2f5d`: `Your Windows Insider Build ran into a problem and needs to restart.`
+- `0x140cb2fbd`: `https://www.windows.com/stopcode`
+
+## pseudocode
+
+```c
+const wchar_t *__fastcall BcpFindMessage(unsigned int a1)
+{
+  _KPROCESS *Message; // rcx
+  unsigned int v3; // r8d
+  __int64 v4; // rax
+  __int16 v5; // ax
+  unsigned __int64 v6; // rdx
+  unsigned int v7; // ebx
+  unsigned int v8; // ebx
+  unsigned int v9; // ebx
+  unsigned int v10; // ebx
+  unsigned int v11; // ebx
+  unsigned int v12; // ebx
+  unsigned int v13; // ebx
+
+  if ( a1 != 1090551832 || (Message = gLoadedDiffHivesLock.Process) == 0 )
+  {
+    Message = (_KPROCESS *)ResFwFindMessage(a1);
+    if ( !Message )
+    {
+      if ( a1 > 0x41008018 )
+      {
+        switch ( a1 )
+        {
+          case 0x41008019u:
+            return L"Please release the power button.";
+          case 0x41008020u:
+            return L"We just need a few more seconds to shut down.";
+          case 0x41008021u:
+            return L"It is now safe to power off the system.";
+          case 0xC1008001:
+            return L"Your device ran into a problem and needs to restart.";
+          case 0xC1008003:
+            return L"If you call a support person, give them this info:";
+          case 0xC1008008:
+            return L"We're just collecting some error info, and then we'll restart for you.";
+          case 0xC1008012:
+          case 0xC1008013:
+            return L"%1% complete";
+        }
+      }
+      else
+      {
+        if ( a1 == 1090551832 )
+          return L"https://www.windows.com/stopcode";
+        v7 = a1 - 1090551814;
+        if ( !v7 )
+          return L"1";
+        v8 = v7 - 3;
+        if ( !v8 )
+          return L"We're just collecting some error info, and then you can restart.";
+        v9 = v8 - 7;
+        if ( !v9 )
+          return L"We'll restart for you.";
+        v10 = v9 - 1;
+        if ( !v10 )
+          return L"You can restart.";
+        v11 = v10 - 3;
+        if ( !v11 )
+          return L"What failed:";
+        v12 = v11 - 1;
+        if ( !v12 )
+          return L"Stop Code:";
+        v13 = v12 - 1;
+        if ( !v13 )
+          return L"For more information about this issue and possible fixes, visit ";
+        if ( v13 == 1 )
+          return L"Your Windows Insider Build ran into a problem and needs to restart.";
+      }
+      return 0;
+    }
+    v3 = 0;
+    v4 = -1;
+    do
+      ++v4;
+    while ( *((_WORD *)&Message->Header.Lock + v4) );
+    if ( v4 )
+    {
+      do
+      {
+        v5 = *((_WORD *)&Message->Header.Lock + v3);
+        if ( v5 == 13 || v5 == 10 )
+          *((_WORD *)&Message->Header.Lock + v3) = 0;
+        ++v3;
+        v6 = -1;
+        do
+          ++v6;
+        while ( *((_WORD *)&Message->Header.Lock + v6) );
+      }
+      while ( v3 < v6 );
+    }
+  }
+  return (const wchar_t *)Message;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140cb2e98  mov     [rsp+arg_0], rbx
+0x140cb2e9d  push    rdi
+0x140cb2e9e  sub     rsp, 20h
+0x140cb2ea2  xor     edi, edi
+0x140cb2ea4  mov     ebx, ecx
+0x140cb2ea6  cmp     ecx, 41008018h
+0x140cb2eac  jnz     short loc_140CB2EBE
+0x140cb2eae  mov     rcx, cs:gLoadedDiffHivesLock.Process
+0x140cb2eb5  test    rcx, rcx
+0x140cb2eb8  jnz     loc_140CB304B
+0x140cb2ebe  mov     ecx, ebx
+0x140cb2ec0  call    ResFwFindMessage
+0x140cb2ec5  mov     rcx, rax
+0x140cb2ec8  test    rax, rax
+0x140cb2ecb  jz      short loc_140CB2F1C
+0x140cb2ecd  or      r9, 0FFFFFFFFFFFFFFFFh
+0x140cb2ed1  mov     r8d, edi
+0x140cb2ed4  mov     rax, r9
+0x140cb2ed7  inc     rax
+0x140cb2eda  cmp     [rcx+rax*2], di
+0x140cb2ede  jnz     short loc_140CB2ED7
+0x140cb2ee0  test    rax, rax
+0x140cb2ee3  jz      loc_140CB304B
+0x140cb2ee9  mov     edx, r8d
+0x140cb2eec  movzx   eax, word ptr [rcx+rdx*2]
+0x140cb2ef0  cmp     ax, 0Dh
+0x140cb2ef4  jz      short loc_140CB2EFC
+0x140cb2ef6  cmp     ax, 0Ah
+0x140cb2efa  jnz     short loc_140CB2F00
+0x140cb2efc  mov     [rcx+rdx*2], di
+0x140cb2f00  inc     r8d
+0x140cb2f03  mov     rdx, r9
+0x140cb2f06  inc     rdx
+0x140cb2f09  cmp     [rcx+rdx*2], di
+0x140cb2f0d  jnz     short loc_140CB2F06
+0x140cb2f0f  mov     eax, r8d
+0x140cb2f12  cmp     rax, rdx
+0x140cb2f15  jb      short loc_140CB2EE9
+0x140cb2f17  jmp     loc_140CB304B
+0x140cb2f1c  cmp     ebx, 41008018h
+0x140cb2f22  ja      loc_140CB2FC9
+0x140cb2f28  jz      loc_140CB2FBD
+0x140cb2f2e  sub     ebx, 41008006h
+0x140cb2f34  jz      short loc_140CB2FB1
+0x140cb2f36  sub     ebx, 3
+0x140cb2f39  jz      short loc_140CB2FA5
+0x140cb2f3b  sub     ebx, 7
+0x140cb2f3e  jz      short loc_140CB2F99
+0x140cb2f40  sub     ebx, 1
+0x140cb2f43  jz      short loc_140CB2F8D
+0x140cb2f45  sub     ebx, 3
+0x140cb2f48  jz      short loc_140CB2F81
+0x140cb2f4a  sub     ebx, 1
+0x140cb2f4d  jz      short loc_140CB2F75
+0x140cb2f4f  sub     ebx, 1
+0x140cb2f52  jz      short loc_140CB2F69
+0x140cb2f54  cmp     ebx, 1
+0x140cb2f57  jnz     loc_140CB3009
+0x140cb2f5d  lea     rcx, aYourWindowsIns; "Your Windows Insider Build ran into a p"...
+0x140cb2f64  jmp     loc_140CB304B
+0x140cb2f69  lea     rcx, aForMoreInforma; "For more information about this issue a"...
+0x140cb2f70  jmp     loc_140CB304B
+0x140cb2f75  lea     rcx, aStopCode; "Stop Code:"
+0x140cb2f7c  jmp     loc_140CB304B
+0x140cb2f81  lea     rcx, aWhatFailed; "What failed:"
+0x140cb2f88  jmp     loc_140CB304B
+0x140cb2f8d  lea     rcx, aYouCanRestart; "You can restart."
+0x140cb2f94  jmp     loc_140CB304B
+0x140cb2f99  lea     rcx, aWeLlRestartFor; "We'll restart for you."
+0x140cb2fa0  jmp     loc_140CB304B
+0x140cb2fa5  lea     rcx, aWeReJustCollec_0; "We're just collecting some error info, "...
+0x140cb2fac  jmp     loc_140CB304B
+0x140cb2fb1  lea     rcx, a1; "1"
+0x140cb2fb8  jmp     loc_140CB304B
+0x140cb2fbd  lea     rcx, aHttpsWwwWindow; "https://www.windows.com/stopcode"
+0x140cb2fc4  jmp     loc_140CB304B
+0x140cb2fc9  cmp     ebx, 41008019h
+0x140cb2fcf  jz      short loc_140CB3044
+0x140cb2fd1  cmp     ebx, 41008020h
+0x140cb2fd7  jz      short loc_140CB303B
+0x140cb2fd9  cmp     ebx, 41008021h
+0x140cb2fdf  jz      short loc_140CB3032
+0x140cb2fe1  cmp     ebx, 0C1008001h
+0x140cb2fe7  jz      short loc_140CB3029
+0x140cb2fe9  cmp     ebx, 0C1008003h
+0x140cb2fef  jz      short loc_140CB3020
+0x140cb2ff1  cmp     ebx, 0C1008008h
+0x140cb2ff7  jz      short loc_140CB3017
+0x140cb2ff9  cmp     ebx, 0C1008012h
+0x140cb2fff  jz      short loc_140CB300E
+0x140cb3001  cmp     ebx, 0C1008013h
+0x140cb3007  jz      short loc_140CB300E
+0x140cb3009  mov     rcx, rdi
+0x140cb300c  jmp     short loc_140CB304B
+0x140cb300e  lea     rcx, a1Complete; "%1% complete"
+0x140cb3015  jmp     short loc_140CB304B
+0x140cb3017  lea     rcx, aWeReJustCollec; "We're just collecting some error info, "...
+0x140cb301e  jmp     short loc_140CB304B
+0x140cb3020  lea     rcx, aIfYouCallASupp; "If you call a support person, give them"...
+0x140cb3027  jmp     short loc_140CB304B
+0x140cb3029  lea     rcx, aYourDeviceRanI; "Your device ran into a problem and need"...
+0x140cb3030  jmp     short loc_140CB304B
+0x140cb3032  lea     rcx, aItIsNowSafeToP; "It is now safe to power off the system."
+0x140cb3039  jmp     short loc_140CB304B
+0x140cb303b  lea     rcx, aWeJustNeedAFew; "We just need a few more seconds to shut"...
+0x140cb3042  jmp     short loc_140CB304B
+0x140cb3044  lea     rcx, aPleaseReleaseT; "Please release the power button."
+0x140cb304b  mov     rbx, [rsp+28h+arg_0]
+0x140cb3050  mov     rax, rcx
+0x140cb3053  add     rsp, 20h
+0x140cb3057  pop     rdi
+0x140cb3058  retn
+```

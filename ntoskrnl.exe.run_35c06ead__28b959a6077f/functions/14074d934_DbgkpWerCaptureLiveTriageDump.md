@@ -1,0 +1,209 @@
+# DbgkpWerCaptureLiveTriageDump
+
+- ea: `0x14074d934`
+- end: `0x14074daa5`
+- name: `DbgkpWerCaptureLiveTriageDump`
+- size: `369`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `9`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x14074ddb4`
+
+## callees
+
+- `0x14020fe90`
+- `0x140394820`
+- `0x14053b3d0`
+- `0x1406d9d70`
+- `0x1406f4880`
+- `0x14074d934`
+- `0x14074e0cc`
+- `0x140ad63cc`
+- `0x140bae410`
+
+## import_xrefs
+
+- `ext-ms-win-ntos-werkernel-l1-1-1!WerLiveKernelSubmitReport` at `0x14074da5e`
+- `ext-ms-win-ntos-werkernel-l1-1-1!WerLiveKernelSubmitReport` at `0x14074da5e`
+
+## string_xrefs
+
+- `0x14074da01`: `DBGK: KeCapturePersistentThreadState failed\n`
+- `0x14074d95d`: `DBGK: Creating mini live dump. ComponentName %ws\n`
+- `0x14074da4f`: `DBGK: DbgkpWerWriteTriageDump failed, status 0x%X\n`
+
+## pseudocode
+
+```c
+__int64 __fastcall DbgkpWerCaptureLiveTriageDump(__int64 a1)
+{
+  __int64 Pool2; // rax
+  unsigned int v3; // ebx
+  int v4; // eax
+  int v5; // eax
+  int v6; // eax
+  int v7; // eax
+  struct _CONTEXT ContextRecord; // [rsp+40h] [rbp-4E8h] BYREF
+
+  DbgPrintEx(5u, 3u, "DBGK: Creating mini live dump. ComponentName %ws\n", a1);
+  *(_DWORD *)(a1 + 80) = 67108860;
+  memset_0(&ContextRecord, 0, sizeof(ContextRecord));
+  Pool2 = ExAllocatePool2(256, 0x40000, 1466393156);
+  *(_QWORD *)(a1 + 136) = Pool2;
+  if ( Pool2 )
+  {
+    RtlCaptureContext(&ContextRecord);
+    v4 = KeCapturePersistentThreadState(
+           &ContextRecord,
+           0,
+           *(unsigned int *)(a1 + 32),
+           *(_QWORD *)(a1 + 40),
+           *(_QWORD *)(a1 + 48),
+           *(_QWORD *)(a1 + 56),
+           *(_QWORD *)(a1 + 64),
+           *(_QWORD *)(a1 + 136));
+    if ( v4 )
+    {
+      *(_DWORD *)(a1 + 144) = v4;
+      v5 = DbgkpWerInvokeCallbacks(a1);
+      v3 = v5;
+      if ( v5 >= 0 )
+      {
+        v6 = DbgkpWerWriteTriageDump(a1);
+        v3 = v6;
+        if ( v6 >= 0 )
+        {
+          v7 = WerLiveKernelSubmitReport(*(_QWORD *)(a1 + 96), 0);
+          v3 = v7;
+          if ( v7 >= 0 )
+            *(_DWORD *)(a1 + 104) |= 1u;
+          else
+            DbgPrintEx(
+              5u,
+              0,
+              "DBGK: DbgkpWerCaptureLiveTriageDump: WerLiveKernelSubmitReport failed with status 0x%X\n",
+              (unsigned int)v7);
+        }
+        else
+        {
+          DbgPrintEx(5u, 0, "DBGK: DbgkpWerWriteTriageDump failed, status 0x%X\n", (unsigned int)v6);
+        }
+      }
+      else
+      {
+        DbgPrintEx(5u, 0, "DBGK: DbgkpWerInvokeCallbacks failed, status 0x%X\n", (unsigned int)v5);
+      }
+    }
+    else
+    {
+      DbgPrintEx(5u, 0, "DBGK: KeCapturePersistentThreadState failed\n");
+      return (unsigned int)-1073741823;
+    }
+  }
+  else
+  {
+    return (unsigned int)-1073741801;
+  }
+  return v3;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14074d934  mov     [rsp+arg_8], rbx
+0x14074d939  mov     [rsp+arg_10], rsi
+0x14074d93e  push    rdi
+0x14074d93f  sub     rsp, 520h
+0x14074d946  mov     rax, cs:__security_cookie
+0x14074d94d  xor     rax, rsp
+0x14074d950  mov     [rsp+528h+var_18], rax
+0x14074d958  mov     edx, 3; Level
+0x14074d95d  lea     r8, aDbgkCreatingMi; "DBGK: Creating mini live dump. Componen"...
+0x14074d964  mov     rdi, rcx
+0x14074d967  mov     r9, rcx
+0x14074d96a  lea     esi, [rdx+2]
+0x14074d96d  mov     ecx, esi; ComponentId
+0x14074d96f  call    DbgPrintEx
+0x14074d974  xor     edx, edx; Val
+0x14074d976  mov     dword ptr [rdi+50h], 3FFFFFCh
+0x14074d97d  mov     r8d, 4D0h; Size
+0x14074d983  lea     rcx, [rsp+528h+ContextRecord]; void *
+0x14074d988  call    memset_0
+0x14074d98d  mov     edx, 40000h
+0x14074d992  mov     ecx, 100h
+0x14074d997  mov     r8d, 57676244h
+0x14074d99d  call    ExAllocatePool2
+0x14074d9a2  mov     [rdi+88h], rax
+0x14074d9a9  test    rax, rax
+0x14074d9ac  jnz     short loc_14074D9B8
+0x14074d9ae  mov     ebx, 0C0000017h
+0x14074d9b3  jmp     loc_14074DA7D
+0x14074d9b8  lea     rcx, [rsp+528h+ContextRecord]; ContextRecord
+0x14074d9bd  call    RtlCaptureContext
+0x14074d9c2  mov     rax, [rdi+88h]
+0x14074d9c9  lea     rcx, [rsp+528h+ContextRecord]
+0x14074d9ce  mov     r9, [rdi+28h]
+0x14074d9d2  xor     edx, edx
+0x14074d9d4  mov     r8d, [rdi+20h]
+0x14074d9d8  mov     [rsp+528h+var_4F0], rax
+0x14074d9dd  mov     rax, [rdi+40h]
+0x14074d9e1  mov     [rsp+528h+var_4F8], rax
+0x14074d9e6  mov     rax, [rdi+38h]
+0x14074d9ea  mov     [rsp+528h+var_500], rax
+0x14074d9ef  mov     rax, [rdi+30h]
+0x14074d9f3  mov     [rsp+528h+var_508], rax
+0x14074d9f8  call    KeCapturePersistentThreadState
+0x14074d9fd  test    eax, eax
+0x14074d9ff  jnz     short loc_14074DA18
+0x14074da01  lea     r8, aDbgkKecapturep; "DBGK: KeCapturePersistentThreadState fa"...
+0x14074da08  xor     edx, edx; Level
+0x14074da0a  mov     ecx, esi; ComponentId
+0x14074da0c  call    DbgPrintEx
+0x14074da11  mov     ebx, 0C0000001h
+0x14074da16  jmp     short loc_14074DA7D
+0x14074da18  mov     rcx, rdi
+0x14074da1b  mov     [rdi+90h], eax
+0x14074da21  call    DbgkpWerInvokeCallbacks
+0x14074da26  mov     ebx, eax
+0x14074da28  test    eax, eax
+0x14074da2a  jns     short loc_14074DA41
+0x14074da2c  lea     r8, aDbgkDbgkpwerin; "DBGK: DbgkpWerInvokeCallbacks failed, s"...
+0x14074da33  mov     r9d, eax
+0x14074da36  xor     edx, edx; Level
+0x14074da38  mov     ecx, esi; ComponentId
+0x14074da3a  call    DbgPrintEx
+0x14074da3f  jmp     short loc_14074DA7D
+0x14074da41  mov     rcx, rdi
+0x14074da44  call    DbgkpWerWriteTriageDump
+0x14074da49  mov     ebx, eax
+0x14074da4b  test    eax, eax
+0x14074da4d  jns     short loc_14074DA58
+0x14074da4f  lea     r8, aDbgkDbgkpwerwr; "DBGK: DbgkpWerWriteTriageDump failed, s"...
+0x14074da56  jmp     short loc_14074DA33
+0x14074da58  mov     rcx, [rdi+60h]
+0x14074da5c  xor     edx, edx
+0x14074da5e  call    cs:__imp_WerLiveKernelSubmitReport
+0x14074da65  nop     dword ptr [rax+rax+00h]
+0x14074da6a  mov     ebx, eax
+0x14074da6c  test    eax, eax
+0x14074da6e  jns     short loc_14074DA79
+0x14074da70  lea     r8, aDbgkDbgkpwerca; "DBGK: DbgkpWerCaptureLiveTriageDump: We"...
+0x14074da77  jmp     short loc_14074DA33
+0x14074da79  or      dword ptr [rdi+68h], 1
+0x14074da7d  mov     eax, ebx
+0x14074da7f  mov     rcx, [rsp+528h+var_18]
+0x14074da87  xor     rcx, rsp; StackCookie
+0x14074da8a  call    __security_check_cookie
+0x14074da8f  lea     r11, [rsp+528h+var_8]
+0x14074da97  mov     rbx, [r11+18h]
+0x14074da9b  mov     rsi, [r11+20h]
+0x14074da9f  mov     rsp, r11
+0x14074daa2  pop     rdi
+0x14074daa3  retn
+```

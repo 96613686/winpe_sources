@@ -1,0 +1,238 @@
+# BapdpRegisterFwUpdateResults
+
+- ea: `0x140c84b78`
+- end: `0x140c84d90`
+- name: `BapdpRegisterFwUpdateResults`
+- size: `536`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `8`
+- tags: `reparse_path, authz_impersonation, registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x140c84008`
+
+## callees
+
+- `0x1403f2d50`
+- `0x1406daa70`
+- `0x1406daad0`
+- `0x1406dac30`
+- `0x1406db490`
+- `0x1408eeff0`
+- `0x14092af90`
+- `0x140c84b78`
+
+## string_xrefs
+
+- `0x140c84cd3`: `LastAttemptVersion`
+- `0x140c84d0a`: `LastAttemptStatus`
+- `0x140c84bea`: `\REGISTRY\MACHINE\SYSTEM\CurrentControlSet\Control\FirmwareResources`
+
+## pseudocode
+
+```c
+void __fastcall BapdpRegisterFwUpdateResults(_QWORD *a1, unsigned int a2)
+{
+  unsigned int v3; // r14d
+  const GUID *v4; // rsi
+  NTSTATUS v5; // ebx
+  HANDLE v6; // rcx
+  UNICODE_STRING DestinationString; // [rsp+40h] [rbp-19h] BYREF
+  UNICODE_STRING GuidString; // [rsp+50h] [rbp-9h] BYREF
+  OBJECT_ATTRIBUTES ObjectAttributes; // [rsp+60h] [rbp+7h] BYREF
+  ULONG Disposition; // [rsp+C0h] [rbp+67h] BYREF
+  HANDLE Handle; // [rsp+D0h] [rbp+77h] BYREF
+  HANDLE KeyHandle; // [rsp+D8h] [rbp+7Fh] BYREF
+
+  Disposition = 0;
+  KeyHandle = 0;
+  Handle = 0;
+  GuidString = 0;
+  memset(&ObjectAttributes, 0, 44);
+  DestinationString = 0;
+  if ( a1 && a2 && *a1 && a2 >= (unsigned __int64)(24LL * *a1 + 8) )
+  {
+    RtlInitUnicodeString(
+      &DestinationString,
+      L"\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Control\\FirmwareResources");
+    ObjectAttributes.Length = 48;
+    ObjectAttributes.ObjectName = &DestinationString;
+    ObjectAttributes.RootDirectory = 0;
+    ObjectAttributes.Attributes = 576;
+    *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+    if ( ZwOpenKey(&KeyHandle, 0x20019u, &ObjectAttributes) >= 0 )
+    {
+      v3 = 0;
+      v4 = (const GUID *)(a1 + 1);
+      if ( *a1 )
+      {
+        while ( RtlStringFromGUID(v4, &GuidString) >= 0 )
+        {
+          RtlInitUnicodeString(&DestinationString, GuidString.Buffer);
+          ObjectAttributes.RootDirectory = KeyHandle;
+          ObjectAttributes.Length = 48;
+          ObjectAttributes.ObjectName = &DestinationString;
+          ObjectAttributes.Attributes = 576;
+          *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+          v5 = ZwCreateKey(&Handle, 0x20019u, &ObjectAttributes, 0, 0, 0, &Disposition);
+          RtlFreeAnsiString(&GuidString);
+          if ( v5 < 0 )
+            break;
+          RtlInitUnicodeString(&DestinationString, L"LastAttemptVersion");
+          ZwSetValueKey(Handle, &DestinationString, 0, 4u, (PVOID)&v4[1], 4u);
+          RtlInitUnicodeString(&DestinationString, L"LastAttemptStatus");
+          ZwSetValueKey(Handle, &DestinationString, 0, 4u, &v4[1].Data2, 4u);
+          ZwClose(Handle);
+          ++v3;
+          v6 = 0;
+          v4 = (const GUID *)((char *)v4 + 24);
+          Handle = 0;
+          if ( (unsigned __int64)v3 >= *a1 )
+            goto LABEL_12;
+        }
+      }
+    }
+    v6 = Handle;
+LABEL_12:
+    if ( v6 )
+      ZwClose(v6);
+    if ( KeyHandle )
+      ZwClose(KeyHandle);
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x140c84b78  push    rbp
+0x140c84b7a  push    rbx
+0x140c84b7b  push    rsi
+0x140c84b7c  push    rdi
+0x140c84b7d  push    r14
+0x140c84b7f  lea     rbp, [rsp-37h]
+0x140c84b84  sub     rsp, 90h
+0x140c84b8b  xorps   xmm0, xmm0
+0x140c84b8e  mov     [rbp+57h+arg_0], 0
+0x140c84b95  xor     eax, eax
+0x140c84b97  mov     rdi, rcx
+0x140c84b9a  mov     [rbp+57h+KeyHandle], rax
+0x140c84b9e  mov     [rbp+57h+Handle], rax
+0x140c84ba2  movups  xmmword ptr [rbp+57h+ObjectAttributes.ObjectName], xmm0
+0x140c84ba6  movups  xmmword ptr [rbp+57h+ObjectAttributes+1Ch], xmm0
+0x140c84baa  movups  xmmword ptr [rbp+57h+GuidString.Length], xmm0
+0x140c84bae  movups  xmmword ptr [rbp+57h+ObjectAttributes.Length], xmm0
+0x140c84bb2  movups  xmmword ptr [rbp+57h+DestinationString.Length], xmm0
+0x140c84bb6  test    rcx, rcx
+0x140c84bb9  jz      loc_140C84D81
+0x140c84bbf  test    edx, edx
+0x140c84bc1  jz      loc_140C84D81
+0x140c84bc7  mov     rax, [rcx]
+0x140c84bca  test    rax, rax
+0x140c84bcd  jz      loc_140C84D81
+0x140c84bd3  lea     rax, [rax+rax*2]
+0x140c84bd7  lea     rcx, ds:8[rax*8]
+0x140c84bdf  mov     eax, edx
+0x140c84be1  cmp     rax, rcx
+0x140c84be4  jb      loc_140C84D81
+0x140c84bea  lea     rdx, aRegistryMachin_28; "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentCon"...
+0x140c84bf1  lea     rcx, [rbp+57h+DestinationString]; DestinationString
+0x140c84bf5  call    RtlInitUnicodeString
+0x140c84bfa  lea     rax, [rbp+57h+DestinationString]
+0x140c84bfe  mov     [rbp+57h+ObjectAttributes.Length], 30h ; '0'
+0x140c84c05  xorps   xmm0, xmm0
+0x140c84c08  mov     [rbp+57h+ObjectAttributes.ObjectName], rax
+0x140c84c0c  lea     r8, [rbp+57h+ObjectAttributes]; ObjectAttributes
+0x140c84c10  mov     [rbp+57h+ObjectAttributes.RootDirectory], 0
+0x140c84c18  mov     edx, 20019h; DesiredAccess
+0x140c84c1d  mov     [rbp+57h+ObjectAttributes.Attributes], 240h
+0x140c84c24  lea     rcx, [rbp+57h+KeyHandle]; KeyHandle
+0x140c84c28  movdqu  xmmword ptr [rbp+57h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140c84c2d  call    ZwOpenKey
+0x140c84c32  test    eax, eax
+0x140c84c34  js      loc_140C84D65
+0x140c84c3a  xor     r14d, r14d
+0x140c84c3d  lea     rsi, [rdi+8]
+0x140c84c41  cmp     [rdi], r14
+0x140c84c44  jbe     loc_140C84D65
+0x140c84c4a  lea     rdx, [rbp+57h+GuidString]; GuidString
+0x140c84c4e  mov     rcx, rsi; Guid
+0x140c84c51  call    RtlStringFromGUID
+0x140c84c56  test    eax, eax
+0x140c84c58  js      loc_140C84D65
+0x140c84c5e  mov     rdx, [rbp+57h+GuidString.Buffer]; SourceString
+0x140c84c62  lea     rcx, [rbp+57h+DestinationString]; DestinationString
+0x140c84c66  call    RtlInitUnicodeString
+0x140c84c6b  mov     rax, [rbp+57h+KeyHandle]
+0x140c84c6f  lea     r8, [rbp+57h+ObjectAttributes]; ObjectAttributes
+0x140c84c73  mov     [rbp+57h+ObjectAttributes.RootDirectory], rax
+0x140c84c77  lea     rcx, [rbp+57h+Handle]; KeyHandle
+0x140c84c7b  lea     rax, [rbp+57h+DestinationString]
+0x140c84c7f  mov     [rbp+57h+ObjectAttributes.Length], 30h ; '0'
+0x140c84c86  mov     [rbp+57h+ObjectAttributes.ObjectName], rax
+0x140c84c8a  xorps   xmm0, xmm0
+0x140c84c8d  lea     rax, [rbp+57h+arg_0]
+0x140c84c91  mov     [rbp+57h+ObjectAttributes.Attributes], 240h
+0x140c84c98  mov     [rsp+0B0h+Disposition], rax; Disposition
+0x140c84c9d  xor     r9d, r9d; TitleIndex
+0x140c84ca0  mov     [rsp+0B0h+CreateOptions], 0; CreateOptions
+0x140c84ca8  mov     edx, 20019h; DesiredAccess
+0x140c84cad  mov     [rsp+0B0h+Class], 0; Class
+0x140c84cb6  movdqu  xmmword ptr [rbp+57h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140c84cbb  call    ZwCreateKey
+0x140c84cc0  lea     rcx, [rbp+57h+GuidString]; UnicodeString
+0x140c84cc4  mov     ebx, eax
+0x140c84cc6  call    RtlFreeAnsiString
+0x140c84ccb  test    ebx, ebx
+0x140c84ccd  js      loc_140C84D65
+0x140c84cd3  lea     rdx, aLastattemptver; "LastAttemptVersion"
+0x140c84cda  lea     rcx, [rbp+57h+DestinationString]; DestinationString
+0x140c84cde  call    RtlInitUnicodeString
+0x140c84ce3  mov     rcx, [rbp+57h+Handle]; KeyHandle
+0x140c84ce7  lea     rax, [rsi+10h]
+0x140c84ceb  mov     [rsp+0B0h+CreateOptions], 4; DataSize
+0x140c84cf3  lea     rdx, [rbp+57h+DestinationString]; ValueName
+0x140c84cf7  mov     r9d, 4; Type
+0x140c84cfd  mov     [rsp+0B0h+Class], rax; Data
+0x140c84d02  xor     r8d, r8d; TitleIndex
+0x140c84d05  call    ZwSetValueKey
+0x140c84d0a  lea     rdx, aLastattemptsta; "LastAttemptStatus"
+0x140c84d11  lea     rcx, [rbp+57h+DestinationString]; DestinationString
+0x140c84d15  call    RtlInitUnicodeString
+0x140c84d1a  mov     rcx, [rbp+57h+Handle]; KeyHandle
+0x140c84d1e  lea     rax, [rsi+14h]
+0x140c84d22  mov     [rsp+0B0h+CreateOptions], 4; DataSize
+0x140c84d2a  lea     rdx, [rbp+57h+DestinationString]; ValueName
+0x140c84d2e  mov     r9d, 4; Type
+0x140c84d34  mov     [rsp+0B0h+Class], rax; Data
+0x140c84d39  xor     r8d, r8d; TitleIndex
+0x140c84d3c  call    ZwSetValueKey
+0x140c84d41  mov     rcx, [rbp+57h+Handle]; Handle
+0x140c84d45  call    ZwClose
+0x140c84d4a  inc     r14d
+0x140c84d4d  xor     ecx, ecx
+0x140c84d4f  mov     eax, r14d
+0x140c84d52  add     rsi, 18h
+0x140c84d56  mov     [rbp+57h+Handle], rcx
+0x140c84d5a  cmp     rax, [rdi]
+0x140c84d5d  jb      loc_140C84C4A
+0x140c84d63  jmp     short loc_140C84D69
+0x140c84d65  mov     rcx, [rbp+57h+Handle]; Handle
+0x140c84d69  test    rcx, rcx
+0x140c84d6c  jz      short loc_140C84D73
+0x140c84d6e  call    ZwClose
+0x140c84d73  mov     rcx, [rbp+57h+KeyHandle]; Handle
+0x140c84d77  test    rcx, rcx
+0x140c84d7a  jz      short loc_140C84D81
+0x140c84d7c  call    ZwClose
+0x140c84d81  add     rsp, 90h
+0x140c84d88  pop     r14
+0x140c84d8a  pop     rdi
+0x140c84d8b  pop     rsi
+0x140c84d8c  pop     rbx
+0x140c84d8d  pop     rbp
+0x140c84d8e  retn
+```

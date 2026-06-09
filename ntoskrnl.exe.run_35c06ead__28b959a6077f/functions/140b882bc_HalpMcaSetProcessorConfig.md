@@ -1,0 +1,41 @@
+# HalpMcaSetProcessorConfig
+
+- ea: `0x140b882bc`
+- end: `0x140b88446`
+- name: `HalpMcaSetProcessorConfig`
+- size: `394`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `7`
+- tags: `registry_config`
+
+## callers
+
+- `0x140ba9c80`
+- `0x140baa0d0`
+
+## callees
+
+- `0x14020fe90`
+- `0x14040a8c0`
+- `0x14040a900`
+- `0x1405228d8`
+- `0x140528988`
+- `0x1406e8590`
+- `0x140b882bc`
+
+## import_xrefs
+
+- `PSHED!PshedIsSystemWheaEnabled` at `0x140b883d1`
+- `PSHED!PshedIsSystemWheaEnabled` at `0x140b883d1`
+
+## string_xrefs
+
+- `0x140b8838f`: `HalpMcaSetProcessorConfig`
+- `0x140b88399`: `%s: BankCount:0x%08x ErrorSource->Flags:0x%08x, MceDescriptor->NumberOfBanks:0x%02x\n`
+
+## pseudocode
+
+```c
+
+```

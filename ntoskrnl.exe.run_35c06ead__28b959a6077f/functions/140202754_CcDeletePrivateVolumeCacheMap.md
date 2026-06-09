@@ -1,0 +1,330 @@
+# CcDeletePrivateVolumeCacheMap
+
+- ea: `0x140202754`
+- end: `0x140202a3d`
+- name: `CcDeletePrivateVolumeCacheMap`
+- size: `745`
+- prototype: `__int64 __fastcall(PVOID P)`
+- caller_count: `3`
+- callee_count: `14`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1402019fc`
+- `0x1402033fc`
+- `0x1405b7ed0`
+
+## callees
+
+- `0x140202754`
+- `0x140202a74`
+- `0x140202dfc`
+- `0x14020e9f0`
+- `0x14020fe90`
+- `0x14021567c`
+- `0x14022bd70`
+- `0x14022d620`
+- `0x140258260`
+- `0x140296e70`
+- `0x1402d4060`
+- `0x1406da910`
+- `0x1406daa70`
+- `0x140bae8e0`
+
+## string_xrefs
+
+- `0x140202769`: `[%04x:%04x]CcDeletePrivateVolumeCacheMap-BEGIN: PVCM:%p(vid:%2lx)\n`
+- `0x1402027c3`: `[%04x:%04x]CcDeletePrivateVolumeCacheMap: PVCM:%p(vid:%2lx) Setting ExitEvent\n`
+- `0x140202951`: `[%04x:%04x]CcDeletePrivateVolumeCacheMap-END: PVCM:%p(vid:%2lx), PVCMCount:%lu\n`
+
+## pseudocode
+
+```c
+void __fastcall CcDeletePrivateVolumeCacheMap(char *P)
+{
+  __int64 v2; // rsi
+  void *v3; // rcx
+  _QWORD **v4; // rbx
+  _QWORD *v5; // rcx
+  void *v6; // rcx
+  _QWORD *v7; // rbp
+  _QWORD **v8; // r14
+  _QWORD *v9; // rbx
+  _QWORD *v10; // rax
+  _QWORD *v11; // rbx
+  _QWORD *v13; // rax
+  struct _KLOCK_QUEUE_HANDLE LockHandle; // [rsp+40h] [rbp-38h] BYREF
+
+  memset(&LockHandle, 0, sizeof(LockHandle));
+  DbgPrintEx(
+    0x7Fu,
+    2u,
+    "[%04x:%04x]CcDeletePrivateVolumeCacheMap-BEGIN: PVCM:%p(vid:%2lx)\n",
+    LODWORD(KeGetCurrentThread()[1].CycleTime),
+    KeGetCurrentThread()[1].CurrentRunTime,
+    P,
+    *((_DWORD *)P + 6));
+  v2 = *((_QWORD *)P + 4);
+  DbgPrintEx(
+    0x7Fu,
+    2u,
+    "[%04x:%04x]CcDeletePrivateVolumeCacheMap: PVCM:%p(vid:%2lx) Setting ExitEvent\n",
+    LODWORD(KeGetCurrentThread()[1].CycleTime),
+    KeGetCurrentThread()[1].CurrentRunTime,
+    P,
+    *((_DWORD *)P + 6));
+  KeSetEvent((PRKEVENT)P + 49, 0, 0);
+  KeSetEvent((PRKEVENT)P + 50, 0, 0);
+  v3 = (void *)*((_QWORD *)P + 153);
+  if ( v3 )
+  {
+    ZwWaitForSingleObject(v3, 0, 0);
+    ZwClose(*((HANDLE *)P + 153));
+    *((_QWORD *)P + 153) = 0;
+  }
+  if ( *((_QWORD *)P + 5) )
+    CcDecrementVolumeUseCountWithDelete();
+  while ( *((_QWORD *)P + 1) != 1 )
+    KeDelayExecutionThread(0, 0, &Cc5MicroSeconds);
+  CcDereferencePartitionAndPrivateVolumeCacheMap(v2, P);
+  if ( P[984] )
+  {
+    P[984] = 0;
+    KeCancelTimer((PKTIMER)(P + 920));
+  }
+  v4 = (_QWORD **)(P + 1560);
+  while ( 1 )
+  {
+    v5 = *v4;
+    if ( *v4 == v4 )
+      break;
+    if ( (_QWORD **)v5[1] != v4 || (v13 = (_QWORD *)*v5, *(_QWORD **)(*v5 + 8LL) != v5) )
+LABEL_28:
+      __fastfail(3u);
+    *v4 = v13;
+    v13[1] = v4;
+    ExFreePoolWithTag(v5, 0x71576343u);
+  }
+  v6 = (void *)*((_QWORD *)P + 134);
+  v7 = 0;
+  if ( v6 )
+  {
+    ExFreePoolWithTag(v6, 0x70546343u);
+    *((_QWORD *)P + 134) = 0;
+  }
+  CcForEachNumaNode(CcUnInitializeAsyncReadForNodeHelper, v2, P, 0);
+  CcForEachNumaNode(CcUninitializeAsyncLazywriteForNodeHelper, v2, P, 0);
+  v8 = (_QWORD **)(P + 48);
+  while ( 1 )
+  {
+    v9 = *v8;
+    if ( *v8 == v8 )
+      break;
+    if ( (_QWORD **)v9[1] != v8 )
+      goto LABEL_28;
+    v10 = (_QWORD *)*v9;
+    if ( *(_QWORD **)(*v9 + 8LL) != v9 )
+      goto LABEL_28;
+    *v8 = v10;
+    v11 = v9 - 4;
+    v10[1] = v8;
+    CcDeleteNumaNode(v11);
+    if ( v7 )
+      v11 = v7;
+    v7 = v11;
+  }
+  if ( v7 )
+    ExFreePoolWithTag(v7, 0x754E6343u);
+  DbgPrintEx(
+    0x7Fu,
+    2u,
+    "[%04x:%04x]CcDeletePrivateVolumeCacheMap-END: PVCM:%p(vid:%2lx), PVCMCount:%lu\n",
+    LODWORD(KeGetCurrentThread()[1].CycleTime),
+    KeGetCurrentThread()[1].CurrentRunTime,
+    P,
+    *((_DWORD *)P + 6),
+    *(_DWORD *)(v2 + 48) - 1);
+  KeAcquireInStackQueuedSpinLock((PKSPIN_LOCK)(v2 + 768), &LockHandle);
+  if ( (*(_DWORD *)(v2 + 48))-- == 1 )
+    KeSetEvent((PRKEVENT)(v2 + 56), 0, 0);
+  KeReleaseInStackQueuedSpinLock(&LockHandle);
+  ExFreePoolWithTag(P, 0x6D566343u);
+}
+
+```
+
+## disassembly
+
+```asm
+0x140202754  mov     r11, rsp
+0x140202757  mov     [r11+10h], rbx
+0x14020275b  mov     [r11+18h], rbp
+0x14020275f  push    rsi
+0x140202760  push    rdi
+0x140202761  push    r14
+0x140202763  sub     rsp, 60h
+0x140202767  xor     eax, eax
+0x140202769  lea     r8, a04x04xCcdelete_2; "[%04x:%04x]CcDeletePrivateVolumeCacheMa"...
+0x140202770  xorps   xmm0, xmm0
+0x140202773  mov     rdi, rcx
+0x140202776  movups  xmmword ptr [rsp+78h+LockHandle.LockQueue.Next], xmm0
+0x14020277b  mov     [r11-28h], rax
+0x14020277f  mov     rdx, gs:188h
+0x140202788  mov     r9, gs:188h
+0x140202791  mov     eax, [rcx+18h]
+0x140202794  mov     [rsp+78h+var_48], eax
+0x140202798  mov     eax, [rdx+510h]
+0x14020279e  mov     edx, 2; Level
+0x1402027a3  mov     r9d, [r9+508h]
+0x1402027aa  mov     [r11-50h], rcx
+0x1402027ae  mov     [rsp+78h+var_58], eax
+0x1402027b2  lea     ecx, [rdx+7Dh]; ComponentId
+0x1402027b5  call    DbgPrintEx
+0x1402027ba  mov     rcx, gs:188h
+0x1402027c3  lea     r8, a04x04xCcdelete_1; "[%04x:%04x]CcDeletePrivateVolumeCacheMa"...
+0x1402027ca  mov     r9, gs:188h
+0x1402027d3  mov     edx, 2; Level
+0x1402027d8  mov     eax, [rdi+18h]
+0x1402027db  mov     rsi, [rdi+20h]
+0x1402027df  mov     [rsp+78h+var_48], eax
+0x1402027e3  mov     eax, [rcx+510h]
+0x1402027e9  lea     ecx, [rdx+7Dh]; ComponentId
+0x1402027ec  mov     r9d, [r9+508h]
+0x1402027f3  mov     [rsp+78h+var_50], rdi
+0x1402027f8  mov     [rsp+78h+var_58], eax
+0x1402027fc  call    DbgPrintEx
+0x140202801  lea     rcx, [rdi+498h]; Event
+0x140202808  xor     r8d, r8d; Wait
+0x14020280b  xor     edx, edx; Increment
+0x14020280d  call    KeSetEvent
+0x140202812  lea     rcx, [rdi+4B0h]; Event
+0x140202819  xor     r8d, r8d; Wait
+0x14020281c  xor     edx, edx; Increment
+0x14020281e  call    KeSetEvent
+0x140202823  mov     rcx, [rdi+4C8h]; Handle
+0x14020282a  test    rcx, rcx
+0x14020282d  jnz     loc_1402029DA
+0x140202833  mov     rcx, [rdi+28h]
+0x140202837  test    rcx, rcx
+0x14020283a  jz      short loc_140202853
+0x14020283c  call    CcDecrementVolumeUseCountWithDelete
+0x140202841  jmp     short loc_140202853
+0x140202843  lea     r8, Cc5MicroSeconds; Interval
+0x14020284a  xor     edx, edx; Alertable
+0x14020284c  xor     ecx, ecx; WaitMode
+0x14020284e  call    KeDelayExecutionThread
+0x140202853  cmp     qword ptr [rdi+8], 1
+0x140202858  jnz     short loc_140202843
+0x14020285a  mov     rdx, rdi
+0x14020285d  mov     rcx, rsi
+0x140202860  call    CcDereferencePartitionAndPrivateVolumeCacheMap
+0x140202865  cmp     byte ptr [rdi+3D8h], 0
+0x14020286c  jnz     loc_140202A12
+0x140202872  lea     rbx, [rdi+618h]
+0x140202879  mov     rcx, [rbx]; P
+0x14020287c  cmp     rcx, rbx
+0x14020287f  jnz     loc_1402029AE
+0x140202885  mov     rcx, [rdi+430h]; P
+0x14020288c  xor     ebp, ebp
+0x14020288e  test    rcx, rcx
+0x140202891  jz      short loc_1402028A4
+0x140202893  mov     edx, 70546343h; Tag
+0x140202898  call    ExFreePoolWithTag
+0x14020289d  mov     [rdi+430h], rbp
+0x1402028a4  xor     r9d, r9d
+0x1402028a7  lea     rcx, CcUnInitializeAsyncReadForNodeHelper
+0x1402028ae  mov     r8, rdi
+0x1402028b1  mov     rdx, rsi
+0x1402028b4  call    CcForEachNumaNode
+0x1402028b9  xor     r9d, r9d
+0x1402028bc  lea     rcx, CcUninitializeAsyncLazywriteForNodeHelper
+0x1402028c3  mov     r8, rdi
+0x1402028c6  mov     rdx, rsi
+0x1402028c9  call    CcForEachNumaNode
+0x1402028ce  lea     r14, [rdi+30h]
+0x1402028d2  mov     rbx, [r14]
+0x1402028d5  cmp     rbx, r14
+0x1402028d8  jz      short loc_140202910
+0x1402028da  cmp     [rbx+8], r14
+0x1402028de  jnz     loc_1402029D3
+0x1402028e4  mov     rax, [rbx]
+0x1402028e7  cmp     [rax+8], rbx
+0x1402028eb  jnz     loc_1402029D3
+0x1402028f1  mov     [r14], rax
+0x1402028f4  add     rbx, 0FFFFFFFFFFFFFFE0h
+0x1402028f8  mov     rcx, rbx
+0x1402028fb  mov     [rax+8], r14
+0x1402028ff  call    CcDeleteNumaNode
+0x140202904  test    rbp, rbp
+0x140202907  cmovnz  rbx, rbp
+0x14020290b  mov     rbp, rbx
+0x14020290e  jmp     short loc_1402028D2
+0x140202910  test    rbp, rbp
+0x140202913  jnz     loc_140202A00
+0x140202919  mov     r8, gs:188h
+0x140202922  mov     edx, 2; Level
+0x140202927  mov     r9, gs:188h
+0x140202930  mov     eax, [rsi+30h]
+0x140202933  dec     eax
+0x140202935  mov     [rsp+78h+var_40], eax
+0x140202939  lea     ecx, [rdx+7Dh]; ComponentId
+0x14020293c  mov     eax, [rdi+18h]
+0x14020293f  mov     r9d, [r9+508h]
+0x140202946  mov     [rsp+78h+var_48], eax
+0x14020294a  mov     eax, [r8+510h]
+0x140202951  lea     r8, a04x04xCcdelete; "[%04x:%04x]CcDeletePrivateVolumeCacheMa"...
+0x140202958  mov     [rsp+78h+var_50], rdi
+0x14020295d  mov     [rsp+78h+var_58], eax
+0x140202961  call    DbgPrintEx
+0x140202966  lea     rcx, [rsi+300h]; SpinLock
+0x14020296d  lea     rdx, [rsp+78h+LockHandle]; LockHandle
+0x140202972  call    KeAcquireInStackQueuedSpinLock
+0x140202977  add     dword ptr [rsi+30h], 0FFFFFFFFh
+0x14020297b  jz      loc_140202A2A
+0x140202981  lea     rcx, [rsp+78h+LockHandle]; LockHandle
+0x140202986  call    KeReleaseInStackQueuedSpinLock
+0x14020298b  mov     edx, 6D566343h; Tag
+0x140202990  mov     rcx, rdi; P
+0x140202993  call    ExFreePoolWithTag
+0x140202998  lea     r11, [rsp+78h+var_18]
+0x14020299d  mov     rbx, [r11+28h]
+0x1402029a1  mov     rbp, [r11+30h]
+0x1402029a5  mov     rsp, r11
+0x1402029a8  pop     r14
+0x1402029aa  pop     rdi
+0x1402029ab  pop     rsi
+0x1402029ac  retn
+0x1402029ae  cmp     [rcx+8], rbx
+0x1402029b2  jnz     short loc_1402029D3
+0x1402029b4  mov     rax, [rcx]
+0x1402029b7  cmp     [rax+8], rcx
+0x1402029bb  jnz     short loc_1402029D3
+0x1402029bd  mov     [rbx], rax
+0x1402029c0  mov     edx, 71576343h; Tag
+0x1402029c5  mov     [rax+8], rbx
+0x1402029c9  call    ExFreePoolWithTag
+0x1402029ce  jmp     loc_140202879
+0x1402029d3  mov     ecx, 3
+0x1402029d8  int     29h; Win8: RtlFailFast(ecx)
+0x1402029da  xor     r8d, r8d; Timeout
+0x1402029dd  xor     edx, edx; Alertable
+0x1402029df  call    ZwWaitForSingleObject
+0x1402029e4  mov     rcx, [rdi+4C8h]; Handle
+0x1402029eb  call    ZwClose
+0x1402029f0  mov     qword ptr [rdi+4C8h], 0
+0x1402029fb  jmp     loc_140202833
+0x140202a00  mov     edx, 754E6343h; Tag
+0x140202a05  mov     rcx, rbp; P
+0x140202a08  call    ExFreePoolWithTag
+0x140202a0d  jmp     loc_140202919
+0x140202a12  lea     rcx, [rdi+398h]; PKTIMER
+0x140202a19  mov     byte ptr [rdi+3D8h], 0
+0x140202a20  call    KeCancelTimer
+0x140202a25  jmp     loc_140202872
+0x140202a2a  lea     rcx, [rsi+38h]; Event
+0x140202a2e  xor     r8d, r8d; Wait
+0x140202a31  xor     edx, edx; Increment
+0x140202a33  call    KeSetEvent
+0x140202a38  jmp     loc_140202981
+```

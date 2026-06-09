@@ -1,0 +1,184 @@
+# AslRegistryGetKey
+
+- ea: `0x140ac65d4`
+- end: `0x140ac66f4`
+- name: `AslRegistryGetKey`
+- size: `288`
+- prototype: ``
+- caller_count: `6`
+- callee_count: `6`
+- tags: `reparse_path, authz_impersonation, registry_config, broker_com_uri`
+
+## callers
+
+- `0x14081fee0`
+- `0x14082024c`
+- `0x1408207c4`
+- `0x1408208b8`
+- `0x140827c74`
+- `0x140ac64e4`
+
+## callees
+
+- `0x1406daad0`
+- `0x140825ed0`
+- `0x14097b68c`
+- `0x14097d158`
+- `0x140ac65d4`
+- `0x140ac66fc`
+
+## string_xrefs
+
+- `0x140ac6671`: `AslRegistryBuildMachinePath failed %x for %ws`
+- `0x140ac6683`: `AslRegistryGetKey`
+- `0x140ac66e5`: `NtOpenKey failed %x for %ws`
+- `0x140ac66cf`: `AslRegistryBuildUserPath failed %x for %ws`
+
+## pseudocode
+
+```c
+__int64 __fastcall AslRegistryGetKey(HANDLE *a1, const WCHAR *a2, ACCESS_MASK a3, int a4)
+{
+  NTSTATUS v7; // eax
+  unsigned int v8; // ebx
+  __int64 v9; // rcx
+  const char *v10; // r9
+  int v11; // r8d
+  UNICODE_STRING Destination; // [rsp+30h] [rbp-40h] BYREF
+  OBJECT_ATTRIBUTES ObjectAttributes; // [rsp+40h] [rbp-30h] BYREF
+  HANDLE KeyHandle; // [rsp+90h] [rbp+20h] BYREF
+
+  *a1 = 0;
+  KeyHandle = 0;
+  memset(&ObjectAttributes, 0, 44);
+  Destination = 0;
+  if ( a4 )
+  {
+    v7 = AslRegistryBuildMachinePath(&Destination, a2);
+    v8 = v7;
+    if ( v7 >= 0 )
+      goto LABEL_3;
+    v10 = "AslRegistryBuildMachinePath failed %x for %ws";
+    v11 = 1718;
+LABEL_6:
+    AslLogCallPrintf(1, (unsigned int)"AslRegistryGetKey", v11, (_DWORD)v10, v7, a2, *(_QWORD *)&Destination.Length);
+    goto LABEL_7;
+  }
+  v7 = AslRegistryBuildUserPath(&Destination, a2);
+  v8 = v7;
+  if ( v7 < 0 )
+  {
+    v10 = "AslRegistryBuildUserPath failed %x for %ws";
+    v11 = 1725;
+    goto LABEL_6;
+  }
+LABEL_3:
+  ObjectAttributes.Length = 48;
+  ObjectAttributes.ObjectName = &Destination;
+  ObjectAttributes.RootDirectory = 0;
+  ObjectAttributes.Attributes = 576;
+  *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+  v7 = ZwOpenKey(&KeyHandle, a3, &ObjectAttributes);
+  v8 = v7;
+  if ( v7 >= 0 )
+  {
+    v8 = 0;
+    *a1 = KeyHandle;
+    KeyHandle = 0;
+    goto LABEL_7;
+  }
+  if ( v7 != -1073741772 )
+  {
+    v10 = "NtOpenKey failed %x for %ws";
+    v11 = 1761;
+    goto LABEL_6;
+  }
+LABEL_7:
+  if ( Destination.Buffer )
+    AslFree(v9, Destination.Buffer);
+  return v8;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140ac65d4  mov     [rsp-18h+arg_8], rbx
+0x140ac65d9  mov     [rsp-18h+arg_10], rsi
+0x140ac65de  push    rbp
+0x140ac65df  push    rdi
+0x140ac65e0  push    r14
+0x140ac65e2  mov     rbp, rsp
+0x140ac65e5  sub     rsp, 70h
+0x140ac65e9  xorps   xmm0, xmm0
+0x140ac65ec  xor     eax, eax
+0x140ac65ee  mov     [rcx], rax
+0x140ac65f1  mov     rsi, rcx
+0x140ac65f4  mov     [rbp+KeyHandle], rax
+0x140ac65f8  lea     rcx, [rbp+Destination]; Destination
+0x140ac65fc  mov     r14d, r8d
+0x140ac65ff  mov     rdi, rdx
+0x140ac6602  movups  xmmword ptr [rbp+ObjectAttributes.ObjectName], xmm0
+0x140ac6606  movups  xmmword ptr [rbp+ObjectAttributes+1Ch], xmm0
+0x140ac660a  movups  xmmword ptr [rbp+ObjectAttributes.Length], xmm0
+0x140ac660e  movups  xmmword ptr [rbp+Destination.Length], xmm0
+0x140ac6612  test    r9d, r9d
+0x140ac6615  jz      loc_140AC66C0
+0x140ac661b  call    AslRegistryBuildMachinePath
+0x140ac6620  mov     ebx, eax
+0x140ac6622  test    eax, eax
+0x140ac6624  js      short loc_140AC6671
+0x140ac6626  lea     rax, [rbp+Destination]
+0x140ac662a  mov     [rbp+ObjectAttributes.Length], 30h ; '0'
+0x140ac6631  xorps   xmm0, xmm0
+0x140ac6634  mov     [rbp+ObjectAttributes.ObjectName], rax
+0x140ac6638  lea     r8, [rbp+ObjectAttributes]; ObjectAttributes
+0x140ac663c  mov     [rbp+ObjectAttributes.RootDirectory], 0
+0x140ac6644  mov     edx, r14d; DesiredAccess
+0x140ac6647  mov     [rbp+ObjectAttributes.Attributes], 240h
+0x140ac664e  lea     rcx, [rbp+KeyHandle]; KeyHandle
+0x140ac6652  movdqu  xmmword ptr [rbp+ObjectAttributes.SecurityDescriptor], xmm0
+0x140ac6657  call    ZwOpenKey
+0x140ac665c  mov     ebx, eax
+0x140ac665e  test    eax, eax
+0x140ac6660  js      short loc_140AC66DE
+0x140ac6662  mov     rax, [rbp+KeyHandle]
+0x140ac6666  xor     ebx, ebx
+0x140ac6668  mov     [rsi], rax
+0x140ac666b  mov     [rbp+KeyHandle], rbx
+0x140ac666f  jmp     short loc_140AC6698
+0x140ac6671  lea     r9, aAslregistrybui; "AslRegistryBuildMachinePath failed %x f"...
+0x140ac6678  mov     r8d, 6B6h
+0x140ac667e  mov     [rsp+70h+var_48], rdi
+0x140ac6683  lea     rdx, aAslregistryget_0; "AslRegistryGetKey"
+0x140ac668a  mov     ecx, 1
+0x140ac668f  mov     [rsp+70h+var_50], eax
+0x140ac6693  call    AslLogCallPrintf
+0x140ac6698  mov     rdx, [rbp+Destination.Buffer]
+0x140ac669c  test    rdx, rdx
+0x140ac669f  jnz     short loc_140AC66B9
+0x140ac66a1  lea     r11, [rsp+70h+var_s0]
+0x140ac66a6  mov     eax, ebx
+0x140ac66a8  mov     rbx, [r11+28h]
+0x140ac66ac  mov     rsi, [r11+30h]
+0x140ac66b0  mov     rsp, r11
+0x140ac66b3  pop     r14
+0x140ac66b5  pop     rdi
+0x140ac66b6  pop     rbp
+0x140ac66b7  retn
+0x140ac66b9  call    AslFree
+0x140ac66be  jmp     short loc_140AC66A1
+0x140ac66c0  call    AslRegistryBuildUserPath
+0x140ac66c5  mov     ebx, eax
+0x140ac66c7  test    eax, eax
+0x140ac66c9  jns     loc_140AC6626
+0x140ac66cf  lea     r9, aAslregistrybui_2; "AslRegistryBuildUserPath failed %x for "...
+0x140ac66d6  mov     r8d, 6BDh
+0x140ac66dc  jmp     short loc_140AC667E
+0x140ac66de  cmp     eax, 0C0000034h
+0x140ac66e3  jz      short loc_140AC6698
+0x140ac66e5  lea     r9, aNtopenkeyFaile; "NtOpenKey failed %x for %ws"
+0x140ac66ec  mov     r8d, 6E1h
+0x140ac66f2  jmp     short loc_140AC667E
+```

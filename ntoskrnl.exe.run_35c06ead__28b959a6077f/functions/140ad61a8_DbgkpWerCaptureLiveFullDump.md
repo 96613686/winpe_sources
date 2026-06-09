@@ -1,0 +1,300 @@
+# DbgkpWerCaptureLiveFullDump
+
+- ea: `0x140ad61a8`
+- end: `0x140ad63c4`
+- name: `DbgkpWerCaptureLiveFullDump`
+- size: `540`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `7`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x14074ddb4`
+
+## callees
+
+- `0x14020fe90`
+- `0x1404f0cd4`
+- `0x14074de0c`
+- `0x140ad61a8`
+- `0x140ad63cc`
+- `0x140ad6490`
+- `0x140bae410`
+
+## import_xrefs
+
+- `ext-ms-win-ntos-werkernel-l1-1-1!WerLiveKernelSubmitReport` at `0x140ad6357`
+- `ext-ms-win-ntos-werkernel-l1-1-1!WerLiveKernelSubmitReport` at `0x140ad6357`
+- `ext-ms-win-ntos-werkernel-l1-1-1!WerLiveKernelOpenDumpFile` at `0x140ad62ab`
+- `ext-ms-win-ntos-werkernel-l1-1-1!WerLiveKernelOpenDumpFile` at `0x140ad62ab`
+
+## string_xrefs
+
+- `0x140ad61c4`: `DBGK: Creating full dump.  ComponentName %ws, Defer = %d\n`
+- `0x140ad62bd`: `DBGK: WerLiveKernelOpenDumpFile failed. Status = 0x%X\n`
+
+## pseudocode
+
+```c
+__int64 __fastcall DbgkpWerCaptureLiveFullDump(__int64 a1, _BYTE *a2)
+{
+  unsigned int v3; // eax
+  __int64 Pool2; // rax
+  __int64 v6; // rsi
+  int started; // ebx
+  int v8; // edx
+  int v9; // eax
+  int v10; // eax
+  const CHAR *v11; // r8
+  __int64 v13; // [rsp+60h] [rbp+8h] BYREF
+  __int64 v14; // [rsp+68h] [rbp+10h] BYREF
+
+  v13 = 0;
+  v14 = 0;
+  v3 = *(_DWORD *)(a1 + 104);
+  *a2 = 1;
+  *(_DWORD *)(a1 + 80) = 0x10000000;
+  DbgPrintEx(5u, 3u, "DBGK: Creating full dump.  ComponentName %ws, Defer = %d\n", a1, (v3 >> 1) & 1);
+  Pool2 = ExAllocatePool2(256, 56, 1466393156);
+  v6 = Pool2;
+  if ( !Pool2 )
+  {
+    DbgPrintEx(5u, 0, "DBGK: Could not allocate an Io Control.\n");
+    return (unsigned int)-1073741801;
+  }
+  *(_QWORD *)(a1 + 120) = Pool2;
+  v8 = *(_DWORD *)(Pool2 + 24);
+  *(_DWORD *)Pool2 = 2;
+  *(_DWORD *)(Pool2 + 4) = 56;
+  *(_QWORD *)(Pool2 + 48) = *(_QWORD *)(*(_QWORD *)(a1 + 72) + 32LL);
+  if ( (*(_DWORD *)(*(_QWORD *)(a1 + 72) + 24LL) & 1) != 0 )
+  {
+    v8 |= 4u;
+    *(_DWORD *)(Pool2 + 24) = v8;
+  }
+  if ( (*(_DWORD *)(*(_QWORD *)(a1 + 72) + 24LL) & 0x10) != 0 )
+  {
+    v8 |= 0x20u;
+    *(_DWORD *)(Pool2 + 24) = v8;
+  }
+  if ( (*(_DWORD *)(*(_QWORD *)(a1 + 72) + 24LL) & 4) != 0 )
+    *(_DWORD *)(Pool2 + 28) |= 1u;
+  *(_DWORD *)(Pool2 + 24) = v8 | 0x10;
+  v9 = *(_DWORD *)(a1 + 104);
+  v13 = 0;
+  if ( (v9 & 2) != 0 )
+  {
+    *(_DWORD *)(v6 + 24) |= 8u;
+    started = DbgkpWerInitializeDeferredLiveDump(a1);
+    if ( started < 0 )
+      return (unsigned int)started;
+  }
+  else
+  {
+    v10 = WerLiveKernelOpenDumpFile(*(_QWORD *)(a1 + 96), &v13);
+    started = v10;
+    if ( v10 < 0 )
+    {
+      v11 = "DBGK: WerLiveKernelOpenDumpFile failed. Status = 0x%X\n";
+      goto LABEL_12;
+    }
+    *(_QWORD *)(v6 + 8) = v13;
+  }
+  started = DbgkpWerInvokeCallbacks(a1);
+  if ( started < 0 )
+    return (unsigned int)started;
+  started = IoCaptureLiveDump(
+              *(_DWORD *)(a1 + 32),
+              *(_QWORD *)(a1 + 40),
+              *(_QWORD *)(a1 + 48),
+              *(_QWORD *)(a1 + 56),
+              *(_QWORD *)(a1 + 64),
+              v6,
+              (__int64)&v14);
+  if ( (*(_DWORD *)(a1 + 104) & 2) == 0 )
+  {
+    if ( started >= 0 )
+    {
+      v10 = WerLiveKernelSubmitReport(*(_QWORD *)(a1 + 96), 0);
+      started = v10;
+      if ( v10 >= 0 )
+      {
+        *(_DWORD *)(a1 + 104) |= 1u;
+        return (unsigned int)started;
+      }
+      v11 = "DBGK: DbgkpWerCaptureLiveFullDump: WerLiveKernelSubmitReport failed with status 0x%X\n";
+LABEL_12:
+      DbgPrintEx(5u, 0, v11, (unsigned int)v10);
+      return (unsigned int)started;
+    }
+LABEL_19:
+    DbgPrintEx(
+      5u,
+      0,
+      "DBGK: DbgkpWerCaptureLiveFullDump: IoCaptureLiveDump failed with status 0x%X\n",
+      (unsigned int)started);
+    return (unsigned int)started;
+  }
+  if ( (int)(started + 0x80000000) >= 0 && started != -1073741802 )
+    goto LABEL_19;
+  *(_QWORD *)(a1 + 128) = v14;
+  started = DbgkpWerStartDeferredLiveDump(a1);
+  if ( started >= 0 )
+    *a2 = 0;
+  return (unsigned int)started;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140ad61a8  mov     rax, rsp
+0x140ad61ab  mov     [rax+18h], rbx
+0x140ad61af  mov     [rax+20h], rsi
+0x140ad61b3  push    rdi
+0x140ad61b4  push    r14
+0x140ad61b6  push    r15
+0x140ad61b8  sub     rsp, 40h
+0x140ad61bc  mov     qword ptr [rax+8], 0
+0x140ad61c4  lea     r8, aDbgkCreatingFu; "DBGK: Creating full dump.  ComponentNam"...
+0x140ad61cb  mov     qword ptr [rax+10h], 0
+0x140ad61d3  mov     r14, rdx
+0x140ad61d6  mov     eax, [rcx+68h]
+0x140ad61d9  mov     rdi, rcx
+0x140ad61dc  mov     byte ptr [rdx], 1
+0x140ad61df  mov     r9, rcx
+0x140ad61e2  mov     edx, 3; Level
+0x140ad61e7  shr     eax, 1
+0x140ad61e9  mov     dword ptr [rcx+50h], 10000000h
+0x140ad61f0  and     eax, 1
+0x140ad61f3  mov     dword ptr [rsp+58h+var_38], eax
+0x140ad61f7  lea     r15d, [rdx+2]
+0x140ad61fb  mov     ecx, r15d; ComponentId
+0x140ad61fe  call    DbgPrintEx
+0x140ad6203  lea     ebx, [r15+33h]
+0x140ad6207  mov     r8d, 57676244h
+0x140ad620d  mov     edx, ebx
+0x140ad620f  mov     ecx, 100h
+0x140ad6214  call    ExAllocatePool2
+0x140ad6219  mov     rsi, rax
+0x140ad621c  test    rax, rax
+0x140ad621f  jnz     short loc_140AD623C
+0x140ad6221  lea     r8, aDbgkCouldNotAl_1; "DBGK: Could not allocate an Io Control."...
+0x140ad6228  xor     edx, edx; Level
+0x140ad622a  mov     ecx, r15d; ComponentId
+0x140ad622d  call    DbgPrintEx
+0x140ad6232  mov     ebx, 0C0000017h
+0x140ad6237  jmp     loc_140AD63AD
+0x140ad623c  mov     [rdi+78h], rsi
+0x140ad6240  mov     edx, [rsi+18h]
+0x140ad6243  mov     dword ptr [rax], 2
+0x140ad6249  mov     [rax+4], ebx
+0x140ad624c  mov     rax, [rdi+48h]
+0x140ad6250  mov     rcx, [rax+20h]
+0x140ad6254  mov     [rsi+30h], rcx
+0x140ad6258  mov     rax, [rdi+48h]
+0x140ad625c  mov     ecx, [rax+18h]
+0x140ad625f  test    cl, 1
+0x140ad6262  jz      short loc_140AD626A
+0x140ad6264  or      edx, 4
+0x140ad6267  mov     [rsi+18h], edx
+0x140ad626a  mov     rax, [rdi+48h]
+0x140ad626e  mov     ecx, [rax+18h]
+0x140ad6271  test    cl, 10h
+0x140ad6274  jz      short loc_140AD627C
+0x140ad6276  or      edx, 20h
+0x140ad6279  mov     [rsi+18h], edx
+0x140ad627c  mov     rax, [rdi+48h]
+0x140ad6280  mov     ecx, [rax+18h]
+0x140ad6283  test    cl, 4
+0x140ad6286  jz      short loc_140AD628C
+0x140ad6288  or      dword ptr [rsi+1Ch], 1
+0x140ad628c  or      edx, 10h
+0x140ad628f  mov     [rsi+18h], edx
+0x140ad6292  mov     eax, [rdi+68h]
+0x140ad6295  mov     [rsp+58h+arg_0], 0
+0x140ad629e  test    al, 2
+0x140ad62a0  jnz     short loc_140AD62E1
+0x140ad62a2  mov     rcx, [rdi+60h]
+0x140ad62a6  lea     rdx, [rsp+58h+arg_0]
+0x140ad62ab  call    cs:__imp_WerLiveKernelOpenDumpFile
+0x140ad62b2  nop     dword ptr [rax+rax+00h]
+0x140ad62b7  mov     ebx, eax
+0x140ad62b9  test    eax, eax
+0x140ad62bb  jns     short loc_140AD62D6
+0x140ad62bd  lea     r8, aDbgkWerliveker; "DBGK: WerLiveKernelOpenDumpFile failed."...
+0x140ad62c4  mov     r9d, eax
+0x140ad62c7  xor     edx, edx; Level
+0x140ad62c9  mov     ecx, r15d; ComponentId
+0x140ad62cc  call    DbgPrintEx
+0x140ad62d1  jmp     loc_140AD63AD
+0x140ad62d6  mov     rax, [rsp+58h+arg_0]
+0x140ad62db  mov     [rsi+8], rax
+0x140ad62df  jmp     short loc_140AD62F7
+0x140ad62e1  or      dword ptr [rsi+18h], 8
+0x140ad62e5  mov     rcx, rdi
+0x140ad62e8  call    DbgkpWerInitializeDeferredLiveDump
+0x140ad62ed  mov     ebx, eax
+0x140ad62ef  test    eax, eax
+0x140ad62f1  js      loc_140AD63AD
+0x140ad62f7  mov     rcx, rdi
+0x140ad62fa  call    DbgkpWerInvokeCallbacks
+0x140ad62ff  mov     ebx, eax
+0x140ad6301  test    eax, eax
+0x140ad6303  js      loc_140AD63AD
+0x140ad6309  mov     r9, [rdi+38h]
+0x140ad630d  lea     rax, [rsp+58h+arg_8]
+0x140ad6312  mov     r8, [rdi+30h]
+0x140ad6316  mov     rdx, [rdi+28h]
+0x140ad631a  mov     ecx, [rdi+20h]
+0x140ad631d  mov     [rsp+58h+var_28], rax
+0x140ad6322  mov     rax, [rdi+40h]
+0x140ad6326  mov     [rsp+58h+var_30], rsi
+0x140ad632b  mov     [rsp+58h+var_38], rax
+0x140ad6330  call    IoCaptureLiveDump
+0x140ad6335  mov     ebx, eax
+0x140ad6337  mov     eax, [rdi+68h]
+0x140ad633a  test    al, 2
+0x140ad633c  jnz     short loc_140AD637B
+0x140ad633e  test    ebx, ebx
+0x140ad6340  jns     short loc_140AD6351
+0x140ad6342  mov     r9d, ebx
+0x140ad6345  lea     r8, aDbgkDbgkpwerca_1; "DBGK: DbgkpWerCaptureLiveFullDump: IoCa"...
+0x140ad634c  jmp     loc_140AD62C7
+0x140ad6351  mov     rcx, [rdi+60h]
+0x140ad6355  xor     edx, edx
+0x140ad6357  call    cs:__imp_WerLiveKernelSubmitReport
+0x140ad635e  nop     dword ptr [rax+rax+00h]
+0x140ad6363  mov     ebx, eax
+0x140ad6365  test    eax, eax
+0x140ad6367  jns     short loc_140AD6375
+0x140ad6369  lea     r8, aDbgkDbgkpwerca_0; "DBGK: DbgkpWerCaptureLiveFullDump: WerL"...
+0x140ad6370  jmp     loc_140AD62C4
+0x140ad6375  or      dword ptr [rdi+68h], 1
+0x140ad6379  jmp     short loc_140AD63AD
+0x140ad637b  mov     ecx, 80000000h
+0x140ad6380  lea     eax, [rbx+rcx]
+0x140ad6383  test    ecx, eax
+0x140ad6385  jnz     short loc_140AD638F
+0x140ad6387  cmp     ebx, 0C0000016h
+0x140ad638d  jnz     short loc_140AD6342
+0x140ad638f  mov     rax, [rsp+58h+arg_8]
+0x140ad6394  mov     rcx, rdi
+0x140ad6397  mov     [rdi+80h], rax
+0x140ad639e  call    DbgkpWerStartDeferredLiveDump
+0x140ad63a3  mov     ebx, eax
+0x140ad63a5  test    eax, eax
+0x140ad63a7  js      short loc_140AD63AD
+0x140ad63a9  mov     byte ptr [r14], 0
+0x140ad63ad  mov     rsi, [rsp+58h+arg_18]
+0x140ad63b2  mov     eax, ebx
+0x140ad63b4  mov     rbx, [rsp+58h+arg_10]
+0x140ad63b9  add     rsp, 40h
+0x140ad63bd  pop     r15
+0x140ad63bf  pop     r14
+0x140ad63c1  pop     rdi
+0x140ad63c2  retn
+```

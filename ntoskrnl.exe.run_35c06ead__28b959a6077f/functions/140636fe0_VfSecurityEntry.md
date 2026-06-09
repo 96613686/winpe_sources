@@ -1,0 +1,388 @@
+# VfSecurityEntry
+
+- ea: `0x140636fe0`
+- end: `0x140638711`
+- name: `VfSecurityEntry`
+- size: `5937`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `2`
+- tags: `file_ops, reparse_path, authz_impersonation, installer_update, broker_com_uri`
+
+## callees
+
+- `0x140538640`
+- `0x1406d9d70`
+
+## string_xrefs
+
+- `0x140637066`: `ZwAdjustPrivilegesToken`
+- `0x14063700c`: `ZwAccessCheckAndAuditAlarm`
+- `0x1406372ee`: `ZwDuplicateToken`
+- `0x140637262`: `ZwDeleteFile`
+- `0x140637246`: `ZwDeleteBootEntry`
+- `0x14063727e`: `ZwDeleteValueKey`
+- `0x1406371f2`: `ZwCreateSection`
+- `0x14063714e`: `ZwCreateKey`
+- `0x14063722a`: `ZwCreateTimer`
+- `0x14063720e`: `ZwCreateSymbolicLinkObject`
+- `0x140637100`: `ZwCreateEvent`
+- `0x1406370ea`: `ZwCreateDirectoryObject`
+- `0x140637132`: `ZwCreateJobObject`
+- `0x140637116`: `ZwCreateFile`
+- `0x140637579`: `ZwOpenDirectoryObject`
+- `0x1406375b1`: `ZwOpenFile`
+- `0x140637595`: `ZwOpenEvent`
+- `0x140637461`: `ZwFlushInstructionCache`
+- `0x1406377ad`: `ZwOpenThreadTokenEx`
+- `0x140637791`: `ZwOpenThreadToken`
+- `0x1406377c9`: `ZwOpenTimer`
+- `0x14063773d`: `ZwOpenSection`
+- `0x140637721`: `ZwOpenProcessTokenEx`
+- `0x140637775`: `ZwOpenThread`
+- `0x140637759`: `ZwOpenSymbolicLinkObject`
+- `0x1406376cd`: `ZwOpenKey`
+- `0x1406376b1`: `ZwOpenJobObject`
+- `0x140637705`: `ZwOpenProcessToken`
+- `0x1406376e9`: `ZwOpenProcess`
+- `0x140637ba8`: `ZwQueryInformationToken`
+- `0x140637b8c`: `ZwQueryInformationThread`
+- `0x1406379e4`: `ZwQueryDirectoryFileEx`
+- `0x1406379c8`: `ZwQueryDirectoryFile`
+- `0x140637a00`: `ZwQueryDirectoryObject`
+- `0x1406379ac`: `ZwQueryInstallUILanguage`
+- `0x140637cc0`: `ZwReplaceKey`
+- `0x140637ca4`: `ZwReadFile`
+- `0x140637c18`: `ZwQuerySecurityObject`
+- `0x140637c34`: `ZwQuerySymbolicLinkObject`
+- `0x140638139`: `ZwWriteFile`
+- `0x1406380ad`: `ZwTranslateFilePath`
+- `0x140637f13`: `ZwSetSecurityObject`
+- `0x140637ef7`: `ZwSetInformationThread`
+- `0x140638382`: `ZwOpenTransactionManager`
+- `0x1406383d6`: `ZwOpenTransaction`
+- `0x1406383ba`: `ZwCreateTransaction`
+- `0x140638366`: `ZwCreateTransactionManager`
+- `0x14063834a`: `ZwRemoveIoCompletionEx`
+- `0x1406382be`: `ZwAlpcCreatePortSection`
+- `0x1406382a2`: `ZwAlpcCreateSecurityContext`
+- `0x1406382f6`: `ZwAlpcCreateResourceReserve`
+- `0x1406382da`: `ZwAlpcCreateSectionView`
+- `0x140638155`: `ZwAlpcCreatePort`
+- `0x1406385b9`: `ZwOpenEnlistment`
+- `0x140638565`: `ZwRollbackEnlistment`
+- `0x140638549`: `ZwCommitEnlistment`
+- `0x14063859d`: `ZwCreateEnlistment`
+- `0x140638581`: `ZwPrepareComplete`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x140636fe0  push    rbp
+0x140636fe2  lea     rbp, [rsp-0FD0h]
+0x140636fea  sub     rsp, 10D0h
+0x140636ff1  mov     rax, cs:__security_cookie
+0x140636ff8  xor     rax, rsp
+0x140636ffb  mov     [rbp+0FD0h+var_10], rax
+0x140637002  xor     ecx, ecx
+0x140637004  mov     [rsp+10D0h+var_10A8], 94h
+0x14063700c  lea     rax, aZwaccesschecka; "ZwAccessCheckAndAuditAlarm"
+0x140637013  mov     [rsp+10D0h+var_1098], rcx
+0x140637018  mov     [rsp+10D0h+var_10B0], rax
+0x14063701d  mov     edx, 85h
+0x140637022  lea     rax, VfZwAccessCheckAndAuditAlarm_Entry
+0x140637029  mov     [rsp+10D0h+var_1088], 93h
+0x140637031  mov     [rsp+10D0h+var_10A0], rax
+0x140637036  lea     rax, aZwaddbootentry; "ZwAddBootEntry"
+0x14063703d  mov     [rsp+10D0h+var_1090], rax
+0x140637042  lea     rax, VfZwQueryDriverEntryOrder_Entry
+0x140637049  mov     [rsp+10D0h+var_1080], rax
+0x14063704e  lea     rax, aZwadddriverent; "ZwAddDriverEntry"
+0x140637055  mov     [rsp+10D0h+var_1070], rax
+0x14063705a  lea     rax, VfZwQueryDriverEntryOrder_Entry
+0x140637061  mov     [rsp+10D0h+var_1060], rax
+0x140637066  lea     rax, aZwadjustprivil; "ZwAdjustPrivilegesToken"
+0x14063706d  mov     [rbp+0FD0h+var_1050], rax
+0x140637071  lea     rax, VfZwTranslateFilePath_Entry
+0x140637078  mov     [rbp+0FD0h+var_1040], rax
+0x14063707c  lea     rax, aZwallocatevirt_1; "ZwAllocateVirtualMemory"
+0x140637083  mov     [rbp+0FD0h+var_1030], rax
+0x140637087  lea     rax, VfZwPowerInformation_Entry
+0x14063708e  mov     [rbp+0FD0h+var_1020], rax
+0x140637092  lea     rax, aZwcanceliofile_0; "ZwCancelIoFile"
+0x140637099  mov     [rbp+0FD0h+var_1010], rax
+0x14063709d  lea     rax, VfZwAlpcCreateSecurityContext_Entry
+0x1406370a4  mov     [rbp+0FD0h+var_1000], rax
+0x1406370a8  lea     rax, aZwcanceltimer; "ZwCancelTimer"
+0x1406370af  mov     [rbp+0FD0h+var_FF0], rax
+0x1406370b3  lea     rax, VfZwAlpcCreateSecurityContext_Entry
+0x1406370ba  mov     [rbp+0FD0h+var_FE0], rax
+0x1406370be  lea     rax, aZwcloseobjecta_0; "ZwCloseObjectAuditAlarm"
+0x1406370c5  mov     [rbp+0FD0h+var_FD0], rax
+0x1406370c9  lea     rax, VfZwCloseObjectAuditAlarm_Entry
+0x1406370d0  mov     [rbp+0FD0h+var_FC0], rax
+0x1406370d4  lea     rax, aZwconnectport_0; "ZwConnectPort"
+0x1406370db  mov     [rbp+0FD0h+var_FB0], rax
+0x1406370df  lea     rax, VfZwConnectPort_Entry
+0x1406370e6  mov     [rbp+0FD0h+var_FA0], rax
+0x1406370ea  lea     rax, aZwcreatedirect; "ZwCreateDirectoryObject"
+0x1406370f1  mov     [rbp+0FD0h+var_F90], rax
+0x1406370f5  lea     rax, VfZwOpenKey_Entry
+0x1406370fc  mov     [rbp+0FD0h+var_F80], rax
+0x140637100  lea     rax, aZwcreateevent_0; "ZwCreateEvent"
+0x140637107  mov     [rbp+0FD0h+var_F70], rax
+0x14063710b  lea     rax, VfZwCreateTimer_Entry
+0x140637112  mov     [rbp+0FD0h+var_F60], rax
+0x140637116  lea     rax, aZwcreatefile; "ZwCreateFile"
+0x14063711d  mov     [rbp+0FD0h+var_F50], rax
+0x140637124  lea     rax, VfZwCreateFile_Entry
+0x14063712b  mov     [rbp+0FD0h+var_F40], rax
+0x140637132  lea     rax, aZwcreatejobobj; "ZwCreateJobObject"
+0x140637139  mov     [rbp+0FD0h+var_F30], rax
+0x140637140  lea     rax, VfZwOpenKey_Entry
+0x140637147  mov     [rbp+0FD0h+var_F20], rax
+0x14063714e  lea     rax, aZwcreatekey; "ZwCreateKey"
+0x140637155  mov     [rsp+10D0h+var_1078], rcx
+0x14063715a  mov     [rsp+10D0h+var_1068], 92h
+0x140637162  mov     [rsp+10D0h+var_1058], rcx
+0x140637167  mov     [rbp+0FD0h+var_1048], 91h
+0x14063716e  mov     [rbp+0FD0h+var_1038], rcx
+0x140637172  mov     [rbp+0FD0h+var_1028], 90h
+0x140637179  mov     [rbp+0FD0h+var_1018], rcx
+0x14063717d  mov     [rbp+0FD0h+var_1008], edx
+0x140637180  mov     [rbp+0FD0h+var_FF8], rcx
+0x140637184  mov     [rbp+0FD0h+var_FE8], 84h
+0x14063718b  mov     [rbp+0FD0h+var_FD8], rcx
+0x14063718f  mov     [rbp+0FD0h+var_FC8], 82h
+0x140637196  mov     [rbp+0FD0h+var_FB8], rcx
+0x14063719a  mov     [rbp+0FD0h+var_FA8], 80h
+0x1406371a1  mov     [rbp+0FD0h+var_F98], rcx
+0x1406371a5  mov     [rbp+0FD0h+var_F88], 7Fh
+0x1406371ac  mov     [rbp+0FD0h+var_F78], rcx
+0x1406371b0  mov     [rbp+0FD0h+var_F68], 7Dh ; '}'
+0x1406371b7  mov     [rbp+0FD0h+var_F58], rcx
+0x1406371bb  mov     [rbp+0FD0h+var_F48], 7Ch ; '|'
+0x1406371c5  mov     [rbp+0FD0h+var_F38], rcx
+0x1406371cc  mov     [rbp+0FD0h+var_F28], 7Bh ; '{'
+0x1406371d6  mov     [rbp+0FD0h+var_F18], rcx
+0x1406371dd  mov     [rbp+0FD0h+var_F10], rax
+0x1406371e4  lea     rax, VfZwCreateKey_Entry
+0x1406371eb  mov     [rbp+0FD0h+var_F00], rax
+0x1406371f2  lea     rax, aZwcreatesectio; "ZwCreateSection"
+0x1406371f9  mov     [rbp+0FD0h+var_EF0], rax
+0x140637200  lea     rax, VfZwCreateSection_Entry
+0x140637207  mov     [rbp+0FD0h+var_EE0], rax
+0x14063720e  lea     rax, aZwcreatesymbol_0; "ZwCreateSymbolicLinkObject"
+0x140637215  mov     [rbp+0FD0h+var_ED0], rax
+0x14063721c  lea     rax, VfZwCreateSymbolicLinkObject_Entry
+0x140637223  mov     [rbp+0FD0h+var_EC0], rax
+0x14063722a  lea     rax, aZwcreatetimer; "ZwCreateTimer"
+0x140637231  mov     [rbp+0FD0h+var_EB0], rax
+0x140637238  lea     rax, VfZwCreateTimer_Entry
+0x14063723f  mov     [rbp+0FD0h+var_EA0], rax
+0x140637246  lea     rax, aZwdeletebooten_0; "ZwDeleteBootEntry"
+0x14063724d  mov     [rbp+0FD0h+var_E90], rax
+0x140637254  lea     rax, ViSpIoAllocateIrp_Exit
+0x14063725b  mov     [rbp+0FD0h+var_E80], rax
+0x140637262  lea     rax, aZwdeletefile; "ZwDeleteFile"
+0x140637269  mov     [rbp+0FD0h+var_E70], rax
+0x140637270  lea     rax, VfZwDeleteFile_Entry
+0x140637277  mov     [rbp+0FD0h+var_E60], rax
+0x14063727e  lea     rax, aZwdeletevaluek; "ZwDeleteValueKey"
+0x140637285  mov     [rbp+0FD0h+var_E50], rax
+0x14063728c  lea     rax, VfZwDeleteValueKey_Entry
+0x140637293  mov     [rbp+0FD0h+var_E40], rax
+0x14063729a  lea     rax, aZwdeviceiocont_0; "ZwDeviceIoControlFile"
+0x1406372a1  mov     [rbp+0FD0h+var_E30], rax
+0x1406372a8  lea     rax, VfZwDeviceIoControlFile_Entry
+0x1406372af  mov     [rbp+0FD0h+var_E20], rax
+0x1406372b6  lea     rax, aZwdisplaystrin_0; "ZwDisplayString"
+0x1406372bd  mov     [rbp+0FD0h+var_E10], rax
+0x1406372c4  lea     rax, VfZwDeleteValueKey_Entry
+0x1406372cb  mov     [rbp+0FD0h+var_E00], rax
+0x1406372d2  lea     rax, aZwduplicateobj; "ZwDuplicateObject"
+0x1406372d9  mov     [rbp+0FD0h+var_DF0], rax
+0x1406372e0  lea     rax, VfZwDuplicateObject_Entry
+0x1406372e7  mov     [rbp+0FD0h+var_DE0], rax
+0x1406372ee  lea     rax, aZwduplicatetok_0; "ZwDuplicateToken"
+0x1406372f5  mov     [rbp+0FD0h+var_DD0], rax
+0x1406372fc  lea     rax, VfZwDuplicateToken_Entry
+0x140637303  mov     [rbp+0FD0h+var_DC0], rax
+0x14063730a  lea     rax, aZwenumerateboo_0; "ZwEnumerateBootEntries"
+0x140637311  mov     [rbp+0FD0h+var_DB0], rax
+0x140637318  lea     rax, VfZwQueryDriverEntryOrder_Entry
+0x14063731f  mov     [rbp+0FD0h+var_DA0], rax
+0x140637326  lea     rax, aZwenumeratedri_0; "ZwEnumerateDriverEntries"
+0x14063732d  mov     [rbp+0FD0h+var_D90], rax
+0x140637334  lea     rax, VfZwQueryDriverEntryOrder_Entry
+0x14063733b  mov     [rbp+0FD0h+var_D80], rax
+0x140637342  lea     rax, aZwenumeratekey; "ZwEnumerateKey"
+0x140637349  mov     [rbp+0FD0h+var_D70], rax
+0x140637350  lea     rax, VfZwQueryObject_Entry
+0x140637357  mov     [rbp+0FD0h+var_F08], 7Ah ; 'z'
+0x140637361  mov     [rbp+0FD0h+var_EF8], rcx
+0x140637368  mov     [rbp+0FD0h+var_EE8], 77h ; 'w'
+0x140637372  mov     [rbp+0FD0h+var_ED8], rcx
+0x140637379  mov     [rbp+0FD0h+var_EC8], 76h ; 'v'
+0x140637383  mov     [rbp+0FD0h+var_EB8], rcx
+0x14063738a  mov     [rbp+0FD0h+var_EA8], 75h ; 'u'
+0x140637394  mov     [rbp+0FD0h+var_E98], rcx
+0x14063739b  mov     [rbp+0FD0h+var_E88], 72h ; 'r'
+0x1406373a5  mov     [rbp+0FD0h+var_E78], rcx
+0x1406373ac  mov     [rbp+0FD0h+var_E68], 71h ; 'q'
+0x1406373b6  mov     [rbp+0FD0h+var_E58], rcx
+0x1406373bd  mov     [rbp+0FD0h+var_E48], 6Fh ; 'o'
+0x1406373c7  mov     [rbp+0FD0h+var_E38], rcx
+0x1406373ce  mov     [rbp+0FD0h+var_E28], 6Eh ; 'n'
+0x1406373d8  mov     [rbp+0FD0h+var_E18], rcx
+0x1406373df  mov     [rbp+0FD0h+var_E08], 6Dh ; 'm'
+0x1406373e9  mov     [rbp+0FD0h+var_DF8], rcx
+0x1406373f0  mov     [rbp+0FD0h+var_DE8], 6Ch ; 'l'
+0x1406373fa  mov     [rbp+0FD0h+var_DD8], rcx
+0x140637401  mov     [rbp+0FD0h+var_DC8], 6Bh ; 'k'
+0x14063740b  mov     [rbp+0FD0h+var_DB8], rcx
+0x140637412  mov     [rbp+0FD0h+var_DA8], 6Ah ; 'j'
+0x14063741c  mov     [rbp+0FD0h+var_D98], rcx
+0x140637423  mov     [rbp+0FD0h+var_D88], 69h ; 'i'
+0x14063742d  mov     [rbp+0FD0h+var_D78], rcx
+0x140637434  mov     [rbp+0FD0h+var_D68], 68h ; 'h'
+0x14063743e  mov     [rbp+0FD0h+var_D60], rax
+0x140637445  lea     rax, aZwenumerateval; "ZwEnumerateValueKey"
+0x14063744c  mov     [rbp+0FD0h+var_D50], rax
+0x140637453  lea     rax, VfZwQueryObject_Entry
+0x14063745a  mov     [rbp+0FD0h+var_D40], rax
+0x140637461  lea     rax, aZwflushinstruc_0; "ZwFlushInstructionCache"
+0x140637468  mov     [rbp+0FD0h+var_D30], rax
+0x14063746f  lea     rax, VfZwSetDriverEntryOrder_Entry
+0x140637476  mov     [rbp+0FD0h+var_D20], rax
+0x14063747d  lea     rax, aZwflushvirtual; "ZwFlushVirtualMemory"
+0x140637484  mov     [rbp+0FD0h+var_D10], rax
+0x14063748b  lea     rax, VfZwFlushVirtualMemory_Entry
+0x140637492  mov     [rbp+0FD0h+var_D00], rax
+0x140637499  lea     rax, aZwfreevirtualm_0; "ZwFreeVirtualMemory"
+0x1406374a0  mov     [rbp+0FD0h+var_CF0], rax
+0x1406374a7  lea     rax, VfZwFreeVirtualMemory_Entry
+0x1406374ae  mov     [rbp+0FD0h+var_CE0], rax
+0x1406374b5  lea     rax, aZwfscontrolfil; "ZwFsControlFile"
+0x1406374bc  mov     [rbp+0FD0h+var_CD0], rax
+0x1406374c3  lea     rax, VfZwDeviceIoControlFile_Entry
+0x1406374ca  mov     [rbp+0FD0h+var_CC0], rax
+0x1406374d1  lea     rax, aZwloaddriver_0; "ZwLoadDriver"
+0x1406374d8  mov     [rbp+0FD0h+var_CB0], rax
+0x1406374df  lea     rax, VfZwDeleteValueKey_Entry
+0x1406374e6  mov     [rbp+0FD0h+var_CA0], rax
+0x1406374ed  lea     rax, aZwloadkey; "ZwLoadKey"
+0x1406374f4  mov     [rbp+0FD0h+var_C90], rax
+0x1406374fb  lea     rax, VfZwLoadKey_Entry
+0x140637502  mov     [rbp+0FD0h+var_C80], rax
+0x140637509  lea     rax, aZwmapviewofsec; "ZwMapViewOfSection"
+0x140637510  mov     [rbp+0FD0h+var_C70], rax
+0x140637517  lea     rax, VfZwMapViewOfSection_Entry
+0x14063751e  mov     [rbp+0FD0h+var_C60], rax
+0x140637525  lea     rax, aZwmodifybooten; "ZwModifyBootEntry"
+0x14063752c  mov     [rbp+0FD0h+var_C50], rax
+0x140637533  lea     rax, VfZwAlpcCreateSecurityContext_Entry
+0x14063753a  mov     [rbp+0FD0h+var_C40], rax
+0x140637541  lea     rax, aZwmodifydriver_0; "ZwModifyDriverEntry"
+0x140637548  mov     [rbp+0FD0h+var_C30], rax
+0x14063754f  lea     rax, VfZwAlpcCreateSecurityContext_Entry
+0x140637556  mov     [rbp+0FD0h+var_C20], rax
+0x14063755d  lea     rax, aZwnotifychange_3; "ZwNotifyChangeKey"
+0x140637564  mov     [rbp+0FD0h+var_C10], rax
+0x14063756b  lea     rax, VfZwNotifyChangeKey_Entry
+0x140637572  mov     [rbp+0FD0h+var_C00], rax
+0x140637579  lea     rax, aZwopendirector_0; "ZwOpenDirectoryObject"
+0x140637580  mov     [rbp+0FD0h+var_BF0], rax
+0x140637587  lea     rax, VfZwOpenKey_Entry
+0x14063758e  mov     [rbp+0FD0h+var_BE0], rax
+0x140637595  lea     rax, aZwopenevent; "ZwOpenEvent"
+0x14063759c  mov     [rbp+0FD0h+var_BD0], rax
+0x1406375a3  lea     rax, VfZwOpenKey_Entry
+0x1406375aa  mov     [rbp+0FD0h+var_BC0], rax
+0x1406375b1  lea     rax, aZwopenfile; "ZwOpenFile"
+0x1406375b8  mov     [rbp+0FD0h+var_D58], rcx
+0x1406375bf  mov     [rbp+0FD0h+var_D48], 67h ; 'g'
+0x1406375c9  mov     [rbp+0FD0h+var_D38], rcx
+0x1406375d0  mov     [rbp+0FD0h+var_D28], 64h ; 'd'
+0x1406375da  mov     [rbp+0FD0h+var_D18], rcx
+0x1406375e1  mov     [rbp+0FD0h+var_D08], 62h ; 'b'
+0x1406375eb  mov     [rbp+0FD0h+var_CF8], rcx
+0x1406375f2  mov     [rbp+0FD0h+var_CE8], 61h ; 'a'
+0x1406375fc  mov     [rbp+0FD0h+var_CD8], rcx
+0x140637603  mov     [rbp+0FD0h+var_CC8], 60h ; '`'
+0x14063760d  mov     [rbp+0FD0h+var_CB8], rcx
+0x140637614  mov     [rbp+0FD0h+var_CA8], 5Eh ; '^'
+0x14063761e  mov     [rbp+0FD0h+var_C98], rcx
+0x140637625  mov     [rbp+0FD0h+var_C88], 5Dh ; ']'
+0x14063762f  mov     [rbp+0FD0h+var_C78], rcx
+0x140637636  mov     [rbp+0FD0h+var_C68], 5Ch ; '\'
+0x140637640  mov     [rbp+0FD0h+var_C58], rcx
+0x140637647  mov     [rbp+0FD0h+var_C48], 5Bh ; '['
+0x140637651  mov     [rbp+0FD0h+var_C38], rcx
+0x140637658  mov     [rbp+0FD0h+var_C28], 5Ah ; 'Z'
+0x140637662  mov     [rbp+0FD0h+var_C18], rcx
+0x140637669  mov     [rbp+0FD0h+var_C08], 59h ; 'Y'
+0x140637673  mov     [rbp+0FD0h+var_BF8], rcx
+0x14063767a  mov     [rbp+0FD0h+var_BE8], 58h ; 'X'
+0x140637684  mov     [rbp+0FD0h+var_BD8], rcx
+0x14063768b  mov     [rbp+0FD0h+var_BC8], 56h ; 'V'
+0x140637695  mov     [rbp+0FD0h+var_BB8], rcx
+0x14063769c  mov     [rbp+0FD0h+var_BB0], rax
+0x1406376a3  lea     rax, VfZwOpenFile_Entry
+0x1406376aa  mov     [rbp+0FD0h+var_BA0], rax
+0x1406376b1  lea     rax, aZwopenjobobjec; "ZwOpenJobObject"
+0x1406376b8  mov     [rbp+0FD0h+var_B90], rax
+0x1406376bf  lea     rax, VfZwOpenKey_Entry
+0x1406376c6  mov     [rbp+0FD0h+var_B80], rax
+0x1406376cd  lea     rax, aZwopenkey; "ZwOpenKey"
+0x1406376d4  mov     [rbp+0FD0h+var_B70], rax
+0x1406376db  lea     rax, VfZwOpenKey_Entry
+0x1406376e2  mov     [rbp+0FD0h+var_B60], rax
+0x1406376e9  lea     rax, aZwopenprocess_0; "ZwOpenProcess"
+0x1406376f0  mov     [rbp+0FD0h+var_B50], rax
+0x1406376f7  lea     rax, VfZwOpenThread_Entry
+0x1406376fe  mov     [rbp+0FD0h+var_B40], rax
+0x140637705  lea     rax, aZwopenprocesst; "ZwOpenProcessToken"
+0x14063770c  mov     [rbp+0FD0h+var_B30], rax
+0x140637713  lea     rax, VfZwAlpcCreateSecurityContext_Entry
+0x14063771a  mov     [rbp+0FD0h+var_B20], rax
+0x140637721  lea     rax, aZwopenprocesst_1; "ZwOpenProcessTokenEx"
+0x140637728  mov     [rbp+0FD0h+var_B10], rax
+0x14063772f  lea     rax, VfZwAlpcCreateSecurityContext_Entry
+0x140637736  mov     [rbp+0FD0h+var_B00], rax
+0x14063773d  lea     rax, aZwopensection; "ZwOpenSection"
+0x140637744  mov     [rbp+0FD0h+var_AF0], rax
+0x14063774b  lea     rax, VfZwOpenKey_Entry
+0x140637752  mov     [rbp+0FD0h+var_AE0], rax
+0x140637759  lea     rax, aZwopensymbolic_0; "ZwOpenSymbolicLinkObject"
+0x140637760  mov     [rbp+0FD0h+var_AD0], rax
+0x140637767  lea     rax, VfZwOpenKey_Entry
+0x14063776e  mov     [rbp+0FD0h+var_AC0], rax
+0x140637775  lea     rax, aZwopenthread_0; "ZwOpenThread"
+0x14063777c  mov     [rbp+0FD0h+var_AB0], rax
+0x140637783  lea     rax, VfZwOpenThread_Entry
+0x14063778a  mov     [rbp+0FD0h+var_AA0], rax
+0x140637791  lea     rax, aZwopenthreadto_1; "ZwOpenThreadToken"
+0x140637798  mov     [rbp+0FD0h+var_A90], rax
+0x14063779f  lea     rax, VfZwAlpcCreateSecurityContext_Entry
+0x1406377a6  mov     [rbp+0FD0h+var_A80], rax
+0x1406377ad  lea     rax, aZwopenthreadto; "ZwOpenThreadTokenEx"
+0x1406377b4  mov     [rbp+0FD0h+var_A70], rax
+0x1406377bb  lea     rax, VfZwAlpcCreateSecurityContext_Entry
+0x1406377c2  mov     [rbp+0FD0h+var_A60], rax
+0x1406377c9  lea     rax, aZwopentimer_0; "ZwOpenTimer"
+0x1406377d0  mov     [rbp+0FD0h+var_A50], rax
+0x1406377d7  lea     rax, VfZwOpenKey_Entry
+0x1406377de  mov     [rbp+0FD0h+var_A40], rax
+0x1406377e5  lea     rax, aZwpowerinforma; "ZwPowerInformation"
+0x1406377ec  mov     [rbp+0FD0h+var_A30], rax
+0x1406377f3  lea     rax, VfZwPowerInformation_Entry
+0x1406377fa  mov     [rbp+0FD0h+var_A20], rax
+  ... truncated ...
+```

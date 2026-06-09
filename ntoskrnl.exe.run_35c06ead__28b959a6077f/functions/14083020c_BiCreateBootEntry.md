@@ -1,0 +1,492 @@
+# BiCreateBootEntry
+
+- ea: `0x14083020c`
+- end: `0x1408305ae`
+- name: `BiCreateBootEntry`
+- size: `930`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `9`
+- tags: ``
+
+## callers
+
+- `0x1408305b4`
+
+## callees
+
+- `0x140541a30`
+- `0x1406f4480`
+- `0x14083020c`
+- `0x140988ec0`
+- `0x14098b5d0`
+- `0x14098be90`
+- `0x14098c3fc`
+- `0x140bae410`
+- `0x140bae8e0`
+
+## string_xrefs
+
+- `0x140830273`: `BiCreateBootEntry: Could not retrieve BCD Object application description. Status: %x`
+- `0x1408302a7`: `BiCreateBootEntry: Could not retrieve BCD Object application device. Status: %x`
+- `0x1408302df`: `BiCreateBootEntry: Could not retrieve BCD Object application path. Status: %x`
+
+## pseudocode
+
+```c
+__int64 __fastcall BiCreateBootEntry(__int64 a1, _QWORD *a2)
+{
+  _DWORD *v2; // rdi
+  void *v3; // rsi
+  unsigned int *v4; // r14
+  void *v5; // r15
+  char *v6; // r12
+  int Element; // eax
+  int v9; // ebx
+  int v10; // eax
+  int v11; // eax
+  __int64 v12; // r13
+  __int64 v13; // rax
+  int v14; // edx
+  __int64 v15; // rax
+  unsigned int v16; // ecx
+  unsigned int v17; // eax
+  unsigned int v18; // ebx
+  char *Pool2; // rax
+  __int64 v20; // rbx
+  size_t v21; // r8
+  int KeyName; // eax
+  int v23; // r8d
+  unsigned int v24; // ecx
+  _DWORD *v25; // rax
+  _DWORD *v26; // rbx
+  int v27; // ecx
+  size_t v28; // r8
+  PVOID v29; // rdx
+  int v30; // eax
+  int v31; // ecx
+  __int64 v32; // rax
+  __int64 v33; // rax
+  size_t v35; // [rsp+30h] [rbp-38h] BYREF
+  void *v36; // [rsp+38h] [rbp-30h] BYREF
+  void *Src; // [rsp+40h] [rbp-28h] BYREF
+  _DWORD *v38; // [rsp+48h] [rbp-20h] BYREF
+  void *v39; // [rsp+50h] [rbp-18h] BYREF
+  PVOID P[2]; // [rsp+58h] [rbp-10h] BYREF
+  size_t v43; // [rsp+C0h] [rbp+58h] BYREF
+  size_t Size; // [rsp+C8h] [rbp+60h] BYREF
+
+  LODWORD(v43) = 0;
+  LODWORD(Size) = 0;
+  LODWORD(v35) = 0;
+  v2 = 0;
+  P[0] = 0;
+  v3 = 0;
+  v38 = 0;
+  v4 = 0;
+  Src = 0;
+  v5 = 0;
+  v36 = 0;
+  v6 = 0;
+  v39 = 0;
+  Element = BiGetElement(a1, 301989892, P, &v43);
+  v9 = Element;
+  if ( Element < 0 )
+  {
+    BiLogMessage(
+      4,
+      L"BiCreateBootEntry: Could not retrieve BCD Object application description. Status: %x",
+      (unsigned int)Element);
+    goto LABEL_25;
+  }
+  v10 = BiGetElement(a1, 285212673, &v38, &Size);
+  v9 = v10;
+  if ( v10 < 0 )
+  {
+    BiLogMessage(
+      4,
+      L"BiCreateBootEntry: Could not retrieve BCD Object application device. Status: %x",
+      (unsigned int)v10);
+    v2 = v38;
+    goto LABEL_25;
+  }
+  v11 = BiGetElement(a1, 301989890, &Src, &v35);
+  v9 = v11;
+  if ( v11 < 0 )
+  {
+    BiLogMessage(4, L"BiCreateBootEntry: Could not retrieve BCD Object application path. Status: %x", (unsigned int)v11);
+    v2 = v38;
+    v3 = Src;
+    goto LABEL_25;
+  }
+  v2 = v38;
+  v3 = Src;
+  if ( *v38 != 2 )
+  {
+    v9 = -1073741637;
+    goto LABEL_25;
+  }
+  v12 = -1;
+  v13 = -1;
+  do
+    ++v13;
+  while ( *((_WORD *)Src + v13) );
+  v14 = 2 * v13 + 2;
+  v15 = -1;
+  LODWORD(v35) = v14;
+  do
+    ++v15;
+  while ( *((_WORD *)v38 + v15 + 10) );
+  v16 = 2 * v15 + 2;
+  v17 = v16 + v14;
+  LODWORD(Size) = v16;
+  if ( v16 + v14 < v16 )
+    goto LABEL_24;
+  v18 = v17 + 12;
+  if ( v17 + 12 < v17 )
+    goto LABEL_24;
+  Pool2 = (char *)ExAllocatePool2(258, v18, 1262764866);
+  v6 = Pool2;
+  if ( !Pool2 )
+  {
+LABEL_16:
+    v9 = -1073741670;
+    goto LABEL_25;
+  }
+  *((_DWORD *)Pool2 + 1) = v18;
+  v20 = (unsigned int)Size;
+  v21 = (unsigned int)Size;
+  *(_DWORD *)Pool2 = 1;
+  *((_DWORD *)Pool2 + 2) = 3;
+  memmove(Pool2 + 12, v2 + 5, v21);
+  memmove(&v6[v20 + 12], v3, (unsigned int)v35);
+  v9 = BiTranslateFilePath(v6, 4, &v36);
+  if ( v9 < 0 || (KeyName = BiGetKeyName(a1, &v39), v5 = v39, v9 = KeyName, KeyName < 0) )
+  {
+    v4 = (unsigned int *)v36;
+    goto LABEL_25;
+  }
+  do
+    ++v12;
+  while ( *((_WORD *)v39 + v12) );
+  v4 = (unsigned int *)v36;
+  LODWORD(v38) = (2 * v12 + 45) & 0xFFFFFFFC;
+  LODWORD(v35) = (_DWORD)v38 + 16;
+  v23 = *((_DWORD *)v36 + 1);
+  v24 = ((_DWORD)v38 + 47) & 0xFFFFFFFC;
+  LODWORD(Src) = v24;
+  if ( (unsigned int)v43 + v24 + v23 + 4 < (unsigned int)v43 )
+  {
+LABEL_24:
+    v9 = -1073741675;
+  }
+  else
+  {
+    LODWORD(Size) = (v24 + v43 + 3) & 0xFFFFFFFC;
+    LODWORD(v36) = v23 + Size;
+    v25 = (_DWORD *)ExAllocatePool2(258, (unsigned int)(v23 + Size), 1262764866);
+    v26 = v25;
+    if ( !v25 )
+      goto LABEL_16;
+    v27 = Size;
+    v28 = (unsigned int)v43;
+    v29 = P[0];
+    *v25 = 1;
+    v30 = (int)v36;
+    v26[5] = v27;
+    v31 = v35;
+    v26[1] = v30;
+    v32 = (unsigned int)Src;
+    v26[6] = v31;
+    v26[2] = -1;
+    v26[3] = 5;
+    v26[4] = v32;
+    memmove((char *)v26 + v32, v29, v28);
+    memmove((char *)v26 + (unsigned int)Size, v4, v4[1]);
+    *(_QWORD *)(v26 + 7) = 0x53574F444E4957LL;
+    v26[10] = v35;
+    v26[11] = (_DWORD)v38;
+    v26[9] = 1;
+    swprintf_s((wchar_t *)v26 + 24, (unsigned int)v12 + 11LL, L"%s%s", L"BCDOBJECT=", v5);
+    v33 = (unsigned int)v26[11];
+    *(_DWORD *)((char *)v26 + v33 + 28) = 1;
+    *(_DWORD *)((char *)v26 + v33 + 32) = 16;
+    *(_DWORD *)((char *)v26 + v33 + 36) = 4;
+    *(_DWORD *)((char *)v26 + v33 + 40) = 327551;
+    *a2 = v26;
+    v9 = 0;
+  }
+LABEL_25:
+  if ( P[0] )
+    ExFreePoolWithTag(P[0], 0x4B444342u);
+  if ( v2 )
+    ExFreePoolWithTag(v2, 0x4B444342u);
+  if ( v3 )
+    ExFreePoolWithTag(v3, 0x4B444342u);
+  if ( v4 )
+    ExFreePoolWithTag(v4, 0x4B444342u);
+  if ( v5 )
+    ExFreePoolWithTag(v5, 0x4B444342u);
+  if ( v6 )
+    ExFreePoolWithTag(v6, 0x4B444342u);
+  return (unsigned int)v9;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14083020c  mov     [rsp-40h+arg_8], rdx
+0x140830211  mov     [rsp-40h+arg_0], rcx
+0x140830216  push    rbp
+0x140830217  push    rbx
+0x140830218  push    rsi
+0x140830219  push    rdi
+0x14083021a  push    r12
+0x14083021c  push    r13
+0x14083021e  push    r14
+0x140830220  push    r15
+0x140830222  mov     rbp, rsp
+0x140830225  sub     rsp, 68h
+0x140830229  xor     eax, eax
+0x14083022b  lea     r9, [rbp+arg_10]
+0x14083022f  lea     r8, [rbp+P]
+0x140830233  mov     dword ptr [rbp+arg_10], eax
+0x140830236  mov     edx, 12000004h
+0x14083023b  mov     dword ptr [rbp+Size], eax
+0x14083023e  mov     dword ptr [rbp+var_38], eax
+0x140830241  mov     edi, eax
+0x140830243  mov     [rbp+P], rax
+0x140830247  mov     esi, eax
+0x140830249  mov     [rbp+var_20], rax
+0x14083024d  mov     r14d, eax
+0x140830250  mov     [rbp+Src], rax
+0x140830254  mov     r15d, eax
+0x140830257  mov     [rbp+var_30], rax
+0x14083025b  mov     r12d, eax
+0x14083025e  mov     [rbp+var_18], rax
+0x140830262  mov     r13, rcx
+0x140830265  call    BiGetElement
+0x14083026a  mov     ebx, eax
+0x14083026c  test    eax, eax
+0x14083026e  jns     short loc_140830289
+0x140830270  mov     r8d, eax
+0x140830273  lea     rdx, aBicreatebooten_1; "BiCreateBootEntry: Could not retrieve B"...
+0x14083027a  lea     ecx, [r12+4]
+0x14083027f  call    BiLogMessage
+0x140830284  jmp     loc_140830530
+0x140830289  lea     r9, [rbp+Size]
+0x14083028d  mov     edx, 11000001h
+0x140830292  lea     r8, [rbp+var_20]
+0x140830296  mov     rcx, r13
+0x140830299  call    BiGetElement
+0x14083029e  mov     ebx, eax
+0x1408302a0  test    eax, eax
+0x1408302a2  jns     short loc_1408302C1
+0x1408302a4  mov     r8d, eax
+0x1408302a7  lea     rdx, aBicreatebooten; "BiCreateBootEntry: Could not retrieve B"...
+0x1408302ae  mov     ecx, 4
+0x1408302b3  call    BiLogMessage
+0x1408302b8  mov     rdi, [rbp+var_20]
+0x1408302bc  jmp     loc_140830530
+0x1408302c1  lea     r9, [rbp+var_38]
+0x1408302c5  mov     edx, 12000002h
+0x1408302ca  lea     r8, [rbp+Src]
+0x1408302ce  mov     rcx, r13
+0x1408302d1  call    BiGetElement
+0x1408302d6  mov     ebx, eax
+0x1408302d8  test    eax, eax
+0x1408302da  jns     short loc_1408302FD
+0x1408302dc  mov     r8d, eax
+0x1408302df  lea     rdx, aBicreatebooten_0; "BiCreateBootEntry: Could not retrieve B"...
+0x1408302e6  mov     ecx, 4
+0x1408302eb  call    BiLogMessage
+0x1408302f0  mov     rdi, [rbp+var_20]
+0x1408302f4  mov     rsi, [rbp+Src]
+0x1408302f8  jmp     loc_140830530
+0x1408302fd  mov     rdi, [rbp+var_20]
+0x140830301  mov     rsi, [rbp+Src]
+0x140830305  cmp     dword ptr [rdi], 2
+0x140830308  jz      short loc_140830314
+0x14083030a  mov     ebx, 0C00000BBh
+0x14083030f  jmp     loc_140830530
+0x140830314  or      r13, 0FFFFFFFFFFFFFFFFh
+0x140830318  mov     rax, r13
+0x14083031b  xor     ebx, ebx
+0x14083031d  inc     rax
+0x140830320  cmp     [rsi+rax*2], bx
+0x140830324  jnz     short loc_14083031D
+0x140830326  lea     edx, ds:2[rax*2]
+0x14083032d  mov     rax, r13
+0x140830330  mov     dword ptr [rbp+var_38], edx
+0x140830333  inc     rax
+0x140830336  cmp     [rdi+rax*2+14h], bx
+0x14083033b  jnz     short loc_140830333
+0x14083033d  lea     ecx, ds:2[rax*2]
+0x140830344  lea     eax, [rcx+rdx]
+0x140830347  mov     dword ptr [rbp+Size], ecx
+0x14083034a  cmp     eax, ecx
+0x14083034c  jb      loc_14083052B
+0x140830352  lea     ebx, [rax+0Ch]
+0x140830355  cmp     ebx, eax
+0x140830357  jb      loc_14083052B
+0x14083035d  mov     edx, ebx
+0x14083035f  mov     ecx, 102h
+0x140830364  mov     r8d, 4B444342h
+0x14083036a  call    ExAllocatePool2
+0x14083036f  mov     r12, rax
+0x140830372  test    rax, rax
+0x140830375  jnz     short loc_140830381
+0x140830377  mov     ebx, 0C000009Ah
+0x14083037c  jmp     loc_140830530
+0x140830381  mov     [rax+4], ebx
+0x140830384  lea     rcx, [rax+0Ch]; void *
+0x140830388  mov     ebx, dword ptr [rbp+Size]
+0x14083038b  lea     rdx, [rdi+14h]; Src
+0x14083038f  mov     r8d, ebx; Size
+0x140830392  mov     dword ptr [rax], 1
+0x140830398  mov     dword ptr [rax+8], 3
+0x14083039f  call    memmove
+0x1408303a4  mov     r8d, dword ptr [rbp+var_38]; Size
+0x1408303a8  lea     rcx, [rbx+0Ch]
+0x1408303ac  add     rcx, r12; void *
+0x1408303af  mov     rdx, rsi; Src
+0x1408303b2  call    memmove
+0x1408303b7  lea     r8, [rbp+var_30]
+0x1408303bb  mov     edx, 4
+0x1408303c0  mov     rcx, r12
+0x1408303c3  call    BiTranslateFilePath
+0x1408303c8  mov     ebx, eax
+0x1408303ca  test    eax, eax
+0x1408303cc  js      loc_140830525
+0x1408303d2  mov     rcx, [rbp+arg_0]
+0x1408303d6  lea     rdx, [rbp+var_18]
+0x1408303da  call    BiGetKeyName
+0x1408303df  mov     r15, [rbp+var_18]
+0x1408303e3  mov     ebx, eax
+0x1408303e5  test    eax, eax
+0x1408303e7  js      loc_140830525
+0x1408303ed  inc     r13
+0x1408303f0  cmp     [r15+r13*2], r14w
+0x1408303f5  jnz     short loc_1408303ED
+0x1408303f7  mov     edx, dword ptr [rbp+arg_10]
+0x1408303fa  lea     eax, ds:2Dh[r13*2]
+0x140830402  mov     r14, [rbp+var_30]
+0x140830406  mov     r9d, 0FFFFFFFCh
+0x14083040c  and     eax, r9d
+0x14083040f  mov     dword ptr [rbp+var_20], eax
+0x140830412  add     eax, 10h
+0x140830415  mov     dword ptr [rbp+var_38], eax
+0x140830418  mov     r8d, [r14+4]
+0x14083041c  lea     ecx, [rax+1Fh]
+0x14083041f  and     ecx, r9d
+0x140830422  lea     eax, [r8+4]
+0x140830426  mov     dword ptr [rbp+Src], ecx
+0x140830429  add     eax, ecx
+0x14083042b  add     eax, edx
+0x14083042d  cmp     eax, edx
+0x14083042f  jb      loc_14083052B
+0x140830435  lea     eax, [rdx+3]
+0x140830438  add     eax, ecx
+0x14083043a  mov     ecx, 102h
+0x14083043f  and     eax, r9d
+0x140830442  mov     dword ptr [rbp+Size], eax
+0x140830445  add     eax, r8d
+0x140830448  mov     edx, eax
+0x14083044a  mov     r8d, 4B444342h
+0x140830450  mov     dword ptr [rbp+var_30], eax
+0x140830453  call    ExAllocatePool2
+0x140830458  mov     rbx, rax
+0x14083045b  test    rax, rax
+0x14083045e  jz      loc_140830377
+0x140830464  mov     ecx, dword ptr [rbp+Size]
+0x140830467  mov     r8d, dword ptr [rbp+arg_10]; Size
+0x14083046b  mov     rdx, [rbp+P]; Src
+0x14083046f  mov     dword ptr [rax], 1
+0x140830475  mov     eax, dword ptr [rbp+var_30]
+0x140830478  mov     [rbx+14h], ecx
+0x14083047b  mov     ecx, dword ptr [rbp+var_38]
+0x14083047e  mov     [rbx+4], eax
+0x140830481  mov     eax, dword ptr [rbp+Src]
+0x140830484  mov     [rbx+18h], ecx
+0x140830487  mov     dword ptr [rbx+8], 0FFFFFFFFh
+0x14083048e  mov     dword ptr [rbx+0Ch], 5
+0x140830495  lea     rcx, [rbx+rax]; void *
+0x140830499  mov     [rbx+10h], eax
+0x14083049c  call    memmove
+0x1408304a1  mov     ecx, dword ptr [rbp+Size]
+0x1408304a4  mov     rdx, r14; Src
+0x1408304a7  mov     r8d, [r14+4]; Size
+0x1408304ab  add     rcx, rbx; void *
+0x1408304ae  call    memmove
+0x1408304b3  mov     rax, 53574F444E4957h
+0x1408304bd  mov     edx, r13d
+0x1408304c0  mov     [rbx+1Ch], rax
+0x1408304c4  lea     rcx, [rbx+30h]; Dst
+0x1408304c8  mov     eax, dword ptr [rbp+var_38]
+0x1408304cb  lea     r9, aBcdobject; "BCDOBJECT="
+0x1408304d2  mov     [rbx+28h], eax
+0x1408304d5  lea     r8, aSS_0; "%s%s"
+0x1408304dc  mov     eax, dword ptr [rbp+var_20]
+0x1408304df  add     rdx, 0Bh; SizeInWords
+0x1408304e3  mov     [rbx+2Ch], eax
+0x1408304e6  mov     dword ptr [rbx+24h], 1
+0x1408304ed  mov     [rsp+68h+var_48], r15
+0x1408304f2  call    swprintf_s
+0x1408304f7  mov     eax, [rbx+2Ch]
+0x1408304fa  mov     dword ptr [rax+rbx+1Ch], 1
+0x140830502  mov     dword ptr [rax+rbx+20h], 10h
+0x14083050a  mov     dword ptr [rax+rbx+24h], 4
+0x140830512  mov     dword ptr [rax+rbx+28h], 4FF7Fh
+0x14083051a  mov     rax, [rbp+arg_8]
+0x14083051e  mov     [rax], rbx
+0x140830521  xor     ebx, ebx
+0x140830523  jmp     short loc_140830530
+0x140830525  mov     r14, [rbp+var_30]
+0x140830529  jmp     short loc_140830530
+0x14083052b  mov     ebx, 0C0000095h
+0x140830530  mov     rax, [rbp+P]
+0x140830534  mov     r13d, 4B444342h
+0x14083053a  test    rax, rax
+0x14083053d  jz      short loc_14083054A
+0x14083053f  mov     edx, r13d; Tag
+0x140830542  mov     rcx, rax; P
+0x140830545  call    ExFreePoolWithTag
+0x14083054a  test    rdi, rdi
+0x14083054d  jz      short loc_14083055A
+0x14083054f  mov     edx, r13d; Tag
+0x140830552  mov     rcx, rdi; P
+0x140830555  call    ExFreePoolWithTag
+0x14083055a  test    rsi, rsi
+0x14083055d  jz      short loc_14083056A
+0x14083055f  mov     edx, r13d; Tag
+0x140830562  mov     rcx, rsi; P
+0x140830565  call    ExFreePoolWithTag
+0x14083056a  test    r14, r14
+0x14083056d  jz      short loc_14083057A
+0x14083056f  mov     edx, r13d; Tag
+0x140830572  mov     rcx, r14; P
+0x140830575  call    ExFreePoolWithTag
+0x14083057a  test    r15, r15
+0x14083057d  jz      short loc_14083058A
+0x14083057f  mov     edx, r13d; Tag
+0x140830582  mov     rcx, r15; P
+0x140830585  call    ExFreePoolWithTag
+0x14083058a  test    r12, r12
+0x14083058d  jz      short loc_14083059A
+0x14083058f  mov     edx, r13d; Tag
+0x140830592  mov     rcx, r12; P
+0x140830595  call    ExFreePoolWithTag
+0x14083059a  mov     eax, ebx
+0x14083059c  add     rsp, 68h
+0x1408305a0  pop     r15
+0x1408305a2  pop     r14
+0x1408305a4  pop     r13
+0x1408305a6  pop     r12
+0x1408305a8  pop     rdi
+0x1408305a9  pop     rsi
+0x1408305aa  pop     rbx
+0x1408305ab  pop     rbp
+0x1408305ac  retn
+```

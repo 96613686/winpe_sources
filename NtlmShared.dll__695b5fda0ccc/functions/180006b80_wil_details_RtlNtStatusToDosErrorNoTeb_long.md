@@ -1,0 +1,84 @@
+# wil::details::RtlNtStatusToDosErrorNoTeb(long)
+
+- ea: `0x180006b80`
+- end: `0x180006be2`
+- name: `?RtlNtStatusToDosErrorNoTeb@details@wil@@YAKJ@Z`
+- size: `98`
+- prototype: `unsigned int __fastcall(wil::details *__hidden this, int)`
+- caller_count: `0`
+- callee_count: `2`
+- tags: `loader_planting`
+
+## callees
+
+- `0x180006b80`
+- `0x18000d010`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x180006bbe`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x180006bbe`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x180006ba7`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x180006ba7`
+
+## string_xrefs
+
+- `0x180006ba0`: `ntdll.dll`
+
+## pseudocode
+
+```c
+FARPROC __fastcall wil::details::RtlNtStatusToDosErrorNoTeb(wil::details *this)
+{
+  FARPROC result; // rax
+  unsigned int v2; // ebx
+  HMODULE ModuleHandleW; // rax
+
+  result = (FARPROC)`wil::details::RtlNtStatusToDosErrorNoTeb'::`2'::s_pfnRtlNtStatusToDosErrorNoTeb;
+  v2 = (unsigned int)this;
+  if ( `wil::details::RtlNtStatusToDosErrorNoTeb'::`2'::s_pfnRtlNtStatusToDosErrorNoTeb )
+    return (FARPROC)((__int64 (__fastcall *)(_QWORD))result)(v2);
+  ModuleHandleW = `wil_details_GetNtDllModuleHandle'::`2'::wil_details_ntdllModuleHandle;
+  if ( !`wil_details_GetNtDllModuleHandle'::`2'::wil_details_ntdllModuleHandle )
+  {
+    ModuleHandleW = GetModuleHandleW(L"ntdll.dll");
+    `wil_details_GetNtDllModuleHandle'::`2'::wil_details_ntdllModuleHandle = ModuleHandleW;
+  }
+  result = GetProcAddress(ModuleHandleW, "RtlNtStatusToDosErrorNoTeb");
+  `wil::details::RtlNtStatusToDosErrorNoTeb'::`2'::s_pfnRtlNtStatusToDosErrorNoTeb = (__int64)result;
+  if ( result )
+    return (FARPROC)((__int64 (__fastcall *)(_QWORD))result)(v2);
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180006b80  push    rbx
+0x180006b82  sub     rsp, 20h
+0x180006b86  mov     rax, cs:?s_pfnRtlNtStatusToDosErrorNoTeb@?1??RtlNtStatusToDosErrorNoTeb@details@wil@@YAKJ@Z@4P6AKJ@_EEA
+0x180006b8d  mov     ebx, ecx
+0x180006b8f  test    rax, rax
+0x180006b92  jnz     short loc_180006BD6
+0x180006b94  mov     rax, cs:?wil_details_ntdllModuleHandle@?1??wil_details_GetNtDllModuleHandle@@YAPEAUHINSTANCE__@@XZ@4PEAU2@EA; HINSTANCE__ * `wil_details_GetNtDllModuleHandle(void)'::`2'::wil_details_ntdllModuleHandle
+0x180006b9b  test    rax, rax
+0x180006b9e  jnz     short loc_180006BB4
+0x180006ba0  lea     rcx, ModuleName; "ntdll.dll"
+0x180006ba7  call    cs:__imp_GetModuleHandleW
+0x180006bad  mov     cs:?wil_details_ntdllModuleHandle@?1??wil_details_GetNtDllModuleHandle@@YAPEAUHINSTANCE__@@XZ@4PEAU2@EA, rax; HINSTANCE__ * `wil_details_GetNtDllModuleHandle(void)'::`2'::wil_details_ntdllModuleHandle
+0x180006bb4  lea     rdx, aRtlntstatustod; "RtlNtStatusToDosErrorNoTeb"
+0x180006bbb  mov     rcx, rax; hModule
+0x180006bbe  call    cs:__imp_GetProcAddress
+0x180006bc4  mov     cs:?s_pfnRtlNtStatusToDosErrorNoTeb@?1??RtlNtStatusToDosErrorNoTeb@details@wil@@YAKJ@Z@4P6AKJ@_EEA, rax
+0x180006bcb  test    rax, rax
+0x180006bce  jnz     short loc_180006BD6
+0x180006bd0  add     rsp, 20h
+0x180006bd4  pop     rbx
+0x180006bd5  retn
+0x180006bd6  mov     ecx, ebx
+0x180006bd8  add     rsp, 20h
+0x180006bdc  pop     rbx
+0x180006bdd  jmp     _guard_dispatch_icall$thunk$10345483385596137414
+```

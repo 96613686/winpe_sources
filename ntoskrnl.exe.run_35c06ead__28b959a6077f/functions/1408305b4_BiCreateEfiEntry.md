@@ -1,0 +1,269 @@
+# BiCreateEfiEntry
+
+- ea: `0x1408305b4`
+- end: `0x140830775`
+- name: `BiCreateEfiEntry`
+- size: `449`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `11`
+- tags: `installer_update`
+
+## callers
+
+- `0x140987134`
+- `0x140add3e0`
+
+## callees
+
+- `0x14073207c`
+- `0x14082ff48`
+- `0x14083020c`
+- `0x1408305b4`
+- `0x140830be8`
+- `0x14098a38c`
+- `0x14098be90`
+- `0x14098c794`
+- `0x14098ce10`
+- `0x140ae4258`
+- `0x140bae8e0`
+
+## string_xrefs
+
+- `0x14083065c`: `Created boot entry %d '%ws' using cached variable`
+- `0x1408306dc`: `Created new boot entry %d '%ws'`
+- `0x14083072a`: `BiCreateEfiEntry failed %x`
+
+## pseudocode
+
+```c
+__int64 __fastcall BiCreateEfiEntry(__int64 a1, __int64 a2)
+{
+  unsigned int *v3; // rdi
+  int v5; // eax
+  void *v6; // r14
+  int SavedBootEntry; // ebx
+  unsigned int v8; // eax
+  __int64 v9; // rdx
+  unsigned int v10; // eax
+  __int64 v11; // rdx
+  unsigned int v13; // [rsp+58h] [rbp+38h] BYREF
+  PVOID P; // [rsp+60h] [rbp+40h] BYREF
+  void *v15; // [rsp+68h] [rbp+48h] BYREF
+
+  v13 = 0;
+  v3 = 0;
+  v15 = 0;
+  P = 0;
+  v5 = BcdOpenObject(a1, a2 + 16, &v15);
+  v6 = v15;
+  SavedBootEntry = v5;
+  if ( v5 < 0 )
+    goto LABEL_16;
+  if ( (*(_DWORD *)(a2 + 48) & 2) == 0 )
+  {
+    SavedBootEntry = BiCreateBootEntry((__int64)v15, &P);
+    if ( SavedBootEntry >= 0 )
+    {
+      v3 = (unsigned int *)P;
+      SavedBootEntry = BiAddBootEntry(P, &v13);
+      if ( SavedBootEntry >= 0 )
+      {
+        BiLogMessage(2, L"Created new boot entry %d '%ws'", v13, (char *)v3 + v3[4]);
+        v3[2] = v13;
+        v10 = v13;
+        *(_DWORD *)(a2 + 48) |= 0x21u;
+        *(_DWORD *)(a2 + 32) = v10;
+        *(_QWORD *)(a2 + 40) = v3;
+        SavedBootEntry = BiSaveFirmwareVariable(v6, v11, v3, v3[1]);
+        if ( SavedBootEntry >= 0 )
+        {
+          *(_DWORD *)(a2 + 48) |= 2u;
+          goto LABEL_17;
+        }
+      }
+      goto LABEL_16;
+    }
+    goto LABEL_15;
+  }
+  SavedBootEntry = BiGetSavedBootEntry(v15, &P);
+  if ( SavedBootEntry < 0 )
+  {
+LABEL_15:
+    v3 = (unsigned int *)P;
+    goto LABEL_16;
+  }
+  v3 = (unsigned int *)P;
+  if ( (*(_DWORD *)(a2 + 48) & 8) == 0 )
+  {
+    SavedBootEntry = BiUpdateObjectReferenceInEfiEntry(P, v6);
+    if ( SavedBootEntry >= 0 )
+    {
+      *(_DWORD *)(a2 + 48) |= 0x20u;
+      goto LABEL_7;
+    }
+LABEL_16:
+    BiLogMessage(4, L"BiCreateEfiEntry failed %x", (unsigned int)SavedBootEntry);
+    goto LABEL_17;
+  }
+LABEL_7:
+  SavedBootEntry = BiAddBootEntry(v3, &v13);
+  if ( SavedBootEntry < 0 )
+    goto LABEL_16;
+  BiLogMessage(2, L"Created boot entry %d '%ws' using cached variable", v13, (char *)v3 + v3[4]);
+  v3[2] = v13;
+  v8 = v13;
+  *(_DWORD *)(a2 + 48) |= 1u;
+  *(_DWORD *)(a2 + 32) = v8;
+  *(_QWORD *)(a2 + 40) = v3;
+  SavedBootEntry = BiSaveFirmwareVariable(v6, v9, v3, v3[1]);
+  if ( SavedBootEntry < 0 )
+    goto LABEL_16;
+  SavedBootEntry = BiUpdateEfiEntry(a1, a2);
+  if ( SavedBootEntry < 0 )
+    goto LABEL_16;
+LABEL_17:
+  if ( v6 )
+    BcdCloseObject(v6);
+  if ( (*(_DWORD *)(a2 + 48) & 1) == 0 && v3 )
+    ExFreePoolWithTag(v3, 0x4B444342u);
+  return (unsigned int)SavedBootEntry;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1408305b4  mov     [rsp-28h+arg_0], rbx
+0x1408305b9  push    rbp
+0x1408305ba  push    rsi
+0x1408305bb  push    rdi
+0x1408305bc  push    r14
+0x1408305be  push    r15
+0x1408305c0  mov     rbp, rsp
+0x1408305c3  sub     rsp, 20h
+0x1408305c7  mov     rsi, rdx
+0x1408305ca  mov     [rbp+arg_8], 0
+0x1408305d1  xor     edi, edi
+0x1408305d3  mov     [rbp+arg_18], 0
+0x1408305db  add     rdx, 10h
+0x1408305df  mov     [rbp+P], rdi
+0x1408305e3  lea     r8, [rbp+arg_18]
+0x1408305e7  mov     r15, rcx
+0x1408305ea  call    BcdOpenObject
+0x1408305ef  mov     r14, [rbp+arg_18]
+0x1408305f3  mov     ebx, eax
+0x1408305f5  test    eax, eax
+0x1408305f7  js      loc_140830727
+0x1408305fd  mov     eax, [rsi+30h]
+0x140830600  lea     rdx, [rbp+P]
+0x140830604  mov     rcx, r14
+0x140830607  test    al, 2
+0x140830609  jz      loc_1408306B7
+0x14083060f  call    BiGetSavedBootEntry
+0x140830614  mov     ebx, eax
+0x140830616  test    eax, eax
+0x140830618  js      loc_140830723
+0x14083061e  mov     eax, [rsi+30h]
+0x140830621  mov     rdi, [rbp+P]
+0x140830625  test    al, 8
+0x140830627  jnz     short loc_140830642
+0x140830629  mov     rdx, r14
+0x14083062c  mov     rcx, rdi
+0x14083062f  call    BiUpdateObjectReferenceInEfiEntry
+0x140830634  mov     ebx, eax
+0x140830636  test    eax, eax
+0x140830638  js      loc_140830727
+0x14083063e  or      dword ptr [rsi+30h], 20h
+0x140830642  lea     rdx, [rbp+arg_8]
+0x140830646  mov     rcx, rdi
+0x140830649  call    BiAddBootEntry
+0x14083064e  mov     ebx, eax
+0x140830650  test    eax, eax
+0x140830652  js      loc_140830727
+0x140830658  mov     r9d, [rdi+10h]
+0x14083065c  lea     rdx, aCreatedBootEnt; "Created boot entry %d '%ws' using cache"...
+0x140830663  mov     r8d, [rbp+arg_8]
+0x140830667  add     r9, rdi
+0x14083066a  mov     ecx, 2
+0x14083066f  call    BiLogMessage
+0x140830674  mov     ecx, [rbp+arg_8]
+0x140830677  mov     r8, rdi
+0x14083067a  mov     [rdi+8], ecx
+0x14083067d  mov     rcx, r14
+0x140830680  mov     eax, [rbp+arg_8]
+0x140830683  or      dword ptr [rsi+30h], 1
+0x140830687  mov     [rsi+20h], eax
+0x14083068a  mov     [rsi+28h], rdi
+0x14083068e  mov     r9d, [rdi+4]
+0x140830692  call    BiSaveFirmwareVariable
+0x140830697  mov     ebx, eax
+0x140830699  test    eax, eax
+0x14083069b  js      loc_140830727
+0x1408306a1  mov     rdx, rsi
+0x1408306a4  mov     rcx, r15
+0x1408306a7  call    BiUpdateEfiEntry
+0x1408306ac  mov     ebx, eax
+0x1408306ae  test    eax, eax
+0x1408306b0  js      short loc_140830727
+0x1408306b2  jmp     loc_14083073B
+0x1408306b7  call    BiCreateBootEntry
+0x1408306bc  mov     ebx, eax
+0x1408306be  test    eax, eax
+0x1408306c0  js      short loc_140830723
+0x1408306c2  mov     rdi, [rbp+P]
+0x1408306c6  lea     rdx, [rbp+arg_8]
+0x1408306ca  mov     rcx, rdi
+0x1408306cd  call    BiAddBootEntry
+0x1408306d2  mov     ebx, eax
+0x1408306d4  test    eax, eax
+0x1408306d6  js      short loc_140830727
+0x1408306d8  mov     r9d, [rdi+10h]
+0x1408306dc  lea     rdx, aCreatedNewBoot; "Created new boot entry %d '%ws'"
+0x1408306e3  mov     r8d, [rbp+arg_8]
+0x1408306e7  add     r9, rdi
+0x1408306ea  mov     ecx, 2
+0x1408306ef  call    BiLogMessage
+0x1408306f4  mov     ecx, [rbp+arg_8]
+0x1408306f7  mov     r8, rdi
+0x1408306fa  mov     [rdi+8], ecx
+0x1408306fd  mov     rcx, r14
+0x140830700  mov     eax, [rbp+arg_8]
+0x140830703  or      dword ptr [rsi+30h], 21h
+0x140830707  mov     [rsi+20h], eax
+0x14083070a  mov     [rsi+28h], rdi
+0x14083070e  mov     r9d, [rdi+4]
+0x140830712  call    BiSaveFirmwareVariable
+0x140830717  mov     ebx, eax
+0x140830719  test    eax, eax
+0x14083071b  js      short loc_140830727
+0x14083071d  or      dword ptr [rsi+30h], 2
+0x140830721  jmp     short loc_14083073B
+0x140830723  mov     rdi, [rbp+P]
+0x140830727  mov     r8d, ebx
+0x14083072a  lea     rdx, aBicreateefient; "BiCreateEfiEntry failed %x"
+0x140830731  mov     ecx, 4
+0x140830736  call    BiLogMessage
+0x14083073b  test    r14, r14
+0x14083073e  jz      short loc_140830748
+0x140830740  mov     rcx, r14
+0x140830743  call    BcdCloseObject
+0x140830748  mov     eax, [rsi+30h]
+0x14083074b  test    al, 1
+0x14083074d  jnz     short loc_140830761
+0x14083074f  test    rdi, rdi
+0x140830752  jz      short loc_140830761
+0x140830754  mov     edx, 4B444342h; Tag
+0x140830759  mov     rcx, rdi; P
+0x14083075c  call    ExFreePoolWithTag
+0x140830761  mov     eax, ebx
+0x140830763  mov     rbx, [rsp+20h+arg_0]
+0x140830768  add     rsp, 20h
+0x14083076c  pop     r15
+0x14083076e  pop     r14
+0x140830770  pop     rdi
+0x140830771  pop     rsi
+0x140830772  pop     rbp
+0x140830773  retn
+```

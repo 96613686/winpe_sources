@@ -1,0 +1,244 @@
+# AslpFileGetImageResourceDirectoryRoot
+
+- ea: `0x14082a16c`
+- end: `0x14082a334`
+- name: `AslpFileGetImageResourceDirectoryRoot`
+- size: `456`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `5`
+- tags: `authz_impersonation, service_task`
+
+## callers
+
+- `0x14082af60`
+
+## callees
+
+- `0x1406cba0c`
+- `0x14082a02c`
+- `0x14082a16c`
+- `0x14082c0d4`
+- `0x14097d158`
+
+## string_xrefs
+
+- `0x14082a230`: `Image PE optional header outside image`
+- `0x14082a2fc`: `AslpFileGetImageNtHeader failed to get image headers or headers are out of bounds [%x]`
+- `0x14082a1a5`: `AslpFileGetImageResourceDirectoryRoot`
+- `0x14082a23c`: `AslpFileGetImageResourceDirectoryRoot`
+- `0x14082a30d`: `AslpFileGetImageResourceDirectoryRoot`
+
+## pseudocode
+
+```c
+__int64 __fastcall AslpFileGetImageResourceDirectoryRoot(__int64 *a1, __int64 a2, __int64 a3)
+{
+  bool v3; // zf
+  __int64 v7; // rsi
+  __int64 v8; // rbp
+  int ImageNtHeader; // ebx
+  __int64 v10; // r8
+  __int64 v11; // r9
+  __int64 v12; // r11
+  __int64 v13; // rcx
+  __int16 v14; // ax
+  unsigned int *v15; // r11
+  int v16; // r8d
+  unsigned int v17; // eax
+  _DWORD *v18; // rbx
+  __int64 v19; // rcx
+  __int64 v20; // [rsp+58h] [rbp+10h] BYREF
+
+  v20 = a2;
+  v3 = *(_DWORD *)(a3 + 64) == 6;
+  v20 = 0;
+  if ( !v3 )
+  {
+    AslLogCallPrintf(
+      1,
+      (unsigned int)"AslpFileGetImageResourceDirectoryRoot",
+      1924,
+      (unsigned int)"File is not a PE image");
+    return 3221225659LL;
+  }
+  v7 = *(_QWORD *)(a3 + 32);
+  v8 = *(_QWORD *)(a3 + 40);
+  ImageNtHeader = AslpFileGetImageNtHeader(&v20, a3);
+  if ( ImageNtHeader < 0 )
+    goto LABEL_26;
+  if ( !(unsigned __int8)AslpMemoryCheckBounds(v20, 8, v7, v8) )
+  {
+    ImageNtHeader = -1073741266;
+LABEL_26:
+    AslLogCallPrintf(
+      1,
+      (unsigned int)"AslpFileGetImageResourceDirectoryRoot",
+      1937,
+      (unsigned int)"AslpFileGetImageNtHeader failed to get image headers or headers are out of bounds [%x]");
+    return (unsigned int)ImageNtHeader;
+  }
+  v13 = v12 + 24;
+  v14 = *(_WORD *)(v12 + 24);
+  if ( v14 != 267 )
+  {
+    if ( v14 == 523 && *(_WORD *)(v12 + 20) >= 0x70u )
+    {
+      if ( !(unsigned __int8)AslpMemoryCheckBounds(v13, 240, v10, v11) )
+      {
+        v16 = 1971;
+        goto LABEL_9;
+      }
+      v17 = v15[33];
+      v18 = v15 + 38;
+      goto LABEL_16;
+    }
+    return 3221225595LL;
+  }
+  if ( *(_WORD *)(v12 + 20) < 0x60u )
+    return 3221225595LL;
+  if ( !(unsigned __int8)AslpMemoryCheckBounds(v13, 224, v10, v11) )
+  {
+    v16 = 1955;
+LABEL_9:
+    AslLogCallPrintf(
+      1,
+      (unsigned int)"AslpFileGetImageResourceDirectoryRoot",
+      v16,
+      (unsigned int)"Image PE optional header outside image");
+    return 3221226030LL;
+  }
+  v17 = v15[29];
+  v18 = v15 + 34;
+LABEL_16:
+  if ( v17 <= 2 || v18[1] < 0x10u || !*v18 )
+    return 3221225609LL;
+  v19 = AslpImageRvaToVa(v15, a3);
+  if ( !v19 || !(unsigned __int8)AslpMemoryCheckBounds(v19, (unsigned int)v18[1], v7, v8) )
+    return v19 != 0 ? -1073741266 : -1073741687;
+  *a1 = v19;
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14082a16c  mov     rax, rsp
+0x14082a16f  mov     [rax+8], rbx
+0x14082a173  mov     [rax+18h], rbp
+0x14082a177  mov     [rax+10h], rdx
+0x14082a17b  push    rsi
+0x14082a17c  push    rdi
+0x14082a17d  push    r14
+0x14082a17f  sub     rsp, 30h
+0x14082a183  cmp     dword ptr [r8+40h], 6
+0x14082a188  mov     rdi, r8
+0x14082a18b  mov     r14, rcx
+0x14082a18e  mov     qword ptr [rax+10h], 0
+0x14082a196  jz      short loc_14082A1C0
+0x14082a198  lea     r9, aFileIsNotAPeIm; "File is not a PE image"
+0x14082a19f  mov     r8d, 784h
+0x14082a1a5  lea     rdx, aAslpfilegetima_0; "AslpFileGetImageResourceDirectoryRoot"
+0x14082a1ac  mov     ecx, 1
+0x14082a1b1  call    AslLogCallPrintf
+0x14082a1b6  mov     eax, 0C00000BBh
+0x14082a1bb  jmp     loc_14082A320
+0x14082a1c0  mov     rsi, [r8+20h]
+0x14082a1c4  lea     rcx, [rsp+48h+arg_8]
+0x14082a1c9  mov     rbp, [r8+28h]
+0x14082a1cd  mov     rdx, rdi
+0x14082a1d0  call    AslpFileGetImageNtHeader
+0x14082a1d5  mov     ebx, eax
+0x14082a1d7  test    eax, eax
+0x14082a1d9  js      loc_14082A2FC
+0x14082a1df  mov     r11, [rsp+48h+arg_8]
+0x14082a1e4  mov     r9, rbp
+0x14082a1e7  mov     rcx, r11
+0x14082a1ea  mov     r8, rsi
+0x14082a1ed  mov     edx, 8
+0x14082a1f2  call    AslpMemoryCheckBounds
+0x14082a1f7  test    al, al
+0x14082a1f9  jz      loc_14082A2F7
+0x14082a1ff  lea     rcx, [r11+18h]
+0x14082a203  mov     edx, 10Bh
+0x14082a208  movzx   eax, word ptr [rcx]
+0x14082a20b  cmp     ax, dx
+0x14082a20e  jnz     short loc_14082A25F
+0x14082a210  cmp     word ptr [r11+14h], 60h ; '`'
+0x14082a216  jb      loc_14082A2F0
+0x14082a21c  mov     edx, 0E0h
+0x14082a221  call    AslpMemoryCheckBounds
+0x14082a226  test    al, al
+0x14082a228  jnz     short loc_14082A252
+0x14082a22a  mov     r8d, 7A3h
+0x14082a230  lea     r9, aImagePeOptiona; "Image PE optional header outside image"
+0x14082a237  mov     ecx, 1
+0x14082a23c  lea     rdx, aAslpfilegetima_0; "AslpFileGetImageResourceDirectoryRoot"
+0x14082a243  call    AslLogCallPrintf
+0x14082a248  mov     eax, 0C000022Eh
+0x14082a24d  jmp     loc_14082A320
+0x14082a252  mov     eax, [r11+74h]
+0x14082a256  lea     rbx, [r11+88h]
+0x14082a25d  jmp     short loc_14082A299
+0x14082a25f  mov     edx, 20Bh
+0x14082a264  cmp     ax, dx
+0x14082a267  jnz     loc_14082A2F0
+0x14082a26d  cmp     word ptr [r11+14h], 70h ; 'p'
+0x14082a273  jb      short loc_14082A2F0
+0x14082a275  mov     edx, 0F0h
+0x14082a27a  call    AslpMemoryCheckBounds
+0x14082a27f  test    al, al
+0x14082a281  jnz     short loc_14082A28B
+0x14082a283  mov     r8d, 7B3h
+0x14082a289  jmp     short loc_14082A230
+0x14082a28b  mov     eax, [r11+84h]
+0x14082a292  lea     rbx, [r11+98h]
+0x14082a299  cmp     eax, 2
+0x14082a29c  jbe     short loc_14082A2E9
+0x14082a29e  cmp     dword ptr [rbx+4], 10h
+0x14082a2a2  jb      short loc_14082A2E9
+0x14082a2a4  mov     r8d, [rbx]
+0x14082a2a7  test    r8d, r8d
+0x14082a2aa  jz      short loc_14082A2E9
+0x14082a2ac  mov     rdx, rdi
+0x14082a2af  mov     rcx, r11
+0x14082a2b2  call    AslpImageRvaToVa
+0x14082a2b7  mov     rcx, rax
+0x14082a2ba  test    rax, rax
+0x14082a2bd  jz      short loc_14082A2D8
+0x14082a2bf  mov     edx, [rbx+4]
+0x14082a2c2  mov     r9, rbp
+0x14082a2c5  mov     r8, rsi
+0x14082a2c8  call    AslpMemoryCheckBounds
+0x14082a2cd  test    al, al
+0x14082a2cf  jz      short loc_14082A2D8
+0x14082a2d1  mov     [r14], rcx
+0x14082a2d4  xor     eax, eax
+0x14082a2d6  jmp     short loc_14082A320
+0x14082a2d8  neg     rcx
+0x14082a2db  sbb     eax, eax
+0x14082a2dd  and     eax, 1A5h
+0x14082a2e2  add     eax, 0C0000089h
+0x14082a2e7  jmp     short loc_14082A320
+0x14082a2e9  mov     eax, 0C0000089h
+0x14082a2ee  jmp     short loc_14082A320
+0x14082a2f0  mov     eax, 0C000007Bh
+0x14082a2f5  jmp     short loc_14082A320
+0x14082a2f7  mov     ebx, 0C000022Eh
+0x14082a2fc  lea     r9, aAslpfilegetima_2; "AslpFileGetImageNtHeader failed to get "...
+0x14082a303  mov     [rsp+48h+var_28], ebx
+0x14082a307  mov     r8d, 791h
+0x14082a30d  lea     rdx, aAslpfilegetima_0; "AslpFileGetImageResourceDirectoryRoot"
+0x14082a314  mov     ecx, 1
+0x14082a319  call    AslLogCallPrintf
+0x14082a31e  mov     eax, ebx
+0x14082a320  mov     rbx, [rsp+48h+arg_0]
+0x14082a325  mov     rbp, [rsp+48h+arg_10]
+0x14082a32a  add     rsp, 30h
+0x14082a32e  pop     r14
+0x14082a330  pop     rdi
+0x14082a331  pop     rsi
+0x14082a332  retn
+```

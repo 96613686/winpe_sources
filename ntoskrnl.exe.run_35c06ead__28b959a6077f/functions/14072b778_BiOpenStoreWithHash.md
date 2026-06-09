@@ -1,0 +1,145 @@
+# BiOpenStoreWithHash
+
+- ea: `0x14072b778`
+- end: `0x14072b83e`
+- name: `BiOpenStoreWithHash`
+- size: `198`
+- prototype: ``
+- caller_count: `7`
+- callee_count: `5`
+- tags: ``
+
+## callers
+
+- `0x14072b760`
+- `0x140785e84`
+- `0x14078d038`
+- `0x14078e6b0`
+- `0x14079c02c`
+- `0x140aada88`
+- `0x140aea8e4`
+
+## callees
+
+- `0x14072b778`
+- `0x14098b544`
+- `0x14098b748`
+- `0x14098b954`
+- `0x14098be90`
+
+## string_xrefs
+
+- `0x14072b7b5`: `BcdOpenStore: Failed to acquire BCD sync Mutant. Store: %ws Flags: 0x%x Status: %x`
+- `0x14072b7c9`: `Opening store. Flags: 0x%x`
+- `0x14072b812`: `Failed to open system store. Status: %x`
+
+## pseudocode
+
+```c
+__int64 __fastcall BiOpenStoreWithHash(__int64 a1, unsigned int a2, __int64 a3, unsigned __int64 *a4)
+{
+  char v5; // di
+  int v7; // eax
+  unsigned int v8; // r10d
+  __int64 v10; // rcx
+  unsigned int v11; // ebx
+  unsigned int v12; // r8d
+  int v13; // eax
+
+  v5 = a2 & 1;
+  LOBYTE(a1) = a2 & 1;
+  v7 = BiAcquireBcdSyncMutant(a1);
+  if ( v7 >= 0 )
+  {
+    BiLogMessage(2, L"Opening store. Flags: 0x%x", a2);
+    if ( v5 )
+    {
+      v11 = -1073741811;
+    }
+    else
+    {
+      if ( ((unsigned __int8)a2 & (unsigned __int8)v10) != 0 )
+        BiLogMessage(v10, L"Store will be synchronized with firmware.", 0);
+      else
+        v12 = v10;
+      v13 = BiOpenSystemStore(a4, v12);
+      v11 = v13;
+      if ( v13 < 0 )
+        BiLogMessage(4, L"Failed to open system store. Status: %x", (unsigned int)v13);
+    }
+    LOBYTE(v10) = v5;
+    BiReleaseBcdSyncMutant(v10);
+    return v11;
+  }
+  else
+  {
+    BiLogMessage(
+      4,
+      L"BcdOpenStore: Failed to acquire BCD sync Mutant. Store: %ws Flags: 0x%x Status: %x",
+      L"NULL",
+      a2,
+      v7);
+    return v8;
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x14072b778  mov     [rsp+arg_0], rbx
+0x14072b77d  mov     [rsp+arg_8], rsi
+0x14072b782  push    rdi
+0x14072b783  sub     rsp, 30h
+0x14072b787  mov     dil, dl
+0x14072b78a  mov     rsi, r9
+0x14072b78d  and     dil, 1
+0x14072b791  mov     ebx, edx
+0x14072b793  mov     cl, dil
+0x14072b796  call    BiAcquireBcdSyncMutant
+0x14072b79b  mov     r10d, eax
+0x14072b79e  test    eax, eax
+0x14072b7a0  jns     short loc_14072B7C6
+0x14072b7a2  mov     r9d, ebx
+0x14072b7a5  mov     [rsp+38h+var_18], eax
+0x14072b7a9  lea     r8, aNull; "NULL"
+0x14072b7b0  mov     ecx, 4
+0x14072b7b5  lea     rdx, aBcdopenstoreFa; "BcdOpenStore: Failed to acquire BCD syn"...
+0x14072b7bc  call    BiLogMessage
+0x14072b7c1  mov     eax, r10d
+0x14072b7c4  jmp     short loc_14072B82D
+0x14072b7c6  mov     r8d, ebx
+0x14072b7c9  lea     rdx, aOpeningStoreFl; "Opening store. Flags: 0x%x"
+0x14072b7d0  mov     ecx, 2
+0x14072b7d5  call    BiLogMessage
+0x14072b7da  test    dil, dil
+0x14072b7dd  jz      short loc_14072B7E6
+0x14072b7df  mov     ebx, 0C000000Dh
+0x14072b7e4  jmp     short loc_14072B823
+0x14072b7e6  test    cl, bl
+0x14072b7e8  jnz     short loc_14072B7EF
+0x14072b7ea  mov     r8d, ecx
+0x14072b7ed  jmp     short loc_14072B7FE
+0x14072b7ef  xor     r8d, r8d
+0x14072b7f2  lea     rdx, aStoreWillBeSyn; "Store will be synchronized with firmwar"...
+0x14072b7f9  call    BiLogMessage
+0x14072b7fe  mov     edx, r8d
+0x14072b801  mov     rcx, rsi
+0x14072b804  call    BiOpenSystemStore
+0x14072b809  mov     ebx, eax
+0x14072b80b  test    eax, eax
+0x14072b80d  jns     short loc_14072B823
+0x14072b80f  mov     r8d, eax
+0x14072b812  lea     rdx, aFailedToOpenSy; "Failed to open system store. Status: %x"
+0x14072b819  mov     ecx, 4
+0x14072b81e  call    BiLogMessage
+0x14072b823  mov     cl, dil
+0x14072b826  call    BiReleaseBcdSyncMutant
+0x14072b82b  mov     eax, ebx
+0x14072b82d  mov     rbx, [rsp+38h+arg_0]
+0x14072b832  mov     rsi, [rsp+38h+arg_8]
+0x14072b837  add     rsp, 30h
+0x14072b83b  pop     rdi
+0x14072b83c  retn
+```

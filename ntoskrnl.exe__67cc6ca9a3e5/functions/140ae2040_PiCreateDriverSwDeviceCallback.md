@@ -1,0 +1,893 @@
+# PiCreateDriverSwDeviceCallback
+
+- ea: `0x140ae2040`
+- end: `0x140ae2a77`
+- name: `PiCreateDriverSwDeviceCallback`
+- size: `2615`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `26`
+- tags: `registry_config, broker_com_uri`
+
+## callees
+
+- `0x1403f2d50`
+- `0x140461498`
+- `0x14047f8a8`
+- `0x14053cf40`
+- `0x1406d9d70`
+- `0x1406daa70`
+- `0x1406f4880`
+- `0x140770a60`
+- `0x1408b9700`
+- `0x1408baec0`
+- `0x1408c1b40`
+- `0x1408cbf50`
+- `0x1408eeff0`
+- `0x140960138`
+- `0x140966310`
+- `0x14096bb00`
+- `0x1409737d4`
+- `0x14097499c`
+- `0x1409b0430`
+- `0x1409b3930`
+- `0x140a8a3a8`
+- `0x140ae2040`
+- `0x140afe164`
+- `0x140bae410`
+- `0x140bae8c0`
+- `0x140bae8e0`
+
+## string_xrefs
+
+- `0x140ae26b9`: `Security`
+- `0x140ae217a`: `CompatibleIds`
+
+## pseudocode
+
+```c
+__int64 __fastcall PiCreateDriverSwDeviceCallback(__int64 a1, __int64 a2, const WCHAR *a3, _DWORD *a4)
+{
+  __int64 v5; // rcx
+  unsigned int v6; // r12d
+  _DWORD *v7; // r13
+  ULONG v8; // r15d
+  WCHAR *Pool2; // rdi
+  void *v10; // rsi
+  __int64 v11; // rax
+  int RegistryValues; // ebx
+  int v13; // r8d
+  PCWSTR v14; // r15
+  int v15; // ecx
+  __int64 v17; // r13
+  __int64 v18; // r14
+  ULONG v19; // r15d
+  const wchar_t *i; // rsi
+  __int64 v21; // rax
+  const WCHAR *v22; // rcx
+  int RegistryValue; // eax
+  PVOID v24; // r12
+  __int64 v25; // rax
+  NTSTATUS v26; // eax
+  int v27; // r15d
+  unsigned int v28; // r14d
+  char *v29; // rsi
+  int GenericStorePropertyKeys; // eax
+  unsigned int v31; // eax
+  unsigned int v32; // r15d
+  _QWORD *v33; // r14
+  unsigned int v34; // r13d
+  __int64 v35; // r12
+  char *v36; // rcx
+  __int128 v37; // xmm0
+  unsigned int v38; // eax
+  void *v39; // rcx
+  __int64 v40; // rax
+  void *v41; // rcx
+  ULONG v42; // [rsp+20h] [rbp-E0h]
+  char v43[8]; // [rsp+28h] [rbp-D8h]
+  unsigned int v44; // [rsp+70h] [rbp-90h] BYREF
+  PCWSTR SourceString; // [rsp+78h] [rbp-88h]
+  unsigned int v46; // [rsp+80h] [rbp-80h]
+  _DWORD *v47; // [rsp+88h] [rbp-78h]
+  _DWORD *v48; // [rsp+90h] [rbp-70h]
+  ULONG HashValue; // [rsp+98h] [rbp-68h] BYREF
+  int v50; // [rsp+9Ch] [rbp-64h] BYREF
+  char *v51; // [rsp+A0h] [rbp-60h] BYREF
+  HANDLE Handle; // [rsp+A8h] [rbp-58h] BYREF
+  int v53; // [rsp+B0h] [rbp-50h] BYREF
+  __int64 v54; // [rsp+B8h] [rbp-48h]
+  UNICODE_STRING UnicodeString; // [rsp+C0h] [rbp-40h] BYREF
+  UNICODE_STRING v56; // [rsp+D0h] [rbp-30h] BYREF
+  UNICODE_STRING GuidString; // [rsp+E0h] [rbp-20h] BYREF
+  PVOID v58; // [rsp+F0h] [rbp-10h] BYREF
+  UNICODE_STRING String2; // [rsp+F8h] [rbp-8h] BYREF
+  UNICODE_STRING v60; // [rsp+108h] [rbp+8h] BYREF
+  UNICODE_STRING v61; // [rsp+118h] [rbp+18h] BYREF
+  UNICODE_STRING DestinationString; // [rsp+128h] [rbp+28h] BYREF
+  PVOID P[2]; // [rsp+138h] [rbp+38h] BYREF
+  __int64 v64; // [rsp+148h] [rbp+48h]
+  PCWCH String1[2]; // [rsp+150h] [rbp+50h]
+  GUID Guid; // [rsp+160h] [rbp+60h] BYREF
+  int v67[4]; // [rsp+170h] [rbp+70h] BYREF
+  const wchar_t *v68; // [rsp+180h] [rbp+80h]
+  UNICODE_STRING *p_UnicodeString; // [rsp+188h] [rbp+88h]
+  int v70; // [rsp+190h] [rbp+90h]
+  int v71; // [rsp+1B0h] [rbp+B0h]
+  const wchar_t *v72; // [rsp+1B8h] [rbp+B8h]
+  UNICODE_STRING *v73; // [rsp+1C0h] [rbp+C0h]
+  int v74; // [rsp+1C8h] [rbp+C8h]
+  int v75; // [rsp+1E8h] [rbp+E8h]
+  const wchar_t *v76; // [rsp+1F0h] [rbp+F0h]
+  UNICODE_STRING *p_GuidString; // [rsp+1F8h] [rbp+F8h]
+  int v78; // [rsp+200h] [rbp+100h]
+  int v79; // [rsp+220h] [rbp+120h]
+  const wchar_t *v80; // [rsp+228h] [rbp+128h]
+  int *v81; // [rsp+230h] [rbp+130h]
+  int v82; // [rsp+238h] [rbp+138h]
+  int v83; // [rsp+258h] [rbp+158h]
+  const wchar_t *v84; // [rsp+260h] [rbp+160h]
+  UNICODE_STRING *v85; // [rsp+268h] [rbp+168h]
+  int v86; // [rsp+270h] [rbp+170h]
+  int v87; // [rsp+290h] [rbp+190h]
+  const wchar_t *v88; // [rsp+298h] [rbp+198h]
+  UNICODE_STRING *v89; // [rsp+2A0h] [rbp+1A0h]
+  int v90; // [rsp+2A8h] [rbp+1A8h]
+
+  v64 = a1;
+  v48 = a4;
+  SourceString = a3;
+  v5 = 0;
+  v53 = 1;
+  v6 = 0;
+  Handle = 0;
+  v50 = 0;
+  v7 = a4;
+  LODWORD(v51) = 0;
+  HashValue = 0;
+  v47 = 0;
+  v8 = 0;
+  v58 = 0;
+  Pool2 = 0;
+  v44 = 0;
+  v10 = 0;
+  UnicodeString = 0;
+  v56 = 0;
+  GuidString = 0;
+  Guid = 0;
+  v60 = 0;
+  v61 = 0;
+  String2 = 0;
+  DestinationString = 0;
+  *(_OWORD *)P = 0;
+  if ( a1 )
+  {
+    v11 = *(_QWORD *)(a1 + 224);
+    if ( v11 )
+      v5 = *(_QWORD *)(v11 + 8);
+  }
+  RegistryValues = RegRtlOpenKeyTransacted(a2, a3, 0, 131097, &Handle, v5);
+  if ( RegistryValues < 0 )
+    goto LABEL_27;
+  memset_0(v67, 0, 0x188u);
+  v82 = 0x4000000;
+  v67[2] = 304;
+  v70 = 117440512;
+  v68 = L"HardwareIds";
+  v71 = 304;
+  p_UnicodeString = &UnicodeString;
+  v74 = 117440512;
+  v72 = L"CompatibleIds";
+  v75 = 288;
+  v73 = &v56;
+  v78 = 0x1000000;
+  v76 = L"ContainerId";
+  p_GuidString = &GuidString;
+  v80 = L"Capabilities";
+  v81 = &v50;
+  v84 = L"Description";
+  v85 = &v60;
+  v88 = L"LocationInfo";
+  v79 = 288;
+  v83 = 288;
+  v86 = 0x1000000;
+  v87 = 288;
+  v90 = 0x1000000;
+  v89 = &v61;
+  RegistryValues = RtlpQueryRegistryValues(3221225472LL, (const WCHAR *)Handle, v67, 0, v42, 1);
+  if ( RegistryValues < 0 )
+    goto LABEL_94;
+  if ( UnicodeString.Buffer && UnicodeString.Length <= 2u )
+    RtlFreeAnsiString(&UnicodeString);
+  if ( v56.Buffer && v56.Length <= 2u )
+    RtlFreeAnsiString(&v56);
+  if ( !GuidString.Buffer )
+    goto LABEL_17;
+  if ( GuidString.Length < 2u )
+    RtlFreeAnsiString(&GuidString);
+  if ( !GuidString.Buffer || RtlGUIDFromString(&GuidString, &Guid) < 0 )
+LABEL_17:
+    Guid = 0;
+  if ( v60.Buffer && v60.Length < 2u )
+    RtlFreeAnsiString(&v60);
+  if ( v61.Buffer && v61.Length < 2u )
+    RtlFreeAnsiString(&v61);
+  if ( !UnicodeString.Buffer && !v56.Buffer )
+  {
+    RegistryValues = -1073741637;
+    goto LABEL_27;
+  }
+  v17 = *(_QWORD *)v7;
+  String1[0] = UnicodeString.Buffer;
+  v54 = 0x300000002LL;
+  v18 = -1;
+  String1[1] = v56.Buffer;
+  v46 = 0;
+  while ( (PVOID)v17 != IopRootDeviceNode )
+  {
+    if ( *(PDRIVER_OBJECT *)(*(_QWORD *)(v17 + 32) + 8LL) == PiSwDeviceDriverObject )
+    {
+      RtlInitUnicodeString(&DestinationString, L"SWD\\");
+      if ( RtlPrefixUnicodeString(&DestinationString, (PCUNICODE_STRING)(v17 + 40), 1u) )
+      {
+        RtlInitUnicodeString(
+          &String2,
+          (PCWSTR)(*(_QWORD *)(v17 + 48) + 2 * ((unsigned __int64)DestinationString.Length >> 1)));
+        RtlInitUnicodeString(&DestinationString, L"DRIVERENUM");
+        if ( RtlPrefixUnicodeString(&DestinationString, &String2, 1u) )
+        {
+          if ( String2.Buffer[(unsigned __int64)DestinationString.Length >> 1] == 92 )
+          {
+            if ( !v8 )
+            {
+              RegistryValues = PnpGenerateDeviceIdsHash(UnicodeString.Buffer, v56.Buffer, &v51);
+              if ( RegistryValues < 0 )
+                goto LABEL_93;
+              if ( (v50 & 8) != 0 )
+              {
+                v19 = (unsigned int)v51;
+              }
+              else
+              {
+                RtlInitUnicodeString(&String2, &PiSwGenericRawCompatibleId);
+                RegistryValues = RtlHashUnicodeString(&String2, 1u, 0, &HashValue);
+                if ( RegistryValues < 0 )
+                  goto LABEL_93;
+                v19 = HashValue + (_DWORD)v51;
+              }
+              RtlInitUnicodeString(&String2, &PiSwGenericCompatibleId);
+              RegistryValues = RtlHashUnicodeString(&String2, 1u, 0, &HashValue);
+              if ( RegistryValues < 0 )
+                goto LABEL_93;
+              v8 = HashValue + v19;
+              LODWORD(v51) = v8;
+            }
+            if ( *(_DWORD *)(v17 + 684) == v8 )
+            {
+              if ( Pool2
+                || (v46 = 2048, LODWORD(v10) = 2048, (Pool2 = (WCHAR *)ExAllocatePool2(256, 2048, 538996816)) != 0) )
+              {
+                do
+                {
+                  v44 = (unsigned int)v10;
+                  if ( (int)CmGetDeviceRegProp(
+                              PiPnpRtlCtx,
+                              *(_QWORD *)(v17 + 48),
+                              0,
+                              *((_DWORD *)&v54 + v6),
+                              (__int64)&v53,
+                              (__int64)Pool2,
+                              (__int64)&v44,
+                              0) < 0
+                    || v53 != 7
+                    || v44 < 2 )
+                  {
+                    *Pool2 = 0;
+                  }
+                  if ( v6 == 1 )
+                  {
+                    for ( i = Pool2; *i; i += v21 + 1 )
+                    {
+                      if ( !wcsicmp(i, &PiSwGenericRawCompatibleId) || !wcsicmp(i, &PiSwGenericCompatibleId) )
+                      {
+                        *i = 0;
+                        break;
+                      }
+                      v21 = -1;
+                      do
+                        ++v21;
+                      while ( i[v21] );
+                    }
+                    LODWORD(v10) = v46;
+                  }
+                  v22 = String1[v6];
+                  if ( v22 )
+                  {
+                    if ( !(unsigned __int8)PnpCompareMultiSz(v22, Pool2, 1u) )
+                      goto LABEL_87;
+                  }
+                  else if ( *Pool2 )
+                  {
+LABEL_87:
+                    v6 = 0;
+                    goto LABEL_88;
+                  }
+                  ++v6;
+                }
+                while ( v6 < 2 );
+                v10 = v47;
+                RegistryValues = -1073740028;
+                v7 = v48;
+LABEL_27:
+                v14 = SourceString;
+                goto LABEL_28;
+              }
+              RegistryValues = -1073741670;
+LABEL_93:
+              v10 = v47;
+              goto LABEL_94;
+            }
+          }
+        }
+      }
+    }
+LABEL_88:
+    v17 = *(_QWORD *)(v17 + 16);
+  }
+  RegistryValue = IopGetRegistryValue(Handle);
+  v10 = v47;
+  RegistryValues = RegistryValue;
+  if ( RegistryValue < 0 )
+  {
+    if ( RegistryValue == -1073741772 )
+    {
+      v54 = 0;
+      v46 = 0;
+      goto LABEL_101;
+    }
+LABEL_94:
+    v7 = v48;
+    goto LABEL_27;
+  }
+  if ( v47[1] != 3 || (v46 = v47[3], v46 < 0x28) )
+  {
+    RegistryValues = -1073741823;
+    goto LABEL_94;
+  }
+  v54 = (__int64)v47 + (unsigned int)v47[2];
+LABEL_101:
+  v7 = v48;
+  if ( *(PVOID *)v48 == IopRootDeviceNode )
+  {
+    v14 = SourceString;
+    if ( !RtlCreateUnicodeString((PUNICODE_STRING)P, SourceString) )
+    {
+      RegistryValues = -1073741670;
+      goto LABEL_28;
+    }
+LABEL_110:
+    v27 = v64;
+    v28 = 0;
+    v29 = 0;
+    while ( 1 )
+    {
+      GenericStorePropertyKeys = PnpGetGenericStorePropertyKeys(
+                                   v27,
+                                   (_DWORD)Handle,
+                                   0,
+                                   0,
+                                   (__int64)v29,
+                                   v28,
+                                   (__int64)&v44);
+      RegistryValues = GenericStorePropertyKeys;
+      if ( GenericStorePropertyKeys != -1073741789 )
+        break;
+      v31 = v44;
+      if ( v44 <= v28 )
+      {
+        RegistryValues = -1073741595;
+        goto LABEL_142;
+      }
+      if ( v29 )
+      {
+        ExFreePoolWithTag(v29, 0);
+        v31 = v44;
+      }
+      v28 = v31;
+      v29 = (char *)ExAllocatePool2(256, 20LL * v31, 538996816);
+      if ( !v29 )
+      {
+        v10 = v47;
+        RegistryValues = -1073741670;
+        goto LABEL_27;
+      }
+    }
+    if ( GenericStorePropertyKeys < 0 )
+      goto LABEL_142;
+    v32 = v44;
+    if ( v44 )
+    {
+      v33 = (_QWORD *)ExAllocatePool2(256, 48LL * v44, 538996816);
+      if ( !v33 )
+      {
+        RegistryValues = -1073741670;
+LABEL_142:
+        if ( v29 )
+          ExFreePoolWithTag(v29, 0);
+        goto LABEL_93;
+      }
+      v34 = 0;
+LABEL_125:
+      v35 = 6LL * v34;
+      v36 = &v29[20 * v34];
+      v37 = *(_OWORD *)v36;
+      v51 = v36;
+      *(_OWORD *)&v33[v35] = v37;
+      v33[v35 + 2] = *((unsigned int *)v36 + 4);
+      while ( 1 )
+      {
+        RegistryValues = PnpGetGenericStoreProperty(
+                           v64,
+                           (_DWORD)Handle,
+                           0,
+                           (_DWORD)v36,
+                           (__int64)&v33[v35 + 4],
+                           v33[v35 + 5],
+                           HIDWORD(v33[v35 + 4]),
+                           (__int64)&v44);
+        v38 = v44;
+        if ( RegistryValues != -1073741789 )
+        {
+          HIDWORD(v33[v35 + 4]) = v44;
+          v6 = 0;
+          if ( RegistryValues < 0 )
+            goto LABEL_136;
+          if ( ++v34 >= v32 )
+          {
+            v7 = v48;
+            goto LABEL_135;
+          }
+          goto LABEL_125;
+        }
+        if ( v44 <= HIDWORD(v33[v35 + 4]) )
+          break;
+        v39 = (void *)v33[v35 + 5];
+        if ( v39 )
+        {
+          ExFreePoolWithTag(v39, 0);
+          v38 = v44;
+        }
+        HIDWORD(v33[v35 + 4]) = v38;
+        v40 = ExAllocatePool2(256, v44, 538996816);
+        v33[v35 + 5] = v40;
+        if ( !v40 )
+        {
+          RegistryValues = -1073741670;
+          goto LABEL_145;
+        }
+        LODWORD(v36) = (_DWORD)v51;
+      }
+      RegistryValues = -1073741595;
+LABEL_145:
+      v6 = 0;
+    }
+    else
+    {
+      v33 = 0;
+LABEL_135:
+      RegistryValues = PiSwStartCreate(
+                         (unsigned int)L"DRIVERENUM",
+                         *(_QWORD *)(*(_QWORD *)v7 + 48LL),
+                         P[1],
+                         UnicodeString.Buffer,
+                         (__int64)v56.Buffer,
+                         (unsigned __int64)&Guid & -(__int64)(GuidString.Buffer != 0),
+                         v50,
+                         (__int64)v60.Buffer,
+                         (__int64)v61.Buffer,
+                         v54,
+                         v46,
+                         (__int64)v33,
+                         v32);
+LABEL_136:
+      if ( !v33 )
+        goto LABEL_142;
+    }
+    if ( v32 )
+    {
+      do
+      {
+        v41 = (void *)v33[6 * v6 + 5];
+        if ( v41 )
+          ExFreePoolWithTag(v41, 0);
+        ++v6;
+      }
+      while ( v6 < v32 );
+    }
+    ExFreePoolWithTag(v33, 0);
+    goto LABEL_142;
+  }
+  RegistryValues = PipMakeGloballyUniqueId(*(_QWORD *)(*(_QWORD *)v48 + 32LL), 0, &v58);
+  if ( RegistryValues < 0 )
+    goto LABEL_27;
+  v24 = v58;
+  v25 = -1;
+  do
+    ++v25;
+  while ( *((_WORD *)v58 + v25) );
+  v14 = SourceString;
+  do
+    ++v18;
+  while ( SourceString[v18] );
+  WORD1(P[0]) = 2 * (v25 + 2 + v18);
+  P[1] = (PVOID)ExAllocatePool2(256, WORD1(P[0]), 1735554131);
+  if ( !P[1] )
+  {
+    RegistryValues = -1073741670;
+    goto LABEL_28;
+  }
+  v26 = RtlUnicodeStringPrintf((PUNICODE_STRING)P, L"%ws&%ws", v14, v24);
+  v6 = 0;
+  RegistryValues = v26;
+  if ( v26 >= 0 )
+    goto LABEL_110;
+LABEL_28:
+  if ( P[1] )
+    ExFreePool(P[1]);
+  if ( v58 )
+    ExFreePoolWithTag(v58, 0);
+  if ( UnicodeString.Buffer )
+  {
+    ExFreePool(UnicodeString.Buffer);
+    UnicodeString = 0;
+  }
+  if ( v56.Buffer )
+  {
+    ExFreePool(v56.Buffer);
+    v56 = 0;
+  }
+  if ( GuidString.Buffer )
+  {
+    ExFreePool(GuidString.Buffer);
+    GuidString = 0;
+  }
+  if ( v60.Buffer )
+  {
+    ExFreePool(v60.Buffer);
+    v60 = 0;
+  }
+  if ( v61.Buffer )
+  {
+    ExFreePool(v61.Buffer);
+    v61 = 0;
+  }
+  if ( v10 )
+    ExFreePoolWithTag(v10, 0);
+  if ( Pool2 )
+    ExFreePoolWithTag(Pool2, 0);
+  v15 = (int)Handle;
+  if ( Handle )
+    ZwClose(Handle);
+  if ( RegistryValues < 0 && (byte_140EDA02C & 4) != 0 )
+  {
+    *(_DWORD *)v43 = RegistryValues;
+    McTemplateK0zzd_EtwWriteTransfer(
+      v15,
+      (unsigned int)KMPnPEvt_CreateDriverSwDevice_Failure,
+      v13,
+      *(_QWORD *)(*(_QWORD *)v7 + 48LL),
+      (__int64)v14,
+      *(_QWORD *)v43);
+  }
+  if ( (int)v7[2] >= 0 )
+    v7[2] = RegistryValues;
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140ae2040  push    rbp
+0x140ae2042  push    rbx
+0x140ae2043  push    rsi
+0x140ae2044  push    rdi
+0x140ae2045  push    r12
+0x140ae2047  push    r13
+0x140ae2049  push    r14
+0x140ae204b  push    r15
+0x140ae204d  lea     rbp, [rsp-218h]
+0x140ae2055  sub     rsp, 318h
+0x140ae205c  mov     rax, cs:__security_cookie
+0x140ae2063  xor     rax, rsp
+0x140ae2066  mov     [rbp+250h+var_50], rax
+0x140ae206d  xorps   xmm0, xmm0
+0x140ae2070  mov     [rbp+250h+var_208], rcx
+0x140ae2074  xorps   xmm1, xmm1
+0x140ae2077  mov     [rbp+250h+var_2C0], r9
+0x140ae207b  mov     rax, rcx
+0x140ae207e  mov     [rsp+350h+SourceString], r8
+0x140ae2083  xor     ecx, ecx
+0x140ae2085  mov     [rbp+250h+var_2A0], 1
+0x140ae208c  xor     r12d, r12d
+0x140ae208f  mov     [rbp+250h+Handle], rcx
+0x140ae2093  mov     [rbp+250h+var_2B4], ecx
+0x140ae2096  mov     r13, r9
+0x140ae2099  mov     dword ptr [rbp+250h+var_2B0], ecx
+0x140ae209c  mov     r11, r8
+0x140ae209f  mov     [rbp+250h+HashValue], ecx
+0x140ae20a2  mov     r10, rdx
+0x140ae20a5  mov     [rbp+250h+var_2C8], rcx
+0x140ae20a9  mov     r15d, ecx
+0x140ae20ac  mov     [rbp+250h+var_260], rcx
+0x140ae20b0  mov     edi, ecx
+0x140ae20b2  mov     [rsp+350h+var_2E0], r12d
+0x140ae20b7  mov     esi, ecx
+0x140ae20b9  movups  xmmword ptr [rbp+250h+UnicodeString.Length], xmm0
+0x140ae20bd  movups  xmmword ptr [rbp+250h+var_280.Length], xmm1
+0x140ae20c1  movups  xmmword ptr [rbp+250h+GuidString.Length], xmm0
+0x140ae20c5  movups  xmmword ptr [rbp+250h+Guid.Data1], xmm1
+0x140ae20c9  movups  xmmword ptr [rbp+250h+var_248.Length], xmm0
+0x140ae20cd  movups  xmmword ptr [rbp+250h+var_238.Length], xmm1
+0x140ae20d1  movups  xmmword ptr [rbp+250h+String2.Length], xmm0
+0x140ae20d5  movups  xmmword ptr [rbp+250h+DestinationString.Length], xmm1
+0x140ae20d9  movups  xmmword ptr [rbp+250h+P], xmm0
+0x140ae20dd  test    rax, rax
+0x140ae20e0  jz      short loc_140AE20F2
+0x140ae20e2  mov     rax, [rax+0E0h]
+0x140ae20e9  test    rax, rax
+0x140ae20ec  jz      short loc_140AE20F2
+0x140ae20ee  mov     rcx, [rax+8]
+0x140ae20f2  mov     qword ptr [rsp+350h+var_328], rcx
+0x140ae20f7  lea     rax, [rbp+250h+Handle]
+0x140ae20fb  mov     rcx, r10
+0x140ae20fe  mov     qword ptr [rsp+350h+var_330], rax; ULONG
+0x140ae2103  mov     r9d, 20019h
+0x140ae2109  xor     r8d, r8d
+0x140ae210c  mov     rdx, r11
+0x140ae210f  call    _RegRtlOpenKeyTransacted
+0x140ae2114  mov     ebx, eax
+0x140ae2116  test    eax, eax
+0x140ae2118  js      loc_140AE22F1
+0x140ae211e  xor     edx, edx; Val
+0x140ae2120  lea     rcx, [rbp+250h+var_1E0]; void *
+0x140ae2124  mov     r8d, 188h; Size
+0x140ae212a  call    memset_0
+0x140ae212f  mov     edx, 130h
+0x140ae2134  mov     [rbp+250h+var_118], 4000000h
+0x140ae213e  mov     ecx, 7000000h
+0x140ae2143  mov     [rbp+250h+var_1D8], edx
+0x140ae2146  mov     [rbp+250h+var_1C0], ecx
+0x140ae214c  lea     rax, aHardwareids; "HardwareIds"
+0x140ae2153  mov     [rbp+250h+var_1D0], rax
+0x140ae215a  lea     r8, [rbp+250h+var_1E0]; int
+0x140ae215e  mov     [rbp+250h+var_1A0], edx
+0x140ae2164  lea     rax, [rbp+250h+UnicodeString]
+0x140ae2168  mov     [rbp+250h+var_1C8], rax
+0x140ae216f  mov     edx, 120h
+0x140ae2174  mov     [rbp+250h+var_188], ecx
+0x140ae217a  lea     rax, aCompatibleids_0; "CompatibleIds"
+0x140ae2181  mov     [rbp+250h+var_198], rax
+0x140ae2188  mov     ecx, 1000000h
+0x140ae218d  lea     rax, [rbp+250h+var_280]
+0x140ae2191  mov     [rbp+250h+var_168], edx
+0x140ae2197  mov     [rbp+250h+var_190], rax
+0x140ae219e  xor     r9d, r9d; int
+0x140ae21a1  lea     rax, aContainerid_1; "ContainerId"
+0x140ae21a8  mov     [rbp+250h+var_150], ecx
+0x140ae21ae  mov     [rbp+250h+var_160], rax
+0x140ae21b5  lea     rax, [rbp+250h+GuidString]
+0x140ae21b9  mov     [rbp+250h+var_158], rax
+0x140ae21c0  lea     rax, aCapabilities_1; "Capabilities"
+0x140ae21c7  mov     [rbp+250h+var_128], rax
+0x140ae21ce  lea     rax, [rbp+250h+var_2B4]
+0x140ae21d2  mov     [rbp+250h+var_120], rax
+0x140ae21d9  lea     rax, aDescription_0; "Description"
+0x140ae21e0  mov     [rbp+250h+var_F0], rax
+0x140ae21e7  lea     rax, [rbp+250h+var_248]
+0x140ae21eb  mov     [rbp+250h+var_E8], rax
+0x140ae21f2  lea     rax, aLocationinfo; "LocationInfo"
+0x140ae21f9  mov     [rbp+250h+var_B8], rax
+0x140ae2200  lea     rax, [rbp+250h+var_238]
+0x140ae2204  mov     [rbp+250h+var_130], edx
+0x140ae220a  mov     [rbp+250h+var_F8], edx
+0x140ae2210  mov     [rbp+250h+var_E0], ecx
+0x140ae2216  mov     [rbp+250h+var_C0], edx
+0x140ae221c  mov     rdx, [rbp+250h+Handle]; int
+0x140ae2220  mov     [rbp+250h+var_A8], ecx
+0x140ae2226  mov     ecx, 0C0000000h; int
+0x140ae222b  mov     [rbp+250h+var_B0], rax
+0x140ae2232  mov     [rsp+350h+var_328], 1; char
+0x140ae2237  call    RtlpQueryRegistryValues
+0x140ae223c  mov     ebx, eax
+0x140ae223e  test    eax, eax
+0x140ae2240  js      loc_140AE26A1
+0x140ae2246  mov     r14d, 2
+0x140ae224c  cmp     [rbp+250h+UnicodeString.Buffer], r12
+0x140ae2250  jz      short loc_140AE2262
+0x140ae2252  cmp     [rbp+250h+UnicodeString.Length], r14w
+0x140ae2257  ja      short loc_140AE2262
+0x140ae2259  lea     rcx, [rbp+250h+UnicodeString]; UnicodeString
+0x140ae225d  call    RtlFreeAnsiString
+0x140ae2262  cmp     [rbp+250h+var_280.Buffer], r12
+0x140ae2266  jz      short loc_140AE2278
+0x140ae2268  cmp     [rbp+250h+var_280.Length], r14w
+0x140ae226d  ja      short loc_140AE2278
+0x140ae226f  lea     rcx, [rbp+250h+var_280]; UnicodeString
+0x140ae2273  call    RtlFreeAnsiString
+0x140ae2278  cmp     [rbp+250h+GuidString.Buffer], r12
+0x140ae227c  jz      short loc_140AE22A5
+0x140ae227e  cmp     [rbp+250h+GuidString.Length], r14w
+0x140ae2283  jnb     short loc_140AE228E
+0x140ae2285  lea     rcx, [rbp+250h+GuidString]; UnicodeString
+0x140ae2289  call    RtlFreeAnsiString
+0x140ae228e  cmp     [rbp+250h+GuidString.Buffer], r12
+0x140ae2292  jz      short loc_140AE22A5
+0x140ae2294  lea     rdx, [rbp+250h+Guid]; Guid
+0x140ae2298  lea     rcx, [rbp+250h+GuidString]; GuidString
+0x140ae229c  call    RtlGUIDFromString
+0x140ae22a1  test    eax, eax
+0x140ae22a3  jns     short loc_140AE22AC
+0x140ae22a5  xorps   xmm0, xmm0
+0x140ae22a8  movups  xmmword ptr [rbp+250h+Guid.Data1], xmm0
+0x140ae22ac  cmp     [rbp+250h+var_248.Buffer], r12
+0x140ae22b0  jz      short loc_140AE22C2
+0x140ae22b2  cmp     [rbp+250h+var_248.Length], r14w
+0x140ae22b7  jnb     short loc_140AE22C2
+0x140ae22b9  lea     rcx, [rbp+250h+var_248]; UnicodeString
+0x140ae22bd  call    RtlFreeAnsiString
+0x140ae22c2  cmp     [rbp+250h+var_238.Buffer], r12
+0x140ae22c6  jz      short loc_140AE22D8
+0x140ae22c8  cmp     [rbp+250h+var_238.Length], r14w
+0x140ae22cd  jnb     short loc_140AE22D8
+0x140ae22cf  lea     rcx, [rbp+250h+var_238]; UnicodeString
+0x140ae22d3  call    RtlFreeAnsiString
+0x140ae22d8  cmp     [rbp+250h+UnicodeString.Buffer], r12
+0x140ae22dc  jnz     loc_140AE2403
+0x140ae22e2  cmp     [rbp+250h+var_280.Buffer], r12
+0x140ae22e6  jnz     loc_140AE2403
+0x140ae22ec  mov     ebx, 0C00000BBh
+0x140ae22f1  mov     r15, [rsp+350h+SourceString]
+0x140ae22f6  mov     rcx, [rbp+250h+P+8]; P
+0x140ae22fa  test    rcx, rcx
+0x140ae22fd  jz      short loc_140AE2304
+0x140ae22ff  call    ExFreePool
+0x140ae2304  mov     rcx, [rbp+250h+var_260]; P
+0x140ae2308  test    rcx, rcx
+0x140ae230b  jz      short loc_140AE2314
+0x140ae230d  xor     edx, edx; Tag
+0x140ae230f  call    ExFreePoolWithTag
+0x140ae2314  mov     rcx, [rbp+250h+UnicodeString.Buffer]; P
+0x140ae2318  test    rcx, rcx
+0x140ae231b  jz      short loc_140AE2329
+0x140ae231d  call    ExFreePool
+0x140ae2322  xorps   xmm0, xmm0
+0x140ae2325  movups  xmmword ptr [rbp+250h+UnicodeString.Length], xmm0
+0x140ae2329  mov     rcx, [rbp+250h+var_280.Buffer]; P
+0x140ae232d  test    rcx, rcx
+0x140ae2330  jz      short loc_140AE233E
+0x140ae2332  call    ExFreePool
+0x140ae2337  xorps   xmm0, xmm0
+0x140ae233a  movups  xmmword ptr [rbp+250h+var_280.Length], xmm0
+0x140ae233e  mov     rcx, [rbp+250h+GuidString.Buffer]; P
+0x140ae2342  test    rcx, rcx
+0x140ae2345  jz      short loc_140AE2353
+0x140ae2347  call    ExFreePool
+0x140ae234c  xorps   xmm0, xmm0
+0x140ae234f  movups  xmmword ptr [rbp+250h+GuidString.Length], xmm0
+0x140ae2353  mov     rcx, [rbp+250h+var_248.Buffer]; P
+0x140ae2357  test    rcx, rcx
+0x140ae235a  jz      short loc_140AE2368
+0x140ae235c  call    ExFreePool
+0x140ae2361  xorps   xmm0, xmm0
+0x140ae2364  movups  xmmword ptr [rbp+250h+var_248.Length], xmm0
+0x140ae2368  mov     rcx, [rbp+250h+var_238.Buffer]; P
+0x140ae236c  test    rcx, rcx
+0x140ae236f  jz      short loc_140AE237D
+0x140ae2371  call    ExFreePool
+0x140ae2376  xorps   xmm0, xmm0
+0x140ae2379  movups  xmmword ptr [rbp+250h+var_238.Length], xmm0
+0x140ae237d  test    rsi, rsi
+0x140ae2380  jz      short loc_140AE238C
+0x140ae2382  xor     edx, edx; Tag
+0x140ae2384  mov     rcx, rsi; P
+0x140ae2387  call    ExFreePoolWithTag
+0x140ae238c  test    rdi, rdi
+0x140ae238f  jz      short loc_140AE239B
+0x140ae2391  xor     edx, edx; Tag
+0x140ae2393  mov     rcx, rdi; P
+0x140ae2396  call    ExFreePoolWithTag
+0x140ae239b  mov     rcx, [rbp+250h+Handle]; Handle
+0x140ae239f  test    rcx, rcx
+0x140ae23a2  jz      short loc_140AE23A9
+0x140ae23a4  call    ZwClose
+0x140ae23a9  test    ebx, ebx
+0x140ae23ab  jns     short loc_140AE23D3
+0x140ae23ad  test    cs:byte_140EDA02C, 4
+0x140ae23b4  jz      short loc_140AE23D3
+0x140ae23b6  mov     r9, [r13+0]
+0x140ae23ba  lea     rdx, KMPnPEvt_CreateDriverSwDevice_Failure
+0x140ae23c1  mov     dword ptr [rsp+350h+var_328], ebx
+0x140ae23c5  mov     qword ptr [rsp+350h+var_330], r15
+0x140ae23ca  mov     r9, [r9+30h]
+0x140ae23ce  call    McTemplateK0zzd_EtwWriteTransfer
+0x140ae23d3  cmp     [r13+8], r12d
+0x140ae23d7  jl      short loc_140AE23DD
+0x140ae23d9  mov     [r13+8], ebx
+0x140ae23dd  xor     eax, eax
+0x140ae23df  mov     rcx, [rbp+250h+var_50]
+0x140ae23e6  xor     rcx, rsp; StackCookie
+0x140ae23e9  call    __security_check_cookie
+0x140ae23ee  add     rsp, 318h
+0x140ae23f5  pop     r15
+0x140ae23f7  pop     r14
+0x140ae23f9  pop     r13
+0x140ae23fb  pop     r12
+0x140ae23fd  pop     rdi
+0x140ae23fe  pop     rsi
+0x140ae23ff  pop     rbx
+0x140ae2400  pop     rbp
+0x140ae2401  retn
+0x140ae2403  mov     rax, [rbp+250h+UnicodeString.Buffer]
+0x140ae2407  mov     r13, [r13+0]
+0x140ae240b  mov     [rbp+250h+String1], rax
+0x140ae240f  mov     rax, [rbp+250h+var_280.Buffer]
+0x140ae2413  mov     dword ptr [rbp+250h+var_298], r14d
+0x140ae2417  or      r14, 0FFFFFFFFFFFFFFFFh
+0x140ae241b  mov     [rbp+250h+var_1F8], rax
+0x140ae241f  mov     [rbp+250h+var_2D0], r12d
+0x140ae2423  mov     dword ptr [rbp+250h+var_298+4], 3
+0x140ae242a  cmp     r13, cs:IopRootDeviceNode
+0x140ae2431  jz      loc_140AE26AA
+0x140ae2437  mov     rcx, [r13+20h]
+0x140ae243b  mov     rax, cs:PiSwDeviceDriverObject
+0x140ae2442  cmp     [rcx+8], rax
+0x140ae2446  jnz     loc_140AE2668
+0x140ae244c  lea     rdx, PiSwBusName; "SWD\\"
+0x140ae2453  lea     rcx, [rbp+250h+DestinationString]; DestinationString
+0x140ae2457  call    RtlInitUnicodeString
+0x140ae245c  lea     rdx, [r13+28h]; String2
+0x140ae2460  mov     r8b, 1; CaseInSensitive
+0x140ae2463  lea     rcx, [rbp+250h+DestinationString]; String1
+0x140ae2467  call    RtlPrefixUnicodeString
+0x140ae246c  test    al, al
+0x140ae246e  jz      loc_140AE2668
+0x140ae2474  mov     rax, [r13+30h]
+0x140ae2478  movzx   ecx, [rbp+250h+DestinationString.Length]
+0x140ae247c  shr     rcx, 1
+0x140ae247f  lea     rdx, [rax+rcx*2]; SourceString
+0x140ae2483  lea     rcx, [rbp+250h+String2]; DestinationString
+0x140ae2487  call    RtlInitUnicodeString
+0x140ae248c  lea     rdx, aDriverenum; "DRIVERENUM"
+0x140ae2493  lea     rcx, [rbp+250h+DestinationString]; DestinationString
+0x140ae2497  call    RtlInitUnicodeString
+0x140ae249c  mov     r8b, 1; CaseInSensitive
+0x140ae249f  lea     rdx, [rbp+250h+String2]; String2
+0x140ae24a3  lea     rcx, [rbp+250h+DestinationString]; String1
+0x140ae24a7  call    RtlPrefixUnicodeString
+0x140ae24ac  test    al, al
+0x140ae24ae  jz      loc_140AE2668
+0x140ae24b4  movzx   ecx, [rbp+250h+DestinationString.Length]
+0x140ae24b8  mov     rax, [rbp+250h+String2.Buffer]
+0x140ae24bc  shr     rcx, 1
+0x140ae24bf  cmp     word ptr [rax+rcx*2], 5Ch ; '\'
+0x140ae24c4  jnz     loc_140AE2668
+0x140ae24ca  test    r15d, r15d
+0x140ae24cd  jnz     loc_140AE2562
+0x140ae24d3  mov     rdx, [rbp+250h+var_280.Buffer]
+0x140ae24d7  lea     r8, [rbp+250h+var_2B0]
+0x140ae24db  mov     rcx, [rbp+250h+UnicodeString.Buffer]
+0x140ae24df  call    PnpGenerateDeviceIdsHash
+0x140ae24e4  mov     ebx, eax
+0x140ae24e6  test    eax, eax
+0x140ae24e8  js      loc_140AE269D
+0x140ae24ee  test    byte ptr [rbp+250h+var_2B4], 8
+0x140ae24f2  jnz     short loc_140AE252A
+0x140ae24f4  lea     rdx, PiSwGenericRawCompatibleId; SourceString
+0x140ae24fb  lea     rcx, [rbp+250h+String2]; DestinationString
+0x140ae24ff  call    RtlInitUnicodeString
+0x140ae2504  lea     r9, [rbp+250h+HashValue]; HashValue
+0x140ae2508  xor     r8d, r8d; HashAlgorithm
+  ... truncated ...
+```

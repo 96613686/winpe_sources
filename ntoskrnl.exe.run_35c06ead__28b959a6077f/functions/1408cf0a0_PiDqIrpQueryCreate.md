@@ -1,0 +1,376 @@
+# PiDqIrpQueryCreate
+
+- ea: `0x1408cf0a0`
+- end: `0x1408cf3a5`
+- name: `PiDqIrpQueryCreate`
+- size: `773`
+- prototype: `__int64 __fastcall(PIRP Irp)`
+- caller_count: `1`
+- callee_count: `13`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1408ceed0`
+
+## callees
+
+- `0x140452d20`
+- `0x14045b980`
+- `0x1406d9d70`
+- `0x1408ce708`
+- `0x1408ce860`
+- `0x1408cf0a0`
+- `0x1408cfdf0`
+- `0x1408cfe60`
+- `0x1408cfec0`
+- `0x1408d0060`
+- `0x1408d0100`
+- `0x1408d0244`
+- `0x1408d03d4`
+
+## import_xrefs
+
+- `msrpc!MesDecodeBufferHandleCreate` at `0x1408cf195`
+- `msrpc!MesDecodeBufferHandleCreate` at `0x1408cf195`
+- `msrpc!RpcExceptionFilter` at `0x140b4292a`
+- `msrpc!RpcExceptionFilter` at `0x140b4292a`
+- `msrpc!NdrMesTypeDecode3` at `0x1408cf1d2`
+- `msrpc!NdrMesTypeDecode3` at `0x1408cf1d2`
+
+## pseudocode
+
+```c
+__int64 __fastcall PiDqIrpQueryCreate(PIRP Irp)
+{
+  struct _IO_STACK_LOCATION *CurrentStackLocation; // rsi
+  _DWORD *v3; // rbx
+  __int64 v4; // r14
+  char v5; // r15
+  union _IRP::$CBBBB9F4F0755A16DC8A369061485BEC *p_AssociatedIrp; // r15
+  int *v7; // r14
+  int v8; // eax
+  int v9; // eax
+  int ValidateQueryData; // edi
+  unsigned int Length; // r8d
+  char v13; // [rsp+30h] [rbp-A8h]
+  char v14; // [rsp+31h] [rbp-A7h]
+  int v15; // [rsp+34h] [rbp-A4h] BYREF
+  unsigned int v16; // [rsp+38h] [rbp-A0h] BYREF
+  __int64 v17; // [rsp+40h] [rbp-98h]
+  _DWORD *v18; // [rsp+48h] [rbp-90h]
+  __int64 v19; // [rsp+50h] [rbp-88h]
+  PIRP v20; // [rsp+58h] [rbp-80h]
+  struct _IO_STACK_LOCATION *v21; // [rsp+60h] [rbp-78h]
+  _DWORD *FsContext2; // [rsp+68h] [rbp-70h]
+  union _IRP::$CBBBB9F4F0755A16DC8A369061485BEC *v23; // [rsp+70h] [rbp-68h]
+  char *v24; // [rsp+78h] [rbp-60h]
+  __int128 v25; // [rsp+80h] [rbp-58h] BYREF
+  __int128 v26; // [rsp+90h] [rbp-48h] BYREF
+
+  v20 = Irp;
+  CurrentStackLocation = Irp->Tail.Overlay.CurrentStackLocation;
+  v21 = CurrentStackLocation;
+  FsContext2 = CurrentStackLocation->FileObject->FsContext2;
+  v3 = FsContext2;
+  v14 = 0;
+  v4 = 0;
+  v17 = 0;
+  v19 = 0;
+  v25 = 0;
+  v5 = 0;
+  v13 = 0;
+  v15 = 0;
+  v16 = 0;
+  v26 = 0;
+  if ( FsContext2 )
+  {
+    p_AssociatedIrp = &Irp->AssociatedIrp;
+    v23 = &Irp->AssociatedIrp;
+    if ( Irp->AssociatedIrp.MasterIrp )
+    {
+      PiDqQueryLock(FsContext2);
+      v7 = FsContext2 + 54;
+      v24 = (char *)(FsContext2 + 54);
+      v8 = FsContext2[54];
+      if ( (v8 & 8) != 0 )
+      {
+        ValidateQueryData = -1073741536;
+      }
+      else if ( (v8 & 0x10) != 0 || (v9 = v8 | 0x10, *v7 = v9, v14 = 1, (v9 & 4) != 0) )
+      {
+        ValidateQueryData = -1073741637;
+      }
+      else if ( CurrentStackLocation->Parameters.Read.Length < 0x10 )
+      {
+        ValidateQueryData = -1073741789;
+      }
+      else
+      {
+        v18 = v3;
+        ValidateQueryData = MesDecodeBufferHandleCreate(
+                              p_AssociatedIrp->MasterIrp,
+                              CurrentStackLocation->Parameters.Create.Options,
+                              v3 + 4);
+        if ( ValidateQueryData >= 0 )
+        {
+          NdrMesTypeDecode3(*((_QWORD *)v3 + 2), "TP 3\a", &off_140004F60, &off_140E0A510, 0, v3 + 6);
+          ValidateQueryData = PiDqQueryValidateQueryData(*((_QWORD *)v3 + 3));
+          if ( ValidateQueryData >= 0 )
+          {
+            if ( !(unsigned __int8)PnpIsNullGuid(*((void **)v3 + 3)) )
+            {
+              v25 = *(_OWORD *)*((_QWORD *)v3 + 3);
+              v17 = IoSetActivityIdThread(&v25);
+              v13 = 1;
+            }
+            PiDqTraceQueryCreate(v3);
+            *v7 |= 4u;
+          }
+        }
+      }
+      PiDqQueryUnlock(v3);
+      if ( ValidateQueryData >= 0 )
+      {
+        Length = CurrentStackLocation->Parameters.Read.Length;
+        if ( Length > 0x10 )
+          ValidateQueryData = PiDqQuerySerializeActionQueue(
+                                (_DWORD)v3,
+                                p_AssociatedIrp->MasterIrp,
+                                Length,
+                                CurrentStackLocation->Parameters.Read.ByteOffset.LowPart,
+                                (__int64)&v15,
+                                (__int64)&v16);
+      }
+      v4 = v17;
+      v5 = v13;
+    }
+    else
+    {
+      ValidateQueryData = -1073741811;
+      v5 = 0;
+    }
+  }
+  else
+  {
+    ValidateQueryData = -1073741637;
+  }
+  if ( v14 )
+  {
+    PiDqQueryLock(v3);
+    if ( ValidateQueryData < 0 )
+    {
+      v3[54] |= 1u;
+      PiDqQueryFreeActiveData(v3);
+    }
+    else
+    {
+      PiDqQueryGetNextIoctlInfo(v3, CurrentStackLocation->Parameters.Read.Length, v16, &v26);
+    }
+    v3[54] &= ~0x10u;
+    PiDqQueryUnlock(v3);
+  }
+  PiDqIrpComplete(Irp);
+  if ( v5 )
+    IoClearActivityIdThread(v4);
+  return (unsigned int)ValidateQueryData;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1408cf0a0  mov     r11, rsp
+0x1408cf0a3  mov     [r11+10h], rbx
+0x1408cf0a7  mov     [r11+18h], rsi
+0x1408cf0ab  push    rdi
+0x1408cf0ac  push    r12
+0x1408cf0ae  push    r13
+0x1408cf0b0  push    r14
+0x1408cf0b2  push    r15
+0x1408cf0b4  sub     rsp, 0B0h
+0x1408cf0bb  mov     rax, cs:__security_cookie
+0x1408cf0c2  xor     rax, rsp
+0x1408cf0c5  mov     [rsp+0D8h+var_38], rax
+0x1408cf0cd  mov     r13, rcx
+0x1408cf0d0  mov     [rsp+0D8h+var_80], rcx
+0x1408cf0d5  mov     rsi, [rcx+0B8h]
+0x1408cf0dc  mov     [rsp+0D8h+var_78], rsi
+0x1408cf0e1  mov     rax, [rsi+30h]
+0x1408cf0e5  mov     rbx, [rax+20h]
+0x1408cf0e9  mov     [rsp+0D8h+var_70], rbx
+0x1408cf0ee  mov     [rsp+0D8h+var_A7], 0
+0x1408cf0f3  xor     r14d, r14d
+0x1408cf0f6  mov     [rsp+0D8h+var_98], r14
+0x1408cf0fb  mov     [rsp+0D8h+var_88], r14
+0x1408cf100  xorps   xmm0, xmm0
+0x1408cf103  movups  xmmword ptr [r11-58h], xmm0
+0x1408cf108  xor     r15b, r15b
+0x1408cf10b  mov     [rsp+0D8h+var_A8], r15b
+0x1408cf110  xor     r12d, r12d
+0x1408cf113  mov     [rsp+0D8h+var_A4], r12d
+0x1408cf118  mov     [rsp+0D8h+var_A0], r12d
+0x1408cf11d  movups  xmmword ptr [r11-48h], xmm0
+0x1408cf122  test    rbx, rbx
+0x1408cf125  jz      loc_1408CF35F
+0x1408cf12b  lea     r15, [rcx+18h]
+0x1408cf12f  mov     [rsp+0D8h+var_68], r15
+0x1408cf134  cmp     [r15], r12
+0x1408cf137  jz      loc_1408CF373
+0x1408cf13d  mov     rcx, rbx
+0x1408cf140  call    PiDqQueryLock
+0x1408cf145  lea     r14, [rbx+0D8h]
+0x1408cf14c  mov     [rsp+0D8h+var_60], r14
+0x1408cf151  mov     eax, [r14]
+0x1408cf154  test    al, 8
+0x1408cf156  jnz     loc_1408CF369
+0x1408cf15c  test    al, 10h
+0x1408cf15e  jnz     loc_1408CF380
+0x1408cf164  or      eax, 10h
+0x1408cf167  mov     [r14], eax
+0x1408cf16a  mov     cl, 1
+0x1408cf16c  mov     [rsp+0D8h+var_A7], cl
+0x1408cf170  mov     [rsp+0D8h+var_A6], cl
+0x1408cf174  test    al, 4
+0x1408cf176  jnz     loc_1408CF380
+0x1408cf17c  cmp     dword ptr [rsi+8], 10h
+0x1408cf180  jb      loc_1408CF38A
+0x1408cf186  mov     [rsp+0D8h+var_90], rbx
+0x1408cf18b  lea     r8, [rbx+10h]
+0x1408cf18f  mov     edx, [rsi+10h]
+0x1408cf192  mov     rcx, [r15]
+0x1408cf195  call    cs:__imp_MesDecodeBufferHandleCreate
+0x1408cf19c  nop     dword ptr [rax+rax+00h]
+0x1408cf1a1  mov     edi, eax
+0x1408cf1a3  test    eax, eax
+0x1408cf1a5  js      loc_1408CF276
+0x1408cf1ab  lea     rax, [rbx+18h]
+0x1408cf1af  mov     [rsp+0D8h+var_B0], rax
+0x1408cf1b4  mov     dword ptr [rsp+0D8h+var_B8], r12d
+0x1408cf1b9  lea     r9, off_140E0A510
+0x1408cf1c0  lea     r8, off_140004F60
+0x1408cf1c7  lea     rdx, aTp3; "TP 3\a"
+0x1408cf1ce  mov     rcx, [rbx+10h]
+0x1408cf1d2  call    cs:__imp_NdrMesTypeDecode3
+0x1408cf1d9  nop     dword ptr [rax+rax+00h]
+0x1408cf1de  jmp     short loc_1408CF223
+0x1408cf1e0  mov     edi, eax
+0x1408cf1e2  mov     rax, [rsp+0D8h+var_90]
+0x1408cf1e7  mov     qword ptr [rax+18h], 0
+0x1408cf1ef  mov     al, [rsp+0D8h+var_A6]
+0x1408cf1f3  mov     [rsp+0D8h+var_A7], al
+0x1408cf1f7  mov     rax, [rsp+0D8h+var_88]
+0x1408cf1fc  mov     [rsp+0D8h+var_98], rax
+0x1408cf201  mov     [rsp+0D8h+var_A8], al
+0x1408cf205  mov     r12d, [rsp+0D8h+var_A4]
+0x1408cf20a  mov     r13, [rsp+0D8h+var_80]
+0x1408cf20f  mov     rsi, [rsp+0D8h+var_78]
+0x1408cf214  mov     rbx, [rsp+0D8h+var_70]
+0x1408cf219  mov     r15, [rsp+0D8h+var_68]
+0x1408cf21e  mov     r14, [rsp+0D8h+var_60]
+0x1408cf223  test    edi, edi
+0x1408cf225  js      short loc_1408CF276
+0x1408cf227  mov     rcx, [rbx+18h]
+0x1408cf22b  call    PiDqQueryValidateQueryData
+0x1408cf230  mov     edi, eax
+0x1408cf232  test    eax, eax
+0x1408cf234  js      short loc_1408CF276
+0x1408cf236  mov     rcx, [rbx+18h]; Source2
+0x1408cf23a  call    PnpIsNullGuid
+0x1408cf23f  test    al, al
+0x1408cf241  jnz     short loc_1408CF26A
+0x1408cf243  mov     rax, [rbx+18h]
+0x1408cf247  movups  xmm0, xmmword ptr [rax]
+0x1408cf24a  movdqu  [rsp+0D8h+var_58], xmm0
+0x1408cf253  lea     rcx, [rsp+0D8h+var_58]
+0x1408cf25b  call    IoSetActivityIdThread
+0x1408cf260  mov     [rsp+0D8h+var_98], rax
+0x1408cf265  mov     [rsp+0D8h+var_A8], 1
+0x1408cf26a  mov     rcx, rbx
+0x1408cf26d  call    PiDqTraceQueryCreate
+0x1408cf272  or      dword ptr [r14], 4
+0x1408cf276  mov     rcx, rbx
+0x1408cf279  call    PiDqQueryUnlock
+0x1408cf27e  test    edi, edi
+0x1408cf280  js      short loc_1408CF2BA
+0x1408cf282  mov     r8d, [rsi+8]
+0x1408cf286  cmp     r8d, 10h
+0x1408cf28a  jbe     loc_1408CF354
+0x1408cf290  lea     rax, [rsp+0D8h+var_A0]
+0x1408cf295  mov     [rsp+0D8h+var_B0], rax
+0x1408cf29a  lea     rax, [rsp+0D8h+var_A4]
+0x1408cf29f  mov     [rsp+0D8h+var_B8], rax
+0x1408cf2a4  mov     r9d, [rsi+18h]
+0x1408cf2a8  mov     rdx, [r15]
+0x1408cf2ab  mov     rcx, rbx
+0x1408cf2ae  call    PiDqQuerySerializeActionQueue
+0x1408cf2b3  mov     edi, eax
+0x1408cf2b5  mov     r12d, [rsp+0D8h+var_A4]
+0x1408cf2ba  mov     r14, [rsp+0D8h+var_98]
+0x1408cf2bf  mov     r15b, [rsp+0D8h+var_A8]
+0x1408cf2c4  cmp     [rsp+0D8h+var_A7], 0
+0x1408cf2c9  jz      short loc_1408CF302
+0x1408cf2cb  mov     rcx, rbx
+0x1408cf2ce  call    PiDqQueryLock
+0x1408cf2d3  mov     rcx, rbx
+0x1408cf2d6  test    edi, edi
+0x1408cf2d8  js      loc_1408CF394
+0x1408cf2de  lea     r9, [rsp+0D8h+var_48]
+0x1408cf2e6  mov     r8d, [rsp+0D8h+var_A0]
+0x1408cf2eb  mov     edx, [rsi+8]
+0x1408cf2ee  call    PiDqQueryGetNextIoctlInfo
+0x1408cf2f3  and     dword ptr [rbx+0D8h], 0FFFFFFEFh
+0x1408cf2fa  mov     rcx, rbx
+0x1408cf2fd  call    PiDqQueryUnlock
+0x1408cf302  lea     r9, [rsp+0D8h+var_48]
+0x1408cf30a  mov     r8d, r12d
+0x1408cf30d  mov     edx, edi
+0x1408cf30f  mov     rcx, r13; Irp
+0x1408cf312  call    PiDqIrpComplete
+0x1408cf317  test    r15b, r15b
+0x1408cf31a  jz      short loc_1408CF324
+0x1408cf31c  mov     rcx, r14
+0x1408cf31f  call    IoClearActivityIdThread
+0x1408cf324  mov     eax, edi
+0x1408cf326  mov     rcx, [rsp+0D8h+var_38]
+0x1408cf32e  xor     rcx, rsp; StackCookie
+0x1408cf331  call    __security_check_cookie
+0x1408cf336  lea     r11, [rsp+0D8h+var_28]
+0x1408cf33e  mov     rbx, [r11+38h]
+0x1408cf342  mov     rsi, [r11+40h]
+0x1408cf346  mov     rsp, r11
+0x1408cf349  pop     r15
+0x1408cf34b  pop     r14
+0x1408cf34d  pop     r13
+0x1408cf34f  pop     r12
+0x1408cf351  pop     rdi
+0x1408cf352  retn
+0x1408cf354  mov     r12d, 10h
+0x1408cf35a  jmp     loc_1408CF2BA
+0x1408cf35f  mov     edi, 0C00000BBh
+0x1408cf364  jmp     loc_1408CF2C4
+0x1408cf369  mov     edi, 0C0000120h
+0x1408cf36e  jmp     loc_1408CF276
+0x1408cf373  mov     edi, 0C000000Dh
+0x1408cf378  xor     r15b, r15b
+0x1408cf37b  jmp     loc_1408CF2C4
+0x1408cf380  mov     edi, 0C00000BBh
+0x1408cf385  jmp     loc_1408CF276
+0x1408cf38a  mov     edi, 0C0000023h
+0x1408cf38f  jmp     loc_1408CF276
+0x1408cf394  or      dword ptr [rbx+0D8h], 1
+0x1408cf39b  call    PiDqQueryFreeActiveData
+0x1408cf3a0  jmp     loc_1408CF2F3
+0x140b4291c  push    rbp
+0x140b4291e  sub     rsp, 30h
+0x140b42922  mov     rbp, rdx
+0x140b42925  mov     rcx, [rcx]
+0x140b42928  mov     ecx, [rcx]; ExceptionCode
+0x140b4292a  call    cs:__imp_RpcExceptionFilter
+0x140b42931  nop     dword ptr [rax+rax+00h]
+0x140b42936  nop
+0x140b42937  add     rsp, 30h
+0x140b4293b  pop     rbp
+0x140b4293c  retn
+```

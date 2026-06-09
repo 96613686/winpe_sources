@@ -1,0 +1,489 @@
+# SdbpGetManifestedMergeStubAlloc
+
+- ea: `0x14081fee0`
+- end: `0x140820246`
+- name: `SdbpGetManifestedMergeStubAlloc`
+- size: `870`
+- prototype: `__int64 __fastcall(_QWORD *, const wchar_t *)`
+- caller_count: `1`
+- callee_count: `13`
+- tags: `registry_config, loader_planting, installer_update, broker_com_uri`
+
+## callers
+
+- `0x14082024c`
+
+## callees
+
+- `0x14053cf40`
+- `0x14053d080`
+- `0x1406daa70`
+- `0x1406daaf0`
+- `0x14081fee0`
+- `0x1408207c4`
+- `0x140827308`
+- `0x140978b4c`
+- `0x140979890`
+- `0x14097b68c`
+- `0x14097d158`
+- `0x140a0b060`
+- `0x140ac65d4`
+
+## string_xrefs
+
+- `0x14082020f`: `Failed to allocate stub path.`
+- `0x1408201f4`: `Failed to duplicate stub path.`
+- `0x1408201cf`: `Failed to allocate or convert stub path.`
+- `0x14081ff9b`: `AslRegistryGetKey failed to open ManifestedMergeStubSdbs key [%x]`
+- `0x14081ff75`: `Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\SdbUpdates\ManifestedMergeStubSdbs`
+- `0x14081ff4a`: `SdbpGetManifestedMergeStubAlloc`
+- `0x14081ffac`: `SdbpGetManifestedMergeStubAlloc`
+- `0x140820079`: `SdbpGetManifestedMergeStubAlloc`
+
+## pseudocode
+
+```c
+__int64 __fastcall SdbpGetManifestedMergeStubAlloc(_QWORD *a1, const wchar_t *a2)
+{
+  ULONG v2; // r12d
+  __int64 v5; // r15
+  wchar_t *v6; // r13
+  int MergeSdbsDisabled; // eax
+  HANDLE v8; // rcx
+  NTSTATUS v9; // ebx
+  int Key; // eax
+  unsigned int v11; // ebx
+  __int64 v12; // rcx
+  __int64 v13; // rsi
+  __int64 v14; // rax
+  ULONG v15; // ebx
+  const char *v16; // r9
+  int v17; // r8d
+  NTSTATUS v18; // eax
+  __int64 v19; // rax
+  ULONG v20; // ebx
+  unsigned __int64 v21; // r14
+  const wchar_t *NtSystemRoot; // rax
+  const wchar_t *v23; // rbx
+  size_t v24; // r8
+  __int64 v25; // rax
+  char Length; // [rsp+20h] [rbp-20h]
+  __int64 v27; // [rsp+30h] [rbp-10h] BYREF
+  HANDLE Handle; // [rsp+38h] [rbp-8h] BYREF
+  ULONG ResultLength; // [rsp+90h] [rbp+50h] BYREF
+  ULONG v31; // [rsp+98h] [rbp+58h] BYREF
+
+  v2 = 0;
+  v31 = 0;
+  ResultLength = 0;
+  v27 = 0;
+  Handle = 0;
+  if ( !a1 )
+    return 3221225711LL;
+  *a1 = 0;
+  v5 = 0;
+  v6 = 0;
+  MergeSdbsDisabled = SdbpGetMergeSdbsDisabled(&v31);
+  v9 = MergeSdbsDisabled;
+  if ( MergeSdbsDisabled >= 0 )
+  {
+    if ( v31 )
+    {
+      v9 = -1073741772;
+    }
+    else
+    {
+      Key = AslRegistryGetKey(
+              &Handle,
+              L"Software\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\SdbUpdates\\ManifestedMergeStubSdbs",
+              2147483904LL,
+              1);
+      v9 = Key;
+      if ( Key >= 0 )
+      {
+        v11 = 1;
+        while ( wcsicmp(a2, (const wchar_t *)qword_14000AED8[4 * v11]) )
+        {
+          if ( (int)++v11 >= 10 )
+          {
+LABEL_13:
+            v9 = -1073741772;
+            goto LABEL_14;
+          }
+        }
+        v13 = -1;
+        v14 = -1;
+        do
+          ++v14;
+        while ( a2[v14] );
+        v15 = 2 * v14 + 18;
+        v31 = v15;
+        v5 = AslAlloc(v12, v15);
+        if ( v5 )
+        {
+          while ( 1 )
+          {
+            v18 = ZwEnumerateValueKey(Handle, v2, KeyValuePartialInformation, (PVOID)v5, v15, &ResultLength);
+            v9 = v18;
+            if ( v18 != -2147483643 && v18 != -1073741789 )
+            {
+              if ( v18 == -2147483622 )
+                goto LABEL_13;
+              if ( v18 < 0 )
+              {
+                v16 = "Failed to query partial info.";
+                v17 = 1241;
+                goto LABEL_28;
+              }
+              if ( *(_DWORD *)(v5 + 4) == 1 && !wcsicmp(a2, (const wchar_t *)(v5 + 12)) )
+                break;
+            }
+            v15 = v31;
+            ++v2;
+          }
+          v19 = -1;
+          do
+            ++v19;
+          while ( a2[v19] );
+          v20 = 2 * v19 + 538;
+          v21 = v20;
+          v6 = (wchar_t *)AslAlloc(0, v20);
+          if ( !v6 )
+          {
+            v16 = "Failed to allocate basic info.";
+            v17 = 1258;
+            goto LABEL_27;
+          }
+          v9 = ZwEnumerateValueKey(Handle, v2, KeyValueBasicInformation, v6, v20, &ResultLength);
+          if ( v9 < 0 )
+          {
+            v16 = "Failed to query basic info.";
+            v17 = 1269;
+            goto LABEL_28;
+          }
+          if ( (unsigned __int64)ResultLength + 2 > v21 )
+          {
+            v9 = -1073741789;
+            v16 = "Buffer too small to query basic info.";
+            v17 = 1274;
+            goto LABEL_28;
+          }
+          NtSystemRoot = (const wchar_t *)RtlGetNtSystemRoot();
+          v23 = NtSystemRoot;
+          v24 = -1;
+          do
+            ++v24;
+          while ( NtSystemRoot[v24] );
+          if ( wcsnicmp(NtSystemRoot, v6 + 6, v24) )
+          {
+            v9 = AslStringDuplicate(&v27, v6 + 6);
+            if ( v9 < 0 )
+            {
+              v16 = "Failed to duplicate stub path.";
+              v17 = 1301;
+              goto LABEL_28;
+            }
+          }
+          else
+          {
+            do
+              ++v13;
+            while ( v23[v13] );
+            v9 = AslPathToSystemPath(&v27, &v6[v13 + 6]);
+            if ( v9 < 0 )
+            {
+              v16 = "Failed to allocate or convert stub path.";
+              v17 = 1294;
+              goto LABEL_28;
+            }
+          }
+          v25 = v27;
+          if ( !v27 )
+          {
+            v16 = "Failed to allocate stub path.";
+            v17 = 1308;
+            goto LABEL_27;
+          }
+          v9 = 0;
+          v27 = 0;
+          *a1 = v25;
+        }
+        else
+        {
+          v16 = "Failed to allocate partial info.";
+          v17 = 1222;
+LABEL_27:
+          v9 = -1073741801;
+LABEL_28:
+          AslLogCallPrintf(1, (unsigned int)"SdbpGetManifestedMergeStubAlloc", v17, (_DWORD)v16, Length);
+        }
+      }
+      else if ( Key != -1073741772 )
+      {
+        AslLogCallPrintf(
+          1,
+          (unsigned int)"SdbpGetManifestedMergeStubAlloc",
+          1202,
+          (unsigned int)"AslRegistryGetKey failed to open ManifestedMergeStubSdbs key [%x]",
+          Key);
+      }
+LABEL_14:
+      v8 = Handle;
+      if ( (char *)Handle - 1 <= (char *)0xFFFFFFFFFFFFFFFDLL )
+        ZwClose(Handle);
+    }
+  }
+  else
+  {
+    AslLogCallPrintf(
+      1,
+      (unsigned int)"SdbpGetManifestedMergeStubAlloc",
+      1186,
+      (unsigned int)"SdbpGetMergeSdbsDisabled failed [%x]",
+      MergeSdbsDisabled);
+  }
+  if ( v27 )
+    ((void (*)(void))AslFree)();
+  if ( v5 )
+    AslFree(v8, v5);
+  if ( v6 )
+    AslFree(v8, v6);
+  return (unsigned int)v9;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14081fee0  mov     [rsp-38h+arg_8], rbx
+0x14081fee5  mov     [rsp-38h+arg_0], rcx
+0x14081feea  push    rbp
+0x14081feeb  push    rsi
+0x14081feec  push    rdi
+0x14081feed  push    r12
+0x14081feef  push    r13
+0x14081fef1  push    r14
+0x14081fef3  push    r15
+0x14081fef5  mov     rbp, rsp
+0x14081fef8  sub     rsp, 40h
+0x14081fefc  xor     r12d, r12d
+0x14081feff  mov     r14, rdx
+0x14081ff02  mov     [rbp+arg_18], r12d
+0x14081ff06  mov     [rbp+arg_10], r12d
+0x14081ff0a  mov     [rbp+var_10], r12
+0x14081ff0e  mov     [rbp+Handle], r12
+0x14081ff12  test    rcx, rcx
+0x14081ff15  jnz     short loc_14081FF21
+0x14081ff17  mov     eax, 0C00000EFh
+0x14081ff1c  jmp     loc_140820024
+0x14081ff21  mov     [rcx], r12
+0x14081ff24  mov     r15, r12
+0x14081ff27  lea     rcx, [rbp+arg_18]
+0x14081ff2b  mov     r13, r12
+0x14081ff2e  call    SdbpGetMergeSdbsDisabled
+0x14081ff33  mov     ebx, eax
+0x14081ff35  test    eax, eax
+0x14081ff37  jns     short loc_14081FF60
+0x14081ff39  lea     r9, aSdbpgetmergesd; "SdbpGetMergeSdbsDisabled failed [%x]"
+0x14081ff40  mov     dword ptr [rsp+40h+Length], eax
+0x14081ff44  mov     r8d, 4A2h
+0x14081ff4a  lea     rdx, aSdbpgetmanifes; "SdbpGetManifestedMergeStubAlloc"
+0x14081ff51  mov     ecx, 1
+0x14081ff56  call    AslLogCallPrintf
+0x14081ff5b  jmp     loc_14081FFFA
+0x14081ff60  cmp     [rbp+arg_18], r12d
+0x14081ff64  jz      short loc_14081FF70
+0x14081ff66  mov     ebx, 0C0000034h
+0x14081ff6b  jmp     loc_14081FFFA
+0x14081ff70  mov     edi, 1
+0x14081ff75  lea     rdx, aSoftwareMicros_2; "Software\\Microsoft\\Windows NT\\Curren"...
+0x14081ff7c  mov     r9d, edi
+0x14081ff7f  lea     rcx, [rbp+Handle]
+0x14081ff83  mov     r8d, 80000100h
+0x14081ff89  call    AslRegistryGetKey
+0x14081ff8e  mov     ebx, eax
+0x14081ff90  test    eax, eax
+0x14081ff92  jns     short loc_14081FFBC
+0x14081ff94  cmp     eax, 0C0000034h
+0x14081ff99  jz      short loc_14081FFE7
+0x14081ff9b  lea     r9, aAslregistryget_3; "AslRegistryGetKey failed to open Manife"...
+0x14081ffa2  mov     dword ptr [rsp+40h+Length], eax
+0x14081ffa6  mov     r8d, 4B2h
+0x14081ffac  lea     rdx, aSdbpgetmanifes; "SdbpGetManifestedMergeStubAlloc"
+0x14081ffb3  mov     ecx, edi
+0x14081ffb5  call    AslLogCallPrintf
+0x14081ffba  jmp     short loc_14081FFE7
+0x14081ffbc  mov     ebx, edi
+0x14081ffbe  lea     rax, qword_14000AED8
+0x14081ffc5  mov     edx, ebx
+0x14081ffc7  shl     rdx, 5
+0x14081ffcb  mov     rcx, r14; Str1
+0x14081ffce  mov     rdx, [rdx+rax]; Str2
+0x14081ffd2  call    _wcsicmp
+0x14081ffd7  test    eax, eax
+0x14081ffd9  jz      short loc_14082003D
+0x14081ffdb  add     ebx, edi
+0x14081ffdd  cmp     ebx, 0Ah
+0x14081ffe0  jl      short loc_14081FFBE
+0x14081ffe2  mov     ebx, 0C0000034h
+0x14081ffe7  mov     rcx, [rbp+Handle]; Handle
+0x14081ffeb  lea     rax, [rcx-1]
+0x14081ffef  cmp     rax, 0FFFFFFFFFFFFFFFDh
+0x14081fff3  ja      short loc_14081FFFA
+0x14081fff5  call    ZwClose
+0x14081fffa  mov     rdx, [rbp+var_10]
+0x14081fffe  test    rdx, rdx
+0x140820001  jz      short loc_140820008
+0x140820003  call    AslFree
+0x140820008  test    r15, r15
+0x14082000b  jz      short loc_140820015
+0x14082000d  mov     rdx, r15
+0x140820010  call    AslFree
+0x140820015  test    r13, r13
+0x140820018  jz      short loc_140820022
+0x14082001a  mov     rdx, r13
+0x14082001d  call    AslFree
+0x140820022  mov     eax, ebx
+0x140820024  mov     rbx, [rsp+40h+arg_8]
+0x14082002c  add     rsp, 40h
+0x140820030  pop     r15
+0x140820032  pop     r14
+0x140820034  pop     r13
+0x140820036  pop     r12
+0x140820038  pop     rdi
+0x140820039  pop     rsi
+0x14082003a  pop     rbp
+0x14082003b  retn
+0x14082003d  or      rsi, 0FFFFFFFFFFFFFFFFh
+0x140820041  mov     rax, rsi
+0x140820044  inc     rax
+0x140820047  cmp     [r14+rax*2], r12w
+0x14082004c  jnz     short loc_140820044
+0x14082004e  lea     ebx, ds:12h[rax*2]
+0x140820055  mov     edx, ebx
+0x140820057  mov     [rbp+arg_18], ebx
+0x14082005a  call    AslAlloc
+0x14082005f  mov     r15, rax
+0x140820062  test    rax, rax
+0x140820065  jnz     short loc_14082008C
+0x140820067  lea     r9, aFailedToAlloca_1; "Failed to allocate partial info."
+0x14082006e  mov     r8d, 4C6h
+0x140820074  mov     ebx, 0C0000017h
+0x140820079  lea     rdx, aSdbpgetmanifes; "SdbpGetManifestedMergeStubAlloc"
+0x140820080  mov     ecx, edi
+0x140820082  call    AslLogCallPrintf
+0x140820087  jmp     loc_14081FFE7
+0x14082008c  mov     rcx, [rbp+Handle]; KeyHandle
+0x140820090  lea     rax, [rbp+arg_10]
+0x140820094  mov     [rsp+40h+ResultLength], rax; ResultLength
+0x140820099  mov     r9, r15; KeyValueInformation
+0x14082009c  mov     r8d, 2; KeyValueInformationClass
+0x1408200a2  mov     dword ptr [rsp+40h+Length], ebx; Length
+0x1408200a6  mov     edx, r12d; Index
+0x1408200a9  call    ZwEnumerateValueKey
+0x1408200ae  mov     ebx, eax
+0x1408200b0  cmp     eax, 80000005h
+0x1408200b5  jz      short loc_1408200E9
+0x1408200b7  cmp     eax, 0C0000023h
+0x1408200bc  jz      short loc_1408200E9
+0x1408200be  cmp     eax, 8000001Ah
+0x1408200c3  jz      loc_14081FFE2
+0x1408200c9  test    eax, eax
+0x1408200cb  js      loc_140820234
+0x1408200d1  cmp     [r15+4], edi
+0x1408200d5  jnz     short loc_1408200E9
+0x1408200d7  lea     rdx, [r15+0Ch]; Str2
+0x1408200db  mov     rcx, r14; Str1
+0x1408200de  call    _wcsicmp
+0x1408200e3  xor     ecx, ecx
+0x1408200e5  test    eax, eax
+0x1408200e7  jz      short loc_1408200F1
+0x1408200e9  mov     ebx, [rbp+arg_18]
+0x1408200ec  add     r12d, edi
+0x1408200ef  jmp     short loc_14082008C
+0x1408200f1  mov     rax, rsi
+0x1408200f4  inc     rax
+0x1408200f7  cmp     [r14+rax*2], cx
+0x1408200fc  jnz     short loc_1408200F4
+0x1408200fe  lea     ebx, ds:21Ah[rax*2]
+0x140820105  mov     edx, ebx
+0x140820107  mov     r14d, ebx
+0x14082010a  call    AslAlloc
+0x14082010f  mov     r13, rax
+0x140820112  test    rax, rax
+0x140820115  jnz     short loc_140820129
+0x140820117  lea     r9, aFailedToAlloca_6; "Failed to allocate basic info."
+0x14082011e  mov     r8d, 4EAh
+0x140820124  jmp     loc_140820074
+0x140820129  mov     rcx, [rbp+Handle]; KeyHandle
+0x14082012d  lea     rax, [rbp+arg_10]
+0x140820131  mov     [rsp+40h+ResultLength], rax; ResultLength
+0x140820136  mov     r9, r13; KeyValueInformation
+0x140820139  xor     r8d, r8d; KeyValueInformationClass
+0x14082013c  mov     dword ptr [rsp+40h+Length], ebx; Length
+0x140820140  mov     edx, r12d; Index
+0x140820143  call    ZwEnumerateValueKey
+0x140820148  xor     r12d, r12d
+0x14082014b  mov     ebx, eax
+0x14082014d  test    eax, eax
+0x14082014f  jns     short loc_140820163
+0x140820151  lea     r9, aFailedToQueryB_0; "Failed to query basic info."
+0x140820158  mov     r8d, 4F5h
+0x14082015e  jmp     loc_140820079
+0x140820163  mov     eax, [rbp+arg_10]
+0x140820166  add     rax, 2
+0x14082016a  cmp     rax, r14
+0x14082016d  jbe     short loc_140820186
+0x14082016f  mov     ebx, 0C0000023h
+0x140820174  lea     r9, aBufferTooSmall_0; "Buffer too small to query basic info."
+0x14082017b  mov     r8d, 4FAh
+0x140820181  jmp     loc_140820079
+0x140820186  call    RtlGetNtSystemRoot
+0x14082018b  mov     rbx, rax
+0x14082018e  mov     r8, rsi
+0x140820191  inc     r8; MaxCount
+0x140820194  cmp     [rax+r8*2], r12w
+0x140820199  jnz     short loc_140820191
+0x14082019b  lea     rdx, [r13+0Ch]; Str2
+0x14082019f  mov     rcx, rbx; Str1
+0x1408201a2  call    _wcsnicmp
+0x1408201a7  test    eax, eax
+0x1408201a9  jnz     short loc_1408201E1
+0x1408201ab  inc     rsi
+0x1408201ae  cmp     [rbx+rsi*2], r12w
+0x1408201b3  jnz     short loc_1408201AB
+0x1408201b5  lea     rdx, ds:0Ch[rsi*2]
+0x1408201bd  add     rdx, r13
+0x1408201c0  lea     rcx, [rbp+var_10]
+0x1408201c4  call    AslPathToSystemPath
+0x1408201c9  mov     ebx, eax
+0x1408201cb  test    eax, eax
+0x1408201cd  jns     short loc_140820206
+0x1408201cf  lea     r9, aFailedToAlloca_2; "Failed to allocate or convert stub path"...
+0x1408201d6  mov     r8d, 50Eh
+0x1408201dc  jmp     loc_140820079
+0x1408201e1  lea     rdx, [r13+0Ch]
+0x1408201e5  lea     rcx, [rbp+var_10]
+0x1408201e9  call    AslStringDuplicate
+0x1408201ee  mov     ebx, eax
+0x1408201f0  test    eax, eax
+0x1408201f2  jns     short loc_140820206
+0x1408201f4  lea     r9, aFailedToDuplic; "Failed to duplicate stub path."
+0x1408201fb  mov     r8d, 515h
+0x140820201  jmp     loc_140820079
+0x140820206  mov     rax, [rbp+var_10]
+0x14082020a  test    rax, rax
+0x14082020d  jnz     short loc_140820221
+0x14082020f  lea     r9, aFailedToAlloca_10; "Failed to allocate stub path."
+0x140820216  mov     r8d, 51Ch
+0x14082021c  jmp     loc_140820074
+0x140820221  mov     rcx, [rbp+arg_0]
+0x140820225  mov     ebx, r12d
+0x140820228  mov     [rbp+var_10], r12
+0x14082022c  mov     [rcx], rax
+0x14082022f  jmp     loc_14081FFE7
+0x140820234  lea     r9, aFailedToQueryP; "Failed to query partial info."
+0x14082023b  mov     r8d, 4D9h
+0x140820241  jmp     loc_140820079
+```

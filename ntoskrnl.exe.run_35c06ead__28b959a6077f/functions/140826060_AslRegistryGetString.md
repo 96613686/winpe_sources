@@ -1,0 +1,221 @@
+# AslRegistryGetString
+
+- ea: `0x140826060`
+- end: `0x1408261fd`
+- name: `AslRegistryGetString`
+- size: `413`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `7`
+- tags: `registry_config`
+
+## callers
+
+- `0x14082024c`
+
+## callees
+
+- `0x1403f2d50`
+- `0x1406dab70`
+- `0x140826060`
+- `0x140978b4c`
+- `0x140979890`
+- `0x14097b68c`
+- `0x14097d158`
+
+## string_xrefs
+
+- `0x1408260e6`: `AslRegistryGetString`
+- `0x140826123`: `AslRegistryGetString`
+- `0x140826190`: `AslRegistryGetString`
+- `0x1408261d3`: `AslRegistryGetString`
+
+## pseudocode
+
+```c
+__int64 __fastcall AslRegistryGetString(_QWORD *a1, void *a2, const WCHAR *a3)
+{
+  NTSTATUS v5; // eax
+  __int64 v6; // rcx
+  unsigned int v7; // ebx
+  _WORD *v8; // rax
+  _WORD *v9; // rdi
+  NTSTATUS v10; // eax
+  const char *v11; // r9
+  int v12; // r8d
+  __int64 v13; // rcx
+  __int64 Length; // [rsp+20h] [rbp-48h]
+  __int64 Lengtha; // [rsp+20h] [rbp-48h]
+  UNICODE_STRING DestinationString; // [rsp+30h] [rbp-38h] BYREF
+  ULONG ResultLength; // [rsp+70h] [rbp+8h] BYREF
+
+  *a1 = 0;
+  ResultLength = 0;
+  DestinationString = 0;
+  RtlInitUnicodeString(&DestinationString, a3);
+  v5 = ZwQueryValueKey(a2, &DestinationString, KeyValuePartialInformation, 0, 0, &ResultLength);
+  v7 = v5;
+  if ( v5 == -2147483643 || v5 == -1073741789 )
+  {
+    ResultLength += 2;
+    v8 = (_WORD *)AslAlloc(v6, ResultLength);
+    v9 = v8;
+    if ( !v8 )
+    {
+      v7 = -1073741801;
+      AslLogCallPrintf(1, (unsigned int)"AslRegistryGetString", 1348, (unsigned int)"Out of memory");
+      return v7;
+    }
+    v10 = ZwQueryValueKey(a2, &DestinationString, KeyValuePartialInformation, v8, ResultLength, &ResultLength);
+    v7 = v10;
+    if ( v10 < 0 )
+    {
+      v11 = "Failed to query key value [%x]";
+      v12 = 1360;
+LABEL_13:
+      LODWORD(Lengtha) = v10;
+      AslLogCallPrintf(1, (unsigned int)"AslRegistryGetString", v12, (_DWORD)v11, Lengtha);
+      goto LABEL_14;
+    }
+    if ( (unsigned int)(*((_DWORD *)v9 + 1) - 1) <= 1 )
+    {
+      v9[((unsigned __int64)*((unsigned int *)v9 + 2) >> 1) + 6] = 0;
+      v10 = AslStringDuplicate(a1, v9 + 6);
+      v7 = v10;
+      if ( v10 < 0 )
+      {
+        v11 = "Out of memory [%x]";
+        v12 = 1378;
+        goto LABEL_13;
+      }
+    }
+    else
+    {
+      AslLogCallPrintf(1, (unsigned int)"AslRegistryGetString", 1368, (unsigned int)"Invalid value type");
+      v7 = -1073741788;
+    }
+LABEL_14:
+    AslFree(v13, v9);
+    return v7;
+  }
+  if ( v5 != -1073741772 )
+  {
+    LODWORD(Length) = v5;
+    AslLogCallPrintf(
+      1,
+      (unsigned int)"AslRegistryGetString",
+      1334,
+      (unsigned int)"Failed to query key value [%x]",
+      Length);
+  }
+  return v7;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140826060  push    rbx
+0x140826062  push    rsi
+0x140826063  push    rdi
+0x140826064  push    r14
+0x140826066  sub     rsp, 48h
+0x14082606a  mov     rsi, rdx
+0x14082606d  mov     qword ptr [rcx], 0
+0x140826074  mov     r14, rcx
+0x140826077  mov     [rsp+68h+arg_0], 0
+0x14082607f  xorps   xmm0, xmm0
+0x140826082  lea     rcx, [rsp+68h+DestinationString]; DestinationString
+0x140826087  mov     rdx, r8; SourceString
+0x14082608a  movups  xmmword ptr [rsp+68h+DestinationString.Length], xmm0
+0x14082608f  call    RtlInitUnicodeString
+0x140826094  xor     r9d, r9d; KeyValueInformation
+0x140826097  lea     rax, [rsp+68h+arg_0]
+0x14082609c  mov     [rsp+68h+ResultLength], rax; ResultLength
+0x1408260a1  lea     rdx, [rsp+68h+DestinationString]; ValueName
+0x1408260a6  mov     rcx, rsi; KeyHandle
+0x1408260a9  mov     dword ptr [rsp+68h+Length], 0; Length
+0x1408260b1  lea     r8d, [r9+2]; KeyValueInformationClass
+0x1408260b5  call    ZwQueryValueKey
+0x1408260ba  mov     ebx, eax
+0x1408260bc  cmp     eax, 80000005h
+0x1408260c1  jz      short loc_1408260FC
+0x1408260c3  cmp     eax, 0C0000023h
+0x1408260c8  jz      short loc_1408260FC
+0x1408260ca  cmp     eax, 0C0000034h
+0x1408260cf  jz      loc_1408261F0
+0x1408260d5  lea     r9, aFailedToQueryK; "Failed to query key value [%x]"
+0x1408260dc  mov     dword ptr [rsp+68h+Length], eax
+0x1408260e0  mov     r8d, 536h
+0x1408260e6  lea     rdx, aAslregistryget_2; "AslRegistryGetString"
+0x1408260ed  mov     ecx, 1
+0x1408260f2  call    AslLogCallPrintf
+0x1408260f7  jmp     loc_1408261F0
+0x1408260fc  mov     eax, [rsp+68h+arg_0]
+0x140826100  add     eax, 2
+0x140826103  mov     edx, eax
+0x140826105  mov     [rsp+68h+arg_0], eax
+0x140826109  call    AslAlloc
+0x14082610e  mov     rdi, rax
+0x140826111  test    rax, rax
+0x140826114  jnz     short loc_14082613C
+0x140826116  lea     r9, aOutOfMemory_0; "Out of memory"
+0x14082611d  mov     r8d, 544h
+0x140826123  lea     rdx, aAslregistryget_2; "AslRegistryGetString"
+0x14082612a  mov     ebx, 0C0000017h
+0x14082612f  lea     ecx, [rax+1]
+0x140826132  call    AslLogCallPrintf
+0x140826137  jmp     loc_1408261F0
+0x14082613c  lea     rax, [rsp+68h+arg_0]
+0x140826141  mov     r9, rdi; KeyValueInformation
+0x140826144  mov     [rsp+68h+ResultLength], rax; ResultLength
+0x140826149  lea     rdx, [rsp+68h+DestinationString]; ValueName
+0x14082614e  mov     eax, [rsp+68h+arg_0]
+0x140826152  mov     r8d, 2; KeyValueInformationClass
+0x140826158  mov     rcx, rsi; KeyHandle
+0x14082615b  mov     dword ptr [rsp+68h+Length], eax; Length
+0x14082615f  call    ZwQueryValueKey
+0x140826164  mov     ebx, eax
+0x140826166  test    eax, eax
+0x140826168  jns     short loc_140826179
+0x14082616a  lea     r9, aFailedToQueryK; "Failed to query key value [%x]"
+0x140826171  mov     r8d, 550h
+0x140826177  jmp     short loc_1408261D3
+0x140826179  mov     eax, [rdi+4]
+0x14082617c  dec     eax
+0x14082617e  cmp     eax, 1
+0x140826181  jbe     short loc_1408261A8
+0x140826183  lea     r9, aInvalidValueTy; "Invalid value type"
+0x14082618a  mov     r8d, 558h
+0x140826190  lea     rdx, aAslregistryget_2; "AslRegistryGetString"
+0x140826197  mov     ecx, 1
+0x14082619c  call    AslLogCallPrintf
+0x1408261a1  mov     ebx, 0C0000024h
+0x1408261a6  jmp     short loc_1408261E8
+0x1408261a8  mov     ecx, [rdi+8]
+0x1408261ab  lea     rdx, [rdi+0Ch]
+0x1408261af  shr     rcx, 1
+0x1408261b2  xor     eax, eax
+0x1408261b4  mov     [rdx+rcx*2], ax
+0x1408261b8  mov     rcx, r14
+0x1408261bb  call    AslStringDuplicate
+0x1408261c0  mov     ebx, eax
+0x1408261c2  test    eax, eax
+0x1408261c4  jns     short loc_1408261E8
+0x1408261c6  lea     r9, aOutOfMemoryX; "Out of memory [%x]"
+0x1408261cd  mov     r8d, 562h
+0x1408261d3  lea     rdx, aAslregistryget_2; "AslRegistryGetString"
+0x1408261da  mov     dword ptr [rsp+68h+Length], eax
+0x1408261de  mov     ecx, 1
+0x1408261e3  call    AslLogCallPrintf
+0x1408261e8  mov     rdx, rdi
+0x1408261eb  call    AslFree
+0x1408261f0  mov     eax, ebx
+0x1408261f2  add     rsp, 48h
+0x1408261f6  pop     r14
+0x1408261f8  pop     rdi
+0x1408261f9  pop     rsi
+0x1408261fa  pop     rbx
+0x1408261fb  retn
+```

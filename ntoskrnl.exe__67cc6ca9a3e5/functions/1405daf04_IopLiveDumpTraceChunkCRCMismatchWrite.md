@@ -1,0 +1,97 @@
+# IopLiveDumpTraceChunkCRCMismatchWrite
+
+- ea: `0x1405daf04`
+- end: `0x1405daf97`
+- name: `IopLiveDumpTraceChunkCRCMismatchWrite`
+- size: `147`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x14048abdc`
+
+## callees
+
+- `0x1405db0c8`
+
+## string_xrefs
+
+- `0x1405daf58`: `WriteLength`
+- `0x1405daf1f`: `ChunkCRCMismatchWrite`
+- `0x1405daf3a`: `WriteComplete`
+- `0x1405daf4d`: `WriteBufferCRC`
+
+## pseudocode
+
+```c
+__int64 __fastcall IopLiveDumpTraceChunkCRCMismatchWrite(
+        __int64 a1,
+        __int64 a2,
+        int a3,
+        __int64 a4,
+        unsigned int a5,
+        __int64 a6)
+{
+  _QWORD v7[6]; // [rsp+20h] [rbp-60h] BYREF
+  _QWORD v8[6]; // [rsp+50h] [rbp-30h] BYREF
+
+  v7[0] = a1;
+  v8[0] = L"ChunkIndex";
+  v7[1] = a2;
+  v8[1] = L"ChunkCRC";
+  v7[3] = a4;
+  v8[2] = L"WriteComplete";
+  v8[3] = L"WriteBufferCRC";
+  v8[4] = L"WriteLength";
+  v8[5] = L"ByteOffset";
+  v7[2] = a3;
+  v7[4] = a5;
+  v7[5] = a6;
+  return ((__int64 (__fastcall *)(const wchar_t *, __int64, _QWORD *, _QWORD *))IopLiveDumpTraceEventGeneric)(
+           L"ChunkCRCMismatchWrite",
+           6,
+           v8,
+           v7);
+}
+
+```
+
+## disassembly
+
+```asm
+0x1405daf04  push    rbp
+0x1405daf06  mov     rbp, rsp
+0x1405daf09  sub     rsp, 80h
+0x1405daf10  lea     rax, aChunkindex; "ChunkIndex"
+0x1405daf17  mov     [rbp+var_60], rcx
+0x1405daf1b  mov     [rbp+var_30], rax
+0x1405daf1f  lea     rcx, aChunkcrcmismat; "ChunkCRCMismatchWrite"
+0x1405daf26  lea     rax, aChunkcrc; "ChunkCRC"
+0x1405daf2d  mov     [rbp+var_58], rdx
+0x1405daf31  mov     [rbp+var_28], rax
+0x1405daf35  mov     edx, 6
+0x1405daf3a  lea     rax, aWritecomplete; "WriteComplete"
+0x1405daf41  mov     [rbp+var_48], r9
+0x1405daf45  mov     [rbp+var_20], rax
+0x1405daf49  lea     r9, [rbp+var_60]
+0x1405daf4d  lea     rax, aWritebuffercrc; "WriteBufferCRC"
+0x1405daf54  mov     [rbp+var_18], rax
+0x1405daf58  lea     rax, aWritelength; "WriteLength"
+0x1405daf5f  mov     [rbp+var_10], rax
+0x1405daf63  lea     rax, aByteoffset; "ByteOffset"
+0x1405daf6a  mov     [rbp+var_8], rax
+0x1405daf6e  movsxd  rax, r8d
+0x1405daf71  lea     r8, [rbp+var_30]
+0x1405daf75  mov     [rbp+var_50], rax
+0x1405daf79  mov     eax, [rbp+arg_20]
+0x1405daf7c  mov     [rbp+var_40], rax
+0x1405daf80  mov     rax, [rbp+arg_28]
+0x1405daf84  mov     [rbp+var_38], rax
+0x1405daf88  call    IopLiveDumpTraceEventGeneric
+0x1405daf8d  add     rsp, 80h
+0x1405daf94  pop     rbp
+0x1405daf95  retn
+```

@@ -1,0 +1,179 @@
+# _MapCmDevicePropertyToRegValue
+
+- ea: `0x140425dc0`
+- end: `0x140425ec6`
+- name: `_MapCmDevicePropertyToRegValue`
+- size: `262`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x1408d9174`
+
+## callees
+
+- `0x140425dc0`
+
+## string_xrefs
+
+- `0x140425e18`: `Service`
+- `0x140425e2a`: `CompatibleIDs`
+- `0x140425e0f`: `ConfigFlags`
+- `0x140425e84`: `Security`
+
+## pseudocode
+
+```c
+const wchar_t *__fastcall MapCmDevicePropertyToRegValue(__int64 a1, int a2)
+{
+  const wchar_t *result; // rax
+
+  switch ( a2 )
+  {
+    case 2:
+      return L"HardwareID";
+    case 10:
+      return L"Driver";
+    case 11:
+      return L"ConfigFlags";
+  }
+  switch ( a2 )
+  {
+    case 1:
+      result = L"DeviceDesc";
+      break;
+    case 3:
+      result = L"CompatibleIDs";
+      break;
+    case 5:
+      result = L"Service";
+      break;
+    case 8:
+      result = L"Class";
+      break;
+    case 9:
+      result = L"ClassGUID";
+      break;
+    case 12:
+      result = L"Mfg";
+      break;
+    case 13:
+      result = L"FriendlyName";
+      break;
+    case 14:
+      result = L"LocationInformation";
+      break;
+    case 16:
+      result = L"Capabilities";
+      break;
+    case 17:
+      result = L"UINumber";
+      break;
+    case 18:
+      result = L"UpperFilters";
+      break;
+    case 19:
+      result = L"LowerFilters";
+      break;
+    case 24:
+      result = L"Security";
+      break;
+    case 26:
+      result = L"DeviceType";
+      break;
+    case 27:
+      result = L"Exclusive";
+      break;
+    case 28:
+      result = L"DeviceCharacteristics";
+      break;
+    case 29:
+      result = L"Address";
+      break;
+    case 30:
+      result = L"UINumberDescFormat";
+      break;
+    case 34:
+      result = L"RemovalPolicy";
+      break;
+    case 37:
+      result = L"ContainerID";
+      break;
+    default:
+      result = 0;
+      break;
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140425dc0  cmp     edx, 2
+0x140425dc3  jz      short loc_140425DFD
+0x140425dc5  cmp     edx, 0Ah
+0x140425dc8  jz      short loc_140425E06
+0x140425dca  cmp     edx, 0Bh
+0x140425dcd  jz      short loc_140425E0F
+0x140425dcf  dec     edx; switch 37 cases
+0x140425dd1  cmp     edx, 24h
+0x140425dd4  ja      def_140425DEE; jumptable 0000000140425DEE default case, cases 2,4,6,7,10,11,15,20-23,25,31-33,35,36
+0x140425dda  movsxd  rax, edx
+0x140425ddd  lea     rdx, cs:140000000h
+0x140425de4  mov     ecx, ds:(jpt_140425DEE - 140000000h)[rdx+rax*4]
+0x140425deb  add     rcx, rdx
+0x140425dee  jmp     rcx; switch jump
+0x140425df4  lea     rax, aDevicedesc; jumptable 0000000140425DEE case 1
+0x140425dfb  retn
+0x140425dfd  lea     rax, aHardwareid; "HardwareID"
+0x140425e04  retn
+0x140425e06  lea     rax, aDriver_2; "Driver"
+0x140425e0d  retn
+0x140425e0f  lea     rax, aConfigflags_0; "ConfigFlags"
+0x140425e16  retn
+0x140425e18  lea     rax, aService; jumptable 0000000140425DEE case 5
+0x140425e1f  retn
+0x140425e21  lea     rax, aFriendlyname_0; jumptable 0000000140425DEE case 13
+0x140425e28  retn
+0x140425e2a  lea     rax, aCompatibleids; jumptable 0000000140425DEE case 3
+0x140425e31  retn
+0x140425e33  lea     rax, aUpperfilters; jumptable 0000000140425DEE case 18
+0x140425e3a  retn
+0x140425e3c  lea     rax, aLowerfilters_0; jumptable 0000000140425DEE case 19
+0x140425e43  retn
+0x140425e45  lea     rax, aMfg; jumptable 0000000140425DEE case 12
+0x140425e4c  retn
+0x140425e4e  lea     rax, aContainerid_0; jumptable 0000000140425DEE case 37
+0x140425e55  retn
+0x140425e57  lea     rax, aUinumber; jumptable 0000000140425DEE case 17
+0x140425e5e  retn
+0x140425e60  lea     rax, aCapabilities_0; jumptable 0000000140425DEE case 16
+0x140425e67  retn
+0x140425e69  lea     rax, aAddress; jumptable 0000000140425DEE case 29
+0x140425e70  retn
+0x140425e72  lea     rax, aLocationinform; jumptable 0000000140425DEE case 14
+0x140425e79  retn
+0x140425e7b  lea     rax, aDevicecharacte_0; jumptable 0000000140425DEE case 28
+0x140425e82  retn
+0x140425e84  lea     rax, aSecurity_1; jumptable 0000000140425DEE case 24
+0x140425e8b  retn
+0x140425e8d  lea     rax, aRemovalpolicy; jumptable 0000000140425DEE case 34
+0x140425e94  retn
+0x140425e96  lea     rax, aDevicetype; jumptable 0000000140425DEE case 26
+0x140425e9d  retn
+0x140425e9f  lea     rax, aExclusive_0; jumptable 0000000140425DEE case 27
+0x140425ea6  retn
+0x140425ea8  lea     rax, aUinumberdescfo; jumptable 0000000140425DEE case 30
+0x140425eaf  retn
+0x140425eb1  lea     rax, aClassguid; jumptable 0000000140425DEE case 9
+0x140425eb8  retn
+0x140425eba  lea     rax, aClass_0; jumptable 0000000140425DEE case 8
+0x140425ec1  retn
+0x140425ec3  xor     eax, eax; jumptable 0000000140425DEE default case, cases 2,4,6,7,10,11,15,20-23,25,31-33,35,36
+0x140425ec5  retn
+```

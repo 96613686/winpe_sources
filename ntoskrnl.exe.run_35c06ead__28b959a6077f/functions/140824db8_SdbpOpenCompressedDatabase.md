@@ -1,0 +1,277 @@
+# SdbpOpenCompressedDatabase
+
+- ea: `0x140824db8`
+- end: `0x140824f78`
+- name: `SdbpOpenCompressedDatabase`
+- size: `448`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `8`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x14081f9a4`
+
+## callees
+
+- `0x1406e8590`
+- `0x140824db8`
+- `0x140978e20`
+- `0x140979890`
+- `0x14097b3f4`
+- `0x14097b68c`
+- `0x14097cedc`
+- `0x14097d158`
+
+## string_xrefs
+
+- `0x140824f50`: `Failed to read expanded database header`
+- `0x140824e7d`: `SdbpOpenCompressedDatabase failed to allocate expanded buffer - out of memory`
+- `0x140824e58`: `SDB compression algorithm does not match callback algorithm.`
+- `0x140824e3e`: `SDB is not compressed`
+- `0x140824e02`: `SdbpOpenCompressedDatabase`
+- `0x140824ec4`: `SdbpOpenCompressedDatabase`
+
+## pseudocode
+
+```c
+__int64 __fastcall SdbpOpenCompressedDatabase(__int64 *a1, __int64 a2, unsigned int a3)
+{
+  unsigned int v3; // ebp
+  __int64 v4; // rbx
+  __int64 v8; // r14
+  _DWORD *v9; // rcx
+  __int64 v10; // rsi
+  __int64 v11; // rcx
+  __int64 result; // rax
+  __int64 v13; // rax
+  unsigned int v14; // [rsp+60h] [rbp+8h] BYREF
+
+  v3 = 0;
+  v4 = 0;
+  v14 = 0;
+  if ( a2 )
+  {
+    *(_QWORD *)a2 = 0;
+    *(_DWORD *)(a2 + 8) = 0;
+  }
+  if ( !g_ExpandCallback )
+  {
+    AslLogCallPrintf(
+      1,
+      (unsigned int)"SdbpOpenCompressedDatabase",
+      175,
+      (unsigned int)"No expand callback method set. Cannot expand ZDB file.");
+    goto LABEL_18;
+  }
+  v8 = *a1;
+  if ( *(_DWORD *)(*a1 + 20) >= 0x14u )
+  {
+    v9 = *(_DWORD **)(v8 + 8);
+    if ( v9[2] == 1717724282 )
+    {
+      if ( v9[3] == g_ExpectedAlgorithm )
+      {
+        v14 = v9[4];
+        v10 = AslAlloc(v9, v14);
+        if ( v10 )
+        {
+          if ( (unsigned int)guard_dispatch_icall_no_overrides(
+                               v10,
+                               &v14,
+                               *(_QWORD *)(v8 + 8) + 20LL,
+                               (unsigned int)(*(_DWORD *)(v8 + 20) - 20)) )
+          {
+            v13 = SdbpOpenDatabaseInMemory(v10, v14, a3);
+            v4 = v13;
+            if ( v13 )
+            {
+              *(_DWORD *)(v13 + 24) |= 4u;
+              if ( !a2 || (unsigned int)SdbpReadMappedData(v13, 0, a2, 12) )
+              {
+                *(_DWORD *)(v4 + 24) |= 8u;
+                v3 = 1;
+                v14 = 0;
+                goto LABEL_18;
+              }
+              AslLogCallPrintf(
+                1,
+                (unsigned int)"SdbpOpenCompressedDatabase",
+                238,
+                (unsigned int)"Failed to read expanded database header");
+            }
+          }
+          else
+          {
+            AslLogCallPrintf(
+              1,
+              (unsigned int)"SdbpOpenCompressedDatabase",
+              221,
+              (unsigned int)"Expand callback failed to expand SDB");
+          }
+          AslFree(v11, v10);
+          v14 = 0;
+          if ( v4 )
+          {
+            *(_QWORD *)(v4 + 8) = 0;
+            SdbCloseDatabaseRead(v4);
+            v4 = 0;
+          }
+        }
+        else
+        {
+          AslLogCallPrintf(
+            1,
+            (unsigned int)"SdbpOpenCompressedDatabase",
+            211,
+            (unsigned int)"SdbpOpenCompressedDatabase failed to allocate expanded buffer - out of memory");
+        }
+      }
+      else
+      {
+        AslLogCallPrintf(
+          1,
+          (unsigned int)"SdbpOpenCompressedDatabase",
+          192,
+          (unsigned int)"SDB compression algorithm does not match callback algorithm.");
+      }
+    }
+    else
+    {
+      AslLogCallPrintf(1, (unsigned int)"SdbpOpenCompressedDatabase", 187, (unsigned int)"SDB is not compressed");
+    }
+  }
+  else
+  {
+    AslLogCallPrintf(1, (unsigned int)"SdbpOpenCompressedDatabase", 180, (unsigned int)"SDB file too small to be valid");
+  }
+LABEL_18:
+  SdbCloseDatabaseRead(*a1);
+  result = v3;
+  *a1 = v4;
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140824db8  mov     [rsp+arg_8], rbx
+0x140824dbd  mov     [rsp+arg_10], rbp
+0x140824dc2  push    rsi
+0x140824dc3  push    rdi
+0x140824dc4  push    r12
+0x140824dc6  push    r14
+0x140824dc8  push    r15
+0x140824dca  sub     rsp, 30h
+0x140824dce  xor     ebp, ebp
+0x140824dd0  xor     ebx, ebx
+0x140824dd2  mov     [rsp+58h+arg_0], ebp
+0x140824dd6  mov     r12d, r8d
+0x140824dd9  mov     rdi, rdx
+0x140824ddc  mov     r15, rcx
+0x140824ddf  test    rdx, rdx
+0x140824de2  jz      short loc_140824DEC
+0x140824de4  xor     eax, eax
+0x140824de6  mov     [rdx], rax
+0x140824de9  mov     [rdx+8], eax
+0x140824dec  cmp     cs:g_ExpandCallback, rbx
+0x140824df3  jnz     short loc_140824E18
+0x140824df5  lea     r9, aNoExpandCallba; "No expand callback method set. Cannot e"...
+0x140824dfc  mov     r8d, 0AFh
+0x140824e02  lea     rdx, aSdbpopencompre_0; "SdbpOpenCompressedDatabase"
+0x140824e09  mov     ecx, 1
+0x140824e0e  call    AslLogCallPrintf
+0x140824e13  jmp     loc_140824EF4
+0x140824e18  mov     r14, [rcx]
+0x140824e1b  cmp     dword ptr [r14+14h], 14h
+0x140824e20  jnb     short loc_140824E31
+0x140824e22  lea     r9, aSdbFileTooSmal; "SDB file too small to be valid"
+0x140824e29  mov     r8d, 0B4h
+0x140824e2f  jmp     short loc_140824E02
+0x140824e31  mov     rcx, [r14+8]
+0x140824e35  cmp     dword ptr [rcx+8], 6662647Ah
+0x140824e3c  jz      short loc_140824E4D
+0x140824e3e  lea     r9, aSdbIsNotCompre; "SDB is not compressed"
+0x140824e45  mov     r8d, 0BBh
+0x140824e4b  jmp     short loc_140824E02
+0x140824e4d  mov     eax, cs:g_ExpectedAlgorithm
+0x140824e53  cmp     [rcx+0Ch], eax
+0x140824e56  jz      short loc_140824E67
+0x140824e58  lea     r9, aSdbCompression; "SDB compression algorithm does not matc"...
+0x140824e5f  mov     r8d, 0C0h
+0x140824e65  jmp     short loc_140824E02
+0x140824e67  mov     eax, [rcx+10h]
+0x140824e6a  mov     edx, eax
+0x140824e6c  mov     [rsp+58h+arg_0], eax
+0x140824e70  call    AslAlloc
+0x140824e75  mov     rsi, rax
+0x140824e78  test    rax, rax
+0x140824e7b  jnz     short loc_140824E8F
+0x140824e7d  lea     r9, aSdbpopencompre_1; "SdbpOpenCompressedDatabase failed to al"...
+0x140824e84  mov     r8d, 0D3h
+0x140824e8a  jmp     loc_140824E02
+0x140824e8f  mov     r9d, [r14+14h]
+0x140824e93  lea     rdx, [rsp+58h+arg_0]
+0x140824e98  mov     r8, [r14+8]
+0x140824e9c  sub     r9d, 14h
+0x140824ea0  mov     rax, cs:g_ExpandCallback
+0x140824ea7  add     r8, 14h
+0x140824eab  mov     rcx, rsi
+0x140824eae  call    _guard_dispatch_icall_no_overrides
+0x140824eb3  test    eax, eax
+0x140824eb5  jnz     short loc_140824F19
+0x140824eb7  lea     r9, aExpandCallback; "Expand callback failed to expand SDB"
+0x140824ebe  mov     r8d, 0DDh
+0x140824ec4  lea     rdx, aSdbpopencompre_0; "SdbpOpenCompressedDatabase"
+0x140824ecb  mov     ecx, 1
+0x140824ed0  call    AslLogCallPrintf
+0x140824ed5  mov     rdx, rsi
+0x140824ed8  call    AslFree
+0x140824edd  mov     [rsp+58h+arg_0], ebp
+0x140824ee1  test    rbx, rbx
+0x140824ee4  jz      short loc_140824EF4
+0x140824ee6  mov     rcx, rbx
+0x140824ee9  mov     [rbx+8], rbp
+0x140824eed  call    SdbCloseDatabaseRead
+0x140824ef2  xor     ebx, ebx
+0x140824ef4  mov     rcx, [r15]
+0x140824ef7  call    SdbCloseDatabaseRead
+0x140824efc  mov     eax, ebp
+0x140824efe  mov     [r15], rbx
+0x140824f01  mov     rbp, [rsp+58h+arg_10]
+0x140824f06  mov     rbx, [rsp+58h+arg_8]
+0x140824f0b  add     rsp, 30h
+0x140824f0f  pop     r15
+0x140824f11  pop     r14
+0x140824f13  pop     r12
+0x140824f15  pop     rdi
+0x140824f16  pop     rsi
+0x140824f17  retn
+0x140824f19  mov     edx, [rsp+58h+arg_0]
+0x140824f1d  mov     r8d, r12d
+0x140824f20  mov     rcx, rsi
+0x140824f23  call    SdbpOpenDatabaseInMemory
+0x140824f28  mov     rbx, rax
+0x140824f2b  test    rax, rax
+0x140824f2e  jz      short loc_140824ED5
+0x140824f30  or      dword ptr [rax+18h], 4
+0x140824f34  test    rdi, rdi
+0x140824f37  jz      short loc_140824F62
+0x140824f39  mov     r9d, 0Ch
+0x140824f3f  mov     r8, rdi
+0x140824f42  xor     edx, edx
+0x140824f44  mov     rcx, rax
+0x140824f47  call    SdbpReadMappedData
+0x140824f4c  test    eax, eax
+0x140824f4e  jnz     short loc_140824F62
+0x140824f50  lea     r9, aFailedToReadEx; "Failed to read expanded database header"
+0x140824f57  mov     r8d, 0EEh
+0x140824f5d  jmp     loc_140824EC4
+0x140824f62  or      dword ptr [rbx+18h], 8
+0x140824f66  mov     ebp, 1
+0x140824f6b  mov     [rsp+58h+arg_0], 0
+0x140824f73  jmp     loc_140824EF4
+```

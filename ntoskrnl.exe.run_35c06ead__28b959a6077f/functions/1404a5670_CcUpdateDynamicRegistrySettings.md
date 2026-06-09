@@ -1,0 +1,1157 @@
+# CcUpdateDynamicRegistrySettings
+
+- ea: `0x1404a5670`
+- end: `0x1404a5fb6`
+- name: `CcUpdateDynamicRegistrySettings`
+- size: `2374`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `8`
+- tags: `reparse_path, authz_impersonation, registry_config, installer_update, broker_com_uri`
+
+## callees
+
+- `0x14020fe90`
+- `0x1404a5670`
+- `0x1406d9d70`
+- `0x1406daa70`
+- `0x1406daad0`
+- `0x1406dab70`
+- `0x140bae320`
+- `0x140bae8e0`
+
+## string_xrefs
+
+- `0x1404a5732`: `\Registry\Machine\System\CurrentControlSet\Control\Session Manager\Memory Management`
+- `0x1404a57a5`: `LazyWriterPercentageOfNumProcs`
+- `0x1404a56c3`: `CcUpdateDynamicRegistrySettings: Updating Dynamic Registry Keys under: "%wZ"\n`
+- `0x1404a594d`: `MaxLazyWritePages`
+- `0x1404a580f`: `LargeWriteSize`
+- `0x1404a5879`: `SoftThrottleLargeWriteAtPct`
+- `0x1404a5af5`: `DisableCacheTelemetry`
+- `0x1404a5b5f`: `EnableAsyncLazywrite`
+- `0x1404a5bc9`: `EnableAsyncLazywriteMulti`
+- `0x1404a5f8d`: `CcUpdateDynamicRegistrySettings: Setting EnableAsyncLazywrite requires per-Volume Lazywriter is to be enabled!\n`
+- `0x1407193f6`: `CcUpdateDynamicRegistrySettings: Ignoring invalid EnableAsyncLazywrite(0x%04lx), no change to current value (0x%04lx)\n`
+- `0x1404a5cbd`: `CcUpdateDynamicRegistrySettings(1/2): \n	TopBottom                      : 0x%04lx(%s)\n	LazyWriterPct                  : 0x%04lx(%s) (unsupported)\n	LargeWriteSize                 : 0x%04lx(%s)\n	SoftThrottleAt                 : 0x%04lx(%s)\n	SoftThrottleDelay              : 0x%04lx(%s)\n	MaxLazyWritePages              : 0x%04lx(%s)\n`
+- `0x1404a5d0e`: `CcUpdateDynamicRegistrySettings(2/2): \n	PeriodicTelmetrySampleFrequency: 0x%04lx(%s)\n	PeriodicTelmetryReportFrequency: 0x%04lx(%s)\n	DisableCacheTelemetry          : 0x%04lx(%s)\n	EnableAsyncLazywrite           : 0x%04lx(%s)\n	EnableAsyncLazywriteMulti      : 0x%04lx(%s)\n`
+- `0x140719440`: `CcUpdateDynamicRegistrySettings: Setting EnableAsyncLazywriteMulti requires per-Volume Lazywriter and (simple) Async Lazywriter to be enabled!\n`
+- `0x14071945c`: `CcUpdateDynamicRegistrySettings: Ignoring invalid EnableAsyncLazywriteMulti(0x%04lx), no change to current value (0x%04lx)\n`
+
+## pseudocode
+
+```c
+void __fastcall CcUpdateDynamicRegistrySettings(__int64 a1)
+{
+  int v1; // ebx
+  unsigned int *p_P; // rdi
+  char v3; // si
+  unsigned int v4; // r12d
+  int v5; // r13d
+  int v6; // r15d
+  const char *v7; // rbx
+  const char *v8; // r10
+  const char *v9; // r9
+  const char *v10; // r8
+  const char *v11; // rdx
+  const char *v12; // rcx
+  const char *v13; // rax
+  unsigned int v14; // r14d
+  const char *v15; // r8
+  const char *v16; // rdx
+  const char *v17; // rcx
+  const char *v18; // rax
+  __int64 v19; // rbx
+  ULONG v20; // r14d
+  ULONG v21; // r14d
+  ULONG v22; // r14d
+  ULONG v23; // r14d
+  ULONG v24; // r14d
+  ULONG v25; // r14d
+  ULONG v26; // r14d
+  ULONG v27; // r14d
+  ULONG v28; // r14d
+  ULONG v29; // r14d
+  ULONG v30; // r14d
+  ULONG i; // r14d
+  int v32; // ecx
+  NTSTATUS v33; // eax
+  int v34; // r15d
+  unsigned int *PoolWithTag; // r15
+  NTSTATUS v36; // eax
+  int v37; // r15d
+  unsigned int *v38; // r15
+  __int64 v39; // rax
+  NTSTATUS v40; // eax
+  int v41; // r15d
+  unsigned int *v42; // r15
+  NTSTATUS v43; // eax
+  int v44; // r15d
+  unsigned int *v45; // r15
+  NTSTATUS v46; // eax
+  int v47; // r15d
+  unsigned int *v48; // r15
+  NTSTATUS v49; // eax
+  int v50; // r15d
+  unsigned int *v51; // r15
+  NTSTATUS v52; // eax
+  int v53; // r15d
+  unsigned int *v54; // r15
+  NTSTATUS v55; // eax
+  int v56; // r15d
+  unsigned int *v57; // r15
+  __int64 v58; // rax
+  NTSTATUS v59; // eax
+  int v60; // r15d
+  unsigned int *v61; // r15
+  NTSTATUS v62; // eax
+  int v63; // r15d
+  unsigned int *v64; // r15
+  NTSTATUS v65; // eax
+  int v66; // r15d
+  unsigned int *v67; // r15
+  NTSTATUS v68; // eax
+  int v69; // r15d
+  unsigned int *v70; // rbx
+  ULONG Length[2]; // [rsp+20h] [rbp-E0h]
+  PULONG ResultLength; // [rsp+28h] [rbp-D8h]
+  __int64 v73; // [rsp+38h] [rbp-C8h]
+  __int64 v74; // [rsp+48h] [rbp-B8h]
+  __int64 v75; // [rsp+58h] [rbp-A8h]
+  char v76; // [rsp+80h] [rbp-80h]
+  char v77; // [rsp+81h] [rbp-7Fh]
+  char v78; // [rsp+82h] [rbp-7Eh]
+  char v79; // [rsp+83h] [rbp-7Dh]
+  char v80; // [rsp+84h] [rbp-7Ch]
+  char v81; // [rsp+85h] [rbp-7Bh]
+  char v82; // [rsp+86h] [rbp-7Ah]
+  char v83; // [rsp+87h] [rbp-79h]
+  char v84; // [rsp+88h] [rbp-78h]
+  char v85; // [rsp+89h] [rbp-77h]
+  UNICODE_STRING ValueName; // [rsp+90h] [rbp-70h] BYREF
+  char v87; // [rsp+A0h] [rbp-60h]
+  char v88; // [rsp+A1h] [rbp-5Fh]
+  int v89; // [rsp+A4h] [rbp-5Ch]
+  int v90; // [rsp+A8h] [rbp-58h]
+  int v91; // [rsp+ACh] [rbp-54h]
+  unsigned int v92; // [rsp+B0h] [rbp-50h]
+  int v93; // [rsp+B4h] [rbp-4Ch]
+  _DWORD v94[2]; // [rsp+B8h] [rbp-48h] BYREF
+  const WCHAR *v95; // [rsp+C0h] [rbp-40h]
+  ULONG v96; // [rsp+C8h] [rbp-38h] BYREF
+  ULONG v97; // [rsp+CCh] [rbp-34h] BYREF
+  ULONG v98; // [rsp+D0h] [rbp-30h] BYREF
+  ULONG v99; // [rsp+D4h] [rbp-2Ch] BYREF
+  ULONG v100; // [rsp+D8h] [rbp-28h] BYREF
+  ULONG v101; // [rsp+DCh] [rbp-24h] BYREF
+  ULONG v102; // [rsp+E0h] [rbp-20h] BYREF
+  ULONG v103; // [rsp+E4h] [rbp-1Ch] BYREF
+  ULONG v104; // [rsp+E8h] [rbp-18h] BYREF
+  ULONG v105; // [rsp+ECh] [rbp-14h] BYREF
+  int v106; // [rsp+F0h] [rbp-10h]
+  int v107; // [rsp+F4h] [rbp-Ch]
+  unsigned int v108; // [rsp+F8h] [rbp-8h]
+  unsigned int v109; // [rsp+FCh] [rbp-4h]
+  unsigned int v110; // [rsp+100h] [rbp+0h]
+  ULONG v111; // [rsp+104h] [rbp+4h] BYREF
+  ULONG v112; // [rsp+108h] [rbp+8h] BYREF
+  HANDLE v113; // [rsp+110h] [rbp+10h] BYREF
+  HANDLE v114; // [rsp+118h] [rbp+18h] BYREF
+  HANDLE v115; // [rsp+120h] [rbp+20h] BYREF
+  HANDLE v116; // [rsp+128h] [rbp+28h] BYREF
+  HANDLE v117; // [rsp+130h] [rbp+30h] BYREF
+  HANDLE v118; // [rsp+138h] [rbp+38h] BYREF
+  HANDLE v119; // [rsp+140h] [rbp+40h] BYREF
+  HANDLE v120; // [rsp+148h] [rbp+48h] BYREF
+  HANDLE v121; // [rsp+150h] [rbp+50h] BYREF
+  HANDLE v122; // [rsp+158h] [rbp+58h] BYREF
+  HANDLE KeyHandle; // [rsp+160h] [rbp+60h] BYREF
+  HANDLE Handle; // [rsp+168h] [rbp+68h] BYREF
+  OBJECT_ATTRIBUTES ObjectAttributes; // [rsp+170h] [rbp+70h] BYREF
+  OBJECT_ATTRIBUTES v126; // [rsp+1A0h] [rbp+A0h] BYREF
+  OBJECT_ATTRIBUTES v127; // [rsp+1D0h] [rbp+D0h] BYREF
+  OBJECT_ATTRIBUTES v128; // [rsp+200h] [rbp+100h] BYREF
+  OBJECT_ATTRIBUTES v129; // [rsp+230h] [rbp+130h] BYREF
+  OBJECT_ATTRIBUTES v130; // [rsp+260h] [rbp+160h] BYREF
+  OBJECT_ATTRIBUTES v131; // [rsp+290h] [rbp+190h] BYREF
+  OBJECT_ATTRIBUTES v132; // [rsp+2C0h] [rbp+1C0h] BYREF
+  OBJECT_ATTRIBUTES v133; // [rsp+2F0h] [rbp+1F0h] BYREF
+  OBJECT_ATTRIBUTES v134; // [rsp+320h] [rbp+220h] BYREF
+  OBJECT_ATTRIBUTES v135; // [rsp+350h] [rbp+250h] BYREF
+  OBJECT_ATTRIBUTES v136; // [rsp+380h] [rbp+280h] BYREF
+  char P; // [rsp+3B0h] [rbp+2B0h] BYREF
+
+  v108 = 0;
+  v76 = 0;
+  v1 = 156;
+  v107 = 0;
+  v87 = 0;
+  v106 = 0;
+  v94[1] = 0;
+  v77 = 0;
+  *(_DWORD *)(&ValueName.MaximumLength + 1) = 0;
+  p_P = (unsigned int *)&P;
+  v89 = 0;
+  v3 = 0;
+  v78 = 0;
+  v90 = 0;
+  v4 = 0;
+  v79 = 0;
+  v5 = 0;
+  v91 = 0;
+  v80 = 0;
+  v109 = 0;
+  v81 = 0;
+  v110 = 0;
+  v88 = 0;
+  v92 = 0;
+  v82 = 0;
+  v93 = 0;
+  v83 = 0;
+  v84 = 0;
+  v85 = 0;
+  DbgPrintEx(0x7Fu, 2u, "CcUpdateDynamicRegistrySettings: Updating Dynamic Registry Keys under: \"%wZ\"\n", a1 + 56);
+  v94[0] = 11141288;
+  v95 = L"\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Session Manager\\Memory Management";
+  *(_DWORD *)&ValueName.Length = 2359330;
+  ValueName.Buffer = L"TopBottomDPTEqual";
+  KeyHandle = 0;
+  ObjectAttributes.ObjectName = (PUNICODE_STRING)v94;
+  v111 = 0;
+  *(_QWORD *)&ObjectAttributes.Length = 48;
+  *(_QWORD *)&ObjectAttributes.Attributes = 576;
+  ObjectAttributes.RootDirectory = 0;
+  *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&KeyHandle, 0x20019u, &ObjectAttributes) >= 0 )
+  {
+    v20 = 156;
+    while ( 1 )
+    {
+      v33 = ZwQueryValueKey(KeyHandle, &ValueName, KeyValueFullInformation, p_P, v20, &v111);
+      v34 = v33;
+      if ( v33 != -1073741789 && v33 != -2147483643 )
+        break;
+      if ( v20 != v1 )
+        break;
+      v20 = v111;
+      if ( v111 > 0x40000 || (PoolWithTag = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v111, 0x78666343u)) == 0 )
+      {
+        v34 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = PoolWithTag;
+      v1 = v20;
+      v3 = 1;
+    }
+    ZwClose(KeyHandle);
+    if ( v34 >= 0 )
+    {
+      if ( p_P[3] )
+      {
+        v108 = *(unsigned int *)((char *)p_P + p_P[2]);
+        if ( v108 < 3 )
+          v76 = 1;
+      }
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 4063292;
+  ValueName.Buffer = L"LazyWriterPercentageOfNumProcs";
+  Handle = 0;
+  v126.ObjectName = (PUNICODE_STRING)v94;
+  v112 = 0;
+  *(_QWORD *)&v126.Length = 48;
+  *(_QWORD *)&v126.Attributes = 576;
+  v126.RootDirectory = 0;
+  *(_OWORD *)&v126.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&Handle, 0x20019u, &v126) >= 0 )
+  {
+    v21 = v1;
+    while ( 1 )
+    {
+      v36 = ZwQueryValueKey(Handle, &ValueName, KeyValueFullInformation, p_P, v21, &v112);
+      v37 = v36;
+      if ( v36 != -1073741789 && v36 != -2147483643 )
+        break;
+      if ( v21 != v1 )
+        break;
+      v21 = v112;
+      if ( v112 > 0x40000 || (v38 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v112, 0x78666343u)) == 0 )
+      {
+        v37 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v38;
+      v1 = v21;
+      v3 = 1;
+    }
+    ZwClose(Handle);
+    if ( v37 >= 0 && p_P[3] )
+    {
+      v39 = p_P[2];
+      v87 = 1;
+      v107 = *(unsigned int *)((char *)p_P + v39);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 1966108;
+  ValueName.Buffer = L"LargeWriteSize";
+  v113 = 0;
+  v127.ObjectName = (PUNICODE_STRING)v94;
+  v96 = 0;
+  *(_QWORD *)&v127.Length = 48;
+  *(_QWORD *)&v127.Attributes = 576;
+  v127.RootDirectory = 0;
+  *(_OWORD *)&v127.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v113, 0x20019u, &v127) >= 0 )
+  {
+    v22 = v1;
+    while ( 1 )
+    {
+      v40 = ZwQueryValueKey(v113, &ValueName, KeyValueFullInformation, p_P, v22, &v96);
+      v41 = v40;
+      if ( v40 != -1073741789 && v40 != -2147483643 )
+        break;
+      if ( v22 != v1 )
+        break;
+      v22 = v96;
+      if ( v96 > 0x40000 || (v42 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v96, 0x78666343u)) == 0 )
+      {
+        v41 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v42;
+      v1 = v22;
+      v3 = 1;
+    }
+    ZwClose(v113);
+    if ( v41 >= 0 && p_P[3] )
+    {
+      v77 = 1;
+      v106 = *(unsigned int *)((char *)p_P + p_P[2]);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 3670070;
+  ValueName.Buffer = L"SoftThrottleLargeWriteAtPct";
+  v114 = 0;
+  v128.ObjectName = (PUNICODE_STRING)v94;
+  v97 = 0;
+  *(_QWORD *)&v128.Length = 48;
+  *(_QWORD *)&v128.Attributes = 576;
+  v128.RootDirectory = 0;
+  *(_OWORD *)&v128.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v114, 0x20019u, &v128) >= 0 )
+  {
+    v23 = v1;
+    while ( 1 )
+    {
+      v43 = ZwQueryValueKey(v114, &ValueName, KeyValueFullInformation, p_P, v23, &v97);
+      v44 = v43;
+      if ( v43 != -1073741789 && v43 != -2147483643 )
+        break;
+      if ( v23 != v1 )
+        break;
+      v23 = v97;
+      if ( v97 > 0x40000 || (v45 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v97, 0x78666343u)) == 0 )
+      {
+        v44 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v45;
+      v1 = v23;
+      v3 = 1;
+    }
+    ZwClose(v114);
+    if ( v44 >= 0 && p_P[3] )
+    {
+      v78 = 1;
+      v89 = *(unsigned int *)((char *)p_P + p_P[2]);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 2883626;
+  ValueName.Buffer = L"SoftThrottleDelayInMs";
+  v115 = 0;
+  v129.ObjectName = (PUNICODE_STRING)v94;
+  v98 = 0;
+  *(_QWORD *)&v129.Length = 48;
+  *(_QWORD *)&v129.Attributes = 576;
+  v129.RootDirectory = 0;
+  *(_OWORD *)&v129.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v115, 0x20019u, &v129) >= 0 )
+  {
+    v24 = v1;
+    while ( 1 )
+    {
+      v46 = ZwQueryValueKey(v115, &ValueName, KeyValueFullInformation, p_P, v24, &v98);
+      v47 = v46;
+      if ( v46 != -1073741789 && v46 != -2147483643 )
+        break;
+      if ( v24 != v1 )
+        break;
+      v24 = v98;
+      if ( v98 > 0x40000 || (v48 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v98, 0x78666343u)) == 0 )
+      {
+        v47 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v48;
+      v1 = v24;
+      v3 = 1;
+    }
+    ZwClose(v115);
+    if ( v47 >= 0 && p_P[3] )
+    {
+      v79 = 1;
+      v90 = *(unsigned int *)((char *)p_P + p_P[2]);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 2359330;
+  ValueName.Buffer = L"MaxLazyWritePages";
+  v116 = 0;
+  v130.ObjectName = (PUNICODE_STRING)v94;
+  v99 = 0;
+  *(_QWORD *)&v130.Length = 48;
+  *(_QWORD *)&v130.Attributes = 576;
+  v130.RootDirectory = 0;
+  *(_OWORD *)&v130.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v116, 0x20019u, &v130) >= 0 )
+  {
+    v25 = v1;
+    while ( 1 )
+    {
+      v49 = ZwQueryValueKey(v116, &ValueName, KeyValueFullInformation, p_P, v25, &v99);
+      v50 = v49;
+      if ( v49 != -1073741789 && v49 != -2147483643 )
+        break;
+      if ( v25 != v1 )
+        break;
+      v25 = v99;
+      if ( v99 > 0x40000 || (v51 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v99, 0x78666343u)) == 0 )
+      {
+        v50 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v51;
+      v1 = v25;
+      v3 = 1;
+    }
+    ZwClose(v116);
+    if ( v50 >= 0 && p_P[3] )
+    {
+      v80 = 1;
+      v91 = *(unsigned int *)((char *)p_P + p_P[2]);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 4325440;
+  ValueName.Buffer = L"PeriodicTelemetrySampleFrequency";
+  v117 = 0;
+  v131.ObjectName = (PUNICODE_STRING)v94;
+  v100 = 0;
+  *(_QWORD *)&v131.Length = 48;
+  *(_QWORD *)&v131.Attributes = 576;
+  v131.RootDirectory = 0;
+  *(_OWORD *)&v131.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v117, 0x20019u, &v131) >= 0 )
+  {
+    v26 = v1;
+    while ( 1 )
+    {
+      v52 = ZwQueryValueKey(v117, &ValueName, KeyValueFullInformation, p_P, v26, &v100);
+      v53 = v52;
+      if ( v52 != -1073741789 && v52 != -2147483643 )
+        break;
+      if ( v26 != v1 )
+        break;
+      v26 = v100;
+      if ( v100 > 0x40000 || (v54 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v100, 0x78666343u)) == 0 )
+      {
+        v53 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v54;
+      v1 = v26;
+      v3 = 1;
+    }
+    ZwClose(v117);
+    if ( v53 >= 0 && p_P[3] )
+    {
+      v81 = 1;
+      v109 = *(unsigned int *)((char *)p_P + p_P[2]);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 4194366;
+  ValueName.Buffer = L"PeriodicTelemetryEventFrequency";
+  v118 = 0;
+  v132.ObjectName = (PUNICODE_STRING)v94;
+  v101 = 0;
+  *(_QWORD *)&v132.Length = 48;
+  *(_QWORD *)&v132.Attributes = 576;
+  v132.RootDirectory = 0;
+  *(_OWORD *)&v132.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v118, 0x20019u, &v132) >= 0 )
+  {
+    v27 = v1;
+    while ( 1 )
+    {
+      v55 = ZwQueryValueKey(v118, &ValueName, KeyValueFullInformation, p_P, v27, &v101);
+      v56 = v55;
+      if ( v55 != -1073741789 && v55 != -2147483643 )
+        break;
+      if ( v27 != v1 )
+        break;
+      v27 = v101;
+      if ( v101 > 0x40000 || (v57 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v101, 0x78666343u)) == 0 )
+      {
+        v56 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v57;
+      v1 = v27;
+      v3 = 1;
+    }
+    ZwClose(v118);
+    if ( v56 >= 0 && p_P[3] )
+    {
+      v58 = p_P[2];
+      v88 = 1;
+      v110 = *(unsigned int *)((char *)p_P + v58);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 4325440;
+  ValueName.Buffer = L"PeriodicTelemetryReportFrequency";
+  v119 = 0;
+  v133.ObjectName = (PUNICODE_STRING)v94;
+  v102 = 0;
+  *(_QWORD *)&v133.Length = 48;
+  *(_QWORD *)&v133.Attributes = 576;
+  v133.RootDirectory = 0;
+  *(_OWORD *)&v133.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v119, 0x20019u, &v133) >= 0 )
+  {
+    v28 = v1;
+    while ( 1 )
+    {
+      v59 = ZwQueryValueKey(v119, &ValueName, KeyValueFullInformation, p_P, v28, &v102);
+      v60 = v59;
+      if ( v59 != -1073741789 && v59 != -2147483643 )
+        break;
+      if ( v28 != v1 )
+        break;
+      v28 = v102;
+      if ( v102 > 0x40000 || (v61 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v102, 0x78666343u)) == 0 )
+      {
+        v60 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v61;
+      v1 = v28;
+      v3 = 1;
+    }
+    ZwClose(v119);
+    if ( v60 >= 0 && p_P[3] )
+    {
+      v82 = 1;
+      v92 = *(unsigned int *)((char *)p_P + p_P[2]);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 2883626;
+  ValueName.Buffer = L"DisableCacheTelemetry";
+  v120 = 0;
+  v134.ObjectName = (PUNICODE_STRING)v94;
+  v103 = 0;
+  *(_QWORD *)&v134.Length = 48;
+  *(_QWORD *)&v134.Attributes = 576;
+  v134.RootDirectory = 0;
+  *(_OWORD *)&v134.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v120, 0x20019u, &v134) >= 0 )
+  {
+    v29 = v1;
+    while ( 1 )
+    {
+      v62 = ZwQueryValueKey(v120, &ValueName, KeyValueFullInformation, p_P, v29, &v103);
+      v63 = v62;
+      if ( v62 != -1073741789 && v62 != -2147483643 )
+        break;
+      if ( v29 != v1 )
+        break;
+      v29 = v103;
+      if ( v103 > 0x40000 || (v64 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v103, 0x78666343u)) == 0 )
+      {
+        v63 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v64;
+      v1 = v29;
+      v3 = 1;
+    }
+    ZwClose(v120);
+    if ( v63 >= 0 && p_P[3] )
+    {
+      v83 = 1;
+      v93 = *(unsigned int *)((char *)p_P + p_P[2]);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 2752552;
+  ValueName.Buffer = L"EnableAsyncLazywrite";
+  v121 = 0;
+  v135.ObjectName = (PUNICODE_STRING)v94;
+  v104 = 0;
+  *(_QWORD *)&v135.Length = 48;
+  *(_QWORD *)&v135.Attributes = 576;
+  v135.RootDirectory = 0;
+  *(_OWORD *)&v135.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v121, 0x20019u, &v135) >= 0 )
+  {
+    v30 = v1;
+    while ( 1 )
+    {
+      v65 = ZwQueryValueKey(v121, &ValueName, KeyValueFullInformation, p_P, v30, &v104);
+      v66 = v65;
+      if ( v65 != -1073741789 && v65 != -2147483643 )
+        break;
+      if ( v30 != v1 )
+        break;
+      v30 = v104;
+      if ( v104 > 0x40000 || (v67 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v104, 0x78666343u)) == 0 )
+      {
+        v66 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v67;
+      v1 = v30;
+      v3 = 1;
+    }
+    ZwClose(v121);
+    if ( v66 >= 0 && p_P[3] )
+    {
+      v84 = 1;
+      v4 = *(unsigned int *)((char *)p_P + p_P[2]);
+    }
+  }
+  *(_DWORD *)&ValueName.Length = 3407922;
+  ValueName.Buffer = L"EnableAsyncLazywriteMulti";
+  v122 = 0;
+  v136.ObjectName = (PUNICODE_STRING)v94;
+  v105 = 0;
+  *(_QWORD *)&v136.Length = 48;
+  *(_QWORD *)&v136.Attributes = 576;
+  v136.RootDirectory = 0;
+  *(_OWORD *)&v136.SecurityDescriptor = 0;
+  if ( ZwOpenKey(&v122, 0x20019u, &v136) >= 0 )
+  {
+    for ( i = v1; ; v1 = i )
+    {
+      v68 = ZwQueryValueKey(v122, &ValueName, KeyValueFullInformation, p_P, i, &v105);
+      v69 = v68;
+      if ( v68 != -1073741789 && v68 != -2147483643 )
+        break;
+      if ( i != v1 )
+        break;
+      i = v105;
+      if ( v105 > 0x40000 || (v70 = (unsigned int *)ExAllocatePoolWithTag(PagedPool, v105, 0x78666343u)) == 0 )
+      {
+        v69 = -1073741670;
+        break;
+      }
+      if ( v3 )
+        ExFreePoolWithTag(p_P, 0x78666343u);
+      p_P = v70;
+      v3 = 1;
+    }
+    ZwClose(v122);
+    if ( v69 >= 0 && p_P[3] )
+    {
+      v85 = 1;
+      v5 = *(unsigned int *)((char *)p_P + p_P[2]);
+    }
+  }
+  v6 = v108;
+  v7 = "valid";
+  v8 = "valid";
+  v9 = "valid";
+  if ( !v80 )
+    v8 = "not found";
+  v10 = "valid";
+  v11 = "valid";
+  v12 = "valid";
+  if ( !v79 )
+    v9 = "not found";
+  v13 = "valid";
+  if ( !v78 )
+    v10 = "not found";
+  if ( !v77 )
+    v11 = "not found";
+  if ( !v87 )
+    v12 = "not found";
+  v14 = v106;
+  if ( !v76 )
+    v13 = "not found";
+  DbgPrintEx(
+    0x7Fu,
+    2u,
+    "CcUpdateDynamicRegistrySettings(1/2): \n"
+    "\tTopBottom                      : 0x%04lx(%s)\n"
+    "\tLazyWriterPct                  : 0x%04lx(%s) (unsupported)\n"
+    "\tLargeWriteSize                 : 0x%04lx(%s)\n"
+    "\tSoftThrottleAt                 : 0x%04lx(%s)\n"
+    "\tSoftThrottleDelay              : 0x%04lx(%s)\n"
+    "\tMaxLazyWritePages              : 0x%04lx(%s)\n",
+    v108,
+    v13,
+    v107,
+    v12,
+    v106,
+    v11,
+    v89,
+    v10,
+    v90,
+    v9,
+    v91,
+    v8);
+  v15 = "valid";
+  v16 = "valid";
+  v17 = "valid";
+  if ( !v85 )
+    v15 = "not found";
+  v18 = "valid";
+  if ( !v84 )
+    v16 = "not found";
+  LODWORD(v75) = v5;
+  if ( !v83 )
+    v17 = "not found";
+  LODWORD(v74) = v4;
+  if ( !v82 )
+    v18 = "not found";
+  LODWORD(v73) = v93;
+  if ( !v81 )
+    v7 = "not found";
+  LODWORD(ResultLength) = v92;
+  *(_QWORD *)Length = v7;
+  v19 = v109;
+  DbgPrintEx(
+    0x7Fu,
+    2u,
+    "CcUpdateDynamicRegistrySettings(2/2): \n"
+    "\tPeriodicTelmetrySampleFrequency: 0x%04lx(%s)\n"
+    "\tPeriodicTelmetryReportFrequency: 0x%04lx(%s)\n"
+    "\tDisableCacheTelemetry          : 0x%04lx(%s)\n"
+    "\tEnableAsyncLazywrite           : 0x%04lx(%s)\n"
+    "\tEnableAsyncLazywriteMulti      : 0x%04lx(%s)\n",
+    v109,
+    *(_QWORD *)Length,
+    ResultLength,
+    v18,
+    v73,
+    v17,
+    v74,
+    v16,
+    v75,
+    v15);
+  if ( v3 )
+    ExFreePoolWithTag(p_P, 0x78666343u);
+  if ( v76 )
+    CcAzure_TopBottomDPTEqual = v6;
+  if ( v77 )
+  {
+    if ( !v14 || (CcAzure_LargeWriteSize = v14 << 10, v14 << 10 <= v14) )
+      CcAzure_LargeWriteSize = 0;
+  }
+  if ( v78 )
+  {
+    v32 = 0;
+    if ( (unsigned int)(v89 - 1) <= 0x63 )
+      v32 = v89;
+    CcAzure_SoftThrottleLargeWriteAtPct = v32;
+  }
+  if ( v79 && v90 )
+    CcSoftThrottleDelay = v90;
+  if ( v80 && (unsigned int)(v91 - 1) <= 0x7FFF )
+    CcMaxLazyWritePages = v91;
+  if ( v81 && (_DWORD)v19 )
+    EmpParseLock.WaitListEntry.Flink = (struct _LIST_ENTRY *)(-10000000 * v19);
+  if ( v88 && v110 )
+    EmpParseLock.WaitListEntry.Blink = (struct _LIST_ENTRY *)(10000000LL * v110);
+  if ( v82 && v92 )
+    EmpParseLock.Queue = (_DISPATCHER_HEADER *volatile)(10000000LL * v92);
+  if ( v83 )
+    BYTE1(EmpParseLock.RelativeTimerBias) = v93 != 0;
+  if ( v84 )
+  {
+    if ( v4 > 1 )
+    {
+      DbgPrintEx(
+        0x7Fu,
+        2u,
+        "CcUpdateDynamicRegistrySettings: Ignoring invalid EnableAsyncLazywrite(0x%04lx), no change to current value (0x%04lx)\n",
+        v4,
+        (unsigned __int8)CcEnableAsyncLazywrite);
+    }
+    else
+    {
+      CcEnableAsyncLazywrite = v4 != 0;
+      if ( v4 && !CcEnablePerVolumeLazyWriter )
+        DbgPrintEx(
+          0x7Fu,
+          2u,
+          "CcUpdateDynamicRegistrySettings: Setting EnableAsyncLazywrite requires per-Volume Lazywriter is to be enabled!\n");
+    }
+  }
+  if ( v85 )
+  {
+    if ( v5 )
+    {
+      if ( v5 == 1 )
+      {
+        if ( CcEnablePerVolumeLazyWriter && CcEnableAsyncLazywrite )
+          CcEnableAsyncLazywriteMulti = 1;
+        else
+          DbgPrintEx(
+            0x7Fu,
+            2u,
+            "CcUpdateDynamicRegistrySettings: Setting EnableAsyncLazywriteMulti requires per-Volume Lazywriter and (simpl"
+            "e) Async Lazywriter to be enabled!\n");
+      }
+      else
+      {
+        DbgPrintEx(
+          0x7Fu,
+          2u,
+          "CcUpdateDynamicRegistrySettings: Ignoring invalid EnableAsyncLazywriteMulti(0x%04lx), no change to current value (0x%04lx)\n",
+          v5,
+          (unsigned __int8)CcEnableAsyncLazywriteMulti);
+      }
+    }
+    else
+    {
+      CcEnableAsyncLazywriteMulti = 0;
+    }
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x1404a5670  push    rbp
+0x1404a5672  push    rbx
+0x1404a5673  push    rsi
+0x1404a5674  push    rdi
+0x1404a5675  push    r12
+0x1404a5677  push    r13
+0x1404a5679  push    r14
+0x1404a567b  push    r15
+0x1404a567d  lea     rbp, [rsp-368h]
+0x1404a5685  sub     rsp, 468h
+0x1404a568c  mov     rax, cs:__security_cookie
+0x1404a5693  xor     rax, rsp
+0x1404a5696  mov     [rbp+3A0h+var_50], rax
+0x1404a569d  xor     r14d, r14d
+0x1404a56a0  lea     r9, [rcx+38h]
+0x1404a56a4  xorps   xmm0, xmm0
+0x1404a56a7  mov     [rbp+3A0h+var_3A8], r14d
+0x1404a56ab  xorps   xmm1, xmm1
+0x1404a56ae  mov     [rbp+3A0h+var_420], r14b
+0x1404a56b2  mov     ebx, 9Ch
+0x1404a56b7  mov     [rbp+3A0h+var_3AC], r14d
+0x1404a56bb  lea     edx, [r14+2]; Level
+0x1404a56bf  mov     [rbp+3A0h+var_400], r14b
+0x1404a56c3  lea     r8, aCcupdatedynami_4; "CcUpdateDynamicRegistrySettings: Updati"...
+0x1404a56ca  mov     [rbp+3A0h+var_3B0], r14d
+0x1404a56ce  movups  [rbp+3A0h+var_3E8], xmm0
+0x1404a56d2  lea     ecx, [rbx-1Dh]; ComponentId
+0x1404a56d5  mov     [rbp+3A0h+var_41F], r14b
+0x1404a56d9  movups  xmmword ptr [rbp+3A0h+ValueName.Length], xmm1
+0x1404a56dd  lea     rdi, [rbp+3A0h+P]
+0x1404a56e4  mov     [rbp+3A0h+var_3FC], r14d
+0x1404a56e8  mov     sil, r14b
+0x1404a56eb  mov     [rbp+3A0h+var_41E], r14b
+0x1404a56ef  mov     [rbp+3A0h+var_3F8], r14d
+0x1404a56f3  mov     r12d, r14d
+0x1404a56f6  mov     [rbp+3A0h+var_41D], r14b
+0x1404a56fa  mov     r13d, r14d
+0x1404a56fd  mov     [rbp+3A0h+var_3F4], r14d
+0x1404a5701  mov     [rbp+3A0h+var_41C], r14b
+0x1404a5705  mov     [rbp+3A0h+var_3A4], r14d
+0x1404a5709  mov     [rbp+3A0h+var_41B], r14b
+0x1404a570d  mov     [rbp+3A0h+var_3A0], r14d
+0x1404a5711  mov     [rbp+3A0h+var_3FF], r14b
+0x1404a5715  mov     [rbp+3A0h+var_3F0], r14d
+0x1404a5719  mov     [rbp+3A0h+var_41A], r14b
+0x1404a571d  mov     [rbp+3A0h+var_3EC], r14d
+0x1404a5721  mov     [rbp+3A0h+var_419], r14b
+0x1404a5725  mov     [rbp+3A0h+var_418], r14b
+0x1404a5729  mov     [rbp+3A0h+var_417], r14b
+0x1404a572d  call    DbgPrintEx
+0x1404a5732  lea     rax, aRegistryMachin_74; "\\Registry\\Machine\\System\\CurrentCon"...
+0x1404a5739  mov     dword ptr [rbp+3A0h+var_3E8], 0AA00A8h
+0x1404a5740  mov     qword ptr [rbp+3A0h+var_3E8+8], rax
+0x1404a5744  lea     r8, [rbp+3A0h+ObjectAttributes]; ObjectAttributes
+0x1404a5748  lea     rax, aTopbottomdpteq; "TopBottomDPTEqual"
+0x1404a574f  mov     dword ptr [rbp+3A0h+ValueName.Length], 240022h
+0x1404a5756  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a575a  lea     rcx, [rbp+3A0h+KeyHandle]; KeyHandle
+0x1404a575e  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a5762  mov     [rbp+3A0h+KeyHandle], r14
+0x1404a5766  xorps   xmm0, xmm0
+0x1404a5769  mov     [rbp+3A0h+ObjectAttributes.ObjectName], rax
+0x1404a5770  mov     edx, 20019h; DesiredAccess
+0x1404a5775  mov     [rbp+3A0h+var_39C], r14d
+0x1404a5779  mov     qword ptr [rbp+3A0h+ObjectAttributes.Length], 30h ; '0'
+0x1404a5781  mov     qword ptr [rbp+3A0h+ObjectAttributes.Attributes], 240h
+0x1404a578c  mov     [rbp+3A0h+ObjectAttributes.RootDirectory], r14
+0x1404a5790  movdqu  xmmword ptr [rbp+3A0h+ObjectAttributes.SecurityDescriptor], xmm0
+0x1404a5798  call    ZwOpenKey
+0x1404a579d  test    eax, eax
+0x1404a579f  jns     loc_1404A5E0C
+0x1404a57a5  lea     rax, aLazywriterperc_0; "LazyWriterPercentageOfNumProcs"
+0x1404a57ac  mov     dword ptr [rbp+3A0h+ValueName.Length], 3E003Ch
+0x1404a57b3  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a57b7  lea     r8, [rbp+3A0h+var_300]; ObjectAttributes
+0x1404a57be  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a57c2  mov     [rbp+3A0h+Handle], r14
+0x1404a57c6  xorps   xmm0, xmm0
+0x1404a57c9  mov     [rbp+3A0h+var_300.ObjectName], rax
+0x1404a57d0  mov     edx, 20019h; DesiredAccess
+0x1404a57d5  mov     [rbp+3A0h+var_398], r14d
+0x1404a57d9  lea     rcx, [rbp+3A0h+Handle]; KeyHandle
+0x1404a57dd  mov     qword ptr [rbp+3A0h+var_300.Length], 30h ; '0'
+0x1404a57e8  mov     qword ptr [rbp+3A0h+var_300.Attributes], 240h
+0x1404a57f3  mov     [rbp+3A0h+var_300.RootDirectory], r14
+0x1404a57fa  movdqu  xmmword ptr [rbp+3A0h+var_300.SecurityDescriptor], xmm0
+0x1404a5802  call    ZwOpenKey
+0x1404a5807  test    eax, eax
+0x1404a5809  jns     loc_1404A5E14
+0x1404a580f  lea     rax, aLargewritesize; "LargeWriteSize"
+0x1404a5816  mov     dword ptr [rbp+3A0h+ValueName.Length], 1E001Ch
+0x1404a581d  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a5821  lea     r8, [rbp+3A0h+var_2D0]; ObjectAttributes
+0x1404a5828  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a582c  mov     [rbp+3A0h+var_390], r14
+0x1404a5830  xorps   xmm0, xmm0
+0x1404a5833  mov     [rbp+3A0h+var_2D0.ObjectName], rax
+0x1404a583a  mov     edx, 20019h; DesiredAccess
+0x1404a583f  mov     [rbp+3A0h+var_3D8], r14d
+0x1404a5843  lea     rcx, [rbp+3A0h+var_390]; KeyHandle
+0x1404a5847  mov     qword ptr [rbp+3A0h+var_2D0.Length], 30h ; '0'
+0x1404a5852  mov     qword ptr [rbp+3A0h+var_2D0.Attributes], 240h
+0x1404a585d  mov     [rbp+3A0h+var_2D0.RootDirectory], r14
+0x1404a5864  movdqu  xmmword ptr [rbp+3A0h+var_2D0.SecurityDescriptor], xmm0
+0x1404a586c  call    ZwOpenKey
+0x1404a5871  test    eax, eax
+0x1404a5873  jns     loc_1404A5E1C
+0x1404a5879  lea     rax, aSoftthrottlela_0; "SoftThrottleLargeWriteAtPct"
+0x1404a5880  mov     dword ptr [rbp+3A0h+ValueName.Length], 380036h
+0x1404a5887  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a588b  lea     r8, [rbp+3A0h+var_2A0]; ObjectAttributes
+0x1404a5892  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a5896  mov     [rbp+3A0h+var_388], r14
+0x1404a589a  xorps   xmm0, xmm0
+0x1404a589d  mov     [rbp+3A0h+var_2A0.ObjectName], rax
+0x1404a58a4  mov     edx, 20019h; DesiredAccess
+0x1404a58a9  mov     [rbp+3A0h+var_3D4], r14d
+0x1404a58ad  lea     rcx, [rbp+3A0h+var_388]; KeyHandle
+0x1404a58b1  mov     qword ptr [rbp+3A0h+var_2A0.Length], 30h ; '0'
+0x1404a58bc  mov     qword ptr [rbp+3A0h+var_2A0.Attributes], 240h
+0x1404a58c7  mov     [rbp+3A0h+var_2A0.RootDirectory], r14
+0x1404a58ce  movdqu  xmmword ptr [rbp+3A0h+var_2A0.SecurityDescriptor], xmm0
+0x1404a58d6  call    ZwOpenKey
+0x1404a58db  test    eax, eax
+0x1404a58dd  jns     loc_1404A5E24
+0x1404a58e3  lea     rax, aSoftthrottlede; "SoftThrottleDelayInMs"
+0x1404a58ea  mov     dword ptr [rbp+3A0h+ValueName.Length], 2C002Ah
+0x1404a58f1  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a58f5  lea     r8, [rbp+3A0h+var_270]; ObjectAttributes
+0x1404a58fc  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a5900  mov     [rbp+3A0h+var_380], r14
+0x1404a5904  xorps   xmm0, xmm0
+0x1404a5907  mov     [rbp+3A0h+var_270.ObjectName], rax
+0x1404a590e  mov     edx, 20019h; DesiredAccess
+0x1404a5913  mov     [rbp+3A0h+var_3D0], r14d
+0x1404a5917  lea     rcx, [rbp+3A0h+var_380]; KeyHandle
+0x1404a591b  mov     qword ptr [rbp+3A0h+var_270.Length], 30h ; '0'
+0x1404a5926  mov     qword ptr [rbp+3A0h+var_270.Attributes], 240h
+0x1404a5931  mov     [rbp+3A0h+var_270.RootDirectory], r14
+0x1404a5938  movdqu  xmmword ptr [rbp+3A0h+var_270.SecurityDescriptor], xmm0
+0x1404a5940  call    ZwOpenKey
+0x1404a5945  test    eax, eax
+0x1404a5947  jns     loc_1404A5E2C
+0x1404a594d  lea     rax, aMaxlazywritepa; "MaxLazyWritePages"
+0x1404a5954  mov     dword ptr [rbp+3A0h+ValueName.Length], 240022h
+0x1404a595b  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a595f  lea     r8, [rbp+3A0h+var_240]; ObjectAttributes
+0x1404a5966  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a596a  mov     [rbp+3A0h+var_378], r14
+0x1404a596e  xorps   xmm0, xmm0
+0x1404a5971  mov     [rbp+3A0h+var_240.ObjectName], rax
+0x1404a5978  mov     edx, 20019h; DesiredAccess
+0x1404a597d  mov     [rbp+3A0h+var_3CC], r14d
+0x1404a5981  lea     rcx, [rbp+3A0h+var_378]; KeyHandle
+0x1404a5985  mov     qword ptr [rbp+3A0h+var_240.Length], 30h ; '0'
+0x1404a5990  mov     qword ptr [rbp+3A0h+var_240.Attributes], 240h
+0x1404a599b  mov     [rbp+3A0h+var_240.RootDirectory], r14
+0x1404a59a2  movdqu  xmmword ptr [rbp+3A0h+var_240.SecurityDescriptor], xmm0
+0x1404a59aa  call    ZwOpenKey
+0x1404a59af  test    eax, eax
+0x1404a59b1  jns     loc_1404A5E34
+0x1404a59b7  lea     rax, aPeriodicteleme_1; "PeriodicTelemetrySampleFrequency"
+0x1404a59be  mov     dword ptr [rbp+3A0h+ValueName.Length], 420040h
+0x1404a59c5  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a59c9  lea     r8, [rbp+3A0h+var_210]; ObjectAttributes
+0x1404a59d0  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a59d4  mov     [rbp+3A0h+var_370], r14
+0x1404a59d8  xorps   xmm0, xmm0
+0x1404a59db  mov     [rbp+3A0h+var_210.ObjectName], rax
+0x1404a59e2  mov     edx, 20019h; DesiredAccess
+0x1404a59e7  mov     [rbp+3A0h+var_3C8], r14d
+0x1404a59eb  lea     rcx, [rbp+3A0h+var_370]; KeyHandle
+0x1404a59ef  mov     qword ptr [rbp+3A0h+var_210.Length], 30h ; '0'
+0x1404a59fa  mov     qword ptr [rbp+3A0h+var_210.Attributes], 240h
+0x1404a5a05  mov     [rbp+3A0h+var_210.RootDirectory], r14
+0x1404a5a0c  movdqu  xmmword ptr [rbp+3A0h+var_210.SecurityDescriptor], xmm0
+0x1404a5a14  call    ZwOpenKey
+0x1404a5a19  test    eax, eax
+0x1404a5a1b  jns     loc_1404A5E3C
+0x1404a5a21  lea     rax, aPeriodicteleme_0; "PeriodicTelemetryEventFrequency"
+0x1404a5a28  mov     dword ptr [rbp+3A0h+ValueName.Length], 40003Eh
+0x1404a5a2f  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a5a33  lea     r8, [rbp+3A0h+var_1E0]; ObjectAttributes
+0x1404a5a3a  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a5a3e  mov     [rbp+3A0h+var_368], r14
+0x1404a5a42  xorps   xmm0, xmm0
+0x1404a5a45  mov     [rbp+3A0h+var_1E0.ObjectName], rax
+0x1404a5a4c  mov     edx, 20019h; DesiredAccess
+0x1404a5a51  mov     [rbp+3A0h+var_3C4], r14d
+0x1404a5a55  lea     rcx, [rbp+3A0h+var_368]; KeyHandle
+0x1404a5a59  mov     qword ptr [rbp+3A0h+var_1E0.Length], 30h ; '0'
+0x1404a5a64  mov     qword ptr [rbp+3A0h+var_1E0.Attributes], 240h
+0x1404a5a6f  mov     [rbp+3A0h+var_1E0.RootDirectory], r14
+0x1404a5a76  movdqu  xmmword ptr [rbp+3A0h+var_1E0.SecurityDescriptor], xmm0
+0x1404a5a7e  call    ZwOpenKey
+0x1404a5a83  test    eax, eax
+0x1404a5a85  jns     loc_1404A5E44
+0x1404a5a8b  lea     rax, aPeriodicteleme; "PeriodicTelemetryReportFrequency"
+0x1404a5a92  mov     dword ptr [rbp+3A0h+ValueName.Length], 420040h
+0x1404a5a99  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a5a9d  lea     r8, [rbp+3A0h+var_1B0]; ObjectAttributes
+0x1404a5aa4  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a5aa8  mov     [rbp+3A0h+var_360], r14
+0x1404a5aac  xorps   xmm0, xmm0
+0x1404a5aaf  mov     [rbp+3A0h+var_1B0.ObjectName], rax
+0x1404a5ab6  mov     edx, 20019h; DesiredAccess
+0x1404a5abb  mov     [rbp+3A0h+var_3C0], r14d
+0x1404a5abf  lea     rcx, [rbp+3A0h+var_360]; KeyHandle
+0x1404a5ac3  mov     qword ptr [rbp+3A0h+var_1B0.Length], 30h ; '0'
+0x1404a5ace  mov     qword ptr [rbp+3A0h+var_1B0.Attributes], 240h
+0x1404a5ad9  mov     [rbp+3A0h+var_1B0.RootDirectory], r14
+0x1404a5ae0  movdqu  xmmword ptr [rbp+3A0h+var_1B0.SecurityDescriptor], xmm0
+0x1404a5ae8  call    ZwOpenKey
+0x1404a5aed  test    eax, eax
+0x1404a5aef  jns     loc_1404A5E4C
+0x1404a5af5  lea     rax, aDisablecachete_0; "DisableCacheTelemetry"
+0x1404a5afc  mov     dword ptr [rbp+3A0h+ValueName.Length], 2C002Ah
+0x1404a5b03  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a5b07  lea     r8, [rbp+3A0h+var_180]; ObjectAttributes
+0x1404a5b0e  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a5b12  mov     [rbp+3A0h+var_358], r14
+0x1404a5b16  xorps   xmm0, xmm0
+0x1404a5b19  mov     [rbp+3A0h+var_180.ObjectName], rax
+0x1404a5b20  mov     edx, 20019h; DesiredAccess
+0x1404a5b25  mov     [rbp+3A0h+var_3BC], r14d
+0x1404a5b29  lea     rcx, [rbp+3A0h+var_358]; KeyHandle
+0x1404a5b2d  mov     qword ptr [rbp+3A0h+var_180.Length], 30h ; '0'
+0x1404a5b38  mov     qword ptr [rbp+3A0h+var_180.Attributes], 240h
+0x1404a5b43  mov     [rbp+3A0h+var_180.RootDirectory], r14
+0x1404a5b4a  movdqu  xmmword ptr [rbp+3A0h+var_180.SecurityDescriptor], xmm0
+0x1404a5b52  call    ZwOpenKey
+0x1404a5b57  test    eax, eax
+0x1404a5b59  jns     loc_1404A5E54
+0x1404a5b5f  lea     rax, aEnableasynclaz_1; "EnableAsyncLazywrite"
+0x1404a5b66  mov     dword ptr [rbp+3A0h+ValueName.Length], 2A0028h
+0x1404a5b6d  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a5b71  lea     r8, [rbp+3A0h+var_150]; ObjectAttributes
+0x1404a5b78  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a5b7c  mov     [rbp+3A0h+var_350], r14
+0x1404a5b80  xorps   xmm0, xmm0
+0x1404a5b83  mov     [rbp+3A0h+var_150.ObjectName], rax
+0x1404a5b8a  mov     edx, 20019h; DesiredAccess
+0x1404a5b8f  mov     [rbp+3A0h+var_3B8], r14d
+0x1404a5b93  lea     rcx, [rbp+3A0h+var_350]; KeyHandle
+0x1404a5b97  mov     qword ptr [rbp+3A0h+var_150.Length], 30h ; '0'
+0x1404a5ba2  mov     qword ptr [rbp+3A0h+var_150.Attributes], 240h
+0x1404a5bad  mov     [rbp+3A0h+var_150.RootDirectory], r14
+0x1404a5bb4  movdqu  xmmword ptr [rbp+3A0h+var_150.SecurityDescriptor], xmm0
+0x1404a5bbc  call    ZwOpenKey
+0x1404a5bc1  test    eax, eax
+0x1404a5bc3  jns     loc_1404A5E5C
+0x1404a5bc9  lea     rax, aEnableasynclaz_2; "EnableAsyncLazywriteMulti"
+0x1404a5bd0  mov     dword ptr [rbp+3A0h+ValueName.Length], 340032h
+0x1404a5bd7  mov     [rbp+3A0h+ValueName.Buffer], rax
+0x1404a5bdb  lea     r8, [rbp+3A0h+var_120]; ObjectAttributes
+0x1404a5be2  lea     rax, [rbp+3A0h+var_3E8]
+0x1404a5be6  mov     [rbp+3A0h+var_348], r14
+0x1404a5bea  xorps   xmm0, xmm0
+0x1404a5bed  mov     [rbp+3A0h+var_120.ObjectName], rax
+0x1404a5bf4  mov     edx, 20019h; DesiredAccess
+0x1404a5bf9  mov     [rbp+3A0h+var_3B4], r14d
+0x1404a5bfd  lea     rcx, [rbp+3A0h+var_348]; KeyHandle
+0x1404a5c01  mov     qword ptr [rbp+3A0h+var_120.Length], 30h ; '0'
+0x1404a5c0c  mov     qword ptr [rbp+3A0h+var_120.Attributes], 240h
+0x1404a5c17  mov     [rbp+3A0h+var_120.RootDirectory], r14
+0x1404a5c1e  movdqu  xmmword ptr [rbp+3A0h+var_120.SecurityDescriptor], xmm0
+0x1404a5c26  call    ZwOpenKey
+0x1404a5c2b  test    eax, eax
+0x1404a5c2d  jns     loc_1404A5E64
+0x1404a5c33  cmp     [rbp+3A0h+var_41C], r14b
+0x1404a5c37  lea     r11, aNotFound; "not found"
+0x1404a5c3e  mov     r15d, [rbp+3A0h+var_3A8]
+0x1404a5c42  lea     rbx, aValid; "valid"
+0x1404a5c49  mov     r10, rbx
+0x1404a5c4c  mov     r9, rbx
+0x1404a5c4f  cmovz   r10, r11
+0x1404a5c53  mov     r8, rbx
+0x1404a5c56  cmp     [rbp+3A0h+var_41D], r14b
+0x1404a5c5a  mov     rdx, rbx
+0x1404a5c5d  mov     [rsp+4A0h+var_430], r10
+0x1404a5c62  mov     rcx, rbx
+0x1404a5c65  mov     r10d, [rbp+3A0h+var_3F4]
+0x1404a5c69  cmovz   r9, r11
+0x1404a5c6d  cmp     [rbp+3A0h+var_41E], r14b
+0x1404a5c71  mov     rax, rbx
+0x1404a5c74  mov     [rsp+4A0h+var_438], r10d
+0x1404a5c79  mov     [rsp+4A0h+var_440], r9
+0x1404a5c7e  cmovz   r8, r11
+0x1404a5c82  cmp     [rbp+3A0h+var_41F], r14b
+0x1404a5c86  mov     r9d, [rbp+3A0h+var_3F8]
+0x1404a5c8a  mov     dword ptr [rsp+4A0h+var_448], r9d
+0x1404a5c8f  cmovz   rdx, r11
+0x1404a5c93  cmp     [rbp+3A0h+var_400], r14b
+0x1404a5c97  mov     r9d, r15d
+0x1404a5c9a  mov     [rsp+4A0h+var_450], r8
+0x1404a5c9f  mov     r8d, [rbp+3A0h+var_3FC]
+0x1404a5ca3  cmovz   rcx, r11
+0x1404a5ca7  cmp     [rbp+3A0h+var_420], r14b
+0x1404a5cab  mov     r14d, [rbp+3A0h+var_3B0]
+0x1404a5caf  mov     dword ptr [rsp+4A0h+var_458], r8d
+  ... truncated ...
+```

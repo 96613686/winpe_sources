@@ -1,0 +1,211 @@
+# LkmdTelpWriteDumpFile
+
+- ea: `0x1408468e8`
+- end: `0x140846a98`
+- name: `LkmdTelpWriteDumpFile`
+- size: `432`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `4`
+- tags: `file_ops`
+
+## callers
+
+- `0x1408467ec`
+
+## callees
+
+- `0x14020fe90`
+- `0x1406da990`
+- `0x1406daa70`
+- `0x1408468e8`
+
+## import_xrefs
+
+- `ext-ms-win-ntos-werkernel-l1-1-1!WerLiveKernelOpenDumpFile` at `0x14084690c`
+- `ext-ms-win-ntos-werkernel-l1-1-1!WerLiveKernelOpenDumpFile` at `0x14084690c`
+
+## string_xrefs
+
+- `0x140846921`: `LKMDTEL: LkmdTelpWriteDumpFile: WerLiveKernelOpenDumpFile failed, status 0x%X\n`
+
+## pseudocode
+
+```c
+__int64 __fastcall LkmdTelpWriteDumpFile(__int64 a1)
+{
+  __int64 v2; // rcx
+  int v3; // eax
+  NTSTATUS v4; // edi
+  int v5; // eax
+  __int128 v6; // xmm0
+  struct _IO_STATUS_BLOCK IoStatusBlock; // [rsp+50h] [rbp-18h] BYREF
+  HANDLE FileHandle; // [rsp+90h] [rbp+28h] BYREF
+
+  v2 = *(_QWORD *)(a1 + 96);
+  IoStatusBlock = 0;
+  FileHandle = 0;
+  v3 = WerLiveKernelOpenDumpFile(v2, &FileHandle);
+  v4 = v3;
+  if ( v3 >= 0 )
+  {
+    v5 = *(_DWORD *)(a1 + 24);
+    if ( v5 && *(_QWORD *)(a1 + 16) )
+    {
+      *(_QWORD *)(*(_QWORD *)a1 + 4000LL) = (unsigned int)(v5 + 262192);
+      *(_DWORD *)(a1 + 44) = 1886221636;
+      *(_DWORD *)(a1 + 48) = 1651469378;
+      *(_DWORD *)(a1 + 52) = 16;
+      *(_DWORD *)(a1 + 56) = NtBuildNumber;
+      *(_DWORD *)(a1 + 60) = 32;
+      v6 = *(_OWORD *)(a1 + 28);
+      *(_QWORD *)(a1 + 84) = 0;
+      *(_OWORD *)(a1 + 64) = v6;
+      *(_DWORD *)(a1 + 80) = *(_DWORD *)(a1 + 24);
+    }
+    v4 = ZwWriteFile(FileHandle, 0, 0, 0, &IoStatusBlock, *(PVOID *)a1, *(_DWORD *)(a1 + 8), 0, 0);
+    if ( v4 >= 0 )
+    {
+      if ( *(_DWORD *)(a1 + 24) )
+      {
+        v4 = ZwWriteFile(FileHandle, 0, 0, 0, &IoStatusBlock, (PVOID)(a1 + 44), 0x10u, 0, 0);
+        if ( v4 >= 0 )
+        {
+          v4 = ZwWriteFile(FileHandle, 0, 0, 0, &IoStatusBlock, (PVOID)(a1 + 60), 0x20u, 0, 0);
+          if ( v4 >= 0 )
+            v4 = ZwWriteFile(FileHandle, 0, 0, 0, &IoStatusBlock, *(PVOID *)(a1 + 16), *(_DWORD *)(a1 + 24), 0, 0);
+        }
+      }
+    }
+  }
+  else
+  {
+    DbgPrintEx(5u, 0, "LKMDTEL: LkmdTelpWriteDumpFile: WerLiveKernelOpenDumpFile failed, status 0x%X\n", v3);
+  }
+  if ( FileHandle )
+    ZwClose(FileHandle);
+  return (unsigned int)v4;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1408468e8  push    rbp
+0x1408468ea  push    rbx
+0x1408468eb  push    rsi
+0x1408468ec  push    rdi
+0x1408468ed  mov     rbp, rsp
+0x1408468f0  sub     rsp, 68h
+0x1408468f4  mov     rbx, rcx
+0x1408468f7  lea     rdx, [rbp+FileHandle]
+0x1408468fb  mov     rcx, [rcx+60h]
+0x1408468ff  xorps   xmm0, xmm0
+0x140846902  xor     esi, esi
+0x140846904  movups  xmmword ptr [rbp+var_18], xmm0
+0x140846908  mov     [rbp+FileHandle], rsi
+0x14084690c  call    cs:__imp_WerLiveKernelOpenDumpFile
+0x140846913  nop     dword ptr [rax+rax+00h]
+0x140846918  mov     edi, eax
+0x14084691a  test    eax, eax
+0x14084691c  jns     short loc_140846937
+0x14084691e  mov     r9d, eax
+0x140846921  lea     r8, aLkmdtelLkmdtel_1; "LKMDTEL: LkmdTelpWriteDumpFile: WerLive"...
+0x140846928  xor     edx, edx; Level
+0x14084692a  lea     ecx, [rsi+5]; ComponentId
+0x14084692d  call    DbgPrintEx
+0x140846932  jmp     loc_140846A7E
+0x140846937  mov     eax, [rbx+18h]
+0x14084693a  test    eax, eax
+0x14084693c  jz      short loc_14084698C
+0x14084693e  cmp     [rbx+10h], rsi
+0x140846942  jz      short loc_14084698C
+0x140846944  lea     ecx, [rax+40030h]
+0x14084694a  mov     rax, [rbx]
+0x14084694d  mov     [rax+0FA0h], rcx
+0x140846954  mov     dword ptr [rbx+2Ch], 706D7544h
+0x14084695b  mov     dword ptr [rbx+30h], 626F6C42h
+0x140846962  mov     dword ptr [rbx+34h], 10h
+0x140846969  mov     eax, cs:NtBuildNumber
+0x14084696f  mov     [rbx+38h], eax
+0x140846972  mov     dword ptr [rbx+3Ch], 20h ; ' '
+0x140846979  movups  xmm0, xmmword ptr [rbx+1Ch]
+0x14084697d  mov     [rbx+54h], rsi
+0x140846981  movdqu  xmmword ptr [rbx+40h], xmm0
+0x140846986  mov     eax, [rbx+18h]
+0x140846989  mov     [rbx+50h], eax
+0x14084698c  mov     eax, [rbx+8]
+0x14084698f  xor     r9d, r9d; ApcContext
+0x140846992  mov     rcx, [rbp+FileHandle]; FileHandle
+0x140846996  xor     r8d, r8d; ApcRoutine
+0x140846999  mov     [rsp+68h+Key], rsi; Key
+0x14084699e  xor     edx, edx; Event
+0x1408469a0  mov     [rsp+68h+ByteOffset], rsi; ByteOffset
+0x1408469a5  mov     [rsp+68h+Length], eax; Length
+0x1408469a9  mov     rax, [rbx]
+0x1408469ac  mov     [rsp+68h+Buffer], rax; Buffer
+0x1408469b1  lea     rax, [rbp+var_18]
+0x1408469b5  mov     [rsp+68h+IoStatusBlock], rax; IoStatusBlock
+0x1408469ba  call    ZwWriteFile
+0x1408469bf  mov     edi, eax
+0x1408469c1  test    eax, eax
+0x1408469c3  js      loc_140846A7E
+0x1408469c9  cmp     [rbx+18h], esi
+0x1408469cc  jbe     loc_140846A7E
+0x1408469d2  mov     rcx, [rbp+FileHandle]; FileHandle
+0x1408469d6  lea     rax, [rbx+2Ch]
+0x1408469da  mov     [rsp+68h+Key], rsi; Key
+0x1408469df  xor     r9d, r9d; ApcContext
+0x1408469e2  mov     [rsp+68h+ByteOffset], rsi; ByteOffset
+0x1408469e7  xor     r8d, r8d; ApcRoutine
+0x1408469ea  mov     [rsp+68h+Length], 10h; Length
+0x1408469f2  xor     edx, edx; Event
+0x1408469f4  mov     [rsp+68h+Buffer], rax; Buffer
+0x1408469f9  lea     rax, [rbp+var_18]
+0x1408469fd  mov     [rsp+68h+IoStatusBlock], rax; IoStatusBlock
+0x140846a02  call    ZwWriteFile
+0x140846a07  mov     edi, eax
+0x140846a09  test    eax, eax
+0x140846a0b  js      short loc_140846A7E
+0x140846a0d  mov     rcx, [rbp+FileHandle]; FileHandle
+0x140846a11  lea     rax, [rbx+3Ch]
+0x140846a15  mov     [rsp+68h+Key], rsi; Key
+0x140846a1a  xor     r9d, r9d; ApcContext
+0x140846a1d  mov     [rsp+68h+ByteOffset], rsi; ByteOffset
+0x140846a22  xor     r8d, r8d; ApcRoutine
+0x140846a25  mov     [rsp+68h+Length], 20h ; ' '; Length
+0x140846a2d  xor     edx, edx; Event
+0x140846a2f  mov     [rsp+68h+Buffer], rax; Buffer
+0x140846a34  lea     rax, [rbp+var_18]
+0x140846a38  mov     [rsp+68h+IoStatusBlock], rax; IoStatusBlock
+0x140846a3d  call    ZwWriteFile
+0x140846a42  mov     edi, eax
+0x140846a44  test    eax, eax
+0x140846a46  js      short loc_140846A7E
+0x140846a48  mov     eax, [rbx+18h]
+0x140846a4b  xor     r9d, r9d; ApcContext
+0x140846a4e  mov     rcx, [rbp+FileHandle]; FileHandle
+0x140846a52  xor     r8d, r8d; ApcRoutine
+0x140846a55  mov     [rsp+68h+Key], rsi; Key
+0x140846a5a  xor     edx, edx; Event
+0x140846a5c  mov     [rsp+68h+ByteOffset], rsi; ByteOffset
+0x140846a61  mov     [rsp+68h+Length], eax; Length
+0x140846a65  mov     rax, [rbx+10h]
+0x140846a69  mov     [rsp+68h+Buffer], rax; Buffer
+0x140846a6e  lea     rax, [rbp+var_18]
+0x140846a72  mov     [rsp+68h+IoStatusBlock], rax; IoStatusBlock
+0x140846a77  call    ZwWriteFile
+0x140846a7c  mov     edi, eax
+0x140846a7e  mov     rcx, [rbp+FileHandle]; Handle
+0x140846a82  test    rcx, rcx
+0x140846a85  jz      short loc_140846A8C
+0x140846a87  call    ZwClose
+0x140846a8c  mov     eax, edi
+0x140846a8e  add     rsp, 68h
+0x140846a92  pop     rdi
+0x140846a93  pop     rsi
+0x140846a94  pop     rbx
+0x140846a95  pop     rbp
+0x140846a96  retn
+```
