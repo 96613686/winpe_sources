@@ -1,0 +1,229 @@
+# ReplicationCoordinator::RevertFailoverAsync(ReplicationCoordinatorOperation *)
+
+- ea: `0x1402f8850`
+- end: `0x1402fad0e`
+- name: `?RevertFailoverAsync@ReplicationCoordinator@@AEAAXPEAVReplicationCoordinatorOperation@@@Z`
+- size: `9406`
+- prototype: `void __fastcall(ReplicationCoordinator *__hidden this, struct ReplicationCoordinatorOperation *)`
+- caller_count: `0`
+- callee_count: `45`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x140022640`
+- `0x140041630`
+- `0x14004f3c4`
+- `0x14005c630`
+- `0x140071534`
+- `0x14007bb80`
+- `0x14008fc80`
+- `0x1400916d8`
+- `0x1400e2a70`
+- `0x14017902c`
+- `0x1401879a4`
+- `0x140188e18`
+- `0x1401cedfc`
+- `0x1401d0d6c`
+- `0x1401d3fb8`
+- `0x1401d482c`
+- `0x1402407a4`
+- `0x14027b444`
+- `0x140299634`
+- `0x14029db54`
+- `0x1402be39c`
+- `0x1402f5fac`
+- `0x1402f83e8`
+- `0x1402f8600`
+- `0x1402f8850`
+- `0x1402fad14`
+- `0x14032dd6c`
+- `0x14037c688`
+- `0x14037c7dc`
+- `0x1403b5fa0`
+- `0x14041adf0`
+- `0x1404828e0`
+- `0x140486529`
+- `0x140486541`
+- `0x1404d5640`
+- `0x140528568`
+- `0x140528cb8`
+- `0x14052ae48`
+- `0x14052db7c`
+- `0x14060d2f0`
+- `0x14060f0e0`
+- `0x14060f290`
+- `0x140613b6c`
+- `0x1406148e0`
+- `0x140619260`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x1402f93dc`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x1402f94ba`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x1402f93dc`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x1402f94ba`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f910c`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f914a`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f9503`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f98c5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f9bf1`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f9de2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402fa5c5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402fa7b9`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402fac94`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f910c`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f914a`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f9503`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f98c5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f9bf1`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402f9de2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402fa5c5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402fa7b9`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1402fac94`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f89ed`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f9194`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f9566`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f9c49`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f9f8c`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402fa61d`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402fa9a0`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f89ed`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f9194`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f9566`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f9c49`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402f9f8c`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402fa61d`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1402fa9a0`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f89b1`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f8a28`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f8a71`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f8b8b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9164`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f91d2`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f921b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f92ee`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9356`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9405`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f943b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9539`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f95a6`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f95f2`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9755`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9c1b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9c82`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9cce`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9f5b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9fc8`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa017`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa143`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa5ef`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa656`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa6a2`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa974`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa9e1`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402faa2d`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f89b1`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f8a28`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f8a71`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f8b8b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9164`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f91d2`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f921b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f92ee`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9356`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9405`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f943b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9539`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f95a6`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f95f2`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9755`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9c1b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9c82`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9cce`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9f5b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402f9fc8`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa017`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa143`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa5ef`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa656`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa6a2`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa974`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402fa9e1`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x1402faa2d`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f8a4e`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f8bb0`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f8c42`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f8e99`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f90fa`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f912c`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f91f8`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f937c`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f93ba`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9451`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f94a7`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f94e0`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f95ce`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9780`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9838`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f98b3`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9bd4`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9caa`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9dc5`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9ff3`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa16b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa220`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa5a5`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa67e`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa799`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402faa09`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fac26`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fac82`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f8a4e`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f8bb0`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f8c42`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f8e99`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f90fa`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f912c`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f91f8`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f937c`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f93ba`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9451`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f94a7`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f94e0`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f95ce`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9780`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9838`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f98b3`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9bd4`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9caa`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9dc5`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402f9ff3`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa16b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa220`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa5a5`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa67e`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fa799`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402faa09`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fac26`
+- `api-ms-win-core-processthreads-l1-1-0!TlsSetValue` at `0x1402fac82`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x1402f8b3a`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x1402f9702`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x1402fa0f6`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x1402f8b3a`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x1402f9702`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x1402fa0f6`
+- `vmprox!SetVmErrInfo` at `0x1402f894e`
+- `vmprox!SetVmErrInfo` at `0x1402f894e`
+
+## string_xrefs
+
+- `0x1402f8c25`: `onecore\vm\common\vml\VmReaderWriterLock.h`
+- `0x1402f9806`: `onecore\vm\common\vml\VmReaderWriterLock.h`
+- `0x1402fa1f1`: `onecore\vm\common\vml\VmReaderWriterLock.h`
+
+## pseudocode
+
+```c
+
+```

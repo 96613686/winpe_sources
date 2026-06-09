@@ -1,0 +1,1207 @@
+# WorkerTaskSaving::StartSave(void)
+
+- ea: `0x1400ba91c`
+- end: `0x1400bbfdc`
+- name: `?StartSave@WorkerTaskSaving@@AEAAJXZ`
+- size: `5824`
+- prototype: `__int64 __fastcall(WorkerTaskSaving *__hidden this)`
+- caller_count: `1`
+- callee_count: `72`
+- tags: `registry_config, service_task, installer_update, broker_com_uri`
+
+## callers
+
+- `0x1401720c0`
+
+## callees
+
+- `0x14001ec28`
+- `0x14003b720`
+- `0x14003b7c0`
+- `0x14003d828`
+- `0x140053de8`
+- `0x140053f10`
+- `0x140056b38`
+- `0x14005c320`
+- `0x14005c4dc`
+- `0x14005e6e8`
+- `0x14005eb6c`
+- `0x14005ec10`
+- `0x14005f278`
+- `0x14006b6d4`
+- `0x140078628`
+- `0x140083990`
+- `0x14008bdbc`
+- `0x1400b7900`
+- `0x1400b81e0`
+- `0x1400b99c0`
+- `0x1400ba144`
+- `0x1400ba91c`
+- `0x1400bbfe4`
+- `0x1400bc044`
+- `0x1400bc078`
+- `0x1400bc130`
+- `0x1400bc160`
+- `0x1400bc420`
+- `0x1400bc660`
+- `0x1400bc720`
+- `0x1400bc74c`
+- `0x1400bc80c`
+- `0x1400bc8cc`
+- `0x1400bc98c`
+- `0x1400bc9b8`
+- `0x1400bc9e4`
+- `0x1400bca10`
+- `0x1400bcad0`
+- `0x1400bcafc`
+- `0x1400bcb28`
+- `0x1400bcb54`
+- `0x1400bcce8`
+- `0x1400bcd14`
+- `0x1400bcdd4`
+- `0x1400bce00`
+- `0x1400bce3c`
+- `0x1400bced0`
+- `0x1400bcf90`
+- `0x1400c7608`
+- `0x1400c89b0`
+
+## import_xrefs
+
+- `vid!VidCloneTemplateCreate` at `0x1400bae61`
+- `vid!VidCloneTemplateCreate` at `0x1400bae61`
+- `vid!VidPhuCommit` at `0x1400bbce2`
+- `vid!VidPhuCommit` at `0x1400bbce2`
+
+## string_xrefs
+
+- `0x1400baa5d`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400baae3`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bab22`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bac9f`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bad03`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bad5f`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bae71`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb074`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb172`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb282`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb3ad`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb4bd`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb5e5`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb738`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb7a5`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb8fc`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb955`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb982`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb9cb`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bb9fe`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bbb48`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bbbe5`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bbd4f`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bbe24`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400bbe66`: `onecore\vm\worker\wpcore\workertasksaving.cpp`
+- `0x1400baed3`: `SaveCloneTemplate`
+- `0x1400badd5`: `CreateCloneTemplate`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=47
+__int64 __fastcall WorkerTaskSaving::StartSave(WorkerTaskSaving *this)
+{
+  int v2; // ecx
+  VirtualMachine **v3; // r14
+  const struct _GUID *v4; // r9
+  VirtualMachine *v5; // rcx
+  int v6; // eax
+  VirtualMachine *v7; // rbx
+  struct VmRepository *SavedStateRepository; // rax
+  int v9; // eax
+  const struct _GUID *v10; // rdi
+  __int64 v11; // rbx
+  char v12; // r13
+  unsigned int v13; // r12d
+  int v14; // edi
+  WorkerTaskSaving *v15; // rcx
+  struct VmRepository *v16; // rax
+  __int64 v17; // r9
+  int v18; // ebx
+  VirtualMachine *v19; // rcx
+  __int64 v20; // rdi
+  __int64 (__fastcall *v21)(__int64, struct VmRepository *); // rbx
+  struct VmRepository *v22; // rax
+  int v23; // eax
+  const struct _GUID *v24; // rdi
+  __int64 v25; // rbx
+  __int64 v26; // rax
+  const char *v27; // r9
+  const struct _GUID *v28; // rdi
+  __int64 v29; // rbx
+  struct VmRepository *v30; // rax
+  __int64 v31; // rdi
+  void (__fastcall *v32)(__int64, struct VmRepository *); // rbx
+  struct VmRepository *v33; // rdx
+  struct VmRepository *v34; // rax
+  unsigned int v35; // r13d
+  int v36; // eax
+  __int64 v37; // rbx
+  struct VmRepository *v38; // rax
+  int v39; // eax
+  const struct _GUID *v40; // rdi
+  __int64 v41; // rbx
+  unsigned int v42; // r12d
+  __int64 v43; // rdx
+  int v44; // eax
+  const struct _GUID *v45; // rdi
+  __int64 v46; // rbx
+  int v47; // r12d
+  __int64 v48; // rdi
+  __int64 (__fastcall *v49)(__int64, struct VmRepository *); // rbx
+  struct VmRepository *v50; // rdx
+  int v51; // eax
+  const struct _GUID *v52; // rdi
+  __int64 v53; // rbx
+  unsigned int v54; // r12d
+  __int64 v55; // rdx
+  int v56; // eax
+  const struct _GUID *v57; // rdi
+  __int64 v58; // rbx
+  int v59; // r12d
+  __int64 v60; // rdi
+  __int64 (__fastcall *v61)(__int64, struct VmRepository *); // rbx
+  struct VmRepository *v62; // rdx
+  int v63; // eax
+  const struct _GUID *v64; // rdi
+  __int64 v65; // rbx
+  unsigned int v66; // r12d
+  __int64 v67; // rdi
+  __int64 (__fastcall *v68)(__int64, struct VmRepository *); // rbx
+  struct VmRepository *v69; // rdx
+  int v70; // eax
+  const struct _GUID *v71; // rdi
+  __int64 v72; // rbx
+  unsigned int v73; // r12d
+  VirtualMachine *v74; // rbx
+  struct VmRepository *v75; // rax
+  int v76; // eax
+  int v77; // eax
+  int v78; // eax
+  int v79; // eax
+  VirtualMachine *v80; // rdi
+  __int64 v81; // rbx
+  int v82; // r12d
+  unsigned int v83; // r12d
+  struct VmRepository *v84; // rdi
+  int v85; // ebx
+  __int64 v86; // rcx
+  int v87; // eax
+  VirtualMachine *v88; // rdi
+  __int64 v89; // rbx
+  const char *v90; // r9
+  int v91; // eax
+  int v92; // edi
+  wil *v93; // rcx
+  int v94; // r15d
+  int v95; // eax
+  int v96; // eax
+  const char *v97; // r9
+  VirtualMachine *v98; // rcx
+  struct _EVENT_DESCRIPTOR *v99; // rcx
+  unsigned int v101; // [rsp+20h] [rbp-928h]
+  int v102; // [rsp+20h] [rbp-928h]
+  int v103; // [rsp+20h] [rbp-928h]
+  unsigned int v104[2]; // [rsp+50h] [rbp-8F8h] BYREF
+  bool v105; // [rsp+58h] [rbp-8F0h]
+  char v106; // [rsp+59h] [rbp-8EFh]
+  char v107; // [rsp+5Ah] [rbp-8EEh]
+  char v108; // [rsp+5Bh] [rbp-8EDh]
+  int v109; // [rsp+5Ch] [rbp-8ECh] BYREF
+  int v110; // [rsp+60h] [rbp-8E8h]
+  unsigned __int64 VmName; // [rsp+68h] [rbp-8E0h] BYREF
+  int v112; // [rsp+70h] [rbp-8D8h]
+  int v113; // [rsp+74h] [rbp-8D4h]
+  int v114; // [rsp+78h] [rbp-8D0h]
+  EVENT_DESCRIPTOR EventDescriptor; // [rsp+80h] [rbp-8C8h] BYREF
+  __int64 v116; // [rsp+90h] [rbp-8B8h] BYREF
+  _BYTE v117[336]; // [rsp+A0h] [rbp-8A8h] BYREF
+  _BYTE v118[336]; // [rsp+1F0h] [rbp-758h] BYREF
+  int v119; // [rsp+340h] [rbp-608h] BYREF
+  int v120; // [rsp+344h] [rbp-604h] BYREF
+  __int64 v121; // [rsp+348h] [rbp-600h] BYREF
+  _DWORD v122[4]; // [rsp+350h] [rbp-5F8h] BYREF
+  struct _GUID v123; // [rsp+360h] [rbp-5E8h] BYREF
+  _QWORD v124[42]; // [rsp+370h] [rbp-5D8h] BYREF
+  _QWORD v125[42]; // [rsp+4C0h] [rbp-488h] BYREF
+  _BYTE v126[184]; // [rsp+610h] [rbp-338h] BYREF
+  char *v127; // [rsp+6C8h] [rbp-280h]
+  unsigned int v128; // [rsp+6D8h] [rbp-270h]
+  _BYTE v129[40]; // [rsp+710h] [rbp-238h] BYREF
+  _BYTE v130[72]; // [rsp+738h] [rbp-210h] BYREF
+  _QWORD v131[42]; // [rsp+780h] [rbp-1C8h] BYREF
+  __int64 v132[4]; // [rsp+8D0h] [rbp-78h] BYREF
+  __int64 v133[4]; // [rsp+8F0h] [rbp-58h] BYREF
+  wil::details::in1diag3 *retaddr; // [rsp+948h] [rbp+0h]
+
+  v104[0] = 0;
+  memset_0(v126, 0, 0xF8u);
+  GmoRamOperationSave::GmoRamOperationSave((GmoRamOperationSave *)v126);
+  v109 = 0;
+  v113 = 0;
+  v112 = 0;
+  v108 = 0;
+  v119 = 0;
+  v2 = *((_DWORD *)this + 101);
+  v110 = v2 & 2;
+  v114 = v110;
+  v120 = 0;
+  v122[0] = 0;
+  LODWORD(VmName) = v2 & 4;
+  v106 = 0;
+  v107 = 0;
+  v123 = 0;
+  v3 = (VirtualMachine **)((char *)this + 16);
+  v116 = (__int64)this + 16;
+  v4 = (const struct _GUID *)(*(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v118)
+                                        + 272)
+                            + 8LL);
+  Vml::VmPerfTraceOperation::VmPerfTraceOperation(
+    (Vml::VmPerfTraceOperation *)v129,
+    (struct Vml::VmPerfTraceComponent *)&g_WorkerPerfTrace,
+    (const struct _GUID *)(*((_QWORD *)this + 2) + 1136LL),
+    v4);
+  VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v118);
+  try
+  {
+    v5 = *v3;
+    LODWORD(v121) = *(_DWORD *)(*((_QWORD *)*v3 + 177) + 376LL);
+    if ( !(*(unsigned __int8 (__fastcall **)(_QWORD))(**((_QWORD **)v5 + 124) + 384LL))(*((_QWORD *)v5 + 124)) )
+      wil::details::in1diag3::Throw_Win32(
+        retaddr,
+        (void *)0x2DE,
+        (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+        (const char *)0x32,
+        v101);
+    (*(void (__fastcall **)(_QWORD, int *, _DWORD *))(**((_QWORD **)*v3 + 134) + 80LL))(
+      *((_QWORD *)*v3 + 134),
+      &v120,
+      v122);
+    (*(void (__fastcall **)(_QWORD, int *))(**((_QWORD **)*v3 + 134) + 112LL))(*((_QWORD *)*v3 + 134), &v119);
+    if ( v119 )
+    {
+      v6 = (*(__int64 (__fastcall **)(_QWORD))(**((_QWORD **)*v3 + 134) + 168LL))(*((_QWORD *)*v3 + 134));
+      if ( v6 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x2EA,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v6,
+          v101);
+    }
+    v7 = *v3;
+    if ( *((_BYTE *)*v3 + 2968) )
+    {
+      SavedStateRepository = WorkerTaskSaving::GetSavedStateRepository(this);
+      v9 = VirtualMachine::SaveIgvmSaveState(v7, SavedStateRepository);
+      if ( v9 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x2EF,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v9,
+          v101);
+    }
+    memset_0(v125, 0, sizeof(v125));
+    v10 = (const struct _GUID *)*v3;
+    v11 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v124) + 272);
+    memset_0(v125, 0, sizeof(v125));
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v125);
+    v125[0] = &VmWorkerTrace::SaveGuestRamInfo::`vftable';
+    v104[0] = 2;
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(v125, v11 + 8);
+    VmWorkerTrace::SaveGuestRamInfo::StartActivity((VmWorkerTrace::SaveGuestRamInfo *)v125, v10 + 71);
+    v12 = 1;
+    v13 = 1;
+    VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v124);
+    v14 = qword_1403CC9E0;
+    LODWORD(v11) = WorkerTaskSaving::GetFastSaveType(this);
+    v16 = WorkerTaskSaving::GetSavedStateRepository(v15);
+    v102 = v14;
+    LOBYTE(v17) = 1;
+    MemoryManager::SaveRamInformation(&MemoryManager::m_Instance, v16, (unsigned int)v11, v17);
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v125, 0);
+    VmWorkerTrace::SaveGuestRamInfo::~SaveGuestRamInfo((VmWorkerTrace::SaveGuestRamInfo *)v125);
+    v112 = 1;
+    if ( *((_QWORD *)this + 65) )
+    {
+      WorkerTaskSaving::CompletePrepareTask(this, 0);
+      if ( !Vml::VmWaitable::Wait((VirtualMachine *)((char *)*v3 + 2304), 0x927C0u) )
+      {
+        v18 = -2147217408;
+LABEL_16:
+        v12 = 0;
+LABEL_17:
+        if ( v12 )
+          wil::details::in1diag3::Throw_Hr(
+            retaddr,
+            (void *)0x31F,
+            (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+            (const char *)(unsigned int)v18,
+            v14);
+        v19 = *v3;
+        v121 = (__int64)*v3 + 1152;
+        VmName = (unsigned __int64)VirtualMachine::GetVmName((VirtualMachine *)((char *)v19 + 16));
+        VmEventWriteAndReport<unsigned short const *,unsigned short const *>(
+          (struct _EVENT_DESCRIPTOR *)&MSVML_TIMEOUT_WAITING_FINALIZE_SAVE,
+          5u,
+          (__int64)&VmName,
+          (__int64)&v121);
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x328,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v18,
+          v103);
+      }
+      v18 = *((_DWORD *)*v3 + 578);
+      if ( v18 < 0 )
+      {
+        if ( v18 == -2147467260 )
+          goto LABEL_17;
+        goto LABEL_16;
+      }
+    }
+    if ( v110 && (*((_DWORD *)this + 101) & 0x40000) != 0 )
+    {
+      v20 = *((_QWORD *)*v3 + 128);
+      v21 = *(__int64 (__fastcall **)(__int64, struct VmRepository *))(*(_QWORD *)(v20 + 8) + 80LL);
+      v22 = WorkerTaskSaving::GetSavedStateRepository(this);
+      v23 = v21(v20 + 8, v22);
+      if ( v23 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x337,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v23,
+          v102);
+      v108 = 1;
+    }
+    if ( !*((_DWORD *)this + 104) )
+      WorkerTaskSaving::StopVm(this);
+    if ( (_DWORD)VmName )
+    {
+      memset_0(v124, 0, sizeof(v124));
+      v24 = (const struct _GUID *)*v3;
+      v25 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v117) + 272);
+      memset_0(v124, 0, sizeof(v124));
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v124);
+      v124[0] = &VmWorkerTrace::CreateCloneTemplate::`vftable';
+      v104[0] = 9;
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(
+        v124,
+        v25 + 8);
+      VmWorkerTrace::CreateCloneTemplate::StartActivity((VmWorkerTrace::CreateCloneTemplate *)v124, v24 + 71);
+      VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v117);
+      v26 = (**(__int64 (__fastcall ***)(__int64))(*((_QWORD *)*v3 + 128) + 24LL))(*((_QWORD *)*v3 + 128) + 24LL);
+      if ( !(unsigned int)VidCloneTemplateCreate(v26, 0, &v123) )
+        wil::details::in1diag3::Throw_GetLastError(
+          retaddr,
+          (void *)0x34B,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          v27);
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v124, 0);
+      memset_0(v125, 0, sizeof(v125));
+      v28 = (const struct _GUID *)*v3;
+      v29 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v117) + 272);
+      memset_0(v125, 0, sizeof(v125));
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v125);
+      v125[0] = &VmWorkerTrace::SaveCloneTemplate::`vftable';
+      v104[0] = 37;
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(
+        v125,
+        v29 + 8);
+      VmWorkerTrace::SaveCloneTemplate::StartActivity((VmWorkerTrace::SaveCloneTemplate *)v125, v28 + 71);
+      v13 = 21;
+      VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v117);
+      v30 = WorkerTaskSaving::GetSavedStateRepository(this);
+      MemoryManager::SaveCloneTemplateId((MemoryManager *)&MemoryManager::m_Instance, v30, &v123);
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v125, 0);
+      VmWorkerTrace::SaveCloneTemplate::~SaveCloneTemplate((VmWorkerTrace::SaveCloneTemplate *)v125);
+      VmWorkerTrace::CreateCloneTemplate::~CreateCloneTemplate((VmWorkerTrace::CreateCloneTemplate *)v124);
+    }
+    if ( (*((_BYTE *)this + 424) & 0x22) != 2 )
+    {
+      v31 = *((_QWORD *)*v3 + 128);
+      v32 = *(void (__fastcall **)(__int64, struct VmRepository *))(*(_QWORD *)v31 + 256LL);
+      v33 = WorkerTaskSaving::GetSavedStateRepository(this);
+      v32(v31, v33);
+      if ( !v120 )
+      {
+        v34 = WorkerTaskSaving::GetSavedStateRepository(this);
+        MemoryManager::SaveVtlProtections((MemoryManager *)&MemoryManager::m_Instance, v34);
+      }
+    }
+    v35 = (v110 != 0 ? 2 : 0) | (*((_QWORD *)this + 53) >> 2) & 4;
+    if ( (*((_BYTE *)this + 424) & 0x40) != 0 )
+      v35 |= 0x40u;
+    v36 = *((_DWORD *)this + 101);
+    if ( (v36 & 0x400) != 0 )
+      v35 |= 8u;
+    if ( (v36 & 0x800) != 0 )
+      v35 |= 0x10u;
+    if ( (v36 & 0x1000) != 0 )
+      v35 |= 0x20u;
+    if ( (v36 & 0x2000) != 0 )
+      v35 |= 0x80u;
+    if ( (v36 & 0x40000) != 0 )
+      v35 |= 0x100u;
+    if ( (v36 & 0x200) == 0 )
+    {
+      v37 = *((_QWORD *)*v3 + 123);
+      v38 = WorkerTaskSaving::GetSavedStateRepository(this);
+      v39 = VirtualMotherboard::Save(v37, v38, v35);
+      if ( v39 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x388,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v39,
+          v102);
+    }
+    v40 = (const struct _GUID *)*v3;
+    if ( *((_DWORD *)*v3 + 653) )
+    {
+      memset_0(v125, 0, sizeof(v125));
+      v41 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v117) + 272);
+      memset_0(v125, 0, sizeof(v125));
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v125);
+      v125[0] = &VmWorkerTrace::SuspendEpf::`vftable';
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(
+        v125,
+        v41 + 8);
+      VmWorkerTrace::SuspendEpf::StartActivity((VmWorkerTrace::SuspendEpf *)v125, v40 + 71);
+      v42 = v13 & 0xFFFFFF3F | 0x40;
+      v104[0] = v42;
+      VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v117);
+      LOBYTE(v43) = 1;
+      v44 = (*(__int64 (__fastcall **)(_QWORD, __int64))(**((_QWORD **)*v3 + 128) + 288LL))(*((_QWORD *)*v3 + 128), v43);
+      if ( v44 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x394,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v44,
+          v102);
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v125, 0);
+      v106 = 1;
+      memset_0(v124, 0, sizeof(v124));
+      v45 = (const struct _GUID *)*v3;
+      v46 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v117) + 272);
+      memset_0(v124, 0, sizeof(v124));
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v124);
+      v124[0] = &VmWorkerTrace::SaveEpfState::`vftable';
+      v47 = v42 | 0x200;
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(
+        v124,
+        v46 + 8);
+      VmWorkerTrace::SaveEpfState::StartActivity((VmWorkerTrace::SaveEpfState *)v124, v45 + 71);
+      v104[0] = v47 & 0xFFFFFDFF;
+      v13 = v47 & 0xFFFFFCFF | 0x100;
+      VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v117);
+      v48 = *((_QWORD *)*v3 + 128);
+      v49 = *(__int64 (__fastcall **)(__int64, struct VmRepository *))(*(_QWORD *)v48 + 272LL);
+      v50 = WorkerTaskSaving::GetSavedStateRepository(this);
+      v51 = v49(v48, v50);
+      if ( v51 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x39C,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v51,
+          v102);
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v124, 0);
+      VmWorkerTrace::SaveEpfState::~SaveEpfState((VmWorkerTrace::SaveEpfState *)v124);
+      VmWorkerTrace::SuspendEpf::~SuspendEpf((VmWorkerTrace::SuspendEpf *)v125);
+    }
+    v52 = (const struct _GUID *)*v3;
+    if ( *((_BYTE *)*v3 + 2616) )
+    {
+      memset_0(v125, 0, sizeof(v125));
+      v53 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v117) + 272);
+      memset_0(v125, 0, sizeof(v125));
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v125);
+      v125[0] = &VmWorkerTrace::SuspendSchedulerAssist::`vftable';
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(
+        v125,
+        v53 + 8);
+      VmWorkerTrace::SuspendSchedulerAssist::StartActivity((VmWorkerTrace::SuspendSchedulerAssist *)v125, v52 + 71);
+      v54 = v13 & 0xFFFFF3FF | 0x400;
+      v104[0] = v54;
+      VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v117);
+      LOBYTE(v55) = 1;
+      v56 = (*(__int64 (__fastcall **)(_QWORD, __int64))(**((_QWORD **)*v3 + 128) + 312LL))(*((_QWORD *)*v3 + 128), v55);
+      if ( v56 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x3A5,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v56,
+          v102);
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v125, 0);
+      v107 = 1;
+      memset_0(v124, 0, sizeof(v124));
+      v57 = (const struct _GUID *)*v3;
+      v58 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v117) + 272);
+      memset_0(v124, 0, sizeof(v124));
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v124);
+      v124[0] = &VmWorkerTrace::SaveSchedulerAssistState::`vftable';
+      v59 = v54 | 0x2000;
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(
+        v124,
+        v58 + 8);
+      VmWorkerTrace::SaveSchedulerAssistState::StartActivity((VmWorkerTrace::SaveSchedulerAssistState *)v124, v57 + 71);
+      v104[0] = v59 & 0xFFFFDFFF;
+      v13 = v59 & 0xFFFFCFFF | 0x1000;
+      VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v117);
+      v60 = *((_QWORD *)*v3 + 128);
+      v61 = *(__int64 (__fastcall **)(__int64, struct VmRepository *))(*(_QWORD *)v60 + 296LL);
+      v62 = WorkerTaskSaving::GetSavedStateRepository(this);
+      v63 = v61(v60, v62);
+      if ( v63 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x3AD,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v63,
+          v102);
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v124, 0);
+      VmWorkerTrace::SaveSchedulerAssistState::~SaveSchedulerAssistState((VmWorkerTrace::SaveSchedulerAssistState *)v124);
+      VmWorkerTrace::SuspendSchedulerAssist::~SuspendSchedulerAssist((VmWorkerTrace::SuspendSchedulerAssist *)v125);
+    }
+    memset_0(v131, 0, sizeof(v131));
+    v64 = (const struct _GUID *)*v3;
+    v65 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v117) + 272);
+    memset_0(v131, 0, sizeof(v131));
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v131);
+    v131[0] = &VmWorkerTrace::SaveIsolationControlState::`vftable';
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(v131, v65 + 8);
+    VmWorkerTrace::SaveIsolationControlState::StartActivity((VmWorkerTrace::SaveIsolationControlState *)v131, v64 + 71);
+    v66 = v13 & 0xFFFF3FFF | 0x4000;
+    v104[0] = v66;
+    VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v117);
+    v67 = *((_QWORD *)*v3 + 130);
+    v68 = *(__int64 (__fastcall **)(__int64, struct VmRepository *))(*(_QWORD *)v67 + 760LL);
+    v69 = WorkerTaskSaving::GetSavedStateRepository(this);
+    v70 = v68(v67, v69);
+    if ( v70 < 0 )
+      wil::details::in1diag3::Throw_Hr(
+        retaddr,
+        (void *)0x3B5,
+        (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+        (const char *)(unsigned int)v70,
+        v102);
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v131, 0);
+    memset_0(v124, 0, sizeof(v124));
+    v71 = (const struct _GUID *)*v3;
+    v72 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v125) + 272);
+    memset_0(v124, 0, sizeof(v124));
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v124);
+    v124[0] = &VmWorkerTrace::SavePartitionStates::`vftable';
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(v124, v72 + 8);
+    VmWorkerTrace::SavePartitionStates::StartActivity((VmWorkerTrace::SavePartitionStates *)v124, v71 + 71);
+    v73 = v66 & 0xFFFCFFFF | 0x10000;
+    v104[0] = v73;
+    VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v125);
+    v104[0] = (*((_DWORD *)this + 101) >> 6) & 8;
+    if ( (unsigned int)WorkerTaskSaving::GetFastSaveType(this) == 2 && (*((_BYTE *)this + 424) & 1) != 0
+      || (v105 = 0, (unsigned int)WorkerTaskSaving::GetFastSaveType(this) == 4) && (*((_BYTE *)this + 424) & 0x21) == 1 )
+    {
+      v105 = 1;
+    }
+    v74 = *v3;
+    v75 = WorkerTaskSaving::GetSavedStateRepository(this);
+    v76 = VirtualMachine::SavePartitionStates(v74, v75, v105, v104[0]);
+    if ( v76 < 0 )
+      wil::details::in1diag3::Throw_Hr(
+        retaddr,
+        (void *)0x3D0,
+        (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+        (const char *)(unsigned int)v76,
+        v102);
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v124, 0);
+    VmWorkerTrace::SavePartitionStates::~SavePartitionStates((VmWorkerTrace::SavePartitionStates *)v124);
+    WorkerAsyncTaskBase::UpdateStatusProgress(this, 0x14u, &v109);
+    if ( !v110 && !(_DWORD)VmName )
+    {
+      if ( v109 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x3DE,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)0x80042001LL,
+          v102);
+      memset_0(v124, 0, sizeof(v124));
+      EventDescriptor = (EVENT_DESCRIPTOR)VMWP_PERF_WORKER_SAVE_START;
+      VmPerf::StartVmlActivity_VmWorkerTrace::SaveGuestRam_(
+        (VmWorkerTrace::SaveGuestRam *)v124,
+        (struct _GUID *)*v3 + 71,
+        (Vml::VmPerfTraceOperation *)v129,
+        &EventDescriptor);
+      *(_QWORD *)&EventDescriptor.Id = WorkerTaskSaving::GetSavedStateRepository(this);
+      *(_QWORD *)v104 = 0;
+      if ( (*((_DWORD *)this + 101) & 0x20000) != 0 )
+      {
+        VmName = 0;
+        VirtualMachine::GetVtl2PrivateRamRange(*v3, &VmName, (unsigned __int64 *)v104);
+        MemoryManager::GpaIndexToRamIndex((MemoryManager *)&MemoryManager::m_Instance, VmName);
+        if ( !*(_QWORD *)v104 )
+          MemoryManager::GetRamSizeInPages((MemoryManager *)&MemoryManager::m_Instance);
+      }
+      else
+      {
+        MemoryManager::GetRamSizeInPages((MemoryManager *)&MemoryManager::m_Instance);
+      }
+      v102 = 98;
+      v77 = GmoRamOperationSource::Initialize(v126, *(_QWORD *)&EventDescriptor.Id, *v3, *((_QWORD *)this + 3));
+      if ( v77 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x415,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v77,
+          98);
+      v113 = 1;
+      if ( v119 )
+      {
+        v78 = (*(__int64 (__fastcall **)(_QWORD, _QWORD, __int64, __int64))(**((_QWORD **)*v3 + 134) + 184LL))(
+                *((_QWORD *)*v3 + 134),
+                v128,
+                256,
+                2);
+        if ( v78 < 0 )
+          wil::details::in1diag3::Throw_Hr(
+            retaddr,
+            (void *)0x421,
+            (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+            (const char *)(unsigned int)v78,
+            98);
+      }
+      v79 = GmoRamOperation::WorkThreadsStart((GmoRamOperation *)v126);
+      if ( v79 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x427,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v79,
+          98);
+      GmoRamOperation::WorkDispatch((GmoRamOperation *)v126);
+      WorkerAsyncTaskBase::UpdateStatusProgress(this, 0x28u, &v109);
+      if ( v109 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x430,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)0x80042001LL,
+          98);
+      GmoRamOperation::WorkThreadsWaitForExit((GmoRamOperation *)v126);
+      if ( (int)v127 < 0 )
+        wil::details::in1diag3::Throw_Hr(
+          retaddr,
+          (void *)0x437,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          (const char *)(unsigned int)v127,
+          98);
+      EventDescriptor = (EVENT_DESCRIPTOR)VMWP_PERF_WORKER_SAVE_STOP;
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v124, 0);
+      Vml::VmPerfTraceOperation::EndOperation<>((Vml::VmPerfTraceOperation *)v129, &EventDescriptor);
+      VmWorkerTrace::SaveGuestRam::~SaveGuestRam((VmWorkerTrace::SaveGuestRam *)v124);
+    }
+    memset_0(v124, 0, sizeof(v124));
+    v80 = *v3;
+    v81 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v117) + 272);
+    memset_0(v124, 0, sizeof(v124));
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v124);
+    v124[0] = &VmWorkerTrace::FinalizeRepository::`vftable';
+    v82 = v73 | 0x80000;
+    v104[0] = v82;
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(v124, v81 + 8);
+    VmWorkerTrace::FinalizeRepository::StartActivity(
+      (VmWorkerTrace::FinalizeRepository *)v124,
+      (const struct _GUID *)v80 + 71);
+    v83 = v82 & 0xFFF3FFFF | 0x40000;
+    v104[0] = v83;
+    VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v117);
+    v84 = WorkerTaskSaving::GetSavedStateRepository(this);
+    EventDescriptor = 0;
+    v85 = 1;
+    VmRepositoryAutoLock::VmRepositoryAutoLock(&EventDescriptor, v84, 1);
+    if ( SLODWORD(EventDescriptor.Keyword) < 0 )
+      wil::details::in1diag3::Throw_Hr(
+        retaddr,
+        (void *)0x441,
+        (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+        (const char *)LODWORD(EventDescriptor.Keyword),
+        v102);
+    VmName = 0;
+    if ( (*((_BYTE *)this + 404) & 0x10) != 0 )
+    {
+      LODWORD(v121) = 1;
+      v102 = 0;
+      (*(void (__fastcall **)(struct VmRepository *, _QWORD, __int64 *, __int64))(*(_QWORD *)v84 + 272LL))(
+        v84,
+        0,
+        &v121,
+        4);
+      wil::details::unique_storage<wil::details::resource_policy<VmRepository *,void (*)(VmRepository *),&void Details::ReenableFlushes(VmRepository *),wistd::integral_constant<unsigned __int64,0>,VmRepository *,VmRepository *,0,std::nullptr_t>>::reset(
+        &VmName,
+        v84);
+    }
+    if ( v110 )
+    {
+      v86 = *((_QWORD *)*v3 + 179);
+      if ( v86 )
+        *(_DWORD *)(v86 + 24) = 1;
+    }
+    v87 = (*(__int64 (__fastcall **)(struct VmRepository *))(*(_QWORD *)v84 + 224LL))(v84);
+    if ( v87 < 0 )
+      wil::details::in1diag3::Throw_Hr(
+        retaddr,
+        (void *)0x454,
+        (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+        (const char *)(unsigned int)v87,
+        v102);
+    wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v124, 0);
+    wil::details::unique_storage<wil::details::resource_policy<VmRepository *,void (*)(VmRepository *),&void Details::ReenableFlushes(VmRepository *),wistd::integral_constant<unsigned __int64,0>,VmRepository *,VmRepository *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<VmRepository *,void (*)(VmRepository *),&void Details::ReenableFlushes(VmRepository *),wistd::integral_constant<unsigned __int64,0>,VmRepository *,VmRepository *,0,std::nullptr_t>>(&VmName);
+    VmRepositoryAutoLock::~VmRepositoryAutoLock((VmRepositoryAutoLock *)&EventDescriptor);
+    VmWorkerTrace::FinalizeRepository::~FinalizeRepository((VmWorkerTrace::FinalizeRepository *)v124);
+    if ( v110 )
+    {
+      memset_0(v124, 0, sizeof(v124));
+      v88 = *v3;
+      v89 = *(_QWORD *)(WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(this, v117) + 272);
+      memset_0(v124, 0, sizeof(v124));
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>((struct wil::details::IFailureCallback *)v124);
+      v124[0] = &VmWorkerTrace::PersistRamInformation::`vftable';
+      v104[0] = v83 | 0x200000;
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(
+        v124,
+        v89 + 8);
+      VmWorkerTrace::PersistRamInformation::StartActivity(
+        (VmWorkerTrace::PersistRamInformation *)v124,
+        (const struct _GUID *)v88 + 71);
+      VmWorkerTrace::SavingTask::~SavingTask((VmWorkerTrace::SavingTask *)v117);
+      if ( !(unsigned int)VidPhuCommit(xmmword_1403CC900) )
+        wil::details::in1diag3::Throw_GetLastError(
+          retaddr,
+          (void *)0x1CD6,
+          (unsigned int)"onecore\\vm\\worker\\memory\\memorymanager.cpp",
+          v90);
+      wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(v124, 0);
+      if ( (*((_DWORD *)this + 101) & 0x400) != 0 )
+      {
+        v91 = VirtualMotherboard::PerformHandleTransfer(*((_QWORD *)*v3 + 123), v35, *((_QWORD *)this + 51));
+        if ( v91 < 0 )
+          wil::details::in1diag3::Throw_Hr(
+            retaddr,
+            (void *)0x46E,
+            (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+            (const char *)(unsigned int)v91,
+            v102);
+      }
+      VmWorkerTrace::PersistRamInformation::~PersistRamInformation((VmWorkerTrace::PersistRamInformation *)v124);
+      v85 = 1;
+    }
+    v92 = 0;
+    v109 = 0;
+    VmWorkerTrace::SaveIsolationControlState::~SaveIsolationControlState((VmWorkerTrace::SaveIsolationControlState *)v131);
+    v94 = v110;
+  }
+  catch ( ... )
+  {
+    v109 = wil::ResultFromCaughtException(v93);
+    v92 = v109;
+    v85 = v112;
+    v94 = v114;
+    v3 = (VirtualMachine **)v116;
+  }
+  if ( v113 )
+    GmoRamOperation::Teardown((GmoRamOperation *)v126);
+  if ( v119 )
+  {
+    (*(void (__fastcall **)(_QWORD))(**((_QWORD **)*v3 + 134) + 192LL))(*((_QWORD *)*v3 + 134));
+    (*(void (__fastcall **)(_QWORD))(**((_QWORD **)*v3 + 134) + 176LL))(*((_QWORD *)*v3 + 134));
+  }
+  if ( v106 )
+  {
+    v95 = (*(__int64 (__fastcall **)(_QWORD, _QWORD))(**((_QWORD **)*v3 + 128) + 288LL))(*((_QWORD *)*v3 + 128), 0);
+    if ( v95 < 0 )
+      wil::details::in1diag3::_Log_Hr(
+        retaddr,
+        (void *)0x489,
+        (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+        (const char *)(unsigned int)v95,
+        v102);
+  }
+  if ( v107 )
+  {
+    v96 = (*(__int64 (__fastcall **)(_QWORD, _QWORD))(**((_QWORD **)*v3 + 128) + 312LL))(*((_QWORD *)*v3 + 128), 0);
+    if ( v96 < 0 )
+      wil::details::in1diag3::_Log_Hr(
+        retaddr,
+        (void *)0x491,
+        (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+        (const char *)(unsigned int)v96,
+        v102);
+  }
+  if ( v92 < 0 )
+  {
+    if ( v85 && v94 )
+    {
+      try
+      {
+        MemoryManager::UnPersistRamInformation((MemoryManager *)&MemoryManager::m_Instance);
+      }
+      catch ( ... )
+      {
+        wil::details::in1diag3::Log_CaughtException(
+          retaddr,
+          (void *)0x4A0,
+          (unsigned int)"onecore\\vm\\worker\\wpcore\\workertasksaving.cpp",
+          v97);
+        v92 = v109;
+        v94 = v114;
+        v3 = (VirtualMachine **)v116;
+      }
+    }
+    if ( v108 && v94 )
+      (*(void (__fastcall **)(__int64))(*(_QWORD *)(*((_QWORD *)*v3 + 128) + 8LL) + 96LL))(*((_QWORD *)*v3 + 128) + 8LL);
+    if ( v92 != -2147213311 )
+    {
+      _snwprintf_s<16>(v133, 16, L"%%%%%u", v92 & 0xEFFFFFFF);
+      _snwprintf_s<16>(v132, 16, L"0x%08X", v92 & 0xEFFFFFFF);
+      v98 = *v3;
+      *(_QWORD *)&EventDescriptor.Id = (char *)*v3 + 1152;
+      v116 = (__int64)VirtualMachine::GetVmName((VirtualMachine *)((char *)v98 + 16));
+      v99 = (struct _EVENT_DESCRIPTOR *)MSVML_GMO_FAST_SAVE_ERROR;
+      if ( !v94 )
+        v99 = (struct _EVENT_DESCRIPTOR *)&MSVML_GMO_SAVE_ERROR;
+      VmEventWriteAndReport<unsigned short const *,unsigned short const *,unsigned short (&)[16],unsigned short (&)[16]>(
+        v99,
+        5u,
+        (__int64)&v116,
+        (__int64)&EventDescriptor,
+        (__int64)v133,
+        (__int64)v132);
+    }
+  }
+  std::wstring::_Tidy_deallocate(v130);
+  GmoRamOperationSave::~GmoRamOperationSave((GmoRamOperationSave *)v126);
+  return (unsigned int)v92;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1400ba91c  mov     [rsp+arg_8], rbx
+0x1400ba921  mov     [rsp+arg_10], rsi
+0x1400ba926  push    rdi
+0x1400ba927  push    r12
+0x1400ba929  push    r13
+0x1400ba92b  push    r14
+0x1400ba92d  push    r15
+0x1400ba92f  sub     rsp, 920h
+0x1400ba936  mov     rax, cs:__security_cookie
+0x1400ba93d  xor     rax, rsp
+0x1400ba940  mov     [rsp+948h+var_38], rax
+0x1400ba948  mov     r15, rcx
+0x1400ba94b  xor     esi, esi
+0x1400ba94d  mov     [rsp+948h+var_8F8], esi
+0x1400ba951  xor     edx, edx; Val
+0x1400ba953  mov     r8d, 0F8h; Size
+0x1400ba959  lea     rcx, [rsp+948h+var_338]; void *
+0x1400ba961  call    memset_0
+0x1400ba966  lea     rcx, [rsp+948h+var_338]; this
+0x1400ba96e  call    ??0GmoRamOperationSave@@QEAA@XZ; GmoRamOperationSave::GmoRamOperationSave(void)
+0x1400ba973  nop
+0x1400ba974  mov     [rsp+948h+var_8EC], esi
+0x1400ba978  mov     [rsp+948h+var_8D4], esi
+0x1400ba97c  mov     [rsp+948h+var_8D8], esi
+0x1400ba980  mov     [rsp+948h+var_8ED], sil
+0x1400ba985  mov     [rsp+948h+var_608], esi
+0x1400ba98c  mov     ecx, [r15+194h]
+0x1400ba993  mov     eax, ecx
+0x1400ba995  and     eax, 2
+0x1400ba998  mov     [rsp+948h+var_8E8], eax
+0x1400ba99c  mov     [rsp+948h+var_8D0], eax
+0x1400ba9a0  mov     [rsp+948h+var_604], esi
+0x1400ba9a7  mov     [rsp+948h+var_5F8], esi
+0x1400ba9ae  and     ecx, 4
+0x1400ba9b1  mov     dword ptr [rsp+948h+var_8E0], ecx
+0x1400ba9b5  mov     [rsp+948h+var_8EF], sil
+0x1400ba9ba  mov     [rsp+948h+var_8EE], sil
+0x1400ba9bf  xorps   xmm0, xmm0
+0x1400ba9c2  movdqa  xmmword ptr [rsp+948h+var_5E8.Data1], xmm0
+0x1400ba9cb  lea     rdx, [rsp+948h+var_758]
+0x1400ba9d3  mov     rcx, r15
+0x1400ba9d6  call    ?GetCurrentActivity@?$WorkerAsyncTask@VSavingTask@VmWorkerTrace@@@@IEAA?AVSavingTask@VmWorkerTrace@@XZ; WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(void)
+0x1400ba9db  nop
+0x1400ba9dc  lea     r14, [r15+10h]
+0x1400ba9e0  mov     [rsp+948h+var_8B8], r14
+0x1400ba9e8  mov     r9, [rax+110h]
+0x1400ba9ef  add     r9, 8; struct _GUID *
+0x1400ba9f3  mov     r8, [r14]
+0x1400ba9f6  add     r8, 470h; struct _GUID *
+0x1400ba9fd  lea     rdx, ?g_WorkerPerfTrace@@3VVmPerfTraceComponent@Vml@@A; struct Vml::VmPerfTraceComponent *
+0x1400baa04  lea     rcx, [rsp+948h+var_238]; this
+0x1400baa0c  call    ??0VmPerfTraceOperation@Vml@@QEAA@AEAVVmPerfTraceComponent@1@AEBU_GUID@@1@Z; Vml::VmPerfTraceOperation::VmPerfTraceOperation(Vml::VmPerfTraceComponent &,_GUID const &,_GUID const &)
+0x1400baa11  nop
+0x1400baa12  lea     rcx, [rsp+948h+var_758]; this
+0x1400baa1a  call    ??1SavingTask@VmWorkerTrace@@QEAA@XZ; VmWorkerTrace::SavingTask::~SavingTask(void)
+0x1400baa1f  nop
+0x1400baa20  mov     rcx, [r14]
+0x1400baa23  mov     rax, [rcx+588h]
+0x1400baa2a  mov     eax, [rax+178h]
+0x1400baa30  mov     dword ptr [rsp+948h+var_600], eax
+0x1400baa37  mov     rcx, [rcx+3E0h]
+0x1400baa3e  mov     rax, [rcx]
+0x1400baa41  mov     rax, [rax+180h]
+0x1400baa48  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1400baa4d  test    al, al
+0x1400baa4f  jnz     short loc_1400BAA6E
+0x1400baa51  mov     rcx, [rsp+948h]; this
+0x1400baa59  lea     r9d, [rsi+32h]; char *
+0x1400baa5d  lea     r8, aOnecoreVmWorke_80; "onecore\\vm\\worker\\wpcore\\workertask"...
+0x1400baa64  mov     edx, 2DEh; void *
+0x1400baa69  call    ?Throw_Win32@in1diag3@details@wil@@YAXPEAXIPEBDK@Z; wil::details::in1diag3::Throw_Win32(void *,uint,char const *,ulong)
+0x1400baa6e  mov     rax, [r14]
+0x1400baa71  mov     rcx, [rax+430h]
+0x1400baa78  mov     rax, [rcx]
+0x1400baa7b  lea     r8, [rsp+948h+var_5F8]
+0x1400baa83  lea     rdx, [rsp+948h+var_604]
+0x1400baa8b  mov     rax, [rax+50h]
+0x1400baa8f  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1400baa94  mov     rax, [r14]
+0x1400baa97  mov     rcx, [rax+430h]
+0x1400baa9e  mov     rax, [rcx]
+0x1400baaa1  lea     rdx, [rsp+948h+var_608]
+0x1400baaa9  mov     rax, [rax+70h]
+0x1400baaad  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1400baab2  cmp     [rsp+948h+var_608], esi
+0x1400baab9  jz      short loc_1400BAAF4
+0x1400baabb  mov     rax, [r14]
+0x1400baabe  mov     rcx, [rax+430h]
+0x1400baac5  mov     rax, [rcx]
+0x1400baac8  mov     rax, [rax+0A8h]
+0x1400baacf  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1400baad4  mov     rcx, [rsp+948h]; this
+0x1400baadc  test    eax, eax
+0x1400baade  jns     short loc_1400BAAF4
+0x1400baae0  mov     r9d, eax; char *
+0x1400baae3  lea     r8, aOnecoreVmWorke_80; "onecore\\vm\\worker\\wpcore\\workertask"...
+0x1400baaea  mov     edx, 2EAh; void *
+0x1400baaef  call    ?Throw_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Throw_Hr(void *,uint,char const *,long)
+0x1400baaf4  mov     rbx, [r14]
+0x1400baaf7  cmp     [rbx+0B98h], sil
+0x1400baafe  jz      short loc_1400BAB33
+0x1400bab00  mov     rcx, r15; this
+0x1400bab03  call    ?GetSavedStateRepository@WorkerTaskSaving@@AEAAPEAVVmRepository@@XZ; WorkerTaskSaving::GetSavedStateRepository(void)
+0x1400bab08  mov     rdx, rax; struct VmRepository *
+0x1400bab0b  mov     rcx, rbx; this
+0x1400bab0e  call    ?SaveIgvmSaveState@VirtualMachine@@UEAAJPEAVVmRepository@@@Z; VirtualMachine::SaveIgvmSaveState(VmRepository *)
+0x1400bab13  mov     rcx, [rsp+948h]; this
+0x1400bab1b  test    eax, eax
+0x1400bab1d  jns     short loc_1400BAB33
+0x1400bab1f  mov     r9d, eax; char *
+0x1400bab22  lea     r8, aOnecoreVmWorke_80; "onecore\\vm\\worker\\wpcore\\workertask"...
+0x1400bab29  mov     edx, 2EFh; void *
+0x1400bab2e  call    ?Throw_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Throw_Hr(void *,uint,char const *,long)
+0x1400bab33  mov     r12d, 150h
+0x1400bab39  mov     r8d, r12d; Size
+0x1400bab3c  xor     edx, edx; Val
+0x1400bab3e  lea     rcx, [rsp+948h+var_488]; void *
+0x1400bab46  call    memset_0
+0x1400bab4b  mov     rdi, [r14]
+0x1400bab4e  lea     rdx, [rsp+948h+var_5D8]
+0x1400bab56  mov     rcx, r15
+0x1400bab59  call    ?GetCurrentActivity@?$WorkerAsyncTask@VSavingTask@VmWorkerTrace@@@@IEAA?AVSavingTask@VmWorkerTrace@@XZ; WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(void)
+0x1400bab5e  nop
+0x1400bab5f  mov     rbx, [rax+110h]
+0x1400bab66  mov     r8d, r12d; Size
+0x1400bab69  xor     edx, edx; Val
+0x1400bab6b  lea     rcx, [rsp+948h+var_488]; void *
+0x1400bab73  call    memset_0
+0x1400bab78  lea     rdx, aSaveguestramin; "SaveGuestRamInfo"
+0x1400bab7f  lea     rcx, [rsp+948h+var_488]; struct wil::details::IFailureCallback *
+0x1400bab87  call    ??0?$ActivityBase@VVmWorkerTrace@@$0A@$0BA@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAA@PEBD_N@Z; wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>(char const *,bool)
+0x1400bab8c  lea     rax, ??_7SaveGuestRamInfo@VmWorkerTrace@@6B@; const VmWorkerTrace::SaveGuestRamInfo::`vftable'
+0x1400bab93  mov     [rsp+948h+var_488], rax
+0x1400bab9b  mov     [rsp+948h+var_8F8], 2
+0x1400baba3  lea     rdx, [rbx+8]
+0x1400baba7  lea     rcx, [rsp+948h+var_488]
+0x1400babaf  call    ?SetRelatedActivityId@?$ActivityBase@VVmWorkerTrace@@$0A@$0BA@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXAEBU_GUID@@@Z; wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(_GUID const &)
+0x1400babb4  lea     rdx, [rdi+470h]; struct _GUID *
+0x1400babbb  lea     rcx, [rsp+948h+var_488]; this
+0x1400babc3  call    ?StartActivity@SaveGuestRamInfo@VmWorkerTrace@@QEAAXAEBU_GUID@@@Z; VmWorkerTrace::SaveGuestRamInfo::StartActivity(_GUID const &)
+0x1400babc8  nop
+0x1400babc9  mov     r13d, 1
+0x1400babcf  mov     r12d, r13d
+0x1400babd2  lea     rcx, [rsp+948h+var_5D8]; this
+0x1400babda  call    ??1SavingTask@VmWorkerTrace@@QEAA@XZ; VmWorkerTrace::SavingTask::~SavingTask(void)
+0x1400babdf  mov     rdi, cs:qword_1403CC9E0
+0x1400babe6  mov     rcx, r15
+0x1400babe9  call    ?GetFastSaveType@WorkerTaskSaving@@AEAA?AW4VmFastSaveType@@XZ; WorkerTaskSaving::GetFastSaveType(void)
+0x1400babee  mov     ebx, eax
+0x1400babf0  call    ?GetSavedStateRepository@WorkerTaskSaving@@AEAAPEAVVmRepository@@XZ; WorkerTaskSaving::GetSavedStateRepository(void)
+0x1400babf5  lea     rcx, [r15+1A8h]
+0x1400babfc  mov     [rsp+948h+var_920], rcx
+0x1400bac01  mov     [rsp+948h+var_928], rdi; int
+0x1400bac06  mov     r9b, r13b
+0x1400bac09  mov     r8d, ebx
+0x1400bac0c  mov     rdx, rax
+0x1400bac0f  lea     rcx, ?m_Instance@MemoryManager@@0V1@A; MemoryManager MemoryManager::m_Instance
+0x1400bac16  call    ?SaveRamInformation@MemoryManager@@UEAAXPEAVVmRepository@@W4VmFastSaveType@@_NPEAVGmoBitmap@@PEAT_VM_PERSIST_FLAGS@@@Z; MemoryManager::SaveRamInformation(VmRepository *,VmFastSaveType,bool,GmoBitmap *,_VM_PERSIST_FLAGS *)
+0x1400bac1b  xor     edx, edx
+0x1400bac1d  lea     rcx, [rsp+948h+var_488]
+0x1400bac25  call    ?Stop@?$ActivityBase@VVmWorkerTrace@@$0A@$0BA@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXJ@Z; wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(long)
+0x1400bac2a  nop
+0x1400bac2b  lea     rcx, [rsp+948h+var_488]; this
+0x1400bac33  call    ??1SaveGuestRamInfo@VmWorkerTrace@@QEAA@XZ; VmWorkerTrace::SaveGuestRamInfo::~SaveGuestRamInfo(void)
+0x1400bac38  mov     [rsp+948h+var_8D8], r13d
+0x1400bac3d  cmp     [r15+208h], rsi
+0x1400bac44  jz      loc_1400BAD14
+0x1400bac4a  xor     edx, edx; int
+0x1400bac4c  mov     rcx, r15; this
+0x1400bac4f  call    ?CompletePrepareTask@WorkerTaskSaving@@AEAAXJ@Z; WorkerTaskSaving::CompletePrepareTask(long)
+0x1400bac54  mov     rcx, [r14]
+0x1400bac57  add     rcx, 900h; this
+0x1400bac5e  mov     edx, 927C0h; unsigned int
+0x1400bac63  call    ?Wait@VmWaitable@Vml@@QEBAHI@Z; Vml::VmWaitable::Wait(uint)
+0x1400bac68  test    eax, eax
+0x1400bac6a  jz      short loc_1400BAC87
+0x1400bac6c  mov     rax, [r14]
+0x1400bac6f  mov     ebx, [rax+908h]
+0x1400bac75  test    ebx, ebx
+0x1400bac77  jns     loc_1400BAD14
+0x1400bac7d  cmp     ebx, 80004004h
+0x1400bac83  jz      short loc_1400BAC8F
+0x1400bac85  jmp     short loc_1400BAC8C
+0x1400bac87  mov     ebx, 80041000h
+0x1400bac8c  mov     r13b, sil
+0x1400bac8f  mov     rcx, [rsp+948h]; this
+0x1400bac97  test    r13b, r13b
+0x1400bac9a  jz      short loc_1400BACB0
+0x1400bac9c  mov     r9d, ebx; char *
+0x1400bac9f  lea     r8, aOnecoreVmWorke_80; "onecore\\vm\\worker\\wpcore\\workertask"...
+0x1400baca6  mov     edx, 31Fh; void *
+0x1400bacab  call    ?Throw_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Throw_Hr(void *,uint,char const *,long)
+0x1400bacb0  mov     rcx, [r14]
+0x1400bacb3  lea     rax, [rcx+480h]
+0x1400bacba  mov     [rsp+948h+var_600], rax
+0x1400bacc2  add     rcx, 10h; this
+0x1400bacc6  call    ?GetVmName@VirtualMachine@@UEBAPEBGXZ; VirtualMachine::GetVmName(void)
+0x1400baccb  mov     [rsp+948h+var_8E0], rax
+0x1400bacd0  lea     rax, [rsp+948h+var_600]
+0x1400bacd8  mov     [rsp+948h+var_920], rax; __int64
+0x1400bacdd  lea     rax, [rsp+948h+var_8E0]
+0x1400bace2  mov     [rsp+948h+var_928], rax; int
+0x1400bace7  mov     edx, 5; unsigned int
+0x1400bacec  lea     rcx, MSVML_TIMEOUT_WAITING_FINALIZE_SAVE; struct _EVENT_DESCRIPTOR *
+0x1400bacf3  call    ??$VmEventWriteAndReport@PEBGPEBG@@YAXPEBU_EVENT_DESCRIPTOR@@IAEBU_GUID@@PEBG$$QEAPEBG3@Z; VmEventWriteAndReport<ushort const *,ushort const *>(_EVENT_DESCRIPTOR const *,uint,_GUID const &,ushort const *,ushort const * &&,ushort const * &&)
+0x1400bacf8  mov     rcx, [rsp+948h]; this
+0x1400bad00  mov     r9d, ebx; char *
+0x1400bad03  lea     r8, aOnecoreVmWorke_80; "onecore\\vm\\worker\\wpcore\\workertask"...
+0x1400bad0a  mov     edx, 328h; void *
+0x1400bad0f  call    ?Throw_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Throw_Hr(void *,uint,char const *,long)
+0x1400bad14  cmp     [rsp+948h+var_8E8], esi
+0x1400bad18  jz      short loc_1400BAD75
+0x1400bad1a  test    dword ptr [r15+194h], 40000h
+0x1400bad25  jz      short loc_1400BAD75
+0x1400bad27  mov     rax, [r14]
+0x1400bad2a  mov     rdi, [rax+400h]
+0x1400bad31  mov     rax, [rdi+8]
+0x1400bad35  mov     rbx, [rax+50h]
+0x1400bad39  mov     rcx, r15; this
+0x1400bad3c  call    ?GetSavedStateRepository@WorkerTaskSaving@@AEAAPEAVVmRepository@@XZ; WorkerTaskSaving::GetSavedStateRepository(void)
+0x1400bad41  mov     rdx, rax
+0x1400bad44  lea     rcx, [rdi+8]
+0x1400bad48  mov     rax, rbx
+0x1400bad4b  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1400bad50  mov     rcx, [rsp+948h]; this
+0x1400bad58  test    eax, eax
+0x1400bad5a  jns     short loc_1400BAD70
+0x1400bad5c  mov     r9d, eax; char *
+0x1400bad5f  lea     r8, aOnecoreVmWorke_80; "onecore\\vm\\worker\\wpcore\\workertask"...
+0x1400bad66  mov     edx, 337h; void *
+0x1400bad6b  call    ?Throw_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Throw_Hr(void *,uint,char const *,long)
+0x1400bad70  mov     [rsp+948h+var_8ED], r13b
+0x1400bad75  cmp     [r15+1A0h], esi
+0x1400bad7c  jnz     short loc_1400BAD86
+0x1400bad7e  mov     rcx, r15; this
+0x1400bad81  call    ?StopVm@WorkerTaskSaving@@AEAAXXZ; WorkerTaskSaving::StopVm(void)
+0x1400bad86  cmp     dword ptr [rsp+948h+var_8E0], esi
+0x1400bad8a  jz      loc_1400BAF81
+0x1400bad90  mov     r12d, 150h
+0x1400bad96  mov     r8d, r12d; Size
+0x1400bad99  xor     edx, edx; Val
+0x1400bad9b  lea     rcx, [rsp+948h+var_5D8]; void *
+0x1400bada3  call    memset_0
+0x1400bada8  mov     rdi, [r14]
+0x1400badab  lea     rdx, [rsp+948h+var_8A8]
+0x1400badb3  mov     rcx, r15
+0x1400badb6  call    ?GetCurrentActivity@?$WorkerAsyncTask@VSavingTask@VmWorkerTrace@@@@IEAA?AVSavingTask@VmWorkerTrace@@XZ; WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(void)
+0x1400badbb  nop
+0x1400badbc  mov     rbx, [rax+110h]
+0x1400badc3  mov     r8d, r12d; Size
+0x1400badc6  xor     edx, edx; Val
+0x1400badc8  lea     rcx, [rsp+948h+var_5D8]; void *
+0x1400badd0  call    memset_0
+0x1400badd5  lea     rdx, aCreateclonetem; "CreateCloneTemplate"
+0x1400baddc  lea     rcx, [rsp+948h+var_5D8]; struct wil::details::IFailureCallback *
+0x1400bade4  call    ??0?$ActivityBase@VVmWorkerTrace@@$0A@$0BA@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAA@PEBD_N@Z; wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>(char const *,bool)
+0x1400bade9  lea     rax, ??_7CreateCloneTemplate@VmWorkerTrace@@6B@; const VmWorkerTrace::CreateCloneTemplate::`vftable'
+0x1400badf0  mov     [rsp+948h+var_5D8], rax
+0x1400badf8  mov     [rsp+948h+var_8F8], 9
+0x1400bae00  lea     rdx, [rbx+8]
+0x1400bae04  lea     rcx, [rsp+948h+var_5D8]
+0x1400bae0c  call    ?SetRelatedActivityId@?$ActivityBase@VVmWorkerTrace@@$0A@$0BA@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXAEBU_GUID@@@Z; wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::SetRelatedActivityId(_GUID const &)
+0x1400bae11  lea     rdx, [rdi+470h]; struct _GUID *
+0x1400bae18  lea     rcx, [rsp+948h+var_5D8]; this
+0x1400bae20  call    ?StartActivity@CreateCloneTemplate@VmWorkerTrace@@QEAAXAEBU_GUID@@@Z; VmWorkerTrace::CreateCloneTemplate::StartActivity(_GUID const &)
+0x1400bae25  nop
+0x1400bae26  lea     rcx, [rsp+948h+var_8A8]; this
+0x1400bae2e  call    ??1SavingTask@VmWorkerTrace@@QEAA@XZ; VmWorkerTrace::SavingTask::~SavingTask(void)
+0x1400bae33  mov     rax, [r14]
+0x1400bae36  mov     rcx, [rax+400h]
+0x1400bae3d  add     rcx, 18h
+0x1400bae41  mov     rax, [rcx]
+0x1400bae44  mov     rax, [rax]
+0x1400bae47  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1400bae4c  mov     rbx, [rsp+948h]
+0x1400bae54  lea     r8, [rsp+948h+var_5E8]
+0x1400bae5c  mov     edx, esi
+0x1400bae5e  mov     rcx, rax
+0x1400bae61  call    cs:__imp_VidCloneTemplateCreate
+0x1400bae68  nop     dword ptr [rax+rax+00h]
+0x1400bae6d  test    eax, eax
+0x1400bae6f  jnz     short loc_1400BAE85
+0x1400bae71  lea     r8, aOnecoreVmWorke_80; "onecore\\vm\\worker\\wpcore\\workertask"...
+0x1400bae78  mov     edx, 34Bh; void *
+0x1400bae7d  mov     rcx, rbx; this
+0x1400bae80  call    ?Throw_GetLastError@in1diag3@details@wil@@YAXPEAXIPEBD@Z; wil::details::in1diag3::Throw_GetLastError(void *,uint,char const *)
+0x1400bae85  xor     edx, edx
+0x1400bae87  lea     rcx, [rsp+948h+var_5D8]
+0x1400bae8f  call    ?Stop@?$ActivityBase@VVmWorkerTrace@@$0A@$0BA@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXJ@Z; wil::ActivityBase<VmWorkerTrace,0,16,5,0,_TlgReflectorTag_Param0IsProviderType>::Stop(long)
+0x1400bae94  mov     r8, r12; Size
+0x1400bae97  xor     edx, edx; Val
+0x1400bae99  lea     rcx, [rsp+948h+var_488]; void *
+0x1400baea1  call    memset_0
+0x1400baea6  mov     rdi, [r14]
+0x1400baea9  lea     rdx, [rsp+948h+var_8A8]
+0x1400baeb1  mov     rcx, r15
+0x1400baeb4  call    ?GetCurrentActivity@?$WorkerAsyncTask@VSavingTask@VmWorkerTrace@@@@IEAA?AVSavingTask@VmWorkerTrace@@XZ; WorkerAsyncTask<VmWorkerTrace::SavingTask>::GetCurrentActivity(void)
+0x1400baeb9  nop
+0x1400baeba  mov     rbx, [rax+110h]
+0x1400baec1  mov     r8, r12; Size
+  ... truncated ...
+```

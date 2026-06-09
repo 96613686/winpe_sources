@@ -1,0 +1,3273 @@
+[
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "VmpReleaseInterfaces",
+    "ea": "0x1400033a0",
+    "function_file": "functions/1400033a0_VmpReleaseInterfaces.md",
+    "matched_imports": [
+      "ntoskrnl!IoSetDeviceInterfacePropertyData",
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VmpReleaseInterfaces",
+    "prototype": "",
+    "rank_score": 5414,
+    "size": 1382,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpApplyHotplugProtection(VM_VOLUME_EXTENSION *)",
+    "ea": "0x140010014",
+    "function_file": "functions/140010014_VmpApplyHotplugProtection_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObSetSecurityObjectByPointer",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlGetVersion",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [
+      "HotplugSecurityDescriptor",
+      "HotplugSecureOpen",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Storage"
+    ],
+    "name": "?VmpApplyHotplugProtection@@YAJPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 4882,
+    "size": 1107,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VmpApplyServiceProtection(VM_VOLUME_EXTENSION *)",
+    "ea": "0x140010470",
+    "function_file": "functions/140010470_VmpApplyServiceProtection_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObSetSecurityObjectByPointer",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlAddProcessTrustLabelAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!RtlSetSaclSecurityDescriptor",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "?VmpApplyServiceProtection@@YAJPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 4357,
+    "size": 694,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VmpApplyEspProtection(VM_VOLUME_EXTENSION *)",
+    "ea": "0x14000fd48",
+    "function_file": "functions/14000fd48_VmpApplyEspProtection_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObSetSecurityObjectByPointer",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!RtlSubAuthoritySid",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "?VmpApplyEspProtection@@YAJPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 4149,
+    "size": 710,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VmpUpdateControlStackSd",
+    "ea": "0x14001867c",
+    "function_file": "functions/14001867c_VmpUpdateControlStackSd.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObSetSecurityObjectByPointer",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "VmpUpdateControlStackSd",
+    "prototype": "",
+    "rank_score": 3536,
+    "size": 538,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 43,
+    "caller_count": 0,
+    "demangled": "VmDeviceControl",
+    "ea": "0x140001ae0",
+    "function_file": "functions/140001ae0_VmDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "VmDeviceControl",
+    "prototype": "NTSTATUS __fastcall(__int64, struct _IRP *)",
+    "rank_score": 3080,
+    "size": 3621,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpInitializeInterfaces(VM_VOLUME_EXTENSION *)",
+    "ea": "0x140004028",
+    "function_file": "functions/140004028_VmpInitializeInterfaces_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoRegisterDeviceInterface",
+      "ntoskrnl!IoSetDeviceInterfacePropertyData",
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?VmpInitializeInterfaces@@YAJPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 2833,
+    "size": 1025,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "VmpCreateLegacyNameLinks(VM_VOLUME_EXTENSION *,uchar)",
+    "ea": "0x140011920",
+    "function_file": "functions/140011920_VmpCreateLegacyNameLinks_VM_VOLUME_EXTENSION_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoDeleteSymbolicLink"
+    ],
+    "matched_strings": [],
+    "name": "?VmpCreateLegacyNameLinks@@YAXPEAVVM_VOLUME_EXTENSION@@E@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *, unsigned __int8)",
+    "rank_score": 2633,
+    "size": 688,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "VmPnp",
+    "ea": "0x140016aa0",
+    "function_file": "functions/140016aa0_VmPnp.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "VmPnp",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT Pdo, PIRP Irp)",
+    "rank_score": 2446,
+    "size": 1305,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "VmpRemoveDevice",
+    "ea": "0x140014fe8",
+    "function_file": "functions/140014fe8_VmpRemoveDevice.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!IoUnregisterPlugPlayNotification",
+      "ntoskrnl!IoUnregisterShutdownNotification",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VmpRemoveDevice",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 2026,
+    "size": 360,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmAddDevice",
+    "ea": "0x140018298",
+    "function_file": "functions/140018298_VmAddDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoAttachDeviceToDeviceStack",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoRegisterDeviceInterface",
+      "ntoskrnl!IoRegisterLastChanceShutdownNotification",
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "VmAddDevice",
+    "prototype": "",
+    "rank_score": 1838,
+    "size": 530,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VmpRedirectRequest(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x1400136b8",
+    "function_file": "functions/1400136b8_VmpRedirectRequest_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoMakeAssociatedIrp",
+      "ntoskrnl!IoPropagateIrpExtensionEx",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpRedirectRequest@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 1831,
+    "size": 758,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "VmpDeleteLegacyNameLinks(VM_VOLUME_EXTENSION *,uchar)",
+    "ea": "0x14000f19c",
+    "function_file": "functions/14000f19c_VmpDeleteLegacyNameLinks_VM_VOLUME_EXTENSION_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteSymbolicLink"
+    ],
+    "matched_strings": [],
+    "name": "?VmpDeleteLegacyNameLinks@@YAXPEAVVM_VOLUME_EXTENSION@@E@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *, unsigned __int8)",
+    "rank_score": 1830,
+    "size": 467,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VmReadWrite",
+    "ea": "0x1400015a0",
+    "function_file": "functions/1400015a0_VmReadWrite.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IoSetHardErrorOrVerifyDevice",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmReadWrite",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1829,
+    "size": 823,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "VmpCheckSecurity(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x1400109d4",
+    "function_file": "functions/1400109d4_VmpCheckSecurity_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeLockSubjectContext",
+      "ntoskrnl!SeReleaseSubjectContext",
+      "ntoskrnl!SeUnlockSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "?VmpCheckSecurity@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 1632,
+    "size": 253,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpStoreGptAttributesRevertRecord(uchar,uchar,_GUID *,_GUID *,ulong,unsigned __int64)",
+    "ea": "0x1400143a0",
+    "function_file": "functions/1400143a0_VmpStoreGptAttributesRevertRecord_uchar_uchar_GUID_GUID_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!RtlWriteRegistryValue",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwFlushKey"
+    ],
+    "matched_strings": [],
+    "name": "?VmpStoreGptAttributesRevertRecord@@YAJEEPEAU_GUID@@0K_K@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8, unsigned __int8, struct _GUID *, struct _GUID *, unsigned int, unsigned __int64)",
+    "rank_score": 1629,
+    "size": 644,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpQueryGlobalSettings",
+    "ea": "0x1400184b0",
+    "function_file": "functions/1400184b0_VmpQueryGlobalSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetBootDiskInformationLite",
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!RtlCheckRegistryKey",
+      "ntoskrnl!RtlDeleteRegistryValue",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\Setup"
+    ],
+    "name": "VmpQueryGlobalSettings",
+    "prototype": "",
+    "rank_score": 1477,
+    "size": 453,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VmpGetDeviceObjectPointer(_UNICODE_STRING *,_FILE_OBJECT * *)",
+    "ea": "0x1400122c8",
+    "function_file": "functions/1400122c8_VmpGetDeviceObjectPointer_UNICODE_STRING_FILE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "?VmpGetDeviceObjectPointer@@YAJPEAU_UNICODE_STRING@@PEAPEAU_FILE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, PVOID *)",
+    "rank_score": 1334,
+    "size": 282,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140018078",
+    "function_file": "functions/140018078_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!IoInvalidateDeviceState",
+      "ntoskrnl!IoRegisterBootDriverReinitialization",
+      "ntoskrnl!IoRegisterDriverReinitialization",
+      "ntoskrnl!IoRegisterPlugPlayNotification",
+      "ntoskrnl!IoReportDetectedDevice",
+      "ntoskrnl!RtlDuplicateUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 1242,
+    "size": 535,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "VmShutdown",
+    "ea": "0x140004b40",
+    "function_file": "functions/140004b40_VmShutdown.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmShutdown",
+    "prototype": "",
+    "rank_score": 1232,
+    "size": 697,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "VmpDeleteGptAttributesRevertRecord(uchar,uchar,_GUID *,_GUID *,ulong)",
+    "ea": "0x140011bd8",
+    "function_file": "functions/140011bd8_VmpDeleteGptAttributesRevertRecord_uchar_uchar_GUID_GUID_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!RtlDeleteRegistryValue",
+      "ntoskrnl!RtlWriteRegistryValue",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwFlushKey"
+    ],
+    "matched_strings": [],
+    "name": "?VmpDeleteGptAttributesRevertRecord@@YAXEEPEAU_GUID@@0K@Z",
+    "prototype": "void __fastcall(unsigned __int8, unsigned __int8, struct _GUID *, struct _GUID *, unsigned int)",
+    "rank_score": 1228,
+    "size": 436,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "VmpCreateDeviceObject(ulong,unsigned __int64,uchar,_DEVICE_OBJECT * *)",
+    "ea": "0x1400114f8",
+    "function_file": "functions/1400114f8_VmpCreateDeviceObject_ulong_unsigned_int64_uchar_DEVICE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeRundownProtectionCacheAware",
+      "ntoskrnl!ExSizeOfRundownProtectionCacheAware",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?VmpCreateDeviceObject@@YAJK_KEPEAPEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned __int64, unsigned __int8, struct _DEVICE_OBJECT **)",
+    "rank_score": 1219,
+    "size": 540,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpQueryEnableCountersAlways",
+    "ea": "0x140015288",
+    "function_file": "functions/140015288_VmpQueryEnableCountersAlways.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\Partmgr"
+    ],
+    "name": "VmpQueryEnableCountersAlways",
+    "prototype": "",
+    "rank_score": 1097,
+    "size": 397,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "VmCommitDevices(void *,ulong,_VM_DEVICE_CHANGE *)",
+    "ea": "0x14000eba0",
+    "function_file": "functions/14000eba0_VmCommitDevices_void_ulong_VM_DEVICE_CHANGE.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoInvalidateDeviceRelations",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?VmCommitDevices@@YAXPEAXKPEAU_VM_DEVICE_CHANGE@@@Z",
+    "prototype": "void __fastcall(struct VM_ROOT_EXTENSION *, unsigned int, struct _VM_DEVICE_CHANGE *)",
+    "rank_score": 1059,
+    "size": 1458,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "VmpPartitionRemoved(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140012b3c",
+    "function_file": "functions/140012b3c_VmpPartitionRemoved_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpPartitionRemoved@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 1032,
+    "size": 431,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VmFlushBuffers",
+    "ea": "0x1400018e0",
+    "function_file": "functions/1400018e0_VmFlushBuffers.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmFlushBuffers",
+    "prototype": "",
+    "rank_score": 1026,
+    "size": 496,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VmpMarkDeleted(_DEVICE_OBJECT *,uchar)",
+    "ea": "0x140012664",
+    "function_file": "functions/140012664_VmpMarkDeleted_DEVICE_OBJECT_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!RtlDeleteRegistryValue",
+      "ntoskrnl!RtlWriteRegistryValue",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "IsDeleted"
+    ],
+    "name": "?VmpMarkDeleted@@YAJPEAU_DEVICE_OBJECT@@E@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, unsigned __int8)",
+    "rank_score": 854,
+    "size": 166,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "VmpCreateBasicDevice(_DEVICE_OBJECT *,_DEVICE_OBJECT *,_PARTITION_INFORMATION_EX *,_DEVICE_OBJECT * *)",
+    "ea": "0x140010d7c",
+    "function_file": "functions/140010d7c_VmpCreateBasicDevice_DEVICE_OBJECT_DEVICE_OBJECT_PARTITION_INFORMATION_EX_DEVICE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlCheckPortableOperatingSystem"
+    ],
+    "matched_strings": [],
+    "name": "?VmpCreateBasicDevice@@YAJPEAU_DEVICE_OBJECT@@0PEAU_PARTITION_INFORMATION_EX@@PEAPEAU1@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _DEVICE_OBJECT *, struct _PARTITION_INFORMATION_EX *this, struct _DEVICE_OBJECT **)",
+    "rank_score": 848,
+    "size": 1910,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "VmpWholeDiskArrived(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x14001462c",
+    "function_file": "functions/14001462c_VmpWholeDiskArrived_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpWholeDiskArrived@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 834,
+    "size": 424,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "VmpWholeDiskRemoved(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140014838",
+    "function_file": "functions/140014838_VmpWholeDiskRemoved_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpWholeDiskRemoved@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 834,
+    "size": 425,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "VmpManageBypassIo(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140016760",
+    "function_file": "functions/140016760_VmpManageBypassIo_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?VmpManageBypassIo@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "int(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 831,
+    "size": 539,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpOnline(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140016680",
+    "function_file": "functions/140016680_VmpOnline_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpOnline@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "int(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 824,
+    "size": 210,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "VmpZeroRefCallback(VM_VOLUME_EXTENSION *,long (*)(VM_VOLUME_EXTENSION *,void *),void *)",
+    "ea": "0x140003c50",
+    "function_file": "functions/140003c50_VmpZeroRefCallback_VM_VOLUME_EXTENSION_long_VM_VOLUME_EXTENSION_void_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExWaitForRundownProtectionReleaseCacheAware",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpZeroRefCallback@@YAJPEAVVM_VOLUME_EXTENSION@@P6AJ0PEAX@Z1@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, int (*)(struct VM_VOLUME_EXTENSION *, void *), void *)",
+    "rank_score": 821,
+    "size": 146,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "VmpSendDeviceControl",
+    "ea": "0x140002db0",
+    "function_file": "functions/140002db0_VmpSendDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "VmpSendDeviceControl",
+    "prototype": "NTSTATUS __fastcall(PDEVICE_OBJECT DeviceObject, ULONG IoControlCode, PVOID InputBuffer, ULONG InputBufferLength, PVOID OutputBuffer, ULONG OutputBufferLength)",
+    "rank_score": 819,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VmpPartitionArrived(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x1400127f0",
+    "function_file": "functions/1400127f0_VmpPartitionArrived_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpPartitionArrived@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 818,
+    "size": 364,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpQueryDeviceId(VM_VOLUME_EXTENSION *,ushort * *)",
+    "ea": "0x14000e6dc",
+    "function_file": "functions/14000e6dc_VmpQueryDeviceId_VM_VOLUME_EXTENSION_ushort.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoGetDevicePropertyData",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpQueryDeviceId@@YAJPEAVVM_VOLUME_EXTENSION@@PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, unsigned __int16 **)",
+    "rank_score": 818,
+    "size": 422,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpPartitionChanged(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x1400129d0",
+    "function_file": "functions/1400129d0_VmpPartitionChanged_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpPartitionChanged@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 817,
+    "size": 355,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "VmpAcquireRundownShared(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140002910",
+    "function_file": "functions/140002910_VmpAcquireRundownShared_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?VmpAcquireRundownShared@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 816,
+    "size": 199,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpQueryInstanceId(VM_VOLUME_EXTENSION *,ushort * *)",
+    "ea": "0x140016010",
+    "function_file": "functions/140016010_VmpQueryInstanceId_VM_VOLUME_EXTENSION_ushort.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlDuplicateUnicodeString",
+      "ntoskrnl!RtlStringFromGUID"
+    ],
+    "matched_strings": [],
+    "name": "?VmpQueryInstanceId@@YAJPEAVVM_VOLUME_EXTENSION@@PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, unsigned __int16 **)",
+    "rank_score": 816,
+    "size": 281,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VmLogError",
+    "ea": "0x140014be0",
+    "function_file": "functions/140014be0_VmLogError.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoVolumeDeviceToDosName",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "VmLogError",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 390,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpReleaseRundownExclusive(VM_VOLUME_EXTENSION *)",
+    "ea": "0x140003cf0",
+    "function_file": "functions/140003cf0_VmpReleaseRundownExclusive_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExReInitializeRundownProtectionCacheAware",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "?VmpReleaseRundownExclusive@@YAXPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 815,
+    "size": 369,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VmpDeviceUsageNotificationCompletionRoutine",
+    "ea": "0x140004e00",
+    "function_file": "functions/140004e00_VmpDeviceUsageNotificationCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IoInvalidateDeviceState",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "VmpDeviceUsageNotificationCompletionRoutine",
+    "prototype": "",
+    "rank_score": 812,
+    "size": 196,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "VmpGetInstancePath(_DEVICE_OBJECT *,ushort * *)",
+    "ea": "0x1400123e8",
+    "function_file": "functions/1400123e8_VmpGetInstancePath_DEVICE_OBJECT_ushort.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetDevicePropertyData"
+    ],
+    "matched_strings": [],
+    "name": "?VmpGetInstancePath@@YAJPEAU_DEVICE_OBJECT@@PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT Pdo, unsigned __int16 **)",
+    "rank_score": 806,
+    "size": 282,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "VmpGetLengthInfo(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140016130",
+    "function_file": "functions/140016130_VmpGetLengthInfo_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?VmpGetLengthInfo@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 633,
+    "size": 481,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 6,
+    "demangled": "VmpProcessDiskNotifications(VM_ROOT_EXTENSION *)",
+    "ea": "0x14000e300",
+    "function_file": "functions/14000e300_VmpProcessDiskNotifications_VM_ROOT_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpProcessDiskNotifications@@YAXPEAVVM_ROOT_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_ROOT_EXTENSION *)",
+    "rank_score": 633,
+    "size": 245,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "VmpStartDevice(VM_VOLUME_EXTENSION *)",
+    "ea": "0x1400046a4",
+    "function_file": "functions/1400046a4_VmpStartDevice_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoInvalidateDeviceRelations",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpStartDevice@@YAJPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 633,
+    "size": 325,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpReferenceDependantVolume(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x1400139b4",
+    "function_file": "functions/1400139b4_VmpReferenceDependantVolume_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpReferenceDependantVolume@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 628,
+    "size": 484,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "VmpQueryRegistryRevertEntries(VM_GPT_ATTRIBUTES_REVERT_ENTRY * *,ulong *)",
+    "ea": "0x1400131f0",
+    "function_file": "functions/1400131f0_VmpQueryRegistryRevertEntries_VM_GPT_ATTRIBUTES_REVERT_ENTRY_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?VmpQueryRegistryRevertEntries@@YAJPEAPEAVVM_GPT_ATTRIBUTES_REVERT_ENTRY@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct VM_GPT_ATTRIBUTES_REVERT_ENTRY **, unsigned int *)",
+    "rank_score": 627,
+    "size": 256,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpOffline(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140012710",
+    "function_file": "functions/140012710_VmpOffline_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpOffline@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "int(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 625,
+    "size": 217,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VmWmi",
+    "ea": "0x140002c90",
+    "function_file": "functions/140002c90_VmWmi.md",
+    "matched_imports": [
+      "WMILIB!WmiSystemControl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmWmi",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 624,
+    "size": 279,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "VmpApplyGptAttributes(VM_VOLUME_EXTENSION *,unsigned __int64)",
+    "ea": "0x14000f56c",
+    "function_file": "functions/14000f56c_VmpApplyGptAttributes_VM_VOLUME_EXTENSION_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!IoSetDeviceInterfaceState"
+    ],
+    "matched_strings": [],
+    "name": "?VmpApplyGptAttributes@@YAXPEAVVM_VOLUME_EXTENSION@@_K@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *, unsigned __int64)",
+    "rank_score": 620,
+    "size": 392,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "VmpNotify(VM_VOLUME_EXTENSION *,_GUID const *,ushort,void *)",
+    "ea": "0x14000f6fc",
+    "function_file": "functions/14000f6fc_VmpNotify_VM_VOLUME_EXTENSION_GUID_const_ushort_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoReportTargetDeviceChangeAsynchronous"
+    ],
+    "matched_strings": [],
+    "name": "?VmpNotify@@YAXPEAVVM_VOLUME_EXTENSION@@PEBU_GUID@@GPEAX@Z",
+    "prototype": "void(struct VM_VOLUME_EXTENSION *, const struct _GUID *, unsigned __int16, void *)",
+    "rank_score": 620,
+    "size": 285,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "VmpPartitionRemovedImmediate(VM_ROOT_EXTENSION *,_DEVICE_OBJECT *,_DEVICE_OBJECT *,_PARTITION_INFORMATION_EX *,uchar *)",
+    "ea": "0x14000e888",
+    "function_file": "functions/14000e888_VmpPartitionRemovedImmediate_VM_ROOT_EXTENSION_DEVICE_OBJECT_DEVICE_OBJECT_PARTITION_INFORMATION_EX_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoInvalidateDeviceRelations"
+    ],
+    "matched_strings": [],
+    "name": "?VmpPartitionRemovedImmediate@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_DEVICE_OBJECT@@1PEAU_PARTITION_INFORMATION_EX@@PEAE@Z",
+    "prototype": "__int64 __usercall@<rax>(struct VM_ROOT_EXTENSION *@<rcx>, struct _DEVICE_OBJECT *@<rdx>, struct _DEVICE_OBJECT *@<r8>, struct _PARTITION_INFORMATION_EX *@<r9>, unsigned __int8 *)",
+    "rank_score": 442,
+    "size": 675,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "VmpCompleteConversion(VM_VOLUME_EXTENSION *,_DEVICE_OBJECT *)",
+    "ea": "0x140010ad8",
+    "function_file": "functions/140010ad8_VmpCompleteConversion_VM_VOLUME_EXTENSION_DEVICE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDeviceAttachmentBaseRef",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpCompleteConversion@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _DEVICE_OBJECT *)",
+    "rank_score": 438,
+    "size": 670,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "VmpGetPartitionInfo(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x14000e010",
+    "function_file": "functions/14000e010_VmpGetPartitionInfo_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?VmpGetPartitionInfo@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, PIRP Irp)",
+    "rank_score": 432,
+    "size": 299,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "VmpGetPartitionInfoEx(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140016540",
+    "function_file": "functions/140016540_VmpGetPartitionInfoEx_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?VmpGetPartitionInfoEx@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, PIRP Irp)",
+    "rank_score": 430,
+    "size": 238,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpDeviceUsageNotification(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14000e150",
+    "function_file": "functions/14000e150_VmpDeviceUsageNotification_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?VmpDeviceUsageNotification@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 426,
+    "size": 277,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "VmpAcquireAll(VM_ROOT_EXTENSION *)",
+    "ea": "0x140002a30",
+    "function_file": "functions/140002a30_VmpAcquireAll_VM_ROOT_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpAcquireAll@@YAXPEAVVM_ROOT_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_ROOT_EXTENSION *)",
+    "rank_score": 423,
+    "size": 105,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "VmpReleaseAll(VM_ROOT_EXTENSION *)",
+    "ea": "0x1400029e0",
+    "function_file": "functions/1400029e0_VmpReleaseAll_VM_ROOT_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "?VmpReleaseAll@@YAXPEAVVM_ROOT_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_ROOT_EXTENSION *)",
+    "rank_score": 423,
+    "size": 69,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VmpQueryHotplugProtectionQueryRoutine",
+    "ea": "0x140014ee0",
+    "function_file": "functions/140014ee0_VmpQueryHotplugProtectionQueryRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlValidSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "VmpQueryHotplugProtectionQueryRoutine",
+    "prototype": "",
+    "rank_score": 422,
+    "size": 127,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "VmpAllSystemsGo(VM_VOLUME_EXTENSION *,_IRP *,uchar,uchar,uchar)",
+    "ea": "0x1400014d0",
+    "function_file": "functions/1400014d0_VmpAllSystemsGo_VM_VOLUME_EXTENSION_IRP_uchar_uchar_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware"
+    ],
+    "matched_strings": [],
+    "name": "?VmpAllSystemsGo@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@EEE@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *, unsigned __int8, unsigned __int8, char)",
+    "rank_score": 420,
+    "size": 194,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "VmpQueryResourceRequirements(_DEVICE_OBJECT *,VM_VOLUME_EXTENSION *)",
+    "ea": "0x1400132f8",
+    "function_file": "functions/1400132f8_VmpQueryResourceRequirements_DEVICE_OBJECT_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDevicePropertyData",
+      "ntoskrnl!IoSetDevicePropertyData"
+    ],
+    "matched_strings": [],
+    "name": "?VmpQueryResourceRequirements@@YAJPEAU_DEVICE_OBJECT@@PEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT Pdo, struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 419,
+    "size": 297,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VmpQueryContainerId(VM_VOLUME_EXTENSION *,ushort * *)",
+    "ea": "0x140012fa0",
+    "function_file": "functions/140012fa0_VmpQueryContainerId_VM_VOLUME_EXTENSION_ushort.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDevicePropertyData",
+      "ntoskrnl!RtlStringFromGUID"
+    ],
+    "matched_strings": [],
+    "name": "?VmpQueryContainerId@@YAJPEAVVM_VOLUME_EXTENSION@@PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, unsigned __int16 **)",
+    "rank_score": 418,
+    "size": 264,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "VmpSetPowerState(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140003000",
+    "function_file": "functions/140003000_VmpSetPowerState_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpSetPowerState@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 418,
+    "size": 197,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VmpSetTargetCallback(VM_VOLUME_EXTENSION *,void *)",
+    "ea": "0x1400044c0",
+    "function_file": "functions/1400044c0_VmpSetTargetCallback_VM_VOLUME_EXTENSION_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAdjustStackSizeForRedirection"
+    ],
+    "matched_strings": [],
+    "name": "?VmpSetTargetCallback@@YAJPEAVVM_VOLUME_EXTENSION@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, void *)",
+    "rank_score": 415,
+    "size": 477,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VmpApplySessionId(VM_VOLUME_EXTENSION *)",
+    "ea": "0x14001072c",
+    "function_file": "functions/14001072c_VmpApplySessionId_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDevicePropertyData",
+      "ntoskrnl!IoSetDevicePropertyData"
+    ],
+    "matched_strings": [],
+    "name": "?VmpApplySessionId@@YAJPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 413,
+    "size": 226,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VmPower",
+    "ea": "0x140004a90",
+    "function_file": "functions/140004a90_VmPower.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmPower",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 159,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "VmpBuildName",
+    "ea": "0x140015490",
+    "function_file": "functions/140015490_VmpBuildName.md",
+    "matched_imports": [
+      "ntoskrnl!_itow_s"
+    ],
+    "matched_strings": [],
+    "name": "VmpBuildName",
+    "prototype": "",
+    "rank_score": 409,
+    "size": 558,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "VmpQueryDiskSignature(_DEVICE_OBJECT *,ulong *)",
+    "ea": "0x1400130b0",
+    "function_file": "functions/1400130b0_VmpQueryDiskSignature_DEVICE_OBJECT_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpQueryDiskSignature@@YAJPEAU_DEVICE_OBJECT@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, unsigned int *)",
+    "rank_score": 406,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VmpIsSafeForDirectAccess",
+    "ea": "0x140003910",
+    "function_file": "functions/140003910_VmpIsSafeForDirectAccess.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireVpbSpinLock",
+      "ntoskrnl!IoReleaseVpbSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "VmpIsSafeForDirectAccess",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 402,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpBuildArcName",
+    "ea": "0x140014d8c",
+    "function_file": "functions/140014d8c_VmpBuildArcName.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control"
+    ],
+    "name": "VmpBuildArcName",
+    "prototype": "",
+    "rank_score": 254,
+    "size": 244,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "VmInternalDeviceControl",
+    "ea": "0x140002ea0",
+    "function_file": "functions/140002ea0_VmInternalDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmInternalDeviceControl",
+    "prototype": "__int64 __fastcall(__int64, struct _IRP *)",
+    "rank_score": 245,
+    "size": 343,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "VmpCreateDynamicDevice(void *,_GUID *,unsigned __int64,_DEVICE_OBJECT * *)",
+    "ea": "0x14001171c",
+    "function_file": "functions/14001171c_VmpCreateDynamicDevice_void_GUID_unsigned_int64_DEVICE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "?VmpCreateDynamicDevice@@YAJPEAXPEAU_GUID@@_KPEAPEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "int(void *, struct _GUID *, unsigned __int64, struct _DEVICE_OBJECT **)",
+    "rank_score": 230,
+    "size": 509,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpExtensionDriverStarted(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140011e00",
+    "function_file": "functions/140011e00_VmpExtensionDriverStarted_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?VmpExtensionDriverStarted@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 228,
+    "size": 564,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "VmQueryWmiDataBlock",
+    "ea": "0x1400163e0",
+    "function_file": "functions/1400163e0_VmQueryWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmQueryWmiDataBlock",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, int, __int64, int, __int64)",
+    "rank_score": 227,
+    "size": 342,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "VmpPageExtensionDriver",
+    "ea": "0x140003ef0",
+    "function_file": "functions/140003ef0_VmpPageExtensionDriver.md",
+    "matched_imports": [
+      "ntoskrnl!MmPageEntireDriver"
+    ],
+    "matched_strings": [],
+    "name": "VmpPageExtensionDriver",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 226,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 15,
+    "demangled": "VmpAcquireDevices(VM_ROOT_EXTENSION *)",
+    "ea": "0x140003170",
+    "function_file": "functions/140003170_VmpAcquireDevices_VM_ROOT_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpAcquireDevices@@YAXPEAVVM_ROOT_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_ROOT_EXTENSION *)",
+    "rank_score": 225,
+    "size": 43,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 15,
+    "demangled": "VmpReleaseDevices(VM_ROOT_EXTENSION *)",
+    "ea": "0x140003990",
+    "function_file": "functions/140003990_VmpReleaseDevices_VM_ROOT_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "?VmpReleaseDevices@@YAXPEAVVM_ROOT_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_ROOT_EXTENSION *)",
+    "rank_score": 225,
+    "size": 28,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "VmpRestoreExtensionDriver",
+    "ea": "0x140003e70",
+    "function_file": "functions/140003e70_VmpRestoreExtensionDriver.md",
+    "matched_imports": [
+      "ntoskrnl!MmResetDriverPaging"
+    ],
+    "matched_strings": [],
+    "name": "VmpRestoreExtensionDriver",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 225,
+    "size": 47,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "VmCleanup",
+    "ea": "0x140002ba0",
+    "function_file": "functions/140002ba0_VmCleanup.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmCleanup",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 111,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpDiskIsWritable(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140015ae0",
+    "function_file": "functions/140015ae0_VmpDiskIsWritable_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "?VmpDiskIsWritable@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 224,
+    "size": 190,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VmDeletePendingDynamicDevice(void *,void *)",
+    "ea": "0x14000eb40",
+    "function_file": "functions/14000eb40_VmDeletePendingDynamicDevice_void_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "?VmDeletePendingDynamicDevice@@YAXPEAX0@Z",
+    "prototype": "void __fastcall(void *, void *)",
+    "rank_score": 223,
+    "size": 85,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VmWmiFunctionControl",
+    "ea": "0x1400151a0",
+    "function_file": "functions/1400151a0_VmWmiFunctionControl.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmWmiFunctionControl",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, char)",
+    "rank_score": 223,
+    "size": 146,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "VmpReleaseConfig(VM_ROOT_EXTENSION *)",
+    "ea": "0x1400039c0",
+    "function_file": "functions/1400039c0_VmpReleaseConfig_VM_ROOT_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "?VmpReleaseConfig@@YAXPEAVVM_ROOT_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_ROOT_EXTENSION *)",
+    "rank_score": 223,
+    "size": 28,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "VmpTestAcquireConfig(VM_ROOT_EXTENSION *)",
+    "ea": "0x1400047f0",
+    "function_file": "functions/1400047f0_VmpTestAcquireConfig_VM_ROOT_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpTestAcquireConfig@@YAEPEAVVM_ROOT_EXTENSION@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct VM_ROOT_EXTENSION *)",
+    "rank_score": 223,
+    "size": 58,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "VmpPartitionArrivedImmediate(VM_ROOT_EXTENSION *,_DEVICE_OBJECT *,_DEVICE_OBJECT *,_PARTITION_INFORMATION_EX *,uchar *,uchar *)",
+    "ea": "0x14000e54c",
+    "function_file": "functions/14000e54c_VmpPartitionArrivedImmediate_VM_ROOT_EXTENSION_DEVICE_OBJECT_DEVICE_OBJECT_PARTITION_INFORMATION_EX_uchar_ucha.md",
+    "matched_imports": [
+      "ntoskrnl!IoInvalidateDeviceRelations"
+    ],
+    "matched_strings": [],
+    "name": "?VmpPartitionArrivedImmediate@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_DEVICE_OBJECT@@1PEAU_PARTITION_INFORMATION_EX@@PEAE3@Z",
+    "prototype": "int(struct VM_ROOT_EXTENSION *, struct _DEVICE_OBJECT *, struct _DEVICE_OBJECT *, struct _PARTITION_INFORMATION_EX *, unsigned __int8 *, unsigned __int8 *)",
+    "rank_score": 220,
+    "size": 394,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "VmpCheckForRevertGptAttributes(VM_ROOT_EXTENSION *,uchar,uchar,_GUID *,_GUID *,ulong,void *,_DEVICE_OBJECT *)",
+    "ea": "0x140010898",
+    "function_file": "functions/140010898_VmpCheckForRevertGptAttributes_VM_ROOT_EXTENSION_uchar_uchar_GUID_GUID_ulong_void_DEVICE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?VmpCheckForRevertGptAttributes@@YAXPEAVVM_ROOT_EXTENSION@@EEPEAU_GUID@@1KPEAXPEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "void __fastcall(struct VM_ROOT_EXTENSION *, unsigned __int8, unsigned __int8, struct _GUID *, struct _GUID *, unsigned int, void *, struct _DEVICE_OBJECT *)",
+    "rank_score": 218,
+    "size": 310,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpAllocateBCStream(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x14000fbf8",
+    "function_file": "functions/14000fbf8_VmpAllocateBCStream_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously"
+    ],
+    "matched_strings": [],
+    "name": "?VmpAllocateBCStream@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 216,
+    "size": 327,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "VmpCleanupVolumeExtension(VM_VOLUME_EXTENSION *)",
+    "ea": "0x14000f158",
+    "function_file": "functions/14000f158_VmpCleanupVolumeExtension_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?VmpCleanupVolumeExtension@@YAXPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 216,
+    "size": 60,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpGetBCProperties(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x14001218c",
+    "function_file": "functions/14001218c_VmpGetBCProperties_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously"
+    ],
+    "matched_strings": [],
+    "name": "?VmpGetBCProperties@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 216,
+    "size": 307,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpQueryDeviceName(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x1400156d0",
+    "function_file": "functions/1400156d0_VmpQueryDeviceName_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!_itow_s"
+    ],
+    "matched_strings": [],
+    "name": "?VmpQueryDeviceName@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 216,
+    "size": 297,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpQueryId(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140015f70",
+    "function_file": "functions/140015f70_VmpQueryId_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?VmpQueryId@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 216,
+    "size": 152,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "VmpSetDevicePowerState(VM_VOLUME_EXTENSION *,_DEVICE_POWER_STATE)",
+    "ea": "0x140003eb0",
+    "function_file": "functions/140003eb0_VmpSetDevicePowerState_VM_VOLUME_EXTENSION_DEVICE_POWER_STATE.md",
+    "matched_imports": [
+      "ntoskrnl!PoSetPowerState"
+    ],
+    "matched_strings": [],
+    "name": "?VmpSetDevicePowerState@@YAXPEAVVM_VOLUME_EXTENSION@@W4_DEVICE_POWER_STATE@@@Z",
+    "prototype": "void(struct VM_VOLUME_EXTENSION *, enum _DEVICE_POWER_STATE)",
+    "rank_score": 215,
+    "size": 58,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpQueryRootId(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140013428",
+    "function_file": "functions/140013428_VmpQueryRootId_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?VmpQueryRootId@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 214,
+    "size": 152,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "VmpReleaseRundownShared(VM_VOLUME_EXTENSION *)",
+    "ea": "0x140003130",
+    "function_file": "functions/140003130_VmpReleaseRundownShared_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware"
+    ],
+    "matched_strings": [],
+    "name": "?VmpReleaseRundownShared@@YAXPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 214,
+    "size": 26,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpRemove(VM_VOLUME_EXTENSION *)",
+    "ea": "0x14000443c",
+    "function_file": "functions/14000443c_VmpRemove_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoSetDevicePropertyData"
+    ],
+    "matched_strings": [],
+    "name": "?VmpRemove@@YAXPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 214,
+    "size": 91,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpFreeBCStream(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140012128",
+    "function_file": "functions/140012128_VmpFreeBCStream_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously"
+    ],
+    "matched_strings": [],
+    "name": "?VmpFreeBCStream@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 213,
+    "size": 94,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VM_ALLOCATED_OBJECT::operator delete(void *)",
+    "ea": "0x140003f7c",
+    "function_file": "functions/140003f7c_VM_ALLOCATED_OBJECT_operator_delete_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??3VM_ALLOCATED_OBJECT@@SAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 212,
+    "size": 29,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VmpQueryRegistryRevertEntriesCallback",
+    "ea": "0x140014f70",
+    "function_file": "functions/140014f70_VmpQueryRegistryRevertEntriesCallback.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "VmpQueryRegistryRevertEntriesCallback",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 114,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VmpReadWriteCompletionRoutine",
+    "ea": "0x140002b30",
+    "function_file": "functions/140002b30_VmpReadWriteCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware"
+    ],
+    "matched_strings": [],
+    "name": "VmpReadWriteCompletionRoutine",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 97,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "VmpAcquireRundown(VM_VOLUME_EXTENSION *)",
+    "ea": "0x140016a20",
+    "function_file": "functions/140016a20_VmpAcquireRundown_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?VmpAcquireRundown@@YAXPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 211,
+    "size": 43,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VmpRefCountCompletionRoutine",
+    "ea": "0x140002c50",
+    "function_file": "functions/140002c50_VmpRefCountCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware"
+    ],
+    "matched_strings": [],
+    "name": "VmpRefCountCompletionRoutine",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 49,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "VmpReleaseRundown(VM_VOLUME_EXTENSION *)",
+    "ea": "0x140016fc0",
+    "function_file": "functions/140016fc0_VmpReleaseRundown_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "?VmpReleaseRundown@@YAXPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 211,
+    "size": 28,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "VmBroadcastIrpCompletionRoutine(void *,long)",
+    "ea": "0x140003370",
+    "function_file": "functions/140003370_VmBroadcastIrpCompletionRoutine_void_long.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?VmBroadcastIrpCompletionRoutine@@YAXPEAXJ@Z",
+    "prototype": "void __fastcall(void *, int)",
+    "rank_score": 210,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "VmCreate",
+    "ea": "0x140002c20",
+    "function_file": "functions/140002c20_VmCreate.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VmCreate",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "VmVolumeRequestCompletionRoutine(_IRP *)",
+    "ea": "0x140003150",
+    "function_file": "functions/140003150_VmVolumeRequestCompletionRoutine_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?VmVolumeRequestCompletionRoutine@@YAXPEAU_IRP@@@Z",
+    "prototype": "void __fastcall(struct _IRP *)",
+    "rank_score": 210,
+    "size": 24,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "VM_ALLOCATED_OBJECT::operator new(unsigned __int64)",
+    "ea": "0x140003f50",
+    "function_file": "functions/140003f50_VM_ALLOCATED_OBJECT_operator_new_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??2VM_ALLOCATED_OBJECT@@SAPEAX_K@Z",
+    "prototype": "void *__fastcall(unsigned __int64)",
+    "rank_score": 204,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001420",
+    "function_file": "functions/140001420_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140003bf0",
+    "function_file": "functions/140003bf0_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "VmpUpdateProperties(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x14000f3b0",
+    "function_file": "functions/14000f3b0_VmpUpdateProperties_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpUpdateProperties@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 56,
+    "size": 435,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 36,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140005050",
+    "function_file": "functions/140005050_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 64,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140005090",
+    "function_file": "functions/140005090_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "VmpSetGptAttributes(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140013e00",
+    "function_file": "functions/140013e00_VmpSetGptAttributes_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpSetGptAttributes@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 35,
+    "size": 1433,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "VmCreatePendingDynamicDevice(void *,void *)",
+    "ea": "0x14000f950",
+    "function_file": "functions/14000f950_VmCreatePendingDynamicDevice_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmCreatePendingDynamicDevice@@YAJPEAX0@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, void *)",
+    "rank_score": 27,
+    "size": 259,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 22,
+    "demangled": "memset",
+    "ea": "0x140005540",
+    "function_file": "functions/140005540_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 26,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "VmpRevertGptAttributes(VM_VOLUME_EXTENSION *)",
+    "ea": "0x140013ba0",
+    "function_file": "functions/140013ba0_VmpRevertGptAttributes_VM_VOLUME_EXTENSION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpRevertGptAttributes@@YAXPEAVVM_VOLUME_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *)",
+    "rank_score": 25,
+    "size": 599,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpCheckDynamicDiskConversion(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140010814",
+    "function_file": "functions/140010814_VmpCheckDynamicDiskConversion_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpCheckDynamicDiskConversion@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 24,
+    "size": 126,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpPmWmiCounterLibContext(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140012eac",
+    "function_file": "functions/140012eac_VmpPmWmiCounterLibContext_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpPmWmiCounterLibContext@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 24,
+    "size": 101,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "VmpSetPartitionInformation(VM_VOLUME_EXTENSION *,_PARTITION_INFORMATION_EX *)",
+    "ea": "0x140015da0",
+    "function_file": "functions/140015da0_VmpSetPartitionInformation_VM_VOLUME_EXTENSION_PARTITION_INFORMATION_EX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpSetPartitionInformation@@YAXPEAVVM_VOLUME_EXTENSION@@PEAU_PARTITION_INFORMATION_EX@@@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *, struct _PARTITION_INFORMATION_EX *)",
+    "rank_score": 24,
+    "size": 452,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VmpFindExtensionForPendingDynamicVolume(VM_ROOT_EXTENSION *,void *)",
+    "ea": "0x14000f378",
+    "function_file": "functions/14000f378_VmpFindExtensionForPendingDynamicVolume_VM_ROOT_EXTENSION_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpFindExtensionForPendingDynamicVolume@@YAPEAVVM_VOLUME_EXTENSION@@PEAVVM_ROOT_EXTENSION@@PEAX@Z",
+    "prototype": "struct VM_VOLUME_EXTENSION *__fastcall(struct VM_ROOT_EXTENSION *, void *)",
+    "rank_score": 23,
+    "size": 47,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpPerformanceOff(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140012d60",
+    "function_file": "functions/140012d60_VmpPerformanceOff_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpPerformanceOff@@YAXPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "void __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 23,
+    "size": 77,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140004f1c",
+    "function_file": "functions/140004f1c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140018010",
+    "function_file": "functions/140018010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VmpIsDynamic(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140015d30",
+    "function_file": "functions/140015d30_VmpIsDynamic_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpIsDynamic@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 22,
+    "size": 47,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VmFindNextDynamicExtension(void *,void *,void * *)",
+    "ea": "0x140003fa0",
+    "function_file": "functions/140003fa0_VmFindNextDynamicExtension_void_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmFindNextDynamicExtension@@YAPEAXPEAX0PEAPEAX@Z",
+    "prototype": "void *__fastcall(void *, void *, void **)",
+    "rank_score": 21,
+    "size": 71,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VmQueryDynamicExtension(void *,void *)",
+    "ea": "0x140016640",
+    "function_file": "functions/140016640_VmQueryDynamicExtension_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmQueryDynamicExtension@@YAPEAXPEAX0@Z",
+    "prototype": "void *__fastcall(void *, void *)",
+    "rank_score": 21,
+    "size": 53,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "VmpGetGptAttributesInternal(VM_VOLUME_EXTENSION *,unsigned __int64 *,uchar *)",
+    "ea": "0x140015900",
+    "function_file": "functions/140015900_VmpGetGptAttributesInternal_VM_VOLUME_EXTENSION_unsigned_int64_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpGetGptAttributesInternal@@YAJPEAVVM_VOLUME_EXTENSION@@PEA_KPEAE@Z",
+    "prototype": "int(struct VM_VOLUME_EXTENSION *, unsigned __int64 *, unsigned __int8 *)",
+    "rank_score": 21,
+    "size": 354,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SC_PART_ENTRY::IsRecognized(void)",
+    "ea": "0x1400031b0",
+    "function_file": "functions/1400031b0_SC_PART_ENTRY_IsRecognized_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsRecognized@SC_PART_ENTRY@@QEAAEXZ",
+    "prototype": "unsigned __int8 __fastcall(SC_PART_ENTRY *__hidden this)",
+    "rank_score": 19,
+    "size": 439,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "VmpQueryUniqueIdInternal(VM_VOLUME_EXTENSION *,ushort *,uchar *)",
+    "ea": "0x140015c30",
+    "function_file": "functions/140015c30_VmpQueryUniqueIdInternal_VM_VOLUME_EXTENSION_ushort_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQueryUniqueIdInternal@@YAJPEAVVM_VOLUME_EXTENSION@@PEAGPEAE@Z",
+    "prototype": "int(struct VM_VOLUME_EXTENSION *, unsigned __int16 *, unsigned __int8 *)",
+    "rank_score": 19,
+    "size": 207,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "memmove",
+    "ea": "0x140005240",
+    "function_file": "functions/140005240_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 19,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpGetVolumeDiskExtents(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140015800",
+    "function_file": "functions/140015800_VmpGetVolumeDiskExtents_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpGetVolumeDiskExtents@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "NTSTATUS __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 16,
+    "size": 242,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpLogicalToPhysical(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x14001256c",
+    "function_file": "functions/14001256c_VmpLogicalToPhysical_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpLogicalToPhysical@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "NTSTATUS __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 16,
+    "size": 239,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpPhysicalToLogical(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140012db4",
+    "function_file": "functions/140012db4_VmpPhysicalToLogical_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpPhysicalToLogical@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "NTSTATUS __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 16,
+    "size": 240,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpQueryCapabilities(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140012f18",
+    "function_file": "functions/140012f18_VmpQueryCapabilities_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQueryCapabilities@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 16,
+    "size": 130,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpQueryVetoQueryRemove(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140013594",
+    "function_file": "functions/140013594_VmpQueryVetoQueryRemove_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQueryVetoQueryRemove@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 16,
+    "size": 216,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpFindExtensionForPartition(VM_ROOT_EXTENSION *,ulong,unsigned __int64,unsigned __int64)",
+    "ea": "0x14001203c",
+    "function_file": "functions/14001203c_VmpFindExtensionForPartition_VM_ROOT_EXTENSION_ulong_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpFindExtensionForPartition@@YAPEAVVM_VOLUME_EXTENSION@@PEAVVM_ROOT_EXTENSION@@K_K1@Z",
+    "prototype": "struct VM_VOLUME_EXTENSION *__fastcall(struct VM_ROOT_EXTENSION *, unsigned int, unsigned __int64, unsigned __int64)",
+    "rank_score": 15,
+    "size": 173,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpPartitionArrivedDelayed(VM_ROOT_EXTENSION *,_DEVICE_OBJECT *,_DEVICE_OBJECT *)",
+    "ea": "0x140012964",
+    "function_file": "functions/140012964_VmpPartitionArrivedDelayed_VM_ROOT_EXTENSION_DEVICE_OBJECT_DEVICE_OBJECT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpPartitionArrivedDelayed@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_DEVICE_OBJECT@@1@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _DEVICE_OBJECT *, struct _DEVICE_OBJECT *)",
+    "rank_score": 15,
+    "size": 99,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpPartitionRemovedDelayed(VM_ROOT_EXTENSION *,_DEVICE_OBJECT *,_DEVICE_OBJECT *)",
+    "ea": "0x140012cf4",
+    "function_file": "functions/140012cf4_VmpPartitionRemovedDelayed_VM_ROOT_EXTENSION_DEVICE_OBJECT_DEVICE_OBJECT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpPartitionRemovedDelayed@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_DEVICE_OBJECT@@1@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _DEVICE_OBJECT *, struct _DEVICE_OBJECT *)",
+    "rank_score": 15,
+    "size": 99,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VmpPerformance(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x14000e270",
+    "function_file": "functions/14000e270_VmpPerformance_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpPerformance@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 15,
+    "size": 132,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpWholeDiskArrivedDelayed(VM_ROOT_EXTENSION *,_DEVICE_OBJECT *)",
+    "ea": "0x1400147dc",
+    "function_file": "functions/1400147dc_VmpWholeDiskArrivedDelayed_VM_ROOT_EXTENSION_DEVICE_OBJECT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpWholeDiskArrivedDelayed@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _DEVICE_OBJECT *)",
+    "rank_score": 15,
+    "size": 83,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VmpWholeDiskRemovedDelayed(VM_ROOT_EXTENSION *,_DEVICE_OBJECT *)",
+    "ea": "0x1400149e8",
+    "function_file": "functions/1400149e8_VmpWholeDiskRemovedDelayed_VM_ROOT_EXTENSION_DEVICE_OBJECT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpWholeDiskRemovedDelayed@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _DEVICE_OBJECT *)",
+    "rank_score": 15,
+    "size": 83,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpGetGptAttributes(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140016ff0",
+    "function_file": "functions/140016ff0_VmpGetGptAttributes_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpGetGptAttributes@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 14,
+    "size": 200,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpQueryInterfaceName(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140016320",
+    "function_file": "functions/140016320_VmpQueryInterfaceName_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQueryInterfaceName@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 14,
+    "size": 185,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpQuerySuggestedLinkName(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x1400134c8",
+    "function_file": "functions/1400134c8_VmpQuerySuggestedLinkName_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQuerySuggestedLinkName@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 14,
+    "size": 195,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VmpFindExtensionForBasicVolume(_DEVICE_OBJECT *)",
+    "ea": "0x1400030d0",
+    "function_file": "functions/1400030d0_VmpFindExtensionForBasicVolume_DEVICE_OBJECT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpFindExtensionForBasicVolume@@YAPEAVVM_VOLUME_EXTENSION@@PEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "struct VM_VOLUME_EXTENSION *__fastcall(struct _DEVICE_OBJECT *)",
+    "rank_score": 13,
+    "size": 76,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VmpFindExtensionForPendingBasicVolume(VM_ROOT_EXTENSION *,_DEVICE_OBJECT *)",
+    "ea": "0x1400120f0",
+    "function_file": "functions/1400120f0_VmpFindExtensionForPendingBasicVolume_VM_ROOT_EXTENSION_DEVICE_OBJECT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpFindExtensionForPendingBasicVolume@@YAPEAVVM_VOLUME_EXTENSION@@PEAVVM_ROOT_EXTENSION@@PEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "struct VM_VOLUME_EXTENSION *__fastcall(struct VM_ROOT_EXTENSION *, struct _DEVICE_OBJECT *)",
+    "rank_score": 13,
+    "size": 47,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpIsPartition(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140016a60",
+    "function_file": "functions/140016a60_VmpIsPartition_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpIsPartition@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 13,
+    "size": 50,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpLinkCreated(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140012524",
+    "function_file": "functions/140012524_VmpLinkCreated_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpLinkCreated@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 13,
+    "size": 66,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpQueryFailoverSet(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140013138",
+    "function_file": "functions/140013138_VmpQueryFailoverSet_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQueryFailoverSet@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 13,
+    "size": 123,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpQueryStableGuid(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x14000e400",
+    "function_file": "functions/14000e400_VmpQueryStableGuid_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQueryStableGuid@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 13,
+    "size": 126,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VmpQueryUniqueId(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140015bb0",
+    "function_file": "functions/140015bb0_VmpQueryUniqueId_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQueryUniqueId@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 13,
+    "size": 114,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VmQueryBasicExtension(void *,ulong,unsigned __int64,unsigned __int64,_DEVICE_OBJECT * *)",
+    "ea": "0x14000fb20",
+    "function_file": "functions/14000fb20_VmQueryBasicExtension_void_ulong_unsigned_int64_unsigned_int64_DEVICE_OBJECT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmQueryBasicExtension@@YAPEAXPEAXK_K1PEAPEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "void *__fastcall(void *, unsigned int, unsigned __int64, unsigned __int64, struct _DEVICE_OBJECT **)",
+    "rank_score": 12,
+    "size": 44,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VmpIsCsv(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140015d70",
+    "function_file": "functions/140015d70_VmpIsCsv_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpIsCsv@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 12,
+    "size": 38,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VmpQueryMinimumShrinkSize(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x1400131bc",
+    "function_file": "functions/1400131bc_VmpQueryMinimumShrinkSize_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQueryMinimumShrinkSize@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 12,
+    "size": 42,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VmpQueryVolumeNumber(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140013674",
+    "function_file": "functions/140013674_VmpQueryVolumeNumber_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpQueryVolumeNumber@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 12,
+    "size": 59,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140018044",
+    "function_file": "functions/140018044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VmLoadExtensionDriver(void *)",
+    "ea": "0x14000fb00",
+    "function_file": "functions/14000fb00_VmLoadExtensionDriver_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmLoadExtensionDriver@@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VmUnloadExtensionDriver(void *)",
+    "ea": "0x14000fbe0",
+    "function_file": "functions/14000fbe0_VmUnloadExtensionDriver_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmUnloadExtensionDriver@@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "VmpIsRedirectionSupported(VM_ROOT_EXTENSION *,_IRP *)",
+    "ea": "0x140012508",
+    "function_file": "functions/140012508_VmpIsRedirectionSupported_VM_ROOT_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpIsRedirectionSupported@@YAJPEAVVM_ROOT_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_ROOT_EXTENSION *, struct _IRP *)",
+    "rank_score": 11,
+    "size": 19,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "VmpPrepareForCriticalIo(VM_VOLUME_EXTENSION *,_IRP *)",
+    "ea": "0x140015d10",
+    "function_file": "functions/140015d10_VmpPrepareForCriticalIo_VM_VOLUME_EXTENSION_IRP.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpPrepareForCriticalIo@@YAJPEAVVM_VOLUME_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, struct _IRP *)",
+    "rank_score": 11,
+    "size": 19,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "VmpChangeOfflineCallback(VM_VOLUME_EXTENSION *,void *)",
+    "ea": "0x140004010",
+    "function_file": "functions/140004010_VmpChangeOfflineCallback_VM_VOLUME_EXTENSION_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpChangeOfflineCallback@@YAJPEAVVM_VOLUME_EXTENSION@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, void *)",
+    "rank_score": 10,
+    "size": 15,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "VmpNoOpCallback(VM_VOLUME_EXTENSION *,void *)",
+    "ea": "0x140004430",
+    "function_file": "functions/140004430_VmpNoOpCallback_VM_VOLUME_EXTENSION_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpNoOpCallback@@YAJPEAVVM_VOLUME_EXTENSION@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, void *)",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "VmpSetAttributesCallback(VM_VOLUME_EXTENSION *,void *)",
+    "ea": "0x1400044a0",
+    "function_file": "functions/1400044a0_VmpSetAttributesCallback_VM_VOLUME_EXTENSION_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpSetAttributesCallback@@YAJPEAVVM_VOLUME_EXTENSION@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct VM_VOLUME_EXTENSION *, void *)",
+    "rank_score": 10,
+    "size": 13,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "VmpIsVolumeDead",
+    "ea": "0x140016990",
+    "function_file": "functions/140016990_VmpIsVolumeDead.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VmpIsVolumeDead",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "McTemplateK0qzqx_EtwWriteTransfer",
+    "ea": "0x140003b00",
+    "function_file": "functions/140003b00_McTemplateK0qzqx_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qzqx_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 224,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "VmpDiskGetGptAttributes(_DEVICE_OBJECT *,unsigned __int64 *)",
+    "ea": "0x140015a70",
+    "function_file": "functions/140015a70_VmpDiskGetGptAttributes_DEVICE_OBJECT_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpDiskGetGptAttributes@@YAJPEAU_DEVICE_OBJECT@@PEA_K@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, unsigned __int64 *)",
+    "rank_score": 7,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qzqxt_EtwWriteTransfer",
+    "ea": "0x1400039f0",
+    "function_file": "functions/1400039f0_McTemplateK0qzqxt_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qzqxt_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 259,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "VmpDiskSetGptAttributes(_DEVICE_OBJECT *,unsigned __int64,uchar)",
+    "ea": "0x140011d94",
+    "function_file": "functions/140011d94_VmpDiskSetGptAttributes_DEVICE_OBJECT_unsigned_int64_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VmpDiskSetGptAttributes@@YAJPEAU_DEVICE_OBJECT@@_KE@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, unsigned __int64, unsigned __int8)",
+    "rank_score": 6,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByRef<16>,_tlgWrapperByRef<16>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByRef<16>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByRef<16> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByRef<16> const &)",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByRef@$0BA@@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapperByVal@$07@@U3@U?$_tlgWrapperByVal@$00@@U4@U4@U4@U4@U4@U4@U2@U4@U1@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByRef@$0BA@@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapperByVal@$07@@5AEBU?$_tlgWrapperByVal@$00@@666666463@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 386,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByRef<16>,_tlgWrapperByRef<16>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByRef<16> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &)",
+    "ea": "0x140001190",
+    "function_file": "functions/140001190_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByRef@$0BA@@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapperByVal@$07@@U3@U?$_tlgWrapperByVal@$00@@U4@U4@U4@U4@U4@U4@U2@U4@U4@U4@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByRef@$0BA@@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapperByVal@$07@@5AEBU?$_tlgWrapperByVal@$00@@6666664666@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 402,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "memcmp",
+    "ea": "0x140005120",
+    "function_file": "functions/140005120_memcmp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memcmp",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 5,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByRef<16>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &)",
+    "ea": "0x140001328",
+    "function_file": "functions/140001328_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByRef@$0BA@@@U?$_tlgWrapperByVal@$00@@U2@U2@U2@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByRef@$0BA@@@AEBU?$_tlgWrapperByVal@$00@@4444@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 184,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140004830",
+    "function_file": "functions/140004830_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCbCopyExW",
+    "ea": "0x1400049ac",
+    "function_file": "functions/1400049ac_RtlStringCbCopyExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCbCopyExW",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cbDest, NTSTRSAFE_PCWSTR pszSrc, NTSTRSAFE_PWSTR *ppszDestEnd, size_t *pcbRemaining, ULONG dwFlags)",
+    "rank_score": 3,
+    "size": 212,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_tlgKeywordOn",
+    "ea": "0x1400013e8",
+    "function_file": "functions/1400013e8_tlgKeywordOn.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgKeywordOn",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 47,
+    "tags": []
+  }
+]

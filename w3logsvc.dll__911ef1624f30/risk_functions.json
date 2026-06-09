@@ -1,0 +1,3925 @@
+[
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::CreateLogString(HTTP_LOG_CONTEXT *,STRU *)",
+    "ea": "0x180003718",
+    "function_file": "functions/180003718_LOG_WRITER_CreateLogString_HTTP_LOG_CONTEXT_STRU.md",
+    "matched_imports": [
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "iisutil!??0STRA@@QEAA@PEADK@Z",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJAEBV1@@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z",
+      "iisutil!?Copy@STRA@@QEAAJAEBV1@@Z",
+      "iisutil!?Copy@STRU@@QEAAJAEBV1@@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBGK@Z",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "LOG_WRITER::CreateLogString",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logwriter.cpp"
+    ],
+    "name": "?CreateLogString@LOG_WRITER@@AEAAJPEAVHTTP_LOG_CONTEXT@@PEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *this, struct HTTP_LOG_CONTEXT *, struct STRU *)",
+    "rank_score": 12352,
+    "size": 4439,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::CreateLogDirectory(ushort const *,int)",
+    "ea": "0x1800031d0",
+    "function_file": "functions/1800031d0_LOG_WRITER_CreateLogDirectory_ushort_const_int.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateDirectoryW",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid",
+      "api-ms-win-security-base-l1-1-0!FreeSid",
+      "api-ms-win-security-base-l1-1-0!InitializeSecurityDescriptor",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorDacl",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorOwner",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaClose",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaFreeMemory",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaLookupNames2",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaOpenPolicy",
+      "api-ms-win-security-provider-l1-1-0!SetEntriesInAclW",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?CreateLogDirectory@LOG_WRITER@@AEAAJPEBGH@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *this, const unsigned __int16 *, int)",
+    "rank_score": 5654,
+    "size": 1344,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::GetLogFileHandle(void * *,ulong,int)",
+    "ea": "0x180004fe4",
+    "function_file": "functions/180004fe4_LOG_WRITER_GetLogFileHandle_void_ulong_int.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileSizeEx",
+      "api-ms-win-core-file-l1-1-0!GetFileTime",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-handle-l1-1-0!DuplicateHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-core-sysinfo-l1-1-0!GetLocalTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "api-ms-win-core-timezone-l1-1-0!SystemTimeToTzSpecificLocalTime",
+      "api-ms-win-security-provider-l1-1-0!GetNamedSecurityInfoW",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Copy@STRU@@QEAAJAEBV1@@Z",
+      "iisutil!?EqualsNoCase@STRU@@QEBA_NPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?GetLogFileHandle@LOG_WRITER@@AEAAJPEAPEAXKH@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *__hidden this, void **, unsigned int, int)",
+    "rank_score": 5059,
+    "size": 1133,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::Terminate(void)",
+    "ea": "0x18000d180",
+    "function_file": "functions/18000d180_LOG_SVC_ADMIN_Terminate_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks",
+      "iisutil!??1ALLOC_CACHE_HANDLER@@QEAA@XZ",
+      "iisutil!?CleanupLookaside@ALLOC_CACHE_HANDLER@@QEAAXH@Z",
+      "iisutil!?QueryOutstandingAllocationCount@ALLOC_CACHE_HANDLER@@QEBAKXZ",
+      "iisutil!DestroyRefTraceLog",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDbgPrintError",
+      "iisutil!TerminateIISUtil",
+      "ntdll!RtlDeleteTimerQueueEx"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logcontext.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Could not cancel pending service status timer\n",
+      "Could not delete timer queue\n",
+      "LOG_SVC_ADMIN::DeleteTimerQueue"
+    ],
+    "name": "?Terminate@LOG_SVC_ADMIN@@AEAAXXZ",
+    "prototype": "void __fastcall(LOG_SVC_ADMIN *__hidden this)",
+    "rank_score": 3616,
+    "size": 664,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::ExpandDirPathAndCreateLowestDirectory(void)",
+    "ea": "0x180004878",
+    "function_file": "functions/180004878_LOG_WRITER_ExpandDirPathAndCreateLowestDirectory_void.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJAEBV1@@Z",
+      "iisutil!?Append@STRU@@QEAAJG@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJAEBV1@@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!?ExpandEnvironmentVariables@STRU@@SAJPEBGPEAV1@@Z",
+      "msvcrt!wcsstr"
+    ],
+    "matched_strings": [],
+    "name": "?ExpandDirPathAndCreateLowestDirectory@LOG_WRITER@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(LOG_WRITER *__hidden this)",
+    "rank_score": 3433,
+    "size": 681,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::WriteETW(HTTP_DATA *,LOG_WRITER::ETWLogData *)",
+    "ea": "0x1800063bc",
+    "function_file": "functions/1800063bc_LOG_WRITER_WriteETW_HTTP_DATA_LOG_WRITER_ETWLogData.md",
+    "matched_imports": [
+      "iisutil!?Copy@STRA@@QEAAJAEBV1@@Z",
+      "iisutil!?Copy@STRU@@QEAAJAEBV1@@Z",
+      "iisutil!?SetLen@STRU@@QEAA_NK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?WriteETW@LOG_WRITER@@AEAAJPEAUHTTP_DATA@@PEAUETWLogData@1@@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *__hidden this, struct HTTP_DATA *, struct LOG_WRITER::ETWLogData *)",
+    "rank_score": 3229,
+    "size": 895,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "HTTP_LOG_PIPE_CLIENT::Flush(void)",
+    "ea": "0x18000921c",
+    "function_file": "functions/18000921c_HTTP_LOG_PIPE_CLIENT_Flush_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount64",
+      "iisutil!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBGK@Z",
+      "iisutil!?WriteMessage@IPM2_MESSAGE_PIPE@@QEAAJW4IPM2_OPCODE@@HKKPEAXK1@Z",
+      "iisutil!IISInitializeCriticalSection",
+      "iisutil!PuDbgPrintError",
+      "msvcrt!_ultow_s"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\pipeclient.cpp",
+      "Write Message failed\n"
+    ],
+    "name": "?Flush@HTTP_LOG_PIPE_CLIENT@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_PIPE_CLIENT *__hidden this)",
+    "rank_score": 3126,
+    "size": 817,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::ETWLogData::~ETWLogData(void)",
+    "ea": "0x1800021c4",
+    "function_file": "functions/1800021c4_LOG_WRITER_ETWLogData_ETWLogData_void.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1ETWLogData@LOG_WRITER@@QEAA@XZ",
+    "prototype": "void __fastcall(LOG_WRITER::ETWLogData *__hidden this)",
+    "rank_score": 3103,
+    "size": 217,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::GetLogFilePath(STRU *,ulong)",
+    "ea": "0x180005458",
+    "function_file": "functions/180005458_LOG_WRITER_GetLogFilePath_STRU_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-datetime-l1-1-1!GetTimeFormatEx",
+      "api-ms-win-core-file-l1-1-0!GetFileAttributesExW",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-path-l1-1-0!PathAllocCombine",
+      "api-ms-win-core-sysinfo-l1-1-0!GetLocalTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?GetLogFilePath@LOG_WRITER@@AEAAJPEAVSTRU@@K@Z",
+    "prototype": "__int64 __fastcall(PCWSTR *this, struct STRU *, unsigned int)",
+    "rank_score": 2834,
+    "size": 834,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "W3LogServiceMain(void)",
+    "ea": "0x1800019b0",
+    "function_file": "functions/1800019b0_W3LogServiceMain_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeThread",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus",
+      "api-ms-win-service-winsvc-l1-1-0!RegisterServiceCtrlHandlerW",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\main.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\main.cpp",
+      "CreateThread() failed\n",
+      "W3LogServiceMain",
+      "W3LogServiceMain",
+      "GetExitCodeThread() failed\n",
+      "W3LogServiceThreadProc() failed\n"
+    ],
+    "name": "?W3LogServiceMain@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 2517,
+    "size": 537,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_CONTEXT::ProcessETW(void)",
+    "ea": "0x18000a57c",
+    "function_file": "functions/18000a57c_HTTP_LOG_CONTEXT_ProcessETW_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared",
+      "iisutil!??0STRA@@QEAA@PEADK@Z",
+      "iisutil!??0STRU@@QEAA@XZ",
+      "iisutil!??1STRA@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Copy@STRA@@QEAAJPEBDK@Z",
+      "iisutil!?CopyA@STRU@@QEAAJPEBDK@Z",
+      "iisutil!PuDbgPrintError",
+      "msvcrt!_strnicmp"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logcontext.cpp"
+    ],
+    "name": "?ProcessETW@HTTP_LOG_CONTEXT@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_CONTEXT *__hidden this)",
+    "rank_score": 2489,
+    "size": 906,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::ExecuteService(void)",
+    "ea": "0x18000b324",
+    "function_file": "functions/18000b324_LOG_SVC_ADMIN_ExecuteService_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpool",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolCleanupGroup",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolThreadMaximum",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolThreadMinimum",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "LOG_SVC_ADMIN::ExecuteService",
+      "LOG_SVC_ADMIN::ExecuteService",
+      "Couldn't queue StartLogServiceWorkItem\n"
+    ],
+    "name": "?ExecuteService@LOG_SVC_ADMIN@@QEAAXXZ",
+    "prototype": "void __fastcall(LOG_SVC_ADMIN *__hidden this)",
+    "rank_score": 2489,
+    "size": 554,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "HTTP_LOG_PIPE_CLIENT::Shutdown(long)",
+    "ea": "0x180009d10",
+    "function_file": "functions/180009d10_HTTP_LOG_PIPE_CLIENT_Shutdown_long.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolWait",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolWait",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolWaitCallbacks",
+      "iisutil!??1BUFFER@@QEAA@XZ",
+      "iisutil!?DestroyIpmMessagePipe@IPM2_MESSAGE_PIPE@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?Shutdown@HTTP_LOG_PIPE_CLIENT@@QEAAXJ@Z",
+    "prototype": "void __fastcall(HTTP_LOG_PIPE_CLIENT *__hidden this, int)",
+    "rank_score": 2423,
+    "size": 558,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_SITE_TABLE::Update(void)",
+    "ea": "0x180008858",
+    "function_file": "functions/180008858_HTTP_LOG_SITE_TABLE_Update_void.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "iisutil!??1MULTISZ@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsitetable.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsitetable.cpp",
+      "HTTP_LOG_SITE_TABLE::Update",
+      "HTTP_LOG_SITE_TABLE::Update"
+    ],
+    "name": "?Update@HTTP_LOG_SITE_TABLE@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_SITE_TABLE *__hidden this)",
+    "rank_score": 2234,
+    "size": 1065,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::~LOG_WRITER(void)",
+    "ea": "0x1800022a4",
+    "function_file": "functions/1800022a4_LOG_WRITER_LOG_WRITER_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "iisutil!??1MULTISZ@@QEAA@XZ",
+      "iisutil!??1STRA@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1LOG_WRITER@@UEAA@XZ",
+    "prototype": "void __fastcall(struct _RTL_CRITICAL_SECTION *this)",
+    "rank_score": 2115,
+    "size": 233,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::UpdateHeaders(void)",
+    "ea": "0x180005f04",
+    "function_file": "functions/180005f04_LOG_WRITER_UpdateHeaders_void.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?AppendWSimple@STRA@@QEAAJPEBGK@Z",
+      "iisutil!?CopyWToUTF8Unescaped@STRA@@QEAAJAEBVSTRU@@@Z"
+    ],
+    "matched_strings": [
+      "#Software: Microsoft Internet Information Services 10.0\r\n#Version: 1.0\r\n#Date: "
+    ],
+    "name": "?UpdateHeaders@LOG_WRITER@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(LOG_WRITER *__hidden this)",
+    "rank_score": 2082,
+    "size": 573,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::UpdateConfigHelper(HTTP_LOG_FILE_CONFIG_CONTEXT const *)",
+    "ea": "0x180005ccc",
+    "function_file": "functions/180005ccc_LOG_WRITER_UpdateConfigHelper_HTTP_LOG_FILE_CONFIG_CONTEXT_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "iisutil!??1MULTISZ@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Copy@MULTISZ@@QEAAHAEBV1@@Z",
+      "iisutil!?Copy@STRU@@QEAAJAEBV1@@Z"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateConfigHelper@LOG_WRITER@@AEAAJPEBVHTTP_LOG_FILE_CONFIG_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *__hidden this, const struct HTTP_LOG_FILE_CONFIG_CONTEXT *)",
+    "rank_score": 2042,
+    "size": 562,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::Write(STRU *)",
+    "ea": "0x180006148",
+    "function_file": "functions/180006148_LOG_WRITER_Write_STRU.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount64",
+      "iisutil!??0STRA@@QEAA@PEADK@Z",
+      "iisutil!??1STRA@@QEAA@XZ",
+      "iisutil!?Append@STRA@@QEAAJAEBV1@@Z",
+      "iisutil!?AppendWSimple@STRA@@QEAAJPEBGK@Z",
+      "iisutil!?Copy@STRA@@QEAAJAEBV1@@Z",
+      "iisutil!?CopyWToUTF8Unescaped@STRA@@QEAAJPEBGK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?Write@LOG_WRITER@@AEAAJPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(struct _RTL_CRITICAL_SECTION *this, struct STRU *)",
+    "rank_score": 2016,
+    "size": 373,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180001db0",
+    "function_file": "functions/180001db0_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls",
+      "iisutil!PuCreateDebugPrintsObject",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDbgPrintError",
+      "iisutil!PuDeleteDebugPrintsObject",
+      "iisutil!PuLoadDebugFlagsFromRegStr"
+    ],
+    "matched_strings": [
+      "Unable to Create Debug Print Object \n",
+      "System\\CurrentControlSet\\Services\\W3LogSvc\\Parameters",
+      "DllMain",
+      "DllMain",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\main.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\main.cpp",
+      "Disabling thread library calls failed\n"
+    ],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 1914,
+    "size": 291,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_EVENT_HANDLER::CreateEtwConsumer(void)",
+    "ea": "0x18000d860",
+    "function_file": "functions/18000d860_HTTP_LOG_EVENT_HANDLER_CreateEtwConsumer_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-processthreads-l1-1-0!SetThreadPriority",
+      "api-ms-win-eventing-consumer-l1-1-0!OpenTraceW",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "CreateThread() failed\n",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx",
+      "OpenTrace() failed\n",
+      "HTTP_LOG_EVENT_HANDLER::CreateEtwConsumer",
+      "HTTP_LOG_EVENT_HANDLER::CreateEtwConsumer",
+      "Failed to boost thread priority \n"
+    ],
+    "name": "?CreateEtwConsumer@HTTP_LOG_EVENT_HANDLER@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_EVENT_HANDLER *__hidden this)",
+    "rank_score": 1908,
+    "size": 519,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "LOG_SVC_ADMIN::StopServiceWorkItem(void)",
+    "ea": "0x18000d088",
+    "function_file": "functions/18000d088_LOG_SVC_ADMIN_StopServiceWorkItem_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Error while waiting for start to complete.\n",
+      "LOG_SVC_ADMIN::StopServiceWorkItem",
+      "LOG_SVC_ADMIN::StopServiceWorkItem"
+    ],
+    "name": "?StopServiceWorkItem@LOG_SVC_ADMIN@@AEAAXXZ",
+    "prototype": "void __fastcall(HANDLE *this)",
+    "rank_score": 1834,
+    "size": 239,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::InitializeInternalComponents(void)",
+    "ea": "0x18000bfc0",
+    "function_file": "functions/18000bfc0_LOG_SVC_ADMIN_InitializeInternalComponents_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionAndSpinCount",
+      "api-ms-win-service-winsvc-l1-1-0!RegisterServiceCtrlHandlerW",
+      "iisutil!InitializeIISUtil",
+      "iisutil!PuDbgPrintError",
+      "ntdll!RtlCreateTimerQueue"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "LOG_SVC_ADMIN::InitializeInternalComponents",
+      "Couldn't register service control handler\n",
+      "Could not create timer queue\n"
+    ],
+    "name": "?InitializeInternalComponents@LOG_SVC_ADMIN@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *__hidden this)",
+    "rank_score": 1812,
+    "size": 491,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::InitializePipeClientHashTable(void)",
+    "ea": "0x18000c1b4",
+    "function_file": "functions/18000c1b4_LOG_SVC_ADMIN_InitializePipeClientHashTable_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionAndSpinCount",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer"
+    ],
+    "matched_strings": [],
+    "name": "?InitializePipeClientHashTable@LOG_SVC_ADMIN@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(char *pv)",
+    "rank_score": 1808,
+    "size": 490,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_PIPE_CLIENT::~HTTP_LOG_PIPE_CLIENT(void)",
+    "ea": "0x180008dac",
+    "function_file": "functions/180008dac_HTTP_LOG_PIPE_CLIENT_HTTP_LOG_PIPE_CLIENT_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolWait",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolWait",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolWaitCallbacks",
+      "iisutil!??1STRA@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1HTTP_LOG_PIPE_CLIENT@@UEAA@XZ",
+    "prototype": "void __fastcall(HTTP_LOG_PIPE_CLIENT *__hidden this)",
+    "rank_score": 1805,
+    "size": 309,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::AppendHTTPVersion(STRU *,ushort,ushort,ushort *,unsigned __int64)",
+    "ea": "0x18000289c",
+    "function_file": "functions/18000289c_LOG_WRITER_AppendHTTPVersion_STRU_ushort_ushort_ushort_unsigned_int64.md",
+    "matched_imports": [
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z",
+      "msvcrt!_itow_s",
+      "msvcrt!wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?AppendHTTPVersion@LOG_WRITER@@AEAAJPEAVSTRU@@GGPEAG_K@Z",
+    "prototype": "int __fastcall(LOG_WRITER *this, struct STRU *, unsigned __int16, unsigned __int16, wchar_t *Buffer)",
+    "rank_score": 1805,
+    "size": 286,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_SITE_TABLE::Initialize(IAppHostAdminManager *)",
+    "ea": "0x180008230",
+    "function_file": "functions/180008230_HTTP_LOG_SITE_TABLE_Initialize_IAppHostAdminManager.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsitetable.cpp"
+    ],
+    "name": "?Initialize@HTTP_LOG_SITE_TABLE@@QEAAJPEAUIAppHostAdminManager@@@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_SITE_TABLE *__hidden this, struct IAppHostAdminManager *)",
+    "rank_score": 1685,
+    "size": 806,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_SITE_ENTRY::Update(IAppHostElement *,int)",
+    "ea": "0x180007cf0",
+    "function_file": "functions/180007cf0_HTTP_LOG_SITE_ENTRY_Update_IAppHostElement_int.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "iisutil!??1MULTISZ@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "?Update@HTTP_LOG_SITE_ENTRY@@QEAAJPEAUIAppHostElement@@H@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_SITE_ENTRY *__hidden this, struct IAppHostElement *, int)",
+    "rank_score": 1637,
+    "size": 235,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "HTTP_LOG_SITE_ENTRY::CreateConfigContext(IAppHostElement *,int,HTTP_LOG_FILE_CONFIG * *)",
+    "ea": "0x1800073e8",
+    "function_file": "functions/1800073e8_HTTP_LOG_SITE_ENTRY_CreateConfigContext_IAppHostElement_int_HTTP_LOG_FILE_CONFIG.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1MULTISZ@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "?CreateConfigContext@HTTP_LOG_SITE_ENTRY@@AEAAJPEAUIAppHostElement@@HPEAPEAVHTTP_LOG_FILE_CONFIG@@@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_SITE_ENTRY *this, struct IAppHostElement *, int, struct IAppHostElement **)",
+    "rank_score": 1636,
+    "size": 471,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_PIPE_CLIENT::Initialize(char const *)",
+    "ea": "0x1800097f8",
+    "function_file": "functions/1800097f8_HTTP_LOG_PIPE_CLIENT_Initialize_char_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolWait",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolWait",
+      "iisutil!?Copy@STRA@@QEAAJPEBD@Z",
+      "iisutil!?CopyA@STRU@@QEAAJPEBD@Z"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@HTTP_LOG_PIPE_CLIENT@@QEAAJPEBD@Z",
+    "prototype": "__int64 __fastcall(_QWORD *pv, char *)",
+    "rank_score": 1618,
+    "size": 438,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::AddCustomFieldsToLogString(STRU *,STRU *,ulong *,HTTP_LOG_CONTEXT *,ulong *,int,int)",
+    "ea": "0x1800023d8",
+    "function_file": "functions/1800023d8_LOG_WRITER_AddCustomFieldsToLogString_STRU_STRU_ulong_HTTP_LOG_CONTEXT_ulong_int_int.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJAEBV1@@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z",
+      "msvcrt!wcsnlen"
+    ],
+    "matched_strings": [],
+    "name": "?AddCustomFieldsToLogString@LOG_WRITER@@AEAAJPEAVSTRU@@0PEAKPEAVHTTP_LOG_CONTEXT@@1HH@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *this, struct STRU *, struct STRU *, unsigned int *, struct HTTP_LOG_CONTEXT *, unsigned int *, int, int)",
+    "rank_score": 1612,
+    "size": 804,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::LOG_WRITER(void)",
+    "ea": "0x180002094",
+    "function_file": "functions/180002094_LOG_WRITER_LOG_WRITER_void.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetLocalTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime",
+      "iisutil!??0STRA@@QEAA@PEADK@Z",
+      "iisutil!??0STRA@@QEAA@XZ",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??0STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??0LOG_WRITER@@QEAA@XZ",
+    "prototype": "LOG_WRITER *__fastcall(LOG_WRITER *__hidden this)",
+    "rank_score": 1605,
+    "size": 296,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_EVENT_HANDLER::CreateEtwSession(void)",
+    "ea": "0x18000da70",
+    "function_file": "functions/18000da70_HTTP_LOG_EVENT_HANDLER_CreateEtwSession_void.md",
+    "matched_imports": [
+      "api-ms-win-eventing-controller-l1-1-0!EnableTraceEx2",
+      "api-ms-win-eventing-controller-l1-1-0!StartTraceW",
+      "api-ms-win-eventing-controller-l1-1-0!StopTraceW",
+      "iisutil!PuDbgPrintError",
+      "iisutil!ReadDwordParameterValueFromAnyService"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\W3LogSvc\\Parameters",
+      "HTTP_LOG_EVENT_HANDLER::CreateEtwSession",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx"
+    ],
+    "name": "?CreateEtwSession@HTTP_LOG_EVENT_HANDLER@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_EVENT_HANDLER *__hidden this)",
+    "rank_score": 1557,
+    "size": 554,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_EVENT_HANDLER::EtwSessionStatusTimerCallback(_TP_CALLBACK_INSTANCE *,void *,_TP_TIMER *)",
+    "ea": "0x18000dfc0",
+    "function_file": "functions/18000dfc0_HTTP_LOG_EVENT_HANDLER_EtwSessionStatusTimerCallback_TP_CALLBACK_INSTANCE_void_TP_TIMER.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount64",
+      "api-ms-win-eventing-legacy-l1-1-0!QueryTraceW",
+      "iisutil!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBGK@Z",
+      "iisutil!PuDbgPrintError",
+      "msvcrt!_ultow"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx"
+    ],
+    "name": "?EtwSessionStatusTimerCallback@HTTP_LOG_EVENT_HANDLER@@CAXPEAU_TP_CALLBACK_INSTANCE@@PEAXPEAU_TP_TIMER@@@Z",
+    "prototype": "void __fastcall(PTP_CALLBACK_INSTANCE Instance, _DWORD *Context, PTP_TIMER Timer)",
+    "rank_score": 1506,
+    "size": 474,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::Initialize(void)",
+    "ea": "0x18000bc64",
+    "function_file": "functions/18000bc64_LOG_SVC_ADMIN_Initialize_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "iisutil!??0ALLOC_CACHE_HANDLER@@QEAA@PEBDPEBUALLOC_CACHE_CONFIGURATION@@H@Z",
+      "iisutil!ReadDwordParameterValueFromAnyService"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\W3LogSvc\\Parameters"
+    ],
+    "name": "?Initialize@LOG_SVC_ADMIN@@QEAAJXZ",
+    "prototype": "signed int __fastcall(LOG_SVC_ADMIN *this)",
+    "rank_score": 1490,
+    "size": 436,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::Initialize(HTTP_LOG_FILE_CONFIG_CONTEXT const *)",
+    "ea": "0x1800057a0",
+    "function_file": "functions/1800057a0_LOG_WRITER_Initialize_HTTP_LOG_FILE_CONFIG_CONTEXT_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionAndSpinCount",
+      "api-ms-win-core-synch-l1-1-0!InitializeSRWLock",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount64",
+      "iisutil!?Copy@STRA@@QEAAJPEBD@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Resize@STRA@@QEAAJK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@LOG_WRITER@@QEAAJPEBVHTTP_LOG_FILE_CONFIG_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *__hidden this, const struct HTTP_LOG_FILE_CONFIG_CONTEXT *)",
+    "rank_score": 1435,
+    "size": 217,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::InitializeConfigSystem(void)",
+    "ea": "0x18000be20",
+    "function_file": "functions/18000be20_LOG_SVC_ADMIN_InitializeConfigSystem_void.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "api-ms-win-core-com-l1-1-0!CoCreateInstance",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Could not initialize app host config reader\n",
+      "LOG_SVC_ADMIN::InitializeConfigSystem",
+      "pathMapper"
+    ],
+    "name": "?InitializeConfigSystem@LOG_SVC_ADMIN@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *__hidden this)",
+    "rank_score": 1407,
+    "size": 408,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::AppendSanitizedStringOrHyphen(STRU *,char *,ulong,char,int)",
+    "ea": "0x180002c28",
+    "function_file": "functions/180002c28_LOG_WRITER_AppendSanitizedStringOrHyphen_STRU_char_ulong_char_int.md",
+    "matched_imports": [
+      "iisutil!??0STRA@@QEAA@PEADK@Z",
+      "iisutil!??1STRA@@QEAA@XZ",
+      "iisutil!?Append@STRA@@QEAAJPEBD@Z",
+      "iisutil!?Append@STRA@@QEAAJPEBDK@Z",
+      "iisutil!?AppendA@STRU@@QEAAJPEBDK@Z",
+      "iisutil!?Resize@STRA@@QEAAJK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AppendSanitizedStringOrHyphen@LOG_WRITER@@AEAAJPEAVSTRU@@PEADKDH@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *this, struct STRU *, char *, unsigned int)",
+    "rank_score": 1405,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ServiceControlHandler(ulong)",
+    "ea": "0x18000cc70",
+    "function_file": "functions/18000cc70_ServiceControlHandler_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Service control ignored, OpCode: %lu\n",
+      "ServiceControlHandler",
+      "ServiceControlHandler",
+      "Service control operation failed\n",
+      "Couldn't report the service status\n",
+      "LOG_SVC_ADMIN::InterrogateService"
+    ],
+    "name": "?ServiceControlHandler@@YAXK@Z",
+    "prototype": "void __fastcall(DWORD dwControl)",
+    "rank_score": 1395,
+    "size": 324,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_EVENT_HANDLER::DeleteEtwConsumer(void)",
+    "ea": "0x18000dd54",
+    "function_file": "functions/18000dd54_HTTP_LOG_EVENT_HANDLER_DeleteEtwConsumer_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "api-ms-win-eventing-consumer-l1-1-0!CloseTrace",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx",
+      "HTTP_LOG_EVENT_HANDLER::DeleteEtwConsumer",
+      "HTTP_LOG_EVENT_HANDLER::DeleteEtwConsumer"
+    ],
+    "name": "?DeleteEtwConsumer@HTTP_LOG_EVENT_HANDLER@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_EVENT_HANDLER *__hidden this)",
+    "rank_score": 1384,
+    "size": 263,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "Config_GetDWORDProperty(IAppHostElement *,ushort const *,ulong *)",
+    "ea": "0x180006f4c",
+    "function_file": "functions/180006f4c_Config_GetDWORDProperty_IAppHostElement_ushort_const_ulong.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_VariantChangeType",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      " Failed to Config_GetDWORDProperty %S\n",
+      "Config_GetDWORDProperty",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsite.cpp"
+    ],
+    "name": "?Config_GetDWORDProperty@@YAJPEAUIAppHostElement@@PEBGPEAK@Z",
+    "prototype": "__int64 __fastcall(struct IAppHostElement *, const unsigned __int16 *, unsigned int *)",
+    "rank_score": 1359,
+    "size": 331,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Config_GetBoolProperty(IAppHostElement *,ushort const *,int *)",
+    "ea": "0x180006df8",
+    "function_file": "functions/180006df8_Config_GetBoolProperty_IAppHostElement_ushort_const_int.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_VariantChangeType",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsite.cpp",
+      " Failed to Config_GetBoolProperty %S\n",
+      "Config_GetBoolProperty"
+    ],
+    "name": "?Config_GetBoolProperty@@YAJPEAUIAppHostElement@@PEBGPEAH@Z",
+    "prototype": "__int64 __fastcall(struct IAppHostElement *, const unsigned __int16 *, int *)",
+    "rank_score": 1356,
+    "size": 331,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001664",
+    "function_file": "functions/180001664_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "HTTP_LOG_SITE_TABLE::~HTTP_LOG_SITE_TABLE(void)",
+    "ea": "0x18000aca8",
+    "function_file": "functions/18000aca8_HTTP_LOG_SITE_TABLE_HTTP_LOG_SITE_TABLE_void.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks",
+      "iisutil!??1MULTISZ@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1HTTP_LOG_SITE_TABLE@@UEAA@XZ",
+    "prototype": "void __fastcall(HTTP_LOG_SITE_TABLE *__hidden this)",
+    "rank_score": 1217,
+    "size": 254,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::GetIncrementalFilePath(STRU *)",
+    "ea": "0x180004dbc",
+    "function_file": "functions/180004dbc_LOG_WRITER_GetIncrementalFilePath_STRU.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!GetFileAttributesW",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?GetIncrementalFilePath@LOG_WRITER@@AEAAJPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *__hidden this, struct STRU *)",
+    "rank_score": 1216,
+    "size": 353,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_CONTEXT::CreateCustomLogString(void)",
+    "ea": "0x18000a124",
+    "function_file": "functions/18000a124_HTTP_LOG_CONTEXT_CreateCustomLogString_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "iisutil!??0MULTISZ@@QEAA@XZ",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@MULTISZ@@QEAAHPEBG@Z",
+      "iisutil!?AppendA@STRU@@QEAAJPEBDK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?CreateCustomLogString@HTTP_LOG_CONTEXT@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_CONTEXT *__hidden this)",
+    "rank_score": 1208,
+    "size": 356,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "LOG_WRITER::Flush(int)",
+    "ea": "0x180004b28",
+    "function_file": "functions/180004b28_LOG_WRITER_Flush_int.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount64"
+    ],
+    "matched_strings": [],
+    "name": "?Flush@LOG_WRITER@@AEAAJH@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *__hidden this, int)",
+    "rank_score": 1207,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::AppendSiteNameOrId(STRU *,ushort *)",
+    "ea": "0x180002de4",
+    "function_file": "functions/180002de4_LOG_WRITER_AppendSiteNameOrId_STRU_ushort.md",
+    "matched_imports": [
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z",
+      "msvcrt!_itow_s",
+      "msvcrt!_wcsupr_s"
+    ],
+    "matched_strings": [],
+    "name": "?AppendSiteNameOrId@LOG_WRITER@@AEAAJPEAVSTRU@@PEAG@Z",
+    "prototype": "errno_t __fastcall(LOG_WRITER *this, struct STRU *, unsigned __int16 *)",
+    "rank_score": 1204,
+    "size": 205,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Config_GetStringProperty(IAppHostElement *,ushort const *,STRU *)",
+    "ea": "0x180007170",
+    "function_file": "functions/180007170_Config_GetStringProperty_IAppHostElement_ushort_const_STRU.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsite.cpp",
+      " Failed to Config_GetStringProperty %S\n",
+      "Config_GetStringProperty"
+    ],
+    "name": "?Config_GetStringProperty@@YAJPEAUIAppHostElement@@PEBGPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(struct IAppHostElement *, const unsigned __int16 *, struct STRU *)",
+    "rank_score": 1167,
+    "size": 284,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Config_GetSection(IAppHostAdminManager *,ushort const *,ushort const *,IAppHostElement * *)",
+    "ea": "0x1800070a0",
+    "function_file": "functions/1800070a0_Config_GetSection_IAppHostAdminManager_ushort_const_ushort_const_IAppHostElement.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsite.cpp",
+      " Failed to Config_GetSection %S\n",
+      "Config_GetSection"
+    ],
+    "name": "?Config_GetSection@@YAJPEAUIAppHostAdminManager@@PEBG1PEAPEAUIAppHostElement@@@Z",
+    "prototype": "__int64 __fastcall(struct IAppHostAdminManager *, const unsigned __int16 *, const unsigned __int16 *, struct IAppHostElement **)",
+    "rank_score": 1155,
+    "size": 201,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "UpdatePendingServiceStatusCallback(void *,uchar)",
+    "ea": "0x18000d520",
+    "function_file": "functions/18000d520_UpdatePendingServiceStatusCallback_void_uchar.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Updating pending service status failed\n",
+      "UpdatePendingServiceStatusCallback",
+      "Could not report service status\n",
+      "LOG_SVC_ADMIN::UpdatePendingServiceStatus"
+    ],
+    "name": "?UpdatePendingServiceStatusCallback@@YAXPEAXE@Z",
+    "prototype": "void __fastcall(PVOID)",
+    "rank_score": 1083,
+    "size": 224,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "LOG_SVC_ADMIN::ReportServiceStatus(void)",
+    "ea": "0x18000cba8",
+    "function_file": "functions/18000cba8_LOG_SVC_ADMIN_ReportServiceStatus_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Can't report service status because m_ServiceStatusHandle is null\n",
+      "LOG_SVC_ADMIN::ReportServiceStatus",
+      "LOG_SVC_ADMIN::ReportServiceStatus",
+      "Setting service state failed\n"
+    ],
+    "name": "?ReportServiceStatus@LOG_SVC_ADMIN@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *__hidden this)",
+    "rank_score": 1076,
+    "size": 188,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::QueryComputerName(STRU *,_COMPUTER_NAME_FORMAT)",
+    "ea": "0x18000c944",
+    "function_file": "functions/18000c944_LOG_SVC_ADMIN_QueryComputerName_STRU_COMPUTER_NAME_FORMAT.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-sysinfo-l1-1-0!GetComputerNameExW",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?QueryComputerName@LOG_SVC_ADMIN@@AEAAJPEAVSTRU@@W4_COMPUTER_NAME_FORMAT@@@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *this, struct STRU *, COMPUTER_NAME_FORMAT)",
+    "rank_score": 1025,
+    "size": 217,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_FILE_CONFIG::PopulateCustomFieldsCollection(IAppHostElement *)",
+    "ea": "0x180007a44",
+    "function_file": "functions/180007a44_HTTP_LOG_FILE_CONFIG_PopulateCustomFieldsCollection_IAppHostElement.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_VariantInit",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@MULTISZ@@QEAAHAEAVSTRU@@@Z"
+    ],
+    "matched_strings": [],
+    "name": "?PopulateCustomFieldsCollection@HTTP_LOG_FILE_CONFIG@@AEAAJPEAUIAppHostElement@@@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_FILE_CONFIG *this, struct IAppHostElement *)",
+    "rank_score": 1021,
+    "size": 559,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_PIPE_CLIENT::ConnectToPipe(void)",
+    "ea": "0x180009148",
+    "function_file": "functions/180009148_HTTP_LOG_PIPE_CLIENT_ConnectToPipe_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "iisutil!?CreateIpmMessagePipe@IPM2_MESSAGE_PIPE@@SAJPEAVIPM2_MESSAGE_ACCEPTOR@@PEBGHPEAU_SECURITY_ATTRIBUTES@@PEAPEAV1@@Z"
+    ],
+    "matched_strings": [],
+    "name": "?ConnectToPipe@HTTP_LOG_PIPE_CLIENT@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_PIPE_CLIENT *__hidden this)",
+    "rank_score": 1013,
+    "size": 204,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "LOG_WRITER::Write(HTTP_LOG_CONTEXT *)",
+    "ea": "0x1800062c4",
+    "function_file": "functions/1800062c4_LOG_WRITER_Write_HTTP_LOG_CONTEXT.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?Write@LOG_WRITER@@QEAAJPEAVHTTP_LOG_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(RTL_SRWLOCK *this, struct HTTP_LOG_CONTEXT *)",
+    "rank_score": 1010,
+    "size": 239,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "LOG_WRITER::AppendNum(STRU *,unsigned __int64,ushort *,unsigned __int64,ushort const *,int)",
+    "ea": "0x180002b14",
+    "function_file": "functions/180002b14_LOG_WRITER_AppendNum_STRU_unsigned_int64_ushort_unsigned_int64_ushort_const_int.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z",
+      "msvcrt!_ui64tow_s"
+    ],
+    "matched_strings": [],
+    "name": "?AppendNum@LOG_WRITER@@AEAAJPEAVSTRU@@_KPEAG1PEBGH@Z",
+    "prototype": "int __fastcall(LOG_WRITER *this, struct STRU *, unsigned __int64, unsigned __int16 *, size_t BufferCount, const unsigned __int16 *, int)",
+    "rank_score": 1008,
+    "size": 140,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "LOG_SVC_ADMIN::BeginStateTransition(ulong)",
+    "ea": "0x18000b154",
+    "function_file": "functions/18000b154_LOG_SVC_ADMIN_BeginStateTransition_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "iisutil!PuDbgPrintError",
+      "ntdll!RtlCreateTimer"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "couldn't set service status\n",
+      "Could not create timer\n"
+    ],
+    "name": "?BeginStateTransition@LOG_SVC_ADMIN@@AEAAJK@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *this, int)",
+    "rank_score": 966,
+    "size": 310,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::FinishStateTransition(ulong,ulong)",
+    "ea": "0x18000b5dc",
+    "function_file": "functions/18000b5dc_LOG_SVC_ADMIN_FinishStateTransition_ulong_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Could not update service status\n"
+    ],
+    "name": "?FinishStateTransition@LOG_SVC_ADMIN@@AEAAJKK@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *this)",
+    "rank_score": 966,
+    "size": 268,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::TerminateServiceAndReportFinalStatus(long)",
+    "ea": "0x18000d420",
+    "function_file": "functions/18000d420_LOG_SVC_ADMIN_TerminateServiceAndReportFinalStatus_long.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "iisutil!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBGK@Z",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Fatal service error, shutting down\n",
+      "LOG_SVC_ADMIN::TerminateServiceAndReportFinalStatus"
+    ],
+    "name": "?TerminateServiceAndReportFinalStatus@LOG_SVC_ADMIN@@AEAAXJ@Z",
+    "prototype": "void __fastcall(LOG_SVC_ADMIN *__hidden this, int)",
+    "rank_score": 954,
+    "size": 236,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_EVENT_HANDLER::CreateEtwStatusTimer(void)",
+    "ea": "0x18000dca0",
+    "function_file": "functions/18000dca0_HTTP_LOG_EVENT_HANDLER_CreateEtwStatusTimer_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx",
+      "CreateThreadpoolTimer() failed\n",
+      "HTTP_LOG_EVENT_HANDLER::CreateEtwStatusTimer"
+    ],
+    "name": "?CreateEtwStatusTimer@HTTP_LOG_EVENT_HANDLER@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(PVOID pv)",
+    "rank_score": 943,
+    "size": 172,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "W3LogServiceThreadProc(void *)",
+    "ea": "0x180001bd0",
+    "function_file": "functions/180001bd0_W3LogServiceThreadProc_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoInitializeEx",
+      "api-ms-win-core-com-l1-1-0!CoUninitialize",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\main.cpp",
+      "W3LogServiceThreadProc"
+    ],
+    "name": "?W3LogServiceThreadProc@@YAKPEAX@Z",
+    "prototype": "__int64 __fastcall(PVOID Parameter)",
+    "rank_score": 920,
+    "size": 474,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::GetPipeClient(char const *,int,HTTP_LOG_PIPE_CLIENT * *)",
+    "ea": "0x18000b964",
+    "function_file": "functions/18000b964_LOG_SVC_ADMIN_GetPipeClient_char_const_int_HTTP_LOG_PIPE_CLIENT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp"
+    ],
+    "name": "?GetPipeClient@LOG_SVC_ADMIN@@QEAAJPEBDHPEAPEAVHTTP_LOG_PIPE_CLIENT@@@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *this, char *, int, struct HTTP_LOG_PIPE_CLIENT **)",
+    "rank_score": 917,
+    "size": 760,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::ResetWriter(void)",
+    "ea": "0x180005b3c",
+    "function_file": "functions/180005b3c_LOG_WRITER_ResetWriter_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-sysinfo-l1-1-0!GetLocalTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime"
+    ],
+    "matched_strings": [],
+    "name": "?ResetWriter@LOG_WRITER@@AEAAXXZ",
+    "prototype": "void __fastcall(struct _RTL_CRITICAL_SECTION *this)",
+    "rank_score": 904,
+    "size": 144,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_EVENT_HANDLER::EvtRecCallback(_EVENT_RECORD *)",
+    "ea": "0x18000e1a0",
+    "function_file": "functions/18000e1a0_HTTP_LOG_EVENT_HANDLER_EvtRecCallback_EVENT_RECORD.md",
+    "matched_imports": [
+      "iisutil!?Alloc@ALLOC_CACHE_HANDLER@@QEAAPEAXXZ",
+      "iisutil!?Resize@BUFFER@@QEAA_NK@Z",
+      "iisutil!PuDbgPrintError",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx"
+    ],
+    "name": "?EvtRecCallback@HTTP_LOG_EVENT_HANDLER@@CAXPEAU_EVENT_RECORD@@@Z",
+    "prototype": "void __fastcall(struct _EVENT_RECORD *)",
+    "rank_score": 878,
+    "size": 418,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CREATE_DIRECTORY_HELPER::CreateDirectoryRecursively(ushort const *,_SECURITY_ATTRIBUTES *)",
+    "ea": "0x180003078",
+    "function_file": "functions/180003078_CREATE_DIRECTORY_HELPER_CreateDirectoryRecursively_ushort_const_SECURITY_ATTRIBUTES.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateDirectoryW"
+    ],
+    "matched_strings": [],
+    "name": "?CreateDirectoryRecursively@CREATE_DIRECTORY_HELPER@@SAJPEBGPEAU_SECURITY_ATTRIBUTES@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, struct _SECURITY_ATTRIBUTES *)",
+    "rank_score": 827,
+    "size": 338,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "LOG_SVC_ADMIN::SetConfigChangeHandler(int)",
+    "ea": "0x18000cdbc",
+    "function_file": "functions/18000cdbc_LOG_SVC_ADMIN_SetConfigChangeHandler_int.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit"
+    ],
+    "matched_strings": [],
+    "name": "?SetConfigChangeHandler@LOG_SVC_ADMIN@@AEAAJH@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *__hidden this, int)",
+    "rank_score": 827,
+    "size": 338,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::GetIPStringAndPort(sockaddr *,ushort *,ushort *,ushort *)",
+    "ea": "0x180004cd4",
+    "function_file": "functions/180004cd4_LOG_WRITER_GetIPStringAndPort_sockaddr_ushort_ushort_ushort.md",
+    "matched_imports": [
+      "WS2_32!__imp_ntohs",
+      "msvcrt!_itow_s",
+      "ntdll!RtlIpv4AddressToStringExW",
+      "ntdll!RtlIpv6AddressToStringExW"
+    ],
+    "matched_strings": [],
+    "name": "?GetIPStringAndPort@LOG_WRITER@@AEAAJPEAUsockaddr@@PEAG11@Z",
+    "prototype": "errno_t __fastcall(LOG_WRITER *this, struct sockaddr *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 824,
+    "size": 226,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::~LOG_SVC_ADMIN(void)",
+    "ea": "0x18000adac",
+    "function_file": "functions/18000adac_LOG_SVC_ADMIN_LOG_SVC_ADMIN_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1LOG_SVC_ADMIN@@UEAA@XZ",
+    "prototype": "void __fastcall(LOG_SVC_ADMIN *__hidden this)",
+    "rank_score": 819,
+    "size": 277,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::GetIncrementalFilePath(STRU *,ushort *,ulong,ushort * *)",
+    "ea": "0x180004f24",
+    "function_file": "functions/180004f24_LOG_WRITER_GetIncrementalFilePath_STRU_ushort_ulong_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-path-l1-1-0!PathAllocCombine",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?GetIncrementalFilePath@LOG_WRITER@@AEAAJPEAVSTRU@@PEAGKPEAPEAG@Z",
+    "prototype": "HRESULT __fastcall(PCWSTR *this, struct STRU *, unsigned __int16 *, unsigned int, unsigned __int16 **ppszPathOut)",
+    "rank_score": 814,
+    "size": 185,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_CONTEXT::CopyAppContext(ulong,char const *)",
+    "ea": "0x180009f6c",
+    "function_file": "functions/180009f6c_HTTP_LOG_CONTEXT_CopyAppContext_ulong_char_const.md",
+    "matched_imports": [
+      "msvcrt!strncpy_s",
+      "msvcrt!strtoul"
+    ],
+    "matched_strings": [],
+    "name": "?CopyAppContext@HTTP_LOG_CONTEXT@@QEAAJKPEBD@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_CONTEXT *this, int, const char *)",
+    "rank_score": 807,
+    "size": 431,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "LOG_WRITER::LogW3LogSvcEvent(ulong,ushort const *,ulong,LOG_SVC_EVENT)",
+    "ea": "0x180005880",
+    "function_file": "functions/180005880_LOG_WRITER_LogW3LogSvcEvent_ulong_ushort_const_ulong_LOG_SVC_EVENT.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount64",
+      "iisutil!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBGK@Z",
+      "msvcrt!_ultow"
+    ],
+    "matched_strings": [],
+    "name": "?LogW3LogSvcEvent@LOG_WRITER@@AEAAXKPEBGKW4LOG_SVC_EVENT@@@Z",
+    "prototype": "ULONGLONG __fastcall(__int64, unsigned int, __int64, unsigned int, int)",
+    "rank_score": 806,
+    "size": 218,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "STTABLE::Iterate(void (*)(STTABLE_ITEM *,unsigned __int64,int *),unsigned __int64)",
+    "ea": "0x18000c670",
+    "function_file": "functions/18000c670_STTABLE_Iterate_void_STTABLE_ITEM_unsigned_int64_int_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?Iterate@STTABLE@@QEAAXP6AXPEAVSTTABLE_ITEM@@_KPEAH@Z1@Z",
+    "prototype": "void __fastcall(STTABLE *this, void (*)(struct STTABLE_ITEM *, unsigned __int64, int *), __int64)",
+    "rank_score": 806,
+    "size": 366,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_PIPE_CLIENT::HandleHandshake(IPM2_MESSAGE const *)",
+    "ea": "0x180009554",
+    "function_file": "functions/180009554_HTTP_LOG_PIPE_CLIENT_HandleHandshake_IPM2_MESSAGE_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-1!OpenProcess",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolWait"
+    ],
+    "matched_strings": [],
+    "name": "?HandleHandshake@HTTP_LOG_PIPE_CLIENT@@QEAAXPEBVIPM2_MESSAGE@@@Z",
+    "prototype": "void __fastcall(HTTP_LOG_PIPE_CLIENT *__hidden this, const struct IPM2_MESSAGE *)",
+    "rank_score": 804,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::AppendFormattedDate(STRU *,_SYSTEMTIME *,ushort const *,ushort const *,int)",
+    "ea": "0x180002808",
+    "function_file": "functions/180002808_LOG_WRITER_AppendFormattedDate_STRU_SYSTEMTIME_ushort_const_ushort_const_int.md",
+    "matched_imports": [
+      "api-ms-win-core-datetime-l1-1-0!GetDateFormatW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AppendFormattedDate@LOG_WRITER@@AEAAJPEAVSTRU@@PEAU_SYSTEMTIME@@PEBG2H@Z",
+    "prototype": "signed int __fastcall(LOG_WRITER *this, struct STRU *, struct _SYSTEMTIME *, const unsigned __int16 *)",
+    "rank_score": 804,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::AppendSanitizedStringOrHyphen(STRU *,ushort *,ulong,ushort,int)",
+    "ea": "0x180002d38",
+    "function_file": "functions/180002d38_LOG_WRITER_AppendSanitizedStringOrHyphen_STRU_ushort_ulong_ushort_int.md",
+    "matched_imports": [
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z",
+      "iisutil!?Resize@STRU@@QEAAJK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AppendSanitizedStringOrHyphen@LOG_WRITER@@AEAAJPEAVSTRU@@PEAGKGH@Z",
+    "prototype": "int __fastcall(LOG_WRITER *this, struct STRU *, unsigned __int16 *, unsigned int, unsigned __int16, int)",
+    "rank_score": 804,
+    "size": 164,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::StartServiceWorkItem(void)",
+    "ea": "0x18000cf98",
+    "function_file": "functions/18000cf98_LOG_SVC_ADMIN_StartServiceWorkItem_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "iisutil!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBGK@Z",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Initializing internal components failed\n",
+      "LOG_SVC_ADMIN::StartServiceWorkItem",
+      "couldn't transition to service start pending\n"
+    ],
+    "name": "?StartServiceWorkItem@LOG_SVC_ADMIN@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(HANDLE *this)",
+    "rank_score": 797,
+    "size": 233,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Config_GetSubElement(IAppHostElement *,ushort const *,IAppHostElement * *)",
+    "ea": "0x180007294",
+    "function_file": "functions/180007294_Config_GetSubElement_IAppHostElement_ushort_const_IAppHostElement.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsite.cpp",
+      " Failed to Config_GetSubElement %S\n",
+      "Config_GetSubElement"
+    ],
+    "name": "?Config_GetSubElement@@YAJPEAUIAppHostElement@@PEBGPEAPEAU1@@Z",
+    "prototype": "__int64 __fastcall(struct IAppHostElement *, const unsigned __int16 *, struct IAppHostElement **)",
+    "rank_score": 755,
+    "size": 157,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180001760",
+    "function_file": "functions/180001760_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "BOOL __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_EVENT_HANDLER::DeleteEtwSession(void)",
+    "ea": "0x18000de64",
+    "function_file": "functions/18000de64_HTTP_LOG_EVENT_HANDLER_DeleteEtwSession_void.md",
+    "matched_imports": [
+      "api-ms-win-eventing-controller-l1-1-0!ControlTraceW",
+      "api-ms-win-eventing-controller-l1-1-0!EnableTraceEx2",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx",
+      "HTTP_LOG_EVENT_HANDLER::DeleteEtwSession"
+    ],
+    "name": "?DeleteEtwSession@HTTP_LOG_EVENT_HANDLER@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_EVENT_HANDLER *__hidden this)",
+    "rank_score": 703,
+    "size": 241,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_SITE_TABLE::ExecuteWorkItem(MULTI_WORK_ITEM *)",
+    "ea": "0x180007ed0",
+    "function_file": "functions/180007ed0_HTTP_LOG_SITE_TABLE_ExecuteWorkItem_MULTI_WORK_ITEM.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsitetable.cpp"
+    ],
+    "name": "?ExecuteWorkItem@HTTP_LOG_SITE_TABLE@@UEAAJPEAVMULTI_WORK_ITEM@@@Z",
+    "prototype": "__int64 __fastcall(RTL_SRWLOCK *this, struct MULTI_WORK_ITEM *)",
+    "rank_score": 675,
+    "size": 240,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_FILE_CONFIG::Initialize(ulong,ushort const *,int,IAppHostElement *)",
+    "ea": "0x180007744",
+    "function_file": "functions/180007744_HTTP_LOG_FILE_CONFIG_Initialize_ulong_ushort_const_int_IAppHostElement.md",
+    "matched_imports": [
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBGK@Z",
+      "msvcrt!_ultow"
+    ],
+    "matched_strings": [
+      "directory"
+    ],
+    "name": "?Initialize@HTTP_LOG_FILE_CONFIG@@AEAAJKPEBGHPEAUIAppHostElement@@@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_FILE_CONFIG *this, unsigned int Value, const unsigned __int16 *, int, struct IAppHostElement *)",
+    "rank_score": 673,
+    "size": 567,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_PENDING_CONTEXT::HandleResponse(uchar *,ulong)",
+    "ea": "0x180009720",
+    "function_file": "functions/180009720_HTTP_LOG_PENDING_CONTEXT_HandleResponse_uchar_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\pipeclient.cpp"
+    ],
+    "name": "?HandleResponse@HTTP_LOG_PENDING_CONTEXT@@QEAAXPEAEK@Z",
+    "prototype": "void __fastcall(HTTP_LOG_PENDING_CONTEXT *this, unsigned __int8 *)",
+    "rank_score": 665,
+    "size": 210,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MULTI_WORK_QUEUE::GetBlankWorkItem(MULTI_WORK_ITEM * *)",
+    "ea": "0x18000e598",
+    "function_file": "functions/18000e598_MULTI_WORK_QUEUE_GetBlankWorkItem_MULTI_WORK_ITEM.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "iisutil!?Alloc@ALLOC_CACHE_HANDLER@@QEAAPEAXXZ",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\common\\multiworkqueue\\multi_work_queue.cxx"
+    ],
+    "name": "?GetBlankWorkItem@MULTI_WORK_QUEUE@@QEAAJPEAPEAVMULTI_WORK_ITEM@@@Z",
+    "prototype": "__int64 __fastcall(MULTI_WORK_QUEUE *__hidden this, struct MULTI_WORK_ITEM **)",
+    "rank_score": 663,
+    "size": 194,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "HTTP_LOG_FILE_CONFIG::CreateCentralLogConfigContext(IAppHostElement *,HTTP_LOG_FILE_CONFIG * *)",
+    "ea": "0x180007338",
+    "function_file": "functions/180007338_HTTP_LOG_FILE_CONFIG_CreateCentralLogConfigContext_IAppHostElement_HTTP_LOG_FILE_CONFIG.md",
+    "matched_imports": [
+      "iisutil!??1MULTISZ@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "?CreateCentralLogConfigContext@HTTP_LOG_FILE_CONFIG@@SAJPEAUIAppHostElement@@PEAPEAV1@@Z",
+    "prototype": "__int64 __fastcall(struct IAppHostElement *, struct HTTP_LOG_FILE_CONFIG **)",
+    "rank_score": 628,
+    "size": 167,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::UpdateConfig(HTTP_LOG_FILE_CONFIG_CONTEXT const *)",
+    "ea": "0x180005bd4",
+    "function_file": "functions/180005bd4_LOG_WRITER_UpdateConfig_HTTP_LOG_FILE_CONFIG_CONTEXT_const.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount64"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateConfig@LOG_WRITER@@QEAAJPEBVHTTP_LOG_FILE_CONFIG_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(RTL_SRWLOCK *this, const struct HTTP_LOG_FILE_CONFIG_CONTEXT *)",
+    "rank_score": 627,
+    "size": 241,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_SITE_ENTRY::GetWriter(LOG_WRITER * *)",
+    "ea": "0x180007670",
+    "function_file": "functions/180007670_HTTP_LOG_SITE_ENTRY_GetWriter_LOG_WRITER.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetWriter@HTTP_LOG_SITE_ENTRY@@QEAAJPEAPEAVLOG_WRITER@@@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_SITE_ENTRY *__hidden this, struct LOG_WRITER **)",
+    "rank_score": 617,
+    "size": 205,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "HTTP_LOG_EVENT_HANDLER::Terminate(void)",
+    "ea": "0x18000e400",
+    "function_file": "functions/18000e400_HTTP_LOG_EVENT_HANDLER_Terminate_void.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@HTTP_LOG_EVENT_HANDLER@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(HTTP_LOG_EVENT_HANDLER *__hidden this)",
+    "rank_score": 616,
+    "size": 112,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_SITE_TABLE::GetWriter(LOG_WRITER * *)",
+    "ea": "0x180008174",
+    "function_file": "functions/180008174_HTTP_LOG_SITE_TABLE_GetWriter_LOG_WRITER.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?GetWriter@HTTP_LOG_SITE_TABLE@@QEAAJPEAPEAVLOG_WRITER@@@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_SITE_TABLE *__hidden this, struct LOG_WRITER **)",
+    "rank_score": 616,
+    "size": 179,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::AppendIPStringFromSockAddr(sockaddr *,STRU *)",
+    "ea": "0x180002a64",
+    "function_file": "functions/180002a64_LOG_WRITER_AppendIPStringFromSockAddr_sockaddr_STRU.md",
+    "matched_imports": [
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AppendIPStringFromSockAddr@LOG_WRITER@@AEAAJPEAUsockaddr@@PEAVSTRU@@@Z",
+    "prototype": "int __fastcall(LOG_WRITER *this, struct sockaddr *, struct STRU *)",
+    "rank_score": 616,
+    "size": 170,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "HTTP_LOG_FILE_CONFIG_CONTEXT::HTTP_LOG_FILE_CONFIG_CONTEXT(void)",
+    "ea": "0x180002008",
+    "function_file": "functions/180002008_HTTP_LOG_FILE_CONFIG_CONTEXT_HTTP_LOG_FILE_CONFIG_CONTEXT_void.md",
+    "matched_imports": [
+      "iisutil!??0MULTISZ@@QEAA@XZ",
+      "iisutil!??0STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??0HTTP_LOG_FILE_CONFIG_CONTEXT@@QEAA@XZ",
+    "prototype": "HTTP_LOG_FILE_CONFIG_CONTEXT *__fastcall(HTTP_LOG_FILE_CONFIG_CONTEXT *__hidden this)",
+    "rank_score": 614,
+    "size": 134,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::AppendTime(STRU *,_SYSTEMTIME *,ushort const *)",
+    "ea": "0x180002f48",
+    "function_file": "functions/180002f48_LOG_WRITER_AppendTime_STRU_SYSTEMTIME_ushort_const.md",
+    "matched_imports": [
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AppendTime@LOG_WRITER@@AEAAJPEAVSTRU@@PEAU_SYSTEMTIME@@PEBG@Z",
+    "prototype": "int __fastcall(LOG_WRITER *this, struct STRU *, struct _SYSTEMTIME *, const unsigned __int16 *)",
+    "rank_score": 607,
+    "size": 295,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "STTABLE::~STTABLE(void)",
+    "ea": "0x18000aec8",
+    "function_file": "functions/18000aec8_STTABLE_STTABLE_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1STTABLE@@UEAA@XZ",
+    "prototype": "void __fastcall(STTABLE *__hidden this)",
+    "rank_score": 606,
+    "size": 167,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MULTI_WORK_QUEUE::QueueWorkItem(MULTI_WORK_ITEM *)",
+    "ea": "0x18000e6d8",
+    "function_file": "functions/18000e6d8_MULTI_WORK_QUEUE_QueueWorkItem_MULTI_WORK_ITEM.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-threadpool-l1-2-0!TrySubmitThreadpoolCallback"
+    ],
+    "matched_strings": [],
+    "name": "?QueueWorkItem@MULTI_WORK_QUEUE@@QEAAJPEAVMULTI_WORK_ITEM@@@Z",
+    "prototype": "__int64 __fastcall(MULTI_WORK_QUEUE *this, void (__fastcall ***)(struct MULTI_WORK_ITEM *, __int64))",
+    "rank_score": 604,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MULTI_WORK_QUEUE::Terminate(int)",
+    "ea": "0x18000e760",
+    "function_file": "functions/18000e760_MULTI_WORK_QUEUE_Terminate_int.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpool",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolCleanupGroup",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolCleanupGroupMembers"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@MULTI_WORK_QUEUE@@QEAAXH@Z",
+    "prototype": "void __fastcall(MULTI_WORK_QUEUE *this, BOOL)",
+    "rank_score": 603,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::AppendSanitizedStringOrHyphen(STRA *,char *,ulong,char,int)",
+    "ea": "0x180002ba8",
+    "function_file": "functions/180002ba8_LOG_WRITER_AppendSanitizedStringOrHyphen_STRA_char_ulong_char_int.md",
+    "matched_imports": [
+      "iisutil!?Append@STRA@@QEAAJPEBD@Z",
+      "iisutil!?Append@STRA@@QEAAJPEBDK@Z",
+      "iisutil!?Resize@STRA@@QEAAJK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AppendSanitizedStringOrHyphen@LOG_WRITER@@AEAAJPEAVSTRA@@PEADKDH@Z",
+    "prototype": "int __fastcall(LOG_WRITER *this, struct STRA *, char *, unsigned int)",
+    "rank_score": 602,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LOG_SVC_ADMIN::InitiateStopService(void)",
+    "ea": "0x18000c3a4",
+    "function_file": "functions/18000c3a4_LOG_SVC_ADMIN_InitiateStopService_void.md",
+    "matched_imports": [
+      "iisutil!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBGK@Z",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "Couldn't transition to service stop pending\n",
+      "LOG_SVC_ADMIN::InitiateStopService",
+      "Couldn't queue StopLogServiceWorkItem\n"
+    ],
+    "name": "?InitiateStopService@LOG_SVC_ADMIN@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *__hidden this)",
+    "rank_score": 595,
+    "size": 194,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_CONFIG_CHANGE_HANDLER::OnSectionChanges(ushort *,ushort *)",
+    "ea": "0x18000c860",
+    "function_file": "functions/18000c860_LOG_SVC_CONFIG_CHANGE_HANDLER_OnSectionChanges_ushort_ushort.md",
+    "matched_imports": [
+      "iisutil!IsStringEqualOrdinalIgnoreCase",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "Couldn't queue HttpLogSiteTableConfigChangeWorkItem\n",
+      "LOG_SVC_CONFIG_CHANGE_HANDLER::OnSectionChanges",
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp"
+    ],
+    "name": "?OnSectionChanges@LOG_SVC_CONFIG_CHANGE_HANDLER@@UEAAJPEAG0@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_CONFIG_CHANGE_HANDLER *__hidden this, unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 563,
+    "size": 131,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "LOG_SVC_ADMIN::CancelPendingServiceStatusTimer(void)",
+    "ea": "0x18000b290",
+    "function_file": "functions/18000b290_LOG_SVC_ADMIN_CancelPendingServiceStatusTimer_void.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrintError",
+      "ntdll!RtlDeleteTimer"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp",
+      "LOG_SVC_ADMIN::CancelPendingServiceStatusTimer"
+    ],
+    "name": "?CancelPendingServiceStatusTimer@LOG_SVC_ADMIN@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *__hidden this)",
+    "rank_score": 514,
+    "size": 139,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "HTTP_LOG_PENDING_CONTEXT::~HTTP_LOG_PENDING_CONTEXT(void)",
+    "ea": "0x180008cf4",
+    "function_file": "functions/180008cf4_HTTP_LOG_PENDING_CONTEXT_HTTP_LOG_PENDING_CONTEXT_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1HTTP_LOG_PENDING_CONTEXT@@QEAA@XZ",
+    "prototype": "void __fastcall(HTTP_LOG_PENDING_CONTEXT *__hidden this)",
+    "rank_score": 507,
+    "size": 176,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_EVENT_HANDLER::HTTPLogEventConsumerThreadProc(void *)",
+    "ea": "0x18000e350",
+    "function_file": "functions/18000e350_HTTP_LOG_EVENT_HANDLER_HTTPLogEventConsumerThreadProc_void.md",
+    "matched_imports": [
+      "api-ms-win-eventing-consumer-l1-1-0!ProcessTrace",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\http_log_event_handler.cxx",
+      "HTTP_LOG_EVENT_HANDLER::HTTPLogEventConsumerThreadProc"
+    ],
+    "name": "?HTTPLogEventConsumerThreadProc@HTTP_LOG_EVENT_HANDLER@@CAKPEAX@Z",
+    "prototype": "__int64 __fastcall(ULONG64 *Parameter)",
+    "rank_score": 501,
+    "size": 108,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::Flush(STRA *,int,void *)",
+    "ea": "0x180004bec",
+    "function_file": "functions/180004bec_LOG_WRITER_Flush_STRA_int_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?Flush@LOG_WRITER@@AEAAJPEAVSTRA@@HPEAX@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *this, struct STRA *, int, void *)",
+    "rank_score": 416,
+    "size": 225,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "HTTP_LOG_FILE_CONFIG::CalculateChange(HTTP_LOG_FILE_CONFIG *)",
+    "ea": "0x180006ca8",
+    "function_file": "functions/180006ca8_HTTP_LOG_FILE_CONFIG_CalculateChange_HTTP_LOG_FILE_CONFIG.md",
+    "matched_imports": [
+      "iisutil!?Equals@MULTISZ@@QEAAHPEAV1@@Z",
+      "iisutil!?EqualsNoCase@STRU@@QEBA_NAEBV1@@Z"
+    ],
+    "matched_strings": [],
+    "name": "?CalculateChange@HTTP_LOG_FILE_CONFIG@@QEAAXPEAV1@@Z",
+    "prototype": "void __fastcall(HTTP_LOG_FILE_CONFIG *__hidden this, struct HTTP_LOG_FILE_CONFIG *)",
+    "rank_score": 415,
+    "size": 329,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_CONFIG_PATH_MAPPER::MapPath(ushort *,ushort *,ushort * *)",
+    "ea": "0x18000c7f0",
+    "function_file": "functions/18000c7f0_LOG_SVC_CONFIG_PATH_MAPPER_MapPath_ushort_ushort_ushort.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString"
+    ],
+    "matched_strings": [],
+    "name": "?MapPath@LOG_SVC_CONFIG_PATH_MAPPER@@UEAAJPEAG0PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_CONFIG_PATH_MAPPER *this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 411,
+    "size": 101,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "HTTP_LOG_SITE_TABLE::Iterate(long (*)(HTTP_LOG_SITE_ENTRY *,HTTP_LOG_SITE_TABLE *),int)",
+    "ea": "0x1800086a4",
+    "function_file": "functions/1800086a4_HTTP_LOG_SITE_TABLE_Iterate_long_HTTP_LOG_SITE_ENTRY_HTTP_LOG_SITE_TABLE_int.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?Iterate@HTTP_LOG_SITE_TABLE@@AEAAJP6AJPEAVHTTP_LOG_SITE_ENTRY@@PEAV1@@ZH@Z",
+    "prototype": "__int64 __fastcall(RTL_SRWLOCK *this, int (*)(struct HTTP_LOG_SITE_ENTRY *, struct HTTP_LOG_SITE_TABLE *), int)",
+    "rank_score": 407,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::NeedToRolloverToNewLogFile(unsigned __int64,ulong)",
+    "ea": "0x180005960",
+    "function_file": "functions/180005960_LOG_WRITER_NeedToRolloverToNewLogFile_unsigned_int64_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetLocalTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime"
+    ],
+    "matched_strings": [],
+    "name": "?NeedToRolloverToNewLogFile@LOG_WRITER@@AEAAH_KK@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *this, __int64, unsigned int)",
+    "rank_score": 407,
+    "size": 468,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "LOG_WRITER::AppendDate(STRU *,_SYSTEMTIME *)",
+    "ea": "0x180002704",
+    "function_file": "functions/180002704_LOG_WRITER_AppendDate_STRU_SYSTEMTIME.md",
+    "matched_imports": [
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AppendDate@LOG_WRITER@@AEAAJPEAVSTRU@@PEAU_SYSTEMTIME@@@Z",
+    "prototype": "int __fastcall(LOG_WRITER *this, struct STRU *, struct _SYSTEMTIME *)",
+    "rank_score": 406,
+    "size": 252,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "LOG_WRITER::AppendStringReplaceSpaces(STRU *,ushort const *,ulong,ushort)",
+    "ea": "0x180002eb8",
+    "function_file": "functions/180002eb8_LOG_WRITER_AppendStringReplaceSpaces_STRU_ushort_const_ulong_ushort.md",
+    "matched_imports": [
+      "iisutil!?Resize@STRU@@QEAAJK@Z",
+      "iisutil!?SetLen@STRU@@QEAA_NK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AppendStringReplaceSpaces@LOG_WRITER@@AEAAJPEAVSTRU@@PEBGKG@Z",
+    "prototype": "__int64 __fastcall(LOG_WRITER *this, struct STRU *, unsigned __int16 *, unsigned int, unsigned __int16)",
+    "rank_score": 405,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "STBUFF::Resize(ulong)",
+    "ea": "0x180009a4c",
+    "function_file": "functions/180009a4c_STBUFF_Resize_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?Resize@STBUFF@@QEAAJK@Z",
+    "prototype": "__int64 __fastcall(const void **this, unsigned int)",
+    "rank_score": 405,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LOG_WRITER::AppendHyphensForRemainingCustomHeaders(STRU *,STRU *,ushort const *,MULTISZ *,int,int)",
+    "ea": "0x1800029c0",
+    "function_file": "functions/1800029c0_LOG_WRITER_AppendHyphensForRemainingCustomHeaders_STRU_STRU_ushort_const_MULTISZ_int_int.md",
+    "matched_imports": [
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AppendHyphensForRemainingCustomHeaders@LOG_WRITER@@AEAAJPEAVSTRU@@0PEBGPEAVMULTISZ@@HH@Z",
+    "prototype": "int __fastcall(__int64 this, struct STRU *, struct STRU *, const unsigned __int16 *, struct MULTISZ *, int, int)",
+    "rank_score": 404,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "STTABLE_BUCKET::~STTABLE_BUCKET(void)",
+    "ea": "0x18000af78",
+    "function_file": "functions/18000af78_STTABLE_BUCKET_STTABLE_BUCKET_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1STTABLE_BUCKET@@UEAA@XZ",
+    "prototype": "void __fastcall(struct _RTL_CRITICAL_SECTION *this)",
+    "rank_score": 404,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_SITE_TABLE::FlushWriter(HTTP_LOG_SITE_ENTRY *,HTTP_LOG_SITE_TABLE *)",
+    "ea": "0x180008120",
+    "function_file": "functions/180008120_HTTP_LOG_SITE_TABLE_FlushWriter_HTTP_LOG_SITE_ENTRY_HTTP_LOG_SITE_TABLE.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?FlushWriter@HTTP_LOG_SITE_TABLE@@CAJPEAVHTTP_LOG_SITE_ENTRY@@PEAV1@@Z",
+    "prototype": "__int64 __fastcall(struct _RTL_CRITICAL_SECTION *, struct HTTP_LOG_SITE_TABLE *)",
+    "rank_score": 402,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_SITE_TABLE::ReleaseWriter(HTTP_LOG_SITE_ENTRY *,HTTP_LOG_SITE_TABLE *)",
+    "ea": "0x1800087f0",
+    "function_file": "functions/1800087f0_HTTP_LOG_SITE_TABLE_ReleaseWriter_HTTP_LOG_SITE_ENTRY_HTTP_LOG_SITE_TABLE.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?ReleaseWriter@HTTP_LOG_SITE_TABLE@@CAJPEAVHTTP_LOG_SITE_ENTRY@@PEAV1@@Z",
+    "prototype": "__int64 __fastcall(struct _RTL_CRITICAL_SECTION *, struct HTTP_LOG_SITE_TABLE *)",
+    "rank_score": 402,
+    "size": 95,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_SITE_TABLE::OnLogFileModeChange(HTTP_LOG_FILE_MODE,HTTP_LOG_FILE_MODE)",
+    "ea": "0x180008730",
+    "function_file": "functions/180008730_HTTP_LOG_SITE_TABLE_OnLogFileModeChange_HTTP_LOG_FILE_MODE_HTTP_LOG_FILE_MODE.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsitetable.cpp",
+      "Couldn't queue HttpLogSiteTableFromSiteToCentralLogModeWorkItem\n"
+    ],
+    "name": "?OnLogFileModeChange@HTTP_LOG_SITE_TABLE@@AEAAJW4HTTP_LOG_FILE_MODE@@0@Z",
+    "prototype": "__int64 __fastcall(struct MULTI_WORK_DISPATCH *, int, int)",
+    "rank_score": 314,
+    "size": 184,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_ADMIN::ExecuteWorkItem(MULTI_WORK_ITEM *)",
+    "ea": "0x18000b560",
+    "function_file": "functions/18000b560_LOG_SVC_ADMIN_ExecuteWorkItem_MULTI_WORK_ITEM.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsvcadmin.cpp"
+    ],
+    "name": "?ExecuteWorkItem@LOG_SVC_ADMIN@@UEAAJPEAVMULTI_WORK_ITEM@@@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_ADMIN *__hidden this, struct MULTI_WORK_ITEM *)",
+    "rank_score": 273,
+    "size": 115,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "MULTI_WORK_QUEUE::GetAndQueueWorkItem(MULTI_WORK_DISPATCH *,unsigned __int64)",
+    "ea": "0x18000e4c4",
+    "function_file": "functions/18000e4c4_MULTI_WORK_QUEUE_GetAndQueueWorkItem_MULTI_WORK_DISPATCH_unsigned_int64.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\common\\multiworkqueue\\multi_work_queue.cxx"
+    ],
+    "name": "?GetAndQueueWorkItem@MULTI_WORK_QUEUE@@QEAAJPEAVMULTI_WORK_DISPATCH@@_K@Z",
+    "prototype": "__int64 __fastcall(MULTI_WORK_QUEUE *this, struct MULTI_WORK_DISPATCH *, __int64)",
+    "rank_score": 270,
+    "size": 205,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_CONTEXT::ExecuteWorkItem(MULTI_WORK_ITEM *)",
+    "ea": "0x18000a290",
+    "function_file": "functions/18000a290_HTTP_LOG_CONTEXT_ExecuteWorkItem_MULTI_WORK_ITEM.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logcontext.cpp"
+    ],
+    "name": "?ExecuteWorkItem@HTTP_LOG_CONTEXT@@UEAAJPEAVMULTI_WORK_ITEM@@@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_CONTEXT *__hidden this, struct MULTI_WORK_ITEM *)",
+    "rank_score": 262,
+    "size": 97,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_SITE_ENTRY::ExecuteWorkItem(MULTI_WORK_ITEM *)",
+    "ea": "0x180007610",
+    "function_file": "functions/180007610_HTTP_LOG_SITE_ENTRY_ExecuteWorkItem_MULTI_WORK_ITEM.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\logsvc\\dll\\logsite.cpp"
+    ],
+    "name": "?ExecuteWorkItem@HTTP_LOG_SITE_ENTRY@@UEAAJPEAVMULTI_WORK_ITEM@@@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_SITE_ENTRY *__hidden this, struct MULTI_WORK_ITEM *)",
+    "rank_score": 261,
+    "size": 90,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MultiWorkQueueWorkCallback(_TP_CALLBACK_INSTANCE *,void *)",
+    "ea": "0x18000e660",
+    "function_file": "functions/18000e660_MultiWorkQueueWorkCallback_TP_CALLBACK_INSTANCE_void.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\ap\\common\\multiworkqueue\\multi_work_item.cxx"
+    ],
+    "name": "?MultiWorkQueueWorkCallback@@YAXPEAU_TP_CALLBACK_INSTANCE@@PEAX@Z",
+    "prototype": "void __fastcall(PTP_CALLBACK_INSTANCE Instance, _QWORD **Context)",
+    "rank_score": 252,
+    "size": 111,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_CONTEXT::HandleQueryCompletion(void *,ulong)",
+    "ea": "0x18000a2f8",
+    "function_file": "functions/18000a2f8_HTTP_LOG_CONTEXT_HandleQueryCompletion_void_ulong.md",
+    "matched_imports": [
+      "iisutil!??0MULTISZ@@QEAA@PEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?HandleQueryCompletion@HTTP_LOG_CONTEXT@@QEAAJPEAXK@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_CONTEXT *this, const unsigned __int16 *, int)",
+    "rank_score": 214,
+    "size": 110,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_CONTEXT::`scalar deleting destructor'(uint)",
+    "ea": "0x18000d820",
+    "function_file": "functions/18000d820_HTTP_LOG_CONTEXT_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "iisutil!?Free@ALLOC_CACHE_HANDLER@@QEAAHPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_GHTTP_LOG_CONTEXT@@EEAAPEAXI@Z",
+    "prototype": "HTTP_LOG_CONTEXT *__fastcall(HTTP_LOG_CONTEXT *this, char)",
+    "rank_score": 212,
+    "size": 56,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MULTI_WORK_ITEM::`scalar deleting destructor'(uint)",
+    "ea": "0x18000e810",
+    "function_file": "functions/18000e810_MULTI_WORK_ITEM_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "iisutil!?Free@ALLOC_CACHE_HANDLER@@QEAAHPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_GMULTI_WORK_ITEM@@UEAAPEAXI@Z",
+    "prototype": "MULTI_WORK_ITEM *__fastcall(MULTI_WORK_ITEM *this, char)",
+    "rank_score": 212,
+    "size": 56,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ServiceMain(ulong,ushort * *)",
+    "ea": "0x180001980",
+    "function_file": "functions/180001980_ServiceMain_ulong_ushort.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?ServiceMain@@YAXKPEAPEAG@Z",
+    "prototype": "void __fastcall(int, const wchar_t **)",
+    "rank_score": 212,
+    "size": 42,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "HTTP_LOG_SITE_TABLE::InsertNoLock(ushort const *,IAppHostElement *,int,int)",
+    "ea": "0x18000855c",
+    "function_file": "functions/18000855c_HTTP_LOG_SITE_TABLE_InsertNoLock_ushort_const_IAppHostElement_int_int.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionAndSpinCount"
+    ],
+    "matched_strings": [],
+    "name": "?InsertNoLock@HTTP_LOG_SITE_TABLE@@AEAAJPEBGPEAUIAppHostElement@@HH@Z",
+    "prototype": "__int64 __fastcall(HTTP_LOG_SITE_TABLE *this, const unsigned __int16 *, struct IAppHostElement *, int)",
+    "rank_score": 208,
+    "size": 319,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "STATIC_WSTRING_HASH::FindKey(ushort const *,int)",
+    "ea": "0x180007fc8",
+    "function_file": "functions/180007fc8_STATIC_WSTRING_HASH_FindKey_ushort_const_int.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?FindKey@STATIC_WSTRING_HASH@@QEAAPEAUSTATIC_WSTRING_HASH_RECORD@@PEBGH@Z",
+    "prototype": "struct STATIC_WSTRING_HASH_RECORD *__fastcall(STATIC_WSTRING_HASH *this, wchar_t *, int)",
+    "rank_score": 204,
+    "size": 250,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_CONTEXT::Dereference(void)",
+    "ea": "0x18000df60",
+    "function_file": "functions/18000df60_HTTP_LOG_CONTEXT_Dereference_void.md",
+    "matched_imports": [
+      "iisutil!WriteRefTraceLog"
+    ],
+    "matched_strings": [],
+    "name": "?Dereference@HTTP_LOG_CONTEXT@@UEAAXXZ",
+    "prototype": "void __fastcall(HTTP_LOG_CONTEXT *__hidden this)",
+    "rank_score": 202,
+    "size": 84,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "McGenEventWrite_EventWriteTransfer",
+    "ea": "0x180006744",
+    "function_file": "functions/180006744_McGenEventWrite_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, __int64, __int64, __int64, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 202,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_CONTEXT::Reference(void)",
+    "ea": "0x18000e3d0",
+    "function_file": "functions/18000e3d0_HTTP_LOG_CONTEXT_Reference_void.md",
+    "matched_imports": [
+      "iisutil!WriteRefTraceLog"
+    ],
+    "matched_strings": [],
+    "name": "?Reference@HTTP_LOG_CONTEXT@@UEAAXXZ",
+    "prototype": "void __fastcall(HTTP_LOG_CONTEXT *__hidden this)",
+    "rank_score": 201,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_ADMIN::PipeFlushTimerCallback(_TP_CALLBACK_INSTANCE *,void *,_TP_TIMER *)",
+    "ea": "0x18000c8f0",
+    "function_file": "functions/18000c8f0_LOG_SVC_ADMIN_PipeFlushTimerCallback_TP_CALLBACK_INSTANCE_void_TP_TIMER.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer"
+    ],
+    "matched_strings": [],
+    "name": "?PipeFlushTimerCallback@LOG_SVC_ADMIN@@CAXPEAU_TP_CALLBACK_INSTANCE@@PEAXPEAU_TP_TIMER@@@Z",
+    "prototype": "void __fastcall(PTP_CALLBACK_INSTANCE Instance, _QWORD *Context, __int64 Timer)",
+    "rank_score": 201,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 22,
+    "demangled": "memset_0",
+    "ea": "0x18000e97a",
+    "function_file": "functions/18000e97a_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 122,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_HTTP_LOG_FILE_CONFIG::PopulateCustomFieldsCollection_::_1_::dtor$0",
+    "ea": "0x18000ee17",
+    "function_file": "functions/18000ee17_HTTP_LOG_FILE_CONFIG_PopulateCustomFieldsCollection_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_HTTP_LOG_FILE_CONFIG::PopulateCustomFieldsCollection_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 110,
+    "size": 14,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_HTTP_LOG_FILE_CONFIG_CONTEXT::HTTP_LOG_FILE_CONFIG_CONTEXT_::_1_::dtor$0",
+    "ea": "0x18000ed18",
+    "function_file": "functions/18000ed18_HTTP_LOG_FILE_CONFIG_CONTEXT_HTTP_LOG_FILE_CONFIG_CONTEXT_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_HTTP_LOG_FILE_CONFIG_CONTEXT::HTTP_LOG_FILE_CONFIG_CONTEXT_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 110,
+    "size": 18,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_HTTP_LOG_FILE_CONFIG_CONTEXT::HTTP_LOG_FILE_CONFIG_CONTEXT_::_1_::dtor$1",
+    "ea": "0x18000ed30",
+    "function_file": "functions/18000ed30_HTTP_LOG_FILE_CONFIG_CONTEXT_HTTP_LOG_FILE_CONFIG_CONTEXT_1_dtor_1.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_HTTP_LOG_FILE_CONFIG_CONTEXT::HTTP_LOG_FILE_CONFIG_CONTEXT_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 110,
+    "size": 18,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::UpdateHeaders_::_1_::dtor$0",
+    "ea": "0x18000f01c",
+    "function_file": "functions/18000f01c_LOG_WRITER_UpdateHeaders_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::UpdateHeaders_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 110,
+    "size": 14,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "memcpy_0",
+    "ea": "0x18000e96e",
+    "function_file": "functions/18000e96e_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 103,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "HTTP_LOG_SITE_ENTRY::~HTTP_LOG_SITE_ENTRY(void)",
+    "ea": "0x180006c38",
+    "function_file": "functions/180006c38_HTTP_LOG_SITE_ENTRY_HTTP_LOG_SITE_ENTRY_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1HTTP_LOG_SITE_ENTRY@@UEAA@XZ",
+    "prototype": "void __fastcall(struct _RTL_CRITICAL_SECTION *this)",
+    "rank_score": 102,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_SITE_TABLE::FlushAllWritersTimerCallback(_TP_CALLBACK_INSTANCE *,void *,_TP_TIMER *)",
+    "ea": "0x1800080d0",
+    "function_file": "functions/1800080d0_HTTP_LOG_SITE_TABLE_FlushAllWritersTimerCallback_TP_CALLBACK_INSTANCE_void_TP_TIMER.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer"
+    ],
+    "matched_strings": [],
+    "name": "?FlushAllWritersTimerCallback@HTTP_LOG_SITE_TABLE@@CAXPEAU_TP_CALLBACK_INSTANCE@@PEAXPEAU_TP_TIMER@@@Z",
+    "prototype": "void __fastcall(PTP_CALLBACK_INSTANCE Instance, struct _FILETIME *Context, PTP_TIMER Timer)",
+    "rank_score": 101,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_HTTP_LOG_CONTEXT::CreateCustomLogString_::_1_::dtor$0",
+    "ea": "0x18000f0b6",
+    "function_file": "functions/18000f0b6_HTTP_LOG_CONTEXT_CreateCustomLogString_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_HTTP_LOG_CONTEXT::CreateCustomLogString_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::AddCustomFieldsToLogString_::_1_::dtor$0",
+    "ea": "0x18000edc9",
+    "function_file": "functions/18000edc9_LOG_WRITER_AddCustomFieldsToLogString_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::AddCustomFieldsToLogString_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::AppendSanitizedStringOrHyphen_::_1_::dtor$0",
+    "ea": "0x18000eddd",
+    "function_file": "functions/18000eddd_LOG_WRITER_AppendSanitizedStringOrHyphen_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::AppendSanitizedStringOrHyphen_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogDirectory_::_1_::dtor$0",
+    "ea": "0x18000edf1",
+    "function_file": "functions/18000edf1_LOG_WRITER_CreateLogDirectory_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogDirectory_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$10",
+    "ea": "0x18000eef6",
+    "function_file": "functions/18000eef6_LOG_WRITER_CreateLogString_1_dtor_10.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$10",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$11",
+    "ea": "0x18000ef11",
+    "function_file": "functions/18000ef11_LOG_WRITER_CreateLogString_1_dtor_11.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$11",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$12",
+    "ea": "0x18000ef2c",
+    "function_file": "functions/18000ef2c_LOG_WRITER_CreateLogString_1_dtor_12.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$12",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$13",
+    "ea": "0x18000ef47",
+    "function_file": "functions/18000ef47_LOG_WRITER_CreateLogString_1_dtor_13.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$13",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$14",
+    "ea": "0x18000ef62",
+    "function_file": "functions/18000ef62_LOG_WRITER_CreateLogString_1_dtor_14.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$14",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$15",
+    "ea": "0x18000ef7d",
+    "function_file": "functions/18000ef7d_LOG_WRITER_CreateLogString_1_dtor_15.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$15",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$16",
+    "ea": "0x18000ef98",
+    "function_file": "functions/18000ef98_LOG_WRITER_CreateLogString_1_dtor_16.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$16",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$17",
+    "ea": "0x18000efb3",
+    "function_file": "functions/18000efb3_LOG_WRITER_CreateLogString_1_dtor_17.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$17",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$3",
+    "ea": "0x18000ee3f",
+    "function_file": "functions/18000ee3f_LOG_WRITER_CreateLogString_1_dtor_3.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$3",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 18,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$4",
+    "ea": "0x18000ee57",
+    "function_file": "functions/18000ee57_LOG_WRITER_CreateLogString_1_dtor_4.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$4",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 18,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$5",
+    "ea": "0x18000ee6f",
+    "function_file": "functions/18000ee6f_LOG_WRITER_CreateLogString_1_dtor_5.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$5",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$6",
+    "ea": "0x18000ee8a",
+    "function_file": "functions/18000ee8a_LOG_WRITER_CreateLogString_1_dtor_6.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$6",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$7",
+    "ea": "0x18000eea5",
+    "function_file": "functions/18000eea5_LOG_WRITER_CreateLogString_1_dtor_7.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$7",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$8",
+    "ea": "0x18000eec0",
+    "function_file": "functions/18000eec0_LOG_WRITER_CreateLogString_1_dtor_8.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$8",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$9",
+    "ea": "0x18000eedb",
+    "function_file": "functions/18000eedb_LOG_WRITER_CreateLogString_1_dtor_9.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$9",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::ExpandDirPathAndCreateLowestDirectory_::_1_::dtor$0",
+    "ea": "0x18000efce",
+    "function_file": "functions/18000efce_LOG_WRITER_ExpandDirPathAndCreateLowestDirectory_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::ExpandDirPathAndCreateLowestDirectory_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::ExpandDirPathAndCreateLowestDirectory_::_1_::dtor$1",
+    "ea": "0x18000efe2",
+    "function_file": "functions/18000efe2_LOG_WRITER_ExpandDirPathAndCreateLowestDirectory_1_dtor_1.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::ExpandDirPathAndCreateLowestDirectory_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::GetLogFileHandle_::_1_::dtor$0",
+    "ea": "0x18000eff6",
+    "function_file": "functions/18000eff6_LOG_WRITER_GetLogFileHandle_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::GetLogFileHandle_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::GetLogFileHandle_::_1_::dtor$1",
+    "ea": "0x18000ee2b",
+    "function_file": "functions/18000ee2b_LOG_WRITER_GetLogFileHandle_1_dtor_1.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::GetLogFileHandle_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$0",
+    "ea": "0x18000ed48",
+    "function_file": "functions/18000ed48_LOG_WRITER_LOG_WRITER_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 18,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$1",
+    "ea": "0x18000ed60",
+    "function_file": "functions/18000ed60_LOG_WRITER_LOG_WRITER_1_dtor_1.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 18,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$2",
+    "ea": "0x18000ed78",
+    "function_file": "functions/18000ed78_LOG_WRITER_LOG_WRITER_1_dtor_2.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$2",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$3",
+    "ea": "0x18000ed93",
+    "function_file": "functions/18000ed93_LOG_WRITER_LOG_WRITER_1_dtor_3.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$3",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$4",
+    "ea": "0x18000edae",
+    "function_file": "functions/18000edae_LOG_WRITER_LOG_WRITER_1_dtor_4.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::LOG_WRITER_::_1_::dtor$4",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::Write_::_1_::dtor$0",
+    "ea": "0x18000f030",
+    "function_file": "functions/18000f030_LOG_WRITER_Write_1_dtor_0.md",
+    "matched_imports": [
+      "iisutil!??1STRA@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::Write_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::Write_::_1_::dtor$0_0",
+    "ea": "0x18000f044",
+    "function_file": "functions/18000f044_LOG_WRITER_Write_1_dtor_0_0.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::Write_::_1_::dtor$0_0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 100,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 39,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000e9a0",
+    "function_file": "functions/18000e9a0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 56,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180010010",
+    "function_file": "functions/180010010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 31,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001048",
+    "function_file": "functions/180001048_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_CONFIG_CHANGE_HANDLER::Release(void)",
+    "ea": "0x18000cb30",
+    "function_file": "functions/18000cb30_LOG_SVC_CONFIG_CHANGE_HANDLER_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@LOG_SVC_CONFIG_CHANGE_HANDLER@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(LOG_SVC_CONFIG_CHANGE_HANDLER *this)",
+    "rank_score": 32,
+    "size": 47,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::UpdateConfigHelper_::_1_::dtor$1",
+    "ea": "0x18000f00a",
+    "function_file": "functions/18000f00a_LOG_WRITER_UpdateConfigHelper_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::UpdateConfigHelper_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 31,
+    "size": 12,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000e874",
+    "function_file": "functions/18000e874_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800012d0",
+    "function_file": "functions/1800012d0_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_CONFIG_CHANGE_HANDLER::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000ca30",
+    "function_file": "functions/18000ca30_LOG_SVC_CONFIG_CHANGE_HANDLER_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@LOG_SVC_CONFIG_CHANGE_HANDLER@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_CONFIG_CHANGE_HANDLER *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 22,
+    "size": 91,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_CONFIG_PATH_MAPPER::`vector deleting destructor'(uint)",
+    "ea": "0x18000b090",
+    "function_file": "functions/18000b090_LOG_SVC_CONFIG_PATH_MAPPER_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_ELOG_SVC_CONFIG_PATH_MAPPER@@UEAAPEAXI@Z",
+    "prototype": "LOG_SVC_CONFIG_PATH_MAPPER *__fastcall(LOG_SVC_CONFIG_PATH_MAPPER *this, char)",
+    "rank_score": 22,
+    "size": 38,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_HTTP_LOG_CONTEXT::HandleQueryCompletion_::_1_::dtor$0",
+    "ea": "0x18000f07e",
+    "function_file": "functions/18000f07e_HTTP_LOG_CONTEXT_HandleQueryCompletion_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_HTTP_LOG_CONTEXT::HandleQueryCompletion_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_CONFIG_CHANGE_HANDLER::AddRef(void)",
+    "ea": "0x18000b140",
+    "function_file": "functions/18000b140_LOG_SVC_CONFIG_CHANGE_HANDLER_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@LOG_SVC_CONFIG_CHANGE_HANDLER@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(LOG_SVC_CONFIG_CHANGE_HANDLER *this)",
+    "rank_score": 20,
+    "size": 13,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001314",
+    "function_file": "functions/180001314_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, __int64 fdwReason, void *)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 16,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 19,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CREATE_DIRECTORY_HELPER::PathCchAddBackslashEx<260>(ushort (&)[260],ushort * *)",
+    "ea": "0x180001edc",
+    "function_file": "functions/180001edc_CREATE_DIRECTORY_HELPER_PathCchAddBackslashEx_260_ushort_260_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$PathCchAddBackslashEx@$0BAE@@CREATE_DIRECTORY_HELPER@@CAJAEAY0BAE@GPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(_WORD *, _QWORD *)",
+    "rank_score": 14,
+    "size": 294,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18000e9e0",
+    "function_file": "functions/18000e9e0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "HTTP_LOG_SITE_TABLE::UpdateEntries(HTTP_LOG_SITE_ENTRY *,HTTP_LOG_SITE_TABLE *)",
+    "ea": "0x180008c90",
+    "function_file": "functions/180008c90_HTTP_LOG_SITE_TABLE_UpdateEntries_HTTP_LOG_SITE_ENTRY_HTTP_LOG_SITE_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateEntries@HTTP_LOG_SITE_TABLE@@CAJPEAVHTTP_LOG_SITE_ENTRY@@PEAV1@@Z",
+    "prototype": "__int64 __fastcall(struct HTTP_LOG_SITE_ENTRY *, struct HTTP_LOG_SITE_TABLE *)",
+    "rank_score": 13,
+    "size": 92,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "LOG_WRITER::`scalar deleting destructor'(uint)",
+    "ea": "0x1800023a0",
+    "function_file": "functions/1800023a0_LOG_WRITER_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GLOG_WRITER@@UEAAPEAXI@Z",
+    "prototype": "struct _RTL_CRITICAL_SECTION *__fastcall(struct _RTL_CRITICAL_SECTION *this, char)",
+    "rank_score": 13,
+    "size": 47,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0qzzzzzzzszshqxxxhssszshz_EventWriteTransfer",
+    "ea": "0x1800067a4",
+    "function_file": "functions/1800067a4_McTemplateU0qzzzzzzzszshqxxxhssszshz_EventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0qzzzzzzzszshqxxxhssszshz_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, __int64, int, const char *, const char *, const char *, const char *, const char *, const char *, const char *, const char *, const char *, const char *, char, char, char, char, char, char, const char *, const char *, const char *, const char *, const char *, char, const char *)",
+    "rank_score": 13,
+    "size": 1165,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_CONFIG_PATH_MAPPER::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000caa0",
+    "function_file": "functions/18000caa0_LOG_SVC_CONFIG_PATH_MAPPER_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@LOG_SVC_CONFIG_PATH_MAPPER@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(LOG_SVC_CONFIG_PATH_MAPPER *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 12,
+    "size": 123,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "LOG_SVC_CONFIG_PATH_MAPPER::Release(void)",
+    "ea": "0x18000cb70",
+    "function_file": "functions/18000cb70_LOG_SVC_CONFIG_PATH_MAPPER_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@LOG_SVC_CONFIG_PATH_MAPPER@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(LOG_SVC_CONFIG_PATH_MAPPER *this)",
+    "rank_score": 12,
+    "size": 47,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_HTTP_LOG_SITE_TABLE::GetWriter_::_1_::dtor$0",
+    "ea": "0x18000ed06",
+    "function_file": "functions/18000ed06_HTTP_LOG_SITE_TABLE_GetWriter_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_HTTP_LOG_SITE_TABLE::GetWriter_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x18000d610",
+    "function_file": "functions/18000d610_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __fastcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, unsigned __int16 *CallbackContext)",
+    "rank_score": 4,
+    "size": 256,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_LOG_WRITER::CreateLogString_::_1_::dtor$0",
+    "ea": "0x18000ee05",
+    "function_file": "functions/18000ee05_LOG_WRITER_CreateLogString_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_LOG_WRITER::CreateLogString_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  }
+]

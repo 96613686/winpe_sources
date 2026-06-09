@@ -1,0 +1,1388 @@
+[
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WwanSetDeviceObjectDacl",
+    "ea": "0x14000e158",
+    "function_file": "functions/14000e158_WwanSetDeviceObjectDacl.md",
+    "matched_imports": [
+      "NDIS!NdisFreeMemory",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "WwanSetDeviceObjectDacl",
+    "prototype": "__int64(void)",
+    "rank_score": 3664,
+    "size": 1189,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140019078",
+    "function_file": "functions/140019078_DriverEntry.md",
+    "matched_imports": [
+      "NDIS!NdisFDeregisterFilterDriver",
+      "NDIS!NdisFRegisterFilterDriver",
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!IoRegisterPlugPlayNotification",
+      "ntoskrnl!IoUnregisterPlugPlayNotificationEx",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [
+      "NULL != gVWiFihServiceKey"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 3326,
+    "size": 1727,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "FilterSendNetBufferListsLegacy",
+    "ea": "0x140009300",
+    "function_file": "functions/140009300_FilterSendNetBufferListsLegacy.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateCloneNetBufferList",
+      "NDIS!NdisCopySendNetBufferListInfo",
+      "NDIS!NdisFSendNetBufferLists",
+      "NDIS!NdisFreeCloneNetBufferList",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [
+      "PrevNblCopy"
+    ],
+    "name": "FilterSendNetBufferListsLegacy",
+    "prototype": "",
+    "rank_score": 2068,
+    "size": 1076,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "FExRegisterVWifiMpInternal",
+    "ea": "0x14000745c",
+    "function_file": "functions/14000745c_FExRegisterVWifiMpInternal.md",
+    "matched_imports": [
+      "NDIS!NdisFOidRequest",
+      "NDIS!NdisFreeMemory",
+      "NDIS!NdisInitializeEvent",
+      "NDIS!NdisWaitEvent",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "FExRegisterVWifiMpInternal",
+    "prototype": "",
+    "rank_score": 2030,
+    "size": 2204,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "FilterOidRequestCommon",
+    "ea": "0x1400087b0",
+    "function_file": "functions/1400087b0_FilterOidRequestCommon.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateCloneOidRequest",
+      "NDIS!NdisFOidRequest",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "FilterOidRequestCommon",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 2029,
+    "size": 1328,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "FilterDeInit",
+    "ea": "0x14000c7b0",
+    "function_file": "functions/14000c7b0_FilterDeInit.md",
+    "matched_imports": [
+      "NDIS!NdisFreeMemory",
+      "NDIS!NdisFreeNetBufferListPool",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "FilterDeInit",
+    "prototype": "__int64 __fastcall(PVOID VirtualAddress)",
+    "rank_score": 1811,
+    "size": 560,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "FilterInit",
+    "ea": "0x140002c90",
+    "function_file": "functions/140002c90_FilterInit.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateNetBufferListPool",
+      "NDIS!NdisFreeMemory",
+      "NDIS!NdisFreeNetBufferListPool",
+      "NDIS!NdisInitializeEvent",
+      "NDIS!NdisResetEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!RtlGUIDFromString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "FilterInit",
+    "prototype": "__int64 __fastcall(NDIS_HANDLE NdisHandle)",
+    "rank_score": 1623,
+    "size": 1251,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "SendIoctlToBus",
+    "ea": "0x1400053c8",
+    "function_file": "functions/1400053c8_SendIoctlToBus.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "SendIoctlToBus",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING ObjectName, ULONG IoControlCode, PVOID InputBuffer, ULONG InputBufferLength, PVOID, ULONG)",
+    "rank_score": 1621,
+    "size": 608,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "FilterSendNetBufferListsWDI",
+    "ea": "0x140008e70",
+    "function_file": "functions/140008e70_FilterSendNetBufferListsWDI.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateNetBufferListContext",
+      "NDIS!NdisFSendNetBufferLists",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "FilterSendNetBufferListsWDI",
+    "prototype": "",
+    "rank_score": 1617,
+    "size": 1017,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "FilterDeleteVirtualMac",
+    "ea": "0x140003b7c",
+    "function_file": "functions/140003b7c_FilterDeleteVirtualMac.md",
+    "matched_imports": [
+      "NDIS!NdisFOidRequest",
+      "NDIS!NdisInitializeEvent",
+      "NDIS!NdisWaitEvent",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "FilterDeleteVirtualMac",
+    "prototype": "",
+    "rank_score": 1418,
+    "size": 1125,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "FilterRemoveMapping",
+    "ea": "0x14000228c",
+    "function_file": "functions/14000228c_FilterRemoveMapping.md",
+    "matched_imports": [
+      "NDIS!NdisFreeMemory",
+      "NDIS!NdisResetEvent",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlUpcaseUnicodeString"
+    ],
+    "matched_strings": [
+      "FilterRemoveMapping",
+      "FilterRemoveMapping"
+    ],
+    "name": "FilterRemoveMapping",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString)",
+    "rank_score": 1304,
+    "size": 682,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "FilterDirectOidRequestCommon",
+    "ea": "0x1400097e4",
+    "function_file": "functions/1400097e4_FilterDirectOidRequestCommon.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateCloneOidRequest",
+      "NDIS!NdisFDirectOidRequest",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "FilterDirectOidRequestCommon",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 1227,
+    "size": 1025,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "FilterUnload",
+    "ea": "0x14000d690",
+    "function_file": "functions/14000d690_FilterUnload.md",
+    "matched_imports": [
+      "NDIS!NdisFDeregisterFilterDriver",
+      "NDIS!NdisFreeMemory",
+      "ntoskrnl!IoUnregisterPlugPlayNotificationEx",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "IsListEmpty(&FilterModuleList)"
+    ],
+    "name": "FilterUnload",
+    "prototype": "",
+    "rank_score": 1066,
+    "size": 542,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "FilterRegisterDevice",
+    "ea": "0x14000ca14",
+    "function_file": "functions/14000ca14_FilterRegisterDevice.md",
+    "matched_imports": [
+      "NDIS!NdisGetDeviceReservedExtension",
+      "NDIS!NdisRegisterDeviceEx",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "FilterRegisterDevice",
+    "prototype": "__int64()",
+    "rank_score": 1053,
+    "size": 588,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "FilterOidRequestCompleteCommon",
+    "ea": "0x14000aef0",
+    "function_file": "functions/14000aef0_FilterOidRequestCompleteCommon.md",
+    "matched_imports": [
+      "NDIS!NdisFreeCloneOidRequest",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "FilterOidRequestCompleteCommon",
+    "prototype": "",
+    "rank_score": 1034,
+    "size": 1634,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "filterReadLong",
+    "ea": "0x140003634",
+    "function_file": "functions/140003634_filterReadLong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "filterReadLong",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 841,
+    "size": 536,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "filterWriteLong",
+    "ea": "0x14000dd6c",
+    "function_file": "functions/14000dd6c_filterWriteLong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateKey",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "filterWriteLong",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 837,
+    "size": 408,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FilterUpdateMpAttributes",
+    "ea": "0x14000bc28",
+    "function_file": "functions/14000bc28_FilterUpdateMpAttributes.md",
+    "matched_imports": [
+      "NDIS!NdisFreeMemory"
+    ],
+    "matched_strings": [],
+    "name": "FilterUpdateMpAttributes",
+    "prototype": "",
+    "rank_score": 824,
+    "size": 904,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FExMpRegistrationComplete",
+    "ea": "0x14000c2f0",
+    "function_file": "functions/14000c2f0_FExMpRegistrationComplete.md",
+    "matched_imports": [
+      "NDIS!NdisFreeMemory"
+    ],
+    "matched_strings": [],
+    "name": "FExMpRegistrationComplete",
+    "prototype": "",
+    "rank_score": 813,
+    "size": 164,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "FilterSetVirtualAdapter",
+    "ea": "0x140004568",
+    "function_file": "functions/140004568_FilterSetVirtualAdapter.md",
+    "matched_imports": [
+      "NDIS!NdisWaitEvent",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "pFilter->ConfigurableMpCtxCount <= pFilter->MpCtxCount - WFD_DEVICE_ADAPTER_INDEX - 1",
+      "pFilter->ConfigurableMpCtxCount <= pFilter->MpCtxCount - 1"
+    ],
+    "name": "FilterSetVirtualAdapter",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, __int64)",
+    "rank_score": 716,
+    "size": 1759,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "FilterAddMapping",
+    "ea": "0x140009e70",
+    "function_file": "functions/140009e70_FilterAddMapping.md",
+    "matched_imports": [
+      "NDIS!NdisFreeMemory",
+      "NDIS!NdisSetEvent",
+      "ntoskrnl!RtlUpcaseUnicodeString"
+    ],
+    "matched_strings": [
+      "filterEqualUnicodeString(&UCaseSymbolicLinkName, &pBusIntfInfo->SymbolicName)"
+    ],
+    "name": "FilterAddMapping",
+    "prototype": "",
+    "rank_score": 678,
+    "size": 994,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 6,
+    "demangled": "filterDoInternalRequest",
+    "ea": "0x140007d58",
+    "function_file": "functions/140007d58_filterDoInternalRequest.md",
+    "matched_imports": [
+      "NDIS!NdisFOidRequest",
+      "NDIS!NdisInitializeEvent",
+      "NDIS!NdisWaitEvent"
+    ],
+    "matched_strings": [],
+    "name": "filterDoInternalRequest",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 523,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "ReleaseSpinLock",
+    "ea": "0x140009270",
+    "function_file": "functions/140009270_ReleaseSpinLock.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "ReleaseSpinLock",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "AcquireSpinLock",
+    "ea": "0x14000a730",
+    "function_file": "functions/14000a730_AcquireSpinLock.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc"
+    ],
+    "matched_strings": [],
+    "name": "AcquireSpinLock",
+    "prototype": "",
+    "rank_score": 605,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FilterInitPrimaryAdapterMpCtx",
+    "ea": "0x14000cd04",
+    "function_file": "functions/14000cd04_FilterInitPrimaryAdapterMpCtx.md",
+    "matched_imports": [
+      "NDIS!NdisFDirectOidRequestComplete",
+      "NDIS!NdisFIndicateReceiveNetBufferLists",
+      "NDIS!NdisFIndicateStatus",
+      "NDIS!NdisFOidRequestComplete",
+      "NDIS!NdisFSendNetBufferListsComplete"
+    ],
+    "matched_strings": [],
+    "name": "FilterInitPrimaryAdapterMpCtx",
+    "prototype": "",
+    "rank_score": 513,
+    "size": 139,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "FilterDeviceIoControl",
+    "ea": "0x140005bf0",
+    "function_file": "functions/140005bf0_FilterDeviceIoControl.md",
+    "matched_imports": [
+      "NDIS!NdisGetDeviceReservedExtension",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [
+      "FilterDeviceExtension->Signature == 'FTDR'"
+    ],
+    "name": "FilterDeviceIoControl",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 496,
+    "size": 2968,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "FilterDispatch",
+    "ea": "0x14000c5b0",
+    "function_file": "functions/14000c5b0_FilterDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "FilterDispatch",
+    "prototype": "",
+    "rank_score": 231,
+    "size": 506,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "FilterDirectOidRequestCompleteCommon",
+    "ea": "0x140009bec",
+    "function_file": "functions/140009bec_FilterDirectOidRequestCompleteCommon.md",
+    "matched_imports": [
+      "NDIS!NdisFreeCloneOidRequest"
+    ],
+    "matched_strings": [],
+    "name": "FilterDirectOidRequestCompleteCommon",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 635,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FilterSendNetBufferListsCompleteWDI",
+    "ea": "0x14000a880",
+    "function_file": "functions/14000a880_FilterSendNetBufferListsCompleteWDI.md",
+    "matched_imports": [
+      "NDIS!NdisFreeNetBufferListContext"
+    ],
+    "matched_strings": [],
+    "name": "FilterSendNetBufferListsCompleteWDI",
+    "prototype": "__int64 __fastcall(PNET_BUFFER_LIST NetBufferList)",
+    "rank_score": 221,
+    "size": 708,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "FilterSendNetBufferListsCompleteLegacy",
+    "ea": "0x14000ab50",
+    "function_file": "functions/14000ab50_FilterSendNetBufferListsCompleteLegacy.md",
+    "matched_imports": [
+      "NDIS!NdisFreeCloneNetBufferList"
+    ],
+    "matched_strings": [],
+    "name": "FilterSendNetBufferListsCompleteLegacy",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 594,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "AllocMem",
+    "ea": "0x140007d00",
+    "function_file": "functions/140007d00_AllocMem.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateMemoryWithTagPriority"
+    ],
+    "matched_strings": [],
+    "name": "AllocMem",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "filterInternalRequestComplete",
+    "ea": "0x14000b558",
+    "function_file": "functions/14000b558_filterInternalRequestComplete.md",
+    "matched_imports": [
+      "NDIS!NdisSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "filterInternalRequestComplete",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 157,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "filterEqualUnicodeString",
+    "ea": "0x14000cc68",
+    "function_file": "functions/14000cc68_filterEqualUnicodeString.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "filterEqualUnicodeString",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 57,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CopyMpGeneralAttributes",
+    "ea": "0x14000c39c",
+    "function_file": "functions/14000c39c_CopyMpGeneralAttributes.md",
+    "matched_imports": [
+      "NDIS!NdisFreeMemory"
+    ],
+    "matched_strings": [],
+    "name": "CopyMpGeneralAttributes",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 523,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "FilterWaitForVariable",
+    "ea": "0x1400057f8",
+    "function_file": "functions/1400057f8_FilterWaitForVariable.md",
+    "matched_imports": [
+      "NDIS!NdisMSleep"
+    ],
+    "matched_strings": [],
+    "name": "FilterWaitForVariable",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "FilterDeregisterDevice",
+    "ea": "0x14000e0b4",
+    "function_file": "functions/14000e0b4_FilterDeregisterDevice.md",
+    "matched_imports": [
+      "NDIS!NdisDeregisterDeviceEx"
+    ],
+    "matched_strings": [],
+    "name": "FilterDeregisterDevice",
+    "prototype": "__int64(void)",
+    "rank_score": 204,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WppCleanupKm",
+    "ea": "0x140017008",
+    "function_file": "functions/140017008_WppCleanupKm.md",
+    "matched_imports": [
+      "ntoskrnl!IoWMIRegistrationControl"
+    ],
+    "matched_strings": [],
+    "name": "WppCleanupKm",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "McGenEventUnregister_EtwUnregister",
+    "ea": "0x14000d8b4",
+    "function_file": "functions/14000d8b4_McGenEventUnregister_EtwUnregister.md",
+    "matched_imports": [
+      "ntoskrnl!EtwUnregister"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventUnregister_EtwUnregister",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x14000590c",
+    "function_file": "functions/14000590c_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FilterAllocateVWifiMpCtxs",
+    "ea": "0x14000253c",
+    "function_file": "functions/14000253c_FilterAllocateVWifiMpCtxs.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DOT11_VWIFI_COMBINATION_REVISION_3 == Combinations->Header.Revision"
+    ],
+    "name": "FilterAllocateVWifiMpCtxs",
+    "prototype": "",
+    "rank_score": 59,
+    "size": 460,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "Duplicate802_11AttachAttributesCommon",
+    "ea": "0x140001474",
+    "function_file": "functions/140001474_Duplicate802_11AttachAttributesCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Duplicate802_11AttachAttributesCommon",
+    "prototype": "__int64 __fastcall(int, int, int, int, char, __int64, char, size_t Size, __int64)",
+    "rank_score": 41,
+    "size": 2963,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 30,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x14000f150",
+    "function_file": "functions/14000f150_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "FilterReadSerialNumber",
+    "ea": "0x140004d70",
+    "function_file": "functions/140004d70_FilterReadSerialNumber.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterReadSerialNumber",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned __int32 *)",
+    "rank_score": 28,
+    "size": 782,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14000f110",
+    "function_file": "functions/14000f110_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 28,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 42,
+    "demangled": "TraceAssert",
+    "ea": "0x14000cd98",
+    "function_file": "functions/14000cd98_TraceAssert.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TraceAssert",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 27,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 68,
+    "demangled": "WPP_SF_",
+    "ea": "0x14000d8ec",
+    "function_file": "functions/14000d8ec_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 73,
+    "demangled": "WPP_SF_d",
+    "ea": "0x14000d91c",
+    "function_file": "functions/14000d91c_WPP_SF_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "RefreshGlobalSerialNumberFromRegistry",
+    "ea": "0x14000204c",
+    "function_file": "functions/14000204c_RefreshGlobalSerialNumberFromRegistry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RefreshGlobalSerialNumberFromRegistry",
+    "prototype": "__int64(void)",
+    "rank_score": 23,
+    "size": 570,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14000efdc",
+    "function_file": "functions/14000efdc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140019010",
+    "function_file": "functions/140019010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 17,
+    "demangled": "memset",
+    "ea": "0x14000f500",
+    "function_file": "functions/14000f500_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 21,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "UpdateFilterMpAttributesWithPMCapabilities",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_UpdateFilterMpAttributesWithPMCapabilities.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateFilterMpAttributesWithPMCapabilities",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 357,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "FilterDirectOidRequestComplete",
+    "ea": "0x14000d310",
+    "function_file": "functions/14000d310_FilterDirectOidRequestComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterDirectOidRequestComplete",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 135,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "FilterOidRequestComplete",
+    "ea": "0x14000ae50",
+    "function_file": "functions/14000ae50_FilterOidRequestComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterOidRequestComplete",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 139,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FilterFindConfigurableMpCtx",
+    "ea": "0x140003854",
+    "function_file": "functions/140003854_FilterFindConfigurableMpCtx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterFindConfigurableMpCtx",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 14,
+    "size": 149,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "FilterBusDriverReadyCallbackRoutine",
+    "ea": "0x1400033f0",
+    "function_file": "functions/1400033f0_FilterBusDriverReadyCallbackRoutine.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterBusDriverReadyCallbackRoutine",
+    "prototype": "DRIVER_NOTIFICATION_CALLBACK_ROUTINE",
+    "rank_score": 13,
+    "size": 572,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "FilterSendNetBufferListsComplete",
+    "ea": "0x14000a850",
+    "function_file": "functions/14000a850_FilterSendNetBufferListsComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterSendNetBufferListsComplete",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "WPP_SF_Dd",
+    "ea": "0x14000ada8",
+    "function_file": "functions/14000ada8_WPP_SF_Dd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_Dd",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 13,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140019044",
+    "function_file": "functions/140019044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x14000f180",
+    "function_file": "functions/14000f180_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "memmove",
+    "ea": "0x14000f200",
+    "function_file": "functions/14000f200_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 12,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllInitialize",
+    "ea": "0x14000ceb0",
+    "function_file": "functions/14000ceb0_DllInitialize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllInitialize",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "FilterRemoveMpLink",
+    "ea": "0x140003fe8",
+    "function_file": "functions/140003fe8_FilterRemoveMpLink.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterRemoveMpLink",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "IncThreadCountAndCheckInitialized",
+    "ea": "0x1400080bc",
+    "function_file": "functions/1400080bc_IncThreadCountAndCheckInitialized.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "IncThreadCountAndCheckInitialized",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "FilterDeRef",
+    "ea": "0x14000443c",
+    "function_file": "functions/14000443c_FilterDeRef.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterDeRef",
+    "prototype": "__int64 __fastcall(PVOID VirtualAddress)",
+    "rank_score": 9,
+    "size": 72,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "FilterAddRef",
+    "ea": "0x140006960",
+    "function_file": "functions/140006960_FilterAddRef.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterAddRef",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RemoveDevice",
+    "ea": "0x140004c50",
+    "function_file": "functions/140004c50_RemoveDevice.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RemoveDevice",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, int)",
+    "rank_score": 8,
+    "size": 281,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "WPP_SF_ssL",
+    "ea": "0x14000eed4",
+    "function_file": "functions/14000eed4_WPP_SF_ssL.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_ssL",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 175,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FilterAllocateMpCtxs",
+    "ea": "0x140002710",
+    "function_file": "functions/140002710_FilterAllocateMpCtxs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterAllocateMpCtxs",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "FilterRemoveAllVirtualAdapters",
+    "ea": "0x14000448c",
+    "function_file": "functions/14000448c_FilterRemoveAllVirtualAdapters.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterRemoveAllVirtualAdapters",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 213,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "McTemplateK0jzj_EtwWriteTransfer",
+    "ea": "0x140005858",
+    "function_file": "functions/140005858_McTemplateK0jzj_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jzj_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jz_EtwWriteTransfer",
+    "ea": "0x140003354",
+    "function_file": "functions/140003354_McTemplateK0jz_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jz_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_SF_Sdd",
+    "ea": "0x14000da74",
+    "function_file": "functions/14000da74_WPP_SF_Sdd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_Sdd",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "WPP_SF_q",
+    "ea": "0x14000dd28",
+    "function_file": "functions/14000dd28_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x14000c1f0",
+    "function_file": "functions/14000c1f0_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 250,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WPP_SF__guid_",
+    "ea": "0x14000db14",
+    "function_file": "functions/14000db14_WPP_SF_guid.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF__guid_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 3,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WPP_SF_ddD",
+    "ea": "0x14000dc58",
+    "function_file": "functions/14000dc58_WPP_SF_ddD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_ddD",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 95,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WPP_SF_qd",
+    "ea": "0x14000ed88",
+    "function_file": "functions/14000ed88_WPP_SF_qd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qd",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 85,
+    "tags": []
+  }
+]

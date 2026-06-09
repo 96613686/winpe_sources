@@ -1,0 +1,31 @@
+# HSTRING_UserSize64_0
+
+- ea: `0x180001870`
+- end: `0x180001876`
+- name: `HSTRING_UserSize64_0`
+- size: `6`
+- prototype: `unsigned int __stdcall(unsigned int *, unsigned int, HSTRING *)`
+- caller_count: `0`
+- callee_count: `0`
+- tags: ``
+
+## import_xrefs
+
+- `api-ms-win-core-winrt-string-l1-1-0!HSTRING_UserSize64` at `0x180001870`
+
+## pseudocode
+
+```c
+// attributes: thunk
+unsigned int __stdcall HSTRING_UserSize64_0(unsigned int *a1, unsigned int a2, HSTRING *a3)
+{
+  return HSTRING_UserSize64(a1, a2, a3);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180001870  jmp     cs:__imp_HSTRING_UserSize64
+```
