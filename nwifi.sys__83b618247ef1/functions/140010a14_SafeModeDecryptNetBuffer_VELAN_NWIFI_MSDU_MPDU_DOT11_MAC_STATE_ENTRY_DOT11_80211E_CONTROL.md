@@ -1,0 +1,263 @@
+# SafeModeDecryptNetBuffer(_VELAN *,NWIFI_MSDU_MPDU *,DOT11_MAC_STATE_ENTRY *,DOT11_80211E_CONTROL *)
+
+- ea: `0x140010a14`
+- end: `0x140010c0a`
+- name: `?SafeModeDecryptNetBuffer@@YAJPEAU_VELAN@@PEAUNWIFI_MSDU_MPDU@@PEAUDOT11_MAC_STATE_ENTRY@@PEAUDOT11_80211E_CONTROL@@@Z`
+- size: `502`
+- prototype: `__int64 __fastcall(struct _VELAN *, struct NWIFI_MSDU_MPDU *, struct DOT11_MAC_STATE_ENTRY *, struct DOT11_80211E_CONTROL *)`
+- caller_count: `1`
+- callee_count: `5`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callers
+
+- `0x14000edb8`
+
+## callees
+
+- `0x140010a14`
+- `0x1400111a4`
+- `0x14001aaac`
+- `0x14009a3d0`
+- `0x14009a7c0`
+
+## import_xrefs
+
+- `ntoskrnl!ExAllocateFromNPagedLookasideList` at `0x140010aae`
+- `ntoskrnl!ExAllocateFromNPagedLookasideList` at `0x140010aae`
+- `ntoskrnl!ExFreeToNPagedLookasideList` at `0x140010b8c`
+- `ntoskrnl!ExFreeToNPagedLookasideList` at `0x140010b8c`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140010b9d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140010b9d`
+
+## pseudocode
+
+```c
+__int64 __fastcall SafeModeDecryptNetBuffer(
+        struct _VELAN *a1,
+        struct NWIFI_MSDU_MPDU *a2,
+        struct DOT11_MAC_STATE_ENTRY *a3,
+        struct DOT11_80211E_CONTROL *a4)
+{
+  _NET_BUFFER_LIST *pNdisPacket; // r13
+  struct _NET_BUFFER *FirstNetBuffer; // r15
+  int v10; // ebp
+  char *v11; // rax
+  struct _NET_BUFFER_LIST *v12; // rcx
+  struct SAFEMODE_DECRYPT_UNDO_CTX *v13; // rbx
+  struct SAFEMODE_DECRYPT_UNDO_CTX *v14; // rdi
+  unsigned __int16 v15; // r14
+  struct DOT11_RMH_UNDO_LOG *v16; // r8
+  __int64 v17; // rdx
+  _QWORD *v18; // rcx
+  struct DOT11_MAC_STATE_ENTRY *v20; // [rsp+20h] [rbp-188h]
+  struct DOT11_80211E_CONTROL *v21; // [rsp+28h] [rbp-180h]
+  struct DOT11_80211E_CONTROL *v22; // [rsp+30h] [rbp-178h]
+  struct DOT11_MAC_STATE_ENTRY *v23; // [rsp+38h] [rbp-170h]
+  _QWORD v24[34]; // [rsp+40h] [rbp-168h] BYREF
+
+  v22 = a4;
+  v23 = a3;
+  memset(v24, 0, 0x108u);
+  pNdisPacket = a2->MSDUCore.pNdisPacket;
+  FirstNetBuffer = pNdisPacket->FirstNetBuffer;
+  *(_OWORD *)&v24[1] = 0;
+  v10 = DecryptMPDU(a1, a2->MPDUs, (struct DOT11_RMH_UNDO_LOG *)&v24[1], FirstNetBuffer, a3, a4);
+  if ( v10 >= 0 )
+  {
+    LOWORD(v24[0]) = 1;
+    v11 = (char *)ExAllocateFromNPagedLookasideList(&Lookaside);
+    if ( v11 )
+    {
+      *(_QWORD *)v11 = &Lookaside;
+      v15 = 1;
+      v13 = (struct SAFEMODE_DECRYPT_UNDO_CTX *)(v11 + 16);
+      *((_DWORD *)v11 + 2) = 828994423;
+      v14 = (struct SAFEMODE_DECRYPT_UNDO_CTX *)(v11 + 16);
+      *((_WORD *)v11 + 8) = v24[0];
+      v10 = 0;
+      *(_OWORD *)(v11 + 24) = *(_OWORD *)&v24[1];
+      while ( 1 )
+      {
+        FirstNetBuffer = (struct _NET_BUFFER *)FirstNetBuffer->Link.Alignment;
+        if ( v15 >= a2->usNumMPDUs || !FirstNetBuffer )
+        {
+          a2->MSDUCore.pvLookaheadBuf = (char *)a2->MSDUCore.pvLookaheadBuf + 8;
+          a2->MSDUCore.uLookaheadBufSize -= 16;
+          v17 = *(_QWORD *)&pNdisPacket->Context->ContextData[pNdisPacket->Context->Offset];
+          v18 = *(_QWORD **)(v17 + 40);
+          *(_QWORD *)(v17 + 40) = v18 + 3;
+          *v18 = SafeModeDecryptCompletion;
+          v18[1] = v13;
+          v18[2] = 0;
+          return (unsigned int)v10;
+        }
+        v16 = (struct DOT11_RMH_UNDO_LOG *)((char *)v13 + 16 * v15 + 8);
+        v21 = v22;
+        v20 = v23;
+        *v16 = 0;
+        v10 = DecryptMPDU(a1, &a2->MPDUs[v15], v16, FirstNetBuffer, v20, v21);
+        if ( v10 < 0 )
+          break;
+        ++*(_WORD *)v13;
+        ++v15;
+      }
+      if ( !v13 )
+        return (unsigned int)v10;
+    }
+    else
+    {
+      v13 = (struct SAFEMODE_DECRYPT_UNDO_CTX *)v24;
+      v14 = 0;
+      v10 = -1073741670;
+    }
+    SafeModeDecryptCompletionHelper(v12, v13);
+    if ( v13 == v14 )
+    {
+      if ( *((_QWORD *)v13 - 2) )
+        ExFreeToNPagedLookasideList(*((PNPAGED_LOOKASIDE_LIST *)v13 - 2), (char *)v13 - 16);
+      else
+        ExFreePoolWithTag((char *)v13 - 16, *((_DWORD *)v13 - 2));
+    }
+  }
+  return (unsigned int)v10;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140010a14  push    rbx
+0x140010a16  push    rbp
+0x140010a17  push    rsi
+0x140010a18  push    rdi
+0x140010a19  push    r12
+0x140010a1b  push    r13
+0x140010a1d  push    r14
+0x140010a1f  push    r15
+0x140010a21  sub     rsp, 168h
+0x140010a28  mov     rax, cs:__security_cookie
+0x140010a2f  xor     rax, rsp
+0x140010a32  mov     [rsp+1A8h+var_58], rax
+0x140010a3a  mov     rbx, r8
+0x140010a3d  mov     [rsp+1A8h+var_178], r9
+0x140010a42  mov     rsi, rdx
+0x140010a45  mov     [rsp+1A8h+var_170], rbx
+0x140010a4a  mov     r12, rcx
+0x140010a4d  xor     edx, edx; Val
+0x140010a4f  mov     r8d, 108h; Size
+0x140010a55  lea     rcx, [rsp+1A8h+var_168]; void *
+0x140010a5a  mov     rdi, r9
+0x140010a5d  call    memset
+0x140010a62  mov     r13, [rsi+20h]
+0x140010a66  lea     rdx, [rsi+30h]; struct NWIFI_MPDU *
+0x140010a6a  xorps   xmm0, xmm0
+0x140010a6d  mov     [rsp+1A8h+var_180], rdi; struct DOT11_80211E_CONTROL *
+0x140010a72  lea     r8, [rsp+1A8h+var_160]; struct DOT11_RMH_UNDO_LOG *
+0x140010a77  mov     [rsp+1A8h+var_188], rbx; struct DOT11_MAC_STATE_ENTRY *
+0x140010a7c  mov     rcx, r12; struct _VELAN *
+0x140010a7f  mov     r15, [r13+8]
+0x140010a83  mov     r9, r15; struct _NET_BUFFER *
+0x140010a86  movups  xmmword ptr [rsp+1A8h+var_160.pNdisBuffer], xmm0
+0x140010a8b  call    ?DecryptMPDU@@YAJPEAU_VELAN@@PEAUNWIFI_MPDU@@PEAUDOT11_RMH_UNDO_LOG@@PEAU_NET_BUFFER@@PEAUDOT11_MAC_STATE_ENTRY@@PEAUDOT11_80211E_CONTROL@@@Z; DecryptMPDU(_VELAN *,NWIFI_MPDU *,DOT11_RMH_UNDO_LOG *,_NET_BUFFER *,DOT11_MAC_STATE_ENTRY *,DOT11_80211E_CONTROL *)
+0x140010a90  mov     ebp, eax
+0x140010a92  test    eax, eax
+0x140010a94  js      loc_140010BE3
+0x140010a9a  lea     rbx, Lookaside
+0x140010aa1  mov     edi, 1
+0x140010aa6  mov     rcx, rbx; Lookaside
+0x140010aa9  mov     [rsp+1A8h+var_168], di
+0x140010aae  call    cs:__imp_ExAllocateFromNPagedLookasideList
+0x140010ab5  nop     dword ptr [rax+rax+00h]
+0x140010aba  test    rax, rax
+0x140010abd  jnz     short loc_140010AD0
+0x140010abf  lea     rbx, [rsp+1A8h+var_168]
+0x140010ac4  xor     edi, edi
+0x140010ac6  mov     ebp, 0C000009Ah
+0x140010acb  jmp     loc_140010B6D
+0x140010ad0  mov     [rax], rbx
+0x140010ad3  movzx   r14d, di
+0x140010ad7  lea     rbx, [rax+10h]
+0x140010adb  mov     dword ptr [rax+8], 31697377h
+0x140010ae2  movzx   eax, [rsp+1A8h+var_168]
+0x140010ae7  mov     rdi, rbx
+0x140010aea  mov     [rbx], ax
+0x140010aed  xor     ebp, ebp
+0x140010aef  movups  xmm0, xmmword ptr [rsp+1A8h+var_160.pNdisBuffer]
+0x140010af4  movdqu  xmmword ptr [rbx+8], xmm0
+0x140010af9  mov     r15, [r15]
+0x140010afc  cmp     r14w, [rsi+28h]
+0x140010b01  jnb     loc_140010BAB
+0x140010b07  test    r15, r15
+0x140010b0a  jz      loc_140010BAB
+0x140010b10  movzx   ecx, r14w
+0x140010b14  xorps   xmm0, xmm0
+0x140010b17  mov     r8d, ecx
+0x140010b1a  mov     r9, r15; struct _NET_BUFFER *
+0x140010b1d  add     rcx, 2
+0x140010b21  shl     r8, 4
+0x140010b25  add     r8, 8
+0x140010b29  add     r8, rbx; struct DOT11_RMH_UNDO_LOG *
+0x140010b2c  lea     rax, [rcx+rcx*2]
+0x140010b30  mov     rcx, r12; struct _VELAN *
+0x140010b33  lea     rdx, [rsi+rax*8]; struct NWIFI_MPDU *
+0x140010b37  mov     rax, [rsp+1A8h+var_178]
+0x140010b3c  mov     [rsp+1A8h+var_180], rax; struct DOT11_80211E_CONTROL *
+0x140010b41  mov     rax, [rsp+1A8h+var_170]
+0x140010b46  mov     [rsp+1A8h+var_188], rax; struct DOT11_MAC_STATE_ENTRY *
+0x140010b4b  movups  xmmword ptr [r8], xmm0
+0x140010b4f  call    ?DecryptMPDU@@YAJPEAU_VELAN@@PEAUNWIFI_MPDU@@PEAUDOT11_RMH_UNDO_LOG@@PEAU_NET_BUFFER@@PEAUDOT11_MAC_STATE_ENTRY@@PEAUDOT11_80211E_CONTROL@@@Z; DecryptMPDU(_VELAN *,NWIFI_MPDU *,DOT11_RMH_UNDO_LOG *,_NET_BUFFER *,DOT11_MAC_STATE_ENTRY *,DOT11_80211E_CONTROL *)
+0x140010b54  mov     ebp, eax
+0x140010b56  test    eax, eax
+0x140010b58  js      short loc_140010B68
+0x140010b5a  mov     eax, 1
+0x140010b5f  add     [rbx], ax
+0x140010b62  add     r14w, ax
+0x140010b66  jmp     short loc_140010AF9
+0x140010b68  test    rbx, rbx
+0x140010b6b  jz      short loc_140010BE3
+0x140010b6d  mov     rdx, rbx; struct SAFEMODE_DECRYPT_UNDO_CTX *
+0x140010b70  call    ?SafeModeDecryptCompletionHelper@@YAXPEAU_NET_BUFFER_LIST@@PEAUSAFEMODE_DECRYPT_UNDO_CTX@@@Z; SafeModeDecryptCompletionHelper(_NET_BUFFER_LIST *,SAFEMODE_DECRYPT_UNDO_CTX *)
+0x140010b75  cmp     rbx, rdi
+0x140010b78  jnz     short loc_140010BE3
+0x140010b7a  lea     rcx, [rbx-10h]; P
+0x140010b7e  mov     rax, [rcx]
+0x140010b81  test    rax, rax
+0x140010b84  jz      short loc_140010B9A
+0x140010b86  mov     rdx, rcx; Entry
+0x140010b89  mov     rcx, rax; Lookaside
+0x140010b8c  call    cs:__imp_ExFreeToNPagedLookasideList
+0x140010b93  nop     dword ptr [rax+rax+00h]
+0x140010b98  jmp     short loc_140010BE3
+0x140010b9a  mov     edx, [rcx+8]; Tag
+0x140010b9d  call    cs:__imp_ExFreePoolWithTag
+0x140010ba4  nop     dword ptr [rax+rax+00h]
+0x140010ba9  jmp     short loc_140010BE3
+0x140010bab  add     qword ptr [rsi+18h], 8
+0x140010bb0  add     dword ptr [rsi+10h], 0FFFFFFF0h
+0x140010bb4  mov     rcx, [r13+10h]
+0x140010bb8  movzx   eax, word ptr [rcx+0Ah]
+0x140010bbc  mov     rdx, [rax+rcx+10h]
+0x140010bc1  mov     rcx, [rdx+28h]
+0x140010bc5  lea     rax, [rcx+18h]
+0x140010bc9  mov     [rdx+28h], rax
+0x140010bcd  lea     rax, ?SafeModeDecryptCompletion@@YAXPEAU_NET_BUFFER_LIST@@PEAX1@Z; SafeModeDecryptCompletion(_NET_BUFFER_LIST *,void *,void *)
+0x140010bd4  mov     [rcx], rax
+0x140010bd7  mov     [rcx+8], rbx
+0x140010bdb  mov     qword ptr [rcx+10h], 0
+0x140010be3  mov     eax, ebp
+0x140010be5  mov     rcx, [rsp+1A8h+var_58]
+0x140010bed  xor     rcx, rsp; StackCookie
+0x140010bf0  call    __security_check_cookie
+0x140010bf5  add     rsp, 168h
+0x140010bfc  pop     r15
+0x140010bfe  pop     r14
+0x140010c00  pop     r13
+0x140010c02  pop     r12
+0x140010c04  pop     rdi
+0x140010c05  pop     rsi
+0x140010c06  pop     rbp
+0x140010c07  pop     rbx
+0x140010c08  retn
+```
