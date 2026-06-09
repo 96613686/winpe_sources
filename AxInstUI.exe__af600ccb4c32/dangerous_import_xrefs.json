@@ -1,0 +1,170 @@
+[
+  {
+    "import": "KERNEL32!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140001b8e",
+        "from_func": "0x140001af0",
+        "from_func_name": "?VerifyTrust@@YAJPEAUHWND__@@PEBG1KKPEAH@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140001b8e",
+        "from_func": "0x140001af0",
+        "from_func_name": "?VerifyTrust@@YAJPEAUHWND__@@PEBG1KKPEAH@Z",
+        "import": "KERNEL32!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCommandLineW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140001925",
+        "from_func": "0x1400018f8",
+        "from_func_name": "wWinMain",
+        "import": "KERNEL32!GetCommandLineW"
+      },
+      {
+        "from_ea": "0x140001925",
+        "from_func": "0x1400018f8",
+        "from_func_name": "wWinMain",
+        "import": "KERNEL32!GetCommandLineW"
+      }
+    ]
+  },
+  {
+    "import": "SHELL32!CommandLineToArgvW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x14000193c",
+        "from_func": "0x1400018f8",
+        "from_func_name": "wWinMain",
+        "import": "SHELL32!CommandLineToArgvW"
+      },
+      {
+        "from_ea": "0x14000193c",
+        "from_func": "0x1400018f8",
+        "from_func_name": "wWinMain",
+        "import": "SHELL32!CommandLineToArgvW"
+      },
+      {
+        "from_ea": "0x1400029f8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "SHELL32!CommandLineToArgvW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x140001973",
+        "from_func": "0x1400018f8",
+        "from_func_name": "wWinMain",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      },
+      {
+        "from_ea": "0x140001973",
+        "from_func": "0x1400018f8",
+        "from_func_name": "wWinMain",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      },
+      {
+        "from_ea": "0x140002944",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoUninitialize",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400019df",
+        "from_func": "0x1400018f8",
+        "from_func_name": "wWinMain",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x1400019df",
+        "from_func": "0x1400018f8",
+        "from_func_name": "wWinMain",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000162b",
+        "from_func": "0x1400015e4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14000162b",
+        "from_func": "0x1400015e4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400016d3",
+        "from_func": "0x1400016d3",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!_commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400010b6",
+        "from_func": "0x140001010",
+        "from_func_name": "pre_c_init",
+        "import": "msvcrt!_commode"
+      }
+    ]
+  }
+]

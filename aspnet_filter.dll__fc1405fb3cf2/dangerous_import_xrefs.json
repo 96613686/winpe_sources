@@ -1,0 +1,122 @@
+[
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000164e",
+        "from_func": "0x1800015f0",
+        "from_func_name": "?ReadFilterFlags@@YAXPEAU_HTTP_FILTER_VERSION@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180001fde",
+        "from_func": "0x180001fa4",
+        "from_func_name": "?GetEnableExtensionlessUrlsRegKey@EURL@@CAHXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000164e",
+        "from_func": "0x1800015f0",
+        "from_func_name": "?ReadFilterFlags@@YAXPEAU_HTTP_FILTER_VERSION@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180001fde",
+        "from_func": "0x180001fa4",
+        "from_func_name": "?GetEnableExtensionlessUrlsRegKey@EURL@@CAHXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800039c2",
+        "from_func": "0x18000397c",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800039c2",
+        "from_func": "0x18000397c",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000304f",
+        "from_func": "0x180002fac",
+        "from_func_name": "?InitDllLight@@YAJXZ",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x18000304f",
+        "from_func": "0x180002fac",
+        "from_func_name": "?InitDllLight@@YAJXZ",
+        "import": "KERNEL32!LoadLibraryW"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140_CLR0400!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180004314",
+        "from_func": "0x180004314",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "VCRUNTIME140_CLR0400!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "ucrtbase_clr0400!_configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180004338",
+        "from_func": "0x180004338",
+        "from_func_name": "_configure_narrow_argv_0",
+        "import": "ucrtbase_clr0400!_configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "ucrtbase_clr0400!_seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180004332",
+        "from_func": "0x180004332",
+        "from_func_name": "_seh_filter_dll_0",
+        "import": "ucrtbase_clr0400!_seh_filter_dll"
+      }
+    ]
+  }
+]

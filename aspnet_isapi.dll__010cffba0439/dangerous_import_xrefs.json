@@ -1,0 +1,193 @@
+[
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800015a6",
+        "from_func": "0x180001560",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800015a6",
+        "from_func": "0x180001560",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000103a",
+        "from_func": "0x180001000",
+        "from_func_name": "?DisableUnloading@@YAXXZ",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x18000103a",
+        "from_func": "0x180001000",
+        "from_func_name": "?DisableUnloading@@YAXXZ",
+        "import": "KERNEL32!LoadLibraryW"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140_CLR0400!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ea0",
+        "from_func": "0x180001ea0",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "VCRUNTIME140_CLR0400!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x1800029fc",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "VCRUNTIME140_CLR0400!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "ucrtbase_clr0400!_configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ec4",
+        "from_func": "0x180001ec4",
+        "from_func_name": "_configure_narrow_argv_0",
+        "import": "ucrtbase_clr0400!_configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "ucrtbase_clr0400!_seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ebe",
+        "from_func": "0x180001ebe",
+        "from_func_name": "_seh_filter_dll_0",
+        "import": "ucrtbase_clr0400!_seh_filter_dll"
+      }
+    ]
+  },
+  {
+    "import": "webengine4!AspNetGetExtensionVersion",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001115",
+        "from_func": "0x180001115",
+        "from_func_name": "AspNetGetExtensionVersion_0",
+        "import": "webengine4!AspNetGetExtensionVersion"
+      }
+    ]
+  },
+  {
+    "import": "webengine4!AspNetHttpExtensionProc",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001121",
+        "from_func": "0x180001121",
+        "from_func_name": "AspNetHttpExtensionProc_0",
+        "import": "webengine4!AspNetHttpExtensionProc"
+      }
+    ]
+  },
+  {
+    "import": "webengine4!AspNetTerminateExtension",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000111b",
+        "from_func": "0x18000111b",
+        "from_func_name": "AspNetTerminateExtension_0",
+        "import": "webengine4!AspNetTerminateExtension"
+      },
+      {
+        "from_ea": "0x1800029d4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "webengine4!AspNetTerminateExtension"
+      }
+    ]
+  },
+  {
+    "import": "webengine4!InstallAspNetMMCComComponents",
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001145",
+        "from_func": "0x180001145",
+        "from_func_name": "InstallAspNetMMCComComponents_0",
+        "import": "webengine4!InstallAspNetMMCComComponents"
+      }
+    ]
+  },
+  {
+    "import": "webengine4!InstallAspNetMOF",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000113f",
+        "from_func": "0x18000113f",
+        "from_func_name": "InstallAspNetMOF_0",
+        "import": "webengine4!InstallAspNetMOF"
+      }
+    ]
+  },
+  {
+    "import": "webengine4!InstallServices",
+    "tags": [
+      "service_task",
+      "installer_update"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001139",
+        "from_func": "0x180001139",
+        "from_func_name": "InstallServices_0",
+        "import": "webengine4!InstallServices"
+      }
+    ]
+  }
+]

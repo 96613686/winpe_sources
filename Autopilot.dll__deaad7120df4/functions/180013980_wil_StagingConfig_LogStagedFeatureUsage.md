@@ -1,0 +1,103 @@
+# wil_StagingConfig_LogStagedFeatureUsage
+
+- ea: `0x180013980`
+- end: `0x180013a05`
+- name: `wil_StagingConfig_LogStagedFeatureUsage`
+- size: `133`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `2`
+- tags: `registry_config, loader_planting`
+
+## callees
+
+- `0x180013980`
+- `0x18002f010`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x1800139af`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x1800139af`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x1800139d1`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x1800139d1`
+
+## string_xrefs
+
+- `0x1800139a8`: `kernelbase.dll`
+
+## pseudocode
+
+```c
+HMODULE __fastcall wil_StagingConfig_LogStagedFeatureUsage(unsigned int a1, unsigned int a2, __int64 a3)
+{
+  __int64 (__fastcall *v3)(_QWORD, _QWORD, _QWORD); // rbx
+  char v4; // di
+  HMODULE result; // rax
+
+  v3 = (__int64 (__fastcall *)(_QWORD, _QWORD, _QWORD))g_wil_details_pfnLogStagedFeatureUsage;
+  v4 = a3;
+  if ( g_wil_details_pfnLogStagedFeatureUsage )
+    goto LABEL_6;
+  result = `wil_details_GetKernelBaseProcAddress'::`2'::wil_details_kernelbaseModuleHandle;
+  if ( `wil_details_GetKernelBaseProcAddress'::`2'::wil_details_kernelbaseModuleHandle
+    || (result = GetModuleHandleW(L"kernelbase.dll"),
+        (`wil_details_GetKernelBaseProcAddress'::`2'::wil_details_kernelbaseModuleHandle = result) != 0) )
+  {
+    result = (HMODULE)GetProcAddress(result, "LogStagedFeatureUsage");
+    v3 = (__int64 (__fastcall *)(_QWORD, _QWORD, _QWORD))result;
+  }
+  g_wil_details_pfnLogStagedFeatureUsage = (__int64)v3;
+  if ( v3 )
+  {
+LABEL_6:
+    LOBYTE(a3) = v4;
+    return (HMODULE)v3(a1, a2, a3);
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180013980  push    rbx
+0x180013982  push    rbp
+0x180013983  push    rsi
+0x180013984  push    rdi
+0x180013985  sub     rsp, 28h
+0x180013989  mov     rbx, cs:g_wil_details_pfnLogStagedFeatureUsage
+0x180013990  mov     dil, r8b
+0x180013993  mov     esi, edx
+0x180013995  mov     ebp, ecx
+0x180013997  test    rbx, rbx
+0x18001399a  jnz     short loc_1800139EC
+0x18001399c  mov     rax, cs:?wil_details_kernelbaseModuleHandle@?1??wil_details_GetKernelBaseProcAddress@@YAP6A_JXZPEBD@Z@4PEAUHINSTANCE__@@EA; HINSTANCE__ * `wil_details_GetKernelBaseProcAddress(char const *)'::`2'::wil_details_kernelbaseModuleHandle
+0x1800139a3  test    rax, rax
+0x1800139a6  jnz     short loc_1800139C7
+0x1800139a8  lea     rcx, aKernelbaseDll; "kernelbase.dll"
+0x1800139af  call    cs:__imp_GetModuleHandleW
+0x1800139b6  nop     dword ptr [rax+rax+00h]
+0x1800139bb  mov     cs:?wil_details_kernelbaseModuleHandle@?1??wil_details_GetKernelBaseProcAddress@@YAP6A_JXZPEBD@Z@4PEAUHINSTANCE__@@EA, rax; HINSTANCE__ * `wil_details_GetKernelBaseProcAddress(char const *)'::`2'::wil_details_kernelbaseModuleHandle
+0x1800139c2  test    rax, rax
+0x1800139c5  jz      short loc_1800139E0
+0x1800139c7  lea     rdx, aLogstagedfeatu; "LogStagedFeatureUsage"
+0x1800139ce  mov     rcx, rax; hModule
+0x1800139d1  call    cs:__imp_GetProcAddress
+0x1800139d8  nop     dword ptr [rax+rax+00h]
+0x1800139dd  mov     rbx, rax
+0x1800139e0  mov     cs:g_wil_details_pfnLogStagedFeatureUsage, rbx
+0x1800139e7  test    rbx, rbx
+0x1800139ea  jz      short loc_1800139FB
+0x1800139ec  mov     r8b, dil
+0x1800139ef  mov     edx, esi
+0x1800139f1  mov     ecx, ebp
+0x1800139f3  mov     rax, rbx
+0x1800139f6  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1800139fb  add     rsp, 28h
+0x1800139ff  pop     rdi
+0x180013a00  pop     rsi
+0x180013a01  pop     rbp
+0x180013a02  pop     rbx
+0x180013a03  retn
+```

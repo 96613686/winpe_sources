@@ -1,0 +1,2236 @@
+[
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "sub_18001C500",
+    "ea": "0x18001c500",
+    "function_file": "functions/18001c500_sub_18001C500.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [],
+    "name": "sub_18001C500",
+    "prototype": "",
+    "rank_score": 823,
+    "size": 175,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x18001bef0",
+    "function_file": "functions/18001bef0_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "sub_180003294",
+    "ea": "0x180003294",
+    "function_file": "functions/180003294_sub_180003294.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "protocol_whitelist",
+      "protocol_whitelist",
+      "protocol_whitelist",
+      "protocol_blacklist",
+      "protocol_blacklist",
+      "protocol_blacklist",
+      "!(e=av_dict_get(*options, \"protocol_whitelist\", ((void *)0), 0)) || (uc->protocol_whitelist && !strcmp(uc->protocol_whitelist, e->value))",
+      "!(e=av_dict_get(*options, \"protocol_blacklist\", ((void *)0), 0)) || (uc->protocol_blacklist && !strcmp(uc->protocol_blacklist, e->value))",
+      "Protocol '%s' not on whitelist '%s'!\n",
+      "Protocol '%s' on blacklist '%s'!\n"
+    ],
+    "name": "sub_180003294",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 742,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 46,
+    "caller_count": 0,
+    "demangled": "avformat_find_stream_info",
+    "ea": "0x180006390",
+    "function_file": "functions/180006390_avformat_find_stream_info.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "threads",
+      "Before avformat_find_stream_info() pos: %lld bytes read:%lld seeks:%d nb_streams:%d\n",
+      "Failed to open codec in %s\n",
+      "Failed to open codec in %s\n",
+      "Stream #%d: not enough frames to estimate rate; consider increasing probesize\n",
+      "Could not find codec parameters for stream %d (%s): %s\nConsider increasing the value for the 'analyzeduration' (%lld) and 'probesize' (%lld) options\n",
+      "After avformat_find_stream_info() pos: %lld bytes read:%lld seeks:%d frames:%d\n"
+    ],
+    "name": "avformat_find_stream_info",
+    "prototype": "",
+    "rank_score": 350,
+    "size": 5478,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "sub_1800035D4",
+    "ea": "0x1800035d4",
+    "function_file": "functions/1800035d4_sub_1800035D4.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "protocol_whitelist",
+      "protocol_whitelist",
+      "protocol_blacklist",
+      "protocol_blacklist",
+      "!whitelist || !(e=av_dict_get(*options, \"protocol_whitelist\", ((void *)0), 0)) || !strcmp(whitelist, e->value)",
+      "!blacklist || !(e=av_dict_get(*options, \"protocol_blacklist\", ((void *)0), 0)) || !strcmp(blacklist, e->value)"
+    ],
+    "name": "sub_1800035D4",
+    "prototype": "__int64 __fastcall(int, int, int, int, __int64, char *Str1, char *, __int64)",
+    "rank_score": 266,
+    "size": 513,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 2,
+    "demangled": "sub_18000D840",
+    "ea": "0x18000d840",
+    "function_file": "functions/18000d840_sub_18000D840.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "version: %d.%d, profile: %d, level: %d, rpu flag: %d, el flag: %d, bl flag: %d, compatibility id: %d, compression: %d",
+      "%sSide data:\n",
+      "audio service type: ",
+      "DOVI configuration record: ",
+      "unknown side data type %d (%Iu bytes)"
+    ],
+    "name": "sub_18000D840",
+    "prototype": "",
+    "rank_score": 264,
+    "size": 1385,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "__report_securityfailure",
+    "ea": "0x18001c018",
+    "function_file": "functions/18001c018_report_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-1!IsProcessorFeaturePresent"
+    ],
+    "matched_strings": [],
+    "name": "__report_securityfailure",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 157,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 1,
+    "demangled": "sub_1800110FC",
+    "ea": "0x1800110fc",
+    "function_file": "functions/1800110fc_sub_1800110FC.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "compression",
+      "compressed",
+      "encrypted and compressed",
+      "Failed to read tag data\n"
+    ],
+    "name": "sub_1800110FC",
+    "prototype": "__int64 __fastcall(char *, __int64, __int64, int, unsigned __int8, unsigned __int8, __int64)",
+    "rank_score": 207,
+    "size": 1814,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "sub_18001D540",
+    "ea": "0x18001d540",
+    "function_file": "functions/18001d540_sub_18001D540.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "sub_18001D540",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 26,
+    "caller_count": 2,
+    "demangled": "sub_18000A920",
+    "ea": "0x18000a920",
+    "function_file": "functions/18000a920_sub_18000A920.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Demuxer context update while decoder is open, closing and trying to re-open\n",
+      "ff_read_packet stream=%d, pts=%s, dts=%s, size=%d, duration=%lld, flags=%d\n",
+      "read_frame_internal stream=%d, pts=%s, dts=%s, size=%d, duration=%lld, flags=%d\n"
+    ],
+    "name": "sub_18000A920",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 183,
+    "size": 2110,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "sub_18001AAF0",
+    "ea": "0x18001aaf0",
+    "function_file": "functions/18001aaf0_sub_18001AAF0.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "read_seek: %d %s\n",
+      "using cached pos_min=0x%llx dts_min=%s\n",
+      "using cached pos_max=0x%llx pos_limit=0x%llx dts_max=%s\n"
+    ],
+    "name": "sub_18001AAF0",
+    "prototype": "__int64 __fastcall(_QWORD *, int, __int64, int)",
+    "rank_score": 148,
+    "size": 792,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "sub_180011B7C",
+    "ea": "0x180011b7c",
+    "function_file": "functions/180011b7c_sub_180011B7C.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "comment",
+      "Error reading comment frame, skipped\n",
+      "Error reading comment frame, skipped\n"
+    ],
+    "name": "sub_180011B7C",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 140,
+    "size": 304,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 45,
+    "demangled": "av_freep",
+    "ea": "0x18001bba6",
+    "function_file": "functions/18001bba6_av_freep.md",
+    "matched_imports": [
+      "avutil_ms!av_freep"
+    ],
+    "matched_strings": [],
+    "name": "av_freep",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 102,
+    "demangled": "av_log",
+    "ea": "0x18001bb58",
+    "function_file": "functions/18001bb58_av_log.md",
+    "matched_imports": [
+      "avutil_ms!av_log"
+    ],
+    "matched_strings": [],
+    "name": "av_log",
+    "prototype": "__int64(_QWORD, _QWORD, const char *, ...)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 24,
+    "demangled": "av_mallocz",
+    "ea": "0x18001bb94",
+    "function_file": "functions/18001bb94_av_mallocz.md",
+    "matched_imports": [
+      "avutil_ms!av_mallocz"
+    ],
+    "matched_strings": [],
+    "name": "av_mallocz",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 124,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 23,
+    "demangled": "abort",
+    "ea": "0x18001bdc6",
+    "function_file": "functions/18001bdc6_abort.md",
+    "matched_imports": [
+      "api-ms-win-crt-runtime-l1-1-0!abort"
+    ],
+    "matched_strings": [],
+    "name": "abort",
+    "prototype": "void __cdecl __noreturn()",
+    "rank_score": 123,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 23,
+    "demangled": "strcmp",
+    "ea": "0x18001bdd2",
+    "function_file": "functions/18001bdd2_strcmp.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!strcmp"
+    ],
+    "matched_strings": [],
+    "name": "strcmp",
+    "prototype": "int __cdecl(const char *Str1, const char *Str2)",
+    "rank_score": 123,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 21,
+    "demangled": "av_free",
+    "ea": "0x18001bba0",
+    "function_file": "functions/18001bba0_av_free.md",
+    "matched_imports": [
+      "avutil_ms!av_free"
+    ],
+    "matched_strings": [],
+    "name": "av_free",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 121,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 18,
+    "demangled": "av_packet_unref",
+    "ea": "0x18001b9f6",
+    "function_file": "functions/18001b9f6_av_packet_unref.md",
+    "matched_imports": [
+      "avcodec_ms!av_packet_unref"
+    ],
+    "matched_strings": [],
+    "name": "av_packet_unref",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 118,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 16,
+    "demangled": "av_dict_set",
+    "ea": "0x18001bbe8",
+    "function_file": "functions/18001bbe8_av_dict_set.md",
+    "matched_imports": [
+      "avutil_ms!av_dict_set"
+    ],
+    "matched_strings": [],
+    "name": "av_dict_set",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 116,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "sub_18000F4C4",
+    "ea": "0x18000f4c4",
+    "function_file": "functions/18000f4c4_sub_18000F4C4.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Could not read mimetype from an attached picture.\n",
+      "comment"
+    ],
+    "name": "sub_18000F4C4",
+    "prototype": "__int64 __fastcall(__int64, unsigned int **, int, int)",
+    "rank_score": 114,
+    "size": 1134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "av_compare_ts",
+    "ea": "0x18001bc72",
+    "function_file": "functions/18001bc72_av_compare_ts.md",
+    "matched_imports": [
+      "avutil_ms!av_compare_ts"
+    ],
+    "matched_strings": [],
+    "name": "av_compare_ts",
+    "prototype": "",
+    "rank_score": 113,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "av_malloc",
+    "ea": "0x18001bbee",
+    "function_file": "functions/18001bbee_av_malloc.md",
+    "matched_imports": [
+      "avutil_ms!av_malloc"
+    ],
+    "matched_strings": [],
+    "name": "av_malloc",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 113,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 12,
+    "demangled": "av_dict_free",
+    "ea": "0x18001bb82",
+    "function_file": "functions/18001bb82_av_dict_free.md",
+    "matched_imports": [
+      "avutil_ms!av_dict_free"
+    ],
+    "matched_strings": [],
+    "name": "av_dict_free",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "av_packet_new_side_data",
+    "ea": "0x18001ba50",
+    "function_file": "functions/18001ba50_av_packet_new_side_data.md",
+    "matched_imports": [
+      "avcodec_ms!av_packet_new_side_data"
+    ],
+    "matched_strings": [],
+    "name": "av_packet_new_side_data",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__stdio_common_vfprintf",
+    "ea": "0x18001be08",
+    "function_file": "functions/18001be08_stdio_common_vfprintf.md",
+    "matched_imports": [
+      "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vfprintf"
+    ],
+    "matched_strings": [],
+    "name": "__stdio_common_vfprintf",
+    "prototype": "int __cdecl(unsigned __int64 Options, FILE *Stream, const char *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__stdio_common_vsprintf",
+    "ea": "0x18001bdfc",
+    "function_file": "functions/18001bdfc_stdio_common_vsprintf.md",
+    "matched_imports": [
+      "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsprintf"
+    ],
+    "matched_strings": [],
+    "name": "__stdio_common_vsprintf",
+    "prototype": "int __cdecl(unsigned __int64 Options, char *Buffer, size_t BufferCount, const char *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__stdio_common_vsscanf",
+    "ea": "0x18001be2c",
+    "function_file": "functions/18001be2c_stdio_common_vsscanf.md",
+    "matched_imports": [
+      "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsscanf"
+    ],
+    "matched_strings": [],
+    "name": "__stdio_common_vsscanf",
+    "prototype": "int __cdecl(unsigned __int64 Options, const char *Buffer, size_t BufferCount, const char *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_configure_narrow_argv",
+    "ea": "0x18001d5d2",
+    "function_file": "functions/18001d5d2_configure_narrow_argv.md",
+    "matched_imports": [
+      "api-ms-win-crt-runtime-l1-1-0!_configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_configure_narrow_argv",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_seh_filter_dll",
+    "ea": "0x18001d5cc",
+    "function_file": "functions/18001d5cc_seh_filter_dll.md",
+    "matched_imports": [
+      "api-ms-win-crt-runtime-l1-1-0!_seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_seh_filter_dll",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "av_compare_mod",
+    "ea": "0x18001bc78",
+    "function_file": "functions/18001bc78_av_compare_mod.md",
+    "matched_imports": [
+      "avutil_ms!av_compare_mod"
+    ],
+    "matched_strings": [],
+    "name": "av_compare_mod",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "av_packet_add_side_data",
+    "ea": "0x18001bb10",
+    "function_file": "functions/18001bb10_av_packet_add_side_data.md",
+    "matched_imports": [
+      "avcodec_ms!av_packet_add_side_data"
+    ],
+    "matched_strings": [],
+    "name": "av_packet_add_side_data",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "av_packet_side_data_add",
+    "ea": "0x18001ba44",
+    "function_file": "functions/18001ba44_av_packet_side_data_add.md",
+    "matched_imports": [
+      "avcodec_ms!av_packet_side_data_add"
+    ],
+    "matched_strings": [],
+    "name": "av_packet_side_data_add",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "av_packet_side_data_free",
+    "ea": "0x18001b9e2",
+    "function_file": "functions/18001b9e2_av_packet_side_data_free.md",
+    "matched_imports": [
+      "avcodec_ms!av_packet_side_data_free"
+    ],
+    "matched_strings": [],
+    "name": "av_packet_side_data_free",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "av_packet_side_data_new",
+    "ea": "0x18001bb46",
+    "function_file": "functions/18001bb46_av_packet_side_data_new.md",
+    "matched_imports": [
+      "avcodec_ms!av_packet_side_data_new"
+    ],
+    "matched_strings": [],
+    "name": "av_packet_side_data_new",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 11,
+    "demangled": "av_rescale_q",
+    "ea": "0x18001bc66",
+    "function_file": "functions/18001bc66_av_rescale_q.md",
+    "matched_imports": [
+      "avutil_ms!av_rescale_q"
+    ],
+    "matched_strings": [],
+    "name": "av_rescale_q",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "qsort",
+    "ea": "0x18001bdf6",
+    "function_file": "functions/18001bdf6_qsort.md",
+    "matched_imports": [
+      "api-ms-win-crt-utility-l1-1-0!qsort"
+    ],
+    "matched_strings": [],
+    "name": "qsort",
+    "prototype": "void __cdecl(void *Base, size_t NumOfElements, size_t SizeOfElements, _CoreCrtNonSecureSearchSortCompareFunction CompareFunction)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "av_dict_get",
+    "ea": "0x18001bb76",
+    "function_file": "functions/18001bb76_av_dict_get.md",
+    "matched_imports": [
+      "avutil_ms!av_dict_get"
+    ],
+    "matched_strings": [],
+    "name": "av_dict_get",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 110,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "av_rescale",
+    "ea": "0x18001bc5a",
+    "function_file": "functions/18001bc5a_av_rescale.md",
+    "matched_imports": [
+      "avutil_ms!av_rescale"
+    ],
+    "matched_strings": [],
+    "name": "av_rescale",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 110,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 16,
+    "demangled": "avpriv_set_pts_info",
+    "ea": "0x180002000",
+    "function_file": "functions/180002000_avpriv_set_pts_info.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "st:%d removing common factor %d from timebase\n",
+      "Ignoring attempt to set invalid timebase %d/%d for st:%d\n"
+    ],
+    "name": "avpriv_set_pts_info",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 110,
+    "size": 226,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 2,
+    "demangled": "sub_1800184FC",
+    "ea": "0x1800184fc",
+    "function_file": "functions/1800184fc_sub_1800184FC.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "%Id bytes of comment header remain\n",
+      "truncated comment header, %i comments not found\n"
+    ],
+    "name": "sub_1800184FC",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, int *, int, int)",
+    "rank_score": 109,
+    "size": 695,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "av_reduce",
+    "ea": "0x18001bb64",
+    "function_file": "functions/18001bb64_av_reduce.md",
+    "matched_imports": [
+      "avutil_ms!av_reduce"
+    ],
+    "matched_strings": [],
+    "name": "av_reduce",
+    "prototype": "",
+    "rank_score": 108,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "sub_1800039F0",
+    "ea": "0x1800039f0",
+    "function_file": "functions/1800039f0_sub_1800039F0.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Impossible to open the '%s' protocol for reading\n",
+      "Impossible to open the '%s' protocol for writing\n"
+    ],
+    "name": "sub_1800039F0",
+    "prototype": "",
+    "rank_score": 108,
+    "size": 667,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "_byteswap_ulong",
+    "ea": "0x18001bdf0",
+    "function_file": "functions/18001bdf0_byteswap_ulong.md",
+    "matched_imports": [
+      "api-ms-win-crt-utility-l1-1-0!_byteswap_ulong"
+    ],
+    "matched_strings": [],
+    "name": "_byteswap_ulong",
+    "prototype": "unsigned int __cdecl(unsigned int Number)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "av_opt_free",
+    "ea": "0x18001bbbe",
+    "function_file": "functions/18001bbbe_av_opt_free.md",
+    "matched_imports": [
+      "avutil_ms!av_opt_free"
+    ],
+    "matched_strings": [],
+    "name": "av_opt_free",
+    "prototype": "",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "av_parser_close",
+    "ea": "0x18001ba02",
+    "function_file": "functions/18001ba02_av_parser_close.md",
+    "matched_imports": [
+      "avcodec_ms!av_parser_close"
+    ],
+    "matched_strings": [],
+    "name": "av_parser_close",
+    "prototype": "__int64(void)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "av_strdup",
+    "ea": "0x18001bbac",
+    "function_file": "functions/18001bbac_av_strdup.md",
+    "matched_imports": [
+      "avutil_ms!av_strdup"
+    ],
+    "matched_strings": [],
+    "name": "av_strdup",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "avcodec_parameters_to_context",
+    "ea": "0x18001ba68",
+    "function_file": "functions/18001ba68_avcodec_parameters_to_context.md",
+    "matched_imports": [
+      "avcodec_ms!avcodec_parameters_to_context"
+    ],
+    "matched_strings": [],
+    "name": "avcodec_parameters_to_context",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "sub_18001278C",
+    "ea": "0x18001278c",
+    "function_file": "functions/18001278c_sub_18001278C.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "compute_muxer_pkt_fields: pts:%s dts:%s cur_dts:%s b:%d size:%d st:%d\n",
+      "av_write_frame: pts2:%s dts2:%s\n"
+    ],
+    "name": "sub_18001278C",
+    "prototype": "",
+    "rank_score": 107,
+    "size": 1382,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "av_match_name",
+    "ea": "0x18001bb5e",
+    "function_file": "functions/18001bb5e_av_match_name.md",
+    "matched_imports": [
+      "avutil_ms!av_match_name"
+    ],
+    "matched_strings": [],
+    "name": "av_match_name",
+    "prototype": "",
+    "rank_score": 106,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "av_opt_set_defaults",
+    "ea": "0x18001bbfa",
+    "function_file": "functions/18001bbfa_av_opt_set_defaults.md",
+    "matched_imports": [
+      "avutil_ms!av_opt_set_defaults"
+    ],
+    "matched_strings": [],
+    "name": "av_opt_set_defaults",
+    "prototype": "",
+    "rank_score": 106,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "strlen",
+    "ea": "0x18001bdde",
+    "function_file": "functions/18001bdde_strlen.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!strlen"
+    ],
+    "matched_strings": [],
+    "name": "strlen",
+    "prototype": "size_t __cdecl(const char *Str)",
+    "rank_score": 106,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "av_realloc_array",
+    "ea": "0x18001bb9a",
+    "function_file": "functions/18001bb9a_av_realloc_array.md",
+    "matched_imports": [
+      "avutil_ms!av_realloc_array"
+    ],
+    "matched_strings": [],
+    "name": "av_realloc_array",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "avcodec_alloc_context3",
+    "ea": "0x18001ba5c",
+    "function_file": "functions/18001ba5c_avcodec_alloc_context3.md",
+    "matched_imports": [
+      "avcodec_ms!avcodec_alloc_context3"
+    ],
+    "matched_strings": [],
+    "name": "avcodec_alloc_context3",
+    "prototype": "",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "avcodec_free_context",
+    "ea": "0x18001b9fc",
+    "function_file": "functions/18001b9fc_avcodec_free_context.md",
+    "matched_imports": [
+      "avcodec_ms!avcodec_free_context"
+    ],
+    "matched_strings": [],
+    "name": "avcodec_free_context",
+    "prototype": "",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "avpriv_packet_list_put",
+    "ea": "0x18001bae0",
+    "function_file": "functions/18001bae0_avpriv_packet_list_put.md",
+    "matched_imports": [
+      "avcodec_ms!avpriv_packet_list_put"
+    ],
+    "matched_strings": [],
+    "name": "avpriv_packet_list_put",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "av_dict_copy",
+    "ea": "0x18001bb7c",
+    "function_file": "functions/18001bb7c_av_dict_copy.md",
+    "matched_imports": [
+      "avutil_ms!av_dict_copy"
+    ],
+    "matched_strings": [],
+    "name": "av_dict_copy",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "avcodec_descriptor_get",
+    "ea": "0x18001ba1a",
+    "function_file": "functions/18001ba1a_avcodec_descriptor_get.md",
+    "matched_imports": [
+      "avcodec_ms!avcodec_descriptor_get"
+    ],
+    "matched_strings": [],
+    "name": "avcodec_descriptor_get",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "avcodec_is_open",
+    "ea": "0x18001baaa",
+    "function_file": "functions/18001baaa_avcodec_is_open.md",
+    "matched_imports": [
+      "avcodec_ms!avcodec_is_open"
+    ],
+    "matched_strings": [],
+    "name": "avcodec_is_open",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 103,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 7,
+    "demangled": "sub_180010898",
+    "ea": "0x180010898",
+    "function_file": "functions/180010898_sub_180010898.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Error opening memory stream\n",
+      "Cannot read BOM value, input too short\n"
+    ],
+    "name": "sub_180010898",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, _QWORD *, int *)",
+    "rank_score": 103,
+    "size": 859,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "av_buffer_create",
+    "ea": "0x18001bd1a",
+    "function_file": "functions/18001bd1a_av_buffer_create.md",
+    "matched_imports": [
+      "avutil_ms!av_buffer_create"
+    ],
+    "matched_strings": [],
+    "name": "av_buffer_create",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "avcodec_open2",
+    "ea": "0x18001ba6e",
+    "function_file": "functions/18001ba6e_avcodec_open2.md",
+    "matched_imports": [
+      "avcodec_ms!avcodec_open2"
+    ],
+    "matched_strings": [],
+    "name": "avcodec_open2",
+    "prototype": "",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "av_channel_layout_copy",
+    "ea": "0x18001bc90",
+    "function_file": "functions/18001bc90_av_channel_layout_copy.md",
+    "matched_imports": [
+      "avutil_ms!av_channel_layout_copy"
+    ],
+    "matched_strings": [],
+    "name": "av_channel_layout_copy",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "av_opt_copy",
+    "ea": "0x18001bc06",
+    "function_file": "functions/18001bc06_av_opt_copy.md",
+    "matched_imports": [
+      "avutil_ms!av_opt_copy"
+    ],
+    "matched_strings": [],
+    "name": "av_opt_copy",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "av_packet_copy_props",
+    "ea": "0x18001baf8",
+    "function_file": "functions/18001baf8_av_packet_copy_props.md",
+    "matched_imports": [
+      "avcodec_ms!av_packet_copy_props"
+    ],
+    "matched_strings": [],
+    "name": "av_packet_copy_props",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "av_packet_move_ref",
+    "ea": "0x18001baf2",
+    "function_file": "functions/18001baf2_av_packet_move_ref.md",
+    "matched_imports": [
+      "avcodec_ms!av_packet_move_ref"
+    ],
+    "matched_strings": [],
+    "name": "av_packet_move_ref",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "avcodec_parameters_copy",
+    "ea": "0x18001ba0e",
+    "function_file": "functions/18001ba0e_avcodec_parameters_copy.md",
+    "matched_imports": [
+      "avcodec_ms!avcodec_parameters_copy"
+    ],
+    "matched_strings": [],
+    "name": "avcodec_parameters_copy",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "sub_180002E8C",
+    "ea": "0x180002e8c",
+    "function_file": "functions/180002e8c_sub_180002E8C.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Statistics: %lld bytes written, %d seeks, %d writeouts\n",
+      "Statistics: %lld bytes read, %d seeks\n"
+    ],
+    "name": "sub_180002E8C",
+    "prototype": "",
+    "rank_score": 97,
+    "size": 557,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "sub_180011CAC",
+    "ea": "0x180011cac",
+    "function_file": "functions/180011cac_sub_180011CAC.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Error reading frame %s, skipped\n",
+      "Error reading frame %s, skipped\n"
+    ],
+    "name": "sub_180011CAC",
+    "prototype": "void __fastcall(__int64, __int64, int, __int64, char *Str1)",
+    "rank_score": 94,
+    "size": 460,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "sub_1800100A0",
+    "ea": "0x1800100a0",
+    "function_file": "functions/1800100a0_sub_1800100A0.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Error reading frame %s, skipped\n",
+      "Error reading GEOB frame, data truncated.\n"
+    ],
+    "name": "sub_1800100A0",
+    "prototype": "void __fastcall(__int64, __int64, int, const char *, __int64 *)",
+    "rank_score": 92,
+    "size": 456,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "avio_close",
+    "ea": "0x180002a30",
+    "function_file": "functions/180002a30_avio_close.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Statistics: %lld bytes written, %d seeks, %d writeouts\n",
+      "Statistics: %lld bytes read, %d seeks\n"
+    ],
+    "name": "avio_close",
+    "prototype": "",
+    "rank_score": 91,
+    "size": 217,
+    "tags": []
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 1,
+    "demangled": "sub_180013478",
+    "ea": "0x180013478",
+    "function_file": "functions/180013478_sub_180013478.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Tag %s incompatible with output codec id '%d' (%s)\n"
+    ],
+    "name": "sub_180013478",
+    "prototype": "",
+    "rank_score": 87,
+    "size": 1672,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "sub_180019780",
+    "ea": "0x180019780",
+    "function_file": "functions/180019780_sub_180019780.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "reading",
+      "Opening '%s' for %s\n"
+    ],
+    "name": "sub_180019780",
+    "prototype": "",
+    "rank_score": 85,
+    "size": 237,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "sub_180008068",
+    "ea": "0x180008068",
+    "function_file": "functions/180008068_sub_180008068.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "invalid dts/pts combination %lli\n"
+    ],
+    "name": "sub_180008068",
+    "prototype": "",
+    "rank_score": 84,
+    "size": 2215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 2,
+    "demangled": "sub_1800157E8",
+    "ea": "0x1800157e8",
+    "function_file": "functions/1800157e8_sub_1800157E8.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to create or replace stream\n"
+    ],
+    "name": "sub_1800157E8",
+    "prototype": "__int64 __fastcall(__int64, int *, int)",
+    "rank_score": 76,
+    "size": 1477,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "avformat_configuration",
+    "ea": "0x18001b950",
+    "function_file": "functions/18001b950_avformat_configuration.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "--toolchain=msvc --target-os=win32 --disable-programs --disable-d3d11va --disable-dxva2 --enable-shared --enable-cross-compile --extra-cflags='-guard:cf -Qspectre -Gy -Gw' --extra-ldflags='-PROFILE -GUARD:CF -DYNAMICBASE -OPT:ICF -OPT:REF' --arch=x86_64 --extra-ldflags=-CETCOMPAT --prefix=/c/__w/1/s/FFmpegInterop/ffmpeg/Build/x64 --extra-cflags='-DWINAPI_FAMILY=WINAPI_FAMILY_APP -D_WIN32_WINNT=0x0A00' --extra-ldflags='-APPCONTAINER WindowsApp.lib -NODEFAULTLIB:kernel32.lib -DEFAULTLIB:onecore.li"
+    ],
+    "name": "avformat_configuration",
+    "prototype": "",
+    "rank_score": 70,
+    "size": 8,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "sub_180015420",
+    "ea": "0x180015420",
+    "function_file": "functions/180015420_sub_180015420.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ogg_packet: curidx=%i\n"
+    ],
+    "name": "sub_180015420",
+    "prototype": "__int64 __fastcall(__int64, int *, _DWORD *, _DWORD *, _QWORD *)",
+    "rank_score": 69,
+    "size": 968,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 2,
+    "demangled": "sub_180003C8C",
+    "ea": "0x180003c8c",
+    "function_file": "functions/180003c8c_sub_180003C8C.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "https or dtls protocol not found, recompile FFmpeg with openssl, gnutls or securetransport enabled.\n"
+    ],
+    "name": "sub_180003C8C",
+    "prototype": "__int64 __fastcall(char *Str1)",
+    "rank_score": 67,
+    "size": 472,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "sub_180014004",
+    "ea": "0x180014004",
+    "function_file": "functions/180014004_sub_180014004.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "write_packet_common"
+    ],
+    "name": "sub_180014004",
+    "prototype": "",
+    "rank_score": 65,
+    "size": 576,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "sub_18000B4F8",
+    "ea": "0x18000b4f8",
+    "function_file": "functions/18000b4f8_sub_18000B4F8.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "threads"
+    ],
+    "name": "sub_18000B4F8",
+    "prototype": "",
+    "rank_score": 61,
+    "size": 767,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "avformat_alloc_output_context2",
+    "ea": "0x1800124c0",
+    "function_file": "functions/1800124c0_avformat_alloc_output_context2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Unable to choose an output format for '%s'; use a standard extension for the filename or specify the format manually.\n"
+    ],
+    "name": "avformat_alloc_output_context2",
+    "prototype": "",
+    "rank_score": 60,
+    "size": 325,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "sub_18001A314",
+    "ea": "0x18001a314",
+    "function_file": "functions/18001a314_sub_18001A314.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "read_timestamp() failed in the middle\n"
+    ],
+    "name": "sub_18001A314",
+    "prototype": "",
+    "rank_score": 59,
+    "size": 1397,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "sub_18000D2A0",
+    "ea": "0x18000d2a0",
+    "function_file": "functions/18000d2a0_sub_18000D2A0.md",
+    "matched_imports": [],
+    "matched_strings": [
+      " (comment)"
+    ],
+    "name": "sub_18000D2A0",
+    "prototype": "",
+    "rank_score": 57,
+    "size": 432,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "sub_180010CB8",
+    "ea": "0x180010cb8",
+    "function_file": "functions/180010cb8_sub_180010CB8.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "comment"
+    ],
+    "name": "sub_180010CB8",
+    "prototype": "",
+    "rank_score": 57,
+    "size": 229,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "sub_18000D08C",
+    "ea": "0x18000d08c",
+    "function_file": "functions/18000d08c_sub_18000D08C.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "commentary"
+    ],
+    "name": "sub_18000D08C",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 185,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "sub_1800054E0",
+    "ea": "0x1800054e0",
+    "function_file": "functions/1800054e0_sub_1800054E0.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "!s->write_flag"
+    ],
+    "name": "sub_1800054E0",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 53,
+    "size": 405,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "sub_180011E78",
+    "ea": "0x180011e78",
+    "function_file": "functions/180011e78_sub_180011E78.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Error reading lyrics, skipped\n"
+    ],
+    "name": "sub_180011E78",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 51,
+    "size": 326,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "av_interleaved_write_frame",
+    "ea": "0x180012150",
+    "function_file": "functions/180012150_av_interleaved_write_frame.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "av_interleaved_write_frame FLUSH\n"
+    ],
+    "name": "av_interleaved_write_frame",
+    "prototype": "",
+    "rank_score": 46,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 33,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18001bed0",
+    "function_file": "functions/18001bed0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 62,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18001d6e0",
+    "function_file": "functions/18001d6e0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 35,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 20,
+    "demangled": "sub_18001D740",
+    "ea": "0x18001d740",
+    "function_file": "functions/18001d740_sub_18001D740.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18001D740",
+    "prototype": "__int64 __fastcall(__m128i *_RCX, const __m128i *_RDX, unsigned __int64 _R8)",
+    "rank_score": 35,
+    "size": 1677,
+    "tags": []
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 0,
+    "demangled": "avformat_open_input",
+    "ea": "0x180007900",
+    "function_file": "functions/180007900_avformat_open_input.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avformat_open_input",
+    "prototype": "",
+    "rank_score": 34,
+    "size": 1160,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 20,
+    "demangled": "avio_seek",
+    "ea": "0x1800049e0",
+    "function_file": "functions/1800049e0_avio_seek.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_seek",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 29,
+    "size": 754,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "av_read_frame",
+    "ea": "0x180006060",
+    "function_file": "functions/180006060_av_read_frame.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "av_read_frame",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 23,
+    "size": 631,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "sub_18001DE00",
+    "ea": "0x18001de00",
+    "function_file": "functions/18001de00_sub_18001DE00.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18001DE00",
+    "prototype": "__m128i *__fastcall(__m128i *, unsigned __int8, unsigned __int64)",
+    "rank_score": 23,
+    "size": 908,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "sub_18000B3B4",
+    "ea": "0x18000b3b4",
+    "function_file": "functions/18000b3b4_sub_18000B3B4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18000B3B4",
+    "prototype": "__int64 __fastcall(char *Buffer, size_t BufferCount, char *Format)",
+    "rank_score": 22,
+    "size": 89,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 13,
+    "demangled": "avio_read",
+    "ea": "0x180004660",
+    "function_file": "functions/180004660_avio_read.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_read",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 19,
+    "size": 315,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 12,
+    "demangled": "sub_180005C3C",
+    "ea": "0x180005c3c",
+    "function_file": "functions/180005c3c_sub_180005C3C.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_180005C3C",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "avio_r8",
+    "ea": "0x180004560",
+    "function_file": "functions/180004560_avio_r8.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_r8",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 15,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "avpriv_update_cur_dts",
+    "ea": "0x180019f50",
+    "function_file": "functions/180019f50_avpriv_update_cur_dts.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avpriv_update_cur_dts",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 14,
+    "size": 122,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DllEntryPoint",
+    "ea": "0x18001c4c0",
+    "function_file": "functions/18001c4c0_DllEntryPoint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllEntryPoint",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 13,
+    "size": 61,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "avio_open_dir",
+    "ea": "0x180002c90",
+    "function_file": "functions/180002c90_avio_open_dir.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_open_dir",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 389,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CompareFunction",
+    "ea": "0x180007d90",
+    "function_file": "functions/180007d90_CompareFunction.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompareFunction",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 12,
+    "size": 70,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "av_write_trailer",
+    "ea": "0x1800122a0",
+    "function_file": "functions/1800122a0_av_write_trailer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "av_write_trailer",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 403,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "avio_find_protocol_name",
+    "ea": "0x180002bd0",
+    "function_file": "functions/180002bd0_avio_find_protocol_name.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_find_protocol_name",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 27,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "avio_enum_protocols",
+    "ea": "0x180019870",
+    "function_file": "functions/180019870_avio_enum_protocols.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_enum_protocols",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 60,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "avio_flush",
+    "ea": "0x180003fb0",
+    "function_file": "functions/180003fb0_avio_flush.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_flush",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "avio_size",
+    "ea": "0x180004d60",
+    "function_file": "functions/180004d60_avio_size.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_size",
+    "prototype": "__int64(void)",
+    "rank_score": 11,
+    "size": 155,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "sub_18000320C",
+    "ea": "0x18000320c",
+    "function_file": "functions/18000320c_sub_18000320C.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18000320C",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "sub_180005AC0",
+    "ea": "0x180005ac0",
+    "function_file": "functions/180005ac0_sub_180005AC0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_180005AC0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 379,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "avformat_stream_group_create",
+    "ea": "0x1800195f0",
+    "function_file": "functions/1800195f0_avformat_stream_group_create.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avformat_stream_group_create",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 372,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "sub_18001E1A0",
+    "ea": "0x18001e1a0",
+    "function_file": "functions/18001e1a0_sub_18001E1A0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18001E1A0",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 10,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "av_write_frame",
+    "ea": "0x1800121d0",
+    "function_file": "functions/1800121d0_av_write_frame.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "av_write_frame",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 206,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "avio_write",
+    "ea": "0x1800051e0",
+    "function_file": "functions/1800051e0_avio_write.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_write",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 176,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "sub_1800187B4",
+    "ea": "0x1800187b4",
+    "function_file": "functions/1800187b4_sub_1800187B4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1800187B4",
+    "prototype": "__int64 __fastcall(__int64, __int64, int *, int)",
+    "rank_score": 9,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "sub_18001A9A4",
+    "ea": "0x18001a9a4",
+    "function_file": "functions/18001a9a4_sub_18001A9A4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18001A9A4",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 9,
+    "size": 206,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "sub_18001B6D8",
+    "ea": "0x18001b6d8",
+    "function_file": "functions/18001b6d8_sub_18001B6D8.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18001B6D8",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 9,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "avformat_write_header",
+    "ea": "0x180012670",
+    "function_file": "functions/180012670_avformat_write_header.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avformat_write_header",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 282,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "sub_18001A88C",
+    "ea": "0x18001a88c",
+    "function_file": "functions/18001a88c_sub_18001A88C.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18001A88C",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 8,
+    "size": 279,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__uncaught_exception(void)",
+    "ea": "0x18001cd7c",
+    "function_file": "functions/18001cd7c_uncaught_exception_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?__uncaught_exception@@YA_NXZ",
+    "prototype": "bool(void)",
+    "rank_score": 6,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "avio_rb16",
+    "ea": "0x1800045a0",
+    "function_file": "functions/1800045a0_avio_rb16.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_rb16",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 6,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "avio_read_partial",
+    "ea": "0x1800047a0",
+    "function_file": "functions/1800047a0_avio_read_partial.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_read_partial",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 193,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "avio_write_marker",
+    "ea": "0x180005290",
+    "function_file": "functions/180005290_avio_write_marker.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_write_marker",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "sub_18001CD88",
+    "ea": "0x18001cd88",
+    "function_file": "functions/18001cd88_sub_18001CD88.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18001CD88",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 6,
+    "size": 126,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "avio_read_to_bprint",
+    "ea": "0x180004870",
+    "function_file": "functions/180004870_avio_read_to_bprint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_read_to_bprint",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned __int64)",
+    "rank_score": 5,
+    "size": 165,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "sub_18001D6CC",
+    "ea": "0x18001d6cc",
+    "function_file": "functions/18001d6cc_sub_18001D6CC.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_18001D6CC",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "av_write_uncoded_frame_query",
+    "ea": "0x180012450",
+    "function_file": "functions/180012450_av_write_uncoded_frame_query.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "av_write_uncoded_frame_query",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 101,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "avio_free_directory_entry",
+    "ea": "0x180002bf0",
+    "function_file": "functions/180002bf0_avio_free_directory_entry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_free_directory_entry",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "av_read_pause",
+    "ea": "0x18000c740",
+    "function_file": "functions/18000c740_av_read_pause.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "av_read_pause",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "av_read_play",
+    "ea": "0x18000c770",
+    "function_file": "functions/18000c770_av_read_play.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "av_read_play",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "avio_read_dir",
+    "ea": "0x180002e20",
+    "function_file": "functions/180002e20_avio_read_dir.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_read_dir",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "avio_open_dyn_buf",
+    "ea": "0x180004420",
+    "function_file": "functions/180004420_avio_open_dyn_buf.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_open_dyn_buf",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 2,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "av_interleaved_write_uncoded_frame",
+    "ea": "0x1800121c0",
+    "function_file": "functions/1800121c0_av_interleaved_write_uncoded_frame.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "av_interleaved_write_uncoded_frame",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 11,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "av_write_uncoded_frame",
+    "ea": "0x180012440",
+    "function_file": "functions/180012440_av_write_uncoded_frame.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "av_write_uncoded_frame",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "avio_open",
+    "ea": "0x180002c30",
+    "function_file": "functions/180002c30_avio_open.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_open",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "avio_open2",
+    "ea": "0x180002c60",
+    "function_file": "functions/180002c60_avio_open2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "avio_open2",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 42,
+    "tags": []
+  }
+]

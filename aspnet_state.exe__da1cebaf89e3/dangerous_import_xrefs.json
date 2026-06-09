@@ -1,0 +1,325 @@
+[
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x14000234c",
+        "from_func": "0x140002318",
+        "from_func_name": "?GetAllowRemoteConnectionFromReg@StateWebServer@@AEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140002403",
+        "from_func": "0x1400023d0",
+        "from_func_name": "?GetSocketTimeoutValueFromReg@StateWebServer@@AEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14000254d",
+        "from_func": "0x14000248c",
+        "from_func_name": "?PrepareToRun@StateWebServer@@AEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14000234c",
+        "from_func": "0x140002318",
+        "from_func_name": "?GetAllowRemoteConnectionFromReg@StateWebServer@@AEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140002403",
+        "from_func": "0x1400023d0",
+        "from_func_name": "?GetSocketTimeoutValueFromReg@StateWebServer@@AEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14000254d",
+        "from_func": "0x14000248c",
+        "from_func_name": "?PrepareToRun@StateWebServer@@AEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegisterServiceCtrlHandlerW",
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140001a54",
+        "from_func": "0x140001a20",
+        "from_func_name": "?DoServiceMain@StateWebServer@@AEAAXKPEAPEAG@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerW"
+      },
+      {
+        "from_ea": "0x140001a54",
+        "from_func": "0x140001a20",
+        "from_func_name": "?DoServiceMain@StateWebServer@@AEAAXKPEAPEAG@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetServiceStatus",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140001d4b",
+        "from_func": "0x140001d04",
+        "from_func_name": "?SetServiceStatus@StateWebServer@@AEAAXKKK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x140001d4b",
+        "from_func": "0x140001d04",
+        "from_func_name": "?SetServiceStatus@StateWebServer@@AEAAXKKK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!StartServiceCtrlDispatcherW",
+    "tags": [
+      "service_task",
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140001cbc",
+        "from_func": "0x140001c90",
+        "from_func_name": "?RunAsService@StateWebServer@@AEAAJXZ",
+        "import": "ADVAPI32!StartServiceCtrlDispatcherW"
+      },
+      {
+        "from_ea": "0x140001cbc",
+        "from_func": "0x140001c90",
+        "from_func_name": "?RunAsService@StateWebServer@@AEAAJXZ",
+        "import": "ADVAPI32!StartServiceCtrlDispatcherW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140005dd6",
+        "from_func": "0x140005d90",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140005dd6",
+        "from_func": "0x140005d90",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400031fc",
+        "from_func": "0x1400031e0",
+        "from_func_name": "?GetMSCOREE@Util@LegacyActivationShim@@YAJPEAPEAUHINSTANCE__@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x14000514b",
+        "from_func": "0x14000505c",
+        "from_func_name": "?TryToSetHeapInfo@@YAXXZ",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1400031fc",
+        "from_func": "0x1400031e0",
+        "from_func_name": "?GetMSCOREE@Util@LegacyActivationShim@@YAJPEAPEAUHINSTANCE__@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x14000514b",
+        "from_func": "0x14000505c",
+        "from_func_name": "?TryToSetHeapInfo@@YAXXZ",
+        "import": "KERNEL32!LoadLibraryW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!SetConsoleCtrlHandler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000269a",
+        "from_func": "0x140002678",
+        "from_func_name": "?RunAsExe@StateWebServer@@AEAAJXZ",
+        "import": "KERNEL32!SetConsoleCtrlHandler"
+      },
+      {
+        "from_ea": "0x14000269a",
+        "from_func": "0x140002678",
+        "from_func_name": "?RunAsExe@StateWebServer@@AEAAJXZ",
+        "import": "KERNEL32!SetConsoleCtrlHandler"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140_CLR0400!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000649a",
+        "from_func": "0x14000649a",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "VCRUNTIME140_CLR0400!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "WS2_32!__imp_WSACleanup",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400022c8",
+        "from_func": "0x1400022a0",
+        "from_func_name": "?CleanupAfterRunning@StateWebServer@@AEAAXXZ",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x1400022c8",
+        "from_func": "0x1400022a0",
+        "from_func_name": "?CleanupAfterRunning@StateWebServer@@AEAAXXZ",
+        "import": "WS2_32!__imp_WSACleanup"
+      }
+    ]
+  },
+  {
+    "import": "ucrtbase_clr0400!__p__commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000652e",
+        "from_func": "0x14000652e",
+        "from_func_name": "__p__commode_0",
+        "import": "ucrtbase_clr0400!__p__commode"
+      }
+    ]
+  },
+  {
+    "import": "ucrtbase_clr0400!__stdio_common_vswprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000291a",
+        "from_func": "0x1400028b4",
+        "from_func_name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+        "import": "ucrtbase_clr0400!__stdio_common_vswprintf"
+      },
+      {
+        "from_ea": "0x14000291a",
+        "from_func": "0x1400028b4",
+        "from_func_name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+        "import": "ucrtbase_clr0400!__stdio_common_vswprintf"
+      }
+    ]
+  },
+  {
+    "import": "ucrtbase_clr0400!_configthreadlocale",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140006522",
+        "from_func": "0x140006522",
+        "from_func_name": "_configthreadlocale_0",
+        "import": "ucrtbase_clr0400!_configthreadlocale"
+      }
+    ]
+  },
+  {
+    "import": "ucrtbase_clr0400!_configure_wide_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400064d4",
+        "from_func": "0x1400064d4",
+        "from_func_name": "_configure_wide_argv_0",
+        "import": "ucrtbase_clr0400!_configure_wide_argv"
+      },
+      {
+        "from_ea": "0x140008988",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ucrtbase_clr0400!_configure_wide_argv"
+      }
+    ]
+  },
+  {
+    "import": "webengine4!AspnetLoadResourceDLL",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140004f24",
+        "from_func": "0x140004f24",
+        "from_func_name": "?AspnetLoadResourceDLL@@YAJPEAG0HPEAPEAUHINSTANCE__@@W4LanguageIdType@Names@@@Z",
+        "import": "webengine4!AspnetLoadResourceDLL"
+      }
+    ]
+  },
+  {
+    "import": "webengine4!LoadLibraryUsingFullPath",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140004f00",
+        "from_func": "0x140004f00",
+        "from_func_name": "?LoadLibraryUsingFullPath@@YAJPEBGHPEAPEAUHINSTANCE__@@@Z",
+        "import": "webengine4!LoadLibraryUsingFullPath"
+      }
+    ]
+  }
+]

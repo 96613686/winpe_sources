@@ -1,0 +1,201 @@
+# wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData> * *)
+
+- ea: `0x18000a714`
+- end: `0x18000a87a`
+- name: `?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z`
+- size: `358`
+- prototype: `__int64 __fastcall(const char *staticNameWithVersion, wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData> **data)`
+- caller_count: `1`
+- callee_count: `11`
+- tags: `authz_impersonation, registry_config`
+
+## callers
+
+- `0x18000ac64`
+
+## callees
+
+- `0x1800060f8`
+- `0x1800062c0`
+- `0x180007674`
+- `0x180007a68`
+- `0x18000a28c`
+- `0x18000a2a8`
+- `0x18000a714`
+- `0x18000c374`
+- `0x18000da84`
+- `0x18000e300`
+- `0x180020520`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!CreateMutexExW` at `0x18000a791`
+- `api-ms-win-core-synch-l1-1-0!CreateMutexExW` at `0x18000a791`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId` at `0x18000a74c`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId` at `0x18000a74c`
+
+## pseudocode
+
+```c
+__int64 __fastcall wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData>::Acquire(
+        const char *staticNameWithVersion,
+        wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData> **data)
+{
+  DWORD CurrentProcessId; // eax
+  HANDLE v4; // rax
+  unsigned int *v5; // r8
+  unsigned int v6; // r9d
+  unsigned int LastErrorFailHr; // ebx
+  HRESULT v8; // eax
+  unsigned int v9; // edx
+  _DWORD *v10; // rcx
+  wil::unique_any_t<wil::mutex_t<wil::details::unique_storage<wil::details::resource_policy<void *,void (__cdecl*)(void *) noexcept,&wil::details::CloseHandle,wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t> >,wil::err_returncode_policy> > mutex; // [rsp+30h] [rbp-D0h] BYREF
+  wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<void *,void (__cdecl*)(void *) noexcept,&wil::details::ReleaseMutex,wistd::integral_constant<unsigned __int64,2>,void *,void *,0,std::nullptr_t> > > lock; // [rsp+38h] [rbp-C8h] BYREF
+  void *pointer; // [rsp+40h] [rbp-C0h] BYREF
+  wchar_t name[264]; // [rsp+50h] [rbp-B0h] BYREF
+  void *retaddr; // [rsp+278h] [rbp+178h]
+
+  *data = 0;
+  CurrentProcessId = GetCurrentProcessId();
+  StringCchPrintfW(name, 0x104u, L"Local\\SM0:%lu:%lu:%hs", CurrentProcessId);
+  mutex.m_ptr = 0;
+  v4 = CreateMutexExW(0, name, 0, 0x1F0001u);
+  _reset___unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_CloseHandle_details_wil__YAX0_ZU__integral_constant__K_0A__wistd__PEAXPEAX_0A___T_details_wil___details_wil__QEAAXPEAX_Z(
+    &mutex,
+    v4);
+  if ( mutex.m_ptr )
+  {
+    _acquire___mutex_t_V__unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_CloseHandle_details_wil__YAX0_ZU__integral_constant__K_0A__wistd__PEAXPEAX_0A___T_details_wil___details_wil__Uerr_returncode_policy_3__wil__QEBA_AV__unique_any_t_V__unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_ReleaseMutex_details_wil__YAX0_ZU__integral_constant__K_01_wistd__PEAXPEAX_0A___T_details_wil___details_wil___2_PEAKKH_Z(
+      &mutex,
+      &lock,
+      v5,
+      v6,
+      304);
+    pointer = 0;
+    v8 = wil::details_abi::SemaphoreValue::TryGetPointer(name, &pointer);
+    LastErrorFailHr = v8;
+    if ( v8 < 0 )
+    {
+      v9 = 302;
+LABEL_5:
+      wil::details::in1diag3::Return_Hr(retaddr, v9, "wil", v8);
+      __1__unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_ReleaseMutex_details_wil__YAX0_ZU__integral_constant__K_01_wistd__PEAXPEAX_0A___T_details_wil___details_wil__QEAA_XZ(&lock);
+      goto LABEL_9;
+    }
+    v10 = pointer;
+    if ( pointer )
+    {
+      *data = (wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData> *)pointer;
+      ++*v10;
+    }
+    else
+    {
+      v8 = wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData>::MakeAndInitialize(
+             name,
+             &mutex,
+             data);
+      LastErrorFailHr = v8;
+      if ( v8 < 0 )
+      {
+        v9 = 311;
+        goto LABEL_5;
+      }
+    }
+    __1__unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_ReleaseMutex_details_wil__YAX0_ZU__integral_constant__K_01_wistd__PEAXPEAX_0A___T_details_wil___details_wil__QEAA_XZ(&lock);
+    LastErrorFailHr = 0;
+    goto LABEL_9;
+  }
+  LastErrorFailHr = wil::details::GetLastErrorFailHr();
+LABEL_9:
+  __1__unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_CloseHandle_details_wil__YAX0_ZU__integral_constant__K_0A__wistd__PEAXPEAX_0A___T_details_wil___details_wil__QEAA_XZ(&mutex);
+  return LastErrorFailHr;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000a714  mov     [rsp-8+arg_10], rbx
+0x18000a719  mov     [rsp-8+arg_18], rdi
+0x18000a71e  push    rbp
+0x18000a71f  lea     rbp, [rsp-170h]
+0x18000a727  sub     rsp, 270h
+0x18000a72e  mov     rax, cs:__security_cookie
+0x18000a735  xor     rax, rsp
+0x18000a738  mov     [rbp+170h+var_10], rax
+0x18000a73f  mov     rdi, data
+0x18000a742  mov     qword ptr [data], 0
+0x18000a749  mov     rbx, staticNameWithVersion
+0x18000a74c  call    cs:__imp_GetCurrentProcessId
+0x18000a752  mov     [rsp+270h+var_248], rbx
+0x18000a757  lea     r8, aLocalSm0LuLuHs; "Local\\SM0:%lu:%lu:%hs"
+0x18000a75e  mov     r9d, eax
+0x18000a761  mov     [rsp+270h+bAlertable], 130h; bAlertable
+0x18000a769  mov     edx, 104h; cchDest
+0x18000a76e  lea     staticNameWithVersion, [rsp+270h+name]; pszDest
+0x18000a773  call    ?StringCchPrintfW@@YAJPEAG_KPEBGZZ; StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)
+0x18000a778  mov     r9d, 1F0001h; dwDesiredAccess
+0x18000a77e  mov     [rsp+270h+mutex.m_ptr], 0
+0x18000a787  xor     r8d, r8d; dwFlags
+0x18000a78a  lea     data, [rsp+270h+name]; lpName
+0x18000a78f  xor     ecx, ecx; lpMutexAttributes
+0x18000a791  call    cs:__imp_CreateMutexExW
+0x18000a797  mov     data, rax; ptr
+0x18000a79a  lea     staticNameWithVersion, [rsp+270h+mutex]; this
+0x18000a79f  call    ?reset@?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAAXPEAX@Z
+0x18000a7a4  cmp     [rsp+270h+mutex.m_ptr], 0
+0x18000a7aa  jnz     short loc_18000A7B5
+0x18000a7ac  call    ?GetLastErrorFailHr@details@wil@@YAJXZ; wil::details::GetLastErrorFailHr(void)
+0x18000a7b1  mov     ebx, eax
+0x18000a7b3  jmp     short loc_18000A828
+0x18000a7b5  lea     data, [rsp+270h+lock]; result
+0x18000a7ba  lea     staticNameWithVersion, [rsp+270h+mutex]; this
+0x18000a7bf  call    ?acquire@?$mutex_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@QEBA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?ReleaseMutex@details@wil@@YAX0@ZU?$integral_constant@_K$01@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@@2@PEAKKH@Z
+0x18000a7c4  lea     data, [rsp+270h+pointer]; pointer
+0x18000a7c9  mov     [rsp+270h+pointer], 0
+0x18000a7d2  lea     staticNameWithVersion, [rsp+270h+name]; name
+0x18000a7d7  call    ?TryGetPointer@SemaphoreValue@details_abi@wil@@SAJPEBGPEAPEAX@Z; wil::details_abi::SemaphoreValue::TryGetPointer(ushort const *,void * *)
+0x18000a7dc  mov     ebx, eax
+0x18000a7de  test    eax, eax
+0x18000a7e0  jns     short loc_18000A809
+0x18000a7e2  mov     edx, 12Eh; lineNumber
+0x18000a7e7  mov     staticNameWithVersion, [rbp+178h]; callerReturnAddress
+0x18000a7ee  lea     r8, aWil; "wil"
+0x18000a7f5  mov     r9d, eax; hr
+0x18000a7f8  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000a7fd  lea     staticNameWithVersion, [rsp+270h+lock]; this
+0x18000a802  call    ??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?ReleaseMutex@details@wil@@YAX0@ZU?$integral_constant@_K$01@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ
+0x18000a807  jmp     short loc_18000A828
+0x18000a809  mov     staticNameWithVersion, [rsp+270h+pointer]
+0x18000a80e  test    staticNameWithVersion, staticNameWithVersion
+0x18000a811  jz      short loc_18000A858
+0x18000a813  mov     [rdi], staticNameWithVersion
+0x18000a816  mov     eax, [staticNameWithVersion]
+0x18000a818  inc     eax
+0x18000a81a  mov     [staticNameWithVersion], eax
+0x18000a81c  lea     staticNameWithVersion, [rsp+270h+lock]; this
+0x18000a821  call    ??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?ReleaseMutex@details@wil@@YAX0@ZU?$integral_constant@_K$01@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ
+0x18000a826  xor     ebx, ebx
+0x18000a828  lea     staticNameWithVersion, [rsp+270h+mutex]; this
+0x18000a82d  call    ??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ
+0x18000a832  mov     eax, ebx
+0x18000a834  mov     staticNameWithVersion, [rbp+170h+var_10]
+0x18000a83b  xor     staticNameWithVersion, rsp; StackCookie
+0x18000a83e  call    __security_check_cookie
+0x18000a843  lea     r11, [rsp+270h+var_s0]
+0x18000a84b  mov     rbx, [r11+20h]
+0x18000a84f  mov     rdi, [r11+28h]
+0x18000a853  mov     rsp, r11
+0x18000a856  pop     rbp
+0x18000a857  retn
+0x18000a858  mov     r8, rdi; data
+0x18000a85b  lea     data, [rsp+270h+mutex]; mutex
+0x18000a860  lea     staticNameWithVersion, [rsp+270h+name]; name
+0x18000a865  call    ?MakeAndInitialize@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@CAJPEBG$$QEAV?$unique_any_t@V?$mutex_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@@3@PEAPEAV123@@Z
+0x18000a86a  mov     ebx, eax
+0x18000a86c  test    eax, eax
+0x18000a86e  jns     short loc_18000A81C
+0x18000a870  mov     edx, 137h
+0x18000a875  jmp     loc_18000A7E7
+```

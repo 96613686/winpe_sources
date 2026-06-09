@@ -1,0 +1,45 @@
+# __stdio_common_vsprintf
+
+- ea: `0x180078c0e`
+- end: `0x180078c14`
+- name: `__stdio_common_vsprintf`
+- size: `6`
+- prototype: `int __cdecl(unsigned __int64 Options, char *Buffer, size_t BufferCount, const char *Format, _locale_t Locale, va_list ArgList)`
+- caller_count: `5`
+- callee_count: `0`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18002d020`
+- `0x18002d830`
+- `0x18002ea70`
+- `0x18002eb30`
+- `0x180036514`
+
+## import_xrefs
+
+- `api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsprintf` at `0x180078c0e`
+
+## pseudocode
+
+```c
+// attributes: thunk
+int __cdecl _stdio_common_vsprintf(
+        unsigned __int64 Options,
+        char *Buffer,
+        size_t BufferCount,
+        const char *Format,
+        _locale_t Locale,
+        va_list ArgList)
+{
+  return __stdio_common_vsprintf(Options, Buffer, BufferCount, Format, Locale, ArgList);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180078c0e  jmp     cs:__imp___stdio_common_vsprintf
+```

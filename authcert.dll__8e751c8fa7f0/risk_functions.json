@@ -1,0 +1,1098 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CERTMAP_USER_CONTEXT::Create(void *,_EXPLICIT_ACCESS_W *)",
+    "ea": "0x180001ad8",
+    "function_file": "functions/180001ad8_CERTMAP_USER_CONTEXT_Create_void_EXPLICIT_ACCESS_W.md",
+    "matched_imports": [
+      "SspiCli!GetUserNameExW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-processthreads-l1-1-0!SetThreadToken",
+      "api-ms-win-security-base-l1-1-0!DuplicateTokenEx",
+      "api-ms-win-security-base-l1-1-0!GetKernelObjectSecurity",
+      "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorDacl",
+      "api-ms-win-security-base-l1-1-0!InitializeSecurityDescriptor",
+      "api-ms-win-security-base-l1-1-0!RevertToSelf",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorDacl",
+      "api-ms-win-security-provider-l1-1-0!SetEntriesInAclW",
+      "iisutil!??1BUFFER@@QEAA@XZ",
+      "iisutil!?Resize@BUFFER@@QEAA_NK@Z",
+      "iisutil!?Resize@STRU@@QEAAJK@Z",
+      "iisutil!?SyncWithBuffer@STRU@@QEAAXXZ",
+      "iisutil!DisableTokenBackupPrivilege",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "DuplicateTokenEx failed, hr = 0x%x\n",
+      "CERTMAP_USER_CONTEXT::Create",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\auth_modules\\certmap_auth\\certmap_auth.cxx"
+    ],
+    "name": "?Create@CERTMAP_USER_CONTEXT@@QEAAJPEAXPEAU_EXPLICIT_ACCESS_W@@@Z",
+    "prototype": "__int64 __fastcall(CERTMAP_USER_CONTEXT *this, void *, struct _EXPLICIT_ACCESS_W *)",
+    "rank_score": 4949,
+    "size": 808,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CERTMAP_AUTH_PROVIDER::InitializeInstance(void)",
+    "ea": "0x180002110",
+    "function_file": "functions/180002110_CERTMAP_AUTH_PROVIDER_InitializeInstance_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation",
+      "iisutil!?Resize@BUFFER@@QEAA_NK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeInstance@CERTMAP_AUTH_PROVIDER@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CERTMAP_AUTH_PROVIDER *__hidden this)",
+    "rank_score": 1625,
+    "size": 328,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001644",
+    "function_file": "functions/180001644_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RegisterModule(ulong,IHttpModuleRegistrationInfo *,IHttpServer *)",
+    "ea": "0x180002c60",
+    "function_file": "functions/180002c60_RegisterModule_ulong_IHttpModuleRegistrationInfo_IHttpServer.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA",
+      "iisutil!IISGetPlatformType",
+      "iisutil!PuCreateDebugPrintsObject",
+      "iisutil!PuLoadDebugFlagsFromRegStr"
+    ],
+    "matched_strings": [
+      "Unable to Create Debug Print Object \n",
+      "System\\CurrentControlSet\\Services\\W3SVC\\Parameters\\Certmap_auth"
+    ],
+    "name": "?RegisterModule@@YAJKPEAVIHttpModuleRegistrationInfo@@PEAVIHttpServer@@@Z",
+    "prototype": "__int64 __fastcall(__int64, struct IHttpModuleRegistrationInfo *, struct IHttpServer *)",
+    "rank_score": 896,
+    "size": 303,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnAsyncCompletion(IHttpContext *,ulong,int,IHttpEventProvider *,IHttpCompletionInfo *)",
+    "ea": "0x180002340",
+    "function_file": "functions/180002340_CHttpModule_OnAsyncCompletion_IHttpContext_ulong_int_IHttpEventProvider_IHttpCompletionInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnAsyncCompletion"
+    ],
+    "name": "?OnAsyncCompletion@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@KHPEAVIHttpEventProvider@@PEAVIHttpCompletionInfo@@@Z",
+    "prototype": "",
+    "rank_score": 850,
+    "size": 56,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnPostUpdateRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002a20",
+    "function_file": "functions/180002a20_CHttpModule_OnPostUpdateRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnPostUpdateRequestCache"
+    ],
+    "name": "?OnPostUpdateRequestCache@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 850,
+    "size": 56,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnUpdateRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002c00",
+    "function_file": "functions/180002c00_CHttpModule_OnUpdateRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnUpdateRequestCache"
+    ],
+    "name": "?OnUpdateRequestCache@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 850,
+    "size": 56,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnMapPath(IHttpContext *,IMapPathProvider *)",
+    "ea": "0x180002640",
+    "function_file": "functions/180002640_CHttpModule_OnMapPath_IHttpContext_IMapPathProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnMapPath"
+    ],
+    "name": "?OnMapPath@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIMapPathProvider@@@Z",
+    "prototype": "",
+    "rank_score": 840,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnPostResolveRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x1800029c0",
+    "function_file": "functions/1800029c0_CHttpModule_OnPostResolveRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnPostResolveRequestCache"
+    ],
+    "name": "?OnPostResolveRequestCache@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 840,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnReadEntity(IHttpContext *,IReadEntityProvider *)",
+    "ea": "0x180002ac0",
+    "function_file": "functions/180002ac0_CHttpModule_OnReadEntity_IHttpContext_IReadEntityProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnReadEntity"
+    ],
+    "name": "?OnReadEntity@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIReadEntityProvider@@@Z",
+    "prototype": "",
+    "rank_score": 840,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnResolveRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002b60",
+    "function_file": "functions/180002b60_CHttpModule_OnResolveRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnResolveRequestCache"
+    ],
+    "name": "?OnResolveRequestCache@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 840,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnExecuteRequestHandler(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002580",
+    "function_file": "functions/180002580_CHttpModule_OnExecuteRequestHandler_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [],
+    "name": "?OnExecuteRequestHandler@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 810,
+    "size": 56,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnAcquireRequestState(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x1800022e0",
+    "function_file": "functions/1800022e0_CHttpModule_OnAcquireRequestState_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [],
+    "name": "?OnAcquireRequestState@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 800,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnAuthenticateRequest(IHttpContext *,IAuthenticationProvider *)",
+    "ea": "0x1800023a0",
+    "function_file": "functions/1800023a0_CHttpModule_OnAuthenticateRequest_IHttpContext_IAuthenticationProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [],
+    "name": "?OnAuthenticateRequest@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIAuthenticationProvider@@@Z",
+    "prototype": "",
+    "rank_score": 800,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnAuthorizeRequest(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002400",
+    "function_file": "functions/180002400_CHttpModule_OnAuthorizeRequest_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [],
+    "name": "?OnAuthorizeRequest@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 800,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnBeginRequest(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002460",
+    "function_file": "functions/180002460_CHttpModule_OnBeginRequest_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [],
+    "name": "?OnBeginRequest@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 800,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnCustomRequestNotification(IHttpContext *,ICustomNotificationProvider *)",
+    "ea": "0x1800024c0",
+    "function_file": "functions/1800024c0_CHttpModule_OnCustomRequestNotification_IHttpContext_ICustomNotificationProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [],
+    "name": "?OnCustomRequestNotification@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVICustomNotificationProvider@@@Z",
+    "prototype": "",
+    "rank_score": 800,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnEndRequest(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002520",
+    "function_file": "functions/180002520_CHttpModule_OnEndRequest_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [],
+    "name": "?OnEndRequest@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 800,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnLogRequest(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x1800025e0",
+    "function_file": "functions/1800025e0_CHttpModule_OnLogRequest_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [],
+    "name": "?OnLogRequest@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 800,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CERTMAP_USER_CONTEXT::GetPrimaryToken(void)",
+    "ea": "0x180002040",
+    "function_file": "functions/180002040_CERTMAP_USER_CONTEXT_GetPrimaryToken_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-base-l1-1-0!DuplicateTokenEx",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "DuplicateTokenEx failed, hr = 0x%x\n",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\auth_modules\\certmap_auth\\certmap_auth.cxx",
+      "CERTMAP_USER_CONTEXT::GetPrimaryToken"
+    ],
+    "name": "?GetPrimaryToken@CERTMAP_USER_CONTEXT@@UEAAPEAXXZ",
+    "prototype": "void *__fastcall(CERTMAP_USER_CONTEXT *__hidden this)",
+    "rank_score": 742,
+    "size": 142,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x18000174c",
+    "function_file": "functions/18000174c_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x180001790",
+    "function_file": "functions/180001790_report_gsfailure.md",
+    "matched_imports": [
+      "ntdll!RtlCaptureContext",
+      "ntdll!RtlLookupFunctionEntry",
+      "ntdll!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 626,
+    "size": 416,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_CRT_INIT",
+    "ea": "0x1800010a0",
+    "function_file": "functions/1800010a0_CRT_INIT.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "_CRT_INIT",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 549,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CERTMAP_USER_CONTEXT::`vector deleting destructor'(uint)",
+    "ea": "0x180001a00",
+    "function_file": "functions/180001a00_CERTMAP_USER_CONTEXT_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??_ECERTMAP_USER_CONTEXT@@EEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CERTMAP_USER_CONTEXT *__hidden this, unsigned int)",
+    "rank_score": 612,
+    "size": 109,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TraceAuthSucceeded(IHttpContext *,IHttpUser *,int)",
+    "ea": "0x180003c9c",
+    "function_file": "functions/180003c9c_TraceAuthSucceeded_IHttpContext_IHttpUser_int.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+    ],
+    "matched_strings": [],
+    "name": "?TraceAuthSucceeded@@YAJPEAVIHttpContext@@PEAVIHttpUser@@H@Z",
+    "prototype": "__int64 __fastcall(struct IHttpContext *, struct IHttpUser *, int)",
+    "rank_score": 416,
+    "size": 335,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CIISModuleFactory::Terminate(void)",
+    "ea": "0x180002ea0",
+    "function_file": "functions/180002ea0_CIISModuleFactory_Terminate_void.md",
+    "matched_imports": [
+      "iisutil!??1BUFFER@@QEAA@XZ",
+      "iisutil!PuDeleteDebugPrintsObject"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@CIISModuleFactory@@UEAAXXZ",
+    "prototype": "void __fastcall(CIISModuleFactory *__hidden this)",
+    "rank_score": 412,
+    "size": 123,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__delayLoadHelper2",
+    "ea": "0x180003e00",
+    "function_file": "functions/180003e00_delayLoadHelper2.md",
+    "matched_imports": [
+      "api-ms-win-core-delayload-l1-1-0!DelayLoadFailureHook",
+      "api-ms-win-core-delayload-l1-1-1!ResolveDelayLoadedAPI"
+    ],
+    "matched_strings": [],
+    "name": "__delayLoadHelper2",
+    "prototype": "",
+    "rank_score": 301,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IISAuthenticationEvents::AUTH_SUCCEEDED::RaiseEvent(IHttpTraceContext *,_GUID const *,ulong,int,ushort const *,ushort const *,ulong)",
+    "ea": "0x180003a60",
+    "function_file": "functions/180003a60_IISAuthenticationEvents_AUTH_SUCCEEDED_RaiseEvent_IHttpTraceContext_GUID_const_ulong_int_ushort_const_ushort_c.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ImpersonationAnonymous",
+      "ImpersonationIdentify",
+      "ImpersonationImpersonate",
+      "ImpersonationDelegate",
+      "ImpersonationUnknown",
+      "TokenImpersonationLevel"
+    ],
+    "name": "?RaiseEvent@AUTH_SUCCEEDED@IISAuthenticationEvents@@SAJPEAVIHttpTraceContext@@PEBU_GUID@@KHPEBG2K@Z",
+    "prototype": "__int64 __fastcall(struct IHttpTraceContext *, const struct _GUID *, unsigned int, int, const unsigned __int16 *, const unsigned __int16 *, unsigned int)",
+    "rank_score": 268,
+    "size": 566,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CERTMAP_AUTH_PROVIDER::DoAuthenticate(IHttpContext *,IHttpUser * *,AUTH_OUTPUT_FLAGS *)",
+    "ea": "0x180001e90",
+    "function_file": "functions/180001e90_CERTMAP_AUTH_PROVIDER_DoAuthenticate_IHttpContext_IHttpUser_AUTH_OUTPUT_FLAGS.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "?DoAuthenticate@CERTMAP_AUTH_PROVIDER@@UEAAJPEAVIHttpContext@@PEAPEAVIHttpUser@@PEAW4AUTH_OUTPUT_FLAGS@@@Z",
+    "prototype": "__int64 __fastcall(CERTMAP_AUTH_PROVIDER *this, struct IHttpContext *, struct IHttpUser **, enum AUTH_OUTPUT_FLAGS *)",
+    "rank_score": 206,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_XcptFilter_0",
+    "ea": "0x18000154a",
+    "function_file": "functions/18000154a_XcptFilter_0.md",
+    "matched_imports": [
+      "msvcrt!_XcptFilter"
+    ],
+    "matched_strings": [],
+    "name": "_XcptFilter_0",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_amsg_exit_0",
+    "ea": "0x180001556",
+    "function_file": "functions/180001556_amsg_exit_0.md",
+    "matched_imports": [
+      "msvcrt!_amsg_exit"
+    ],
+    "matched_strings": [],
+    "name": "_amsg_exit_0",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_callnewh_0",
+    "ea": "0x18000153e",
+    "function_file": "functions/18000153e_callnewh_0.md",
+    "matched_imports": [
+      "msvcrt!_callnewh"
+    ],
+    "matched_strings": [],
+    "name": "_callnewh_0",
+    "prototype": "int __cdecl(size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_initterm_0",
+    "ea": "0x180001734",
+    "function_file": "functions/180001734_initterm_0.md",
+    "matched_imports": [
+      "msvcrt!_initterm"
+    ],
+    "matched_strings": [],
+    "name": "_initterm_0",
+    "prototype": "void __cdecl(_PVFV *First, _PVFV *Last)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "free_0",
+    "ea": "0x180001526",
+    "function_file": "functions/180001526_free_0.md",
+    "matched_imports": [
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "free_0",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "malloc_0",
+    "ea": "0x180001532",
+    "function_file": "functions/180001532_malloc_0.md",
+    "matched_imports": [
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "malloc_0",
+    "prototype": "void *__cdecl(size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CERTMAP_META_STORED_CONTEXT::Initialize(IHttpContext *,INativeSectionException * *)",
+    "ea": "0x180002f24",
+    "function_file": "functions/180002f24_CERTMAP_META_STORED_CONTEXT_Initialize_IHttpContext_INativeSectionException.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "system.webServer/security/authentication/clientCertificateMappingAuthentication"
+    ],
+    "name": "?Initialize@CERTMAP_META_STORED_CONTEXT@@QEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+    "prototype": "__int64 __fastcall(CERTMAP_META_STORED_CONTEXT *__hidden this, struct IHttpContext *, struct INativeSectionException **)",
+    "rank_score": 65,
+    "size": 284,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 17,
+    "demangled": "AUTH_PROVIDER::DoWork(ulong,IHttpContext *,IHttpEventProvider *,void *,IHttpServer *)",
+    "ea": "0x180003048",
+    "function_file": "functions/180003048_AUTH_PROVIDER_DoWork_ulong_IHttpContext_IHttpEventProvider_void_IHttpServer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DoWork@AUTH_PROVIDER@@QEAA?AW4REQUEST_NOTIFICATION_STATUS@@KPEAVIHttpContext@@PEAVIHttpEventProvider@@PEAXPEAVIHttpServer@@@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64 *, __int64 *, int, int)",
+    "rank_score": 46,
+    "size": 1954,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180005010",
+    "function_file": "functions/180005010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800012d0",
+    "function_file": "functions/1800012d0_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180003e60",
+    "function_file": "functions/180003e60_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001314",
+    "function_file": "functions/180001314_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CERTMAP_AUTH_PROVIDER::SetupParsedMetadata(IHttpContext *,INativeSectionException * *)",
+    "ea": "0x180002db0",
+    "function_file": "functions/180002db0_CERTMAP_AUTH_PROVIDER_SetupParsedMetadata_IHttpContext_INativeSectionException.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetupParsedMetadata@CERTMAP_AUTH_PROVIDER@@UEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+    "prototype": "__int64 __fastcall(CERTMAP_AUTH_PROVIDER *this, struct IHttpContext *, struct INativeSectionException **)",
+    "rank_score": 15,
+    "size": 229,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180003ef0",
+    "function_file": "functions/180003ef0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 15,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001048",
+    "function_file": "functions/180001048_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 15,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180003f30",
+    "function_file": "functions/180003f30_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_sspicli_dll",
+    "ea": "0x180001930",
+    "function_file": "functions/180001930_tailMerge_sspicli_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_sspicli_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x180003f90",
+    "function_file": "functions/180003f90_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CIISHttpModule::OnAsyncCompletion(IHttpContext *,ulong,int,IHttpEventProvider *,IHttpCompletionInfo *)",
+    "ea": "0x180002380",
+    "function_file": "functions/180002380_CIISHttpModule_OnAsyncCompletion_IHttpContext_ulong_int_IHttpEventProvider_IHttpCompletionInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnAsyncCompletion@CIISHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@KHPEAVIHttpEventProvider@@PEAVIHttpCompletionInfo@@@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CIISHttpModule::OnUpdateRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002a60",
+    "function_file": "functions/180002a60_CIISHttpModule_OnUpdateRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnUpdateRequestCache@CIISHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 25,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180001728",
+    "function_file": "functions/180001728_DllMain.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 6,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IISAuthenticationEvents::AUTH_REQUEST_AUTH_TYPE::RaiseEvent(IHttpTraceContext *,_GUID const *,ulong)",
+    "ea": "0x1800037f0",
+    "function_file": "functions/1800037f0_IISAuthenticationEvents_AUTH_REQUEST_AUTH_TYPE_RaiseEvent_IHttpTraceContext_GUID_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RaiseEvent@AUTH_REQUEST_AUTH_TYPE@IISAuthenticationEvents@@SAJPEAVIHttpTraceContext@@PEBU_GUID@@K@Z",
+    "prototype": "__int64 __fastcall(struct IHttpTraceContext *, const struct _GUID *, unsigned int)",
+    "rank_score": 5,
+    "size": 305,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IISAuthenticationEvents::AUTH_START::RaiseEvent(IHttpTraceContext *,_GUID const *,ulong)",
+    "ea": "0x180003928",
+    "function_file": "functions/180003928_IISAuthenticationEvents_AUTH_START_RaiseEvent_IHttpTraceContext_GUID_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RaiseEvent@AUTH_START@IISAuthenticationEvents@@SAJPEAVIHttpTraceContext@@PEBU_GUID@@K@Z",
+    "prototype": "__int64 __fastcall(struct IHttpTraceContext *, const struct _GUID *, unsigned int)",
+    "rank_score": 5,
+    "size": 305,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_IsNonwritableInCurrentImage",
+    "ea": "0x1800015c0",
+    "function_file": "functions/1800015c0_IsNonwritableInCurrentImage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_IsNonwritableInCurrentImage",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CERTMAP_AUTH_PROVIDER::DoesApply(IHttpContext *,int *,INativeSectionException * *)",
+    "ea": "0x180001f60",
+    "function_file": "functions/180001f60_CERTMAP_AUTH_PROVIDER_DoesApply_IHttpContext_int_INativeSectionException.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DoesApply@CERTMAP_AUTH_PROVIDER@@UEAAJPEAVIHttpContext@@PEAHPEAPEAVINativeSectionException@@@Z",
+    "prototype": "__int64 __fastcall(CERTMAP_AUTH_PROVIDER *__hidden this, struct IHttpContext *, int *, struct INativeSectionException **)",
+    "rank_score": 3,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CERTMAP_AUTH_PROVIDER::IsEnabled(IHttpContext *,int *)",
+    "ea": "0x180002260",
+    "function_file": "functions/180002260_CERTMAP_AUTH_PROVIDER_IsEnabled_IHttpContext_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsEnabled@CERTMAP_AUTH_PROVIDER@@UEAAJPEAVIHttpContext@@PEAH@Z",
+    "prototype": "__int64 __fastcall(CERTMAP_AUTH_PROVIDER *__hidden this, struct IHttpContext *, int *)",
+    "rank_score": 2,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_FindPESection",
+    "ea": "0x180001570",
+    "function_file": "functions/180001570_FindPESection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_FindPESection",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_ValidateImageBase",
+    "ea": "0x180001610",
+    "function_file": "functions/180001610_ValidateImageBase.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ValidateImageBase",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CIISHttpModule::OnMapPath(IHttpContext *,IMapPathProvider *)",
+    "ea": "0x180002680",
+    "function_file": "functions/180002680_CIISHttpModule_OnMapPath_IHttpContext_IMapPathProvider.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnMapPath@CIISHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIMapPathProvider@@@Z",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CIISHttpModule::OnReadEntity(IHttpContext *,IReadEntityProvider *)",
+    "ea": "0x180002b00",
+    "function_file": "functions/180002b00_CIISHttpModule_OnReadEntity_IHttpContext_IReadEntityProvider.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnReadEntity@CIISHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIReadEntityProvider@@@Z",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CIISHttpModule::OnResolveRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002a00",
+    "function_file": "functions/180002a00_CIISHttpModule_OnResolveRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnResolveRequestCache@CIISHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CERTMAP_USER_CONTEXT::GetImpersonationToken(void)",
+    "ea": "0x180002020",
+    "function_file": "functions/180002020_CERTMAP_USER_CONTEXT_GetImpersonationToken_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetImpersonationToken@CERTMAP_USER_CONTEXT@@UEAAPEAXXZ",
+    "prototype": "void *__fastcall(CERTMAP_USER_CONTEXT *__hidden this)",
+    "rank_score": 0,
+    "size": 5,
+    "tags": []
+  }
+]

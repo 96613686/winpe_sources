@@ -1,0 +1,830 @@
+[
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000168b",
+        "from_func": "0x180001644",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000168b",
+        "from_func": "0x180001644",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002521",
+        "from_func": "0x180002480",
+        "from_func_name": "?InitializeInstance@IISCERTMAP_AUTH_PROVIDER@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180002521",
+        "from_func": "0x180002480",
+        "from_func_name": "?InitializeInstance@IISCERTMAP_AUTH_PROVIDER@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000bb90",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800024d3",
+        "from_func": "0x180002480",
+        "from_func_name": "?InitializeInstance@IISCERTMAP_AUTH_PROVIDER@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800024d3",
+        "from_func": "0x180002480",
+        "from_func_name": "?InitializeInstance@IISCERTMAP_AUTH_PROVIDER@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002501",
+        "from_func": "0x180002480",
+        "from_func_name": "?InitializeInstance@IISCERTMAP_AUTH_PROVIDER@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180002501",
+        "from_func": "0x180002480",
+        "from_func_name": "?InitializeInstance@IISCERTMAP_AUTH_PROVIDER@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-sysinfo-l1-1-0!GetComputerNameExW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800056c4",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-core-sysinfo-l1-1-0!GetComputerNameExW"
+      },
+      {
+        "from_ea": "0x1800056c4",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-core-sysinfo-l1-1-0!GetComputerNameExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!DuplicateTokenEx",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x180005892",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!DuplicateTokenEx"
+      },
+      {
+        "from_ea": "0x1800058b3",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!DuplicateTokenEx"
+      },
+      {
+        "from_ea": "0x180005a36",
+        "from_func": "0x1800059e0",
+        "from_func_name": "?GetPrimaryToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!DuplicateTokenEx"
+      },
+      {
+        "from_ea": "0x180005a5a",
+        "from_func": "0x1800059e0",
+        "from_func_name": "?GetPrimaryToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!DuplicateTokenEx"
+      },
+      {
+        "from_ea": "0x180005892",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!DuplicateTokenEx"
+      },
+      {
+        "from_ea": "0x1800058b3",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!DuplicateTokenEx"
+      },
+      {
+        "from_ea": "0x180005a36",
+        "from_func": "0x1800059e0",
+        "from_func_name": "?GetPrimaryToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!DuplicateTokenEx"
+      },
+      {
+        "from_ea": "0x180005a5a",
+        "from_func": "0x1800059e0",
+        "from_func_name": "?GetPrimaryToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!DuplicateTokenEx"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetKernelObjectSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x1800057c6",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!GetKernelObjectSecurity"
+      },
+      {
+        "from_ea": "0x18000580f",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!GetKernelObjectSecurity"
+      },
+      {
+        "from_ea": "0x1800057c6",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!GetKernelObjectSecurity"
+      },
+      {
+        "from_ea": "0x18000580f",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "api-ms-win-security-base-l1-1-0!GetKernelObjectSecurity"
+      },
+      {
+        "from_ea": "0x18000bb68",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-base-l1-1-0!GetKernelObjectSecurity"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180005dfa",
+        "from_func": "0x180005aec",
+        "from_func_name": "?IISLogonUser@IIS_LOGON_PROVIDER@@QEAAJPEBG0K0PEAUsockaddr@@PEAPEAVIHttpTokenEntry@@@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180006c1a",
+        "from_func": "0x180006b58",
+        "from_func_name": "?TraceAuthSucceeded@@YAJPEAVIHttpContext@@PEAVIHttpUser@@H@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180005dfa",
+        "from_func": "0x180005aec",
+        "from_func_name": "?IISLogonUser@IIS_LOGON_PROVIDER@@QEAAJPEBG0K0PEAUsockaddr@@PEAPEAVIHttpTokenEntry@@@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180006c1a",
+        "from_func": "0x180006b58",
+        "from_func_name": "?TraceAuthSucceeded@@YAJPEAVIHttpContext@@PEAVIHttpUser@@H@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-logon-l1-1-0!LogonUserExW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180005cee",
+        "from_func": "0x180005aec",
+        "from_func_name": "?IISLogonUser@IIS_LOGON_PROVIDER@@QEAAJPEBG0K0PEAUsockaddr@@PEAPEAVIHttpTokenEntry@@@Z",
+        "import": "api-ms-win-security-logon-l1-1-0!LogonUserExW"
+      },
+      {
+        "from_ea": "0x180005cee",
+        "from_func": "0x180005aec",
+        "from_func_name": "?IISLogonUser@IIS_LOGON_PROVIDER@@QEAAJPEBG0K0PEAUsockaddr@@PEAPEAVIHttpTokenEntry@@@Z",
+        "import": "api-ms-win-security-logon-l1-1-0!LogonUserExW"
+      },
+      {
+        "from_ea": "0x18000bbe0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-logon-l1-1-0!LogonUserExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-lsalookup-l2-1-0!LookupAccountNameW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x1800050db",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "api-ms-win-security-lsalookup-l2-1-0!LookupAccountNameW"
+      },
+      {
+        "from_ea": "0x18000514e",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "api-ms-win-security-lsalookup-l2-1-0!LookupAccountNameW"
+      },
+      {
+        "from_ea": "0x1800050db",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "api-ms-win-security-lsalookup-l2-1-0!LookupAccountNameW"
+      },
+      {
+        "from_ea": "0x18000514e",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "api-ms-win-security-lsalookup-l2-1-0!LookupAccountNameW"
+      },
+      {
+        "from_ea": "0x18000bb7c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-lsalookup-l2-1-0!LookupAccountNameW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaClose",
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180005701",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaClose"
+      },
+      {
+        "from_ea": "0x180005701",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaClose"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaFreeMemory",
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800056db",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaFreeMemory"
+      },
+      {
+        "from_ea": "0x1800056ee",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaFreeMemory"
+      },
+      {
+        "from_ea": "0x1800056db",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaFreeMemory"
+      },
+      {
+        "from_ea": "0x1800056ee",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaFreeMemory"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaOpenPolicy",
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000556b",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaOpenPolicy"
+      },
+      {
+        "from_ea": "0x18000556b",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaOpenPolicy"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaQueryInformationPolicy",
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x1800055de",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaQueryInformationPolicy"
+      },
+      {
+        "from_ea": "0x180005677",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaQueryInformationPolicy"
+      },
+      {
+        "from_ea": "0x1800055de",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaQueryInformationPolicy"
+      },
+      {
+        "from_ea": "0x180005677",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaQueryInformationPolicy"
+      },
+      {
+        "from_ea": "0x18000bc08",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-lsapolicy-l1-1-0!LsaQueryInformationPolicy"
+      }
+    ]
+  },
+  {
+    "import": "iisutil!?Copy@STRA@@QEAAJPEBD@Z",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003739",
+        "from_func": "0x1800036b0",
+        "from_func_name": "?InitializeInstance@CERT_MAP_RULE_ELEMENT@@QEAAJW4CERT_FIELD_ID@@PEBG1H@Z",
+        "import": "iisutil!?Copy@STRA@@QEAAJPEBD@Z"
+      },
+      {
+        "from_ea": "0x180003739",
+        "from_func": "0x1800036b0",
+        "from_func_name": "?InitializeInstance@CERT_MAP_RULE_ELEMENT@@QEAAJW4CERT_FIELD_ID@@PEBG1H@Z",
+        "import": "iisutil!?Copy@STRA@@QEAAJPEBD@Z"
+      }
+    ]
+  },
+  {
+    "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 28,
+    "xrefs": [
+      {
+        "from_ea": "0x180003909",
+        "from_func": "0x180003824",
+        "from_func_name": "?Match@CERT_MANYTO1_MAPPER@@QEAAJPEBU_CERT_CONTEXT@@PEAHPEAVSTRU@@21@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180003935",
+        "from_func": "0x180003824",
+        "from_func_name": "?Match@CERT_MANYTO1_MAPPER@@QEAAJPEBU_CERT_CONTEXT@@PEAHPEAVSTRU@@21@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180003e25",
+        "from_func": "0x180003d94",
+        "from_func_name": "?InitializeInstance@CERT_1TO1_MAP_RULE@@QEAAJPEBG00@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180003e42",
+        "from_func": "0x180003d94",
+        "from_func_name": "?InitializeInstance@CERT_1TO1_MAP_RULE@@QEAAJPEBG00@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004027",
+        "from_func": "0x180003f3c",
+        "from_func_name": "?Match@CERT_1TO1_MAPPER@@QEAAJPEBU_CERT_CONTEXT@@PEAHPEAVSTRU@@2@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000404e",
+        "from_func": "0x180003f3c",
+        "from_func_name": "?Match@CERT_1TO1_MAPPER@@QEAAJPEBU_CERT_CONTEXT@@PEAHPEAVSTRU@@2@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x1800042c6",
+        "from_func": "0x1800041f0",
+        "from_func_name": "?Initialize@IISCERTMAP_SITE_META_STORED_CONTEXT@@QEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004408",
+        "from_func": "0x1800041f0",
+        "from_func_name": "?Initialize@IISCERTMAP_SITE_META_STORED_CONTEXT@@QEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004ac5",
+        "from_func": "0x1800041f0",
+        "from_func_name": "?Initialize@IISCERTMAP_SITE_META_STORED_CONTEXT@@QEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004ae2",
+        "from_func": "0x1800041f0",
+        "from_func_name": "?Initialize@IISCERTMAP_SITE_META_STORED_CONTEXT@@QEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004f13",
+        "from_func": "0x180004ef8",
+        "from_func_name": "?CreateCacheKey@TOKEN_KEY@@QEAAJPEBG0K@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180005191",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x1800051b8",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x1800051dc",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180003909",
+        "from_func": "0x180003824",
+        "from_func_name": "?Match@CERT_MANYTO1_MAPPER@@QEAAJPEBU_CERT_CONTEXT@@PEAHPEAVSTRU@@21@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180003935",
+        "from_func": "0x180003824",
+        "from_func_name": "?Match@CERT_MANYTO1_MAPPER@@QEAAJPEBU_CERT_CONTEXT@@PEAHPEAVSTRU@@21@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180003e25",
+        "from_func": "0x180003d94",
+        "from_func_name": "?InitializeInstance@CERT_1TO1_MAP_RULE@@QEAAJPEBG00@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180003e42",
+        "from_func": "0x180003d94",
+        "from_func_name": "?InitializeInstance@CERT_1TO1_MAP_RULE@@QEAAJPEBG00@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004027",
+        "from_func": "0x180003f3c",
+        "from_func_name": "?Match@CERT_1TO1_MAPPER@@QEAAJPEBU_CERT_CONTEXT@@PEAHPEAVSTRU@@2@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000404e",
+        "from_func": "0x180003f3c",
+        "from_func_name": "?Match@CERT_1TO1_MAPPER@@QEAAJPEBU_CERT_CONTEXT@@PEAHPEAVSTRU@@2@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x1800042c6",
+        "from_func": "0x1800041f0",
+        "from_func_name": "?Initialize@IISCERTMAP_SITE_META_STORED_CONTEXT@@QEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004408",
+        "from_func": "0x1800041f0",
+        "from_func_name": "?Initialize@IISCERTMAP_SITE_META_STORED_CONTEXT@@QEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004ac5",
+        "from_func": "0x1800041f0",
+        "from_func_name": "?Initialize@IISCERTMAP_SITE_META_STORED_CONTEXT@@QEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004ae2",
+        "from_func": "0x1800041f0",
+        "from_func_name": "?Initialize@IISCERTMAP_SITE_META_STORED_CONTEXT@@QEAAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180004f13",
+        "from_func": "0x180004ef8",
+        "from_func_name": "?CreateCacheKey@TOKEN_KEY@@QEAAJPEBG0K@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x180005191",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x1800051b8",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x1800051dc",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      }
+    ]
+  },
+  {
+    "import": "iisutil!?Copy@STRU@@QEAAJPEBGK@Z",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800037dd",
+        "from_func": "0x1800036b0",
+        "from_func_name": "?InitializeInstance@CERT_MAP_RULE_ELEMENT@@QEAAJW4CERT_FIELD_ID@@PEBG1H@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBGK@Z"
+      },
+      {
+        "from_ea": "0x1800051c3",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBGK@Z"
+      },
+      {
+        "from_ea": "0x1800037dd",
+        "from_func": "0x1800036b0",
+        "from_func_name": "?InitializeInstance@CERT_MAP_RULE_ELEMENT@@QEAAJW4CERT_FIELD_ID@@PEBG1H@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBGK@Z"
+      },
+      {
+        "from_ea": "0x1800051c3",
+        "from_func": "0x180004fc4",
+        "from_func_name": "?DetermineUserAndDomain@IIS_LOGON_PROVIDER@@AEAAJPEBG0PEAVSTRU@@1PEAH@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBGK@Z"
+      }
+    ]
+  },
+  {
+    "import": "iisutil!?Copy@STRU@@QEAAJPEBV1@@Z",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800021b8",
+        "from_func": "0x180001da0",
+        "from_func_name": "?DoAuthenticate@IISCERTMAP_AUTH_PROVIDER@@UEAAJPEAVIHttpContext@@PEAPEAVIHttpUser@@PEAW4AUTH_OUTPUT_FLAGS@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBV1@@Z"
+      },
+      {
+        "from_ea": "0x1800021d4",
+        "from_func": "0x180001da0",
+        "from_func_name": "?DoAuthenticate@IISCERTMAP_AUTH_PROVIDER@@UEAAJPEAVIHttpContext@@PEAPEAVIHttpUser@@PEAW4AUTH_OUTPUT_FLAGS@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBV1@@Z"
+      },
+      {
+        "from_ea": "0x1800021b8",
+        "from_func": "0x180001da0",
+        "from_func_name": "?DoAuthenticate@IISCERTMAP_AUTH_PROVIDER@@UEAAJPEAVIHttpContext@@PEAPEAVIHttpUser@@PEAW4AUTH_OUTPUT_FLAGS@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBV1@@Z"
+      },
+      {
+        "from_ea": "0x1800021d4",
+        "from_func": "0x180001da0",
+        "from_func_name": "?DoAuthenticate@IISCERTMAP_AUTH_PROVIDER@@UEAAJPEAVIHttpContext@@PEAPEAVIHttpUser@@PEAW4AUTH_OUTPUT_FLAGS@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBV1@@Z"
+      }
+    ]
+  },
+  {
+    "import": "iisutil!DisableTokenBackupPrivilege",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180005932",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "iisutil!DisableTokenBackupPrivilege"
+      },
+      {
+        "from_ea": "0x180005932",
+        "from_func": "0x180005730",
+        "from_func_name": "?GetImpersonationToken@TOKEN_ENTRY@@UEAAPEAXXZ",
+        "import": "iisutil!DisableTokenBackupPrivilege"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001740",
+        "from_func": "0x180001740",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800017d0",
+        "from_func": "0x180001790",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x1800017d0",
+        "from_func": "0x180001790",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800017ef",
+        "from_func": "0x180001790",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x1800017ef",
+        "from_func": "0x180001790",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x18000bab4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlNtStatusToDosError",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800055b3",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "ntdll!RtlNtStatusToDosError"
+      },
+      {
+        "from_ea": "0x180005626",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "ntdll!RtlNtStatusToDosError"
+      },
+      {
+        "from_ea": "0x1800055b3",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "ntdll!RtlNtStatusToDosError"
+      },
+      {
+        "from_ea": "0x180005626",
+        "from_func": "0x18000551c",
+        "from_func_name": "?GetDefaultDomainName@IIS_LOGON_PROVIDER@@AEAAJXZ",
+        "import": "ntdll!RtlNtStatusToDosError"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000183c",
+        "from_func": "0x180001790",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x18000183c",
+        "from_func": "0x180001790",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  }
+]

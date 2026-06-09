@@ -1,0 +1,252 @@
+# AtmosCheck::AtmosCheck(void)
+
+- ea: `0x180099e64`
+- end: `0x1800a45ea`
+- name: `??0AtmosCheck@@QEAA@XZ`
+- size: `42886`
+- prototype: `AtmosCheck *__fastcall(AtmosCheck *__hidden this)`
+- caller_count: `1`
+- callee_count: `21`
+- tags: `registry_config, loader_planting`
+
+## callers
+
+- `0x1800b16dc`
+
+## callees
+
+- `0x18000ad20`
+- `0x18000b0c0`
+- `0x180015d6c`
+- `0x180031efc`
+- `0x180032600`
+- `0x180042610`
+- `0x18005f7ec`
+- `0x18005fd30`
+- `0x18006521c`
+- `0x180099e64`
+- `0x1800a9198`
+- `0x1800ab1d4`
+- `0x1800b25d4`
+- `0x1800b32f8`
+- `0x1800cd8d0`
+- `0x1800cddd0`
+- `0x1800ce75c`
+- `0x1800ce774`
+- `0x180159580`
+- `0x1801606e4`
+- `0x18016c010`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x18009a4d1`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x18009c70a`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x18009e03d`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x18009e640`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x1800a1c81`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x1800a3447`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x18009a4d1`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x18009c70a`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x18009e03d`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x18009e640`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x1800a1c81`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x1800a3447`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x18009a57f`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x18009c753`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x18009e107`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x18009e70a`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x1800a1d3c`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x1800a3481`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x18009a57f`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x18009c753`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x18009e107`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x18009e70a`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x1800a1d3c`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x1800a3481`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameW` at `0x18009aeaf`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameW` at `0x18009aeaf`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x18009a449`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x18009df80`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x18009e586`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x18009fbc8`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x1800a09b3`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x1800a1bd2`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x1800a1e71`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x1800a4546`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x18009a449`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x18009df80`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x18009e586`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x18009fbc8`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x1800a09b3`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x1800a1bd2`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x1800a1e71`
+- `api-ms-win-core-libraryloader-l1-2-0!FreeLibrary` at `0x1800a4546`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionEx` at `0x180099f13`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionEx` at `0x180099f13`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009a5d7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009a923`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009a9ed`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ac6d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ae0d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ae32`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ae4b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ae64`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009b79f`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009b865`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bde5`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009be18`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009be4b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009be79`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bea7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bec9`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bf1c`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bf6f`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c011`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c06f`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c09d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c0cb`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c0ec`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c212`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c3a3`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c66e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c8d6`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c908`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c935`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c962`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c983`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c9a1`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c9be`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c9ef`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ca18`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ca41`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ca5e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ca7e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cb9b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cbfc`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cc58`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ccba`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cd1a`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cd46`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cd72`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cd93`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ce29`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ce57`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ce85`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cea7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009d6d4`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009e16b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009e76e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a1d9d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a1eec`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a1f8e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a20b2`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2590`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2646`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2bf0`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2c27`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2c79`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2d21`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2d7d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2dab`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2dd9`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2dfa`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2e52`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2e85`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2eb3`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2ee1`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2f03`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a2fd4`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a3141`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a33ae`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a36c4`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a3718`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a3778`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a37d8`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a382f`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a385b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a3887`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a38a8`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a393a`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a3968`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a3996`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a39b8`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a4143`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a421b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a4244`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a4268`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a428c`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a42a8`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a42c8`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a42e4`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a4311`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a4335`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a4359`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a4375`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a4391`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a446c`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a448c`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a44a5`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800a44c1`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009a5d7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009a923`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009a9ed`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ac6d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ae0d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ae32`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ae4b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ae64`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009b79f`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009b865`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bde5`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009be18`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009be4b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009be79`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bea7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bec9`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bf1c`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009bf6f`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c011`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c06f`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c09d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c0cb`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c0ec`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c212`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c3a3`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c66e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c8d6`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c908`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c935`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c962`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c983`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c9a1`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c9be`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009c9ef`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ca18`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ca41`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ca5e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ca7e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cb9b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cbfc`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cc58`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ccba`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cd1a`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cd46`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cd72`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cd93`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ce29`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ce57`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009ce85`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009cea7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009d6d4`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18009e16b`
+
+## string_xrefs
+
+- `0x18009c6fe`: `ntdll.dll`
+- `0x1800a343b`: `ntdll.dll`
+
+## pseudocode
+
+```c
+
+```
