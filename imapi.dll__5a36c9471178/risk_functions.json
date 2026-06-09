@@ -1,0 +1,4487 @@
+[
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "ATL::CRegParser::RegisterSubkeys(ushort *,HKEY__ *,int,int)",
+    "ea": "0x180003a3c",
+    "function_file": "functions/180003a3c_ATL_CRegParser_RegisterSubkeys_ushort_HKEY_int_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW",
+      "KERNEL32!lstrcmpiW",
+      "USER32!CharNextW",
+      "msvcrt!wcsncpy_s"
+    ],
+    "matched_strings": [
+      "ForceRemove",
+      "NoRemove",
+      "Delete"
+    ],
+    "name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegParser *__hidden this, unsigned __int16 *, HKEY, int, int)",
+    "rank_score": 5367,
+    "size": 1949,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "CMSDiscMasterObj::Open(void)",
+    "ea": "0x18000ce60",
+    "function_file": "functions/18000ce60_CMSDiscMasterObj_Open_void.md",
+    "matched_imports": [
+      "KERNEL32!GetDateFormatW",
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoCreateInstance",
+      "ole32!CreateStreamOnHGlobal"
+    ],
+    "matched_strings": [],
+    "name": "?Open@CMSDiscMasterObj@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *__hidden this)",
+    "rank_score": 4228,
+    "size": 1633,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ATL::AtlRegisterClassCategoriesHelper(_GUID const &,ATL::_ATL_CATMAP_ENTRY const *,int)",
+    "ea": "0x1800082ac",
+    "function_file": "functions/1800082ac_ATL_AtlRegisterClassCategoriesHelper_GUID_const_ATL_ATL_CATMAP_ENTRY_const_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW",
+      "msvcrt!wcscat_s",
+      "msvcrt!wcscpy_s",
+      "ole32!CoCreateInstance",
+      "ole32!StringFromGUID2"
+    ],
+    "matched_strings": [
+      "CLSID\\",
+      "CLSID\\"
+    ],
+    "name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+    "prototype": "__int64 __fastcall(GUID *rguid, const struct ATL::_ATL_CATMAP_ENTRY *, int)",
+    "rank_score": 3526,
+    "size": 1204,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CRegParser::PreProcessBuffer(ushort *,ushort * *)",
+    "ea": "0x18000326c",
+    "function_file": "functions/18000326c_ATL_CRegParser_PreProcessBuffer_ushort_ushort.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!lstrcmpiW",
+      "USER32!CharNextW",
+      "msvcrt!wcsncpy_s",
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEAGPEAPEAG@Z",
+    "prototype": "int(ATL::CRegParser *__hidden this, unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 2221,
+    "size": 718,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "ATL::CAtlModule::UpdateRegistryFromResourceS(uint,int,ATL::_ATL_REGMAP_ENTRY *)",
+    "ea": "0x1800043dc",
+    "function_file": "functions/1800043dc_ATL_CAtlModule_UpdateRegistryFromResourceS_uint_int_ATL_ATL_REGMAP_ENTRY.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetModuleFileNameW",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [
+      "REGISTRY"
+    ],
+    "name": "?UpdateRegistryFromResourceS@CAtlModule@ATL@@QEAAJIHPEAU_ATL_REGMAP_ENTRY@2@@Z",
+    "prototype": "__int64 __fastcall(ATL::CAtlModule *__hidden this, unsigned int, int, struct ATL::_ATL_REGMAP_ENTRY *)",
+    "rank_score": 2089,
+    "size": 791,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlModule::UpdateRegistryFromResourceS(ushort const *,int,ATL::_ATL_REGMAP_ENTRY *)",
+    "ea": "0x1800093cc",
+    "function_file": "functions/1800093cc_ATL_CAtlModule_UpdateRegistryFromResourceS_ushort_const_int_ATL_ATL_REGMAP_ENTRY.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetModuleFileNameW",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [
+      "REGISTRY"
+    ],
+    "name": "?UpdateRegistryFromResourceS@CAtlModule@ATL@@QEAAJPEBGHPEAU_ATL_REGMAP_ENTRY@2@@Z",
+    "prototype": "int(ATL::CAtlModule *__hidden this, const unsigned __int16 *, int, struct ATL::_ATL_REGMAP_ENTRY *)",
+    "rank_score": 2086,
+    "size": 830,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "CMSDiscMasterObj::AddStorage(IFsiDirectoryItem *,IStorage *,long)",
+    "ea": "0x180004d50",
+    "function_file": "functions/180004d50_CMSDiscMasterObj_AddStorage_IFsiDirectoryItem_IStorage_long.md",
+    "matched_imports": [
+      "KERNEL32!WaitForSingleObject",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?AddStorage@CMSDiscMasterObj@@AEAAJPEAUIFsiDirectoryItem@@PEAUIStorage@@J@Z",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *__hidden this, struct IFsiDirectoryItem *, struct IStorage *, int)",
+    "rank_score": 2072,
+    "size": 2448,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CMSDiscMasterObj::CheckForMultiSessionJolietDisc(uchar *)",
+    "ea": "0x1800056e8",
+    "function_file": "functions/1800056e8_CMSDiscMasterObj_CheckForMultiSessionJolietDisc_uchar.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayDestroy",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?CheckForMultiSessionJolietDisc@CMSDiscMasterObj@@AEAAJPEAE@Z",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *__hidden this, unsigned __int8 *)",
+    "rank_score": 1634,
+    "size": 1899,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ATL::CRegParser::AddValue(ATL::CRegKey &,ushort const *,ushort *)",
+    "ea": "0x180002454",
+    "function_file": "functions/180002454_ATL_CRegParser_AddValue_ATL_CRegKey_ushort_const_ushort.md",
+    "matched_imports": [
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!lstrcmpiW",
+      "OLEAUT32!__imp_VarUI4FromStr",
+      "USER32!CharNextW"
+    ],
+    "matched_strings": [],
+    "name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegParser *__hidden this, struct ATL::CRegKey *, const unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 1629,
+    "size": 1276,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 0,
+    "demangled": "CMSDiscMasterObj::RecordDisc(uchar,uchar)",
+    "ea": "0x18000d830",
+    "function_file": "functions/18000d830_CMSDiscMasterObj_RecordDisc_uchar_uchar.md",
+    "matched_imports": [
+      "KERNEL32!ResetEvent",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?RecordDisc@CMSDiscMasterObj@@UEAAJEE@Z",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *__hidden this, unsigned __int8, unsigned __int8)",
+    "rank_score": 1457,
+    "size": 2210,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Imapi2Utility::GetCurrentPhysicalMediaType(IDiscRecorder2Ex *,_IMAPI_MEDIA_PHYSICAL_TYPE *)",
+    "ea": "0x1800171d8",
+    "function_file": "functions/1800171d8_Imapi2Utility_GetCurrentPhysicalMediaType_IDiscRecorder2Ex_IMAPI_MEDIA_PHYSICAL_TYPE.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?GetCurrentPhysicalMediaType@Imapi2Utility@@YAJPEAUIDiscRecorder2Ex@@PEAW4_IMAPI_MEDIA_PHYSICAL_TYPE@@@Z",
+    "prototype": "__int64 __fastcall(struct IDiscRecorder2Ex *this, struct IDiscRecorder2Ex *, enum _IMAPI_MEDIA_PHYSICAL_TYPE *)",
+    "rank_score": 1441,
+    "size": 2690,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "ATL::CComTypeInfoHolder::GetTI(ulong)",
+    "ea": "0x180015bd8",
+    "function_file": "functions/180015bd8_ATL_CComTypeInfoHolder_GetTI_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetModuleFileNameW",
+      "KERNEL32!LeaveCriticalSection",
+      "OLEAUT32!__imp_LoadRegTypeLib",
+      "OLEAUT32!__imp_LoadTypeLib"
+    ],
+    "matched_strings": [],
+    "name": "?GetTI@CComTypeInfoHolder@ATL@@QEAAJK@Z",
+    "prototype": "__int64 __fastcall(ATL::CComTypeInfoHolder *__hidden this, LCID lcid)",
+    "rank_score": 1426,
+    "size": 693,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "GetLastComError(void)",
+    "ea": "0x18000c330",
+    "function_file": "functions/18000c330_GetLastComError_void.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_GetErrorInfo",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysAllocStringByteLen",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_SysStringByteLen",
+      "OLEAUT32!__imp_SysStringLen"
+    ],
+    "matched_strings": [],
+    "name": "?GetLastComError@@YA?AVCComBSTR@ATL@@XZ",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1420,
+    "size": 255,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PrvWriterIsFileSystemReadWrite",
+    "ea": "0x180012548",
+    "function_file": "functions/180012548_PrvWriterIsFileSystemReadWrite.md",
+    "matched_imports": [
+      "KERNEL32!GetVolumeInformationW",
+      "OLEAUT32!__imp_SafeArrayDestroy",
+      "OLEAUT32!__imp_SafeArrayGetElement",
+      "OLEAUT32!__imp_SafeArrayGetLBound",
+      "OLEAUT32!__imp_SafeArrayGetUBound",
+      "OLEAUT32!__imp_VariantClear"
+    ],
+    "matched_strings": [],
+    "name": "PrvWriterIsFileSystemReadWrite",
+    "prototype": "",
+    "rank_score": 1411,
+    "size": 668,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "ATL::CRegParser::NextToken(ushort *)",
+    "ea": "0x1800030c0",
+    "function_file": "functions/1800030c0_ATL_CRegParser_NextToken_ushort.md",
+    "matched_imports": [
+      "USER32!CharNextW"
+    ],
+    "matched_strings": [],
+    "name": "?NextToken@CRegParser@ATL@@IEAAJPEAG@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegParser *__hidden this, unsigned __int16 *)",
+    "rank_score": 1408,
+    "size": 407,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CMSDiscRecorderObj::SetRecorderProperties(IPropertyStorage *)",
+    "ea": "0x180010170",
+    "function_file": "functions/180010170_CMSDiscRecorderObj_SetRecorderProperties_IPropertyStorage.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "ole32!CoTaskMemFree",
+      "ole32!PropVariantClear"
+    ],
+    "matched_strings": [
+      "MaxWriteSpeed",
+      "MaxWriteSpeed",
+      "MaxWriteSpeed",
+      "WriteSpeed",
+      "WriteSpeed"
+    ],
+    "name": "?SetRecorderProperties@CMSDiscRecorderObj@@UEAAJPEAUIPropertyStorage@@@Z",
+    "prototype": "__int64 __fastcall(CMSDiscRecorderObj *__hidden this, struct IPropertyStorage *)",
+    "rank_score": 1229,
+    "size": 1437,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001d44",
+    "function_file": "functions/180001d44_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "ATL::CRegObject::RegisterFromResource(ushort const *,ushort const *,ushort const *,int)",
+    "ea": "0x180003878",
+    "function_file": "functions/180003878_ATL_CRegObject_RegisterFromResource_ushort_const_ushort_const_ushort_const_int.md",
+    "matched_imports": [
+      "KERNEL32!FindResourceExW",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!LoadResource",
+      "KERNEL32!MultiByteToWideChar",
+      "KERNEL32!SizeofResource"
+    ],
+    "matched_strings": [],
+    "name": "?RegisterFromResource@CRegObject@ATL@@IEAAJPEBG00H@Z",
+    "prototype": "int(ATL::CRegObject *__hidden this, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, int)",
+    "rank_score": 1222,
+    "size": 443,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ATL::CComBSTR::operator+=(ushort const *)",
+    "ea": "0x180004848",
+    "function_file": "functions/180004848_ATL_CComBSTR_operator_ushort_const.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocStringLen",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_SysStringLen",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "??YCComBSTR@ATL@@QEAAAEAV01@PEBG@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1216,
+    "size": 285,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ATL::CRegKey::DeleteSubKey(ushort const *)",
+    "ea": "0x180002e78",
+    "function_file": "functions/180002e78_ATL_CRegKey_DeleteSubKey_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW"
+    ],
+    "matched_strings": [
+      "API-MS-Win-Core-LocalRegistry-L1-1-0.dll",
+      "RegDeleteKeyExW",
+      "advapi32.dll",
+      "RegDeleteKeyW"
+    ],
+    "name": "?DeleteSubKey@CRegKey@ATL@@QEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegKey *__hidden this, const unsigned __int16 *)",
+    "rank_score": 1186,
+    "size": 180,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CMSDiscMasterObj::SetJolietProperties(IPropertyStorage *)",
+    "ea": "0x180007420",
+    "function_file": "functions/180007420_CMSDiscMasterObj_SetJolietProperties_IPropertyStorage.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoTaskMemFree",
+      "ole32!PropVariantClear"
+    ],
+    "matched_strings": [],
+    "name": "?SetJolietProperties@CMSDiscMasterObj@@UEAAJPEAUIPropertyStorage@@@Z",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *__hidden this, struct IPropertyStorage *)",
+    "rank_score": 1032,
+    "size": 1894,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ATL::CRegKey::RecurseDeleteKey(ushort const *)",
+    "ea": "0x180003598",
+    "function_file": "functions/180003598_ATL_CRegKey_RecurseDeleteKey_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumKeyExW",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?RecurseDeleteKey@CRegKey@ATL@@QEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegKey *__hidden this, const unsigned __int16 *)",
+    "rank_score": 1017,
+    "size": 327,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ATL::CRegObject::~CRegObject(void)",
+    "ea": "0x180002028",
+    "function_file": "functions/180002028_ATL_CRegObject_CRegObject_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "??1CRegObject@ATL@@UEAA@XZ",
+    "prototype": "void __fastcall(ATL::CRegObject *__hidden this)",
+    "rank_score": 1006,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CMSDiscMasterObj::GetRegistryValues(void)",
+    "ea": "0x18000689c",
+    "function_file": "functions/18000689c_CMSDiscMasterObj_GetRegistryValues_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "msvcrt!wcsstr"
+    ],
+    "matched_strings": [
+      "TemporaryStashPath"
+    ],
+    "name": "?GetRegistryValues@CMSDiscMasterObj@@AEAAHXZ",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *__hidden this)",
+    "rank_score": 876,
+    "size": 881,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CRedbookTracks::OpenDisc(CMyUpdateList *)",
+    "ea": "0x1800165b4",
+    "function_file": "functions/1800165b4_CRedbookTracks_OpenDisc_CMyUpdateList.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?OpenDisc@CRedbookTracks@@IEAAJPEAVCMyUpdateList@@@Z",
+    "prototype": "__int64 __fastcall(CRedbookTracks *__hidden this, struct CMyUpdateList *)",
+    "rank_score": 837,
+    "size": 794,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "WriterErase",
+    "ea": "0x180012e0c",
+    "function_file": "functions/180012e0c_WriterErase.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "WriterErase",
+    "prototype": "",
+    "rank_score": 823,
+    "size": 755,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "CMsftDiscInformation::Init(IDiscRecorder2Ex *)",
+    "ea": "0x180017f58",
+    "function_file": "functions/180017f58_CMsftDiscInformation_Init_IDiscRecorder2Ex.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!Sleep",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?Init@CMsftDiscInformation@@QEAAJPEAUIDiscRecorder2Ex@@@Z",
+    "prototype": "__int64 __fastcall(CMsftDiscInformation *__hidden this, struct IDiscRecorder2Ex *)",
+    "rank_score": 820,
+    "size": 497,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlWinModule::~CAtlWinModule(void)",
+    "ea": "0x180016ee8",
+    "function_file": "functions/180016ee8_ATL_CAtlWinModule_CAtlWinModule_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "USER32!UnregisterClassA",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "??1CAtlWinModule@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CAtlWinModule *__hidden this)",
+    "rank_score": 804,
+    "size": 183,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x1800016a8",
+    "function_file": "functions/1800016a8_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "CMSEnumDiscRecordersObj::Next(ulong,IDiscRecorder * *,ulong *)",
+    "ea": "0x18000ab90",
+    "function_file": "functions/18000ab90_CMSEnumDiscRecordersObj_Next_ulong_IDiscRecorder_ulong.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?Next@CMSEnumDiscRecordersObj@@UEAAJKPEAPEAUIDiscRecorder@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CMSEnumDiscRecordersObj *__hidden this, unsigned int, struct IDiscRecorder **, unsigned int *)",
+    "rank_score": 626,
+    "size": 988,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CMSDiscMasterObj::InitInterfaceJoliet(void)",
+    "ea": "0x180006e50",
+    "function_file": "functions/180006e50_CMSDiscMasterObj_InitInterfaceJoliet_void.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?InitInterfaceJoliet@CMSDiscMasterObj@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *__hidden this)",
+    "rank_score": 621,
+    "size": 452,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ATL::CRegParser::RegisterBuffer(ushort *,int)",
+    "ea": "0x1800036e8",
+    "function_file": "functions/1800036e8_ATL_CRegParser_RegisterBuffer_ushort_int.md",
+    "matched_imports": [
+      "KERNEL32!lstrcmpiW",
+      "USER32!CharNextW",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?RegisterBuffer@CRegParser@ATL@@QEAAJPEAGH@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegParser *__hidden this, unsigned __int16 *, int)",
+    "rank_score": 620,
+    "size": 394,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ATL::CComTypeInfoHolder::LoadNameCache(ITypeInfo *)",
+    "ea": "0x1800163e0",
+    "function_file": "functions/1800163e0_ATL_CComTypeInfoHolder_LoadNameCache_ITypeInfo.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_SysStringLen"
+    ],
+    "matched_strings": [],
+    "name": "?LoadNameCache@CComTypeInfoHolder@ATL@@QEAAJPEAUITypeInfo@@@Z",
+    "prototype": "__int64 __fastcall(ATL::CComTypeInfoHolder *__hidden this, struct ITypeInfo *)",
+    "rank_score": 618,
+    "size": 460,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CMSDiscMasterObj::CMSDiscMasterObj(void)",
+    "ea": "0x18000b1a4",
+    "function_file": "functions/18000b1a4_CMSDiscMasterObj_CMSDiscMasterObj_void.md",
+    "matched_imports": [
+      "KERNEL32!GetTempFileNameW",
+      "KERNEL32!GetTempPath2W",
+      "OLEAUT32!__imp_SysAllocString"
+    ],
+    "matched_strings": [],
+    "name": "??0CMSDiscMasterObj@@QEAA@XZ",
+    "prototype": "CMSDiscMasterObj *__fastcall(CMSDiscMasterObj *__hidden this)",
+    "rank_score": 618,
+    "size": 428,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180009bd0",
+    "function_file": "functions/180009bd0_DllMain.md",
+    "matched_imports": [
+      "ADVAPI32!RegisterTraceGuidsW",
+      "ADVAPI32!UnregisterTraceGuids",
+      "KERNEL32!DisableThreadLibraryCalls"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 618,
+    "size": 539,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::IDispEventSimpleImpl<1,CRedbookWriterEvent,&_GUID const IID_DDiscFormat2TrackAtOnceEvents>::InvokeFromFuncInfo(void (CRedbookWriterEvent::*)(void),ATL::_ATL_FUNC_INFO &,tagDISPPARAMS *,tagVARIANT *)",
+    "ea": "0x180016224",
+    "function_file": "functions/180016224_ATL_IDispEventSimpleImpl_1_CRedbookWriterEvent_GUID_const_IID_DDiscFormat2TrackAtOnceEvents_InvokeFromFuncInfo.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_DispCallFunc",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit"
+    ],
+    "matched_strings": [],
+    "name": "?InvokeFromFuncInfo@?$IDispEventSimpleImpl@$00VCRedbookWriterEvent@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B@ATL@@QEAAJP8CRedbookWriterEvent@@EAAXXZAEAU_ATL_FUNC_INFO@2@PEAUtagDISPPARAMS@@PEAUtagVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(int, int, int, int, VARIANT *)",
+    "rank_score": 617,
+    "size": 435,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CIPropertyStorageWrapper::~CIPropertyStorageWrapper(void)",
+    "ea": "0x180010db8",
+    "function_file": "functions/180010db8_CIPropertyStorageWrapper_CIPropertyStorageWrapper_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "??1CIPropertyStorageWrapper@@QEAA@XZ",
+    "prototype": "void __fastcall(CIPropertyStorageWrapper *__hidden this)",
+    "rank_score": 617,
+    "size": 159,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CIEnumSTATPROPSTGWapper::Next(ulong,tagSTATPROPSTG *,ulong *)",
+    "ea": "0x180011510",
+    "function_file": "functions/180011510_CIEnumSTATPROPSTGWapper_Next_ulong_tagSTATPROPSTG_ulong.md",
+    "matched_imports": [
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObject",
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?Next@CIEnumSTATPROPSTGWapper@@UEAAJKPEAUtagSTATPROPSTG@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CIEnumSTATPROPSTGWapper *__hidden this, unsigned int, struct tagSTATPROPSTG *, unsigned int *)",
+    "rank_score": 616,
+    "size": 551,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CIPropertyStorageWrapper::WriteMultiple(ulong,tagPROPSPEC const * const,tagPROPVARIANT const * const,ulong)",
+    "ea": "0x180011d00",
+    "function_file": "functions/180011d00_CIPropertyStorageWrapper_WriteMultiple_ulong_tagPROPSPEC_const_const_tagPROPVARIANT_const_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObject",
+      "KERNEL32!lstrcmpiW"
+    ],
+    "matched_strings": [],
+    "name": "?WriteMultiple@CIPropertyStorageWrapper@@UEAAJKQEBUtagPROPSPEC@@QEBUtagPROPVARIANT@@K@Z",
+    "prototype": "__int64 __fastcall(CIPropertyStorageWrapper *this, unsigned int, const struct tagPROPSPEC *const, const struct tagPROPVARIANT *const, unsigned int)",
+    "rank_score": 607,
+    "size": 396,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CIPropertyStorageWrapper::ReadMultiple(ulong,tagPROPSPEC const * const,tagPROPVARIANT * const)",
+    "ea": "0x180011840",
+    "function_file": "functions/180011840_CIPropertyStorageWrapper_ReadMultiple_ulong_tagPROPSPEC_const_const_tagPROPVARIANT_const.md",
+    "matched_imports": [
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObject",
+      "KERNEL32!lstrcmpiW"
+    ],
+    "matched_strings": [],
+    "name": "?ReadMultiple@CIPropertyStorageWrapper@@UEAAJKQEBUtagPROPSPEC@@QEAUtagPROPVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(CIPropertyStorageWrapper *__hidden this, unsigned int, const struct tagPROPSPEC *const, struct tagPROPVARIANT *const)",
+    "rank_score": 604,
+    "size": 285,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CMSDiscRecorderObj::~CMSDiscRecorderObj(void)",
+    "ea": "0x18000e8d0",
+    "function_file": "functions/18000e8d0_CMSDiscRecorderObj_CMSDiscRecorderObj_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMSDiscRecorderObj@@QEAA@XZ",
+    "prototype": "void __fastcall(CMSDiscRecorderObj *__hidden this)",
+    "rank_score": 604,
+    "size": 127,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_Init_thread_header",
+    "ea": "0x180001b04",
+    "function_file": "functions/180001b04_Init_thread_header.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!ReleaseSRWLockExclusive",
+      "KERNEL32!SleepConditionVariableSRW"
+    ],
+    "matched_strings": [],
+    "name": "_Init_thread_header",
+    "prototype": "",
+    "rank_score": 503,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_Init_thread_footer",
+    "ea": "0x180001a94",
+    "function_file": "functions/180001a94_Init_thread_footer.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!ReleaseSRWLockExclusive",
+      "KERNEL32!WakeAllConditionVariable"
+    ],
+    "matched_strings": [],
+    "name": "_Init_thread_footer",
+    "prototype": "",
+    "rank_score": 502,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 3,
+    "demangled": "WriterQueryMediaType",
+    "ea": "0x180014288",
+    "function_file": "functions/180014288_WriterQueryMediaType.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "WriterQueryMediaType",
+    "prototype": "",
+    "rank_score": 446,
+    "size": 2495,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DllGetClassObject",
+    "ea": "0x180009ad0",
+    "function_file": "functions/180009ad0_DllGetClassObject.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "DllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 434,
+    "size": 248,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "CIPropertyStorageWrapper::CopyProperties(IPropertyStorage * *)",
+    "ea": "0x180010e98",
+    "function_file": "functions/180010e98_CIPropertyStorageWrapper_CopyProperties_IPropertyStorage.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree",
+      "ole32!PropVariantClear"
+    ],
+    "matched_strings": [],
+    "name": "?CopyProperties@CIPropertyStorageWrapper@@QEAAJPEAPEAUIPropertyStorage@@@Z",
+    "prototype": "__int64 __fastcall(CIPropertyStorageWrapper *__hidden this, struct IPropertyStorage **)",
+    "rank_score": 433,
+    "size": 522,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "_bstr_t::operator=(ushort const *)",
+    "ea": "0x180004784",
+    "function_file": "functions/180004784_bstr_t_operator_ushort_const.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "??4_bstr_t@@QEAAAEAV0@PEBG@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 429,
+    "size": 187,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>>::`vector deleting destructor'(uint)",
+    "ea": "0x18000b400",
+    "function_file": "functions/18000b400_ATL_CComObject_ATL_CComEnum_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_AT.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@V?$CComEnum@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@VCComMultiThreadModel@5@@ATL@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 424,
+    "size": 117,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CRedbookTracks::AddTrack(ulong)",
+    "ea": "0x180015260",
+    "function_file": "functions/180015260_CRedbookTracks_AddTrack_ulong.md",
+    "matched_imports": [
+      "SHLWAPI!SHCreateStreamOnFileEx"
+    ],
+    "matched_strings": [],
+    "name": "?AddTrack@CRedbookTracks@@QEAAJK@Z",
+    "prototype": "__int64 __fastcall(CRedbookTracks *__hidden this, unsigned int)",
+    "rank_score": 423,
+    "size": 572,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "WriterGetCaps",
+    "ea": "0x180013108",
+    "function_file": "functions/180013108_WriterGetCaps.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "WriterGetCaps",
+    "prototype": "",
+    "rank_score": 423,
+    "size": 713,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "ATL::CExpansionVector::Add(ushort const *,ushort const *)",
+    "ea": "0x180002178",
+    "function_file": "functions/180002178_ATL_CExpansionVector_Add_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?Add@CExpansionVector@ATL@@QEAAHPEBG0@Z",
+    "prototype": "int(ATL::CExpansionVector *__hidden this, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 421,
+    "size": 467,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CMSDiscMasterObj::CreateAudioTrack(long)",
+    "ea": "0x18000a430",
+    "function_file": "functions/18000a430_CMSDiscMasterObj_CreateAudioTrack_long.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateAudioTrack@CMSDiscMasterObj@@UEAAJJ@Z",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *this, unsigned int)",
+    "rank_score": 418,
+    "size": 302,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMSDiscMasterObj::OnWriteUpdate(IDispatch *,IDispatch *)",
+    "ea": "0x18000cc10",
+    "function_file": "functions/18000cc10_CMSDiscMasterObj_OnWriteUpdate_IDispatch_IDispatch.md",
+    "matched_imports": [
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?OnWriteUpdate@CMSDiscMasterObj@@UEAAXPEAUIDispatch@@0@Z",
+    "prototype": "void __fastcall(CMSDiscMasterObj *__hidden this, struct IDispatch *, struct IDispatch *)",
+    "rank_score": 418,
+    "size": 573,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CIPropertyStorageWrapper::GetPropNodeData(_propertyNodeDef *,tagPROPVARIANT *)",
+    "ea": "0x180011330",
+    "function_file": "functions/180011330_CIPropertyStorageWrapper_GetPropNodeData_propertyNodeDef_tagPROPVARIANT.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocStringLen",
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetPropNodeData@CIPropertyStorageWrapper@@QEAAJPEAU_propertyNodeDef@@PEAUtagPROPVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(CIPropertyStorageWrapper *__hidden this, struct _propertyNodeDef *, struct tagPROPVARIANT *)",
+    "rank_score": 417,
+    "size": 460,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ATL::CExpansionVector::ClearReplacements(void)",
+    "ea": "0x180002aec",
+    "function_file": "functions/180002aec_ATL_CExpansionVector_ClearReplacements_void.md",
+    "matched_imports": [
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "?ClearReplacements@CExpansionVector@ATL@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(ATL::CExpansionVector *__hidden this)",
+    "rank_score": 416,
+    "size": 168,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CMSDiscMasterObj::InitializeOnce(void)",
+    "ea": "0x18000c4a8",
+    "function_file": "functions/18000c4a8_CMSDiscMasterObj_InitializeOnce_void.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeOnce@CMSDiscMasterObj@@AEAAEXZ",
+    "prototype": "unsigned __int8 __fastcall(CMSDiscMasterObj *__hidden this)",
+    "rank_score": 416,
+    "size": 231,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CRedbookTracks::~CRedbookTracks(void)",
+    "ea": "0x1800150f8",
+    "function_file": "functions/1800150f8_CRedbookTracks_CRedbookTracks_void.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wremove"
+    ],
+    "matched_strings": [],
+    "name": "??1CRedbookTracks@@QEAA@XZ",
+    "prototype": "void __fastcall(CRedbookTracks *__hidden this)",
+    "rank_score": 416,
+    "size": 130,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::AtlComModuleGetClassObject(ATL::_ATL_COM_MODULE70 *,_GUID const &,_GUID const &,void * *)",
+    "ea": "0x1800081a0",
+    "function_file": "functions/1800081a0_ATL_AtlComModuleGetClassObject_ATL_ATL_COM_MODULE70_GUID_const_GUID_const_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?AtlComModuleGetClassObject@ATL@@YAJPEAU_ATL_COM_MODULE70@1@AEBU_GUID@@1PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(struct ATL::_ATL_COM_MODULE70 *, const struct _GUID *, const struct _GUID *, void **)",
+    "rank_score": 415,
+    "size": 262,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CMSDiscMasterObj::~CMSDiscMasterObj(void)",
+    "ea": "0x18000b394",
+    "function_file": "functions/18000b394_CMSDiscMasterObj_CMSDiscMasterObj_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "??1CMSDiscMasterObj@@QEAA@XZ",
+    "prototype": "void __fastcall(CMSDiscMasterObj *__hidden this)",
+    "rank_score": 415,
+    "size": 91,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CRegParser::CParseBuffer::Append(ushort const *,int)",
+    "ea": "0x18000298c",
+    "function_file": "functions/18000298c_ATL_CRegParser_CParseBuffer_Append_ushort_const_int.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s",
+      "ole32!CoTaskMemRealloc"
+    ],
+    "matched_strings": [],
+    "name": "?Append@CParseBuffer@CRegParser@ATL@@QEAAHPEBGH@Z",
+    "prototype": "int(ATL::CRegParser::CParseBuffer *__hidden this, const unsigned __int16 *, int)",
+    "rank_score": 414,
+    "size": 244,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "WriterOpenExclusive",
+    "ea": "0x1800140ac",
+    "function_file": "functions/1800140ac_WriterOpenExclusive.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "WriterOpenExclusive",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 469,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>::Clone(IEnumDiscMasterFormats * *)",
+    "ea": "0x18000b8a0",
+    "function_file": "functions/18000b8a0_ATL_CComEnum_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_ATL_CComMultiThre.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Clone@?$CComEnum@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@VCComMultiThreadModel@5@@ATL@@UEAAJPEAPEAUIEnumDiscMasterFormats@@@Z",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 72,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>::Next(ulong,_GUID *,ulong *)",
+    "ea": "0x18000c990",
+    "function_file": "functions/18000c990_ATL_CComEnum_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_ATL_CComMultiThre.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Next@?$CComEnum@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@VCComMultiThreadModel@5@@ATL@@UEAAJKPEAU_GUID@@PEAK@Z",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 73,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>::Skip(ulong)",
+    "ea": "0x18000e680",
+    "function_file": "functions/18000e680_ATL_CComEnum_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_ATL_CComMultiThre.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Skip@?$CComEnum@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@VCComMultiThreadModel@5@@ATL@@UEAAJK@Z",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 70,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>::Reset(void)",
+    "ea": "0x18000e270",
+    "function_file": "functions/18000e270_ATL_CComEnum_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_ATL_CComMultiThre.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Reset@?$CComEnum@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@VCComMultiThreadModel@5@@ATL@@UEAAJXZ",
+    "prototype": "",
+    "rank_score": 410,
+    "size": 54,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMSDiscRecorderObj::OpenExclusive(void)",
+    "ea": "0x18000fd40",
+    "function_file": "functions/18000fd40_CMSDiscRecorderObj_OpenExclusive_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?OpenExclusive@CMSDiscRecorderObj@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CMSDiscRecorderObj *__hidden this)",
+    "rank_score": 405,
+    "size": 217,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "CMSDiscRecorderObj::CMSDiscRecorderObj(void)",
+    "ea": "0x18000e850",
+    "function_file": "functions/18000e850_CMSDiscRecorderObj_CMSDiscRecorderObj_void.md",
+    "matched_imports": [
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??0CMSDiscRecorderObj@@QEAA@XZ",
+    "prototype": "CMSDiscRecorderObj *__fastcall(CMSDiscRecorderObj *__hidden this)",
+    "rank_score": 403,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlBaseModule::~CAtlBaseModule(void)",
+    "ea": "0x180016ea8",
+    "function_file": "functions/180016ea8_ATL_CAtlBaseModule_CAtlBaseModule_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "??1CAtlBaseModule@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CAtlBaseModule *__hidden this)",
+    "rank_score": 402,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CRegObject::AddReplacement(ushort const *,ushort const *)",
+    "ea": "0x1800023f0",
+    "function_file": "functions/1800023f0_ATL_CRegObject_AddReplacement_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?AddReplacement@CRegObject@ATL@@UEAAJPEBG0@Z",
+    "prototype": "int(ATL::CRegObject *__hidden this, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 402,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CRegObject::ClearReplacements(void)",
+    "ea": "0x180002ba0",
+    "function_file": "functions/180002ba0_ATL_CRegObject_ClearReplacements_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?ClearReplacements@CRegObject@ATL@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(ATL::CRegObject *__hidden this)",
+    "rank_score": 401,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CRedbookWriterEvent>::`scalar deleting destructor'(uint)",
+    "ea": "0x1800151a0",
+    "function_file": "functions/1800151a0_ATL_CComObject_CRedbookWriterEvent_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??_G?$CComObject@VCRedbookWriterEvent@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 233,
+    "size": 110,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "ATL::CComCriticalSection::Init(void)",
+    "ea": "0x180002f5c",
+    "function_file": "functions/180002f5c_ATL_CComCriticalSection_Init_void.md",
+    "matched_imports": [
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Init@CComCriticalSection@ATL@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(ATL::CComCriticalSection *__hidden this)",
+    "rank_score": 228,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "CMyUpdateList::UpdateAll(void)",
+    "ea": "0x180010aac",
+    "function_file": "functions/180010aac_CMyUpdateList_UpdateAll_void.md",
+    "matched_imports": [
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateAll@CMyUpdateList@@QEAAXXZ",
+    "prototype": "void __fastcall(CMyUpdateList *__hidden this)",
+    "rank_score": 227,
+    "size": 654,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator<ATL::CComObjectCached<ATL::CComClassFactory>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180002d30",
+    "function_file": "functions/180002d30_ATL_CComCreator_ATL_CComObjectCached_ATL_CComClassFactory_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 218,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "CMSDiscMasterObj::CountStorageItems(IStorage *)",
+    "ea": "0x180005e5c",
+    "function_file": "functions/180005e5c_CMSDiscMasterObj_CountStorageItems_IStorage.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?CountStorageItems@CMSDiscMasterObj@@AEAAKPEAUIStorage@@@Z",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *this, struct IStorage *)",
+    "rank_score": 225,
+    "size": 934,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 42,
+    "demangled": "WPP_SF_",
+    "ea": "0x180007bac",
+    "function_file": "functions/180007bac_WPP_SF.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 50,
+    "demangled": "WPP_SF_d",
+    "ea": "0x180007bd4",
+    "function_file": "functions/180007bd4_WPP_SF_d.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 44,
+    "demangled": "WPP_SF_q",
+    "ea": "0x180007d40",
+    "function_file": "functions/180007d40_WPP_SF_q.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 42,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x180007d80",
+    "function_file": "functions/180007d80_WPP_SF_qD.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 225,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::Release(void)",
+    "ea": "0x180004270",
+    "function_file": "functions/180004270_ATL_CComObjectCached_ATL_CComClassFactory_Release_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Release@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 224,
+    "size": 140,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_com_error::`scalar deleting destructor'(uint)",
+    "ea": "0x1800170f0",
+    "function_file": "functions/1800170f0_com_error_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "??_G_com_error@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(_com_error *__hidden this, unsigned int)",
+    "rank_score": 223,
+    "size": 89,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CAtlModule::GetGITPtr(IGlobalInterfaceTable * *)",
+    "ea": "0x180008a10",
+    "function_file": "functions/180008a10_ATL_CAtlModule_GetGITPtr_IGlobalInterfaceTable.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?GetGITPtr@CAtlModule@ATL@@UEAAJPEAPEAUIGlobalInterfaceTable@@@Z",
+    "prototype": "__int64 __fastcall(ATL::CAtlModule *__hidden this, struct IGlobalInterfaceTable **)",
+    "rank_score": 222,
+    "size": 117,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Imapi2Utility::GetPhysicalDvdStructure(IDiscRecorder2Ex *,uchar * *,ulong *)",
+    "ea": "0x180017c60",
+    "function_file": "functions/180017c60_Imapi2Utility_GetPhysicalDvdStructure_IDiscRecorder2Ex_uchar_ulong.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?GetPhysicalDvdStructure@Imapi2Utility@@YAJPEAUIDiscRecorder2Ex@@PEAPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(Imapi2Utility *__hidden this, struct IDiscRecorder2Ex *, unsigned __int8 **, unsigned int *)",
+    "rank_score": 219,
+    "size": 409,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "ATL::CAtlModule::Term(void)",
+    "ea": "0x1800092d0",
+    "function_file": "functions/1800092d0_ATL_CAtlModule_Term_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Term@CAtlModule@ATL@@QEAAXXZ",
+    "prototype": "void __fastcall(ATL::CAtlModule *__hidden this)",
+    "rank_score": 218,
+    "size": 164,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CMSDiscMasterObj::ReleaseAllResourcesFromOpen(void)",
+    "ea": "0x18000e168",
+    "function_file": "functions/18000e168_CMSDiscMasterObj_ReleaseAllResourcesFromOpen_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?ReleaseAllResourcesFromOpen@CMSDiscMasterObj@@AEAAXXZ",
+    "prototype": "void __fastcall(CMSDiscMasterObj *__hidden this)",
+    "rank_score": 217,
+    "size": 253,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CMsftTrackInformation::Init(IDiscRecorder2Ex *,ulong,_IMAPI_READ_TRACK_ADDRESS_TYPE,uchar)",
+    "ea": "0x180018204",
+    "function_file": "functions/180018204_CMsftTrackInformation_Init_IDiscRecorder2Ex_ulong_IMAPI_READ_TRACK_ADDRESS_TYPE_uchar.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?Init@CMsftTrackInformation@@QEAAJPEAUIDiscRecorder2Ex@@KW4_IMAPI_READ_TRACK_ADDRESS_TYPE@@E@Z",
+    "prototype": "__int64 __usercall@<rax>(CMsftTrackInformation *__hidden this@<rcx>, struct IDiscRecorder2Ex *@<rdx>, unsigned int@<r8d>, enum _IMAPI_READ_TRACK_ADDRESS_TYPE@<r9d>, unsigned __int8)",
+    "rank_score": 217,
+    "size": 323,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMSDiscMasterObj::OnDeviceRemoved(IDispatch *,ushort *)",
+    "ea": "0x18000cb00",
+    "function_file": "functions/18000cb00_CMSDiscMasterObj_OnDeviceRemoved_IDispatch_ushort.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "?OnDeviceRemoved@CMSDiscMasterObj@@UEAAXPEAUIDispatch@@PEAG@Z",
+    "prototype": "void __fastcall(CMSDiscMasterObj *__hidden this, struct IDispatch *, unsigned __int16 *)",
+    "rank_score": 216,
+    "size": 258,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComEnumImpl<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>>::Next(ulong,_GUID *,ulong *)",
+    "ea": "0x18000c9e0",
+    "function_file": "functions/18000c9e0_ATL_CComEnumImpl_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_Next_ulong_GU.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?Next@?$CComEnumImpl@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@@ATL@@UEAAJKPEAU_GUID@@PEAK@Z",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 232,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlComModule::~CAtlComModule(void)",
+    "ea": "0x180016fa8",
+    "function_file": "functions/180016fa8_ATL_CAtlComModule_CAtlComModule_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CAtlComModule@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CAtlComModule *__hidden this)",
+    "rank_score": 213,
+    "size": 112,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_com_error::~_com_error(void)",
+    "ea": "0x1800170a8",
+    "function_file": "functions/1800170a8_com_error_com_error_void.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "??1_com_error@@UEAA@XZ",
+    "prototype": "void __fastcall(_com_error *__hidden this)",
+    "rank_score": 212,
+    "size": 61,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CMSDiscRecorderObj::GetPath(ushort * *)",
+    "ea": "0x18000f520",
+    "function_file": "functions/18000f520_CMSDiscRecorderObj_GetPath_ushort.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString"
+    ],
+    "matched_strings": [],
+    "name": "?GetPath@CMSDiscRecorderObj@@UEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CMSDiscRecorderObj *__hidden this, unsigned __int16 **)",
+    "rank_score": 209,
+    "size": 316,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_DS",
+    "ea": "0x180007c60",
+    "function_file": "functions/180007c60_WPP_SF_DS.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_DS",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "WPP_SF_qDD",
+    "ea": "0x180007dd0",
+    "function_file": "functions/180007dd0_WPP_SF_qDD.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qDD",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "CMsftDiscInformation::~CMsftDiscInformation(void)",
+    "ea": "0x180017f24",
+    "function_file": "functions/180017f24_CMsftDiscInformation_CMsftDiscInformation_void.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "??1CMsftDiscInformation@@QEAA@XZ",
+    "prototype": "void __fastcall(CMsftDiscInformation *__hidden this)",
+    "rank_score": 205,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "WPP_SF_DD",
+    "ea": "0x180007c14",
+    "function_file": "functions/180007c14_WPP_SF_DD.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_DD",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ATL::CTempBuffer<ushort,1024,ATL::CCRTAllocator>::AllocateHeap(unsigned __int64)",
+    "ea": "0x180002958",
+    "function_file": "functions/180002958_ATL_CTempBuffer_ushort_1024_ATL_CCRTAllocator_AllocateHeap_unsigned_int64.md",
+    "matched_imports": [
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "?AllocateHeap@?$CTempBuffer@G$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "WPP_SF_DDD",
+    "ea": "0x180012a2c",
+    "function_file": "functions/180012a2c_WPP_SF_DDD.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_DDD",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 88,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x18000e804",
+    "function_file": "functions/18000e804_WPP_SF_qq.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 204,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "CIPropertyStorageWrapper::CIPropertyStorageWrapper(void)",
+    "ea": "0x180010d40",
+    "function_file": "functions/180010d40_CIPropertyStorageWrapper_CIPropertyStorageWrapper_void.md",
+    "matched_imports": [
+      "KERNEL32!CreateMutexW"
+    ],
+    "matched_strings": [],
+    "name": "??0CIPropertyStorageWrapper@@QEAA@XZ",
+    "prototype": "CIPropertyStorageWrapper *__fastcall(CIPropertyStorageWrapper *__hidden this)",
+    "rank_score": 203,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CMSEnumDiscRecordersObj::~CMSEnumDiscRecordersObj(void)",
+    "ea": "0x18000aa40",
+    "function_file": "functions/18000aa40_CMSEnumDiscRecordersObj_CMSEnumDiscRecordersObj_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMSEnumDiscRecordersObj@@QEAA@XZ",
+    "prototype": "void __fastcall(CMSEnumDiscRecordersObj *__hidden this)",
+    "rank_score": 203,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ATL::CComTypeInfoHolder::stringdispid::~stringdispid(void)",
+    "ea": "0x1800020cc",
+    "function_file": "functions/1800020cc_ATL_CComTypeInfoHolder_stringdispid_stringdispid_void.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "??1stringdispid@CComTypeInfoHolder@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CComTypeInfoHolder::stringdispid *__hidden this)",
+    "rank_score": 111,
+    "size": 10,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180001f5b",
+    "function_file": "functions/180001f5b_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 9,
+    "demangled": "memset_0",
+    "ea": "0x1800184ce",
+    "function_file": "functions/1800184ce_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 109,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CMSDiscRecorderObj::BuildProperties(void)",
+    "ea": "0x18000e958",
+    "function_file": "functions/18000e958_CMSDiscRecorderObj_BuildProperties_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MaxWriteSpeed",
+      "WriteSpeed"
+    ],
+    "name": "?BuildProperties@CMSDiscRecorderObj@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CMSDiscRecorderObj *__hidden this)",
+    "rank_score": 107,
+    "size": 804,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "ATL::_AtlRaiseException(ulong,ulong)",
+    "ea": "0x1800046fc",
+    "function_file": "functions/1800046fc_ATL_AtlRaiseException_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!RaiseException"
+    ],
+    "matched_strings": [],
+    "name": "?_AtlRaiseException@ATL@@YAXKK@Z",
+    "prototype": "void __fastcall(unsigned int, unsigned int)",
+    "rank_score": 105,
+    "size": 17,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memcpy_0",
+    "ea": "0x1800184c2",
+    "function_file": "functions/1800184c2_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "ATL::CTempBuffer<ushort,1024,ATL::CCRTAllocator>::FreeHeap(void)",
+    "ea": "0x180002f34",
+    "function_file": "functions/180002f34_ATL_CTempBuffer_ushort_1024_ATL_CCRTAllocator_FreeHeap_void.md",
+    "matched_imports": [
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "?FreeHeap@?$CTempBuffer@G$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ",
+    "prototype": "",
+    "rank_score": 102,
+    "size": 10,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 32,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180018500",
+    "function_file": "functions/180018500_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 150,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180019010",
+    "function_file": "functions/180019010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 30,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001144",
+    "function_file": "functions/180001144_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 25,
+    "demangled": "CMSDiscMasterObj::IsCallLegal(ulong)",
+    "ea": "0x18000c69c",
+    "function_file": "functions/18000c69c_CMSDiscMasterObj_IsCallLegal_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsCallLegal@CMSDiscMasterObj@@AEAAJK@Z",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *this, __int16)",
+    "rank_score": 32,
+    "size": 743,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComModule::UpdateRegistryFromResourceS(uint,int,ATL::_ATL_REGMAP_ENTRY *)",
+    "ea": "0x180009710",
+    "function_file": "functions/180009710_ATL_CComModule_UpdateRegistryFromResourceS_uint_int_ATL_ATL_REGMAP_ENTRY.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateRegistryFromResourceS@CComModule@ATL@@UEAAJIHPEAU_ATL_REGMAP_ENTRY@2@@Z",
+    "prototype": "__int64 __fastcall(ATL::CComModule *__hidden this, unsigned int, int, struct ATL::_ATL_REGMAP_ENTRY *)",
+    "rank_score": 31,
+    "size": 5,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComModule::UpdateRegistryFromResourceS(ushort const *,int,ATL::_ATL_REGMAP_ENTRY *)",
+    "ea": "0x180009720",
+    "function_file": "functions/180009720_ATL_CComModule_UpdateRegistryFromResourceS_ushort_const_int_ATL_ATL_REGMAP_ENTRY.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateRegistryFromResourceS@CComModule@ATL@@UEAAJPEBGHPEAU_ATL_REGMAP_ENTRY@2@@Z",
+    "prototype": "__int64 __fastcall(ATL::CComModule *__hidden this, const unsigned __int16 *, int, struct ATL::_ATL_REGMAP_ENTRY *)",
+    "rank_score": 31,
+    "size": 5,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "WriterGetSessionInfo",
+    "ea": "0x1800134e8",
+    "function_file": "functions/1800134e8_WriterGetSessionInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriterGetSessionInfo",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 1883,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ATL::CComModule::UpdateRegistryFromResourceD(ushort const *,int,ATL::_ATL_REGMAP_ENTRY *)",
+    "ea": "0x1800093c0",
+    "function_file": "functions/1800093c0_ATL_CComModule_UpdateRegistryFromResourceD_ushort_const_int_ATL_ATL_REGMAP_ENTRY.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateRegistryFromResourceD@CComModule@ATL@@UEAAJPEBGHPEAU_ATL_REGMAP_ENTRY@2@@Z",
+    "prototype": "__int64 __fastcall(ATL::CComModule *__hidden this, const unsigned __int16 *, int, struct ATL::_ATL_REGMAP_ENTRY *)",
+    "rank_score": 30,
+    "size": 6,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CMyUpdateList::PrvAddTail(IDiscMasterProgressEvents *)",
+    "ea": "0x1800108a8",
+    "function_file": "functions/1800108a8_CMyUpdateList_PrvAddTail_IDiscMasterProgressEvents.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PrvAddTail@CMyUpdateList@@AEAAEPEAUIDiscMasterProgressEvents@@@Z",
+    "prototype": "unsigned __int8 __fastcall(CMyUpdateList *__hidden this, struct IDiscMasterProgressEvents *)",
+    "rank_score": 27,
+    "size": 287,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CMyUpdateList::RemoveAll(void)",
+    "ea": "0x1800109d0",
+    "function_file": "functions/1800109d0_CMyUpdateList_RemoveAll_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveAll@CMyUpdateList@@QEAAEXZ",
+    "prototype": "unsigned __int8 __fastcall(CMyUpdateList *__hidden this)",
+    "rank_score": 26,
+    "size": 106,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 23,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x18000115c",
+    "function_file": "functions/18000115c_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 26,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CMSDiscMasterObj>::`scalar deleting destructor'(uint)",
+    "ea": "0x180007f70",
+    "function_file": "functions/180007f70_ATL_CComAggObject_CMSDiscMasterObj_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$CComAggObject@VCMSDiscMasterObj@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 25,
+    "size": 107,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CMSDiscRecorderObj>::`vector deleting destructor'(uint)",
+    "ea": "0x180004970",
+    "function_file": "functions/180004970_ATL_CComAggObject_CMSDiscRecorderObj_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComAggObject@VCMSDiscRecorderObj@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 24,
+    "size": 87,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComEnumImpl<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>>::~CComEnumImpl<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>>(void)",
+    "ea": "0x18000b358",
+    "function_file": "functions/18000b358_ATL_CComEnumImpl_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_CComEnumImpl_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComEnumImpl@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@@ATL@@UEAA@XZ",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 51,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CMSDiscRecorderObj>::`vector deleting destructor'(uint)",
+    "ea": "0x1800049d0",
+    "function_file": "functions/1800049d0_ATL_CComObject_CMSDiscRecorderObj_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCMSDiscRecorderObj@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(CMSDiscRecorderObj *this)",
+    "rank_score": 24,
+    "size": 97,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CMSEnumDiscRecordersObj>::`scalar deleting destructor'(uint)",
+    "ea": "0x1800020e0",
+    "function_file": "functions/1800020e0_ATL_CComObject_CMSEnumDiscRecordersObj_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$CComObject@VCMSEnumDiscRecordersObj@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(CMSEnumDiscRecordersObj *this)",
+    "rank_score": 24,
+    "size": 86,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ATL::CComTypeInfoHolder::Cleanup(unsigned __int64)",
+    "ea": "0x180015790",
+    "function_file": "functions/180015790_ATL_CComTypeInfoHolder_Cleanup_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Cleanup@CComTypeInfoHolder@ATL@@SAX_K@Z",
+    "prototype": "void __fastcall(unsigned __int64)",
+    "rank_score": 24,
+    "size": 121,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::IDispatchImpl<IDispatch,&_GUID const IID_DDiscFormat2TrackAtOnceEvents,&_GUID const LIBID_IMAPI2,1,0,ATL::CComTypeInfoHolder>::Invoke(long,_GUID const &,ulong,ushort,tagDISPPARAMS *,tagVARIANT *,tagEXCEPINFO *,uint *)",
+    "ea": "0x180016180",
+    "function_file": "functions/180016180_ATL_IDispatchImpl_IDispatch_GUID_const_IID_DDiscFormat2TrackAtOnceEvents_GUID_const_LIBID_IMAPI2_1_0_ATL_CComT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Invoke@?$IDispatchImpl@UIDispatch@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B$1?LIBID_IMAPI2@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJJAEBU_GUID@@KGPEAUtagDISPPARAMS@@PEAUtagVARIANT@@PEAUtagEXCEPINFO@@PEAI@Z",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 155,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComModule::`scalar deleting destructor'(uint)",
+    "ea": "0x180008030",
+    "function_file": "functions/180008030_ATL_CComModule_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCComModule@ATL@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(ATL::CComModule *__hidden this, unsigned int)",
+    "rank_score": 23,
+    "size": 57,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CMSDiscMasterObj>::`vector deleting destructor'(uint)",
+    "ea": "0x180007ff0",
+    "function_file": "functions/180007ff0_ATL_CComObject_CMSDiscMasterObj_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCMSDiscMasterObj@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 47,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "ATL::CComObjectRootBase::InternalQueryInterface(void *,ATL::_ATL_INTMAP_ENTRY const *,_GUID const &,void * *)",
+    "ea": "0x180002f84",
+    "function_file": "functions/180002f84_ATL_CComObjectRootBase_InternalQueryInterface_void_ATL_ATL_INTMAP_ENTRY_const_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalQueryInterface@CComObjectRootBase@ATL@@SAJPEAXPEBU_ATL_INTMAP_ENTRY@2@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(void *, const struct ATL::_ATL_INTMAP_ENTRY *, const struct _GUID *, void **)",
+    "rank_score": 23,
+    "size": 260,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::IDispatchImpl<IDispatch,&_GUID const IID_DDiscFormat2TrackAtOnceEvents,&_GUID const LIBID_IMAPI2,1,0,ATL::CComTypeInfoHolder>::GetTypeInfo(uint,ulong,ITypeInfo * *)",
+    "ea": "0x180015f10",
+    "function_file": "functions/180015f10_ATL_IDispatchImpl_IDispatch_GUID_const_IID_DDiscFormat2TrackAtOnceEvents_GUID_const_LIBID_IMAPI2_1_0_ATL_CComT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTypeInfo@?$IDispatchImpl@UIDispatch@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B$1?LIBID_IMAPI2@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJIKPEAPEAUITypeInfo@@@Z",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 103,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMyUpdateList::`scalar deleting destructor'(uint)",
+    "ea": "0x1800107a0",
+    "function_file": "functions/1800107a0_CMyUpdateList_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCMyUpdateList@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CMyUpdateList *__hidden this, unsigned int)",
+    "rank_score": 23,
+    "size": 64,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001440",
+    "function_file": "functions/180001440_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180001f9c",
+    "function_file": "functions/180001f9c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "ATL::AtlThrowImpl(long)",
+    "ea": "0x180002ac4",
+    "function_file": "functions/180002ac4_ATL_AtlThrowImpl_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AtlThrowImpl@ATL@@YAXJ@Z",
+    "prototype": "void __fastcall __noreturn(int)",
+    "rank_score": 22,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "TranslateIMAPI2Error",
+    "ea": "0x1800127ec",
+    "function_file": "functions/1800127ec_TranslateIMAPI2Error.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TranslateIMAPI2Error",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 22,
+    "size": 569,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ATL::CComEnumImpl<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>>::Clone(IEnumDiscMasterFormats * *)",
+    "ea": "0x18000b8f0",
+    "function_file": "functions/18000b8f0_ATL_CComEnumImpl_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_Clone_IEnumDi.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Clone@?$CComEnumImpl@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@@ATL@@UEAAJPEAPEAUIEnumDiscMasterFormats@@@Z",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 422,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::IDispatchImpl<IDispatch,&_GUID const IID_DDiscFormat2TrackAtOnceEvents,&_GUID const LIBID_IMAPI2,1,0,ATL::CComTypeInfoHolder>::GetIDsOfNames(_GUID const &,ushort * *,uint,ulong,long *)",
+    "ea": "0x180015ae0",
+    "function_file": "functions/180015ae0_ATL_IDispatchImpl_IDispatch_GUID_const_IID_DDiscFormat2TrackAtOnceEvents_GUID_const_LIBID_IMAPI2_1_0_ATL_CComT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetIDsOfNames@?$IDispatchImpl@UIDispatch@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B$1?LIBID_IMAPI2@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAGIKPEAJ@Z",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMSDiscMasterObj::UpdateRegistry(int)",
+    "ea": "0x1800093a0",
+    "function_file": "functions/1800093a0_CMSDiscMasterObj_UpdateRegistry_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateRegistry@CMSDiscMasterObj@@SAJH@Z",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 21,
+    "size": 22,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMSDiscRecorderObj::UpdateRegistry(int)",
+    "ea": "0x180007b90",
+    "function_file": "functions/180007b90_CMSDiscRecorderObj_UpdateRegistry_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateRegistry@CMSDiscRecorderObj@@SAJH@Z",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 21,
+    "size": 22,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMSEnumDiscRecordersObj::UpdateRegistry(int)",
+    "ea": "0x1800043c0",
+    "function_file": "functions/1800043c0_CMSEnumDiscRecordersObj_UpdateRegistry_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateRegistry@CMSEnumDiscRecordersObj@@SAJH@Z",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 21,
+    "size": 22,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CRedbookTracks::RecordDisc(IDiscRecorder2 *,CMyUpdateList *,ulong)",
+    "ea": "0x1800168f8",
+    "function_file": "functions/1800168f8_CRedbookTracks_RecordDisc_IDiscRecorder2_CMyUpdateList_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecordDisc@CRedbookTracks@@QEAAJPEAUIDiscRecorder2@@PEAVCMyUpdateList@@K@Z",
+    "prototype": "__int64 __fastcall(CRedbookTracks *this, struct IDiscRecorder2 *, struct CMyUpdateList *, int)",
+    "rank_score": 21,
+    "size": 531,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001484",
+    "function_file": "functions/180001484_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CIPropertyStorageWrapper::CreateNewPropNodeWithName(ushort const *)",
+    "ea": "0x1800110a8",
+    "function_file": "functions/1800110a8_CIPropertyStorageWrapper_CreateNewPropNodeWithName_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateNewPropNodeWithName@CIPropertyStorageWrapper@@QEAAPEAU_propertyNodeDef@@PEBG@Z",
+    "prototype": "struct _propertyNodeDef *__fastcall(CIPropertyStorageWrapper *__hidden this, const unsigned __int16 *)",
+    "rank_score": 19,
+    "size": 421,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CComCreator<ATL::CComAggObject<CMSDiscMasterObj>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180008784",
+    "function_file": "functions/180008784_ATL_CComCreator_ATL_CComAggObject_CMSDiscMasterObj_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComAggObject@VCMSDiscMasterObj@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 299,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CComCreator<ATL::CComObject<CMSDiscMasterObj>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x1800088b8",
+    "function_file": "functions/1800088b8_ATL_CComCreator_ATL_CComObject_CMSDiscMasterObj_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComObject@VCMSDiscMasterObj@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 308,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CComCreator<ATL::CComObject<CMSDiscRecorderObj>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180006320",
+    "function_file": "functions/180006320_ATL_CComCreator_ATL_CComObject_CMSDiscRecorderObj_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComObject@VCMSDiscRecorderObj@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 258,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "ATL::CComObject<CMSDiscMasterObj>::Release(void)",
+    "ea": "0x1800091e0",
+    "function_file": "functions/1800091e0_ATL_CComObject_CMSDiscMasterObj_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCMSDiscMasterObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 141,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CRedbookWriterEvent::Update(IDispatch *,IDispatch *)",
+    "ea": "0x180014d60",
+    "function_file": "functions/180014d60_CRedbookWriterEvent_Update_IDispatch_IDispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Update@CRedbookWriterEvent@@UEAAXPEAUIDispatch@@0@Z",
+    "prototype": "void __fastcall(CRedbookWriterEvent *__hidden this, struct IDispatch *, struct IDispatch *)",
+    "rank_score": 18,
+    "size": 484,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CComCreator<ATL::CComAggObject<CMSDiscRecorderObj>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180006224",
+    "function_file": "functions/180006224_ATL_CComCreator_ATL_CComAggObject_CMSDiscRecorderObj_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComAggObject@VCMSDiscRecorderObj@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 243,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ATL::CComCreator<ATL::CComObject<CMSEnumDiscRecordersObj>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180002c18",
+    "function_file": "functions/180002c18_ATL_CComCreator_ATL_CComObject_CMSEnumDiscRecordersObj_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComObject@VCMSEnumDiscRecordersObj@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 270,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ATL::CComObject<ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>>::CComObject<ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>>(void *)",
+    "ea": "0x18000b10c",
+    "function_file": "functions/18000b10c_ATL_CComObject_ATL_CComEnum_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_AT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0?$CComObject@V?$CComEnum@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@VCComMultiThreadModel@5@@ATL@@@ATL@@QEAA@PEAX@Z",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 145,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CMSDiscRecorderObj>::CreateInstance(ATL::CComObject<CMSDiscRecorderObj> * *)",
+    "ea": "0x18000aaa4",
+    "function_file": "functions/18000aaa4_ATL_CComObject_CMSDiscRecorderObj_CreateInstance_ATL_CComObject_CMSDiscRecorderObj.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComObject@VCMSDiscRecorderObj@@@ATL@@SAJPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 17,
+    "size": 229,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ATL::CComTypeInfoHolder::GetIDsOfNames(_GUID const &,ushort * *,uint,ulong,long *)",
+    "ea": "0x180015af4",
+    "function_file": "functions/180015af4_ATL_CComTypeInfoHolder_GetIDsOfNames_GUID_const_ushort_uint_ulong_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetIDsOfNames@CComTypeInfoHolder@ATL@@QEAAJAEBU_GUID@@PEAPEAGIKPEAJ@Z",
+    "prototype": "__int64 __fastcall(ATL::CComTypeInfoHolder *__hidden this, const struct _GUID *, unsigned __int16 **, unsigned int, LCID lcid, int *)",
+    "rank_score": 17,
+    "size": 221,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "operator delete[](void *)",
+    "ea": "0x180001150",
+    "function_file": "functions/180001150_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_V@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 17,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "ATL::CComContainedObject<CMSDiscMasterObj>::AddRef(void)",
+    "ea": "0x1800080a0",
+    "function_file": "functions/1800080a0_ATL_CComContainedObject_CMSDiscMasterObj_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 19,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "ATL::CComContainedObject<CMSDiscMasterObj>::Release(void)",
+    "ea": "0x180009170",
+    "function_file": "functions/180009170_ATL_CComContainedObject_CMSDiscMasterObj_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 19,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "ATL::CComObject<CMSDiscMasterObj>::AddRef(void)",
+    "ea": "0x180008110",
+    "function_file": "functions/180008110_ATL_CComObject_CMSDiscMasterObj_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCMSDiscMasterObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 47,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CMSEnumDiscRecordersObj>::CreateInstance(ATL::CComObject<CMSEnumDiscRecordersObj> * *)",
+    "ea": "0x18000bb64",
+    "function_file": "functions/18000bb64_ATL_CComObject_CMSEnumDiscRecordersObj_CreateInstance_ATL_CComObject_CMSEnumDiscRecordersObj.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComObject@VCMSEnumDiscRecordersObj@@@ATL@@SAJPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 16,
+    "size": 246,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DllRegisterServer",
+    "ea": "0x180009e00",
+    "function_file": "functions/180009e00_DllRegisterServer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllRegisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 16,
+    "size": 277,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComPtr<ITypeInfo>::operator=<ITypeInfo2>(ATL::CComPtr<ITypeInfo2> const &)",
+    "ea": "0x180014fc8",
+    "function_file": "functions/180014fc8_ATL_CComPtr_ITypeInfo_operator_ITypeInfo2_ATL_CComPtr_ITypeInfo2_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$?4UITypeInfo2@@@?$CComPtr@UITypeInfo@@@ATL@@QEAAPEAUITypeInfo@@AEBV?$CComPtr@UITypeInfo2@@@1@@Z",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 264,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ATL::IDispEventImpl<1,CRedbookWriterEvent,&_GUID const IID_DDiscFormat2TrackAtOnceEvents,&_GUID const LIBID_IMAPI2,1,0,ATL::CComTypeInfoHolder>::GetFuncInfoFromId(_GUID const &,long,ulong,ATL::_ATL_FUNC_INFO &)",
+    "ea": "0x1800159b0",
+    "function_file": "functions/1800159b0_ATL_IDispEventImpl_1_CRedbookWriterEvent_GUID_const_IID_DDiscFormat2TrackAtOnceEvents_GUID_const_LIBID_IMAPI2_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFuncInfoFromId@?$IDispEventImpl@$00VCRedbookWriterEvent@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B$1?LIBID_IMAPI2@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJAEBU_GUID@@JKAEAU_ATL_FUNC_INFO@2@@Z",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 255,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CMyUpdateList::Init(void *,uchar *)",
+    "ea": "0x1800107e8",
+    "function_file": "functions/1800107e8_CMyUpdateList_Init_void_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@CMyUpdateList@@QEAAEPEAXPEAE@Z",
+    "prototype": "unsigned __int8 __fastcall(CMyUpdateList *__hidden this, void *, unsigned __int8 *)",
+    "rank_score": 15,
+    "size": 186,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DllUnregisterServer",
+    "ea": "0x180009f20",
+    "function_file": "functions/180009f20_DllUnregisterServer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllUnregisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 15,
+    "size": 251,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "GetInternalClassPtr<IDiscRecorder,CMSDiscRecorderObj>(_com_ptr_t<_com_IIID<IDiscRecorder,&__s_GUID const _GUID_85ac9776_ca88_4cf2_894e_09598c078a41>>)",
+    "ea": "0x18000b0b4",
+    "function_file": "functions/18000b0b4_GetInternalClassPtr_IDiscRecorder_CMSDiscRecorderObj_com_ptr_t_com_IIID_IDiscRecorder_s_GUID_const_GUID_85ac97.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$GetInternalClassPtr@UIDiscRecorder@@VCMSDiscRecorderObj@@@@YAPEAVCMSDiscRecorderObj@@V?$_com_ptr_t@V?$_com_IIID@UIDiscRecorder@@$1?_GUID_85ac9776_ca88_4cf2_894e_09598c078a41@@3U__s_GUID@@B@@@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 15,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180018540",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "ATL::CComContainedObject<CMSDiscMasterObj>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x1800090d0",
+    "function_file": "functions/1800090d0_ATL_CComContainedObject_CMSDiscMasterObj_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "ATL::CComObject<CMSDiscMasterObj>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180009120",
+    "function_file": "functions/180009120_ATL_CComObject_CMSDiscMasterObj_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCMSDiscMasterObj@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CMSDiscMasterObj>::~CComObject<CMSDiscMasterObj>(void)",
+    "ea": "0x180007e90",
+    "function_file": "functions/180007e90_ATL_CComObject_CMSDiscMasterObj_CComObject_CMSDiscMasterObj_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComObject@VCMSDiscMasterObj@@@ATL@@UEAA@XZ",
+    "prototype": "__int64 __fastcall(CMSDiscMasterObj *this)",
+    "rank_score": 14,
+    "size": 121,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CMSDiscRecorderObj>::Release(void)",
+    "ea": "0x180007380",
+    "function_file": "functions/180007380_ATL_CComObject_CMSDiscRecorderObj_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCMSDiscRecorderObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 129,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CRedbookWriterEvent>::Release(void)",
+    "ea": "0x180016b20",
+    "function_file": "functions/180016b20_ATL_CComObject_CRedbookWriterEvent_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCRedbookWriterEvent@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 129,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CMyUpdateList::SetDataBurnAddProgress(ulong)",
+    "ea": "0x180010a40",
+    "function_file": "functions/180010a40_CMyUpdateList_SetDataBurnAddProgress_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetDataBurnAddProgress@CMyUpdateList@@QEAAEK@Z",
+    "prototype": "unsigned __int8 __fastcall(CMyUpdateList *__hidden this, unsigned int)",
+    "rank_score": 14,
+    "size": 101,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CMSDiscMasterObj>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180009060",
+    "function_file": "functions/180009060_ATL_CComAggObject_CMSDiscMasterObj_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComAggObject@VCMSDiscMasterObj@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 99,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CMSDiscRecorderObj>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x1800071f0",
+    "function_file": "functions/1800071f0_ATL_CComAggObject_CMSDiscRecorderObj_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComAggObject@VCMSDiscRecorderObj@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 99,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CMSDiscRecorderObj>::Release(void)",
+    "ea": "0x1800072c0",
+    "function_file": "functions/1800072c0_ATL_CComAggObject_CMSDiscRecorderObj_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComAggObject@VCMSDiscRecorderObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 129,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComEnumImpl<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>>::Init(_GUID *,_GUID *,IUnknown *,ATL::CComEnumFlags)",
+    "ea": "0x18000c438",
+    "function_file": "functions/18000c438_ATL_CComEnumImpl_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_Init_GUID_GUI.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@?$CComEnumImpl@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@@ATL@@QEAAJPEAU_GUID@@0PEAUIUnknown@@W4CComEnumFlags@2@@Z",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 103,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>>::Release(void)",
+    "ea": "0x18000e0e0",
+    "function_file": "functions/18000e0e0_ATL_CComObject_ATL_CComEnum_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_AT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@V?$CComEnum@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@VCComMultiThreadModel@5@@ATL@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 129,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CMSEnumDiscRecordersObj>::Release(void)",
+    "ea": "0x1800041e0",
+    "function_file": "functions/1800041e0_ATL_CComObject_CMSEnumDiscRecordersObj_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCMSEnumDiscRecordersObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 129,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::IDispEventImpl<1,CRedbookWriterEvent,&_GUID const IID_DDiscFormat2TrackAtOnceEvents,&_GUID const LIBID_IMAPI2,1,0,ATL::CComTypeInfoHolder>::GetTypeInfo(uint,ulong,ITypeInfo * *)",
+    "ea": "0x180015ea0",
+    "function_file": "functions/180015ea0_ATL_IDispEventImpl_1_CRedbookWriterEvent_GUID_const_IID_DDiscFormat2TrackAtOnceEvents_GUID_const_LIBID_IMAPI2_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTypeInfo@?$IDispEventImpl@$00VCRedbookWriterEvent@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B$1?LIBID_IMAPI2@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJIKPEAPEAUITypeInfo@@@Z",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 103,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::_dynamic_initializer_for___AtlComModule__",
+    "ea": "0x180001110",
+    "function_file": "functions/180001110_ATL_dynamic_initializer_for_AtlComModule.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ATL::_dynamic_initializer_for___AtlComModule__",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_com_raise_error(long,IErrorInfo *)",
+    "ea": "0x180017150",
+    "function_file": "functions/180017150_com_raise_error_long_IErrorInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_com_raise_error@@YAXJPEAUIErrorInfo@@@Z",
+    "prototype": "void __fastcall __noreturn(int, struct IErrorInfo *)",
+    "rank_score": 13,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComClassFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x180002e10",
+    "function_file": "functions/180002e10_ATL_CComClassFactory_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CComClassFactory@ATL@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(ATL::CComClassFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 12,
+    "size": 98,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComClassFactory::LockServer(int)",
+    "ea": "0x180003090",
+    "function_file": "functions/180003090_ATL_CComClassFactory_LockServer_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?LockServer@CComClassFactory@ATL@@UEAAJH@Z",
+    "prototype": "__int64 __fastcall(ATL::CComClassFactory *__hidden this, int)",
+    "rank_score": 12,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComContainedObject<CMSDiscRecorderObj>::AddRef(void)",
+    "ea": "0x180004ce0",
+    "function_file": "functions/180004ce0_ATL_CComContainedObject_CMSDiscRecorderObj_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCMSDiscRecorderObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComContainedObject<CMSDiscRecorderObj>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180007260",
+    "function_file": "functions/180007260_ATL_CComContainedObject_CMSDiscRecorderObj_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComContainedObject@VCMSDiscRecorderObj@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComContainedObject<CMSDiscRecorderObj>::Release(void)",
+    "ea": "0x180007350",
+    "function_file": "functions/180007350_ATL_CComContainedObject_CMSDiscRecorderObj_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCMSDiscRecorderObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator2<ATL::CComCreator<ATL::CComObject<CMSDiscMasterObj>>,ATL::CComCreator<ATL::CComAggObject<CMSDiscMasterObj>>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180008770",
+    "function_file": "functions/180008770_ATL_CComCreator2_ATL_CComCreator_ATL_CComObject_CMSDiscMasterObj_ATL_CComCreator_ATL_CComAggObject_CMSDiscMast.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCMSDiscMasterObj@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCMSDiscMasterObj@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 14,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator2<ATL::CComCreator<ATL::CComObject<CMSDiscRecorderObj>>,ATL::CComCreator<ATL::CComAggObject<CMSDiscRecorderObj>>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180006210",
+    "function_file": "functions/180006210_ATL_CComCreator2_ATL_CComCreator_ATL_CComObject_CMSDiscRecorderObj_ATL_CComCreator_ATL_CComAggObject_CMSDiscRe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCMSDiscRecorderObj@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCMSDiscRecorderObj@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 14,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator2<ATL::CComCreator<ATL::CComObject<CMSEnumDiscRecordersObj>>,ATL::CComFailCreator<-2147221232>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180002bf0",
+    "function_file": "functions/180002bf0_ATL_CComCreator2_ATL_CComCreator_ATL_CComObject_CMSEnumDiscRecordersObj_ATL_CComFailCreator_-2147221232_Create.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCMSEnumDiscRecordersObj@@@ATL@@@ATL@@V?$CComFailCreator@$0?HPPLPOPA@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 34,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComEnumImpl<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>>::Skip(ulong)",
+    "ea": "0x18000e6cc",
+    "function_file": "functions/18000e6cc_ATL_CComEnumImpl_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_Skip_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Skip@?$CComEnumImpl@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@@ATL@@UEAAJK@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 50,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CMSDiscRecorderObj>::AddRef(void)",
+    "ea": "0x180004d10",
+    "function_file": "functions/180004d10_ATL_CComObject_CMSDiscRecorderObj_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCMSDiscRecorderObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CMSDiscRecorderObj>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180007290",
+    "function_file": "functions/180007290_ATL_CComObject_CMSDiscRecorderObj_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCMSDiscRecorderObj@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CRedbookWriterEvent>::AddRef(void)",
+    "ea": "0x180015220",
+    "function_file": "functions/180015220_ATL_CComObject_CRedbookWriterEvent_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCRedbookWriterEvent@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::AddRef(void)",
+    "ea": "0x180002390",
+    "function_file": "functions/180002390_ATL_CComObjectCached_ATL_CComClassFactory_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 74,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_com_error::_com_error(_com_error const &)",
+    "ea": "0x180017030",
+    "function_file": "functions/180017030_com_error_com_error_com_error_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0_com_error@@QEAA@AEBV0@@Z",
+    "prototype": "_com_error *__fastcall(_com_error *__hidden this, const struct _com_error *)",
+    "rank_score": 12,
+    "size": 67,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_com_issue_error(long)",
+    "ea": "0x180017020",
+    "function_file": "functions/180017020_com_issue_error_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_com_issue_error@@YAXJ@Z",
+    "prototype": "void __fastcall __noreturn(int)",
+    "rank_score": 12,
+    "size": 10,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CAtlModuleT<ATL::CComModule>::AddCommonRGSReplacements(IRegistrarBase *)",
+    "ea": "0x180008070",
+    "function_file": "functions/180008070_ATL_CAtlModuleT_ATL_CComModule_AddCommonRGSReplacements_IRegistrarBase.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddCommonRGSReplacements@?$CAtlModuleT@VCComModule@ATL@@@ATL@@UEAAJPEAUIRegistrarBase@@@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>>::AddRef(void)",
+    "ea": "0x18000b480",
+    "function_file": "functions/18000b480_ATL_CComObject_ATL_CComEnum_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_AT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@V?$CComEnum@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@VCComMultiThreadModel@5@@ATL@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<ATL::CComEnum<IEnumDiscMasterFormats,&_GUID const IID_IEnumDiscMasterFormats,_GUID,ATL::_Copy<_GUID>,ATL::CComMultiThreadModel>>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000d810",
+    "function_file": "functions/18000d810_ATL_CComObject_ATL_CComEnum_IEnumDiscMasterFormats_GUID_const_IID_IEnumDiscMasterFormats_GUID_ATL_Copy_GUID_AT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@V?$CComEnum@UIEnumDiscMasterFormats@@$1?IID_IEnumDiscMasterFormats@@3U_GUID@@BU3@V?$_Copy@U_GUID@@@ATL@@VCComMultiThreadModel@5@@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CMSEnumDiscRecordersObj>::AddRef(void)",
+    "ea": "0x180002360",
+    "function_file": "functions/180002360_ATL_CComObject_CMSEnumDiscRecordersObj_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCMSEnumDiscRecordersObj@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CMSEnumDiscRecordersObj>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180003540",
+    "function_file": "functions/180003540_ATL_CComObject_CMSEnumDiscRecordersObj_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCMSEnumDiscRecordersObj@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CRedbookWriterEvent>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x1800168e0",
+    "function_file": "functions/1800168e0_ATL_CComObject_CRedbookWriterEvent_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCRedbookWriterEvent@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180003560",
+    "function_file": "functions/180003560_ATL_CComObjectCached_ATL_CComClassFactory_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ATL::CComTypeInfoHolder::stringdispid::stringdispid(void)",
+    "ea": "0x1800150d8",
+    "function_file": "functions/1800150d8_ATL_CComTypeInfoHolder_stringdispid_stringdispid_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0stringdispid@CComTypeInfoHolder@ATL@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(ATL::CComTypeInfoHolder::stringdispid *__hidden this)",
+    "rank_score": 11,
+    "size": 25,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::IDispEventImpl<1,CRedbookWriterEvent,&_GUID const IID_DDiscFormat2TrackAtOnceEvents,&_GUID const LIBID_IMAPI2,1,0,ATL::CComTypeInfoHolder>::GetIDsOfNames(_GUID const &,ushort * *,uint,ulong,long *)",
+    "ea": "0x180015ac0",
+    "function_file": "functions/180015ac0_ATL_IDispEventImpl_1_CRedbookWriterEvent_GUID_const_IID_DDiscFormat2TrackAtOnceEvents_GUID_const_LIBID_IMAPI2_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetIDsOfNames@?$IDispEventImpl@$00VCRedbookWriterEvent@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B$1?LIBID_IMAPI2@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAGIKPEAJ@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::IDispEventImpl<1,CRedbookWriterEvent,&_GUID const IID_DDiscFormat2TrackAtOnceEvents,&_GUID const LIBID_IMAPI2,1,0,ATL::CComTypeInfoHolder>::GetTypeInfoCount(uint *)",
+    "ea": "0x180015f80",
+    "function_file": "functions/180015f80_ATL_IDispEventImpl_1_CRedbookWriterEvent_GUID_const_IID_DDiscFormat2TrackAtOnceEvents_GUID_const_LIBID_IMAPI2_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTypeInfoCount@?$IDispEventImpl@$00VCRedbookWriterEvent@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B$1?LIBID_IMAPI2@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJPEAI@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::_dynamic_atexit_destructor_for___AtlComModule__",
+    "ea": "0x180018990",
+    "function_file": "functions/180018990_ATL_dynamic_atexit_destructor_for_AtlComModule.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ATL::_dynamic_atexit_destructor_for___AtlComModule__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CComStdCallThunkHelper",
+    "ea": "0x1800011b0",
+    "function_file": "functions/1800011b0_CComStdCallThunkHelper.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CComStdCallThunkHelper",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 26,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "WriterLockTray",
+    "ea": "0x180013f44",
+    "function_file": "functions/180013f44_WriterLockTray.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriterLockTray",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 351,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::AddRef`adjustor{120}' (void)",
+    "ea": "0x180008100",
+    "function_file": "functions/180008100_thunk_ATL_CComContainedObject_CMSDiscMasterObj_AddRef_adjustor_120_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WHI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::AddRef`adjustor{16}' (void)",
+    "ea": "0x1800080d0",
+    "function_file": "functions/1800080d0_thunk_ATL_CComContainedObject_CMSDiscMasterObj_AddRef_adjustor_16_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WBA@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::AddRef`adjustor{24}' (void)",
+    "ea": "0x1800080e0",
+    "function_file": "functions/1800080e0_thunk_ATL_CComContainedObject_CMSDiscMasterObj_AddRef_adjustor_24_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WBI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::AddRef`adjustor{72}' (void)",
+    "ea": "0x1800080f0",
+    "function_file": "functions/1800080f0_thunk_ATL_CComContainedObject_CMSDiscMasterObj_AddRef_adjustor_72_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WEI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::AddRef`adjustor{8}' (void)",
+    "ea": "0x1800080c0",
+    "function_file": "functions/1800080c0_thunk_ATL_CComContainedObject_CMSDiscMasterObj_AddRef_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::QueryInterface`adjustor{120}' (_GUID const &,void * *)",
+    "ea": "0x180009110",
+    "function_file": "functions/180009110_thunk_ATL_CComContainedObject_CMSDiscMasterObj_QueryInterface_adjustor_120_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WHI@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::QueryInterface`adjustor{16}' (_GUID const &,void * *)",
+    "ea": "0x180009100",
+    "function_file": "functions/180009100_thunk_ATL_CComContainedObject_CMSDiscMasterObj_QueryInterface_adjustor_16_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WBA@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::QueryInterface`adjustor{8}' (_GUID const &,void * *)",
+    "ea": "0x1800090f0",
+    "function_file": "functions/1800090f0_thunk_ATL_CComContainedObject_CMSDiscMasterObj_QueryInterface_adjustor_8_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@W7EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::Release`adjustor{120}' (void)",
+    "ea": "0x1800091d0",
+    "function_file": "functions/1800091d0_thunk_ATL_CComContainedObject_CMSDiscMasterObj_Release_adjustor_120_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WHI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::Release`adjustor{16}' (void)",
+    "ea": "0x1800091a0",
+    "function_file": "functions/1800091a0_thunk_ATL_CComContainedObject_CMSDiscMasterObj_Release_adjustor_16_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WBA@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::Release`adjustor{24}' (void)",
+    "ea": "0x1800091b0",
+    "function_file": "functions/1800091b0_thunk_ATL_CComContainedObject_CMSDiscMasterObj_Release_adjustor_24_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WBI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::Release`adjustor{72}' (void)",
+    "ea": "0x1800091c0",
+    "function_file": "functions/1800091c0_thunk_ATL_CComContainedObject_CMSDiscMasterObj_Release_adjustor_72_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@WEI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscMasterObj>::Release`adjustor{8}' (void)",
+    "ea": "0x180009190",
+    "function_file": "functions/180009190_thunk_ATL_CComContainedObject_CMSDiscMasterObj_Release_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCMSDiscMasterObj@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscRecorderObj>::AddRef`adjustor{8}' (void)",
+    "ea": "0x180004d00",
+    "function_file": "functions/180004d00_thunk_ATL_CComContainedObject_CMSDiscRecorderObj_AddRef_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCMSDiscRecorderObj@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscRecorderObj>::QueryInterface`adjustor{8}' (_GUID const &,void * *)",
+    "ea": "0x180007280",
+    "function_file": "functions/180007280_thunk_ATL_CComContainedObject_CMSDiscRecorderObj_QueryInterface_adjustor_8_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComContainedObject@VCMSDiscRecorderObj@@@ATL@@W7EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CMSDiscRecorderObj>::Release`adjustor{8}' (void)",
+    "ea": "0x180007370",
+    "function_file": "functions/180007370_thunk_ATL_CComContainedObject_CMSDiscRecorderObj_Release_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCMSDiscRecorderObj@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::AddRef`adjustor{120}' (void)",
+    "ea": "0x180008190",
+    "function_file": "functions/180008190_thunk_ATL_CComObject_CMSDiscMasterObj_AddRef_adjustor_120_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCMSDiscMasterObj@@@ATL@@WHI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::AddRef`adjustor{16}' (void)",
+    "ea": "0x180008160",
+    "function_file": "functions/180008160_thunk_ATL_CComObject_CMSDiscMasterObj_AddRef_adjustor_16_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCMSDiscMasterObj@@@ATL@@WBA@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::AddRef`adjustor{24}' (void)",
+    "ea": "0x180008170",
+    "function_file": "functions/180008170_thunk_ATL_CComObject_CMSDiscMasterObj_AddRef_adjustor_24_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCMSDiscMasterObj@@@ATL@@WBI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::AddRef`adjustor{72}' (void)",
+    "ea": "0x180008180",
+    "function_file": "functions/180008180_thunk_ATL_CComObject_CMSDiscMasterObj_AddRef_adjustor_72_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCMSDiscMasterObj@@@ATL@@WEI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::AddRef`adjustor{8}' (void)",
+    "ea": "0x180008150",
+    "function_file": "functions/180008150_thunk_ATL_CComObject_CMSDiscMasterObj_AddRef_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCMSDiscMasterObj@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::QueryInterface`adjustor{120}' (_GUID const &,void * *)",
+    "ea": "0x180009160",
+    "function_file": "functions/180009160_thunk_ATL_CComObject_CMSDiscMasterObj_QueryInterface_adjustor_120_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCMSDiscMasterObj@@@ATL@@WHI@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::QueryInterface`adjustor{16}' (_GUID const &,void * *)",
+    "ea": "0x180009150",
+    "function_file": "functions/180009150_thunk_ATL_CComObject_CMSDiscMasterObj_QueryInterface_adjustor_16_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCMSDiscMasterObj@@@ATL@@WBA@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::QueryInterface`adjustor{8}' (_GUID const &,void * *)",
+    "ea": "0x180009140",
+    "function_file": "functions/180009140_thunk_ATL_CComObject_CMSDiscMasterObj_QueryInterface_adjustor_8_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCMSDiscMasterObj@@@ATL@@W7EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::Release`adjustor{120}' (void)",
+    "ea": "0x1800092c0",
+    "function_file": "functions/1800092c0_thunk_ATL_CComObject_CMSDiscMasterObj_Release_adjustor_120_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCMSDiscMasterObj@@@ATL@@WHI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::Release`adjustor{16}' (void)",
+    "ea": "0x180009290",
+    "function_file": "functions/180009290_thunk_ATL_CComObject_CMSDiscMasterObj_Release_adjustor_16_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCMSDiscMasterObj@@@ATL@@WBA@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::Release`adjustor{24}' (void)",
+    "ea": "0x1800092a0",
+    "function_file": "functions/1800092a0_thunk_ATL_CComObject_CMSDiscMasterObj_Release_adjustor_24_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCMSDiscMasterObj@@@ATL@@WBI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::Release`adjustor{72}' (void)",
+    "ea": "0x1800092b0",
+    "function_file": "functions/1800092b0_thunk_ATL_CComObject_CMSDiscMasterObj_Release_adjustor_72_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCMSDiscMasterObj@@@ATL@@WEI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscMasterObj>::Release`adjustor{8}' (void)",
+    "ea": "0x180009280",
+    "function_file": "functions/180009280_thunk_ATL_CComObject_CMSDiscMasterObj_Release_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCMSDiscMasterObj@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscRecorderObj>::AddRef`adjustor{8}' (void)",
+    "ea": "0x180004d40",
+    "function_file": "functions/180004d40_thunk_ATL_CComObject_CMSDiscRecorderObj_AddRef_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCMSDiscRecorderObj@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscRecorderObj>::QueryInterface`adjustor{8}' (_GUID const &,void * *)",
+    "ea": "0x1800072b0",
+    "function_file": "functions/1800072b0_thunk_ATL_CComObject_CMSDiscRecorderObj_QueryInterface_adjustor_8_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCMSDiscRecorderObj@@@ATL@@W7EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CMSDiscRecorderObj>::Release`adjustor{8}' (void)",
+    "ea": "0x180007410",
+    "function_file": "functions/180007410_thunk_ATL_CComObject_CMSDiscRecorderObj_Release_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCMSDiscRecorderObj@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CRedbookWriterEvent>::AddRef`adjustor{8}' (void)",
+    "ea": "0x180015250",
+    "function_file": "functions/180015250_thunk_ATL_CComObject_CRedbookWriterEvent_AddRef_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCRedbookWriterEvent@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CRedbookWriterEvent>::Release`adjustor{8}' (void)",
+    "ea": "0x180016bb0",
+    "function_file": "functions/180016bb0_thunk_ATL_CComObject_CRedbookWriterEvent_Release_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCRedbookWriterEvent@@@ATL@@W7EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_com_error::_com_error(long,IErrorInfo *,bool)",
+    "ea": "0x18001707c",
+    "function_file": "functions/18001707c_com_error_com_error_long_IErrorInfo_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0_com_error@@QEAA@JPEAUIErrorInfo@@_N@Z",
+    "prototype": "_com_error *__fastcall(_com_error *__hidden this, int, struct IErrorInfo *, bool)",
+    "rank_score": 11,
+    "size": 37,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllCanUnloadNow",
+    "ea": "0x180009ab0",
+    "function_file": "functions/180009ab0_DllCanUnloadNow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 10,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__ATL::IDispEventImpl_1_CRedbookWriterEvent_&IID_DDiscFormat2TrackAtOnceEvents_&LIBID_IMAPI2_1_0_ATL::CComTypeInfoHolder_::m_InnerIid__",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_dynamic_initializer_for_ATL_IDispEventImpl_1_CRedbookWriterEvent_IID_DDiscFormat2TrackAtOnceEvents_LIBID_IMAPI.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__ATL::IDispEventImpl_1_CRedbookWriterEvent_&IID_DDiscFormat2TrackAtOnceEvents_&LIBID_IMAPI2_1_0_ATL::CComTypeInfoHolder_::m_InnerIid__",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__ATL::IDispEventImpl_1_CRedbookWriterEvent_&IID_DDiscFormat2TrackAtOnceEvents_&LIBID_IMAPI2_1_0_ATL::CComTypeInfoHolder_::m_InnerLibid__",
+    "ea": "0x180001030",
+    "function_file": "functions/180001030_dynamic_initializer_for_ATL_IDispEventImpl_1_CRedbookWriterEvent_IID_DDiscFormat2TrackAtOnceEvents_LIBID_IMAPI.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__ATL::IDispEventImpl_1_CRedbookWriterEvent_&IID_DDiscFormat2TrackAtOnceEvents_&LIBID_IMAPI2_1_0_ATL::CComTypeInfoHolder_::m_InnerLibid__",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "ATL::IDispEventSimpleImpl<1,CRedbookWriterEvent,&_GUID const IID_DDiscFormat2TrackAtOnceEvents>::Invoke(long,_GUID const &,ulong,ushort,tagDISPPARAMS *,tagVARIANT *,tagEXCEPINFO *,uint *)",
+    "ea": "0x180015fa0",
+    "function_file": "functions/180015fa0_ATL_IDispEventSimpleImpl_1_CRedbookWriterEvent_GUID_const_IID_DDiscFormat2TrackAtOnceEvents_Invoke_long_GUID_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Invoke@?$IDispEventSimpleImpl@$00VCRedbookWriterEvent@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B@ATL@@UEAAJJAEBU_GUID@@KGPEAUtagDISPPARAMS@@PEAUtagVARIANT@@PEAUtagEXCEPINFO@@PEAI@Z",
+    "prototype": "__int64 __usercall@<rax>(int@<ecx>, int, int, VARIANT *)",
+    "rank_score": 9,
+    "size": 467,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "WriterGetProperty",
+    "ea": "0x1800133d8",
+    "function_file": "functions/1800133d8_WriterGetProperty.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriterGetProperty",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 265,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WriterLoadErasableDisc",
+    "ea": "0x180013c4c",
+    "function_file": "functions/180013c4c_WriterLoadErasableDisc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriterLoadErasableDisc",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 376,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WriterLoadWritableDisc",
+    "ea": "0x180013dcc",
+    "function_file": "functions/180013dcc_WriterLoadWritableDisc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriterLoadWritableDisc",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 367,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WriterSetProperty",
+    "ea": "0x180014c50",
+    "function_file": "functions/180014c50_WriterSetProperty.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriterSetProperty",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ATL::AtlAdvise(IUnknown *,IUnknown *,_GUID const &,ulong *)",
+    "ea": "0x18000b4b0",
+    "function_file": "functions/18000b4b0_ATL_AtlAdvise_IUnknown_IUnknown_GUID_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AtlAdvise@ATL@@YAJPEAUIUnknown@@0AEBU_GUID@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct IUnknown *, struct IUnknown *, const struct _GUID *, unsigned int *)",
+    "rank_score": 6,
+    "size": 191,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ATL::AtlUnadvise(IUnknown *,_GUID const &,ulong)",
+    "ea": "0x18000b578",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AtlUnadvise@ATL@@YAJPEAUIUnknown@@AEBU_GUID@@K@Z",
+    "prototype": "__int64 __fastcall(struct IUnknown *, const struct _GUID *, unsigned int)",
+    "rank_score": 6,
+    "size": 197,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WriterEjectTray",
+    "ea": "0x180012d38",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WriterEjectTray",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 205,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "operator new[](unsigned __int64)",
+    "ea": "0x18000119c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_U@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(unsigned __int64)",
+    "rank_score": 6,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "_alloca_probe",
+    "ea": "0x1800185c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "atexit",
+    "ea": "0x180001c24",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 5,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "CMSDiscMasterObj::InitializeSafeMembers(void)",
+    "ea": "0x18000c598",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeSafeMembers@CMSDiscMasterObj@@AEAAXXZ",
+    "prototype": "void __fastcall(CMSDiscMasterObj *__hidden this)",
+    "rank_score": 4,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::IDispEventSimpleImpl<1,CRedbookWriterEvent,&_GUID const IID_DDiscFormat2TrackAtOnceEvents>::_LocDEQueryInterface(_GUID const &,void * *)",
+    "ea": "0x180016c50",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_LocDEQueryInterface@?$IDispEventSimpleImpl@$00VCRedbookWriterEvent@@$1?IID_DDiscFormat2TrackAtOnceEvents@@3U_GUID@@B@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 252,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]: CRedbookWriterEvent::`vcall'{56,{flat}}",
+    "ea": "0x180015180",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_9CRedbookWriterEvent@@$BDI@AA",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CIPropertyStorageWrapper::DeleteMultiple(ulong,tagPROPSPEC const * const)",
+    "ea": "0x180008a00",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteMultiple@CIPropertyStorageWrapper@@UEAAJKQEBUtagPROPSPEC@@@Z",
+    "prototype": "__int64 __fastcall(CIPropertyStorageWrapper *__hidden this, unsigned int, const struct tagPROPSPEC *const)",
+    "rank_score": 0,
+    "size": 6,
+    "tags": []
+  }
+]

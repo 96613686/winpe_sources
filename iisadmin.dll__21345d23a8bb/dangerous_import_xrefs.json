@@ -1,0 +1,410 @@
+[
+  {
+    "import": "ADVAPI32!CreateWellKnownSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002aac",
+        "from_func": "0x180002a60",
+        "from_func_name": "?AllocateAndCreateWellKnownSid@@YAJW4WELL_KNOWN_SID_TYPE@@PEAPEAX@Z",
+        "import": "ADVAPI32!CreateWellKnownSid"
+      },
+      {
+        "from_ea": "0x180002aac",
+        "from_func": "0x180002a60",
+        "from_func_name": "?AllocateAndCreateWellKnownSid@@YAJW4WELL_KNOWN_SID_TYPE@@PEAPEAX@Z",
+        "import": "ADVAPI32!CreateWellKnownSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!InitializeAcl",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002979",
+        "from_func": "0x1800028f8",
+        "from_func_name": "?AllocateAndCreateWellKnownAcl@@YAJKQEAW4WELL_KNOWN_SID_TYPE@@QEAKHPEAPEAU_ACL@@PEAK@Z",
+        "import": "ADVAPI32!InitializeAcl"
+      },
+      {
+        "from_ea": "0x180002979",
+        "from_func": "0x1800028f8",
+        "from_func_name": "?AllocateAndCreateWellKnownAcl@@YAJKQEAW4WELL_KNOWN_SID_TYPE@@QEAKHPEAPEAU_ACL@@PEAK@Z",
+        "import": "ADVAPI32!InitializeAcl"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!InitializeSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180002b84",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!InitializeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x180002ecb",
+        "from_func": "0x180002e34",
+        "from_func_name": "?InitDesktopWinsta@@YAJXZ",
+        "import": "ADVAPI32!InitializeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x180002fb2",
+        "from_func": "0x180002e34",
+        "from_func_name": "?InitDesktopWinsta@@YAJXZ",
+        "import": "ADVAPI32!InitializeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x180002b84",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!InitializeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x180002ecb",
+        "from_func": "0x180002e34",
+        "from_func_name": "?InitDesktopWinsta@@YAJXZ",
+        "import": "ADVAPI32!InitializeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x180002fb2",
+        "from_func": "0x180002e34",
+        "from_func_name": "?InitDesktopWinsta@@YAJXZ",
+        "import": "ADVAPI32!InitializeSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExA",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800019a4",
+        "from_func": "0x180001958",
+        "from_func_name": "?GetStartupWaitHint@@YAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x180003935",
+        "from_func": "0x1800038d0",
+        "from_func_name": "?InitMDWriterThread@@YAKPEAX@Z",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x1800019a4",
+        "from_func": "0x180001958",
+        "from_func_name": "?GetStartupWaitHint@@YAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x180003935",
+        "from_func": "0x1800038d0",
+        "from_func_name": "?InitMDWriterThread@@YAKPEAX@Z",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegisterServiceCtrlHandlerA",
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001f88",
+        "from_func": "0x180001e60",
+        "from_func_name": "?ServiceEntry@@YAXKQEAPEAGPEAU_TCPSVCS_GLOBAL_DATA@@@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerA"
+      },
+      {
+        "from_ea": "0x180001f88",
+        "from_func": "0x180001e60",
+        "from_func_name": "?ServiceEntry@@YAXKQEAPEAGPEAU_TCPSVCS_GLOBAL_DATA@@@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerA"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetEntriesInAclA",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002c07",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!SetEntriesInAclA"
+      },
+      {
+        "from_ea": "0x180002c07",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!SetEntriesInAclA"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetSecurityDescriptorDacl",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180002c69",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorDacl"
+      },
+      {
+        "from_ea": "0x180002ee6",
+        "from_func": "0x180002e34",
+        "from_func_name": "?InitDesktopWinsta@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorDacl"
+      },
+      {
+        "from_ea": "0x180002fe9",
+        "from_func": "0x180002e34",
+        "from_func_name": "?InitDesktopWinsta@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorDacl"
+      },
+      {
+        "from_ea": "0x180002c69",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorDacl"
+      },
+      {
+        "from_ea": "0x180002ee6",
+        "from_func": "0x180002e34",
+        "from_func_name": "?InitDesktopWinsta@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorDacl"
+      },
+      {
+        "from_ea": "0x180002fe9",
+        "from_func": "0x180002e34",
+        "from_func_name": "?InitDesktopWinsta@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorDacl"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetSecurityDescriptorGroup",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002c4d",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorGroup"
+      },
+      {
+        "from_ea": "0x180002c4d",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorGroup"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetSecurityDescriptorOwner",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002c35",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorOwner"
+      },
+      {
+        "from_ea": "0x180002c35",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ADVAPI32!SetSecurityDescriptorOwner"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetServiceStatus",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180001bdf",
+        "from_func": "0x180001a0c",
+        "from_func_name": "?ReportServiceStatus@@YAKXZ",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x180001bdf",
+        "from_func": "0x180001a0c",
+        "from_func_name": "?ReportServiceStatus@@YAKXZ",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x180007850",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ADVAPI32!SetServiceStatus"
+      }
+    ]
+  },
+  {
+    "import": "COADMIN!InitComAdmindata",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002078",
+        "from_func": "0x180001e60",
+        "from_func_name": "?ServiceEntry@@YAXKQEAPEAGPEAU_TCPSVCS_GLOBAL_DATA@@@Z",
+        "import": "COADMIN!InitComAdmindata"
+      },
+      {
+        "from_ea": "0x180002078",
+        "from_func": "0x180001e60",
+        "from_func_name": "?ServiceEntry@@YAXKQEAPEAGPEAU_TCPSVCS_GLOBAL_DATA@@@Z",
+        "import": "COADMIN!InitComAdmindata"
+      }
+    ]
+  },
+  {
+    "import": "COADMIN!TerminateComAdmindata",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002471",
+        "from_func": "0x180001e60",
+        "from_func_name": "?ServiceEntry@@YAXKQEAPEAGPEAU_TCPSVCS_GLOBAL_DATA@@@Z",
+        "import": "COADMIN!TerminateComAdmindata"
+      },
+      {
+        "from_ea": "0x180002471",
+        "from_func": "0x180001e60",
+        "from_func_name": "?ServiceEntry@@YAXKQEAPEAGPEAU_TCPSVCS_GLOBAL_DATA@@@Z",
+        "import": "COADMIN!TerminateComAdmindata"
+      },
+      {
+        "from_ea": "0x1800078c8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "COADMIN!TerminateComAdmindata"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000169b",
+        "from_func": "0x180001654",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000169b",
+        "from_func": "0x180001654",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001743",
+        "from_func": "0x180001743",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoInitializeSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002ca6",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ole32!CoInitializeSecurity"
+      },
+      {
+        "from_ea": "0x180002ca6",
+        "from_func": "0x180002afc",
+        "from_func_name": "?InitComSecurity@@YAJXZ",
+        "import": "ole32!CoInitializeSecurity"
+      }
+    ]
+  },
+  {
+    "import": "ole32!StringFromCLSID",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003202",
+        "from_func": "0x180003118",
+        "from_func_name": "?RegisterServiceExtensionCLSIDs@@YAXXZ",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x180003202",
+        "from_func": "0x180003118",
+        "from_func_name": "?RegisterServiceExtensionCLSIDs@@YAXXZ",
+        "import": "ole32!StringFromCLSID"
+      }
+    ]
+  }
+]

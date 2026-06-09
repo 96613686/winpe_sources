@@ -1,0 +1,36 @@
+# memset_0
+
+- ea: `0x180001caa`
+- end: `0x180001cb0`
+- name: `memset_0`
+- size: `6`
+- prototype: `void *__cdecl(void *, int Val, size_t Size)`
+- caller_count: `2`
+- callee_count: `0`
+- tags: ``
+
+## callers
+
+- `0x180002310`
+- `0x18000494c`
+
+## import_xrefs
+
+- `api-ms-win-crt-string-l1-1-0!memset` at `0x180001caa`
+
+## pseudocode
+
+```c
+// attributes: thunk
+void *__cdecl memset_0(void *a1, int Val, size_t Size)
+{
+  return memset(a1, Val, Size);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180001caa  jmp     cs:__imp_memset
+```

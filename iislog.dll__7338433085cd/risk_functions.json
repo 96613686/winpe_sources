@@ -1,0 +1,3167 @@
+[
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "CODBCLOG::LogInformation(IInetLogInformation *)",
+    "ea": "0x18000b120",
+    "function_file": "functions/18000b120_CODBCLOG_LogInformation_IInetLogInformation.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@XZ",
+      "IisRTL!??1STR@@QEAA@XZ",
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "IisRTL!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBDK@Z",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetLocalTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?LogInformation@CODBCLOG@@UEAAJPEAVIInetLogInformation@@@Z",
+    "prototype": "__int64 __fastcall(CODBCLOG *__hidden this, struct IInetLogInformation *)",
+    "rank_score": 10838,
+    "size": 2353,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CEXTLOG::GetFormatHeader(STR *)",
+    "ea": "0x180004420",
+    "function_file": "functions/180004420_CEXTLOG_GetFormatHeader_STR.md",
+    "matched_imports": [
+      "IisRTL!?Append@STR@@QEAAHPEBD@Z",
+      "IisRTL!?Append@STR@@QEAAXD@Z"
+    ],
+    "matched_strings": [
+      "s-computername",
+      "cs-uri-stem",
+      "cs-uri-query",
+      "cs(User-Agent)"
+    ],
+    "name": "?GetFormatHeader@CEXTLOG@@IEAAXPEAVSTR@@@Z",
+    "prototype": "void __fastcall(CEXTLOG *__hidden this, struct STR *)",
+    "rank_score": 8588,
+    "size": 862,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CEXTLOG::ReadFileLogRecord(_iobuf *,_INETLOGLINE *,char *,ulong)",
+    "ea": "0x180005e90",
+    "function_file": "functions/180005e90_CEXTLOG_ReadFileLogRecord_iobuf_INETLOGLINE_char_ulong.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SystemTimeToVariantTime",
+      "msvcrt!_stricmp",
+      "msvcrt!fgets",
+      "msvcrt!strcpy_s",
+      "msvcrt!strstr",
+      "msvcrt!strtok"
+    ],
+    "matched_strings": [
+      "s-computername",
+      "cs-uri-stem",
+      "cs-uri-query",
+      "cs(User-Agent)"
+    ],
+    "name": "?ReadFileLogRecord@CEXTLOG@@MEAAJPEAU_iobuf@@PEAU_INETLOGLINE@@PEADK@Z",
+    "prototype": "int(CEXTLOG *__hidden this, struct _iobuf *, struct _INETLOGLINE *, char *, unsigned int)",
+    "rank_score": 7007,
+    "size": 1922,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CASCLOG::ReadFileLogRecord(_iobuf *,_INETLOGLINE *,char *,ulong)",
+    "ea": "0x18000c810",
+    "function_file": "functions/18000c810_CASCLOG_ReadFileLogRecord_iobuf_INETLOGLINE_char_ulong.md",
+    "matched_imports": [
+      "msvcrt!fgets",
+      "msvcrt!isspace",
+      "msvcrt!strtok"
+    ],
+    "matched_strings": [],
+    "name": "?ReadFileLogRecord@CASCLOG@@MEAAJPEAU_iobuf@@PEAU_INETLOGLINE@@PEADK@Z",
+    "prototype": "int(CASCLOG *__hidden this, struct _iobuf *, struct _INETLOGLINE *, char *, unsigned int)",
+    "rank_score": 6218,
+    "size": 845,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CEXTLOG::WriteFileLogRecord(_iobuf *,ILogScripting *,bool)",
+    "ea": "0x180006870",
+    "function_file": "functions/180006870_CEXTLOG_WriteFileLogRecord_iobuf_ILogScripting_bool.md",
+    "matched_imports": [
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "IisRTL!?GetFormattedDateTime@CACHED_DATETIME_FORMATS@@QEAAKPEBU_SYSTEMTIME@@PEAD@Z",
+      "OLEAUT32!__imp_SafeArrayAccessData",
+      "OLEAUT32!__imp_SafeArrayUnaccessData",
+      "OLEAUT32!__imp_VariantTimeToSystemTime",
+      "msvcrt!fprintf",
+      "msvcrt!sprintf_s",
+      "msvcrt!strcat_s",
+      "msvcrt!strcpy_s"
+    ],
+    "matched_strings": [
+      "s-computername",
+      "cs-uri-stem",
+      "cs-uri-query",
+      "cs(User-Agent)",
+      "#Software: Microsoft Internet Information Services 5.0\n#Version: %s\n#Date: %s %s\n#Fields: %s\n"
+    ],
+    "name": "?WriteFileLogRecord@CEXTLOG@@MEAAJPEAU_iobuf@@PEAUILogScripting@@_N@Z",
+    "prototype": "__int64 __fastcall(CEXTLOG *this, struct _iobuf *, struct ILogScripting *, char)",
+    "rank_score": 4856,
+    "size": 2520,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CLogFileCtrl::OpenLogFile(_SYSTEMTIME *)",
+    "ea": "0x180002c8c",
+    "function_file": "functions/180002c8c_CLogFileCtrl_OpenLogFile_SYSTEMTIME.md",
+    "matched_imports": [
+      "ADVAPI32!OpenThreadToken",
+      "ADVAPI32!RevertToSelf",
+      "ADVAPI32!SetThreadToken",
+      "IisRTL!??0STR@@QEAA@XZ",
+      "IisRTL!??1STR@@QEAA@XZ",
+      "IisRTL!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBDK@Z",
+      "IisRTL!IISCreateDirectory",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetSystemInfo",
+      "KERNEL32!SetLastError",
+      "USER32!CharPrevA",
+      "msvcrt!strcat_s",
+      "msvcrt!strcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?OpenLogFile@CLogFileCtrl@@AEAAHPEAU_SYSTEMTIME@@@Z",
+    "prototype": "__int64 __fastcall(CLogFileCtrl *__hidden this, struct _SYSTEMTIME *)",
+    "rank_score": 4435,
+    "size": 831,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CLogFileCtrl::SetLogFileDirectory(char const *)",
+    "ea": "0x180003030",
+    "function_file": "functions/180003030_CLogFileCtrl_SetLogFileDirectory_char_const.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@XZ",
+      "IisRTL!??1STR@@QEAA@XZ",
+      "IisRTL!?Append@STR@@QEAAHPEBD@Z",
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileA",
+      "KERNEL32!FindNextFileA",
+      "USER32!CharPrevA",
+      "msvcrt!atoi",
+      "msvcrt!isdigit",
+      "msvcrt!strchr"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\filectl.cpp",
+      "CLogFileCtrl::SetLogFileDirectory"
+    ],
+    "name": "?SetLogFileDirectory@CLogFileCtrl@@AEAAXPEBD@Z",
+    "prototype": "void(CLogFileCtrl *__hidden this, const char *)",
+    "rank_score": 3319,
+    "size": 507,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x18000a51c",
+    "function_file": "functions/18000a51c_DllMain.md",
+    "matched_imports": [
+      "ATL!__imp_AtlModuleInit",
+      "ATL!__imp_AtlModuleTerm",
+      "IisRTL!??0EVENT_LOG@@QEAA@PEBD@Z",
+      "IisRTL!??1EVENT_LOG@@QEAA@XZ",
+      "IisRTL!IISGetPlatformType",
+      "IisRTL!PuCreateDebugPrintsObject",
+      "IisRTL!PuDbgPrint",
+      "IisRTL!PuDeleteDebugPrintsObject",
+      "IisRTL!PuLoadDebugFlagsFromRegStr",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!DisableThreadLibraryCalls",
+      "KERNEL32!GetLastError",
+      "KERNEL32!InitializeCriticalSection",
+      "KERNEL32!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "iislog.dll",
+      "Unable to Create Debug Print Object \n",
+      "System\\CurrentControlSet\\Services\\InetInfo\\Parameters",
+      "Unable to create eventlog[%s] object[err %d]\n",
+      "DllMain",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\plugin1.cpp"
+    ],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 3287,
+    "size": 404,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CNCSALOG::ReadFileLogRecord(_iobuf *,_INETLOGLINE *,char *,ulong)",
+    "ea": "0x180007d20",
+    "function_file": "functions/180007d20_CNCSALOG_ReadFileLogRecord_iobuf_INETLOGLINE_char_ulong.md",
+    "matched_imports": [
+      "msvcrt!fgets",
+      "msvcrt!strchr",
+      "msvcrt!strtok"
+    ],
+    "matched_strings": [],
+    "name": "?ReadFileLogRecord@CNCSALOG@@MEAAJPEAU_iobuf@@PEAU_INETLOGLINE@@PEADK@Z",
+    "prototype": "int(CNCSALOG *__hidden this, struct _iobuf *, struct _INETLOGLINE *, char *, unsigned int)",
+    "rank_score": 2617,
+    "size": 706,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CCustomPropHashTable::PopulateHash(MB &,char const *,ulong &,bool)",
+    "ea": "0x180005b34",
+    "function_file": "functions/180005b34_CCustomPropHashTable_PopulateHash_MB_char_const_ulong_bool.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@XZ",
+      "IisRTL!??1STR@@QEAA@XZ",
+      "IisRTL!?Append@STR@@QEAAHPEBD@Z",
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "IisRTL!?InsertRecord@CLKRHashTable@@QEAA?AW4LK_RETCODE@@PEBX_N@Z",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\extlogc.cpp"
+    ],
+    "name": "?PopulateHash@CCustomPropHashTable@@AEAAHAEAVMB@@PEBDAEAK_N@Z",
+    "prototype": "__int64 __fastcall(CCustomPropHashTable *__hidden this, struct MB *, const char *, unsigned int *, bool)",
+    "rank_score": 2283,
+    "size": 815,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ODBC_CONNECTION::Open(char const *,char const *,char const *,int)",
+    "ea": "0x18000e300",
+    "function_file": "functions/18000e300_ODBC_CONNECTION_Open_char_const_char_const_char_const_int.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@XZ",
+      "IisRTL!??1STR@@QEAA@XZ",
+      "IisRTL!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBDK@Z",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!SetLastError",
+      "ODBC32!__imp_SQLAllocConnect",
+      "ODBC32!__imp_SQLAllocEnv",
+      "ODBC32!__imp_SQLConnect"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      "ODBC_CONNECTION::Open",
+      "ODBC_CONNECTION::Open",
+      "ODBC_CONNECTION::Open"
+    ],
+    "name": "?Open@ODBC_CONNECTION@@QEAAHPEBD00H@Z",
+    "prototype": "__int64 __fastcall(ODBC_CONNECTION *__hidden this, SQLCHAR *ServerName, SQLCHAR *UserName, SQLCHAR *Authentication, int)",
+    "rank_score": 2269,
+    "size": 601,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CLogFileCtrl::WriteLogInformation(_SYSTEMTIME &,char *,ulong,int,int)",
+    "ea": "0x180003374",
+    "function_file": "functions/180003374_CLogFileCtrl_WriteLogInformation_SYSTEMTIME_char_ulong_int_int.md",
+    "matched_imports": [
+      "IisRTL!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBDK@Z",
+      "IisRTL!ScheduleWorkItem",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?WriteLogInformation@CLogFileCtrl@@IEAAXAEAU_SYSTEMTIME@@PEADKHH@Z",
+    "prototype": "void __fastcall(CLogFileCtrl *__hidden this, struct _SYSTEMTIME *, char *Src, size_t Size, int, int)",
+    "rank_score": 1914,
+    "size": 962,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ODBC_CONNECTION::GetLastErrorTextAsHtml(STR *,void *,short)",
+    "ea": "0x18000e0d0",
+    "function_file": "functions/18000e0d0_ODBC_CONNECTION_GetLastErrorTextAsHtml_STR_void_short.md",
+    "matched_imports": [
+      "IisRTL!?Append@STR@@QEAAHPEBD@Z",
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "IisRTL!?LoadStringA@STR@@QEAAHKPEBDK@Z",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError",
+      "ODBC32!__imp_SQLError",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx"
+    ],
+    "name": "?GetLastErrorTextAsHtml@ODBC_CONNECTION@@QEBAHPEAVSTR@@PEAXF@Z",
+    "prototype": "int(ODBC_CONNECTION *__hidden this, struct STR *, void *, __int16)",
+    "rank_score": 1875,
+    "size": 451,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CEXTLOG::LogCustomInformation(ulong,_CUSTOM_LOG_DATA *,char *)",
+    "ea": "0x180005020",
+    "function_file": "functions/180005020_CEXTLOG_LogCustomInformation_ulong_CUSTOM_LOG_DATA_char.md",
+    "matched_imports": [
+      "IisRTL!?Convert@TS_RESOURCE@@QEAAXW4TSRES_CONV_TYPE@@@Z",
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "IisRTL!?FindKey@CLKRHashTable@@QEBA?AW4LK_RETCODE@@_KPEAPEBX@Z",
+      "IisRTL!?GetFormattedDateTime@CACHED_DATETIME_FORMATS@@QEAAKPEBU_SYSTEMTIME@@PEAD@Z",
+      "IisRTL!?Lock@TS_RESOURCE@@QEAAXW4TSRES_LOCK_TYPE@@@Z",
+      "IisRTL!?SetLocalTime@ASCLOG_DATETIME_CACHE@@QEAAXPEAU_SYSTEMTIME@@@Z",
+      "IisRTL!?SetSystemTime@EXTLOG_DATETIME_CACHE@@QEAAXPEAU_SYSTEMTIME@@@Z",
+      "IisRTL!?Unlock@TS_RESOURCE@@QEAAXXZ",
+      "KERNEL32!GetLocalTime"
+    ],
+    "matched_strings": [],
+    "name": "?LogCustomInformation@CEXTLOG@@UEAAJKPEAU_CUSTOM_LOG_DATA@@PEAD@Z",
+    "prototype": "__int64 __fastcall(CEXTLOG *__hidden this, unsigned int, struct _CUSTOM_LOG_DATA *, char *)",
+    "rank_score": 1823,
+    "size": 876,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ILOG_FILE::PositionToEOF(_ULARGE_INTEGER *)",
+    "ea": "0x18000d424",
+    "function_file": "functions/18000d424_ILOG_FILE_PositionToEOF_ULARGE_INTEGER.md",
+    "matched_imports": [
+      "KERNEL32!GetFileSize",
+      "KERNEL32!GetLastError",
+      "KERNEL32!ReadFile",
+      "KERNEL32!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "?PositionToEOF@ILOG_FILE@@AEAAHPEAT_ULARGE_INTEGER@@@Z",
+    "prototype": "__int64 __fastcall(ILOG_FILE *__hidden this, union _ULARGE_INTEGER *)",
+    "rank_score": 1814,
+    "size": 366,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "CLogScript::~CLogScript(void)",
+    "ea": "0x180008550",
+    "function_file": "functions/180008550_CLogScript_CLogScript_void.md",
+    "matched_imports": [
+      "IisRTL!??1STR@@QEAA@XZ",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!fclose"
+    ],
+    "matched_strings": [],
+    "name": "??1CLogScript@@MEAA@XZ",
+    "prototype": "void __fastcall(CLogScript *__hidden this)",
+    "rank_score": 1718,
+    "size": 236,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ODBC_CONNECTION::GetLastErrorText(STR *,void *,short)",
+    "ea": "0x18000df20",
+    "function_file": "functions/18000df20_ODBC_CONNECTION_GetLastErrorText_STR_void_short.md",
+    "matched_imports": [
+      "IisRTL!?Append@STR@@QEAAHPEBD@Z",
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "IisRTL!?LoadStringA@STR@@QEAAHKPEBDK@Z",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError",
+      "ODBC32!__imp_SQLError",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx"
+    ],
+    "name": "?GetLastErrorText@ODBC_CONNECTION@@QEBAHPEAVSTR@@PEAXF@Z",
+    "prototype": "int(ODBC_CONNECTION *__hidden this, struct STR *, void *, __int16)",
+    "rank_score": 1676,
+    "size": 421,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CEXTLOG::CEXTLOG(void)",
+    "ea": "0x18000373c",
+    "function_file": "functions/18000373c_CEXTLOG_CEXTLOG_void.md",
+    "matched_imports": [
+      "IisRTL!??0CLKRHashTable@@QEAA@PEBDP6A?B_KPEBX@ZP6AK_K@ZP6A_N33@ZP6AX1H@ZNKK_N@Z",
+      "IisRTL!??0EXTLOG_DATETIME_CACHE@@QEAA@XZ",
+      "IisRTL!??0STR@@QEAA@XZ",
+      "IisRTL!??0TS_RESOURCE@@QEAA@XZ",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??0CEXTLOG@@QEAA@XZ",
+    "prototype": "CEXTLOG *__fastcall(CEXTLOG *__hidden this)",
+    "rank_score": 1608,
+    "size": 429,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ILOG_FILE::Open(char const *,ulong,int)",
+    "ea": "0x18000d22c",
+    "function_file": "functions/18000d22c_ILOG_FILE_Open_char_const_ulong_int.md",
+    "matched_imports": [
+      "ADVAPI32!OpenThreadToken",
+      "ADVAPI32!RevertToSelf",
+      "ADVAPI32!SetThreadToken",
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?Open@ILOG_FILE@@QEAAHPEBDKH@Z",
+    "prototype": "__int64 __fastcall(ILOG_FILE *__hidden this, LPCSTR lpFileName, unsigned int, int)",
+    "rank_score": 1424,
+    "size": 197,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CEXTLOG::FormatLogBuffer(IInetLogInformation *,char *,ulong *,_SYSTEMTIME *)",
+    "ea": "0x180004160",
+    "function_file": "functions/180004160_CEXTLOG_FormatLogBuffer_IInetLogInformation_char_ulong_SYSTEMTIME.md",
+    "matched_imports": [
+      "IisRTL!?GetFormattedDateTime@CACHED_DATETIME_FORMATS@@QEAAKPEBU_SYSTEMTIME@@PEAD@Z",
+      "IisRTL!?SetLocalTime@ASCLOG_DATETIME_CACHE@@QEAAXPEAU_SYSTEMTIME@@@Z",
+      "IisRTL!?SetSystemTime@EXTLOG_DATETIME_CACHE@@QEAAXPEAU_SYSTEMTIME@@@Z",
+      "KERNEL32!GetLocalTime",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?FormatLogBuffer@CEXTLOG@@MEAAHPEAVIInetLogInformation@@PEADPEAKPEAU_SYSTEMTIME@@@Z",
+    "prototype": "__int64 __fastcall(ASCLOG_DATETIME_CACHE **this, struct IInetLogInformation *, char *, unsigned int *, LPSYSTEMTIME lpSystemTime)",
+    "rank_score": 1411,
+    "size": 695,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CLogScript::get_CustomFields(tagVARIANT *)",
+    "ea": "0x180008c70",
+    "function_file": "functions/180008c70_CLogScript_get_CustomFields_tagVARIANT.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayCreate",
+      "OLEAUT32!__imp_SafeArrayPutElement",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit"
+    ],
+    "matched_strings": [],
+    "name": "?get_CustomFields@CLogScript@@UEAAJPEAUtagVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(CLogScript *__hidden this, struct tagVARIANT *)",
+    "rank_score": 1404,
+    "size": 346,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CEXTLOG::WriteLogDirectives(ulong)",
+    "ea": "0x180007250",
+    "function_file": "functions/180007250_CEXTLOG_WriteLogDirectives_ulong.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@PEADKH@Z",
+      "IisRTL!??1STR@@QEAA@XZ",
+      "IisRTL!?GetFormattedCurrentDateTime@CACHED_DATETIME_FORMATS@@QEAAKPEAD@Z",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!SetLastError",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\extlogc.cpp",
+      "Internet Information Services",
+      "WriteLogDirectives: Unable to write directives\n",
+      "CEXTLOG::WriteLogDirectives"
+    ],
+    "name": "?WriteLogDirectives@CEXTLOG@@MEAAHK@Z",
+    "prototype": "__int64 __fastcall(CEXTLOG *__hidden this, unsigned int)",
+    "rank_score": 1397,
+    "size": 406,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CEXTLOG::GetRegParameters(char const *,void *)",
+    "ea": "0x180004810",
+    "function_file": "functions/180004810_CEXTLOG_GetRegParameters_char_const_void.md",
+    "matched_imports": [
+      "IisRTL!??0ASCLOG_DATETIME_CACHE@@QEAA@XZ",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\extlogc.cpp",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\extlogc.cpp",
+      "Error %x on mb open\n"
+    ],
+    "name": "?GetRegParameters@CEXTLOG@@MEAAKPEBDPEAX@Z",
+    "prototype": "unsigned int(CEXTLOG *__hidden this, const char *, void *)",
+    "rank_score": 1348,
+    "size": 495,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ODBC_CONNECTION::Close(void)",
+    "ea": "0x18000d8b0",
+    "function_file": "functions/18000d8b0_ODBC_CONNECTION_Close_void.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "ODBC32!__imp_SQLDisconnect",
+      "ODBC32!__imp_SQLFreeConnect",
+      "ODBC32!__imp_SQLFreeEnv"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx"
+    ],
+    "name": "?Close@ODBC_CONNECTION@@QEAAHXZ",
+    "prototype": "__int64 __fastcall(ODBC_CONNECTION *__hidden this)",
+    "rank_score": 1345,
+    "size": 357,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ODBC_PARAMETER::CopyValue(ushort const *)",
+    "ea": "0x18000daa0",
+    "function_file": "functions/18000daa0_ODBC_PARAMETER_CopyValue_ushort_const.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!SetLastError",
+      "KERNEL32!WideCharToMultiByte"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx"
+    ],
+    "name": "?CopyValue@ODBC_PARAMETER@@QEAAHPEBG@Z",
+    "prototype": "__int64 __fastcall(void **this, const unsigned __int16 *)",
+    "rank_score": 1264,
+    "size": 282,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CODBCLOG::InitializeLog(char const *,char const *,char *)",
+    "ea": "0x18000afb0",
+    "function_file": "functions/18000afb0_CODBCLOG_InitializeLog_char_const_char_const_char.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetComputerNameA",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!_strnicmp",
+      "msvcrt!strncpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeLog@CODBCLOG@@UEAAJPEBD0PEAD@Z",
+    "prototype": "__int64 __fastcall(CODBCLOG *__hidden this, const char *, const char *, char *)",
+    "rank_score": 1229,
+    "size": 357,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CNCSALOG::WriteFileLogRecord(_iobuf *,ILogScripting *,bool)",
+    "ea": "0x180007ff0",
+    "function_file": "functions/180007ff0_CNCSALOG_WriteFileLogRecord_iobuf_ILogScripting_bool.md",
+    "matched_imports": [
+      "IisRTL!Month3CharNames",
+      "OLEAUT32!__imp_VariantTimeToSystemTime",
+      "msvcrt!fprintf",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "?WriteFileLogRecord@CNCSALOG@@MEAAJPEAU_iobuf@@PEAUILogScripting@@_N@Z",
+    "prototype": "__int64 __fastcall(CNCSALOG *__hidden this, struct _iobuf *, struct ILogScripting *, bool)",
+    "rank_score": 1223,
+    "size": 973,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreateDirectoryForSystemAndAdministrators(char const *)",
+    "ea": "0x18000216c",
+    "function_file": "functions/18000216c_CreateDirectoryForSystemAndAdministrators_char_const.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorA",
+      "KERNEL32!CreateDirectoryA",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CreateDirectoryForSystemAndAdministrators@@YAHPEBD@Z",
+    "prototype": "__int64 __fastcall(LPCSTR lpPathName)",
+    "rank_score": 1223,
+    "size": 195,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001974",
+    "function_file": "functions/180001974_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ODBC_STATEMENT::QueryColNames(STR * *,ulong *,ulong,int *)",
+    "ea": "0x18000e600",
+    "function_file": "functions/18000e600_ODBC_STATEMENT_QueryColNames_STR_ulong_ulong_int.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@XZ",
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "IisRTL!?Resize@BUFFER@@QEAA_NK@Z",
+      "ODBC32!__imp_SQLBindCol",
+      "ODBC32!__imp_SQLDescribeCol",
+      "ODBC32!__imp_SQLNumResultCols"
+    ],
+    "matched_strings": [],
+    "name": "?QueryColNames@ODBC_STATEMENT@@QEAAHPEAPEAVSTR@@PEAKKPEAH@Z",
+    "prototype": "__int64 __fastcall(ODBC_STATEMENT *__hidden this, struct STR **, unsigned int *, unsigned int, int *)",
+    "rank_score": 1221,
+    "size": 752,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CLogScript::OpenLogFile(ushort *,IOMode,ushort *,long,ushort *)",
+    "ea": "0x180008720",
+    "function_file": "functions/180008720_CLogScript_OpenLogFile_ushort_IOMode_ushort_long_ushort.md",
+    "matched_imports": [
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!fclose"
+    ],
+    "matched_strings": [],
+    "name": "?OpenLogFile@CLogScript@@UEAAJPEAGW4IOMode@@0J0@Z",
+    "prototype": "__int64 __fastcall(__int64, const unsigned __int16 *, int)",
+    "rank_score": 1217,
+    "size": 383,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ILOG_FILE::OpenFile(char const *,int)",
+    "ea": "0x18000d2f8",
+    "function_file": "functions/18000d2f8_ILOG_FILE_OpenFile_char_const_int.md",
+    "matched_imports": [
+      "IisRTL!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBDK@Z",
+      "KERNEL32!CreateFileA",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?OpenFile@ILOG_FILE@@AEAAHPEBDH@Z",
+    "prototype": "__int64 __fastcall(union _ULARGE_INTEGER *this, LPCSTR lpFileName, int)",
+    "rank_score": 1217,
+    "size": 292,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "CLogFileCtrl::CLogFileCtrl(void)",
+    "ea": "0x180001f20",
+    "function_file": "functions/180001f20_CLogFileCtrl_CLogFileCtrl_void.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@XZ",
+      "IisRTL!IISInitializeCriticalSection",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??0CLogFileCtrl@@QEAA@XZ",
+    "prototype": "CLogFileCtrl *__fastcall(CLogFileCtrl *__hidden this)",
+    "rank_score": 1214,
+    "size": 165,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CLogScript::CLogScript(void)",
+    "ea": "0x18000849c",
+    "function_file": "functions/18000849c_CLogScript_CLogScript_void.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@XZ",
+      "IisRTL!IISInitializeCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "OLEAUT32!__imp_SysAllocString"
+    ],
+    "matched_strings": [],
+    "name": "??0CLogScript@@QEAA@XZ",
+    "prototype": "CLogScript *__fastcall(CLogScript *__hidden this)",
+    "rank_score": 1205,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CEXTLOG::BuildCustomLogHeader(ulong,LOG_PROPERTY_INFO * *,char const *,char const *,STR &)",
+    "ea": "0x180003b68",
+    "function_file": "functions/180003b68_CEXTLOG_BuildCustomLogHeader_ulong_LOG_PROPERTY_INFO_char_const_char_const_STR.md",
+    "matched_imports": [
+      "IisRTL!?Append@STR@@QEAAHAEBV1@@Z",
+      "IisRTL!?Append@STR@@QEAAHPEBD@Z",
+      "IisRTL!?Append@STR@@QEAAXD@Z",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "Internet Information Services"
+    ],
+    "name": "?BuildCustomLogHeader@CEXTLOG@@AEAAXKPEAPEAULOG_PROPERTY_INFO@@PEBD1AEAVSTR@@@Z",
+    "prototype": "void __fastcall(CEXTLOG *__hidden this, unsigned int, struct LOG_PROPERTY_INFO **, const char *, const char *Src, struct STR *)",
+    "rank_score": 1165,
+    "size": 360,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CEXTLOG::WriteCustomLogDirectives(ulong)",
+    "ea": "0x180006730",
+    "function_file": "functions/180006730_CEXTLOG_WriteCustomLogDirectives_ulong.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@PEADKH@Z",
+      "IisRTL!??1STR@@QEAA@XZ",
+      "IisRTL!?GetFormattedCurrentDateTime@CACHED_DATETIME_FORMATS@@QEAAKPEAD@Z",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\extlogc.cpp",
+      "WriteCustomLogDirectives: Unable to write directives\n",
+      "CEXTLOG::WriteCustomLogDirectives"
+    ],
+    "name": "?WriteCustomLogDirectives@CEXTLOG@@MEAAHK@Z",
+    "prototype": "__int64 __fastcall(CEXTLOG *__hidden this, unsigned int)",
+    "rank_score": 1146,
+    "size": 309,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "CEXTLOG::~CEXTLOG(void)",
+    "ea": "0x180003984",
+    "function_file": "functions/180003984_CEXTLOG_CEXTLOG_void.md",
+    "matched_imports": [
+      "IisRTL!??1STR@@QEAA@XZ",
+      "IisRTL!??1TS_RESOURCE@@QEAA@XZ",
+      "IisRTL!??_7CACHED_DATETIME_FORMATS@@6B@",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CEXTLOG@@MEAA@XZ",
+    "prototype": "void __fastcall(CEXTLOG *__hidden this)",
+    "rank_score": 1123,
+    "size": 296,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CallRegisterComponent(ushort const *,char *)",
+    "ea": "0x18000eaec",
+    "function_file": "functions/18000eaec_CallRegisterComponent_ushort_const_char.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!LoadLibraryExW",
+      "msvcrt!wcscat_s"
+    ],
+    "matched_strings": [
+      "iislog.dll",
+      "\\inetsrv\\iisreg.dll"
+    ],
+    "name": "?CallRegisterComponent@@YAJPEBGPEAD@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, char *)",
+    "rank_score": 1106,
+    "size": 207,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CLogFileCtrl::~CLogFileCtrl(void)",
+    "ea": "0x180001fcc",
+    "function_file": "functions/180001fcc_CLogFileCtrl_CLogFileCtrl_void.md",
+    "matched_imports": [
+      "IisRTL!??1STR@@QEAA@XZ",
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CLogFileCtrl@@MEAA@XZ",
+    "prototype": "void __fastcall(CLogFileCtrl *__hidden this)",
+    "rank_score": 1104,
+    "size": 95,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CASCLOG::WriteFileLogRecord(_iobuf *,ILogScripting *,bool)",
+    "ea": "0x18000cb70",
+    "function_file": "functions/18000cb70_CASCLOG_WriteFileLogRecord_iobuf_ILogScripting_bool.md",
+    "matched_imports": [
+      "IisRTL!?GetFormattedDateTime@CACHED_DATETIME_FORMATS@@QEAAKPEBU_SYSTEMTIME@@PEAD@Z",
+      "OLEAUT32!__imp_VariantTimeToSystemTime",
+      "msvcrt!fprintf",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "?WriteFileLogRecord@CASCLOG@@MEAAJPEAU_iobuf@@PEAUILogScripting@@_N@Z",
+    "prototype": "__int64 __fastcall(CASCLOG *__hidden this, struct _iobuf *, struct ILogScripting *, bool)",
+    "rank_score": 1025,
+    "size": 1312,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "CLogFileCtrl::I_FormNewLogFileName(_SYSTEMTIME *,char const *)",
+    "ea": "0x180002840",
+    "function_file": "functions/180002840_CLogFileCtrl_I_FormNewLogFileName_SYSTEMTIME_char_const.md",
+    "matched_imports": [
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "?I_FormNewLogFileName@CLogFileCtrl@@IEAAXPEAU_SYSTEMTIME@@PEBD@Z",
+    "prototype": "void __fastcall(CLogFileCtrl *__hidden this, struct _SYSTEMTIME *, const char *)",
+    "rank_score": 1018,
+    "size": 472,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CEXTLOG::ConvertDataToString(ulong,void *,char *,ulong)",
+    "ea": "0x180003d48",
+    "function_file": "functions/180003d48_CEXTLOG_ConvertDataToString_ulong_void_char_ulong.md",
+    "matched_imports": [
+      "msvcrt!_itoa_s",
+      "msvcrt!_ltoa_s",
+      "msvcrt!_ultoa_s",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "?ConvertDataToString@CEXTLOG@@IEAAKKPEAXPEADK@Z",
+    "prototype": "__int64 __fastcall(CEXTLOG *this, int, int *, char *, unsigned int)",
+    "rank_score": 1010,
+    "size": 637,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "ILOG_FILE::Write(char *,ulong)",
+    "ea": "0x18000d598",
+    "function_file": "functions/18000d598_ILOG_FILE_Write_char_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?Write@ILOG_FILE@@QEAAHPEADK@Z",
+    "prototype": "__int64 __fastcall(ILOG_FILE *__hidden this, char *Src, size_t Size)",
+    "rank_score": 1010,
+    "size": 257,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CODBCLOG::PrepareStatement(void)",
+    "ea": "0x18000bc18",
+    "function_file": "functions/18000bc18_CODBCLOG_PrepareStatement_void.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!lstrlenA",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "?PrepareStatement@CODBCLOG@@QEAAHXZ",
+    "prototype": "__int64 __fastcall(CODBCLOG *this, __int64, unsigned int)",
+    "rank_score": 1009,
+    "size": 383,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CCustomPropHashTable::InitFrom(CCustomPropHashTable &)",
+    "ea": "0x180004a5c",
+    "function_file": "functions/180004a5c_CCustomPropHashTable_InitFrom_CCustomPropHashTable.md",
+    "matched_imports": [
+      "IisRTL!?Copy@STR@@QEAAHAEBV1@@Z",
+      "IisRTL!?InsertRecord@CLKRHashTable@@QEAA?AW4LK_RETCODE@@PEBX_N@Z",
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\extlogc.cpp"
+    ],
+    "name": "?InitFrom@CCustomPropHashTable@@QEAAHAEAV1@@Z",
+    "prototype": "__int64 __fastcall(CCustomPropHashTable *__hidden this, struct CCustomPropHashTable *)",
+    "rank_score": 877,
+    "size": 341,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CEXTLOG::InternalGetExtraLoggingFields(ulong *,char *)",
+    "ea": "0x180004e30",
+    "function_file": "functions/180004e30_CEXTLOG_InternalGetExtraLoggingFields_ulong_char.md",
+    "matched_imports": [
+      "msvcrt!strcpy_s"
+    ],
+    "matched_strings": [
+      "User-Agent:"
+    ],
+    "name": "?InternalGetExtraLoggingFields@CEXTLOG@@MEAAXPEAKPEAD@Z",
+    "prototype": "void(CEXTLOG *__hidden this, unsigned int *, char *)",
+    "rank_score": 853,
+    "size": 303,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CLogFileCtrl::GetRegParameters(char const *,void *)",
+    "ea": "0x1800024d0",
+    "function_file": "functions/1800024d0_CLogFileCtrl_GetRegParameters_char_const_void.md",
+    "matched_imports": [
+      "KERNEL32!ExpandEnvironmentStringsA",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError",
+      "msvcrt!strcpy_s"
+    ],
+    "matched_strings": [
+      "%systemroot%\\system32\\LogFiles"
+    ],
+    "name": "?GetRegParameters@CLogFileCtrl@@MEAAKPEBDPEAX@Z",
+    "prototype": "unsigned int __fastcall(CLogFileCtrl *__hidden this, const char *, void *)",
+    "rank_score": 850,
+    "size": 605,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CLogFileCtrl::TerminateLog(void)",
+    "ea": "0x180003240",
+    "function_file": "functions/180003240_CLogFileCtrl_TerminateLog_void.md",
+    "matched_imports": [
+      "IisRTL!??1STR@@QEAA@XZ",
+      "IisRTL!RemoveWorkItem",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?TerminateLog@CLogFileCtrl@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CLogFileCtrl *__hidden this)",
+    "rank_score": 816,
+    "size": 161,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "ILOG_FILE::CloseFile(void)",
+    "ea": "0x18000d0e0",
+    "function_file": "functions/18000d0e0_ILOG_FILE_CloseFile_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetEndOfFile",
+      "KERNEL32!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "?CloseFile@ILOG_FILE@@QEAAHXZ",
+    "prototype": "__int64 __fastcall(ILOG_FILE *__hidden this)",
+    "rank_score": 816,
+    "size": 86,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "A2WBSTR(char const *,int)",
+    "ea": "0x180002034",
+    "function_file": "functions/180002034_A2WBSTR_char_const_int.md",
+    "matched_imports": [
+      "KERNEL32!MultiByteToWideChar",
+      "OLEAUT32!__imp_SysAllocStringLen",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "?A2WBSTR@@YAPEAGPEBDH@Z",
+    "prototype": "unsigned __int16 *__fastcall(LPCCH lpMultiByteStr, int)",
+    "rank_score": 815,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CODBCLOG::GetConfig(ulong,uchar *)",
+    "ea": "0x18000a8f0",
+    "function_file": "functions/18000a8f0_CODBCLOG_GetConfig_ulong_uchar.md",
+    "matched_imports": [
+      "msvcrt!strcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?GetConfig@CODBCLOG@@UEAAJKPEAE@Z",
+    "prototype": "__int64 __fastcall(CODBCLOG *__hidden this, unsigned int, unsigned __int8 *)",
+    "rank_score": 811,
+    "size": 130,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ODBC_STATEMENT::ExecDirect(char const *,ulong)",
+    "ea": "0x18000dc00",
+    "function_file": "functions/18000dc00_ODBC_STATEMENT_ExecDirect_char_const_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "ODBC32!__imp_SQLExecDirect"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      " Executing the SQL command (%d bytes) %s.\n"
+    ],
+    "name": "?ExecDirect@ODBC_STATEMENT@@QEAAHPEBDK@Z",
+    "prototype": "_BOOL8 __fastcall(SQLHSTMT *this, SQLCHAR *, SQLINTEGER)",
+    "rank_score": 742,
+    "size": 222,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x18000155c",
+    "function_file": "functions/18000155c_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ODBC_CONNECTION::GetInfo(ulong,void *,ulong,ulong *)",
+    "ea": "0x18000de20",
+    "function_file": "functions/18000de20_ODBC_CONNECTION_GetInfo_ulong_void_ulong_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "ODBC32!__imp_SQLGetInfo"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx"
+    ],
+    "name": "?GetInfo@ODBC_CONNECTION@@QEAAHKPEAXKPEAK@Z",
+    "prototype": "__int64 __fastcall(ODBC_CONNECTION *__hidden this, unsigned int, void *, unsigned int, SQLSMALLINT *)",
+    "rank_score": 703,
+    "size": 243,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ODBC_CONNECTION::SetConnectOption(ushort,unsigned __int64)",
+    "ea": "0x18000ea10",
+    "function_file": "functions/18000ea10_ODBC_CONNECTION_SetConnectOption_ushort_unsigned_int64.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "ODBC32!__imp_SQLSetConnectOption"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx"
+    ],
+    "name": "?SetConnectOption@ODBC_CONNECTION@@QEAAHG_K@Z",
+    "prototype": "__int64 __fastcall(ODBC_CONNECTION *__hidden this, unsigned __int16, unsigned __int64)",
+    "rank_score": 702,
+    "size": 212,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ATL::CComTypeInfoHolder::GetTI(ulong,ITypeInfo * *)",
+    "ea": "0x180002734",
+    "function_file": "functions/180002734_ATL_CComTypeInfoHolder_GetTI_ulong_ITypeInfo.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "OLEAUT32!__imp_LoadRegTypeLib"
+    ],
+    "matched_strings": [],
+    "name": "?GetTI@CComTypeInfoHolder@ATL@@QEAAJKPEAPEAUITypeInfo@@@Z",
+    "prototype": "int(ATL::CComTypeInfoHolder *__hidden this, unsigned int, struct ITypeInfo **)",
+    "rank_score": 627,
+    "size": 260,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CODBCLOG::GetRegParametersFromNativeConfig(char const *,void *)",
+    "ea": "0x18000ab80",
+    "function_file": "functions/18000ab80_CODBCLOG_GetRegParametersFromNativeConfig_char_const_void.md",
+    "matched_imports": [
+      "msvcrt!atol",
+      "msvcrt!wcscpy_s",
+      "msvcrt!wcsncat_s"
+    ],
+    "matched_strings": [],
+    "name": "?GetRegParametersFromNativeConfig@CODBCLOG@@QEAAKPEBDPEAX@Z",
+    "prototype": "__int64 __fastcall(CODBCLOG *this, const char *, __int64 (__fastcall ***)(_QWORD, GUID *, __int64 *))",
+    "rank_score": 622,
+    "size": 1055,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_CRT_INIT",
+    "ea": "0x1800010a0",
+    "function_file": "functions/1800010a0_CRT_INIT.md",
+    "matched_imports": [
+      "KERNEL32!Sleep",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "_CRT_INIT",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 549,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CASCLOG::FormatLogBuffer(IInetLogInformation *,char *,ulong *,_SYSTEMTIME *)",
+    "ea": "0x18000c170",
+    "function_file": "functions/18000c170_CASCLOG_FormatLogBuffer_IInetLogInformation_char_ulong_SYSTEMTIME.md",
+    "matched_imports": [
+      "IisRTL!?GetFormattedDateTime@CACHED_DATETIME_FORMATS@@QEAAKPEBU_SYSTEMTIME@@PEAD@Z",
+      "IisRTL!?SetLocalTime@ASCLOG_DATETIME_CACHE@@QEAAXPEAU_SYSTEMTIME@@@Z",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?FormatLogBuffer@CASCLOG@@UEAAHPEAVIInetLogInformation@@PEADPEAKPEAU_SYSTEMTIME@@@Z",
+    "prototype": "int(CASCLOG *__hidden this, struct IInetLogInformation *, char *, unsigned int *, struct _SYSTEMTIME *)",
+    "rank_score": 615,
+    "size": 1212,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ILOG_FILE::CreateMapping(void)",
+    "ea": "0x18000d13c",
+    "function_file": "functions/18000d13c_ILOG_FILE_CreateMapping_void.md",
+    "matched_imports": [
+      "KERNEL32!CreateFileMappingA",
+      "KERNEL32!MapViewOfFile",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CreateMapping@ILOG_FILE@@AEAAHXZ",
+    "prototype": "__int64 __fastcall(ILOG_FILE *__hidden this)",
+    "rank_score": 615,
+    "size": 163,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CLogScript::get_ProtocolStatus(tagVARIANT *)",
+    "ea": "0x180008eb0",
+    "function_file": "functions/180008eb0_CLogScript_get_ProtocolStatus_tagVARIANT.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!atol"
+    ],
+    "matched_strings": [],
+    "name": "?get_ProtocolStatus@CLogScript@@UEAAJPEAUtagVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(CLogScript *__hidden this, struct tagVARIANT *)",
+    "rank_score": 611,
+    "size": 109,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CLogScript::ReadLogRecord(void)",
+    "ea": "0x1800088b0",
+    "function_file": "functions/1800088b0_CLogScript_ReadLogRecord_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!fopen"
+    ],
+    "matched_strings": [],
+    "name": "?ReadLogRecord@CLogScript@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CLogScript *__hidden this)",
+    "rank_score": 604,
+    "size": 147,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CLogScript::WriteLogRecord(ILogScripting *)",
+    "ea": "0x1800089e0",
+    "function_file": "functions/1800089e0_CLogScript_WriteLogRecord_ILogScripting.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!fopen"
+    ],
+    "matched_strings": [],
+    "name": "?WriteLogRecord@CLogScript@@UEAAJPEAUILogScripting@@@Z",
+    "prototype": "__int64 __fastcall(CLogScript *__hidden this, struct ILogScripting *)",
+    "rank_score": 603,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CLogFileCtrl::WriteLogDirectives(ulong)",
+    "ea": "0x180003300",
+    "function_file": "functions/180003300_CLogFileCtrl_WriteLogDirectives_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "Unable to write directive\n",
+      "CLogFileCtrl::WriteLogDirectives",
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\filectl.cpp"
+    ],
+    "name": "?WriteLogDirectives@CLogFileCtrl@@MEAAHK@Z",
+    "prototype": "__int64 __fastcall(CLogFileCtrl *__hidden this, unsigned int)",
+    "rank_score": 541,
+    "size": 109,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ODBC_STATEMENT::ExecuteStatement(void)",
+    "ea": "0x18000dcf0",
+    "function_file": "functions/18000dcf0_ODBC_STATEMENT_ExecuteStatement_void.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "ODBC32!__imp_SQLExecute"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx",
+      "!!WARNING!! - Attempting to use Invalid ODBC Connection!\n"
+    ],
+    "name": "?ExecuteStatement@ODBC_STATEMENT@@QEAAHXZ",
+    "prototype": "_BOOL8 __fastcall(ODBC_STATEMENT *this)",
+    "rank_score": 502,
+    "size": 101,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ODBC_CONNECTION::AllocStatement(void)",
+    "ea": "0x18000d740",
+    "function_file": "functions/18000d740_ODBC_CONNECTION_AllocStatement_void.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "ODBC32!__imp_SQLAllocStmt"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx"
+    ],
+    "name": "?AllocStatement@ODBC_CONNECTION@@QEAAPEAVODBC_STATEMENT@@XZ",
+    "prototype": "struct ODBC_STATEMENT *__fastcall(ODBC_CONNECTION *__hidden this)",
+    "rank_score": 464,
+    "size": 198,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ODBC_STATEMENT::PrepareStatement(char const *)",
+    "ea": "0x18000e560",
+    "function_file": "functions/18000e560_ODBC_STATEMENT_PrepareStatement_char_const.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "ODBC32!__imp_SQLPrepare"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx"
+    ],
+    "name": "?PrepareStatement@ODBC_STATEMENT@@QEAAHPEBD@Z",
+    "prototype": "_BOOL8 __fastcall(SQLHSTMT *this, SQLCHAR *)",
+    "rank_score": 463,
+    "size": 142,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ODBC_STATEMENT::~ODBC_STATEMENT(void)",
+    "ea": "0x18000d6b0",
+    "function_file": "functions/18000d6b0_ODBC_STATEMENT_ODBC_STATEMENT_void.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "ODBC32!__imp_SQLFreeStmt"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\infocomm\\log\\plugin\\odbcconn.cxx"
+    ],
+    "name": "??1ODBC_STATEMENT@@QEAA@XZ",
+    "prototype": "void __fastcall(ODBC_STATEMENT *__hidden this)",
+    "rank_score": 463,
+    "size": 126,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator<ATL::CComObjectCached<ATL::CComClassFactory>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180009d50",
+    "function_file": "functions/180009d50_ATL_CComCreator_ATL_CComObjectCached_ATL_CComClassFactory_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 425,
+    "size": 161,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CEXTLOG::NormalFormatBuffer(IInetLogInformation *,char *,ulong *,_SYSTEMTIME *)",
+    "ea": "0x180005394",
+    "function_file": "functions/180005394_CEXTLOG_NormalFormatBuffer_IInetLogInformation_char_ulong_SYSTEMTIME.md",
+    "matched_imports": [
+      "IisRTL!?GetFormattedDateTime@CACHED_DATETIME_FORMATS@@QEAAKPEBU_SYSTEMTIME@@PEAD@Z",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?NormalFormatBuffer@CEXTLOG@@IEAAHPEAVIInetLogInformation@@PEADPEAKPEAU_SYSTEMTIME@@@Z",
+    "prototype": "__int64 __fastcall(CEXTLOG *__hidden this, struct IInetLogInformation *, char *, unsigned int *, struct _SYSTEMTIME *)",
+    "rank_score": 421,
+    "size": 1944,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CLogFileCtrl::InitializeLog(char const *,char const *,char *)",
+    "ea": "0x180002a20",
+    "function_file": "functions/180002a20_CLogFileCtrl_InitializeLog_char_const_char_const_char.md",
+    "matched_imports": [
+      "IisRTL!?Copy@STR@@QEAAHPEBD@Z"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeLog@CLogFileCtrl@@UEAAJPEBD0PEAD@Z",
+    "prototype": "__int64 __fastcall(CLogFileCtrl *__hidden this, const char *, const char *, char *)",
+    "rank_score": 412,
+    "size": 93,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CLogScript::get_ProtocolVersion(tagVARIANT *)",
+    "ea": "0x180008f30",
+    "function_file": "functions/180008f30_CLogScript_get_ProtocolVersion_tagVARIANT.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?get_ProtocolVersion@CLogScript@@UEAAJPEAUtagVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(CLogScript *__hidden this, struct tagVARIANT *)",
+    "rank_score": 412,
+    "size": 109,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CLogScript::get_ServiceName(tagVARIANT *)",
+    "ea": "0x1800091b0",
+    "function_file": "functions/1800091b0_CLogScript_get_ServiceName_tagVARIANT.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?get_ServiceName@CLogScript@@UEAAJPEAUtagVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(CLogScript *__hidden this, struct tagVARIANT *)",
+    "rank_score": 412,
+    "size": 109,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CLogScript::get_URIQuery(tagVARIANT *)",
+    "ea": "0x1800092b0",
+    "function_file": "functions/1800092b0_CLogScript_get_URIQuery_tagVARIANT.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?get_URIQuery@CLogScript@@UEAAJPEAUtagVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(CLogScript *__hidden this, struct tagVARIANT *)",
+    "rank_score": 412,
+    "size": 109,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CLogScript::get_URIStem(tagVARIANT *)",
+    "ea": "0x180009330",
+    "function_file": "functions/180009330_CLogScript_get_URIStem_tagVARIANT.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?get_URIStem@CLogScript@@UEAAJPEAUtagVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(CLogScript *__hidden this, struct tagVARIANT *)",
+    "rank_score": 412,
+    "size": 109,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CLogScript::get_UserAgent(tagVARIANT *)",
+    "ea": "0x1800093b0",
+    "function_file": "functions/1800093b0_CLogScript_get_UserAgent_tagVARIANT.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?get_UserAgent@CLogScript@@UEAAJPEAUtagVARIANT@@@Z",
+    "prototype": "__int64 __fastcall(CLogScript *__hidden this, struct tagVARIANT *)",
+    "rank_score": 412,
+    "size": 109,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "ILOG_FILE::DestroyMapping(void)",
+    "ea": "0x18000d1e8",
+    "function_file": "functions/18000d1e8_ILOG_FILE_DestroyMapping_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!UnmapViewOfFile"
+    ],
+    "matched_strings": [],
+    "name": "?DestroyMapping@ILOG_FILE@@AEAAXXZ",
+    "prototype": "void __fastcall(ILOG_FILE *__hidden this)",
+    "rank_score": 404,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "LOG_PROPERTY_INFO::LOG_PROPERTY_INFO(void)",
+    "ea": "0x1800038f0",
+    "function_file": "functions/1800038f0_LOG_PROPERTY_INFO_LOG_PROPERTY_INFO_void.md",
+    "matched_imports": [
+      "IisRTL!??0STR@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??0LOG_PROPERTY_INFO@@QEAA@XZ",
+    "prototype": "LOG_PROPERTY_INFO *__fastcall(LOG_PROPERTY_INFO *__hidden this)",
+    "rank_score": 402,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CODBCLOG::~CODBCLOG(void)",
+    "ea": "0x18000a774",
+    "function_file": "functions/18000a774_CODBCLOG_CODBCLOG_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CODBCLOG@@IEAA@XZ",
+    "prototype": "void __fastcall(CODBCLOG *__hidden this)",
+    "rank_score": 304,
+    "size": 50,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "LOG_PROPERTY_INFO::~LOG_PROPERTY_INFO(void)",
+    "ea": "0x180003ab4",
+    "function_file": "functions/180003ab4_LOG_PROPERTY_INFO_LOG_PROPERTY_INFO_void.md",
+    "matched_imports": [
+      "IisRTL!??1STR@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1LOG_PROPERTY_INFO@@QEAA@XZ",
+    "prototype": "void __fastcall(LOG_PROPERTY_INFO *__hidden this)",
+    "rank_score": 302,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::IDispatchImpl<ILogScripting,&_GUID const IID_ILogScripting,&_GUID const LIBID_IISLog,1,0,ATL::CComTypeInfoHolder>::Invoke(long,_GUID const &,ulong,ushort,tagDISPPARAMS *,tagVARIANT *,tagEXCEPINFO *,uint *)",
+    "ea": "0x180004f70",
+    "function_file": "functions/180004f70_ATL_IDispatchImpl_ILogScripting_GUID_const_IID_ILogScripting_GUID_const_LIBID_IISLog_1_0_ATL_CComTypeInfoHolde.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SetErrorInfo"
+    ],
+    "matched_strings": [],
+    "name": "?Invoke@?$IDispatchImpl@UILogScripting@@$1?IID_ILogScripting@@3U_GUID@@B$1?LIBID_IISLog@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJJAEBU_GUID@@KGPEAUtagDISPPARAMS@@PEAUtagVARIANT@@PEAUtagEXCEPINFO@@PEAI@Z",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 170,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::Release(void)",
+    "ea": "0x18000a4a0",
+    "function_file": "functions/18000a4a0_ATL_CComObjectCached_ATL_CComClassFactory_Release_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Release@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 222,
+    "size": 118,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CCustomPropHashTable::ClearTableAndStorage(void)",
+    "ea": "0x180003cd8",
+    "function_file": "functions/180003cd8_CCustomPropHashTable_ClearTableAndStorage_void.md",
+    "matched_imports": [
+      "IisRTL!?Clear@CLKRHashTable@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?ClearTableAndStorage@CCustomPropHashTable@@QEAAXXZ",
+    "prototype": "void __fastcall(CCustomPropHashTable *__hidden this)",
+    "rank_score": 216,
+    "size": 104,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CASCLOG>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180009e00",
+    "function_file": "functions/180009e00_ATL_CComAggObject_CASCLOG_QueryInterface_GUID_const_void.md",
+    "matched_imports": [
+      "ATL!__imp_AtlInternalQueryInterface"
+    ],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComAggObject@VCASCLOG@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 97,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CEXTLOG>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180009e70",
+    "function_file": "functions/180009e70_ATL_CComAggObject_CEXTLOG_QueryInterface_GUID_const_void.md",
+    "matched_imports": [
+      "ATL!__imp_AtlInternalQueryInterface"
+    ],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComAggObject@VCEXTLOG@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 97,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CNCSALOG>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180009ee0",
+    "function_file": "functions/180009ee0_ATL_CComAggObject_CNCSALOG_QueryInterface_GUID_const_void.md",
+    "matched_imports": [
+      "ATL!__imp_AtlInternalQueryInterface"
+    ],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComAggObject@VCNCSALOG@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 97,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CODBCLOG>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180009f50",
+    "function_file": "functions/180009f50_ATL_CComAggObject_CODBCLOG_QueryInterface_GUID_const_void.md",
+    "matched_imports": [
+      "ATL!__imp_AtlInternalQueryInterface"
+    ],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComAggObject@VCODBCLOG@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 97,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CLogFileCtrl::InternalGetConfig(_INETLOG_CONFIGURATIONA *)",
+    "ea": "0x180002a90",
+    "function_file": "functions/180002a90_CLogFileCtrl_InternalGetConfig_INETLOG_CONFIGURATIONA.md",
+    "matched_imports": [
+      "msvcrt!strcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?InternalGetConfig@CLogFileCtrl@@MEAAXPEAU_INETLOG_CONFIGURATIONA@@@Z",
+    "prototype": "void __fastcall(CLogFileCtrl *__hidden this, struct _INETLOG_CONFIGURATIONA *)",
+    "rank_score": 212,
+    "size": 97,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "FastDwToA(char *,ulong)",
+    "ea": "0x1800022a8",
+    "function_file": "functions/1800022a8_FastDwToA_char_ulong.md",
+    "matched_imports": [
+      "msvcrt!_ultoa"
+    ],
+    "matched_strings": [],
+    "name": "?FastDwToA@@YAKPEADK@Z",
+    "prototype": "unsigned int __fastcall(char *Buffer, unsigned int Value)",
+    "rank_score": 211,
+    "size": 320,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CNCSALOG::ConvertNCSADateToVariantDate(char *,char *,double *)",
+    "ea": "0x180007688",
+    "function_file": "functions/180007688_CNCSALOG_ConvertNCSADateToVariantDate_char_char_double.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SystemTimeToVariantTime"
+    ],
+    "matched_strings": [],
+    "name": "?ConvertNCSADateToVariantDate@CNCSALOG@@AEAAHPEAD0PEAN@Z",
+    "prototype": "int(CNCSALOG *__hidden this, char *, char *, double *)",
+    "rank_score": 208,
+    "size": 531,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "MB::GetData(char const *,ulong,ulong,ulong,void *,ulong *,ulong)",
+    "ea": "0x180002410",
+    "function_file": "functions/180002410_MB_GetData_char_const_ulong_ulong_ulong_void_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?GetData@MB@@QEAAHPEBDKKKPEAXPEAKK@Z",
+    "prototype": "__int64 __fastcall(MB *__hidden this, const char *, unsigned int, unsigned int, unsigned int, void *, unsigned int *, unsigned int)",
+    "rank_score": 208,
+    "size": 180,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "AtlW2AHelper(char *,ushort const *,int)",
+    "ea": "0x180002114",
+    "function_file": "functions/180002114_AtlW2AHelper_char_ushort_const_int.md",
+    "matched_imports": [
+      "KERNEL32!WideCharToMultiByte"
+    ],
+    "matched_strings": [],
+    "name": "?AtlW2AHelper@@YAPEADPEADPEBGH@Z",
+    "prototype": "char *(char *, const unsigned __int16 *, int)",
+    "rank_score": 204,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CASCLOG::CASCLOG(void)",
+    "ea": "0x18000bed8",
+    "function_file": "functions/18000bed8_CASCLOG_CASCLOG_void.md",
+    "matched_imports": [
+      "IisRTL!??0ASCLOG_DATETIME_CACHE@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??0CASCLOG@@QEAA@XZ",
+    "prototype": "CASCLOG *__fastcall(CASCLOG *__hidden this)",
+    "rank_score": 203,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ODBC_PARAMETER::CopyValue(_SYSTEMTIME *)",
+    "ea": "0x18000da20",
+    "function_file": "functions/18000da20_ODBC_PARAMETER_CopyValue_SYSTEMTIME.md",
+    "matched_imports": [
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CopyValue@ODBC_PARAMETER@@QEAAHPEAU_SYSTEMTIME@@@Z",
+    "prototype": "__int64 __fastcall(ODBC_PARAMETER *__hidden this, struct _SYSTEMTIME *)",
+    "rank_score": 202,
+    "size": 111,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ODBC_PARAMETER::CopyValue(char const *)",
+    "ea": "0x180001d40",
+    "function_file": "functions/180001d40_ODBC_PARAMETER_CopyValue_char_const.md",
+    "matched_imports": [
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CopyValue@ODBC_PARAMETER@@QEAAHPEBD@Z",
+    "prototype": "_BOOL8 __fastcall(void **this, const char *)",
+    "rank_score": 202,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ODBC_PARAMETER::CopyValue(void *,long)",
+    "ea": "0x180001cf0",
+    "function_file": "functions/180001cf0_ODBC_PARAMETER_CopyValue_void_long.md",
+    "matched_imports": [
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CopyValue@ODBC_PARAMETER@@QEAAHPEAXJ@Z",
+    "prototype": "__int64 __fastcall(ODBC_PARAMETER *__hidden this, void *, int)",
+    "rank_score": 202,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ODBC_PARAMETER::CopyValue(ulong)",
+    "ea": "0x180001cb0",
+    "function_file": "functions/180001cb0_ODBC_PARAMETER_CopyValue_ulong.md",
+    "matched_imports": [
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CopyValue@ODBC_PARAMETER@@QEAAHK@Z",
+    "prototype": "__int64 __fastcall(ODBC_PARAMETER *__hidden this, unsigned int)",
+    "rank_score": 201,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllGetClassObject",
+    "ea": "0x18000d0c0",
+    "function_file": "functions/18000d0c0_DllGetClassObject.md",
+    "matched_imports": [
+      "ATL!__imp_AtlModuleGetClassObject"
+    ],
+    "matched_strings": [],
+    "name": "DllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 130,
+    "size": 23,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "memcpy_0",
+    "ea": "0x18000ec56",
+    "function_file": "functions/18000ec56_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 113,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ASCLOG_DATETIME_CACHE::`scalar deleting destructor'(uint)",
+    "ea": "0x180003b00",
+    "function_file": "functions/180003b00_ASCLOG_DATETIME_CACHE_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "IisRTL!??_7CACHED_DATETIME_FORMATS@@6B@"
+    ],
+    "matched_strings": [],
+    "name": "??_GASCLOG_DATETIME_CACHE@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(ASCLOG_DATETIME_CACHE *__hidden this, unsigned int)",
+    "rank_score": 112,
+    "size": 38,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CASCLOG>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000a000",
+    "function_file": "functions/18000a000_ATL_CComObject_CASCLOG_QueryInterface_GUID_const_void.md",
+    "matched_imports": [
+      "ATL!__imp_AtlInternalQueryInterface"
+    ],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCASCLOG@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CEXTLOG>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000a040",
+    "function_file": "functions/18000a040_ATL_CComObject_CEXTLOG_QueryInterface_GUID_const_void.md",
+    "matched_imports": [
+      "ATL!__imp_AtlInternalQueryInterface"
+    ],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCEXTLOG@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CNCSALOG>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000a080",
+    "function_file": "functions/18000a080_ATL_CComObject_CNCSALOG_QueryInterface_GUID_const_void.md",
+    "matched_imports": [
+      "ATL!__imp_AtlInternalQueryInterface"
+    ],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCNCSALOG@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CODBCLOG>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000a0c0",
+    "function_file": "functions/18000a0c0_ATL_CComObject_CODBCLOG_QueryInterface_GUID_const_void.md",
+    "matched_imports": [
+      "ATL!__imp_AtlInternalQueryInterface"
+    ],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCODBCLOG@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 110,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000a0e0",
+    "function_file": "functions/18000a0e0_ATL_CComObjectCached_ATL_CComClassFactory_QueryInterface_GUID_const_void.md",
+    "matched_imports": [
+      "ATL!__imp_AtlInternalQueryInterface"
+    ],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 110,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "CASCLOG::~CASCLOG(void)",
+    "ea": "0x18000bf30",
+    "function_file": "functions/18000bf30_CASCLOG_CASCLOG_void.md",
+    "matched_imports": [
+      "IisRTL!??_7CACHED_DATETIME_FORMATS@@6B@"
+    ],
+    "matched_strings": [],
+    "name": "??1CASCLOG@@MEAA@XZ",
+    "prototype": "void __fastcall(CASCLOG *__hidden this)",
+    "rank_score": 106,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "memset_0",
+    "ea": "0x18000ec62",
+    "function_file": "functions/18000ec62_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 106,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ASCLOG_DATETIME_CACHE::GenerateDateTimeString(DATETIME_FORMAT_ENTRY *,_SYSTEMTIME const *)",
+    "ea": "0x180001a70",
+    "function_file": "functions/180001a70_ASCLOG_DATETIME_CACHE_GenerateDateTimeString_DATETIME_FORMAT_ENTRY_SYSTEMTIME_const.md",
+    "matched_imports": [
+      "IisRTL!?GenerateDateTimeString@ASCLOG_DATETIME_CACHE@@UEAAXPEAUDATETIME_FORMAT_ENTRY@@PEBU_SYSTEMTIME@@@Z"
+    ],
+    "matched_strings": [],
+    "name": "?GenerateDateTimeString@ASCLOG_DATETIME_CACHE@@UEAAXPEAUDATETIME_FORMAT_ENTRY@@PEBU_SYSTEMTIME@@@Z_0",
+    "prototype": "void(ASCLOG_DATETIME_CACHE *__hidden this, struct DATETIME_FORMAT_ENTRY *, const struct _SYSTEMTIME *)",
+    "rank_score": 100,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllRegisterServer",
+    "ea": "0x18000a6c0",
+    "function_file": "functions/18000a6c0_DllRegisterServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "InstallComponent"
+    ],
+    "name": "DllRegisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 71,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllUnregisterServer",
+    "ea": "0x18000a6e0",
+    "function_file": "functions/18000a6e0_DllUnregisterServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RemoveComponent"
+    ],
+    "name": "DllUnregisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 61,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 33,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000eca0",
+    "function_file": "functions/18000eca0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 50,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180010010",
+    "function_file": "functions/180010010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 30,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001048",
+    "function_file": "functions/180001048_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator2<ATL::CComCreator<ATL::CComObject<CASCLOG>>,ATL::CComCreator<ATL::CComAggObject<CASCLOG>>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x1800097d0",
+    "function_file": "functions/1800097d0_ATL_CComCreator2_ATL_CComCreator_ATL_CComObject_CASCLOG_ATL_CComCreator_ATL_CComAggObject_CASCLOG_CreateInstan.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCASCLOG@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCASCLOG@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 350,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator2<ATL::CComCreator<ATL::CComObject<CEXTLOG>>,ATL::CComCreator<ATL::CComAggObject<CEXTLOG>>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180009940",
+    "function_file": "functions/180009940_ATL_CComCreator2_ATL_CComCreator_ATL_CComObject_CEXTLOG_ATL_CComCreator_ATL_CComAggObject_CEXTLOG_CreateInstan.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCEXTLOG@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCEXTLOG@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 350,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator2<ATL::CComCreator<ATL::CComObject<CNCSALOG>>,ATL::CComCreator<ATL::CComAggObject<CNCSALOG>>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180009ab0",
+    "function_file": "functions/180009ab0_ATL_CComCreator2_ATL_CComCreator_ATL_CComObject_CNCSALOG_ATL_CComCreator_ATL_CComAggObject_CNCSALOG_CreateInst.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCNCSALOG@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCNCSALOG@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 350,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator2<ATL::CComCreator<ATL::CComObject<CODBCLOG>>,ATL::CComCreator<ATL::CComAggObject<CODBCLOG>>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180009c20",
+    "function_file": "functions/180009c20_ATL_CComCreator2_ATL_CComCreator_ATL_CComObject_CODBCLOG_ATL_CComCreator_ATL_CComAggObject_CODBCLOG_CreateInst.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCODBCLOG@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCODBCLOG@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 297,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComContainedObject<CNCSALOG>::`scalar deleting destructor'(uint)",
+    "ea": "0x180007650",
+    "function_file": "functions/180007650_ATL_CComContainedObject_CNCSALOG_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$CComContainedObject@VCNCSALOG@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 24,
+    "size": 47,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CASCLOG>::`scalar deleting destructor'(uint)",
+    "ea": "0x1800095e0",
+    "function_file": "functions/1800095e0_ATL_CComObject_CASCLOG_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$CComObject@VCASCLOG@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 24,
+    "size": 85,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CEXTLOG>::`vector deleting destructor'(uint)",
+    "ea": "0x180009640",
+    "function_file": "functions/180009640_ATL_CComObject_CEXTLOG_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCEXTLOG@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 24,
+    "size": 85,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CNCSALOG>::`vector deleting destructor'(uint)",
+    "ea": "0x1800096a0",
+    "function_file": "functions/1800096a0_ATL_CComObject_CNCSALOG_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCNCSALOG@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 24,
+    "size": 85,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CASCLOG>::Release(void)",
+    "ea": "0x18000a100",
+    "function_file": "functions/18000a100_ATL_CComAggObject_CASCLOG_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComAggObject@VCASCLOG@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 124,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CEXTLOG>::Release(void)",
+    "ea": "0x18000a190",
+    "function_file": "functions/18000a190_ATL_CComAggObject_CEXTLOG_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComAggObject@VCEXTLOG@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 124,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CNCSALOG>::Release(void)",
+    "ea": "0x18000a220",
+    "function_file": "functions/18000a220_ATL_CComAggObject_CNCSALOG_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComAggObject@VCNCSALOG@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 124,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CODBCLOG>::Release(void)",
+    "ea": "0x18000a2b0",
+    "function_file": "functions/18000a2b0_ATL_CComAggObject_CODBCLOG_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComAggObject@VCODBCLOG@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 124,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CODBCLOG>::Release(void)",
+    "ea": "0x18000a410",
+    "function_file": "functions/18000a410_ATL_CComObject_CODBCLOG_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCODBCLOG@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(CODBCLOG *this)",
+    "rank_score": 23,
+    "size": 123,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::IDispatchImpl<ILogScripting,&_GUID const IID_ILogScripting,&_GUID const LIBID_IISLog,1,0,ATL::CComTypeInfoHolder>::GetIDsOfNames(_GUID const &,ushort * *,uint,ulong,long *)",
+    "ea": "0x180004790",
+    "function_file": "functions/180004790_ATL_IDispatchImpl_ILogScripting_GUID_const_IID_ILogScripting_GUID_const_LIBID_IISLog_1_0_ATL_CComTypeInfoHolde.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetIDsOfNames@?$IDispatchImpl@UILogScripting@@$1?IID_ILogScripting@@3U_GUID@@B$1?LIBID_IISLog@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAGIKPEAJ@Z",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 110,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800012d0",
+    "function_file": "functions/1800012d0_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000ebe8",
+    "function_file": "functions/18000ebe8_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::IDispatchImpl<ILogScripting,&_GUID const IID_ILogScripting,&_GUID const LIBID_IISLog,1,0,ATL::CComTypeInfoHolder>::GetTypeInfo(uint,ulong,ITypeInfo * *)",
+    "ea": "0x180004a10",
+    "function_file": "functions/180004a10_ATL_IDispatchImpl_ILogScripting_GUID_const_IID_ILogScripting_GUID_const_LIBID_IISLog_1_0_ATL_CComTypeInfoHolde.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTypeInfo@?$IDispatchImpl@UILogScripting@@$1?IID_ILogScripting@@3U_GUID@@B$1?LIBID_IISLog@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJIKPEAPEAUITypeInfo@@@Z",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 34,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 19,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 22,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::IDispatchImpl<ILogScripting,&_GUID const IID_ILogScripting,&_GUID const LIBID_IISLog,1,0,ATL::CComTypeInfoHolder>::GetTypeInfoCount(uint *)",
+    "ea": "0x180004a40",
+    "function_file": "functions/180004a40_ATL_IDispatchImpl_ILogScripting_GUID_const_IID_ILogScripting_GUID_const_LIBID_IISLog_1_0_ATL_CComTypeInfoHolde.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTypeInfoCount@?$IDispatchImpl@UILogScripting@@$1?IID_ILogScripting@@3U_GUID@@B$1?LIBID_IISLog@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJPEAI@Z",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 20,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CODBCLOG::PrepareParameters(void)",
+    "ea": "0x18000ba58",
+    "function_file": "functions/18000ba58_CODBCLOG_PrepareParameters_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PrepareParameters@CODBCLOG@@QEAAHXZ",
+    "prototype": "__int64 __fastcall(void ***this)",
+    "rank_score": 20,
+    "size": 439,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001314",
+    "function_file": "functions/180001314_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18000ece0",
+    "function_file": "functions/18000ece0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CEXTLOG>::Release(void)",
+    "ea": "0x18000a380",
+    "function_file": "functions/18000a380_ATL_CComObject_CEXTLOG_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCEXTLOG@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 97,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComClassFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x180002240",
+    "function_file": "functions/180002240_ATL_CComClassFactory_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CComClassFactory@ATL@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(ATL::CComClassFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 12,
+    "size": 98,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComContainedObject<CASCLOG>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180009fc0",
+    "function_file": "functions/180009fc0_ATL_CComContainedObject_CASCLOG_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComContainedObject@VCASCLOG@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComContainedObject<CODBCLOG>::AddRef(void)",
+    "ea": "0x180009730",
+    "function_file": "functions/180009730_ATL_CComContainedObject_CODBCLOG_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCODBCLOG@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComContainedObject<CODBCLOG>::Release(void)",
+    "ea": "0x18000a340",
+    "function_file": "functions/18000a340_ATL_CComContainedObject_CODBCLOG_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCODBCLOG@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CEXTLOG>::AddRef(void)",
+    "ea": "0x180009700",
+    "function_file": "functions/180009700_ATL_CComObject_CEXTLOG_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCEXTLOG@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComClassFactory::LockServer(int)",
+    "ea": "0x180002b20",
+    "function_file": "functions/180002b20_ATL_CComClassFactory_LockServer_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?LockServer@CComClassFactory@ATL@@UEAAJH@Z",
+    "prototype": "__int64 __fastcall(ATL::CComClassFactory *__hidden this, int)",
+    "rank_score": 11,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::AddRef(void)",
+    "ea": "0x180009790",
+    "function_file": "functions/180009790_ATL_CComObjectCached_ATL_CComClassFactory_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 54,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CEXTLOG::InternalGetConfig(_INETLOG_CONFIGURATIONA *)",
+    "ea": "0x180004df0",
+    "function_file": "functions/180004df0_CEXTLOG_InternalGetConfig_INETLOG_CONFIGURATIONA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalGetConfig@CEXTLOG@@MEAAXPEAU_INETLOG_CONFIGURATIONA@@@Z",
+    "prototype": "void __fastcall(CEXTLOG *__hidden this, struct _INETLOG_CONFIGURATIONA *)",
+    "rank_score": 11,
+    "size": 44,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CLogFileCtrl::GetConfig(ulong,uchar *)",
+    "ea": "0x1800023f0",
+    "function_file": "functions/1800023f0_CLogFileCtrl_GetConfig_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetConfig@CLogFileCtrl@@UEAAJKPEAE@Z",
+    "prototype": "__int64 __fastcall(CLogFileCtrl *__hidden this, unsigned int, unsigned __int8 *)",
+    "rank_score": 11,
+    "size": 26,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CLogFileCtrl::SetConfig(ulong,uchar *)",
+    "ea": "0x180003000",
+    "function_file": "functions/180003000_CLogFileCtrl_SetConfig_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetConfig@CLogFileCtrl@@UEAAJKPEAE@Z",
+    "prototype": "__int64 __fastcall(CLogFileCtrl *this, __int64, unsigned __int8 *)",
+    "rank_score": 11,
+    "size": 39,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CASCLOG>::AddRef`adjustor{408}' (void)",
+    "ea": "0x180009750",
+    "function_file": "functions/180009750_thunk_ATL_CComContainedObject_CASCLOG_AddRef_adjustor_408_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCASCLOG@@@ATL@@WBJI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CASCLOG>::QueryInterface`adjustor{408}' (_GUID const &,void * *)",
+    "ea": "0x180009fe0",
+    "function_file": "functions/180009fe0_thunk_ATL_CComContainedObject_CASCLOG_QueryInterface_adjustor_408_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComContainedObject@VCASCLOG@@@ATL@@WBJI@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComContainedObject<CNCSALOG>::Release`adjustor{408}' (void)",
+    "ea": "0x18000a360",
+    "function_file": "functions/18000a360_thunk_ATL_CComContainedObject_CNCSALOG_Release_adjustor_408_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCNCSALOG@@@ATL@@WBJI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CASCLOG>::QueryInterface`adjustor{408}' (_GUID const &,void * *)",
+    "ea": "0x18000a020",
+    "function_file": "functions/18000a020_thunk_ATL_CComObject_CASCLOG_QueryInterface_adjustor_408_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCASCLOG@@@ATL@@WBJI@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CASCLOG>::`vector deleting destructor'`adjustor{408}' (uint)",
+    "ea": "0x180009540",
+    "function_file": "functions/180009540_thunk_ATL_CComObject_CASCLOG_vector_deleting_destructor_adjustor_408_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCASCLOG@@@ATL@@WBJI@EAAPEAXI@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CEXTLOG>::AddRef`adjustor{408}' (void)",
+    "ea": "0x180009770",
+    "function_file": "functions/180009770_thunk_ATL_CComObject_CEXTLOG_AddRef_adjustor_408_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCEXTLOG@@@ATL@@WBJI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CEXTLOG>::QueryInterface`adjustor{408}' (_GUID const &,void * *)",
+    "ea": "0x18000a060",
+    "function_file": "functions/18000a060_thunk_ATL_CComObject_CEXTLOG_QueryInterface_adjustor_408_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCEXTLOG@@@ATL@@WBJI@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CEXTLOG>::Release`adjustor{408}' (void)",
+    "ea": "0x18000a3f0",
+    "function_file": "functions/18000a3f0_thunk_ATL_CComObject_CEXTLOG_Release_adjustor_408_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCEXTLOG@@@ATL@@WBJI@EAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CEXTLOG>::`vector deleting destructor'`adjustor{408}' (uint)",
+    "ea": "0x180009560",
+    "function_file": "functions/180009560_thunk_ATL_CComObject_CEXTLOG_vector_deleting_destructor_adjustor_408_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCEXTLOG@@@ATL@@WBJI@EAAPEAXI@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CNCSALOG>::QueryInterface`adjustor{408}' (_GUID const &,void * *)",
+    "ea": "0x18000a0a0",
+    "function_file": "functions/18000a0a0_thunk_ATL_CComObject_CNCSALOG_QueryInterface_adjustor_408_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCNCSALOG@@@ATL@@WBJI@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<CNCSALOG>::`vector deleting destructor'`adjustor{408}' (uint)",
+    "ea": "0x180009580",
+    "function_file": "functions/180009580_thunk_ATL_CComObject_CNCSALOG_vector_deleting_destructor_adjustor_408_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCNCSALOG@@@ATL@@WBJI@EAAPEAXI@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllCanUnloadNow",
+    "ea": "0x18000d0a0",
+    "function_file": "functions/18000d0a0_DllCanUnloadNow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 10,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "_alloca_probe",
+    "ea": "0x18000ed30",
+    "function_file": "functions/18000ed30_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "CNCSALOG::~CNCSALOG(void)",
+    "ea": "0x1800075f4",
+    "function_file": "functions/1800075f4_CNCSALOG_CNCSALOG_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CNCSALOG@@MEAA@XZ",
+    "prototype": "void __fastcall(CNCSALOG *__hidden this)",
+    "rank_score": 6,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CLogScript::ResetInetLogLine(_INETLOGLINE &)",
+    "ea": "0x18000894c",
+    "function_file": "functions/18000894c_CLogScript_ResetInetLogLine_INETLOGLINE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ResetInetLogLine@CLogScript@@AEAAXAEAU_INETLOGLINE@@@Z",
+    "prototype": "void __fastcall(CLogScript *__hidden this, struct _INETLOGLINE *)",
+    "rank_score": 4,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CopyFieldToBuffer(char *,ulong,char * *,ulong *,ulong)",
+    "ea": "0x180003fcc",
+    "function_file": "functions/180003fcc_CopyFieldToBuffer_char_ulong_char_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CopyFieldToBuffer@@YAHPEADKPEAPEADPEAKK@Z",
+    "prototype": "__int64 __fastcall(char *Src, size_t Size, char **, unsigned int *, unsigned int)",
+    "rank_score": 3,
+    "size": 113,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CLogFileCtrl::WriteCustomLogDirectives(ulong)",
+    "ea": "0x1800032f0",
+    "function_file": "functions/1800032f0_CLogFileCtrl_WriteCustomLogDirectives_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WriteCustomLogDirectives@CLogFileCtrl@@MEAAHK@Z",
+    "prototype": "__int64 __fastcall(CLogFileCtrl *__hidden this, unsigned int)",
+    "rank_score": 0,
+    "size": 6,
+    "tags": []
+  }
+]

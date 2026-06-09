@@ -1,0 +1,181 @@
+# Ofc::TComplexTypeHelper<Igx::ResetElementProps_<0>>::FillWriters(Igx::ResetElementProps_<0> const &,Ofc::CNamespaceDeclarationTracker &,Ofc::CWriterEmit &,Ofc::IWriterParams &)
+
+- ea: `0x1800619c0`
+- end: `0x180062240`
+- name: `?FillWriters@?$TComplexTypeHelper@V?$ResetElementProps_@$0A@@Igx@@@Ofc@@SAXAEBV?$ResetElementProps_@$0A@@Igx@@AEAVCNamespaceDeclarationTracker@2@AEAVCWriterEmit@2@AEAVIWriterParams@2@@Z`
+- size: `2176`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `34`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18005ecd8`
+
+## callees
+
+- `0x18001ca60`
+- `0x18001cb48`
+- `0x18001cb60`
+- `0x180021520`
+- `0x180029590`
+- `0x18004b408`
+- `0x18005a2e0`
+- `0x18005a2fc`
+- `0x18005a318`
+- `0x18005a334`
+- `0x18005e828`
+- `0x18005e844`
+- `0x18005e860`
+- `0x18005e87c`
+- `0x18005e898`
+- `0x18005e8b4`
+- `0x18005e8d0`
+- `0x18005e8ec`
+- `0x18005e908`
+- `0x18005e924`
+- `0x18005e940`
+- `0x18005e95c`
+- `0x18005e978`
+- `0x18005e994`
+- `0x18005e9b0`
+- `0x18005e9cc`
+- `0x18005e9e8`
+- `0x18005ea04`
+- `0x18005ea20`
+- `0x18005ea3c`
+- `0x18005ea58`
+- `0x18005ea74`
+- `0x1800619c0`
+- `0x180066090`
+
+## import_xrefs
+
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061a10`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061a56`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061a9c`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061ae2`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061b28`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061b6e`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061bb4`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061bfa`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061c40`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061c86`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061ccc`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061d12`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061d58`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061d9e`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061de4`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061e2a`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061e70`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061eb6`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061efc`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061f42`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061f88`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061fce`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180062014`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x18006205a`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x1800620a0`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x1800620e6`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x18006212c`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180062172`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x1800621b8`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x1800621fa`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061a10`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061a56`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061a9c`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061ae2`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061b28`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061b6e`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061bb4`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061bfa`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061c40`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061c86`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061ccc`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061d12`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061d58`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061d9e`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061de4`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061e2a`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061e70`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061eb6`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061efc`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061f42`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061f88`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180061fce`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180062014`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x18006205a`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x1800620a0`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x1800620e6`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x18006212c`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x180062172`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x1800621b8`
+- `mso40uiWin32Client!__imp_?GetPropertyStgType@CPropertySetImpl@Tph@Ofc@@IEBAPEBV?$TAnyStorage@$07@3@I@Z` at `0x1800621fa`
+- `mso40uiWin32Client!__imp_?EmitEndElement@CWriterEmit@Ofc@@QEAAXXZ` at `0x180062239`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x1800619f5`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061a3b`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061a81`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061ac7`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061b0d`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061b53`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061b99`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061bdf`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061c25`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061c6b`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061cb1`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061cf7`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061d3d`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061d83`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061dc9`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061e0f`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061e55`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061e9b`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061ee1`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061f27`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061f6d`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061fb3`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061ff9`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x18006203f`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180062085`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x1800620cb`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180062111`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180062157`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x18006219d`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x1800621df`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x1800619f5`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061a3b`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061a81`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061ac7`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061b0d`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061b53`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061b99`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061bdf`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061c25`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061c6b`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061cb1`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061cf7`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061d3d`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061d83`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061dc9`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061e0f`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061e55`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061e9b`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061ee1`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061f27`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061f6d`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061fb3`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180061ff9`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x18006203f`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180062085`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x1800620cb`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180062111`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x180062157`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x18006219d`
+- `mso40uiWin32Client!__imp_?FIsEmptyLocal@CPropertySetImpl@Tph@Ofc@@IEBA_NI@Z` at `0x1800621df`
+
+## pseudocode
+
+```c
+
+```

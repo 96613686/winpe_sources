@@ -1,0 +1,152 @@
+# Igx::CContentPaneDialogWin::FWndProcPreFilter(HWND__ *,uint,unsigned __int64,__int64,__int64 *)
+
+- ea: `0x180029160`
+- end: `0x180029580`
+- name: `?FWndProcPreFilter@CContentPaneDialogWin@Igx@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z`
+- size: `1056`
+- prototype: `bool __usercall@<al>(Igx::CContentPaneDialogWin *__hidden this@<rcx>, HWND hWnd@<rdx>, unsigned int@<r8d>, unsigned __int64@<r9>, __int64, __int64 *)`
+- caller_count: `0`
+- callee_count: `8`
+- tags: ``
+
+## callees
+
+- `0x180004710`
+- `0x180009010`
+- `0x18001346c`
+- `0x180029140`
+- `0x180029160`
+- `0x180029590`
+- `0x1800967a8`
+- `0x1800a0514`
+
+## import_xrefs
+
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x1800291f5`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18002928b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18002939f`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x1800293b9`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x180029440`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x180029496`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003be0b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bee0`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bf11`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bf9b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bfca`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bfdc`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c01b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c07b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c12b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c192`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c276`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c2c1`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c303`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c345`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x1800291f5`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18002928b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18002939f`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x1800293b9`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x180029440`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x180029496`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003be0b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bee0`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bf11`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bf9b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bfca`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003bfdc`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c01b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c07b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c12b`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c192`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c276`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c2c1`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c303`
+- `oart!__imp_??1TextInputLayoutChangeNotifier@Art@@QEAA@XZ` at `0x18003c345`
+- `oart!__imp_?OnMessage@TextInputLayoutChangeNotifier@Art@@SAXI_K_J@Z` at `0x180029273`
+- `oart!__imp_?OnMessage@TextInputLayoutChangeNotifier@Art@@SAXI_K_J@Z` at `0x1800292a8`
+- `oart!__imp_?OnMessage@TextInputLayoutChangeNotifier@Art@@SAXI_K_J@Z` at `0x18002945e`
+- `oart!__imp_?OnMessage@TextInputLayoutChangeNotifier@Art@@SAXI_K_J@Z` at `0x180029273`
+- `oart!__imp_?OnMessage@TextInputLayoutChangeNotifier@Art@@SAXI_K_J@Z` at `0x1800292a8`
+- `oart!__imp_?OnMessage@TextInputLayoutChangeNotifier@Art@@SAXI_K_J@Z` at `0x18002945e`
+- `oart!__imp_??0TextInputLayoutChangeNotifier@Art@@QEAA@_N@Z` at `0x1800291b9`
+- `oart!__imp_??0TextInputLayoutChangeNotifier@Art@@QEAA@_N@Z` at `0x1800291b9`
+- `GDI32!CreateRoundRectRgn` at `0x18002934d`
+- `GDI32!CreateRoundRectRgn` at `0x18002934d`
+- `USER32!PostMessageW` at `0x18003bed5`
+- `USER32!PostMessageW` at `0x18003bed5`
+- `USER32!SetWindowRgn` at `0x180029375`
+- `USER32!SetWindowRgn` at `0x180029375`
+- `USER32!SendMessageW` at `0x18003be74`
+- `USER32!SendMessageW` at `0x18003be74`
+- `USER32!SetWindowLongPtrW` at `0x18003bdd5`
+- `USER32!SetWindowLongPtrW` at `0x18003bdff`
+- `USER32!SetWindowLongPtrW` at `0x18003c04a`
+- `USER32!SetWindowLongPtrW` at `0x18003c06f`
+- `USER32!SetWindowLongPtrW` at `0x18003bdd5`
+- `USER32!SetWindowLongPtrW` at `0x18003bdff`
+- `USER32!SetWindowLongPtrW` at `0x18003c04a`
+- `USER32!SetWindowLongPtrW` at `0x18003c06f`
+- `USER32!GetWindowLongPtrW` at `0x18003bdbc`
+- `USER32!GetWindowLongPtrW` at `0x18003c031`
+- `USER32!GetWindowLongPtrW` at `0x18003bdbc`
+- `USER32!GetWindowLongPtrW` at `0x18003c031`
+- `USER32!TrackMouseEvent` at `0x18003bd8a`
+- `USER32!TrackMouseEvent` at `0x18003be4b`
+- `USER32!TrackMouseEvent` at `0x18003bf52`
+- `USER32!TrackMouseEvent` at `0x18003bd8a`
+- `USER32!TrackMouseEvent` at `0x18003be4b`
+- `USER32!TrackMouseEvent` at `0x18003bf52`
+- `USER32!GetWindowRect` at `0x1800292f2`
+- `USER32!GetWindowRect` at `0x18003c0a5`
+- `USER32!GetWindowRect` at `0x18003c0cd`
+- `USER32!GetWindowRect` at `0x1800292f2`
+- `USER32!GetWindowRect` at `0x18003c0a5`
+- `USER32!GetWindowRect` at `0x18003c0cd`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x18003c1f3`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x18003c1f3`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18003c26b`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18003c26b`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x1800291e7`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x180029391`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x180029432`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x180029488`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003bf03`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003bf84`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c00d`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c11d`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c184`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c25d`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c2aa`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c2f5`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c337`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x1800291e7`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x180029391`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x180029432`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x180029488`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003bf03`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003bf84`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c00d`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c11d`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c184`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c25d`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c2aa`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c2f5`
+- `mso40uiWin32Client!__imp_?FWndProcPreFilter@NUIDialog@@MEAA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x18003c337`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x18003c201`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x18003c201`
+- `mso40uiWin32Client!__imp_?MsoGetKeyStateCore@@YAFH@Z` at `0x18003c13e`
+- `mso40uiWin32Client!__imp_?MsoGetKeyStateCore@@YAFH@Z` at `0x18003c150`
+- `mso40uiWin32Client!__imp_?MsoGetKeyStateCore@@YAFH@Z` at `0x18003c13e`
+- `mso40uiWin32Client!__imp_?MsoGetKeyStateCore@@YAFH@Z` at `0x18003c150`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18003c21a`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18003c21a`
+- `mso40uiWin32Client!__imp_?WndProc@NativeHWNDHost@NetUI@@SA_JPEAUHWND__@@I_K_J@Z` at `0x18003bdeb`
+- `mso40uiWin32Client!__imp_?WndProc@NativeHWNDHost@NetUI@@SA_JPEAUHWND__@@I_K_J@Z` at `0x18003c05b`
+- `mso40uiWin32Client!__imp_?WndProc@NativeHWNDHost@NetUI@@SA_JPEAUHWND__@@I_K_J@Z` at `0x18003bdeb`
+- `mso40uiWin32Client!__imp_?WndProc@NativeHWNDHost@NetUI@@SA_JPEAUHWND__@@I_K_J@Z` at `0x18003c05b`
+
+## pseudocode
+
+```c
+
+```

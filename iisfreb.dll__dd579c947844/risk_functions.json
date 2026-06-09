@@ -1,0 +1,1842 @@
+[
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FREB_REQUEST_CONTEXT::RunCustomAction(ushort const *)",
+    "ea": "0x1800047a4",
+    "function_file": "functions/1800047a4_FREB_REQUEST_CONTEXT_RunCustomAction_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeProcess",
+      "api-ms-win-core-processthreads-l1-1-0!GetProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetThreadId",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+      "api-ms-win-core-processthreads-l1-1-0!SetThreadToken",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "api-ms-win-security-base-l1-1-0!RevertToSelf",
+      "iisutil!??0STRU@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Resize@STRU@@QEAAJK@Z",
+      "iisutil!?SyncWithBuffer@STRU@@QEAAXXZ",
+      "ntdll!RtlExpandEnvironmentStrings"
+    ],
+    "matched_strings": [],
+    "name": "?RunCustomAction@FREB_REQUEST_CONTEXT@@AEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(FREB_REQUEST_CONTEXT *this, const unsigned __int16 *)",
+    "rank_score": 5052,
+    "size": 823,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FREB_LOG_FILE_MANAGER::GetLogFileHandle(void * *,STRU *)",
+    "ea": "0x180008178",
+    "function_file": "functions/180008178_FREB_LOG_FILE_MANAGER_GetLogFileHandle_void_STRU.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "iisutil!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "fr%06u.xml",
+      "Failed to open FREB log file %S\n",
+      "Freb: Log file %S opened for writing\n"
+    ],
+    "name": "?GetLogFileHandle@FREB_LOG_FILE_MANAGER@@AEAAJPEAPEAXPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(FREB_LOG_FILE_MANAGER *__hidden this, void **, struct STRU *)",
+    "rank_score": 3652,
+    "size": 678,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "TryReadRequestConfig(IHttpContext *,FREB_REQUEST_CONTEXT *)",
+    "ea": "0x180003654",
+    "function_file": "functions/180003654_TryReadRequestConfig_IHttpContext_FREB_REQUEST_CONTEXT.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??0STRU@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJAEBV1@@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Append@STRU@@QEAAJPEBGK@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBGK@Z",
+      "iisutil!?Resize@STRU@@QEAAJK@Z",
+      "iisutil!?SetLen@STRU@@QEAA_NK@Z",
+      "iisutil!?SyncWithBuffer@STRU@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?TryReadRequestConfig@@YAJPEAVIHttpContext@@PEAVFREB_REQUEST_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct IHttpContext *, struct FREB_REQUEST_CONTEXT *)",
+    "rank_score": 3435,
+    "size": 950,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "FREB_LOG_FILE_MANAGER::UpdateNextLogFileSequenceNumber(void)",
+    "ea": "0x180008ad8",
+    "function_file": "functions/180008ad8_FREB_LOG_FILE_MANAGER_UpdateNextLogFileSequenceNumber_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!FindClose",
+      "api-ms-win-core-file-l1-1-0!FindFirstFileW",
+      "api-ms-win-core-file-l1-1-0!FindNextFileW",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!PuDbgPrintError",
+      "msvcrt!wcstoul"
+    ],
+    "matched_strings": [
+      "fr*.xml",
+      "FREB_LOG_FILE_MANAGER::UpdateNextLogFileSequenceNumber",
+      "FREB_LOG_FILE_MANAGER::UpdateNextLogFileSequenceNumber",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "Last write time is not available. File system may not support that\n"
+    ],
+    "name": "?UpdateNextLogFileSequenceNumber@FREB_LOG_FILE_MANAGER@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(FREB_LOG_FILE_MANAGER *__hidden this)",
+    "rank_score": 3089,
+    "size": 695,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "FREB_REQUEST_CONTEXT::SerializeAllTraceEventsToLogDataString(ushort const *)",
+    "ea": "0x180004ae4",
+    "function_file": "functions/180004ae4_FREB_REQUEST_CONTEXT_SerializeAllTraceEventsToLogDataString_ushort_const.md",
+    "matched_imports": [
+      "SspiCli!GetUserNameExW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "api-ms-win-core-timezone-l1-1-0!SystemTimeToFileTime",
+      "api-ms-win-security-base-l1-1-0!ImpersonateLoggedOnUser",
+      "api-ms-win-security-base-l1-1-0!RevertToSelf",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Resize@STRU@@QEAAJK@Z"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<?xml-stylesheet type='text/xsl' href='freb.xsl'?>\r\n",
+      "               processId=\"",
+      "               tokenUserName=\"",
+      "               xmlns:freb=\"http://schemas.microsoft.com/win/2006/06/iis/freb\"\r\n"
+    ],
+    "name": "?SerializeAllTraceEventsToLogDataString@FREB_REQUEST_CONTEXT@@AEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(FREB_REQUEST_CONTEXT *this, const unsigned __int16 *)",
+    "rank_score": 3015,
+    "size": 1827,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "FREB_LOG_FILE_MANAGER::CreateXslFileFromResource(void)",
+    "ea": "0x180007f70",
+    "function_file": "functions/180007f70_FREB_LOG_FILE_MANAGER_CreateXslFileFromResource_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadResource",
+      "api-ms-win-core-libraryloader-l1-2-0!LockResource",
+      "api-ms-win-core-libraryloader-l1-2-0!SizeofResource",
+      "api-ms-win-core-libraryloader-l1-2-1!FindResourceW",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?CreateXslFileFromResource@FREB_LOG_FILE_MANAGER@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(FREB_LOG_FILE_MANAGER *__hidden this)",
+    "rank_score": 2629,
+    "size": 512,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FREB_LOG_FILE_MANAGER::WriteLogFile(uchar *,ulong)",
+    "ea": "0x180008d98",
+    "function_file": "functions/180008d98_FREB_LOG_FILE_MANAGER_WriteLogFile_uchar_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "Freb: Log file %S opened for writing\n",
+      "FREB_LOG_FILE_MANAGER::WriteLogFile",
+      "Failed to write to FREB log file\n",
+      "Failed to write all the data to FREB log file\n"
+    ],
+    "name": "?WriteLogFile@FREB_LOG_FILE_MANAGER@@QEAAJPEAEK@Z",
+    "prototype": "__int64 __fastcall(FREB_SITE_META_STORED_CONTEXT **this, LPCVOID lpBuffer, DWORD nNumberOfBytesToWrite)",
+    "rank_score": 2511,
+    "size": 679,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "FREB_LOG_FILE_MANAGER::OpenFile(ushort const *,ulong,void * *)",
+    "ea": "0x180008548",
+    "function_file": "functions/180008548_FREB_LOG_FILE_MANAGER_OpenFile_ushort_const_ulong_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateDirectoryW",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_log_file_manager.cxx",
+      "Freb: attempt to create directory %S\n",
+      "FREB_LOG_FILE_MANAGER::OpenFile",
+      "FREB_LOG_FILE_MANAGER::OpenFile",
+      "FREB_LOG_FILE_MANAGER::OpenFile",
+      "Failed to create FREB log directory %S\n",
+      "Failed to create FREB XSL file\n",
+      "Failed to create/open FREB log file %S\n"
+    ],
+    "name": "?OpenFile@FREB_LOG_FILE_MANAGER@@AEAAJPEBGKPEAPEAX@Z",
+    "prototype": "__int64 __fastcall(FREB_LOG_FILE_MANAGER *this, LPCWSTR lpFileName, __int64, void **)",
+    "rank_score": 2428,
+    "size": 601,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "FREB_SITE_META_STORED_CONTEXT::ScavengeFrebLogFiles(void)",
+    "ea": "0x180006f98",
+    "function_file": "functions/180006f98_FREB_SITE_META_STORED_CONTEXT_ScavengeFrebLogFiles_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!FindClose",
+      "api-ms-win-core-file-l1-1-0!FindFirstFileW",
+      "api-ms-win-core-file-l1-1-0!FindNextFileW",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "Failed to allocate memory to lookup list of FREB log files to be deleted\n",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_site_meta_context.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_site_meta_context.cxx",
+      "fr*.xml"
+    ],
+    "name": "?ScavengeFrebLogFiles@FREB_SITE_META_STORED_CONTEXT@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(FREB_SITE_META_STORED_CONTEXT *__hidden this)",
+    "rank_score": 2408,
+    "size": 1401,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "FREB_LOG_FILE_MANAGER::WriterThread(void *)",
+    "ea": "0x180009050",
+    "function_file": "functions/180009050_FREB_LOG_FILE_MANAGER_WriterThread_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-core-synch-l1-2-1!WaitForMultipleObjects"
+    ],
+    "matched_strings": [],
+    "name": "?WriterThread@FREB_LOG_FILE_MANAGER@@SAKPEAX@Z",
+    "prototype": "__int64 __fastcall(PVOID Parameter)",
+    "rank_score": 2218,
+    "size": 549,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "FREB_SITE_META_STORED_CONTEXT::DeleteFrebLogFile(ushort const *,ushort const *)",
+    "ea": "0x180006944",
+    "function_file": "functions/180006944_FREB_SITE_META_STORED_CONTEXT_DeleteFrebLogFile_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_site_meta_context.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_site_meta_context.cxx",
+      "FREB_SITE_META_STORED_CONTEXT::DeleteFrebLogFile",
+      "FREB_SITE_META_STORED_CONTEXT::DeleteFrebLogFile",
+      "Attempt to delete obsolete FREB log file failed\n"
+    ],
+    "name": "?DeleteFrebLogFile@FREB_SITE_META_STORED_CONTEXT@@CAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1828,
+    "size": 417,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "FREB_XML_SERIALIZER::SerializeTraceEvent(TRACE_EVENTS_LIST_ENTRY *,PROVIDER_DEFINITIONS_STORED_LIST *)",
+    "ea": "0x180009948",
+    "function_file": "functions/180009948_FREB_XML_SERIALIZER_SerializeTraceEvent_TRACE_EVENTS_LIST_ENTRY_PROVIDER_DEFINITIONS_STORED_LIST.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "iisutil!PuDbgPrint",
+      "msvcrt!_snprintf_s"
+    ],
+    "matched_strings": [
+      "FREB_XML_SERIALIZER::SerializeTraceEvent",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_xml_serializer.cxx",
+      "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\">\r\n",
+      "  <TimeCreated SystemTime=\"",
+      "  <Execution ProcessID=\"",
+      "\" ThreadID=\"",
+      "  <Computer>",
+      "</Computer>\r\n",
+      " <ExtendedTracingInfo xmlns=\"http://schemas.microsoft.com/win/2004/08/events/trace\">\r\n"
+    ],
+    "name": "?SerializeTraceEvent@FREB_XML_SERIALIZER@@QEAAJPEAVTRACE_EVENTS_LIST_ENTRY@@PEAVPROVIDER_DEFINITIONS_STORED_LIST@@@Z",
+    "prototype": "__int64 __fastcall(FREB_XML_SERIALIZER *__hidden this, struct TRACE_EVENTS_LIST_ENTRY *, struct PROVIDER_DEFINITIONS_STORED_LIST *)",
+    "rank_score": 1821,
+    "size": 2403,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "FREB_REQUEST_CONTEXT::Initialize(void)",
+    "ea": "0x180004274",
+    "function_file": "functions/180004274_FREB_REQUEST_CONTEXT_Initialize_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionAndSpinCount",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "api-ms-win-core-threadpool-legacy-l1-1-0!CreateTimerQueueTimer",
+      "iisutil!??0CReaderWriterLock3@@QEAA@XZ",
+      "iisutil!??0LANG_STRING@@QEAA@XZ",
+      "iisutil!?Initialize@LANG_STRING@@QEAAJPEAUHINSTANCE__@@K@Z"
+    ],
+    "matched_strings": [
+      "iisres.dll"
+    ],
+    "name": "?Initialize@FREB_REQUEST_CONTEXT@@SAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 1758,
+    "size": 452,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "RegisterModule(ulong,IHttpModuleRegistrationInfo *,IHttpServer *)",
+    "ea": "0x180003130",
+    "function_file": "functions/180003130_RegisterModule_ulong_IHttpModuleRegistrationInfo_IHttpServer.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-threadpool-legacy-l1-1-0!CreateTimerQueueTimer",
+      "iisutil!??0CLKRHashTable@@QEAA@PEBDP6A?B_KPEBX@ZP6AK_K@ZP6A_N33@ZP6AX1H@ZNKK_N@Z",
+      "iisutil!??0EVENT_LOG@@QEAA@PEBG@Z",
+      "iisutil!IISGetPlatformType",
+      "iisutil!PuCreateDebugPrintsObject",
+      "iisutil!PuLoadDebugFlagsFromRegStr"
+    ],
+    "matched_strings": [
+      "Unable to Create Debug Print Object \n",
+      "System\\CurrentControlSet\\Services\\W3SVC\\Parameters\\iisfreb"
+    ],
+    "name": "?RegisterModule@@YAJKPEAVIHttpModuleRegistrationInfo@@PEAVIHttpServer@@@Z",
+    "prototype": "__int64 __fastcall(__int64, struct IHttpModuleRegistrationInfo *, struct IHttpServer *)",
+    "rank_score": 1714,
+    "size": 775,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "HandleRootRqBeginRequest(IHttpContext *,INativeSectionException * *)",
+    "ea": "0x1800023cc",
+    "function_file": "functions/1800023cc_HandleRootRqBeginRequest_IHttpContext_INativeSectionException.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??0STRU@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?GetString@LANG_STRING@@QEAAJPEBDKIPEAPEBGPEAK@Z",
+      "iisutil!?Resize@STRU@@QEAAJK@Z",
+      "iisutil!?SyncWithBuffer@STRU@@QEAAXXZ",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_module.cxx"
+    ],
+    "name": "?HandleRootRqBeginRequest@@YAJPEAVIHttpContext@@PEAPEAVINativeSectionException@@@Z",
+    "prototype": "__int64 __fastcall(struct IHttpContext *, struct INativeSectionException **)",
+    "rank_score": 1690,
+    "size": 964,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 10,
+    "demangled": "FREB_LOG_NT_EVENT_TABLE::LogEvent(ulong,ushort,ushort const * * const,ulong)",
+    "ea": "0x18000a4dc",
+    "function_file": "functions/18000a4dc_FREB_LOG_NT_EVENT_TABLE_LogEvent_ulong_ushort_ushort_const_const_ulong.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@XZ",
+      "iisutil!??1BUFFER@@QEAA@XZ",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?FindKey@CLKRHashTable@@QEBA?AW4LK_RETCODE@@_KPEAPEBX@Z",
+      "iisutil!?InsertRecord@CLKRHashTable@@QEAA?AW4LK_RETCODE@@PEBX_N@Z"
+    ],
+    "matched_strings": [],
+    "name": "?LogEvent@FREB_LOG_NT_EVENT_TABLE@@SAXKGQEAPEBGK@Z",
+    "prototype": "void __fastcall(unsigned int, unsigned __int16, const unsigned __int16 **const, unsigned int)",
+    "rank_score": 1628,
+    "size": 454,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "FREB_LOG_FILE_MANAGER::QueueWriteLogFile(uchar *,ulong)",
+    "ea": "0x1800087a8",
+    "function_file": "functions/1800087a8_FREB_LOG_FILE_MANAGER_QueueWriteLogFile_uchar_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?QueueWriteLogFile@FREB_LOG_FILE_MANAGER@@QEAAJPEAEK@Z",
+    "prototype": "__int64 __fastcall(FREB_SITE_META_STORED_CONTEXT **this, unsigned __int8 *, int)",
+    "rank_score": 1617,
+    "size": 426,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LOSSY_QUEUE::Initialize(ulong)",
+    "ea": "0x18000a934",
+    "function_file": "functions/18000a934_LOSSY_QUEUE_Initialize_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionAndSpinCount"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@LOSSY_QUEUE@@QEAAJK@Z",
+    "prototype": "__int64 __fastcall(LOSSY_QUEUE *__hidden this, unsigned int)",
+    "rank_score": 1418,
+    "size": 408,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FREB_REQUEST_CONTEXT::BufferTraceEventInMemory(IHttpContext *,HTTP_TRACE_EVENT const *)",
+    "ea": "0x180003d0c",
+    "function_file": "functions/180003d0c_FREB_REQUEST_CONTEXT_BufferTraceEventInMemory_IHttpContext_HTTP_TRACE_EVENT_const.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_request_context.cxx",
+      "Freb: attempt to buffer event:%S\n"
+    ],
+    "name": "?BufferTraceEventInMemory@FREB_REQUEST_CONTEXT@@QEAAXPEAVIHttpContext@@PEBUHTTP_TRACE_EVENT@@@Z",
+    "prototype": "void __fastcall(FREB_REQUEST_CONTEXT *__hidden this, struct IHttpContext *, const struct HTTP_TRACE_EVENT *)",
+    "rank_score": 1303,
+    "size": 961,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "FREB_REQUEST_CONTEXT::WriteTraceEventsToFile(ushort const *)",
+    "ea": "0x180005588",
+    "function_file": "functions/180005588_FREB_REQUEST_CONTEXT_WriteTraceEventsToFile_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_request_context.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_request_context.cxx",
+      "Freb: There are buffered events present but FREB is currently not able to write out data becausescavenging of files doesn't work log\n",
+      "FREB_REQUEST_CONTEXT::WriteTraceEventsToFile",
+      "FREB_REQUEST_CONTEXT::WriteTraceEventsToFile",
+      "Failed to write freb log file\n"
+    ],
+    "name": "?WriteTraceEventsToFile@FREB_REQUEST_CONTEXT@@QEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(FREB_REQUEST_CONTEXT *__hidden this, const unsigned __int16 *)",
+    "rank_score": 1264,
+    "size": 617,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001964",
+    "function_file": "functions/180001964_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FREB_REQUEST_CONTEXT::~FREB_REQUEST_CONTEXT(void)",
+    "ea": "0x180001bd8",
+    "function_file": "functions/180001bd8_FREB_REQUEST_CONTEXT_FREB_REQUEST_CONTEXT_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "iisutil!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "iisutil!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "??1FREB_REQUEST_CONTEXT@@AEAA@XZ",
+    "prototype": "void __fastcall(FREB_REQUEST_CONTEXT *__hidden this)",
+    "rank_score": 1205,
+    "size": 281,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FREB_SITE_META_STORED_CONTEXT::SetDirectory(ushort const *,ulong)",
+    "ea": "0x180007518",
+    "function_file": "functions/180007518_FREB_SITE_META_STORED_CONTEXT_SetDirectory_ushort_const_ulong.md",
+    "matched_imports": [
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!MakePathCanonicalizationProof",
+      "msvcrt!_ultow"
+    ],
+    "matched_strings": [],
+    "name": "?SetDirectory@FREB_SITE_META_STORED_CONTEXT@@QEAAJPEBGK@Z",
+    "prototype": "int __fastcall(FREB_SITE_META_STORED_CONTEXT *this, const unsigned __int16 *, unsigned int)",
+    "rank_score": 1204,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "FREB_XML_SERIALIZER::Initialize(void)",
+    "ea": "0x1800097c4",
+    "function_file": "functions/1800097c4_FREB_XML_SERIALIZER_Initialize_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-kernel32-legacy-l1-1-0!GetComputerNameW",
+      "api-ms-win-core-localization-l1-2-2!GetSystemDefaultLocaleName"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@FREB_XML_SERIALIZER@@SAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 1036,
+    "size": 379,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "TRACE_URLS_STORED_ENTRY::Initialize(ushort const *,ushort const *,ushort const *,ulong,unsigned __int64,ushort const *,ulong,ushort const *,FREB_FAILURE_POINT *,int)",
+    "ea": "0x180007e6c",
+    "function_file": "functions/180007e6c_TRACE_URLS_STORED_ENTRY_Initialize_ushort_const_ushort_const_ushort_const_ulong_unsigned_int64_ushort_const_ul.md",
+    "matched_imports": [
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "msvcrt!_wcsupr"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@TRACE_URLS_STORED_ENTRY@@QEAAJPEBG00K_K0K0PEAW4FREB_FAILURE_POINT@@H@Z",
+    "prototype": "__int64 __fastcall(TRACE_URLS_STORED_ENTRY *this, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, unsigned int, unsigned __int64, unsigned __int16 *, unsigned int, unsigned __int16 *, enum FREB_FAILURE_POINT *, int)",
+    "rank_score": 1024,
+    "size": 254,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "FREB_REQUEST_CONTEXT::InitializeInstance(FREB_META_STORED_CONTEXT *,int)",
+    "ea": "0x180004440",
+    "function_file": "functions/180004440_FREB_REQUEST_CONTEXT_InitializeInstance_FREB_META_STORED_CONTEXT_int.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Copy@STRU@@QEAAJPEBGK@Z",
+      "msvcrt!towupper"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeInstance@FREB_REQUEST_CONTEXT@@QEAAJPEAVFREB_META_STORED_CONTEXT@@H@Z",
+    "prototype": "__int64 __fastcall(FREB_REQUEST_CONTEXT *__hidden this, struct FREB_META_STORED_CONTEXT *, int)",
+    "rank_score": 1019,
+    "size": 443,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FAILURE_DEFINITIONS_STORED_ELEMENT::Initialize(unsigned __int64,ushort const *,ulong,ushort const *,int)",
+    "ea": "0x1800075d4",
+    "function_file": "functions/1800075d4_FAILURE_DEFINITIONS_STORED_ELEMENT_Initialize_unsigned_int64_ushort_const_ulong_ushort_const_int.md",
+    "matched_imports": [
+      "msvcrt!iswspace"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@FAILURE_DEFINITIONS_STORED_ELEMENT@@QEAAJ_KPEBGK1H@Z",
+    "prototype": "__int64 __fastcall(FAILURE_DEFINITIONS_STORED_ELEMENT *this, unsigned __int64, const unsigned __int16 *, int, unsigned __int16 *, unsigned int)",
+    "rank_score": 1011,
+    "size": 678,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PROVIDER_DEFINITIONS_STORED_LIST::TranslateProviderNameAndAreas(ushort const *,ushort const *,_GUID * *,ulong *,ushort const *,FREB_FAILURE_POINT *)",
+    "ea": "0x180007a80",
+    "function_file": "functions/180007a80_PROVIDER_DEFINITIONS_STORED_LIST_TranslateProviderNameAndAreas_ushort_const_ushort_const_GUID_ulong_ushort_con.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrintError",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\provider_definitions_stored_list.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\provider_definitions_stored_list.cxx"
+    ],
+    "name": "?TranslateProviderNameAndAreas@PROVIDER_DEFINITIONS_STORED_LIST@@QEAAJPEBG0PEAPEAU_GUID@@PEAK0PEAW4FREB_FAILURE_POINT@@@Z",
+    "prototype": "int(PROVIDER_DEFINITIONS_STORED_LIST *__hidden this, const unsigned __int16 *, const unsigned __int16 *, struct _GUID **, unsigned int *, const unsigned __int16 *, enum FREB_FAILURE_POINT *)",
+    "rank_score": 898,
+    "size": 674,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnAsyncCompletion(IHttpContext *,ulong,int,IHttpEventProvider *,IHttpCompletionInfo *)",
+    "ea": "0x1800029b0",
+    "function_file": "functions/1800029b0_CHttpModule_OnAsyncCompletion_IHttpContext_ulong_int_IHttpEventProvider_IHttpCompletionInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnAsyncCompletion"
+    ],
+    "name": "?OnAsyncCompletion@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@KHPEAVIHttpEventProvider@@PEAVIHttpCompletionInfo@@@Z",
+    "prototype": "",
+    "rank_score": 850,
+    "size": 56,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnPostUpdateRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002f30",
+    "function_file": "functions/180002f30_CHttpModule_OnPostUpdateRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnPostUpdateRequestCache"
+    ],
+    "name": "?OnPostUpdateRequestCache@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 850,
+    "size": 56,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnUpdateRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x1800030f0",
+    "function_file": "functions/1800030f0_CHttpModule_OnUpdateRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnUpdateRequestCache"
+    ],
+    "name": "?OnUpdateRequestCache@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 850,
+    "size": 56,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnMapPath(IHttpContext *,IMapPathProvider *)",
+    "ea": "0x180002bf0",
+    "function_file": "functions/180002bf0_CHttpModule_OnMapPath_IHttpContext_IMapPathProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnMapPath"
+    ],
+    "name": "?OnMapPath@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIMapPathProvider@@@Z",
+    "prototype": "",
+    "rank_score": 840,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnPostResolveRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180002ef0",
+    "function_file": "functions/180002ef0_CHttpModule_OnPostResolveRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnPostResolveRequestCache"
+    ],
+    "name": "?OnPostResolveRequestCache@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 840,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnReadEntity(IHttpContext *,IReadEntityProvider *)",
+    "ea": "0x180002fb0",
+    "function_file": "functions/180002fb0_CHttpModule_OnReadEntity_IHttpContext_IReadEntityProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnReadEntity"
+    ],
+    "name": "?OnReadEntity@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIReadEntityProvider@@@Z",
+    "prototype": "",
+    "rank_score": 840,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CHttpModule::OnResolveRequestCache(IHttpContext *,IHttpEventProvider *)",
+    "ea": "0x180003030",
+    "function_file": "functions/180003030_CHttpModule_OnResolveRequestCache_IHttpContext_IHttpEventProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!DebugBreak",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA"
+    ],
+    "matched_strings": [
+      "CHttpModule::OnResolveRequestCache"
+    ],
+    "name": "?OnResolveRequestCache@CHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "",
+    "rank_score": 840,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "FREB_XML_SERIALIZER::AddString(ushort const *,ulong)",
+    "ea": "0x180009360",
+    "function_file": "functions/180009360_FREB_XML_SERIALIZER_AddString_ushort_const_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "iisutil!??0STRA@@QEAA@PEADK@Z",
+      "iisutil!??1STRA@@QEAA@XZ",
+      "iisutil!?CopyWToUTF8Unescaped@STRA@@QEAAJPEBGK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?AddString@FREB_XML_SERIALIZER@@QEAAXPEBGK@Z",
+    "prototype": "void __fastcall(FREB_XML_SERIALIZER *this, const unsigned __int16 *, int)",
+    "rank_score": 818,
+    "size": 240,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FREB_TIMEOUT_MONITOR_LIST::~FREB_TIMEOUT_MONITOR_LIST(void)",
+    "ea": "0x180003b04",
+    "function_file": "functions/180003b04_FREB_TIMEOUT_MONITOR_LIST_FREB_TIMEOUT_MONITOR_LIST_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-threadpool-legacy-l1-1-0!DeleteTimerQueueTimer",
+      "iisutil!??1CReaderWriterLock3@@QEAA@XZ",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "failed to call DeleteTimerQueueEx(): hr=0x%x\n",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_timeout_monitor.hxx"
+    ],
+    "name": "??1FREB_TIMEOUT_MONITOR_LIST@@QEAA@XZ",
+    "prototype": "void __fastcall(FREB_TIMEOUT_MONITOR_LIST *__hidden this)",
+    "rank_score": 794,
+    "size": 176,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "FREB_REQUEST_CONTEXT::AppendCommon(TRACE_EVENTS_LIST_ENTRY *)",
+    "ea": "0x180003bbc",
+    "function_file": "functions/180003bbc_FREB_REQUEST_CONTEXT_AppendCommon_TRACE_EVENTS_LIST_ENTRY.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "?AppendCommon@FREB_REQUEST_CONTEXT@@AEAAXPEAVTRACE_EVENTS_LIST_ENTRY@@@Z",
+    "prototype": "void __fastcall(FREB_REQUEST_CONTEXT *__hidden this, struct TRACE_EVENTS_LIST_ENTRY *)",
+    "rank_score": 716,
+    "size": 148,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x18000153c",
+    "function_file": "functions/18000153c_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PROVIDER_DEFINITIONS_STORED_ENTRY::InitializeInstance(ushort const *,ushort const *,ulong,ushort const *)",
+    "ea": "0x18000795c",
+    "function_file": "functions/18000795c_PROVIDER_DEFINITIONS_STORED_ENTRY_InitializeInstance_ushort_const_ushort_const_ulong_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CLSIDFromString",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\provider_definitions_stored_list.cxx"
+    ],
+    "name": "?InitializeInstance@PROVIDER_DEFINITIONS_STORED_ENTRY@@QEAAJPEBG0K0@Z",
+    "prototype": "int(PROVIDER_DEFINITIONS_STORED_ENTRY *__hidden this, const unsigned __int16 *, const unsigned __int16 *, unsigned int, const unsigned __int16 *)",
+    "rank_score": 677,
+    "size": 285,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "FREB_REQUEST_CONTEXT::SetFrebTraceConfigForRequest(IHttpContext *)",
+    "ea": "0x180005210",
+    "function_file": "functions/180005210_FREB_REQUEST_CONTEXT_SetFrebTraceConfigForRequest_IHttpContext.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "FREB_REQUEST_CONTEXT::SetFrebTraceConfigForRequest",
+      "FREB_REQUEST_CONTEXT::SetFrebTraceConfigForRequest",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_request_context.cxx",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_request_context.cxx",
+      "SetTraceConfiguration() failed\n"
+    ],
+    "name": "?SetFrebTraceConfigForRequest@FREB_REQUEST_CONTEXT@@QEAAJPEAVIHttpContext@@@Z",
+    "prototype": "__int64 __fastcall(FREB_REQUEST_CONTEXT *__hidden this, struct IHttpContext *)",
+    "rank_score": 640,
+    "size": 398,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "FREB_REQUEST_CONTEXT::Terminate(void)",
+    "ea": "0x1800054e8",
+    "function_file": "functions/1800054e8_FREB_REQUEST_CONTEXT_Terminate_void.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "iisutil!?Terminate@LANG_STRING@@QEAAJXZ"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@FREB_REQUEST_CONTEXT@@SAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 626,
+    "size": 153,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_CRT_INIT",
+    "ea": "0x1800010a0",
+    "function_file": "functions/1800010a0_CRT_INIT.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "_CRT_INIT",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 549,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "FREB_LOG_NT_EVENT::RealLogEvent(void)",
+    "ea": "0x18000a7e0",
+    "function_file": "functions/18000a7e0_FREB_LOG_NT_EVENT_RealLogEvent_void.md",
+    "matched_imports": [
+      "iisutil!?LogEvent@EVENT_LOG@@QEAAXKGQEAPEBGK@Z",
+      "msvcrt!_ultow"
+    ],
+    "matched_strings": [],
+    "name": "?RealLogEvent@FREB_LOG_NT_EVENT@@QEAAXXZ",
+    "prototype": "void __fastcall(FREB_LOG_NT_EVENT *__hidden this)",
+    "rank_score": 619,
+    "size": 232,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FREB_LOG_FILE_MANAGER::Initialize(void)",
+    "ea": "0x180008424",
+    "function_file": "functions/180008424_FREB_LOG_FILE_MANAGER_Initialize_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@FREB_LOG_FILE_MANAGER@@SAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 618,
+    "size": 284,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "FREB_XML_SERIALIZER::AddStringXmlEscaped(ushort const *,ulong)",
+    "ea": "0x1800095dc",
+    "function_file": "functions/1800095dc_FREB_XML_SERIALIZER_AddStringXmlEscaped_ushort_const_ulong.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!ConvertToXmlEscapedStringQuickly"
+    ],
+    "matched_strings": [],
+    "name": "?AddStringXmlEscaped@FREB_XML_SERIALIZER@@QEAAXPEBGK@Z",
+    "prototype": "void __fastcall(FREB_XML_SERIALIZER *this, const unsigned __int16 *)",
+    "rank_score": 617,
+    "size": 173,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "FREB_XML_SERIALIZER::AllocateMemory(ulong)",
+    "ea": "0x180009690",
+    "function_file": "functions/180009690_FREB_XML_SERIALIZER_AllocateMemory_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapReAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?AllocateMemory@FREB_XML_SERIALIZER@@QEAAPEAEK@Z",
+    "prototype": "char *__fastcall(FREB_XML_SERIALIZER *this, unsigned int)",
+    "rank_score": 617,
+    "size": 155,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "FREB_XML_SERIALIZER::AddStringXmlEscaped(char const *,ulong)",
+    "ea": "0x180009520",
+    "function_file": "functions/180009520_FREB_XML_SERIALIZER_AddStringXmlEscaped_char_const_ulong.md",
+    "matched_imports": [
+      "iisutil!??0STRA@@QEAA@PEADK@Z",
+      "iisutil!??1STRA@@QEAA@XZ",
+      "iisutil!ConvertToXmlEscapedStringQuicklyA"
+    ],
+    "matched_strings": [],
+    "name": "?AddStringXmlEscaped@FREB_XML_SERIALIZER@@QEAAXPEBDK@Z",
+    "prototype": "void __fastcall(FREB_XML_SERIALIZER *this, const char *, int)",
+    "rank_score": 615,
+    "size": 181,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "LOSSY_QUEUE::Terminate(void)",
+    "ea": "0x18000aad4",
+    "function_file": "functions/18000aad4_LOSSY_QUEUE_Terminate_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@LOSSY_QUEUE@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(LOSSY_QUEUE *__hidden this)",
+    "rank_score": 615,
+    "size": 143,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FREB_REQUEST_CONTEXT::StartTimeoutMonitorForRequest(void)",
+    "ea": "0x1800053a4",
+    "function_file": "functions/1800053a4_FREB_REQUEST_CONTEXT_StartTimeoutMonitorForRequest_void.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "iisutil!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "iisutil!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?StartTimeoutMonitorForRequest@FREB_REQUEST_CONTEXT@@QEAAXXZ",
+    "prototype": "void __fastcall(FREB_REQUEST_CONTEXT *__hidden this)",
+    "rank_score": 605,
+    "size": 315,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FREB_TIMEOUT_MONITOR_LIST::DoExpirationCheck(void *,uchar)",
+    "ea": "0x180005800",
+    "function_file": "functions/180005800_FREB_TIMEOUT_MONITOR_LIST_DoExpirationCheck_void_uchar.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "iisutil!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "iisutil!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?DoExpirationCheck@FREB_TIMEOUT_MONITOR_LIST@@SAXPEAXE@Z",
+    "prototype": "void __stdcall(PVOID, BOOLEAN)",
+    "rank_score": 604,
+    "size": 324,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "FREB_META_STORED_CONTEXT::Initialize(ushort const *,FREB_FAILURE_POINT *,STRU *,INativeSectionException * *)",
+    "ea": "0x180005b28",
+    "function_file": "functions/180005b28_FREB_META_STORED_CONTEXT_Initialize_ushort_const_FREB_FAILURE_POINT_STRU_INativeSectionException.md",
+    "matched_imports": [
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "Failed to initialize freb configuration\n",
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_meta_context.cxx"
+    ],
+    "name": "?Initialize@FREB_META_STORED_CONTEXT@@QEAAJPEBGPEAW4FREB_FAILURE_POINT@@PEAVSTRU@@PEAPEAVINativeSectionException@@@Z",
+    "prototype": "__int64 __fastcall(FREB_META_STORED_CONTEXT *this, const unsigned __int16 *, enum FREB_FAILURE_POINT *, struct STRU *, struct INativeSectionException **)",
+    "rank_score": 536,
+    "size": 2083,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FREB_META_STORED_CONTEXT::InitializeTraceProviderDefinitions(ushort const *,INativeSectionException * *)",
+    "ea": "0x180006354",
+    "function_file": "functions/180006354_FREB_META_STORED_CONTEXT_InitializeTraceProviderDefinitions_ushort_const_INativeSectionException.md",
+    "matched_imports": [
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+      "iisutil!PuDbgPrintError"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_meta_context.cxx",
+      "Failed to initialize freb configuration for trace provider definitions\n"
+    ],
+    "name": "?InitializeTraceProviderDefinitions@FREB_META_STORED_CONTEXT@@AEAAJPEBGPEAPEAVINativeSectionException@@@Z",
+    "prototype": "__int64 __fastcall(FREB_META_STORED_CONTEXT *__hidden this, const unsigned __int16 *, struct INativeSectionException **)",
+    "rank_score": 526,
+    "size": 1338,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CleanupGlobals(void)",
+    "ea": "0x180001d74",
+    "function_file": "functions/180001d74_CleanupGlobals_void.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-legacy-l1-1-0!DeleteTimerQueueTimer",
+      "iisutil!PuDeleteDebugPrintsObject"
+    ],
+    "matched_strings": [],
+    "name": "?CleanupGlobals@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 439,
+    "size": 271,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "FREB_SITE_META_STORED_CONTEXT::~FREB_SITE_META_STORED_CONTEXT(void)",
+    "ea": "0x180006894",
+    "function_file": "functions/180006894_FREB_SITE_META_STORED_CONTEXT_FREB_SITE_META_STORED_CONTEXT_void.md",
+    "matched_imports": [
+      "iisutil!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1FREB_SITE_META_STORED_CONTEXT@@AEAA@XZ",
+    "prototype": "void __fastcall(FREB_SITE_META_STORED_CONTEXT *__hidden this)",
+    "rank_score": 407,
+    "size": 108,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "HandleGlTraceEvent(IHttpEventProvider *)",
+    "ea": "0x18000209c",
+    "function_file": "functions/18000209c_HandleGlTraceEvent_IHttpEventProvider.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_module.cxx"
+    ],
+    "name": "?HandleGlTraceEvent@@YA?AW4GLOBAL_NOTIFICATION_STATUS@@PEAVIHttpEventProvider@@@Z",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 275,
+    "size": 808,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "FREB_SITE_META_STORED_CONTEXT::Initialize(ulong,INativeSectionException * *)",
+    "ea": "0x180006ce0",
+    "function_file": "functions/180006ce0_FREB_SITE_META_STORED_CONTEXT_Initialize_ulong_INativeSectionException.md",
+    "matched_imports": [
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [
+      "directory"
+    ],
+    "name": "?Initialize@FREB_SITE_META_STORED_CONTEXT@@AEAAJKPEAPEAVINativeSectionException@@@Z",
+    "prototype": "__int64 __fastcall(FREB_SITE_META_STORED_CONTEXT *__hidden this, unsigned int, struct INativeSectionException **)",
+    "rank_score": 269,
+    "size": 688,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FREB_REQUEST_CONTEXT::MatchFailureDefinitionsStatusCode(IHttpContext *)",
+    "ea": "0x180004604",
+    "function_file": "functions/180004604_FREB_REQUEST_CONTEXT_MatchFailureDefinitionsStatusCode_IHttpContext.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_request_context.cxx"
+    ],
+    "name": "?MatchFailureDefinitionsStatusCode@FREB_REQUEST_CONTEXT@@QEAAXPEAVIHttpContext@@@Z",
+    "prototype": "void __fastcall(FREB_REQUEST_CONTEXT *__hidden this, struct IHttpContext *)",
+    "rank_score": 256,
+    "size": 409,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FREB_REQUEST_CONTEXT::DoExpiredAction(void)",
+    "ea": "0x1800040e0",
+    "function_file": "functions/1800040e0_FREB_REQUEST_CONTEXT_DoExpiredAction_void.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\iis70\\freb\\freb_request_context.cxx"
+    ],
+    "name": "?DoExpiredAction@FREB_REQUEST_CONTEXT@@UEAAXXZ",
+    "prototype": "void __fastcall(FREB_REQUEST_CONTEXT *__hidden this)",
+    "rank_score": 253,
+    "size": 128,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FREB_XML_SERIALIZER::AddString(ulong,ulong,char const *)",
+    "ea": "0x18000927c",
+    "function_file": "functions/18000927c_FREB_XML_SERIALIZER_AddString_ulong_ulong_char_const.md",
+    "matched_imports": [
+      "msvcrt!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "?AddString@FREB_XML_SERIALIZER@@QEAAXKKPEBD@Z",
+    "prototype": "void(FREB_XML_SERIALIZER *__hidden this, unsigned int, unsigned int, const char *)",
+    "rank_score": 214,
+    "size": 91,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FREB_XML_SERIALIZER::AddString(unsigned __int64,ulong,char const *)",
+    "ea": "0x1800094bc",
+    "function_file": "functions/1800094bc_FREB_XML_SERIALIZER_AddString_unsigned_int64_ulong_char_const.md",
+    "matched_imports": [
+      "msvcrt!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "?AddString@FREB_XML_SERIALIZER@@QEAAX_KKPEBD@Z",
+    "prototype": "void(FREB_XML_SERIALIZER *__hidden this, unsigned __int64, unsigned int, const char *)",
+    "rank_score": 213,
+    "size": 93,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "FREB_LOG_NT_EVENT_TABLE::LogEventInvalidFrebSection(INativeSectionException *,long)",
+    "ea": "0x18000a6d8",
+    "function_file": "functions/18000a6d8_FREB_LOG_NT_EVENT_TABLE_LogEventInvalidFrebSection_INativeSectionException_long.md",
+    "matched_imports": [
+      "msvcrt!_ultow"
+    ],
+    "matched_strings": [],
+    "name": "?LogEventInvalidFrebSection@FREB_LOG_NT_EVENT_TABLE@@QEAAXPEAVINativeSectionException@@J@Z",
+    "prototype": "void(FREB_LOG_NT_EVENT_TABLE *__hidden this, struct INativeSectionException *, int)",
+    "rank_score": 208,
+    "size": 258,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)",
+    "ea": "0x180003570",
+    "function_file": "functions/180003570_StringCchPrintfW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+    "prototype": "__int64(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, ...)",
+    "rank_score": 205,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "FREB_LOG_NT_EVENT_TABLE::ScavengerCallback(void *,uchar)",
+    "ea": "0x18000a8d0",
+    "function_file": "functions/18000a8d0_FREB_LOG_NT_EVENT_TABLE_ScavengerCallback_void_uchar.md",
+    "matched_imports": [
+      "iisutil!?DeleteIf@CLKRHashTable@@QEAAKP6A?AW4LK_PREDICATE@@PEBXPEAX@Z1@Z"
+    ],
+    "matched_strings": [],
+    "name": "?ScavengerCallback@FREB_LOG_NT_EVENT_TABLE@@CAXPEAXE@Z",
+    "prototype": "void __stdcall(PVOID, BOOLEAN)",
+    "rank_score": 200,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 14,
+    "demangled": "memset_0",
+    "ea": "0x18000ac52",
+    "function_file": "functions/18000ac52_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 114,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memcpy_0",
+    "ea": "0x18000ac46",
+    "function_file": "functions/18000ac46_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "wcscmp_0",
+    "ea": "0x18000ac5e",
+    "function_file": "functions/18000ac5e_wcscmp_0.md",
+    "matched_imports": [
+      "msvcrt!wcscmp"
+    ],
+    "matched_strings": [],
+    "name": "wcscmp_0",
+    "prototype": "int __cdecl(const wchar_t *String1, const wchar_t *String2)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "RequestDoWork(ulong,int,IHttpContext *,IHttpEventProvider *,IHttpCompletionInfo *)",
+    "ea": "0x180003440",
+    "function_file": "functions/180003440_RequestDoWork_ulong_int_IHttpContext_IHttpEventProvider_IHttpCompletionInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RequestDoWork@@YA?AW4REQUEST_NOTIFICATION_STATUS@@KHPEAVIHttpContext@@PEAVIHttpEventProvider@@PEAVIHttpCompletionInfo@@@Z",
+    "prototype": "enum REQUEST_NOTIFICATION_STATUS __high(unsigned int, int, struct IHttpContext *, struct IHttpEventProvider *, struct IHttpCompletionInfo *)",
+    "rank_score": 37,
+    "size": 296,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 29,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18000b010",
+    "function_file": "functions/18000b010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "FREB_XML_SERIALIZER::AddString(_GUID const *)",
+    "ea": "0x180009458",
+    "function_file": "functions/180009458_FREB_XML_SERIALIZER_AddString_GUID_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddString@FREB_XML_SERIALIZER@@QEAAXPEBU_GUID@@@Z",
+    "prototype": "void(FREB_XML_SERIALIZER *__hidden this, const struct _GUID *)",
+    "rank_score": 35,
+    "size": 93,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 24,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001048",
+    "function_file": "functions/180001048_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 35,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "FREB_XML_SERIALIZER::ConvertCLSIDToString(_GUID const *,char *,ulong *)",
+    "ea": "0x180009734",
+    "function_file": "functions/180009734_FREB_XML_SERIALIZER_ConvertCLSIDToString_GUID_const_char_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConvertCLSIDToString@FREB_XML_SERIALIZER@@SAJPEBU_GUID@@PEADPEAK@Z",
+    "prototype": "__int64 __fastcall(const struct _GUID *, char *, unsigned int *)",
+    "rank_score": 34,
+    "size": 136,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000ac90",
+    "function_file": "functions/18000ac90_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 33,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800012d0",
+    "function_file": "functions/1800012d0_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000abd0",
+    "function_file": "functions/18000abd0_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001314",
+    "function_file": "functions/180001314_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 16,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 19,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "FREB_XML_SERIALIZER::AddString(char const *,ulong)",
+    "ea": "0x1800092e0",
+    "function_file": "functions/1800092e0_FREB_XML_SERIALIZER_AddString_char_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddString@FREB_XML_SERIALIZER@@QEAAXPEBDK@Z",
+    "prototype": "void __fastcall(FREB_XML_SERIALIZER *this, const char *Src, int)",
+    "rank_score": 16,
+    "size": 121,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18000acd0",
+    "function_file": "functions/18000acd0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_sspicli_dll",
+    "ea": "0x180001a60",
+    "function_file": "functions/180001a60_tailMerge_sspicli_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_sspicli_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180003aec",
+    "function_file": "functions/180003aec_DllMain.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 12,
+    "size": 18,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CIISHttpModule::OnAsyncCompletion(IHttpContext *,ulong,int,IHttpEventProvider *,IHttpCompletionInfo *)",
+    "ea": "0x1800029f0",
+    "function_file": "functions/1800029f0_CIISHttpModule_OnAsyncCompletion_IHttpContext_ulong_int_IHttpEventProvider_IHttpCompletionInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnAsyncCompletion@CIISHttpModule@@UEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@KHPEAVIHttpEventProvider@@PEAVIHttpCompletionInfo@@@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "EnableWWWServerProvider(IHttpTraceContext *,int)",
+    "ea": "0x180001f1c",
+    "function_file": "functions/180001f1c_EnableWWWServerProvider_IHttpTraceContext_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EnableWWWServerProvider@@YAJPEAVIHttpTraceContext@@H@Z",
+    "prototype": "__int64 __fastcall(struct IHttpTraceContext *, int)",
+    "rank_score": 6,
+    "size": 94,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "FREB_LOG_NT_EVENT_TABLE::LogEventFrebRuntimeError(long)",
+    "ea": "0x18000a6a8",
+    "function_file": "functions/18000a6a8_FREB_LOG_NT_EVENT_TABLE_LogEventFrebRuntimeError_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?LogEventFrebRuntimeError@FREB_LOG_NT_EVENT_TABLE@@QEAAXJ@Z",
+    "prototype": "void(FREB_LOG_NT_EVENT_TABLE *__hidden this, int)",
+    "rank_score": 6,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FREB_LOG_NT_EVENT_TABLE::CacheFlushByTTL(FREB_LOG_NT_EVENT *,void *)",
+    "ea": "0x18000a2c0",
+    "function_file": "functions/18000a2c0_FREB_LOG_NT_EVENT_TABLE_CacheFlushByTTL_FREB_LOG_NT_EVENT_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CacheFlushByTTL@FREB_LOG_NT_EVENT_TABLE@@CA?AW4LK_PREDICATE@@PEAVFREB_LOG_NT_EVENT@@PEAX@Z",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "TRACE_AREAS_STORED_ENTRY::TRACE_AREAS_STORED_ENTRY(void)",
+    "ea": "0x180005974",
+    "function_file": "functions/180005974_TRACE_AREAS_STORED_ENTRY_TRACE_AREAS_STORED_ENTRY_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0TRACE_AREAS_STORED_ENTRY@@QEAA@XZ",
+    "prototype": "TRACE_AREAS_STORED_ENTRY *__fastcall(TRACE_AREAS_STORED_ENTRY *__hidden this)",
+    "rank_score": 2,
+    "size": 4,
+    "tags": []
+  }
+]

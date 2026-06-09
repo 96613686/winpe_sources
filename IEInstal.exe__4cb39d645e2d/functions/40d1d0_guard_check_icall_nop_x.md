@@ -1,0 +1,76 @@
+# _guard_check_icall_nop(x)
+
+- ea: `0x40d1d0`
+- end: `0x40d1d3`
+- name: `@_guard_check_icall_nop@4`
+- size: `3`
+- prototype: `void()`
+- caller_count: `47`
+- callee_count: `0`
+- tags: ``
+
+## callers
+
+- `0x402ae4`
+- `0x402cb0`
+- `0x402d20`
+- `0x402f70`
+- `0x40301a`
+- `0x4035e8`
+- `0x40373b`
+- `0x403d84`
+- `0x403ffd`
+- `0x4044ae`
+- `0x405a60`
+- `0x4068c0`
+- `0x406980`
+- `0x4069c0`
+- `0x4081a5`
+- `0x408c35`
+- `0x408ce0`
+- `0x408de0`
+- `0x408e40`
+- `0x408e90`
+- `0x4098bb`
+- `0x409a36`
+- `0x409b1a`
+- `0x40a422`
+- `0x40a6b9`
+- `0x40a781`
+- `0x40aa18`
+- `0x40acb0`
+- `0x40b4f0`
+- `0x40bc9a`
+- `0x40c146`
+- `0x40c51f`
+- `0x40c8c9`
+- `0x40caa4`
+- `0x40ccf0`
+- `0x40e4b0`
+- `0x40e4f0`
+- `0x40e5c0`
+- `0x40e600`
+- `0x40e640`
+- `0x40e680`
+- `0x40e6c0`
+- `0x40e710`
+- `0x40e760`
+- `0x40e7b0`
+- `0x40e990`
+- `0x40ea20`
+
+## pseudocode
+
+```c
+void _guard_check_icall_nop()
+{
+  ;
+}
+
+```
+
+## disassembly
+
+```asm
+0x40d1d0  retn    0
+```

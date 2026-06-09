@@ -1,0 +1,77 @@
+[
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000187b",
+        "from_func": "0x180001834",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000187b",
+        "from_func": "0x180001834",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "iisutil!?Copy@STRU@@QEAAJPEBGK@Z",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002259",
+        "from_func": "0x180001cb4",
+        "from_func_name": "?DumpRequests@IIS_REQMON_CONTEXT@@SA?AW4GLOBAL_NOTIFICATION_STATUS@@PEAVIGlobalRSCAQueryProvider@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBGK@Z"
+      },
+      {
+        "from_ea": "0x180002259",
+        "from_func": "0x180001cb4",
+        "from_func_name": "?DumpRequests@IIS_REQMON_CONTEXT@@SA?AW4GLOBAL_NOTIFICATION_STATUS@@PEAVIGlobalRSCAQueryProvider@@@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBGK@Z"
+      },
+      {
+        "from_ea": "0x180006204",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBGK@Z"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002d63",
+        "from_func": "0x180002d0c",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180001526",
+        "from_func": "0x180001526",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180002d63",
+        "from_func": "0x180002d0c",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  }
+]
