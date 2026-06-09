@@ -1,0 +1,151 @@
+# OfficeSpace::CIMAppSendByIMFormDS::OnPropertyChanged(void *,int,FlexUI::FlexValue *)
+
+- ea: `0x1814d3ff0`
+- end: `0x1814d4e5c`
+- name: `?OnPropertyChanged@CIMAppSendByIMFormDS@OfficeSpace@@UEAAXPEAXHPEAVFlexValue@FlexUI@@@Z`
+- size: `3692`
+- prototype: `void __fastcall(OfficeSpace::CIMAppSendByIMFormDS *__hidden this, void *, int, struct FlexUI::FlexValue *)`
+- caller_count: `0`
+- callee_count: `21`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callees
+
+- `0x1800103b0`
+- `0x180015c8c`
+- `0x1800181b0`
+- `0x18001c9e0`
+- `0x18001d310`
+- `0x18001d460`
+- `0x18001dfd0`
+- `0x18001e030`
+- `0x180029700`
+- `0x1800b68f0`
+- `0x1800b69cc`
+- `0x1800c1760`
+- `0x18016eca0`
+- `0x1801870dc`
+- `0x180484670`
+- `0x1804860a0`
+- `0x18074b31c`
+- `0x18074c79c`
+- `0x180b5eb0c`
+- `0x180baed4c`
+- `0x1814d3ff0`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentProcessId` at `0x1814d4530`
+- `KERNEL32!GetCurrentProcessId` at `0x1814d4530`
+- `Mso98Win32Client!__imp_?GetPcxMsoConnector@Pcx@Mso@@YAAEAUIPcxMsoConnector@12@XZ` at `0x1814d4116`
+- `Mso98Win32Client!__imp_?GetPcxMsoConnector@Pcx@Mso@@YAAEAUIPcxMsoConnector@12@XZ` at `0x1814d4116`
+- `Mso98Win32Client!__imp_?GenerateWebAppFriendlyUrl@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEB_W@Z` at `0x1814d4b2a`
+- `Mso98Win32Client!__imp_?GenerateWebAppFriendlyUrl@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEB_W@Z` at `0x1814d4b2a`
+- `mso40uiWin32Client!__imp_?IsDataSourceSubclassOf@FlexUI@@YA_NPEAUIDataSourceDescription@1@I@Z` at `0x1814d4206`
+- `mso40uiWin32Client!__imp_?IsDataSourceSubclassOf@FlexUI@@YA_NPEAUIDataSourceDescription@1@I@Z` at `0x1814d4206`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4277`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d42cb`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4323`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4382`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d44ea`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d47ba`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4830`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4cdc`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4dd6`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4277`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d42cb`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4323`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4382`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d44ea`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d47ba`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4830`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4cdc`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1814d4dd6`
+- `mso40uiWin32Client!__imp_?GetString@FlexValue@FlexUI@@QEBAPEB_WXZ` at `0x1814d42b6`
+- `mso40uiWin32Client!__imp_?GetString@FlexValue@FlexUI@@QEBAPEB_WXZ` at `0x1814d430e`
+- `mso40uiWin32Client!__imp_?GetString@FlexValue@FlexUI@@QEBAPEB_WXZ` at `0x1814d42b6`
+- `mso40uiWin32Client!__imp_?GetString@FlexValue@FlexUI@@QEBAPEB_WXZ` at `0x1814d430e`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4426`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4479`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d45d4`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4742`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4888`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4d24`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4d75`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4426`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4479`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d45d4`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4742`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4888`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4d24`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814d4d75`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4414`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4467`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d45c2`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4730`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4876`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4d12`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4d63`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4414`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4467`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d45c2`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4730`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4876`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4d12`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814d4d63`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d444e`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d44a1`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d4606`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d476c`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d48ba`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d4d4c`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d4d9d`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d444e`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d44a1`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d4606`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d476c`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d48ba`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d4d4c`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814d4d9d`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d44be`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d4623`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d4789`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d48d7`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d4dba`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d44be`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d4623`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d4789`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d48d7`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814d4dba`
+- `Mso20Win32Client!__imp_?TryAppendRgwch@DString@Mso@@YA_NAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEB_WH@Z` at `0x1814d43b5`
+- `Mso20Win32Client!__imp_?TryAppendRgwch@DString@Mso@@YA_NAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEB_WH@Z` at `0x1814d43dd`
+- `Mso20Win32Client!__imp_?TryAppendRgwch@DString@Mso@@YA_NAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEB_WH@Z` at `0x1814d43f7`
+- `Mso20Win32Client!__imp_?TryAppendRgwch@DString@Mso@@YA_NAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEB_WH@Z` at `0x1814d43b5`
+- `Mso20Win32Client!__imp_?TryAppendRgwch@DString@Mso@@YA_NAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEB_WH@Z` at `0x1814d43dd`
+- `Mso20Win32Client!__imp_?TryAppendRgwch@DString@Mso@@YA_NAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEB_WH@Z` at `0x1814d43f7`
+- `USER32!GetForegroundWindow` at `0x1814d453a`
+- `USER32!GetForegroundWindow` at `0x1814d453a`
+- `OLEAUT32!__imp_SysAllocString` at `0x1814d4983`
+- `OLEAUT32!__imp_SysAllocString` at `0x1814d4a02`
+- `OLEAUT32!__imp_SysAllocString` at `0x1814d4a79`
+- `OLEAUT32!__imp_SysAllocString` at `0x1814d4983`
+- `OLEAUT32!__imp_SysAllocString` at `0x1814d4a02`
+- `OLEAUT32!__imp_SysAllocString` at `0x1814d4a79`
+- `OLEAUT32!__imp_VariantInit` at `0x1814d495c`
+- `OLEAUT32!__imp_VariantInit` at `0x1814d49ef`
+- `OLEAUT32!__imp_VariantInit` at `0x1814d4a60`
+- `OLEAUT32!__imp_VariantInit` at `0x1814d495c`
+- `OLEAUT32!__imp_VariantInit` at `0x1814d49ef`
+- `OLEAUT32!__imp_VariantInit` at `0x1814d4a60`
+- `OLEAUT32!__imp_VariantClear` at `0x1814d49be`
+- `OLEAUT32!__imp_VariantClear` at `0x1814d4a3d`
+- `OLEAUT32!__imp_VariantClear` at `0x1814d4b5e`
+- `OLEAUT32!__imp_VariantClear` at `0x1814d49be`
+- `OLEAUT32!__imp_VariantClear` at `0x1814d4a3d`
+- `OLEAUT32!__imp_VariantClear` at `0x1814d4b5e`
+
+## pseudocode
+
+```c
+
+```

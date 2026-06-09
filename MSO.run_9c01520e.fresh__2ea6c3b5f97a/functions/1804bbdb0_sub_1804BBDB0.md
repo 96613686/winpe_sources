@@ -1,0 +1,209 @@
+# sub_1804BBDB0
+
+- ea: `0x1804bbdb0`
+- end: `0x1804bc85c`
+- name: `sub_1804BBDB0`
+- size: `2732`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `19`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1804bb9e0`
+
+## callees
+
+- `0x180015d60`
+- `0x1800182e8`
+- `0x18002fae0`
+- `0x180033490`
+- `0x18006c700`
+- `0x18006c7dc`
+- `0x1800ea9d0`
+- `0x180114700`
+- `0x18016eca0`
+- `0x18019a6d0`
+- `0x1802a85d0`
+- `0x1804860a0`
+- `0x1804bbdb0`
+- `0x180a56478`
+- `0x180c20328`
+- `0x18157e1dc`
+- `0x18157e3ac`
+- `0x18157e9d8`
+- `0x181580598`
+
+## import_xrefs
+
+- `KERNEL32!GetLastError` at `0x1804bbec0`
+- `KERNEL32!GetLastError` at `0x1804bc267`
+- `KERNEL32!GetLastError` at `0x1804bc4f8`
+- `KERNEL32!GetLastError` at `0x1804bbec0`
+- `KERNEL32!GetLastError` at `0x1804bc267`
+- `KERNEL32!GetLastError` at `0x1804bc4f8`
+- `Mso98Win32Client!__imp_?HrEndTransaction@OCE@@YAJPEAUHWND__@@_N@Z` at `0x1804bbff5`
+- `Mso98Win32Client!__imp_?HrEndTransaction@OCE@@YAJPEAUHWND__@@_N@Z` at `0x1804bbff5`
+- `Mso98Win32Client!__imp_?AllowEndTransaction@OCE@@YAXPEAUHWND__@@_N@Z` at `0x1804bbfe9`
+- `Mso98Win32Client!__imp_?AllowEndTransaction@OCE@@YAXPEAUHWND__@@_N@Z` at `0x1804bbfe9`
+- `Mso98Win32Client!__imp_?IsInTransaction@OCE@@YA_NPEAUHWND__@@@Z` at `0x1804bc11b`
+- `Mso98Win32Client!__imp_?IsInTransaction@OCE@@YA_NPEAUHWND__@@@Z` at `0x1804bc11b`
+- `Mso98Win32Client!__imp_?HrStartTransaction@OCE@@YAJPEAUHWND__@@W4TransactionType@1@@Z` at `0x1804bc15b`
+- `Mso98Win32Client!__imp_?HrStartTransaction@OCE@@YAJPEAUHWND__@@W4TransactionType@1@@Z` at `0x1804bc15b`
+- `Mso98Win32Client!__imp_?AnimateOnTransactionCommit@OCE@@YAXPEAUHWND__@@_N@Z` at `0x1804bbfdd`
+- `Mso98Win32Client!__imp_?AnimateOnTransactionCommit@OCE@@YAXPEAUHWND__@@_N@Z` at `0x1804bbfdd`
+- `Mso98Win32Client!__imp_?MsoCreateBitmapFromHwnd@@YAPEAUHBITMAP__@@PEAUHWND__@@PEBUtagRECT@@MK@Z` at `0x1804bc4ca`
+- `Mso98Win32Client!__imp_?MsoCreateBitmapFromHwnd@@YAPEAUHBITMAP__@@PEAUHWND__@@PEBUtagRECT@@MK@Z` at `0x1804bc4ca`
+- `mso40uiWin32Client!__imp_?MsoIsGlassEnabled@@YA_NXZ` at `0x1804bbffb`
+- `mso40uiWin32Client!__imp_?MsoIsGlassEnabled@@YA_NXZ` at `0x1804bbffb`
+- `mso40uiWin32Client!__imp_?MsoSetWindowPos@@YAHPEAUHWND__@@0HHHHI@Z` at `0x1804bbfc0`
+- `mso40uiWin32Client!__imp_?MsoSetWindowPos@@YAHPEAUHWND__@@0HHHHI@Z` at `0x1804bbfc0`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1804bc103`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1804bc103`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1804bbf97`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1804bbf97`
+- `Mso20Win32Client!__imp_?MsoFEnableComplexGraphics@@YAHXZ` at `0x1804bbe79`
+- `Mso20Win32Client!__imp_?MsoFEnableComplexGraphics@@YAHXZ` at `0x1804bbe79`
+- `USER32!IsWindowVisible` at `0x1804bbe44`
+- `USER32!IsWindowVisible` at `0x1804bbe44`
+- `USER32!SetWindowPlacement` at `0x1804bc844`
+- `USER32!SetWindowPlacement` at `0x1804bc844`
+- `USER32!ReleaseDC` at `0x1804bc244`
+- `USER32!ReleaseDC` at `0x1804bc244`
+- `USER32!GetWindowPlacement` at `0x1804bc832`
+- `USER32!GetWindowPlacement` at `0x1804bc832`
+- `USER32!GetDesktopWindow` at `0x1804bbea1`
+- `USER32!GetDesktopWindow` at `0x1804bbea1`
+- `dwmapi!DwmSetWindowAttribute` at `0x1804bc0b9`
+- `dwmapi!DwmSetWindowAttribute` at `0x1804bc0b9`
+- `GDI32!SetBkMode` at `0x1804bbf6f`
+- `GDI32!SetBkMode` at `0x1804bc31f`
+- `GDI32!SetBkMode` at `0x1804bc3e3`
+- `GDI32!SetBkMode` at `0x1804bc4a2`
+- `GDI32!SetBkMode` at `0x1804bc5b8`
+- `GDI32!SetBkMode` at `0x1804bc679`
+- `GDI32!SetBkMode` at `0x1804bc7b8`
+- `GDI32!SetBkMode` at `0x1804bbf6f`
+- `GDI32!SetBkMode` at `0x1804bc31f`
+- `GDI32!SetBkMode` at `0x1804bc3e3`
+- `GDI32!SetBkMode` at `0x1804bc4a2`
+- `GDI32!SetBkMode` at `0x1804bc5b8`
+- `GDI32!SetBkMode` at `0x1804bc679`
+- `GDI32!SetBkMode` at `0x1804bc7b8`
+- `GDI32!SetTextColor` at `0x1804bbf5b`
+- `GDI32!SetTextColor` at `0x1804bc30b`
+- `GDI32!SetTextColor` at `0x1804bc3cf`
+- `GDI32!SetTextColor` at `0x1804bc48e`
+- `GDI32!SetTextColor` at `0x1804bc5a4`
+- `GDI32!SetTextColor` at `0x1804bc665`
+- `GDI32!SetTextColor` at `0x1804bc79e`
+- `GDI32!SetTextColor` at `0x1804bbf5b`
+- `GDI32!SetTextColor` at `0x1804bc30b`
+- `GDI32!SetTextColor` at `0x1804bc3cf`
+- `GDI32!SetTextColor` at `0x1804bc48e`
+- `GDI32!SetTextColor` at `0x1804bc5a4`
+- `GDI32!SetTextColor` at `0x1804bc665`
+- `GDI32!SetTextColor` at `0x1804bc79e`
+- `GDI32!SelectObject` at `0x1804bbef3`
+- `GDI32!SelectObject` at `0x1804bbf08`
+- `GDI32!SelectObject` at `0x1804bbf1d`
+- `GDI32!SelectObject` at `0x1804bbf32`
+- `GDI32!SelectObject` at `0x1804bbf47`
+- `GDI32!SelectObject` at `0x1804bc2a3`
+- `GDI32!SelectObject` at `0x1804bc2b8`
+- `GDI32!SelectObject` at `0x1804bc2cd`
+- `GDI32!SelectObject` at `0x1804bc2e2`
+- `GDI32!SelectObject` at `0x1804bc2f7`
+- `GDI32!SelectObject` at `0x1804bc367`
+- `GDI32!SelectObject` at `0x1804bc37c`
+- `GDI32!SelectObject` at `0x1804bc391`
+- `GDI32!SelectObject` at `0x1804bc3a6`
+- `GDI32!SelectObject` at `0x1804bc3bb`
+- `GDI32!SelectObject` at `0x1804bc426`
+- `GDI32!SelectObject` at `0x1804bc43b`
+- `GDI32!SelectObject` at `0x1804bc450`
+- `GDI32!SelectObject` at `0x1804bc465`
+- `GDI32!SelectObject` at `0x1804bc47a`
+- `GDI32!SelectObject` at `0x1804bc4e6`
+- `GDI32!SelectObject` at `0x1804bc53c`
+- `GDI32!SelectObject` at `0x1804bc551`
+- `GDI32!SelectObject` at `0x1804bc566`
+- `GDI32!SelectObject` at `0x1804bc57b`
+- `GDI32!SelectObject` at `0x1804bc590`
+- `GDI32!SelectObject` at `0x1804bc5fd`
+- `GDI32!SelectObject` at `0x1804bc612`
+- `GDI32!SelectObject` at `0x1804bc627`
+- `GDI32!SelectObject` at `0x1804bc63c`
+- `GDI32!SelectObject` at `0x1804bc651`
+- `GDI32!SelectObject` at `0x1804bc718`
+- `GDI32!SelectObject` at `0x1804bc733`
+- `GDI32!SelectObject` at `0x1804bc74e`
+- `GDI32!SelectObject` at `0x1804bc769`
+- `GDI32!SelectObject` at `0x1804bc784`
+- `GDI32!SelectObject` at `0x1804bbef3`
+- `GDI32!SelectObject` at `0x1804bbf08`
+- `GDI32!SelectObject` at `0x1804bbf1d`
+- `GDI32!SelectObject` at `0x1804bbf32`
+- `GDI32!SelectObject` at `0x1804bbf47`
+- `GDI32!SelectObject` at `0x1804bc2a3`
+- `GDI32!SelectObject` at `0x1804bc2b8`
+- `GDI32!SelectObject` at `0x1804bc2cd`
+- `GDI32!SelectObject` at `0x1804bc2e2`
+- `GDI32!SelectObject` at `0x1804bc2f7`
+- `GDI32!SelectObject` at `0x1804bc367`
+- `GDI32!SelectObject` at `0x1804bc37c`
+- `GDI32!SelectObject` at `0x1804bc391`
+- `GDI32!SelectObject` at `0x1804bc3a6`
+- `GDI32!SelectObject` at `0x1804bc3bb`
+- `GDI32!SelectObject` at `0x1804bc426`
+- `GDI32!SelectObject` at `0x1804bc43b`
+- `GDI32!SelectObject` at `0x1804bc450`
+- `GDI32!SelectObject` at `0x1804bc465`
+- `GDI32!SelectObject` at `0x1804bc47a`
+- `GDI32!SelectObject` at `0x1804bc4e6`
+- `GDI32!SelectObject` at `0x1804bc53c`
+- `GDI32!SelectObject` at `0x1804bc551`
+- `GDI32!SelectObject` at `0x1804bc566`
+- `GDI32!SelectObject` at `0x1804bc57b`
+- `GDI32!SelectObject` at `0x1804bc590`
+- `GDI32!SelectObject` at `0x1804bc5fd`
+- `GDI32!SelectObject` at `0x1804bc612`
+- `GDI32!SelectObject` at `0x1804bc627`
+- `GDI32!SelectObject` at `0x1804bc63c`
+- `GDI32!SelectObject` at `0x1804bc651`
+- `GDI32!SelectObject` at `0x1804bc718`
+- `GDI32!SelectObject` at `0x1804bc733`
+- `GDI32!SelectObject` at `0x1804bc74e`
+- `GDI32!SelectObject` at `0x1804bc769`
+- `GDI32!SelectObject` at `0x1804bc784`
+- `GDI32!DeleteDC` at `0x1804bc349`
+- `GDI32!DeleteDC` at `0x1804bc5e2`
+- `GDI32!DeleteDC` at `0x1804bc349`
+- `GDI32!DeleteDC` at `0x1804bc5e2`
+- `GDI32!DeleteObject` at `0x1804bc515`
+- `GDI32!DeleteObject` at `0x1804bc6e1`
+- `GDI32!DeleteObject` at `0x1804bc7ee`
+- `GDI32!DeleteObject` at `0x1804bc515`
+- `GDI32!DeleteObject` at `0x1804bc6e1`
+- `GDI32!DeleteObject` at `0x1804bc7ee`
+- `GDI32!SetStretchBltMode` at `0x1804bbf82`
+- `GDI32!SetStretchBltMode` at `0x1804bc237`
+- `GDI32!SetStretchBltMode` at `0x1804bc333`
+- `GDI32!SetStretchBltMode` at `0x1804bc3f7`
+- `GDI32!SetStretchBltMode` at `0x1804bc405`
+- `GDI32!SetStretchBltMode` at `0x1804bc5cc`
+- `GDI32!SetStretchBltMode` at `0x1804bc7d1`
+- `GDI32!SetStretchBltMode` at `0x1804bbf82`
+- `GDI32!SetStretchBltMode` at `0x1804bc237`
+- `GDI32!SetStretchBltMode` at `0x1804bc333`
+- `GDI32!SetStretchBltMode` at `0x1804bc3f7`
+- `GDI32!SetStretchBltMode` at `0x1804bc405`
+- `GDI32!SetStretchBltMode` at `0x1804bc5cc`
+- `GDI32!SetStretchBltMode` at `0x1804bc7d1`
+
+## pseudocode
+
+```c
+
+```

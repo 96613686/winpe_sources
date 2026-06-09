@@ -1,0 +1,148 @@
+# DlgSignMacros
+
+- ea: `0x1814ffd10`
+- end: `0x18150076e`
+- name: `DlgSignMacros`
+- size: `2654`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `30`
+- tags: `registry_config`
+
+## callees
+
+- `0x18001c9e0`
+- `0x18001d310`
+- `0x18003bec0`
+- `0x18016eca0`
+- `0x1801f87ec`
+- `0x180383000`
+- `0x1803baf20`
+- `0x1803c5950`
+- `0x1803c7260`
+- `0x1803c8c00`
+- `0x1803ddc40`
+- `0x1803de960`
+- `0x1804860a0`
+- `0x1805bf360`
+- `0x18074b31c`
+- `0x18074c79c`
+- `0x1807d3520`
+- `0x1807d6790`
+- `0x180cb62a0`
+- `0x180ce1cf0`
+- `0x180ce1e38`
+- `0x180ce2110`
+- `0x180ce21a0`
+- `0x180d46840`
+- `0x180eb17e0`
+- `0x1814f6e34`
+- `0x1814fa890`
+- `0x1814feee0`
+- `0x1814ff59c`
+- `0x1814ffd10`
+
+## import_xrefs
+
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814fff11`
+- `Mso30Win32Client!__imp_?GetAlertMessageFromMsoIds@Alerts@Mso@@YA?AUAlertMessage@12@H@Z` at `0x1814fff11`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814fff02`
+- `Mso30Win32Client!__imp_?CreateDefaultAlertParam@Alerts@Mso@@YA?AUAlertParam@12@XZ` at `0x1814fff02`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814fff34`
+- `Mso30Win32Client!__imp_?GetTelemetryNamespace@Alerts@Mso@@YAPEBUTelemetryNamespace@Telemetry@2@XZ` at `0x1814fff34`
+- `Mso30Win32Client!__imp_MsoFLoadWz` at `0x1814ffe80`
+- `Mso30Win32Client!__imp_MsoFLoadWz` at `0x181500046`
+- `Mso30Win32Client!__imp_MsoFLoadWz` at `0x181500648`
+- `Mso30Win32Client!__imp_MsoFLoadWz` at `0x1815006aa`
+- `Mso30Win32Client!__imp_MsoFLoadWz` at `0x1814ffe80`
+- `Mso30Win32Client!__imp_MsoFLoadWz` at `0x181500046`
+- `Mso30Win32Client!__imp_MsoFLoadWz` at `0x181500648`
+- `Mso30Win32Client!__imp_MsoFLoadWz` at `0x1815006aa`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814fff4e`
+- `Mso30Win32Client!__imp_?ShowAlert@Alerts@Mso@@YAHAEBVMsoReserveTag@@PEBUTelemetryNamespace@Telemetry@2@AEBUAlertParam@12@@Z` at `0x1814fff4e`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x1814ffe65`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x18150002b`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x181500631`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x18150068e`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x1814ffe65`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x18150002b`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x181500631`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x18150068e`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1814ffef3`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1814ffef3`
+- `Mso20Win32Client!__imp_?MsoCbRegGetBufferSizeBinary@@YAKPEBU_msoreg@@@Z` at `0x18150053a`
+- `Mso20Win32Client!__imp_?MsoCbRegGetBufferSizeBinary@@YAKPEBU_msoreg@@@Z` at `0x18150053a`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x1814ffea1`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x1814ffea1`
+- `Mso20Win32Client!__imp_?GetMsoAppInfo@@YAPEBUMsoAppInfo@@H@Z` at `0x1814ffea9`
+- `Mso20Win32Client!__imp_?GetMsoAppInfo@@YAPEBUMsoAppInfo@@H@Z` at `0x1814ffea9`
+- `Mso20Win32Client!__imp_?MsoFRegSetBinary@@YAHPEBU_msoreg@@PEBEK@Z` at `0x1815003f4`
+- `Mso20Win32Client!__imp_?MsoFRegSetBinary@@YAHPEBU_msoreg@@PEBEK@Z` at `0x1815003f4`
+- `Mso20Win32Client!__imp_?MsoFRegGetBinary@@YAHPEBU_msoreg@@PEAEPEAK@Z` at `0x181500571`
+- `Mso20Win32Client!__imp_?MsoFRegGetBinary@@YAHPEBU_msoreg@@PEAEPEAK@Z` at `0x181500571`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1815003ac`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x181500550`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1815003ac`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x181500550`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1814fff77`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x181500131`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x18150019a`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1815003fd`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x181500436`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1815005e5`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1815006c3`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1815006fc`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x18150072f`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1814fff77`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x181500131`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x18150019a`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1815003fd`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x181500436`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1815005e5`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1815006c3`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1815006fc`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x18150072f`
+- `Mso20Win32Client!__imp_?GetFirstMsoInstance@@YAPEAUMSOINST@@XZ` at `0x1814ffdad`
+- `Mso20Win32Client!__imp_?GetFirstMsoInstance@@YAPEAUMSOINST@@XZ` at `0x1814ffe4b`
+- `Mso20Win32Client!__imp_?GetFirstMsoInstance@@YAPEAUMSOINST@@XZ` at `0x1814ffdad`
+- `Mso20Win32Client!__imp_?GetFirstMsoInstance@@YAPEAUMSOINST@@XZ` at `0x1814ffe4b`
+- `CRYPT32!CertDeleteCertificateFromStore` at `0x18150017e`
+- `CRYPT32!CertDeleteCertificateFromStore` at `0x18150017e`
+- `CRYPT32!CertVerifySubjectCertificateContext` at `0x181500160`
+- `CRYPT32!CertVerifySubjectCertificateContext` at `0x181500160`
+- `CRYPT32!CertOpenSystemStoreW` at `0x181500584`
+- `CRYPT32!CertOpenSystemStoreW` at `0x181500584`
+- `CRYPT32!CertEnumCertificatesInStore` at `0x181500142`
+- `CRYPT32!CertEnumCertificatesInStore` at `0x181500142`
+- `CRYPT32!CryptHashCertificate` at `0x18150039c`
+- `CRYPT32!CryptHashCertificate` at `0x1815003db`
+- `CRYPT32!CryptHashCertificate` at `0x18150039c`
+- `CRYPT32!CryptHashCertificate` at `0x1815003db`
+- `CRYPT32!CertFindCertificateInStore` at `0x1815005b9`
+- `CRYPT32!CertFindCertificateInStore` at `0x1815005b9`
+- `CRYPT32!CertOpenStore` at `0x181500115`
+- `CRYPT32!CertOpenStore` at `0x181500115`
+- `CRYPT32!CertCloseStore` at `0x18150024c`
+- `CRYPT32!CertCloseStore` at `0x181500262`
+- `CRYPT32!CertCloseStore` at `0x181500424`
+- `CRYPT32!CertCloseStore` at `0x18150070f`
+- `CRYPT32!CertCloseStore` at `0x18150071f`
+- `CRYPT32!CertCloseStore` at `0x18150024c`
+- `CRYPT32!CertCloseStore` at `0x181500262`
+- `CRYPT32!CertCloseStore` at `0x181500424`
+- `CRYPT32!CertCloseStore` at `0x18150070f`
+- `CRYPT32!CertCloseStore` at `0x18150071f`
+- `CRYPT32!CertFreeCertificateContext` at `0x18150018c`
+- `CRYPT32!CertFreeCertificateContext` at `0x18150023a`
+- `CRYPT32!CertFreeCertificateContext` at `0x181500406`
+- `CRYPT32!CertFreeCertificateContext` at `0x18150018c`
+- `CRYPT32!CertFreeCertificateContext` at `0x18150023a`
+- `CRYPT32!CertFreeCertificateContext` at `0x181500406`
+- `CRYPTUI!CryptUIDlgViewCertificateW` at `0x181500231`
+- `CRYPTUI!CryptUIDlgViewCertificateW` at `0x181500231`
+
+## pseudocode
+
+```c
+
+```
