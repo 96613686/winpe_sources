@@ -1,0 +1,238 @@
+# SendAsyncGlobalClusterInternalServerActionRequestV1(IMemObj *,XeCloudPkg::DBSQLStmtType,bool,wchar_t *,wchar_t const *,wchar_t *,wchar_t *,wchar_t *,wchar_t *,wchar_t *,wchar_t const *,bool,bool)
+
+- ea: `0x101284660`
+- end: `0x101286bbd`
+- name: `?SendAsyncGlobalClusterInternalServerActionRequestV1@@YAXPEAVIMemObj@@W4DBSQLStmtType@XeCloudPkg@@_NPEA_WPEB_W33333422@Z`
+- size: `9565`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `16`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x101286bd0`
+- `0x1012a7b60`
+
+## callees
+
+- `0x100401450`
+- `0x10071db70`
+- `0x100a52e90`
+- `0x100a531f0`
+- `0x100a53550`
+- `0x100a538b0`
+- `0x100a84f40`
+- `0x100d389b0`
+- `0x10127ebe0`
+- `0x101282870`
+- `0x101282cb0`
+- `0x1012835e0`
+- `0x101284660`
+- `0x101e899b0`
+- `0x101ea7130`
+- `0x101ea8240`
+
+## import_xrefs
+
+- `KERNEL32!QueryPerformanceCounter` at `0x10128474c`
+- `KERNEL32!QueryPerformanceCounter` at `0x101284bfc`
+- `KERNEL32!QueryPerformanceCounter` at `0x101286406`
+- `KERNEL32!QueryPerformanceCounter` at `0x101286971`
+- `KERNEL32!QueryPerformanceCounter` at `0x10128474c`
+- `KERNEL32!QueryPerformanceCounter` at `0x101284bfc`
+- `KERNEL32!QueryPerformanceCounter` at `0x101286406`
+- `KERNEL32!QueryPerformanceCounter` at `0x101286971`
+- `sqldk!?sm_QueryPerformanceFrequency@Base_PublicGlobals@@2T_LARGE_INTEGER@@A` at `0x101284c38`
+- `sqldk!?sm_QueryPerformanceFrequency@Base_PublicGlobals@@2T_LARGE_INTEGER@@A` at `0x101286441`
+- `sqldk!?sm_QueryPerformanceFrequency@Base_PublicGlobals@@2T_LARGE_INTEGER@@A` at `0x1012869a7`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10128473c`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101284bec`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101284c2c`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x1012863f6`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101286435`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101286961`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10128699b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101284bbd`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10128536d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012855de`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101286120`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101284bbd`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10128536d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012855de`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101286120`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012856fd`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012856fd`
+- `sqldk!SystemThread_TlsIndex` at `0x10128478c`
+- `sqldk!SystemThread_TlsIndex` at `0x10128575e`
+- `sqldk!SystemThread_TlsOffset` at `0x101284795`
+- `sqldk!SystemThread_TlsOffset` at `0x101285767`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1012847ae`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101285780`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1012847ae`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101285780`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284833`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128485d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012848f4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284952`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284e45`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284e4f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284e5a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284e66`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128537f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101285389`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012855e9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012855f3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012855fd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012857fd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101285829`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128612c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286138`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012861bc`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012861c6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012863cb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012863d5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012863e1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012863eb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286622`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128662e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128663a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286644`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286654`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286660`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128666c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286676`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012867af`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012867b9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128682d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286837`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286b91`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284833`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128485d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012848f4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284952`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284e45`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284e4f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284e5a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101284e66`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128537f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101285389`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012855e9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012855f3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012855fd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012857fd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101285829`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128612c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286138`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012861bc`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012861c6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012863cb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012863d5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012863e1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012863eb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286622`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128662e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128663a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286644`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286654`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286660`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128666c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286676`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012867af`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012867b9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10128682d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286837`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286b91`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101286bb6`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101284bd2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101284e38`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101284e7f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101285b28`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101285c3e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101285c58`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101284bd2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101284e38`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101284e7f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101285b28`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101285c3e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101285c58`
+- `sqlmin!GetXdbServerGlobals` at `0x101284b08`
+- `sqlmin!GetXdbServerGlobals` at `0x101284b47`
+- `sqlmin!GetXdbServerGlobals` at `0x101284daf`
+- `sqlmin!GetXdbServerGlobals` at `0x101284ded`
+- `sqlmin!GetXdbServerGlobals` at `0x101285018`
+- `sqlmin!GetXdbServerGlobals` at `0x101285057`
+- `sqlmin!GetXdbServerGlobals` at `0x1012852b8`
+- `sqlmin!GetXdbServerGlobals` at `0x1012852f7`
+- `sqlmin!GetXdbServerGlobals` at `0x10128552c`
+- `sqlmin!GetXdbServerGlobals` at `0x10128556d`
+- `sqlmin!GetXdbServerGlobals` at `0x101285603`
+- `sqlmin!GetXdbServerGlobals` at `0x101285622`
+- `sqlmin!GetXdbServerGlobals` at `0x101285646`
+- `sqlmin!GetXdbServerGlobals` at `0x101285a88`
+- `sqlmin!GetXdbServerGlobals` at `0x101285acc`
+- `sqlmin!GetXdbServerGlobals` at `0x101285dd8`
+- `sqlmin!GetXdbServerGlobals` at `0x101285e1c`
+- `sqlmin!GetXdbServerGlobals` at `0x101286068`
+- `sqlmin!GetXdbServerGlobals` at `0x1012860ac`
+- `sqlmin!GetXdbServerGlobals` at `0x1012862a9`
+- `sqlmin!GetXdbServerGlobals` at `0x1012862e6`
+- `sqlmin!GetXdbServerGlobals` at `0x1012865a0`
+- `sqlmin!GetXdbServerGlobals` at `0x1012865de`
+- `sqlmin!GetXdbServerGlobals` at `0x1012868e1`
+- `sqlmin!GetXdbServerGlobals` at `0x101286919`
+- `sqlmin!GetXdbServerGlobals` at `0x101286b11`
+- `sqlmin!GetXdbServerGlobals` at `0x101286b49`
+- `sqlmin!GetXdbServerGlobals` at `0x101284b08`
+- `sqlmin!GetXdbServerGlobals` at `0x101284b47`
+- `sqlmin!GetXdbServerGlobals` at `0x101284daf`
+- `sqlmin!GetXdbServerGlobals` at `0x101284ded`
+- `sqlmin!GetXdbServerGlobals` at `0x101285018`
+- `sqlmin!GetXdbServerGlobals` at `0x101285057`
+- `sqlmin!GetXdbServerGlobals` at `0x1012852b8`
+- `sqlmin!GetXdbServerGlobals` at `0x1012852f7`
+- `sqlmin!GetXdbServerGlobals` at `0x10128552c`
+- `sqlmin!GetXdbServerGlobals` at `0x10128556d`
+- `sqlmin!GetXdbServerGlobals` at `0x101285603`
+- `sqlmin!GetXdbServerGlobals` at `0x101285622`
+- `sqlmin!GetXdbServerGlobals` at `0x101285646`
+- `sqlmin!GetXdbServerGlobals` at `0x101285a88`
+- `sqlmin!GetXdbServerGlobals` at `0x101285acc`
+- `sqlmin!GetXdbServerGlobals` at `0x101285dd8`
+- `sqlmin!GetXdbServerGlobals` at `0x101285e1c`
+- `sqlmin!GetXdbServerGlobals` at `0x101286068`
+- `sqlmin!GetXdbServerGlobals` at `0x1012860ac`
+- `sqlmin!GetXdbServerGlobals` at `0x1012862a9`
+- `sqlmin!GetXdbServerGlobals` at `0x1012862e6`
+- `sqlmin!GetXdbServerGlobals` at `0x1012865a0`
+- `sqlmin!GetXdbServerGlobals` at `0x1012865de`
+- `sqlmin!GetXdbServerGlobals` at `0x1012868e1`
+- `sqlmin!GetXdbServerGlobals` at `0x101286919`
+- `sqlmin!GetXdbServerGlobals` at `0x101286b11`
+- `sqlmin!GetXdbServerGlobals` at `0x101286b49`
+
+## string_xrefs
+
+- `0x1012848cf`: `xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'`
+- `0x1012858b3`: `xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'`
+- `0x10128617d`: `Management Service %s call for database %s on logical server %s failed. WinHttp error: %d.\n`
+- `0x101286150`: `Error occurred at Management Service. Http error code: %d.\n`
+- `0x10128620d`: `Timeout occurred on ManagementService. The database operation failed.`
+- `0x101284968`: `Unknown message from Management Service %s.\n`
+- `0x101285117`: `Unknown message from Management Service %s.\n`
+- `0x1012853a2`: `Unknown message from Management Service %s.\n`
+- `0x10128590a`: `Unknown message from Management Service %s.\n`
+- `0x101285eee`: `Unknown message from Management Service %s.\n`
+- `0x101284f79`: `An error occurred on ManagementService. The database operation failed.`
+- `0x101285d45`: `An error occurred on ManagementService. The database operation failed.`
+- `0x101284a66`: `Unknown message from ManagementService.`
+- `0x101285216`: `Unknown message from ManagementService.`
+- `0x101285494`: `Unknown message from ManagementService.`
+- `0x1012859f5`: `Unknown message from ManagementService.`
+- `0x101285fd9`: `Unknown message from ManagementService.`
+
+## pseudocode
+
+```c
+
+```

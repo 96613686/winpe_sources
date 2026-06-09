@@ -1,0 +1,253 @@
+# CSbSecurityMgr::GetDialogMsgSecurityCtx(ISvcBrokerDialogRecvMsg *,IMetadataAccess *,IMEDDatabase *,ulong &,ulong &,int &,CUcsBytes &,CAutoP<CSbKekCacheElement> &)
+
+- ea: `0x10090aaf0`
+- end: `0x10090d39e`
+- name: `?GetDialogMsgSecurityCtx@CSbSecurityMgr@@QEAAHPEAUISvcBrokerDialogRecvMsg@@PEAVIMetadataAccess@@PEAVIMEDDatabase@@AEAK3AEAHAEAUCUcsBytes@@AEAV?$CAutoP@VCSbKekCacheElement@@@@@Z`
+- size: `10414`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `23`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1008e1620`
+
+## callees
+
+- `0x100401070`
+- `0x100401090`
+- `0x100401400`
+- `0x100403080`
+- `0x100412d40`
+- `0x10041baf0`
+- `0x10085ca10`
+- `0x10085cf10`
+- `0x10085db10`
+- `0x10085e250`
+- `0x10085eb10`
+- `0x10085ed10`
+- `0x10085edc0`
+- `0x10085ef30`
+- `0x10085f3c0`
+- `0x10085f800`
+- `0x10085fb90`
+- `0x100907860`
+- `0x10090aaf0`
+- `0x10090d3b0`
+- `0x10090dc80`
+- `0x10090e650`
+- `0x10093b5f0`
+
+## import_xrefs
+
+- `secforwarder!NCryptFreeObject` at `0x10090ba51`
+- `secforwarder!NCryptFreeObject` at `0x10090bcb6`
+- `secforwarder!NCryptFreeObject` at `0x10090bef3`
+- `secforwarder!NCryptFreeObject` at `0x10090c0b7`
+- `secforwarder!NCryptFreeObject` at `0x10090c27b`
+- `secforwarder!NCryptFreeObject` at `0x10090c52c`
+- `secforwarder!NCryptFreeObject` at `0x10090c5a6`
+- `secforwarder!NCryptFreeObject` at `0x10090c8e6`
+- `secforwarder!NCryptFreeObject` at `0x10090c960`
+- `secforwarder!NCryptFreeObject` at `0x10090cb9a`
+- `secforwarder!NCryptFreeObject` at `0x10090cc14`
+- `secforwarder!NCryptFreeObject` at `0x10090d093`
+- `secforwarder!NCryptFreeObject` at `0x10090d10d`
+- `secforwarder!NCryptFreeObject` at `0x10090ba51`
+- `secforwarder!NCryptFreeObject` at `0x10090bcb6`
+- `secforwarder!NCryptFreeObject` at `0x10090bef3`
+- `secforwarder!NCryptFreeObject` at `0x10090c0b7`
+- `secforwarder!NCryptFreeObject` at `0x10090c27b`
+- `secforwarder!NCryptFreeObject` at `0x10090c52c`
+- `secforwarder!NCryptFreeObject` at `0x10090c5a6`
+- `secforwarder!NCryptFreeObject` at `0x10090c8e6`
+- `secforwarder!NCryptFreeObject` at `0x10090c960`
+- `secforwarder!NCryptFreeObject` at `0x10090cb9a`
+- `secforwarder!NCryptFreeObject` at `0x10090cc14`
+- `secforwarder!NCryptFreeObject` at `0x10090d093`
+- `secforwarder!NCryptFreeObject` at `0x10090d10d`
+- `secforwarder!BCryptDestroyHash` at `0x10090b2fe`
+- `secforwarder!BCryptDestroyHash` at `0x10090b609`
+- `secforwarder!BCryptDestroyHash` at `0x10090b823`
+- `secforwarder!BCryptDestroyHash` at `0x10090bb6c`
+- `secforwarder!BCryptDestroyHash` at `0x10090bdd1`
+- `secforwarder!BCryptDestroyHash` at `0x10090c00e`
+- `secforwarder!BCryptDestroyHash` at `0x10090c1d2`
+- `secforwarder!BCryptDestroyHash` at `0x10090c396`
+- `secforwarder!BCryptDestroyHash` at `0x10090c6c1`
+- `secforwarder!BCryptDestroyHash` at `0x10090c885`
+- `secforwarder!BCryptDestroyHash` at `0x10090ca7b`
+- `secforwarder!BCryptDestroyHash` at `0x10090cb39`
+- `secforwarder!BCryptDestroyHash` at `0x10090cd2f`
+- `secforwarder!BCryptDestroyHash` at `0x10090cdcd`
+- `secforwarder!BCryptDestroyHash` at `0x10090d30e`
+- `secforwarder!BCryptDestroyHash` at `0x10090b2fe`
+- `secforwarder!BCryptDestroyHash` at `0x10090b609`
+- `secforwarder!BCryptDestroyHash` at `0x10090b823`
+- `secforwarder!BCryptDestroyHash` at `0x10090bb6c`
+- `secforwarder!BCryptDestroyHash` at `0x10090bdd1`
+- `secforwarder!BCryptDestroyHash` at `0x10090c00e`
+- `secforwarder!BCryptDestroyHash` at `0x10090c1d2`
+- `secforwarder!BCryptDestroyHash` at `0x10090c396`
+- `secforwarder!BCryptDestroyHash` at `0x10090c6c1`
+- `secforwarder!BCryptDestroyHash` at `0x10090c885`
+- `secforwarder!BCryptDestroyHash` at `0x10090ca7b`
+- `secforwarder!BCryptDestroyHash` at `0x10090cb39`
+- `secforwarder!BCryptDestroyHash` at `0x10090cd2f`
+- `secforwarder!BCryptDestroyHash` at `0x10090cdcd`
+- `secforwarder!BCryptDestroyHash` at `0x10090d30e`
+- `secforwarder!CertFreeCertificateContext` at `0x10090ba90`
+- `secforwarder!CertFreeCertificateContext` at `0x10090bcf5`
+- `secforwarder!CertFreeCertificateContext` at `0x10090bf32`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c0f6`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c2ba`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c56b`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c5e5`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c925`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c99f`
+- `secforwarder!CertFreeCertificateContext` at `0x10090cbd9`
+- `secforwarder!CertFreeCertificateContext` at `0x10090cc53`
+- `secforwarder!CertFreeCertificateContext` at `0x10090d0d2`
+- `secforwarder!CertFreeCertificateContext` at `0x10090d14c`
+- `secforwarder!CertFreeCertificateContext` at `0x10090ba90`
+- `secforwarder!CertFreeCertificateContext` at `0x10090bcf5`
+- `secforwarder!CertFreeCertificateContext` at `0x10090bf32`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c0f6`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c2ba`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c56b`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c5e5`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c925`
+- `secforwarder!CertFreeCertificateContext` at `0x10090c99f`
+- `secforwarder!CertFreeCertificateContext` at `0x10090cbd9`
+- `secforwarder!CertFreeCertificateContext` at `0x10090cc53`
+- `secforwarder!CertFreeCertificateContext` at `0x10090d0d2`
+- `secforwarder!CertFreeCertificateContext` at `0x10090d14c`
+- `secforwarder!CertCloseStore` at `0x10090bab0`
+- `secforwarder!CertCloseStore` at `0x10090bd15`
+- `secforwarder!CertCloseStore` at `0x10090bf52`
+- `secforwarder!CertCloseStore` at `0x10090c116`
+- `secforwarder!CertCloseStore` at `0x10090c2da`
+- `secforwarder!CertCloseStore` at `0x10090c58b`
+- `secforwarder!CertCloseStore` at `0x10090c605`
+- `secforwarder!CertCloseStore` at `0x10090c945`
+- `secforwarder!CertCloseStore` at `0x10090c9bf`
+- `secforwarder!CertCloseStore` at `0x10090cbf9`
+- `secforwarder!CertCloseStore` at `0x10090cc73`
+- `secforwarder!CertCloseStore` at `0x10090d0f2`
+- `secforwarder!CertCloseStore` at `0x10090d16c`
+- `secforwarder!CertCloseStore` at `0x10090bab0`
+- `secforwarder!CertCloseStore` at `0x10090bd15`
+- `secforwarder!CertCloseStore` at `0x10090bf52`
+- `secforwarder!CertCloseStore` at `0x10090c116`
+- `secforwarder!CertCloseStore` at `0x10090c2da`
+- `secforwarder!CertCloseStore` at `0x10090c58b`
+- `secforwarder!CertCloseStore` at `0x10090c605`
+- `secforwarder!CertCloseStore` at `0x10090c945`
+- `secforwarder!CertCloseStore` at `0x10090c9bf`
+- `secforwarder!CertCloseStore` at `0x10090cbf9`
+- `secforwarder!CertCloseStore` at `0x10090cc73`
+- `secforwarder!CertCloseStore` at `0x10090d0f2`
+- `secforwarder!CertCloseStore` at `0x10090d16c`
+- `sqldk!?GetDefaultMemoryObjectNoAddRef@SOS_CacheStoreBase@@QEAAPEAVIMemObj@@XZ` at `0x10090ce8e`
+- `sqldk!?GetDefaultMemoryObjectNoAddRef@SOS_CacheStoreBase@@QEAAPEAVIMemObj@@XZ` at `0x10090ce8e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x10090cec8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x10090cec8`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x10090d26f`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x10090d26f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090adc9`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090ae25`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090ae81`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090aedf`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090af46`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090afa4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b002`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b060`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b0be`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b13c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b417`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b468`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b9b6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090bbee`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090bc58`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090be95`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090c4b0`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090c743`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090cdb1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090adc9`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090ae25`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090ae81`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090aedf`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090af46`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090afa4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b002`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b060`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b0be`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b13c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b417`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b468`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090b9b6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090bbee`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090bc58`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090be95`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090c4b0`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090c743`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10090cdb1`
+- `sqldk!SystemThread_TlsIndex` at `0x10090b4a2`
+- `sqldk!SystemThread_TlsIndex` at `0x10090b6b0`
+- `sqldk!SystemThread_TlsIndex` at `0x10090d237`
+- `sqldk!SystemThread_TlsOffset` at `0x10090b4ab`
+- `sqldk!SystemThread_TlsOffset` at `0x10090b6b9`
+- `sqldk!SystemThread_TlsOffset` at `0x10090d240`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090b5e3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090b7fd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090bb46`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090bdab`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090bfe8`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090c1ac`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090c370`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090c69b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090ca55`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090cd09`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090cf17`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090d2d1`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090d2e3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090b5e3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090b7fd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090bb46`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090bdab`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090bfe8`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090c1ac`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090c370`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090c69b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090ca55`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090cd09`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090cf17`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090d2d1`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10090d2e3`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x10090b4c6`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x10090b6d4`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x10090d259`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x10090b4c6`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x10090b6d4`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x10090d259`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090b328`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090b5b1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090b643`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090b7b7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090b7cb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090b85d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090bae0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090bb00`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090bb14`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10090bba6`
+
+## string_xrefs
+
+- `0x10090ceb4`: `sql\ntdbms\broker\src\ssbsecurity.cpp`
+
+## pseudocode
+
+```c
+
+```

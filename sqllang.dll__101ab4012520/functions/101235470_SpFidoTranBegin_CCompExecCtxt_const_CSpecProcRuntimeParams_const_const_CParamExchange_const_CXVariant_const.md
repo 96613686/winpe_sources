@@ -1,0 +1,191 @@
+# SpFidoTranBegin(CCompExecCtxt const &,CSpecProcRuntimeParams const * const,CParamExchange * const,CXVariant * const)
+
+- ea: `0x101235470`
+- end: `0x1012365e3`
+- name: `?SpFidoTranBegin@@YAXAEBVCCompExecCtxt@@QEBVCSpecProcRuntimeParams@@QEAVCParamExchange@@QEAVCXVariant@@@Z`
+- size: `4467`
+- prototype: `void __fastcall(const struct CCompExecCtxt *, const struct CSpecProcRuntimeParams *const, struct CParamExchange *const, struct CXVariant *const)`
+- caller_count: `0`
+- callee_count: `4`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x100401070`
+- `0x1004530f0`
+- `0x101235470`
+- `0x101e88db0`
+
+## import_xrefs
+
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10123562d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235b6e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235ba3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235bd8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235cc8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235cfd`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235d32`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235e1a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235e50`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235f7d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101236415`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10123562d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235b6e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235ba3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235bd8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235cc8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235cfd`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235d32`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235e1a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235e50`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101235f7d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101236415`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012354ec`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123553a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123568b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012356de`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235721`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012357c3`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235811`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012358ff`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235a4c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235aeb`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235b34`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235c45`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235c8e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235d92`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235ddf`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236030`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012360ab`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012360eb`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236175`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012361d1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236211`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236265`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012362c1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012362ff`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123633f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012364a7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236501`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123653f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123659d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012354ec`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123553a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123568b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012356de`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235721`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012357c3`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235811`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012358ff`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235a4c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235aeb`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235b34`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235c45`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235c8e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235d92`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101235ddf`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236030`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012360ab`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012360eb`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236175`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012361d1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236211`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236265`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012362c1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012362ff`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123633f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012364a7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101236501`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123653f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10123659d`
+- `sqldk!SystemThread_TlsIndex` at `0x101235e78`
+- `sqldk!SystemThread_TlsOffset` at `0x101235e81`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101235e9c`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101235e9c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101235fa8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101235fa8`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101235f14`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x1012363a9`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x101235f14`
+- `sqlTsEs!?CopyFromPbInternal@CXVariant@@AEAAXPEAEKPEBVCTypeInfo@@H@Z` at `0x1012363a9`
+- `sqlTsEs!?CopyDeep@CXVariant@@QEAAXAEBV1@KPEBVCTypeInfo@@@Z` at `0x101235f92`
+- `sqlTsEs!?CopyDeep@CXVariant@@QEAAXAEBV1@KPEBVCTypeInfo@@@Z` at `0x101236429`
+- `sqlTsEs!?CopyDeep@CXVariant@@QEAAXAEBV1@KPEBVCTypeInfo@@@Z` at `0x101235f92`
+- `sqlTsEs!?CopyDeep@CXVariant@@QEAAXAEBV1@KPEBVCTypeInfo@@@Z` at `0x101236429`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123576c`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235793`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123582d`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123584d`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123586d`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123588d`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1012358ad`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235a00`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235a69`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235a84`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235aa4`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235abf`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235c19`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235d66`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235fc0`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235fdd`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123576c`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235793`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123582d`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123584d`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123586d`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x10123588d`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1012358ad`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235a00`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235a69`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235a84`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235aa4`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235abf`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235c19`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235d66`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235fc0`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x101235fdd`
+- `sqlmin!?DWFidoTransactionAction@@YAJKPEAU_DWTransaction@@@Z` at `0x1012359db`
+- `sqlmin!?DWFidoTransactionAction@@YAJKPEAU_DWTransaction@@@Z` at `0x101236352`
+- `sqlmin!?DWFidoTransactionAction@@YAJKPEAU_DWTransaction@@@Z` at `0x1012359db`
+- `sqlmin!?DWFidoTransactionAction@@YAJKPEAU_DWTransaction@@@Z` at `0x101236352`
+- `sqlmin!?GetFidoNextStatementVersionAndSyncLists@@YAJPEAVDWFidoTxCtx@@AEA_K@Z` at `0x101235be6`
+- `sqlmin!?GetFidoNextStatementVersionAndSyncLists@@YAJPEAVDWFidoTxCtx@@AEA_K@Z` at `0x101235be6`
+- `sqlmin!?AbortStatementTransaction@@YAJUDWFidoTxVer@@_K@Z` at `0x101235d4e`
+- `sqlmin!?AbortStatementTransaction@@YAJUDWFidoTxVer@@_K@Z` at `0x101235d4e`
+- `sqlmin!?GetBase64TxnCookieFromRM@@YAPEA_WPEAVIMemObj@@PEAVDWFidoTxCtx@@PEAK@Z` at `0x101235ebf`
+- `sqlmin!?GetBase64TxnCookieFromRM@@YAPEA_WPEAVIMemObj@@PEAVDWFidoTxCtx@@PEAK@Z` at `0x101235ebf`
+- `sqlmin!?IsTxnReadOnly@DWFidoTxCtx@@QEBA_NXZ` at `0x101235bac`
+- `sqlmin!?IsTxnReadOnly@DWFidoTxCtx@@QEBA_NXZ` at `0x101235d06`
+- `sqlmin!?IsTxnReadOnly@DWFidoTxCtx@@QEBA_NXZ` at `0x101235bac`
+- `sqlmin!?IsTxnReadOnly@DWFidoTxCtx@@QEBA_NXZ` at `0x101235d06`
+- `sqlmin!?GetDWFidoTxCtx@@YAPEAVDWFidoTxCtx@@PEAVXDES@@_N@Z` at `0x101235b3e`
+- `sqlmin!?GetDWFidoTxCtx@@YAPEAVDWFidoTxCtx@@PEAVXDES@@_N@Z` at `0x101235c98`
+- `sqlmin!?GetDWFidoTxCtx@@YAPEAVDWFidoTxCtx@@PEAVXDES@@_N@Z` at `0x101235de9`
+- `sqlmin!?GetDWFidoTxCtx@@YAPEAVDWFidoTxCtx@@PEAVXDES@@_N@Z` at `0x101235b3e`
+- `sqlmin!?GetDWFidoTxCtx@@YAPEAVDWFidoTxCtx@@PEAVXDES@@_N@Z` at `0x101235c98`
+- `sqlmin!?GetDWFidoTxCtx@@YAPEAVDWFidoTxCtx@@PEAVXDES@@_N@Z` at `0x101235de9`
+- `sqlmin!GetXdbServerGlobals` at `0x1012354cd`
+- `sqlmin!GetXdbServerGlobals` at `0x1012354cd`
+- `sqlmin!?IsTxnXvbValid@DWFidoTxCtx@@QEBA_NXZ` at `0x101235b77`
+- `sqlmin!?IsTxnXvbValid@DWFidoTxCtx@@QEBA_NXZ` at `0x101235cd1`
+- `sqlmin!?IsTxnXvbValid@DWFidoTxCtx@@QEBA_NXZ` at `0x101235e23`
+- `sqlmin!?IsTxnXvbValid@DWFidoTxCtx@@QEBA_NXZ` at `0x101235b77`
+- `sqlmin!?IsTxnXvbValid@DWFidoTxCtx@@QEBA_NXZ` at `0x101235cd1`
+- `sqlmin!?IsTxnXvbValid@DWFidoTxCtx@@QEBA_NXZ` at `0x101235e23`
+
+## string_xrefs
+
+- `0x101235789`: `Write`
+- `0x101235d5c`: `GetToken`
+- `0x101235bcf`: `!pFidoTxCtx->IsTxnReadOnly()`
+- `0x101235d29`: `!pFidoTxCtx->IsTxnReadOnly()`
+- `0x101235bb6`: `DWFidoTxCtx is read only`
+- `0x101235d10`: `DWFidoTxCtx is read only`
+- `0x10123640c`: `dwTran.m_dwTxnBufSize <= pxpmParamsTxnToken->PtiOriginalGet()->CbMaxLen()`
+- `0x101235f5a`: `Buffer not enough for GetToken`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,211 @@
+# CXMLAlgebrizer::MapBuiltinScalar(COptExpr *)
+
+- ea: `0x1017fde50`
+- end: `0x10180113a`
+- name: `?MapBuiltinScalar@CXMLAlgebrizer@@AEAAXPEAVCOptExpr@@@Z`
+- size: `13034`
+- prototype: `void __fastcall(CXMLAlgebrizer *__hidden this, struct COptExpr *)`
+- caller_count: `1`
+- callee_count: `42`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x1017fccb0`
+
+## callees
+
+- `0x100440600`
+- `0x100454360`
+- `0x10045a980`
+- `0x10046b580`
+- `0x10049afe0`
+- `0x10049b2f0`
+- `0x1004ca210`
+- `0x1005384b0`
+- `0x10053df90`
+- `0x10056b780`
+- `0x1005e7500`
+- `0x10064e5f0`
+- `0x100deacc0`
+- `0x100deadb0`
+- `0x100deb170`
+- `0x10163fbe0`
+- `0x101641c10`
+- `0x1016420d0`
+- `0x1017d8ff0`
+- `0x1017e2c00`
+- `0x1017e3090`
+- `0x1017e32a0`
+- `0x1017e52c0`
+- `0x1017e5740`
+- `0x1017e5910`
+- `0x1017e6600`
+- `0x1017e8210`
+- `0x1017e82a0`
+- `0x1017e9030`
+- `0x1017e9180`
+- `0x1017ea5e0`
+- `0x1017ea930`
+- `0x1017eb4d0`
+- `0x1017ebe30`
+- `0x1017ec210`
+- `0x1017ec6b0`
+- `0x1017eddb0`
+- `0x1017fb220`
+- `0x1017fdb50`
+- `0x1017fdbb0`
+- `0x1017fde50`
+- `0x101891b90`
+
+## import_xrefs
+
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fe3b0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fe403`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fe482`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fe513`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017feef0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fefa3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff107`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff1a2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff4b8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff54a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff5b7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff650`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff741`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff7d1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff842`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff8dc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ffb28`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ffbd1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ffc72`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ffdba`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800323`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800598`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800627`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800683`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10180071e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10180084c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1018008dc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10180094a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1018009e5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800cdc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800d6b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800dff`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800e98`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800f57`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fe3b0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fe403`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fe482`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fe513`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017feef0`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017fefa3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff107`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff1a2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff4b8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff54a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff5b7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff650`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff741`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff7d1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff842`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ff8dc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ffb28`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ffbd1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ffc72`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1017ffdba`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800323`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800598`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800627`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800683`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10180071e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10180084c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1018008dc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x10180094a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1018009e5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800cdc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800d6b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800dff`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800e98`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101800f57`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1017fe1bc`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1017ff2a6`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101800b08`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10180107e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1017fe1bc`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1017ff2a6`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101800b08`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10180107e`
+- `sqldk!SystemThread_TlsIndex` at `0x1017fe64f`
+- `sqldk!SystemThread_TlsOffset` at `0x1017fe658`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1017fe673`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1017fe673`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017feac9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017feb10`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017feb4f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017feb86`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017ff350`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017ff397`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017ff97a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017ffe8f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101800417`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101800bb1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101801127`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017feac9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017feb10`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017feb4f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017feb86`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017ff350`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017ff397`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017ff97a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1017ffe8f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101800417`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101800bb1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101801127`
+
+## string_xrefs
+
+- `0x1017fe1b0`: `sql\ntdbms\msql\xmldb\xmlalgeb\xalgutil.cpp`
+- `0x1017ff29a`: `sql\ntdbms\msql\xmldb\xmlalgeb\xalgutil.cpp`
+- `0x101800afc`: `sql\ntdbms\msql\xmldb\xmlalgeb\xalgutil.cpp`
+- `0x101801072`: `sql\ntdbms\msql\xmldb\xmlalgeb\xalgutil.cpp`
+- `0x1017fe39f`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017fe3f0`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017fe471`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017fe500`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017feedf`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017fef92`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff0f6`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff191`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff4a7`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff537`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff5a6`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff63f`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff72e`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff7be`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff82f`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ff8c9`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ffb17`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ffbbe`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ffc5f`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1017ffda7`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800310`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800585`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800614`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800670`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x10180070b`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800839`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1018008c9`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800937`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x1018009d2`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800cc9`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800d58`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800dec`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800e85`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101800f44`: `Sql\Ntdbms\include\common\stdarray.inl`
+
+## pseudocode
+
+```c
+
+```

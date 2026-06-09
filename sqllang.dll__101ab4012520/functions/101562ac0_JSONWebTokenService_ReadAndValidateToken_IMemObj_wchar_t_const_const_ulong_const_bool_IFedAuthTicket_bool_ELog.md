@@ -1,0 +1,252 @@
+# JSONWebTokenService::ReadAndValidateToken(IMemObj *,wchar_t const * const,ulong const &,bool,IFedAuthTicket * *,bool &,ELoginFailedState &,__int64 &,ELoginFailedUserFacingState *,bool)
+
+- ea: `0x101562ac0`
+- end: `0x1015646d2`
+- name: `?ReadAndValidateToken@JSONWebTokenService@@SAJPEAVIMemObj@@QEB_WAEBK_NPEAPEAVIFedAuthTicket@@AEA_NAEAW4ELoginFailedState@@AEA_JPEAW4ELoginFailedUserFacingState@@3@Z`
+- size: `7186`
+- prototype: `__int64 __fastcall(struct IMemObj *, const wchar_t *const, const unsigned int *, bool, struct IFedAuthTicket **, bool *, enum ELoginFailedState *, __int64 *, enum ELoginFailedUserFacingState *, bool)`
+- caller_count: `2`
+- callee_count: `22`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x10155c720`
+- `0x101562ac0`
+
+## callees
+
+- `0x100401070`
+- `0x100401433`
+- `0x100403080`
+- `0x10041e0c0`
+- `0x10071db70`
+- `0x100f08630`
+- `0x10154b750`
+- `0x10154c2e0`
+- `0x10154c470`
+- `0x10155fe50`
+- `0x101560650`
+- `0x101561400`
+- `0x1015618a0`
+- `0x101562ac0`
+- `0x10156b210`
+- `0x10156b450`
+- `0x10156ede0`
+- `0x10156eee0`
+- `0x10156f000`
+- `0x1015736c0`
+- `0x101573f20`
+- `0x101e890c0`
+
+## import_xrefs
+
+- `KERNEL32!GetLastError` at `0x101564118`
+- `KERNEL32!GetLastError` at `0x101564118`
+- `KERNEL32!QueryPerformanceCounter` at `0x101562b9d`
+- `KERNEL32!QueryPerformanceCounter` at `0x101563c89`
+- `KERNEL32!QueryPerformanceCounter` at `0x101563e47`
+- `KERNEL32!QueryPerformanceCounter` at `0x101564084`
+- `KERNEL32!QueryPerformanceCounter` at `0x10156419f`
+- `KERNEL32!QueryPerformanceCounter` at `0x101562b9d`
+- `KERNEL32!QueryPerformanceCounter` at `0x101563c89`
+- `KERNEL32!QueryPerformanceCounter` at `0x101563e47`
+- `KERNEL32!QueryPerformanceCounter` at `0x101564084`
+- `KERNEL32!QueryPerformanceCounter` at `0x10156419f`
+- `KERNEL32!MultiByteToWideChar` at `0x101562d55`
+- `KERNEL32!MultiByteToWideChar` at `0x101562dc5`
+- `KERNEL32!MultiByteToWideChar` at `0x101562f63`
+- `KERNEL32!MultiByteToWideChar` at `0x101562fd3`
+- `KERNEL32!MultiByteToWideChar` at `0x101562d55`
+- `KERNEL32!MultiByteToWideChar` at `0x101562dc5`
+- `KERNEL32!MultiByteToWideChar` at `0x101562f63`
+- `KERNEL32!MultiByteToWideChar` at `0x101562fd3`
+- `KERNEL32!WideCharToMultiByte` at `0x101563c2d`
+- `KERNEL32!WideCharToMultiByte` at `0x101563d50`
+- `KERNEL32!WideCharToMultiByte` at `0x101563c2d`
+- `KERNEL32!WideCharToMultiByte` at `0x101563d50`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x101562bdb`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x101563ce7`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x101563e85`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x1015640d6`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x1015641f1`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101562b8a`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101563c76`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101563e34`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101564071`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10156418c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101562e96`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563856`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563915`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563f39`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563ff8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101562e96`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563856`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563915`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563f39`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563ff8`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101562d90`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101562f9e`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563af1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563c55`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101562d90`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101562f9e`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563af1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101563c55`
+- `sqldk!SystemThread_TlsIndex` at `0x101562b57`
+- `sqldk!SystemThread_TlsOffset` at `0x101562b60`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564372`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564398`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015643c0`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015643e6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10156440e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564423`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564446`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564466`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015644bd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015644e3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564503`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10156452b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564540`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564560`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564372`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564398`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015643c0`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015643e6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10156440e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564423`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564446`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564466`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015644bd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015644e3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564503`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10156452b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564540`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101564560`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101562da0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101562df4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101562fae`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101562ffe`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156335e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563445`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563529`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563534`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563546`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563573`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563582`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015638ad`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563b05`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563bd5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563bea`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563c69`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156438a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015643ce`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101564471`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156447f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156448a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101564495`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015644cb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156456e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156457c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101564587`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101564592`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156459d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101562da0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101562df4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101562fae`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101562ffe`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156335e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563445`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563529`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563534`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563546`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563573`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563582`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015638ad`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563b05`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563bd5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563bea`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101563c69`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156438a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015643ce`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101564471`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156447f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156448a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101564495`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015644cb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156456e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156457c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101564587`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101564592`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10156459d`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101563079`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10156322c`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10156331d`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10156336d`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10156358f`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101563719`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1015639d3`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101563a3d`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101563079`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10156322c`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10156331d`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10156336d`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10156358f`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101563719`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1015639d3`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101563a3d`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x10156333b`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015639f1`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101563a5b`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x10156333b`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015639f1`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101563a5b`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101563124`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015632df`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101563418`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x10156363f`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015637c4`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101563124`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015632df`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101563418`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x10156363f`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015637c4`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x1015630ac`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x10156325f`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x1015633a0`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x1015635c2`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x10156374c`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x1015630ac`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x10156325f`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x1015633a0`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x1015635c2`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x10156374c`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101562be7`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101563cf3`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101563e91`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x1015640e2`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x1015641fd`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101562be7`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101563cf3`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101563e91`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x1015640e2`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x1015641fd`
+
+## string_xrefs
+
+- `0x1015642c2`: `Federated Authentication JWT ReadAndValidateToken failed with state: %d, JSON Result ErrorCode: %u dwError: %u`
+- `0x101562d7d`: `sql\ntdbms\msql\security\src\JSONWebTokenService.cpp`
+- `0x101562e82`: `sql\ntdbms\msql\security\src\JSONWebTokenService.cpp`
+- `0x101562f8b`: `sql\ntdbms\msql\security\src\JSONWebTokenService.cpp`
+- `0x101563844`: `sql\ntdbms\msql\security\src\JSONWebTokenService.cpp`
+- `0x101563903`: `sql\ntdbms\msql\security\src\JSONWebTokenService.cpp`
+- `0x101563ada`: `sql\ntdbms\msql\security\src\JSONWebTokenService.cpp`
+- `0x101563c45`: `sql\ntdbms\msql\security\src\JSONWebTokenService.cpp`
+- `0x101563f25`: `sql\ntdbms\msql\security\src\JSONWebTokenService.cpp`
+- `0x101563fe3`: `sql\ntdbms\msql\security\src\JSONWebTokenService.cpp`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,249 @@
+# CStmtAlterDB::ExecGeoDRViaManagementService(CCompExecCtxtStmt const &,IMemObj *)
+
+- ea: `0x1012af220`
+- end: `0x1012b1179`
+- name: `?ExecGeoDRViaManagementService@CStmtAlterDB@@AEBAXAEBVCCompExecCtxtStmt@@PEAVIMemObj@@@Z`
+- size: `8025`
+- prototype: `void(CStmtAlterDB *__hidden this, const struct CCompExecCtxtStmt *, struct IMemObj *)`
+- caller_count: `1`
+- callee_count: `9`
+- tags: `authz_impersonation, service_task, broker_com_uri`
+
+## callers
+
+- `0x101293060`
+
+## callees
+
+- `0x100401433`
+- `0x100403080`
+- `0x10071db70`
+- `0x10075c120`
+- `0x100860500`
+- `0x100a54480`
+- `0x100a85020`
+- `0x101286bd0`
+- `0x1012af220`
+
+## import_xrefs
+
+- `KERNEL32!MultiByteToWideChar` at `0x1012afd7f`
+- `KERNEL32!MultiByteToWideChar` at `0x1012afddc`
+- `KERNEL32!MultiByteToWideChar` at `0x1012b007c`
+- `KERNEL32!MultiByteToWideChar` at `0x1012b00e0`
+- `KERNEL32!MultiByteToWideChar` at `0x1012afd7f`
+- `KERNEL32!MultiByteToWideChar` at `0x1012afddc`
+- `KERNEL32!MultiByteToWideChar` at `0x1012b007c`
+- `KERNEL32!MultiByteToWideChar` at `0x1012b00e0`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x1012af2f2`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012af289`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012af2c2`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012af31f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012af3a7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012b0cb0`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012af289`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012af2c2`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012af31f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012af3a7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012b0cb0`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afa3f`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afbb5`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afcb1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afdac`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afe9b`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012aff22`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012affb8`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b00ad`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b01de`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b040f`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b066d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b08d4`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b0a4d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b0aec`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b0bbb`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b0c5c`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afa3f`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afbb5`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afcb1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afdac`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012afe9b`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012aff22`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012affb8`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b00ad`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b01de`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b040f`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b066d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b08d4`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b0a4d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b0aec`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b0bbb`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1012b0c5c`
+- `sqldk!SystemThread_TlsIndex` at `0x1012af2d1`
+- `sqldk!SystemThread_TlsIndex` at `0x1012af584`
+- `sqldk!SystemThread_TlsIndex` at `0x1012af660`
+- `sqldk!SystemThread_TlsIndex` at `0x1012af695`
+- `sqldk!SystemThread_TlsIndex` at `0x1012af787`
+- `sqldk!SystemThread_TlsIndex` at `0x1012afe1e`
+- `sqldk!SystemThread_TlsOffset` at `0x1012af2da`
+- `sqldk!SystemThread_TlsOffset` at `0x1012af58d`
+- `sqldk!SystemThread_TlsOffset` at `0x1012af669`
+- `sqldk!SystemThread_TlsOffset` at `0x1012af69e`
+- `sqldk!SystemThread_TlsOffset` at `0x1012af790`
+- `sqldk!SystemThread_TlsOffset` at `0x1012afe27`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012af648`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012af72b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012af771`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afa4f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afbc5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afcc9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afdbc`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afdfa`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afeac`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012aff32`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012affd0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b00bd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0102`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0116`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0131`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b013b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0146`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0150`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0189`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b01b3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b01ef`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0423`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0681`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b08e8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b098b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0995`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b099f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b09aa`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b09b4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b09be`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0a5d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0afc`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0bcb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0c6c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1055`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1060`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b106e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1079`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1084`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b108e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b109c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10a6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10b0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10bb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10c9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10d4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10e2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10ed`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10fb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1106`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1111`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b111c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b112a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1135`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1143`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1151`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b115f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012af648`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012af72b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012af771`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afa4f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afbc5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afcc9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afdbc`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afdfa`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012afeac`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012aff32`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012affd0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b00bd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0102`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0116`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0131`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b013b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0146`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0150`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0189`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b01b3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b01ef`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0423`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0681`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b08e8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b098b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0995`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b099f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b09aa`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b09b4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b09be`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0a5d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0afc`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0bcb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b0c6c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1055`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1060`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b106e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1079`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1084`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b108e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b109c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10a6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10b0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10bb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10c9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10d4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10e2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10ed`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b10fb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1106`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1111`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b111c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b112a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1135`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1143`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b1151`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1012b115f`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af3fd`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af440`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af495`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af4e7`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af53c`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af5d8`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af706`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af7c7`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af889`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af3fd`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af440`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af495`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af4e7`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af53c`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af5d8`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af706`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af7c7`
+- `sqlTsEs!?WszFromWsLen@@YAPEA_WPEAVIMemObj@@PEB_WH@Z` at `0x1012af889`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x1012af3bc`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x1012af452`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x1012af4a7`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x1012af4f9`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x1012af54e`
+
+## string_xrefs
+
+- `0x1012afe8b`: `sql\ntdbms\msql\security\src\seccommon.cpp`
+- `0x1012aff14`: `sql\ntdbms\msql\security\src\seccommon.cpp`
+- `0x1012b06f3`: `{ "databaseName": "%s", "secondaryServerName": "%s", "loginName": "%s", "password": "%s", "clientIpAddress": "%s", "isReadableSecondary": "%s", "isReplace": "%s", "serviceObjective": "%s", "resourcePoolName": "%s", "isAadUser": "%s", "ownerSid": "%s", "numberOfGroups": "%s", "groups": "%s" }`
+- `0x1012b0a09`: `AlterDatabaseRemoveSecondaryAsync`
+- `0x1012b0a14`: `d:AlterDatabaseRemoveSecondaryAsync`
+- `0x1012b0a8f`: `AlterDatabaseRemoveSecondaryAsyncV2`
+- `0x1012b0a9a`: `d:AlterDatabaseRemoveSecondaryAsyncV2`
+- `0x1012afc16`: `{ "databaseName": "%s", "secondaryServerName": "%s", "loginName": "%s", "password": "%s", "clientIpAddress": "%s", "isReadableSecondary": "%s", "isReplace": "%s", "serviceObjective": "%s", "resourcePoolName": "%s" }`
+- `0x1012b04b9`: `{ "databaseName": "%s", "secondaryServerName": "%s", "loginName": "%s", "password": "%s", "clientIpAddress": "%s", "isReadableSecondary": "%s", "isReplace": "%s", "serviceObjective": "%s", "resourcePoolName": "%s", "isAadUser": "%s", "ownerSid": "%s", "numberOfGroups": "%s", "groups": "%s", "partnerDatabaseName": "%s", "secondaryType": "%s", "backupStorageRedundancy": "%s" }`
+- `0x1012b0972`: `{ "databaseName": "%s", "secondaryServerName": "%s", "loginName": "%s", "password": "%s", "clientIpAddress": "%s", "isReadableSecondary": "%s", "isReplace": "%s", "serviceObjective": "%s", "resourcePoolName": "%s", "isAadUser": "%s", "ownerSid": "%s", "numberOfGroups": "%s", "groups": "%s", "partnerDatabaseName": "%s", "secondaryType": "%s" }`
+- `0x1012afa8e`: `{ "databaseName": "%s", "secondaryServerName": "%s", "loginName": "%s", "password": "%s", "clientIpAddress": "%s", "isReadableSecondary": "%s", "isReplace": "%s" }`
+
+## pseudocode
+
+```c
+
+```
