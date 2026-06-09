@@ -1,0 +1,648 @@
+# CZipItemByteStream::SetSize(unsigned __int64,IMetroProgress *)
+
+- ea: `0x18011e750`
+- end: `0x18011ee7b`
+- name: `?SetSize@CZipItemByteStream@@UEAAJ_KPEAUIMetroProgress@@@Z`
+- size: `1835`
+- prototype: `__int64 __fastcall(CZipItemByteStream *__hidden this, unsigned __int64, struct IMetroProgress *)`
+- caller_count: `0`
+- callee_count: `8`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x18011e750`
+- `0x18014a9b4`
+- `0x18017be6c`
+- `0x18017be90`
+- `0x18017bf80`
+- `0x1801907f4`
+- `0x180192560`
+- `0x18032c230`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentThreadId` at `0x18011e802`
+- `KERNEL32!GetCurrentThreadId` at `0x18011e818`
+- `KERNEL32!GetCurrentThreadId` at `0x18011edcb`
+- `KERNEL32!GetCurrentThreadId` at `0x18011e802`
+- `KERNEL32!GetCurrentThreadId` at `0x18011e818`
+- `KERNEL32!GetCurrentThreadId` at `0x18011edcb`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@PEBD@Z` at `0x18011e9c6`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@PEBD@Z` at `0x18011e9c6`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18011edde`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18011edde`
+- `Mso20Win32Client!__imp_?HrContinue@CProgressHelper@@QEAAJXZ` at `0x18011e839`
+- `Mso20Win32Client!__imp_?HrContinue@CProgressHelper@@QEAAJXZ` at `0x18011e839`
+- `Mso20Win32Client!__imp_?SetZSS@CZlibHelper@@QEAAJW4ZSS@@_K@Z` at `0x18011ea78`
+- `Mso20Win32Client!__imp_?SetZSS@CZlibHelper@@QEAAJW4ZSS@@_K@Z` at `0x18011ea78`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011e946`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ea13`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011eaf9`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ec29`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ecca`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ed71`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ee33`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011e946`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ea13`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011eaf9`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ec29`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ecca`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ed71`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18011ee33`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEBDAEBUIStructuredTrace@12@@Z` at `0x18011ebaa`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEBDAEBUIStructuredTrace@12@@Z` at `0x18011ebaa`
+- `Mso20Win32Client!__imp_?FInFContinue@@YAHXZ` at `0x18011e78f`
+- `Mso20Win32Client!__imp_?FInFContinue@@YAHXZ` at `0x18011e78f`
+- `Mso20Win32Client!__imp_??0CProgressCalc@@QEAA@PEAUIMetroProgress@@@Z` at `0x18011e7ca`
+- `Mso20Win32Client!__imp_??0CProgressCalc@@QEAA@PEAUIMetroProgress@@@Z` at `0x18011e7ca`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18011e997`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18011eb5c`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18011ed1c`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18011e997`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18011eb5c`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18011ed1c`
+
+## string_xrefs
+
+- `0x18011e98b`: `Failed: dataAccess.RequestAccess()`
+- `0x18011eb46`: `False: CanWrite()`
+- `0x18011e9af`: `(CZipItemByteStream::SetSize) Trying to set size on write-only stream`
+- `0x18011ee6e`: `Failed: m_pibsCache->SetSize(cbStream, cpc.GetChildProgress())`
+
+## pseudocode
+
+```c
+__int64 __fastcall CZipItemByteStream::SetSize(
+        CZipItemByteStream *this,
+        unsigned __int64 a2,
+        struct IMetroProgress *a3)
+{
+  signed int v6; // esi
+  volatile __int32 *v7; // rbx
+  __int64 v8; // rax
+  __int64 v9; // rax
+  __int64 v10; // rcx
+  unsigned __int64 v12; // rcx
+  unsigned int v13; // r15d
+  unsigned int v14; // r15d
+  int v15; // ebx
+  unsigned int v16; // r15d
+  void ***v17; // [rsp+30h] [rbp-89h] BYREF
+  void ***v18; // [rsp+38h] [rbp-81h]
+  void ***v19; // [rsp+40h] [rbp-79h]
+  void **v20; // [rsp+48h] [rbp-71h] BYREF
+  void ***v21; // [rsp+50h] [rbp-69h]
+  void ***v22; // [rsp+58h] [rbp-61h]
+  void **v23; // [rsp+60h] [rbp-59h] BYREF
+  void ***v24; // [rsp+68h] [rbp-51h]
+  void ***v25; // [rsp+70h] [rbp-49h]
+  char v26; // [rsp+78h] [rbp-41h] BYREF
+  void **v27; // [rsp+80h] [rbp-39h] BYREF
+  __int64 v28; // [rsp+88h] [rbp-31h]
+  __int64 v29; // [rsp+90h] [rbp-29h]
+  char *v30; // [rsp+A8h] [rbp-11h]
+  unsigned __int64 v31; // [rsp+B0h] [rbp-9h]
+  int v32; // [rsp+B8h] [rbp-1h]
+  void **v33; // [rsp+C0h] [rbp+7h] BYREF
+  const wchar_t *v34; // [rsp+C8h] [rbp+Fh]
+  char v35; // [rsp+D0h] [rbp+17h]
+  __int16 v36; // [rsp+D2h] [rbp+19h]
+  void **v37; // [rsp+D8h] [rbp+1Fh] BYREF
+  const wchar_t *v38; // [rsp+E0h] [rbp+27h]
+  char v39; // [rsp+E8h] [rbp+2Fh]
+  __int16 v40; // [rsp+EAh] [rbp+31h]
+  void ****v41; // [rsp+120h] [rbp+67h] BYREF
+  __int64 v42; // [rsp+128h] [rbp+6Fh] BYREF
+
+  if ( !(*(unsigned int (__fastcall **)(CZipItemByteStream *))(*(_QWORD *)this + 40LL))(this) )
+  {
+    v39 = 0;
+    v37 = &Mso::ProofingTelemetry::IsOverrideToolOption::`vftable';
+    v33 = &Mso::ProofingTelemetry::IsOverrideToolOption::`vftable';
+    v38 = L"IsCorruption";
+    v34 = L"ReportCorruption";
+    v40 = 0;
+    v24 = (void ***)L"SH_ErrorCode";
+    v35 = 0;
+    v23 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v6 = -2134044671;
+    v36 = 0;
+    LODWORD(v25) = -2134044671;
+    WORD2(v25) = 0;
+    if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(845838130, 1192, 10) )
+    {
+      v17 = &v23;
+      v18 = &v33;
+      v19 = &v37;
+      v20 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+      v21 = (void ***)&v17;
+      v22 = &v20;
+      Mso::Logging::MsoSendStructuredTraceTag(845838130, 1192, 10, 0, L"False: CanWrite()", &v20);
+    }
+    return (unsigned int)v6;
+  }
+  if ( !FInFContinue() )
+  {
+    if ( (*(unsigned __int8 (__fastcall **)(_QWORD))(**((_QWORD **)this + 8) + 16LL))(*((_QWORD *)this + 8)) )
+    {
+      v35 = 0;
+      v33 = &Mso::ProofingTelemetry::IsOverrideToolOption::`vftable';
+      v37 = &Mso::ProofingTelemetry::IsOverrideToolOption::`vftable';
+      v34 = L"IsCorruption";
+      v38 = L"ReportCorruption";
+      v36 = 0;
+      v18 = (void ***)L"SH_ErrorCode";
+      v39 = 0;
+      v17 = (void ***)&Mso::Resources::StructuredPathOrigin::`vftable';
+      v6 = -2134241273;
+      v40 = 0;
+      LODWORD(v19) = -2134241273;
+      WORD2(v19) = 0;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1768318003, 1192, 10) )
+      {
+        v23 = (void **)&v17;
+        v24 = &v37;
+        v25 = &v33;
+        v20 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v21 = &v23;
+        v22 = (void ***)&v26;
+        Mso::Logging::MsoSendStructuredTraceTag(1768318003, 1192, 10, 0, L"False: !PeekZipHost().FDisposed()", &v20);
+      }
+      return (unsigned int)v6;
+    }
+    if ( *((_DWORD *)this + 74) )
+    {
+      v15 = *((_DWORD *)this + 74);
+      if ( v15 != GetCurrentThreadId() )
+        MsoShipAssertTagProc(1717645925);
+    }
+    CProgressCalc::CProgressCalc((CProgressCalc *)&v27, a3);
+    CZipHostDataAccess::CZipHostDataAccess((CZipHostDataAccess *)&v23, *((struct CZipStreamHost **)this + 8));
+    v6 = (_BYTE)v24 == 0 ? 0x80CA1001 : 0;
+    if ( !(_BYTE)v24 )
+    {
+      LODWORD(v19) = -2134241279;
+      WORD2(v19) = 0;
+      v18 = (void ***)L"SH_ErrorCode";
+      v17 = (void ***)&Mso::Resources::StructuredPathOrigin::`vftable';
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(808464432, 1192, 10) )
+      {
+        v41 = &v17;
+        v20 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v21 = (void ***)&v41;
+        v22 = (void ***)&v42;
+        Mso::Logging::MsoSendStructuredTraceTag(808464432, 1192, 10, 0, L"Failed: dataAccess.RequestAccess()", &v20);
+      }
+      goto LABEL_17;
+    }
+    v7 = (volatile __int32 *)((char *)this + 88);
+    if ( *((_DWORD *)this + 22) || _InterlockedCompareExchange(v7, GetCurrentThreadId() & 0xFFFFFFFC | 1, 0) )
+    {
+      if ( (*v7 & 0xFFFFFFFC) == (GetCurrentThreadId() & 0xFFFFFFFC) )
+        _InterlockedExchange(v7, *v7 + 1);
+      else
+        CSpinLock::_LockSpin((CZipItemByteStream *)((char *)this + 88));
+    }
+    v6 = CProgressHelper::HrContinue((CProgressHelper *)&v27);
+    if ( v6 < 0 )
+    {
+      v13 = 50;
+      LODWORD(v19) = v6;
+      WORD2(v19) = 0;
+      v18 = (void ***)L"SH_ErrorCode";
+      v17 = (void ***)&Mso::Resources::StructuredPathOrigin::`vftable';
+      if ( v6 != -2147467260 )
+        v13 = 10;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(846292074, 1192, v13) )
+      {
+        v41 = &v17;
+        v20 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v21 = (void ***)&v41;
+        v22 = (void ***)&v42;
+        Mso::Logging::MsoSendStructuredTraceTag(846292074, 1192, v13, 0, L"Failed: cpc.HrContinue()", &v20);
+      }
+      goto LABEL_16;
+    }
+    if ( (*((_BYTE *)this + 100) & 2) != 0 )
+    {
+      if ( *((_QWORD *)this + 35) != a2 )
+      {
+        Mso::Logging::MsoSendStructuredTraceTag(
+          896694895,
+          1192,
+          100,
+          "(CZipItemByteStream::SetSize) Trying to set size on write-only stream");
+        v6 = -2134044668;
+      }
+      goto LABEL_16;
+    }
+    CZipItemByteStream::EnsureDirty(this);
+    if ( (*((_BYTE *)this + 100) & 8) == 0 )
+    {
+      v32 = 1;
+      v12 = *((_QWORD *)this + 32);
+      v30 = (char *)this + 256;
+      if ( v12 < a2 )
+        v12 = a2;
+      if ( !v12 )
+        v12 = 1;
+      v31 = v12;
+      v6 = CZipItemByteStream::AdvanceToOffset(this, a2, 0, (struct CProgressHelper *)&v27);
+      if ( v6 < 0 )
+      {
+        v14 = 50;
+        LODWORD(v19) = v6;
+        WORD2(v19) = 0;
+        v18 = (void ***)L"SH_ErrorCode";
+        v17 = (void ***)&Mso::Resources::StructuredPathOrigin::`vftable';
+        if ( v6 != -2147467260 )
+          v14 = 10;
+        if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(845838132, 1192, v14) )
+        {
+          v41 = &v17;
+          v20 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+          v21 = (void ***)&v41;
+          v22 = (void ***)&v42;
+          Mso::Logging::MsoSendStructuredTraceTag(
+            845838132,
+            1192,
+            v14,
+            0,
+            L"Failed: AdvanceToOffset(cbStream, false, &cpc)",
+            &v20);
+        }
+        goto LABEL_16;
+      }
+      if ( *((_DWORD *)this + 34) )
+        CZlibHelper::SetZSS((char *)this + 112, 1, 0);
+      *((_DWORD *)this + 25) |= 8u;
+    }
+    v32 = 1;
+    *((_QWORD *)this + 35) = a2;
+    v30 = (char *)this + 280;
+    v8 = a2;
+    if ( !a2 )
+      v8 = 1;
+    v31 = v8;
+    v9 = Mso::TCntPtr<Csi::IWopiContainerMetadata>::operator->((char *)this + 80);
+    v6 = (*(__int64 (__fastcall **)(__int64, unsigned __int64, __int64))(*(_QWORD *)v9 + 48LL))(v9, a2, v29);
+    if ( v6 < 0 )
+    {
+      v16 = 50;
+      LODWORD(v19) = v6;
+      WORD2(v19) = 0;
+      v18 = (void ***)L"SH_ErrorCode";
+      v17 = (void ***)&Mso::Resources::StructuredPathOrigin::`vftable';
+      if ( v6 != -2147467260 )
+        v16 = 10;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(845838133, 1192, v16) )
+      {
+        v41 = &v17;
+        v20 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v21 = (void ***)&v41;
+        v22 = (void ***)&v42;
+        Mso::Logging::MsoSendStructuredTraceTag(
+          845838133,
+          1192,
+          v16,
+          0,
+          L"Failed: m_pibsCache->SetSize(cbStream, cpc.GetChildProgress())",
+          &v20);
+      }
+    }
+LABEL_16:
+    _InterlockedExchange(v7, ((*(_BYTE *)v7 - 1) & 3) != 0 ? *v7 - 1 : 0);
+LABEL_17:
+    std::unique_lock<Mso::Lockable<Mso::SRWLock::SharedLockBase,Mso::MultiThreaded>>::~unique_lock<Mso::Lockable<Mso::SRWLock::SharedLockBase,Mso::MultiThreaded>>(&v23);
+    v10 = v28;
+    v27 = &CProgressHelper::`vftable';
+    if ( v28 )
+    {
+      v28 = 0;
+      (*(void (__fastcall **)(__int64))(*(_QWORD *)v10 + 16LL))(v10);
+    }
+    return (unsigned int)v6;
+  }
+  WORD2(v19) = 0;
+  v18 = (void ***)L"SH_ErrorCode";
+  LODWORD(v19) = -2134044667;
+  v17 = (void ***)&Mso::Resources::StructuredPathOrigin::`vftable';
+  if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(845838131, 1192, 10) )
+  {
+    v21 = (void ***)&v41;
+    v41 = &v17;
+    v22 = (void ***)&v42;
+    v20 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+    Mso::Logging::MsoSendStructuredTraceTag(845838131, 1192, 10);
+  }
+  return 2160922629LL;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18011e750  mov     [rsp-8+arg_8], rbx
+0x18011e755  mov     [rsp-8+arg_10], rsi
+0x18011e75a  push    rbp
+0x18011e75b  push    rdi
+0x18011e75c  push    r12
+0x18011e75e  push    r14
+0x18011e760  push    r15
+0x18011e762  lea     rbp, [rsp-37h]
+0x18011e767  sub     rsp, 0F0h
+0x18011e76e  mov     rax, [rcx]
+0x18011e771  mov     rsi, r8
+0x18011e774  mov     r14, rdx
+0x18011e777  mov     rdi, rcx
+0x18011e77a  mov     rax, [rax+28h]
+0x18011e77e  call    cs:__guard_dispatch_icall_fptr
+0x18011e784  xor     r12d, r12d
+0x18011e787  test    eax, eax
+0x18011e789  jz      loc_18011EA87
+0x18011e78f  call    cs:__imp_?FInFContinue@@YAHXZ; FInFContinue(void)
+0x18011e795  test    eax, eax
+0x18011e797  jnz     loc_18011E9D6
+0x18011e79d  mov     rcx, [rdi+40h]
+0x18011e7a1  mov     rax, [rcx]
+0x18011e7a4  mov     rax, [rax+10h]
+0x18011e7a8  call    cs:__guard_dispatch_icall_fptr
+0x18011e7ae  test    al, al
+0x18011e7b0  jnz     loc_18011EBB5
+0x18011e7b6  cmp     [rdi+128h], r12d
+0x18011e7bd  jnz     loc_18011EDC5
+0x18011e7c3  mov     rdx, rsi
+0x18011e7c6  lea     rcx, [rbp+57h+var_90]
+0x18011e7ca  call    cs:__imp_??0CProgressCalc@@QEAA@PEAUIMetroProgress@@@Z; CProgressCalc::CProgressCalc(IMetroProgress *)
+0x18011e7d0  mov     rdx, [rdi+40h]; struct CZipStreamHost *
+0x18011e7d4  lea     rcx, [rbp+57h+var_B0]; this
+0x18011e7d8  call    ??0CZipHostDataAccess@@QEAA@AEAUCZipStreamHost@@@Z; CZipHostDataAccess::CZipHostDataAccess(CZipStreamHost &)
+0x18011e7dd  mov     al, byte ptr [rbp+57h+var_A8]
+0x18011e7e0  neg     al
+0x18011e7e2  sbb     esi, esi
+0x18011e7e4  not     esi
+0x18011e7e6  and     esi, 80CA1001h
+0x18011e7ec  jl      loc_18011E90E
+0x18011e7f2  lea     rbx, [rdi+58h]
+0x18011e7f6  mov     r15d, 1
+0x18011e7fc  mov     eax, [rbx]
+0x18011e7fe  test    eax, eax
+0x18011e800  jnz     short loc_18011E818
+0x18011e802  call    cs:__imp_GetCurrentThreadId
+0x18011e808  mov     ecx, eax
+0x18011e80a  and     ecx, 0FFFFFFFDh
+0x18011e80d  or      ecx, r15d
+0x18011e810  xor     eax, eax
+0x18011e812  lock cmpxchg [rbx], ecx
+0x18011e816  jz      short loc_18011E835
+0x18011e818  call    cs:__imp_GetCurrentThreadId
+0x18011e81e  mov     ecx, [rbx]
+0x18011e820  and     eax, 0FFFFFFFCh
+0x18011e823  and     ecx, 0FFFFFFFCh
+0x18011e826  cmp     ecx, eax
+0x18011e828  jnz     loc_18011EDB8
+0x18011e82e  mov     eax, [rbx]
+0x18011e830  add     eax, r15d
+0x18011e833  xchg    eax, [rbx]
+0x18011e835  lea     rcx, [rbp+57h+var_90]
+0x18011e839  call    cs:__imp_?HrContinue@CProgressHelper@@QEAAJXZ; CProgressHelper::HrContinue(void)
+0x18011e83f  mov     esi, eax
+0x18011e841  test    eax, eax
+0x18011e843  js      loc_18011EC80
+0x18011e849  test    byte ptr [rdi+64h], 2
+0x18011e84d  jnz     loc_18011E9A2
+0x18011e853  mov     rcx, rdi; this
+0x18011e856  call    ?EnsureDirty@CZipItemByteStream@@AEAAXXZ; CZipItemByteStream::EnsureDirty(void)
+0x18011e85b  test    byte ptr [rdi+64h], 8
+0x18011e85f  jz      loc_18011EA28
+0x18011e865  lea     rax, [rdi+118h]
+0x18011e86c  mov     [rbp+57h+var_58], r15d
+0x18011e870  mov     [rax], r14
+0x18011e873  lea     rcx, [rdi+50h]
+0x18011e877  mov     [rbp+57h+var_68], rax
+0x18011e87b  test    r14, r14
+0x18011e87e  mov     rax, r14
+0x18011e881  cmovz   rax, r15
+0x18011e885  mov     [rbp+57h+var_60], rax
+0x18011e889  call    ??C?$TCntPtr@UIWopiContainerMetadata@Csi@@@Mso@@QEBAPEAUIWopiContainerMetadata@Csi@@XZ; Mso::TCntPtr<Csi::IWopiContainerMetadata>::operator->(void)
+0x18011e88e  mov     r8, [rbp+57h+var_80]
+0x18011e892  mov     r9, rax
+0x18011e895  mov     rdx, r14
+0x18011e898  mov     rcx, [rax]
+0x18011e89b  mov     rax, [rcx+30h]
+0x18011e89f  mov     rcx, r9
+0x18011e8a2  call    cs:__guard_dispatch_icall_fptr
+0x18011e8a8  mov     esi, eax
+0x18011e8aa  test    eax, eax
+0x18011e8ac  js      loc_18011EDE9
+0x18011e8b2  mov     edx, [rbx]
+0x18011e8b4  dec     edx
+0x18011e8b6  mov     eax, edx
+0x18011e8b8  and     al, 3
+0x18011e8ba  neg     al
+0x18011e8bc  sbb     ecx, ecx
+0x18011e8be  and     ecx, edx
+0x18011e8c0  xchg    ecx, [rbx]
+0x18011e8c2  lea     rcx, [rbp+57h+var_B0]
+0x18011e8c6  call    ??1?$unique_lock@V?$Lockable@VSharedLockBase@SRWLock@Mso@@VMultiThreaded@3@@Mso@@@std@@QEAA@XZ; std::unique_lock<Mso::Lockable<Mso::SRWLock::SharedLockBase,Mso::MultiThreaded>>::~unique_lock<Mso::Lockable<Mso::SRWLock::SharedLockBase,Mso::MultiThreaded>>(void)
+0x18011e8cb  mov     rcx, [rbp+57h+var_88]
+0x18011e8cf  lea     rax, ??_7CProgressHelper@@6B@; const CProgressHelper::`vftable'
+0x18011e8d6  mov     [rbp+57h+var_90], rax
+0x18011e8da  test    rcx, rcx
+0x18011e8dd  jz      short loc_18011E8F0
+0x18011e8df  mov     [rbp+57h+var_88], r12
+0x18011e8e3  mov     rax, [rcx]
+0x18011e8e6  mov     rax, [rax+10h]
+0x18011e8ea  call    cs:__guard_dispatch_icall_fptr
+0x18011e8f0  mov     eax, esi
+0x18011e8f2  lea     r11, [rsp+110h+var_20]
+0x18011e8fa  mov     rbx, [r11+38h]
+0x18011e8fe  mov     rsi, [r11+40h]
+0x18011e902  mov     rsp, r11
+0x18011e905  pop     r15
+0x18011e907  pop     r14
+0x18011e909  pop     r12
+0x18011e90b  pop     rdi
+0x18011e90c  pop     rbp
+0x18011e90d  retn
+0x18011e90e  xor     r9d, r9d
+0x18011e911  mov     dword ptr [rbp+57h+var_D0], esi
+0x18011e914  lea     rax, aShErrorcode_0; "SH_ErrorCode"
+0x18011e91b  mov     word ptr [rbp+57h+var_D0+4], r12w
+0x18011e920  mov     [rsp+110h+var_D8], rax
+0x18011e925  mov     edi, 4A8h
+0x18011e92a  lea     rax, ??_7StructuredPathOrigin@Resources@Mso@@6B@; const Mso::Resources::StructuredPathOrigin::`vftable'
+0x18011e931  mov     ebx, 30303030h
+0x18011e936  lea     r14d, [r9+0Ah]
+0x18011e93a  mov     [rsp+110h+var_E0], rax
+0x18011e93f  mov     r8d, r14d
+0x18011e942  mov     edx, edi
+0x18011e944  mov     ecx, ebx
+0x18011e946  call    cs:__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z; Mso::Logging::MsoShouldTrace(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories)
+0x18011e94c  test    al, al
+0x18011e94e  jz      loc_18011E8C2
+0x18011e954  lea     rax, [rsp+110h+var_E0]
+0x18011e959  xor     r9d, r9d
+0x18011e95c  mov     [rbp+57h+arg_0], rax
+0x18011e960  mov     r8d, r14d
+0x18011e963  lea     rax, ??_7CompositeStructuredTrace@Logging@Mso@@6B@; const Mso::Logging::CompositeStructuredTrace::`vftable'
+0x18011e96a  mov     edx, edi
+0x18011e96c  mov     [rbp+57h+var_C8], rax
+0x18011e970  mov     ecx, ebx
+0x18011e972  lea     rax, [rbp+57h+arg_0]
+0x18011e976  mov     [rbp+57h+var_C0], rax
+0x18011e97a  lea     rax, [rbp+57h+arg_8]
+0x18011e97e  mov     [rbp+57h+var_B8], rax
+0x18011e982  lea     rax, [rbp+57h+var_C8]
+0x18011e986  mov     [rsp+110h+var_E8], rax
+0x18011e98b  lea     rax, aFailedDataacce; "Failed: dataAccess.RequestAccess()"
+0x18011e992  mov     [rsp+110h+var_F0], rax
+0x18011e997  call    cs:__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z; Mso::Logging::MsoSendStructuredTraceTag(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories,wchar_t const *,Mso::Logging::IStructuredTrace const &)
+0x18011e99d  jmp     loc_18011E8C2
+0x18011e9a2  cmp     [rdi+118h], r14
+0x18011e9a9  jz      loc_18011E8B2
+0x18011e9af  lea     r9, aCzipitembytest; "(CZipItemByteStream::SetSize) Trying to"...
+0x18011e9b6  mov     edx, 4A8h
+0x18011e9bb  mov     ecx, 35727A6Fh
+0x18011e9c0  mov     r8d, 64h ; 'd'
+0x18011e9c6  call    cs:__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@PEBD@Z; Mso::Logging::MsoSendStructuredTraceTag(ulong,Mso::Logging::Category,Mso::Logging::Severity,char const *)
+0x18011e9cc  mov     esi, 80CD1004h
+0x18011e9d1  jmp     loc_18011E8B2
+0x18011e9d6  xor     r9d, r9d
+0x18011e9d9  mov     word ptr [rbp+57h+var_D0+4], r12w
+0x18011e9de  lea     rax, aShErrorcode_0; "SH_ErrorCode"
+0x18011e9e5  mov     edi, 4A8h
+0x18011e9ea  mov     [rsp+110h+var_D8], rax
+0x18011e9ef  mov     esi, 326A7733h
+0x18011e9f4  lea     rax, ??_7StructuredPathOrigin@Resources@Mso@@6B@; const Mso::Resources::StructuredPathOrigin::`vftable'
+0x18011e9fb  mov     ebx, 80CD1005h
+0x18011ea00  lea     r14d, [r9+0Ah]
+0x18011ea04  mov     dword ptr [rbp+57h+var_D0], ebx
+0x18011ea07  mov     r8d, r14d
+0x18011ea0a  mov     [rsp+110h+var_E0], rax
+0x18011ea0f  mov     edx, edi
+0x18011ea11  mov     ecx, esi
+0x18011ea13  call    cs:__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z; Mso::Logging::MsoShouldTrace(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories)
+0x18011ea19  test    al, al
+0x18011ea1b  jnz     loc_18011EB67
+0x18011ea21  mov     eax, ebx
+0x18011ea23  jmp     loc_18011E8F2
+0x18011ea28  lea     rax, [rdi+100h]
+0x18011ea2f  mov     [rbp+57h+var_58], r15d
+0x18011ea33  mov     rcx, [rax]
+0x18011ea36  lea     r9, [rbp+57h+var_90]; struct CProgressHelper *
+0x18011ea3a  cmp     rcx, r14
+0x18011ea3d  mov     [rbp+57h+var_68], rax
+0x18011ea41  mov     rdx, r14; unsigned __int64
+0x18011ea44  cmovb   rcx, r14
+0x18011ea48  test    rcx, rcx
+0x18011ea4b  cmovz   rcx, r15
+0x18011ea4f  xor     r8d, r8d; bool
+0x18011ea52  mov     [rbp+57h+var_60], rcx
+0x18011ea56  mov     rcx, rdi; this
+0x18011ea59  call    ?AdvanceToOffset@CZipItemByteStream@@AEAAJ_K_NPEAVCProgressHelper@@@Z; CZipItemByteStream::AdvanceToOffset(unsigned __int64,bool,CProgressHelper *)
+0x18011ea5e  mov     esi, eax
+0x18011ea60  test    eax, eax
+0x18011ea62  js      loc_18011ED27
+0x18011ea68  lea     rcx, [rdi+70h]
+0x18011ea6c  cmp     [rcx+18h], r12d
+0x18011ea70  jz      short loc_18011EA7E
+0x18011ea72  xor     r8d, r8d
+0x18011ea75  mov     edx, r15d
+0x18011ea78  call    cs:__imp_?SetZSS@CZlibHelper@@QEAAJW4ZSS@@_K@Z; CZlibHelper::SetZSS(ZSS,unsigned __int64)
+0x18011ea7e  or      dword ptr [rdi+64h], 8
+0x18011ea82  jmp     loc_18011E865
+0x18011ea87  lea     rax, ??_7IsOverrideToolOption@ProofingTelemetry@Mso@@6B@; const Mso::ProofingTelemetry::IsOverrideToolOption::`vftable'
+0x18011ea8e  mov     [rbp+57h+var_28], r12b
+0x18011ea92  mov     [rbp+57h+var_38], rax
+0x18011ea96  lea     rcx, aIscorruption; "IsCorruption"
+0x18011ea9d  mov     [rbp+57h+var_50], rax
+0x18011eaa1  xor     r9d, r9d
+0x18011eaa4  lea     rax, aReportcorrupti; "ReportCorruption"
+0x18011eaab  mov     [rbp+57h+var_30], rcx
+0x18011eaaf  mov     [rbp+57h+var_48], rax
+0x18011eab3  mov     edi, 4A8h
+0x18011eab8  lea     rax, aShErrorcode_0; "SH_ErrorCode"
+0x18011eabf  mov     [rbp+57h+var_26], r12w
+0x18011eac4  mov     [rbp+57h+var_A8], rax
+0x18011eac8  lea     r14d, [r9+0Ah]
+0x18011eacc  lea     rax, ??_7StructuredPathOrigin@Resources@Mso@@6B@; const Mso::Resources::StructuredPathOrigin::`vftable'
+0x18011ead3  mov     [rbp+57h+var_40], r12b
+0x18011ead7  mov     ebx, 326A7732h
+0x18011eadc  mov     [rbp+57h+var_B0], rax
+0x18011eae0  mov     esi, 80CD1001h
+0x18011eae5  mov     [rbp+57h+var_3E], r12w
+0x18011eaea  mov     r8d, r14d
+0x18011eaed  mov     dword ptr [rbp+57h+var_A0], esi
+0x18011eaf0  mov     edx, edi
+0x18011eaf2  mov     word ptr [rbp+57h+var_A0+4], r12w
+0x18011eaf7  mov     ecx, ebx
+0x18011eaf9  call    cs:__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z; Mso::Logging::MsoShouldTrace(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories)
+0x18011eaff  test    al, al
+0x18011eb01  jz      loc_18011E8F0
+0x18011eb07  lea     rax, [rbp+57h+var_B0]
+0x18011eb0b  mov     [rsp+110h+var_E0], rax
+0x18011eb10  lea     rax, [rbp+57h+var_50]
+0x18011eb14  mov     [rsp+110h+var_D8], rax
+0x18011eb19  lea     rax, [rbp+57h+var_38]
+0x18011eb1d  mov     [rbp+57h+var_D0], rax
+0x18011eb21  lea     rax, ??_7CompositeStructuredTrace@Logging@Mso@@6B@; const Mso::Logging::CompositeStructuredTrace::`vftable'
+0x18011eb28  mov     [rbp+57h+var_C8], rax
+0x18011eb2c  lea     rax, [rsp+110h+var_E0]
+0x18011eb31  mov     [rbp+57h+var_C0], rax
+0x18011eb35  lea     rax, [rbp+57h+var_C8]
+0x18011eb39  mov     [rbp+57h+var_B8], rax
+0x18011eb3d  lea     rax, [rbp+57h+var_C8]
+0x18011eb41  mov     [rsp+110h+var_E8], rax
+0x18011eb46  lea     rax, aFalseCanwrite; "False: CanWrite()"
+0x18011eb4d  xor     r9d, r9d
+0x18011eb50  mov     [rsp+110h+var_F0], rax
+0x18011eb55  mov     r8d, r14d
+0x18011eb58  mov     edx, edi
+0x18011eb5a  mov     ecx, ebx
+0x18011eb5c  call    cs:__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z; Mso::Logging::MsoSendStructuredTraceTag(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories,wchar_t const *,Mso::Logging::IStructuredTrace const &)
+0x18011eb62  jmp     loc_18011E8F0
+0x18011eb67  lea     rdx, [rbp+57h+arg_0]
+0x18011eb6b  xor     r9d, r9d
+0x18011eb6e  mov     [rbp+57h+var_C0], rdx
+0x18011eb72  lea     rax, [rsp+110h+var_E0]
+0x18011eb77  lea     rdx, [rbp+57h+arg_8]
+0x18011eb7b  mov     [rbp+57h+arg_0], rax
+0x18011eb7f  mov     [rbp+57h+var_B8], rdx
+0x18011eb83  lea     rax, ??_7CompositeStructuredTrace@Logging@Mso@@6B@; const Mso::Logging::CompositeStructuredTrace::`vftable'
+0x18011eb8a  lea     rdx, [rbp+57h+var_C8]
+0x18011eb8e  mov     [rbp+57h+var_C8], rax
+0x18011eb92  mov     [rsp+110h+var_E8], rdx
+0x18011eb97  mov     r8d, r14d
+0x18011eb9a  lea     rdx, aReEntrancyDete; "Re-entrancy detected!"
+0x18011eba1  mov     ecx, esi
+0x18011eba3  mov     [rsp+110h+var_F0], rdx
+0x18011eba8  mov     edx, edi
+0x18011ebaa  call    cs:__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEBDAEBUIStructuredTrace@12@@Z; Mso::Logging::MsoSendStructuredTraceTag(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories,char const *,Mso::Logging::IStructuredTrace const &)
+0x18011ebb0  jmp     loc_18011EA21
+0x18011ebb5  lea     rax, ??_7IsOverrideToolOption@ProofingTelemetry@Mso@@6B@; const Mso::ProofingTelemetry::IsOverrideToolOption::`vftable'
+0x18011ebbc  mov     [rbp+57h+var_40], r12b
+0x18011ebc0  mov     [rbp+57h+var_50], rax
+0x18011ebc4  lea     rcx, aIscorruption; "IsCorruption"
+0x18011ebcb  mov     [rbp+57h+var_38], rax
+0x18011ebcf  xor     r9d, r9d
+0x18011ebd2  lea     rax, aReportcorrupti; "ReportCorruption"
+0x18011ebd9  mov     [rbp+57h+var_48], rcx
+0x18011ebdd  mov     [rbp+57h+var_30], rax
+0x18011ebe1  mov     edi, 4A8h
+0x18011ebe6  lea     rax, aShErrorcode_0; "SH_ErrorCode"
+0x18011ebed  mov     [rbp+57h+var_3E], r12w
+0x18011ebf2  mov     [rsp+110h+var_D8], rax
+0x18011ebf7  lea     r14d, [r9+0Ah]
+0x18011ebfb  lea     rax, ??_7StructuredPathOrigin@Resources@Mso@@6B@; const Mso::Resources::StructuredPathOrigin::`vftable'
+0x18011ec02  mov     [rbp+57h+var_28], r12b
+0x18011ec06  mov     ebx, 69666433h
+0x18011ec0b  mov     [rsp+110h+var_E0], rax
+0x18011ec10  mov     esi, 80CA1007h
+0x18011ec15  mov     [rbp+57h+var_26], r12w
+0x18011ec1a  mov     r8d, r14d
+0x18011ec1d  mov     dword ptr [rbp+57h+var_D0], esi
+  ... truncated ...
+```

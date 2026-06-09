@@ -1,0 +1,95 @@
+# CCDRecord::WriteInPlace(IByteStream &)
+
+- ea: `0x18076cf94`
+- end: `0x18076de99`
+- name: `?WriteInPlace@CCDRecord@@QEAAJAEAUIByteStream@@@Z`
+- size: `3845`
+- prototype: `__int64 __fastcall(CCDRecord *__hidden this, struct IByteStream *)`
+- caller_count: `1`
+- callee_count: `11`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x1805018a4`
+
+## callees
+
+- `0x18006de60`
+- `0x18007a53c`
+- `0x18012c6b0`
+- `0x18012c76c`
+- `0x180137ff0`
+- `0x180144550`
+- `0x18014a4e0`
+- `0x180190732`
+- `0x180192560`
+- `0x18076ce88`
+- `0x18076cf94`
+
+## import_xrefs
+
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18076dc5f`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18076dc79`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18076dc5f`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18076dc79`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d051`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d125`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d1e9`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d2ab`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d376`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d447`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d513`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d5fd`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d786`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d855`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d913`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076da92`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076db9c`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076dd1a`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076ddfd`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d051`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d125`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d1e9`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d2ab`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d376`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d447`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d513`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d5fd`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d786`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d855`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076d913`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076da92`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076db9c`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076dd1a`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18076ddfd`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18076d6a0`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18076d6a0`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18076de53`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18076de53`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x18076de75`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x18076de75`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x18076d700`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x18076d700`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x18076d6e6`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x18076d6f4`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x18076d6e6`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x18076d6f4`
+
+## string_xrefs
+
+- `0x18076d2e6`: `Failed: UpdateRecord()`
+- `0x18076d638`: `Failed: pibsArchive.ReadAt(qwCurrentPos, (BYTE*)&header, nBytesToRead, &nBytesRead, nullptr)`
+- `0x18076d492`: `False: nBytesRead == nBytesToRead`
+- `0x18076dd55`: `Failed: pibsArchive.WriteAt(qwCurrentPos, pbBuffer.get(), cbData, &nBytesWritten, nullptr)`
+- `0x18076de3c`: `False: m_ItemInfo.cbCompressed <= c_DWordEscape && m_ItemInfo.cbUncompressed <= c_DWordEscape`
+- `0x18076d94e`: `Failed: WriteName(reinterpret_cast<CHAR*>(pbBuffer.get() + sizeof(CFH)), header.cchName)`
+- `0x18076d8a0`: `False: nBytesToRead == nBytesRead`
+- `0x18076d7c1`: `Failed: pibsArchive.ReadAt(qwCurrentPos + sizeof(CFH), pbBuffer.get() + sizeof(CFH), nBytesToRead, &nBytesRead, nullptr)`
+- `0x18076d3b1`: `Failed: pibsArchive.ReadAt(qwCurrentPos, (BYTE*)&dwSignature, nBytesToRead, &nBytesRead, nullptr)`
+
+## pseudocode
+
+```c
+
+```

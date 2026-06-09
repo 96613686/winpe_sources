@@ -1,0 +1,214 @@
+# Mso::DataStore::AtomicFileDataStore::WriteStoreToFile(void)
+
+- ea: `0x18025b6e4`
+- end: `0x18025cb94`
+- name: `?WriteStoreToFile@AtomicFileDataStore@DataStore@Mso@@AEAAXXZ`
+- size: `5296`
+- prototype: `void __fastcall(Mso::DataStore::AtomicFileDataStore *__hidden this)`
+- caller_count: `2`
+- callee_count: `53`
+- tags: `file_ops, registry_config, broker_com_uri`
+
+## callers
+
+- `0x1801d1484`
+- `0x18059dd20`
+
+## callees
+
+- `0x180003de8`
+- `0x18001cfcc`
+- `0x18001fe54`
+- `0x1800202c0`
+- `0x180034178`
+- `0x180034450`
+- `0x180035264`
+- `0x180035348`
+- `0x1800353cc`
+- `0x180036858`
+- `0x180036984`
+- `0x180036c24`
+- `0x18003afb0`
+- `0x18003b080`
+- `0x18003b330`
+- `0x180054684`
+- `0x1800615e0`
+- `0x1800648b8`
+- `0x1800651dc`
+- `0x180080408`
+- `0x180084e70`
+- `0x1800c65e4`
+- `0x1800d6938`
+- `0x1800ea75c`
+- `0x1800ec93c`
+- `0x1800f1c20`
+- `0x1800f4ab0`
+- `0x180190780`
+- `0x1801907f4`
+- `0x1801924d8`
+- `0x180192520`
+- `0x180192560`
+- `0x1801d1d98`
+- `0x180209e34`
+- `0x180215374`
+- `0x18023962c`
+- `0x18025b6e4`
+- `0x18025cba0`
+- `0x1802eece4`
+- `0x1802ef280`
+- `0x18031dfb4`
+- `0x18031e124`
+- `0x18031ee48`
+- `0x18031eed0`
+- `0x18031f668`
+- `0x18031f780`
+- `0x18036c7cc`
+- `0x1803e6ce0`
+- `0x18042dc00`
+- `0x180443160`
+
+## import_xrefs
+
+- `Mso20Win32Client!__imp_?ToString@ErrorCode@Mso@@QEBAPEBDXZ` at `0x18025be7a`
+- `Mso20Win32Client!__imp_?ToString@ErrorCode@Mso@@QEBAPEBDXZ` at `0x18025be7a`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025bcbf`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025bf08`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025c0b3`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025c46e`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025c73b`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025bcbf`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025bf08`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025c0b3`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025c46e`
+- `Mso20Win32Client!__imp_?GetNamespace@FileIO@Office@@YAAEBUTelemetryNamespace@Telemetry@Mso@@XZ` at `0x18025c73b`
+- `Mso20Win32Client!__imp_?Create@AtomicFile@@YA?AV?$Result@V?$TCntPtr@VIWriteStream@AtomicFile@@@Mso@@@Storage@@IAEBV?$TCntPtr@VISettings@Storage@@@Mso@@AEBV?$TCntPtr@VIFileSystem@Disco@@@5@@Z` at `0x18025c152`
+- `Mso20Win32Client!__imp_?Create@AtomicFile@@YA?AV?$Result@V?$TCntPtr@VIWriteStream@AtomicFile@@@Mso@@@Storage@@IAEBV?$TCntPtr@VISettings@Storage@@@Mso@@AEBV?$TCntPtr@VIFileSystem@Disco@@@5@@Z` at `0x18025c152`
+- `Mso20Win32Client!__imp_?ToString@Error@Storage@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ` at `0x18025bb41`
+- `Mso20Win32Client!__imp_?ToString@Error@Storage@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ` at `0x18025c2f9`
+- `Mso20Win32Client!__imp_?ToString@Error@Storage@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ` at `0x18025c526`
+- `Mso20Win32Client!__imp_?ToString@Error@Storage@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ` at `0x18025bb41`
+- `Mso20Win32Client!__imp_?ToString@Error@Storage@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ` at `0x18025c2f9`
+- `Mso20Win32Client!__imp_?ToString@Error@Storage@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ` at `0x18025c526`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025b9b6`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025b9c4`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c0ea`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c59f`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c5d1`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c5e5`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c5f9`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c648`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c65c`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c670`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c6c1`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c6d5`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c6e9`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c7f9`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025ca46`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025caef`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025cafd`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025b9b6`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025b9c4`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c0ea`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c59f`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c5d1`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c5e5`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c5f9`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c648`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c65c`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c670`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c6c1`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c6d5`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c6e9`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025c7f9`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025ca46`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025caef`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18025cafd`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c107`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c113`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c5ab`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c5b7`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c5c3`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb09`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb15`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb21`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb2d`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb39`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb45`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb51`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb5d`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb69`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb75`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb81`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb8d`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c107`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c113`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c5ab`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c5b7`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025c5c3`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb09`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb15`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb21`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb2d`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb39`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb45`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb51`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb5d`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb69`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb75`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb81`
+- `Mso20Win32Client!__imp_?Crash@SegFault@Storage@@SAXI@Z` at `0x18025cb8d`
+- `MSVCP140!_Mtx_unlock` at `0x18025b969`
+- `MSVCP140!_Mtx_unlock` at `0x18025bab1`
+- `MSVCP140!_Mtx_unlock` at `0x18025bb05`
+- `MSVCP140!_Mtx_unlock` at `0x18025be2e`
+- `MSVCP140!_Mtx_unlock` at `0x18025b969`
+- `MSVCP140!_Mtx_unlock` at `0x18025bab1`
+- `MSVCP140!_Mtx_unlock` at `0x18025bb05`
+- `MSVCP140!_Mtx_unlock` at `0x18025be2e`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18025b958`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18025bad4`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18025bb28`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18025b958`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18025bad4`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18025bb28`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025bbfb`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025bc4b`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025bca2`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025bef2`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c09e`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c3b0`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c3fd`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c451`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c635`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c6a6`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c71f`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025bbfb`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025bc4b`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025bca2`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025bef2`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c09e`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c3b0`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c3fd`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c451`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c635`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c6a6`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x18025c71f`
+
+## string_xrefs
+
+- `0x18025b725`: `AtomicFileDataStore::WriteStoreToFile: Persisting the store to disk.`
+- `0x18025bcca`: `WriteStoreToFileComitFailure`
+- `0x18025c26e`: `AtomicFileDataStore::WriteStoreToFile: Successfully persisted store to disk.`
+- `0x18025bf13`: `WriteStoreToFileParserFailure`
+- `0x18025c47b`: `WriteStoreToFileWriteFailure`
+- `0x18025b9e0`: `AtomicFileDataStore::WriteStoreToFile: External changes in the store file detected, merging content.`
+- `0x18025c748`: `WriteStoreToFileCreateFailure`
+- `0x18025c0be`: `WriteStoreToFileReadFileFailure`
+- `0x18025bfce`: `AtomicFileDataStore::WriteStoreToFile: Destination directory does not exist, creating it.`
+- `0x18025ca09`: `WriteStoreToFileCreateDirectorySucceededOnRetry`
+
+## pseudocode
+
+```c
+
+```

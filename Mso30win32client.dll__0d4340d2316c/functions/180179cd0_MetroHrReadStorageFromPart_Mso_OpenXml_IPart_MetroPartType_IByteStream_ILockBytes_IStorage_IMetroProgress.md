@@ -1,0 +1,1223 @@
+# MetroHrReadStorageFromPart(Mso::OpenXml::IPart *,MetroPartType,IByteStream *,ILockBytes * *,IStorage * *,IMetroProgress *)
+
+- ea: `0x180179cd0`
+- end: `0x18017b046`
+- name: `?MetroHrReadStorageFromPart@@YAJPEAUIPart@OpenXml@Mso@@W4MetroPartType@@PEAUIByteStream@@PEAPEAUILockBytes@@PEAPEAUIStorage@@PEAUIMetroProgress@@@Z`
+- size: `4982`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `14`
+- tags: `authz_impersonation, registry_config, broker_com_uri`
+
+## callees
+
+- `0x180020590`
+- `0x180044ad0`
+- `0x1800cd518`
+- `0x18012c6b0`
+- `0x18012ef70`
+- `0x180152b60`
+- `0x180179cd0`
+- `0x18017b048`
+- `0x1801907f4`
+- `0x180192520`
+- `0x180192560`
+- `0x1804c56d4`
+- `0x1804c5da8`
+- `0x1804c5f34`
+
+## import_xrefs
+
+- `Mso20Win32Client!__imp_?MsoHrGetByteStream@@YAJKPEAUIByteStreamUser@@PEAPEAUIByteStream@@@Z` at `0x180179d60`
+- `Mso20Win32Client!__imp_?MsoHrGetByteStream@@YAJKPEAUIByteStreamUser@@PEAPEAUIByteStream@@@Z` at `0x180179d60`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x180179edd`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a033`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a0ef`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a1c2`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a27b`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a334`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a3e5`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a47b`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a557`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a5ff`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a696`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a732`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a8e9`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017aa8d`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017acad`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017ad44`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017add8`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017ae94`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017af30`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x180179edd`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a033`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a0ef`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a1c2`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a27b`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a334`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a3e5`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a47b`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a557`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a5ff`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a696`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a732`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017a8e9`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017aa8d`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017acad`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017ad44`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017add8`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017ae94`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18017af30`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180179e38`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180179e89`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18017a876`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18017aa39`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180179e38`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180179e89`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18017a876`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18017aa39`
+- `Mso20Win32Client!__imp_?MsoHrGetIBSFromILockBytes@@YAJPEAUILockBytes@@PEAPEAUIByteStream@@@Z` at `0x180179e13`
+- `Mso20Win32Client!__imp_?MsoHrGetIBSFromILockBytes@@YAJPEAUILockBytes@@PEAPEAUIByteStream@@@Z` at `0x180179e13`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x180179f2e`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017a13f`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017a38d`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017a4c9`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017a5a7`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017aadb`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x180179f2e`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017a13f`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017a38d`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017a4c9`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017a5a7`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x18017aadb`
+- `Mso20Win32Client!__imp_?MsoHrGetILockBytesFromIBS@@YAJPEAUIByteStream@@PEAUIMetroProgress@@PEAPEAUILockBytes@@@Z` at `0x180179d7b`
+- `Mso20Win32Client!__imp_?MsoHrGetILockBytesFromIBS@@YAJPEAUIByteStream@@PEAUIMetroProgress@@PEAPEAUILockBytes@@@Z` at `0x180179d7b`
+- `ole32!StgOpenStorageOnILockBytes` at `0x18017a7d5`
+- `ole32!StgOpenStorageOnILockBytes` at `0x18017a7d5`
+- `ole32!StgCreateDocfileOnILockBytes` at `0x180179e5c`
+- `ole32!StgCreateDocfileOnILockBytes` at `0x180179e5c`
+
+## string_xrefs
+
+- `0x18017a071`: `Failed: piprtObj->GetByteStream(ramReadOnly, &pibsSrc)`
+- `0x18017a12b`: `Failed: piprtObj->GetByteStream(ramReadOnly, &pibsSrc)`
+- `0x18017a4b5`: `Failed: pistg->CreateStream(c_wzEmbeddedPkgStream, 0x00000002L | 0x00000000L | 0x00000010L, 0, 0, &pistmDest)`
+- `0x18017a590`: `Failed: pibsSrc->CopyTo(pibsDest.get(), 0, 0, 0xffffffffffffffffui64, &cbWritten, pip)`
+- `0x18017a6d3`: `Failed: HrFindRealCLSID(piprtObj, partTypeObj, wzPartCT, cchPartCT - 1, pistg.get())`
+- `0x18017a770`: `Failed: StgCreateDocfileOnILockBytes(pilb.get(), 0x00001000L | 0x00000000L | 0x00000002L | 0x00000010L, 0, &pistg)`
+- `0x18017ad7f`: `Failed: pibsSrc->CopyTo(pibsDest.get(), 0, 0, 0xffffffffffffffffui64, &cbCopied, pip)`
+- `0x18017ae15`: `Failed: StgOpenStorageOnILockBytes(pilb.get(), nullptr, dwOpenFlags, 0, 0, &pistg)`
+- `0x18017af6d`: `Failed: pistg->Commit(STGC_DEFAULT)`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=1
+__int64 __fastcall MetroHrReadStorageFromPart(
+        void ***a1,
+        unsigned int a2,
+        void *a3,
+        ILockBytes **a4,
+        IStorage **a5,
+        __int64 a6)
+{
+  HRESULT ByteStream; // edi
+  void *v11; // rcx
+  DWORD v12; // esi
+  unsigned int v13; // ebx
+  void *v14; // rcx
+  IStorage *v15; // rcx
+  ILockBytes *v16; // rcx
+  unsigned int v18; // ebx
+  unsigned int v19; // ebx
+  struct IStream *v20; // rcx
+  unsigned int v21; // ebx
+  const wchar_t *v22; // rax
+  __int64 v23; // r8
+  __int64 v24; // rcx
+  unsigned int v25; // ebx
+  unsigned int v26; // ebx
+  struct IByteStream *v27; // rcx
+  unsigned int v28; // ebx
+  unsigned int v29; // ebx
+  unsigned int v30; // r14d
+  unsigned int v31; // ebx
+  int v32; // r14d
+  struct IStream *v33; // rcx
+  void *v34; // rcx
+  __int64 Rgwch; // rax
+  __int64 v36; // rdx
+  int v37; // eax
+  IStorage *v38; // rax
+  ILockBytes *v39; // rax
+  unsigned int v40; // edx
+  unsigned int v41; // ebx
+  struct IByteStream *v42; // rcx
+  struct IStream *v43; // rcx
+  __int64 v44; // rax
+  __int64 v45; // rax
+  unsigned int v46; // edi
+  void ***v47; // rdx
+  IStorage **v48; // rax
+  IStorage *v49; // rdx
+  IStorage *v50; // rcx
+  unsigned int v51; // ebx
+  unsigned int v52; // ebx
+  unsigned int v53; // ebx
+  void *v54; // rcx
+  int (__fastcall ***v55)(_QWORD, GUID *, void **); // rbx
+  int (__fastcall *v56)(_QWORD, GUID *, void **); // rsi
+  __int64 v57; // rax
+  int v58; // ecx
+  struct IStream *v59; // rcx
+  void *v60; // [rsp+50h] [rbp-B0h] BYREF
+  struct IStream *v61; // [rsp+58h] [rbp-A8h] BYREF
+  void **v62; // [rsp+60h] [rbp-A0h] BYREF
+  const wchar_t *v63; // [rsp+68h] [rbp-98h]
+  int v64; // [rsp+70h] [rbp-90h]
+  __int16 v65; // [rsp+74h] [rbp-8Ch]
+  void ***v66; // [rsp+78h] [rbp-88h] BYREF
+  void **v67; // [rsp+80h] [rbp-80h] BYREF
+  void ****v68; // [rsp+88h] [rbp-78h]
+  void ***p_plkbyt; // [rsp+90h] [rbp-70h]
+  IStorage *ppstgOpen; // [rsp+98h] [rbp-68h] BYREF
+  struct IByteStream *v71; // [rsp+A0h] [rbp-60h] BYREF
+  void ***v72; // [rsp+A8h] [rbp-58h] BYREF
+  ILockBytes *plkbyt; // [rsp+B0h] [rbp-50h] BYREF
+  void ***v74; // [rsp+B8h] [rbp-48h] BYREF
+  void ***v75; // [rsp+C0h] [rbp-40h]
+  int v76; // [rsp+C8h] [rbp-38h] BYREF
+  void **v77; // [rsp+D0h] [rbp-30h] BYREF
+  const wchar_t *v78; // [rsp+D8h] [rbp-28h]
+  const char *v79; // [rsp+E0h] [rbp-20h]
+  __int16 v80; // [rsp+E8h] [rbp-18h]
+  __int64 v81; // [rsp+F0h] [rbp-10h]
+  int v82[1044]; // [rsp+100h] [rbp+0h] BYREF
+
+  v66 = a1;
+  v81 = a6;
+  plkbyt = 0;
+  ppstgOpen = 0;
+  if ( !a5 )
+  {
+    ByteStream = -2147467261;
+    v77 = &Mso::Logging::StructuredObject<char const *,1>::`vftable';
+    v78 = L"Message";
+    v79 = "Null pointer: ";
+    v80 = 0;
+    v63 = L"SH_ErrorCode";
+    v64 = -2147467261;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v21 = 1886179;
+    if ( !(unsigned __int8)Mso::Logging::MsoShouldTrace(1886179, 1197, 10) )
+      goto LABEL_27;
+    v74 = &v62;
+    v75 = &v77;
+    v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+    v68 = &v74;
+    p_plkbyt = (void ***)&v76;
+    v22 = L"False: (ppistg) != nullptr";
+    goto LABEL_51;
+  }
+  *a5 = 0;
+  if ( !a1 )
+  {
+    ByteStream = -2147467261;
+    v77 = &Mso::Logging::StructuredObject<char const *,1>::`vftable';
+    v78 = L"Message";
+    v79 = "Null pointer: ";
+    v80 = 0;
+    v63 = L"SH_ErrorCode";
+    v64 = -2147467261;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v21 = 1886208;
+    if ( !(unsigned __int8)Mso::Logging::MsoShouldTrace(1886208, 1197, 10) )
+      goto LABEL_27;
+    v74 = &v62;
+    v75 = &v77;
+    v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+    v68 = &v74;
+    p_plkbyt = (void ***)&v76;
+    v22 = L"False: (piprtObj) != nullptr";
+    goto LABEL_51;
+  }
+  if ( a4 )
+    *a4 = 0;
+  v60 = 0;
+  ByteStream = MsoHrGetByteStream(0x18u, 0, (struct IByteStream **)&v60);
+  if ( ByteStream < 0 )
+    goto LABEL_21;
+  ByteStream = MsoHrGetILockBytesFromIBS((struct IByteStream *)v60, 0, &plkbyt);
+  if ( ByteStream < 0 )
+  {
+    v63 = L"SH_ErrorCode";
+    v64 = ByteStream;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v51 = 50;
+    if ( ByteStream != -2147467260 )
+      v51 = 10;
+    if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886211, 1197, v51) )
+    {
+      v61 = (struct IStream *)&v62;
+      v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+      v68 = (void ****)&v61;
+      p_plkbyt = &v62;
+      Mso::Logging::MsoSendStructuredTraceTag(
+        1886211,
+        1197,
+        v51,
+        0,
+        L"Failed: MsoHrGetILockBytesFromIBS(pibsDest.get(), nullptr , &pilb)",
+        &v67);
+    }
+    goto LABEL_25;
+  }
+  v11 = v60;
+  if ( v60 )
+  {
+    v60 = 0;
+    (*(void (__fastcall **)(void *))(*(_QWORD *)v11 + 16LL))(v11);
+  }
+  v76 = 2084;
+  ByteStream = ((__int64 (__fastcall *)(void ***, int *, int *))(*a1)[19])(a1, v82, &v76);
+  if ( ByteStream < 0 )
+  {
+    v63 = L"SH_ErrorCode";
+    v64 = ByteStream;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v29 = 50;
+    if ( ByteStream != -2147467260 )
+      v29 = 10;
+    v30 = 1886212;
+    if ( !(unsigned __int8)Mso::Logging::MsoShouldTrace(1886212, 1197, v29) )
+      goto LABEL_27;
+    v60 = &v62;
+    v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+    v68 = (void ****)&v60;
+    p_plkbyt = (void ***)&v61;
+    v22 = L"Failed: piprtObj->GetContentTypeWz(wzPartCT, &cchPartCT)";
+    goto LABEL_78;
+  }
+  v60 = a3;
+  Mso::Details::TCntPtrAddRefStrategyImpl<0>::CheckedAddRefOnNewlyAssignedPtr<HttpClient::ICancelToken>(&v60);
+  if ( a2 == 45 )
+  {
+LABEL_17:
+    if ( !v60 )
+    {
+      ByteStream = ((__int64 (__fastcall *)(void ***, _QWORD, void **))(*a1)[18])(a1, 0, &v60);
+      if ( ByteStream < 0 )
+      {
+        v63 = L"SH_ErrorCode";
+        v64 = ByteStream;
+        v65 = 0;
+        v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+        v18 = 50;
+        if ( ByteStream != -2147467260 )
+          v18 = 10;
+        if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886213, 1197, v18) )
+        {
+          v61 = (struct IStream *)&v62;
+          v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+          v68 = (void ****)&v61;
+          p_plkbyt = &v62;
+          Mso::Logging::MsoSendStructuredTraceTag(
+            1886213,
+            1197,
+            v18,
+            0,
+            L"Failed: piprtObj->GetByteStream(ramReadOnly, &pibsSrc)",
+            &v67);
+        }
+        goto LABEL_25;
+      }
+    }
+    ByteStream = StgCreateDocfileOnILockBytes(plkbyt, 0x1012u, 0, &ppstgOpen);
+    if ( ByteStream < 0 )
+    {
+      v63 = L"SH_ErrorCode";
+      v64 = ByteStream;
+      v65 = 0;
+      v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+      v31 = 50;
+      if ( ByteStream != -2147467260 )
+        v31 = 10;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886214, 1197, v31) )
+      {
+        v61 = (struct IStream *)&v62;
+        v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v68 = (void ****)&v61;
+        p_plkbyt = &v62;
+        Mso::Logging::MsoSendStructuredTraceTag(
+          1886214,
+          1197,
+          v31,
+          0,
+          L"Failed: StgCreateDocfileOnILockBytes(pilb.get(), 0x00001000L | 0x00000000L | 0x00000002L | 0x00000010L, 0, &pistg)",
+          &v67);
+      }
+      goto LABEL_25;
+    }
+    v61 = 0;
+    v71 = 0;
+    if ( !ppstgOpen )
+    {
+      CrashWithRecovery(0x1E3C3840u, 0);
+LABEL_21:
+      v63 = L"SH_ErrorCode";
+      v64 = ByteStream;
+      v65 = 0;
+      v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+      v13 = 50;
+      if ( ByteStream != -2147467260 )
+        v13 = 10;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886210, 1197, v13) )
+      {
+        v61 = (struct IStream *)&v62;
+        v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v68 = (void ****)&v61;
+        p_plkbyt = &v62;
+        Mso::Logging::MsoSendStructuredTraceTag(
+          1886210,
+          1197,
+          v13,
+          0,
+          L"Failed: MsoHrGetMemoryByteStream(msoibsfUseFileWhenBig | msoibsfMemMarkSelf, &pibsDest)",
+          &v67);
+      }
+      goto LABEL_25;
+    }
+    ByteStream = ((__int64 (__fastcall *)(IStorage *, const wchar_t *, __int64))ppstgOpen->lpVtbl->CreateStream)(
+                   ppstgOpen,
+                   L"Package",
+                   18);
+    if ( ByteStream < 0 )
+    {
+      v63 = L"SH_ErrorCode";
+      v64 = ByteStream;
+      v65 = 0;
+      v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+      v26 = 50;
+      if ( ByteStream != -2147467260 )
+        v26 = 10;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886215, 1197, v26) )
+      {
+        v72 = &v62;
+        v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v68 = &v72;
+        p_plkbyt = (void ***)&plkbyt;
+        Mso::Logging::MsoSendStructuredTraceTag(
+          1886215,
+          1197,
+          v26,
+          0,
+          L"Failed: pistg->CreateStream(c_wzEmbeddedPkgStream, 0x00000002L | 0x00000000L | 0x00000010L, 0, 0, &pistmDest)",
+          &v67);
+      }
+      v27 = v71;
+      if ( !v71 )
+        goto LABEL_63;
+      goto LABEL_62;
+    }
+    ByteStream = MsoHrGetIBSFromIStream(v61, v40, &v71);
+    if ( ByteStream < 0 )
+      goto LABEL_120;
+    if ( !v60 )
+    {
+      CrashWithRecovery(0x1E3C3840u, 0);
+LABEL_120:
+      v63 = L"SH_ErrorCode";
+      v64 = ByteStream;
+      v65 = 0;
+      v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+      v41 = 50;
+      if ( ByteStream != -2147467260 )
+        v41 = 10;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886216, 1197, v41) )
+      {
+        v72 = &v62;
+        v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v68 = &v72;
+        p_plkbyt = (void ***)&plkbyt;
+        Mso::Logging::MsoSendStructuredTraceTag(
+          1886216,
+          1197,
+          v41,
+          0,
+          L"Failed: MsoHrGetIBSFromIStream(pistmDest.get(), msoibswfNone, &pibsDest)",
+          &v67);
+      }
+LABEL_124:
+      v27 = v71;
+      if ( !v71 )
+        goto LABEL_63;
+      v71 = 0;
+LABEL_62:
+      (*(void (__fastcall **)(struct IByteStream *))(*(_QWORD *)v27 + 16LL))(v27);
+LABEL_63:
+      v20 = v61;
+      if ( !v61 )
+        goto LABEL_25;
+      v61 = 0;
+LABEL_65:
+      ((void (__fastcall *)(struct IStream *))v20->lpVtbl->Release)(v20);
+LABEL_25:
+      v14 = v60;
+      if ( v60 )
+      {
+        v60 = 0;
+        (*(void (__fastcall **)(void *))(*(_QWORD *)v14 + 16LL))(v14);
+      }
+      goto LABEL_27;
+    }
+    v32 = -1;
+    ByteStream = (*(__int64 (__fastcall **)(void *, struct IByteStream *, _QWORD, _QWORD, __int64, void ****, __int64, _QWORD))(*(_QWORD *)v60 + 64LL))(
+                   v60,
+                   v71,
+                   0,
+                   0,
+                   -1,
+                   &v74,
+                   a6,
+                   0);
+    if ( ByteStream < 0 )
+    {
+      v63 = L"SH_ErrorCode";
+      v64 = ByteStream;
+      v65 = 0;
+      v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+      v52 = 50;
+      if ( ByteStream != -2147467260 )
+        v52 = 10;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886217, 1197, v52) )
+      {
+        v72 = &v62;
+        v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v68 = &v72;
+        p_plkbyt = (void ***)&plkbyt;
+        Mso::Logging::MsoSendStructuredTraceTag(
+          1886217,
+          1197,
+          v52,
+          0,
+          L"Failed: pibsSrc->CopyTo(pibsDest.get(), 0, 0, 0xffffffffffffffffui64, &cbCopied, pip)",
+          &v67);
+      }
+      goto LABEL_124;
+    }
+    v42 = v71;
+    if ( v71 )
+    {
+      v71 = 0;
+      (*(void (__fastcall **)(struct IByteStream *))(*(_QWORD *)v42 + 16LL))(v42);
+    }
+    v43 = v61;
+    if ( v61 )
+    {
+      v61 = 0;
+      ((void (__fastcall *)(struct IStream *))v43->lpVtbl->Release)(v43);
+    }
+    if ( qword_180FB07D0 )
+    {
+      LODWORD(v71) = 0;
+      if ( ((int (__fastcall *)(void ***, struct IByteStream **))(*a1)[24])(a1, &v71) >= 0 && !(_DWORD)v71 )
+      {
+        LODWORD(v61) = 0;
+        v44 = qi_cast_or_crash<Mso::OpenXml::IPartStorageInfo,Mso::OpenXml::IPart *,1>(&v72, &v66);
+        v45 = Mso::TCntPtr<Csi::IWopiContainerMetadata>::operator->(v44);
+        v46 = (*(unsigned int (__fastcall **)(__int64, struct IStream **))(*(_QWORD *)v45 + 40LL))(v45, &v61) >> 31;
+        v47 = v72;
+        if ( v72 )
+        {
+          v72 = 0;
+          ((void (__fastcall *)(void ***))(*v47)[2])(v47);
+        }
+        if ( !(_BYTE)v46 )
+        {
+          v48 = (IStorage **)((__int64 (__fastcall *)(void ****, void *, _QWORD, IStorage *))qword_180FB07D0)(
+                               &v66,
+                               v60,
+                               (unsigned int)v61,
+                               ppstgOpen);
+          v49 = *v48;
+          *v48 = 0;
+          v50 = ppstgOpen;
+          ppstgOpen = v49;
+          if ( v50 )
+            ((void (__fastcall *)(IStorage *))v50->lpVtbl->Release)(v50);
+          v33 = (struct IStream *)v66;
+          if ( v66 )
+          {
+            v66 = 0;
+            goto LABEL_87;
+          }
+        }
+      }
+    }
+    goto LABEL_88;
+  }
+  v61 = 0;
+  v12 = 65554;
+  if ( a2 != 49 )
+    v12 = 18;
+  if ( !v60 )
+  {
+    ByteStream = ((__int64 (__fastcall *)(void ***, _QWORD, void **))(*a1)[18])(a1, 0, &v60);
+    if ( ByteStream < 0 )
+    {
+      v63 = L"SH_ErrorCode";
+      v64 = ByteStream;
+      v65 = 0;
+      v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+      v19 = 50;
+      if ( ByteStream != -2147467260 )
+        v19 = 10;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886218, 1197, v19) )
+      {
+        v66 = &v62;
+        v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v68 = &v66;
+        p_plkbyt = &v67;
+        Mso::Logging::MsoSendStructuredTraceTag(
+          1886218,
+          1197,
+          v19,
+          0,
+          L"Failed: piprtObj->GetByteStream(ramReadOnly, &pibsSrc)",
+          &v67);
+      }
+      v20 = v61;
+      if ( !v61 )
+        goto LABEL_25;
+      goto LABEL_65;
+    }
+  }
+  ByteStream = MsoHrGetIBSFromILockBytes(plkbyt, (struct IByteStream **)&v61);
+  if ( ByteStream < 0 )
+  {
+    v63 = L"SH_ErrorCode";
+    v64 = ByteStream;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v25 = 50;
+    if ( ByteStream != -2147467260 )
+      v25 = 10;
+    if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886219, 1197, v25) )
+    {
+      v66 = &v62;
+      v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+      v68 = &v66;
+      p_plkbyt = &v67;
+      Mso::Logging::MsoSendStructuredTraceTag(
+        1886219,
+        1197,
+        v25,
+        0,
+        L"Failed: MsoHrGetIBSFromILockBytes(pilb.get(), &pibsDest)",
+        &v67);
+    }
+    goto LABEL_63;
+  }
+  if ( !v60 )
+  {
+    CrashWithRecovery(0x1E3C3840u, 0);
+    goto LABEL_17;
+  }
+  v32 = -1;
+  ByteStream = (*(__int64 (__fastcall **)(void *, struct IStream *, _QWORD, _QWORD, __int64, void ****, __int64, _QWORD))(*(_QWORD *)v60 + 64LL))(
+                 v60,
+                 v61,
+                 0,
+                 0,
+                 -1,
+                 &v74,
+                 a6,
+                 0);
+  if ( ByteStream < 0 )
+  {
+    v63 = L"SH_ErrorCode";
+    v64 = ByteStream;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v28 = 50;
+    if ( ByteStream != -2147467260 )
+      v28 = 10;
+    if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886220, 1197, v28) )
+    {
+      v66 = &v62;
+      v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+      v68 = &v66;
+      p_plkbyt = &v67;
+      Mso::Logging::MsoSendStructuredTraceTag(
+        1886220,
+        1197,
+        v28,
+        0,
+        L"Failed: pibsSrc->CopyTo(pibsDest.get(), 0, 0, 0xffffffffffffffffui64, &cbWritten, pip)",
+        &v67);
+    }
+    goto LABEL_63;
+  }
+  ByteStream = StgOpenStorageOnILockBytes(plkbyt, 0, v12, 0, 0, &ppstgOpen);
+  if ( ByteStream < 0 )
+  {
+    v63 = L"SH_ErrorCode";
+    v64 = ByteStream;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v53 = 50;
+    if ( ByteStream != -2147467260 )
+      v53 = 10;
+    if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886221, 1197, v53) )
+    {
+      v66 = &v62;
+      v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+      v68 = &v66;
+      p_plkbyt = &v67;
+      Mso::Logging::MsoSendStructuredTraceTag(
+        1886221,
+        1197,
+        v53,
+        0,
+        L"Failed: StgOpenStorageOnILockBytes(pilb.get(), nullptr, dwOpenFlags, 0, 0, &pistg)",
+        &v67);
+    }
+    goto LABEL_63;
+  }
+  v33 = v61;
+  if ( v61 )
+  {
+    v61 = 0;
+LABEL_87:
+    ((void (__fastcall *)(struct IStream *))v33->lpVtbl->Release)(v33);
+  }
+LABEL_88:
+  v34 = v60;
+  if ( v60 )
+  {
+    v60 = 0;
+    (*(void (__fastcall **)(void *))(*(_QWORD *)v34 + 16LL))(v34);
+  }
+  Rgwch = Mso::Strings::RgwchCchMap<enum MetroContentType,Mso::StringAscii>::TryGetRgwch(
+            g_phtMetroContentTypes,
+            v82,
+            (unsigned int)(v76 - 1));
+  if ( Rgwch )
+    v32 = *(_DWORD *)(Rgwch + 16);
+  if ( v32 != 22 )
+  {
+    if ( v32 == 23 )
+    {
+      if ( a2 == 45 )
+        goto LABEL_94;
+      ByteStream = -2134142960;
+      v77 = &Mso::Logging::StructuredObject<char const *,1>::`vftable';
+      v78 = L"Message";
+      v79 = "An embedded object must not have the embeddedPackage content type.";
+      v80 = 0;
+      v63 = L"SH_ErrorCode";
+      v64 = -2134142960;
+      v65 = 0;
+      v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+      v21 = 1886223;
+      if ( !(unsigned __int8)Mso::Logging::MsoShouldTrace(1886223, 1197, 10) )
+        goto LABEL_27;
+      v74 = &v62;
+      v75 = &v77;
+      v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+      v68 = &v74;
+      p_plkbyt = (void ***)&v76;
+      v22 = L"False: partTypeObj == metroPartTypeMetroDocument";
+      goto LABEL_51;
+    }
+    if ( !(unsigned __int8)MetroFPartTypeIs(a2, 16) )
+      goto LABEL_94;
+    v37 = 47;
+    if ( a2 != 46 )
+      v37 = a2;
+    a2 = v37;
+    ByteStream = sub_1804C5F34((int)a1, v37, (int)v82, v76 - 1, ppstgOpen);
+    if ( ByteStream >= 0 )
+      goto LABEL_94;
+    v63 = L"SH_ErrorCode";
+    v64 = ByteStream;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v29 = 50;
+    if ( ByteStream != -2147467260 )
+      v29 = 10;
+    v30 = 1886224;
+    if ( !(unsigned __int8)Mso::Logging::MsoShouldTrace(1886224, 1197, v29) )
+      goto LABEL_27;
+    v66 = &v62;
+    v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+    v68 = &v66;
+    p_plkbyt = &v67;
+    v22 = L"Failed: HrFindRealCLSID(piprtObj, partTypeObj, wzPartCT, cchPartCT - 1, pistg.get())";
+LABEL_78:
+    v23 = v29;
+    v24 = v30;
+    goto LABEL_52;
+  }
+  if ( a2 == 45 )
+  {
+    ByteStream = -2134142960;
+    v77 = &Mso::Logging::StructuredObject<char const *,1>::`vftable';
+    v78 = L"Message";
+    v79 = "An embedded package must not have the embeddedObject content type.";
+    v80 = 0;
+    v63 = L"SH_ErrorCode";
+    v64 = -2134142960;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v21 = 1886222;
+    if ( !(unsigned __int8)Mso::Logging::MsoShouldTrace(1886222, 1197, 10) )
+      goto LABEL_27;
+    v74 = &v62;
+    v75 = &v77;
+    v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+    v68 = &v74;
+    p_plkbyt = (void ***)&v76;
+    v22 = L"False: partTypeObj != metroPartTypeMetroDocument";
+LABEL_51:
+    v23 = 10;
+    v24 = v21;
+LABEL_52:
+    Mso::Logging::MsoSendStructuredTraceTag(v24, 1197, v23, 0, v22, &v67);
+    goto LABEL_27;
+  }
+LABEL_94:
+  if ( (unsigned __int8)MetroFPartTypeIs(a2, 16) )
+    goto LABEL_97;
+  while ( !ppstgOpen )
+  {
+    CrashWithRecovery(0x1E3C3840u, 0);
+LABEL_97:
+    if ( a2 == 47 )
+    {
+      v36 = 1;
+    }
+    else
+    {
+      v36 = 0;
+      if ( a2 == 45 )
+        v36 = 2;
+    }
+    ByteStream = sub_18017B048(ppstgOpen, v36, v81);
+    if ( ByteStream < 0 )
+    {
+      v63 = L"SH_ErrorCode";
+      v64 = ByteStream;
+      v65 = 0;
+      v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+      v29 = 50;
+      if ( ByteStream != -2147467260 )
+        v29 = 10;
+      v30 = 1886225;
+      if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886225, 1197, v29) )
+      {
+        v66 = &v62;
+        v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+        v68 = &v66;
+        p_plkbyt = &v67;
+        v22 = L"Failed: HrValidateStorage(pistg.get(), sf, pip)";
+        goto LABEL_78;
+      }
+      goto LABEL_27;
+    }
+  }
+  ByteStream = ((__int64 (__fastcall *)(IStorage *, _QWORD))ppstgOpen->lpVtbl->Commit)(ppstgOpen, 0);
+  if ( ByteStream < 0 )
+  {
+    v63 = L"SH_ErrorCode";
+    v64 = ByteStream;
+    v65 = 0;
+    v62 = &Mso::Resources::StructuredPathOrigin::`vftable';
+    v29 = 50;
+    if ( ByteStream != -2147467260 )
+      v29 = 10;
+    v30 = 1886226;
+    if ( (unsigned __int8)Mso::Logging::MsoShouldTrace(1886226, 1197, v29) )
+    {
+      v66 = &v62;
+      v67 = &Mso::Logging::CompositeStructuredTrace::`vftable';
+      v68 = &v66;
+      p_plkbyt = &v67;
+      v22 = L"Failed: pistg->Commit(STGC_DEFAULT)";
+      goto LABEL_78;
+    }
+  }
+  else
+  {
+    v38 = ppstgOpen;
+    ppstgOpen = 0;
+    *a5 = v38;
+    if ( a4 )
+    {
+      v39 = plkbyt;
+      plkbyt = 0;
+      *a4 = v39;
+    }
+  }
+LABEL_27:
+  if ( FMmcfErrorCorruption(ByteStream) && a1 )
+  {
+    v61 = 0;
+    if ( ((int (__fastcall *)(void ***, struct IStream **))(*a1)[22])(a1, &v61) >= 0 )
+    {
+      v54 = 0;
+      v60 = 0;
+      if ( v61 )
+      {
+        v55 = (int (__fastcall ***)(_QWORD, GUID *, void **))Mso::TCntPtr<Csi::IWopiContainerMetadata>::operator->(&v61);
+        v56 = **v55;
+        if ( v60 )
+          Mso::UnknownObject<CPackageBase,Mso::OpenXml::IPreservePackage,Mso::QueryCastDerived<CPreservePackage>>::Release();
+        if ( v56(v55, &GUID_82fbb1c3_5a52_4461_b0ff_b0d85db52ab2, &v60) >= 0 )
+        {
+          v57 = Mso::TCntPtr<Csi::IWopiContainerMetadata>::operator->(&v60);
+          v58 = *(_DWORD *)(v57 + 72);
+          if ( (v58 & 0x1800) == 0 )
+            *(_DWORD *)(v57 + 72) = v58 | 1;
+        }
+        v54 = v60;
+      }
+      if ( v54 )
+      {
+        v60 = 0;
+        Mso::UnknownObject<CPackageBase,Mso::OpenXml::IPreservePackage,Mso::QueryCastDerived<CPreservePackage>>::Release();
+      }
+    }
+    v59 = v61;
+    if ( v61 )
+    {
+      v61 = 0;
+      ((void (__fastcall *)(struct IStream *))v59->lpVtbl->Release)(v59);
+    }
+  }
+  v15 = ppstgOpen;
+  if ( ppstgOpen )
+  {
+    ppstgOpen = 0;
+    ((void (__fastcall *)(IStorage *))v15->lpVtbl->Release)(v15);
+  }
+  v16 = plkbyt;
+  if ( plkbyt )
+  {
+    plkbyt = 0;
+    ((void (__fastcall *)(ILockBytes *))v16->lpVtbl->Release)(v16);
+  }
+  return (unsigned int)ByteStream;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180179cd0  mov     [rsp-8+arg_10], rbx
+0x180179cd5  push    rbp
+0x180179cd6  push    rsi
+0x180179cd7  push    rdi
+0x180179cd8  push    r12
+0x180179cda  push    r13
+0x180179cdc  push    r14
+0x180179cde  push    r15
+0x180179ce0  lea     rbp, [rsp-1060h]
+0x180179ce8  mov     eax, 1160h
+0x180179ced  call    _alloca_probe
+0x180179cf2  sub     rsp, rax
+0x180179cf5  mov     rax, cs:__security_cookie
+0x180179cfc  xor     rax, rsp
+0x180179cff  mov     [rbp+1090h+var_40], rax
+0x180179d06  mov     r15, r9
+0x180179d09  mov     rsi, r8
+0x180179d0c  mov     ebx, edx
+0x180179d0e  mov     r12, rcx
+0x180179d11  mov     [rsp+1190h+var_1118], rcx
+0x180179d16  mov     r13, [rbp+1090h+arg_20]
+0x180179d1d  mov     r14, [rbp+1090h+arg_28]
+0x180179d24  mov     [rbp+1090h+var_10A0], r14
+0x180179d28  xor     eax, eax
+0x180179d2a  mov     [rbp+1090h+plkbyt], rax
+0x180179d2e  mov     [rbp+1090h+ppstgOpen], rax
+0x180179d32  test    r13, r13
+0x180179d35  jz      loc_18017A158
+0x180179d3b  mov     [r13+0], rax
+0x180179d3f  test    rcx, rcx
+0x180179d42  jz      loc_18017A211
+0x180179d48  test    r9, r9
+0x180179d4b  jnz     loc_18017AC58
+0x180179d51  mov     [rsp+1190h+var_1140], rax
+0x180179d56  lea     r8, [rsp+1190h+var_1140]
+0x180179d5b  xor     edx, edx
+0x180179d5d  lea     ecx, [rdx+18h]
+0x180179d60  call    cs:__imp_?MsoHrGetByteStream@@YAJKPEAUIByteStreamUser@@PEAPEAUIByteStream@@@Z; MsoHrGetByteStream(ulong,IByteStreamUser *,IByteStream * *)
+0x180179d66  mov     edi, eax
+0x180179d68  test    eax, eax
+0x180179d6a  js      loc_180179E90
+0x180179d70  lea     r8, [rbp+1090h+plkbyt]
+0x180179d74  xor     edx, edx
+0x180179d76  mov     rcx, [rsp+1190h+var_1140]
+0x180179d7b  call    cs:__imp_?MsoHrGetILockBytesFromIBS@@YAJPEAUIByteStream@@PEAUIMetroProgress@@PEAPEAUILockBytes@@@Z; MsoHrGetILockBytesFromIBS(IByteStream *,IMetroProgress *,ILockBytes * *)
+0x180179d81  mov     edi, eax
+0x180179d83  xor     eax, eax
+0x180179d85  test    edi, edi
+0x180179d87  js      loc_18017AC60
+0x180179d8d  mov     rcx, [rsp+1190h+var_1140]
+0x180179d92  test    rcx, rcx
+0x180179d95  jz      short loc_180179DA9
+0x180179d97  mov     [rsp+1190h+var_1140], rax
+0x180179d9c  mov     rax, [rcx]
+0x180179d9f  mov     rax, [rax+10h]
+0x180179da3  call    cs:__guard_dispatch_icall_fptr
+0x180179da9  mov     [rbp+1090h+var_10C8], 824h
+0x180179db0  mov     rax, [r12]
+0x180179db4  lea     r8, [rbp+1090h+var_10C8]
+0x180179db8  lea     rdx, [rbp+1090h+var_1090]
+0x180179dbc  mov     rcx, r12
+0x180179dbf  mov     rax, [rax+98h]
+0x180179dc6  call    cs:__guard_dispatch_icall_fptr
+0x180179dcc  mov     edi, eax
+0x180179dce  test    eax, eax
+0x180179dd0  js      loc_18017A5B2
+0x180179dd6  mov     [rsp+1190h+var_1140], rsi
+0x180179ddb  lea     rcx, [rsp+1190h+var_1140]; void **
+0x180179de0  call    ??$CheckedAddRefOnNewlyAssignedPtr@UICancelToken@HttpClient@@@?$TCntPtrAddRefStrategyImpl@$0A@@Details@Mso@@SAXPEAPEAUICancelToken@HttpClient@@@Z; Mso::Details::TCntPtrAddRefStrategyImpl<0>::CheckedAddRefOnNewlyAssignedPtr<HttpClient::ICancelToken>(HttpClient::ICancelToken * *)
+0x180179de5  cmp     ebx, 2Dh ; '-'
+0x180179de8  jz      short loc_180179E3F
+0x180179dea  xor     eax, eax
+0x180179dec  mov     [rsp+1190h+var_1138], rax
+0x180179df1  mov     esi, 10012h
+0x180179df6  lea     edx, [rax+12h]
+0x180179df9  cmp     ebx, 31h ; '1'
+0x180179dfc  cmovnz  esi, edx
+0x180179dff  cmp     [rsp+1190h+var_1140], rax
+0x180179e04  jz      loc_18017A07D
+0x180179e0a  lea     rdx, [rsp+1190h+var_1138]
+0x180179e0f  mov     rcx, [rbp+1090h+plkbyt]
+0x180179e13  call    cs:__imp_?MsoHrGetIBSFromILockBytes@@YAJPEAUILockBytes@@PEAPEAUIByteStream@@@Z; MsoHrGetIBSFromILockBytes(ILockBytes *,IByteStream * *)
+0x180179e19  mov     edi, eax
+0x180179e1b  xor     edx, edx
+0x180179e1d  test    eax, eax
+0x180179e1f  js      loc_18017A398
+0x180179e25  mov     rcx, [rsp+1190h+var_1140]
+0x180179e2a  test    rcx, rcx
+0x180179e2d  jnz     loc_18017A77C
+0x180179e33  mov     ecx, 1E3C3840h
+0x180179e38  call    cs:__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z; CrashWithRecovery(uint,CrashContext *)
+0x180179e3e  nop
+0x180179e3f  xor     esi, esi
+0x180179e41  cmp     [rsp+1190h+var_1140], rsi
+0x180179e46  jz      loc_180179FC1
+0x180179e4c  lea     r9, [rbp+1090h+ppstgOpen]; ppstgOpen
+0x180179e50  xor     r8d, r8d; reserved
+0x180179e53  mov     edx, 1012h; grfMode
+0x180179e58  mov     rcx, [rbp+1090h+plkbyt]; plkbyt
+0x180179e5c  call    cs:__imp_StgCreateDocfileOnILockBytes
+0x180179e62  mov     edi, eax
+0x180179e64  test    eax, eax
+0x180179e66  js      loc_18017A6E5
+0x180179e6c  mov     [rsp+1190h+var_1138], rsi
+0x180179e71  mov     [rbp+1090h+var_10F0], rsi
+0x180179e75  mov     rcx, [rbp+1090h+ppstgOpen]
+0x180179e79  test    rcx, rcx
+0x180179e7c  jnz     loc_18017A9DD
+0x180179e82  xor     edx, edx
+0x180179e84  mov     ecx, 1E3C3840h
+0x180179e89  call    cs:__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z; CrashWithRecovery(uint,CrashContext *)
+0x180179e8f  nop
+0x180179e90  lea     rax, aShErrorcode_0; "SH_ErrorCode"
+0x180179e97  mov     [rsp+1190h+var_1128], rax
+0x180179e9c  mov     [rsp+1190h+var_1120], edi
+0x180179ea0  xor     r13d, r13d
+0x180179ea3  mov     [rsp+1190h+var_111C], r13w
+0x180179ea9  lea     rax, ??_7StructuredPathOrigin@Resources@Mso@@6B@; const Mso::Resources::StructuredPathOrigin::`vftable'
+0x180179eb0  mov     [rsp+1190h+var_1130], rax
+0x180179eb5  lea     ebx, [r13+32h]
+0x180179eb9  lea     r14d, [r13+0Ah]
+0x180179ebd  cmp     edi, 80004004h
+0x180179ec3  cmovnz  ebx, r14d
+0x180179ec7  xor     r9d, r9d
+0x180179eca  mov     r8d, ebx
+0x180179ecd  mov     esi, 4ADh
+0x180179ed2  mov     edx, esi
+0x180179ed4  mov     r14d, 1CC802h
+0x180179eda  mov     ecx, r14d
+0x180179edd  call    cs:__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z; Mso::Logging::MsoShouldTrace(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories)
+0x180179ee3  test    al, al
+0x180179ee5  jz      short loc_180179F34
+0x180179ee7  lea     rax, [rsp+1190h+var_1130]
+0x180179eec  mov     [rsp+1190h+var_1138], rax
+0x180179ef1  lea     rax, ??_7CompositeStructuredTrace@Logging@Mso@@6B@; const Mso::Logging::CompositeStructuredTrace::`vftable'
+0x180179ef8  mov     [rbp+1090h+var_1110], rax
+0x180179efc  lea     rax, [rsp+1190h+var_1138]
+0x180179f01  mov     [rbp+1090h+var_1108], rax
+0x180179f05  lea     rax, [rsp+1190h+var_1130]
+0x180179f0a  mov     [rbp+1090h+var_1100], rax
+0x180179f0e  lea     rax, [rbp+1090h+var_1110]
+0x180179f12  mov     [rsp+1190h+var_1168], rax
+0x180179f17  lea     rax, aFailedMsohrget_11; "Failed: MsoHrGetMemoryByteStream(msoibs"...
+0x180179f1e  xor     r9d, r9d
+0x180179f21  mov     qword ptr [rsp+1190h+reserved], rax
+0x180179f26  mov     r8d, ebx
+0x180179f29  mov     edx, esi
+0x180179f2b  mov     ecx, r14d
+0x180179f2e  call    cs:__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z; Mso::Logging::MsoSendStructuredTraceTag(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories,wchar_t const *,Mso::Logging::IStructuredTrace const &)
+0x180179f34  mov     rcx, [rsp+1190h+var_1140]
+0x180179f39  test    rcx, rcx
+0x180179f3c  jz      short loc_180179F50
+0x180179f3e  mov     [rsp+1190h+var_1140], r13
+0x180179f43  mov     rax, [rcx]
+0x180179f46  mov     rax, [rax+10h]
+0x180179f4a  call    cs:__guard_dispatch_icall_fptr
+0x180179f50  mov     ecx, edi; int
+0x180179f52  call    ?FMmcfErrorCorruption@@YA_NJ@Z; FMmcfErrorCorruption(long)
+0x180179f57  test    al, al
+0x180179f59  jnz     loc_18017AF79
+0x180179f5f  mov     rcx, [rbp+1090h+ppstgOpen]
+0x180179f63  test    rcx, rcx
+0x180179f66  jz      short loc_180179F79
+0x180179f68  mov     [rbp+1090h+ppstgOpen], r13
+0x180179f6c  mov     rax, [rcx]
+0x180179f6f  mov     rax, [rax+10h]
+0x180179f73  call    cs:__guard_dispatch_icall_fptr
+0x180179f79  mov     rcx, [rbp+1090h+plkbyt]
+0x180179f7d  test    rcx, rcx
+0x180179f80  jnz     short loc_180179FAE
+0x180179f82  mov     eax, edi
+0x180179f84  mov     rcx, [rbp+1090h+var_40]
+0x180179f8b  xor     rcx, rsp; StackCookie
+0x180179f8e  call    __security_check_cookie
+0x180179f93  mov     rbx, [rsp+1190h+arg_10]
+0x180179f9b  add     rsp, 1160h
+0x180179fa2  pop     r15
+0x180179fa4  pop     r14
+0x180179fa6  pop     r13
+0x180179fa8  pop     r12
+0x180179faa  pop     rdi
+0x180179fab  pop     rsi
+0x180179fac  pop     rbp
+0x180179fad  retn
+0x180179fae  mov     [rbp+1090h+plkbyt], r13
+0x180179fb2  mov     rax, [rcx]
+0x180179fb5  mov     rax, [rax+10h]
+0x180179fb9  call    cs:__guard_dispatch_icall_fptr
+0x180179fbf  jmp     short loc_180179F82
+0x180179fc1  mov     rax, [r12]
+0x180179fc5  lea     r8, [rsp+1190h+var_1140]
+0x180179fca  xor     edx, edx
+0x180179fcc  mov     rcx, r12
+0x180179fcf  mov     rax, [rax+90h]
+0x180179fd6  call    cs:__guard_dispatch_icall_fptr
+0x180179fdc  mov     edi, eax
+0x180179fde  test    eax, eax
+0x180179fe0  jns     loc_180179E4C
+0x180179fe6  lea     rax, aShErrorcode_0; "SH_ErrorCode"
+0x180179fed  mov     [rsp+1190h+var_1128], rax
+0x180179ff2  mov     [rsp+1190h+var_1120], edi
+0x180179ff6  xor     r13d, r13d
+0x180179ff9  mov     [rsp+1190h+var_111C], r13w
+0x180179fff  lea     rax, ??_7StructuredPathOrigin@Resources@Mso@@6B@; const Mso::Resources::StructuredPathOrigin::`vftable'
+0x18017a006  mov     [rsp+1190h+var_1130], rax
+0x18017a00b  lea     ebx, [r13+32h]
+0x18017a00f  lea     r14d, [r13+0Ah]
+0x18017a013  cmp     edi, 80004004h
+0x18017a019  cmovnz  ebx, r14d
+0x18017a01d  xor     r9d, r9d
+0x18017a020  mov     r8d, ebx
+0x18017a023  mov     esi, 4ADh
+0x18017a028  mov     edx, esi
+0x18017a02a  mov     r14d, 1CC805h
+0x18017a030  mov     ecx, r14d
+0x18017a033  call    cs:__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z; Mso::Logging::MsoShouldTrace(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories)
+0x18017a039  test    al, al
+0x18017a03b  jz      loc_180179F34
+0x18017a041  lea     rax, [rsp+1190h+var_1130]
+0x18017a046  mov     [rsp+1190h+var_1138], rax
+0x18017a04b  lea     rax, ??_7CompositeStructuredTrace@Logging@Mso@@6B@; const Mso::Logging::CompositeStructuredTrace::`vftable'
+0x18017a052  mov     [rbp+1090h+var_1110], rax
+0x18017a056  lea     rax, [rsp+1190h+var_1138]
+0x18017a05b  mov     [rbp+1090h+var_1108], rax
+0x18017a05f  lea     rax, [rsp+1190h+var_1130]
+0x18017a064  mov     [rbp+1090h+var_1100], rax
+0x18017a068  lea     rax, [rbp+1090h+var_1110]
+0x18017a06c  mov     [rsp+1190h+var_1168], rax
+0x18017a071  lea     rax, aFailedPiprtobj_1; "Failed: piprtObj->GetByteStream(ramRead"...
+0x18017a078  jmp     loc_180179F1E
+0x18017a07d  mov     rax, [r12]
+0x18017a081  lea     r8, [rsp+1190h+var_1140]
+0x18017a086  xor     edx, edx
+0x18017a088  mov     rcx, r12
+0x18017a08b  mov     rax, [rax+90h]
+0x18017a092  call    cs:__guard_dispatch_icall_fptr
+0x18017a098  mov     edi, eax
+0x18017a09a  test    eax, eax
+0x18017a09c  jns     loc_180179E0A
+0x18017a0a2  lea     rax, aShErrorcode_0; "SH_ErrorCode"
+0x18017a0a9  mov     [rsp+1190h+var_1128], rax
+0x18017a0ae  mov     [rsp+1190h+var_1120], edi
+0x18017a0b2  xor     r13d, r13d
+0x18017a0b5  mov     [rsp+1190h+var_111C], r13w
+0x18017a0bb  lea     rax, ??_7StructuredPathOrigin@Resources@Mso@@6B@; const Mso::Resources::StructuredPathOrigin::`vftable'
+0x18017a0c2  mov     [rsp+1190h+var_1130], rax
+0x18017a0c7  lea     ebx, [r13+32h]
+0x18017a0cb  lea     r14d, [r13+0Ah]
+0x18017a0cf  cmp     edi, 80004004h
+0x18017a0d5  cmovnz  ebx, r14d
+0x18017a0d9  xor     r9d, r9d
+0x18017a0dc  mov     r8d, ebx
+0x18017a0df  mov     esi, 4ADh
+0x18017a0e4  mov     edx, esi
+0x18017a0e6  mov     r14d, 1CC80Ah
+0x18017a0ec  mov     ecx, r14d
+0x18017a0ef  call    cs:__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z; Mso::Logging::MsoShouldTrace(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories)
+0x18017a0f5  test    al, al
+0x18017a0f7  jz      short loc_18017A145
+0x18017a0f9  lea     rax, [rsp+1190h+var_1130]
+0x18017a0fe  mov     [rsp+1190h+var_1118], rax
+0x18017a103  lea     rax, ??_7CompositeStructuredTrace@Logging@Mso@@6B@; const Mso::Logging::CompositeStructuredTrace::`vftable'
+0x18017a10a  mov     [rbp+1090h+var_1110], rax
+0x18017a10e  lea     rax, [rsp+1190h+var_1118]
+0x18017a113  mov     [rbp+1090h+var_1108], rax
+0x18017a117  lea     rax, [rbp+1090h+var_1110]
+0x18017a11b  mov     [rbp+1090h+var_1100], rax
+0x18017a11f  xor     r9d, r9d
+0x18017a122  lea     rax, [rbp+1090h+var_1110]
+0x18017a126  mov     [rsp+1190h+var_1168], rax
+0x18017a12b  lea     rax, aFailedPiprtobj_1; "Failed: piprtObj->GetByteStream(ramRead"...
+0x18017a132  mov     qword ptr [rsp+1190h+reserved], rax
+0x18017a137  mov     r8d, ebx
+0x18017a13a  mov     edx, esi
+0x18017a13c  mov     ecx, r14d
+0x18017a13f  call    cs:__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z; Mso::Logging::MsoSendStructuredTraceTag(ulong,Mso::Logging::Category,Mso::Logging::Severity,Mso::Logging::DataCategories,wchar_t const *,Mso::Logging::IStructuredTrace const &)
+0x18017a145  mov     rcx, [rsp+1190h+var_1138]
+0x18017a14a  test    rcx, rcx
+0x18017a14d  jz      loc_180179F34
+0x18017a153  jmp     loc_18017A4F8
+0x18017a158  mov     ecx, 80004003h
+0x18017a15d  mov     edi, ecx
+0x18017a15f  lea     rax, ??_7?$StructuredObject@PEBD$00@Logging@Mso@@6B@; const Mso::Logging::StructuredObject<char const *,1>::`vftable'
+0x18017a166  mov     [rbp+1090h+var_10C0], rax
+0x18017a16a  lea     rax, aMessage_0; "Message"
+0x18017a171  mov     [rbp+1090h+var_10B8], rax
+0x18017a175  lea     rax, aNullPointer; "Null pointer: "
+0x18017a17c  mov     [rbp+1090h+var_10B0], rax
+0x18017a180  xor     r13d, r13d
+0x18017a183  mov     [rbp+1090h+var_10A8], r13w
+0x18017a188  lea     rax, aShErrorcode_0; "SH_ErrorCode"
+0x18017a18f  mov     [rsp+1190h+var_1128], rax
+0x18017a194  mov     [rsp+1190h+var_1120], ecx
+0x18017a198  mov     [rsp+1190h+var_111C], r13w
+0x18017a19e  lea     rax, ??_7StructuredPathOrigin@Resources@Mso@@6B@; const Mso::Resources::StructuredPathOrigin::`vftable'
+0x18017a1a5  mov     [rsp+1190h+var_1130], rax
+0x18017a1aa  xor     r9d, r9d
+0x18017a1ad  lea     r14d, [r13+0Ah]
+0x18017a1b1  mov     r8d, r14d
+0x18017a1b4  mov     esi, 4ADh
+  ... truncated ...
+```

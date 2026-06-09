@@ -1,0 +1,83 @@
+# HrCopyPackageBaseToIBS(CPackageBase &,IByteStream &,bool,IMetroProgress *)
+
+- ea: `0x180225f24`
+- end: `0x180226839`
+- name: `?HrCopyPackageBaseToIBS@@YAJAEAVCPackageBase@@AEAUIByteStream@@_NPEAUIMetroProgress@@@Z`
+- size: `2325`
+- prototype: `__int64 __fastcall(struct CPackageBase *this, struct IByteStream *, bool, struct IMetroProgress *)`
+- caller_count: `1`
+- callee_count: `13`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x18060a080`
+
+## callees
+
+- `0x18003652c`
+- `0x1800fd4f8`
+- `0x1801082c4`
+- `0x18010a3f4`
+- `0x18012c6b0`
+- `0x1801907f4`
+- `0x180192560`
+- `0x180225e30`
+- `0x180225f24`
+- `0x18022683c`
+- `0x1802270e4`
+- `0x18058db10`
+- `0x180769ea4`
+
+## import_xrefs
+
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18022601b`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x180226054`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18022672b`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x180226741`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18022601b`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x180226054`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18022672b`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x180226741`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802260cb`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802261a7`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x180226253`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802262fb`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x180226452`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18022654a`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802265fb`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802266c8`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802260cb`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802261a7`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x180226253`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802262fb`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x180226452`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x18022654a`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802265fb`
+- `Mso20Win32Client!__imp_?MsoShouldTrace@Logging@Mso@@YA_NKW4Category@12@W4Severity@12@W4DataCategories@12@@Z` at `0x1802266c8`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180226403`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1802264a3`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180226655`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180226832`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180226403`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1802264a3`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180226655`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x180226832`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x180226120`
+- `Mso20Win32Client!__imp_?MsoSendStructuredTraceTag@Logging@Mso@@YAXKW4Category@12@W4Severity@12@W4DataCategories@12@PEB_WAEBUIStructuredTrace@12@@Z` at `0x180226120`
+- `Mso20Win32Client!__imp_??0CProgressHelper@@QEAA@PEAUIMetroProgress@@@Z` at `0x180225f4d`
+- `Mso20Win32Client!__imp_??0CProgressHelper@@QEAA@PEAUIMetroProgress@@@Z` at `0x180225f4d`
+
+## string_xrefs
+
+- `0x1802261e5`: `Failed: CPackage::Create(mopp, pcpkgSrc->FRecoveryMode(true) ? pomRepaired : pomNormal, pipkgDest, nullptr)`
+- `0x180226588`: `Failed: Mso::ComUtil::HrQueryFrom(popkgDest, pipkgDest)`
+- `0x180226291`: `Failed: HrCopyRels(*pcpkgSrc, *pipkgDest, &cph)`
+- `0x180226639`: `Failed: popkgDest->HrOnCopyPkg(popkgSrc.get())`
+- `0x180226702`: `Failed: pipkgDest->Flush(flmCompact, cph.GetChildProgress())`
+
+## pseudocode
+
+```c
+
+```
