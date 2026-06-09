@@ -1,0 +1,184 @@
+# Osf::EwsLastUpdate::onResponseReceived(Mso::Http::IRequest &,ISequentialStream *)
+
+- ea: `0x140fae6e0`
+- end: `0x140fb02b3`
+- name: `?onResponseReceived@EwsLastUpdate@Osf@@UEAAXAEAVIRequest@Http@Mso@@PEAUISequentialStream@@@Z`
+- size: `7123`
+- prototype: `void __fastcall(Osf::EwsLastUpdate *__hidden this, struct IRequest *, struct ISequentialStream *)`
+- caller_count: `0`
+- callee_count: `44`
+- tags: `registry_config, installer_update`
+
+## callees
+
+- `0x14004e2b0`
+- `0x1400548a0`
+- `0x140054a50`
+- `0x140054b40`
+- `0x140075f40`
+- `0x140076020`
+- `0x140078720`
+- `0x14007e4a0`
+- `0x14007f1a0`
+- `0x14007f280`
+- `0x1400a23c0`
+- `0x1400d2440`
+- `0x1400d5520`
+- `0x1400d6840`
+- `0x14018e9f0`
+- `0x1401f66d0`
+- `0x1402fd330`
+- `0x14044f068`
+- `0x1404d8500`
+- `0x1404d856c`
+- `0x1404d85c0`
+- `0x1404daf80`
+- `0x1408cc550`
+- `0x1408cfed0`
+- `0x140d1d840`
+- `0x140dcb350`
+- `0x140dceebc`
+- `0x140fae6e0`
+- `0x1410a6f40`
+- `0x1410b0b28`
+- `0x1410c62b0`
+- `0x141120240`
+- `0x1411a9300`
+- `0x1411e1b80`
+- `0x1411f3c50`
+- `0x1412195f0`
+- `0x1412d6a70`
+- `0x1412e2810`
+- `0x1413265a0`
+- `0x141348dd0`
+- `0x141351c10`
+- `0x141369200`
+- `0x141383480`
+- `0x1435a6b80`
+
+## import_xrefs
+
+- `KERNEL32!EnterCriticalSection` at `0x140fae959`
+- `KERNEL32!EnterCriticalSection` at `0x140fb00a6`
+- `KERNEL32!EnterCriticalSection` at `0x140fae959`
+- `KERNEL32!EnterCriticalSection` at `0x140fb00a6`
+- `KERNEL32!LeaveCriticalSection` at `0x140fae9c0`
+- `KERNEL32!LeaveCriticalSection` at `0x140fb00d7`
+- `KERNEL32!LeaveCriticalSection` at `0x140fae9c0`
+- `KERNEL32!LeaveCriticalSection` at `0x140fb00d7`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faee6d`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf060`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf0c7`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf200`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf270`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf2c7`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf32c`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf520`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faee6d`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf060`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf0c7`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf200`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf270`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf2c7`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf32c`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140faf520`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf055`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf0c0`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf1f5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf269`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf2c0`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf325`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf480`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf055`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf0c0`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf1f5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf269`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf2c0`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf325`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140faf480`
+- `Mso30Win32Client!__imp_?GetAuthSchemeFromIRequest@CCredHelperUtils@@YA?AW4AUTHSCHEME@@PEB_WAEAVIRequest@Http@Mso@@@Z` at `0x140faecb5`
+- `Mso30Win32Client!__imp_?GetAuthSchemeFromIRequest@CCredHelperUtils@@YA?AW4AUTHSCHEME@@PEB_WAEAVIRequest@Http@Mso@@@Z` at `0x140faecb5`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140fb02a0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140fb02a0`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x140fae997`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x140faec60`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x140fae997`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x140faec60`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafac9`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafb0c`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafb32`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafb6f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafbac`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafbea`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafc2a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafc6a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafcaa`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafcea`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafd2a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafd6a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafd92`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafdb4`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafdef`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafe2a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafe52`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafe77`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafecf`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafef4`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140faff2f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140faff52`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140faffa9`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafac9`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafb0c`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafb32`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafb6f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafbac`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafbea`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafc2a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafc6a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafcaa`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafcea`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafd2a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafd6a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafd92`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafdb4`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafdef`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafe2a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafe52`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafe77`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafecf`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140fafef4`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140faff2f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140faff52`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x140faffa9`
+- `Mso20Win32Client!__imp_?MsoOrapiDeleteFromCache@@YAXPEBU_msoreg@@@Z` at `0x140faf132`
+- `Mso20Win32Client!__imp_?MsoOrapiDeleteFromCache@@YAXPEBU_msoreg@@@Z` at `0x140faf132`
+- `Mso20Win32Client!__imp_?Detach@Activity@Telemetry@Mso@@QEAA?AV?$TCntPtr@UIDetachedActivity@Telemetry@Mso@@@3@XZ` at `0x140faef91`
+- `Mso20Win32Client!__imp_?Detach@Activity@Telemetry@Mso@@QEAA?AV?$TCntPtr@UIDetachedActivity@Telemetry@Mso@@@3@XZ` at `0x140faf620`
+- `Mso20Win32Client!__imp_?Detach@Activity@Telemetry@Mso@@QEAA?AV?$TCntPtr@UIDetachedActivity@Telemetry@Mso@@@3@XZ` at `0x140faef91`
+- `Mso20Win32Client!__imp_?Detach@Activity@Telemetry@Mso@@QEAA?AV?$TCntPtr@UIDetachedActivity@Telemetry@Mso@@@3@XZ` at `0x140faf620`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140faf14d`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140faf168`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140faf18b`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140faf1a6`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140faf14d`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140faf168`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140faf18b`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140faf1a6`
+
+## string_xrefs
+
+- `0x140fafaf8`: `End_TokenIsValid`
+- `0x140faed89`: `MailboxExternalDirectoryObjectIdNotFound`
+- `0x140faf4f3`: `MailboxExternalDirectoryObjectIdNotFound`
+- `0x140faeed1`: `GetLastUpdate.`
+- `0x140faf591`: `GetLastUpdate.`
+- `0x140faf7e8`: `wstrLastUpdateValue_length`
+- `0x140fafddb`: `LastUpdateValueRetrieved`
+- `0x140faf778`: `ParseDataForLastUpdateValue`
+- `0x140fafe16`: `LastUpdateValueRegistry`
+
+## pseudocode
+
+```c
+
+```
