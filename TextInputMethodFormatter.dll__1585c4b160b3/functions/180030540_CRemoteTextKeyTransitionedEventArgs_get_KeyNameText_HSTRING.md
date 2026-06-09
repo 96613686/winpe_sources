@@ -1,0 +1,92 @@
+# CRemoteTextKeyTransitionedEventArgs::get_KeyNameText(HSTRING__ * *)
+
+- ea: `0x180030540`
+- end: `0x1800305b2`
+- name: `?get_KeyNameText@CRemoteTextKeyTransitionedEventArgs@@UEAAJPEAPEAUHSTRING__@@@Z`
+- size: `114`
+- prototype: `__int64 __fastcall(CRemoteTextKeyTransitionedEventArgs *__hidden this, HSTRING *)`
+- caller_count: `0`
+- callee_count: `1`
+- tags: ``
+
+## callees
+
+- `0x180030540`
+
+## import_xrefs
+
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString` at `0x180030566`
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString` at `0x18003059f`
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString` at `0x180030566`
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString` at `0x18003059f`
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsDuplicateString` at `0x18003057d`
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsDuplicateString` at `0x18003057d`
+
+## pseudocode
+
+```c
+__int64 __fastcall CRemoteTextKeyTransitionedEventArgs::get_KeyNameText(
+        CRemoteTextKeyTransitionedEventArgs *this,
+        HSTRING *a2)
+{
+  HSTRING v3; // rbx
+  HRESULT v4; // ebx
+  HSTRING v5; // rdx
+  HSTRING v6; // rcx
+  HSTRING newString; // [rsp+30h] [rbp+8h] BYREF
+
+  *a2 = 0;
+  v3 = (HSTRING)*((_QWORD *)this + 56);
+  newString = 0;
+  WindowsDeleteString(0);
+  newString = 0;
+  v4 = WindowsDuplicateString(v3, &newString);
+  if ( v4 < 0 )
+  {
+    v6 = newString;
+  }
+  else
+  {
+    v5 = newString;
+    v6 = 0;
+    newString = 0;
+    *a2 = v5;
+  }
+  WindowsDeleteString(v6);
+  return (unsigned int)v4;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180030540  mov     [rsp+arg_8], rbx
+0x180030545  push    rdi
+0x180030546  sub     rsp, 20h
+0x18003054a  mov     qword ptr [rdx], 0
+0x180030551  mov     rdi, rdx
+0x180030554  mov     rbx, [rcx+1C0h]
+0x18003055b  xor     ecx, ecx; string
+0x18003055d  mov     [rsp+28h+newString], 0
+0x180030566  call    cs:__imp_WindowsDeleteString
+0x18003056c  lea     rdx, [rsp+28h+newString]; newString
+0x180030571  mov     [rsp+28h+newString], 0
+0x18003057a  mov     rcx, rbx; string
+0x18003057d  call    cs:__imp_WindowsDuplicateString
+0x180030583  mov     ebx, eax
+0x180030585  test    eax, eax
+0x180030587  js      short loc_18003059A
+0x180030589  mov     rdx, [rsp+28h+newString]
+0x18003058e  xor     ecx, ecx
+0x180030590  mov     [rsp+28h+newString], rcx
+0x180030595  mov     [rdi], rdx
+0x180030598  jmp     short loc_18003059F
+0x18003059a  mov     rcx, [rsp+28h+newString]; string
+0x18003059f  call    cs:__imp_WindowsDeleteString
+0x1800305a5  mov     eax, ebx
+0x1800305a7  mov     rbx, [rsp+28h+arg_8]
+0x1800305ac  add     rsp, 20h
+0x1800305b0  pop     rdi
+0x1800305b1  retn
+```

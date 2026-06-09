@@ -1,0 +1,1062 @@
+# TcpShutdownTcb
+
+- ea: `0x14005881c`
+- end: `0x140059587`
+- name: `TcpShutdownTcb`
+- size: `3435`
+- prototype: `char __fastcall(PKSPIN_LOCK SpinLock, int, int, unsigned int)`
+- caller_count: `10`
+- callee_count: `39`
+- tags: `authz_impersonation, installer_update, broker_com_uri`
+
+## callers
+
+- `0x140009820`
+- `0x14000b6ac`
+- `0x14000cbf0`
+- `0x14000f330`
+- `0x140057c48`
+- `0x140058180`
+- `0x14005a1a0`
+- `0x140122ba0`
+- `0x140132fa4`
+- `0x140133ce0`
+
+## callees
+
+- `0x140009590`
+- `0x14000bd04`
+- `0x140013140`
+- `0x14001ea80`
+- `0x14001eb30`
+- `0x14003b4c0`
+- `0x14003fe90`
+- `0x140041ab0`
+- `0x140044880`
+- `0x1400577c0`
+- `0x1400579c0`
+- `0x140057aec`
+- `0x14005881c`
+- `0x140059d24`
+- `0x14005a170`
+- `0x14005a350`
+- `0x140071ac0`
+- `0x1400a18e0`
+- `0x1400a5bc0`
+- `0x1400d2680`
+- `0x1400d289c`
+- `0x1400f00d0`
+- `0x1400f6eb0`
+- `0x1400f74d0`
+- `0x1400f95e0`
+- `0x140111204`
+- `0x140113288`
+- `0x140113788`
+- `0x1401186e4`
+- `0x140120c68`
+- `0x140122ba0`
+- `0x140131ee0`
+- `0x14014ec00`
+- `0x14015362c`
+- `0x140161694`
+- `0x1401623e8`
+- `0x14018cd60`
+- `0x1401c0fd0`
+- `0x1401c1200`
+
+## import_xrefs
+
+- `ntoskrnl!ExReleaseRundownProtection` at `0x140059289`
+- `ntoskrnl!ExReleaseRundownProtection` at `0x140059289`
+- `ntoskrnl!ExAcquireRundownProtection` at `0x140059237`
+- `ntoskrnl!ExAcquireRundownProtection` at `0x140059237`
+- `ntoskrnl!KeBugCheckEx` at `0x140058f6a`
+- `ntoskrnl!KeBugCheckEx` at `0x140058f6a`
+- `ntoskrnl!KeQuerySystemTimePrecise` at `0x140058d7d`
+- `ntoskrnl!KeQuerySystemTimePrecise` at `0x140058e86`
+- `ntoskrnl!KeQuerySystemTimePrecise` at `0x140058d7d`
+- `ntoskrnl!KeQuerySystemTimePrecise` at `0x140058e86`
+- `ntoskrnl!KeAcquireSpinLockAtDpcLevel` at `0x1400588d7`
+- `ntoskrnl!KeAcquireSpinLockAtDpcLevel` at `0x140059187`
+- `ntoskrnl!KeAcquireSpinLockAtDpcLevel` at `0x1400593ce`
+- `ntoskrnl!KeAcquireSpinLockAtDpcLevel` at `0x140059409`
+- `ntoskrnl!KeAcquireSpinLockAtDpcLevel` at `0x1400588d7`
+- `ntoskrnl!KeAcquireSpinLockAtDpcLevel` at `0x140059187`
+- `ntoskrnl!KeAcquireSpinLockAtDpcLevel` at `0x1400593ce`
+- `ntoskrnl!KeAcquireSpinLockAtDpcLevel` at `0x140059409`
+- `ntoskrnl!KeReleaseSpinLockFromDpcLevel` at `0x140058902`
+- `ntoskrnl!KeReleaseSpinLockFromDpcLevel` at `0x140059380`
+- `ntoskrnl!KeReleaseSpinLockFromDpcLevel` at `0x140058902`
+- `ntoskrnl!KeReleaseSpinLockFromDpcLevel` at `0x140059380`
+- `ntoskrnl!PsGetProcessStartKey` at `0x140058981`
+- `ntoskrnl!PsGetProcessStartKey` at `0x140058ac2`
+- `ntoskrnl!PsGetProcessStartKey` at `0x140058981`
+- `ntoskrnl!PsGetProcessStartKey` at `0x140058ac2`
+- `ntoskrnl!KeSetEvent` at `0x1400594ed`
+- `ntoskrnl!KeSetEvent` at `0x1400594ed`
+- `ntoskrnl!KeReleaseInStackQueuedSpinLockFromDpcLevel` at `0x14005901f`
+- `ntoskrnl!KeReleaseInStackQueuedSpinLockFromDpcLevel` at `0x140059068`
+- `ntoskrnl!KeReleaseInStackQueuedSpinLockFromDpcLevel` at `0x14005901f`
+- `ntoskrnl!KeReleaseInStackQueuedSpinLockFromDpcLevel` at `0x140059068`
+- `ntoskrnl!PsGetProcessId` at `0x140058963`
+- `ntoskrnl!PsGetProcessId` at `0x140058aa0`
+- `ntoskrnl!PsGetProcessId` at `0x140058963`
+- `ntoskrnl!PsGetProcessId` at `0x140058aa0`
+- `ntoskrnl!KeReleaseSpinLock` at `0x1400593fa`
+- `ntoskrnl!KeReleaseSpinLock` at `0x1400593fa`
+- `NETIO!NetioNcmFastCheckIsAoAcCapable` at `0x140058f48`
+- `NETIO!NetioNcmFastCheckIsAoAcCapable` at `0x140058f48`
+- `NETIO!NetioNcmFastActiveReferenceRequest` at `0x140058f89`
+- `NETIO!NetioNcmFastActiveReferenceRequest` at `0x140058f89`
+- `NETIO!NetioDereferenceNetBufferListChain` at `0x140059391`
+- `NETIO!NetioDereferenceNetBufferListChain` at `0x1400593ab`
+- `NETIO!NetioDereferenceNetBufferListChain` at `0x140059391`
+- `NETIO!NetioDereferenceNetBufferListChain` at `0x1400593ab`
+
+## pseudocode
+
+```c
+char __fastcall TcpShutdownTcb(PKSPIN_LOCK SpinLock, int a2, int a3, unsigned int a4)
+{
+  unsigned int LockArray_high; // r14d
+  int v6; // esi
+  int v8; // eax
+  int v9; // eax
+  int v10; // edx
+  ADDRESS_FAMILY v11; // di
+  unsigned __int8 ProcessId; // al
+  KSPIN_LOCK v13; // rcx
+  char v14; // bl
+  char ProcessStartKey; // al
+  PKSPIN_LOCK v16; // r12
+  ADDRESS_FAMILY v17; // cx
+  UCHAR v18; // al
+  _QWORD *v19; // r8
+  __int64 v20; // rdx
+  int v21; // r14d
+  __int64 v22; // r10
+  __int64 v23; // rax
+  KSPIN_LOCK v24; // r9
+  const void *v25; // rbx
+  KSPIN_LOCK v26; // r10
+  unsigned int v27; // edx
+  const void *v28; // rcx
+  unsigned __int8 v29; // al
+  KSPIN_LOCK v30; // rcx
+  char v31; // bl
+  char v32; // al
+  ADDRESS_FAMILY *v33; // r10
+  int v34; // ecx
+  ADDRESS_FAMILY v35; // bx
+  ADDRESS_FAMILY v36; // si
+  bool v37; // r12
+  __int64 v38; // rax
+  unsigned int v39; // edi
+  struct _KPROCESS *v40; // r14
+  const void *v41; // r15
+  UCHAR v42; // si
+  UCHAR v43; // al
+  __int64 v44; // rdx
+  unsigned __int8 v45; // bl
+  const void *v46; // rax
+  __int16 v47; // cx
+  __int16 v48; // ax
+  unsigned int v49; // ebx
+  KSPIN_LOCK v50; // rax
+  void (__fastcall *v51)(KSPIN_LOCK, _QWORD, _QWORD, __int128 *); // rax
+  KSPIN_LOCK v52; // rcx
+  signed int v53; // r12d
+  __int64 v54; // r8
+  int v55; // eax
+  __int64 v56; // rdx
+  __int64 BindingHandleByTcb; // rax
+  __int64 v58; // rdx
+  __int64 v59; // rbx
+  __int64 v60; // rax
+  __int64 v61; // rdx
+  __int64 v62; // rcx
+  KSPIN_LOCK v63; // rax
+  ADDRESS_FAMILY *v64; // r10
+  int v65; // ecx
+  bool v66; // r15
+  __int64 v67; // r14
+  int v68; // esi
+  UCHAR v69; // al
+  __int64 v70; // rdx
+  int v71; // edi
+  KSPIN_LOCK v72; // rcx
+  __int16 v73; // bx
+  __int64 v74; // rax
+  int v75; // edx
+  int v76; // r8d
+  KSPIN_LOCK v77; // rcx
+  __int64 v78; // rdx
+  __int64 v79; // rcx
+  __int64 v80; // rax
+  __int64 v81; // rax
+  PKSPIN_LOCK v82; // rdi
+  KSPIN_LOCK v83; // rbx
+  _QWORD *v84; // rsi
+  _QWORD *v85; // rbx
+  KSPIN_LOCK *v86; // rcx
+  __int64 v87; // rdx
+  __int64 v88; // rcx
+  __int64 v89; // r8
+  int v90; // r8d
+  int v91; // eax
+  PKSPIN_LOCK v92; // rcx
+  KSPIN_LOCK v93; // rcx
+  char v94; // dl
+  int BugCheckParameter4; // [rsp+20h] [rbp-99h]
+  int BugCheckParameter4a; // [rsp+20h] [rbp-99h]
+  __int16 v98; // [rsp+28h] [rbp-91h]
+  char v99; // [rsp+28h] [rbp-91h]
+  char v100; // [rsp+28h] [rbp-91h]
+  char v101; // [rsp+40h] [rbp-79h]
+  char v102; // [rsp+60h] [rbp-59h]
+  unsigned int v104; // [rsp+68h] [rbp-51h]
+  const void *v106; // [rsp+70h] [rbp-49h] BYREF
+  int v107; // [rsp+78h] [rbp-41h]
+  unsigned __int64 v108; // [rsp+80h] [rbp-39h]
+  struct _KLOCK_QUEUE_HANDLE LockHandle; // [rsp+88h] [rbp-31h] BYREF
+  __int128 v110; // [rsp+A0h] [rbp-19h] BYREF
+  __int128 v111; // [rsp+B0h] [rbp-9h] BYREF
+  __int128 v112; // [rsp+C0h] [rbp+7h]
+
+  memset(&LockHandle, 0, sizeof(LockHandle));
+  LockArray_high = HIDWORD(KeGetPcr()[1].LockArray);
+  v104 = LockArray_high;
+  v6 = a2;
+  v107 = a3;
+  v102 = 0;
+  LODWORD(v108) = 0;
+  if ( (Feature_TCPIP_2025_KCSAN_RemoveHistograms__private_featureState & 0x10) != 0 )
+    v8 = Feature_TCPIP_2025_KCSAN_RemoveHistograms__private_featureState & 1;
+  else
+    v8 = Feature_TCPIP_2025_KCSAN_RemoveHistograms__private_IsEnabledDeviceUsageNoInline();
+  if ( !v8 )
+    v108 = TcpQueryMicrosecondCount(LockArray_high, 0) / 0x3E8uLL;
+  v9 = *((_DWORD *)SpinLock + 30);
+  if ( (v9 & 0x300000) == 0 )
+  {
+    KeAcquireSpinLockAtDpcLevel((PKSPIN_LOCK)&WPP_MAIN_CB.Dpc.DpcListEntry);
+    if ( (*((_DWORD *)SpinLock + 31) & 1) != 0 )
+      ++WPP_MAIN_CB.DeviceQueue.Lock;
+    else
+      ++WPP_MAIN_CB.DeviceQueue.DeviceListHead.Blink;
+    KeReleaseSpinLockFromDpcLevel((PKSPIN_LOCK)&WPP_MAIN_CB.Dpc.DpcListEntry);
+    v11 = 23;
+    if ( !SpinLock[4] )
+    {
+      if ( dword_1402241D4 && (!TcpipTraceFiltersExist || *((char *)SpinLock + 804) < 0) )
+      {
+        v110 = 0;
+        if ( (BYTE1(WPP_MAIN_CB.Dpc.DeferredRoutine) & 0x20) != 0 )
+        {
+          ProcessId = (unsigned __int8)PsGetProcessId((PEPROCESS)SpinLock[106]);
+          v13 = SpinLock[106];
+          v14 = ProcessId;
+          v110 = (unsigned __int64)SpinLock;
+          ProcessStartKey = PsGetProcessStartKey(v13);
+          McTemplateK0qbr0qbr2qqqpx_EtwWriteTransfer(
+            (unsigned int)&MICROSOFT_TCPIP_PROVIDER_Context,
+            (unsigned int)TCP_SHUTDOWN_TCB_V1,
+            (unsigned int)&v110,
+            0,
+            0,
+            0,
+            0,
+            v6,
+            v14,
+            0,
+            (char)SpinLock,
+            ProcessStartKey);
+        }
+      }
+      goto LABEL_63;
+    }
+    v16 = SpinLock + 3;
+    *(_QWORD *)&v111 = SpinLock + 3;
+    if ( (BYTE1(WPP_MAIN_CB.Dpc.DeferredRoutine) & 0x20) == 0 )
+    {
+      LOBYTE(v21) = 0;
+      v28 = 0;
+      v25 = 0;
+      goto LABEL_26;
+    }
+    v17 = 23;
+    if ( (SpinLock[15] & 8) == 0 )
+      v17 = *(_WORD *)(*v16 + 24);
+    v18 = SOCKADDR_SIZE(v17);
+    LOBYTE(v20) = (_DWORD)v20 != 0;
+    v21 = v18;
+    v23 = InetFormatLocalSockAddrAtDispatchLevel(v22, v20, *v19, *((unsigned __int16 *)SpinLock + 58));
+    v24 = SpinLock[4];
+    v25 = (const void *)v23;
+    v26 = *v16;
+    v27 = *((_DWORD *)SpinLock + 30);
+    v98 = *((_WORD *)SpinLock + 59);
+    *(_QWORD *)&v110 = v23;
+    v27 >>= 3;
+    LOBYTE(v27) = v27 & 1;
+    v28 = (const void *)InetFormatSockAddrAtDispatchLevel(
+                          *(unsigned __int16 *)(v26 + 24),
+                          v27,
+                          1,
+                          *(_QWORD *)(v24 + 16),
+                          *(_DWORD *)(v24 + 8),
+                          v98);
+    v106 = v28;
+    if ( dword_1402241D4 )
+    {
+      if ( TcpipTraceFiltersExist && *((char *)SpinLock + 804) >= 0 )
+      {
+LABEL_26:
+        if ( a4 && v6 < 0 )
+        {
+          if ( (_BYTE)v21 )
+          {
+            TcpRecentFailureTrace(
+              v21,
+              v25,
+              v21,
+              v28,
+              (struct _KPROCESS *)SpinLock[106],
+              v6,
+              *((_DWORD *)SpinLock + 28),
+              a4);
+          }
+          else
+          {
+            v33 = (ADDRESS_FAMILY *)(*v16 + 24);
+            v34 = SpinLock[15] & 8;
+            if ( v34 )
+            {
+              v35 = 23;
+              v36 = 23;
+            }
+            else
+            {
+              v35 = *v33;
+              v36 = *v33;
+            }
+            v37 = v34 != 0;
+            LOBYTE(v10) = v34 != 0;
+            v38 = InetFormatSockAddrAtDispatchLevel(
+                    *v33,
+                    v10,
+                    1,
+                    *(_QWORD *)(SpinLock[4] + 16),
+                    *(_DWORD *)(SpinLock[4] + 8),
+                    *((_WORD *)SpinLock + 59));
+            v39 = *((_DWORD *)SpinLock + 28);
+            v40 = (struct _KPROCESS *)SpinLock[106];
+            v41 = (const void *)v38;
+            v42 = SOCKADDR_SIZE(v36);
+            v43 = SOCKADDR_SIZE(v35);
+            LOBYTE(v44) = v37;
+            v16 = (PKSPIN_LOCK)v111;
+            v45 = v43;
+            v46 = (const void *)InetFormatLocalSockAddrAtDispatchLevel(
+                                  *(_QWORD *)v111,
+                                  v44,
+                                  *(_QWORD *)SpinLock[4],
+                                  *((unsigned __int16 *)SpinLock + 58));
+            TcpRecentFailureTrace(v45, v46, v42, v41, v40, a2, v39, a4);
+            v6 = a2;
+          }
+        }
+        if ( (*((_BYTE *)SpinLock + 797) & 0x20) == 0 )
+          goto LABEL_62;
+        if ( (SpinLock[15] & 1) == 0 )
+          goto LABEL_62;
+        v47 = *((_WORD *)SpinLock + 64);
+        v48 = v47 & 0x1F;
+        if ( (v47 & 0x1F) == 0 || v48 == 19 )
+          goto LABEL_62;
+        v106 = 0;
+        v111 = 0;
+        v112 = 0;
+        switch ( v48 )
+        {
+          case 21:
+            DWORD2(v112) = 1;
+            break;
+          case 22:
+            v10 = 7;
+            DWORD2(v112) = 7;
+            break;
+          case 16:
+            DWORD2(v112) = 2;
+            break;
+          case 18:
+            DWORD2(v112) = 3;
+            break;
+          default:
+            if ( v6 == -1073741643 )
+            {
+              DWORD2(v112) = 4;
+            }
+            else if ( SpinLock[64] )
+            {
+              if ( v6 != -1073741247 || !SpinLock[57] )
+              {
+                v49 = v48 != 7 ? 0xC000022D : 0;
+LABEL_55:
+                if ( dword_1402241D4 )
+                {
+                  v110 = 0;
+                  if ( SBYTE3(WPP_MAIN_CB.Dpc.DeferredContext) < 0 )
+                  {
+                    v99 = SpinLock[64];
+                    *(_QWORD *)&v110 = SpinLock;
+                    McTemplateK0pqxqq_EtwWriteTransfer(
+                      (unsigned int)&MICROSOFT_TCPIP_PROVIDER_Context,
+                      v10,
+                      (unsigned int)&v110,
+                      (_DWORD)SpinLock,
+                      v47 & 0x1F,
+                      v99,
+                      v6,
+                      v49);
+                  }
+                }
+                *((_QWORD *)&v111 + 1) = SpinLock[64];
+                *(_QWORD *)&v112 = __PAIR64__(SpinLock[16] & 0x1F, v6);
+                KeQuerySystemTimePrecise(&v106);
+                v50 = *v16;
+                *(_QWORD *)&v111 = (__int64)((__int64)v106 - SpinLock[109]) / 10000;
+                v51 = *(void (__fastcall **)(KSPIN_LOCK, _QWORD, _QWORD, __int128 *))(*(_QWORD *)(v50 + 48) + 304LL);
+                if ( v51 )
+                {
+                  v52 = SpinLock[4];
+                  if ( (char *)v51 == (char *)IpNlpFeatureFallbackUpdate )
+                    IpNlpFeatureFallbackUpdate(v52, 0, v49, &v111);
+                  else
+                    v51(v52, 0, v49, &v111);
+                }
+LABEL_62:
+                InetSetPathInfoRttAf(*v16, SpinLock[4], *((_DWORD *)SpinLock + 178) >> 3);
+                LockArray_high = v104;
+                v11 = 23;
+LABEL_63:
+                *((_DWORD *)SpinLock + 31) |= 2u;
+                v53 = *((_DWORD *)SpinLock + 28);
+                if ( dword_1402241D4 && (!TcpipTraceFiltersExist || *((char *)SpinLock + 804) < 0) )
+                {
+                  v110 = 0;
+                  if ( (BYTE1(WPP_MAIN_CB.Dpc.DeferredRoutine) & 0x40) != 0 )
+                  {
+                    v100 = *((_DWORD *)SpinLock + 35);
+                    *(_QWORD *)&v110 = SpinLock;
+                    McTemplateK0qqqp_EtwWriteTransfer(
+                      (unsigned int)&MICROSOFT_TCPIP_PROVIDER_Context,
+                      v10,
+                      (unsigned int)&v110,
+                      v53,
+                      0,
+                      v100,
+                      (char)SpinLock);
+                  }
+                }
+                *((_DWORD *)SpinLock + 28) = 0;
+                KeQuerySystemTimePrecise(SpinLock + 111);
+                if ( ((__int64)WPP_MAIN_CB.Dpc.DeferredContext & 0x20) != 0
+                  || !TcpipIsServerSKU
+                  && (unsigned int)dword_1402241F8 > 0x10
+                  && tlgKeywordOn((__int64)&dword_1402241F8, 0x200000000000LL) )
+                {
+                  TcpTraceConnectionSummary(SpinLock);
+                }
+                if ( (Feature_TCPIP_2025_KCSAN_RemoveHistograms__private_featureState & 0x10) != 0 )
+                  v55 = Feature_TCPIP_2025_KCSAN_RemoveHistograms__private_featureState & 1;
+                else
+                  v55 = Feature_TCPIP_2025_KCSAN_RemoveHistograms__private_IsEnabledDeviceUsageNoInline();
+                if ( !v55 )
+                  TcpHistogramIncrement(SpinLock, (unsigned int)v108, LockArray_high);
+                v56 = 192LL * LockArray_high;
+                *(_QWORD *)(*(_QWORD *)(SpinLock[3] + 128) + v56 + 144) += SpinLock[48];
+                *(_QWORD *)(*(_QWORD *)(SpinLock[3] + 128) + v56 + 152) += *((unsigned int *)SpinLock + 280);
+                if ( (*((_BYTE *)SpinLock + 804) & 0x20) != 0 )
+                {
+                  if ( !SpinLock[56] && (unsigned __int8)NetioNcmFastCheckIsAoAcCapable() )
+                    KeBugCheckEx(0x150u, 0, 0, 0, 0);
+                  BindingHandleByTcb = OlmQueryBindingHandleByTcb(SpinLock);
+                  LOBYTE(v58) = 1;
+                  NetioNcmFastActiveReferenceRequest(11, v58, BindingHandleByTcb);
+                  *((_WORD *)SpinLock + 402) &= ~0x20u;
+                }
+                v59 = TcpGetAndWriteLockPartitionAtDpcLevel(SpinLock[8], &LockHandle, v54);
+                if ( (SpinLock[15] & 2) != 0 )
+                {
+                  TcpCleanupTimerTcb(v59, SpinLock);
+                  TcpInvokeCcb(
+                    *(unsigned __int16 *)(SpinLock[3] + 24),
+                    v53 + 1,
+                    1,
+                    *(_QWORD *)SpinLock[4],
+                    *(_QWORD *)(SpinLock[4] + 16),
+                    *((_WORD *)SpinLock + 58),
+                    *((_WORD *)SpinLock + 59),
+                    *(_DWORD *)(SpinLock[4] + 8));
+                  TcpRemoveTcb((__int64)SpinLock, v59, 0);
+                  KeReleaseInStackQueuedSpinLockFromDpcLevel(&LockHandle);
+                  TcpRemoveTcb((__int64)SpinLock, 0, 1);
+                  LODWORD(v60) = HIDWORD(KeGetPcr()[1].LockArray);
+                  v61 = 192 * v60;
+                  v62 = *(_QWORD *)(SpinLock[3] + 128);
+                  v63 = (unsigned int)(*(_DWORD *)(192 * v60 + v62 + 76) - 1);
+                  *(_DWORD *)(v61 + v62 + 76) = v63;
+                }
+                else
+                {
+                  TcpCleanupTimerTcb(v59, SpinLock);
+                  KeReleaseInStackQueuedSpinLockFromDpcLevel(&LockHandle);
+                }
+                if ( v53 >= 3 && v53 != 10 )
+                {
+                  v63 = v6 + 0x80000000;
+                  if ( (v63 & 0x80000000) == 0LL && v6 != -1073741299 )
+                  {
+                    if ( SBYTE1(WPP_MAIN_CB.Dpc.DeferredRoutine) < 0 )
+                    {
+                      v64 = (ADDRESS_FAMILY *)(SpinLock[3] + 24);
+                      v65 = SpinLock[15] & 8;
+                      if ( !v65 )
+                        v11 = *v64;
+                      v66 = v65 != 0;
+                      LOBYTE(v61) = v65 != 0;
+                      v67 = InetFormatSockAddrAtDispatchLevel(
+                              *v64,
+                              v61,
+                              1,
+                              *(_QWORD *)(SpinLock[4] + 16),
+                              *(_DWORD *)(SpinLock[4] + 8),
+                              *((_WORD *)SpinLock + 59));
+                      v68 = SOCKADDR_SIZE(v11);
+                      v69 = SOCKADDR_SIZE(v11);
+                      LOBYTE(v70) = v66;
+                      v71 = v69;
+                      v72 = SpinLock[3];
+                      v73 = *(_WORD *)(v72 + 24);
+                      v74 = InetFormatLocalSockAddrAtDispatchLevel(
+                              v72,
+                              v70,
+                              *(_QWORD *)SpinLock[4],
+                              *((unsigned __int16 *)SpinLock + 58));
+                      McTemplateK0pqqqbr3qbr5q_EtwWriteTransfer(
+                        (unsigned int)&MICROSOFT_TCPIP_PROVIDER_Context,
+                        v75,
+                        v76,
+                        (_DWORD)SpinLock,
+                        BugCheckParameter4,
+                        v73,
+                        v71,
+                        v74,
+                        v68,
+                        v67,
+                        10);
+                    }
+                    TcpTcbHeaderSend(SpinLock);
+                    KeAcquireSpinLockAtDpcLevel(SpinLock);
+                  }
+                }
+                if ( (*((_BYTE *)SpinLock + 804) & 2) != 0 )
+                {
+                  v63 = SpinLock[115];
+                  if ( v63 )
+                  {
+                    v63 = *(_QWORD *)(v63 + 8);
+                    _InterlockedDecrement((volatile signed __int32 *)(*(_QWORD *)(v63 + 24) + 108LL));
+                  }
+                }
+                if ( v53 )
+                {
+                  if ( v53 >= 4 )
+                  {
+                    if ( v53 == 4 || v53 == 7 )
+                    {
+                      LODWORD(v63) = HIDWORD(KeGetPcr()[1].LockArray);
+                      v78 = 192 * v63;
+                      v79 = *(_QWORD *)(SpinLock[3] + 128);
+                      v80 = (unsigned int)(*(_DWORD *)(192 * v63 + v79 + 16) - 1);
+                      *(_DWORD *)(v78 + v79 + 16) = v80;
+                      LODWORD(v80) = HIDWORD(KeGetPcr()[1].LockArray);
+                      ++*(_DWORD *)(192 * v80 + *(_QWORD *)(SpinLock[3] + 128) + 12);
+                    }
+                  }
+                  else
+                  {
+                    LODWORD(v63) = HIDWORD(KeGetPcr()[1].LockArray);
+                    ++*(_DWORD *)(192 * v63 + *(_QWORD *)(SpinLock[3] + 128) + 8);
+                    v102 = *((_BYTE *)SpinLock + 124) & 1;
+                    if ( (SpinLock[15] & 1) != 0 )
+                    {
+                      if ( SpinLock[85] )
+                        TcpCreateAndConnectTcbComplete(SpinLock);
+                    }
+                    else if ( v53 == 3 )
+                    {
+                      if ( _bittest16((const signed __int16 *)SpinLock + 402, 8u) )
+                      {
+                        if ( ExAcquireRundownProtection((PEX_RUNDOWN_REF)SpinLock[103]) == 1 )
+                        {
+                          v77 = SpinLock[103];
+                          *(_QWORD *)&v110 = SpinLock[83];
+                          *((_QWORD *)&v110 + 1) = *((unsigned int *)SpinLock + 168);
+                          (*(void (__fastcall **)(_QWORD, __int128 *))(*(_QWORD *)(v77 + 216) + 24LL))(
+                            *(_QWORD *)(v77 + 224),
+                            &v110);
+                          ExReleaseRundownProtection((PEX_RUNDOWN_REF)SpinLock[103]);
+                        }
+                        *((_WORD *)SpinLock + 402) &= ~0x100u;
+                      }
+                      SpinLock[83] = 0;
+                    }
+                  }
+                }
+                if ( (v107 & 1) != 0 && (*((_DWORD *)SpinLock + 31) & 1) == 0 )
+                  TcpNotifyAbortDelivery(SpinLock);
+                TcpFlushTcbSend(SpinLock);
+                v81 = TcpTotalAvailableTcbInput(SpinLock);
+                if ( v81 )
+                {
+                  v82 = SpinLock + 69;
+                  if ( SpinLock != (PKSPIN_LOCK)-552LL )
+                  {
+                    do
+                    {
+                      LODWORD(v81) = HIDWORD(KeGetPcr()[1].LockArray);
+                      v83 = v82[6];
+                      v84 = (_QWORD *)v82[5];
+                      v82[6] = 0;
+                      v82[7] = 0;
+                      v82[5] = 0;
+                      *(_QWORD *)(192 * v81 + *(_QWORD *)(SpinLock[3] + 128) + 80) -= v82[3];
+                      v82[3] = 0;
+                      KeReleaseSpinLockFromDpcLevel(SpinLock);
+                      NetioDereferenceNetBufferListChain(v83, 0);
+                      while ( v84 )
+                      {
+                        v85 = v84;
+                        v84 = (_QWORD *)*v84;
+                        NetioDereferenceNetBufferListChain(v85[1], 0);
+                        PplFreeToLookasideList(TcpInputPool, v85);
+                      }
+                      KeAcquireSpinLockAtDpcLevel(SpinLock);
+                      v81 = SpinLock[82];
+                      if ( v82 == (PKSPIN_LOCK)v81 )
+                        break;
+                      v82 = (PKSPIN_LOCK)SpinLock[82];
+                    }
+                    while ( v81 );
+                  }
+                  KeReleaseSpinLock(SpinLock, 2u);
+                  KeAcquireSpinLockAtDpcLevel(SpinLock);
+                }
+                if ( (unsigned __int8)TcpHasRequestReceive(SpinLock) )
+                  TcpFlushRequestReceive(v86);
+                TcpSendTrackerUnInit(SpinLock + 121);
+                if ( (*((_DWORD *)SpinLock + 31) & 0x10) != 0 )
+                {
+                  TcpTcbReassemblyEmptyList(SpinLock);
+                  if ( dword_1402241D4 )
+                  {
+                    if ( (!TcpipTraceFiltersExist || *((char *)SpinLock + 804) < 0)
+                      && (BYTE3(WPP_MAIN_CB.Dpc.DeferredRoutine) & 4) != 0 )
+                    {
+                      BugCheckParameter4a = *((_DWORD *)SpinLock + 34);
+                      v110 = (unsigned __int64)SpinLock;
+                      McTemplateK0pqqzq_EtwWriteTransfer(
+                        (unsigned int)&MICROSOFT_TCPIP_PROVIDER_Context,
+                        (unsigned int)TCP_FLUSH_REASSEMBLY,
+                        (unsigned int)&v110,
+                        (_DWORD)SpinLock,
+                        BugCheckParameter4a);
+                    }
+                  }
+                }
+                if ( SpinLock[5] )
+                {
+                  LOBYTE(v87) = 1;
+                  TcpTcbSignalNotificationChannelEvent(SpinLock, v87, 0, 0);
+                  LOBYTE(v90) = 1;
+                  TcpScheduleNotificationChannelWorkItemTcb((_DWORD)SpinLock, 0, v90, 0, 0);
+                }
+                if ( (*((_BYTE *)SpinLock + 804) & 0x10) != 0 )
+                  KeSetEvent((PRKEVENT)SpinLock[137], 0, 0);
+                if ( SpinLock[85] )
+                {
+                  if ( v53 != 4 )
+                  {
+                    if ( (unsigned int)v53 > 9 || (v91 = 936, !_bittest(&v91, v53)) )
+                      MicrosoftTelemetryAssertTriggeredNoArgsKM(v88, v87, v89);
+                  }
+                  TcpDisconnectTcbComplete(SpinLock);
+                }
+                TcpAbortTcbComplete(SpinLock);
+                return v102;
+              }
+              DWORD2(v112) = 6;
+            }
+            else
+            {
+              DWORD2(v112) = 5;
+            }
+            break;
+        }
+        v49 = -1073741823;
+        goto LABEL_55;
+      }
+      v111 = 0;
+      if ( (BYTE1(WPP_MAIN_CB.Dpc.DeferredRoutine) & 0x20) != 0 )
+      {
+        v29 = (unsigned __int8)PsGetProcessId((PEPROCESS)SpinLock[106]);
+        v30 = SpinLock[106];
+        v31 = v29;
+        v111 = (unsigned __int64)SpinLock;
+        v32 = PsGetProcessStartKey(v30);
+        v101 = v31;
+        v25 = (const void *)v110;
+        McTemplateK0qbr0qbr2qqqpx_EtwWriteTransfer(
+          (unsigned int)&MICROSOFT_TCPIP_PROVIDER_Context,
+          (unsigned int)TCP_SHUTDOWN_TCB_V1,
+          (unsigned int)&v111,
+          v21,
+          v110,
+          v21,
+          (__int64)v106,
+          v6,
+          v101,
+          0,
+          (char)SpinLock,
+          v32);
+        v28 = v106;
+        *(_QWORD *)&v111 = SpinLock + 3;
+        goto LABEL_26;
+      }
+    }
+    *(_QWORD *)&v111 = SpinLock + 3;
+    goto LABEL_26;
+  }
+  v92 = SpinLock + 69;
+  if ( (v9 & 0x100000) == 0 )
+    v92 = (PKSPIN_LOCK)SpinLock[82];
+  v93 = *v92;
+  if ( (*(_BYTE *)v93 & 1) == 0 )
+  {
+    v94 = *(_BYTE *)v93 | 1;
+    *(_DWORD *)(v93 + 4) = v6;
+    *(_BYTE *)v93 = v94;
+    *(_DWORD *)(v93 + 16) = a4;
+  }
+  return v102;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14005881c  mov     [rsp-8+arg_10], rbx
+0x140058821  push    rbp
+0x140058822  push    rsi
+0x140058823  push    rdi
+0x140058824  push    r12
+0x140058826  push    r13
+0x140058828  push    r14
+0x14005882a  push    r15
+0x14005882c  lea     rbp, [rsp-27h]
+0x140058831  sub     rsp, 0E0h
+0x140058838  mov     rax, cs:__security_cookie
+0x14005883f  xor     rax, rsp
+0x140058842  mov     [rbp+57h+var_40], rax
+0x140058846  xor     eax, eax
+0x140058848  mov     [rbp+57h+var_A4], r9d
+0x14005884c  xorps   xmm0, xmm0
+0x14005884f  mov     qword ptr [rbp+57h+LockHandle.OldIrql], rax
+0x140058853  movups  xmmword ptr [rbp+57h+LockHandle.LockQueue.Next], xmm0
+0x140058857  mov     r14d, gs:1A4h
+0x140058860  mov     r15d, r9d
+0x140058863  mov     [rbp+57h+var_A8], r14d
+0x140058867  mov     esi, edx
+0x140058869  mov     [rbp+57h+var_98], r8d
+0x14005886d  mov     r13, rcx
+0x140058870  mov     [rbp+57h+var_AC], edx
+0x140058873  mov     [rbp+57h+var_B0], al
+0x140058876  mov     dword ptr [rbp+57h+var_90], eax
+0x140058879  mov     eax, cs:Feature_TCPIP_2025_KCSAN_RemoveHistograms__private_featureState
+0x14005887f  mov     ebx, 10h
+0x140058884  test    bl, al
+0x140058886  jz      short loc_14005888D
+0x140058888  and     eax, 1
+0x14005888b  jmp     short loc_140058892
+0x14005888d  call    Feature_TCPIP_2025_KCSAN_RemoveHistograms__private_IsEnabledDeviceUsageNoInline
+0x140058892  test    eax, eax
+0x140058894  jnz     short loc_1400588C1
+0x140058896  xor     edx, edx
+0x140058898  mov     ecx, r14d
+0x14005889b  call    TcpQueryMicrosecondCount
+0x1400588a0  mov     rcx, rax
+0x1400588a3  mov     rax, 624DD2F1A9FBE77h
+0x1400588ad  mul     rcx
+0x1400588b0  sub     rcx, rdx
+0x1400588b3  shr     rcx, 1
+0x1400588b6  add     rcx, rdx
+0x1400588b9  shr     rcx, 9
+0x1400588bd  mov     [rbp+57h+var_90], rcx
+0x1400588c1  mov     eax, [r13+78h]
+0x1400588c5  test    eax, 300000h
+0x1400588ca  jnz     loc_140059532
+0x1400588d0  lea     rcx, WPP_MAIN_CB.Dpc.DpcListEntry; SpinLock
+0x1400588d7  call    cs:__imp_KeAcquireSpinLockAtDpcLevel
+0x1400588de  nop     dword ptr [rax+rax+00h]
+0x1400588e3  mov     eax, [r13+7Ch]
+0x1400588e7  test    al, 1
+0x1400588e9  jz      short loc_1400588F4
+0x1400588eb  inc     cs:WPP_MAIN_CB.DeviceQueue.Lock
+0x1400588f2  jmp     short loc_1400588FB
+0x1400588f4  inc     cs:WPP_MAIN_CB.DeviceQueue.DeviceListHead.Blink
+0x1400588fb  lea     rcx, WPP_MAIN_CB.Dpc.DpcListEntry; SpinLock
+0x140058902  call    cs:__imp_KeReleaseSpinLockFromDpcLevel
+0x140058909  nop     dword ptr [rax+rax+00h]
+0x14005890e  mov     r8, [r13+20h]
+0x140058912  mov     edi, 17h
+0x140058917  test    r8, r8
+0x14005891a  jnz     loc_1400589D2
+0x140058920  xor     r15d, r15d
+0x140058923  cmp     cs:dword_1402241D4, r15d
+0x14005892a  jz      loc_140058E19
+0x140058930  cmp     cs:TcpipTraceFiltersExist, r15b
+0x140058937  jz      short loc_140058948
+0x140058939  mov     al, [r13+324h]
+0x140058940  test    al, al
+0x140058942  jns     loc_140058E19
+0x140058948  test    byte ptr cs:WPP_MAIN_CB.Dpc.DeferredRoutine+1, 20h
+0x14005894f  xorps   xmm0, xmm0
+0x140058952  movups  [rbp+57h+var_70], xmm0
+0x140058956  jz      loc_140058E19
+0x14005895c  mov     rcx, [r13+350h]; Process
+0x140058963  call    cs:__imp_PsGetProcessId
+0x14005896a  nop     dword ptr [rax+rax+00h]
+0x14005896f  mov     rcx, [r13+350h]
+0x140058976  mov     rbx, rax
+0x140058979  mov     qword ptr [rbp+57h+var_70+8], r15
+0x14005897d  mov     qword ptr [rbp+57h+var_70], r13
+0x140058981  call    cs:__imp_PsGetProcessStartKey
+0x140058988  nop     dword ptr [rax+rax+00h]
+0x14005898d  mov     [rsp+110h+var_B8], rax
+0x140058992  xor     r9d, r9d
+0x140058995  mov     [rsp+110h+var_C0], r13
+0x14005899a  lea     r8, [rbp+57h+var_70]
+0x14005899e  mov     dword ptr [rsp+110h+var_C8], r15d
+0x1400589a3  lea     rdx, TCP_SHUTDOWN_TCB_V1
+0x1400589aa  mov     dword ptr [rsp+110h+var_D0], ebx
+0x1400589ae  lea     rcx, MICROSOFT_TCPIP_PROVIDER_Context
+0x1400589b5  mov     dword ptr [rsp+110h+var_D8], esi
+0x1400589b9  mov     [rsp+110h+var_E0], r15
+0x1400589be  mov     dword ptr [rsp+110h+var_E8], r15d
+0x1400589c3  mov     [rsp+110h+BugCheckParameter4], r15
+0x1400589c8  call    McTemplateK0qbr0qbr2qqqpx_EtwWriteTransfer
+0x1400589cd  jmp     loc_140058E14
+0x1400589d2  test    byte ptr cs:WPP_MAIN_CB.Dpc.DeferredRoutine+1, 20h
+0x1400589d9  lea     r12, [r13+18h]
+0x1400589dd  mov     qword ptr [rbp+57h+var_60], r12
+0x1400589e1  jz      loc_140058B29
+0x1400589e7  mov     edx, [r13+78h]
+0x1400589eb  movzx   ecx, di
+0x1400589ee  mov     r10, [r12]
+0x1400589f2  and     edx, 8
+0x1400589f5  jnz     short loc_1400589FC
+0x1400589f7  movzx   ecx, word ptr [r10+18h]; af
+0x1400589fc  call    SOCKADDR_SIZE
+0x140058a01  movzx   r9d, word ptr [r13+74h]
+0x140058a06  test    edx, edx
+0x140058a08  mov     r8, [r8]
+0x140058a0b  mov     rcx, r10
+0x140058a0e  setnz   dl
+0x140058a11  movzx   r14d, al
+0x140058a15  call    InetFormatLocalSockAddrAtDispatchLevel
+0x140058a1a  mov     r9, [r13+20h]
+0x140058a1e  mov     rbx, rax
+0x140058a21  movzx   ecx, word ptr [r13+76h]
+0x140058a26  mov     r8d, 1
+0x140058a2c  mov     r10, [r12]
+0x140058a30  mov     edx, [r13+78h]
+0x140058a34  mov     word ptr [rsp+110h+var_E8], cx
+0x140058a39  mov     qword ptr [rbp+57h+var_70], rax
+0x140058a3d  mov     eax, [r9+8]
+0x140058a41  mov     r9, [r9+10h]
+0x140058a45  movzx   ecx, word ptr [r10+18h]
+0x140058a4a  shr     edx, 3
+0x140058a4d  and     dl, 1
+0x140058a50  mov     dword ptr [rsp+110h+BugCheckParameter4], eax
+0x140058a54  call    InetFormatSockAddrAtDispatchLevel
+0x140058a59  cmp     cs:dword_1402241D4, 0
+0x140058a60  mov     rcx, rax
+0x140058a63  mov     [rbp+57h+var_A0], rax
+0x140058a67  jz      loc_140058B23
+0x140058a6d  cmp     cs:TcpipTraceFiltersExist, 0
+0x140058a74  jz      short loc_140058A85
+0x140058a76  mov     al, [r13+324h]
+0x140058a7d  test    al, al
+0x140058a7f  jns     loc_140058B30
+0x140058a85  test    byte ptr cs:WPP_MAIN_CB.Dpc.DeferredRoutine+1, 20h
+0x140058a8c  xorps   xmm0, xmm0
+0x140058a8f  movups  [rbp+57h+var_60], xmm0
+0x140058a93  jz      loc_140058B23
+0x140058a99  mov     rcx, [r13+350h]; Process
+0x140058aa0  call    cs:__imp_PsGetProcessId
+0x140058aa7  nop     dword ptr [rax+rax+00h]
+0x140058aac  mov     rcx, [r13+350h]
+0x140058ab3  mov     rbx, rax
+0x140058ab6  mov     qword ptr [rbp+57h+var_60+8], 0
+0x140058abe  mov     qword ptr [rbp+57h+var_60], r13
+0x140058ac2  call    cs:__imp_PsGetProcessStartKey
+0x140058ac9  nop     dword ptr [rax+rax+00h]
+0x140058ace  mov     [rsp+110h+var_B8], rax
+0x140058ad3  mov     r9d, r14d
+0x140058ad6  mov     rax, [rbp+57h+var_A0]
+0x140058ada  lea     r8, [rbp+57h+var_60]
+0x140058ade  mov     [rsp+110h+var_C0], r13
+0x140058ae3  lea     rdx, TCP_SHUTDOWN_TCB_V1
+0x140058aea  mov     dword ptr [rsp+110h+var_C8], 0
+0x140058af2  lea     rcx, MICROSOFT_TCPIP_PROVIDER_Context
+0x140058af9  mov     dword ptr [rsp+110h+var_D0], ebx
+0x140058afd  mov     rbx, qword ptr [rbp+57h+var_70]
+0x140058b01  mov     dword ptr [rsp+110h+var_D8], esi
+0x140058b05  mov     [rsp+110h+var_E0], rax
+0x140058b0a  mov     dword ptr [rsp+110h+var_E8], r14d
+0x140058b0f  mov     [rsp+110h+BugCheckParameter4], rbx
+0x140058b14  call    McTemplateK0qbr0qbr2qqqpx_EtwWriteTransfer
+0x140058b19  mov     rcx, [rbp+57h+var_A0]
+0x140058b1d  mov     qword ptr [rbp+57h+var_60], r12
+0x140058b21  jmp     short loc_140058B30
+0x140058b23  mov     qword ptr [rbp+57h+var_60], r12
+0x140058b27  jmp     short loc_140058B30
+0x140058b29  xor     r14b, r14b
+0x140058b2c  xor     ecx, ecx
+0x140058b2e  xor     ebx, ebx
+0x140058b30  test    r15d, r15d
+0x140058b33  jz      loc_140058C34
+0x140058b39  test    esi, esi
+0x140058b3b  jns     loc_140058C34
+0x140058b41  test    r14b, r14b
+0x140058b44  jz      short loc_140058B79
+0x140058b46  mov     eax, [r13+70h]
+0x140058b4a  mov     r9, rcx
+0x140058b4d  mov     dword ptr [rsp+110h+var_D8], r15d
+0x140058b52  mov     r8b, r14b
+0x140058b55  mov     dword ptr [rsp+110h+var_E0], eax
+0x140058b59  mov     rdx, rbx
+0x140058b5c  mov     rax, [r13+350h]
+0x140058b63  mov     cl, r14b
+0x140058b66  mov     dword ptr [rsp+110h+var_E8], esi
+0x140058b6a  mov     [rsp+110h+BugCheckParameter4], rax
+0x140058b6f  call    TcpRecentFailureTrace
+0x140058b74  jmp     loc_140058C34
+0x140058b79  mov     r10, [r12]
+0x140058b7d  mov     ecx, [r13+78h]
+0x140058b81  lea     r10, [r10+18h]
+0x140058b85  and     ecx, 8
+0x140058b88  jz      short loc_140058B92
+0x140058b8a  movzx   ebx, di
+0x140058b8d  movzx   esi, di
+0x140058b90  jmp     short loc_140058B99
+0x140058b92  movzx   ebx, word ptr [r10]
+0x140058b96  movzx   esi, bx
+0x140058b99  mov     r9, [r13+20h]
+0x140058b9d  test    ecx, ecx
+0x140058b9f  movzx   ecx, word ptr [r13+76h]
+0x140058ba4  mov     r8d, 1
+0x140058baa  mov     word ptr [rsp+110h+var_E8], cx
+0x140058baf  setnz   r12b
+0x140058bb3  movzx   ecx, word ptr [r10]
+0x140058bb7  mov     dl, r12b
+0x140058bba  mov     eax, [r9+8]
+0x140058bbe  mov     r9, [r9+10h]
+0x140058bc2  mov     dword ptr [rsp+110h+BugCheckParameter4], eax
+0x140058bc6  call    InetFormatSockAddrAtDispatchLevel
+0x140058bcb  mov     edi, [r13+70h]
+0x140058bcf  movzx   ecx, si; af
+0x140058bd2  mov     r14, [r13+350h]
+0x140058bd9  mov     r15, rax
+0x140058bdc  call    SOCKADDR_SIZE
+0x140058be1  movzx   ecx, bx; af
+0x140058be4  mov     sil, al
+0x140058be7  call    SOCKADDR_SIZE
+0x140058bec  mov     r8, [r13+20h]
+0x140058bf0  mov     dl, r12b
+0x140058bf3  mov     r12, qword ptr [rbp+57h+var_60]
+0x140058bf7  mov     bl, al
+0x140058bf9  movzx   r9d, word ptr [r13+74h]
+0x140058bfe  mov     r8, [r8]
+0x140058c01  mov     rcx, [r12]
+0x140058c05  call    InetFormatLocalSockAddrAtDispatchLevel
+0x140058c0a  mov     rdx, rax
+0x140058c0d  mov     r9, r15
+0x140058c10  mov     eax, [rbp+57h+var_A4]
+0x140058c13  mov     r8b, sil
+0x140058c16  mov     dword ptr [rsp+110h+var_D8], eax
+0x140058c1a  mov     cl, bl
+0x140058c1c  mov     eax, [rbp+57h+var_AC]
+0x140058c1f  mov     dword ptr [rsp+110h+var_E0], edi
+0x140058c23  mov     dword ptr [rsp+110h+var_E8], eax
+0x140058c27  mov     [rsp+110h+BugCheckParameter4], r14
+0x140058c2c  call    TcpRecentFailureTrace
+0x140058c31  mov     esi, [rbp+57h+var_AC]
+0x140058c34  test    byte ptr [r13+31Dh], 20h
+0x140058c3c  jz      loc_140058DF0
+0x140058c42  mov     eax, [r13+78h]
+0x140058c46  test    al, 1
+0x140058c48  jz      loc_140058DF0
+0x140058c4e  movzx   ecx, word ptr [r13+80h]
+0x140058c56  mov     edi, 1Fh
+0x140058c5b  movzx   eax, cx
+0x140058c5e  and     ax, di
+0x140058c61  jz      loc_140058DF0
+0x140058c67  xor     r15d, r15d
+0x140058c6a  cmp     ax, 13h
+0x140058c6e  jz      loc_140058DF3
+0x140058c74  mov     [rbp+57h+var_A0], r15
+0x140058c78  xorps   xmm0, xmm0
+0x140058c7b  movups  [rbp+57h+var_60], xmm0
+0x140058c7f  movups  [rbp+57h+var_50], xmm0
+0x140058c83  cmp     ax, 15h
+0x140058c87  jnz     short loc_140058C92
+0x140058c89  mov     dword ptr [rbp+57h+var_50+8], 1
+0x140058c90  jmp     short loc_140058D01
+0x140058c92  cmp     ax, 16h
+0x140058c96  jnz     short loc_140058CA2
+0x140058c98  mov     edx, 7
+0x140058c9d  mov     dword ptr [rbp+57h+var_50+8], edx
+0x140058ca0  jmp     short loc_140058D01
+0x140058ca2  mov     r8d, 10h
+0x140058ca8  cmp     ax, r8w
+0x140058cac  jnz     short loc_140058CB7
+0x140058cae  mov     dword ptr [rbp+57h+var_50+8], 2
+0x140058cb5  jmp     short loc_140058D01
+0x140058cb7  cmp     ax, 12h
+0x140058cbb  jnz     short loc_140058CC6
+0x140058cbd  mov     dword ptr [rbp+57h+var_50+8], 3
+0x140058cc4  jmp     short loc_140058D01
+0x140058cc6  cmp     esi, 0C00000B5h
+0x140058ccc  jnz     short loc_140058CD7
+0x140058cce  mov     dword ptr [rbp+57h+var_50+8], 4
+0x140058cd5  jmp     short loc_140058D01
+0x140058cd7  cmp     [r13+200h], r15
+0x140058cde  jnz     short loc_140058CE9
+0x140058ce0  mov     dword ptr [rbp+57h+var_50+8], 5
+0x140058ce7  jmp     short loc_140058D01
+0x140058ce9  cmp     esi, 0C0000241h
+0x140058cef  jnz     short loc_140058D08
+0x140058cf1  cmp     [r13+1C8h], r15
+0x140058cf8  jz      short loc_140058D08
+0x140058cfa  mov     dword ptr [rbp+57h+var_50+8], 6
+0x140058d01  mov     ebx, 0C0000001h
+0x140058d06  jmp     short loc_140058D17
+0x140058d08  sub     ax, 7
+0x140058d0c  neg     ax
+0x140058d0f  sbb     ebx, ebx
+  ... truncated ...
+```

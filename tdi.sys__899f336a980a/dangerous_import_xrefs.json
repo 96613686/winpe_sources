@@ -1,0 +1,188 @@
+[
+  {
+    "import": "ntoskrnl!NtCreateFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140003ce5",
+        "from_func": "0x140003c30",
+        "from_func_name": "TdiOpenNetbiosAddress",
+        "import": "ntoskrnl!NtCreateFile"
+      },
+      {
+        "from_ea": "0x140003ce5",
+        "from_func": "0x140003c30",
+        "from_func_name": "TdiOpenNetbiosAddress",
+        "import": "ntoskrnl!NtCreateFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCheckRegistryKey",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400051d0",
+        "from_func": "0x1400051c0",
+        "from_func_name": "TdiIsIPTransportSupported",
+        "import": "ntoskrnl!RtlCheckRegistryKey"
+      },
+      {
+        "from_ea": "0x1400051d0",
+        "from_func": "0x1400051c0",
+        "from_func_name": "TdiIsIPTransportSupported",
+        "import": "ntoskrnl!RtlCheckRegistryKey"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareUnicodeString",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140001e96",
+        "from_func": "0x140001df0",
+        "from_func_name": "TdiHandlePnpOperation",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x140001fd5",
+        "from_func": "0x140001df0",
+        "from_func_name": "TdiHandlePnpOperation",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x140001e96",
+        "from_func": "0x140001df0",
+        "from_func_name": "TdiHandlePnpOperation",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x140001fd5",
+        "from_func": "0x140001df0",
+        "from_func_name": "TdiHandlePnpOperation",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfiguration",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b5b0",
+        "from_func": "0x14000b560",
+        "from_func_name": "wil_details_UpdateFeatureConfiguredStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14000d199",
+        "from_func": "0x14000d138",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14000b5b0",
+        "from_func": "0x14000b560",
+        "from_func_name": "wil_details_UpdateFeatureConfiguredStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14000d199",
+        "from_func": "0x14000d138",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d0a0",
+        "from_func": "0x14000d078",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      },
+      {
+        "from_ea": "0x14000d0a0",
+        "from_func": "0x14000d078",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d0f6",
+        "from_func": "0x14000d078",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x14000d0f6",
+        "from_func": "0x14000d078",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b188",
+        "from_func": "0x14000b178",
+        "from_func_name": "wil_UninitializeFeatureStaging",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x14000b188",
+        "from_func": "0x14000b178",
+        "from_func_name": "wil_UninitializeFeatureStaging",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400042cd",
+        "from_func": "0x1400042cd",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "ntoskrnl!__C_specific_handler"
+      }
+    ]
+  }
+]

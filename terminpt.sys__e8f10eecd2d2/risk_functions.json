@@ -1,0 +1,1116 @@
+[
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "PtPnP",
+    "ea": "0x1400092f0",
+    "function_file": "functions/1400092f0_PtPnP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoReleaseRemoveLockAndWaitEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoWMIRegistrationControl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "PtPnP",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 2042,
+    "size": 1469,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WppLoadTracingSupport",
+    "ea": "0x14000a7d0",
+    "function_file": "functions/14000a7d0_WppLoadTracingSupport.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WppLoadTracingSupport",
+    "prototype": "__int64(void)",
+    "rank_score": 2005,
+    "size": 320,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "TiDeviceControl",
+    "ea": "0x14000b2d0",
+    "function_file": "functions/14000b2d0_TiDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoGetRequestorSessionId",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!PsGetCurrentServerSilo",
+      "ntoskrnl!PsGetServerSiloServiceSessionId",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "TiDeviceControl",
+    "prototype": "__int64 __fastcall(__int64, IRP *, int)",
+    "rank_score": 1858,
+    "size": 1203,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "PtPower",
+    "ea": "0x1400010c0",
+    "function_file": "functions/1400010c0_PtPower.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoCallDriver",
+      "ntoskrnl!PoSetPowerState",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "PtPower",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1632,
+    "size": 1056,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "PtAddDevice",
+    "ea": "0x140009010",
+    "function_file": "functions/140009010_PtAddDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoAttachDeviceToDeviceStack",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoGetDeviceProperty",
+      "ntoskrnl!IoInitializeRemoveLockEx",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PtAddDevice",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT TargetDevice)",
+    "rank_score": 1629,
+    "size": 719,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "PtInternalDeviceControl",
+    "ea": "0x140001ce0",
+    "function_file": "functions/140001ce0_PtInternalDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PtInternalDeviceControl",
+    "prototype": "__int64 __fastcall(__int64, IRP *, int)",
+    "rank_score": 1438,
+    "size": 1758,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "InitializeServiceSid",
+    "ea": "0x14000abb4",
+    "function_file": "functions/14000abb4_InitializeServiceSid.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlSubAuthoritySid"
+    ],
+    "matched_strings": [],
+    "name": "InitializeServiceSid",
+    "prototype": "__int64 __fastcall(PSID Sid)",
+    "rank_score": 1423,
+    "size": 242,
+    "tags": [
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14000c1b8",
+    "function_file": "functions/14000c1b8_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!KeInitializeGuardedMutex",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 1254,
+    "size": 743,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "TiCreate",
+    "ea": "0x14000af20",
+    "function_file": "functions/14000af20_TiCreate.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireGuardedMutex",
+      "ntoskrnl!KeReleaseGuardedMutex",
+      "ntoskrnl!ObfReferenceObject",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlUnicodeStringToInteger"
+    ],
+    "matched_strings": [],
+    "name": "TiCreate",
+    "prototype": "__int64 __fastcall(__int64, IRP *, int)",
+    "rank_score": 1254,
+    "size": 929,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "PtSystemControl",
+    "ea": "0x14000a300",
+    "function_file": "functions/14000a300_PtSystemControl.md",
+    "matched_imports": [
+      "WMILIB!WmiSystemControl",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "PtSystemControl",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1227,
+    "size": 500,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "TiAddDeviceToSession",
+    "ea": "0x140002a7c",
+    "function_file": "functions/140002a7c_TiAddDeviceToSession.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeAcquireGuardedMutex",
+      "ntoskrnl!KeInitializeGuardedMutex",
+      "ntoskrnl!KeReleaseGuardedMutex"
+    ],
+    "matched_strings": [],
+    "name": "TiAddDeviceToSession",
+    "prototype": "",
+    "rank_score": 841,
+    "size": 506,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IsCallerTermsrvService",
+    "ea": "0x14000acac",
+    "function_file": "functions/14000acac_IsCallerTermsrvService.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCheckTokenMembership",
+      "ntoskrnl!RtlLengthRequiredSid"
+    ],
+    "matched_strings": [],
+    "name": "IsCallerTermsrvService",
+    "prototype": "__int64 __fastcall(_BYTE *, int, int)",
+    "rank_score": 838,
+    "size": 399,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PtDeviceControl",
+    "ea": "0x140009b60",
+    "function_file": "functions/140009b60_PtDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "PtDeviceControl",
+    "prototype": "__int64 __fastcall(__int64, __int64, int)",
+    "rank_score": 828,
+    "size": 481,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PtSendCurrentKeyboardIndicators",
+    "ea": "0x1400023c4",
+    "function_file": "functions/1400023c4_PtSendCurrentKeyboardIndicators.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PtSendCurrentKeyboardIndicators",
+    "prototype": "__int64 __fastcall(__int64, _WORD *, IRP *)",
+    "rank_score": 814,
+    "size": 285,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CancelIndicatorIrp",
+    "ea": "0x140001b80",
+    "function_file": "functions/140001b80_CancelIndicatorIrp.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "CancelIndicatorIrp",
+    "prototype": "",
+    "rank_score": 812,
+    "size": 173,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PtCreate",
+    "ea": "0x1400099f0",
+    "function_file": "functions/1400099f0_PtCreate.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "PtCreate",
+    "prototype": "__int64 __fastcall(__int64, IRP *, int)",
+    "rank_score": 626,
+    "size": 352,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PtSendIrpSynchronously",
+    "ea": "0x1400098b4",
+    "function_file": "functions/1400098b4_PtSendIrpSynchronously.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "PtSendIrpSynchronously",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 626,
+    "size": 302,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TiUnload",
+    "ea": "0x14000a500",
+    "function_file": "functions/14000a500_TiUnload.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink"
+    ],
+    "matched_strings": [],
+    "name": "TiUnload",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 626,
+    "size": 331,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PtPowerUpToD0Complete",
+    "ea": "0x1400014f0",
+    "function_file": "functions/1400014f0_PtPowerUpToD0Complete.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!PoSetPowerState",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "PtPowerUpToD0Complete",
+    "prototype": "",
+    "rank_score": 623,
+    "size": 228,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PtSendCurrentKeyboardInput",
+    "ea": "0x1400024e8",
+    "function_file": "functions/1400024e8_PtSendCurrentKeyboardInput.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "PtSendCurrentKeyboardInput",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int)",
+    "rank_score": 620,
+    "size": 434,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PtSendCurrentMouseInput",
+    "ea": "0x1400026a0",
+    "function_file": "functions/1400026a0_PtSendCurrentMouseInput.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "PtSendCurrentMouseInput",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int)",
+    "rank_score": 620,
+    "size": 434,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "TiRemoveDeviceFromSession",
+    "ea": "0x140002c9c",
+    "function_file": "functions/140002c9c_TiRemoveDeviceFromSession.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireGuardedMutex",
+      "ntoskrnl!KeReleaseGuardedMutex"
+    ],
+    "matched_strings": [],
+    "name": "TiRemoveDeviceFromSession",
+    "prototype": "",
+    "rank_score": 619,
+    "size": 436,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "TiClose",
+    "ea": "0x14000ae50",
+    "function_file": "functions/14000ae50_TiClose.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "TiClose",
+    "prototype": "",
+    "rank_score": 424,
+    "size": 196,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PtEntry",
+    "ea": "0x14000c078",
+    "function_file": "functions/14000c078_PtEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "PtEntry",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 417,
+    "size": 314,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WppCleanupKm",
+    "ea": "0x14000a654",
+    "function_file": "functions/14000a654_WppCleanupKm.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogStop",
+      "ntoskrnl!IoWMIRegistrationControl"
+    ],
+    "matched_strings": [],
+    "name": "WppCleanupKm",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WppInitKm",
+    "ea": "0x14000a708",
+    "function_file": "functions/14000a708_WppInitKm.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogStart",
+      "ntoskrnl!IoWMIRegistrationControl"
+    ],
+    "matched_strings": [],
+    "name": "WppInitKm",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 404,
+    "size": 192,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 29,
+    "demangled": "WPP_RECORDER_SF_s",
+    "ea": "0x14000173c",
+    "function_file": "functions/14000173c_WPP_RECORDER_SF_s.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_s",
+    "prototype": "",
+    "rank_score": 228,
+    "size": 164,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PtClose",
+    "ea": "0x140001c34",
+    "function_file": "functions/140001c34_PtClose.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "PtClose",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 158,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PtKeyboardQueryWmiDataBlock",
+    "ea": "0x140009e60",
+    "function_file": "functions/140009e60_PtKeyboardQueryWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "PtKeyboardQueryWmiDataBlock",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, int, __int64, int, __int64)",
+    "rank_score": 225,
+    "size": 320,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PtMouseQueryWmiDataBlock",
+    "ea": "0x140009fb0",
+    "function_file": "functions/140009fb0_PtMouseQueryWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "PtMouseQueryWmiDataBlock",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, int, __int64, int, __int64)",
+    "rank_score": 225,
+    "size": 314,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PtPnPComplete",
+    "ea": "0x140001020",
+    "function_file": "functions/140001020_PtPnPComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "PtPnPComplete",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 141,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PtSetWmiDataBlock",
+    "ea": "0x14000a1a0",
+    "function_file": "functions/14000a1a0_PtSetWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "PtSetWmiDataBlock",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 224,
+    "size": 169,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PtSetWmiDataItem",
+    "ea": "0x14000a250",
+    "function_file": "functions/14000a250_PtSetWmiDataItem.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "PtSetWmiDataItem",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 224,
+    "size": 169,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PtPrepareSessionDevice",
+    "ea": "0x1400015dc",
+    "function_file": "functions/1400015dc_PtPrepareSessionDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDevicePropertyData"
+    ],
+    "matched_strings": [],
+    "name": "PtPrepareSessionDevice",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 320,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "WPP_RECORDER_SF_sqd",
+    "ea": "0x140001a80",
+    "function_file": "functions/140001a80_WPP_RECORDER_SF_sqd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sqd",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, __int64)",
+    "rank_score": 218,
+    "size": 248,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PtInitWmi",
+    "ea": "0x140009d48",
+    "function_file": "functions/140009d48_PtInitWmi.md",
+    "matched_imports": [
+      "ntoskrnl!IoWMIRegistrationControl"
+    ],
+    "matched_strings": [],
+    "name": "PtInitWmi",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 262,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "WPP_RECORDER_SF_sD",
+    "ea": "0x1400017e8",
+    "function_file": "functions/1400017e8_WPP_RECORDER_SF_sD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sD",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, __int64)",
+    "rank_score": 213,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WPP_RECORDER_SF_sq",
+    "ea": "0x1400019a8",
+    "function_file": "functions/1400019a8_WPP_RECORDER_SF_sq.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sq",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_sDd",
+    "ea": "0x1400018c0",
+    "function_file": "functions/1400018c0_WPP_RECORDER_SF_sDd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDd",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 223,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_sdd",
+    "ea": "0x140002858",
+    "function_file": "functions/140002858_WPP_RECORDER_SF_sdd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sdd",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_sl",
+    "ea": "0x14000293c",
+    "function_file": "functions/14000293c_WPP_RECORDER_SF_sl.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sl",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, _DWORD)",
+    "rank_score": 205,
+    "size": 208,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDq",
+    "ea": "0x140002e78",
+    "function_file": "functions/140002e78_WPP_RECORDER_SF_sDq.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDq",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 248,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "TiLockSession",
+    "ea": "0x140002c7c",
+    "function_file": "functions/140002c7c_TiLockSession.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireGuardedMutex"
+    ],
+    "matched_strings": [],
+    "name": "TiLockSession",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 203,
+    "size": 26,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "TiUnlockSession",
+    "ea": "0x140002e58",
+    "function_file": "functions/140002e58_TiUnlockSession.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseGuardedMutex"
+    ],
+    "matched_strings": [],
+    "name": "TiUnlockSession",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 203,
+    "size": 26,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "TiLock",
+    "ea": "0x14000b78c",
+    "function_file": "functions/14000b78c_TiLock.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireGuardedMutex"
+    ],
+    "matched_strings": [],
+    "name": "TiLock",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "TiUnlock",
+    "ea": "0x14000b7b0",
+    "function_file": "functions/14000b7b0_TiUnlock.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseGuardedMutex"
+    ],
+    "matched_strings": [],
+    "name": "TiUnlock",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140003130",
+    "function_file": "functions/140003130_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140002fbc",
+    "function_file": "functions/140002fbc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14000c010",
+    "function_file": "functions/14000c010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1400030f0",
+    "function_file": "functions/1400030f0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 14,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14000c044",
+    "function_file": "functions/14000c044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140003160",
+    "function_file": "functions/140003160_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "memmove",
+    "ea": "0x140003200",
+    "function_file": "functions/140003200_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 9,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "memset",
+    "ea": "0x140003500",
+    "function_file": "functions/140003500_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 8,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__cpu_features_init",
+    "ea": "0x140003040",
+    "function_file": "functions/140003040_cpu_features_init.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__cpu_features_init",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__memset_repmovs",
+    "ea": "0x140003640",
+    "function_file": "functions/140003640_memset_repmovs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_repmovs",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PtReleaseSessionDevice",
+    "ea": "0x140001724",
+    "function_file": "functions/140001724_PtReleaseSessionDevice.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PtReleaseSessionDevice",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__memset_query",
+    "ea": "0x1400036c0",
+    "function_file": "functions/1400036c0_memset_query.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_query",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__memset_spec_ermsb_repmovsb",
+    "ea": "0x140003880",
+    "function_file": "functions/140003880_memset_spec_ermsb_repmovsb.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_spec_ermsb_repmovsb",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_report_gsfailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 1,
+    "size": 7,
+    "tags": []
+  }
+]

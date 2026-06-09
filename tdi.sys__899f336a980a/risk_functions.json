@@ -1,0 +1,1161 @@
+[
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "TdiExecuteRequest",
+    "ea": "0x1400032e0",
+    "function_file": "functions/1400032e0_TdiExecuteRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExQueueWorkItem",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "TdiExecuteRequest",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 3431,
+    "size": 1756,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "TdiHandleSerializedRequest",
+    "ea": "0x140002f50",
+    "function_file": "functions/140002f50_TdiHandleSerializedRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlGetCallersAddress"
+    ],
+    "matched_strings": [],
+    "name": "TdiHandleSerializedRequest",
+    "prototype": "",
+    "rank_score": 3040,
+    "size": 891,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "TdipGetMultiSZList",
+    "ea": "0x140002240",
+    "function_file": "functions/140002240_TdipGetMultiSZList.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Linkage",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\"
+    ],
+    "name": "TdipGetMultiSZList",
+    "prototype": "",
+    "rank_score": 2742,
+    "size": 827,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "TdiPnPPowerRequest",
+    "ea": "0x140002c40",
+    "function_file": "functions/140002c40_TdiPnPPowerRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "TdiPnPPowerRequest",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DeviceName, PNET_PNP_EVENT PowerEvent, PTDI_PNP_CONTEXT Context1, PTDI_PNP_CONTEXT Context2, ProviderPnPPowerComplete ProtocolCompletionHandler)",
+    "rank_score": 2628,
+    "size": 743,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "TdiRegisterPnPHandlers",
+    "ea": "0x140002630",
+    "function_file": "functions/140002630_TdiRegisterPnPHandlers.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "TdiRegisterPnPHandlers",
+    "prototype": "NTSTATUS __stdcall(PTDI_CLIENT_INTERFACE_INFO ClientInterfaceInfo, ULONG InterfaceInfoSize, HANDLE *BindingHandle)",
+    "rank_score": 2018,
+    "size": 516,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "TdiHandlePnpOperation",
+    "ea": "0x140001df0",
+    "function_file": "functions/140001df0_TdiHandlePnpOperation.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "TdiHandlePnpOperation",
+    "prototype": "",
+    "rank_score": 1834,
+    "size": 1023,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "TdiRegisterNetAddress",
+    "ea": "0x140002880",
+    "function_file": "functions/140002880_TdiRegisterNetAddress.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "TdiRegisterNetAddress",
+    "prototype": "NTSTATUS __stdcall(PTA_ADDRESS Address, PUNICODE_STRING DeviceName, PTDI_PNP_CONTEXT Context, HANDLE *RegistrationHandle)",
+    "rank_score": 1606,
+    "size": 488,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "TdiNotifyPnpClientList",
+    "ea": "0x140001540",
+    "function_file": "functions/140001540_TdiNotifyPnpClientList.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsicmp",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "TdiNotifyPnpClientList",
+    "prototype": "",
+    "rank_score": 1421,
+    "size": 1723,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DllInitialize",
+    "ea": "0x140004880",
+    "function_file": "functions/140004880_DllInitialize.md",
+    "matched_imports": [
+      "NDIS!NdisRegisterTdiCallBack",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeQueryTimeIncrement",
+      "ntoskrnl!MmAllocateMappingAddress"
+    ],
+    "matched_strings": [],
+    "name": "DllInitialize",
+    "prototype": "",
+    "rank_score": 1227,
+    "size": 272,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TdiCopyMdlChainToMdlChain",
+    "ea": "0x140004c20",
+    "function_file": "functions/140004c20_TdiCopyMdlChainToMdlChain.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "TdiCopyMdlChainToMdlChain",
+    "prototype": "NTSTATUS __stdcall(PMDL SourceMdlChain, ULONG SourceOffset, PMDL DestinationMdlChain, ULONG DestinationOffset, PULONG BytesCopied)",
+    "rank_score": 1207,
+    "size": 660,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "TdiCopyBufferToMdlWithReservedMappingAtDpcLevel",
+    "ea": "0x140004ac0",
+    "function_file": "functions/140004ac0_TdiCopyBufferToMdlWithReservedMappingAtDpcLevel.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!MmMapLockedPagesWithReservedMapping",
+      "ntoskrnl!MmUnmapLockedPages",
+      "ntoskrnl!MmUnmapReservedMapping"
+    ],
+    "matched_strings": [],
+    "name": "TdiCopyBufferToMdlWithReservedMappingAtDpcLevel",
+    "prototype": "void __stdcall(PVOID SourceBuffer, PMDL DestinationMdl, ULONG DestinationOffset, ULONG BytesToCopy)",
+    "rank_score": 1205,
+    "size": 331,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TdiRegisterProvider",
+    "ea": "0x140004080",
+    "function_file": "functions/140004080_TdiRegisterProvider.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "TdiRegisterProvider",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING ProviderName, HANDLE *ProviderHandle)",
+    "rank_score": 1204,
+    "size": 284,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TdiRegisterDeviceObject",
+    "ea": "0x140002a70",
+    "function_file": "functions/140002a70_TdiRegisterDeviceObject.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "TdiRegisterDeviceObject",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DeviceName, HANDLE *RegistrationHandle)",
+    "rank_score": 1203,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TdiPnPPowerComplete",
+    "ea": "0x1400051f0",
+    "function_file": "functions/1400051f0_TdiPnPPowerComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "TdiPnPPowerComplete",
+    "prototype": "void __stdcall(HANDLE BindingHandle, PNET_PNP_EVENT PowerEvent, NTSTATUS Status)",
+    "rank_score": 813,
+    "size": 241,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TdiCopyBufferToMdl",
+    "ea": "0x1400039d0",
+    "function_file": "functions/1400039d0_TdiCopyBufferToMdl.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "TdiCopyBufferToMdl",
+    "prototype": "NTSTATUS __stdcall(PVOID SourceBuffer, ULONG SourceOffset, ULONG SourceBytesToCopy, PMDL DestinationMdlChain, ULONG DestinationOffset, PULONG BytesCopied)",
+    "rank_score": 806,
+    "size": 602,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TdiCopyMdlToBuffer",
+    "ea": "0x140003da0",
+    "function_file": "functions/140003da0_TdiCopyMdlToBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "TdiCopyMdlToBuffer",
+    "prototype": "NTSTATUS __stdcall(PMDL SourceMdlChain, ULONG SourceOffset, PVOID DestinationBuffer, ULONG DestinationOffset, ULONG DestinationBufferSize, PULONG BytesCopied)",
+    "rank_score": 806,
+    "size": 586,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "TdiMapUserRequest",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_TdiMapUserRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "TdiMapUserRequest",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, PIO_STACK_LOCATION IrpSp)",
+    "rank_score": 617,
+    "size": 808,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DllUnload",
+    "ea": "0x1400049a0",
+    "function_file": "functions/1400049a0_DllUnload.md",
+    "matched_imports": [
+      "NDIS!NdisDeregisterTdiCallBack",
+      "NETIO!NetioDeregisterTriageDumpDataCallback",
+      "ntoskrnl!MmFreeMappingAddress"
+    ],
+    "matched_strings": [],
+    "name": "DllUnload",
+    "prototype": "",
+    "rank_score": 612,
+    "size": 88,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TdiPnPHandler",
+    "ea": "0x140002b80",
+    "function_file": "functions/140002b80_TdiPnPHandler.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "TdiPnPHandler",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING UpperComponent, PUNICODE_STRING LowerComponent, PUNICODE_STRING BindList, PVOID ReconfigBuffer, UINT ReconfigBufferSize, UINT Operation)",
+    "rank_score": 433,
+    "size": 151,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x14000d078",
+    "function_file": "functions/14000d078_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14000b178",
+    "function_file": "functions/14000b178_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "TdipAddMultiSzToMultiSz",
+    "ea": "0x140001340",
+    "function_file": "functions/140001340_TdipAddMultiSzToMultiSz.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "TdipAddMultiSzToMultiSz",
+    "prototype": "",
+    "rank_score": 410,
+    "size": 504,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CTELogEvent",
+    "ea": "0x14000b010",
+    "function_file": "functions/14000b010_CTELogEvent.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "CTELogEvent",
+    "prototype": "__int64 __usercall@<rax>(PVOID IoObject@<rcx>, __int64, size_t Size, void *Src)",
+    "rank_score": 404,
+    "size": 354,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CTEInsertBlockTracker",
+    "ea": "0x140004600",
+    "function_file": "functions/140004600_CTEInsertBlockTracker.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "CTEInsertBlockTracker",
+    "prototype": "",
+    "rank_score": 402,
+    "size": 116,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CTERemoveBlockTracker",
+    "ea": "0x140004680",
+    "function_file": "functions/140004680_CTERemoveBlockTracker.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "CTERemoveBlockTracker",
+    "prototype": "",
+    "rank_score": 402,
+    "size": 88,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "TdiPopulateTriageDumpData",
+    "ea": "0x140005310",
+    "function_file": "functions/140005310_TdiPopulateTriageDumpData.md",
+    "matched_imports": [
+      "NETIO!NetioAddTriageDumpDataBlock",
+      "ntoskrnl!IoAddBugcheckTriageThread"
+    ],
+    "matched_strings": [],
+    "name": "TdiPopulateTriageDumpData",
+    "prototype": "",
+    "rank_score": 401,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "TdiOpenNetbiosAddress",
+    "ea": "0x140003c30",
+    "function_file": "functions/140003c30_TdiOpenNetbiosAddress.md",
+    "matched_imports": [
+      "ntoskrnl!NtCreateFile"
+    ],
+    "matched_strings": [],
+    "name": "TdiOpenNetbiosAddress",
+    "prototype": "NTSTATUS __stdcall(PHANDLE FileHandle, PUCHAR Buffer, PVOID DeviceName, PVOID Name)",
+    "rank_score": 243,
+    "size": 351,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x14000b560",
+    "function_file": "functions/14000b560_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x14000d138",
+    "function_file": "functions/14000d138_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140004f38",
+    "function_file": "functions/140004f38_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "TdiIsIPTransportSupported",
+    "ea": "0x1400051c0",
+    "function_file": "functions/1400051c0_TdiIsIPTransportSupported.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCheckRegistryKey"
+    ],
+    "matched_strings": [],
+    "name": "TdiIsIPTransportSupported",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 39,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "TdiPnPPowerCompleteHelper",
+    "ea": "0x1400052f0",
+    "function_file": "functions/1400052f0_TdiPnPPowerCompleteHelper.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "TdiPnPPowerCompleteHelper",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 24,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TdipRemoveMultiSzFromMultiSz",
+    "ea": "0x1400041d0",
+    "function_file": "functions/1400041d0_TdipRemoveMultiSzFromMultiSz.md",
+    "matched_imports": [
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "TdipRemoveMultiSzFromMultiSz",
+    "prototype": "__int64 __fastcall(wchar_t *Str2, void *)",
+    "rank_score": 205,
+    "size": 211,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "TdipMultiSzStrStr",
+    "ea": "0x140002590",
+    "function_file": "functions/140002590_TdipMultiSzStrStr.md",
+    "matched_imports": [
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "TdipMultiSzStrStr",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 143,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "TdipIsSzInMultiSzSafe",
+    "ea": "0x140001cb0",
+    "function_file": "functions/140001cb0_TdipIsSzInMultiSzSafe.md",
+    "matched_imports": [
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "TdipIsSzInMultiSzSafe",
+    "prototype": "__int64 __fastcall(wchar_t *Str2, wchar_t *Str1)",
+    "rank_score": 203,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RegisterFeatureUsageProvider",
+    "ea": "0x14000b4dc",
+    "function_file": "functions/14000b4dc_wil_details_RegisterFeatureUsageProvider.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRegisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RegisterFeatureUsageProvider",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CTEBlock",
+    "ea": "0x140004410",
+    "function_file": "functions/140004410_CTEBlock.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CTEBlock",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "TdiInitialize9FTriageBlock",
+    "ea": "0x14000515c",
+    "function_file": "functions/14000515c_TdiInitialize9FTriageBlock.md",
+    "matched_imports": [
+      "NETIO!NetioRegisterTriageDumpDataCallback"
+    ],
+    "matched_strings": [],
+    "name": "TdiInitialize9FTriageBlock",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "TdiReturnChainedReceives",
+    "ea": "0x140004ef0",
+    "function_file": "functions/140004ef0_TdiReturnChainedReceives.md",
+    "matched_imports": [
+      "NDIS!NdisReturnPackets"
+    ],
+    "matched_strings": [],
+    "name": "TdiReturnChainedReceives",
+    "prototype": "void __stdcall(PVOID *TsduDescriptors, ULONG NumberOfTsdus)",
+    "rank_score": 200,
+    "size": 22,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14000542c",
+    "function_file": "functions/14000542c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14000d010",
+    "function_file": "functions/14000d010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x14000b4c0",
+    "function_file": "functions/14000b4c0_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1400054b0",
+    "function_file": "functions/1400054b0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 18,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140005530",
+    "function_file": "functions/140005530_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "memmove",
+    "ea": "0x140005600",
+    "function_file": "functions/140005600_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 17,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies",
+    "ea": "0x14000b238",
+    "function_file": "functions/14000b238_wil_details_EvaluateFeatureDependencies.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 55,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14000b2b4",
+    "function_file": "functions/14000b2b4_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x14000b3c8",
+    "function_file": "functions/14000b3c8_wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14000d044",
+    "function_file": "functions/14000d044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140005560",
+    "function_file": "functions/140005560_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "TdiRegisterAddressChangeHandler",
+    "ea": "0x140005380",
+    "function_file": "functions/140005380_TdiRegisterAddressChangeHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TdiRegisterAddressChangeHandler",
+    "prototype": "NTSTATUS __stdcall(TDI_ADD_ADDRESS_HANDLER AddHandler, TDI_DEL_ADDRESS_HANDLER DeleteHandler, HANDLE *BindingHandle)",
+    "rank_score": 11,
+    "size": 56,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140004f0c",
+    "function_file": "functions/140004f0c_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "memset",
+    "ea": "0x140005900",
+    "function_file": "functions/140005900_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 7,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCchCatW",
+    "ea": "0x140001d30",
+    "function_file": "functions/140001d30_StringCchCatW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCatW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 4,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "TdipCbOfMultiSzSafe",
+    "ea": "0x140001c10",
+    "function_file": "functions/140001c10_TdipCbOfMultiSzSafe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TdipCbOfMultiSzSafe",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14000b278",
+    "function_file": "functions/14000b278_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x1400054e0",
+    "function_file": "functions/1400054e0_RtlCopyVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 3,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringLengthWorkerW",
+    "ea": "0x140001c60",
+    "function_file": "functions/140001c60_StringLengthWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringLengthWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_PCNZWCH psz, size_t cchMax, size_t *pcchLength)",
+    "rank_score": 3,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__cpu_features_init",
+    "ea": "0x1400042f0",
+    "function_file": "functions/1400042f0_cpu_features_init.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__cpu_features_init",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__memset_repmovs",
+    "ea": "0x140005a40",
+    "function_file": "functions/140005a40_memset_repmovs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_repmovs",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14000b1d8",
+    "function_file": "functions/14000b1d8_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "TdipBuildProviderList",
+    "ea": "0x140002200",
+    "function_file": "functions/140002200_TdipBuildProviderList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TdipBuildProviderList",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__memset_query",
+    "ea": "0x140005ac0",
+    "function_file": "functions/140005ac0_memset_query.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_query",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140004a00",
+    "function_file": "functions/140004a00_DriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(PVOID TdiEventContext, PVOID ConnectionContext, ULONG BytesAvailable)",
+    "rank_score": 1,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x1400054f0",
+    "function_file": "functions/1400054f0_RtlMoveVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "TdiProviderReady",
+    "ea": "0x140005360",
+    "function_file": "functions/140005360_TdiProviderReady.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TdiProviderReady",
+    "prototype": "NTSTATUS __stdcall(HANDLE ProviderHandle)",
+    "rank_score": 1,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__memset_spec_ermsb_repmovsb",
+    "ea": "0x140005c80",
+    "function_file": "functions/140005c80_memset_spec_ermsb_repmovsb.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_spec_ermsb_repmovsb",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x1400042c0",
+    "function_file": "functions/1400042c0_report_gsfailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 1,
+    "size": 7,
+    "tags": []
+  }
+]

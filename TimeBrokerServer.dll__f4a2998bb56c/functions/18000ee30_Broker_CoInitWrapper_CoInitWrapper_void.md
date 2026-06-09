@@ -1,0 +1,24 @@
+# Broker::CoInitWrapper::~CoInitWrapper(void)
+
+- ea: `0x18000ee30`
+- end: `0x18000ee37`
+- name: `??1CoInitWrapper@Broker@@QEAA@XZ`
+- size: `7`
+- prototype: `void __stdcall()`
+- caller_count: `1`
+- callee_count: `0`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18001aba2`
+
+## import_xrefs
+
+- `api-ms-win-core-com-l1-1-0!CoUninitialize` at `0x18000ee30`
+
+## pseudocode
+
+```c
+
+```
