@@ -1,0 +1,188 @@
+# CmsBPlusTable::CommitBoundSetUpdate(CmsTransactionContext *,SmsDirtyTableEntries *,SmsWritePlan *)
+
+- ea: `0x1400568e0`
+- end: `0x14005aef6`
+- name: `?CommitBoundSetUpdate@CmsBPlusTable@@SAJPEAVCmsTransactionContext@@PEAUSmsDirtyTableEntries@@PEAUSmsWritePlan@@@Z`
+- size: `17942`
+- prototype: `__int64 __usercall@<rax>(struct CmsTransactionContext *@<rcx>, struct SmsDirtyTableEntries *@<rdx>, struct SmsWritePlan *@<r8>)`
+- caller_count: `1`
+- callee_count: `72`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x140147c6c`
+
+## callees
+
+- `0x140012c34`
+- `0x140014750`
+- `0x140016440`
+- `0x140016f60`
+- `0x140016f80`
+- `0x140016f90`
+- `0x140017020`
+- `0x140017060`
+- `0x14001712c`
+- `0x140017370`
+- `0x14001738c`
+- `0x1400173c0`
+- `0x140017850`
+- `0x140018360`
+- `0x14001f970`
+- `0x14001fa10`
+- `0x140021720`
+- `0x140021b70`
+- `0x1400222e0`
+- `0x1400227f0`
+- `0x140024c60`
+- `0x14002eaa0`
+- `0x1400318ac`
+- `0x140047400`
+- `0x140049050`
+- `0x14004dd04`
+- `0x14004ff60`
+- `0x140051e70`
+- `0x1400524e0`
+- `0x1400568e0`
+- `0x14005c060`
+- `0x14005c3c0`
+- `0x14005c420`
+- `0x14005c470`
+- `0x14005c4c0`
+- `0x14005c510`
+- `0x1400610cc`
+- `0x14006ad20`
+- `0x14006caf0`
+- `0x140070c20`
+- `0x1400757a0`
+- `0x1400774f0`
+- `0x140078ce0`
+- `0x140080270`
+- `0x14008766c`
+- `0x140087870`
+- `0x140089cb0`
+- `0x140093290`
+- `0x140097af0`
+- `0x1400a889c`
+
+## import_xrefs
+
+- `ntoskrnl!IoGetActivityIdThread` at `0x140056c61`
+- `ntoskrnl!IoGetActivityIdThread` at `0x140056c61`
+- `ntoskrnl!KeSetEvent` at `0x140056a1b`
+- `ntoskrnl!KeSetEvent` at `0x140056cd6`
+- `ntoskrnl!KeSetEvent` at `0x140057b5f`
+- `ntoskrnl!KeSetEvent` at `0x140059fe7`
+- `ntoskrnl!KeSetEvent` at `0x14005a135`
+- `ntoskrnl!KeSetEvent` at `0x14005a298`
+- `ntoskrnl!KeSetEvent` at `0x14005a427`
+- `ntoskrnl!KeSetEvent` at `0x140056a1b`
+- `ntoskrnl!KeSetEvent` at `0x140056cd6`
+- `ntoskrnl!KeSetEvent` at `0x140057b5f`
+- `ntoskrnl!KeSetEvent` at `0x140059fe7`
+- `ntoskrnl!KeSetEvent` at `0x14005a135`
+- `ntoskrnl!KeSetEvent` at `0x14005a298`
+- `ntoskrnl!KeSetEvent` at `0x14005a427`
+- `ntoskrnl!KdDebuggerEnabled` at `0x14005a6d4`
+- `ntoskrnl!KdDebuggerEnabled` at `0x14005a6f2`
+- `ntoskrnl!KdDebuggerEnabled` at `0x14005a708`
+- `ntoskrnl!KdDebuggerEnabled` at `0x14005a71e`
+- `ntoskrnl!KdDebuggerEnabled` at `0x14005a738`
+- `ntoskrnl!KdDebuggerEnabled` at `0x14005a74e`
+- `ntoskrnl!KeGetCurrentIrql` at `0x140056c79`
+- `ntoskrnl!KeGetCurrentIrql` at `0x140056c79`
+- `ntoskrnl!KeAcquireSpinLockRaiseToDpc` at `0x140056bc0`
+- `ntoskrnl!KeAcquireSpinLockRaiseToDpc` at `0x140056bc0`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140056c31`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140056c31`
+- `ntoskrnl!ExAcquirePushLockSharedEx` at `0x140057f81`
+- `ntoskrnl!ExAcquirePushLockSharedEx` at `0x14005aaa6`
+- `ntoskrnl!ExAcquirePushLockSharedEx` at `0x14005abc4`
+- `ntoskrnl!ExAcquirePushLockSharedEx` at `0x14005ad52`
+- `ntoskrnl!ExAcquirePushLockSharedEx` at `0x140057f81`
+- `ntoskrnl!ExAcquirePushLockSharedEx` at `0x14005aaa6`
+- `ntoskrnl!ExAcquirePushLockSharedEx` at `0x14005abc4`
+- `ntoskrnl!ExAcquirePushLockSharedEx` at `0x14005ad52`
+- `ntoskrnl!ExAllocatePool2` at `0x1401fd829`
+- `ntoskrnl!ExAllocatePool2` at `0x1401fd829`
+- `ntoskrnl!ExTryQueueWorkItem` at `0x140056cba`
+- `ntoskrnl!ExTryQueueWorkItem` at `0x140056cba`
+- `ntoskrnl!ExAcquireAutoExpandPushLockExclusive` at `0x140058d41`
+- `ntoskrnl!ExAcquireAutoExpandPushLockExclusive` at `0x1401fdc51`
+- `ntoskrnl!ExAcquireAutoExpandPushLockExclusive` at `0x140058d41`
+- `ntoskrnl!ExAcquireAutoExpandPushLockExclusive` at `0x1401fdc51`
+- `ntoskrnl!ExReleaseAutoExpandPushLockExclusive` at `0x140058d9a`
+- `ntoskrnl!ExReleaseAutoExpandPushLockExclusive` at `0x1401fdc78`
+- `ntoskrnl!ExReleaseAutoExpandPushLockExclusive` at `0x140058d9a`
+- `ntoskrnl!ExReleaseAutoExpandPushLockExclusive` at `0x1401fdc78`
+- `ntoskrnl!MmSetAddressRangeModified` at `0x140057415`
+- `ntoskrnl!MmSetAddressRangeModified` at `0x140058677`
+- `ntoskrnl!MmSetAddressRangeModified` at `0x140057415`
+- `ntoskrnl!MmSetAddressRangeModified` at `0x140058677`
+- `ntoskrnl!KeWaitForSingleObject` at `0x140056a49`
+- `ntoskrnl!KeWaitForSingleObject` at `0x140056a6a`
+- `ntoskrnl!KeWaitForSingleObject` at `0x140056fca`
+- `ntoskrnl!KeWaitForSingleObject` at `0x1401fd807`
+- `ntoskrnl!KeWaitForSingleObject` at `0x140056a49`
+- `ntoskrnl!KeWaitForSingleObject` at `0x140056a6a`
+- `ntoskrnl!KeWaitForSingleObject` at `0x140056fca`
+- `ntoskrnl!KeWaitForSingleObject` at `0x1401fd807`
+- `ntoskrnl!ExReleaseFastResource` at `0x14005766f`
+- `ntoskrnl!ExReleaseFastResource` at `0x140058df6`
+- `ntoskrnl!ExReleaseFastResource` at `0x1400594bb`
+- `ntoskrnl!ExReleaseFastResource` at `0x140059956`
+- `ntoskrnl!ExReleaseFastResource` at `0x140059bd5`
+- `ntoskrnl!ExReleaseFastResource` at `0x140059d81`
+- `ntoskrnl!ExReleaseFastResource` at `0x14005766f`
+- `ntoskrnl!ExReleaseFastResource` at `0x140058df6`
+- `ntoskrnl!ExReleaseFastResource` at `0x1400594bb`
+- `ntoskrnl!ExReleaseFastResource` at `0x140059956`
+- `ntoskrnl!ExReleaseFastResource` at `0x140059bd5`
+- `ntoskrnl!ExReleaseFastResource` at `0x140059d81`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005814f`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005836c`
+- `ntoskrnl!ExReleasePushLockEx` at `0x1400583cd`
+- `ntoskrnl!ExReleasePushLockEx` at `0x140058575`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005a00f`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005a15d`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005a2bc`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005a44b`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005aae6`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005ac06`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005ad94`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005814f`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005836c`
+- `ntoskrnl!ExReleasePushLockEx` at `0x1400583cd`
+- `ntoskrnl!ExReleasePushLockEx` at `0x140058575`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005a00f`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005a15d`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005a2bc`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005a44b`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005aae6`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005ac06`
+- `ntoskrnl!ExReleasePushLockEx` at `0x14005ad94`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14005a196`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14005a82a`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14005ac88`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401fd8b1`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14005a196`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14005a82a`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14005ac88`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401fd8b1`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x140058325`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x140059f90`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x14005a0e3`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x14005a246`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x14005a3cb`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x140058325`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x140059f90`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x14005a0e3`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x14005a246`
+- `ntoskrnl!ExAcquirePushLockExclusiveEx` at `0x14005a3cb`
+
+## pseudocode
+
+```c
+
+```

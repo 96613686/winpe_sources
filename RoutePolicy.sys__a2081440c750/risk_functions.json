@@ -1,0 +1,1809 @@
+[
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SepSddlSecurityDescriptorFromSDDLString",
+    "ea": "0x140017ca4",
+    "function_file": "functions/140017ca4_SepSddlSecurityDescriptorFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAbsoluteToSelfRelativeSD",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "name": "SepSddlSecurityDescriptorFromSDDLString",
+    "prototype": "",
+    "rank_score": 2068,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BindClassifyFn",
+    "ea": "0x140003340",
+    "function_file": "functions/140003340_BindClassifyFn.md",
+    "matched_imports": [
+      "fwpkclnt!FwpsAcquireClassifyHandle0",
+      "fwpkclnt!FwpsAcquireWritableLayerDataPointer0",
+      "fwpkclnt!FwpsApplyModifiedLayerData0",
+      "fwpkclnt!FwpsPendClassify0",
+      "fwpkclnt!FwpsReleaseClassifyHandle0",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "WdfWorkItemCreate for RoutePolicyAsyncRedirectRoutine failed"
+    ],
+    "name": "BindClassifyFn",
+    "prototype": "",
+    "rank_score": 1866,
+    "size": 1115,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcmKGetInterfaceForNetworkRequest(void *,_WCM_ROUTE_POLICY_NETWORK_REQUEST const &,_NET_LUID_LH *,void * *)",
+    "ea": "0x14000a2d8",
+    "function_file": "functions/14000a2d8_WcmKGetInterfaceForNetworkRequest_void_WCM_ROUTE_POLICY_NETWORK_REQUEST_const_NET_LUID_LH_void.md",
+    "matched_imports": [
+      "msrpc!RpcAsyncCancelCall",
+      "msrpc!RpcAsyncCompleteCall",
+      "msrpc!RpcAsyncInitializeHandle",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?WcmKGetInterfaceForNetworkRequest@@YAKPEAXAEBU_WCM_ROUTE_POLICY_NETWORK_REQUEST@@PEAT_NET_LUID_LH@@PEAPEAX@Z",
+    "prototype": "unsigned int __fastcall(void *, const struct _WCM_ROUTE_POLICY_NETWORK_REQUEST *, union _NET_LUID_LH *, void **)",
+    "rank_score": 1427,
+    "size": 410,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "UninitializeTelemetryAssertsKM",
+    "ea": "0x140009924",
+    "function_file": "functions/140009924_UninitializeTelemetryAssertsKM.md",
+    "matched_imports": [
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UninitializeTelemetryAssertsKM",
+    "prototype": "",
+    "rank_score": 1415,
+    "size": 324,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RoutePolicyProxy::Init(_DRIVER_OBJECT *)",
+    "ea": "0x1400083a0",
+    "function_file": "functions/1400083a0_RoutePolicyProxy_Init_DRIVER_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SeConvertStringSecurityDescriptorToSecurityDescriptor failed",
+      "IoCreateDeviceSecure failed",
+      "IoCreateSymbolicLink failed"
+    ],
+    "name": "?Init@RoutePolicyProxy@@YAJPEAU_DRIVER_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, struct _DRIVER_OBJECT *)",
+    "rank_score": 1380,
+    "size": 692,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PpRegStateUpdateStackCreationSettings",
+    "ea": "0x140018330",
+    "function_file": "functions/140018330_PpRegStateUpdateStackCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!SeCaptureSecurityDescriptor",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PpRegStateUpdateStackCreationSettings",
+    "prototype": "",
+    "rank_score": 1287,
+    "size": 372,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RoutePolicyProxy::IsCallerWcmSvc",
+    "ea": "0x14000865c",
+    "function_file": "functions/14000865c_RoutePolicyProxy_IsCallerWcmSvc.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeLockSubjectContext",
+      "ntoskrnl!SeReleaseSubjectContext",
+      "ntoskrnl!SeUnlockSubjectContext"
+    ],
+    "matched_strings": [
+      "SeAccessCheck failed"
+    ],
+    "name": "RoutePolicyProxy::IsCallerWcmSvc",
+    "prototype": "",
+    "rank_score": 1276,
+    "size": 310,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SepSddlGetAclForString",
+    "ea": "0x140017758",
+    "function_file": "functions/140017758_SepSddlGetAclForString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsnicmp",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetAclForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1, int)",
+    "rank_score": 1223,
+    "size": 951,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "InitializeTelemetryAssertsKMByDriverObject",
+    "ea": "0x14000919c",
+    "function_file": "functions/14000919c_InitializeTelemetryAssertsKMByDriverObject.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoQueryFullDriverPath",
+      "ntoskrnl!RtlFreeAnsiString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "InitializeTelemetryAssertsKMByDriverObject",
+    "prototype": "",
+    "rank_score": 1204,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCallout::Init(WDFDRIVER__ *,WDFDEVICE__ *)",
+    "ea": "0x140005034",
+    "function_file": "functions/140005034_RoutePolicyCallout_Init_WDFDRIVER_WDFDEVICE.md",
+    "matched_imports": [
+      "fwpkclnt!FwpmEngineClose0",
+      "fwpkclnt!FwpmEngineOpen0",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [
+      "WcmKOpenHandle failed",
+      "FwpmEngineOpen failed"
+    ],
+    "name": "?Init@RoutePolicyCallout@@YAJPEAUWDFDRIVER__@@PEAUWDFDEVICE__@@@Z",
+    "prototype": "__int64 __fastcall(RoutePolicyCallout *__hidden this, struct WDFDRIVER__ *, struct WDFDEVICE__ *)",
+    "rank_score": 1111,
+    "size": 1493,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 0,
+    "demangled": "RoutePolicyAsyncRedirectRoutine",
+    "ea": "0x140007280",
+    "function_file": "functions/140007280_RoutePolicyAsyncRedirectRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "No cache entry for this request"
+    ],
+    "name": "RoutePolicyAsyncRedirectRoutine",
+    "prototype": "",
+    "rank_score": 1103,
+    "size": 2721,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "ConnectClassifyFn",
+    "ea": "0x1400037a4",
+    "function_file": "functions/1400037a4_ConnectClassifyFn.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "ConnectClassifyFn: incoming context"
+    ],
+    "name": "ConnectClassifyFn",
+    "prototype": "",
+    "rank_score": 1087,
+    "size": 1536,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 2,
+    "demangled": "RoutePolicyCallout::Deinit(void)",
+    "ea": "0x140003f18",
+    "function_file": "functions/140003f18_RoutePolicyCallout_Deinit_void.md",
+    "matched_imports": [
+      "fwpkclnt!FwpmEngineClose0",
+      "fwpkclnt!FwpmSubLayerDeleteByKey0",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "FwpmSubLayerDeleteByKey failed"
+    ],
+    "name": "?Deinit@RoutePolicyCallout@@YAXXZ",
+    "prototype": "void __fastcall(RoutePolicyCallout *__hidden this)",
+    "rank_score": 1082,
+    "size": 1041,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "WcmKOpenHandle(void * *)",
+    "ea": "0x140009ff8",
+    "function_file": "functions/140009ff8_WcmKOpenHandle_void.md",
+    "matched_imports": [
+      "msrpc!RpcBindingBind",
+      "msrpc!RpcBindingCreateW",
+      "msrpc!RpcBindingFree",
+      "msrpc!RpcBindingSetOption",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "?WcmKOpenHandle@@YAJPEAPEAX@Z",
+    "prototype": "__int64 __fastcall(void **)",
+    "rank_score": 938,
+    "size": 370,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "EndpointClosureClassifyFn",
+    "ea": "0x140004330",
+    "function_file": "functions/140004330_EndpointClosureClassifyFn.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "No local V6 address incoming",
+      "No remote V6 address incoming"
+    ],
+    "name": "EndpointClosureClassifyFn",
+    "prototype": "",
+    "rank_score": 921,
+    "size": 1226,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WdmlibIoCreateDeviceSecure",
+    "ea": "0x140017140",
+    "function_file": "functions/140017140_WdmlibIoCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoCreateDeviceSecure",
+      "IoValidateDeviceIoControlAccess"
+    ],
+    "name": "WdmlibIoCreateDeviceSecure",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, ULONG DeviceExtensionSize, PUNICODE_STRING DeviceName, ULONG DeviceType, ULONG DeviceCharacteristics, BOOLEAN Exclusive, PCUNICODE_STRING DefaultSDDLString, LPCGUID DeviceClassGuid, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 894,
+    "size": 234,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RoutePolicyProxy::Deinit(void)",
+    "ea": "0x14000810c",
+    "function_file": "functions/14000810c_RoutePolicyProxy_Deinit_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoDeleteSymbolicLink failed"
+    ],
+    "name": "?Deinit@RoutePolicyProxy@@YAXXZ",
+    "prototype": "void __fastcall(RoutePolicyProxy *__hidden this)",
+    "rank_score": 885,
+    "size": 217,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PiRegStateReadStackCreationSettingsFromKey",
+    "ea": "0x140017fdc",
+    "function_file": "functions/140017fdc_PiRegStateReadStackCreationSettingsFromKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeCaptureSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PiRegStateReadStackCreationSettingsFromKey",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 879,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "FlowEstablishedClassifyFn",
+    "ea": "0x140004a84",
+    "function_file": "functions/140004a84_FlowEstablishedClassifyFn.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "FlowEstablishedClassifyFn: incoming context"
+    ],
+    "name": "FlowEstablishedClassifyFn",
+    "prototype": "",
+    "rank_score": 877,
+    "size": 970,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FxDriverEntryWorker",
+    "ea": "0x140008d94",
+    "function_file": "functions/140008d94_FxDriverEntryWorker.md",
+    "matched_imports": [
+      "WDFLDR!WdfLdrQueryInterface",
+      "WDFLDR!WdfVersionBind",
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "FxDriverEntryWorker",
+    "prototype": "__int64 __fastcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 829,
+    "size": 360,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_lambda_abec86eb39d26369503aaafa1ba2d18c_::operator()",
+    "ea": "0x140002d00",
+    "function_file": "functions/140002d00_lambda_abec86eb39d26369503aaafa1ba2d18c_operator.md",
+    "matched_imports": [
+      "fwpkclnt!FwpsApplyModifiedLayerData0",
+      "fwpkclnt!FwpsCompleteClassify0",
+      "fwpkclnt!FwpsReleaseClassifyHandle0",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "_lambda_abec86eb39d26369503aaafa1ba2d18c_::operator()",
+    "prototype": "",
+    "rank_score": 828,
+    "size": 353,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "ea": "0x1400184ac",
+    "function_file": "functions/1400184ac_SeUtilSecurityInfoFromSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlGetGroupSecurityDescriptor",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlGetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 824,
+    "size": 249,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SepSddlAddAceToAcl",
+    "ea": "0x140017580",
+    "function_file": "functions/140017580_SepSddlAddAceToAcl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlAddAceToAcl",
+    "prototype": "__int64 __fastcall(int, int, int, int, ACCESS_MASK AccessMask, int, PSID Sid)",
+    "rank_score": 815,
+    "size": 235,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "LogConnectionContextAddressPort",
+    "ea": "0x140005610",
+    "function_file": "functions/140005610_LogConnectionContextAddressPort.md",
+    "matched_imports": [
+      "ntoskrnl!RtlIpv4AddressToStringExW",
+      "ntoskrnl!RtlIpv6AddressToStringExW"
+    ],
+    "matched_strings": [],
+    "name": "LogConnectionContextAddressPort",
+    "prototype": "",
+    "rank_score": 811,
+    "size": 606,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CmRegUtilUcValueSetUcString",
+    "ea": "0x140018880",
+    "function_file": "functions/140018880_CmRegUtilUcValueSetUcString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilUcValueSetUcString",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, PUNICODE_STRING ValueName)",
+    "rank_score": 807,
+    "size": 307,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IopDevObjApplyPostCreationSettings",
+    "ea": "0x1400173c4",
+    "function_file": "functions/1400173c4_IopDevObjApplyPostCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeviceObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "IopDevObjApplyPostCreationSettings",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 734,
+    "size": 239,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FxStubDriverUnloadCommon(void)",
+    "ea": "0x140008c5c",
+    "function_file": "functions/140008c5c_FxStubDriverUnloadCommon_void.md",
+    "matched_imports": [
+      "WDFLDR!WdfVersionUnbind",
+      "WDFLDR!WdfVersionUnbindClass",
+      "ntoskrnl!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "?FxStubDriverUnloadCommon@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 715,
+    "size": 247,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "PrepareCleanupResourcesWorkItem(RoutePolicyCallout::INTERFACE_CONTEXT *,RoutePolicyCallout::CONNECTION_CONTEXT *)",
+    "ea": "0x140005874",
+    "function_file": "functions/140005874_PrepareCleanupResourcesWorkItem_RoutePolicyCallout_INTERFACE_CONTEXT_RoutePolicyCallout_CONNECTION_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "WdfWorkItemCreate for RoutePolicyAsyncCleanupRoutine failed"
+    ],
+    "name": "?PrepareCleanupResourcesWorkItem@@YAJPEAUINTERFACE_CONTEXT@RoutePolicyCallout@@PEAUCONNECTION_CONTEXT@2@@Z",
+    "prototype": "__int64 __fastcall(PVOID P, struct CONNECTION_CONTEXT *)",
+    "rank_score": 674,
+    "size": 741,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IoDevObjCreateDeviceSecure",
+    "ea": "0x140017230",
+    "function_file": "functions/140017230_IoDevObjCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "IoDevObjCreateDeviceSecure",
+    "prototype": "__int64 __usercall@<rax>(PDRIVER_OBJECT DriverObject@<rcx>, int, char, __int64, __int64, PDEVICE_OBJECT)",
+    "rank_score": 658,
+    "size": 395,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCache::UpdateRoutingRulesForInterface(WcmRoutePolicy::RoutingRulesForInterface const *,ulong)",
+    "ea": "0x140002abc",
+    "function_file": "functions/140002abc_RoutePolicyCache_UpdateRoutingRulesForInterface_WcmRoutePolicy_RoutingRulesForInterface_const_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateRoutingRulesForInterface@RoutePolicyCache@@YAJPEBURoutingRulesForInterface@WcmRoutePolicy@@K@Z",
+    "prototype": "__int64 __fastcall(RoutePolicyCache *__hidden this, size_t Size, unsigned int)",
+    "rank_score": 633,
+    "size": 572,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "FreeConnectionContext",
+    "ea": "0x140004e54",
+    "function_file": "functions/140004e54_FreeConnectionContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "FreeConnectionContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 619,
+    "size": 198,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "FreePackageEntry",
+    "ea": "0x14000242c",
+    "function_file": "functions/14000242c_FreePackageEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "FreePackageEntry",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 616,
+    "size": 100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "FreeCacheEntry",
+    "ea": "0x1400023c0",
+    "function_file": "functions/1400023c0_FreeCacheEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "FreeCacheEntry",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 615,
+    "size": 100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SepSddlGetSidForString",
+    "ea": "0x140017b18",
+    "function_file": "functions/140017b18_SepSddlGetSidForString.md",
+    "matched_imports": [
+      "ntoskrnl!IoIsWdmVersionAvailable",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetSidForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1)",
+    "rank_score": 513,
+    "size": 172,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCache::AddRequestResult(_WCM_ROUTE_POLICY_NETWORK_REQUEST const &,_NET_LUID_LH const &)",
+    "ea": "0x1400018cc",
+    "function_file": "functions/1400018cc_RoutePolicyCache_AddRequestResult_WCM_ROUTE_POLICY_NETWORK_REQUEST_const_NET_LUID_LH_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "Failed to allocate cache entry",
+      "DeepCopyNetworkRequest failed"
+    ],
+    "name": "?AddRequestResult@RoutePolicyCache@@YAJAEBU_WCM_ROUTE_POLICY_NETWORK_REQUEST@@AEBT_NET_LUID_LH@@@Z",
+    "prototype": "__int64 __fastcall(RoutePolicyCache *__hidden this, const struct _WCM_ROUTE_POLICY_NETWORK_REQUEST *, const union _NET_LUID_LH *)",
+    "rank_score": 511,
+    "size": 471,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "AddOrReferencePackageEntryForRoutingRule",
+    "ea": "0x1400016a0",
+    "function_file": "functions/1400016a0_AddOrReferencePackageEntryForRoutingRule.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [
+      "Failed to copy AppId"
+    ],
+    "name": "AddOrReferencePackageEntryForRoutingRule",
+    "prototype": "",
+    "rank_score": 483,
+    "size": 549,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "PiRegStateOpenClassKey",
+    "ea": "0x140017e48",
+    "function_file": "functions/140017e48_PiRegStateOpenClassKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!_snwprintf"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class"
+    ],
+    "name": "PiRegStateOpenClassKey",
+    "prototype": "",
+    "rank_score": 459,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14001903c",
+    "function_file": "functions/14001903c_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!MmGetSystemRoutineAddress"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 428,
+    "size": 636,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SeSddlSecurityDescriptorFromSDDL",
+    "ea": "0x1400174bc",
+    "function_file": "functions/1400174bc_SeSddlSecurityDescriptorFromSDDL.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SeSddlSecurityDescriptorFromSDDL",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 188,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCallout::QueryConnectionCache(RoutePolicyCallout::CONNECTION_CACHE_LIST * const,ulong,ulong *)",
+    "ea": "0x140005b60",
+    "function_file": "functions/140005b60_RoutePolicyCallout_QueryConnectionCache_RoutePolicyCallout_CONNECTION_CACHE_LIST_const_ulong_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?QueryConnectionCache@RoutePolicyCallout@@YAJQEAUCONNECTION_CACHE_LIST@1@KPEAK@Z",
+    "prototype": "__int64 __fastcall(RoutePolicyCallout *__hidden this, struct RoutePolicyCallout::CONNECTION_CACHE_LIST *const, unsigned int, unsigned int *)",
+    "rank_score": 425,
+    "size": 917,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PpRegStateReadCreateClassCreationSettings",
+    "ea": "0x1400181c4",
+    "function_file": "functions/1400181c4_PpRegStateReadCreateClassCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PpRegStateReadCreateClassCreationSettings",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 356,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "NPDoStringParametersMatch(ushort const *,ushort const *,bool)",
+    "ea": "0x140002590",
+    "function_file": "functions/140002590_NPDoStringParametersMatch_ushort_const_ushort_const_bool.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?NPDoStringParametersMatch@@YA_NPEBG0_N@Z",
+    "prototype": "bool __fastcall(PCWSTR SourceString, PCWSTR, bool)",
+    "rank_score": 418,
+    "size": 130,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WcmKCloseHandle(void *)",
+    "ea": "0x140009fb4",
+    "function_file": "functions/140009fb4_WcmKCloseHandle_void.md",
+    "matched_imports": [
+      "msrpc!RpcBindingFree",
+      "msrpc!RpcBindingUnbind"
+    ],
+    "matched_strings": [],
+    "name": "?WcmKCloseHandle@@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 416,
+    "size": 62,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FreeRulesEntry",
+    "ea": "0x140002498",
+    "function_file": "functions/140002498_FreeRulesEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "FreeRulesEntry",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 414,
+    "size": 74,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "TerminateConnectionsInList(_LIST_ENTRY *)",
+    "ea": "0x140006afc",
+    "function_file": "functions/140006afc_TerminateConnectionsInList_LIST_ENTRY.md",
+    "matched_imports": [
+      "NETIO!NsiSetAllParameters",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?TerminateConnectionsInList@@YAXPEAU_LIST_ENTRY@@@Z",
+    "prototype": "void __fastcall(struct _LIST_ENTRY *)",
+    "rank_score": 411,
+    "size": 450,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "RemoveCallout",
+    "ea": "0x140005efc",
+    "function_file": "functions/140005efc_RemoveCallout.md",
+    "matched_imports": [
+      "fwpkclnt!FwpmCalloutDeleteByKey0",
+      "fwpkclnt!FwpsCalloutUnregisterByKey0"
+    ],
+    "matched_strings": [],
+    "name": "RemoveCallout",
+    "prototype": "",
+    "rank_score": 407,
+    "size": 268,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "TraceLoggingRegister_EtwRegister_EtwSetInformation",
+    "ea": "0x140017008",
+    "function_file": "functions/140017008_TraceLoggingRegister_EtwRegister_EtwSetInformation.md",
+    "matched_imports": [
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!EtwSetInformation"
+    ],
+    "matched_strings": [],
+    "name": "TraceLoggingRegister_EtwRegister_EtwSetInformation",
+    "prototype": "__int64 __fastcall(PVOID CallbackContext)",
+    "rank_score": 405,
+    "size": 174,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCache::AppIdFromPackageId(void *,ushort * *)",
+    "ea": "0x140001bfc",
+    "function_file": "functions/140001bfc_RoutePolicyCache_AppIdFromPackageId_void_ushort.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualSid"
+    ],
+    "matched_strings": [
+      "Failed to copy AppId"
+    ],
+    "name": "?AppIdFromPackageId@RoutePolicyCache@@YAJPEAXPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(PSID Sid2, RoutePolicyCache *this, unsigned __int16 **)",
+    "rank_score": 281,
+    "size": 402,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "AppIdFromFilter",
+    "ea": "0x1400030dc",
+    "function_file": "functions/1400030dc_AppIdFromFilter.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [
+      "RoutePolicyCache::AppIdFromPackageId failed"
+    ],
+    "name": "AppIdFromFilter",
+    "prototype": "",
+    "rank_score": 273,
+    "size": 604,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "RoutePolicyCache::AllocateAndCopyStringParameter(ushort * *,ushort const *)",
+    "ea": "0x140001aac",
+    "function_file": "functions/140001aac_RoutePolicyCache_AllocateAndCopyStringParameter_ushort_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [
+      "Failed to compute string size"
+    ],
+    "name": "?AllocateAndCopyStringParameter@RoutePolicyCache@@YAJPEAPEAGPEBG@Z",
+    "prototype": "int(RoutePolicyCache *__hidden this, unsigned __int16 **, const unsigned __int16 *)",
+    "rank_score": 269,
+    "size": 327,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilCreateWstrKey",
+    "ea": "0x1400185ac",
+    "function_file": "functions/1400185ac_CmRegUtilCreateWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateWstrKey",
+    "prototype": "",
+    "rank_score": 245,
+    "size": 203,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilOpenExistingWstrKey",
+    "ea": "0x140018680",
+    "function_file": "functions/140018680_CmRegUtilOpenExistingWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilOpenExistingWstrKey",
+    "prototype": "",
+    "rank_score": 235,
+    "size": 133,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "RoutePolicyProxyDispatch(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140008960",
+    "function_file": "functions/140008960_RoutePolicyProxyDispatch_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?RoutePolicyProxyDispatch@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 232,
+    "size": 95,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 21,
+    "demangled": "AcquireSpinLock(unsigned __int64 *)",
+    "ea": "0x140007d28",
+    "function_file": "functions/140007d28_AcquireSpinLock_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc"
+    ],
+    "matched_strings": [],
+    "name": "?AcquireSpinLock@@YA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_K$$A6AXAEBUSpinLockAndSavedIrql@@@Z$1?Release@1@SAX0@ZU?$integral_constant@_K$01@wistd@@U1@PEA_K$0A@$$T@details@wil@@@details@wil@@@wil@@PEA_K@Z",
+    "prototype": "",
+    "rank_score": 231,
+    "size": 75,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 33,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x1400012f0",
+    "function_file": "functions/1400012f0_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, ULONG, PEVENT_DATA_DESCRIPTOR)",
+    "rank_score": 227,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RemoveWorkItem",
+    "ea": "0x140006010",
+    "function_file": "functions/140006010_RemoveWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "RemoveWorkItem",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 99,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 21,
+    "demangled": "SpinLockAndSavedIrql::Release(SpinLockAndSavedIrql const &)",
+    "ea": "0x140007d7c",
+    "function_file": "functions/140007d7c_SpinLockAndSavedIrql_Release_SpinLockAndSavedIrql_const.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?Release@SpinLockAndSavedIrql@@SAXAEBU1@@Z",
+    "prototype": "void __fastcall(const struct SpinLockAndSavedIrql *)",
+    "rank_score": 221,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCache::ClearAllRulesAndPackages(void)",
+    "ea": "0x140001d94",
+    "function_file": "functions/140001d94_RoutePolicyCache_ClearAllRulesAndPackages_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?ClearAllRulesAndPackages@RoutePolicyCache@@YAXXZ",
+    "prototype": "void __fastcall(RoutePolicyCache *__hidden this)",
+    "rank_score": 219,
+    "size": 318,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SepSddlDaclFromSDDLString",
+    "ea": "0x140017674",
+    "function_file": "functions/140017674_SepSddlDaclFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlDaclFromSDDLString",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 221,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NPCompareUnicodeString(_UNICODE_STRING const &,_UNICODE_STRING const &,bool)",
+    "ea": "0x1400024e8",
+    "function_file": "functions/1400024e8_NPCompareUnicodeString_UNICODE_STRING_const_UNICODE_STRING_const_bool.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?NPCompareUnicodeString@@YA_NAEBU_UNICODE_STRING@@0_N@Z",
+    "prototype": "bool __fastcall(const struct _UNICODE_STRING *, const struct _UNICODE_STRING *, bool)",
+    "rank_score": 213,
+    "size": 162,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCalloutInitDriverObjects(_DRIVER_OBJECT *,_UNICODE_STRING const *,WDFDRIVER__ * *,WDFDEVICE__ * *)",
+    "ea": "0x140007da0",
+    "function_file": "functions/140007da0_RoutePolicyCalloutInitDriverObjects_DRIVER_OBJECT_UNICODE_STRING_const_WDFDRIVER_WDFDEVICE.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WdfDriverCreate failed",
+      "WdfDeviceCreate failed"
+    ],
+    "name": "?RoutePolicyCalloutInitDriverObjects@@YAJPEAU_DRIVER_OBJECT@@PEBU_UNICODE_STRING@@PEAPEAUWDFDRIVER__@@PEAPEAUWDFDEVICE__@@@Z",
+    "prototype": "__int64 __fastcall(struct _DRIVER_OBJECT *, const struct _UNICODE_STRING *, struct WDFDRIVER__ **, struct WDFDEVICE__ **)",
+    "rank_score": 100,
+    "size": 690,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RoutePolicyProxy::SetRoutingRulesForInterface",
+    "ea": "0x1400089c8",
+    "function_file": "functions/1400089c8_RoutePolicyProxy_SetRoutingRulesForInterface.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RoutePolicyCache::UpdateRoutingRulesForInterface failed"
+    ],
+    "name": "RoutePolicyProxy::SetRoutingRulesForInterface",
+    "prototype": "",
+    "rank_score": 76,
+    "size": 243,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RoutePolicyProxy::QueryConnectionCache",
+    "ea": "0x140008798",
+    "function_file": "functions/140008798_RoutePolicyProxy_QueryConnectionCache.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RoutePolicyCallout::QueryConnectionCacheForInterface failed"
+    ],
+    "name": "RoutePolicyProxy::QueryConnectionCache",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 216,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RoutePolicyProxy::QueryRoutingRulesForInterface",
+    "ea": "0x140008878",
+    "function_file": "functions/140008878_RoutePolicyProxy_QueryRoutingRulesForInterface.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RoutePolicyCache::QueryRoutingRulesForInterface failed"
+    ],
+    "name": "RoutePolicyProxy::QueryRoutingRulesForInterface",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 216,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DeepCopyNetworkRequest",
+    "ea": "0x140001ed8",
+    "function_file": "functions/140001ed8_DeepCopyNetworkRequest.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to copy AppId"
+    ],
+    "name": "DeepCopyNetworkRequest",
+    "prototype": "",
+    "rank_score": 65,
+    "size": 225,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "RoutePolicyCallout::Wrapper_WcmKReleaseInterface(void *,void *)",
+    "ea": "0x140006e28",
+    "function_file": "functions/140006e28_RoutePolicyCallout_Wrapper_WcmKReleaseInterface_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WcmKOpenHandle failed"
+    ],
+    "name": "?Wrapper_WcmKReleaseInterface@RoutePolicyCallout@@YAKPEAX0@Z",
+    "prototype": "unsigned int(RoutePolicyCallout *__hidden this, void *, void *)",
+    "rank_score": 63,
+    "size": 334,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCallout::Wrapper_WcmKGetInterfaceForNetworkRequest(void *,_WCM_ROUTE_POLICY_NETWORK_REQUEST const &,_NET_LUID_LH *,void * *)",
+    "ea": "0x140006cc4",
+    "function_file": "functions/140006cc4_RoutePolicyCallout_Wrapper_WcmKGetInterfaceForNetworkRequest_void_WCM_ROUTE_POLICY_NETWORK_REQUEST_const_NET_L.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WcmKOpenHandle failed"
+    ],
+    "name": "?Wrapper_WcmKGetInterfaceForNetworkRequest@RoutePolicyCallout@@YAKPEAXAEBU_WCM_ROUTE_POLICY_NETWORK_REQUEST@@PEAT_NET_LUID_LH@@PEAPEAX@Z",
+    "prototype": "unsigned int(RoutePolicyCallout *__hidden this, void *, const struct _WCM_ROUTE_POLICY_NETWORK_REQUEST *, union _NET_LUID_LH *, void **)",
+    "rank_score": 60,
+    "size": 347,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CreateTimerWaitFlowEstablish",
+    "ea": "0x140003dac",
+    "function_file": "functions/140003dac_CreateTimerWaitFlowEstablish.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to create timer"
+    ],
+    "name": "CreateTimerWaitFlowEstablish",
+    "prototype": "",
+    "rank_score": 59,
+    "size": 357,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 48,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14000a680",
+    "function_file": "functions/14000a680_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "MicrosoftTelemetryAssertTriggeredNoArgsKM",
+    "ea": "0x14000935c",
+    "function_file": "functions/14000935c_MicrosoftTelemetryAssertTriggeredNoArgsKM.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MicrosoftTelemetryAssertTriggeredNoArgsKM",
+    "prototype": "",
+    "rank_score": 33,
+    "size": 43,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x14000a6c0",
+    "function_file": "functions/14000a6c0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 33,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "RoutePolicyCache::RemoveRequest(_WCM_ROUTE_POLICY_NETWORK_REQUEST const &)",
+    "ea": "0x1400029f4",
+    "function_file": "functions/1400029f4_RoutePolicyCache_RemoveRequest_WCM_ROUTE_POLICY_NETWORK_REQUEST_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveRequest@RoutePolicyCache@@YAJAEBU_WCM_ROUTE_POLICY_NETWORK_REQUEST@@@Z",
+    "prototype": "__int64 __fastcall(RoutePolicyCache *__hidden this, const struct _WCM_ROUTE_POLICY_NETWORK_REQUEST *)",
+    "rank_score": 29,
+    "size": 194,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 32,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<char>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@D@@U?$_tlgWrapperByVal@$03@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@D@@AEBU?$_tlgWrapperByVal@$03@@@Z",
+    "prototype": "",
+    "rank_score": 29,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCache::DoesRequestMatchAnyRule(_WCM_ROUTE_POLICY_NETWORK_REQUEST const &)",
+    "ea": "0x14000225c",
+    "function_file": "functions/14000225c_RoutePolicyCache_DoesRequestMatchAnyRule_WCM_ROUTE_POLICY_NETWORK_REQUEST_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DoesRequestMatchAnyRule@RoutePolicyCache@@YA_NAEBU_WCM_ROUTE_POLICY_NETWORK_REQUEST@@@Z",
+    "prototype": "bool __fastcall(RoutePolicyCache *__hidden this, const struct _WCM_ROUTE_POLICY_NETWORK_REQUEST *)",
+    "rank_score": 28,
+    "size": 350,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "RoutePolicyCache::RemoveInterface(_NET_LUID_LH const &)",
+    "ea": "0x14000294c",
+    "function_file": "functions/14000294c_RoutePolicyCache_RemoveInterface_NET_LUID_LH_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveInterface@RoutePolicyCache@@YAJAEBT_NET_LUID_LH@@@Z",
+    "prototype": "__int64 __fastcall(RoutePolicyCache *__hidden this, const union _NET_LUID_LH *)",
+    "rank_score": 28,
+    "size": 159,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "RoutePolicyCache::QueryRoutingRulesForInterface(WcmRoutePolicy::RoutingRulesForInterface * const,ulong,ulong *)",
+    "ea": "0x140002618",
+    "function_file": "functions/140002618_RoutePolicyCache_QueryRoutingRulesForInterface_WcmRoutePolicy_RoutingRulesForInterface_const_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryRoutingRulesForInterface@RoutePolicyCache@@YAJQEAURoutingRulesForInterface@WcmRoutePolicy@@KPEAK@Z",
+    "prototype": "__int64 __fastcall(RoutePolicyCache *__hidden this, struct WcmRoutePolicy::RoutingRulesForInterface *const, unsigned int, unsigned int *)",
+    "rank_score": 23,
+    "size": 812,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14000a54c",
+    "function_file": "functions/14000a54c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FxDriverEntry",
+    "ea": "0x140008d60",
+    "function_file": "functions/140008d60_FxDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FxDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "RoutePolicyCache::Deinit(void)",
+    "ea": "0x140001fc0",
+    "function_file": "functions/140001fc0_RoutePolicyCache_Deinit_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Deinit@RoutePolicyCache@@YAXXZ",
+    "prototype": "void __fastcall(RoutePolicyCache *__hidden this)",
+    "rank_score": 20,
+    "size": 216,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "memmove",
+    "ea": "0x14000a780",
+    "function_file": "functions/14000a780_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 17,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<ushort>,_tlgWrapSid<_SID>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<ushort> const &,_tlgWrapSid<_SID> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x14000116c",
+    "function_file": "functions/14000116c_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@G@@U?$_tlgWrapSid@U_SID@@@@U?$_tlgWrapperByVal@$03@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@G@@AEBU?$_tlgWrapSid@U_SID@@@@AEBU?$_tlgWrapperByVal@$03@@@Z",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 208,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<ushort>,_tlgWrapSid<_SID>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<ushort> const &,_tlgWrapSid<_SID> const &)",
+    "ea": "0x1400010b0",
+    "function_file": "functions/1400010b0_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@G@@U?$_tlgWrapSid@U_SID@@@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@G@@AEBU?$_tlgWrapSid@U_SID@@@@@Z",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 181,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "memset",
+    "ea": "0x14000aa80",
+    "function_file": "functions/14000aa80_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 16,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140019008",
+    "function_file": "functions/140019008_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x14000a6f0",
+    "function_file": "functions/14000a6f0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WdmlibRtlInitUnicodeStringEx",
+    "ea": "0x140008c0c",
+    "function_file": "functions/140008c0c_WdmlibRtlInitUnicodeStringEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibRtlInitUnicodeStringEx",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DestinationString, PCWSTR SourceString)",
+    "rank_score": 8,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "GetTcpConnectionKeyFromConnectionContext",
+    "ea": "0x140004f20",
+    "function_file": "functions/140004f20_GetTcpConnectionKeyFromConnectionContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetTcpConnectionKeyFromConnectionContext",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "StartTimerWaitFlowEstablish",
+    "ea": "0x14000646c",
+    "function_file": "functions/14000646c_StartTimerWaitFlowEstablish.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StartTimerWaitFlowEstablish",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 251,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<char>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<char> const &)",
+    "ea": "0x1400013b0",
+    "function_file": "functions/1400013b0_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@D@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@D@@@Z",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<ushort>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x140001244",
+    "function_file": "functions/140001244_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@G@@U?$_tlgWrapperByVal@$03@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@G@@AEBU?$_tlgWrapperByVal@$03@@@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<2>,_tlgWrapperByVal<2>,_tlgWrapSz<ushort>,_tlgWrapperByVal<1>,_tlgWrapperByVal<8>,_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<2> const &,_tlgWrapperByVal<2> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapSz<ushort> const &)",
+    "ea": "0x140001440",
+    "function_file": "functions/140001440_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$01@@U1@U?$_tlgWrapSz@G@@U?$_tlgWrapperByVal@$00@@U?$_tlgWrapperByVal@$07@@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$01@@3AEBU?$_tlgWrapSz@G@@AEBU?$_tlgWrapperByVal@$00@@AEBU?$_tlgWrapperByVal@$07@@4@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "INETADDR_SETSOCKADDR",
+    "ea": "0x140006f7c",
+    "function_file": "functions/140006f7c_INETADDR_SETSOCKADDR.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "INETADDR_SETSOCKADDR",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 205,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "operator__",
+    "ea": "0x140001580",
+    "function_file": "functions/140001580_operator.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "operator__",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Ipv6AddressScope",
+    "ea": "0x140007050",
+    "function_file": "functions/140007050_Ipv6AddressScope.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Ipv6AddressScope",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 185,
+    "tags": []
+  }
+]

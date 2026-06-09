@@ -1,0 +1,31 @@
+# `wil::details::EnsureCoalescedTimer<wil::details::FeatureStateManager>(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_TP_TIMER *,void (*)(_TP_TIMER *),&wil::details::DestroyThreadPoolTimer<wil::details::SystemThreadPoolMethods,0>::Destroy(_TP_TIMER *),wistd::integral_constant<unsigned __int64,0>,_TP_TIMER *,_TP_TIMER *,0,std::nullptr_t>>> &,bool &,wil::details::FeatureStateManager *)'::`8'::_lambda_1_::_lambda_invoker_cdecl_(_TP_CALLBACK_INSTANCE *,void *,_TP_TIMER *)
+
+- ea: `0x1800045b0`
+- end: `0x18000463b`
+- name: `?_lambda_invoker_cdecl_@_lambda_1_@?7???$EnsureCoalescedTimer@VFeatureStateManager@details@wil@@@details@wil@@YAXAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAU_TP_TIMER@@P6AXPEAU1@@Z$1?Destroy@?$DestroyThreadPoolTimer@USystemThreadPoolMethods@details@wil@@$0A@@details@wil@@SAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@3@AEA_NPEAVFeatureStateManager@23@@Z@SA@PEAU_TP_CALLBACK_INSTANCE@@PEAXPEAU_TP_TIMER@@@Z`
+- size: `139`
+- prototype: `void __fastcall(PTP_CALLBACK_INSTANCE Instance, char *Context, PTP_TIMER Timer)`
+- caller_count: `0`
+- callee_count: `5`
+- tags: `registry_config`
+
+## callees
+
+- `0x1800045b0`
+- `0x180006d64`
+- `0x180008780`
+- `0x180009290`
+- `0x180033010`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x1800045d3`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x1800045d3`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x1800045e5`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x1800045e5`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,67 @@
+# wil::details::EnsureCoalescedTimer_SetTimer(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_TP_TIMER *,void (*)(_TP_TIMER *),&wil::details::DestroyThreadPoolTimer<wil::details::SystemThreadPoolMethods,0>::Destroy(_TP_TIMER *),wistd::integral_constant<unsigned __int64,0>,_TP_TIMER *,_TP_TIMER *,0,std::nullptr_t>>> &,bool &,__int64)
+
+- ea: `0x180078b14`
+- end: `0x180078b56`
+- name: `?EnsureCoalescedTimer_SetTimer@details@wil@@YAXAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAU_TP_TIMER@@P6AXPEAU1@@Z$1?Destroy@?$DestroyThreadPoolTimer@USystemThreadPoolMethods@details@wil@@$0A@@details@wil@@SAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@2@AEA_N_J@Z`
+- size: `66`
+- prototype: ``
+- caller_count: `3`
+- callee_count: `1`
+- tags: `registry_config`
+
+## callers
+
+- `0x18007ad94`
+- `0x18007ae98`
+- `0x18007b614`
+
+## callees
+
+- `0x180078b14`
+
+## import_xrefs
+
+- `KERNEL32!SetThreadpoolTimer` at `0x180078b40`
+- `KERNEL32!SetThreadpoolTimer` at `0x180078b40`
+
+## pseudocode
+
+```c
+void __fastcall wil::details::EnsureCoalescedTimer_SetTimer(struct _TP_TIMER **a1, _BYTE *a2, __int64 a3)
+{
+  struct _TP_TIMER *v3; // rcx
+  struct _FILETIME pftDueTime; // [rsp+30h] [rbp+8h] BYREF
+
+  v3 = *a1;
+  if ( v3 )
+  {
+    pftDueTime = (struct _FILETIME)(-10000 * a3);
+    SetThreadpoolTimer(v3, &pftDueTime, 0, (unsigned int)a3 >> 2);
+    *a2 = 1;
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x180078b14  push    rbx
+0x180078b16  sub     rsp, 20h
+0x180078b1a  mov     rcx, [rcx]; pti
+0x180078b1d  mov     rbx, rdx
+0x180078b20  test    rcx, rcx
+0x180078b23  jz      short loc_180078B4F
+0x180078b25  imul    rax, r8, 0FFFFFFFFFFFFD8F0h
+0x180078b2c  shr     r8d, 2
+0x180078b30  lea     rdx, [rsp+28h+pftDueTime]; pftDueTime
+0x180078b35  mov     r9d, r8d; msWindowLength
+0x180078b38  mov     qword ptr [rsp+28h+pftDueTime.dwLowDateTime], rax
+0x180078b3d  xor     r8d, r8d; msPeriod
+0x180078b40  call    cs:__imp_SetThreadpoolTimer
+0x180078b47  nop     dword ptr [rax+rax+00h]
+0x180078b4c  mov     byte ptr [rbx], 1
+0x180078b4f  add     rsp, 20h
+0x180078b53  pop     rbx
+0x180078b54  retn
+```

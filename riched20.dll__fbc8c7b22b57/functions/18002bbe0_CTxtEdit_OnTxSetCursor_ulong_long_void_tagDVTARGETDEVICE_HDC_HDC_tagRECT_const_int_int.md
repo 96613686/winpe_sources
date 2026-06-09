@@ -1,0 +1,596 @@
+# CTxtEdit::OnTxSetCursor(ulong,long,void *,tagDVTARGETDEVICE *,HDC__ *,HDC__ *,tagRECT const *,int,int)
+
+- ea: `0x18002bbe0`
+- end: `0x18002c173`
+- name: `?OnTxSetCursor@CTxtEdit@@UEAAJKJPEAXPEAUtagDVTARGETDEVICE@@PEAUHDC__@@2PEBUtagRECT@@HH@Z`
+- size: `1427`
+- prototype: `__int64 __usercall@<rax>(CTxtEdit *__hidden this@<rcx>, unsigned int@<edx>, int@<r8d>, void *@<r9>, struct tagDVTARGETDEVICE *, HDC hdc, HDC, const struct tagRECT *, int, int)`
+- caller_count: `0`
+- callee_count: `20`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x18002a740`
+- `0x18002a790`
+- `0x18002bbe0`
+- `0x18002c58c`
+- `0x18002c5d8`
+- `0x18002c650`
+- `0x18002dce0`
+- `0x18003b500`
+- `0x18003e42c`
+- `0x180041200`
+- `0x1800412c0`
+- `0x180042f94`
+- `0x18004ae60`
+- `0x180054428`
+- `0x180058104`
+- `0x1800825c8`
+- `0x18008455c`
+- `0x180090974`
+- `0x180093c00`
+- `0x180095010`
+
+## import_xrefs
+
+- `USER32!GetCursorPos` at `0x18002beea`
+- `USER32!GetCursorPos` at `0x18002beea`
+- `USER32!PtInRect` at `0x18002be2e`
+- `USER32!PtInRect` at `0x18002be2e`
+- `GDI32!LPtoDP` at `0x18002bd1b`
+- `GDI32!LPtoDP` at `0x18002bd1b`
+- `GDI32!GetDeviceCaps` at `0x18002bcf9`
+- `GDI32!GetDeviceCaps` at `0x18002bcf9`
+- `GDI32!DeleteDC` at `0x18002bda5`
+- `GDI32!DeleteDC` at `0x18002bda5`
+- `GDI32!RestoreDC` at `0x18002bd8e`
+- `GDI32!RestoreDC` at `0x18002bd8e`
+- `GDI32!GetMapMode` at `0x18002bce0`
+- `GDI32!GetMapMode` at `0x18002bce0`
+
+## pseudocode
+
+```c
+__int64 __fastcall CTxtEdit::OnTxSetCursor(
+        CTxtEdit *this,
+        LONG a2,
+        int a3,
+        struct tagPOINT a4,
+        struct tagDVTARGETDEVICE *a5,
+        HDC hdc,
+        HDC a7,
+        const struct tagRECT *a8,
+        unsigned int a9,
+        unsigned int a10)
+{
+  const struct tagRECT *v10; // r14
+  int v11; // r13d
+  HDC v13; // r12
+  HDC v14; // rsi
+  HDC IC; // rax
+  HDC v16; // rdx
+  struct CTxtSelection *Sel; // r12
+  HICON v18; // rsi
+  int v19; // ecx
+  int v20; // eax
+  bool v21; // zf
+  int v22; // r8d
+  int v23; // r8d
+  int AcpFromCp; // eax
+  __int64 v25; // rcx
+  int v26; // ebx
+  unsigned int v27; // ebx
+  __int64 v28; // rax
+  COleObject *v29; // rcx
+  unsigned __int16 *v30; // rax
+  HICON SizeCursor; // rax
+  POINT v33; // [rsp+50h] [rbp-B0h] BYREF
+  int v34; // [rsp+58h] [rbp-A8h]
+  int v35; // [rsp+5Ch] [rbp-A4h] BYREF
+  struct tagPOINT Point; // [rsp+60h] [rbp-A0h] BYREF
+  int v37; // [rsp+68h] [rbp-98h] BYREF
+  int v38; // [rsp+6Ch] [rbp-94h] BYREF
+  HWND v39[2]; // [rsp+70h] [rbp-90h] BYREF
+  _OWORD v40[2]; // [rsp+80h] [rbp-80h] BYREF
+  int v41; // [rsp+A0h] [rbp-60h]
+  _OWORD v42[2]; // [rsp+A8h] [rbp-58h] BYREF
+  _QWORD v43[7]; // [rsp+C8h] [rbp-38h] BYREF
+  _BYTE v44[112]; // [rsp+100h] [rbp+0h] BYREF
+  struct tagPOINT pt[2]; // [rsp+170h] [rbp+70h] BYREF
+
+  v10 = a8;
+  v11 = 0;
+  v13 = a7;
+  Point = a4;
+  v34 = a3;
+  v33.x = a2;
+  memset(v42, 0, sizeof(v42));
+  if ( this )
+  {
+    *((_QWORD *)&v42[0] + 1) = *((_QWORD *)this + 18);
+    *((_QWORD *)this + 18) = v42;
+    *(_QWORD *)&v42[0] = this;
+    CCallMgr::NotifyEnterContext((CCallMgr *)v42);
+  }
+  v35 = 0;
+  v43[0] = 0;
+  v43[3] = 0;
+  v43[1] = this;
+  v43[2] = 0;
+  *(_OWORD *)&pt[0].x = 0;
+  if ( !a8 )
+  {
+    if ( (*((_BYTE *)this + 180) & 8) != 0 )
+    {
+      (*(void (__fastcall **)(_QWORD, struct tagPOINT *))(**((_QWORD **)this + 6) + 192LL))(*((_QWORD *)this + 6), pt);
+      v10 = (const struct tagRECT *)pt;
+      goto LABEL_17;
+    }
+    goto LABEL_44;
+  }
+  v14 = 0;
+  if ( a7 || !a5 )
+    goto LABEL_8;
+  IC = CW32System::CreateIC(
+         (unsigned __int16 *)((char *)a5 + a5->tdDriverNameOffset),
+         (unsigned __int16 *)((char *)a5 + a5->tdDeviceNameOffset),
+         (unsigned __int16 *)((char *)a5 + a5->tdPortNameOffset),
+         (const struct _devicemodeW *)((char *)a5 + a5->tdExtDevmodeOffset));
+  v14 = IC;
+  if ( !IC )
+  {
+LABEL_44:
+    v27 = -2147024809;
+    goto LABEL_45;
+  }
+  v13 = IC;
+LABEL_8:
+  *(struct tagRECT *)&pt[0].x = *a8;
+  if ( GetMapMode(hdc) != 1 && GetDeviceCaps(hdc, 2) != 5 )
+  {
+    v11 = 1;
+    LPtoDP(hdc, pt, 2);
+    v10 = (const struct tagRECT *)pt;
+    ConvertDrawDCMapping(hdc);
+  }
+  CDevDesc::SetDC((CDevDesc *)(*((_QWORD *)this + 8) + 16LL), hdc, -1, -1);
+  CDisplay::SetDrawInfo(*((CDisplay **)this + 8), (struct CDrawInfo *)v43, v33.x, v34, *(void **)&Point, a5, v13);
+  CDisplay::ReDrawOnRectChange(*((CDisplay **)this + 8), v16, v10);
+  if ( v11 )
+    RestoreDC(hdc, -1);
+  if ( v14 )
+    DeleteDC(v14);
+LABEL_17:
+  v34 = 0;
+  Sel = CTxtEdit::GetSel(this);
+  v18 = CTxtEdit::_hcurArrow;
+  v33 = (POINT)__PAIR64__(a10, a9);
+  if ( !PtInRect((const RECT *)pt, (POINT)__PAIR64__(a10, a9)) )
+    goto LABEL_41;
+  (*(void (__fastcall **)(_QWORD, unsigned __int64, const struct tagRECT *, _QWORD, _QWORD, _DWORD, int *, _QWORD, _QWORD))(**((_QWORD **)this + 8) + 232LL))(
+    *((_QWORD *)this + 8),
+    __PAIR64__(a10, a9),
+    v10,
+    0,
+    0,
+    0,
+    &v35,
+    0,
+    0);
+  v19 = v35;
+  if ( v35 == 3 )
+  {
+    v18 = CTxtEdit::_hcurSelBar;
+    goto LABEL_41;
+  }
+  if ( v35 != 7 )
+  {
+    if ( ((v35 - 1) & 0xFFFFFFFC) == 0 )
+      goto LABEL_41;
+    if ( Sel )
+    {
+      if ( (unsigned int)CTxtSelection::PointInSel(Sel, __PAIR64__(a10, a9), v10, 0)
+        && (*((_DWORD *)this + 45) & 0x1000) == 0 )
+      {
+LABEL_37:
+        v28 = *((_QWORD *)this + 17);
+        if ( v28 )
+        {
+          v29 = *(COleObject **)(v28 + 48);
+          if ( v29 )
+          {
+            v30 = COleObject::CheckForHandleHit(v29, &v33);
+            SizeCursor = CW32System::GetSizeCursor(v30);
+            if ( SizeCursor )
+              v18 = SizeCursor;
+          }
+        }
+        goto LABEL_41;
+      }
+      v19 = v35;
+    }
+    v18 = CTxtEdit::_hcurIBeam;
+    v34 = 1;
+    if ( v19 == 8 )
+      v18 = CTxtEdit::_hcurItalic;
+    goto LABEL_37;
+  }
+  if ( (*((_DWORD *)this + 44) & 0x4000000) != 0 && (*((_BYTE *)this + 180) & 8) != 0 )
+  {
+    v37 = 0;
+    Point.x = (unsigned __int16)a9;
+    Point.y = ((unsigned __int16)a9 | (unsigned __int64)((unsigned __int16)a10 << 16)) >> 16;
+    GetCursorPos(&Point);
+    if ( (*(unsigned int (__fastcall **)(_QWORD, struct tagPOINT *))(**((_QWORD **)this + 6) + 160LL))(
+           *((_QWORD *)this + 6),
+           &Point) )
+    {
+      v20 = (*(__int64 (__fastcall **)(_QWORD, struct tagPOINT, _QWORD, _QWORD, _QWORD, _DWORD, int *, _QWORD, _QWORD))(**((_QWORD **)this + 8) + 232LL))(
+              *((_QWORD *)this + 8),
+              Point,
+              0,
+              0,
+              0,
+              0,
+              &v37,
+              0,
+              0);
+      if ( v37 == 7 )
+      {
+        v38 = 0;
+        v33.x = 0;
+        v41 = 0;
+        *(_OWORD *)v39 = 0;
+        memset(v40, 0, sizeof(v40));
+        CTxtRange::CTxtRange((CTxtRange *)v44, this, v20, 0);
+        v21 = (*((_DWORD *)this + 45) & 0x8000000) == 0;
+        *(_OWORD *)v39 = 0;
+        v41 = 0;
+        memset(v40, 0, sizeof(v40));
+        if ( !v21 )
+        {
+          (*(void (__fastcall **)(char *, HWND *))(*((_QWORD *)this + 2) + 304LL))((char *)this + 16, v39);
+          v39[1] = (HWND)(int)CW32System::GetWindowLong(v39[0], -12);
+        }
+        LODWORD(v40[0]) = 1803;
+        CTxtRange::Expander((CTxtRange *)v44, -2147483616, 1, 0, &v38, (int *)&v33);
+        DWORD2(v40[0]) = 32;
+        *(_QWORD *)((char *)v40 + 12) = 0;
+        *(_QWORD *)((char *)&v40[1] + 4) = (unsigned __int16)a9 | (unsigned __int64)((unsigned __int16)a10 << 16);
+        HIDWORD(v40[1]) = CTxtEdit::GetAcpFromCp(this, v38, v22);
+        AcpFromCp = CTxtEdit::GetAcpFromCp(this, v33.x, v23);
+        v25 = *((_QWORD *)this + 6);
+        v41 = AcpFromCp;
+        v26 = (*(__int64 (__fastcall **)(__int64, __int64, HWND *))(*(_QWORD *)v25 + 304LL))(v25, 1803, v39);
+        CTxtRange::~CTxtRange((CTxtRange *)v44);
+        if ( v26 == 1 )
+        {
+          v27 = 0;
+          goto LABEL_45;
+        }
+      }
+    }
+  }
+  v18 = CTxtEdit::_hcurHand;
+LABEL_41:
+  (*(void (__fastcall **)(_QWORD, HICON, _QWORD))(**((_QWORD **)this + 6) + 152LL))(
+    *((_QWORD *)this + 6),
+    v18,
+    (unsigned int)v34);
+  if ( hdc )
+    CDevDesc::SetDC((CDevDesc *)(*((_QWORD *)this + 8) + 16LL), 0, -1, -1);
+  CDisplay::ReleaseDrawInfo(*((CDisplay **)this + 8));
+  v27 = 0;
+LABEL_45:
+  CCallMgr::~CCallMgr((CCallMgr *)v42);
+  return v27;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18002bbe0  push    rbp
+0x18002bbe2  push    rbx
+0x18002bbe3  push    rsi
+0x18002bbe4  push    rdi
+0x18002bbe5  push    r12
+0x18002bbe7  push    r13
+0x18002bbe9  push    r14
+0x18002bbeb  push    r15
+0x18002bbed  lea     rbp, [rsp-98h]
+0x18002bbf5  sub     rsp, 198h
+0x18002bbfc  mov     rax, cs:__security_cookie
+0x18002bc03  xor     rax, rsp
+0x18002bc06  mov     [rbp+0D0h+var_50], rax
+0x18002bc0d  mov     r14, [rbp+0D0h+arg_38]
+0x18002bc14  xorps   xmm0, xmm0
+0x18002bc17  mov     rbx, [rbp+0D0h+arg_20]
+0x18002bc1e  xor     r13d, r13d
+0x18002bc21  mov     r15, [rbp+0D0h+hdc]
+0x18002bc28  mov     rdi, rcx
+0x18002bc2b  mov     r12, [rbp+0D0h+arg_30]
+0x18002bc32  mov     qword ptr [rsp+1D0h+Point.x], r9
+0x18002bc37  mov     [rsp+1D0h+var_178], r8d
+0x18002bc3c  mov     [rsp+1D0h+var_180.x], edx
+0x18002bc40  movups  [rbp+0D0h+var_128], xmm0
+0x18002bc44  movups  [rbp+0D0h+var_118], xmm0
+0x18002bc48  test    rcx, rcx
+0x18002bc4b  jz      short loc_18002BC70
+0x18002bc4d  mov     rax, [rcx+90h]
+0x18002bc54  mov     qword ptr [rbp+0D0h+var_128+8], rax
+0x18002bc58  lea     rax, [rbp+0D0h+var_128]
+0x18002bc5c  mov     [rcx+90h], rax
+0x18002bc63  mov     qword ptr [rbp+0D0h+var_128], rcx
+0x18002bc67  lea     rcx, [rbp+0D0h+var_128]; this
+0x18002bc6b  call    ?NotifyEnterContext@CCallMgr@@AEAAXXZ; CCallMgr::NotifyEnterContext(void)
+0x18002bc70  mov     [rsp+1D0h+var_174], r13d
+0x18002bc75  xorps   xmm0, xmm0
+0x18002bc78  mov     [rbp+0D0h+var_108], r13
+0x18002bc7c  mov     [rbp+0D0h+var_F0], r13
+0x18002bc80  mov     [rbp+0D0h+var_100], rdi
+0x18002bc84  mov     [rbp+0D0h+var_F8], r13
+0x18002bc88  movups  xmmword ptr [rbp+0D0h+pt.x], xmm0
+0x18002bc8c  test    r14, r14
+0x18002bc8f  jz      loc_18002BDB3
+0x18002bc95  mov     rsi, r13
+0x18002bc98  test    r12, r12
+0x18002bc9b  jnz     short loc_18002BCD4
+0x18002bc9d  test    rbx, rbx
+0x18002bca0  jz      short loc_18002BCD4
+0x18002bca2  movzx   r9d, word ptr [rbx+0Ah]
+0x18002bca7  movzx   r8d, word ptr [rbx+8]
+0x18002bcac  add     r9, rbx; struct _devicemodeW *
+0x18002bcaf  movzx   edx, word ptr [rbx+6]
+0x18002bcb3  add     r8, rbx; unsigned __int16 *
+0x18002bcb6  movzx   ecx, word ptr [rbx+4]
+0x18002bcba  add     rdx, rbx; unsigned __int16 *
+0x18002bcbd  add     rcx, rbx; unsigned __int16 *
+0x18002bcc0  call    ?CreateIC@CW32System@@SAPEAUHDC__@@PEBG00PEBU_devicemodeW@@@Z; CW32System::CreateIC(ushort const *,ushort const *,ushort const *,_devicemodeW const *)
+0x18002bcc5  mov     rsi, rax
+0x18002bcc8  test    rax, rax
+0x18002bccb  jz      loc_18002C13F
+0x18002bcd1  mov     r12, rax
+0x18002bcd4  movups  xmm0, xmmword ptr [r14]
+0x18002bcd8  mov     rcx, r15; hdc
+0x18002bcdb  movdqu  xmmword ptr [rbp+0D0h+pt.x], xmm0
+0x18002bce0  call    cs:__imp_GetMapMode
+0x18002bce7  nop     dword ptr [rax+rax+00h]
+0x18002bcec  cmp     eax, 1
+0x18002bcef  jz      short loc_18002BD33
+0x18002bcf1  mov     edx, 2; index
+0x18002bcf6  mov     rcx, r15; hdc
+0x18002bcf9  call    cs:__imp_GetDeviceCaps
+0x18002bd00  nop     dword ptr [rax+rax+00h]
+0x18002bd05  cmp     eax, 5
+0x18002bd08  jz      short loc_18002BD33
+0x18002bd0a  mov     r13d, 1
+0x18002bd10  lea     rdx, [rbp+0D0h+pt]; lppt
+0x18002bd14  mov     rcx, r15; hdc
+0x18002bd17  lea     r8d, [r13+1]; c
+0x18002bd1b  call    cs:__imp_LPtoDP
+0x18002bd22  nop     dword ptr [rax+rax+00h]
+0x18002bd27  mov     rcx, r15; hdc
+0x18002bd2a  lea     r14, [rbp+0D0h+pt]
+0x18002bd2e  call    ?ConvertDrawDCMapping@@YAXPEAUHDC__@@@Z; ConvertDrawDCMapping(HDC__ *)
+0x18002bd33  mov     rcx, [rdi+40h]
+0x18002bd37  or      eax, 0FFFFFFFFh
+0x18002bd3a  add     rcx, 10h; this
+0x18002bd3e  mov     r9d, eax; int
+0x18002bd41  mov     r8d, eax; int
+0x18002bd44  mov     rdx, r15; HDC
+0x18002bd47  call    ?SetDC@CDevDesc@@QEAAHPEAUHDC__@@JJ@Z; CDevDesc::SetDC(HDC__ *,long,long)
+0x18002bd4c  mov     rax, qword ptr [rsp+1D0h+Point.x]
+0x18002bd51  lea     rdx, [rbp+0D0h+var_108]; struct CDrawInfo *
+0x18002bd55  mov     r9d, [rsp+1D0h+var_178]; int
+0x18002bd5a  mov     r8d, [rsp+1D0h+var_180.x]; unsigned int
+0x18002bd5f  mov     rcx, [rdi+40h]; this
+0x18002bd63  mov     [rsp+1D0h+var_1A0], r12; HDC
+0x18002bd68  mov     [rsp+1D0h+var_1A8], rbx; struct tagDVTARGETDEVICE *
+0x18002bd6d  mov     [rsp+1D0h+var_1B0], rax; void *
+0x18002bd72  call    ?SetDrawInfo@CDisplay@@QEAAXPEAVCDrawInfo@@KJPEAXPEAUtagDVTARGETDEVICE@@PEAUHDC__@@@Z; CDisplay::SetDrawInfo(CDrawInfo *,ulong,long,void *,tagDVTARGETDEVICE *,HDC__ *)
+0x18002bd77  mov     rcx, [rdi+40h]; this
+0x18002bd7b  mov     r8, r14; struct tagRECT *
+0x18002bd7e  call    ?ReDrawOnRectChange@CDisplay@@QEAAXPEAUHDC__@@PEBUtagRECT@@@Z; CDisplay::ReDrawOnRectChange(HDC__ *,tagRECT const *)
+0x18002bd83  test    r13d, r13d
+0x18002bd86  jz      short loc_18002BD9A
+0x18002bd88  or      edx, 0FFFFFFFFh; nSavedDC
+0x18002bd8b  mov     rcx, r15; hdc
+0x18002bd8e  call    cs:__imp_RestoreDC
+0x18002bd95  nop     dword ptr [rax+rax+00h]
+0x18002bd9a  xor     r13d, r13d
+0x18002bd9d  test    rsi, rsi
+0x18002bda0  jz      short loc_18002BDDB
+0x18002bda2  mov     rcx, rsi; hdc
+0x18002bda5  call    cs:__imp_DeleteDC
+0x18002bdac  nop     dword ptr [rax+rax+00h]
+0x18002bdb1  jmp     short loc_18002BDDB
+0x18002bdb3  test    byte ptr [rdi+0B4h], 8
+0x18002bdba  jz      loc_18002C13F
+0x18002bdc0  mov     rcx, [rdi+30h]
+0x18002bdc4  lea     rdx, [rbp+0D0h+pt]
+0x18002bdc8  mov     rax, [rcx]
+0x18002bdcb  mov     rax, [rax+0C0h]
+0x18002bdd2  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18002bdd7  lea     r14, [rbp+0D0h+pt]
+0x18002bddb  mov     rcx, rdi; this
+0x18002bdde  mov     [rsp+1D0h+var_178], r13d
+0x18002bde3  call    ?GetSel@CTxtEdit@@QEAAPEAVCTxtSelection@@XZ; CTxtEdit::GetSel(void)
+0x18002bde8  movzx   ecx, word ptr [rbp+0D0h+arg_40+2]
+0x18002bdef  mov     r12, rax
+0x18002bdf2  mov     eax, [rbp+0D0h+arg_48]
+0x18002bdf8  mov     r13d, [rbp+120h]
+0x18002bdff  mov     rsi, cs:?_hcurArrow@CTxtEdit@@2PEAUHICON__@@EA; HICON__ * CTxtEdit::_hcurArrow
+0x18002be06  mov     word ptr [rsp+1D0h+var_180.x+2], cx
+0x18002be0b  movzx   ecx, word ptr [rbp+0D0h+arg_48+2]
+0x18002be12  mov     word ptr [rsp+1D0h+var_180.y+2], cx
+0x18002be17  lea     rcx, [rbp+0D0h+pt]; lprc
+0x18002be1b  mov     word ptr [rsp+1D0h+var_180.y], ax
+0x18002be20  mov     word ptr [rsp+1D0h+var_180.x], r13w
+0x18002be26  mov     rbx, qword ptr [rsp+1D0h+var_180.x]
+0x18002be2b  mov     rdx, rbx; pt
+0x18002be2e  call    cs:__imp_PtInRect
+0x18002be35  nop     dword ptr [rax+rax+00h]
+0x18002be3a  xor     r8d, r8d
+0x18002be3d  test    eax, eax
+0x18002be3f  jz      loc_18002C0FA
+0x18002be45  mov     rcx, [rdi+40h]
+0x18002be49  lea     rdx, [rsp+1D0h+var_174]
+0x18002be4e  mov     [rsp+1D0h+var_190], r8
+0x18002be53  xor     r9d, r9d
+0x18002be56  mov     [rsp+1D0h+var_198], r8
+0x18002be5b  mov     [rsp+1D0h+var_1A0], rdx
+0x18002be60  mov     rdx, rbx
+0x18002be63  mov     rax, [rcx]
+0x18002be66  mov     dword ptr [rsp+1D0h+var_1A8], r8d
+0x18002be6b  mov     [rsp+1D0h+var_1B0], r8
+0x18002be70  mov     r8, r14
+0x18002be73  mov     rax, [rax+0E8h]
+0x18002be7a  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18002be7f  mov     ecx, [rsp+1D0h+var_174]
+0x18002be83  cmp     ecx, 3
+0x18002be86  jnz     short loc_18002BE94
+0x18002be88  mov     rsi, cs:?_hcurSelBar@CTxtEdit@@2PEAUHICON__@@EA; HICON__ * CTxtEdit::_hcurSelBar
+0x18002be8f  jmp     loc_18002C0FA
+0x18002be94  cmp     ecx, 7
+0x18002be97  jnz     loc_18002C079
+0x18002be9d  test    dword ptr [rdi+0B0h], 4000000h
+0x18002bea7  jz      loc_18002C06D
+0x18002bead  test    byte ptr [rdi+0B4h], 8
+0x18002beb4  jz      loc_18002C06D
+0x18002beba  movzx   ebx, word ptr [rbp+0D0h+arg_48]
+0x18002bec1  lea     rcx, [rsp+1D0h+Point]; lpPoint
+0x18002bec6  movzx   eax, r13w
+0x18002beca  xor     r14d, r14d
+0x18002becd  shl     ebx, 10h
+0x18002bed0  or      rbx, rax
+0x18002bed3  mov     [rsp+1D0h+var_168], r14d
+0x18002bed8  movzx   eax, bx
+0x18002bedb  mov     [rsp+1D0h+Point.x], eax
+0x18002bedf  mov     rax, rbx
+0x18002bee2  shr     rax, 10h
+0x18002bee6  mov     [rsp+1D0h+Point.y], eax
+0x18002beea  call    cs:__imp_GetCursorPos
+0x18002bef1  nop     dword ptr [rax+rax+00h]
+0x18002bef6  mov     rcx, [rdi+30h]
+0x18002befa  lea     rdx, [rsp+1D0h+Point]
+0x18002beff  mov     rax, [rcx]
+0x18002bf02  mov     rax, [rax+0A0h]
+0x18002bf09  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18002bf0e  test    eax, eax
+0x18002bf10  jz      loc_18002C06D
+0x18002bf16  mov     rcx, [rdi+40h]
+0x18002bf1a  lea     rdx, [rsp+1D0h+var_168]
+0x18002bf1f  mov     [rsp+1D0h+var_190], r14
+0x18002bf24  xor     r9d, r9d
+0x18002bf27  mov     [rsp+1D0h+var_198], r14
+0x18002bf2c  xor     r8d, r8d
+0x18002bf2f  mov     [rsp+1D0h+var_1A0], rdx
+0x18002bf34  mov     rax, [rcx]
+0x18002bf37  mov     rdx, qword ptr [rsp+1D0h+Point.x]
+0x18002bf3c  mov     dword ptr [rsp+1D0h+var_1A8], r14d
+0x18002bf41  mov     [rsp+1D0h+var_1B0], r14
+0x18002bf46  mov     rax, [rax+0E8h]
+0x18002bf4d  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18002bf52  cmp     [rsp+1D0h+var_168], 7
+0x18002bf57  jnz     loc_18002C06D
+0x18002bf5d  xorps   xmm0, xmm0
+0x18002bf60  mov     [rsp+1D0h+var_164], r14d
+0x18002bf65  xor     ecx, ecx
+0x18002bf67  mov     [rsp+1D0h+var_180.x], r14d
+0x18002bf6c  mov     [rbp+0D0h+var_130], ecx
+0x18002bf6f  xor     r9d, r9d; int
+0x18002bf72  lea     rcx, [rbp+0D0h+var_D0]; this
+0x18002bf76  mov     r8d, eax; int
+0x18002bf79  mov     rdx, rdi; struct CTxtEdit *
+0x18002bf7c  movups  xmmword ptr [rsp+1D0h+var_160], xmm0
+0x18002bf81  movups  [rbp+0D0h+var_150], xmm0
+0x18002bf85  movups  [rbp+0D0h+var_140], xmm0
+0x18002bf89  call    ??0CTxtRange@@QEAA@PEAVCTxtEdit@@JJ@Z; CTxtRange::CTxtRange(CTxtEdit *,long,long)
+0x18002bf8e  xorps   xmm0, xmm0
+0x18002bf91  xor     eax, eax
+0x18002bf93  test    dword ptr [rdi+0B4h], 8000000h
+0x18002bf9d  movups  xmmword ptr [rsp+1D0h+var_160], xmm0
+0x18002bfa2  mov     [rbp+0D0h+var_130], eax
+0x18002bfa5  movups  [rbp+0D0h+var_150], xmm0
+0x18002bfa9  movups  [rbp+0D0h+var_140], xmm0
+0x18002bfad  jz      short loc_18002BFDD
+0x18002bfaf  lea     rcx, [rdi+10h]
+0x18002bfb3  mov     rax, [rcx]
+0x18002bfb6  lea     rdx, [rsp+1D0h+var_160]
+0x18002bfbb  mov     rax, [rax+130h]
+0x18002bfc2  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18002bfc7  mov     rcx, [rsp+1D0h+var_160]; HWND
+0x18002bfcc  lea     edx, [r14-0Ch]; int
+0x18002bfd0  call    ?GetWindowLong@CW32System@@SAJPEAUHWND__@@H@Z; CW32System::GetWindowLong(HWND__ *,int)
+0x18002bfd5  movsxd  rcx, eax
+0x18002bfd8  mov     [rsp+1D0h+var_160+8], rcx
+0x18002bfdd  xor     r9d, r9d; int *
+0x18002bfe0  lea     rax, [rsp+1D0h+var_180]
+0x18002bfe5  mov     [rsp+1D0h+var_1A8], rax; int *
+0x18002bfea  lea     rcx, [rbp+0D0h+var_D0]; this
+0x18002bfee  lea     rax, [rsp+1D0h+var_164]
+0x18002bff3  mov     esi, 70Bh
+0x18002bff8  mov     edx, 80000020h; int
+0x18002bffd  mov     dword ptr [rbp+0D0h+var_150], esi
+0x18002c000  lea     r8d, [r9+1]; int
+0x18002c004  mov     [rsp+1D0h+var_1B0], rax; int *
+0x18002c009  call    ?Expander@CTxtRange@@QEAAJJHPEAJ00@Z; CTxtRange::Expander(long,int,long *,long *,long *)
+0x18002c00e  mov     edx, [rsp+1D0h+var_164]; int
+0x18002c012  mov     rcx, rdi; this
+0x18002c015  mov     dword ptr [rbp+0D0h+var_150+8], 20h ; ' '
+0x18002c01c  mov     qword ptr [rbp+0D0h+var_150+0Ch], r14
+0x18002c020  mov     qword ptr [rbp+0D0h+var_140+4], rbx
+0x18002c024  call    ?GetAcpFromCp@CTxtEdit@@QEAAJJH@Z; CTxtEdit::GetAcpFromCp(long,int)
+0x18002c029  mov     edx, [rsp+1D0h+var_180.x]; int
+0x18002c02d  mov     rcx, rdi; this
+0x18002c030  mov     dword ptr [rbp+0D0h+var_140+0Ch], eax
+0x18002c033  call    ?GetAcpFromCp@CTxtEdit@@QEAAJJH@Z; CTxtEdit::GetAcpFromCp(long,int)
+0x18002c038  mov     rcx, [rdi+30h]
+0x18002c03c  lea     r8, [rsp+1D0h+var_160]
+0x18002c041  mov     [rbp+0D0h+var_130], eax
+0x18002c044  mov     edx, esi
+0x18002c046  mov     rax, [rcx]
+0x18002c049  mov     rax, [rax+130h]
+0x18002c050  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18002c055  lea     rcx, [rbp+0D0h+var_D0]; this
+0x18002c059  mov     ebx, eax
+0x18002c05b  call    ??1CTxtRange@@UEAA@XZ; CTxtRange::~CTxtRange(void)
+0x18002c060  cmp     ebx, 1
+0x18002c063  jnz     short loc_18002C06D
+0x18002c065  mov     ebx, r14d
+0x18002c068  jmp     loc_18002C144
+0x18002c06d  mov     rsi, cs:?_hcurHand@CTxtEdit@@2PEAUHICON__@@EA; HICON__ * CTxtEdit::_hcurHand
+0x18002c074  jmp     loc_18002C0FA
+0x18002c079  lea     eax, [rcx-1]
+0x18002c07c  test    eax, 0FFFFFFFCh
+0x18002c081  jnz     short loc_18002C088
+0x18002c083  cmp     ecx, 3
+0x18002c086  jnz     short loc_18002C0FA
+0x18002c088  test    r12, r12
+0x18002c08b  jz      short loc_18002C0B2
+0x18002c08d  xor     r9d, r9d
+0x18002c090  mov     r8, r14
+0x18002c093  mov     rdx, rbx
+0x18002c096  mov     rcx, r12
+0x18002c099  call    ?PointInSel@CTxtSelection@@QEBAHUtagPOINT@@PEBUtagRECT@@W4HITTEST@@@Z; CTxtSelection::PointInSel(tagPOINT,tagRECT const *,HITTEST)
+0x18002c09e  test    eax, eax
+0x18002c0a0  jz      short loc_18002C0AE
+0x18002c0a2  test    dword ptr [rdi+0B4h], 1000h
+0x18002c0ac  jz      short loc_18002C0CC
+0x18002c0ae  mov     ecx, [rsp+1D0h+var_174]
+0x18002c0b2  mov     rsi, cs:?_hcurIBeam@CTxtEdit@@2PEAUHICON__@@EA; HICON__ * CTxtEdit::_hcurIBeam
+0x18002c0b9  cmp     ecx, 8
+0x18002c0bc  mov     [rsp+1D0h+var_178], 1
+0x18002c0c4  cmovz   rsi, cs:?_hcurItalic@CTxtEdit@@2PEAUHICON__@@EA; HICON__ * CTxtEdit::_hcurItalic
+0x18002c0cc  mov     rax, [rdi+88h]
+0x18002c0d3  test    rax, rax
+0x18002c0d6  jz      short loc_18002C0FA
+0x18002c0d8  mov     rcx, [rax+30h]; this
+0x18002c0dc  test    rcx, rcx
+0x18002c0df  jz      short loc_18002C0FA
+0x18002c0e1  lea     rdx, [rsp+1D0h+var_180]; struct tagPOINT *
+  ... truncated ...
+```

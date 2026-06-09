@@ -1,0 +1,762 @@
+[
+  {
+    "import": "ntoskrnl!IoAllocateDriverObjectExtension",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x140037186",
+        "from_func": "0x140037080",
+        "from_func_name": "DriverEntry",
+        "import": "ntoskrnl!IoAllocateDriverObjectExtension"
+      },
+      {
+        "from_ea": "0x140030530",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntoskrnl!IoAllocateDriverObjectExtension"
+      },
+      {
+        "from_ea": "0x140037186",
+        "from_func": "0x140037080",
+        "from_func_name": "DriverEntry",
+        "import": "ntoskrnl!IoAllocateDriverObjectExtension"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IoGetDriverObjectExtension",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400014c4",
+        "from_func": "0x140001460",
+        "from_func_name": "RfcommAddDevice",
+        "import": "ntoskrnl!IoGetDriverObjectExtension"
+      },
+      {
+        "from_ea": "0x1400014c4",
+        "from_func": "0x140001460",
+        "from_func_name": "RfcommAddDevice",
+        "import": "ntoskrnl!IoGetDriverObjectExtension"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IoGetRequestorProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140007ff5",
+        "from_func": "0x140007d40",
+        "from_func_name": "TdiCreate",
+        "import": "ntoskrnl!IoGetRequestorProcessId"
+      },
+      {
+        "from_ea": "0x14000b6a6",
+        "from_func": "0x14000b5b0",
+        "from_func_name": "TdiTransferOwnershipEnd",
+        "import": "ntoskrnl!IoGetRequestorProcessId"
+      },
+      {
+        "from_ea": "0x140007ff5",
+        "from_func": "0x140007d40",
+        "from_func_name": "TdiCreate",
+        "import": "ntoskrnl!IoGetRequestorProcessId"
+      },
+      {
+        "from_ea": "0x14000b6a6",
+        "from_func": "0x14000b5b0",
+        "from_func_name": "TdiTransferOwnershipEnd",
+        "import": "ntoskrnl!IoGetRequestorProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IoOpenDriverRegistryKey",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140009256",
+        "from_func": "0x14000916c",
+        "from_func_name": "TdiEnsureReservedChannelTableLoaded",
+        "import": "ntoskrnl!IoOpenDriverRegistryKey"
+      },
+      {
+        "from_ea": "0x140032747",
+        "from_func": "0x1400326f8",
+        "from_func_name": "RfcommGetRegSettings",
+        "import": "ntoskrnl!IoOpenDriverRegistryKey"
+      },
+      {
+        "from_ea": "0x140009256",
+        "from_func": "0x14000916c",
+        "from_func_name": "TdiEnsureReservedChannelTableLoaded",
+        "import": "ntoskrnl!IoOpenDriverRegistryKey"
+      },
+      {
+        "from_ea": "0x140032747",
+        "from_func": "0x1400326f8",
+        "from_func_name": "RfcommGetRegSettings",
+        "import": "ntoskrnl!IoOpenDriverRegistryKey"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IoSetCompletionRoutineEx",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001a43e",
+        "from_func": "0x14001a3a8",
+        "from_func_name": "IrpBuildIoctlEx",
+        "import": "ntoskrnl!IoSetCompletionRoutineEx"
+      },
+      {
+        "from_ea": "0x14001a43e",
+        "from_func": "0x14001a3a8",
+        "from_func_name": "IrpBuildIoctlEx",
+        "import": "ntoskrnl!IoSetCompletionRoutineEx"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IofCompleteRequest",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 20,
+    "xrefs": [
+      {
+        "from_ea": "0x140001c0e",
+        "from_func": "0x140001b30",
+        "from_func_name": "RfcommCancelRoutine",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140001cee",
+        "from_func": "0x140001c34",
+        "from_func_name": "RfcommCompleteFdoIrp",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000263f",
+        "from_func": "0x14000256c",
+        "from_func_name": "RfcommDispatchFdo",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400037a6",
+        "from_func": "0x1400035cc",
+        "from_func_name": "RfcommStartDevice",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140005cd8",
+        "from_func": "0x140005c38",
+        "from_func_name": "RfcommCompleteTdiIrp",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140009b93",
+        "from_func": "0x1400097f4",
+        "from_func_name": "TdiIndicateReceive",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140018db5",
+        "from_func": "0x140018d08",
+        "from_func_name": "ChannelCompleteAccept",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400336c2",
+        "from_func": "0x14003365c",
+        "from_func_name": "ProcessPowerRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14003394d",
+        "from_func": "0x14003365c",
+        "from_func_name": "ProcessPowerRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140033a01",
+        "from_func": "0x14003365c",
+        "from_func_name": "ProcessPowerRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140001c0e",
+        "from_func": "0x140001b30",
+        "from_func_name": "RfcommCancelRoutine",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140001cee",
+        "from_func": "0x140001c34",
+        "from_func_name": "RfcommCompleteFdoIrp",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000263f",
+        "from_func": "0x14000256c",
+        "from_func_name": "RfcommDispatchFdo",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400037a6",
+        "from_func": "0x1400035cc",
+        "from_func_name": "RfcommStartDevice",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140005cd8",
+        "from_func": "0x140005c38",
+        "from_func_name": "RfcommCompleteTdiIrp",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140009b93",
+        "from_func": "0x1400097f4",
+        "from_func_name": "TdiIndicateReceive",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140018db5",
+        "from_func": "0x140018d08",
+        "from_func_name": "ChannelCompleteAccept",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400336c2",
+        "from_func": "0x14003365c",
+        "from_func_name": "ProcessPowerRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14003394d",
+        "from_func": "0x14003365c",
+        "from_func_name": "ProcessPowerRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140033a01",
+        "from_func": "0x14003365c",
+        "from_func_name": "ProcessPowerRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ObGetObjectSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000599a",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!ObGetObjectSecurity"
+      },
+      {
+        "from_ea": "0x14000599a",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!ObGetObjectSecurity"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ObReleaseObjectSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140005bea",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!ObReleaseObjectSecurity"
+      },
+      {
+        "from_ea": "0x140005bea",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!ObReleaseObjectSecurity"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ObSetSecurityObjectByPointer",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140005bd5",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!ObSetSecurityObjectByPointer"
+      },
+      {
+        "from_ea": "0x140005bd5",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!ObSetSecurityObjectByPointer"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsLookupProcessByProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000224c",
+        "from_func": "0x140001eec",
+        "from_func_name": "RfcommDispatchDeviceControl",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      },
+      {
+        "from_ea": "0x14000224c",
+        "from_func": "0x140001eec",
+        "from_func_name": "RfcommDispatchDeviceControl",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareMemory",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140007674",
+        "from_func": "0x1400074d0",
+        "from_func_name": "TdiConnect",
+        "import": "ntoskrnl!RtlCompareMemory"
+      },
+      {
+        "from_ea": "0x140007674",
+        "from_func": "0x1400074d0",
+        "from_func_name": "TdiConnect",
+        "import": "ntoskrnl!RtlCompareMemory"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareUnicodeString",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140033da8",
+        "from_func": "0x140033d10",
+        "from_func_name": "TdiTransportsValueQueryCallback",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x140033da8",
+        "from_func": "0x140033d10",
+        "from_func_name": "TdiTransportsValueQueryCallback",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCreateSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140005ba7",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140005ba7",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlGetDaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140005a44",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140005a44",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlLengthSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140005a78",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140005a8d",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140005a78",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140005a8d",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfiguration",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400335af",
+        "from_func": "0x140033530",
+        "from_func_name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x140037598",
+        "from_func": "0x14003751c",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x1400335af",
+        "from_func": "0x140033530",
+        "from_func_name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x140037598",
+        "from_func": "0x14003751c",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400373e5",
+        "from_func": "0x1400373b4",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      },
+      {
+        "from_ea": "0x1400373e5",
+        "from_func": "0x1400373b4",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryRegistryValues",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400224d8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntoskrnl!RtlQueryRegistryValues"
+      },
+      {
+        "from_ea": "0x140033c35",
+        "from_func": "0x140033b90",
+        "from_func_name": "TdiNotifyAddDevice",
+        "import": "ntoskrnl!RtlQueryRegistryValues"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14003746a",
+        "from_func": "0x1400373b4",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x14003746a",
+        "from_func": "0x1400373b4",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlSetDaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140005bbe",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140005bbe",
+        "from_func": "0x140005964",
+        "from_func_name": "RFCOMMAddCapabilitySids",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400320c8",
+        "from_func": "0x140032010",
+        "from_func_name": "DriverUnload",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x1400320c8",
+        "from_func": "0x140032010",
+        "from_func_name": "DriverUnload",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlValidSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140009470",
+        "from_func": "0x14000916c",
+        "from_func_name": "TdiEnsureReservedChannelTableLoaded",
+        "import": "ntoskrnl!RtlValidSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140009470",
+        "from_func": "0x14000916c",
+        "from_func_name": "TdiEnsureReservedChannelTableLoaded",
+        "import": "ntoskrnl!RtlValidSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeAccessCheckFromState",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140033fce",
+        "from_func": "0x140033edc",
+        "from_func_name": "IsCallingProcess",
+        "import": "ntoskrnl!SeAccessCheckFromState"
+      },
+      {
+        "from_ea": "0x140033fce",
+        "from_func": "0x140033edc",
+        "from_func_name": "IsCallingProcess",
+        "import": "ntoskrnl!SeAccessCheckFromState"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwOpenSymbolicLinkObject",
+    "tags": [
+      "reparse_path"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140032331",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwOpenSymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x14003250e",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwOpenSymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140032331",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwOpenSymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x14003250e",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwOpenSymbolicLinkObject"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwQuerySymbolicLinkObject",
+    "tags": [
+      "reparse_path"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x140032396",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140032469",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140032553",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x1400325ff",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140032396",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140032469",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140032553",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x1400325ff",
+        "from_func": "0x1400322b8",
+        "from_func_name": "RfcommExpandSystemRoot",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwUpdateWnfStateData",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140033ca9",
+        "from_func": "0x140033b90",
+        "from_func_name": "TdiNotifyAddDevice",
+        "import": "ntoskrnl!ZwUpdateWnfStateData"
+      },
+      {
+        "from_ea": "0x140033ca9",
+        "from_func": "0x140033b90",
+        "from_func_name": "TdiNotifyAddDevice",
+        "import": "ntoskrnl!ZwUpdateWnfStateData"
+      }
+    ]
+  }
+]
