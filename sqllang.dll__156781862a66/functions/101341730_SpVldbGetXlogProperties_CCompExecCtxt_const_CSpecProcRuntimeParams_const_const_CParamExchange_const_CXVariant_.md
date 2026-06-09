@@ -1,0 +1,210 @@
+# SpVldbGetXlogProperties(CCompExecCtxt const &,CSpecProcRuntimeParams const * const,CParamExchange * const,CXVariant * const)
+
+- ea: `0x101341730`
+- end: `0x1013423d6`
+- name: `?SpVldbGetXlogProperties@@YAXAEBVCCompExecCtxt@@QEBVCSpecProcRuntimeParams@@QEAVCParamExchange@@QEAVCXVariant@@@Z`
+- size: `3238`
+- prototype: `void __fastcall(const struct CCompExecCtxt *, const struct CSpecProcRuntimeParams *const, struct CParamExchange *const, struct CXVariant *const)`
+- caller_count: `0`
+- callee_count: `10`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x100401070`
+- `0x100401090`
+- `0x10042dc70`
+- `0x1011ebad0`
+- `0x1011ec140`
+- `0x101300f80`
+- `0x10133dca0`
+- `0x101341730`
+- `0x101e88db0`
+- `0x101ec5660`
+
+## import_xrefs
+
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x101341a4e`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x101341a60`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x101341bf8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341871`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341899`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10134195f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341aa1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341ad7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341b08`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341b43`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341b91`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341bda`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341d3a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341d85`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341de2`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341e34`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341e5f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341eab`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341871`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341899`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10134195f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341aa1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341ad7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341b08`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341b43`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341b91`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341bda`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341d3a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341d85`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341de2`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341e34`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341e5f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101341eab`
+- `sqldk!SystemThread_TlsIndex` at `0x1013417e7`
+- `sqldk!SystemThread_TlsIndex` at `0x101341973`
+- `sqldk!SystemThread_TlsOffset` at `0x1013417f0`
+- `sqldk!SystemThread_TlsOffset` at `0x10134197c`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x10134180b`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101341997`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x10134180b`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101341997`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10134237b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10134237b`
+- `sqlTsEs!?InitSpace@CXVariant@@QEAAXPEAVIMemObj@@PEBVCTypeInfo@@K@Z` at `0x1013418ed`
+- `sqlTsEs!?InitSpace@CXVariant@@QEAAXPEAVIMemObj@@PEBVCTypeInfo@@K@Z` at `0x1013418ed`
+- `sqlTsEs!?PwszXvtName@@YAPEB_WE@Z` at `0x101341932`
+- `sqlTsEs!?PwszXvtName@@YAPEB_WE@Z` at `0x10134193f`
+- `sqlTsEs!?PwszXvtName@@YAPEB_WE@Z` at `0x101341932`
+- `sqlTsEs!?PwszXvtName@@YAPEB_WE@Z` at `0x10134193f`
+- `sqlmin!?GetSeReportFailure@@YAPEAVSeReportFailure@@XZ` at `0x101341d45`
+- `sqlmin!?GetSeReportFailure@@YAPEAVSeReportFailure@@XZ` at `0x101341d45`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341eef`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f0a`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f22`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f3d`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f55`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f70`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f88`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341fa3`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341fbb`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341fd3`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341fee`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101342006`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101342021`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101342039`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101342051`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134206c`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341eef`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f0a`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f22`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f3d`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f55`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f70`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341f88`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341fa3`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341fbb`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341fd3`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101341fee`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101342006`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101342021`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101342039`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101342051`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134206c`
+- `sqlmin!??0BackupResultSet@@QEAA@PEAVBackupOperation@@KPEAVIMemObj@@@Z` at `0x101341ed6`
+- `sqlmin!??0BackupResultSet@@QEAA@PEAVBackupOperation@@KPEAVIMemObj@@@Z` at `0x101341ed6`
+- `sqlmin!??1BackupResultSet@@QEAA@XZ` at `0x101342371`
+- `sqlmin!??1BackupResultSet@@QEAA@XZ` at `0x101342371`
+- `sqlmin!?GetBlankRow@BackupResultSet@@UEAAPEAVBackupResultSetRow@@XZ` at `0x101342076`
+- `sqlmin!?GetBlankRow@BackupResultSet@@UEAAPEAVBackupResultSetRow@@XZ` at `0x101342076`
+- `sqlmin!?CompleteAndSendRow@BackupResultSet@@UEAAXPEAVBackupResultSetRow@@@Z` at `0x101342350`
+- `sqlmin!?CompleteAndSendRow@BackupResultSet@@UEAAXPEAVBackupResultSetRow@@@Z` at `0x101342350`
+- `sqlmin!?EndResultSet@BackupResultSet@@QEAAXH@Z` at `0x10134235c`
+- `sqlmin!?EndResultSet@BackupResultSet@@QEAAXH@Z` at `0x10134235c`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013420d9`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101342139`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101342199`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013421f9`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x10134226e`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013422ce`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101342343`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013420d9`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101342139`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101342199`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013421f9`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x10134226e`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013422ce`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101342343`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x10134208e`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013420ee`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x10134214e`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013421ae`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x10134220e`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101342223`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101342283`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013422e3`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013422f8`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x10134208e`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013420ee`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x10134214e`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013421ae`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x10134220e`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101342223`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101342283`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013422e3`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013422f8`
+- `sqlmin!?IsCOWReplicaDatabase@DBTABLE@@QEBAHXZ` at `0x101341b1b`
+- `sqlmin!?IsCOWReplicaDatabase@DBTABLE@@QEBAHXZ` at `0x101341b1b`
+- `rbio!RbIoFsGetVlfLayoutDef` at `0x101341b9f`
+- `rbio!RbIoFsGetVlfLayoutDef` at `0x101341b9f`
+- `rbio!RbIoConnectionFind` at `0x101341bab`
+- `rbio!RbIoConnectionFind` at `0x101341bab`
+- `rbio!RbIoConnectionRelease` at `0x1013423a1`
+- `rbio!RbIoConnectionRelease` at `0x1013423a1`
+- `rbio!RbIoInitializeAsClientIfNeeded` at `0x101341d55`
+- `rbio!RbIoInitializeAsClientIfNeeded` at `0x101341d55`
+- `rbio!RbIoConnectionOpen` at `0x101341d9e`
+- `rbio!RbIoConnectionOpen` at `0x101341d9e`
+- `rbio!RbIoXlogGetVlfDefinition` at `0x101341df5`
+- `rbio!RbIoXlogGetVlfDefinition` at `0x101341df5`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x1013420ab`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x10134210b`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x10134216b`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x1013421cb`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x101342240`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x1013422a0`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x101342315`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x1013420ab`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x10134210b`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x10134216b`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x1013421cb`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x101342240`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x1013422a0`
+- `rbio!RbIoXlogLinearBsnToLogBlockId` at `0x101342315`
+- `rbio!RbIoXlogGetProperties` at `0x101341e72`
+- `rbio!RbIoXlogGetProperties` at `0x101341e72`
+- `rbio!RbIoConnectionAutoClose` at `0x10134238c`
+- `rbio!RbIoConnectionAutoClose` at `0x10134238c`
+
+## string_xrefs
+
+- `0x101341db4`: `'RbIoConnectionOpen' failure. HRESULT: %lx.\n`
+- `0x101341b25`: `The database provided must be a Compute RbIo replica.`
+- `0x101341ffb`: `LcReadViewLast`
+- `0x101341fe3`: `LcReadViewFirstLsn`
+- `0x10134202e`: `LcReadViewMaxSizeInBytes`
+- `0x101342016`: `LcReadViewLastLsn`
+- `0x101341f32`: `BrokerFullLsn`
+- `0x101341f17`: `BrokerFull`
+- `0x101341f65`: `BrokerMaxLsn`
+- `0x101341f4a`: `BrokerMax`
+- `0x101341f98`: `BrokerNextFullLsn`
+- `0x101341f7d`: `BrokerNextFull`
+- `0x101341fc8`: `LcReadViewFirst`
+- `0x101341fb0`: `BrokerMinMaxDistanceBytes`
+- `0x101341d66`: `Could not init RbIo protocol.`
+- `0x101341dc4`: `Could not Open RbIo connection to XLOG.`
+- `0x101341eff`: `BrokerMinLsn`
+- `0x101341ee4`: `BrokerMin`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,249 @@
+# DeadlockMonitorDiagnostics::EndGraph(void)
+
+- ea: `0x100408df0`
+- end: `0x100408f68`
+- name: `?EndGraph@DeadlockMonitorDiagnostics@@UEAAXXZ`
+- size: `376`
+- prototype: `void __fastcall(DeadlockMonitorDiagnostics *__hidden this)`
+- caller_count: `0`
+- callee_count: `27`
+- tags: `service_task`
+
+## callees
+
+- `0x100401070`
+- `0x100402150`
+- `0x100402410`
+- `0x1004087c0`
+- `0x100408890`
+- `0x1004088f0`
+- `0x100408930`
+- `0x100408d10`
+- `0x100408df0`
+- `0x1004091b0`
+- `0x1004092d0`
+- `0x100567ff0`
+- `0x1007978b0`
+- `0x1007a1d00`
+- `0x1007a2e00`
+- `0x1007a2f00`
+- `0x1007a70d0`
+- `0x1007db940`
+- `0x1007db960`
+- `0x1007dbd30`
+- `0x1007dc4e0`
+- `0x1007e01f0`
+- `0x1007e0c00`
+- `0x1007e0e70`
+- `0x1007e1580`
+- `0x1007e17c0`
+- `0x1007e1a30`
+
+## import_xrefs
+
+- `KERNEL32!QueryPerformanceCounter` at `0x10174cc11`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174cc66`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174cdf9`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174ce4b`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d140`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d18e`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d452`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d49a`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d630`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d674`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d7f6`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d83d`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d95a`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d9a6`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174dc83`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174dcce`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174de5e`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174dead`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e1b4`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e205`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e37e`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e3d0`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e6b7`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e708`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e890`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e8e2`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174cc11`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174cc66`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174cdf9`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174ce4b`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d140`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d18e`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d452`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d49a`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d630`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d674`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d7f6`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d83d`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d95a`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174d9a6`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174dc83`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174dcce`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174de5e`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174dead`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e1b4`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e205`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e37e`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e3d0`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e6b7`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e708`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e890`
+- `KERNEL32!QueryPerformanceCounter` at `0x10174e8e2`
+- `KERNEL32!VirtualProtect` at `0x10174ced4`
+- `KERNEL32!VirtualProtect` at `0x10174d360`
+- `KERNEL32!VirtualProtect` at `0x10174da2d`
+- `KERNEL32!VirtualProtect` at `0x10174df34`
+- `KERNEL32!VirtualProtect` at `0x10174e459`
+- `KERNEL32!VirtualProtect` at `0x10174e96b`
+- `KERNEL32!VirtualProtect` at `0x10174ced4`
+- `KERNEL32!VirtualProtect` at `0x10174d360`
+- `KERNEL32!VirtualProtect` at `0x10174da2d`
+- `KERNEL32!VirtualProtect` at `0x10174df34`
+- `KERNEL32!VirtualProtect` at `0x10174e459`
+- `KERNEL32!VirtualProtect` at `0x10174e96b`
+- `KERNEL32!VirtualFree` at `0x10174d05c`
+- `KERNEL32!VirtualFree` at `0x10174d57c`
+- `KERNEL32!VirtualFree` at `0x10174dbae`
+- `KERNEL32!VirtualFree` at `0x10174e0c9`
+- `KERNEL32!VirtualFree` at `0x10174e5db`
+- `KERNEL32!VirtualFree` at `0x10174eaed`
+- `KERNEL32!VirtualFree` at `0x10174d05c`
+- `KERNEL32!VirtualFree` at `0x10174d57c`
+- `KERNEL32!VirtualFree` at `0x10174dbae`
+- `KERNEL32!VirtualFree` at `0x10174e0c9`
+- `KERNEL32!VirtualFree` at `0x10174e5db`
+- `KERNEL32!VirtualFree` at `0x10174eaed`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174cc21`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174ce09`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174d150`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174d45f`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174d63d`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174d803`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174d967`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174dc90`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174de6b`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174e1c4`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174e38e`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174e6c7`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x10174e8a0`
+- `sqldk!?SOS_Tracing_osTrace@@3KA` at `0x10174d03a`
+- `sqldk!?SOS_Tracing_osTrace@@3KA` at `0x10174d554`
+- `sqldk!?SOS_Tracing_osTrace@@3KA` at `0x10174db94`
+- `sqldk!?SOS_Tracing_osTrace@@3KA` at `0x10174e0a7`
+- `sqldk!?SOS_Tracing_osTrace@@3KA` at `0x10174e5b9`
+- `sqldk!?SOS_Tracing_osTrace@@3KA` at `0x10174eacb`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174cbd6`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174cdc2`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174d105`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174d41d`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174d5ff`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174d7c1`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174d926`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174dc4e`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174de26`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174e17c`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174e346`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174e67f`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x10174e858`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x100408afe`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174cf5a`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174cff1`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174d3da`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174d50e`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174dab3`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174db47`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174dfba`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174e05a`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174e4df`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174e573`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174e9f1`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x10174ea85`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174cbfb`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174cc4f`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174cde3`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174ce34`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d12a`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d17a`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d442`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d48a`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d620`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d664`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d7e6`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d82d`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d947`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174d992`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174dc6f`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174dcba`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174de4b`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174de96`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174e19d`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174e1ee`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174e367`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174e3b9`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174e6a0`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174e6f1`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174e879`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x10174e8cb`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174cd46`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174d271`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174d8ae`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174dd9d`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174e2cb`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174e7d5`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174cd46`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174d271`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174d8ae`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174dd9d`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174e2cb`
+- `sqldk!?IsTaskStoreDisabled@SOS_Node@@QEAA_NXZ` at `0x10174e7d5`
+- `sqldk!?ReleaseLock@SOS_RWLock@@QEAAXW4RWLockMode@@@Z` at `0x10174cb24`
+- `sqldk!?ReleaseLock@SOS_RWLock@@QEAAXW4RWLockMode@@@Z` at `0x10174eb45`
+- `sqldk!?ReleaseLock@SOS_RWLock@@QEAAXW4RWLockMode@@@Z` at `0x10174cb24`
+- `sqldk!?ReleaseLock@SOS_RWLock@@QEAAXW4RWLockMode@@@Z` at `0x10174eb45`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x100408bc3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174d09c`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174d5c1`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174dbeb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174e115`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174e61b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174eb34`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x100408bc3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174d09c`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174d5c1`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174dbeb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174e115`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174e61b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10174eb34`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10174eba4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10174ebbd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10174ebf2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10174eba4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10174ebbd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10174ebf2`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174cf66`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174cffd`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174d3e6`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174d51a`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174d6c1`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174dabf`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174db53`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174dfc6`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174e066`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174e4eb`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174e57f`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174e9fd`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174ea91`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174cf66`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174cffd`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174d3e6`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x10174d51a`
+
+## pseudocode
+
+```c
+
+```

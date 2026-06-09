@@ -1,0 +1,181 @@
+# COledbConnect::SetINITProps(IDBProperties *,wchar_t const *,ISECMemoryProtector *,wchar_t const *,bool,bool,bool,ExternalAuthMode)
+
+- ea: `0x1016dfb80`
+- end: `0x1016e0a39`
+- name: `?SetINITProps@COledbConnect@@AEBAJPEAUIDBProperties@@PEB_WPEAVISECMemoryProtector@@1_N33W4ExternalAuthMode@@@Z`
+- size: `3769`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `9`
+- tags: `registry_config`
+
+## callers
+
+- `0x1016dd6b0`
+
+## callees
+
+- `0x100401070`
+- `0x1004132a0`
+- `0x100430d60`
+- `0x100430e10`
+- `0x100860500`
+- `0x1016d8660`
+- `0x1016dfb80`
+- `0x1016e69f0`
+- `0x1016eb430`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc52`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc63`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc72`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc81`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc8f`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc9d`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfd20`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc52`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc63`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc72`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc81`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc8f`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfc9d`
+- `OLEAUT32!__imp_SysAllocString` at `0x1016dfd20`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1016dfcfa`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1016dfcfa`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdac`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdb7`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdc2`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdcd`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdd8`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfde1`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdfa`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfe03`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0925`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0930`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e093b`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0946`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0951`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e095a`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0973`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e097c`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdac`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdb7`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdc2`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdcd`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdd8`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfde1`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfdfa`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016dfe03`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0925`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0930`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e093b`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0946`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0951`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e095a`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e0973`
+- `OLEAUT32!__imp_SysFreeString` at `0x1016e097c`
+- `OLEAUT32!__imp_VariantInit` at `0x1016dfe80`
+- `OLEAUT32!__imp_VariantInit` at `0x1016dfef8`
+- `OLEAUT32!__imp_VariantInit` at `0x1016dff60`
+- `OLEAUT32!__imp_VariantInit` at `0x1016dffb8`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0011`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e006a`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e012f`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e01ab`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e020d`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e02d9`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0404`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e043c`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e04a1`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e04b6`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e054e`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e068b`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e06c3`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0715`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0765`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0862`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e08ca`
+- `OLEAUT32!__imp_VariantInit` at `0x1016dfe80`
+- `OLEAUT32!__imp_VariantInit` at `0x1016dfef8`
+- `OLEAUT32!__imp_VariantInit` at `0x1016dff60`
+- `OLEAUT32!__imp_VariantInit` at `0x1016dffb8`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0011`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e006a`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e012f`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e01ab`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e020d`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e02d9`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0404`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e043c`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e04a1`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e04b6`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e054e`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e068b`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e06c3`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0715`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0765`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e0862`
+- `OLEAUT32!__imp_VariantInit` at `0x1016e08ca`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x1016e087b`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1016e029b`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1016e03c6`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1016e060f`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1016e029b`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1016e03c6`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1016e060f`
+- `sqldk!SystemThread_TlsIndex` at `0x1016dfbf5`
+- `sqldk!SystemThread_TlsIndex` at `0x1016e024c`
+- `sqldk!SystemThread_TlsIndex` at `0x1016e0377`
+- `sqldk!SystemThread_TlsIndex` at `0x1016e05c0`
+- `sqldk!SystemThread_TlsIndex` at `0x1016e0632`
+- `sqldk!SystemThread_TlsIndex` at `0x1016e0789`
+- `sqldk!SystemThread_TlsOffset` at `0x1016dfbfe`
+- `sqldk!SystemThread_TlsOffset` at `0x1016e0255`
+- `sqldk!SystemThread_TlsOffset` at `0x1016e0380`
+- `sqldk!SystemThread_TlsOffset` at `0x1016e05c9`
+- `sqldk!SystemThread_TlsOffset` at `0x1016e063b`
+- `sqldk!SystemThread_TlsOffset` at `0x1016e0792`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1016dfc19`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1016e0270`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1016e039b`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1016e05e4`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1016dfc19`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1016e0270`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1016e039b`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1016e05e4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e02ab`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e03d6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e061f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e0987`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e0991`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e099c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e0a0e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e02ab`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e03d6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e061f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e0987`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e0991`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e099c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1016e0a0e`
+- `sqlTsEs!?DbtFromXvt@@YAGE@Z` at `0x1016e06d2`
+- `sqlTsEs!?GetDefaultCollationData@CDbAndSetOptsImplImport@@YAQEBVCDefaultCollation@@G@Z` at `0x1016e0653`
+- `sqlTsEs!?GetDefaultCollationData@CDbAndSetOptsImplImport@@YAQEBVCDefaultCollation@@G@Z` at `0x1016e07aa`
+- `sqlTsEs!?GetDefaultCollationData@CDbAndSetOptsImplImport@@YAQEBVCDefaultCollation@@G@Z` at `0x1016e0653`
+- `sqlTsEs!?GetDefaultCollationData@CDbAndSetOptsImplImport@@YAQEBVCDefaultCollation@@G@Z` at `0x1016e07aa`
+- `sqlTsEs!?UICodePageFromCID@@YAIK@Z` at `0x1016e065b`
+- `sqlTsEs!?UICodePageFromCID@@YAIK@Z` at `0x1016e065b`
+- `sqlTsEs!?LCIDFromCID@@YAKK@Z` at `0x1016e07b4`
+- `sqlTsEs!?LCIDFromCID@@YAKK@Z` at `0x1016e07b4`
+- `sqlmin!?FUseReplicatedServerContext@@YA_NXZ` at `0x1016e00cb`
+- `sqlmin!?FUseReplicatedServerContext@@YA_NXZ` at `0x1016e00cb`
+- `sqlmin!GetSqlServerGlobals` at `0x1016dfd16`
+- `sqlmin!GetSqlServerGlobals` at `0x1016dfd8d`
+- `sqlmin!GetSqlServerGlobals` at `0x1016dfd16`
+- `sqlmin!GetSqlServerGlobals` at `0x1016dfd8d`
+
+## pseudocode
+
+```c
+
+```

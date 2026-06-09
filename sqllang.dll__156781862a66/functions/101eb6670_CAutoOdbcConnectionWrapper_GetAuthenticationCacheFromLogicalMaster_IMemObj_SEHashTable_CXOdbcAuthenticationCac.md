@@ -1,0 +1,247 @@
+# CAutoOdbcConnectionWrapper::GetAuthenticationCacheFromLogicalMaster(IMemObj *,SEHashTable<CXOdbcAuthenticationCacheEntry,CXOdbcAuthenticationCacheKey,16,0,DefBaseAllocator> &,uint &,SEList<CXOdbcServerFirewallEntry,0> &,SESimpleVector<CIPv4FirewallCacheEntry> &,uint &,SESimpleVector<CIPv6FirewallCacheEntry> &,SEList<CXOdbcVnetServerFirewallEntry,0> &,SEHashTable<CXOdbcFederatedUserCacheEntry,CXOdbcFederatedUserCacheKey,16,0,DefBaseAllocator> &,SEHashTable<CXOdbcSqlPoolCacheEntry,CXOdbcSqlPoolCacheKey,16,0,DefBaseAllocator> &)
+
+- ea: `0x101eb6670`
+- end: `0x101eb99a1`
+- name: `?GetAuthenticationCacheFromLogicalMaster@CAutoOdbcConnectionWrapper@@QEAAKPEAVIMemObj@@AEAV?$SEHashTable@VCXOdbcAuthenticationCacheEntry@@VCXOdbcAuthenticationCacheKey@@$0BA@$0A@VDefBaseAllocator@@@@AEAIAEAV?$SEList@VCXOdbcServerFirewallEntry@@$0A@@@AEAV?$SESimpleVector@VCIPv4FirewallCacheEntry@@@@2AEAV?$SESimpleVector@VCIPv6FirewallCacheEntry@@@@AEAV?$SEList@VCXOdbcVnetServerFirewallEntry@@$0A@@@AEAV?$SEHashTable@VCXOdbcFederatedUserCacheEntry@@VCXOdbcFederatedUserCacheKey@@$0BA@$0A@VDefBaseAllocator@@@@AEAV?$SEHashTable@VCXOdbcSqlPoolCacheEntry@@VCXOdbcSqlPoolCacheKey@@$0BA@$0A@VDefBaseAllocator@@@@@Z`
+- size: `13105`
+- prototype: `__int64 __fastcall(int, int, int, int, __int64, SESimpleVectorBase *, __int64, __int64, __int64, __int64, __int64)`
+- caller_count: `1`
+- callee_count: `25`
+- tags: `loader_planting, service_task, broker_com_uri`
+
+## callers
+
+- `0x101eab050`
+
+## callees
+
+- `0x100401070`
+- `0x100401090`
+- `0x1004012d0`
+- `0x100401340`
+- `0x100401433`
+- `0x100403080`
+- `0x1004076a0`
+- `0x100430d60`
+- `0x100754290`
+- `0x100894820`
+- `0x100932750`
+- `0x1009a6630`
+- `0x100a51db0`
+- `0x1012b2c30`
+- `0x1012b2e00`
+- `0x101760a50`
+- `0x101e4e960`
+- `0x101e88ed0`
+- `0x101ea90f0`
+- `0x101eaf7d0`
+- `0x101eafc40`
+- `0x101eb46a0`
+- `0x101eb4c20`
+- `0x101eb5530`
+- `0x101eb6670`
+
+## import_xrefs
+
+- `ODBC32!__imp_SQLExecute` at `0x101eb6d1c`
+- `ODBC32!__imp_SQLExecute` at `0x101eb7963`
+- `ODBC32!__imp_SQLExecute` at `0x101eb8043`
+- `ODBC32!__imp_SQLExecute` at `0x101eb8899`
+- `ODBC32!__imp_SQLExecute` at `0x101eb8ae8`
+- `ODBC32!__imp_SQLExecute` at `0x101eb6d1c`
+- `ODBC32!__imp_SQLExecute` at `0x101eb7963`
+- `ODBC32!__imp_SQLExecute` at `0x101eb8043`
+- `ODBC32!__imp_SQLExecute` at `0x101eb8899`
+- `ODBC32!__imp_SQLExecute` at `0x101eb8ae8`
+- `ODBC32!__imp_SQLFetch` at `0x101eb6d91`
+- `ODBC32!__imp_SQLFetch` at `0x101eb79d4`
+- `ODBC32!__imp_SQLFetch` at `0x101eb80b1`
+- `ODBC32!__imp_SQLFetch` at `0x101eb8b51`
+- `ODBC32!__imp_SQLFetch` at `0x101eb6d91`
+- `ODBC32!__imp_SQLFetch` at `0x101eb79d4`
+- `ODBC32!__imp_SQLFetch` at `0x101eb80b1`
+- `ODBC32!__imp_SQLFetch` at `0x101eb8b51`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb6b2b`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb7792`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb7e67`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb8596`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb8919`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb6b2b`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb7792`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb7e67`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb8596`
+- `ODBC32!__imp_SQLAllocHandle` at `0x101eb8919`
+- `ODBC32!__imp_SQLGetData` at `0x101eb6eff`
+- `ODBC32!__imp_SQLGetData` at `0x101eb6f70`
+- `ODBC32!__imp_SQLGetData` at `0x101eb6ff1`
+- `ODBC32!__imp_SQLGetData` at `0x101eb706e`
+- `ODBC32!__imp_SQLGetData` at `0x101eb70e2`
+- `ODBC32!__imp_SQLGetData` at `0x101eb7163`
+- `ODBC32!__imp_SQLGetData` at `0x101eb7202`
+- `ODBC32!__imp_SQLGetData` at `0x101eb72af`
+- `ODBC32!__imp_SQLGetData` at `0x101eb748e`
+- `ODBC32!__imp_SQLGetData` at `0x101eb7a6d`
+- `ODBC32!__imp_SQLGetData` at `0x101eb7ae3`
+- `ODBC32!__imp_SQLGetData` at `0x101eb81d9`
+- `ODBC32!__imp_SQLGetData` at `0x101eb8247`
+- `ODBC32!__imp_SQLGetData` at `0x101eb82bd`
+- `ODBC32!__imp_SQLGetData` at `0x101eb8333`
+- `ODBC32!__imp_SQLGetData` at `0x101eb8bee`
+- `ODBC32!__imp_SQLGetData` at `0x101eb8c6c`
+- `ODBC32!__imp_SQLGetData` at `0x101eb91a6`
+- `ODBC32!__imp_SQLGetData` at `0x101eb9241`
+- `ODBC32!__imp_SQLGetData` at `0x101eb92d2`
+- `ODBC32!__imp_SQLGetData` at `0x101eb9363`
+- `ODBC32!__imp_SQLGetData` at `0x101eb93f4`
+- `ODBC32!__imp_SQLGetData` at `0x101eb9485`
+- `ODBC32!__imp_SQLGetData` at `0x101eb6eff`
+- `ODBC32!__imp_SQLGetData` at `0x101eb6f70`
+- `ODBC32!__imp_SQLGetData` at `0x101eb6ff1`
+- `ODBC32!__imp_SQLGetData` at `0x101eb706e`
+- `ODBC32!__imp_SQLGetData` at `0x101eb70e2`
+- `ODBC32!__imp_SQLGetData` at `0x101eb7163`
+- `ODBC32!__imp_SQLGetData` at `0x101eb7202`
+- `ODBC32!__imp_SQLGetData` at `0x101eb72af`
+- `ODBC32!__imp_SQLGetData` at `0x101eb748e`
+- `ODBC32!__imp_SQLGetData` at `0x101eb7a6d`
+- `ODBC32!__imp_SQLGetData` at `0x101eb7ae3`
+- `ODBC32!__imp_SQLGetData` at `0x101eb81d9`
+- `ODBC32!__imp_SQLGetData` at `0x101eb8247`
+- `ODBC32!__imp_SQLGetData` at `0x101eb82bd`
+- `ODBC32!__imp_SQLGetData` at `0x101eb8333`
+- `ODBC32!__imp_SQLGetData` at `0x101eb8bee`
+- `ODBC32!__imp_SQLGetData` at `0x101eb8c6c`
+- `ODBC32!__imp_SQLGetData` at `0x101eb91a6`
+- `ODBC32!__imp_SQLGetData` at `0x101eb9241`
+- `ODBC32!__imp_SQLGetData` at `0x101eb92d2`
+- `ODBC32!__imp_SQLGetData` at `0x101eb9363`
+- `ODBC32!__imp_SQLGetData` at `0x101eb93f4`
+- `ODBC32!__imp_SQLGetData` at `0x101eb9485`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb6c3d`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb6ccd`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb7913`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb7ff9`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb8715`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb87bf`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb8859`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb8a9e`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb6c3d`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb6ccd`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb7913`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb7ff9`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb8715`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb87bf`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb8859`
+- `ODBC32!__imp_SQLBindParameter` at `0x101eb8a9e`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb6b98`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb7868`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb7f51`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb8669`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb89f8`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb6b98`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb7868`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb7f51`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb8669`
+- `ODBC32!__imp_SQLPrepareW` at `0x101eb89f8`
+- `sqldk!?x_pDefAllocMemObj@@3PEAVIMemObj@@EA` at `0x101eb9611`
+- `sqldk!?hdl_backout@@YAHHHHHPEAD@Z` at `0x101eb6ae8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb6e15`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb75c8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb7da0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb8cfb`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb8f2a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb6e15`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb75c8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb7da0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb8cfb`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101eb8f2a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101eb6959`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101eb6959`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x101eb98d5`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x101eb98d5`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101eb6ece`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101eb769c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101eb7dfa`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101eb9159`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101eb6ece`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101eb769c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101eb7dfa`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101eb9159`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101eb6906`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101eb7353`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101eb9756`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101eb6906`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101eb7353`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101eb9756`
+- `sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z` at `0x101eb6a52`
+- `sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z` at `0x101eb6a52`
+- `sqldk!SystemThread_TlsIndex` at `0x101eb6a0d`
+- `sqldk!SystemThread_TlsIndex` at `0x101eb6a6b`
+- `sqldk!SystemThread_TlsIndex` at `0x101eb989d`
+- `sqldk!SystemThread_TlsOffset` at `0x101eb6a16`
+- `sqldk!SystemThread_TlsOffset` at `0x101eb6a74`
+- `sqldk!SystemThread_TlsOffset` at `0x101eb98a6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb698f`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb736e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb7711`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb773a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb9136`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb950e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb9861`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb9957`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb698f`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb736e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb7711`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb773a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb9136`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb950e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb9861`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101eb9957`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101eb6a31`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101eb6a8f`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101eb98bf`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101eb6a31`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101eb6a8f`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101eb98bf`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb6916`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb772c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb976b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb9821`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb9870`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb9966`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb6916`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb772c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb976b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb9821`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb9870`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101eb9966`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101eb7625`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101eb7625`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x101eb763d`
+- `sqlTsEs!?IHashW@CDefaultCollation@@QEBAHPEB_WH@Z` at `0x101eb763d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101eb73ea`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101eb73ea`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101eb73f6`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101eb73f6`
+- `api-ms-win-crt-convert-l1-1-0!wcstoul` at `0x101eb741e`
+- `api-ms-win-crt-convert-l1-1-0!wcstoul` at `0x101eb741e`
+- `sqlmin!GetXdbServerGlobals` at `0x101eb7267`
+- `sqlmin!GetXdbServerGlobals` at `0x101eb9585`
+- `sqlmin!GetXdbServerGlobals` at `0x101eb7267`
+- `sqlmin!GetXdbServerGlobals` at `0x101eb9585`
+
+## string_xrefs
+
+- `0x101eb7eb5`: `{? = call sp_cloud_extensions_get_ipv6_server_firewall_rules}`
+- `0x101eb85de`: `{? = call sp_cloud_extensions_get_login_role_membership (?, ?)}`
+- `0x101eb8961`: `{? = call sp_cloud_extensions_get_vnet_server_firewall_rules}`
+- `0x101eb6894`: `Unexpected XOdbc failure occurred during GetAuthenticationCacheFromLogicalMaster.`
+- `0x101eb6b88`: `{? = call sp_cloud_extensions_get_sql_logins (?)}`
+- `0x101eb6b91`: `{? = call sp_cloud_extensions_get_sql_logins}`
+- `0x101eb77da`: `{? = call sp_cloud_extensions_get_server_firewall_rules}`
+
+## pseudocode
+
+```c
+
+```

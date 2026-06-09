@@ -1,0 +1,213 @@
+# CMemo::PrintXmlForPdw(int,DRgCId const *,CTDynArray<wchar_t const *,CFnI_Default<wchar_t const *>,CFnD_Noop<wchar_t const *>,CMemObjAlloc<0>> const *,CTDynArray<unsigned __int64,CFnI_Default<unsigned __int64>,CFnD_Noop<unsigned __int64>,CMemObjAlloc<0>> const *,bool,DRgCId const *,bool,bool,bool,CRelOp_Query *,CEnvCollection *,CCompExecCtxtStmt const &,CMemoXml *,OptTypeSortColArray *)
+
+- ea: `0x101c2c060`
+- end: `0x101c2e90d`
+- name: `?PrintXmlForPdw@CMemo@@QEAAXHPEBVDRgCId@@PEBV?$CTDynArray@PEB_WV?$CFnI_Default@PEB_W@@V?$CFnD_Noop@PEB_W@@V?$CMemObjAlloc@$0A@@@@@PEBV?$CTDynArray@_KV?$CFnI_Default@_K@@V?$CFnD_Noop@_K@@V?$CMemObjAlloc@$0A@@@@@_N0333PEAVCRelOp_Query@@PEAVCEnvCollection@@AEBVCCompExecCtxtStmt@@PEAVCMemoXml@@PEAVOptTypeSortColArray@@@Z`
+- size: `10413`
+- prototype: `__int64 __fastcall(int, int, int, int, __int64, char, __int64, char, char, char, __int64, CEnvCollection *, __int64, CTestHookXmlOutput *, __int64)`
+- caller_count: `2`
+- callee_count: `64`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x1019706c0`
+- `0x101c2e940`
+
+## callees
+
+- `0x100401070`
+- `0x100401433`
+- `0x10040be50`
+- `0x10040bea0`
+- `0x10040bed0`
+- `0x10040bf50`
+- `0x1004131b0`
+- `0x100440350`
+- `0x10045ab00`
+- `0x10045ab40`
+- `0x10045ac20`
+- `0x10045c260`
+- `0x10045cb40`
+- `0x10046b3f0`
+- `0x10046d010`
+- `0x10046e5d0`
+- `0x100473f00`
+- `0x100474c30`
+- `0x100475f10`
+- `0x100499100`
+- `0x1004c7da0`
+- `0x1004ee150`
+- `0x1004eedb0`
+- `0x100500a60`
+- `0x10059bdf0`
+- `0x100678b60`
+- `0x100701770`
+- `0x100b5e710`
+- `0x100de9370`
+- `0x100e600c0`
+- `0x101155320`
+- `0x101b4f580`
+- `0x101c0d490`
+- `0x101c0d650`
+- `0x101c2a720`
+- `0x101c2a7f0`
+- `0x101c2b610`
+- `0x101c2c060`
+- `0x101c2ee10`
+- `0x101c2f290`
+- `0x101c34dc0`
+- `0x101c39ce0`
+- `0x101c3a030`
+- `0x101c3a230`
+- `0x101c3a440`
+- `0x101c3b1e0`
+- `0x101c3b700`
+- `0x101c3b810`
+- `0x101c3ba70`
+- `0x101c3bce0`
+
+## import_xrefs
+
+- `KERNEL32!QueryPerformanceCounter` at `0x101c2c123`
+- `KERNEL32!QueryPerformanceCounter` at `0x101c2c192`
+- `KERNEL32!QueryPerformanceCounter` at `0x101c2c123`
+- `KERNEL32!QueryPerformanceCounter` at `0x101c2c192`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x101c2c243`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101c2c110`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101c2c182`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101c2cd2d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101c2db95`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101c2cd2d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101c2db95`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c51b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c56e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c6c6`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c775`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c7dc`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2d3a6`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c51b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c56e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c6c6`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c775`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2c7dc`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2d3a6`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101c2d7cf`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101c2d7cf`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2d1a1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101c2d1a1`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2c14a`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2c2a0`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2c2e2`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2c33b`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2c3dc`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2d294`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2d6c5`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2da7c`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2dde9`
+- `sqldk!SystemThread_TlsIndex` at `0x101c2deba`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2c153`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2c2a9`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2c2eb`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2c344`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2c3e5`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2d29d`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2d6ce`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2da85`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2ddf2`
+- `sqldk!SystemThread_TlsOffset` at `0x101c2dec3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2d899`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2ddbb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2ddd4`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e6bb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e6d4`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e768`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e7d7`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e7fd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e816`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e84b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e864`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e88b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e8a4`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e8cb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e8e4`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2d899`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2ddbb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2ddd4`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e6bb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e6d4`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e768`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e7d7`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e7fd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e816`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e84b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e864`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e88b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e8a4`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e8cb`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101c2e8e4`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101c2c16e`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101c2c16e`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101c2c2cf`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101c2c36a`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101c2c40b`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101c2c2cf`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101c2c36a`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101c2c40b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2cacb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2ce05`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2ce23`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2d1d2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2d23b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2d248`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2e6e7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2e70e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2e733`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2e782`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2cacb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2ce05`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2ce23`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2d1d2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2d23b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2d248`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2e6e7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2e70e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2e733`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101c2e782`
+- `sqlTsEs!?get_langinfo@@YAPEAUCLangInfo@@F@Z` at `0x101c2df88`
+- `sqlTsEs!?get_langinfo@@YAPEAUCLangInfo@@F@Z` at `0x101c2df88`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2d303`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2d35b`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2d61f`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2d65e`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2db44`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2dc34`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2dffb`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2e03b`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2d303`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2d35b`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2d61f`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2d65e`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2db44`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2dc34`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2dffb`
+- `sqlmin!GetXdbServerGlobals` at `0x101c2e03b`
+
+## string_xrefs
+
+- `0x101c2d192`: `Sql\Ntdbms\include\common\stdobj.inl`
+- `0x101c2c50c`: `sql\ntdbms\query\qeoptim\util\memoxml.cpp`
+- `0x101c2c55f`: `sql\ntdbms\query\qeoptim\util\memoxml.cpp`
+- `0x101c2c6b9`: `sql\ntdbms\query\qeoptim\util\memoxml.cpp`
+- `0x101c2c767`: `sql\ntdbms\query\qeoptim\util\memoxml.cpp`
+- `0x101c2c7cd`: `sql\ntdbms\query\qeoptim\util\memoxml.cpp`
+- `0x101c2d397`: `sql\ntdbms\query\qeoptim\util\memoxml.cpp`
+- `0x101c2db82`: `memoxml.cpp`
+- `0x101c2cd1a`: `Sql\Ntdbms\include\common\stdarray.inl`
+- `0x101c2db89`: `pMemoXml->IsNullListOfSecrets()`
+
+## pseudocode
+
+```c
+
+```
