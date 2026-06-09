@@ -1,0 +1,236 @@
+# OfficeSharedApiImpl::AuthenticationService::GetAccessTokenWithEvent(OfficeSharedApi::ITokenParameters *,wchar_t *,OfficeSharedApi::ISingleSignOnToken * *)
+
+- ea: `0x141d705f4`
+- end: `0x141d71a3c`
+- name: `?GetAccessTokenWithEvent@AuthenticationService@OfficeSharedApiImpl@@AEAAJPEAVITokenParameters@OfficeSharedApi@@PEA_WPEAPEAVISingleSignOnToken@4@@Z`
+- size: `5192`
+- prototype: `__int64 __fastcall(OfficeSharedApiImpl::AuthenticationService *__hidden this, struct OfficeSharedApi::ITokenParameters *, wchar_t *, struct OfficeSharedApi::ISingleSignOnToken **)`
+- caller_count: `1`
+- callee_count: `30`
+- tags: `service_task`
+
+## callers
+
+- `0x141d6fed0`
+
+## callees
+
+- `0x1400211a0`
+- `0x1400215d0`
+- `0x1400255e8`
+- `0x14002ba90`
+- `0x140030a88`
+- `0x14003d658`
+- `0x1400712cc`
+- `0x14007dfec`
+- `0x1400889b0`
+- `0x1400889f0`
+- `0x14019b154`
+- `0x140387bf0`
+- `0x140503f00`
+- `0x140504c13`
+- `0x1407ce680`
+- `0x1407e99f0`
+- `0x1407ecf10`
+- `0x1407ee024`
+- `0x140839288`
+- `0x140a42690`
+- `0x141d6eb34`
+- `0x141d6ebb8`
+- `0x141d6ed60`
+- `0x141d6ee64`
+- `0x141d6efc0`
+- `0x141d6f144`
+- `0x141d6f1c8`
+- `0x141d705f4`
+- `0x141d73a5c`
+- `0x141d73b7c`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70775`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70798`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d707bb`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d707e4`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70807`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70862`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70885`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d708a8`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d708d1`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d708f4`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70b55`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70b78`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70b9c`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70bc5`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70be8`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70c8e`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70cb1`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70cd4`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70cfd`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70d20`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70f1d`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70f40`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70f63`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70f8c`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70faf`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71028`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7104b`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7106e`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71097`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d710ba`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71145`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71168`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7118b`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d711b8`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d711db`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71238`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7125b`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7127e`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d712a7`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d712ca`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71349`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7136c`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7138f`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d713b8`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d713db`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71474`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71497`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d714ba`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d714e3`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71506`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d715c1`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d715e4`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71607`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71630`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71653`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71946`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71969`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7198c`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d719b5`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d719d8`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70775`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70798`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d707bb`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d707e4`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70807`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70862`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70885`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d708a8`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d708d1`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d708f4`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70b55`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70b78`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70b9c`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70bc5`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70be8`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70c8e`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70cb1`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70cd4`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70cfd`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70d20`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70f1d`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70f40`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70f63`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70f8c`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d70faf`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71028`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7104b`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7106e`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71097`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d710ba`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71145`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71168`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7118b`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d711b8`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d711db`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71238`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7125b`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7127e`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d712a7`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d712ca`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71349`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7136c`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7138f`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d713b8`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d713db`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71474`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71497`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d714ba`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d714e3`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71506`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d715c1`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d715e4`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71607`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71630`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71653`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71946`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d71969`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d7198c`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d719b5`
+- `OLEAUT32!__imp_SysFreeString` at `0x141d719d8`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d709d4`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d70a14`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d70a54`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d70a9e`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d70adb`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d716ad`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d716ed`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d7172d`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d71777`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d709d4`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d70a14`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d70a54`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d70a9e`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d70adb`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d716ad`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d716ed`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d7172d`
+- `OLEAUT32!__imp_SysStringLen` at `0x141d71777`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70816`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70903`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70bf7`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70d38`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70fbe`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d710c9`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d711ea`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d712d9`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d713ea`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d71515`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d71668`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d719fe`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d71a10`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70816`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70903`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70bf7`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70d38`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d70fbe`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d710c9`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d711ea`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d712d9`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d713ea`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d71515`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d71668`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d719fe`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x141d71a10`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x141d712e6`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x141d712e6`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x141d70e4a`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x141d71891`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x141d70e4a`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x141d71891`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x141d709ac`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x141d709ac`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x141d70e37`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x141d7187e`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x141d70e37`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x141d7187e`
+
+## string_xrefs
+
+- `0x141d70645`: `GetAccessTokenV3Main`
+
+## pseudocode
+
+```c
+
+```

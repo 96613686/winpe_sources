@@ -1,0 +1,141 @@
+# AddrPropSet::ResolveNames(IAddrBook *,HWND__ *)
+
+- ea: `0x140e24a20`
+- end: `0x140e258f8`
+- name: `?ResolveNames@AddrPropSet@@UEAAJPEAUIAddrBook@@PEAUHWND__@@@Z`
+- size: `3800`
+- prototype: `__int64 __fastcall(AddrPropSet *__hidden this, struct IAddrBook *, HWND)`
+- caller_count: `0`
+- callee_count: `31`
+- tags: ``
+
+## callees
+
+- `0x1400d3df0`
+- `0x1400d3e20`
+- `0x1400d4d1c`
+- `0x1400dd680`
+- `0x1400dd710`
+- `0x1400ec6f0`
+- `0x140109e38`
+- `0x14010a050`
+- `0x14010a978`
+- `0x14010ab1c`
+- `0x14010ad4c`
+- `0x140122a04`
+- `0x140137b50`
+- `0x14015bc30`
+- `0x140503f00`
+- `0x14063fe88`
+- `0x1406a4c20`
+- `0x1407e99f0`
+- `0x1408d5850`
+- `0x1409198b4`
+- `0x140adaa78`
+- `0x140e24a20`
+- `0x140e258f8`
+- `0x14144e370`
+- `0x1414680ac`
+- `0x14165b628`
+- `0x141693e68`
+- `0x14184a0d4`
+- `0x14184ae38`
+- `0x141d39ba0`
+- `0x141d3a010`
+
+## import_xrefs
+
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x140e25202`
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x140e25202`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e2510e`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25147`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25241`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e2527d`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25331`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25372`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25480`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e254cf`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e2510e`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25147`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25241`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e2527d`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25331`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25372`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e25480`
+- `OLMAPI32!HrIdnToDisplayFormSMTP` at `0x140e254cf`
+- `OLMAPI32!HrOpenABEntryWithResolvedRow` at `0x140e24ddf`
+- `OLMAPI32!HrOpenABEntryWithResolvedRow` at `0x140e24ddf`
+- `OLMAPI32!FParseSMTP_W` at `0x140e24fc9`
+- `OLMAPI32!FParseSMTP_W` at `0x140e2540e`
+- `OLMAPI32!FParseSMTP_W` at `0x140e24fc9`
+- `OLMAPI32!FParseSMTP_W` at `0x140e2540e`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24e04`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24e19`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24ebc`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24ed1`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24f5e`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24f76`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24f8b`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e253aa`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e253bf`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e256a0`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e25790`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e257a1`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e257b5`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e257c6`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e257d7`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e2583e`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e2584f`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e25863`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e25874`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e25885`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24e04`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24e19`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24ebc`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24ed1`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24f5e`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24f76`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e24f8b`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e253aa`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e253bf`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e256a0`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e25790`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e257a1`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e257b5`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e257c6`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e257d7`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e2583e`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e2584f`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e25863`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e25874`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140e25885`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e24e6f`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e24e85`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e24e97`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e25073`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e250e9`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e251c2`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e24e6f`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e24e85`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e24e97`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e25073`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e250e9`
+- `Mso98Win32Client!__imp_?FErrorMTAG@@YA_NK@Z` at `0x140e251c2`
+- `Mso98Win32Client!__imp_?PmvalFindFromPmrow@@YAPEAU_SPropValue@@PEBU_SRow@@KHHPEAKH@Z` at `0x140e24d17`
+- `Mso98Win32Client!__imp_?PmvalFindFromPmrow@@YAPEAU_SPropValue@@PEBU_SRow@@KHHPEAKH@Z` at `0x140e24d4f`
+- `Mso98Win32Client!__imp_?PmvalFindFromPmrow@@YAPEAU_SPropValue@@PEBU_SRow@@KHHPEAKH@Z` at `0x140e24d17`
+- `Mso98Win32Client!__imp_?PmvalFindFromPmrow@@YAPEAU_SPropValue@@PEBU_SRow@@KHHPEAKH@Z` at `0x140e24d4f`
+- `Mso98Win32Client!__imp_?FIsContactABEntryID@@YA_NKPEAUENTRYID@@@Z` at `0x140e24ea8`
+- `Mso98Win32Client!__imp_?FIsContactABEntryID@@YA_NKPEAUENTRYID@@@Z` at `0x140e24ea8`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140e24f43`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140e255c0`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140e256e6`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140e24f43`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140e255c0`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140e256e6`
+
+## pseudocode
+
+```c
+
+```
