@@ -1,0 +1,1914 @@
+[
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "IcpGetContainerHelper(unsigned __int64 *,char const *,char const *,ulong,ulong,int)",
+    "ea": "0x1800048a4",
+    "function_file": "functions/1800048a4_IcpGetContainerHelper_unsigned_int64_char_const_char_const_ulong_ulong_int.md",
+    "matched_imports": [
+      "ADVAPI32!AddAccessAllowedAce",
+      "ADVAPI32!AllocateAndInitializeSid",
+      "ADVAPI32!CryptAcquireContextA",
+      "ADVAPI32!CryptReleaseContext",
+      "ADVAPI32!CryptSetProvParam",
+      "ADVAPI32!FreeSid",
+      "ADVAPI32!GetLengthSid",
+      "ADVAPI32!InitializeAcl",
+      "ADVAPI32!InitializeSecurityDescriptor",
+      "ADVAPI32!SetSecurityDescriptorDacl",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetVersionExA",
+      "KERNEL32!LeaveCriticalSection",
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [
+      "IcpGetContainerHelper. CryptAcquireContext(advapi32.dll) with CRYPT_VERIFYCONTEXT failed err=0x%x\n",
+      "IcpGetContainerHelper. CryptAcquireContext(advapi32.dll) failed err=0x%x.toast.\n",
+      "CryptAcquireContext(%p,%p,%p,%d,%d) returned NTE_BAD_KEYSET, so lets create a keyset now...\n",
+      "IcpGetContainerHelper. CryptAcquireContext(advapi32.dll) failed err=0x%x.\n"
+    ],
+    "name": "?IcpGetContainerHelper@@YAJPEA_KPEBD1KKH@Z",
+    "prototype": "int(unsigned __int64 *, const char *, const char *, unsigned int, unsigned int, int)",
+    "rank_score": 4417,
+    "size": 1403,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "ADM_SECURE_DATA::DoClientSideKeyExchange(IUnknown *)",
+    "ea": "0x180003538",
+    "function_file": "functions/180003538_ADM_SECURE_DATA_DoClientSideKeyExchange_IUnknown.md",
+    "matched_imports": [
+      "ADVAPI32!ImpersonateLoggedOnUser",
+      "ADVAPI32!OpenThreadToken",
+      "ADVAPI32!RevertToSelf",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError",
+      "RPCRT4!NdrClientCall2",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?DoClientSideKeyExchange@ADM_SECURE_DATA@@AEAAJPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(ADM_SECURE_DATA *__hidden this, struct IUnknown *)",
+    "rank_score": 4052,
+    "size": 1171,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "IISCryptoEncryptDataBlob",
+    "ea": "0x180006704",
+    "function_file": "functions/180006704_IISCryptoEncryptDataBlob.md",
+    "matched_imports": [
+      "ADVAPI32!CryptEncrypt",
+      "ADVAPI32!CryptSignHashA",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoEncryptDataBlob",
+    "prototype": "__int64 __fastcall(BYTE **, const void *, __int64, int, HCRYPTPROV hProv, HCRYPTKEY hKey)",
+    "rank_score": 1823,
+    "size": 525,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "InitializeIISUtilProcessAttach",
+    "ea": "0x180006bcc",
+    "function_file": "functions/180006bcc_InitializeIISUtilProcessAttach.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetSystemInfo",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\common\\util\\init_iisutil.cxx",
+      "System\\CurrentControlSet\\Services\\W3SVC\\Parameters\\IisUtil",
+      "kernel32.dll",
+      "SwitchToThread"
+    ],
+    "name": "InitializeIISUtilProcessAttach",
+    "prototype": "",
+    "rank_score": 1803,
+    "size": 555,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180002400",
+    "function_file": "functions/180002400_DllMain.md",
+    "matched_imports": [
+      "KERNEL32!DisableThreadLibraryCalls",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!HeapCreate",
+      "KERNEL32!HeapDestroy",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount",
+      "KERNEL32!LocalFree",
+      "KERNEL32!OutputDebugStringA",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "Unable to Create Debug Print Object \n",
+      "System\\CurrentControlSet\\Services\\iisadmin\\Parameters"
+    ],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 1716,
+    "size": 412,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ADM_SECURE_DATA::DoServerSideKeyExchangePhase1(_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB * *,_IIS_CRYPTO_BLOB * *,_IIS_CRYPTO_BLOB * *)",
+    "ea": "0x1800039d4",
+    "function_file": "functions/1800039d4_ADM_SECURE_DATA_DoServerSideKeyExchangePhase1_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_.md",
+    "matched_imports": [
+      "ADVAPI32!ImpersonateLoggedOnUser",
+      "ADVAPI32!OpenThreadToken",
+      "ADVAPI32!RevertToSelf",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "MS IIS DCOM Server"
+    ],
+    "name": "?DoServerSideKeyExchangePhase1@ADM_SECURE_DATA@@QEAAJPEFAU_IIS_CRYPTO_BLOB@@0PEAPEFAU2@11@Z",
+    "prototype": "__int64 __fastcall(ADM_SECURE_DATA *__hidden this, struct _IIS_CRYPTO_BLOB *, struct _IIS_CRYPTO_BLOB *, struct _IIS_CRYPTO_BLOB **, struct _IIS_CRYPTO_BLOB **, struct _IIS_CRYPTO_BLOB **)",
+    "rank_score": 1681,
+    "size": 447,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IIS_CRYPTO_BASE::AmIRunningInTheLocalSystemContext(void)",
+    "ea": "0x1800050f0",
+    "function_file": "functions/1800050f0_IIS_CRYPTO_BASE_AmIRunningInTheLocalSystemContext_void.md",
+    "matched_imports": [
+      "ADVAPI32!AllocateAndInitializeSid",
+      "ADVAPI32!EqualSid",
+      "ADVAPI32!FreeSid",
+      "ADVAPI32!GetTokenInformation",
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "?AmIRunningInTheLocalSystemContext@IIS_CRYPTO_BASE@@KAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 1627,
+    "size": 310,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ADM_SECURE_DATA::DoServerSideKeyExchangePhase2(_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB * *)",
+    "ea": "0x180003b9c",
+    "function_file": "functions/180003b9c_ADM_SECURE_DATA_DoServerSideKeyExchangePhase2_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB.md",
+    "matched_imports": [
+      "ADVAPI32!ImpersonateLoggedOnUser",
+      "ADVAPI32!OpenThreadToken",
+      "ADVAPI32!RevertToSelf",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?DoServerSideKeyExchangePhase2@ADM_SECURE_DATA@@QEAAJPEFAU_IIS_CRYPTO_BLOB@@0PEAPEFAU2@@Z",
+    "prototype": "__int64 __fastcall(IIS_CRYPTO_EXCHANGE_SERVER **this, struct _IIS_CRYPTO_BLOB *, struct _IIS_CRYPTO_BLOB *, struct _IIS_CRYPTO_BLOB **)",
+    "rank_score": 1619,
+    "size": 433,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ADM_SECURE_DATA::Terminate(void)",
+    "ea": "0x180004468",
+    "function_file": "functions/180004468_ADM_SECURE_DATA_Terminate_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@ADM_SECURE_DATA@@SAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 1418,
+    "size": 360,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FormatMsgToBuffer(STRA *,_DEBUG_PRINTS *,char const *,ulong,char const *,char const *,char * *)",
+    "ea": "0x180006ec8",
+    "function_file": "functions/180006ec8_FormatMsgToBuffer_STRA_DEBUG_PRINTS_char_const_ulong_char_const_char_const_char.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetLastError",
+      "msvcrt!_vsnprintf_s",
+      "msvcrt!sprintf_s",
+      "msvcrt!strnlen",
+      "msvcrt!strrchr"
+    ],
+    "matched_strings": [],
+    "name": "?FormatMsgToBuffer@@YAXPEAVSTRA@@PEAU_DEBUG_PRINTS@@PEBDK22PEAPEAD@Z",
+    "prototype": "void __usercall(struct STRA *this@<rcx>, struct _DEBUG_PRINTS *@<rdx>, const char *@<r8>, unsigned int@<r9d>, const char *, const char *, char **)",
+    "rank_score": 1405,
+    "size": 336,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001754",
+    "function_file": "functions/180001754_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "IcpGetHashLength(ulong *,unsigned __int64)",
+    "ea": "0x180006918",
+    "function_file": "functions/180006918_IcpGetHashLength_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "ADVAPI32!CryptHashData",
+      "ADVAPI32!CryptSignHashA",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?IcpGetHashLength@@YAJPEAK_K@Z",
+    "prototype": "int(unsigned int *, unsigned __int64)",
+    "rank_score": 1208,
+    "size": 283,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "IISCryptoExportSessionKeyBlob",
+    "ea": "0x180006104",
+    "function_file": "functions/180006104_IISCryptoExportSessionKeyBlob.md",
+    "matched_imports": [
+      "ADVAPI32!CryptExportKey",
+      "ADVAPI32!CryptHashData",
+      "ADVAPI32!CryptSignHashA",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [
+      "IISCryptoExportSessionKeyBlob.CryptExportKey (advapi32.dll) failed err=0x%x.\n",
+      "IISCryptoExportSessionKeyBlob.IISCryptoCreateHash failed err=0x%x.\n"
+    ],
+    "name": "IISCryptoExportSessionKeyBlob",
+    "prototype": "__int64 __fastcall(struct _IC_BLOB **, unsigned __int64, HCRYPTKEY, HCRYPTKEY)",
+    "rank_score": 1114,
+    "size": 681,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CallRegisterComponent(ushort const *,char *)",
+    "ea": "0x180008254",
+    "function_file": "functions/180008254_CallRegisterComponent_ushort_const_char.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!LoadLibraryExW",
+      "msvcrt!wcscat_s"
+    ],
+    "matched_strings": [
+      "admwprox.dll",
+      "\\inetsrv\\iisreg.dll"
+    ],
+    "name": "?CallRegisterComponent@@YAJPEBGPEAD@Z",
+    "prototype": "int(const unsigned __int16 *, char *)",
+    "rank_score": 1106,
+    "size": 207,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IcpGetKeyHelper(unsigned __int64 *,unsigned __int64,ulong)",
+    "ea": "0x180005d6c",
+    "function_file": "functions/180005d6c_IcpGetKeyHelper_unsigned_int64_unsigned_int64_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!CryptGenKey",
+      "ADVAPI32!CryptGetUserKey",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [
+      "IcpGetKeyHelper.CryptGetUserKey (advapi32.dll) failed err=0x%x.toast.\n",
+      "IcpGetKeyHelper.CryptGenKey (advapi32.dll) failed err=0x%x.\n"
+    ],
+    "name": "?IcpGetKeyHelper@@YAJPEA_K_KK@Z",
+    "prototype": "__int64 __fastcall(HCRYPTKEY *phKey, HCRYPTPROV hProv, ALG_ID Algid)",
+    "rank_score": 1097,
+    "size": 436,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "IMSAdminBaseW_SetData_Proxy",
+    "ea": "0x180002e90",
+    "function_file": "functions/180002e90_IMSAdminBaseW_SetData_Proxy.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "RPCRT4!NdrClientCall2",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IMSAdminBaseW_SetData_Proxy",
+    "prototype": "HRESULT __stdcall(IMSAdminBaseW *This, METADATA_HANDLE hMDHandle, LPCWSTR pszMDPath, PMETADATA_RECORD pmdrMDData)",
+    "rank_score": 1039,
+    "size": 505,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "ADM_SECURE_DATA::FindOrAddAndReferenceClientSecureData(IUnknown *)",
+    "ea": "0x180003f60",
+    "function_file": "functions/180003f60_ADM_SECURE_DATA_FindOrAddAndReferenceClientSecureData_IUnknown.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "RPCRT4!NdrClientCall2"
+    ],
+    "matched_strings": [],
+    "name": "?FindOrAddAndReferenceClientSecureData@ADM_SECURE_DATA@@SAPEAV1@PEAUIUnknown@@@Z",
+    "prototype": "struct ADM_SECURE_DATA *__fastcall(struct IUnknown *)",
+    "rank_score": 1026,
+    "size": 469,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "InitializeStringFunctions(void)",
+    "ea": "0x1800046d0",
+    "function_file": "functions/1800046d0_InitializeStringFunctions_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegQueryValueExA",
+      "KERNEL32!GetCPInfo"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\InetInfo\\Parameters"
+    ],
+    "name": "?InitializeStringFunctions@@YAKXZ",
+    "prototype": "unsigned int(void)",
+    "rank_score": 864,
+    "size": 181,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IISGetPlatformType",
+    "ea": "0x1800045d8",
+    "function_file": "functions/1800045d8_IISGetPlatformType.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetVersionExA",
+      "KERNEL32!LoadLibraryA"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "IISGetPlatformType",
+    "prototype": "",
+    "rank_score": 856,
+    "size": 241,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "EVENT_LOG::DestroyEventLogSource(_EVENT_LOG_SOURCE *)",
+    "ea": "0x180007fbc",
+    "function_file": "functions/180007fbc_EVENT_LOG_DestroyEventLogSource_EVENT_LOG_SOURCE.md",
+    "matched_imports": [
+      "ADVAPI32!DeregisterEventSource",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\common\\util\\eventlog.cxx"
+    ],
+    "name": "?DestroyEventLogSource@EVENT_LOG@@CAXPEAU_EVENT_LOG_SOURCE@@@Z",
+    "prototype": "void __fastcall(struct _EVENT_LOG_SOURCE *)",
+    "rank_score": 854,
+    "size": 159,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ALLOC_CACHE_HANDLER::Initialize(void)",
+    "ea": "0x180007a54",
+    "function_file": "functions/180007a54_ALLOC_CACHE_HANDLER_Initialize_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount"
+    ],
+    "matched_strings": [
+      "verifier.dll"
+    ],
+    "name": "?Initialize@ALLOC_CACHE_HANDLER@@SAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 853,
+    "size": 186,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "IMSAdminBaseW_GetAllData_Stub",
+    "ea": "0x180002a3c",
+    "function_file": "functions/180002a3c_IMSAdminBaseW_GetAllData_Stub.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "RPCRT4!I_RpcBindingIsClientLocal",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IMSAdminBaseW_GetAllData_Stub",
+    "prototype": "HRESULT __stdcall(IMSAdminBaseW *This, METADATA_HANDLE hMDHandle, LPCWSTR pszMDPath, DWORD dwMDAttributes, DWORD dwMDUserType, DWORD dwMDDataType, DWORD *pdwMDNumDataEntries, DWORD *pdwMDDataSetNumber, DWORD dwMDBufferSize, DWORD *pdwMDRequiredBufferSize, struct _IIS_CRYPTO_BLOB **ppDataBlob)",
+    "rank_score": 830,
+    "size": 507,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "IMSAdminBaseW_R_EnumData_Thunk",
+    "ea": "0x180001ce0",
+    "function_file": "functions/180001ce0_IMSAdminBaseW_R_EnumData_Thunk.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "RPCRT4!I_RpcBindingIsClientLocal",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IMSAdminBaseW_R_EnumData_Thunk",
+    "prototype": "",
+    "rank_score": 829,
+    "size": 468,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "IMSAdminBaseW_R_GetData_Thunk",
+    "ea": "0x180001f30",
+    "function_file": "functions/180001f30_IMSAdminBaseW_R_GetData_Thunk.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "RPCRT4!I_RpcBindingIsClientLocal",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IMSAdminBaseW_R_GetData_Thunk",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 829,
+    "size": 428,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "IIS_CRYPTO_EXCHANGE_BASE::CreateHashWorker(_IIS_CRYPTO_BLOB * *,int)",
+    "ea": "0x180005bd8",
+    "function_file": "functions/180005bd8_IIS_CRYPTO_EXCHANGE_BASE_CreateHashWorker_IIS_CRYPTO_BLOB_int.md",
+    "matched_imports": [
+      "ADVAPI32!CryptHashData",
+      "ADVAPI32!CryptHashSessionKey",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?CreateHashWorker@IIS_CRYPTO_EXCHANGE_BASE@@AEAAJPEAPEFAU_IIS_CRYPTO_BLOB@@H@Z",
+    "prototype": "__int64 __fastcall(HCRYPTPROV *this, struct _IIS_CRYPTO_BLOB **, int)",
+    "rank_score": 821,
+    "size": 395,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ADM_SECURE_DATA::CreateADM_SECURE_DATA(IUnknown *,_GUID,int)",
+    "ea": "0x18000340c",
+    "function_file": "functions/18000340c_ADM_SECURE_DATA_CreateADM_SECURE_DATA_IUnknown_GUID_int.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateADM_SECURE_DATA@ADM_SECURE_DATA@@SAPEAV1@PEAUIUnknown@@U_GUID@@H@Z",
+    "prototype": "struct ADM_SECURE_DATA *__fastcall(struct IUnknown *, struct _GUID *__struct_ptr, int)",
+    "rank_score": 818,
+    "size": 291,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "ADM_SECURE_DATA::~ADM_SECURE_DATA(void)",
+    "ea": "0x1800031f4",
+    "function_file": "functions/1800031f4_ADM_SECURE_DATA_ADM_SECURE_DATA_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1ADM_SECURE_DATA@@QEAA@XZ",
+    "prototype": "void __fastcall(ADM_SECURE_DATA *__hidden this)",
+    "rank_score": 818,
+    "size": 155,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ALLOC_CACHE_HANDLER::CleanupLookaside(int)",
+    "ea": "0x1800076f0",
+    "function_file": "functions/1800076f0_ALLOC_CACHE_HANDLER_CleanupLookaside_int.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree",
+      "KERNEL32!InterlockedPopEntrySList",
+      "KERNEL32!QueryDepthSList"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\common\\util\\acache.cxx",
+      "ALLOC_CACHE_HANDLER::CleanupLookaside"
+    ],
+    "name": "?CleanupLookaside@ALLOC_CACHE_HANDLER@@QEAAXH@Z",
+    "prototype": "void __fastcall(ALLOC_CACHE_HANDLER *__hidden this, int)",
+    "rank_score": 715,
+    "size": 282,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180001900",
+    "function_file": "functions/180001900_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 8,
+    "demangled": "ADM_SECURE_DATA::FindAndReferenceServerSecureData(IUnknown *,int)",
+    "ea": "0x180003e3c",
+    "function_file": "functions/180003e3c_ADM_SECURE_DATA_FindAndReferenceServerSecureData_IUnknown_int.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "ole32!CoCreateGuid"
+    ],
+    "matched_strings": [
+      "ADM_SECURE_DATA::FindAndReferenceServerSecureData: CoCreateGuid failed\n"
+    ],
+    "name": "?FindAndReferenceServerSecureData@ADM_SECURE_DATA@@SAPEAV1@PEAUIUnknown@@H@Z",
+    "prototype": "struct ADM_SECURE_DATA *__fastcall(struct IUnknown *, int)",
+    "rank_score": 654,
+    "size": 283,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IISCryptoImportSessionKeyBlob",
+    "ea": "0x180006508",
+    "function_file": "functions/180006508_IISCryptoImportSessionKeyBlob.md",
+    "matched_imports": [
+      "ADVAPI32!CryptHashData",
+      "ADVAPI32!CryptImportKey",
+      "ADVAPI32!CryptVerifySignatureA"
+    ],
+    "matched_strings": [
+      "IISCryptoImportSessionKeyBlob.IISCryptoCreateHash failed err=0x%x.\n"
+    ],
+    "name": "IISCryptoImportSessionKeyBlob",
+    "prototype": "__int64 __fastcall(HCRYPTKEY *phKey, __int64, HCRYPTPROV, HCRYPTKEY)",
+    "rank_score": 649,
+    "size": 499,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "ADM_GUID_MAP::~ADM_GUID_MAP(void)",
+    "ea": "0x18000313c",
+    "function_file": "functions/18000313c_ADM_GUID_MAP_ADM_GUID_MAP_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1ADM_GUID_MAP@@QEAA@XZ",
+    "prototype": "void __fastcall(ADM_GUID_MAP *__hidden this)",
+    "rank_score": 619,
+    "size": 176,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "IISCryptoExportPublicKeyBlob",
+    "ea": "0x180005f7c",
+    "function_file": "functions/180005f7c_IISCryptoExportPublicKeyBlob.md",
+    "matched_imports": [
+      "ADVAPI32!CryptExportKey",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoExportPublicKeyBlob",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 619,
+    "size": 383,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IIS_CRYPTO_EXCHANGE_SERVER::ServerPhase1(_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB * *,_IIS_CRYPTO_BLOB * *,_IIS_CRYPTO_BLOB * *)",
+    "ea": "0x180005988",
+    "function_file": "functions/180005988_IIS_CRYPTO_EXCHANGE_SERVER_ServerPhase1_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CR.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?ServerPhase1@IIS_CRYPTO_EXCHANGE_SERVER@@QEAAJPEFAU_IIS_CRYPTO_BLOB@@0PEAPEFAU2@11@Z",
+    "prototype": "__int64 __fastcall(HCRYPTKEY *this, struct _IIS_CRYPTO_BLOB *, struct _IIS_CRYPTO_BLOB *, LPVOID *, struct _IIS_CRYPTO_BLOB **, struct _IIS_CRYPTO_BLOB **)",
+    "rank_score": 618,
+    "size": 286,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ADM_GUID_MAP::CreateADM_GUID_MAP(IUnknown *,_GUID)",
+    "ea": "0x18000333c",
+    "function_file": "functions/18000333c_ADM_GUID_MAP_CreateADM_GUID_MAP_IUnknown_GUID.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateADM_GUID_MAP@ADM_GUID_MAP@@SAPEAV1@PEAUIUnknown@@U_GUID@@@Z",
+    "prototype": "struct ADM_GUID_MAP *__fastcall(struct IUnknown *, struct _GUID *__struct_ptr)",
+    "rank_score": 616,
+    "size": 200,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IISCryptoExportHashBlob",
+    "ea": "0x180006ad8",
+    "function_file": "functions/180006ad8_IISCryptoExportHashBlob.md",
+    "matched_imports": [
+      "ADVAPI32!CryptGetHashParam",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoExportHashBlob",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 616,
+    "size": 237,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ADM_GUID_MAP::Terminate(void)",
+    "ea": "0x1800043d0",
+    "function_file": "functions/1800043d0_ADM_GUID_MAP_Terminate_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@ADM_GUID_MAP@@SAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 615,
+    "size": 143,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ADM_SECURE_DATA::GetClientReceiveCryptoStorage(IIS_CRYPTO_STORAGE * *,IUnknown *)",
+    "ea": "0x18000413c",
+    "function_file": "functions/18000413c_ADM_SECURE_DATA_GetClientReceiveCryptoStorage_IIS_CRYPTO_STORAGE_IUnknown.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetClientReceiveCryptoStorage@ADM_SECURE_DATA@@QEAAJPEAPEAVIIS_CRYPTO_STORAGE@@PEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(ADM_SECURE_DATA *__hidden this, struct IIS_CRYPTO_STORAGE **, struct IUnknown *)",
+    "rank_score": 615,
+    "size": 104,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "IIS_CRYPTO_BASE::GetThreadImpersonationToken(void * *)",
+    "ea": "0x18000534c",
+    "function_file": "functions/18000534c_IIS_CRYPTO_BASE_GetThreadImpersonationToken_void.md",
+    "matched_imports": [
+      "ADVAPI32!OpenThreadToken",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadImpersonationToken@IIS_CRYPTO_BASE@@KAJPEAPEAX@Z",
+    "prototype": "__int64 __fastcall(PHANDLE TokenHandle)",
+    "rank_score": 615,
+    "size": 106,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IIS_CRYPTO_EXCHANGE_SERVER::ServerPhase2(_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB * *)",
+    "ea": "0x180005aac",
+    "function_file": "functions/180005aac_IIS_CRYPTO_EXCHANGE_SERVER_ServerPhase2_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?ServerPhase2@IIS_CRYPTO_EXCHANGE_SERVER@@QEAAJPEFAU_IIS_CRYPTO_BLOB@@0PEAPEFAU2@@Z",
+    "prototype": "__int64 __fastcall(IIS_CRYPTO_EXCHANGE_SERVER *__hidden this, struct _IIS_CRYPTO_BLOB *, struct _IIS_CRYPTO_BLOB *, struct _IIS_CRYPTO_BLOB **)",
+    "rank_score": 615,
+    "size": 220,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PuLoadDebugFlagsFromRegStr",
+    "ea": "0x180007324",
+    "function_file": "functions/180007324_PuLoadDebugFlagsFromRegStr.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegQueryValueExA"
+    ],
+    "matched_strings": [],
+    "name": "PuLoadDebugFlagsFromRegStr",
+    "prototype": "__int64 __fastcall(LPCSTR lpSubKey)",
+    "rank_score": 614,
+    "size": 156,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "EVENT_LOG::Terminate(void)",
+    "ea": "0x1800080ac",
+    "function_file": "functions/1800080ac_EVENT_LOG_Terminate_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@EVENT_LOG@@SAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 604,
+    "size": 146,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PuCreateDebugPrintsObject",
+    "ea": "0x180007170",
+    "function_file": "functions/180007170_PuCreateDebugPrintsObject.md",
+    "matched_imports": [
+      "KERNEL32!GetStdHandle",
+      "KERNEL32!GlobalAlloc",
+      "msvcrt!strcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "PuCreateDebugPrintsObject",
+    "prototype": "",
+    "rank_score": 604,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "TerminateIISUtilProcessDetach",
+    "ea": "0x180006e00",
+    "function_file": "functions/180006e00_TerminateIISUtilProcessDetach.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\common\\util\\init_iisutil.cxx"
+    ],
+    "name": "TerminateIISUtilProcessDetach",
+    "prototype": "",
+    "rank_score": 469,
+    "size": 191,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "IMSAdminBaseW_EnumData_Proxy",
+    "ea": "0x1800025f0",
+    "function_file": "functions/1800025f0_IMSAdminBaseW_EnumData_Proxy.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall2",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IMSAdminBaseW_EnumData_Proxy",
+    "prototype": "HRESULT __stdcall(IMSAdminBaseW *This, METADATA_HANDLE hMDHandle, LPCWSTR pszMDPath, PMETADATA_RECORD pmdrMDData, DWORD dwMDEnumDataIndex, DWORD *pdwMDRequiredDataLen)",
+    "rank_score": 431,
+    "size": 587,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "IMSAdminBaseW_GetData_Proxy",
+    "ea": "0x180002c40",
+    "function_file": "functions/180002c40_IMSAdminBaseW_GetData_Proxy.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall2",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IMSAdminBaseW_GetData_Proxy",
+    "prototype": "HRESULT __stdcall(IMSAdminBaseW *This, METADATA_HANDLE hMDHandle, LPCWSTR pszMDPath, PMETADATA_RECORD pmdrMDData, DWORD *pdwMDRequiredDataLen)",
+    "rank_score": 431,
+    "size": 558,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "IMSAdminBaseW_GetAllData_Proxy",
+    "ea": "0x180002850",
+    "function_file": "functions/180002850_IMSAdminBaseW_GetAllData_Proxy.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall2",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "IMSAdminBaseW_GetAllData_Proxy",
+    "prototype": "HRESULT __stdcall(IMSAdminBaseW *This, METADATA_HANDLE hMDHandle, LPCWSTR pszMDPath, DWORD dwMDAttributes, DWORD dwMDUserType, DWORD dwMDDataType, DWORD *pdwMDNumDataEntries, DWORD *pdwMDDataSetNumber, DWORD dwMDBufferSize, unsigned __int8 *pbMDBuffer, DWORD *pdwMDRequiredBufferSize)",
+    "rank_score": 430,
+    "size": 484,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ALLOC_CACHE_HANDLER::ALLOC_CACHE_HANDLER(char const *,ALLOC_CACHE_CONFIGURATION const *,int)",
+    "ea": "0x18000749c",
+    "function_file": "functions/18000749c_ALLOC_CACHE_HANDLER_ALLOC_CACHE_HANDLER_char_const_ALLOC_CACHE_CONFIGURATION_const_int.md",
+    "matched_imports": [
+      "KERNEL32!InitializeSListHead",
+      "msvcrt!_aligned_malloc"
+    ],
+    "matched_strings": [],
+    "name": "??0ALLOC_CACHE_HANDLER@@QEAA@PEBDPEBUALLOC_CACHE_CONFIGURATION@@H@Z",
+    "prototype": "ALLOC_CACHE_HANDLER *__fastcall(ALLOC_CACHE_HANDLER *__hidden this, const char *, const struct ALLOC_CACHE_CONFIGURATION *, int)",
+    "rank_score": 428,
+    "size": 352,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 16,
+    "demangled": "PuDbgPrint",
+    "ea": "0x180007234",
+    "function_file": "functions/180007234_PuDbgPrint.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "PuDbgPrint",
+    "prototype": "__int64 __fastcall(struct _DEBUG_PRINTS *, char *, unsigned int, char *, char *, char)",
+    "rank_score": 422,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "IIS_CRYPTO_EXCHANGE_CLIENT::ClientPhase2(_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB *,_IIS_CRYPTO_BLOB * *,_IIS_CRYPTO_BLOB * *)",
+    "ea": "0x180004f68",
+    "function_file": "functions/180004f68_IIS_CRYPTO_EXCHANGE_CLIENT_ClientPhase2_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB_IIS_CR.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?ClientPhase2@IIS_CRYPTO_EXCHANGE_CLIENT@@QEAAJPEFAU_IIS_CRYPTO_BLOB@@00PEAPEFAU2@1@Z",
+    "prototype": "__int64 __usercall@<rax>(IIS_CRYPTO_EXCHANGE_CLIENT *__hidden this@<rcx>, struct _IIS_CRYPTO_BLOB *@<rdx>, struct _IIS_CRYPTO_BLOB *@<r8>, struct _IIS_CRYPTO_BLOB *@<r9>, struct _IIS_CRYPTO_BLOB **, struct _IIS_CRYPTO_BLOB **)",
+    "rank_score": 419,
+    "size": 292,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "IIS_CRYPTO_BASE::Initialize(unsigned __int64,unsigned __int64,unsigned __int64,int)",
+    "ea": "0x1800053bc",
+    "function_file": "functions/1800053bc_IIS_CRYPTO_BASE_Initialize_unsigned_int64_unsigned_int64_unsigned_int64_int.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@IIS_CRYPTO_BASE@@QEAAJ_K00H@Z",
+    "prototype": "__int64 __usercall@<rax>(IIS_CRYPTO_BASE *__hidden this@<rcx>, unsigned __int64@<rdx>, unsigned __int64@<r8>, unsigned __int64@<r9>, int)",
+    "rank_score": 417,
+    "size": 190,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "IcpGetLastError(void)",
+    "ea": "0x180004870",
+    "function_file": "functions/180004870_IcpGetLastError_void.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?IcpGetLastError@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 417,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "IcpCreateBlob(ulong,ulong,ulong)",
+    "ea": "0x18000478c",
+    "function_file": "functions/18000478c_IcpCreateBlob_ulong_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!SetLastError",
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?IcpCreateBlob@@YAPEFAU_IC_BLOB@@KKK@Z",
+    "prototype": "struct _IC_BLOB *__fastcall(int, unsigned int, unsigned int)",
+    "rank_score": 415,
+    "size": 118,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IIS_CRYPTO_EXCHANGE_CLIENT::ClientPhase1(_IIS_CRYPTO_BLOB * *,_IIS_CRYPTO_BLOB * *)",
+    "ea": "0x180004eb4",
+    "function_file": "functions/180004eb4_IIS_CRYPTO_EXCHANGE_CLIENT_ClientPhase1_IIS_CRYPTO_BLOB_IIS_CRYPTO_BLOB.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?ClientPhase1@IIS_CRYPTO_EXCHANGE_CLIENT@@QEAAJPEAPEFAU_IIS_CRYPTO_BLOB@@0@Z",
+    "prototype": "__int64 __fastcall(IIS_CRYPTO_EXCHANGE_CLIENT *__hidden this, struct _IIS_CRYPTO_BLOB **, struct _IIS_CRYPTO_BLOB **)",
+    "rank_score": 414,
+    "size": 171,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PupOutputMessage(_DEBUG_PRINTS *,STRA *)",
+    "ea": "0x180007020",
+    "function_file": "functions/180007020_PupOutputMessage_DEBUG_PRINTS_STRA.md",
+    "matched_imports": [
+      "KERNEL32!OutputDebugStringA",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?PupOutputMessage@@YAXPEAU_DEBUG_PRINTS@@PEAVSTRA@@@Z",
+    "prototype": "void __fastcall(struct _DEBUG_PRINTS *, struct STRA *)",
+    "rank_score": 414,
+    "size": 142,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "IIS_CRYPTO_BASE::SetThreadImpersonationToken(void *)",
+    "ea": "0x1800055d0",
+    "function_file": "functions/1800055d0_IIS_CRYPTO_BASE_SetThreadImpersonationToken_void.md",
+    "matched_imports": [
+      "ADVAPI32!SetThreadToken",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?SetThreadImpersonationToken@IIS_CRYPTO_BASE@@KAJPEAX@Z",
+    "prototype": "__int64 __fastcall(HANDLE Token)",
+    "rank_score": 405,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ADM_SECURE_DATA::GetCryptoProviderHelper(unsigned __int64 *,unsigned __int64 *,char *,ulong)",
+    "ea": "0x1800041ac",
+    "function_file": "functions/1800041ac_ADM_SECURE_DATA_GetCryptoProviderHelper_unsigned_int64_unsigned_int64_char_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetCryptoProviderHelper@ADM_SECURE_DATA@@AEAAJPEA_K0PEADK@Z",
+    "prototype": "int(ADM_SECURE_DATA *__hidden this, unsigned __int64 *, unsigned __int64 *, char *, unsigned int)",
+    "rank_score": 404,
+    "size": 120,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ADM_GUID_MAP::FindAndReferenceGuidMap(IUnknown *)",
+    "ea": "0x180003dd8",
+    "function_file": "functions/180003dd8_ADM_GUID_MAP_FindAndReferenceGuidMap_IUnknown.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?FindAndReferenceGuidMap@ADM_GUID_MAP@@SAPEAV1@PEAUIUnknown@@@Z",
+    "prototype": "struct ADM_GUID_MAP *__fastcall(struct IUnknown *)",
+    "rank_score": 403,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ADM_SECURE_DATA::FindAndReferenceClientSecureData(ADM_GUID_MAP *)",
+    "ea": "0x180003d54",
+    "function_file": "functions/180003d54_ADM_SECURE_DATA_FindAndReferenceClientSecureData_ADM_GUID_MAP.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?FindAndReferenceClientSecureData@ADM_SECURE_DATA@@SAPEAV1@PEAVADM_GUID_MAP@@@Z",
+    "prototype": "struct ADM_SECURE_DATA *__fastcall(struct ADM_GUID_MAP *)",
+    "rank_score": 403,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ALLOC_CACHE_HANDLER::~ALLOC_CACHE_HANDLER(void)",
+    "ea": "0x180007604",
+    "function_file": "functions/180007604_ALLOC_CACHE_HANDLER_ALLOC_CACHE_HANDLER_void.md",
+    "matched_imports": [
+      "msvcrt!_aligned_free"
+    ],
+    "matched_strings": [
+      "servercommon\\inetsrv\\iis\\iisrearc\\core\\common\\util\\acache.cxx",
+      "Items in look-aside lists = %u, Pending HeapFree calls = %u\n",
+      "ALLOC_CACHE_HANDLER::~ALLOC_CACHE_HANDLER"
+    ],
+    "name": "??1ALLOC_CACHE_HANDLER@@QEAA@XZ",
+    "prototype": "void __fastcall(ALLOC_CACHE_HANDLER *__hidden this)",
+    "rank_score": 358,
+    "size": 170,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ALLOC_CACHE_HANDLER::InsertNewItem(ALLOC_CACHE_HANDLER *)",
+    "ea": "0x180007b14",
+    "function_file": "functions/180007b14_ALLOC_CACHE_HANDLER_InsertNewItem_ALLOC_CACHE_HANDLER.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?InsertNewItem@ALLOC_CACHE_HANDLER@@SAXPEAV1@@Z",
+    "prototype": "void __fastcall(struct ALLOC_CACHE_HANDLER *)",
+    "rank_score": 312,
+    "size": 91,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ALLOC_CACHE_HANDLER::RemoveItem(ALLOC_CACHE_HANDLER *)",
+    "ea": "0x180007bd4",
+    "function_file": "functions/180007bd4_ALLOC_CACHE_HANDLER_RemoveItem_ALLOC_CACHE_HANDLER.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveItem@ALLOC_CACHE_HANDLER@@SAXPEAV1@@Z",
+    "prototype": "void __fastcall(struct ALLOC_CACHE_HANDLER *)",
+    "rank_score": 312,
+    "size": 80,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "BUFFER::FreeMemoryInternal(void)",
+    "ea": "0x1800073dc",
+    "function_file": "functions/1800073dc_BUFFER_FreeMemoryInternal_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?FreeMemoryInternal@BUFFER@@AEAAXXZ",
+    "prototype": "void __fastcall(BUFFER *__hidden this)",
+    "rank_score": 302,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IISCryptoGenerateSessionKey",
+    "ea": "0x1800063b4",
+    "function_file": "functions/1800063b4_IISCryptoGenerateSessionKey.md",
+    "matched_imports": [
+      "ADVAPI32!CryptGenKey"
+    ],
+    "matched_strings": [
+      "IISCryptoGenerateSessionKey.CryptGenKey (advapi32.dll) failed err=0x%x.\n"
+    ],
+    "name": "IISCryptoGenerateSessionKey",
+    "prototype": "__int64 __fastcall(HCRYPTKEY *phKey, HCRYPTPROV hProv)",
+    "rank_score": 256,
+    "size": 166,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AdmDllGetClassObject",
+    "ea": "0x180001c30",
+    "function_file": "functions/180001c30_AdmDllGetClassObject.md",
+    "matched_imports": [
+      "RPCRT4!NdrDllGetClassObject"
+    ],
+    "matched_strings": [],
+    "name": "AdmDllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 231,
+    "size": 61,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ALLOC_CACHE_HANDLER::Cleanup(int)",
+    "ea": "0x1800076b4",
+    "function_file": "functions/1800076b4_ALLOC_CACHE_HANDLER_Cleanup_int.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Cleanup@ALLOC_CACHE_HANDLER@@SAHH@Z",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 223,
+    "size": 51,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ALLOC_CACHE_HANDLER::ResetLookasideCleanupInterval(void)",
+    "ea": "0x180007c2c",
+    "function_file": "functions/180007c2c_ALLOC_CACHE_HANDLER_ResetLookasideCleanupInterval_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteTimerQueueTimer"
+    ],
+    "matched_strings": [],
+    "name": "?ResetLookasideCleanupInterval@ALLOC_CACHE_HANDLER@@SAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 222,
+    "size": 60,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "IISCryptoCreateCleartextBlob",
+    "ea": "0x180004808",
+    "function_file": "functions/180004808_IISCryptoCreateCleartextBlob.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoCreateCleartextBlob",
+    "prototype": "__int64 __fastcall(_QWORD *, const void *, unsigned int)",
+    "rank_score": 219,
+    "size": 97,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ALLOC_CACHE_HANDLER::QueryDepthForAllSLists(void)",
+    "ea": "0x180007b78",
+    "function_file": "functions/180007b78_ALLOC_CACHE_HANDLER_QueryDepthForAllSLists_void.md",
+    "matched_imports": [
+      "KERNEL32!QueryDepthSList"
+    ],
+    "matched_strings": [],
+    "name": "?QueryDepthForAllSLists@ALLOC_CACHE_HANDLER@@AEAAKXZ",
+    "prototype": "unsigned int __fastcall(ALLOC_CACHE_HANDLER *__hidden this)",
+    "rank_score": 212,
+    "size": 83,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "IISCryptoCreateHash",
+    "ea": "0x180006a3c",
+    "function_file": "functions/180006a3c_IISCryptoCreateHash.md",
+    "matched_imports": [
+      "ADVAPI32!CryptCreateHash"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoCreateHash",
+    "prototype": "__int64 __fastcall(HCRYPTHASH *phHash, HCRYPTPROV hProv)",
+    "rank_score": 208,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "IISCryptoDestroyHash",
+    "ea": "0x180006a98",
+    "function_file": "functions/180006a98_IISCryptoDestroyHash.md",
+    "matched_imports": [
+      "ADVAPI32!CryptDestroyHash"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoDestroyHash",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 208,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "IIS_CRYPTO_BASE::SafeExportSessionKeyBlob(_IIS_CRYPTO_BLOB * *,unsigned __int64,unsigned __int64,unsigned __int64)",
+    "ea": "0x180005480",
+    "function_file": "functions/180005480_IIS_CRYPTO_BASE_SafeExportSessionKeyBlob_IIS_CRYPTO_BLOB_unsigned_int64_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "?SafeExportSessionKeyBlob@IIS_CRYPTO_BASE@@KAJPEAPEFAU_IIS_CRYPTO_BLOB@@_K11@Z",
+    "prototype": "__int64 __fastcall(struct _IIS_CRYPTO_BLOB **)",
+    "rank_score": 207,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "IIS_CRYPTO_BASE::SafeImportSessionKeyBlob(unsigned __int64 *,_IIS_CRYPTO_BLOB *,unsigned __int64,unsigned __int64)",
+    "ea": "0x180005528",
+    "function_file": "functions/180005528_IIS_CRYPTO_BASE_SafeImportSessionKeyBlob_unsigned_int64_IIS_CRYPTO_BLOB_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "?SafeImportSessionKeyBlob@IIS_CRYPTO_BASE@@KAJPEA_KPEFAU_IIS_CRYPTO_BLOB@@_K2@Z",
+    "prototype": "__int64 __fastcall(unsigned __int64 *, struct _IIS_CRYPTO_BLOB *)",
+    "rank_score": 207,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "IISCryptoCloseKey",
+    "ea": "0x180005f28",
+    "function_file": "functions/180005f28_IISCryptoCloseKey.md",
+    "matched_imports": [
+      "ADVAPI32!CryptDestroyKey"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoCloseKey",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IISCryptoImportPublicKeyBlob",
+    "ea": "0x180006460",
+    "function_file": "functions/180006460_IISCryptoImportPublicKeyBlob.md",
+    "matched_imports": [
+      "ADVAPI32!CryptImportKey"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoImportPublicKeyBlob",
+    "prototype": "__int64 __fastcall(HCRYPTKEY *phKey, __int64, HCRYPTPROV)",
+    "rank_score": 206,
+    "size": 162,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "IISCryptoCloseContainer",
+    "ea": "0x180004e28",
+    "function_file": "functions/180004e28_IISCryptoCloseContainer.md",
+    "matched_imports": [
+      "ADVAPI32!CryptReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoCloseContainer",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CMemoryLog::~CMemoryLog(void)",
+    "ea": "0x180008144",
+    "function_file": "functions/180008144_CMemoryLog_CMemoryLog_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMemoryLog@@QEAA@XZ",
+    "prototype": "void __fastcall(CMemoryLog *__hidden this)",
+    "rank_score": 203,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180001afe",
+    "function_file": "functions/180001afe_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "AdmDllCanUnloadNow",
+    "ea": "0x180001c10",
+    "function_file": "functions/180001c10_AdmDllCanUnloadNow.md",
+    "matched_imports": [
+      "RPCRT4!NdrDllCanUnloadNow"
+    ],
+    "matched_strings": [],
+    "name": "AdmDllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 110,
+    "size": 14,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "memcpy_0",
+    "ea": "0x1800083d2",
+    "function_file": "functions/1800083d2_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "memset_0",
+    "ea": "0x1800083de",
+    "function_file": "functions/1800083de_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 106,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllRegisterServer",
+    "ea": "0x180001ca0",
+    "function_file": "functions/180001ca0_DllRegisterServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "InstallComponent"
+    ],
+    "name": "DllRegisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 71,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllUnregisterServer",
+    "ea": "0x180001cc0",
+    "function_file": "functions/180001cc0_DllUnregisterServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RemoveComponent"
+    ],
+    "name": "DllUnregisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 61,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 24,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001124",
+    "function_file": "functions/180001124_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 35,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ReleaseObjectSecurityContextW",
+    "ea": "0x180003090",
+    "function_file": "functions/180003090_ReleaseObjectSecurityContextW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReleaseObjectSecurityContextW",
+    "prototype": "void __fastcall(struct IUnknown *)",
+    "rank_score": 28,
+    "size": 163,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "LKRHashTableUninit",
+    "ea": "0x180007e44",
+    "function_file": "functions/180007e44_LKRHashTableUninit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LKRHashTableUninit",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 207,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800013e0",
+    "function_file": "functions/1800013e0_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180008350",
+    "function_file": "functions/180008350_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180008410",
+    "function_file": "functions/180008410_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 23,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180009010",
+    "function_file": "functions/180009010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001424",
+    "function_file": "functions/180001424_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "ADM_SECURE_DATA::CleanupCryptoData(void)",
+    "ea": "0x180003298",
+    "function_file": "functions/180003298_ADM_SECURE_DATA_CleanupCryptoData_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CleanupCryptoData@ADM_SECURE_DATA@@AEAAXXZ",
+    "prototype": "void __fastcall(ADM_SECURE_DATA *__hidden this)",
+    "rank_score": 18,
+    "size": 156,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180008450",
+    "function_file": "functions/180008450_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001130",
+    "function_file": "functions/180001130_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 11,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "IIS_CRYPTO_EXCHANGE_SERVER::~IIS_CRYPTO_EXCHANGE_SERVER(void)",
+    "ea": "0x180004e6c",
+    "function_file": "functions/180004e6c_IIS_CRYPTO_EXCHANGE_SERVER_IIS_CRYPTO_EXCHANGE_SERVER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1IIS_CRYPTO_EXCHANGE_SERVER@@QEAA@XZ",
+    "prototype": "void __fastcall(IIS_CRYPTO_EXCHANGE_SERVER *__hidden this)",
+    "rank_score": 6,
+    "size": 66,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IIS_CRYPTO_STORAGE::Initialize(unsigned __int64,unsigned __int64,unsigned __int64,unsigned __int64,int)",
+    "ea": "0x180005900",
+    "function_file": "functions/180005900_IIS_CRYPTO_STORAGE_Initialize_unsigned_int64_unsigned_int64_unsigned_int64_unsigned_int64_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Initialize@IIS_CRYPTO_STORAGE@@QEAAJ_K000H@Z",
+    "prototype": "__int64 __fastcall(IIS_CRYPTO_STORAGE *__hidden this, unsigned __int64, unsigned __int64, unsigned __int64, unsigned __int64, int)",
+    "rank_score": 6,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IIS_CRYPTO_BASE::~IIS_CRYPTO_BASE(void)",
+    "ea": "0x180005094",
+    "function_file": "functions/180005094_IIS_CRYPTO_BASE_IIS_CRYPTO_BASE_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1IIS_CRYPTO_BASE@@QEAA@XZ",
+    "prototype": "void __fastcall(IIS_CRYPTO_BASE *__hidden this)",
+    "rank_score": 5,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "atexit",
+    "ea": "0x1800018e0",
+    "function_file": "functions/1800018e0_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 3,
+    "size": 23,
+    "tags": []
+  }
+]

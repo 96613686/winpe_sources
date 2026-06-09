@@ -1,0 +1,616 @@
+# StateRepository::Cache::Entity::Activation_NoThrow::ContextToObject(StateRepository::Cache::Context_NoThrow &,StateRepository::Cache::Entity::Activation_NoThrow &,StateRepository::Cache::Entity::Activation_NoThrow::CacheFlags,__int64)
+
+- ea: `0x18000e410`
+- end: `0x18000e832`
+- name: `?ContextToObject@Activation_NoThrow@Entity@Cache@StateRepository@@CAJAEAVContext_NoThrow@34@AEAV1234@W4CacheFlags@1234@_J@Z`
+- size: `1058`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `4`
+- tags: ``
+
+## callers
+
+- `0x18001880c`
+
+## callees
+
+- `0x180007ae0`
+- `0x180007c78`
+- `0x18000e410`
+- `0x18000edb0`
+
+## import_xrefs
+
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e455`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e541`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e5d6`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e6bc`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e751`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e455`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e541`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e5d6`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e6bc`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_String` at `0x18000e751`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e49d`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e589`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e61e`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e704`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e799`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e49d`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e589`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e61e`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e704`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCache_Free` at `0x18000e799`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_UInt32` at `0x18000e4da`
+- `ext-ms-onecore-appmodel-staterepository-cache-l1-1-0!SRCacheContext_GetField_UInt32` at `0x18000e4da`
+
+## string_xrefs
+
+- `0x18000e46b`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Context.hpp`
+- `0x18000e4f0`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Context.hpp`
+- `0x18000e557`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Context.hpp`
+- `0x18000e5ec`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Context.hpp`
+- `0x18000e6d2`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Context.hpp`
+- `0x18000e767`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Context.hpp`
+- `0x18000e4b1`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Entity-Activation.hpp`
+- `0x18000e508`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Entity-Activation.hpp`
+- `0x18000e59d`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Entity-Activation.hpp`
+- `0x18000e632`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Entity-Activation.hpp`
+- `0x18000e683`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Entity-Activation.hpp`
+- `0x18000e718`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Entity-Activation.hpp`
+- `0x18000e7ad`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Entity-Activation.hpp`
+- `0x18000e7fb`: `onecore\private\base\inc\appmodel\staterepository\cache\SRCache-Entity-Activation.hpp`
+
+## pseudocode
+
+```c
+__int64 __fastcall StateRepository::Cache::Entity::Activation_NoThrow::ContextToObject(
+        StateRepository::Cache::Context_NoThrow *a1,
+        unsigned __int16 **a2,
+        __int64 a3,
+        unsigned __int16 *a4)
+{
+  __int64 v6; // rcx
+  int Field_String; // eax
+  int v9; // ebx
+  unsigned __int16 *v10; // rcx
+  int Field_UInt32; // eax
+  unsigned int v13; // ebx
+  __int64 v14; // rcx
+  int v15; // eax
+  int v16; // ebx
+  unsigned __int16 *v17; // rcx
+  __int64 v18; // rcx
+  int v19; // eax
+  int v20; // ebx
+  unsigned __int16 *v21; // rcx
+  int Field; // ebx
+  __int64 v23; // rcx
+  int v24; // eax
+  int v25; // ebx
+  unsigned __int16 *v26; // rcx
+  __int64 v27; // rcx
+  int v28; // eax
+  int v29; // ebx
+  unsigned __int16 *v30; // rcx
+  int v31; // ebx
+  unsigned __int16 **v32; // [rsp+20h] [rbp-20h] BYREF
+  unsigned __int16 *v33; // [rsp+28h] [rbp-18h] BYREF
+  char v34; // [rsp+30h] [rbp-10h]
+  wil::details::in1diag3 *retaddr; // [rsp+58h] [rbp+18h]
+
+  v34 = 1;
+  v32 = a2 + 1;
+  v6 = *(_QWORD *)a1;
+  v33 = 0;
+  Field_String = SRCacheContext_GetField_String(v6, L"ActivationKey", &v33);
+  v9 = Field_String;
+  if ( Field_String >= 0 )
+    v9 = 0;
+  else
+    wil::details::in1diag3::Return_Hr(
+      retaddr,
+      (void *)0x246,
+      (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Context.hpp",
+      (const char *)(unsigned int)Field_String,
+      (int)v32);
+  if ( v34 )
+  {
+    v10 = *v32;
+    *v32 = v33;
+    if ( v10 )
+      SRCache_Free();
+  }
+  if ( v9 >= 0 )
+  {
+    Field_UInt32 = SRCacheContext_GetField_UInt32(*(_QWORD *)a1, L"Flags", a2 + 2);
+    v13 = Field_UInt32;
+    if ( Field_UInt32 >= 0 )
+    {
+      v14 = *(_QWORD *)a1;
+      v32 = a2 + 3;
+      v33 = 0;
+      v34 = 1;
+      v15 = SRCacheContext_GetField_String(v14, L"HostId", &v33);
+      v16 = v15;
+      if ( v15 >= 0 )
+        v16 = 0;
+      else
+        wil::details::in1diag3::Return_Hr(
+          retaddr,
+          (void *)0x246,
+          (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Context.hpp",
+          (const char *)(unsigned int)v15,
+          (int)v32);
+      if ( v34 )
+      {
+        v17 = *v32;
+        *v32 = v33;
+        if ( v17 )
+          SRCache_Free();
+      }
+      if ( v16 >= 0 )
+      {
+        v18 = *(_QWORD *)a1;
+        v32 = a2 + 4;
+        v33 = 0;
+        v34 = 1;
+        v19 = SRCacheContext_GetField_String(v18, L"Executable", &v33);
+        v20 = v19;
+        if ( v19 >= 0 )
+          v20 = 0;
+        else
+          wil::details::in1diag3::Return_Hr(
+            retaddr,
+            (void *)0x246,
+            (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Context.hpp",
+            (const char *)(unsigned int)v19,
+            (int)v32);
+        if ( v34 )
+        {
+          v21 = *v32;
+          *v32 = v33;
+          if ( v21 )
+            SRCache_Free();
+        }
+        if ( v20 >= 0 )
+        {
+          v33 = 0;
+          v32 = a2 + 5;
+          v34 = 1;
+          Field = StateRepository::Cache::Context_NoThrow::GetField(a1, L"Entrypoint", &v33);
+          wil::details::out_param_t<wistd::unique_ptr<unsigned short [0],wil::function_deleter<void (*)(void *),&void SRCache_Free(void *)>>>::~out_param_t<wistd::unique_ptr<unsigned short [0],wil::function_deleter<void (*)(void *),&void SRCache_Free(void *)>>>(&v32);
+          if ( Field >= 0 )
+          {
+            v23 = *(_QWORD *)a1;
+            v32 = a2 + 6;
+            v33 = 0;
+            v34 = 1;
+            v24 = SRCacheContext_GetField_String(v23, L"RuntimeType", &v33);
+            v25 = v24;
+            if ( v24 >= 0 )
+              v25 = 0;
+            else
+              wil::details::in1diag3::Return_Hr(
+                retaddr,
+                (void *)0x246,
+                (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Context.hpp",
+                (const char *)(unsigned int)v24,
+                (int)v32);
+            if ( v34 )
+            {
+              v26 = *v32;
+              *v32 = v33;
+              if ( v26 )
+                SRCache_Free();
+            }
+            if ( v25 >= 0 )
+            {
+              v27 = *(_QWORD *)a1;
+              v32 = a2 + 7;
+              v33 = 0;
+              v34 = 1;
+              v28 = SRCacheContext_GetField_String(v27, L"StartPage", &v33);
+              v29 = v28;
+              if ( v28 >= 0 )
+                v29 = 0;
+              else
+                wil::details::in1diag3::Return_Hr(
+                  retaddr,
+                  (void *)0x246,
+                  (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Context.hpp",
+                  (const char *)(unsigned int)v28,
+                  (int)v32);
+              if ( v34 )
+              {
+                v30 = *v32;
+                *v32 = v33;
+                if ( v30 )
+                  SRCache_Free();
+              }
+              if ( v29 >= 0 )
+              {
+                v33 = 0;
+                v32 = a2 + 8;
+                v34 = 1;
+                v31 = StateRepository::Cache::Context_NoThrow::GetField(a1, L"ResourceGroup", &v33);
+                wil::details::out_param_t<wistd::unique_ptr<unsigned short [0],wil::function_deleter<void (*)(void *),&void SRCache_Free(void *)>>>::~out_param_t<wistd::unique_ptr<unsigned short [0],wil::function_deleter<void (*)(void *),&void SRCache_Free(void *)>>>(&v32);
+                if ( v31 >= 0 )
+                {
+                  *a2 = a4;
+                  return 0;
+                }
+                else
+                {
+                  wil::details::in1diag3::Return_Hr(
+                    retaddr,
+                    (void *)0x3B1,
+                    (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Entity-Activation.hpp",
+                    (const char *)(unsigned int)v31,
+                    (int)v32);
+                  return (unsigned int)v31;
+                }
+              }
+              else
+              {
+                wil::details::in1diag3::Return_Hr(
+                  retaddr,
+                  (void *)0x3AD,
+                  (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Entity-Activation.hpp",
+                  (const char *)(unsigned int)v29,
+                  (int)v32);
+                return (unsigned int)v29;
+              }
+            }
+            else
+            {
+              wil::details::in1diag3::Return_Hr(
+                retaddr,
+                (void *)0x3A9,
+                (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Entity-Activation.hpp",
+                (const char *)(unsigned int)v25,
+                (int)v32);
+              return (unsigned int)v25;
+            }
+          }
+          else
+          {
+            wil::details::in1diag3::Return_Hr(
+              retaddr,
+              (void *)0x3A5,
+              (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Entity-Activation.hpp",
+              (const char *)(unsigned int)Field,
+              (int)v32);
+            return (unsigned int)Field;
+          }
+        }
+        else
+        {
+          wil::details::in1diag3::Return_Hr(
+            retaddr,
+            (void *)0x3A1,
+            (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Entity-Activation.hpp",
+            (const char *)(unsigned int)v20,
+            (int)v32);
+          return (unsigned int)v20;
+        }
+      }
+      else
+      {
+        wil::details::in1diag3::Return_Hr(
+          retaddr,
+          (void *)0x39D,
+          (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Entity-Activation.hpp",
+          (const char *)(unsigned int)v16,
+          (int)v32);
+        return (unsigned int)v16;
+      }
+    }
+    else
+    {
+      wil::details::in1diag3::Return_Hr(
+        retaddr,
+        (void *)0x221,
+        (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Context.hpp",
+        (const char *)(unsigned int)Field_UInt32,
+        (int)v32);
+      wil::details::in1diag3::Return_Hr(
+        retaddr,
+        (void *)0x399,
+        (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Entity-Activation.hpp",
+        (const char *)v13,
+        (int)v32);
+      return v13;
+    }
+  }
+  else
+  {
+    wil::details::in1diag3::Return_Hr(
+      retaddr,
+      (void *)0x395,
+      (unsigned int)"onecore\\private\\base\\inc\\appmodel\\staterepository\\cache\\SRCache-Entity-Activation.hpp",
+      (const char *)(unsigned int)v9,
+      (int)v32);
+    return (unsigned int)v9;
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000e410  mov     [rsp-18h+arg_0], rbx
+0x18000e415  mov     [rsp-18h+arg_8], rsi
+0x18000e41a  mov     [rsp-18h+arg_10], rdi
+0x18000e41f  push    rbp
+0x18000e420  push    r14
+0x18000e422  push    r15
+0x18000e424  mov     rbp, rsp
+0x18000e427  sub     rsp, 40h
+0x18000e42b  lea     rax, [rdx+8]
+0x18000e42f  mov     [rbp+var_10], 1
+0x18000e433  mov     rdi, rdx
+0x18000e436  mov     [rbp+var_20], rax
+0x18000e43a  mov     rsi, rcx
+0x18000e43d  lea     rdx, aActivationkey; "ActivationKey"
+0x18000e444  mov     rcx, [rcx]
+0x18000e447  lea     r8, [rbp+var_18]
+0x18000e44b  xor     r15d, r15d
+0x18000e44e  mov     r14, r9
+0x18000e451  mov     [rbp+var_18], r15
+0x18000e455  call    cs:__imp_SRCacheContext_GetField_String
+0x18000e45c  nop     dword ptr [rax+rax+00h]
+0x18000e461  mov     ebx, eax
+0x18000e463  test    eax, eax
+0x18000e465  jns     short loc_18000E481
+0x18000e467  mov     rcx, [rbp+18h]; this
+0x18000e46b  lea     r8, aOnecorePrivate_9; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e472  mov     r9d, eax; char *
+0x18000e475  mov     edx, 246h; void *
+0x18000e47a  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e47f  jmp     short loc_18000E484
+0x18000e481  mov     ebx, r15d
+0x18000e484  cmp     [rbp+var_10], r15b
+0x18000e488  jz      short loc_18000E4A9
+0x18000e48a  mov     rdx, [rbp+var_20]
+0x18000e48e  mov     rax, [rbp+var_18]
+0x18000e492  mov     rcx, [rdx]
+0x18000e495  mov     [rdx], rax
+0x18000e498  test    rcx, rcx
+0x18000e49b  jz      short loc_18000E4A9
+0x18000e49d  call    cs:__imp_SRCache_Free
+0x18000e4a4  nop     dword ptr [rax+rax+00h]
+0x18000e4a9  test    ebx, ebx
+0x18000e4ab  jns     short loc_18000E4CC
+0x18000e4ad  mov     rcx, [rbp+18h]; this
+0x18000e4b1  lea     r8, aOnecorePrivate_1; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e4b8  mov     r9d, ebx; char *
+0x18000e4bb  mov     edx, 395h; void *
+0x18000e4c0  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e4c5  mov     eax, ebx
+0x18000e4c7  jmp     loc_18000E818
+0x18000e4cc  mov     rcx, [rsi]
+0x18000e4cf  lea     r8, [rdi+10h]
+0x18000e4d3  lea     rdx, aFlags; "Flags"
+0x18000e4da  call    cs:__imp_SRCacheContext_GetField_UInt32
+0x18000e4e1  nop     dword ptr [rax+rax+00h]
+0x18000e4e6  mov     ebx, eax
+0x18000e4e8  test    eax, eax
+0x18000e4ea  jns     short loc_18000E523
+0x18000e4ec  mov     rcx, [rbp+18h]; this
+0x18000e4f0  lea     r8, aOnecorePrivate_9; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e4f7  mov     r9d, eax; char *
+0x18000e4fa  mov     edx, 221h; void *
+0x18000e4ff  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e504  mov     rcx, [rbp+18h]; this
+0x18000e508  lea     r8, aOnecorePrivate_1; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e50f  mov     r9d, ebx; char *
+0x18000e512  mov     edx, 399h; void *
+0x18000e517  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e51c  mov     eax, ebx
+0x18000e51e  jmp     loc_18000E818
+0x18000e523  mov     rcx, [rsi]
+0x18000e526  lea     rax, [rdi+18h]
+0x18000e52a  lea     r8, [rbp+var_18]
+0x18000e52e  mov     [rbp+var_20], rax
+0x18000e532  lea     rdx, aHostid; "HostId"
+0x18000e539  mov     [rbp+var_18], r15
+0x18000e53d  mov     [rbp+var_10], 1
+0x18000e541  call    cs:__imp_SRCacheContext_GetField_String
+0x18000e548  nop     dword ptr [rax+rax+00h]
+0x18000e54d  mov     ebx, eax
+0x18000e54f  test    eax, eax
+0x18000e551  jns     short loc_18000E56D
+0x18000e553  mov     rcx, [rbp+18h]; this
+0x18000e557  lea     r8, aOnecorePrivate_9; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e55e  mov     r9d, eax; char *
+0x18000e561  mov     edx, 246h; void *
+0x18000e566  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e56b  jmp     short loc_18000E570
+0x18000e56d  mov     ebx, r15d
+0x18000e570  cmp     [rbp+var_10], r15b
+0x18000e574  jz      short loc_18000E595
+0x18000e576  mov     rdx, [rbp+var_20]
+0x18000e57a  mov     rax, [rbp+var_18]
+0x18000e57e  mov     rcx, [rdx]
+0x18000e581  mov     [rdx], rax
+0x18000e584  test    rcx, rcx
+0x18000e587  jz      short loc_18000E595
+0x18000e589  call    cs:__imp_SRCache_Free
+0x18000e590  nop     dword ptr [rax+rax+00h]
+0x18000e595  test    ebx, ebx
+0x18000e597  jns     short loc_18000E5B8
+0x18000e599  mov     rcx, [rbp+18h]; this
+0x18000e59d  lea     r8, aOnecorePrivate_1; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e5a4  mov     r9d, ebx; char *
+0x18000e5a7  mov     edx, 39Dh; void *
+0x18000e5ac  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e5b1  mov     eax, ebx
+0x18000e5b3  jmp     loc_18000E818
+0x18000e5b8  mov     rcx, [rsi]
+0x18000e5bb  lea     rax, [rdi+20h]
+0x18000e5bf  lea     r8, [rbp+var_18]
+0x18000e5c3  mov     [rbp+var_20], rax
+0x18000e5c7  lea     rdx, aExecutable; "Executable"
+0x18000e5ce  mov     [rbp+var_18], r15
+0x18000e5d2  mov     [rbp+var_10], 1
+0x18000e5d6  call    cs:__imp_SRCacheContext_GetField_String
+0x18000e5dd  nop     dword ptr [rax+rax+00h]
+0x18000e5e2  mov     ebx, eax
+0x18000e5e4  test    eax, eax
+0x18000e5e6  jns     short loc_18000E602
+0x18000e5e8  mov     rcx, [rbp+18h]; this
+0x18000e5ec  lea     r8, aOnecorePrivate_9; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e5f3  mov     r9d, eax; char *
+0x18000e5f6  mov     edx, 246h; void *
+0x18000e5fb  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e600  jmp     short loc_18000E605
+0x18000e602  mov     ebx, r15d
+0x18000e605  cmp     [rbp+var_10], r15b
+0x18000e609  jz      short loc_18000E62A
+0x18000e60b  mov     rdx, [rbp+var_20]
+0x18000e60f  mov     rax, [rbp+var_18]
+0x18000e613  mov     rcx, [rdx]
+0x18000e616  mov     [rdx], rax
+0x18000e619  test    rcx, rcx
+0x18000e61c  jz      short loc_18000E62A
+0x18000e61e  call    cs:__imp_SRCache_Free
+0x18000e625  nop     dword ptr [rax+rax+00h]
+0x18000e62a  test    ebx, ebx
+0x18000e62c  jns     short loc_18000E64D
+0x18000e62e  mov     rcx, [rbp+18h]; this
+0x18000e632  lea     r8, aOnecorePrivate_1; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e639  mov     r9d, ebx; char *
+0x18000e63c  mov     edx, 3A1h; void *
+0x18000e641  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e646  mov     eax, ebx
+0x18000e648  jmp     loc_18000E818
+0x18000e64d  lea     rax, [rdi+28h]
+0x18000e651  mov     [rbp+var_18], r15
+0x18000e655  lea     r8, [rbp+var_18]; unsigned __int16 **
+0x18000e659  mov     [rbp+var_20], rax
+0x18000e65d  lea     rdx, aEntrypoint; "Entrypoint"
+0x18000e664  mov     [rbp+var_10], 1
+0x18000e668  mov     rcx, rsi; this
+0x18000e66b  call    ?GetField@Context_NoThrow@Cache@StateRepository@@QEAAJPEBGPEAPEAG@Z; StateRepository::Cache::Context_NoThrow::GetField(ushort const *,ushort * *)
+0x18000e670  lea     rcx, [rbp+var_20]
+0x18000e674  mov     ebx, eax
+0x18000e676  call    ??1?$out_param_t@V?$unique_ptr@$$BY0A@GU?$function_deleter@P6AXPEAX@Z$1?SRCache_Free@@YAX0@Z@wil@@@wistd@@@details@wil@@QEAA@XZ; wil::details::out_param_t<wistd::unique_ptr<ushort [0],wil::function_deleter<void (*)(void *),&SRCache_Free(void *)>>>::~out_param_t<wistd::unique_ptr<ushort [0],wil::function_deleter<void (*)(void *),&SRCache_Free(void *)>>>(void)
+0x18000e67b  test    ebx, ebx
+0x18000e67d  jns     short loc_18000E69E
+0x18000e67f  mov     rcx, [rbp+18h]; this
+0x18000e683  lea     r8, aOnecorePrivate_1; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e68a  mov     r9d, ebx; char *
+0x18000e68d  mov     edx, 3A5h; void *
+0x18000e692  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e697  mov     eax, ebx
+0x18000e699  jmp     loc_18000E818
+0x18000e69e  mov     rcx, [rsi]
+0x18000e6a1  lea     rax, [rdi+30h]
+0x18000e6a5  lea     r8, [rbp+var_18]
+0x18000e6a9  mov     [rbp+var_20], rax
+0x18000e6ad  lea     rdx, aRuntimetype; "RuntimeType"
+0x18000e6b4  mov     [rbp+var_18], r15
+0x18000e6b8  mov     [rbp+var_10], 1
+0x18000e6bc  call    cs:__imp_SRCacheContext_GetField_String
+0x18000e6c3  nop     dword ptr [rax+rax+00h]
+0x18000e6c8  mov     ebx, eax
+0x18000e6ca  test    eax, eax
+0x18000e6cc  jns     short loc_18000E6E8
+0x18000e6ce  mov     rcx, [rbp+18h]; this
+0x18000e6d2  lea     r8, aOnecorePrivate_9; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e6d9  mov     r9d, eax; char *
+0x18000e6dc  mov     edx, 246h; void *
+0x18000e6e1  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e6e6  jmp     short loc_18000E6EB
+0x18000e6e8  mov     ebx, r15d
+0x18000e6eb  cmp     [rbp+var_10], r15b
+0x18000e6ef  jz      short loc_18000E710
+0x18000e6f1  mov     rdx, [rbp+var_20]
+0x18000e6f5  mov     rax, [rbp+var_18]
+0x18000e6f9  mov     rcx, [rdx]
+0x18000e6fc  mov     [rdx], rax
+0x18000e6ff  test    rcx, rcx
+0x18000e702  jz      short loc_18000E710
+0x18000e704  call    cs:__imp_SRCache_Free
+0x18000e70b  nop     dword ptr [rax+rax+00h]
+0x18000e710  test    ebx, ebx
+0x18000e712  jns     short loc_18000E733
+0x18000e714  mov     rcx, [rbp+18h]; this
+0x18000e718  lea     r8, aOnecorePrivate_1; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e71f  mov     r9d, ebx; char *
+0x18000e722  mov     edx, 3A9h; void *
+0x18000e727  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e72c  mov     eax, ebx
+0x18000e72e  jmp     loc_18000E818
+0x18000e733  mov     rcx, [rsi]
+0x18000e736  lea     rax, [rdi+38h]
+0x18000e73a  lea     r8, [rbp+var_18]
+0x18000e73e  mov     [rbp+var_20], rax
+0x18000e742  lea     rdx, aStartpage; "StartPage"
+0x18000e749  mov     [rbp+var_18], r15
+0x18000e74d  mov     [rbp+var_10], 1
+0x18000e751  call    cs:__imp_SRCacheContext_GetField_String
+0x18000e758  nop     dword ptr [rax+rax+00h]
+0x18000e75d  mov     ebx, eax
+0x18000e75f  test    eax, eax
+0x18000e761  jns     short loc_18000E77D
+0x18000e763  mov     rcx, [rbp+18h]; this
+0x18000e767  lea     r8, aOnecorePrivate_9; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e76e  mov     r9d, eax; char *
+0x18000e771  mov     edx, 246h; void *
+0x18000e776  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e77b  jmp     short loc_18000E780
+0x18000e77d  mov     ebx, r15d
+0x18000e780  cmp     [rbp+var_10], r15b
+0x18000e784  jz      short loc_18000E7A5
+0x18000e786  mov     rdx, [rbp+var_20]
+0x18000e78a  mov     rax, [rbp+var_18]
+0x18000e78e  mov     rcx, [rdx]
+0x18000e791  mov     [rdx], rax
+0x18000e794  test    rcx, rcx
+0x18000e797  jz      short loc_18000E7A5
+0x18000e799  call    cs:__imp_SRCache_Free
+0x18000e7a0  nop     dword ptr [rax+rax+00h]
+0x18000e7a5  test    ebx, ebx
+0x18000e7a7  jns     short loc_18000E7C5
+0x18000e7a9  mov     rcx, [rbp+18h]; this
+0x18000e7ad  lea     r8, aOnecorePrivate_1; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e7b4  mov     r9d, ebx; char *
+0x18000e7b7  mov     edx, 3ADh; void *
+0x18000e7bc  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e7c1  mov     eax, ebx
+0x18000e7c3  jmp     short loc_18000E818
+0x18000e7c5  lea     rax, [rdi+40h]
+0x18000e7c9  mov     [rbp+var_18], r15
+0x18000e7cd  lea     r8, [rbp+var_18]; unsigned __int16 **
+0x18000e7d1  mov     [rbp+var_20], rax
+0x18000e7d5  lea     rdx, aResourcegroup; "ResourceGroup"
+0x18000e7dc  mov     [rbp+var_10], 1
+0x18000e7e0  mov     rcx, rsi; this
+0x18000e7e3  call    ?GetField@Context_NoThrow@Cache@StateRepository@@QEAAJPEBGPEAPEAG@Z; StateRepository::Cache::Context_NoThrow::GetField(ushort const *,ushort * *)
+0x18000e7e8  lea     rcx, [rbp+var_20]
+0x18000e7ec  mov     ebx, eax
+0x18000e7ee  call    ??1?$out_param_t@V?$unique_ptr@$$BY0A@GU?$function_deleter@P6AXPEAX@Z$1?SRCache_Free@@YAX0@Z@wil@@@wistd@@@details@wil@@QEAA@XZ; wil::details::out_param_t<wistd::unique_ptr<ushort [0],wil::function_deleter<void (*)(void *),&SRCache_Free(void *)>>>::~out_param_t<wistd::unique_ptr<ushort [0],wil::function_deleter<void (*)(void *),&SRCache_Free(void *)>>>(void)
+0x18000e7f3  test    ebx, ebx
+0x18000e7f5  jns     short loc_18000E813
+0x18000e7f7  mov     rcx, [rbp+18h]; this
+0x18000e7fb  lea     r8, aOnecorePrivate_1; "onecore\\private\\base\\inc\\appmodel\\"...
+0x18000e802  mov     r9d, ebx; char *
+0x18000e805  mov     edx, 3B1h; void *
+0x18000e80a  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000e80f  mov     eax, ebx
+0x18000e811  jmp     short loc_18000E818
+0x18000e813  mov     [rdi], r14
+0x18000e816  xor     eax, eax
+0x18000e818  mov     rbx, [rsp+40h+arg_0]
+0x18000e81d  mov     rsi, [rsp+40h+arg_8]
+0x18000e822  mov     rdi, [rsp+40h+arg_10]
+0x18000e827  add     rsp, 40h
+0x18000e82b  pop     r15
+0x18000e82d  pop     r14
+0x18000e82f  pop     rbp
+0x18000e830  retn
+```

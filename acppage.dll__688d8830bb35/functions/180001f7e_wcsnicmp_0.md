@@ -1,0 +1,37 @@
+# _wcsnicmp_0
+
+- ea: `0x180001f7e`
+- end: `0x180001f84`
+- name: `_wcsnicmp_0`
+- size: `6`
+- prototype: `int __cdecl(const wchar_t *String1, const wchar_t *String2, size_t MaxCount)`
+- caller_count: `3`
+- callee_count: `0`
+- tags: ``
+
+## callers
+
+- `0x180012aec`
+- `0x180015050`
+- `0x180015ce0`
+
+## import_xrefs
+
+- `msvcrt!_wcsnicmp` at `0x180001f7e`
+
+## pseudocode
+
+```c
+// attributes: thunk
+int __cdecl wcsnicmp_0(const wchar_t *String1, const wchar_t *String2, size_t MaxCount)
+{
+  return _wcsnicmp(String1, String2, MaxCount);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180001f7e  jmp     cs:__imp__wcsnicmp
+```

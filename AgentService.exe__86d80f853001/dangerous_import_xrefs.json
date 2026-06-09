@@ -1,0 +1,2721 @@
+[
+  {
+    "import": "ADVAPI32!AdjustTokenPrivileges",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001a713",
+        "from_func": "0x14001a65c",
+        "from_func_name": "?EnablePrivilege@Util@Uev@@SAJPEB_W@Z",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      },
+      {
+        "from_ea": "0x14001a713",
+        "from_func": "0x14001a65c",
+        "from_func_name": "?EnablePrivilege@Util@Uev@@SAJPEB_W@Z",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ConvertSidToStringSidW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001b25a",
+        "from_func": "0x14001b144",
+        "from_func_name": "?GetUserSid@Util@Uev@@SA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAX@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x14001b25a",
+        "from_func": "0x14001b144",
+        "from_func_name": "?GetUserSid@Util@Uev@@SA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAX@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!CreateProcessAsUserW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001531f",
+        "from_func": "0x140015224",
+        "from_func_name": "?LaunchAndWaitForInjectionProcess@CreateProcNotificationListener@Uev@@AEAAXKAEBVExePaths@2@QEAX@Z",
+        "import": "ADVAPI32!CreateProcessAsUserW"
+      },
+      {
+        "from_ea": "0x14001531f",
+        "from_func": "0x140015224",
+        "from_func_name": "?LaunchAndWaitForInjectionProcess@CreateProcNotificationListener@Uev@@AEAAXKAEBVExePaths@2@QEAX@Z",
+        "import": "ADVAPI32!CreateProcessAsUserW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!CreateWellKnownSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140089fc7",
+        "from_func": "0x140089ef0",
+        "from_func_name": "??0Repository@Uev@@AEAA@XZ",
+        "import": "ADVAPI32!CreateWellKnownSid"
+      },
+      {
+        "from_ea": "0x140089fc7",
+        "from_func": "0x140089ef0",
+        "from_func_name": "??0Repository@Uev@@AEAA@XZ",
+        "import": "ADVAPI32!CreateWellKnownSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!DuplicateTokenEx",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140014bec",
+        "from_func": "0x140014b0c",
+        "from_func_name": "?InjectIntoProcess@CreateProcNotificationListener@Uev@@AEAAXKQEAX0K@Z",
+        "import": "ADVAPI32!DuplicateTokenEx"
+      },
+      {
+        "from_ea": "0x140014bec",
+        "from_func": "0x140014b0c",
+        "from_func_name": "?InjectIntoProcess@CreateProcNotificationListener@Uev@@AEAAXKQEAX0K@Z",
+        "import": "ADVAPI32!DuplicateTokenEx"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!EqualSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14008c0b6",
+        "from_func": "0x14008c0a0",
+        "from_func_name": "?IsOwnerOrAdminSid@ADSMethods@Uev@@UEBA_NPEAX00@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x14008c0c6",
+        "from_func": "0x14008c0a0",
+        "from_func_name": "?IsOwnerOrAdminSid@ADSMethods@Uev@@UEBA_NPEAX00@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x14008c0b6",
+        "from_func": "0x14008c0a0",
+        "from_func_name": "?IsOwnerOrAdminSid@ADSMethods@Uev@@UEBA_NPEAX00@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x14008c0c6",
+        "from_func": "0x14008c0a0",
+        "from_func_name": "?IsOwnerOrAdminSid@ADSMethods@Uev@@UEBA_NPEAX00@Z",
+        "import": "ADVAPI32!EqualSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetNamedSecurityInfoW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14008bbad",
+        "from_func": "0x14008ba34",
+        "from_func_name": "?IsFolderOwnerTheCurrentUser@Repository@Uev@@AEBA_NAEBVpath@filesystem@boost@@@Z",
+        "import": "ADVAPI32!GetNamedSecurityInfoW"
+      },
+      {
+        "from_ea": "0x14008bbad",
+        "from_func": "0x14008ba34",
+        "from_func_name": "?IsFolderOwnerTheCurrentUser@Repository@Uev@@AEBA_NAEBVpath@filesystem@boost@@@Z",
+        "import": "ADVAPI32!GetNamedSecurityInfoW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetSidSubAuthority",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001ade0",
+        "from_func": "0x14001acd8",
+        "from_func_name": "?GetProcessIntegrityLevel@Util@Uev@@SA?AW4ProcessIntegrityLevel@12@PEAX@Z",
+        "import": "ADVAPI32!GetSidSubAuthority"
+      },
+      {
+        "from_ea": "0x14001ade0",
+        "from_func": "0x14001acd8",
+        "from_func_name": "?GetProcessIntegrityLevel@Util@Uev@@SA?AW4ProcessIntegrityLevel@12@PEAX@Z",
+        "import": "ADVAPI32!GetSidSubAuthority"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetSidSubAuthorityCount",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001adac",
+        "from_func": "0x14001acd8",
+        "from_func_name": "?GetProcessIntegrityLevel@Util@Uev@@SA?AW4ProcessIntegrityLevel@12@PEAX@Z",
+        "import": "ADVAPI32!GetSidSubAuthorityCount"
+      },
+      {
+        "from_ea": "0x14001adac",
+        "from_func": "0x14001acd8",
+        "from_func_name": "?GetProcessIntegrityLevel@Util@Uev@@SA?AW4ProcessIntegrityLevel@12@PEAX@Z",
+        "import": "ADVAPI32!GetSidSubAuthorityCount"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!LookupPrivilegeValueW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001a6d4",
+        "from_func": "0x14001a65c",
+        "from_func_name": "?EnablePrivilege@Util@Uev@@SAJPEB_W@Z",
+        "import": "ADVAPI32!LookupPrivilegeValueW"
+      },
+      {
+        "from_ea": "0x14001a6d4",
+        "from_func": "0x14001a65c",
+        "from_func_name": "?EnablePrivilege@Util@Uev@@SAJPEB_W@Z",
+        "import": "ADVAPI32!LookupPrivilegeValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenProcessToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1400156e3",
+        "from_func": "0x140015630",
+        "from_func_name": "?ProcessNotification@CreateProcNotificationListener@Uev@@MEAAXPEBX@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x14001a6b9",
+        "from_func": "0x14001a65c",
+        "from_func_name": "?EnablePrivilege@Util@Uev@@SAJPEB_W@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x14008bbdb",
+        "from_func": "0x14008ba34",
+        "from_func_name": "?IsFolderOwnerTheCurrentUser@Repository@Uev@@AEBA_NAEBVpath@filesystem@boost@@@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x1400156e3",
+        "from_func": "0x140015630",
+        "from_func_name": "?ProcessNotification@CreateProcNotificationListener@Uev@@MEAAXPEBX@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x14001a6b9",
+        "from_func": "0x14001a65c",
+        "from_func_name": "?EnablePrivilege@Util@Uev@@SAJPEB_W@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x14008bbdb",
+        "from_func": "0x14008ba34",
+        "from_func_name": "?IsFolderOwnerTheCurrentUser@Repository@Uev@@AEBA_NAEBVpath@filesystem@boost@@@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 20,
+    "xrefs": [
+      {
+        "from_ea": "0x14004603d",
+        "from_func": "0x140045ea8",
+        "from_func_name": "?SaveIndex@TemplateIndex@Uev@@QEBAXXZ",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x1400460ce",
+        "from_func": "0x140045ea8",
+        "from_func_name": "?SaveIndex@TemplateIndex@Uev@@QEBAXXZ",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006a560",
+        "from_func": "0x14006a3e0",
+        "from_func_name": "?AddTemplateToProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006b05c",
+        "from_func": "0x14006afa0",
+        "from_func_name": "?CreateProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006b136",
+        "from_func": "0x14006afa0",
+        "from_func_name": "?CreateProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006e4fe",
+        "from_func": "0x14006e460",
+        "from_func_name": "?SetConfigDWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBKAEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006e60e",
+        "from_func": "0x14006e570",
+        "from_func_name": "?SetConfigExpandSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006e733",
+        "from_func": "0x14006e690",
+        "from_func_name": "?SetConfigMultiSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006e94e",
+        "from_func": "0x14006e8b0",
+        "from_func_name": "?SetConfigQWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEB_KAEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006ea5e",
+        "from_func": "0x14006e9c0",
+        "from_func_name": "?SetConfigSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14004603d",
+        "from_func": "0x140045ea8",
+        "from_func_name": "?SaveIndex@TemplateIndex@Uev@@QEBAXXZ",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x1400460ce",
+        "from_func": "0x140045ea8",
+        "from_func_name": "?SaveIndex@TemplateIndex@Uev@@QEBAXXZ",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006a560",
+        "from_func": "0x14006a3e0",
+        "from_func_name": "?AddTemplateToProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006b05c",
+        "from_func": "0x14006afa0",
+        "from_func_name": "?CreateProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006b136",
+        "from_func": "0x14006afa0",
+        "from_func_name": "?CreateProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006e4fe",
+        "from_func": "0x14006e460",
+        "from_func_name": "?SetConfigDWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBKAEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006e60e",
+        "from_func": "0x14006e570",
+        "from_func_name": "?SetConfigExpandSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006e733",
+        "from_func": "0x14006e690",
+        "from_func_name": "?SetConfigMultiSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006e94e",
+        "from_func": "0x14006e8b0",
+        "from_func_name": "?SetConfigQWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEB_KAEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14006ea5e",
+        "from_func": "0x14006e9c0",
+        "from_func_name": "?SetConfigSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14006b311",
+        "from_func": "0x14006b1d0",
+        "from_func_name": "?DeleteProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@Z",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x14006b311",
+        "from_func": "0x14006b1d0",
+        "from_func_name": "?DeleteProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@Z",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteTreeW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140045f29",
+        "from_func": "0x140045ea8",
+        "from_func_name": "?SaveIndex@TemplateIndex@Uev@@QEBAXXZ",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x140045f29",
+        "from_func": "0x140045ea8",
+        "from_func_name": "?SaveIndex@TemplateIndex@Uev@@QEBAXXZ",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14006a6b1",
+        "from_func": "0x14006a640",
+        "from_func_name": "?ClearConfig@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x14006e3a9",
+        "from_func": "0x14006e1f0",
+        "from_func_name": "?RemoveTemplateFromProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x14006a6b1",
+        "from_func": "0x14006a640",
+        "from_func_name": "?ClearConfig@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x14006e3a9",
+        "from_func": "0x14006e1f0",
+        "from_func_name": "?RemoveTemplateFromProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 48,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d992",
+        "from_func": "0x14000d950",
+        "from_func_name": "?AddServiceInclusion@AppVServiceInclusion@Uev@@MEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14000db0b",
+        "from_func": "0x14000dac0",
+        "from_func_name": "?AddVirtualEnvironmentOverride@AppVServiceInclusion@Uev@@MEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001a8f6",
+        "from_func": "0x14001a8a4",
+        "from_func_name": "?GetDwordConfigValue@Util@Uev@@SAKPEB_WK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b60b",
+        "from_func": "0x14001b48c",
+        "from_func_name": "?IsProcessTheShell@Util@Uev@@SA_NAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAUHKEY__@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b79c",
+        "from_func": "0x14001b6a8",
+        "from_func_name": "?OpenUserHive@Util@Uev@@SAPEAUHKEY__@@PEAX@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14003b120",
+        "from_func": "0x14003b0a0",
+        "from_func_name": "?AddTemplate@TemplateAdministrator@Uev@@UEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140045b6b",
+        "from_func": "0x140045af8",
+        "from_func_name": "?LoadIndex@TemplateIndex@Uev@@QEAAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140045bea",
+        "from_func": "0x140045af8",
+        "from_func_name": "?LoadIndex@TemplateIndex@Uev@@QEAAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140045f0c",
+        "from_func": "0x140045ea8",
+        "from_func_name": "?SaveIndex@TemplateIndex@Uev@@QEBAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006a692",
+        "from_func": "0x14006a640",
+        "from_func_name": "?ClearConfig@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b2c8",
+        "from_func": "0x14006b1d0",
+        "from_func_name": "?DeleteProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b430",
+        "from_func": "0x14006b3d0",
+        "from_func_name": "?GetConfigDWORD@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAKAEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b53f",
+        "from_func": "0x14006b4d0",
+        "from_func_name": "?GetConfigExpandSZ@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAV45@AEAJ_N@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b6f9",
+        "from_func": "0x14006b680",
+        "from_func_name": "?GetConfigMultiSZ@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b971",
+        "from_func": "0x14006b910",
+        "from_func_name": "?GetConfigQWORD@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEA_KAEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006bacf",
+        "from_func": "0x14006ba60",
+        "from_func_name": "?GetConfigSZ@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAV45@AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006bea9",
+        "from_func": "0x14006be0c",
+        "from_func_name": "?GetKeyNames@ConfigUtil@Uev@@AEAAJW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006c0a9",
+        "from_func": "0x14006c004",
+        "from_func_name": "?GetKeyValueNames@ConfigUtil@Uev@@AEAAJW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@KAEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e351",
+        "from_func": "0x14006e1f0",
+        "from_func_name": "?RemoveTemplateFromProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e4af",
+        "from_func": "0x14006e460",
+        "from_func_name": "?SetConfigDWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBKAEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e5bf",
+        "from_func": "0x14006e570",
+        "from_func_name": "?SetConfigExpandSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e6e3",
+        "from_func": "0x14006e690",
+        "from_func_name": "?SetConfigMultiSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e8ff",
+        "from_func": "0x14006e8b0",
+        "from_func_name": "?SetConfigQWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEB_KAEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006ea0f",
+        "from_func": "0x14006e9c0",
+        "from_func_name": "?SetConfigSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14000d992",
+        "from_func": "0x14000d950",
+        "from_func_name": "?AddServiceInclusion@AppVServiceInclusion@Uev@@MEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14000db0b",
+        "from_func": "0x14000dac0",
+        "from_func_name": "?AddVirtualEnvironmentOverride@AppVServiceInclusion@Uev@@MEAAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001a8f6",
+        "from_func": "0x14001a8a4",
+        "from_func_name": "?GetDwordConfigValue@Util@Uev@@SAKPEB_WK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b60b",
+        "from_func": "0x14001b48c",
+        "from_func_name": "?IsProcessTheShell@Util@Uev@@SA_NAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAUHKEY__@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b79c",
+        "from_func": "0x14001b6a8",
+        "from_func_name": "?OpenUserHive@Util@Uev@@SAPEAUHKEY__@@PEAX@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14003b120",
+        "from_func": "0x14003b0a0",
+        "from_func_name": "?AddTemplate@TemplateAdministrator@Uev@@UEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140045b6b",
+        "from_func": "0x140045af8",
+        "from_func_name": "?LoadIndex@TemplateIndex@Uev@@QEAAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140045bea",
+        "from_func": "0x140045af8",
+        "from_func_name": "?LoadIndex@TemplateIndex@Uev@@QEAAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140045f0c",
+        "from_func": "0x140045ea8",
+        "from_func_name": "?SaveIndex@TemplateIndex@Uev@@QEBAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006a692",
+        "from_func": "0x14006a640",
+        "from_func_name": "?ClearConfig@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b2c8",
+        "from_func": "0x14006b1d0",
+        "from_func_name": "?DeleteProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b430",
+        "from_func": "0x14006b3d0",
+        "from_func_name": "?GetConfigDWORD@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAKAEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b53f",
+        "from_func": "0x14006b4d0",
+        "from_func_name": "?GetConfigExpandSZ@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAV45@AEAJ_N@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b6f9",
+        "from_func": "0x14006b680",
+        "from_func_name": "?GetConfigMultiSZ@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006b971",
+        "from_func": "0x14006b910",
+        "from_func_name": "?GetConfigQWORD@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEA_KAEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006bacf",
+        "from_func": "0x14006ba60",
+        "from_func_name": "?GetConfigSZ@ConfigUtil@Uev@@UEBA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAV45@AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006bea9",
+        "from_func": "0x14006be0c",
+        "from_func_name": "?GetKeyNames@ConfigUtil@Uev@@AEAAJW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006c0a9",
+        "from_func": "0x14006c004",
+        "from_func_name": "?GetKeyValueNames@ConfigUtil@Uev@@AEAAJW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@KAEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e351",
+        "from_func": "0x14006e1f0",
+        "from_func_name": "?RemoveTemplateFromProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e4af",
+        "from_func": "0x14006e460",
+        "from_func_name": "?SetConfigDWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBKAEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e5bf",
+        "from_func": "0x14006e570",
+        "from_func_name": "?SetConfigExpandSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e6e3",
+        "from_func": "0x14006e690",
+        "from_func_name": "?SetConfigMultiSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006e8ff",
+        "from_func": "0x14006e8b0",
+        "from_func_name": "?SetConfigQWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEB_KAEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14006ea0f",
+        "from_func": "0x14006e9c0",
+        "from_func_name": "?SetConfigSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegSetKeyValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x14006e53a",
+        "from_func": "0x14006e460",
+        "from_func_name": "?SetConfigDWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBKAEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x14006e658",
+        "from_func": "0x14006e570",
+        "from_func_name": "?SetConfigExpandSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x14006e861",
+        "from_func": "0x14006e690",
+        "from_func_name": "?SetConfigMultiSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x14006e98d",
+        "from_func": "0x14006e8b0",
+        "from_func_name": "?SetConfigQWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEB_KAEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x14006eaa8",
+        "from_func": "0x14006e9c0",
+        "from_func_name": "?SetConfigSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x14006e53a",
+        "from_func": "0x14006e460",
+        "from_func_name": "?SetConfigDWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBKAEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x14006e658",
+        "from_func": "0x14006e570",
+        "from_func_name": "?SetConfigExpandSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x14006e861",
+        "from_func": "0x14006e690",
+        "from_func_name": "?SetConfigMultiSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEBV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x14006e98d",
+        "from_func": "0x14006e8b0",
+        "from_func_name": "?SetConfigQWORD@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEB_KAEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x14006eaa8",
+        "from_func": "0x14006e9c0",
+        "from_func_name": "?SetConfigSZ@ConfigUtil@Uev@@UEAA_NAEBQEAUHKEY__@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@11AEAJ@Z",
+        "import": "ADVAPI32!RegSetKeyValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d9fc",
+        "from_func": "0x14000d950",
+        "from_func_name": "?AddServiceInclusion@AppVServiceInclusion@Uev@@MEAAJXZ",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14000dd58",
+        "from_func": "0x14000dac0",
+        "from_func_name": "?AddVirtualEnvironmentOverride@AppVServiceInclusion@Uev@@MEAAJXZ",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14006a5d4",
+        "from_func": "0x14006a3e0",
+        "from_func_name": "?AddTemplateToProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14000d9fc",
+        "from_func": "0x14000d950",
+        "from_func_name": "?AddServiceInclusion@AppVServiceInclusion@Uev@@MEAAJXZ",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14000dd58",
+        "from_func": "0x14000dac0",
+        "from_func_name": "?AddVirtualEnvironmentOverride@AppVServiceInclusion@Uev@@MEAAJXZ",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14006a5d4",
+        "from_func": "0x14006a3e0",
+        "from_func_name": "?AddTemplateToProfile@ConfigUtil@Uev@@UEAA_NW4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@1AEAJ@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegisterServiceCtrlHandlerW",
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b40f",
+        "from_func": "0x14000b2e0",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEA_W@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerW"
+      },
+      {
+        "from_ea": "0x14000b40f",
+        "from_func": "0x14000b2e0",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEA_W@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetServiceStatus",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b153",
+        "from_func": "0x14000b0a0",
+        "from_func_name": "?ControlHandler@@YAXK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x14000b43b",
+        "from_func": "0x14000b2e0",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEA_W@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x14000b7ab",
+        "from_func": "0x14000b2e0",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEA_W@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x14000ba16",
+        "from_func": "0x14000b8cc",
+        "from_func_name": "?ShutdownService@@YAXK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x14000b153",
+        "from_func": "0x14000b0a0",
+        "from_func_name": "?ControlHandler@@YAXK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x14000b43b",
+        "from_func": "0x14000b2e0",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEA_W@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x14000b7ab",
+        "from_func": "0x14000b2e0",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEA_W@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x14000ba16",
+        "from_func": "0x14000b8cc",
+        "from_func_name": "?ShutdownService@@YAXK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!StartServiceCtrlDispatcherW",
+    "tags": [
+      "service_task",
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000bde6",
+        "from_func": "0x14000bd98",
+        "from_func_name": "main",
+        "import": "ADVAPI32!StartServiceCtrlDispatcherW"
+      },
+      {
+        "from_ea": "0x14000bde6",
+        "from_func": "0x14000bd98",
+        "from_func_name": "main",
+        "import": "ADVAPI32!StartServiceCtrlDispatcherW"
+      }
+    ]
+  },
+  {
+    "import": "FLTLIB!FilterConnectCommunicationPort",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140019bd5",
+        "from_func": "0x140019b3c",
+        "from_func_name": "?Start@NotificationListener@Uev@@QEAAJXZ",
+        "import": "FLTLIB!FilterConnectCommunicationPort"
+      },
+      {
+        "from_ea": "0x140019bd5",
+        "from_func": "0x140019b3c",
+        "from_func_name": "?Start@NotificationListener@Uev@@QEAAJXZ",
+        "import": "FLTLIB!FilterConnectCommunicationPort"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x140009123",
+        "from_func": "0x140009070",
+        "from_func_name": "boost::filesystem::detail::_anonymous_namespace_::status_impl",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140009290",
+        "from_func": "0x140009200",
+        "from_func_name": "boost::filesystem::detail::_anonymous_namespace_::symlink_status_impl",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140026a81",
+        "from_func": "0x140026a34",
+        "from_func_name": "?GetFileTimestamp@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAU_FILETIME@@@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140026ca3",
+        "from_func": "0x140026c48",
+        "from_func_name": "?ReadUtf8File@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140027166",
+        "from_func": "0x1400270f8",
+        "from_func_name": "?WriteUtf8File@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@0@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140009123",
+        "from_func": "0x140009070",
+        "from_func_name": "boost::filesystem::detail::_anonymous_namespace_::status_impl",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140009290",
+        "from_func": "0x140009200",
+        "from_func_name": "boost::filesystem::detail::_anonymous_namespace_::symlink_status_impl",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140026a81",
+        "from_func": "0x140026a34",
+        "from_func_name": "?GetFileTimestamp@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAU_FILETIME@@@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140026ca3",
+        "from_func": "0x140026c48",
+        "from_func_name": "?ReadUtf8File@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x140027166",
+        "from_func": "0x1400270f8",
+        "from_func_name": "?WriteUtf8File@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@0@Z",
+        "import": "KERNEL32!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateIoCompletionPort",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140019c3f",
+        "from_func": "0x140019b3c",
+        "from_func_name": "?Start@NotificationListener@Uev@@QEAAJXZ",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x140019c3f",
+        "from_func": "0x140019b3c",
+        "from_func_name": "?Start@NotificationListener@Uev@@QEAAJXZ",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!DeleteFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14003e590",
+        "from_func": "0x14003e500",
+        "from_func_name": "?RemoveTemplate@TemplateAdministrator@Uev@@UEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003e590",
+        "from_func": "0x14003e500",
+        "from_func_name": "?RemoveTemplate@TemplateAdministrator@Uev@@UEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetComputerNameExW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140068861",
+        "from_func": "0x1400687dc",
+        "from_func_name": "?GetDeviceFolderName@BackupProfile@Uev@@AEBAJAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+        "import": "KERNEL32!GetComputerNameExW"
+      },
+      {
+        "from_ea": "0x1400688c4",
+        "from_func": "0x1400687dc",
+        "from_func_name": "?GetDeviceFolderName@BackupProfile@Uev@@AEBAJAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+        "import": "KERNEL32!GetComputerNameExW"
+      },
+      {
+        "from_ea": "0x140068861",
+        "from_func": "0x1400687dc",
+        "from_func_name": "?GetDeviceFolderName@BackupProfile@Uev@@AEBAJAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+        "import": "KERNEL32!GetComputerNameExW"
+      },
+      {
+        "from_ea": "0x1400688c4",
+        "from_func": "0x1400687dc",
+        "from_func_name": "?GetDeviceFolderName@BackupProfile@Uev@@AEBAJAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+        "import": "KERNEL32!GetComputerNameExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x1400045f3",
+        "from_func": "0x1400045a4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14000a449",
+        "from_func": "0x14000a400",
+        "from_func_name": "?name_once_mutex@detail@boost@@YAXPEADPEAX@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140015903",
+        "from_func": "0x140015874",
+        "from_func_name": "?Send@UevIPC@Uev@@QEAAXXZ",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14001c655",
+        "from_func": "0x14001c61c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14001fdb9",
+        "from_func": "0x14001f748",
+        "from_func_name": "??0LogImpl@Uev@@QEAA@XZ",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1400045f3",
+        "from_func": "0x1400045a4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14000a449",
+        "from_func": "0x14000a400",
+        "from_func_name": "?name_once_mutex@detail@boost@@YAXPEADPEAX@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140015903",
+        "from_func": "0x140015874",
+        "from_func_name": "?Send@UevIPC@Uev@@QEAAXXZ",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14001c655",
+        "from_func": "0x14001c61c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14001fdb9",
+        "from_func": "0x14001f748",
+        "from_func_name": "??0LogImpl@Uev@@QEAA@XZ",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x14000931a",
+        "from_func": "0x140009200",
+        "from_func_name": "boost::filesystem::detail::_anonymous_namespace_::symlink_status_impl",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14001fcb9",
+        "from_func": "0x14001f748",
+        "from_func_name": "??0LogImpl@Uev@@QEAA@XZ",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14008a763",
+        "from_func": "0x14008a6fc",
+        "from_func_name": "?CreateRepositoryPath@Repository@Uev@@QEAAJAEBVpath@filesystem@boost@@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14008a811",
+        "from_func": "0x14008a6fc",
+        "from_func_name": "?CreateRepositoryPath@Repository@Uev@@QEAAJAEBVpath@filesystem@boost@@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14000931a",
+        "from_func": "0x140009200",
+        "from_func_name": "boost::filesystem::detail::_anonymous_namespace_::symlink_status_impl",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14001fcb9",
+        "from_func": "0x14001f748",
+        "from_func_name": "??0LogImpl@Uev@@QEAA@XZ",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14008a763",
+        "from_func": "0x14008a6fc",
+        "from_func_name": "?CreateRepositoryPath@Repository@Uev@@QEAAJAEBVpath@filesystem@boost@@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14008a811",
+        "from_func": "0x14008a6fc",
+        "from_func_name": "?CreateRepositoryPath@Repository@Uev@@QEAAJAEBVpath@filesystem@boost@@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetProcessMitigationPolicy",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400298ce",
+        "from_func": "0x140029040",
+        "from_func_name": "?ReadLicenseValue@productionSlapiProxy@SlapiWrapper@Shared@AppMan@@UEAAJPEB_WPEAK@Z",
+        "import": "KERNEL32!GetProcessMitigationPolicy"
+      },
+      {
+        "from_ea": "0x1400298ce",
+        "from_func": "0x140029040",
+        "from_func_name": "?ReadLicenseValue@productionSlapiProxy@SlapiWrapper@Shared@AppMan@@UEAAJPEB_WPEAK@Z",
+        "import": "KERNEL32!GetProcessMitigationPolicy"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetQueuedCompletionStatus",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140019943",
+        "from_func": "0x1400198cc",
+        "from_func_name": "?Listen@NotificationListener@Uev@@AEAAKXZ",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140019943",
+        "from_func": "0x1400198cc",
+        "from_func_name": "?Listen@NotificationListener@Uev@@AEAAKXZ",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140035bd2",
+        "from_func": "0x140035b48",
+        "from_func_name": "?FindTemplates@TemplateManager@Uev@@AEBA?AV?$vector@V?$unique_ptr@VITemplate@Uev@@U?$default_delete@VITemplate@Uev@@@std@@@std@@V?$allocator@V?$unique_ptr@VITemplate@Uev@@U?$default_delete@VITemplate@Uev@@@std@@@std@@@2@@std@@AEBUProgramCharacteristics@2@_N@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x140035bd2",
+        "from_func": "0x140035b48",
+        "from_func_name": "?FindTemplates@TemplateManager@Uev@@AEBA?AV?$vector@V?$unique_ptr@VITemplate@Uev@@U?$default_delete@VITemplate@Uev@@@std@@@std@@V?$allocator@V?$unique_ptr@VITemplate@Uev@@U?$default_delete@VITemplate@Uev@@@std@@@std@@@2@@std@@AEBUProgramCharacteristics@2@_N@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!ProcessIdToSessionId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140015693",
+        "from_func": "0x140015630",
+        "from_func_name": "?ProcessNotification@CreateProcNotificationListener@Uev@@MEAAXPEBX@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x14001590f",
+        "from_func": "0x140015874",
+        "from_func_name": "?Send@UevIPC@Uev@@QEAAXXZ",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x140015693",
+        "from_func": "0x140015630",
+        "from_func_name": "?ProcessNotification@CreateProcNotificationListener@Uev@@MEAAXPEBX@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x14001590f",
+        "from_func": "0x140015874",
+        "from_func_name": "?Send@UevIPC@Uev@@QEAAXXZ",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!ReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140026cff",
+        "from_func": "0x140026c48",
+        "from_func_name": "?ReadUtf8File@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140026cff",
+        "from_func": "0x140026c48",
+        "from_func_name": "?ReadUtf8File@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z",
+        "import": "KERNEL32!ReadFile"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!SetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14008a836",
+        "from_func": "0x14008a6fc",
+        "from_func_name": "?CreateRepositoryPath@Repository@Uev@@QEAAJAEBVpath@filesystem@boost@@@Z",
+        "import": "KERNEL32!SetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14008a836",
+        "from_func": "0x14008a6fc",
+        "from_func_name": "?CreateRepositoryPath@Repository@Uev@@QEAAJAEBVpath@filesystem@boost@@@Z",
+        "import": "KERNEL32!SetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!SetProcessMitigationPolicy",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b5e6",
+        "from_func": "0x14000b2e0",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEA_W@Z",
+        "import": "KERNEL32!SetProcessMitigationPolicy"
+      },
+      {
+        "from_ea": "0x14000b5e6",
+        "from_func": "0x14000b2e0",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEA_W@Z",
+        "import": "KERNEL32!SetProcessMitigationPolicy"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!WriteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140027256",
+        "from_func": "0x1400270f8",
+        "from_func_name": "?WriteUtf8File@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@0@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140027256",
+        "from_func": "0x1400270f8",
+        "from_func_name": "?WriteUtf8File@Common@Uev@@SAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@0@Z",
+        "import": "KERNEL32!WriteFile"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140004a84",
+        "from_func": "0x140004a84",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140004aa8",
+        "from_func": "0x140004aa8",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400048c6",
+        "from_func": "0x1400048c6",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 168,
+    "xrefs": [
+      {
+        "from_ea": "0x140016fd4",
+        "from_func": "0x140016fc0",
+        "from_func_name": "?get_deleter@?$sp_counted_impl_pd@PEAV?$basic_altstringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@io@boost@@VNo_Op@?$basic_oaltstringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@23@@detail@boost@@UEAAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x14001700f",
+        "from_func": "0x140017000",
+        "from_func_name": "?get_local_deleter@?$sp_counted_impl_pd@PEAV?$basic_altstringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@io@boost@@VNo_Op@?$basic_oaltstringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@23@@detail@boost@@UEAAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x14003495d",
+        "from_func": "0x1400348e0",
+        "from_func_name": "??$transform_primary@V?$_String_iterator@V?$_String_val@U?$_Simple_types@_W@std@@@std@@@std@@@?$_Regex_traits@_W@std@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@V?$_String_iterator@V?$_String_val@U?$_Simple_types@_W@std@@@std@@@1@0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140034971",
+        "from_func": "0x1400348e0",
+        "from_func_name": "??$transform_primary@V?$_String_iterator@V?$_String_val@U?$_Simple_types@_W@std@@@std@@@std@@@?$_Regex_traits@_W@std@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@V?$_String_iterator@V?$_String_val@U?$_Simple_types@_W@std@@@std@@@1@0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400423bd",
+        "from_func": "0x140042330",
+        "from_func_name": "?_Add_equiv@?$_Builder2@PEB_W_WV?$regex_traits@_W@std@@@std@@QEAAXPEB_W0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400423d1",
+        "from_func": "0x140042330",
+        "from_func_name": "?_Add_equiv@?$_Builder2@PEB_W_WV?$regex_traits@_W@std@@@std@@QEAAXPEB_W0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400424db",
+        "from_func": "0x140042330",
+        "from_func_name": "?_Add_equiv@?$_Builder2@PEB_W_WV?$regex_traits@_W@std@@@std@@QEAAXPEB_W0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400424ef",
+        "from_func": "0x140042330",
+        "from_func_name": "?_Add_equiv@?$_Builder2@PEB_W_WV?$regex_traits@_W@std@@@std@@QEAAXPEB_W0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140048134",
+        "from_func": "0x140048120",
+        "from_func_name": "?_Get_deleter@?$_Ref_count_resource@PEAVITemplate@Uev@@U?$default_delete@VITemplate@Uev@@@std@@@std@@UEBAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140048174",
+        "from_func": "0x140048160",
+        "from_func_name": "?_Get_deleter@?$_Ref_count_resource@PEAVProfile@Uev@@U?$default_delete@VProfile@Uev@@@std@@@std@@UEBAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140069084",
+        "from_func": "0x140069070",
+        "from_func_name": "?_Get_deleter@?$_Ref_count_resource@PEAVIRemoteStore@Uev@@U?$default_delete@VIRemoteStore@Uev@@@std@@@std@@UEBAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400844c0",
+        "from_func": "0x140084490",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_00a7fa26a962e5711fec5fc8fc065262___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084530",
+        "from_func": "0x140084500",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_01a10b1b6eb17c08c7462cb7ba103072___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400845a0",
+        "from_func": "0x140084570",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_0909bc1f4de7562b6ca68047934cef6b___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084610",
+        "from_func": "0x1400845e0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_0ae09f119ac7948711cb49b313c92fa3___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084680",
+        "from_func": "0x140084650",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_0bcbfd5f21a076b5a4dbf33b762a5b35___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400846f0",
+        "from_func": "0x1400846c0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_145d2b15678ffa150139d9c40244bb49___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084760",
+        "from_func": "0x140084730",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_160a746f73309ce8669c4d223c272932___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400847d0",
+        "from_func": "0x1400847a0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_196be8d530a56c1d71f0d25446e1485d___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084840",
+        "from_func": "0x140084810",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_1a3dd1c6ac05a4f22462cba0041f4077___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400848b0",
+        "from_func": "0x140084880",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_20efb2c191dedde8517f0f1f29ca0f90___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084920",
+        "from_func": "0x1400848f0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_29219e7d53bcd5354274605418f2297f___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084990",
+        "from_func": "0x140084960",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_296d104528f8721030b617bdafc4d456___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084a00",
+        "from_func": "0x1400849d0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_48453bd5d443e5515f893e7def290f90___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084a70",
+        "from_func": "0x140084a40",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_4d89be7e27cbebf0fe89f7519b01a092___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084ae0",
+        "from_func": "0x140084ab0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_5c230d48c7cd022ef646a68477621f28___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084b50",
+        "from_func": "0x140084b20",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_5faf98b309ca9252421baf90594ef652___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084bc0",
+        "from_func": "0x140084b90",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_600ef2de1c8a28e1cd3fe2c643600d55___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084c30",
+        "from_func": "0x140084c00",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_64fa6d66b597fdea73785cc0b5ff4a73___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084ca0",
+        "from_func": "0x140084c70",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_6ab8af53adab39dd1519741d436e1343___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084d10",
+        "from_func": "0x140084ce0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_6e023ceedadbee707f393b1be657a0cd___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084d80",
+        "from_func": "0x140084d50",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_6e9219e3c2f72be17f602672ff39e916___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084df0",
+        "from_func": "0x140084dc0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_78628c2aa6757c44ba48a45c5e1b35de___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084e60",
+        "from_func": "0x140084e30",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_7909abc2ae44f82297bc7fd4cf7bf159___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084ed0",
+        "from_func": "0x140084ea0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_854f65a20d2899f2a401a3415930eacb___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084f40",
+        "from_func": "0x140084f10",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_8568a241d72fb52ffdd086efe0aec76e___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084fb0",
+        "from_func": "0x140084f80",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_8af6cecf90231203876c99860bd73dc0___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085020",
+        "from_func": "0x140084ff0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_8c3966ab01c8bf543f6f27494327131b___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085090",
+        "from_func": "0x140085060",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_9593e404f0a8e266196fc09c155e984b___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085100",
+        "from_func": "0x1400850d0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_ac2aa9f215af2edecacc4d4bfa615465___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085170",
+        "from_func": "0x140085140",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_b515e3f4d38b63b42327e4d17ca6fbf7___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400851e0",
+        "from_func": "0x1400851b0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_b92673aa1f92d85b20d816489705495f___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085250",
+        "from_func": "0x140085220",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_b98ccdd594d80039023b4148c9f5c5a6___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400852c0",
+        "from_func": "0x140085290",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_bef5238a41524bf5b97bfb01414966ba___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085330",
+        "from_func": "0x140085300",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_bf596b5797113df4baf40e7015bee802___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400853a0",
+        "from_func": "0x140085370",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_c25d39eec11bfdbd4cea5c4b20a5bf87___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085410",
+        "from_func": "0x1400853e0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_c5824d521a16254f38e2e43f872ddd16___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085480",
+        "from_func": "0x140085450",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_caddc917612cb3713747ee34b66266a9___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400854f0",
+        "from_func": "0x1400854c0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_d1062e626c0ae6ed1bd32a54c4e0d45f___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085560",
+        "from_func": "0x140085530",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_d110ec105b2e657bd12d8242e13c011f___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400855d0",
+        "from_func": "0x1400855a0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_e2db3869f49042c5ba94f9b21209cc7c___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085640",
+        "from_func": "0x140085610",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_e5f4bdf440dd6197a27b1f54b61e80a9___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400856b0",
+        "from_func": "0x140085680",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_e5f7be803118221bb97c7da2ff451a05___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085720",
+        "from_func": "0x1400856f0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_eeac8ab3d37cca4bdffcf7b4ff14682a___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085790",
+        "from_func": "0x140085760",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_f777dd4ec435cf534e5ac769899e2edc___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085800",
+        "from_func": "0x1400857d0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_ff83e295f3ecd6c676c01e7b150f93d1___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085876",
+        "from_func": "0x140085840",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf1@_NVConfigUtil@Uev@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@_mfi@boost@@V?$list2@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400858f6",
+        "from_func": "0x1400858c0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf1@_NVConfigUtil@Uev@@_N@_mfi@boost@@V?$list2@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@V?$value@_N@23@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085986",
+        "from_func": "0x140085950",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAKAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085a75",
+        "from_func": "0x1400859d0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAKAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085ae6",
+        "from_func": "0x140085ab0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085bd5",
+        "from_func": "0x140085b30",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085cb5",
+        "from_func": "0x140085c10",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085d26",
+        "from_func": "0x140085cf0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEA_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085e15",
+        "from_func": "0x140085d70",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEA_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085e86",
+        "from_func": "0x140085e50",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEA_NAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085f75",
+        "from_func": "0x140085ed0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEA_NAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x14008605e",
+        "from_func": "0x140085fb0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf5@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV45@AEAJ_N@_mfi@boost@@V?$list6@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@V?$value@_N@23@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400860d6",
+        "from_func": "0x1400860a0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf3@_NVConfigUtil@Uev@@W4SettingSource@2@AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@AEAJ@_mfi@boost@@V?$list4@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086156",
+        "from_func": "0x140086120",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf3@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@_mfi@boost@@V?$list4@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086245",
+        "from_func": "0x1400861a0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf3@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@_mfi@boost@@V?$list4@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400862b6",
+        "from_func": "0x140086280",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086336",
+        "from_func": "0x140086300",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400863b6",
+        "from_func": "0x140086380",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBKAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400864a5",
+        "from_func": "0x140086400",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBKAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086516",
+        "from_func": "0x1400864e0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086605",
+        "from_func": "0x140086560",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400866e5",
+        "from_func": "0x140086640",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086756",
+        "from_func": "0x140086720",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEB_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086845",
+        "from_func": "0x1400867a0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEB_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400868b6",
+        "from_func": "0x140086880",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEB_NAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400869a5",
+        "from_func": "0x140086900",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEB_NAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086a16",
+        "from_func": "0x1400869e0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086a96",
+        "from_func": "0x140086a60",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140016fd4",
+        "from_func": "0x140016fc0",
+        "from_func_name": "?get_deleter@?$sp_counted_impl_pd@PEAV?$basic_altstringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@io@boost@@VNo_Op@?$basic_oaltstringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@23@@detail@boost@@UEAAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x14001700f",
+        "from_func": "0x140017000",
+        "from_func_name": "?get_local_deleter@?$sp_counted_impl_pd@PEAV?$basic_altstringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@io@boost@@VNo_Op@?$basic_oaltstringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@23@@detail@boost@@UEAAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x14003495d",
+        "from_func": "0x1400348e0",
+        "from_func_name": "??$transform_primary@V?$_String_iterator@V?$_String_val@U?$_Simple_types@_W@std@@@std@@@std@@@?$_Regex_traits@_W@std@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@V?$_String_iterator@V?$_String_val@U?$_Simple_types@_W@std@@@std@@@1@0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140034971",
+        "from_func": "0x1400348e0",
+        "from_func_name": "??$transform_primary@V?$_String_iterator@V?$_String_val@U?$_Simple_types@_W@std@@@std@@@std@@@?$_Regex_traits@_W@std@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@V?$_String_iterator@V?$_String_val@U?$_Simple_types@_W@std@@@std@@@1@0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400423bd",
+        "from_func": "0x140042330",
+        "from_func_name": "?_Add_equiv@?$_Builder2@PEB_W_WV?$regex_traits@_W@std@@@std@@QEAAXPEB_W0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400423d1",
+        "from_func": "0x140042330",
+        "from_func_name": "?_Add_equiv@?$_Builder2@PEB_W_WV?$regex_traits@_W@std@@@std@@QEAAXPEB_W0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400424db",
+        "from_func": "0x140042330",
+        "from_func_name": "?_Add_equiv@?$_Builder2@PEB_W_WV?$regex_traits@_W@std@@@std@@QEAAXPEB_W0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400424ef",
+        "from_func": "0x140042330",
+        "from_func_name": "?_Add_equiv@?$_Builder2@PEB_W_WV?$regex_traits@_W@std@@@std@@QEAAXPEB_W0@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140048134",
+        "from_func": "0x140048120",
+        "from_func_name": "?_Get_deleter@?$_Ref_count_resource@PEAVITemplate@Uev@@U?$default_delete@VITemplate@Uev@@@std@@@std@@UEBAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140048174",
+        "from_func": "0x140048160",
+        "from_func_name": "?_Get_deleter@?$_Ref_count_resource@PEAVProfile@Uev@@U?$default_delete@VProfile@Uev@@@std@@@std@@UEBAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140069084",
+        "from_func": "0x140069070",
+        "from_func_name": "?_Get_deleter@?$_Ref_count_resource@PEAVIRemoteStore@Uev@@U?$default_delete@VIRemoteStore@Uev@@@std@@@std@@UEBAPEAXAEBVtype_info@@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400844c0",
+        "from_func": "0x140084490",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_00a7fa26a962e5711fec5fc8fc065262___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084530",
+        "from_func": "0x140084500",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_01a10b1b6eb17c08c7462cb7ba103072___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400845a0",
+        "from_func": "0x140084570",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_0909bc1f4de7562b6ca68047934cef6b___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084610",
+        "from_func": "0x1400845e0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_0ae09f119ac7948711cb49b313c92fa3___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084680",
+        "from_func": "0x140084650",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_0bcbfd5f21a076b5a4dbf33b762a5b35___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400846f0",
+        "from_func": "0x1400846c0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_145d2b15678ffa150139d9c40244bb49___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084760",
+        "from_func": "0x140084730",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_160a746f73309ce8669c4d223c272932___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400847d0",
+        "from_func": "0x1400847a0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_196be8d530a56c1d71f0d25446e1485d___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084840",
+        "from_func": "0x140084810",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_1a3dd1c6ac05a4f22462cba0041f4077___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400848b0",
+        "from_func": "0x140084880",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_20efb2c191dedde8517f0f1f29ca0f90___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084920",
+        "from_func": "0x1400848f0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_29219e7d53bcd5354274605418f2297f___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084990",
+        "from_func": "0x140084960",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_296d104528f8721030b617bdafc4d456___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084a00",
+        "from_func": "0x1400849d0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_48453bd5d443e5515f893e7def290f90___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084a70",
+        "from_func": "0x140084a40",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_4d89be7e27cbebf0fe89f7519b01a092___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084ae0",
+        "from_func": "0x140084ab0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_5c230d48c7cd022ef646a68477621f28___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084b50",
+        "from_func": "0x140084b20",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_5faf98b309ca9252421baf90594ef652___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084bc0",
+        "from_func": "0x140084b90",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_600ef2de1c8a28e1cd3fe2c643600d55___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084c30",
+        "from_func": "0x140084c00",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_64fa6d66b597fdea73785cc0b5ff4a73___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084ca0",
+        "from_func": "0x140084c70",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_6ab8af53adab39dd1519741d436e1343___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084d10",
+        "from_func": "0x140084ce0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_6e023ceedadbee707f393b1be657a0cd___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084d80",
+        "from_func": "0x140084d50",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_6e9219e3c2f72be17f602672ff39e916___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084df0",
+        "from_func": "0x140084dc0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_78628c2aa6757c44ba48a45c5e1b35de___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084e60",
+        "from_func": "0x140084e30",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_7909abc2ae44f82297bc7fd4cf7bf159___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084ed0",
+        "from_func": "0x140084ea0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_854f65a20d2899f2a401a3415930eacb___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084f40",
+        "from_func": "0x140084f10",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_8568a241d72fb52ffdd086efe0aec76e___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140084fb0",
+        "from_func": "0x140084f80",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_8af6cecf90231203876c99860bd73dc0___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085020",
+        "from_func": "0x140084ff0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_8c3966ab01c8bf543f6f27494327131b___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085090",
+        "from_func": "0x140085060",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_9593e404f0a8e266196fc09c155e984b___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085100",
+        "from_func": "0x1400850d0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_ac2aa9f215af2edecacc4d4bfa615465___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085170",
+        "from_func": "0x140085140",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_b515e3f4d38b63b42327e4d17ca6fbf7___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400851e0",
+        "from_func": "0x1400851b0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_b92673aa1f92d85b20d816489705495f___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085250",
+        "from_func": "0x140085220",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_b98ccdd594d80039023b4148c9f5c5a6___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400852c0",
+        "from_func": "0x140085290",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_bef5238a41524bf5b97bfb01414966ba___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085330",
+        "from_func": "0x140085300",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_bf596b5797113df4baf40e7015bee802___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400853a0",
+        "from_func": "0x140085370",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_c25d39eec11bfdbd4cea5c4b20a5bf87___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085410",
+        "from_func": "0x1400853e0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_c5824d521a16254f38e2e43f872ddd16___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085480",
+        "from_func": "0x140085450",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_caddc917612cb3713747ee34b66266a9___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400854f0",
+        "from_func": "0x1400854c0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_d1062e626c0ae6ed1bd32a54c4e0d45f___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085560",
+        "from_func": "0x140085530",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_d110ec105b2e657bd12d8242e13c011f___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400855d0",
+        "from_func": "0x1400855a0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_e2db3869f49042c5ba94f9b21209cc7c___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085640",
+        "from_func": "0x140085610",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_e5f4bdf440dd6197a27b1f54b61e80a9___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400856b0",
+        "from_func": "0x140085680",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_e5f7be803118221bb97c7da2ff451a05___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085720",
+        "from_func": "0x1400856f0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_eeac8ab3d37cca4bdffcf7b4ff14682a___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085790",
+        "from_func": "0x140085760",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_f777dd4ec435cf534e5ac769899e2edc___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085800",
+        "from_func": "0x1400857d0",
+        "from_func_name": "boost::detail::function::functor_manager__lambda_ff83e295f3ecd6c676c01e7b150f93d1___::manage",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085876",
+        "from_func": "0x140085840",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf1@_NVConfigUtil@Uev@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@_mfi@boost@@V?$list2@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400858f6",
+        "from_func": "0x1400858c0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf1@_NVConfigUtil@Uev@@_N@_mfi@boost@@V?$list2@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@V?$value@_N@23@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085986",
+        "from_func": "0x140085950",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAKAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085a75",
+        "from_func": "0x1400859d0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAKAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085ae6",
+        "from_func": "0x140085ab0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085bd5",
+        "from_func": "0x140085b30",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085cb5",
+        "from_func": "0x140085c10",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085d26",
+        "from_func": "0x140085cf0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEA_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085e15",
+        "from_func": "0x140085d70",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEA_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085e86",
+        "from_func": "0x140085e50",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEA_NAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140085f75",
+        "from_func": "0x140085ed0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEA_NAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x14008605e",
+        "from_func": "0x140085fb0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$cmf5@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV45@AEAJ_N@_mfi@boost@@V?$list6@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@V?$value@_N@23@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400860d6",
+        "from_func": "0x1400860a0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf3@_NVConfigUtil@Uev@@W4SettingSource@2@AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@AEAJ@_mfi@boost@@V?$list4@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086156",
+        "from_func": "0x140086120",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf3@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@_mfi@boost@@V?$list4@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086245",
+        "from_func": "0x1400861a0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf3@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAJ@_mfi@boost@@V?$list4@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400862b6",
+        "from_func": "0x140086280",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086336",
+        "from_func": "0x140086300",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400863b6",
+        "from_func": "0x140086380",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBKAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400864a5",
+        "from_func": "0x140086400",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBKAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086516",
+        "from_func": "0x1400864e0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086605",
+        "from_func": "0x140086560",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV45@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400866e5",
+        "from_func": "0x140086640",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV?$list@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@5@AEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086756",
+        "from_func": "0x140086720",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEB_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086845",
+        "from_func": "0x1400867a0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEB_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400868b6",
+        "from_func": "0x140086880",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEB_NAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x1400869a5",
+        "from_func": "0x140086900",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEB_NAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@V?$value@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@23@U?$arg@$01@3@U?$arg@$02@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086a16",
+        "from_func": "0x1400869e0",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      },
+      {
+        "from_ea": "0x140086a96",
+        "from_func": "0x140086a60",
+        "from_func_name": "?manage@?$functor_manager@V?$bind_t@_NV?$mf4@_NVConfigUtil@Uev@@W4SettingSource@2@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@_KAEAJ@_mfi@boost@@V?$list5@V?$value@PEAVConfigUtil@Uev@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@U?$arg@$02@3@U?$arg@$03@3@@_bi@3@@_bi@boost@@@function@detail@boost@@SAXAEBTfunction_buffer@234@AEAT5234@W4functor_manager_operation_type@234@@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!__std_type_info_compare"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___p__commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400048f6",
+        "from_func": "0x1400048f6",
+        "from_func_name": "__p__commode",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___p__commode"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vsprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140004926",
+        "from_func": "0x140004926",
+        "from_func_name": "_o___stdio_common_vsprintf_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vsprintf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140004932",
+        "from_func": "0x140004932",
+        "from_func_name": "_o___stdio_common_vswprintf_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf_s",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000493e",
+        "from_func": "0x14000493e",
+        "from_func_name": "__stdio_common_vswprintf_s",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf_s"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configthreadlocale",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140004962",
+        "from_func": "0x140004962",
+        "from_func_name": "_configthreadlocale",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configthreadlocale"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000496e",
+        "from_func": "0x14000496e",
+        "from_func_name": "_o__configure_narrow_argv_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CLSIDFromProgID",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140060c5b",
+        "from_func": "0x140060c0c",
+        "from_func_name": "?CreateInstance@?$_com_ptr_t@V?$_com_IIID@UIXMLDOMDocument2@@$1?_GUID_2933bf95_7b36_11d2_b20e_00c04f983e60@@3U__s_GUID@@B@@@@QEAAJPEB_WPEAUIUnknown@@K@Z",
+        "import": "ole32!CLSIDFromProgID"
+      },
+      {
+        "from_ea": "0x140060d73",
+        "from_func": "0x140060d24",
+        "from_func_name": "?CreateInstance@?$_com_ptr_t@V?$_com_IIID@UIXMLDOMSchemaCollection@@$1?_GUID_373984c8_b845_449b_91e7_45ac83036ade@@3U__s_GUID@@B@@@@QEAAJPEB_WPEAUIUnknown@@K@Z",
+        "import": "ole32!CLSIDFromProgID"
+      },
+      {
+        "from_ea": "0x140060c5b",
+        "from_func": "0x140060c0c",
+        "from_func_name": "?CreateInstance@?$_com_ptr_t@V?$_com_IIID@UIXMLDOMDocument2@@$1?_GUID_2933bf95_7b36_11d2_b20e_00c04f983e60@@3U__s_GUID@@B@@@@QEAAJPEB_WPEAUIUnknown@@K@Z",
+        "import": "ole32!CLSIDFromProgID"
+      },
+      {
+        "from_ea": "0x140060d73",
+        "from_func": "0x140060d24",
+        "from_func_name": "?CreateInstance@?$_com_ptr_t@V?$_com_IIID@UIXMLDOMSchemaCollection@@$1?_GUID_373984c8_b845_449b_91e7_45ac83036ade@@3U__s_GUID@@B@@@@QEAAJPEB_WPEAUIUnknown@@K@Z",
+        "import": "ole32!CLSIDFromProgID"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CLSIDFromString",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140060c53",
+        "from_func": "0x140060c0c",
+        "from_func_name": "?CreateInstance@?$_com_ptr_t@V?$_com_IIID@UIXMLDOMDocument2@@$1?_GUID_2933bf95_7b36_11d2_b20e_00c04f983e60@@3U__s_GUID@@B@@@@QEAAJPEB_WPEAUIUnknown@@K@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x140060d6b",
+        "from_func": "0x140060d24",
+        "from_func_name": "?CreateInstance@?$_com_ptr_t@V?$_com_IIID@UIXMLDOMSchemaCollection@@$1?_GUID_373984c8_b845_449b_91e7_45ac83036ade@@3U__s_GUID@@B@@@@QEAAJPEB_WPEAUIUnknown@@K@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x140088564",
+        "from_func": "0x14008843c",
+        "from_func_name": "?ParseNormalizedFilePath@Path@Uev@@IEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@_N@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x140060c53",
+        "from_func": "0x140060c0c",
+        "from_func_name": "?CreateInstance@?$_com_ptr_t@V?$_com_IIID@UIXMLDOMDocument2@@$1?_GUID_2933bf95_7b36_11d2_b20e_00c04f983e60@@3U__s_GUID@@B@@@@QEAAJPEB_WPEAUIUnknown@@K@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x140060d6b",
+        "from_func": "0x140060d24",
+        "from_func_name": "?CreateInstance@?$_com_ptr_t@V?$_com_IIID@UIXMLDOMSchemaCollection@@$1?_GUID_373984c8_b845_449b_91e7_45ac83036ade@@3U__s_GUID@@B@@@@QEAAJPEB_WPEAUIUnknown@@K@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x140088564",
+        "from_func": "0x14008843c",
+        "from_func_name": "?ParseNormalizedFilePath@Path@Uev@@IEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@_N@Z",
+        "import": "ole32!CLSIDFromString"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemFree",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14003c8b2",
+        "from_func": "0x14003c7e8",
+        "from_func_name": "?GetTemplateFolder@TemplateFolder@Uev@@QEAAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x140087d21",
+        "from_func": "0x140087d10",
+        "from_func_name": "??1?$SmartHandle@PEA_W$1?CoTaskMemFreeWrapper@Path@Uev@@CAXPEA_W@Z$0A@@Uev@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14003c8b2",
+        "from_func": "0x14003c7e8",
+        "from_func_name": "?GetTemplateFolder@TemplateFolder@Uev@@QEAAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x140087d21",
+        "from_func": "0x140087d10",
+        "from_func_name": "??1?$SmartHandle@PEA_W$1?CoTaskMemFreeWrapper@Path@Uev@@CAXPEA_W@Z$0A@@Uev@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      }
+    ]
+  }
+]

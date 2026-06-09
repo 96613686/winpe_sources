@@ -1,0 +1,31 @@
+# _OnCreateProcessCallback_::_1_::dtor$14
+
+- ea: `0x18000c840`
+- end: `0x18000c84c`
+- name: `_OnCreateProcessCallback_::_1_::dtor$14`
+- size: `12`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `1`
+- tags: `registry_config, loader_planting, broker_com_uri`
+
+## callees
+
+- `0x18000605c`
+
+## pseudocode
+
+```c
+_QWORD *__fastcall OnCreateProcessCallback_::_1_::dtor_14(__int64 a1, __int64 a2)
+{
+  return Microsoft::WRL::ComPtr<Windows::Data::Json::IJsonObject>::~ComPtr<Windows::Data::Json::IJsonObject>((_QWORD *)(a2 + 64));
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000c840  lea     rcx, [rdx+40h]
+0x18000c847  jmp     ??1?$ComPtr@UIJsonObject@Json@Data@Windows@@@WRL@Microsoft@@QEAA@XZ; Microsoft::WRL::ComPtr<Windows::Data::Json::IJsonObject>::~ComPtr<Windows::Data::Json::IJsonObject>(void)
+```

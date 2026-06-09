@@ -1,0 +1,206 @@
+[
+  {
+    "import": "KERNEL32!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001912",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x180001b01",
+        "from_func": "0x180001a64",
+        "from_func_name": "?TransferAutochkLogToEventLogIfAvailable@@YAHPEBG@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x180001912",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x180001b01",
+        "from_func": "0x180001a64",
+        "from_func_name": "?TransferAutochkLogToEventLogIfAvailable@@YAHPEBG@Z",
+        "import": "KERNEL32!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!DeleteFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800018b0",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x18000193e",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x1800018b0",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x18000193e",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "KERNEL32!DeleteFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000160b",
+        "from_func": "0x1800015c4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000160b",
+        "from_func": "0x1800015c4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!ReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001b57",
+        "from_func": "0x180001a64",
+        "from_func_name": "?TransferAutochkLogToEventLogIfAvailable@@YAHPEBG@Z",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x180001b57",
+        "from_func": "0x180001a64",
+        "from_func_name": "?TransferAutochkLogToEventLogIfAvailable@@YAHPEBG@Z",
+        "import": "KERNEL32!ReadFile"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800016c0",
+        "from_func": "0x1800016c0",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlAllocateHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001b2d",
+        "from_func": "0x180001a64",
+        "from_func_name": "?TransferAutochkLogToEventLogIfAvailable@@YAHPEBG@Z",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x180001b2d",
+        "from_func": "0x180001a64",
+        "from_func_name": "?TransferAutochkLogToEventLogIfAvailable@@YAHPEBG@Z",
+        "import": "ntdll!RtlAllocateHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180001bda",
+        "from_func": "0x180001a64",
+        "from_func_name": "?TransferAutochkLogToEventLogIfAvailable@@YAHPEBG@Z",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x180001bda",
+        "from_func": "0x180001a64",
+        "from_func_name": "?TransferAutochkLogToEventLogIfAvailable@@YAHPEBG@Z",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x180002a2c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlFreeHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!WinSqmIsOptedInEx",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001759",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "ntdll!WinSqmIsOptedInEx"
+      },
+      {
+        "from_ea": "0x18000176b",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "ntdll!WinSqmIsOptedInEx"
+      },
+      {
+        "from_ea": "0x180001759",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "ntdll!WinSqmIsOptedInEx"
+      },
+      {
+        "from_ea": "0x18000176b",
+        "from_func": "0x180001700",
+        "from_func_name": "?PerformAutochkOperations@@YAXXZ",
+        "import": "ntdll!WinSqmIsOptedInEx"
+      }
+    ]
+  }
+]
