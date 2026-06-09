@@ -1,0 +1,272 @@
+# ChartText::LayoutText(ElementRenderer *,int,int,int,int,ChartText::TextLayoutType,int)
+
+- ea: `0x1800dad90`
+- end: `0x1800dc19f`
+- name: `?LayoutText@ChartText@@QEAAJPEAVElementRenderer@@HHHHW4TextLayoutType@1@H@Z`
+- size: `5135`
+- prototype: ``
+- caller_count: `16`
+- callee_count: `31`
+- tags: ``
+
+## callers
+
+- `0x1800b5ae0`
+- `0x1800c20c0`
+- `0x1800c6160`
+- `0x1800ca830`
+- `0x1800cbdc0`
+- `0x1800cca70`
+- `0x1800e5d20`
+- `0x18017fd40`
+- `0x180400ad0`
+- `0x180511bb0`
+- `0x180512480`
+- `0x1805135c0`
+- `0x180524a90`
+- `0x1805255b0`
+- `0x1805fb800`
+- `0x180639430`
+
+## callees
+
+- `0x180022770`
+- `0x18003ecd8`
+- `0x1800402f0`
+- `0x180040bf0`
+- `0x18004f104`
+- `0x18004f264`
+- `0x1800a2630`
+- `0x1800a7870`
+- `0x1800b8070`
+- `0x1800c9f50`
+- `0x1800d7050`
+- `0x1800d70b0`
+- `0x1800d7110`
+- `0x1800d7170`
+- `0x1800d72f0`
+- `0x1800d9bf0`
+- `0x1800dad90`
+- `0x1800dc1a0`
+- `0x1800dc4e0`
+- `0x1800e6d30`
+- `0x1800f2bac`
+- `0x1800fa5d0`
+- `0x1801ac170`
+- `0x1801b2a00`
+- `0x1801c5af0`
+- `0x1801f5a30`
+- `0x18026e570`
+- `0x18053c270`
+- `0x180637770`
+- `0x180a77460`
+- `0x180a7a270`
+
+## import_xrefs
+
+- `oart!__imp_?Validate@SimpleTextFrame@Art@@UEBAXXZ` at `0x1800db6ed`
+- `oart!__imp_?Validate@SimpleTextFrame@Art@@UEBAXXZ` at `0x1800db6ed`
+- `oart!__imp_?MoveNext@?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA_NXZ` at `0x1800db098`
+- `oart!__imp_?MoveNext@?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA_NXZ` at `0x1800db4fc`
+- `oart!__imp_?MoveNext@?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA_NXZ` at `0x1800db50e`
+- `oart!__imp_?MoveNext@?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA_NXZ` at `0x1800db098`
+- `oart!__imp_?MoveNext@?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA_NXZ` at `0x1800db4fc`
+- `oart!__imp_?MoveNext@?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA_NXZ` at `0x1800db50e`
+- `oart!__imp_??0ShapePropertyBag@Art@@QEAA@XZ` at `0x1800db5d5`
+- `oart!__imp_??0ShapePropertyBag@Art@@QEAA@XZ` at `0x1800db5d5`
+- `oart!__imp_?GetTransform@SimpleTextFrame@Art@@UEBAXAEAVTransform2D@2@@Z` at `0x1800db5c6`
+- `oart!__imp_?GetTransform@SimpleTextFrame@Art@@UEBAXAEAVTransform2D@2@@Z` at `0x1800db5c6`
+- `oart!__imp_?GetLayoutToHostMatrix@ITextLayout@Art@@QEBA?AU?$TAffine3x3@N@Math@@XZ` at `0x1800dbacc`
+- `oart!__imp_?GetLayoutToHostMatrix@ITextLayout@Art@@QEBA?AU?$TAffine3x3@N@Math@@XZ` at `0x1800dbacc`
+- `oart!__imp_??4Point2D@Art@@QEAAAEAV01@AEBV01@@Z` at `0x1800db836`
+- `oart!__imp_??4Point2D@Art@@QEAAAEAV01@AEBV01@@Z` at `0x1800db836`
+- `oart!__imp_?SetParaPropertyBag@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@AEBVTextParaPropertyBag@2@_N@Z` at `0x1800db300`
+- `oart!__imp_?SetParaPropertyBag@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@AEBVTextParaPropertyBag@2@_N@Z` at `0x1800db300`
+- `oart!__imp_??0Transform2D@Art@@QEAA@XZ` at `0x1800db5aa`
+- `oart!__imp_??0Transform2D@Art@@QEAA@XZ` at `0x1800db5aa`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dbf22`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dbf51`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dbf9b`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dbfca`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dc00d`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dc03b`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016ae0e`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016ae6b`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016aeca`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016af29`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dbf22`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dbf51`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dbf9b`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dbfca`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dc00d`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dc03b`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016ae0e`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016ae6b`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016aeca`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016af29`
+- `oart!__imp_??1ShapePropertyBag@Art@@QEAA@XZ` at `0x1800dbe69`
+- `oart!__imp_??1ShapePropertyBag@Art@@QEAA@XZ` at `0x1800dbe69`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x1800db5e4`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x1800db5e4`
+- `oart!__imp_??4Transform2D@Art@@QEAAAEAV01@AEBV01@@Z` at `0x1800db856`
+- `oart!__imp_??4Transform2D@Art@@QEAAAEAV01@AEBV01@@Z` at `0x1800db856`
+- `oart!__imp_?GetLanguageTag@TextLanguageID@Art@@QEBAPEB_WXZ` at `0x1800db1d4`
+- `oart!__imp_?GetLanguageTag@TextLanguageID@Art@@QEBAPEB_WXZ` at `0x1800db1d4`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x1800dbe5b`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x1800dbe5b`
+- `oart!__imp_?SetExtents@Transform2D@Art@@QEAAXV?$CoordMethods@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@2@0@Z` at `0x1800db6b8`
+- `oart!__imp_?SetExtents@Transform2D@Art@@QEAAXV?$CoordMethods@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@2@0@Z` at `0x18016b25e`
+- `oart!__imp_?SetExtents@Transform2D@Art@@QEAAXV?$CoordMethods@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@2@0@Z` at `0x1800db6b8`
+- `oart!__imp_?SetExtents@Transform2D@Art@@QEAAXV?$CoordMethods@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@2@0@Z` at `0x18016b25e`
+- `oart!__imp_??0?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA@AEBUTextRange@1@AEBVTextBody@1@@Z` at `0x1800db08a`
+- `oart!__imp_??0?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA@AEBUTextRange@1@AEBVTextBody@1@@Z` at `0x1800db4ee`
+- `oart!__imp_??0?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA@AEBUTextRange@1@AEBVTextBody@1@@Z` at `0x1800db08a`
+- `oart!__imp_??0?$TextRunIterator@VTextCharPropertyBag@Art@@@Art@@QEAA@AEBUTextRange@1@AEBVTextBody@1@@Z` at `0x1800db4ee`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x1800db10b`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x1800db3e5`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x18016afa7`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x1800db10b`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x1800db3e5`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x18016afa7`
+- `oart!__imp_??1TextParaPropertyBag@Art@@QEAA@XZ` at `0x1800db3d6`
+- `oart!__imp_??1TextParaPropertyBag@Art@@QEAA@XZ` at `0x1800db4aa`
+- `oart!__imp_??1TextParaPropertyBag@Art@@QEAA@XZ` at `0x1800db3d6`
+- `oart!__imp_??1TextParaPropertyBag@Art@@QEAA@XZ` at `0x1800db4aa`
+- `oart!__imp_??$GetPropertyBag@VTextCharPropertyBag@Art@@@TextBody@Art@@QEBAXAEBUTextRange@1@AEAVTextCharPropertyBag@1@PEAVTextBodyImplCursor@1@@Z` at `0x1800db0e0`
+- `oart!__imp_??$GetPropertyBag@VTextCharPropertyBag@Art@@@TextBody@Art@@QEBAXAEBUTextRange@1@AEAVTextCharPropertyBag@1@PEAVTextBodyImplCursor@1@@Z` at `0x1800db166`
+- `oart!__imp_??$GetPropertyBag@VTextCharPropertyBag@Art@@@TextBody@Art@@QEBAXAEBUTextRange@1@AEAVTextCharPropertyBag@1@PEAVTextBodyImplCursor@1@@Z` at `0x1800db0e0`
+- `oart!__imp_??$GetPropertyBag@VTextCharPropertyBag@Art@@@TextBody@Art@@QEBAXAEBUTextRange@1@AEAVTextCharPropertyBag@1@PEAVTextBodyImplCursor@1@@Z` at `0x1800db166`
+- `oart!__imp_??0Point2D@Art@@QEAA@AEBV?$CoordMethods@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@1@0@Z` at `0x1800db825`
+- `oart!__imp_??0Point2D@Art@@QEAA@AEBV?$CoordMethods@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@1@0@Z` at `0x1800db825`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db659`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db692`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x18016b20c`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x18016b238`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db659`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db692`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x18016b20c`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUPosCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x18016b238`
+- `oart!__imp_??0TextParaPropertyBag@Art@@QEAA@XZ` at `0x1800dafb2`
+- `oart!__imp_??0TextParaPropertyBag@Art@@QEAA@XZ` at `0x1800db191`
+- `oart!__imp_??0TextParaPropertyBag@Art@@QEAA@XZ` at `0x1800dafb2`
+- `oart!__imp_??0TextParaPropertyBag@Art@@QEAA@XZ` at `0x1800db191`
+- `oart!__imp_?SetTransform@SimpleTextFrame@Art@@QEAAXAEBVTransform2D@2@@Z` at `0x1800db6da`
+- `oart!__imp_?SetTransform@SimpleTextFrame@Art@@QEAAXAEBVTransform2D@2@@Z` at `0x1800db6da`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800dafd1`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800db06b`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800db2d5`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800db4ce`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800db912`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800dafd1`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800db06b`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800db2d5`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800db4ce`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1800db912`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x1800dbe7b`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x1800dbe7b`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800db1eb`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800db21a`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dc11e`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dc14c`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016b037`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800db1eb`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800db21a`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dc11e`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x1800dc14c`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextParaPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x18016b037`
+- `oart!__imp_??$GetPropertyBag@VTextParaPropertyBag@Art@@@TextBody@Art@@QEBAXAEBUTextRange@1@AEAVTextParaPropertyBag@1@PEAVTextBodyImplCursor@1@@Z` at `0x1800daff1`
+- `oart!__imp_??$GetPropertyBag@VTextParaPropertyBag@Art@@@TextBody@Art@@QEBAXAEBUTextRange@1@AEAVTextParaPropertyBag@1@PEAVTextBodyImplCursor@1@@Z` at `0x1800daff1`
+- `oart!__imp_?GetTextFramePropertyBag@SimpleTextFrame@Art@@UEBAXAEAVTextBodyPropertyBag@2@@Z` at `0x1800daec3`
+- `oart!__imp_?GetTextFramePropertyBag@SimpleTextFrame@Art@@UEBAXAEAVTextBodyPropertyBag@2@@Z` at `0x1800daec3`
+- `oart!__imp_?GetInactiveLayout@SimpleTextFrame@Art@@UEBA?AV?$TWeakPtr@VITextLayout@Art@@@Ofc@@XZ` at `0x1800db709`
+- `oart!__imp_?GetInactiveLayout@SimpleTextFrame@Art@@UEBA?AV?$TWeakPtr@VITextLayout@Art@@@Ofc@@XZ` at `0x1800db709`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db650`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db689`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db7db`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db802`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db650`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db689`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db7db`
+- `oart!__imp_??$PinData@V?$TRangeRestricted@_JUCoordRange@Art@@@Ofc@@@Art@@YA_J_J@Z` at `0x1800db802`
+- `oart!__imp_??0TextCharPropertyBag@Art@@QEAA@XZ` at `0x1800db0aa`
+- `oart!__imp_??0TextCharPropertyBag@Art@@QEAA@XZ` at `0x1800db137`
+- `oart!__imp_??0TextCharPropertyBag@Art@@QEAA@XZ` at `0x1800db0aa`
+- `oart!__imp_??0TextCharPropertyBag@Art@@QEAA@XZ` at `0x1800db137`
+- `oart!__imp_?SetTextFramePropertyBag@SimpleTextFrame@Art@@QEAAXAEBVTextBodyPropertyBag@2@@Z` at `0x1800db571`
+- `oart!__imp_?SetTextFramePropertyBag@SimpleTextFrame@Art@@QEAAXAEBVTextBodyPropertyBag@2@@Z` at `0x1800db571`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x1800daea8`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x1800daea8`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18016b0e5`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18016b130`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18016b0e5`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18016b130`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1800db712`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1800db712`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1800db726`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1800db726`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800daed6`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800daf1b`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db001`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db038`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db0f3`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db120`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db179`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db1a5`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db267`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db60a`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800dbcfd`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x18016b028`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800daed6`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800daf1b`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db001`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db038`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db0f3`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db120`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db179`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db1a5`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db267`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800db60a`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x1800dbcfd`
+- `mso40uiWin32Client!__imp_?GetPropertyState@CPropertySetImpl@Tph@Ofc@@IEBA?AW4State@23@I@Z` at `0x18016b028`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800db257`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800dbf8e`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800dc007`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800dc077`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800dc189`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x18016ae4d`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x18016aeaa`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x18016af09`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x18016af68`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800db257`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800dbf8e`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800dc007`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800dc077`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x1800dc189`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x18016ae4d`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x18016aeaa`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x18016af09`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x18016af68`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800db248`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800dbf7f`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800dbff8`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800dc069`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800dc17a`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800db248`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800dbf7f`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800dbff8`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800dc069`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x1800dc17a`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1800daeb2`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1800dafbc`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1800dafc8`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1800db056`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1800db062`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1800db0b4`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1800db141`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1800db2c0`
+
+## pseudocode
+
+```c
+
+```

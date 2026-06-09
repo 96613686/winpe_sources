@@ -1,0 +1,243 @@
+# Process::CheckProcessCreation(CInstance *,CInstance *,ulong &)
+
+- ea: `0x18008e3a8`
+- end: `0x1800900c7`
+- name: `?CheckProcessCreation@Process@@AEAAJPEAVCInstance@@0AEAK@Z`
+- size: `7455`
+- prototype: `__int64 __fastcall(Process *__hidden this, struct CInstance *, struct CInstance *, unsigned int *)`
+- caller_count: `1`
+- callee_count: `8`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18007c240`
+
+## callees
+
+- `0x18000ab30`
+- `0x180013ae0`
+- `0x180015c80`
+- `0x18002f1cc`
+- `0x18003d7b0`
+- `0x18008bb9c`
+- `0x18008e3a8`
+- `0x180090b94`
+
+## import_xrefs
+
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e3e5`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e45d`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e5e5`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e6c0`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e6cf`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e3e5`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e45d`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e5e5`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e6c0`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18008e6cf`
+- `framedynos!?GetCHString@CInstance@@QEBA_NPEBGAEAVCHString@@@Z` at `0x18008e437`
+- `framedynos!?GetCHString@CInstance@@QEBA_NPEBGAEAVCHString@@@Z` at `0x18008e4c0`
+- `framedynos!?GetCHString@CInstance@@QEBA_NPEBGAEAVCHString@@@Z` at `0x18008e615`
+- `framedynos!?GetCHString@CInstance@@QEBA_NPEBGAEAVCHString@@@Z` at `0x18008f1ad`
+- `framedynos!?GetCHString@CInstance@@QEBA_NPEBGAEAVCHString@@@Z` at `0x18008e437`
+- `framedynos!?GetCHString@CInstance@@QEBA_NPEBGAEAVCHString@@@Z` at `0x18008e4c0`
+- `framedynos!?GetCHString@CInstance@@QEBA_NPEBGAEAVCHString@@@Z` at `0x18008e615`
+- `framedynos!?GetCHString@CInstance@@QEBA_NPEBGAEAVCHString@@@Z` at `0x18008f1ad`
+- `framedynos!?CompareNoCase@CHString@@QEBAHPEBG@Z` at `0x18008e630`
+- `framedynos!?CompareNoCase@CHString@@QEBAHPEBG@Z` at `0x18008e630`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008e5a1`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008e601`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008f1bf`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008f377`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008f48d`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008f4ae`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008e5a1`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008e601`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008f1bf`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008f377`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008f48d`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x18008f4ae`
+- `framedynos!?GetMethodContext@CInstance@@QEBAPEAVMethodContext@@XZ` at `0x18008e539`
+- `framedynos!?GetMethodContext@CInstance@@QEBAPEAVMethodContext@@XZ` at `0x18008e539`
+- `framedynos!??0CHString@@QEAA@AEBV0@@Z` at `0x18008ff1f`
+- `framedynos!??0CHString@@QEAA@AEBV0@@Z` at `0x18008ff45`
+- `framedynos!??0CHString@@QEAA@AEBV0@@Z` at `0x18008ff1f`
+- `framedynos!??0CHString@@QEAA@AEBV0@@Z` at `0x18008ff45`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008e7b2`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008e900`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008ea38`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008eb27`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008ec66`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008ed07`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008ee46`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008eee7`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008f026`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008f0c7`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008e7b2`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008e900`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008ea38`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008eb27`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008ec66`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008ed07`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008ee46`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008eee7`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008f026`
+- `framedynos!?GetDWORD@CInstance@@QEBA_NPEBGAEAK@Z` at `0x18008f0c7`
+- `framedynos!??0CHString@@QEAA@PEBG@Z` at `0x18008e585`
+- `framedynos!??0CHString@@QEAA@PEBG@Z` at `0x18008f368`
+- `framedynos!??0CHString@@QEAA@PEBG@Z` at `0x18008f47e`
+- `framedynos!??0CHString@@QEAA@PEBG@Z` at `0x18008e585`
+- `framedynos!??0CHString@@QEAA@PEBG@Z` at `0x18008f368`
+- `framedynos!??0CHString@@QEAA@PEBG@Z` at `0x18008f47e`
+- `framedynos!?IsEmpty@CHString@@QEBAHXZ` at `0x18008e44a`
+- `framedynos!?IsEmpty@CHString@@QEBAHXZ` at `0x18008e4d3`
+- `framedynos!?IsEmpty@CHString@@QEBAHXZ` at `0x18008e44a`
+- `framedynos!?IsEmpty@CHString@@QEBAHXZ` at `0x18008e4d3`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e400`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e478`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e4fd`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e5b7`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e751`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e8a2`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e9da`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008eac9`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008ebb6`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008eca9`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008ed96`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008ee89`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008ef76`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008f069`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008f157`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008f23a`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e400`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e478`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e4fd`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e5b7`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e751`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e8a2`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008e9da`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008eac9`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008ebb6`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008eca9`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008ed96`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008ee89`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008ef76`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008f069`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008f157`
+- `framedynos!?GetStatus@CInstance@@QEBA_NPEBGAEA_NAEAG@Z` at `0x18008f23a`
+- `framedynos!?GetEmbeddedObject@CInstance@@QEBA_NPEBGPEAPEAV1@PEAVMethodContext@@@Z` at `0x18008e566`
+- `framedynos!?GetEmbeddedObject@CInstance@@QEBA_NPEBGPEAPEAV1@PEAVMethodContext@@@Z` at `0x18008e566`
+- `framedynos!?GetStringArray@CInstance@@QEBA_NPEBGAEAPEAUtagSAFEARRAY@@@Z` at `0x18008f290`
+- `framedynos!?GetStringArray@CInstance@@QEBA_NPEBGAEAPEAUtagSAFEARRAY@@@Z` at `0x18008f290`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e648`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e657`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e66a`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e67c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e7f8`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e807`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e81e`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e82a`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e845`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e854`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e86b`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e877`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e94f`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e95e`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e975`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008e981`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ea6c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ea7b`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ea92`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ea9e`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008eb59`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008eb68`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008eb7f`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008eb8b`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ec03`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ec12`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ec29`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ec35`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ed39`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ed48`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ed5f`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ed6b`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ede3`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008edf2`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ee09`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ee15`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ef19`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ef28`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ef3f`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008ef4b`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008efc3`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008efd2`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008efe9`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008eff5`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f0fa`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f109`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f120`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f12c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f1dd`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f1ec`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f203`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f20f`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f39d`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f4d8`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f581`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f590`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f5a7`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f5b3`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f5ce`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f5dd`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f5f4`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f600`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f61e`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f62d`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f644`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f650`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f66b`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f67a`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f691`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f69d`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f6bb`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f6ca`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f6e1`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f6ed`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f708`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f717`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f72e`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f73a`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f755`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f764`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f77b`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f787`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f7a2`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f7b1`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f7c8`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f7d4`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f7ef`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f7fe`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f815`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f821`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f83c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f84b`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f862`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f86e`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f88c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18008f89b`
+
+## string_xrefs
+
+- `0x18008e3f6`: `CommandLine`
+- `0x18008e42d`: `CommandLine`
+- `0x18008e46e`: `CurrentDirectory`
+- `0x18008e4b6`: `CurrentDirectory`
+- `0x18008e747`: `CreateFlags`
+- `0x18008e7a8`: `CreateFlags`
+
+## pseudocode
+
+```c
+
+```

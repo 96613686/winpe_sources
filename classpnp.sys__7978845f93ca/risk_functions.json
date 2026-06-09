@@ -1,0 +1,6420 @@
+[
+  {
+    "callee_count": 66,
+    "caller_count": 0,
+    "demangled": "ClassDeviceControl",
+    "ea": "0x140019de0",
+    "function_file": "functions/140019de0_ClassDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReInitializeRundownProtectionCacheAware",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!ExWaitForRundownProtectionReleaseCacheAware",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoInvalidateDeviceRelations",
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!IoSetActivityIdIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlDeleteRegistryValue",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\MiniNT",
+      "\\Registry\\Machine\\System\\DISK",
+      "\\Registry\\Machine\\System\\DISK",
+      "WriteCacheEnableOverride"
+    ],
+    "name": "ClassDeviceControl",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 11800,
+    "size": 11244,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 3,
+    "demangled": "ClassRemoveDevice",
+    "ea": "0x1400231f0",
+    "function_file": "functions/1400231f0_ClassRemoveDevice.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreeCacheAwareRundownProtection",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReInitializeRundownProtectionCacheAware",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ExWaitForRundownProtectionReleaseCacheAware",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IoInvalidateDeviceRelations",
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!IoWMIRegistrationControl",
+      "ntoskrnl!KeAcquireGuardedMutex",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseGuardedMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "ClassRemoveDevice",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, UCHAR RemoveType)",
+    "rank_score": 7245,
+    "size": 1916,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 0,
+    "demangled": "ClassInitialize",
+    "ea": "0x140056a40",
+    "function_file": "functions/140056a40_ClassInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateDriverObjectExtension",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IoRegisterDriverReinitialization",
+      "ntoskrnl!IoRegisterPriorityCallback",
+      "ntoskrnl!KeInitializeGuardedMutex",
+      "ntoskrnl!KeQueryUnbiasedInterruptTime",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "RtlQueryRegistryValuesEx",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e967-e325-11ce-bfc1-08002be10318}",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Classpnp"
+    ],
+    "name": "ClassInitialize",
+    "prototype": "ULONG __stdcall(PVOID Argument1, PVOID Argument2, PCLASS_INIT_DATA InitializationData)",
+    "rank_score": 6062,
+    "size": 2784,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 29,
+    "caller_count": 0,
+    "demangled": "ClassDispatchPnp",
+    "ea": "0x14005fe50",
+    "function_file": "functions/14005fe50_ClassDispatchPnp.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocateCacheAwareRundownProtection",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreeCacheAwareRundownProtection",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ExWaitForRundownProtectionReleaseCacheAware",
+      "ntoskrnl!IoClearActivityIdThread",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IoPropagateActivityIdToThread",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KdDebuggerNotPresent",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfReferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "REMOVE",
+      "REMOVE"
+    ],
+    "name": "ClassDispatchPnp",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 5680,
+    "size": 5573,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 31,
+    "caller_count": 0,
+    "demangled": "TransferPktComplete",
+    "ea": "0x14001ccb0",
+    "function_file": "functions/14001ccb0_TransferPktComplete.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetGenericIrpExtension",
+      "ntoskrnl!IoGetIoAttributionHandle",
+      "ntoskrnl!IoGetPagingIoPriority",
+      "ntoskrnl!IoSetGenericIrpExtension",
+      "ntoskrnl!IoSetHardErrorOrVerifyDevice",
+      "ntoskrnl!IoSetMasterIrpStatus",
+      "ntoskrnl!IoStartNextPacket",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeQueryUnbiasedInterruptTime",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KfRaiseIrql",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmUnmapLockedPages"
+    ],
+    "matched_strings": [],
+    "name": "TransferPktComplete",
+    "prototype": "",
+    "rank_score": 5080,
+    "size": 5689,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 42,
+    "caller_count": 1,
+    "demangled": "ClassPnpStartDevice",
+    "ea": "0x1400579b4",
+    "function_file": "functions/1400579b4_ClassPnpStartDevice.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInterlockedInsertTailList",
+      "ntoskrnl!InitializeSListHead",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IoWMIRegistrationControl",
+      "ntoskrnl!KeInitializeDpc",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeInitializeTimer",
+      "ntoskrnl!KeQueryMaximumProcessorCountEx",
+      "ntoskrnl!KeQueryTimeIncrement",
+      "ntoskrnl!PoRegisterPowerSettingCallback"
+    ],
+    "matched_strings": [
+      "AccessAlignmentQueryNotSupported"
+    ],
+    "name": "ClassPnpStartDevice",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, _DWORD *)",
+    "rank_score": 3921,
+    "size": 4026,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ClassIoBoostPriority",
+    "ea": "0x14001e2f0",
+    "function_file": "functions/14001e2f0_ClassIoBoostPriority.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoClearActivityIdThread",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoPropagateActivityIdToThread",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IoSizeofWorkItem",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeQueryDpcWatchdogInformation",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClassIoBoostPriority",
+    "prototype": "",
+    "rank_score": 3848,
+    "size": 1397,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "ClassCreateDeviceObject",
+    "ea": "0x140055c70",
+    "function_file": "functions/140055c70_ClassCreateDeviceObject.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeRundownProtectionCacheAware",
+      "ntoskrnl!ExSizeOfRundownProtectionCacheAware",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IoSetStartIoAttributes",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlAnsiStringToUnicodeString",
+      "ntoskrnl!RtlInitString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "ClassCreateDeviceObject",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PCCHAR ObjectNameBuffer, PDEVICE_OBJECT LowerDeviceObject, BOOLEAN IsFdo, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 3639,
+    "size": 1352,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "ClassGetDeviceParameter",
+    "ea": "0x14005f690",
+    "function_file": "functions/14005f690_ClassGetDeviceParameter.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "ClassGetDeviceParameter",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, PWSTR SubkeyName, PWSTR ParameterName, PULONG ParameterValue)",
+    "rank_score": 3341,
+    "size": 356,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 27,
+    "demangled": "ClassSendSrbSynchronous",
+    "ea": "0x14000de10",
+    "function_file": "functions/14000de10_ClassSendSrbSynchronous.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoGetActivityIdThread",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!MmProbeAndLockPages"
+    ],
+    "matched_strings": [],
+    "name": "ClassSendSrbSynchronous",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PSCSI_REQUEST_BLOCK Srb, PVOID BufferAddress, ULONG BufferLength, BOOLEAN WriteToDevice)",
+    "rank_score": 3285,
+    "size": 4293,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "ClasspPowerDownCompletion",
+    "ea": "0x140010400",
+    "function_file": "functions/140010400_ClasspPowerDownCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!PoCallDriver",
+      "ntoskrnl!PoQueryWatchdogTime",
+      "ntoskrnl!PoSetPowerState",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspPowerDownCompletion",
+    "prototype": "",
+    "rank_score": 2859,
+    "size": 6027,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "ClassUpdateInformationInRegistry",
+    "ea": "0x140058e90",
+    "function_file": "functions/140058e90_ClassUpdateInformationInRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlAnsiStringToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\Hardware\\DeviceMap\\Scsi\\Scsi Port %d\\Scsi Bus %d\\Target Id %d\\Logical Unit Id %d"
+    ],
+    "name": "ClassUpdateInformationInRegistry",
+    "prototype": "void __stdcall(PDEVICE_OBJECT Fdo, PCHAR DeviceName, ULONG DeviceNumber, PINQUIRYDATA InquiryData, ULONG InquiryDataLength)",
+    "rank_score": 2504,
+    "size": 933,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "ClassSendDeviceIoControlSynchronous",
+    "ea": "0x14005e2e0",
+    "function_file": "functions/14005e2e0_ClassSendDeviceIoControlSynchronous.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!MmUnlockPages"
+    ],
+    "matched_strings": [],
+    "name": "ClassSendDeviceIoControlSynchronous",
+    "prototype": "void __stdcall(ULONG IoControlCode, PDEVICE_OBJECT TargetDeviceObject, PVOID Buffer, ULONG InputBufferLength, ULONG OutputBufferLength, BOOLEAN InternalDeviceIoControl, PIO_STATUS_BLOCK IoStatus)",
+    "rank_score": 2414,
+    "size": 568,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "ClasspPowerUpCompletion",
+    "ea": "0x140011ba0",
+    "function_file": "functions/140011ba0_ClasspPowerUpCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!PoCallDriver",
+      "ntoskrnl!PoQueryWatchdogTime",
+      "ntoskrnl!PoSetPowerState",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspPowerUpCompletion",
+    "prototype": "",
+    "rank_score": 2260,
+    "size": 3674,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ClasspCleanupPacketTimerDpc",
+    "ea": "0x140015da0",
+    "function_file": "functions/140015da0_ClasspCleanupPacketTimerDpc.md",
+    "matched_imports": [
+      "ntoskrnl!ExQueryDepthSList",
+      "ntoskrnl!ExpInterlockedFlushSList",
+      "ntoskrnl!ExpInterlockedPopEntrySList",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeQueryHighestNodeNumber",
+      "ntoskrnl!KeQueryMaximumProcessorCountEx",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClasspCleanupPacketTimerDpc",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 2207,
+    "size": 711,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ClasspIsMediaChangeDisabledForClass",
+    "ea": "0x140055098",
+    "function_file": "functions/140055098_ClasspIsMediaChangeDisabledForClass.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "ClasspIsMediaChangeDisabledForClass",
+    "prototype": "",
+    "rank_score": 2134,
+    "size": 853,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 13,
+    "demangled": "ClassReadDriveCapacity",
+    "ea": "0x140001130",
+    "function_file": "functions/140001130_ClassReadDriveCapacity.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClassReadDriveCapacity",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 2071,
+    "size": 1642,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 9,
+    "demangled": "SubmitTransferPacket",
+    "ea": "0x140004950",
+    "function_file": "functions/140004950_SubmitTransferPacket.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetIoAttributionHandle",
+      "ntoskrnl!IoIsActivityTracingEnabled",
+      "ntoskrnl!IoPropagateIrpExtensionEx",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!IoSetActivityIdIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise"
+    ],
+    "matched_strings": [],
+    "name": "SubmitTransferPacket",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 2054,
+    "size": 1390,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ClassMpdevAddDevice",
+    "ea": "0x14003a2cc",
+    "function_file": "functions/14003a2cc_ClassMpdevAddDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoAttachDeviceToDeviceStack",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoGetConfigurationInformation",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "ClassMpdevAddDevice",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT TargetDevice)",
+    "rank_score": 2036,
+    "size": 856,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "ClasspServiceIdleRequest",
+    "ea": "0x140002d30",
+    "function_file": "functions/140002d30_ClasspServiceIdleRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetIoAttributionHandle",
+      "ntoskrnl!IoRecordIoAttribution",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClasspServiceIdleRequest",
+    "prototype": "",
+    "rank_score": 2022,
+    "size": 627,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "ClasspInitializeGesn",
+    "ea": "0x14005479c",
+    "function_file": "functions/14005479c_ClasspInitializeGesn.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!MmBuildMdlForNonPagedPool"
+    ],
+    "matched_strings": [],
+    "name": "ClasspInitializeGesn",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, __int64)",
+    "rank_score": 1845,
+    "size": 1715,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ClasspEnqueueIdleRequest",
+    "ea": "0x1400024b0",
+    "function_file": "functions/1400024b0_ClasspEnqueueIdleRequest.md",
+    "matched_imports": [
+      "ntoskrnl!FsRtlIsSystemPagingFile",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetIoAttributionHandle",
+      "ntoskrnl!IoRecordIoAttribution",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClasspEnqueueIdleRequest",
+    "prototype": "",
+    "rank_score": 1826,
+    "size": 908,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ClasspIsMediaChangeDisabledDueToHardwareLimitation",
+    "ea": "0x14005f9f0",
+    "function_file": "functions/14005f9f0_ClasspIsMediaChangeDisabledDueToHardwareLimitation.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAnsiStringToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "ClasspIsMediaChangeDisabledDueToHardwareLimitation",
+    "prototype": "",
+    "rank_score": 1794,
+    "size": 937,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ClassQueryTimeOutRegistryValue",
+    "ea": "0x1400589e0",
+    "function_file": "functions/1400589e0_ClassQueryTimeOutRegistryValue.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "ClassQueryTimeOutRegistryValue",
+    "prototype": "ULONG __stdcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 1767,
+    "size": 432,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClassUpdateDynamicRegistrySettings",
+    "ea": "0x14002c310",
+    "function_file": "functions/14002c310_ClassUpdateDynamicRegistrySettings.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "ProcessZoneCommandAsync"
+    ],
+    "name": "ClassUpdateDynamicRegistrySettings",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 1676,
+    "size": 511,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 4,
+    "demangled": "ServiceTransferRequest",
+    "ea": "0x140002fb0",
+    "function_file": "functions/140002fb0_ServiceTransferRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetPagingIoPriority",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "ServiceTransferRequest",
+    "prototype": "__int64 __fastcall(__int64, __int64, char)",
+    "rank_score": 1664,
+    "size": 2389,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "ClassIoComplete",
+    "ea": "0x140016350",
+    "function_file": "functions/140016350_ClassIoComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoSetHardErrorOrVerifyDevice",
+      "ntoskrnl!IoStartNextPacket",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClassIoComplete",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 1652,
+    "size": 971,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "ClasspUpdateDiskProperties",
+    "ea": "0x140026020",
+    "function_file": "functions/140026020_ClasspUpdateDiskProperties.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspUpdateDiskProperties",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 1642,
+    "size": 681,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "ClasspReleaseQueue",
+    "ea": "0x1400176f8",
+    "function_file": "functions/1400176f8_ClasspReleaseQueue.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeBugCheckEx",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClasspReleaseQueue",
+    "prototype": "__int64 __fastcall(ULONG_PTR BugCheckParameter2, PIRP Irp)",
+    "rank_score": 1623,
+    "size": 546,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspScanForForwardedIo",
+    "ea": "0x1400599ac",
+    "function_file": "functions/1400599ac_ClasspScanForForwardedIo.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetLowerDeviceObject",
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ObfReferenceObject",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "ClasspScanForForwardedIo",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1615,
+    "size": 330,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClassPnpLogDeviceDescriptor",
+    "ea": "0x14003dbfc",
+    "function_file": "functions/14003dbfc_ClassPnpLogDeviceDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "ClassPnpLogDeviceDescriptor",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 1612,
+    "size": 773,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ClasspMediaChangeDeviceInstanceOverride",
+    "ea": "0x1400554c0",
+    "function_file": "functions/1400554c0_ClasspMediaChangeDeviceInstanceOverride.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "ClasspMediaChangeDeviceInstanceOverride",
+    "prototype": "",
+    "rank_score": 1593,
+    "size": 893,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspScanForSpecialInRegistry",
+    "ea": "0x140059afc",
+    "function_file": "functions/140059afc_ClasspScanForSpecialInRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "ClasspScanForSpecialInRegistry",
+    "prototype": "int __fastcall(__int64)",
+    "rank_score": 1587,
+    "size": 433,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "ClasspEjectionControl",
+    "ea": "0x14005e53c",
+    "function_file": "functions/14005e53c_ClasspEjectionControl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspEjectionControl",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 1443,
+    "size": 1515,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "ClasspLogIOEventWithContext",
+    "ea": "0x140013e10",
+    "function_file": "functions/140013e10_ClasspLogIOEventWithContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoGetDeviceProperty",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "ClasspLogIOEventWithContext",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 1431,
+    "size": 761,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ClasspInitializePolling",
+    "ea": "0x140054e58",
+    "function_file": "functions/140054e58_ClasspInitializePolling.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!PoRegisterPowerSettingCallback"
+    ],
+    "matched_strings": [],
+    "name": "ClasspInitializePolling",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 1420,
+    "size": 568,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ClasspRetryRequestDpc",
+    "ea": "0x1400186b0",
+    "function_file": "functions/1400186b0_ClasspRetryRequestDpc.md",
+    "matched_imports": [
+      "ntoskrnl!IoClearActivityIdThread",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoPropagateActivityIdToThread",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClasspRetryRequestDpc",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 1417,
+    "size": 507,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ClasspShutdownRegistryWatch",
+    "ea": "0x140035a68",
+    "function_file": "functions/140035a68_ClasspShutdownRegistryWatch.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "ClasspShutdownRegistryWatch",
+    "prototype": "",
+    "rank_score": 1412,
+    "size": 164,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DestroyAllTransferPackets",
+    "ea": "0x14005b740",
+    "function_file": "functions/14005b740_DestroyAllTransferPackets.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExpInterlockedPopEntrySList",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeFlushQueuedDpcs",
+      "ntoskrnl!KeQueryHighestNodeNumber",
+      "ntoskrnl!KeQueryMaximumProcessorCountEx"
+    ],
+    "matched_strings": [],
+    "name": "DestroyAllTransferPackets",
+    "prototype": "",
+    "rank_score": 1405,
+    "size": 370,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DbgGetScsiOpStr",
+    "ea": "0x140039044",
+    "function_file": "functions/140039044_DbgGetScsiOpStr.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SCSIOP_TEST_UNIT_READY",
+      "SCSIOP_READ_BLOCK_LIMITS",
+      "SCSIOP_READ_REVERSE",
+      "SCSIOP_COPY",
+      "SCSIOP_READ_FORMATTED_CAPACITY",
+      "SCSIOP_READ_CAPACITY",
+      "SCSIOP_READ",
+      "SCSIOP_WRITE",
+      "SCSIOP_WRITE_VERIFY",
+      "SCSIOP_READ_POSITION",
+      "SCSIOP_SYNCHRONIZE_CACHE",
+      "SCSIOP_COMPARE",
+      "SCSIOP_COPY_COMPARE",
+      "SCSIOP_WRITE_DATA_BUFF",
+      "SCSIOP_READ_DATA_BUFF",
+      "SCSIOP_READ_DATA_BUFF16",
+      "SCSIOP_READ_SUB_CHANNEL",
+      "SCSIOP_READ_TOC",
+      "SCSIOP_READ_HEADER",
+      "SCSIOP_GET_CONFIGURATION",
+      "SCSIOP_READ_DISK_INFORMATION",
+      "SCSIOP_READ_TRACK_INFORMATION",
+      "SCSIOP_READ_BUFFER_CAPACITY",
+      "SCSIOP_MOVE_MEDIUM",
+      "SCSIOP_SET_READ_AHEAD",
+      "SCSIOP_READ_DVD_STRUCTURE",
+      "SCSIOP_READ_ELEMENT_STATUS",
+      "SCSIOP_READ_CD_MSF",
+      "SCSIOP_READ_CD",
+      "SCSIOP_READ16",
+      "SCSIOP_WRITE16",
+      "SCSIOP_SYNCHRONIZE_CACHE16",
+      "SCSIOP_READ_CAPACITY16"
+    ],
+    "name": "DbgGetScsiOpStr",
+    "prototype": "__int64(void)",
+    "rank_score": 1358,
+    "size": 1997,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "ClassSetDeviceParameter",
+    "ea": "0x14005bef0",
+    "function_file": "functions/14005bef0_ClassSetDeviceParameter.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlWriteRegistryValue",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "ClassSetDeviceParameter",
+    "prototype": "NTSTATUS __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, PWSTR SubkeyName, PWSTR ParameterName, ULONG ParameterValue)",
+    "rank_score": 1258,
+    "size": 349,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ClassReadWrite",
+    "ea": "0x1400029d0",
+    "function_file": "functions/1400029d0_ClassReadWrite.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IoSetHardErrorOrVerifyDevice",
+      "ntoskrnl!IoStartPacket",
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "ClassReadWrite",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1244,
+    "size": 856,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ClasspAccessAlignmentProperty",
+    "ea": "0x14001e86c",
+    "function_file": "functions/14001e86c_ClasspAccessAlignmentProperty.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspAccessAlignmentProperty",
+    "prototype": "NTSTATUS __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, __int64)",
+    "rank_score": 1241,
+    "size": 1089,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ClasspMpdevRemoveDevice",
+    "ea": "0x14003b148",
+    "function_file": "functions/14003b148_ClasspMpdevRemoveDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMpdevRemoveDevice",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1232,
+    "size": 534,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClasspMpdevCancelRemove",
+    "ea": "0x14003ac04",
+    "function_file": "functions/14003ac04_ClasspMpdevCancelRemove.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMpdevCancelRemove",
+    "prototype": "",
+    "rank_score": 1228,
+    "size": 497,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "ClassUnload",
+    "ea": "0x140058d20",
+    "function_file": "functions/140058d20_ClassUnload.md",
+    "matched_imports": [
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IoUnregisterPriorityCallback"
+    ],
+    "matched_strings": [],
+    "name": "ClassUnload",
+    "prototype": "",
+    "rank_score": 1219,
+    "size": 360,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "ClasspProcessZoneCommandAsynchronously",
+    "ea": "0x140032f1c",
+    "function_file": "functions/140032f1c_ClasspProcessZoneCommandAsynchronously.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IoSizeofWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "ClasspProcessZoneCommandAsynchronously",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 1219,
+    "size": 291,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ClassSetFailurePredictionPoll",
+    "ea": "0x1400545c0",
+    "function_file": "functions/1400545c0_ClassSetFailurePredictionPoll.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClassSetFailurePredictionPoll",
+    "prototype": "NTSTATUS __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, FAILURE_PREDICTION_METHOD FailurePredictionMethod, ULONG PollingPeriod)",
+    "rank_score": 1216,
+    "size": 363,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 8,
+    "demangled": "DequeueFreeTransferPacket",
+    "ea": "0x140002230",
+    "function_file": "functions/140002230_DequeueFreeTransferPacket.md",
+    "matched_imports": [
+      "ntoskrnl!ExQueryDepthSList",
+      "ntoskrnl!ExpInterlockedPopEntrySList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeGetCurrentNodeNumber",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DequeueFreeTransferPacket",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1216,
+    "size": 533,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspWatchForRegistryChanges",
+    "ea": "0x140036550",
+    "function_file": "functions/140036550_ClasspWatchForRegistryChanges.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ZwNotifyChangeKey"
+    ],
+    "matched_strings": [],
+    "name": "ClasspWatchForRegistryChanges",
+    "prototype": "",
+    "rank_score": 1214,
+    "size": 234,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClassSetMaxNumberOfIoRetries",
+    "ea": "0x14002c1a0",
+    "function_file": "functions/14002c1a0_ClassSetMaxNumberOfIoRetries.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Classpnp"
+    ],
+    "name": "ClassSetMaxNumberOfIoRetries",
+    "prototype": "",
+    "rank_score": 1206,
+    "size": 362,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 28,
+    "caller_count": 4,
+    "demangled": "ClassInterpretSenseInfo",
+    "ea": "0x1400084b0",
+    "function_file": "functions/1400084b0_ClassInterpretSenseInfo.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoInvalidateDeviceRelations",
+      "ntoskrnl!IoWriteErrorLogEntry",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClassInterpretSenseInfo",
+    "prototype": "BOOLEAN __stdcall(PDEVICE_OBJECT DeviceObject, PSCSI_REQUEST_BLOCK Srb, UCHAR MajorFunctionCode, ULONG IoDeviceCode, ULONG RetryCount, NTSTATUS *Status, ULONG *RetryInterval)",
+    "rank_score": 1074,
+    "size": 14314,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "ClasspServicePopulateTokenTransferRequest",
+    "ea": "0x140059cb4",
+    "function_file": "functions/140059cb4_ClasspServicePopulateTokenTransferRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoSetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspServicePopulateTokenTransferRequest",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1057,
+    "size": 1606,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "ClassIoCompleteAssociated",
+    "ea": "0x140037e10",
+    "function_file": "functions/140037e10_ClassIoCompleteAssociated.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetHardErrorOrVerifyDevice",
+      "ntoskrnl!IoStartNextPacket",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClassIoCompleteAssociated",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 1041,
+    "size": 945,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "ClasspContinueOffloadWrite",
+    "ea": "0x140024070",
+    "function_file": "functions/140024070_ClasspContinueOffloadWrite.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoSetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspContinueOffloadWrite",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1041,
+    "size": 1241,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspMpdevQueryRemove",
+    "ea": "0x14003af24",
+    "function_file": "functions/14003af24_ClasspMpdevQueryRemove.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMpdevQueryRemove",
+    "prototype": "",
+    "rank_score": 1030,
+    "size": 540,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "ClassLogThresholdEvent",
+    "ea": "0x14002ba00",
+    "function_file": "functions/14002ba00_ClassLogThresholdEvent.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "ClassLogThresholdEvent",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 1026,
+    "size": 968,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspMpdevStartDevice",
+    "ea": "0x14003b364",
+    "function_file": "functions/14003b364_ClasspMpdevStartDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMpdevStartDevice",
+    "prototype": "",
+    "rank_score": 1021,
+    "size": 663,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClassMpdevQueryPnpDeviceState",
+    "ea": "0x14005c620",
+    "function_file": "functions/14005c620_ClassMpdevQueryPnpDeviceState.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClassMpdevQueryPnpDeviceState",
+    "prototype": "",
+    "rank_score": 1016,
+    "size": 377,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspMpdevQueryCapabilities",
+    "ea": "0x14005cce4",
+    "function_file": "functions/14005cce4_ClasspMpdevQueryCapabilities.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMpdevQueryCapabilities",
+    "prototype": "",
+    "rank_score": 1016,
+    "size": 370,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ClasspProcessIdleStarvation",
+    "ea": "0x140001f40",
+    "function_file": "functions/140001f40_ClasspProcessIdleStarvation.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClasspProcessIdleStarvation",
+    "prototype": "",
+    "rank_score": 1015,
+    "size": 416,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ClassCleanupMediaChangeDetection",
+    "ea": "0x1400542a0",
+    "function_file": "functions/1400542a0_ClassCleanupMediaChangeDetection.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl"
+    ],
+    "matched_strings": [],
+    "name": "ClassCleanupMediaChangeDetection",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 1013,
+    "size": 162,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "ClasspMediaChangeDetectionCompletion",
+    "ea": "0x140014aa0",
+    "function_file": "functions/140014aa0_ClasspMediaChangeDetectionCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMediaChangeDetectionCompletion",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, _BYTE *, unsigned __int64)",
+    "rank_score": 851,
+    "size": 1658,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceSeekPenaltyProperty",
+    "ea": "0x14001ecc0",
+    "function_file": "functions/14001ecc0_ClasspDeviceSeekPenaltyProperty.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClasspDeviceSeekPenaltyProperty",
+    "prototype": "NTSTATUS __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, __int64)",
+    "rank_score": 838,
+    "size": 1166,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ClasspReceiveWriteUsingTokenInformation",
+    "ea": "0x140020ef4",
+    "function_file": "functions/140020ef4_ClasspReceiveWriteUsingTokenInformation.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoSetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspReceiveWriteUsingTokenInformation",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 836,
+    "size": 888,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ClasspTimerTick",
+    "ea": "0x14000fd00",
+    "function_file": "functions/14000fd00_ClasspTimerTick.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "ClasspTimerTick",
+    "prototype": "",
+    "rank_score": 833,
+    "size": 714,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ClassAsynchronousCompletion",
+    "ea": "0x140022920",
+    "function_file": "functions/140022920_ClassAsynchronousCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmUnlockPages"
+    ],
+    "matched_strings": [],
+    "name": "ClassAsynchronousCompletion",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 826,
+    "size": 210,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SetupReadWriteExtraInfo",
+    "ea": "0x140004080",
+    "function_file": "functions/140004080_SetupReadWriteExtraInfo.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetAdapterCryptoEngineExtension",
+      "ntoskrnl!IoGetGenericIrpExtension",
+      "ntoskrnl!IoGetTopLevelIrp"
+    ],
+    "matched_strings": [],
+    "name": "SetupReadWriteExtraInfo",
+    "prototype": "",
+    "rank_score": 826,
+    "size": 628,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DllUnload",
+    "ea": "0x140026590",
+    "function_file": "functions/140026590_DllUnload.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!PoUnregisterPowerSettingCallback"
+    ],
+    "matched_strings": [],
+    "name": "DllUnload",
+    "prototype": "",
+    "rank_score": 825,
+    "size": 169,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ClasspGetBlockDeviceTokenLimitsInfo",
+    "ea": "0x140024550",
+    "function_file": "functions/140024550_ClasspGetBlockDeviceTokenLimitsInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ClasspGetBlockDeviceTokenLimitsInfo",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 820,
+    "size": 1791,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ClassNotifyFailurePredicted",
+    "ea": "0x140021a20",
+    "function_file": "functions/140021a20_ClassNotifyFailurePredicted.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWrite",
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "ClassNotifyFailurePredicted",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, PUCHAR Buffer, ULONG BufferSize, BOOLEAN LogError, ULONG UniqueErrorValue, UCHAR PathId, UCHAR TargetId, UCHAR Lun)",
+    "rank_score": 818,
+    "size": 381,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ClassInitializeEx",
+    "ea": "0x140057530",
+    "function_file": "functions/140057530_ClassInitializeEx.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetDriverObjectExtension"
+    ],
+    "matched_strings": [],
+    "name": "ClassInitializeEx",
+    "prototype": "ULONG __stdcall(PDRIVER_OBJECT DriverObject, LPGUID Guid, PVOID Data)",
+    "rank_score": 815,
+    "size": 549,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ClasspSendSynchronousCompletion",
+    "ea": "0x140016170",
+    "function_file": "functions/140016170_ClasspSendSynchronousCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!MmUnlockPages"
+    ],
+    "matched_strings": [],
+    "name": "ClasspSendSynchronousCompletion",
+    "prototype": "",
+    "rank_score": 813,
+    "size": 176,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClassWmiFireEvent",
+    "ea": "0x140028b40",
+    "function_file": "functions/140028b40_ClassWmiFireEvent.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoWMIDeviceObjectToProviderId",
+      "ntoskrnl!IoWMIWriteEvent"
+    ],
+    "matched_strings": [],
+    "name": "ClassWmiFireEvent",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, LPGUID Guid, ULONG InstanceIndex, ULONG EventDataSize, PVOID EventData)",
+    "rank_score": 804,
+    "size": 236,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspGenerateMD5BasedGuid",
+    "ea": "0x140059408",
+    "function_file": "functions/140059408_ClasspGenerateMD5BasedGuid.md",
+    "matched_imports": [
+      "ksecdd!BCryptCreateHash",
+      "ksecdd!BCryptDestroyHash",
+      "ksecdd!BCryptFinishHash",
+      "ksecdd!BCryptHashData"
+    ],
+    "matched_strings": [],
+    "name": "ClasspGenerateMD5BasedGuid",
+    "prototype": "__int64 __fastcall(PUCHAR pbInput, ULONG cbInput)",
+    "rank_score": 804,
+    "size": 240,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ClasspRegisterMountedDeviceInterface",
+    "ea": "0x1400598f0",
+    "function_file": "functions/1400598f0_ClasspRegisterMountedDeviceInterface.md",
+    "matched_imports": [
+      "ntoskrnl!IoRegisterDeviceInterface",
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "ClasspRegisterMountedDeviceInterface",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 803,
+    "size": 143,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceSanitize",
+    "ea": "0x14002fdd8",
+    "function_file": "functions/14002fdd8_ClasspDeviceSanitize.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\MiniNT"
+    ],
+    "name": "ClasspDeviceSanitize",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, IRP *, __int64)",
+    "rank_score": 710,
+    "size": 1368,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "ClasspSetDeviceCommandDurationLimitEntriesProperty",
+    "ea": "0x140035128",
+    "function_file": "functions/140035128_ClasspSetDeviceCommandDurationLimitEntriesProperty.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspSetDeviceCommandDurationLimitEntriesProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 646,
+    "size": 1587,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ClasspQueryDeviceCommandDurationLimitEntriesProperty",
+    "ea": "0x140033924",
+    "function_file": "functions/140033924_ClasspQueryDeviceCommandDurationLimitEntriesProperty.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspQueryDeviceCommandDurationLimitEntriesProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, __int64)",
+    "rank_score": 641,
+    "size": 1128,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "ClasspWriteCacheProperty",
+    "ea": "0x140036640",
+    "function_file": "functions/140036640_ClasspWriteCacheProperty.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClasspWriteCacheProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, PSCSI_REQUEST_BLOCK Srb)",
+    "rank_score": 641,
+    "size": 1312,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 5,
+    "demangled": "ClassSendSrbAsynchronous",
+    "ea": "0x140012a00",
+    "function_file": "functions/140012a00_ClassSendSrbAsynchronous.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!MmBuildMdlForNonPagedPool"
+    ],
+    "matched_strings": [],
+    "name": "ClassSendSrbAsynchronous",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PSCSI_REQUEST_BLOCK Srb, PIRP Irp, PVOID BufferAddress, ULONG BufferLength, BOOLEAN WriteToDevice)",
+    "rank_score": 640,
+    "size": 1041,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspGetCopyOffloadMaxDuration",
+    "ea": "0x140019a4c",
+    "function_file": "functions/140019a4c_ClasspGetCopyOffloadMaxDuration.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DISK",
+      "CopyOffloadMaxTargetDuration"
+    ],
+    "name": "ClasspGetCopyOffloadMaxDuration",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 638,
+    "size": 367,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "ClasspQueryDeviceCommandDurationLimitStatusProperty",
+    "ea": "0x1400340b4",
+    "function_file": "functions/1400340b4_ClasspQueryDeviceCommandDurationLimitStatusProperty.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspQueryDeviceCommandDurationLimitStatusProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 638,
+    "size": 1005,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ClasspQueryDeviceCommandDurationLimitMappingProperty",
+    "ea": "0x140033d94",
+    "function_file": "functions/140033d94_ClasspQueryDeviceCommandDurationLimitMappingProperty.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspQueryDeviceCommandDurationLimitMappingProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 636,
+    "size": 794,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ClasspReceivePopulateTokenInformation",
+    "ea": "0x1400206f8",
+    "function_file": "functions/1400206f8_ClasspReceivePopulateTokenInformation.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoSetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspReceivePopulateTokenInformation",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 636,
+    "size": 862,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ClasspSetDeviceCommandDurationLimitControlProperty",
+    "ea": "0x140034e08",
+    "function_file": "functions/140034e08_ClasspSetDeviceCommandDurationLimitControlProperty.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspSetDeviceCommandDurationLimitControlProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 635,
+    "size": 793,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ClasspSetDeviceCommandDurationLimitMappingProperty",
+    "ea": "0x140035764",
+    "function_file": "functions/140035764_ClasspSetDeviceCommandDurationLimitMappingProperty.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspSetDeviceCommandDurationLimitMappingProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 634,
+    "size": 766,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceTrimProperty",
+    "ea": "0x140013000",
+    "function_file": "functions/140013000_ClasspDeviceTrimProperty.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClasspDeviceTrimProperty",
+    "prototype": "NTSTATUS __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 630,
+    "size": 568,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "ClasspCreateClose",
+    "ea": "0x14005d180",
+    "function_file": "functions/14005d180_ClasspCreateClose.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspCreateClose",
+    "prototype": "",
+    "rank_score": 629,
+    "size": 1088,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ClassShutdownFlush",
+    "ea": "0x1400171d0",
+    "function_file": "functions/1400171d0_ClassShutdownFlush.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "ClassShutdownFlush",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 628,
+    "size": 450,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClasspInitializeIdleTimer",
+    "ea": "0x14001f978",
+    "function_file": "functions/14001f978_ClasspInitializeIdleTimer.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeDpc",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeInitializeTimer"
+    ],
+    "matched_strings": [],
+    "name": "ClasspInitializeIdleTimer",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 628,
+    "size": 471,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ClassMpdevPowerDispatch",
+    "ea": "0x14003ab10",
+    "function_file": "functions/14003ab10_ClassMpdevPowerDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoCallDriver",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClassMpdevPowerDispatch",
+    "prototype": "",
+    "rank_score": 623,
+    "size": 171,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspWriteUpperLevelIOFailureEvent",
+    "ea": "0x140006300",
+    "function_file": "functions/140006300_ClasspWriteUpperLevelIOFailureEvent.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetGenericIrpExtension",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IoGetPagingIoPriority"
+    ],
+    "matched_strings": [],
+    "name": "ClasspWriteUpperLevelIOFailureEvent",
+    "prototype": "",
+    "rank_score": 621,
+    "size": 963,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "ClassSendNotification",
+    "ea": "0x140019020",
+    "function_file": "functions/140019020_ClassSendNotification.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoReportTargetDeviceChangeAsynchronous"
+    ],
+    "matched_strings": [],
+    "name": "ClassSendNotification",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, const GUID *Guid, ULONG ExtraDataSize, PVOID ExtraData)",
+    "rank_score": 619,
+    "size": 265,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ClasspDeviceLockFailurePowerIrpCompletion",
+    "ea": "0x140029040",
+    "function_file": "functions/140029040_ClasspDeviceLockFailurePowerIrpCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!PoSetPowerState",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspDeviceLockFailurePowerIrpCompletion",
+    "prototype": "",
+    "rank_score": 618,
+    "size": 394,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClassTestUnitReadyWithTimeout",
+    "ea": "0x1400239bc",
+    "function_file": "functions/1400239bc_ClassTestUnitReadyWithTimeout.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise"
+    ],
+    "matched_strings": [],
+    "name": "ClassTestUnitReadyWithTimeout",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PSCSI_REQUEST_BLOCK Srb)",
+    "rank_score": 617,
+    "size": 511,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ClasspProcessZoneCommandWorker",
+    "ea": "0x140033050",
+    "function_file": "functions/140033050_ClasspProcessZoneCommandWorker.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "ClasspProcessZoneCommandWorker",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 616,
+    "size": 185,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "ClasspBuildDeviceMdl",
+    "ea": "0x1400017c0",
+    "function_file": "functions/1400017c0_ClasspBuildDeviceMdl.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmProbeAndLockPages"
+    ],
+    "matched_strings": [],
+    "name": "ClasspBuildDeviceMdl",
+    "prototype": "struct _MDL *__fastcall(void *, ULONG)",
+    "rank_score": 609,
+    "size": 215,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspGetDegradedIoThresholdTime",
+    "ea": "0x140018dfc",
+    "function_file": "functions/140018dfc_ClasspGetDegradedIoThresholdTime.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DISK"
+    ],
+    "name": "ClasspGetDegradedIoThresholdTime",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 598,
+    "size": 358,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspGetMaximumTokenListIdentifier",
+    "ea": "0x140030fdc",
+    "function_file": "functions/140030fdc_ClasspGetMaximumTokenListIdentifier.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DISK"
+    ],
+    "name": "ClasspGetMaximumTokenListIdentifier",
+    "prototype": "__int64 __fastcall(__int64, __int64, _DWORD *)",
+    "rank_score": 598,
+    "size": 358,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspMpdevGetDeviceList",
+    "ea": "0x14005c82c",
+    "function_file": "functions/14005c82c_ClasspMpdevGetDeviceList.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Control\\MPDEV"
+    ],
+    "name": "ClasspMpdevGetDeviceList",
+    "prototype": "",
+    "rank_score": 594,
+    "size": 197,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClassGetServiceParameter",
+    "ea": "0x14005be14",
+    "function_file": "functions/14005be14_ClassGetServiceParameter.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "ClassGetServiceParameter",
+    "prototype": "",
+    "rank_score": 565,
+    "size": 210,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 58,
+    "demangled": "ClassCompleteRequest",
+    "ea": "0x140005190",
+    "function_file": "functions/140005190_ClassCompleteRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "ClassCompleteRequest",
+    "prototype": "void __stdcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, CCHAR PriorityBoost)",
+    "rank_score": 460,
+    "size": 967,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "ClassMpdevPnPDispatch",
+    "ea": "0x14003a790",
+    "function_file": "functions/14003a790_ClassMpdevPnPDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "ClassMpdevPnPDispatch",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 452,
+    "size": 888,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "ClassDeviceProcessOffloadRead",
+    "ea": "0x140056294",
+    "function_file": "functions/140056294_ClassDeviceProcessOffloadRead.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClassDeviceProcessOffloadRead",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 451,
+    "size": 969,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "ClassDeviceProcessOffloadWrite",
+    "ea": "0x140056664",
+    "function_file": "functions/140056664_ClassDeviceProcessOffloadWrite.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClassDeviceProcessOffloadWrite",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 450,
+    "size": 887,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "ClasspPrepareMcnIrp",
+    "ea": "0x14000f630",
+    "function_file": "functions/14000f630_ClasspPrepareMcnIrp.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!IoReuseIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspPrepareMcnIrp",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 441,
+    "size": 1695,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "ClasspInternalSetMediaChangeState",
+    "ea": "0x140016ea0",
+    "function_file": "functions/140016ea0_ClasspInternalSetMediaChangeState.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "ClasspInternalSetMediaChangeState",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 437,
+    "size": 125,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ClasspProcessResetWritePointer",
+    "ea": "0x140032d74",
+    "function_file": "functions/140032d74_ClasspProcessResetWritePointer.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise"
+    ],
+    "matched_strings": [],
+    "name": "ClasspProcessResetWritePointer",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 433,
+    "size": 415,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "ClasspQueryCommandDurationLimitModePage",
+    "ea": "0x140033110",
+    "function_file": "functions/140033110_ClasspQueryCommandDurationLimitModePage.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ClasspQueryCommandDurationLimitModePage",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT, _BYTE *)",
+    "rank_score": 433,
+    "size": 1639,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceLBProvisioningProperty",
+    "ea": "0x14000cab0",
+    "function_file": "functions/14000cab0_ClasspDeviceLBProvisioningProperty.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClasspDeviceLBProvisioningProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, __int64)",
+    "rank_score": 431,
+    "size": 675,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ClasspSetCommandDurationLimitModePage",
+    "ea": "0x140034950",
+    "function_file": "functions/140034950_ClasspSetCommandDurationLimitModePage.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ClasspSetCommandDurationLimitModePage",
+    "prototype": "",
+    "rank_score": 428,
+    "size": 1201,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "TransferPacketRetryTimerDpc",
+    "ea": "0x140004300",
+    "function_file": "functions/140004300_TransferPacketRetryTimerDpc.md",
+    "matched_imports": [
+      "ntoskrnl!IoClearActivityIdThread",
+      "ntoskrnl!IoPropagateActivityIdToThread"
+    ],
+    "matched_strings": [],
+    "name": "TransferPacketRetryTimerDpc",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 428,
+    "size": 1607,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ClassDispatchUnimplemented",
+    "ea": "0x140028e70",
+    "function_file": "functions/140028e70_ClassDispatchUnimplemented.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClassDispatchUnimplemented",
+    "prototype": "",
+    "rank_score": 421,
+    "size": 72,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ClasspQueryCommandDurationLimitSupportAndModePage",
+    "ea": "0x140033780",
+    "function_file": "functions/140033780_ClasspQueryCommandDurationLimitSupportAndModePage.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ClasspQueryCommandDurationLimitSupportAndModePage",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 420,
+    "size": 414,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ClassEnableMediaChangeDetection",
+    "ea": "0x140054010",
+    "function_file": "functions/140054010_ClassEnableMediaChangeDetection.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClassEnableMediaChangeDetection",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 419,
+    "size": 329,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "ClasspSetMediaChangeStateEx",
+    "ea": "0x140016d50",
+    "function_file": "functions/140016d50_ClasspSetMediaChangeStateEx.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClasspSetMediaChangeStateEx",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 418,
+    "size": 328,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ComputePageWriteHashes",
+    "ea": "0x1400188b4",
+    "function_file": "functions/1400188b4_ComputePageWriteHashes.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware"
+    ],
+    "matched_strings": [],
+    "name": "ComputePageWriteHashes",
+    "prototype": "void __fastcall(__int64, unsigned __int64, int, __int64, char, __int64)",
+    "rank_score": 418,
+    "size": 563,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x14006509c",
+    "function_file": "functions/14006509c_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "ClassFreeOrReuseSrb",
+    "ea": "0x140017fa0",
+    "function_file": "functions/140017fa0_ClassFreeOrReuseSrb.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "ClassFreeOrReuseSrb",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 112,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClassSetMediaChangeState",
+    "ea": "0x140016c00",
+    "function_file": "functions/140016c00_ClassSetMediaChangeState.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClassSetMediaChangeState",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, MEDIA_CHANGE_DETECTION_STATE State, BOOLEAN Wait)",
+    "rank_score": 415,
+    "size": 320,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClassDisableMediaChangeDetection",
+    "ea": "0x140054350",
+    "function_file": "functions/140054350_ClassDisableMediaChangeDetection.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClassDisableMediaChangeDetection",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 414,
+    "size": 138,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClassHwFirmwareDownloadComplete",
+    "ea": "0x14002b450",
+    "function_file": "functions/14002b450_ClassHwFirmwareDownloadComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClassHwFirmwareDownloadComplete",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, PVOID P)",
+    "rank_score": 414,
+    "size": 130,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClassInvalidateBusRelations",
+    "ea": "0x140057760",
+    "function_file": "functions/140057760_ClassInvalidateBusRelations.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDriverObjectExtension",
+      "ntoskrnl!IoInvalidateDeviceRelations"
+    ],
+    "matched_strings": [],
+    "name": "ClassInvalidateBusRelations",
+    "prototype": "void __stdcall(PDEVICE_OBJECT Fdo)",
+    "rank_score": 414,
+    "size": 180,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClassReleaseQueueCompletion",
+    "ea": "0x140013530",
+    "function_file": "functions/140013530_ClassReleaseQueueCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClassReleaseQueueCompletion",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 129,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClasspStartNextPowerIrpCompletion",
+    "ea": "0x140018f70",
+    "function_file": "functions/140018f70_ClasspStartNextPowerIrpCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspStartNextPowerIrpCompletion",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 157,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ClasspMpdevFindSupportedDevice",
+    "ea": "0x14005c7a0",
+    "function_file": "functions/14005c7a0_ClasspMpdevFindSupportedDevice.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMpdevFindSupportedDevice",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2)",
+    "rank_score": 413,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "ClassGetDescriptor",
+    "ea": "0x14005e0a0",
+    "function_file": "functions/14005e0a0_ClassGetDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ClassGetDescriptor",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PSTORAGE_PROPERTY_ID PropertyId, PVOID *Descriptor)",
+    "rank_score": 412,
+    "size": 563,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DllInitialize",
+    "ea": "0x140026530",
+    "function_file": "functions/140026530_DllInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!RtlGetNtProductType"
+    ],
+    "matched_strings": [],
+    "name": "DllInitialize",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 75,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14005ad00",
+    "function_file": "functions/14005ad00_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ClasspCreateDeviceGuid",
+    "ea": "0x14005923c",
+    "function_file": "functions/14005923c_ClasspCreateDeviceGuid.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExUuidCreate"
+    ],
+    "matched_strings": [],
+    "name": "ClasspCreateDeviceGuid",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 411,
+    "size": 452,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ClasspInitRegistryWatch",
+    "ea": "0x1400315c4",
+    "function_file": "functions/1400315c4_ClasspInitRegistryWatch.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "ClasspInitRegistryWatch",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 105,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ClassReadCapacity16",
+    "ea": "0x140017010",
+    "function_file": "functions/140017010_ClassReadCapacity16.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ClassReadCapacity16",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 410,
+    "size": 436,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "ClasspLogSystemEventWithDeviceNumber",
+    "ea": "0x1400317e0",
+    "function_file": "functions/1400317e0_ClasspLogSystemEventWithDeviceNumber.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "ClasspLogSystemEventWithDeviceNumber",
+    "prototype": "",
+    "rank_score": 409,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ClasspCleanupOffloadReadContext",
+    "ea": "0x140023c50",
+    "function_file": "functions/140023c50_ClasspCleanupOffloadReadContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspCleanupOffloadReadContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 404,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ClasspCleanupOffloadWriteContext",
+    "ea": "0x140023cac",
+    "function_file": "functions/140023cac_ClasspCleanupOffloadWriteContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspCleanupOffloadWriteContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 404,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ClasspDuidGetDriveLayout",
+    "ea": "0x140030ae4",
+    "function_file": "functions/140030ae4_ClasspDuidGetDriveLayout.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoReadPartitionTableEx"
+    ],
+    "matched_strings": [],
+    "name": "ClasspDuidGetDriveLayout",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 403,
+    "size": 251,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DbgGetAdditionalSenseCodeQualifierStr",
+    "ea": "0x140038784",
+    "function_file": "functions/140038784_DbgGetAdditionalSenseCodeQualifierStr.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SCSI_SENSEQ_BECOMING_READY",
+      "SCSI_SENSEQ_INIT_COMMAND_REQUIRED",
+      "SCSI_SENSEQ_LONG_WRITE_IN_PROGRESS",
+      "SCSI_SENSEQ_INCOMPATIBLE_MEDIA_INSTALLED",
+      "SCSI_SENSEQ_INCOMPATIBLE_FORMAT",
+      "SCSI_SENSEQ_CLEANING_CARTRIDGE_INSTALLED",
+      "SCSI_SENSEQ_WRITE_PROTECT_ENABLE",
+      "SCSI_SENSEQ_WRITE_PROTECT_DISABLE",
+      "SCSI_SENSEQ_READ_OF_SCRAMBLED_SECTOR_WITHOUT_AUTHENTICATION"
+    ],
+    "name": "DbgGetAdditionalSenseCodeQualifierStr",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 390,
+    "size": 1016,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DbgGetSrbStatusStr",
+    "ea": "0x140039aa0",
+    "function_file": "functions/140039aa0_DbgGetSrbStatusStr.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SRB_STATUS_INVALID_PATH_ID",
+      "SRB_STATUS_INVALID_PATH_ID|SRB_STATUS_QUEUE_FROZEN",
+      "SRB_STATUS_INVALID_PATH_ID|SRB_STATUS_AUTOSENSE_VALID",
+      "SRB_STATUS_INVALID_PATH_ID|SRB_STATUS_QUEUE_FROZEN|SRB_STATUS_AUTOSENSE_VALID",
+      "SRB_STATUS_COMMAND_TIMEOUT",
+      "SRB_STATUS_COMMAND_TIMEOUT|SRB_STATUS_QUEUE_FROZEN",
+      "SRB_STATUS_COMMAND_TIMEOUT|SRB_STATUS_AUTOSENSE_VALID",
+      "SRB_STATUS_COMMAND_TIMEOUT|SRB_STATUS_QUEUE_FROZEN|SRB_STATUS_AUTOSENSE_VALID"
+    ],
+    "name": "DbgGetSrbStatusStr",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 349,
+    "size": 2085,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "ClasspReceivePopulateTokenInformationTransferPacketDone",
+    "ea": "0x140025340",
+    "function_file": "functions/140025340_ClasspReceivePopulateTokenInformationTransferPacketDone.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "Target truncated read. "
+    ],
+    "name": "ClasspReceivePopulateTokenInformationTransferPacketDone",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 285,
+    "size": 1667,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceManageBypassIO",
+    "ea": "0x14002f308",
+    "function_file": "functions/14002f308_ClasspDeviceManageBypassIO.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [
+      "Access denied, operation not supported from user mode"
+    ],
+    "name": "ClasspDeviceManageBypassIO",
+    "prototype": "NTSTATUS __fastcall(struct _DEVICE_OBJECT *, IRP *)",
+    "rank_score": 272,
+    "size": 890,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspInitializeHotplugInfo",
+    "ea": "0x1400597c0",
+    "function_file": "functions/1400597c0_ClasspInitializeHotplugInfo.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDeviceProperty"
+    ],
+    "matched_strings": [
+      "WriteCacheEnableOverride"
+    ],
+    "name": "ClasspInitializeHotplugInfo",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 265,
+    "size": 297,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "ClasspInterpretGesnData",
+    "ea": "0x140021c78",
+    "function_file": "functions/140021c78_ClasspInterpretGesnData.md",
+    "matched_imports": [
+      "ntoskrnl!KeQueryTimeIncrement"
+    ],
+    "matched_strings": [],
+    "name": "ClasspInterpretGesnData",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, unsigned __int8 *, char *)",
+    "rank_score": 251,
+    "size": 2078,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 78,
+    "demangled": "ClassReleaseRemoveLock",
+    "ea": "0x1400134a0",
+    "function_file": "functions/1400134a0_ClassReleaseRemoveLock.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware"
+    ],
+    "matched_strings": [],
+    "name": "ClassReleaseRemoveLock",
+    "prototype": "void __stdcall(PDEVICE_OBJECT DeviceObject, PVOID Tag)",
+    "rank_score": 246,
+    "size": 74,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "ClasspServiceWriteUsingTokenTransferRequest",
+    "ea": "0x14005a300",
+    "function_file": "functions/14005a300_ClasspServiceWriteUsingTokenTransferRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "ClasspServiceWriteUsingTokenTransferRequest",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 237,
+    "size": 840,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 24,
+    "demangled": "ClassAcquireRemoveLockEx",
+    "ea": "0x1400157d0",
+    "function_file": "functions/1400157d0_ClassAcquireRemoveLockEx.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware"
+    ],
+    "matched_strings": [],
+    "name": "ClassAcquireRemoveLockEx",
+    "prototype": "ULONG __stdcall(PDEVICE_OBJECT DeviceObject, PVOID Tag, PCSTR File, ULONG Line)",
+    "rank_score": 236,
+    "size": 124,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ClassBuildRequest",
+    "ea": "0x140037db0",
+    "function_file": "functions/140037db0_ClassBuildRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "ClassBuildRequest",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 232,
+    "size": 76,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ClassDeleteSrbLookasideList",
+    "ea": "0x14005c540",
+    "function_file": "functions/14005c540_ClassDeleteSrbLookasideList.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "ClassDeleteSrbLookasideList",
+    "prototype": "void __stdcall(PCOMMON_DEVICE_EXTENSION CommonExtension)",
+    "rank_score": 232,
+    "size": 96,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspWriteIODispatchEvent",
+    "ea": "0x140005d30",
+    "function_file": "functions/140005d30_ClasspWriteIODispatchEvent.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetGenericIrpExtension"
+    ],
+    "matched_strings": [],
+    "name": "ClasspWriteIODispatchEvent",
+    "prototype": "",
+    "rank_score": 232,
+    "size": 1185,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ClassInitializeSrbLookasideList",
+    "ea": "0x14005c5b0",
+    "function_file": "functions/14005c5b0_ClassInitializeSrbLookasideList.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "ClassInitializeSrbLookasideList",
+    "prototype": "void __stdcall(PCOMMON_DEVICE_EXTENSION CommonExtension, ULONG NumberElements)",
+    "rank_score": 231,
+    "size": 105,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceCopyOffloadProperty",
+    "ea": "0x14005f43c",
+    "function_file": "functions/14005f43c_ClasspDeviceCopyOffloadProperty.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "ClasspDeviceCopyOffloadProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 231,
+    "size": 583,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceRemoveElementAndTruncate",
+    "ea": "0x14002f9fc",
+    "function_file": "functions/14002f9fc_ClasspDeviceRemoveElementAndTruncate.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ClasspDeviceRemoveElementAndTruncate",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, struct _SCSI_REQUEST_BLOCK *P)",
+    "rank_score": 231,
+    "size": 787,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "ClasspCompleteOffloadRequest",
+    "ea": "0x140023e3c",
+    "function_file": "functions/140023e3c_ClasspCompleteOffloadRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspCompleteOffloadRequest",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 230,
+    "size": 223,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ClasspMcnControl",
+    "ea": "0x1400553f4",
+    "function_file": "functions/1400553f4_ClasspMcnControl.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMcnControl",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, PIRP Irp, PVOID P)",
+    "rank_score": 228,
+    "size": 197,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClasspMediaChangeRegistryCallBack",
+    "ea": "0x140055850",
+    "function_file": "functions/140055850_ClasspMediaChangeRegistryCallBack.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMediaChangeRegistryCallBack",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 401,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 37,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x1400062a0",
+    "function_file": "functions/1400062a0_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x14005b0f0",
+    "function_file": "functions/14005b0f0_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ClassCheckVerifyComplete",
+    "ea": "0x140012e40",
+    "function_file": "functions/140012e40_ClassCheckVerifyComplete.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClassCheckVerifyComplete",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 225,
+    "size": 197,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ClassAddDevice",
+    "ea": "0x140055a60",
+    "function_file": "functions/140055a60_ClassAddDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDriverObjectExtension"
+    ],
+    "matched_strings": [],
+    "name": "ClassAddDevice",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT TargetDevice)",
+    "rank_score": 224,
+    "size": 122,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClassMpdevDeviceControl",
+    "ea": "0x14003a630",
+    "function_file": "functions/14003a630_ClassMpdevDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "ClassMpdevDeviceControl",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 198,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClassMpdevInternalDeviceControl",
+    "ea": "0x14003a700",
+    "function_file": "functions/14003a700_ClassMpdevInternalDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "ClassMpdevInternalDeviceControl",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 124,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "ClasspWriteIOResultEvent",
+    "ea": "0x140005560",
+    "function_file": "functions/140005560_ClasspWriteIOResultEvent.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspWriteIOResultEvent",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 1724,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 20,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, ULONG, __int64)",
+    "rank_score": 221,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "FREE_PORT_ALLOCATED_SENSE_BUFFER_EX",
+    "ea": "0x14001f450",
+    "function_file": "functions/14001f450_FREE_PORT_ALLOCATED_SENSE_BUFFER_EX.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "FREE_PORT_ALLOCATED_SENSE_BUFFER_EX",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 220,
+    "size": 477,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "ClassAcquireChildLock",
+    "ea": "0x1400559f0",
+    "function_file": "functions/1400559f0_ClassAcquireChildLock.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ClassAcquireChildLock",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 216,
+    "size": 92,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "ClassReleaseChildLock",
+    "ea": "0x140023110",
+    "function_file": "functions/140023110_ClassReleaseChildLock.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ClassReleaseChildLock",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 216,
+    "size": 54,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x1400284bc",
+    "function_file": "functions/1400284bc_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 233,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x14006515c",
+    "function_file": "functions/14006515c_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClassPnpQueryFdoRelations",
+    "ea": "0x14005792c",
+    "function_file": "functions/14005792c_ClassPnpQueryFdoRelations.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDriverObjectExtension"
+    ],
+    "matched_strings": [],
+    "name": "ClassPnpQueryFdoRelations",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 129,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspUpdateTimerNoWakeTolerance",
+    "ea": "0x140020624",
+    "function_file": "functions/140020624_ClasspUpdateTimerNoWakeTolerance.md",
+    "matched_imports": [
+      "ntoskrnl!ExSetTimer"
+    ],
+    "matched_strings": [],
+    "name": "ClasspUpdateTimerNoWakeTolerance",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 203,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "FREE_PORT_ALLOCATED_SENSE_BUFFER",
+    "ea": "0x140026640",
+    "function_file": "functions/140026640_FREE_PORT_ALLOCATED_SENSE_BUFFER.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "FREE_PORT_ALLOCATED_SENSE_BUFFER",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, PSCSI_REQUEST_BLOCK Srb)",
+    "rank_score": 214,
+    "size": 73,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "StRtlExtractMSFTIdentifier",
+    "ea": "0x14003e0c0",
+    "function_file": "functions/14003e0c0_StRtlExtractMSFTIdentifier.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "StRtlExtractMSFTIdentifier",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 214,
+    "size": 161,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x14005ac3c",
+    "function_file": "functions/14005ac3c_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 187,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "ClassGetDriverExtension",
+    "ea": "0x140022fe0",
+    "function_file": "functions/140022fe0_ClassGetDriverExtension.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDriverObjectExtension"
+    ],
+    "matched_strings": [],
+    "name": "ClassGetDriverExtension",
+    "prototype": "PCLASS_DRIVER_EXTENSION __stdcall(PDRIVER_OBJECT DriverObject)",
+    "rank_score": 212,
+    "size": 29,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ClassGetPdoId",
+    "ea": "0x1400569e4",
+    "function_file": "functions/1400569e4_ClassGetPdoId.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDriverObjectExtension"
+    ],
+    "matched_strings": [],
+    "name": "ClassGetPdoId",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 83,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ClassSignalCompletion",
+    "ea": "0x140016f30",
+    "function_file": "functions/140016f30_ClassSignalCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ClassSignalCompletion",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 211,
+    "size": 50,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ClasspWriteSenseDataEvent",
+    "ea": "0x140008024",
+    "function_file": "functions/140008024_ClasspWriteSenseDataEvent.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "ClasspWriteSenseDataEvent",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 821,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ClasspMpdevSyncCompletion",
+    "ea": "0x14003b610",
+    "function_file": "functions/14003b610_ClasspMpdevSyncCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ClasspMpdevSyncCompletion",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "ClasspDisableTimer",
+    "ea": "0x140018018",
+    "function_file": "functions/140018018_ClasspDisableTimer.md",
+    "matched_imports": [
+      "ntoskrnl!ExCancelTimer"
+    ],
+    "matched_strings": [],
+    "name": "ClasspDisableTimer",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 209,
+    "size": 211,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "ClasspCalculateTimeDifferenceIn100ns",
+    "ea": "0x140015bf0",
+    "function_file": "functions/140015bf0_ClasspCalculateTimeDifferenceIn100ns.md",
+    "matched_imports": [
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise"
+    ],
+    "matched_strings": [],
+    "name": "ClasspCalculateTimeDifferenceIn100ns",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 206,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140028954",
+    "function_file": "functions/140028954_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 334,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ClasspDeleteTimer",
+    "ea": "0x140021c08",
+    "function_file": "functions/140021c08_ClasspDeleteTimer.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteTimer"
+    ],
+    "matched_strings": [],
+    "name": "ClasspDeleteTimer",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 203,
+    "size": 104,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DbgGetAdditionalSenseCodeStr",
+    "ea": "0x140038b84",
+    "function_file": "functions/140038b84_DbgGetAdditionalSenseCodeStr.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SCSI_ADSENSE_LUN_NOT_READY",
+      "SCSI_ADSENSE_ILLEGAL_COMMAND",
+      "SCSI_ADSENSE_WRITE_PROTECT",
+      "SCSI_ADSENSE_COPY_PROTECTION_FAILURE"
+    ],
+    "name": "DbgGetAdditionalSenseCodeStr",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 179,
+    "size": 789,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DbgGetSenseCodeStr",
+    "ea": "0x140039818",
+    "function_file": "functions/140039818_DbgGetSenseCodeStr.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SCSI_SENSE_NOT_READY",
+      "SCSI_SENSE_COPY_ABORTED",
+      "SCSI_SENSE_ABORTED_COMMAND",
+      "SCSI_SENSE_MISCOMPARE"
+    ],
+    "name": "DbgGetSenseCodeStr",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 178,
+    "size": 640,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "ClasspReceiveWriteUsingTokenInformationTransferPacketDone",
+    "ea": "0x140025b80",
+    "function_file": "functions/140025b80_ClasspReceiveWriteUsingTokenInformationTransferPacketDone.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Target truncated write. "
+    ],
+    "name": "ClasspReceiveWriteUsingTokenInformationTransferPacketDone",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 75,
+    "size": 1011,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "ClassCreateClose",
+    "ea": "0x14005d0d0",
+    "function_file": "functions/14005d0d0_ClassCreateClose.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "minkernel\\storage\\classpnp\\create.c"
+    ],
+    "name": "ClassCreateClose",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 67,
+    "size": 161,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 145,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14003e430",
+    "function_file": "functions/14003e430_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 124,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x14003e470",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspBuildRequestEx",
+    "ea": "0x140038294",
+    "function_file": "functions/140038294_ClasspBuildRequestEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspBuildRequestEx",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 35,
+    "size": 1234,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "ClasspProcessOpenZone",
+    "ea": "0x140032444",
+    "function_file": "functions/140032444_ClasspProcessOpenZone.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspProcessOpenZone",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, PSCSI_REQUEST_BLOCK Srb)",
+    "rank_score": 35,
+    "size": 864,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "ClasspCompleteOffloadWrite",
+    "ea": "0x140023f24",
+    "function_file": "functions/140023f24_ClasspCompleteOffloadWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspCompleteOffloadWrite",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 32,
+    "size": 324,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "ClassInitializeMediaChangeDetection",
+    "ea": "0x1400543e0",
+    "function_file": "functions/1400543e0_ClassInitializeMediaChangeDetection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassInitializeMediaChangeDetection",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, PUCHAR EventPrefix)",
+    "rank_score": 31,
+    "size": 465,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "ClasspReceiveWriteUsingTokenInformationDone",
+    "ea": "0x1400259cc",
+    "function_file": "functions/1400259cc_ClasspReceiveWriteUsingTokenInformationDone.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspReceiveWriteUsingTokenInformationDone",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 31,
+    "size": 420,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 36,
+    "demangled": "memmove",
+    "ea": "0x14003e640",
+    "function_file": "functions/14003e640_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "ClasspCompleteOffloadRead",
+    "ea": "0x140023d08",
+    "function_file": "functions/140023d08_ClasspCompleteOffloadRead.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspCompleteOffloadRead",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 29,
+    "size": 302,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SetupReadWriteTransferPacket",
+    "ea": "0x140003910",
+    "function_file": "functions/140003910_SetupReadWriteTransferPacket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetupReadWriteTransferPacket",
+    "prototype": "",
+    "rank_score": 29,
+    "size": 1890,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 82,
+    "demangled": "memset",
+    "ea": "0x14003e940",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "ClassForwardIrpSynchronous",
+    "ea": "0x1400175e0",
+    "function_file": "functions/1400175e0_ClassForwardIrpSynchronous.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassForwardIrpSynchronous",
+    "prototype": "NTSTATUS __stdcall(PCOMMON_DEVICE_EXTENSION CommonExtension, PIRP Irp)",
+    "rank_score": 27,
+    "size": 63,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspConvertReadEntryToCommandInfo",
+    "ea": "0x14002cb0c",
+    "function_file": "functions/14002cb0c_ClasspConvertReadEntryToCommandInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspConvertReadEntryToCommandInfo",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 457,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ClasspDeviceManageBypassIOCompletion",
+    "ea": "0x14002f690",
+    "function_file": "functions/14002f690_ClasspDeviceManageBypassIOCompletion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspDeviceManageBypassIOCompletion",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PVOID Tag)",
+    "rank_score": 27,
+    "size": 347,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x1400285ac",
+    "function_file": "functions/1400285ac_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 274,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ClassRemoveChild",
+    "ea": "0x14002314c",
+    "function_file": "functions/14002314c_ClassRemoveChild.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassRemoveChild",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 26,
+    "size": 146,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspFillCommandDurationLimitWriteEntriesProperty",
+    "ea": "0x140030d90",
+    "function_file": "functions/140030d90_ClasspFillCommandDurationLimitWriteEntriesProperty.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspFillCommandDurationLimitWriteEntriesProperty",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 26,
+    "size": 310,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ClasspQueryDiskByPassIOPropertyCompletion",
+    "ea": "0x140034690",
+    "function_file": "functions/140034690_ClasspQueryDiskByPassIOPropertyCompletion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspQueryDiskByPassIOPropertyCompletion",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PVOID Tag)",
+    "rank_score": 26,
+    "size": 292,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 55,
+    "demangled": "WPP_SF_",
+    "ea": "0x14001feac",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 45,
+    "demangled": "WPP_SF_d",
+    "ea": "0x14001fbf4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 86,
+    "demangled": "WPP_SF_q",
+    "ea": "0x14001fc38",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 46,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x14002001c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 26,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClassMarkChildrenMissing",
+    "ea": "0x140057890",
+    "function_file": "functions/140057890_ClassMarkChildrenMissing.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassMarkChildrenMissing",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION Fdo)",
+    "rank_score": 25,
+    "size": 69,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 24,
+    "demangled": "InitializeStorageRequestBlock",
+    "ea": "0x14000f3e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "InitializeStorageRequestBlock",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 25,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14003e27c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspSetupPopulateTokenTransferPacket",
+    "ea": "0x14005b2a8",
+    "function_file": "functions/14005b2a8_ClasspSetupPopulateTokenTransferPacket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspSetupPopulateTokenTransferPacket",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 1168,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspSetupReceivePopulateTokenInformationTransferPacket",
+    "ea": "0x140020a5c",
+    "function_file": "functions/140020a5c_ClasspSetupReceivePopulateTokenInformationTransferPacket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspSetupReceivePopulateTokenInformationTransferPacket",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 1168,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspSetupReceiveWriteUsingTokenInformationTransferPacket",
+    "ea": "0x140021274",
+    "function_file": "functions/140021274_ClasspSetupReceiveWriteUsingTokenInformationTransferPacket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspSetupReceiveWriteUsingTokenInformationTransferPacket",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 1168,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspSetupWriteUsingTokenTransferPacket",
+    "ea": "0x14002971c",
+    "function_file": "functions/14002971c_ClasspSetupWriteUsingTokenTransferPacket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspSetupWriteUsingTokenTransferPacket",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 1168,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClasspTelemetryLogRemoveElementAndTruncateComplete",
+    "ea": "0x1400360d4",
+    "function_file": "functions/1400360d4_ClasspTelemetryLogRemoveElementAndTruncateComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspTelemetryLogRemoveElementAndTruncateComplete",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 1138,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ClasspGetCommandDurationLimitPolicy",
+    "ea": "0x140030f14",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspGetCommandDurationLimitPolicy",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 83,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ClasspGetCommandDurationLimitT2Policy",
+    "ea": "0x140030f70",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspGetCommandDurationLimitT2Policy",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClasspTelemetryLogGetPhysicalElementStatusComplete",
+    "ea": "0x140035ce4",
+    "function_file": "functions/140035ce4_ClasspTelemetryLogGetPhysicalElementStatusComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspTelemetryLogGetPhysicalElementStatusComplete",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 22,
+    "size": 999,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ClasspWriteScsiSrbErrorResultEvent",
+    "ea": "0x1400066cc",
+    "function_file": "functions/1400066cc_ClasspWriteScsiSrbErrorResultEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteScsiSrbErrorResultEvent",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 2177,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ClassGetFsContext",
+    "ea": "0x14005e520",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassGetFsContext",
+    "prototype": "PFILE_OBJECT_EXTENSION __stdcall(PCOMMON_DEVICE_EXTENSION CommonExtension, PFILE_OBJECT FileObject)",
+    "rank_score": 21,
+    "size": 22,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "ClasspWriteUsingTokenTransferPacketDone",
+    "ea": "0x1400262d0",
+    "function_file": "functions/1400262d0_ClasspWriteUsingTokenTransferPacketDone.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteUsingTokenTransferPacketDone",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 21,
+    "size": 504,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 20,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x140022668",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 21,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ClassScanForSpecial",
+    "ea": "0x14005f800",
+    "function_file": "functions/14005f800_ClassScanForSpecial.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassScanForSpecial",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, CLASSPNP_SCAN_FOR_SPECIAL_INFO DeviceList[], PCLASS_SCAN_FOR_SPECIAL_HANDLER Function)",
+    "rank_score": 20,
+    "size": 417,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "ClasspInitializeCommandDurationLimit",
+    "ea": "0x140031634",
+    "function_file": "functions/140031634_ClasspInitializeCommandDurationLimit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspInitializeCommandDurationLimit",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 20,
+    "size": 152,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "McTemplateK0qpd_EtwWriteTransfer",
+    "ea": "0x14002249c",
+    "function_file": "functions/14002249c_McTemplateK0qpd_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpd_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 112,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ClasspGetTokenOperationCommandBufferLength",
+    "ea": "0x140031308",
+    "function_file": "functions/140031308_ClasspGetTokenOperationCommandBufferLength.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspGetTokenOperationCommandBufferLength",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 469,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ClasspDeviceIssueReportZonesCommand",
+    "ea": "0x14002ee64",
+    "function_file": "functions/14002ee64_ClasspDeviceIssueReportZonesCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspDeviceIssueReportZonesCommand",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64, char, char, __int64, PVOID BufferAddress, ULONG BufferLength)",
+    "rank_score": 18,
+    "size": 624,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClassDetermineTokenOperationCommandSupport",
+    "ea": "0x1400561c0",
+    "function_file": "functions/1400561c0_ClassDetermineTokenOperationCommandSupport.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassDetermineTokenOperationCommandSupport",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 17,
+    "size": 204,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceIssueResetWritePointerCommand",
+    "ea": "0x14002f0dc",
+    "function_file": "functions/14002f0dc_ClasspDeviceIssueResetWritePointerCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspDeviceIssueResetWritePointerCommand",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 547,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspInitializeCommandDurationLimitPerCommand",
+    "ea": "0x1400316d4",
+    "function_file": "functions/1400316d4_ClasspInitializeCommandDurationLimitPerCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspInitializeCommandDurationLimitPerCommand",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 217,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "ClasspIsCommandDurationLimitSupported",
+    "ea": "0x1400317b4",
+    "function_file": "functions/1400317b4_ClasspIsCommandDurationLimitSupported.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspIsCommandDurationLimitSupported",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 17,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "GET_FDO_EXTENSON_SENSE_DATA_LENGTH",
+    "ea": "0x140012e18",
+    "function_file": "functions/140012e18_GET_FDO_EXTENSON_SENSE_DATA_LENGTH.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GET_FDO_EXTENSON_SENSE_DATA_LENGTH",
+    "prototype": "UCHAR __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 17,
+    "size": 30,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "ClassCheckMediaState",
+    "ea": "0x14000ffd0",
+    "function_file": "functions/14000ffd0_ClassCheckMediaState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassCheckMediaState",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 16,
+    "size": 97,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ClassWmiCompleteRequest",
+    "ea": "0x140012f10",
+    "function_file": "functions/140012f10_ClassWmiCompleteRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassWmiCompleteRequest",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, NTSTATUS Status, ULONG BufferUsed, CCHAR PriorityBoost)",
+    "rank_score": 16,
+    "size": 228,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspConvertCommandLimitDurationToT2Unit",
+    "ea": "0x14002c6c0",
+    "function_file": "functions/14002c6c0_ClasspConvertCommandLimitDurationToT2Unit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspConvertCommandLimitDurationToT2Unit",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 403,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceIssueReportSupportedOperationCodesCommand",
+    "ea": "0x14002ec78",
+    "function_file": "functions/14002ec78_ClasspDeviceIssueReportSupportedOperationCodesCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspDeviceIssueReportSupportedOperationCodesCommand",
+    "prototype": "__int64 __fastcall(int, int, int, int, char, int, PVOID BufferAddress)",
+    "rank_score": 16,
+    "size": 485,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClasspWritePnPResultEvent",
+    "ea": "0x1400180f4",
+    "function_file": "functions/1400180f4_ClasspWritePnPResultEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWritePnPResultEvent",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClasspZoneCommandProcessAsyncFailureEvent",
+    "ea": "0x14003c3a4",
+    "function_file": "functions/14003c3a4_ClasspZoneCommandProcessAsyncFailureEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspZoneCommandProcessAsyncFailureEvent",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 223,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 7,
+    "demangled": "InterpretSenseInfoWithoutHistory",
+    "ea": "0x140008360",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "InterpretSenseInfoWithoutHistory",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _DWORD, _QWORD, _QWORD)",
+    "rank_score": 16,
+    "size": 322,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssq_EtwWriteTransfer",
+    "ea": "0x14003d5e0",
+    "function_file": "functions/14003d5e0_McTemplateK0jqssssq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 324,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x1400282bc",
+    "function_file": "functions/1400282bc_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 381,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ClassSendEjectionNotification",
+    "ea": "0x140021ba4",
+    "function_file": "functions/140021ba4_ClassSendEjectionNotification.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassSendEjectionNotification",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 15,
+    "size": 92,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ClasspIsOffloadDataTransferCommand",
+    "ea": "0x140007680",
+    "function_file": "functions/140007680_ClasspIsOffloadDataTransferCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspIsOffloadDataTransferCommand",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 38,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ClasspPopulateTokenTransferPacketDone",
+    "ea": "0x1400252a0",
+    "function_file": "functions/1400252a0_ClasspPopulateTokenTransferPacketDone.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspPopulateTokenTransferPacketDone",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 15,
+    "size": 146,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0qpqd_EtwWriteTransfer",
+    "ea": "0x140026804",
+    "function_file": "functions/140026804_McTemplateK0qpqd_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpqd_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 145,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "WPP_SF_qqD",
+    "ea": "0x140027870",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qqD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 15,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x140028440",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 118,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClassMarkChildMissing",
+    "ea": "0x140057820",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassMarkChildMissing",
+    "prototype": "BOOLEAN __stdcall(PPHYSICAL_DEVICE_EXTENSION PdoExtension, BOOLEAN AcquireChildLock)",
+    "rank_score": 14,
+    "size": 92,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "ClasspConvertCommandLimitDurationTo100ns",
+    "ea": "0x14002c674",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspConvertCommandLimitDurationTo100ns",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 14,
+    "size": 66,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "ClasspGetCommandDurationLimitModePage",
+    "ea": "0x140030ecc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspGetCommandDurationLimitModePage",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 14,
+    "size": 65,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "ClasspGetDeviceIdData",
+    "ea": "0x140016ae0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspGetDeviceIdData",
+    "prototype": "_DWORD *__fastcall(__int64, _QWORD *, _QWORD *, _QWORD *, _QWORD *, _QWORD *)",
+    "rank_score": 14,
+    "size": 272,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClasspMiniportGetHybridInfoIoctlCompletion",
+    "ea": "0x14003e020",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspMiniportGetHybridInfoIoctlCompletion",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 142,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "ClasspQosSupportedCommand",
+    "ea": "0x140020070",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspQosSupportedCommand",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 14,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "PORT_ALLOCATED_SENSE",
+    "ea": "0x140016320",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PORT_ALLOCATED_SENSE",
+    "prototype": "BOOLEAN __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, PSCSI_REQUEST_BLOCK Srb)",
+    "rank_score": 14,
+    "size": 35,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "_tlgKeywordOn",
+    "ea": "0x1400010f8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgKeywordOn",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 14,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x14005af50",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClassAddChild",
+    "ea": "0x1400228d4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassAddChild",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 13,
+    "size": 62,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ClassResetMediaChangeTimer",
+    "ea": "0x140015210",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassResetMediaChangeTimer",
+    "prototype": "void __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 13,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ClasspGetDurationLimitCommandInfo",
+    "ea": "0x140030fac",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspGetDurationLimitCommandInfo",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 39,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140065044",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ComputePageHash",
+    "ea": "0x1400264d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputePageHash",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 12,
+    "size": 79,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140065010",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 12,
+    "size": 44,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WPP_SF_dLL",
+    "ea": "0x140026e04",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_dLL",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 97,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x14005b050",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ClassInitializeTestUnitPolling",
+    "ea": "0x140021a00",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClassInitializeTestUnitPolling",
+    "prototype": "NTSTATUS __stdcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, BOOLEAN AllowDriveToSleep)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceWriteZeros",
+    "ea": "0x140030604",
+    "function_file": "functions/140030604_ClasspDeviceWriteZeros.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspDeviceWriteZeros",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64, __int64, int, PVOID BufferAddress, ULONG BufferLength)",
+    "rank_score": 11,
+    "size": 1043,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ClasspMpdevDefaultCompletion",
+    "ea": "0x14003ae00",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspMpdevDefaultCompletion",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 33,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140065090",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 11,
+    "size": 3,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "WPP_SF_qDD",
+    "ea": "0x140026f28",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qDD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _DWORD)",
+    "rank_score": 11,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ClasspScanForClassHacks",
+    "ea": "0x140059990",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspScanForClassHacks",
+    "prototype": "void __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, ULONG_PTR Data)",
+    "rank_score": 10,
+    "size": 18,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "ClasspWritePowerFailureEvent",
+    "ea": "0x1400181ec",
+    "function_file": "functions/1400181ec_ClasspWritePowerFailureEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWritePowerFailureEvent",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 331,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "ClasspIsManagedZonedDevice",
+    "ea": "0x1400018a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspIsManagedZonedDevice",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 9,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ClasspWriteNonScsiSrbErrorResultEvent",
+    "ea": "0x14003bf7c",
+    "function_file": "functions/14003bf7c_ClasspWriteNonScsiSrbErrorResultEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteNonScsiSrbErrorResultEvent",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 337,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspWritePnPFailureEvent",
+    "ea": "0x14003c0d4",
+    "function_file": "functions/14003c0d4_ClasspWritePnPFailureEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWritePnPFailureEvent",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 412,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "McTemplateK0qdud_EtwWriteTransfer",
+    "ea": "0x140029ff4",
+    "function_file": "functions/140029ff4_McTemplateK0qdud_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qdud_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 148,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspDeviceGetErrorHistoryDirectory",
+    "ea": "0x14002ccdc",
+    "function_file": "functions/14002ccdc_ClasspDeviceGetErrorHistoryDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspDeviceGetErrorHistoryDirectory",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 8,
+    "size": 572,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClasspWriteWMIFailureEvent",
+    "ea": "0x14003c278",
+    "function_file": "functions/14003c278_ClasspWriteWMIFailureEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteWMIFailureEvent",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 291,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssduuuuuqbr12u_EtwWriteTransfer",
+    "ea": "0x140007000",
+    "function_file": "functions/140007000_McTemplateK0jqssssduuuuuqbr12u_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssduuuuuqbr12u_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 547,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "McTemplateK0jqsssstqqd_EtwWriteTransfer",
+    "ea": "0x140007230",
+    "function_file": "functions/140007230_McTemplateK0jqsssstqqd_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqsssstqqd_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 411,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "WPP_SF_s",
+    "ea": "0x140022748",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_s",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x1400280e4",
+    "function_file": "functions/1400280e4_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "ClasspIsErrorStatusNoisy",
+    "ea": "0x140016f70",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspIsErrorStatusNoisy",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 138,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClasspReadCapacityFailureEvent",
+    "ea": "0x1400074b8",
+    "function_file": "functions/1400074b8_ClasspReadCapacityFailureEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspReadCapacityFailureEvent",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 358,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspWriteIOPerformanceMeasurementEvent",
+    "ea": "0x140015550",
+    "function_file": "functions/140015550_ClasspWriteIOPerformanceMeasurementEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteIOPerformanceMeasurementEvent",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 438,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "ClasspWriteSrbErrorResultEvent",
+    "ea": "0x1400073d4",
+    "function_file": "functions/1400073d4_ClasspWriteSrbErrorResultEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteSrbErrorResultEvent",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CreateStorageRequestBlock",
+    "ea": "0x14000f250",
+    "function_file": "functions/14000f250_CreateStorageRequestBlock.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateStorageRequestBlock",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 381,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssdixuq_EtwWriteTransfer",
+    "ea": "0x140004ed0",
+    "function_file": "functions/140004ed0_McTemplateK0jqssssdixuq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssdixuq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 451,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssdttuu_EtwWriteTransfer",
+    "ea": "0x14003cbc8",
+    "function_file": "functions/14003cbc8_McTemplateK0jqssssdttuu_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssdttuu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 394,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssduddu_EtwWriteTransfer",
+    "ea": "0x14003cd58",
+    "function_file": "functions/14003cd58_McTemplateK0jqssssduddu_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssduddu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 398,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssduqqqqqq_EtwWriteTransfer",
+    "ea": "0x14003d06c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssduqqqqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 486,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssduqtqqqqq_EtwWriteTransfer",
+    "ea": "0x14003d258",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssduqtqqqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 511,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_DD",
+    "ea": "0x14001fedc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 7,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_Dq",
+    "ea": "0x140022614",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_Dq",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 7,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_qdd",
+    "ea": "0x140037650",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qdd",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _DWORD)",
+    "rank_score": 7,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_qqq",
+    "ea": "0x140027a24",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qqq",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ClasspGetTokenOperationDescriptorLimits",
+    "ea": "0x1400314e4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspGetTokenOperationDescriptorLimits",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 215,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClasspReadCapacityFailureForSMRDeviceEvent",
+    "ea": "0x140019ce4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspReadCapacityFailureForSMRDeviceEvent",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 240,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspWriteFirmwareDownloadEvent",
+    "ea": "0x14003bcf8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteFirmwareDownloadEvent",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 6,
+    "size": 405,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jdqqqququqqquxqx_EtwWriteTransfer",
+    "ea": "0x14003c64c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jdqqqququqqquxqx_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 386,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssdd_EtwWriteTransfer",
+    "ea": "0x14003c914",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssdd_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 341,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssdq_EtwWriteTransfer",
+    "ea": "0x14003ca70",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssdq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 338,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssdujp_EtwWriteTransfer",
+    "ea": "0x14003ceec",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssdujp_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 378,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssduuu_EtwWriteTransfer",
+    "ea": "0x14003d460",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssduuu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 375,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqssssqqqq_EtwWriteTransfer",
+    "ea": "0x14003d72c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqssssqqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 375,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "McTemplateK0qpddd_EtwWriteTransfer",
+    "ea": "0x140022514",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpddd_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "McTemplateK0qpddp_EtwWriteTransfer",
+    "ea": "0x14002675c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpddp_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "ClasspIsReceiveTokenInformation",
+    "ea": "0x140007788",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspIsReceiveTokenInformation",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspWriteFirmwareActivateEvent",
+    "ea": "0x14003bbd8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteFirmwareActivateEvent",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 280,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspWriteFirmwareGetInfoEvent",
+    "ea": "0x14003be94",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteFirmwareGetInfoEvent",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 5,
+    "size": 226,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "InterpretReadCapacity16Data",
+    "ea": "0x140036db4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "InterpretReadCapacity16Data",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jdqqqquuqqquq_EtwWriteTransfer",
+    "ea": "0x14003c7d4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jdqqqquuqqquq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 311,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqqbr2qqqquqbr9_EtwWriteTransfer",
+    "ea": "0x140036ea0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqqbr2qqqquqbr9_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, char)",
+    "rank_score": 5,
+    "size": 270,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqxpudxxqqNR9_EtwWriteTransfer",
+    "ea": "0x14003708c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqxpudxxqqNR9_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0qptix_EtwWriteTransfer",
+    "ea": "0x14002689c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qptix_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14005ae3c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ClasspAdvanceOffloadWritePosition",
+    "ea": "0x140023bc4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspAdvanceOffloadWritePosition",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ClasspWritePowerResultEvent",
+    "ea": "0x140018180",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWritePowerResultEvent",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140018560",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 4,
+    "size": 319,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jdqqqqqq_EtwWriteTransfer",
+    "ea": "0x14003c578",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jdqqqqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 205,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jqxpdqqNR6_EtwWriteTransfer",
+    "ea": "0x140036fb4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jqxpdqqNR6_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, char, char, char, char, char, _DWORD)",
+    "rank_score": 4,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0ppqqq_EtwWriteTransfer",
+    "ea": "0x14000740c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0ppqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 164,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0pqqq_EtwWriteTransfer",
+    "ea": "0x140006f60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0pqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 150,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qpduuuuupq_EtwWriteTransfer",
+    "ea": "0x140005c30",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpduuuuupq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qpqduuuuu_EtwWriteTransfer",
+    "ea": "0x1400050a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpqduuuuu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 228,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qpuxipu_EtwWriteTransfer",
+    "ea": "0x1400061e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpuxipu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qpxdd_EtwWriteTransfer",
+    "ea": "0x14002693c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpxdd_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0quuuq_EtwWriteTransfer",
+    "ea": "0x14003d8ac",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0quuuq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qxpdtx_EtwWriteTransfer",
+    "ea": "0x1400371a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qxpdtx_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qxpdtxq_EtwWriteTransfer",
+    "ea": "0x140037258",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qxpdtxq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qxpuup_EtwWriteTransfer",
+    "ea": "0x14003d954",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qxpuup_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qxpuuup_EtwWriteTransfer",
+    "ea": "0x14003da0c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qxpuuup_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0xppuuuq_EtwWriteTransfer",
+    "ea": "0x14003dac8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0xppuuuq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 184,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14005ae00",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ClasspIsTokenOperation",
+    "ea": "0x140007654",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspIsTokenOperation",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClasspWriteEnqueueIdleIOEvent",
+    "ea": "0x140001de0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspWriteEnqueueIdleIOEvent",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14005ad60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x140028110",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 202,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x1400281e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_tlgCreate1Sz_wchar_t",
+    "ea": "0x1400010b8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_wchar_t",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x1400286c4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ClasspInitializeRemoveTracking",
+    "ea": "0x140028ec0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspInitializeRemoveTracking",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ClasspMpdevDeviceRemovedNotify",
+    "ea": "0x14003aeb0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClasspMpdevDeviceRemovedNotify",
+    "prototype": "",
+    "rank_score": 0,
+    "size": 30,
+    "tags": []
+  }
+]

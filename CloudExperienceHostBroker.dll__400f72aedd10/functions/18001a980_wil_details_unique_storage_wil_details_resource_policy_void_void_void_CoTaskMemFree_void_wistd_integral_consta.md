@@ -1,0 +1,86 @@
+# wil::details::unique_storage<wil::details::resource_policy<void *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>::reset(void *)
+
+- ea: `0x18001a980`
+- end: `0x18001a9cd`
+- name: `?reset@?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAAXPEAX@Z`
+- size: `77`
+- prototype: `__int64 __fastcall(_QWORD, _QWORD)`
+- caller_count: `14`
+- callee_count: `3`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x180007278`
+- `0x180007f14`
+- `0x180008038`
+- `0x1800112bc`
+- `0x18001135c`
+- `0x180012dc0`
+- `0x18001a868`
+- `0x18001d318`
+- `0x1800201bc`
+- `0x1800224b8`
+- `0x180022628`
+- `0x180023984`
+- `0x180024dd4`
+- `0x18002722c`
+
+## callees
+
+- `0x18000c8a4`
+- `0x18000cb20`
+- `0x18001a980`
+
+## import_xrefs
+
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x18001a9aa`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x18001a9aa`
+
+## pseudocode
+
+```c
+void __fastcall wil::details::unique_storage<wil::details::resource_policy<void *,void (*)(void *),&void CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>::reset(
+        void **a1,
+        void *a2)
+{
+  void *v2; // rdi
+  char v5; // [rsp+30h] [rbp+8h] BYREF
+
+  v2 = *a1;
+  if ( *a1 )
+  {
+    wil::last_error_context::last_error_context((wil::last_error_context *)&v5);
+    CoTaskMemFree(v2);
+    wil::last_error_context::~last_error_context((wil::last_error_context *)&v5);
+  }
+  *a1 = a2;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18001a980  mov     [rsp+arg_8], rbx
+0x18001a985  mov     [rsp+arg_10], rsi
+0x18001a98a  push    rdi
+0x18001a98b  sub     rsp, 20h
+0x18001a98f  mov     rdi, [rcx]
+0x18001a992  mov     rsi, rdx
+0x18001a995  mov     rbx, rcx
+0x18001a998  test    rdi, rdi
+0x18001a99b  jz      short loc_18001A9BA
+0x18001a99d  lea     rcx, [rsp+28h+arg_0]; this
+0x18001a9a2  call    ??0last_error_context@wil@@QEAA@XZ; wil::last_error_context::last_error_context(void)
+0x18001a9a7  mov     rcx, rdi; pv
+0x18001a9aa  call    cs:__imp_CoTaskMemFree
+0x18001a9b0  lea     rcx, [rsp+28h+arg_0]; this
+0x18001a9b5  call    ??1last_error_context@wil@@QEAA@XZ; wil::last_error_context::~last_error_context(void)
+0x18001a9ba  mov     [rbx], rsi
+0x18001a9bd  mov     rbx, [rsp+28h+arg_8]
+0x18001a9c2  mov     rsi, [rsp+28h+arg_10]
+0x18001a9c7  add     rsp, 20h
+0x18001a9cb  pop     rdi
+0x18001a9cc  retn
+```

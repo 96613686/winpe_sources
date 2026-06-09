@@ -1,0 +1,164 @@
+# CW32SysDrvPnp::LoadPropertyValues(void *)
+
+- ea: `0x180005ba0`
+- end: `0x1800063f6`
+- name: `?LoadPropertyValues@CW32SysDrvPnp@@MEAAJPEAX@Z`
+- size: `2134`
+- prototype: `__int64 __fastcall(CW32SysDrvPnp *__hidden this, void *)`
+- caller_count: `0`
+- callee_count: `6`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x1800035c0`
+- `0x1800058c0`
+- `0x180005ba0`
+- `0x18000cd50`
+- `0x1800fc980`
+- `0x180110010`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180006275`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1800062f5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180006386`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180006398`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180006275`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1800062f5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180006386`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180006398`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005c01`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005c0c`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005c17`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005e6e`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005e79`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18000601b`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180006026`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005c01`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005c0c`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005c17`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005e6e`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180005e79`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x18000601b`
+- `framedynos!??0CHString@@QEAA@XZ` at `0x180006026`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x180005f7a`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x180005f9f`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x180006127`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x180006148`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x1800061af`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x180005f7a`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x180005f9f`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x180006127`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x180006148`
+- `framedynos!??BCHString@@QEBAPEBGXZ` at `0x1800061af`
+- `framedynos!?SetCHString@CInstance@@QEAA_NPEBGAEBVCHString@@@Z` at `0x180005fef`
+- `framedynos!?SetCHString@CInstance@@QEAA_NPEBGAEBVCHString@@@Z` at `0x1800061db`
+- `framedynos!?SetCHString@CInstance@@QEAA_NPEBGAEBVCHString@@@Z` at `0x180005fef`
+- `framedynos!?SetCHString@CInstance@@QEAA_NPEBGAEBVCHString@@@Z` at `0x1800061db`
+- `framedynos!?Commit@CInstance@@QEAAJXZ` at `0x1800061e4`
+- `framedynos!?Commit@CInstance@@QEAAJXZ` at `0x1800061e4`
+- `framedynos!??4CHString@@QEAAAEBV0@AEBV0@@Z` at `0x180005f1d`
+- `framedynos!??4CHString@@QEAAAEBV0@AEBV0@@Z` at `0x1800060cb`
+- `framedynos!??4CHString@@QEAAAEBV0@AEBV0@@Z` at `0x180005f1d`
+- `framedynos!??4CHString@@QEAAAEBV0@AEBV0@@Z` at `0x1800060cb`
+- `framedynos!?GetLength@CHString@@QEBAHXZ` at `0x180005ef8`
+- `framedynos!?GetLength@CHString@@QEBAHXZ` at `0x180005f4f`
+- `framedynos!?GetLength@CHString@@QEBAHXZ` at `0x1800060a7`
+- `framedynos!?GetLength@CHString@@QEBAHXZ` at `0x1800060fc`
+- `framedynos!?GetLength@CHString@@QEBAHXZ` at `0x180005ef8`
+- `framedynos!?GetLength@CHString@@QEBAHXZ` at `0x180005f4f`
+- `framedynos!?GetLength@CHString@@QEBAHXZ` at `0x1800060a7`
+- `framedynos!?GetLength@CHString@@QEBAHXZ` at `0x1800060fc`
+- `framedynos!?GetMethodContext@CInstance@@QEBAPEAVMethodContext@@XZ` at `0x18000618f`
+- `framedynos!?GetMethodContext@CInstance@@QEBAPEAVMethodContext@@XZ` at `0x18000618f`
+- `framedynos!?Format@CHString@@QEAAXPEBGZZ` at `0x180005fd7`
+- `framedynos!?Format@CHString@@QEAAXPEBGZZ` at `0x180006180`
+- `framedynos!?Format@CHString@@QEAAXPEBGZZ` at `0x180005fd7`
+- `framedynos!?Format@CHString@@QEAAXPEBGZZ` at `0x180006180`
+- `framedynos!?Left@CHString@@QEBA?AV1@H@Z` at `0x180005ec3`
+- `framedynos!?Left@CHString@@QEBA?AV1@H@Z` at `0x180006071`
+- `framedynos!?Left@CHString@@QEBA?AV1@H@Z` at `0x180005ec3`
+- `framedynos!?Left@CHString@@QEBA?AV1@H@Z` at `0x180006071`
+- `framedynos!??0CHString@@QEAA@AEBV0@@Z` at `0x180005e89`
+- `framedynos!??0CHString@@QEAA@AEBV0@@Z` at `0x180006036`
+- `framedynos!??0CHString@@QEAA@AEBV0@@Z` at `0x180005e89`
+- `framedynos!??0CHString@@QEAA@AEBV0@@Z` at `0x180006036`
+- `framedynos!?Release@CInstance@@QEAAJXZ` at `0x1800061a1`
+- `framedynos!?Release@CInstance@@QEAAJXZ` at `0x1800061f5`
+- `framedynos!?Release@CInstance@@QEAAJXZ` at `0x1800061a1`
+- `framedynos!?Release@CInstance@@QEAAJXZ` at `0x1800061f5`
+- `framedynos!?GetLocalComputerName@Provider@@IEAAAEBVCHString@@XZ` at `0x180005f96`
+- `framedynos!?GetLocalComputerName@Provider@@IEAAAEBVCHString@@XZ` at `0x18000613f`
+- `framedynos!?GetLocalComputerName@Provider@@IEAAAEBVCHString@@XZ` at `0x180005f96`
+- `framedynos!?GetLocalComputerName@Provider@@IEAAAEBVCHString@@XZ` at `0x18000613f`
+- `framedynos!?IsEmpty@CHString@@QEBAHXZ` at `0x180005e3b`
+- `framedynos!?IsEmpty@CHString@@QEBAHXZ` at `0x180005e4d`
+- `framedynos!?IsEmpty@CHString@@QEBAHXZ` at `0x180005e3b`
+- `framedynos!?IsEmpty@CHString@@QEBAHXZ` at `0x180005e4d`
+- `framedynos!??4CHString@@QEAAAEBV0@PEBD@Z` at `0x180005d0f`
+- `framedynos!??4CHString@@QEAAAEBV0@PEBD@Z` at `0x180005d0f`
+- `framedynos!??4CHString@@QEAAAEBV0@PEBG@Z` at `0x18000636a`
+- `framedynos!??4CHString@@QEAAAEBV0@PEBG@Z` at `0x18000636a`
+- `framedynos!?GetInstanceKeysByPath@CWbemProviderGlue@@SAJPEBGPEAPEAVCInstance@@PEAVMethodContext@@@Z` at `0x1800061bf`
+- `framedynos!?GetInstanceKeysByPath@CWbemProviderGlue@@SAJPEBGPEAPEAVCInstance@@PEAVMethodContext@@@Z` at `0x1800061bf`
+- `framedynos!?Find@CHString@@QEBAHG@Z` at `0x180005ea5`
+- `framedynos!?Find@CHString@@QEBAHG@Z` at `0x180005f39`
+- `framedynos!?Find@CHString@@QEBAHG@Z` at `0x180006052`
+- `framedynos!?Find@CHString@@QEBAHG@Z` at `0x1800060e6`
+- `framedynos!?Find@CHString@@QEBAHG@Z` at `0x180005ea5`
+- `framedynos!?Find@CHString@@QEBAHG@Z` at `0x180005f39`
+- `framedynos!?Find@CHString@@QEBAHG@Z` at `0x180006052`
+- `framedynos!?Find@CHString@@QEBAHG@Z` at `0x1800060e6`
+- `framedynos!?Empty@CHString@@QEAAXXZ` at `0x180005e95`
+- `framedynos!?Empty@CHString@@QEAAXXZ` at `0x180006042`
+- `framedynos!?Empty@CHString@@QEAAXXZ` at `0x180005e95`
+- `framedynos!?Empty@CHString@@QEAAXXZ` at `0x180006042`
+- `framedynos!?Right@CHString@@QEBA?AV1@H@Z` at `0x180005f0e`
+- `framedynos!?Right@CHString@@QEBA?AV1@H@Z` at `0x1800060bc`
+- `framedynos!?Right@CHString@@QEBA?AV1@H@Z` at `0x180005f0e`
+- `framedynos!?Right@CHString@@QEBA?AV1@H@Z` at `0x1800060bc`
+- `framedynos!??YCHString@@QEAAAEBV0@AEBV0@@Z` at `0x180005ed2`
+- `framedynos!??YCHString@@QEAAAEBV0@AEBV0@@Z` at `0x180005f63`
+- `framedynos!??YCHString@@QEAAAEBV0@AEBV0@@Z` at `0x180006080`
+- `framedynos!??YCHString@@QEAAAEBV0@AEBV0@@Z` at `0x180006110`
+- `framedynos!??YCHString@@QEAAAEBV0@AEBV0@@Z` at `0x180005ed2`
+- `framedynos!??YCHString@@QEAAAEBV0@AEBV0@@Z` at `0x180005f63`
+- `framedynos!??YCHString@@QEAAAEBV0@AEBV0@@Z` at `0x180006080`
+- `framedynos!??YCHString@@QEAAAEBV0@AEBV0@@Z` at `0x180006110`
+- `framedynos!??YCHString@@QEAAAEBV0@G@Z` at `0x180005eed`
+- `framedynos!??YCHString@@QEAAAEBV0@G@Z` at `0x18000609c`
+- `framedynos!??YCHString@@QEAAAEBV0@G@Z` at `0x180005eed`
+- `framedynos!??YCHString@@QEAAAEBV0@G@Z` at `0x18000609c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005c4d`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005c58`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005c63`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005edd`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005f29`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005f6f`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005ffa`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180006006`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18000608c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x1800060d6`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18000611c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180006200`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18000620c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005c4d`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005c58`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005c63`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005edd`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005f29`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005f6f`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180005ffa`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180006006`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18000608c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x1800060d6`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18000611c`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x180006200`
+- `framedynos!??1CHString@@QEAA@XZ` at `0x18000620c`
+
+## pseudocode
+
+```c
+
+```
