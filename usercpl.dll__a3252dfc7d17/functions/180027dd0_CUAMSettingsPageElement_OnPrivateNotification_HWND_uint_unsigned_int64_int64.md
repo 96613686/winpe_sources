@@ -1,0 +1,209 @@
+# CUAMSettingsPageElement::OnPrivateNotification(HWND__ *,uint,unsigned __int64,__int64)
+
+- ea: `0x180027dd0`
+- end: `0x180028569`
+- name: `?OnPrivateNotification@CUAMSettingsPageElement@@MEAA_JPEAUHWND__@@I_K_J@Z`
+- size: `1945`
+- prototype: `__int64(CUAMSettingsPageElement *__hidden this, HWND, unsigned int, unsigned __int64, __int64)`
+- caller_count: `0`
+- callee_count: `13`
+- tags: `registry_config`
+
+## callees
+
+- `0x18000d9a4`
+- `0x18000dafc`
+- `0x180025b70`
+- `0x180025bcc`
+- `0x180027dd0`
+- `0x18002947c`
+- `0x180029a1c`
+- `0x180029ca8`
+- `0x180029fec`
+- `0x18002a76c`
+- `0x18002bac4`
+- `0x1800772c0`
+- `0x180078010`
+
+## import_xrefs
+
+- `api-ms-win-power-base-l1-1-0!PowerDeterminePlatformRoleEx` at `0x18002801d`
+- `api-ms-win-power-base-l1-1-0!PowerDeterminePlatformRoleEx` at `0x18002801d`
+- `DUI70!?GetClassInfoPtr@TouchButton@DirectUI@@SAPEAUIClassInfo@2@XZ` at `0x1800281b8`
+- `DUI70!?GetClassInfoPtr@TouchButton@DirectUI@@SAPEAUIClassInfo@2@XZ` at `0x1800281b8`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028056`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x18002808e`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800280c5`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800280ef`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028113`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028127`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028171`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800281eb`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028210`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028235`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028249`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028286`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800282c2`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800282e6`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028312`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x18002833c`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028378`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800283b1`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800283d6`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028412`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028437`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x18002846a`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800284a4`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800284c8`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800284da`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028543`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028056`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x18002808e`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800280c5`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800280ef`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028113`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028127`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028171`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800281eb`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028210`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028235`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028249`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028286`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800282c2`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800282e6`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028312`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x18002833c`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028378`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800283b1`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800283d6`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028412`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028437`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x18002846a`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800284a4`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800284c8`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x1800284da`
+- `DUI70!?SetLayoutPos@Element@DirectUI@@QEAAJH@Z` at `0x180028543`
+- `DUI70!?SetEnabled@Element@DirectUI@@QEAAJ_N@Z` at `0x180028259`
+- `DUI70!?SetEnabled@Element@DirectUI@@QEAAJ_N@Z` at `0x18002850e`
+- `DUI70!?SetEnabled@Element@DirectUI@@QEAAJ_N@Z` at `0x180028259`
+- `DUI70!?SetEnabled@Element@DirectUI@@QEAAJ_N@Z` at `0x18002850e`
+- `DUI70!StrToID` at `0x180027fe0`
+- `DUI70!StrToID` at `0x180028033`
+- `DUI70!StrToID` at `0x180028074`
+- `DUI70!StrToID` at `0x1800280a0`
+- `DUI70!StrToID` at `0x1800280d2`
+- `DUI70!StrToID` at `0x1800280fc`
+- `DUI70!StrToID` at `0x180028137`
+- `DUI70!StrToID` at `0x18002817e`
+- `DUI70!StrToID` at `0x1800281f8`
+- `DUI70!StrToID` at `0x18002821d`
+- `DUI70!StrToID` at `0x18002826f`
+- `DUI70!StrToID` at `0x180028293`
+- `DUI70!StrToID` at `0x1800282aa`
+- `DUI70!StrToID` at `0x1800282cf`
+- `DUI70!StrToID` at `0x1800282f3`
+- `DUI70!StrToID` at `0x180028325`
+- `DUI70!StrToID` at `0x180028352`
+- `DUI70!StrToID` at `0x180028385`
+- `DUI70!StrToID` at `0x1800283be`
+- `DUI70!StrToID` at `0x1800283e3`
+- `DUI70!StrToID` at `0x1800283fa`
+- `DUI70!StrToID` at `0x18002841f`
+- `DUI70!StrToID` at `0x180028444`
+- `DUI70!StrToID` at `0x180028477`
+- `DUI70!StrToID` at `0x1800284b1`
+- `DUI70!StrToID` at `0x1800284ef`
+- `DUI70!StrToID` at `0x18002851f`
+- `DUI70!StrToID` at `0x180027fe0`
+- `DUI70!StrToID` at `0x180028033`
+- `DUI70!StrToID` at `0x180028074`
+- `DUI70!StrToID` at `0x1800280a0`
+- `DUI70!StrToID` at `0x1800280d2`
+- `DUI70!StrToID` at `0x1800280fc`
+- `DUI70!StrToID` at `0x180028137`
+- `DUI70!StrToID` at `0x18002817e`
+- `DUI70!StrToID` at `0x1800281f8`
+- `DUI70!StrToID` at `0x18002821d`
+- `DUI70!StrToID` at `0x18002826f`
+- `DUI70!StrToID` at `0x180028293`
+- `DUI70!StrToID` at `0x1800282aa`
+- `DUI70!StrToID` at `0x1800282cf`
+- `DUI70!StrToID` at `0x1800282f3`
+- `DUI70!StrToID` at `0x180028325`
+- `DUI70!StrToID` at `0x180028352`
+- `DUI70!StrToID` at `0x180028385`
+- `DUI70!StrToID` at `0x1800283be`
+- `DUI70!StrToID` at `0x1800283e3`
+- `DUI70!StrToID` at `0x1800283fa`
+- `DUI70!StrToID` at `0x18002841f`
+- `DUI70!StrToID` at `0x180028444`
+- `DUI70!StrToID` at `0x180028477`
+- `DUI70!StrToID` at `0x1800284b1`
+- `DUI70!StrToID` at `0x1800284ef`
+- `DUI70!StrToID` at `0x18002851f`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180027fec`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002803f`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028080`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800280ac`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800280de`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028108`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028143`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002818a`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028204`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028229`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002827b`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002829f`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800282b6`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800282db`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800282ff`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028331`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002835e`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028391`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800283ca`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800283ef`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028406`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002842b`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028450`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028483`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800284bd`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800284ff`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002852f`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180027fec`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002803f`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028080`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800280ac`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800280de`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028108`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028143`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002818a`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028204`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028229`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002827b`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002829f`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800282b6`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800282db`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800282ff`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028331`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002835e`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028391`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800283ca`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800283ef`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028406`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002842b`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028450`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x180028483`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800284bd`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x1800284ff`
+- `DUI70!?FindDescendent@Element@DirectUI@@QEAAPEAV12@G@Z` at `0x18002852f`
+- `USER32!DefWindowProcW` at `0x180027e66`
+- `USER32!DefWindowProcW` at `0x180027e66`
+
+## string_xrefs
+
+- `0x18002802c`: `idDelayLockConfig`
+
+## pseudocode
+
+```c
+
+```

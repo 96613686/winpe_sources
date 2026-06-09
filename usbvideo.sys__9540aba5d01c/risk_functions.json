@@ -1,0 +1,6499 @@
+[
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "CaptureStateChange",
+    "ea": "0x14000a928",
+    "function_file": "functions/14000a928_CaptureStateChange.md",
+    "matched_imports": [
+      "ks!KsPinAcquireProcessingMutex",
+      "ks!KsPinGetParentFilter",
+      "ks!KsPinGetReferenceClockInterface",
+      "ks!KsPinReleaseProcessingMutex",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReadStateSemaphore",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CaptureStateChange",
+    "prototype": "__int64 __fastcall(PKSPIN Pin)",
+    "rank_score": 5044,
+    "size": 2251,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 2,
+    "demangled": "StartUSBVideoDevice",
+    "ea": "0x140015e60",
+    "function_file": "functions/140015e60_StartUSBVideoDevice.md",
+    "matched_imports": [
+      "USBD!USBD_CreateConfigurationRequestEx",
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeInitializeSemaphore"
+    ],
+    "matched_strings": [
+      "The total size of Configuration Descriptor is too short",
+      "Invalid Configuration Descriptor size"
+    ],
+    "name": "StartUSBVideoDevice",
+    "prototype": "",
+    "rank_score": 4946,
+    "size": 2115,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "USBVideoAddDevice",
+    "ea": "0x1400156a0",
+    "function_file": "functions/1400156a0_USBVideoAddDevice.md",
+    "matched_imports": [
+      "ks!KsAcquireDevice",
+      "ks!KsAddItemToObjectBag",
+      "ks!KsReleaseDevice",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCsqInitialize",
+      "ntoskrnl!IoInitializeRemoveLockEx",
+      "ntoskrnl!IoSizeofWorkItem",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSemaphore",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoAddDevice",
+    "prototype": "__int64 __fastcall(PKSDEVICE Device)",
+    "rank_score": 3662,
+    "size": 1974,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "USBVideoRaiseKSEvent",
+    "ea": "0x1400105b8",
+    "function_file": "functions/1400105b8_USBVideoRaiseKSEvent.md",
+    "matched_imports": [
+      "ks!KsGenerateEvent",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoRaiseKSEvent",
+    "prototype": "",
+    "rank_score": 3046,
+    "size": 1987,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBDInternal_QueryUsbVerifierSettings",
+    "ea": "0x14000f528",
+    "function_file": "functions/14000f528_USBDInternal_QueryUsbVerifierSettings.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!MmIsDriverVerifying",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "IoOpenDriverRegistryKey",
+      "RtlQueryRegistryValuesEx",
+      "IoOpenDriverRegistryKey failed with 0x%x\n",
+      "RtlQueryRegistrySettings failed, ignoring this error0x%x\n"
+    ],
+    "name": "USBDInternal_QueryUsbVerifierSettings",
+    "prototype": "",
+    "rank_score": 2691,
+    "size": 881,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "SelectDeviceConfiguration",
+    "ea": "0x140020a94",
+    "function_file": "functions/140020a94_SelectDeviceConfiguration.md",
+    "matched_imports": [
+      "USBD!USBD_CreateConfigurationRequestEx",
+      "USBD!USBD_ParseConfigurationDescriptorEx",
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SelectDeviceConfiguration",
+    "prototype": "",
+    "rank_score": 2637,
+    "size": 1808,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "PrivacyNotificationWorkItemHandler",
+    "ea": "0x1400202c0",
+    "function_file": "functions/1400202c0_PrivacyNotificationWorkItemHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireDevice",
+      "ks!KsGenerateEvents",
+      "ks!KsGetFirstChild",
+      "ks!KsGetNextSibling",
+      "ks!KsReleaseDevice",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "PrivacyNotificationWorkItemHandler",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 2618,
+    "size": 517,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "USBD_CreateHandle",
+    "ea": "0x14000efa4",
+    "function_file": "functions/14000efa4_USBD_CreateHandle.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!RtlGetVersion"
+    ],
+    "matched_strings": [
+      "USBD_CreateHandle Successful: usbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBD_CreateHandle",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PDEVICE_OBJECT TargetDeviceObject, ULONG USBDClientContractVersion, ULONG PoolTag, USBD_HANDLE *USBDHandle)",
+    "rank_score": 2465,
+    "size": 1049,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "FrameRenderStateChange",
+    "ea": "0x14001a50c",
+    "function_file": "functions/14001a50c_FrameRenderStateChange.md",
+    "matched_imports": [
+      "ks!KsPinAcquireProcessingMutex",
+      "ks!KsPinGetParentFilter",
+      "ks!KsPinGetReferenceClockInterface",
+      "ks!KsPinReleaseProcessingMutex",
+      "ks!KsStreamPointerDelete",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReadStateSemaphore",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "FrameRenderStateChange",
+    "prototype": "__int64 __fastcall(PKSPIN Pin)",
+    "rank_score": 2420,
+    "size": 1061,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CaptureResetWorkItem",
+    "ea": "0x140038e90",
+    "function_file": "functions/140038e90_CaptureResetWorkItem.md",
+    "matched_imports": [
+      "ks!KsDecrementCountedWorker",
+      "ks!KsPinAcquireProcessingMutex",
+      "ks!KsPinReleaseProcessingMutex",
+      "ntoskrnl!ExInterlockedRemoveHeadList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CaptureResetWorkItem",
+    "prototype": "__int64 __fastcall(PKSPIN Pin)",
+    "rank_score": 2411,
+    "size": 650,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "FrameRenderResetWorkItem",
+    "ea": "0x14001ca10",
+    "function_file": "functions/14001ca10_FrameRenderResetWorkItem.md",
+    "matched_imports": [
+      "ks!KsDecrementCountedWorker",
+      "ks!KsPinAcquireProcessingMutex",
+      "ks!KsPinReleaseProcessingMutex",
+      "ntoskrnl!ExInterlockedInsertTailList",
+      "ntoskrnl!ExInterlockedRemoveHeadList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "FrameRenderResetWorkItem",
+    "prototype": "__int64 __fastcall(PKSPIN Pin)",
+    "rank_score": 2407,
+    "size": 500,
+    "tags": []
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 0,
+    "demangled": "USBVideoPinCreate",
+    "ea": "0x1400171d0",
+    "function_file": "functions/1400171d0_USBVideoPinCreate.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ks!KsGetDevice",
+      "ks!KsPinGetConnectedFilterInterface",
+      "ks!KsPinGetParentFilter",
+      "ks!KsPinRegisterPowerCallbacks",
+      "ks!_KsEdit",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoPinCreate",
+    "prototype": "__int64 __fastcall(PKSPIN Pin)",
+    "rank_score": 2265,
+    "size": 3190,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "PowerIrpCompletion",
+    "ea": "0x14001fdf0",
+    "function_file": "functions/14001fdf0_PowerIrpCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoInitializeWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PowerIrpCompletion",
+    "prototype": "REQUEST_POWER_COMPLETE",
+    "rank_score": 2256,
+    "size": 1214,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "USBVideoStillPinCreate",
+    "ea": "0x140017ed0",
+    "function_file": "functions/140017ed0_USBVideoStillPinCreate.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ks!KsGetDevice",
+      "ks!KsPinGetConnectedFilterInterface",
+      "ks!KsPinGetParentFilter",
+      "ks!_KsEdit",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoStillPinCreate",
+    "prototype": "__int64 __fastcall(PVOID *PointerToPointerToItem)",
+    "rank_score": 2256,
+    "size": 2196,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "ProcessIrpsThread",
+    "ea": "0x14003a830",
+    "function_file": "functions/14003a830_ProcessIrpsThread.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCsqInsertIrp",
+      "ntoskrnl!IoCsqRemoveNextIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReadStateSemaphore",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!PsTerminateSystemThread"
+    ],
+    "matched_strings": [],
+    "name": "ProcessIrpsThread",
+    "prototype": "KSTART_ROUTINE",
+    "rank_score": 2248,
+    "size": 1667,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "StillCaptureStateChange",
+    "ea": "0x140039650",
+    "function_file": "functions/140039650_StillCaptureStateChange.md",
+    "matched_imports": [
+      "ks!KsPinGetParentFilter",
+      "ks!KsPinGetReferenceClockInterface",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReadStateSemaphore",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "StillCaptureStateChange",
+    "prototype": "__int64 __fastcall(PKSPIN Pin)",
+    "rank_score": 2240,
+    "size": 1688,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "SaveDevPropKey",
+    "ea": "0x140012740",
+    "function_file": "functions/140012740_SaveDevPropKey.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDevicePropertyData",
+      "ntoskrnl!IoSetDevicePropertyData",
+      "ntoskrnl!RtlCompareUnicodeStrings",
+      "ntoskrnl!RtlGUIDFromString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlUnicodeStringToInteger"
+    ],
+    "matched_strings": [],
+    "name": "SaveDevPropKey",
+    "prototype": "__int64 __usercall@<rax>(PCWCH String1@<rcx>, PDEVICE_OBJECT Pdo, PCWSTR SourceString)",
+    "rank_score": 2224,
+    "size": 1065,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 2,
+    "demangled": "CaptureCompleteIsoch",
+    "ea": "0x140001bcc",
+    "function_file": "functions/140001bcc_CaptureCompleteIsoch.md",
+    "matched_imports": [
+      "ks!KsIncrementCountedWorker",
+      "ks!KsStreamPointerUnlock",
+      "ntoskrnl!ExInterlockedInsertTailList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "CaptureCompleteIsoch",
+    "prototype": "",
+    "rank_score": 2077,
+    "size": 3415,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "USBVideoPinBuildDescriptors",
+    "ea": "0x140023dfc",
+    "function_file": "functions/140023dfc_USBVideoPinBuildDescriptors.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoPinBuildDescriptors",
+    "prototype": "",
+    "rank_score": 2044,
+    "size": 2511,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::GetDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,int,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003f580",
+    "function_file": "functions/14003f580_CUncompressedFormatPlugin_GetDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_int_USBVIDEO_DATARANG.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetDataRangeFromDescriptor@CUncompressedFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KHPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CUncompressedFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 2043,
+    "size": 2065,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CFrameFormatPlugin::CreateVIHDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,int,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003db3c",
+    "function_file": "functions/14003db3c_CFrameFormatPlugin_CreateVIHDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_int_USBVIDEO_DATARANGE.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateVIHDataRangeFromDescriptor@CFrameFormatPlugin@@QEAAJPEAUVIDEO_SPECIFIC@@0KHPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CFrameFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 2034,
+    "size": 2135,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CMJPEGFormatPlugin::GetDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,int,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14000de60",
+    "function_file": "functions/14000de60_CMJPEGFormatPlugin_GetDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_int_USBVIDEO_DATARANGE.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetDataRangeFromDescriptor@CMJPEGFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KHPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CMJPEGFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 2031,
+    "size": 1979,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBD_UrbAllocate",
+    "ea": "0x14003c1cc",
+    "function_file": "functions/14003c1cc_USBD_UrbAllocate.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "UsbdHandleInfo->PendingDelete should be set here UsbdHandleInfo 0x%p\n",
+      "UsbdHandleInfo->PendingDelete is set, UsbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBD_UrbAllocate",
+    "prototype": "NTSTATUS __stdcall(USBD_HANDLE USBDHandle, PURB *Urb)",
+    "rank_score": 1687,
+    "size": 487,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "CaptureCompleteBulk",
+    "ea": "0x1400029a0",
+    "function_file": "functions/1400029a0_CaptureCompleteBulk.md",
+    "matched_imports": [
+      "ks!KsIncrementCountedWorker",
+      "ks!KsPinGetLeadingEdgeStreamPointer",
+      "ks!KsStreamPointerUnlock",
+      "ntoskrnl!ExInterlockedInsertTailList",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "CaptureCompleteBulk",
+    "prototype": "",
+    "rank_score": 1644,
+    "size": 1467,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 7,
+    "demangled": "SelectInterface",
+    "ea": "0x1400166ac",
+    "function_file": "functions/1400166ac_SelectInterface.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SelectInterface",
+    "prototype": "__int64 __fastcall(PVOID StartPosition)",
+    "rank_score": 1639,
+    "size": 1341,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "InitializePassiveCompletionThread",
+    "ea": "0x140039224",
+    "function_file": "functions/140039224_InitializePassiveCompletionThread.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeSemaphore",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeSetPriorityThread",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "InitializePassiveCompletionThread",
+    "prototype": "__int64 __fastcall(PVOID StartContext)",
+    "rank_score": 1619,
+    "size": 672,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "USBVideoCallUSBD",
+    "ea": "0x140008d90",
+    "function_file": "functions/140008d90_USBVideoCallUSBD.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoCallUSBD",
+    "prototype": "",
+    "rank_score": 1618,
+    "size": 483,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "USBD_SecureIsochUrbAllocate",
+    "ea": "0x14003c000",
+    "function_file": "functions/14003c000_USBD_SecureIsochUrbAllocate.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "UsbdHandleInfo->PendingDelete should be set here UsbdHandleInfo 0x%p\n",
+      "UsbdHandleInfo->PendingDelete is set, UsbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBD_SecureIsochUrbAllocate",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1486,
+    "size": 452,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ReplicateDeviceRegistryVars",
+    "ea": "0x140023150",
+    "function_file": "functions/140023150_ReplicateDeviceRegistryVars.md",
+    "matched_imports": [
+      "ks!KsFilterFactoryGetSymbolicLink",
+      "ntoskrnl!IoGetDeviceInterfaceAlias",
+      "ntoskrnl!IoOpenDeviceInterfaceRegistryKey",
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "ReplicateDeviceRegistryVars",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PKSFILTERFACTORY FilterFactory)",
+    "rank_score": 1428,
+    "size": 489,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "FrameRenderCompleteCallbackIsoch",
+    "ea": "0x14001c1d0",
+    "function_file": "functions/14001c1d0_FrameRenderCompleteCallbackIsoch.md",
+    "matched_imports": [
+      "ks!KsIncrementCountedWorker",
+      "ntoskrnl!ExInterlockedInsertTailList",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "FrameRenderCompleteCallbackIsoch",
+    "prototype": "",
+    "rank_score": 1424,
+    "size": 786,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "GetDeviceRegValueDword",
+    "ea": "0x14000e964",
+    "function_file": "functions/14000e964_GetDeviceRegValueDword.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "GetDeviceRegValueDword",
+    "prototype": "",
+    "rank_score": 1424,
+    "size": 730,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "USBVideoFilterCreate",
+    "ea": "0x140023340",
+    "function_file": "functions/140023340_USBVideoFilterCreate.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ks!KsGetParent",
+      "ks!KsRemoveItemFromObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCsqInsertIrp"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoFilterCreate",
+    "prototype": "__int64 __fastcall(PVOID Object, PIRP Irp)",
+    "rank_score": 1424,
+    "size": 791,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QueueStillImageWorkItem",
+    "ea": "0x1400204cc",
+    "function_file": "functions/1400204cc_QueueStillImageWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "QueueStillImageWorkItem",
+    "prototype": "",
+    "rank_score": 1418,
+    "size": 559,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "AbortUSBPipe",
+    "ea": "0x14000b34c",
+    "function_file": "functions/14000b34c_AbortUSBPipe.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "AbortUSBPipe",
+    "prototype": "",
+    "rank_score": 1415,
+    "size": 553,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "FrameRenderTransmitData",
+    "ea": "0x14001baac",
+    "function_file": "functions/14001baac_FrameRenderTransmitData.md",
+    "matched_imports": [
+      "ks!KsPinGetLeadingEdgeStreamPointer",
+      "ks!KsStreamPointerClone",
+      "ks!KsStreamPointerDelete",
+      "ks!KsStreamPointerUnlock",
+      "ntoskrnl!ExInterlockedInsertHeadList",
+      "ntoskrnl!ExInterlockedRemoveHeadList",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "FrameRenderTransmitData",
+    "prototype": "__int64 __fastcall(PKSPIN Pin)",
+    "rank_score": 1415,
+    "size": 842,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBDInternal_BuildAndSendQueryInterfaceSynchronously",
+    "ea": "0x14000f3c4",
+    "function_file": "functions/14000f3c4_USBDInternal_BuildAndSendQueryInterfaceSynchronously.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBDInternal_BuildAndSendQueryInterfaceSynchronously",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PDEVICE_OBJECT)",
+    "rank_score": 1414,
+    "size": 350,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBDInternal_BuildandSendIoctlSynchronously",
+    "ea": "0x140013dc8",
+    "function_file": "functions/140013dc8_USBDInternal_BuildandSendIoctlSynchronously.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBDInternal_BuildandSendIoctlSynchronously",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PDEVICE_OBJECT)",
+    "rank_score": 1414,
+    "size": 322,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBDInternal_BuildServicePath",
+    "ea": "0x14001aba0",
+    "function_file": "functions/14001aba0_USBDInternal_BuildServicePath.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [
+      "Couldnt allocate servicePath of size %d\n"
+    ],
+    "name": "USBDInternal_BuildServicePath",
+    "prototype": "",
+    "rank_score": 1267,
+    "size": 330,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::GetDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,int,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003ecd0",
+    "function_file": "functions/14003ecd0_CH264FormatPlugin_GetDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_int_USBVIDEO_DATARANGE.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetDataRangeFromDescriptor@CH264FormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KHPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CH264FormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 1234,
+    "size": 2090,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CDVFormatPlugin::GetDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,int,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003ca30",
+    "function_file": "functions/14003ca30_CDVFormatPlugin_GetDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_int_USBVIDEO_DATARANGE.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetDataRangeFromDescriptor@CDVFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KHPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CDVFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 1229,
+    "size": 2111,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "PowerDownDevice",
+    "ea": "0x140006cc8",
+    "function_file": "functions/140006cc8_PowerDownDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PowerDownDevice",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 1217,
+    "size": 343,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBD_QueryUsbCapability",
+    "ea": "0x14003be34",
+    "function_file": "functions/14003be34_USBD_QueryUsbCapability.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "USBD_QueryUsbCapability",
+    "prototype": "NTSTATUS __stdcall(USBD_HANDLE USBDHandle, const GUID *CapabilityType, ULONG OutputBufferLength, PUCHAR OutputBuffer, PULONG ResultLength)",
+    "rank_score": 1217,
+    "size": 454,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CleanupPendingIrpQ",
+    "ea": "0x140010114",
+    "function_file": "functions/140010114_CleanupPendingIrpQ.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCsqRemoveNextIrp",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "CleanupPendingIrpQ",
+    "prototype": "",
+    "rank_score": 1214,
+    "size": 222,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "InitializeTelemetryAssertsKMByDriverObject",
+    "ea": "0x140013174",
+    "function_file": "functions/140013174_InitializeTelemetryAssertsKMByDriverObject.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoQueryFullDriverPath",
+      "ntoskrnl!RtlFreeAnsiString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "InitializeTelemetryAssertsKMByDriverObject",
+    "prototype": "",
+    "rank_score": 1204,
+    "size": 252,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PowerDownDeviceAfterSystemWake",
+    "ea": "0x140011ab0",
+    "function_file": "functions/140011ab0_PowerDownDeviceAfterSystemWake.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PowerDownDeviceAfterSystemWake",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 1204,
+    "size": 264,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "IdleDetectWorkItem",
+    "ea": "0x14000ed70",
+    "function_file": "functions/14000ed70_IdleDetectWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "IdleDetectWorkItem",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 1203,
+    "size": 223,
+    "tags": []
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 1,
+    "demangled": "BuildUSBVideoFilterTopology",
+    "ea": "0x140021fb4",
+    "function_file": "functions/140021fb4_BuildUSBVideoFilterTopology.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx",
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "BuildUSBVideoFilterTopology",
+    "prototype": "",
+    "rank_score": 1060,
+    "size": 2265,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "VCompGetInfoHandler",
+    "ea": "0x14002b340",
+    "function_file": "functions/14002b340_VCompGetInfoHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireControl",
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseControl",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "VCompGetInfoHandler",
+    "prototype": "",
+    "rank_score": 1031,
+    "size": 598,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "VCompKeyFrameRateSetHandler",
+    "ea": "0x14002b690",
+    "function_file": "functions/14002b690_VCompKeyFrameRateSetHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireControl",
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseControl",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "VCompKeyFrameRateSetHandler",
+    "prototype": "",
+    "rank_score": 1026,
+    "size": 334,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "VCompPFramesPerKeyFrameSetHandler",
+    "ea": "0x14002b8e0",
+    "function_file": "functions/14002b8e0_VCompPFramesPerKeyFrameSetHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireControl",
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseControl",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "VCompPFramesPerKeyFrameSetHandler",
+    "prototype": "",
+    "rank_score": 1026,
+    "size": 330,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "VCompQualitySetHandler",
+    "ea": "0x14002bb20",
+    "function_file": "functions/14002bb20_VCompQualitySetHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireControl",
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseControl",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "VCompQualitySetHandler",
+    "prototype": "",
+    "rank_score": 1026,
+    "size": 334,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "VCompWindowSizeSetHandler",
+    "ea": "0x14002bd60",
+    "function_file": "functions/14002bd60_VCompWindowSizeSetHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireControl",
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseControl",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "VCompWindowSizeSetHandler",
+    "prototype": "",
+    "rank_score": 1026,
+    "size": 334,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VCompKeyFrameRateGetHandler",
+    "ea": "0x14002b5a0",
+    "function_file": "functions/14002b5a0_VCompKeyFrameRateGetHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireControl",
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseControl",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "VCompKeyFrameRateGetHandler",
+    "prototype": "",
+    "rank_score": 1024,
+    "size": 231,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VCompPFramesPerKeyFrameGetHandler",
+    "ea": "0x14002b7f0",
+    "function_file": "functions/14002b7f0_VCompPFramesPerKeyFrameGetHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireControl",
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseControl",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "VCompPFramesPerKeyFrameGetHandler",
+    "prototype": "",
+    "rank_score": 1024,
+    "size": 231,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VCompQualityGetHandler",
+    "ea": "0x14002ba30",
+    "function_file": "functions/14002ba30_VCompQualityGetHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireControl",
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseControl",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "VCompQualityGetHandler",
+    "prototype": "",
+    "rank_score": 1024,
+    "size": 231,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VCompWindowSizeGetHandler",
+    "ea": "0x14002bc80",
+    "function_file": "functions/14002bc80_VCompWindowSizeGetHandler.md",
+    "matched_imports": [
+      "ks!KsAcquireControl",
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseControl",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "VCompWindowSizeGetHandler",
+    "prototype": "",
+    "rank_score": 1024,
+    "size": 216,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "QueuePropertyRequest",
+    "ea": "0x140009934",
+    "function_file": "functions/140009934_QueuePropertyRequest.md",
+    "matched_imports": [
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!IoCsqInsertIrp",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "QueuePropertyRequest",
+    "prototype": "__int64 __fastcall(PIRP Irp)",
+    "rank_score": 1015,
+    "size": 609,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SaveInterfaceVar",
+    "ea": "0x140013cc0",
+    "function_file": "functions/140013cc0_SaveInterfaceVar.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeStrings",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "SaveInterfaceVar",
+    "prototype": "__int64 __fastcall(PCWCH String1, ULONG Type, PVOID Data, ULONG DataSize, HANDLE KeyHandle, PCWSTR SourceString)",
+    "rank_score": 1014,
+    "size": 256,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "USBVideoPinWaitForStarvation",
+    "ea": "0x1400188bc",
+    "function_file": "functions/1400188bc_USBVideoPinWaitForStarvation.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoPinWaitForStarvation",
+    "prototype": "",
+    "rank_score": 1009,
+    "size": 206,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FreeResourcesObjectBag_IfCreateFailure",
+    "ea": "0x14001b218",
+    "function_file": "functions/14001b218_FreeResourcesObjectBag_IfCreateFailure.md",
+    "matched_imports": [
+      "ks!KsAcquireDevice",
+      "ks!KsGetDeviceForDeviceObject",
+      "ks!KsGetFilterFromIrp",
+      "ks!KsReleaseDevice",
+      "ks!KsRemoveItemFromObjectBag"
+    ],
+    "matched_strings": [],
+    "name": "FreeResourcesObjectBag_IfCreateFailure",
+    "prototype": "__int64 __fastcall(PIRP Irp)",
+    "rank_score": 1005,
+    "size": 213,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "USBVideoPnpRemove",
+    "ea": "0x1400110f0",
+    "function_file": "functions/1400110f0_USBVideoPnpRemove.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!PoUnregisterPowerSettingCallback"
+    ],
+    "matched_strings": [
+      "UsbdHandleInfo->PendingDelete should be set here UsbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBVideoPnpRemove",
+    "prototype": "",
+    "rank_score": 860,
+    "size": 454,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "RoiIspControlSetHandler",
+    "ea": "0x140007e70",
+    "function_file": "functions/140007e70_RoiIspControlSetHandler.md",
+    "matched_imports": [
+      "ks!KsGenerateEvents",
+      "ks!KsGetFilterFromIrp",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "RoiIspControlSetHandler",
+    "prototype": "__int64 __fastcall(PIRP Irp)",
+    "rank_score": 853,
+    "size": 1669,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "USBD_UrbFree",
+    "ea": "0x14003c3bc",
+    "function_file": "functions/14003c3bc_USBD_UrbFree.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "UsbdHandleInfo->PendingDelete should be set here UsbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBD_UrbFree",
+    "prototype": "void __stdcall(USBD_HANDLE USBDHandle, PURB Urb)",
+    "rank_score": 844,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "USBVideoCreateFilterFactory",
+    "ea": "0x14001bdfc",
+    "function_file": "functions/14001bdfc_USBVideoCreateFilterFactory.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ks!KsCreateFilterFactory",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoCreateFilterFactory",
+    "prototype": "",
+    "rank_score": 835,
+    "size": 812,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "MSXUInit(KSAUTOMATION_TABLE_ * *,_KSDEVICE *,ushort,MSXU_PropertyInitializer *)",
+    "ea": "0x1400540dc",
+    "function_file": "functions/1400540dc_MSXUInit_KSAUTOMATION_TABLE_KSDEVICE_ushort_MSXU_PropertyInitializer.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ks!KsRemoveItemFromObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MSXUInit@@YAJPEAPEAUKSAUTOMATION_TABLE_@@PEAU_KSDEVICE@@GPEAUMSXU_PropertyInitializer@@@Z",
+    "prototype": "__int64 __fastcall(struct KSAUTOMATION_TABLE_ **, struct _KSDEVICE *, unsigned __int16, struct MSXU_PropertyInitializer *)",
+    "rank_score": 827,
+    "size": 1818,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetUnit",
+    "ea": "0x14000d194",
+    "function_file": "functions/14000d194_GetUnit.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx",
+      "USBD!USBD_ParseDescriptors"
+    ],
+    "matched_strings": [],
+    "name": "GetUnit",
+    "prototype": "__int64 __fastcall(PUSB_CONFIGURATION_DESCRIPTOR ConfigurationDescriptor)",
+    "rank_score": 825,
+    "size": 307,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "StoreUVCCacheControl",
+    "ea": "0x14001d94c",
+    "function_file": "functions/14001d94c_StoreUVCCacheControl.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "StoreUVCCacheControl",
+    "prototype": "",
+    "rank_score": 816,
+    "size": 366,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "UsbVideoDeviceStoreRegistry",
+    "ea": "0x14001334c",
+    "function_file": "functions/14001334c_UsbVideoDeviceStoreRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "UsbVideoDeviceStoreRegistry",
+    "prototype": "",
+    "rank_score": 816,
+    "size": 284,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CacheExposureControlValues",
+    "ea": "0x140028f64",
+    "function_file": "functions/140028f64_CacheExposureControlValues.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ks!KsRemoveItemFromObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "CacheExposureControlValues",
+    "prototype": "",
+    "rank_score": 807,
+    "size": 425,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "InitializeIrpThreadAndQueue",
+    "ea": "0x140010e64",
+    "function_file": "functions/140010e64_InitializeIrpThreadAndQueue.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "InitializeIrpThreadAndQueue",
+    "prototype": "",
+    "rank_score": 807,
+    "size": 468,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "USBVideoPnpPostStart",
+    "ea": "0x14001ddb0",
+    "function_file": "functions/14001ddb0_USBVideoPnpPostStart.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoPnpPostStart",
+    "prototype": "",
+    "rank_score": 803,
+    "size": 248,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 96,
+    "demangled": "SubmitControlRequest",
+    "ea": "0x140008640",
+    "function_file": "functions/140008640_SubmitControlRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "SubmitControlRequest",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, void *, size_t Size, __int64, __int64)",
+    "rank_score": 672,
+    "size": 1856,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MSXU_FaceAuthGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x14005c1d0",
+    "function_file": "functions/14005c1d0_MSXU_FaceAuthGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [
+      "ks!KsGetFilterFromIrp",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MSXU_FaceAuthGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(PIRP Irp, struct KSIDENTIFIER *, void *)",
+    "rank_score": 639,
+    "size": 955,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "PassiveWakeup",
+    "ea": "0x14001fcb0",
+    "function_file": "functions/14001fcb0_PassiveWakeup.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoUninitializeWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "PassiveWakeup",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 639,
+    "size": 302,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::GetStillDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003fdb0",
+    "function_file": "functions/14003fdb0_CUncompressedFormatPlugin_GetStillDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_USBVIDEO_DATARAN.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetStillDataRangeFromDescriptor@CUncompressedFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CUncompressedFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 629,
+    "size": 701,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GenericDataIntersect",
+    "ea": "0x14000bb60",
+    "function_file": "functions/14000bb60_GenericDataIntersect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "GenericDataIntersect",
+    "prototype": "",
+    "rank_score": 627,
+    "size": 1688,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 10,
+    "demangled": "GetFirstVideoStreamingAltSetting",
+    "ea": "0x14000c80c",
+    "function_file": "functions/14000c80c_GetFirstVideoStreamingAltSetting.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "GetFirstVideoStreamingAltSetting",
+    "prototype": "__int64 __fastcall(PVOID DescriptorBuffer)",
+    "rank_score": 625,
+    "size": 327,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AutoUpdateGetHandler",
+    "ea": "0x14002dbb0",
+    "function_file": "functions/14002dbb0_AutoUpdateGetHandler.md",
+    "matched_imports": [
+      "ks!KsGetFilterFromIrp",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "AutoUpdateGetHandler",
+    "prototype": "",
+    "rank_score": 623,
+    "size": 291,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CFrameFormatPlugin::GetStillDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003e460",
+    "function_file": "functions/14003e460_CFrameFormatPlugin_GetStillDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_USBVIDEO_DATARANGE.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetStillDataRangeFromDescriptor@CFrameFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CFrameFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 619,
+    "size": 701,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMJPEGFormatPlugin::GetStillDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003d4c0",
+    "function_file": "functions/14003d4c0_CMJPEGFormatPlugin_GetStillDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_USBVIDEO_DATARANGE.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetStillDataRangeFromDescriptor@CMJPEGFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CMJPEGFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 618,
+    "size": 629,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "FilterCreateQueue_CompleteIrp",
+    "ea": "0x140013f40",
+    "function_file": "functions/140013f40_FilterCreateQueue_CompleteIrp.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "FilterCreateQueue_CompleteIrp",
+    "prototype": "",
+    "rank_score": 617,
+    "size": 162,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "RequestDxPowerIrp",
+    "ea": "0x14000ee58",
+    "function_file": "functions/14000ee58_RequestDxPowerIrp.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!PoRequestPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "RequestDxPowerIrp",
+    "prototype": "__int64 __fastcall(PVOID Context, POWER_STATE PowerState)",
+    "rank_score": 617,
+    "size": 297,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "USBVideoWorkItemHandler",
+    "ea": "0x140021340",
+    "function_file": "functions/140021340_USBVideoWorkItemHandler.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoWorkItemHandler",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 617,
+    "size": 348,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CStreamFormatPlugin::GetDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,int,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003d890",
+    "function_file": "functions/14003d890_CStreamFormatPlugin_GetDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_int_USBVIDEO_DATARANGE.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetDataRangeFromDescriptor@CStreamFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KHPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CStreamFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 616,
+    "size": 470,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "UnInitializePassiveCompletionThread",
+    "ea": "0x14003a1c8",
+    "function_file": "functions/14003a1c8_UnInitializePassiveCompletionThread.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "UnInitializePassiveCompletionThread",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 379,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PassiveCompletionInsertIrp",
+    "ea": "0x140012324",
+    "function_file": "functions/140012324_PassiveCompletionInsertIrp.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PassiveCompletionInsertIrp",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 209,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMPEG2TSFormatPlugin::GetDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,int,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003e910",
+    "function_file": "functions/14003e910_CMPEG2TSFormatPlugin_GetDataRangeFromDescriptor_VIDEO_SPECIFIC_VIDEO_SPECIFIC_ulong_int_USBVIDEO_DATARANGE.md",
+    "matched_imports": [
+      "ks!KsAddItemToObjectBag",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetDataRangeFromDescriptor@CMPEG2TSFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KHPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CMPEG2TSFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 614,
+    "size": 380,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ExitIrpThreadAndQueue",
+    "ea": "0x140010020",
+    "function_file": "functions/140010020_ExitIrpThreadAndQueue.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "ExitIrpThreadAndQueue",
+    "prototype": "",
+    "rank_score": 606,
+    "size": 236,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VidcapRemoveEvent",
+    "ea": "0x14002f0e0",
+    "function_file": "functions/14002f0e0_VidcapRemoveEvent.md",
+    "matched_imports": [
+      "ks!KsGetObjectFromFileObject",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "VidcapRemoveEvent",
+    "prototype": "",
+    "rank_score": 602,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VidcapSearchRemoveEvent",
+    "ea": "0x14002f240",
+    "function_file": "functions/14002f240_VidcapSearchRemoveEvent.md",
+    "matched_imports": [
+      "ks!KsGetObjectFromFileObject",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "VidcapSearchRemoveEvent",
+    "prototype": "",
+    "rank_score": 602,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ForeachRegistryVar",
+    "ea": "0x140022fa0",
+    "function_file": "functions/140022fa0_ForeachRegistryVar.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "ForeachRegistryVar",
+    "prototype": "",
+    "rank_score": 554,
+    "size": 153,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MSXU_DigitalWindowConfigGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140055470",
+    "function_file": "functions/140055470_MSXU_DigitalWindowConfigGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MSXU_DigitalWindowConfigGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 447,
+    "size": 1019,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "ProbeCommitGetHandler",
+    "ea": "0x140023a88",
+    "function_file": "functions/140023a88_ProbeCommitGetHandler.md",
+    "matched_imports": [
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp"
+    ],
+    "matched_strings": [],
+    "name": "ProbeCommitGetHandler",
+    "prototype": "",
+    "rank_score": 433,
+    "size": 479,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "FindDispatcherFromDescriptor",
+    "ea": "0x14000d7c0",
+    "function_file": "functions/14000d7c0_FindDispatcherFromDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "FindDispatcherFromDescriptor",
+    "prototype": "",
+    "rank_score": 432,
+    "size": 713,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "GetVideoSpecificDescriptor",
+    "ea": "0x14000cb20",
+    "function_file": "functions/14000cb20_GetVideoSpecificDescriptor.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx",
+      "USBD!USBD_ParseDescriptors"
+    ],
+    "matched_strings": [],
+    "name": "GetVideoSpecificDescriptor",
+    "prototype": "__int64 __fastcall(PVOID DescriptorBuffer)",
+    "rank_score": 428,
+    "size": 201,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CompleteCreateIrp",
+    "ea": "0x14001977c",
+    "function_file": "functions/14001977c_CompleteCreateIrp.md",
+    "matched_imports": [
+      "ks!KsGetDeviceForDeviceObject",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "CompleteCreateIrp",
+    "prototype": "__int64 __fastcall(PIRP Irp)",
+    "rank_score": 427,
+    "size": 203,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 7,
+    "demangled": "SubmitControlRequestA",
+    "ea": "0x1400091c4",
+    "function_file": "functions/1400091c4_SubmitControlRequestA.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SubmitControlRequestA",
+    "prototype": "",
+    "rank_score": 424,
+    "size": 1241,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 14,
+    "demangled": "GetSetInterfaceControl",
+    "ea": "0x140009dc8",
+    "function_file": "functions/140009dc8_GetSetInterfaceControl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "GetSetInterfaceControl",
+    "prototype": "__int64 __fastcall(int, int, int, int, void *Src, SIZE_T NumberOfBytes)",
+    "rank_score": 422,
+    "size": 355,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CountTerminalUnits",
+    "ea": "0x14001916c",
+    "function_file": "functions/14001916c_CountTerminalUnits.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "CountTerminalUnits",
+    "prototype": "__int64 __fastcall(PUSB_CONFIGURATION_DESCRIPTOR ConfigurationDescriptor)",
+    "rank_score": 421,
+    "size": 750,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "PassiveCompletionThread",
+    "ea": "0x1400015b0",
+    "function_file": "functions/1400015b0_PassiveCompletionThread.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!PsTerminateSystemThread"
+    ],
+    "matched_strings": [],
+    "name": "PassiveCompletionThread",
+    "prototype": "KSTART_ROUTINE",
+    "rank_score": 419,
+    "size": 434,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "UnConfigureUSBVideoDevice",
+    "ea": "0x1400214a4",
+    "function_file": "functions/1400214a4_UnConfigureUSBVideoDevice.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "UnConfigureUSBVideoDevice",
+    "prototype": "",
+    "rank_score": 419,
+    "size": 504,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "InitializeProbeCommitControl",
+    "ea": "0x14002af70",
+    "function_file": "functions/14002af70_InitializeProbeCommitControl.md",
+    "matched_imports": [
+      "ks!KsGetDevice",
+      "ks!KsGetFilterFromIrp"
+    ],
+    "matched_strings": [],
+    "name": "InitializeProbeCommitControl",
+    "prototype": "",
+    "rank_score": 418,
+    "size": 247,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x14005e18c",
+    "function_file": "functions/14005e18c_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetTerminalUnitForBridgePin",
+    "ea": "0x140021dd8",
+    "function_file": "functions/140021dd8_GetTerminalUnitForBridgePin.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "GetTerminalUnitForBridgePin",
+    "prototype": "__int64 __fastcall(PUSB_CONFIGURATION_DESCRIPTOR ConfigurationDescriptor)",
+    "rank_score": 415,
+    "size": 330,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x140054e8c",
+    "function_file": "functions/140054e8c_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CsCompleteCanceledIrp",
+    "ea": "0x14003a720",
+    "function_file": "functions/14003a720_CsCompleteCanceledIrp.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "CsCompleteCanceledIrp",
+    "prototype": "IO_CSQ_COMPLETE_CANCELED_IRP",
+    "rank_score": 412,
+    "size": 115,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "LoadUVCCacheControl",
+    "ea": "0x14001d4e0",
+    "function_file": "functions/14001d4e0_LoadUVCCacheControl.md",
+    "matched_imports": [
+      "ks!KsAcquireDevice",
+      "ks!KsReleaseDevice"
+    ],
+    "matched_strings": [],
+    "name": "LoadUVCCacheControl",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 412,
+    "size": 724,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PassiveCompletionRemoveNextIrp",
+    "ea": "0x140001768",
+    "function_file": "functions/140001768_PassiveCompletionRemoveNextIrp.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PassiveCompletionRemoveNextIrp",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 122,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreateTelemetrySessionId",
+    "ea": "0x14001b644",
+    "function_file": "functions/14001b644_CreateTelemetrySessionId.md",
+    "matched_imports": [
+      "ntoskrnl!ExUuidCreate",
+      "ntoskrnl!KeDelayExecutionThread"
+    ],
+    "matched_strings": [],
+    "name": "CreateTelemetrySessionId",
+    "prototype": "__int64 __fastcall(UUID *Uuid)",
+    "rank_score": 403,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DumpAndValidateAllDescriptorsEx",
+    "ea": "0x14002f3e8",
+    "function_file": "functions/14002f3e8_DumpAndValidateAllDescriptorsEx.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Config descriptor has more than desired data.",
+      "Wrong Descriptor Type for USB_CONFIGURATION_DESCRIPTOR.",
+      "Invalid Interface Descriptor",
+      "Invalid Config Descriptor",
+      "Invalid Class Specific Endpoint Descriptor",
+      "Invalid Endpoint Descriptor",
+      "Invalid Generic Descriptor"
+    ],
+    "name": "DumpAndValidateAllDescriptorsEx",
+    "prototype": "",
+    "rank_score": 302,
+    "size": 415,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 32,
+    "caller_count": 1,
+    "demangled": "DumpAndValidateClassSpecInterfaceDescriptorEx",
+    "ea": "0x14002f8cc",
+    "function_file": "functions/14002f8cc_DumpAndValidateClassSpecInterfaceDescriptorEx.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Invalid descriptor length for classSpecInterfaceDescriptor",
+      "Invalid Extension Unit for VIDEO_SUBCLASS_CONTROL",
+      "Invalid UNCOMPRESSED Format for VIDEO_SUBCLASS_STREAMING",
+      "Invalid UNCOMPRESSED Frame for VIDEO_SUBCLASS_STREAMING",
+      "Generic Error for classSpecInterfaceDescriptor"
+    ],
+    "name": "DumpAndValidateClassSpecInterfaceDescriptorEx",
+    "prototype": "",
+    "rank_score": 275,
+    "size": 1157,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "MSXU_FaceAuthSet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x14005c860",
+    "function_file": "functions/14005c860_MSXU_FaceAuthSet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [
+      "ks!KsGetFilterFromIrp"
+    ],
+    "matched_strings": [],
+    "name": "?MSXU_FaceAuthSet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(PIRP Irp, struct KSIDENTIFIER *, void *)",
+    "rank_score": 241,
+    "size": 1104,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "MSXU_ExposureSet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x14005b300",
+    "function_file": "functions/14005b300_MSXU_ExposureSet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [
+      "ks!KsGetFilterFromIrp"
+    ],
+    "matched_strings": [],
+    "name": "?MSXU_ExposureSet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(PIRP Irp, struct KSIDENTIFIER *, void *)",
+    "rank_score": 235,
+    "size": 1425,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 20,
+    "demangled": "MSXUGetInfo(_IRP *,_KSFILTER * *,uchar *,uchar *,_TOPOLOGY_NODE_INFO * *,_HW_DEVICE_EXTENSION * *)",
+    "ea": "0x14005bd18",
+    "function_file": "functions/14005bd18_MSXUGetInfo_IRP_KSFILTER_uchar_uchar_TOPOLOGY_NODE_INFO_HW_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ks!KsGetFilterFromIrp"
+    ],
+    "matched_strings": [],
+    "name": "?MSXUGetInfo@@YAJPEAU_IRP@@PEAPEAU_KSFILTER@@PEAE2PEAPEAU_TOPOLOGY_NODE_INFO@@PEAPEAU_HW_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct _KSFILTER **, unsigned __int8 *, unsigned __int8 *, struct _TOPOLOGY_NODE_INFO **, struct _HW_DEVICE_EXTENSION **)",
+    "rank_score": 233,
+    "size": 181,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 68,
+    "demangled": "GetNodeInfoAndValidate",
+    "ea": "0x140008f80",
+    "function_file": "functions/140008f80_GetNodeInfoAndValidate.md",
+    "matched_imports": [
+      "ks!KsGetFilterFromIrp"
+    ],
+    "matched_strings": [],
+    "name": "GetNodeInfoAndValidate",
+    "prototype": "",
+    "rank_score": 231,
+    "size": 571,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CountTopologyComponents",
+    "ea": "0x140019d98",
+    "function_file": "functions/140019d98_CountTopologyComponents.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "CountTopologyComponents",
+    "prototype": "__int64 __usercall@<rax>(PVOID DescriptorBuffer@<rcx>, __int64)",
+    "rank_score": 230,
+    "size": 553,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "GetVideoEndpointAddress",
+    "ea": "0x14000ca50",
+    "function_file": "functions/14000ca50_GetVideoEndpointAddress.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "GetVideoEndpointAddress",
+    "prototype": "__int64 __fastcall(PVOID StartPosition)",
+    "rank_score": 230,
+    "size": 202,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "DumpAndValidateInputHeader",
+    "ea": "0x1400360a4",
+    "function_file": "functions/1400360a4_DumpAndValidateInputHeader.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLogUnexpectedCodepath"
+    ],
+    "matched_strings": [],
+    "name": "DumpAndValidateInputHeader",
+    "prototype": "",
+    "rank_score": 229,
+    "size": 1489,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "GetUnitControlInterface",
+    "ea": "0x140018a70",
+    "function_file": "functions/140018a70_GetUnitControlInterface.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "GetUnitControlInterface",
+    "prototype": "",
+    "rank_score": 229,
+    "size": 160,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "FilterCreateQueue_CompleteQueue",
+    "ea": "0x1400199e8",
+    "function_file": "functions/1400199e8_FilterCreateQueue_CompleteQueue.md",
+    "matched_imports": [
+      "ntoskrnl!IoCsqRemoveNextIrp"
+    ],
+    "matched_strings": [],
+    "name": "FilterCreateQueue_CompleteQueue",
+    "prototype": "",
+    "rank_score": 228,
+    "size": 157,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetStatusInterruptEndpointIndex",
+    "ea": "0x140021c54",
+    "function_file": "functions/140021c54_GetStatusInterruptEndpointIndex.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "GetStatusInterruptEndpointIndex",
+    "prototype": "__int64 __fastcall(PVOID StartPosition)",
+    "rank_score": 227,
+    "size": 379,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MSXU_ExposureGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x14005b8a0",
+    "function_file": "functions/14005b8a0_MSXU_ExposureGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [
+      "ks!KsGetFilterFromIrp"
+    ],
+    "matched_strings": [],
+    "name": "?MSXU_ExposureGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(PIRP Irp, struct KSIDENTIFIER *, void *)",
+    "rank_score": 227,
+    "size": 978,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x140055150",
+    "function_file": "functions/140055150_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "GetEndpointDescriptorEx",
+    "ea": "0x14000d434",
+    "function_file": "functions/14000d434_GetEndpointDescriptorEx.md",
+    "matched_imports": [
+      "USBD!USBD_ParseDescriptors"
+    ],
+    "matched_strings": [],
+    "name": "GetEndpointDescriptorEx",
+    "prototype": "__int64 __usercall@<rax>(PVOID DescriptorBuffer@<rcx>, __int64, __int64)",
+    "rank_score": 225,
+    "size": 665,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetTerminalUnitForInterface",
+    "ea": "0x14000d0f4",
+    "function_file": "functions/14000d0f4_GetTerminalUnitForInterface.md",
+    "matched_imports": [
+      "USBD!USBD_ParseDescriptors"
+    ],
+    "matched_strings": [],
+    "name": "GetTerminalUnitForInterface",
+    "prototype": "__int64 __fastcall(PUSB_CONFIGURATION_DESCRIPTOR ConfigurationDescriptor)",
+    "rank_score": 225,
+    "size": 151,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14005e078",
+    "function_file": "functions/14005e078_DriverEntry.md",
+    "matched_imports": [
+      "ks!KsInitializeDriver"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 224,
+    "size": 268,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetSpecVersion",
+    "ea": "0x1400151a0",
+    "function_file": "functions/1400151a0_GetSpecVersion.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "GetSpecVersion",
+    "prototype": "__int64 __fastcall(PVOID StartPosition)",
+    "rank_score": 224,
+    "size": 141,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RoiConfigCapsGetHandler",
+    "ea": "0x1400103f0",
+    "function_file": "functions/1400103f0_RoiConfigCapsGetHandler.md",
+    "matched_imports": [
+      "ks!KsGetFilterFromIrp"
+    ],
+    "matched_strings": [],
+    "name": "RoiConfigCapsGetHandler",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 237,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "USBParseDescriptorWrapper",
+    "ea": "0x14000d790",
+    "function_file": "functions/14000d790_USBParseDescriptorWrapper.md",
+    "matched_imports": [
+      "USBD!USBD_ParseDescriptors"
+    ],
+    "matched_strings": [],
+    "name": "USBParseDescriptorWrapper",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "AcquireProbeCommitLock",
+    "ea": "0x14000a468",
+    "function_file": "functions/14000a468_AcquireProbeCommitLock.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "AcquireProbeCommitLock",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 69,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CStreamFormatPlugin::DataIntersect(KSDATAFORMAT *,KSDATAFORMAT *,ulong,void *,ulong *)",
+    "ea": "0x14003d760",
+    "function_file": "functions/14003d760_CStreamFormatPlugin_DataIntersect_KSDATAFORMAT_KSDATAFORMAT_ulong_void_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?DataIntersect@CStreamFormatPlugin@@UEAAJPEATKSDATAFORMAT@@0KPEAXPEAK@Z",
+    "prototype": "int(CStreamFormatPlugin *__hidden this, union KSDATAFORMAT *, union KSDATAFORMAT *, unsigned int, void *, unsigned int *)",
+    "rank_score": 223,
+    "size": 273,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MSXU_MetadataGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x14005bf20",
+    "function_file": "functions/14005bf20_MSXU_MetadataGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [
+      "ks!KsGetFilterFromIrp"
+    ],
+    "matched_strings": [],
+    "name": "?MSXU_MetadataGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(PIRP Irp, struct KSIDENTIFIER *, void *)",
+    "rank_score": 222,
+    "size": 678,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x1400052a8",
+    "function_file": "functions/1400052a8_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 89,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "GetEndpointDescriptor",
+    "ea": "0x14000d2d0",
+    "function_file": "functions/14000d2d0_GetEndpointDescriptor.md",
+    "matched_imports": [
+      "USBD!USBD_ParseDescriptors"
+    ],
+    "matched_strings": [],
+    "name": "GetEndpointDescriptor",
+    "prototype": "__int64 __usercall@<rax>(PVOID DescriptorBuffer@<rcx>, PVOID StartPosition@<rdx>, __int64)",
+    "rank_score": 219,
+    "size": 273,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "operator delete(void *)",
+    "ea": "0x14003af44",
+    "function_file": "functions/14003af44_operator_delete_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 219,
+    "size": 29,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "GetNextVideoAltSetting",
+    "ea": "0x14000d3e8",
+    "function_file": "functions/14000d3e8_GetNextVideoAltSetting.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "GetNextVideoAltSetting",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 67,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x14001e8b4",
+    "function_file": "functions/14001e8b4_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 218,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x14005e24c",
+    "function_file": "functions/14005e24c_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x14001ed70",
+    "function_file": "functions/14001ed70_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x140054a30",
+    "function_file": "functions/140054a30_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 187,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CleanupFormatPluginList",
+    "ea": "0x14001876c",
+    "function_file": "functions/14001876c_CleanupFormatPluginList.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "CleanupFormatPluginList",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 106,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "FilterCreateQueue_CompleteIrpWorker",
+    "ea": "0x14003a7e0",
+    "function_file": "functions/14003a7e0_FilterCreateQueue_CompleteIrpWorker.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "FilterCreateQueue_CompleteIrpWorker",
+    "prototype": "IO_WORKITEM_ROUTINE_EX",
+    "rank_score": 213,
+    "size": 64,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetControlInterfaceNr",
+    "ea": "0x140021a58",
+    "function_file": "functions/140021a58_GetControlInterfaceNr.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx"
+    ],
+    "matched_strings": [],
+    "name": "GetControlInterfaceNr",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 69,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "USBVideoInterruptCompletion",
+    "ea": "0x14000f940",
+    "function_file": "functions/14000f940_USBVideoInterruptCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoInterruptCompletion",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 179,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "USBVideoCompleteSynch",
+    "ea": "0x14000dde0",
+    "function_file": "functions/14000dde0_USBVideoCompleteSynch.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoCompleteSynch",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 211,
+    "size": 44,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "USBVideoDeferIrpCompletion",
+    "ea": "0x14001dac0",
+    "function_file": "functions/14001dac0_USBVideoDeferIrpCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBVideoDeferIrpCompletion",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "USBD_SyncCompletionRoutine",
+    "ea": "0x140014340",
+    "function_file": "functions/140014340_USBD_SyncCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBD_SyncCompletionRoutine",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 210,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001078",
+    "function_file": "functions/140001078_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, ULONG, __int64)",
+    "rank_score": 209,
+    "size": 162,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "RemoveUSBVideoDevice",
+    "ea": "0x1400112c0",
+    "function_file": "functions/1400112c0_RemoveUSBVideoDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockAndWaitEx"
+    ],
+    "matched_strings": [],
+    "name": "RemoveUSBVideoDevice",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 140,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FrameRenderCancelCallback",
+    "ea": "0x14001c160",
+    "function_file": "functions/14001c160_FrameRenderCancelCallback.md",
+    "matched_imports": [
+      "ks!KsStreamPointerDelete"
+    ],
+    "matched_strings": [],
+    "name": "FrameRenderCancelCallback",
+    "prototype": "void __stdcall(PKSSTREAM_POINTER StreamPointer)",
+    "rank_score": 202,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RemoveMatchingIrpFromQueue",
+    "ea": "0x140012cc4",
+    "function_file": "functions/140012cc4_RemoveMatchingIrpFromQueue.md",
+    "matched_imports": [
+      "ntoskrnl!IoCsqRemoveIrp"
+    ],
+    "matched_strings": [],
+    "name": "RemoveMatchingIrpFromQueue",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "FilterCreateQueue_Lock",
+    "ea": "0x1400122a0",
+    "function_file": "functions/1400122a0_FilterCreateQueue_Lock.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc"
+    ],
+    "matched_strings": [],
+    "name": "FilterCreateQueue_Lock",
+    "prototype": "IO_CSQ_ACQUIRE_LOCK",
+    "rank_score": 200,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "FilterCreateQueue_Unlock",
+    "ea": "0x140012d20",
+    "function_file": "functions/140012d20_FilterCreateQueue_Unlock.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "FilterCreateQueue_Unlock",
+    "prototype": "IO_CSQ_RELEASE_LOCK",
+    "rank_score": 200,
+    "size": 26,
+    "tags": []
+  },
+  {
+    "callee_count": 31,
+    "caller_count": 1,
+    "demangled": "DumpAndValidateClassSpecInterfaceDescriptor",
+    "ea": "0x14002f590",
+    "function_file": "functions/14002f590_DumpAndValidateClassSpecInterfaceDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateClassSpecInterfaceDescriptor",
+    "prototype": "",
+    "rank_score": 62,
+    "size": 819,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MSXU_EVCompensationSet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140056310",
+    "function_file": "functions/140056310_MSXU_EVCompensationSet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_EVCompensationSet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 50,
+    "size": 1127,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IsCacheUVCControlEnabled",
+    "ea": "0x14000e8a8",
+    "function_file": "functions/14000e8a8_IsCacheUVCControlEnabled.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CacheUVCControl"
+    ],
+    "name": "IsCacheUVCControlEnabled",
+    "prototype": "",
+    "rank_score": 46,
+    "size": 180,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MSXU_EVCompensationGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140055f40",
+    "function_file": "functions/140055f40_MSXU_EVCompensationGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_EVCompensationGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 46,
+    "size": 960,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MSXU_FieldOfView2ConfigGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140056b20",
+    "function_file": "functions/140056b20_MSXU_FieldOfView2ConfigGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_FieldOfView2ConfigGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 46,
+    "size": 959,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MSXU_FocusSet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140057770",
+    "function_file": "functions/140057770_MSXU_FocusSet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_FocusSet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 46,
+    "size": 1907,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 3,
+    "demangled": "UvcFmtCreateHandler",
+    "ea": "0x14000da90",
+    "function_file": "functions/14000da90_UvcFmtCreateHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UvcFmtCreateHandler",
+    "prototype": "",
+    "rank_score": 45,
+    "size": 706,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "DumpAndValidateFormatUncompressed",
+    "ea": "0x140032dcc",
+    "function_file": "functions/140032dcc_DumpAndValidateFormatUncompressed.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateFormatUncompressed",
+    "prototype": "",
+    "rank_score": 43,
+    "size": 1526,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "MSXU_WhiteBalanceSet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140059c10",
+    "function_file": "functions/140059c10_MSXU_WhiteBalanceSet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_WhiteBalanceSet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 43,
+    "size": 1149,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 6,
+    "demangled": "ProbeCommitSetHandler",
+    "ea": "0x14000a4b4",
+    "function_file": "functions/14000a4b4_ProbeCommitSetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ProbeCommitSetHandler",
+    "prototype": "__int64 __usercall@<rax>(int@<ecx>, char)",
+    "rank_score": 43,
+    "size": 964,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "MSXU_Framerate_ThrottleSet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140058200",
+    "function_file": "functions/140058200_MSXU_Framerate_ThrottleSet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_Framerate_ThrottleSet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 42,
+    "size": 1259,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "DumpAndValidateFrameUncompressed",
+    "ea": "0x140034b88",
+    "function_file": "functions/140034b88_DumpAndValidateFrameUncompressed.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateFrameUncompressed",
+    "prototype": "",
+    "rank_score": 41,
+    "size": 1610,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MSXU_Video_HDRSet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140059380",
+    "function_file": "functions/140059380_MSXU_Video_HDRSet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_Video_HDRSet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 41,
+    "size": 1278,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MSXU_DigitalWindowSet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140055b70",
+    "function_file": "functions/140055b70_MSXU_DigitalWindowSet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_DigitalWindowSet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 39,
+    "size": 956,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MSXU_WhiteBalanceGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140059890",
+    "function_file": "functions/140059890_MSXU_WhiteBalanceGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_WhiteBalanceGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 38,
+    "size": 877,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 34,
+    "demangled": "Feature_Servicing_UvcDescriptPointerFix__private_IsEnabledNoReportingNoInline",
+    "ea": "0x140038ae4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Servicing_UvcDescriptPointerFix__private_IsEnabledNoReportingNoInline",
+    "prototype": "",
+    "rank_score": 37,
+    "size": 50,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 54,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140040a30",
+    "function_file": "functions/140040a30_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CommitStillBandwidth",
+    "ea": "0x140015388",
+    "function_file": "functions/140015388_CommitStillBandwidth.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CommitStillBandwidth",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 778,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "DumpAndValidateExtensionUnit",
+    "ea": "0x140030704",
+    "function_file": "functions/140030704_DumpAndValidateExtensionUnit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateExtensionUnit",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 998,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "MSXU_DigitalWindowGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140055880",
+    "function_file": "functions/140055880_MSXU_DigitalWindowGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_DigitalWindowGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 36,
+    "size": 740,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "MSXU_FocusGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140057470",
+    "function_file": "functions/140057470_MSXU_FocusGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_FocusGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 36,
+    "size": 760,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MSXU_Framerate_ThrottleGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140057ef0",
+    "function_file": "functions/140057ef0_MSXU_Framerate_ThrottleGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_Framerate_ThrottleGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 36,
+    "size": 774,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MSXU_IRTorchSet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x1400589c0",
+    "function_file": "functions/1400589c0_MSXU_IRTorchSet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_IRTorchSet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 36,
+    "size": 858,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "WhitebalanceComponentSetHandler",
+    "ea": "0x140027970",
+    "function_file": "functions/140027970_WhitebalanceComponentSetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WhitebalanceComponentSetHandler",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 1158,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 151,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140040a70",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MSXU_IRTorchGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140058700",
+    "function_file": "functions/140058700_MSXU_IRTorchGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_IRTorchGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 35,
+    "size": 690,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CUncompressedFormatPlugin::`scalar deleting destructor'(uint)",
+    "ea": "0x14003c7e8",
+    "function_file": "functions/14003c7e8_CUncompressedFormatPlugin_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCUncompressedFormatPlugin@@QEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CUncompressedFormatPlugin *__hidden this, unsigned int)",
+    "rank_score": 34,
+    "size": 32,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CommitVideoBandwidth",
+    "ea": "0x14000b57c",
+    "function_file": "functions/14000b57c_CommitVideoBandwidth.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CommitVideoBandwidth",
+    "prototype": "",
+    "rank_score": 34,
+    "size": 632,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "MSXU_FieldOfView2Set(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140057160",
+    "function_file": "functions/140057160_MSXU_FieldOfView2Set_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_FieldOfView2Set@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 34,
+    "size": 778,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MSXU_Video_HDRGet(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x1400590c0",
+    "function_file": "functions/1400590c0_MSXU_Video_HDRGet_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_Video_HDRGet@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 34,
+    "size": 684,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "DumpAndValidateConfigDescriptor",
+    "ea": "0x140030208",
+    "function_file": "functions/140030208_DumpAndValidateConfigDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateConfigDescriptor",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 667,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "MSXU_FieldOfView2Get(_IRP *,KSIDENTIFIER *,void *)",
+    "ea": "0x140056ef0",
+    "function_file": "functions/140056ef0_MSXU_FieldOfView2Get_IRP_KSIDENTIFIER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MSXU_FieldOfView2Get@@YAJPEAU_IRP@@PEAUKSIDENTIFIER@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, struct KSIDENTIFIER *, void *)",
+    "rank_score": 32,
+    "size": 604,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 34,
+    "demangled": "memmove",
+    "ea": "0x140040b40",
+    "function_file": "functions/140040b40_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "IsBulkVideoEndpoint",
+    "ea": "0x14000c95c",
+    "function_file": "functions/14000c95c_IsBulkVideoEndpoint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "IsBulkVideoEndpoint",
+    "prototype": "__int64 __fastcall(PVOID DescriptorBuffer, PVOID StartPosition)",
+    "rank_score": 30,
+    "size": 128,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "StillProbeCommitSetHandler",
+    "ea": "0x140023c70",
+    "function_file": "functions/140023c70_StillProbeCommitSetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StillProbeCommitSetHandler",
+    "prototype": "__int64 __usercall@<rax>(int@<ecx>, char)",
+    "rank_score": 30,
+    "size": 390,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WhitebalanceComponentGetHandler",
+    "ea": "0x1400276e0",
+    "function_file": "functions/1400276e0_WhitebalanceComponentGetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WhitebalanceComponentGetHandler",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 639,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "UpdateUncompressedVideoStride",
+    "ea": "0x140012ed0",
+    "function_file": "functions/140012ed0_UpdateUncompressedVideoStride.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateUncompressedVideoStride",
+    "prototype": "",
+    "rank_score": 29,
+    "size": 603,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 82,
+    "demangled": "memset",
+    "ea": "0x140040e40",
+    "function_file": "functions/140040e40_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "GetPinNumberForStreamingTerminalUnit",
+    "ea": "0x140021bc8",
+    "function_file": "functions/140021bc8_GetPinNumberForStreamingTerminalUnit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetPinNumberForStreamingTerminalUnit",
+    "prototype": "__int64 __fastcall(PVOID DescriptorBuffer)",
+    "rank_score": 28,
+    "size": 133,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "UpdateUncompressedVideoStrideBitmapHeader",
+    "ea": "0x14003c868",
+    "function_file": "functions/14003c868_UpdateUncompressedVideoStrideBitmapHeader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateUncompressedVideoStrideBitmapHeader",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 405,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14001e994",
+    "function_file": "functions/14001e994_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 274,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 26,
+    "demangled": "ValidateExtendedPropertyDataBufferLength",
+    "ea": "0x14000de14",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ValidateExtendedPropertyDataBufferLength",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsFieldOfView2Config(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005ad30",
+    "function_file": "functions/14005ad30_ValidateMSXUPayloadsFieldOfView2Config_HW_DEVICE_EXTENSION_uchar_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsFieldOfView2Config@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 26,
+    "size": 401,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 131,
+    "demangled": "WPP_SF_",
+    "ea": "0x140004bac",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 99,
+    "demangled": "WPP_SF_d",
+    "ea": "0x14001b118",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 53,
+    "demangled": "WPP_SF_dd",
+    "ea": "0x1400051e4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_dd",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 148,
+    "demangled": "WPP_SF_q",
+    "ea": "0x14001b15c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 61,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x14001ab4c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 34,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x14001d0cc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 25,
+    "demangled": "WPP_SF_qqD",
+    "ea": "0x140001544",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qqD",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BacklightCompensationGetHandler",
+    "ea": "0x140025f90",
+    "function_file": "functions/140025f90_BacklightCompensationGetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BacklightCompensationGetHandler",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 242,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BacklightCompensationSetHandler",
+    "ea": "0x140026090",
+    "function_file": "functions/140026090_BacklightCompensationSetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BacklightCompensationSetHandler",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 211,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CDVFormatPlugin::`scalar deleting destructor'(uint)",
+    "ea": "0x14003c6f8",
+    "function_file": "functions/14003c6f8_CDVFormatPlugin_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCDVFormatPlugin@@QEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CDVFormatPlugin *__hidden this, unsigned int)",
+    "rank_score": 24,
+    "size": 32,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CFrameFormatPlugin::`scalar deleting destructor'(uint)",
+    "ea": "0x14003c720",
+    "function_file": "functions/14003c720_CFrameFormatPlugin_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCFrameFormatPlugin@@QEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CFrameFormatPlugin *__hidden this, unsigned int)",
+    "rank_score": 24,
+    "size": 32,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CH264FormatPlugin::`scalar deleting destructor'(uint)",
+    "ea": "0x14003c748",
+    "function_file": "functions/14003c748_CH264FormatPlugin_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCH264FormatPlugin@@QEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CH264FormatPlugin *__hidden this, unsigned int)",
+    "rank_score": 24,
+    "size": 32,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CMJPEGFormatPlugin::`scalar deleting destructor'(uint)",
+    "ea": "0x14003c770",
+    "function_file": "functions/14003c770_CMJPEGFormatPlugin_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCMJPEGFormatPlugin@@QEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CMJPEGFormatPlugin *__hidden this, unsigned int)",
+    "rank_score": 24,
+    "size": 32,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CMPEG2TSFormatPlugin::`scalar deleting destructor'(uint)",
+    "ea": "0x14003c798",
+    "function_file": "functions/14003c798_CMPEG2TSFormatPlugin_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCMPEG2TSFormatPlugin@@QEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CMPEG2TSFormatPlugin *__hidden this, unsigned int)",
+    "rank_score": 24,
+    "size": 32,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CStreamFormatPlugin::`scalar deleting destructor'(uint)",
+    "ea": "0x14003c7c0",
+    "function_file": "functions/14003c7c0_CStreamFormatPlugin_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCStreamFormatPlugin@@QEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CStreamFormatPlugin *__hidden this, unsigned int)",
+    "rank_score": 24,
+    "size": 32,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "DumpAndValidateInterfaceDescriptor",
+    "ea": "0x140037068",
+    "function_file": "functions/140037068_DumpAndValidateInterfaceDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateInterfaceDescriptor",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 927,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CUncompressedFormatPlugin::~CUncompressedFormatPlugin(void)",
+    "ea": "0x14003c6c8",
+    "function_file": "functions/14003c6c8_CUncompressedFormatPlugin_CUncompressedFormatPlugin_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CUncompressedFormatPlugin@@QEAA@XZ",
+    "prototype": "void __fastcall(CUncompressedFormatPlugin *__hidden this)",
+    "rank_score": 23,
+    "size": 41,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "DumpAndValidateGenericDescriptor",
+    "ea": "0x14003580c",
+    "function_file": "functions/14003580c_DumpAndValidateGenericDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateGenericDescriptor",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 389,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400408ec",
+    "function_file": "functions/1400408ec_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x140011040",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CUncompressedFormatPlugin@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CUncompressedFormatPlugin *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 22,
+    "size": 111,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::Release(void)",
+    "ea": "0x1400400a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CUncompressedFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CUncompressedFormatPlugin *__hidden this)",
+    "rank_score": 22,
+    "size": 36,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "ExtensionUnitSetHandler",
+    "ea": "0x140007bb0",
+    "function_file": "functions/140007bb0_ExtensionUnitSetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ExtensionUnitSetHandler",
+    "prototype": "__int64 __fastcall(PIRP Irp)",
+    "rank_score": 22,
+    "size": 696,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "ReportInvalidConfigurationTelemetry",
+    "ea": "0x140020704",
+    "function_file": "functions/140020704_ReportInvalidConfigurationTelemetry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReportInvalidConfigurationTelemetry",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 484,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsDigitalWindowConfig(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005a710",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsDigitalWindowConfig@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 22,
+    "size": 113,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsFaceAuth(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005a820",
+    "function_file": "functions/14005a820_ValidateMSXUPayloadsFaceAuth_HW_DEVICE_EXTENSION_uchar_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsFaceAuth@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 22,
+    "size": 913,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CUncompressedFormatPlugin::CUncompressedFormatPlugin(void)",
+    "ea": "0x14003c584",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CUncompressedFormatPlugin@@QEAA@XZ",
+    "prototype": "CUncompressedFormatPlugin *__fastcall(CUncompressedFormatPlugin *__hidden this)",
+    "rank_score": 21,
+    "size": 29,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::DataIntersect(KSDATAFORMAT *,KSDATAFORMAT *,ulong,void *,ulong *)",
+    "ea": "0x14000bb20",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DataIntersect@CUncompressedFormatPlugin@@UEAAJPEATKSDATAFORMAT@@0KPEAXPEAK@Z",
+    "prototype": "__int64 __fastcall(CUncompressedFormatPlugin *__hidden this, union KSDATAFORMAT *, union KSDATAFORMAT *, unsigned int, void *, unsigned int *)",
+    "rank_score": 21,
+    "size": 48,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::GetFrameRateAndInterval(KSDATAFORMAT *,KSDATAFORMAT *,_USBVIDEO_FRAME_RATE *)",
+    "ea": "0x14000f900",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFrameRateAndInterval@CUncompressedFormatPlugin@@UEAAKPEATKSDATAFORMAT@@0PEAU_USBVIDEO_FRAME_RATE@@@Z",
+    "prototype": "unsigned int __fastcall(CUncompressedFormatPlugin *__hidden this, union KSDATAFORMAT *, union KSDATAFORMAT *, struct _USBVIDEO_FRAME_RATE *)",
+    "rank_score": 21,
+    "size": 43,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::PinSetDataFormat(_KSPIN *,KSDATAFORMAT *,KSDATAFORMAT *,ulong *,ulong *)",
+    "ea": "0x14001b410",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PinSetDataFormat@CUncompressedFormatPlugin@@UEAAJPEAU_KSPIN@@PEATKSDATAFORMAT@@1PEAK2@Z",
+    "prototype": "__int64 __fastcall(CUncompressedFormatPlugin *__hidden this, struct _KSPIN *, union KSDATAFORMAT *, union KSDATAFORMAT *, unsigned int *, unsigned int *)",
+    "rank_score": 21,
+    "size": 36,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "DumpAndValidateEndpointDescriptor",
+    "ea": "0x1400304ac",
+    "function_file": "functions/1400304ac_DumpAndValidateEndpointDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateEndpointDescriptor",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 594,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ValidateExtrinsicsPayload(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005a134",
+    "function_file": "functions/14005a134_ValidateExtrinsicsPayload_HW_DEVICE_EXTENSION_uchar_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateExtrinsicsPayload@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 21,
+    "size": 574,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ValidateIntrinsicsPayload(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005a378",
+    "function_file": "functions/14005a378_ValidateIntrinsicsPayload_HW_DEVICE_EXTENSION_uchar_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateIntrinsicsPayload@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 21,
+    "size": 574,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsIRTorch(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005b020",
+    "function_file": "functions/14005b020_ValidateMSXUPayloadsIRTorch_HW_DEVICE_EXTENSION_uchar_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsIRTorch@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 21,
+    "size": 567,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::GetDataRangeCount(VIDEO_SPECIFIC *,int)",
+    "ea": "0x14003d4a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDataRangeCount@CUncompressedFormatPlugin@@UEAAKPEAUVIDEO_SPECIFIC@@H@Z",
+    "prototype": "unsigned int __fastcall(CUncompressedFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, int)",
+    "rank_score": 20,
+    "size": 7,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::GetInfo(void)",
+    "ea": "0x14003fda0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetInfo@CUncompressedFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CUncompressedFormatPlugin *__hidden this)",
+    "rank_score": 20,
+    "size": 6,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::GetStillDataRangeCount(VIDEO_SPECIFIC *)",
+    "ea": "0x14003d4b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetStillDataRangeCount@CUncompressedFormatPlugin@@UEAAKPEAUVIDEO_SPECIFIC@@@Z",
+    "prototype": "unsigned int __fastcall(CUncompressedFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *)",
+    "rank_score": 20,
+    "size": 5,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CUncompressedFormatPlugin::GetSupportedFormats(KSDATAFORMAT * *,ulong *)",
+    "ea": "0x140040080",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSupportedFormats@CUncompressedFormatPlugin@@UEAAJPEAPEATKSDATAFORMAT@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CUncompressedFormatPlugin *__hidden this, union KSDATAFORMAT **, unsigned int *)",
+    "rank_score": 20,
+    "size": 20,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DumpAndValidateAllDescriptors",
+    "ea": "0x14002f2e0",
+    "function_file": "functions/14002f2e0_DumpAndValidateAllDescriptors.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateAllDescriptors",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 258,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DumpAndValidateClassSpecificInterruptEndpointDescriptor",
+    "ea": "0x14002fdb8",
+    "function_file": "functions/14002fdb8_DumpAndValidateClassSpecificInterruptEndpointDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateClassSpecificInterruptEndpointDescriptor",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 498,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SetSecureCommonPinContext",
+    "ea": "0x140001160",
+    "function_file": "functions/140001160_SetSecureCommonPinContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetSecureCommonPinContext",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 485,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "WPP_SF_qDD",
+    "ea": "0x140019d34",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qDD",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ClearSecureCommonPinContext",
+    "ea": "0x140039120",
+    "function_file": "functions/140039120_ClearSecureCommonPinContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClearSecureCommonPinContext",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 252,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "GetFaceAuthFlags(_HW_DEVICE_EXTENSION *,_MSXU_PAYLOAD_FACEAUTH *,unsigned __int64,uchar,unsigned __int64 *)",
+    "ea": "0x14005c594",
+    "function_file": "functions/14005c594_GetFaceAuthFlags_HW_DEVICE_EXTENSION_MSXU_PAYLOAD_FACEAUTH_unsigned_int64_uchar_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFaceAuthFlags@@YAJPEAU_HW_DEVICE_EXTENSION@@PEAU_MSXU_PAYLOAD_FACEAUTH@@_KEPEA_K@Z",
+    "prototype": "int(struct _HW_DEVICE_EXTENSION *, struct _MSXU_PAYLOAD_FACEAUTH *, unsigned __int64, unsigned __int8, unsigned __int64 *)",
+    "rank_score": 17,
+    "size": 257,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "GetMaxPacketSizeForEndpoint",
+    "ea": "0x140016bf0",
+    "function_file": "functions/140016bf0_GetMaxPacketSizeForEndpoint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetMaxPacketSizeForEndpoint",
+    "prototype": "__int64 __fastcall(PVOID DescriptorBuffer, PVOID StartPosition)",
+    "rank_score": 17,
+    "size": 222,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ATNReaderGetHandler",
+    "ea": "0x14002d920",
+    "function_file": "functions/14002d920_ATNReaderGetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ATNReaderGetHandler",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 334,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMPEG2TSFormatPlugin::DataIntersect(KSDATAFORMAT *,KSDATAFORMAT *,ulong,void *,ulong *)",
+    "ea": "0x14003e760",
+    "function_file": "functions/14003e760_CMPEG2TSFormatPlugin_DataIntersect_KSDATAFORMAT_KSDATAFORMAT_ulong_void_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DataIntersect@CMPEG2TSFormatPlugin@@UEAAJPEATKSDATAFORMAT@@0KPEAXPEAK@Z",
+    "prototype": "int(CMPEG2TSFormatPlugin *__hidden this, union KSDATAFORMAT *, union KSDATAFORMAT *, unsigned int, void *, unsigned int *)",
+    "rank_score": 16,
+    "size": 419,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "Feature_Servicing_UvcPerfIrpCache__private_IsEnabledNoReportingNoInline",
+    "ea": "0x14001d20c",
+    "function_file": "functions/14001d20c_Feature_Servicing_UvcPerfIrpCache_private_IsEnabledNoReportingNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Servicing_UvcPerfIrpCache__private_IsEnabledNoReportingNoInline",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 50,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "GetFirstFormatDescriptor",
+    "ea": "0x14001b4b8",
+    "function_file": "functions/14001b4b8_GetFirstFormatDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetFirstFormatDescriptor",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 151,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "GetNextFormatFrameOrColorDescriptor",
+    "ea": "0x14000d6d4",
+    "function_file": "functions/14000d6d4_GetNextFormatFrameOrColorDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetNextFormatFrameOrColorDescriptor",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ProcessExtensionUnit",
+    "ea": "0x1400228a0",
+    "function_file": "functions/1400228a0_ProcessExtensionUnit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ProcessExtensionUnit",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 266,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "TimecodeReaderGetHandler",
+    "ea": "0x14002ed60",
+    "function_file": "functions/14002ed60_TimecodeReaderGetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TimecodeReaderGetHandler",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 344,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "UpdateSecureFrameMetadataInfo",
+    "ea": "0x14000566c",
+    "function_file": "functions/14000566c_UpdateSecureFrameMetadataInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateSecureFrameMetadataInfo",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 175,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsFieldOfView2(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005abc0",
+    "function_file": "functions/14005abc0_ValidateMSXUPayloadsFieldOfView2_HW_DEVICE_EXTENSION_uchar_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsFieldOfView2@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 16,
+    "size": 349,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x14001e6a8",
+    "function_file": "functions/14001e6a8_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 381,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x14001e82c",
+    "function_file": "functions/14001e82c_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 129,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ExtensionUnitGetHandler",
+    "ea": "0x140008500",
+    "function_file": "functions/140008500_ExtensionUnitGetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ExtensionUnitGetHandler",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 312,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "IsValidInterfaceNumber(_HW_DEVICE_EXTENSION *,uchar)",
+    "ea": "0x14005c6d0",
+    "function_file": "functions/14005c6d0_IsValidInterfaceNumber_HW_DEVICE_EXTENSION_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsValidInterfaceNumber@@YAEPEAU_HW_DEVICE_EXTENSION@@E@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _HW_DEVICE_EXTENSION *, unsigned __int8)",
+    "rank_score": 15,
+    "size": 54,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 9,
+    "demangled": "SubmitUrbToUsbdSynch",
+    "ea": "0x140009b9c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SubmitUrbToUsbdSynch",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 184,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "WPP_SF_DDDD",
+    "ea": "0x1400053fc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DDDD",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::CaptureCopyMemory(uchar *,ulong,uchar *,ulong,ulong,ulong,ulong *,ulong *,ulong *)",
+    "ea": "0x140005730",
+    "function_file": "functions/140005730_CH264FormatPlugin_CaptureCopyMemory_uchar_ulong_uchar_ulong_ulong_ulong_ulong_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CaptureCopyMemory@CH264FormatPlugin@@UEAAJPEAEK0KKKPEAK11@Z",
+    "prototype": "int(CH264FormatPlugin *__hidden this, unsigned __int8 *, unsigned int, unsigned __int8 *, unsigned int, unsigned int, unsigned int, unsigned int *, unsigned int *, unsigned int *)",
+    "rank_score": 14,
+    "size": 353,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMPEG2TSFormatPlugin::PinSetDataFormat(_KSPIN *,KSDATAFORMAT *,KSDATAFORMAT *,ulong *,ulong *)",
+    "ea": "0x14003ebd0",
+    "function_file": "functions/14003ebd0_CMPEG2TSFormatPlugin_PinSetDataFormat_KSPIN_KSDATAFORMAT_KSDATAFORMAT_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PinSetDataFormat@CMPEG2TSFormatPlugin@@UEAAJPEAU_KSPIN@@PEATKSDATAFORMAT@@1PEAK2@Z",
+    "prototype": "__int64 __fastcall(CMPEG2TSFormatPlugin *__hidden this, struct _KSPIN *, union KSDATAFORMAT *, union KSDATAFORMAT *, unsigned int *, unsigned int *)",
+    "rank_score": 14,
+    "size": 158,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CaptureCompleteCallbackBulk",
+    "ea": "0x140002930",
+    "function_file": "functions/140002930_CaptureCompleteCallbackBulk.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CaptureCompleteCallbackBulk",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 99,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CaptureCompleteCallbackIsoch",
+    "ea": "0x140001b60",
+    "function_file": "functions/140001b60_CaptureCompleteCallbackIsoch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CaptureCompleteCallbackIsoch",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 99,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ExtensionUnitInfoGetHandler",
+    "ea": "0x140013280",
+    "function_file": "functions/140013280_ExtensionUnitInfoGetHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ExtensionUnitInfoGetHandler",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 197,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 9,
+    "demangled": "GetVideoStreamingInputHeader",
+    "ea": "0x14001b2f4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetVideoStreamingInputHeader",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0ppq_EtwWriteTransfer",
+    "ea": "0x140018990",
+    "function_file": "functions/140018990_McTemplateK0ppq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0ppq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 123,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0pqqqq_EtwWriteTransfer",
+    "ea": "0x1400054c0",
+    "function_file": "functions/1400054c0_McTemplateK0pqqqq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0pqqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 161,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsDigitalWindow(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005a5c0",
+    "function_file": "functions/14005a5c0_ValidateMSXUPayloadsDigitalWindow_HW_DEVICE_EXTENSION_uchar_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsDigitalWindow@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 14,
+    "size": 329,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsFramerateThrottle(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005aed0",
+    "function_file": "functions/14005aed0_ValidateMSXUPayloadsFramerateThrottle_HW_DEVICE_EXTENSION_uchar_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsFramerateThrottle@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 14,
+    "size": 319,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "WPP_SF_ddD",
+    "ea": "0x140019cd4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_ddD",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140054f88",
+    "function_file": "functions/140054f88_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x140054048",
+    "function_file": "functions/140054048_wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CDVFormatPlugin::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x14001b1a0",
+    "function_file": "functions/14001b1a0_CDVFormatPlugin_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CDVFormatPlugin@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CDVFormatPlugin *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 13,
+    "size": 114,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CDVFormatPlugin::~CDVFormatPlugin(void)",
+    "ea": "0x14003c5a8",
+    "function_file": "functions/14003c5a8_CDVFormatPlugin_CDVFormatPlugin_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CDVFormatPlugin@@QEAA@XZ",
+    "prototype": "void __fastcall(CDVFormatPlugin *__hidden this)",
+    "rank_score": 13,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CFrameFormatPlugin::~CFrameFormatPlugin(void)",
+    "ea": "0x14003c5d8",
+    "function_file": "functions/14003c5d8_CFrameFormatPlugin_CFrameFormatPlugin_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CFrameFormatPlugin@@QEAA@XZ",
+    "prototype": "void __fastcall(CFrameFormatPlugin *__hidden this)",
+    "rank_score": 13,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CH264FormatPlugin::~CH264FormatPlugin(void)",
+    "ea": "0x14003c608",
+    "function_file": "functions/14003c608_CH264FormatPlugin_CH264FormatPlugin_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CH264FormatPlugin@@QEAA@XZ",
+    "prototype": "void __fastcall(CH264FormatPlugin *__hidden this)",
+    "rank_score": 13,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CMJPEGFormatPlugin::~CMJPEGFormatPlugin(void)",
+    "ea": "0x14003c638",
+    "function_file": "functions/14003c638_CMJPEGFormatPlugin_CMJPEGFormatPlugin_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CMJPEGFormatPlugin@@QEAA@XZ",
+    "prototype": "void __fastcall(CMJPEGFormatPlugin *__hidden this)",
+    "rank_score": 13,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMPEG2TSFormatPlugin::GetUsbDataRangeForFormat(KSPIN_DATAFLOW,KSDATAFORMAT *,KSDATAFORMAT * *,ulong)",
+    "ea": "0x14003eae0",
+    "function_file": "functions/14003eae0_CMPEG2TSFormatPlugin_GetUsbDataRangeForFormat_KSPIN_DATAFLOW_KSDATAFORMAT_KSDATAFORMAT_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetUsbDataRangeForFormat@CMPEG2TSFormatPlugin@@UEAAPEAU_USBVIDEO_DATARANGE@@W4KSPIN_DATAFLOW@@PEATKSDATAFORMAT@@PEAPEAT4@K@Z",
+    "prototype": "struct _USBVIDEO_DATARANGE *__fastcall(CMPEG2TSFormatPlugin *__hidden this, enum KSPIN_DATAFLOW, union KSDATAFORMAT *, union KSDATAFORMAT **, unsigned int)",
+    "rank_score": 13,
+    "size": 226,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CMPEG2TSFormatPlugin::~CMPEG2TSFormatPlugin(void)",
+    "ea": "0x14003c668",
+    "function_file": "functions/14003c668_CMPEG2TSFormatPlugin_CMPEG2TSFormatPlugin_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CMPEG2TSFormatPlugin@@QEAA@XZ",
+    "prototype": "void __fastcall(CMPEG2TSFormatPlugin *__hidden this)",
+    "rank_score": 13,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CStreamFormatPlugin::~CStreamFormatPlugin(void)",
+    "ea": "0x14003c698",
+    "function_file": "functions/14003c698_CStreamFormatPlugin_CStreamFormatPlugin_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CStreamFormatPlugin@@QEAA@XZ",
+    "prototype": "void __fastcall(CStreamFormatPlugin *__hidden this)",
+    "rank_score": 13,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CombineProbeCommitControls",
+    "ea": "0x140023848",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CombineProbeCommitControls",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 156,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "Feature_EUSB2__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x14001709c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_EUSB2__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Feature_Servicing_Telemetry_Uvc_Invalid_Descriptor__private_IsEnabledNoReportingNoInline",
+    "ea": "0x14001f224",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Servicing_Telemetry_Uvc_Invalid_Descriptor__private_IsEnabledNoReportingNoInline",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 50,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "FilterCreateQueue_CompleteCanceledIrp",
+    "ea": "0x14003a7a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterCreateQueue_CompleteCanceledIrp",
+    "prototype": "IO_CSQ_COMPLETE_CANCELED_IRP",
+    "rank_score": 13,
+    "size": 58,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "McTemplateK0p_EtwWriteTransfer",
+    "ea": "0x140005308",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0p_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SizeOfVideoFrameUncompressed",
+    "ea": "0x14001b708",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SizeOfVideoFrameUncompressed",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 24,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsExtrinsics(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005a790",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsExtrinsics@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 13,
+    "size": 126,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsIntrinsics(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005b260",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsIntrinsics@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 13,
+    "size": 126,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "WPP_SF_qqq",
+    "ea": "0x14001d120",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qqq",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CDVFormatPlugin::GetFrameRateAndInterval(KSDATAFORMAT *,KSDATAFORMAT *,_USBVIDEO_FRAME_RATE *)",
+    "ea": "0x14003d280",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFrameRateAndInterval@CDVFormatPlugin@@UEAAKPEATKSDATAFORMAT@@0PEAU_USBVIDEO_FRAME_RATE@@@Z",
+    "prototype": "unsigned int __fastcall(CDVFormatPlugin *__hidden this, union KSDATAFORMAT *, union KSDATAFORMAT *, struct _USBVIDEO_FRAME_RATE *)",
+    "rank_score": 12,
+    "size": 176,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CDVFormatPlugin::MuteSample(_USBVIDEO_DATARANGE *,uchar *,ulong,int)",
+    "ea": "0x14003d3a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MuteSample@CDVFormatPlugin@@UEAAJPEAU_USBVIDEO_DATARANGE@@PEAEKH@Z",
+    "prototype": "__int64 __fastcall(CDVFormatPlugin *__hidden this, struct _USBVIDEO_DATARANGE *, unsigned __int8 *, unsigned int, int)",
+    "rank_score": 12,
+    "size": 184,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CDVFormatPlugin::Release(void)",
+    "ea": "0x14003d470",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CDVFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CDVFormatPlugin *__hidden this)",
+    "rank_score": 12,
+    "size": 36,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CFrameFormatPlugin::GetDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,int,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003e3c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDataRangeFromDescriptor@CFrameFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KHPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CFrameFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 12,
+    "size": 43,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CFrameFormatPlugin::Release(void)",
+    "ea": "0x14003e730",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CFrameFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CFrameFormatPlugin *__hidden this)",
+    "rank_score": 12,
+    "size": 36,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::Release(void)",
+    "ea": "0x14003f550",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CH264FormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CH264FormatPlugin *__hidden this)",
+    "rank_score": 12,
+    "size": 36,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMJPEGFormatPlugin::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x14000e630",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CMJPEGFormatPlugin@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CMJPEGFormatPlugin *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 12,
+    "size": 113,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMJPEGFormatPlugin::Release(void)",
+    "ea": "0x1400142d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CMJPEGFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMJPEGFormatPlugin *__hidden this)",
+    "rank_score": 12,
+    "size": 36,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMPEG2TSFormatPlugin::Release(void)",
+    "ea": "0x14003ec80",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CMPEG2TSFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMPEG2TSFormatPlugin *__hidden this)",
+    "rank_score": 12,
+    "size": 36,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CStreamFormatPlugin::Release(void)",
+    "ea": "0x14003db10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CStreamFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CStreamFormatPlugin *__hidden this)",
+    "rank_score": 12,
+    "size": 36,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Feature_Servicing_Telemetry_Uvc_Invalid_Descriptor__private_IsEnabledFallback",
+    "ea": "0x14001f208",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Servicing_Telemetry_Uvc_Invalid_Descriptor__private_IsEnabledFallback",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 22,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Feature_Servicing_UvcPerfIrpCache__private_IsEnabledFallback",
+    "ea": "0x14001d1f0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Servicing_UvcPerfIrpCache__private_IsEnabledFallback",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 22,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14005e010",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 12,
+    "size": 44,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "UpdateFrameInterval",
+    "ea": "0x140013f10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateFrameInterval",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 39,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14005e044",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x1400550b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CDVFormatPlugin::CDVFormatPlugin(void)",
+    "ea": "0x14003c4f4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CDVFormatPlugin@@QEAA@XZ",
+    "prototype": "CDVFormatPlugin *__fastcall(CDVFormatPlugin *__hidden this)",
+    "rank_score": 11,
+    "size": 29,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CFrameFormatPlugin::CFrameFormatPlugin(void)",
+    "ea": "0x14001b73c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CFrameFormatPlugin@@QEAA@XZ",
+    "prototype": "CFrameFormatPlugin *__fastcall(CFrameFormatPlugin *__hidden this)",
+    "rank_score": 11,
+    "size": 29,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CFrameFormatPlugin::GetDataRangeCount(VIDEO_SPECIFIC *,int)",
+    "ea": "0x14003e3a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDataRangeCount@CFrameFormatPlugin@@UEAAKPEAUVIDEO_SPECIFIC@@H@Z",
+    "prototype": "unsigned int __fastcall(CFrameFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, int)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CFrameFormatPlugin::GetFrameRateAndInterval(KSDATAFORMAT *,KSDATAFORMAT *,_USBVIDEO_FRAME_RATE *)",
+    "ea": "0x14003e400",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFrameRateAndInterval@CFrameFormatPlugin@@UEAAKPEATKSDATAFORMAT@@0PEAU_USBVIDEO_FRAME_RATE@@@Z",
+    "prototype": "unsigned int __fastcall(CFrameFormatPlugin *__hidden this, union KSDATAFORMAT *, union KSDATAFORMAT *, struct _USBVIDEO_FRAME_RATE *)",
+    "rank_score": 11,
+    "size": 66,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CFrameFormatPlugin::GetUsbDataRangeForFormat(KSPIN_DATAFLOW,KSDATAFORMAT *,KSDATAFORMAT * *,ulong)",
+    "ea": "0x14001b440",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetUsbDataRangeForFormat@CFrameFormatPlugin@@UEAAPEAU_USBVIDEO_DATARANGE@@W4KSPIN_DATAFLOW@@PEATKSDATAFORMAT@@PEAPEAT4@K@Z",
+    "prototype": "struct _USBVIDEO_DATARANGE *__fastcall(CFrameFormatPlugin *__hidden this, enum KSPIN_DATAFLOW, union KSDATAFORMAT *, union KSDATAFORMAT **, unsigned int)",
+    "rank_score": 11,
+    "size": 34,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CH264FormatPlugin::CH264FormatPlugin(void)",
+    "ea": "0x14003c518",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CH264FormatPlugin@@QEAA@XZ",
+    "prototype": "CH264FormatPlugin *__fastcall(CH264FormatPlugin *__hidden this)",
+    "rank_score": 11,
+    "size": 29,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CMJPEGFormatPlugin::CMJPEGFormatPlugin(void)",
+    "ea": "0x14001b760",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CMJPEGFormatPlugin@@QEAA@XZ",
+    "prototype": "CMJPEGFormatPlugin *__fastcall(CMJPEGFormatPlugin *__hidden this)",
+    "rank_score": 11,
+    "size": 29,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CMPEG2TSFormatPlugin::CMPEG2TSFormatPlugin(void)",
+    "ea": "0x14003c53c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CMPEG2TSFormatPlugin@@QEAA@XZ",
+    "prototype": "CMPEG2TSFormatPlugin *__fastcall(CMPEG2TSFormatPlugin *__hidden this)",
+    "rank_score": 11,
+    "size": 29,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CStreamFormatPlugin::CStreamFormatPlugin(void)",
+    "ea": "0x14003c560",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CStreamFormatPlugin@@QEAA@XZ",
+    "prototype": "CStreamFormatPlugin *__fastcall(CStreamFormatPlugin *__hidden this)",
+    "rank_score": 11,
+    "size": 29,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CStreamFormatPlugin::GetUsbDataRangeForFormat(KSPIN_DATAFLOW,KSDATAFORMAT *,KSDATAFORMAT * *,ulong)",
+    "ea": "0x14003da70",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetUsbDataRangeForFormat@CStreamFormatPlugin@@UEAAPEAU_USBVIDEO_DATARANGE@@W4KSPIN_DATAFLOW@@PEATKSDATAFORMAT@@PEAPEAT4@K@Z",
+    "prototype": "struct _USBVIDEO_DATARANGE *__fastcall(CStreamFormatPlugin *__hidden this, enum KSPIN_DATAFLOW, union KSDATAFORMAT *, union KSDATAFORMAT **, unsigned int)",
+    "rank_score": 11,
+    "size": 99,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CStreamFormatPlugin::PinSetDataFormat(_KSPIN *,KSDATAFORMAT *,KSDATAFORMAT *,ulong *,ulong *)",
+    "ea": "0x14003dae0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PinSetDataFormat@CStreamFormatPlugin@@UEAAJPEAU_KSPIN@@PEATKSDATAFORMAT@@1PEAK2@Z",
+    "prototype": "__int64 __fastcall(CStreamFormatPlugin *__hidden this, struct _KSPIN *, union KSDATAFORMAT *, union KSDATAFORMAT *, unsigned int *, unsigned int *)",
+    "rank_score": 11,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "USBVideoCallTrustlet",
+    "ea": "0x14000146c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBVideoCallTrustlet",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CDVFormatPlugin::GetDataRangeCount(VIDEO_SPECIFIC *,int)",
+    "ea": "0x14003ca10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDataRangeCount@CDVFormatPlugin@@UEAAKPEAUVIDEO_SPECIFIC@@H@Z",
+    "prototype": "unsigned int __fastcall(CDVFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, int)",
+    "rank_score": 10,
+    "size": 10,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CDVFormatPlugin::GetInfo(void)",
+    "ea": "0x14003d340",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetInfo@CDVFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CDVFormatPlugin *__hidden this)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CDVFormatPlugin::GetStillDataRangeFromDescriptor(VIDEO_SPECIFIC *,VIDEO_SPECIFIC *,ulong,_USBVIDEO_DATARANGE * *)",
+    "ea": "0x14003d350",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetStillDataRangeFromDescriptor@CDVFormatPlugin@@UEAAJPEAUVIDEO_SPECIFIC@@0KPEAPEAU_USBVIDEO_DATARANGE@@@Z",
+    "prototype": "__int64 __fastcall(CDVFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, struct VIDEO_SPECIFIC *, unsigned int, struct _USBVIDEO_DATARANGE **)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CDVFormatPlugin::GetSupportedFormats(KSDATAFORMAT * *,ulong *)",
+    "ea": "0x14003d360",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSupportedFormats@CDVFormatPlugin@@UEAAJPEAPEATKSDATAFORMAT@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CDVFormatPlugin *__hidden this, union KSDATAFORMAT **, unsigned int *)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "CExtendedVidProcSetting::isValid(void)",
+    "ea": "0x14000ef88",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?isValid@CExtendedVidProcSetting@@QEAA_NXZ",
+    "prototype": "bool __fastcall(CExtendedVidProcSetting *__hidden this)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CFrameFormatPlugin::GetInfo(void)",
+    "ea": "0x14003e450",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetInfo@CFrameFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CFrameFormatPlugin *__hidden this)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::AddRef(void)",
+    "ea": "0x14001b630",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@CH264FormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CH264FormatPlugin *__hidden this)",
+    "rank_score": 10,
+    "size": 13,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::GetDataRangeCount(VIDEO_SPECIFIC *,int)",
+    "ea": "0x14003ecb0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDataRangeCount@CH264FormatPlugin@@UEAAKPEAUVIDEO_SPECIFIC@@H@Z",
+    "prototype": "unsigned int __fastcall(CH264FormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, int)",
+    "rank_score": 10,
+    "size": 16,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::GetFrameRateAndInterval(KSDATAFORMAT *,KSDATAFORMAT *,_USBVIDEO_FRAME_RATE *)",
+    "ea": "0x14003f500",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFrameRateAndInterval@CH264FormatPlugin@@UEAAKPEATKSDATAFORMAT@@0PEAU_USBVIDEO_FRAME_RATE@@@Z",
+    "prototype": "unsigned int __fastcall(CH264FormatPlugin *__hidden this, union KSDATAFORMAT *, union KSDATAFORMAT *, struct _USBVIDEO_FRAME_RATE *)",
+    "rank_score": 10,
+    "size": 18,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::GetInfo(void)",
+    "ea": "0x14003f520",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetInfo@CH264FormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CH264FormatPlugin *__hidden this)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::GetSupportedFormats(KSDATAFORMAT * *,ulong *)",
+    "ea": "0x14003f530",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSupportedFormats@CH264FormatPlugin@@UEAAJPEAPEATKSDATAFORMAT@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CH264FormatPlugin *__hidden this, union KSDATAFORMAT **, unsigned int *)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::Init(IUVCDeviceUtility *,void *,ulong)",
+    "ea": "0x14003d380",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@CH264FormatPlugin@@UEAAJPEAUIUVCDeviceUtility@@PEAXK@Z",
+    "prototype": "__int64 __fastcall(CH264FormatPlugin *__hidden this, struct IUVCDeviceUtility *, void *, unsigned int)",
+    "rank_score": 10,
+    "size": 15,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CH264FormatPlugin::PinPostProcessCaptureSample(uchar,void *,ulong,ulong *)",
+    "ea": "0x14003d460",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PinPostProcessCaptureSample@CH264FormatPlugin@@UEAAJEPEAXKPEAK@Z",
+    "prototype": "__int64 __fastcall(CH264FormatPlugin *__hidden this, unsigned __int8, void *, unsigned int, unsigned int *)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CMJPEGFormatPlugin::GetInfo(void)",
+    "ea": "0x140019680",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetInfo@CMJPEGFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMJPEGFormatPlugin *__hidden this)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CMJPEGFormatPlugin::GetSupportedFormats(KSDATAFORMAT * *,ulong *)",
+    "ea": "0x14003d740",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSupportedFormats@CMJPEGFormatPlugin@@UEAAJPEAPEATKSDATAFORMAT@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CMJPEGFormatPlugin *__hidden this, union KSDATAFORMAT **, unsigned int *)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CMPEG2TSFormatPlugin::GetInfo(void)",
+    "ea": "0x14003eaa0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetInfo@CMPEG2TSFormatPlugin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMPEG2TSFormatPlugin *__hidden this)",
+    "rank_score": 10,
+    "size": 23,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CMPEG2TSFormatPlugin::GetSupportedFormats(KSDATAFORMAT * *,ulong *)",
+    "ea": "0x14003eac0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSupportedFormats@CMPEG2TSFormatPlugin@@UEAAJPEAPEATKSDATAFORMAT@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CMPEG2TSFormatPlugin *__hidden this, union KSDATAFORMAT **, unsigned int *)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CStreamFormatPlugin::GetDataRangeCount(VIDEO_SPECIFIC *,int)",
+    "ea": "0x14003d880",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDataRangeCount@CStreamFormatPlugin@@UEAAKPEAUVIDEO_SPECIFIC@@H@Z",
+    "prototype": "unsigned int __fastcall(CStreamFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *, int)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CStreamFormatPlugin::GetStillDataRangeCount(VIDEO_SPECIFIC *)",
+    "ea": "0x14001b730",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetStillDataRangeCount@CStreamFormatPlugin@@UEAAKPEAUVIDEO_SPECIFIC@@@Z",
+    "prototype": "unsigned int __fastcall(CStreamFormatPlugin *__hidden this, struct VIDEO_SPECIFIC *)",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ValidateMSXUPayloadsNull(_HW_DEVICE_EXTENSION *,uchar const *,ushort)",
+    "ea": "0x14005b2f0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateMSXUPayloadsNull@@YAJPEAU_HW_DEVICE_EXTENSION@@PEBEG@Z",
+    "prototype": "__int64 __fastcall(struct _HW_DEVICE_EXTENSION *, const unsigned __int8 *, unsigned __int16)",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "WPP_SF_ii",
+    "ea": "0x14003b85c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_ii",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WPP_SF_DDDDDDDDDDD",
+    "ea": "0x14002d844",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DDDDDDDDDDD",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 204,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "_tlgKeywordOn",
+    "ea": "0x140001048",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgKeywordOn",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_qDDqq",
+    "ea": "0x14003bb60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qDDqq",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 131,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "_tlgCreate1Sz_wchar_t",
+    "ea": "0x140001008",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_wchar_t",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140012d40",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "BITMAP_VALUE",
+    "ea": "0x14000660c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BITMAP_VALUE",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CreateDeviceUtilityObject",
+    "ea": "0x14001b59c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateDeviceUtilityObject",
+    "prototype": "__int64 __fastcall(struct _KSDEVICE *)",
+    "rank_score": 7,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "GetExtPropFlags(ulong)",
+    "ea": "0x14005bc78",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetExtPropFlags@@YA_KK@Z",
+    "prototype": "unsigned __int64 __fastcall(unsigned int)",
+    "rank_score": 7,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "DumpAndValidateClassSpecificEndpointDescriptor",
+    "ea": "0x14002fd58",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DumpAndValidateClassSpecificEndpointDescriptor",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "McTemplateK0_EtwWriteTransfer",
+    "ea": "0x14001b558",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetTextStringValueFromStringDescriptor",
+    "ea": "0x14001f25c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetTextStringValueFromStringDescriptor",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0pdqqq_EtwWriteTransfer",
+    "ea": "0x14001d7bc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0pdqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 155,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0pp_EtwWriteTransfer",
+    "ea": "0x1400230e8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0pp_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0pqqq_EtwWriteTransfer",
+    "ea": "0x14001f460",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0pqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x140054f4c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetColorDescriptor",
+    "ea": "0x14001b468",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetColorDescriptor",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140019460",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0j_EtwWriteTransfer",
+    "ea": "0x1400400cc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0j_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0jq_EtwWriteTransfer",
+    "ea": "0x14001b37c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0jq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 95,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0pq_EtwWriteTransfer",
+    "ea": "0x140005238",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0pq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x140054eec",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x14001e4fc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 202,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x14001e5cc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CopyIrpsAndUrbs",
+    "ea": "0x14001f1cc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyIrpsAndUrbs",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 50,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "USBVideoPnpCancelRemove",
+    "ea": "0x14001dd10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBVideoPnpCancelRemove",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "USBVideoPnpQueryRemove",
+    "ea": "0x14001deb0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBVideoPnpQueryRemove",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_tlgCreate1Sz_char",
+    "ea": "0x140001120",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_char",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x14001eaac",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "FilterCreateQueue_InsertIrp",
+    "ea": "0x1400187e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterCreateQueue_InsertIrp",
+    "prototype": "IO_CSQ_INSERT_IRP",
+    "rank_score": 1,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "FilterCreateQueue_PeekNextIrp",
+    "ea": "0x1400122d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterCreateQueue_PeekNextIrp",
+    "prototype": "IO_CSQ_PEEK_NEXT_IRP",
+    "rank_score": 1,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "FilterCreateQueue_RemoveIrp",
+    "ea": "0x1400110c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FilterCreateQueue_RemoveIrp",
+    "prototype": "IO_CSQ_REMOVE_IRP",
+    "rank_score": 1,
+    "size": 41,
+    "tags": []
+  }
+]

@@ -1,0 +1,3647 @@
+[
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "USBSTOR_FdoDeviceUsageNotification",
+    "ea": "0x14001fca8",
+    "function_file": "functions/14001fca8_USBSTOR_FdoDeviceUsageNotification.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlCheckPortableOperatingSystem",
+      "ntoskrnl!RtlCheckRegistryKey",
+      "ntoskrnl!RtlCreateRegistryKey",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!RtlSetPortableOperatingSystem",
+      "ntoskrnl!RtlWriteRegistryValue",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwPowerInformation",
+      "ntoskrnl!swprintf_s"
+    ],
+    "matched_strings": [
+      "\\LocationPaths"
+    ],
+    "name": "USBSTOR_FdoDeviceUsageNotification",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 6901,
+    "size": 2497,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "USBSTOR_CswCompletion",
+    "ea": "0x140003e10",
+    "function_file": "functions/140003e10_USBSTOR_CswCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoStartNextPacket",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_CswCompletion",
+    "prototype": "",
+    "rank_score": 5653,
+    "size": 2807,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "USBSTOR_FdoStartDevice",
+    "ea": "0x140008590",
+    "function_file": "functions/140008590_USBSTOR_FdoStartDevice.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoStartNextPacket",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KfRaiseIrql",
+      "ntoskrnl!MmBuildMdlForNonPagedPool",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "\\Registry\\Machine\\Software\\Policies\\Microsoft\\Windows\\EnhancedStorageDevices",
+      "UsbdHandleInfo->PendingDelete should be set here UsbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBSTOR_FdoStartDevice",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 5510,
+    "size": 2831,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "USBSTOR_FdoRemoveDevice",
+    "ea": "0x140028da0",
+    "function_file": "functions/140028da0_USBSTOR_FdoRemoveDevice.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockAndWaitEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeFlushQueuedDpcs",
+      "ntoskrnl!KeRemoveQueueDpc",
+      "ntoskrnl!PoFxUnregisterDevice"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoRemoveDevice",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 4424,
+    "size": 907,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 0,
+    "demangled": "USBSTOR_Scsi",
+    "ea": "0x140004ed0",
+    "function_file": "functions/140004ed0_USBSTOR_Scsi.md",
+    "matched_imports": [
+      "ntoskrnl!IoStartPacket",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeEnterGuardedRegion",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeLeaveGuardedRegion",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_Scsi",
+    "prototype": "__int64 __fastcall(PVOID Object, PIRP Irp)",
+    "rank_score": 4265,
+    "size": 3740,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "USBSTOR_StartIo",
+    "ea": "0x140006ff0",
+    "function_file": "functions/140006ff0_USBSTOR_StartIo.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!IoAcquireCancelSpinLock",
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLockFromDpcLevel",
+      "ntoskrnl!KeSetCoalescableTimer",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!PoCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_StartIo",
+    "prototype": "__int64 __fastcall(PVOID Object, PIRP Irp)",
+    "rank_score": 4051,
+    "size": 2310,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "USBSTOR_CbwTransfer",
+    "ea": "0x140007900",
+    "function_file": "functions/140007900_USBSTOR_CbwTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_CbwTransfer",
+    "prototype": "__int64 __fastcall(PVOID Object, PIRP Irp)",
+    "rank_score": 3040,
+    "size": 1758,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "USBSTOR_DataCompletion",
+    "ea": "0x1400023b0",
+    "function_file": "functions/1400023b0_USBSTOR_DataCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_DataCompletion",
+    "prototype": "",
+    "rank_score": 3032,
+    "size": 1721,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "USBSTOR_SyncSendUsbRequest",
+    "ea": "0x140001950",
+    "function_file": "functions/140001950_USBSTOR_SyncSendUsbRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_SyncSendUsbRequest",
+    "prototype": "",
+    "rank_score": 3029,
+    "size": 1160,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "USBSTOR_GetDumpPointers",
+    "ea": "0x14000ed10",
+    "function_file": "functions/14000ed10_USBSTOR_GetDumpPointers.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_GetDumpPointers",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 2835,
+    "size": 1233,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "UsbQueueInsert",
+    "ea": "0x140006040",
+    "function_file": "functions/140006040_UsbQueueInsert.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IoGetSfioStreamIdentifier",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UsbQueueInsert",
+    "prototype": "",
+    "rank_score": 2835,
+    "size": 2242,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBDInternal_QueryUsbVerifierSettings",
+    "ea": "0x140013230",
+    "function_file": "functions/140013230_USBDInternal_QueryUsbVerifierSettings.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!MmIsDriverVerifying",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "IoOpenDriverRegistryKey",
+      "IoOpenDriverRegistryKey failed with 0x%x\n",
+      "RtlQueryRegistrySettings failed, ignoring this error0x%x\n"
+    ],
+    "name": "USBDInternal_QueryUsbVerifierSettings",
+    "prototype": "",
+    "rank_score": 2691,
+    "size": 881,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 9,
+    "demangled": "USBSTOR_IssueInternalCdbToLun",
+    "ea": "0x1400266ac",
+    "function_file": "functions/1400266ac_USBSTOR_IssueInternalCdbToLun.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!MmBuildMdlForNonPagedPool"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_IssueInternalCdbToLun",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, __int64, void *Src, char, int)",
+    "rank_score": 2631,
+    "size": 826,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "USBD_CreateHandle",
+    "ea": "0x14000fee8",
+    "function_file": "functions/14000fee8_USBD_CreateHandle.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!RtlGetVersion"
+    ],
+    "matched_strings": [
+      "USBD_CreateHandle Successful: usbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBD_CreateHandle",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PDEVICE_OBJECT TargetDeviceObject, ULONG USBDClientContractVersion, ULONG PoolTag, USBD_HANDLE *USBDHandle)",
+    "rank_score": 2465,
+    "size": 1049,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "USBSTOR_CbwCompletion",
+    "ea": "0x140001de0",
+    "function_file": "functions/140001de0_USBSTOR_CbwCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_CbwCompletion",
+    "prototype": "",
+    "rank_score": 2430,
+    "size": 1476,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBSTOR_FreeDumpPointers",
+    "ea": "0x14000e494",
+    "function_file": "functions/14000e494_USBSTOR_FreeDumpPointers.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FreeDumpPointers",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 2428,
+    "size": 639,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "USBSTOR_ResetDeviceWorkItem",
+    "ea": "0x1400090e0",
+    "function_file": "functions/1400090e0_USBSTOR_ResetDeviceWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_ResetDeviceWorkItem",
+    "prototype": "IO_WORKITEM_ROUTINE_EX",
+    "rank_score": 2235,
+    "size": 965,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "USBSTOR_CswTransfer",
+    "ea": "0x140002a70",
+    "function_file": "functions/140002a70_USBSTOR_CswTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_CswTransfer",
+    "prototype": "__int64 __fastcall(PVOID Object, PIRP Irp)",
+    "rank_score": 2228,
+    "size": 1360,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "USBSTOR_AddDevice",
+    "ea": "0x1400250c0",
+    "function_file": "functions/1400250c0_USBSTOR_AddDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoAttachDeviceToDeviceStack",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoInitializeRemoveLockEx",
+      "ntoskrnl!IoSetStartIoAttributes",
+      "ntoskrnl!KeInitializeDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeInitializeTimer"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_AddDevice",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT TargetDevice)",
+    "rank_score": 2221,
+    "size": 658,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "USBSTOR_BulkResetPipeWorkItem",
+    "ea": "0x140001510",
+    "function_file": "functions/140001510_USBSTOR_BulkResetPipeWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_BulkResetPipeWorkItem",
+    "prototype": "IO_WORKITEM_ROUTINE_EX",
+    "rank_score": 2213,
+    "size": 1076,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "USBSTOR_SendPassThrough",
+    "ea": "0x140022cb0",
+    "function_file": "functions/140022cb0_USBSTOR_SendPassThrough.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_SendPassThrough",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 1855,
+    "size": 1556,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoDeviceUsageNotification",
+    "ea": "0x1400209f4",
+    "function_file": "functions/1400209f4_USBSTOR_PdoDeviceUsageNotification.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoGetAttachedDevice",
+      "ntoskrnl!IoInvalidateDeviceState",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoDeviceUsageNotification",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1831,
+    "size": 659,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "UsbQueueRemove",
+    "ea": "0x1400036f0",
+    "function_file": "functions/1400036f0_UsbQueueRemove.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "UsbQueueRemove",
+    "prototype": "",
+    "rank_score": 1815,
+    "size": 1163,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "USBSTOR_SetWmiDataBlock",
+    "ea": "0x140020d90",
+    "function_file": "functions/140020d90_USBSTOR_SetWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest",
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!PoFxUnregisterDevice",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_SetWmiDataBlock",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, int, __int64)",
+    "rank_score": 1635,
+    "size": 426,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "USBSTOR_RequestSenseInterruptCompletionRoutine",
+    "ea": "0x14000c120",
+    "function_file": "functions/14000c120_USBSTOR_RequestSenseInterruptCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_RequestSenseInterruptCompletionRoutine",
+    "prototype": "",
+    "rank_score": 1626,
+    "size": 1098,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "USBSTOR_MediaChangeNotifyWorkItem",
+    "ea": "0x140011fb0",
+    "function_file": "functions/140011fb0_USBSTOR_MediaChangeNotifyWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_MediaChangeNotifyWorkItem",
+    "prototype": "IO_WORKITEM_ROUTINE_EX",
+    "rank_score": 1622,
+    "size": 866,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "USBSTOR_BulkQueueResetPipe",
+    "ea": "0x140001130",
+    "function_file": "functions/140001130_USBSTOR_BulkQueueResetPipe.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!IoSizeofWorkItem",
+      "ntoskrnl!IoTryQueueWorkItem",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeInsertQueue",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_BulkQueueResetPipe",
+    "prototype": "__int64 __fastcall(PVOID Object, PVOID Context)",
+    "rank_score": 1606,
+    "size": 405,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "USBSTOR_GetStateSeparationLocation",
+    "ea": "0x14002239c",
+    "function_file": "functions/14002239c_USBSTOR_GetStateSeparationLocation.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlGetPersistedStateLocation",
+      "ntoskrnl!swprintf_s"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\usbstor",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\usbstor"
+    ],
+    "name": "USBSTOR_GetStateSeparationLocation",
+    "prototype": "",
+    "rank_score": 1498,
+    "size": 636,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_GetBusInterface",
+    "ea": "0x140028098",
+    "function_file": "functions/140028098_USBSTOR_GetBusInterface.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_GetBusInterface",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, void *)",
+    "rank_score": 1428,
+    "size": 441,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "USBSTOR_IssueBulkOrInterruptRequest",
+    "ea": "0x14000a500",
+    "function_file": "functions/14000a500_USBSTOR_IssueBulkOrInterruptRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_IssueBulkOrInterruptRequest",
+    "prototype": "__int64 __usercall@<rax>(PVOID Object@<rcx>, PIRP Irp@<rdx>, int, __int64, __int64, __int64, __int64)",
+    "rank_score": 1425,
+    "size": 835,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "USBSTOR_QueryFdoParams",
+    "ea": "0x140025358",
+    "function_file": "functions/140025358_USBSTOR_QueryFdoParams.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QueryFdoParams",
+    "prototype": "",
+    "rank_score": 1421,
+    "size": 720,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBDInternal_BuildAndSendQueryInterfaceSynchronously",
+    "ea": "0x14000c570",
+    "function_file": "functions/14000c570_USBDInternal_BuildAndSendQueryInterfaceSynchronously.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBDInternal_BuildAndSendQueryInterfaceSynchronously",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PDEVICE_OBJECT)",
+    "rank_score": 1414,
+    "size": 357,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBDInternal_BuildandSendIoctlSynchronously",
+    "ea": "0x14000aa00",
+    "function_file": "functions/14000aa00_USBDInternal_BuildandSendIoctlSynchronously.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBDInternal_BuildandSendIoctlSynchronously",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PDEVICE_OBJECT)",
+    "rank_score": 1414,
+    "size": 322,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBDInternal_BuildServicePath",
+    "ea": "0x14000f470",
+    "function_file": "functions/14000f470_USBDInternal_BuildServicePath.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [
+      "Couldnt allocate servicePath of size %d\n"
+    ],
+    "name": "USBDInternal_BuildServicePath",
+    "prototype": "",
+    "rank_score": 1267,
+    "size": 330,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 11,
+    "demangled": "USBSTOR_TranslateCDBComplete",
+    "ea": "0x140004910",
+    "function_file": "functions/140004910_USBSTOR_TranslateCDBComplete.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_TranslateCDBComplete",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 1254,
+    "size": 1451,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "USBSTOR_ClientCdbCompletion",
+    "ea": "0x140009860",
+    "function_file": "functions/140009860_USBSTOR_ClientCdbCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_ClientCdbCompletion",
+    "prototype": "",
+    "rank_score": 1241,
+    "size": 1091,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "USBSTOR_InterruptDataCompletionRoutine",
+    "ea": "0x1400094b0",
+    "function_file": "functions/1400094b0_USBSTOR_InterruptDataCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_InterruptDataCompletionRoutine",
+    "prototype": "",
+    "rank_score": 1238,
+    "size": 936,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBSTOR_InitializeEmergencyWorkerThread",
+    "ea": "0x140012d0c",
+    "function_file": "functions/140012d0c_USBSTOR_InitializeEmergencyWorkerThread.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeQueue",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_InitializeEmergencyWorkerThread",
+    "prototype": "",
+    "rank_score": 1234,
+    "size": 308,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "USBSTOR_QueryGlobalFdoParams",
+    "ea": "0x140026f6c",
+    "function_file": "functions/140026f6c_USBSTOR_QueryGlobalFdoParams.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlIsStateSeparationEnabled",
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QueryGlobalFdoParams",
+    "prototype": "",
+    "rank_score": 1232,
+    "size": 1420,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "PortpCompleteRequestIrp",
+    "ea": "0x14000b610",
+    "function_file": "functions/14000b610_PortpCompleteRequestIrp.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!MmUnlockPages"
+    ],
+    "matched_strings": [],
+    "name": "PortpCompleteRequestIrp",
+    "prototype": "",
+    "rank_score": 1226,
+    "size": 1250,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_FdoQueryDeviceRelations",
+    "ea": "0x140024614",
+    "function_file": "functions/140024614_USBSTOR_FdoQueryDeviceRelations.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoQueryDeviceRelations",
+    "prototype": "",
+    "rank_score": 1219,
+    "size": 596,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBD_QueryUsbCapability",
+    "ea": "0x14000a84c",
+    "function_file": "functions/14000a84c_USBD_QueryUsbCapability.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "USBD_QueryUsbCapability",
+    "prototype": "NTSTATUS __stdcall(USBD_HANDLE USBDHandle, const GUID *CapabilityType, ULONG OutputBufferLength, PUCHAR OutputBuffer, PULONG ResultLength)",
+    "rank_score": 1217,
+    "size": 429,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "UsbStorStartNextPacket",
+    "ea": "0x140007ff0",
+    "function_file": "functions/140007ff0_UsbStorStartNextPacket.md",
+    "matched_imports": [
+      "ntoskrnl!IoStartNextPacket",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "UsbStorStartNextPacket",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 1213,
+    "size": 293,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "USBSTOR_StringArrayToMultiSz",
+    "ea": "0x140024e34",
+    "function_file": "functions/140024e34_USBSTOR_StringArrayToMultiSz.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlAnsiStringToUnicodeString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlxAnsiStringToUnicodeSize"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_StringArrayToMultiSz",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING DestinationString)",
+    "rank_score": 1208,
+    "size": 414,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoStartDevice",
+    "ea": "0x14000b0bc",
+    "function_file": "functions/14000b0bc_USBSTOR_PdoStartDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoStartDevice",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1044,
+    "size": 548,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoSetPower",
+    "ea": "0x14000ced4",
+    "function_file": "functions/14000ced4_USBSTOR_PdoSetPower.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoRequestPowerIrp",
+      "ntoskrnl!PoSetPowerState",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoSetPower",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1036,
+    "size": 788,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "USBSTOR_IssueAsyncNotificationRequest",
+    "ea": "0x140011c10",
+    "function_file": "functions/140011c10_USBSTOR_IssueAsyncNotificationRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_IssueAsyncNotificationRequest",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 1030,
+    "size": 547,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "USBSTOR_SelectConfiguration",
+    "ea": "0x1400279c0",
+    "function_file": "functions/1400279c0_USBSTOR_SelectConfiguration.md",
+    "matched_imports": [
+      "USBD!USBD_CreateConfigurationRequestEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_SelectConfiguration",
+    "prototype": "",
+    "rank_score": 1026,
+    "size": 855,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 15,
+    "demangled": "USBSTOR_QueueResetDevice",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_USBSTOR_QueueResetDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QueueResetDevice",
+    "prototype": "__int64 __fastcall(PVOID Object, PVOID Context)",
+    "rank_score": 1020,
+    "size": 288,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 11,
+    "demangled": "UsbStorPumpNextRequest",
+    "ea": "0x140003b90",
+    "function_file": "functions/140003b90_UsbStorPumpNextRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IoStartPacket",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UsbStorPumpNextRequest",
+    "prototype": "",
+    "rank_score": 1019,
+    "size": 625,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "USBSTOR_CancelIo",
+    "ea": "0x140011900",
+    "function_file": "functions/140011900_USBSTOR_CancelIo.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeRemoveEntryDeviceQueue"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_CancelIo",
+    "prototype": "DRIVER_CANCEL",
+    "rank_score": 1017,
+    "size": 345,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "USBSTOR_IsDeviceConnected",
+    "ea": "0x14000a08c",
+    "function_file": "functions/14000a08c_USBSTOR_IsDeviceConnected.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_IsDeviceConnected",
+    "prototype": "",
+    "rank_score": 1017,
+    "size": 380,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "USBSTOR_GetStringDescriptors",
+    "ea": "0x1400293cc",
+    "function_file": "functions/1400293cc_USBSTOR_GetStringDescriptors.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_GetStringDescriptors",
+    "prototype": "",
+    "rank_score": 1014,
+    "size": 989,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "USBSTOR_GetDescriptor",
+    "ea": "0x140026cec",
+    "function_file": "functions/140026cec_USBSTOR_GetDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_GetDescriptor",
+    "prototype": "",
+    "rank_score": 1009,
+    "size": 489,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "USBSTOR_QueueWorkItem",
+    "ea": "0x14000ca68",
+    "function_file": "functions/14000ca68_USBSTOR_QueueWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!IoSizeofWorkItem",
+      "ntoskrnl!IoTryQueueWorkItem",
+      "ntoskrnl!KeInsertQueue",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QueueWorkItem",
+    "prototype": "__int64 __usercall@<rax>(PVOID Object@<rcx>, PLIST_ENTRY Entry@<rdx>, PIO_WORKITEM_ROUTINE_EX WorkerRoutine@<r8>, PVOID Context, char)",
+    "rank_score": 1008,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBSTOR_TerminateEmergencyWorkerThread",
+    "ea": "0x140012e48",
+    "function_file": "functions/140012e48_USBSTOR_TerminateEmergencyWorkerThread.md",
+    "matched_imports": [
+      "ntoskrnl!KeRundownQueue",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_TerminateEmergencyWorkerThread",
+    "prototype": "",
+    "rank_score": 1003,
+    "size": 165,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "USBSTOR_DetectPortableWorkspace",
+    "ea": "0x14001f964",
+    "function_file": "functions/14001f964_USBSTOR_DetectPortableWorkspace.md",
+    "matched_imports": [
+      "ntoskrnl!PoDisableSleepStates",
+      "ntoskrnl!RtlCheckPortableOperatingSystem",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!RtlSetPortableOperatingSystem"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Policies\\Microsoft\\PortableOperatingSystem"
+    ],
+    "name": "USBSTOR_DetectPortableWorkspace",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 870,
+    "size": 529,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14002890c",
+    "function_file": "functions/14002890c_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 843,
+    "size": 571,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "USBSTOR_Power",
+    "ea": "0x14000cd00",
+    "function_file": "functions/14000cd00_USBSTOR_Power.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoCallDriver",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_Power",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 833,
+    "size": 460,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "USBSTOR_CheckRequestTimeOut",
+    "ea": "0x140009f90",
+    "function_file": "functions/140009f90_USBSTOR_CheckRequestTimeOut.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_CheckRequestTimeOut",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 819,
+    "size": 244,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "USBSTOR_FxPowerReference",
+    "ea": "0x140005d80",
+    "function_file": "functions/140005d80_USBSTOR_FxPowerReference.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!PoFxActivateComponent",
+      "ntoskrnl!PoFxIdleComponent"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FxPowerReference",
+    "prototype": "",
+    "rank_score": 817,
+    "size": 194,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "USBSTOR_FreeBcStream",
+    "ea": "0x140011b2c",
+    "function_file": "functions/140011b2c_USBSTOR_FreeBcStream.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetSfioStreamIdentifier",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FreeBcStream",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 814,
+    "size": 193,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "USBSTOR_FdoSetPowerCompletion",
+    "ea": "0x14000fc80",
+    "function_file": "functions/14000fc80_USBSTOR_FdoSetPowerCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoCallDriver",
+      "ntoskrnl!PoFxReportDevicePoweredOn",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoSetPowerCompletion",
+    "prototype": "REQUEST_POWER_COMPLETE",
+    "rank_score": 813,
+    "size": 237,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "USBSTOR_IsWellImplementedACT",
+    "ea": "0x14002605c",
+    "function_file": "functions/14002605c_USBSTOR_IsWellImplementedACT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_IsWellImplementedACT",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, __int64, int)",
+    "rank_score": 812,
+    "size": 832,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "USBSTOR_InRootContainer",
+    "ea": "0x1400208c0",
+    "function_file": "functions/1400208c0_USBSTOR_InRootContainer.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDeviceProperty",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Enum\\HTREE\\ROOT\\0"
+    ],
+    "name": "USBSTOR_InRootContainer",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 657,
+    "size": 300,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "USBSTOR_ClientBulkCompletionRoutine",
+    "ea": "0x14000f640",
+    "function_file": "functions/14000f640_USBSTOR_ClientBulkCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_ClientBulkCompletionRoutine",
+    "prototype": "",
+    "rank_score": 640,
+    "size": 937,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "USBSTOR_SystemControl",
+    "ea": "0x140027860",
+    "function_file": "functions/140027860_USBSTOR_SystemControl.md",
+    "matched_imports": [
+      "WMILIB!WmiSystemControl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_SystemControl",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 625,
+    "size": 343,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "USBSTOR_IssueControlRequest",
+    "ea": "0x14000d8cc",
+    "function_file": "functions/14000d8cc_USBSTOR_IssueControlRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_IssueControlRequest",
+    "prototype": "__int64 __usercall@<rax>(PVOID Object@<rcx>, PIRP Irp@<rdx>, __int64, __int64)",
+    "rank_score": 621,
+    "size": 476,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoQueryDeviceText",
+    "ea": "0x140028b50",
+    "function_file": "functions/140028b50_USBSTOR_PdoQueryDeviceText.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!RtlAnsiStringToUnicodeString",
+      "ntoskrnl!RtlInitAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoQueryDeviceText",
+    "prototype": "",
+    "rank_score": 621,
+    "size": 468,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "USBSTOR_ResetPipeWorkItem",
+    "ea": "0x140012730",
+    "function_file": "functions/140012730_USBSTOR_ResetPipeWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_ResetPipeWorkItem",
+    "prototype": "IO_WORKITEM_ROUTINE_EX",
+    "rank_score": 619,
+    "size": 340,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "USBSTOR_UnConfigure",
+    "ea": "0x140020f40",
+    "function_file": "functions/140020f40_USBSTOR_UnConfigure.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_UnConfigure",
+    "prototype": "",
+    "rank_score": 618,
+    "size": 324,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "USBSTOR_EnableRuntimePowerManagement",
+    "ea": "0x140028628",
+    "function_file": "functions/140028628_USBSTOR_EnableRuntimePowerManagement.md",
+    "matched_imports": [
+      "ntoskrnl!PoFxRegisterDevice",
+      "ntoskrnl!PoFxSetDeviceIdleTimeout",
+      "ntoskrnl!PoFxStartDevicePowerManagement"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_EnableRuntimePowerManagement",
+    "prototype": "",
+    "rank_score": 617,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_AllocBcStream",
+    "ea": "0x1400115ac",
+    "function_file": "functions/1400115ac_USBSTOR_AllocBcStream.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_AllocBcStream",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 616,
+    "size": 226,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoQueryDeviceRelations",
+    "ea": "0x140024370",
+    "function_file": "functions/140024370_USBSTOR_PdoQueryDeviceRelations.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoQueryDeviceRelations",
+    "prototype": "__int64 __fastcall(PVOID Object, PIRP Irp)",
+    "rank_score": 616,
+    "size": 360,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PowerActiveIdle",
+    "ea": "0x140010be0",
+    "function_file": "functions/140010be0_USBSTOR_PowerActiveIdle.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoFxActivateComponent",
+      "ntoskrnl!PoFxIdleComponent"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PowerActiveIdle",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 612,
+    "size": 119,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "USBSTOR_SyncCompletionRoutine",
+    "ea": "0x14000c6e0",
+    "function_file": "functions/14000c6e0_USBSTOR_SyncCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_SyncCompletionRoutine",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 612,
+    "size": 208,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "USBSTOR_TimeoutDpc",
+    "ea": "0x14000c830",
+    "function_file": "functions/14000c830_USBSTOR_TimeoutDpc.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_TimeoutDpc",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 606,
+    "size": 309,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "USBSTOR_WorkerStart",
+    "ea": "0x140012f00",
+    "function_file": "functions/140012f00_USBSTOR_WorkerStart.md",
+    "matched_imports": [
+      "ntoskrnl!IoInitializeWorkItem",
+      "ntoskrnl!KeRemoveQueue",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_WorkerStart",
+    "prototype": "KSTART_ROUTINE",
+    "rank_score": 603,
+    "size": 135,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_QueryBreakOnDeviceFailure",
+    "ea": "0x14000e974",
+    "function_file": "functions/14000e974_USBSTOR_QueryBreakOnDeviceFailure.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "USBSTOR_QueryBreakOnDeviceFailure",
+    "prototype": "",
+    "rank_score": 557,
+    "size": 280,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "USBSTOR_GetWriteProtectSetting",
+    "ea": "0x140025630",
+    "function_file": "functions/140025630_USBSTOR_GetWriteProtectSetting.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGetVersion",
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "WriteProtect",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\StorageDevicePolicies"
+    ],
+    "name": "USBSTOR_GetWriteProtectSetting",
+    "prototype": "",
+    "rank_score": 497,
+    "size": 257,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 0,
+    "demangled": "USBSTOR_Pnp",
+    "ea": "0x140023f70",
+    "function_file": "functions/140023f70_USBSTOR_Pnp.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_Pnp",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 452,
+    "size": 1006,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "USBSTOR_DeviceControl",
+    "ea": "0x1400226d0",
+    "function_file": "functions/1400226d0_USBSTOR_DeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_DeviceControl",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, __int64)",
+    "rank_score": 445,
+    "size": 1498,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "USBSTOR_CreateChildPDO",
+    "ea": "0x1400269ec",
+    "function_file": "functions/1400269ec_USBSTOR_CreateChildPDO.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoInitializeRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_CreateChildPDO",
+    "prototype": "",
+    "rank_score": 435,
+    "size": 762,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoRemoveDevice",
+    "ea": "0x14002877c",
+    "function_file": "functions/14002877c_USBSTOR_PdoRemoveDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoRemoveDevice",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 431,
+    "size": 391,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoStopDevice",
+    "ea": "0x140020c90",
+    "function_file": "functions/140020c90_USBSTOR_PdoStopDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoRegisterDeviceForIdleDetection"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoStopDevice",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 428,
+    "size": 237,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 88,
+    "demangled": "USBSTOR_LogEntry",
+    "ea": "0x140003630",
+    "function_file": "functions/140003630_USBSTOR_LogEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_LogEntry",
+    "prototype": "",
+    "rank_score": 427,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "USBSTOR_PdoSetPowerCompletion",
+    "ea": "0x14000ec40",
+    "function_file": "functions/14000ec40_USBSTOR_PdoSetPowerCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoSetPowerCompletion",
+    "prototype": "REQUEST_POWER_COMPLETE",
+    "rank_score": 425,
+    "size": 201,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoQueryID",
+    "ea": "0x140024870",
+    "function_file": "functions/140024870_USBSTOR_PdoQueryID.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoQueryID",
+    "prototype": "",
+    "rank_score": 422,
+    "size": 430,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "USBSTOR_UseReadCapacity16",
+    "ea": "0x1400264d0",
+    "function_file": "functions/1400264d0_USBSTOR_UseReadCapacity16.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_UseReadCapacity16",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 419,
+    "size": 417,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "UsbQueueFlush",
+    "ea": "0x14000811c",
+    "function_file": "functions/14000811c_UsbQueueFlush.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UsbQueueFlush",
+    "prototype": "",
+    "rank_score": 418,
+    "size": 355,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "USBSTOR_AsyncNotifyInterruptPipeCompletion",
+    "ea": "0x1400116a0",
+    "function_file": "functions/1400116a0_USBSTOR_AsyncNotifyInterruptPipeCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_AsyncNotifyInterruptPipeCompletion",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 417,
+    "size": 364,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_FdoCancelStopRemoveDevice",
+    "ea": "0x14001fb7c",
+    "function_file": "functions/14001fb7c_USBSTOR_FdoCancelStopRemoveDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoCancelStopRemoveDevice",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 293,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_FdoQueryCapabilities",
+    "ea": "0x1400244e0",
+    "function_file": "functions/1400244e0_USBSTOR_FdoQueryCapabilities.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoQueryCapabilities",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 301,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_FdoQueryStopRemoveDevice",
+    "ea": "0x140020670",
+    "function_file": "functions/140020670_USBSTOR_FdoQueryStopRemoveDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoQueryStopRemoveDevice",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 260,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoQueryCapabilities",
+    "ea": "0x140024cf4",
+    "function_file": "functions/140024cf4_USBSTOR_PdoQueryCapabilities.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoQueryCapabilities",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 312,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x14002b078",
+    "function_file": "functions/14002b078_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 185,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "USBSTOR_FdoFxPowerCompletion",
+    "ea": "0x14000df00",
+    "function_file": "functions/14000df00_USBSTOR_FdoFxPowerCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!PoFxCompleteDevicePowerNotRequired",
+      "ntoskrnl!PoFxCompleteDirectedPowerDown"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoFxPowerCompletion",
+    "prototype": "REQUEST_POWER_COMPLETE",
+    "rank_score": 414,
+    "size": 164,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "USBSTOR_FdoSetPowerSxCompletion",
+    "ea": "0x1400109e0",
+    "function_file": "functions/1400109e0_USBSTOR_FdoSetPowerSxCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoRequestPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoSetPowerSxCompletion",
+    "prototype": "__int64 __fastcall(PVOID Context, PIRP Irp, POWER_STATE PowerState)",
+    "rank_score": 414,
+    "size": 181,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "UsbCancelIo",
+    "ea": "0x140012f90",
+    "function_file": "functions/140012f90_UsbCancelIo.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "UsbCancelIo",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 203,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PortpAsyncCompletion",
+    "ea": "0x14000b580",
+    "function_file": "functions/14000b580_PortpAsyncCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireCancelSpinLock",
+      "ntoskrnl!IoReleaseCancelSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PortpAsyncCompletion",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 136,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "USBSTOR_EnableIdlePower",
+    "ea": "0x14000b420",
+    "function_file": "functions/14000b420_USBSTOR_EnableIdlePower.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoFxSetDeviceIdleTimeout"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_EnableIdlePower",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 413,
+    "size": 121,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "USBSTOR_GetDescriptors",
+    "ea": "0x140029134",
+    "function_file": "functions/140029134_USBSTOR_GetDescriptors.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_GetDescriptors",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 658,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "USBSTOR_QuiesceDeviceWorkItem",
+    "ea": "0x14000e720",
+    "function_file": "functions/14000e720_USBSTOR_QuiesceDeviceWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QuiesceDeviceWorkItem",
+    "prototype": "IO_WORKITEM_ROUTINE_EX",
+    "rank_score": 412,
+    "size": 139,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14002132c",
+    "function_file": "functions/14002132c_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "USBSTOR_InternalCDBCompletionRoutine",
+    "ea": "0x14000e190",
+    "function_file": "functions/14000e190_USBSTOR_InternalCDBCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_InternalCDBCompletionRoutine",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 88,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "UsbQueueFreeze",
+    "ea": "0x14000cba8",
+    "function_file": "functions/14000cba8_UsbQueueFreeze.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UsbQueueFreeze",
+    "prototype": "",
+    "rank_score": 406,
+    "size": 191,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "UsbQueueRemoveIrp",
+    "ea": "0x140013154",
+    "function_file": "functions/140013154_UsbQueueRemoveIrp.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UsbQueueRemoveIrp",
+    "prototype": "",
+    "rank_score": 406,
+    "size": 213,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "UsbQueueRestart",
+    "ea": "0x14000b2e8",
+    "function_file": "functions/14000b2e8_UsbQueueRestart.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UsbQueueRestart",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 110,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBSTOR_GlobalSelectiveSuspendSetting",
+    "ea": "0x140027500",
+    "function_file": "functions/140027500_USBSTOR_GlobalSelectiveSuspendSetting.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\StorageDevicePolicies"
+    ],
+    "name": "USBSTOR_GlobalSelectiveSuspendSetting",
+    "prototype": "",
+    "rank_score": 255,
+    "size": 171,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "USBSTOR_FdoSetPowerD0Completion",
+    "ea": "0x1400084c0",
+    "function_file": "functions/1400084c0_USBSTOR_FdoSetPowerD0Completion.md",
+    "matched_imports": [
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoSetPowerD0Completion",
+    "prototype": "__int64 __fastcall(PVOID Object, PIRP Irp)",
+    "rank_score": 228,
+    "size": 198,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x140021710",
+    "function_file": "functions/140021710_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "USBSTOR_QueryProperty",
+    "ea": "0x1400232d0",
+    "function_file": "functions/1400232d0_USBSTOR_QueryProperty.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QueryProperty",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 222,
+    "size": 420,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "USBSTOR_QueryWmiDataBlock",
+    "ea": "0x140028d30",
+    "function_file": "functions/140028d30_USBSTOR_QueryWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QueryWmiDataBlock",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, int, __int64, int, __int64)",
+    "rank_score": 222,
+    "size": 103,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "USBSTOR_RequestChildPdosFxPowerIrps",
+    "ea": "0x14000dfac",
+    "function_file": "functions/14000dfac_USBSTOR_RequestChildPdosFxPowerIrps.md",
+    "matched_imports": [
+      "ntoskrnl!PoRequestPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_RequestChildPdosFxPowerIrps",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 217,
+    "size": 171,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoQueryPnpDeviceState",
+    "ea": "0x140024fd8",
+    "function_file": "functions/140024fd8_USBSTOR_PdoQueryPnpDeviceState.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoQueryPnpDeviceState",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 217,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoQueryStopRemoveDevice",
+    "ea": "0x14001f008",
+    "function_file": "functions/14001f008_USBSTOR_PdoQueryStopRemoveDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoQueryStopRemoveDevice",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 220,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "UsbCompleteFlushedIrp",
+    "ea": "0x14000f39c",
+    "function_file": "functions/14000f39c_UsbCompleteFlushedIrp.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "UsbCompleteFlushedIrp",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 200,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x14002b138",
+    "function_file": "functions/14002b138_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 229,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "USBSTOR_AsyncNotifyWorkItem",
+    "ea": "0x140011820",
+    "function_file": "functions/140011820_USBSTOR_AsyncNotifyWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_AsyncNotifyWorkItem",
+    "prototype": "IO_WORKITEM_ROUTINE_EX",
+    "rank_score": 215,
+    "size": 216,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "USBSTOR_ReadWrite",
+    "ea": "0x140021b40",
+    "function_file": "functions/140021b40_USBSTOR_ReadWrite.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_ReadWrite",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 218,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBSTOR_ScsiAddress",
+    "ea": "0x1400236bc",
+    "function_file": "functions/1400236bc_USBSTOR_ScsiAddress.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_ScsiAddress",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 215,
+    "size": 240,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBSTOR_ScsiCapabilities",
+    "ea": "0x140021a38",
+    "function_file": "functions/140021a38_USBSTOR_ScsiCapabilities.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_ScsiCapabilities",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 215,
+    "size": 254,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140011250",
+    "function_file": "functions/140011250_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PnPMinorFunctionString",
+    "ea": "0x140012ad4",
+    "function_file": "functions/140012ad4_PnPMinorFunctionString.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IRP_MN_QUERY_REMOVE_DEVICE",
+      "IRP_MN_REMOVE_DEVICE",
+      "IRP_MN_CANCEL_REMOVE_DEVICE",
+      "IRP_MN_READ_CONFIG",
+      "IRP_MN_WRITE_CONFIG"
+    ],
+    "name": "PnPMinorFunctionString",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 354,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "USBSTOR_Close",
+    "ea": "0x1400239e0",
+    "function_file": "functions/1400239e0_USBSTOR_Close.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_Close",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 209,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "USBSTOR_Create",
+    "ea": "0x140023900",
+    "function_file": "functions/140023900_USBSTOR_Create.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_Create",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 217,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBSTOR_GetBcProperties",
+    "ea": "0x1400218a0",
+    "function_file": "functions/1400218a0_USBSTOR_GetBcProperties.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_GetBcProperties",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 214,
+    "size": 79,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoFxPowerCompletion",
+    "ea": "0x14000e060",
+    "function_file": "functions/14000e060_USBSTOR_PdoFxPowerCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!PoFxReportDevicePoweredOn"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoFxPowerCompletion",
+    "prototype": "REQUEST_POWER_COMPLETE",
+    "rank_score": 214,
+    "size": 124,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "USBSTOR_RequestFdoFxPowerIrp",
+    "ea": "0x14000e0e4",
+    "function_file": "functions/14000e0e4_USBSTOR_RequestFdoFxPowerIrp.md",
+    "matched_imports": [
+      "ntoskrnl!PoRequestPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_RequestFdoFxPowerIrp",
+    "prototype": "__int64 __fastcall(PVOID Context, POWER_STATE PowerState)",
+    "rank_score": 213,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "PortpSyncCompletion",
+    "ea": "0x14000de70",
+    "function_file": "functions/14000de70_PortpSyncCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "PortpSyncCompletion",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "USBD_SyncCompletionRoutine",
+    "ea": "0x14000f1f0",
+    "function_file": "functions/14000f1f0_USBD_SyncCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBD_SyncCompletionRoutine",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 210,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "USBSTOR_FxComponentIdleCallback",
+    "ea": "0x14000ccd0",
+    "function_file": "functions/14000ccd0_USBSTOR_FxComponentIdleCallback.md",
+    "matched_imports": [
+      "ntoskrnl!PoFxCompleteIdleCondition"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FxComponentIdleCallback",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "USBSTOR_FxComponentIdleStateCallback",
+    "ea": "0x140010aa0",
+    "function_file": "functions/140010aa0_USBSTOR_FxComponentIdleStateCallback.md",
+    "matched_imports": [
+      "ntoskrnl!PoFxCompleteIdleState"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_FxComponentIdleStateCallback",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "USBSTOR_QueueAsyncNotification",
+    "ea": "0x140012318",
+    "function_file": "functions/140012318_USBSTOR_QueueAsyncNotification.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QueueAsyncNotification",
+    "prototype": "__int64 __fastcall(PVOID Object, PVOID Context)",
+    "rank_score": 207,
+    "size": 149,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "RtlStringCbPrintfA",
+    "ea": "0x14000e40c",
+    "function_file": "functions/14000e40c_RtlStringCbPrintfA.md",
+    "matched_imports": [
+      "ntoskrnl!_vsnprintf"
+    ],
+    "matched_strings": [],
+    "name": "RtlStringCbPrintfA",
+    "prototype": "NTSTATUS(NTSTRSAFE_PSTR pszDest, size_t cbDest, NTSTRSAFE_PCSTR pszFormat, ...)",
+    "rank_score": 206,
+    "size": 129,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoQuiesceDevice",
+    "ea": "0x14000c96c",
+    "function_file": "functions/14000c96c_USBSTOR_PdoQuiesceDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoQuiesceDevice",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 206,
+    "size": 245,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "USBSTOR_QueueMediaChangeNotify",
+    "ea": "0x1400123b4",
+    "function_file": "functions/1400123b4_USBSTOR_QueueMediaChangeNotify.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QueueMediaChangeNotify",
+    "prototype": "__int64 __fastcall(PVOID Object, PVOID Context)",
+    "rank_score": 206,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "USBSTOR_QueueResetPipe",
+    "ea": "0x140012448",
+    "function_file": "functions/140012448_USBSTOR_QueueResetPipe.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_QueueResetPipe",
+    "prototype": "__int64 __fastcall(PVOID Object, PVOID Context)",
+    "rank_score": 206,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBSTOR_SetModeSenseDataProtect",
+    "ea": "0x14001288c",
+    "function_file": "functions/14001288c_USBSTOR_SetModeSenseDataProtect.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_SetModeSenseDataProtect",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140011440",
+    "function_file": "functions/140011440_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, PEVENT_DATA_DESCRIPTOR)",
+    "rank_score": 202,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PreInitializeEmergencyWorkerThread",
+    "ea": "0x140010694",
+    "function_file": "functions/140010694_USBSTOR_PreInitializeEmergencyWorkerThread.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBSTOR_PreInitializeEmergencyWorkerThread",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 25,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140013950",
+    "function_file": "functions/140013950_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 34,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140013990",
+    "function_file": "functions/140013990_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "USBSTOR_ProcessRequestSenseCompletion",
+    "ea": "0x14000fafc",
+    "function_file": "functions/14000fafc_USBSTOR_ProcessRequestSenseCompletion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_ProcessRequestSenseCompletion",
+    "prototype": "__int64 __fastcall(PVOID Object, PIRP Irp)",
+    "rank_score": 32,
+    "size": 328,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 37,
+    "demangled": "memset",
+    "ea": "0x140013d40",
+    "function_file": "functions/140013d40_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "USBSTOR_SenseDataCompletionRoutine",
+    "ea": "0x140009cb0",
+    "function_file": "functions/140009cb0_USBSTOR_SenseDataCompletionRoutine.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_SenseDataCompletionRoutine",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 721,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 130,
+    "demangled": "WPP_SF_",
+    "ea": "0x140010664",
+    "function_file": "functions/140010664_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 103,
+    "demangled": "WPP_SF_d",
+    "ea": "0x1400105e8",
+    "function_file": "functions/1400105e8_WPP_SF_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400137ac",
+    "function_file": "functions/1400137ac_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "USBSTOR_RequestSenseCdbCompletion",
+    "ea": "0x1400124f0",
+    "function_file": "functions/1400124f0_USBSTOR_RequestSenseCdbCompletion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_RequestSenseCdbCompletion",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 562,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14002b010",
+    "function_file": "functions/14002b010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "memmove",
+    "ea": "0x140013a40",
+    "function_file": "functions/140013a40_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 22,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x140021670",
+    "function_file": "functions/140021670_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "USBSTOR_PdoQueryCompatibleIds",
+    "ea": "0x14001f1c4",
+    "function_file": "functions/14001f1c4_USBSTOR_PdoQueryCompatibleIds.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoQueryCompatibleIds",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 301,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "PortAvioSchedulerTransferBatch",
+    "ea": "0x140006a70",
+    "function_file": "functions/140006a70_PortAvioSchedulerTransferBatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PortAvioSchedulerTransferBatch",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 1395,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "USBSTOR_1667SendSecurityProtocolIn",
+    "ea": "0x140021e34",
+    "function_file": "functions/140021e34_USBSTOR_1667SendSecurityProtocolIn.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_1667SendSecurityProtocolIn",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, int, __int64, __int64)",
+    "rank_score": 19,
+    "size": 439,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_AdjustConfigurationDescriptor",
+    "ea": "0x140027d20",
+    "function_file": "functions/140027d20_USBSTOR_AdjustConfigurationDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_AdjustConfigurationDescriptor",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 475,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "USBSTOR_IssueRequestSenseCdb",
+    "ea": "0x140011ec8",
+    "function_file": "functions/140011ec8_USBSTOR_IssueRequestSenseCdb.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_IssueRequestSenseCdb",
+    "prototype": "__int64 __fastcall(PVOID Object, PIRP Irp, __int64)",
+    "rank_score": 18,
+    "size": 222,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "USBSTOR_BuildAlignmentDescriptor",
+    "ea": "0x140025c6c",
+    "function_file": "functions/140025c6c_USBSTOR_BuildAlignmentDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_BuildAlignmentDescriptor",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, void *, unsigned int *)",
+    "rank_score": 17,
+    "size": 236,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBSTOR_1667SendZeroLengthSPINCommand",
+    "ea": "0x140021ff4",
+    "function_file": "functions/140021ff4_USBSTOR_1667SendZeroLengthSPINCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_1667SendZeroLengthSPINCommand",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 158,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140021468",
+    "function_file": "functions/140021468_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "USBSTOR_FdoSetPowerD3ToD0Completion",
+    "ea": "0x140010960",
+    "function_file": "functions/140010960_USBSTOR_FdoSetPowerD3ToD0Completion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_FdoSetPowerD3ToD0Completion",
+    "prototype": "REQUEST_POWER_COMPLETE",
+    "rank_score": 14,
+    "size": 113,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x14002157c",
+    "function_file": "functions/14002157c_wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "WPP_SF_DD",
+    "ea": "0x140010c60",
+    "function_file": "functions/140010c60_WPP_SF_DD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DD",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14002b044",
+    "function_file": "functions/14002b044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "USBSTOR_FxComponentActiveCallback",
+    "ea": "0x14000dd10",
+    "function_file": "functions/14000dd10_USBSTOR_FxComponentActiveCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_FxComponentActiveCallback",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_BuildDeviceDescriptor",
+    "ea": "0x140023480",
+    "function_file": "functions/140023480_USBSTOR_BuildDeviceDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_BuildDeviceDescriptor",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, int *)",
+    "rank_score": 9,
+    "size": 563,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "UsbDequeueIrp",
+    "ea": "0x140006910",
+    "function_file": "functions/140006910_UsbDequeueIrp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UsbDequeueIrp",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 331,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "UsbRemoveIrp",
+    "ea": "0x14000f9f0",
+    "function_file": "functions/14000f9f0_UsbRemoveIrp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UsbRemoveIrp",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WPP_SF_q",
+    "ea": "0x140010e74",
+    "function_file": "functions/140010e74_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140011224",
+    "function_file": "functions/140011224_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_BuildAdapterDescriptor",
+    "ea": "0x1400237b4",
+    "function_file": "functions/1400237b4_USBSTOR_BuildAdapterDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_BuildAdapterDescriptor",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, unsigned int *)",
+    "rank_score": 7,
+    "size": 325,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "PortListInsertRequest",
+    "ea": "0x14000acd0",
+    "function_file": "functions/14000acd0_PortListInsertRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PortListInsertRequest",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 305,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_BuildMiniportDescriptor",
+    "ea": "0x140028258",
+    "function_file": "functions/140028258_USBSTOR_BuildMiniportDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_BuildMiniportDescriptor",
+    "prototype": "__int64 __fastcall(__int64, int *, int *)",
+    "rank_score": 6,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBSTOR_BuildPowerDescriptor",
+    "ea": "0x140028550",
+    "function_file": "functions/140028550_USBSTOR_BuildPowerDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_BuildPowerDescriptor",
+    "prototype": "__int64 __fastcall(__int64, void *, unsigned int *)",
+    "rank_score": 6,
+    "size": 207,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "PowerDeviceStateString",
+    "ea": "0x14000de94",
+    "function_file": "functions/14000de94_PowerDeviceStateString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PowerDeviceStateString",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "PowerSystemStateString",
+    "ea": "0x140012c8c",
+    "function_file": "functions/140012c8c_PowerSystemStateString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PowerSystemStateString",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "USBSTOR_IsSelectiveSuspendEnabled",
+    "ea": "0x14000b4a0",
+    "function_file": "functions/14000b4a0_USBSTOR_IsSelectiveSuspendEnabled.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_IsSelectiveSuspendEnabled",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0uuuuxqbr5upp_EtwWriteTransfer",
+    "ea": "0x1400114a4",
+    "function_file": "functions/1400114a4_McTemplateK0uuuuxqbr5upp_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0uuuuxqbr5upp_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "USBSTOR_IsDeviceAsyncCapable",
+    "ea": "0x1400090a8",
+    "function_file": "functions/1400090a8_USBSTOR_IsDeviceAsyncCapable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_IsDeviceAsyncCapable",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 4,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "USBSTOR_PdoDeviceTypeString",
+    "ea": "0x140024c78",
+    "function_file": "functions/140024c78_USBSTOR_PdoDeviceTypeString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "USBSTOR_PdoDeviceTypeString",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 116,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WPP_SF_DDD",
+    "ea": "0x1400104c8",
+    "function_file": "functions/1400104c8_WPP_SF_DDD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DDD",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 95,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x140010594",
+    "function_file": "functions/140010594_WPP_SF_qq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14002142c",
+    "function_file": "functions/14002142c_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140010790",
+    "function_file": "functions/140010790_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PortListRemoveNextRequest",
+    "ea": "0x14000ae10",
+    "function_file": "functions/14000ae10_PortListRemoveNextRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PortListRemoveNextRequest",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PortListSearchAndRemoveRequest",
+    "ea": "0x14000facc",
+    "function_file": "functions/14000facc_PortListSearchAndRemoveRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PortListSearchAndRemoveRequest",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14002138c",
+    "function_file": "functions/14002138c_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PortListRemoveRequest",
+    "ea": "0x14000b060",
+    "function_file": "functions/14000b060_PortListRemoveRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PortListRemoveRequest",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCopyWorkerW",
+    "ea": "0x14000f21c",
+    "function_file": "functions/14000f21c_RtlStringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCopyWorkerW",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 2,
+    "size": 90,
+    "tags": []
+  }
+]
