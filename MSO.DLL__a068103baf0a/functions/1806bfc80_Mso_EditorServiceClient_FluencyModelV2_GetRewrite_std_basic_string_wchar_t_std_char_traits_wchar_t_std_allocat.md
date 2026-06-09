@@ -1,0 +1,179 @@
+# Mso::EditorServiceClient::FluencyModelV2::GetRewrite(std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &)
+
+- ea: `0x1806bfc80`
+- end: `0x1806c13d9`
+- name: `?GetRewrite@FluencyModelV2@EditorServiceClient@Mso@@UEBA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV45@0@Z`
+- size: `5977`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `31`
+- tags: `service_task`
+
+## callers
+
+- `0x1806bf600`
+
+## callees
+
+- `0x18002ded0`
+- `0x1800326a8`
+- `0x1800326e8`
+- `0x180032d80`
+- `0x180052d90`
+- `0x180052f64`
+- `0x1800535d0`
+- `0x18005363c`
+- `0x18008a220`
+- `0x1800e8e00`
+- `0x18011fa40`
+- `0x18016336c`
+- `0x18016372c`
+- `0x180163780`
+- `0x1801c8c28`
+- `0x1801c9cb0`
+- `0x180239fd0`
+- `0x18023c2e0`
+- `0x18023d490`
+- `0x18029bf3c`
+- `0x1802a46e0`
+- `0x1802a4eb4`
+- `0x1802a4fb8`
+- `0x1803586dc`
+- `0x18048cc2c`
+- `0x1806bfc80`
+- `0x1806c13e0`
+- `0x1806c1414`
+- `0x1806c1a58`
+- `0x1806c1d10`
+- `0x18091db24`
+
+## import_xrefs
+
+- `Mso98Win32Client!__imp_??0Error@AI@@QEAA@_N@Z` at `0x1806bfe63`
+- `Mso98Win32Client!__imp_??0Error@AI@@QEAA@_N@Z` at `0x1806bfe63`
+- `Mso98Win32Client!__imp_?AsStrings@OutputView@AI@@QEBA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAVError@2@@Z` at `0x1806c0090`
+- `Mso98Win32Client!__imp_?AsStrings@OutputView@AI@@QEBA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAVError@2@@Z` at `0x1806c0090`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@AEAVError@2@@Z` at `0x1806bfeb8`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@AEAVError@2@@Z` at `0x1806bff36`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@AEAVError@2@@Z` at `0x1806bff60`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@AEAVError@2@@Z` at `0x1806bff8a`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@AEAVError@2@@Z` at `0x1806bfeb8`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@AEAVError@2@@Z` at `0x1806bff36`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@AEAVError@2@@Z` at `0x1806bff60`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@AEAVError@2@@Z` at `0x1806bff8a`
+- `Mso98Win32Client!__imp_??1Error@AI@@QEAA@XZ` at `0x1806c0172`
+- `Mso98Win32Client!__imp_??1Error@AI@@QEAA@XZ` at `0x1806c035d`
+- `Mso98Win32Client!__imp_??1Error@AI@@QEAA@XZ` at `0x1806c0b4a`
+- `Mso98Win32Client!__imp_??1Error@AI@@QEAA@XZ` at `0x1806c0172`
+- `Mso98Win32Client!__imp_??1Error@AI@@QEAA@XZ` at `0x1806c035d`
+- `Mso98Win32Client!__imp_??1Error@AI@@QEAA@XZ` at `0x1806c0b4a`
+- `Mso98Win32Client!__imp_??ROutputs@AI@@QEBA?AVOutputView@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVError@1@@Z` at `0x1806c0023`
+- `Mso98Win32Client!__imp_??ROutputs@AI@@QEBA?AVOutputView@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVError@1@@Z` at `0x1806c0023`
+- `Mso98Win32Client!__imp_??0Inputs@AI@@QEAA@AEAVError@1@@Z` at `0x1806bfe77`
+- `Mso98Win32Client!__imp_??0Inputs@AI@@QEAA@AEAVError@1@@Z` at `0x1806bfe77`
+- `Mso98Win32Client!__imp_?Run@Model@AI@@QEAA?AVOutputs@2@AEBVInputs@2@AEAVError@2@@Z` at `0x1806bffbe`
+- `Mso98Win32Client!__imp_?Run@Model@AI@@QEAA?AVOutputs@2@AEBVInputs@2@AEAVError@2@@Z` at `0x1806bffbe`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c01f2`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c07d5`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c099a`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c09ce`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c0ba6`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c01f2`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c07d5`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c099a`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c09ce`
+- `Mso98Win32Client!__imp_?Message@Error@AI@@QEBAPEBDXZ` at `0x1806c0ba6`
+- `Mso98Win32Client!__imp_??1Outputs@AI@@QEAA@XZ` at `0x1806c0158`
+- `Mso98Win32Client!__imp_??1Outputs@AI@@QEAA@XZ` at `0x1806c0343`
+- `Mso98Win32Client!__imp_??1Outputs@AI@@QEAA@XZ` at `0x1806c0158`
+- `Mso98Win32Client!__imp_??1Outputs@AI@@QEAA@XZ` at `0x1806c0343`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806bfe84`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806bff97`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806bffcb`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806c006f`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806c009d`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806bfe84`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806bff97`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806bffcb`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806c006f`
+- `Mso98Win32Client!__imp_??BError@AI@@QEBA_NXZ` at `0x1806c009d`
+- `Mso98Win32Client!__imp_??1OutputView@AI@@QEAA@XZ` at `0x1806c014b`
+- `Mso98Win32Client!__imp_??1OutputView@AI@@QEAA@XZ` at `0x1806c0cc6`
+- `Mso98Win32Client!__imp_??1OutputView@AI@@QEAA@XZ` at `0x1806c014b`
+- `Mso98Win32Client!__imp_??1OutputView@AI@@QEAA@XZ` at `0x1806c0cc6`
+- `Mso98Win32Client!__imp_??1Inputs@AI@@QEAA@XZ` at `0x1806c0165`
+- `Mso98Win32Client!__imp_??1Inputs@AI@@QEAA@XZ` at `0x1806c0350`
+- `Mso98Win32Client!__imp_??1Inputs@AI@@QEAA@XZ` at `0x1806c0b3d`
+- `Mso98Win32Client!__imp_??1Inputs@AI@@QEAA@XZ` at `0x1806c0165`
+- `Mso98Win32Client!__imp_??1Inputs@AI@@QEAA@XZ` at `0x1806c0350`
+- `Mso98Win32Client!__imp_??1Inputs@AI@@QEAA@XZ` at `0x1806c0b3d`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@1AEAVError@2@@Z` at `0x1806bfee2`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@1AEAVError@2@@Z` at `0x1806bff0c`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@1AEAVError@2@@Z` at `0x1806bfee2`
+- `Mso98Win32Client!__imp_?Add@Inputs@AI@@QEAAAEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@_JV?$allocator@_J@std@@@4@1AEAVError@2@@Z` at `0x1806bff0c`
+- `Mso20Win32Client!__imp_?TryWStrToUTF8@StringCore@Mso@@YA?AV?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@AEBV?$basic_string_view@_WU?$char_traits@_W@std@@@4@@Z` at `0x1806bfe2b`
+- `Mso20Win32Client!__imp_?TryWStrToUTF8@StringCore@Mso@@YA?AV?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@AEBV?$basic_string_view@_WU?$char_traits@_W@std@@@4@@Z` at `0x1806bfe2b`
+- `Mso20Win32Client!__imp_?TryUTF8ToWStr@StringCore@Mso@@YA?AV?$optional@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@std@@AEBV?$basic_string_view@DU?$char_traits@D@std@@@4@@Z` at `0x1806c00e4`
+- `Mso20Win32Client!__imp_?TryUTF8ToWStr@StringCore@Mso@@YA?AV?$optional@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@std@@AEBV?$basic_string_view@DU?$char_traits@D@std@@@4@@Z` at `0x1806c00e4`
+- `MSVCP140!??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@_K@Z` at `0x1806c053c`
+- `MSVCP140!??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@_K@Z` at `0x1806c053c`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0336`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0653`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0937`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0b30`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0cb9`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0336`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0653`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0937`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0b30`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x1806c0cb9`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0062`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c02c3`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0301`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0460`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c049e`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c04dc`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c08a2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c08f2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0ab1`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0aeb`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0062`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c02c3`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0301`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0460`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c049e`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c04dc`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c08a2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c08f2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0ab1`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1806c0aeb`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c066d`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c0683`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c07ab`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c08eb`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c0aaa`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c066d`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c0683`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c07ab`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c08eb`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1806c0aaa`
+- `api-ms-win-crt-string-l1-1-0!towlower` at `0x1806c0d22`
+
+## string_xrefs
+
+- `0x1806c0259`: `FluencyModelGetRewrite`
+- `0x1806c03f6`: `FluencyModelGetRewrite`
+- `0x1806c05a7`: `FluencyModelGetRewrite`
+- `0x1806c06fe`: `FluencyModelGetRewrite`
+- `0x1806c083c`: `FluencyModelGetRewrite`
+- `0x1806c0a35`: `FluencyModelGetRewrite`
+- `0x1806c0c0d`: `FluencyModelGetRewrite`
+- `0x1806c0d6d`: `FluencyModelGetRewrite`
+- `0x1806c0b8c`: `Outputs access of post_text_out_2 failed with error message: `
+- `0x1806c0e62`: `decoder_start_token_id`
+
+## pseudocode
+
+```c
+
+```

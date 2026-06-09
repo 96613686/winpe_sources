@@ -1,0 +1,130 @@
+# CDSGrid::OnMessage(HWND__ *,uint,unsigned __int64,__int64)
+
+- ea: `0x1808f2ef8`
+- end: `0x1808f38b3`
+- name: `?OnMessage@CDSGrid@@IEAA_JPEAUHWND__@@I_K_J@Z`
+- size: `2491`
+- prototype: `__int64 __usercall@<rax>(CDSGrid *__hidden this@<rcx>, HWND@<rdx>, unsigned int@<r8d>, unsigned __int64@<r9>, __int64)`
+- caller_count: `1`
+- callee_count: `20`
+- tags: `installer_update`
+
+## callers
+
+- `0x1808f2ea0`
+
+## callees
+
+- `0x180239aa0`
+- `0x18023c2e0`
+- `0x18023e8d0`
+- `0x1808f2ef8`
+- `0x1808f3cf4`
+- `0x18096ec60`
+- `0x180bbc958`
+- `0x181a06b58`
+- `0x181a06c60`
+- `0x181a06c94`
+- `0x181a07990`
+- `0x181a07a24`
+- `0x181a07bd8`
+- `0x181a07d18`
+- `0x181a08098`
+- `0x181a081e0`
+- `0x181a084a0`
+- `0x181a08614`
+- `0x181a08768`
+- `0x181a087a8`
+
+## import_xrefs
+
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1808f2fe7`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1808f2fe7`
+- `Mso20Win32Client!__imp_?GetFirstMsoInstance@@YAPEAUMSOINST@@XZ` at `0x1808f2ff7`
+- `Mso20Win32Client!__imp_?GetFirstMsoInstance@@YAPEAUMSOINST@@XZ` at `0x1808f2ff7`
+- `USER32!GetUpdateRgn` at `0x1808f31c2`
+- `USER32!GetUpdateRgn` at `0x1808f31c2`
+- `USER32!GetParent` at `0x1808f3373`
+- `USER32!GetParent` at `0x1808f33fb`
+- `USER32!GetParent` at `0x1808f3812`
+- `USER32!GetParent` at `0x1808f3373`
+- `USER32!GetParent` at `0x1808f33fb`
+- `USER32!GetParent` at `0x1808f3812`
+- `USER32!GetKeyState` at `0x1808f322c`
+- `USER32!GetKeyState` at `0x1808f323f`
+- `USER32!GetKeyState` at `0x1808f322c`
+- `USER32!GetKeyState` at `0x1808f323f`
+- `USER32!GetClientRect` at `0x1808f30c4`
+- `USER32!GetClientRect` at `0x1808f30d2`
+- `USER32!GetClientRect` at `0x1808f364a`
+- `USER32!GetClientRect` at `0x1808f3758`
+- `USER32!GetClientRect` at `0x1808f30c4`
+- `USER32!GetClientRect` at `0x1808f30d2`
+- `USER32!GetClientRect` at `0x1808f364a`
+- `USER32!GetClientRect` at `0x1808f3758`
+- `USER32!PostMessageW` at `0x1808f33ce`
+- `USER32!PostMessageW` at `0x1808f388b`
+- `USER32!PostMessageW` at `0x1808f33ce`
+- `USER32!PostMessageW` at `0x1808f388b`
+- `USER32!InvalidateRgn` at `0x1808f31f2`
+- `USER32!InvalidateRgn` at `0x1808f31f2`
+- `USER32!GetDC` at `0x1808f315a`
+- `USER32!GetDC` at `0x1808f315a`
+- `USER32!CallWindowProcA` at `0x1808f31df`
+- `USER32!CallWindowProcA` at `0x1808f3507`
+- `USER32!CallWindowProcA` at `0x1808f37e7`
+- `USER32!CallWindowProcA` at `0x1808f31df`
+- `USER32!CallWindowProcA` at `0x1808f3507`
+- `USER32!CallWindowProcA` at `0x1808f37e7`
+- `USER32!ReleaseDC` at `0x1808f3199`
+- `USER32!ReleaseDC` at `0x1808f3199`
+- `USER32!FillRect` at `0x1808f317c`
+- `USER32!FillRect` at `0x1808f318c`
+- `USER32!FillRect` at `0x1808f317c`
+- `USER32!FillRect` at `0x1808f318c`
+- `USER32!SendMessageA` at `0x1808f340f`
+- `USER32!SendMessageA` at `0x1808f3825`
+- `USER32!SendMessageA` at `0x1808f340f`
+- `USER32!SendMessageA` at `0x1808f3825`
+- `USER32!SendMessageW` at `0x1808f3048`
+- `USER32!SendMessageW` at `0x1808f3068`
+- `USER32!SendMessageW` at `0x1808f309d`
+- `USER32!SendMessageW` at `0x1808f30b5`
+- `USER32!SendMessageW` at `0x1808f32fa`
+- `USER32!SendMessageW` at `0x1808f3312`
+- `USER32!SendMessageW` at `0x1808f335f`
+- `USER32!SendMessageW` at `0x1808f348d`
+- `USER32!SendMessageW` at `0x1808f34c4`
+- `USER32!SendMessageW` at `0x1808f3555`
+- `USER32!SendMessageW` at `0x1808f360a`
+- `USER32!SendMessageW` at `0x1808f3629`
+- `USER32!SendMessageW` at `0x1808f3708`
+- `USER32!SendMessageW` at `0x1808f3737`
+- `USER32!SendMessageW` at `0x1808f3791`
+- `USER32!SendMessageW` at `0x1808f3846`
+- `USER32!SendMessageW` at `0x1808f3048`
+- `USER32!SendMessageW` at `0x1808f3068`
+- `USER32!SendMessageW` at `0x1808f309d`
+- `USER32!SendMessageW` at `0x1808f30b5`
+- `USER32!SendMessageW` at `0x1808f32fa`
+- `USER32!SendMessageW` at `0x1808f3312`
+- `USER32!SendMessageW` at `0x1808f335f`
+- `USER32!SendMessageW` at `0x1808f348d`
+- `USER32!SendMessageW` at `0x1808f34c4`
+- `USER32!SendMessageW` at `0x1808f3555`
+- `USER32!SendMessageW` at `0x1808f360a`
+- `USER32!SendMessageW` at `0x1808f3629`
+- `USER32!SendMessageW` at `0x1808f3708`
+- `USER32!SendMessageW` at `0x1808f3737`
+- `USER32!SendMessageW` at `0x1808f3791`
+- `USER32!SendMessageW` at `0x1808f3846`
+- `GDI32!DeleteObject` at `0x1808f3203`
+- `GDI32!DeleteObject` at `0x1808f3203`
+- `GDI32!CreateRectRgn` at `0x1808f31af`
+- `GDI32!CreateRectRgn` at `0x1808f31af`
+
+## pseudocode
+
+```c
+
+```

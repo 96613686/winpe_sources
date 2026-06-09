@@ -1,0 +1,179 @@
+# Mso::Sharing::CopyLinkWebViewDialog::Show(Mso::TCntPtr<Mso::Sharing::IShareWebViewMessageSubscriber> &&,Mso::Sharing::ShareDialogArgs const *)
+
+- ea: `0x1816d5044`
+- end: `0x1816d7b92`
+- name: `?Show@CopyLinkWebViewDialog@Sharing@Mso@@QEAAJ$$QEAV?$TCntPtr@VIShareWebViewMessageSubscriber@Sharing@Mso@@@3@PEBVShareDialogArgs@23@@Z`
+- size: `11086`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `66`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x1816d38c0`
+
+## callees
+
+- `0x18000f83c`
+- `0x18002af10`
+- `0x18002fa38`
+- `0x180031c8c`
+- `0x18003266c`
+- `0x180032680`
+- `0x180032d80`
+- `0x18003c3d8`
+- `0x18003e744`
+- `0x180040c40`
+- `0x1800410a0`
+- `0x1800536dc`
+- `0x18008a220`
+- `0x18008a404`
+- `0x1800c99b0`
+- `0x18011f9e8`
+- `0x1801d9f64`
+- `0x180239960`
+- `0x180239ab0`
+- `0x18023c2e0`
+- `0x18023e770`
+- `0x18023e8d0`
+- `0x18027a3e0`
+- `0x1802a29f0`
+- `0x18037b63c`
+- `0x180426760`
+- `0x1804d7d08`
+- `0x1804d8028`
+- `0x1804d8adc`
+- `0x1804d97bc`
+- `0x1804d98d8`
+- `0x1804db540`
+- `0x1804e0504`
+- `0x180612b80`
+- `0x18061c5bc`
+- `0x180658c80`
+- `0x180688bf0`
+- `0x1806fad30`
+- `0x1806fc670`
+- `0x1806fd720`
+- `0x18078f4f0`
+- `0x1807c8c38`
+- `0x180892198`
+- `0x180af8504`
+- `0x180b065a4`
+- `0x180b16c34`
+- `0x180b46bfc`
+- `0x180bb1180`
+- `0x180bb48c0`
+- `0x180bb9be8`
+
+## import_xrefs
+
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1816d5fce`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1816d60e4`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1816d6124`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1816d5fce`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1816d60e4`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1816d6124`
+- `Mso20Win32Client!__imp_?ToString@OGuid@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBU_GUID@@_N@Z` at `0x1816d6b43`
+- `Mso20Win32Client!__imp_?ToString@OGuid@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBU_GUID@@_N@Z` at `0x1816d6b43`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d52a7`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d532b`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d534b`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d5a9e`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d618c`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d61ae`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d61d0`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d61f2`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6214`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6236`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6258`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d627a`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d629c`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d62be`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d62e8`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d634e`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d636f`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6fce`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d7220`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d768c`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d7738`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d52a7`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d532b`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d534b`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d5a9e`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d618c`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d61ae`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d61d0`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d61f2`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6214`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6236`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6258`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d627a`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d629c`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d62be`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d62e8`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d634e`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d636f`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6fce`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d7220`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d768c`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d7738`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1816d540a`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1816d77b3`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1816d540a`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1816d77b3`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x1816d56c1`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x1816d5738`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x1816d57ab`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x1816d581e`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x1816d56c1`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x1816d5738`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x1816d57ab`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x1816d581e`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d52e9`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d556b`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d563a`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6148`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d616a`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d630a`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d632c`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d52e9`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d556b`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d563a`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d6148`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d616a`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d630a`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1816d632c`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1816d53f7`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1816d77a0`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1816d53f7`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1816d77a0`
+- `Mso20Win32Client!__imp_?CreateJsonWriter@Json@Mso@@YA?AV?$TCntPtr@UIJsonWriter@Json@Mso@@@2@XZ` at `0x1816d640d`
+- `Mso20Win32Client!__imp_?CreateJsonWriter@Json@Mso@@YA?AV?$TCntPtr@UIJsonWriter@Json@Mso@@@2@XZ` at `0x1816d640d`
+- `Mso20Win32Client!__imp_?GetPrivateSessionId@Process@Mso@@YAAEBU_GUID@@XZ` at `0x1816d6b30`
+- `Mso20Win32Client!__imp_?GetPrivateSessionId@Process@Mso@@YAAEBU_GUID@@XZ` at `0x1816d6b30`
+
+## string_xrefs
+
+- `0x1816d64a6`: `AuthToken`
+- `0x1816d5dca`: `MyMPCInfoCacheHit`
+- `0x1816d559d`: `GetTokensAsyncEnabled`
+- `0x1816d6550`: `SubstrateToken`
+- `0x1816d64f8`: `GraphToken`
+- `0x1816d6c05`: `IsBrowserClipboardCopyDisabled`
+- `0x1816d6bc1`: `GetTokensAsyncEnabled`
+- `0x1816d6c4a`: `IsCopyToClipboardResultEnabled`
+- `0x1816d6e74`: `IsBrowserCopyNativeFallbackEnabled`
+- `0x1816d714d`: `IsRemoveDialogCaptionEnabled`
+- `0x1816d7242`: `IsPolicyAllowContactComplianceEnabled`
+- `0x1816d72cc`: `IsPolicyAllowScreenshotCompilanceEnabled`
+- `0x1816d7287`: `IsPolicyAllowFeedbackComplianceEnabled`
+- `0x1816d7356`: `IsPolicyAllowSurveyComplianceEnabled`
+- `0x1816d73e0`: `IsPolicyAllowCopilotFeedbackCompliance`
+- `0x1816d739b`: `IsPolicyAllowContentCompliance`
+
+## pseudocode
+
+```c
+
+```

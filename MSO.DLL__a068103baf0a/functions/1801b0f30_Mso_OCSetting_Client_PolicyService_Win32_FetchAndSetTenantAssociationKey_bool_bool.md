@@ -1,0 +1,231 @@
+# Mso::OCSetting::Client::PolicyService_Win32::FetchAndSetTenantAssociationKey(bool,bool)
+
+- ea: `0x1801b0f30`
+- end: `0x1801b547c`
+- name: `?FetchAndSetTenantAssociationKey@PolicyService_Win32@Client@OCSetting@Mso@@UEAAX_N0@Z`
+- size: `17740`
+- prototype: `void __fastcall(Mso::OCSetting::Client::PolicyService_Win32 *__hidden this, bool, bool)`
+- caller_count: `0`
+- callee_count: `55`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callees
+
+- `0x18000f83c`
+- `0x1800326a8`
+- `0x1800326e8`
+- `0x1800327ac`
+- `0x1800327d8`
+- `0x180032d80`
+- `0x180052610`
+- `0x180052c8c`
+- `0x180052ce0`
+- `0x18006c140`
+- `0x180088418`
+- `0x18008a220`
+- `0x18008a260`
+- `0x18008a404`
+- `0x18009cf20`
+- `0x1800e8ddc`
+- `0x1800e8e00`
+- `0x1800f9a68`
+- `0x18014afb4`
+- `0x1801afc5c`
+- `0x1801b0f30`
+- `0x1801b547c`
+- `0x1801b62c0`
+- `0x1801b703c`
+- `0x1801c9744`
+- `0x180208de0`
+- `0x180239a90`
+- `0x18023c2e0`
+- `0x18023e8d0`
+- `0x1802966c4`
+- `0x18029bf3c`
+- `0x1802d032c`
+- `0x1802f4360`
+- `0x1803ab740`
+- `0x1806542f4`
+- `0x1806dadcc`
+- `0x1806dadd8`
+- `0x1807bcc00`
+- `0x1807bcd58`
+- `0x1807bcdc0`
+- `0x1807bd3bc`
+- `0x1807bd9c0`
+- `0x1807bdf20`
+- `0x1807be14c`
+- `0x1807be630`
+- `0x180931708`
+- `0x18096fc64`
+- `0x1809a4dbc`
+- `0x1809ca0b8`
+- `0x180a28118`
+
+## import_xrefs
+
+- `Mso30Win32Client!__imp_?IsAuthenticationEnabled@Authentication@Mso@@YA_NXZ` at `0x1801b4b0b`
+- `Mso30Win32Client!__imp_?IsAuthenticationEnabled@Authentication@Mso@@YA_NXZ` at `0x1801b4b0b`
+- `Mso30Win32Client!__imp_?WaitForBackgroundThreads@Authentication@Mso@@YAXXZ` at `0x1801b0fdb`
+- `Mso30Win32Client!__imp_?WaitForBackgroundThreads@Authentication@Mso@@YAXXZ` at `0x1801b0fdb`
+- `Mso30Win32Client!__imp_?GetConnectedIdentity@Authentication@Mso@@YAPEAUIOfficeIdentity@12@XZ` at `0x1801b0fe1`
+- `Mso30Win32Client!__imp_?GetConnectedIdentity@Authentication@Mso@@YAPEAUIOfficeIdentity@12@XZ` at `0x1801b0fe1`
+- `Mso30Win32Client!__imp_?GetActiveIdentity@Authentication@Mso@@YAPEBUIOfficeIdentity@12@XZ` at `0x1801b100c`
+- `Mso30Win32Client!__imp_?GetActiveIdentity@Authentication@Mso@@YAPEBUIOfficeIdentity@12@XZ` at `0x1801b5193`
+- `Mso30Win32Client!__imp_?GetActiveIdentity@Authentication@Mso@@YAPEBUIOfficeIdentity@12@XZ` at `0x1801b100c`
+- `Mso30Win32Client!__imp_?GetActiveIdentity@Authentication@Mso@@YAPEBUIOfficeIdentity@12@XZ` at `0x1801b5193`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b13c6`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b1fbe`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b26fa`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b2ba9`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b2f43`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b37fe`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b4097`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b4452`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b48c5`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b4b00`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b501f`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b5453`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b13c6`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b1fbe`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b26fa`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b2ba9`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b2f43`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b37fe`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b4097`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b4452`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b48c5`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b4b00`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b501f`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1801b5453`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1801b3810`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1801b40cc`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1801b3810`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1801b40cc`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1056`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1075`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b115b`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1a18`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1a38`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1ab1`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b20f6`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2113`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2150`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2875`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2895`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b290f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2c43`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2c66`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2ce9`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b31e8`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3208`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3245`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b386e`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b388e`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3974`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3aac`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3ac9`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3b43`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4128`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4149`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b41cc`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b44b7`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b44d4`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b454e`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4b53`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4b73`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4cb1`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4cd1`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4d84`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b506a`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1056`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1075`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b115b`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1a18`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1a38`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b1ab1`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b20f6`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2113`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2150`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2875`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2895`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b290f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2c43`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2c66`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b2ce9`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b31e8`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3208`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3245`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b386e`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b388e`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3974`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3aac`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3ac9`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b3b43`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4128`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4149`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b41cc`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b44b7`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b44d4`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b454e`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4b53`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4b73`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4cb1`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4cd1`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b4d84`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1801b506a`
+- `Mso20Win32Client!__imp_?MsoFIsClick2Run@@YAHK@Z` at `0x1801b5311`
+- `Mso20Win32Client!__imp_?MsoFIsClick2Run@@YAHK@Z` at `0x1801b5311`
+- `Mso20Win32Client!__imp_?SetPolicyUserName@ClickToRun@Mso@@YAJAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z` at `0x1801b2fc5`
+- `Mso20Win32Client!__imp_?SetPolicyUserName@ClickToRun@Mso@@YAJAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z` at `0x1801b2fc5`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1801b2bbb`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1801b2bbb`
+- `Mso20Win32Client!__imp_?Create@OGuid@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@_N@Z` at `0x1801b0fcd`
+- `Mso20Win32Client!__imp_?Create@OGuid@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@_N@Z` at `0x1801b0fcd`
+- `Mso20Win32Client!__imp_?SetPolicyUserDisplayName@ClickToRun@Mso@@YAJAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z` at `0x1801b30c0`
+- `Mso20Win32Client!__imp_?SetPolicyUserDisplayName@ClickToRun@Mso@@YAJAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z` at `0x1801b30c0`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51a8`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51b6`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51c4`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51d2`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51e0`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51f7`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51a8`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51b6`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51c4`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51d2`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51e0`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x1801b51f7`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4913`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b49c1`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4a58`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4ad9`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4e4c`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4f1a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4fb1`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b5136`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4913`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b49c1`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4a58`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4ad9`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4e4c`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4f1a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b4fb1`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1801b5136`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1801b490c`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1801b4ad2`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1801b490c`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1801b4ad2`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi64` at `0x1801b2bf4`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi64` at `0x1801b2bf4`
+
+## string_xrefs
+
+- `0x1801b449e`: `Failed to fetch auth token for tenant association key: `
+- `0x1801b524f`: `Tenant association config Url not valid: `
+
+## pseudocode
+
+```c
+
+```

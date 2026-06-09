@@ -1,0 +1,162 @@
+# Mso::LastMileTelemetry::SendHttpRequest(std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> &,Mso::LastMileTelemetry::MeasureValue &,bool,bool,int)
+
+- ea: `0x180286438`
+- end: `0x180287687`
+- name: `?SendHttpRequest@LastMileTelemetry@Mso@@YA_NAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@00AEAV34@AEAUMeasureValue@12@_N3H@Z`
+- size: `4687`
+- prototype: `__int64 __usercall@<rax>(LPCWSTR pswzServerName@<rcx>, LPCWSTR pwszObjectName@<rdx>, LPCWSTR pwszVerb@<r8>, __int64, char, char, int)`
+- caller_count: `4`
+- callee_count: `21`
+- tags: `reparse_path`
+
+## callers
+
+- `0x1802862d0`
+- `0x180287d78`
+- `0x180614a60`
+- `0x18193570c`
+
+## callees
+
+- `0x18005339c`
+- `0x18008a404`
+- `0x1800e8dc0`
+- `0x1800e8dd4`
+- `0x1800e8ddc`
+- `0x1800e8e00`
+- `0x1801c89c4`
+- `0x1801c8c28`
+- `0x1801c8f10`
+- `0x1801c98d8`
+- `0x180208de0`
+- `0x180239aa0`
+- `0x18023c2e0`
+- `0x180286438`
+- `0x180287688`
+- `0x1802876d0`
+- `0x1802876fc`
+- `0x18028774c`
+- `0x1802a52cc`
+- `0x1802f0334`
+- `0x18043a988`
+
+## import_xrefs
+
+- `KERNEL32!GetLastError` at `0x180286886`
+- `KERNEL32!GetLastError` at `0x1802868b9`
+- `KERNEL32!GetLastError` at `0x1802868ec`
+- `KERNEL32!GetLastError` at `0x18028691f`
+- `KERNEL32!GetLastError` at `0x1802869b6`
+- `KERNEL32!GetLastError` at `0x180286886`
+- `KERNEL32!GetLastError` at `0x1802868b9`
+- `KERNEL32!GetLastError` at `0x1802868ec`
+- `KERNEL32!GetLastError` at `0x18028691f`
+- `KERNEL32!GetLastError` at `0x1802869b6`
+- `KERNEL32!QueryPerformanceCounter` at `0x1802866ec`
+- `KERNEL32!QueryPerformanceCounter` at `0x18028682a`
+- `KERNEL32!QueryPerformanceCounter` at `0x1802866ec`
+- `KERNEL32!QueryPerformanceCounter` at `0x18028682a`
+- `KERNEL32!QueryPerformanceFrequency` at `0x180286601`
+- `KERNEL32!QueryPerformanceFrequency` at `0x180286601`
+- `MSVCP140!?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z` at `0x180286f1c`
+- `MSVCP140!?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z` at `0x180286f1c`
+- `MSVCP140!??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@H@Z` at `0x180286f50`
+- `MSVCP140!??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@H@Z` at `0x180286f50`
+- `MSVCP140!?fill@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEAA_W_W@Z` at `0x180286f40`
+- `MSVCP140!?fill@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEAA_W_W@Z` at `0x180286f40`
+- `MSVCP140!??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@P6AAEAVios_base@1@AEAV21@@Z@Z` at `0x180286f02`
+- `MSVCP140!??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@P6AAEAVios_base@1@AEAV21@@Z@Z` at `0x180286f02`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x180286c1a`
+- `MSVCP140!??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ` at `0x180286c1a`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x180287644`
+- `MSVCP140!?_Xlength_error@std@@YAXPEBD@Z` at `0x180287644`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180287255`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1802872ac`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18028737e`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1802873d2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180287438`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1802874a2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180287606`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180287255`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1802872ac`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18028737e`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1802873d2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180287438`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1802874a2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180287606`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180287318`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180287377`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180287431`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x18028749b`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1802874bc`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1802874d2`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1802875e9`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180287318`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180287377`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180287431`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x18028749b`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1802874bc`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1802874d2`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1802875e9`
+- `CRYPT32!CryptHashCertificate` at `0x18028698f`
+- `CRYPT32!CryptHashCertificate` at `0x180286ee3`
+- `CRYPT32!CryptHashCertificate` at `0x18028698f`
+- `CRYPT32!CryptHashCertificate` at `0x180286ee3`
+- `CRYPT32!CertGetNameStringW` at `0x180286b65`
+- `CRYPT32!CertGetNameStringW` at `0x180286bc0`
+- `CRYPT32!CertGetNameStringW` at `0x180286b65`
+- `CRYPT32!CertGetNameStringW` at `0x180286bc0`
+- `CRYPT32!CertFreeCertificateContext` at `0x180286c06`
+- `CRYPT32!CertFreeCertificateContext` at `0x180286c06`
+- `WINHTTP!WinHttpReceiveResponse` at `0x18028671f`
+- `WINHTTP!WinHttpReceiveResponse` at `0x18028671f`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802867aa`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802867e8`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180286880`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802868b3`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802868e6`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180286919`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180286ff7`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180287123`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802871c4`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180287593`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802867aa`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802867e8`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180286880`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802868b3`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802868e6`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180286919`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180286ff7`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180287123`
+- `WINHTTP!WinHttpQueryHeaders` at `0x1802871c4`
+- `WINHTTP!WinHttpQueryHeaders` at `0x180287593`
+- `WINHTTP!WinHttpOpenRequest` at `0x1802866b0`
+- `WINHTTP!WinHttpOpenRequest` at `0x1802866b0`
+- `WINHTTP!WinHttpQueryDataAvailable` at `0x18028680a`
+- `WINHTTP!WinHttpQueryDataAvailable` at `0x18028680a`
+- `WINHTTP!WinHttpQueryOption` at `0x180286740`
+- `WINHTTP!WinHttpQueryOption` at `0x18028694c`
+- `WINHTTP!WinHttpQueryOption` at `0x180286740`
+- `WINHTTP!WinHttpQueryOption` at `0x18028694c`
+- `WINHTTP!WinHttpSetTimeouts` at `0x180286642`
+- `WINHTTP!WinHttpSetTimeouts` at `0x180286642`
+- `WINHTTP!WinHttpSendRequest` at `0x18028670c`
+- `WINHTTP!WinHttpSendRequest` at `0x18028670c`
+- `WINHTTP!WinHttpAddRequestHeaders` at `0x1802866e2`
+- `WINHTTP!WinHttpAddRequestHeaders` at `0x1802866e2`
+- `WINHTTP!WinHttpOpen` at `0x18028661e`
+- `WINHTTP!WinHttpOpen` at `0x18028661e`
+- `WINHTTP!WinHttpReadData` at `0x180287059`
+- `WINHTTP!WinHttpReadData` at `0x180287059`
+- `WINHTTP!WinHttpConnect` at `0x180286667`
+- `WINHTTP!WinHttpConnect` at `0x180286667`
+- `WINHTTP!WinHttpCloseHandle` at `0x1802875cf`
+- `WINHTTP!WinHttpCloseHandle` at `0x1802875cf`
+- `WS2_32!InetNtopW` at `0x180286774`
+- `WS2_32!InetNtopW` at `0x180286774`
+
+## pseudocode
+
+```c
+
+```

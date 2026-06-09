@@ -1,0 +1,174 @@
+# Mso::Ads::Container::CustomWindowControlContainer::StartSandbox(void)
+
+- ea: `0x18038ce68`
+- end: `0x18038e437`
+- name: `?StartSandbox@CustomWindowControlContainer@Container@Ads@Mso@@QEAAJXZ`
+- size: `5583`
+- prototype: `__int64 __fastcall(Mso::Ads::Container::CustomWindowControlContainer *__hidden this)`
+- caller_count: `2`
+- callee_count: `33`
+- tags: `registry_config, loader_planting, service_task, broker_com_uri`
+
+## callers
+
+- `0x18038c5e0`
+- `0x180dd3e60`
+
+## callees
+
+- `0x18002af10`
+- `0x1800324a0`
+- `0x1800324d4`
+- `0x18003266c`
+- `0x1800326a8`
+- `0x1800326e8`
+- `0x180032d80`
+- `0x18003c3d8`
+- `0x180040c40`
+- `0x1800460f0`
+- `0x18008e5bc`
+- `0x1800e8e00`
+- `0x18011f3a0`
+- `0x18018e74c`
+- `0x180239960`
+- `0x180239aa0`
+- `0x180239ab0`
+- `0x18023c2e0`
+- `0x18023e680`
+- `0x18023e770`
+- `0x18023e8d0`
+- `0x1802f1a28`
+- `0x180311730`
+- `0x18038a9d4`
+- `0x18038ad80`
+- `0x18038c0f4`
+- `0x18038ce68`
+- `0x18038e440`
+- `0x18038e4a8`
+- `0x18038e660`
+- `0x18038e684`
+- `0x1803f6f90`
+- `0x180dd3474`
+
+## import_xrefs
+
+- `KERNEL32!GetProcAddress` at `0x18038ceee`
+- `KERNEL32!GetProcAddress` at `0x18038cf4a`
+- `KERNEL32!GetProcAddress` at `0x18038d9b9`
+- `KERNEL32!GetProcAddress` at `0x18038e19a`
+- `KERNEL32!GetProcAddress` at `0x18038ceee`
+- `KERNEL32!GetProcAddress` at `0x18038cf4a`
+- `KERNEL32!GetProcAddress` at `0x18038d9b9`
+- `KERNEL32!GetProcAddress` at `0x18038e19a`
+- `KERNEL32!FreeLibrary` at `0x18038e14e`
+- `KERNEL32!FreeLibrary` at `0x18038e429`
+- `KERNEL32!FreeLibrary` at `0x18038e14e`
+- `KERNEL32!FreeLibrary` at `0x18038e429`
+- `mso40uiWin32Client!__imp_?GetVisualStyle@VisualVersion@@YA?AW4VisualStyle@1@XZ` at `0x18038d26e`
+- `mso40uiWin32Client!__imp_?GetVisualStyle@VisualVersion@@YA?AW4VisualStyle@1@XZ` at `0x18038d26e`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038d11d`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038da6c`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038e1ce`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038d11d`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038da6c`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038e1ce`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d150`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d1b7`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d1dc`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d208`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d234`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d260`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d3c9`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d3ee`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d434`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d464`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d491`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d4c4`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d571`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d59b`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d795`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d7c2`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d7ec`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d829`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d8ae`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d95e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d150`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d1b7`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d1dc`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d208`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d234`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d260`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d3c9`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d3ee`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d434`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d464`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d491`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d4c4`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d571`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d59b`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d795`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d7c2`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d7ec`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d829`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d8ae`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18038d95e`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18038d6e3`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18038d853`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18038d8f3`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18038d988`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18038d6e3`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18038d853`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18038d8f3`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x18038d988`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038d0db`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038d617`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038d0db`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18038d617`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x18038d6d3`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x18038d843`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x18038d8e0`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x18038d978`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x18038d6d3`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x18038d843`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x18038d8e0`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x18038d978`
+- `Mso20Win32Client!__imp_?CreateJsonWriter@Json@Mso@@YA?AV?$TCntPtr@UIJsonWriter@Json@Mso@@@2@XZ` at `0x18038d1a0`
+- `Mso20Win32Client!__imp_?CreateJsonWriter@Json@Mso@@YA?AV?$TCntPtr@UIJsonWriter@Json@Mso@@@2@XZ` at `0x18038d1a0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18038db62`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18038dbfa`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18038e322`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18038e387`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18038db62`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18038dbfa`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18038e322`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18038e387`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x18038dbf3`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x18038e380`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x18038dbf3`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x18038e380`
+- `USER32!GetDpiForSystem` at `0x18038d621`
+- `USER32!GetDpiForSystem` at `0x18038d621`
+- `USER32!SystemParametersInfoW` at `0x18038d664`
+- `USER32!SystemParametersInfoW` at `0x18038d664`
+
+## string_xrefs
+
+- `0x18038ceaa`: `osfshared.dll`
+- `0x18038cee7`: `?CreateWebAddInOptionalProperties@Osf@@YAJAEAV?$TCntPtr@UIWebAddInOptionalProperties@@@Mso@@@Z`
+- `0x18038e190`: `?CreateSolutionRef@Osf@@YAJPEB_WAEBUAppVersion@@W4OsfStoreType@@000_NPEAPEAUIOsfSolutionReference@@@Z`
+- `0x18038db0b`: `Failed to create extension identity`
+- `0x18038d9af`: `?CreateExtensionIdentity@SDK@SDX@@YA?AV?$TCntPtr@UIExtensionIdentity@SDK@SDX@@@Mso@@PEB_WAEBUAppVersion@@00AEAUIExtensionLaunchProperties@12@@Z`
+- `0x18038d53e`: `Taskpane`
+- `0x18038cf55`: `Failed to get CreateLaunchProperties procedure`
+- `0x18038cfa9`: `Failed to create launch properties`
+- `0x18038df49`: `Failed to get extension component lifetime`
+- `0x18038de26`: `Failed to get extension framework`
+- `0x18038d9cb`: `Failed to get CreateExtensionIdentity procedure`
+- `0x18038dfef`: `Failed to launch extension component`
+- `0x18038cf43`: `?CreateLaunchProperties@MSO@SDX@@YA?AV?$shared_ptr@UIExtensionLaunchProperties@SDK@SDX@@@std@@XZ`
+
+## pseudocode
+
+```c
+
+```
