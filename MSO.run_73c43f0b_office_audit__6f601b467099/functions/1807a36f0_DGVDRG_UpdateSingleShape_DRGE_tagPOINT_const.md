@@ -1,0 +1,192 @@
+# DGVDRG::UpdateSingleShape(DRGE *,tagPOINT const *)
+
+- ea: `0x1807a36f0`
+- end: `0x1807a4cef`
+- name: `?UpdateSingleShape@DGVDRG@@QEAAXPEAUDRGE@@PEBUtagPOINT@@@Z`
+- size: `5631`
+- prototype: `void __fastcall(DGVDRG *__hidden this, struct DRGE *, const struct tagPOINT *)`
+- caller_count: `5`
+- callee_count: `32`
+- tags: `authz_impersonation, installer_update`
+
+## callers
+
+- `0x180477e8c`
+- `0x180c33440`
+- `0x1811930a0`
+- `0x181193ca0`
+- `0x1811946f4`
+
+## callees
+
+- `0x18000a7d4`
+- `0x18001d310`
+- `0x180095280`
+- `0x1800952b0`
+- `0x1801698a0`
+- `0x18016a5c4`
+- `0x18016eca0`
+- `0x180198a84`
+- `0x180246430`
+- `0x1802465a0`
+- `0x180249448`
+- `0x18024c990`
+- `0x1803f04cc`
+- `0x180470390`
+- `0x1804703f0`
+- `0x180470440`
+- `0x180471c1c`
+- `0x180471d00`
+- `0x180473d00`
+- `0x180474674`
+- `0x1804746b4`
+- `0x180474760`
+- `0x180484670`
+- `0x1804860a0`
+- `0x1807a2ed4`
+- `0x1807a35bc`
+- `0x1807a36f0`
+- `0x1807a4cf0`
+- `0x1807a4dc8`
+- `0x1809c7bb0`
+- `0x180b45ca0`
+- `0x181195e50`
+
+## import_xrefs
+
+- `KERNEL32!MulDiv` at `0x1807a3a3c`
+- `KERNEL32!MulDiv` at `0x1807a3a92`
+- `KERNEL32!MulDiv` at `0x1807a4b26`
+- `KERNEL32!MulDiv` at `0x1807a4b42`
+- `KERNEL32!MulDiv` at `0x1807a4b66`
+- `KERNEL32!MulDiv` at `0x1807a4b7e`
+- `KERNEL32!MulDiv` at `0x1807a3a3c`
+- `KERNEL32!MulDiv` at `0x1807a3a92`
+- `KERNEL32!MulDiv` at `0x1807a4b26`
+- `KERNEL32!MulDiv` at `0x1807a4b42`
+- `KERNEL32!MulDiv` at `0x1807a4b66`
+- `KERNEL32!MulDiv` at `0x1807a4b7e`
+- `Mso98Win32Client!__imp_?MsoGetPropSetNinch@@YAXW4MSOPSID@@PEAX@Z` at `0x1807a4452`
+- `Mso98Win32Client!__imp_?MsoGetPropSetNinch@@YAXW4MSOPSID@@PEAX@Z` at `0x1807a4589`
+- `Mso98Win32Client!__imp_?MsoGetPropSetNinch@@YAXW4MSOPSID@@PEAX@Z` at `0x1807a4c3e`
+- `Mso98Win32Client!__imp_?MsoGetPropSetNinch@@YAXW4MSOPSID@@PEAX@Z` at `0x1807a4452`
+- `Mso98Win32Client!__imp_?MsoGetPropSetNinch@@YAXW4MSOPSID@@PEAX@Z` at `0x1807a4589`
+- `Mso98Win32Client!__imp_?MsoGetPropSetNinch@@YAXW4MSOPSID@@PEAX@Z` at `0x1807a4c3e`
+- `mso40uiWin32Client!__imp_MsoRotateRc` at `0x1807a440e`
+- `mso40uiWin32Client!__imp_MsoRotateRc` at `0x1807a4995`
+- `mso40uiWin32Client!__imp_MsoRotateRc` at `0x1807a440e`
+- `mso40uiWin32Client!__imp_MsoRotateRc` at `0x1807a4995`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a4188`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a43be`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a494b`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a4984`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a49a3`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a4188`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a43be`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a494b`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a4984`
+- `mso40uiWin32Client!__imp_?MsoCenterPt@@YAXPEAUtagPOINT@@PEBUtagRECT@@@Z` at `0x1807a49a3`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3b9c`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3bea`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3c59`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3c71`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3cad`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3cc7`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3cf6`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3d07`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3d3d`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3d4e`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3db3`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3dbd`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3dd6`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e22`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e2c`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e45`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e5a`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e6b`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3ea9`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3eba`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a4126`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a4140`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a452a`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a453e`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3b9c`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3bea`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3c59`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3c71`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3cad`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3cc7`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3cf6`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3d07`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3d3d`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3d4e`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3db3`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3dbd`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3dd6`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e22`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e2c`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e45`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e5a`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3e6b`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3ea9`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a3eba`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a4126`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a4140`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a452a`
+- `mso40uiWin32Client!__imp_?XYSum@@YAJJJ@Z` at `0x1807a453e`
+- `mso40uiWin32Client!__imp_?MsoAxisFromAngle@@YA?AW4MSOAXIS@@J@Z` at `0x1807a42d6`
+- `mso40uiWin32Client!__imp_?MsoAxisFromAngle@@YA?AW4MSOAXIS@@J@Z` at `0x1807a42d6`
+- `mso40uiWin32Client!__imp_??0FPState@@QEAA@K@Z` at `0x1807a419e`
+- `mso40uiWin32Client!__imp_??0FPState@@QEAA@K@Z` at `0x1807a419e`
+- `mso40uiWin32Client!__imp_?Apply@GTransform@@UEBAPEAUtagPOINT@@PEAU2@@Z` at `0x1807a388a`
+- `mso40uiWin32Client!__imp_?Apply@GTransform@@UEBAPEAUtagPOINT@@PEAU2@@Z` at `0x1807a389a`
+- `mso40uiWin32Client!__imp_?Apply@GTransform@@UEBAPEAUtagPOINT@@PEAU2@@Z` at `0x1807a43e3`
+- `mso40uiWin32Client!__imp_?Apply@GTransform@@UEBAPEAUtagPOINT@@PEAU2@@Z` at `0x1807a496c`
+- `mso40uiWin32Client!__imp_?Apply@GTransform@@UEBAPEAUtagPOINT@@PEAU2@@Z` at `0x1807a388a`
+- `mso40uiWin32Client!__imp_?Apply@GTransform@@UEBAPEAUtagPOINT@@PEAU2@@Z` at `0x1807a389a`
+- `mso40uiWin32Client!__imp_?Apply@GTransform@@UEBAPEAUtagPOINT@@PEAU2@@Z` at `0x1807a43e3`
+- `mso40uiWin32Client!__imp_?Apply@GTransform@@UEBAPEAUtagPOINT@@PEAU2@@Z` at `0x1807a496c`
+- `mso40uiWin32Client!__imp_?Rotate@GTransform@@UEAAXJPEBUtagPOINT@@@Z` at `0x1807a3878`
+- `mso40uiWin32Client!__imp_?Rotate@GTransform@@UEAAXJPEBUtagPOINT@@@Z` at `0x1807a43d4`
+- `mso40uiWin32Client!__imp_?Rotate@GTransform@@UEAAXJPEBUtagPOINT@@@Z` at `0x1807a495c`
+- `mso40uiWin32Client!__imp_?Rotate@GTransform@@UEAAXJPEBUtagPOINT@@@Z` at `0x1807a3878`
+- `mso40uiWin32Client!__imp_?Rotate@GTransform@@UEAAXJPEBUtagPOINT@@@Z` at `0x1807a43d4`
+- `mso40uiWin32Client!__imp_?Rotate@GTransform@@UEAAXJPEBUtagPOINT@@@Z` at `0x1807a495c`
+- `mso40uiWin32Client!__imp_?MsoRectPtrFromRect@@YAXPEAU_RECT_PTR@@PEBUtagRECT@@@Z` at `0x1807a4461`
+- `mso40uiWin32Client!__imp_?MsoRectPtrFromRect@@YAXPEAU_RECT_PTR@@PEBUtagRECT@@@Z` at `0x1807a4598`
+- `mso40uiWin32Client!__imp_?MsoRectPtrFromRect@@YAXPEAU_RECT_PTR@@PEBUtagRECT@@@Z` at `0x1807a4c4d`
+- `mso40uiWin32Client!__imp_?MsoRectPtrFromRect@@YAXPEAU_RECT_PTR@@PEBUtagRECT@@@Z` at `0x1807a4461`
+- `mso40uiWin32Client!__imp_?MsoRectPtrFromRect@@YAXPEAU_RECT_PTR@@PEBUtagRECT@@@Z` at `0x1807a4598`
+- `mso40uiWin32Client!__imp_?MsoRectPtrFromRect@@YAXPEAU_RECT_PTR@@PEBUtagRECT@@@Z` at `0x1807a4c4d`
+- `mso40uiWin32Client!__imp_??1FPState@@QEAA@XZ` at `0x1807a44c2`
+- `mso40uiWin32Client!__imp_??1FPState@@QEAA@XZ` at `0x1807a44c2`
+- `mso40uiWin32Client!__imp_?MsoAngleFromAngle@@YAJJ@Z` at `0x1807a3837`
+- `mso40uiWin32Client!__imp_?MsoAngleFromAngle@@YAJJ@Z` at `0x1807a43ad`
+- `mso40uiWin32Client!__imp_?MsoAngleFromAngle@@YAJJ@Z` at `0x1807a490f`
+- `mso40uiWin32Client!__imp_?MsoAngleFromAngle@@YAJJ@Z` at `0x1807a3837`
+- `mso40uiWin32Client!__imp_?MsoAngleFromAngle@@YAJJ@Z` at `0x1807a43ad`
+- `mso40uiWin32Client!__imp_?MsoAngleFromAngle@@YAJJ@Z` at `0x1807a490f`
+- `mso40uiWin32Client!__imp_MsoRcFromAngle` at `0x1807a4426`
+- `mso40uiWin32Client!__imp_MsoRcFromAngle` at `0x1807a48d3`
+- `mso40uiWin32Client!__imp_MsoRcFromAngle` at `0x1807a4426`
+- `mso40uiWin32Client!__imp_MsoRcFromAngle` at `0x1807a48d3`
+- `mso40uiWin32Client!__imp_?MsoTranslatePt@@YAXPEBUtagPOINT@@PEAU1@HH@Z` at `0x1807a4043`
+- `mso40uiWin32Client!__imp_?MsoTranslatePt@@YAXPEBUtagPOINT@@PEAU1@HH@Z` at `0x1807a4043`
+- `mso40uiWin32Client!__imp_?LONGFromFPNear@@YAJN@Z` at `0x1807a41d1`
+- `mso40uiWin32Client!__imp_?LONGFromFPNear@@YAJN@Z` at `0x1807a420c`
+- `mso40uiWin32Client!__imp_?LONGFromFPNear@@YAJN@Z` at `0x1807a41d1`
+- `mso40uiWin32Client!__imp_?LONGFromFPNear@@YAJN@Z` at `0x1807a420c`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1807a3fe6`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1807a3fe6`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x1807a4647`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x1807a4647`
+- `USER32!SetRect` at `0x1807a4b9d`
+- `USER32!SetRect` at `0x1807a4b9d`
+- `USER32!UnionRect` at `0x1807a4ac6`
+- `USER32!UnionRect` at `0x1807a4ac6`
+
+## pseudocode
+
+```c
+
+```
