@@ -1,0 +1,279 @@
+# sub_181D6BBAC
+
+- ea: `0x181d6bbac`
+- end: `0x181d6c99a`
+- name: `sub_181D6BBAC`
+- size: `3566`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `47`
+- tags: `service_task, installer_update`
+
+## callers
+
+- `0x181d6ca30`
+
+## callees
+
+- `0x18004a020`
+- `0x18005e878`
+- `0x18007c600`
+- `0x180086f40`
+- `0x18009cea0`
+- `0x1800a710c`
+- `0x1800bb378`
+- `0x1800d5178`
+- `0x1800de24c`
+- `0x1800de770`
+- `0x1800e7afc`
+- `0x18016a3dc`
+- `0x1801b45bc`
+- `0x1802361ac`
+- `0x180260548`
+- `0x1803b6e8c`
+- `0x1805afab0`
+- `0x1805b4ce8`
+- `0x1805cfe2c`
+- `0x1805dbc70`
+- `0x1807ebf70`
+- `0x18090a640`
+- `0x18090a660`
+- `0x180940e00`
+- `0x1809bce20`
+- `0x180afff00`
+- `0x180cde1b4`
+- `0x180de5dd8`
+- `0x180dff700`
+- `0x180ebacbc`
+- `0x180ede5a0`
+- `0x180f12280`
+- `0x181018ce0`
+- `0x1811896d8`
+- `0x18119be88`
+- `0x1811e3a9c`
+- `0x1812207f0`
+- `0x181276d00`
+- `0x1813e7ddc`
+- `0x1813f30ac`
+- `0x18145f2c4`
+- `0x18145f354`
+- `0x18160e624`
+- `0x181d6bbac`
+- `0x181d6cad4`
+- `0x181d6ced8`
+- `0x181d6d4d8`
+
+## import_xrefs
+
+- `oart!oart_10743` at `0x181d6bf55`
+- `oart!oart_10743` at `0x181d6bf55`
+- `oart!oart_11330` at `0x181d6c446`
+- `oart!oart_11330` at `0x181d6c446`
+- `oart!oart_16092` at `0x181d6bf44`
+- `oart!oart_16092` at `0x181d6bf44`
+- `oart!oart_19048` at `0x181d6c5e6`
+- `oart!oart_19048` at `0x181d6c5e6`
+- `oart!oart_23558` at `0x181d6c466`
+- `oart!oart_23558` at `0x181d6c466`
+- `oart!oart_27117` at `0x181d6c329`
+- `oart!oart_27117` at `0x181d6c329`
+- `oart!oart_27671` at `0x181d6c3db`
+- `oart!oart_27671` at `0x181d6c422`
+- `oart!oart_27671` at `0x181d6c6dd`
+- `oart!oart_27671` at `0x181d6c7f9`
+- `oart!oart_27671` at `0x181d6c3db`
+- `oart!oart_27671` at `0x181d6c422`
+- `oart!oart_27671` at `0x181d6c6dd`
+- `oart!oart_27671` at `0x181d6c7f9`
+- `oart!oart_32028` at `0x181d6bd46`
+- `oart!oart_32028` at `0x181d6bd46`
+- `oart!oart_32174` at `0x181d6c2ff`
+- `oart!oart_32174` at `0x181d6c567`
+- `oart!oart_32174` at `0x181d6c2ff`
+- `oart!oart_32174` at `0x181d6c567`
+- `oart!oart_38568` at `0x181d6c179`
+- `oart!oart_38568` at `0x181d6c1a8`
+- `oart!oart_38568` at `0x181d6c207`
+- `oart!oart_38568` at `0x181d6c257`
+- `oart!oart_38568` at `0x181d6c69b`
+- `oart!oart_38568` at `0x181d6c7b8`
+- `oart!oart_38568` at `0x181d6c179`
+- `oart!oart_38568` at `0x181d6c1a8`
+- `oart!oart_38568` at `0x181d6c207`
+- `oart!oart_38568` at `0x181d6c257`
+- `oart!oart_38568` at `0x181d6c69b`
+- `oart!oart_38568` at `0x181d6c7b8`
+- `oart!oart_40762` at `0x181d6be14`
+- `oart!oart_40762` at `0x181d6be85`
+- `oart!oart_40762` at `0x181d6bf00`
+- `oart!oart_40762` at `0x181d6bf0f`
+- `oart!oart_40762` at `0x181d6c5d6`
+- `oart!oart_40762` at `0x181d6be14`
+- `oart!oart_40762` at `0x181d6be85`
+- `oart!oart_40762` at `0x181d6bf00`
+- `oart!oart_40762` at `0x181d6bf0f`
+- `oart!oart_40762` at `0x181d6c5d6`
+- `oart!oart_45019` at `0x181d6c717`
+- `oart!oart_45019` at `0x181d6c717`
+- `oart!oart_47764` at `0x181d6c5a6`
+- `oart!oart_47764` at `0x181d6c82d`
+- `oart!oart_47764` at `0x181d6c5a6`
+- `oart!oart_47764` at `0x181d6c82d`
+- `oart!oart_53519` at `0x181d6bee2`
+- `oart!oart_53519` at `0x181d6bee2`
+- `oart!oart_54743` at `0x181d6c30d`
+- `oart!oart_54743` at `0x181d6c583`
+- `oart!oart_54743` at `0x181d6c30d`
+- `oart!oart_54743` at `0x181d6c583`
+- `oart!oart_57664` at `0x181d6c5c9`
+- `oart!oart_57664` at `0x181d6c5c9`
+- `oart!oart_57938` at `0x181d6c5bf`
+- `oart!oart_57938` at `0x181d6c863`
+- `oart!oart_57938` at `0x181d6c5bf`
+- `oart!oart_57938` at `0x181d6c863`
+- `oart!oart_59373` at `0x181d6c406`
+- `oart!oart_59373` at `0x181d6c406`
+- `oart!oart_62316` at `0x181d6c4d0`
+- `oart!oart_62316` at `0x181d6c4d0`
+- `oart!oart_64469` at `0x181d6c620`
+- `oart!oart_64469` at `0x181d6c744`
+- `oart!oart_64469` at `0x181d6c620`
+- `oart!oart_64469` at `0x181d6c744`
+- `oart!oart_64799` at `0x181d6bed4`
+- `oart!oart_64799` at `0x181d6bed4`
+- `KERNEL32!TlsGetValue` at `0x181d6c062`
+- `KERNEL32!TlsGetValue` at `0x181d6c085`
+- `KERNEL32!TlsGetValue` at `0x181d6c062`
+- `KERNEL32!TlsGetValue` at `0x181d6c085`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x181d6bbf4`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x181d6bd4f`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x181d6bd9b`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x181d6c845`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x181d6bbf4`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x181d6bd4f`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x181d6bd9b`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x181d6c845`
+- `mso40uiWin32Client!mso40uiWin32Client_16119` at `0x181d6bff4`
+- `mso40uiWin32Client!mso40uiWin32Client_16119` at `0x181d6c474`
+- `mso40uiWin32Client!mso40uiWin32Client_16119` at `0x181d6bff4`
+- `mso40uiWin32Client!mso40uiWin32Client_16119` at `0x181d6c474`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c000`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c1cf`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c1e0`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c2c9`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c2d5`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c3aa`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c6bb`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c7d7`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c885`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c8b9`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c8c4`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c000`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c1cf`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c1e0`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c2c9`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c2d5`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c3aa`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c6bb`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c7d7`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c885`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c8b9`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x181d6c8c4`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bc41`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bca5`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bd64`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bd8e`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bded`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6be5e`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bfe6`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c166`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c195`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c1eb`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c244`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c34f`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c374`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c3d2`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c419`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c489`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c548`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c674`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c6d4`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c796`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c7f0`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c838`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bc41`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bca5`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bd64`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bd8e`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bded`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6be5e`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6bfe6`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c166`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c195`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c1eb`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c244`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c34f`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c374`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c3d2`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c419`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c489`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c548`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c674`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c6d4`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c796`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c7f0`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x181d6c838`
+- `mso40uiWin32Client!mso40uiWin32Client_45173` at `0x181d6be43`
+- `mso40uiWin32Client!mso40uiWin32Client_45173` at `0x181d6be43`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6beaa`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6bebe`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c00b`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c051`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c156`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c335`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c4f5`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c500`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c50c`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c518`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c538`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c58f`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c6c5`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c7e1`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c86f`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c8cf`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c8f8`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c903`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c90e`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c919`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c957`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c963`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c96f`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6beaa`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6bebe`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c00b`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c051`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c156`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c335`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c4f5`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c500`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c50c`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c518`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c538`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c58f`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c6c5`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c7e1`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c86f`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c8cf`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x181d6c8f8`
+
+## string_xrefs
+
+- `0x181d6bd1a`: `_FAddOrUpdateAvd Failed to add AVD for E2o`
+- `0x181d6c122`: `_FAddOrUpdateAvd Failed to add AVD for Textbox`
+- `0x181d6c2a7`: `FInsertAttributionPostTaskFailed`
+
+## pseudocode
+
+```c
+
+```

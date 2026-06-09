@@ -1,0 +1,257 @@
+# CUpdateManagerReportingData::Clone(CUpdateManagerReportingData &)
+
+- ea: `0x1801489dc`
+- end: `0x18014a752`
+- name: `?Clone@CUpdateManagerReportingData@@QEAAJAEAV1@@Z`
+- size: `7542`
+- prototype: `int(CUpdateManagerReportingData *__hidden this, struct CUpdateManagerReportingData *)`
+- caller_count: `4`
+- callee_count: `22`
+- tags: `installer_update`
+
+## callers
+
+- `0x180087aa0`
+- `0x18014610c`
+- `0x1801477f0`
+- `0x180154b04`
+
+## callees
+
+- `0x18000def4`
+- `0x1800386e4`
+- `0x180038d00`
+- `0x1800543b8`
+- `0x18005f4c4`
+- `0x1800c5fb8`
+- `0x18010eec4`
+- `0x180110d60`
+- `0x180113ae8`
+- `0x180113b9c`
+- `0x18011a84c`
+- `0x1801489dc`
+- `0x18014d9f4`
+- `0x18014da58`
+- `0x1801509b8`
+- `0x180150a84`
+- `0x180150b5c`
+- `0x180238960`
+- `0x180239110`
+- `0x180240cc0`
+- `0x180240d40`
+- `0x180241100`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148a6b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148aac`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148b02`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148b2a`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148b93`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148bbb`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148bfc`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148c24`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148c6e`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148c96`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148ce0`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148d08`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148d52`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148d7a`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148dc4`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148dec`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148e4e`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148e76`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148ec0`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148ee8`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148f3e`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148f66`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149057`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014907f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149153`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014917b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801491c5`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801491ed`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801492a5`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801492cd`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801495cf`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801495f7`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149673`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014969b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801496e5`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014970d`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149757`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014977f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801497c9`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801497f1`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014983b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149863`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801498ad`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801498d5`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149967`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014998f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801499fd`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149a25`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149b7b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149ba3`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149bed`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149c15`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149c5f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149c87`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149cd1`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149cf9`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149daf`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149dd7`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149e21`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149e49`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149e93`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149ebb`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a084`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a0ac`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a17f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a1a7`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a1f1`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a219`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a263`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a28b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a335`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a35d`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a59b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a5e6`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148a6b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148aac`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148b02`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148b2a`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148b93`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148bbb`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148bfc`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148c24`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148c6e`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148c96`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148ce0`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148d08`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148d52`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148d7a`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148dc4`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148dec`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148e4e`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148e76`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148ec0`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148ee8`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148f3e`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180148f66`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149057`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014907f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149153`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014917b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801491c5`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801491ed`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801492a5`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801492cd`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801495cf`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801495f7`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149673`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014969b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801496e5`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014970d`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149757`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014977f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801497c9`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801497f1`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014983b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149863`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801498ad`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801498d5`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149967`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014998f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1801499fd`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149a25`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149b7b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149ba3`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149bed`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149c15`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149c5f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149c87`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149cd1`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149cf9`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149daf`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149dd7`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149e21`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149e49`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149e93`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180149ebb`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a084`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a0ac`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a17f`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a1a7`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a1f1`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a219`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a263`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a28b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a335`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a35d`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a59b`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18014a5e6`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148a2c`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148ad1`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148b62`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148bcb`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148c37`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148ca9`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148d1b`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148d8d`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148e17`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148e89`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148f07`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149020`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014911c`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014918e`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014926e`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149598`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014963c`
+- `OLEAUT32!__imp_SysFreeString` at `0x1801496ae`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149720`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149792`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149804`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149876`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149930`
+- `OLEAUT32!__imp_SysFreeString` at `0x1801499c6`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149b44`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149bb6`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149c28`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149c9a`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149d78`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149dea`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149e5c`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149f68`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014a04d`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014a148`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014a1ba`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014a22c`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014a2fe`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014a564`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148a2c`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148ad1`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148b62`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148bcb`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148c37`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148ca9`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148d1b`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148d8d`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148e17`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148e89`
+- `OLEAUT32!__imp_SysFreeString` at `0x180148f07`
+- `OLEAUT32!__imp_SysFreeString` at `0x180149020`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014911c`
+- `OLEAUT32!__imp_SysFreeString` at `0x18014918e`
+
+## string_xrefs
+
+- `0x180148a91`: `C:\__w\1\s\src\Client\Engine\Reporting\CUpdateManagerReportingData.cpp`
+- `0x1801494c0`: `C:\__w\1\s\src\Client\Engine\Reporting\CUpdateManagerReportingData.cpp`
+- `0x18014a5c6`: `C:\__w\1\s\src\Client\Engine\Reporting\CUpdateManagerReportingData.cpp`
+
+## pseudocode
+
+```c
+
+```

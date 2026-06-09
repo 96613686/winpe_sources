@@ -1,0 +1,191 @@
+[
+  {
+    "import": "api-ms-win-core-file-l1-1-0!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002977",
+        "from_func": "0x180002928",
+        "from_func_name": "sub_180002928",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180002977",
+        "from_func": "0x180002928",
+        "from_func_name": "sub_180002928",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180006168",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800015c3",
+        "from_func": "0x180001574",
+        "from_func_name": "sub_180001574",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800015c3",
+        "from_func": "0x180001574",
+        "from_func_name": "sub_180001574",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800061cc",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001dc2",
+        "from_func": "0x180001dc2",
+        "from_func_name": "__C_specific_handler",
+        "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001d86",
+        "from_func": "0x180001d86",
+        "from_func_name": "_o__configure_narrow_argv",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001db6",
+        "from_func": "0x180001db6",
+        "from_func_name": "_o__seh_filter_dll",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtQueryInformationProcess",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002009",
+        "from_func": "0x180001fa0",
+        "from_func_name": "WtdhGetProcessId",
+        "import": "ntdll!NtQueryInformationProcess"
+      },
+      {
+        "from_ea": "0x180002009",
+        "from_func": "0x180001fa0",
+        "from_func_name": "WtdhGetProcessId",
+        "import": "ntdll!NtQueryInformationProcess"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlAllocateHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001f20",
+        "from_func": "0x180001f00",
+        "from_func_name": "WtdhAllocateEvent",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x180001f20",
+        "from_func": "0x180001f00",
+        "from_func_name": "WtdhAllocateEvent",
+        "import": "ntdll!RtlAllocateHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001f73",
+        "from_func": "0x180001f50",
+        "from_func_name": "WtdhFreeEventIoPacket",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x180001f73",
+        "from_func": "0x180001f50",
+        "from_func_name": "WtdhFreeEventIoPacket",
+        "import": "ntdll!RtlFreeHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlNtStatusToDosError",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002015",
+        "from_func": "0x180001fa0",
+        "from_func_name": "WtdhGetProcessId",
+        "import": "ntdll!RtlNtStatusToDosError"
+      },
+      {
+        "from_ea": "0x180002015",
+        "from_func": "0x180001fa0",
+        "from_func_name": "WtdhGetProcessId",
+        "import": "ntdll!RtlNtStatusToDosError"
+      },
+      {
+        "from_ea": "0x180006208",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlNtStatusToDosError"
+      }
+    ]
+  }
+]

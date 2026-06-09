@@ -1,0 +1,209 @@
+[
+  {
+    "import": "api-ms-win-core-file-l1-1-0!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002407",
+        "from_func": "0x180002390",
+        "from_func_name": "WtdsRegisterSensor",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180002407",
+        "from_func": "0x180002390",
+        "from_func_name": "WtdsRegisterSensor",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800050b4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800015c3",
+        "from_func": "0x180001574",
+        "from_func_name": "sub_180001574",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800015c3",
+        "from_func": "0x180001574",
+        "from_func_name": "sub_180001574",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001dc2",
+        "from_func": "0x180001dc2",
+        "from_func_name": "__C_specific_handler",
+        "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001d86",
+        "from_func": "0x180001d86",
+        "from_func_name": "_o__configure_narrow_argv",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001db6",
+        "from_func": "0x180001db6",
+        "from_func_name": "_o__seh_filter_dll",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtQueryInformationProcess",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002329",
+        "from_func": "0x1800022c0",
+        "from_func_name": "WtdsGetProcessId",
+        "import": "ntdll!NtQueryInformationProcess"
+      },
+      {
+        "from_ea": "0x180002329",
+        "from_func": "0x1800022c0",
+        "from_func_name": "WtdsGetProcessId",
+        "import": "ntdll!NtQueryInformationProcess"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlAllocateHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001f84",
+        "from_func": "0x180001ef0",
+        "from_func_name": "WtdsAllocateEvent",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x18000248a",
+        "from_func": "0x180002390",
+        "from_func_name": "WtdsRegisterSensor",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x180001f84",
+        "from_func": "0x180001ef0",
+        "from_func_name": "WtdsAllocateEvent",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x18000248a",
+        "from_func": "0x180002390",
+        "from_func_name": "WtdsRegisterSensor",
+        "import": "ntdll!RtlAllocateHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000218d",
+        "from_func": "0x180002140",
+        "from_func_name": "WtdsFreeEvent",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x18000297d",
+        "from_func": "0x1800028b0",
+        "from_func_name": "WtdsUnregisterSensor",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x18000218d",
+        "from_func": "0x180002140",
+        "from_func_name": "WtdsFreeEvent",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x18000297d",
+        "from_func": "0x1800028b0",
+        "from_func_name": "WtdsUnregisterSensor",
+        "import": "ntdll!RtlFreeHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlNtStatusToDosError",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002335",
+        "from_func": "0x1800022c0",
+        "from_func_name": "WtdsGetProcessId",
+        "import": "ntdll!RtlNtStatusToDosError"
+      },
+      {
+        "from_ea": "0x180002335",
+        "from_func": "0x1800022c0",
+        "from_func_name": "WtdsGetProcessId",
+        "import": "ntdll!RtlNtStatusToDosError"
+      },
+      {
+        "from_ea": "0x18000503c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlNtStatusToDosError"
+      }
+    ]
+  }
+]
