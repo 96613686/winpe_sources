@@ -1,0 +1,1359 @@
+[
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CrashEventData::LoadFromWdi(void *)",
+    "ea": "0x180005020",
+    "function_file": "functions/180005020_CrashEventData_LoadFromWdi_void.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "wdi!WdiGetParameterByName",
+      "wdi!WdiGetParameterData",
+      "wdi!WdiGetParameterDataLength"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "CorruptedFilePath",
+      "UserSID"
+    ],
+    "name": "?LoadFromWdi@CrashEventData@@QEAAJPEAX@Z",
+    "prototype": "__int64 __fastcall(CrashEventData *__hidden this, void *)",
+    "rank_score": 4953,
+    "size": 999,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetFileCorruptionEvent",
+    "ea": "0x180002a88",
+    "function_file": "functions/180002a88_GetFileCorruptionEvent.md",
+    "matched_imports": [
+      "ADVAPI32!CopySid",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "tdh!TdhGetProperty",
+      "tdh!TdhGetPropertySize",
+      "wdi!WdiGetEvent"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "CorruptedFilePath"
+    ],
+    "name": "GetFileCorruptionEvent",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 4153,
+    "size": 1143,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ResolverData::LoadFromWdi(void *)",
+    "ea": "0x180005410",
+    "function_file": "functions/180005410_ResolverData_LoadFromWdi_void.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "wdi!WdiGetParameterByName",
+      "wdi!WdiGetParameterData",
+      "wdi!WdiGetParameterDataLength"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "?LoadFromWdi@ResolverData@@QEAAJPEAX@Z",
+    "prototype": "__int64 __fastcall(ResolverData *__hidden this, void *)",
+    "rank_score": 4060,
+    "size": 878,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Throttler::ThrottleAnyIdInvocations(HKEY__ *)",
+    "ea": "0x180006830",
+    "function_file": "functions/180006830_Throttler_ThrottleAnyIdInvocations_HKEY.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteKeyExW",
+      "ADVAPI32!RegEnumKeyExW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "?ThrottleAnyIdInvocations@Throttler@@AEAA?AW4ThrottleResult@1@PEAUHKEY__@@@Z",
+    "prototype": "enum Throttler::ThrottleResult __high(HKEY)",
+    "rank_score": 3234,
+    "size": 1246,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ShowReinstallUI",
+    "ea": "0x1800043d8",
+    "function_file": "functions/1800043d8_ShowReinstallUI.md",
+    "matched_imports": [
+      "COMCTL32!__imp_LoadIconWithScaleDown",
+      "COMCTL32!__imp_TaskDialogIndirect",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "USER32!GetSystemMetrics"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "ShowReinstallUI",
+      "ShowReinstallUI"
+    ],
+    "name": "ShowReinstallUI",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, int *pnButton)",
+    "rank_score": 3210,
+    "size": 637,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "Throttler::CountRecentAndCleanOldOccurs(HKEY__ *,ulong *)",
+    "ea": "0x180005ee4",
+    "function_file": "functions/180005ee4_Throttler_CountRecentAndCleanOldOccurs_HKEY_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegQueryInfoKeyW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [
+      "THROTTLE CONFIGURATION ERROR - unexpected registry value  %s:%d\n"
+    ],
+    "name": "?CountRecentAndCleanOldOccurs@Throttler@@AEAAJPEAUHKEY__@@PEAK@Z",
+    "prototype": "int(Throttler *__hidden this, HKEY, unsigned int *)",
+    "rank_score": 2476,
+    "size": 1158,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsPEImage",
+    "ea": "0x1800033f4",
+    "function_file": "functions/1800033f4_IsPEImage.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!ReadFile",
+      "KERNEL32!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "IsPEImage",
+    "prototype": "",
+    "rank_score": 2416,
+    "size": 505,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "RunResolver",
+    "ea": "0x180003ac8",
+    "function_file": "functions/180003ac8_RunResolver.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!GetTickCount64",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "Software\\Microsoft\\Windows NT\\CurrentVersion\\MsiCorruptedFileRecovery\\RepairedProducts",
+      "MsiReinstallProductW"
+    ],
+    "name": "RunResolver",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 1978,
+    "size": 1320,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CrashEventData::StoreInWdi(void *)",
+    "ea": "0x180005784",
+    "function_file": "functions/180005784_CrashEventData_StoreInWdi_void.md",
+    "matched_imports": [
+      "ADVAPI32!GetLengthSid",
+      "ADVAPI32!IsValidSid",
+      "KERNEL32!GetLastError",
+      "wdi!WdiAddParameter"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "CorruptedFilePath",
+      "UserSID"
+    ],
+    "name": "?StoreInWdi@CrashEventData@@QEAAJPEAX@Z",
+    "prototype": "__int64 __fastcall(CrashEventData *__hidden this, void *)",
+    "rank_score": 1946,
+    "size": 466,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "Throttler::ProcessOccurrence(ushort const *)",
+    "ea": "0x180006530",
+    "function_file": "functions/180006530_Throttler_ProcessOccurrence_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?ProcessOccurrence@Throttler@@QEAA?AW4ThrottleResult@1@PEBG@Z",
+    "prototype": "",
+    "rank_score": 1822,
+    "size": 762,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LoadExpandedText(ushort const *,ushort const *,ushort const *,ushort *,ulong)",
+    "ea": "0x180003ff8",
+    "function_file": "functions/180003ff8_LoadExpandedText_ushort_const_ushort_const_ushort_const_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "USER32!LoadStringW",
+      "msvcrt!wcsrchr"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "?LoadExpandedText@@YAJPEBG00PEAGK@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 *, unsigned int)",
+    "rank_score": 1699,
+    "size": 605,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "HasExecutableExtension",
+    "ea": "0x180003194",
+    "function_file": "functions/180003194_HasExecutableExtension.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "HasExecutableExtension",
+    "prototype": "",
+    "rank_score": 1414,
+    "size": 267,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetMsiComponentAndProduct",
+    "ea": "0x180002f08",
+    "function_file": "functions/180002f08_GetMsiComponentAndProduct.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "MsiEnumComponentsW",
+      "GetMsiComponentAndProduct",
+      "MsiEnumClientsW",
+      "MsiGetComponentPathW",
+      "MsiGetProductInfoW",
+      "InstalledProductName"
+    ],
+    "name": "GetMsiComponentAndProduct",
+    "prototype": "__int64 __usercall@<rax>(HMODULE hModule@<rcx>, __int64, __int64, __int64, __int64)",
+    "rank_score": 1320,
+    "size": 645,
+    "tags": [
+      "reparse_path",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ResolverData::StoreInWdi(void *)",
+    "ea": "0x18000595c",
+    "function_file": "functions/18000595c_ResolverData_StoreInWdi_void.md",
+    "matched_imports": [
+      "wdi!WdiAddParameter"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "?StoreInWdi@ResolverData@@QEAAJPEAX@Z",
+    "prototype": "__int64 __fastcall(ResolverData *__hidden this, void *)",
+    "rank_score": 1256,
+    "size": 439,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001764",
+    "function_file": "functions/180001764_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CheckCertificateForCorruption",
+    "ea": "0x1800028dc",
+    "function_file": "functions/1800028dc_CheckCertificateForCorruption.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "WINTRUST!WinVerifyTrust",
+      "imagehlp!ImageEnumerateCertificates"
+    ],
+    "matched_strings": [],
+    "name": "CheckCertificateForCorruption",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName)",
+    "rank_score": 1216,
+    "size": 396,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IsImageCorrupted",
+    "ea": "0x1800032a8",
+    "function_file": "functions/1800032a8_IsImageCorrupted.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "imagehlp!MapFileAndCheckSumW"
+    ],
+    "matched_strings": [
+      "Software\\Microsoft\\Windows NT\\CurrentVersion\\MsiCorruptedFileRecovery",
+      "MSI-COFIRE ERROR: %s:%d - ret = 0x%08X\n"
+    ],
+    "name": "IsImageCorrupted",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName)",
+    "rank_score": 1116,
+    "size": 326,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetGroupPolicySetting",
+    "ea": "0x180004a70",
+    "function_file": "functions/180004a70_GetGroupPolicySetting.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetVersionExW"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "GetGroupPolicySetting",
+    "prototype": "",
+    "rank_score": 1077,
+    "size": 382,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Throttler::AddNewTimestampValue(HKEY__ *)",
+    "ea": "0x180005d44",
+    "function_file": "functions/180005d44_Throttler_AddNewTimestampValue_HKEY.md",
+    "matched_imports": [
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "RPCRT4!RpcStringFreeW",
+      "RPCRT4!UuidCreate",
+      "RPCRT4!UuidToStringW"
+    ],
+    "matched_strings": [],
+    "name": "?AddNewTimestampValue@Throttler@@AEAAJPEAUHKEY__@@@Z",
+    "prototype": "int(Throttler *__hidden this, HKEY)",
+    "rank_score": 1018,
+    "size": 407,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "CrashEventData::Free(void)",
+    "ea": "0x180004f1c",
+    "function_file": "functions/180004f1c_CrashEventData_Free_void.md",
+    "matched_imports": [
+      "ADVAPI32!FreeSid",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?Free@CrashEventData@@QEAAXXZ",
+    "prototype": "void __fastcall(CrashEventData *__hidden this)",
+    "rank_score": 1017,
+    "size": 126,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Throttler::Throttler(ushort const *,int)",
+    "ea": "0x180005bd4",
+    "function_file": "functions/180005bd4_Throttler_Throttler_ushort_const_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "??0Throttler@@QEAA@PEBGH@Z",
+    "prototype": "Throttler *__fastcall(Throttler *__hidden this, const unsigned __int16 *, int)",
+    "rank_score": 1015,
+    "size": 301,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "RunInstanceCompletion",
+    "ea": "0x1800036f0",
+    "function_file": "functions/1800036f0_RunInstanceCompletion.md",
+    "matched_imports": [
+      "wdi!WdiGetParameterByName",
+      "wdi!WdiGetParameterData"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "RunInstanceCompletion",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 873,
+    "size": 470,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LogMsiCofire",
+    "ea": "0x180004bf4",
+    "function_file": "functions/180004bf4_LogMsiCofire.md",
+    "matched_imports": [
+      "ADVAPI32!EventRegister",
+      "ADVAPI32!EventSetInformation",
+      "msvcrt!wcsrchr"
+    ],
+    "matched_strings": [],
+    "name": "LogMsiCofire",
+    "prototype": "",
+    "rank_score": 820,
+    "size": 787,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "ResolverData::Free(void)",
+    "ea": "0x180004fa0",
+    "function_file": "functions/180004fa0_ResolverData_Free_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?Free@ResolverData@@QEAAXXZ",
+    "prototype": "void __fastcall(ResolverData *__hidden this)",
+    "rank_score": 804,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Throttler::DeleteAllOccursForThrottleId(HKEY__ *)",
+    "ea": "0x180006370",
+    "function_file": "functions/180006370_Throttler_DeleteAllOccursForThrottleId_HKEY.md",
+    "matched_imports": [
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegQueryInfoKeyW"
+    ],
+    "matched_strings": [
+      "THROTTLE CONFIGURATION ERROR - unexpected registry value  %s:%d\n",
+      "Throttler::DeleteAllOccursForThrottleId",
+      "Throttler::DeleteAllOccursForThrottleId",
+      "Throttler::DeleteAllOccursForThrottleId"
+    ],
+    "name": "?DeleteAllOccursForThrottleId@Throttler@@AEAAXPEAUHKEY__@@@Z",
+    "prototype": "void(Throttler *__hidden this, HKEY)",
+    "rank_score": 777,
+    "size": 440,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LoadModFromSystem",
+    "ea": "0x1800035f4",
+    "function_file": "functions/1800035f4_LoadModFromSystem.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!LoadLibraryW"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "msi.dll",
+      "MSI-COFIRE WARNING: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "LoadModFromSystem",
+    "prototype": "",
+    "rank_score": 746,
+    "size": 243,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "RunProblemDetect",
+    "ea": "0x1800038cc",
+    "function_file": "functions/1800038cc_RunProblemDetect.md",
+    "matched_imports": [
+      "wdi!WdiSetFeedback",
+      "wdi!WdiSetProblemDetectionResult"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "Software\\Microsoft\\Windows NT\\CurrentVersion\\MsiCorruptedFileRecovery\\CorruptedFiles"
+    ],
+    "name": "RunProblemDetect",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 716,
+    "size": 502,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180001910",
+    "function_file": "functions/180001910_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_CRT_INIT",
+    "ea": "0x1800011d0",
+    "function_file": "functions/1800011d0_CRT_INIT.md",
+    "matched_imports": [
+      "KERNEL32!Sleep",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "_CRT_INIT",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 549,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "WriteServerFileAppEvent",
+    "ea": "0x18000465c",
+    "function_file": "functions/18000465c_WriteServerFileAppEvent.md",
+    "matched_imports": [
+      "ADVAPI32!EventRegister",
+      "ADVAPI32!EventWrite"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "WriteServerFileAppEvent"
+    ],
+    "name": "WriteServerFileAppEvent",
+    "prototype": "__int64 __fastcall(PCEVENT_DESCRIPTOR EventDescriptor)",
+    "rank_score": 498,
+    "size": 424,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WriteServerFileAppProductVersionEvent",
+    "ea": "0x18000480c",
+    "function_file": "functions/18000480c_WriteServerFileAppProductVersionEvent.md",
+    "matched_imports": [
+      "ADVAPI32!EventRegister",
+      "ADVAPI32!EventWrite"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "WriteServerFileAppProductVersionEvent"
+    ],
+    "name": "WriteServerFileAppProductVersionEvent",
+    "prototype": "__int64 __usercall@<rax>(PCEVENT_DESCRIPTOR EventDescriptor@<rcx>, __int64)",
+    "rank_score": 498,
+    "size": 604,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LoadMainText(ushort const *,ushort *,ulong)",
+    "ea": "0x18000425c",
+    "function_file": "functions/18000425c_LoadMainText_ushort_const_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "USER32!LoadStringW"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "?LoadMainText@@YAJPEBGPEAGK@Z",
+    "prototype": "int(const unsigned __int16 *, unsigned __int16 *, unsigned int)",
+    "rank_score": 456,
+    "size": 233,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 26,
+    "demangled": "DebugPrint(ulong,char const *,...)",
+    "ea": "0x180002590",
+    "function_file": "functions/180002590_DebugPrint_ulong_char_const.md",
+    "matched_imports": [
+      "msvcrt!_vsnprintf",
+      "ntdll!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "?DebugPrint@@YAXKPEBDZZ",
+    "prototype": "void(ULONG Level, const char *Format, ...)",
+    "rank_score": 438,
+    "size": 156,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "WdiHandleInstance(void *,WDI_DIAGNOSTIC_MODULE_REQUEST)",
+    "ea": "0x180002770",
+    "function_file": "functions/180002770_WdiHandleInstance_void_WDI_DIAGNOSTIC_MODULE_REQUEST.md",
+    "matched_imports": [
+      "wdi!WdiSetResolution"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n",
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "?WdiHandleInstance@@YAJPEAXW4WDI_DIAGNOSTIC_MODULE_REQUEST@@@Z",
+    "prototype": "",
+    "rank_score": 321,
+    "size": 356,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SetScenarioDMError",
+    "ea": "0x180005b1c",
+    "function_file": "functions/180005b1c_SetScenarioDMError.md",
+    "matched_imports": [
+      "wdi!WdiAddParameter"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "SetScenarioDMError",
+    "prototype": "",
+    "rank_score": 255,
+    "size": 85,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SetScenarioResultParameter",
+    "ea": "0x180005b78",
+    "function_file": "functions/180005b78_SetScenarioResultParameter.md",
+    "matched_imports": [
+      "wdi!WdiAddParameter"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "SetScenarioResultParameter",
+    "prototype": "",
+    "rank_score": 255,
+    "size": 85,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "WdiDiagnosticModuleMain(void *,WDI_DIAGNOSTIC_MODULE_REQUEST)",
+    "ea": "0x1800026f0",
+    "function_file": "functions/1800026f0_WdiDiagnosticModuleMain_void_WDI_DIAGNOSTIC_MODULE_REQUEST.md",
+    "matched_imports": [
+      "ADVAPI32!EventUnregister"
+    ],
+    "matched_strings": [
+      "MSI-COFIRE ERROR: %s:%d - hr = 0x%08X\n"
+    ],
+    "name": "?WdiDiagnosticModuleMain@@YAJPEAXW4WDI_DIAGNOSTIC_MODULE_REQUEST@@@Z",
+    "prototype": "",
+    "rank_score": 252,
+    "size": 97,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "std::vector<ushort *,std::allocator<ushort *>>::~vector<ushort *,std::allocator<ushort *>>(void)",
+    "ea": "0x180005d08",
+    "function_file": "functions/180005d08_std_vector_ushort_std_allocator_ushort_vector_ushort_std_allocator_ushort_void.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??1?$vector@PEAGV?$allocator@PEAG@std@@@std@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 52,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001b48",
+    "function_file": "functions/180001b48_operator_new_unsigned_int64.md",
+    "matched_imports": [
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 206,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)",
+    "ea": "0x18000434c",
+    "function_file": "functions/18000434c_StringCchPrintfW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+    "prototype": "__int64(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, ...)",
+    "rank_score": 204,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTransfer_EventWriteTransfer",
+    "ea": "0x18000108c",
+    "function_file": "functions/18000108c_tlgWriteTransfer_EventWriteTransfer.md",
+    "matched_imports": [
+      "ADVAPI32!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "operator delete(void *)",
+    "ea": "0x1800024ae",
+    "function_file": "functions/1800024ae_operator_delete_void.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z_0",
+    "prototype": "void(void *)",
+    "rank_score": 116,
+    "size": 6,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180001b0e",
+    "function_file": "functions/180001b0e_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_CxxThrowException_0",
+    "ea": "0x18000255c",
+    "function_file": "functions/18000255c_CxxThrowException_0.md",
+    "matched_imports": [
+      "msvcrt!_CxxThrowException"
+    ],
+    "matched_strings": [],
+    "name": "_CxxThrowException_0",
+    "prototype": "void __stdcall __noreturn(void *pExceptionObject, _ThrowInfo *pThrowInfo)",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "exception::~exception(void)",
+    "ea": "0x180002540",
+    "function_file": "functions/180002540_exception_exception_void.md",
+    "matched_imports": [
+      "msvcrt!??1exception@@UEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1exception@@UEAA@XZ_0",
+    "prototype": "void(exception *__hidden this)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memcpy_0",
+    "ea": "0x180002576",
+    "function_file": "functions/180002576_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memset_0",
+    "ea": "0x180007013",
+    "function_file": "functions/180007013_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "exception::exception(exception const &)",
+    "ea": "0x180002534",
+    "function_file": "functions/180002534_exception_exception_exception_const.md",
+    "matched_imports": [
+      "msvcrt!??0exception@@QEAA@AEBV0@@Z"
+    ],
+    "matched_strings": [],
+    "name": "??0exception@@QEAA@AEBV0@@Z_0",
+    "prototype": "exception *(exception *__hidden this, const struct exception *)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "memmove_0",
+    "ea": "0x180002582",
+    "function_file": "functions/180002582_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180007040",
+    "function_file": "functions/180007040_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 28,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180006f40",
+    "function_file": "functions/180006f40_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001400",
+    "function_file": "functions/180001400_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001444",
+    "function_file": "functions/180001444_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Copy(unsigned __int64,unsigned __int64)",
+    "ea": "0x180001d28",
+    "function_file": "functions/180001d28_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 18,
+    "size": 247,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180008010",
+    "function_file": "functions/180008010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180007080",
+    "function_file": "functions/180007080_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180002a70",
+    "function_file": "functions/180002a70_DllMain.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 12,
+    "size": 18,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign(char const *,unsigned __int64)",
+    "ea": "0x180002030",
+    "function_file": "functions/180002030_std_basic_string_char_std_char_traits_char_std_allocator_char_assign_char_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD_K@Z",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 9,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "std::vector<ushort *,std::allocator<ushort *>>::push_back(ushort * const &)",
+    "ea": "0x180006de0",
+    "function_file": "functions/180006de0_std_vector_ushort_std_allocator_ushort_push_back_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?push_back@?$vector@PEAGV?$allocator@PEAG@std@@@std@@QEAAXAEBQEAG@Z",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 307,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "std::_Xbad_alloc(void)",
+    "ea": "0x180001e88",
+    "function_file": "functions/180001e88_std_Xbad_alloc_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xbad_alloc@std@@YAXXZ",
+    "prototype": "void __noreturn(void)",
+    "rank_score": 6,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "ea": "0x1800073c7",
+    "function_file": "functions/1800073c7_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "atexit",
+    "ea": "0x1800018f0",
+    "function_file": "functions/1800018f0_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 4,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "std::_Syserror_map(int)",
+    "ea": "0x180002450",
+    "function_file": "functions/180002450_std_Syserror_map_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Syserror_map@std@@YAPEBDH@Z",
+    "prototype": "const char *__fastcall(int)",
+    "rank_score": 4,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "std::_Xlength_error(char const *)",
+    "ea": "0x180001ec8",
+    "function_file": "functions/180001ec8_std_Xlength_error_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xlength_error@std@@YAXPEBD@Z",
+    "prototype": "void __fastcall __noreturn(const char *)",
+    "rank_score": 4,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Xlen(void)",
+    "ea": "0x180001eb0",
+    "function_file": "functions/180001eb0_std_basic_string_char_std_char_traits_char_std_allocator_char_Xlen_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 17,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Xran(void)",
+    "ea": "0x180001f20",
+    "function_file": "functions/180001f20_std_basic_string_char_std_char_traits_char_std_allocator_char_Xran_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 17,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "std::length_error::length_error(char const *)",
+    "ea": "0x180001c18",
+    "function_file": "functions/180001c18_std_length_error_length_error_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0length_error@std@@QEAA@PEBD@Z",
+    "prototype": "__int64 __fastcall(std::length_error *__hidden this, const char *)",
+    "rank_score": 3,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "ea": "0x18000740b",
+    "function_file": "functions/18000740b_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_tlgEnableCallback",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_tlgEnableCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgEnableCallback",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 2,
+    "size": 118,
+    "tags": []
+  }
+]

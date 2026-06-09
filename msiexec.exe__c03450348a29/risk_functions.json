@@ -1,0 +1,2466 @@
+[
+  {
+    "callee_count": 49,
+    "caller_count": 1,
+    "demangled": "ServerMain(HINSTANCE__ *)",
+    "ea": "0x1400011e4",
+    "function_file": "functions/1400011e4_ServerMain_HINSTANCE.md",
+    "matched_imports": [
+      "ADVAPI32!EqualSid",
+      "ADVAPI32!GetTokenInformation",
+      "ADVAPI32!MakeAbsoluteSD",
+      "ADVAPI32!OpenProcessToken",
+      "ADVAPI32!OpenThreadToken",
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumKeyW",
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RevertToSelf",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CompareStringW",
+      "KERNEL32!CreateEventW",
+      "KERNEL32!GetCommandLineW",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetFileType",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetStdHandle",
+      "KERNEL32!GetVersionExW",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!OpenEventW",
+      "KERNEL32!OpenProcess",
+      "KERNEL32!WaitForSingleObject",
+      "KERNEL32!lstrlenW",
+      "USER32!DispatchMessageW",
+      "USER32!GetMessageW",
+      "USER32!MsgWaitForMultipleObjects",
+      "USER32!PeekMessageW",
+      "USER32!TranslateMessage",
+      "ole32!CoInitialize",
+      "ole32!CoRegisterClassObject",
+      "ole32!CoRevokeClassObject",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [
+      "Software\\Microsoft\\Windows\\CurrentVersion\\Installer\\RunOnceEntries",
+      "update",
+      "uninstall",
+      "MSIPATCHREMOVE=",
+      "OLEAUT32.dll",
+      "ServerMain (CA): Wrong command line",
+      "ServerMain (CA): Parsing command line failed",
+      "ServerMain (CA): Open synchronization event failed",
+      "ServerMain (CA): Access to token failed",
+      "OpenProcessToken failed with %d",
+      "ServerMain (CA): Error: icacContext in CA server should be EEUI but is not any impersonated type",
+      "ServerMain (CA): Error: icacContext in CA server should be AISImpersonated but is not any impersonated type",
+      "ServerMain (CA): Error: Access to SD",
+      "ServerMain (CA): CoInitializeSecurity failed",
+      "ServerMain (CA): Connection to Service failed.",
+      "ServerMain (CA): Create Custom Action Server failed.",
+      "ServerMain (CA): Process not registered with service.",
+      "ServerMain (CA): Could not open synchronization handle.",
+      "ServerMain (CA): Could not open synchronization handle.",
+      "ServerMain (CA): Impersonation token not saved."
+    ],
+    "name": "?ServerMain@@YAHPEAUHINSTANCE__@@@Z",
+    "prototype": "__int64 __fastcall(HINSTANCE)",
+    "rank_score": 18321,
+    "size": 7199,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "GetSecurityDescriptor(char *,ulong &,sdSecurityDescriptor,Bool)",
+    "ea": "0x14000580c",
+    "function_file": "functions/14000580c_GetSecurityDescriptor_char_ulong_sdSecurityDescriptor_Bool.md",
+    "matched_imports": [
+      "ADVAPI32!AddAccessAllowedAce",
+      "ADVAPI32!AllocateAndInitializeSid",
+      "ADVAPI32!GetAce",
+      "ADVAPI32!GetLengthSid",
+      "ADVAPI32!GetSecurityDescriptorLength",
+      "ADVAPI32!InitializeAcl",
+      "ADVAPI32!InitializeSecurityDescriptor",
+      "ADVAPI32!MakeSelfRelativeSD",
+      "ADVAPI32!SetSecurityDescriptorDacl",
+      "ADVAPI32!SetSecurityDescriptorGroup",
+      "ADVAPI32!SetSecurityDescriptorOwner",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GlobalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetSecurityDescriptor@@YAKPEADAEAKW4sdSecurityDescriptor@@W4Bool@@@Z",
+    "prototype": "unsigned int __high(char *, unsigned int *, enum sdSecurityDescriptor, enum Bool)",
+    "rank_score": 8051,
+    "size": 2705,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "ServiceThreadMain(void *)",
+    "ea": "0x1400078f0",
+    "function_file": "functions/1400078f0_ServiceThreadMain_void.md",
+    "matched_imports": [
+      "ADVAPI32!MakeAbsoluteSD",
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateEventW",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!InitializeCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "USER32!DispatchMessageW",
+      "USER32!MsgWaitForMultipleObjects",
+      "USER32!PeekMessageW",
+      "USER32!PostThreadMessageW",
+      "USER32!TranslateMessage",
+      "ole32!CoRegisterClassObject",
+      "ole32!CoRevokeClassObject",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [
+      "CLSID",
+      "ServiceThreadMain: CoInitializeSecurity failed",
+      "CoCreateInstance of CLSID_GlobalOptions failed.",
+      "Set of COMGLB_UNMARSHALING_POLICY failed.",
+      "ServiceThreadMain: CreateSD for CreateWaitableTimer failed.",
+      "ServiceThreadMain: CreateEvent failed.",
+      "ServiceThreadMain: CreateWaitableTimer failed.",
+      "ServiceThreadMain: SetWaitableTimer failed.",
+      "ServiceThreadMain: Class registration failed"
+    ],
+    "name": "?ServiceThreadMain@@YAKPEAX@Z",
+    "prototype": "ULONG __stdcall(PVOID Parameter)",
+    "rank_score": 7838,
+    "size": 1996,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "DoInstallPackage(ushort const *,ushort const *,tagINSTALLUILEVEL)",
+    "ea": "0x140004ca8",
+    "function_file": "functions/140004ca8_DoInstallPackage_ushort_const_ushort_const_tagINSTALLUILEVEL.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!lstrlenW",
+      "msi!__imp_MsiInstallProductW",
+      "msi!__imp_MsiSetInternalUI"
+    ],
+    "matched_strings": [
+      " MSIINSTANCEGUID="
+    ],
+    "name": "?DoInstallPackage@@YAHPEBG0W4tagINSTALLUILEVEL@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, enum tagINSTALLUILEVEL)",
+    "rank_score": 3296,
+    "size": 844,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DisplayError(ulong)",
+    "ea": "0x1400049a4",
+    "function_file": "functions/1400049a4_DisplayError_ulong.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetACP",
+      "KERNEL32!GetLocaleInfoW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetVersionExW",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!LoadLibraryW",
+      "KERNEL32!WriteFile",
+      "KERNEL32!lstrlenW",
+      "msi!__imp_MsiLoadStringW",
+      "msi!__imp_MsiMessageBoxW"
+    ],
+    "matched_strings": [
+      "Install error %i"
+    ],
+    "name": "?DisplayError@@YAXK@Z",
+    "prototype": "void __fastcall(DWORD dwMessageId)",
+    "rank_score": 2903,
+    "size": 763,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SelfRegOrUnreg(ushort const *,char const *)",
+    "ea": "0x140007568",
+    "function_file": "functions/140007568_SelfRegOrUnreg_ushort_const_char_const.md",
+    "matched_imports": [
+      "ADVAPI32!SetThreadToken",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!SetCurrentDirectoryW",
+      "KERNEL32!lstrlenW",
+      "ole32!CoInitialize",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [],
+    "name": "?SelfRegOrUnreg@@YAHPEBGPEBD@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, LPCSTR lpProcName)",
+    "rank_score": 2821,
+    "size": 491,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 7,
+    "demangled": "ReportErrorToDebugOutput(ushort const *,ulong)",
+    "ea": "0x140007110",
+    "function_file": "functions/140007110_ReportErrorToDebugOutput_ushort_const_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!OutputDebugStringW",
+      "KERNEL32!SetLastError",
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [
+      "Software\\Policies\\Microsoft\\Windows\\Installer",
+      "Software\\Microsoft\\Windows\\CurrentVersion\\Installer\\CA"
+    ],
+    "name": "?ReportErrorToDebugOutput@@YAXPEBGK@Z",
+    "prototype": "void __fastcall(BYTE *lpData, unsigned int)",
+    "rank_score": 2327,
+    "size": 605,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AdjustTokenPrivileges(ushort const * *,int,bool,ulong,_TOKEN_PRIVILEGES *,ulong *)",
+    "ea": "0x140003ce4",
+    "function_file": "functions/140003ce4_AdjustTokenPrivileges_ushort_const_int_bool_ulong_TOKEN_PRIVILEGES_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!AdjustTokenPrivileges",
+      "ADVAPI32!LookupPrivilegeValueW",
+      "ADVAPI32!OpenProcessToken",
+      "ADVAPI32!OpenThreadToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?AdjustTokenPrivileges@@YA_NPEAPEBGH_NKPEAU_TOKEN_PRIVILEGES@@PEAK@Z",
+    "prototype": "bool __fastcall(const unsigned __int16 **, int, bool, unsigned int, PTOKEN_PRIVILEGES, PDWORD)",
+    "rank_score": 2015,
+    "size": 283,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ShowHelp(ushort const *,ushort const *)",
+    "ea": "0x140008300",
+    "function_file": "functions/140008300_ShowHelp_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleFileNameW",
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree",
+      "msi!__imp_MsiLoadStringW",
+      "msi!__imp_MsiMessageBoxExW"
+    ],
+    "matched_strings": [],
+    "name": "?ShowHelp@@YAHPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1822,
+    "size": 866,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "GenerateMIF(uint)",
+    "ea": "0x140005084",
+    "function_file": "functions/140005084_GenerateMIF_uint.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetSystemDefaultLangID",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!WideCharToMultiByte",
+      "msi!__imp_MsiLoadStringA",
+      "msi!__imp_MsiSetExternalUIA"
+    ],
+    "matched_strings": [
+      "ISMIF32.DLL",
+      "InstallStatusMIF",
+      "Installer error %i"
+    ],
+    "name": "?GenerateMIF@@YAXI@Z",
+    "prototype": "void __fastcall(DWORD dwMessageId)",
+    "rank_score": 1752,
+    "size": 533,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "__mainCRTStartup",
+    "ea": "0x140002f58",
+    "function_file": "functions/140002f58_mainCRTStartup.md",
+    "matched_imports": [
+      "KERNEL32!GetStartupInfoW",
+      "KERNEL32!Sleep",
+      "msvcrt!_acmdln",
+      "msvcrt!_cexit",
+      "msvcrt!_exit",
+      "msvcrt!_ismbblead",
+      "msvcrt!exit"
+    ],
+    "matched_strings": [],
+    "name": "__mainCRTStartup",
+    "prototype": "",
+    "rank_score": 1533,
+    "size": 578,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MsiGetSystemDirectory(ushort *,uint,int)",
+    "ea": "0x1400095e4",
+    "function_file": "functions/1400095e4_MsiGetSystemDirectory_ushort_uint_int.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!LoadLibraryW",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "GetSystemWow64DirectoryW",
+      "kernel32.dll"
+    ],
+    "name": "?MsiGetSystemDirectory@@YAIPEAGIH@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int16 *, unsigned int, int)",
+    "rank_score": 1504,
+    "size": 176,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "RepairPackage(ushort const *,ushort const *)",
+    "ea": "0x140006e10",
+    "function_file": "functions/140006e10_RepairPackage_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree",
+      "msi!__imp_MsiGetProductCodeFromPackageCodeW",
+      "msi!__imp_MsiGetProductInfoW",
+      "msi!__imp_MsiReinstallProductW",
+      "msi!__imp_MsiSetInternalUI",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "REINSTALL=ALL REINSTALLMODE=%s"
+    ],
+    "name": "?RepairPackage@@YAHPEBG0@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1486,
+    "size": 759,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "UninstallPackage(ushort const *,ushort const *)",
+    "ea": "0x140008b10",
+    "function_file": "functions/140008b10_UninstallPackage_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree",
+      "msi!__imp_MsiLoadStringW",
+      "msi!__imp_MsiMessageBoxW"
+    ],
+    "matched_strings": [
+      "REMOVE=ALL"
+    ],
+    "name": "?UninstallPackage@@YAHPEBG0@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1481,
+    "size": 419,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ConfigureMIF(ushort const *)",
+    "ea": "0x1400042b4",
+    "function_file": "functions/1400042b4_ConfigureMIF_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!WideCharToMultiByte",
+      "msi!__imp_MsiGetSummaryInformationW",
+      "msi!__imp_MsiSummaryInfoGetPropertyA"
+    ],
+    "matched_strings": [],
+    "name": "?ConfigureMIF@@YAXPEBG@Z",
+    "prototype": "void __fastcall(LPCWCH lpWideCharStr)",
+    "rank_score": 1227,
+    "size": 392,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetLocalSystemSID(char * *)",
+    "ea": "0x1400052a0",
+    "function_file": "functions/1400052a0_GetLocalSystemSID_char.md",
+    "matched_imports": [
+      "ADVAPI32!AllocateAndInitializeSid",
+      "ADVAPI32!FreeSid",
+      "ADVAPI32!GetLengthSid",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?GetLocalSystemSID@@YAKPEAPEAD@Z",
+    "prototype": "unsigned int __fastcall(char **)",
+    "rank_score": 1225,
+    "size": 247,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140003794",
+    "function_file": "functions/140003794_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ServiceMain(ulong,ushort * *)",
+    "ea": "0x140007820",
+    "function_file": "functions/140007820_ServiceMain_ulong_ushort.md",
+    "matched_imports": [
+      "ADVAPI32!RegisterServiceCtrlHandlerW",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateThread",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "MSIServer",
+      "RegisterServiceCtrlHandler failed."
+    ],
+    "name": "?ServiceMain@@YAXKPEAPEAG@Z",
+    "prototype": "void __fastcall(unsigned int, unsigned __int16 **)",
+    "rank_score": 1114,
+    "size": 190,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "FCanStopService(void)",
+    "ea": "0x140005014",
+    "function_file": "functions/140005014_FCanStopService_void.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetModuleHandleExW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "Msi.dll"
+    ],
+    "name": "?FCanStopService@@YAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 876,
+    "size": 105,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "ServiceStatus::ReportStatusToSCMgr(ulong,ulong,ulong,ulong)",
+    "ea": "0x140007374",
+    "function_file": "functions/140007374_ServiceStatus_ReportStatusToSCMgr_ulong_ulong_ulong_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!SetServiceStatus",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [
+      "SetServiceStatus failed."
+    ],
+    "name": "?ReportStatusToSCMgr@ServiceStatus@@QEAAHKKKK@Z",
+    "prototype": "__int64 __fastcall(ServiceStatus *__hidden this, unsigned int, unsigned int, unsigned int, unsigned int)",
+    "rank_score": 858,
+    "size": 222,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AdvertisePackage(ushort const *,ushort const *)",
+    "ea": "0x140003ea0",
+    "function_file": "functions/140003ea0_AdvertisePackage_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree",
+      "msi!__imp_MsiAdvertiseProductExW",
+      "msi!__imp_MsiSetInternalUI"
+    ],
+    "matched_strings": [],
+    "name": "?AdvertisePackage@@YAHPEBG0@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 826,
+    "size": 339,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LogMode(ushort const *,ushort const *)",
+    "ea": "0x1400064f0",
+    "function_file": "functions/1400064f0_LogMode_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!lstrcmpW",
+      "msi!__imp_MsiEnableLogW"
+    ],
+    "matched_strings": [],
+    "name": "?LogMode@@YAHPEBG0@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpString1, LPCWSTR szLogFile)",
+    "rank_score": 817,
+    "size": 420,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x1400031b8",
+    "function_file": "functions/1400031b8_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BindOpt_COMCTL32(char const *,__int64 (**)(void),__int64 (*)(void))",
+    "ea": "0x140008cc8",
+    "function_file": "functions/140008cc8_BindOpt_COMCTL32_char_const_int64_void_int64_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryW",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [
+      "COMCTL32",
+      "InitCommonControlsEx"
+    ],
+    "name": "?BindOpt_COMCTL32@@YAP6A_JXZPEBDPEAP6A_JXZP6A_JXZ@Z",
+    "prototype": "__int64 (*__fastcall(const char *, __int64 (**)(void), __int64 (*)(void)))(void)",
+    "rank_score": 703,
+    "size": 145,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Bind_COMCTL32(char const *,__int64 (**)(void))",
+    "ea": "0x140008d60",
+    "function_file": "functions/140008d60_Bind_COMCTL32_char_const_int64_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryW",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [
+      "COMCTL32"
+    ],
+    "name": "?Bind_COMCTL32@@YAP6A_JXZPEBDPEAP6A_JXZ@Z",
+    "prototype": "__int64 (*__fastcall(LPCSTR lpProcName, __int64 (**)(void)))(void)",
+    "rank_score": 664,
+    "size": 149,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HeapSetInformation_HeapEnableTerminationOnCorruption_Downlevel(void)",
+    "ea": "0x1400062a4",
+    "function_file": "functions/1400062a4_HeapSetInformation_HeapEnableTerminationOnCorruption_Downlevel_void.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetVersion"
+    ],
+    "matched_strings": [
+      "Kernel32.dll"
+    ],
+    "name": "?HeapSetInformation_HeapEnableTerminationOnCorruption_Downlevel@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 653,
+    "size": 86,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ConfigureOrRemoveProduct(ushort const *,Bool)",
+    "ea": "0x140004444",
+    "function_file": "functions/140004444_ConfigureOrRemoveProduct_ushort_const_Bool.md",
+    "matched_imports": [
+      "msi!__imp_MsiConfigureProductExW",
+      "msi!__imp_MsiGetProductInfoW",
+      "msi!__imp_MsiSetInternalUI"
+    ],
+    "matched_strings": [],
+    "name": "?ConfigureOrRemoveProduct@@YAHPEBGW4Bool@@@Z",
+    "prototype": "",
+    "rank_score": 637,
+    "size": 239,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ApplyPatch(ushort const *,ushort const *)",
+    "ea": "0x1400041d0",
+    "function_file": "functions/1400041d0_ApplyPatch_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "msi!__imp_MsiApplyMultiplePatchesW",
+      "msi!__imp_MsiApplyPatchW",
+      "msi!__imp_MsiSetInternalUI"
+    ],
+    "matched_strings": [],
+    "name": "?ApplyPatch@@YAHPEBG0@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 633,
+    "size": 219,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x140003200",
+    "function_file": "functions/140003200_report_gsfailure.md",
+    "matched_imports": [
+      "ntdll!RtlCaptureContext",
+      "ntdll!RtlLookupFunctionEntry",
+      "ntdll!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 626,
+    "size": 416,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__report_rangecheckfailure",
+    "ea": "0x1400033a8",
+    "function_file": "functions/1400033a8_report_rangecheckfailure.md",
+    "matched_imports": [
+      "ntdll!RtlCaptureContext",
+      "ntdll!RtlLookupFunctionEntry",
+      "ntdll!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_rangecheckfailure",
+    "prototype": "",
+    "rank_score": 626,
+    "size": 294,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "pre_c_init",
+    "ea": "0x140002e10",
+    "function_file": "functions/140002e10_pre_c_init.md",
+    "matched_imports": [
+      "msvcrt!__set_app_type",
+      "msvcrt!__setusermatherr",
+      "msvcrt!_commode",
+      "msvcrt!_fmode"
+    ],
+    "matched_strings": [],
+    "name": "pre_c_init",
+    "prototype": "",
+    "rank_score": 614,
+    "size": 215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateServer(void)",
+    "ea": "0x140004870",
+    "function_file": "functions/140004870_CreateServer_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryW"
+    ],
+    "matched_strings": [
+      "Msi.dll",
+      "DllGetClassObject"
+    ],
+    "name": "?CreateServer@@YAPEAUIUnknown@@XZ",
+    "prototype": "struct IUnknown *(void)",
+    "rank_score": 515,
+    "size": 301,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateCustomActionServer(void)",
+    "ea": "0x14000453c",
+    "function_file": "functions/14000453c_CreateCustomActionServer_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryW"
+    ],
+    "matched_strings": [
+      "Msi.dll",
+      "DllGetClassObject"
+    ],
+    "name": "?CreateCustomActionServer@@YAPEAUIUnknown@@XZ",
+    "prototype": "struct IUnknown *(void)",
+    "rank_score": 504,
+    "size": 173,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "StartServiceW(ushort const *,ushort const *)",
+    "ea": "0x140008690",
+    "function_file": "functions/140008690_StartServiceW_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!StartServiceCtrlDispatcherW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "MSIServer",
+      "StartServiceCtrlDispatcher failed."
+    ],
+    "name": "?StartServiceW@@YAHPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 503,
+    "size": 96,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "AppendExtension(ushort const *,ushort const *,CAPITempBufferRef<ushort> &)",
+    "ea": "0x140003ffc",
+    "function_file": "functions/140003ffc_AppendExtension_ushort_const_ushort_const_CAPITempBufferRef_ushort.md",
+    "matched_imports": [
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [],
+    "name": "?AppendExtension@@YA?AW4Bool@@PEBG0AEAV?$CAPITempBufferRef@G@@@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *)",
+    "rank_score": 429,
+    "size": 207,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RequestMIF(ushort const *,ushort const *)",
+    "ea": "0x140007460",
+    "function_file": "functions/140007460_RequestMIF_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!WideCharToMultiByte",
+      "msi!__imp_MsiSetExternalUIA"
+    ],
+    "matched_strings": [],
+    "name": "?RequestMIF@@YAHPEBG0@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 423,
+    "size": 153,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ParseProperty(ushort const * &,CTempBufferRef<ushort> &)",
+    "ea": "0x1400066d8",
+    "function_file": "functions/1400066d8_ParseProperty_ushort_const_CTempBufferRef_ushort.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc",
+      "USER32!IsCharAlphaNumericW"
+    ],
+    "matched_strings": [],
+    "name": "?ParseProperty@@YA?AW4Bool@@AEAPEBGAEAV?$CTempBufferRef@G@@@Z",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 370,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetPackageCodeFromPackage(ushort const *,ushort *)",
+    "ea": "0x140005490",
+    "function_file": "functions/140005490_GetPackageCodeFromPackage_ushort_const_ushort.md",
+    "matched_imports": [
+      "KERNEL32!MultiByteToWideChar",
+      "ole32!StgOpenStorage"
+    ],
+    "matched_strings": [],
+    "name": "?GetPackageCodeFromPackage@@YAIPEBGPEAG@Z",
+    "prototype": "unsigned int(const unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 410,
+    "size": 778,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "Bind_OLE32(char const *,__int64 (**)(void))",
+    "ea": "0x140008e98",
+    "function_file": "functions/140008e98_Bind_OLE32_char_const_int64_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "?Bind_OLE32@@YAP6A_JXZPEBDPEAP6A_JXZ@Z",
+    "prototype": "__int64 (*__fastcall(LPCSTR lpProcName, __int64 (**)(void)))(void)",
+    "rank_score": 407,
+    "size": 148,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Bind_KERNEL32(char const *,__int64 (**)(void))",
+    "ea": "0x140008dfc",
+    "function_file": "functions/140008dfc_Bind_KERNEL32_char_const_int64_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "?Bind_KERNEL32@@YAP6A_JXZPEBDPEAP6A_JXZ@Z",
+    "prototype": "__int64 (*__fastcall(LPCSTR lpProcName, __int64 (**)(void)))(void)",
+    "rank_score": 406,
+    "size": 148,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Bind_VERSION(char const *,__int64 (**)(void))",
+    "ea": "0x140008f34",
+    "function_file": "functions/140008f34_Bind_VERSION_char_const_int64_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "?Bind_VERSION@@YAP6A_JXZPEBDPEAP6A_JXZ@Z",
+    "prototype": "__int64 (*__fastcall(LPCSTR lpProcName, __int64 (**)(void)))(void)",
+    "rank_score": 406,
+    "size": 148,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "CAPITempBuffer<ushort,1>::SetSize(int,bool)",
+    "ea": "0x14000810c",
+    "function_file": "functions/14000810c_CAPITempBuffer_ushort_1_SetSize_int_bool.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "?SetSize@?$CAPITempBuffer@G$00@@QEAA_NH_N@Z",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CAPITempBufferRef<ushort>::SetSize(int,bool)",
+    "ea": "0x1400081f0",
+    "function_file": "functions/1400081f0_CAPITempBufferRef_ushort_SetSize_int_bool.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "?SetSize@?$CAPITempBufferRef@G@@QEAA_NH_N@Z",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CAPITempBuffer<ushort,260>::SetSize(int,bool)",
+    "ea": "0x14000817c",
+    "function_file": "functions/14000817c_CAPITempBuffer_ushort_260_SetSize_int_bool.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "?SetSize@?$CAPITempBuffer@G$0BAE@@@QEAA_NH_N@Z",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ServiceControl(ulong)",
+    "ea": "0x140007780",
+    "function_file": "functions/140007780_ServiceControl_ulong.md",
+    "matched_imports": [
+      "KERNEL32!SetEvent",
+      "USER32!PostThreadMessageW"
+    ],
+    "matched_strings": [],
+    "name": "?ServiceControl@@YAXK@Z",
+    "prototype": "void __stdcall(DWORD dwControl)",
+    "rank_score": 314,
+    "size": 150,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SetTestFlags(void)",
+    "ea": "0x140008280",
+    "function_file": "functions/140008280_SetTestFlags_void.md",
+    "matched_imports": [
+      "KERNEL32!GetEnvironmentVariableW"
+    ],
+    "matched_strings": [
+      "_MSI_TEST"
+    ],
+    "name": "?SetTestFlags@@YA_NXZ",
+    "prototype": "bool(void)",
+    "rank_score": 253,
+    "size": 122,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CModuleFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x1400045f0",
+    "function_file": "functions/1400045f0_CModuleFactory_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@CModuleFactory@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "int(CModuleFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 237,
+    "size": 370,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MakeFullSystemPath(ushort const *,ushort *,unsigned __int64)",
+    "ea": "0x14000953c",
+    "function_file": "functions/14000953c_MakeFullSystemPath_ushort_const_ushort_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [],
+    "name": "?MakeFullSystemPath@@YA_NPEBGPEAG_K@Z",
+    "prototype": "bool __fastcall(const unsigned __int16 *, unsigned __int16 *, unsigned __int64)",
+    "rank_score": 225,
+    "size": 160,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_GetSecurityDescriptor_::_2_::CSIDPointer::_CSIDPointer",
+    "ea": "0x140003c00",
+    "function_file": "functions/140003c00_GetSecurityDescriptor_2_CSIDPointer_CSIDPointer.md",
+    "matched_imports": [
+      "ADVAPI32!FreeSid"
+    ],
+    "matched_strings": [],
+    "name": "_GetSecurityDescriptor_::_2_::CSIDPointer::_CSIDPointer",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 23,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_GetSecurityDescriptor_::_2_::CSIDPointer::operator&",
+    "ea": "0x140003c64",
+    "function_file": "functions/140003c64_GetSecurityDescriptor_2_CSIDPointer_operator.md",
+    "matched_imports": [
+      "ADVAPI32!FreeSid"
+    ],
+    "matched_strings": [],
+    "name": "_GetSecurityDescriptor_::_2_::CSIDPointer::operator&",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 32,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__g_cServiceStatus__",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_dynamic_initializer_for_g_cServiceStatus.md",
+    "matched_imports": [
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__g_cServiceStatus__",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 75,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "LoadSystemLibrary(ushort const *)",
+    "ea": "0x1400094c4",
+    "function_file": "functions/1400094c4_LoadSystemLibrary_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!LoadLibraryW"
+    ],
+    "matched_strings": [],
+    "name": "?LoadSystemLibrary@@YAPEAUHINSTANCE__@@PEBG@Z",
+    "prototype": "HINSTANCE __fastcall(const unsigned __int16 *)",
+    "rank_score": 218,
+    "size": 112,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RefCountedTokenPrivilegesCore(itkpEnum,bool)",
+    "ea": "0x140006d4c",
+    "function_file": "functions/140006d4c_RefCountedTokenPrivilegesCore_itkpEnum_bool.md",
+    "matched_imports": [
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "?RefCountedTokenPrivilegesCore@@YA_NW4itkpEnum@@_N@Z",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 165,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "operator delete(void *)",
+    "ea": "0x140003c48",
+    "function_file": "functions/140003c48_operator_delete_void.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 215,
+    "size": 20,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PMSIHANDLE::~PMSIHANDLE(void)",
+    "ea": "0x140003c20",
+    "function_file": "functions/140003c20_PMSIHANDLE_PMSIHANDLE_void.md",
+    "matched_imports": [
+      "msi!__imp_MsiCloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "??1PMSIHANDLE@@QEAA@XZ",
+    "prototype": "void __fastcall(PMSIHANDLE *__hidden this)",
+    "rank_score": 212,
+    "size": 21,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__g_szCommandLine__",
+    "ea": "0x140009a60",
+    "function_file": "functions/140009a60_dynamic_atexit_destructor_for_g_szCommandLine.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__g_szCommandLine__",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 58,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)",
+    "ea": "0x1400088c0",
+    "function_file": "functions/1400088c0_StringCchPrintfW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+    "prototype": "__int64(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, ...)",
+    "rank_score": 208,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "IsGUID(ushort const *)",
+    "ea": "0x140006384",
+    "function_file": "functions/140006384_IsGUID_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [],
+    "name": "?IsGUID@@YA_NPEBG@Z",
+    "prototype": "bool __fastcall(const unsigned __int16 *)",
+    "rank_score": 204,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CTempBuffer<char,256>::CTempBuffer<char,256>(int)",
+    "ea": "0x140003a94",
+    "function_file": "functions/140003a94_CTempBuffer_char_256_CTempBuffer_char_256_int.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "??0?$CTempBuffer@D$0BAA@@@QEAA@H@Z",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CTempBuffer<char,512>::CTempBuffer<char,512>(int)",
+    "ea": "0x140003aec",
+    "function_file": "functions/140003aec_CTempBuffer_char_512_CTempBuffer_char_512_int.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "??0?$CTempBuffer@D$0CAA@@@QEAA@H@Z",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiConfigureProductExW",
+    "ea": "0x1400039bb",
+    "function_file": "functions/1400039bb_imp_load_MsiConfigureProductExW.md",
+    "matched_imports": [
+      "msi!__imp_MsiConfigureProductExW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiConfigureProductExW",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MsiRegOpen64bitKey(HKEY__ *,ushort const *,ulong,ulong,HKEY__ * *)",
+    "ea": "0x14000669c",
+    "function_file": "functions/14000669c_MsiRegOpen64bitKey_HKEY_ushort_const_ulong_ulong_HKEY.md",
+    "matched_imports": [
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?MsiRegOpen64bitKey@@YAKPEAUHKEY__@@PEBGKKPEAPEAU1@@Z",
+    "prototype": "unsigned int __fastcall(HKEY, const unsigned __int16 *, unsigned int, unsigned int, HKEY *)",
+    "rank_score": 123,
+    "size": 54,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiAdvertiseProductExW",
+    "ea": "0x140003a15",
+    "function_file": "functions/140003a15_imp_load_MsiAdvertiseProductExW.md",
+    "matched_imports": [
+      "msi!__imp_MsiAdvertiseProductExW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiAdvertiseProductExW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiApplyMultiplePatchesW",
+    "ea": "0x140003a4b",
+    "function_file": "functions/140003a4b_imp_load_MsiApplyMultiplePatchesW.md",
+    "matched_imports": [
+      "msi!__imp_MsiApplyMultiplePatchesW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiApplyMultiplePatchesW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiApplyPatchW",
+    "ea": "0x14000394f",
+    "function_file": "functions/14000394f_imp_load_MsiApplyPatchW.md",
+    "matched_imports": [
+      "msi!__imp_MsiApplyPatchW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiApplyPatchW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiCloseHandle",
+    "ea": "0x140003973",
+    "function_file": "functions/140003973_imp_load_MsiCloseHandle.md",
+    "matched_imports": [
+      "msi!__imp_MsiCloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiCloseHandle",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiEnableLogW",
+    "ea": "0x140003997",
+    "function_file": "functions/140003997_imp_load_MsiEnableLogW.md",
+    "matched_imports": [
+      "msi!__imp_MsiEnableLogW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiEnableLogW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiGetProductCodeFromPackageCodeW",
+    "ea": "0x140003985",
+    "function_file": "functions/140003985_imp_load_MsiGetProductCodeFromPackageCodeW.md",
+    "matched_imports": [
+      "msi!__imp_MsiGetProductCodeFromPackageCodeW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiGetProductCodeFromPackageCodeW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiGetProductInfoW",
+    "ea": "0x1400039a9",
+    "function_file": "functions/1400039a9_imp_load_MsiGetProductInfoW.md",
+    "matched_imports": [
+      "msi!__imp_MsiGetProductInfoW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiGetProductInfoW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiGetSummaryInformationW",
+    "ea": "0x140003961",
+    "function_file": "functions/140003961_imp_load_MsiGetSummaryInformationW.md",
+    "matched_imports": [
+      "msi!__imp_MsiGetSummaryInformationW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiGetSummaryInformationW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiInstallProductW",
+    "ea": "0x1400039f1",
+    "function_file": "functions/1400039f1_imp_load_MsiInstallProductW.md",
+    "matched_imports": [
+      "msi!__imp_MsiInstallProductW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiInstallProductW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiLoadStringA",
+    "ea": "0x1400039cd",
+    "function_file": "functions/1400039cd_imp_load_MsiLoadStringA.md",
+    "matched_imports": [
+      "msi!__imp_MsiLoadStringA"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiLoadStringA",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiLoadStringW",
+    "ea": "0x140003a39",
+    "function_file": "functions/140003a39_imp_load_MsiLoadStringW.md",
+    "matched_imports": [
+      "msi!__imp_MsiLoadStringW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiLoadStringW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiMessageBoxExW",
+    "ea": "0x140003a6f",
+    "function_file": "functions/140003a6f_imp_load_MsiMessageBoxExW.md",
+    "matched_imports": [
+      "msi!__imp_MsiMessageBoxExW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiMessageBoxExW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiMessageBoxW",
+    "ea": "0x140003a03",
+    "function_file": "functions/140003a03_imp_load_MsiMessageBoxW.md",
+    "matched_imports": [
+      "msi!__imp_MsiMessageBoxW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiMessageBoxW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiReinstallProductW",
+    "ea": "0x1400039df",
+    "function_file": "functions/1400039df_imp_load_MsiReinstallProductW.md",
+    "matched_imports": [
+      "msi!__imp_MsiReinstallProductW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiReinstallProductW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiSetExternalUIA",
+    "ea": "0x140003a27",
+    "function_file": "functions/140003a27_imp_load_MsiSetExternalUIA.md",
+    "matched_imports": [
+      "msi!__imp_MsiSetExternalUIA"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiSetExternalUIA",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiSetInternalUI",
+    "ea": "0x140003a81",
+    "function_file": "functions/140003a81_imp_load_MsiSetInternalUI.md",
+    "matched_imports": [
+      "msi!__imp_MsiSetInternalUI"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiSetInternalUI",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_MsiSummaryInfoGetPropertyA",
+    "ea": "0x140003a5d",
+    "function_file": "functions/140003a5d_imp_load_MsiSummaryInfoGetPropertyA.md",
+    "matched_imports": [
+      "msi!__imp_MsiSummaryInfoGetPropertyA"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_MsiSummaryInfoGetPropertyA",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__g_cServiceStatus__",
+    "ea": "0x140009a20",
+    "function_file": "functions/140009a20_dynamic_atexit_destructor_for_g_cServiceStatus.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__g_cServiceStatus__",
+    "prototype": "",
+    "rank_score": 120,
+    "size": 14,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 12,
+    "demangled": "memset_0",
+    "ea": "0x140003883",
+    "function_file": "functions/140003883_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x1400038a7",
+    "function_file": "functions/1400038a7_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "memcpy_0",
+    "ea": "0x1400097f2",
+    "function_file": "functions/1400097f2_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 103,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "COMCTL32::F_TaskDialog",
+    "ea": "0x1400093e0",
+    "function_file": "functions/1400093e0_COMCTL32_F_TaskDialog.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "TaskDialog"
+    ],
+    "name": "COMCTL32::F_TaskDialog",
+    "prototype": "",
+    "rank_score": 64,
+    "size": 135,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "OLE32::F_CoInitializeSecurity",
+    "ea": "0x140009100",
+    "function_file": "functions/140009100_OLE32_F_CoInitializeSecurity.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CoInitializeSecurity"
+    ],
+    "name": "OLE32::F_CoInitializeSecurity",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 142,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "COMCTL32::F_InitCommonControls",
+    "ea": "0x140009300",
+    "function_file": "functions/140009300_COMCTL32_F_InitCommonControls.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "InitCommonControls"
+    ],
+    "name": "COMCTL32::F_InitCommonControls",
+    "prototype": "",
+    "rank_score": 53,
+    "size": 45,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SelfReg(ushort const *,ushort const *)",
+    "ea": "0x140007550",
+    "function_file": "functions/140007550_SelfReg_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DllRegisterServer"
+    ],
+    "name": "?SelfReg@@YAHPEBG0@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 52,
+    "size": 15,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SelfUnreg(ushort const *,ushort const *)",
+    "ea": "0x140007760",
+    "function_file": "functions/140007760_SelfUnreg_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DllUnregisterServer"
+    ],
+    "name": "?SelfUnreg@@YAHPEBG0@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 52,
+    "size": 15,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "KERNEL32::F_CreateWaitableTimerW",
+    "ea": "0x1400091f0",
+    "function_file": "functions/1400091f0_KERNEL32_F_CreateWaitableTimerW.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CreateWaitableTimerW"
+    ],
+    "name": "KERNEL32::F_CreateWaitableTimerW",
+    "prototype": "",
+    "rank_score": 43,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "OLE32::F_CoCreateInstance",
+    "ea": "0x140009040",
+    "function_file": "functions/140009040_OLE32_F_CoCreateInstance.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CoCreateInstance"
+    ],
+    "name": "OLE32::F_CoCreateInstance",
+    "prototype": "",
+    "rank_score": 43,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "__tailMerge_msi_dll",
+    "ea": "0x1400038d0",
+    "function_file": "functions/1400038d0_tailMerge_msi_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_msi_dll",
+    "prototype": "",
+    "rank_score": 40,
+    "size": 121,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 31,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x14000a010",
+    "function_file": "functions/14000a010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 22,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140009820",
+    "function_file": "functions/140009820_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 34,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "InstallPackage(ushort const *,ushort const *)",
+    "ea": "0x140006300",
+    "function_file": "functions/140006300_InstallPackage_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InstallPackage@@YAHPEBG0@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 25,
+    "size": 59,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140009700",
+    "function_file": "functions/140009700_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CComPointer<IMsiServer>::~CComPointer<IMsiServer>(void)",
+    "ea": "0x140003b5c",
+    "function_file": "functions/140003b5c_CComPointer_IMsiServer_CComPointer_IMsiServer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPointer@UIMsiServer@@@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 29,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetSecureSecurityDescriptor(char * *,uint *,Bool,bool)",
+    "ea": "0x1400057a0",
+    "function_file": "functions/1400057a0_GetSecureSecurityDescriptor_char_uint_Bool_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSecureSecurityDescriptor@@YAKPEAPEADPEAIW4Bool@@_N@Z",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_GetSecurityDescriptor_::_2_::Security::_Security",
+    "ea": "0x140003c3c",
+    "function_file": "functions/140003c3c_GetSecurityDescriptor_2_Security_Security.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_GetSecurityDescriptor_::_2_::Security::_Security",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 5,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_GetSecurityDescriptor_::_2_::Security::Security",
+    "ea": "0x140003b44",
+    "function_file": "functions/140003b44_GetSecurityDescriptor_2_Security_Security.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_GetSecurityDescriptor_::_2_::Security::Security",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 18,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CreateMsiServerProxyForCAServer",
+    "ea": "0x140004768",
+    "function_file": "functions/140004768_CreateMsiServerProxyForCAServer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateMsiServerProxyForCAServer",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 243,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CTempBuffer<char,512>::~CTempBuffer<char,512>(void)",
+    "ea": "0x140003ba0",
+    "function_file": "functions/140003ba0_CTempBuffer_char_512_CTempBuffer_char_512_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CTempBuffer@D$0CAA@@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 26,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140009860",
+    "function_file": "functions/140009860_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AdminInstallPackage(ushort const *,ushort const *)",
+    "ea": "0x140003e10",
+    "function_file": "functions/140003e10_AdminInstallPackage_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AdminInstallPackage@@YAHPEBG0@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 13,
+    "size": 80,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CTempBuffer<char,256>::~CTempBuffer<char,256>(void)",
+    "ea": "0x140003b80",
+    "function_file": "functions/140003b80_CTempBuffer_char_256_CTempBuffer_char_256_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CTempBuffer@D$0BAA@@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 26,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CTempBuffer<ushort,260>::~CTempBuffer<ushort,260>(void)",
+    "ea": "0x140003bc0",
+    "function_file": "functions/140003bc0_CTempBuffer_ushort_260_CTempBuffer_ushort_260_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CTempBuffer@G$0BAE@@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 26,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "COMCTL32::F_InitCommonControlsEx",
+    "ea": "0x140009340",
+    "function_file": "functions/140009340_COMCTL32_F_InitCommonControlsEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "COMCTL32::F_InitCommonControlsEx",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 27,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ResetServiceShutdownTimer(void)",
+    "ea": "0x140007500",
+    "function_file": "functions/140007500_ResetServiceShutdownTimer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ResetServiceShutdownTimer@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 12,
+    "size": 71,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlpImageNtHeader",
+    "ea": "0x1400035fc",
+    "function_file": "functions/1400035fc_RtlpImageNtHeader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlpImageNtHeader",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 81,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "COMCTL32::E_InitCommonControlsEx",
+    "ea": "0x140008fd0",
+    "function_file": "functions/140008fd0_COMCTL32_E_InitCommonControlsEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "COMCTL32::E_InitCommonControlsEx",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 26,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__g_ohThread__",
+    "ea": "0x140009a40",
+    "function_file": "functions/140009a40_dynamic_atexit_destructor_for_g_ohThread.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__g_ohThread__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__g_ohThread__",
+    "ea": "0x140001070",
+    "function_file": "functions/140001070_dynamic_initializer_for_g_ohThread.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__g_ohThread__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__g_szCommandLine__",
+    "ea": "0x140001090",
+    "function_file": "functions/140001090_dynamic_initializer_for_g_szCommandLine.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__g_szCommandLine__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "StringCchCopyW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x1400087bc",
+    "function_file": "functions/1400087bc_StringCchCopyW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyW@@YAJPEAG_KPEBG@Z",
+    "prototype": "int(unsigned __int16 *, unsigned __int64, const unsigned __int16 *)",
+    "rank_score": 9,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "StringCopyWorkerW",
+    "ea": "0x14000894c",
+    "function_file": "functions/14000894c_StringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 8,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "AppendString(CAPITempBufferRef<ushort> &,ushort const *,unsigned __int64,bool)",
+    "ea": "0x1400040d4",
+    "function_file": "functions/1400040d4_AppendString_CAPITempBufferRef_ushort_ushort_const_unsigned_int64_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AppendString@@YAKAEAV?$CAPITempBufferRef@G@@PEBG_K_N@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ParseQuotedToken(ushort const * &,ushort * &,uint)",
+    "ea": "0x140006850",
+    "function_file": "functions/140006850_ParseQuotedToken_ushort_const_ushort_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ParseQuotedToken@@YA_NAEAPEBGAEAPEAGI@Z",
+    "prototype": "bool __fastcall(const unsigned __int16 **, unsigned __int16 **, unsigned int)",
+    "rank_score": 6,
+    "size": 416,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "StringCchCatW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x1400086f8",
+    "function_file": "functions/1400086f8_StringCchCatW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCatW@@YAJPEAG_KPEBG@Z",
+    "prototype": "int(unsigned __int16 *, unsigned __int64, const unsigned __int16 *)",
+    "rank_score": 6,
+    "size": 104,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "atexit",
+    "ea": "0x140003570",
+    "function_file": "functions/140003570_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 5,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ParseUnQuotedToken(ushort const * &,ushort * &,uint)",
+    "ea": "0x1400069f8",
+    "function_file": "functions/1400069f8_ParseUnQuotedToken_ushort_const_ushort_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ParseUnQuotedToken@@YA_NAEAPEBGAEAPEAGI@Z",
+    "prototype": "bool __fastcall(const unsigned __int16 **, unsigned __int16 **, unsigned int)",
+    "rank_score": 4,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "StringCchCopyNW(ushort *,unsigned __int64,ushort const *,unsigned __int64)",
+    "ea": "0x140008768",
+    "function_file": "functions/140008768_StringCchCopyNW_ushort_unsigned_int64_ushort_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyNW@@YAJPEAG_KPEBG1@Z",
+    "prototype": "int(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, unsigned __int64)",
+    "rank_score": 4,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "StringCchLengthW(ushort const *,unsigned __int64,unsigned __int64 *)",
+    "ea": "0x140008808",
+    "function_file": "functions/140008808_StringCchLengthW_ushort_const_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchLengthW@@YAJPEBG_KPEA_K@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, unsigned __int64, unsigned __int64 *)",
+    "rank_score": 4,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "APICharNext(ushort const *)",
+    "ea": "0x140003c8c",
+    "function_file": "functions/140003c8c_APICharNext_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?APICharNext@@YAPEBGPEBG@Z",
+    "prototype": "const unsigned __int16 *__fastcall(const unsigned __int16 *)",
+    "rank_score": 3,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "AdjustREGSAM(ulong &)",
+    "ea": "0x140003cbc",
+    "function_file": "functions/140003cbc_AdjustREGSAM_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AdjustREGSAM@@YAXAEAK@Z",
+    "prototype": "void __fastcall(unsigned int *)",
+    "rank_score": 3,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GetNextToken(ushort const * &,unsigned __int64 &)",
+    "ea": "0x1400053a0",
+    "function_file": "functions/1400053a0_GetNextToken_ushort_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetNextToken@@YAPEBGAEAPEBGAEA_K@Z",
+    "prototype": "const unsigned __int16 *__fastcall(const unsigned __int16 **, unsigned __int64 *)",
+    "rank_score": 3,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringLengthWorkerW",
+    "ea": "0x1400089a4",
+    "function_file": "functions/1400089a4_StringLengthWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringLengthWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_PCNZWCH psz, size_t cchMax, size_t *pcchLength)",
+    "rank_score": 3,
+    "size": 63,
+    "tags": []
+  }
+]

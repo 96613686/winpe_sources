@@ -1,0 +1,1876 @@
+[
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "lldpSetTlvs",
+    "ea": "0x140001330",
+    "function_file": "functions/140001330_lldpSetTlvs.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpSetTlvs",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 1626,
+    "size": 801,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "lldpLoadChassisId",
+    "ea": "0x140013180",
+    "function_file": "functions/140013180_lldpLoadChassisId.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "RtlQueryRegistryValuesEx",
+      "ChassisId",
+      "ComputerName",
+      "ComputerName\\ComputerName"
+    ],
+    "name": "lldpLoadChassisId",
+    "prototype": "",
+    "rank_score": 1237,
+    "size": 403,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "lldpDeletePort",
+    "ea": "0x140010aec",
+    "function_file": "functions/140010aec_lldpDeletePort.md",
+    "matched_imports": [
+      "NDIS!NdisFreeRWLock",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeFlushQueuedDpcs"
+    ],
+    "matched_strings": [],
+    "name": "lldpDeletePort",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 1212,
+    "size": 328,
+    "tags": []
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "lldpUpdateNeighbor",
+    "ea": "0x140002fe0",
+    "function_file": "functions/140002fe0_lldpUpdateNeighbor.md",
+    "matched_imports": [
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeQuerySystemTimePrecise",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpUpdateNeighbor",
+    "prototype": "__int64 __usercall@<rax>(PVOID Context@<rcx>, size_t Size, size_t, int)",
+    "rank_score": 853,
+    "size": 1024,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FxDriverEntryWorker",
+    "ea": "0x140005144",
+    "function_file": "functions/140005144_FxDriverEntryWorker.md",
+    "matched_imports": [
+      "WDFLDR!WdfLdrQueryInterface",
+      "WDFLDR!WdfVersionBind",
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "FxDriverEntryWorker",
+    "prototype": "__int64 __fastcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 829,
+    "size": 360,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "lldpAllocateBinding",
+    "ea": "0x140012000",
+    "function_file": "functions/140012000_lldpAllocateBinding.md",
+    "matched_imports": [
+      "NDIS!NdisCompleteUnbindAdapterEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "lldpAllocateBinding",
+    "prototype": "",
+    "rank_score": 820,
+    "size": 384,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "lldpReadComputerName",
+    "ea": "0x140013810",
+    "function_file": "functions/140013810_lldpReadComputerName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlUnicodeToUTF8N"
+    ],
+    "matched_strings": [],
+    "name": "lldpReadComputerName",
+    "prototype": "",
+    "rank_score": 819,
+    "size": 609,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "lldpTxSendShutdownPacket",
+    "ea": "0x1400025d8",
+    "function_file": "functions/1400025d8_lldpTxSendShutdownPacket.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "lldpTxSendShutdownPacket",
+    "prototype": "",
+    "rank_score": 816,
+    "size": 218,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "lldpQueryPortStatus",
+    "ea": "0x140005bcc",
+    "function_file": "functions/140005bcc_lldpQueryPortStatus.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpQueryPortStatus",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "lldpQueryTlvs",
+    "ea": "0x1400036c0",
+    "function_file": "functions/1400036c0_lldpQueryTlvs.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpQueryTlvs",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, unsigned __int64, unsigned __int64 *, __int64)",
+    "rank_score": 806,
+    "size": 319,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "lldpTxTtr",
+    "ea": "0x1400022c0",
+    "function_file": "functions/1400022c0_lldpTxTtr.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "NDIS!NdisSendNetBufferLists"
+    ],
+    "matched_strings": [],
+    "name": "lldpTxTtr",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 630,
+    "size": 569,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LldpSetDeviceDacl",
+    "ea": "0x140004b44",
+    "function_file": "functions/140004b44_LldpSetDeviceDacl.md",
+    "matched_imports": [
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "LldpSetDeviceDacl",
+    "prototype": "",
+    "rank_score": 624,
+    "size": 216,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "lldpDereferenceClient",
+    "ea": "0x1400061d4",
+    "function_file": "functions/1400061d4_lldpDereferenceClient.md",
+    "matched_imports": [
+      "NETIO!NmrProviderDetachClientComplete",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpDereferenceClient",
+    "prototype": "",
+    "rank_score": 617,
+    "size": 177,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "lldpQueueChangeNotificationEx",
+    "ea": "0x140003d80",
+    "function_file": "functions/140003d80_lldpQueueChangeNotificationEx.md",
+    "matched_imports": [
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpQueueChangeNotificationEx",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 614,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "lldpInitializePortConfiguration",
+    "ea": "0x140010ca0",
+    "function_file": "functions/140010ca0_lldpInitializePortConfiguration.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "Mslldp\\Parameters\\Agents\\%s-%u",
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "lldpInitializePortConfiguration",
+    "prototype": "",
+    "rank_score": 612,
+    "size": 633,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "lldpDeliverCreateNotifications",
+    "ea": "0x14000458c",
+    "function_file": "functions/14000458c_lldpDeliverCreateNotifications.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpDeliverCreateNotifications",
+    "prototype": "",
+    "rank_score": 608,
+    "size": 272,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "lldpSendOidRequestAndWait",
+    "ea": "0x1400123a0",
+    "function_file": "functions/1400123a0_lldpSendOidRequestAndWait.md",
+    "matched_imports": [
+      "NDIS!NdisOidRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "lldpSendOidRequestAndWait",
+    "prototype": "",
+    "rank_score": 608,
+    "size": 340,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "lldpDisableAllPortsOnBinding",
+    "ea": "0x140001f00",
+    "function_file": "functions/140001f00_lldpDisableAllPortsOnBinding.md",
+    "matched_imports": [
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpDisableAllPortsOnBinding",
+    "prototype": "",
+    "rank_score": 607,
+    "size": 325,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "lldpEnableAllPortsOnBinding",
+    "ea": "0x140001db0",
+    "function_file": "functions/140001db0_lldpEnableAllPortsOnBinding.md",
+    "matched_imports": [
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpEnableAllPortsOnBinding",
+    "prototype": "",
+    "rank_score": 607,
+    "size": 321,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "lldpReceiveContiguousPacket",
+    "ea": "0x1400029b0",
+    "function_file": "functions/1400029b0_lldpReceiveContiguousPacket.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpReceiveContiguousPacket",
+    "prototype": "void __fastcall(PVOID Context, __int64, char)",
+    "rank_score": 437,
+    "size": 347,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "lldpRxInfoTtlTimer",
+    "ea": "0x1400049a0",
+    "function_file": "functions/1400049a0_lldpRxInfoTtlTimer.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpRxInfoTtlTimer",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 425,
+    "size": 184,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "lldpTooManyNeighborsTimer",
+    "ea": "0x140004720",
+    "function_file": "functions/140004720_lldpTooManyNeighborsTimer.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpTooManyNeighborsTimer",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 424,
+    "size": 156,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "lldpWriteConfigToRegistry",
+    "ea": "0x14000f3b8",
+    "function_file": "functions/14000f3b8_lldpWriteConfigToRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCreateRegistryKey",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [],
+    "name": "lldpWriteConfigToRegistry",
+    "prototype": "",
+    "rank_score": 419,
+    "size": 348,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x1400134c8",
+    "function_file": "functions/1400134c8_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 185,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "lldpCleanupBinding",
+    "ea": "0x140012730",
+    "function_file": "functions/140012730_lldpCleanupBinding.md",
+    "matched_imports": [
+      "NDIS!NdisCompleteUnbindAdapterEx",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "lldpCleanupBinding",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 415,
+    "size": 86,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "lldpEnumeratePorts",
+    "ea": "0x140004030",
+    "function_file": "functions/140004030_lldpEnumeratePorts.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpEnumeratePorts",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 414,
+    "size": 204,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "lldpNmrDeregisterProvider",
+    "ea": "0x14000ee64",
+    "function_file": "functions/14000ee64_lldpNmrDeregisterProvider.md",
+    "matched_imports": [
+      "NETIO!NmrDeregisterProvider",
+      "NETIO!NmrWaitForProviderDeregisterComplete"
+    ],
+    "matched_strings": [],
+    "name": "lldpNmrDeregisterProvider",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 164,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14000e6e0",
+    "function_file": "functions/14000e6e0_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "lldpFindAndReferencePort",
+    "ea": "0x140003500",
+    "function_file": "functions/140003500_lldpFindAndReferencePort.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpFindAndReferencePort",
+    "prototype": "__int64(void)",
+    "rank_score": 407,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "lldpDetachOpenPort",
+    "ea": "0x1400063bc",
+    "function_file": "functions/1400063bc_lldpDetachOpenPort.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpDetachOpenPort",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 406,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "lldpSetPortMacAddress",
+    "ea": "0x140004110",
+    "function_file": "functions/140004110_lldpSetPortMacAddress.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpSetPortMacAddress",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 228,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "lldpDeleteNeighborOnPort",
+    "ea": "0x140004a90",
+    "function_file": "functions/140004a90_lldpDeleteNeighborOnPort.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeCancelTimer"
+    ],
+    "matched_strings": [],
+    "name": "lldpDeleteNeighborOnPort",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "lldpRemoveBindingFromDriver",
+    "ea": "0x1400046a4",
+    "function_file": "functions/1400046a4_lldpRemoveBindingFromDriver.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpRemoveBindingFromDriver",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "lldpRemovePortFromDriver",
+    "ea": "0x140004510",
+    "function_file": "functions/140004510_lldpRemovePortFromDriver.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpRemovePortFromDriver",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "lldpAttachOpenPort",
+    "ea": "0x140006298",
+    "function_file": "functions/140006298_lldpAttachOpenPort.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpAttachOpenPort",
+    "prototype": "",
+    "rank_score": 402,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "lldpSetMibTtl",
+    "ea": "0x140004444",
+    "function_file": "functions/140004444_lldpSetMibTtl.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "lldpSetMibTtl",
+    "prototype": "",
+    "rank_score": 402,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "lldpRegisterProtocol",
+    "ea": "0x140013674",
+    "function_file": "functions/140013674_lldpRegisterProtocol.md",
+    "matched_imports": [
+      "NDIS!NdisRegisterProtocolDriver"
+    ],
+    "matched_strings": [],
+    "name": "lldpRegisterProtocol",
+    "prototype": "",
+    "rank_score": 235,
+    "size": 284,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "lldpAdjustRxPacketFilters",
+    "ea": "0x140011cac",
+    "function_file": "functions/140011cac_lldpAdjustRxPacketFilters.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread"
+    ],
+    "matched_strings": [],
+    "name": "lldpAdjustRxPacketFilters",
+    "prototype": "",
+    "rank_score": 232,
+    "size": 371,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x14000ead0",
+    "function_file": "functions/14000ead0_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "lldpEnableTxFastMode",
+    "ea": "0x140002180",
+    "function_file": "functions/140002180_lldpEnableTxFastMode.md",
+    "matched_imports": [
+      "ntoskrnl!KeCancelTimer"
+    ],
+    "matched_strings": [],
+    "name": "lldpEnableTxFastMode",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 312,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "lldpAcquireInterLock",
+    "ea": "0x140012568",
+    "function_file": "functions/140012568_lldpAcquireInterLock.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread"
+    ],
+    "matched_strings": [],
+    "name": "lldpAcquireInterLock",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 130,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "lldpDriverUnloadWdf",
+    "ea": "0x14000e670",
+    "function_file": "functions/14000e670_lldpDriverUnloadWdf.md",
+    "matched_imports": [
+      "NDIS!NdisDeregisterProtocolDriver"
+    ],
+    "matched_strings": [],
+    "name": "lldpDriverUnloadWdf",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 105,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "lldpProtBindAdapter",
+    "ea": "0x140011e30",
+    "function_file": "functions/140011e30_lldpProtBindAdapter.md",
+    "matched_imports": [
+      "NDIS!NdisOpenAdapterEx"
+    ],
+    "matched_strings": [],
+    "name": "lldpProtBindAdapter",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 464,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "lldpDetachPortFromBinding",
+    "ea": "0x140010998",
+    "function_file": "functions/140010998_lldpDetachPortFromBinding.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread"
+    ],
+    "matched_strings": [],
+    "name": "lldpDetachPortFromBinding",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 173,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "lldpRecalculateTxTimer",
+    "ea": "0x140002500",
+    "function_file": "functions/140002500_lldpRecalculateTxTimer.md",
+    "matched_imports": [
+      "ntoskrnl!KeCancelTimer"
+    ],
+    "matched_strings": [],
+    "name": "lldpRecalculateTxTimer",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 209,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "lldpOpenPort",
+    "ea": "0x14000fd1c",
+    "function_file": "functions/14000fd1c_lldpOpenPort.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "lldpOpenPort",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 172,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x140013588",
+    "function_file": "functions/140013588_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 229,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140004c4c",
+    "function_file": "functions/140004c4c_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "FxStubDriverUnloadCommon(void)",
+    "ea": "0x1400050cc",
+    "function_file": "functions/1400050cc_FxStubDriverUnloadCommon_void.md",
+    "matched_imports": [
+      "WDFLDR!WdfVersionUnbind"
+    ],
+    "matched_strings": [],
+    "name": "?FxStubDriverUnloadCommon@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 213,
+    "size": 48,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "lldpWaitForValueToZero",
+    "ea": "0x140011450",
+    "function_file": "functions/140011450_lldpWaitForValueToZero.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread"
+    ],
+    "matched_strings": [],
+    "name": "lldpWaitForValueToZero",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 111,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "lldpProtOidRequestComplete",
+    "ea": "0x1400047d0",
+    "function_file": "functions/1400047d0_lldpProtOidRequestComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "lldpProtOidRequestComplete",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "lldpSetPeriodicTimer",
+    "ea": "0x140003f20",
+    "function_file": "functions/140003f20_lldpSetPeriodicTimer.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetCoalescableTimer"
+    ],
+    "matched_strings": [],
+    "name": "lldpSetPeriodicTimer",
+    "prototype": "__int64 __fastcall(PKTIMER Timer)",
+    "rank_score": 208,
+    "size": 217,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x1400048f8",
+    "function_file": "functions/1400048f8_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "lldpVerifyAddressIsNonpaged",
+    "ea": "0x1400050a0",
+    "function_file": "functions/1400050a0_lldpVerifyAddressIsNonpaged.md",
+    "matched_imports": [
+      "ntoskrnl!MmIsNonPagedSystemAddressValid"
+    ],
+    "matched_strings": [],
+    "name": "lldpVerifyAddressIsNonpaged",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RtlUnicodeStringPrintf",
+    "ea": "0x140003cc0",
+    "function_file": "functions/140003cc0_RtlUnicodeStringPrintf.md",
+    "matched_imports": [
+      "ntoskrnl!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "RtlUnicodeStringPrintf",
+    "prototype": "NTSTATUS(PUNICODE_STRING DestinationString, NTSTRSAFE_PCWSTR pszFormat, ...)",
+    "rank_score": 204,
+    "size": 175,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "lldpDereferencePacketPool",
+    "ea": "0x140010aa8",
+    "function_file": "functions/140010aa8_lldpDereferencePacketPool.md",
+    "matched_imports": [
+      "NDIS!NdisFreeNetBufferListPool"
+    ],
+    "matched_strings": [],
+    "name": "lldpDereferencePacketPool",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "lldpDeleteOpenPort",
+    "ea": "0x14000fca0",
+    "function_file": "functions/14000fca0_lldpDeleteOpenPort.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "lldpDeleteOpenPort",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 203,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "lldpGetRegistryKeyName",
+    "ea": "0x140012500",
+    "function_file": "functions/140012500_lldpGetRegistryKeyName.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Mslldp\\Parameters\\Agents\\%s-%u"
+    ],
+    "name": "lldpGetRegistryKeyName",
+    "prototype": "",
+    "rank_score": 64,
+    "size": 98,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "lldpIoctlSetConfig",
+    "ea": "0x140010150",
+    "function_file": "functions/140010150_lldpIoctlSetConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpIoctlSetConfig",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 39,
+    "size": 982,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "lldpSetPortAdminConfig",
+    "ea": "0x1400114d0",
+    "function_file": "functions/1400114d0_lldpSetPortAdminConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpSetPortAdminConfig",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 37,
+    "size": 915,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 32,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140006670",
+    "function_file": "functions/140006670_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140013350",
+    "function_file": "functions/140013350_DriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 31,
+    "size": 133,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "lldpFlushConfigChanges",
+    "ea": "0x140011aa0",
+    "function_file": "functions/140011aa0_lldpFlushConfigChanges.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpFlushConfigChanges",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 31,
+    "size": 518,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140006630",
+    "function_file": "functions/140006630_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 30,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "lldpUpdateTxTtl",
+    "ea": "0x140011a40",
+    "function_file": "functions/140011a40_lldpUpdateTxTtl.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpUpdateTxTtl",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 78,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 26,
+    "demangled": "WPP_SF_d",
+    "ea": "0x140004b00",
+    "function_file": "functions/140004b00_WPP_SF_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "lldpDrop",
+    "ea": "0x1400034c0",
+    "function_file": "functions/1400034c0_lldpDrop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpDrop",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 25,
+    "size": 57,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "WPP_SF_",
+    "ea": "0x140004a60",
+    "function_file": "functions/140004a60_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 23,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400064fc",
+    "function_file": "functions/1400064fc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FxDriverEntry",
+    "ea": "0x140005110",
+    "function_file": "functions/140005110_FxDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FxDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x14000ea30",
+    "function_file": "functions/14000ea30_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "lldpNmrOpen",
+    "ea": "0x14000efd0",
+    "function_file": "functions/14000efd0_lldpNmrOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpNmrOpen",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 203,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "memset",
+    "ea": "0x140006b40",
+    "function_file": "functions/140006b40_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 18,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "memmove",
+    "ea": "0x140006840",
+    "function_file": "functions/140006840_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 17,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "lldpIoctlQueryConfig",
+    "ea": "0x14000ec14",
+    "function_file": "functions/14000ec14_lldpIoctlQueryConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpIoctlQueryConfig",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 16,
+    "size": 99,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "lldpProtOpenAdapterComplete",
+    "ea": "0x140012790",
+    "function_file": "functions/140012790_lldpProtOpenAdapterComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpProtOpenAdapterComplete",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 16,
+    "size": 118,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "lldpWaitForTxCompletion",
+    "ea": "0x140011390",
+    "function_file": "functions/140011390_lldpWaitForTxCompletion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpWaitForTxCompletion",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14000e81c",
+    "function_file": "functions/14000e81c_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "lldpGetConfig",
+    "ea": "0x140004340",
+    "function_file": "functions/140004340_lldpGetConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpGetConfig",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 20,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "lldpGetPortAdminConfig",
+    "ea": "0x14000e614",
+    "function_file": "functions/14000e614_lldpGetPortAdminConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpGetPortAdminConfig",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 71,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "lldpNmrQueryConfig",
+    "ea": "0x14000f0b0",
+    "function_file": "functions/14000f0b0_lldpNmrQueryConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpNmrQueryConfig",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 103,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x14000e930",
+    "function_file": "functions/14000e930_wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "lldpNmrSetConfig",
+    "ea": "0x14000f330",
+    "function_file": "functions/14000f330_lldpNmrSetConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpNmrSetConfig",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 36,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "lldpProtSendNetBufferListsComplete",
+    "ea": "0x140003c00",
+    "function_file": "functions/140003c00_lldpProtSendNetBufferListsComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpProtSendNetBufferListsComplete",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 185,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "lldpReferenceClient",
+    "ea": "0x14000628c",
+    "function_file": "functions/14000628c_lldpReferenceClient.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpReferenceClient",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 5,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14001331c",
+    "function_file": "functions/14001331c_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "WPP_SF_DD",
+    "ea": "0x140005a6c",
+    "function_file": "functions/140005a6c_WPP_SF_DD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DD",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "lldpProtCloseAdapterComplete",
+    "ea": "0x140012710",
+    "function_file": "functions/140012710_lldpProtCloseAdapterComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpProtCloseAdapterComplete",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "lldpDereferencePort",
+    "ea": "0x140010530",
+    "function_file": "functions/140010530_lldpDereferencePort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpDereferencePort",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 9,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "lldpDetachAllPortsFromBinding",
+    "ea": "0x140012640",
+    "function_file": "functions/140012640_lldpDetachAllPortsFromBinding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpDetachAllPortsFromBinding",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "lldpOpenPortFromHandle",
+    "ea": "0x140005084",
+    "function_file": "functions/140005084_lldpOpenPortFromHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpOpenPortFromHandle",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140004c24",
+    "function_file": "functions/140004c24_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "McTemplateK0qqbr1_EtwWriteTransfer",
+    "ea": "0x140005dd0",
+    "function_file": "functions/140005dd0_McTemplateK0qqbr1_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qqbr1_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "lldpReleaseInterLock",
+    "ea": "0x140004320",
+    "function_file": "functions/140004320_lldpReleaseInterLock.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpReleaseInterLock",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 19,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "memcmp",
+    "ea": "0x140006720",
+    "function_file": "functions/140006720_memcmp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memcmp",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 7,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "McTemplateK0qqq_EtwWriteTransfer",
+    "ea": "0x140005ef8",
+    "function_file": "functions/140005ef8_McTemplateK0qqq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "lldpSetMulticastGroup",
+    "ea": "0x14000fa94",
+    "function_file": "functions/14000fa94_lldpSetMulticastGroup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpSetMulticastGroup",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 143,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "lldpClientFromHandle",
+    "ea": "0x140004e30",
+    "function_file": "functions/140004e30_lldpClientFromHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpClientFromHandle",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "lldpCreateDriverWdf",
+    "ea": "0x1400133dc",
+    "function_file": "functions/1400133dc_lldpCreateDriverWdf.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpCreateDriverWdf",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 230,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "lldpSetPacketFilter",
+    "ea": "0x14000fb2c",
+    "function_file": "functions/14000fb2c_lldpSetPacketFilter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpSetPacketFilter",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 126,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0_EtwWriteTransfer",
+    "ea": "0x1400059ac",
+    "function_file": "functions/1400059ac_McTemplateK0_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0q_EtwWriteTransfer",
+    "ea": "0x140005d78",
+    "function_file": "functions/140005d78_McTemplateK0q_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0q_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qqbr1qbr3_EtwWriteTransfer",
+    "ea": "0x140005e4c",
+    "function_file": "functions/140005e4c_McTemplateK0qqbr1qbr3_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qqbr1qbr3_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 163,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qqqbr2_EtwWriteTransfer",
+    "ea": "0x140004860",
+    "function_file": "functions/140004860_McTemplateK0qqqbr2_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qqqbr2_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, char, _DWORD, __int64)",
+    "rank_score": 4,
+    "size": 146,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WPP_SF_DDD",
+    "ea": "0x140005ac0",
+    "function_file": "functions/140005ac0_WPP_SF_DDD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DDD",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "lldpCopyTlvToMib",
+    "ea": "0x140003e60",
+    "function_file": "functions/140003e60_lldpCopyTlvToMib.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpCopyTlvToMib",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14000e7e0",
+    "function_file": "functions/14000e7e0_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140005870",
+    "function_file": "functions/140005870_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14000e740",
+    "function_file": "functions/14000e740_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "lldpCopyMibToNetBuffer",
+    "ea": "0x140004360",
+    "function_file": "functions/140004360_lldpCopyMibToNetBuffer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "lldpCopyMibToNetBuffer",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 113,
+    "tags": []
+  }
+]
