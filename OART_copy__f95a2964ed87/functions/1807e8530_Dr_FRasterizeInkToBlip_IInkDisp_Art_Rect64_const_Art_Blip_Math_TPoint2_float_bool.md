@@ -1,0 +1,101 @@
+# Dr::FRasterizeInkToBlip(IInkDisp *,Art::Rect64 const &,Art::Blip &,Math::TPoint2<float> &,bool)
+
+- ea: `0x1807e8530`
+- end: `0x1807e9391`
+- name: `?FRasterizeInkToBlip@Dr@@YA_NPEAUIInkDisp@@AEBVRect64@Art@@AEAVBlip@4@AEAU?$TPoint2@M@Math@@_N@Z`
+- size: `3681`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `53`
+- tags: ``
+
+## callers
+
+- `0x18043a5f0`
+- `0x180844920`
+
+## callees
+
+- `0x18000eb20`
+- `0x18002a690`
+- `0x180034bb0`
+- `0x18003a6c0`
+- `0x180071d70`
+- `0x180074230`
+- `0x1800743d0`
+- `0x18007b208`
+- `0x18007ccb0`
+- `0x180098600`
+- `0x1800b4d50`
+- `0x1800d1790`
+- `0x1800d3e40`
+- `0x1800f53d0`
+- `0x1801124a0`
+- `0x1801124c0`
+- `0x1801285f0`
+- `0x180151b50`
+- `0x18015332c`
+- `0x1801595b0`
+- `0x1801ac61c`
+- `0x1801ac720`
+- `0x1801b6718`
+- `0x1801cf370`
+- `0x180210de4`
+- `0x180217378`
+- `0x18024fa10`
+- `0x180278c20`
+- `0x180278e70`
+- `0x180279050`
+- `0x18027c4c0`
+- `0x18028edd4`
+- `0x1802a23d0`
+- `0x1803115c0`
+- `0x180412d60`
+- `0x180524eb4`
+- `0x180578344`
+- `0x1805a7db4`
+- `0x1805ae560`
+- `0x18066ba5c`
+- `0x180680fd4`
+- `0x18068ad04`
+- `0x180692af0`
+- `0x180697ffc`
+- `0x1806bc2a8`
+- `0x1806bc4f0`
+- `0x1806bc6a8`
+- `0x1806bc84c`
+- `0x1806bcadc`
+- `0x1806cf9e8`
+
+## import_xrefs
+
+- `KERNEL32!DecodePointer` at `0x1807e8b1c`
+- `KERNEL32!DecodePointer` at `0x1807e8b36`
+- `KERNEL32!DecodePointer` at `0x1807e8b1c`
+- `KERNEL32!DecodePointer` at `0x1807e8b36`
+- `KERNEL32!EncodePointer` at `0x1807e8731`
+- `KERNEL32!EncodePointer` at `0x1807e8a0f`
+- `KERNEL32!EncodePointer` at `0x1807e8731`
+- `KERNEL32!EncodePointer` at `0x1807e8a0f`
+- `gfx!??1SceneGraphMask@Gfx@@UEAA@XZ` at `0x1807e8f09`
+- `gfx!??1SceneGraphMask@Gfx@@UEAA@XZ` at `0x1807e9181`
+- `gfx!??1SceneGraphMask@Gfx@@UEAA@XZ` at `0x1807e92c9`
+- `gfx!??1SceneGraphMask@Gfx@@UEAA@XZ` at `0x1807e8f09`
+- `gfx!??1SceneGraphMask@Gfx@@UEAA@XZ` at `0x1807e9181`
+- `gfx!??1SceneGraphMask@Gfx@@UEAA@XZ` at `0x1807e92c9`
+- `gfx!?Create@IImage@GEL@@SA?AV?$TCntPtr@UIImage@GEL@@@Ofc@@AEAUIPlatformBitmap@ARC@@@Z` at `0x1807e9230`
+- `gfx!?Create@IImage@GEL@@SA?AV?$TCntPtr@UIImage@GEL@@@Ofc@@AEAUIPlatformBitmap@ARC@@@Z` at `0x1807e9230`
+- `mso40uiWin32Client!__imp_??0ExceptionScope@ARC@@QEAA@PEBUIFactory@1@@Z` at `0x1807e8dbc`
+- `mso40uiWin32Client!__imp_??0ExceptionScope@ARC@@QEAA@PEBUIFactory@1@@Z` at `0x1807e8dbc`
+- `mso40uiWin32Client!__imp_?RethrowCachedException@ExceptionScope@ARC@@QEAAXXZ` at `0x1807e8ff5`
+- `mso40uiWin32Client!__imp_?RethrowCachedException@ExceptionScope@ARC@@QEAAXXZ` at `0x1807e8ff5`
+- `mso40uiWin32Client!__imp_??1ExceptionScope@ARC@@QEAA@XZ` at `0x1807e8ead`
+- `mso40uiWin32Client!__imp_??1ExceptionScope@ARC@@QEAA@XZ` at `0x1807e9003`
+- `mso40uiWin32Client!__imp_??1ExceptionScope@ARC@@QEAA@XZ` at `0x1807e8ead`
+- `mso40uiWin32Client!__imp_??1ExceptionScope@ARC@@QEAA@XZ` at `0x1807e9003`
+
+## pseudocode
+
+```c
+
+```

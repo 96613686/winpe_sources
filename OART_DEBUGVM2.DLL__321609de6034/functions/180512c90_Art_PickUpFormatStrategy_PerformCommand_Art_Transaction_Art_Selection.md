@@ -1,0 +1,92 @@
+# Art::PickUpFormatStrategy::PerformCommand(Art::Transaction &,Art::Selection &)
+
+- ea: `0x180512c90`
+- end: `0x18051374a`
+- name: `?PerformCommand@PickUpFormatStrategy@Art@@UEBAXAEAVTransaction@2@AEAVSelection@2@@Z`
+- size: `2746`
+- prototype: `void(Art::PickUpFormatStrategy *__hidden this, struct Art::Transaction *, struct Art::Selection *)`
+- caller_count: `0`
+- callee_count: `36`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x18000eb20`
+- `0x18002a690`
+- `0x180079244`
+- `0x1800a4020`
+- `0x1800badb4`
+- `0x1800d3e40`
+- `0x18010db54`
+- `0x180128640`
+- `0x180175a58`
+- `0x18017fcc0`
+- `0x180204ee0`
+- `0x180210de4`
+- `0x1802443d8`
+- `0x1802760b0`
+- `0x180279000`
+- `0x180279050`
+- `0x18027c4c0`
+- `0x18032b360`
+- `0x1803f3490`
+- `0x180512b14`
+- `0x180512bf8`
+- `0x180512c90`
+- `0x180513750`
+- `0x180513a40`
+- `0x180514050`
+- `0x180514140`
+- `0x180514160`
+- `0x180514210`
+- `0x1806bc4f0`
+- `0x1806bc6a8`
+- `0x1806cf9e8`
+- `0x1806d19bc`
+- `0x18076f590`
+- `0x18076faa8`
+- `0x180770d70`
+- `0x180a18ad0`
+
+## import_xrefs
+
+- `KERNEL32!DecodePointer` at `0x180512ed3`
+- `KERNEL32!DecodePointer` at `0x180512eea`
+- `KERNEL32!DecodePointer` at `0x180512fdb`
+- `KERNEL32!DecodePointer` at `0x180512ff2`
+- `KERNEL32!DecodePointer` at `0x180513114`
+- `KERNEL32!DecodePointer` at `0x18051312b`
+- `KERNEL32!DecodePointer` at `0x180513217`
+- `KERNEL32!DecodePointer` at `0x18051322e`
+- `KERNEL32!DecodePointer` at `0x180513451`
+- `KERNEL32!DecodePointer` at `0x180513468`
+- `KERNEL32!DecodePointer` at `0x1805135b0`
+- `KERNEL32!DecodePointer` at `0x1805135c7`
+- `KERNEL32!DecodePointer` at `0x18051369a`
+- `KERNEL32!DecodePointer` at `0x1805136b3`
+- `KERNEL32!DecodePointer` at `0x180512ed3`
+- `KERNEL32!DecodePointer` at `0x180512eea`
+- `KERNEL32!DecodePointer` at `0x180512fdb`
+- `KERNEL32!DecodePointer` at `0x180512ff2`
+- `KERNEL32!DecodePointer` at `0x180513114`
+- `KERNEL32!DecodePointer` at `0x18051312b`
+- `KERNEL32!DecodePointer` at `0x180513217`
+- `KERNEL32!DecodePointer` at `0x18051322e`
+- `KERNEL32!DecodePointer` at `0x180513451`
+- `KERNEL32!DecodePointer` at `0x180513468`
+- `KERNEL32!DecodePointer` at `0x1805135b0`
+- `KERNEL32!DecodePointer` at `0x1805135c7`
+- `KERNEL32!DecodePointer` at `0x18051369a`
+- `KERNEL32!DecodePointer` at `0x1805136b3`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1805133c1`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1805133c1`
+
+## string_xrefs
+
+- `0x1805132d6`: `http://schemas.microsoft.com/office/drawing/2017/model3d`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,56 @@
+# Art::TextLayoutLock::TextLayoutLock(Art::TextLayoutRichEditImpl const &)
+
+- ea: `0x1802e6f20`
+- end: `0x1802e71d0`
+- name: `??0TextLayoutLock@Art@@IEAA@AEBVTextLayoutRichEditImpl@1@@Z`
+- size: `688`
+- prototype: `__int64 __fastcall(Art::TextLayoutLock *__hidden this, const struct Art::TextLayoutRichEditImpl *)`
+- caller_count: `1`
+- callee_count: `6`
+- tags: ``
+
+## callers
+
+- `0x1803bb740`
+
+## callees
+
+- `0x180006390`
+- `0x180279050`
+- `0x18028a9c0`
+- `0x1802e6f20`
+- `0x1804599f0`
+- `0x18055d6b0`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentThreadId` at `0x1802e6f93`
+- `KERNEL32!GetCurrentThreadId` at `0x1802e6f93`
+- `KERNEL32!ResetEvent` at `0x1802e7189`
+- `KERNEL32!ResetEvent` at `0x1802e7189`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1802e71ae`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1802e71ae`
+- `MSVCP140!_Mtx_unlock` at `0x1802e7008`
+- `MSVCP140!_Mtx_unlock` at `0x1802e7199`
+- `MSVCP140!_Mtx_unlock` at `0x1802e7008`
+- `MSVCP140!_Mtx_unlock` at `0x1802e7199`
+- `MSVCP140!_Mtx_lock` at `0x1802e6fa9`
+- `MSVCP140!_Mtx_lock` at `0x1802e6fa9`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1802e70d0`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1802e70dc`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1802e70d0`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1802e70dc`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1802e7028`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1802e7028`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1802e70a3`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1802e70a3`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1802e7112`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1802e7112`
+- `Mso20Win32Client!__imp_?ThrowOOM@@YAXXZ` at `0x1802e70b1`
+- `Mso20Win32Client!__imp_?ThrowOOM@@YAXXZ` at `0x1802e70b1`
+
+## pseudocode
+
+```c
+
+```

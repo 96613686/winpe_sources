@@ -1,0 +1,72 @@
+# Art::SimpleTextFrame::FHasVerticalClipping(void)
+
+- ea: `0x1800f7cc0`
+- end: `0x1800f8114`
+- name: `?FHasVerticalClipping@SimpleTextFrame@Art@@IEBA_NXZ`
+- size: `1108`
+- prototype: `bool __fastcall(Art::SimpleTextFrame *__hidden this)`
+- caller_count: `4`
+- callee_count: `9`
+- tags: ``
+
+## callers
+
+- `0x1800ec1e0`
+- `0x1800f6990`
+- `0x1800f7a10`
+- `0x18023dda0`
+
+## callees
+
+- `0x180006390`
+- `0x1800f7cc0`
+- `0x180239330`
+- `0x180277190`
+- `0x180279050`
+- `0x18028a9c0`
+- `0x1804599f0`
+- `0x18055d6b0`
+- `0x1806bc678`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentThreadId` at `0x1800f7d25`
+- `KERNEL32!GetCurrentThreadId` at `0x1800f7d25`
+- `KERNEL32!ResetEvent` at `0x1800f8088`
+- `KERNEL32!ResetEvent` at `0x1800f8088`
+- `KERNEL32!SetEvent` at `0x1800f8108`
+- `KERNEL32!SetEvent` at `0x1800f8108`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1800f80ad`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1800f80ad`
+- `MSVCP140!_Mtx_unlock` at `0x1800f7d9f`
+- `MSVCP140!_Mtx_unlock` at `0x1800f7e99`
+- `MSVCP140!_Mtx_unlock` at `0x1800f8098`
+- `MSVCP140!_Mtx_unlock` at `0x1800f7d9f`
+- `MSVCP140!_Mtx_unlock` at `0x1800f7e99`
+- `MSVCP140!_Mtx_unlock` at `0x1800f8098`
+- `MSVCP140!_Mtx_lock` at `0x1800f7d3b`
+- `MSVCP140!_Mtx_lock` at `0x1800f7ddc`
+- `MSVCP140!_Mtx_lock` at `0x1800f7d3b`
+- `MSVCP140!_Mtx_lock` at `0x1800f7ddc`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1800f7f70`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1800f7f81`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1800f7f8d`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1800f7f99`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1800f7f70`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1800f7f81`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1800f7f8d`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1800f7f99`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1800f7eca`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1800f7eca`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1800f7f43`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1800f7f43`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1800f7fcc`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1800f7fcc`
+- `Mso20Win32Client!__imp_?ThrowOOM@@YAXXZ` at `0x1800f7f51`
+- `Mso20Win32Client!__imp_?ThrowOOM@@YAXXZ` at `0x1800f7f51`
+
+## pseudocode
+
+```c
+
+```

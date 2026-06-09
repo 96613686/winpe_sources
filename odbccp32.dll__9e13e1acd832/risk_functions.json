@@ -1,0 +1,3132 @@
+[
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "TracingPageProc",
+    "ea": "0x18000dc70",
+    "function_file": "functions/18000dc70_TracingPageProc.md",
+    "matched_imports": [
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!GetTempPath2W",
+      "USER32!CheckDlgButton",
+      "USER32!EnableWindow",
+      "USER32!GetDlgItem",
+      "USER32!GetParent",
+      "USER32!GetWindowTextW",
+      "USER32!IsDlgButtonChecked",
+      "USER32!LoadStringW",
+      "USER32!SendMessageW",
+      "USER32!SetFocus",
+      "USER32!SetWindowLongPtrW",
+      "USER32!SetWindowTextW"
+    ],
+    "matched_strings": [
+      "TraceDll",
+      "TraceDll",
+      "TraceDll",
+      "TraceDll",
+      "TraceDll",
+      "odbctrac.dll"
+    ],
+    "name": "TracingPageProc",
+    "prototype": "_BOOL8 __fastcall(HWND hWnd, int, UINT, __int64)",
+    "rank_score": 15512,
+    "size": 3214,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 0,
+    "demangled": "FileDsnPageProc",
+    "ea": "0x18000c440",
+    "function_file": "functions/18000c440_FileDsnPageProc.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetLastError",
+      "USER32!EnableWindow",
+      "USER32!GetDlgItem",
+      "USER32!GetWindowLongPtrW",
+      "USER32!LoadBitmapA",
+      "USER32!LoadCursorA",
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW",
+      "USER32!SendMessageA",
+      "USER32!SendMessageW",
+      "USER32!SetCursor",
+      "USER32!SetFocus",
+      "USER32!SetWindowLongPtrW"
+    ],
+    "matched_strings": [],
+    "name": "FileDsnPageProc",
+    "prototype": "__int64 __fastcall(HWND hDlg, int, unsigned __int64, __int64)",
+    "rank_score": 12665,
+    "size": 2939,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DSTypePageProc",
+    "ea": "0x180003570",
+    "function_file": "functions/180003570_DSTypePageProc.md",
+    "matched_imports": [
+      "USER32!EnableWindow",
+      "USER32!GetDlgItem",
+      "USER32!GetParent",
+      "USER32!GetWindowLongPtrW",
+      "USER32!GetWindowRect",
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW",
+      "USER32!MoveWindow",
+      "USER32!OffsetRect",
+      "USER32!PostMessageW",
+      "USER32!SendMessageW",
+      "USER32!SetWindowLongPtrW",
+      "USER32!ShowWindow"
+    ],
+    "matched_strings": [],
+    "name": "DSTypePageProc",
+    "prototype": "__int64 __fastcall(HWND hDlg, int, int, LONG_PTR)",
+    "rank_score": 12436,
+    "size": 1599,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LoadPerfCounters(void)",
+    "ea": "0x1800118ec",
+    "function_file": "functions/1800118ec_LoadPerfCounters_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegGetValueW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetTempFileNameW",
+      "KERNEL32!GetTempPath2W",
+      "loadperf!LoadPerfCounterTextStringsW",
+      "msvcrt!_wfopen",
+      "msvcrt!fclose",
+      "msvcrt!fwprintf"
+    ],
+    "matched_strings": [
+      "[languages]\n009=English\n\n[text]\nODBC_CP_OBJ_009_NAME=ODBC Connection Pooling\nODBC_CP_OBJ_009_HELP=Display ODBC Connection Pooling Statistics\nODBC_CP_REAL_CONNECT_009_NAME=Connections Hard/Sec\nODBC_CP_REAL_CONNECT_009_HELP=The number of real connections per second.\nODBC_CP_REAL_DISCONNECT_009_NAME=Disconnections Hard/Sec\nODBC_CP_REAL_DISCONNECT_009_HELP=The number of real disconnects per second\nODBC_CP_VIRTUAL_CONNECT_009_NAME=Connections Soft/Sec\nODBC_CP_VIRTUAL_CONNECT_009_HELP=The number of co",
+      "SYSTEM\\CurrentControlSet\\Services\\ODBC\\Performance",
+      "#define ODBC_CP_OBJ                    0\n#define ODBC_CP_REAL_CONNECT           2\n#define ODBC_CP_REAL_DISCONNECT        4\n#define ODBC_CP_VIRTUAL_CONNECT        6\n#define ODBC_CP_VIRTUAL_DISCONNECT     8\n#define ODBC_CP_CURRENT_ACTIVE_CONNECT 10\n#define ODBC_CP_CURRENT_FREE_CONNECT   12\n#define ODBC_CP_CURRENT_ACTIVE_POOL    14\n#define ODBC_CP_NUM_POOL_CREATED       16\n"
+    ],
+    "name": "?LoadPerfCounters@@YA?AW4tagPerfCounterStatus@@XZ",
+    "prototype": "__int64()",
+    "rank_score": 4972,
+    "size": 923,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "SetBrowseContext",
+    "ea": "0x1800110e8",
+    "function_file": "functions/1800110e8_SetBrowseContext.md",
+    "matched_imports": [
+      "SHELL32!SHGetDesktopFolder",
+      "SHELL32!SHGetFileInfoA",
+      "SHELL32!SHGetMalloc",
+      "USER32!GetDlgItem",
+      "USER32!GetWindowLongPtrA",
+      "USER32!LoadCursorA",
+      "USER32!SendMessageA",
+      "USER32!SendMessageW",
+      "USER32!SetCursor",
+      "USER32!SetWindowLongPtrA"
+    ],
+    "matched_strings": [],
+    "name": "SetBrowseContext",
+    "prototype": "__int64 __fastcall(HWND hDlg, __int64, __int64, __int64, __int16 *, int)",
+    "rank_score": 4229,
+    "size": 1139,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CleanupRegistry",
+    "ea": "0x18000663c",
+    "function_file": "functions/18000663c_CleanupRegistry.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteKeyW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW"
+    ],
+    "matched_strings": [],
+    "name": "CleanupRegistry",
+    "prototype": "LSTATUS()",
+    "rank_score": 3841,
+    "size": 917,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 14,
+    "demangled": "cpGetPrivateProfileString",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_cpGetPrivateProfileString.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegGetValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!GetPrivateProfileStringW",
+      "msvcrt!_snwprintf_s",
+      "msvcrt!_wcsicmp",
+      "msvcrt!calloc",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "cpGetPrivateProfileString",
+    "prototype": "__int64 __fastcall(HKEY, const WCHAR *, const WCHAR *, void *, DWORD dwFlags, DWORD *, WCHAR *, int, __int64, DWORD *)",
+    "rank_score": 3253,
+    "size": 1690,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 2,
+    "demangled": "SQLConfigDriverCover",
+    "ea": "0x1800085c8",
+    "function_file": "functions/1800085c8_SQLConfigDriverCover.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!MultiByteToWideChar",
+      "KERNEL32!SetThreadErrorMode",
+      "USER32!LoadCursorA",
+      "USER32!SetCursor",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [
+      "ConfigDriver",
+      "ConfigDriverW"
+    ],
+    "name": "SQLConfigDriverCover",
+    "prototype": "__int64 __fastcall(HWND hWnd, unsigned __int16, const WCHAR *, const WCHAR *, LPWSTR lpWideCharStr, unsigned __int16, __int16 *)",
+    "rank_score": 3140,
+    "size": 1556,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 4,
+    "demangled": "ConfigDataSourceW",
+    "ea": "0x180007c0c",
+    "function_file": "functions/180007c0c_ConfigDataSourceW.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!SetThreadErrorMode",
+      "USER32!LoadCursorA",
+      "USER32!SetCursor"
+    ],
+    "matched_strings": [
+      "ConfigDSN",
+      "ConfigDSNW"
+    ],
+    "name": "ConfigDataSourceW",
+    "prototype": "__int64 __fastcall(HWND hWnd, unsigned __int16, const wchar_t *, __int64)",
+    "rank_score": 2739,
+    "size": 1202,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "AddDriverW",
+    "ea": "0x180007628",
+    "function_file": "functions/180007628_AddDriverW.md",
+    "matched_imports": [
+      "KERNEL32!WritePrivateProfileStringW",
+      "msvcrt!_waccess",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wmakepath_s",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!malloc",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [
+      "Installed",
+      "Installed"
+    ],
+    "name": "AddDriverW",
+    "prototype": "__int64 __fastcall(wchar_t *String1, wchar_t *, wchar_t *, unsigned __int16, _WORD *, __int16, int *)",
+    "rank_score": 2716,
+    "size": 1501,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "LoadDataSources",
+    "ea": "0x180005530",
+    "function_file": "functions/180005530_LoadDataSources.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "USER32!EnableWindow",
+      "USER32!SendMessageW",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "LoadDataSources",
+    "prototype": "LSTATUS __fastcall(HWND)",
+    "rank_score": 2435,
+    "size": 1461,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "AddLvDriverExtra",
+    "ea": "0x18000a66c",
+    "function_file": "functions/18000a66c_AddLvDriverExtra.md",
+    "matched_imports": [
+      "KERNEL32!FileTimeToLocalFileTime",
+      "KERNEL32!FileTimeToSystemTime",
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "KERNEL32!GetDateFormatW",
+      "KERNEL32!GetThreadLocale",
+      "USER32!CharUpperBuffW",
+      "USER32!SendMessageW",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "AddLvDriverExtra",
+    "prototype": "__int64 __fastcall(HWND, const wchar_t *, int)",
+    "rank_score": 2419,
+    "size": 977,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "SaveFDSNPageProc",
+    "ea": "0x180004800",
+    "function_file": "functions/180004800_SaveFDSNPageProc.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "USER32!GetParent",
+      "USER32!GetWindowLongPtrW",
+      "USER32!PostMessageW",
+      "USER32!SendMessageW",
+      "USER32!SetWindowLongPtrW",
+      "msvcrt!_close",
+      "msvcrt!_errno",
+      "msvcrt!_wopen",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "SaveFDSNPageProc",
+    "prototype": "__int64 __fastcall(HWND hWnd, int, int, LONG_PTR)",
+    "rank_score": 2233,
+    "size": 758,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 17,
+    "demangled": "SQLGetPrivateProfileStringCover",
+    "ea": "0x1800017c0",
+    "function_file": "functions/1800017c0_SQLGetPrivateProfileStringCover.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!_ltow_s",
+      "msvcrt!_wcsicmp",
+      "msvcrt!calloc",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "SQLGetPrivateProfileStringCover",
+    "prototype": "unsigned __int64 __fastcall(const WCHAR *, const WCHAR *, void *, WCHAR *, int, wchar_t *String1)",
+    "rank_score": 2042,
+    "size": 1070,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "VerifyFileDSN",
+    "ea": "0x180002f80",
+    "function_file": "functions/180002f80_VerifyFileDSN.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ODBC32.DLL",
+      "ODBC32.DLL"
+    ],
+    "name": "VerifyFileDSN",
+    "prototype": "__int64 __fastcall(HWND hWnd, __int64, __int16, __int16)",
+    "rank_score": 1902,
+    "size": 681,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 9,
+    "demangled": "DoMessage",
+    "ea": "0x1800080c4",
+    "function_file": "functions/1800080c4_DoMessage.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "USER32!GetDC",
+      "USER32!GetDesktopWindow",
+      "USER32!GetParent",
+      "USER32!GetWindowTextW",
+      "USER32!MessageBoxW",
+      "USER32!ReleaseDC"
+    ],
+    "matched_strings": [
+      "gdi32.dll"
+    ],
+    "name": "DoMessage",
+    "prototype": "int __fastcall(HWND hWnd, LPCWSTR lpText, UINT uType)",
+    "rank_score": 1866,
+    "size": 367,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "EnumFolderObjects",
+    "ea": "0x180010140",
+    "function_file": "functions/180010140_EnumFolderObjects.md",
+    "matched_imports": [
+      "SHELL32!SHGetDesktopFolder",
+      "USER32!SendMessageW",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wcsnicmp",
+      "msvcrt!_wsplitpath_s"
+    ],
+    "matched_strings": [],
+    "name": "EnumFolderObjects",
+    "prototype": "__int64 __fastcall(HWND, __int64, wchar_t *, int, __int64, int, void *Buf2)",
+    "rank_score": 1822,
+    "size": 1312,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CreateBrowseDropdown",
+    "ea": "0x18000ffac",
+    "function_file": "functions/18000ffac_CreateBrowseDropdown.md",
+    "matched_imports": [
+      "SHELL32!SHGetDesktopFolder",
+      "SHELL32!SHGetMalloc",
+      "SHELL32!SHGetSpecialFolderLocation",
+      "USER32!GetDlgItem",
+      "USER32!GetWindowLongPtrW",
+      "USER32!LoadCursorA",
+      "USER32!SendMessageW",
+      "USER32!SetCursor"
+    ],
+    "matched_strings": [],
+    "name": "CreateBrowseDropdown",
+    "prototype": "__int64 __fastcall(HWND hwnd)",
+    "rank_score": 1809,
+    "size": 397,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "GetFileVersion",
+    "ea": "0x1800052b8",
+    "function_file": "functions/1800052b8_GetFileVersion.md",
+    "matched_imports": [
+      "KERNEL32!VerLanguageNameW",
+      "VERSION!GetFileVersionInfoSizeW",
+      "VERSION!GetFileVersionInfoW",
+      "VERSION!VerQueryValueW",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [
+      "CompanyName"
+    ],
+    "name": "GetFileVersion",
+    "prototype": "__int64 __fastcall(LPCWSTR lptstrFilename, wchar_t *, int)",
+    "rank_score": 1662,
+    "size": 615,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "RemoveDrvrDSNs",
+    "ea": "0x180006db8",
+    "function_file": "functions/180006db8_RemoveDrvrDSNs.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "RemoveDrvrDSNs",
+    "prototype": "__int64 __fastcall(HWND hWnd, HKEY hKey, wchar_t *String1)",
+    "rank_score": 1631,
+    "size": 1087,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "AboutPageProc",
+    "ea": "0x18000a3b0",
+    "function_file": "functions/18000a3b0_AboutPageProc.md",
+    "matched_imports": [
+      "KERNEL32!GetSystemDirectoryW",
+      "USER32!GetDlgItem",
+      "USER32!LoadStringW",
+      "USER32!SendMessageW"
+    ],
+    "matched_strings": [],
+    "name": "AboutPageProc",
+    "prototype": "__int64 __fastcall(HWND, const CHAR *, UINT, __int64)",
+    "rank_score": 1623,
+    "size": 692,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DetectDriverAvailbility",
+    "ea": "0x180005108",
+    "function_file": "functions/180005108_DetectDriverAvailbility.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "DetectDriverAvailbility",
+    "prototype": "LSTATUS __fastcall(LPCWSTR lpSubKey, _DWORD *)",
+    "rank_score": 1614,
+    "size": 256,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SQLWriteDSNToIniCover",
+    "ea": "0x180009e8c",
+    "function_file": "functions/180009e8c_SQLWriteDSNToIniCover.md",
+    "matched_imports": [
+      "KERNEL32!WritePrivateProfileStringW",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "SQLWriteDSNToIniCover",
+    "prototype": "_BOOL8 __fastcall(wchar_t *lpAppName, LPCWSTR lpszString)",
+    "rank_score": 1614,
+    "size": 612,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "CenterDlg",
+    "ea": "0x18001450c",
+    "function_file": "functions/18001450c_CenterDlg.md",
+    "matched_imports": [
+      "USER32!GetParent",
+      "USER32!GetSystemMetrics",
+      "USER32!GetWindowRect",
+      "USER32!MoveWindow"
+    ],
+    "matched_strings": [],
+    "name": "CenterDlg",
+    "prototype": "BOOL __fastcall(HWND hWnd)",
+    "rank_score": 1611,
+    "size": 297,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180007394",
+    "function_file": "functions/180007394_DllMain.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!DisableThreadLibraryCalls",
+      "KERNEL32!FreeLibrary",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [
+      "odbcint.dll",
+      "ODBC Installer"
+    ],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 1527,
+    "size": 298,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ConfigureTrans",
+    "ea": "0x180004e80",
+    "function_file": "functions/180004e80_ConfigureTrans.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!SetThreadErrorMode",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [
+      "ConfigTranslator"
+    ],
+    "name": "ConfigureTrans",
+    "prototype": "__int64 __fastcall(HWND hWnd, STRSAFE_LPCWSTR pszSrc, __int64)",
+    "rank_score": 1284,
+    "size": 641,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ValidateFile",
+    "ea": "0x18000e97c",
+    "function_file": "functions/18000e97c_ValidateFile.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError",
+      "KERNEL32!OutputDebugStringW",
+      "KERNEL32!SetFileInformationByHandle"
+    ],
+    "matched_strings": [
+      "ODBC: ValidateFile cleanup failed (non-critical) - Path: %s, Error: 0x%08X (%u)\n"
+    ],
+    "name": "ValidateFile",
+    "prototype": "__int64 __fastcall(HWND hWnd, __int64, int, int)",
+    "rank_score": 1259,
+    "size": 279,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "GetShell32Procs",
+    "ea": "0x180010cdc",
+    "function_file": "functions/180010cdc_GetShell32Procs.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW",
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [
+      "shell32.dll"
+    ],
+    "name": "GetShell32Procs",
+    "prototype": "FARPROC __fastcall(LPCSTR lpProcName, const WCHAR *)",
+    "rank_score": 1255,
+    "size": 221,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "SQLCreateDataSourceCover",
+    "ea": "0x18000295c",
+    "function_file": "functions/18000295c_SQLCreateDataSourceCover.md",
+    "matched_imports": [
+      "USER32!IsWindow",
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [],
+    "name": "SQLCreateDataSourceCover",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1241,
+    "size": 884,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180002594",
+    "function_file": "functions/180002594_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CPRegDeleteKey",
+    "ea": "0x1800137e4",
+    "function_file": "functions/1800137e4_CPRegDeleteKey.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteKeyW",
+      "ADVAPI32!RegEnumKeyExW",
+      "ADVAPI32!RegOpenKeyExW",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "CPRegDeleteKey",
+    "prototype": "LSTATUS __fastcall(HKEY, const WCHAR *)",
+    "rank_score": 1215,
+    "size": 249,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "AddTranslator",
+    "ea": "0x180006184",
+    "function_file": "functions/180006184_AddTranslator.md",
+    "matched_imports": [
+      "msvcrt!_waccess",
+      "msvcrt!_wmakepath_s",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [
+      "Installed"
+    ],
+    "name": "AddTranslator",
+    "prototype": "__int64 __fastcall(__int64, WCHAR *, wchar_t *, wchar_t *, unsigned __int16, _WORD *, __int16, int *)",
+    "rank_score": 1073,
+    "size": 1199,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "ReadFileDSNW",
+    "ea": "0x180012e90",
+    "function_file": "functions/180012e90_ReadFileDSNW.md",
+    "matched_imports": [
+      "KERNEL32!GetPrivateProfileStringW",
+      "msvcrt!_wcsicmp",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "ReadFileDSNW",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, const WCHAR *, const WCHAR *, WCHAR *lpReturnedString, unsigned __int16, _WORD *)",
+    "rank_score": 1036,
+    "size": 790,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SaveConnStructToFileDSN",
+    "ea": "0x180013270",
+    "function_file": "functions/180013270_SaveConnStructToFileDSN.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW",
+      "msvcrt!_waccess"
+    ],
+    "matched_strings": [],
+    "name": "SaveConnStructToFileDSN",
+    "prototype": "__int64 __fastcall(HWND hWnd, __int64, __int64, const wchar_t *, _QWORD *)",
+    "rank_score": 1033,
+    "size": 605,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SQLInstallDriverW",
+    "ea": "0x180009280",
+    "function_file": "functions/180009280_SQLInstallDriverW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallDriverW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszInfFile, LPCWSTR lpszDriver, LPWSTR lpszPath, WORD cchPathMax, WORD *pcchPathOut)",
+    "rank_score": 1028,
+    "size": 291,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 9,
+    "demangled": "cpWritePrivateProfileString",
+    "ea": "0x180013fa8",
+    "function_file": "functions/180013fa8_cpWritePrivateProfileString.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "cpWritePrivateProfileString",
+    "prototype": "__int64 __fastcall(HKEY hKey, __int64, const WCHAR *, DWORD, BYTE *lpData, __int64)",
+    "rank_score": 1028,
+    "size": 478,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLInstallODBCW",
+    "ea": "0x1800093b0",
+    "function_file": "functions/1800093b0_SQLInstallODBCW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallODBCW",
+    "prototype": "BOOL __stdcall(HWND, LPCWSTR, LPCWSTR, LPCWSTR)",
+    "rank_score": 1024,
+    "size": 173,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SQLRemoveDSNFromIniCover",
+    "ea": "0x1800097d0",
+    "function_file": "functions/1800097d0_SQLRemoveDSNFromIniCover.md",
+    "matched_imports": [
+      "KERNEL32!GetPrivateProfileStringW",
+      "KERNEL32!WritePrivateProfileStringW",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "SQLRemoveDSNFromIniCover",
+    "prototype": "__int64 __fastcall(LPCWSTR lpAppName)",
+    "rank_score": 1021,
+    "size": 390,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "GetSelFile",
+    "ea": "0x180010a4c",
+    "function_file": "functions/180010a4c_GetSelFile.md",
+    "matched_imports": [
+      "USER32!GetDlgItem",
+      "USER32!GetWindowTextW",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!_wstat"
+    ],
+    "matched_strings": [],
+    "name": "GetSelFile",
+    "prototype": "__int64 __fastcall(HWND hDlg, __int64, int, wchar_t *, unsigned int)",
+    "rank_score": 1015,
+    "size": 647,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GetFilename",
+    "ea": "0x180005fd4",
+    "function_file": "functions/180005fd4_GetFilename.md",
+    "matched_imports": [
+      "msvcrt!_wcsnicmp",
+      "msvcrt!_wmakepath_s",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "GetFilename",
+    "prototype": "__int64 __fastcall(wchar_t *String1, wchar_t *String2, STRSAFE_LPWSTR pszDest, __int64, STRSAFE_LPWSTR pszDesta)",
+    "rank_score": 1010,
+    "size": 423,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "DetermineSel2",
+    "ea": "0x18001463c",
+    "function_file": "functions/18001463c_DetermineSel2.md",
+    "matched_imports": [
+      "USER32!SendMessageW"
+    ],
+    "matched_strings": [],
+    "name": "DetermineSel2",
+    "prototype": "__int64 __fastcall(HWND hWnd, __int64, int, __int64, int, __int64, int, _QWORD *)",
+    "rank_score": 1009,
+    "size": 367,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetRegisteredLocation",
+    "ea": "0x1800115ac",
+    "function_file": "functions/1800115ac_GetRegisteredLocation.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegQueryValueExA",
+      "KERNEL32!ExpandEnvironmentStringsA"
+    ],
+    "matched_strings": [
+      "CLSID\\{ADB880A6-D8FF-11CF-9377-00AA003B7A11}\\InprocServer32"
+    ],
+    "name": "GetRegisteredLocation",
+    "prototype": "__int64 __fastcall(LPSTR lpDst)",
+    "rank_score": 875,
+    "size": 287,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetShellFilesDir",
+    "ea": "0x180013998",
+    "function_file": "functions/180013998_GetShellFilesDir.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegGetValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!GetSystemDirectoryW"
+    ],
+    "matched_strings": [
+      "CommonFilesDir"
+    ],
+    "name": "GetShellFilesDir",
+    "prototype": "__int64 __fastcall(LPWSTR lpBuffer, UINT uSize)",
+    "rank_score": 864,
+    "size": 195,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "RemoveDriver",
+    "ea": "0x180006afc",
+    "function_file": "functions/180006afc_RemoveDriver.md",
+    "matched_imports": [
+      "KERNEL32!WritePrivateProfileStringW",
+      "msvcrt!_wcsicmp",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "RemoveDriver",
+    "prototype": "__int64 __fastcall(HWND hWnd, wchar_t *String1, int, char *)",
+    "rank_score": 828,
+    "size": 691,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BrowseForFile",
+    "ea": "0x180014394",
+    "function_file": "functions/180014394_BrowseForFile.md",
+    "matched_imports": [
+      "COMDLG32!GetOpenFileNameW",
+      "COMDLG32!GetSaveFileNameW",
+      "USER32!LoadStringW"
+    ],
+    "matched_strings": [],
+    "name": "BrowseForFile",
+    "prototype": "BOOL __fastcall(HWND, WCHAR *, __int64, UINT, UINT uID, int, const WCHAR *)",
+    "rank_score": 827,
+    "size": 370,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "LoadLibraryPD",
+    "ea": "0x180013c7c",
+    "function_file": "functions/180013c7c_LoadLibraryPD.md",
+    "matched_imports": [
+      "KERNEL32!LoadLibraryExW",
+      "msvcrt!_snwprintf_s",
+      "msvcrt!_wsplitpath_s"
+    ],
+    "matched_strings": [],
+    "name": "LoadLibraryPD",
+    "prototype": "HMODULE __fastcall(LPCWSTR lpLibFileName, __int64, __int64, __int64)",
+    "rank_score": 819,
+    "size": 304,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ValidateTrace",
+    "ea": "0x18000ea9c",
+    "function_file": "functions/18000ea9c_ValidateTrace.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "msvcrt!_wmakepath_s",
+      "msvcrt!_wsplitpath_s"
+    ],
+    "matched_strings": [],
+    "name": "ValidateTrace",
+    "prototype": "_BOOL8 __fastcall(wchar_t *FullPath)",
+    "rank_score": 819,
+    "size": 376,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 4,
+    "demangled": "LoadDriversEx",
+    "ea": "0x18000d208",
+    "function_file": "functions/18000d208_LoadDriversEx.md",
+    "matched_imports": [
+      "USER32!EnableWindow",
+      "USER32!SendMessageW",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "LoadDriversEx",
+    "prototype": "__int64 __fastcall(HWND hWnd, UINT, void (__fastcall *)(HWND, _QWORD, const WCHAR *))",
+    "rank_score": 817,
+    "size": 422,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "LoadListTitles",
+    "ea": "0x18000d3b4",
+    "function_file": "functions/18000d3b4_LoadListTitles.md",
+    "matched_imports": [
+      "USER32!GetWindowLongPtrW",
+      "USER32!LoadStringW",
+      "USER32!SendMessageW",
+      "USER32!SetWindowLongPtrW"
+    ],
+    "matched_strings": [],
+    "name": "LoadListTitles",
+    "prototype": "__int64 __fastcall(HWND hWnd, UINT uID)",
+    "rank_score": 817,
+    "size": 324,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "GetFileDsnDir",
+    "ea": "0x180012c98",
+    "function_file": "functions/180012c98_GetFileDsnDir.md",
+    "matched_imports": [
+      "SHELL32!SHGetSpecialFolderPathW",
+      "msvcrt!_waccess",
+      "msvcrt!_wstat"
+    ],
+    "matched_strings": [],
+    "name": "GetFileDsnDir",
+    "prototype": "int __fastcall(LPWSTR lpBuffer, int uSize)",
+    "rank_score": 813,
+    "size": 495,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IsODBCAD32",
+    "ea": "0x180008348",
+    "function_file": "functions/180008348_IsODBCAD32.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleFileNameW",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wsplitpath_s"
+    ],
+    "matched_strings": [],
+    "name": "IsODBCAD32",
+    "prototype": "_BOOL8()",
+    "rank_score": 805,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180002178",
+    "function_file": "functions/180002178_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "BOOL __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "LoadDM",
+    "ea": "0x18000d0f0",
+    "function_file": "functions/18000d0f0_LoadDM.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ODBC32.DLL",
+      "ODBC32.DLL"
+    ],
+    "name": "LoadDM",
+    "prototype": "__int64 __fastcall(HWND hWnd, __int64, __int64, __int64)",
+    "rank_score": 698,
+    "size": 248,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 7,
+    "demangled": "HtmlHelpA",
+    "ea": "0x1800116d4",
+    "function_file": "functions/1800116d4_HtmlHelpA.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExA"
+    ],
+    "matched_strings": [],
+    "name": "HtmlHelpA",
+    "prototype": "HWND __stdcall(HWND hwndCaller, LPCSTR pszFile, UINT uCommand, DWORD_PTR dwData)",
+    "rank_score": 634,
+    "size": 270,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "WriteFileDSNW",
+    "ea": "0x1800136b0",
+    "function_file": "functions/1800136b0_WriteFileDSNW.md",
+    "matched_imports": [
+      "KERNEL32!WritePrivateProfileStringW"
+    ],
+    "matched_strings": [],
+    "name": "WriteFileDSNW",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, const WCHAR *, const WCHAR *, const WCHAR *lpString)",
+    "rank_score": 630,
+    "size": 299,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "__report_rangecheckfailure",
+    "ea": "0x180002368",
+    "function_file": "functions/180002368_report_rangecheckfailure.md",
+    "matched_imports": [
+      "ntdll!RtlCaptureContext",
+      "ntdll!RtlLookupFunctionEntry",
+      "ntdll!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_rangecheckfailure",
+    "prototype": "void __noreturn()",
+    "rank_score": 629,
+    "size": 294,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SQLInstallTranslatorCover",
+    "ea": "0x180009464",
+    "function_file": "functions/180009464_SQLInstallTranslatorCover.md",
+    "matched_imports": [
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallTranslatorCover",
+    "prototype": "_BOOL8 __fastcall(_WORD *, WCHAR *, wchar_t *, wchar_t *, unsigned __int16, char *, __int16, int *)",
+    "rank_score": 628,
+    "size": 412,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DisplayInstallerError",
+    "ea": "0x18000b850",
+    "function_file": "functions/18000b850_DisplayInstallerError.md",
+    "matched_imports": [
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [],
+    "name": "DisplayInstallerError",
+    "prototype": "__int16 __fastcall(HWND hWnd)",
+    "rank_score": 627,
+    "size": 355,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 17,
+    "demangled": "GWConvertToUnicode",
+    "ea": "0x1800138e4",
+    "function_file": "functions/1800138e4_GWConvertToUnicode.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!MultiByteToWideChar",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "GWConvertToUnicode",
+    "prototype": "__int64 __fastcall(LPCCH lpMultiByteStr, WCHAR **, unsigned int)",
+    "rank_score": 620,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "SQLGetTranslator",
+    "ea": "0x18000f100",
+    "function_file": "functions/18000f100_SQLGetTranslator.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "SQLGetTranslator",
+    "prototype": "BOOL __stdcall(HWND hwnd, LPSTR lpszName, WORD cchNameMax, WORD *pcchNameOut, LPSTR lpszPath, WORD cchPathMax, WORD *pcchPathOut, DWORD *pvOption)",
+    "rank_score": 620,
+    "size": 412,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "CpanelError",
+    "ea": "0x18000b784",
+    "function_file": "functions/18000b784_CpanelError.md",
+    "matched_imports": [
+      "USER32!LoadStringW",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [],
+    "name": "CpanelError",
+    "prototype": "int __fastcall(HWND hWnd, UINT, UINT, __int64, int)",
+    "rank_score": 619,
+    "size": 198,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ValidateFileDSNName",
+    "ea": "0x1800135e4",
+    "function_file": "functions/1800135e4_ValidateFileDSNName.md",
+    "matched_imports": [
+      "msvcrt!_errno",
+      "msvcrt!_waccess"
+    ],
+    "matched_strings": [],
+    "name": "ValidateFileDSNName",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *)",
+    "rank_score": 617,
+    "size": 198,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SQLPostInstallerErrorW",
+    "ea": "0x180004db0",
+    "function_file": "functions/180004db0_SQLPostInstallerErrorW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "SQLPostInstallerErrorW",
+    "prototype": "SQLRETURN __stdcall(DWORD dwErrorCode, LPCWSTR lpszErrorMsg)",
+    "rank_score": 616,
+    "size": 200,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreateFileWithUnicodeBOM",
+    "ea": "0x1800129e0",
+    "function_file": "functions/1800129e0_CreateFileWithUnicodeBOM.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "CreateFileWithUnicodeBOM",
+    "prototype": "HANDLE __fastcall(const WCHAR *)",
+    "rank_score": 613,
+    "size": 145,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "IsPerfCountersEnabledOnPlatform(PlatformEnum)",
+    "ea": "0x18001181c",
+    "function_file": "functions/18001181c_IsPerfCountersEnabledOnPlatform_PlatformEnum.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegGetValueW",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?IsPerfCountersEnabledOnPlatform@@YAHW4PlatformEnum@@@Z",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 613,
+    "size": 201,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "PrivateDriverRootInitialized",
+    "ea": "0x180013f00",
+    "function_file": "functions/180013f00_PrivateDriverRootInitialized.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleFileNameW",
+      "msvcrt!_snwprintf_s",
+      "msvcrt!wcsrchr"
+    ],
+    "matched_strings": [],
+    "name": "PrivateDriverRootInitialized",
+    "prototype": "__int64 __fastcall(HMODULE)",
+    "rank_score": 609,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IsSamePath",
+    "ea": "0x1800069d8",
+    "function_file": "functions/1800069d8_IsSamePath.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wfullpath"
+    ],
+    "matched_strings": [],
+    "name": "IsSamePath",
+    "prototype": "_BOOL8 __fastcall(wchar_t *Path, wchar_t *)",
+    "rank_score": 607,
+    "size": 286,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CpCreateDataSource",
+    "ea": "0x18000b5f0",
+    "function_file": "functions/18000b5f0_CpCreateDataSource.md",
+    "matched_imports": [
+      "COMCTL32!PropertySheetW",
+      "USER32!SetFocus"
+    ],
+    "matched_strings": [],
+    "name": "CpCreateDataSource",
+    "prototype": "__int64 __fastcall(HWND hWnd, WORD)",
+    "rank_score": 451,
+    "size": 397,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SQLRemoveDefaultDataSource",
+    "ea": "0x1800099a0",
+    "function_file": "functions/1800099a0_SQLRemoveDefaultDataSource.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLRemoveDefaultDataSource",
+    "prototype": "BOOL __stdcall()",
+    "rank_score": 429,
+    "size": 225,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateDataSourceUI",
+    "ea": "0x1800033bc",
+    "function_file": "functions/1800033bc_CreateDataSourceUI.md",
+    "matched_imports": [
+      "COMCTL32!PropertySheetW",
+      "USER32!GetDesktopWindow"
+    ],
+    "matched_strings": [],
+    "name": "CreateDataSourceUI",
+    "prototype": "__int64 __fastcall(HWND, _QWORD *)",
+    "rank_score": 428,
+    "size": 427,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SQLConfigDataSourceW",
+    "ea": "0x180008570",
+    "function_file": "functions/180008570_SQLConfigDataSourceW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLConfigDataSourceW",
+    "prototype": "BOOL __stdcall(HWND hwndParent, WORD fRequest, LPCWSTR lpszDriver, LPCWSTR lpszAttributes)",
+    "rank_score": 425,
+    "size": 82,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "EnforceDSNExtension",
+    "ea": "0x180012b14",
+    "function_file": "functions/180012b14_EnforceDSNExtension.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wsplitpath_s"
+    ],
+    "matched_strings": [],
+    "name": "EnforceDSNExtension",
+    "prototype": "__int64 __fastcall(__int64, wchar_t *, size_t)",
+    "rank_score": 423,
+    "size": 380,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLConfigDriverW",
+    "ea": "0x180008bf0",
+    "function_file": "functions/180008bf0_SQLConfigDriverW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLConfigDriverW",
+    "prototype": "BOOL __stdcall(HWND hwndParent, WORD fRequest, LPCWSTR lpszDriver, LPCWSTR lpszArgs, LPWSTR lpszMsg, WORD cchMsgMax, WORD *pcchMsgOut)",
+    "rank_score": 423,
+    "size": 121,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLReadFileDSNW",
+    "ea": "0x180009750",
+    "function_file": "functions/180009750_SQLReadFileDSNW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLReadFileDSNW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszFileName, LPCWSTR lpszAppName, LPCWSTR lpszKeyName, LPWSTR lpszString, WORD cchString, WORD *pcchString)",
+    "rank_score": 423,
+    "size": 119,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SQLSetConfigMode",
+    "ea": "0x180009d40",
+    "function_file": "functions/180009d40_SQLSetConfigMode.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLSetConfigMode",
+    "prototype": "BOOL __stdcall(UWORD wConfigMode)",
+    "rank_score": 423,
+    "size": 119,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLWriteFileDSNW",
+    "ea": "0x18000a150",
+    "function_file": "functions/18000a150_SQLWriteFileDSNW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLWriteFileDSNW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszFileName, LPCWSTR lpszAppName, LPCWSTR lpszKeyName, LPCWSTR lpszString)",
+    "rank_score": 423,
+    "size": 93,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SQLGetConfigMode",
+    "ea": "0x180008d50",
+    "function_file": "functions/180008d50_SQLGetConfigMode.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLGetConfigMode",
+    "prototype": "BOOL __stdcall(UWORD *pwConfigMode)",
+    "rank_score": 422,
+    "size": 100,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "SQLWritePrivateProfileStringW",
+    "ea": "0x18000a320",
+    "function_file": "functions/18000a320_SQLWritePrivateProfileStringW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLWritePrivateProfileStringW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszSection, LPCWSTR lpszEntry, LPCWSTR lpszString, LPCWSTR lpszFilename)",
+    "rank_score": 422,
+    "size": 82,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SQLCreateDataSourceW",
+    "ea": "0x180002d20",
+    "function_file": "functions/180002d20_SQLCreateDataSourceW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLCreateDataSourceW",
+    "prototype": "BOOL __stdcall(HWND hwndParent, LPCWSTR lpszDSN)",
+    "rank_score": 418,
+    "size": 235,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SQLGetInstalledDriversW",
+    "ea": "0x180008dc0",
+    "function_file": "functions/180008dc0_SQLGetInstalledDriversW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLGetInstalledDriversW",
+    "prototype": "BOOL __stdcall(LPWSTR lpszBuf, WORD cchBufMax, WORD *pcchBufOut)",
+    "rank_score": 416,
+    "size": 178,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SQLInstallDriverManagerW",
+    "ea": "0x1800091f0",
+    "function_file": "functions/1800091f0_SQLInstallDriverManagerW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallDriverManagerW",
+    "prototype": "BOOL __stdcall(LPWSTR lpszPath, WORD cchPathMax, WORD *pcchPathOut)",
+    "rank_score": 416,
+    "size": 137,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SQLInstallTranslatorW",
+    "ea": "0x180009660",
+    "function_file": "functions/180009660_SQLInstallTranslatorW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallTranslatorW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszInfFile, LPCWSTR lpszTranslator, LPCWSTR lpszPathIn, LPWSTR lpszPathOut, WORD cchPathOutMax, WORD *pcchPathOut, WORD fRequest, LPDWORD lpdwUsageCount)",
+    "rank_score": 415,
+    "size": 134,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLGetTranslatorW",
+    "ea": "0x180008fc0",
+    "function_file": "functions/180008fc0_SQLGetTranslatorW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLGetTranslatorW",
+    "prototype": "BOOL __stdcall(HWND hwnd, LPWSTR lpszName, WORD cchNameMax, WORD *pcchNameOut, LPWSTR lpszPath, WORD cchPathMax, WORD *pcchPathOut, DWORD *pvOption)",
+    "rank_score": 414,
+    "size": 136,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SQLInstallerErrorW",
+    "ea": "0x180004d40",
+    "function_file": "functions/180004d40_SQLInstallerErrorW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallerErrorW",
+    "prototype": "SQLRETURN __stdcall(WORD iError, DWORD *pfErrorCode, LPWSTR lpszErrorMsg, WORD cchErrorMsgMax, WORD *pcchErrorMsg)",
+    "rank_score": 414,
+    "size": 94,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SQLRemoveDSNFromIniW",
+    "ea": "0x180009960",
+    "function_file": "functions/180009960_SQLRemoveDSNFromIniW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLRemoveDSNFromIniW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszDSN)",
+    "rank_score": 414,
+    "size": 58,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLCreateDataSourceExW",
+    "ea": "0x180002ce0",
+    "function_file": "functions/180002ce0_SQLCreateDataSourceExW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLCreateDataSourceExW",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 413,
+    "size": 58,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLInstallDriverExW",
+    "ea": "0x180009160",
+    "function_file": "functions/180009160_SQLInstallDriverExW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallDriverExW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszDriver, LPCWSTR lpszPathIn, LPWSTR lpszPathOut, WORD cchPathOutMax, WORD *pcchPathOut, WORD fRequest, LPDWORD lpdwUsageCount)",
+    "rank_score": 413,
+    "size": 123,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLRemoveDriverW",
+    "ea": "0x180009bd0",
+    "function_file": "functions/180009bd0_SQLRemoveDriverW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLRemoveDriverW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszDriver, BOOL fRemoveDSN, LPDWORD lpdwUsageCount)",
+    "rank_score": 413,
+    "size": 87,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLRemoveTranslatorW",
+    "ea": "0x180009cf0",
+    "function_file": "functions/180009cf0_SQLRemoveTranslatorW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLRemoveTranslatorW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszTranslator, LPDWORD lpdwUsageCount)",
+    "rank_score": 413,
+    "size": 73,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SQLWriteDSNToIniW",
+    "ea": "0x18000a100",
+    "function_file": "functions/18000a100_SQLWriteDSNToIniW.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLWriteDSNToIniW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszDSN, LPCWSTR lpszDriver)",
+    "rank_score": 413,
+    "size": 73,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SQLRemoveDriverManager",
+    "ea": "0x180009b80",
+    "function_file": "functions/180009b80_SQLRemoveDriverManager.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SQLRemoveDriverManager",
+    "prototype": "BOOL __stdcall(LPDWORD lpdwUsageCount)",
+    "rank_score": 412,
+    "size": 62,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "GetTargetDirectory",
+    "ea": "0x18000829c",
+    "function_file": "functions/18000829c_GetTargetDirectory.md",
+    "matched_imports": [
+      "KERNEL32!GetSystemDirectoryW",
+      "msvcrt!_wfullpath"
+    ],
+    "matched_strings": [],
+    "name": "GetTargetDirectory",
+    "prototype": "__int64 __fastcall(wchar_t *Buffer, unsigned __int16, _WORD *)",
+    "rank_score": 407,
+    "size": 163,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "LConvertToAnsi",
+    "ea": "0x180013a64",
+    "function_file": "functions/180013a64_LConvertToAnsi.md",
+    "matched_imports": [
+      "KERNEL32!WideCharToMultiByte",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "LConvertToAnsi",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, int, CHAR **, int, int *, char)",
+    "rank_score": 407,
+    "size": 447,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 9,
+    "demangled": "MemError",
+    "ea": "0x1800074c4",
+    "function_file": "functions/1800074c4_MemError.md",
+    "matched_imports": [
+      "USER32!GetActiveWindow",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [],
+    "name": "MemError",
+    "prototype": "int()",
+    "rank_score": 309,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "ODBCSendDlgItemMessage",
+    "ea": "0x180013ec4",
+    "function_file": "functions/180013ec4_ODBCSendDlgItemMessage.md",
+    "matched_imports": [
+      "USER32!GetDlgItem",
+      "USER32!SendMessageW"
+    ],
+    "matched_strings": [],
+    "name": "ODBCSendDlgItemMessage",
+    "prototype": "LRESULT __fastcall(HWND, int, UINT, WPARAM, LPARAM)",
+    "rank_score": 307,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "__delayLoadHelper2",
+    "ea": "0x1800149c0",
+    "function_file": "functions/1800149c0_delayLoadHelper2.md",
+    "matched_imports": [
+      "KERNEL32!DelayLoadFailureHook",
+      "KERNEL32!ResolveDelayLoadedAPI"
+    ],
+    "matched_strings": [],
+    "name": "__delayLoadHelper2",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 304,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "SetString",
+    "ea": "0x18000a378",
+    "function_file": "functions/18000a378_SetString.md",
+    "matched_imports": [
+      "USER32!LoadStringW"
+    ],
+    "matched_strings": [],
+    "name": "SetString",
+    "prototype": "int __fastcall(LPWSTR lpBuffer, int cchBufferMax, unsigned __int16)",
+    "rank_score": 227,
+    "size": 45,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 24,
+    "demangled": "FreeErrorQueue",
+    "ea": "0x180001740",
+    "function_file": "functions/180001740_FreeErrorQueue.md",
+    "matched_imports": [
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "FreeErrorQueue",
+    "prototype": "void *()",
+    "rank_score": 226,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 47,
+    "demangled": "OFree",
+    "ea": "0x180002940",
+    "function_file": "functions/180002940_OFree.md",
+    "matched_imports": [
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "OFree",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 226,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "init_Dll",
+    "ea": "0x180007594",
+    "function_file": "functions/180007594_init_Dll.md",
+    "matched_imports": [
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "init_Dll",
+    "prototype": "__int64()",
+    "rank_score": 225,
+    "size": 140,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SQLInstallTranslator",
+    "ea": "0x18000f600",
+    "function_file": "functions/18000f600_SQLInstallTranslator.md",
+    "matched_imports": [
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallTranslator",
+    "prototype": "BOOL __stdcall(LPCSTR lpszInfFile, LPCSTR lpszTranslator, LPCSTR lpszPathIn, LPSTR lpszPathOut, WORD cchPathOutMax, WORD *pcchPathOut, WORD fRequest, LPDWORD lpdwUsageCount)",
+    "rank_score": 219,
+    "size": 371,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "SQLInstallDriverEx",
+    "ea": "0x18000f3e0",
+    "function_file": "functions/18000f3e0_SQLInstallDriverEx.md",
+    "matched_imports": [
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallDriverEx",
+    "prototype": "BOOL __stdcall(LPCSTR lpszDriver, LPCSTR lpszPathIn, LPSTR lpszPathOut, WORD cchPathOutMax, WORD *pcchPathOut, WORD fRequest, LPDWORD lpdwUsageCount)",
+    "rank_score": 218,
+    "size": 321,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SQLConfigDriver",
+    "ea": "0x18000ecc0",
+    "function_file": "functions/18000ecc0_SQLConfigDriver.md",
+    "matched_imports": [
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "SQLConfigDriver",
+    "prototype": "BOOL __stdcall(HWND hwndParent, WORD fRequest, LPCSTR lpszDriver, LPCSTR lpszArgs, LPSTR lpszMsg, WORD cchMsgMax, WORD *pcchMsgOut)",
+    "rank_score": 217,
+    "size": 315,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SQLReadFileDSN",
+    "ea": "0x18000f930",
+    "function_file": "functions/18000f930_SQLReadFileDSN.md",
+    "matched_imports": [
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "SQLReadFileDSN",
+    "prototype": "BOOL __stdcall(LPCSTR lpszFileName, LPCSTR lpszAppName, LPCSTR lpszKeyName, LPSTR lpszString, WORD cchString, WORD *pcchString)",
+    "rank_score": 217,
+    "size": 377,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SQLGetInstalledDrivers",
+    "ea": "0x18000eea0",
+    "function_file": "functions/18000eea0_SQLGetInstalledDrivers.md",
+    "matched_imports": [
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "SQLGetInstalledDrivers",
+    "prototype": "BOOL __stdcall(LPSTR lpszBuf, WORD cchBufMax, WORD *pcchBufOut)",
+    "rank_score": 216,
+    "size": 190,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ListViewCompare",
+    "ea": "0x180010f40",
+    "function_file": "functions/180010f40_ListViewCompare.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "ListViewCompare",
+    "prototype": "int __fastcall(__int64, __int64)",
+    "rank_score": 215,
+    "size": 220,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLInstallDriverManager",
+    "ea": "0x18000f530",
+    "function_file": "functions/18000f530_SQLInstallDriverManager.md",
+    "matched_imports": [
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallDriverManager",
+    "prototype": "BOOL __stdcall(LPSTR lpszPath, WORD cchPathMax, WORD *pcchPathOut)",
+    "rank_score": 215,
+    "size": 165,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLInstallerError",
+    "ea": "0x18000f7d0",
+    "function_file": "functions/18000f7d0_SQLInstallerError.md",
+    "matched_imports": [
+      "msvcrt!calloc"
+    ],
+    "matched_strings": [],
+    "name": "SQLInstallerError",
+    "prototype": "SQLRETURN __stdcall(WORD iError, DWORD *pfErrorCode, LPSTR lpszErrorMsg, WORD cchErrorMsgMax, WORD *pcchErrorMsg)",
+    "rank_score": 215,
+    "size": 222,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ExpComDlgProc",
+    "ea": "0x1800147c0",
+    "function_file": "functions/1800147c0_ExpComDlgProc.md",
+    "matched_imports": [
+      "USER32!GetParent"
+    ],
+    "matched_strings": [],
+    "name": "ExpComDlgProc",
+    "prototype": "__int64 __fastcall(HWND, int, __int64, __int64)",
+    "rank_score": 212,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SQLWritePrivateProfileStringCover",
+    "ea": "0x18000a1b4",
+    "function_file": "functions/18000a1b4_SQLWritePrivateProfileStringCover.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "SQLWritePrivateProfileStringCover",
+    "prototype": "__int64 __fastcall(const WCHAR *, const WCHAR *, BYTE *, const wchar_t *)",
+    "rank_score": 208,
+    "size": 351,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SQLRemoveDriverCover",
+    "ea": "0x180009a88",
+    "function_file": "functions/180009a88_SQLRemoveDriverCover.md",
+    "matched_imports": [
+      "USER32!GetActiveWindow"
+    ],
+    "matched_strings": [],
+    "name": "SQLRemoveDriverCover",
+    "prototype": "__int64 __fastcall(wchar_t *String1, int, char *)",
+    "rank_score": 207,
+    "size": 228,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ODBCCreatePath",
+    "ea": "0x180013db4",
+    "function_file": "functions/180013db4_ODBCCreatePath.md",
+    "matched_imports": [
+      "KERNEL32!CreateDirectoryW"
+    ],
+    "matched_strings": [],
+    "name": "ODBCCreatePath",
+    "prototype": "__int64 __fastcall(WCHAR *)",
+    "rank_score": 205,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SQLValidDSNCover",
+    "ea": "0x180009dc0",
+    "function_file": "functions/180009dc0_SQLValidDSNCover.md",
+    "matched_imports": [
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SQLValidDSNCover",
+    "prototype": "_BOOL8 __fastcall(_WORD *)",
+    "rank_score": 205,
+    "size": 134,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ExtractFileName",
+    "ea": "0x180005210",
+    "function_file": "functions/180005210_ExtractFileName.md",
+    "matched_imports": [
+      "msvcrt!_wsplitpath_s"
+    ],
+    "matched_strings": [],
+    "name": "ExtractFileName",
+    "prototype": "HRESULT __fastcall(STRSAFE_LPWSTR pszDest, __int64, const wchar_t *)",
+    "rank_score": 204,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SetColumnWidth",
+    "ea": "0x18000dc18",
+    "function_file": "functions/18000dc18_SetColumnWidth.md",
+    "matched_imports": [
+      "USER32!SendMessageW"
+    ],
+    "matched_strings": [],
+    "name": "SetColumnWidth",
+    "prototype": "__int64 __fastcall(HWND hWnd, int)",
+    "rank_score": 204,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 42,
+    "demangled": "memset_0",
+    "ea": "0x180014aae",
+    "function_file": "functions/180014aae_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_GetOpenFileNameW",
+    "ea": "0x18000287d",
+    "function_file": "functions/18000287d_imp_load_GetOpenFileNameW.md",
+    "matched_imports": [
+      "COMDLG32!GetOpenFileNameW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_GetOpenFileNameW",
+    "prototype": "__int64()",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ODBCCreateFile",
+    "ea": "0x180014814",
+    "function_file": "functions/180014814_ODBCCreateFile.md",
+    "matched_imports": [
+      "KERNEL32!CreateFileW"
+    ],
+    "matched_strings": [],
+    "name": "ODBCCreateFile",
+    "prototype": "HANDLE __fastcall(const WCHAR *, DWORD)",
+    "rank_score": 112,
+    "size": 47,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_SHGetSpecialFolderPathW",
+    "ea": "0x18000288f",
+    "function_file": "functions/18000288f_imp_load_SHGetSpecialFolderPathW.md",
+    "matched_imports": [
+      "SHELL32!SHGetSpecialFolderPathW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_SHGetSpecialFolderPathW",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memcpy_0",
+    "ea": "0x180014aa2",
+    "function_file": "functions/180014aa2_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "GetPathFromIDList",
+    "ea": "0x1800109f4",
+    "function_file": "functions/1800109f4_GetPathFromIDList.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SHGetPathFromIDListW",
+      "SHGetPathFromIDListW"
+    ],
+    "name": "GetPathFromIDList",
+    "prototype": "__int64 (__fastcall *__fastcall(__int64, __int64))(__int64, __int64)",
+    "rank_score": 87,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 83,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180014ae0",
+    "function_file": "functions/180014ae0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 18,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180015010",
+    "function_file": "functions/180015010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 29,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 25,
+    "demangled": "StringCchCopyW",
+    "ea": "0x180002e14",
+    "function_file": "functions/180002e14_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 28,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 26,
+    "demangled": "StringCchPrintfW",
+    "ea": "0x180002e4c",
+    "function_file": "functions/180002e4c_StringCchPrintfW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchPrintfW",
+    "prototype": "HRESULT(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszFormat, ...)",
+    "rank_score": 28,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 42,
+    "demangled": "PostInstError",
+    "ea": "0x180004bac",
+    "function_file": "functions/180004bac_PostInstError.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PostInstError",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 26,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__tailMerge_comdlg32_dll",
+    "ea": "0x1800027ec",
+    "function_file": "functions/1800027ec_tailMerge_comdlg32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_comdlg32_dll",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 24,
+    "size": 121,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001f20",
+    "function_file": "functions/180001f20_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180014a20",
+    "function_file": "functions/180014a20_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_comctl32_dll",
+    "ea": "0x1800026a0",
+    "function_file": "functions/1800026a0_tailMerge_comctl32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_comctl32_dll",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 23,
+    "size": 121,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RemoveTranslator",
+    "ea": "0x180007200",
+    "function_file": "functions/180007200_RemoveTranslator.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RemoveTranslator",
+    "prototype": "__int64 __fastcall(const WCHAR *, _DWORD *)",
+    "rank_score": 21,
+    "size": 398,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001f64",
+    "function_file": "functions/180001f64_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, __int64 fdwReason, void *)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "SQLInstallDriver",
+    "ea": "0x18000f2b0",
+    "function_file": "functions/18000f2b0_SQLInstallDriver.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLInstallDriver",
+    "prototype": "BOOL __stdcall(LPCSTR lpszInfFile, LPCSTR lpszDriver, LPSTR lpszPath, WORD cchPathMax, WORD *pcchPathOut)",
+    "rank_score": 19,
+    "size": 296,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SetFileDsnDir",
+    "ea": "0x1800134d4",
+    "function_file": "functions/1800134d4_SetFileDsnDir.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetFileDsnDir",
+    "prototype": "__int64 __fastcall(wchar_t *lpData)",
+    "rank_score": 18,
+    "size": 216,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SQLConfigDataSourceCover",
+    "ea": "0x1800084c0",
+    "function_file": "functions/1800084c0_SQLConfigDataSourceCover.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLConfigDataSourceCover",
+    "prototype": "BOOL __fastcall(HWND, unsigned __int16, const wchar_t *, __int64)",
+    "rank_score": 17,
+    "size": 164,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SQLInstallDriverCover",
+    "ea": "0x180009050",
+    "function_file": "functions/180009050_SQLInstallDriverCover.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLInstallDriverCover",
+    "prototype": "_BOOL8 __fastcall(wchar_t *String1, wchar_t *, wchar_t *, unsigned __int16, __int16 *, __int16, int *)",
+    "rank_score": 17,
+    "size": 256,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "__tailMerge_shell32_dll",
+    "ea": "0x18000272b",
+    "function_file": "functions/18000272b_tailMerge_shell32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_shell32_dll",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 17,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SQLConfigDataSource",
+    "ea": "0x18000ec20",
+    "function_file": "functions/18000ec20_SQLConfigDataSource.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLConfigDataSource",
+    "prototype": "BOOL __stdcall(HWND hwndParent, WORD fRequest, LPCSTR lpszDriver, LPCSTR lpszAttributes)",
+    "rank_score": 16,
+    "size": 148,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLWriteFileDSN",
+    "ea": "0x18000fcd0",
+    "function_file": "functions/18000fcd0_SQLWriteFileDSN.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLWriteFileDSN",
+    "prototype": "BOOL __stdcall(LPCSTR lpszFileName, LPCSTR lpszAppName, LPCSTR lpszKeyName, LPCSTR lpszString)",
+    "rank_score": 15,
+    "size": 248,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLPostInstallerError",
+    "ea": "0x18000f8c0",
+    "function_file": "functions/18000f8c0_SQLPostInstallerError.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLPostInstallerError",
+    "prototype": "SQLRETURN __stdcall(DWORD dwErrorCode, LPCSTR lpszErrMsg)",
+    "rank_score": 14,
+    "size": 100,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__tailMerge_loadperf_dll",
+    "ea": "0x18000289b",
+    "function_file": "functions/18000289b_tailMerge_loadperf_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_loadperf_dll",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 14,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180014b20",
+    "function_file": "functions/180014b20_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "GetDisplayName",
+    "ea": "0x18001085c",
+    "function_file": "functions/18001085c_GetDisplayName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetDisplayName",
+    "prototype": "__int64 __fastcall(__int64, wchar_t *, unsigned int, _DWORD *, int *)",
+    "rank_score": 12,
+    "size": 278,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "LConvertToAnsiWordLengths",
+    "ea": "0x180013c2c",
+    "function_file": "functions/180013c2c_LConvertToAnsiWordLengths.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LConvertToAnsiWordLengths",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, unsigned __int16, CHAR **, unsigned __int16, _WORD *)",
+    "rank_score": 11,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SQLInstallODBC",
+    "ea": "0x18000f5e0",
+    "function_file": "functions/18000f5e0_SQLInstallODBC.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLInstallODBC",
+    "prototype": "BOOL __stdcall(HWND, LPCSTR, LPCSTR, LPCSTR)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SQLInstallTranslatorEx",
+    "ea": "0x18000f780",
+    "function_file": "functions/18000f780_SQLInstallTranslatorEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLInstallTranslatorEx",
+    "prototype": "BOOL __stdcall(LPCSTR lpszTranslator, LPCSTR lpszPathIn, LPSTR lpszPathOut, WORD cchPathOutMax, WORD *pcchPathOut, WORD fRequest, LPDWORD lpdwUsageCount)",
+    "rank_score": 11,
+    "size": 64,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SQLInstallTranslatorExW",
+    "ea": "0x180009610",
+    "function_file": "functions/180009610_SQLInstallTranslatorExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLInstallTranslatorExW",
+    "prototype": "BOOL __stdcall(LPCWSTR lpszTranslator, LPCWSTR lpszPathIn, LPWSTR lpszPathOut, WORD cchPathOutMax, WORD *pcchPathOut, WORD fRequest, LPDWORD lpdwUsageCount)",
+    "rank_score": 11,
+    "size": 64,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "StringCchCatW",
+    "ea": "0x180004afc",
+    "function_file": "functions/180004afc_StringCchCatW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCatW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 10,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SQLRemoveTranslatorCover",
+    "ea": "0x180009c30",
+    "function_file": "functions/180009c30_SQLRemoveTranslatorCover.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLRemoveTranslatorCover",
+    "prototype": "__int64 __fastcall(const WCHAR *, _DWORD *)",
+    "rank_score": 7,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "HandleQCContextHelp",
+    "ea": "0x1800147f0",
+    "function_file": "functions/1800147f0_HandleQCContextHelp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HandleQCContextHelp",
+    "prototype": "_BOOL8 __fastcall(__int64, int, __int64)",
+    "rank_score": 6,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ReleaseConnStruct",
+    "ea": "0x1800131ac",
+    "function_file": "functions/1800131ac_ReleaseConnStruct.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReleaseConnStruct",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 6,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MakePath",
+    "ea": "0x18000844c",
+    "function_file": "functions/18000844c_MakePath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MakePath",
+    "prototype": "int __fastcall(STRSAFE_LPWSTR pszDest, STRSAFE_LPCWSTR pszSrc, STRSAFE_LPCWSTR)",
+    "rank_score": 5,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "PostInstErrorMsgId",
+    "ea": "0x180004bdc",
+    "function_file": "functions/180004bdc_PostInstErrorMsgId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PostInstErrorMsgId",
+    "prototype": "__int64 __fastcall(int, int)",
+    "rank_score": 5,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLWriteDSNToIni",
+    "ea": "0x18000fc40",
+    "function_file": "functions/18000fc40_SQLWriteDSNToIni.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLWriteDSNToIni",
+    "prototype": "BOOL __stdcall(LPCSTR lpszDSN, LPCSTR lpszDriver)",
+    "rank_score": 5,
+    "size": 135,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLWritePrivateProfileString",
+    "ea": "0x18000fdd0",
+    "function_file": "functions/18000fdd0_SQLWritePrivateProfileString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLWritePrivateProfileString",
+    "prototype": "BOOL __stdcall(LPCSTR lpszSection, LPCSTR lpszEntry, LPCSTR lpszString, LPCSTR lpszFilename)",
+    "rank_score": 5,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "dnlen",
+    "ea": "0x18000fea8",
+    "function_file": "functions/18000fea8_dnlen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dnlen",
+    "prototype": "__int16 __fastcall(_BYTE *)",
+    "rank_score": 5,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLCreateDataSource",
+    "ea": "0x18000ee10",
+    "function_file": "functions/18000ee10_SQLCreateDataSource.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLCreateDataSource",
+    "prototype": "BOOL __stdcall(HWND hwndParent, LPCSTR lpszDSN)",
+    "rank_score": 4,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLRemoveDSNFromIni",
+    "ea": "0x18000fab0",
+    "function_file": "functions/18000fab0_SQLRemoveDSNFromIni.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLRemoveDSNFromIni",
+    "prototype": "BOOL __stdcall(LPCSTR lpszDSN)",
+    "rank_score": 4,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLRemoveDriver",
+    "ea": "0x18000fb00",
+    "function_file": "functions/18000fb00_SQLRemoveDriver.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLRemoveDriver",
+    "prototype": "BOOL __stdcall(LPCSTR lpszDriver, BOOL fRemoveDSN, LPDWORD lpdwUsageCount)",
+    "rank_score": 4,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SQLRemoveTranslator",
+    "ea": "0x18000fb70",
+    "function_file": "functions/18000fb70_SQLRemoveTranslator.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLRemoveTranslator",
+    "prototype": "BOOL __stdcall(LPCSTR lpszTranslator, LPDWORD lpdwUsageCount)",
+    "rank_score": 4,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCopyWorkerW",
+    "ea": "0x180002ea0",
+    "function_file": "functions/180002ea0_StringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 3,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CopyAdd",
+    "ea": "0x18000338c",
+    "function_file": "functions/18000338c_CopyAdd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyAdd",
+    "prototype": "__int64 __fastcall(_WORD *, _WORD *)",
+    "rank_score": 2,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "SQLCreateDataSourceEx",
+    "ea": "0x18000ee70",
+    "function_file": "functions/18000ee70_SQLCreateDataSourceEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SQLCreateDataSourceEx",
+    "prototype": "__int64()",
+    "rank_score": 0,
+    "size": 3,
+    "tags": []
+  }
+]

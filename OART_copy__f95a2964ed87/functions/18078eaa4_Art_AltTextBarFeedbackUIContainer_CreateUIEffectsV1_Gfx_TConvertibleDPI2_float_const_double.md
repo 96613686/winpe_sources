@@ -1,0 +1,616 @@
+# Art::AltTextBarFeedbackUIContainer::CreateUIEffectsV1(Gfx::TConvertibleDPI2<float> const &,double)
+
+- ea: `0x18078eaa4`
+- end: `0x18078f227`
+- name: `?CreateUIEffectsV1@AltTextBarFeedbackUIContainer@Art@@AEAA?AV?$TCntPtr@UIEffectContainer@GEL@@@Ofc@@AEBV?$TConvertibleDPI2@M@Gfx@@N@Z`
+- size: `1923`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `21`
+- tags: `registry_config`
+
+## callers
+
+- `0x1802ffc40`
+
+## callees
+
+- `0x1800d1790`
+- `0x1800ef520`
+- `0x18010ccd0`
+- `0x18010de00`
+- `0x18012cf00`
+- `0x18012d0b8`
+- `0x1801518a0`
+- `0x180278c20`
+- `0x180278e70`
+- `0x180279050`
+- `0x18029d250`
+- `0x180301178`
+- `0x1803011b4`
+- `0x180301368`
+- `0x1803014a0`
+- `0x1806bc4f0`
+- `0x1806bc6a8`
+- `0x1806d19bc`
+- `0x18078eaa4`
+- `0x18078f938`
+- `0x18078fa34`
+
+## import_xrefs
+
+- `gfx!?Create@IEffectFilledPath@GEL@@SA?AV?$TCntPtr@UIEffectFilledPath@GEL@@@Ofc@@AEBUIPath@2@AEBUIBrush@2@PEBU?$TAffine3x3@N@Math@@@Z` at `0x18078f00e`
+- `gfx!?Create@IEffectFilledPath@GEL@@SA?AV?$TCntPtr@UIEffectFilledPath@GEL@@@Ofc@@AEBUIPath@2@AEBUIBrush@2@PEBU?$TAffine3x3@N@Math@@@Z` at `0x18078f00e`
+- `gfx!?Create@IRoundedRectanglePath@GEL@@SA?AV?$TCntPtr@UIPath@GEL@@@Ofc@@AEBU?$TRect@N@Math@@AEBU?$TVector2@N@6@@Z` at `0x18078ef25`
+- `gfx!?Create@IRoundedRectanglePath@GEL@@SA?AV?$TCntPtr@UIPath@GEL@@@Ofc@@AEBU?$TRect@N@Math@@AEBU?$TVector2@N@6@@Z` at `0x18078eff5`
+- `gfx!?Create@IRoundedRectanglePath@GEL@@SA?AV?$TCntPtr@UIPath@GEL@@@Ofc@@AEBU?$TRect@N@Math@@AEBU?$TVector2@N@6@@Z` at `0x18078ef25`
+- `gfx!?Create@IRoundedRectanglePath@GEL@@SA?AV?$TCntPtr@UIPath@GEL@@@Ofc@@AEBU?$TRect@N@Math@@AEBU?$TVector2@N@6@@Z` at `0x18078eff5`
+- `gfx!?GetAltTextBarFeedbackUILineWidth@SelectionHandleConfig@GEL@@SAMAEBV?$TConvertibleDPI2@M@Gfx@@@Z` at `0x18078eb2f`
+- `gfx!?GetAltTextBarFeedbackUILineWidth@SelectionHandleConfig@GEL@@SAMAEBV?$TConvertibleDPI2@M@Gfx@@@Z` at `0x18078eb2f`
+- `gfx!?Create@IEffectTransform@GEL@@SA?AV?$TCntPtr@UIEffectTransform@GEL@@@Ofc@@AEBUIEffect@2@AEBU?$TAffine3x3@N@Math@@@Z` at `0x18078ecc1`
+- `gfx!?Create@IEffectTransform@GEL@@SA?AV?$TCntPtr@UIEffectTransform@GEL@@@Ofc@@AEBUIEffect@2@AEBU?$TAffine3x3@N@Math@@@Z` at `0x18078edbd`
+- `gfx!?Create@IEffectTransform@GEL@@SA?AV?$TCntPtr@UIEffectTransform@GEL@@@Ofc@@AEBUIEffect@2@AEBU?$TAffine3x3@N@Math@@@Z` at `0x18078ecc1`
+- `gfx!?Create@IEffectTransform@GEL@@SA?AV?$TCntPtr@UIEffectTransform@GEL@@@Ofc@@AEBUIEffect@2@AEBU?$TAffine3x3@N@Math@@@Z` at `0x18078edbd`
+- `gfx!?Create@IBrushSolid@GEL@@SA?AV?$TCntPtr@UIBrushSolid@GEL@@@Ofc@@AEBUColor@2@PEBUCropInfo@2@@Z` at `0x18078efd9`
+- `gfx!?Create@IBrushSolid@GEL@@SA?AV?$TCntPtr@UIBrushSolid@GEL@@@Ofc@@AEBUColor@2@PEBUCropInfo@2@@Z` at `0x18078efd9`
+- `gfx!?Create@IEffectPennedPath@GEL@@SA?AV?$TCntPtr@UIEffectPennedPath@GEL@@@Ofc@@AEBUIPath@2@AEBUIPen@2@@Z` at `0x18078ef36`
+- `gfx!?Create@IEffectPennedPath@GEL@@SA?AV?$TCntPtr@UIEffectPennedPath@GEL@@@Ofc@@AEBUIPath@2@AEBUIPen@2@@Z` at `0x18078ef36`
+- `gfx!?Create@IPen@GEL@@SA?AV?$TCntPtr@UIPen@GEL@@@Ofc@@NAEBUColor@2@@Z` at `0x18078ef08`
+- `gfx!?Create@IPen@GEL@@SA?AV?$TCntPtr@UIPen@GEL@@@Ofc@@NAEBUColor@2@@Z` at `0x18078ef08`
+- `gfx!?Create@IEffectContainer@GEL@@SA?AV?$TCntPtr@UIEffectContainer@GEL@@@Ofc@@XZ` at `0x18078f06f`
+- `gfx!?Create@IEffectContainer@GEL@@SA?AV?$TCntPtr@UIEffectContainer@GEL@@@Ofc@@XZ` at `0x18078f06f`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x18078ed0c`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x18078ed0c`
+
+## pseudocode
+
+```c
+_QWORD *__fastcall Art::AltTextBarFeedbackUIContainer::CreateUIEffectsV1(double *a1, _QWORD *a2, __int64 a3, double a4)
+{
+  __m128d v6; // xmm9
+  __m128 v7; // xmm9
+  double v8; // xmm8_8
+  double v9; // xmm13_8
+  double v10; // xmm10_8
+  double v11; // xmm15_8
+  double v12; // xmm12_8
+  Art *v13; // rcx
+  __int64 v14; // r13
+  struct Ofc::CProxyPtrImpl **View; // rax
+  char *Checked; // rax
+  double v17; // xmm11_8
+  __int64 *v18; // rbx
+  __int64 *v19; // rax
+  __int64 v20; // rdx
+  __int64 v21; // rsi
+  Art::TextBuilder *v22; // rcx
+  __int64 HinstIntl; // rax
+  int v24; // edx
+  Art::TextBuilder *v25; // rbx
+  _QWORD *TextBuilderEffects; // rax
+  __int64 **v27; // rax
+  __int64 v28; // r9
+  __int64 *v29; // rdi
+  __int64 v30; // rax
+  __int64 v31; // rdx
+  double Width; // xmm3_8
+  bool v33; // cc
+  __int64 v34; // xmm6_8
+  double v35; // xmm3_8
+  double v36; // xmm7_8
+  __m128d v37; // xmm0
+  __int64 v38; // rbx
+  _QWORD *v39; // rax
+  _QWORD *v40; // rax
+  _QWORD *v41; // r15
+  __int64 v42; // rbx
+  _QWORD *v43; // rax
+  __int64 UIBackgroundColor; // rax
+  __int64 v45; // rbx
+  _QWORD *v46; // rax
+  __int64 *v47; // rax
+  double v48; // xmm2_8
+  double v49; // xmm1_8
+  double v50; // xmm10_8
+  double v52; // [rsp+48h] [rbp-C0h] BYREF
+  Art::TextBuilder *v53; // [rsp+50h] [rbp-B8h] BYREF
+  __int64 v54; // [rsp+58h] [rbp-B0h] BYREF
+  _QWORD v55[3]; // [rsp+60h] [rbp-A8h] BYREF
+  _QWORD *v56; // [rsp+78h] [rbp-90h] BYREF
+  __int64 *v57; // [rsp+80h] [rbp-88h] BYREF
+  Ofc::CProxyPtrImpl *v58; // [rsp+88h] [rbp-80h] BYREF
+  __m128i v59; // [rsp+90h] [rbp-78h] BYREF
+  __m128i v60; // [rsp+A0h] [rbp-68h]
+  __int128 v61; // [rsp+B0h] [rbp-58h]
+  __m128d v62; // [rsp+C0h] [rbp-48h] BYREF
+  __int128 v63; // [rsp+D0h] [rbp-38h]
+  __m128i v64; // [rsp+E0h] [rbp-28h] BYREF
+  double v65; // [rsp+F0h] [rbp-18h]
+  double v66; // [rsp+F8h] [rbp-10h]
+  __int64 v67; // [rsp+108h] [rbp+0h]
+  __m128i si128; // [rsp+110h] [rbp+8h] BYREF
+  _BYTE v69[192]; // [rsp+128h] [rbp+20h] BYREF
+
+  v56 = a2;
+  v6 = 0;
+  v6.m128d_f64[0] = GEL::SelectionHandleConfig::GetAltTextBarFeedbackUILineWidth(a3) * a4;
+  v7 = (__m128)_mm_unpacklo_pd(v6, v6);
+  v8 = *(double *)(*(_QWORD *)a1 + 320LL) - *(double *)(*(_QWORD *)a1 + 304LL);
+  v9 = *(double *)(*(_QWORD *)a1 + 312LL) - *(double *)(*(_QWORD *)a1 + 296LL);
+  *(double *)&v55[1] = v8 * 0.15;
+  v52 = v8 * 0.25;
+  v10 = v8 * 0.2;
+  v11 = v8 - (v10 + v10);
+  v12 = v11 * 0.54;
+  si128 = _mm_load_si128((const __m128i *)&_xmm);
+  v14 = *(_QWORD *)std::vector<Mso::TCntPtr<SpyTree::SpyNodeBase>>::operator[](a1 + 1, 0);
+  if ( !v14 )
+  {
+    *a2 = 0;
+    return a2;
+  }
+  if ( Art::FInHighContrastMode(v13) && (unsigned int)(*(_DWORD *)(v14 + 8) - 2) <= 1 )
+    si128 = *(__m128i *)Art::GetSystemColor(&v64, 14);
+  View = (struct Ofc::CProxyPtrImpl **)Art::ViewElement::GetView(*(_QWORD *)a1);
+  v58 = Ofc::CProxyPtrImpl::CheckedStrongAddRef(*View);
+  Art::View::Info::Info((Art::View::Info *)v69);
+  Checked = (char *)Ofc::CProxyPtrImpl::GetChecked(v58);
+  Art::View::Info::operator=(v69, Checked + 40);
+  v67 = 0;
+  v17 = v10 + v10 + v12;
+  Art::CreateAltTextBarFeedbackUIIconEffect(&v57, &si128);
+  v59 = _mm_load_si128((const __m128i *)&_xmm);
+  v60 = _mm_load_si128((const __m128i *)&_xmm);
+  *(double *)&v61 = v12 * 0.5 + v10;
+  *((double *)&v61 + 1) = v11 * 0.5;
+  v18 = v57;
+  v19 = (__int64 *)GEL::IEffectTransform::Create(&v53, v57, &v59);
+  v21 = *v19;
+  *v19 = 0;
+  v67 = v21;
+  v22 = v53;
+  if ( v53 )
+    (*(void (__fastcall **)(Art::TextBuilder *))(*(_QWORD *)v53 + 8LL))(v53);
+  if ( v18 )
+    (*(void (__fastcall **)(__int64 *))(*v18 + 8))(v18);
+  v57 = 0;
+  HinstIntl = MsoGetHinstIntl(v22, v20);
+  sub_1801518A0(v14 + 48, HinstIntl, 4093707072LL);
+  v64 = 0;
+  v65 = v9;
+  v66 = v8;
+  Art::AltTextSelectionBarViewElement::CreateAltTextBuilder(
+    (unsigned int)&v53,
+    v24,
+    (unsigned int)v69,
+    (unsigned int)&v64,
+    (__int64)&si128,
+    *(_QWORD *)(v14 + 48),
+    1);
+  v59 = _mm_load_si128((const __m128i *)&_xmm);
+  v60 = _mm_load_si128((const __m128i *)&_xmm);
+  *(double *)&v61 = v10 + v12;
+  *((_QWORD *)&v61 + 1) = *(_QWORD *)&v10 ^ _xmm;
+  v25 = v53;
+  TextBuilderEffects = (_QWORD *)Art::GetTextBuilderEffects(&v56, v53);
+  v27 = (__int64 **)GEL::IEffectTransform::Create(v55, *TextBuilderEffects, &v59);
+  v29 = *v27;
+  *v27 = 0;
+  v57 = v29;
+  if ( v55[0] )
+    (*(void (__fastcall **)(_QWORD))(*(_QWORD *)v55[0] + 8LL))(v55[0]);
+  if ( v56 )
+    (*(void (__fastcall **)(_QWORD *))(*v56 + 8LL))(v56);
+  v62 = 0;
+  v63 = 0;
+  v30 = *v29;
+  v59 = _mm_load_si128((const __m128i *)&_xmm);
+  v60 = _mm_load_si128((const __m128i *)&_xmm);
+  v61 = 0;
+  LOBYTE(v28) = 1;
+  if ( (*(unsigned __int8 (__fastcall **)(__int64 *, __m128i *, __m128d *, __int64))(v30 + 48))(v29, &v59, &v62, v28)
+    && (Width = Math::TRect<double>::GetWidth(&v62), Width > 0.0) )
+  {
+    v33 = Math::TRect<double>::GetHeight(&v62) <= 0.0;
+    v34 = v55[1];
+    if ( !v33 )
+    {
+      v35 = Width + v10 + v12;
+      v36 = v52;
+      if ( v9 > v8 + v8 + v35 + v52 + *(double *)&v55[1] )
+      {
+        *(_BYTE *)(v14 + 56) = 1;
+        v17 = v35;
+      }
+      goto LABEL_21;
+    }
+  }
+  else
+  {
+    v34 = v55[1];
+  }
+  v36 = v52;
+LABEL_21:
+  if ( v25 )
+    Art::TextBuilder::`vector deleting destructor'(v25, 1u);
+  v56 = 0;
+  v37 = (__m128d)_mm_xor_ps(v7, (__m128)(unsigned __int64)_xmm);
+  v62 = _mm_unpacklo_pd(v37, v37);
+  *(double *)&v63 = v17 + *(double *)v7.m128_u64;
+  *((double *)&v63 + 1) = v11 + *(double *)v7.m128_u64;
+  v64 = _mm_load_si128((const __m128i *)&_xmm);
+  v38 = *(_QWORD *)GEL::IPen::Create(&v52, v31, &v64);
+  *(__m128 *)&v55[1] = v7;
+  v39 = (_QWORD *)GEL::IRoundedRectanglePath::Create(&v53, &v62, &v55[1]);
+  v40 = (_QWORD *)GEL::IEffectPennedPath::Create(v55, *v39, v38);
+  v41 = (_QWORD *)*v40;
+  *v40 = 0;
+  v56 = v41;
+  if ( v55[0] )
+    (*(void (__fastcall **)(_QWORD))(*(_QWORD *)v55[0] + 8LL))(v55[0]);
+  if ( v53 )
+    (*(void (__fastcall **)(Art::TextBuilder *))(*(_QWORD *)v53 + 8LL))(v53);
+  if ( v52 != 0.0 )
+    (*(void (__fastcall **)(double))(**(_QWORD **)&v52 + 8LL))(COERCE_DOUBLE(*(_QWORD *)&v52));
+  v42 = 0;
+  v55[0] = 0;
+  if ( *(_DWORD *)(v14 + 8) != 1 )
+  {
+    v59 = 0;
+    *(double *)v60.m128i_i64 = v17;
+    *(double *)&v60.m128i_i64[1] = v8 - (v10 + v10);
+    v43 = (_QWORD *)std::vector<Mso::TCntPtr<SpyTree::SpyNodeBase>>::operator[](a1 + 1, 0);
+    UIBackgroundColor = Art::AltTextBarFeedbackUI::GetUIBackgroundColor(*v43, &v62);
+    v45 = *(_QWORD *)GEL::IBrushSolid::Create(&v55[1], UIBackgroundColor, 0);
+    v64 = (__m128i)v7;
+    v46 = (_QWORD *)GEL::IRoundedRectanglePath::Create(&v52, &v59, &v64);
+    v47 = (__int64 *)GEL::IEffectFilledPath::Create(&v53, *v46, v45, 0);
+    v42 = *v47;
+    *v47 = 0;
+    v55[0] = v42;
+    if ( v53 )
+      (*(void (__fastcall **)(Art::TextBuilder *))(*(_QWORD *)v53 + 8LL))(v53);
+    if ( v52 != 0.0 )
+      (*(void (__fastcall **)(double))(**(_QWORD **)&v52 + 8LL))(COERCE_DOUBLE(*(_QWORD *)&v52));
+    if ( v55[1] )
+      (*(void (__fastcall **)(_QWORD))(*(_QWORD *)v55[1] + 8LL))(v55[1]);
+  }
+  GEL::IEffectContainer::Create(&v54);
+  (*(void (__fastcall **)(__int64, _QWORD *))(*(_QWORD *)v54 + 144LL))(v54, v41);
+  if ( v42 )
+    (*(void (__fastcall **)(__int64, __int64))(*(_QWORD *)v54 + 144LL))(v54, v42);
+  (*(void (__fastcall **)(__int64, __int64))(*(_QWORD *)v54 + 144LL))(v54, v21);
+  if ( *(_BYTE *)(v14 + 56) )
+    (*(void (__fastcall **)(__int64, __int64 *))(*(_QWORD *)v54 + 144LL))(v54, v29);
+  v48 = *(double *)(*(_QWORD *)a1 + 320LL) - v10;
+  v49 = *(double *)(*(_QWORD *)a1 + 312LL) - v36;
+  v50 = v10 + *(double *)(*(_QWORD *)a1 + 304LL);
+  a1[4] = v49 - v17;
+  a1[5] = v50;
+  a1[6] = v49;
+  a1[7] = v48;
+  *(_OWORD *)(v14 + 16) = *((_OWORD *)a1 + 2);
+  *(_OWORD *)(v14 + 32) = *((_OWORD *)a1 + 3);
+  *(_QWORD *)(*(_QWORD *)a1 + 440LL) = v34;
+  *a2 = v54;
+  v54 = 0;
+  if ( v42 )
+    (*(void (__fastcall **)(__int64))(*(_QWORD *)v42 + 8LL))(v42);
+  if ( v41 )
+    (*(void (__fastcall **)(_QWORD *))(*v41 + 8LL))(v41);
+  if ( v29 )
+    (*(void (__fastcall **)(__int64 *))(*v29 + 8))(v29);
+  if ( v21 )
+    (*(void (__fastcall **)(__int64))(*(_QWORD *)v21 + 8LL))(v21);
+  Art::View::Info::~Info((Art::View::Info *)v69);
+  Ofc::CProxyPtrImpl::DtorStrongRelease(&v58);
+  return a2;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18078eaa4  mov     rax, rsp
+0x18078eaa7  push    rbp
+0x18078eaa8  push    rbx
+0x18078eaa9  push    rsi
+0x18078eaaa  push    rdi
+0x18078eaab  push    r12
+0x18078eaad  push    r13
+0x18078eaaf  push    r14
+0x18078eab1  push    r15
+0x18078eab3  lea     rbp, [rax-1D8h]
+0x18078eaba  sub     rsp, 298h
+0x18078eac1  movaps  xmmword ptr [rax-58h], xmm6
+0x18078eac5  movaps  xmmword ptr [rax-68h], xmm7
+0x18078eac9  movaps  xmmword ptr [rax-78h], xmm8
+0x18078eace  movaps  xmmword ptr [rax-88h], xmm9
+0x18078ead6  movaps  xmmword ptr [rax-98h], xmm10
+0x18078eade  movaps  xmmword ptr [rax-0A8h], xmm11
+0x18078eae6  movaps  xmmword ptr [rax-0B8h], xmm12
+0x18078eaee  movaps  xmmword ptr [rax-0C8h], xmm13
+0x18078eaf6  movaps  xmmword ptr [rax-0D8h], xmm14
+0x18078eafe  movaps  xmmword ptr [rax-0E8h], xmm15
+0x18078eb06  mov     rax, cs:__security_cookie
+0x18078eb0d  xor     rax, rsp
+0x18078eb10  mov     [rbp+1D0h+var_F0], rax
+0x18078eb17  movaps  xmm14, xmm3
+0x18078eb1b  mov     rbx, r8
+0x18078eb1e  mov     r12, rdx
+0x18078eb21  mov     r14, rcx
+0x18078eb24  mov     [rsp+2D0h+var_260], rdx
+0x18078eb29  xor     r15d, r15d
+0x18078eb2c  mov     rcx, r8
+0x18078eb2f  call    cs:__imp_?GetAltTextBarFeedbackUILineWidth@SelectionHandleConfig@GEL@@SAMAEBV?$TConvertibleDPI2@M@Gfx@@@Z; GEL::SelectionHandleConfig::GetAltTextBarFeedbackUILineWidth(Gfx::TConvertibleDPI2<float> const &)
+0x18078eb35  xorps   xmm9, xmm9
+0x18078eb39  cvtss2sd xmm9, xmm0
+0x18078eb3e  mulsd   xmm9, xmm14
+0x18078eb43  unpcklpd xmm9, xmm9
+0x18078eb48  mov     rax, [r14]
+0x18078eb4b  movsd   xmm8, qword ptr [rax+140h]
+0x18078eb54  subsd   xmm8, qword ptr [rax+130h]
+0x18078eb5d  movsd   xmm13, qword ptr [rax+138h]
+0x18078eb66  subsd   xmm13, qword ptr [rax+128h]
+0x18078eb6f  movaps  xmm0, xmm8
+0x18078eb73  mulsd   xmm0, cs:__real@3fc3333333333333
+0x18078eb7b  movsd   qword ptr [rsp+2D0h+var_278+8], xmm0
+0x18078eb81  movaps  xmm0, xmm8
+0x18078eb85  mulsd   xmm0, cs:__real@3fd0000000000000
+0x18078eb8d  movsd   [rsp+2D0h+var_290], xmm0
+0x18078eb93  movaps  xmm10, xmm8
+0x18078eb97  mulsd   xmm10, cs:__real@3fc999999999999a
+0x18078eba0  movaps  xmm11, xmm10
+0x18078eba4  addsd   xmm11, xmm10
+0x18078eba9  movaps  xmm15, xmm8
+0x18078ebad  subsd   xmm15, xmm11
+0x18078ebb2  movaps  xmm12, xmm15
+0x18078ebb6  mulsd   xmm12, cs:__real@3fe147ae147ae148
+0x18078ebbf  movdqa  xmm0, cs:__xmm@3f8000003f8000003f8000003f800000
+0x18078ebc7  movups  [rbp+1D0h+var_1C8], xmm0
+0x18078ebcb  lea     rcx, [r14+8]
+0x18078ebcf  xor     edx, edx
+0x18078ebd1  call    ??A?$vector@V?$TCntPtr@VSpyNodeBase@SpyTree@@@Mso@@V?$allocator@V?$TCntPtr@VSpyNodeBase@SpyTree@@@Mso@@@std@@@std@@QEBAAEBV?$TCntPtr@VSpyNodeBase@SpyTree@@@Mso@@_K@Z; std::vector<Mso::TCntPtr<SpyTree::SpyNodeBase>>::operator[](unsigned __int64)
+0x18078ebd6  mov     r13, [rax]
+0x18078ebd9  test    r13, r13
+0x18078ebdc  jnz     short loc_18078EBE7
+0x18078ebde  mov     [r12], r15
+0x18078ebe2  jmp     loc_18078F1C2
+0x18078ebe7  call    ?FInHighContrastMode@Art@@YA_NXZ; Art::FInHighContrastMode(void)
+0x18078ebec  test    al, al
+0x18078ebee  jz      short loc_18078EC12
+0x18078ebf0  mov     eax, [r13+8]
+0x18078ebf4  add     eax, 0FFFFFFFEh
+0x18078ebf7  cmp     eax, 1
+0x18078ebfa  ja      short loc_18078EC12
+0x18078ebfc  mov     edx, 0Eh
+0x18078ec01  lea     rcx, [rbp+1D0h+var_1F8]
+0x18078ec05  call    ?GetSystemColor@Art@@YA?AUColor@GEL@@W4SystemColorVal@1@@Z; Art::GetSystemColor(Art::SystemColorVal)
+0x18078ec0a  movups  xmm0, xmmword ptr [rax]
+0x18078ec0d  movdqu  [rbp+1D0h+var_1C8], xmm0
+0x18078ec12  mov     rcx, [r14]
+0x18078ec15  call    ?GetView@ViewElement@Art@@QEAAAEBV?$TWeakPtr@VView@Art@@@Ofc@@XZ; Art::ViewElement::GetView(void)
+0x18078ec1a  mov     rcx, [rax]; struct Ofc::CProxyPtrImpl *
+0x18078ec1d  call    ?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z; Ofc::CProxyPtrImpl::CheckedStrongAddRef(Ofc::CProxyPtrImpl *)
+0x18078ec22  mov     [rbp+1D0h+var_250], rax
+0x18078ec26  lea     rcx, [rbp+1D0h+var_1B0]; this
+0x18078ec2a  call    ??0Info@View@Art@@QEAA@XZ; Art::View::Info::Info(void)
+0x18078ec2f  mov     rcx, [rbp+1D0h+var_250]; this
+0x18078ec33  call    ?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ; Ofc::CProxyPtrImpl::GetChecked(void)
+0x18078ec38  lea     rdx, [rax+28h]
+0x18078ec3c  lea     rcx, [rbp+1D0h+var_1B0]
+0x18078ec40  call    ??4Info@View@Art@@QEAAAEAU012@AEBU012@@Z; Art::View::Info::operator=(Art::View::Info const &)
+0x18078ec45  mov     [rbp+1D0h+var_1D0], r15
+0x18078ec49  movaps  xmm6, xmm12
+0x18078ec4d  mulsd   xmm6, cs:__real@3fe0000000000000
+0x18078ec55  addsd   xmm6, xmm10
+0x18078ec5a  addsd   xmm11, xmm12
+0x18078ec5f  mov     dword ptr [rsp+2D0h+var_2A8], 1
+0x18078ec67  mov     [rsp+2D0h+var_2B0], rbx
+0x18078ec6c  movaps  xmm3, xmm14
+0x18078ec70  movaps  xmm2, xmm12
+0x18078ec74  lea     rdx, [rbp+1D0h+var_1C8]
+0x18078ec78  lea     rcx, [rsp+2D0h+var_258]
+0x18078ec7d  call    ?CreateAltTextBarFeedbackUIIconEffect@Art@@YA?AV?$TCntPtr@UIEffect@GEL@@@Ofc@@AEBUColor@GEL@@NNAEBV?$TConvertibleDPI2@M@Gfx@@W4AltTextBarComponentType@1@@Z; Art::CreateAltTextBarFeedbackUIIconEffect(GEL::Color const &,double,double,Gfx::TConvertibleDPI2<float> const &,Art::AltTextBarComponentType)
+0x18078ec82  movdqa  xmm0, cs:__xmm@00000000000000003ff0000000000000
+0x18078ec8a  movups  [rbp+1D0h+var_248], xmm0
+0x18078ec8e  movdqa  xmm1, cs:__xmm@3ff00000000000000000000000000000
+0x18078ec96  movups  [rbp+1D0h+var_238], xmm1
+0x18078ec9a  movsd   qword ptr [rbp+1D0h+var_228], xmm6
+0x18078ec9f  movaps  xmm0, xmm15
+0x18078eca3  mulsd   xmm0, cs:__real@3fe0000000000000
+0x18078ecab  movsd   qword ptr [rbp+1D0h+var_228+8], xmm0
+0x18078ecb0  lea     r8, [rbp+1D0h+var_248]
+0x18078ecb4  mov     rbx, [rsp+2D0h+var_258]
+0x18078ecb9  mov     rdx, rbx
+0x18078ecbc  lea     rcx, [rsp+2D0h+var_288]
+0x18078ecc1  call    cs:__imp_?Create@IEffectTransform@GEL@@SA?AV?$TCntPtr@UIEffectTransform@GEL@@@Ofc@@AEBUIEffect@2@AEBU?$TAffine3x3@N@Math@@@Z; GEL::IEffectTransform::Create(GEL::IEffect const &,Math::TAffine3x3<double> const &)
+0x18078ecc7  mov     rsi, [rax]
+0x18078ecca  mov     [rax], r15
+0x18078eccd  mov     [rbp+1D0h+var_1D0], rsi
+0x18078ecd1  mov     rcx, [rsp+2D0h+var_288]
+0x18078ecd6  test    rcx, rcx
+0x18078ecd9  jz      short loc_18078ECE9
+0x18078ecdb  mov     rax, [rcx]
+0x18078ecde  mov     rax, [rax+8]
+0x18078ece2  call    cs:__guard_dispatch_icall_fptr
+0x18078ece8  nop
+0x18078ece9  test    rbx, rbx
+0x18078ecec  jz      short loc_18078ECFE
+0x18078ecee  mov     rax, [rbx]
+0x18078ecf1  mov     rcx, rbx
+0x18078ecf4  mov     rax, [rax+8]
+0x18078ecf8  call    cs:__guard_dispatch_icall_fptr
+0x18078ecfe  mov     [rsp+2D0h+var_258], r15
+0x18078ed03  movaps  xmm7, xmm10
+0x18078ed07  addsd   xmm7, xmm12
+0x18078ed0c  call    cs:__imp_MsoGetHinstIntl
+0x18078ed12  mov     r8d, 0F4010340h
+0x18078ed18  mov     rdx, rax
+0x18078ed1b  lea     rcx, [r13+30h]
+0x18078ed1f  call    sub_1801518A0
+0x18078ed24  xorps   xmm0, xmm0
+0x18078ed27  movups  [rbp+1D0h+var_1F8], xmm0
+0x18078ed2b  movsd   [rbp+1D0h+var_1E8], xmm13
+0x18078ed31  movsd   [rbp+1D0h+var_1E0], xmm8
+0x18078ed37  mov     [rsp+2D0h+var_2A0], 1
+0x18078ed3c  mov     rax, [r13+30h]
+0x18078ed40  mov     qword ptr [rsp+2D0h+var_2A8], rax
+0x18078ed45  lea     rax, [rbp+1D0h+var_1C8]
+0x18078ed49  mov     [rsp+2D0h+var_2B0], rax
+0x18078ed4e  lea     r9, [rbp+1D0h+var_1F8]
+0x18078ed52  lea     r8, [rbp+1D0h+var_1B0]
+0x18078ed56  movaps  xmm1, xmm14
+0x18078ed5a  lea     rcx, [rsp+2D0h+var_288]
+0x18078ed5f  call    ?CreateAltTextBuilder@AltTextSelectionBarViewElement@Art@@CA?AV?$TOwnerPtr@VTextBuilder@Art@@@Ofc@@NAEBUInfo@View@2@AEBURect@GEL@@AEBUColor@8@PEB_W_N@Z; Art::AltTextSelectionBarViewElement::CreateAltTextBuilder(double,Art::View::Info const &,GEL::Rect const &,GEL::Color const &,wchar_t const *,bool)
+0x18078ed64  nop
+0x18078ed65  movdqa  xmm0, cs:__xmm@00000000000000003ff0000000000000
+0x18078ed6d  movups  [rbp+1D0h+var_248], xmm0
+0x18078ed71  movdqa  xmm1, cs:__xmm@3ff00000000000000000000000000000
+0x18078ed79  movups  [rbp+1D0h+var_238], xmm1
+0x18078ed7d  movsd   qword ptr [rbp+1D0h+var_228], xmm7
+0x18078ed82  movaps  xmm0, xmm10
+0x18078ed86  movsd   xmm12, qword ptr cs:__xmm@80000000000000008000000000000000
+0x18078ed8f  xorps   xmm0, xmm12
+0x18078ed93  movsd   qword ptr [rbp+1D0h+var_228+8], xmm0
+0x18078ed98  xorps   xmm6, xmm6
+0x18078ed9b  xorps   xmm2, xmm2
+0x18078ed9e  mov     rbx, [rsp+2D0h+var_288]
+0x18078eda3  mov     rdx, rbx
+0x18078eda6  lea     rcx, [rsp+2D0h+var_260]
+0x18078edab  call    ?GetTextBuilderEffects@Art@@YA?AV?$TCntPtr@UIEffectContainer@GEL@@@Ofc@@AEBVTextBuilder@1@N@Z; Art::GetTextBuilderEffects(Art::TextBuilder const &,double)
+0x18078edb0  nop
+0x18078edb1  lea     r8, [rbp+1D0h+var_248]
+0x18078edb5  mov     rdx, [rax]
+0x18078edb8  lea     rcx, [rsp+2D0h+var_278]
+0x18078edbd  call    cs:__imp_?Create@IEffectTransform@GEL@@SA?AV?$TCntPtr@UIEffectTransform@GEL@@@Ofc@@AEBUIEffect@2@AEBU?$TAffine3x3@N@Math@@@Z; GEL::IEffectTransform::Create(GEL::IEffect const &,Math::TAffine3x3<double> const &)
+0x18078edc3  mov     rdi, [rax]
+0x18078edc6  mov     [rax], r15
+0x18078edc9  mov     [rsp+2D0h+var_258], rdi
+0x18078edce  mov     rcx, qword ptr [rsp+2D0h+var_278]
+0x18078edd3  test    rcx, rcx
+0x18078edd6  jz      short loc_18078EDE6
+0x18078edd8  mov     rax, [rcx]
+0x18078eddb  mov     rax, [rax+8]
+0x18078eddf  call    cs:__guard_dispatch_icall_fptr
+0x18078ede5  nop
+0x18078ede6  mov     rcx, [rsp+2D0h+var_260]
+0x18078edeb  test    rcx, rcx
+0x18078edee  jz      short loc_18078EDFD
+0x18078edf0  mov     rax, [rcx]
+0x18078edf3  mov     rax, [rax+8]
+0x18078edf7  call    cs:__guard_dispatch_icall_fptr
+0x18078edfd  xorps   xmm0, xmm0
+0x18078ee00  movups  [rbp+1D0h+var_218], xmm0
+0x18078ee04  xorps   xmm1, xmm1
+0x18078ee07  movups  [rbp+1D0h+var_208], xmm1
+0x18078ee0b  mov     rax, [rdi]
+0x18078ee0e  movdqa  xmm0, cs:__xmm@00000000000000003ff0000000000000
+0x18078ee16  movups  [rbp+1D0h+var_248], xmm0
+0x18078ee1a  movdqa  xmm1, cs:__xmm@3ff00000000000000000000000000000
+0x18078ee22  movups  [rbp+1D0h+var_238], xmm1
+0x18078ee26  xorps   xmm0, xmm0
+0x18078ee29  movups  [rbp+1D0h+var_228], xmm0
+0x18078ee2d  mov     r9b, 1
+0x18078ee30  lea     r8, [rbp+1D0h+var_218]
+0x18078ee34  lea     rdx, [rbp+1D0h+var_248]
+0x18078ee38  mov     rcx, rdi
+0x18078ee3b  mov     rax, [rax+30h]
+0x18078ee3f  call    cs:__guard_dispatch_icall_fptr
+0x18078ee45  test    al, al
+0x18078ee47  jz      short loc_18078EEA0
+0x18078ee49  lea     rcx, [rbp+1D0h+var_218]
+0x18078ee4d  call    ?GetWidth@?$TRect@N@Math@@QEBANXZ; Math::TRect<double>::GetWidth(void)
+0x18078ee52  movaps  xmm3, xmm0
+0x18078ee55  comisd  xmm0, xmm6
+0x18078ee59  jbe     short loc_18078EEA0
+0x18078ee5b  lea     rcx, [rbp+1D0h+var_218]
+0x18078ee5f  call    ?GetHeight@?$TRect@N@Math@@QEBANXZ; Math::TRect<double>::GetHeight(void)
+0x18078ee64  comisd  xmm0, xmm6
+0x18078ee68  movsd   xmm6, qword ptr [rsp+2D0h+var_278+8]
+0x18078ee6e  jbe     short loc_18078EEA6
+0x18078ee70  addsd   xmm3, xmm7
+0x18078ee74  addsd   xmm8, xmm8
+0x18078ee79  addsd   xmm8, xmm3
+0x18078ee7e  movsd   xmm7, [rsp+2D0h+var_290]
+0x18078ee84  addsd   xmm8, xmm7
+0x18078ee89  addsd   xmm8, xmm6
+0x18078ee8e  comisd  xmm13, xmm8
+0x18078ee93  jbe     short loc_18078EEAC
+0x18078ee95  mov     byte ptr [r13+38h], 1
+0x18078ee9a  movaps  xmm11, xmm3
+0x18078ee9e  jmp     short loc_18078EEAC
+0x18078eea0  movsd   xmm6, qword ptr [rsp+2D0h+var_278+8]
+0x18078eea6  movsd   xmm7, [rsp+2D0h+var_290]
+0x18078eeac  test    rbx, rbx
+0x18078eeaf  jz      short loc_18078EEBE
+0x18078eeb1  mov     edx, 1; unsigned int
+0x18078eeb6  mov     rcx, rbx; this
+0x18078eeb9  call    ??_ETextBuilder@Art@@UEAAPEAXI@Z; Art::TextBuilder::`vector deleting destructor'(uint)
+0x18078eebe  mov     [rsp+2D0h+var_260], r15
+0x18078eec3  movaps  xmm0, xmm9
+0x18078eec7  xorps   xmm0, xmm12
+0x18078eecb  unpcklpd xmm0, xmm0
+0x18078eecf  movups  [rbp+1D0h+var_218], xmm0
+0x18078eed3  movaps  xmm0, xmm11
+0x18078eed7  addsd   xmm0, xmm9
+0x18078eedc  movsd   qword ptr [rbp+1D0h+var_208], xmm0
+0x18078eee1  movaps  xmm1, xmm15
+0x18078eee5  addsd   xmm1, xmm9
+0x18078eeea  movsd   qword ptr [rbp+1D0h+var_208+8], xmm1
+0x18078eeef  movdqa  xmm0, cs:__xmm@3f8000003f8000003f8000003f800000
+0x18078eef7  movups  [rbp+1D0h+var_1F8], xmm0
+0x18078eefb  lea     r8, [rbp+1D0h+var_1F8]
+0x18078eeff  movaps  xmm1, xmm9
+0x18078ef03  lea     rcx, [rsp+2D0h+var_290]
+0x18078ef08  call    cs:__imp_?Create@IPen@GEL@@SA?AV?$TCntPtr@UIPen@GEL@@@Ofc@@NAEBUColor@2@@Z; GEL::IPen::Create(double,GEL::Color const &)
+0x18078ef0e  mov     rbx, [rax]
+0x18078ef11  movups  xmmword ptr [rsp+2D0h+var_278+8], xmm9
+0x18078ef17  lea     r8, [rsp+2D0h+var_278+8]
+0x18078ef1c  lea     rdx, [rbp+1D0h+var_218]
+0x18078ef20  lea     rcx, [rsp+2D0h+var_288]
+0x18078ef25  call    cs:__imp_?Create@IRoundedRectanglePath@GEL@@SA?AV?$TCntPtr@UIPath@GEL@@@Ofc@@AEBU?$TRect@N@Math@@AEBU?$TVector2@N@6@@Z; GEL::IRoundedRectanglePath::Create(Math::TRect<double> const &,Math::TVector2<double> const &)
+0x18078ef2b  mov     r8, rbx
+0x18078ef2e  mov     rdx, [rax]
+0x18078ef31  lea     rcx, [rsp+2D0h+var_278]
+0x18078ef36  call    cs:__imp_?Create@IEffectPennedPath@GEL@@SA?AV?$TCntPtr@UIEffectPennedPath@GEL@@@Ofc@@AEBUIPath@2@AEBUIPen@2@@Z; GEL::IEffectPennedPath::Create(GEL::IPath const &,GEL::IPen const &)
+0x18078ef3c  mov     r15, [rax]
+0x18078ef3f  mov     qword ptr [rax], 0
+0x18078ef46  mov     [rsp+2D0h+var_260], r15
+0x18078ef4b  mov     rcx, qword ptr [rsp+2D0h+var_278]
+0x18078ef50  test    rcx, rcx
+0x18078ef53  jz      short loc_18078EF63
+0x18078ef55  mov     rax, [rcx]
+0x18078ef58  mov     rax, [rax+8]
+0x18078ef5c  call    cs:__guard_dispatch_icall_fptr
+0x18078ef62  nop
+0x18078ef63  mov     rcx, [rsp+2D0h+var_288]
+0x18078ef68  test    rcx, rcx
+0x18078ef6b  jz      short loc_18078EF7B
+0x18078ef6d  mov     rax, [rcx]
+0x18078ef70  mov     rax, [rax+8]
+0x18078ef74  call    cs:__guard_dispatch_icall_fptr
+0x18078ef7a  nop
+0x18078ef7b  mov     rcx, [rsp+2D0h+var_290]
+0x18078ef80  test    rcx, rcx
+0x18078ef83  jz      short loc_18078EF92
+0x18078ef85  mov     rax, [rcx]
+0x18078ef88  mov     rax, [rax+8]
+0x18078ef8c  call    cs:__guard_dispatch_icall_fptr
+0x18078ef92  xor     ebx, ebx
+0x18078ef94  mov     qword ptr [rsp+2D0h+var_278], rbx
+0x18078ef99  cmp     dword ptr [r13+8], 1
+0x18078ef9e  jz      loc_18078F06A
+0x18078efa4  xorps   xmm0, xmm0
+0x18078efa7  movups  [rbp+1D0h+var_248], xmm0
+0x18078efab  movsd   qword ptr [rbp+1D0h+var_238], xmm11
+0x18078efb1  movsd   qword ptr [rbp+1D0h+var_238+8], xmm15
+0x18078efb7  xor     edx, edx
+0x18078efb9  lea     rcx, [r14+8]
+0x18078efbd  call    ??A?$vector@V?$TCntPtr@VSpyNodeBase@SpyTree@@@Mso@@V?$allocator@V?$TCntPtr@VSpyNodeBase@SpyTree@@@Mso@@@std@@@std@@QEBAAEBV?$TCntPtr@VSpyNodeBase@SpyTree@@@Mso@@_K@Z; std::vector<Mso::TCntPtr<SpyTree::SpyNodeBase>>::operator[](unsigned __int64)
+0x18078efc2  lea     rdx, [rbp+1D0h+var_218]
+0x18078efc6  mov     rcx, [rax]
+0x18078efc9  call    ?GetUIBackgroundColor@AltTextBarFeedbackUI@Art@@AEBA?AUColor@GEL@@XZ; Art::AltTextBarFeedbackUI::GetUIBackgroundColor(void)
+  ... truncated ...
+```

@@ -1,0 +1,79 @@
+# Art::ShapesGalleryControlUser::UpdateItem(GalleryItemSP &)
+
+- ea: `0x1809fb5b0`
+- end: `0x1809fbc1c`
+- name: `?UpdateItem@ShapesGalleryControlUser@Art@@UEAAXAEAVGalleryItemSP@@@Z`
+- size: `1644`
+- prototype: `void __fastcall(Art::ShapesGalleryControlUser *__hidden this, struct GalleryItemSP *)`
+- caller_count: `0`
+- callee_count: `35`
+- tags: `installer_update`
+
+## callees
+
+- `0x18000eb20`
+- `0x180012630`
+- `0x18001a840`
+- `0x180025300`
+- `0x18002a690`
+- `0x18002a750`
+- `0x1800cfc2c`
+- `0x18011c4d0`
+- `0x180121260`
+- `0x1801285f0`
+- `0x180210de4`
+- `0x180279030`
+- `0x180279050`
+- `0x18029aac0`
+- `0x18029ada4`
+- `0x1802a7444`
+- `0x1802a7fb4`
+- `0x180372ca0`
+- `0x180465b3c`
+- `0x1804d1af4`
+- `0x1804deba0`
+- `0x1804e8520`
+- `0x18060a398`
+- `0x180641954`
+- `0x1806bc6a8`
+- `0x1806cf9e8`
+- `0x180700a80`
+- `0x1809f974c`
+- `0x1809fb15c`
+- `0x1809fb5b0`
+- `0x180a0de64`
+- `0x180a0dec0`
+- `0x180a0dff0`
+- `0x180a0e70c`
+- `0x180a1411c`
+
+## import_xrefs
+
+- `KERNEL32!DecodePointer` at `0x1809fb977`
+- `KERNEL32!DecodePointer` at `0x1809fb989`
+- `KERNEL32!DecodePointer` at `0x1809fb977`
+- `KERNEL32!DecodePointer` at `0x1809fb989`
+- `gfx!?Create@IImage@GEL@@SA?AV?$TCntPtr@UIImage@GEL@@@Ofc@@AEAUIPlatformBitmap@ARC@@@Z` at `0x1809fbaa4`
+- `gfx!?Create@IImage@GEL@@SA?AV?$TCntPtr@UIImage@GEL@@@Ofc@@AEAUIPlatformBitmap@ARC@@@Z` at `0x1809fbaa4`
+- `Mso98Win32Client!__imp_?GetGalleryDataSource@CMsoGalleryUserDefault@@UEAAAEAVGalleryDSSP@@XZ` at `0x1809fb5ed`
+- `Mso98Win32Client!__imp_?GetGalleryDataSource@CMsoGalleryUserDefault@@UEAAAEAVGalleryDSSP@@XZ` at `0x1809fb798`
+- `Mso98Win32Client!__imp_?GetGalleryDataSource@CMsoGalleryUserDefault@@UEAAAEAVGalleryDSSP@@XZ` at `0x1809fb806`
+- `Mso98Win32Client!__imp_?GetGalleryDataSource@CMsoGalleryUserDefault@@UEAAAEAVGalleryDSSP@@XZ` at `0x1809fb5ed`
+- `Mso98Win32Client!__imp_?GetGalleryDataSource@CMsoGalleryUserDefault@@UEAAAEAVGalleryDSSP@@XZ` at `0x1809fb798`
+- `Mso98Win32Client!__imp_?GetGalleryDataSource@CMsoGalleryUserDefault@@UEAAAEAVGalleryDSSP@@XZ` at `0x1809fb806`
+- `Mso98Win32Client!__imp_?GetImageScaleFactor@CMsoGalleryUserDefault@@QEBAHXZ` at `0x1809fb7fa`
+- `Mso98Win32Client!__imp_?GetImageScaleFactor@CMsoGalleryUserDefault@@QEBAHXZ` at `0x1809fb7fa`
+- `mso40uiWin32Client!__imp_?SetGraphicScaleForDPI@FlexValue@FlexUI@@QEAAX_N@Z` at `0x1809fbb65`
+- `mso40uiWin32Client!__imp_?SetGraphicScaleForDPI@FlexValue@FlexUI@@QEAAX_N@Z` at `0x1809fbb65`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1809fb64f`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1809fb64f`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1809fb61a`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1809fb61a`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1809fbbbf`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1809fbbbf`
+
+## pseudocode
+
+```c
+
+```

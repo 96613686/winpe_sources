@@ -1,0 +1,241 @@
+# Art::ColorSchemeDlg::DrawBarChart(HDC__ *,tagRECT const &,bool)
+
+- ea: `0x18041bb04`
+- end: `0x18041bcf3`
+- name: `?DrawBarChart@ColorSchemeDlg@Art@@AEAAXPEAUHDC__@@AEBUtagRECT@@_N@Z`
+- size: `495`
+- prototype: `void(Art::ColorSchemeDlg *__hidden this, HDC, const struct tagRECT *, bool)`
+- caller_count: `1`
+- callee_count: `4`
+- tags: `registry_config`
+
+## callers
+
+- `0x18041b7c4`
+
+## callees
+
+- `0x180278e70`
+- `0x18041bb04`
+- `0x18041bcf4`
+- `0x180434fb8`
+
+## import_xrefs
+
+- `GDI32!CreatePen` at `0x18041bb50`
+- `GDI32!CreatePen` at `0x18041bb50`
+- `GDI32!LineTo` at `0x18041bb9f`
+- `GDI32!LineTo` at `0x18041bb9f`
+- `GDI32!MoveToEx` at `0x18041bb8e`
+- `GDI32!MoveToEx` at `0x18041bb8e`
+- `GDI32!Rectangle` at `0x18041bc61`
+- `GDI32!Rectangle` at `0x18041bc61`
+- `GDI32!SelectObject` at `0x18041bb74`
+- `GDI32!SelectObject` at `0x18041bc84`
+- `GDI32!SelectObject` at `0x18041bcb8`
+- `GDI32!SelectObject` at `0x18041bb74`
+- `GDI32!SelectObject` at `0x18041bc84`
+- `GDI32!SelectObject` at `0x18041bcb8`
+- `GDI32!DeleteObject` at `0x18041bc93`
+- `GDI32!DeleteObject` at `0x18041bcc6`
+- `GDI32!DeleteObject` at `0x18041bc93`
+- `GDI32!DeleteObject` at `0x18041bcc6`
+- `USER32!OffsetRect` at `0x18041bbf6`
+- `USER32!OffsetRect` at `0x18041bc71`
+- `USER32!OffsetRect` at `0x18041bbf6`
+- `USER32!OffsetRect` at `0x18041bc71`
+
+## pseudocode
+
+```c
+void __fastcall Art::ColorSchemeDlg::DrawBarChart(Art::ColorSchemeDlg *this, HDC a2, const struct tagRECT *a3, char a4)
+{
+  HPEN Pen; // rax
+  HGDIOBJ v8; // rdi
+  int v9; // r12d
+  unsigned int v10; // r15d
+  double *v11; // r14
+  unsigned int ColorRGB; // eax
+  HPEN v13; // [rsp+30h] [rbp-50h]
+  HGDIOBJ ho[2]; // [rsp+48h] [rbp-38h] BYREF
+  HGDIOBJ h; // [rsp+58h] [rbp-28h]
+  struct tagRECT rc; // [rsp+60h] [rbp-20h] BYREF
+
+  Pen = CreatePen(0, 1, a4 != 0 ? 38816067 : 50331647);
+  v13 = Pen;
+  v8 = 0;
+  if ( Pen && a2 )
+    v8 = SelectObject(a2, Pen);
+  MoveToEx(a2, a3->left, a3->bottom, 0);
+  LineTo(a2, a3->right, a3->bottom);
+  v9 = (a3->right - a3->left) / 7;
+  rc.left = a3->left;
+  rc.top = a3->top;
+  rc.right = v9 + rc.left;
+  rc.bottom = a3->bottom + 1;
+  OffsetRect(&rc, v9 / 2, 0);
+  v10 = 4;
+  v11 = (double *)qword_180C170E8;
+  do
+  {
+    ColorRGB = Art::ColorSchemeDlg::GetColorRGB(this, v10);
+    Ofc::CHBrush::CHBrush((Ofc::CHBrush *)ho, a2, ColorRGB);
+    Rectangle(a2, rc.left, (int)((double)rc.bottom - (double)(rc.bottom - rc.top) * *v11), rc.right + 1, rc.bottom);
+    OffsetRect(&rc, v9, 0);
+    if ( h )
+      SelectObject((HDC)ho[1], h);
+    if ( ho[0] )
+      DeleteObject(ho[0]);
+    ++v10;
+    ++v11;
+  }
+  while ( (__int64)v11 < (__int64)&Art::ReplayController::`vftable'{for `Ofc::TRefCount<Ofc::CThreadingPolicyMultiThread>'} );
+  if ( v8 )
+    SelectObject(a2, v8);
+  if ( v13 )
+    DeleteObject(v13);
+}
+
+```
+
+## disassembly
+
+```asm
+0x18041bb04  mov     [rsp-38h+arg_18], rbx
+0x18041bb09  push    rbp
+0x18041bb0a  push    rsi
+0x18041bb0b  push    rdi
+0x18041bb0c  push    r12
+0x18041bb0e  push    r13
+0x18041bb10  push    r14
+0x18041bb12  push    r15
+0x18041bb14  mov     rbp, rsp
+0x18041bb17  sub     rsp, 80h
+0x18041bb1e  mov     rax, cs:__security_cookie
+0x18041bb25  xor     rax, rsp
+0x18041bb28  mov     [rbp+var_10], rax
+0x18041bb2c  mov     r14, r8
+0x18041bb2f  mov     rbx, rdx
+0x18041bb32  mov     r13, rcx
+0x18041bb35  neg     r9b
+0x18041bb38  sbb     r8d, r8d
+0x18041bb3b  and     r8d, 0FF504944h
+0x18041bb42  add     r8d, 2FFFFFFh; color
+0x18041bb49  mov     edx, 1; cWidth
+0x18041bb4e  xor     ecx, ecx; iStyle
+0x18041bb50  call    cs:__imp_CreatePen
+0x18041bb56  mov     [rbp+var_50], rax
+0x18041bb5a  mov     [rbp+var_48], rbx
+0x18041bb5e  xor     edi, edi
+0x18041bb60  mov     [rbp+var_40], rdi
+0x18041bb64  test    rax, rax
+0x18041bb67  jz      short loc_18041BB81
+0x18041bb69  test    rbx, rbx
+0x18041bb6c  jz      short loc_18041BB81
+0x18041bb6e  mov     rdx, rax; h
+0x18041bb71  mov     rcx, rbx; hdc
+0x18041bb74  call    cs:__imp_SelectObject
+0x18041bb7a  mov     rdi, rax
+0x18041bb7d  mov     [rbp+var_40], rax
+0x18041bb81  xor     r9d, r9d; lppt
+0x18041bb84  mov     r8d, [r14+0Ch]; y
+0x18041bb88  mov     edx, [r14]; x
+0x18041bb8b  mov     rcx, rbx; hdc
+0x18041bb8e  call    cs:__imp_MoveToEx
+0x18041bb94  mov     r8d, [r14+0Ch]; y
+0x18041bb98  mov     edx, [r14+8]; x
+0x18041bb9c  mov     rcx, rbx; hdc
+0x18041bb9f  call    cs:__imp_LineTo
+0x18041bba5  mov     r8d, [r14]
+0x18041bba8  mov     ecx, [r14+8]
+0x18041bbac  sub     ecx, r8d
+0x18041bbaf  mov     eax, 92492493h
+0x18041bbb4  imul    ecx
+0x18041bbb6  lea     r12d, [rcx+rdx]
+0x18041bbba  sar     r12d, 2
+0x18041bbbe  mov     eax, r12d
+0x18041bbc1  shr     eax, 1Fh
+0x18041bbc4  add     r12d, eax
+0x18041bbc7  mov     [rbp+rc.left], r8d
+0x18041bbcb  mov     eax, [r14+4]
+0x18041bbcf  mov     [rbp+rc.top], eax
+0x18041bbd2  lea     eax, [r12+r8]
+0x18041bbd6  mov     [rbp+rc.right], eax
+0x18041bbd9  mov     eax, [r14+0Ch]
+0x18041bbdd  inc     eax
+0x18041bbdf  mov     [rbp+rc.bottom], eax
+0x18041bbe2  mov     eax, r12d
+0x18041bbe5  cdq
+0x18041bbe6  mov     ecx, 2
+0x18041bbeb  idiv    ecx
+0x18041bbed  mov     edx, eax; dx
+0x18041bbef  xor     r8d, r8d; dy
+0x18041bbf2  lea     rcx, [rbp+rc]; lprc
+0x18041bbf6  call    cs:__imp_OffsetRect
+0x18041bbfc  mov     r15d, 4
+0x18041bc02  lea     r14, qword_180C170E8
+0x18041bc09  lea     rsi, ??_7ReplayController@Art@@6B?$TRefCount@VCThreadingPolicyMultiThread@Ofc@@@Ofc@@@; const Art::ReplayController::`vftable'{for `Ofc::TRefCount<Ofc::CThreadingPolicyMultiThread>'}
+0x18041bc10  mov     edx, r15d
+0x18041bc13  mov     rcx, r13
+0x18041bc16  call    ?GetColorRGB@ColorSchemeDlg@Art@@AEAAKW4ColorSchemeIndex@2@@Z; Art::ColorSchemeDlg::GetColorRGB(Art::ColorSchemeIndex)
+0x18041bc1b  mov     r8d, eax; unsigned int
+0x18041bc1e  mov     rdx, rbx; HDC
+0x18041bc21  lea     rcx, [rbp+ho]; this
+0x18041bc25  call    ??0CHBrush@Ofc@@QEAA@PEAUHDC__@@K@Z; Ofc::CHBrush::CHBrush(HDC__ *,ulong)
+0x18041bc2a  mov     r9d, [rbp+rc.right]
+0x18041bc2e  inc     r9d; right
+0x18041bc31  mov     ecx, [rbp+rc.bottom]
+0x18041bc34  movd    xmm1, ecx
+0x18041bc38  cvtdq2pd xmm1, xmm1
+0x18041bc3c  mov     eax, ecx
+0x18041bc3e  sub     eax, [rbp+rc.top]
+0x18041bc41  movd    xmm0, eax
+0x18041bc45  cvtdq2pd xmm0, xmm0
+0x18041bc49  mulsd   xmm0, qword ptr [r14]
+0x18041bc4e  subsd   xmm1, xmm0
+0x18041bc52  cvttsd2si r8d, xmm1; top
+0x18041bc57  mov     [rsp+80h+bottom], ecx; bottom
+0x18041bc5b  mov     edx, [rbp+rc.left]; left
+0x18041bc5e  mov     rcx, rbx; hdc
+0x18041bc61  call    cs:__imp_Rectangle
+0x18041bc67  xor     r8d, r8d; dy
+0x18041bc6a  mov     edx, r12d; dx
+0x18041bc6d  lea     rcx, [rbp+rc]; lprc
+0x18041bc71  call    cs:__imp_OffsetRect
+0x18041bc77  mov     rdx, [rbp+h]; h
+0x18041bc7b  test    rdx, rdx
+0x18041bc7e  jz      short loc_18041BC8A
+0x18041bc80  mov     rcx, [rbp+hdc]; hdc
+0x18041bc84  call    cs:__imp_SelectObject
+0x18041bc8a  mov     rcx, [rbp+ho]; ho
+0x18041bc8e  test    rcx, rcx
+0x18041bc91  jz      short loc_18041BC99
+0x18041bc93  call    cs:__imp_DeleteObject
+0x18041bc99  inc     r15d
+0x18041bc9c  add     r14, 8
+0x18041bca0  cmp     r14, rsi
+0x18041bca3  jl      loc_18041BC10
+0x18041bca9  test    rdi, rdi
+0x18041bcac  mov     rsi, [rbp+var_50]
+0x18041bcb0  jz      short loc_18041BCBE
+0x18041bcb2  mov     rdx, rdi; h
+0x18041bcb5  mov     rcx, rbx; hdc
+0x18041bcb8  call    cs:__imp_SelectObject
+0x18041bcbe  test    rsi, rsi
+0x18041bcc1  jz      short loc_18041BCCC
+0x18041bcc3  mov     rcx, rsi; ho
+0x18041bcc6  call    cs:__imp_DeleteObject
+0x18041bccc  mov     rcx, [rbp+var_10]
+0x18041bcd0  xor     rcx, rsp; StackCookie
+0x18041bcd3  call    __security_check_cookie
+0x18041bcd8  mov     rbx, [rsp+80h+arg_18]
+0x18041bce0  add     rsp, 80h
+0x18041bce7  pop     r15
+0x18041bce9  pop     r14
+0x18041bceb  pop     r13
+0x18041bced  pop     r12
+0x18041bcef  pop     rdi
+0x18041bcf0  pop     rsi
+0x18041bcf1  pop     rbp
+0x18041bcf2  retn
+```

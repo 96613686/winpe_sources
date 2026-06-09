@@ -1,0 +1,150 @@
+# Art::NativeExecuteActionControlUser::OnSetValue(void)
+
+- ea: `0x1809d5220`
+- end: `0x1809d75c1`
+- name: `?OnSetValue@NativeExecuteActionControlUser@Art@@MEAA_NXZ`
+- size: `9121`
+- prototype: `bool __fastcall(Art::NativeExecuteActionControlUser *__hidden this)`
+- caller_count: `0`
+- callee_count: `110`
+- tags: `registry_config`
+
+## callees
+
+- `0x18000adb0`
+- `0x18000aee0`
+- `0x18000b458`
+- `0x18000e2a0`
+- `0x18000eb20`
+- `0x18000f840`
+- `0x180028b00`
+- `0x18002a690`
+- `0x18003423c`
+- `0x180062f30`
+- `0x18007b180`
+- `0x180084c30`
+- `0x1800b9620`
+- `0x18010db54`
+- `0x180113048`
+- `0x18011eb20`
+- `0x18011ee40`
+- `0x18011f330`
+- `0x180120a60`
+- `0x1801216d0`
+- `0x180124600`
+- `0x1801281f0`
+- `0x1801285f0`
+- `0x180128610`
+- `0x180128640`
+- `0x180138c9c`
+- `0x180140840`
+- `0x18015b550`
+- `0x1801b1860`
+- `0x1801e5ef0`
+- `0x1801fb1f8`
+- `0x180208600`
+- `0x18020c69c`
+- `0x180210de4`
+- `0x18023ff44`
+- `0x18026c290`
+- `0x180271700`
+- `0x1802770a0`
+- `0x180279000`
+- `0x180279010`
+- `0x180279030`
+- `0x180279050`
+- `0x18027c4c0`
+- `0x18028f4e0`
+- `0x1802c6740`
+- `0x1802dcaf4`
+- `0x1802ddd08`
+- `0x1802ded54`
+- `0x1802e34d0`
+- `0x180356970`
+
+## import_xrefs
+
+- `KERNEL32!DecodePointer` at `0x1809d6b45`
+- `KERNEL32!DecodePointer` at `0x1809d6b5c`
+- `KERNEL32!DecodePointer` at `0x1809d6b45`
+- `KERNEL32!DecodePointer` at `0x1809d6b5c`
+- `MSO!__imp_?FAddFavoritePen@CInkStyleGalleryUser@@SA_NPEBUInkStyleInfo@@@Z` at `0x1809d6492`
+- `MSO!__imp_?FAddFavoritePen@CInkStyleGalleryUser@@SA_NPEBUInkStyleInfo@@@Z` at `0x1809d6492`
+- `Mso98Win32Client!__imp_?GetTcidXml@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5adf`
+- `Mso98Win32Client!__imp_?GetTcidXml@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5adf`
+- `Mso98Win32Client!__imp_MsoFShowHelpForHelpId` at `0x1809d69d9`
+- `Mso98Win32Client!__imp_MsoFShowHelpForHelpId` at `0x1809d69d9`
+- `Mso98Win32Client!__imp_?GetOfficeSpace@DataSourceBase@OfficeSpace@@IEBAPEAUIOfficeSpace@2@XZ` at `0x1809d589f`
+- `Mso98Win32Client!__imp_?GetOfficeSpace@DataSourceBase@OfficeSpace@@IEBAPEAUIOfficeSpace@2@XZ` at `0x1809d6372`
+- `Mso98Win32Client!__imp_?GetOfficeSpace@DataSourceBase@OfficeSpace@@IEBAPEAUIOfficeSpace@2@XZ` at `0x1809d649b`
+- `Mso98Win32Client!__imp_?GetOfficeSpace@DataSourceBase@OfficeSpace@@IEBAPEAUIOfficeSpace@2@XZ` at `0x1809d589f`
+- `Mso98Win32Client!__imp_?GetOfficeSpace@DataSourceBase@OfficeSpace@@IEBAPEAUIOfficeSpace@2@XZ` at `0x1809d6372`
+- `Mso98Win32Client!__imp_?GetOfficeSpace@DataSourceBase@OfficeSpace@@IEBAPEAUIOfficeSpace@2@XZ` at `0x1809d649b`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5282`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d57b2`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d59b2`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5bcd`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5bf2`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5fc8`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d61e6`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d6274`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d62e8`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d6302`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d64d9`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d64f1`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d6581`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d67e8`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d67f8`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d6f0a`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5282`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d57b2`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d59b2`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5bcd`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5bf2`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d5fc8`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d61e6`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d6274`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d62e8`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d6302`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d64d9`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d64f1`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d6581`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d67e8`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d67f8`
+- `Mso98Win32Client!__imp_?GetTcid@DataSourceBase@OfficeSpace@@IEBAHXZ` at `0x1809d6f0a`
+- `mso40uiWin32Client!__imp_?GetAPI@Core@Help@Mso@@YAAEAVIMsoHelpCoreApi@123@W4MsoHelpInvocationContext@@PEB_W@Z` at `0x1809d69e8`
+- `mso40uiWin32Client!__imp_?GetAPI@Core@Help@Mso@@YAAEAVIMsoHelpCoreApi@123@W4MsoHelpInvocationContext@@PEB_W@Z` at `0x1809d69e8`
+- `mso40uiWin32Client!__imp_?FAutoAltTextOptionFixEnabled@Graphics@Mso@@YA_NXZ` at `0x1809d6e1c`
+- `mso40uiWin32Client!__imp_?FAutoAltTextOptionFixEnabled@Graphics@Mso@@YA_NXZ` at `0x1809d6e1c`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1809d6c49`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1809d6c49`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1809d5e87`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1809d62a2`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1809d6f8d`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1809d71c0`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1809d5e87`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1809d62a2`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1809d6f8d`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryOnOOM@@YAXI@Z` at `0x1809d71c0`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1809d6253`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1809d6f3e`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1809d717f`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1809d73c4`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1809d6253`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1809d6f3e`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1809d717f`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1809d73c4`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1809d5e74`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1809d6292`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1809d6f7a`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1809d71b0`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1809d5e74`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1809d6292`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1809d6f7a`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x1809d71b0`
+
+## pseudocode
+
+```c
+
+```

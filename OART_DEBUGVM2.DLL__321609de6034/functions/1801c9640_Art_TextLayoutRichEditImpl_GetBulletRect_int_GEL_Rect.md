@@ -1,0 +1,71 @@
+# Art::TextLayoutRichEditImpl::GetBulletRect(int,GEL::Rect &)
+
+- ea: `0x1801c9640`
+- end: `0x1801c9ae4`
+- name: `?GetBulletRect@TextLayoutRichEditImpl@Art@@UEBAXHAEAURect@GEL@@@Z`
+- size: `1188`
+- prototype: `void __fastcall(Art::TextLayoutRichEditImpl *__hidden this, int, struct GEL::Rect *)`
+- caller_count: `0`
+- callee_count: `13`
+- tags: ``
+
+## callees
+
+- `0x180006390`
+- `0x18009767c`
+- `0x1800b98d0`
+- `0x1800f9cc0`
+- `0x1801c9640`
+- `0x180239330`
+- `0x180277090`
+- `0x180279030`
+- `0x180279050`
+- `0x1802c8bdc`
+- `0x1804599f0`
+- `0x1806bc4f0`
+- `0x18097912c`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentThreadId` at `0x1801c96c0`
+- `KERNEL32!GetCurrentThreadId` at `0x1801c96c0`
+- `KERNEL32!ResetEvent` at `0x1801c9992`
+- `KERNEL32!ResetEvent` at `0x1801c9992`
+- `KERNEL32!SetEvent` at `0x1801c9a86`
+- `KERNEL32!SetEvent` at `0x1801c9a86`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1801c99b6`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1801c99b6`
+- `MSVCP140!_Mtx_unlock` at `0x1801c9735`
+- `MSVCP140!_Mtx_unlock` at `0x1801c98fa`
+- `MSVCP140!_Mtx_unlock` at `0x1801c99a2`
+- `MSVCP140!_Mtx_unlock` at `0x1801c9735`
+- `MSVCP140!_Mtx_unlock` at `0x1801c98fa`
+- `MSVCP140!_Mtx_unlock` at `0x1801c99a2`
+- `MSVCP140!_Mtx_lock` at `0x1801c96d4`
+- `MSVCP140!_Mtx_lock` at `0x1801c983b`
+- `MSVCP140!_Mtx_lock` at `0x1801c96d4`
+- `MSVCP140!_Mtx_lock` at `0x1801c983b`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801c99d7`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801c99e3`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801c99f6`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801c9a02`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801c99d7`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801c99e3`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801c99f6`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801c9a02`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801c994d`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801c9aab`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801c9ad3`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801c994d`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801c9aab`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801c9ad3`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1801c9934`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1801c9a98`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1801c9934`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1801c9a98`
+
+## pseudocode
+
+```c
+
+```

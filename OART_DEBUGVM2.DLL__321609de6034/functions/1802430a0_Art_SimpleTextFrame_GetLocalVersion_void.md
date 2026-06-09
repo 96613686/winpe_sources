@@ -1,0 +1,65 @@
+# Art::SimpleTextFrame::GetLocalVersion(void)
+
+- ea: `0x1802430a0`
+- end: `0x180243519`
+- name: `?GetLocalVersion@SimpleTextFrame@Art@@UEBA?AVLocalVersion@2@XZ`
+- size: `1145`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `9`
+- tags: ``
+
+## callees
+
+- `0x180006390`
+- `0x1800f96e0`
+- `0x180239330`
+- `0x1802430a0`
+- `0x180277090`
+- `0x180279050`
+- `0x18028a9c0`
+- `0x1804599f0`
+- `0x18055d6b0`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentThreadId` at `0x180243106`
+- `KERNEL32!GetCurrentThreadId` at `0x180243106`
+- `KERNEL32!ResetEvent` at `0x18024348d`
+- `KERNEL32!ResetEvent` at `0x18024348d`
+- `KERNEL32!SetEvent` at `0x18024350d`
+- `KERNEL32!SetEvent` at `0x18024350d`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1802434b2`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1802434b2`
+- `MSVCP140!_Mtx_unlock` at `0x180243183`
+- `MSVCP140!_Mtx_unlock` at `0x180243296`
+- `MSVCP140!_Mtx_unlock` at `0x18024349d`
+- `MSVCP140!_Mtx_unlock` at `0x180243183`
+- `MSVCP140!_Mtx_unlock` at `0x180243296`
+- `MSVCP140!_Mtx_unlock` at `0x18024349d`
+- `MSVCP140!_Mtx_lock` at `0x18024311f`
+- `MSVCP140!_Mtx_lock` at `0x1802431d9`
+- `MSVCP140!_Mtx_lock` at `0x18024311f`
+- `MSVCP140!_Mtx_lock` at `0x1802431d9`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x18024336f`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x180243380`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x18024338c`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x180243398`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x18024336f`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x180243380`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x18024338c`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x180243398`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1802432c4`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1802432c4`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x180243342`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x180243342`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1802433d1`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1802433d1`
+- `Mso20Win32Client!__imp_?ThrowOOM@@YAXXZ` at `0x180243350`
+- `Mso20Win32Client!__imp_?ThrowOOM@@YAXXZ` at `0x180243350`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,72 @@
+# Dr::ClipboardHelper::FTransferMetafileToBlip(ushort,Ofc::TCntPtr<IDataObject> const &,Art::Blip &)
+
+- ea: `0x18061e930`
+- end: `0x18061ed5c`
+- name: `?FTransferMetafileToBlip@ClipboardHelper@Dr@@SA_NGAEBV?$TCntPtr@UIDataObject@@@Ofc@@AEAVBlip@Art@@@Z`
+- size: `1068`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `10`
+- tags: ``
+
+## callees
+
+- `0x180010220`
+- `0x18004bd90`
+- `0x1801afec0`
+- `0x180208b30`
+- `0x180208ba0`
+- `0x180208c80`
+- `0x180279030`
+- `0x180279050`
+- `0x18061e930`
+- `0x1806acd04`
+
+## import_xrefs
+
+- `KERNEL32!GlobalAlloc` at `0x18061ea83`
+- `KERNEL32!GlobalAlloc` at `0x18061ea83`
+- `KERNEL32!GlobalLock` at `0x18061eaa0`
+- `KERNEL32!GlobalLock` at `0x18061eba8`
+- `KERNEL32!GlobalLock` at `0x18061eaa0`
+- `KERNEL32!GlobalLock` at `0x18061eba8`
+- `KERNEL32!GlobalUnlock` at `0x18061eacc`
+- `KERNEL32!GlobalUnlock` at `0x18061ecb0`
+- `KERNEL32!GlobalUnlock` at `0x18061ed19`
+- `KERNEL32!GlobalUnlock` at `0x18061eacc`
+- `KERNEL32!GlobalUnlock` at `0x18061ecb0`
+- `KERNEL32!GlobalUnlock` at `0x18061ed19`
+- `KERNEL32!GlobalFree` at `0x18061eaee`
+- `KERNEL32!GlobalFree` at `0x18061eb16`
+- `KERNEL32!GlobalFree` at `0x18061eaee`
+- `KERNEL32!GlobalFree` at `0x18061eb16`
+- `MSO!__imp_?MsoCleanMFData@@YAXPEAUMSOMFDATA@@@Z` at `0x18061ec5f`
+- `MSO!__imp_?MsoCleanMFData@@YAXPEAUMSOMFDATA@@@Z` at `0x18061ec5f`
+- `MSO!__imp_?MsoMFDataFromMetafilepict@@YAXPEAUMSOMFDATA@@PEAUtagMETAFILEPICT@@@Z` at `0x18061ec0e`
+- `MSO!__imp_?MsoMFDataFromMetafilepict@@YAXPEAUMSOMFDATA@@PEAUtagMETAFILEPICT@@@Z` at `0x18061ec0e`
+- `MSO!__imp_?MsoFCreateMFBlip@@YAHPEAPEAUIMsoBlip@@PEAUMSOMFDATA@@@Z` at `0x18061ec40`
+- `MSO!__imp_?MsoFCreateMFBlip@@YAHPEAPEAUIMsoBlip@@PEAUMSOMFDATA@@@Z` at `0x18061ec40`
+- `MSO!__imp_?MsoInitMFData@@YAXPEAUMSOMFDATA@@@Z` at `0x18061ebf6`
+- `MSO!__imp_?MsoInitMFData@@YAXPEAUMSOMFDATA@@@Z` at `0x18061ebf6`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18061e9ec`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18061ed29`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18061e9ec`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18061ed29`
+- `GDI32!GetEnhMetaFileBits` at `0x18061ea6d`
+- `GDI32!GetEnhMetaFileBits` at `0x18061eab9`
+- `GDI32!GetEnhMetaFileBits` at `0x18061ea6d`
+- `GDI32!GetEnhMetaFileBits` at `0x18061eab9`
+- `ole32!CreateStreamOnHGlobal` at `0x18061eadc`
+- `ole32!CreateStreamOnHGlobal` at `0x18061eadc`
+- `ole32!ReleaseStgMedium` at `0x18061eb3e`
+- `ole32!ReleaseStgMedium` at `0x18061ecdc`
+- `ole32!ReleaseStgMedium` at `0x18061ed35`
+- `ole32!ReleaseStgMedium` at `0x18061eb3e`
+- `ole32!ReleaseStgMedium` at `0x18061ecdc`
+- `ole32!ReleaseStgMedium` at `0x18061ed35`
+
+## pseudocode
+
+```c
+
+```

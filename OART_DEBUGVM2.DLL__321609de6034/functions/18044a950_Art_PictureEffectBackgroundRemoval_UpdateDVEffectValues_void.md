@@ -1,0 +1,67 @@
+# Art::PictureEffectBackgroundRemoval::UpdateDVEffectValues(void)
+
+- ea: `0x18044a950`
+- end: `0x18044ae7b`
+- name: `?UpdateDVEffectValues@PictureEffectBackgroundRemoval@Art@@MEAAXXZ`
+- size: `1323`
+- prototype: `void __fastcall(Art::PictureEffectBackgroundRemoval *__hidden this)`
+- caller_count: `3`
+- callee_count: `9`
+- tags: `installer_update`
+
+## callers
+
+- `0x18044ca30`
+- `0x18044d620`
+- `0x1808bcf30`
+
+## callees
+
+- `0x18000e1e0`
+- `0x180025430`
+- `0x180139ca0`
+- `0x1801dce3c`
+- `0x180279050`
+- `0x1802d56d0`
+- `0x18044a950`
+- `0x18044b440`
+- `0x18044d660`
+
+## import_xrefs
+
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18044ae74`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18044ae74`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044aa90`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044aafd`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044ab67`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044abcf`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044acd3`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044ade3`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044aa90`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044aafd`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044ab67`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044abcf`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044acd3`
+- `OLEAUT32!__imp_SysAllocString` at `0x18044ade3`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044aadf`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044ab49`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044abb1`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044ac19`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044ad19`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044ae29`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044aadf`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044ab49`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044abb1`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044ac19`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044ad19`
+- `OLEAUT32!__imp_SysFreeString` at `0x18044ae29`
+- `OLEAUT32!__imp_VariantInit` at `0x18044adb8`
+- `OLEAUT32!__imp_VariantInit` at `0x18044adb8`
+- `OLEAUT32!__imp_VariantCopy` at `0x18044adc6`
+- `OLEAUT32!__imp_VariantCopy` at `0x18044adc6`
+
+## pseudocode
+
+```c
+
+```

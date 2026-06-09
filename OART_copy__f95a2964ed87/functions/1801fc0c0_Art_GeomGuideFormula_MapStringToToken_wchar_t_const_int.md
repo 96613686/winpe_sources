@@ -1,0 +1,107 @@
+# Art::GeomGuideFormula::MapStringToToken(wchar_t const *,int)
+
+- ea: `0x1801fc0c0`
+- end: `0x1801fc73e`
+- name: `?MapStringToToken@GeomGuideFormula@Art@@SAHPEB_WH@Z`
+- size: `1662`
+- prototype: `__int64 __fastcall(const wchar_t *, int)`
+- caller_count: `31`
+- callee_count: `13`
+- tags: ``
+
+## callers
+
+- `0x1801fc08c`
+- `0x1801fe180`
+- `0x1801feb44`
+- `0x180377c0c`
+- `0x18037841c`
+- `0x1803788fc`
+- `0x180378c60`
+- `0x180379830`
+- `0x18037a9b0`
+- `0x180391ab0`
+- `0x180393180`
+- `0x1803938dc`
+- `0x180394160`
+- `0x1804bd0d0`
+- `0x1804bde8c`
+- `0x18059768c`
+- `0x1805dc634`
+- `0x1805ea3c8`
+- `0x1805ebe58`
+- `0x180600d90`
+- `0x18060ce70`
+- `0x180610ea8`
+- `0x180612914`
+- `0x18061a798`
+- `0x180628d24`
+- `0x18062dc90`
+- `0x180632120`
+- `0x18063fbc0`
+- `0x180647204`
+- `0x18064b034`
+- `0x180671504`
+
+## callees
+
+- `0x180019e80`
+- `0x18004ccfc`
+- `0x1800740e0`
+- `0x180075474`
+- `0x1800e7040`
+- `0x1800e7fe0`
+- `0x1801420e0`
+- `0x18016d490`
+- `0x180176c38`
+- `0x1801fc0c0`
+- `0x180278e70`
+- `0x180279050`
+- `0x1802c8bdc`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentThreadId` at `0x1801fc252`
+- `KERNEL32!GetCurrentThreadId` at `0x1801fc252`
+- `KERNEL32!ResetEvent` at `0x1801fc5be`
+- `KERNEL32!ResetEvent` at `0x1801fc5be`
+- `KERNEL32!SetEvent` at `0x1801fc6e4`
+- `KERNEL32!SetEvent` at `0x1801fc6e4`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1801fc5dd`
+- `KERNEL32!WaitForSingleObjectEx` at `0x1801fc5dd`
+- `MSVCP140!_Mtx_unlock` at `0x1801fc2a4`
+- `MSVCP140!_Mtx_unlock` at `0x1801fc4d6`
+- `MSVCP140!_Mtx_unlock` at `0x1801fc5cb`
+- `MSVCP140!_Mtx_unlock` at `0x1801fc2a4`
+- `MSVCP140!_Mtx_unlock` at `0x1801fc4d6`
+- `MSVCP140!_Mtx_unlock` at `0x1801fc5cb`
+- `MSVCP140!_Mtx_lock` at `0x1801fc269`
+- `MSVCP140!_Mtx_lock` at `0x1801fc478`
+- `MSVCP140!_Mtx_lock` at `0x1801fc269`
+- `MSVCP140!_Mtx_lock` at `0x1801fc478`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801fc659`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801fc665`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801fc678`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801fc684`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801fc659`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801fc665`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801fc678`
+- `MSVCP140!?_Throw_Cpp_error@std@@YAXH@Z` at `0x1801fc684`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801fc718`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801fc728`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801fc718`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1801fc728`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1801fc40e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1801fc4f7`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1801fc40e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1801fc4f7`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1801fc53c`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1801fc565`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1801fc53c`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1801fc565`
+
+## pseudocode
+
+```c
+
+```

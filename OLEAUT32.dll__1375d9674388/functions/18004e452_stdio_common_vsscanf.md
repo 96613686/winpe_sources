@@ -1,0 +1,41 @@
+# __stdio_common_vsscanf
+
+- ea: `0x18004e452`
+- end: `0x18004e458`
+- name: `__stdio_common_vsscanf`
+- size: `6`
+- prototype: `int __cdecl(unsigned __int64 Options, const char *Buffer, size_t BufferCount, const char *Format, _locale_t Locale, va_list ArgList)`
+- caller_count: `1`
+- callee_count: `0`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18004e5f4`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!_o___stdio_common_vsscanf` at `0x18004e452`
+
+## pseudocode
+
+```c
+// attributes: thunk
+int __cdecl _stdio_common_vsscanf(
+        unsigned __int64 Options,
+        const char *Buffer,
+        size_t BufferCount,
+        const char *Format,
+        _locale_t Locale,
+        va_list ArgList)
+{
+  return _o___stdio_common_vsscanf(Options, Buffer, BufferCount, Format, Locale, ArgList);
+}
+
+```
+
+## disassembly
+
+```asm
+0x18004e452  jmp     cs:__imp__o___stdio_common_vsscanf
+```
