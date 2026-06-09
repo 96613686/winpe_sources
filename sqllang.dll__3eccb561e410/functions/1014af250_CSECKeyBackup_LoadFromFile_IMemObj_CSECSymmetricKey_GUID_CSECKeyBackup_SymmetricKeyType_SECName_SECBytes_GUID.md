@@ -1,0 +1,248 @@
+# CSECKeyBackup::LoadFromFile(IMemObj *,CSECSymmetricKey &,_GUID &,CSECKeyBackup::SymmetricKeyType &,SECName &,SECBytes &,_GUID)
+
+- ea: `0x1014af250`
+- end: `0x1014b1739`
+- name: `?LoadFromFile@CSECKeyBackup@@SA?AVCSECCryptoError@@PEAVIMemObj@@AEAVCSECSymmetricKey@@AEAU_GUID@@AEAW4SymmetricKeyType@1@AEAUSECName@@AEAUSECBytes@@U5@@Z`
+- size: `9449`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `22`
+- tags: `file_ops, service_task`
+
+## callers
+
+- `0x1014a48b0`
+
+## callees
+
+- `0x100401070`
+- `0x100401090`
+- `0x1004076a0`
+- `0x100430d60`
+- `0x100752790`
+- `0x100754350`
+- `0x100755960`
+- `0x100755b10`
+- `0x1007560e0`
+- `0x10077e1f0`
+- `0x10077e300`
+- `0x10138b360`
+- `0x10149cf70`
+- `0x10149e850`
+- `0x1014a00e0`
+- `0x1014a0290`
+- `0x1014a12e0`
+- `0x1014a2c90`
+- `0x1014a5870`
+- `0x1014a66b0`
+- `0x1014a6790`
+- `0x1014af250`
+
+## import_xrefs
+
+- `KERNEL32!GetLastError` at `0x1014af517`
+- `KERNEL32!GetLastError` at `0x1014b0245`
+- `KERNEL32!GetLastError` at `0x1014b0419`
+- `KERNEL32!GetLastError` at `0x1014b0ce6`
+- `KERNEL32!GetLastError` at `0x1014b1395`
+- `KERNEL32!GetLastError` at `0x1014b1463`
+- `KERNEL32!GetLastError` at `0x1014b1582`
+- `KERNEL32!GetLastError` at `0x1014b1650`
+- `KERNEL32!GetLastError` at `0x1014af517`
+- `KERNEL32!GetLastError` at `0x1014b0245`
+- `KERNEL32!GetLastError` at `0x1014b0419`
+- `KERNEL32!GetLastError` at `0x1014b0ce6`
+- `KERNEL32!GetLastError` at `0x1014b1395`
+- `KERNEL32!GetLastError` at `0x1014b1463`
+- `KERNEL32!GetLastError` at `0x1014b1582`
+- `KERNEL32!GetLastError` at `0x1014b1650`
+- `KERNEL32!CloseHandle` at `0x1014af573`
+- `KERNEL32!CloseHandle` at `0x1014af793`
+- `KERNEL32!CloseHandle` at `0x1014af982`
+- `KERNEL32!CloseHandle` at `0x1014afac4`
+- `KERNEL32!CloseHandle` at `0x1014afc1b`
+- `KERNEL32!CloseHandle` at `0x1014afd88`
+- `KERNEL32!CloseHandle` at `0x1014afef7`
+- `KERNEL32!CloseHandle` at `0x1014b006a`
+- `KERNEL32!CloseHandle` at `0x1014b031d`
+- `KERNEL32!CloseHandle` at `0x1014b04f0`
+- `KERNEL32!CloseHandle` at `0x1014b06f6`
+- `KERNEL32!CloseHandle` at `0x1014b08b9`
+- `KERNEL32!CloseHandle` at `0x1014b0a7e`
+- `KERNEL32!CloseHandle` at `0x1014b0c37`
+- `KERNEL32!CloseHandle` at `0x1014b0e06`
+- `KERNEL32!CloseHandle` at `0x1014b0f9f`
+- `KERNEL32!CloseHandle` at `0x1014b1183`
+- `KERNEL32!CloseHandle` at `0x1014b131b`
+- `KERNEL32!CloseHandle` at `0x1014b13e9`
+- `KERNEL32!CloseHandle` at `0x1014b14b7`
+- `KERNEL32!CloseHandle` at `0x1014b15d6`
+- `KERNEL32!CloseHandle` at `0x1014b16aa`
+- `KERNEL32!CloseHandle` at `0x1014af573`
+- `KERNEL32!CloseHandle` at `0x1014af793`
+- `KERNEL32!CloseHandle` at `0x1014af982`
+- `KERNEL32!CloseHandle` at `0x1014afac4`
+- `KERNEL32!CloseHandle` at `0x1014afc1b`
+- `KERNEL32!CloseHandle` at `0x1014afd88`
+- `KERNEL32!CloseHandle` at `0x1014afef7`
+- `KERNEL32!CloseHandle` at `0x1014b006a`
+- `KERNEL32!CloseHandle` at `0x1014b031d`
+- `KERNEL32!CloseHandle` at `0x1014b04f0`
+- `KERNEL32!CloseHandle` at `0x1014b06f6`
+- `KERNEL32!CloseHandle` at `0x1014b08b9`
+- `KERNEL32!CloseHandle` at `0x1014b0a7e`
+- `KERNEL32!CloseHandle` at `0x1014b0c37`
+- `KERNEL32!CloseHandle` at `0x1014b0e06`
+- `KERNEL32!CloseHandle` at `0x1014b0f9f`
+- `KERNEL32!CloseHandle` at `0x1014b1183`
+- `KERNEL32!CloseHandle` at `0x1014b131b`
+- `KERNEL32!CloseHandle` at `0x1014b13e9`
+- `KERNEL32!CloseHandle` at `0x1014b14b7`
+- `KERNEL32!CloseHandle` at `0x1014b15d6`
+- `KERNEL32!CloseHandle` at `0x1014b16aa`
+- `KERNEL32!ReadFile` at `0x1014af495`
+- `KERNEL32!ReadFile` at `0x1014af5f8`
+- `KERNEL32!ReadFile` at `0x1014af69b`
+- `KERNEL32!ReadFile` at `0x1014af495`
+- `KERNEL32!ReadFile` at `0x1014af5f8`
+- `KERNEL32!ReadFile` at `0x1014af69b`
+- `KERNEL32!GetFileType` at `0x1014af435`
+- `KERNEL32!GetFileType` at `0x1014af435`
+- `secforwarder!BCryptDestroyHash` at `0x1014af908`
+- `secforwarder!BCryptDestroyHash` at `0x1014afa4a`
+- `secforwarder!BCryptDestroyHash` at `0x1014afba1`
+- `secforwarder!BCryptDestroyHash` at `0x1014afd0e`
+- `secforwarder!BCryptDestroyHash` at `0x1014afe7d`
+- `secforwarder!BCryptDestroyHash` at `0x1014afff0`
+- `secforwarder!BCryptDestroyHash` at `0x1014b02a2`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0476`
+- `secforwarder!BCryptDestroyHash` at `0x1014b061a`
+- `secforwarder!BCryptDestroyHash` at `0x1014b067c`
+- `secforwarder!BCryptDestroyHash` at `0x1014b07dd`
+- `secforwarder!BCryptDestroyHash` at `0x1014b083f`
+- `secforwarder!BCryptDestroyHash` at `0x1014b09a2`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0a04`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0b5b`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0bbd`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0d2a`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0d8c`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0ec3`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0f25`
+- `secforwarder!BCryptDestroyHash` at `0x1014b10a7`
+- `secforwarder!BCryptDestroyHash` at `0x1014b1109`
+- `secforwarder!BCryptDestroyHash` at `0x1014b123f`
+- `secforwarder!BCryptDestroyHash` at `0x1014b12a1`
+- `secforwarder!BCryptDestroyHash` at `0x1014af908`
+- `secforwarder!BCryptDestroyHash` at `0x1014afa4a`
+- `secforwarder!BCryptDestroyHash` at `0x1014afba1`
+- `secforwarder!BCryptDestroyHash` at `0x1014afd0e`
+- `secforwarder!BCryptDestroyHash` at `0x1014afe7d`
+- `secforwarder!BCryptDestroyHash` at `0x1014afff0`
+- `secforwarder!BCryptDestroyHash` at `0x1014b02a2`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0476`
+- `secforwarder!BCryptDestroyHash` at `0x1014b061a`
+- `secforwarder!BCryptDestroyHash` at `0x1014b067c`
+- `secforwarder!BCryptDestroyHash` at `0x1014b07dd`
+- `secforwarder!BCryptDestroyHash` at `0x1014b083f`
+- `secforwarder!BCryptDestroyHash` at `0x1014b09a2`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0a04`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0b5b`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0bbd`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0d2a`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0d8c`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0ec3`
+- `secforwarder!BCryptDestroyHash` at `0x1014b0f25`
+- `secforwarder!BCryptDestroyHash` at `0x1014b10a7`
+- `secforwarder!BCryptDestroyHash` at `0x1014b1109`
+- `secforwarder!BCryptDestroyHash` at `0x1014b123f`
+- `secforwarder!BCryptDestroyHash` at `0x1014b12a1`
+- `sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z` at `0x1014af36d`
+- `sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z` at `0x1014af36d`
+- `sqldk!SystemThread_TlsIndex` at `0x1014af32e`
+- `sqldk!SystemThread_TlsIndex` at `0x1014af382`
+- `sqldk!SystemThread_TlsIndex` at `0x1014af6dc`
+- `sqldk!SystemThread_TlsOffset` at `0x1014af337`
+- `sqldk!SystemThread_TlsOffset` at `0x1014af38b`
+- `sqldk!SystemThread_TlsOffset` at `0x1014af6e5`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1014af350`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1014af3a6`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1014af350`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1014af3a6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014af777`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014af807`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014af8f5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014af91a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014af92c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014af93e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014af9e7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afa37`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afa5c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afa6e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afa80`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afb29`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afb8e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afbb3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afbc5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afbd7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afcfb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afd20`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afd32`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afd44`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afded`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afe6a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afe8f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afea1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014afeb3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014aff5c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014affdd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0002`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0014`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0026`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b00cf`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b018f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b02b4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b02c6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b02d8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0488`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b049a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b04ac`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0607`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b062c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b063e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0650`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b068e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b06a0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b06b2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b075b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b07ca`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b07ef`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0801`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0813`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0851`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0863`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0875`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b091e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b098f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b09b4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b09c6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b09d8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0a16`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0a28`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0a3a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0ae3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0b48`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0b6d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0b7f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0b91`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0bcf`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0be1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0bf3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0c9c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0d3c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1014b0d4e`
+
+## pseudocode
+
+```c
+
+```

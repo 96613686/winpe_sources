@@ -1,0 +1,219 @@
+# GetEventSourceObjectInfoForEUNC(IMetadataAccess *,IMEDDatabase *,IMemObj *,uchar,ulong,ulong)
+
+- ea: `0x100dde2f0`
+- end: `0x100ddf8bb`
+- name: `?GetEventSourceObjectInfoForEUNC@@YAPEAVCEventSourceObjectInfo@@PEAVIMetadataAccess@@PEAVIMEDDatabase@@PEAVIMemObj@@EKK@Z`
+- size: `5579`
+- prototype: `struct CEventSourceObjectInfo *__usercall@<rax>(struct IMetadataAccess *@<rcx>, struct IMEDDatabase *@<rdx>, struct IMemObj *@<r8>, unsigned __int8@<r9b>, unsigned int, unsigned int)`
+- caller_count: `14`
+- callee_count: `7`
+- tags: `registry_config, service_task`
+
+## callers
+
+- `0x100b6ba30`
+- `0x100c2e8f0`
+- `0x100d45590`
+- `0x100d460c0`
+- `0x100d473c0`
+- `0x100d479b0`
+- `0x100d47f40`
+- `0x100d48850`
+- `0x100ddb130`
+- `0x100ddb450`
+- `0x100ddb6e0`
+- `0x100ddf9d0`
+- `0x100ddfcf0`
+- `0x100de0b40`
+
+## callees
+
+- `0x100401070`
+- `0x100401433`
+- `0x100bacaa0`
+- `0x100dd5940`
+- `0x100dde2f0`
+- `0x100de2280`
+- `0x101686530`
+
+## import_xrefs
+
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde437`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde4a0`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde50a`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde57e`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde654`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde725`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde77f`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde7d9`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde833`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde88d`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100dde959`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddeb7c`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddef97`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf032`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf076`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf0f6`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf1ac`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf220`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf294`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf308`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf3da`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf44f`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf4c4`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf538`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf5ac`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf624`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf6dc`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf751`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf7c5`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x100ddf83b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100dde3ab`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100dde3ab`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100ddf14c`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100ddf14c`
+- `sqldk!SystemThread_TlsIndex` at `0x100dde358`
+- `sqldk!SystemThread_TlsIndex` at `0x100ddeca9`
+- `sqldk!SystemThread_TlsOffset` at `0x100dde361`
+- `sqldk!SystemThread_TlsOffset` at `0x100ddecb2`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x100ddef04`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x100ddef55`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x100ddf888`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x100ddef04`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x100ddef55`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x100ddf888`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x100dde37c`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x100ddeccd`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x100dde37c`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x100ddeccd`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde447`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde4b0`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde51a`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde58e`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde664`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde735`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde78f`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde7e9`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde843`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde89d`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde969`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddeb8c`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddefa7`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf042`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf086`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf106`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf1bc`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf230`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf2a4`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf318`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf3ea`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf45f`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf4d4`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf548`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf5bc`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf634`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf6ec`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf761`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf7d5`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf84b`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde447`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde4b0`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde51a`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde58e`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde664`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde735`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde78f`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde7e9`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde843`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde89d`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100dde969`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddeb8c`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddefa7`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf042`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf086`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf106`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf1bc`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf230`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf2a4`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf318`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf3ea`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf45f`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf4d4`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf548`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf5bc`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf634`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf6ec`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf761`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf7d5`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x100ddf84b`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde452`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde4bb`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde525`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde599`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde66f`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde740`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde79a`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde7f4`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde84e`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde8a8`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde974`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddeb97`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddefb2`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf09e`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf111`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf1c7`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf23b`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf2af`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf323`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf3f5`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf46a`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf4df`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf553`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf5c7`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf63f`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf6f7`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf76c`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf7e0`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf856`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde452`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde4bb`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde525`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde599`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde66f`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde740`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde79a`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde7f4`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde84e`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde8a8`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100dde974`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddeb97`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddefb2`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf09e`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf111`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf1c7`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf23b`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf2af`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf323`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf3f5`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf46a`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf4df`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf553`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf5c7`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf63f`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf6f7`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf76c`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf7e0`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x100ddf856`
+
+## string_xrefs
+
+- `0x100ddf248`: `SERVICE`
+- `0x100ddf477`: `REMOTE SERVICE BINDING`
+- `0x100ddf402`: `XML SCHEMA COLLECTION`
+- `0x100ddee4e`: `XML INDEX`
+
+## pseudocode
+
+```c
+
+```
