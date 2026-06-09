@@ -1,0 +1,235 @@
+# FolderPageGeneral::OnInitDialog(void)
+
+- ea: `0x1415a9200`
+- end: `0x1415aa53a`
+- name: `?OnInitDialog@FolderPageGeneral@@MEAAHXZ`
+- size: `4922`
+- prototype: `__int64 __fastcall(FolderPageGeneral *__hidden this)`
+- caller_count: `0`
+- callee_count: `39`
+- tags: `service_task`
+
+## callees
+
+- `0x140047cfc`
+- `0x14004956c`
+- `0x1400d3df0`
+- `0x1400d3e20`
+- `0x1400d4d1c`
+- `0x1400d7910`
+- `0x1400daf50`
+- `0x1400dd0bc`
+- `0x1400dd680`
+- `0x1400dd710`
+- `0x1400e2bf8`
+- `0x14010ab1c`
+- `0x1401c8ac0`
+- `0x14029b5e0`
+- `0x14029d5d0`
+- `0x1402a1f34`
+- `0x1402b52c8`
+- `0x1402b5c28`
+- `0x1402b6b70`
+- `0x1402c2dfc`
+- `0x14030365c`
+- `0x140304278`
+- `0x1403f03c0`
+- `0x14047e890`
+- `0x140503f00`
+- `0x140509850`
+- `0x1405e4758`
+- `0x1406354e8`
+- `0x140664a50`
+- `0x140786af0`
+- `0x1407912cc`
+- `0x1407e99f0`
+- `0x140b0dd30`
+- `0x140b32628`
+- `0x140c934e0`
+- `0x140dab0bc`
+- `0x140e4c530`
+- `0x140e74948`
+- `0x1415a9200`
+
+## import_xrefs
+
+- `KERNEL32!LeaveCriticalSection` at `0x1415a9bb2`
+- `KERNEL32!LeaveCriticalSection` at `0x1415a9bc7`
+- `KERNEL32!LeaveCriticalSection` at `0x1415a9bb2`
+- `KERNEL32!LeaveCriticalSection` at `0x1415a9bc7`
+- `KERNEL32!lstrcmpA` at `0x1415a984f`
+- `KERNEL32!lstrcmpA` at `0x1415a9976`
+- `KERNEL32!lstrcmpA` at `0x1415a984f`
+- `KERNEL32!lstrcmpA` at `0x1415a9976`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1415a9b42`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1415a9b42`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x1415aa451`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x1415aa451`
+- `ole32!CoTaskMemFree` at `0x1415a97ae`
+- `ole32!CoTaskMemFree` at `0x1415a97c1`
+- `ole32!CoTaskMemFree` at `0x1415a97d1`
+- `ole32!CoTaskMemFree` at `0x1415a986b`
+- `ole32!CoTaskMemFree` at `0x1415a9881`
+- `ole32!CoTaskMemFree` at `0x1415a9891`
+- `ole32!CoTaskMemFree` at `0x1415aa428`
+- `ole32!CoTaskMemFree` at `0x1415aa433`
+- `ole32!CoTaskMemFree` at `0x1415aa43e`
+- `ole32!CoTaskMemFree` at `0x1415a97ae`
+- `ole32!CoTaskMemFree` at `0x1415a97c1`
+- `ole32!CoTaskMemFree` at `0x1415a97d1`
+- `ole32!CoTaskMemFree` at `0x1415a986b`
+- `ole32!CoTaskMemFree` at `0x1415a9881`
+- `ole32!CoTaskMemFree` at `0x1415a9891`
+- `ole32!CoTaskMemFree` at `0x1415aa428`
+- `ole32!CoTaskMemFree` at `0x1415aa433`
+- `ole32!CoTaskMemFree` at `0x1415aa43e`
+- `USER32!SendMessageW` at `0x1415a964d`
+- `USER32!SendMessageW` at `0x1415a968a`
+- `USER32!SendMessageW` at `0x1415a96d3`
+- `USER32!SendMessageW` at `0x1415a964d`
+- `USER32!SendMessageW` at `0x1415a968a`
+- `USER32!SendMessageW` at `0x1415a96d3`
+- `USER32!ShowWindow` at `0x1415a9cff`
+- `USER32!ShowWindow` at `0x1415a9d3e`
+- `USER32!ShowWindow` at `0x1415aa09c`
+- `USER32!ShowWindow` at `0x1415aa193`
+- `USER32!ShowWindow` at `0x1415aa1ab`
+- `USER32!ShowWindow` at `0x1415aa1c3`
+- `USER32!ShowWindow` at `0x1415aa272`
+- `USER32!ShowWindow` at `0x1415aa2d1`
+- `USER32!ShowWindow` at `0x1415a9cff`
+- `USER32!ShowWindow` at `0x1415a9d3e`
+- `USER32!ShowWindow` at `0x1415aa09c`
+- `USER32!ShowWindow` at `0x1415aa193`
+- `USER32!ShowWindow` at `0x1415aa1ab`
+- `USER32!ShowWindow` at `0x1415aa1c3`
+- `USER32!ShowWindow` at `0x1415aa272`
+- `USER32!ShowWindow` at `0x1415aa2d1`
+- `USER32!EnableWindow` at `0x1415a98f5`
+- `USER32!EnableWindow` at `0x1415a99ff`
+- `USER32!EnableWindow` at `0x1415a9ce4`
+- `USER32!EnableWindow` at `0x1415a9d26`
+- `USER32!EnableWindow` at `0x1415aa07e`
+- `USER32!EnableWindow` at `0x1415aa0fc`
+- `USER32!EnableWindow` at `0x1415aa116`
+- `USER32!EnableWindow` at `0x1415aa13d`
+- `USER32!EnableWindow` at `0x1415aa15b`
+- `USER32!EnableWindow` at `0x1415aa179`
+- `USER32!EnableWindow` at `0x1415aa219`
+- `USER32!EnableWindow` at `0x1415aa25a`
+- `USER32!EnableWindow` at `0x1415aa2b9`
+- `USER32!EnableWindow` at `0x1415a98f5`
+- `USER32!EnableWindow` at `0x1415a99ff`
+- `USER32!EnableWindow` at `0x1415a9ce4`
+- `USER32!EnableWindow` at `0x1415a9d26`
+- `USER32!EnableWindow` at `0x1415aa07e`
+- `USER32!EnableWindow` at `0x1415aa0fc`
+- `USER32!EnableWindow` at `0x1415aa116`
+- `USER32!EnableWindow` at `0x1415aa13d`
+- `USER32!EnableWindow` at `0x1415aa15b`
+- `USER32!EnableWindow` at `0x1415aa179`
+- `USER32!EnableWindow` at `0x1415aa219`
+- `USER32!EnableWindow` at `0x1415aa25a`
+- `USER32!EnableWindow` at `0x1415aa2b9`
+- `USER32!CheckDlgButton` at `0x1415a9d13`
+- `USER32!CheckDlgButton` at `0x1415a9f54`
+- `USER32!CheckDlgButton` at `0x1415a9d13`
+- `USER32!CheckDlgButton` at `0x1415a9f54`
+- `USER32!GetDlgItem` at `0x1415a92bc`
+- `USER32!GetDlgItem` at `0x1415a9341`
+- `USER32!GetDlgItem` at `0x1415a935f`
+- `USER32!GetDlgItem` at `0x1415a950f`
+- `USER32!GetDlgItem` at `0x1415a9529`
+- `USER32!GetDlgItem` at `0x1415a962b`
+- `USER32!GetDlgItem` at `0x1415a9668`
+- `USER32!GetDlgItem` at `0x1415a96a0`
+- `USER32!GetDlgItem` at `0x1415a9cd8`
+- `USER32!GetDlgItem` at `0x1415a9cf1`
+- `USER32!GetDlgItem` at `0x1415a9d1b`
+- `USER32!GetDlgItem` at `0x1415a9d33`
+- `USER32!GetDlgItem` at `0x1415aa072`
+- `USER32!GetDlgItem` at `0x1415aa08b`
+- `USER32!GetDlgItem` at `0x1415aa0f1`
+- `USER32!GetDlgItem` at `0x1415aa10b`
+- `USER32!GetDlgItem` at `0x1415aa132`
+- `USER32!GetDlgItem` at `0x1415aa150`
+- `USER32!GetDlgItem` at `0x1415aa16e`
+- `USER32!GetDlgItem` at `0x1415aa188`
+- `USER32!GetDlgItem` at `0x1415aa1a0`
+- `USER32!GetDlgItem` at `0x1415aa1b8`
+- `USER32!GetDlgItem` at `0x1415aa20d`
+- `USER32!GetDlgItem` at `0x1415aa226`
+- `USER32!GetDlgItem` at `0x1415aa24f`
+- `USER32!GetDlgItem` at `0x1415aa267`
+- `USER32!GetDlgItem` at `0x1415aa2ae`
+- `USER32!GetDlgItem` at `0x1415aa2c6`
+- `USER32!GetDlgItem` at `0x1415a92bc`
+- `USER32!GetDlgItem` at `0x1415a9341`
+- `USER32!GetDlgItem` at `0x1415a935f`
+- `USER32!GetDlgItem` at `0x1415a950f`
+- `USER32!GetDlgItem` at `0x1415a9529`
+- `USER32!GetDlgItem` at `0x1415a962b`
+- `USER32!GetDlgItem` at `0x1415a9668`
+- `USER32!GetDlgItem` at `0x1415a96a0`
+- `USER32!GetDlgItem` at `0x1415a9cd8`
+- `USER32!GetDlgItem` at `0x1415a9cf1`
+- `USER32!GetDlgItem` at `0x1415a9d1b`
+- `USER32!GetDlgItem` at `0x1415a9d33`
+- `USER32!GetDlgItem` at `0x1415aa072`
+- `USER32!GetDlgItem` at `0x1415aa08b`
+- `USER32!GetDlgItem` at `0x1415aa0f1`
+- `USER32!GetDlgItem` at `0x1415aa10b`
+- `USER32!GetDlgItem` at `0x1415aa132`
+- `USER32!GetDlgItem` at `0x1415aa150`
+- `USER32!GetDlgItem` at `0x1415aa16e`
+- `USER32!GetDlgItem` at `0x1415aa188`
+- `USER32!GetDlgItem` at `0x1415aa1a0`
+- `USER32!GetDlgItem` at `0x1415aa1b8`
+- `USER32!GetDlgItem` at `0x1415aa20d`
+- `USER32!GetDlgItem` at `0x1415aa226`
+- `USER32!GetDlgItem` at `0x1415aa24f`
+- `USER32!GetDlgItem` at `0x1415aa267`
+- `USER32!GetDlgItem` at `0x1415aa2ae`
+- `USER32!GetDlgItem` at `0x1415aa2c6`
+- `USER32!SendMessageA` at `0x1415a9594`
+- `USER32!SendMessageA` at `0x1415a95d7`
+- `USER32!SendMessageA` at `0x1415a95f0`
+- `USER32!SendMessageA` at `0x1415a9610`
+- `USER32!SendMessageA` at `0x1415a96ef`
+- `USER32!SendMessageA` at `0x1415a9a84`
+- `USER32!SendMessageA` at `0x1415a9594`
+- `USER32!SendMessageA` at `0x1415a95d7`
+- `USER32!SendMessageA` at `0x1415a95f0`
+- `USER32!SendMessageA` at `0x1415a9610`
+- `USER32!SendMessageA` at `0x1415a96ef`
+- `USER32!SendMessageA` at `0x1415a9a84`
+- `Mso98Win32Client!__imp_?HrGetProps@@YAJPEAUIMAPIProp@@PEAPEAU_SPropValue@@KZZ` at `0x1415a9ab5`
+- `Mso98Win32Client!__imp_?HrGetProps@@YAJPEAUIMAPIProp@@PEAPEAU_SPropValue@@KZZ` at `0x1415a9ab5`
+- `Mso98Win32Client!__imp_?HrLoad@ExtendedFolderProps@@QEAAJPEAUIMAPIFolder@@H@Z` at `0x1415a9de9`
+- `Mso98Win32Client!__imp_?HrLoad@ExtendedFolderProps@@QEAAJPEAUIMAPIFolder@@H@Z` at `0x1415a9de9`
+- `mso40uiWin32Client!__imp_?MsoSetWsExTransparent@@YAXPEAUHWND__@@H@Z` at `0x1415a936f`
+- `mso40uiWin32Client!__imp_?MsoSetWsExTransparent@@YAXPEAUHWND__@@H@Z` at `0x1415a936f`
+- `mso40uiWin32Client!__imp_?MsoThemeFActive@@YAHXZ` at `0x1415a934f`
+- `mso40uiWin32Client!__imp_?MsoThemeFActive@@YAHXZ` at `0x1415a934f`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x1415a9779`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x1415a9933`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x1415a99b8`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x1415a9a4e`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x1415a9779`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x1415a9933`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x1415a99b8`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x1415a9a4e`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415aa330`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415aa3c8`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415aa3d6`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415aa3e4`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415aa330`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415aa3c8`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415aa3d6`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415aa3e4`
+
+## pseudocode
+
+```c
+
+```
