@@ -1,0 +1,434 @@
+[
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "UserCreateCallbackThread",
+    "ea": "0x180001740",
+    "function_file": "functions/180001740_UserCreateCallbackThread.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "ntdll!NtClose",
+      "ntdll!NtOpenProcessToken",
+      "ntdll!NtQueryInformationToken",
+      "ntdll!NtSetInformationThread",
+      "ntdll!RtlCreateSecurityDescriptor",
+      "ntdll!RtlCreateUserThread",
+      "ntdll!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "UserCreateCallbackThread",
+    "prototype": "__int64 __fastcall(PVOID ThreadContext, PVOID Reserved5, PVOID Reserved6)",
+    "rank_score": 2636,
+    "size": 530,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "UserHardError",
+    "ea": "0x180001960",
+    "function_file": "functions/180001960_UserHardError.md",
+    "matched_imports": [
+      "ntdll!DbgPrintEx",
+      "ntdll!NtClose",
+      "ntdll!NtOpenProcess",
+      "ntdll!NtReadVirtualMemory",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to open process: %x\n"
+    ],
+    "name": "UserHardError",
+    "prototype": "",
+    "rank_score": 2275,
+    "size": 598,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SrvEndTask",
+    "ea": "0x180001580",
+    "function_file": "functions/180001580_SrvEndTask.md",
+    "matched_imports": [
+      "BASESRV!BaseGetProcessCrtlRoutine",
+      "CSRSRV!CsrDereferenceProcess",
+      "CSRSRV!CsrLockProcessByClientId",
+      "CSRSRV!CsrLockedReferenceProcess",
+      "CSRSRV!CsrUnlockProcess",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "ntdll!NtQueryInformationProcess"
+    ],
+    "matched_strings": [],
+    "name": "SrvEndTask",
+    "prototype": "",
+    "rank_score": 1624,
+    "size": 343,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x180001230",
+    "function_file": "functions/180001230_report_gsfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess",
+      "ntdll!RtlCaptureContext",
+      "ntdll!RtlLookupFunctionEntry",
+      "ntdll!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 1424,
+    "size": 372,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001148",
+    "function_file": "functions/180001148_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 212,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "UserServerDllInitialization",
+    "ea": "0x180001060",
+    "function_file": "functions/180001060_UserServerDllInitialization.md",
+    "matched_imports": [
+      "api-ms-win-core-apiquery-l2-1-0!IsApiSetImplemented",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "ext-ms-win-core-winsrv-l1-1-0!UserServerDllInitializationExt",
+      "ext-ms-win-core-winsrv-min-l1-1-0!UserServerDllInitializationMin"
+    ],
+    "matched_strings": [
+      "win32u.dll"
+    ],
+    "name": "UserServerDllInitialization",
+    "prototype": "",
+    "rank_score": 956,
+    "size": 179,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__delayLoadHelper2",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_delayLoadHelper2.md",
+    "matched_imports": [
+      "api-ms-win-core-delayload-l1-1-0!DelayLoadFailureHook",
+      "api-ms-win-core-delayload-l1-1-1!ResolveDelayLoadedAPI"
+    ],
+    "matched_strings": [],
+    "name": "__delayLoadHelper2",
+    "prototype": "",
+    "rank_score": 302,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "UserServerDllInitializationWin1",
+    "ea": "0x180001bc0",
+    "function_file": "functions/180001bc0_UserServerDllInitializationWin1.md",
+    "matched_imports": [
+      "ntdll!RtlCreateTagHeap"
+    ],
+    "matched_strings": [],
+    "name": "UserServerDllInitializationWin1",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 130,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartupForGS",
+    "ea": "0x180001120",
+    "function_file": "functions/180001120_DllMainCRTStartupForGS.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls"
+    ],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartupForGS",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 222,
+    "size": 30,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_UserServerDllInitializationExt",
+    "ea": "0x180001479",
+    "function_file": "functions/180001479_imp_load_UserServerDllInitializationExt.md",
+    "matched_imports": [
+      "ext-ms-win-core-winsrv-l1-1-0!UserServerDllInitializationExt"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_UserServerDllInitializationExt",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_UserServerDllInitializationMin",
+    "ea": "0x180001559",
+    "function_file": "functions/180001559_imp_load_UserServerDllInitializationMin.md",
+    "matched_imports": [
+      "ext-ms-win-core-winsrv-min-l1-1-0!UserServerDllInitializationMin"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_UserServerDllInitializationMin",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "ApiSetQueryApiSetPresence_0",
+    "ea": "0x18000156b",
+    "function_file": "functions/18000156b_ApiSetQueryApiSetPresence_0.md",
+    "matched_imports": [
+      "api-ms-win-core-apiquery-l1-1-0!ApiSetQueryApiSetPresence"
+    ],
+    "matched_strings": [],
+    "name": "ApiSetQueryApiSetPresence_0",
+    "prototype": "",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsUserServerDllInitializationExtPresent",
+    "ea": "0x1800013ac",
+    "function_file": "functions/1800013ac_IsUserServerDllInitializationExtPresent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "IsUserServerDllInitializationExtPresent",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 78,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsUserServerDllInitializationMinPresent",
+    "ea": "0x18000148c",
+    "function_file": "functions/18000148c_IsUserServerDllInitializationMinPresent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "IsUserServerDllInitializationMinPresent",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 78,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_ext_ms_win_core_winsrv_l1_1_0_dll",
+    "ea": "0x1800013fa",
+    "function_file": "functions/1800013fa_tailMerge_ext_ms_win_core_winsrv_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_ext_ms_win_core_winsrv_l1_1_0_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_ext_ms_win_core_winsrv_min_l1_1_0_dll",
+    "ea": "0x1800014da",
+    "function_file": "functions/1800014da_tailMerge_ext_ms_win_core_winsrv_min_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_ext_ms_win_core_winsrv_min_l1_1_0_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180001c80",
+    "function_file": "functions/180001c80_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 12,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x180001cc0",
+    "function_file": "functions/180001cc0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180002010",
+    "function_file": "functions/180002010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180001cf0",
+    "function_file": "functions/180001cf0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_guard_xfg_dispatch_icall_nop",
+    "ea": "0x180001d20",
+    "function_file": "functions/180001d20_guard_xfg_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_xfg_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "UserClientShutdown",
+    "ea": "0x1800016e0",
+    "function_file": "functions/1800016e0_UserClientShutdown.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UserClientShutdown",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_guard_check_icall_nop",
+    "ea": "0x180001c60",
+    "function_file": "functions/180001c60_guard_check_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_check_icall_nop",
+    "prototype": "",
+    "rank_score": 0,
+    "size": 3,
+    "tags": []
+  }
+]

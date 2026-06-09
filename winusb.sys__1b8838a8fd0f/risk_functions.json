@@ -1,0 +1,1464 @@
+[
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WinUSB_GetRegParams",
+    "ea": "0x140019b18",
+    "function_file": "functions/140019b18_WinUSB_GetRegParams.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_GetRegParams",
+    "prototype": "",
+    "rank_score": 3031,
+    "size": 2168,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14001e03c",
+    "function_file": "functions/14001e03c_DriverEntry.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderConfigure",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 2436,
+    "size": 833,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "WinUSB_SubmitChildIsochTransfer",
+    "ea": "0x14000ea0c",
+    "function_file": "functions/14000ea0c_WinUSB_SubmitChildIsochTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_SubmitChildIsochTransfer",
+    "prototype": "",
+    "rank_score": 2042,
+    "size": 1502,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinUSB_SetDeviceInterfaceProperties",
+    "ea": "0x14001ba24",
+    "function_file": "functions/14001ba24_WinUSB_SetDeviceInterfaceProperties.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoSetDeviceInterfacePropertyData"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_SetDeviceInterfaceProperties",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1638,
+    "size": 1456,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "WinUSB_SubmitIsochRequests",
+    "ea": "0x14000eff0",
+    "function_file": "functions/14000eff0_WinUSB_SubmitIsochRequests.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_SubmitIsochRequests",
+    "prototype": "",
+    "rank_score": 1258,
+    "size": 3057,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WinUsb_IsUpperFilterPresent",
+    "ea": "0x14001bfdc",
+    "function_file": "functions/14001bfdc_WinUsb_IsUpperFilterPresent.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetLowerDeviceObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "WinUsb_IsUpperFilterPresent",
+    "prototype": "",
+    "rank_score": 1014,
+    "size": 198,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WinUSB_RegisterIsochBuffer",
+    "ea": "0x14000e19c",
+    "function_file": "functions/14000e19c_WinUSB_RegisterIsochBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_RegisterIsochBuffer",
+    "prototype": "",
+    "rank_score": 839,
+    "size": 1168,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "WinUSB_InitPipe",
+    "ea": "0x140006dec",
+    "function_file": "functions/140006dec_WinUSB_InitPipe.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_InitPipe",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 836,
+    "size": 1831,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FxDriverEntryWorker",
+    "ea": "0x140010134",
+    "function_file": "functions/140010134_FxDriverEntryWorker.md",
+    "matched_imports": [
+      "WDFLDR!WdfLdrQueryInterface",
+      "WDFLDR!WdfVersionBind",
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "FxDriverEntryWorker",
+    "prototype": "__int64 __fastcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 829,
+    "size": 360,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "WinUSB_UnmapIsochBuffer",
+    "ea": "0x14000fe14",
+    "function_file": "functions/14000fe14_WinUSB_UnmapIsochBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_UnmapIsochBuffer",
+    "prototype": "",
+    "rank_score": 821,
+    "size": 480,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "WinUSB_Create",
+    "ea": "0x140019720",
+    "function_file": "functions/140019720_WinUSB_Create.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafe",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_Create",
+    "prototype": "",
+    "rank_score": 818,
+    "size": 536,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "WinUSB_SubmitRead",
+    "ea": "0x14000a450",
+    "function_file": "functions/14000a450_WinUSB_SubmitRead.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "onecore\\drivers\\wdm\\usb\\driver\\winusb\\sys\\read.c",
+      "onecore\\drivers\\wdm\\usb\\driver\\winusb\\sys\\read.c"
+    ],
+    "name": "WinUSB_SubmitRead",
+    "prototype": "",
+    "rank_score": 729,
+    "size": 2347,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FxStubDriverUnloadCommon(void)",
+    "ea": "0x14000fffc",
+    "function_file": "functions/14000fffc_FxStubDriverUnloadCommon_void.md",
+    "matched_imports": [
+      "WDFLDR!WdfVersionUnbind",
+      "WDFLDR!WdfVersionUnbindClass",
+      "ntoskrnl!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "?FxStubDriverUnloadCommon@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 715,
+    "size": 247,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "WinUSB_ReadPipeCompletion",
+    "ea": "0x1400099d0",
+    "function_file": "functions/1400099d0_WinUSB_ReadPipeCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "onecore\\drivers\\wdm\\usb\\driver\\winusb\\sys\\read.c"
+    ],
+    "name": "WinUSB_ReadPipeCompletion",
+    "prototype": "_UNKNOWN **__fastcall(__int64, __int64, __int64, unsigned int *)",
+    "rank_score": 691,
+    "size": 2681,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "WinUSB_ChildIsochTransferComplete",
+    "ea": "0x14000c500",
+    "function_file": "functions/14000c500_WinUSB_ChildIsochTransferComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_ChildIsochTransferComplete",
+    "prototype": "",
+    "rank_score": 648,
+    "size": 1089,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WinUSB_CancelChildRequests",
+    "ea": "0x14000c17c",
+    "function_file": "functions/14000c17c_WinUSB_CancelChildRequests.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_CancelChildRequests",
+    "prototype": "",
+    "rank_score": 622,
+    "size": 892,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "WinUSB_ErrorWorkItem",
+    "ea": "0x1400065e0",
+    "function_file": "functions/1400065e0_WinUSB_ErrorWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "onecore\\drivers\\wdm\\usb\\driver\\winusb\\sys\\usbcom.c"
+    ],
+    "name": "WinUSB_ErrorWorkItem",
+    "prototype": "",
+    "rank_score": 477,
+    "size": 1251,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WinUsb_GetPipePolicy",
+    "ea": "0x140005838",
+    "function_file": "functions/140005838_WinUsb_GetPipePolicy.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUsb_GetPipePolicy",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _BYTE *)",
+    "rank_score": 445,
+    "size": 1959,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "WinUSB_ControlTransfer",
+    "ea": "0x140001e04",
+    "function_file": "functions/140001e04_WinUSB_ControlTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_ControlTransfer",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _BYTE *)",
+    "rank_score": 444,
+    "size": 1731,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "WinUSB_RawIoRead",
+    "ea": "0x140008df0",
+    "function_file": "functions/140008df0_WinUSB_RawIoRead.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_RawIoRead",
+    "prototype": "",
+    "rank_score": 440,
+    "size": 1510,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "WinUSB_WritePipeCompletion",
+    "ea": "0x14000b670",
+    "function_file": "functions/14000b670_WinUSB_WritePipeCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_WritePipeCompletion",
+    "prototype": "_UNKNOWN **__fastcall(__int64, __int64, __int64, unsigned int *)",
+    "rank_score": 440,
+    "size": 1491,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "WinUSB_SetPipePolicy",
+    "ea": "0x140004908",
+    "function_file": "functions/140004908_WinUSB_SetPipePolicy.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_SetPipePolicy",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _BYTE *)",
+    "rank_score": 439,
+    "size": 1428,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "WinUSB_SubmitWrite",
+    "ea": "0x14000af00",
+    "function_file": "functions/14000af00_WinUSB_SubmitWrite.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_SubmitWrite",
+    "prototype": "",
+    "rank_score": 438,
+    "size": 1270,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinUSB_SetPowerPolicy",
+    "ea": "0x140004ea4",
+    "function_file": "functions/140004ea4_WinUSB_SetPowerPolicy.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_SetPowerPolicy",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 434,
+    "size": 1008,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinUSB_SelectConfiguration",
+    "ea": "0x14001d590",
+    "function_file": "functions/14001d590_WinUSB_SelectConfiguration.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_SelectConfiguration",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 432,
+    "size": 723,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WinUSB_GetConfigurationDescriptor",
+    "ea": "0x14001d1c8",
+    "function_file": "functions/14001d1c8_WinUSB_GetConfigurationDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_GetConfigurationDescriptor",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 428,
+    "size": 471,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "WinUSB_ReadPipe",
+    "ea": "0x140009634",
+    "function_file": "functions/140009634_WinUSB_ReadPipe.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_ReadPipe",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _BYTE *)",
+    "rank_score": 425,
+    "size": 914,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "WinUSB_SetInterface",
+    "ea": "0x140007694",
+    "function_file": "functions/140007694_WinUSB_SetInterface.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_SetInterface",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8, unsigned __int8)",
+    "rank_score": 424,
+    "size": 813,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WinUsb_GetMaxBytesPerInterval",
+    "ea": "0x140007f08",
+    "function_file": "functions/140007f08_WinUsb_GetMaxBytesPerInterval.md",
+    "matched_imports": [
+      "USBD!USBD_ParseConfigurationDescriptorEx",
+      "USBD!USBD_ParseDescriptors"
+    ],
+    "matched_strings": [],
+    "name": "WinUsb_GetMaxBytesPerInterval",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 423,
+    "size": 205,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WinUSB_FreeIsochPipe",
+    "ea": "0x14000cfd0",
+    "function_file": "functions/14000cfd0_WinUSB_FreeIsochPipe.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_FreeIsochPipe",
+    "prototype": "__int128 *__fastcall(_QWORD *)",
+    "rank_score": 421,
+    "size": 661,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WinUSB_HandlePipeError",
+    "ea": "0x140006cb0",
+    "function_file": "functions/140006cb0_WinUSB_HandlePipeError.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_HandlePipeError",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 418,
+    "size": 310,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WppCleanupKm",
+    "ea": "0x14001a628",
+    "function_file": "functions/14001a628_WppCleanupKm.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogStop",
+      "ntoskrnl!IoWMIRegistrationControl"
+    ],
+    "matched_strings": [],
+    "name": "WppCleanupKm",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 27,
+    "demangled": "WPP_RECORDER_SF_dD",
+    "ea": "0x14000193c",
+    "function_file": "functions/14000193c_WPP_RECORDER_SF_dD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_dD",
+    "prototype": "",
+    "rank_score": 229,
+    "size": 266,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 90,
+    "demangled": "WPP_RECORDER_SF_",
+    "ea": "0x140001020",
+    "function_file": "functions/140001020_WPP_RECORDER_SF.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, __int64)",
+    "rank_score": 228,
+    "size": 185,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 71,
+    "demangled": "WPP_RECORDER_SF_d",
+    "ea": "0x1400011c8",
+    "function_file": "functions/1400011c8_WPP_RECORDER_SF_d.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_d",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, __int64, char)",
+    "rank_score": 228,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WinUSB_UpdateSqmInfo",
+    "ea": "0x14001a464",
+    "function_file": "functions/14001a464_WinUSB_UpdateSqmInfo.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_UpdateSqmInfo",
+    "prototype": "",
+    "rank_score": 228,
+    "size": 445,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "WinUSB_QueueStateChangeComplete",
+    "ea": "0x140004080",
+    "function_file": "functions/140004080_WinUSB_QueueStateChangeComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_QueueStateChangeComplete",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 167,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "WinUSB_FreePipe",
+    "ea": "0x140006acc",
+    "function_file": "functions/140006acc_WinUSB_FreePipe.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_FreePipe",
+    "prototype": "void __fastcall(__int64, unsigned __int8)",
+    "rank_score": 222,
+    "size": 476,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "WPP_RECORDER_SF_q",
+    "ea": "0x1400013d0",
+    "function_file": "functions/1400013d0_WPP_RECORDER_SF_q.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_q",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WinUSB_GetDeviceDescriptor",
+    "ea": "0x14001d3a8",
+    "function_file": "functions/14001d3a8_WinUSB_GetDeviceDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_GetDeviceDescriptor",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 217,
+    "size": 263,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "WPP_RECORDER_SF_qd",
+    "ea": "0x1400014bc",
+    "function_file": "functions/1400014bc_WPP_RECORDER_SF_qd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qd",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 276,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "WinUSB_FreeChildIsochRequest",
+    "ea": "0x14000ced8",
+    "function_file": "functions/14000ced8_WinUSB_FreeChildIsochRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExInterlockedInsertHeadList"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_FreeChildIsochRequest",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 240,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WinUSB_GetFreeChildIsochRequest",
+    "ea": "0x14000d26c",
+    "function_file": "functions/14000d26c_WinUSB_GetFreeChildIsochRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExInterlockedRemoveHeadList"
+    ],
+    "matched_strings": [],
+    "name": "WinUSB_GetFreeChildIsochRequest",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 313,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "WPP_RECORDER_SF_did",
+    "ea": "0x140001c30",
+    "function_file": "functions/140001c30_WPP_RECORDER_SF_did.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_did",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 237,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WPP_RECORDER_SF_qq",
+    "ea": "0x1400015d8",
+    "function_file": "functions/1400015d8_WPP_RECORDER_SF_qq.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qq",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 266,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "WPP_RECORDER_SF_dDd",
+    "ea": "0x14000866c",
+    "function_file": "functions/14000866c_WPP_RECORDER_SF_dDd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_dDd",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 302,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WPP_RECORDER_SF_dDdd",
+    "ea": "0x1400062f4",
+    "function_file": "functions/1400062f4_WPP_RECORDER_SF_dDdd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_dDdd",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 267,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WPP_RECORDER_SF_ddd",
+    "ea": "0x140001a4c",
+    "function_file": "functions/140001a4c_WPP_RECORDER_SF_ddd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_ddd",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_dq",
+    "ea": "0x1400012b4",
+    "function_file": "functions/1400012b4_WPP_RECORDER_SF_dq.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_dq",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 276,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WPP_RECORDER_SF_ii",
+    "ea": "0x140006504",
+    "function_file": "functions/140006504_WPP_RECORDER_SF_ii.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_ii",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 207,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_id",
+    "ea": "0x140001d24",
+    "function_file": "functions/140001d24_WPP_RECORDER_SF_id.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_id",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 216,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_qDD",
+    "ea": "0x14000bc4c",
+    "function_file": "functions/14000bc4c_WPP_RECORDER_SF_qDD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qDD",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 245,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WinUSB_CancelRead",
+    "ea": "0x1400088a0",
+    "function_file": "functions/1400088a0_WinUSB_CancelRead.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\drivers\\wdm\\usb\\driver\\winusb\\sys\\read.c"
+    ],
+    "name": "WinUSB_CancelRead",
+    "prototype": "",
+    "rank_score": 56,
+    "size": 509,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "WinUSB_IsochTransferComplete",
+    "ea": "0x14000da50",
+    "function_file": "functions/14000da50_WinUSB_IsochTransferComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_IsochTransferComplete",
+    "prototype": "",
+    "rank_score": 42,
+    "size": 628,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 120,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140010700",
+    "function_file": "functions/140010700_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "WinUSB_SubmitIsochTransfer",
+    "ea": "0x14000fbe8",
+    "function_file": "functions/14000fbe8_WinUSB_SubmitIsochTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_SubmitIsochTransfer",
+    "prototype": "",
+    "rank_score": 34,
+    "size": 548,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "WinUSB_RawIoReadCompletion",
+    "ea": "0x1400093e0",
+    "function_file": "functions/1400093e0_WinUSB_RawIoReadCompletion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_RawIoReadCompletion",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 590,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 19,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1400106c0",
+    "function_file": "functions/1400106c0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 31,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "WinUSB_DispatchIsochRequests",
+    "ea": "0x14000c948",
+    "function_file": "functions/14000c948_WinUSB_DispatchIsochRequests.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_DispatchIsochRequests",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 274,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "WinUSB_GetDescriptor",
+    "ea": "0x1400034cc",
+    "function_file": "functions/1400034cc_WinUSB_GetDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_GetDescriptor",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _BYTE *)",
+    "rank_score": 30,
+    "size": 1214,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WinUSB_ControlTransferCompletion",
+    "ea": "0x1400024d0",
+    "function_file": "functions/1400024d0_WinUSB_ControlTransferCompletion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_ControlTransferCompletion",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 28,
+    "size": 371,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WinUSB_ResetPipe",
+    "ea": "0x14001cb74",
+    "function_file": "functions/14001cb74_WinUSB_ResetPipe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_ResetPipe",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _BYTE *)",
+    "rank_score": 26,
+    "size": 939,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinUSB_ForwardIsochRequest",
+    "ea": "0x14000ca60",
+    "function_file": "functions/14000ca60_WinUSB_ForwardIsochRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_ForwardIsochRequest",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 1137,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WinUSB_IsochPurgeComplete",
+    "ea": "0x14000d8f0",
+    "function_file": "functions/14000d8f0_WinUSB_IsochPurgeComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_IsochPurgeComplete",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 169,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WinUSB_IsochQueueReadyNotification",
+    "ea": "0x14000d9a0",
+    "function_file": "functions/14000d9a0_WinUSB_IsochQueueReadyNotification.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_IsochQueueReadyNotification",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 155,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "WinUSB_ResetDefaults",
+    "ea": "0x140004130",
+    "function_file": "functions/140004130_WinUSB_ResetDefaults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_ResetDefaults",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 24,
+    "size": 659,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinUsb_GetCurrentFrameNumberAndQpcForTimeSync",
+    "ea": "0x140007b3c",
+    "function_file": "functions/140007b3c_WinUsb_GetCurrentFrameNumberAndQpcForTimeSync.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUsb_GetCurrentFrameNumberAndQpcForTimeSync",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 24,
+    "size": 963,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14001058c",
+    "function_file": "functions/14001058c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FxDriverEntry",
+    "ea": "0x140010100",
+    "function_file": "functions/140010100_FxDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FxDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "WinUSB_IsInterruptOrBulkInPipe",
+    "ea": "0x14000751c",
+    "function_file": "functions/14000751c_WinUSB_IsInterruptOrBulkInPipe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_IsInterruptOrBulkInPipe",
+    "prototype": "char __fastcall(__int64)",
+    "rank_score": 21,
+    "size": 179,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinUSB_WritePipe",
+    "ea": "0x14000b3fc",
+    "function_file": "functions/14000b3fc_WinUSB_WritePipe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_WritePipe",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _BYTE *)",
+    "rank_score": 21,
+    "size": 613,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WinUSB_CreateActivityIdSubRequest",
+    "ea": "0x140008aa4",
+    "function_file": "functions/140008aa4_WinUSB_CreateActivityIdSubRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_CreateActivityIdSubRequest",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 607,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "WinUSB_IsInterruptOrBulkOutPipe",
+    "ea": "0x1400075d8",
+    "function_file": "functions/1400075d8_WinUSB_IsInterruptOrBulkOutPipe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_IsInterruptOrBulkOutPipe",
+    "prototype": "char __fastcall(__int64)",
+    "rank_score": 18,
+    "size": 179,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "WinUSB_StartDeviceControlQueues",
+    "ea": "0x14000529c",
+    "function_file": "functions/14000529c_WinUSB_StartDeviceControlQueues.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_StartDeviceControlQueues",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 18,
+    "size": 304,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WinUSB_EvtWriteIoStop",
+    "ea": "0x14000ae20",
+    "function_file": "functions/14000ae20_WinUSB_EvtWriteIoStop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_EvtWriteIoStop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 212,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "WinUSB_EvtWriteIoResume",
+    "ea": "0x14000ad90",
+    "function_file": "functions/14000ad90_WinUSB_EvtWriteIoResume.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_EvtWriteIoResume",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 134,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14001e008",
+    "function_file": "functions/14001e008_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140010730",
+    "function_file": "functions/140010730_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "WinUSB_DecrementKeepAliveCount",
+    "ea": "0x14000264c",
+    "function_file": "functions/14000264c_WinUSB_DecrementKeepAliveCount.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_DecrementKeepAliveCount",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 11,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "memmove",
+    "ea": "0x1400108c0",
+    "function_file": "functions/1400108c0_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 11,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "memset",
+    "ea": "0x140010bc0",
+    "function_file": "functions/140010bc0_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 10,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WinUSB_IncrementKeepAliveCount",
+    "ea": "0x140003990",
+    "function_file": "functions/140003990_WinUSB_IncrementKeepAliveCount.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinUSB_IncrementKeepAliveCount",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 9,
+    "size": 123,
+    "tags": []
+  }
+]

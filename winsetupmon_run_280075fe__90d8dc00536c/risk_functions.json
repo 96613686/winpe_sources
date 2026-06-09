@@ -1,0 +1,3986 @@
+[
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "AddOrUpdateTrackedPathOverride(_UNICODE_STRING const *,_UNICODE_STRING const *,_UNICODE_STRING const *,uchar,_TRACKING_MODE)",
+    "ea": "0x140005de4",
+    "function_file": "functions/140005de4_AddOrUpdateTrackedPathOverride_UNICODE_STRING_const_UNICODE_STRING_const_UNICODE_STRING_const_uchar_TRACKING_M.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!FsRtlDissectName",
+      "ntoskrnl!FsRtlDoesNameContainWildCards",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlNextUnicodePrefix",
+      "ntoskrnl!RtlUpcaseUnicodeChar"
+    ],
+    "matched_strings": [
+      "Failed to convert path [%wZ] to NT (0x%08X)",
+      "Path [%wZ] not being tracked; cannot add process [%wZ]"
+    ],
+    "name": "?AddOrUpdateTrackedPathOverride@@YAJPEBU_UNICODE_STRING@@00EW4_TRACKING_MODE@@@Z",
+    "prototype": "int __high(const struct _UNICODE_STRING *, const struct _UNICODE_STRING *, const struct _UNICODE_STRING *, unsigned __int8, enum _TRACKING_MODE)",
+    "rank_score": 6122,
+    "size": 1931,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140022078",
+    "function_file": "functions/140022078_DriverEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltBuildDefaultSecurityDescriptor",
+      "FLTMGR!FltCloseCommunicationPort",
+      "FLTMGR!FltCreateCommunicationPort",
+      "FLTMGR!FltFreeSecurityDescriptor",
+      "FLTMGR!FltRegisterFilter",
+      "FLTMGR!FltStartFiltering",
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!EtwSetInformation",
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeRundownProtection",
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!PsSetCreateProcessNotifyRoutine",
+      "ntoskrnl!RtlFreeAnsiString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [
+      "WinSetupMon::DriverEntry: Failed to create initialize state",
+      "WinSetupMon::DriverEntry: LoadConfig failed",
+      "WinSetupMon::DriverEntry: Failed PsSetCreateProcessNotifyRoutine (1)",
+      "WinSetupMon::DriverEntry: Failed FltBuildDefaultSecurityDescriptor",
+      "WinSetupMon::DriverEntry: Failed FltCreateCommunicationPort",
+      "WinSetupMon::DriverEntry: Failed IoCreateDeviceSecure",
+      "WinSetupMon::DriverEntry: Failed IoCreateSymbolicLink",
+      "WinSetupMon::DriverEntry: Failed IoDeleteSymbolicLink",
+      "WinSetupMon::DriverEntry: Failed PsSetCreateProcessNotifyRoutine (2)",
+      "IoQueryFullDriverPath"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 5296,
+    "size": 1583,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "AddOrUpdateTrackedPath(_UNICODE_STRING const *,_TRACKING_MODE,uchar,uchar)",
+    "ea": "0x140005910",
+    "function_file": "functions/140005910_AddOrUpdateTrackedPath_UNICODE_STRING_const_TRACKING_MODE_uchar_uchar.md",
+    "matched_imports": [
+      "FLTMGR!FltAttachVolume",
+      "FLTMGR!FltGetVolumeFromName",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInsertUnicodePrefix",
+      "ntoskrnl!RtlNextUnicodePrefix"
+    ],
+    "matched_strings": [
+      "Failed to convert path [%wZ] to NT (0x%08X)",
+      "Failed to allocate memory for the path prefix entry",
+      "Failed to insert path prefix entry"
+    ],
+    "name": "?AddOrUpdateTrackedPath@@YAJPEBU_UNICODE_STRING@@W4_TRACKING_MODE@@EE@Z",
+    "prototype": "",
+    "rank_score": 4757,
+    "size": 1228,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RemoveTrackedPath(_UNICODE_STRING const *)",
+    "ea": "0x140006bd4",
+    "function_file": "functions/140006bd4_RemoveTrackedPath_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "FLTMGR!FltDetachVolume",
+      "FLTMGR!FltGetVolumeFromName",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlNextUnicodePrefix",
+      "ntoskrnl!RtlPrefixUnicodeString",
+      "ntoskrnl!RtlRemoveUnicodePrefix"
+    ],
+    "matched_strings": [
+      "Failed to convert path [%wZ] to NT (0x%08X)"
+    ],
+    "name": "?RemoveTrackedPath@@YAJPEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *)",
+    "rank_score": 4462,
+    "size": 925,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "ClearState(void)",
+    "ea": "0x140007800",
+    "function_file": "functions/140007800_ClearState_void.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltDeletePushLock",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlDeleteHashTable",
+      "ntoskrnl!RtlEndEnumerationHashTable",
+      "ntoskrnl!RtlEnumerateEntryHashTable",
+      "ntoskrnl!RtlNextUnicodePrefix",
+      "ntoskrnl!RtlRemoveEntryHashTable",
+      "ntoskrnl!RtlRemoveUnicodePrefix"
+    ],
+    "matched_strings": [
+      "Could not remove entry for process %wZ"
+    ],
+    "name": "?ClearState@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 4272,
+    "size": 591,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 36,
+    "demangled": "WriteLogMessage(_LOG_LEVEL,ushort const *,...)",
+    "ea": "0x140003944",
+    "function_file": "functions/140003944_WriteLogMessage_LOG_LEVEL_ushort_const.md",
+    "matched_imports": [
+      "FLTMGR!FltFlushBuffers",
+      "FLTMGR!FltWriteFile",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ExSystemTimeToLocalTime",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlTimeToTimeFields",
+      "ntoskrnl!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?WriteLogMessage@@YAXW4_LOG_LEVEL@@PEBGZZ",
+    "prototype": "",
+    "rank_score": 4251,
+    "size": 1534,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 3,
+    "demangled": "HandleOperation",
+    "ea": "0x14001e808",
+    "function_file": "functions/14001e808_HandleOperation.md",
+    "matched_imports": [
+      "FLTMGR!FltGetDestinationFileNameInformation",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeBugCheck",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsGetCurrentProcessId"
+    ],
+    "matched_strings": [
+      "PATH: %s%wZ%wZ%wZ%wZ, PROCESS: %wZ",
+      "PATH: %s%wZ%wZ%wZ%wZ, Target PATH: %s%wZ%wZ%wZ%wZ, PROCESS: %wZ",
+      "Log delete attempted; will deny. PATH: %wZ, PROCESS: %wZ",
+      "Log move requested. PATH: %wZ, Target PATH: %wZ, PROCESS: %wZ",
+      "WinSetupMon::HandleOperation: PreLogMove failed for %wZ -> %wZ (0x%08X)",
+      "WinSetupMon::HandleOperation: PostLogMove failed for %wZ (0x%08X)"
+    ],
+    "name": "HandleOperation",
+    "prototype": "",
+    "rank_score": 3917,
+    "size": 2337,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UninitializePrivacyFilter(void)",
+    "ea": "0x1400056bc",
+    "function_file": "functions/1400056bc_UninitializePrivacyFilter_void.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltDeletePushLock",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "Could not wait for profile list watch thread (0x%08X)"
+    ],
+    "name": "?UninitializePrivacyFilter@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 3847,
+    "size": 587,
+    "tags": []
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "SetupConfig(_UNICODE_STRING const *)",
+    "ea": "0x140001a94",
+    "function_file": "functions/140001a94_SetupConfig_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlPrefixUnicodeString",
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [
+      "Done setting up load-time log config",
+      "Done setting up load-time tracking config",
+      "AddOrUpdateTrackedPath [%wZ] for tracking table failed (0x%08X)",
+      "AddTrackedStablePath [%s] for tracking config failed (0x%08X)",
+      "IsTrackedPath failed (0x%08X)",
+      "GetVolumeInStablePath for [%wZ] failed (0x%08X)",
+      "AddOrUpdateTrackedPathOverride [%wZ] [%wZ] [%wZ] for tracking table failed (0x%08X)",
+      "AddOrUpdateTrackedStablePathOverride [%s] [%s] [%s] for tracking config failed (0x%08X)"
+    ],
+    "name": "?SetupConfig@@YAJPEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2)",
+    "rank_score": 3573,
+    "size": 2132,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetStablePath(_UNICODE_STRING const *,_UNICODE_STRING *,_UNICODE_STRING *)",
+    "ea": "0x14000e778",
+    "function_file": "functions/14000e778_GetStablePath_UNICODE_STRING_const_UNICODE_STRING_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlStringFromGUID"
+    ],
+    "matched_strings": [
+      "WinSetupMon::GetStablePath: Failed GetNtPath [%wZ] (0x%08X)",
+      "WinSetupMon::GetStablePath: Failed IoGetDeviceObjectPointer [%wZ] (0x%08X)",
+      "WinSetupMon::GetStablePath: Failed IoBuildDeviceIoControlRequest",
+      "WinSetupMon::GetStablePath: Failed IoCallDriver (0x%08X)",
+      "WinSetupMon::GetStablePath: Failed RtlStringFromGUID (0x%08X)",
+      "WinSetupMon::GetStablePath: Failed to allocate StablePath buffer",
+      "WinSetupMon::GetStablePath: Failed RtlAppendUnicodeStringToString [%wZ] (0x%08X)"
+    ],
+    "name": "?GetStablePath@@YAJPEBU_UNICODE_STRING@@PEAU1@1@Z",
+    "prototype": "int(const struct _UNICODE_STRING *, struct _UNICODE_STRING *, struct _UNICODE_STRING *)",
+    "rank_score": 3523,
+    "size": 907,
+    "tags": [
+      "reparse_path",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RefreshUserNames(void *)",
+    "ea": "0x140005164",
+    "function_file": "functions/140005164_RefreshUserNames_void.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwEnumerateKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "Could not build relative path to ProfileList sub-key %wZ (0x%08X)",
+      "ProfileImagePath"
+    ],
+    "name": "?RefreshUserNames@@YAJPEAX@Z",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 3443,
+    "size": 984,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetWellKnownSids(uchar)",
+    "ea": "0x140004908",
+    "function_file": "functions/140004908_GetWellKnownSids_uchar.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ksecdd!SecLookupWellKnownSid",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [
+      "Called from system thread; well known SIDs might not be available",
+      "Failed to allocate memory for the well-known SIDs string pointers",
+      "Failed to allocate memory for the well-known SID type %u",
+      "Failed to look up well-known SID type %u (0x%08X)",
+      "Failed to allocate memory for SID unicode string",
+      "Failed to convert well-known SID type %u to string (0x%08X)"
+    ],
+    "name": "?GetWellKnownSids@@YAJE@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8)",
+    "rank_score": 3260,
+    "size": 831,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "EnsureWatchingProfileList(void)",
+    "ea": "0x140004670",
+    "function_file": "functions/140004670_EnsureWatchingProfileList_void.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!PsIsSystemThread",
+      "ntoskrnl!PsThreadType",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "Could not create profile list thread (0x%08X)",
+      "Could not reference thread object by handle (0x%08X)",
+      "Unexpected exit from profile list watch thread: 0x%08X"
+    ],
+    "name": "?EnsureWatchingProfileList@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 2829,
+    "size": 658,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "InitializeState(void)",
+    "ea": "0x140007a58",
+    "function_file": "functions/140007a58_InitializeState_void.md",
+    "matched_imports": [
+      "FLTMGR!FltInitializePushLock",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!RtlCreateHashTable",
+      "ntoskrnl!RtlInitEnumerationHashTable",
+      "ntoskrnl!RtlInitializeUnicodePrefix"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeState@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 2820,
+    "size": 663,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SuspendProtection(_UNICODE_STRING const *,_UNICODE_STRING const *)",
+    "ea": "0x140007384",
+    "function_file": "functions/140007384_SuspendProtection_UNICODE_STRING_const_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInsertUnicodePrefix",
+      "ntoskrnl!RtlNextUnicodePrefix"
+    ],
+    "matched_strings": [
+      "Failed to convert path [%wZ] to NT (0x%08X)",
+      "Path [%wZ] already suspended, cannot suspend again",
+      "Failed to allocate memory for the suspended path entry",
+      "Failed to insert suspended path prefix entry"
+    ],
+    "name": "?SuspendProtection@@YAJPEBU_UNICODE_STRING@@0@Z",
+    "prototype": "int(const struct _UNICODE_STRING *, const struct _UNICODE_STRING *)",
+    "rank_score": 2781,
+    "size": 731,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RemoveTracking(void)",
+    "ea": "0x140006f78",
+    "function_file": "functions/140006f78_RemoveTracking_void.md",
+    "matched_imports": [
+      "FLTMGR!FltDetachVolume",
+      "FLTMGR!FltEnumerateInstances",
+      "FLTMGR!FltGetVolumeFromInstance",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveTracking@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 2610,
+    "size": 629,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "IsPathTracked(_UNICODE_STRING const *,_UNICODE_STRING const *,_TRACKING_MODE *)",
+    "ea": "0x140006600",
+    "function_file": "functions/140006600_IsPathTracked_UNICODE_STRING_const_UNICODE_STRING_const_TRACKING_MODE.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!FsRtlDissectName",
+      "ntoskrnl!FsRtlIsNameInExpression",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlFindUnicodePrefix"
+    ],
+    "matched_strings": [],
+    "name": "?IsPathTracked@@YAEPEBU_UNICODE_STRING@@0PEAW4_TRACKING_MODE@@@Z",
+    "prototype": "unsigned __int8 __fastcall(PCUNICODE_STRING FullName, PCUNICODE_STRING String2, enum _TRACKING_MODE *)",
+    "rank_score": 2608,
+    "size": 797,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ProfileListWatchRoutine(void *)",
+    "ea": "0x140004e30",
+    "function_file": "functions/140004e30_ProfileListWatchRoutine_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExEventObjectType",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsTerminateSystemThread",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateEvent",
+      "ntoskrnl!ZwNotifyChangeKey",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList",
+      "Could not initialize well known SIDs (0x%08X)",
+      "Could not open key %wZ (0x%08X)",
+      "Could not create key change notification event (0x%08X)",
+      "Could not create notification for key change on ProfileList key (0x%08X)",
+      "Could not terminate profile list watch thread (0x%08X)"
+    ],
+    "name": "?ProfileListWatchRoutine@@YAXPEAX@Z",
+    "prototype": "KSTART_ROUTINE",
+    "rank_score": 2590,
+    "size": 811,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::AddOrUpdateTrackedPath(_WSM_TRACKING_PATH_INFO * const)",
+    "ea": "0x14000960c",
+    "function_file": "functions/14000960c_CWsmTrackingConfig_CTrackingConfig_AddOrUpdateTrackedPath_WSM_TRACKING_PATH_INFO_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?AddOrUpdateTrackedPath@CTrackingConfig@CWsmTrackingConfig@@QEAAJQEAU_WSM_TRACKING_PATH_INFO@@@Z",
+    "prototype": "int(CWsmTrackingConfig::CTrackingConfig *__hidden this, struct _WSM_TRACKING_PATH_INFO *const)",
+    "rank_score": 2435,
+    "size": 961,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "GetProcessInfo(void *,_UNICODE_STRING * *,void * *,ulong *,uchar *)",
+    "ea": "0x14000e488",
+    "function_file": "functions/14000e488_GetProcessInfo_void_UNICODE_STRING_void_ulong_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsInitialSystemProcess",
+      "ntoskrnl!PsLookupProcessByProcessId",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryInformationProcess"
+    ],
+    "matched_strings": [
+      "WinSetupMon::GetProcessInfo: Failed PsLookupProcessByProcessId(%p) (0x%08X)",
+      "WinSetupMon::GetProcessInfo: Failed ObOpenObjectByPointer(%p) (0x%08X)"
+    ],
+    "name": "?GetProcessInfo@@YAJPEAXPEAPEAU_UNICODE_STRING@@PEAPEAXPEAKPEAE@Z",
+    "prototype": "__int64 __fastcall(void *, struct _UNICODE_STRING **, void **, unsigned int *, HANDLE ProcessHandle)",
+    "rank_score": 2410,
+    "size": 746,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PostLogMove(_UNICODE_STRING const *)",
+    "ea": "0x140002868",
+    "function_file": "functions/140002868_PostLogMove_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateGenericWorkItem",
+      "FLTMGR!FltFreeGenericWorkItem",
+      "FLTMGR!FltQueueGenericWorkItem",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PostLogMove@@YAJPEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String1)",
+    "rank_score": 2408,
+    "size": 555,
+    "tags": []
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "WinSetupMonInstanceSetup",
+    "ea": "0x14001f6c0",
+    "function_file": "functions/14001f6c0_WinSetupMonInstanceSetup.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltGetVolumeName",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetVolumeContext",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IoRegisterPlugPlayNotification",
+      "ntoskrnl!IoUnregisterPlugPlayNotification",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [
+      "WinSetupMonInstanceSetup: SetupConfig failed"
+    ],
+    "name": "WinSetupMonInstanceSetup",
+    "prototype": "",
+    "rank_score": 2093,
+    "size": 981,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "GetVolumeDeviceInPath(_UNICODE_STRING const *,_UNICODE_STRING *,_UNICODE_STRING *)",
+    "ea": "0x14000eb68",
+    "function_file": "functions/14000eb68_GetVolumeDeviceInPath_UNICODE_STRING_const_UNICODE_STRING_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGUIDFromString",
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Device\\HarddiskVolumeShadowCopy"
+    ],
+    "name": "?GetVolumeDeviceInPath@@YAJPEBU_UNICODE_STRING@@PEAU1@1@Z",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2, struct _UNICODE_STRING *, struct _UNICODE_STRING *)",
+    "rank_score": 2071,
+    "size": 2011,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MapProcess(void *)",
+    "ea": "0x14000439c",
+    "function_file": "functions/14000439c_MapProcess_void.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInsertEntryHashTable",
+      "ntoskrnl!RtlLookupEntryHashTable",
+      "ntoskrnl!RtlRemoveEntryHashTable"
+    ],
+    "matched_strings": [
+      "Could not remove existing entry for process %p <==> %wZ"
+    ],
+    "name": "?MapProcess@@YAJPEAX@Z",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 2068,
+    "size": 447,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SepSddlSecurityDescriptorFromSDDLString",
+    "ea": "0x140020d14",
+    "function_file": "functions/140020d14_SepSddlSecurityDescriptorFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAbsoluteToSelfRelativeSD",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "name": "SepSddlSecurityDescriptorFromSDDLString",
+    "prototype": "",
+    "rank_score": 2068,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ResumeProtection(_UNICODE_STRING const *)",
+    "ea": "0x1400071f4",
+    "function_file": "functions/1400071f4_ResumeProtection_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlNextUnicodePrefix",
+      "ntoskrnl!RtlRemoveUnicodePrefix"
+    ],
+    "matched_strings": [
+      "Failed to convert path [%wZ] to NT (0x%08X)"
+    ],
+    "name": "?ResumeProtection@@YAJPEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *)",
+    "rank_score": 2057,
+    "size": 391,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ReleaseTrackedPathsTable",
+    "ea": "0x140006a18",
+    "function_file": "functions/140006a18_ReleaseTrackedPathsTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlNextUnicodePrefix",
+      "ntoskrnl!RtlRemoveUnicodePrefix"
+    ],
+    "matched_strings": [],
+    "name": "ReleaseTrackedPathsTable",
+    "prototype": "",
+    "rank_score": 2005,
+    "size": 335,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CreateFile(_FLT_FILTER *,_FLT_INSTANCE *,_UNICODE_STRING const *,ulong,ulong,ulong,ulong,ulong,uchar,void * *)",
+    "ea": "0x14000d9c4",
+    "function_file": "functions/14000d9c4_CreateFile_FLT_FILTER_FLT_INSTANCE_UNICODE_STRING_const_ulong_ulong_ulong_ulong_ulong_uchar_void.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFile",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "WinSetupMon::CreateFile: Not called at PASSIVE_LEVEL, bailing",
+      "WinSetupMon::CreateFile: Failed FltCreateFile for [%wZ] (0x%08X)",
+      "WinSetupMon::CreateFile: Failed ObReferenceObjectByHandle for [%wZ] (0x%08X)",
+      "WinSetupMon::CreateFile: Failed FltQueryInformationFile(FileStandardInformation) for [%wZ] (0x%08X)",
+      "WinSetupMon::CreateFile: Failed FltSetInformationFile(FilePositionInformation) for [%wZ] (0x%08X)"
+    ],
+    "name": "?CreateFile@@YAJPEAU_FLT_FILTER@@PEAU_FLT_INSTANCE@@PEBU_UNICODE_STRING@@KKKKKEPEAPEAX@Z",
+    "prototype": "__int64 __usercall@<rax>(PFLT_FILTER Filter@<rcx>, PFLT_INSTANCE Instance@<rdx>, const struct _UNICODE_STRING *@<r8>, unsigned int@<r9d>, ULONG, unsigned int, ULONG, ULONG, unsigned __int8, void **)",
+    "rank_score": 1959,
+    "size": 600,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 11,
+    "demangled": "GetNtPath(_UNICODE_STRING const *,_UNICODE_STRING *,_UNICODE_STRING *)",
+    "ea": "0x14000e1d0",
+    "function_file": "functions/14000e1d0_GetNtPath_UNICODE_STRING_const_UNICODE_STRING_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenSymbolicLinkObject",
+      "ntoskrnl!ZwQuerySymbolicLinkObject"
+    ],
+    "matched_strings": [
+      "WinSetupMon::GetNtPath: Failed to duplicate for NtPath %wZ (0x%08X)",
+      "WinSetupMon::GetNtPath: Failed GetVolumeSymbolicLinkFromPath for Path %wZ (0x%08X)",
+      "WinSetupMon::GetNtPath: Failed OpenSymbolicLinkObject (0x%08X)",
+      "WinSetupMon::GetNtPath: Failed to allocate NtPath buffer",
+      "WinSetupMon::GetNtPath: Failed QuerySymbolicLinkObject (0x%08X)",
+      "WinSetupMon::GetNtPath: Failed RtlAppendUnicodeStringToString (0x%08X)"
+    ],
+    "name": "?GetNtPath@@YAJPEBU_UNICODE_STRING@@PEAU1@1@Z",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2, PUNICODE_STRING DestinationString, struct _UNICODE_STRING *)",
+    "rank_score": 1902,
+    "size": 688,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "InitializeTelemetryAssertsKM",
+    "ea": "0x140007e14",
+    "function_file": "functions/140007e14_InitializeTelemetryAssertsKM.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlFreeAnsiString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [
+      "ImagePath"
+    ],
+    "name": "InitializeTelemetryAssertsKM",
+    "prototype": "",
+    "rank_score": 1858,
+    "size": 464,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CWsmTrackingConfig::CTrackingPathInfo::AddOrUpdateTrackedStablePathOverride(ushort const *,ushort const *,uchar,_WSM_TRACKING_MODE)",
+    "ea": "0x140009b70",
+    "function_file": "functions/140009b70_CWsmTrackingConfig_CTrackingPathInfo_AddOrUpdateTrackedStablePathOverride_ushort_const_ushort_const_uchar_WSM_.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?AddOrUpdateTrackedStablePathOverride@CTrackingPathInfo@CWsmTrackingConfig@@QEAAJPEBG0EW4_WSM_TRACKING_MODE@@@Z",
+    "prototype": "int __high(const unsigned __int16 *, const unsigned __int16 *, unsigned __int8, enum _WSM_TRACKING_MODE)",
+    "rank_score": 1833,
+    "size": 872,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "OpenLog",
+    "ea": "0x140002678",
+    "function_file": "functions/140002678_OpenLog.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltObjectReference",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "OpenLog",
+    "prototype": "",
+    "rank_score": 1720,
+    "size": 489,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GetDriveLetter(_FLT_VOLUME *,ushort *)",
+    "ea": "0x14000df1c",
+    "function_file": "functions/14000df1c_GetDriveLetter_FLT_VOLUME_ushort.md",
+    "matched_imports": [
+      "FLTMGR!FltGetDiskDeviceObject",
+      "FLTMGR!FltGetVolumeName",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoVolumeDeviceToDosName",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [
+      "WinSetupMon::GetDriveLetter: Could not get NT path for drive letter %c (0x%08X)"
+    ],
+    "name": "?GetDriveLetter@@YAJPEAU_FLT_VOLUME@@PEAG@Z",
+    "prototype": "__int64 __fastcall(PFLT_VOLUME Volume, unsigned __int16 *)",
+    "rank_score": 1672,
+    "size": 684,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "WinSetupMonUnload",
+    "ea": "0x14001ffd0",
+    "function_file": "functions/14001ffd0_WinSetupMonUnload.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseCommunicationPort",
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!ExWaitForRundownProtectionRelease",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!PsSetCreateProcessNotifyRoutine"
+    ],
+    "matched_strings": [
+      "WinSetupMonUnload: Failed IoDeleteSymbolicLink",
+      "WinSetupMonUnload: Failed PsSetCreateProcessNotifyRoutine"
+    ],
+    "name": "WinSetupMonUnload",
+    "prototype": "",
+    "rank_score": 1540,
+    "size": 342,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::RemoveTrackedPath(ushort const *)",
+    "ea": "0x14000b550",
+    "function_file": "functions/14000b550_CWsmTrackingConfig_RemoveTrackedPath_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "CWsmTrackingConfig::RemoveTrackedPath: Failed to update configuration (with %ws removed) (0x%08X)",
+      "CWsmTrackingConfig::RemoveTrackedPath: Failed to read new buffer into configuration (0x%08X)"
+    ],
+    "name": "?RemoveTrackedPath@CWsmTrackingConfig@@UEAAJPEBG@Z",
+    "prototype": "int(CWsmTrackingConfig *__hidden this, const unsigned __int16 *)",
+    "rank_score": 1513,
+    "size": 549,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UnmapProcess(void *)",
+    "ea": "0x140004564",
+    "function_file": "functions/140004564_UnmapProcess_void.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLookupEntryHashTable",
+      "ntoskrnl!RtlRemoveEntryHashTable"
+    ],
+    "matched_strings": [
+      "Could not remove entry for process %p <==> %wZ"
+    ],
+    "name": "?UnmapProcess@@YAJPEAX@Z",
+    "prototype": "__int64 __fastcall(ULONG_PTR Signature)",
+    "rank_score": 1465,
+    "size": 260,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "CloseLog",
+    "ea": "0x140002488",
+    "function_file": "functions/140002488_CloseLog.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "CloseLog",
+    "prototype": "",
+    "rank_score": 1408,
+    "size": 373,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "CloseHandle(_FLT_INSTANCE *,uchar,void *)",
+    "ea": "0x14000d8a8",
+    "function_file": "functions/14000d8a8_CloseHandle_FLT_INSTANCE_uchar_void.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltFlushBuffers",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?CloseHandle@@YAJPEAU_FLT_INSTANCE@@EPEAX@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, unsigned __int8, void *)",
+    "rank_score": 1318,
+    "size": 277,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PpRegStateUpdateStackCreationSettings",
+    "ea": "0x1400213a0",
+    "function_file": "functions/1400213a0_PpRegStateUpdateStackCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!SeCaptureSecurityDescriptor",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PpRegStateUpdateStackCreationSettings",
+    "prototype": "",
+    "rank_score": 1287,
+    "size": 372,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 10,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::~CTrackingConfig(void)",
+    "ea": "0x140009018",
+    "function_file": "functions/140009018_CWsmTrackingConfig_CTrackingConfig_CTrackingConfig_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1CTrackingConfig@CWsmTrackingConfig@@QEAA@XZ",
+    "prototype": "void __fastcall(CWsmTrackingConfig::CTrackingConfig *__hidden this)",
+    "rank_score": 1224,
+    "size": 255,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SepSddlGetAclForString",
+    "ea": "0x1400207c8",
+    "function_file": "functions/1400207c8_SepSddlGetAclForString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsnicmp",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetAclForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1, int)",
+    "rank_score": 1223,
+    "size": 951,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WinSetupMonInstanceTeardownStart",
+    "ea": "0x14001fab0",
+    "function_file": "functions/14001fab0_WinSetupMonInstanceTeardownStart.md",
+    "matched_imports": [
+      "FLTMGR!FltDeleteContext",
+      "FLTMGR!FltGetVolumeContext",
+      "FLTMGR!FltGetVolumeName",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!IoUnregisterPlugPlayNotificationEx",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WinSetupMonInstanceTeardownStart",
+    "prototype": "",
+    "rank_score": 1218,
+    "size": 345,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "wsm_wstring::init(ushort const *)",
+    "ea": "0x14000ce88",
+    "function_file": "functions/14000ce88_wsm_wstring_init_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?init@wsm_wstring@@IEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(wsm_wstring *__hidden this, const unsigned __int16 *)",
+    "rank_score": 1211,
+    "size": 271,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "wsm_stable_path::assign(ushort const *)",
+    "ea": "0x14000c410",
+    "function_file": "functions/14000c410_wsm_stable_path_assign_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?assign@wsm_stable_path@@UEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(wsm_stable_path *__hidden this, PCWSTR SourceString)",
+    "rank_score": 1208,
+    "size": 337,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProfileImagePathQueryRoutine(ushort *,ulong,void *,ulong,void *,void *)",
+    "ea": "0x140004c50",
+    "function_file": "functions/140004c50_ProfileImagePathQueryRoutine_ushort_ulong_void_ulong_void_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!FsRtlDissectName",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?ProfileImagePathQueryRoutine@@YAJPEAGKPEAXK11@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned int, void *, unsigned int, void *, void *)",
+    "rank_score": 1206,
+    "size": 469,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PreLogMove(_UNICODE_STRING const *,_UNICODE_STRING const *)",
+    "ea": "0x140002a9c",
+    "function_file": "functions/140002a9c_PreLogMove_UNICODE_STRING_const_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlDuplicateUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PreLogMove@@YAJPEBU_UNICODE_STRING@@0@Z",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING StringIn, PCUNICODE_STRING)",
+    "rank_score": 1205,
+    "size": 246,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::AddOrUpdateTrackedStablePathOverride(ushort const *,ushort const *,ushort const *,uchar,_WSM_TRACKING_MODE)",
+    "ea": "0x140009ee0",
+    "function_file": "functions/140009ee0_CWsmTrackingConfig_AddOrUpdateTrackedStablePathOverride_ushort_const_ushort_const_ushort_const_uchar_WSM_TRACK.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [
+      "CWsmTrackingConfig::AddOrUpdateTrackedStablePathOverride: Failed to update configuration (with override info added) (0x%08X)",
+      "CWsmTrackingConfig::AddOrUpdateTrackedStablePathOverride: Failed to read configuration (0x%08X)"
+    ],
+    "name": "?AddOrUpdateTrackedStablePathOverride@CWsmTrackingConfig@@UEAAJPEBG00EW4_WSM_TRACKING_MODE@@@Z",
+    "prototype": "",
+    "rank_score": 1112,
+    "size": 531,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SwitchLogPath(_UNICODE_STRING const *)",
+    "ea": "0x14000362c",
+    "function_file": "functions/14000362c_SwitchLogPath_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "Switching to log path %wZ"
+    ],
+    "name": "?SwitchLogPath@@YAJPEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *)",
+    "rank_score": 1061,
+    "size": 331,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IsTrackedPath(_UNICODE_STRING const *,uchar *)",
+    "ea": "0x140006924",
+    "function_file": "functions/140006924_IsTrackedPath_UNICODE_STRING_const_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlNextUnicodePrefix"
+    ],
+    "matched_strings": [
+      "Failed to convert path [%wZ] to NT (0x%08X)"
+    ],
+    "name": "?IsTrackedPath@@YAJPEBU_UNICODE_STRING@@PEAE@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *, unsigned __int8 *)",
+    "rank_score": 1055,
+    "size": 236,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::deserialize(read_buffer_aligned &)",
+    "ea": "0x14000c6f0",
+    "function_file": "functions/14000c6f0_CWsmTrackingConfig_CTrackingConfig_deserialize_read_buffer_aligned.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?deserialize@CTrackingConfig@CWsmTrackingConfig@@UEAAJAEAVread_buffer_aligned@@@Z",
+    "prototype": "__int64 __fastcall(CWsmTrackingConfig::CTrackingConfig *__hidden this, struct read_buffer_aligned *)",
+    "rank_score": 1024,
+    "size": 689,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::AddTrackedStablePath(ushort const *,_WSM_TRACKING_MODE)",
+    "ea": "0x14000a0fc",
+    "function_file": "functions/14000a0fc_CWsmTrackingConfig_CTrackingConfig_AddTrackedStablePath_ushort_const_WSM_TRACKING_MODE.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?AddTrackedStablePath@CTrackingConfig@CWsmTrackingConfig@@QEAAJPEBGW4_WSM_TRACKING_MODE@@@Z",
+    "prototype": "int __high(const unsigned __int16 *, enum _WSM_TRACKING_MODE)",
+    "rank_score": 1020,
+    "size": 504,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WdmlibIoCreateDeviceSecure",
+    "ea": "0x1400201b0",
+    "function_file": "functions/1400201b0_WdmlibIoCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoCreateDeviceSecure",
+      "IoValidateDeviceIoControlAccess"
+    ],
+    "name": "WdmlibIoCreateDeviceSecure",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, ULONG DeviceExtensionSize, PUNICODE_STRING DeviceName, ULONG DeviceType, ULONG DeviceCharacteristics, BOOLEAN Exclusive, PCUNICODE_STRING DefaultSDDLString, LPCGUID DeviceClassGuid, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 894,
+    "size": 232,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PiRegStateReadStackCreationSettingsFromKey",
+    "ea": "0x14002104c",
+    "function_file": "functions/14002104c_PiRegStateReadStackCreationSettingsFromKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeCaptureSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PiRegStateReadStackCreationSettingsFromKey",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 879,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FlushVolume(_FLT_FILTER *,_FLT_INSTANCE *)",
+    "ea": "0x14000dd90",
+    "function_file": "functions/14000dd90_FlushVolume_FLT_FILTER_FLT_INSTANCE.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetVolumeFromInstance",
+      "FLTMGR!FltGetVolumeName",
+      "FLTMGR!FltObjectDereference"
+    ],
+    "matched_strings": [
+      "WinSetupMon::FlushVolume: CreateFile failed (0x%08X)"
+    ],
+    "name": "?FlushVolume@@YAJPEAU_FLT_FILTER@@PEAU_FLT_INSTANCE@@@Z",
+    "prototype": "int(struct _FLT_FILTER *, struct _FLT_INSTANCE *)",
+    "rank_score": 870,
+    "size": 387,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LoadConfig(void)",
+    "ea": "0x140001404",
+    "function_file": "functions/140001404_LoadConfig_void.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "TrackingConfig",
+      "LogConfig"
+    ],
+    "name": "?LoadConfig@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 849,
+    "size": 617,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "UnmapDosDrive(_UNICODE_STRING const *)",
+    "ea": "0x140004260",
+    "function_file": "functions/140004260_UnmapDosDrive_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [
+      "Successfully removed mapping: %wZ <==> %c:"
+    ],
+    "name": "?UnmapDosDrive@@YAXPEBU_UNICODE_STRING@@@Z",
+    "prototype": "void __fastcall(PCUNICODE_STRING String1)",
+    "rank_score": 845,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::CTrackingPathInfo::deserialize(read_buffer_aligned &)",
+    "ea": "0x14000cad0",
+    "function_file": "functions/14000cad0_CWsmTrackingConfig_CTrackingPathInfo_deserialize_read_buffer_aligned.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?deserialize@CTrackingPathInfo@CWsmTrackingConfig@@UEAAJAEAVread_buffer_aligned@@@Z",
+    "prototype": "__int64 __fastcall(CWsmTrackingConfig::CTrackingPathInfo *__hidden this, struct read_buffer_aligned *)",
+    "rank_score": 825,
+    "size": 733,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "ea": "0x14002151c",
+    "function_file": "functions/14002151c_SeUtilSecurityInfoFromSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlGetGroupSecurityDescriptor",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlGetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 824,
+    "size": 249,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CWsmTrackingConfig::CTrackingPathInfo::Initialize(_WSM_TRACKING_PATH_INFO * const,bool)",
+    "ea": "0x14000adb8",
+    "function_file": "functions/14000adb8_CWsmTrackingConfig_CTrackingPathInfo_Initialize_WSM_TRACKING_PATH_INFO_const_bool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@CTrackingPathInfo@CWsmTrackingConfig@@IEAAJQEAU_WSM_TRACKING_PATH_INFO@@_N@Z",
+    "prototype": "int(CWsmTrackingConfig::CTrackingPathInfo *__hidden this, struct _WSM_TRACKING_PATH_INFO *const, bool)",
+    "rank_score": 823,
+    "size": 581,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::Initialize(_WSM_TRACKING_CONFIG * const,bool)",
+    "ea": "0x14000ab4c",
+    "function_file": "functions/14000ab4c_CWsmTrackingConfig_CTrackingConfig_Initialize_WSM_TRACKING_CONFIG_const_bool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@CTrackingConfig@CWsmTrackingConfig@@IEAAJQEAU_WSM_TRACKING_CONFIG@@_N@Z",
+    "prototype": "int(CWsmTrackingConfig::CTrackingConfig *__hidden this, struct _WSM_TRACKING_CONFIG *const, bool)",
+    "rank_score": 822,
+    "size": 611,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "CWsmTrackingConfig::CTrackingPathInfo::~CTrackingPathInfo(void)",
+    "ea": "0x1400091cc",
+    "function_file": "functions/1400091cc_CWsmTrackingConfig_CTrackingPathInfo_CTrackingPathInfo_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1CTrackingPathInfo@CWsmTrackingConfig@@QEAA@XZ",
+    "prototype": "void __fastcall(CWsmTrackingConfig::CTrackingPathInfo *__hidden this)",
+    "rank_score": 822,
+    "size": 195,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::RemoveTrackedStablePath(ushort const *)",
+    "ea": "0x14000b77c",
+    "function_file": "functions/14000b77c_CWsmTrackingConfig_CTrackingConfig_RemoveTrackedStablePath_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveTrackedStablePath@CTrackingConfig@CWsmTrackingConfig@@QEAAJPEBG@Z",
+    "prototype": "int(CWsmTrackingConfig::CTrackingConfig *__hidden this, const unsigned __int16 *)",
+    "rank_score": 820,
+    "size": 480,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CWsmLogConfig::Read(_WSM_LOG_CONFIG * const,bool)",
+    "ea": "0x14000b064",
+    "function_file": "functions/14000b064_CWsmLogConfig_Read_WSM_LOG_CONFIG_const_bool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Read@CWsmLogConfig@@IEAAJQEAU_WSM_LOG_CONFIG@@_N@Z",
+    "prototype": "__int64 __fastcall(CWsmLogConfig *__hidden this, struct _WSM_LOG_CONFIG *const, bool)",
+    "rank_score": 819,
+    "size": 329,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "CWsmTrackingConfig::CTrackingOverrideInfo::~CTrackingOverrideInfo(void)",
+    "ea": "0x140009120",
+    "function_file": "functions/140009120_CWsmTrackingConfig_CTrackingOverrideInfo_CTrackingOverrideInfo_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1CTrackingOverrideInfo@CWsmTrackingConfig@@QEAA@XZ",
+    "prototype": "void __fastcall(CWsmTrackingConfig::CTrackingOverrideInfo *__hidden this)",
+    "rank_score": 819,
+    "size": 166,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "UnloadConfig(void)",
+    "ea": "0x1400022f0",
+    "function_file": "functions/1400022f0_UnloadConfig_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?UnloadConfig@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 817,
+    "size": 305,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CWsmLogConfig::CLogConfig::~CLogConfig(void)",
+    "ea": "0x140008f60",
+    "function_file": "functions/140008f60_CWsmLogConfig_CLogConfig_CLogConfig_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1CLogConfig@CWsmLogConfig@@QEAA@XZ",
+    "prototype": "void __fastcall(CWsmLogConfig::CLogConfig *__hidden this)",
+    "rank_score": 815,
+    "size": 176,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::Release(void)",
+    "ea": "0x14000b280",
+    "function_file": "functions/14000b280_CWsmTrackingConfig_CTrackingConfig_Release_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Release@CTrackingConfig@CWsmTrackingConfig@@IEAAXXZ",
+    "prototype": "void __fastcall(CWsmTrackingConfig::CTrackingConfig *__hidden this)",
+    "rank_score": 815,
+    "size": 210,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::SetLogSessionInfo(ushort const *,ushort const *)",
+    "ea": "0x14000bcdc",
+    "function_file": "functions/14000bcdc_CWsmTrackingConfig_CTrackingConfig_SetLogSessionInfo_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?SetLogSessionInfo@CTrackingConfig@CWsmTrackingConfig@@QEAAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(CWsmTrackingConfig::CTrackingConfig *__hidden this, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 815,
+    "size": 267,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SepSddlAddAceToAcl",
+    "ea": "0x1400205f0",
+    "function_file": "functions/1400205f0_SepSddlAddAceToAcl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlAddAceToAcl",
+    "prototype": "__int64 __fastcall(int, int, int, int, ACCESS_MASK AccessMask, int, PSID Sid)",
+    "rank_score": 815,
+    "size": 235,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CWsmTrackingConfig::CTrackingOverrideInfo::Release(void)",
+    "ea": "0x14000b358",
+    "function_file": "functions/14000b358_CWsmTrackingConfig_CTrackingOverrideInfo_Release_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Release@CTrackingOverrideInfo@CWsmTrackingConfig@@IEAAXXZ",
+    "prototype": "void __fastcall(CWsmTrackingConfig::CTrackingOverrideInfo *__hidden this)",
+    "rank_score": 814,
+    "size": 180,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "WinSetupMonCreateProcessNotificationCallback",
+    "ea": "0x14001f5e0",
+    "function_file": "functions/14001f5e0_WinSetupMonCreateProcessNotificationCallback.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateGenericWorkItem",
+      "FLTMGR!FltFreeGenericWorkItem",
+      "FLTMGR!FltQueueGenericWorkItem"
+    ],
+    "matched_strings": [
+      "WinSetupMonCreateProcessNotificationCallback: Failed FltAllocateGenericWorkItem",
+      "WinSetupMonCreateProcessNotificationCallback: Failed FltAllocateGenericWorkItem",
+      "WinSetupMonCreateProcessNotificationCallback: Failed FltQueueGenericWorkItem"
+    ],
+    "name": "WinSetupMonCreateProcessNotificationCallback",
+    "prototype": "void __stdcall(HANDLE ParentId, HANDLE ProcessId, BOOLEAN Create)",
+    "rank_score": 765,
+    "size": 195,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IopDevObjApplyPostCreationSettings",
+    "ea": "0x140020434",
+    "function_file": "functions/140020434_IopDevObjApplyPostCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeviceObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "IopDevObjApplyPostCreationSettings",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 734,
+    "size": 239,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::AddOrUpdateTrackedPath(_WSM_TRACKING_PATH_INFO * const)",
+    "ea": "0x1400099e0",
+    "function_file": "functions/1400099e0_CWsmTrackingConfig_AddOrUpdateTrackedPath_WSM_TRACKING_PATH_INFO_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "CWsmTrackingConfig::AddOrUpdateTrackedPath: Failed to update configuration (with path info for %ws added) (0x%08X)",
+      "CWsmTrackingConfig::AddOrUpdateTrackedPath: Failed to read configuration (0x%08X)"
+    ],
+    "name": "?AddOrUpdateTrackedPath@CWsmTrackingConfig@@UEAAJQEAU_WSM_TRACKING_PATH_INFO@@@Z",
+    "prototype": "int(CWsmTrackingConfig *__hidden this, struct _WSM_TRACKING_PATH_INFO *const)",
+    "rank_score": 711,
+    "size": 391,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::AddTrackedStablePath(ushort const *,_WSM_TRACKING_MODE)",
+    "ea": "0x14000a300",
+    "function_file": "functions/14000a300_CWsmTrackingConfig_AddTrackedStablePath_ushort_const_WSM_TRACKING_MODE.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "CWsmTrackingConfig::AddTrackedStablePath: Failed to update configuration (with path info for %ws added) (0x%08X)",
+      "CWsmTrackingConfig::AddTrackedStablePath: Failed to read configuration (0x%08X)"
+    ],
+    "name": "?AddTrackedStablePath@CWsmTrackingConfig@@UEAAJPEBGW4_WSM_TRACKING_MODE@@@Z",
+    "prototype": "",
+    "rank_score": 711,
+    "size": 425,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::RemoveTrackedStablePath(ushort const *)",
+    "ea": "0x14000b970",
+    "function_file": "functions/14000b970_CWsmTrackingConfig_RemoveTrackedStablePath_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "CWsmTrackingConfig::RemoveTrackedStablePath: Failed to update configuration (with %ws removed) (0x%08X)",
+      "CWsmTrackingConfig::RemoveTrackedStablePath: Failed to read new buffer into configuration (0x%08X)"
+    ],
+    "name": "?RemoveTrackedStablePath@CWsmTrackingConfig@@UEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CWsmTrackingConfig *__hidden this, const unsigned __int16 *)",
+    "rank_score": 710,
+    "size": 369,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "UpdateProcessMap",
+    "ea": "0x14001f4e0",
+    "function_file": "functions/14001f4e0_UpdateProcessMap.md",
+    "matched_imports": [
+      "FLTMGR!FltFreeGenericWorkItem",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection"
+    ],
+    "matched_strings": [
+      "WinSetupMon::UpdateProcessMap: MapProcess failed",
+      "WinSetupMon::UpdateProcessMap: UnmapProcess failed"
+    ],
+    "name": "UpdateProcessMap",
+    "prototype": "void __stdcall(PFLT_GENERIC_WORKITEM FltWorkItem, PVOID FltObject, PVOID Context)",
+    "rank_score": 706,
+    "size": 144,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WriteLogStart(void)",
+    "ea": "0x140003f48",
+    "function_file": "functions/140003f48_WriteLogStart_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlGetVersion"
+    ],
+    "matched_strings": [
+      "OS Service pack major version: %hu",
+      "OS Service pack minor version: %hu"
+    ],
+    "name": "?WriteLogStart@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 698,
+    "size": 357,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "UpdateDosDriveMap",
+    "ea": "0x14001f410",
+    "function_file": "functions/14001f410_UpdateDosDriveMap.md",
+    "matched_imports": [
+      "FLTMGR!FltFreeGenericWorkItem",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection"
+    ],
+    "matched_strings": [
+      "WinSetupMon::UpdateDosDriveMap: Failed FltGetDiskDeviceObject",
+      "WinSetupMon::UpdateDosDriveMap: MapDosDrive failed"
+    ],
+    "name": "UpdateDosDriveMap",
+    "prototype": "void __stdcall(PFLT_GENERIC_WORKITEM FltWorkItem, PVOID FltObject, PVOID Context)",
+    "rank_score": 696,
+    "size": 190,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "QueryLogConfig",
+    "ea": "0x1400018a8",
+    "function_file": "functions/1400018a8_QueryLogConfig.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "Registry log configuration does not exit; skipping query",
+      "Failed to query registry log configuration (0x%08X)",
+      "RtlQueryRegistryValuesEx",
+      "LogConfig"
+    ],
+    "name": "QueryLogConfig",
+    "prototype": "",
+    "rank_score": 688,
+    "size": 353,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IoDevObjCreateDeviceSecure",
+    "ea": "0x1400202a0",
+    "function_file": "functions/1400202a0_IoDevObjCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "IoDevObjCreateDeviceSecure",
+    "prototype": "__int64 __usercall@<rax>(PDRIVER_OBJECT DriverObject@<rcx>, int, char, __int64, __int64, PDEVICE_OBJECT)",
+    "rank_score": 658,
+    "size": 395,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RemovePIIFromString(_UNICODE_STRING *)",
+    "ea": "0x140005544",
+    "function_file": "functions/140005544_RemovePIIFromString_UNICODE_STRING.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockSharedEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!RtlCompareUnicodeStrings"
+    ],
+    "matched_strings": [
+      "Could not start profile list watch thread (0x%08X)"
+    ],
+    "name": "?RemovePIIFromString@@YAEPEAU_UNICODE_STRING@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _UNICODE_STRING *)",
+    "rank_score": 655,
+    "size": 239,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ResumeLoggingToFile",
+    "ea": "0x140002ba0",
+    "function_file": "functions/140002ba0_ResumeLoggingToFile.md",
+    "matched_imports": [
+      "FLTMGR!FltFreeGenericWorkItem",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection"
+    ],
+    "matched_strings": [
+      "Log location moved to %wZ; switched back to file logging"
+    ],
+    "name": "ResumeLoggingToFile",
+    "prototype": "void __stdcall(PFLT_GENERIC_WORKITEM FltWorkItem, PVOID FltObject, PVOID Context)",
+    "rank_score": 643,
+    "size": 120,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetVolumeSymbolicLinkFromPath(_UNICODE_STRING const *,_UNICODE_STRING *,uchar *,_UNICODE_STRING *)",
+    "ea": "0x14000f34c",
+    "function_file": "functions/14000f34c_GetVolumeSymbolicLinkFromPath_UNICODE_STRING_const_UNICODE_STRING_uchar_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?GetVolumeSymbolicLinkFromPath@@YAJPEBU_UNICODE_STRING@@PEAU1@PEAE1@Z",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2, PUNICODE_STRING DestinationString, unsigned __int8 *, struct _UNICODE_STRING *)",
+    "rank_score": 621,
+    "size": 816,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "WriteLog(LogLevel,char const *,...)",
+    "ea": "0x14000f684",
+    "function_file": "functions/14000f684_WriteLog_LogLevel_char_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!strnlen"
+    ],
+    "matched_strings": [],
+    "name": "?WriteLog@@YAXW4LogLevel@@PEBDZZ",
+    "prototype": "void __high(enum LogLevel, const char *, ...)",
+    "rank_score": 619,
+    "size": 346,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SetLogMaximumSize(unsigned __int64,bool)",
+    "ea": "0x140002f00",
+    "function_file": "functions/140002f00_SetLogMaximumSize_unsigned_int64_bool.md",
+    "matched_imports": [
+      "FLTMGR!FltQueryInformationFile",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?SetLogMaximumSize@@YAJ_K_N@Z",
+    "prototype": "__int64 __fastcall(unsigned __int64, bool)",
+    "rank_score": 616,
+    "size": 243,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "write_buffer_aligned::write<ulong>(ulong const &)",
+    "ea": "0x140008d80",
+    "function_file": "functions/140008d80_write_buffer_aligned_write_ulong_ulong_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??$write@K@write_buffer_aligned@@QEAAJAEBK@Z",
+    "prototype": "__int64 __fastcall(write_buffer_uchar *this, unsigned __int8 *)",
+    "rank_score": 608,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "write_buffer_aligned::write<unsigned __int64>(unsigned __int64 const &)",
+    "ea": "0x140008e70",
+    "function_file": "functions/140008e70_write_buffer_aligned_write_unsigned_int64_unsigned_int64_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??$write@_K@write_buffer_aligned@@QEAAJAEB_K@Z",
+    "prototype": "__int64 __fastcall(write_buffer_uchar *this, unsigned __int8 *)",
+    "rank_score": 605,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "write_buffer_aligned::write<ushort>(ushort const &)",
+    "ea": "0x140008c90",
+    "function_file": "functions/140008c90_write_buffer_aligned_write_ushort_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??$write@G@write_buffer_aligned@@QEAAJAEBG@Z",
+    "prototype": "__int64 __fastcall(write_buffer_uchar *this, unsigned __int8 *)",
+    "rank_score": 605,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "write_buffer_aligned::write_pcwstr(ushort const *,ushort)",
+    "ea": "0x14000d734",
+    "function_file": "functions/14000d734_write_buffer_aligned_write_pcwstr_ushort_const_ushort.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?write_pcwstr@write_buffer_aligned@@QEAAJPEBGG@Z",
+    "prototype": "__int64 __fastcall(write_buffer_aligned *__hidden this, const unsigned __int16 *, unsigned __int16)",
+    "rank_score": 605,
+    "size": 239,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "HasTrackedPath(_UNICODE_STRING const *)",
+    "ea": "0x140006578",
+    "function_file": "functions/140006578_HasTrackedPath_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?HasTrackedPath@@YAEPEBU_UNICODE_STRING@@@Z",
+    "prototype": "unsigned __int8 __fastcall(PCUNICODE_STRING String2)",
+    "rank_score": 602,
+    "size": 127,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SepSddlGetSidForString",
+    "ea": "0x140020b88",
+    "function_file": "functions/140020b88_SepSddlGetSidForString.md",
+    "matched_imports": [
+      "ntoskrnl!IoIsWdmVersionAvailable",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetSidForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1)",
+    "rank_score": 513,
+    "size": 172,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "PersistLogPath(_UNICODE_STRING const *)",
+    "ea": "0x140001748",
+    "function_file": "functions/140001748_PersistLogPath_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "Failed to allocate updated log path",
+      "Failed to create updated log configuration (0x%08X)"
+    ],
+    "name": "?PersistLogPath@@YAJPEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *)",
+    "rank_score": 512,
+    "size": 344,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CWsmTrackingConfig::SetLogSessionInfo(ushort const *,ushort const *)",
+    "ea": "0x14000bdf0",
+    "function_file": "functions/14000bdf0_CWsmTrackingConfig_SetLogSessionInfo_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "CWsmTrackingConfig::SetLogSessionInfo: Failed to update configuration (with session info) (0x%08X)",
+      "CWsmTrackingConfig::SetLogSessionInfo: Failed to read configuration (0x%08X)"
+    ],
+    "name": "?SetLogSessionInfo@CWsmTrackingConfig@@UEAAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(CWsmTrackingConfig *__hidden this, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 511,
+    "size": 327,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "PiRegStateOpenClassKey",
+    "ea": "0x140020eb8",
+    "function_file": "functions/140020eb8_PiRegStateOpenClassKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!_snwprintf"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class"
+    ],
+    "name": "PiRegStateOpenClassKey",
+    "prototype": "",
+    "rank_score": 459,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SeSddlSecurityDescriptorFromSDDL",
+    "ea": "0x14002052c",
+    "function_file": "functions/14002052c_SeSddlSecurityDescriptorFromSDDL.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SeSddlSecurityDescriptorFromSDDL",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 188,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "CWsmTrackingConfig::Read(_WSM_TRACKING_CONFIG * const,bool)",
+    "ea": "0x14000b1b4",
+    "function_file": "functions/14000b1b4_CWsmTrackingConfig_Read_WSM_TRACKING_CONFIG_const_bool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Read@CWsmTrackingConfig@@IEAAJQEAU_WSM_TRACKING_CONFIG@@_N@Z",
+    "prototype": "int(CWsmTrackingConfig *__hidden this, struct _WSM_TRACKING_CONFIG *const, bool)",
+    "rank_score": 422,
+    "size": 195,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PpRegStateReadCreateClassCreationSettings",
+    "ea": "0x140021234",
+    "function_file": "functions/140021234_PpRegStateReadCreateClassCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PpRegStateReadCreateClassCreationSettings",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 356,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "CWsmLogConfig::Reset(_WSM_LOG_CONFIG * const,bool)",
+    "ea": "0x14000bb50",
+    "function_file": "functions/14000bb50_CWsmLogConfig_Reset_WSM_LOG_CONFIG_const_bool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Reset@CWsmLogConfig@@IEAAJQEAU_WSM_LOG_CONFIG@@_N@Z",
+    "prototype": "int(CWsmLogConfig *__hidden this, struct _WSM_LOG_CONFIG *const, bool)",
+    "rank_score": 419,
+    "size": 163,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CWsmLogConfig::CLogConfig::deserialize(read_buffer_aligned &)",
+    "ea": "0x14000c590",
+    "function_file": "functions/14000c590_CWsmLogConfig_CLogConfig_deserialize_read_buffer_aligned.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?deserialize@CLogConfig@CWsmLogConfig@@UEAAJAEAVread_buffer_aligned@@@Z",
+    "prototype": "__int64 __fastcall(CWsmLogConfig::CLogConfig *__hidden this, struct read_buffer_aligned *)",
+    "rank_score": 416,
+    "size": 337,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "CWsmLogConfig::~CWsmLogConfig(void)",
+    "ea": "0x140009298",
+    "function_file": "functions/140009298_CWsmLogConfig_CWsmLogConfig_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1CWsmLogConfig@@QEAA@XZ",
+    "prototype": "void __fastcall(CWsmLogConfig *__hidden this)",
+    "rank_score": 416,
+    "size": 98,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SetLogPath(_UNICODE_STRING const *,bool)",
+    "ea": "0x140002ffc",
+    "function_file": "functions/140002ffc_SetLogPath_UNICODE_STRING_const_bool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?SetLogPath@@YAJPEBU_UNICODE_STRING@@_N@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *, bool)",
+    "rank_score": 416,
+    "size": 181,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CWsmTrackingConfig::CTrackingPathInfo::Release(void)",
+    "ea": "0x14000b414",
+    "function_file": "functions/14000b414_CWsmTrackingConfig_CTrackingPathInfo_Release_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Release@CTrackingPathInfo@CWsmTrackingConfig@@IEAAXXZ",
+    "prototype": "void __fastcall(CWsmTrackingConfig::CTrackingPathInfo *__hidden this)",
+    "rank_score": 415,
+    "size": 141,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CWsmTrackingConfig::~CWsmTrackingConfig(void)",
+    "ea": "0x140009300",
+    "function_file": "functions/140009300_CWsmTrackingConfig_CWsmTrackingConfig_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1CWsmTrackingConfig@@QEAA@XZ",
+    "prototype": "void __fastcall(CWsmTrackingConfig *__hidden this)",
+    "rank_score": 414,
+    "size": 98,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "Duplicate(_UNICODE_STRING const *,_UNICODE_STRING *)",
+    "ea": "0x14000dd24",
+    "function_file": "functions/14000dd24_Duplicate_UNICODE_STRING_const_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?Duplicate@@YAJPEBU_UNICODE_STRING@@PEAU1@@Z",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString, PUNICODE_STRING DestinationString)",
+    "rank_score": 412,
+    "size": 102,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WriteLogStop(void)",
+    "ea": "0x1400040b4",
+    "function_file": "functions/1400040b4_WriteLogStop_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "?WriteLogStop@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 404,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SetLogConfig",
+    "ea": "0x140001a10",
+    "function_file": "functions/140001a10_SetLogConfig.md",
+    "matched_imports": [
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "Failed to set registry log configuration (0x%08X)",
+      "LogConfig"
+    ],
+    "name": "SetLogConfig",
+    "prototype": "",
+    "rank_score": 305,
+    "size": 125,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilCreateWstrKey",
+    "ea": "0x14002161c",
+    "function_file": "functions/14002161c_CmRegUtilCreateWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateWstrKey",
+    "prototype": "",
+    "rank_score": 245,
+    "size": 203,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilOpenExistingWstrKey",
+    "ea": "0x1400216f0",
+    "function_file": "functions/1400216f0_CmRegUtilOpenExistingWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilOpenExistingWstrKey",
+    "prototype": "",
+    "rank_score": 235,
+    "size": 133,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WinSetupMonDeviceControl",
+    "ea": "0x140007d40",
+    "function_file": "functions/140007d40_WinSetupMonDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "WinSetupMonDeviceControl",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 114,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "WinSetupMonDuplicateCapturedUnicodeStringFromMode",
+    "ea": "0x14001e044",
+    "function_file": "functions/14001e044_WinSetupMonDuplicateCapturedUnicodeStringFromMode.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WinSetupMonDuplicateCapturedUnicodeStringFromMode",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 194,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::CreateInstance(_WSM_TRACKING_CONFIG * const,bool,CWsmTrackingConfig::CTrackingConfig * *)",
+    "ea": "0x14000a728",
+    "function_file": "functions/14000a728_CWsmTrackingConfig_CTrackingConfig_CreateInstance_WSM_TRACKING_CONFIG_const_bool_CWsmTrackingConfig_CTrackingC.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@CTrackingConfig@CWsmTrackingConfig@@SAJQEAU_WSM_TRACKING_CONFIG@@_NPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(struct _WSM_TRACKING_CONFIG *const, bool, struct CWsmTrackingConfig::CTrackingConfig **)",
+    "rank_score": 221,
+    "size": 115,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "StopLoggingToFile(_FLT_INSTANCE *)",
+    "ea": "0x140003554",
+    "function_file": "functions/140003554_StopLoggingToFile_FLT_INSTANCE.md",
+    "matched_imports": [
+      "ntoskrnl!KeQueryTimeIncrement"
+    ],
+    "matched_strings": [],
+    "name": "?StopLoggingToFile@@YAXPEAU_FLT_INSTANCE@@@Z",
+    "prototype": "void __fastcall(struct _FLT_INSTANCE *)",
+    "rank_score": 221,
+    "size": 209,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "WinSetupMonCreateClose",
+    "ea": "0x140007d00",
+    "function_file": "functions/140007d00_WinSetupMonCreateClose.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "WinSetupMonCreateClose",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 44,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "??$out_ptr@XV?$unique_ptr@VCTrackingConfig@CWsmTrackingConfig@@U?$default_delete@VCTrackingConfig@CWsmTrackingConfig@@@utl@@@utl@@$$V@utl@@YA?A_PAEAV?$unique_ptr@VCTrackingConfig@CWsmTrackingConfig@@U?$default_delete@VCTrackingConfig@CWsmTrackingConfig@@@utl@@@0@@Z",
+    "ea": "0x140008b00",
+    "function_file": "functions/140008b00_out_ptr_XV_unique_ptr_VCTrackingConfig_CWsmTrackingConfig_U_default_delete_VCTrackingConfig_CWsmTrackingConfig.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??$out_ptr@XV?$unique_ptr@VCTrackingConfig@CWsmTrackingConfig@@U?$default_delete@VCTrackingConfig@CWsmTrackingConfig@@@utl@@@utl@@$$V@utl@@YA?A_PAEAV?$unique_ptr@VCTrackingConfig@CWsmTrackingConfig@@U?$default_delete@VCTrackingConfig@CWsmTrackingConfig@@@utl@@@0@@Z",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 82,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CWsmTrackingConfig::CTrackingOverrideInfo::CreateInstance(_WSM_TRACKING_OVERRIDE_INFO * const,bool,CWsmTrackingConfig::CTrackingOverrideInfo * *)",
+    "ea": "0x14000a7a4",
+    "function_file": "functions/14000a7a4_CWsmTrackingConfig_CTrackingOverrideInfo_CreateInstance_WSM_TRACKING_OVERRIDE_INFO_const_bool_CWsmTrackingConf.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@CTrackingOverrideInfo@CWsmTrackingConfig@@SAJQEAU_WSM_TRACKING_OVERRIDE_INFO@@_NPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(struct _WSM_TRACKING_OVERRIDE_INFO *const, bool, struct CWsmTrackingConfig::CTrackingOverrideInfo **)",
+    "rank_score": 219,
+    "size": 279,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "CWsmTrackingConfig::CTrackingPathInfo::CreateInstance(_WSM_TRACKING_PATH_INFO * const,bool,CWsmTrackingConfig::CTrackingPathInfo * *)",
+    "ea": "0x14000a8c4",
+    "function_file": "functions/14000a8c4_CWsmTrackingConfig_CTrackingPathInfo_CreateInstance_WSM_TRACKING_PATH_INFO_const_bool_CWsmTrackingConfig_CTrac.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@CTrackingPathInfo@CWsmTrackingConfig@@SAJQEAU_WSM_TRACKING_PATH_INFO@@_NPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(struct _WSM_TRACKING_PATH_INFO *const, bool, struct CWsmTrackingConfig::CTrackingPathInfo **)",
+    "rank_score": 219,
+    "size": 178,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "WinSetupMonFreeCapturedUnicodeStringFromMode",
+    "ea": "0x14001e10c",
+    "function_file": "functions/14001e10c_WinSetupMonFreeCapturedUnicodeStringFromMode.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WinSetupMonFreeCapturedUnicodeStringFromMode",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 54,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "utl::_RangeDestroyApc<utl::allocator<utl::unique_ptr<CWsmTrackingConfig::CTrackingPathInfo,utl::default_delete<CWsmTrackingConfig::CTrackingPathInfo>>>>(utl::allocator<utl::unique_ptr<CWsmTrackingConfig::CTrackingPathInfo,utl::default_delete<CWsmTrackingConfig::CTrackingPathInfo>>> &,utl::unique_ptr<CWsmTrackingConfig::CTrackingPathInfo,utl::default_delete<CWsmTrackingConfig::CTrackingPathInfo>> *,unsigned __int64)",
+    "ea": "0x1400088ec",
+    "function_file": "functions/1400088ec_utl_RangeDestroyApc_utl_allocator_utl_unique_ptr_CWsmTrackingConfig_CTrackingPathInfo_utl_default_delete_CWsmT.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??$_RangeDestroyApc@V?$allocator@V?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@utl@@@utl@@@utl@@YAXAEAV?$allocator@V?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@utl@@@0@PEAV?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@0@_K@Z",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 88,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CreateInstance(_WSM_LOG_CONFIG * const,IWsmLogConfig * *)",
+    "ea": "0x14000a680",
+    "function_file": "functions/14000a680_CreateInstance_WSM_LOG_CONFIG_const_IWsmLogConfig.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@@YAJQEAU_WSM_LOG_CONFIG@@PEAPEAVIWsmLogConfig@@@Z",
+    "prototype": "__int64 __fastcall(struct _WSM_LOG_CONFIG *const, struct IWsmLogConfig **)",
+    "rank_score": 217,
+    "size": 161,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "??$out_ptr@XV?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@utl@@$$V@utl@@YA?A_PAEAV?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@0@@Z",
+    "ea": "0x140008bb0",
+    "function_file": "functions/140008bb0_out_ptr_XV_unique_ptr_VCTrackingPathInfo_CWsmTrackingConfig_U_default_delete_VCTrackingPathInfo_CWsmTrackingCo.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??$out_ptr@XV?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@utl@@$$V@utl@@YA?A_PAEAV?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@0@@Z",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 82,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateInstance(uchar const *,ulong,IWsmStableLogConfig * *)",
+    "ea": "0x14000a4b0",
+    "function_file": "functions/14000a4b0_CreateInstance_uchar_const_ulong_IWsmStableLogConfig.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@@YAJPEBEKPEAPEAVIWsmStableLogConfig@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int8 *, unsigned int, struct IWsmStableLogConfig **)",
+    "rank_score": 216,
+    "size": 224,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateInstance(uchar const *,ulong,IWsmStableTrackingConfig * *)",
+    "ea": "0x14000a598",
+    "function_file": "functions/14000a598_CreateInstance_uchar_const_ulong_IWsmStableTrackingConfig.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@@YAJPEBEKPEAPEAVIWsmStableTrackingConfig@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int8 *, unsigned int, struct IWsmStableTrackingConfig **)",
+    "rank_score": 216,
+    "size": 224,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "utl::_RangeDestroyApc<utl::allocator<utl::unique_ptr<CWsmTrackingConfig::CTrackingOverrideInfo,utl::default_delete<CWsmTrackingConfig::CTrackingOverrideInfo>>>>(utl::allocator<utl::unique_ptr<CWsmTrackingConfig::CTrackingOverrideInfo,utl::default_delete<CWsmTrackingConfig::CTrackingOverrideInfo>>> &,utl::unique_ptr<CWsmTrackingConfig::CTrackingOverrideInfo,utl::default_delete<CWsmTrackingConfig::CTrackingOverrideInfo>> *,unsigned __int64)",
+    "ea": "0x14000888c",
+    "function_file": "functions/14000888c_utl_RangeDestroyApc_utl_allocator_utl_unique_ptr_CWsmTrackingConfig_CTrackingOverrideInfo_utl_default_delete_C.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??$_RangeDestroyApc@V?$allocator@V?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@utl@@@utl@@@utl@@YAXAEAV?$allocator@V?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@utl@@@0@PEAV?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@0@_K@Z",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 88,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "utl::vector<utl::unique_ptr<CWsmTrackingConfig::CTrackingOverrideInfo,utl::default_delete<CWsmTrackingConfig::CTrackingOverrideInfo>>,utl::allocator<utl::unique_ptr<CWsmTrackingConfig::CTrackingOverrideInfo,utl::default_delete<CWsmTrackingConfig::CTrackingOverrideInfo>>>>::_GrowMinimum(unsigned __int64)",
+    "ea": "0x14000c0c0",
+    "function_file": "functions/14000c0c0_utl_vector_utl_unique_ptr_CWsmTrackingConfig_CTrackingOverrideInfo_utl_default_delete_CWsmTrackingConfig_CTrac.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?_GrowMinimum@?$vector@V?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@utl@@V?$allocator@V?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@utl@@@2@@utl@@AEAA_N_K@Z",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 273,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "utl::vector<utl::unique_ptr<CWsmTrackingConfig::CTrackingPathInfo,utl::default_delete<CWsmTrackingConfig::CTrackingPathInfo>>,utl::allocator<utl::unique_ptr<CWsmTrackingConfig::CTrackingPathInfo,utl::default_delete<CWsmTrackingConfig::CTrackingPathInfo>>>>::_SetCapacity(unsigned __int64)",
+    "ea": "0x14000c1d8",
+    "function_file": "functions/14000c1d8_utl_vector_utl_unique_ptr_CWsmTrackingConfig_CTrackingPathInfo_utl_default_delete_CWsmTrackingConfig_CTracking.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?_SetCapacity@?$vector@V?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@utl@@V?$allocator@V?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@utl@@@2@@utl@@AEAA_N_K@Z",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 219,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "??$out_ptr@XV?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@utl@@$$V@utl@@YA?A_PAEAV?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@0@@Z",
+    "ea": "0x140008b58",
+    "function_file": "functions/140008b58_out_ptr_XV_unique_ptr_VCTrackingOverrideInfo_CWsmTrackingConfig_U_default_delete_VCTrackingOverrideInfo_CWsmTr.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??$out_ptr@XV?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@utl@@$$V@utl@@YA?A_PAEAV?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@0@@Z",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 82,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SepSddlDaclFromSDDLString",
+    "ea": "0x1400206e4",
+    "function_file": "functions/1400206e4_SepSddlDaclFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlDaclFromSDDLString",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 221,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 14,
+    "demangled": "operator new(unsigned __int64,std::nothrow_t const &)",
+    "ea": "0x140009368",
+    "function_file": "functions/140009368_operator_new_unsigned_int64_std_nothrow_t_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_KAEBUnothrow_t@std@@@Z",
+    "prototype": "void *__fastcall(SIZE_T NumberOfBytes, const struct std::nothrow_t *)",
+    "rank_score": 214,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CWsmLogConfig::Release(void)",
+    "ea": "0x14000b4b0",
+    "function_file": "functions/14000b4b0_CWsmLogConfig_Release_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Release@CWsmLogConfig@@UEAAXXZ",
+    "prototype": "void __fastcall(PVOID P)",
+    "rank_score": 213,
+    "size": 45,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CWsmTrackingConfig::Release(void)",
+    "ea": "0x14000b500",
+    "function_file": "functions/14000b500_CWsmTrackingConfig_Release_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Release@CWsmTrackingConfig@@UEAAXXZ",
+    "prototype": "void __fastcall(PVOID P)",
+    "rank_score": 213,
+    "size": 45,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "operator delete(void *)",
+    "ea": "0x14000d880",
+    "function_file": "functions/14000d880_operator_delete_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 213,
+    "size": 32,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::IsTrackedStablePath(ushort const *)",
+    "ea": "0x14000b010",
+    "function_file": "functions/14000b010_CWsmTrackingConfig_IsTrackedStablePath_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?IsTrackedStablePath@CWsmTrackingConfig@@UEBAEPEBG@Z",
+    "prototype": "unsigned __int8(CWsmTrackingConfig *__hidden this, const unsigned __int16 *)",
+    "rank_score": 211,
+    "size": 78,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "utl::vector<uchar,utl::allocator<uchar>>::resize(unsigned __int64)",
+    "ea": "0x14000cfa0",
+    "function_file": "functions/14000cfa0_utl_vector_uchar_utl_allocator_uchar_resize_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?resize@?$vector@EV?$allocator@E@utl@@@utl@@QEAA_N_K@Z",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 258,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "write_buffer_uchar::write(uchar const * const,ulong)",
+    "ea": "0x14000d5e0",
+    "function_file": "functions/14000d5e0_write_buffer_uchar_write_uchar_const_const_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?write@write_buffer_uchar@@IEAAJQEBEK@Z",
+    "prototype": "int(write_buffer_uchar *__hidden this, const unsigned __int8 *const, unsigned int)",
+    "rank_score": 210,
+    "size": 332,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "IsLogPathUnderPath(_UNICODE_STRING const *)",
+    "ea": "0x140002644",
+    "function_file": "functions/140002644_IsLogPathUnderPath_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?IsLogPathUnderPath@@YAEPEBU_UNICODE_STRING@@@Z",
+    "prototype": "unsigned __int8 __fastcall(const struct _UNICODE_STRING *)",
+    "rank_score": 206,
+    "size": 46,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001148",
+    "function_file": "functions/140001148_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "ProbeForRead_0",
+    "ea": "0x1400012a6",
+    "function_file": "functions/1400012a6_ProbeForRead_0.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "ProbeForRead_0",
+    "prototype": "void __stdcall(volatile void *Address, SIZE_T Length, ULONG Alignment)",
+    "rank_score": 102,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PersistLogMaximumSize(unsigned __int64)",
+    "ea": "0x140001674",
+    "function_file": "functions/140001674_PersistLogMaximumSize_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to create updated log configuration (0x%08X)"
+    ],
+    "name": "?PersistLogMaximumSize@@YAJ_K@Z",
+    "prototype": "__int64 __fastcall(unsigned __int64)",
+    "rank_score": 68,
+    "size": 204,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ConfigQueryRoutine(ushort *,ulong,void *,ulong,void *,void *)",
+    "ea": "0x140001380",
+    "function_file": "functions/140001380_ConfigQueryRoutine_ushort_ulong_void_ulong_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to deserialize tracking config from the registry (0x%08X)"
+    ],
+    "name": "?ConfigQueryRoutine@@YAJPEAGKPEAXK11@Z",
+    "prototype": "int(unsigned __int16 *, unsigned int, void *, unsigned int, void *, void *)",
+    "rank_score": 54,
+    "size": 123,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 24,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14000f900",
+    "function_file": "functions/14000f900_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 36,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 47,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x14000f9e0",
+    "function_file": "functions/14000f9e0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 35,
+    "demangled": "memset",
+    "ea": "0x14000fd40",
+    "function_file": "functions/14000fd40_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CWsmLogConfig::SetLogMaximumSize(unsigned __int64)",
+    "ea": "0x14000bc00",
+    "function_file": "functions/14000bc00_CWsmLogConfig_SetLogMaximumSize_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetLogMaximumSize@CWsmLogConfig@@UEAAJ_K@Z",
+    "prototype": "__int64 __fastcall(CWsmLogConfig *__hidden this, unsigned __int64)",
+    "rank_score": 24,
+    "size": 83,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14000f80c",
+    "function_file": "functions/14000f80c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "memmove",
+    "ea": "0x14000fa40",
+    "function_file": "functions/14000fa40_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 23,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140022010",
+    "function_file": "functions/140022010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:CWsmLogConfig::SetLogMaximumSize`adjustor{8}' (unsigned __int64)",
+    "ea": "0x14000bc60",
+    "function_file": "functions/14000bc60_thunk_CWsmLogConfig_SetLogMaximumSize_adjustor_8_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetLogMaximumSize@CWsmLogConfig@@W7EAAJ_K@Z",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 9,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "WinSetupMonInstanceTeardownComplete",
+    "ea": "0x14001faa0",
+    "function_file": "functions/14001faa0_WinSetupMonInstanceTeardownComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinSetupMonInstanceTeardownComplete",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 3,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "WinSetupMonMessageAddOrUpdateTrackedPathOverride",
+    "ea": "0x14001e2ec",
+    "function_file": "functions/14001e2ec_WinSetupMonMessageAddOrUpdateTrackedPathOverride.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinSetupMonMessageAddOrUpdateTrackedPathOverride",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 369,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 12,
+    "demangled": "TraceError",
+    "ea": "0x14001f130",
+    "function_file": "functions/14001f130_TraceError.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TraceError",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 335,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinSetupMonMessageAddOrUpdateSessionInfo",
+    "ea": "0x14001e174",
+    "function_file": "functions/14001e174_WinSetupMonMessageAddOrUpdateSessionInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinSetupMonMessageAddOrUpdateSessionInfo",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 192,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinSetupMonMessageAddOrUpdateTrackedPath",
+    "ea": "0x14001e23c",
+    "function_file": "functions/14001e23c_WinSetupMonMessageAddOrUpdateTrackedPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinSetupMonMessageAddOrUpdateTrackedPath",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 170,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinSetupMonMessageRemoveTrackedPath",
+    "ea": "0x14001e464",
+    "function_file": "functions/14001e464_WinSetupMonMessageRemoveTrackedPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinSetupMonMessageRemoveTrackedPath",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 161,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WinSetupMonMessageSwitchLogPath",
+    "ea": "0x14001e71c",
+    "function_file": "functions/14001e71c_WinSetupMonMessageSwitchLogPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinSetupMonMessageSwitchLogPath",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 132,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "utl::vector<utl::unique_ptr<CWsmTrackingConfig::CTrackingPathInfo,utl::default_delete<CWsmTrackingConfig::CTrackingPathInfo>>,utl::allocator<utl::unique_ptr<CWsmTrackingConfig::CTrackingPathInfo,utl::default_delete<CWsmTrackingConfig::CTrackingPathInfo>>>>::resize(unsigned __int64)",
+    "ea": "0x14000d21c",
+    "function_file": "functions/14000d21c_utl_vector_utl_unique_ptr_CWsmTrackingConfig_CTrackingPathInfo_utl_default_delete_CWsmTrackingConfig_CTracking.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?resize@?$vector@V?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@utl@@V?$allocator@V?$unique_ptr@VCTrackingPathInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingPathInfo@CWsmTrackingConfig@@@utl@@@utl@@@2@@utl@@QEAA_N_K@Z",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 209,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "utl::make_unique<CWsmLogConfig,,0>(void)",
+    "ea": "0x140008a18",
+    "function_file": "functions/140008a18_utl_make_unique_CWsmLogConfig_0_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$make_unique@VCWsmLogConfig@@$$V$0A@@utl@@YA?AV?$unique_ptr@VCWsmLogConfig@@U?$default_delete@VCWsmLogConfig@@@utl@@@0@XZ",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 107,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "utl::vector<utl::unique_ptr<CWsmTrackingConfig::CTrackingOverrideInfo,utl::default_delete<CWsmTrackingConfig::CTrackingOverrideInfo>>,utl::allocator<utl::unique_ptr<CWsmTrackingConfig::CTrackingOverrideInfo,utl::default_delete<CWsmTrackingConfig::CTrackingOverrideInfo>>>>::resize(unsigned __int64)",
+    "ea": "0x14000d174",
+    "function_file": "functions/14000d174_utl_vector_utl_unique_ptr_CWsmTrackingConfig_CTrackingOverrideInfo_utl_default_delete_CWsmTrackingConfig_CTrac.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?resize@?$vector@V?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@utl@@V?$allocator@V?$unique_ptr@VCTrackingOverrideInfo@CWsmTrackingConfig@@U?$default_delete@VCTrackingOverrideInfo@CWsmTrackingConfig@@@utl@@@utl@@@2@@utl@@QEAA_N_K@Z",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 160,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::CTrackingOverrideInfo::deserialize(read_buffer_aligned &)",
+    "ea": "0x14000c9b0",
+    "function_file": "functions/14000c9b0_CWsmTrackingConfig_CTrackingOverrideInfo_deserialize_read_buffer_aligned.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?deserialize@CTrackingOverrideInfo@CWsmTrackingConfig@@UEAAJAEAVread_buffer_aligned@@@Z",
+    "prototype": "__int64 __fastcall(CWsmTrackingConfig::CTrackingOverrideInfo *__hidden this, struct read_buffer_aligned *)",
+    "rank_score": 16,
+    "size": 279,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "GetStablePathWithFallback(_UNICODE_STRING const *,_UNICODE_STRING *,_UNICODE_STRING *)",
+    "ea": "0x14000eb0c",
+    "function_file": "functions/14000eb0c_GetStablePathWithFallback_UNICODE_STRING_const_UNICODE_STRING_UNICODE_STRING.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetStablePathWithFallback@@YAJPEBU_UNICODE_STRING@@PEAU1@1@Z",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2, PUNICODE_STRING DestinationString, struct _UNICODE_STRING *)",
+    "rank_score": 16,
+    "size": 85,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "MicrosoftTelemetryAssertTriggeredNoArgsKM",
+    "ea": "0x140008138",
+    "function_file": "functions/140008138_MicrosoftTelemetryAssertTriggeredNoArgsKM.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MicrosoftTelemetryAssertTriggeredNoArgsKM",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 43,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "utl::make_unique<CWsmTrackingConfig,,0>(void)",
+    "ea": "0x140008a8c",
+    "function_file": "functions/140008a8c_utl_make_unique_CWsmTrackingConfig_0_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$make_unique@VCWsmTrackingConfig@@$$V$0A@@utl@@YA?AV?$unique_ptr@VCWsmTrackingConfig@@U?$default_delete@VCWsmTrackingConfig@@@utl@@@0@XZ",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 107,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CWsmLogConfig::CLogConfig::serialize(write_buffer_aligned &)",
+    "ea": "0x14000d300",
+    "function_file": "functions/14000d300_CWsmLogConfig_CLogConfig_serialize_write_buffer_aligned.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?serialize@CLogConfig@CWsmLogConfig@@UEBAJAEAVwrite_buffer_aligned@@@Z",
+    "prototype": "int(CWsmLogConfig::CLogConfig *__hidden this, struct write_buffer_aligned *)",
+    "rank_score": 14,
+    "size": 112,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::CTrackingConfig::serialize(write_buffer_aligned &)",
+    "ea": "0x14000d380",
+    "function_file": "functions/14000d380_CWsmTrackingConfig_CTrackingConfig_serialize_write_buffer_aligned.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?serialize@CTrackingConfig@CWsmTrackingConfig@@UEBAJAEAVwrite_buffer_aligned@@@Z",
+    "prototype": "int(CWsmTrackingConfig::CTrackingConfig *__hidden this, struct write_buffer_aligned *)",
+    "rank_score": 14,
+    "size": 184,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::CTrackingOverrideInfo::serialize(write_buffer_aligned &)",
+    "ea": "0x14000d440",
+    "function_file": "functions/14000d440_CWsmTrackingConfig_CTrackingOverrideInfo_serialize_write_buffer_aligned.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?serialize@CTrackingOverrideInfo@CWsmTrackingConfig@@UEBAJAEAVwrite_buffer_aligned@@@Z",
+    "prototype": "int(CWsmTrackingConfig::CTrackingOverrideInfo *__hidden this, struct write_buffer_aligned *)",
+    "rank_score": 14,
+    "size": 103,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "utl::make_unique<CWsmLogConfig::CLogConfig,,0>(void)",
+    "ea": "0x14000894c",
+    "function_file": "functions/14000894c_utl_make_unique_CWsmLogConfig_CLogConfig_0_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$make_unique@VCLogConfig@CWsmLogConfig@@$$V$0A@@utl@@YA?AV?$unique_ptr@VCLogConfig@CWsmLogConfig@@U?$default_delete@VCLogConfig@CWsmLogConfig@@@utl@@@0@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 73,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "utl::make_unique<CWsmTrackingConfig::CTrackingConfig,,0>(void)",
+    "ea": "0x14000899c",
+    "function_file": "functions/14000899c_utl_make_unique_CWsmTrackingConfig_CTrackingConfig_0_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$make_unique@VCTrackingConfig@CWsmTrackingConfig@@$$V$0A@@utl@@YA?AV?$unique_ptr@VCTrackingConfig@CWsmTrackingConfig@@U?$default_delete@VCTrackingConfig@CWsmTrackingConfig@@@utl@@@0@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 117,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wsm_wstring::deserialize(read_buffer_aligned &)",
+    "ea": "0x14000cdc0",
+    "function_file": "functions/14000cdc0_wsm_wstring_deserialize_read_buffer_aligned.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?deserialize@wsm_wstring@@UEAAJAEAVread_buffer_aligned@@@Z",
+    "prototype": "__int64 __fastcall(wsm_wstring *__hidden this, struct read_buffer_aligned *)",
+    "rank_score": 14,
+    "size": 192,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CWsmLogConfig::SetLogPath(ushort const *)",
+    "ea": "0x14000bc70",
+    "function_file": "functions/14000bc70_CWsmLogConfig_SetLogPath_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetLogPath@CWsmLogConfig@@UEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CWsmLogConfig *__hidden this, const unsigned __int16 *)",
+    "rank_score": 13,
+    "size": 99,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CWsmLogConfig::SetLogStablePath(ushort const *)",
+    "ea": "0x14000bf50",
+    "function_file": "functions/14000bf50_CWsmLogConfig_SetLogStablePath_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetLogStablePath@CWsmLogConfig@@UEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CWsmLogConfig *__hidden this, const unsigned __int16 *)",
+    "rank_score": 13,
+    "size": 95,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::CTrackingPathInfo::serialize(write_buffer_aligned &)",
+    "ea": "0x14000d4b0",
+    "function_file": "functions/14000d4b0_CWsmTrackingConfig_CTrackingPathInfo_serialize_write_buffer_aligned.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?serialize@CTrackingPathInfo@CWsmTrackingConfig@@UEBAJAEAVwrite_buffer_aligned@@@Z",
+    "prototype": "int(CWsmTrackingConfig::CTrackingPathInfo *__hidden this, struct write_buffer_aligned *)",
+    "rank_score": 13,
+    "size": 118,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::RemoveTracking(void)",
+    "ea": "0x14000baf0",
+    "function_file": "functions/14000baf0_CWsmTrackingConfig_RemoveTracking_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveTracking@CWsmTrackingConfig@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CWsmTrackingConfig *__hidden this)",
+    "rank_score": 13,
+    "size": 89,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 10,
+    "demangled": "RtlCopyFromUser",
+    "ea": "0x140001220",
+    "function_file": "functions/140001220_RtlCopyFromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 13,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CWsmLogConfig::GetConfig(void)",
+    "ea": "0x14000a980",
+    "function_file": "functions/14000a980_CWsmLogConfig_GetConfig_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetConfig@CWsmLogConfig@@UEBAQEAU_WSM_LOG_CONFIG@@XZ",
+    "prototype": "struct _WSM_LOG_CONFIG *__fastcall(CWsmLogConfig *__hidden this)",
+    "rank_score": 12,
+    "size": 35,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CWsmLogConfig::GetData(void)",
+    "ea": "0x14000aa00",
+    "function_file": "functions/14000aa00_CWsmLogConfig_GetData_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetData@CWsmLogConfig@@UEBAPEBEXZ",
+    "prototype": "const unsigned __int8 *__fastcall(CWsmLogConfig *__hidden this)",
+    "rank_score": 12,
+    "size": 57,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CWsmLogConfig::GetDataSize(void)",
+    "ea": "0x14000aa90",
+    "function_file": "functions/14000aa90_CWsmLogConfig_GetDataSize_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDataSize@CWsmLogConfig@@UEBA?BKXZ",
+    "prototype": "unsigned int __fastcall(CWsmLogConfig *__hidden this)",
+    "rank_score": 12,
+    "size": 57,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CWsmLogConfig::HasLogStablePath(void)",
+    "ea": "0x14000ab20",
+    "function_file": "functions/14000ab20_CWsmLogConfig_HasLogStablePath_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HasLogStablePath@CWsmLogConfig@@UEBAEXZ",
+    "prototype": "unsigned __int8 __fastcall(CWsmLogConfig *__hidden this)",
+    "rank_score": 12,
+    "size": 38,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CWsmTrackingConfig::GetConfig(void)",
+    "ea": "0x14000a9c0",
+    "function_file": "functions/14000a9c0_CWsmTrackingConfig_GetConfig_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetConfig@CWsmTrackingConfig@@UEBAQEAU_WSM_TRACKING_CONFIG@@XZ",
+    "prototype": "struct _WSM_TRACKING_CONFIG *__fastcall(CWsmTrackingConfig *__hidden this)",
+    "rank_score": 12,
+    "size": 41,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::GetData(void)",
+    "ea": "0x14000aa40",
+    "function_file": "functions/14000aa40_CWsmTrackingConfig_GetData_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetData@CWsmTrackingConfig@@UEBAPEBEXZ",
+    "prototype": "const unsigned __int8 *__fastcall(CWsmTrackingConfig *__hidden this)",
+    "rank_score": 12,
+    "size": 63,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CWsmTrackingConfig::GetDataSize(void)",
+    "ea": "0x14000aad0",
+    "function_file": "functions/14000aad0_CWsmTrackingConfig_GetDataSize_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDataSize@CWsmTrackingConfig@@UEBA?BKXZ",
+    "prototype": "unsigned int __fastcall(CWsmTrackingConfig *__hidden this)",
+    "rank_score": 12,
+    "size": 62,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x14000f930",
+    "function_file": "functions/14000f930_RtlCopyVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 12,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WinSetupMonMessageRemoveTracking",
+    "ea": "0x14001e50c",
+    "function_file": "functions/14001e50c_WinSetupMonMessageRemoveTracking.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinSetupMonMessageRemoveTracking",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 15,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "WinSetupMonPreCreate",
+    "ea": "0x14001fdc0",
+    "function_file": "functions/14001fdc0_WinSetupMonPreCreate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WinSetupMonPreCreate",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 96,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140022044",
+    "function_file": "functions/140022044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:CWsmLogConfig::GetConfig`adjustor{8}' (void)",
+    "ea": "0x14000a9b0",
+    "function_file": "functions/14000a9b0_thunk_CWsmLogConfig_GetConfig_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetConfig@CWsmLogConfig@@W7EBAQEAU_WSM_LOG_CONFIG@@XZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:CWsmLogConfig::Release`adjustor{8}' (void)",
+    "ea": "0x14000b4f0",
+    "function_file": "functions/14000b4f0_thunk_CWsmLogConfig_Release_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CWsmLogConfig@@W7EAAXXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:CWsmTrackingConfig::GetConfig`adjustor{8}' (void)",
+    "ea": "0x14000a9f0",
+    "function_file": "functions/14000a9f0_thunk_CWsmTrackingConfig_GetConfig_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetConfig@CWsmTrackingConfig@@W7EBAQEAU_WSM_TRACKING_CONFIG@@XZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:CWsmTrackingConfig::Release`adjustor{8}' (void)",
+    "ea": "0x14000b540",
+    "function_file": "functions/14000b540_thunk_CWsmTrackingConfig_Release_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CWsmTrackingConfig@@W7EAAXXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:CWsmTrackingConfig::SetLogSessionInfo`adjustor{8}' (ushort const *,ushort const *)",
+    "ea": "0x14000bf40",
+    "function_file": "functions/14000bf40_thunk_CWsmTrackingConfig_SetLogSessionInfo_adjustor_8_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetLogSessionInfo@CWsmTrackingConfig@@W7EAAJPEBG0@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "utl::vector<_WSM_TRACKING_PATH_INFO,utl::allocator<_WSM_TRACKING_PATH_INFO>>::resize(unsigned __int64)",
+    "ea": "0x14000d0a8",
+    "function_file": "functions/14000d0a8_utl_vector_WSM_TRACKING_PATH_INFO_utl_allocator_WSM_TRACKING_PATH_INFO_resize_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?resize@?$vector@U_WSM_TRACKING_PATH_INFO@@V?$allocator@U_WSM_TRACKING_PATH_INFO@@@utl@@@utl@@QEAA_N_K@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 195,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WdmlibRtlInitUnicodeStringEx",
+    "ea": "0x140007dc4",
+    "function_file": "functions/140007dc4_WdmlibRtlInitUnicodeStringEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibRtlInitUnicodeStringEx",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DestinationString, PCWSTR SourceString)",
+    "rank_score": 8,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapSz<ushort> const &)",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapBuffer@U_UNICODE_STRING@@@@U2@U2@U2@U?$_tlgWrapSz@G@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapBuffer@U_UNICODE_STRING@@@@444AEBU?$_tlgWrapSz@G@@@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 314,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "read_buffer_aligned::read<ulong>(ulong &)",
+    "ea": "0x140008c08",
+    "function_file": "functions/140008c08_read_buffer_aligned_read_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$read@K@read_buffer_aligned@@QEAAJAEAK@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RtlReadULong64FromUser",
+    "ea": "0x14001e008",
+    "function_file": "functions/14001e008_RtlReadULong64FromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULong64FromUser",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wsm_wstring::serialize(write_buffer_aligned &)",
+    "ea": "0x14000d530",
+    "function_file": "functions/14000d530_wsm_wstring_serialize_write_buffer_aligned.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?serialize@wsm_wstring@@UEBAJAEAVwrite_buffer_aligned@@@Z",
+    "prototype": "int(wsm_wstring *__hidden this, struct write_buffer_aligned *)",
+    "rank_score": 4,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "GetLogSessionId(void)",
+    "ea": "0x140002604",
+    "function_file": "functions/140002604_GetLogSessionId_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetLogSessionId@@YAPEBU_UNICODE_STRING@@XZ",
+    "prototype": "const struct _UNICODE_STRING *(void)",
+    "rank_score": 3,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "IsLogFileReady(void)",
+    "ea": "0x140002614",
+    "function_file": "functions/140002614_IsLogFileReady_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsLogFileReady@@YAEXZ",
+    "prototype": "unsigned __int8(void)",
+    "rank_score": 3,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "IsLogPathOnInstance(_FLT_INSTANCE * const)",
+    "ea": "0x140002628",
+    "function_file": "functions/140002628_IsLogPathOnInstance_FLT_INSTANCE_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsLogPathOnInstance@@YAEQEAU_FLT_INSTANCE@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _FLT_INSTANCE *const)",
+    "rank_score": 2,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyFromUser$thunk$11487580757436585079",
+    "ea": "0x140011010",
+    "function_file": "functions/140011010_RtlCopyFromUser_thunk_11487580757436585079.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser$thunk$11487580757436585079",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x14000f940",
+    "function_file": "functions/14000f940_RtlMoveVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlReadULong64FromUser$thunk$2147908448085668007",
+    "ea": "0x140011020",
+    "function_file": "functions/140011020_RtlReadULong64FromUser_thunk_2147908448085668007.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULong64FromUser$thunk$2147908448085668007",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  }
+]

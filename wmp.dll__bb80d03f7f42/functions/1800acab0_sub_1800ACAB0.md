@@ -1,0 +1,264 @@
+# sub_1800ACAB0
+
+- ea: `0x1800acab0`
+- end: `0x1800af214`
+- name: `sub_1800ACAB0`
+- size: `10084`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `33`
+- tags: `authz_impersonation, registry_config, loader_planting, broker_com_uri`
+
+## callees
+
+- `0x180007b30`
+- `0x18000cb40`
+- `0x18000ef70`
+- `0x180019c60`
+- `0x18002dea0`
+- `0x18003946c`
+- `0x180056de0`
+- `0x18005b90c`
+- `0x180060068`
+- `0x180060630`
+- `0x1800654d0`
+- `0x18006d200`
+- `0x18008d3a8`
+- `0x18008e298`
+- `0x18008ebdc`
+- `0x1800a2994`
+- `0x1800acab0`
+- `0x1800b151c`
+- `0x1800bed90`
+- `0x1800ed13c`
+- `0x1800f0988`
+- `0x18010b5d4`
+- `0x180117e28`
+- `0x180123914`
+- `0x18012573c`
+- `0x180159890`
+- `0x18015a7a0`
+- `0x18052cafc`
+- `0x180613174`
+- `0x180625a94`
+- `0x180625ad0`
+- `0x18065ad78`
+- `0x18074be40`
+
+## import_xrefs
+
+- `KERNEL32!GetTickCount` at `0x1800ad5e8`
+- `KERNEL32!GetTickCount` at `0x1800ad6ec`
+- `KERNEL32!GetTickCount` at `0x1800ad5e8`
+- `KERNEL32!GetTickCount` at `0x1800ad6ec`
+- `KERNEL32!GetVersionExW` at `0x1800ace41`
+- `KERNEL32!GetVersionExW` at `0x1800ace41`
+- `KERNEL32!LoadLibraryW` at `0x1800acf3a`
+- `KERNEL32!LoadLibraryW` at `0x1800acf3a`
+- `KERNEL32!RaiseException` at `0x1800acbff`
+- `KERNEL32!RaiseException` at `0x1800acc6e`
+- `KERNEL32!RaiseException` at `0x1800acce3`
+- `KERNEL32!RaiseException` at `0x1800acdef`
+- `KERNEL32!RaiseException` at `0x1800acefd`
+- `KERNEL32!RaiseException` at `0x1800ad011`
+- `KERNEL32!RaiseException` at `0x1800ad086`
+- `KERNEL32!RaiseException` at `0x1800ad149`
+- `KERNEL32!RaiseException` at `0x1800ad20c`
+- `KERNEL32!RaiseException` at `0x1800ad2cf`
+- `KERNEL32!RaiseException` at `0x1800ad371`
+- `KERNEL32!RaiseException` at `0x1800ad442`
+- `KERNEL32!RaiseException` at `0x1800ad756`
+- `KERNEL32!RaiseException` at `0x1800ad7ce`
+- `KERNEL32!RaiseException` at `0x1800ad862`
+- `KERNEL32!RaiseException` at `0x1800ad935`
+- `KERNEL32!RaiseException` at `0x1800ada2a`
+- `KERNEL32!RaiseException` at `0x1800adaa0`
+- `KERNEL32!RaiseException` at `0x1800adb50`
+- `KERNEL32!RaiseException` at `0x1800adbc6`
+- `KERNEL32!RaiseException` at `0x1800adc73`
+- `KERNEL32!RaiseException` at `0x1800adced`
+- `KERNEL32!RaiseException` at `0x1800add9a`
+- `KERNEL32!RaiseException` at `0x1800ade14`
+- `KERNEL32!RaiseException` at `0x1800adee8`
+- `KERNEL32!RaiseException` at `0x1800adf62`
+- `KERNEL32!RaiseException` at `0x1800ae012`
+- `KERNEL32!RaiseException` at `0x1800ae08f`
+- `KERNEL32!RaiseException` at `0x1800ae13c`
+- `KERNEL32!RaiseException` at `0x1800ae1b6`
+- `KERNEL32!RaiseException` at `0x1800ae263`
+- `KERNEL32!RaiseException` at `0x1800ae2d9`
+- `KERNEL32!RaiseException` at `0x1800ae386`
+- `KERNEL32!RaiseException` at `0x1800ae400`
+- `KERNEL32!RaiseException` at `0x1800ae4b9`
+- `KERNEL32!RaiseException` at `0x1800ae59f`
+- `KERNEL32!RaiseException` at `0x1800ae62a`
+- `KERNEL32!RaiseException` at `0x1800ae710`
+- `KERNEL32!RaiseException` at `0x1800ae82f`
+- `KERNEL32!RaiseException` at `0x1800ae8c4`
+- `KERNEL32!RaiseException` at `0x1800ae954`
+- `KERNEL32!RaiseException` at `0x1800ae9e2`
+- `KERNEL32!RaiseException` at `0x1800aeab0`
+- `KERNEL32!RaiseException` at `0x1800aeb23`
+- `KERNEL32!RaiseException` at `0x1800aebe5`
+- `KERNEL32!RaiseException` at `0x1800aeca7`
+- `KERNEL32!RaiseException` at `0x1800aed69`
+- `KERNEL32!RaiseException` at `0x1800aee2b`
+- `KERNEL32!RaiseException` at `0x1800aeeed`
+- `KERNEL32!RaiseException` at `0x1800aefaf`
+- `KERNEL32!RaiseException` at `0x1800af071`
+- `KERNEL32!RaiseException` at `0x1800af149`
+- `KERNEL32!RaiseException` at `0x1800acbff`
+- `KERNEL32!RaiseException` at `0x1800acc6e`
+- `KERNEL32!RaiseException` at `0x1800acce3`
+- `KERNEL32!RaiseException` at `0x1800acdef`
+- `KERNEL32!RaiseException` at `0x1800acefd`
+- `KERNEL32!RaiseException` at `0x1800ad011`
+- `KERNEL32!RaiseException` at `0x1800ad086`
+- `KERNEL32!RaiseException` at `0x1800ad149`
+- `KERNEL32!RaiseException` at `0x1800ad20c`
+- `KERNEL32!RaiseException` at `0x1800ad2cf`
+- `KERNEL32!RaiseException` at `0x1800ad371`
+- `KERNEL32!RaiseException` at `0x1800ad442`
+- `KERNEL32!RaiseException` at `0x1800ad756`
+- `KERNEL32!RaiseException` at `0x1800ad7ce`
+- `KERNEL32!RaiseException` at `0x1800ad862`
+- `KERNEL32!RaiseException` at `0x1800ad935`
+- `KERNEL32!RaiseException` at `0x1800ada2a`
+- `KERNEL32!RaiseException` at `0x1800adaa0`
+- `KERNEL32!RaiseException` at `0x1800adb50`
+- `KERNEL32!RaiseException` at `0x1800adbc6`
+- `KERNEL32!RaiseException` at `0x1800adc73`
+- `KERNEL32!RaiseException` at `0x1800adced`
+- `KERNEL32!RaiseException` at `0x1800add9a`
+- `KERNEL32!RaiseException` at `0x1800ade14`
+- `KERNEL32!RaiseException` at `0x1800adee8`
+- `KERNEL32!RaiseException` at `0x1800adf62`
+- `KERNEL32!RaiseException` at `0x1800ae012`
+- `KERNEL32!RaiseException` at `0x1800ae08f`
+- `KERNEL32!RaiseException` at `0x1800ae13c`
+- `KERNEL32!RaiseException` at `0x1800ae1b6`
+- `KERNEL32!RaiseException` at `0x1800ae263`
+- `KERNEL32!RaiseException` at `0x1800ae2d9`
+- `KERNEL32!RaiseException` at `0x1800ae386`
+- `KERNEL32!RaiseException` at `0x1800ae400`
+- `KERNEL32!RaiseException` at `0x1800ae4b9`
+- `KERNEL32!RaiseException` at `0x1800ae59f`
+- `KERNEL32!RaiseException` at `0x1800ae62a`
+- `KERNEL32!RaiseException` at `0x1800ae710`
+- `KERNEL32!RaiseException` at `0x1800ae82f`
+- `KERNEL32!RaiseException` at `0x1800ae8c4`
+- `KERNEL32!RaiseException` at `0x1800ae954`
+- `KERNEL32!RaiseException` at `0x1800ae9e2`
+- `KERNEL32!RaiseException` at `0x1800aeab0`
+- `KERNEL32!RaiseException` at `0x1800aeb23`
+- `KERNEL32!RaiseException` at `0x1800aebe5`
+- `KERNEL32!RaiseException` at `0x1800aeca7`
+- `KERNEL32!RaiseException` at `0x1800aed69`
+- `KERNEL32!RaiseException` at `0x1800aee2b`
+- `KERNEL32!RaiseException` at `0x1800aeeed`
+- `KERNEL32!RaiseException` at `0x1800aefaf`
+- `KERNEL32!RaiseException` at `0x1800af071`
+- `KERNEL32!RaiseException` at `0x1800af149`
+- `KERNEL32!FreeLibrary` at `0x1800acf8b`
+- `KERNEL32!FreeLibrary` at `0x1800acf8b`
+- `OLEAUT32!SysAllocString` at `0x1800acbd0`
+- `OLEAUT32!SysAllocString` at `0x1800acc4a`
+- `OLEAUT32!SysAllocString` at `0x1800accbf`
+- `OLEAUT32!SysAllocString` at `0x1800acdcb`
+- `OLEAUT32!SysAllocString` at `0x1800aced9`
+- `OLEAUT32!SysAllocString` at `0x1800acfed`
+- `OLEAUT32!SysAllocString` at `0x1800ad062`
+- `OLEAUT32!SysAllocString` at `0x1800ad125`
+- `OLEAUT32!SysAllocString` at `0x1800ad1e8`
+- `OLEAUT32!SysAllocString` at `0x1800ad2ab`
+- `OLEAUT32!SysAllocString` at `0x1800ad34d`
+- `OLEAUT32!SysAllocString` at `0x1800ad41e`
+- `OLEAUT32!SysAllocString` at `0x1800ad72c`
+- `OLEAUT32!SysAllocString` at `0x1800ad7aa`
+- `OLEAUT32!SysAllocString` at `0x1800ad83e`
+- `OLEAUT32!SysAllocString` at `0x1800ad911`
+- `OLEAUT32!SysAllocString` at `0x1800ada06`
+- `OLEAUT32!SysAllocString` at `0x1800ada7c`
+- `OLEAUT32!SysAllocString` at `0x1800adb2c`
+- `OLEAUT32!SysAllocString` at `0x1800adba2`
+- `OLEAUT32!SysAllocString` at `0x1800adc4f`
+- `OLEAUT32!SysAllocString` at `0x1800adcc9`
+- `OLEAUT32!SysAllocString` at `0x1800add76`
+- `OLEAUT32!SysAllocString` at `0x1800addf0`
+- `OLEAUT32!SysAllocString` at `0x1800adec4`
+- `OLEAUT32!SysAllocString` at `0x1800adf3e`
+- `OLEAUT32!SysAllocString` at `0x1800adfee`
+- `OLEAUT32!SysAllocString` at `0x1800ae06b`
+- `OLEAUT32!SysAllocString` at `0x1800ae118`
+- `OLEAUT32!SysAllocString` at `0x1800ae192`
+- `OLEAUT32!SysAllocString` at `0x1800ae23f`
+- `OLEAUT32!SysAllocString` at `0x1800ae2b5`
+- `OLEAUT32!SysAllocString` at `0x1800ae362`
+- `OLEAUT32!SysAllocString` at `0x1800ae3dc`
+- `OLEAUT32!SysAllocString` at `0x1800ae495`
+- `OLEAUT32!SysAllocString` at `0x1800ae57b`
+- `OLEAUT32!SysAllocString` at `0x1800ae606`
+- `OLEAUT32!SysAllocString` at `0x1800ae6ec`
+- `OLEAUT32!SysAllocString` at `0x1800ae80b`
+- `OLEAUT32!SysAllocString` at `0x1800ae89b`
+- `OLEAUT32!SysAllocString` at `0x1800ae92b`
+- `OLEAUT32!SysAllocString` at `0x1800ae9ba`
+- `OLEAUT32!SysAllocString` at `0x1800aea88`
+- `OLEAUT32!SysAllocString` at `0x1800aeb01`
+- `OLEAUT32!SysAllocString` at `0x1800aebc3`
+- `OLEAUT32!SysAllocString` at `0x1800aec85`
+- `OLEAUT32!SysAllocString` at `0x1800aed47`
+- `OLEAUT32!SysAllocString` at `0x1800aee09`
+- `OLEAUT32!SysAllocString` at `0x1800aeecb`
+- `OLEAUT32!SysAllocString` at `0x1800aef8d`
+- `OLEAUT32!SysAllocString` at `0x1800af04f`
+- `OLEAUT32!SysAllocString` at `0x1800af125`
+- `OLEAUT32!SysAllocString` at `0x1800acbd0`
+- `OLEAUT32!SysAllocString` at `0x1800acc4a`
+- `OLEAUT32!SysAllocString` at `0x1800accbf`
+- `OLEAUT32!SysAllocString` at `0x1800acdcb`
+- `OLEAUT32!SysAllocString` at `0x1800aced9`
+- `OLEAUT32!SysAllocString` at `0x1800acfed`
+- `OLEAUT32!SysAllocString` at `0x1800ad062`
+- `OLEAUT32!SysAllocString` at `0x1800ad125`
+- `OLEAUT32!SysAllocString` at `0x1800ad1e8`
+- `OLEAUT32!SysAllocString` at `0x1800ad2ab`
+- `OLEAUT32!SysAllocString` at `0x1800ad34d`
+- `OLEAUT32!SysAllocString` at `0x1800ad41e`
+- `OLEAUT32!SysAllocString` at `0x1800ad72c`
+- `OLEAUT32!SysAllocString` at `0x1800ad7aa`
+- `OLEAUT32!SysAllocString` at `0x1800ad83e`
+- `OLEAUT32!SysAllocString` at `0x1800ad911`
+- `OLEAUT32!SysAllocString` at `0x1800ada06`
+- `OLEAUT32!SysAllocString` at `0x1800ada7c`
+- `OLEAUT32!SysAllocString` at `0x1800adb2c`
+- `OLEAUT32!SysAllocString` at `0x1800adba2`
+- `OLEAUT32!SysAllocString` at `0x1800adc4f`
+- `OLEAUT32!SysAllocString` at `0x1800adcc9`
+- `OLEAUT32!SysAllocString` at `0x1800add76`
+- `OLEAUT32!SysAllocString` at `0x1800addf0`
+- `OLEAUT32!SysAllocString` at `0x1800adec4`
+- `OLEAUT32!SysAllocString` at `0x1800adf3e`
+- `OLEAUT32!SysAllocString` at `0x1800adfee`
+- `OLEAUT32!SysAllocString` at `0x1800ae06b`
+- `OLEAUT32!SysAllocString` at `0x1800ae118`
+- `OLEAUT32!SysAllocString` at `0x1800ae192`
+- `OLEAUT32!SysAllocString` at `0x1800ae23f`
+- `OLEAUT32!SysAllocString` at `0x1800ae2b5`
+- `OLEAUT32!SysAllocString` at `0x1800ae362`
+- `OLEAUT32!SysAllocString` at `0x1800ae3dc`
+
+## string_xrefs
+
+- `0x1800ae888`: `CLSID`
+- `0x1800acf33`: `wmvcore.dll`
+- `0x1800ae7f7`: `Plugin`
+- `0x1800af116`: `C:\WMPError.XML`
+- `0x1800ad650`: `SOFTWARE\Microsoft\MediaPlayer\Player\Extensions\.%s`
+- `0x1800ad62b`: `SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.%s`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,73 @@
+# wil::details::WilDynamicLoadRaiseFailFastException(_EXCEPTION_RECORD *,_CONTEXT *,ulong)
+
+- ea: `0x180027730`
+- end: `0x180027780`
+- name: `?WilDynamicLoadRaiseFailFastException@details@wil@@YAXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@Z`
+- size: `80`
+- prototype: `void __fastcall(wil::details *__hidden this, struct _EXCEPTION_RECORD *, struct _CONTEXT *, unsigned int)`
+- caller_count: `0`
+- callee_count: `3`
+- tags: `loader_planting, broker_com_uri`
+
+## callees
+
+- `0x180024774`
+- `0x180027730`
+- `0x180031010`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x18002774f`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x18002774f`
+
+## string_xrefs
+
+- `0x180027745`: `kernelbase.dll`
+
+## pseudocode
+
+```c
+void __fastcall wil::details::WilDynamicLoadRaiseFailFastException(
+        wil::details *this,
+        struct _EXCEPTION_RECORD *a2,
+        struct _CONTEXT *a3)
+{
+  unsigned int v4; // ebx
+  HMODULE ModuleHandleW; // rax
+  void (__fastcall *Proc)(wil::details *, struct _EXCEPTION_RECORD *, _QWORD); // rax
+
+  v4 = (unsigned int)a3;
+  ModuleHandleW = GetModuleHandleW(L"kernelbase.dll");
+  Proc = (void (__fastcall *)(wil::details *, struct _EXCEPTION_RECORD *, _QWORD))wil::details::GetProcAddress<void (*)(_EXCEPTION_RECORD *,_CONTEXT *,unsigned long)>(ModuleHandleW);
+  if ( Proc )
+    Proc(this, a2, v4);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180027730  mov     [rsp+arg_0], rbx
+0x180027735  mov     [rsp+arg_8], rsi
+0x18002773a  push    rdi
+0x18002773b  sub     rsp, 20h
+0x18002773f  mov     rsi, rcx
+0x180027742  mov     ebx, r8d
+0x180027745  lea     rcx, aKernelbaseDll_0; "kernelbase.dll"
+0x18002774c  mov     rdi, rdx
+0x18002774f  call    cs:__imp_GetModuleHandleW
+0x180027755  mov     rcx, rax
+0x180027758  call    ??$GetProcAddress@P6AXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@Z@details@wil@@YAP6AXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@ZPEAUHINSTANCE__@@PEBD@Z; wil::details::GetProcAddress<void (*)(_EXCEPTION_RECORD *,_CONTEXT *,ulong)>(HINSTANCE__ *,char const *)
+0x18002775d  test    rax, rax
+0x180027760  jz      short loc_180027770
+0x180027762  mov     r8d, ebx
+0x180027765  mov     rdx, rdi
+0x180027768  mov     rcx, rsi
+0x18002776b  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180027770  mov     rbx, [rsp+28h+arg_0]
+0x180027775  mov     rsi, [rsp+28h+arg_8]
+0x18002777a  add     rsp, 20h
+0x18002777e  pop     rdi
+0x18002777f  retn
+```
