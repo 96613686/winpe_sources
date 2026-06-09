@@ -1,0 +1,59 @@
+# wil_details_GetNtDllModuleHandle(void)
+
+- ea: `0x18001df48`
+- end: `0x18001df71`
+- name: `?wil_details_GetNtDllModuleHandle@@YAPEAUHINSTANCE__@@XZ`
+- size: `41`
+- prototype: `HINSTANCE(void)`
+- caller_count: `1`
+- callee_count: `1`
+- tags: `loader_planting`
+
+## callers
+
+- `0x18001c8d0`
+
+## callees
+
+- `0x18001df48`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x18001df5f`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x18001df5f`
+
+## string_xrefs
+
+- `0x18001df58`: `ntdll.dll`
+
+## pseudocode
+
+```c
+HINSTANCE wil_details_GetNtDllModuleHandle(void)
+{
+  HINSTANCE result; // rax
+
+  result = (HINSTANCE)`wil_details_GetNtDllModuleHandle'::`2'::wil_details_ntdllModuleHandle;
+  if ( !`wil_details_GetNtDllModuleHandle'::`2'::wil_details_ntdllModuleHandle )
+  {
+    result = GetModuleHandleW(L"ntdll.dll");
+    `wil_details_GetNtDllModuleHandle'::`2'::wil_details_ntdllModuleHandle = (__int64)result;
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18001df48  sub     rsp, 28h
+0x18001df4c  mov     rax, cs:?wil_details_ntdllModuleHandle@?1??wil_details_GetNtDllModuleHandle@@YAPEAUHINSTANCE__@@XZ@4PEAU2@EA; HINSTANCE__ * `wil_details_GetNtDllModuleHandle(void)'::`2'::wil_details_ntdllModuleHandle
+0x18001df53  test    rax, rax
+0x18001df56  jnz     short loc_18001DF6C
+0x18001df58  lea     rcx, aNtdllDll_0; "ntdll.dll"
+0x18001df5f  call    cs:__imp_GetModuleHandleW
+0x18001df65  mov     cs:?wil_details_ntdllModuleHandle@?1??wil_details_GetNtDllModuleHandle@@YAPEAUHINSTANCE__@@XZ@4PEAU2@EA, rax; HINSTANCE__ * `wil_details_GetNtDllModuleHandle(void)'::`2'::wil_details_ntdllModuleHandle
+0x18001df6c  add     rsp, 28h
+0x18001df70  retn
+```
