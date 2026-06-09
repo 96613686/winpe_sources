@@ -1,0 +1,216 @@
+# HrFakeDdeWndProc(DMSG *)
+
+- ea: `0x1417abd50`
+- end: `0x1417ad84d`
+- name: `?HrFakeDdeWndProc@@YAJPEAUDMSG@@@Z`
+- size: `6909`
+- prototype: `__int64 __fastcall(struct DMSG *)`
+- caller_count: `9`
+- callee_count: `67`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x1400bde90`
+- `0x140aad240`
+- `0x140c05ba0`
+- `0x14146b910`
+- `0x141886b00`
+- `0x1420544b0`
+- `0x142054ef0`
+- `0x1420a9e30`
+- `0x14273e500`
+
+## callees
+
+- `0x14004fdd8`
+- `0x140072040`
+- `0x14007f3c0`
+- `0x1400afd40`
+- `0x1400cfb18`
+- `0x14018edb0`
+- `0x1401fe1e0`
+- `0x140203970`
+- `0x1402073e0`
+- `0x14020a330`
+- `0x140257130`
+- `0x14038bb40`
+- `0x140498350`
+- `0x14055c3c0`
+- `0x1406f7810`
+- `0x1406f8d60`
+- `0x140799160`
+- `0x1408c69b0`
+- `0x1408c6c70`
+- `0x1408c6cd0`
+- `0x1408cc450`
+- `0x1408cc4b0`
+- `0x1408cfe50`
+- `0x140aeeb2c`
+- `0x140bdfa40`
+- `0x140d2e9d0`
+- `0x140e9ff60`
+- `0x140f99300`
+- `0x140fa47a0`
+- `0x1410b8820`
+- `0x1410bb780`
+- `0x14112fed0`
+- `0x1412352b0`
+- `0x1412a2020`
+- `0x1413242e0`
+- `0x141481440`
+- `0x1414a0bb0`
+- `0x1415c7080`
+- `0x141672540`
+- `0x1416a7fb0`
+- `0x1416a8080`
+- `0x141702ce0`
+- `0x141782620`
+- `0x1417abd50`
+- `0x141913f18`
+- `0x141e0634c`
+- `0x141fe5220`
+- `0x1420123b0`
+- `0x1420515c0`
+- `0x142051630`
+
+## import_xrefs
+
+- `KERNEL32!GlobalFree` at `0x1417ac00c`
+- `KERNEL32!GlobalFree` at `0x1417acbc0`
+- `KERNEL32!GlobalFree` at `0x1417acea0`
+- `KERNEL32!GlobalFree` at `0x1417acf8a`
+- `KERNEL32!GlobalFree` at `0x1417ad0c9`
+- `KERNEL32!GlobalFree` at `0x1417ac00c`
+- `KERNEL32!GlobalFree` at `0x1417acbc0`
+- `KERNEL32!GlobalFree` at `0x1417acea0`
+- `KERNEL32!GlobalFree` at `0x1417acf8a`
+- `KERNEL32!GlobalFree` at `0x1417ad0c9`
+- `KERNEL32!GlobalLock` at `0x1417ac058`
+- `KERNEL32!GlobalLock` at `0x1417ac674`
+- `KERNEL32!GlobalLock` at `0x1417acc72`
+- `KERNEL32!GlobalLock` at `0x1417acd54`
+- `KERNEL32!GlobalLock` at `0x1417ace52`
+- `KERNEL32!GlobalLock` at `0x1417acf6d`
+- `KERNEL32!GlobalLock` at `0x1417ad070`
+- `KERNEL32!GlobalLock` at `0x1417ad40a`
+- `KERNEL32!GlobalLock` at `0x1417ac058`
+- `KERNEL32!GlobalLock` at `0x1417ac674`
+- `KERNEL32!GlobalLock` at `0x1417acc72`
+- `KERNEL32!GlobalLock` at `0x1417acd54`
+- `KERNEL32!GlobalLock` at `0x1417ace52`
+- `KERNEL32!GlobalLock` at `0x1417acf6d`
+- `KERNEL32!GlobalLock` at `0x1417ad070`
+- `KERNEL32!GlobalLock` at `0x1417ad40a`
+- `KERNEL32!GlobalUnlock` at `0x1417ac5e0`
+- `KERNEL32!GlobalUnlock` at `0x1417acba0`
+- `KERNEL32!GlobalUnlock` at `0x1417acc83`
+- `KERNEL32!GlobalUnlock` at `0x1417ace96`
+- `KERNEL32!GlobalUnlock` at `0x1417acf02`
+- `KERNEL32!GlobalUnlock` at `0x1417acf81`
+- `KERNEL32!GlobalUnlock` at `0x1417ad0c0`
+- `KERNEL32!GlobalUnlock` at `0x1417ad0d4`
+- `KERNEL32!GlobalUnlock` at `0x1417ad600`
+- `KERNEL32!GlobalUnlock` at `0x1417ac5e0`
+- `KERNEL32!GlobalUnlock` at `0x1417acba0`
+- `KERNEL32!GlobalUnlock` at `0x1417acc83`
+- `KERNEL32!GlobalUnlock` at `0x1417ace96`
+- `KERNEL32!GlobalUnlock` at `0x1417acf02`
+- `KERNEL32!GlobalUnlock` at `0x1417acf81`
+- `KERNEL32!GlobalUnlock` at `0x1417ad0c0`
+- `KERNEL32!GlobalUnlock` at `0x1417ad0d4`
+- `KERNEL32!GlobalUnlock` at `0x1417ad600`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417abea0`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417ac6ae`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417acc26`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417acd0f`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417ad160`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417ad2a6`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417ad44a`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417abea0`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417ac6ae`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417acc26`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417acd0f`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417ad160`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417ad2a6`
+- `KERNEL32!GlobalGetAtomNameW` at `0x1417ad44a`
+- `KERNEL32!GlobalDeleteAtom` at `0x1417abec0`
+- `KERNEL32!GlobalDeleteAtom` at `0x1417acf4a`
+- `KERNEL32!GlobalDeleteAtom` at `0x1417ad0ee`
+- `KERNEL32!GlobalDeleteAtom` at `0x1417abec0`
+- `KERNEL32!GlobalDeleteAtom` at `0x1417acf4a`
+- `KERNEL32!GlobalDeleteAtom` at `0x1417ad0ee`
+- `USER32!SetWindowLongPtrW` at `0x1417ace8d`
+- `USER32!SetWindowLongPtrW` at `0x1417ad260`
+- `USER32!SetWindowLongPtrW` at `0x1417ad782`
+- `USER32!SetWindowLongPtrW` at `0x1417ace8d`
+- `USER32!SetWindowLongPtrW` at `0x1417ad260`
+- `USER32!SetWindowLongPtrW` at `0x1417ad782`
+- `USER32!GetWindowWord` at `0x1417ad111`
+- `USER32!GetWindowWord` at `0x1417ad665`
+- `USER32!GetWindowWord` at `0x1417ad111`
+- `USER32!GetWindowWord` at `0x1417ad665`
+- `USER32!IsWindow` at `0x1417abdeb`
+- `USER32!IsWindow` at `0x1417ad641`
+- `USER32!IsWindow` at `0x1417abdeb`
+- `USER32!IsWindow` at `0x1417ad641`
+- `USER32!IsWindowUnicode` at `0x1417abdd1`
+- `USER32!IsWindowUnicode` at `0x1417abdd1`
+- `USER32!FreeDDElParam` at `0x1417abe17`
+- `USER32!FreeDDElParam` at `0x1417abe17`
+- `USER32!PackDDElParam` at `0x1417ac612`
+- `USER32!PackDDElParam` at `0x1417acf20`
+- `USER32!PackDDElParam` at `0x1417ac612`
+- `USER32!PackDDElParam` at `0x1417acf20`
+- `USER32!GetWindowLongPtrW` at `0x1417abecb`
+- `USER32!GetWindowLongPtrW` at `0x1417acced`
+- `USER32!GetWindowLongPtrW` at `0x1417ad100`
+- `USER32!GetWindowLongPtrW` at `0x1417ad247`
+- `USER32!GetWindowLongPtrW` at `0x1417ad654`
+- `USER32!GetWindowLongPtrW` at `0x1417ad76c`
+- `USER32!GetWindowLongPtrW` at `0x1417abecb`
+- `USER32!GetWindowLongPtrW` at `0x1417acced`
+- `USER32!GetWindowLongPtrW` at `0x1417ad100`
+- `USER32!GetWindowLongPtrW` at `0x1417ad247`
+- `USER32!GetWindowLongPtrW` at `0x1417ad654`
+- `USER32!GetWindowLongPtrW` at `0x1417ad76c`
+- `USER32!UnpackDDElParam` at `0x1417abe0c`
+- `USER32!UnpackDDElParam` at `0x1417abe0c`
+- `Mso30Win32Client!__imp_MsoFRgwchEqual` at `0x1417ac2c4`
+- `Mso30Win32Client!__imp_MsoFRgwchEqual` at `0x1417ac2c4`
+- `Mso30Win32Client!__imp_?IsAppGuard@Config@AppGuard@@YA_NXZ` at `0x1417abdc0`
+- `Mso30Win32Client!__imp_?IsAppGuard@Config@AppGuard@@YA_NXZ` at `0x1417abf98`
+- `Mso30Win32Client!__imp_?IsAppGuard@Config@AppGuard@@YA_NXZ` at `0x1417abdc0`
+- `Mso30Win32Client!__imp_?IsAppGuard@Config@AppGuard@@YA_NXZ` at `0x1417abf98`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1417ad80f`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1417ad80f`
+- `Mso20Win32Client!__imp_?MsoRgchToRgwch@@YAHPEBDHPEA_WH@Z` at `0x1417ac08c`
+- `Mso20Win32Client!__imp_?MsoRgchToRgwch@@YAHPEBDHPEA_WH@Z` at `0x1417ac08c`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x1417abdae`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x1417abf8a`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x1417abdae`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x1417abf8a`
+- `Mso20Win32Client!__imp_MsoSzToWz` at `0x1417ace6d`
+- `Mso20Win32Client!__imp_MsoSzToWz` at `0x1417ace6d`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ac575`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ac591`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ac5d4`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ad6c0`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ad725`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ac575`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ac591`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ac5d4`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ad6c0`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1417ad725`
+- `Mso20Win32Client!__imp_?MsoHrCreateUrlSimpleFromUserRgwch@@YAJPEAPEAUIMsoUrl@@PEB_WHKPEBU1@W4MsoUrlCreateFlags@@PEAUIMsoMemHeap@@@Z` at `0x1417ac205`
+- `Mso20Win32Client!__imp_?MsoHrCreateUrlSimpleFromUserRgwch@@YAJPEAPEAUIMsoUrl@@PEB_WHKPEBU1@W4MsoUrlCreateFlags@@PEAUIMsoMemHeap@@@Z` at `0x1417ac205`
+
+## string_xrefs
+
+- `0x1417ac0d3`: `[open("`
+
+## pseudocode
+
+```c
+
+```
