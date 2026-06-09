@@ -1,0 +1,57 @@
+# MicrosoftTelemetryAssertTriggeredNoArgs
+
+- ea: `0x180060dc8`
+- end: `0x180060e6a`
+- name: `MicrosoftTelemetryAssertTriggeredNoArgs`
+- size: `162`
+- prototype: `__int64(void)`
+- caller_count: `22`
+- callee_count: `2`
+- tags: `loader_planting, broker_com_uri`
+
+## callers
+
+- `0x18001e644`
+- `0x180025bc0`
+- `0x180025d94`
+- `0x18002d6a0`
+- `0x18002da38`
+- `0x180039344`
+- `0x18003ea90`
+- `0x180047580`
+- `0x18004c810`
+- `0x180059038`
+- `0x180060a78`
+- `0x18007bc68`
+- `0x1800920f4`
+- `0x1800926a0`
+- `0x180092880`
+- `0x1800bb7b0`
+- `0x1800bbb1c`
+- `0x1800bbcec`
+- `0x1800bc4a0`
+- `0x1800bcd80`
+- `0x1800bd7d8`
+- `0x1800bdc64`
+
+## callees
+
+- `0x180060dc8`
+- `0x1800d2010`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x180060e03`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x180060e03`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExA` at `0x180060de9`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExA` at `0x180060de9`
+
+## string_xrefs
+
+- `0x180060ddd`: `ntdll.dll`
+
+## pseudocode
+
+```c
+
+```

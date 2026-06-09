@@ -1,0 +1,383 @@
+# wil::details::LogFailure(void *,uint,char const *,char const *,char const *,void *,wil::FailureType,wil::details::ResultStatus const &,ushort const *,bool,ushort *,unsigned __int64,char *,unsigned __int64,wil::FailureFlags,wil::FailureInfo *)
+
+- ea: `0x18005f13c`
+- end: `0x18005f435`
+- name: `?LogFailure@details@wil@@YAXPEAXIPEBD110W4FailureType@2@AEBUResultStatus@12@PEBG_NPEAG_KPEAD7W4FailureFlags@2@PEAUFailureInfo@2@@Z`
+- size: `761`
+- prototype: ``
+- caller_count: `3`
+- callee_count: `10`
+- tags: ``
+
+## callers
+
+- `0x18005efa0`
+- `0x18006ba8c`
+- `0x1800706e4`
+
+## callees
+
+- `0x180004424`
+- `0x180037444`
+- `0x18005de5c`
+- `0x18005de78`
+- `0x18005f13c`
+- `0x18006b778`
+- `0x18006c2ac`
+- `0x18006c2d0`
+- `0x18006cad8`
+- `0x1800d2010`
+
+## import_xrefs
+
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x18005f25f`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x18005f25f`
+- `api-ms-win-core-debug-l1-1-0!IsDebuggerPresent` at `0x18005f37e`
+- `api-ms-win-core-debug-l1-1-0!IsDebuggerPresent` at `0x18005f37e`
+- `api-ms-win-core-debug-l1-1-0!OutputDebugStringW` at `0x18005f3f0`
+- `api-ms-win-core-debug-l1-1-0!OutputDebugStringW` at `0x18005f3f0`
+
+## pseudocode
+
+```c
+void __fastcall wil::details::LogFailure(
+        __int64 a1,
+        int a2,
+        __int64 a3,
+        __int64 a4,
+        __int64 a5,
+        __int64 a6,
+        int a7,
+        unsigned int *a8,
+        _WORD *a9,
+        __int64 a10,
+        wil *lpOutputString,
+        __int64 a12,
+        _BYTE *a13,
+        __int64 a14,
+        int a15,
+        unsigned __int64 a16)
+{
+  unsigned int v18; // edi
+  int v19; // ebp
+  int v20; // eax
+  int v21; // edx
+  _WORD *v22; // rax
+  int v23; // edx
+  wil::details::in1diag3 *v24; // rcx
+  const struct wil::FailureInfo *v25; // r9
+  __int64 ModuleName; // rax
+  bool v27; // zf
+  wil::details *v28; // [rsp+30h] [rbp-48h]
+
+  *(_WORD *)lpOutputString = 0;
+  *a13 = 0;
+  v18 = *a8;
+  *(_DWORD *)(a16 + 8) = *a8;
+  *(_DWORD *)(a16 + 12) = a8[1];
+  v19 = 0;
+  if ( a7 )
+  {
+    switch ( a7 )
+    {
+      case 1:
+        v20 = wil::details::RecordReturn((wil::details *)v18, a2);
+        break;
+      case 2:
+        if ( (v18 & 0x80000000) == 0 )
+        {
+          v18 = -2147024228;
+          LODWORD(v28) = -2147024228;
+          wil::details::ReportFailure_Hr<2>(a1, a2, a3, a4, a5, a6, v28);
+          *(_DWORD *)(a16 + 8) = -2147024228;
+          *(_DWORD *)(a16 + 12) = wil::details::HrToNtStatus((wil::details *)0x8007029CLL, v21);
+        }
+        v20 = wil::details::RecordLog((wil::details *)v18, a2);
+        break;
+      case 3:
+        v20 = wil::details::RecordFailFast((wil::details *)v18, a2);
+        break;
+      default:
+        goto LABEL_12;
+    }
+  }
+  else
+  {
+    v20 = wil::details::RecordException((wil::details *)v18, a2);
+  }
+  v19 = v20;
+LABEL_12:
+  *(_DWORD *)a16 = a7;
+  *(_DWORD *)(a16 + 4) = a15;
+  if ( a8[2] == 1 )
+    *(_DWORD *)(a16 + 4) = a15 | 8;
+  *(_DWORD *)(a16 + 16) = _InterlockedIncrement(&`wil::details::LogFailure'::`2'::s_failureId);
+  v22 = a9;
+  if ( !a9 || !*a9 )
+    v22 = 0;
+  *(_QWORD *)(a16 + 24) = v22;
+  *(_DWORD *)(a16 + 32) = GetCurrentThreadId();
+  *(_QWORD *)(a16 + 56) = a3;
+  *(_DWORD *)(a16 + 64) = a2;
+  *(_DWORD *)(a16 + 68) = v19;
+  *(_QWORD *)(a16 + 40) = a5;
+  *(_QWORD *)(a16 + 48) = a4;
+  *(_QWORD *)(a16 + 136) = a6;
+  *(_QWORD *)(a16 + 144) = a1;
+  *(_QWORD *)(a16 + 72) = 0;
+  *(_OWORD *)(a16 + 104) = 0;
+  *(_QWORD *)(a16 + 120) = 0;
+  *(_OWORD *)(a16 + 80) = 0;
+  *(_QWORD *)(a16 + 96) = 0;
+  if ( wil::details::g_pfnGetModuleName )
+    ModuleName = wil::details::g_pfnGetModuleName(v24);
+  else
+    ModuleName = 0;
+  *(_QWORD *)(a16 + 128) = ModuleName;
+  if ( wil::details::g_pfnNotifyFailure )
+    wil::details::g_pfnNotifyFailure(a16);
+  if ( wil::details::g_pfnGetContextAndNotifyFailure )
+    wil::details::g_pfnGetContextAndNotifyFailure(a16, a13, 1024);
+  if ( wil::details::g_pfnLoggingCallback )
+    wil::details::g_pfnLoggingCallback(a16);
+  if ( wil::details::g_pfnOriginateCallback && (*(_BYTE *)(a16 + 4) & 2) == 0 )
+    wil::details::g_pfnOriginateCallback(a16);
+  if ( *(int *)(a16 + 8) >= 0 )
+  {
+    if ( a7 != 3 )
+      wil::details::in1diag3::_FailFastImmediate_Unexpected(v24);
+    *(_DWORD *)(a16 + 8) = -2147418113;
+    *(_DWORD *)(a16 + 12) = wil::details::HrToNtStatus((wil::details *)0x8000FFFFLL, v23);
+  }
+  if ( !wil::g_fIsDebuggerPresent
+    && (!wil::g_pfnIsDebuggerPresent
+      ? (v27 = !IsDebuggerPresent())
+      : (v27 = (unsigned __int8)wil::g_pfnIsDebuggerPresent(v24) == 0),
+        v27)
+    || (*(_BYTE *)(a16 + 4) & 2) != 0 )
+  {
+    if ( g_pfnResultLoggingCallback && !wil::details::g_resultMessageCallbackSet )
+      g_pfnResultLoggingCallback(a16, 0, 0);
+  }
+  else
+  {
+    if ( g_pfnResultLoggingCallback && !wil::details::g_resultMessageCallbackSet )
+      g_pfnResultLoggingCallback(a16, lpOutputString, 2048);
+    if ( !*(_WORD *)lpOutputString )
+      wil::GetFailureLogString(lpOutputString, (unsigned __int16 *)0x800, a16, v25);
+    OutputDebugStringW((LPCWSTR)lpOutputString);
+  }
+  if ( (*(_BYTE *)(a16 + 4) & 4) != 0 || wil::g_fBreakOnFailure )
+  {
+    if ( wil::details::g_pfnDebugBreak )
+      wil::details::g_pfnDebugBreak(v24);
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x18005f13c  mov     [rsp+arg_10], rbx
+0x18005f141  mov     [rsp+arg_8], edx
+0x18005f145  mov     [rsp+arg_0], rcx
+0x18005f14a  push    rbp
+0x18005f14b  push    rsi
+0x18005f14c  push    rdi
+0x18005f14d  push    r12
+0x18005f14f  push    r13
+0x18005f151  push    r14
+0x18005f153  push    r15
+0x18005f155  sub     rsp, 40h
+0x18005f159  mov     r12, r9
+0x18005f15c  mov     r13, r8
+0x18005f15f  mov     r10, rcx
+0x18005f162  xor     eax, eax
+0x18005f164  mov     rsi, [rsp+78h+lpOutputString]
+0x18005f16c  mov     [rsi], ax
+0x18005f16f  mov     rax, [rsp+78h+arg_60]
+0x18005f177  mov     byte ptr [rax], 0
+0x18005f17a  mov     r14, [rsp+78h+arg_38]
+0x18005f182  mov     edi, [r14]
+0x18005f185  mov     rbx, [rsp+78h+arg_78]
+0x18005f18d  mov     [rbx+8], edi
+0x18005f190  mov     eax, [r14+4]
+0x18005f194  mov     [rbx+0Ch], eax
+0x18005f197  xor     ebp, ebp
+0x18005f199  mov     r15d, [rsp+78h+arg_30]
+0x18005f1a1  mov     ecx, r15d
+0x18005f1a4  test    r15d, r15d
+0x18005f1a7  jz      short loc_18005F20F
+0x18005f1a9  sub     ecx, 1
+0x18005f1ac  jz      short loc_18005F206
+0x18005f1ae  sub     ecx, 1
+0x18005f1b1  jz      short loc_18005F1C1
+0x18005f1b3  cmp     ecx, 1
+0x18005f1b6  jnz     short loc_18005F218
+0x18005f1b8  mov     ecx, edi; this
+0x18005f1ba  call    ?RecordFailFast@details@wil@@YAHJ@Z; wil::details::RecordFailFast(long)
+0x18005f1bf  jmp     short loc_18005F216
+0x18005f1c1  test    edi, edi
+0x18005f1c3  js      short loc_18005F1FD
+0x18005f1c5  mov     edi, 8007029Ch
+0x18005f1ca  mov     dword ptr [rsp+78h+var_48], edi; wil::details *
+0x18005f1ce  mov     rax, [rsp+78h+arg_28]
+0x18005f1d6  mov     [rsp+78h+var_50], rax; __int64
+0x18005f1db  mov     rax, [rsp+78h+arg_20]
+0x18005f1e3  mov     [rsp+78h+var_58], rax; __int64
+0x18005f1e8  mov     rcx, r10; int
+0x18005f1eb  call    ??$ReportFailure_Hr@$01@details@wil@@YAXPEAXIPEBD110JW4FailureFlags@1@@Z; wil::details::ReportFailure_Hr<2>(void *,uint,char const *,char const *,char const *,void *,long,wil::FailureFlags)
+0x18005f1f0  mov     [rbx+8], edi
+0x18005f1f3  mov     ecx, edi; this
+0x18005f1f5  call    ?HrToNtStatus@details@wil@@YAJJ@Z; wil::details::HrToNtStatus(long)
+0x18005f1fa  mov     [rbx+0Ch], eax
+0x18005f1fd  mov     ecx, edi; this
+0x18005f1ff  call    ?RecordLog@details@wil@@YAHJ@Z; wil::details::RecordLog(long)
+0x18005f204  jmp     short loc_18005F216
+0x18005f206  mov     ecx, edi; this
+0x18005f208  call    ?RecordReturn@details@wil@@YAHJ@Z; wil::details::RecordReturn(long)
+0x18005f20d  jmp     short loc_18005F216
+0x18005f20f  mov     ecx, edi; this
+0x18005f211  call    ?RecordException@details@wil@@YAHJ@Z; wil::details::RecordException(long)
+0x18005f216  mov     ebp, eax
+0x18005f218  mov     [rbx], r15d
+0x18005f21b  mov     eax, [rsp+78h+arg_70]
+0x18005f222  mov     [rbx+4], eax
+0x18005f225  cmp     dword ptr [r14+8], 1
+0x18005f22a  jnz     short loc_18005F232
+0x18005f22c  or      eax, 8
+0x18005f22f  mov     [rbx+4], eax
+0x18005f232  mov     eax, 1
+0x18005f237  lock xadd cs:?s_failureId@?1??LogFailure@details@wil@@YAXPEAXIPEBD110W4FailureType@3@AEBUResultStatus@23@PEBG_NPEAG_KPEAD7W4FailureFlags@3@PEAUFailureInfo@3@@Z@4JC, eax; long volatile `wil::details::LogFailure(void *,uint,char const *,char const *,char const *,void *,wil::FailureType,wil::details::ResultStatus const &,ushort const *,bool,ushort *,unsigned __int64,char *,unsigned __int64,wil::FailureFlags,wil::FailureInfo *)'::`2'::s_failureId
+0x18005f23f  inc     eax
+0x18005f241  mov     [rbx+10h], eax
+0x18005f244  mov     rax, [rsp+78h+arg_40]
+0x18005f24c  xor     edi, edi
+0x18005f24e  test    rax, rax
+0x18005f251  jz      short loc_18005F258
+0x18005f253  cmp     [rax], di
+0x18005f256  jnz     short loc_18005F25B
+0x18005f258  mov     rax, rdi
+0x18005f25b  mov     [rbx+18h], rax
+0x18005f25f  call    cs:__imp_GetCurrentThreadId
+0x18005f265  mov     [rbx+20h], eax
+0x18005f268  mov     [rbx+38h], r13
+0x18005f26c  mov     eax, [rsp+78h+arg_8]
+0x18005f273  mov     [rbx+40h], eax
+0x18005f276  mov     [rbx+44h], ebp
+0x18005f279  mov     rax, [rsp+78h+arg_20]
+0x18005f281  mov     [rbx+28h], rax
+0x18005f285  mov     [rbx+30h], r12
+0x18005f289  mov     rax, [rsp+78h+arg_28]
+0x18005f291  mov     [rbx+88h], rax
+0x18005f298  mov     rax, [rsp+78h+arg_0]
+0x18005f2a0  mov     [rbx+90h], rax
+0x18005f2a7  mov     [rbx+48h], rdi
+0x18005f2ab  xorps   xmm0, xmm0
+0x18005f2ae  xor     eax, eax
+0x18005f2b0  movups  xmmword ptr [rbx+68h], xmm0
+0x18005f2b4  mov     [rbx+78h], rax
+0x18005f2b8  movups  xmmword ptr [rbx+50h], xmm0
+0x18005f2bc  mov     [rbx+60h], rax
+0x18005f2c0  mov     rax, cs:?g_pfnGetModuleName@details@wil@@3P6APEBDX_EEA
+0x18005f2c7  test    rax, rax
+0x18005f2ca  jz      short loc_18005F2D3
+0x18005f2cc  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18005f2d1  jmp     short loc_18005F2D6
+0x18005f2d3  mov     rax, rdi
+0x18005f2d6  mov     [rbx+80h], rax
+0x18005f2dd  mov     rax, cs:?g_pfnNotifyFailure@details@wil@@3P6AXPEAUFailureInfo@2@@_EEA
+0x18005f2e4  test    rax, rax
+0x18005f2e7  jz      short loc_18005F2F1
+0x18005f2e9  mov     rcx, rbx
+0x18005f2ec  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18005f2f1  mov     rax, cs:?g_pfnGetContextAndNotifyFailure@details@wil@@3P6AXPEAUFailureInfo@2@PEAD_K@_EEA
+0x18005f2f8  test    rax, rax
+0x18005f2fb  jz      short loc_18005F313
+0x18005f2fd  mov     r8d, 400h
+0x18005f303  mov     rdx, [rsp+78h+arg_60]
+0x18005f30b  mov     rcx, rbx
+0x18005f30e  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18005f313  mov     rax, cs:?g_pfnLoggingCallback@details@wil@@3P6AXAEBUFailureInfo@2@@_EEA
+0x18005f31a  test    rax, rax
+0x18005f31d  jz      short loc_18005F327
+0x18005f31f  mov     rcx, rbx
+0x18005f322  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18005f327  mov     rax, cs:?g_pfnOriginateCallback@details@wil@@3P6AXAEBUFailureInfo@2@@_EEA
+0x18005f32e  test    rax, rax
+0x18005f331  jz      short loc_18005F341
+0x18005f333  test    byte ptr [rbx+4], 2
+0x18005f337  jnz     short loc_18005F341
+0x18005f339  mov     rcx, rbx
+0x18005f33c  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18005f341  cmp     [rbx+8], edi
+0x18005f344  jl      short loc_18005F360
+0x18005f346  cmp     r15d, 3
+0x18005f34a  jnz     loc_18005F42F
+0x18005f350  mov     ecx, 8000FFFFh; this
+0x18005f355  mov     [rbx+8], ecx
+0x18005f358  call    ?HrToNtStatus@details@wil@@YAJJ@Z; wil::details::HrToNtStatus(long)
+0x18005f35d  mov     [rbx+0Ch], eax
+0x18005f360  cmp     cs:?g_fIsDebuggerPresent@wil@@3_NA, dil; bool wil::g_fIsDebuggerPresent
+0x18005f367  jnz     short loc_18005F388
+0x18005f369  mov     rax, cs:?g_pfnIsDebuggerPresent@wil@@3P6A_NX_EEA
+0x18005f370  test    rax, rax
+0x18005f373  jz      short loc_18005F37E
+0x18005f375  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18005f37a  test    al, al
+0x18005f37c  jmp     short loc_18005F386
+0x18005f37e  call    cs:__imp_IsDebuggerPresent
+0x18005f384  test    eax, eax
+0x18005f386  jz      short loc_18005F38E
+0x18005f388  test    byte ptr [rbx+4], 2
+0x18005f38c  jz      short loc_18005F3B2
+0x18005f38e  mov     rax, cs:g_pfnResultLoggingCallback
+0x18005f395  test    rax, rax
+0x18005f398  jz      short loc_18005F3F6
+0x18005f39a  cmp     cs:?g_resultMessageCallbackSet@details@wil@@3_NA, dil; bool wil::details::g_resultMessageCallbackSet
+0x18005f3a1  jnz     short loc_18005F3F6
+0x18005f3a3  xor     r8d, r8d
+0x18005f3a6  xor     edx, edx
+0x18005f3a8  mov     rcx, rbx
+0x18005f3ab  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18005f3b0  jmp     short loc_18005F3F6
+0x18005f3b2  mov     ebp, 800h
+0x18005f3b7  mov     rax, cs:g_pfnResultLoggingCallback
+0x18005f3be  test    rax, rax
+0x18005f3c1  jz      short loc_18005F3DA
+0x18005f3c3  cmp     cs:?g_resultMessageCallbackSet@details@wil@@3_NA, dil; bool wil::details::g_resultMessageCallbackSet
+0x18005f3ca  jnz     short loc_18005F3DA
+0x18005f3cc  mov     r8d, ebp
+0x18005f3cf  mov     rdx, rsi
+0x18005f3d2  mov     rcx, rbx
+0x18005f3d5  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18005f3da  cmp     [rsi], di
+0x18005f3dd  jnz     short loc_18005F3ED
+0x18005f3df  mov     r8, rbx; unsigned __int64
+0x18005f3e2  mov     rdx, rbp; unsigned __int16 *
+0x18005f3e5  mov     rcx, rsi; this
+0x18005f3e8  call    ?GetFailureLogString@wil@@YAJPEAG_KAEBUFailureInfo@1@@Z; wil::GetFailureLogString(ushort *,unsigned __int64,wil::FailureInfo const &)
+0x18005f3ed  mov     rcx, rsi; lpOutputString
+0x18005f3f0  call    cs:__imp_OutputDebugStringW
+0x18005f3f6  test    byte ptr [rbx+4], 4
+0x18005f3fa  jnz     short loc_18005F405
+0x18005f3fc  cmp     cs:?g_fBreakOnFailure@wil@@3_NA, dil; bool wil::g_fBreakOnFailure
+0x18005f403  jz      short loc_18005F417
+0x18005f405  mov     rax, cs:?g_pfnDebugBreak@details@wil@@3P6AXX_EEA
+0x18005f40c  test    rax, rax
+0x18005f40f  jz      short loc_18005F417
+0x18005f411  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18005f416  nop
+0x18005f417  mov     rbx, [rsp+78h+arg_10]
+0x18005f41f  add     rsp, 40h
+0x18005f423  pop     r15
+0x18005f425  pop     r14
+0x18005f427  pop     r13
+0x18005f429  pop     r12
+0x18005f42b  pop     rdi
+0x18005f42c  pop     rsi
+0x18005f42d  pop     rbp
+0x18005f42e  retn
+0x18005f42f  call    ?_FailFastImmediate_Unexpected@in1diag3@details@wil@@YAXXZ; wil::details::in1diag3::_FailFastImmediate_Unexpected(void)
+```

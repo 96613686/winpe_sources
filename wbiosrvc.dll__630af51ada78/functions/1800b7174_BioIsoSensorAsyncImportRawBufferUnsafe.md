@@ -1,0 +1,48 @@
+# BioIsoSensorAsyncImportRawBufferUnsafe
+
+- ea: `0x1800b7174`
+- end: `0x1800b739d`
+- name: `BioIsoSensorAsyncImportRawBufferUnsafe`
+- size: `553`
+- prototype: `__int64 __fastcall(__int64, __int64, int, __int64, _QWORD *)`
+- caller_count: `1`
+- callee_count: `2`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x18009c070`
+
+## callees
+
+- `0x18005388c`
+- `0x1800b7174`
+
+## import_xrefs
+
+- `RPCRT4!NdrClientCall3` at `0x1800b71cb`
+- `RPCRT4!NdrClientCall3` at `0x1800b7266`
+- `RPCRT4!NdrClientCall3` at `0x1800b72f8`
+- `RPCRT4!NdrClientCall3` at `0x1800b7352`
+- `RPCRT4!NdrClientCall3` at `0x1800b71cb`
+- `RPCRT4!NdrClientCall3` at `0x1800b7266`
+- `RPCRT4!NdrClientCall3` at `0x1800b72f8`
+- `RPCRT4!NdrClientCall3` at `0x1800b7352`
+- `RPCRT4!RpcExceptionFilter` at `0x1800d13af`
+- `RPCRT4!RpcExceptionFilter` at `0x1800d13cb`
+- `RPCRT4!RpcExceptionFilter` at `0x1800d13e7`
+- `RPCRT4!RpcExceptionFilter` at `0x1800d1403`
+- `RPCRT4!RpcExceptionFilter` at `0x1800d13af`
+- `RPCRT4!RpcExceptionFilter` at `0x1800d13cb`
+- `RPCRT4!RpcExceptionFilter` at `0x1800d13e7`
+- `RPCRT4!RpcExceptionFilter` at `0x1800d1403`
+
+## string_xrefs
+
+- `0x1800b7379`: `onecore\ds\security\biometrics\service\trustlet\lib\bioisoapi.cpp`
+
+## pseudocode
+
+```c
+
+```

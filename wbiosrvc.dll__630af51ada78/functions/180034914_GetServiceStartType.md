@@ -1,0 +1,153 @@
+# _GetServiceStartType
+
+- ea: `0x180034914`
+- end: `0x1800349c9`
+- name: `_GetServiceStartType`
+- size: `181`
+- prototype: `__int64 __fastcall(SC_HANDLE hService)`
+- caller_count: `1`
+- callee_count: `1`
+- tags: `registry_config, service_task`
+
+## callers
+
+- `0x180039a8c`
+
+## callees
+
+- `0x180034914`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18003493f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18003499c`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18003493f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18003499c`
+- `api-ms-win-service-management-l2-1-0!QueryServiceConfigW` at `0x180034935`
+- `api-ms-win-service-management-l2-1-0!QueryServiceConfigW` at `0x180034970`
+- `api-ms-win-service-management-l2-1-0!QueryServiceConfigW` at `0x180034935`
+- `api-ms-win-service-management-l2-1-0!QueryServiceConfigW` at `0x180034970`
+- `api-ms-win-core-heap-l2-1-0!LocalAlloc` at `0x180034952`
+- `api-ms-win-core-heap-l2-1-0!LocalAlloc` at `0x180034952`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x180034984`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x180034984`
+
+## pseudocode
+
+```c
+__int64 __fastcall GetServiceStartType(SC_HANDLE hService, DWORD *a2)
+{
+  signed int LastError; // eax
+  unsigned int v5; // ebx
+  struct _QUERY_SERVICE_CONFIGW *v6; // rax
+  struct _QUERY_SERVICE_CONFIGW *v7; // rdi
+  signed int v9; // eax
+  DWORD pcbBytesNeeded; // [rsp+60h] [rbp+18h] BYREF
+
+  pcbBytesNeeded = 0;
+  if ( QueryServiceConfigW(hService, 0, 0, &pcbBytesNeeded) )
+  {
+    return (unsigned int)-2147023537;
+  }
+  else
+  {
+    LastError = GetLastError();
+    v5 = LastError;
+    if ( LastError == 122 )
+    {
+      v6 = (struct _QUERY_SERVICE_CONFIGW *)LocalAlloc(0, pcbBytesNeeded);
+      v7 = v6;
+      if ( v6 )
+      {
+        if ( QueryServiceConfigW(hService, v6, pcbBytesNeeded, &pcbBytesNeeded) )
+        {
+          v5 = 0;
+          *a2 = v7->dwStartType;
+        }
+        else
+        {
+          v9 = GetLastError();
+          v5 = v9;
+          if ( v9 > 0 )
+            v5 = (unsigned __int16)v9 | 0x80070000;
+        }
+        LocalFree(v7);
+      }
+      else
+      {
+        return (unsigned int)-2147024882;
+      }
+    }
+    else if ( LastError > 0 )
+    {
+      return (unsigned __int16)LastError | 0x80070000;
+    }
+  }
+  return v5;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180034914  push    rbx
+0x180034916  push    rbp
+0x180034917  push    rsi
+0x180034918  push    rdi
+0x180034919  sub     rsp, 28h
+0x18003491d  mov     rsi, rdx
+0x180034920  mov     [rsp+48h+pcbBytesNeeded], 0
+0x180034928  xor     edx, edx; lpServiceConfig
+0x18003492a  lea     r9, [rsp+48h+pcbBytesNeeded]; pcbBytesNeeded
+0x18003492f  xor     r8d, r8d; cbBufSize
+0x180034932  mov     rbp, rcx
+0x180034935  call    cs:__imp_QueryServiceConfigW
+0x18003493b  test    eax, eax
+0x18003493d  jnz     short loc_180034995
+0x18003493f  call    cs:__imp_GetLastError
+0x180034945  mov     ebx, eax
+0x180034947  cmp     eax, 7Ah ; 'z'
+0x18003494a  jnz     short loc_1800349B3
+0x18003494c  mov     edx, [rsp+48h+pcbBytesNeeded]; uBytes
+0x180034950  xor     ecx, ecx; uFlags
+0x180034952  call    cs:__imp_LocalAlloc
+0x180034958  mov     rdi, rax
+0x18003495b  test    rax, rax
+0x18003495e  jz      short loc_1800349C2
+0x180034960  mov     r8d, [rsp+48h+pcbBytesNeeded]; cbBufSize
+0x180034965  lea     r9, [rsp+48h+pcbBytesNeeded]; pcbBytesNeeded
+0x18003496a  mov     rdx, rax; lpServiceConfig
+0x18003496d  mov     rcx, rbp; hService
+0x180034970  call    cs:__imp_QueryServiceConfigW
+0x180034976  test    eax, eax
+0x180034978  jz      short loc_18003499C
+0x18003497a  mov     eax, [rdi+4]
+0x18003497d  xor     ebx, ebx
+0x18003497f  mov     [rsi], eax
+0x180034981  mov     rcx, rdi; hMem
+0x180034984  call    cs:__imp_LocalFree
+0x18003498a  mov     eax, ebx
+0x18003498c  add     rsp, 28h
+0x180034990  pop     rdi
+0x180034991  pop     rsi
+0x180034992  pop     rbp
+0x180034993  pop     rbx
+0x180034994  retn
+0x180034995  mov     ebx, 8007054Fh
+0x18003499a  jmp     short loc_18003498A
+0x18003499c  call    cs:__imp_GetLastError
+0x1800349a2  mov     ebx, eax
+0x1800349a4  test    eax, eax
+0x1800349a6  jle     short loc_180034981
+0x1800349a8  movzx   ebx, ax
+0x1800349ab  or      ebx, 80070000h
+0x1800349b1  jmp     short loc_180034981
+0x1800349b3  test    eax, eax
+0x1800349b5  jle     short loc_18003498A
+0x1800349b7  movzx   ebx, ax
+0x1800349ba  or      ebx, 80070000h
+0x1800349c0  jmp     short loc_18003498A
+0x1800349c2  mov     ebx, 8007000Eh
+0x1800349c7  jmp     short loc_18003498A
+```

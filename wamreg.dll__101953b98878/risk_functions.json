@@ -1,0 +1,1618 @@
+[
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WamRegRegistryConfig::UnRegisterCLSID(ushort const *,int)",
+    "ea": "0x180005138",
+    "function_file": "functions/180005138_WamRegRegistryConfig_UnRegisterCLSID_ushort_const_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteKeyA",
+      "ADVAPI32!RegEnumKeyExA",
+      "ADVAPI32!RegOpenKeyExA",
+      "KERNEL32!WideCharToMultiByte",
+      "iisutil!PuDbgPrint",
+      "msvcrt!strncat_s",
+      "ole32!CLSIDFromString",
+      "ole32!CoTaskMemFree",
+      "ole32!ProgIDFromCLSID"
+    ],
+    "matched_strings": [
+      "CLSID\\",
+      "WamRegRegistryConfig::UnRegisterCLSID",
+      "WamRegRegistryConfig::UnRegisterCLSID",
+      "WamRegRegistryConfig::UnRegisterCLSID"
+    ],
+    "name": "?UnRegisterCLSID@WamRegRegistryConfig@@QEAAJPEBGH@Z",
+    "prototype": "__int64 __fastcall(WamRegRegistryConfig *this, const unsigned __int16 *)",
+    "rank_score": 2810,
+    "size": 663,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180001ac0",
+    "function_file": "functions/180001ac0_DllMain.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateEventA",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!DisableThreadLibraryCalls",
+      "KERNEL32!GetLastError",
+      "KERNEL32!OutputDebugStringA",
+      "iisutil!IISGetPlatformType",
+      "iisutil!IISInitializeCriticalSection",
+      "iisutil!PuCreateDebugPrintsObject",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDeleteDebugPrintsObject"
+    ],
+    "matched_strings": [
+      "Unable to Create Debug Print Object \n",
+      "Failed to create m_hWriteLock(Event). error = %08x"
+    ],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 2708,
+    "size": 468,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "WamRegGlobal::AcquireAdmWriteLock(void)",
+    "ea": "0x180001d2c",
+    "function_file": "functions/180001d2c_WamRegGlobal_AcquireAdmWriteLock_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!ResetEvent",
+      "KERNEL32!WaitForSingleObject",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "WamAdmLock::AcquireWriteLock",
+      "WamAdmLock::AcquireWriteLock",
+      "Thread %08x acquired the WriteLock of WAMREG, ServiceNum is %d.\n"
+    ],
+    "name": "?AcquireAdmWriteLock@WamRegGlobal@@QEAAXXZ",
+    "prototype": "void __fastcall(WamRegGlobal *__hidden this)",
+    "rank_score": 2142,
+    "size": 306,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WamRegRegistryConfig::LoadWamDllPath(void)",
+    "ea": "0x180004dac",
+    "function_file": "functions/180004dac_WamRegRegistryConfig_LoadWamDllPath_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegQueryValueExA",
+      "KERNEL32!ExpandEnvironmentStringsA",
+      "KERNEL32!GetLastError",
+      "iisutil!PuDbgPrint",
+      "msvcrt!strncat_s",
+      "msvcrt!strncpy_s"
+    ],
+    "matched_strings": [
+      "\\wam.dll",
+      "InstallPath",
+      "WamRegRegistryConfig::LoadWamDllPath",
+      "WamRegRegistryConfig::LoadWamDllPath",
+      "Wrong Type for InstallPath registry key.dwType = %d\n"
+    ],
+    "name": "?LoadWamDllPath@WamRegRegistryConfig@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(WamRegRegistryConfig *__hidden this)",
+    "rank_score": 2047,
+    "size": 545,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WamRegMetabaseConfig::MDGetAllSiteRoots(ushort * *)",
+    "ea": "0x1800058a0",
+    "function_file": "functions/1800058a0_WamRegMetabaseConfig_MDGetAllSiteRoots_ushort.md",
+    "matched_imports": [
+      "iisutil!??0MULTISZ@@QEAA@XZ",
+      "iisutil!??1MULTISZ@@QEAA@XZ",
+      "iisutil!?Append@MULTISZ@@QEAAHPEBG@Z",
+      "iisutil!?CopyToBuffer@MULTISZ@@QEBAHPEAGPEAK@Z",
+      "msvcrt!_wtoi",
+      "msvcrt!wcscat_s",
+      "msvcrt!wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?MDGetAllSiteRoots@WamRegMetabaseConfig@@QEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *__hidden this, unsigned __int16 **)",
+    "rank_score": 1619,
+    "size": 425,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::DeSerialize(ulong,uchar *)",
+    "ea": "0x1800029e0",
+    "function_file": "functions/1800029e0_CWamAdmin_DeSerialize_ulong_uchar.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "ConstructFullPath failed for base (%S) partial (%S) hr=%08x\n",
+      "CWamAdmin::DeSerialize",
+      "CWamAdmin::DeSerialize",
+      "CWamAdmin::DeSerialize",
+      "CWamAdmin::DeSerialize",
+      "CWamAdmin::DeSerialize",
+      "Unable to delete app at %S, hr = %08x\n",
+      "DeSerialize: buffer size %d, \n",
+      "Deserialize path = %S, WAMCLSID = %S.\n",
+      "Failed to create COM application. Path(%S) Clsid(%S) AppId(%S). hr=%08x\n"
+    ],
+    "name": "?DeSerialize@CWamAdmin@@UEAAJKPEAE@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, int, unsigned __int8 *)",
+    "rank_score": 1454,
+    "size": 782,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::EnumerateApplicationsInPool(ushort const *,ushort * *)",
+    "ea": "0x1800030b0",
+    "function_file": "functions/1800030b0_CWamAdmin_EnumerateApplicationsInPool_ushort_const_ushort.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocStringLen",
+      "iisutil!??0MULTISZ@@QEAA@XZ",
+      "iisutil!??1MULTISZ@@QEAA@XZ",
+      "iisutil!?Append@MULTISZ@@QEAAHPEBG@Z",
+      "iisutil!?CopyToBuffer@MULTISZ@@QEBAHPEAGPEAK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?EnumerateApplicationsInPool@CWamAdmin@@UEAAJPEBGPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, wchar_t *, unsigned __int16 **)",
+    "rank_score": 1433,
+    "size": 702,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WamRegRegistryConfig::UnRegisterProgID(ushort const *)",
+    "ea": "0x1800053d8",
+    "function_file": "functions/1800053d8_WamRegRegistryConfig_UnRegisterProgID_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteKeyA",
+      "ADVAPI32!RegEnumKeyExA",
+      "ADVAPI32!RegOpenKeyExA",
+      "KERNEL32!WideCharToMultiByte"
+    ],
+    "matched_strings": [],
+    "name": "?UnRegisterProgID@WamRegRegistryConfig@@AEAAJPEBG@Z",
+    "prototype": "int(WamRegRegistryConfig *__hidden this, const unsigned __int16 *)",
+    "rank_score": 1427,
+    "size": 358,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "CWamAdmin::PrivateDeleteApplication(ushort const *,int,int,int)",
+    "ea": "0x180003720",
+    "function_file": "functions/180003720_CWamAdmin_PrivateDeleteApplication_ushort_const_int_int_int.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint",
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "Failed to Delete on path %S, hr = %08x\n",
+      "Failed to Delete on path %S, hr = %08x\n",
+      "CWamAdmin::PrivateDeleteApplication",
+      "CWamAdmin::PrivateDeleteApplication",
+      "CWamAdmin::PrivateDeleteApplication",
+      "CWamAdmin::PrivateDeleteApplication",
+      "Failed to DeleteRecoverable, hr = %08x\n",
+      "Delete: GetPropPaths failed hr = %08x\n"
+    ],
+    "name": "?PrivateDeleteApplication@CWamAdmin@@AEAAJPEBGHHH@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, WamRegGlobal *, int, unsigned int, int)",
+    "rank_score": 1356,
+    "size": 684,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CWmRgSrv::Initialize(void)",
+    "ea": "0x180004540",
+    "function_file": "functions/180004540_CWmRgSrv_Initialize_void.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "iisutil!PuDbgPrint",
+      "ole32!CoRegisterClassObject",
+      "ole32!CoRevokeClassObject"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\comobj.cpp",
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\comobj.cpp"
+    ],
+    "name": "?Initialize@CWmRgSrv@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CWmRgSrv *__hidden this)",
+    "rank_score": 1327,
+    "size": 377,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::Serialize(ulong,uchar *,ulong *)",
+    "ea": "0x180003d80",
+    "function_file": "functions/180003d80_CWamAdmin_Serialize_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint",
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "ConstructFullPath failed for base (%S) partial (%S) hr=%08x\n",
+      "Serialize: GetPropPaths failed hr = %08x\n"
+    ],
+    "name": "?Serialize@CWamAdmin@@UEAAJKPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *__hidden this, unsigned int, unsigned __int8 *, unsigned int *)",
+    "rank_score": 1319,
+    "size": 1099,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001914",
+    "function_file": "functions/180001914_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::AppRecover(ushort const *,int)",
+    "ea": "0x1800021d0",
+    "function_file": "functions/1800021d0_CWamAdmin_AppRecover_ushort_const_int.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint",
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "Failed to Recover on path %S, hr = %08x\n",
+      "Failed to Recover on path %S, hr = %08x\n",
+      "Recover: GetPropPaths failed hr = %08x\n"
+    ],
+    "name": "?AppRecover@CWamAdmin@@UEAAJPEBGH@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, unsigned __int16 *, int)",
+    "rank_score": 1153,
+    "size": 650,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CallRegisterComponent(ushort const *,char *)",
+    "ea": "0x1800066a4",
+    "function_file": "functions/1800066a4_CallRegisterComponent_ushort_const_char.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!LoadLibraryExW",
+      "msvcrt!wcscat_s"
+    ],
+    "matched_strings": [
+      "wamreg.dll",
+      "\\inetsrv\\iisreg.dll"
+    ],
+    "name": "?CallRegisterComponent@@YAJPEBGPEAD@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, char *)",
+    "rank_score": 1106,
+    "size": 207,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WamRegMetabaseConfig::MDCreatePath(IMSAdminBaseW *,ushort const *)",
+    "ea": "0x180005738",
+    "function_file": "functions/180005738_WamRegMetabaseConfig_MDCreatePath_IMSAdminBaseW_ushort_const.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint",
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\mdconfig.cpp",
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\mdconfig.cpp",
+      "Failed to Open metabase key, path is /LM/W3SVC, hr = %08x\n",
+      "WamRegMetabaseConfig::MDCreatePath",
+      "WamRegMetabaseConfig::MDCreatePath",
+      "Failed to AddKey to metabase, path is %S, hr = %08x\n"
+    ],
+    "name": "?MDCreatePath@WamRegMetabaseConfig@@QEAAJPEAUIMSAdminBaseW@@PEBG@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *this, struct IMSAdminBaseW *, const unsigned __int16 *)",
+    "rank_score": 1056,
+    "size": 351,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "WamRegGlobal::ReleaseAdmWriteLock(void)",
+    "ea": "0x180003cdc",
+    "function_file": "functions/180003cdc_WamRegGlobal_ReleaseAdmWriteLock_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetEvent",
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "Thread %08x released the WriteLock of WAMREG, ServiceNum is %d.\n",
+      "WamAdmLock::ReleaseWriteLock"
+    ],
+    "name": "?ReleaseAdmWriteLock@WamRegGlobal@@QEAAXXZ",
+    "prototype": "void __fastcall(WamRegGlobal *__hidden this)",
+    "rank_score": 1001,
+    "size": 144,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WamRegMetabaseConfig::UpdateMD(MDPropItem *,ulong,ushort const *,int)",
+    "ea": "0x180006408",
+    "function_file": "functions/180006408_WamRegMetabaseConfig_UpdateMD_MDPropItem_ulong_ushort_const_int.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "WamRegMetabaseConfig::UpdateMD",
+      "WamRegMetabaseConfig::UpdateMD",
+      "WamRegMetabaseConfig::UpdateMD",
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\mdconfig.cpp",
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\mdconfig.cpp",
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\mdconfig.cpp",
+      "Metabase SetData failed. Path = %S, id = %08x, error = %08x\n",
+      "Failed to open metabase path %S, error = %08x\n"
+    ],
+    "name": "?UpdateMD@WamRegMetabaseConfig@@QEAAJPEAUMDPropItem@@KPEBGH@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *this, struct MDPropItem *, int, const unsigned __int16 *, unsigned int)",
+    "rank_score": 948,
+    "size": 591,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "WamRegMetabaseConfig::MDGetPropPaths(ushort const *,ulong,ushort * *,ulong *)",
+    "ea": "0x180005cfc",
+    "function_file": "functions/180005cfc_WamRegMetabaseConfig_MDGetPropPaths_ushort_const_ulong_ushort_ulong.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\mdconfig.cpp",
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\mdconfig.cpp",
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\mdconfig.cpp",
+      "WamRegMetabaseConfig::MDGetPropPaths",
+      "WamRegMetabaseConfig::MDGetPropPaths",
+      "WamRegMetabaseConfig::MDGetPropPaths",
+      "GetDataPaths failed with identitifier %d, path %S, hr = %08x\n",
+      "Failed to open metabase path %S, hr = %08x\n"
+    ],
+    "name": "?MDGetPropPaths@WamRegMetabaseConfig@@QEAAJPEBGKPEAPEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *__hidden this, const unsigned __int16 *, unsigned int, unsigned __int16 **, unsigned int *)",
+    "rank_score": 944,
+    "size": 626,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "WamRegGlobal::DeleteApp(ushort const *,int,int)",
+    "ea": "0x180004acc",
+    "function_file": "functions/180004acc_WamRegGlobal_DeleteApp_ushort_const_int_int.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "WamRegGlobal::DeleteApp",
+      "WamRegGlobal::DeleteApp",
+      "WamRegGlobal::DeleteApp",
+      "W3ServiceUtil APPCMD_DELETE Failed on (%S) hr=%08x\n",
+      "Failed to UnRegister WAMCLSID(%S), hr = %08x\n"
+    ],
+    "name": "?DeleteApp@WamRegGlobal@@QEAAJPEBGHH@Z",
+    "prototype": "__int64 __fastcall(WamRegGlobal *this, const unsigned __int16 *, unsigned int, int)",
+    "rank_score": 866,
+    "size": 729,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::CreateApplicationPool(ushort const *)",
+    "ea": "0x180002850",
+    "function_file": "functions/180002850_CWamAdmin_CreateApplicationPool_ushort_const.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?CreateApplicationPool@CWamAdmin@@UEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *__hidden this, const unsigned __int16 *)",
+    "rank_score": 818,
+    "size": 214,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "DoesAppPoolExist(ushort const *,int *)",
+    "ea": "0x180002e7c",
+    "function_file": "functions/180002e7c_DoesAppPoolExist_ushort_const_int.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?DoesAppPoolExist@@YAJPEBGPEAH@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, int *)",
+    "rank_score": 818,
+    "size": 282,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ValidateAccessToAppPool(ushort const *)",
+    "ea": "0x1800041d4",
+    "function_file": "functions/1800041d4_ValidateAccessToAppPool_ushort_const.md",
+    "matched_imports": [
+      "iisutil!??0STRU@@QEAA@PEAGK@Z",
+      "iisutil!??1STRU@@QEAA@XZ",
+      "iisutil!?Append@STRU@@QEAAJPEBG@Z",
+      "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?ValidateAccessToAppPool@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 816,
+    "size": 188,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DoesBeginWithLMW3SVCNRoot(ushort const *,ulong *)",
+    "ea": "0x180002f9c",
+    "function_file": "functions/180002f9c_DoesBeginWithLMW3SVCNRoot_ushort_const_ulong.md",
+    "matched_imports": [
+      "msvcrt!_itow",
+      "msvcrt!_wcsnicmp",
+      "msvcrt!_wtoi"
+    ],
+    "matched_strings": [],
+    "name": "?DoesBeginWithLMW3SVCNRoot@@YAHPEBGPEAK@Z",
+    "prototype": "__int64 __fastcall(wchar_t *String2, unsigned int *)",
+    "rank_score": 806,
+    "size": 267,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180001558",
+    "function_file": "functions/180001558_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::FormatMetabasePath(ushort const *,ushort * *)",
+    "ea": "0x180003380",
+    "function_file": "functions/180003380_CWamAdmin_FormatMetabasePath_ushort_const_ushort.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "iisutil!PuDbgPrint",
+      "msvcrt!wcsncpy_s"
+    ],
+    "matched_strings": [
+      "FormatMetabasePath, failed to allocate memory. hr = %08x\n",
+      "CWamAdmin::FormatMetabasePath"
+    ],
+    "name": "?FormatMetabasePath@CWamAdmin@@EEAAJPEBGPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, const unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 683,
+    "size": 218,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::AppCreate2(ushort const *,ulong)",
+    "ea": "0x180001ed0",
+    "function_file": "functions/180001ed0_CWamAdmin_AppCreate2_ushort_const_ulong.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "Failed to create metabase path %S, hr = %08x",
+      "CWamAdmin::AppCreate2",
+      "CWamAdmin::AppCreate2",
+      "Failed to get DWORD on metabase path %S, hr = %08x",
+      "Failed to delete old application on path %S, hr = 08x\n",
+      "Failed to create new application on path %S, hr = 08x\n"
+    ],
+    "name": "?AppCreate2@CWamAdmin@@UEAAJPEBGK@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, const unsigned __int16 *)",
+    "rank_score": 672,
+    "size": 455,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x1800015a0",
+    "function_file": "functions/1800015a0_report_gsfailure.md",
+    "matched_imports": [
+      "KERNEL32!RtlCaptureContext",
+      "KERNEL32!RtlLookupFunctionEntry",
+      "KERNEL32!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 626,
+    "size": 416,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ValidateAccessToMetabaseKey(ushort const *,ulong)",
+    "ea": "0x180004298",
+    "function_file": "functions/180004298_ValidateAccessToMetabaseKey_ushort_const_ulong.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance",
+      "ole32!CoImpersonateClient",
+      "ole32!CoRevertToSelf"
+    ],
+    "matched_strings": [],
+    "name": "?ValidateAccessToMetabaseKey@@YAJPEBGK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, unsigned int)",
+    "rank_score": 625,
+    "size": 253,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_CRT_INIT",
+    "ea": "0x1800010d0",
+    "function_file": "functions/1800010d0_CRT_INIT.md",
+    "matched_imports": [
+      "KERNEL32!Sleep",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "_CRT_INIT",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 549,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::GetSignature(ulong,uchar *,ulong *)",
+    "ea": "0x1800034b0",
+    "function_file": "functions/1800034b0_CWamAdmin_GetSignature_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "Get Signature on path %S, signature = %08x\n",
+      "Failed to get signature on path %S, hr = %08x\n",
+      "GetSignature: GetPropPaths failed hr = %08x\n"
+    ],
+    "name": "?GetSignature@CWamAdmin@@UEAAJKPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *__hidden this, unsigned int, unsigned __int8 *, unsigned int *)",
+    "rank_score": 550,
+    "size": 470,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::AppUnLoad(ushort const *,int)",
+    "ea": "0x180002460",
+    "function_file": "functions/180002460_CWamAdmin_AppUnLoad_ushort_const_int.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "Insufficient Access to unload Application %S, hr = %08x\n",
+      "Insufficient Access to unload Application %S, hr = %08x\n"
+    ],
+    "name": "?AppUnLoad@CWamAdmin@@UEAAJPEBGH@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *__hidden this, const unsigned __int16 *, int)",
+    "rank_score": 525,
+    "size": 704,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::DeleteApplicationPool(ushort const *)",
+    "ea": "0x180002d30",
+    "function_file": "functions/180002d30_CWamAdmin_DeleteApplicationPool_ushort_const.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_SysStringLen"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteApplicationPool@CWamAdmin@@UEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, const unsigned __int16 *)",
+    "rank_score": 415,
+    "size": 325,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "WamRegMetabaseConfig::MDGetDWORD(ushort const *,ulong,ulong *)",
+    "ea": "0x180005a50",
+    "function_file": "functions/180005a50_WamRegMetabaseConfig_MDGetDWORD_ushort_const_ulong_ulong.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\svcs\\wam\\wamreg\\mdconfig.cpp",
+      "Get MD_APP_ISOLATED failed on MD path %S, id %d, error = %08x\n",
+      "WamRegMetabaseConfig::MDGetDWORD"
+    ],
+    "name": "?MDGetDWORD@WamRegMetabaseConfig@@QEAAJPEBGKPEAK@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *__hidden this, const unsigned __int16 *, unsigned int, unsigned int *)",
+    "rank_score": 343,
+    "size": 313,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "WamRegGlobal::CreatePooledApp(ushort const *,int,int)",
+    "ea": "0x180004948",
+    "function_file": "functions/180004948_WamRegGlobal_CreatePooledApp_ushort_const_int_int.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "Failed to create in proc application. path = %S, error = %08x\n",
+      "WamRegGlobal::CreatePooledApp"
+    ],
+    "name": "?CreatePooledApp@WamRegGlobal@@QEAAJPEBGHH@Z",
+    "prototype": "__int64 __fastcall(WamRegGlobal *this, const unsigned __int16 *, int, int)",
+    "rank_score": 307,
+    "size": 380,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WamRegGlobal::RecoverApp(ushort const *,int)",
+    "ea": "0x180004fd4",
+    "function_file": "functions/180004fd4_WamRegGlobal_RecoverApp_ushort_const_int.md",
+    "matched_imports": [
+      "iisutil!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "Failed to remove MD_APP_STATE from path %S, hr = %08x\n"
+    ],
+    "name": "?RecoverApp@WamRegGlobal@@QEAAJPEBGH@Z",
+    "prototype": "int(WamRegGlobal *__hidden this, const unsigned __int16 *, int)",
+    "rank_score": 267,
+    "size": 347,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WamRegMetabaseConfig::MetabaseInit(void)",
+    "ea": "0x180006398",
+    "function_file": "functions/180006398_WamRegMetabaseConfig_MetabaseInit_void.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?MetabaseInit@WamRegMetabaseConfig@@SAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 233,
+    "size": 104,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::RecycleApplicationPool(ushort const *)",
+    "ea": "0x180003b90",
+    "function_file": "functions/180003b90_CWamAdmin_RecycleApplicationPool_ushort_const.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?RecycleApplicationPool@CWamAdmin@@UEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, const unsigned __int16 *)",
+    "rank_score": 224,
+    "size": 169,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IsAppInAppPool(ushort const *,ushort const *)",
+    "ea": "0x18000368c",
+    "function_file": "functions/18000368c_IsAppInAppPool_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?IsAppInAppPool@@YAHPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, wchar_t *String2)",
+    "rank_score": 224,
+    "size": 95,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WamRegMetabaseConfig::MDGetIDs(ushort const *,ushort *,ushort *,ulong)",
+    "ea": "0x180005b90",
+    "function_file": "functions/180005b90_WamRegMetabaseConfig_MDGetIDs_ushort_const_ushort_ushort_ulong.md",
+    "matched_imports": [
+      "msvcrt!wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?MDGetIDs@WamRegMetabaseConfig@@QEAAJPEBGPEAG1K@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *this, const unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned int)",
+    "rank_score": 217,
+    "size": 356,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::GetProcessMode(ulong *)",
+    "ea": "0x180003460",
+    "function_file": "functions/180003460_CWamAdmin_GetProcessMode_ulong.md",
+    "matched_imports": [
+      "iisutil!IsSSLReportingBackwardCompatibilityMode"
+    ],
+    "matched_strings": [],
+    "name": "?GetProcessMode@CWamAdmin@@UEAAJPEAK@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, BOOL *)",
+    "rank_score": 212,
+    "size": 65,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_onexit_0",
+    "ea": "0x180001748",
+    "function_file": "functions/180001748_onexit_0.md",
+    "matched_imports": [
+      "msvcrt!_onexit"
+    ],
+    "matched_strings": [],
+    "name": "_onexit_0",
+    "prototype": "_onexit_t __cdecl(_onexit_t Func)",
+    "rank_score": 117,
+    "size": 150,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180001a27",
+    "function_file": "functions/180001a27_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "memset_0",
+    "ea": "0x180006822",
+    "function_file": "functions/180006822_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 106,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "memcpy_0",
+    "ea": "0x180006816",
+    "function_file": "functions/180006816_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllRegisterServer",
+    "ea": "0x180001ca0",
+    "function_file": "functions/180001ca0_DllRegisterServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "InstallComponent"
+    ],
+    "name": "DllRegisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 71,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllUnregisterServer",
+    "ea": "0x180001cc0",
+    "function_file": "functions/180001cc0_DllUnregisterServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RemoveComponent"
+    ],
+    "name": "DllUnregisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 61,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 39,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180007010",
+    "function_file": "functions/180007010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DllGetClassObject",
+    "ea": "0x180001a80",
+    "function_file": "functions/180001a80_DllGetClassObject.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 32,
+    "size": 56,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "WamRegMetabaseConfig::MDGetStringAttribute(ushort const *,ulong,ushort * *)",
+    "ea": "0x180005f74",
+    "function_file": "functions/180005f74_WamRegMetabaseConfig_MDGetStringAttribute_ushort_const_ulong_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MDGetStringAttribute@WamRegMetabaseConfig@@QEAAJPEBGKPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *__hidden this, const unsigned __int16 *, unsigned int, unsigned __int16 **)",
+    "rank_score": 29,
+    "size": 376,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001084",
+    "function_file": "functions/180001084_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 28,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::CreateApplication(ushort const *,ulong,ushort const *,int)",
+    "ea": "0x180002730",
+    "function_file": "functions/180002730_CWamAdmin_CreateApplication_ushort_const_ulong_ushort_const_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateApplication@CWamAdmin@@UEAAJPEBGK0H@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, const unsigned __int16 *, unsigned int, const unsigned __int16 *, int)",
+    "rank_score": 27,
+    "size": 276,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180006850",
+    "function_file": "functions/180006850_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 27,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CWamAdmin::RecycleAppPoolContainingApp(ushort const *)",
+    "ea": "0x180003b30",
+    "function_file": "functions/180003b30_CWamAdmin_RecycleAppPoolContainingApp_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecycleAppPoolContainingApp@CWamAdmin@@AEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *__hidden this, const unsigned __int16 *)",
+    "rank_score": 25,
+    "size": 90,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WamRegMetabaseConfig::MDSetAppState(ushort const *,ulong)",
+    "ea": "0x1800060f4",
+    "function_file": "functions/1800060f4_WamRegMetabaseConfig_MDSetAppState_ushort_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MDSetAppState@WamRegMetabaseConfig@@QEAAJPEBGK@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *this, const unsigned __int16 *)",
+    "rank_score": 24,
+    "size": 213,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WamRegMetabaseConfig::MDSetStringProperty(IMSAdminBaseW *,ushort const *,ulong,ushort const *,ulong,ulong)",
+    "ea": "0x1800062b8",
+    "function_file": "functions/1800062b8_WamRegMetabaseConfig_MDSetStringProperty_IMSAdminBaseW_ushort_const_ulong_ushort_const_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MDSetStringProperty@WamRegMetabaseConfig@@QEAAJPEAUIMSAdminBaseW@@PEBGK1KK@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *this, struct IMSAdminBaseW *, const unsigned __int16 *, __int64, const unsigned __int16 *)",
+    "rank_score": 24,
+    "size": 218,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001300",
+    "function_file": "functions/180001300_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1800067a0",
+    "function_file": "functions/1800067a0_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CWmRgSrv::EnumDcomCLSIDs(_GUID *,ulong)",
+    "ea": "0x180004520",
+    "function_file": "functions/180004520_CWmRgSrv_EnumDcomCLSIDs_GUID_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EnumDcomCLSIDs@CWmRgSrv@@UEAAJPEAU_GUID@@K@Z",
+    "prototype": "__int64 __fastcall(CWmRgSrv *__hidden this, struct _GUID *, unsigned int)",
+    "rank_score": 21,
+    "size": 24,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__g_RegistryConfig__",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_dynamic_initializer_for_g_RegistryConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__g_RegistryConfig__",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001344",
+    "function_file": "functions/180001344_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__g_RegistryConfig__",
+    "ea": "0x180006be0",
+    "function_file": "functions/180006be0_dynamic_atexit_destructor_for_g_RegistryConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__g_RegistryConfig__",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 3,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WamRegMetabaseConfig::GetSignatureOnPath(ushort const *,ulong *)",
+    "ea": "0x180005584",
+    "function_file": "functions/180005584_WamRegMetabaseConfig_GetSignatureOnPath_ushort_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSignatureOnPath@WamRegMetabaseConfig@@QEAAJPEBGPEAK@Z",
+    "prototype": "int(WamRegMetabaseConfig *__hidden this, const unsigned __int16 *, unsigned int *)",
+    "rank_score": 17,
+    "size": 202,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180006890",
+    "function_file": "functions/180006890_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WamRegMetabaseConfig::HasAdminAccess(void)",
+    "ea": "0x180005654",
+    "function_file": "functions/180005654_WamRegMetabaseConfig_HasAdminAccess_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HasAdminAccess@WamRegMetabaseConfig@@QEAAHXZ",
+    "prototype": "_BOOL8 __fastcall(WamRegMetabaseConfig *this)",
+    "rank_score": 14,
+    "size": 219,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WamRegMetabaseConfig::MDSetKeyType(IMSAdminBaseW *,ushort const *,ushort const *)",
+    "ea": "0x1800061d0",
+    "function_file": "functions/1800061d0_WamRegMetabaseConfig_MDSetKeyType_IMSAdminBaseW_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MDSetKeyType@WamRegMetabaseConfig@@QEAAJPEAUIMSAdminBaseW@@PEBG1@Z",
+    "prototype": "__int64 __fastcall(WamRegMetabaseConfig *__hidden this, struct IMSAdminBaseW *, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 14,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 10,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001044",
+    "function_file": "functions/180001044_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 13,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WamRegMetabaseConfig::WamRegChkSum(ushort const *,ulong)",
+    "ea": "0x180006660",
+    "function_file": "functions/180006660_WamRegMetabaseConfig_WamRegChkSum_ushort_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WamRegChkSum@WamRegMetabaseConfig@@AEAAKPEBGK@Z",
+    "prototype": "unsigned int __fastcall(WamRegMetabaseConfig *__hidden this, const unsigned __int16 *, unsigned int)",
+    "rank_score": 12,
+    "size": 60,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CreateCOMPlusApplication(ushort const *,ushort const *,ushort const *,int *)",
+    "ea": "0x180005550",
+    "function_file": "functions/180005550_CreateCOMPlusApplication_ushort_const_ushort_const_ushort_const_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateCOMPlusApplication@@YAJPEBG00PEAH@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, int *)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllCanUnloadNow",
+    "ea": "0x180001a60",
+    "function_file": "functions/180001a60_DllCanUnloadNow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 10,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "WamRegGlobal::ConstructFullPath(ushort const *,ulong,ushort const *,ushort * *)",
+    "ea": "0x180004864",
+    "function_file": "functions/180004864_WamRegGlobal_ConstructFullPath_ushort_const_ulong_ushort_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConstructFullPath@WamRegGlobal@@QEAAJPEBGK0PEAPEAG@Z",
+    "prototype": "int(WamRegGlobal *__hidden this, const unsigned __int16 *, unsigned int, const unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 10,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CWamAdmin::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x1800039f0",
+    "function_file": "functions/1800039f0_CWamAdmin_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CWamAdmin@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 5,
+    "size": 184,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CWamAdmin::Release(void)",
+    "ea": "0x180003c40",
+    "function_file": "functions/180003c40_CWamAdmin_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CWamAdmin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CWamAdmin *__hidden this)",
+    "rank_score": 4,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CWamAdminFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x180002930",
+    "function_file": "functions/180002930_CWamAdminFactory_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CWamAdminFactory@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CWamAdminFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 4,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CWmRgSrvFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x180004470",
+    "function_file": "functions/180004470_CWmRgSrvFactory_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CWmRgSrvFactory@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CWmRgSrvFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 4,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_IsNonwritableInCurrentImage",
+    "ea": "0x180001890",
+    "function_file": "functions/180001890_IsNonwritableInCurrentImage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_IsNonwritableInCurrentImage",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "atexit",
+    "ea": "0x1800017e4",
+    "function_file": "functions/1800017e4_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 3,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "CWamAdmin::AddRef(void)",
+    "ea": "0x180001e70",
+    "function_file": "functions/180001e70_CWamAdmin_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@CWamAdmin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CWamAdmin *__hidden this)",
+    "rank_score": 2,
+    "size": 13,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_FindPESection",
+    "ea": "0x180001840",
+    "function_file": "functions/180001840_FindPESection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_FindPESection",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::AppCreate(ushort const *,int)",
+    "ea": "0x1800020a0",
+    "function_file": "functions/1800020a0_CWamAdmin_AppCreate_ushort_const_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AppCreate@CWamAdmin@@UEAAJPEBGH@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *this, const unsigned __int16 *)",
+    "rank_score": 1,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::AppDelete(ushort const *,int)",
+    "ea": "0x1800020c0",
+    "function_file": "functions/1800020c0_CWamAdmin_AppDelete_ushort_const_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AppDelete@CWamAdmin@@UEAAJPEBGH@Z",
+    "prototype": "int __fastcall(CWamAdmin *this, const unsigned __int16 *, int)",
+    "rank_score": 1,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::AppDeleteRecoverable(ushort const *,int)",
+    "ea": "0x1800020e0",
+    "function_file": "functions/1800020e0_CWamAdmin_AppDeleteRecoverable_ushort_const_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AppDeleteRecoverable@CWamAdmin@@UEAAJPEBGH@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *__hidden this, const unsigned __int16 *, int)",
+    "rank_score": 1,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CWamAdmin::DeleteApplication(ushort const *,int)",
+    "ea": "0x180002d00",
+    "function_file": "functions/180002d00_CWamAdmin_DeleteApplication_ushort_const_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteApplication@CWamAdmin@@UEAAJPEBGH@Z",
+    "prototype": "__int64 __fastcall(CWamAdmin *__hidden this, const unsigned __int16 *, int)",
+    "rank_score": 1,
+    "size": 29,
+    "tags": []
+  }
+]

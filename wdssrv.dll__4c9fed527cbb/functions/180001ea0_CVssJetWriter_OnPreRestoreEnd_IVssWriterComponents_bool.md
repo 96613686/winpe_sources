@@ -1,0 +1,31 @@
+# CVssJetWriter::OnPreRestoreEnd(IVssWriterComponents *,bool)
+
+- ea: `0x180001ea0`
+- end: `0x180001ea6`
+- name: `?OnPreRestoreEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z_0`
+- size: `6`
+- prototype: `bool(CVssJetWriter *__hidden this, struct IVssWriterComponents *, bool)`
+- caller_count: `0`
+- callee_count: `0`
+- tags: `broker_com_uri`
+
+## import_xrefs
+
+- `VSSAPI!?OnPreRestoreEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z` at `0x180001ea0`
+
+## pseudocode
+
+```c
+// attributes: thunk
+bool __fastcall CVssJetWriter::OnPreRestoreEnd(CVssJetWriter *this, struct IVssWriterComponents *a2, bool a3)
+{
+  return __imp_?OnPreRestoreEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z(this, a2, a3);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180001ea0  jmp     cs:__imp_?OnPreRestoreEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z
+```

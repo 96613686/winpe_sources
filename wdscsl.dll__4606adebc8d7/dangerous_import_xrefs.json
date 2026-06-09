@@ -1,0 +1,992 @@
+[
+  {
+    "import": "ADVAPI32!ImpersonateLoggedOnUser",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x1800056c9",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "ADVAPI32!ImpersonateLoggedOnUser"
+      },
+      {
+        "from_ea": "0x18000735e",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "ADVAPI32!ImpersonateLoggedOnUser"
+      },
+      {
+        "from_ea": "0x1800056c9",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "ADVAPI32!ImpersonateLoggedOnUser"
+      },
+      {
+        "from_ea": "0x18000735e",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "ADVAPI32!ImpersonateLoggedOnUser"
+      },
+      {
+        "from_ea": "0x18001313c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ADVAPI32!ImpersonateLoggedOnUser"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RevertToSelf",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800059af",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x180007767",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x1800059af",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x180007767",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180001a27",
+        "from_func": "0x1800019e4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180003b6a",
+        "from_func": "0x180003b34",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180003f62",
+        "from_func": "0x180003f2c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001a27",
+        "from_func": "0x1800019e4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180003b6a",
+        "from_func": "0x180003b34",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180003f62",
+        "from_func": "0x180003f2c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcAsyncCompleteCall",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180005832",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "RPCRT4!RpcAsyncCompleteCall"
+      },
+      {
+        "from_ea": "0x180005877",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "RPCRT4!RpcAsyncCompleteCall"
+      },
+      {
+        "from_ea": "0x180005832",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "RPCRT4!RpcAsyncCompleteCall"
+      },
+      {
+        "from_ea": "0x180005877",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "RPCRT4!RpcAsyncCompleteCall"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcStringBindingComposeW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180007441",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      },
+      {
+        "from_ea": "0x180007441",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      }
+    ]
+  },
+  {
+    "import": "WS2_32!__imp_WSACleanup",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180004d67",
+        "from_func": "0x180004d4c",
+        "from_func_name": "?CleanupResources@CClientLibrary@@AEAAKXZ",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x180004d67",
+        "from_func": "0x180004d4c",
+        "from_func_name": "?CleanupResources@CClientLibrary@@AEAAKXZ",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x180013150",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "WS2_32!__imp_WSACleanup"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!??0CCompPort@@QEAA@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800031bf",
+        "from_func": "0x18000318c",
+        "from_func_name": "??0?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAA@XZ",
+        "import": "WdsCommonLib!??0CCompPort@@QEAA@XZ"
+      },
+      {
+        "from_ea": "0x1800031bf",
+        "from_func": "0x18000318c",
+        "from_func_name": "??0?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAA@XZ",
+        "import": "WdsCommonLib!??0CCompPort@@QEAA@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!??0CTrace@@QEAA@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800012cb",
+        "from_func": "0x1800012c0",
+        "from_func_name": "_dynamic_initializer_for__g_WdsCslTrace__",
+        "import": "WdsCommonLib!??0CTrace@@QEAA@XZ"
+      },
+      {
+        "from_ea": "0x1800012cb",
+        "from_func": "0x1800012c0",
+        "from_func_name": "_dynamic_initializer_for__g_WdsCslTrace__",
+        "import": "WdsCommonLib!??0CTrace@@QEAA@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!??1CCompPort@@QEAA@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003476",
+        "from_func": "0x18000342c",
+        "from_func_name": "??1?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@UEAA@XZ",
+        "import": "WdsCommonLib!??1CCompPort@@QEAA@XZ"
+      },
+      {
+        "from_ea": "0x180003476",
+        "from_func": "0x18000342c",
+        "from_func_name": "??1?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@UEAA@XZ",
+        "import": "WdsCommonLib!??1CCompPort@@QEAA@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!??1CMRSWLock@@QEAA@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000341a",
+        "from_func": "0x180003360",
+        "from_func_name": "??1?$CChildCount@V?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@@@QEAA@XZ",
+        "import": "WdsCommonLib!??1CMRSWLock@@QEAA@XZ"
+      },
+      {
+        "from_ea": "0x18001318c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "WdsCommonLib!??1CMRSWLock@@QEAA@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!??1CTrace@@QEAA@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000dd67",
+        "from_func": "0x18000dd60",
+        "from_func_name": "_dynamic_atexit_destructor_for__g_WdsCslTrace__",
+        "import": "WdsCommonLib!??1CTrace@@QEAA@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!??1ICpRecvRequest@@MEAA@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000349a",
+        "from_func": "0x18000342c",
+        "from_func_name": "??1?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@UEAA@XZ",
+        "import": "WdsCommonLib!??1ICpRecvRequest@@MEAA@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Allocate@CMemoryBuffer@@SAPEAV1@K@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x1800046f5",
+        "from_func": "0x180004680",
+        "from_func_name": "?AllocatePacket@CClientLibrary@@QEAAPEAXPEAXK@Z",
+        "import": "WdsCommonLib!?Allocate@CMemoryBuffer@@SAPEAV1@K@Z"
+      },
+      {
+        "from_ea": "0x180004a71",
+        "from_func": "0x1800049e0",
+        "from_func_name": "?BlockReceive@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAXKKPEAUtagWDS_ENDPOINT@@PEAPEAVCMemoryBuffer@@@Z",
+        "import": "WdsCommonLib!?Allocate@CMemoryBuffer@@SAPEAV1@K@Z"
+      },
+      {
+        "from_ea": "0x1800055d9",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "WdsCommonLib!?Allocate@CMemoryBuffer@@SAPEAV1@K@Z"
+      },
+      {
+        "from_ea": "0x1800081da",
+        "from_func": "0x180008174",
+        "from_func_name": "?PostReadRequest@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?Allocate@CMemoryBuffer@@SAPEAV1@K@Z"
+      },
+      {
+        "from_ea": "0x1800046f5",
+        "from_func": "0x180004680",
+        "from_func_name": "?AllocatePacket@CClientLibrary@@QEAAPEAXPEAXK@Z",
+        "import": "WdsCommonLib!?Allocate@CMemoryBuffer@@SAPEAV1@K@Z"
+      },
+      {
+        "from_ea": "0x180004a71",
+        "from_func": "0x1800049e0",
+        "from_func_name": "?BlockReceive@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAXKKPEAUtagWDS_ENDPOINT@@PEAPEAVCMemoryBuffer@@@Z",
+        "import": "WdsCommonLib!?Allocate@CMemoryBuffer@@SAPEAV1@K@Z"
+      },
+      {
+        "from_ea": "0x1800055d9",
+        "from_func": "0x180005558",
+        "from_func_name": "?ExecuteRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAXKPEAPEAXPEAKK@Z",
+        "import": "WdsCommonLib!?Allocate@CMemoryBuffer@@SAPEAV1@K@Z"
+      },
+      {
+        "from_ea": "0x1800081da",
+        "from_func": "0x180008174",
+        "from_func_name": "?PostReadRequest@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?Allocate@CMemoryBuffer@@SAPEAV1@K@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Attach@CCompPort@@QEAAKPEAXPEAVICpRecvRequest@@@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800048ce",
+        "from_func": "0x18000474c",
+        "from_func_name": "?Bind@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_ENDPOINT@@@Z",
+        "import": "WdsCommonLib!?Attach@CCompPort@@QEAAKPEAXPEAVICpRecvRequest@@@Z"
+      },
+      {
+        "from_ea": "0x180004927",
+        "from_func": "0x18000474c",
+        "from_func_name": "?Bind@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_ENDPOINT@@@Z",
+        "import": "WdsCommonLib!?Attach@CCompPort@@QEAAKPEAXPEAVICpRecvRequest@@@Z"
+      },
+      {
+        "from_ea": "0x1800048ce",
+        "from_func": "0x18000474c",
+        "from_func_name": "?Bind@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_ENDPOINT@@@Z",
+        "import": "WdsCommonLib!?Attach@CCompPort@@QEAAKPEAXPEAVICpRecvRequest@@@Z"
+      },
+      {
+        "from_ea": "0x180004927",
+        "from_func": "0x18000474c",
+        "from_func_name": "?Bind@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_ENDPOINT@@@Z",
+        "import": "WdsCommonLib!?Attach@CCompPort@@QEAAKPEAXPEAVICpRecvRequest@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800073ee",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ"
+      },
+      {
+        "from_ea": "0x1800073ee",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?GetInterfaceIndex@CNetworkAddress@@SAKPEAUtagWDS_IP_ADDRESS6@@PEAK@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800043cb",
+        "from_func": "0x180004340",
+        "from_func_name": "?AddMulticastMembership@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_IP_ADDRESS6@@0@Z",
+        "import": "WdsCommonLib!?GetInterfaceIndex@CNetworkAddress@@SAKPEAUtagWDS_IP_ADDRESS6@@PEAK@Z"
+      },
+      {
+        "from_ea": "0x18000451c",
+        "from_func": "0x180004460",
+        "from_func_name": "?AddMulticastSourceMembership@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_IP_ADDRESS6@@00@Z",
+        "import": "WdsCommonLib!?GetInterfaceIndex@CNetworkAddress@@SAKPEAUtagWDS_IP_ADDRESS6@@PEAK@Z"
+      },
+      {
+        "from_ea": "0x1800043cb",
+        "from_func": "0x180004340",
+        "from_func_name": "?AddMulticastMembership@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_IP_ADDRESS6@@0@Z",
+        "import": "WdsCommonLib!?GetInterfaceIndex@CNetworkAddress@@SAKPEAUtagWDS_IP_ADDRESS6@@PEAK@Z"
+      },
+      {
+        "from_ea": "0x18000451c",
+        "from_func": "0x180004460",
+        "from_func_name": "?AddMulticastSourceMembership@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_IP_ADDRESS6@@00@Z",
+        "import": "WdsCommonLib!?GetInterfaceIndex@CNetworkAddress@@SAKPEAUtagWDS_IP_ADDRESS6@@PEAK@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Initialize@CCompPort@@QEAAKPEAXK@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800048fb",
+        "from_func": "0x18000474c",
+        "from_func_name": "?Bind@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_ENDPOINT@@@Z",
+        "import": "WdsCommonLib!?Initialize@CCompPort@@QEAAKPEAXK@Z"
+      },
+      {
+        "from_ea": "0x1800048fb",
+        "from_func": "0x18000474c",
+        "from_func_name": "?Bind@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAUtagWDS_ENDPOINT@@@Z",
+        "import": "WdsCommonLib!?Initialize@CCompPort@@QEAAKPEAXK@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Initialize@CMRSWLock@@QEAAKK@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180006e26",
+        "from_func": "0x180006dac",
+        "from_func_name": "?Initialize@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAVCClientLibrary@@HPEAUSocketSetup@@PEAUtagWDS_ENDPOINT@@@Z",
+        "import": "WdsCommonLib!?Initialize@CMRSWLock@@QEAAKK@Z"
+      },
+      {
+        "from_ea": "0x180006e26",
+        "from_func": "0x180006dac",
+        "from_func_name": "?Initialize@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKPEAVCClientLibrary@@HPEAUSocketSetup@@PEAUtagWDS_ENDPOINT@@@Z",
+        "import": "WdsCommonLib!?Initialize@CMRSWLock@@QEAAKK@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Initialize@CTrace@@QEAAKPEBGH@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180007011",
+        "from_func": "0x180006f80",
+        "from_func_name": "?Initialize@CClientLibrary@@QEAAKXZ",
+        "import": "WdsCommonLib!?Initialize@CTrace@@QEAAKPEBGH@Z"
+      },
+      {
+        "from_ea": "0x180007011",
+        "from_func": "0x180006f80",
+        "from_func_name": "?Initialize@CClientLibrary@@QEAAKXZ",
+        "import": "WdsCommonLib!?Initialize@CTrace@@QEAAKPEBGH@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?IsBroadcastAddress@CNetworkAddress@@SAHPEAUtagWDS_ENDPOINT@@@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180005bdf",
+        "from_func": "0x1800059f8",
+        "from_func_name": "?ExecuteUdpSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUtagWDS_ENDPOINT@@PEAXKPEAPEAXPEAKK@Z",
+        "import": "WdsCommonLib!?IsBroadcastAddress@CNetworkAddress@@SAHPEAUtagWDS_ENDPOINT@@@Z"
+      },
+      {
+        "from_ea": "0x180009e50",
+        "from_func": "0x180009d78",
+        "from_func_name": "?SessionExecute@CClientLibrary@@QEAAKPEAXPEAUtagWDS_ENDPOINT@@0KPEAPEAXPEAKPEAUtagWDS_CLIENT_OP@@@Z",
+        "import": "WdsCommonLib!?IsBroadcastAddress@CNetworkAddress@@SAHPEAUtagWDS_ENDPOINT@@@Z"
+      },
+      {
+        "from_ea": "0x180005bdf",
+        "from_func": "0x1800059f8",
+        "from_func_name": "?ExecuteUdpSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUtagWDS_ENDPOINT@@PEAXKPEAPEAXPEAKK@Z",
+        "import": "WdsCommonLib!?IsBroadcastAddress@CNetworkAddress@@SAHPEAUtagWDS_ENDPOINT@@@Z"
+      },
+      {
+        "from_ea": "0x180009e50",
+        "from_func": "0x180009d78",
+        "from_func_name": "?SessionExecute@CClientLibrary@@QEAAKPEAXPEAUtagWDS_ENDPOINT@@0KPEAPEAXPEAKPEAUtagWDS_CLIENT_OP@@@Z",
+        "import": "WdsCommonLib!?IsBroadcastAddress@CNetworkAddress@@SAHPEAUtagWDS_ENDPOINT@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?IsDomainJoined@@YAKPEAH@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800074e2",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "WdsCommonLib!?IsDomainJoined@@YAKPEAH@Z"
+      },
+      {
+        "from_ea": "0x1800074e2",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "WdsCommonLib!?IsDomainJoined@@YAKPEAH@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180007f94",
+        "from_func": "0x180007e80",
+        "from_func_name": "?OnRequestCompletion@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@UEAAXKKPEAU_OVERLAPPED@@@Z",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800082dd",
+        "from_func": "0x180008174",
+        "from_func_name": "?PostReadRequest@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000860b",
+        "from_func": "0x180008404",
+        "from_func_name": "?ProcessSendQueue@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x180007f94",
+        "from_func": "0x180007e80",
+        "from_func_name": "?OnRequestCompletion@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@UEAAXKKPEAU_OVERLAPPED@@@Z",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800082dd",
+        "from_func": "0x180008174",
+        "from_func_name": "?PostReadRequest@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000860b",
+        "from_func": "0x180008404",
+        "from_func_name": "?ProcessSendQueue@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x18000830f",
+        "from_func": "0x180008174",
+        "from_func_name": "?PostReadRequest@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000863d",
+        "from_func": "0x180008404",
+        "from_func_name": "?ProcessSendQueue@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x180007fd8",
+        "from_func": "0x180007e80",
+        "from_func_name": "?OnRequestCompletion@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@UEAAXKKPEAU_OVERLAPPED@@@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000830f",
+        "from_func": "0x180008174",
+        "from_func_name": "?PostReadRequest@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000863d",
+        "from_func": "0x180008404",
+        "from_func_name": "?ProcessSendQueue@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?ResolveIpToHostName@CNetworkAddress@@SAKPEBGPEAPEAG@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000755c",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "WdsCommonLib!?ResolveIpToHostName@CNetworkAddress@@SAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000755c",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "WdsCommonLib!?ResolveIpToHostName@CNetworkAddress@@SAKPEBGPEAPEAG@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Shutdown@CTrace@@QEAAKXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180004da0",
+        "from_func": "0x180004d4c",
+        "from_func_name": "?CleanupResources@CClientLibrary@@AEAAKXZ",
+        "import": "WdsCommonLib!?Shutdown@CTrace@@QEAAKXZ"
+      },
+      {
+        "from_ea": "0x180004da0",
+        "from_func": "0x180004d4c",
+        "from_func_name": "?CleanupResources@CClientLibrary@@AEAAKXZ",
+        "import": "WdsCommonLib!?Shutdown@CTrace@@QEAAKXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?TraceV@CTrace@@QEAAXKPEBGPEAD@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000ce0e",
+        "from_func": "0x18000cde0",
+        "from_func_name": "?WdsClientTrace@@YAXPEBGZZ",
+        "import": "WdsCommonLib!?TraceV@CTrace@@QEAAXKPEBGPEAD@Z"
+      },
+      {
+        "from_ea": "0x18000ce67",
+        "from_func": "0x18000ce40",
+        "from_func_name": "?WdsClientTraceEx@@YAXKPEBGZZ",
+        "import": "WdsCommonLib!?TraceV@CTrace@@QEAAXKPEBGPEAD@Z"
+      },
+      {
+        "from_ea": "0x18000ce0e",
+        "from_func": "0x18000cde0",
+        "from_func_name": "?WdsClientTrace@@YAXPEBGZZ",
+        "import": "WdsCommonLib!?TraceV@CTrace@@QEAAXKPEBGPEAD@Z"
+      },
+      {
+        "from_ea": "0x18000ce67",
+        "from_func": "0x18000ce40",
+        "from_func_name": "?WdsClientTraceEx@@YAXKPEBGZZ",
+        "import": "WdsCommonLib!?TraceV@CTrace@@QEAAXKPEBGPEAD@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800075fc",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000c31f",
+        "from_func": "0x18000c190",
+        "from_func_name": "?AddParameter@CControlProtocol@@QEAAPEAXPEAXPEBGKKK@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000c7e7",
+        "from_func": "0x18000c5dc",
+        "from_func_name": "?GetPacketBuffer@CControlProtocol@@QEAAKPEAXPEAPEAXPEAK@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x1800075fc",
+        "from_func": "0x18000726c",
+        "from_func_name": "?InitializeRpcSession@CClientLibrary@@AEAAKPEAUSession@1@PEAUWDS_CRED@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000c31f",
+        "from_func": "0x18000c190",
+        "from_func_name": "?AddParameter@CControlProtocol@@QEAAPEAXPEAXPEBGKKK@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000c7e7",
+        "from_func": "0x18000c5dc",
+        "from_func_name": "?GetPacketBuffer@CControlProtocol@@QEAAKPEAXPEAPEAXPEAK@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x180004e03",
+        "from_func": "0x180004d4c",
+        "from_func_name": "?CleanupResources@CClientLibrary@@AEAAKXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x180007165",
+        "from_func": "0x180006f80",
+        "from_func_name": "?Initialize@CClientLibrary@@QEAAKXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x1800071e3",
+        "from_func": "0x180006f80",
+        "from_func_name": "?Initialize@CClientLibrary@@QEAAKXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x180009cd3",
+        "from_func": "0x180009b30",
+        "from_func_name": "?SessionCreate@CClientLibrary@@QEAAKPEAUWDS_CRED@@PEAUtagWDS_ENDPOINT@@1PEAPEAX@Z",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x18000a93a",
+        "from_func": "0x18000a858",
+        "from_func_name": "?Shutdown@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x180004e03",
+        "from_func": "0x180004d4c",
+        "from_func_name": "?CleanupResources@CClientLibrary@@AEAAKXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x180007165",
+        "from_func": "0x180006f80",
+        "from_func_name": "?Initialize@CClientLibrary@@QEAAKXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x1800071e3",
+        "from_func": "0x180006f80",
+        "from_func_name": "?Initialize@CClientLibrary@@QEAAKXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x180009cd3",
+        "from_func": "0x180009b30",
+        "from_func_name": "?SessionCreate@CClientLibrary@@QEAAKPEAUWDS_CRED@@PEAUtagWDS_ENDPOINT@@1PEAPEAX@Z",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x18000a93a",
+        "from_func": "0x18000a858",
+        "from_func_name": "?Shutdown@?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@QEAAKXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WdsGetStringHash@@YAKPEBG@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c107",
+        "from_func": "0x18000c0f4",
+        "from_func_name": "?AddItem@?$CSmHashTable@UPacketVariable@@VCNoLock@@$0HB@@@QEAAXPEAUPacketVariable@@@Z",
+        "import": "WdsCommonLib!?WdsGetStringHash@@YAKPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000c50b",
+        "from_func": "0x18000c4f8",
+        "from_func_name": "?FindVariable@CControlProtocol@@AEAAPEAUPacketVariable@@PEAUControlPacket@@PEBG@Z",
+        "import": "WdsCommonLib!?WdsGetStringHash@@YAKPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000d35f",
+        "from_func": "0x18000d320",
+        "from_func_name": "WdsCpParameterDelete",
+        "import": "WdsCommonLib!?WdsGetStringHash@@YAKPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000c107",
+        "from_func": "0x18000c0f4",
+        "from_func_name": "?AddItem@?$CSmHashTable@UPacketVariable@@VCNoLock@@$0HB@@@QEAAXPEAUPacketVariable@@@Z",
+        "import": "WdsCommonLib!?WdsGetStringHash@@YAKPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000c50b",
+        "from_func": "0x18000c4f8",
+        "from_func_name": "?FindVariable@CControlProtocol@@AEAAPEAUPacketVariable@@PEAUControlPacket@@PEBG@Z",
+        "import": "WdsCommonLib!?WdsGetStringHash@@YAKPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000d35f",
+        "from_func": "0x18000d320",
+        "from_func_name": "WdsCpParameterDelete",
+        "import": "WdsCommonLib!?WdsGetStringHash@@YAKPEBG@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WriterLock@CMRSWLock@@QEAAXXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800033d8",
+        "from_func": "0x180003360",
+        "from_func_name": "??1?$CChildCount@V?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@@@QEAA@XZ",
+        "import": "WdsCommonLib!?WriterLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800033d8",
+        "from_func": "0x180003360",
+        "from_func_name": "??1?$CChildCount@V?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@@@QEAA@XZ",
+        "import": "WdsCommonLib!?WriterLock@CMRSWLock@@QEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WriterRelease@CMRSWLock@@QEAAXXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003401",
+        "from_func": "0x180003360",
+        "from_func_name": "??1?$CChildCount@V?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@@@QEAA@XZ",
+        "import": "WdsCommonLib!?WriterRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x180003401",
+        "from_func": "0x180003360",
+        "from_func_name": "??1?$CChildCount@V?$CUdpSocket@VCClientLibrary@@U?$IoOperation@VCClientLibrary@@@@@@@@QEAA@XZ",
+        "import": "WdsCommonLib!?WriterRelease@CMRSWLock@@QEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000d691",
+        "from_func": "0x18000d62c",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x1800017c7",
+        "from_func": "0x1800017c7",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x18000d691",
+        "from_func": "0x18000d62c",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001cc4",
+        "from_func": "0x180001cc4",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "msvcrt!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ce8",
+        "from_func": "0x180001ce8",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  }
+]

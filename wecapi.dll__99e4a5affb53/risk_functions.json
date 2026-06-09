@@ -1,0 +1,1796 @@
+[
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "SetupChannelAndService(int)",
+    "ea": "0x18000908c",
+    "function_file": "functions/18000908c_SetupChannelAndService_int.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-service-management-l1-1-0!CloseServiceHandle",
+      "api-ms-win-service-management-l1-1-0!OpenSCManagerW",
+      "api-ms-win-service-management-l1-1-0!OpenServiceW",
+      "api-ms-win-service-management-l1-1-0!StartServiceW",
+      "api-ms-win-service-management-l2-1-0!ChangeServiceConfig2W",
+      "api-ms-win-service-management-l2-1-0!ChangeServiceConfigW",
+      "api-ms-win-service-management-l2-1-0!QueryServiceConfigW",
+      "api-ms-win-service-winsvc-l1-1-0!QueryServiceStatus",
+      "wevtapi!EvtClose",
+      "wevtapi!EvtOpenChannelConfig",
+      "wevtapi!EvtSaveChannelConfig",
+      "wevtapi!EvtSetChannelConfigProperty"
+    ],
+    "matched_strings": [],
+    "name": "?SetupChannelAndService@@YAHH@Z",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 5567,
+    "size": 2150,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001be4",
+    "function_file": "functions/180001be4_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetEvtChannelProperty(void *,_EVT_CHANNEL_CONFIG_PROPERTY_ID,std::vector<uchar,std::allocator<uchar>> &,_EVT_VARIANT * &)",
+    "ea": "0x18000632c",
+    "function_file": "functions/18000632c_GetEvtChannelProperty_void_EVT_CHANNEL_CONFIG_PROPERTY_ID_std_vector_uchar_std_allocator_uchar_EVT_VARIANT.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "wevtapi!EvtGetChannelConfigProperty"
+    ],
+    "matched_strings": [],
+    "name": "?GetEvtChannelProperty@@YAXPEAXW4_EVT_CHANNEL_CONFIG_PROPERTY_ID@@AEAV?$vector@EV?$allocator@E@std@@@std@@AEAPEAU_EVT_VARIANT@@@Z",
+    "prototype": "__int64 __fastcall(EVT_HANDLE ChannelConfig)",
+    "rank_score": 1019,
+    "size": 435,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DoRpcInitialize(void)",
+    "ea": "0x1800036fc",
+    "function_file": "functions/1800036fc_DoRpcInitialize_void.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFromStringBindingW",
+      "RPCRT4!RpcBindingSetAuthInfoW",
+      "RPCRT4!RpcStringBindingComposeW",
+      "RPCRT4!RpcStringFreeW"
+    ],
+    "matched_strings": [],
+    "name": "?DoRpcInitialize@@YAPEAXXZ",
+    "prototype": "RPC_BINDING_HANDLE(void)",
+    "rank_score": 817,
+    "size": 355,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180001ce0",
+    "function_file": "functions/180001ce0_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Subscription::SetPropW(_EC_SUBSCRIPTION_PROPERTY_ID,_EC_VARIANT * const)",
+    "ea": "0x180007aa0",
+    "function_file": "functions/180007aa0_Subscription_SetPropW_EC_SUBSCRIPTION_PROPERTY_ID_EC_VARIANT_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CompareFileTime",
+      "api-ms-win-core-localization-l1-2-0!LocaleNameToLCID"
+    ],
+    "matched_strings": [
+      "admin\\wmi\\events\\forwarding\\collector\\common\\subdata.cpp"
+    ],
+    "name": "?SetPropW@Subscription@@QEAAKW4_EC_SUBSCRIPTION_PROPERTY_ID@@QEAU_EC_VARIANT@@@Z",
+    "prototype": "__int64 __fastcall(Subscription *this, signed int, struct _EC_VARIANT *const)",
+    "rank_score": 693,
+    "size": 5605,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ObjectTable<wmi::AutoRef<Object>>::Get(ulong,wmi::AutoRef<Object> &)",
+    "ea": "0x180003970",
+    "function_file": "functions/180003970_ObjectTable_wmi_AutoRef_Object_Get_ulong_wmi_AutoRef_Object.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Get@?$ObjectTable@V?$AutoRef@VObject@@@wmi@@@@QEAA_NKAEAV?$AutoRef@VObject@@@wmi@@@Z",
+    "prototype": "",
+    "rank_score": 606,
+    "size": 180,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 21,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x18000262c",
+    "function_file": "functions/18000262c_operator_new_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(SIZE_T dwBytes)",
+    "rank_score": 426,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "StringTokenizer::NextToken(std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> &)",
+    "ea": "0x18000aaa0",
+    "function_file": "functions/18000aaa0_StringTokenizer_NextToken_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort.md",
+    "matched_imports": [
+      "msvcrt!iswspace"
+    ],
+    "matched_strings": [],
+    "name": "?NextToken@StringTokenizer@@QEAA?AW4StringTokenType@@AEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 422,
+    "size": 580,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "EcOpenSubscription",
+    "ea": "0x180005220",
+    "function_file": "functions/180005220_EcOpenSubscription.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "msvcrt!iswalnum"
+    ],
+    "matched_strings": [],
+    "name": "EcOpenSubscription",
+    "prototype": "EC_HANDLE __stdcall(LPCWSTR SubscriptionName, DWORD AccessMask, DWORD Flags)",
+    "rank_score": 413,
+    "size": 665,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "EcOpenSubscriptionEnum",
+    "ea": "0x1800054c0",
+    "function_file": "functions/1800054c0_EcOpenSubscriptionEnum.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall3",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "EcOpenSubscriptionEnum",
+    "prototype": "EC_HANDLE __stdcall(DWORD Flags)",
+    "rank_score": 413,
+    "size": 589,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "ObjectTable<wmi::AutoRef<Object>>::Insert(wmi::AutoRef<Object>)",
+    "ea": "0x180003a2c",
+    "function_file": "functions/180003a2c_ObjectTable_wmi_AutoRef_Object_Insert_wmi_AutoRef_Object.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Insert@?$ObjectTable@V?$AutoRef@VObject@@@wmi@@@@QEAAKV?$AutoRef@VObject@@@wmi@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 411,
+    "size": 473,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "EcDeleteSubscription",
+    "ea": "0x180004640",
+    "function_file": "functions/180004640_EcDeleteSubscription.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall3",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "EcDeleteSubscription",
+    "prototype": "BOOL __stdcall(LPCWSTR SubscriptionName, DWORD Flags)",
+    "rank_score": 406,
+    "size": 313,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 48,
+    "demangled": "operator delete(void *)",
+    "ea": "0x1800026c0",
+    "function_file": "functions/1800026c0_operator_delete_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 335,
+    "size": 35,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "EcIsConfigRequired(int *)",
+    "ea": "0x180003870",
+    "function_file": "functions/180003870_EcIsConfigRequired_int.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?EcIsConfigRequired@@YAHPEAH@Z",
+    "prototype": "__int64 __fastcall(int *)",
+    "rank_score": 236,
+    "size": 178,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "EcQuickConfig(void)",
+    "ea": "0x180003930",
+    "function_file": "functions/180003930_EcQuickConfig_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?EcQuickConfig@@YAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 232,
+    "size": 57,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 38,
+    "demangled": "WPP_SF_D",
+    "ea": "0x1800027ac",
+    "function_file": "functions/1800027ac_WPP_SF_D.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_D",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "EcRemoveObjectArrayElement",
+    "ea": "0x180005720",
+    "function_file": "functions/180005720_EcRemoveObjectArrayElement.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "EcRemoveObjectArrayElement",
+    "prototype": "BOOL __stdcall(EC_OBJECT_ARRAY_PROPERTY_HANDLE ObjectArray, DWORD ArrayIndex)",
+    "rank_score": 215,
+    "size": 131,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x1800044c0",
+    "function_file": "functions/1800044c0_DllMain.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFree"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 213,
+    "size": 69,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 51,
+    "demangled": "_CxxThrowException_0",
+    "ea": "0x180001aac",
+    "function_file": "functions/180001aac_CxxThrowException_0.md",
+    "matched_imports": [
+      "msvcrt!_CxxThrowException"
+    ],
+    "matched_strings": [],
+    "name": "_CxxThrowException_0",
+    "prototype": "void __stdcall __noreturn(void *pExceptionObject, _ThrowInfo *pThrowInfo)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "WriteCommaDelimitedStringToVariantBuffer(Buffer &,tag_EcRpcMetadataProperty &)",
+    "ea": "0x18000aea4",
+    "function_file": "functions/18000aea4_WriteCommaDelimitedStringToVariantBuffer_Buffer_tag_EcRpcMetadataProperty.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "admin\\wmi\\events\\forwarding\\collector\\common\\subdata.cpp",
+      "admin\\wmi\\events\\forwarding\\collector\\common\\subdata.cpp"
+    ],
+    "name": "?WriteCommaDelimitedStringToVariantBuffer@@YAXAEAVBuffer@@AEAUtag_EcRpcMetadataProperty@@@Z",
+    "prototype": "void __fastcall(struct Buffer *, void **)",
+    "rank_score": 119,
+    "size": 1030,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ObjectTable<wmi::AutoRef<Object>>::~ObjectTable<wmi::AutoRef<Object>>(void)",
+    "ea": "0x18000330c",
+    "function_file": "functions/18000330c_ObjectTable_wmi_AutoRef_Object_ObjectTable_wmi_AutoRef_Object_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ObjectTable@V?$AutoRef@VObject@@@wmi@@@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 115,
+    "size": 107,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "memcpy_0",
+    "ea": "0x180001ac6",
+    "function_file": "functions/180001ac6_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 113,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "Buffer::SetSize(ulong)",
+    "ea": "0x18000b6b8",
+    "function_file": "functions/18000b6b8_Buffer_SetSize_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "admin\\wmi\\events\\forwarding\\common\\buffer.cpp",
+      "admin\\wmi\\events\\forwarding\\common\\buffer.cpp"
+    ],
+    "name": "?SetSize@Buffer@@QEAAXK@Z",
+    "prototype": "void __fastcall(Buffer *__hidden this, unsigned int)",
+    "rank_score": 112,
+    "size": 323,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180001ec6",
+    "function_file": "functions/180001ec6_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "memmove_0",
+    "ea": "0x180001ad2",
+    "function_file": "functions/180001ad2_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "exception::~exception(void)",
+    "ea": "0x180001a8a",
+    "function_file": "functions/180001a8a_exception_exception_void.md",
+    "matched_imports": [
+      "msvcrt!??1exception@@UEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1exception@@UEAA@XZ_0",
+    "prototype": "void(exception *__hidden this)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SubscriptionWriteData::GetPropW(_EC_SUBSCRIPTION_PROPERTY_ID,ulong,_EC_VARIANT *,ulong &)",
+    "ea": "0x18000a820",
+    "function_file": "functions/18000a820_SubscriptionWriteData_GetPropW_EC_SUBSCRIPTION_PROPERTY_ID_ulong_EC_VARIANT_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "admin\\wmi\\events\\forwarding\\collector\\common\\subdata.cpp",
+      "admin\\wmi\\events\\forwarding\\collector\\common\\subdata.cpp"
+    ],
+    "name": "?GetPropW@SubscriptionWriteData@@QEAAKW4_EC_SUBSCRIPTION_PROPERTY_ID@@KPEAU_EC_VARIANT@@AEAK@Z",
+    "prototype": "__int64 __fastcall(SubscriptionWriteData *this, unsigned int, unsigned int, struct _EC_VARIANT *, unsigned int *)",
+    "rank_score": 103,
+    "size": 533,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_Mtxdst",
+    "ea": "0x180003558",
+    "function_file": "functions/180003558_Mtxdst.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "_Mtxdst",
+    "prototype": "void __stdcall(LPCRITICAL_SECTION lpCriticalSection)",
+    "rank_score": 102,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Buffer::Advance(ulong)",
+    "ea": "0x18000b540",
+    "function_file": "functions/18000b540_Buffer_Advance_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "admin\\wmi\\events\\forwarding\\common\\buffer.cpp"
+    ],
+    "name": "?Advance@Buffer@@UEAAXK@Z",
+    "prototype": "void __fastcall(Buffer *__hidden this, unsigned int)",
+    "rank_score": 58,
+    "size": 184,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Buffer::Write(void * const,ulong)",
+    "ea": "0x18000b880",
+    "function_file": "functions/18000b880_Buffer_Write_void_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "admin\\wmi\\events\\forwarding\\common\\buffer.cpp"
+    ],
+    "name": "?Write@Buffer@@UEAAXQEAXK@Z",
+    "prototype": "void __fastcall(Buffer *this, void *const, unsigned int)",
+    "rank_score": 58,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "UserBuffer::ThrowUnexpectedEOFException(void)",
+    "ea": "0x18000b804",
+    "function_file": "functions/18000b804_UserBuffer_ThrowUnexpectedEOFException_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "admin\\wmi\\events\\forwarding\\common\\buffer.cpp"
+    ],
+    "name": "?ThrowUnexpectedEOFException@UserBuffer@@CAXXZ",
+    "prototype": "void __noreturn(void)",
+    "rank_score": 57,
+    "size": 105,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ReadMetadataProp(tag_EcRpcMetadataPropertyList const &,ulong,ulong &)",
+    "ea": "0x18000acec",
+    "function_file": "functions/18000acec_ReadMetadataProp_tag_EcRpcMetadataPropertyList_const_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "admin\\wmi\\events\\forwarding\\collector\\common\\subdata.cpp"
+    ],
+    "name": "?ReadMetadataProp@@YA_NAEBUtag_EcRpcMetadataPropertyList@@KAEAK@Z",
+    "prototype": "bool __fastcall(const struct tag_EcRpcMetadataPropertyList *, unsigned int, unsigned int *)",
+    "rank_score": 56,
+    "size": 150,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 50,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18000d010",
+    "function_file": "functions/18000d010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ConvertStringArrayToCommaDelimitedString(ushort * *,ulong)",
+    "ea": "0x18000a72c",
+    "function_file": "functions/18000a72c_ConvertStringArrayToCommaDelimitedString_ushort_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConvertStringArrayToCommaDelimitedString@@YAPEAGPEAPEAGK@Z",
+    "prototype": "unsigned __int16 *__fastcall(unsigned __int16 **, int)",
+    "rank_score": 28,
+    "size": 236,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 38,
+    "demangled": "wmi::GenericException::GenericException(ulong,char const *,int)",
+    "ea": "0x1800025d0",
+    "function_file": "functions/1800025d0_wmi_GenericException_GenericException_ulong_char_const_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0GenericException@wmi@@QEAA@KPEBDH@Z",
+    "prototype": "__int64 __fastcall(wmi::GenericException *__hidden this, unsigned int, const char *, int)",
+    "rank_score": 25,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000b960",
+    "function_file": "functions/18000b960_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800016e0",
+    "function_file": "functions/1800016e0_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "EventSourceCollection::Remove(ulong)",
+    "ea": "0x1800073c4",
+    "function_file": "functions/1800073c4_EventSourceCollection_Remove_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Remove@EventSourceCollection@@QEAAXK@Z",
+    "prototype": "void __fastcall(EventSourceCollection *__hidden this, unsigned int)",
+    "rank_score": 22,
+    "size": 531,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>::_Copy(unsigned __int64,unsigned __int64)",
+    "ea": "0x180009ba0",
+    "function_file": "functions/180009ba0_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_Copy_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Copy@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEAAX_K0@Z",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 22,
+    "size": 274,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_SetupChannelAndService_::_1_::dtor$0",
+    "ea": "0x18000c594",
+    "function_file": "functions/18000c594_SetupChannelAndService_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_SetupChannelAndService_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_SetupChannelAndService_::_1_::dtor$1",
+    "ea": "0x18000c5a6",
+    "function_file": "functions/18000c5a6_SetupChannelAndService_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_SetupChannelAndService_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_SetupChannelAndService_::_1_::dtor$2",
+    "ea": "0x18000c5b8",
+    "function_file": "functions/18000c5b8_SetupChannelAndService_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_SetupChannelAndService_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_SetupChannelAndService_::_1_::dtor$3",
+    "ea": "0x18000c5ca",
+    "function_file": "functions/18000c5ca_SetupChannelAndService_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_SetupChannelAndService_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001724",
+    "function_file": "functions/180001724_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SubscriptionWriteData::SetPropW(_EC_SUBSCRIPTION_PROPERTY_ID,_EC_VARIANT * const)",
+    "ea": "0x18000ad88",
+    "function_file": "functions/18000ad88_SubscriptionWriteData_SetPropW_EC_SUBSCRIPTION_PROPERTY_ID_EC_VARIANT_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetPropW@SubscriptionWriteData@@QEAAKW4_EC_SUBSCRIPTION_PROPERTY_ID@@QEAU_EC_VARIANT@@@Z",
+    "prototype": "__int64 __fastcall(SubscriptionWriteData *this, unsigned int, struct _EC_VARIANT *const)",
+    "rank_score": 18,
+    "size": 276,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000ba60",
+    "function_file": "functions/18000ba60_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 18,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Copy(unsigned __int64,unsigned __int64)",
+    "ea": "0x180001f2c",
+    "function_file": "functions/180001f2c_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 18,
+    "size": 239,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>::~basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>(void)",
+    "ea": "0x1800033ac",
+    "function_file": "functions/1800033ac_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_basic_string_ushort_std_char_traits_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 47,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 9,
+    "demangled": "GetClassifiedObject<Subscription>(void *,ObjectType,wmi::AutoRef<Subscription> &)",
+    "ea": "0x180002900",
+    "function_file": "functions/180002900_GetClassifiedObject_Subscription_void_ObjectType_wmi_AutoRef_Subscription.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$GetClassifiedObject@VSubscription@@@@YAXPEAXW4ObjectType@@AEAV?$AutoRef@VSubscription@@@wmi@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 17,
+    "size": 270,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "std::_Tree<std::_Tmap_traits<ulong,wmi::AutoRef<Object>,std::less<ulong>,std::allocator<std::pair<ulong const,wmi::AutoRef<Object>>>,0>>::clear(void)",
+    "ea": "0x180003f60",
+    "function_file": "functions/180003f60_std_Tree_std_Tmap_traits_ulong_wmi_AutoRef_Object_std_less_ulong_std_allocator_std_pair_ulong_const_wmi_AutoRe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?clear@?$_Tree@V?$_Tmap_traits@KV?$AutoRef@VObject@@@wmi@@U?$less@K@std@@V?$allocator@U?$pair@$$CBKV?$AutoRef@VObject@@@wmi@@@std@@@4@$0A@@std@@@std@@QEAAXXZ",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 156,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "Buffer::~Buffer(void)",
+    "ea": "0x18000b514",
+    "function_file": "functions/18000b514_Buffer_Buffer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1Buffer@@QEAA@XZ",
+    "prototype": "void __fastcall(Buffer *__hidden this)",
+    "rank_score": 16,
+    "size": 34,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ZeroMetadataProp(tag_EcRpcMetadataProperty &,bool)",
+    "ea": "0x18000b2b0",
+    "function_file": "functions/18000b2b0_ZeroMetadataProp_tag_EcRpcMetadataProperty_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ZeroMetadataProp@@YAXAEAUtag_EcRpcMetadataProperty@@_N@Z",
+    "prototype": "void(struct tag_EcRpcMetadataProperty *, bool)",
+    "rank_score": 16,
+    "size": 201,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "std::_Tree<std::_Tmap_traits<ulong,wmi::AutoRef<Object>,std::less<ulong>,std::allocator<std::pair<ulong const,wmi::AutoRef<Object>>>,0>>::_Destroy_if_not_nil(std::_Tree_node<std::pair<ulong const,wmi::AutoRef<Object>>,void *> *)",
+    "ea": "0x180003c98",
+    "function_file": "functions/180003c98_std_Tree_std_Tmap_traits_ulong_wmi_AutoRef_Object_std_less_ulong_std_allocator_std_pair_ulong_const_wmi_AutoRe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Destroy_if_not_nil@?$_Tree@V?$_Tmap_traits@KV?$AutoRef@VObject@@@wmi@@U?$less@K@std@@V?$allocator@U?$pair@$$CBKV?$AutoRef@VObject@@@wmi@@@std@@@4@$0A@@std@@@std@@IEAAXPEAU?$_Tree_node@U?$pair@$$CBKV?$AutoRef@VObject@@@wmi@@@std@@PEAX@2@@Z",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 68,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "std::vector<uchar,std::allocator<uchar>>::_Tidy(void)",
+    "ea": "0x18000625c",
+    "function_file": "functions/18000625c_std_vector_uchar_std_allocator_uchar_Tidy_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Tidy@?$vector@EV?$allocator@E@std@@@std@@IEAAXXZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 51,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "wmi::AutoRef<Object>::~AutoRef<Object>(void)",
+    "ea": "0x1800032c8",
+    "function_file": "functions/1800032c8_wmi_AutoRef_Object_AutoRef_Object_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$AutoRef@VObject@@@wmi@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "CleanupStringVector(ulong,ushort * *,bool)",
+    "ea": "0x18000a6b0",
+    "function_file": "functions/18000a6b0_CleanupStringVector_ulong_ushort_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CleanupStringVector@@YAXKPEAPEAG_N@Z",
+    "prototype": "void __fastcall(unsigned int, unsigned __int16 **, char)",
+    "rank_score": 15,
+    "size": 116,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18000bad0",
+    "function_file": "functions/18000bad0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "std::_Wrap_alloc<std::allocator<uchar>>::deallocate(uchar *,unsigned __int64)",
+    "ea": "0x180003d68",
+    "function_file": "functions/180003d68_std_Wrap_alloc_std_allocator_uchar_deallocate_uchar_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?deallocate@?$_Wrap_alloc@V?$allocator@E@std@@@std@@QEAAXPEAE_K@Z",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 8,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "wmi::AutoVectorPtr<ushort *>::~AutoVectorPtr<ushort *>(void)",
+    "ea": "0x180006224",
+    "function_file": "functions/180006224_wmi_AutoVectorPtr_ushort_AutoVectorPtr_ushort_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$AutoVectorPtr@PEAG@wmi@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 8,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "EventSourceCollection::Validate(SubscriptionWriteData &,bool)",
+    "ea": "0x18000996c",
+    "function_file": "functions/18000996c_EventSourceCollection_Validate_SubscriptionWriteData_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Validate@EventSourceCollection@@AEBAXAEAVSubscriptionWriteData@@_N@Z",
+    "prototype": "void __fastcall(EventSourceCollection *__hidden this, struct SubscriptionWriteData *, bool)",
+    "rank_score": 14,
+    "size": 557,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "StringTokenizer::~StringTokenizer(void)",
+    "ea": "0x18000a380",
+    "function_file": "functions/18000a380_StringTokenizer_StringTokenizer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1StringTokenizer@@QEAA@XZ",
+    "prototype": "void __fastcall(StringTokenizer *__hidden this)",
+    "rank_score": 14,
+    "size": 89,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "std::_Xbad_alloc(void)",
+    "ea": "0x1800012d8",
+    "function_file": "functions/1800012d8_std_Xbad_alloc_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xbad_alloc@std@@YAXXZ",
+    "prototype": "void __noreturn(void)",
+    "rank_score": 14,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "std::vector<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>,std::allocator<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>>>::~vector<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>,std::allocator<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>>>(void)",
+    "ea": "0x1800034d4",
+    "function_file": "functions/1800034d4_std_vector_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_std_allocator_std_basic_string_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$vector@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$allocator@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@2@@std@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 124,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "GetClassifiedObject<EventSourceCollection>(void *,ObjectType,wmi::AutoRef<EventSourceCollection> &)",
+    "ea": "0x1800027ec",
+    "function_file": "functions/1800027ec_GetClassifiedObject_EventSourceCollection_void_ObjectType_wmi_AutoRef_EventSourceCollection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$GetClassifiedObject@VEventSourceCollection@@@@YAXPEAXW4ObjectType@@AEAV?$AutoRef@VEventSourceCollection@@@wmi@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 13,
+    "size": 270,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "EcOpenSubscription$dtor$0",
+    "ea": "0x18000c24f",
+    "function_file": "functions/18000c24f_EcOpenSubscription_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EcOpenSubscription$dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "EcOpenSubscriptionEnum$dtor$2",
+    "ea": "0x18000c2db",
+    "function_file": "functions/18000c2db_EcOpenSubscriptionEnum_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EcOpenSubscriptionEnum$dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ConvertStringArrayToCommaDelimitedString_::_1_::dtor$0",
+    "ea": "0x18000c6d2",
+    "function_file": "functions/18000c6d2_ConvertStringArrayToCommaDelimitedString_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ConvertStringArrayToCommaDelimitedString_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_EcIsConfigRequired_::_1_::catch$0",
+    "ea": "0x18000bf44",
+    "function_file": "functions/18000bf44_EcIsConfigRequired_1_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_EcIsConfigRequired_::_1_::catch$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 48,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_EcQuickConfig_::_1_::catch$0",
+    "ea": "0x18000bf7a",
+    "function_file": "functions/18000bf7a_EcQuickConfig_1_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_EcQuickConfig_::_1_::catch$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 48,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$0",
+    "ea": "0x18000c6f6",
+    "function_file": "functions/18000c6f6_WriteCommaDelimitedStringToVariantBuffer_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$1",
+    "ea": "0x18000c708",
+    "function_file": "functions/18000c708_WriteCommaDelimitedStringToVariantBuffer_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$2",
+    "ea": "0x18000c71a",
+    "function_file": "functions/18000c71a_WriteCommaDelimitedStringToVariantBuffer_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$3",
+    "ea": "0x18000c72c",
+    "function_file": "functions/18000c72c_WriteCommaDelimitedStringToVariantBuffer_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$4",
+    "ea": "0x18000c73e",
+    "function_file": "functions/18000c73e_WriteCommaDelimitedStringToVariantBuffer_1_dtor_4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$4",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$7",
+    "ea": "0x18000c750",
+    "function_file": "functions/18000c750_WriteCommaDelimitedStringToVariantBuffer_1_dtor_7.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_WriteCommaDelimitedStringToVariantBuffer_::_1_::dtor$7",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllMain$catch$0",
+    "ea": "0x18000c00c",
+    "function_file": "functions/18000c00c_DllMain_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain$catch$0",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 30,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>::assign(std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> const &,unsigned __int64,unsigned __int64)",
+    "ea": "0x180009ff0",
+    "function_file": "functions/180009ff0_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_assign_std_basic_string_ushort_std_char_tr.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEAAAEAV12@AEBV12@_K1@Z",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 10,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>::assign(ushort const *)",
+    "ea": "0x18000a100",
+    "function_file": "functions/18000a100_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_assign_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEAAAEAV12@PEBG@Z",
+    "prototype": "__int64 __fastcall(void *, void *Src)",
+    "rank_score": 10,
+    "size": 262,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "std::_Tree<std::_Tmap_traits<ulong,wmi::AutoRef<Object>,std::less<ulong>,std::allocator<std::pair<ulong const,wmi::AutoRef<Object>>>,0>>::_Insert_at<std::pair<ulong const,wmi::AutoRef<Object>> &,std::_Tree_node<std::pair<ulong const,wmi::AutoRef<Object>>,void *> *>(bool,std::_Tree_node<std::pair<ulong const,wmi::AutoRef<Object>>,void *> *,std::pair<ulong const,wmi::AutoRef<Object>> &,std::_Tree_node<std::pair<ulong const,wmi::AutoRef<Object>>,void *> *)",
+    "ea": "0x180002b60",
+    "function_file": "functions/180002b60_std_Tree_std_Tmap_traits_ulong_wmi_AutoRef_Object_std_less_ulong_std_allocator_std_pair_ulong_const_wmi_AutoRe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_Insert_at@AEAU?$pair@$$CBKV?$AutoRef@VObject@@@wmi@@@std@@PEAU?$_Tree_node@U?$pair@$$CBKV?$AutoRef@VObject@@@wmi@@@std@@PEAX@2@@?$_Tree@V?$_Tmap_traits@KV?$AutoRef@VObject@@@wmi@@U?$less@K@std@@V?$allocator@U?$pair@$$CBKV?$AutoRef@VObject@@@wmi@@@std@@@4@$0A@@std@@@std@@IEAA?AV?$_Tree_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBKV?$AutoRef@VObject@@@wmi@@@std@@@std@@@std@@@1@_NPEAU?$_Tree_node@U?$pair@$$CBKV?$AutoRef@VObject@@@wmi@@@std@@PEAX@1@AEAU?$pair@$$CBKV?$AutoRef@VObject@@@wmi@@@1@1@Z",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 636,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign(char const *,unsigned __int64)",
+    "ea": "0x1800021ac",
+    "function_file": "functions/1800021ac_std_basic_string_char_std_char_traits_char_std_allocator_char_assign_char_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD_K@Z",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 9,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "StringCchCopyW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x1800098f8",
+    "function_file": "functions/1800098f8_StringCchCopyW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyW@@YAJPEAG_KPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int64, const unsigned __int16 *)",
+    "rank_score": 8,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ObjectTable<wmi::AutoRef<Object>>::AddToFreeList(ulong,ulong)",
+    "ea": "0x180003604",
+    "function_file": "functions/180003604_ObjectTable_wmi_AutoRef_Object_AddToFreeList_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddToFreeList@?$ObjectTable@V?$AutoRef@VObject@@@wmi@@@@AEAAXKK@Z",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 240,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>::_Xlen(void)",
+    "ea": "0x180002084",
+    "function_file": "functions/180002084_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_Xlen_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xlen@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEBAXXZ",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 17,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "std::vector<uchar,std::allocator<uchar>>::resize(unsigned __int64)",
+    "ea": "0x18000a2bc",
+    "function_file": "functions/18000a2bc_std_vector_uchar_std_allocator_uchar_resize_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?resize@?$vector@EV?$allocator@E@std@@@std@@QEAAX_K@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 7,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "atexit",
+    "ea": "0x1800019e4",
+    "function_file": "functions/1800019e4_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 6,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "std::_Xlength_error(char const *)",
+    "ea": "0x180001300",
+    "function_file": "functions/180001300_std_Xlength_error_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xlength_error@std@@YAXPEBD@Z",
+    "prototype": "void __fastcall __noreturn(const char *)",
+    "rank_score": 6,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>::_Xran(void)",
+    "ea": "0x18000209c",
+    "function_file": "functions/18000209c_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_Xran_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xran@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEBAXXZ",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 17,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wmi::ScopeGuardImpl1<int (*)(void *),void *>::~ScopeGuardImpl1<int (*)(void *),void *>(void)",
+    "ea": "0x180006234",
+    "function_file": "functions/180006234_wmi_ScopeGuardImpl1_int_void_void_ScopeGuardImpl1_int_void_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$ScopeGuardImpl1@P6AHPEAX@ZPEAX@wmi@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "std::_Wrap_alloc<std::allocator<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>>>::construct<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>,std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>>(std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> *,std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> &&)",
+    "ea": "0x180005da0",
+    "function_file": "functions/180005da0_std_Wrap_alloc_std_allocator_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_construct_std.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$construct@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V12@@?$_Wrap_alloc@V?$allocator@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@std@@@std@@QEAAXPEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@1@$$QEAV21@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 5,
+    "size": 131,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SubscriptionReadData::~SubscriptionReadData(void)",
+    "ea": "0x18000a3e0",
+    "function_file": "functions/18000a3e0_SubscriptionReadData_SubscriptionReadData_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1SubscriptionReadData@@QEAA@XZ",
+    "prototype": "void __fastcall(SubscriptionReadData *__hidden this)",
+    "rank_score": 4,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "std::_Syserror_map(int)",
+    "ea": "0x180001358",
+    "function_file": "functions/180001358_std_Syserror_map_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Syserror_map@std@@YAPEBDH@Z",
+    "prototype": "const char *__fastcall(int)",
+    "rank_score": 4,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "std::vector<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>,std::allocator<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>>>::_Xlen(void)",
+    "ea": "0x180009fd8",
+    "function_file": "functions/180009fd8_std_vector_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_std_allocator_std_basic_string_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xlen@?$vector@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$allocator@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@2@@std@@IEBAXXZ",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 17,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Buffer::Read(void *,ulong)",
+    "ea": "0x18000b620",
+    "function_file": "functions/18000b620_Buffer_Read_void_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Read@Buffer@@UEAAXPEAXK@Z",
+    "prototype": "void __fastcall(Buffer *this, void *, unsigned int)",
+    "rank_score": 3,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Object::~Object(void)",
+    "ea": "0x180003578",
+    "function_file": "functions/180003578_Object_Object_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1Object@@UEAA@XZ",
+    "prototype": "void __fastcall(Object *__hidden this)",
+    "rank_score": 3,
+    "size": 11,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SubscriptionReadData::Initialize(void)",
+    "ea": "0x18000aa3c",
+    "function_file": "functions/18000aa3c_SubscriptionReadData_Initialize_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Initialize@SubscriptionReadData@@QEAAXXZ",
+    "prototype": "void __fastcall(SubscriptionReadData *__hidden this)",
+    "rank_score": 3,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_std::_Uninit_move_std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short______std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short______std::allocator_std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short______std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short______::_1_::catch$0",
+    "ea": "0x18000c424",
+    "function_file": "functions/18000c424_std_Uninit_move_std_basic_string_unsigned_short_std_char_traits_unsigned_short_std_allocator_unsigned_short_st.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::_Uninit_move_std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short______std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short______std::allocator_std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short______std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short______::_1_::catch$0",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "ea": "0x18000be11",
+    "function_file": "functions/18000be11_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short___::_Copy_::_1_::catch$1",
+    "ea": "0x18000c607",
+    "function_file": "functions/18000c607_std_basic_string_unsigned_short_std_char_traits_unsigned_short_std_allocator_unsigned_short_Copy_1_catch_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short___::_Copy_::_1_::catch$1",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "std::_Uninit_move<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> *,std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> *,std::allocator<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>>,std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>>(std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> *,std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> *,std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> *,std::_Wrap_alloc<std::allocator<std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>>> &,std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>> *,std::_Nonscalar_ptr_iterator_tag)",
+    "ea": "0x180005d3c",
+    "function_file": "functions/180005d3c_std_Uninit_move_std_basic_string_ushort_std_char_traits_ushort_std_allocator_ushort_std_basic_string_ushort_st.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_Uninit_move@PEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@PEAV12@V?$allocator@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@2@V12@@std@@YAPEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@PEAV10@00AEAU?$_Wrap_alloc@V?$allocator@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@std@@@0@0U_Nonscalar_ptr_iterator_tag@0@@Z",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SubscriptionWriteData::~SubscriptionWriteData(void)",
+    "ea": "0x180006298",
+    "function_file": "functions/180006298_SubscriptionWriteData_SubscriptionWriteData_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1SubscriptionWriteData@@QEAA@XZ",
+    "prototype": "void __fastcall(SubscriptionWriteData *__hidden this)",
+    "rank_score": 2,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "ea": "0x18000bde6",
+    "function_file": "functions/18000bde6_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short___::_Copy_::_1_::catch$0",
+    "ea": "0x18000c5dc",
+    "function_file": "functions/18000c5dc_std_basic_string_unsigned_short_std_char_traits_unsigned_short_std_allocator_unsigned_short_Copy_1_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_unsigned_short_std::char_traits_unsigned_short__std::allocator_unsigned_short___::_Copy_::_1_::catch$0",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "EcDeleteSubscription$catch$0",
+    "ea": "0x18000c069",
+    "function_file": "functions/18000c069_EcDeleteSubscription_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EcDeleteSubscription$catch$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "EcOpenSubscription$catch$3",
+    "ea": "0x18000c273",
+    "function_file": "functions/18000c273_EcOpenSubscription_catch_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EcOpenSubscription$catch$3",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "EcOpenSubscriptionEnum$catch$6",
+    "ea": "0x18000c2ed",
+    "function_file": "functions/18000c2ed_EcOpenSubscriptionEnum_catch_6.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EcOpenSubscriptionEnum$catch$6",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "EcOpenSubscriptionEnum$dtor$0",
+    "ea": "0x18000c2b7",
+    "function_file": "functions/18000c2b7_EcOpenSubscriptionEnum_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EcOpenSubscriptionEnum$dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "EcOpenSubscriptionEnum$dtor$1",
+    "ea": "0x18000c2c9",
+    "function_file": "functions/18000c2c9_EcOpenSubscriptionEnum_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EcOpenSubscriptionEnum$dtor$1",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "EcRemoveObjectArrayElement$catch$1",
+    "ea": "0x18000c219",
+    "function_file": "functions/18000c219_EcRemoveObjectArrayElement_catch_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EcRemoveObjectArrayElement$catch$1",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_EventSourceCollection::Remove_::_1_::dtor$0",
+    "ea": "0x18000c570",
+    "function_file": "functions/18000c570_EventSourceCollection_Remove_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_EventSourceCollection::Remove_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_SubscriptionWriteData::GetPropW_::_1_::dtor$0",
+    "ea": "0x18000c6e4",
+    "function_file": "functions/18000c6e4_SubscriptionWriteData_GetPropW_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_SubscriptionWriteData::GetPropW_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  }
+]

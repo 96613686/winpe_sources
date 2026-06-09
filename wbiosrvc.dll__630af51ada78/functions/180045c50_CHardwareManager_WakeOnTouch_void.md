@@ -1,0 +1,39 @@
+# CHardwareManager::WakeOnTouch(void)
+
+- ea: `0x180045c50`
+- end: `0x180045cfb`
+- name: `?WakeOnTouch@CHardwareManager@@SAJXZ`
+- size: `171`
+- prototype: `__int64(void)`
+- caller_count: `2`
+- callee_count: `4`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x180046b70`
+- `0x1800471c4`
+
+## callees
+
+- `0x1800119c4`
+- `0x18002d3b4`
+- `0x180045c50`
+- `0x18005388c`
+
+## import_xrefs
+
+- `api-ms-win-core-sysinfo-l1-1-0!GetTickCount64` at `0x180045caa`
+- `api-ms-win-core-sysinfo-l1-1-0!GetTickCount64` at `0x180045caa`
+- `UMPDC!PdcSignalClientPulse` at `0x180045c9e`
+- `UMPDC!PdcSignalClientPulse` at `0x180045c9e`
+
+## string_xrefs
+
+- `0x180045c6e`: `onecore\ds\security\biometrics\service\server\hardwaremanager.cpp`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,2696 @@
+[
+  {
+    "import": "ADVAPI32!AccessCheck",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c63f",
+        "from_func": "0x18000c590",
+        "from_func_name": "?pWdsImgAccessCheckBySDDL@@YAKPEAXPEAGPEAH@Z",
+        "import": "ADVAPI32!AccessCheck"
+      },
+      {
+        "from_ea": "0x18000c63f",
+        "from_func": "0x18000c590",
+        "from_func_name": "?pWdsImgAccessCheckBySDDL@@YAKPEAXPEAGPEAH@Z",
+        "import": "ADVAPI32!AccessCheck"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c5fe",
+        "from_func": "0x18000c590",
+        "from_func_name": "?pWdsImgAccessCheckBySDDL@@YAKPEAXPEAGPEAH@Z",
+        "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x18000c5fe",
+        "from_func": "0x18000c590",
+        "from_func_name": "?pWdsImgAccessCheckBySDDL@@YAKPEAXPEAGPEAH@Z",
+        "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenThreadToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800038f5",
+        "from_func": "0x180003838",
+        "from_func_name": "?HandlerImageEnumeration@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXPEAVCImgSrvPacket@@@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x1800038f5",
+        "from_func": "0x180003838",
+        "from_func_name": "?HandlerImageEnumeration@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXPEAVCImgSrvPacket@@@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180006a85",
+        "from_func": "0x180006a58",
+        "from_func_name": "?Open@CRegKey@@QEAAKPEAUHKEY__@@PEBGK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000cec1",
+        "from_func": "0x18000ce90",
+        "from_func_name": "RegExists",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000cf7e",
+        "from_func": "0x18000cf34",
+        "from_func_name": "RegGetStringEx",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180006a85",
+        "from_func": "0x180006a58",
+        "from_func_name": "?Open@CRegKey@@QEAAKPEAUHKEY__@@PEBGK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000cec1",
+        "from_func": "0x18000ce90",
+        "from_func_name": "RegExists",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000cf7e",
+        "from_func": "0x18000cf34",
+        "from_func_name": "RegGetStringEx",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180007a28",
+        "from_func": "0x180007880",
+        "from_func_name": "?pAddClientUnattendToReply@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAXPEAG@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x180007a28",
+        "from_func": "0x180007880",
+        "from_func_name": "?pAddClientUnattendToReply@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAXPEAG@Z",
+        "import": "KERNEL32!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001807",
+        "from_func": "0x1800017c4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001807",
+        "from_func": "0x1800017c4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetDynamicTimeZoneInformation",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c47d",
+        "from_func": "0x18000c3f8",
+        "from_func_name": "?pReadParameters@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "KERNEL32!GetDynamicTimeZoneInformation"
+      },
+      {
+        "from_ea": "0x18000c47d",
+        "from_func": "0x18000c3f8",
+        "from_func_name": "?pReadParameters@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "KERNEL32!GetDynamicTimeZoneInformation"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800079ee",
+        "from_func": "0x180007880",
+        "from_func_name": "?pAddClientUnattendToReply@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAXPEAG@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x1800079ee",
+        "from_func": "0x180007880",
+        "from_func_name": "?pAddClientUnattendToReply@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAXPEAG@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExA",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180015cfa",
+        "from_func": "0x180015ba0",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180015cfa",
+        "from_func": "0x180015ba0",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!ReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180007a9c",
+        "from_func": "0x180007880",
+        "from_func_name": "?pAddClientUnattendToReply@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAXPEAG@Z",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x180007a9c",
+        "from_func": "0x180007880",
+        "from_func_name": "?pAddClientUnattendToReply@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAXPEAG@Z",
+        "import": "KERNEL32!ReadFile"
+      }
+    ]
+  },
+  {
+    "import": "WDSSRV!WdsImpersonateClient",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800038c7",
+        "from_func": "0x180003838",
+        "from_func_name": "?HandlerImageEnumeration@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXPEAVCImgSrvPacket@@@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      },
+      {
+        "from_ea": "0x18000b9f4",
+        "from_func": "0x18000b9bc",
+        "from_func_name": "?pGetFullUserNameFromRequest@@YAKPEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      },
+      {
+        "from_ea": "0x18000bc33",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      },
+      {
+        "from_ea": "0x1800038c7",
+        "from_func": "0x180003838",
+        "from_func_name": "?HandlerImageEnumeration@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXPEAVCImgSrvPacket@@@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      },
+      {
+        "from_ea": "0x18000b9f4",
+        "from_func": "0x18000b9bc",
+        "from_func_name": "?pGetFullUserNameFromRequest@@YAKPEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      },
+      {
+        "from_ea": "0x18000bc33",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      }
+    ]
+  },
+  {
+    "import": "WDSSRV!WdsRevertToSelf",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x180003916",
+        "from_func": "0x180003838",
+        "from_func_name": "?HandlerImageEnumeration@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXPEAVCImgSrvPacket@@@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x18000ba3f",
+        "from_func": "0x18000b9bc",
+        "from_func_name": "?pGetFullUserNameFromRequest@@YAKPEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x18000baaa",
+        "from_func": "0x18000b9bc",
+        "from_func_name": "?pGetFullUserNameFromRequest@@YAKPEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x18000bc74",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x18000bc94",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x180003916",
+        "from_func": "0x180003838",
+        "from_func_name": "?HandlerImageEnumeration@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXPEAVCImgSrvPacket@@@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x18000ba3f",
+        "from_func": "0x18000b9bc",
+        "from_func_name": "?pGetFullUserNameFromRequest@@YAKPEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x18000baaa",
+        "from_func": "0x18000b9bc",
+        "from_func_name": "?pGetFullUserNameFromRequest@@YAKPEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x18000bc74",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x18000bc94",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!??0CEventLog@@QEAA@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000109b",
+        "from_func": "0x180001090",
+        "from_func_name": "_dynamic_initializer_for__g_EventLog__",
+        "import": "WdsCommonLib!??0CEventLog@@QEAA@XZ"
+      },
+      {
+        "from_ea": "0x18000109b",
+        "from_func": "0x180001090",
+        "from_func_name": "_dynamic_initializer_for__g_EventLog__",
+        "import": "WdsCommonLib!??0CEventLog@@QEAA@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!??1CEventLog@@QEAA@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180016567",
+        "from_func": "0x180016560",
+        "from_func_name": "_dynamic_atexit_destructor_for__g_EventLog__",
+        "import": "WdsCommonLib!??1CEventLog@@QEAA@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!??1CMRSWLock@@QEAA@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b020",
+        "from_func": "0x18000af80",
+        "from_func_name": "??1CImageCache@@QEAA@XZ",
+        "import": "WdsCommonLib!??1CMRSWLock@@QEAA@XZ"
+      },
+      {
+        "from_ea": "0x180016587",
+        "from_func": "0x180016580",
+        "from_func_name": "_dynamic_atexit_destructor_for__g_Lock__",
+        "import": "WdsCommonLib!??1CMRSWLock@@QEAA@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?AddToStringArrayIfNotPresent@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEBG@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b06f",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?AddToStringArrayIfNotPresent@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEBG@Z"
+      },
+      {
+        "from_ea": "0x18000b0ad",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?AddToStringArrayIfNotPresent@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEBG@Z"
+      },
+      {
+        "from_ea": "0x18000b19b",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?AddToStringArrayIfNotPresent@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEBG@Z"
+      },
+      {
+        "from_ea": "0x18000b274",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?AddToStringArrayIfNotPresent@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEBG@Z"
+      },
+      {
+        "from_ea": "0x18000b06f",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?AddToStringArrayIfNotPresent@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEBG@Z"
+      },
+      {
+        "from_ea": "0x18000b0ad",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?AddToStringArrayIfNotPresent@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEBG@Z"
+      },
+      {
+        "from_ea": "0x18000b19b",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?AddToStringArrayIfNotPresent@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEBG@Z"
+      },
+      {
+        "from_ea": "0x18000b274",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?AddToStringArrayIfNotPresent@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEBG@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?CrackAccountName@@YAKPEBGPEAPEAG1@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000bf6d",
+        "from_func": "0x18000bee0",
+        "from_func_name": "?pGetUserNameFromRequest@@YAKPEAXPEAPEAG1@Z",
+        "import": "WdsCommonLib!?CrackAccountName@@YAKPEBGPEAPEAG1@Z"
+      },
+      {
+        "from_ea": "0x18000bf6d",
+        "from_func": "0x18000bee0",
+        "from_func_name": "?pGetUserNameFromRequest@@YAKPEAXPEAPEAG1@Z",
+        "import": "WdsCommonLib!?CrackAccountName@@YAKPEBGPEAPEAG1@Z"
+      },
+      {
+        "from_ea": "0x18001ff38",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "WdsCommonLib!?CrackAccountName@@YAKPEBGPEAPEAG1@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?DeviceIdToString@@YAKPEBU_WDS_DEVICE_ID@@PEAPEAG@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x18000417c",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?DeviceIdToString@@YAKPEBU_WDS_DEVICE_ID@@PEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800041d8",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?DeviceIdToString@@YAKPEBU_WDS_DEVICE_ID@@PEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000b170",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?DeviceIdToString@@YAKPEBU_WDS_DEVICE_ID@@PEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000b249",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?DeviceIdToString@@YAKPEBU_WDS_DEVICE_ID@@PEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000417c",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?DeviceIdToString@@YAKPEBU_WDS_DEVICE_ID@@PEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800041d8",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?DeviceIdToString@@YAKPEBU_WDS_DEVICE_ID@@PEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000b170",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?DeviceIdToString@@YAKPEBU_WDS_DEVICE_ID@@PEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000b249",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?DeviceIdToString@@YAKPEBU_WDS_DEVICE_ID@@PEAPEAG@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 62,
+    "xrefs": [
+      {
+        "from_ea": "0x1800040ff",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008240",
+        "from_func": "0x1800081d0",
+        "from_func_name": "?DuplicateImageInfo@CImageCache@@SAKPEAUImage@1@PEAPEAU21@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008275",
+        "from_func": "0x1800081d0",
+        "from_func_name": "?DuplicateImageInfo@CImageCache@@SAKPEAUImage@1@PEAPEAU21@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800082a7",
+        "from_func": "0x1800081d0",
+        "from_func_name": "?DuplicateImageInfo@CImageCache@@SAKPEAUImage@1@PEAPEAU21@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800085a3",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800086ae",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008709",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008e24",
+        "from_func": "0x180008de8",
+        "from_func_name": "?Initialize@?$CDirectoryMonitor@VCImageCache@@$1?OnDirectoryChange@1@QEAAKXZ@@QEAAKPEAVCImageCache@@KPEBGHK@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008fe9",
+        "from_func": "0x180008f9c",
+        "from_func_name": "?Initialize@CImageCache@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180009eee",
+        "from_func": "0x1800096e8",
+        "from_func_name": "?RegisterImageMetadata@CImageCache@@AEAAKPEAXPEAUImage@1@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000ddde",
+        "from_func": "0x18000dda0",
+        "from_func_name": "?Copy@CWdsMetadataValue@@QEAAKPEBV1@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000e4e0",
+        "from_func": "0x18000e330",
+        "from_func_name": "?Initialize@CWdsMetadataValue@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000e7b3",
+        "from_func": "0x18000e724",
+        "from_func_name": "?InsertInGroup@CWdsMetadata@@AEBAKPEAV?$CDynArray@PEAUCEntryGroup@CWdsMetadata@@VCDeallocatePointer@@@@PEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000e95c",
+        "from_func": "0x18000e86c",
+        "from_func_name": "ParseBinaryData",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000ed06",
+        "from_func": "0x18000eb10",
+        "from_func_name": "ParseMetadataEntry",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000efda",
+        "from_func": "0x18000ed84",
+        "from_func_name": "ParseMetadataFilter",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180010354",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800103e6",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180010465",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800104cf",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800104ee",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18001050d",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180010631",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180010e8d",
+        "from_func": "0x180010d70",
+        "from_func_name": "?GetNamespaceName@CImgSrvPacket@@AEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800113c4",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800113fb",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180011432",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180011451",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180011ff3",
+        "from_func": "0x180011f2c",
+        "from_func_name": "?ConstructName@CControlPacket@@QEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800120f2",
+        "from_func": "0x1800120c8",
+        "from_func_name": "?GetString@CControlPacket@@QEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180014b91",
+        "from_func": "0x180014b30",
+        "from_func_name": "?SetManagementController@CWdsInProcDeviceControllerClient@@UEAAKPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800040ff",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008240",
+        "from_func": "0x1800081d0",
+        "from_func_name": "?DuplicateImageInfo@CImageCache@@SAKPEAUImage@1@PEAPEAU21@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008275",
+        "from_func": "0x1800081d0",
+        "from_func_name": "?DuplicateImageInfo@CImageCache@@SAKPEAUImage@1@PEAPEAU21@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800082a7",
+        "from_func": "0x1800081d0",
+        "from_func_name": "?DuplicateImageInfo@CImageCache@@SAKPEAUImage@1@PEAPEAU21@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800085a3",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800086ae",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008709",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008e24",
+        "from_func": "0x180008de8",
+        "from_func_name": "?Initialize@?$CDirectoryMonitor@VCImageCache@@$1?OnDirectoryChange@1@QEAAKXZ@@QEAAKPEAVCImageCache@@KPEBGHK@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180008fe9",
+        "from_func": "0x180008f9c",
+        "from_func_name": "?Initialize@CImageCache@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180009eee",
+        "from_func": "0x1800096e8",
+        "from_func_name": "?RegisterImageMetadata@CImageCache@@AEAAKPEAXPEAUImage@1@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000ddde",
+        "from_func": "0x18000dda0",
+        "from_func_name": "?Copy@CWdsMetadataValue@@QEAAKPEBV1@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000e4e0",
+        "from_func": "0x18000e330",
+        "from_func_name": "?Initialize@CWdsMetadataValue@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000e7b3",
+        "from_func": "0x18000e724",
+        "from_func_name": "?InsertInGroup@CWdsMetadata@@AEBAKPEAV?$CDynArray@PEAUCEntryGroup@CWdsMetadata@@VCDeallocatePointer@@@@PEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000e95c",
+        "from_func": "0x18000e86c",
+        "from_func_name": "ParseBinaryData",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000ed06",
+        "from_func": "0x18000eb10",
+        "from_func_name": "ParseMetadataEntry",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18000efda",
+        "from_func": "0x18000ed84",
+        "from_func_name": "ParseMetadataFilter",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180010354",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800103e6",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180010465",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800104cf",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800104ee",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x18001050d",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180010631",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180010e8d",
+        "from_func": "0x180010d70",
+        "from_func_name": "?GetNamespaceName@CImgSrvPacket@@AEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800113c4",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800113fb",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180011432",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180011451",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180011ff3",
+        "from_func": "0x180011f2c",
+        "from_func_name": "?ConstructName@CControlPacket@@QEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x1800120f2",
+        "from_func": "0x1800120c8",
+        "from_func_name": "?GetString@CControlPacket@@QEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      },
+      {
+        "from_ea": "0x180014b91",
+        "from_func": "0x180014b30",
+        "from_func_name": "?SetManagementController@CWdsInProcDeviceControllerClient@@UEAAKPEBG@Z",
+        "import": "WdsCommonLib!?DuplicateStringW@@YAKPEBGPEAPEAG@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 7,
+    "xrefs": [
+      {
+        "from_ea": "0x180010dbd",
+        "from_func": "0x180010d70",
+        "from_func_name": "?GetNamespaceName@CImgSrvPacket@@AEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ"
+      },
+      {
+        "from_ea": "0x180011274",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ"
+      },
+      {
+        "from_ea": "0x180011f8e",
+        "from_func": "0x180011f2c",
+        "from_func_name": "?ConstructName@CControlPacket@@QEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ"
+      },
+      {
+        "from_ea": "0x180010dbd",
+        "from_func": "0x180010d70",
+        "from_func_name": "?GetNamespaceName@CImgSrvPacket@@AEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ"
+      },
+      {
+        "from_ea": "0x180011274",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ"
+      },
+      {
+        "from_ea": "0x180011f8e",
+        "from_func": "0x180011f2c",
+        "from_func_name": "?ConstructName@CControlPacket@@QEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ"
+      },
+      {
+        "from_ea": "0x180011fdf",
+        "from_func": "0x180011f2c",
+        "from_func_name": "?ConstructName@CControlPacket@@QEAAKPEBG0KPEAPEAG@Z",
+        "import": "WdsCommonLib!?FormatString@@YAKPEAPEAG_KPEBGZZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?FreeSearch@CLdap@@QEAAKPEAX@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800114a8",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?FreeSearch@CLdap@@QEAAKPEAX@Z"
+      },
+      {
+        "from_ea": "0x1800114a8",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?FreeSearch@CLdap@@QEAAKPEAX@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?GetAttributeValues@CLdap@@QEAAPEAPEAGPEAXPEBG@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180011387",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?GetAttributeValues@CLdap@@QEAAPEAPEAGPEAXPEBG@Z"
+      },
+      {
+        "from_ea": "0x1800113a4",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?GetAttributeValues@CLdap@@QEAAPEAPEAGPEAXPEBG@Z"
+      },
+      {
+        "from_ea": "0x180011387",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?GetAttributeValues@CLdap@@QEAAPEAPEAGPEAXPEBG@Z"
+      },
+      {
+        "from_ea": "0x1800113a4",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?GetAttributeValues@CLdap@@QEAAPEAPEAGPEAXPEBG@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?GetConnectTimeout@CLdap@@SAPEBUl_timeval@@XZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001167b",
+        "from_func": "0x180011574",
+        "from_func_name": "?MgLibpOpenLdapConnection@@YAKPEBGPEAVCLdap@@PEAPEAG@Z",
+        "import": "WdsCommonLib!?GetConnectTimeout@CLdap@@SAPEBUl_timeval@@XZ"
+      },
+      {
+        "from_ea": "0x18001167b",
+        "from_func": "0x180011574",
+        "from_func_name": "?MgLibpOpenLdapConnection@@YAKPEBGPEAVCLdap@@PEAPEAG@Z",
+        "import": "WdsCommonLib!?GetConnectTimeout@CLdap@@SAPEBUl_timeval@@XZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?GetCurrentUser@@YAKPEAPEAGPEBG@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000ba1d",
+        "from_func": "0x18000b9bc",
+        "from_func_name": "?pGetFullUserNameFromRequest@@YAKPEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?GetCurrentUser@@YAKPEAPEAGPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000bc5f",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?GetCurrentUser@@YAKPEAPEAGPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000ba1d",
+        "from_func": "0x18000b9bc",
+        "from_func_name": "?pGetFullUserNameFromRequest@@YAKPEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?GetCurrentUser@@YAKPEAPEAGPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000bc5f",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?GetCurrentUser@@YAKPEAPEAGPEBG@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?GetDSInfo@@YAKHPEBGPEAPEAG1@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800115e8",
+        "from_func": "0x180011574",
+        "from_func_name": "?MgLibpOpenLdapConnection@@YAKPEBGPEAVCLdap@@PEAPEAG@Z",
+        "import": "WdsCommonLib!?GetDSInfo@@YAKHPEBGPEAPEAG1@Z"
+      },
+      {
+        "from_ea": "0x1800115e8",
+        "from_func": "0x180011574",
+        "from_func_name": "?MgLibpOpenLdapConnection@@YAKPEBGPEAVCLdap@@PEAPEAG@Z",
+        "import": "WdsCommonLib!?GetDSInfo@@YAKHPEBGPEAPEAG1@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?GetDefaultContext@CLdap@@SAKPEBGPEAPEAG0K@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180011658",
+        "from_func": "0x180011574",
+        "from_func_name": "?MgLibpOpenLdapConnection@@YAKPEBGPEAVCLdap@@PEAPEAG@Z",
+        "import": "WdsCommonLib!?GetDefaultContext@CLdap@@SAKPEBGPEAPEAG0K@Z"
+      },
+      {
+        "from_ea": "0x180011658",
+        "from_func": "0x180011574",
+        "from_func_name": "?MgLibpOpenLdapConnection@@YAKPEBGPEAVCLdap@@PEAPEAG@Z",
+        "import": "WdsCommonLib!?GetDefaultContext@CLdap@@SAKPEBGPEAPEAG0K@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?GetDeviceIdDuidAlternateForm@@YAKPEBU_WDS_DEVICE_ID@@PEAH1PEAU1@@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b13e",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?GetDeviceIdDuidAlternateForm@@YAKPEBU_WDS_DEVICE_ID@@PEAH1PEAU1@@Z"
+      },
+      {
+        "from_ea": "0x18000b217",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?GetDeviceIdDuidAlternateForm@@YAKPEBU_WDS_DEVICE_ID@@PEAH1PEAU1@@Z"
+      },
+      {
+        "from_ea": "0x18000b13e",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?GetDeviceIdDuidAlternateForm@@YAKPEBU_WDS_DEVICE_ID@@PEAH1PEAU1@@Z"
+      },
+      {
+        "from_ea": "0x18000b217",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?GetDeviceIdDuidAlternateForm@@YAKPEBU_WDS_DEVICE_ID@@PEAH1PEAU1@@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?GetFirstEntry@CLdap@@QEAAPEAXPEAX@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180011337",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?GetFirstEntry@CLdap@@QEAAPEAXPEAX@Z"
+      },
+      {
+        "from_ea": "0x180011337",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?GetFirstEntry@CLdap@@QEAAPEAXPEAX@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?GetValueDwordWithDefault@CRegKey@@QEAAKPEBGKPEAK@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x180007b73",
+        "from_func": "0x180007b18",
+        "from_func_name": "?pAddImageEnumFlags@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAVCImgSrvPacket@@@Z",
+        "import": "WdsCommonLib!?GetValueDwordWithDefault@CRegKey@@QEAAKPEBGKPEAK@Z"
+      },
+      {
+        "from_ea": "0x180007bb2",
+        "from_func": "0x180007b18",
+        "from_func_name": "?pAddImageEnumFlags@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAVCImgSrvPacket@@@Z",
+        "import": "WdsCommonLib!?GetValueDwordWithDefault@CRegKey@@QEAAKPEBGKPEAK@Z"
+      },
+      {
+        "from_ea": "0x180009271",
+        "from_func": "0x180008f9c",
+        "from_func_name": "?Initialize@CImageCache@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?GetValueDwordWithDefault@CRegKey@@QEAAKPEBGKPEAK@Z"
+      },
+      {
+        "from_ea": "0x18000ca10",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?GetValueDwordWithDefault@CRegKey@@QEAAKPEBGKPEAK@Z"
+      },
+      {
+        "from_ea": "0x180007b73",
+        "from_func": "0x180007b18",
+        "from_func_name": "?pAddImageEnumFlags@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAVCImgSrvPacket@@@Z",
+        "import": "WdsCommonLib!?GetValueDwordWithDefault@CRegKey@@QEAAKPEBGKPEAK@Z"
+      },
+      {
+        "from_ea": "0x180007bb2",
+        "from_func": "0x180007b18",
+        "from_func_name": "?pAddImageEnumFlags@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAVCImgSrvPacket@@@Z",
+        "import": "WdsCommonLib!?GetValueDwordWithDefault@CRegKey@@QEAAKPEBGKPEAK@Z"
+      },
+      {
+        "from_ea": "0x180009271",
+        "from_func": "0x180008f9c",
+        "from_func_name": "?Initialize@CImageCache@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?GetValueDwordWithDefault@CRegKey@@QEAAKPEBGKPEAK@Z"
+      },
+      {
+        "from_ea": "0x18000ca10",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?GetValueDwordWithDefault@CRegKey@@QEAAKPEBGKPEAK@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Initialize@CEventLog@@QEAAKPEBGG@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180007209",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Initialize@CEventLog@@QEAAKPEBGG@Z"
+      },
+      {
+        "from_ea": "0x180007209",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Initialize@CEventLog@@QEAAKPEBGG@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Initialize@CMRSWLock@@QEAAKK@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800071ba",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Initialize@CMRSWLock@@QEAAKK@Z"
+      },
+      {
+        "from_ea": "0x1800074f3",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Initialize@CMRSWLock@@QEAAKK@Z"
+      },
+      {
+        "from_ea": "0x1800071ba",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Initialize@CMRSWLock@@QEAAKK@Z"
+      },
+      {
+        "from_ea": "0x1800074f3",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Initialize@CMRSWLock@@QEAAKK@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 28,
+    "xrefs": [
+      {
+        "from_ea": "0x180002b24",
+        "from_func": "0x180002a0c",
+        "from_func_name": "?HandlerClientUnattend@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180002fee",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180003a6c",
+        "from_func": "0x180003838",
+        "from_func_name": "?HandlerImageEnumeration@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXPEAVCImgSrvPacket@@@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180003d25",
+        "from_func": "0x180003af4",
+        "from_func_name": "?HandlerLogInitialize@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180005f35",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180006652",
+        "from_func": "0x180006548",
+        "from_func_name": "?HandlerUnattendVariables@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180007658",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180007679",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x1800077f7",
+        "from_func": "0x180007700",
+        "from_func_name": "?WdsProviderShutdown@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180007818",
+        "from_func": "0x180007700",
+        "from_func_name": "?WdsProviderShutdown@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180009633",
+        "from_func": "0x180009490",
+        "from_func_name": "?OnChange@CImageCache@@QEAAKXZ",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180009655",
+        "from_func": "0x180009490",
+        "from_func_name": "?OnChange@CImageCache@@QEAAKXZ",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x18000cb30",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x18000cb5c",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180002b24",
+        "from_func": "0x180002a0c",
+        "from_func_name": "?HandlerClientUnattend@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180002fee",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180003a6c",
+        "from_func": "0x180003838",
+        "from_func_name": "?HandlerImageEnumeration@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXPEAVCImgSrvPacket@@@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180003d25",
+        "from_func": "0x180003af4",
+        "from_func_name": "?HandlerLogInitialize@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180005f35",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180006652",
+        "from_func": "0x180006548",
+        "from_func_name": "?HandlerUnattendVariables@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180007658",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180007679",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x1800077f7",
+        "from_func": "0x180007700",
+        "from_func_name": "?WdsProviderShutdown@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180007818",
+        "from_func": "0x180007700",
+        "from_func_name": "?WdsProviderShutdown@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180009633",
+        "from_func": "0x180009490",
+        "from_func_name": "?OnChange@CImageCache@@QEAAKXZ",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x180009655",
+        "from_func": "0x180009490",
+        "from_func_name": "?OnChange@CImageCache@@QEAAKXZ",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x18000cb30",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      },
+      {
+        "from_ea": "0x18000cb5c",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?Log@CEventLog@@QEAAKKHZZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Open@CLdap@@QEAAKPEBGKPEBUl_timeval@@00K@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800116aa",
+        "from_func": "0x180011574",
+        "from_func_name": "?MgLibpOpenLdapConnection@@YAKPEBGPEAVCLdap@@PEAPEAG@Z",
+        "import": "WdsCommonLib!?Open@CLdap@@QEAAKPEBGKPEBUl_timeval@@00K@Z"
+      },
+      {
+        "from_ea": "0x1800116aa",
+        "from_func": "0x180011574",
+        "from_func_name": "?MgLibpOpenLdapConnection@@YAKPEBGPEAVCLdap@@PEAPEAG@Z",
+        "import": "WdsCommonLib!?Open@CLdap@@QEAAKPEBGKPEBUl_timeval@@00K@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAPEAEPEA_K@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001357d",
+        "from_func": "0x180013508",
+        "from_func_name": "?InitializeId@CWdsDeviceQuery@@QEAAKQEAPEBG_K@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAPEAEPEA_K@Z"
+      },
+      {
+        "from_ea": "0x18001357d",
+        "from_func": "0x180013508",
+        "from_func_name": "?InitializeId@CWdsDeviceQuery@@QEAAKQEAPEBG_K@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAPEAEPEA_K@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAU_WDS_DEVICE_ID@@@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x18000414e",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAU_WDS_DEVICE_ID@@@Z"
+      },
+      {
+        "from_ea": "0x1800041aa",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAU_WDS_DEVICE_ID@@@Z"
+      },
+      {
+        "from_ea": "0x18000b108",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAU_WDS_DEVICE_ID@@@Z"
+      },
+      {
+        "from_ea": "0x18000b1e1",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAU_WDS_DEVICE_ID@@@Z"
+      },
+      {
+        "from_ea": "0x18000414e",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAU_WDS_DEVICE_ID@@@Z"
+      },
+      {
+        "from_ea": "0x1800041aa",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAU_WDS_DEVICE_ID@@@Z"
+      },
+      {
+        "from_ea": "0x18000b108",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAU_WDS_DEVICE_ID@@@Z"
+      },
+      {
+        "from_ea": "0x18000b1e1",
+        "from_func": "0x18000b034",
+        "from_func_name": "?BuildDeviceIdQuery@@YAJPEAU_IMG_SERVER_CONTEXT@@PEBG1PEAV?$CDynArray@PEAGVCDeallocateString@@@@@Z",
+        "import": "WdsCommonLib!?ParseDeviceId@@YAKPEBGPEAU_WDS_DEVICE_ID@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?ParseGuid@@YAKPEBGPEAU_GUID@@@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180004254",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?ParseGuid@@YAKPEBGPEAU_GUID@@@Z"
+      },
+      {
+        "from_ea": "0x18000e47a",
+        "from_func": "0x18000e330",
+        "from_func_name": "?Initialize@CWdsMetadataValue@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?ParseGuid@@YAKPEBGPEAU_GUID@@@Z"
+      },
+      {
+        "from_ea": "0x180004254",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?ParseGuid@@YAKPEBGPEAU_GUID@@@Z"
+      },
+      {
+        "from_ea": "0x18000e47a",
+        "from_func": "0x18000e330",
+        "from_func_name": "?Initialize@CWdsMetadataValue@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?ParseGuid@@YAKPEBGPEAU_GUID@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800080e3",
+        "from_func": "0x1800080d0",
+        "from_func_name": "??0CAutoReaderLock@@QEAA@PEAVCMRSWLock@@H@Z",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000bcc2",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000c986",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800080e3",
+        "from_func": "0x1800080d0",
+        "from_func_name": "??0CAutoReaderLock@@QEAA@PEAVCMRSWLock@@H@Z",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000bcc2",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000c986",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?ReaderLock@CMRSWLock@@QEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x180008c45",
+        "from_func": "0x18000891c",
+        "from_func_name": "?GetClientImages@CImageCache@@QEAAKPEAXKPEBVCWdsMetadata@@PEAV?$CDynArray@PEAUImage@CImageCache@@VCDeallocatePointer@@@@@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x180009402",
+        "from_func": "0x1800092ec",
+        "from_func_name": "?InsertImageByPriorityOrder@CImageCache@@AEAAKPEAUImage@1@@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000b93f",
+        "from_func": "0x18000b858",
+        "from_func_name": "?pGetDeviceById@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAG1PEAPEAUIWdsDevice@@@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000bd08",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000bd21",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000c99c",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x180008c45",
+        "from_func": "0x18000891c",
+        "from_func_name": "?GetClientImages@CImageCache@@QEAAKPEAXKPEBVCWdsMetadata@@PEAV?$CDynArray@PEAUImage@CImageCache@@VCDeallocatePointer@@@@@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x180009402",
+        "from_func": "0x1800092ec",
+        "from_func_name": "?InsertImageByPriorityOrder@CImageCache@@AEAAKPEAUImage@1@@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000b93f",
+        "from_func": "0x18000b858",
+        "from_func_name": "?pGetDeviceById@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAG1PEAPEAUIWdsDevice@@@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000bd08",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000bd21",
+        "from_func": "0x18000baf8",
+        "from_func_name": "?pGetNewMachineOU@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAXPEAPEAG@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000c99c",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?ReaderRelease@CMRSWLock@@QEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Search2@CLdap@@QEAAPEAXPEBGK0PEAPEBGH@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800112ee",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?Search2@CLdap@@QEAAPEAXPEBGK0PEAPEBGH@Z"
+      },
+      {
+        "from_ea": "0x1800112ee",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?Search2@CLdap@@QEAAPEAXPEBGK0PEAPEBGH@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Shutdown@CEventLog@@QEAAKXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000782b",
+        "from_func": "0x180007700",
+        "from_func_name": "?WdsProviderShutdown@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Shutdown@CEventLog@@QEAAKXZ"
+      },
+      {
+        "from_ea": "0x18000782b",
+        "from_func": "0x180007700",
+        "from_func_name": "?WdsProviderShutdown@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?Shutdown@CEventLog@@QEAAKXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?Shutdown@CLdap@@QEAAKXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001153e",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?Shutdown@CLdap@@QEAAKXZ"
+      },
+      {
+        "from_ea": "0x18001153e",
+        "from_func": "0x1800111a0",
+        "from_func_name": "?WdsMgGetUserInfo@@YAKPEBG0PEAPEAG1@Z",
+        "import": "WdsCommonLib!?Shutdown@CLdap@@QEAAKXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?StrRemoveChar@@YAXPEAGG@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e983",
+        "from_func": "0x18000e86c",
+        "from_func_name": "ParseBinaryData",
+        "import": "WdsCommonLib!?StrRemoveChar@@YAXPEAGG@Z"
+      },
+      {
+        "from_ea": "0x18000e997",
+        "from_func": "0x18000e86c",
+        "from_func_name": "ParseBinaryData",
+        "import": "WdsCommonLib!?StrRemoveChar@@YAXPEAGG@Z"
+      },
+      {
+        "from_ea": "0x18000e983",
+        "from_func": "0x18000e86c",
+        "from_func_name": "ParseBinaryData",
+        "import": "WdsCommonLib!?StrRemoveChar@@YAXPEAGG@Z"
+      },
+      {
+        "from_ea": "0x18000e997",
+        "from_func": "0x18000e86c",
+        "from_func_name": "ParseBinaryData",
+        "import": "WdsCommonLib!?StrRemoveChar@@YAXPEAGG@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?StringToHex@@YAKPEBGPEAPEAEPEA_K@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e9b0",
+        "from_func": "0x18000e86c",
+        "from_func_name": "ParseBinaryData",
+        "import": "WdsCommonLib!?StringToHex@@YAKPEBGPEAPEAEPEA_K@Z"
+      },
+      {
+        "from_ea": "0x18000e9b0",
+        "from_func": "0x18000e86c",
+        "from_func_name": "ParseBinaryData",
+        "import": "WdsCommonLib!?StringToHex@@YAKPEBGPEAPEAEPEA_K@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?StringToIpAddress@CNetworkAddress@@SAKKPEBGPEAUtagWDS_IP_ADDRESS6@@@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180015578",
+        "from_func": "0x180015540",
+        "from_func_name": "?SetClientIp@CWdsSumiData@@QEAAJPEBG@Z",
+        "import": "WdsCommonLib!?StringToIpAddress@CNetworkAddress@@SAKKPEBGPEAUtagWDS_IP_ADDRESS6@@@Z"
+      },
+      {
+        "from_ea": "0x180015578",
+        "from_func": "0x180015540",
+        "from_func_name": "?SetClientIp@CWdsSumiData@@QEAAJPEBG@Z",
+        "import": "WdsCommonLib!?StringToIpAddress@CNetworkAddress@@SAKKPEBGPEAUtagWDS_IP_ADDRESS6@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 72,
+    "xrefs": [
+      {
+        "from_ea": "0x180002d21",
+        "from_func": "0x180002a0c",
+        "from_func_name": "?HandlerClientUnattend@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x1800031de",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003285",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003519",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000362d",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003764",
+        "from_func": "0x1800036b0",
+        "from_func_name": "?HandlerError@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXK@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003c3d",
+        "from_func": "0x180003af4",
+        "from_func_name": "?HandlerLogInitialize@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003f14",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x1800061c9",
+        "from_func": "0x180006020",
+        "from_func_name": "?HandlerResetBootProgram@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@1PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180006a07",
+        "from_func": "0x180006548",
+        "from_func_name": "?HandlerUnattendVariables@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000735b",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180007902",
+        "from_func": "0x180007880",
+        "from_func_name": "?pAddClientUnattendToReply@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAXPEAG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180008313",
+        "from_func": "0x1800081d0",
+        "from_func_name": "?DuplicateImageInfo@CImageCache@@SAKPEAUImage@1@PEAPEAU21@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180008457",
+        "from_func": "0x180008364",
+        "from_func_name": "?EnumImageGroups@CImageCache@@AEAAKPEAX@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x1800088ad",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x1800088f2",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180008cff",
+        "from_func": "0x180008c70",
+        "from_func_name": "?Grow@?$CDynArray@PEAUImage@CImageCache@@VCDeallocatePointer@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180008dbb",
+        "from_func": "0x180008d2c",
+        "from_func_name": "?Grow@?$CDynArray@U_GUID@@VCDeallocateNone@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180009515",
+        "from_func": "0x180009490",
+        "from_func_name": "?OnChange@CImageCache@@QEAAKXZ",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000988f",
+        "from_func": "0x1800096e8",
+        "from_func_name": "?RegisterImageMetadata@CImageCache@@AEAAKPEAXPEAUImage@1@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000a3a9",
+        "from_func": "0x1800096e8",
+        "from_func_name": "?RegisterImageMetadata@CImageCache@@AEAAKPEAXPEAUImage@1@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000be80",
+        "from_func": "0x18000bdc4",
+        "from_func_name": "?pGetRemInstPath@@YAKPEAGPEAPEAG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000c2aa",
+        "from_func": "0x18000c0ec",
+        "from_func_name": "?pInitializeManagement@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000c4f4",
+        "from_func": "0x18000c3f8",
+        "from_func_name": "?pReadParameters@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000ca46",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000d461",
+        "from_func": "0x18000d39c",
+        "from_func_name": "?AppendBinaryEntry@CWdsMetadata@@QEAAKPEBGPEAE_K@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000d6ab",
+        "from_func": "0x18000d638",
+        "from_func_name": "?AppendExclusionFilter@CWdsMetadata@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000d859",
+        "from_func": "0x18000d754",
+        "from_func_name": "?AppendGuidEntry@CWdsMetadata@@QEAAKPEBGU_GUID@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000d92c",
+        "from_func": "0x18000d8c4",
+        "from_func_name": "?AppendIntegerEntry@CWdsMetadata@@QEAAKPEBGT_LARGE_INTEGER@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000da1f",
+        "from_func": "0x18000d980",
+        "from_func_name": "?AppendStringEntry@CWdsMetadata@@QEAAKPEBG0@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000dbe1",
+        "from_func": "0x18000db14",
+        "from_func_name": "?AppendTimeEntry@CWdsMetadata@@QEAAKPEBGU_SYSTEMTIME@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000e0e3",
+        "from_func": "0x18000e054",
+        "from_func_name": "?Grow@?$CDynArray@PEAGVCDeallocateString@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000faf7",
+        "from_func": "0x18000f9f8",
+        "from_func_name": "?ToString@CWdsMetadataEntry@@QEBAKPEAPEAG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18001039f",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180010b4f",
+        "from_func": "0x180010860",
+        "from_func_name": "?AddImageAt_v1@CImgSrvPacket@@AEAAKKPEAU_IMGSRV_IMAGE@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180011ede",
+        "from_func": "0x180011e48",
+        "from_func_name": "?AddString@CControlPacket@@QEAAKPEBG0K0@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180002d21",
+        "from_func": "0x180002a0c",
+        "from_func_name": "?HandlerClientUnattend@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x1800031de",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003285",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003519",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000362d",
+        "from_func": "0x180002e64",
+        "from_func_name": "?HandlerDomainJoinInformation@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003764",
+        "from_func": "0x1800036b0",
+        "from_func_name": "?HandlerError@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAXK@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003c3d",
+        "from_func": "0x180003af4",
+        "from_func_name": "?HandlerLogInitialize@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180003f14",
+        "from_func": "0x180003dc4",
+        "from_func_name": "?HandlerLogMessage@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x1800061c9",
+        "from_func": "0x180006020",
+        "from_func_name": "?HandlerResetBootProgram@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@1PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180006a07",
+        "from_func": "0x180006548",
+        "from_func_name": "?HandlerUnattendVariables@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAUtagWDS_ENDPOINT@@PEAX2@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000735b",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180007902",
+        "from_func": "0x180007880",
+        "from_func_name": "?pAddClientUnattendToReply@@YAKPEAU_IMG_SERVER_CONTEXT@@PEAXPEAG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180008313",
+        "from_func": "0x1800081d0",
+        "from_func_name": "?DuplicateImageInfo@CImageCache@@SAKPEAUImage@1@PEAPEAU21@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180008457",
+        "from_func": "0x180008364",
+        "from_func_name": "?EnumImageGroups@CImageCache@@AEAAKPEAX@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x1800088ad",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x1800088f2",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180008cff",
+        "from_func": "0x180008c70",
+        "from_func_name": "?Grow@?$CDynArray@PEAUImage@CImageCache@@VCDeallocatePointer@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180008dbb",
+        "from_func": "0x180008d2c",
+        "from_func_name": "?Grow@?$CDynArray@U_GUID@@VCDeallocateNone@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180009515",
+        "from_func": "0x180009490",
+        "from_func_name": "?OnChange@CImageCache@@QEAAKXZ",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000988f",
+        "from_func": "0x1800096e8",
+        "from_func_name": "?RegisterImageMetadata@CImageCache@@AEAAKPEAXPEAUImage@1@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000a3a9",
+        "from_func": "0x1800096e8",
+        "from_func_name": "?RegisterImageMetadata@CImageCache@@AEAAKPEAXPEAUImage@1@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000be80",
+        "from_func": "0x18000bdc4",
+        "from_func_name": "?pGetRemInstPath@@YAKPEAGPEAPEAG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000c2aa",
+        "from_func": "0x18000c0ec",
+        "from_func_name": "?pInitializeManagement@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000c4f4",
+        "from_func": "0x18000c3f8",
+        "from_func_name": "?pReadParameters@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000ca46",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000d461",
+        "from_func": "0x18000d39c",
+        "from_func_name": "?AppendBinaryEntry@CWdsMetadata@@QEAAKPEBGPEAE_K@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000d6ab",
+        "from_func": "0x18000d638",
+        "from_func_name": "?AppendExclusionFilter@CWdsMetadata@@QEAAKPEBG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000d859",
+        "from_func": "0x18000d754",
+        "from_func_name": "?AppendGuidEntry@CWdsMetadata@@QEAAKPEBGU_GUID@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000d92c",
+        "from_func": "0x18000d8c4",
+        "from_func_name": "?AppendIntegerEntry@CWdsMetadata@@QEAAKPEBGT_LARGE_INTEGER@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000da1f",
+        "from_func": "0x18000d980",
+        "from_func_name": "?AppendStringEntry@CWdsMetadata@@QEAAKPEBG0@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000dbe1",
+        "from_func": "0x18000db14",
+        "from_func_name": "?AppendTimeEntry@CWdsMetadata@@QEAAKPEBGU_SYSTEMTIME@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000e0e3",
+        "from_func": "0x18000e054",
+        "from_func_name": "?Grow@?$CDynArray@PEAGVCDeallocateString@@@@AEAAKXZ",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18000faf7",
+        "from_func": "0x18000f9f8",
+        "from_func_name": "?ToString@CWdsMetadataEntry@@QEBAKPEAPEAG@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x18001039f",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180010b4f",
+        "from_func": "0x180010860",
+        "from_func_name": "?AddImageAt_v1@CImgSrvPacket@@AEAAKKPEAU_IMGSRV_IMAGE@@@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      },
+      {
+        "from_ea": "0x180011ede",
+        "from_func": "0x180011e48",
+        "from_func_name": "?AddString@CControlPacket@@QEAAKPEBG0K0@Z",
+        "import": "WdsCommonLib!?WIN32_FROM_HRESULT@@YAKJ@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WaitForDirectoryServicesNetworking@@YAKK@Z",
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c79b",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?WaitForDirectoryServicesNetworking@@YAKK@Z"
+      },
+      {
+        "from_ea": "0x18000c79b",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "WdsCommonLib!?WaitForDirectoryServicesNetworking@@YAKK@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800027ae",
+        "from_func": "0x18000277c",
+        "from_func_name": "??1?$CAutoTypeLock@VCSpinLock@@@@QEAA@XZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x180006df3",
+        "from_func": "0x180006da4",
+        "from_func_name": "?Unlock@?$CAutoTypeLock@VCSpinLock@@@@QEAAXXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x180008136",
+        "from_func": "0x180008104",
+        "from_func_name": "??1?$CAutoTypeLock@VCCriticalSection@@@@QEAA@XZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x1800027ae",
+        "from_func": "0x18000277c",
+        "from_func_name": "??1?$CAutoTypeLock@VCSpinLock@@@@QEAA@XZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x180006df3",
+        "from_func": "0x180006da4",
+        "from_func_name": "?Unlock@?$CAutoTypeLock@VCSpinLock@@@@QEAAXXZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      },
+      {
+        "from_ea": "0x180008136",
+        "from_func": "0x180008104",
+        "from_func_name": "??1?$CAutoTypeLock@VCCriticalSection@@@@QEAA@XZ",
+        "import": "WdsCommonLib!?WdsAssert@@YAXPEBDK0HH@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WdsConvertWdsStringArrayToSafeArray@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEAPEAUtagSAFEARRAY@@@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b8b4",
+        "from_func": "0x18000b858",
+        "from_func_name": "?pGetDeviceById@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAG1PEAPEAUIWdsDevice@@@Z",
+        "import": "WdsCommonLib!?WdsConvertWdsStringArrayToSafeArray@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEAPEAUtagSAFEARRAY@@@Z"
+      },
+      {
+        "from_ea": "0x18000b8b4",
+        "from_func": "0x18000b858",
+        "from_func_name": "?pGetDeviceById@@YAJPEAU_IMG_SERVER_CONTEXT@@PEAG1PEAPEAUIWdsDevice@@@Z",
+        "import": "WdsCommonLib!?WdsConvertWdsStringArrayToSafeArray@@YAKPEAV?$CDynArray@PEAGVCDeallocateString@@@@PEAPEAUtagSAFEARRAY@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WriterLock@CMRSWLock@@QEAAXXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000270b",
+        "from_func": "0x1800026f8",
+        "from_func_name": "??0CAutoWriterLock@@QEAA@PEAVCMRSWLock@@H@Z",
+        "import": "WdsCommonLib!?WriterLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800071e4",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?WriterLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x18000270b",
+        "from_func": "0x1800026f8",
+        "from_func_name": "??0CAutoWriterLock@@QEAA@PEAVCMRSWLock@@H@Z",
+        "import": "WdsCommonLib!?WriterLock@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800071e4",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?WriterLock@CMRSWLock@@QEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!?WriterRelease@CMRSWLock@@QEAAXXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180006e36",
+        "from_func": "0x180006e20",
+        "from_func_name": "?Unlock@CAutoWriterLock@@QEAAXXZ",
+        "import": "WdsCommonLib!?WriterRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x180007699",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?WriterRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x180006e36",
+        "from_func": "0x180006e20",
+        "from_func_name": "?Unlock@CAutoWriterLock@@QEAAXXZ",
+        "import": "WdsCommonLib!?WriterRelease@CMRSWLock@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x180007699",
+        "from_func": "0x180007120",
+        "from_func_name": "?WdsProviderInitialize@@YAKPEAX@Z",
+        "import": "WdsCommonLib!?WriterRelease@CMRSWLock@@QEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!GetFileNameFromPath",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180010437",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!GetFileNameFromPath"
+      },
+      {
+        "from_ea": "0x180010437",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!GetFileNameFromPath"
+      }
+    ]
+  },
+  {
+    "import": "WdsCommonLib!WdsGetFileSize",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180010675",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!WdsGetFileSize"
+      },
+      {
+        "from_ea": "0x180010675",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsCommonLib!WdsGetFileSize"
+      }
+    ]
+  },
+  {
+    "import": "WdsImage!WdsImgGetSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800086dd",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsImage!WdsImgGetSecurity"
+      },
+      {
+        "from_ea": "0x1800086dd",
+        "from_func": "0x180008494",
+        "from_func_name": "?EnumImages@CImageCache@@AEAAKPEAXPEBG@Z",
+        "import": "WdsImage!WdsImgGetSecurity"
+      }
+    ]
+  },
+  {
+    "import": "WdsImage!WdsImgGetServicePackLevel",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180009ec0",
+        "from_func": "0x1800096e8",
+        "from_func_name": "?RegisterImageMetadata@CImageCache@@AEAAKPEAXPEAUImage@1@@Z",
+        "import": "WdsImage!WdsImgGetServicePackLevel"
+      },
+      {
+        "from_ea": "0x180009ec0",
+        "from_func": "0x1800096e8",
+        "from_func_name": "?RegisterImageMetadata@CImageCache@@AEAAKPEAXPEAUImage@1@@Z",
+        "import": "WdsImage!WdsImgGetServicePackLevel"
+      }
+    ]
+  },
+  {
+    "import": "WdsImage!WdsImgGetXml",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800103bf",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsImage!WdsImgGetXml"
+      },
+      {
+        "from_ea": "0x1800103bf",
+        "from_func": "0x1800102a0",
+        "from_func_name": "?AddImageAt@CImgSrvPacket@@QEAAKPEAV1@KPEBG1PEAXU_GUID@@@Z",
+        "import": "WdsImage!WdsImgGetXml"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800018bc",
+        "from_func": "0x1800018bc",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ac4",
+        "from_func": "0x180001ac4",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "msvcrt!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ae8",
+        "from_func": "0x180001ae8",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlAllocateHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000ce1e",
+        "from_func": "0x18000cdc8",
+        "from_func_name": "StrDupe",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x18000ce1e",
+        "from_func": "0x18000cdc8",
+        "from_func_name": "StrDupe",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x18001ff4c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlAllocateHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000ce58",
+        "from_func": "0x18000cdc8",
+        "from_func_name": "StrDupe",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x18000ce58",
+        "from_func": "0x18000cdc8",
+        "from_func_name": "StrDupe",
+        "import": "ntdll!RtlFreeHeap"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CLSIDFromProgID",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c17d",
+        "from_func": "0x18000c0ec",
+        "from_func_name": "?pInitializeManagement@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "ole32!CLSIDFromProgID"
+      },
+      {
+        "from_ea": "0x18000c858",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "ole32!CLSIDFromProgID"
+      },
+      {
+        "from_ea": "0x18000c17d",
+        "from_func": "0x18000c0ec",
+        "from_func_name": "?pInitializeManagement@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "ole32!CLSIDFromProgID"
+      },
+      {
+        "from_ea": "0x18000c858",
+        "from_func": "0x18000c69c",
+        "from_func_name": "?pWdsImgSrvRefreshSettings@@YAKPEAU_IMG_SERVER_CONTEXT@@@Z",
+        "import": "ole32!CLSIDFromProgID"
+      }
+    ]
+  }
+]

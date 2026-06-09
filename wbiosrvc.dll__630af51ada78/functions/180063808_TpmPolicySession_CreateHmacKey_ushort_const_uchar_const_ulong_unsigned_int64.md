@@ -1,0 +1,223 @@
+# TpmPolicySession::CreateHmacKey(ushort const *,uchar const *,ulong,unsigned __int64 *)
+
+- ea: `0x180063808`
+- end: `0x180063978`
+- name: `?CreateHmacKey@TpmPolicySession@@YAJPEBGPEBEKPEA_K@Z`
+- size: `368`
+- prototype: `__int64 __fastcall(LPCWSTR pszKeyName, PBYTE pbInput, DWORD cbInput, unsigned int, unsigned __int64 *)`
+- caller_count: `1`
+- callee_count: `3`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x180063760`
+
+## callees
+
+- `0x1800430bc`
+- `0x18005388c`
+- `0x180063808`
+
+## import_xrefs
+
+- `ncrypt!NCryptSetProperty` at `0x1800638e3`
+- `ncrypt!NCryptSetProperty` at `0x18006390f`
+- `ncrypt!NCryptSetProperty` at `0x1800638e3`
+- `ncrypt!NCryptSetProperty` at `0x18006390f`
+- `ncrypt!NCryptCreatePersistedKey` at `0x18006388d`
+- `ncrypt!NCryptCreatePersistedKey` at `0x18006388d`
+- `ncrypt!NCryptOpenStorageProvider` at `0x18006383a`
+- `ncrypt!NCryptOpenStorageProvider` at `0x18006383a`
+- `ncrypt!NCryptFinalizeKey` at `0x18006392b`
+- `ncrypt!NCryptFinalizeKey` at `0x18006392b`
+
+## string_xrefs
+
+- `0x18006384a`: `onecore\ds\security\biometrics\service\trustlet\lib\tpmpolicysession.cpp`
+- `0x1800638a2`: `onecore\ds\security\biometrics\service\trustlet\lib\tpmpolicysession.cpp`
+
+## pseudocode
+
+```c
+__int64 __fastcall TpmPolicySession::CreateHmacKey(
+        LPCWSTR pszKeyName,
+        PBYTE pbInput,
+        DWORD cbInput,
+        NCRYPT_KEY_HANDLE *a4)
+{
+  SECURITY_STATUS v8; // eax
+  unsigned int v9; // ebx
+  SECURITY_STATUS v10; // eax
+  __int64 v11; // rdx
+  DWORD dwLegacyKeySpec; // [rsp+20h] [rbp-38h]
+  DWORD dwLegacyKeySpeca; // [rsp+20h] [rbp-38h]
+  BYTE pbInputa[8]; // [rsp+30h] [rbp-28h] BYREF
+  NCRYPT_KEY_HANDLE phKey; // [rsp+38h] [rbp-20h] BYREF
+  NCRYPT_PROV_HANDLE phProvider[3]; // [rsp+40h] [rbp-18h] BYREF
+  wil::details::in1diag3 *retaddr; // [rsp+88h] [rbp+30h]
+
+  phProvider[0] = 0;
+  v8 = NCryptOpenStorageProvider(phProvider, L"Microsoft Platform Crypto Provider", 0);
+  v9 = v8;
+  if ( v8 < 0 )
+  {
+    wil::details::in1diag3::Return_Hr(
+      retaddr,
+      (void *)0x18,
+      (unsigned int)"onecore\\ds\\security\\biometrics\\service\\trustlet\\lib\\tpmpolicysession.cpp",
+      (const char *)(unsigned int)v8,
+      dwLegacyKeySpec);
+    goto LABEL_15;
+  }
+  phKey = 0;
+  v10 = NCryptCreatePersistedKey(phProvider[0], &phKey, L"HMAC-SHA256", pszKeyName, 0, 0);
+  v9 = v10;
+  if ( v10 < 0 )
+  {
+    v11 = 34;
+LABEL_5:
+    wil::details::in1diag3::Return_Hr(
+      retaddr,
+      (void *)v11,
+      (unsigned int)"onecore\\ds\\security\\biometrics\\service\\trustlet\\lib\\tpmpolicysession.cpp",
+      (const char *)(unsigned int)v10,
+      dwLegacyKeySpeca);
+    wil::details::unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&long NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&long NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>(&phKey);
+    goto LABEL_15;
+  }
+  *(_DWORD *)pbInputa = 16;
+  v10 = NCryptSetProperty(phKey, L"PCP_KEY_USAGE_POLICY", pbInputa, 4u, 0);
+  v9 = v10;
+  if ( v10 < 0 )
+  {
+    v11 = 43;
+    goto LABEL_5;
+  }
+  v10 = NCryptSetProperty(phKey, L"KeyDataBlob", pbInput, cbInput, 0);
+  v9 = v10;
+  if ( v10 < 0 )
+  {
+    v11 = 51;
+    goto LABEL_5;
+  }
+  v10 = NCryptFinalizeKey(phKey, 0);
+  v9 = v10;
+  if ( v10 < 0 )
+  {
+    v11 = 56;
+    goto LABEL_5;
+  }
+  if ( a4 )
+  {
+    *a4 = phKey;
+    phKey = 0;
+  }
+  wil::details::unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&long NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&long NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>(&phKey);
+  v9 = 0;
+LABEL_15:
+  wil::details::unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&long NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&long NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>(phProvider);
+  return v9;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180063808  push    rbp
+0x18006380a  push    rbx
+0x18006380b  push    rsi
+0x18006380c  push    rdi
+0x18006380d  push    r14
+0x18006380f  push    r15
+0x180063811  mov     rbp, rsp
+0x180063814  sub     rsp, 58h
+0x180063818  mov     r14d, r8d
+0x18006381b  mov     [rbp+phProvider], 0
+0x180063823  mov     r15, rdx
+0x180063826  mov     rsi, rcx
+0x180063829  xor     r8d, r8d; dwFlags
+0x18006382c  lea     rdx, pszProviderName; "Microsoft Platform Crypto Provider"
+0x180063833  lea     rcx, [rbp+phProvider]; phProvider
+0x180063837  mov     rdi, r9
+0x18006383a  call    cs:__imp_NCryptOpenStorageProvider
+0x180063840  mov     ebx, eax
+0x180063842  test    eax, eax
+0x180063844  jns     short loc_180063863
+0x180063846  mov     rcx, [rbp+30h]; this
+0x18006384a  lea     r8, aOnecoreDsSecur_8; "onecore\\ds\\security\\biometrics\\serv"...
+0x180063851  mov     r9d, eax; char *
+0x180063854  mov     edx, 18h; void *
+0x180063859  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18006385e  jmp     loc_180063960
+0x180063863  mov     rcx, [rbp+phProvider]; hProvider
+0x180063867  lea     r8, aHmacSha256; "HMAC-SHA256"
+0x18006386e  mov     [rsp+58h+dwFlags], 0; dwFlags
+0x180063876  lea     rdx, [rbp+phKey]; phKey
+0x18006387a  mov     r9, rsi; pszKeyName
+0x18006387d  mov     [rsp+58h+dwLegacyKeySpec], 0; int
+0x180063885  mov     [rbp+phKey], 0
+0x18006388d  call    cs:__imp_NCryptCreatePersistedKey
+0x180063893  mov     ebx, eax
+0x180063895  test    eax, eax
+0x180063897  jns     short loc_1800638BF
+0x180063899  mov     edx, 22h ; '"'; void *
+0x18006389e  mov     rcx, [rbp+30h]; this
+0x1800638a2  lea     r8, aOnecoreDsSecur_8; "onecore\\ds\\security\\biometrics\\serv"...
+0x1800638a9  mov     r9d, eax; char *
+0x1800638ac  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x1800638b1  lea     rcx, [rbp+phKey]
+0x1800638b5  call    ??1?$unique_storage@U?$resource_policy@_KP6AJ_K@Z$1?NCryptFreeObject@@YAJ0@ZU?$integral_constant@_K$0A@@wistd@@_K_K$0A@$$T@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>(void)
+0x1800638ba  jmp     loc_180063960
+0x1800638bf  mov     rcx, [rbp+phKey]; hObject
+0x1800638c3  lea     r8, [rbp+pbInput]; pbInput
+0x1800638c7  mov     r9d, 4; cbInput
+0x1800638cd  mov     dword ptr [rbp+pbInput], 10h
+0x1800638d4  lea     rdx, aPcpKeyUsagePol; "PCP_KEY_USAGE_POLICY"
+0x1800638db  mov     [rsp+58h+dwLegacyKeySpec], 0; dwFlags
+0x1800638e3  call    cs:__imp_NCryptSetProperty
+0x1800638e9  mov     ebx, eax
+0x1800638eb  test    eax, eax
+0x1800638ed  jns     short loc_1800638F6
+0x1800638ef  mov     edx, 2Bh ; '+'
+0x1800638f4  jmp     short loc_18006389E
+0x1800638f6  mov     rcx, [rbp+phKey]; hObject
+0x1800638fa  lea     rdx, pszBlobType; "KeyDataBlob"
+0x180063901  mov     r9d, r14d; cbInput
+0x180063904  mov     [rsp+58h+dwLegacyKeySpec], 0; dwFlags
+0x18006390c  mov     r8, r15; pbInput
+0x18006390f  call    cs:__imp_NCryptSetProperty
+0x180063915  mov     ebx, eax
+0x180063917  test    eax, eax
+0x180063919  jns     short loc_180063925
+0x18006391b  mov     edx, 33h ; '3'
+0x180063920  jmp     loc_18006389E
+0x180063925  mov     rcx, [rbp+phKey]; hKey
+0x180063929  xor     edx, edx; dwFlags
+0x18006392b  call    cs:__imp_NCryptFinalizeKey
+0x180063931  mov     ebx, eax
+0x180063933  test    eax, eax
+0x180063935  jns     short loc_180063941
+0x180063937  mov     edx, 38h ; '8'
+0x18006393c  jmp     loc_18006389E
+0x180063941  test    rdi, rdi
+0x180063944  jz      short loc_180063955
+0x180063946  mov     rax, [rbp+phKey]
+0x18006394a  mov     [rdi], rax
+0x18006394d  mov     [rbp+phKey], 0
+0x180063955  lea     rcx, [rbp+phKey]
+0x180063959  call    ??1?$unique_storage@U?$resource_policy@_KP6AJ_K@Z$1?NCryptFreeObject@@YAJ0@ZU?$integral_constant@_K$0A@@wistd@@_K_K$0A@$$T@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>(void)
+0x18006395e  xor     ebx, ebx
+0x180063960  lea     rcx, [rbp+phProvider]
+0x180063964  call    ??1?$unique_storage@U?$resource_policy@_KP6AJ_K@Z$1?NCryptFreeObject@@YAJ0@ZU?$integral_constant@_K$0A@@wistd@@_K_K$0A@$$T@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<unsigned __int64,long (*)(unsigned __int64),&NCryptFreeObject(unsigned __int64),wistd::integral_constant<unsigned __int64,0>,unsigned __int64,unsigned __int64,0,std::nullptr_t>>(void)
+0x180063969  mov     eax, ebx
+0x18006396b  add     rsp, 58h
+0x18006396f  pop     r15
+0x180063971  pop     r14
+0x180063973  pop     rdi
+0x180063974  pop     rsi
+0x180063975  pop     rbx
+0x180063976  pop     rbp
+0x180063977  retn
+```

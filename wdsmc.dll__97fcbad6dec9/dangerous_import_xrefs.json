@@ -1,0 +1,597 @@
+[
+  {
+    "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800092fb",
+        "from_func": "0x1800092cc",
+        "from_func_name": "?InitializeServer@CMulticastPerfCounters@@QEAAKXZ",
+        "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x1800092fb",
+        "from_func": "0x1800092cc",
+        "from_func_name": "?InitializeServer@CMulticastPerfCounters@@QEAAKXZ",
+        "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!CopySid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180025713",
+        "from_func": "0x1800255f4",
+        "from_func_name": "?GetCurrentUserSid@@YAKPEAPEAXPEAK@Z",
+        "import": "ADVAPI32!CopySid"
+      },
+      {
+        "from_ea": "0x180025713",
+        "from_func": "0x1800255f4",
+        "from_func_name": "?GetCurrentUserSid@@YAKPEAPEAXPEAK@Z",
+        "import": "ADVAPI32!CopySid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetLengthSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800256e8",
+        "from_func": "0x1800255f4",
+        "from_func_name": "?GetCurrentUserSid@@YAKPEAPEAXPEAK@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x1800256e8",
+        "from_func": "0x1800255f4",
+        "from_func_name": "?GetCurrentUserSid@@YAKPEAPEAXPEAK@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenProcessToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18002565c",
+        "from_func": "0x1800255f4",
+        "from_func_name": "?GetCurrentUserSid@@YAKPEAPEAXPEAK@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x18002565c",
+        "from_func": "0x1800255f4",
+        "from_func_name": "?GetCurrentUserSid@@YAKPEAPEAXPEAK@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenThreadToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800046bf",
+        "from_func": "0x18000463c",
+        "from_func_name": "?AuthorizeClient@CMulticastContent@@AEAAKPEAXPEBGPEAH@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18002562e",
+        "from_func": "0x1800255f4",
+        "from_func_name": "?GetCurrentUserSid@@YAKPEAPEAXPEAK@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x1800046bf",
+        "from_func": "0x18000463c",
+        "from_func_name": "?AuthorizeClient@CMulticastContent@@AEAAKPEAXPEBGPEAH@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18002562e",
+        "from_func": "0x1800255f4",
+        "from_func_name": "?GetCurrentUserSid@@YAKPEAPEAXPEAK@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18001ad73",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x18001ad73",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x180031af0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001b0e7",
+        "from_func": "0x18001b0ac",
+        "from_func_name": "?RemoveNamespace@CWdsTptNamespaceStore@@QEAAKPEBG@Z",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x18001b0e7",
+        "from_func": "0x18001b0ac",
+        "from_func_name": "?RemoveNamespace@CWdsTptNamespaceStore@@QEAAKPEBG@Z",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 18,
+    "xrefs": [
+      {
+        "from_ea": "0x18000115d",
+        "from_func": "0x180001110",
+        "from_func_name": "?Initialize@CMulticastProfile@@QEAAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000211f",
+        "from_func": "0x1800020bc",
+        "from_func_name": "?EvaluateCurrentStateFromRegistry@@YAHIW4reg_FeatureStage@@PECJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800097e3",
+        "from_func": "0x18000967c",
+        "from_func_name": "?Initialize@CContentProvider@@QEAAKPEBG00HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000aaa4",
+        "from_func": "0x18000aa44",
+        "from_func_name": "?Initialize@CContentProvidersHandler@@QEAAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000ab28",
+        "from_func": "0x18000aa44",
+        "from_func_name": "?Initialize@CContentProvidersHandler@@QEAAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180014a8c",
+        "from_func": "0x1800148b4",
+        "from_func_name": "?Initialize@CTransportServer@@QEAAKPEAVCMulticastSessionGroup@@PEAUtagWDS_INTERFACE_INFO@@PEAVIAppTransportServer@@PEAVCMulticastProfile@@PEAVCCryptSymKey@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001b233",
+        "from_func": "0x18001b118",
+        "from_func_name": "?ReadNamespaces@CWdsTptNamespaceStore@@QEAAKPEBGPEAPEAV?$CDynArray@PEAU_WDSTPT_NAMESPACE@@VCDeallocateNone@@@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001b934",
+        "from_func": "0x18001b8b4",
+        "from_func_name": "?Initialize@CWdsTptNamespaceStore@@AEAAKPEBG0@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180022af5",
+        "from_func": "0x180022a34",
+        "from_func_name": "?InitializeClient@CPerfCounters@@QEAAKAEBU_GUID@@0PEBGKKPEAK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000115d",
+        "from_func": "0x180001110",
+        "from_func_name": "?Initialize@CMulticastProfile@@QEAAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000211f",
+        "from_func": "0x1800020bc",
+        "from_func_name": "?EvaluateCurrentStateFromRegistry@@YAHIW4reg_FeatureStage@@PECJ@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800097e3",
+        "from_func": "0x18000967c",
+        "from_func_name": "?Initialize@CContentProvider@@QEAAKPEBG00HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000aaa4",
+        "from_func": "0x18000aa44",
+        "from_func_name": "?Initialize@CContentProvidersHandler@@QEAAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000ab28",
+        "from_func": "0x18000aa44",
+        "from_func_name": "?Initialize@CContentProvidersHandler@@QEAAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180014a8c",
+        "from_func": "0x1800148b4",
+        "from_func_name": "?Initialize@CTransportServer@@QEAAKPEAVCMulticastSessionGroup@@PEAUtagWDS_INTERFACE_INFO@@PEAVIAppTransportServer@@PEAVCMulticastProfile@@PEAVCCryptSymKey@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001b233",
+        "from_func": "0x18001b118",
+        "from_func_name": "?ReadNamespaces@CWdsTptNamespaceStore@@QEAAKPEBGPEAPEAV?$CDynArray@PEAU_WDSTPT_NAMESPACE@@VCDeallocateNone@@@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001b934",
+        "from_func": "0x18001b8b4",
+        "from_func_name": "?Initialize@CWdsTptNamespaceStore@@AEAAKPEBG0@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180022af5",
+        "from_func": "0x180022a34",
+        "from_func_name": "?InitializeClient@CPerfCounters@@QEAAKAEBU_GUID@@0PEBGKKPEAK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x18001adeb",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x18001af20",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x18001af69",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x18001afb2",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x18001b03e",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180022663",
+        "from_func": "0x180022634",
+        "from_func_name": "?SetValueSz@CRegKey@@QEAAKPEBG0@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x18001adeb",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x18001af20",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x18001af69",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x18001afb2",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x18001b03e",
+        "from_func": "0x18001acc8",
+        "from_func_name": "?AddNamespace@CWdsTptNamespaceStore@@QEAAKPEAU_WDSTPT_NAMESPACE@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180022663",
+        "from_func": "0x180022634",
+        "from_func_name": "?SetValueSz@CRegKey@@QEAAKPEBG0@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateFileMappingW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180009362",
+        "from_func": "0x1800092cc",
+        "from_func_name": "?InitializeServer@CMulticastPerfCounters@@QEAAKXZ",
+        "import": "KERNEL32!CreateFileMappingW"
+      },
+      {
+        "from_ea": "0x180009362",
+        "from_func": "0x1800092cc",
+        "from_func_name": "?InitializeServer@CMulticastPerfCounters@@QEAAKXZ",
+        "import": "KERNEL32!CreateFileMappingW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800268c3",
+        "from_func": "0x180026884",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800268c3",
+        "from_func": "0x180026884",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180009709",
+        "from_func": "0x18000967c",
+        "from_func_name": "?Initialize@CContentProvider@@QEAAKPEBG00HH@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180009709",
+        "from_func": "0x18000967c",
+        "from_func_name": "?Initialize@CContentProvider@@QEAAKPEBG00HH@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "WDSSRV!WdsImpersonateClient",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x180004671",
+        "from_func": "0x18000463c",
+        "from_func_name": "?AuthorizeClient@CMulticastContent@@AEAAKPEAXPEBGPEAH@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      },
+      {
+        "from_ea": "0x1800159b2",
+        "from_func": "0x1800156f0",
+        "from_func_name": "?JoinClient@CTransportServer@@QEAAKPEAXPEAVCTptControlPacket@@1@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      },
+      {
+        "from_ea": "0x180004671",
+        "from_func": "0x18000463c",
+        "from_func_name": "?AuthorizeClient@CMulticastContent@@AEAAKPEAXPEBGPEAH@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      },
+      {
+        "from_ea": "0x1800159b2",
+        "from_func": "0x1800156f0",
+        "from_func_name": "?JoinClient@CTransportServer@@QEAAKPEAXPEAVCTptControlPacket@@1@Z",
+        "import": "WDSSRV!WdsImpersonateClient"
+      },
+      {
+        "from_ea": "0x180031b18",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "WDSSRV!WdsImpersonateClient"
+      }
+    ]
+  },
+  {
+    "import": "WDSSRV!WdsRevertToSelf",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800046e8",
+        "from_func": "0x18000463c",
+        "from_func_name": "?AuthorizeClient@CMulticastContent@@AEAAKPEAXPEBGPEAH@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x1800046f6",
+        "from_func": "0x18000463c",
+        "from_func_name": "?AuthorizeClient@CMulticastContent@@AEAAKPEAXPEBGPEAH@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x180015a4a",
+        "from_func": "0x1800156f0",
+        "from_func_name": "?JoinClient@CTransportServer@@QEAAKPEAXPEAVCTptControlPacket@@1@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x1800046e8",
+        "from_func": "0x18000463c",
+        "from_func_name": "?AuthorizeClient@CMulticastContent@@AEAAKPEAXPEBGPEAH@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x1800046f6",
+        "from_func": "0x18000463c",
+        "from_func_name": "?AuthorizeClient@CMulticastContent@@AEAAKPEAXPEBGPEAH@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      },
+      {
+        "from_ea": "0x180015a4a",
+        "from_func": "0x1800156f0",
+        "from_func_name": "?JoinClient@CTransportServer@@QEAAKPEAXPEAVCTptControlPacket@@1@Z",
+        "import": "WDSSRV!WdsRevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "WS2_32!__imp_WSACleanup",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x180005d0a",
+        "from_func": "0x180005a4c",
+        "from_func_name": "?Shutdown@CMulticastServer@@QEAAKXZ",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x18000916d",
+        "from_func": "0x180009130",
+        "from_func_name": "?WdsProviderShutdown@@YAKPEAX@Z",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x180005d0a",
+        "from_func": "0x180005a4c",
+        "from_func_name": "?Shutdown@CMulticastServer@@QEAAKXZ",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x18000916d",
+        "from_func": "0x180009130",
+        "from_func_name": "?WdsProviderShutdown@@YAKPEAX@Z",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x180031b04",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "WS2_32!__imp_WSACleanup"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180026978",
+        "from_func": "0x180026978",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180026b57",
+        "from_func": "0x180026b57",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "msvcrt!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180026b7b",
+        "from_func": "0x180026b7b",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  }
+]

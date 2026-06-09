@@ -1,0 +1,73 @@
+# CSensorPool::AddBiometricUnit(std::shared_ptr<CBiometricUnit> &)
+
+- ea: `0x18001caa8`
+- end: `0x18001cda1`
+- name: `?AddBiometricUnit@CSensorPool@@QEAA_NAEAV?$shared_ptr@VCBiometricUnit@@@std@@@Z`
+- size: `761`
+- prototype: `__int64 __fastcall(_QWORD, _QWORD)`
+- caller_count: `7`
+- callee_count: `21`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x18001df30`
+- `0x180023c40`
+- `0x180025a30`
+- `0x180029480`
+- `0x18004c070`
+- `0x180051838`
+- `0x18006121c`
+
+## callees
+
+- `0x180006340`
+- `0x18000645c`
+- `0x180009ab0`
+- `0x18000b300`
+- `0x18000b760`
+- `0x18000f8e0`
+- `0x18001c1cc`
+- `0x18001c238`
+- `0x18001c2ac`
+- `0x18001c9a0`
+- `0x18001caa8`
+- `0x180028af0`
+- `0x180029600`
+- `0x18002b7c0`
+- `0x180034218`
+- `0x18003f2dc`
+- `0x180057618`
+- `0x1800577d8`
+- `0x18005cc58`
+- `0x180068f60`
+- `0x18009467c`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x18001cca3`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x18001cd0f`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x18001cd7a`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x18001cca3`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x18001cd0f`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x18001cd7a`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18001cc94`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18001cc94`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x18001cbfc`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x18001cbfc`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared` at `0x18001cbea`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared` at `0x18001ccb1`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared` at `0x18001cbea`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared` at `0x18001ccb1`
+- `msvcp_win!?_Xlength_error@std@@YAXPEBD@Z` at `0x18001cc3c`
+- `msvcp_win!?_Xlength_error@std@@YAXPEBD@Z` at `0x18001cc3c`
+
+## string_xrefs
+
+- `0x18001cb8c`: `onecore\ds\security\biometrics\service\server\sensorpool.cpp`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,147 @@
+# CHardwareManager::ScanForPhysicalSensors(uchar)
+
+- ea: `0x18003b80c`
+- end: `0x18003b8dc`
+- name: `?ScanForPhysicalSensors@CHardwareManager@@QEAAJE@Z`
+- size: `208`
+- prototype: `__int64 __fastcall(HANDLE *this)`
+- caller_count: `4`
+- callee_count: `4`
+- tags: `file_ops, broker_com_uri`
+
+## callers
+
+- `0x1800447b0`
+- `0x1800515c8`
+- `0x180072448`
+- `0x180073538`
+
+## callees
+
+- `0x18003b80c`
+- `0x180069330`
+- `0x180069cc8`
+- `0x18006aea8`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!WaitForSingleObject` at `0x18003b8b3`
+- `api-ms-win-core-synch-l1-1-0!WaitForSingleObject` at `0x18003b8b3`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x18003b82a`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x18003b82a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18003b894`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18003b894`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x18003b8c4`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x18003b8c4`
+- `api-ms-win-core-io-l1-1-0!PostQueuedCompletionStatus` at `0x18003b87f`
+- `api-ms-win-core-io-l1-1-0!PostQueuedCompletionStatus` at `0x18003b87f`
+
+## pseudocode
+
+```c
+__int64 __fastcall CHardwareManager::ScanForPhysicalSensors(HANDLE *this)
+{
+  struct _OVERLAPPED *v2; // rax
+  struct _OVERLAPPED *v3; // rbx
+  unsigned int v4; // ebx
+  signed int LastError; // eax
+  HANDLE hHandle; // [rsp+40h] [rbp+18h] BYREF
+
+  hHandle = CreateEventW(0, 1, 0, 0);
+  v2 = (struct _OVERLAPPED *)operator new(0x1A0u, (const struct std::nothrow_t *)std::nothrow);
+  v3 = v2;
+  if ( v2 )
+  {
+    memset_0(v2, 0, 0x1A0u);
+    LODWORD(v3->Internal) = 1;
+    v3->InternalHigh = (ULONG_PTR)&hHandle;
+    if ( PostQueuedCompletionStatus(this[6], 0, 0, v3) )
+    {
+      if ( !WaitForSingleObject(hHandle, 0xFFFFFFFF) )
+      {
+        v4 = 0;
+        goto LABEL_9;
+      }
+    }
+    else
+    {
+      operator delete(v3, 0x1A0u);
+    }
+    LastError = GetLastError();
+    v4 = LastError;
+    if ( LastError > 0 )
+      v4 = (unsigned __int16)LastError | 0x80070000;
+  }
+  else
+  {
+    v4 = -2147024882;
+  }
+LABEL_9:
+  CloseHandle(hHandle);
+  return v4;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18003b80c  mov     [rsp+arg_0], rbx
+0x18003b811  mov     [rsp+arg_8], rsi
+0x18003b816  push    rdi
+0x18003b817  sub     rsp, 20h
+0x18003b81b  xor     r9d, r9d; lpName
+0x18003b81e  mov     rdi, rcx
+0x18003b821  xor     r8d, r8d; bInitialState
+0x18003b824  xor     ecx, ecx; lpEventAttributes
+0x18003b826  lea     edx, [r9+1]; bManualReset
+0x18003b82a  call    cs:__imp_CreateEventW
+0x18003b830  mov     esi, 1A0h
+0x18003b835  lea     rdx, ?nothrow@std@@3Unothrow_t@1@B; struct std::nothrow_t *
+0x18003b83c  mov     ecx, esi; unsigned __int64
+0x18003b83e  mov     [rsp+28h+hHandle], rax
+0x18003b843  call    ??2@YAPEAX_KAEBUnothrow_t@std@@@Z; operator new(unsigned __int64,std::nothrow_t const &)
+0x18003b848  mov     rbx, rax
+0x18003b84b  test    rax, rax
+0x18003b84e  jnz     short loc_18003B857
+0x18003b850  mov     ebx, 8007000Eh
+0x18003b855  jmp     short loc_18003B8BF
+0x18003b857  mov     r8, rsi; Size
+0x18003b85a  xor     edx, edx; Val
+0x18003b85c  mov     rcx, rbx; void *
+0x18003b85f  call    memset_0
+0x18003b864  lea     rax, [rsp+28h+hHandle]
+0x18003b869  mov     dword ptr [rbx], 1
+0x18003b86f  mov     [rbx+8], rax
+0x18003b873  mov     r9, rbx; lpOverlapped
+0x18003b876  mov     rcx, [rdi+30h]; CompletionPort
+0x18003b87a  xor     r8d, r8d; dwCompletionKey
+0x18003b87d  xor     edx, edx; dwNumberOfBytesTransferred
+0x18003b87f  call    cs:__imp_PostQueuedCompletionStatus
+0x18003b885  test    eax, eax
+0x18003b887  jnz     short loc_18003B8AB
+0x18003b889  mov     rdx, rsi; unsigned __int64
+0x18003b88c  mov     rcx, rbx; void *
+0x18003b88f  call    ??3@YAXPEAX_K@Z; operator delete(void *,unsigned __int64)
+0x18003b894  call    cs:__imp_GetLastError
+0x18003b89a  mov     ebx, eax
+0x18003b89c  test    eax, eax
+0x18003b89e  jle     short loc_18003B8BF
+0x18003b8a0  movzx   ebx, ax
+0x18003b8a3  or      ebx, 80070000h
+0x18003b8a9  jmp     short loc_18003B8BF
+0x18003b8ab  mov     rcx, [rsp+28h+hHandle]; hHandle
+0x18003b8b0  or      edx, 0FFFFFFFFh; dwMilliseconds
+0x18003b8b3  call    cs:__imp_WaitForSingleObject
+0x18003b8b9  test    eax, eax
+0x18003b8bb  jnz     short loc_18003B894
+0x18003b8bd  xor     ebx, ebx
+0x18003b8bf  mov     rcx, [rsp+28h+hHandle]; hObject
+0x18003b8c4  call    cs:__imp_CloseHandle
+0x18003b8ca  mov     rsi, [rsp+28h+arg_8]
+0x18003b8cf  mov     eax, ebx
+0x18003b8d1  mov     rbx, [rsp+28h+arg_0]
+0x18003b8d6  add     rsp, 20h
+0x18003b8da  pop     rdi
+0x18003b8db  retn
+```

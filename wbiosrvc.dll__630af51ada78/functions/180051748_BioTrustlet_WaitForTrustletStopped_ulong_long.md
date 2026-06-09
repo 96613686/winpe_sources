@@ -1,0 +1,43 @@
+# BioTrustlet::WaitForTrustletStopped(ulong,long *)
+
+- ea: `0x180051748`
+- end: `0x180051832`
+- name: `?WaitForTrustletStopped@BioTrustlet@@QEAAJKPEAJ@Z`
+- size: `234`
+- prototype: `__int64 __fastcall(BioTrustlet *__hidden this, unsigned int, int *)`
+- caller_count: `1`
+- callee_count: `6`
+- tags: `loader_planting, service_task, broker_com_uri`
+
+## callers
+
+- `0x18005262c`
+
+## callees
+
+- `0x180011d90`
+- `0x18003903c`
+- `0x180051748`
+- `0x18005388c`
+- `0x1800538b0`
+- `0x180072d34`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!WaitForSingleObject` at `0x18005178b`
+- `api-ms-win-core-synch-l1-1-0!WaitForSingleObject` at `0x18005178b`
+- `ntdll!NtQueryInformationProcess` at `0x1800517db`
+- `ntdll!NtQueryInformationProcess` at `0x1800517db`
+
+## string_xrefs
+
+- `0x180051766`: `onecore\ds\security\biometrics\service\trustlet\lib\trustletcontrol.cpp`
+- `0x18005179a`: `onecore\ds\security\biometrics\service\trustlet\lib\trustletcontrol.cpp`
+- `0x1800517ea`: `onecore\ds\security\biometrics\service\trustlet\lib\trustletcontrol.cpp`
+- `0x18005180f`: `onecore\ds\security\biometrics\service\trustlet\lib\trustletcontrol.cpp`
+
+## pseudocode
+
+```c
+
+```

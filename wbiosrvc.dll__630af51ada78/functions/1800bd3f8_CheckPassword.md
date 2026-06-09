@@ -1,0 +1,452 @@
+# _CheckPassword
+
+- ea: `0x1800bd3f8`
+- end: `0x1800bd7cf`
+- name: `_CheckPassword`
+- size: `983`
+- prototype: `__int64 __fastcall(unsigned __int16 *, unsigned __int16 *, LPWSTR pszPassword)`
+- caller_count: `1`
+- callee_count: `14`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x1800bcd80`
+
+## callees
+
+- `0x180003c20`
+- `0x180004cc0`
+- `0x18003903c`
+- `0x1800549a0`
+- `0x180068f60`
+- `0x180069cc8`
+- `0x18006b4b8`
+- `0x18006bdec`
+- `0x18006bfb8`
+- `0x1800bc0c4`
+- `0x1800bc0f4`
+- `0x1800bc118`
+- `0x1800bc194`
+- `0x1800bd3f8`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800bd549`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800bd78a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800bd549`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800bd78a`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x1800bd57f`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x1800bd6db`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x1800bd71b`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x1800bd57f`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x1800bd6db`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x1800bd71b`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemAlloc` at `0x1800bd55c`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemAlloc` at `0x1800bd55c`
+- `api-ms-win-security-credentials-l1-1-0!CredIsProtectedW` at `0x1800bd436`
+- `api-ms-win-security-credentials-l1-1-0!CredIsProtectedW` at `0x1800bd436`
+- `SspiCli!LsaLookupAuthenticationPackage` at `0x1800bd4fb`
+- `SspiCli!LsaLookupAuthenticationPackage` at `0x1800bd4fb`
+- `SspiCli!LsaLogonUser` at `0x1800bd6a2`
+- `SspiCli!LsaLogonUser` at `0x1800bd6a2`
+- `SspiCli!LsaConnectUntrusted` at `0x1800bd4bf`
+- `SspiCli!LsaConnectUntrusted` at `0x1800bd4bf`
+- `SspiCli!LogonUserExExW` at `0x1800bd780`
+- `SspiCli!LogonUserExExW` at `0x1800bd780`
+- `SspiCli!LsaFreeReturnBuffer` at `0x1800bd627`
+- `SspiCli!LsaFreeReturnBuffer` at `0x1800bd627`
+- `ext-ms-win-security-credui-l1-1-0!CredPackAuthenticationBufferW` at `0x1800bd53f`
+- `ext-ms-win-security-credui-l1-1-0!CredPackAuthenticationBufferW` at `0x1800bd5aa`
+- `ext-ms-win-security-credui-l1-1-0!CredPackAuthenticationBufferW` at `0x1800bd53f`
+- `ext-ms-win-security-credui-l1-1-0!CredPackAuthenticationBufferW` at `0x1800bd5aa`
+
+## pseudocode
+
+```c
+__int64 __fastcall CheckPassword(unsigned __int16 *a1, unsigned __int16 *a2, LPWSTR pszPassword)
+{
+  unsigned __int64 v7; // rdx
+  unsigned __int64 v8; // rdx
+  unsigned int v9; // ebx
+  void *v10; // rax
+  struct _LSA_STRING v11; // xmm0
+  PVOID v12; // rbx
+  NTSTATUS v13; // eax
+  DWORD pcbPackedCredentials; // [rsp+70h] [rbp-90h] BYREF
+  LPVOID pv; // [rsp+78h] [rbp-88h] BYREF
+  void *Token; // [rsp+80h] [rbp-80h] BYREF
+  CRED_PROTECTION_TYPE pProtectionType; // [rsp+88h] [rbp-78h] BYREF
+  ULONG AuthenticationPackage; // [rsp+8Ch] [rbp-74h] BYREF
+  PVOID Buffer; // [rsp+90h] [rbp-70h] BYREF
+  void *LsaHandle; // [rsp+98h] [rbp-68h] BYREF
+  int SubStatus; // [rsp+A0h] [rbp-60h] BYREF
+  ULONG ProfileBufferLength; // [rsp+A4h] [rbp-5Ch] BYREF
+  _QWORD v23[2]; // [rsp+A8h] [rbp-58h] BYREF
+  _BYTE v24[8]; // [rsp+B8h] [rbp-48h] BYREF
+  struct _LUID LogonId; // [rsp+C0h] [rbp-40h] BYREF
+  struct _LSA_STRING OriginName; // [rsp+C8h] [rbp-38h] BYREF
+  _LSA_STRING PackageName; // [rsp+D8h] [rbp-28h] BYREF
+  struct _TOKEN_SOURCE SourceContext; // [rsp+E8h] [rbp-18h] BYREF
+  struct _QUOTA_LIMITS Quotas; // [rsp+F8h] [rbp-8h] BYREF
+  WCHAR pszUserName[264]; // [rsp+130h] [rbp+30h] BYREF
+
+  pProtectionType = CredUnprotected;
+  if ( CredIsProtectedW(pszPassword, &pProtectionType) && pProtectionType == CredTrustedProtection )
+  {
+    if ( !(unsigned __int8)IsCredPackAuthenticationBufferWPresent() )
+      return 2147500033LL;
+    memset_0(pszUserName, 0, 0x208u);
+    if ( StringCchCopyW(pszUserName, 0x104u, a2) < 0
+      || StringCchCatW(pszUserName, v7, L"\\") < 0
+      || StringCchCatW(pszUserName, v8, a1) < 0 )
+    {
+      return 2147942405LL;
+    }
+    LsaHandle = 0;
+    if ( LsaConnectUntrusted(&LsaHandle) < 0 )
+    {
+      v9 = -2147024891;
+LABEL_23:
+      wil::details::unique_storage<wil::details::handle_null_resource_policy<long (*)(void *),&long LsaDeregisterLogonProcess(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<long (*)(void *),&long LsaDeregisterLogonProcess(void *)>>(&LsaHandle);
+      return v9;
+    }
+    AuthenticationPackage = 0;
+    PackageName = (_LSA_STRING)*make_LSA_STRING((struct _STRING *)&OriginName, "Negotiate");
+    if ( LsaLookupAuthenticationPackage(LsaHandle, &PackageName, &AuthenticationPackage) < 0 )
+    {
+LABEL_22:
+      v9 = -2146893044;
+      goto LABEL_23;
+    }
+    pv = 0;
+    v23[0] = &pv;
+    pcbPackedCredentials = 0;
+    v23[1] = &pcbPackedCredentials;
+    if ( !CredPackAuthenticationBufferW(1u, pszUserName, pszPassword, 0, &pcbPackedCredentials) && GetLastError() != 122 )
+      goto LABEL_21;
+    v10 = CoTaskMemAlloc(pcbPackedCredentials);
+    pv = v10;
+    if ( !v10 )
+    {
+      pcbPackedCredentials = 0;
+      ScopedSecureZero<unsigned long>::~ScopedSecureZero<unsigned long>(v23);
+      CoTaskMemFree(pv);
+      pv = 0;
+      v9 = -2147024882;
+      goto LABEL_23;
+    }
+    if ( !CredPackAuthenticationBufferW(1u, pszUserName, pszPassword, (PBYTE)v10, &pcbPackedCredentials) )
+    {
+LABEL_21:
+      ScopedSecureZero<unsigned long>::~ScopedSecureZero<unsigned long>(v23);
+      CoTaskMemFree(pv);
+      pv = 0;
+      goto LABEL_22;
+    }
+    v11 = (struct _LSA_STRING)*make_LSA_STRING((struct _STRING *)&OriginName, "Biometrics Credential Manager");
+    Buffer = 0;
+    strcpy(SourceContext.SourceName, "wbiosrv");
+    OriginName = v11;
+    SourceContext.SourceIdentifier = 0;
+    ProfileBufferLength = 0;
+    memset(&Quotas, 0, sizeof(Quotas));
+    LogonId = 0;
+    Token = 0;
+    SubStatus = 0;
+    wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>::reset(
+      &Token,
+      0);
+    v12 = Buffer;
+    if ( Buffer )
+    {
+      wil::last_error_context::last_error_context((wil::last_error_context *)v24);
+      LsaFreeReturnBuffer(v12);
+      wil::last_error_context::~last_error_context((wil::last_error_context *)v24);
+    }
+    Buffer = 0;
+    v13 = LsaLogonUser(
+            LsaHandle,
+            &OriginName,
+            Interactive,
+            AuthenticationPackage,
+            pv,
+            pcbPackedCredentials,
+            0,
+            &SourceContext,
+            &Buffer,
+            &ProfileBufferLength,
+            &LogonId,
+            &Token,
+            &Quotas,
+            &SubStatus);
+    if ( (int)(v13 + 0x80000000) >= 0 && v13 != -1073741714 )
+    {
+      wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>(&Token);
+      wil::details::unique_storage<wil::details::resource_policy<void *,long (*)(void *),&long LsaFreeReturnBuffer(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<void *,long (*)(void *),&long LsaFreeReturnBuffer(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>(&Buffer);
+      goto LABEL_21;
+    }
+    wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>(&Token);
+    wil::details::unique_storage<wil::details::resource_policy<void *,long (*)(void *),&long LsaFreeReturnBuffer(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<void *,long (*)(void *),&long LsaFreeReturnBuffer(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>(&Buffer);
+    ScopedSecureZero<unsigned long>::~ScopedSecureZero<unsigned long>(v23);
+    CoTaskMemFree(pv);
+    pv = 0;
+    wil::details::unique_storage<wil::details::handle_null_resource_policy<long (*)(void *),&long LsaDeregisterLogonProcess(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<long (*)(void *),&long LsaDeregisterLogonProcess(void *)>>(&LsaHandle);
+  }
+  else
+  {
+    Token = 0;
+    wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>::reset(
+      &Token,
+      0);
+    if ( !(unsigned int)LogonUserExExW(a1, a2, pszPassword, 2, 3, 0, &Token, 0, 0, 0, 0) && GetLastError() != 1327 )
+    {
+      wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>(&Token);
+      return 2148074252LL;
+    }
+    wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&int CloseHandle(void *)>>(&Token);
+  }
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800bd3f8  push    rbp
+0x1800bd3fa  push    rbx
+0x1800bd3fb  push    rsi
+0x1800bd3fc  push    rdi
+0x1800bd3fd  push    r14
+0x1800bd3ff  lea     rbp, [rsp-250h]
+0x1800bd407  sub     rsp, 350h
+0x1800bd40e  mov     rax, cs:__security_cookie
+0x1800bd415  xor     rax, rsp
+0x1800bd418  mov     [rbp+270h+var_30], rax
+0x1800bd41f  mov     rsi, rdx
+0x1800bd422  mov     rdi, rcx
+0x1800bd425  xor     r14d, r14d
+0x1800bd428  lea     rdx, [rbp+270h+pProtectionType]; pProtectionType
+0x1800bd42c  mov     rcx, r8; pszProtectedCredentials
+0x1800bd42f  mov     [rbp+270h+pProtectionType], r14d
+0x1800bd433  mov     rbx, r8
+0x1800bd436  call    cs:__imp_CredIsProtectedW
+0x1800bd43c  test    eax, eax
+0x1800bd43e  jz      loc_1800BD738
+0x1800bd444  cmp     [rbp+270h+pProtectionType], 2
+0x1800bd448  jnz     loc_1800BD738
+0x1800bd44e  call    IsCredPackAuthenticationBufferWPresent
+0x1800bd453  test    al, al
+0x1800bd455  jnz     short loc_1800BD461
+0x1800bd457  mov     eax, 80004001h
+0x1800bd45c  jmp     loc_1800BD7B2
+0x1800bd461  xor     edx, edx; Val
+0x1800bd463  lea     rcx, [rbp+270h+pszUserName]; void *
+0x1800bd467  mov     r8d, 208h; Size
+0x1800bd46d  call    memset_0
+0x1800bd472  mov     r8, rsi; unsigned __int16 *
+0x1800bd475  lea     rcx, [rbp+270h+pszUserName]; unsigned __int16 *
+0x1800bd479  mov     edx, 104h; unsigned __int64
+0x1800bd47e  call    ?StringCchCopyW@@YAJPEAG_KPEBG@Z; StringCchCopyW(ushort *,unsigned __int64,ushort const *)
+0x1800bd483  test    eax, eax
+0x1800bd485  js      loc_1800BD731
+0x1800bd48b  lea     r8, asc_1800DC1E4; "\\"
+0x1800bd492  lea     rcx, [rbp+270h+pszUserName]; unsigned __int16 *
+0x1800bd496  call    ?StringCchCatW@@YAJPEAG_KPEBG@Z; StringCchCatW(ushort *,unsigned __int64,ushort const *)
+0x1800bd49b  test    eax, eax
+0x1800bd49d  js      loc_1800BD731
+0x1800bd4a3  mov     r8, rdi; unsigned __int16 *
+0x1800bd4a6  lea     rcx, [rbp+270h+pszUserName]; unsigned __int16 *
+0x1800bd4aa  call    ?StringCchCatW@@YAJPEAG_KPEBG@Z; StringCchCatW(ushort *,unsigned __int64,ushort const *)
+0x1800bd4af  test    eax, eax
+0x1800bd4b1  js      loc_1800BD731
+0x1800bd4b7  lea     rcx, [rbp+270h+LsaHandle]; LsaHandle
+0x1800bd4bb  mov     [rbp+270h+LsaHandle], r14
+0x1800bd4bf  call    cs:__imp_LsaConnectUntrusted
+0x1800bd4c5  test    eax, eax
+0x1800bd4c7  jns     short loc_1800BD4D3
+0x1800bd4c9  mov     ebx, 80070005h
+0x1800bd4ce  jmp     loc_1800BD6EB
+0x1800bd4d3  lea     rdx, aNegotiate; "Negotiate"
+0x1800bd4da  mov     [rbp+270h+AuthenticationPackage], r14d
+0x1800bd4de  lea     rcx, [rbp+270h+OriginName]; retstr
+0x1800bd4e2  call    ?make_LSA_STRING@@YA?AU_STRING@@PEBD@Z; make_LSA_STRING(char const *)
+0x1800bd4e7  mov     rcx, [rbp+270h+LsaHandle]; LsaHandle
+0x1800bd4eb  lea     r8, [rbp+270h+AuthenticationPackage]; AuthenticationPackage
+0x1800bd4ef  lea     rdx, [rbp+270h+PackageName]; PackageName
+0x1800bd4f3  movups  xmm0, xmmword ptr [rax]
+0x1800bd4f6  movdqu  xmmword ptr [rbp+270h+PackageName.Length], xmm0
+0x1800bd4fb  call    cs:__imp_LsaLookupAuthenticationPackage
+0x1800bd501  test    eax, eax
+0x1800bd503  js      loc_1800BD6E6
+0x1800bd509  lea     rax, [rsp+370h+pv]
+0x1800bd50e  mov     [rsp+370h+pv], r14
+0x1800bd513  mov     [rbp+270h+var_2C8], rax
+0x1800bd517  lea     rdx, [rbp+270h+pszUserName]; pszUserName
+0x1800bd51b  xor     r9d, r9d; pPackedCredentials
+0x1800bd51e  mov     [rsp+370h+var_300], r14d
+0x1800bd523  lea     rax, [rsp+370h+var_300]
+0x1800bd528  mov     r8, rbx; pszPassword
+0x1800bd52b  mov     [rbp+270h+var_2C0], rax
+0x1800bd52f  lea     rax, [rsp+370h+var_300]
+0x1800bd534  mov     [rsp+370h+pcbPackedCredentials], rax; pcbPackedCredentials
+0x1800bd539  lea     edi, [r9+1]
+0x1800bd53d  mov     ecx, edi; dwFlags
+0x1800bd53f  call    cs:__imp_CredPackAuthenticationBufferW
+0x1800bd545  test    eax, eax
+0x1800bd547  jnz     short loc_1800BD558
+0x1800bd549  call    cs:__imp_GetLastError
+0x1800bd54f  cmp     eax, 7Ah ; 'z'
+0x1800bd552  jnz     loc_1800BD6CD
+0x1800bd558  mov     ecx, [rsp+370h+var_300]; cb
+0x1800bd55c  call    cs:__imp_CoTaskMemAlloc
+0x1800bd562  mov     [rsp+370h+pv], rax
+0x1800bd567  test    rax, rax
+0x1800bd56a  jnz     short loc_1800BD594
+0x1800bd56c  lea     rcx, [rbp+270h+var_2C8]
+0x1800bd570  mov     [rsp+370h+var_300], r14d
+0x1800bd575  call    ??1?$ScopedSecureZero@K@@QEAA@XZ; ScopedSecureZero<ulong>::~ScopedSecureZero<ulong>(void)
+0x1800bd57a  mov     rcx, [rsp+370h+pv]; pv
+0x1800bd57f  call    cs:__imp_CoTaskMemFree
+0x1800bd585  mov     [rsp+370h+pv], r14
+0x1800bd58a  mov     ebx, 8007000Eh
+0x1800bd58f  jmp     loc_1800BD6EB
+0x1800bd594  lea     rdx, [rsp+370h+var_300]
+0x1800bd599  mov     r9, rax; pPackedCredentials
+0x1800bd59c  mov     [rsp+370h+pcbPackedCredentials], rdx; pcbPackedCredentials
+0x1800bd5a1  mov     r8, rbx; pszPassword
+0x1800bd5a4  lea     rdx, [rbp+270h+pszUserName]; pszUserName
+0x1800bd5a8  mov     ecx, edi; dwFlags
+0x1800bd5aa  call    cs:__imp_CredPackAuthenticationBufferW
+0x1800bd5b0  test    eax, eax
+0x1800bd5b2  jz      loc_1800BD6CD
+0x1800bd5b8  lea     rdx, aBiometricsCred; "Biometrics Credential Manager"
+0x1800bd5bf  lea     rcx, [rbp+270h+OriginName]; retstr
+0x1800bd5c3  call    ?make_LSA_STRING@@YA?AU_STRING@@PEBD@Z; make_LSA_STRING(char const *)
+0x1800bd5c8  xor     edx, edx
+0x1800bd5ca  lea     rcx, [rbp+270h+var_2F0]
+0x1800bd5ce  movups  xmm0, xmmword ptr [rax]
+0x1800bd5d1  mov     rax, 7672736F696277h
+0x1800bd5db  mov     [rbp+270h+Buffer], r14
+0x1800bd5df  mov     qword ptr [rbp+270h+var_288.SourceName], rax
+0x1800bd5e3  xor     eax, eax
+0x1800bd5e5  movdqu  xmmword ptr [rbp+270h+OriginName.Length], xmm0
+0x1800bd5ea  mov     qword ptr [rbp+270h+var_288.SourceIdentifier.LowPart], rax
+0x1800bd5ee  xorps   xmm0, xmm0
+0x1800bd5f1  mov     [rbp+270h+var_2CC], r14d
+0x1800bd5f5  movups  xmmword ptr [rbp+270h+var_278.PagedPoolLimit], xmm0
+0x1800bd5f9  mov     qword ptr [rbp+270h+var_2B0.LowPart], r14
+0x1800bd5fd  movups  xmmword ptr [rbp+270h+var_278.MinimumWorkingSetSize], xmm0
+0x1800bd601  mov     [rbp+270h+var_2F0], r14
+0x1800bd605  movups  xmmword ptr [rbp+270h+var_278.PagefileLimit], xmm0
+0x1800bd609  mov     [rbp+270h+var_2D0], r14d
+0x1800bd60d  call    ?reset@?$unique_storage@U?$handle_null_resource_policy@P6AHPEAX@Z$1?CloseHandle@@YAH0@Z@details@wil@@@details@wil@@QEAAXPEAX@Z; wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>::reset(void *)
+0x1800bd612  mov     rbx, [rbp+270h+Buffer]
+0x1800bd616  test    rbx, rbx
+0x1800bd619  jz      short loc_1800BD636
+0x1800bd61b  lea     rcx, [rbp+270h+var_2B8]; this
+0x1800bd61f  call    ??0last_error_context@wil@@QEAA@XZ; wil::last_error_context::last_error_context(void)
+0x1800bd624  mov     rcx, rbx; Buffer
+0x1800bd627  call    cs:__imp_LsaFreeReturnBuffer
+0x1800bd62d  lea     rcx, [rbp+270h+var_2B8]; this
+0x1800bd631  call    ??1last_error_context@wil@@QEAA@XZ; wil::last_error_context::~last_error_context(void)
+0x1800bd636  mov     rdx, [rsp+370h+pv]
+0x1800bd63b  lea     rcx, [rbp+270h+var_2D0]
+0x1800bd63f  mov     eax, [rsp+370h+var_300]
+0x1800bd643  mov     r8d, 2; LogonType
+0x1800bd649  mov     r9d, [rbp+270h+AuthenticationPackage]; AuthenticationPackage
+0x1800bd64d  mov     [rsp+370h+SubStatus], rcx; SubStatus
+0x1800bd652  lea     rcx, [rbp+270h+var_278]
+0x1800bd656  mov     [rsp+370h+Quotas], rcx; Quotas
+0x1800bd65b  lea     rcx, [rbp+270h+var_2F0]
+0x1800bd65f  mov     [rsp+370h+Token], rcx; Token
+0x1800bd664  lea     rcx, [rbp+270h+var_2B0]
+0x1800bd668  mov     [rsp+370h+LogonId], rcx; LogonId
+0x1800bd66d  lea     rcx, [rbp+270h+var_2CC]
+0x1800bd671  mov     [rsp+370h+ProfileBufferLength], rcx; ProfileBufferLength
+0x1800bd676  lea     rcx, [rbp+270h+Buffer]
+0x1800bd67a  mov     [rsp+370h+ProfileBuffer], rcx; ProfileBuffer
+0x1800bd67f  lea     rcx, [rbp+270h+var_288]
+0x1800bd683  mov     [rsp+370h+SourceContext], rcx; SourceContext
+0x1800bd688  mov     rcx, [rbp+270h+LsaHandle]; LsaHandle
+0x1800bd68c  mov     [rsp+370h+LocalGroups], r14; LocalGroups
+0x1800bd691  mov     [rsp+370h+AuthenticationInformationLength], eax; AuthenticationInformationLength
+0x1800bd695  mov     [rsp+370h+pcbPackedCredentials], rdx; AuthenticationInformation
+0x1800bd69a  lea     rdx, [rbp+270h+OriginName]; OriginName
+0x1800bd69e  mov     [rbp+270h+Buffer], r14
+0x1800bd6a2  call    cs:__imp_LsaLogonUser
+0x1800bd6a8  mov     edx, 80000000h
+0x1800bd6ad  lea     ecx, [rax+rdx]
+0x1800bd6b0  test    edx, ecx
+0x1800bd6b2  jnz     short loc_1800BD6FB
+0x1800bd6b4  cmp     eax, 0C000006Eh
+0x1800bd6b9  jz      short loc_1800BD6FB
+0x1800bd6bb  lea     rcx, [rbp+270h+var_2F0]
+0x1800bd6bf  call    ??1?$unique_storage@U?$handle_null_resource_policy@P6AHPEAX@Z$1?CloseHandle@@YAH0@Z@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>(void)
+0x1800bd6c4  lea     rcx, [rbp+270h+Buffer]
+0x1800bd6c8  call    ??1?$unique_storage@U?$resource_policy@PEAXP6AJPEAX@Z$1?LsaFreeReturnBuffer@@YAJ0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::resource_policy<void *,long (*)(void *),&LsaFreeReturnBuffer(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<void *,long (*)(void *),&LsaFreeReturnBuffer(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>(void)
+0x1800bd6cd  lea     rcx, [rbp+270h+var_2C8]
+0x1800bd6d1  call    ??1?$ScopedSecureZero@K@@QEAA@XZ; ScopedSecureZero<ulong>::~ScopedSecureZero<ulong>(void)
+0x1800bd6d6  mov     rcx, [rsp+370h+pv]; pv
+0x1800bd6db  call    cs:__imp_CoTaskMemFree
+0x1800bd6e1  mov     [rsp+370h+pv], r14
+0x1800bd6e6  mov     ebx, 8009030Ch
+0x1800bd6eb  lea     rcx, [rbp+270h+LsaHandle]
+0x1800bd6ef  call    ??1?$unique_storage@U?$handle_null_resource_policy@P6AJPEAX@Z$1?LsaDeregisterLogonProcess@@YAJ0@Z@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::handle_null_resource_policy<long (*)(void *),&LsaDeregisterLogonProcess(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<long (*)(void *),&LsaDeregisterLogonProcess(void *)>>(void)
+0x1800bd6f4  mov     eax, ebx
+0x1800bd6f6  jmp     loc_1800BD7B2
+0x1800bd6fb  lea     rcx, [rbp+270h+var_2F0]
+0x1800bd6ff  call    ??1?$unique_storage@U?$handle_null_resource_policy@P6AHPEAX@Z$1?CloseHandle@@YAH0@Z@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>(void)
+0x1800bd704  lea     rcx, [rbp+270h+Buffer]
+0x1800bd708  call    ??1?$unique_storage@U?$resource_policy@PEAXP6AJPEAX@Z$1?LsaFreeReturnBuffer@@YAJ0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::resource_policy<void *,long (*)(void *),&LsaFreeReturnBuffer(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<void *,long (*)(void *),&LsaFreeReturnBuffer(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>(void)
+0x1800bd70d  lea     rcx, [rbp+270h+var_2C8]
+0x1800bd711  call    ??1?$ScopedSecureZero@K@@QEAA@XZ; ScopedSecureZero<ulong>::~ScopedSecureZero<ulong>(void)
+0x1800bd716  mov     rcx, [rsp+370h+pv]; pv
+0x1800bd71b  call    cs:__imp_CoTaskMemFree
+0x1800bd721  lea     rcx, [rbp+270h+LsaHandle]
+0x1800bd725  mov     [rsp+370h+pv], r14
+0x1800bd72a  call    ??1?$unique_storage@U?$handle_null_resource_policy@P6AJPEAX@Z$1?LsaDeregisterLogonProcess@@YAJ0@Z@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::handle_null_resource_policy<long (*)(void *),&LsaDeregisterLogonProcess(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<long (*)(void *),&LsaDeregisterLogonProcess(void *)>>(void)
+0x1800bd72f  jmp     short loc_1800BD7B0
+0x1800bd731  mov     eax, 80070005h
+0x1800bd736  jmp     short loc_1800BD7B2
+0x1800bd738  xor     edx, edx
+0x1800bd73a  mov     [rbp+270h+var_2F0], r14
+0x1800bd73e  lea     rcx, [rbp+270h+var_2F0]
+0x1800bd742  call    ?reset@?$unique_storage@U?$handle_null_resource_policy@P6AHPEAX@Z$1?CloseHandle@@YAH0@Z@details@wil@@@details@wil@@QEAAXPEAX@Z; wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>::reset(void *)
+0x1800bd747  mov     [rsp+370h+LogonId], r14
+0x1800bd74c  lea     rax, [rbp+270h+var_2F0]
+0x1800bd750  mov     [rsp+370h+ProfileBufferLength], r14
+0x1800bd755  mov     r9d, 2
+0x1800bd75b  mov     [rsp+370h+ProfileBuffer], r14
+0x1800bd760  mov     r8, rbx
+0x1800bd763  mov     [rsp+370h+SourceContext], r14
+0x1800bd768  mov     rdx, rsi
+0x1800bd76b  mov     [rsp+370h+LocalGroups], rax
+0x1800bd770  mov     rcx, rdi
+0x1800bd773  mov     qword ptr [rsp+370h+AuthenticationInformationLength], r14
+0x1800bd778  mov     dword ptr [rsp+370h+pcbPackedCredentials], 3
+0x1800bd780  call    cs:__imp_LogonUserExExW
+0x1800bd786  test    eax, eax
+0x1800bd788  jnz     short loc_1800BD7A7
+0x1800bd78a  call    cs:__imp_GetLastError
+0x1800bd790  cmp     eax, 52Fh
+0x1800bd795  jz      short loc_1800BD7A7
+0x1800bd797  lea     rcx, [rbp+270h+var_2F0]
+0x1800bd79b  call    ??1?$unique_storage@U?$handle_null_resource_policy@P6AHPEAX@Z$1?CloseHandle@@YAH0@Z@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>(void)
+0x1800bd7a0  mov     eax, 8009030Ch
+0x1800bd7a5  jmp     short loc_1800BD7B2
+0x1800bd7a7  lea     rcx, [rbp+270h+var_2F0]
+0x1800bd7ab  call    ??1?$unique_storage@U?$handle_null_resource_policy@P6AHPEAX@Z$1?CloseHandle@@YAH0@Z@details@wil@@@details@wil@@QEAA@XZ; wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>::~unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>(void)
+0x1800bd7b0  xor     eax, eax
+0x1800bd7b2  mov     rcx, [rbp+270h+var_30]
+0x1800bd7b9  xor     rcx, rsp; StackCookie
+0x1800bd7bc  call    __security_check_cookie
+0x1800bd7c1  add     rsp, 350h
+0x1800bd7c8  pop     r14
+0x1800bd7ca  pop     rdi
+0x1800bd7cb  pop     rsi
+0x1800bd7cc  pop     rbx
+0x1800bd7cd  pop     rbp
+0x1800bd7ce  retn
+```

@@ -1,0 +1,39 @@
+# CTicketManager::GetMetadata(unsigned __int64,_WINBIO_GESTURE_METADATA *)
+
+- ea: `0x18009343c`
+- end: `0x180093543`
+- name: `?GetMetadata@CTicketManager@@SAJ_KPEAU_WINBIO_GESTURE_METADATA@@@Z`
+- size: `263`
+- prototype: `__int64 __fastcall(__int64, struct _WINBIO_GESTURE_METADATA *)`
+- caller_count: `1`
+- callee_count: `4`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x18009b880`
+
+## callees
+
+- `0x18000394c`
+- `0x180029600`
+- `0x18005388c`
+- `0x18009343c`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x1800934ff`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x180093532`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x1800934ff`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x180093532`
+
+## string_xrefs
+
+- `0x18009345a`: `onecore\ds\security\biometrics\service\server\ticketmanager.cpp`
+- `0x180093516`: `onecore\ds\security\biometrics\service\server\ticketmanager.cpp`
+
+## pseudocode
+
+```c
+
+```

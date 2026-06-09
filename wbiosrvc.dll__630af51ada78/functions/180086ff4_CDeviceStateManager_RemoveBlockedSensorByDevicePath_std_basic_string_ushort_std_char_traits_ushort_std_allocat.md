@@ -1,0 +1,47 @@
+# CDeviceStateManager::RemoveBlockedSensorByDevicePath(std::basic_string<ushort,std::char_traits<ushort>,std::allocator<ushort>>)
+
+- ea: `0x180086ff4`
+- end: `0x180087156`
+- name: `?RemoveBlockedSensorByDevicePath@CDeviceStateManager@@QEAAXV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z`
+- size: `354`
+- prototype: `__int64 __fastcall(_Mtx_t)`
+- caller_count: `1`
+- callee_count: `12`
+- tags: `loader_planting, service_task, broker_com_uri`
+
+## callers
+
+- `0x180072628`
+
+## callees
+
+- `0x18000ee80`
+- `0x180014854`
+- `0x180014894`
+- `0x180014bcc`
+- `0x18002d4e8`
+- `0x18003f2dc`
+- `0x180068f60`
+- `0x180072ca8`
+- `0x1800838fc`
+- `0x180083f64`
+- `0x180084004`
+- `0x180086ff4`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!_o_towlower` at `0x18008704c`
+- `ntdll!RtlPublishWnfStateData` at `0x1800870f0`
+- `ntdll!RtlPublishWnfStateData` at `0x1800870f0`
+- `msvcp_win!_Mtx_unlock` at `0x180087123`
+- `msvcp_win!_Mtx_unlock` at `0x180087123`
+
+## string_xrefs
+
+- `0x180087104`: `onecore\ds\security\biometrics\service\server\devicestatemanager.cpp`
+
+## pseudocode
+
+```c
+
+```

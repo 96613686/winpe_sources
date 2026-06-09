@@ -1,0 +1,252 @@
+# CBiometricServiceProvider::CaptureGlobalConfigurations(ushort const *,std::shared_ptr<CBiometricUnit> &)
+
+- ea: `0x180013ef0`
+- end: `0x180014107`
+- name: `?CaptureGlobalConfigurations@CBiometricServiceProvider@@IEAAJPEBGAEAV?$shared_ptr@VCBiometricUnit@@@std@@@Z`
+- size: `535`
+- prototype: `__int64 __fastcall(__int64, __int64, __int64)`
+- caller_count: `5`
+- callee_count: `11`
+- tags: `registry_config, service_task`
+
+## callers
+
+- `0x18001df30`
+- `0x180023c40`
+- `0x180025a30`
+- `0x180029480`
+- `0x18004c070`
+
+## callees
+
+- `0x180012294`
+- `0x1800123dc`
+- `0x1800123f8`
+- `0x180013ef0`
+- `0x180014854`
+- `0x180014894`
+- `0x1800148b4`
+- `0x180014938`
+- `0x18002fed0`
+- `0x180058504`
+- `0x180068f60`
+
+## import_xrefs
+
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x1800140ec`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x1800140ec`
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x18001406a`
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x18001406a`
+
+## string_xrefs
+
+- `0x180013f29`: `CBiometricServiceProvider::CaptureGlobalConfigurations`
+- `0x18001408b`: `ActiveConfiguration`
+- `0x180013fba`: `Service Providers`
+- `0x18001402a`: `Global Configurations`
+- `0x180013f96`: `System\CurrentControlSet\Services\WbioSrvc\`
+
+## pseudocode
+
+```c
+__int64 __fastcall CBiometricServiceProvider::CaptureGlobalConfigurations(__int64 a1, __int64 a2, __int64 a3)
+{
+  __int64 v5; // rax
+  __int64 v6; // rcx
+  __int64 v7; // rax
+  __int64 v8; // rcx
+  __int64 v9; // rax
+  __int64 v10; // rax
+  __int64 v11; // rax
+  __int64 v12; // rax
+  __int64 v13; // rcx
+  const WCHAR *v14; // rax
+  __int64 v15; // rdi
+  HKEY v16; // rbx
+  __int64 v17; // rcx
+  unsigned int v18; // ebx
+  int v20; // [rsp+30h] [rbp-39h] BYREF
+  int v21; // [rsp+34h] [rbp-35h] BYREF
+  HKEY hKey; // [rsp+38h] [rbp-31h] BYREF
+  _QWORD *v23; // [rsp+40h] [rbp-29h] BYREF
+  _QWORD v24[3]; // [rsp+48h] [rbp-21h] BYREF
+  _OWORD v25[2]; // [rsp+60h] [rbp-9h] BYREF
+  char v26[56]; // [rsp+80h] [rbp+17h] BYREF
+
+  v20 = 0;
+  v21 = 0;
+  strcpy(v26, "CBiometricServiceProvider::CaptureGlobalConfigurations");
+  v24[0] = v26;
+  v24[1] = &v21;
+  v24[2] = &v20;
+  lambda_a17eded78a1ae0a7b09c17d49bc65c02_::operator()(v24);
+  v21 = 1;
+  v23 = v24;
+  memset(v25, 0, sizeof(v25));
+  v5 = std::_WChar_traits<unsigned short>::length(L"System\\CurrentControlSet\\Services\\WbioSrvc\\");
+  std::wstring::_Construct<1,unsigned short const *>(v25, v6, v5);
+  hKey = HKEY_CURRENT_USER_LOCAL_SETTINGS|0x7FFFFFF8LL;
+  v7 = std::_WChar_traits<unsigned short>::length(L"Service Providers");
+  std::wstring::_Append<unsigned short>(v25, v8, v7);
+  v9 = std::_WChar_traits<unsigned short>::length(L"\\");
+  std::wstring::_Append<unsigned short>(v25, L"\\", v9);
+  v10 = std::_WChar_traits<unsigned short>::length(a2);
+  std::wstring::_Append<unsigned short>(v25, a2, v10);
+  v11 = std::_WChar_traits<unsigned short>::length(L"\\");
+  std::wstring::_Append<unsigned short>(v25, L"\\", v11);
+  v12 = std::_WChar_traits<unsigned short>::length(L"Global Configurations");
+  std::wstring::_Append<unsigned short>(v25, v13, v12);
+  v14 = (const WCHAR *)std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(v25);
+  if ( !RegOpenKeyExW(HKEY_LOCAL_MACHINE, v14, 0, 0x20019u, &hKey) )
+  {
+    v15 = *(_QWORD *)(*(_QWORD *)a3 + 2752LL);
+    if ( v15 )
+    {
+      v16 = hKey;
+      GetRegConfigIdValue(hKey, L"ActiveConfiguration");
+      v20 = CSensorConfigSelector::CaptureConfigurations(v17, v16, (HKEY)(v15 + 40));
+    }
+    else
+    {
+      v20 = -2146861005;
+    }
+  }
+  if ( hKey != HKEY_CURRENT_USER_LOCAL_SETTINGS|0x7FFFFFF8LL )
+  {
+    RegCloseKey(hKey);
+    hKey = HKEY_CURRENT_USER_LOCAL_SETTINGS|0x7FFFFFF8LL;
+  }
+  v18 = v20;
+  std::wstring::_Tidy_deallocate(v25);
+  WppTraceUnwinder__lambda_a17eded78a1ae0a7b09c17d49bc65c02____::_WppTraceUnwinder__lambda_a17eded78a1ae0a7b09c17d49bc65c02____(&v23);
+  return v18;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180013ef0  mov     [rsp-8+arg_0], rbx
+0x180013ef5  mov     [rsp-8+arg_18], rdi
+0x180013efa  push    rbp
+0x180013efb  lea     rbp, [rsp-57h]
+0x180013f00  sub     rsp, 0C0h
+0x180013f07  mov     rax, cs:__security_cookie
+0x180013f0e  xor     rax, rsp
+0x180013f11  mov     [rbp+57h+var_8], rax
+0x180013f15  mov     rdi, r8
+0x180013f18  mov     rbx, rdx
+0x180013f1b  mov     [rbp+57h+var_90], 0
+0x180013f22  mov     [rbp+57h+var_8C], 0
+0x180013f29  movups  xmm0, xmmword ptr cs:aCbiometricserv_7; "CBiometricServiceProvider::CaptureGloba"...
+0x180013f30  movups  xmmword ptr [rbp+57h+var_40], xmm0
+0x180013f34  movups  xmm1, xmmword ptr cs:aCbiometricserv_7+10h; "eProvider::CaptureGlobalConfigurations"
+0x180013f3b  movups  xmmword ptr [rbp+57h+var_40+10h], xmm1
+0x180013f3f  movups  xmm0, xmmword ptr cs:aCbiometricserv_7+20h; "reGlobalConfigurations"
+0x180013f46  movups  xmmword ptr [rbp+57h+var_40+20h], xmm0
+0x180013f4a  movsd   xmm1, qword ptr cs:aCbiometricserv_7+2Fh; "rations"
+0x180013f52  movsd   qword ptr [rbp+57h+var_40+2Fh], xmm1
+0x180013f57  lea     rax, [rbp+57h+var_40]
+0x180013f5b  mov     [rbp+57h+var_78], rax
+0x180013f5f  lea     rax, [rbp+57h+var_8C]
+0x180013f63  mov     [rbp+57h+var_70], rax
+0x180013f67  lea     rax, [rbp+57h+var_90]
+0x180013f6b  mov     [rbp+57h+var_68], rax
+0x180013f6f  lea     rcx, [rbp+57h+var_78]
+0x180013f73  call    _lambda_a17eded78a1ae0a7b09c17d49bc65c02___operator__
+0x180013f78  mov     [rbp+57h+var_8C], 1
+0x180013f7f  lea     rax, [rbp+57h+var_78]
+0x180013f83  mov     [rbp+57h+var_80], rax
+0x180013f87  xorps   xmm0, xmm0
+0x180013f8a  movups  [rbp+57h+var_60], xmm0
+0x180013f8e  xorps   xmm1, xmm1
+0x180013f91  movdqu  [rbp+57h+var_50], xmm1
+0x180013f96  lea     rcx, aSystemCurrentc_1; "System\\CurrentControlSet\\Services\\Wb"...
+0x180013f9d  call    ?length@?$_WChar_traits@G@std@@SA_KPEBG@Z; std::_WChar_traits<ushort>::length(ushort const *)
+0x180013fa2  mov     r8, rax
+0x180013fa5  mov     rdx, rcx
+0x180013fa8  lea     rcx, [rbp+57h+var_60]
+0x180013fac  call    ??$_Construct@$00PEBG@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAXQEBG_K@Z; std::wstring::_Construct<1,ushort const *>(ushort const * const,unsigned __int64)
+0x180013fb1  nop
+0x180013fb2  mov     [rbp+57h+hKey], 0FFFFFFFFFFFFFFFFh
+0x180013fba  lea     rcx, aServiceProvide; "Service Providers"
+0x180013fc1  call    ?length@?$_WChar_traits@G@std@@SA_KPEBG@Z; std::_WChar_traits<ushort>::length(ushort const *)
+0x180013fc6  mov     r8, rax
+0x180013fc9  mov     rdx, rcx
+0x180013fcc  lea     rcx, [rbp+57h+var_60]
+0x180013fd0  call    ??$_Append@G@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAAEAV01@QEBG_K@Z; std::wstring::_Append<ushort>(ushort const * const,unsigned __int64)
+0x180013fd5  lea     rcx, asc_1800DC1E4; "\\"
+0x180013fdc  call    ?length@?$_WChar_traits@G@std@@SA_KPEBG@Z; std::_WChar_traits<ushort>::length(ushort const *)
+0x180013fe1  mov     r8, rax
+0x180013fe4  lea     rdx, asc_1800DC1E4; "\\"
+0x180013feb  lea     rcx, [rbp+57h+var_60]
+0x180013fef  call    ??$_Append@G@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAAEAV01@QEBG_K@Z; std::wstring::_Append<ushort>(ushort const * const,unsigned __int64)
+0x180013ff4  mov     rcx, rbx
+0x180013ff7  call    ?length@?$_WChar_traits@G@std@@SA_KPEBG@Z; std::_WChar_traits<ushort>::length(ushort const *)
+0x180013ffc  mov     r8, rax
+0x180013fff  mov     rdx, rbx
+0x180014002  lea     rcx, [rbp+57h+var_60]
+0x180014006  call    ??$_Append@G@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAAEAV01@QEBG_K@Z; std::wstring::_Append<ushort>(ushort const * const,unsigned __int64)
+0x18001400b  lea     rcx, asc_1800DC1E4; "\\"
+0x180014012  call    ?length@?$_WChar_traits@G@std@@SA_KPEBG@Z; std::_WChar_traits<ushort>::length(ushort const *)
+0x180014017  mov     r8, rax
+0x18001401a  lea     rdx, asc_1800DC1E4; "\\"
+0x180014021  lea     rcx, [rbp+57h+var_60]
+0x180014025  call    ??$_Append@G@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAAEAV01@QEBG_K@Z; std::wstring::_Append<ushort>(ushort const * const,unsigned __int64)
+0x18001402a  lea     rcx, aGlobalConfigur; "Global Configurations"
+0x180014031  call    ?length@?$_WChar_traits@G@std@@SA_KPEBG@Z; std::_WChar_traits<ushort>::length(ushort const *)
+0x180014036  mov     r8, rax
+0x180014039  mov     rdx, rcx
+0x18001403c  lea     rcx, [rbp+57h+var_60]
+0x180014040  call    ??$_Append@G@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAAEAV01@QEBG_K@Z; std::wstring::_Append<ushort>(ushort const * const,unsigned __int64)
+0x180014045  lea     rcx, [rbp+57h+var_60]
+0x180014049  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x18001404e  mov     rdx, rax; lpSubKey
+0x180014051  lea     rax, [rbp+57h+hKey]
+0x180014055  mov     [rsp+0C0h+phkResult], rax; phkResult
+0x18001405a  mov     r9d, 20019h; samDesired
+0x180014060  xor     r8d, r8d; ulOptions
+0x180014063  mov     rcx, 0FFFFFFFF80000002h; hKey
+0x18001406a  call    cs:__imp_RegOpenKeyExW
+0x180014070  test    eax, eax
+0x180014072  jnz     short loc_1800140A9
+0x180014074  mov     rax, [rdi]
+0x180014077  mov     rdi, [rax+0AC0h]
+0x18001407e  test    rdi, rdi
+0x180014081  jz      short loc_1800140FD
+0x180014083  mov     rbx, [rbp+57h+hKey]
+0x180014087  lea     r8, [rdi+20h]
+0x18001408b  lea     rdx, aActiveconfigur; "ActiveConfiguration"
+0x180014092  mov     rcx, rbx; hkey
+0x180014095  call    _GetRegConfigIdValue
+0x18001409a  lea     r8, [rdi+28h]
+0x18001409e  mov     rdx, rbx
+0x1800140a1  call    ?CaptureConfigurations@CSensorConfigSelector@@AEAAJPEAUHKEY__@@AEAV?$vector@PEAVCSensorConfig@@V?$allocator@PEAVCSensorConfig@@@std@@@std@@@Z; CSensorConfigSelector::CaptureConfigurations(HKEY__ *,std::vector<CSensorConfig *> &)
+0x1800140a6  mov     [rbp+57h+var_90], eax
+0x1800140a9  mov     rcx, [rbp+57h+hKey]; hKey
+0x1800140ad  cmp     rcx, 0FFFFFFFFFFFFFFFFh
+0x1800140b1  jnz     short loc_1800140EC
+0x1800140b3  mov     ebx, [rbp+57h+var_90]
+0x1800140b6  lea     rcx, [rbp+57h+var_60]
+0x1800140ba  call    ?_Tidy_deallocate@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAXXZ; std::wstring::_Tidy_deallocate(void)
+0x1800140bf  nop
+0x1800140c0  lea     rcx, [rbp+57h+var_80]
+0x1800140c4  call    WppTraceUnwinder__lambda_a17eded78a1ae0a7b09c17d49bc65c02_______WppTraceUnwinder__lambda_a17eded78a1ae0a7b09c17d49bc65c02____
+0x1800140c9  mov     eax, ebx
+0x1800140cb  mov     rcx, [rbp+57h+var_8]
+0x1800140cf  xor     rcx, rsp; StackCookie
+0x1800140d2  call    __security_check_cookie
+0x1800140d7  lea     r11, [rsp+0C0h+var_s0]
+0x1800140df  mov     rbx, [r11+10h]
+0x1800140e3  mov     rdi, [r11+28h]
+0x1800140e7  mov     rsp, r11
+0x1800140ea  pop     rbp
+0x1800140eb  retn
+0x1800140ec  call    cs:__imp_RegCloseKey
+0x1800140f2  nop
+0x1800140f3  mov     [rbp+57h+hKey], 0FFFFFFFFFFFFFFFFh
+0x1800140fb  jmp     short loc_1800140B3
+0x1800140fd  mov     [rbp+57h+var_90], 80098033h
+0x180014104  jmp     short loc_1800140A9
+```

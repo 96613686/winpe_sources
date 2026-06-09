@@ -1,0 +1,210 @@
+# WcmCommon::ThreadPoolWorkQueue::SubmitWorkWithResults_long__FirewallManager::InternalAddAppBasedRoutePolicyFilters_::_3_::_lambda_1___
+
+- ea: `0x180077940`
+- end: `0x180077abd`
+- name: `WcmCommon::ThreadPoolWorkQueue::SubmitWorkWithResults_long__FirewallManager::InternalAddAppBasedRoutePolicyFilters_::_3_::_lambda_1___`
+- size: `381`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `11`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x18007776c`
+
+## callees
+
+- `0x180007ff8`
+- `0x180008394`
+- `0x180010080`
+- `0x180010560`
+- `0x18001d53c`
+- `0x180027630`
+- `0x18006de30`
+- `0x180077940`
+- `0x180077ac4`
+- `0x18008534c`
+- `0x180098260`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1800779a9`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180077a79`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1800779a9`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180077a79`
+- `api-ms-win-core-threadpool-l1-2-0!SubmitThreadpoolWork` at `0x180077a8e`
+- `api-ms-win-core-threadpool-l1-2-0!SubmitThreadpoolWork` at `0x180077a8e`
+
+## pseudocode
+
+```c
+_QWORD *__fastcall WcmCommon::ThreadPoolWorkQueue::SubmitWorkWithResults_long__FirewallManager::InternalAddAppBasedRoutePolicyFilters_::_3_::_lambda_1___(
+        __int64 a1,
+        _QWORD *a2,
+        __int64 a3)
+{
+  std::_Ref_count_base *v6; // rdi
+  LPCRITICAL_SECTION lpCriticalSection; // [rsp+20h] [rbp-49h] BYREF
+  std::_Ref_count_base *v9; // [rsp+28h] [rbp-41h] BYREF
+  std::_Ref_count_base *v10; // [rsp+30h] [rbp-39h]
+  __int128 v11; // [rsp+38h] [rbp-31h] BYREF
+  _BYTE v12[112]; // [rsp+50h] [rbp-19h] BYREF
+
+  v11 = 0;
+  lpCriticalSection = 0;
+  wil::EnterCriticalSection(&lpCriticalSection, a1 + 8);
+  if ( *(_BYTE *)(a1 + 272) )
+  {
+    *a2 = 0;
+    a2[1] = 0;
+    if ( lpCriticalSection )
+      LeaveCriticalSection(lpCriticalSection);
+  }
+  else
+  {
+    v6 = (std::_Ref_count_base *)operator new(0x78u);
+    v9 = v6;
+    *(_OWORD *)v6 = 0;
+    *((_DWORD *)v6 + 2) = 1;
+    *((_DWORD *)v6 + 3) = 1;
+    *(_QWORD *)v6 = &std::_Ref_count_obj2<WcmCommon::ThreadPoolWaitableResult<bool>>::`vftable';
+    WcmCommon::ThreadPoolWaitableResult_long_::ThreadPoolWaitableResult_long___FirewallManager::InternalAddAppBasedRoutePolicyFilters_::_3_::_lambda_1___(
+      (char *)v6 + 16,
+      a3);
+    v9 = (std::_Ref_count_base *)((char *)v6 + 16);
+    v10 = v6;
+    std::shared_ptr<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<void *,void * (*)(void *),&void * LocalFree(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>>>::operator=(
+      &v11,
+      &v9);
+    if ( v10 )
+      std::_Ref_count_base::_Decref(v10);
+    if ( *(_DWORD *)a1 == 1 )
+    {
+      std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>(&v9);
+      std::deque<std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>::push_back(a1 + 192, &v9);
+      if ( v10 )
+        std::_Ref_count_base::_Decref(v10);
+    }
+    else
+    {
+      std::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>(
+        v12,
+        &v11);
+      std::deque<std::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>>::_Emplace_back_internal<std::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>>(
+        a1 + 232,
+        v12);
+      std::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>::~variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>(v12);
+    }
+    if ( lpCriticalSection )
+      LeaveCriticalSection(lpCriticalSection);
+    _InterlockedIncrement64((volatile signed __int64 *)(a1 + 136));
+    SubmitThreadpoolWork(*(PTP_WORK *)(a1 + 128));
+    *(_OWORD *)a2 = v11;
+  }
+  return a2;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180077940  mov     [rsp-8+arg_18], rbx
+0x180077945  push    rbp
+0x180077946  push    rsi
+0x180077947  push    rdi
+0x180077948  push    r14
+0x18007794a  push    r15
+0x18007794c  lea     rbp, [rsp-37h]
+0x180077951  sub     rsp, 0A0h
+0x180077958  mov     r15, r8
+0x18007795b  mov     rsi, rdx
+0x18007795e  mov     r14, rcx
+0x180077961  mov     [rbp+57h+lpCriticalSection], rdx
+0x180077965  xorps   xmm1, xmm1
+0x180077968  movdqu  [rbp+57h+var_88], xmm1
+0x18007796d  mov     [rbp+57h+lpCriticalSection], 0
+0x180077975  lea     rdx, [rcx+8]
+0x180077979  lea     rcx, [rbp+57h+lpCriticalSection]
+0x18007797d  call    ?EnterCriticalSection@wil@@YA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAU_RTL_CRITICAL_SECTION@@P6AXPEAU1@@Z$1?LeaveCriticalSection@@YAX0@ZU?$integral_constant@_K$00@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@1@PEAU_RTL_CRITICAL_SECTION@@@Z; wil::EnterCriticalSection(_RTL_CRITICAL_SECTION *)
+0x180077982  nop
+0x180077983  cmp     byte ptr [r14+110h], 0
+0x18007798b  jz      short loc_1800779B4
+0x18007798d  mov     qword ptr [rsi], 0
+0x180077994  mov     qword ptr [rsi+8], 0
+0x18007799c  mov     rcx, [rbp+57h+lpCriticalSection]; lpCriticalSection
+0x1800779a0  test    rcx, rcx
+0x1800779a3  jz      loc_180077AA3
+0x1800779a9  call    cs:__imp_LeaveCriticalSection
+0x1800779af  jmp     loc_180077AA3
+0x1800779b4  mov     ecx, 78h ; 'x'; Size
+0x1800779b9  call    ??2@YAPEAX_K@Z; operator new(unsigned __int64)
+0x1800779be  mov     rdi, rax
+0x1800779c1  mov     [rbp+57h+var_98], rax
+0x1800779c5  xorps   xmm0, xmm0
+0x1800779c8  movups  xmmword ptr [rax], xmm0
+0x1800779cb  mov     dword ptr [rax+8], 1
+0x1800779d2  mov     dword ptr [rax+0Ch], 1
+0x1800779d9  lea     rax, ??_7?$_Ref_count_obj2@V?$ThreadPoolWaitableResult@_N@WcmCommon@@@std@@6B@; const std::_Ref_count_obj2<WcmCommon::ThreadPoolWaitableResult<bool>>::`vftable'
+0x1800779e0  mov     [rdi], rax
+0x1800779e3  lea     rbx, [rdi+10h]
+0x1800779e7  mov     rdx, r15
+0x1800779ea  mov     rcx, rbx
+0x1800779ed  call    WcmCommon__ThreadPoolWaitableResult_long___ThreadPoolWaitableResult_long___FirewallManager__InternalAddAppBasedRoutePolicyFilters____3____lambda_1___
+0x1800779f2  nop
+0x1800779f3  mov     [rbp+57h+var_98], rbx
+0x1800779f7  mov     [rbp+57h+var_90], rdi
+0x1800779fb  lea     rdx, [rbp+57h+var_98]
+0x1800779ff  lea     rcx, [rbp+57h+var_88]
+0x180077a03  call    ??4?$shared_ptr@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAXP6APEAXPEAX@Z$1?LocalFree@@YAPEAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@@wil@@@std@@QEAAAEAV01@$$QEAV01@@Z; std::shared_ptr<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<void *,void * (*)(void *),&LocalFree(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>>>::operator=(std::shared_ptr<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<void *,void * (*)(void *),&LocalFree(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>>> &&)
+0x180077a08  mov     rcx, [rbp+57h+var_90]; this
+0x180077a0c  test    rcx, rcx
+0x180077a0f  jz      short loc_180077A16
+0x180077a11  call    ?_Decref@_Ref_count_base@std@@QEAAXXZ; std::_Ref_count_base::_Decref(void)
+0x180077a16  lea     rdx, [rbp+57h+var_88]
+0x180077a1a  cmp     dword ptr [r14], 1
+0x180077a1e  jnz     short loc_180077A4B
+0x180077a20  lea     rcx, [rbp+57h+var_98]
+0x180077a24  call    ??$?0V?$ThreadPoolWaitableResult@V?$tuple@JV?$unique_ptr@U_WCM_ONDEMAND_STATE_INFO@@U?$function_deleter@P6AXPEAX@Z$1?WcmFree@@YAX0@Z@wil@@@std@@@std@@@WcmCommon@@$0A@@?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@std@@QEAA@AEBV?$shared_ptr@V?$ThreadPoolWaitableResult@V?$tuple@JV?$unique_ptr@U_WCM_ONDEMAND_STATE_INFO@@U?$function_deleter@P6AXPEAX@Z$1?WcmFree@@YAX0@Z@wil@@@std@@@std@@@WcmCommon@@@1@@Z; std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>(std::shared_ptr<WcmCommon::ThreadPoolWaitableResult<std::tuple<long,std::unique_ptr<_WCM_ONDEMAND_STATE_INFO,wil::function_deleter<void (*)(void *),&WcmFree(void *)>>>>> const &)
+0x180077a29  nop
+0x180077a2a  lea     rdx, [rbp+57h+var_98]
+0x180077a2e  lea     rcx, [r14+0C0h]
+0x180077a35  call    ?push_back@?$deque@V?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@std@@V?$allocator@V?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@std@@@2@@std@@QEAAX$$QEAV?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@2@@Z; std::deque<std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>::push_back(std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult> &&)
+0x180077a3a  nop
+0x180077a3b  mov     rcx, [rbp+57h+var_90]; this
+0x180077a3f  test    rcx, rcx
+0x180077a42  jz      short loc_180077A70
+0x180077a44  call    ?_Decref@_Ref_count_base@std@@QEAAXXZ; std::_Ref_count_base::_Decref(void)
+0x180077a49  jmp     short loc_180077A70
+0x180077a4b  lea     rcx, [rbp+57h+var_70]
+0x180077a4f  call    ??$?0AEAV?$shared_ptr@V?$ThreadPoolWaitableResult@_N@WcmCommon@@@std@@$0A@$0A@@?$variant@V?$function@$$A6AXXZ@std@@V?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@2@@std@@QEAA@AEAV?$shared_ptr@V?$ThreadPoolWaitableResult@_N@WcmCommon@@@1@@Z; std::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>(std::shared_ptr<WcmCommon::ThreadPoolWaitableResult<bool>> &)
+0x180077a54  nop
+0x180077a55  lea     rdx, [rbp+57h+var_70]
+0x180077a59  lea     rcx, [r14+0E8h]
+0x180077a60  call    ??$_Emplace_back_internal@V?$variant@V?$function@$$A6AXXZ@std@@V?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@2@@std@@@?$deque@V?$variant@V?$function@$$A6AXXZ@std@@V?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@2@@std@@V?$allocator@V?$variant@V?$function@$$A6AXXZ@std@@V?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@2@@std@@@2@@std@@AEAAX$$QEAV?$variant@V?$function@$$A6AXXZ@std@@V?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@2@@1@@Z; std::deque<std::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>>::_Emplace_back_internal<std::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>>(std::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>> &&)
+0x180077a65  nop
+0x180077a66  lea     rcx, [rbp+57h+var_70]
+0x180077a6a  call    ??1?$variant@V?$function@$$A6AXXZ@std@@V?$shared_ptr@VBaseThreadPoolWaitableResult@WcmCommon@@@2@@std@@QEAA@XZ; std::variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>::~variant<std::function<void (void)>,std::shared_ptr<WcmCommon::BaseThreadPoolWaitableResult>>(void)
+0x180077a6f  nop
+0x180077a70  mov     rcx, [rbp+57h+lpCriticalSection]; lpCriticalSection
+0x180077a74  test    rcx, rcx
+0x180077a77  jz      short loc_180077A7F
+0x180077a79  call    cs:__imp_LeaveCriticalSection
+0x180077a7f  lock inc qword ptr [r14+88h]
+0x180077a87  mov     rcx, [r14+80h]; pwk
+0x180077a8e  call    cs:__imp_SubmitThreadpoolWork
+0x180077a94  mov     rax, qword ptr [rbp+57h+var_88]
+0x180077a98  mov     [rsi], rax
+0x180077a9b  mov     rax, qword ptr [rbp+57h+var_88+8]
+0x180077a9f  mov     [rsi+8], rax
+0x180077aa3  mov     rax, rsi
+0x180077aa6  mov     rbx, [rsp+0C0h+arg_18]
+0x180077aae  add     rsp, 0A0h
+0x180077ab5  pop     r15
+0x180077ab7  pop     r14
+0x180077ab9  pop     rdi
+0x180077aba  pop     rsi
+0x180077abb  pop     rbp
+0x180077abc  retn
+```

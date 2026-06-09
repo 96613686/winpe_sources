@@ -1,0 +1,4607 @@
+[
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "WcSetUnionContext",
+    "ea": "0x140020e60",
+    "function_file": "functions/140020e60_WcSetUnionContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceExclusive",
+      "FLTMGR!FltAdjustDeviceStackSizeForIoRedirection",
+      "FLTMGR!FltAttachVolume",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltGetVolumeFromName",
+      "FLTMGR!FltIsIoRedirectionAllowed",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseResource",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ObIsKernelHandle",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsDereferenceSiloContext",
+      "ntoskrnl!PsGetJobSilo",
+      "ntoskrnl!PsIsHostSilo",
+      "ntoskrnl!PsJobType",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlInsertElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "WcSetUnionContext",
+    "prototype": "",
+    "rank_score": 7760,
+    "size": 4844,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WcOpenSourceFile",
+    "ea": "0x14002ad04",
+    "function_file": "functions/14002ad04_WcOpenSourceFile.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateExtraCreateParameter",
+      "FLTMGR!FltAllocateExtraCreateParameterList",
+      "FLTMGR!FltAttachVolume",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltFreeExtraCreateParameter",
+      "FLTMGR!FltFreeExtraCreateParameterList",
+      "FLTMGR!FltInsertExtraCreateParameter",
+      "FLTMGR!FltIsEcpAcknowledged",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltPrepareToReuseEcp",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "FLTMGR!FltRemoveExtraCreateParameter",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcOpenSourceFile",
+    "prototype": "",
+    "rank_score": 6264,
+    "size": 2363,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "WcPopulateFile",
+    "ea": "0x140030d54",
+    "function_file": "functions/140030d54_WcPopulateFile.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateGenericWorkItem",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltFreeGenericWorkItem",
+      "FLTMGR!FltGetFileNameInformationUnsafe",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltQueryDirectoryFile",
+      "FLTMGR!FltQueueGenericWorkItem",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlDowncaseUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlHashUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlLookupEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcPopulateFile",
+    "prototype": "__int64 __usercall@<rax>(PUNICODE_STRING FileName@<rcx>, __int64, PFILE_OBJECT FileObject, char, char)",
+    "rank_score": 6090,
+    "size": 2962,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "WcInstanceSetup",
+    "ea": "0x140032d30",
+    "function_file": "functions/140032d30_WcInstanceSetup.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx",
+      "FLTMGR!FltGetDiskDeviceObject",
+      "FLTMGR!FltGetInstanceInformation",
+      "FLTMGR!FltGetVolumeGuidName",
+      "FLTMGR!FltGetVolumeProperties",
+      "FLTMGR!FltIsVolumeSnapshot",
+      "FLTMGR!FltQueryVolumeInformation",
+      "FLTMGR!FltQueryVolumeInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetInstanceContext",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!IoGetBootLayers",
+      "ntoskrnl!IoMountBootLayer",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlGUIDFromString",
+      "ntoskrnl!RtlInitializeGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "WcInstanceSetup",
+    "prototype": "",
+    "rank_score": 5493,
+    "size": 2855,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "WcPreCleanup",
+    "ea": "0x1400343c0",
+    "function_file": "functions/1400343c0_WcPreCleanup.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltGetStreamHandleContext",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEnumerateGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "WcPreCleanup",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 5074,
+    "size": 2012,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x1400351b4",
+    "function_file": "functions/1400351b4_DriverEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltBuildDefaultSecurityDescriptor",
+      "FLTMGR!FltCloseCommunicationPort",
+      "FLTMGR!FltCreateCommunicationPort",
+      "FLTMGR!FltFreeSecurityDescriptor",
+      "FLTMGR!FltInitExtraCreateParameterLookasideList",
+      "FLTMGR!FltRegisterFilter",
+      "FLTMGR!FltStartFiltering",
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!ExInitializePagedLookasideList",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!PsAllocSiloContextSlot",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 4524,
+    "size": 1610,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "WcOpenAsReparsePoint",
+    "ea": "0x14002cae8",
+    "function_file": "functions/14002cae8_WcOpenAsReparsePoint.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcOpenAsReparsePoint",
+    "prototype": "",
+    "rank_score": 4481,
+    "size": 2824,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 0,
+    "demangled": "WcPostCreate",
+    "ea": "0x140025220",
+    "function_file": "functions/140025220_WcPostCreate.md",
+    "matched_imports": [
+      "FLTMGR!FltCancelFileOpen",
+      "FLTMGR!FltReissueSynchronousIo",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "FLTMGR!FltRemoveOpenReparseEntry",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcPostCreate",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 4319,
+    "size": 3673,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WcPreRead",
+    "ea": "0x1400033a0",
+    "function_file": "functions/1400033a0_WcPreRead.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceShared",
+      "FLTMGR!FltGetFileContext",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltLockUserBuffer",
+      "FLTMGR!FltReadFileEx",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseResource",
+      "FLTMGR!FltSetCallbackDataDirty",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!PsIsHostSilo"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\readwrite.c",
+      "onecore\\base\\fs\\wci\\wcifs\\readwrite.c"
+    ],
+    "name": "WcPreRead",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 4126,
+    "size": 1410,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "WcExpansionWorker",
+    "ea": "0x1400184f0",
+    "function_file": "functions/1400184f0_WcExpansionWorker.md",
+    "matched_imports": [
+      "FLTMGR!FltCancelFileOpen",
+      "FLTMGR!FltCbdqRemoveNextIo",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCompletePendedPostOperation",
+      "FLTMGR!FltCompletePendedPreOperation",
+      "FLTMGR!FltFreeGenericWorkItem",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltPropagateActivityIdToThread",
+      "FLTMGR!FltReleaseContext",
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExRundownCompleted",
+      "ntoskrnl!ExWaitForRundownProtectionRelease",
+      "ntoskrnl!IoClearActivityIdThread",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcExpansionWorker",
+    "prototype": "void __stdcall(PFLT_GENERIC_WORKITEM FltWorkItem, PVOID FltObject, PVOID Context)",
+    "rank_score": 4042,
+    "size": 1146,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "WcGetSetStreamContext",
+    "ea": "0x14002a0cc",
+    "function_file": "functions/14002a0cc_WcGetSetStreamContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltAllocateGenericWorkItem",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetStreamContext",
+      "ntoskrnl!CcCoherencyFlushAndPurgeCache",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!FsRtlAcquireFileExclusive",
+      "ntoskrnl!FsRtlReleaseFile",
+      "ntoskrnl!IoGetTopLevelIrp",
+      "ntoskrnl!IoSetTopLevelIrp",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "WcGetSetStreamContext",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, PFLT_CONTEXT Context@<r8>, int, __int64, __int64, __int64)",
+    "rank_score": 3830,
+    "size": 1346,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "WcNormalizeNameComponent",
+    "ea": "0x140033860",
+    "function_file": "functions/140033860_WcNormalizeNameComponent.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateExtraCreateParameterFromLookasideList",
+      "FLTMGR!FltAllocateExtraCreateParameterList",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltFreeExtraCreateParameterList",
+      "FLTMGR!FltInsertExtraCreateParameter",
+      "FLTMGR!FltQueryDirectoryFile",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!IoGetTransactionParameterBlock",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEnumerateGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "WcNormalizeNameComponent",
+    "prototype": "__int64 __usercall@<rax>(PVOID FltObject@<rcx>, PFILE_OBJECT FileObject@<rdx>, __int64, __int64, ULONG Length, char)",
+    "rank_score": 3671,
+    "size": 1826,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WcUnload",
+    "ea": "0x140022270",
+    "function_file": "functions/140022270_WcUnload.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseCommunicationPort",
+      "FLTMGR!FltDeleteExtraCreateParameterLookasideList",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExDeleteNPagedLookasideList",
+      "ntoskrnl!ExDeletePagedLookasideList",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!PsFreeSiloContextSlot"
+    ],
+    "matched_strings": [],
+    "name": "WcUnload",
+    "prototype": "",
+    "rank_score": 3440,
+    "size": 531,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WcRevertDelete",
+    "ea": "0x1400328d8",
+    "function_file": "functions/1400328d8_WcRevertDelete.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlEndEnumerationHashTable",
+      "ntoskrnl!RtlEnumerateEntryHashTable",
+      "ntoskrnl!RtlInitEnumerationHashTable",
+      "ntoskrnl!RtlRemoveEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcRevertDelete",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 3437,
+    "size": 1100,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "WcPreWrite",
+    "ea": "0x140003930",
+    "function_file": "functions/140003930_WcPreWrite.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileContext",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!PsIsHostSilo"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\readwrite.c",
+      "onecore\\base\\fs\\wci\\wcifs\\readwrite.c",
+      "onecore\\base\\fs\\wci\\wcifs\\readwrite.c",
+      "onecore\\base\\fs\\wci\\wcifs\\readwrite.c",
+      "onecore\\base\\fs\\wci\\wcifs\\readwrite.c"
+    ],
+    "name": "WcPreWrite",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 3429,
+    "size": 1543,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WcRemoveInMemoryTombstoneAfterRenameLink",
+    "ea": "0x140032500",
+    "function_file": "functions/140032500_WcRemoveInMemoryTombstoneAfterRenameLink.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformationUnsafe",
+      "FLTMGR!FltParseFileName",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlDowncaseUnicodeString",
+      "ntoskrnl!RtlHashUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlLookupEntryHashTable",
+      "ntoskrnl!RtlRemoveEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcRemoveInMemoryTombstoneAfterRenameLink",
+    "prototype": "",
+    "rank_score": 3426,
+    "size": 977,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 4,
+    "demangled": "WcCopyAsPlaceHolder",
+    "ea": "0x14002da54",
+    "function_file": "functions/14002da54_WcCopyAsPlaceHolder.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateExtraCreateParameterFromLookasideList",
+      "FLTMGR!FltAllocateExtraCreateParameterList",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltFreeExtraCreateParameterList",
+      "FLTMGR!FltFsControlFile",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltInsertExtraCreateParameter",
+      "FLTMGR!FltIsEcpAcknowledged",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyAsPlaceHolder",
+    "prototype": "",
+    "rank_score": 3297,
+    "size": 2455,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "WcCopyFile",
+    "ea": "0x14001d8dc",
+    "function_file": "functions/14001d8dc_WcCopyFile.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateExtraCreateParameterFromLookasideList",
+      "FLTMGR!FltAllocateExtraCreateParameterList",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltFreeExtraCreateParameterList",
+      "FLTMGR!FltInsertExtraCreateParameter",
+      "FLTMGR!FltIsEcpAcknowledged",
+      "FLTMGR!FltQueryInformationFile",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyFile",
+    "prototype": "",
+    "rank_score": 2886,
+    "size": 1860,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WcSetupVolumeInformationHandler",
+    "ea": "0x140002520",
+    "function_file": "functions/140002520_WcSetupVolumeInformationHandler.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx",
+      "FLTMGR!FltCreateSystemVolumeInformationFolder",
+      "FLTMGR!FltGetVolumeFromName",
+      "FLTMGR!FltGetVolumeName",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltWriteFile",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcSetupVolumeInformationHandler",
+    "prototype": "",
+    "rank_score": 2876,
+    "size": 1378,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WcSetBootConfiguration",
+    "ea": "0x140035804",
+    "function_file": "functions/140035804_WcSetBootConfiguration.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlGUIDFromString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "ReparseTag"
+    ],
+    "name": "WcSetBootConfiguration",
+    "prototype": "",
+    "rank_score": 2709,
+    "size": 1743,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 2,
+    "demangled": "WcPrepareForDelete",
+    "ea": "0x140027854",
+    "function_file": "functions/140027854_WcPrepareForDelete.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltQueryDirectoryFile",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcPrepareForDelete",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 2655,
+    "size": 1737,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "WcPreCreateExpansion",
+    "ea": "0x140018e28",
+    "function_file": "functions/140018e28_WcPreCreateExpansion.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltGetVolumeName",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcPreCreateExpansion",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 2638,
+    "size": 1387,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "WcProcessSetRenameInformation",
+    "ea": "0x140027f24",
+    "function_file": "functions/140027f24_WcProcessSetRenameInformation.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcProcessSetRenameInformation",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 2470,
+    "size": 1607,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 1,
+    "demangled": "WcProcessWciReparsePointOpen",
+    "ea": "0x140026de0",
+    "function_file": "functions/140026de0_WcProcessWciReparsePointOpen.md",
+    "matched_imports": [
+      "FLTMGR!FltFlushBuffers2",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!IoSetShadowFileInformation"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcProcessWciReparsePointOpen",
+    "prototype": "",
+    "rank_score": 2459,
+    "size": 2368,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "WcAddInMemoryTombstone",
+    "ea": "0x14001bcec",
+    "function_file": "functions/14001bcec_WcAddInMemoryTombstone.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlCreateHashTable",
+      "ntoskrnl!RtlDeleteHashTable",
+      "ntoskrnl!RtlDowncaseUnicodeString",
+      "ntoskrnl!RtlHashUnicodeString",
+      "ntoskrnl!RtlInsertEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcAddInMemoryTombstone",
+    "prototype": "",
+    "rank_score": 2422,
+    "size": 562,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "WcPreCreate",
+    "ea": "0x140024330",
+    "function_file": "functions/140024330_WcPreCreate.md",
+    "matched_imports": [
+      "FLTMGR!FltAddOpenReparseEntry",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcPreCreate",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 2283,
+    "size": 1261,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "WcReopenFile",
+    "ea": "0x140020434",
+    "function_file": "functions/140020434_WcReopenFile.md",
+    "matched_imports": [
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltGetVolumeFromInstance",
+      "FLTMGR!FltGetVolumeName",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltQueryInformationFile",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcReopenFile",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, PHANDLE FileHandle, PFILE_OBJECT *)",
+    "rank_score": 2263,
+    "size": 794,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WcShouldAutoAttach",
+    "ea": "0x14002e3f4",
+    "function_file": "functions/14002e3f4_WcShouldAutoAttach.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocatePoolAlignedWithTag",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx",
+      "FLTMGR!FltGetVolumeName",
+      "FLTMGR!FltReadFile",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcShouldAutoAttach",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE InitiatingInstance, PFLT_VOLUME Volume)",
+    "rank_score": 2261,
+    "size": 1100,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WcGetSetSiloContext",
+    "ea": "0x140014570",
+    "function_file": "functions/140014570_WcGetSetSiloContext.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!PsCreateSiloContext",
+      "ntoskrnl!PsDereferenceSiloContext",
+      "ntoskrnl!PsGetSiloContext",
+      "ntoskrnl!PsInsertSiloContext",
+      "ntoskrnl!PsIsHostSilo",
+      "ntoskrnl!RtlInitializeGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "WcGetSetSiloContext",
+    "prototype": "",
+    "rank_score": 2231,
+    "size": 836,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WcContextCleanup",
+    "ea": "0x140030060",
+    "function_file": "functions/140030060_WcContextCleanup.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "WcContextCleanup",
+    "prototype": "",
+    "rank_score": 2230,
+    "size": 532,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WcClearDirectoryTable",
+    "ea": "0x14001d42c",
+    "function_file": "functions/14001d42c_WcClearDirectoryTable.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceExclusive",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltReleaseResource",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlEndEnumerationHashTable",
+      "ntoskrnl!RtlEnumerateEntryHashTable",
+      "ntoskrnl!RtlInitEnumerationHashTable",
+      "ntoskrnl!RtlRemoveEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcClearDirectoryTable",
+    "prototype": "",
+    "rank_score": 2214,
+    "size": 313,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WcPreNetworkQueryOpen",
+    "ea": "0x140024830",
+    "function_file": "functions/140024830_WcPreNetworkQueryOpen.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateExtraCreateParameterFromLookasideList",
+      "FLTMGR!FltAllocateExtraCreateParameterList",
+      "FLTMGR!FltFindExtraCreateParameter",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltInsertExtraCreateParameter",
+      "FLTMGR!FltObjectReference",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!FsRtlSetEcpListIntoIrp"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcPreNetworkQueryOpen",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 2080,
+    "size": 941,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WcCopyAsPlaceHolderHandler",
+    "ea": "0x14002befc",
+    "function_file": "functions/14002befc_WcCopyAsPlaceHolderHandler.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyAsPlaceHolderHandler",
+    "prototype": "",
+    "rank_score": 2049,
+    "size": 2433,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "WcPostCleanup",
+    "ea": "0x140033f90",
+    "function_file": "functions/140033f90_WcPostCleanup.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcPostCleanup",
+    "prototype": "",
+    "rank_score": 1945,
+    "size": 1056,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 10,
+    "demangled": "WcGetSetContextFileObject",
+    "ea": "0x140029608",
+    "function_file": "functions/140029608_WcGetSetContextFileObject.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileContext",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!PsGetParentSilo"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcGetSetContextFileObject",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, int, __int64, __int64)",
+    "rank_score": 1866,
+    "size": 1641,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "WcCreateTombstone",
+    "ea": "0x14001bf24",
+    "function_file": "functions/14001bf24_WcCreateTombstone.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateExtraCreateParameterFromLookasideList",
+      "FLTMGR!FltAllocateExtraCreateParameterList",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltFreeExtraCreateParameterList",
+      "FLTMGR!FltInsertExtraCreateParameter",
+      "FLTMGR!FltIsEcpAcknowledged",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsGetHostSilo"
+    ],
+    "matched_strings": [],
+    "name": "WcCreateTombstone",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance)",
+    "rank_score": 1864,
+    "size": 793,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "WcCopyFileHandler",
+    "ea": "0x14001a62c",
+    "function_file": "functions/14001a62c_WcCopyFileHandler.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyFileHandler",
+    "prototype": "",
+    "rank_score": 1862,
+    "size": 2646,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcCopyDataStreamByName",
+    "ea": "0x14001d5b0",
+    "function_file": "functions/14001d5b0_WcCopyDataStreamByName.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyDataStreamByName",
+    "prototype": "",
+    "rank_score": 1860,
+    "size": 806,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WcRemoveUnionContext",
+    "ea": "0x14001fe40",
+    "function_file": "functions/14001fe40_WcRemoveUnionContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceExclusive",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseResource",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "WcRemoveUnionContext",
+    "prototype": "",
+    "rank_score": 1840,
+    "size": 1515,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WcGetSetFileContext",
+    "ea": "0x140029f34",
+    "function_file": "functions/140029f34_WcGetSetFileContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetFileContext",
+      "ntoskrnl!ExInitializeRundownProtection",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "WcGetSetFileContext",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, __int64)",
+    "rank_score": 1817,
+    "size": 400,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WcRemoveInMemoryTombstone",
+    "ea": "0x14001ce88",
+    "function_file": "functions/14001ce88_WcRemoveInMemoryTombstone.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlDowncaseUnicodeString",
+      "ntoskrnl!RtlHashUnicodeString",
+      "ntoskrnl!RtlLookupEntryHashTable",
+      "ntoskrnl!RtlRemoveEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcRemoveInMemoryTombstone",
+    "prototype": "",
+    "rank_score": 1807,
+    "size": 353,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WcPreTransaction",
+    "ea": "0x1400303e8",
+    "function_file": "functions/1400303e8_WcPreTransaction.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!PsGetSiloIdentifier",
+      "ntoskrnl!RtlHashUnicodeString"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcPreTransaction",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 1676,
+    "size": 793,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 2,
+    "demangled": "WcEnumerateDirectoryWithMerge",
+    "ea": "0x140014c90",
+    "function_file": "functions/140014c90_WcEnumerateDirectoryWithMerge.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!FsRtlDoesNameContainWildCards",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsGetParentSilo"
+    ],
+    "matched_strings": [],
+    "name": "WcEnumerateDirectoryWithMerge",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, int, char, int, __int64, char, __int64)",
+    "rank_score": 1645,
+    "size": 2067,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WcRedirectCallbackData",
+    "ea": "0x140014ad4",
+    "function_file": "functions/140014ad4_WcRedirectCallbackData.md",
+    "matched_imports": [
+      "FLTMGR!FltSetCallbackDataDirty",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoReplaceFileObjectName",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcRedirectCallbackData",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 1629,
+    "size": 436,
+    "tags": [
+      "file_ops",
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WcCleanupLayer",
+    "ea": "0x14001d23c",
+    "function_file": "functions/14001d23c_WcCleanupLayer.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeleteHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcCleanupLayer",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1617,
+    "size": 272,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WcInsertDirectoryTableEntry",
+    "ea": "0x14001e94c",
+    "function_file": "functions/14001e94c_WcInsertDirectoryTableEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceExclusive",
+      "FLTMGR!FltReleaseResource",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlHashUnicodeString",
+      "ntoskrnl!RtlInsertEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcInsertDirectoryTableEntry",
+    "prototype": "",
+    "rank_score": 1615,
+    "size": 293,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WcPostDismountVolume",
+    "ea": "0x14002f474",
+    "function_file": "functions/14002f474_WcPostDismountVolume.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceExclusive",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseResource",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlEnumerateGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "WcPostDismountVolume",
+    "prototype": "",
+    "rank_score": 1604,
+    "size": 268,
+    "tags": []
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 2,
+    "demangled": "WcProcessWciReparsePointBounce",
+    "ea": "0x140026210",
+    "function_file": "functions/140026210_WcProcessWciReparsePointBounce.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcProcessWciReparsePointBounce",
+    "prototype": "",
+    "rank_score": 1389,
+    "size": 2368,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "WcDeleteTombstone",
+    "ea": "0x14001c244",
+    "function_file": "functions/14001c244_WcDeleteTombstone.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcDeleteTombstone",
+    "prototype": "",
+    "rank_score": 1265,
+    "size": 909,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WcOpenReparsePoint",
+    "ea": "0x14002d790",
+    "function_file": "functions/14002d790_WcOpenReparsePoint.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateExtraCreateParameterFromLookasideList",
+      "FLTMGR!FltAllocateExtraCreateParameterList",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltFreeExtraCreateParameterList",
+      "FLTMGR!FltInsertExtraCreateParameter",
+      "ntoskrnl!IoGetSilo"
+    ],
+    "matched_strings": [],
+    "name": "WcOpenReparsePoint",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, ACCESS_MASK DesiredAccess, ULONG, ULONG, __int64, PHANDLE FileHandle, PFILE_OBJECT *FileObject)",
+    "rank_score": 1260,
+    "size": 702,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "WcPreFsControl",
+    "ea": "0x140023150",
+    "function_file": "functions/140023150_WcPreFsControl.md",
+    "matched_imports": [
+      "FLTMGR!FltFsControlFile",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!PsIsCurrentThreadInServerSilo"
+    ],
+    "matched_strings": [],
+    "name": "WcPreFsControl",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 1248,
+    "size": 1260,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "WcCopyFileDataStreams",
+    "ea": "0x14002fb20",
+    "function_file": "functions/14002fb20_WcCopyFileDataStreams.md",
+    "matched_imports": [
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyFileDataStreams",
+    "prototype": "",
+    "rank_score": 1243,
+    "size": 859,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WcExpandDirectory",
+    "ea": "0x140017f64",
+    "function_file": "functions/140017f64_WcExpandDirectory.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcExpandDirectory",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject)",
+    "rank_score": 1235,
+    "size": 746,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "WcPartiallyExpandDirectory",
+    "ea": "0x14002ef40",
+    "function_file": "functions/14002ef40_WcPartiallyExpandDirectory.md",
+    "matched_imports": [
+      "FLTMGR!FltParseFileName",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcPartiallyExpandDirectory",
+    "prototype": "__int64 __usercall@<rax>(PFLT_CALLBACK_DATA CallbackData@<rcx>, PVOID FltObject@<rdx>, PVOID Object@<r8>, char, PUNICODE_STRING)",
+    "rank_score": 1224,
+    "size": 610,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WcPreGetUnions",
+    "ea": "0x14001a364",
+    "function_file": "functions/14001a364_WcPreGetUnions.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite",
+      "ntoskrnl!PsGetCurrentServerSilo",
+      "ntoskrnl!PsIsHostSilo"
+    ],
+    "matched_strings": [],
+    "name": "WcPreGetUnions",
+    "prototype": "",
+    "rank_score": 1224,
+    "size": 704,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WcLookupDirectoryTableEntry",
+    "ea": "0x14002f620",
+    "function_file": "functions/14002f620_WcLookupDirectoryTableEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceShared",
+      "FLTMGR!FltReleaseResource",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlGetNextEntryHashTable",
+      "ntoskrnl!RtlHashUnicodeString",
+      "ntoskrnl!RtlLookupEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcLookupDirectoryTableEntry",
+    "prototype": "",
+    "rank_score": 1214,
+    "size": 232,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WcFreeInMemoryTombstoneHashTable",
+    "ea": "0x14001c5d8",
+    "function_file": "functions/14001c5d8_WcFreeInMemoryTombstoneHashTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeleteHashTable",
+      "ntoskrnl!RtlEndEnumerationHashTable",
+      "ntoskrnl!RtlEnumerateEntryHashTable",
+      "ntoskrnl!RtlInitEnumerationHashTable",
+      "ntoskrnl!RtlRemoveEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcFreeInMemoryTombstoneHashTable",
+    "prototype": "__int64 __fastcall(PRTL_DYNAMIC_HASH_TABLE HashTable)",
+    "rank_score": 1213,
+    "size": 170,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "WcUnionsExistForInstance",
+    "ea": "0x140001580",
+    "function_file": "functions/140001580_WcUnionsExistForInstance.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!PsDereferenceSiloContext",
+      "ntoskrnl!PsGetSiloContext",
+      "ntoskrnl!PsIsHostSilo"
+    ],
+    "matched_strings": [],
+    "name": "WcUnionsExistForInstance",
+    "prototype": "",
+    "rank_score": 1211,
+    "size": 301,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "WcPortMessage",
+    "ea": "0x140031e40",
+    "function_file": "functions/140031e40_WcPortMessage.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmIsUserAddress",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "WcPortMessage",
+    "prototype": "NTSTATUS __stdcall(PVOID PortCookie, PVOID InputBuffer, ULONG InputBufferLength, PVOID OutputBuffer, ULONG OutputBufferLength, PULONG ReturnOutputBufferLength)",
+    "rank_score": 1056,
+    "size": 1719,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "WcPostSetInformation",
+    "ea": "0x1400318f0",
+    "function_file": "functions/1400318f0_WcPostSetInformation.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcPostSetInformation",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 1042,
+    "size": 1354,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WcCopyStreamData",
+    "ea": "0x140017b48",
+    "function_file": "functions/140017b48_WcCopyStreamData.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocatePoolAlignedWithTag",
+      "FLTMGR!FltFlushBuffers",
+      "FLTMGR!FltFreePoolAlignedWithTag",
+      "FLTMGR!FltReadFile",
+      "FLTMGR!FltWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyStreamData",
+    "prototype": "",
+    "rank_score": 1029,
+    "size": 586,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WcCreateUnionContext",
+    "ea": "0x14001e4f8",
+    "function_file": "functions/14001e4f8_WcCreateUnionContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitializeGenericTableAvl",
+      "ntoskrnl!RtlRandomEx"
+    ],
+    "matched_strings": [],
+    "name": "WcCreateUnionContext",
+    "prototype": "__int64 __usercall@<rax>(PCUNICODE_STRING SourceString@<rcx>, __int64)",
+    "rank_score": 1027,
+    "size": 438,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WcCreateExpansionContext",
+    "ea": "0x140017d98",
+    "function_file": "functions/140017d98_WcCreateExpansionContext.md",
+    "matched_imports": [
+      "FLTMGR!FltCbdqInitialize",
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "WcCreateExpansionContext",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance)",
+    "rank_score": 1024,
+    "size": 344,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WcPopulateDirectory",
+    "ea": "0x140018b9c",
+    "function_file": "functions/140018b9c_WcPopulateDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcPopulateDirectory",
+    "prototype": "",
+    "rank_score": 1021,
+    "size": 643,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "WcIsDirectoryEmpty",
+    "ea": "0x14001eadc",
+    "function_file": "functions/14001eadc_WcIsDirectoryEmpty.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcIsDirectoryEmpty",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject)",
+    "rank_score": 1019,
+    "size": 467,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WcRemoveTombstonesFromDirectory",
+    "ea": "0x14001cff0",
+    "function_file": "functions/14001cff0_WcRemoveTombstonesFromDirectory.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcRemoveTombstonesFromDirectory",
+    "prototype": "",
+    "rank_score": 1019,
+    "size": 479,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "WcHandleQueryOnCreateEcp",
+    "ea": "0x140026080",
+    "function_file": "functions/140026080_WcHandleQueryOnCreateEcp.md",
+    "matched_imports": [
+      "FLTMGR!FltFindExtraCreateParameter",
+      "FLTMGR!FltGetEcpListFromCallbackData",
+      "FLTMGR!FltIsEcpAcknowledged",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "WcHandleQueryOnCreateEcp",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData, PFLT_INSTANCE Instance, PFILE_OBJECT FileObject)",
+    "rank_score": 1011,
+    "size": 391,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WcAcknowledgeRedirectionEcp",
+    "ea": "0x14002f21c",
+    "function_file": "functions/14002f21c_WcAcknowledgeRedirectionEcp.md",
+    "matched_imports": [
+      "FLTMGR!FltAcknowledgeEcp",
+      "FLTMGR!FltFindExtraCreateParameter",
+      "FLTMGR!FltGetEcpListFromCallbackData",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "WcAcknowledgeRedirectionEcp",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData, PFLT_INSTANCE Instance, PFILE_OBJECT FileObject)",
+    "rank_score": 1010,
+    "size": 423,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcOpenDefaultStream",
+    "ea": "0x14001ef50",
+    "function_file": "functions/14001ef50_WcOpenDefaultStream.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcOpenDefaultStream",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, __int64)",
+    "rank_score": 1006,
+    "size": 308,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WcCleanupUnionContext",
+    "ea": "0x14001d390",
+    "function_file": "functions/14001d390_WcCleanupUnionContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEnumerateGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "WcCleanupUnionContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1003,
+    "size": 148,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "WcGenerateFileName",
+    "ea": "0x140023070",
+    "function_file": "functions/140023070_WcGenerateFileName.md",
+    "matched_imports": [
+      "FLTMGR!FltCheckAndGrowNameControl",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltGetFileNameInformationUnsafe",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcGenerateFileName",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, PFLT_CALLBACK_DATA CallbackData@<r8>, __int64, PFLT_NAME_CONTROL NameCtrl)",
+    "rank_score": 1002,
+    "size": 204,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WcPostNetworkQueryOpen",
+    "ea": "0x140028a80",
+    "function_file": "functions/140028a80_WcPostNetworkQueryOpen.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltQueryInformationByName",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcPostNetworkQueryOpen",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 870,
+    "size": 542,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "WcRelativeStreamOpen",
+    "ea": "0x14001fc48",
+    "function_file": "functions/14001fc48_WcRelativeStreamOpen.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcRelativeStreamOpen",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT *FileObject)",
+    "rank_score": 858,
+    "size": 496,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "WcLaunchExpansion",
+    "ea": "0x140018970",
+    "function_file": "functions/140018970_WcLaunchExpansion.md",
+    "matched_imports": [
+      "FLTMGR!FltCbdqInsertIo",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "WcLaunchExpansion",
+    "prototype": "__int64 __usercall@<rax>(PVOID FltObject@<rcx>, PVOID Object@<rdx>, int, int)",
+    "rank_score": 843,
+    "size": 547,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WcIsTargetPartialDirectory",
+    "ea": "0x14001ecb8",
+    "function_file": "functions/14001ecb8_WcIsTargetPartialDirectory.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcIsTargetPartialDirectory",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, __int64, __int64)",
+    "rank_score": 834,
+    "size": 656,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "WcGetReparseData",
+    "ea": "0x140029d34",
+    "function_file": "functions/140029d34_WcGetReparseData.md",
+    "matched_imports": [
+      "FLTMGR!FltFsControlFile",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WcGetReparseData",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, __int64)",
+    "rank_score": 831,
+    "size": 506,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WcQuerySecurity",
+    "ea": "0x14001fa5c",
+    "function_file": "functions/14001fa5c_WcQuerySecurity.md",
+    "matched_imports": [
+      "FLTMGR!FltQuerySecurityObject",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WcQuerySecurity",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, SECURITY_INFORMATION SecurityInformation@<r8d>, __int64)",
+    "rank_score": 827,
+    "size": 483,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WcInitializeDirectoryTable",
+    "ea": "0x14001e80c",
+    "function_file": "functions/14001e80c_WcInitializeDirectoryTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!RtlCreateHashTableEx",
+      "ntoskrnl!RtlDeleteHashTable"
+    ],
+    "matched_strings": [],
+    "name": "WcInitializeDirectoryTable",
+    "prototype": "",
+    "rank_score": 826,
+    "size": 312,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WcPreSetSecurity",
+    "ea": "0x1400287d0",
+    "function_file": "functions/1400287d0_WcPreSetSecurity.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection"
+    ],
+    "matched_strings": [],
+    "name": "WcPreSetSecurity",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 818,
+    "size": 357,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "WcSynchronizeExpansionPreopWithReason",
+    "ea": "0x140023840",
+    "function_file": "functions/140023840_WcSynchronizeExpansionPreopWithReason.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection"
+    ],
+    "matched_strings": [],
+    "name": "WcSynchronizeExpansionPreopWithReason",
+    "prototype": "__int64 __usercall@<rax>(PFLT_CALLBACK_DATA CallbackData@<rcx>, int, __int64)",
+    "rank_score": 817,
+    "size": 524,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WcFreeUnionTableEntry",
+    "ea": "0x14001e700",
+    "function_file": "functions/14001e700_WcFreeUnionTableEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltDeleteContext",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "WcFreeUnionTableEntry",
+    "prototype": "RTL_AVL_FREE_ROUTINE",
+    "rank_score": 815,
+    "size": 262,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WcPreDismountLockRemove",
+    "ea": "0x14001a148",
+    "function_file": "functions/14001a148_WcPreDismountLockRemove.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!PsGetCurrentSilo",
+      "ntoskrnl!PsIsHostSilo"
+    ],
+    "matched_strings": [],
+    "name": "WcPreDismountLockRemove",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 190,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "WcPreDirectoryControl",
+    "ea": "0x140030a70",
+    "function_file": "functions/140030a70_WcPreDirectoryControl.md",
+    "matched_imports": [
+      "FLTMGR!FltLockUserBuffer",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "WcPreDirectoryControl",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 814,
+    "size": 733,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 6,
+    "demangled": "WcSetPlaceHolderFlagsSynchronized",
+    "ea": "0x14002893c",
+    "function_file": "functions/14002893c_WcSetPlaceHolderFlagsSynchronized.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection"
+    ],
+    "matched_strings": [],
+    "name": "WcSetPlaceHolderFlagsSynchronized",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData, PVOID FltObject, PVOID Object)",
+    "rank_score": 814,
+    "size": 311,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "WcIsSiloFileObject",
+    "ea": "0x140001b00",
+    "function_file": "functions/140001b00_WcIsSiloFileObject.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!IoGetSilo",
+      "ntoskrnl!PsIsHostSilo"
+    ],
+    "matched_strings": [],
+    "name": "WcIsSiloFileObject",
+    "prototype": "",
+    "rank_score": 813,
+    "size": 140,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcPreFsctlQueryAllocatedRanges",
+    "ea": "0x140023a54",
+    "function_file": "functions/140023a54_WcPreFsctlQueryAllocatedRanges.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "WcPreFsctlQueryAllocatedRanges",
+    "prototype": "",
+    "rank_score": 807,
+    "size": 486,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateTlgAggregateSession",
+    "ea": "0x140022a10",
+    "function_file": "functions/140022a10_CreateTlgAggregateSession.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExAllocateTimer",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "CreateTlgAggregateSession",
+    "prototype": "",
+    "rank_score": 806,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WcPreQueryEa",
+    "ea": "0x140028670",
+    "function_file": "functions/140028670_WcPreQueryEa.md",
+    "matched_imports": [
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!FsRtlQueryKernelEaFile",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "WcPreQueryEa",
+    "prototype": "",
+    "rank_score": 805,
+    "size": 345,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WcPreSetEa",
+    "ea": "0x140028e00",
+    "function_file": "functions/140028e00_WcPreSetEa.md",
+    "matched_imports": [
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!FsRtlSetKernelEaFile",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "WcPreSetEa",
+    "prototype": "",
+    "rank_score": 805,
+    "size": 283,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WcIsInstanceUnionRootDirectory",
+    "ea": "0x1400032b8",
+    "function_file": "functions/1400032b8_WcIsInstanceUnionRootDirectory.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcIsInstanceUnionRootDirectory",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject)",
+    "rank_score": 803,
+    "size": 219,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcCopySectionObjectPointers",
+    "ea": "0x1400148bc",
+    "function_file": "functions/1400148bc_WcCopySectionObjectPointers.md",
+    "matched_imports": [
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!IoSetShadowFileInformation"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcCopySectionObjectPointers",
+    "prototype": "",
+    "rank_score": 655,
+    "size": 252,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WcCopyFileBasicInformation",
+    "ea": "0x14001e028",
+    "function_file": "functions/14001e028_WcCopyFileBasicInformation.md",
+    "matched_imports": [
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyFileBasicInformation",
+    "prototype": "__int64 __fastcall(PFILE_OBJECT FileObject, PFLT_INSTANCE Instance, PFILE_OBJECT, PFLT_INSTANCE, int)",
+    "rank_score": 638,
+    "size": 506,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "WcPreFsctlSetReparsePoint",
+    "ea": "0x140023c40",
+    "function_file": "functions/140023c40_WcPreFsctlSetReparsePoint.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!FsRtlValidateReparsePointBuffer"
+    ],
+    "matched_strings": [],
+    "name": "WcPreFsctlSetReparsePoint",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 635,
+    "size": 591,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcSetConfiguration",
+    "ea": "0x140035edc",
+    "function_file": "functions/140035edc_WcSetConfiguration.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "WcSetConfiguration",
+    "prototype": "",
+    "rank_score": 627,
+    "size": 459,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WcPreLockControl",
+    "ea": "0x140034bb0",
+    "function_file": "functions/140034bb0_WcPreLockControl.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "WcPreLockControl",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 620,
+    "size": 549,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "WcGetInstanceFromVolumeName",
+    "ea": "0x14002c9dc",
+    "function_file": "functions/14002c9dc_WcGetInstanceFromVolumeName.md",
+    "matched_imports": [
+      "FLTMGR!FltGetVolumeFromName",
+      "FLTMGR!FltGetVolumeInstanceFromName",
+      "FLTMGR!FltObjectDereference"
+    ],
+    "matched_strings": [],
+    "name": "WcGetInstanceFromVolumeName",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING VolumeName, PCUNICODE_STRING InstanceName, PFLT_INSTANCE *RetInstance)",
+    "rank_score": 619,
+    "size": 261,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WcPrePopulatePath",
+    "ea": "0x14001939c",
+    "function_file": "functions/14001939c_WcPrePopulatePath.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcPrePopulatePath",
+    "prototype": "",
+    "rank_score": 618,
+    "size": 429,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcEnumerateDirectorySingleEntry",
+    "ea": "0x14002fe84",
+    "function_file": "functions/14002fe84_WcEnumerateDirectorySingleEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltQueryDirectoryFileEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WcEnumerateDirectorySingleEntry",
+    "prototype": "",
+    "rank_score": 617,
+    "size": 469,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "WcCompareUnionTableEntry",
+    "ea": "0x140028ce0",
+    "function_file": "functions/140028ce0_WcCompareUnionTableEntry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcCompareUnionTableEntry",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 613,
+    "size": 279,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WcFastLookupInLayer",
+    "ea": "0x14003027c",
+    "function_file": "functions/14003027c_WcFastLookupInLayer.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltQueryDirectoryFileEx",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "WcFastLookupInLayer",
+    "prototype": "",
+    "rank_score": 607,
+    "size": 355,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "WcEnumerateDirectory",
+    "ea": "0x14002b8fc",
+    "function_file": "functions/14002b8fc_WcEnumerateDirectory.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateCallbackData",
+      "FLTMGR!FltFreeCallbackData",
+      "FLTMGR!FltPerformSynchronousIo"
+    ],
+    "matched_strings": [],
+    "name": "WcEnumerateDirectory",
+    "prototype": "",
+    "rank_score": 606,
+    "size": 237,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "WcPreClose",
+    "ea": "0x140024e60",
+    "function_file": "functions/140024e60_WcPreClose.md",
+    "matched_imports": [
+      "FLTMGR!FltDeleteContext",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "WcPreClose",
+    "prototype": "",
+    "rank_score": 605,
+    "size": 235,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WcCopyFileCompression",
+    "ea": "0x14001e228",
+    "function_file": "functions/14001e228_WcCopyFileCompression.md",
+    "matched_imports": [
+      "FLTMGR!FltFsControlFile"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyFileCompression",
+    "prototype": "__int64 __fastcall(PFILE_OBJECT FileObject, PFLT_INSTANCE Instance, PFILE_OBJECT, PFLT_INSTANCE)",
+    "rank_score": 437,
+    "size": 325,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "WcOpenPlaceHolder",
+    "ea": "0x14002d5f8",
+    "function_file": "functions/14002d5f8_WcOpenPlaceHolder.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "WcOpenPlaceHolder",
+    "prototype": "",
+    "rank_score": 433,
+    "size": 402,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WcPrepareTargetDirectoryForRenameOrLink",
+    "ea": "0x14001f08c",
+    "function_file": "functions/14001f08c_WcPrepareTargetDirectoryForRenameOrLink.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltParseFileName"
+    ],
+    "matched_strings": [],
+    "name": "WcPrepareTargetDirectoryForRenameOrLink",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 428,
+    "size": 308,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 29,
+    "demangled": "WcGetContextFileObject",
+    "ea": "0x140001500",
+    "function_file": "functions/140001500_WcGetContextFileObject.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileContext",
+      "FLTMGR!FltGetStreamContext"
+    ],
+    "matched_strings": [],
+    "name": "WcGetContextFileObject",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject)",
+    "rank_score": 426,
+    "size": 111,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcSetFileAttributes",
+    "ea": "0x140020840",
+    "function_file": "functions/140020840_WcSetFileAttributes.md",
+    "matched_imports": [
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "WcSetFileAttributes",
+    "prototype": "__int64 __fastcall(PFILE_OBJECT FileObject, PFLT_INSTANCE Instance)",
+    "rank_score": 426,
+    "size": 322,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WcProcessSetLinkInformation",
+    "ea": "0x140028574",
+    "function_file": "functions/140028574_WcProcessSetLinkInformation.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "WcProcessSetLinkInformation",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 417,
+    "size": 170,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x1400360b0",
+    "function_file": "functions/1400360b0_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 185,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcCopySourceList",
+    "ea": "0x1400294b4",
+    "function_file": "functions/1400294b4_WcCopySourceList.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WcCopySourceList",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 333,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WcCopyAsPlaceHolderWorker",
+    "ea": "0x140002d20",
+    "function_file": "functions/140002d20_WcCopyAsPlaceHolderWorker.md",
+    "matched_imports": [
+      "FLTMGR!FltFreeGenericWorkItem",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "WcCopyAsPlaceHolderWorker",
+    "prototype": "void __stdcall(PFLT_GENERIC_WORKITEM FltWorkItem, PVOID FltObject, PVOID Context)",
+    "rank_score": 414,
+    "size": 223,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WcFreeEnumContexts",
+    "ea": "0x140002048",
+    "function_file": "functions/140002048_WcFreeEnumContexts.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "WcFreeEnumContexts",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 115,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 14,
+    "demangled": "WcIsPlaceHolder",
+    "ea": "0x140001bf8",
+    "function_file": "functions/140001bf8_WcIsPlaceHolder.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "WcIsPlaceHolder",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14002248c",
+    "function_file": "functions/14002248c_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TlgAggregateInternalProviderCallback(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *)",
+    "ea": "0x14002f1b0",
+    "function_file": "functions/14002f1b0_TlgAggregateInternalProviderCallback_GUID_const_ulong_uchar_unsigned_int64_unsigned_int64_EVENT_FILTER_DESCRIP.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExTryAcquirePushLockExclusiveEx"
+    ],
+    "matched_strings": [],
+    "name": "?TlgAggregateInternalProviderCallback@@YAXPEBU_GUID@@KE_K1PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z",
+    "prototype": "void __fastcall(const struct _GUID *, unsigned int, unsigned __int8, unsigned __int64, unsigned __int64, struct _EVENT_FILTER_DESCRIPTOR *, void *)",
+    "rank_score": 412,
+    "size": 100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "WcExpansionCsqCompleteCanceledIo",
+    "ea": "0x1400183d0",
+    "function_file": "functions/1400183d0_WcExpansionCsqCompleteCanceledIo.md",
+    "matched_imports": [
+      "FLTMGR!FltCompletePendedPostOperation",
+      "FLTMGR!FltCompletePendedPreOperation"
+    ],
+    "matched_strings": [],
+    "name": "WcExpansionCsqCompleteCanceledIo",
+    "prototype": "void __stdcall(PFLT_CALLBACK_DATA_QUEUE Cbdq, PFLT_CALLBACK_DATA Cbd)",
+    "rank_score": 411,
+    "size": 72,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "WcIsExpanded",
+    "ea": "0x140001ffc",
+    "function_file": "functions/140001ffc_WcIsExpanded.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "WcIsExpanded",
+    "prototype": "",
+    "rank_score": 408,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CancelTimerCallbacksAndDeleteTimer",
+    "ea": "0x1400228d8",
+    "function_file": "functions/1400228d8_CancelTimerCallbacksAndDeleteTimer.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteTimer",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CancelTimerCallbacksAndDeleteTimer",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WcClearUnionTable",
+    "ea": "0x14001d56c",
+    "function_file": "functions/14001d56c_WcClearUnionTable.md",
+    "matched_imports": [
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEnumerateGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "WcClearUnionTable",
+    "prototype": "__int64 __fastcall(PRTL_AVL_TABLE Table)",
+    "rank_score": 403,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDDqDlZ",
+    "ea": "0x140002e48",
+    "function_file": "functions/140002e48_WPP_RECORDER_SF_sDDqDlZ.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WPP_RECORDER_SF_sDDqDlZ",
+    "prototype": "",
+    "rank_score": 327,
+    "size": 573,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDZDld",
+    "ea": "0x140004448",
+    "function_file": "functions/140004448_WPP_RECORDER_SF_sDZDld.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WPP_RECORDER_SF_sDZDld",
+    "prototype": "",
+    "rank_score": 327,
+    "size": 526,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDZZd",
+    "ea": "0x14000465c",
+    "function_file": "functions/14000465c_WPP_RECORDER_SF_sDZZd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WPP_RECORDER_SF_sDZZd",
+    "prototype": "",
+    "rank_score": 327,
+    "size": 576,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDqZDld",
+    "ea": "0x1400051b0",
+    "function_file": "functions/1400051b0_WPP_RECORDER_SF_sDqZDld.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WPP_RECORDER_SF_sDqZDld",
+    "prototype": "",
+    "rank_score": 327,
+    "size": 575,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WcProcessWciLinkBounce",
+    "ea": "0x140026c9c",
+    "function_file": "functions/140026c9c_WcProcessWciLinkBounce.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c",
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcProcessWciLinkBounce",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 299,
+    "size": 316,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDDld",
+    "ea": "0x140004310",
+    "function_file": "functions/140004310_WPP_RECORDER_SF_sDDld.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WPP_RECORDER_SF_sDDld",
+    "prototype": "",
+    "rank_score": 245,
+    "size": 306,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDq",
+    "ea": "0x140004f40",
+    "function_file": "functions/140004f40_WPP_RECORDER_SF_sDq.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WPP_RECORDER_SF_sDq",
+    "prototype": "",
+    "rank_score": 245,
+    "size": 264,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDqDld",
+    "ea": "0x140005050",
+    "function_file": "functions/140005050_WPP_RECORDER_SF_sDqDld.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WPP_RECORDER_SF_sDqDld",
+    "prototype": "",
+    "rank_score": 245,
+    "size": 343,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 79,
+    "demangled": "WPP_RECORDER_SF_sDd",
+    "ea": "0x1400020c4",
+    "function_file": "functions/1400020c4_WPP_RECORDER_SF_sDd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDd",
+    "prototype": "",
+    "rank_score": 230,
+    "size": 410,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 32,
+    "demangled": "WPP_RECORDER_SF_sD",
+    "ea": "0x140004198",
+    "function_file": "functions/140004198_WPP_RECORDER_SF_sD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sD",
+    "prototype": "",
+    "rank_score": 229,
+    "size": 368,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WcTelemetryAndTracingInit",
+    "ea": "0x140035078",
+    "function_file": "functions/140035078_WcTelemetryAndTracingInit.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderConfigure"
+    ],
+    "matched_strings": [],
+    "name": "WcTelemetryAndTracingInit",
+    "prototype": "",
+    "rank_score": 229,
+    "size": 308,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x140022820",
+    "function_file": "functions/140022820_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcAddSubContext",
+    "ea": "0x14002bc48",
+    "function_file": "functions/14002bc48_WcAddSubContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "WcAddSubContext",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 208,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WcPrepareTargetForRenameOrLink",
+    "ea": "0x14001f1c8",
+    "function_file": "functions/14001f1c8_WcPrepareTargetForRenameOrLink.md",
+    "matched_imports": [
+      "FLTMGR!FltQueryInformationByName"
+    ],
+    "matched_strings": [],
+    "name": "WcPrepareTargetForRenameOrLink",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 696,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "WPP_RECORDER_SF_sDZd",
+    "ea": "0x1400048a4",
+    "function_file": "functions/1400048a4_WPP_RECORDER_SF_sDZd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDZd",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 607,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "WcExpandAndWait",
+    "ea": "0x140014008",
+    "function_file": "functions/140014008_WcExpandAndWait.md",
+    "matched_imports": [
+      "FLTMGR!FltCancellableWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "WcExpandAndWait",
+    "prototype": "__int64 __usercall@<rax>(PFLT_CALLBACK_DATA CallbackData@<rcx>, PVOID FltObject@<rdx>, PVOID Object@<r8>, int, int)",
+    "rank_score": 223,
+    "size": 315,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 21,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001030",
+    "function_file": "functions/140001030_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "WPP_RECORDER_SF_sDdZ",
+    "ea": "0x140004b0c",
+    "function_file": "functions/140004b0c_WPP_RECORDER_SF_sDdZ.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDdZ",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 617,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x140036170",
+    "function_file": "functions/140036170_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 229,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDlLD",
+    "ea": "0x140002ab4",
+    "function_file": "functions/140002ab4_WPP_RECORDER_SF_sDlLD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDlLD",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 297,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_sDlLDd",
+    "ea": "0x140006814",
+    "function_file": "functions/140006814_WPP_RECORDER_SF_sDlLDd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDlLDd",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 335,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "WPP_RECORDER_SF_sDqd",
+    "ea": "0x1400053f8",
+    "function_file": "functions/1400053f8_WPP_RECORDER_SF_sDqd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDqd",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 454,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140006fd8",
+    "function_file": "functions/140006fd8_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "WPP_RECORDER_SF_sDZ",
+    "ea": "0x140002294",
+    "function_file": "functions/140002294_WPP_RECORDER_SF_sDZ.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDZ",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 569,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WcCompareEnumEntries",
+    "ea": "0x14002e848",
+    "function_file": "functions/14002e848_WcCompareEnumEntries.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WcCompareEnumEntries",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 244,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WPP_RECORDER_SF_sDdd",
+    "ea": "0x140004d7c",
+    "function_file": "functions/140004d7c_WPP_RECORDER_SF_sDdd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDdd",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 446,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "WPP_RECORDER_SF_sDD",
+    "ea": "0x140001c44",
+    "function_file": "functions/140001c44_WPP_RECORDER_SF_sDD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_sDD",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 417,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateNewEventEntry",
+    "ea": "0x140007234",
+    "function_file": "functions/140007234_CreateNewEventEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "CreateNewEventEntry",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 545,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "WcAllocateUnicodeString",
+    "ea": "0x14002ee10",
+    "function_file": "functions/14002ee10_WcAllocateUnicodeString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "WcAllocateUnicodeString",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteAgg",
+    "ea": "0x140007ad4",
+    "function_file": "functions/140007ad4_tlgWriteAgg.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteAgg",
+    "prototype": "__int64 __fastcall(int, int, int, int, PEVENT_DATA_DESCRIPTOR)",
+    "rank_score": 205,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FlushEventEntryList",
+    "ea": "0x140022b94",
+    "function_file": "functions/140022b94_FlushEventEntryList.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "FlushEventEntryList",
+    "prototype": "__int64 __fastcall(REGHANDLE RegHandle, PCEVENT_DESCRIPTOR EventDescriptor)",
+    "rank_score": 204,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140003f40",
+    "function_file": "functions/140003f40_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WcLocateSourceDirectory",
+    "ea": "0x14002ee78",
+    "function_file": "functions/14002ee78_WcLocateSourceDirectory.md",
+    "matched_imports": [
+      "FLTMGR!FltQueryDirectoryFile"
+    ],
+    "matched_strings": [],
+    "name": "WcLocateSourceDirectory",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING FileName)",
+    "rank_score": 204,
+    "size": 193,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WcTelemetryAndTracingCleanup",
+    "ea": "0x14001b088",
+    "function_file": "functions/14001b088_WcTelemetryAndTracingCleanup.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogDelete"
+    ],
+    "matched_strings": [],
+    "name": "WcTelemetryAndTracingCleanup",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 46,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "WcCleanupSiloContext",
+    "ea": "0x14001d360",
+    "function_file": "functions/14001d360_WcCleanupSiloContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "WcCleanupSiloContext",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "WcPostRead",
+    "ea": "0x140005960",
+    "function_file": "functions/140005960_WcPostRead.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "WcPostRead",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "ProbeForRead_0",
+    "ea": "0x14000403f",
+    "function_file": "functions/14000403f_ProbeForRead_0.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "ProbeForRead_0",
+    "prototype": "void __stdcall(volatile void *Address, SIZE_T Length, ULONG Alignment)",
+    "rank_score": 107,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WcPostQueryOpen",
+    "ea": "0x1400149c0",
+    "function_file": "functions/1400149c0_WcPostQueryOpen.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\fs\\wci\\wcifs\\create.c"
+    ],
+    "name": "WcPostQueryOpen",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 57,
+    "size": 268,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "WcEnumerateDirectoryWithMunge",
+    "ea": "0x1400154ac",
+    "function_file": "functions/1400154ac_WcEnumerateDirectoryWithMunge.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcEnumerateDirectoryWithMunge",
+    "prototype": "",
+    "rank_score": 44,
+    "size": 1470,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "WcMungeDirectoryEnumerateWithShortnameFileId64",
+    "ea": "0x140015dc4",
+    "function_file": "functions/140015dc4_WcMungeDirectoryEnumerateWithShortnameFileId64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcMungeDirectoryEnumerateWithShortnameFileId64",
+    "prototype": "",
+    "rank_score": 39,
+    "size": 2409,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "WcMungeDirectoryEnumerateWithoutShortnameFileId64",
+    "ea": "0x140016d68",
+    "function_file": "functions/140016d68_WcMungeDirectoryEnumerateWithoutShortnameFileId64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcMungeDirectoryEnumerateWithoutShortnameFileId64",
+    "prototype": "",
+    "rank_score": 37,
+    "size": 2475,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WcTelemetryPostExpansionComplete",
+    "ea": "0x14001b0bc",
+    "function_file": "functions/14001b0bc_WcTelemetryPostExpansionComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcTelemetryPostExpansionComplete",
+    "prototype": "",
+    "rank_score": 37,
+    "size": 1122,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 64,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140007c60",
+    "function_file": "functions/140007c60_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "LookUpTableFlushComplete",
+    "ea": "0x14002ea5c",
+    "function_file": "functions/14002ea5c_LookUpTableFlushComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LookUpTableFlushComplete",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 881,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 31,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140007d40",
+    "function_file": "functions/140007d40_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "WcMungeDirectoryEntry",
+    "ea": "0x140029010",
+    "function_file": "functions/140029010_WcMungeDirectoryEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcMungeDirectoryEntry",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 1179,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "WcCopyFileMetaData",
+    "ea": "0x14001e374",
+    "function_file": "functions/14001e374_WcCopyFileMetaData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcCopyFileMetaData",
+    "prototype": "",
+    "rank_score": 29,
+    "size": 380,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WcPreFsctlFindFilesBySid",
+    "ea": "0x14001a20c",
+    "function_file": "functions/14001a20c_WcPreFsctlFindFilesBySid.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcPreFsctlFindFilesBySid",
+    "prototype": "",
+    "rank_score": 29,
+    "size": 335,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "WcMungeDirectoryEnumerateWithShortnameFileIdAll",
+    "ea": "0x140016734",
+    "function_file": "functions/140016734_WcMungeDirectoryEnumerateWithShortnameFileIdAll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcMungeDirectoryEnumerateWithShortnameFileIdAll",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 875,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WcMungeDirectoryEnumerateWithShortname",
+    "ea": "0x140015a70",
+    "function_file": "functions/140015a70_WcMungeDirectoryEnumerateWithShortname.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcMungeDirectoryEnumerateWithShortname",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 843,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WcMungeDirectoryEnumerateWithoutShortnameFileIdAll",
+    "ea": "0x14001771c",
+    "function_file": "functions/14001771c_WcMungeDirectoryEnumerateWithoutShortnameFileIdAll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcMungeDirectoryEnumerateWithoutShortnameFileIdAll",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 722,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WcMungeDirectoryEnumerateWithoutShortname",
+    "ea": "0x140016aa8",
+    "function_file": "functions/140016aa8_WcMungeDirectoryEnumerateWithoutShortname.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcMungeDirectoryEnumerateWithoutShortname",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 695,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "WcReleaseUnionContext",
+    "ea": "0x14002ee54",
+    "function_file": "functions/14002ee54_WcReleaseUnionContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcReleaseUnionContext",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140007bdc",
+    "function_file": "functions/140007bdc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 19,
+    "demangled": "memset",
+    "ea": "0x1400080c0",
+    "function_file": "functions/1400080c0_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 23,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140035010",
+    "function_file": "functions/140035010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "_tlgKeywordOn",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgKeywordOn.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgKeywordOn",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x140022780",
+    "function_file": "functions/140022780_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "WcIsPlaceHolderDirectory",
+    "ea": "0x140001bc8",
+    "function_file": "functions/140001bc8_WcIsPlaceHolderDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcIsPlaceHolderDirectory",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "WcIsPlaceHolderStream",
+    "ea": "0x140001b94",
+    "function_file": "functions/140001b94_WcIsPlaceHolderStream.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcIsPlaceHolderStream",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WcRelPathToFullPath",
+    "ea": "0x14002c884",
+    "function_file": "functions/14002c884_WcRelPathToFullPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcRelPathToFullPath",
+    "prototype": "__int64 __usercall@<rax>(USHORT *pusResult@<rcx>, __int16)",
+    "rank_score": 18,
+    "size": 335,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "memmove",
+    "ea": "0x140007dc0",
+    "function_file": "functions/140007dc0_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 17,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "WcGetUnionContext",
+    "ea": "0x1400016f0",
+    "function_file": "functions/1400016f0_WcGetUnionContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcGetUnionContext",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 18,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WcSkipReparsePointInEnumeration",
+    "ea": "0x14002b6cc",
+    "function_file": "functions/14002b6cc_WcSkipReparsePointInEnumeration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcSkipReparsePointInEnumeration",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 89,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WcValidateWcReparseInfo",
+    "ea": "0x14002f994",
+    "function_file": "functions/14002f994_WcValidateWcReparseInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcValidateWcReparseInfo",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 94,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ComputeFlushPeriod",
+    "ea": "0x140022980",
+    "function_file": "functions/140022980_ComputeFlushPeriod.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputeFlushPeriod",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 136,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "TlgAggregateInternalRegisteredProviderEtwCallback(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *)",
+    "ea": "0x14002e9e0",
+    "function_file": "functions/14002e9e0_TlgAggregateInternalRegisteredProviderEtwCallback_GUID_const_ulong_uchar_unsigned_int64_unsigned_int64_EVENT_F.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?TlgAggregateInternalRegisteredProviderEtwCallback@@YAXPEBU_GUID@@KE_K1PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z",
+    "prototype": "void __fastcall(const struct _GUID *, unsigned int, unsigned __int8, unsigned __int64, unsigned __int64, struct _EVENT_FILTER_DESCRIPTOR *, void *)",
+    "rank_score": 14,
+    "size": 117,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 14,
+    "demangled": "WcGetSource",
+    "ea": "0x1400024fc",
+    "function_file": "functions/1400024fc_WcGetSource.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcGetSource",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 9,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WcMungeReparseEnumerate",
+    "ea": "0x140017ad0",
+    "function_file": "functions/140017ad0_WcMungeReparseEnumerate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcMungeReparseEnumerate",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 112,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x1400225c8",
+    "function_file": "functions/1400225c8_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x140022684",
+    "function_file": "functions/140022684_wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "RtlWriteULongToUser",
+    "ea": "0x14001452c",
+    "function_file": "functions/14001452c_RtlWriteULongToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULongToUser",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "UpdateInternalStatsOnFlush",
+    "ea": "0x140022d24",
+    "function_file": "functions/140022d24_UpdateInternalStatsOnFlush.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateInternalStatsOnFlush",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 66,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WcParseNextPathComponentName",
+    "ea": "0x14002f3d8",
+    "function_file": "functions/14002f3d8_WcParseNextPathComponentName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcParseNextPathComponentName",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 147,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WcShouldSkipReparsePointInDirectoryEntry",
+    "ea": "0x14001414c",
+    "function_file": "functions/14001414c_WcShouldSkipReparsePointInDirectoryEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcShouldSkipReparsePointInDirectoryEntry",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 69,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "RtlCopyToUser",
+    "ea": "0x14001439c",
+    "function_file": "functions/14001439c_RtlCopyToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 12,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x140007c90",
+    "function_file": "functions/140007c90_RtlCopyVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 12,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "RtlUShortAdd",
+    "ea": "0x1400024d4",
+    "function_file": "functions/1400024d4_RtlUShortAdd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlUShortAdd",
+    "prototype": "NTSTATUS __stdcall(USHORT usAugend, USHORT usAddend, USHORT *pusResult)",
+    "rank_score": 12,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "WcCompareLayerTableEntry",
+    "ea": "0x14002f590",
+    "function_file": "functions/14002f590_WcCompareLayerTableEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcCompareLayerTableEntry",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 12,
+    "size": 55,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140035044",
+    "function_file": "functions/140035044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "RtlSetUserMemory",
+    "ea": "0x14001443c",
+    "function_file": "functions/14001443c_RtlSetUserMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlSetUserMemory",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 11,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByRef<16>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByRef<16> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &)",
+    "ea": "0x1400010d4",
+    "function_file": "functions/1400010d4_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@U?$_tlgWrapperByVal@$00@@U?$_tlgWrapperByRef@$0BA@@@U?$_tlgWrapperArray@$00@@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@4AEBU?$_tlgWrapperByVal@$00@@AEBU?$_tlgWrapperByRef@$0BA@@@AEBU?$_tlgWrapperArray@$00@@35735735735735735735735745@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 1053,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "WcUsesSourceSectionObjectPointers",
+    "ea": "0x140002264",
+    "function_file": "functions/140002264_WcUsesSourceSectionObjectPointers.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcUsesSourceSectionObjectPointers",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "RtlReadULongFromUser",
+    "ea": "0x140014400",
+    "function_file": "functions/140014400_RtlReadULongFromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULongFromUser",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WcIsSourcedStream",
+    "ea": "0x140001fd0",
+    "function_file": "functions/140001fd0_WcIsSourcedStream.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcIsSourcedStream",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "RtlSetVolatileMemory",
+    "ea": "0x140007cb0",
+    "function_file": "functions/140007cb0_RtlSetVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlSetVolatileMemory",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 8,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "WcGetEnumEntry",
+    "ea": "0x140014198",
+    "function_file": "functions/140014198_WcGetEnumEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcGetEnumEntry",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140003248",
+    "function_file": "functions/140003248_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "RtlWriteULong64ToUser",
+    "ea": "0x1400144e4",
+    "function_file": "functions/1400144e4_RtlWriteULong64ToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "RtlCopyFromUser",
+    "ea": "0x140004058",
+    "function_file": "functions/140004058_RtlCopyFromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 6,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "RtlWriteUCharToUser",
+    "ea": "0x14001449c",
+    "function_file": "functions/14001449c_RtlWriteUCharToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteUCharToUser",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0_EtwWriteTransfer",
+    "ea": "0x140003274",
+    "function_file": "functions/140003274_McTemplateK0_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0dhzr1_EtwWriteTransfer",
+    "ea": "0x14000678c",
+    "function_file": "functions/14000678c_McTemplateK0dhzr1_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0dhzr1_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 129,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14002258c",
+    "function_file": "functions/14002258c_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x1400065f0",
+    "function_file": "functions/1400065f0_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0d_EtwWriteTransfer",
+    "ea": "0x14000672c",
+    "function_file": "functions/14000672c_McTemplateK0d_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0d_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WcInsertDirectoryTableSourceList",
+    "ea": "0x14001ea78",
+    "function_file": "functions/14001ea78_WcInsertDirectoryTableSourceList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcInsertDirectoryTableSourceList",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x1400224ec",
+    "function_file": "functions/1400224ec_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyFromUser$thunk$11487580757436585079",
+    "ea": "0x140009010",
+    "function_file": "functions/140009010_RtlCopyFromUser_thunk_11487580757436585079.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser$thunk$11487580757436585079",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyToUser$thunk$8481748130428616498",
+    "ea": "0x140009020",
+    "function_file": "functions/140009020_RtlCopyToUser_thunk_8481748130428616498.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser$thunk$8481748130428616498",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x140007ca0",
+    "function_file": "functions/140007ca0_RtlMoveVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlReadULongFromUser$thunk$16789519765233612629",
+    "ea": "0x140009030",
+    "function_file": "functions/140009030_RtlReadULongFromUser_thunk_16789519765233612629.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULongFromUser$thunk$16789519765233612629",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteUCharToUser$thunk$17166446407143655193",
+    "ea": "0x140009050",
+    "function_file": "functions/140009050_RtlWriteUCharToUser_thunk_17166446407143655193.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteUCharToUser$thunk$17166446407143655193",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "ea": "0x140009060",
+    "function_file": "functions/140009060_RtlWriteULong64ToUser_thunk_4480820996488585629.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULongToUser$thunk$10400971452996433967",
+    "ea": "0x140009070",
+    "function_file": "functions/140009070_RtlWriteULongToUser_thunk_10400971452996433967.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULongToUser$thunk$10400971452996433967",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "WcExpansionCsqRemoveIo",
+    "ea": "0x1400184c0",
+    "function_file": "functions/1400184c0_WcExpansionCsqRemoveIo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcExpansionCsqRemoveIo",
+    "prototype": "void __stdcall(PFLT_CALLBACK_DATA_QUEUE Cbdq, PFLT_CALLBACK_DATA Cbd)",
+    "rank_score": 1,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "WcPreQueryOpen",
+    "ea": "0x140028cb0",
+    "function_file": "functions/140028cb0_WcPreQueryOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WcPreQueryOpen",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 38,
+    "tags": []
+  }
+]

@@ -1,0 +1,47 @@
+# WdcDataCollectorNode::ExchangeConfigFilePage(HWND__ *,PROPERTY_EXCHANGE)
+
+- ea: `0x1800613b4`
+- end: `0x18006155a`
+- name: `?ExchangeConfigFilePage@WdcDataCollectorNode@@AEAAJPEAUHWND__@@W4PROPERTY_EXCHANGE@@@Z`
+- size: `422`
+- prototype: `__int64 __fastcall(__int64, HWND, int)`
+- caller_count: `2`
+- callee_count: `8`
+- tags: `registry_config`
+
+## callers
+
+- `0x180063ef0`
+- `0x1800644c0`
+
+## callees
+
+- `0x1800071e0`
+- `0x180008ab0`
+- `0x18000b854`
+- `0x18005b874`
+- `0x1800613b4`
+- `0x180062a60`
+- `0x18006a034`
+- `0x180086010`
+
+## import_xrefs
+
+- `USER32!EnableWindow` at `0x1800614d3`
+- `USER32!EnableWindow` at `0x1800614ec`
+- `USER32!EnableWindow` at `0x1800614d3`
+- `USER32!EnableWindow` at `0x1800614ec`
+- `USER32!GetDlgItem` at `0x1800614c8`
+- `USER32!GetDlgItem` at `0x1800614e1`
+- `USER32!GetDlgItem` at `0x1800614c8`
+- `USER32!GetDlgItem` at `0x1800614e1`
+
+## string_xrefs
+
+- `0x1800613fa`: `WdcDataCollectorNode::ExchangeConfigFilePage`
+
+## pseudocode
+
+```c
+
+```

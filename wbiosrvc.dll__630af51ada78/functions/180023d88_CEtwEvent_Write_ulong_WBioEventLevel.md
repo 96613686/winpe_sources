@@ -1,0 +1,1764 @@
+# CEtwEvent::Write(ulong,WBioEventLevel)
+
+- ea: `0x180023d88`
+- end: `0x1800258b8`
+- name: `?Write@CEtwEvent@@QEAAJKW4WBioEventLevel@@@Z`
+- size: `6960`
+- prototype: `__int64 __fastcall(_QWORD, _QWORD, _QWORD)`
+- caller_count: `42`
+- callee_count: `28`
+- tags: `authz_impersonation, registry_config, loader_planting, installer_update, broker_com_uri`
+
+## callers
+
+- `0x180003694`
+- `0x180003a24`
+- `0x18001c2ac`
+- `0x18001df30`
+- `0x1800230d0`
+- `0x180023c40`
+- `0x1800258c0`
+- `0x180025a30`
+- `0x1800266e0`
+- `0x1800269c0`
+- `0x180029480`
+- `0x18002de8c`
+- `0x180034218`
+- `0x180040cf8`
+- `0x180041c14`
+- `0x180045044`
+- `0x180047580`
+- `0x18004a2f0`
+- `0x18004ac70`
+- `0x18004bc50`
+- `0x18004c070`
+- `0x18004c4bc`
+- `0x18004c810`
+- `0x18004e090`
+- `0x180054e00`
+- `0x180054fe0`
+- `0x1800554e0`
+- `0x180063224`
+- `0x180071de8`
+- `0x180072448`
+- `0x18007327c`
+- `0x180073538`
+- `0x1800801d0`
+- `0x18008edf0`
+- `0x18008f340`
+- `0x1800907a0`
+- `0x180094c20`
+- `0x18009b210`
+- `0x18009b9d0`
+- `0x1800c2601`
+- `0x1800c2681`
+- `0x1800c35e8`
+
+## callees
+
+- `0x180014894`
+- `0x180023d88`
+- `0x18002c57c`
+- `0x18002c7d0`
+- `0x18002c848`
+- `0x18002cab4`
+- `0x18002cc6c`
+- `0x18002cf48`
+- `0x18002d194`
+- `0x18002d258`
+- `0x180049078`
+- `0x180049150`
+- `0x180068f60`
+- `0x18006e4c4`
+- `0x180070220`
+- `0x1800765f4`
+- `0x18007678c`
+- `0x180076830`
+- `0x1800768cc`
+- `0x18007697c`
+- `0x180076a6c`
+- `0x180076b6c`
+- `0x180076c74`
+- `0x180076eac`
+- `0x1800770f4`
+- `0x180077378`
+- `0x180080d9c`
+- `0x180081120`
+
+## import_xrefs
+
+- `RPCRT4!RpcRevertToSelf` at `0x1800257eb`
+- `RPCRT4!RpcRevertToSelf` at `0x1800257eb`
+- `RPCRT4!RpcImpersonateClient` at `0x180023dcd`
+- `RPCRT4!RpcImpersonateClient` at `0x180023dcd`
+
+## pseudocode
+
+```c
+__int64 __fastcall CEtwEvent::Write(__int64 a1, unsigned int a2, int a3)
+{
+  unsigned int v6; // r15d
+  __int64 v7; // r8
+  RPC_STATUS v8; // r12d
+  __int64 v9; // rbp
+  __int64 v10; // rsi
+  __int64 v11; // rbx
+  __int64 v12; // rdi
+  int v13; // r8d
+  __int64 v14; // rdx
+  int v15; // r9d
+  __int64 v16; // r10
+  __int64 v17; // r11
+  int v18; // eax
+  __int64 v19; // rbp
+  __int64 v20; // rsi
+  __int64 v21; // rbx
+  __int64 v22; // rdi
+  int v23; // eax
+  __int64 v24; // rdx
+  int v25; // r9d
+  __int64 v26; // r10
+  __int64 v27; // r11
+  __int64 v28; // rbp
+  __int64 v29; // rsi
+  __int64 v30; // rbx
+  __int64 v31; // rdi
+  int v32; // eax
+  __int64 v33; // rdx
+  int v34; // r9d
+  __int64 v35; // r10
+  __int64 v36; // r11
+  __int64 v37; // rbx
+  __int64 v38; // rdi
+  int v39; // r8d
+  __int64 v40; // rdx
+  int v41; // r9d
+  __int64 v42; // r10
+  __int64 v43; // r11
+  __int64 v44; // rbp
+  __int64 v45; // rsi
+  __int64 v46; // rbx
+  __int64 v47; // rdi
+  int v48; // eax
+  __int64 v49; // rdx
+  int v50; // r9d
+  __int64 v51; // r10
+  __int64 v52; // r11
+  __int64 v53; // rbx
+  __int64 v54; // rdi
+  int v55; // eax
+  __int64 v56; // rdx
+  int v57; // r9d
+  __int64 v58; // r10
+  __int64 v59; // r11
+  __int64 v60; // rbx
+  __int64 v61; // rdi
+  int v62; // eax
+  __int64 v63; // rdx
+  int v64; // r9d
+  __int64 v65; // r10
+  __int64 v66; // r11
+  __int64 v67; // rbx
+  __int64 v68; // rdi
+  int v69; // r8d
+  __int64 v70; // rdx
+  int v71; // r9d
+  __int64 v72; // r10
+  __int64 v73; // r11
+  __int64 v74; // rbx
+  __int64 v75; // rdi
+  int v76; // eax
+  __int64 v77; // rdx
+  int v78; // r9d
+  __int64 v79; // r10
+  __int64 v80; // r11
+  __int64 v81; // rbp
+  __int64 v82; // rsi
+  __int64 v83; // rbx
+  __int64 v84; // rdi
+  int v85; // r8d
+  __int64 v86; // rdx
+  int v87; // r9d
+  __int64 v88; // r10
+  __int64 v89; // r11
+  __int64 v90; // rbp
+  __int64 v91; // rsi
+  __int64 v92; // rbx
+  __int64 v93; // rdi
+  int v94; // eax
+  __int64 v95; // rdx
+  int v96; // r9d
+  __int64 v97; // r10
+  __int64 v98; // r11
+  int v99; // esi
+  __int64 v100; // rbx
+  __int64 v101; // rdi
+  int v102; // r8d
+  __int64 v103; // rdx
+  int v104; // r9d
+  __int64 v105; // r10
+  __int64 v106; // r11
+  int v107; // esi
+  __int64 v108; // rbx
+  __int64 v109; // rdi
+  int v110; // eax
+  __int64 v111; // rdx
+  int v112; // r9d
+  __int64 v113; // r10
+  __int64 v114; // r11
+  __int64 v115; // rbx
+  __int64 v116; // rdi
+  int v117; // r8d
+  __int64 v118; // rdx
+  int v119; // r9d
+  __int64 v120; // r10
+  __int64 v121; // r11
+  __int64 v122; // rbp
+  __int64 v123; // rsi
+  __int64 v124; // rbx
+  __int64 v125; // rdi
+  int v126; // r8d
+  __int64 v127; // rdx
+  int v128; // r9d
+  __int64 v129; // r10
+  __int64 v130; // r11
+  __int64 v131; // rbp
+  __int64 v132; // rsi
+  __int64 v133; // rbx
+  __int64 v134; // rdi
+  int v135; // eax
+  __int64 v136; // rdx
+  int v137; // r9d
+  __int64 v138; // r10
+  __int64 v139; // r11
+  __int64 v140; // rbx
+  __int64 v141; // rdi
+  int v142; // r8d
+  __int64 v143; // rdx
+  int v144; // r9d
+  __int64 v145; // r10
+  __int64 v146; // r11
+  __int64 v147; // rbx
+  __int64 v148; // rdi
+  int v149; // r8d
+  __int64 v150; // rdx
+  int v151; // r9d
+  __int64 v152; // r10
+  __int64 v153; // r11
+  __int64 v154; // rbx
+  __int64 v155; // rdi
+  int v156; // r8d
+  __int64 v157; // rdx
+  int v158; // r9d
+  __int64 v159; // r10
+  __int64 v160; // r11
+  __int64 v161; // rbx
+  __int64 v162; // rdi
+  int v163; // r8d
+  __int64 v164; // rdx
+  int v165; // r9d
+  __int64 v166; // r10
+  __int64 v167; // r11
+  __int64 *v168; // rdx
+  __int64 v169; // rax
+  __int64 v170; // rcx
+  __int64 *v171; // rdx
+  __int64 v172; // r9
+  __int64 v173; // rax
+  __int64 v174; // rcx
+  __int64 *v175; // rdx
+  __int64 v176; // rax
+  __int64 v177; // rbx
+  __int64 v178; // rdi
+  int v179; // r8d
+  __int64 v180; // rdx
+  int v181; // r9d
+  __int64 v182; // r10
+  __int64 v183; // r11
+  __int64 v184; // rbx
+  __int64 v185; // rdi
+  int v186; // r8d
+  __int64 v187; // rdx
+  int v188; // r9d
+  __int64 v189; // r10
+  __int64 v190; // r11
+  __int64 v191; // rbx
+  __int64 v192; // rdi
+  int v193; // r8d
+  __int64 v194; // rdx
+  int v195; // r9d
+  __int64 v196; // r10
+  __int64 v197; // r11
+  __int64 v198; // rbx
+  __int64 v199; // rdi
+  int v200; // r8d
+  __int64 v201; // rdx
+  int v202; // r9d
+  __int64 v203; // r10
+  __int64 v204; // r11
+  __int64 v205; // rbx
+  __int64 v206; // rdi
+  int v207; // r8d
+  __int64 v208; // rdx
+  int v209; // r9d
+  __int64 v210; // r10
+  __int64 v211; // r11
+  __int64 v212; // rbx
+  __int64 v213; // rdi
+  int v214; // r8d
+  __int64 v215; // rdx
+  int v216; // r9d
+  __int64 v217; // r10
+  __int64 v218; // r11
+  __int64 v219; // rbx
+  __int64 v220; // rdi
+  int v221; // eax
+  __int64 v222; // rdx
+  int v223; // r9d
+  __int64 v224; // r10
+  __int64 v225; // r11
+  __int64 v226; // rbx
+  __int64 v227; // rdi
+  int v228; // r8d
+  __int64 v229; // rdx
+  int v230; // r9d
+  __int64 v231; // r10
+  __int64 v232; // r11
+  int v233; // eax
+  int v234; // edx
+  int v235; // ecx
+  int v236; // r9d
+  int v237; // r8d
+  int v238; // eax
+  int v239; // eax
+  int v240; // edx
+  int v241; // ecx
+  __int64 v242; // rdx
+  __int64 v243; // rcx
+  unsigned int v244; // ebx
+  unsigned int v245; // ebx
+  unsigned int v246; // ebx
+  unsigned int v247; // ebx
+  unsigned int v248; // ebx
+  __int64 v249; // rax
+  __int64 v250; // rcx
+  __int64 *v251; // rdx
+  int v252; // eax
+  __int64 v253; // rdx
+  int v254; // ecx
+  int v255; // r9d
+  unsigned int v256; // ebx
+  unsigned int v257; // ebx
+  unsigned int v258; // ebx
+  unsigned int v259; // ebx
+  int v260; // eax
+  int v261; // ecx
+  int v262; // r9d
+  __int64 *v263; // rdx
+  int v264; // eax
+  int v265; // ecx
+  int v266; // r9d
+  __int64 *v267; // rdx
+  int v268; // eax
+  __int64 v269; // rdx
+  int v270; // ecx
+  int v271; // r9d
+
+  if ( a3 > g_MaxEtwLoggingLevel )
+    return 0;
+  v6 = 0;
+  v8 = RpcImpersonateClient(0);
+  if ( a2 <= 0x44C )
+  {
+    if ( a2 != 1100 )
+    {
+      switch ( a2 )
+      {
+        case 0x3E8u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v9 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+          v10 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+          v11 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v12 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v13 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_VERIFY_FAIL,
+                  v13,
+                  v15,
+                  v17,
+                  v12,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v14,
+                  v16,
+                  v11,
+                  v10,
+                  v9,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x3E9u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v19 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+          v20 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+          v21 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v22 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v23 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzzz_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_VERIFY_MATCH,
+                  v23,
+                  v25,
+                  v27,
+                  v22,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v24,
+                  v26,
+                  v21,
+                  v20,
+                  v19);
+          goto LABEL_149;
+        case 0x3EAu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v28 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+          v29 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+          v30 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v31 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v32 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzzz_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_VERIFY_NO_MATCH,
+                  v32,
+                  v34,
+                  v36,
+                  v31,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v33,
+                  v35,
+                  v30,
+                  v29,
+                  v28);
+          goto LABEL_149;
+        case 0x3EBu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v37 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v38 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v39 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_IDENTIFY_FAIL,
+                  v39,
+                  v41,
+                  v43,
+                  v38,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v40,
+                  v42,
+                  v37,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x3ECu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v44 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+          v45 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+          v46 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v47 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v48 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzzz_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_IDENTIFY_MATCH,
+                  v48,
+                  v50,
+                  v52,
+                  v47,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v49,
+                  v51,
+                  v46,
+                  v45,
+                  v44);
+          goto LABEL_149;
+        case 0x3EDu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v53 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v54 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v55 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzz_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_IDENTIFY_NO_MATCH,
+                  v55,
+                  v57,
+                  v59,
+                  v54,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v56,
+                  v58,
+                  v53);
+          goto LABEL_149;
+        case 0x3EEu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v60 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v61 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v62 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzz_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_CREATE_ENROLLMENT,
+                  v62,
+                  v64,
+                  v66,
+                  v61,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v63,
+                  v65,
+                  v60);
+          goto LABEL_149;
+        case 0x3EFu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v67 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v68 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v69 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_UPDATE_ENROLLMENT_FAIL,
+                  v69,
+                  v71,
+                  v73,
+                  v68,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v70,
+                  v72,
+                  v67,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x3F0u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v74 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v75 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v76 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzz_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_UPDATE_ENROLLMENT_SUCCEED,
+                  v76,
+                  v78,
+                  v80,
+                  v75,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v77,
+                  v79,
+                  v74);
+          goto LABEL_149;
+        case 0x3F1u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v81 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+          v82 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+          v83 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v84 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v85 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_COMMIT_ENROLLMENT_FAIL,
+                  v85,
+                  v87,
+                  v89,
+                  v84,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v86,
+                  v88,
+                  v83,
+                  v82,
+                  v81,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x3F2u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v90 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+          v91 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+          v92 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v93 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v94 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzzz_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_COMMIT_ENROLLMENT_SUCCEED,
+                  v94,
+                  v96,
+                  v98,
+                  v93,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v95,
+                  v97,
+                  v92,
+                  v91,
+                  v90);
+          goto LABEL_149;
+        case 0x3F3u:
+          v99 = *(_DWORD *)(a1 + 360);
+          if ( v99 == -2146861052 )
+            goto LABEL_153;
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v100 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v101 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v102 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_START_CAPTURE,
+                  v102,
+                  v104,
+                  v106,
+                  v101,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v103,
+                  v105,
+                  v100,
+                  v99);
+          break;
+        case 0x3F4u:
+          v107 = *(_DWORD *)(a1 + 360);
+          if ( v107 == -2146861052 )
+            goto LABEL_153;
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v108 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v109 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v110 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzdq_EventWriteTransfer(
+                  (int)a1 + 128,
+                  v111,
+                  v110,
+                  v112,
+                  v114,
+                  v109,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v111,
+                  v113,
+                  v108,
+                  v107,
+                  *(_DWORD *)(a1 + 364));
+          break;
+        case 0x3F5u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v115 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v116 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v117 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_EXPORT_SENSOR_DATA,
+                  v117,
+                  v119,
+                  v121,
+                  v116,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v118,
+                  v120,
+                  v115,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x3F6u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 4) == 0 )
+            goto LABEL_9;
+          v122 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+          v123 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+          v124 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v125 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v126 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_DELETE_RECORD_FAIL,
+                  v126,
+                  v128,
+                  v130,
+                  v125,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v127,
+                  v129,
+                  v124,
+                  v123,
+                  v122,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x3F7u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v131 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+          v132 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+          v133 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v134 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v135 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzzz_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_DELETE_RECORD_SUCCEED,
+                  v135,
+                  v137,
+                  v139,
+                  v134,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v136,
+                  v138,
+                  v133,
+                  v132,
+                  v131);
+          goto LABEL_149;
+        case 0x3F8u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v140 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v141 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v142 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzqddd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_CONTROL_UNIT_FAIL,
+                  v142,
+                  v144,
+                  v146,
+                  v141,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v143,
+                  v145,
+                  v140,
+                  *(_DWORD *)(a1 + 372),
+                  *(_DWORD *)(a1 + 376),
+                  *(_DWORD *)(a1 + 380),
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x3F9u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v147 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v148 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v149 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzqdd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_CONTROL_UNIT_SUCCEED,
+                  v149,
+                  v151,
+                  v153,
+                  v148,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v150,
+                  v152,
+                  v147,
+                  *(_DWORD *)(a1 + 372),
+                  *(_DWORD *)(a1 + 376),
+                  *(_DWORD *)(a1 + 380));
+          goto LABEL_149;
+        case 0x3FAu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v154 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v155 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v156 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzqddd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_CONTROL_UNIT_PRIVILEGED_FAIL,
+                  v156,
+                  v158,
+                  v160,
+                  v155,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v157,
+                  v159,
+                  v154,
+                  *(_DWORD *)(a1 + 372),
+                  *(_DWORD *)(a1 + 376),
+                  *(_DWORD *)(a1 + 380),
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x3FBu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v161 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v162 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v163 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzqdd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_API_CONTROL_UNIT_PRIVILEGED_SUCCEED,
+                  v163,
+                  v165,
+                  v167,
+                  v162,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v164,
+                  v166,
+                  v161,
+                  *(_DWORD *)(a1 + 372),
+                  *(_DWORD *)(a1 + 376),
+                  *(_DWORD *)(a1 + 380));
+          goto LABEL_149;
+        case 0x3FCu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v168 = WINBIO_EVENT_E_API_DISABLED_FAIL;
+          goto LABEL_57;
+        case 0x3FDu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v168 = WINBIO_EVENT_E_API_NOT_ACTIVE_CONSOLE_FAIL;
+          goto LABEL_57;
+        default:
+          goto LABEL_136;
+      }
+      goto LABEL_149;
+    }
+    if ( (Microsoft_Windows_BiometricsEnableBits & 2) != 0 )
+    {
+      v169 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 384);
+      v171 = WINBIO_EVENT_E_CFG_DLL_LOAD_FAIL;
+LABEL_62:
+      v172 = *(unsigned int *)(a1 + 360);
+LABEL_63:
+      v18 = McTemplateU0zd_EventWriteTransfer(v170, v171, v169, v172);
+      goto LABEL_149;
+    }
+    goto LABEL_9;
+  }
+  if ( a2 <= 0x640 )
+  {
+    if ( a2 != 1600 )
+    {
+      switch ( a2 )
+      {
+        case 0x44Du:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v173 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 384);
+          v175 = WINBIO_EVENT_E_CFG_DLL_FORCE_INTEGRITY_FAIL;
+          goto LABEL_69;
+        case 0x44Eu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v176 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 384);
+          v18 = McTemplateU0zq_EventWriteTransfer(
+                  &WBIOSRVC_PROVIDER_Context,
+                  WINBIO_EVENT_E_CFG_DLL_VALIDATION_FAIL,
+                  v176,
+                  *(unsigned int *)(a1 + 372));
+          goto LABEL_149;
+        case 0x44Fu:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v169 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v171 = WINBIO_EVENT_E_CFG_SENSOR_OPEN_FAIL;
+          goto LABEL_62;
+        case 0x450u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v184 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v185 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v186 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_CFG_SENSOR_SETMODE_FAIL,
+                  v186,
+                  v188,
+                  v190,
+                  v185,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v187,
+                  v189,
+                  v184,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x451u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v177 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v178 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v179 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzqd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_CFG_ADAPTER_INIT_FAIL,
+                  v179,
+                  v181,
+                  v183,
+                  v178,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v180,
+                  v182,
+                  v177,
+                  *(_DWORD *)(a1 + 372),
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x452u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v205 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v206 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v207 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_CFG_DB_CONFIG_FAIL,
+                  v207,
+                  v209,
+                  v211,
+                  v206,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v208,
+                  v210,
+                  v205,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x453u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v212 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v213 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v214 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_CFG_DB_OPEN_FAIL,
+                  v214,
+                  v216,
+                  v218,
+                  v213,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v215,
+                  v217,
+                  v212,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x454u:
+          CBioTraceLogging::OnBiometricUnitConfigured(
+            a1,
+            a1 + 32,
+            a1 + 64,
+            a1 + 96,
+            *(_DWORD *)(a1 + 368),
+            *(_DWORD *)(a1 + 192),
+            a1 + 152,
+            *(_DWORD *)(a1 + 184),
+            *(_DWORD *)(a1 + 188));
+          if ( (Microsoft_Windows_BiometricsEnableBits & 1) == 0 )
+            goto LABEL_9;
+          v219 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v220 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v221 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzz_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_CFG_CONFIGURE_BIOMETRIC_UNIT,
+                  v221,
+                  v223,
+                  v225,
+                  v220,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v222,
+                  v224,
+                  v219);
+          goto LABEL_149;
+        case 0x455u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v226 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v227 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v228 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_CFG_CONFIGURE_BIOMETRIC_UNIT_FAIL,
+                  v228,
+                  v230,
+                  v232,
+                  v227,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v229,
+                  v231,
+                  v226,
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x456u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v169 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v171 = WINBIO_EVENT_E_CFG_CREATE_BIOMETRIC_UNIT_BAD_PACKAGE;
+          goto LABEL_62;
+        case 0x457u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v169 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v171 = WINBIO_EVENT_E_CFG_CREATE_BIOMETRIC_UNIT_GENERIC_FAILURE;
+          goto LABEL_62;
+        case 0x458u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v191 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v192 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v193 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzqd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_CFG_CALIBRATION_SETUP_FAIL,
+                  v193,
+                  v195,
+                  v197,
+                  v192,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v194,
+                  v196,
+                  v191,
+                  *(_DWORD *)(a1 + 372),
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x459u:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v173 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 384);
+          v175 = WINBIO_EVENT_E_CFG_DLL_SIGNING_FAIL;
+LABEL_69:
+          v18 = McTemplateU0z_EventWriteTransfer(v174, v175, v173);
+          goto LABEL_149;
+        case 0x45Au:
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v198 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 264);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 232);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 200);
+          v199 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 96);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 64);
+          std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 32);
+          v200 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+          v18 = McTemplateU0zzzzjqqqzzzqd_EventWriteTransfer(
+                  (int)a1 + 128,
+                  (unsigned int)WINBIO_EVENT_E_CFG_PRIVATE_SENSOR_TYPE_NOTIFY_FAIL,
+                  v200,
+                  v202,
+                  v204,
+                  v199,
+                  a1 + 128,
+                  *(_DWORD *)(a1 + 144),
+                  *(_DWORD *)(a1 + 148),
+                  *(_DWORD *)(a1 + 192),
+                  v201,
+                  v203,
+                  v198,
+                  *(_DWORD *)(a1 + 372),
+                  *(_DWORD *)(a1 + 360));
+          goto LABEL_149;
+        case 0x45Bu:
+          if ( (unsigned __int8)wil::details::FeatureImpl<__WilFeatureTraits_Feature_EssFprPeripherals>::__private_IsEnabled(&`wil::Feature<__WilFeatureTraits_Feature_EssFprPeripherals>::GetImpl'::`2'::impl) )
+          {
+            if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+              goto LABEL_9;
+            v233 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 424);
+            v236 = *(_DWORD *)(a1 + 460);
+            v237 = v233;
+            v238 = *(_DWORD *)(a1 + 456);
+          }
+          else
+          {
+            if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+              goto LABEL_9;
+            v239 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 424);
+            v236 = *(_DWORD *)(a1 + 456);
+            v237 = v239;
+            v238 = *(_DWORD *)(a1 + 460);
+          }
+          v18 = McTemplateU0zqq_EventWriteTransfer(v235, v234, v237, v236, v238);
+          goto LABEL_149;
+        case 0x45Cu:
+          if ( !(unsigned __int8)wil::details::FeatureImpl<__WilFeatureTraits_Feature_EssFprPeripherals>::__private_IsEnabled(&`wil::Feature<__WilFeatureTraits_Feature_EssFprPeripherals>::GetImpl'::`2'::impl) )
+            goto LABEL_153;
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+            goto LABEL_9;
+          v18 = McTemplateU0tttttttttttttttt_EventWriteTransfer(
+                  v241,
+                  v240,
+                  *(_DWORD *)(a1 + 464),
+                  *(_DWORD *)(a1 + 468),
+                  *(_DWORD *)(a1 + 472),
+                  *(_DWORD *)(a1 + 476),
+                  *(_DWORD *)(a1 + 480),
+                  *(_DWORD *)(a1 + 484),
+                  *(_DWORD *)(a1 + 488),
+                  *(_DWORD *)(a1 + 492),
+                  *(_DWORD *)(a1 + 496),
+                  *(_DWORD *)(a1 + 500),
+                  *(_DWORD *)(a1 + 504),
+                  *(_DWORD *)(a1 + 508),
+                  *(_DWORD *)(a1 + 512),
+                  *(_DWORD *)(a1 + 516),
+                  *(_DWORD *)(a1 + 520),
+                  *(_DWORD *)(a1 + 524));
+          goto LABEL_149;
+        default:
+          goto LABEL_136;
+      }
+    }
+    CBioTraceLogging::OnTrustletLaunch(*(_DWORD *)(a1 + 360));
+    if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+      goto LABEL_9;
+    v18 = McTemplateU0qd_EventWriteTransfer(v243, v242, *(unsigned __int16 *)(a1 + 420), *(unsigned int *)(a1 + 360));
+LABEL_149:
+    if ( v18 )
+    {
+      if ( v18 > 0 )
+        v6 = (unsigned __int16)v18 | 0x80070000;
+      else
+        v6 = v18;
+    }
+    goto LABEL_153;
+  }
+  if ( a2 <= 0x64A )
+  {
+    if ( a2 == 1610 )
+    {
+      if ( (Microsoft_Windows_BiometricsEnableBits & 4) == 0 )
+        goto LABEL_9;
+      std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+      std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+      v252 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+      v18 = McTemplateU0zzzd_EventWriteTransfer(v254, v253, v252, v255, v253, *(_DWORD *)(a1 + 360));
+      goto LABEL_149;
+    }
+    v244 = a2 - 1601;
+    if ( !v244 )
+    {
+      CBioTraceLogging::OnTrustletLaunch(0);
+      if ( (Microsoft_Windows_BiometricsEnableBits & 2) != 0 )
+      {
+        v168 = WINBIO_EVENT_E_TRUSTLET_START_SUCCEED;
+LABEL_57:
+        v18 = McGenEventWrite_EventWriteTransfer(&WBIOSRVC_PROVIDER_Context, v168, v7, 1);
+        goto LABEL_149;
+      }
+      goto LABEL_9;
+    }
+    v245 = v244 - 4;
+    if ( v245 )
+    {
+      v246 = v245 - 1;
+      if ( v246 )
+      {
+        v247 = v246 - 1;
+        if ( !v247 )
+        {
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) != 0 )
+          {
+            v169 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+            v172 = 0;
+            v171 = WINBIO_EVENT_E_TRUSTLET_SECURE_CONNECTION_SUCCEEDED;
+            goto LABEL_63;
+          }
+          goto LABEL_9;
+        }
+        v248 = v247 - 1;
+        if ( !v248 )
+        {
+          if ( (Microsoft_Windows_BiometricsEnableBits & 2) != 0 )
+          {
+            v169 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+            v172 = 0;
+            v171 = WINBIO_EVENT_E_TRUSTLET_SECURE_RECONNECTION_SUCCEEDED;
+            goto LABEL_63;
+          }
+          goto LABEL_9;
+        }
+        if ( v248 == 1 )
+        {
+          if ( (Microsoft_Windows_BiometricsEnableBits & 4) != 0 )
+          {
+            v169 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+            v171 = WINBIO_EVENT_E_TRUSTLET_SECURE_CONNECTION_FAILED;
+            goto LABEL_62;
+          }
+LABEL_9:
+          v18 = 0;
+          goto LABEL_149;
+        }
+        goto LABEL_136;
+      }
+      if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+        goto LABEL_9;
+      std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+      v249 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+      v251 = WINBIO_EVENT_E_TRUSTLET_USER_AUTHORIZATION_REDEEMED;
+    }
+    else
+    {
+      if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+        goto LABEL_9;
+      std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+      v249 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+      v251 = WINBIO_EVENT_E_TRUSTLET_USER_AUTHORIZED;
+    }
+    v18 = McTemplateU0zz_EventWriteTransfer(v250, v251, v249);
+    goto LABEL_149;
+  }
+  v256 = a2 - 1611;
+  if ( v256 )
+  {
+    v257 = v256 - 89;
+    if ( v257 )
+    {
+      v258 = v257 - 1;
+      if ( !v258 )
+      {
+        CBioTraceLogging::OnDataProtectorProtect(*(_DWORD *)(a1 + 416), *(_DWORD *)(a1 + 192), *(_DWORD *)(a1 + 360));
+        if ( (Microsoft_Windows_BiometricsEnableBits & 4) == 0 )
+          goto LABEL_9;
+        std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+        v260 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+        v263 = WINBIO_EVENT_E_DATA_PROTECTOR_PROTECT_FAIL;
+        goto LABEL_139;
+      }
+      v259 = v258 - 1;
+      if ( v259 )
+      {
+        if ( v259 != 1 )
+        {
+LABEL_136:
+          v6 = -2147024809;
+          goto LABEL_153;
+        }
+        CBioTraceLogging::OnDataProtectorUnprotect(*(_DWORD *)(a1 + 416), *(_DWORD *)(a1 + 192), *(_DWORD *)(a1 + 360));
+        if ( (Microsoft_Windows_BiometricsEnableBits & 4) == 0 )
+          goto LABEL_9;
+        std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+        v260 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+        v263 = WINBIO_EVENT_E_DATA_PROTECTOR_UNPROTECT_FAIL;
+LABEL_139:
+        v18 = McTemplateU0zzqd_EventWriteTransfer(
+                v261,
+                (_DWORD)v263,
+                v260,
+                v262,
+                *(_DWORD *)(a1 + 416),
+                *(_DWORD *)(a1 + 360));
+        goto LABEL_149;
+      }
+      CBioTraceLogging::OnDataProtectorUnprotect(*(_DWORD *)(a1 + 416), *(_DWORD *)(a1 + 192), 0);
+      if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+        goto LABEL_9;
+      std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+      v264 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+      v267 = WINBIO_EVENT_E_DATA_PROTECTOR_UNPROTECT_SUCCEED;
+    }
+    else
+    {
+      CBioTraceLogging::OnDataProtectorProtect(*(_DWORD *)(a1 + 416), *(_DWORD *)(a1 + 192), 0);
+      if ( (Microsoft_Windows_BiometricsEnableBits & 2) == 0 )
+        goto LABEL_9;
+      std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+      v264 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+      v267 = WINBIO_EVENT_E_DATA_PROTECTOR_PROTECT_SUCCEED;
+    }
+    v18 = McTemplateU0zzq_EventWriteTransfer(v265, (_DWORD)v267, v264, v266, *(_DWORD *)(a1 + 416));
+    goto LABEL_149;
+  }
+  if ( (Microsoft_Windows_BiometricsEnableBits & 2) != 0 )
+  {
+    std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 328);
+    std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1 + 296);
+    v268 = std::_String_val<std::_Simple_types<unsigned short>>::_Myptr(a1);
+    v18 = McTemplateU0zzz_EventWriteTransfer(v270, v269, v268, v271, v269);
+    goto LABEL_149;
+  }
+LABEL_153:
+  if ( !v8 )
+    RpcRevertToSelf();
+  return v6;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180023d88  mov     [rsp+arg_8], rbx
+0x180023d8d  mov     [rsp+arg_10], rbp
+0x180023d92  push    rsi
+0x180023d93  push    rdi
+0x180023d94  push    r12
+0x180023d96  push    r14
+0x180023d98  push    r15
+0x180023d9a  sub     rsp, 0B0h
+0x180023da1  mov     rax, cs:__security_cookie
+0x180023da8  xor     rax, rsp
+0x180023dab  mov     [rsp+0D8h+var_38], rax
+0x180023db3  cmp     r8d, cs:?g_MaxEtwLoggingLevel@@3W4WBioEventLevel@@A; WBioEventLevel g_MaxEtwLoggingLevel
+0x180023dba  mov     ebx, edx
+0x180023dbc  mov     r14, rcx
+0x180023dbf  jle     short loc_180023DC8
+0x180023dc1  xor     eax, eax
+0x180023dc3  jmp     loc_1800257F4
+0x180023dc8  xor     ecx, ecx; BindingHandle
+0x180023dca  xor     r15d, r15d
+0x180023dcd  call    cs:__imp_RpcImpersonateClient
+0x180023dd3  mov     r12d, eax
+0x180023dd6  mov     eax, 44Ch
+0x180023ddb  cmp     ebx, eax
+0x180023ddd  ja      loc_180024CC6
+0x180023de3  jz      loc_180024C92
+0x180023de9  add     ebx, 0FFFFFC18h; switch 22 cases
+0x180023def  cmp     ebx, 15h
+0x180023df2  ja      def_180023E09; jumptable 0000000180023E09 default case
+0x180023df8  lea     rcx, __ImageBase
+0x180023dff  mov     eax, ds:(jpt_180023E09 - 180000000h)[rcx+rbx*4]
+0x180023e06  add     rax, rcx
+0x180023e09  jmp     rax; switch jump
+0x180023e0b  test    cs:Microsoft_Windows_BiometricsEnableBits, 1; jumptable 0000000180023E09 case 1000
+0x180023e12  jz      loc_180023EFE
+0x180023e18  lea     rcx, [r14+148h]
+0x180023e1f  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023e24  lea     rcx, [r14+128h]
+0x180023e2b  mov     rbp, rax
+0x180023e2e  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023e33  lea     rcx, [r14+108h]
+0x180023e3a  mov     rsi, rax
+0x180023e3d  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023e42  lea     rcx, [r14+0E8h]
+0x180023e49  mov     rbx, rax
+0x180023e4c  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023e51  lea     rcx, [r14+0C8h]
+0x180023e58  mov     r10, rax
+0x180023e5b  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023e60  lea     rcx, [r14+60h]
+0x180023e64  mov     rdx, rax
+0x180023e67  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023e6c  lea     rcx, [r14+40h]
+0x180023e70  mov     rdi, rax
+0x180023e73  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023e78  lea     rcx, [r14+20h]
+0x180023e7c  mov     r11, rax
+0x180023e7f  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023e84  mov     rcx, r14
+0x180023e87  mov     r9, rax
+0x180023e8a  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023e8f  mov     r8, rax
+0x180023e92  mov     eax, [r14+168h]
+0x180023e99  mov     [rsp+0D8h+var_60], eax
+0x180023e9d  mov     [rsp+0D8h+var_68], rbp
+0x180023ea2  mov     [rsp+0D8h+var_70], rsi
+0x180023ea7  mov     [rsp+0D8h+var_78], rbx
+0x180023eac  mov     [rsp+0D8h+var_80], r10
+0x180023eb1  mov     [rsp+0D8h+var_88], rdx
+0x180023eb6  lea     rdx, WINBIO_EVENT_E_API_VERIFY_FAIL
+0x180023ebd  mov     eax, [r14+0C0h]
+0x180023ec4  lea     rcx, [r14+80h]
+0x180023ecb  mov     [rsp+0D8h+var_90], eax
+0x180023ecf  mov     eax, [r14+94h]
+0x180023ed6  mov     [rsp+0D8h+var_98], eax
+0x180023eda  mov     eax, [r14+90h]
+0x180023ee1  mov     [rsp+0D8h+var_A0], eax
+0x180023ee5  mov     [rsp+0D8h+var_A8], rcx
+0x180023eea  mov     [rsp+0D8h+var_B0], rdi
+0x180023eef  mov     [rsp+0D8h+var_B8], r11
+0x180023ef4  call    McTemplateU0zzzzjqqqzzzzzd_EventWriteTransfer
+0x180023ef9  jmp     loc_1800257D0
+0x180023efe  xor     eax, eax
+0x180023f00  jmp     loc_1800257D0
+0x180023f05  test    cs:Microsoft_Windows_BiometricsEnableBits, 1; jumptable 0000000180023E09 case 1001
+0x180023f0c  jz      short loc_180023EFE
+0x180023f0e  lea     rcx, [r14+148h]
+0x180023f15  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023f1a  lea     rcx, [r14+128h]
+0x180023f21  mov     rbp, rax
+0x180023f24  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023f29  lea     rcx, [r14+108h]
+0x180023f30  mov     rsi, rax
+0x180023f33  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023f38  lea     rcx, [r14+0E8h]
+0x180023f3f  mov     rbx, rax
+0x180023f42  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023f47  lea     rcx, [r14+0C8h]
+0x180023f4e  mov     r10, rax
+0x180023f51  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023f56  lea     rcx, [r14+60h]
+0x180023f5a  mov     rdx, rax
+0x180023f5d  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023f62  lea     rcx, [r14+40h]
+0x180023f66  mov     rdi, rax
+0x180023f69  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023f6e  lea     rcx, [r14+20h]
+0x180023f72  mov     r11, rax
+0x180023f75  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023f7a  mov     rcx, r14
+0x180023f7d  mov     r9, rax
+0x180023f80  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180023f85  mov     [rsp+0D8h+var_68], rbp
+0x180023f8a  mov     [rsp+0D8h+var_70], rsi
+0x180023f8f  mov     [rsp+0D8h+var_78], rbx
+0x180023f94  mov     [rsp+0D8h+var_80], r10
+0x180023f99  mov     [rsp+0D8h+var_88], rdx
+0x180023f9e  lea     rdx, WINBIO_EVENT_E_API_VERIFY_MATCH
+0x180023fa5  mov     r8, rax
+0x180023fa8  lea     rcx, [r14+80h]
+0x180023faf  mov     eax, [r14+0C0h]
+0x180023fb6  mov     [rsp+0D8h+var_90], eax
+0x180023fba  mov     eax, [r14+94h]
+0x180023fc1  mov     [rsp+0D8h+var_98], eax
+0x180023fc5  mov     eax, [r14+90h]
+0x180023fcc  mov     [rsp+0D8h+var_A0], eax
+0x180023fd0  mov     [rsp+0D8h+var_A8], rcx
+0x180023fd5  mov     [rsp+0D8h+var_B0], rdi
+0x180023fda  mov     [rsp+0D8h+var_B8], r11
+0x180023fdf  call    McTemplateU0zzzzjqqqzzzzz_EventWriteTransfer
+0x180023fe4  jmp     loc_1800257D0
+0x180023fe9  test    cs:Microsoft_Windows_BiometricsEnableBits, 1; jumptable 0000000180023E09 case 1002
+0x180023ff0  jz      loc_180023EFE
+0x180023ff6  lea     rcx, [r14+148h]
+0x180023ffd  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024002  lea     rcx, [r14+128h]
+0x180024009  mov     rbp, rax
+0x18002400c  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024011  lea     rcx, [r14+108h]
+0x180024018  mov     rsi, rax
+0x18002401b  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024020  lea     rcx, [r14+0E8h]
+0x180024027  mov     rbx, rax
+0x18002402a  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x18002402f  lea     rcx, [r14+0C8h]
+0x180024036  mov     r10, rax
+0x180024039  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x18002403e  lea     rcx, [r14+60h]
+0x180024042  mov     rdx, rax
+0x180024045  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x18002404a  lea     rcx, [r14+40h]
+0x18002404e  mov     rdi, rax
+0x180024051  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024056  lea     rcx, [r14+20h]
+0x18002405a  mov     r11, rax
+0x18002405d  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024062  mov     rcx, r14
+0x180024065  mov     r9, rax
+0x180024068  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x18002406d  mov     [rsp+0D8h+var_68], rbp
+0x180024072  mov     [rsp+0D8h+var_70], rsi
+0x180024077  mov     [rsp+0D8h+var_78], rbx
+0x18002407c  mov     [rsp+0D8h+var_80], r10
+0x180024081  mov     [rsp+0D8h+var_88], rdx
+0x180024086  lea     rdx, WINBIO_EVENT_E_API_VERIFY_NO_MATCH
+0x18002408d  jmp     loc_180023FA5
+0x180024092  test    cs:Microsoft_Windows_BiometricsEnableBits, 1; jumptable 0000000180023E09 case 1003
+0x180024099  jz      loc_180023EFE
+0x18002409f  lea     rcx, [r14+108h]
+0x1800240a6  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800240ab  lea     rcx, [r14+0E8h]
+0x1800240b2  mov     rbx, rax
+0x1800240b5  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800240ba  lea     rcx, [r14+0C8h]
+0x1800240c1  mov     r10, rax
+0x1800240c4  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800240c9  lea     rcx, [r14+60h]
+0x1800240cd  mov     rdx, rax
+0x1800240d0  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800240d5  lea     rcx, [r14+40h]
+0x1800240d9  mov     rdi, rax
+0x1800240dc  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800240e1  lea     rcx, [r14+20h]
+0x1800240e5  mov     r11, rax
+0x1800240e8  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800240ed  mov     rcx, r14
+0x1800240f0  mov     r9, rax
+0x1800240f3  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800240f8  mov     r8, rax
+0x1800240fb  mov     eax, [r14+168h]
+0x180024102  mov     dword ptr [rsp+0D8h+var_70], eax
+0x180024106  mov     [rsp+0D8h+var_78], rbx
+0x18002410b  mov     [rsp+0D8h+var_80], r10
+0x180024110  mov     [rsp+0D8h+var_88], rdx
+0x180024115  lea     rdx, WINBIO_EVENT_E_API_IDENTIFY_FAIL
+0x18002411c  mov     eax, [r14+0C0h]
+0x180024123  lea     rcx, [r14+80h]
+0x18002412a  mov     [rsp+0D8h+var_90], eax
+0x18002412e  mov     eax, [r14+94h]
+0x180024135  mov     [rsp+0D8h+var_98], eax
+0x180024139  mov     eax, [r14+90h]
+0x180024140  mov     [rsp+0D8h+var_A0], eax
+0x180024144  mov     [rsp+0D8h+var_A8], rcx
+0x180024149  mov     [rsp+0D8h+var_B0], rdi
+0x18002414e  mov     [rsp+0D8h+var_B8], r11
+0x180024153  call    McTemplateU0zzzzjqqqzzzd_EventWriteTransfer
+0x180024158  jmp     loc_1800257D0
+0x18002415d  test    cs:Microsoft_Windows_BiometricsEnableBits, 1; jumptable 0000000180023E09 case 1004
+0x180024164  jz      loc_180023EFE
+0x18002416a  lea     rcx, [r14+148h]
+0x180024171  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024176  lea     rcx, [r14+128h]
+0x18002417d  mov     rbp, rax
+0x180024180  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024185  lea     rcx, [r14+108h]
+0x18002418c  mov     rsi, rax
+0x18002418f  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024194  lea     rcx, [r14+0E8h]
+0x18002419b  mov     rbx, rax
+0x18002419e  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800241a3  lea     rcx, [r14+0C8h]
+0x1800241aa  mov     r10, rax
+0x1800241ad  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800241b2  lea     rcx, [r14+60h]
+0x1800241b6  mov     rdx, rax
+0x1800241b9  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800241be  lea     rcx, [r14+40h]
+0x1800241c2  mov     rdi, rax
+0x1800241c5  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800241ca  lea     rcx, [r14+20h]
+0x1800241ce  mov     r11, rax
+0x1800241d1  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800241d6  mov     rcx, r14
+0x1800241d9  mov     r9, rax
+0x1800241dc  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800241e1  mov     [rsp+0D8h+var_68], rbp
+0x1800241e6  mov     [rsp+0D8h+var_70], rsi
+0x1800241eb  mov     [rsp+0D8h+var_78], rbx
+0x1800241f0  mov     [rsp+0D8h+var_80], r10
+0x1800241f5  mov     [rsp+0D8h+var_88], rdx
+0x1800241fa  lea     rdx, WINBIO_EVENT_E_API_IDENTIFY_MATCH
+0x180024201  jmp     loc_180023FA5
+0x180024206  test    cs:Microsoft_Windows_BiometricsEnableBits, 1; jumptable 0000000180023E09 case 1005
+0x18002420d  jz      loc_180023EFE
+0x180024213  lea     rcx, [r14+108h]
+0x18002421a  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x18002421f  lea     rcx, [r14+0E8h]
+0x180024226  mov     rbx, rax
+0x180024229  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x18002422e  lea     rcx, [r14+0C8h]
+0x180024235  mov     r10, rax
+0x180024238  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x18002423d  lea     rcx, [r14+60h]
+0x180024241  mov     rdx, rax
+0x180024244  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024249  lea     rcx, [r14+40h]
+0x18002424d  mov     rdi, rax
+0x180024250  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024255  lea     rcx, [r14+20h]
+0x180024259  mov     r11, rax
+0x18002425c  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024261  mov     rcx, r14
+0x180024264  mov     r9, rax
+0x180024267  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x18002426c  mov     [rsp+0D8h+var_78], rbx
+0x180024271  mov     [rsp+0D8h+var_80], r10
+0x180024276  mov     [rsp+0D8h+var_88], rdx
+0x18002427b  lea     rdx, WINBIO_EVENT_E_API_IDENTIFY_NO_MATCH
+0x180024282  mov     r8, rax
+0x180024285  lea     rcx, [r14+80h]
+0x18002428c  mov     eax, [r14+0C0h]
+0x180024293  mov     [rsp+0D8h+var_90], eax
+0x180024297  mov     eax, [r14+94h]
+0x18002429e  mov     [rsp+0D8h+var_98], eax
+0x1800242a2  mov     eax, [r14+90h]
+0x1800242a9  mov     [rsp+0D8h+var_A0], eax
+0x1800242ad  mov     [rsp+0D8h+var_A8], rcx
+0x1800242b2  mov     [rsp+0D8h+var_B0], rdi
+0x1800242b7  mov     [rsp+0D8h+var_B8], r11
+0x1800242bc  call    McTemplateU0zzzzjqqqzzz_EventWriteTransfer
+0x1800242c1  jmp     loc_1800257D0
+0x1800242c6  test    cs:Microsoft_Windows_BiometricsEnableBits, 1; jumptable 0000000180023E09 case 1006
+0x1800242cd  jz      loc_180023EFE
+0x1800242d3  lea     rcx, [r14+108h]
+0x1800242da  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800242df  lea     rcx, [r14+0E8h]
+0x1800242e6  mov     rbx, rax
+0x1800242e9  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800242ee  lea     rcx, [r14+0C8h]
+0x1800242f5  mov     r10, rax
+0x1800242f8  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x1800242fd  lea     rcx, [r14+60h]
+0x180024301  mov     rdx, rax
+0x180024304  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024309  lea     rcx, [r14+40h]
+0x18002430d  mov     rdi, rax
+0x180024310  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024315  lea     rcx, [r14+20h]
+0x180024319  mov     r11, rax
+0x18002431c  call    ?_Myptr@?$_String_val@U?$_Simple_types@G@std@@@std@@QEBAPEBGXZ; std::_String_val<std::_Simple_types<ushort>>::_Myptr(void)
+0x180024321  mov     rcx, r14
+  ... truncated ...
+```

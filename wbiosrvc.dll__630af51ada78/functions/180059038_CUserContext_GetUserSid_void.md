@@ -1,0 +1,239 @@
+# CUserContext::GetUserSid(void * *)
+
+- ea: `0x180059038`
+- end: `0x1800591ce`
+- name: `?GetUserSid@CUserContext@@QEBAJPEAPEAX@Z`
+- size: `406`
+- prototype: `__int64 __fastcall(CUserContext *__hidden this, void **)`
+- caller_count: `6`
+- callee_count: `3`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callers
+
+- `0x180026040`
+- `0x180060a78`
+- `0x1800bc7e0`
+- `0x1800bc920`
+- `0x1800bca60`
+- `0x1800bcd80`
+
+## callees
+
+- `0x180059038`
+- `0x180060dc8`
+- `0x180068f60`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800590e2`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180059157`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800590e2`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180059157`
+- `api-ms-win-core-heap-l2-1-0!LocalAlloc` at `0x1800590f6`
+- `api-ms-win-core-heap-l2-1-0!LocalAlloc` at `0x180059126`
+- `api-ms-win-core-heap-l2-1-0!LocalAlloc` at `0x1800590f6`
+- `api-ms-win-core-heap-l2-1-0!LocalAlloc` at `0x180059126`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x180059138`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x180059171`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x18005918c`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x1800591a2`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x180059138`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x180059171`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x18005918c`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x1800591a2`
+- `api-ms-win-security-base-l1-1-0!GetTokenInformation` at `0x1800590d8`
+- `api-ms-win-security-base-l1-1-0!GetTokenInformation` at `0x1800590d8`
+- `api-ms-win-security-base-l1-1-0!CopySid` at `0x18005914d`
+- `api-ms-win-security-base-l1-1-0!CopySid` at `0x18005914d`
+- `api-ms-win-security-base-l1-1-0!GetLengthSid` at `0x180059117`
+- `api-ms-win-security-base-l1-1-0!GetLengthSid` at `0x180059117`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=2
+__int64 __fastcall CUserContext::GetUserSid(HANDLE *this, void **a2)
+{
+  PSID *p_TokenInformation; // rdi
+  unsigned int v5; // ebx
+  signed int LastError; // eax
+  DWORD LengthSid; // ebx
+  HLOCAL v8; // rax
+  DWORD TokenInformationLength; // [rsp+30h] [rbp-D0h] BYREF
+  HLOCAL hMem; // [rsp+38h] [rbp-C8h] BYREF
+  HLOCAL v12[4]; // [rsp+40h] [rbp-C0h] BYREF
+  char TokenInformation; // [rsp+60h] [rbp-A0h] BYREF
+
+  v12[0] = 0;
+  TokenInformationLength = 0;
+  v12[1] = v12;
+  hMem = 0;
+  v12[2] = &hMem;
+  if ( !*this )
+    MicrosoftTelemetryAssertTriggeredNoArgs(this);
+  if ( !a2 )
+    MicrosoftTelemetryAssertTriggeredNoArgs(this);
+  p_TokenInformation = (PSID *)&TokenInformation;
+  TokenInformationLength = 256;
+  v5 = 122;
+  while ( v5 == 122 )
+  {
+    if ( GetTokenInformation(*this, TokenUser, p_TokenInformation, TokenInformationLength, &TokenInformationLength) )
+    {
+      v5 = 0;
+    }
+    else
+    {
+      LastError = GetLastError();
+      v5 = LastError;
+      if ( LastError != 122 )
+        goto LABEL_16;
+      p_TokenInformation = (PSID *)LocalAlloc(0x40u, TokenInformationLength);
+      v12[0] = p_TokenInformation;
+      if ( !p_TokenInformation )
+      {
+        v5 = -2147024882;
+        goto LABEL_18;
+      }
+    }
+  }
+  LengthSid = GetLengthSid(*p_TokenInformation);
+  v8 = LocalAlloc(0x40u, LengthSid);
+  hMem = v8;
+  if ( !v8 )
+  {
+    LocalFree(0);
+    v5 = -2147024882;
+    goto LABEL_20;
+  }
+  if ( !CopySid(LengthSid, v8, *p_TokenInformation) )
+  {
+    LastError = GetLastError();
+    v5 = LastError;
+LABEL_16:
+    if ( LastError > 0 )
+      v5 = (unsigned __int16)LastError | 0x80070000;
+LABEL_18:
+    LocalFree(hMem);
+    goto LABEL_20;
+  }
+  *a2 = hMem;
+  hMem = 0;
+  LocalFree(0);
+  v5 = 0;
+LABEL_20:
+  hMem = 0;
+  LocalFree(v12[0]);
+  return v5;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180059038  mov     [rsp-8+arg_10], rbx
+0x18005903d  mov     [rsp-8+arg_18], rsi
+0x180059042  push    rbp
+0x180059043  push    rdi
+0x180059044  push    r14
+0x180059046  lea     rbp, [rsp-70h]
+0x18005904b  sub     rsp, 170h
+0x180059052  mov     rax, cs:__security_cookie
+0x180059059  xor     rax, rsp
+0x18005905c  mov     [rbp+80h+var_20], rax
+0x180059060  mov     rsi, rdx
+0x180059063  mov     r14, rcx
+0x180059066  mov     [rsp+180h+var_140], 0
+0x18005906f  mov     [rsp+180h+TokenInformationLength], 0
+0x180059077  lea     rax, [rsp+180h+var_140]
+0x18005907c  mov     [rsp+180h+var_138], rax
+0x180059081  mov     [rsp+180h+hMem], 0
+0x18005908a  lea     rax, [rsp+180h+hMem]
+0x18005908f  mov     [rsp+180h+var_130], rax
+0x180059094  cmp     qword ptr [rcx], 0
+0x180059098  jnz     short loc_18005909F
+0x18005909a  call    MicrosoftTelemetryAssertTriggeredNoArgs
+0x18005909f  test    rsi, rsi
+0x1800590a2  jnz     short loc_1800590A9
+0x1800590a4  call    MicrosoftTelemetryAssertTriggeredNoArgs
+0x1800590a9  lea     rdi, [rsp+180h+TokenInformation]
+0x1800590ae  mov     [rsp+180h+TokenInformationLength], 100h
+0x1800590b6  mov     ebx, 7Ah ; 'z'
+0x1800590bb  cmp     ebx, 7Ah ; 'z'
+0x1800590be  jnz     short loc_180059114
+0x1800590c0  lea     rax, [rsp+180h+TokenInformationLength]
+0x1800590c5  mov     [rsp+180h+ReturnLength], rax; ReturnLength
+0x1800590ca  mov     r9d, [rsp+180h+TokenInformationLength]; TokenInformationLength
+0x1800590cf  mov     r8, rdi; TokenInformation
+0x1800590d2  lea     edx, [rbx-79h]; TokenInformationClass
+0x1800590d5  mov     rcx, [r14]; TokenHandle
+0x1800590d8  call    cs:__imp_GetTokenInformation
+0x1800590de  test    eax, eax
+0x1800590e0  jnz     short loc_180059110
+0x1800590e2  call    cs:__imp_GetLastError
+0x1800590e8  mov     ebx, eax
+0x1800590ea  cmp     eax, 7Ah ; 'z'
+0x1800590ed  jnz     short loc_18005915F
+0x1800590ef  mov     edx, [rsp+180h+TokenInformationLength]; uBytes
+0x1800590f3  lea     ecx, [rax-3Ah]; uFlags
+0x1800590f6  call    cs:__imp_LocalAlloc
+0x1800590fc  mov     rdi, rax
+0x1800590ff  mov     [rsp+180h+var_140], rax
+0x180059104  test    rax, rax
+0x180059107  jnz     short loc_1800590BB
+0x180059109  mov     ebx, 8007000Eh
+0x18005910e  jmp     short loc_18005916C
+0x180059110  xor     ebx, ebx
+0x180059112  jmp     short loc_1800590BB
+0x180059114  mov     rcx, [rdi]; pSid
+0x180059117  call    cs:__imp_GetLengthSid
+0x18005911d  mov     ebx, eax
+0x18005911f  mov     edx, eax; uBytes
+0x180059121  mov     ecx, 40h ; '@'; uFlags
+0x180059126  call    cs:__imp_LocalAlloc
+0x18005912c  mov     [rsp+180h+hMem], rax
+0x180059131  test    rax, rax
+0x180059134  jnz     short loc_180059145
+0x180059136  xor     ecx, ecx; hMem
+0x180059138  call    cs:__imp_LocalFree
+0x18005913e  mov     ebx, 8007000Eh
+0x180059143  jmp     short loc_180059194
+0x180059145  mov     r8, [rdi]; pSourceSid
+0x180059148  mov     rdx, rax; pDestinationSid
+0x18005914b  mov     ecx, ebx; nDestinationSidLength
+0x18005914d  call    cs:__imp_CopySid
+0x180059153  test    eax, eax
+0x180059155  jnz     short loc_180059179
+0x180059157  call    cs:__imp_GetLastError
+0x18005915d  mov     ebx, eax
+0x18005915f  test    eax, eax
+0x180059161  jle     short loc_18005916C
+0x180059163  movzx   ebx, ax
+0x180059166  or      ebx, 80070000h
+0x18005916c  mov     rcx, [rsp+180h+hMem]; hMem
+0x180059171  call    cs:__imp_LocalFree
+0x180059177  jmp     short loc_180059194
+0x180059179  mov     rax, [rsp+180h+hMem]
+0x18005917e  mov     [rsi], rax
+0x180059181  mov     [rsp+180h+hMem], 0
+0x18005918a  xor     ecx, ecx; hMem
+0x18005918c  call    cs:__imp_LocalFree
+0x180059192  xor     ebx, ebx
+0x180059194  mov     [rsp+180h+hMem], 0
+0x18005919d  mov     rcx, [rsp+180h+var_140]; hMem
+0x1800591a2  call    cs:__imp_LocalFree
+0x1800591a8  mov     eax, ebx
+0x1800591aa  mov     rcx, [rbp+80h+var_20]
+0x1800591ae  xor     rcx, rsp; StackCookie
+0x1800591b1  call    __security_check_cookie
+0x1800591b6  lea     r11, [rsp+180h+var_10]
+0x1800591be  mov     rbx, [r11+30h]
+0x1800591c2  mov     rsi, [r11+38h]
+0x1800591c6  mov     rsp, r11
+0x1800591c9  pop     r14
+0x1800591cb  pop     rdi
+0x1800591cc  pop     rbp
+0x1800591cd  retn
+```

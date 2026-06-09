@@ -1,0 +1,423 @@
+# PluginNotificationCallback(_GUID const &)
+
+- ea: `0x1800b4808`
+- end: `0x1800b4b3b`
+- name: `?PluginNotificationCallback@@YAXAEBU_GUID@@@Z`
+- size: `819`
+- prototype: `void __fastcall(IID *rclsid)`
+- caller_count: `1`
+- callee_count: `22`
+- tags: `authz_impersonation, registry_config, loader_planting, installer_update, broker_com_uri`
+
+## callers
+
+- `0x1800b3620`
+
+## callees
+
+- `0x1800021d8`
+- `0x180017e7c`
+- `0x180021878`
+- `0x180023bc8`
+- `0x180037f6c`
+- `0x1800412c8`
+- `0x1800467e0`
+- `0x180046820`
+- `0x180049de0`
+- `0x1800510e8`
+- `0x18006b260`
+- `0x18006f174`
+- `0x1800afba8`
+- `0x1800b296c`
+- `0x1800b2e8c`
+- `0x1800b303c`
+- `0x1800b35b0`
+- `0x1800b4808`
+- `0x1800b50f4`
+- `0x1800b7c44`
+- `0x18013c090`
+- `0x180149010`
+
+## import_xrefs
+
+- `msvcp_win!_Mtx_unlock` at `0x1800b4a77`
+- `msvcp_win!_Mtx_unlock` at `0x1800b4a77`
+- `api-ms-win-core-com-l1-1-0!StringFromCLSID` at `0x1800b48ed`
+- `api-ms-win-core-com-l1-1-0!StringFromCLSID` at `0x1800b499a`
+- `api-ms-win-core-com-l1-1-0!StringFromCLSID` at `0x1800b48ed`
+- `api-ms-win-core-com-l1-1-0!StringFromCLSID` at `0x1800b499a`
+
+## string_xrefs
+
+- `0x1800b4b14`: `onecore\ds\security\fido\webauthn\dll\webauthnplugin.cpp`
+- `0x1800b4b29`: `onecore\ds\security\fido\webauthn\dll\webauthnplugin.cpp`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=5
+void __fastcall PluginNotificationCallback(IID *rclsid)
+{
+  _DWORD *v2; // rcx
+  HRESULT v3; // eax
+  __int64 v4; // rax
+  __int64 v5; // rbx
+  HRESULT v6; // eax
+  __int64 v7; // rax
+  _QWORD *v8; // rsi
+  _QWORD *v9; // r14
+  _QWORD *v10; // rax
+  __int64 v11; // r9
+  _QWORD *v12; // rcx
+  char v13; // bl
+  __int64 v14; // rax
+  __int64 v15; // rcx
+  __int64 v16; // rdx
+  __int64 i; // rbx
+  __int64 v18; // rdi
+  __int64 v19; // [rsp+20h] [rbp-89h] BYREF
+  LPOLESTR lpsz; // [rsp+28h] [rbp-81h] BYREF
+  __int64 v21; // [rsp+30h] [rbp-79h] BYREF
+  __int128 v22; // [rsp+38h] [rbp-71h] BYREF
+  __int64 v23; // [rsp+48h] [rbp-61h]
+  void *v24; // [rsp+50h] [rbp-59h]
+  _BYTE v25[64]; // [rsp+60h] [rbp-49h] BYREF
+  _QWORD v26[4]; // [rsp+A0h] [rbp-9h] BYREF
+  _BYTE v27[32]; // [rsp+C0h] [rbp+17h] BYREF
+  wil::details::in1diag3 *retaddr; // [rsp+108h] [rbp+5Fh]
+
+  if ( (unsigned __int8)wil::details::FeatureImpl<__WilFeatureTraits_Feature_Servicing_WebAuthNTraceLoggingImprovementsV2>::__private_IsEnabled(&`wil::Feature<__WilFeatureTraits_Feature_Servicing_WebAuthNTraceLoggingImprovementsV2>::GetImpl'::`2'::impl) )
+  {
+    v2 = *(_DWORD **)(wil::details::static_lazy<FidoPluginProvider>::get() + 16);
+    if ( *v2 > 4u )
+      _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),&long _tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<>(
+        v2,
+        &unk_1801892E6,
+        0);
+  }
+  else if ( (unsigned int)dword_1801AB110 > 4 )
+  {
+    _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),&long _tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<>(
+      &dword_1801AB110,
+      &unk_180189314,
+      0);
+  }
+  v21 = 0;
+  if ( (unsigned __int8)wil::details::FeatureImpl<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::__private_IsEnabled(&`wil::Feature<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::GetImpl'::`2'::impl) )
+  {
+    *(_BYTE *)(*(_QWORD *)tip2::tip_test<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::operator->(
+                            &v21,
+                            &v19)
+             + 304LL) = 3;
+    tip2::test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::~test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>(&v19);
+  }
+  tip2::tip_test<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::start_and_watch_errors(
+    &v21,
+    v25);
+  lpsz = 0;
+  if ( (unsigned __int8)wil::details::FeatureImpl<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::__private_IsEnabled(&`wil::Feature<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::GetImpl'::`2'::impl) )
+  {
+    v3 = StringFromCLSID(rclsid, &lpsz);
+    if ( v3 < 0 )
+      wil::details::in1diag3::Throw_Hr(
+        retaddr,
+        (void *)0xF0C,
+        (unsigned int)"onecore\\ds\\security\\fido\\webauthn\\dll\\webauthnplugin.cpp",
+        (const char *)(unsigned int)v3,
+        v19);
+  }
+  tip2::tip_test<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::operator->(
+    &v21,
+    &v19);
+  if ( (unsigned __int8)wil::details::FeatureImpl<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::__private_IsEnabled(&`wil::Feature<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::GetImpl'::`2'::impl) )
+  {
+    v4 = std::wstring::wstring(v26, lpsz);
+    std::wstring::operator=(v19 + 272, v4);
+    std::wstring::_Tidy_deallocate(v26);
+    tip2::test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::close(&v19);
+    v5 = v19;
+  }
+  else
+  {
+    v5 = v19;
+    *(_BYTE *)(v19 + 304) = 3;
+  }
+  v22 = 0;
+  v23 = 0;
+  v24 = &unk_1801ACAD0;
+  std::_Mutex_base::lock((std::_Mutex_base *)&unk_1801ACAD0);
+  if ( !(unsigned __int8)wil::details::FeatureImpl<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::__private_IsEnabled(&`wil::Feature<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::GetImpl'::`2'::impl) )
+  {
+    v6 = StringFromCLSID(rclsid, &lpsz);
+    if ( v6 < 0 )
+      wil::details::in1diag3::Throw_Hr(
+        retaddr,
+        (void *)0xF20,
+        (unsigned int)"onecore\\ds\\security\\fido\\webauthn\\dll\\webauthnplugin.cpp",
+        (const char *)(unsigned int)v6,
+        v19);
+    v7 = std::wstring::wstring(v26, lpsz);
+    std::wstring::operator=(v5 + 272, v7);
+    std::wstring::_Tidy_deallocate(v26);
+    tip2::test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::close(&v19);
+  }
+  v8 = (_QWORD *)qword_1801AF3D0;
+  v9 = (_QWORD *)xmmword_1801AF3D8;
+  while ( v8 != v9 )
+  {
+    v10 = (_QWORD *)std::wstring::wstring(v27, lpsz);
+    v11 = v10[2];
+    if ( v10[3] > 7u )
+      v10 = (_QWORD *)*v10;
+    if ( v8[3] <= 7u )
+      v12 = v8;
+    else
+      v12 = (_QWORD *)*v8;
+    v13 = std::_Traits_equal<std::char_traits<unsigned short>>(v12, v8[2], v10, v11);
+    std::wstring::_Tidy_deallocate(v27);
+    if ( v13 )
+    {
+      v14 = v8[5];
+      v26[0] = v14;
+      v15 = v8[6];
+      v26[1] = v15;
+      v16 = *((_QWORD *)&v22 + 1);
+      if ( *((_QWORD *)&v22 + 1) == v23 )
+      {
+        std::vector<std::pair<void (*)(void *),void *>>::_Emplace_reallocate<std::pair<void (*)(void *),void *>>(
+          &v22,
+          *((_QWORD *)&v22 + 1),
+          v26);
+      }
+      else
+      {
+        **((_QWORD **)&v22 + 1) = v14;
+        *(_QWORD *)(v16 + 8) = v15;
+        *((_QWORD *)&v22 + 1) += 16LL;
+      }
+    }
+    v8 += 7;
+  }
+  _Mtx_unlock((_Mtx_t)&unk_1801ACAD0);
+  v18 = *((_QWORD *)&v22 + 1);
+  for ( i = v22; i != v18; i += 16 )
+    (*(void (__fastcall **)(_QWORD))i)(*(_QWORD *)(i + 8));
+  tip2::tip_test<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::complete(&v21);
+  if ( (_QWORD)v22 )
+  {
+    std::_Deallocate<16>(v22, (v23 - v22) & 0xFFFFFFFFFFFFFFF0uLL);
+    v22 = 0;
+    v23 = 0;
+  }
+  tip2::test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::~test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>(&v19);
+  tip2::test_watcher<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::~test_watcher<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>(v25);
+  wil::com_ptr_t<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>,wil::err_returncode_policy>::~com_ptr_t<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>,wil::err_returncode_policy>(&v21);
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800b4808  mov     [rsp-8+arg_8], rbx
+0x1800b480d  mov     [rsp-8+arg_10], rsi
+0x1800b4812  push    rbp
+0x1800b4813  push    rdi
+0x1800b4814  push    r14
+0x1800b4816  lea     rbp, [rsp-47h]
+0x1800b481b  sub     rsp, 0F0h
+0x1800b4822  mov     rax, cs:__security_cookie
+0x1800b4829  xor     rax, rsp
+0x1800b482c  mov     [rbp+57h+var_20], rax
+0x1800b4830  mov     rsi, rcx
+0x1800b4833  lea     rcx, ?impl@?1??GetImpl@?$Feature@U__WilFeatureTraits_Feature_Servicing_WebAuthNTraceLoggingImprovementsV2@@@wil@@CAAEAV?$FeatureImpl@U__WilFeatureTraits_Feature_Servicing_WebAuthNTraceLoggingImprovementsV2@@@details@3@XZ@4V453@A; wil::details::FeatureImpl<__WilFeatureTraits_Feature_Servicing_WebAuthNTraceLoggingImprovementsV2> `wil::Feature<__WilFeatureTraits_Feature_Servicing_WebAuthNTraceLoggingImprovementsV2>::GetImpl(void)'::`2'::impl
+0x1800b483a  call    ?__private_IsEnabled@?$FeatureImpl@U__WilFeatureTraits_Feature_Servicing_WebAuthNTraceLoggingImprovementsV2@@@details@wil@@QEAA_NXZ; wil::details::FeatureImpl<__WilFeatureTraits_Feature_Servicing_WebAuthNTraceLoggingImprovementsV2>::__private_IsEnabled(void)
+0x1800b483f  test    al, al
+0x1800b4841  jz      short loc_1800B4864
+0x1800b4843  call    ?get@?$static_lazy@VFidoPluginProvider@@@details@wil@@QEAAPEAVFidoPluginProvider@@P6AXXZ@Z; wil::details::static_lazy<FidoPluginProvider>::get(void (*)(void))
+0x1800b4848  mov     rcx, [rax+10h]
+0x1800b484c  mov     eax, [rcx]
+0x1800b484e  cmp     eax, 4
+0x1800b4851  jbe     short loc_1800B4885
+0x1800b4853  xor     r8d, r8d
+0x1800b4856  lea     rdx, unk_1801892E6
+0x1800b485d  call    ??$Write@$$V@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2@Z; _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *)
+0x1800b4862  jmp     short loc_1800B4885
+0x1800b4864  mov     eax, cs:dword_1801AB110
+0x1800b486a  cmp     eax, 4
+0x1800b486d  jbe     short loc_1800B4885
+0x1800b486f  xor     r8d, r8d
+0x1800b4872  lea     rdx, unk_180189314
+0x1800b4879  lea     rcx, dword_1801AB110
+0x1800b4880  call    ??$Write@$$V@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2@Z; _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *)
+0x1800b4885  mov     [rbp+57h+var_D0], 0
+0x1800b488d  lea     r14, ?impl@?1??GetImpl@?$Feature@U__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements@@@wil@@CAAEAV?$FeatureImpl@U__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements@@@details@3@XZ@4V453@A; wil::details::FeatureImpl<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements> `wil::Feature<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::GetImpl(void)'::`2'::impl
+0x1800b4894  mov     rcx, r14
+0x1800b4897  call    ?__private_IsEnabled@?$FeatureImpl@U__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements@@@details@wil@@QEAA_NXZ; wil::details::FeatureImpl<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::__private_IsEnabled(void)
+0x1800b489c  test    al, al
+0x1800b489e  jz      short loc_1800B48C2
+0x1800b48a0  lea     rdx, [rsp+100h+var_E0]
+0x1800b48a5  lea     rcx, [rbp+57h+var_D0]
+0x1800b48a9  call    ??C?$tip_test@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@tip2@@QEAA?AV?$test_data_control@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@1@XZ; tip2::tip_test<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::operator->(void)
+0x1800b48ae  mov     rcx, [rax]
+0x1800b48b1  mov     byte ptr [rcx+130h], 3
+0x1800b48b8  lea     rcx, [rsp+100h+var_E0]
+0x1800b48bd  call    ??1?$test_data_control@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@tip2@@QEAA@XZ; tip2::test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::~test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>(void)
+0x1800b48c2  lea     rdx, [rbp+57h+var_A0]
+0x1800b48c6  lea     rcx, [rbp+57h+var_D0]
+0x1800b48ca  call    ?start_and_watch_errors@?$tip_test@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@tip2@@QEAA?AV?$test_watcher@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@2@XZ; tip2::tip_test<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::start_and_watch_errors(void)
+0x1800b48cf  nop
+0x1800b48d0  mov     [rsp+100h+lpsz], 0
+0x1800b48d9  mov     rcx, r14
+0x1800b48dc  call    ?__private_IsEnabled@?$FeatureImpl@U__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements@@@details@wil@@QEAA_NXZ; wil::details::FeatureImpl<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::__private_IsEnabled(void)
+0x1800b48e1  test    al, al
+0x1800b48e3  jz      short loc_1800B48FF
+0x1800b48e5  lea     rdx, [rsp+100h+lpsz]; lplpsz
+0x1800b48ea  mov     rcx, rsi; rclsid
+0x1800b48ed  call    cs:__imp_StringFromCLSID
+0x1800b48f3  mov     rcx, [rbp+5Fh]; this
+0x1800b48f7  test    eax, eax
+0x1800b48f9  js      loc_1800B4B26
+0x1800b48ff  lea     rdx, [rsp+100h+var_E0]
+0x1800b4904  lea     rcx, [rbp+57h+var_D0]
+0x1800b4908  call    ??C?$tip_test@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@tip2@@QEAA?AV?$test_data_control@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@1@XZ; tip2::tip_test<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::operator->(void)
+0x1800b490d  nop
+0x1800b490e  mov     rcx, r14
+0x1800b4911  call    ?__private_IsEnabled@?$FeatureImpl@U__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements@@@details@wil@@QEAA_NXZ; wil::details::FeatureImpl<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::__private_IsEnabled(void)
+0x1800b4916  test    al, al
+0x1800b4918  jz      short loc_1800B4956
+0x1800b491a  mov     rdx, [rsp+100h+lpsz]
+0x1800b491f  lea     rcx, [rbp+57h+var_60]
+0x1800b4923  call    ??0?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEAA@QEBG@Z; std::wstring::wstring(ushort const * const)
+0x1800b4928  mov     rcx, [rsp+100h+var_E0]
+0x1800b492d  add     rcx, 110h
+0x1800b4934  mov     rdx, rax
+0x1800b4937  call    ??4?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEAAAEAV01@$$QEAV01@@Z; std::wstring::operator=(std::wstring &&)
+0x1800b493c  lea     rcx, [rbp+57h+var_60]
+0x1800b4940  call    ?_Tidy_deallocate@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAXXZ; std::wstring::_Tidy_deallocate(void)
+0x1800b4945  lea     rcx, [rsp+100h+var_E0]
+0x1800b494a  call    ?close@?$test_data_control@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@tip2@@QEAAXXZ; tip2::test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::close(void)
+0x1800b494f  mov     rbx, [rsp+100h+var_E0]
+0x1800b4954  jmp     short loc_1800B4962
+0x1800b4956  mov     rbx, [rsp+100h+var_E0]
+0x1800b495b  mov     byte ptr [rbx+130h], 3
+0x1800b4962  xorps   xmm0, xmm0
+0x1800b4965  movdqu  [rbp+57h+var_C8], xmm0
+0x1800b496a  mov     [rbp+57h+var_B8], 0
+0x1800b4972  lea     rdi, unk_1801ACAD0
+0x1800b4979  mov     [rbp+57h+var_B0], rdi
+0x1800b497d  mov     rcx, rdi; this
+0x1800b4980  call    ?lock@_Mutex_base@std@@QEAAXXZ; std::_Mutex_base::lock(void)
+0x1800b4985  nop
+0x1800b4986  mov     rcx, r14
+0x1800b4989  call    ?__private_IsEnabled@?$FeatureImpl@U__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements@@@details@wil@@QEAA_NXZ; wil::details::FeatureImpl<__WilFeatureTraits_Feature_PluginAuthenticatorsImprovements>::__private_IsEnabled(void)
+0x1800b498e  test    al, al
+0x1800b4990  jnz     short loc_1800B49DC
+0x1800b4992  lea     rdx, [rsp+100h+lpsz]; lplpsz
+0x1800b4997  mov     rcx, rsi; rclsid
+0x1800b499a  call    cs:__imp_StringFromCLSID
+0x1800b49a0  mov     rcx, [rbp+5Fh]; this
+0x1800b49a4  test    eax, eax
+0x1800b49a6  js      loc_1800B4B11
+0x1800b49ac  mov     rdx, [rsp+100h+lpsz]
+0x1800b49b1  lea     rcx, [rbp+57h+var_60]
+0x1800b49b5  call    ??0?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEAA@QEBG@Z; std::wstring::wstring(ushort const * const)
+0x1800b49ba  lea     rcx, [rbx+110h]
+0x1800b49c1  mov     rdx, rax
+0x1800b49c4  call    ??4?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEAAAEAV01@$$QEAV01@@Z; std::wstring::operator=(std::wstring &&)
+0x1800b49c9  lea     rcx, [rbp+57h+var_60]
+0x1800b49cd  call    ?_Tidy_deallocate@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAXXZ; std::wstring::_Tidy_deallocate(void)
+0x1800b49d2  lea     rcx, [rsp+100h+var_E0]
+0x1800b49d7  call    ?close@?$test_data_control@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@tip2@@QEAAXXZ; tip2::test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::close(void)
+0x1800b49dc  mov     rsi, cs:qword_1801AF3D0
+0x1800b49e3  mov     r14, qword ptr cs:xmmword_1801AF3D8
+0x1800b49ea  jmp     short loc_1800B4A6B
+0x1800b49ec  mov     rdx, [rsp+100h+lpsz]
+0x1800b49f1  lea     rcx, [rbp+57h+var_40]
+0x1800b49f5  call    ??0?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QEAA@QEBG@Z; std::wstring::wstring(ushort const * const)
+0x1800b49fa  mov     r9, [rax+10h]
+0x1800b49fe  cmp     qword ptr [rax+18h], 7
+0x1800b4a03  jbe     short loc_1800B4A08
+0x1800b4a05  mov     rax, [rax]
+0x1800b4a08  cmp     qword ptr [rsi+18h], 7
+0x1800b4a0d  jbe     short loc_1800B4A14
+0x1800b4a0f  mov     rcx, [rsi]
+0x1800b4a12  jmp     short loc_1800B4A17
+0x1800b4a14  mov     rcx, rsi
+0x1800b4a17  mov     r8, rax
+0x1800b4a1a  mov     rdx, [rsi+10h]
+0x1800b4a1e  call    ??$_Traits_equal@U?$char_traits@G@std@@@std@@YA_NQEBG_K01@Z; std::_Traits_equal<std::char_traits<ushort>>(ushort const * const,unsigned __int64,ushort const * const,unsigned __int64)
+0x1800b4a23  mov     bl, al
+0x1800b4a25  lea     rcx, [rbp+57h+var_40]
+0x1800b4a29  call    ?_Tidy_deallocate@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAAXXZ; std::wstring::_Tidy_deallocate(void)
+0x1800b4a2e  test    bl, bl
+0x1800b4a30  jz      short loc_1800B4A67
+0x1800b4a32  mov     rax, [rsi+28h]
+0x1800b4a36  mov     [rbp+57h+var_60], rax
+0x1800b4a3a  mov     rcx, [rsi+30h]
+0x1800b4a3e  mov     [rbp+57h+var_58], rcx
+0x1800b4a42  mov     rdx, qword ptr [rbp+57h+var_C8+8]
+0x1800b4a46  cmp     rdx, [rbp+57h+var_B8]
+0x1800b4a4a  jz      short loc_1800B4A5A
+0x1800b4a4c  mov     [rdx], rax
+0x1800b4a4f  mov     [rdx+8], rcx
+0x1800b4a53  add     qword ptr [rbp+57h+var_C8+8], 10h
+0x1800b4a58  jmp     short loc_1800B4A67
+0x1800b4a5a  lea     r8, [rbp+57h+var_60]
+0x1800b4a5e  lea     rcx, [rbp+57h+var_C8]
+0x1800b4a62  call    ??$_Emplace_reallocate@U?$pair@P6AXPEAX@ZPEAX@std@@@?$vector@U?$pair@P6AXPEAX@ZPEAX@std@@V?$allocator@U?$pair@P6AXPEAX@ZPEAX@std@@@2@@std@@AEAAPEAU?$pair@P6AXPEAX@ZPEAX@1@QEAU21@$$QEAU21@@Z; std::vector<std::pair<void (*)(void *),void *>>::_Emplace_reallocate<std::pair<void (*)(void *),void *>>(std::pair<void (*)(void *),void *> * const,std::pair<void (*)(void *),void *> &&)
+0x1800b4a67  add     rsi, 38h ; '8'
+0x1800b4a6b  cmp     rsi, r14
+0x1800b4a6e  jnz     loc_1800B49EC
+0x1800b4a74  mov     rcx, rdi; _Mtx_t
+0x1800b4a77  call    cs:__imp__Mtx_unlock
+0x1800b4a7d  mov     rbx, qword ptr [rbp+57h+var_C8]
+0x1800b4a81  mov     rdi, qword ptr [rbp+57h+var_C8+8]
+0x1800b4a85  jmp     short loc_1800B4A97
+0x1800b4a87  mov     rcx, [rbx+8]
+0x1800b4a8b  mov     rax, [rbx]
+0x1800b4a8e  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1800b4a93  add     rbx, 10h
+0x1800b4a97  cmp     rbx, rdi
+0x1800b4a9a  jnz     short loc_1800B4A87
+0x1800b4a9c  lea     rcx, [rbp+57h+var_D0]
+0x1800b4aa0  call    ?complete@?$tip_test@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@tip2@@QEAAXXZ; tip2::tip_test<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::complete(void)
+0x1800b4aa5  nop
+0x1800b4aa6  mov     rcx, qword ptr [rbp+57h+var_C8]
+0x1800b4aaa  test    rcx, rcx
+0x1800b4aad  jz      short loc_1800B4ACF
+0x1800b4aaf  mov     rdx, [rbp+57h+var_B8]
+0x1800b4ab3  sub     rdx, rcx
+0x1800b4ab6  and     rdx, 0FFFFFFFFFFFFFFF0h
+0x1800b4aba  call    ??$_Deallocate@$0BA@@std@@YAXPEAX_K@Z; std::_Deallocate<16>(void *,unsigned __int64)
+0x1800b4abf  xorps   xmm0, xmm0
+0x1800b4ac2  movdqu  [rbp+57h+var_C8], xmm0
+0x1800b4ac7  mov     [rbp+57h+var_B8], 0
+0x1800b4acf  lea     rcx, [rsp+100h+var_E0]
+0x1800b4ad4  call    ??1?$test_data_control@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@tip2@@QEAA@XZ; tip2::test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::~test_data_control<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>(void)
+0x1800b4ad9  nop
+0x1800b4ada  lea     rcx, [rbp+57h+var_A0]
+0x1800b4ade  call    ??1?$test_watcher@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@@tip2@@QEAA@XZ; tip2::test_watcher<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>::~test_watcher<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>>(void)
+0x1800b4ae3  nop
+0x1800b4ae4  lea     rcx, [rbp+57h+var_D0]
+0x1800b4ae8  call    ??1?$com_ptr_t@V?$merged_data@U_tip_WebAuthNPluginCallbackTest@@U1@@details@tip2@@Uerr_returncode_policy@wil@@@wil@@QEAA@XZ; wil::com_ptr_t<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>,wil::err_returncode_policy>::~com_ptr_t<tip2::details::merged_data<_tip_WebAuthNPluginCallbackTest,_tip_WebAuthNPluginCallbackTest>,wil::err_returncode_policy>(void)
+0x1800b4aed  mov     rcx, [rbp+57h+var_20]
+0x1800b4af1  xor     rcx, rsp; StackCookie
+0x1800b4af4  call    __security_check_cookie
+0x1800b4af9  lea     r11, [rsp+100h+var_10]
+0x1800b4b01  mov     rbx, [r11+28h]
+0x1800b4b05  mov     rsi, [r11+30h]
+0x1800b4b09  mov     rsp, r11
+0x1800b4b0c  pop     r14
+0x1800b4b0e  pop     rdi
+0x1800b4b0f  pop     rbp
+0x1800b4b10  retn
+0x1800b4b11  mov     r9d, eax; char *
+0x1800b4b14  lea     r8, aOnecoreDsSecur_23; "onecore\\ds\\security\\fido\\webauthn\\"...
+0x1800b4b1b  mov     edx, 0F20h; void *
+0x1800b4b20  call    ?Throw_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Throw_Hr(void *,uint,char const *,long)
+0x1800b4b26  mov     r9d, eax; char *
+0x1800b4b29  lea     r8, aOnecoreDsSecur_23; "onecore\\ds\\security\\fido\\webauthn\\"...
+0x1800b4b30  mov     edx, 0F0Ch; void *
+0x1800b4b35  call    ?Throw_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Throw_Hr(void *,uint,char const *,long)
+```

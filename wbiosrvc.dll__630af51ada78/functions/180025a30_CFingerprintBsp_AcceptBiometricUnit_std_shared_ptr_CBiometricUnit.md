@@ -1,0 +1,45 @@
+# CFingerprintBsp::AcceptBiometricUnit(std::shared_ptr<CBiometricUnit> &)
+
+- ea: `0x180025a30`
+- end: `0x180025bba`
+- name: `?AcceptBiometricUnit@CFingerprintBsp@@UEAA_NAEAV?$shared_ptr@VCBiometricUnit@@@std@@@Z`
+- size: `394`
+- prototype: `char __fastcall(RTL_SRWLOCK *, struct CBiometricUnit **)`
+- caller_count: `0`
+- callee_count: `15`
+- tags: `service_task, broker_com_uri`
+
+## callees
+
+- `0x180013ef0`
+- `0x18001ca14`
+- `0x18001caa8`
+- `0x18001e070`
+- `0x18001e0d0`
+- `0x18001f0e4`
+- `0x180023d88`
+- `0x180025a30`
+- `0x180026b28`
+- `0x180027438`
+- `0x18003f2dc`
+- `0x180055878`
+- `0x1800559c8`
+- `0x1800576a4`
+- `0x180068f60`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x180025b8f`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared` at `0x180025b8f`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared` at `0x180025a6e`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared` at `0x180025a6e`
+
+## string_xrefs
+
+- `0x180025ab3`: `onecore\ds\security\biometrics\service\server\fingerprintbsp.cpp`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,38 @@
+# CHardwareManager::UnregisterPowerNotifications(void)
+
+- ea: `0x18005fde8`
+- end: `0x18005fe6b`
+- name: `?UnregisterPowerNotifications@CHardwareManager@@QEAAXXZ`
+- size: `131`
+- prototype: `void __fastcall(CHardwareManager *__hidden this)`
+- caller_count: `1`
+- callee_count: `3`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x18003ea90`
+
+## callees
+
+- `0x18005fde8`
+- `0x180072d34`
+- `0x180072d58`
+
+## import_xrefs
+
+- `api-ms-win-power-setting-l1-1-0!PowerSettingUnregisterNotification` at `0x18005fdfd`
+- `api-ms-win-power-setting-l1-1-0!PowerSettingUnregisterNotification` at `0x18005fdfd`
+- `UMPDC!PdcSignalClientUnregister` at `0x18005fe37`
+- `UMPDC!PdcSignalClientUnregister` at `0x18005fe37`
+
+## string_xrefs
+
+- `0x18005fe0c`: `onecore\ds\security\biometrics\service\server\hardwaremanager.cpp`
+- `0x18005fe46`: `onecore\ds\security\biometrics\service\server\hardwaremanager.cpp`
+
+## pseudocode
+
+```c
+
+```

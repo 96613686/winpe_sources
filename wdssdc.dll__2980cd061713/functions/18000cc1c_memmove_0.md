@@ -1,0 +1,39 @@
+# memmove_0
+
+- ea: `0x18000cc1c`
+- end: `0x18000cc22`
+- name: `memmove_0`
+- size: `6`
+- prototype: `void *__cdecl(void *, const void *Src, size_t Size)`
+- caller_count: `5`
+- callee_count: `0`
+- tags: ``
+
+## callers
+
+- `0x1800057e8`
+- `0x180009770`
+- `0x1800098dc`
+- `0x18000ba40`
+- `0x18000bb00`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!memmove` at `0x18000cc1c`
+
+## pseudocode
+
+```c
+// attributes: thunk
+void *__cdecl memmove_0(void *a1, const void *Src, size_t Size)
+{
+  return memmove(a1, Src, Size);
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000cc1c  jmp     cs:__imp_memmove
+```

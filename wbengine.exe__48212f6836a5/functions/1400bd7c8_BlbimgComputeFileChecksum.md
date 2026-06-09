@@ -1,0 +1,178 @@
+# BlbimgComputeFileChecksum
+
+- ea: `0x1400bd7c8`
+- end: `0x1400be634`
+- name: `BlbimgComputeFileChecksum`
+- size: `3692`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `23`
+- tags: `file_ops, broker_com_uri`
+
+## callers
+
+- `0x14001f5a0`
+- `0x14005d948`
+
+## callees
+
+- `0x140001ca0`
+- `0x140005070`
+- `0x140006ca8`
+- `0x140007ad3`
+- `0x14000bb24`
+- `0x140014200`
+- `0x140014260`
+- `0x14003c434`
+- `0x14003c69c`
+- `0x14003cb70`
+- `0x14003d228`
+- `0x1400b7988`
+- `0x1400bce88`
+- `0x1400bd330`
+- `0x1400bd37c`
+- `0x1400bd7c8`
+- `0x1400c3d08`
+- `0x1400c3ddc`
+- `0x1400c64b0`
+- `0x1400c6bfc`
+- `0x1400cac1c`
+- `0x140134d20`
+- `0x140137010`
+
+## import_xrefs
+
+- `KERNEL32!RtlCompareMemory` at `0x1400bdec6`
+- `KERNEL32!RtlCompareMemory` at `0x1400bdec6`
+- `KERNEL32!GetOverlappedResult` at `0x1400bddab`
+- `KERNEL32!GetOverlappedResult` at `0x1400be0ac`
+- `KERNEL32!GetOverlappedResult` at `0x1400bddab`
+- `KERNEL32!GetOverlappedResult` at `0x1400be0ac`
+- `KERNEL32!LocalAlloc` at `0x1400bd96a`
+- `KERNEL32!LocalAlloc` at `0x1400bdc97`
+- `KERNEL32!LocalAlloc` at `0x1400bdcf7`
+- `KERNEL32!LocalAlloc` at `0x1400bd96a`
+- `KERNEL32!LocalAlloc` at `0x1400bdc97`
+- `KERNEL32!LocalAlloc` at `0x1400bdcf7`
+- `KERNEL32!GetSystemTime` at `0x1400be045`
+- `KERNEL32!GetSystemTime` at `0x1400be403`
+- `KERNEL32!GetSystemTime` at `0x1400be435`
+- `KERNEL32!GetSystemTime` at `0x1400be045`
+- `KERNEL32!GetSystemTime` at `0x1400be403`
+- `KERNEL32!GetSystemTime` at `0x1400be435`
+- `KERNEL32!LocalFree` at `0x1400bd9dd`
+- `KERNEL32!LocalFree` at `0x1400bda09`
+- `KERNEL32!LocalFree` at `0x1400bda48`
+- `KERNEL32!LocalFree` at `0x1400bda9b`
+- `KERNEL32!LocalFree` at `0x1400bdba6`
+- `KERNEL32!LocalFree` at `0x1400bdc31`
+- `KERNEL32!LocalFree` at `0x1400bdc7c`
+- `KERNEL32!LocalFree` at `0x1400bdcdb`
+- `KERNEL32!LocalFree` at `0x1400bdd14`
+- `KERNEL32!LocalFree` at `0x1400bdd44`
+- `KERNEL32!LocalFree` at `0x1400bddc0`
+- `KERNEL32!LocalFree` at `0x1400bddc9`
+- `KERNEL32!LocalFree` at `0x1400bddf9`
+- `KERNEL32!LocalFree` at `0x1400bde60`
+- `KERNEL32!LocalFree` at `0x1400bde69`
+- `KERNEL32!LocalFree` at `0x1400bde99`
+- `KERNEL32!LocalFree` at `0x1400bded5`
+- `KERNEL32!LocalFree` at `0x1400bdede`
+- `KERNEL32!LocalFree` at `0x1400bdf0e`
+- `KERNEL32!LocalFree` at `0x1400be574`
+- `KERNEL32!LocalFree` at `0x1400be58e`
+- `KERNEL32!LocalFree` at `0x1400be598`
+- `KERNEL32!LocalFree` at `0x1400be5b6`
+- `KERNEL32!LocalFree` at `0x1400be5c0`
+- `KERNEL32!LocalFree` at `0x1400bd9dd`
+- `KERNEL32!LocalFree` at `0x1400bda09`
+- `KERNEL32!LocalFree` at `0x1400bda48`
+- `KERNEL32!LocalFree` at `0x1400bda9b`
+- `KERNEL32!LocalFree` at `0x1400bdba6`
+- `KERNEL32!LocalFree` at `0x1400bdc31`
+- `KERNEL32!LocalFree` at `0x1400bdc7c`
+- `KERNEL32!LocalFree` at `0x1400bdcdb`
+- `KERNEL32!LocalFree` at `0x1400bdd14`
+- `KERNEL32!LocalFree` at `0x1400bdd44`
+- `KERNEL32!LocalFree` at `0x1400bddc0`
+- `KERNEL32!LocalFree` at `0x1400bddc9`
+- `KERNEL32!LocalFree` at `0x1400bddf9`
+- `KERNEL32!LocalFree` at `0x1400bde60`
+- `KERNEL32!LocalFree` at `0x1400bde69`
+- `KERNEL32!LocalFree` at `0x1400bde99`
+- `KERNEL32!LocalFree` at `0x1400bded5`
+- `KERNEL32!LocalFree` at `0x1400bdede`
+- `KERNEL32!LocalFree` at `0x1400bdf0e`
+- `KERNEL32!LocalFree` at `0x1400be574`
+- `KERNEL32!LocalFree` at `0x1400be58e`
+- `KERNEL32!LocalFree` at `0x1400be598`
+- `KERNEL32!LocalFree` at `0x1400be5b6`
+- `KERNEL32!LocalFree` at `0x1400be5c0`
+- `KERNEL32!GetFileSizeEx` at `0x1400bdbf5`
+- `KERNEL32!GetFileSizeEx` at `0x1400bdbf5`
+- `KERNEL32!CreateFileW` at `0x1400bdb6e`
+- `KERNEL32!CreateFileW` at `0x1400bdb6e`
+- `KERNEL32!CloseHandle` at `0x1400bd9fb`
+- `KERNEL32!CloseHandle` at `0x1400bda3a`
+- `KERNEL32!CloseHandle` at `0x1400bda8d`
+- `KERNEL32!CloseHandle` at `0x1400bdb98`
+- `KERNEL32!CloseHandle` at `0x1400bdc0c`
+- `KERNEL32!CloseHandle` at `0x1400bdc23`
+- `KERNEL32!CloseHandle` at `0x1400bdc59`
+- `KERNEL32!CloseHandle` at `0x1400bdc6e`
+- `KERNEL32!CloseHandle` at `0x1400bdcb6`
+- `KERNEL32!CloseHandle` at `0x1400bdccd`
+- `KERNEL32!CloseHandle` at `0x1400bdd1f`
+- `KERNEL32!CloseHandle` at `0x1400bdd36`
+- `KERNEL32!CloseHandle` at `0x1400bddd4`
+- `KERNEL32!CloseHandle` at `0x1400bddeb`
+- `KERNEL32!CloseHandle` at `0x1400bde74`
+- `KERNEL32!CloseHandle` at `0x1400bde8b`
+- `KERNEL32!CloseHandle` at `0x1400bdee9`
+- `KERNEL32!CloseHandle` at `0x1400bdf00`
+- `KERNEL32!CloseHandle` at `0x1400be566`
+- `KERNEL32!CloseHandle` at `0x1400be5a3`
+- `KERNEL32!CloseHandle` at `0x1400bd9fb`
+- `KERNEL32!CloseHandle` at `0x1400bda3a`
+- `KERNEL32!CloseHandle` at `0x1400bda8d`
+- `KERNEL32!CloseHandle` at `0x1400bdb98`
+- `KERNEL32!CloseHandle` at `0x1400bdc0c`
+- `KERNEL32!CloseHandle` at `0x1400bdc23`
+- `KERNEL32!CloseHandle` at `0x1400bdc59`
+- `KERNEL32!CloseHandle` at `0x1400bdc6e`
+- `KERNEL32!CloseHandle` at `0x1400bdcb6`
+- `KERNEL32!CloseHandle` at `0x1400bdccd`
+- `KERNEL32!CloseHandle` at `0x1400bdd1f`
+- `KERNEL32!CloseHandle` at `0x1400bdd36`
+- `KERNEL32!CloseHandle` at `0x1400bddd4`
+- `KERNEL32!CloseHandle` at `0x1400bddeb`
+- `KERNEL32!CloseHandle` at `0x1400bde74`
+- `KERNEL32!CloseHandle` at `0x1400bde8b`
+- `KERNEL32!CloseHandle` at `0x1400bdee9`
+- `KERNEL32!CloseHandle` at `0x1400bdf00`
+- `KERNEL32!CloseHandle` at `0x1400be566`
+- `KERNEL32!CloseHandle` at `0x1400be5a3`
+- `KERNEL32!CreateEventW` at `0x1400bd9a9`
+- `KERNEL32!CreateEventW` at `0x1400bd9a9`
+- `KERNEL32!GetLastError` at `0x1400bd9d2`
+- `KERNEL32!GetLastError` at `0x1400bda1a`
+- `KERNEL32!GetLastError` at `0x1400bdb7f`
+- `KERNEL32!GetLastError` at `0x1400bdbff`
+- `KERNEL32!GetLastError` at `0x1400bdca9`
+- `KERNEL32!GetLastError` at `0x1400bdd09`
+- `KERNEL32!GetLastError` at `0x1400bddb5`
+- `KERNEL32!GetLastError` at `0x1400be474`
+- `KERNEL32!GetLastError` at `0x1400bd9d2`
+- `KERNEL32!GetLastError` at `0x1400bda1a`
+- `KERNEL32!GetLastError` at `0x1400bdb7f`
+- `KERNEL32!GetLastError` at `0x1400bdbff`
+- `KERNEL32!GetLastError` at `0x1400bdca9`
+- `KERNEL32!GetLastError` at `0x1400bdd09`
+- `KERNEL32!GetLastError` at `0x1400bddb5`
+- `KERNEL32!GetLastError` at `0x1400be474`
+
+## pseudocode
+
+```c
+
+```
