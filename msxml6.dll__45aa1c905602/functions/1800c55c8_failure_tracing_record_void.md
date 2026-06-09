@@ -1,0 +1,80 @@
+# failure_tracing::record(void)
+
+- ea: `0x1800c55c8`
+- end: `0x1800c5621`
+- name: `?record@failure_tracing@@SAXXZ`
+- size: `89`
+- prototype: `void(void)`
+- caller_count: `158`
+- callee_count: `2`
+- tags: ``
+
+## callers
+
+- `0x180002b54`
+- `0x180003630`
+- `0x180005124`
+- `0x18000584c`
+- `0x1800058e4`
+- `0x180006e18`
+- `0x1800072f4`
+- `0x180008bc4`
+- `0x18000c560`
+- `0x1800101e4`
+- `0x180014574`
+- `0x1800159b4`
+- `0x180016588`
+- `0x1800199ec`
+- `0x180019cd0`
+- `0x180019e48`
+- `0x18001a320`
+- `0x18001a74c`
+- `0x18002a510`
+- `0x18002a580`
+- `0x18002a7f4`
+- `0x18002ab64`
+- `0x18002abf4`
+- `0x18002ad0c`
+- `0x18002ad60`
+- `0x18002b430`
+- `0x18002b480`
+- `0x18002b790`
+- `0x18002b800`
+- `0x18002b864`
+- `0x18002ba20`
+- `0x18002bb1c`
+- `0x18002bc1c`
+- `0x18002bf40`
+- `0x18002c164`
+- `0x18002c408`
+- `0x18002ca20`
+- `0x1800307d4`
+- `0x180030df0`
+- `0x180033be4`
+- `0x180033f8c`
+- `0x18003435c`
+- `0x18003487c`
+- `0x180034cc8`
+- `0x18003533c`
+- `0x180035448`
+- `0x180035688`
+- `0x180036128`
+- `0x1800367cc`
+- `0x180036868`
+
+## callees
+
+- `0x180058d54`
+- `0x18017c1e4`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1800c55d3`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1800c55d3`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1800c5615`
+
+## pseudocode
+
+```c
+
+```

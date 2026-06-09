@@ -1,0 +1,79 @@
+# Exception::exceptionCatch(void)
+
+- ea: `0x1800a3c08`
+- end: `0x1800a3c84`
+- name: `?exceptionCatch@Exception@@SAXXZ`
+- size: `124`
+- prototype: `void(void)`
+- caller_count: `894`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x1800031a8`
+- `0x1800036b0`
+- `0x1800037b8`
+- `0x180003cf0`
+- `0x18000463c`
+- `0x180004ffc`
+- `0x180005124`
+- `0x18000538c`
+- `0x18000584c`
+- `0x1800058e4`
+- `0x180006954`
+- `0x180006e18`
+- `0x1800072f4`
+- `0x18000877c`
+- `0x180008ac0`
+- `0x180008c34`
+- `0x18000a7fc`
+- `0x18000b944`
+- `0x18000bba4`
+- `0x18000c560`
+- `0x18000d06c`
+- `0x18000d84c`
+- `0x18000dae8`
+- `0x18000dce0`
+- `0x18000e310`
+- `0x18000ef64`
+- `0x18000fd14`
+- `0x1800138c8`
+- `0x180014210`
+- `0x180014574`
+- `0x18001466c`
+- `0x1800154e0`
+- `0x180015d54`
+- `0x18001703c`
+- `0x180017e08`
+- `0x180019870`
+- `0x18001ae54`
+- `0x18001be44`
+- `0x18001bf6c`
+- `0x18002a7f4`
+- `0x18002ae04`
+- `0x18002c1e4`
+- `0x18002c5c4`
+- `0x18002d19c`
+- `0x18002d780`
+- `0x18002e3d8`
+- `0x18002eaa8`
+- `0x18002f0a0`
+- `0x18002f244`
+- `0x18002f69c`
+
+## callees
+
+- `0x1800a3c08`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!_o__resetstkoflw` at `0x1800a3c32`
+- `api-ms-win-crt-private-l1-1-0!_o__resetstkoflw` at `0x1800a3c32`
+- `api-ms-win-core-errorhandling-l1-1-0!RaiseException` at `0x1800a3c54`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,130 @@
+# wil::details_abi::GetThreadLocalDataCache(bool)
+
+- ea: `0x180038c2c`
+- end: `0x180038ce9`
+- name: `?GetThreadLocalDataCache@details_abi@wil@@YAPEAUThreadLocalData@12@_N@Z`
+- size: `189`
+- prototype: `struct wil::details_abi::ThreadLocalData *__fastcall(wil::details_abi *__hidden this, bool)`
+- caller_count: `1`
+- callee_count: `2`
+- tags: ``
+
+## callers
+
+- `0x180038580`
+
+## callees
+
+- `0x180037c28`
+- `0x180038c2c`
+
+## import_xrefs
+
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x180038c86`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x180038c86`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=1
+struct wil::details_abi::ThreadLocalData *__fastcall wil::details_abi::GetThreadLocalDataCache(wil::details_abi *this)
+{
+  __int64 i; // rbx
+  __int64 v2; // rdi
+  __int64 v3; // rdi
+  DWORD CurrentThreadId; // r9d
+  void *v6; // [rsp+38h] [rbp+10h] BYREF
+
+  i = 0;
+  v2 = wil::details_abi::g_pProcessLocalData;
+  if ( wil::details_abi::g_pProcessLocalData )
+  {
+    if ( !*(_QWORD *)(wil::details_abi::g_pProcessLocalData + 8) )
+    {
+      v6 = 0;
+      if ( (int)wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData>::Acquire(
+                  *(_QWORD *)wil::details_abi::g_pProcessLocalData,
+                  &v6) >= 0
+        && !*(_QWORD *)(v2 + 8) )
+      {
+        *(_QWORD *)(v2 + 8) = v6;
+      }
+    }
+    v3 = (*(_QWORD *)(v2 + 8) + 32LL) & -(__int64)(*(_QWORD *)(v2 + 8) != 0);
+    if ( v3 )
+    {
+      CurrentThreadId = GetCurrentThreadId();
+      for ( i = *(_QWORD *)(v3 + 8 * (((unsigned __int64)CurrentThreadId >> 2) % 0xA) + 8); i; i = *(_QWORD *)(i + 8) )
+      {
+        if ( *(_DWORD *)i == CurrentThreadId )
+        {
+          i += 16;
+          if ( i && !*(_QWORD *)(i + 8) )
+            *(_QWORD *)(i + 8) = v3 + 4;
+          return (struct wil::details_abi::ThreadLocalData *)i;
+        }
+      }
+    }
+  }
+  return (struct wil::details_abi::ThreadLocalData *)i;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180038c2c  mov     [rsp+arg_0], rbx
+0x180038c31  push    rdi
+0x180038c32  sub     rsp, 20h
+0x180038c36  xor     ebx, ebx
+0x180038c38  mov     rdi, cs:?g_pProcessLocalData@details_abi@wil@@3PEAV?$ProcessLocalStorage@UProcessLocalData@details_abi@wil@@@12@EA; wil::details_abi::ProcessLocalStorage<wil::details_abi::ProcessLocalData> * wil::details_abi::g_pProcessLocalData
+0x180038c3f  test    rdi, rdi
+0x180038c42  jz      loc_180038CDB
+0x180038c48  cmp     [rdi+8], rbx
+0x180038c4c  jnz     short loc_180038C73
+0x180038c4e  mov     [rsp+28h+arg_8], rbx
+0x180038c53  lea     rdx, [rsp+28h+arg_8]
+0x180038c58  mov     rcx, [rdi]
+0x180038c5b  call    ?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z; wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData> * *)
+0x180038c60  test    eax, eax
+0x180038c62  js      short loc_180038C73
+0x180038c64  cmp     [rdi+8], rbx
+0x180038c68  jnz     short loc_180038C73
+0x180038c6a  mov     rax, [rsp+28h+arg_8]
+0x180038c6f  mov     [rdi+8], rax
+0x180038c73  mov     rcx, [rdi+8]
+0x180038c77  lea     rax, [rcx+20h]
+0x180038c7b  neg     rcx
+0x180038c7e  sbb     rdi, rdi
+0x180038c81  and     rdi, rax
+0x180038c84  jz      short loc_180038CDB
+0x180038c86  call    cs:__imp_GetCurrentThreadId
+0x180038c8c  mov     r9d, eax
+0x180038c8f  mov     r8d, eax
+0x180038c92  shr     r8, 2
+0x180038c96  mov     rax, 0CCCCCCCCCCCCCCCDh
+0x180038ca0  mul     r8
+0x180038ca3  shr     rdx, 3
+0x180038ca7  lea     rcx, [rdx+rdx*4]
+0x180038cab  add     rcx, rcx
+0x180038cae  sub     r8, rcx
+0x180038cb1  mov     rbx, [rdi+r8*8+8]
+0x180038cb6  test    rbx, rbx
+0x180038cb9  jz      short loc_180038CDB
+0x180038cbb  cmp     [rbx], r9d
+0x180038cbe  jz      short loc_180038CC6
+0x180038cc0  mov     rbx, [rbx+8]
+0x180038cc4  jmp     short loc_180038CB6
+0x180038cc6  add     rbx, 10h
+0x180038cca  jz      short loc_180038CDB
+0x180038ccc  cmp     qword ptr [rbx+8], 0
+0x180038cd1  jnz     short loc_180038CDB
+0x180038cd3  lea     rax, [rdi+4]
+0x180038cd7  mov     [rbx+8], rax
+0x180038cdb  mov     rax, rbx
+0x180038cde  mov     rbx, [rsp+28h+arg_0]
+0x180038ce3  add     rsp, 20h
+0x180038ce7  pop     rdi
+0x180038ce8  retn
+```

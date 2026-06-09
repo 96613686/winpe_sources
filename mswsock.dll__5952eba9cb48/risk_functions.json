@@ -1,0 +1,6848 @@
+[
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DoNameResolution",
+    "ea": "0x18002b924",
+    "function_file": "functions/18002b924_DoNameResolution.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-processthreads-l1-1-0!ResumeThread",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateThread",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "DoNameResolution",
+    "prototype": "",
+    "rank_score": 7638,
+    "size": 2659,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "EnumProtocolsW",
+    "ea": "0x18002b060",
+    "function_file": "functions/18002b060_EnumProtocolsW.md",
+    "matched_imports": [
+      "WS2_32!WSAEnumProtocolsW",
+      "WS2_32!__imp_WSACleanup",
+      "WS2_32!__imp_WSAGetLastError",
+      "WS2_32!__imp_WSAStartup",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\",
+      "HelperDllName",
+      "WSHEnumProtocols"
+    ],
+    "name": "EnumProtocolsW",
+    "prototype": "INT __stdcall(LPINT lpiProtocols, LPVOID lpProtocolBuffer, LPDWORD lpdwBufferLength)",
+    "rank_score": 6994,
+    "size": 1959,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SockLoadHelperDll",
+    "ea": "0x180010f4c",
+    "function_file": "functions/180010f4c_SockLoadHelperDll.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\",
+      "HelperDllName",
+      "WSHOpenSocket",
+      "WSHOpenSocket2"
+    ],
+    "name": "SockLoadHelperDll",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 6419,
+    "size": 2631,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 31,
+    "caller_count": 0,
+    "demangled": "Dns_NSPLookupServiceNext",
+    "ea": "0x18001f4e0",
+    "function_file": "functions/18001f4e0_Dns_NSPLookupServiceNext.md",
+    "matched_imports": [
+      "DNSAPI!DnsAddrArrayAddIp4",
+      "DNSAPI!DnsApiFree",
+      "DNSAPI!DnsNameCopy",
+      "DNSAPI!DnsQueryConfigAllocEx",
+      "DNSAPI!DnsStringCopyAllocateEx",
+      "WS2_32!__imp_ntohs",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-string-l1-1-0!MultiByteToWideChar",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-crt-private-l1-1-0!_o__stricmp"
+    ],
+    "matched_strings": [
+      "Leaving SaBlob_CreateFromIp4():"
+    ],
+    "name": "Dns_NSPLookupServiceNext",
+    "prototype": "",
+    "rank_score": 6320,
+    "size": 4336,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 31,
+    "caller_count": 1,
+    "demangled": "HandleControlMessage",
+    "ea": "0x1800485dc",
+    "function_file": "functions/1800485dc_HandleControlMessage.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtSetIoCompletion",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "HandleControlMessage",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 5666,
+    "size": 2624,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180020d30",
+    "function_file": "functions/180020d30_DllMain.md",
+    "matched_imports": [
+      "WS2_32!WahDestroyHandleContextTable",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-memory-l1-1-0!VirtualFree",
+      "api-ms-win-core-processthreads-l1-1-0!TlsFree",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-processthreads-l1-1-0!TlsSetValue",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-eventing-provider-l1-1-0!EventRegister",
+      "api-ms-win-eventing-provider-l1-1-0!EventSetInformation",
+      "api-ms-win-eventing-provider-l1-1-0!EventUnregister",
+      "ntdll!NtClose",
+      "ntdll!NtSetInformationObject",
+      "ntdll!RtlDestroyHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 5236,
+    "size": 1196,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 31,
+    "caller_count": 1,
+    "demangled": "MigrateWinsockConfigurationEx",
+    "ea": "0x1800328c0",
+    "function_file": "functions/1800328c0_MigrateWinsockConfigurationEx.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "OpenServicesRoot failed",
+      "OpenWinsockRoot failed",
+      "OpenSetupMigrationRoot failed",
+      "ReadNewProviderList failed",
+      "ReadOldProviderList failed",
+      "ReadKnownStaticProviderList failed",
+      "Failed to remove old provider",
+      "Successfully removed old provider",
+      "Enumerating new providers for updates",
+      "A new provider has been detected and will be installed",
+      "ReadProtocolDataFromProvider failed",
+      "Non-offline-capable provider returned zero protocol entries",
+      "Successfully installed new provider; adding to updated provider list",
+      "Unable to add newly installed provider to updated provider list",
+      "Cannot install provider; skipping",
+      "Updating the updated list in the online case",
+      "Adding static provider to updated list",
+      "Failed to add provider to updated list",
+      "Adding offline-capable provider to updated list",
+      "Failed to find protocol data in registry; continuing on",
+      "ReadProtocolDataFromRegistry failed",
+      "Provider returned no protocol entries",
+      "RemoveProviderByName failed",
+      "Successfully installed dynamic provider; adding it to updated list",
+      "Failed to add to updated list",
+      "Failed to install dynamic provider; skipping",
+      "Successfully updated dynamic provider",
+      "Done populating the updated list",
+      "Failed to write updated list to the old list registry key",
+      "Exiting MigrateWinsockConfiguration with error",
+      "Exiting MigrateWinsockConfiguration successfully"
+    ],
+    "name": "MigrateWinsockConfigurationEx",
+    "prototype": "",
+    "rank_score": 4950,
+    "size": 3130,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LoadNspDll",
+    "ea": "0x180030098",
+    "function_file": "functions/180030098_LoadNspDll.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\",
+      "\\ServiceProvider",
+      "ProviderPath"
+    ],
+    "name": "LoadNspDll",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 4764,
+    "size": 1243,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 4,
+    "demangled": "SendUsingSmallMsg",
+    "ea": "0x18003ff84",
+    "function_file": "functions/18003ff84_SendUsingSmallMsg.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-2-0!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "SendUsingSmallMsg",
+    "prototype": "__int64 __usercall@<rax>(PVOID CompletionContext@<rcx>, __int64)",
+    "rank_score": 4261,
+    "size": 3198,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "SockpSanLoadProvider",
+    "ea": "0x180043534",
+    "function_file": "functions/180043534_SockpSanLoadProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExA",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "api-ms-win-core-string-l1-1-0!WideCharToMultiByte",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlRegisterSecureMemoryCacheCallback",
+      "ntdll!RtlStringFromGUID"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\Winsock\\Parameters\\TCP on SAN\\"
+    ],
+    "name": "SockpSanLoadProvider",
+    "prototype": "",
+    "rank_score": 4106,
+    "size": 2891,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 29,
+    "caller_count": 1,
+    "demangled": "HandleCompletedRecv",
+    "ea": "0x18003b760",
+    "function_file": "functions/18003b760_HandleCompletedRecv.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "HandleCompletedRecv",
+    "prototype": "",
+    "rank_score": 3881,
+    "size": 4195,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 5,
+    "demangled": "SockSanImportSocket",
+    "ea": "0x18004d924",
+    "function_file": "functions/18004d924_SockSanImportSocket.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockSanImportSocket",
+    "prototype": "",
+    "rank_score": 3670,
+    "size": 2960,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "getservent",
+    "ea": "0x180001ad4",
+    "function_file": "functions/180001ad4_getservent.md",
+    "matched_imports": [
+      "WS2_32!__imp_htons",
+      "api-ms-win-core-file-l1-1-0!CreateFileA",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-crt-private-l1-1-0!_o_atoi"
+    ],
+    "matched_strings": [],
+    "name": "getservent",
+    "prototype": "",
+    "rank_score": 3621,
+    "size": 887,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 3,
+    "demangled": "SockSocket",
+    "ea": "0x18000a6b0",
+    "function_file": "functions/18000a6b0_SockSocket.md",
+    "matched_imports": [
+      "WS2_32!WahInsertHandleContext",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ShipAssert"
+    ],
+    "matched_strings": [
+      "AfdOpenPacketXX"
+    ],
+    "name": "SockSocket",
+    "prototype": "",
+    "rank_score": 3533,
+    "size": 3301,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 2,
+    "demangled": "SockImportHandle",
+    "ea": "0x18000d000",
+    "function_file": "functions/18000d000_SockImportHandle.md",
+    "matched_imports": [
+      "WS2_32!WahInsertHandleContext",
+      "WS2_32!WahReferenceContextByHandle",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtClose",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SockImportHandle",
+    "prototype": "__int64 __fastcall(HANDLE FileHandle)",
+    "rank_score": 3465,
+    "size": 2858,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SockSanCleanup",
+    "ea": "0x1800423ec",
+    "function_file": "functions/1800423ec_SockSanCleanup.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "ntdll!NtAlertThread",
+      "ntdll!NtClose",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockSanCleanup",
+    "prototype": "",
+    "rank_score": 3432,
+    "size": 792,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "ConnectThread",
+    "ea": "0x180046790",
+    "function_file": "functions/180046790_ConnectThread.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibraryAndExitThread",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!SetThreadPriority",
+      "api-ms-win-core-processthreads-l1-1-0!TlsSetValue",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "ntdll!NtClose",
+      "ntdll!NtWaitForMultipleObjects",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "ConnectThread",
+    "prototype": "ULONG __stdcall(PVOID Parameter)",
+    "rank_score": 3429,
+    "size": 1179,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ReadProtocolDataFromProvider",
+    "ea": "0x180034ff0",
+    "function_file": "functions/180034ff0_ReadProtocolDataFromProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-crt-private-l1-1-0!_o__wcsicmp",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "HelperDllName",
+      "WSHEnumProtocols",
+      "Failed to open service key; continuing on",
+      "Failed to open service parameters key; continuing on",
+      "Failed to read supported protocols; continuing on",
+      "Failed to read helper DLL path; continuing on",
+      "Expanded length exceeds max path length",
+      "Could not load helper DLL",
+      "Could not enumerate any protocols from helper DLL",
+      "Caught exception while enumerating protocols",
+      "No protocols to enumerate",
+      "Failed to allocate memory for protocolInfo11",
+      "Failed to enumerate protocols"
+    ],
+    "name": "ReadProtocolDataFromProvider",
+    "prototype": "",
+    "rank_score": 3377,
+    "size": 1098,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 9,
+    "demangled": "SockCloseSocket",
+    "ea": "0x180014e38",
+    "function_file": "functions/180014e38_SockCloseSocket.md",
+    "matched_imports": [
+      "WS2_32!WahRemoveHandleContext",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "ntdll!NtClose",
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "SockCloseSocket",
+    "prototype": "",
+    "rank_score": 3240,
+    "size": 1062,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "SockDemandStartAfd",
+    "ea": "0x18001ed78",
+    "function_file": "functions/18001ed78_SockDemandStartAfd.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA",
+      "ntdll!NtLoadDriver",
+      "ntdll!NtSetInformationThread",
+      "ntdll!RtlAdjustPrivilege",
+      "ntdll!RtlImpersonateSelf",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\AFD"
+    ],
+    "name": "SockDemandStartAfd",
+    "prototype": "",
+    "rank_score": 3113,
+    "size": 617,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "WSPGetSockOpt",
+    "ea": "0x180007080",
+    "function_file": "functions/180007080_WSPGetSockOpt.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtRemoveIoCompletion",
+      "ntdll!NtSetIoCompletion",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "WSPGetSockOpt",
+    "prototype": "",
+    "rank_score": 3064,
+    "size": 4360,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SockSanDestroySocket",
+    "ea": "0x18004d1d8",
+    "function_file": "functions/18004d1d8_SockSanDestroySocket.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockSanDestroySocket",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 3030,
+    "size": 623,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "vhwprintf_s",
+    "ea": "0x180036e40",
+    "function_file": "functions/180036e40_vhwprintf_s.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-string-l1-1-0!WideCharToMultiByte",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlReAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "vhwprintf_s",
+    "prototype": "__int64 __fastcall(HANDLE hFile, wchar_t *Format, va_list ArgList)",
+    "rank_score": 3027,
+    "size": 570,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "SockSanInitialize",
+    "ea": "0x18001e5a4",
+    "function_file": "functions/18001e5a4_SockSanInitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlInitializeCriticalSectionAndSpinCount"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\Winsock\\Parameters\\TCP on SAN"
+    ],
+    "name": "SockSanInitialize",
+    "prototype": "",
+    "rank_score": 2916,
+    "size": 1208,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 3,
+    "demangled": "TrySend",
+    "ea": "0x18004b1d0",
+    "function_file": "functions/18004b1d0_TrySend.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "TrySend",
+    "prototype": "__int64 __usercall@<rax>(PVOID CompletionContext@<rcx>, __int64)",
+    "rank_score": 2842,
+    "size": 1720,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "SaBlob_Query",
+    "ea": "0x180016120",
+    "function_file": "functions/180016120_SaBlob_Query.md",
+    "matched_imports": [
+      "DNSAPI!DnsApiFree",
+      "DNSAPI!DnsFree",
+      "DNSAPI!DnsFreeCustomServers",
+      "DNSAPI!DnsNameCompare_W",
+      "DNSAPI!DnsQueryConfigAllocEx",
+      "DNSAPI!DnsQueryEx",
+      "DNSAPI!DnsStringCopyAllocateEx",
+      "DNSAPI!Dns_FreeMsgBuf",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "SaBlob_Query",
+    "prototype": "",
+    "rank_score": 2839,
+    "size": 982,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "GetTypeByNameW",
+    "ea": "0x18002ccd0",
+    "function_file": "functions/18002ccd0_GetTypeByNameW.md",
+    "matched_imports": [
+      "RPCRT4!UuidFromStringW",
+      "WS2_32!__imp_getservbyname",
+      "WS2_32!__imp_htons",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Control\\ServiceProvider\\ServiceTypes"
+    ],
+    "name": "GetTypeByNameW",
+    "prototype": "INT __stdcall(LPWSTR lpServiceName, LPGUID lpServiceType)",
+    "rank_score": 2681,
+    "size": 693,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 3,
+    "demangled": "HandleApplicationSend",
+    "ea": "0x1800411a8",
+    "function_file": "functions/1800411a8_HandleApplicationSend.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "ntdll!NtClearEvent"
+    ],
+    "matched_strings": [],
+    "name": "HandleApplicationSend",
+    "prototype": "__int64 __usercall@<rax>(PVOID CompletionContext@<rcx>, void *Src@<rdx>, int, __int64, __int64, __int64, char, __int64, int)",
+    "rank_score": 2664,
+    "size": 2454,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "WSPRecv",
+    "ea": "0x180004700",
+    "function_file": "functions/180004700_WSPRecv.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtQueryEvent",
+      "ntdll!NtSetIoCompletion",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "WSPRecv",
+    "prototype": "",
+    "rank_score": 2660,
+    "size": 2956,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "ContinueTransmitPackets",
+    "ea": "0x180046c34",
+    "function_file": "functions/180046c34_ContinueTransmitPackets.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtClearEvent",
+      "ntdll!NtReadFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "ContinueTransmitPackets",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 2658,
+    "size": 2120,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "SocketAfUnixSetFilePath",
+    "ea": "0x180019368",
+    "function_file": "functions/180019368_SocketAfUnixSetFilePath.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlDosPathNameToNtPathName_U_WithStatus",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlUTF8ToUnicodeN"
+    ],
+    "matched_strings": [],
+    "name": "SocketAfUnixSetFilePath",
+    "prototype": "",
+    "rank_score": 2451,
+    "size": 1317,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 8,
+    "demangled": "RestartBlockedSends",
+    "ea": "0x18003c7cc",
+    "function_file": "functions/18003c7cc_RestartBlockedSends.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "RestartBlockedSends",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 2448,
+    "size": 1524,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SockLoadTransportMapping",
+    "ea": "0x18001097c",
+    "function_file": "functions/18001097c_SockLoadTransportMapping.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\"
+    ],
+    "name": "SockLoadTransportMapping",
+    "prototype": "",
+    "rank_score": 2284,
+    "size": 1150,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "OpenSetupMigrationRoot",
+    "ea": "0x180034690",
+    "function_file": "functions/180034690_OpenSetupMigrationRoot.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "Could not open Migration subkey",
+      "Could not open providers subkey",
+      "Could not open well known GUIDs subkey",
+      "Failed to read setup version value",
+      "WARNING: Could not parse migration registry tree, so blowing away and creating a new one from scratch",
+      "Failed to remove all installed providers",
+      "Failed to recursively delete migration subtree",
+      "Failed to create default setup migration tree",
+      "Successfully created default setup migration tree"
+    ],
+    "name": "OpenSetupMigrationRoot",
+    "prototype": "__int64 __usercall@<rax>(HKEY hKey@<rcx>, __int64, __int64)",
+    "rank_score": 2210,
+    "size": 1106,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "BuildWinsock2ProtocolList",
+    "ea": "0x180030cdc",
+    "function_file": "functions/180030cdc_BuildWinsock2ProtocolList.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW",
+      "api-ms-win-crt-private-l1-1-0!_o__wcsicmp",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to open provider parameters key",
+      "Failed to read number of subkeys",
+      "Failed to fill protocol info 2 from key name",
+      "WSHGetWSAProtocolInfo",
+      "Caught exception while getting WSA protocol info",
+      "Failed to allocate space for protocolInfo2",
+      "Failed to allocate space for protocolInfo2",
+      "Caught exception when copying over protocol info 2"
+    ],
+    "name": "BuildWinsock2ProtocolList",
+    "prototype": "",
+    "rank_score": 2180,
+    "size": 2115,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "Dns_NSPLookupServiceBegin",
+    "ea": "0x180002d00",
+    "function_file": "functions/180002d00_Dns_NSPLookupServiceBegin.md",
+    "matched_imports": [
+      "DNSAPI!DnsNameCompare_W",
+      "WS2_32!__imp_ntohs",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-crt-private-l1-1-0!_o__wcsicmp",
+      "ntdll!RtlIpv4AddressToStringW"
+    ],
+    "matched_strings": [
+      "service GUID"
+    ],
+    "name": "Dns_NSPLookupServiceBegin",
+    "prototype": "",
+    "rank_score": 2106,
+    "size": 2812,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SSRegistrySettings",
+    "ea": "0x18002da98",
+    "function_file": "functions/18002da98_SSRegistrySettings.md",
+    "matched_imports": [
+      "RPCRT4!RpcStringFreeW",
+      "RPCRT4!UuidToStringW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Control\\ServiceProvider\\ServiceTypes"
+    ],
+    "name": "SSRegistrySettings",
+    "prototype": "",
+    "rank_score": 2079,
+    "size": 541,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SockGetSingleValue",
+    "ea": "0x1800013c8",
+    "function_file": "functions/1800013c8_SockGetSingleValue.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsA",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [
+      "DatabasePath"
+    ],
+    "name": "SockGetSingleValue",
+    "prototype": "__int64 __usercall@<rax>(HANDLE KeyHandle@<rcx>, ULONG)",
+    "rank_score": 2057,
+    "size": 560,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "StartWsdpService",
+    "ea": "0x180023540",
+    "function_file": "functions/180023540_StartWsdpService.md",
+    "matched_imports": [
+      "WS2_32!WSAProviderConfigChange",
+      "WS2_32!WSASocketW",
+      "WS2_32!__imp_WSACleanup",
+      "WS2_32!__imp_WSAGetLastError",
+      "WS2_32!__imp_WSAStartup",
+      "WS2_32!__imp_closesocket",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-io-l1-1-0!CreateIoCompletionPort",
+      "api-ms-win-core-io-l1-1-0!PostQueuedCompletionStatus"
+    ],
+    "matched_strings": [],
+    "name": "StartWsdpService",
+    "prototype": "",
+    "rank_score": 2055,
+    "size": 799,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "PostReceive",
+    "ea": "0x180049eac",
+    "function_file": "functions/180049eac_PostReceive.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "PostReceive",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 2050,
+    "size": 982,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "GetAddressByNameA",
+    "ea": "0x18002c410",
+    "function_file": "functions/18002c410_GetAddressByNameA.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitAnsiString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlNtStatusToDosError",
+      "ntdll!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "GetAddressByNameA",
+    "prototype": "INT __stdcall(DWORD dwNameSpace, LPGUID lpServiceType, LPSTR lpServiceName, LPINT lpiProtocols, DWORD dwResolution, LPSERVICE_ASYNC_INFO lpServiceAsyncInfo, LPVOID lpCsaddrBuffer, LPDWORD lpdwBufferLength, LPSTR lpAliasBuffer, LPDWORD lpdwAliasBufferLength)",
+    "rank_score": 2037,
+    "size": 578,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "SockAsyncConnectCompletion",
+    "ea": "0x1800269e0",
+    "function_file": "functions/1800269e0_SockAsyncConnectCompletion.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockAsyncConnectCompletion",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 2037,
+    "size": 903,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "SendLargeSendFirstMsg",
+    "ea": "0x180050074",
+    "function_file": "functions/180050074_SendLargeSendFirstMsg.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SendLargeSendFirstMsg",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 2032,
+    "size": 1223,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "HandleSanAcceptIndication",
+    "ea": "0x180051b7c",
+    "function_file": "functions/180051b7c_HandleSanAcceptIndication.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "HandleSanAcceptIndication",
+    "prototype": "",
+    "rank_score": 2028,
+    "size": 922,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SockSanConnectInitialize",
+    "ea": "0x18004a7bc",
+    "function_file": "functions/18004a7bc_SockSanConnectInitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExA",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "ntdll!NtClose",
+      "ntdll!NtCreateEvent"
+    ],
+    "matched_strings": [],
+    "name": "SockSanConnectInitialize",
+    "prototype": "",
+    "rank_score": 2022,
+    "size": 700,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SockpSanUpdateProviderConfig",
+    "ea": "0x18003e820",
+    "function_file": "functions/18003e820_SockpSanUpdateProviderConfig.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\Winsock\\Parameters\\TCP on SAN"
+    ],
+    "name": "SockpSanUpdateProviderConfig",
+    "prototype": "",
+    "rank_score": 1923,
+    "size": 766,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "WSPCleanup",
+    "ea": "0x18000ee20",
+    "function_file": "functions/18000ee20_WSPCleanup.md",
+    "matched_imports": [
+      "WS2_32!WahEnumerateHandleContexts",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringA",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!SleepEx",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "MSAFD: (cleanup) ... No APCs fired, keeping DLL ref count\n",
+      "MSAFD: (cleanup) ... all APCs fired, lowering DLL ref count\n"
+    ],
+    "name": "WSPCleanup",
+    "prototype": "",
+    "rank_score": 1914,
+    "size": 575,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "TcpipLocalSetService",
+    "ea": "0x18002f9d0",
+    "function_file": "functions/18002f9d0_TcpipLocalSetService.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExA",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitAnsiString"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Control\\ServiceProvider\\ServiceTypes"
+    ],
+    "name": "TcpipLocalSetService",
+    "prototype": "",
+    "rank_score": 1874,
+    "size": 457,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 8,
+    "demangled": "CheckPendingAppRecvs",
+    "ea": "0x18003cdc8",
+    "function_file": "functions/18003cdc8_CheckPendingAppRecvs.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "CheckPendingAppRecvs",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 1859,
+    "size": 1712,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "WSPAsyncSelect",
+    "ea": "0x180002240",
+    "function_file": "functions/180002240_WSPAsyncSelect.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ext-ms-win-rtcore-ntuser-window-ext-l1-1-0!IsWindow",
+      "ntdll!NtSetIoCompletion",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "WSPAsyncSelect",
+    "prototype": "",
+    "rank_score": 1844,
+    "size": 1033,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 2,
+    "demangled": "SockSanCompletion",
+    "ea": "0x18003d540",
+    "function_file": "functions/18003d540_SockSanCompletion.md",
+    "matched_imports": [
+      "WS2_32!WahReferenceContextByHandle",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-2-0!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "SockSanCompletion",
+    "prototype": "",
+    "rank_score": 1842,
+    "size": 1442,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "WSPDuplicateSocket",
+    "ea": "0x18000f540",
+    "function_file": "functions/18000f540_WSPDuplicateSocket.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-handle-l1-1-0!DuplicateHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-processthreads-l1-1-1!OpenProcess"
+    ],
+    "matched_strings": [],
+    "name": "WSPDuplicateSocket",
+    "prototype": "__int64 __fastcall(HANDLE hSourceHandle, DWORD dwProcessId)",
+    "rank_score": 1833,
+    "size": 765,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 7,
+    "demangled": "SockSanDeleteHalfAcceptedSocket",
+    "ea": "0x180041b44",
+    "function_file": "functions/180041b44_SockSanDeleteHalfAcceptedSocket.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockSanDeleteHalfAcceptedSocket",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1828,
+    "size": 515,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "InstallNewProvider",
+    "ea": "0x180032294",
+    "function_file": "functions/180032294_InstallNewProvider.md",
+    "matched_imports": [
+      "WS2_32!WSCDeinstallProviderEx",
+      "WS2_32!WSCInstallProviderEx",
+      "api-ms-win-crt-private-l1-1-0!_o__wcsicmp",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "%SystemRoot%\\system32\\mswsock.dll",
+      "%SystemRoot%\\system32\\mswsock.dll",
+      "BuildWinsock2ProtocolList failed",
+      "CreateMigrationRegistryForProvider failed",
+      "Failed to install provider; will try sanitizing the configuration for this provider before trying again",
+      "Retrying installation",
+      "2nd attempt to install provider failed",
+      "SanitizeWinsock2ConfigForProvider failed",
+      "Uninstalling provider, since there was an error"
+    ],
+    "name": "InstallNewProvider",
+    "prototype": "",
+    "rank_score": 1824,
+    "size": 1076,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "GetServerAndProtocolsFromString",
+    "ea": "0x1800038b4",
+    "function_file": "functions/1800038b4_GetServerAndProtocolsFromString.md",
+    "matched_imports": [
+      "DNSAPI!DnsApiAlloc",
+      "DNSAPI!DnsApiFree",
+      "api-ms-win-crt-private-l1-1-0!_o__stricmp",
+      "api-ms-win-crt-private-l1-1-0!_o_atoi",
+      "api-ms-win-crt-private-l1-1-0!_o_isdigit",
+      "api-ms-win-crt-private-l1-1-0!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "GetServerAndProtocolsFromString",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 1823,
+    "size": 598,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateDefaultSetupMigrationTree",
+    "ea": "0x180031528",
+    "function_file": "functions/180031528_CreateDefaultSetupMigrationTree.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+    ],
+    "matched_strings": [
+      "Failed to create setup migration key",
+      "Failed to create providers subkey",
+      "Failed to create well known GUIDs subkey",
+      "Failed to write GUID"
+    ],
+    "name": "CreateDefaultSetupMigrationTree",
+    "prototype": "",
+    "rank_score": 1789,
+    "size": 666,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "MSWSOCK_Initialize",
+    "ea": "0x18000dbb0",
+    "function_file": "functions/18000dbb0_MSWSOCK_Initialize.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!TlsAlloc",
+      "api-ms-win-core-processthreads-l1-1-0!TlsFree",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlDestroyHeap"
+    ],
+    "matched_strings": [],
+    "name": "MSWSOCK_Initialize",
+    "prototype": "",
+    "rank_score": 1725,
+    "size": 579,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SockOpenNetworkDataBase",
+    "ea": "0x1800011d8",
+    "function_file": "functions/1800011d8_SockOpenNetworkDataBase.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileA",
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "services"
+    ],
+    "name": "SockOpenNetworkDataBase",
+    "prototype": "",
+    "rank_score": 1679,
+    "size": 490,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ReadDefaultExclusions",
+    "ea": "0x18003057c",
+    "function_file": "functions/18003057c_ReadDefaultExclusions.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "api-ms-win-crt-private-l1-1-0!_o_wcstol",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Control\\ServiceProvider\\Order"
+    ],
+    "name": "ReadDefaultExclusions",
+    "prototype": "",
+    "rank_score": 1677,
+    "size": 562,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "GetNameByTypeW",
+    "ea": "0x18002c910",
+    "function_file": "functions/18002c910_GetNameByTypeW.md",
+    "matched_imports": [
+      "WS2_32!__imp_getservbyport",
+      "WS2_32!__imp_htons",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Control\\ServiceProvider\\ServiceTypes"
+    ],
+    "name": "GetNameByTypeW",
+    "prototype": "INT __stdcall(LPGUID lpServiceType, LPWSTR lpServiceName, DWORD dwNameLength)",
+    "rank_score": 1675,
+    "size": 783,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 12,
+    "demangled": "SockCheckAndReferenceAsyncThread",
+    "ea": "0x1800028b8",
+    "function_file": "functions/1800028b8_SockCheckAndReferenceAsyncThread.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExA",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "ntdll!NtClose",
+      "ntdll!NtCreateEvent"
+    ],
+    "matched_strings": [],
+    "name": "SockCheckAndReferenceAsyncThread",
+    "prototype": "",
+    "rank_score": 1646,
+    "size": 654,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "UpdateMsafdToMswsock",
+    "ea": "0x180035f4c",
+    "function_file": "functions/180035f4c_UpdateMsafdToMswsock.md",
+    "matched_imports": [
+      "WS2_32!WSCGetProviderPath",
+      "WS2_32!WSCUpdateProvider",
+      "WS2_32!WSCUpdateProvider32",
+      "api-ms-win-core-string-obsolete-l1-1-0!lstrcmpW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "%SystemRoot%\\system32\\mswsock.dll",
+      "%SystemRoot%\\system32\\mswsock.dll",
+      "%SystemRoot%\\system32\\mswsock.dll",
+      "Failed to allocate space for provider path",
+      "Failed to get provider path"
+    ],
+    "name": "UpdateMsafdToMswsock",
+    "prototype": "",
+    "rank_score": 1643,
+    "size": 1097,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CompleteAppSendsUponClose",
+    "ea": "0x18003ec84",
+    "function_file": "functions/18003ec84_CompleteAppSendsUponClose.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "CompleteAppSendsUponClose",
+    "prototype": "",
+    "rank_score": 1634,
+    "size": 677,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "SockSanHandleImportFailure",
+    "ea": "0x1800248fc",
+    "function_file": "functions/1800248fc_SockSanHandleImportFailure.md",
+    "matched_imports": [
+      "WS2_32!WahInsertHandleContext",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "ntdll!NtClose",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SockSanHandleImportFailure",
+    "prototype": "",
+    "rank_score": 1634,
+    "size": 1231,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "OpenServicesRoot",
+    "ea": "0x180034430",
+    "function_file": "functions/180034430_OpenServicesRoot.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-crt-private-l1-1-0!_o_wcscpy_s",
+      "api-ms-win-crt-private-l1-1-0!wcsstr"
+    ],
+    "matched_strings": [
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services",
+      "Could not translate path",
+      "Unknown registry root",
+      "Could not open key"
+    ],
+    "name": "OpenServicesRoot",
+    "prototype": "__int64 __fastcall(PHKEY phkResult)",
+    "rank_score": 1632,
+    "size": 601,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RIOCreateCompletionQueue",
+    "ea": "0x180011a20",
+    "function_file": "functions/180011a20_RIOCreateCompletionQueue.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "RIOCreateCompletionQueue",
+    "prototype": "",
+    "rank_score": 1630,
+    "size": 693,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "HandleQoSReordering",
+    "ea": "0x180031e74",
+    "function_file": "functions/180031e74_HandleQoSReordering.md",
+    "matched_imports": [
+      "WS2_32!WSCEnumProtocolsEx",
+      "WS2_32!WSCWriteProviderOrderEx",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to enumerate protocols",
+      "Failed to get number of protocols for reordering",
+      "Failed to write the reordered catalog"
+    ],
+    "name": "HandleQoSReordering",
+    "prototype": "",
+    "rank_score": 1555,
+    "size": 1049,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DetermineGuidForProvider",
+    "ea": "0x180031918",
+    "function_file": "functions/180031918_DetermineGuidForProvider.md",
+    "matched_imports": [
+      "RPCRT4!UuidCreate",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+    ],
+    "matched_strings": [
+      "Failed to open provider parameters key",
+      "Failed to read provider GUID from offline capable provider",
+      "Failed to create GUID for provider"
+    ],
+    "name": "DetermineGuidForProvider",
+    "prototype": "",
+    "rank_score": 1552,
+    "size": 556,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ReadPriorities",
+    "ea": "0x18002f1f8",
+    "function_file": "functions/18002f1f8_ReadPriorities.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\Tcpip\\ServiceProvider",
+      "MaxHostentCacheSize"
+    ],
+    "name": "ReadPriorities",
+    "prototype": "",
+    "rank_score": 1504,
+    "size": 361,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "GuidToPort",
+    "ea": "0x18002eaf4",
+    "function_file": "functions/18002eaf4_GuidToPort.md",
+    "matched_imports": [
+      "WS2_32!__imp_htons",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Control\\ServiceProvider\\ServiceTypes\\"
+    ],
+    "name": "GuidToPort",
+    "prototype": "",
+    "rank_score": 1476,
+    "size": 786,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SetServiceA",
+    "ea": "0x18002dcc0",
+    "function_file": "functions/18002dcc0_SetServiceA.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SetServiceA",
+    "prototype": "INT __stdcall(DWORD dwNameSpace, DWORD dwOperation, DWORD dwFlags, LPSERVICE_INFOA lpServiceInfo, LPSERVICE_ASYNC_INFO lpServiceAsyncInfo, LPDWORD lpdwStatusFlags)",
+    "rank_score": 1438,
+    "size": 551,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "SockAsyncSelectHelper",
+    "ea": "0x18000203c",
+    "function_file": "functions/18000203c_SockAsyncSelectHelper.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtSetIoCompletion",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockAsyncSelectHelper",
+    "prototype": "",
+    "rank_score": 1433,
+    "size": 498,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "RIOCreateRequestQueue",
+    "ea": "0x180021b90",
+    "function_file": "functions/180021b90_RIOCreateRequestQueue.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "RIOCreateRequestQueue",
+    "prototype": "__int64 __usercall@<rax>(HANDLE FileHandle@<rcx>, int, __int64, __int64, __int64)",
+    "rank_score": 1423,
+    "size": 693,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SockpCreateV6AddressMap",
+    "ea": "0x1800431ac",
+    "function_file": "functions/1800431ac_SockpCreateV6AddressMap.md",
+    "matched_imports": [
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockpCreateV6AddressMap",
+    "prototype": "",
+    "rank_score": 1419,
+    "size": 682,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SockSanCloseSocketHandle",
+    "ea": "0x18004c990",
+    "function_file": "functions/18004c990_SockSanCloseSocketHandle.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockSanCloseSocketHandle",
+    "prototype": "",
+    "rank_score": 1418,
+    "size": 387,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Tcpip4_WSHOpenSocket2",
+    "ea": "0x180017ad0",
+    "function_file": "functions/180017ad0_Tcpip4_WSHOpenSocket2.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlIntegerToUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "Tcpip4_WSHOpenSocket2",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, PUNICODE_STRING DestinationString, __int64, __int64)",
+    "rank_score": 1418,
+    "size": 817,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Tcpip6_WSHOpenSocket2",
+    "ea": "0x180016800",
+    "function_file": "functions/180016800_Tcpip6_WSHOpenSocket2.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlIntegerToUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "Tcpip6_WSHOpenSocket2",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, PUNICODE_STRING DestinationString, __int64, __int64)",
+    "rank_score": 1418,
+    "size": 801,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FillProtocolInfo2FromKeyName",
+    "ea": "0x180031b4c",
+    "function_file": "functions/180031b4c_FillProtocolInfo2FromKeyName.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to open protocol",
+      "ServiceFlags",
+      "Failed to read the service flags value",
+      "Failed to read the provider flags value",
+      "Failed to read the version value",
+      "Failed to read the address family value",
+      "Failed to read the max socket address length value",
+      "Failed to read the min socket address length value",
+      "Failed to read the socket type value",
+      "Protocol",
+      "Failed to read the protocol value",
+      "ProtocolMaxOffset",
+      "Failed to read the protocol max offset value",
+      "Failed to read the network byte order value",
+      "Failed to read the message size value",
+      "szProtocol",
+      "Failed to read the protocol string value"
+    ],
+    "name": "FillProtocolInfo2FromKeyName",
+    "prototype": "__int64 __fastcall(LPCWSTR lpSubKey, HKEY hKey, void *)",
+    "rank_score": 1333,
+    "size": 802,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetProviderList",
+    "ea": "0x18002fd8c",
+    "function_file": "functions/18002fd8c_GetProviderList.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Control\\ServiceProvider\\Order"
+    ],
+    "name": "GetProviderList",
+    "prototype": "",
+    "rank_score": 1277,
+    "size": 410,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SockLoadTransportList",
+    "ea": "0x18000c8c0",
+    "function_file": "functions/18000c8c0_SockLoadTransportList.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Services\\Winsock\\Parameters"
+    ],
+    "name": "SockLoadTransportList",
+    "prototype": "",
+    "rank_score": 1277,
+    "size": 344,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SockCheckAndInitAsyncConnectHelper",
+    "ea": "0x180019054",
+    "function_file": "functions/180019054_SockCheckAndInitAsyncConnectHelper.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtSetInformationFile",
+      "ntdll!NtSetInformationObject",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SockCheckAndInitAsyncConnectHelper",
+    "prototype": "",
+    "rank_score": 1262,
+    "size": 629,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SockCheckAndInitAsyncSelectHelper",
+    "ea": "0x180002650",
+    "function_file": "functions/180002650_SockCheckAndInitAsyncSelectHelper.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtSetInformationFile",
+      "ntdll!NtSetInformationObject",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SockCheckAndInitAsyncSelectHelper",
+    "prototype": "",
+    "rank_score": 1261,
+    "size": 607,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 3,
+    "demangled": "HandleApplicationRecv",
+    "ea": "0x180047cb0",
+    "function_file": "functions/180047cb0_HandleApplicationRecv.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "ntdll!NtClearEvent"
+    ],
+    "matched_strings": [],
+    "name": "HandleApplicationRecv",
+    "prototype": "__int64 __usercall@<rax>(PVOID CompletionContext@<rcx>, __int64, __int64, __int64, __int64, char, __int64, int)",
+    "rank_score": 1259,
+    "size": 2342,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 44,
+    "demangled": "SockWaitForSingleObject",
+    "ea": "0x180006d00",
+    "function_file": "functions/180006d00_SockWaitForSingleObject.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-realtime-l1-1-0!QueryUnbiasedInterruptTime",
+      "ntdll!NtWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "SockWaitForSingleObject",
+    "prototype": "__int64 __fastcall(HANDLE Handle)",
+    "rank_score": 1246,
+    "size": 875,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "SetServiceWorker",
+    "ea": "0x18002df24",
+    "function_file": "functions/18002df24_SetServiceWorker.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SetServiceWorker",
+    "prototype": "",
+    "rank_score": 1244,
+    "size": 625,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "SockAsyncThread",
+    "ea": "0x180017810",
+    "function_file": "functions/180017810_SockAsyncThread.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibraryAndExitThread",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!SetThreadPriority",
+      "api-ms-win-core-processthreads-l1-1-0!TlsSetValue",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "ntdll!NtRemoveIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "SockAsyncThread",
+    "prototype": "ULONG __stdcall(PVOID Parameter)",
+    "rank_score": 1243,
+    "size": 697,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 4,
+    "demangled": "SockSanHandleConnectPostProcessing",
+    "ea": "0x1800453ec",
+    "function_file": "functions/1800453ec_SockSanHandleConnectPostProcessing.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "ntdll!NtSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "SockSanHandleConnectPostProcessing",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 1241,
+    "size": 697,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "WSPStartup",
+    "ea": "0x18000cc50",
+    "function_file": "functions/18000cc50_WSPStartup.md",
+    "matched_imports": [
+      "WS2_32!WahCreateHandleContextTable",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExA",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "ntdll!RtlGetNtProductType"
+    ],
+    "matched_strings": [],
+    "name": "WSPStartup",
+    "prototype": "int __stdcall(WORD wVersionRequested, LPWSPDATA lpWSPData, LPWSAPROTOCOL_INFOW lpProtocolInfo, WSPUPCALLTABLE *__struct_ptr UpcallTable, LPWSPPROC_TABLE lpProcTable)",
+    "rank_score": 1236,
+    "size": 931,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "SockSanCreateSocket",
+    "ea": "0x18004cb1c",
+    "function_file": "functions/18004cb1c_SockSanCreateSocket.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockSanCreateSocket",
+    "prototype": "__int64 __usercall@<rax>(PVOID CompletionContext@<rcx>, char)",
+    "rank_score": 1233,
+    "size": 619,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "StartRdmaWrite",
+    "ea": "0x180050c40",
+    "function_file": "functions/180050c40_StartRdmaWrite.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "StartRdmaWrite",
+    "prototype": "",
+    "rank_score": 1230,
+    "size": 1311,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "SockSanDuplicateSock",
+    "ea": "0x18004d510",
+    "function_file": "functions/18004d510_SockSanDuplicateSock.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SockSanDuplicateSock",
+    "prototype": "",
+    "rank_score": 1227,
+    "size": 811,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SockpCreateV4SubnetMap",
+    "ea": "0x180042f74",
+    "function_file": "functions/180042f74_SockpCreateV4SubnetMap.md",
+    "matched_imports": [
+      "IPHLPAPI!FreeMibTable",
+      "IPHLPAPI!GetUnicastIpAddressTable",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockpCreateV4SubnetMap",
+    "prototype": "",
+    "rank_score": 1218,
+    "size": 562,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RnrCtx_Create",
+    "ea": "0x180003ce0",
+    "function_file": "functions/180003ce0_RnrCtx_Create.md",
+    "matched_imports": [
+      "DNSAPI!DnsApiAllocZero",
+      "DNSAPI!DnsApiFree",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "RnrCtx_Create",
+    "prototype": "",
+    "rank_score": 1208,
+    "size": 577,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "RecursivelyDeleteRegistryTree",
+    "ea": "0x18003592c",
+    "function_file": "functions/18003592c_RecursivelyDeleteRegistryTree.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "Could not open key to delete",
+      "Failed to recursively delete subtree",
+      "Failed to delete target key"
+    ],
+    "name": "RecursivelyDeleteRegistryTree",
+    "prototype": "",
+    "rank_score": 1152,
+    "size": 409,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "setservent",
+    "ea": "0x180001124",
+    "function_file": "functions/180001124_setservent.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!SetFilePointer",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue"
+    ],
+    "matched_strings": [],
+    "name": "setservent",
+    "prototype": "",
+    "rank_score": 1115,
+    "size": 174,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SockGetProviderId",
+    "ea": "0x180010e2c",
+    "function_file": "functions/180010e2c_SockGetProviderId.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Services\\Winsock\\Setup Migration\\Providers"
+    ],
+    "name": "SockGetProviderId",
+    "prototype": "__int64 __fastcall(LPCWSTR lpSubKey, LPBYTE lpData)",
+    "rank_score": 1075,
+    "size": 279,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 2,
+    "demangled": "SockFindHelperDllForAddressFamily",
+    "ea": "0x180010680",
+    "function_file": "functions/180010680_SockFindHelperDllForAddressFamily.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockFindHelperDllForAddressFamily",
+    "prototype": "",
+    "rank_score": 1039,
+    "size": 756,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "SockIsSocketConnected",
+    "ea": "0x1800214f8",
+    "function_file": "functions/1800214f8_SockIsSocketConnected.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtRemoveIoCompletion",
+      "ntdll!NtSetIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "SockIsSocketConnected",
+    "prototype": "",
+    "rank_score": 1035,
+    "size": 285,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "ResizeSendBuffers",
+    "ea": "0x18004a2dc",
+    "function_file": "functions/18004a2dc_ResizeSendBuffers.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "ResizeSendBuffers",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 1032,
+    "size": 572,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GetServiceWorker",
+    "ea": "0x18002d1d0",
+    "function_file": "functions/18002d1d0_GetServiceWorker.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "GetServiceWorker",
+    "prototype": "",
+    "rank_score": 1031,
+    "size": 574,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SockTerminateAsyncThread",
+    "ea": "0x18000f2b8",
+    "function_file": "functions/18000f2b8_SockTerminateAsyncThread.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtSetInformationObject",
+      "ntdll!NtSetIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "SockTerminateAsyncThread",
+    "prototype": "",
+    "rank_score": 1026,
+    "size": 289,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "GetNameByTypeA",
+    "ea": "0x18002c7f0",
+    "function_file": "functions/18002c7f0_GetNameByTypeA.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "GetNameByTypeA",
+    "prototype": "INT __stdcall(LPGUID lpServiceType, LPSTR lpServiceName, DWORD dwNameLength)",
+    "rank_score": 1025,
+    "size": 271,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "DrainSendCompleteQueue",
+    "ea": "0x1800475c0",
+    "function_file": "functions/1800475c0_DrainSendCompleteQueue.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "DrainSendCompleteQueue",
+    "prototype": "",
+    "rank_score": 1024,
+    "size": 482,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GetTypeByNameA",
+    "ea": "0x18002cc30",
+    "function_file": "functions/18002cc30_GetTypeByNameA.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitAnsiString",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "GetTypeByNameA",
+    "prototype": "INT __stdcall(LPSTR lpServiceName, LPGUID lpServiceType)",
+    "rank_score": 1023,
+    "size": 148,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "SockSanCreateSwitchSocket",
+    "ea": "0x18004cf28",
+    "function_file": "functions/18004cf28_SockSanCreateSwitchSocket.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionAndSpinCount",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockSanCreateSwitchSocket",
+    "prototype": "",
+    "rank_score": 1022,
+    "size": 564,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "DeleteSwitchSocketNoFlowControl",
+    "ea": "0x18004c324",
+    "function_file": "functions/18004c324_DeleteSwitchSocketNoFlowControl.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "DeleteSwitchSocketNoFlowControl",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1021,
+    "size": 395,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "SaBlob_CreateHostent",
+    "ea": "0x1800207c8",
+    "function_file": "functions/1800207c8_SaBlob_CreateHostent.md",
+    "matched_imports": [
+      "DNSAPI!DnsApiAlloc",
+      "DNSAPI!DnsNameCopy",
+      "api-ms-win-core-string-l1-1-0!WideCharToMultiByte"
+    ],
+    "matched_strings": [],
+    "name": "SaBlob_CreateHostent",
+    "prototype": "",
+    "rank_score": 1020,
+    "size": 1135,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "Rnr_GetHostByAddr",
+    "ea": "0x18001ea64",
+    "function_file": "functions/18001ea64_Rnr_GetHostByAddr.md",
+    "matched_imports": [
+      "DNSAPI!DnsIp6AddressToReverseNameW",
+      "DNSAPI!DnsStringToAddress",
+      "DNSAPI!DnsWriteReverseNameStringForIpAddressW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "Rnr_GetHostByAddr",
+    "prototype": "",
+    "rank_score": 1017,
+    "size": 782,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SockpWaitForReaders",
+    "ea": "0x18001dff8",
+    "function_file": "functions/18001dff8_SockpWaitForReaders.md",
+    "matched_imports": [
+      "ntdll!NtCreateEvent",
+      "ntdll!NtDelayExecution",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlRaiseStatus"
+    ],
+    "matched_strings": [],
+    "name": "SockpWaitForReaders",
+    "prototype": "",
+    "rank_score": 1013,
+    "size": 224,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MwcUpdateLSP",
+    "ea": "0x180033a4c",
+    "function_file": "functions/180033a4c_MwcUpdateLSP.md",
+    "matched_imports": [
+      "WS2_32!WPUGetProviderPathEx",
+      "WS2_32!WSCUpdateProviderEx",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to allocate space for provider path",
+      "Failed to get provider path",
+      "Failed to update LSP"
+    ],
+    "name": "MwcUpdateLSP",
+    "prototype": "",
+    "rank_score": 961,
+    "size": 1605,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateMigrationRegistryForProvider",
+    "ea": "0x1800317c8",
+    "function_file": "functions/1800317c8_CreateMigrationRegistryForProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+    ],
+    "matched_strings": [
+      "Failed to open provider's key",
+      "Failed to write protocol info 1.1",
+      "Failed to write Winsock 2.0 provider ID"
+    ],
+    "name": "CreateMigrationRegistryForProvider",
+    "prototype": "",
+    "rank_score": 946,
+    "size": 329,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SockAsyncSelectCompletion",
+    "ea": "0x180016b30",
+    "function_file": "functions/180016b30_SockAsyncSelectCompletion.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "FD_READ",
+      "FD_WRITE"
+    ],
+    "name": "SockAsyncSelectCompletion",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 924,
+    "size": 1911,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "CreateRegDomain",
+    "ea": "0x18002819c",
+    "function_file": "functions/18002819c_CreateRegDomain.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "AfdRioRDOpenPacket"
+    ],
+    "name": "CreateRegDomain",
+    "prototype": "",
+    "rank_score": 901,
+    "size": 370,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SockBuildMswsockProtocolInfoArray",
+    "ea": "0x18000f068",
+    "function_file": "functions/18000f068_SockBuildMswsockProtocolInfoArray.md",
+    "matched_imports": [
+      "WS2_32!WSCEnumProtocols",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "%SystemRoot%\\system32\\mswsock.dll"
+    ],
+    "name": "SockBuildMswsockProtocolInfoArray",
+    "prototype": "",
+    "rank_score": 878,
+    "size": 492,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SockInitializeBufferKeyTable",
+    "ea": "0x18002ad00",
+    "function_file": "functions/18002ad00_SockInitializeBufferKeyTable.md",
+    "matched_imports": [
+      "api-ms-win-core-memory-l1-1-0!VirtualAlloc",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\Winsock\\Parameters"
+    ],
+    "name": "SockInitializeBufferKeyTable",
+    "prototype": "",
+    "rank_score": 864,
+    "size": 250,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "SockpSanProcessProvider",
+    "ea": "0x180044090",
+    "function_file": "functions/180044090_SockpSanProcessProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!OpenEventW",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [
+      "Global\\SC_AutoStartComplete"
+    ],
+    "name": "SockpSanProcessProvider",
+    "prototype": "",
+    "rank_score": 862,
+    "size": 591,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "SockOpenKey",
+    "ea": "0x18000175c",
+    "function_file": "functions/18000175c_SockOpenKey.md",
+    "matched_imports": [
+      "ntdll!NtOpenKey",
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitString"
+    ],
+    "matched_strings": [],
+    "name": "SockOpenKey",
+    "prototype": "__int64 __fastcall(PHANDLE KeyHandle)",
+    "rank_score": 842,
+    "size": 177,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SockVerifyAndFixCatalogEntry",
+    "ea": "0x18000e428",
+    "function_file": "functions/18000e428_SockVerifyAndFixCatalogEntry.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockVerifyAndFixCatalogEntry",
+    "prototype": "",
+    "rank_score": 842,
+    "size": 655,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "SanOverlappedCompletionAux",
+    "ea": "0x18004a520",
+    "function_file": "functions/18004a520_SanOverlappedCompletionAux.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SanOverlappedCompletionAux",
+    "prototype": "",
+    "rank_score": 832,
+    "size": 360,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "SockpSanRegister",
+    "ea": "0x180044380",
+    "function_file": "functions/180044380_SockpSanRegister.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateEvent",
+      "ntdll!NtSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "SockpSanRegister",
+    "prototype": "",
+    "rank_score": 832,
+    "size": 378,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 8,
+    "demangled": "SockSetHandleContext",
+    "ea": "0x180009a08",
+    "function_file": "functions/180009a08_SockSetHandleContext.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockSetHandleContext",
+    "prototype": "",
+    "rank_score": 831,
+    "size": 775,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "SockpGetProtocolInfoArray",
+    "ea": "0x18000ed0c",
+    "function_file": "functions/18000ed0c_SockpGetProtocolInfoArray.md",
+    "matched_imports": [
+      "WS2_32!WSCEnumProtocols",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockpGetProtocolInfoArray",
+    "prototype": "",
+    "rank_score": 831,
+    "size": 264,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 10,
+    "demangled": "MSAFD_SockThreadInitialize",
+    "ea": "0x180005f78",
+    "function_file": "functions/180005f78_MSAFD_SockThreadInitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!TlsSetValue",
+      "ntdll!NtClose",
+      "ntdll!NtCreateEvent"
+    ],
+    "matched_strings": [],
+    "name": "MSAFD_SockThreadInitialize",
+    "prototype": "",
+    "rank_score": 829,
+    "size": 341,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RIOResizeCompletionQueue",
+    "ea": "0x180028590",
+    "function_file": "functions/180028590_RIOResizeCompletionQueue.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "RIOResizeCompletionQueue",
+    "prototype": "",
+    "rank_score": 828,
+    "size": 494,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ProcessSocketNotifications",
+    "ea": "0x180023030",
+    "function_file": "functions/180023030_ProcessSocketNotifications.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-io-l1-1-0!GetQueuedCompletionStatusEx",
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "ProcessSocketNotifications",
+    "prototype": "__int64 __usercall@<rax>(HANDLE CompletionPort@<rcx>, ULONG ulCount, LPOVERLAPPED_ENTRY lpCompletionPortEntries, PULONG ulNumEntriesRemoved)",
+    "rank_score": 825,
+    "size": 442,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "IsAppContainer",
+    "ea": "0x18000c1f0",
+    "function_file": "functions/18000c1f0_IsAppContainer.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+    ],
+    "matched_strings": [],
+    "name": "IsAppContainer",
+    "prototype": "",
+    "rank_score": 824,
+    "size": 184,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "ProcessRdmaReadCompletion",
+    "ea": "0x18004fb58",
+    "function_file": "functions/18004fb58_ProcessRdmaReadCompletion.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "ProcessRdmaReadCompletion",
+    "prototype": "",
+    "rank_score": 823,
+    "size": 445,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180022340",
+    "function_file": "functions/180022340_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 823,
+    "size": 181,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 13,
+    "demangled": "AbortSanConnection",
+    "ea": "0x180042128",
+    "function_file": "functions/180042128_AbortSanConnection.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-2-0!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "AbortSanConnection",
+    "prototype": "",
+    "rank_score": 821,
+    "size": 312,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Dns_NSPStartup",
+    "ea": "0x180002b4c",
+    "function_file": "functions/180002b4c_Dns_NSPStartup.md",
+    "matched_imports": [
+      "DNSAPI!DnsQueryConfigAllocEx",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "Dns_NSPStartup",
+    "prototype": "__int64 __fastcall(void *Buf1)",
+    "rank_score": 818,
+    "size": 421,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ProcessRdmaRecvCompletion",
+    "ea": "0x18004fd1c",
+    "function_file": "functions/18004fd1c_ProcessRdmaRecvCompletion.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "ProcessRdmaRecvCompletion",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 818,
+    "size": 283,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CacheHostent",
+    "ea": "0x18002e8d4",
+    "function_file": "functions/18002e8d4_CacheHostent.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtQuerySystemTime",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "CacheHostent",
+    "prototype": "",
+    "rank_score": 817,
+    "size": 357,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CheckReadvertiseFirstSend",
+    "ea": "0x180045e74",
+    "function_file": "functions/180045e74_CheckReadvertiseFirstSend.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "CheckReadvertiseFirstSend",
+    "prototype": "",
+    "rank_score": 816,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "hgets",
+    "ea": "0x180036ccc",
+    "function_file": "functions/180036ccc_hgets.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!ReadFile",
+      "api-ms-win-core-file-l1-1-0!SetFilePointerEx"
+    ],
+    "matched_strings": [],
+    "name": "hgets",
+    "prototype": "__int64 __fastcall(LPVOID lpBuffer)",
+    "rank_score": 814,
+    "size": 315,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QueryHostentCache",
+    "ea": "0x18002f100",
+    "function_file": "functions/18002f100_QueryHostentCache.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__stricmp",
+      "ntdll!NtQuerySystemTime",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "QueryHostentCache",
+    "prototype": "",
+    "rank_score": 813,
+    "size": 240,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CopyAddrinfoServersRnr",
+    "ea": "0x180003f28",
+    "function_file": "functions/180003f28_CopyAddrinfoServersRnr.md",
+    "matched_imports": [
+      "DNSAPI!DnsApiAllocZero",
+      "DNSAPI!DnsApiFree",
+      "DNSAPI!DnsStringCopyAllocateEx"
+    ],
+    "matched_strings": [],
+    "name": "CopyAddrinfoServersRnr",
+    "prototype": "",
+    "rank_score": 809,
+    "size": 444,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SaBlob_Create",
+    "ea": "0x18001560c",
+    "function_file": "functions/18001560c_SaBlob_Create.md",
+    "matched_imports": [
+      "DNSAPI!DnsAddrArrayCreate",
+      "DNSAPI!DnsApiAllocZero",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "SaBlob_Create",
+    "prototype": "",
+    "rank_score": 809,
+    "size": 266,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 80,
+    "demangled": "SockDestroySocket",
+    "ea": "0x180008250",
+    "function_file": "functions/180008250_SockDestroySocket.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockDestroySocket",
+    "prototype": "",
+    "rank_score": 739,
+    "size": 190,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ReadProtocolDataFromRegistry",
+    "ea": "0x180035440",
+    "function_file": "functions/180035440_ReadProtocolDataFromRegistry.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to open provider",
+      "Failed to read provider data"
+    ],
+    "name": "ReadProtocolDataFromRegistry",
+    "prototype": "",
+    "rank_score": 715,
+    "size": 240,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "MwcGetProtoArray",
+    "ea": "0x180033500",
+    "function_file": "functions/180033500_MwcGetProtoArray.md",
+    "matched_imports": [
+      "WS2_32!WSCEnumProtocolsEx",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "MwcGetProtoArray failed because WSCEnumProtocols failed",
+      "MwcGetProtoArray failed because WSCEnumProtocols failed"
+    ],
+    "name": "MwcGetProtoArray",
+    "prototype": "",
+    "rank_score": 712,
+    "size": 573,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ReadString",
+    "ea": "0x1800356f8",
+    "function_file": "functions/1800356f8_ReadString.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to read string length",
+      "Failed to read the string from the registry"
+    ],
+    "name": "ReadString",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName)",
+    "rank_score": 708,
+    "size": 313,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ReadMultiSz",
+    "ea": "0x180034da4",
+    "function_file": "functions/180034da4_ReadMultiSz.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to allocate memory for string value in registry",
+      "Failed to read the string value"
+    ],
+    "name": "ReadMultiSz",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName)",
+    "rank_score": 707,
+    "size": 282,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AfdRegisterSwitch",
+    "ea": "0x1800250e0",
+    "function_file": "functions/1800250e0_AfdRegisterSwitch.md",
+    "matched_imports": [
+      "ntdll!NtCreateFile",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "AfdSwOpenPacket"
+    ],
+    "name": "AfdRegisterSwitch",
+    "prototype": "",
+    "rank_score": 677,
+    "size": 416,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ReadBinary",
+    "ea": "0x180034b9c",
+    "function_file": "functions/180034b9c_ReadBinary.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to read the binary value from the registry"
+    ],
+    "name": "ReadBinary",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName)",
+    "rank_score": 667,
+    "size": 281,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "SockSanProviderChange",
+    "ea": "0x180042c70",
+    "function_file": "functions/180042c70_SockSanProviderChange.md",
+    "matched_imports": [
+      "WS2_32!WSAProviderConfigChange",
+      "WS2_32!__imp_WSAGetLastError",
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "SockSanProviderChange",
+    "prototype": "",
+    "rank_score": 661,
+    "size": 307,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "RemoveProviderByName",
+    "ea": "0x180035bc0",
+    "function_file": "functions/180035bc0_RemoveProviderByName.md",
+    "matched_imports": [
+      "WS2_32!WSCDeinstallProviderEx"
+    ],
+    "matched_strings": [
+      "Attempting to remove provider",
+      "Provider could not be found for deinstallation",
+      "Provider could not be found for deinstallation",
+      "Failed to deinstall provider",
+      "Failed to recursively delete provider subtree"
+    ],
+    "name": "RemoveProviderByName",
+    "prototype": "",
+    "rank_score": 653,
+    "size": 445,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 10,
+    "demangled": "SockReenableAsyncSelectEvent",
+    "ea": "0x1800216a8",
+    "function_file": "functions/1800216a8_SockReenableAsyncSelectEvent.md",
+    "matched_imports": [
+      "ntdll!NtSetIoCompletion",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockReenableAsyncSelectEvent",
+    "prototype": "",
+    "rank_score": 639,
+    "size": 334,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 91,
+    "demangled": "FastWppTraceMessage",
+    "ea": "0x180021264",
+    "function_file": "functions/180021264_FastWppTraceMessage.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteEx"
+    ],
+    "matched_strings": [],
+    "name": "FastWppTraceMessage",
+    "prototype": "",
+    "rank_score": 631,
+    "size": 412,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "CheckForSocketDuplicationProtocol",
+    "ea": "0x180023f14",
+    "function_file": "functions/180023f14_CheckForSocketDuplicationProtocol.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtSetIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "CheckForSocketDuplicationProtocol",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 630,
+    "size": 185,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RIOCloseCompletionQueue",
+    "ea": "0x1800283b0",
+    "function_file": "functions/1800283b0_RIOCloseCompletionQueue.md",
+    "matched_imports": [
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "RIOCloseCompletionQueue",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 624,
+    "size": 210,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ReadWs2Catalog",
+    "ea": "0x180035838",
+    "function_file": "functions/180035838_ReadWs2Catalog.md",
+    "matched_imports": [
+      "WS2_32!WSCEnumProtocolsEx",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "ReadWs2Catalog",
+    "prototype": "",
+    "rank_score": 624,
+    "size": 236,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "HandleSuspendCommunicationRequest",
+    "ea": "0x18004c650",
+    "function_file": "functions/18004c650_HandleSuspendCommunicationRequest.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "HandleSuspendCommunicationRequest",
+    "prototype": "",
+    "rank_score": 618,
+    "size": 282,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Rnr_ThreadInit",
+    "ea": "0x180004480",
+    "function_file": "functions/180004480_Rnr_ThreadInit.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "Rnr_ThreadInit",
+    "prototype": "",
+    "rank_score": 617,
+    "size": 208,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "AllocateWinsockThreadData",
+    "ea": "0x180004558",
+    "function_file": "functions/180004558_AllocateWinsockThreadData.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "AllocateWinsockThreadData",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 181,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SockSanInsertInWaitList",
+    "ea": "0x18004aaac",
+    "function_file": "functions/18004aaac_SockSanInsertInWaitList.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtCreateEvent"
+    ],
+    "matched_strings": [],
+    "name": "SockSanInsertInWaitList",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 285,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Dns_NSPLookupServiceEnd",
+    "ea": "0x1800040f0",
+    "function_file": "functions/1800040f0_Dns_NSPLookupServiceEnd.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "Dns_NSPLookupServiceEnd",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 306,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "OpenProviderParametersKey",
+    "ea": "0x18003439c",
+    "function_file": "functions/18003439c_OpenProviderParametersKey.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "OpenProviderParametersKey",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 141,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ConvertCustomServers",
+    "ea": "0x1800205d8",
+    "function_file": "functions/1800205d8_ConvertCustomServers.md",
+    "matched_imports": [
+      "DNSAPI!DnsApiAllocZero",
+      "DNSAPI!DnsFreeCustomServers",
+      "DNSAPI!DnsStringCopyAllocateEx"
+    ],
+    "matched_strings": [],
+    "name": "ConvertCustomServers",
+    "prototype": "",
+    "rank_score": 608,
+    "size": 488,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SaBlob_WriteAddress",
+    "ea": "0x180020c40",
+    "function_file": "functions/180020c40_SaBlob_WriteAddress.md",
+    "matched_imports": [
+      "DNSAPI!DnsAddrArrayAddAddr",
+      "DNSAPI!DnsAddrArrayCreate",
+      "DNSAPI!DnsApiAlloc"
+    ],
+    "matched_strings": [],
+    "name": "SaBlob_WriteAddress",
+    "prototype": "",
+    "rank_score": 605,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DeleteSockets",
+    "ea": "0x1800238d0",
+    "function_file": "functions/1800238d0_DeleteSockets.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "DeleteSockets",
+    "prototype": "",
+    "rank_score": 602,
+    "size": 110,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NotifyAfdOfApplicationReceive",
+    "ea": "0x18002419c",
+    "function_file": "functions/18002419c_NotifyAfdOfApplicationReceive.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [
+      "AfdReadMore",
+      "AfdNothingToRead",
+      "AfdReadMoreOob",
+      "AfdNothingToReadOob"
+    ],
+    "name": "NotifyAfdOfApplicationReceive",
+    "prototype": "",
+    "rank_score": 581,
+    "size": 570,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SanitizeWinsock2ConfigForProvider",
+    "ea": "0x180035d84",
+    "function_file": "functions/180035d84_SanitizeWinsock2ConfigForProvider.md",
+    "matched_imports": [
+      "WS2_32!WSCDeinstallProviderEx"
+    ],
+    "matched_strings": [
+      "Deinstall failed for the native catalog because provider did not exist; continuing on",
+      "Deinstall failed for the WOW catalog because provider did not exist; continuing on"
+    ],
+    "name": "SanitizeWinsock2ConfigForProvider",
+    "prototype": "",
+    "rank_score": 520,
+    "size": 447,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "SockFreeHelperDll",
+    "ea": "0x18000fa40",
+    "function_file": "functions/18000fa40_SockFreeHelperDll.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockFreeHelperDll",
+    "prototype": "",
+    "rank_score": 519,
+    "size": 84,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "FreeWinsockThreadData",
+    "ea": "0x1800239e4",
+    "function_file": "functions/1800239e4_FreeWinsockThreadData.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "FreeWinsockThreadData",
+    "prototype": "",
+    "rank_score": 514,
+    "size": 114,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SockSanRemoveListenSockTracker",
+    "ea": "0x180024df4",
+    "function_file": "functions/180024df4_SockSanRemoveListenSockTracker.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockSanRemoveListenSockTracker",
+    "prototype": "",
+    "rank_score": 513,
+    "size": 136,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SockSanRemoveFromWaitList",
+    "ea": "0x18004b024",
+    "function_file": "functions/18004b024_SockSanRemoveFromWaitList.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "SockSanRemoveFromWaitList",
+    "prototype": "",
+    "rank_score": 506,
+    "size": 113,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ReadNewProviderList",
+    "ea": "0x180034ec4",
+    "function_file": "functions/180034ec4_ReadNewProviderList.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "Failed to open parameters subkey",
+      "Failed to read Transports value"
+    ],
+    "name": "ReadNewProviderList",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 498,
+    "size": 292,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "ReadProviderId",
+    "ea": "0x180035538",
+    "function_file": "functions/180035538_ReadProviderId.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "WARNING: Failed to open provider key",
+      "Failed to read provider ID"
+    ],
+    "name": "ReadProviderId",
+    "prototype": "",
+    "rank_score": 498,
+    "size": 163,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ReadProviderSupportedProtocolsFromRegistry",
+    "ea": "0x1800355e4",
+    "function_file": "functions/1800355e4_ReadProviderSupportedProtocolsFromRegistry.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to read mapping data"
+    ],
+    "name": "ReadProviderSupportedProtocolsFromRegistry",
+    "prototype": "",
+    "rank_score": 476,
+    "size": 268,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "SaBlob_CreateFromRecords",
+    "ea": "0x180015310",
+    "function_file": "functions/180015310_SaBlob_CreateFromRecords.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [
+      "SaBlob after CreateFromRecords():"
+    ],
+    "name": "SaBlob_CreateFromRecords",
+    "prototype": "",
+    "rank_score": 459,
+    "size": 755,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "MwcUpdateLSPChains",
+    "ea": "0x180034098",
+    "function_file": "functions/180034098_MwcUpdateLSPChains.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "MwcUpdateLSPChains",
+    "prototype": "",
+    "rank_score": 435,
+    "size": 765,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 36,
+    "demangled": "SockFindAndReferenceSocket",
+    "ea": "0x180008190",
+    "function_file": "functions/180008190_SockFindAndReferenceSocket.md",
+    "matched_imports": [
+      "WS2_32!WahReferenceContextByHandle",
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue"
+    ],
+    "matched_strings": [],
+    "name": "SockFindAndReferenceSocket",
+    "prototype": "",
+    "rank_score": 430,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SockpSanUpdateProviderMapEntries",
+    "ea": "0x180044500",
+    "function_file": "functions/180044500_SockpSanUpdateProviderMapEntries.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SockpSanUpdateProviderMapEntries",
+    "prototype": "",
+    "rank_score": 430,
+    "size": 762,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 32,
+    "demangled": "SockEnterApiSlow",
+    "ea": "0x18000c130",
+    "function_file": "functions/18000c130_SockEnterApiSlow.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue"
+    ],
+    "matched_strings": [],
+    "name": "SockEnterApiSlow",
+    "prototype": "",
+    "rank_score": 429,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "HandleRdmaReadCompletion",
+    "ea": "0x18004f6c4",
+    "function_file": "functions/18004f6c4_HandleRdmaReadCompletion.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "HandleRdmaReadCompletion",
+    "prototype": "",
+    "rank_score": 427,
+    "size": 255,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SockCreateAsyncQueuePort",
+    "ea": "0x18001e14c",
+    "function_file": "functions/18001e14c_SockCreateAsyncQueuePort.md",
+    "matched_imports": [
+      "ntdll!NtCreateIoCompletion",
+      "ntdll!NtSetInformationObject"
+    ],
+    "matched_strings": [],
+    "name": "SockCreateAsyncQueuePort",
+    "prototype": "",
+    "rank_score": 427,
+    "size": 138,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "CompletePendingAppRecv",
+    "ea": "0x18004642c",
+    "function_file": "functions/18004642c_CompletePendingAppRecv.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "CompletePendingAppRecv",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 426,
+    "size": 629,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CompleteResizeRecvBuffers",
+    "ea": "0x1800466a8",
+    "function_file": "functions/1800466a8_CompleteResizeRecvBuffers.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "CompleteResizeRecvBuffers",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 211,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 10,
+    "demangled": "SockGetTdiHandles",
+    "ea": "0x18000ea70",
+    "function_file": "functions/18000ea70_SockGetTdiHandles.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "SockGetTdiHandles",
+    "prototype": "",
+    "rank_score": 425,
+    "size": 301,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "ReleaseApplicationBuffer",
+    "ea": "0x18003f2e0",
+    "function_file": "functions/18003f2e0_ReleaseApplicationBuffer.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "ReleaseApplicationBuffer",
+    "prototype": "",
+    "rank_score": 424,
+    "size": 292,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 8,
+    "demangled": "SockGetConnectData",
+    "ea": "0x1800133cc",
+    "function_file": "functions/1800133cc_SockGetConnectData.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue",
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "SockGetConnectData",
+    "prototype": "",
+    "rank_score": 424,
+    "size": 331,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SockSanCheckAsyncPort",
+    "ea": "0x180042344",
+    "function_file": "functions/180042344_SockSanCheckAsyncPort.md",
+    "matched_imports": [
+      "ntdll!NtRemoveIoCompletion",
+      "ntdll!NtSetIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "SockSanCheckAsyncPort",
+    "prototype": "",
+    "rank_score": 424,
+    "size": 161,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "EnumProtocolsA",
+    "ea": "0x18002afc0",
+    "function_file": "functions/18002afc0_EnumProtocolsA.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "EnumProtocolsA",
+    "prototype": "INT __stdcall(LPINT lpiProtocols, LPVOID lpProtocolBuffer, LPDWORD lpdwBufferLength)",
+    "rank_score": 423,
+    "size": 142,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "StopWsdpService",
+    "ea": "0x180023870",
+    "function_file": "functions/180023870_StopWsdpService.md",
+    "matched_imports": [
+      "WS2_32!__imp_WSACleanup",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "StopWsdpService",
+    "prototype": "",
+    "rank_score": 423,
+    "size": 84,
+    "tags": [
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CopyNBSendData",
+    "ea": "0x18003ef30",
+    "function_file": "functions/18003ef30_CopyNBSendData.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "CopyNBSendData",
+    "prototype": "",
+    "rank_score": 422,
+    "size": 544,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CancelBlockingSend",
+    "ea": "0x180045cfc",
+    "function_file": "functions/180045cfc_CancelBlockingSend.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "CancelBlockingSend",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 419,
+    "size": 370,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "CompleteAppRecvsUponClose",
+    "ea": "0x180046240",
+    "function_file": "functions/180046240_CompleteAppRecvsUponClose.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "CompleteAppRecvsUponClose",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 416,
+    "size": 105,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SockSanCompleteOverlappedRequest",
+    "ea": "0x18004a690",
+    "function_file": "functions/18004a690_SockSanCompleteOverlappedRequest.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue"
+    ],
+    "matched_strings": [],
+    "name": "SockSanCompleteOverlappedRequest",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 291,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SockSanWaitForSockDupToComplete",
+    "ea": "0x180042eac",
+    "function_file": "functions/180042eac_SockSanWaitForSockDupToComplete.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "SockSanWaitForSockDupToComplete",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 192,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SockIsMswsockCatalogEntry",
+    "ea": "0x18000f3e0",
+    "function_file": "functions/18000f3e0_SockIsMswsockCatalogEntry.md",
+    "matched_imports": [
+      "WS2_32!WSCGetProviderPath",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW"
+    ],
+    "matched_strings": [],
+    "name": "SockIsMswsockCatalogEntry",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 224,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CopyToAliasBuffer",
+    "ea": "0x18002ea40",
+    "function_file": "functions/18002ea40_CopyToAliasBuffer.md",
+    "matched_imports": [
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlInitAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "CopyToAliasBuffer",
+    "prototype": "__int64 __fastcall(PCSZ SourceString)",
+    "rank_score": 413,
+    "size": 172,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "WriteAnsiName",
+    "ea": "0x18002cf8c",
+    "function_file": "functions/18002cf8c_WriteAnsiName.md",
+    "matched_imports": [
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlInitAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "WriteAnsiName",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 106,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SaBlob_WriteNameOrAlias",
+    "ea": "0x18001671c",
+    "function_file": "functions/18001671c_SaBlob_WriteNameOrAlias.md",
+    "matched_imports": [
+      "DNSAPI!DnsStringCopyAllocateEx",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "SaBlob_WriteNameOrAlias",
+    "prototype": "",
+    "rank_score": 406,
+    "size": 207,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SockSanSecureMemoryCacheCallback",
+    "ea": "0x180042db0",
+    "function_file": "functions/180042db0_SockSanSecureMemoryCacheCallback.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SockSanSecureMemoryCacheCallback",
+    "prototype": "NTSTATUS __stdcall(PVOID Address, SIZE_T Length)",
+    "rank_score": 405,
+    "size": 245,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Rnr_ProcessCleanup",
+    "ea": "0x18001e0e0",
+    "function_file": "functions/18001e0e0_Rnr_ProcessCleanup.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "Rnr_ProcessCleanup",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_GetNtDllProcedureAddress",
+    "ea": "0x18002a280",
+    "function_file": "functions/18002a280_wil_details_GetNtDllProcedureAddress.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "wil_details_GetNtDllProcedureAddress",
+    "prototype": "",
+    "rank_score": 353,
+    "size": 70,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RemoveAllInstalledProviders",
+    "ea": "0x180035acc",
+    "function_file": "functions/180035acc_RemoveAllInstalledProviders.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+    ],
+    "matched_strings": [
+      "Failed to get subkey name to remove provider",
+      "Failed to remove provider using subkey name"
+    ],
+    "name": "RemoveAllInstalledProviders",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 317,
+    "size": 236,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SockDeleteRwLock",
+    "ea": "0x18001e560",
+    "function_file": "functions/18001e560_SockDeleteRwLock.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlDeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SockDeleteRwLock",
+    "prototype": "",
+    "rank_score": 313,
+    "size": 62,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "OpenWinsockRoot",
+    "ea": "0x180034ae8",
+    "function_file": "functions/180034ae8_OpenWinsockRoot.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "Could not open key"
+    ],
+    "name": "OpenWinsockRoot",
+    "prototype": "__int64 __fastcall(HKEY hKey, PHKEY phkResult)",
+    "rank_score": 256,
+    "size": 174,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ReadGuid",
+    "ea": "0x180034d30",
+    "function_file": "functions/180034d30_ReadGuid.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "Failed to ready the GUID from the registry"
+    ],
+    "name": "ReadGuid",
+    "prototype": "",
+    "rank_score": 254,
+    "size": 107,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SaBlob_WriteRecords",
+    "ea": "0x18001571c",
+    "function_file": "functions/18001571c_SaBlob_WriteRecords.md",
+    "matched_imports": [
+      "DNSAPI!DnsAddrBuildFromDnsRecord"
+    ],
+    "matched_strings": [
+      "SaBlob after WriteRecords():"
+    ],
+    "name": "SaBlob_WriteRecords",
+    "prototype": "",
+    "rank_score": 254,
+    "size": 575,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 9,
+    "demangled": "SockSanProviderAddressUpdate",
+    "ea": "0x180042bc8",
+    "function_file": "functions/180042bc8_SockSanProviderAddressUpdate.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "SockSanProviderAddressUpdate",
+    "prototype": "",
+    "rank_score": 248,
+    "size": 160,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 66,
+    "demangled": "NtStatusToSocketError",
+    "ea": "0x1800052a0",
+    "function_file": "functions/1800052a0_NtStatusToSocketError.md",
+    "matched_imports": [
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NtStatusToSocketError",
+    "prototype": "",
+    "rank_score": 247,
+    "size": 1383,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 16,
+    "demangled": "CompleteOverlappedIO",
+    "ea": "0x1800462b0",
+    "function_file": "functions/1800462b0_CompleteOverlappedIO.md",
+    "matched_imports": [
+      "ntdll!NtQueueApcThread"
+    ],
+    "matched_strings": [],
+    "name": "CompleteOverlappedIO",
+    "prototype": "",
+    "rank_score": 245,
+    "size": 371,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 14,
+    "demangled": "SockSanFreeProvider",
+    "ea": "0x180042b50",
+    "function_file": "functions/180042b50_SockSanFreeProvider.md",
+    "matched_imports": [
+      "ntdll!NtSetIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "SockSanFreeProvider",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 237,
+    "size": 113,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "CheckBSQHeadForCompletion",
+    "ea": "0x180023cc0",
+    "function_file": "functions/180023cc0_CheckBSQHeadForCompletion.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "CheckBSQHeadForCompletion",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 233,
+    "size": 263,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "AcceptExRecvCompletionRoutine",
+    "ea": "0x180051390",
+    "function_file": "functions/180051390_AcceptExRecvCompletionRoutine.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "AcceptExRecvCompletionRoutine",
+    "prototype": "",
+    "rank_score": 229,
+    "size": 285,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "HandleCompletedSend",
+    "ea": "0x18003f158",
+    "function_file": "functions/18003f158_HandleCompletedSend.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "HandleCompletedSend",
+    "prototype": "",
+    "rank_score": 228,
+    "size": 299,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetAddressByNameW",
+    "ea": "0x18002c660",
+    "function_file": "functions/18002c660_GetAddressByNameW.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "GetAddressByNameW",
+    "prototype": "INT __stdcall(DWORD dwNameSpace, LPGUID lpServiceType, LPWSTR lpServiceName, LPINT lpiProtocols, DWORD dwResolution, LPSERVICE_ASYNC_INFO lpServiceAsyncInfo, LPVOID lpCsaddrBuffer, LPDWORD lpdwBufferLength, LPWSTR lpAliasBuffer, LPDWORD lpdwAliasBufferLength)",
+    "rank_score": 226,
+    "size": 212,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "AfdCompleteAccept",
+    "ea": "0x180024f14",
+    "function_file": "functions/180024f14_AfdCompleteAccept.md",
+    "matched_imports": [
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "AfdCompleteAccept",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 137,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "AfdCompleteRedirectedRequest",
+    "ea": "0x180024fa4",
+    "function_file": "functions/180024fa4_AfdCompleteRedirectedRequest.md",
+    "matched_imports": [
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "AfdCompleteRedirectedRequest",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, int, __int64, ULONG, __int64)",
+    "rank_score": 224,
+    "size": 157,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "GetServiceA",
+    "ea": "0x18002d0d0",
+    "function_file": "functions/18002d0d0_GetServiceA.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "GetServiceA",
+    "prototype": "INT __stdcall(DWORD dwNameSpace, LPGUID lpGuid, LPSTR lpServiceName, DWORD dwProperties, LPVOID lpBuffer, LPDWORD lpdwBufferSize, LPSERVICE_ASYNC_INFO lpServiceAsyncInfo)",
+    "rank_score": 224,
+    "size": 173,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "AfdCompleteRequest",
+    "ea": "0x180025048",
+    "function_file": "functions/180025048_AfdCompleteRequest.md",
+    "matched_imports": [
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "AfdCompleteRequest",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 83,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "SockAcquireRwLockExclusive",
+    "ea": "0x18000db30",
+    "function_file": "functions/18000db30_SockAcquireRwLockExclusive.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SockAcquireRwLockExclusive",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 120,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Dns_NSPInstallServiceClass",
+    "ea": "0x180029930",
+    "function_file": "functions/180029930_Dns_NSPInstallServiceClass.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "Dns_NSPInstallServiceClass",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 61,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "SockCancelIo",
+    "ea": "0x18001c4e8",
+    "function_file": "functions/18001c4e8_SockCancelIo.md",
+    "matched_imports": [
+      "ntdll!NtCancelIoFile"
+    ],
+    "matched_strings": [],
+    "name": "SockCancelIo",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 75,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "SockReleaseRwLockShared",
+    "ea": "0x18000f9f0",
+    "function_file": "functions/18000f9f0_SockReleaseRwLockShared.md",
+    "matched_imports": [
+      "ntdll!NtSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "SockReleaseRwLockShared",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 71,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BuildNewProtocolName",
+    "ea": "0x18001c53c",
+    "function_file": "functions/18001c53c_BuildNewProtocolName.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "BuildNewProtocolName",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 360,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SockSanCreateSocketForReuse",
+    "ea": "0x18004cd90",
+    "function_file": "functions/18004cd90_SockSanCreateSocketForReuse.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue"
+    ],
+    "matched_strings": [],
+    "name": "SockSanCreateSocketForReuse",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 217,
+    "size": 322,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "InitializeStuckSendTracker",
+    "ea": "0x180049af0",
+    "function_file": "functions/180049af0_InitializeStuckSendTracker.md",
+    "matched_imports": [
+      "ntdll!NtAlertThread"
+    ],
+    "matched_strings": [],
+    "name": "InitializeStuckSendTracker",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 54,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ReadDword",
+    "ea": "0x180034cbc",
+    "function_file": "functions/180034cbc_ReadDword.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "ReadDword",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 107,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SockIoCompletion",
+    "ea": "0x18001ca90",
+    "function_file": "functions/18001ca90_SockIoCompletion.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue"
+    ],
+    "matched_strings": [],
+    "name": "SockIoCompletion",
+    "prototype": "void __stdcall(PVOID NormalContext, PVOID SystemArgument1, PVOID SystemArgument2)",
+    "rank_score": 215,
+    "size": 257,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SockSanIncludeWait",
+    "ea": "0x18004aa80",
+    "function_file": "functions/18004aa80_SockSanIncludeWait.md",
+    "matched_imports": [
+      "ntdll!NtAlertThread"
+    ],
+    "matched_strings": [],
+    "name": "SockSanIncludeWait",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 37,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WriteMultiSz",
+    "ea": "0x18003639c",
+    "function_file": "functions/18003639c_WriteMultiSz.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "WriteMultiSz",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 213,
+    "size": 112,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Dns_NSPGetServiceClassInfo",
+    "ea": "0x1800298e0",
+    "function_file": "functions/1800298e0_Dns_NSPGetServiceClassInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "Dns_NSPGetServiceClassInfo",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 61,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Dns_NSPRemoveServiceClass",
+    "ea": "0x180029980",
+    "function_file": "functions/180029980_Dns_NSPRemoveServiceClass.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "Dns_NSPRemoveServiceClass",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 61,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Dns_NSPSetService",
+    "ea": "0x1800299d0",
+    "function_file": "functions/1800299d0_Dns_NSPSetService.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "Dns_NSPSetService",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 61,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CopyServEntry",
+    "ea": "0x18001cfc8",
+    "function_file": "functions/18001cfc8_CopyServEntry.md",
+    "matched_imports": [
+      "DNSAPI!DnsApiAllocZero"
+    ],
+    "matched_strings": [],
+    "name": "CopyServEntry",
+    "prototype": "",
+    "rank_score": 208,
+    "size": 410,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "SaBlob_StringCopyAllocW",
+    "ea": "0x18002a98c",
+    "function_file": "functions/18002a98c_SaBlob_StringCopyAllocW.md",
+    "matched_imports": [
+      "DNSAPI!DnsApiAllocZero"
+    ],
+    "matched_strings": [],
+    "name": "SaBlob_StringCopyAllocW",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 207,
+    "size": 94,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MSWSOCK_SockThreadInitialize",
+    "ea": "0x180030880",
+    "function_file": "functions/180030880_MSWSOCK_SockThreadInitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue"
+    ],
+    "matched_strings": [],
+    "name": "MSWSOCK_SockThreadInitialize",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SockSanDeleteSocket",
+    "ea": "0x18004d164",
+    "function_file": "functions/18004d164_SockSanDeleteSocket.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue"
+    ],
+    "matched_strings": [],
+    "name": "SockSanDeleteSocket",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 108,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "TransmitFile",
+    "ea": "0x18002af00",
+    "function_file": "functions/18002af00_TransmitFile.md",
+    "matched_imports": [
+      "WS2_32!WSAIoctl"
+    ],
+    "matched_strings": [],
+    "name": "TransmitFile",
+    "prototype": "BOOL __stdcall(SOCKET hSocket, HANDLE hFile, DWORD nNumberOfBytesToWrite, DWORD nNumberOfBytesPerSend, LPOVERLAPPED lpOverlapped, LPTRANSMIT_FILE_BUFFERS lpTransmitBuffers, DWORD dwReserved)",
+    "rank_score": 204,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTransfer_EventWriteTransfer",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_tlgWriteTransfer_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EventWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, PEVENT_DATA_DESCRIPTOR)",
+    "rank_score": 203,
+    "size": 164,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "rio_copy_optional_buffer",
+    "ea": "0x180018a34",
+    "function_file": "functions/180018a34_rio_copy_optional_buffer.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "rio_copy_optional_buffer",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SockSanCreateSocketHandle",
+    "ea": "0x18004cee0",
+    "function_file": "functions/18004cee0_SockSanCreateSocketHandle.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!TlsGetValue"
+    ],
+    "matched_strings": [],
+    "name": "SockSanCreateSocketHandle",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 66,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SockOpenKeyEx",
+    "ea": "0x18000170c",
+    "function_file": "functions/18000170c_SockOpenKeyEx.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\Tcp\\Parameters",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\Tcp\\VParameters",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters"
+    ],
+    "name": "SockOpenKeyEx",
+    "prototype": "__int64 __fastcall(PHANDLE KeyHandle)",
+    "rank_score": 143,
+    "size": 71,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 54,
+    "demangled": "memcpy_0",
+    "ea": "0x180037195",
+    "function_file": "functions/180037195_memcpy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 57,
+    "demangled": "memset_0",
+    "ea": "0x180022bd2",
+    "function_file": "functions/180022bd2_memset_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "SockReleaseRwLockExclusive",
+    "ea": "0x18000ca20",
+    "function_file": "functions/18000ca20_SockReleaseRwLockExclusive.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "SockReleaseRwLockExclusive",
+    "prototype": "",
+    "rank_score": 122,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "ReleaseWsaBufArray",
+    "ea": "0x18003f28c",
+    "function_file": "functions/18003f28c_ReleaseWsaBufArray.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "ReleaseWsaBufArray",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 77,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DnsNameCompare_W",
+    "ea": "0x180022ddc",
+    "function_file": "functions/180022ddc_imp_load_DnsNameCompare_W.md",
+    "matched_imports": [
+      "DNSAPI!DnsNameCompare_W"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DnsNameCompare_W",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DnsQueryConfigAllocEx",
+    "ea": "0x180022db8",
+    "function_file": "functions/180022db8_imp_load_DnsQueryConfigAllocEx.md",
+    "matched_imports": [
+      "DNSAPI!DnsQueryConfigAllocEx"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DnsQueryConfigAllocEx",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DnsAddrArrayCreate",
+    "ea": "0x180022e48",
+    "function_file": "functions/180022e48_imp_load_DnsAddrArrayCreate.md",
+    "matched_imports": [
+      "DNSAPI!DnsAddrArrayCreate"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DnsAddrArrayCreate",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DnsNameCopy",
+    "ea": "0x180022dee",
+    "function_file": "functions/180022dee_imp_load_DnsNameCopy.md",
+    "matched_imports": [
+      "DNSAPI!DnsNameCopy"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DnsNameCopy",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DnsStringCopyAllocateEx",
+    "ea": "0x180022e12",
+    "function_file": "functions/180022e12_imp_load_DnsStringCopyAllocateEx.md",
+    "matched_imports": [
+      "DNSAPI!DnsStringCopyAllocateEx"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DnsStringCopyAllocateEx",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DnsWriteReverseNameStringForIpAddressW",
+    "ea": "0x180022efc",
+    "function_file": "functions/180022efc_imp_load_DnsWriteReverseNameStringForIpAddressW.md",
+    "matched_imports": [
+      "DNSAPI!DnsWriteReverseNameStringForIpAddressW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DnsWriteReverseNameStringForIpAddressW",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__stdio_common_vsnwprintf_s",
+    "ea": "0x180022b2a",
+    "function_file": "functions/180022b2a_stdio_common_vsnwprintf_s.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vsnwprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "__stdio_common_vsnwprintf_s",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, size_t MaxCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__stdio_common_vswprintf_s",
+    "ea": "0x180022b36",
+    "function_file": "functions/180022b36_stdio_common_vswprintf_s.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "__stdio_common_vswprintf_s",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__configure_narrow_argv_0",
+    "ea": "0x180022b4e",
+    "function_file": "functions/180022b4e_o_configure_narrow_argv_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_o__configure_narrow_argv_0",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__seh_filter_dll_0",
+    "ea": "0x180022b8a",
+    "function_file": "functions/180022b8a_o_seh_filter_dll_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_o__seh_filter_dll_0",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "memmove_0",
+    "ea": "0x1800371a1",
+    "function_file": null,
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Print_WsaQuerySet",
+    "ea": "0x18001d168",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [
+      "Finished LookupServiceNext",
+      "Finished LookupServiceNext"
+    ],
+    "name": "Print_WsaQuerySet",
+    "prototype": "",
+    "rank_score": 105,
+    "size": 712,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x180029a54",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [
+      "RtlQueryFeatureConfiguration"
+    ],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 243,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 23,
+    "demangled": "SendControlMessage",
+    "ea": "0x18003dae8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SendControlMessage",
+    "prototype": "",
+    "rank_score": 40,
+    "size": 244,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 85,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1800222f0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 159,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180053010",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "HandleRemoteClose",
+    "ea": "0x18004958c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HandleRemoteClose",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 34,
+    "size": 337,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SockpSanUpdateSubnetMap",
+    "ea": "0x18003eb24",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SockpSanUpdateSubnetMap",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 346,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 19,
+    "demangled": "__tailMerge_dnsapi_dll",
+    "ea": "0x180022d39",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_dnsapi_dll",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 35,
+    "demangled": "WPP_SF_sqqqq",
+    "ea": "0x18003ac78",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_sqqqq",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 162,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch",
+    "ea": "0x180022164",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_dispatch",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 28,
+    "size": 295,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 26,
+    "demangled": "LogError",
+    "ea": "0x1800327a8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LogError",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_after_initialize_c",
+    "ea": "0x180022488",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_after_initialize_c",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach",
+    "ea": "0x180021fd8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_attach",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 250,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x180029fd4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 274,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 13,
+    "demangled": "SockNotifyHelperDll",
+    "ea": "0x18000f4c8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SockNotifyHelperDll",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 103,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 98,
+    "demangled": "WPP_SF_",
+    "ea": "0x180038104",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 14,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 81,
+    "demangled": "WPP_SF_d",
+    "ea": "0x18003ae8c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 26,
+    "demangled": "WPP_SF_l",
+    "ea": "0x18003aec4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_l",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 50,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 74,
+    "demangled": "WPP_SF_q",
+    "ea": "0x180038118",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 27,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x180038a20",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 31,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x18003aefc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_c",
+    "ea": "0x180022570",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_c",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 48,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch",
+    "ea": "0x180021f80",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_dispatch",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MwcMarkReinstalledProtocols",
+    "ea": "0x18003388c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MwcMarkReinstalledProtocols",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 216,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1800370a4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "SockUpdateWindowSizes",
+    "ea": "0x18000eba4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SockUpdateWindowSizes",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 274,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_detach",
+    "ea": "0x1800220d8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_detach",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 131,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SockSanEnableActiveUpdates",
+    "ea": "0x18004270c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SockSanEnableActiveUpdates",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 211,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SockBuildProtocolInfoForSocket",
+    "ea": "0x18000f844",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SockBuildProtocolInfoForSocket",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 288,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "UpdateSendCredit",
+    "ea": "0x18003b054",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateSendCredit",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 185,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "NotifyAfdOfReceiveComplete",
+    "ea": "0x180024518",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NotifyAfdOfReceiveComplete",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 342,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "UseRdma",
+    "ea": "0x180024dd4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UseRdma",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 24,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "WPP_SF_iql",
+    "ea": "0x18003ad20",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_iql",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CleanupListeningOrConnectingSocket",
+    "ea": "0x18004bf20",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CleanupListeningOrConnectingSocket",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 16,
+    "size": 144,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ContinueCancelBlockingReceive",
+    "ea": "0x18003d480",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ContinueCancelBlockingReceive",
+    "prototype": "__int64 __fastcall(PVOID CompletionContext)",
+    "rank_score": 16,
+    "size": 172,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__scrt_is_ucrt_dll_in_use",
+    "ea": "0x180022ad0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_is_ucrt_dll_in_use",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "__tailMerge_iphlpapi_dll",
+    "ea": "0x180022c8a",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_iphlpapi_dll",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x180029d60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 381,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MwcMarkRemovedProtocols",
+    "ea": "0x18003396c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MwcMarkRemovedProtocols",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_SF_sLDDDDDDDDDDLL",
+    "ea": "0x18003ab10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_sLDDDDDDDDDDLL",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 354,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_exception_filter",
+    "ea": "0x180022520",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_exception_filter",
+    "prototype": "__int64 __fastcall(int, int, int, int, unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 72,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x180029ee4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 118,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AdjustReceiveBytesBufferedOnReceiveComplete",
+    "ea": "0x180023a5c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AdjustReceiveBytesBufferedOnReceiveComplete",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 162,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RIODequeueCompletion",
+    "ea": "0x180018750",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RIODequeueCompletion",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "StartRdmaRead",
+    "ea": "0x18005086c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StartRdmaRead",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 973,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Tcpip4_WSHEnumProtocols",
+    "ea": "0x180036420",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Tcpip4_WSHEnumProtocols",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 352,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Tcpip6_WSHEnumProtocols",
+    "ea": "0x180036890",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Tcpip6_WSHEnumProtocols",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 360,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_RecordFeatureUsage",
+    "ea": "0x180029b50",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_RecordFeatureUsage",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 91,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x180029f60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 107,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MapProtocolInfoToAbsolute",
+    "ea": "0x180032848",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MapProtocolInfoToAbsolute",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MapProtocolInfoToSelfRelative",
+    "ea": "0x180032864",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MapProtocolInfoToSelfRelative",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SockFreeHelperDlls",
+    "ea": "0x18000f25c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SockFreeHelperDlls",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 85,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "WPP_SF_S",
+    "ea": "0x18003847c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_S",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "WPP_SF_dd",
+    "ea": "0x180038944",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_dd",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800222a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 13,
+    "size": 61,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_attach",
+    "ea": "0x1800224d4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_attach",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_ext_ms_win_rtcore_ntuser_window_ext_l1_1_0_dll",
+    "ea": "0x180022f6e",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_ext_ms_win_rtcore_ntuser_window_ext_l1_1_0_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "StringCbCopyW",
+    "ea": "0x1800119a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCbCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cbDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 12,
+    "size": 110,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Tcpip4_WSHGetWSAProtocolInfo",
+    "ea": "0x180036630",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Tcpip4_WSHGetWSAProtocolInfo",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 91,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Tcpip6_WSHGetWSAProtocolInfo",
+    "ea": "0x180036a50",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Tcpip6_WSHGetWSAProtocolInfo",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 91,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_before_initialize_c",
+    "ea": "0x1800224c4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_before_initialize_c",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 7,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_detach",
+    "ea": "0x180022504",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_detach",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_critical",
+    "ea": "0x1800225a8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "initialize_msvcrt_compatibility",
+    "ea": "0x180021f50",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "initialize_msvcrt_compatibility",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "Feature_5977_1413__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x180029a14",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_5977_1413__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "GetServiceW",
+    "ea": "0x18002d190",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetServiceW",
+    "prototype": "INT __stdcall(DWORD dwNameSpace, LPGUID lpGuid, LPWSTR lpServiceName, DWORD dwProperties, LPVOID lpBuffer, LPDWORD lpdwBufferSize, LPSERVICE_ASYNC_INFO lpServiceAsyncInfo)",
+    "rank_score": 11,
+    "size": 56,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "MigrateWinsockConfiguration",
+    "ea": "0x180032880",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MigrateWinsockConfiguration",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 44,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SetServiceW",
+    "ea": "0x18002def0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetServiceW",
+    "prototype": "INT __stdcall(DWORD dwNameSpace, DWORD dwOperation, DWORD dwFlags, LPSERVICE_INFOW lpServiceInfo, LPSERVICE_ASYNC_INFO lpServiceAsyncInfo, LPDWORD lpdwStatusFlags)",
+    "rank_score": 11,
+    "size": 43,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "SockBuildTdiAddress",
+    "ea": "0x1800143e8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SockBuildTdiAddress",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__scrt_stub_for_is_c_termination_complete",
+    "ea": "0x180023018",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_is_c_termination_complete",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CopyHostentToBuffer",
+    "ea": "0x18002a5d4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyHostentToBuffer",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 10,
+    "size": 558,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "InitFlowAndConnectThreads",
+    "ea": "0x180049768",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "InitFlowAndConnectThreads",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CleanupRdmaWrite",
+    "ea": "0x18004f460",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CleanupRdmaWrite",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 171,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CopyFromUserBuffer",
+    "ea": "0x18004f0d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyFromUserBuffer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 262,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CreateControlHeader",
+    "ea": "0x180047484",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateControlHeader",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 308,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CopyCsaddrToUserBuffer",
+    "ea": "0x18002b810",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyCsaddrToUserBuffer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 268,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CopyToUserBuffer",
+    "ea": "0x18004f1dc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyToUserBuffer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 152,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FlatBuf_WriteString",
+    "ea": "0x180017660",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FlatBuf_WriteString",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCbCopyA",
+    "ea": "0x1800016a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCbCopyA",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cbDest, STRSAFE_LPCSTR pszSrc)",
+    "rank_score": 3,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_tlgCreate1Sz_char",
+    "ea": "0x1800010b4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_char",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x180029bb4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 202,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x180029c84",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x18002a0ec",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "FastWppCallback",
+    "ea": "0x1800211f0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FastWppCallback",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 1,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Tcpip4_WSHOpenSocket",
+    "ea": "0x180036850",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Tcpip4_WSHOpenSocket",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Tcpip6_WSHOpenSocket",
+    "ea": "0x180036c90",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Tcpip6_WSHOpenSocket",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 51,
+    "tags": []
+  }
+]

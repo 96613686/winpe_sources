@@ -1,0 +1,422 @@
+# SAXReader::putProperty(ushort const *,tagVARIANT)
+
+- ea: `0x180126f90`
+- end: `0x180127362`
+- name: `?putProperty@SAXReader@@UEAAJPEBGUtagVARIANT@@@Z`
+- size: `978`
+- prototype: `HRESULT __fastcall(SAXReader *this, const wchar_t *pwhName, tagVARIANT varValue)`
+- caller_count: `0`
+- callee_count: `14`
+- tags: `loader_planting`
+
+## callees
+
+- `0x180015a80`
+- `0x180054310`
+- `0x180058ef4`
+- `0x1800741b0`
+- `0x1800745fc`
+- `0x180074768`
+- `0x1800747b8`
+- `0x18009fefc`
+- `0x1800a3c08`
+- `0x180125bb8`
+- `0x180126f90`
+- `0x180150d38`
+- `0x18017c1cc`
+- `0x18018c010`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_VariantCopy` at `0x180127272`
+- `OLEAUT32!__imp_VariantCopy` at `0x180127272`
+
+## pseudocode
+
+```c
+__int64 __fastcall SAXReader::putProperty(SAXReader *this, const wchar_t *pwhName, tagVARIANT *varValue)
+{
+  int SAXSchemaProxy; // edi
+  ISAXDeclHandler *v7; // r13
+  int v8; // esi
+  SAXSchemaProxy *p; // rcx
+  DTSReader *v11; // rcx
+  _reference<IMXSchemaDeclHandler> *p_pDeclHandler; // rcx
+  void *v13; // rdx
+  ISAXLexicalHandler *v14; // rsi
+  DTSReader *v15; // rcx
+  const _GUID *v16; // rdx
+  const _GUID *v17; // r8
+  HRESULT v18; // r9d
+  SAXSchemaProxy *v19; // rsi
+  bool v20; // al
+  HRESULT v21; // eax
+  ISAXLexicalHandler *pLexicalHandler; // [rsp+30h] [rbp-78h]
+  IMXSchemaDeclHandler *pSchemaDeclHandler; // [rsp+38h] [rbp-70h]
+  SchemaCache *pSchemaCache; // [rsp+40h] [rbp-68h]
+  tagVARIANT v25; // [rsp+60h] [rbp-48h] BYREF
+  EnsureTls _EnsureTls; // [rsp+C8h] [rbp+20h] BYREF
+
+  EnsureTls::EnsureTls(&_EnsureTls);
+  if ( !_EnsureTls._tlsdata )
+    return 2147500037LL;
+  SAXSchemaProxy = 0;
+  v7 = 0;
+  pLexicalHandler = 0;
+  pSchemaDeclHandler = 0;
+  pSchemaCache = 0;
+  if ( pwhName )
+    v8 = xstrlenw(pwhName, 0x7FFFFFFFu);
+  else
+    v8 = 0;
+  if ( v8 == CodeStringPtr::declarationHandler.n && !memcmp_0(pwhName, CodeStringPtr::declarationHandler.pwh, 2LL * v8) )
+  {
+    v7 = (ISAXDeclHandler *)Variant::QIForIID(varValue, &IID_ISAXDeclHandler);
+    p = this->_pSchemaProxy._p;
+    if ( p )
+      assign(&p->_pDeclHandler._p, v7);
+    else
+      Reader::SetDeclHandler(this, v7);
+    v11 = this->_pDtsReader._p;
+    if ( !v11 )
+      goto $CleanUp_283;
+    p_pDeclHandler = (_reference<IMXSchemaDeclHandler> *)&v11->_pDeclHandler;
+    v13 = v7;
+    goto LABEL_25;
+  }
+  if ( v8 == CodeStringPtr::lexicalHandler.n && !memcmp_0(pwhName, CodeStringPtr::lexicalHandler.pwh, 2LL * v8) )
+  {
+    v14 = (ISAXLexicalHandler *)Variant::QIForIID(varValue, &IID_ISAXLexicalHandler);
+    pLexicalHandler = v14;
+    Reader::SetLexicalHandler(this, v14);
+    v15 = this->_pDtsReader._p;
+    if ( v15 )
+    {
+      p_pDeclHandler = (_reference<IMXSchemaDeclHandler> *)&v15->_pLexicalHandler;
+      v13 = v14;
+LABEL_25:
+      assign(&p_pDeclHandler->_p, v13);
+    }
+  }
+  else
+  {
+    if ( v8 != CodeStringPtr::schemaDeclarationHandler.n
+      || memcmp_0(pwhName, CodeStringPtr::schemaDeclarationHandler.pwh, 2LL * v8) )
+    {
+      if ( v8 == CodeStringPtr::schemas.n && !memcmp_0(pwhName, CodeStringPtr::schemas.pwh, 2LL * v8) )
+      {
+        if ( this->_fBusy )
+        {
+          SAXSchemaProxy = -2147467259;
+        }
+        else if ( this->_pSchemaProxy._p
+               || (SAXSchemaProxy = SAXReader::CreateSAXSchemaProxy(this, &this->_pSchemaProxy._p), SAXSchemaProxy >= 0) )
+        {
+          pSchemaCache = (SchemaCache *)ObjectFromVariant(varValue, v16, v17, v18);
+          v19 = this->_pSchemaProxy._p;
+          assign(&v19->_pSchemaCache._p, pSchemaCache);
+          v20 = v19->_fValidation && (v19->_pSchemaCache._p || v19->_fUseInlineSchema || v19->_fUseSchemaLocation);
+          v19->_fDoValidation = v20;
+        }
+      }
+      else if ( v8 == CodeStringPtr::domNode.n && !memcmp_0(pwhName, CodeStringPtr::domNode.pwh, 2LL * v8) )
+      {
+        SAXSchemaProxy = -2147467259;
+      }
+      else
+      {
+        if ( v8 == CodeStringPtr::inputSource.n && !memcmp_0(pwhName, CodeStringPtr::inputSource.pwh, 2LL * v8) )
+        {
+          v21 = VariantCopy(&this->_varInput, varValue);
+        }
+        else
+        {
+          v25 = *varValue;
+          v21 = Reader::putProperty(this, pwhName, &v25);
+        }
+        SAXSchemaProxy = v21;
+      }
+      goto $CleanUp_283;
+    }
+    if ( this->_pSchemaProxy._p
+      || (SAXSchemaProxy = SAXReader::CreateSAXSchemaProxy(this, &this->_pSchemaProxy._p), SAXSchemaProxy >= 0) )
+    {
+      pSchemaDeclHandler = (IMXSchemaDeclHandler *)Variant::QIForIID(varValue, &IID_IMXSchemaDeclHandler);
+      p_pDeclHandler = &this->_pSchemaProxy._p->_pSchemaDeclHandler;
+      v13 = pSchemaDeclHandler;
+      goto LABEL_25;
+    }
+  }
+$CleanUp_283:
+  if ( v7 )
+    v7->Release(v7);
+  if ( pLexicalHandler )
+    pLexicalHandler->Release(pLexicalHandler);
+  if ( pSchemaDeclHandler )
+    pSchemaDeclHandler->Release(pSchemaDeclHandler);
+  if ( pSchemaCache )
+    pSchemaCache->Release(pSchemaCache);
+  return (unsigned int)SAXSchemaProxy;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180126f90  mov     rax, rsp
+0x180126f93  mov     [rax+8], rsi
+0x180126f97  mov     [rax+18h], varValue
+0x180126f9b  push    rdi
+0x180126f9c  push    r12
+0x180126f9e  push    r13
+0x180126fa0  push    r14
+0x180126fa2  push    r15
+0x180126fa4  sub     rsp, 80h
+0x180126fab  mov     r15, pwhName
+0x180126fae  mov     r14, this
+0x180126fb1  lea     this, [rax+20h]; this
+0x180126fb5  call    ??0EnsureTls@@QEAA@XZ; EnsureTls::EnsureTls(void)
+0x180126fba  cmp     [rsp+0A8h+_EnsureTls._tlsdata], 0
+0x180126fc3  jnz     short loc_180126FCF
+0x180126fc5  mov     eax, 80004005h
+0x180126fca  jmp     loc_180127348
+0x180126fcf  xor     edi, edi
+0x180126fd1  xor     r13d, r13d
+0x180126fd4  mov     [rsp+0A8h+pDeclHandler], r13
+0x180126fd9  mov     [rsp+0A8h+pLexicalHandler], rdi
+0x180126fde  mov     [rsp+0A8h+pSchemaDeclHandler], rdi
+0x180126fe3  mov     [rsp+0A8h+pSchemaCache], rdi
+0x180126fe8  mov     [rsp+0A8h+name.pwh], r15
+0x180126fed  test    r15, r15
+0x180126ff0  jz      short loc_180127003
+0x180126ff2  mov     edx, 7FFFFFFFh; cchMax
+0x180126ff7  mov     this, r15; psz
+0x180126ffa  call    ?xstrlenw@@YAHPEBG_K@Z; xstrlenw(ushort const *,unsigned __int64)
+0x180126fff  mov     esi, eax
+0x180127001  jmp     short loc_180127005
+0x180127003  xor     esi, esi
+0x180127005  mov     [rsp+0A8h+name.n], esi
+0x180127009  movsxd  r12, esi
+0x18012700c  add     r12, r12
+0x18012700f  cmp     esi, cs:?declarationHandler@CodeStringPtr@@2UStringPtr@@A.n; StringPtr CodeStringPtr::declarationHandler ...
+0x180127015  jnz     short loc_180127031
+0x180127017  mov     varValue, r12; Size
+0x18012701a  mov     pwhName, cs:?declarationHandler@CodeStringPtr@@2UStringPtr@@A.pwh; Buf2
+0x180127021  mov     this, r15; Buf1
+0x180127024  call    memcmp_0
+0x180127029  test    eax, eax
+0x18012702b  jnz     short loc_180127031
+0x18012702d  mov     al, 1
+0x18012702f  jmp     short loc_180127033
+0x180127031  xor     al, al
+0x180127033  test    al, al
+0x180127035  jz      short loc_180127091
+0x180127037  lea     pwhName, IID_ISAXDeclHandler; piid
+0x18012703e  mov     this, [rsp+0A8h+pVar]; pVar
+0x180127046  call    ?QIForIID@Variant@@SAPEAUIUnknown@@PEAUtagVARIANT@@PEBU_GUID@@@Z; Variant::QIForIID(tagVARIANT *,_GUID const *)
+0x18012704b  mov     r13, rax
+0x18012704e  mov     [rsp+0A8h+pDeclHandler], rax
+0x180127053  mov     this, [r14+0A10h]
+0x18012705a  mov     pwhName, rax; pDeclHandler
+0x18012705d  test    this, this
+0x180127060  jz      short loc_18012706D
+0x180127062  add     this, 60h ; '`'; ppref
+0x180127066  call    ?assign@@YAXPEAPEAUIUnknown@@PEAX@Z; assign(IUnknown * *,void *)
+0x18012706b  jmp     short loc_180127075
+0x18012706d  mov     this, r14; this
+0x180127070  call    ?SetDeclHandler@Reader@@QEAAXPEAUISAXDeclHandler@@@Z; Reader::SetDeclHandler(ISAXDeclHandler *)
+0x180127075  mov     this, [r14+0A08h]
+0x18012707c  test    this, this
+0x18012707f  jz      loc_1801272B1
+0x180127085  add     this, 68h ; 'h'
+0x180127089  mov     pwhName, r13
+0x18012708c  jmp     loc_180127159
+0x180127091  cmp     esi, cs:?lexicalHandler@CodeStringPtr@@2UStringPtr@@A.n; StringPtr CodeStringPtr::lexicalHandler ...
+0x180127097  jnz     short loc_1801270EF
+0x180127099  mov     varValue, r12; Size
+0x18012709c  mov     pwhName, cs:?lexicalHandler@CodeStringPtr@@2UStringPtr@@A.pwh; Buf2
+0x1801270a3  mov     this, r15; Buf1
+0x1801270a6  call    memcmp_0
+0x1801270ab  test    eax, eax
+0x1801270ad  jnz     short loc_1801270EF
+0x1801270af  lea     pwhName, IID_ISAXLexicalHandler; piid
+0x1801270b6  mov     this, [rsp+0A8h+pVar]; pVar
+0x1801270be  call    ?QIForIID@Variant@@SAPEAUIUnknown@@PEAUtagVARIANT@@PEBU_GUID@@@Z; Variant::QIForIID(tagVARIANT *,_GUID const *)
+0x1801270c3  mov     rsi, rax
+0x1801270c6  mov     [rsp+0A8h+pLexicalHandler], rax
+0x1801270cb  mov     pwhName, rax; pLexicalHandler
+0x1801270ce  mov     this, r14; this
+0x1801270d1  call    ?SetLexicalHandler@Reader@@QEAAXPEAUISAXLexicalHandler@@@Z; Reader::SetLexicalHandler(ISAXLexicalHandler *)
+0x1801270d6  mov     this, [r14+0A08h]
+0x1801270dd  test    this, this
+0x1801270e0  jz      loc_1801272B1
+0x1801270e6  add     this, 70h ; 'p'
+0x1801270ea  mov     pwhName, rsi
+0x1801270ed  jmp     short loc_180127159
+0x1801270ef  cmp     esi, cs:?schemaDeclarationHandler@CodeStringPtr@@2UStringPtr@@A.n; StringPtr CodeStringPtr::schemaDeclarationHandler ...
+0x1801270f5  jnz     short loc_180127163
+0x1801270f7  movsxd  varValue, esi
+0x1801270fa  add     varValue, varValue; Size
+0x1801270fd  mov     pwhName, cs:?schemaDeclarationHandler@CodeStringPtr@@2UStringPtr@@A.pwh; Buf2
+0x180127104  mov     this, r15; Buf1
+0x180127107  call    memcmp_0
+0x18012710c  test    eax, eax
+0x18012710e  jnz     short loc_180127163
+0x180127110  lea     rsi, [r14+0A10h]
+0x180127117  cmp     qword ptr [rsi], 0
+0x18012711b  jnz     short loc_180127136
+0x18012711d  mov     pwhName, rsi; ppSchemaProxy
+0x180127120  mov     this, r14; this
+0x180127123  call    ?CreateSAXSchemaProxy@SAXReader@@IEAAJPEAPEAVSAXSchemaProxy@@@Z; SAXReader::CreateSAXSchemaProxy(SAXSchemaProxy * *)
+0x180127128  mov     edi, eax
+0x18012712a  mov     [rsp+0A8h+hr], eax
+0x18012712e  test    eax, eax
+0x180127130  js      $CleanUp_283
+0x180127136  lea     pwhName, IID_IMXSchemaDeclHandler; piid
+0x18012713d  mov     this, [rsp+0A8h+pVar]; pVar
+0x180127145  call    ?QIForIID@Variant@@SAPEAUIUnknown@@PEAUtagVARIANT@@PEBU_GUID@@@Z; Variant::QIForIID(tagVARIANT *,_GUID const *)
+0x18012714a  mov     [rsp+0A8h+pSchemaDeclHandler], rax
+0x18012714f  mov     this, [rsi]
+0x180127152  sub     this, 0FFFFFFFFFFFFFF80h; ppref
+0x180127156  mov     pwhName, rax; pref
+0x180127159  call    ?assign@@YAXPEAPEAUIUnknown@@PEAX@Z; assign(IUnknown * *,void *)
+0x18012715e  jmp     loc_1801272B1
+0x180127163  cmp     esi, cs:?schemas@CodeStringPtr@@2UStringPtr@@A.n; StringPtr CodeStringPtr::schemas ...
+0x180127169  jnz     loc_180127216
+0x18012716f  movsxd  varValue, esi
+0x180127172  add     varValue, varValue; Size
+0x180127175  mov     pwhName, cs:?schemas@CodeStringPtr@@2UStringPtr@@A.pwh; Buf2
+0x18012717c  mov     this, r15; Buf1
+0x18012717f  call    memcmp_0
+0x180127184  test    eax, eax
+0x180127186  jnz     loc_180127216
+0x18012718c  cmp     [r14+0A00h], al
+0x180127193  jz      short loc_1801271A3
+0x180127195  mov     edi, 80004005h
+0x18012719a  mov     [rsp+0A8h+hr], edi
+0x18012719e  jmp     $CleanUp_283
+0x1801271a3  lea     rsi, [r14+0A10h]
+0x1801271aa  cmp     qword ptr [rsi], 0
+0x1801271ae  jnz     short loc_1801271C9
+0x1801271b0  mov     pwhName, rsi; ppSchemaProxy
+0x1801271b3  mov     this, r14; this
+0x1801271b6  call    ?CreateSAXSchemaProxy@SAXReader@@IEAAJPEAPEAVSAXSchemaProxy@@@Z; SAXReader::CreateSAXSchemaProxy(SAXSchemaProxy * *)
+0x1801271bb  mov     edi, eax
+0x1801271bd  mov     [rsp+0A8h+hr], eax
+0x1801271c1  test    eax, eax
+0x1801271c3  js      $CleanUp_283
+0x1801271c9  mov     this, [rsp+0A8h+pVar]; pVar
+0x1801271d1  call    ?ObjectFromVariant@@YAPEAXPEAUtagVARIANT@@AEBU_GUID@@1J@Z; ObjectFromVariant(tagVARIANT *,_GUID const &,_GUID const &,long)
+0x1801271d6  mov     [rsp+0A8h+pSchemaCache], rax
+0x1801271db  mov     rsi, [rsi]
+0x1801271de  lea     r14, [rsi+88h]
+0x1801271e5  mov     pwhName, rax; pref
+0x1801271e8  mov     this, r14; ppref
+0x1801271eb  call    ?assign@@YAXPEAPEAUIUnknown@@PEAX@Z; assign(IUnknown * *,void *)
+0x1801271f0  cmp     byte ptr [rsi+79h], 0
+0x1801271f4  jz      short loc_18012720C
+0x1801271f6  cmp     qword ptr [r14], 0
+0x1801271fa  jnz     short loc_180127208
+0x1801271fc  cmp     byte ptr [rsi+7Ch], 0
+0x180127200  jnz     short loc_180127208
+0x180127202  cmp     byte ptr [rsi+7Dh], 0
+0x180127206  jz      short loc_18012720C
+0x180127208  mov     al, 1
+0x18012720a  jmp     short loc_18012720E
+0x18012720c  xor     al, al
+0x18012720e  mov     [rsi+78h], al
+0x180127211  jmp     loc_1801272B1
+0x180127216  cmp     esi, cs:?domNode@CodeStringPtr@@2UStringPtr@@A.n; StringPtr CodeStringPtr::domNode ...
+0x18012721c  jnz     short loc_180127242
+0x18012721e  movsxd  varValue, esi
+0x180127221  add     varValue, varValue; Size
+0x180127224  mov     pwhName, cs:?domNode@CodeStringPtr@@2UStringPtr@@A.pwh; Buf2
+0x18012722b  mov     this, r15; Buf1
+0x18012722e  call    memcmp_0
+0x180127233  test    eax, eax
+0x180127235  jnz     short loc_180127242
+0x180127237  mov     edi, 80004005h
+0x18012723c  mov     [rsp+0A8h+hr], edi
+0x180127240  jmp     short loc_1801272B1
+0x180127242  cmp     esi, cs:?inputSource@CodeStringPtr@@2UStringPtr@@A.n; StringPtr CodeStringPtr::inputSource ...
+0x180127248  jnz     short loc_180127280
+0x18012724a  movsxd  varValue, esi
+0x18012724d  add     varValue, varValue; Size
+0x180127250  mov     pwhName, cs:?inputSource@CodeStringPtr@@2UStringPtr@@A.pwh; Buf2
+0x180127257  mov     this, r15; Buf1
+0x18012725a  call    memcmp_0
+0x18012725f  test    eax, eax
+0x180127261  jnz     short loc_180127280
+0x180127263  lea     this, [r14+0A18h]; pvargDest
+0x18012726a  mov     pwhName, [rsp+0A8h+pVar]; pvargSrc
+0x180127272  call    cs:__imp_VariantCopy
+0x180127279  nop     dword ptr [rax+rax+00h]
+0x18012727e  jmp     short loc_1801272AB
+0x180127280  mov     rax, [rsp+0A8h+pVar]
+0x180127288  movups  xmm0, xmmword ptr [rax]
+0x18012728b  movaps  [rsp+0A8h+var_48], xmm0
+0x180127290  movsd   xmm1, qword ptr [rax+10h]
+0x180127295  movsd   [rsp+0A8h+var_38], xmm1
+0x18012729b  lea     varValue, [rsp+0A8h+var_48]
+0x1801272a0  mov     pwhName, r15
+0x1801272a3  mov     this, r14
+0x1801272a6  call    ?putProperty@Reader@@UEAAJPEBGUtagVARIANT@@@Z; Reader::putProperty(ushort const *,tagVARIANT)
+0x1801272ab  mov     [rsp+0A8h+hr], eax
+0x1801272af  mov     edi, eax
+0x1801272b1  jmp     short $CleanUp_283
+0x1801272b3  call    ?exceptionCatch@Exception@@SAXXZ; Exception::exceptionCatch(void)
+0x1801272b8  mov     ecx, cs:_tls_index
+0x1801272be  mov     rax, gs:58h
+0x1801272c7  mov     edx, 8
+0x1801272cc  mov     rax, [rax+this*8]
+0x1801272d0  mov     this, [rax+pwhName]
+0x1801272d4  mov     this, [this+8]
+0x1801272d8  mov     rax, [this]
+0x1801272db  mov     rax, [rax+68h]
+0x1801272df  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801272e4  mov     edi, eax
+0x1801272e6  mov     [rsp+0A8h+hr], eax
+0x1801272ea  mov     r13, [rsp+0A8h+pDeclHandler]
+0x1801272ef  test    r13, r13
+0x1801272f2  jz      short loc_180127304
+0x1801272f4  mov     rax, [r13+0]
+0x1801272f8  mov     this, r13
+0x1801272fb  mov     rax, [rax+10h]
+0x1801272ff  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180127304  mov     this, [rsp+0A8h+pLexicalHandler]
+0x180127309  test    this, this
+0x18012730c  jz      short loc_18012731A
+0x18012730e  mov     rax, [this]
+0x180127311  mov     rax, [rax+10h]
+0x180127315  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18012731a  mov     this, [rsp+0A8h+pSchemaDeclHandler]
+0x18012731f  test    this, this
+0x180127322  jz      short loc_180127330
+0x180127324  mov     rax, [this]
+0x180127327  mov     rax, [rax+10h]
+0x18012732b  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180127330  mov     this, [rsp+0A8h+pSchemaCache]
+0x180127335  test    this, this
+0x180127338  jz      short loc_180127346
+0x18012733a  mov     rax, [this]
+0x18012733d  mov     rax, [rax+10h]
+0x180127341  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180127346  mov     eax, edi
+0x180127348  mov     rsi, [rsp+0A8h+arg_0]
+0x180127350  add     rsp, 80h
+0x180127357  pop     r15
+0x180127359  pop     r14
+0x18012735b  pop     r13
+0x18012735d  pop     r12
+0x18012735f  pop     rdi
+0x180127360  retn
+0x18018197e  push    rbp
+0x180181980  sub     rsp, 20h
+0x180181984  mov     rbp, rdx
+0x180181987  call    ?fillException@Exception@@SAHPEAU_EXCEPTION_POINTERS@@@Z
+0x18018198c  nop
+0x18018198d  add     rsp, 20h
+0x180181991  pop     rbp
+0x180181992  retn
+```

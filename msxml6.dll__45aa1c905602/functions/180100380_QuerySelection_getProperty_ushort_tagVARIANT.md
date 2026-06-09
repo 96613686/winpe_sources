@@ -1,0 +1,40 @@
+# QuerySelection::getProperty(ushort *,tagVARIANT *)
+
+- ea: `0x180100380`
+- end: `0x1801004ae`
+- name: `?getProperty@QuerySelection@@UEAAJPEAGPEAUtagVARIANT@@@Z`
+- size: `302`
+- prototype: `HRESULT __fastcall(QuerySelection *this, wchar_t *name, tagVARIANT *value)`
+- caller_count: `0`
+- callee_count: `12`
+- tags: ``
+
+## callees
+
+- `0x180054310`
+- `0x180058ef4`
+- `0x18005ed7c`
+- `0x180060074`
+- `0x18007fd2c`
+- `0x18009402c`
+- `0x18009fefc`
+- `0x1800a3c08`
+- `0x1800bda08`
+- `0x1801002b4`
+- `0x180100330`
+- `0x180100380`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_VariantInit` at `0x1801003c6`
+- `OLEAUT32!__imp_VariantInit` at `0x1801003c6`
+
+## string_xrefs
+
+- `0x18010043e`: `XPath`
+
+## pseudocode
+
+```c
+
+```
