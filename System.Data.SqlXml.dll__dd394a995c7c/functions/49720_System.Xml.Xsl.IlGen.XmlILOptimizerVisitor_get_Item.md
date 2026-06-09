@@ -1,0 +1,84 @@
+# System.Xml.Xsl.IlGen.XmlILOptimizerVisitor::get_Item
+
+- ea: `0x49720`
+- end: `0x4972d`
+- name: `System.Xml.Xsl.IlGen.XmlILOptimizerVisitor::get_Item`
+- size: `13`
+- prototype: ``
+- caller_count: `87`
+- callee_count: `2`
+- tags: `registry_config`
+
+## callers
+
+- `0x42af0`
+- `0x42b20`
+- `0x42b90`
+- `0x42d10`
+- `0x42df0`
+- `0x42e30`
+- `0x42ed0`
+- `0x42f00`
+- `0x42f50`
+- `0x42fa0`
+- `0x43020`
+- `0x430e0`
+- `0x43220`
+- `0x43360`
+- `0x43430`
+- `0x43610`
+- `0x43650`
+- `0x43790`
+- `0x43860`
+- `0x43b00`
+- `0x43cf0`
+- `0x43f00`
+- `0x43fa0`
+- `0x44040`
+- `0x440e0`
+- `0x44180`
+- `0x44310`
+- `0x44450`
+- `0x44540`
+- `0x44680`
+- `0x44770`
+- `0x44860`
+- `0x44900`
+- `0x44a90`
+- `0x44b30`
+- `0x44e60`
+- `0x455f0`
+- `0x45890`
+- `0x45ac0`
+- `0x45cf0`
+- `0x45f20`
+- `0x45ff0`
+- `0x460c0`
+- `0x46190`
+- `0x468e0`
+- `0x47070`
+- `0x47120`
+- `0x471d0`
+- `0x479d0`
+- `0x47ce0`
+
+## callees
+
+- `0x384e0`
+- `0x57640`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x49720  ldarg.0
+0x49721  call     instance class QilPatterns System.Xml.Xsl.Qil.QilPatternVisitor::get_Patterns()
+0x49726  ldarg.1
+0x49727  callvirt instance bool QilPatterns::IsSet(int32 i)
+0x4972c  ret
+```

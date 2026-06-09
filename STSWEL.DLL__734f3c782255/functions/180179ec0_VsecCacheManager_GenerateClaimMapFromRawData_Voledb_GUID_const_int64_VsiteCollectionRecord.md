@@ -1,0 +1,207 @@
+# VsecCacheManager::GenerateClaimMapFromRawData(Voledb &,_GUID const *,__int64,VsiteCollectionRecord * *)
+
+- ea: `0x180179ec0`
+- end: `0x18017a917`
+- name: `?GenerateClaimMapFromRawData@VsecCacheManager@@QEAA?AVVHRESULT@@AEAVVoledb@@PEBU_GUID@@_JPEAPEAVVsiteCollectionRecord@@@Z`
+- size: `2647`
+- prototype: `struct VHRESULT __high(struct Voledb *, const struct _GUID *, __int64, struct VsiteCollectionRecord **)`
+- caller_count: `1`
+- callee_count: `14`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1801789e0`
+
+## callees
+
+- `0x180048930`
+- `0x180049120`
+- `0x180087d80`
+- `0x1801765fc`
+- `0x180176724`
+- `0x1801786a0`
+- `0x180179ec0`
+- `0x18017b2b0`
+- `0x18017b4e0`
+- `0x18017bb30`
+- `0x1801b0d80`
+- `0x1801c1770`
+- `0x1801c2d7d`
+- `0x1801c2da0`
+
+## import_xrefs
+
+- `onetutil!??1Vint32Vvector@@QEAA@XZ` at `0x18017a5d4`
+- `onetutil!??1Vint32Vvector@@QEAA@XZ` at `0x18017a5d4`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a03a`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a56e`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a618`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a632`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a684`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a7a4`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a03a`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a56e`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a618`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a632`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a684`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x18017a7a4`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x18017a017`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x18017a523`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x18017a663`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x18017a017`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x18017a523`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x18017a663`
+- `onetutil!?appendGuid@VwstackBuffer512@@QEAAAEAV1@PEBU_GUID@@DDD@Z` at `0x18017a0ce`
+- `onetutil!?appendGuid@VwstackBuffer512@@QEAAAEAV1@PEBU_GUID@@DDD@Z` at `0x18017a0ce`
+- `onetutil!?FindKey@CLKRHashTable@@QEBA?AW4LK_RETCODE@@_KPEAPEBX@Z` at `0x18017a072`
+- `onetutil!?FindKey@CLKRHashTable@@QEBA?AW4LK_RETCODE@@_KPEAPEBX@Z` at `0x18017a072`
+- `onetutil!?InsertRecord@CLKRHashTable@@QEAA?AW4LK_RETCODE@@PEBX_N@Z` at `0x18017a4c8`
+- `onetutil!?InsertRecord@CLKRHashTable@@QEAA?AW4LK_RETCODE@@PEBX_N@Z` at `0x18017a6f5`
+- `onetutil!?InsertRecord@CLKRHashTable@@QEAA?AW4LK_RETCODE@@PEBX_N@Z` at `0x18017a4c8`
+- `onetutil!?InsertRecord@CLKRHashTable@@QEAA?AW4LK_RETCODE@@PEBX_N@Z` at `0x18017a6f5`
+- `onetutil!?VgetProcessGlobals@@YAAEAVVprocessGlobals@@XZ` at `0x18017a743`
+- `onetutil!?VgetProcessGlobals@@YAAEAVVprocessGlobals@@XZ` at `0x18017a743`
+- `onetutil!?FormatGuid@@YAXPEBU_GUID@@PEADD@Z` at `0x18017a052`
+- `onetutil!?FormatGuid@@YAXPEBU_GUID@@PEADD@Z` at `0x18017a052`
+- `onetutil!?DeleteKey@CLKRHashTable@@QEAA?AW4LK_RETCODE@@_K@Z` at `0x18017a1f7`
+- `onetutil!?DeleteKey@CLKRHashTable@@QEAA?AW4LK_RETCODE@@_K@Z` at `0x18017a1f7`
+- `onetutil!?appendBinary@VstackBuffer512@@QEAAAEAV1@PEBEK@Z` at `0x18017a3bd`
+- `onetutil!?appendBinary@VstackBuffer512@@QEAAAEAV1@PEBEK@Z` at `0x18017a3bd`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a166`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a186`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a1fe`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a36c`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a3c3`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a41d`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a474`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a4e4`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a575`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a5ad`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a5da`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a5f5`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a61f`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a68f`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a7ab`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a7d2`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a82a`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a88d`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a166`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a186`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a1fe`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a36c`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a3c3`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a41d`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a474`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a4e4`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a575`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a5ad`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a5da`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a5f5`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a61f`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a68f`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a7ab`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a7d2`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a82a`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x18017a88d`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x18017a3d2`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x18017a429`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x18017a483`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x18017a3d2`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x18017a429`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x18017a483`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a173`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a5ba`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a5e7`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a602`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a89a`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a173`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a5ba`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a5e7`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a602`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x18017a89a`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a1ad`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a21e`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a399`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a500`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a6b9`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a7c6`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a7fc`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a845`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a1ad`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a21e`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a399`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a500`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a6b9`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a7c6`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a7fc`
+- `onetutil!?UseGlobalHeap@COWSAllocator@@SAXXZ` at `0x18017a845`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a1b5`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a216`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a3a1`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a4f8`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a6c1`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a7be`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a804`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a83d`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a1b5`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a216`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a3a1`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a4f8`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a6c1`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a7be`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a804`
+- `onetutil!?UseLocalHeap@COWSAllocator@@SAXXZ` at `0x18017a83d`
+- `onetutil!?IsCurrentHeapLocal@COWSAllocator@@SADXZ` at `0x18017a190`
+- `onetutil!?IsCurrentHeapLocal@COWSAllocator@@SADXZ` at `0x18017a378`
+- `onetutil!?IsCurrentHeapLocal@COWSAllocator@@SADXZ` at `0x18017a699`
+- `onetutil!?IsCurrentHeapLocal@COWSAllocator@@SADXZ` at `0x18017a7dc`
+- `onetutil!?IsCurrentHeapLocal@COWSAllocator@@SADXZ` at `0x18017a190`
+- `onetutil!?IsCurrentHeapLocal@COWSAllocator@@SADXZ` at `0x18017a378`
+- `onetutil!?IsCurrentHeapLocal@COWSAllocator@@SADXZ` at `0x18017a699`
+- `onetutil!?IsCurrentHeapLocal@COWSAllocator@@SADXZ` at `0x18017a7dc`
+- `onetutil!?Vstrlen@@YAIPEBD@Z` at `0x18017a414`
+- `onetutil!?Vstrlen@@YAIPEBD@Z` at `0x18017a414`
+- `onetutil!??0VHRESULT@@QEAA@J@Z` at `0x180179f24`
+- `onetutil!??0VHRESULT@@QEAA@J@Z` at `0x180179f24`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x18017a028`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x18017a52e`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x18017a66e`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x18017a028`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x18017a52e`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x18017a66e`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x18017a3da`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x18017a431`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x18017a48b`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x18017a3da`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x18017a431`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x18017a48b`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a17b`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a5c2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a5ef`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a60a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a8a2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a17b`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a5c2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a5ef`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a60a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x18017a8a2`
+- `onetnative!ULSPerfmonEvent` at `0x18017a733`
+- `onetnative!ULSPerfmonEvent` at `0x18017a733`
+- `onetnative!ULSSendTraceTag` at `0x18017a14c`
+- `onetnative!ULSSendTraceTag` at `0x18017a14c`
+
+## string_xrefs
+
+- `0x180179fe4`: `\sts\wel\security.cpp`
+- `0x18017a707`: `\sts\wel\security.cpp`
+- `0x18017a782`: `\sts\wel\security.cpp`
+- `0x18017a853`: `\sts\wel\security.cpp`
+- `0x18017a0f3`: `GenerateClaimMapFromRawData deletes a cache entry with the same version. Site ID: '%s', Cache version: '%ld', New version: '%ld'.`
+- `0x18017a11a`: `GenerateClaimMapFromRawData deletes a cache entry with a newer version. Site ID: '%s', Cache version: '%ld', New version: '%ld'.`
+
+## pseudocode
+
+```c
+
+```

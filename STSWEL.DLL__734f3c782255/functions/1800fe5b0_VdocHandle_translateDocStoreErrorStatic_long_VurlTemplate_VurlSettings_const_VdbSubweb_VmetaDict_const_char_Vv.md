@@ -1,0 +1,219 @@
+# VdocHandle::translateDocStoreErrorStatic(long,VurlTemplate<VurlSettings> const &,VdbSubweb *,VmetaDict const *,char,VvirusCheck *)
+
+- ea: `0x1800fe5b0`
+- end: `0x1800fef19`
+- name: `?translateDocStoreErrorStatic@VdocHandle@@SAPEAVVstatus@@JAEBV?$VurlTemplate@VVurlSettings@@@@PEAVVdbSubweb@@PEBVVmetaDict@@DPEAVVvirusCheck@@@Z`
+- size: `2409`
+- prototype: `__int64 __fastcall(int, int, int, int, char, VvirusCheck *)`
+- caller_count: `1`
+- callee_count: `17`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x1800fe220`
+
+## callees
+
+- `0x18003e12c`
+- `0x18005a36c`
+- `0x18005a3fc`
+- `0x18005a48c`
+- `0x18005a51c`
+- `0x18005a5ac`
+- `0x18009c440`
+- `0x1800ad8a4`
+- `0x1800f7cc0`
+- `0x1800f7d50`
+- `0x1800fe5b0`
+- `0x1800ff3b0`
+- `0x1800ff4f0`
+- `0x1801035d0`
+- `0x180137580`
+- `0x1801ace60`
+- `0x1801c2da0`
+
+## import_xrefs
+
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe6b7`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe6f8`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe739`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe787`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe7e4`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe8ad`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe9b6`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fea24`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800feaf2`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800feb33`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800feb74`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800febb5`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fec1b`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fec73`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fed2f`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fed9e`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fee17`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fee55`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fee93`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800feee1`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe6b7`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe6f8`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe739`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe787`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe7e4`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe8ad`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fe9b6`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fea24`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800feaf2`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800feb33`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800feb74`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800febb5`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fec1b`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fec73`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fed2f`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fed9e`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fee17`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fee55`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800fee93`
+- `onetutil!??0VgenericStatus@@QEAA@KJZZ` at `0x1800feee1`
+- `onetutil!??0VprettyUrl@@QEAA@PEBDI@Z` at `0x1800febd5`
+- `onetutil!??0VprettyUrl@@QEAA@PEBDI@Z` at `0x1800febd5`
+- `onetutil!??1VprettyUrl@@QEAA@XZ` at `0x1800fec28`
+- `onetutil!??1VprettyUrl@@QEAA@XZ` at `0x1800fec28`
+- `onetutil!?data@VprettyUrl@@QEBAPEBDXZ` at `0x1800fec07`
+- `onetutil!?data@VprettyUrl@@QEBAPEBDXZ` at `0x1800fec07`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x1800fe8f2`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x1800fe8f2`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1800fe921`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1800feef2`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1800fe921`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1800feef2`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe688`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe6c9`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe70a`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe755`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe7b5`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe87e`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe980`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe9f5`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feac3`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feb04`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feb45`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feb86`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800febdc`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fec44`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fed00`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fed6f`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fede8`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fee26`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fee64`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feeb2`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe688`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe6c9`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe70a`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe755`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe7b5`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe87e`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe980`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fe9f5`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feac3`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feb04`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feb45`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feb86`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800febdc`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fec44`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fed00`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fed6f`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fede8`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fee26`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800fee64`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x1800feeb2`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe695`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe6d6`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe717`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe762`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe7c2`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe88b`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe98d`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fea02`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fead0`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800feb11`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800feb52`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800feb93`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800febe9`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fec51`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fed0d`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fed7c`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fedf5`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fee33`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fee71`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800feebf`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe695`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe6d6`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe717`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe762`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe7c2`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe88b`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fe98d`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fea02`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fead0`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800feb11`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800feb52`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800feb93`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800febe9`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fec51`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fed0d`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fed7c`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fedf5`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fee33`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800fee71`
+- `onetutil!?AllocCurrentHeap@COWSAllocator@@SAPEAX_K@Z` at `0x1800feebf`
+- `onetutil!?pCurrentContext@VthreadContext@@SAPEAV1@XZ` at `0x1800fed41`
+- `onetutil!?pCurrentContext@VthreadContext@@SAPEAV1@XZ` at `0x1800fedd6`
+- `onetutil!?pCurrentContext@VthreadContext@@SAPEAV1@XZ` at `0x1800fed41`
+- `onetutil!?pCurrentContext@VthreadContext@@SAPEAV1@XZ` at `0x1800fedd6`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe69d`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe6de`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe71f`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe76a`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe7ca`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe893`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe995`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fea0a`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fead8`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800feb19`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800feb5a`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800feb9b`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800febf1`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fec59`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fed15`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fed84`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fedfd`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fee3b`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fee79`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800feec7`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe69d`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe6de`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe71f`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe76a`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe7ca`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe893`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fe995`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fea0a`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fead8`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800feb19`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800feb5a`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800feb9b`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800febf1`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fec59`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fed15`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fed84`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fedfd`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fee3b`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800fee79`
+- `api-ms-win-crt-heap-l1-1-0!malloc` at `0x1800feec7`
+
+## pseudocode
+
+```c
+
+```

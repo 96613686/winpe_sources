@@ -1,0 +1,260 @@
+# VsecurityAdministration::ensureUserExistsInternal2(VdbServer *,ITPList *,_GUID const &,char,void const *,long,_WSS_TOKEN_HEADER const *,char,char,char,long,wchar_t const *,wchar_t const *,wchar_t const *,wchar_t const *,wchar_t const *,wchar_t const *,long,_GUID const *,char,char,COWSConnection *,long *)
+
+- ea: `0x180164f70`
+- end: `0x180165f99`
+- name: `?ensureUserExistsInternal2@VsecurityAdministration@@SA?AVVHRESULT@@PEAVVdbServer@@PEAUITPList@@AEBU_GUID@@DPEBXJPEBU_WSS_TOKEN_HEADER@@DDDJPEB_W55555JPEBU5@DDPEAVCOWSConnection@@PEAJ@Z`
+- size: `4137`
+- prototype: ``
+- caller_count: `4`
+- callee_count: `16`
+- tags: `file_ops, authz_impersonation, installer_update, broker_com_uri`
+
+## callers
+
+- `0x180163f00`
+- `0x180164d10`
+- `0x180164e70`
+- `0x18016ccc0`
+
+## callees
+
+- `0x180011ce0`
+- `0x180093e30`
+- `0x18010cee0`
+- `0x180137580`
+- `0x18013f5c0`
+- `0x180140030`
+- `0x180140130`
+- `0x1801403b0`
+- `0x18015da00`
+- `0x180164f70`
+- `0x180165fa0`
+- `0x180176470`
+- `0x18017ba40`
+- `0x18017fa20`
+- `0x1801a83f0`
+- `0x1801c1770`
+
+## import_xrefs
+
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x180165bf2`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x180165c07`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x180165bf2`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x180165c07`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x1801654ad`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165560`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165688`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165879`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165a89`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165e4b`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165eac`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x1801654ad`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165560`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165688`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165879`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165a89`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165e4b`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180165eac`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165258`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801653c5`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801654c3`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801656a9`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165754`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801657d5`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801659c4`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165a30`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165aa8`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165b1c`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165b9e`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165258`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801653c5`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801654c3`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801656a9`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165754`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801657d5`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x1801659c4`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165a30`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165aa8`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165b1c`
+- `onetutil!??0Vwstring@@QEAA@PEB_W@Z` at `0x180165b9e`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x1801653a2`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x18016545e`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x180165e2b`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x1801653a2`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x18016545e`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x180165e2b`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180165859`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180165bb2`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180165859`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180165bb2`
+- `onetutil!?toLower@Vstring@@QEAAXXZ` at `0x180165be8`
+- `onetutil!?toLower@Vstring@@QEAAXXZ` at `0x180165be8`
+- `onetutil!?appendGuid@VwstackBuffer512@@QEAAAEAV1@PEBU_GUID@@DDD@Z` at `0x180165401`
+- `onetutil!?appendGuid@VwstackBuffer512@@QEAAAEAV1@PEBU_GUID@@DDD@Z` at `0x180165401`
+- `onetutil!?Vwcschr@@YAPEB_WPEB_W_W@Z` at `0x180165228`
+- `onetutil!?Vwcschr@@YAPEB_WPEB_W_W@Z` at `0x180165228`
+- `onetutil!?getUnicode@Vstring@@QEBA?AVVwstring@@XZ` at `0x1801658e4`
+- `onetutil!?getUnicode@Vstring@@QEBA?AVVwstring@@XZ` at `0x1801658e4`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x180165182`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x18016518d`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x180165198`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x1801651a3`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x1801651ae`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x1801651b9`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x1801651c4`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x180165438`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x180165182`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x18016518d`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x180165198`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x1801651a3`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x1801651ae`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x1801651b9`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x1801651c4`
+- `onetutil!??0Vwstring@@QEAA@XZ` at `0x180165438`
+- `onetutil!??1VUserId@@QEAA@XZ` at `0x180165c30`
+- `onetutil!??1VUserId@@QEAA@XZ` at `0x180165f11`
+- `onetutil!??1VUserId@@QEAA@XZ` at `0x180165c30`
+- `onetutil!??1VUserId@@QEAA@XZ` at `0x180165f11`
+- `onetutil!??4VUserId@@QEAAAEAV0@AEBV0@@Z` at `0x180165c25`
+- `onetutil!??4VUserId@@QEAAAEAV0@AEBV0@@Z` at `0x180165c25`
+- `onetutil!??0VUserId@@QEAA@PEAXK@Z` at `0x180165c17`
+- `onetutil!??0VUserId@@QEAA@PEAXK@Z` at `0x180165c17`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x180165837`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x180165837`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180165884`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x18016588f`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1801658a3`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180165994`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180165c4a`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180165884`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x18016588f`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1801658a3`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180165994`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180165c4a`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x18016529f`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165478`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165535`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x1801655bc`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x1801656f1`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x1801657bc`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165824`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x18016593b`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165a19`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165a7b`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165af3`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165b78`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165bc8`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165bde`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165e85`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f06`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f1c`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f27`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f32`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f3d`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f48`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f53`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f5e`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x18016529f`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165478`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165535`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x1801655bc`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x1801656f1`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x1801657bc`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165824`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x18016593b`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165a19`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165a7b`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165af3`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165b78`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165bc8`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165bde`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165e85`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f06`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f1c`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f27`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f32`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f3d`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f48`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f53`
+- `onetutil!??1Vwstring@@QEAA@XZ` at `0x180165f5e`
+- `onetutil!?GetData@Vwstring@@AEBAPEA_WXZ` at `0x180165491`
+- `onetutil!?GetData@Vwstring@@AEBAPEA_WXZ` at `0x180165548`
+- `onetutil!?GetData@Vwstring@@AEBAPEA_WXZ` at `0x180165491`
+- `onetutil!?GetData@Vwstring@@AEBAPEA_WXZ` at `0x180165548`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x180165e65`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x180165ee6`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x180165e65`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x180165ee6`
+- `onetutil!??0Vwstring@@QEAA@AEBV0@@Z` at `0x180165b8b`
+- `onetutil!??0Vwstring@@QEAA@AEBV0@@Z` at `0x180165b8b`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x180165e72`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x180165ef3`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x180165e72`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x180165ef3`
+- `onetutil!?Vstrlen@@YAIPEBD@Z` at `0x180165bfb`
+- `onetutil!?Vstrlen@@YAIPEBD@Z` at `0x180165bfb`
+- `onetutil!??0VHRESULT@@QEAA@J@Z` at `0x180165096`
+- `onetutil!??0VHRESULT@@QEAA@J@Z` at `0x1801650ac`
+- `onetutil!??0VHRESULT@@QEAA@J@Z` at `0x180165096`
+- `onetutil!??0VHRESULT@@QEAA@J@Z` at `0x1801650ac`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x1801653ad`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x180165469`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x18016552a`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x1801657b1`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x180165e36`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x180165f6c`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x1801653ad`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x180165469`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x18016552a`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x1801657b1`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x180165e36`
+- `onetutil!??1VHRESULT@@QEAA@XZ` at `0x180165f6c`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180165e7a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180165efb`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180165e7a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180165efb`
+- `onetnative!ULSSendTraceTag` at `0x18016512e`
+- `onetnative!ULSSendTraceTag` at `0x180165153`
+- `onetnative!ULSSendTraceTag` at `0x180165178`
+- `onetnative!ULSSendTraceTag` at `0x180165294`
+- `onetnative!ULSSendTraceTag` at `0x180165653`
+- `onetnative!ULSSendTraceTag` at `0x18016567a`
+- `onetnative!ULSSendTraceTag` at `0x1801656e6`
+- `onetnative!ULSSendTraceTag` at `0x180165819`
+- `onetnative!ULSSendTraceTag` at `0x180165a0e`
+- `onetnative!ULSSendTraceTag` at `0x180165a70`
+- `onetnative!ULSSendTraceTag` at `0x180165ae8`
+- `onetnative!ULSSendTraceTag` at `0x180165b6d`
+- `onetnative!ULSSendTraceTag` at `0x180165ca9`
+- `onetnative!ULSSendTraceTag` at `0x180165d79`
+- `onetnative!ULSSendTraceTag` at `0x180165ddb`
+- `onetnative!ULSSendTraceTag` at `0x180165ecc`
+- `onetnative!ULSSendTraceTag` at `0x18016512e`
+- `onetnative!ULSSendTraceTag` at `0x180165153`
+- `onetnative!ULSSendTraceTag` at `0x180165178`
+- `onetnative!ULSSendTraceTag` at `0x180165294`
+- `onetnative!ULSSendTraceTag` at `0x180165653`
+- `onetnative!ULSSendTraceTag` at `0x18016567a`
+- `onetnative!ULSSendTraceTag` at `0x1801656e6`
+- `onetnative!ULSSendTraceTag` at `0x180165819`
+
+## string_xrefs
+
+- `0x180165136`: `ensureUserExistsInternal2: VgetSecCacheManager returned null. Skipping enhanced user key pipeline flight check.`
+- `0x180165282`: `ensureUserExistsInternal2: Importing deleted windows user so not performing user lookup. wzLogin: '%s', bUseVerifiedSid: '%s', bImportDeleted: '%s'.`
+- `0x180165641`: `ensureUserExistsInternal2: bUseMembershipProviderUserKey: '%s', bUseVerifiedSid: '%s', bIsSPO: '%s'.`
+- `0x1801656d4`: `ensureUserExistsInternal2: Importing deleted non-windows user so not performing user lookup. wzLogin: '%s', bUseVerifiedUserKey: '%s', bImportDeleted: '%s'.`
+- `0x1801659f9`: `ensureUserExistsInternal2: Could not get user so failing. wzLogin: '%s', bUseVerifiedUserKey: '%s', bImportDeleted: '%s'.`
+- `0x180165a5b`: `ensureUserExistsInternal2: Could not get user so failing without assert. wzLogin: '%s', bUseVerifiedUserKey: '%s', bImportDeleted: '%s'.`
+- `0x180165ad3`: `ensureUserExistsInternal2: Could not get user but not using verified user key. wzLogin: '%s', bUseVerifiedUserKey: '%s', bImportDeleted: '%s'.`
+- `0x180165b58`: `ensureUserExistsInternal2: Generating binary user ID to be stored in tp_SystemID. wzLogin: '%s', wstrUserKey: '%s', bUseMembershipProviderUserKey: '%s', bUseVerifiedSid: '%s'.`
+- `0x180165c95`: `Failed to add [Login=%s] to the database. It may already exist at [SiteId=%s][UserId=%i]. HR=0x%08X`
+- `0x180165d65`: `Login looks like a valid user, checking [SID=%S]`
+- `0x180165dc7`: `Found a user with the same tp_Login but different tp_SystemId. Try to delete it. Site ID: %s tp_Login: %s`
+- `0x180165eb8`: `VsecurityAdministration::removeUserFromSiteInternal failed.  HRESULT: 0x%08X`
+
+## pseudocode
+
+```c
+
+```

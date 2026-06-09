@@ -1,0 +1,82 @@
+# System.Xml.Xsl.Qil.QilVisitor::VisitNop
+
+- ea: `0x3aef0`
+- end: `0x3aef8`
+- name: `System.Xml.Xsl.Qil.QilVisitor::VisitNop`
+- size: `8`
+- prototype: ``
+- caller_count: `75`
+- callee_count: `1`
+- tags: `registry_config`
+
+## callers
+
+- `0x3a690`
+- `0x42e30`
+- `0x42f00`
+- `0x42f50`
+- `0x430e0`
+- `0x43220`
+- `0x43360`
+- `0x43430`
+- `0x43650`
+- `0x43860`
+- `0x43b00`
+- `0x43cf0`
+- `0x43f00`
+- `0x43fa0`
+- `0x44040`
+- `0x440e0`
+- `0x44180`
+- `0x44310`
+- `0x44450`
+- `0x44540`
+- `0x44680`
+- `0x44770`
+- `0x44860`
+- `0x44900`
+- `0x44a90`
+- `0x44b30`
+- `0x44e60`
+- `0x455f0`
+- `0x45890`
+- `0x45ac0`
+- `0x45cf0`
+- `0x45f20`
+- `0x45ff0`
+- `0x460c0`
+- `0x46190`
+- `0x468e0`
+- `0x47070`
+- `0x471d0`
+- `0x47db0`
+- `0x47e50`
+- `0x47f30`
+- `0x47fd0`
+- `0x48070`
+- `0x48100`
+- `0x48190`
+- `0x48210`
+- `0x48290`
+- `0x48310`
+- `0x483b0`
+- `0x48440`
+
+## callees
+
+- `0x3a600`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x3aef0  ldarg.0
+0x3aef1  ldarg.1
+0x3aef2  callvirt instance class System.Xml.Xsl.Qil.QilNode System.Xml.Xsl.Qil.QilVisitor::VisitChildren(class System.Xml.Xsl.Qil.QilNode parent)
+0x3aef7  ret
+```

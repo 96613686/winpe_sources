@@ -1,0 +1,59 @@
+# _VSS_MGMT_OBJECT_PROP_Copy::copyVolume_::_1_::catch$4
+
+- ea: `0x180049c4d`
+- end: `0x180049c9c`
+- name: `_VSS_MGMT_OBJECT_PROP_Copy::copyVolume_::_1_::catch$4`
+- size: `79`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `1`
+- tags: `file_ops`
+
+## callees
+
+- `0x1800354e0`
+
+## string_xrefs
+
+- `0x180049c73`: `PRPCOPYC`
+- `0x180049c7a`: `base\stor\vss\modules\prop\copy.cxx`
+- `0x180049c6c`: `VSS_MGMT_OBJECT_PROP_Copy::copyVolume`
+
+## pseudocode
+
+```c
+__int64 __fastcall VSS_MGMT_OBJECT_PROP_Copy::copyVolume_::_1_::catch_4(__int64 a1, __int64 a2)
+{
+  CVssFunctionTracer::HandleStdBadAllocException(
+    (CVssFunctionTracer *)(a2 + 96),
+    L"base\\stor\\vss\\modules\\prop\\copy.cxx",
+    L"PRPCOPYC",
+    L"VSS_MGMT_OBJECT_PROP_Copy::copyVolume",
+    0xE9u,
+    *(_DWORD *)(a2 + 132));
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180049c4d  mov     [rsp+arg_8], rdx
+0x180049c52  push    rbp
+0x180049c53  sub     rsp, 40h
+0x180049c57  mov     rbp, rdx
+0x180049c5a  mov     eax, [rbp+84h]
+0x180049c60  mov     [rsp+48h+var_20], eax; unsigned int
+0x180049c64  mov     [rsp+48h+var_28], 0E9h; unsigned int
+0x180049c6c  lea     r9, aVssMgmtObjectP_2; "VSS_MGMT_OBJECT_PROP_Copy::copyVolume"
+0x180049c73  lea     r8, aPrpcopyc; "PRPCOPYC"
+0x180049c7a  lea     rdx, aBaseStorVssMod_17; "base\\stor\\vss\\modules\\prop\\copy.cx"...
+0x180049c81  lea     rcx, [rbp+60h]; this
+0x180049c85  call    ?HandleStdBadAllocException@CVssFunctionTracer@@QEAAXPEBG00KK@Z; CVssFunctionTracer::HandleStdBadAllocException(ushort const *,ushort const *,ushort const *,ulong,ulong)
+0x180049c8a  nop
+0x180049c8b  mov     rax, 0
+0x180049c95  add     rsp, 40h
+0x180049c99  pop     rbp
+0x180049c9a  retn
+```

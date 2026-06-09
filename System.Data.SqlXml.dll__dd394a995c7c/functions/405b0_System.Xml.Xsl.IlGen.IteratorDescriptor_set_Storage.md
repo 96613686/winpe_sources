@@ -1,0 +1,78 @@
+# System.Xml.Xsl.IlGen.IteratorDescriptor::set_Storage
+
+- ea: `0x405b0`
+- end: `0x405b8`
+- name: `System.Xml.Xsl.IlGen.IteratorDescriptor::set_Storage`
+- size: `8`
+- prototype: ``
+- caller_count: `66`
+- callee_count: `0`
+- tags: `registry_config`
+
+## callers
+
+- `0x4a9f0`
+- `0x4ad40`
+- `0x4aff0`
+- `0x4b0e0`
+- `0x4b1b0`
+- `0x4b230`
+- `0x4b280`
+- `0x4b300`
+- `0x4b380`
+- `0x4b3c0`
+- `0x4b3f0`
+- `0x4b430`
+- `0x4b470`
+- `0x4b4a0`
+- `0x4b5c0`
+- `0x4b620`
+- `0x4b750`
+- `0x4b810`
+- `0x4bae0`
+- `0x4bbe0`
+- `0x4bd70`
+- `0x4bdc0`
+- `0x4c070`
+- `0x4c350`
+- `0x4c490`
+- `0x4c520`
+- `0x4c570`
+- `0x4c5b0`
+- `0x4c800`
+- `0x4cb10`
+- `0x4cc30`
+- `0x4d4e0`
+- `0x4d520`
+- `0x4d910`
+- `0x4dc70`
+- `0x4dd90`
+- `0x4de60`
+- `0x4def0`
+- `0x4df60`
+- `0x4e1a0`
+- `0x4e270`
+- `0x4e2f0`
+- `0x4e330`
+- `0x4e3a0`
+- `0x4e460`
+- `0x4e4a0`
+- `0x4e510`
+- `0x4e600`
+- `0x4eb20`
+- `0x4ece0`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x405b0  ldarg.0
+0x405b1  ldarg.1
+0x405b2  stfld    valuetype System.Xml.Xsl.IlGen.StorageDescriptor System.Xml.Xsl.IlGen.IteratorDescriptor::storage
+0x405b7  ret
+```

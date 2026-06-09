@@ -1,0 +1,68 @@
+# System.Xaml.XmlWrappingReader::get_Reader
+
+- ea: `0x11d80`
+- end: `0x11d87`
+- name: `System.Xaml.XmlWrappingReader::get_Reader`
+- size: `7`
+- prototype: ``
+- caller_count: `41`
+- callee_count: `0`
+- tags: `registry_config`
+
+## callers
+
+- `0x105f0`
+- `0x10890`
+- `0x10900`
+- `0x10a40`
+- `0x10b00`
+- `0x10b40`
+- `0x10b80`
+- `0x10bb0`
+- `0x10c10`
+- `0x10c60`
+- `0x10cd0`
+- `0x10d10`
+- `0x10d30`
+- `0x10d90`
+- `0x10db0`
+- `0x10de0`
+- `0x10e00`
+- `0x10e20`
+- `0x10e40`
+- `0x10e70`
+- `0x11080`
+- `0x110b0`
+- `0x111f0`
+- `0x11280`
+- `0x11450`
+- `0x11570`
+- `0x11620`
+- `0x11680`
+- `0x116e0`
+- `0x11740`
+- `0x117a0`
+- `0x117f0`
+- `0x11820`
+- `0x11850`
+- `0x11880`
+- `0x118b0`
+- `0x118e0`
+- `0x11910`
+- `0x11940`
+- `0x11970`
+- `0x119a0`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x11d80  ldarg.0
+0x11d81  ldfld    class [System.Xml]System.Xml.XmlReader System.Xaml.XmlWrappingReader::_reader
+0x11d86  ret
+```

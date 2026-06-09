@@ -1,0 +1,110 @@
+[
+  {
+    "import": "RPCRT4!NdrDllCanUnloadNow",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001717",
+        "from_func": "0x180001710",
+        "from_func_name": "DllCanUnloadNow",
+        "import": "RPCRT4!NdrDllCanUnloadNow"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllGetClassObject",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001762",
+        "from_func": "0x180001730",
+        "from_func_name": "DllGetClassObject",
+        "import": "RPCRT4!NdrDllGetClassObject"
+      },
+      {
+        "from_ea": "0x180001762",
+        "from_func": "0x180001730",
+        "from_func_name": "DllGetClassObject",
+        "import": "RPCRT4!NdrDllGetClassObject"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllRegisterProxy",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800017c9",
+        "from_func": "0x1800017a0",
+        "from_func_name": "DllRegisterServer",
+        "import": "RPCRT4!NdrDllRegisterProxy"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllUnregisterProxy",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001809",
+        "from_func": "0x1800017e0",
+        "from_func_name": "DllUnregisterServer",
+        "import": "RPCRT4!NdrDllUnregisterProxy"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000160b",
+        "from_func": "0x1800015c4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000160b",
+        "from_func": "0x1800015c4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800016b3",
+        "from_func": "0x1800016b3",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x18000f980",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+# System.Xml.Xsl.Qil.QilNode::get_NodeType
+
+- ea: `0x376a0`
+- end: `0x376a7`
+- name: `System.Xml.Xsl.Qil.QilNode::get_NodeType`
+- size: `7`
+- prototype: ``
+- caller_count: `124`
+- callee_count: `0`
+- tags: `registry_config`
+
+## callers
+
+- `0x154f0`
+- `0x15a90`
+- `0x165f0`
+- `0x17280`
+- `0x17740`
+- `0x17890`
+- `0x17b90`
+- `0x17c70`
+- `0x18750`
+- `0x18800`
+- `0x18860`
+- `0x18ac0`
+- `0x18dd0`
+- `0x193a0`
+- `0x194f0`
+- `0x195f0`
+- `0x197f0`
+- `0x1a900`
+- `0x1b460`
+- `0x1b9e0`
+- `0x1bc30`
+- `0x1bcc0`
+- `0x1bd20`
+- `0x1bfc0`
+- `0x1cdb0`
+- `0x1cfd0`
+- `0x27600`
+- `0x27680`
+- `0x297d0`
+- `0x298a0`
+- `0x299c0`
+- `0x35d30`
+- `0x36f00`
+- `0x37ce0`
+- `0x37d30`
+- `0x37d80`
+- `0x37de0`
+- `0x38150`
+- `0x381a0`
+- `0x38e00`
+- `0x38f10`
+- `0x392c0`
+- `0x39ef0`
+- `0x3a3e0`
+- `0x3a640`
+- `0x3a690`
+- `0x3adc0`
+- `0x3bbb0`
+- `0x3c730`
+- `0x3c850`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x376a0  ldarg.0
+0x376a1  ldfld    valuetype System.Xml.Xsl.Qil.QilNodeType System.Xml.Xsl.Qil.QilNode::nodeType
+0x376a6  ret
+```

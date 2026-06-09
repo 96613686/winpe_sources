@@ -1,0 +1,259 @@
+# VsecurityAdministration::addUserToDataBase(VdbServer *,ITPList *,_GUID const &,void const *,long,_WSS_TOKEN_HEADER const *,char,char,long,wchar_t const *,wchar_t const *,wchar_t const *,wchar_t const *,wchar_t const *,wchar_t const *,wchar_t const *,wchar_t const *,wchar_t const *,long,_GUID const *,char,char,COWSConnection *,long *)
+
+- ea: `0x180165fa0`
+- end: `0x180166e8a`
+- name: `?addUserToDataBase@VsecurityAdministration@@SA?AVVHRESULT@@PEAVVdbServer@@PEAUITPList@@AEBU_GUID@@PEBXJPEBU_WSS_TOKEN_HEADER@@DDJPEB_W55555555JPEBU5@DDPEAVCOWSConnection@@PEAJ@Z`
+- size: `3818`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `22`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x180164f70`
+
+## callees
+
+- `0x180087d80`
+- `0x1801555c4`
+- `0x180165fa0`
+- `0x18017fa80`
+- `0x180197ff0`
+- `0x180198330`
+- `0x1801a7980`
+- `0x1801ae140`
+- `0x1801ae230`
+- `0x1801ae2e0`
+- `0x1801ae380`
+- `0x1801ae5c0`
+- `0x1801afba0`
+- `0x1801afc00`
+- `0x1801afec0`
+- `0x1801b0490`
+- `0x1801b0a80`
+- `0x1801b0b40`
+- `0x1801b0b80`
+- `0x1801b0d10`
+- `0x1801c1770`
+- `0x1801c2da0`
+
+## import_xrefs
+
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x180166154`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x1801668a6`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x180166902`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x18016695e`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x1801669c3`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x1801669e7`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x180166154`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x1801668a6`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x180166902`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x18016695e`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x1801669c3`
+- `onetutil!??4Vstring@@QEAAAEAV0@AEBV0@@Z` at `0x1801669e7`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x180166177`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x180166190`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x1801661a9`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x1801661c2`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x1801661db`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x180166177`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x180166190`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x1801661a9`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x1801661c2`
+- `onetutil!?data@Vstring@@QEBAPEBDXZ` at `0x1801661db`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x1801665ec`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166789`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x1801667a1`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166ba4`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166d5a`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166d72`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166dbc`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166dfc`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x1801665ec`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166789`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x1801667a1`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166ba4`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166d5a`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166d72`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166dbc`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@J@Z` at `0x180166dfc`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x1801666bf`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x1801666fa`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x180166c63`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x180166cb2`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x180166d11`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x1801666bf`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x1801666fa`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x180166c63`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x180166cb2`
+- `onetutil!??4VHRESULT@@QEAAAEAV0@AEBV0@@Z` at `0x180166d11`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x1801660f4`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166102`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166110`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x18016611e`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x18016612c`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x18016613a`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x1801664d7`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166505`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166539`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166897`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x1801668f3`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x18016694f`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x1801669d8`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x1801660f4`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166102`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166110`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x18016611e`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x18016612c`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x18016613a`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x1801664d7`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166505`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166539`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x180166897`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x1801668f3`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x18016694f`
+- `onetutil!??0Vstring@@QEAA@PEB_W@Z` at `0x1801669d8`
+- `onetutil!??0Vtime@@QEAA@_K@Z` at `0x180166272`
+- `onetutil!??0Vtime@@QEAA@_K@Z` at `0x180166272`
+- `onetutil!?appendIntBase10@VwstackBuffer512@@QEAAIJ@Z` at `0x180166a5d`
+- `onetutil!?appendIntBase10@VwstackBuffer512@@QEAAIJ@Z` at `0x180166a5d`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166466`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x18016647b`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166490`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801664a4`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801664c9`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801664ec`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x18016651a`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x18016654e`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x18016657e`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166593`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801665a8`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801665ca`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166aa6`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166abc`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166ad2`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166ae6`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b11`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b35`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b4b`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b60`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b82`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166466`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x18016647b`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166490`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801664a4`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801664c9`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801664ec`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x18016651a`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x18016654e`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x18016657e`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166593`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801665a8`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x1801665ca`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166aa6`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166abc`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166ad2`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166ae6`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b11`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b35`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b4b`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b60`
+- `onetutil!?addKeyAndValue@Vdict@@UEAAXPEBD0@Z` at `0x180166b82`
+- `onetutil!??0Vstring@@QEAA@PEBD@Z` at `0x1801669b4`
+- `onetutil!??0Vstring@@QEAA@PEBD@Z` at `0x1801669b4`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x180166833`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x18016683f`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x18016684b`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x180166857`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x180166833`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x18016683f`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x18016684b`
+- `onetutil!??0Vstring@@QEAA@XZ` at `0x180166857`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1801664f7`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166525`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x18016655c`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1801668b4`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166910`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x18016696c`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1801669f5`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166dc8`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166dd4`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166de0`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166dec`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e07`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e12`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e1d`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e28`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e33`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e3e`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1801664f7`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166525`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x18016655c`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1801668b4`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166910`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x18016696c`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x1801669f5`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166dc8`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166dd4`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166de0`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166dec`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e07`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e12`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e1d`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e28`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e33`
+- `onetutil!??1Vstring@@QEAA@XZ` at `0x180166e3e`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x180166287`
+- `onetutil!?QueryNewMode@COWSAllocator@@SAHXZ` at `0x180166287`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x180166294`
+- `onetutil!?Free@COWSAllocator@@SAXPEAX@Z` at `0x180166294`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x1801665ff`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x18016660a`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166615`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166624`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x18016662f`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x18016663a`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166bb4`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166bbf`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166bca`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166c81`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166c8c`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166cd0`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166cdb`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166d2f`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166d3a`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166d82`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166d8d`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166d9d`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166da8`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x1801665ff`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x18016660a`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166615`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166624`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x18016662f`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x18016663a`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166bb4`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166bbf`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166bca`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166c81`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166c8c`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166cd0`
+- `onetutil!??1Vdict@@UEAA@XZ` at `0x180166cdb`
+
+## string_xrefs
+
+- `0x180166499`: `Deleted`
+- `0x180166adb`: `Deleted`
+- `0x180166160`: `SET NOCOUNT ON; DECLARE @DN nvarchar(400),@LN nvarchar(400),@DocUIVersion int,@Level tinyint,@S uniqueidentifier; DECLARE @ItemId int; DECLARE @iRet int; DECLARE @ExtraItemSize int; DECLARE @Login nvarchar(255); DECLARE @Title nvarchar(255); DECLARE @Email nvarchar(255); DECLARE @Notes nvarchar(1023); DECLARE @MobilePhone nvarchar(127); DECLARE @AddedToTable bit; DECLARE @UserIdOut int; DECLARE @LoginOut nvarchar(255); DECLARE @TitleOut nvarchar(255); DECLARE @EmailOut nvarchar(255); DECLARE @No`
+- `0x180166645`: `; COMMIT TRAN; EXEC proc_UpdateDiskUsed @S, 1; DONE: SELECT @iRet, @ItemId, @AddedToTable, @LoginOut, @TitleOut, @EmailOut, @NotesOut, @MobilePhoneOut, @DeletedOut `
+- `0x18016669b`: `VsecurityAdministration::addUserToDataBase`
+- `0x180166c3f`: `VsecurityAdministration::addUserToDataBase`
+- `0x180166a22`: `SET NOCOUNT ON; DECLARE @DN nvarchar(400),@LN nvarchar(400),@DocUIVersion int,@S uniqueidentifier,@Level tinyint; DECLARE @ItemId int; DECLARE @iRet int; DECLARE @ExtraItemSize int; SET @Level = 1; SET @S=?; SELECT @ItemId = `
+- `0x180166bd5`: ` COMMIT TRAN; EXEC proc_UpdateDiskUsed @S, 1; DONE: SELECT ? = @iRet`
+
+## pseudocode
+
+```c
+
+```

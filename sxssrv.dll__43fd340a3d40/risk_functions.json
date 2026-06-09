@@ -1,0 +1,1266 @@
+[
+  {
+    "callee_count": 16,
+    "caller_count": 3,
+    "demangled": "BaseSrvSxsCreateActivationContextFromStructEx",
+    "ea": "0x180003310",
+    "function_file": "functions/180003310_BaseSrvSxsCreateActivationContextFromStructEx.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrRevertToSelf",
+      "ntdll!DbgPrintEx",
+      "ntdll!NtClose",
+      "ntdll!NtMapViewOfSection",
+      "ntdll!NtOpenProcessToken",
+      "ntdll!NtOpenThreadToken",
+      "ntdll!NtQueryInformationToken",
+      "ntdll!NtUnmapViewOfSection",
+      "ntdll!NtWriteVirtualMemory",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlDosPathNameToNtPathName_U_WithStatus",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitializeSid",
+      "ntdll!RtlLengthRequiredSid",
+      "ntdll!RtlSubAuthoritySid"
+    ],
+    "matched_strings": [
+      "SXS: BaseSrvSxsGetActivationContextGenerationFunction() returned STATUS_DLL_NOT_FOUND, propagating.\n"
+    ],
+    "name": "BaseSrvSxsCreateActivationContextFromStructEx",
+    "prototype": "__int64 __fastcall(HANDLE SourceProcessHandle, void *, unsigned int *, union _LARGE_INTEGER, HANDLE *)",
+    "rank_score": 5934,
+    "size": 3323,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BaseSrvSxsDoSystemDefaultActivationContext",
+    "ea": "0x180001450",
+    "function_file": "functions/180001450_BaseSrvSxsDoSystemDefaultActivationContext.md",
+    "matched_imports": [
+      "ntdll!DbgPrintEx",
+      "ntdll!NtClose",
+      "ntdll!NtMapViewOfSection",
+      "ntdll!NtUnmapViewOfSection",
+      "ntdll!NtWriteVirtualMemory",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlGetLengthWithoutTrailingPathSeperators",
+      "ntdll!RtlLeaveCriticalSection",
+      "ntdll!RtlMultiAppendUnicodeStringBuffer",
+      "ntdll!RtlpApplyLengthFunction"
+    ],
+    "matched_strings": [
+      "Microsoft.Windows.SystemCompatible,version=\"6.0.0.0\",type=\"win32\",publicKeyToken=\"6595b64144ccf1df\",processorArchitecture=\""
+    ],
+    "name": "BaseSrvSxsDoSystemDefaultActivationContext",
+    "prototype": "__int64 __fastcall(unsigned __int16, union _LARGE_INTEGER, __int64, __int64)",
+    "rank_score": 4584,
+    "size": 2315,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "BaseSrvSxsCheckManifestAndDotLocal",
+    "ea": "0x180002d40",
+    "function_file": "functions/180002d40_BaseSrvSxsCheckManifestAndDotLocal.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrRevertToSelf",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeStringEx"
+    ],
+    "matched_strings": [
+      ".Manifest",
+      ".Manifest"
+    ],
+    "name": "BaseSrvSxsCheckManifestAndDotLocal",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, USHORT *, __int64, int, __int64 *, int, __int64, __int64, _DWORD *)",
+    "rank_score": 2761,
+    "size": 1258,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BaseSrvSxsProbeManifestAndPolicyAndDotLocal",
+    "ea": "0x1800028d0",
+    "function_file": "functions/1800028d0_BaseSrvSxsProbeManifestAndPolicyAndDotLocal.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrRevertToSelf",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlGetLengthWithoutLastFullDosOrNtPathElement",
+      "ntdll!RtlpApplyLengthFunction"
+    ],
+    "matched_strings": [
+      ".Config",
+      ".Config"
+    ],
+    "name": "BaseSrvSxsProbeManifestAndPolicyAndDotLocal",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, int, __int64, unsigned __int16 *, unsigned __int16 *, int, __int64, __int64, __int64, __int64, _OWORD *, _DWORD *)",
+    "rank_score": 2444,
+    "size": 1120,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BaseSrvSxsCreateActivationContextFromMessage",
+    "ea": "0x180004a60",
+    "function_file": "functions/180004a60_BaseSrvSxsCreateActivationContextFromMessage.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrRevertToSelf",
+      "CSRSRV!CsrValidateMessageBuffer",
+      "ntdll!DbgPrintEx",
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryInformationFile",
+      "ntdll!RtlDosPathNameToNtPathName_U_WithStatus",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvSxsCreateActivationContextFromMessage",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 2261,
+    "size": 1011,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BaseSrvActivationContextCacheInsertEntry",
+    "ea": "0x180005170",
+    "function_file": "functions/180005170_BaseSrvActivationContextCacheInsertEntry.md",
+    "matched_imports": [
+      "ntdll!DbgPrintEx",
+      "ntdll!NtDuplicateObject",
+      "ntdll!RtlDeleteElementGenericTableAvl",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlInsertElementGenericTableFullAvl",
+      "ntdll!RtlLeaveCriticalSection",
+      "ntdll!RtlLookupElementGenericTableFullAvl",
+      "ntdll!RtlNumberGenericTableElementsAvl"
+    ],
+    "matched_strings": [
+      "Fail to remove cache entry\n"
+    ],
+    "name": "BaseSrvActivationContextCacheInsertEntry",
+    "prototype": "__int64 __fastcall(__int64, void *, __int64, _DWORD *, _QWORD *, const WCHAR *SourceString, const void **, int)",
+    "rank_score": 2074,
+    "size": 1022,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "InternalSxsCreateProcess",
+    "ea": "0x180001e00",
+    "function_file": "functions/180001e00_InternalSxsCreateProcess.md",
+    "matched_imports": [
+      "CSRSRV!CsrValidateMessageBuffer",
+      "ntdll!NtClose",
+      "ntdll!NtDuplicateObject",
+      "ntdll!NtQueryInformationFile",
+      "ntdll!NtReadVirtualMemory",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "InternalSxsCreateProcess",
+    "prototype": "__int64 __fastcall(HANDLE SourceProcessHandle, void *, __int64, __int64, __int64)",
+    "rank_score": 1848,
+    "size": 2481,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BaseSrvSxsGetActivationContextGenerationFunction",
+    "ea": "0x180005c40",
+    "function_file": "functions/180005c40_BaseSrvSxsGetActivationContextGenerationFunction.md",
+    "matched_imports": [
+      "ntdll!DbgPrintEx",
+      "ntdll!LdrGetProcedureAddress",
+      "ntdll!LdrLoadDll",
+      "ntdll!LdrUnloadDll",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SXS: %s: LdrLoadDll(%wZ) failed 0x%08lx\n",
+      "SXS: %s: LdrLoadDll(%wZ) actually probably out of memory in RtlSearchPath (RtlAllocateHeap failure)\n",
+      "SXS: %s: LdrGetProcedureAddress(%wZ:%Z) failed 0x%08lx\n"
+    ],
+    "name": "BaseSrvSxsGetActivationContextGenerationFunction",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1736,
+    "size": 613,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BaseSrvSxsInvalidateSystemDefaultActivationContextCache",
+    "ea": "0x180005eb0",
+    "function_file": "functions/180005eb0_BaseSrvSxsInvalidateSystemDefaultActivationContextCache.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvSxsInvalidateSystemDefaultActivationContextCache",
+    "prototype": "",
+    "rank_score": 1514,
+    "size": 278,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BaseSrvSxsInitializeActivationContextCache",
+    "ea": "0x180006834",
+    "function_file": "functions/180006834_BaseSrvSxsInitializeActivationContextCache.md",
+    "matched_imports": [
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlInitializeCriticalSection",
+      "ntdll!RtlInitializeGenericTableAvl"
+    ],
+    "matched_strings": [
+      "\\Registry\\MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\SideBySide"
+    ],
+    "name": "BaseSrvSxsInitializeActivationContextCache",
+    "prototype": "__int64(void)",
+    "rank_score": 1496,
+    "size": 478,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BaseSrvActivationContextCacheRemoveEntry",
+    "ea": "0x180004e60",
+    "function_file": "functions/180004e60_BaseSrvActivationContextCacheRemoveEntry.md",
+    "matched_imports": [
+      "ntdll!DbgPrintEx",
+      "ntdll!RtlDeleteElementGenericTableAvl",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection",
+      "ntdll!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [
+      "Fail to remove cache entry\n"
+    ],
+    "name": "BaseSrvActivationContextCacheRemoveEntry",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1268,
+    "size": 478,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ServerDllInitialization",
+    "ea": "0x1800066f0",
+    "function_file": "functions/1800066f0_ServerDllInitialization.md",
+    "matched_imports": [
+      "BASESRV!BaseSrvRegisterSxS",
+      "ntdll!RtlCreateUnicodeString",
+      "ntdll!RtlExpandEnvironmentStrings_U",
+      "ntdll!RtlInitializeCriticalSection",
+      "ntdll!wcscat_s"
+    ],
+    "matched_strings": [
+      "\\system32\\sxs.dll"
+    ],
+    "name": "ServerDllInitialization",
+    "prototype": "NTSTATUS __fastcall(__int64)",
+    "rank_score": 1255,
+    "size": 279,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BaseSrvActivationContextCacheFreeEntry",
+    "ea": "0x180005580",
+    "function_file": "functions/180005580_BaseSrvActivationContextCacheFreeEntry.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvActivationContextCacheFreeEntry",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1216,
+    "size": 272,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BaseClearSrvActivationContextCache",
+    "ea": "0x180006270",
+    "function_file": "functions/180006270_BaseClearSrvActivationContextCache.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitializeGenericTableAvl",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseClearSrvActivationContextCache",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1125,
+    "size": 269,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetTokenIntegrityLevel",
+    "ea": "0x180005a90",
+    "function_file": "functions/180005a90_GetTokenIntegrityLevel.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationToken",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitializeSid",
+      "ntdll!RtlLengthRequiredSid"
+    ],
+    "matched_strings": [],
+    "name": "GetTokenIntegrityLevel",
+    "prototype": "__int64 __fastcall(HANDLE TokenHandle)",
+    "rank_score": 1035,
+    "size": 276,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BaseSrvActivationContextCacheLookupEntry",
+    "ea": "0x180004390",
+    "function_file": "functions/180004390_BaseSrvActivationContextCacheLookupEntry.md",
+    "matched_imports": [
+      "ntdll!NtDuplicateObject",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection",
+      "ntdll!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvActivationContextCacheLookupEntry",
+    "prototype": "NTSTATUS __fastcall(__int128 *, void **, __int64, _DWORD *, struct _RTL_BALANCED_LINKS **, _WORD *, _OWORD *, _DWORD *)",
+    "rank_score": 1019,
+    "size": 713,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BaseSrvSxsGetCacheKey",
+    "ea": "0x180001110",
+    "function_file": "functions/180001110_BaseSrvSxsGetCacheKey.md",
+    "matched_imports": [
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\SideBySide"
+    ],
+    "name": "BaseSrvSxsGetCacheKey",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64, __int64)",
+    "rank_score": 898,
+    "size": 560,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BaseSrvActivationContextCacheCompareEntries",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_BaseSrvActivationContextCacheCompareEntries.md",
+    "matched_imports": [
+      "ntdll!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvActivationContextCacheCompareEntries",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 623,
+    "size": 242,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BaseClearSrvActivationContextCacheNoLock",
+    "ea": "0x180005050",
+    "function_file": "functions/180005050_BaseClearSrvActivationContextCacheNoLock.md",
+    "matched_imports": [
+      "ntdll!RtlDeleteElementGenericTableAvl",
+      "ntdll!RtlEnumerateGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "BaseClearSrvActivationContextCacheNoLock",
+    "prototype": "__int64 __fastcall(PRTL_AVL_TABLE Table)",
+    "rank_score": 615,
+    "size": 276,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BaseSrvActivationContextCacheDuplicateKey",
+    "ea": "0x1800056a0",
+    "function_file": "functions/1800056a0_BaseSrvActivationContextCacheDuplicateKey.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvActivationContextCacheDuplicateKey",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 615,
+    "size": 298,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BasepSxsGetLanguageFallbacks",
+    "ea": "0x180001350",
+    "function_file": "functions/180001350_BasepSxsGetLanguageFallbacks.md",
+    "matched_imports": [
+      "ntdll!RtlGetThreadPreferredUILanguages",
+      "ntdll!RtlpEnsureBufferSize"
+    ],
+    "matched_strings": [],
+    "name": "BasepSxsGetLanguageFallbacks",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 613,
+    "size": 250,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "BasepSxsCreateFileStreamEx",
+    "ea": "0x180004020",
+    "function_file": "functions/180004020_BasepSxsCreateFileStreamEx.md",
+    "matched_imports": [
+      "ntdll!NtCreateSection"
+    ],
+    "matched_strings": [
+      "BasepSxsCreateFileStreamEx",
+      "BasepSxsCreateFileStreamEx",
+      "BasepSxsCreateFileStreamEx",
+      "SXS: %s() NtOpenFile(%wZ) failed. Status = 0x%x\n",
+      "SXS: %s() NtCreateSection() failed. Status = 0x%x\n"
+    ],
+    "name": "BasepSxsCreateFileStreamEx",
+    "prototype": "__int64 __fastcall(__int64, __int128 **, __int16, void **, __int64)",
+    "rank_score": 463,
+    "size": 642,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetTokenILValue",
+    "ea": "0x180005a10",
+    "function_file": "functions/180005a10_GetTokenILValue.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlSubAuthoritySid"
+    ],
+    "matched_strings": [],
+    "name": "GetTokenILValue",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 433,
+    "size": 118,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BasepSxsCreateMemoryStream",
+    "ea": "0x180004660",
+    "function_file": "functions/180004660_BasepSxsCreateMemoryStream.md",
+    "matched_imports": [
+      "ntdll!NtDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "BasepSxsCreateMemoryStream",
+    "prototype": "__int64 __fastcall(__int64 SourceProcessHandle, __int64, _QWORD *, __int64, __int64)",
+    "rank_score": 421,
+    "size": 660,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BaseSrvSxsValidateMessageStrings",
+    "ea": "0x1800027c0",
+    "function_file": "functions/1800027c0_BaseSrvSxsValidateMessageStrings.md",
+    "matched_imports": [
+      "CSRSRV!CsrValidateMessageBuffer",
+      "ntdll!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvSxsValidateMessageStrings",
+    "prototype": "__int64 __fastcall(const void *, int, __int64)",
+    "rank_score": 414,
+    "size": 259,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlReadOutOfProcessMemoryStream",
+    "ea": "0x1800049b0",
+    "function_file": "functions/1800049b0_RtlReadOutOfProcessMemoryStream.md",
+    "matched_imports": [
+      "ntdll!NtReadVirtualMemory",
+      "ntdll!RtlNtStatusToDosErrorNoTeb"
+    ],
+    "matched_strings": [],
+    "name": "RtlReadOutOfProcessMemoryStream",
+    "prototype": "HRESULT __stdcall(struct IStream *This, PVOID Buffer, ULONG Length, PULONG BytesRead)",
+    "rank_score": 412,
+    "size": 154,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlReadMemoryStream",
+    "ea": "0x180005bb0",
+    "function_file": "functions/180005bb0_RtlReadMemoryStream.md",
+    "matched_imports": [
+      "ntdll!RtlCopyMappedMemory",
+      "ntdll!RtlNtStatusToDosErrorNoTeb"
+    ],
+    "matched_strings": [],
+    "name": "RtlReadMemoryStream",
+    "prototype": "HRESULT __stdcall(struct IStream *This, PVOID Buffer, ULONG Length, PULONG BytesRead)",
+    "rank_score": 411,
+    "size": 124,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CompatCacheDeleteFusionState",
+    "ea": "0x180006b08",
+    "function_file": "functions/180006b08_CompatCacheDeleteFusionState.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeStringEx"
+    ],
+    "matched_strings": [],
+    "name": "CompatCacheDeleteFusionState",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString)",
+    "rank_score": 235,
+    "size": 133,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CompatCacheSetFusionState",
+    "ea": "0x180003230",
+    "function_file": "functions/180003230_CompatCacheSetFusionState.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeStringEx"
+    ],
+    "matched_strings": [],
+    "name": "CompatCacheSetFusionState",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString)",
+    "rank_score": 235,
+    "size": 209,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartupForGS",
+    "ea": "0x1800063c0",
+    "function_file": "functions/1800063c0_DllMainCRTStartupForGS.md",
+    "matched_imports": [
+      "ntdll!LdrDisableThreadCalloutsForDll"
+    ],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartupForGS",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 222,
+    "size": 39,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BasepCheckDotLocalExists",
+    "ea": "0x180006180",
+    "function_file": "functions/180006180_BasepCheckDotLocalExists.md",
+    "matched_imports": [
+      "ntdll!RtlDoesFileExists_U"
+    ],
+    "matched_strings": [],
+    "name": "BasepCheckDotLocalExists",
+    "prototype": "__int64 __fastcall(__int64, __int64, _DWORD *)",
+    "rank_score": 217,
+    "size": 228,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BaseSrvActivationContextCacheDuplicateUnicodeString",
+    "ea": "0x1800057d0",
+    "function_file": "functions/1800057d0_BaseSrvActivationContextCacheDuplicateUnicodeString.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvActivationContextCacheDuplicateUnicodeString",
+    "prototype": "__int64 __fastcall(__int64, const void **)",
+    "rank_score": 215,
+    "size": 211,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BasepSxsIsStatusFileNotFoundEtc",
+    "ea": "0x1800042b0",
+    "function_file": "functions/1800042b0_BasepSxsIsStatusFileNotFoundEtc.md",
+    "matched_imports": [
+      "ntdll!RtlNtStatusToDosErrorNoTeb"
+    ],
+    "matched_strings": [],
+    "name": "BasepSxsIsStatusFileNotFoundEtc",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 214,
+    "size": 82,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BasepSxsMapViewOfSection",
+    "ea": "0x180004900",
+    "function_file": "functions/180004900_BasepSxsMapViewOfSection.md",
+    "matched_imports": [
+      "ntdll!NtMapViewOfSection"
+    ],
+    "matched_strings": [],
+    "name": "BasepSxsMapViewOfSection",
+    "prototype": "__int64 __usercall@<rax>(PVOID *BaseAddress@<rcx>, ULONG_PTR)",
+    "rank_score": 213,
+    "size": 159,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "DbgPrintEx_0",
+    "ea": "0x180006660",
+    "function_file": "functions/180006660_DbgPrintEx_0.md",
+    "matched_imports": [
+      "ntdll!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "DbgPrintEx_0",
+    "prototype": "ULONG(ULONG ComponentId, ULONG Level, PCSTR Format, ...)",
+    "rank_score": 122,
+    "size": 6,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__C_specific_handler_0",
+    "ea": "0x180006630",
+    "function_file": "functions/180006630_C_specific_handler_0.md",
+    "matched_imports": [
+      "ntdll!__C_specific_handler"
+    ],
+    "matched_strings": [],
+    "name": "__C_specific_handler_0",
+    "prototype": "EXCEPTION_DISPOSITION __cdecl(struct _EXCEPTION_RECORD *ExceptionRecord, void *EstablisherFrame, struct _CONTEXT *ContextRecord, struct _DISPATCHER_CONTEXT *DispatcherContext)",
+    "rank_score": 121,
+    "size": 6,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "NtApphelpCacheControl_0",
+    "ea": "0x1800066e0",
+    "function_file": "functions/1800066e0_NtApphelpCacheControl_0.md",
+    "matched_imports": [
+      "ntdll!NtApphelpCacheControl"
+    ],
+    "matched_strings": [],
+    "name": "NtApphelpCacheControl_0",
+    "prototype": "NTSTATUS __stdcall(APPHELPCACHESERVICECLASS Service, PAPPHELP_CACHE_SERVICE_LOOKUP ServiceData)",
+    "rank_score": 120,
+    "size": 6,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 9,
+    "demangled": "memset_0",
+    "ea": "0x180006ccd",
+    "function_file": "functions/180006ccd_memset_0.md",
+    "matched_imports": [
+      "ntdll!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 119,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "NtClose_0",
+    "ea": "0x180006654",
+    "function_file": "functions/180006654_NtClose_0.md",
+    "matched_imports": [
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [],
+    "name": "NtClose_0",
+    "prototype": "NTSTATUS __stdcall(HANDLE Handle)",
+    "rank_score": 115,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "memcpy_0",
+    "ea": "0x180006cc1",
+    "function_file": "functions/180006cc1_memcpy_0.md",
+    "matched_imports": [
+      "ntdll!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 115,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "NtUnmapViewOfSection_0",
+    "ea": "0x18000666c",
+    "function_file": "functions/18000666c_NtUnmapViewOfSection_0.md",
+    "matched_imports": [
+      "ntdll!NtUnmapViewOfSection"
+    ],
+    "matched_strings": [],
+    "name": "NtUnmapViewOfSection_0",
+    "prototype": "NTSTATUS __stdcall(HANDLE ProcessHandle, PVOID BaseAddress)",
+    "rank_score": 114,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "NtQueryInformationFile_0",
+    "ea": "0x180006684",
+    "function_file": "functions/180006684_NtQueryInformationFile_0.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "NtQueryInformationFile_0",
+    "prototype": "NTSTATUS __stdcall(HANDLE FileHandle, PIO_STATUS_BLOCK IoStatusBlock, PVOID FileInformation, ULONG Length, FILE_INFORMATION_CLASS FileInformationClass)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "NtOpenFile_0",
+    "ea": "0x180006678",
+    "function_file": "functions/180006678_NtOpenFile_0.md",
+    "matched_imports": [
+      "ntdll!NtOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "NtOpenFile_0",
+    "prototype": "NTSTATUS __stdcall(PHANDLE FileHandle, ACCESS_MASK DesiredAccess, POBJECT_ATTRIBUTES ObjectAttributes, PIO_STATUS_BLOCK IoStatusBlock, ULONG ShareAccess, ULONG OpenOptions)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "NtTerminateProcess_0",
+    "ea": "0x18000669c",
+    "function_file": "functions/18000669c_NtTerminateProcess_0.md",
+    "matched_imports": [
+      "ntdll!NtTerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "NtTerminateProcess_0",
+    "prototype": "NTSTATUS __stdcall(HANDLE ProcessHandle, NTSTATUS ExitStatus)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlAllocateHeap_0",
+    "ea": "0x18000663c",
+    "function_file": "functions/18000663c_RtlAllocateHeap_0.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "RtlAllocateHeap_0",
+    "prototype": "PVOID __stdcall(PVOID HeapHandle, ULONG Flags, SIZE_T Size)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlAppendUnicodeToString_0",
+    "ea": "0x180006690",
+    "function_file": "functions/180006690_RtlAppendUnicodeToString_0.md",
+    "matched_imports": [
+      "ntdll!RtlAppendUnicodeToString"
+    ],
+    "matched_strings": [],
+    "name": "RtlAppendUnicodeToString_0",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING Destination, PCWSTR Source)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlCaptureContext_0",
+    "ea": "0x1800066a8",
+    "function_file": "functions/1800066a8_RtlCaptureContext_0.md",
+    "matched_imports": [
+      "ntdll!RtlCaptureContext"
+    ],
+    "matched_strings": [],
+    "name": "RtlCaptureContext_0",
+    "prototype": "void __stdcall(PCONTEXT ContextRecord)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlFreeHeap_0",
+    "ea": "0x180006648",
+    "function_file": "functions/180006648_RtlFreeHeap_0.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "RtlFreeHeap_0",
+    "prototype": "BOOLEAN __stdcall(HANDLE HeapHandle, ULONG Flags, PVOID P)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlLookupFunctionEntry_0",
+    "ea": "0x1800066b4",
+    "function_file": "functions/1800066b4_RtlLookupFunctionEntry_0.md",
+    "matched_imports": [
+      "ntdll!RtlLookupFunctionEntry"
+    ],
+    "matched_strings": [],
+    "name": "RtlLookupFunctionEntry_0",
+    "prototype": "PRUNTIME_FUNCTION __stdcall(ULONG64 ControlPc, PULONG64 ImageBase, PUNWIND_HISTORY_TABLE HistoryTable)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "BaseSrvActivationContextCacheAVLTableAllocate",
+    "ea": "0x180006390",
+    "function_file": "functions/180006390_BaseSrvActivationContextCacheAVLTableAllocate.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvActivationContextCacheAVLTableAllocate",
+    "prototype": "RTL_AVL_ALLOCATE_ROUTINE",
+    "rank_score": 110,
+    "size": 25,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "BaseSrvActivationContextCacheAVLTableFree",
+    "ea": "0x180006810",
+    "function_file": "functions/180006810_BaseSrvActivationContextCacheAVLTableFree.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvActivationContextCacheAVLTableFree",
+    "prototype": "RTL_AVL_FREE_ROUTINE",
+    "rank_score": 110,
+    "size": 25,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x180006400",
+    "function_file": "functions/180006400_report_gsfailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 29,
+    "size": 375,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180006cf0",
+    "function_file": "functions/180006cf0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 28,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180006bdc",
+    "function_file": "functions/180006bdc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180008010",
+    "function_file": "functions/180008010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BaseSrvSxsCreateProcess",
+    "ea": "0x180001d70",
+    "function_file": "functions/180001d70_BaseSrvSxsCreateProcess.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvSxsCreateProcess",
+    "prototype": "__int64 __fastcall(HANDLE SourceProcessHandle, void *, __int64)",
+    "rank_score": 14,
+    "size": 138,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180006580",
+    "function_file": "functions/180006580_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 68,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie_ex",
+    "ea": "0x1800065cc",
+    "function_file": "functions/1800065cc_security_init_cookie_ex.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie_ex",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180006d60",
+    "function_file": "functions/180006d60_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BasepSxsCreateResourceStream",
+    "ea": "0x180004310",
+    "function_file": "functions/180004310_BasepSxsCreateResourceStream.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BasepSxsCreateResourceStream",
+    "prototype": "__int64 __fastcall(__int128 **, _QWORD *, __int64, __int64, __int64, unsigned int, __int64)",
+    "rank_score": 2,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "RtlCopyMemoryStreamTo",
+    "ea": "0x180006a30",
+    "function_file": "functions/180006a30_RtlCopyMemoryStreamTo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyMemoryStreamTo",
+    "prototype": "HRESULT __stdcall(struct IStream *This, struct IStream *Target, ULARGE_INTEGER Length, PULARGE_INTEGER BytesRead, PULARGE_INTEGER BytesWritten)",
+    "rank_score": 2,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "BaseSrvSxsCreateActivationContext",
+    "ea": "0x180004a50",
+    "function_file": "functions/180004a50_BaseSrvSxsCreateActivationContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvSxsCreateActivationContext",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  }
+]

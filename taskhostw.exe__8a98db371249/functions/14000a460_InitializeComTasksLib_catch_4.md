@@ -1,0 +1,33 @@
+# InitializeComTasksLib$catch$4
+
+- ea: `0x14000a460`
+- end: `0x14000a47e`
+- name: `InitializeComTasksLib$catch$4`
+- size: `30`
+- prototype: `__int64()`
+- caller_count: `0`
+- callee_count: `0`
+- tags: `service_task, broker_com_uri`
+
+## pseudocode
+
+```c
+__int64 InitializeComTasksLib_catch_4()
+{
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14000a460  mov     [rsp+arg_8], rdx
+0x14000a465  push    rbp
+0x14000a466  sub     rsp, 20h
+0x14000a46a  mov     rbp, rdx
+0x14000a46d  mov     rax, 0
+0x14000a477  add     rsp, 20h
+0x14000a47b  pop     rbp
+0x14000a47c  retn
+```
