@@ -1,0 +1,161 @@
+# TBCM::FDrawInternal(_msoctlenv *,int)
+
+- ea: `0x18169d950`
+- end: `0x18169e58a`
+- name: `?FDrawInternal@TBCM@@UEAAHPEAU_msoctlenv@@H@Z`
+- size: `3130`
+- prototype: `__int64 __fastcall(TBCM *__hidden this, struct _msoctlenv *, int)`
+- caller_count: `0`
+- callee_count: `7`
+- tags: `registry_config, installer_update`
+
+## callees
+
+- `0x1803dbb80`
+- `0x180485240`
+- `0x180485dd0`
+- `0x1806c6b70`
+- `0x18091f870`
+- `0x181579e40`
+- `0x18169d950`
+
+## import_xrefs
+
+- `Mso98Win32Client!__imp_?FDrawFocus@TBC@@IEBA_NU_msoceo@@H@Z` at `0x18169d9a1`
+- `Mso98Win32Client!__imp_?FDrawFocus@TBC@@IEBA_NU_msoceo@@H@Z` at `0x18169d9a1`
+- `Mso98Win32Client!__imp_?CbtGetThemePart@@YAHHPEBU_msoceo@@@Z` at `0x18169df15`
+- `Mso98Win32Client!__imp_?CbtGetThemePart@@YAHHPEBU_msoceo@@@Z` at `0x18169df15`
+- `Mso98Win32Client!__imp_?DrawButtonFrame@@YAXPEAUHDC__@@PEAU_msoceo@@PEBUtagRECT@@H@Z` at `0x18169df54`
+- `Mso98Win32Client!__imp_?DrawButtonFrame@@YAXPEAUHDC__@@PEAU_msoceo@@PEBUtagRECT@@H@Z` at `0x18169df54`
+- `Mso98Win32Client!__imp_?CbtGetThemeState@@YAHHPEBU_msoceo@@@Z` at `0x18169df06`
+- `Mso98Win32Client!__imp_?CbtGetThemeState@@YAHHPEBU_msoceo@@@Z` at `0x18169df06`
+- `Mso98Win32Client!__imp_?FGetFinalIconSize@@YA_NPEBU_msoctlenv@@HPEAUtagRECT@@@Z` at `0x18169e140`
+- `Mso98Win32Client!__imp_?FGetFinalIconSize@@YA_NPEBU_msoctlenv@@HPEAUtagRECT@@@Z` at `0x18169e140`
+- `Mso98Win32Client!__imp_?FGetDisplayedText@TBC@@IEAAHPEAU_msoceo@@PEA_WH@Z` at `0x18169e0a0`
+- `Mso98Win32Client!__imp_?FGetDisplayedText@TBC@@IEAAHPEAU_msoceo@@PEA_WH@Z` at `0x18169e0a0`
+- `Mso98Win32Client!__imp_?CbvPreDrawMenuControl@@YAKPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e1d6`
+- `Mso98Win32Client!__imp_?CbvPreDrawMenuControl@@YAKPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e1d6`
+- `Mso98Win32Client!__imp_?CbvDrawMenuArrows@@YAXPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e24a`
+- `Mso98Win32Client!__imp_?CbvDrawMenuArrows@@YAXPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e24a`
+- `Mso98Win32Client!__imp_?GetArrowMetrics@@YAXPEAUtagRECT@@PEBU_msoceo@@HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e048`
+- `Mso98Win32Client!__imp_?GetArrowMetrics@@YAXPEAUtagRECT@@PEBU_msoceo@@HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e048`
+- `Mso98Win32Client!__imp_?CbtDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e2e8`
+- `Mso98Win32Client!__imp_?CbtDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e3ee`
+- `Mso98Win32Client!__imp_?CbtDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e523`
+- `Mso98Win32Client!__imp_?CbtDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e2e8`
+- `Mso98Win32Client!__imp_?CbtDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e3ee`
+- `Mso98Win32Client!__imp_?CbtDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e523`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x18169db13`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x18169de5f`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x18169e065`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x18169e19d`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x18169db13`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x18169de5f`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x18169e065`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x18169e19d`
+- `Mso98Win32Client!__imp_?CrCbvDrawButtonFrame@@YAKPEAU_msoctlenv@@PEAUtagRECT@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169dec9`
+- `Mso98Win32Client!__imp_?CrCbvDrawButtonFrame@@YAKPEAU_msoctlenv@@PEAUtagRECT@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169dec9`
+- `Mso98Win32Client!__imp_?CbvDrawMenuIcon@@YAXPEAU_msoctlenv@@HHPEAUIMsoButtonUser@@PEAPEAXPEAX3HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e20d`
+- `Mso98Win32Client!__imp_?CbvDrawMenuIcon@@YAXPEAU_msoctlenv@@HHPEAUIMsoButtonUser@@PEAPEAXPEAX3HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e20d`
+- `Mso98Win32Client!__imp_?DrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHH@Z` at `0x18169e444`
+- `Mso98Win32Client!__imp_?DrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHH@Z` at `0x18169e444`
+- `Mso98Win32Client!__imp_?CbvDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e33e`
+- `Mso98Win32Client!__imp_?CbvDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e33e`
+- `Mso98Win32Client!__imp_?CbtDrawButtonFrame@@YAXPEAUHDC__@@PEBUtagRECT@@HHPEAU_msoceo@@PEAUHWND__@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169df3d`
+- `Mso98Win32Client!__imp_?CbtDrawButtonFrame@@YAXPEAUHDC__@@PEBUtagRECT@@HHPEAU_msoceo@@PEAUHWND__@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169df3d`
+- `Mso98Win32Client!__imp_?CbvDrawMenuText@@YAXPEAU_msoctlenv@@HPEB_WH1HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e236`
+- `Mso98Win32Client!__imp_?CbvDrawMenuText@@YAXPEAU_msoctlenv@@HPEB_WH1HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e236`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169db96`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169dcbe`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169de9b`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169dedd`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e294`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e354`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169db96`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169dcbe`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169de9b`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169dedd`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e294`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169e354`
+- `mso40uiWin32Client!__imp_?CrBtnFace@@YAKPEBU_msoceo@@@Z` at `0x18169dbed`
+- `mso40uiWin32Client!__imp_?CrBtnFace@@YAKPEBU_msoceo@@@Z` at `0x18169de01`
+- `mso40uiWin32Client!__imp_?CrBtnFace@@YAKPEBU_msoceo@@@Z` at `0x18169de3a`
+- `mso40uiWin32Client!__imp_?CrBtnFace@@YAKPEBU_msoceo@@@Z` at `0x18169dbed`
+- `mso40uiWin32Client!__imp_?CrBtnFace@@YAKPEBU_msoceo@@@Z` at `0x18169de01`
+- `mso40uiWin32Client!__imp_?CrBtnFace@@YAKPEBU_msoceo@@@Z` at `0x18169de3a`
+- `mso40uiWin32Client!__imp_?MsoDrawThemedDropDown@Theme@Mso@@YAXPEAUHDC__@@PEBUtagRECT@@1HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169dd72`
+- `mso40uiWin32Client!__imp_?MsoDrawThemedDropDown@Theme@Mso@@YAXPEAUHDC__@@PEBUtagRECT@@1HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x18169dd72`
+- `mso40uiWin32Client!__imp_?CbvFillRect@@YAXPEAUHDC__@@PEBUtagRECT@@K@Z` at `0x18169de12`
+- `mso40uiWin32Client!__imp_?CbvFillRect@@YAXPEAUHDC__@@PEBUtagRECT@@K@Z` at `0x18169de4b`
+- `mso40uiWin32Client!__imp_?CbvFillRect@@YAXPEAUHDC__@@PEBUtagRECT@@K@Z` at `0x18169de12`
+- `mso40uiWin32Client!__imp_?CbvFillRect@@YAXPEAUHDC__@@PEBUtagRECT@@K@Z` at `0x18169de4b`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169dbb3`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169dbc2`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169dbce`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169dbf5`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169de2b`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169dbb3`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169dbc2`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169dbce`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169dbf5`
+- `mso40uiWin32Client!__imp_?Settings@UIColor@Mso@@YAPEAUMSOSG@@XZ` at `0x18169de2b`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169db85`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169dca7`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169de8b`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169deec`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169e284`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169e367`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169e4d0`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169db85`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169dca7`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169de8b`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169deec`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169e284`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169e367`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x18169e4d0`
+- `mso40uiWin32Client!__imp_?MsoThemeFActive@@YAHXZ` at `0x18169e4c2`
+- `mso40uiWin32Client!__imp_?MsoThemeFActive@@YAHXZ` at `0x18169e4c2`
+- `mso40uiWin32Client!__imp_?CpxCbvGet@@YAHW4MSOCBVCPX@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@_N@Z` at `0x18169dfdf`
+- `mso40uiWin32Client!__imp_?CpxCbvGet@@YAHW4MSOCBVCPX@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@_N@Z` at `0x18169dfdf`
+- `mso40uiWin32Client!__imp_MsoDrawOneBorder` at `0x18169dbe3`
+- `mso40uiWin32Client!__imp_MsoDrawOneBorder` at `0x18169dc0a`
+- `mso40uiWin32Client!__imp_MsoDrawOneBorder` at `0x18169dbe3`
+- `mso40uiWin32Client!__imp_MsoDrawOneBorder` at `0x18169dc0a`
+- `mso40uiWin32Client!__imp_?CrBtnHighlight@@YAKPEBU_msoceo@@@Z` at `0x18169dba5`
+- `mso40uiWin32Client!__imp_?CrBtnHighlight@@YAKPEBU_msoceo@@@Z` at `0x18169dba5`
+- `Mso30Win32Client!__imp_?MsoFRtlUI@@YAHXZ` at `0x18169d9f5`
+- `Mso30Win32Client!__imp_?MsoFRtlUI@@YAHXZ` at `0x18169d9f5`
+- `Mso30Win32Client!__imp_?MsoPwchStripWtz@@YAPEA_WPEA_WH@Z` at `0x18169e0c9`
+- `Mso30Win32Client!__imp_?MsoPwchStripWtz@@YAPEA_WPEA_WH@Z` at `0x18169e0c9`
+- `Mso20Win32Client!__imp_?MsoGetSystemScaleFactor@Mso@@YA?AV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@XZ` at `0x18169deab`
+- `Mso20Win32Client!__imp_?MsoGetSystemScaleFactor@Mso@@YA?AV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@XZ` at `0x18169e031`
+- `Mso20Win32Client!__imp_?MsoGetSystemScaleFactor@Mso@@YA?AV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@XZ` at `0x18169e1c3`
+- `Mso20Win32Client!__imp_?MsoGetSystemScaleFactor@Mso@@YA?AV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@XZ` at `0x18169deab`
+- `Mso20Win32Client!__imp_?MsoGetSystemScaleFactor@Mso@@YA?AV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@XZ` at `0x18169e031`
+- `Mso20Win32Client!__imp_?MsoGetSystemScaleFactor@Mso@@YA?AV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@XZ` at `0x18169e1c3`
+- `Mso20Win32Client!__imp_?MsoScaleForDPI@@YAHH@Z` at `0x18169e131`
+- `Mso20Win32Client!__imp_?MsoScaleForDPI@@YAHH@Z` at `0x18169e131`
+- `USER32!GetUpdateRect` at `0x18169db31`
+- `USER32!GetUpdateRect` at `0x18169db31`
+- `USER32!SetRect` at `0x18169dd1e`
+- `USER32!SetRect` at `0x18169dd1e`
+- `USER32!DrawFocusRect` at `0x18169e550`
+- `USER32!DrawFocusRect` at `0x18169e550`
+- `USER32!GetWindowLongPtrA` at `0x18169da07`
+- `USER32!GetWindowLongPtrA` at `0x18169da07`
+- `USER32!InflateRect` at `0x18169dc8a`
+- `USER32!InflateRect` at `0x18169df7f`
+- `USER32!InflateRect` at `0x18169e01f`
+- `USER32!InflateRect` at `0x18169e542`
+- `USER32!InflateRect` at `0x18169dc8a`
+- `USER32!InflateRect` at `0x18169df7f`
+- `USER32!InflateRect` at `0x18169e01f`
+- `USER32!InflateRect` at `0x18169e542`
+- `USER32!OffsetRect` at `0x18169df6f`
+- `USER32!OffsetRect` at `0x18169df6f`
+
+## pseudocode
+
+```c
+
+```
