@@ -1,0 +1,237 @@
+# xxxUpdatePerUserAccessPackSettings
+
+- ea: `0x14009b280`
+- end: `0x14009c751`
+- name: `xxxUpdatePerUserAccessPackSettings`
+- size: `5329`
+- prototype: `__int64 __fastcall(int)`
+- caller_count: `0`
+- callee_count: `15`
+- tags: `registry_config, installer_update`
+
+## callees
+
+- `0x14007b930`
+- `0x14007df80`
+- `0x14009acc0`
+- `0x14009ad60`
+- `0x14009ae40`
+- `0x14009aeb0`
+- `0x14009b280`
+- `0x14009cfc0`
+- `0x14009d3c0`
+- `0x14009d5a0`
+- `0x14009dac0`
+- `0x14009db80`
+- `0x1401bb850`
+- `0x1401bc210`
+- `0x1402388e0`
+
+## import_xrefs
+
+- `ntoskrnl!ZwQueryValueKey` at `0x14009c002`
+- `ntoskrnl!ZwQueryValueKey` at `0x14009c002`
+- `ntoskrnl!ZwClose` at `0x14009c033`
+- `ntoskrnl!ZwClose` at `0x14009c084`
+- `ntoskrnl!ZwClose` at `0x14009c4e0`
+- `ntoskrnl!ZwClose` at `0x14009c033`
+- `ntoskrnl!ZwClose` at `0x14009c084`
+- `ntoskrnl!ZwClose` at `0x14009c4e0`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b34a`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b3b7`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b429`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b49d`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b517`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b59d`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b61f`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b699`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b905`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bab5`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bb6e`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bbff`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bdb5`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009be4d`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bf29`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b34a`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b3b7`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b429`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b49d`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b517`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b59d`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b61f`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b699`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009b905`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bab5`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bb6e`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bbff`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bdb5`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009be4d`
+- `ntoskrnl!RtlUnicodeStringToInteger` at `0x14009bf29`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b331`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b39e`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b410`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b482`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b4fc`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b582`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b604`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b67e`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b8e8`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009ba9d`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bb56`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bbe7`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bd9a`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009be32`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bf0e`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bfd3`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b331`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b39e`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b410`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b482`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b4fc`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b582`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b604`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b67e`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009b8e8`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009ba9d`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bb56`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bbe7`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bd9a`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009be32`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bf0e`
+- `ntoskrnl!RtlInitUnicodeString` at `0x14009bfd3`
+- `WIN32K!W32GetUserSessionState` at `0x14009b2bb`
+- `WIN32K!W32GetUserSessionState` at `0x14009b6bd`
+- `WIN32K!W32GetUserSessionState` at `0x14009b6d3`
+- `WIN32K!W32GetUserSessionState` at `0x14009b703`
+- `WIN32K!W32GetUserSessionState` at `0x14009b716`
+- `WIN32K!W32GetUserSessionState` at `0x14009b731`
+- `WIN32K!W32GetUserSessionState` at `0x14009b74d`
+- `WIN32K!W32GetUserSessionState` at `0x14009b762`
+- `WIN32K!W32GetUserSessionState` at `0x14009b77e`
+- `WIN32K!W32GetUserSessionState` at `0x14009b794`
+- `WIN32K!W32GetUserSessionState` at `0x14009b7af`
+- `WIN32K!W32GetUserSessionState` at `0x14009b7c2`
+- `WIN32K!W32GetUserSessionState` at `0x14009b7e0`
+- `WIN32K!W32GetUserSessionState` at `0x14009b7f3`
+- `WIN32K!W32GetUserSessionState` at `0x14009b811`
+- `WIN32K!W32GetUserSessionState` at `0x14009b825`
+- `WIN32K!W32GetUserSessionState` at `0x14009b83f`
+- `WIN32K!W32GetUserSessionState` at `0x14009b85d`
+- `WIN32K!W32GetUserSessionState` at `0x14009b871`
+- `WIN32K!W32GetUserSessionState` at `0x14009b890`
+- `WIN32K!W32GetUserSessionState` at `0x14009b911`
+- `WIN32K!W32GetUserSessionState` at `0x14009bacc`
+- `WIN32K!W32GetUserSessionState` at `0x14009bae0`
+- `WIN32K!W32GetUserSessionState` at `0x14009baf8`
+- `WIN32K!W32GetUserSessionState` at `0x14009bb7a`
+- `WIN32K!W32GetUserSessionState` at `0x14009bc0b`
+- `WIN32K!W32GetUserSessionState` at `0x14009bcb2`
+- `WIN32K!W32GetUserSessionState` at `0x14009bcc1`
+- `WIN32K!W32GetUserSessionState` at `0x14009bce0`
+- `WIN32K!W32GetUserSessionState` at `0x14009bd04`
+- `WIN32K!W32GetUserSessionState` at `0x14009bd23`
+- `WIN32K!W32GetUserSessionState` at `0x14009bd35`
+- `WIN32K!W32GetUserSessionState` at `0x14009bdc1`
+- `WIN32K!W32GetUserSessionState` at `0x14009be59`
+- `WIN32K!W32GetUserSessionState` at `0x14009be85`
+- `WIN32K!W32GetUserSessionState` at `0x14009bf35`
+- `WIN32K!W32GetUserSessionState` at `0x14009bf6e`
+- `WIN32K!W32GetUserSessionState` at `0x14009c12b`
+- `WIN32K!W32GetUserSessionState` at `0x14009c15c`
+- `WIN32K!W32GetUserSessionState` at `0x14009c17a`
+- `WIN32K!W32GetUserSessionState` at `0x14009c198`
+- `WIN32K!W32GetUserSessionState` at `0x14009c1ac`
+- `WIN32K!W32GetUserSessionState` at `0x14009c1d2`
+- `WIN32K!W32GetUserSessionState` at `0x14009c1f3`
+- `WIN32K!W32GetUserSessionState` at `0x14009c2ac`
+- `WIN32K!W32GetUserSessionState` at `0x14009c2c1`
+- `WIN32K!W32GetUserSessionState` at `0x14009c2e3`
+- `WIN32K!W32GetUserSessionState` at `0x14009c2f8`
+- `WIN32K!W32GetUserSessionState` at `0x14009c313`
+- `WIN32K!W32GetUserSessionState` at `0x14009c337`
+- `WIN32K!W32GetUserSessionState` at `0x14009c34a`
+- `WIN32K!W32GetUserSessionState` at `0x14009c35f`
+- `WIN32K!W32GetUserSessionState` at `0x14009c386`
+- `WIN32K!W32GetUserSessionState` at `0x14009c39b`
+- `WIN32K!W32GetUserSessionState` at `0x14009c3bb`
+- `WIN32K!W32GetUserSessionState` at `0x14009c3d0`
+- `WIN32K!W32GetUserSessionState` at `0x14009c3f0`
+- `WIN32K!W32GetUserSessionState` at `0x14009c408`
+- `WIN32K!W32GetUserSessionState` at `0x14009c424`
+- `WIN32K!W32GetUserSessionState` at `0x14009c443`
+- `WIN32K!W32GetUserSessionState` at `0x14009c45b`
+- `WIN32K!W32GetUserSessionState` at `0x14009c47b`
+- `WIN32K!W32GetUserSessionState` at `0x14009c490`
+- `WIN32K!W32GetUserSessionState` at `0x14009c528`
+- `WIN32K!W32GetUserSessionState` at `0x14009c547`
+- `WIN32K!W32GetUserSessionState` at `0x14009c565`
+- `WIN32K!W32GetUserSessionState` at `0x14009c59a`
+- `WIN32K!W32GetUserSessionState` at `0x14009c5b1`
+- `WIN32K!W32GetUserSessionState` at `0x14009c5df`
+- `WIN32K!W32GetUserSessionState` at `0x14009c609`
+- `WIN32K!W32GetUserSessionState` at `0x14009c640`
+- `WIN32K!W32GetUserSessionState` at `0x14009c683`
+- `WIN32K!W32GetUserSessionState` at `0x14009c69c`
+- `WIN32K!W32GetUserSessionState` at `0x14009c6b5`
+- `WIN32K!W32GetUserSessionState` at `0x14009c6cc`
+- `WIN32K!W32GetUserSessionState` at `0x14009c6df`
+- `WIN32K!W32GetUserSessionState` at `0x14009c6fc`
+- `WIN32K!W32GetUserSessionState` at `0x14009c714`
+- `WIN32K!W32GetUserSessionState` at `0x14009b2bb`
+- `WIN32K!W32GetUserSessionState` at `0x14009b6bd`
+- `WIN32K!W32GetUserSessionState` at `0x14009b6d3`
+- `WIN32K!W32GetUserSessionState` at `0x14009b703`
+- `WIN32K!W32GetUserSessionState` at `0x14009b716`
+- `WIN32K!W32GetUserSessionState` at `0x14009b731`
+- `WIN32K!W32GetUserSessionState` at `0x14009b74d`
+- `WIN32K!W32GetUserSessionState` at `0x14009b762`
+- `WIN32K!W32GetUserSessionState` at `0x14009b77e`
+- `WIN32K!W32GetUserSessionState` at `0x14009b794`
+- `WIN32K!W32GetUserSessionState` at `0x14009b7af`
+- `WIN32K!W32GetUserSessionState` at `0x14009b7c2`
+- `WIN32K!W32GetUserSessionState` at `0x14009b7e0`
+- `WIN32K!W32GetUserSessionState` at `0x14009b7f3`
+- `WIN32K!W32GetUserSessionState` at `0x14009b811`
+- `WIN32K!W32GetUserSessionState` at `0x14009b825`
+- `WIN32K!W32GetUserSessionState` at `0x14009b83f`
+- `WIN32K!W32GetUserSessionState` at `0x14009b85d`
+- `WIN32K!W32GetUserSessionState` at `0x14009b871`
+- `WIN32K!W32GetUserSessionState` at `0x14009b890`
+- `WIN32K!W32GetUserSessionState` at `0x14009b911`
+- `WIN32K!W32GetUserSessionState` at `0x14009bacc`
+- `WIN32K!W32GetUserSessionState` at `0x14009bae0`
+- `WIN32K!W32GetUserSessionState` at `0x14009baf8`
+- `WIN32K!W32GetUserSessionState` at `0x14009bb7a`
+- `WIN32K!W32GetUserSessionState` at `0x14009bc0b`
+- `WIN32K!W32GetUserSessionState` at `0x14009bcb2`
+- `WIN32K!W32GetUserSessionState` at `0x14009bcc1`
+- `WIN32K!W32GetUserSessionState` at `0x14009bce0`
+- `WIN32K!W32GetUserSessionState` at `0x14009bd04`
+- `WIN32K!W32GetUserSessionState` at `0x14009bd23`
+- `WIN32K!W32GetUserSessionState` at `0x14009bd35`
+- `WIN32K!W32GetUserSessionState` at `0x14009bdc1`
+- `WIN32K!W32GetUserSessionState` at `0x14009be59`
+- `WIN32K!W32GetUserSessionState` at `0x14009be85`
+- `WIN32K!W32GetUserSessionState` at `0x14009bf35`
+- `WIN32K!W32GetUserSessionState` at `0x14009bf6e`
+- `WIN32K!W32GetUserSessionState` at `0x14009c12b`
+- `WIN32K!W32GetUserSessionState` at `0x14009c15c`
+- `WIN32K!W32GetUserSessionState` at `0x14009c17a`
+- `WIN32K!W32GetUserSessionState` at `0x14009c198`
+- `WIN32K!W32GetUserSessionState` at `0x14009c1ac`
+- `WIN32K!W32GetUserSessionState` at `0x14009c1d2`
+- `WIN32K!W32GetUserSessionState` at `0x14009c1f3`
+- `WIN32K!W32GetUserSessionState` at `0x14009c2ac`
+- `WIN32K!W32GetUserSessionState` at `0x14009c2c1`
+- `WIN32K!W32GetUserSessionState` at `0x14009c2e3`
+- `WIN32K!W32GetUserSessionState` at `0x14009c2f8`
+- `WIN32K!W32GetUserSessionState` at `0x14009c313`
+- `WIN32K!W32GetUserSessionState` at `0x14009c337`
+- `WIN32K!W32GetUserSessionState` at `0x14009c34a`
+- `WIN32K!W32GetUserSessionState` at `0x14009c35f`
+
+## pseudocode
+
+```c
+
+```

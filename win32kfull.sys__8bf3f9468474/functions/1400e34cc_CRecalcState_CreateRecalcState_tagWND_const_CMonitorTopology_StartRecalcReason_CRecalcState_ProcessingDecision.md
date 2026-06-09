@@ -1,0 +1,752 @@
+# CRecalcState::CreateRecalcState(tagWND const *,CMonitorTopology *,StartRecalcReason,CRecalcState::ProcessingDecision *)
+
+- ea: `0x1400e34cc`
+- end: `0x1400e3c7d`
+- name: `?CreateRecalcState@CRecalcState@@SAPEAV1@PEBUtagWND@@PEAVCMonitorTopology@@W4StartRecalcReason@@PEAW4ProcessingDecision@1@@Z`
+- size: `1969`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `10`
+- tags: ``
+
+## callers
+
+- `0x1400e2818`
+- `0x1402de88c`
+
+## callees
+
+- `0x14001aac0`
+- `0x14001d918`
+- `0x1400b71ac`
+- `0x1400e09e4`
+- `0x1400e34cc`
+- `0x1400e3dec`
+- `0x1400e3efc`
+- `0x1400e4aec`
+- `0x1400e51a8`
+- `0x140177ee8`
+
+## import_xrefs
+
+- `ntoskrnl!PsGetThreadId` at `0x1400e36a8`
+- `ntoskrnl!PsGetThreadId` at `0x1400e37ef`
+- `ntoskrnl!PsGetThreadId` at `0x1400e389b`
+- `ntoskrnl!PsGetThreadId` at `0x1400e395c`
+- `ntoskrnl!PsGetThreadId` at `0x1400e39ff`
+- `ntoskrnl!PsGetThreadId` at `0x1400e3a5e`
+- `ntoskrnl!PsGetThreadId` at `0x1400e3ace`
+- `ntoskrnl!PsGetThreadId` at `0x1400e3b8d`
+- `ntoskrnl!PsGetThreadId` at `0x1400e36a8`
+- `ntoskrnl!PsGetThreadId` at `0x1400e37ef`
+- `ntoskrnl!PsGetThreadId` at `0x1400e389b`
+- `ntoskrnl!PsGetThreadId` at `0x1400e395c`
+- `ntoskrnl!PsGetThreadId` at `0x1400e39ff`
+- `ntoskrnl!PsGetThreadId` at `0x1400e3a5e`
+- `ntoskrnl!PsGetThreadId` at `0x1400e3ace`
+- `ntoskrnl!PsGetThreadId` at `0x1400e3b8d`
+- `win32kbase!Win32AllocPoolZInit` at `0x1400e3506`
+- `win32kbase!Win32AllocPoolZInit` at `0x1400e3506`
+- `WIN32K!W32GetUserSessionState` at `0x1400e36ba`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3801`
+- `WIN32K!W32GetUserSessionState` at `0x1400e38ad`
+- `WIN32K!W32GetUserSessionState` at `0x1400e396e`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3a11`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3a70`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3ae0`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3b9f`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3c2f`
+- `WIN32K!W32GetUserSessionState` at `0x1400e36ba`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3801`
+- `WIN32K!W32GetUserSessionState` at `0x1400e38ad`
+- `WIN32K!W32GetUserSessionState` at `0x1400e396e`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3a11`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3a70`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3ae0`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3b9f`
+- `WIN32K!W32GetUserSessionState` at `0x1400e3c2f`
+
+## pseudocode
+
+```c
+CRecalcState *__fastcall CRecalcState::CreateRecalcState(
+        const struct tagWND *a1,
+        __int64 a2,
+        unsigned int a3,
+        _DWORD *a4)
+{
+  __int64 v8; // rax
+  __int64 v9; // rdx
+  __int64 v10; // r8
+  __int64 v11; // r9
+  CRecalcState *v12; // rbp
+  char v13; // si
+  char v14; // r14
+  bool v16; // si
+  bool v17; // bl
+  __int16 WindowDpiLastNotify; // ax
+  __int64 v19; // rdx
+  char v20; // si
+  char v21; // bp
+  __int64 v22; // rdx
+  __int64 v23; // rcx
+  __int64 v24; // r8
+  __int64 v25; // r9
+  int v26; // edx
+  int v27; // r8d
+  __int64 v28; // r9
+  char v29; // r15
+  char v30; // r14
+  char v31; // si
+  char v32; // r14
+  unsigned __int8 v33; // al
+  __int64 v34; // rdi
+  char v35; // bl
+  __int64 v36; // rdx
+  __int64 v37; // rcx
+  __int64 v38; // r8
+  __int64 v39; // r9
+  __int64 v40; // rax
+  int v41; // r8d
+  int v42; // edx
+  __int64 v43; // rdx
+  __int64 v44; // rcx
+  __int64 v45; // r8
+  __int64 v46; // r9
+  __int64 v47; // rdx
+  __int64 v48; // rcx
+  __int64 v49; // r8
+  __int64 v50; // r9
+  int v51; // edx
+  int v52; // r8d
+  __int64 v53; // r9
+  __int64 v54; // rdx
+  __int64 v55; // rcx
+  __int64 v56; // r8
+  __int64 v57; // r9
+  unsigned __int8 v58; // al
+  __int64 v59; // rdi
+  char v60; // bl
+  __int64 v61; // rdx
+  __int64 v62; // rcx
+  __int64 v63; // r8
+  __int64 v64; // r9
+  __int64 UserSessionState; // rax
+  int v66; // r8d
+  int v67; // edx
+  __int64 v68; // rdx
+  __int64 v69; // rcx
+  __int64 v70; // r8
+  __int64 v71; // r9
+  char v72; // si
+  char v73; // r14
+  unsigned __int8 v74; // al
+  __int64 v75; // rdi
+  char v76; // bl
+  __int64 v77; // rdx
+  __int64 v78; // rcx
+  __int64 v79; // r8
+  __int64 v80; // r9
+  __int64 v81; // rax
+  int v82; // r8d
+  int v83; // edx
+  __int64 v84; // rax
+  int v85; // r8d
+  int v86; // edx
+  __int16 v87; // [rsp+30h] [rbp-68h]
+  __int16 v88; // [rsp+30h] [rbp-68h]
+  __int64 v89; // [rsp+40h] [rbp-58h]
+  __int64 v90; // [rsp+40h] [rbp-58h]
+  char ThreadId; // [rsp+48h] [rbp-50h]
+  char v92; // [rsp+48h] [rbp-50h]
+
+  *a4 = 0;
+  if ( !(unsigned int)((__int64 (*)(void))IsImmersiveBand)() )
+    goto LABEL_2;
+  if ( !MonitorFromRect(*((_QWORD *)a1 + 5) + 88LL, 0) )
+  {
+    v20 = 1;
+    if ( WPP_GLOBAL_Control == (struct MOVESIZEDATA *)&WPP_GLOBAL_Control
+      || (*((_DWORD *)WPP_GLOBAL_Control + 11) & 0x40) == 0
+      || (v21 = 1, *((_BYTE *)WPP_GLOBAL_Control + 41) < 5u) )
+    {
+      v21 = 0;
+    }
+    if ( *(unsigned int **)&WPP_RECORDER_INITIALIZED == &WPP_RECORDER_INITIALIZED
+      || !*((_WORD *)WPP_GLOBAL_Control + 36) )
+    {
+      v20 = 0;
+    }
+    if ( !v21 && !v20 )
+      return 0;
+    ThreadId = (unsigned __int8)PsGetThreadId(**((PETHREAD **)a1 + 2));
+    v89 = *(_QWORD *)a1;
+    v28 = *(_QWORD *)(W32GetUserSessionState(v44, v43, v45, v46) + 69152);
+    v87 = 21;
+LABEL_34:
+    LOBYTE(v27) = v20;
+    LOBYTE(v26) = v21;
+    WPP_RECORDER_AND_TRACE_SF_qD(
+      *((_QWORD *)WPP_GLOBAL_Control + 3),
+      v26,
+      v27,
+      v28,
+      5,
+      7,
+      v87,
+      (__int64)WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids,
+      v89,
+      ThreadId);
+    return 0;
+  }
+  WindowDpiLastNotify = GetWindowDpiLastNotify(a1);
+  if ( *(_WORD *)(*(_QWORD *)(v19 + 40) + 60LL) == WindowDpiLastNotify )
+  {
+    v20 = 1;
+    if ( WPP_GLOBAL_Control == (struct MOVESIZEDATA *)&WPP_GLOBAL_Control
+      || (*((_DWORD *)WPP_GLOBAL_Control + 11) & 0x40) == 0
+      || (v21 = 1, *((_BYTE *)WPP_GLOBAL_Control + 41) < 5u) )
+    {
+      v21 = 0;
+    }
+    if ( *(unsigned int **)&WPP_RECORDER_INITIALIZED == &WPP_RECORDER_INITIALIZED
+      || !*((_WORD *)WPP_GLOBAL_Control + 36) )
+    {
+      v20 = 0;
+    }
+    if ( !v21 && !v20 )
+      return 0;
+    ThreadId = (unsigned __int8)PsGetThreadId(**((PETHREAD **)a1 + 2));
+    v89 = *(_QWORD *)a1;
+    v28 = *(_QWORD *)(W32GetUserSessionState(v23, v22, v24, v25) + 69152);
+    v87 = 22;
+    goto LABEL_34;
+  }
+LABEL_2:
+  v8 = Win32AllocPoolZInit(80, 1920168789);
+  if ( v8 )
+  {
+    v12 = (CRecalcState *)CRecalcState::CRecalcState(v8, a1, a2, a3);
+    if ( v12 )
+    {
+      if ( (unsigned int)IsImmersiveBand(a1) )
+      {
+        if ( WPP_GLOBAL_Control == (struct MOVESIZEDATA *)&WPP_GLOBAL_Control
+          || (*((_DWORD *)WPP_GLOBAL_Control + 11) & 0x40) == 0
+          || (v29 = 1, *((_BYTE *)WPP_GLOBAL_Control + 41) < 5u) )
+        {
+          v29 = 0;
+        }
+        if ( *(unsigned int **)&WPP_RECORDER_INITIALIZED == &WPP_RECORDER_INITIALIZED
+          || (v30 = 1, !*((_WORD *)WPP_GLOBAL_Control + 36)) )
+        {
+          v30 = 0;
+        }
+        if ( !v29 && !v30 )
+          goto LABEL_42;
+        v92 = (unsigned __int8)PsGetThreadId(**((PETHREAD **)a1 + 2));
+        v90 = *(_QWORD *)a1;
+        v53 = *(_QWORD *)(W32GetUserSessionState(v48, v47, v49, v50) + 69152);
+        v88 = 24;
+      }
+      else if ( a3 == 4 )
+      {
+        if ( WPP_GLOBAL_Control == (struct MOVESIZEDATA *)&WPP_GLOBAL_Control
+          || (*((_DWORD *)WPP_GLOBAL_Control + 11) & 0x40) == 0
+          || (v29 = 1, *((_BYTE *)WPP_GLOBAL_Control + 41) < 5u) )
+        {
+          v29 = 0;
+        }
+        if ( *(unsigned int **)&WPP_RECORDER_INITIALIZED == &WPP_RECORDER_INITIALIZED
+          || (v30 = 1, !*((_WORD *)WPP_GLOBAL_Control + 36)) )
+        {
+          v30 = 0;
+        }
+        if ( !v29 && !v30 )
+          goto LABEL_42;
+        v92 = (unsigned __int8)PsGetThreadId(**((PETHREAD **)a1 + 2));
+        v90 = *(_QWORD *)a1;
+        v53 = *(_QWORD *)(W32GetUserSessionState(v55, v54, v56, v57) + 69152);
+        v88 = 25;
+      }
+      else
+      {
+        if ( (unsigned __int8)CRecalcState::ShouldDeferRecalc(v12, a1, 0) )
+        {
+          v13 = 1;
+          if ( WPP_GLOBAL_Control == (struct MOVESIZEDATA *)&WPP_GLOBAL_Control
+            || (*((_DWORD *)WPP_GLOBAL_Control + 11) & 0x40) == 0
+            || (v14 = 1, *((_BYTE *)WPP_GLOBAL_Control + 41) < 5u) )
+          {
+            v14 = 0;
+          }
+          if ( *(unsigned int **)&WPP_RECORDER_INITIALIZED == &WPP_RECORDER_INITIALIZED
+            || !*((_WORD *)WPP_GLOBAL_Control + 36) )
+          {
+            v13 = 0;
+          }
+          if ( v14 || v13 )
+          {
+            v58 = (unsigned __int8)PsGetThreadId(**((PETHREAD **)a1 + 2));
+            v59 = *(_QWORD *)a1;
+            v60 = v58;
+            UserSessionState = W32GetUserSessionState(v62, v61, v63, v64);
+            LOBYTE(v66) = v13;
+            LOBYTE(v67) = v14;
+            WPP_RECORDER_AND_TRACE_SF_qD(
+              *((_QWORD *)WPP_GLOBAL_Control + 3),
+              v67,
+              v66,
+              *(_QWORD *)(UserSessionState + 69152),
+              5,
+              7,
+              26,
+              (__int64)WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids,
+              v59,
+              v60);
+          }
+          *a4 = 2;
+          return v12;
+        }
+        if ( !CRecalcState::NeedsMigration(v12, a1) )
+        {
+          if ( CRecalcState::ShouldStoreAfterProcessing(v12, a1) )
+          {
+            v72 = 1;
+            if ( WPP_GLOBAL_Control == (struct MOVESIZEDATA *)&WPP_GLOBAL_Control
+              || (*((_DWORD *)WPP_GLOBAL_Control + 11) & 0x40) == 0
+              || (v73 = 1, *((_BYTE *)WPP_GLOBAL_Control + 41) < 5u) )
+            {
+              v73 = 0;
+            }
+            if ( *(unsigned int **)&WPP_RECORDER_INITIALIZED == &WPP_RECORDER_INITIALIZED
+              || !*((_WORD *)WPP_GLOBAL_Control + 36) )
+            {
+              v72 = 0;
+            }
+            if ( v73 || v72 )
+            {
+              v74 = (unsigned __int8)PsGetThreadId(**((PETHREAD **)a1 + 2));
+              v75 = *(_QWORD *)a1;
+              v76 = v74;
+              v81 = W32GetUserSessionState(v78, v77, v79, v80);
+              LOBYTE(v82) = v72;
+              LOBYTE(v83) = v73;
+              WPP_RECORDER_AND_TRACE_SF_qD(
+                *((_QWORD *)WPP_GLOBAL_Control + 3),
+                v83,
+                v82,
+                *(_QWORD *)(v81 + 69152),
+                5,
+                7,
+                28,
+                (__int64)WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids,
+                v75,
+                v76);
+            }
+            *a4 = 3;
+          }
+          else
+          {
+            v31 = 1;
+            if ( WPP_GLOBAL_Control == (struct MOVESIZEDATA *)&WPP_GLOBAL_Control
+              || (*((_DWORD *)WPP_GLOBAL_Control + 11) & 0x40) == 0
+              || (v32 = 1, *((_BYTE *)WPP_GLOBAL_Control + 41) < 5u) )
+            {
+              v32 = 0;
+            }
+            if ( *(unsigned int **)&WPP_RECORDER_INITIALIZED == &WPP_RECORDER_INITIALIZED
+              || !*((_WORD *)WPP_GLOBAL_Control + 36) )
+            {
+              v31 = 0;
+            }
+            if ( v32 || v31 )
+            {
+              v33 = (unsigned __int8)PsGetThreadId(**((PETHREAD **)a1 + 2));
+              v34 = *(_QWORD *)a1;
+              v35 = v33;
+              v40 = W32GetUserSessionState(v37, v36, v38, v39);
+              LOBYTE(v41) = v31;
+              LOBYTE(v42) = v32;
+              WPP_RECORDER_AND_TRACE_SF_qD(
+                *((_QWORD *)WPP_GLOBAL_Control + 3),
+                v42,
+                v41,
+                *(_QWORD *)(v40 + 69152),
+                5,
+                7,
+                29,
+                (__int64)WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids,
+                v34,
+                v35);
+            }
+          }
+          return v12;
+        }
+        if ( WPP_GLOBAL_Control == (struct MOVESIZEDATA *)&WPP_GLOBAL_Control
+          || (*((_DWORD *)WPP_GLOBAL_Control + 11) & 0x40) == 0
+          || (v29 = 1, *((_BYTE *)WPP_GLOBAL_Control + 41) < 5u) )
+        {
+          v29 = 0;
+        }
+        if ( *(unsigned int **)&WPP_RECORDER_INITIALIZED == &WPP_RECORDER_INITIALIZED
+          || (v30 = 1, !*((_WORD *)WPP_GLOBAL_Control + 36)) )
+        {
+          v30 = 0;
+        }
+        if ( !v29 && !v30 )
+        {
+LABEL_42:
+          *a4 = 1;
+          return v12;
+        }
+        v92 = (unsigned __int8)PsGetThreadId(**((PETHREAD **)a1 + 2));
+        v90 = *(_QWORD *)a1;
+        v53 = *(_QWORD *)(W32GetUserSessionState(v69, v68, v70, v71) + 69152);
+        v88 = 27;
+      }
+      LOBYTE(v52) = v30;
+      LOBYTE(v51) = v29;
+      WPP_RECORDER_AND_TRACE_SF_qD(
+        *((_QWORD *)WPP_GLOBAL_Control + 3),
+        v51,
+        v52,
+        v53,
+        5,
+        7,
+        v88,
+        (__int64)WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids,
+        v90,
+        v92);
+      goto LABEL_42;
+    }
+  }
+  v16 = WPP_GLOBAL_Control != (struct MOVESIZEDATA *)&WPP_GLOBAL_Control
+     && (*((_DWORD *)WPP_GLOBAL_Control + 11) & 0x40) != 0
+     && *((_BYTE *)WPP_GLOBAL_Control + 41) >= 2u;
+  v17 = *(_QWORD *)&WPP_RECORDER_INITIALIZED != (_QWORD)&WPP_RECORDER_INITIALIZED;
+  if ( v16 || *(unsigned int **)&WPP_RECORDER_INITIALIZED != &WPP_RECORDER_INITIALIZED )
+  {
+    v84 = W32GetUserSessionState(WPP_GLOBAL_Control, v9, v10, v11);
+    LOBYTE(v85) = v17;
+    LOBYTE(v86) = v16;
+    WPP_RECORDER_AND_TRACE_SF_(
+      *((_QWORD *)WPP_GLOBAL_Control + 3),
+      v86,
+      v85,
+      *(_QWORD *)(v84 + 69152),
+      2,
+      7,
+      23,
+      (__int64)WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids);
+  }
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1400e34cc  push    rbx
+0x1400e34ce  push    rbp
+0x1400e34cf  push    rsi
+0x1400e34d0  push    rdi
+0x1400e34d1  push    r12
+0x1400e34d3  push    r13
+0x1400e34d5  push    r14
+0x1400e34d7  push    r15
+0x1400e34d9  sub     rsp, 58h
+0x1400e34dd  xor     r13d, r13d
+0x1400e34e0  mov     r12, r9
+0x1400e34e3  mov     [r9], r13d
+0x1400e34e6  mov     ebx, r8d
+0x1400e34e9  mov     rsi, rdx
+0x1400e34ec  mov     rdi, rcx
+0x1400e34ef  call    IsImmersiveBand
+0x1400e34f4  test    eax, eax
+0x1400e34f6  jnz     loc_1400E3616
+0x1400e34fc  mov     edx, 72737355h
+0x1400e3501  mov     ecx, 50h ; 'P'
+0x1400e3506  call    cs:__imp_Win32AllocPoolZInit
+0x1400e350d  nop     dword ptr [rax+rax+00h]
+0x1400e3512  test    rax, rax
+0x1400e3515  jz      loc_1400E35D6
+0x1400e351b  mov     r9d, ebx
+0x1400e351e  mov     r8, rsi
+0x1400e3521  mov     rdx, rdi
+0x1400e3524  mov     rcx, rax
+0x1400e3527  call    ??0CRecalcState@@AEAA@PEBUtagWND@@PEAVCMonitorTopology@@W4StartRecalcReason@@@Z; CRecalcState::CRecalcState(tagWND const *,CMonitorTopology *,StartRecalcReason)
+0x1400e352c  mov     rbp, rax
+0x1400e352f  test    rax, rax
+0x1400e3532  jz      loc_1400E35D6
+0x1400e3538  mov     rcx, rdi
+0x1400e353b  call    IsImmersiveBand
+0x1400e3540  test    eax, eax
+0x1400e3542  jnz     loc_1400E38FF
+0x1400e3548  cmp     ebx, 4
+0x1400e354b  jz      loc_1400E39A2
+0x1400e3551  xor     r8d, r8d
+0x1400e3554  mov     rdx, rdi
+0x1400e3557  mov     rcx, rbp
+0x1400e355a  call    ?ShouldDeferRecalc@CRecalcState@@QEBA_NPEBUtagWND@@W4ShouldDeferRecalcOption@1@@Z; CRecalcState::ShouldDeferRecalc(tagWND const *,CRecalcState::ShouldDeferRecalcOption)
+0x1400e355f  test    al, al
+0x1400e3561  jz      loc_1400E3711
+0x1400e3567  mov     rcx, cs:WPP_GLOBAL_Control
+0x1400e356e  lea     rax, WPP_GLOBAL_Control
+0x1400e3575  mov     esi, 1
+0x1400e357a  cmp     rcx, rax
+0x1400e357d  jz      short loc_1400E358A
+0x1400e357f  mov     eax, [rcx+2Ch]
+0x1400e3582  test    al, 40h
+0x1400e3584  jnz     loc_1400E3A45
+0x1400e358a  mov     r14b, r13b
+0x1400e358d  lea     rax, WPP_RECORDER_INITIALIZED
+0x1400e3594  cmp     cs:WPP_RECORDER_INITIALIZED, rax
+0x1400e359b  jz      short loc_1400E35A4
+0x1400e359d  cmp     [rcx+48h], r13w
+0x1400e35a2  jnz     short loc_1400E35A7
+0x1400e35a4  mov     sil, r13b
+0x1400e35a7  test    r14b, r14b
+0x1400e35aa  jnz     loc_1400E3A57
+0x1400e35b0  test    sil, sil
+0x1400e35b3  jnz     loc_1400E3A57
+0x1400e35b9  mov     dword ptr [r12], 2
+0x1400e35c1  mov     rax, rbp
+0x1400e35c4  add     rsp, 58h
+0x1400e35c8  pop     r15
+0x1400e35ca  pop     r14
+0x1400e35cc  pop     r13
+0x1400e35ce  pop     r12
+0x1400e35d0  pop     rdi
+0x1400e35d1  pop     rsi
+0x1400e35d2  pop     rbp
+0x1400e35d3  pop     rbx
+0x1400e35d4  retn
+0x1400e35d6  mov     rcx, cs:WPP_GLOBAL_Control
+0x1400e35dd  lea     rax, WPP_GLOBAL_Control
+0x1400e35e4  cmp     rcx, rax
+0x1400e35e7  jnz     loc_1400E3C10
+0x1400e35ed  mov     sil, r13b
+0x1400e35f0  lea     rax, WPP_RECORDER_INITIALIZED
+0x1400e35f7  cmp     cs:WPP_RECORDER_INITIALIZED, rax
+0x1400e35fe  setnz   bl
+0x1400e3601  test    sil, sil
+0x1400e3604  jnz     loc_1400E3C2F
+0x1400e360a  test    bl, bl
+0x1400e360c  jnz     loc_1400E3C2F
+0x1400e3612  xor     eax, eax
+0x1400e3614  jmp     short loc_1400E35C4
+0x1400e3616  mov     r8, [rdi+28h]
+0x1400e361a  xor     edx, edx
+0x1400e361c  lea     rcx, [r8+58h]
+0x1400e3620  mov     r8d, [r8+120h]
+0x1400e3627  call    _MonitorFromRect
+0x1400e362c  mov     rdx, rax
+0x1400e362f  test    rax, rax
+0x1400e3632  jz      loc_1400E3858
+0x1400e3638  mov     rcx, rdi
+0x1400e363b  call    GetWindowDpiLastNotify
+0x1400e3640  mov     rcx, [rdx+28h]
+0x1400e3644  cmp     [rcx+3Ch], ax
+0x1400e3648  jnz     loc_1400E34FC
+0x1400e364e  mov     rcx, cs:WPP_GLOBAL_Control
+0x1400e3655  lea     rax, WPP_GLOBAL_Control
+0x1400e365c  mov     esi, 1
+0x1400e3661  cmp     rcx, rax
+0x1400e3664  jz      short loc_1400E3676
+0x1400e3666  mov     eax, [rcx+2Ch]
+0x1400e3669  test    al, 40h
+0x1400e366b  jz      short loc_1400E3676
+0x1400e366d  cmp     byte ptr [rcx+29h], 5
+0x1400e3671  mov     bpl, sil
+0x1400e3674  jnb     short loc_1400E3679
+0x1400e3676  mov     bpl, r13b
+0x1400e3679  lea     rax, WPP_RECORDER_INITIALIZED
+0x1400e3680  cmp     cs:WPP_RECORDER_INITIALIZED, rax
+0x1400e3687  jz      short loc_1400E3690
+0x1400e3689  cmp     [rcx+48h], r13w
+0x1400e368e  jnz     short loc_1400E3693
+0x1400e3690  mov     sil, r13b
+0x1400e3693  test    bpl, bpl
+0x1400e3696  jnz     short loc_1400E36A1
+0x1400e3698  test    sil, sil
+0x1400e369b  jz      loc_1400E3612
+0x1400e36a1  mov     rcx, [rdi+10h]
+0x1400e36a5  mov     rcx, [rcx]; Thread
+0x1400e36a8  call    cs:__imp_PsGetThreadId
+0x1400e36af  nop     dword ptr [rax+rax+00h]
+0x1400e36b4  mov     rdi, [rdi]
+0x1400e36b7  mov     rbx, rax
+0x1400e36ba  call    cs:__imp_W32GetUserSessionState
+0x1400e36c1  nop     dword ptr [rax+rax+00h]
+0x1400e36c6  mov     dword ptr [rsp+98h+var_50], ebx
+0x1400e36ca  mov     [rsp+98h+var_58], rdi
+0x1400e36cf  mov     r9, [rax+10E20h]
+0x1400e36d6  lea     rax, WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids
+0x1400e36dd  mov     [rsp+98h+var_60], rax
+0x1400e36e2  mov     [rsp+98h+var_68], 16h
+0x1400e36e9  mov     rcx, cs:WPP_GLOBAL_Control
+0x1400e36f0  mov     r8b, sil
+0x1400e36f3  mov     [rsp+98h+var_70], 7
+0x1400e36fb  mov     dl, bpl
+0x1400e36fe  mov     [rsp+98h+var_78], 5
+0x1400e3703  mov     rcx, [rcx+18h]
+0x1400e3707  call    WPP_RECORDER_AND_TRACE_SF_qD
+0x1400e370c  jmp     loc_1400E3612
+0x1400e3711  mov     rdx, rdi; struct tagWND *
+0x1400e3714  mov     rcx, rbp; this
+0x1400e3717  call    ?NeedsMigration@CRecalcState@@AEBA_NPEBUtagWND@@@Z; CRecalcState::NeedsMigration(tagWND const *)
+0x1400e371c  test    al, al
+0x1400e371e  jz      short loc_1400E3787
+0x1400e3720  mov     rcx, cs:WPP_GLOBAL_Control
+0x1400e3727  lea     rax, WPP_GLOBAL_Control
+0x1400e372e  mov     esi, 1
+0x1400e3733  cmp     rcx, rax
+0x1400e3736  jnz     short loc_1400E3769
+0x1400e3738  mov     r15b, r13b
+0x1400e373b  lea     rax, WPP_RECORDER_INITIALIZED
+0x1400e3742  cmp     cs:WPP_RECORDER_INITIALIZED, rax
+0x1400e3749  jnz     short loc_1400E377B
+0x1400e374b  mov     r14b, r13b
+0x1400e374e  test    r15b, r15b
+0x1400e3751  jnz     loc_1400E3AC7
+0x1400e3757  test    r14b, r14b
+0x1400e375a  jnz     loc_1400E3AC7
+0x1400e3760  mov     [r12], esi
+0x1400e3764  jmp     loc_1400E35C1
+0x1400e3769  mov     eax, [rcx+2Ch]
+0x1400e376c  test    al, 40h
+0x1400e376e  jz      short loc_1400E3738
+0x1400e3770  cmp     byte ptr [rcx+29h], 5
+0x1400e3774  mov     r15b, sil
+0x1400e3777  jnb     short loc_1400E373B
+0x1400e3779  jmp     short loc_1400E3738
+0x1400e377b  mov     r14b, sil
+0x1400e377e  cmp     [rcx+48h], r13w
+0x1400e3783  jnz     short loc_1400E374E
+0x1400e3785  jmp     short loc_1400E374B
+0x1400e3787  mov     rdx, rdi; struct tagWND *
+0x1400e378a  mov     rcx, rbp; this
+0x1400e378d  call    ?ShouldStoreAfterProcessing@CRecalcState@@QEBA_NPEBUtagWND@@@Z; CRecalcState::ShouldStoreAfterProcessing(tagWND const *)
+0x1400e3792  test    al, al
+0x1400e3794  jnz     loc_1400E3B37
+0x1400e379a  mov     rcx, cs:WPP_GLOBAL_Control
+0x1400e37a1  lea     rax, WPP_GLOBAL_Control
+0x1400e37a8  mov     esi, 1
+0x1400e37ad  cmp     rcx, rax
+0x1400e37b0  jz      short loc_1400E37BD
+0x1400e37b2  mov     eax, [rcx+2Ch]
+0x1400e37b5  test    al, 40h
+0x1400e37b7  jnz     loc_1400E3BFE
+0x1400e37bd  mov     r14b, r13b
+0x1400e37c0  lea     rax, WPP_RECORDER_INITIALIZED
+0x1400e37c7  cmp     cs:WPP_RECORDER_INITIALIZED, rax
+0x1400e37ce  jz      short loc_1400E37D7
+0x1400e37d0  cmp     [rcx+48h], r13w
+0x1400e37d5  jnz     short loc_1400E37DA
+0x1400e37d7  mov     sil, r13b
+0x1400e37da  test    r14b, r14b
+0x1400e37dd  jnz     short loc_1400E37E8
+0x1400e37df  test    sil, sil
+0x1400e37e2  jz      loc_1400E35C1
+0x1400e37e8  mov     rcx, [rdi+10h]
+0x1400e37ec  mov     rcx, [rcx]; Thread
+0x1400e37ef  call    cs:__imp_PsGetThreadId
+0x1400e37f6  nop     dword ptr [rax+rax+00h]
+0x1400e37fb  mov     rdi, [rdi]
+0x1400e37fe  mov     rbx, rax
+0x1400e3801  call    cs:__imp_W32GetUserSessionState
+0x1400e3808  nop     dword ptr [rax+rax+00h]
+0x1400e380d  mov     rcx, cs:WPP_GLOBAL_Control
+0x1400e3814  mov     r8b, sil
+0x1400e3817  mov     dword ptr [rsp+98h+var_50], ebx
+0x1400e381b  mov     dl, r14b
+0x1400e381e  mov     [rsp+98h+var_58], rdi
+0x1400e3823  mov     r9, [rax+10E20h]
+0x1400e382a  lea     rax, WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids
+0x1400e3831  mov     rcx, [rcx+18h]
+0x1400e3835  mov     [rsp+98h+var_60], rax
+0x1400e383a  mov     [rsp+98h+var_68], 1Dh
+0x1400e3841  mov     [rsp+98h+var_70], 7
+0x1400e3849  mov     [rsp+98h+var_78], 5
+0x1400e384e  call    WPP_RECORDER_AND_TRACE_SF_qD
+0x1400e3853  jmp     loc_1400E35C1
+0x1400e3858  mov     rcx, cs:WPP_GLOBAL_Control
+0x1400e385f  lea     rax, WPP_GLOBAL_Control
+0x1400e3866  mov     esi, 1
+0x1400e386b  cmp     rcx, rax
+0x1400e386e  jnz     short loc_1400E38E1
+0x1400e3870  mov     bpl, r13b
+0x1400e3873  lea     rax, WPP_RECORDER_INITIALIZED
+0x1400e387a  cmp     cs:WPP_RECORDER_INITIALIZED, rax
+0x1400e3881  jnz     short loc_1400E38F6
+0x1400e3883  mov     sil, r13b
+0x1400e3886  test    bpl, bpl
+0x1400e3889  jnz     short loc_1400E3894
+0x1400e388b  test    sil, sil
+0x1400e388e  jz      loc_1400E3612
+0x1400e3894  mov     rcx, [rdi+10h]
+0x1400e3898  mov     rcx, [rcx]; Thread
+0x1400e389b  call    cs:__imp_PsGetThreadId
+0x1400e38a2  nop     dword ptr [rax+rax+00h]
+0x1400e38a7  mov     rdi, [rdi]
+0x1400e38aa  mov     rbx, rax
+0x1400e38ad  call    cs:__imp_W32GetUserSessionState
+0x1400e38b4  nop     dword ptr [rax+rax+00h]
+0x1400e38b9  mov     dword ptr [rsp+98h+var_50], ebx
+0x1400e38bd  mov     [rsp+98h+var_58], rdi
+0x1400e38c2  mov     r9, [rax+10E20h]
+0x1400e38c9  lea     rax, WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids
+0x1400e38d0  mov     [rsp+98h+var_60], rax
+0x1400e38d5  mov     [rsp+98h+var_68], 15h
+0x1400e38dc  jmp     loc_1400E36E9
+0x1400e38e1  mov     eax, [rcx+2Ch]
+0x1400e38e4  test    al, 40h
+0x1400e38e6  jz      short loc_1400E3870
+0x1400e38e8  cmp     byte ptr [rcx+29h], 5
+0x1400e38ec  mov     bpl, sil
+0x1400e38ef  jnb     short loc_1400E3873
+0x1400e38f1  jmp     loc_1400E3870
+0x1400e38f6  cmp     [rcx+48h], r13w
+0x1400e38fb  jnz     short loc_1400E3886
+0x1400e38fd  jmp     short loc_1400E3883
+0x1400e38ff  mov     rcx, cs:WPP_GLOBAL_Control
+0x1400e3906  lea     rax, WPP_GLOBAL_Control
+0x1400e390d  mov     esi, 1
+0x1400e3912  cmp     rcx, rax
+0x1400e3915  jz      short loc_1400E3927
+0x1400e3917  mov     eax, [rcx+2Ch]
+0x1400e391a  test    al, 40h
+0x1400e391c  jz      short loc_1400E3927
+0x1400e391e  cmp     byte ptr [rcx+29h], 5
+0x1400e3922  mov     r15b, sil
+0x1400e3925  jnb     short loc_1400E392A
+0x1400e3927  mov     r15b, r13b
+0x1400e392a  lea     rax, WPP_RECORDER_INITIALIZED
+0x1400e3931  cmp     cs:WPP_RECORDER_INITIALIZED, rax
+0x1400e3938  jz      short loc_1400E3944
+0x1400e393a  mov     r14b, sil
+0x1400e393d  cmp     [rcx+48h], r13w
+0x1400e3942  jnz     short loc_1400E3947
+0x1400e3944  mov     r14b, r13b
+0x1400e3947  test    r15b, r15b
+0x1400e394a  jnz     short loc_1400E3955
+0x1400e394c  test    r14b, r14b
+0x1400e394f  jz      loc_1400E3760
+0x1400e3955  mov     rcx, [rdi+10h]
+0x1400e3959  mov     rcx, [rcx]; Thread
+0x1400e395c  call    cs:__imp_PsGetThreadId
+0x1400e3963  nop     dword ptr [rax+rax+00h]
+0x1400e3968  mov     rdi, [rdi]
+0x1400e396b  mov     rbx, rax
+0x1400e396e  call    cs:__imp_W32GetUserSessionState
+0x1400e3975  nop     dword ptr [rax+rax+00h]
+0x1400e397a  mov     dword ptr [rsp+98h+var_50], ebx
+0x1400e397e  mov     [rsp+98h+var_58], rdi
+0x1400e3983  mov     r9, [rax+10E20h]
+0x1400e398a  lea     rax, WPP_9002a0cd975736f7dd1bd7e045542d26_Traceguids
+0x1400e3991  mov     [rsp+98h+var_60], rax
+0x1400e3996  mov     [rsp+98h+var_68], 18h
+  ... truncated ...
+```
