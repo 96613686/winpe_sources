@@ -1,0 +1,2445 @@
+[
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "BampThrottlingWorkerDispatchActionItem",
+    "ea": "0x14000f460",
+    "function_file": "functions/14000f460_BampThrottlingWorkerDispatchActionItem.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeQueryUnbiasedInterruptTime",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!RtlRbRemoveNode"
+    ],
+    "matched_strings": [],
+    "name": "BampThrottlingWorkerDispatchActionItem",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 8265,
+    "size": 3138,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "BampThrottlingRegisterProcessEx",
+    "ea": "0x140012530",
+    "function_file": "functions/140012530_BampThrottlingRegisterProcessEx.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExUnsubscribeWnfStateChange",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!PsGetProcessSessionId",
+      "ntoskrnl!PsProcessType",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryInformationProcess"
+    ],
+    "matched_strings": [],
+    "name": "BampThrottlingRegisterProcessEx",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 2732,
+    "size": 1766,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BampQueryProcessIdentifier",
+    "ea": "0x1400143ec",
+    "function_file": "functions/1400143ec_BampQueryProcessIdentifier.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsReferencePrimaryToken",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!SeQuerySecurityAttributesToken",
+      "ntoskrnl!ZwQueryInformationProcess"
+    ],
+    "matched_strings": [],
+    "name": "BampQueryProcessIdentifier",
+    "prototype": "",
+    "rank_score": 2426,
+    "size": 595,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SepSddlSecurityDescriptorFromSDDLString",
+    "ea": "0x14000dd04",
+    "function_file": "functions/14000dd04_SepSddlSecurityDescriptorFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAbsoluteToSelfRelativeSD",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "name": "SepSddlSecurityDescriptorFromSDDLString",
+    "prototype": "",
+    "rank_score": 2068,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BamUserSettingsEnumerateSettingsForUser",
+    "ea": "0x14000c9f4",
+    "function_file": "functions/14000c9f4_BamUserSettingsEnumerateSettingsForUser.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwEnumerateValueKey",
+      "ntoskrnl!ZwQueryKey"
+    ],
+    "matched_strings": [],
+    "name": "BamUserSettingsEnumerateSettingsForUser",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 2028,
+    "size": 601,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BampReadGlobalThrottlingSettings",
+    "ea": "0x14000baac",
+    "function_file": "functions/14000baac_BampReadGlobalThrottlingSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BampReadGlobalThrottlingSettings",
+    "prototype": "__int64(void)",
+    "rank_score": 2022,
+    "size": 954,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BampCommitThrottledProcessStateChange",
+    "ea": "0x140013d40",
+    "function_file": "functions/140013d40_BampCommitThrottledProcessStateChange.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampCommitThrottledProcessStateChange",
+    "prototype": "void __fastcall(char *P)",
+    "rank_score": 1645,
+    "size": 1071,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BampUpdateThrottledProcessPolicy",
+    "ea": "0x140015100",
+    "function_file": "functions/140015100_BampUpdateThrottledProcessPolicy.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampUpdateThrottledProcessPolicy",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1641,
+    "size": 658,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "BampProcessWindowReportApply",
+    "ea": "0x14001202c",
+    "function_file": "functions/14001202c_BampProcessWindowReportApply.md",
+    "matched_imports": [
+      "ntoskrnl!ObReferenceObjectByHandleWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsGetProcessSessionId",
+      "ntoskrnl!PsLookupProcessByProcessId",
+      "ntoskrnl!PsProcessType"
+    ],
+    "matched_strings": [],
+    "name": "BampProcessWindowReportApply",
+    "prototype": "__int64 __fastcall(unsigned int *, __int64, __int64)",
+    "rank_score": 1337,
+    "size": 819,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PpRegStateUpdateStackCreationSettings",
+    "ea": "0x14000e390",
+    "function_file": "functions/14000e390_PpRegStateUpdateStackCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!SeCaptureSecurityDescriptor",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PpRegStateUpdateStackCreationSettings",
+    "prototype": "",
+    "rank_score": 1287,
+    "size": 372,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "BampThrottledProcessWakeNotificationCallback",
+    "ea": "0x140014d20",
+    "function_file": "functions/140014d20_BampThrottledProcessWakeNotificationCallback.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ZwQueryInformationProcess"
+    ],
+    "matched_strings": [],
+    "name": "BampThrottledProcessWakeNotificationCallback",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, PVOID P)",
+    "rank_score": 1228,
+    "size": 615,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SepSddlGetAclForString",
+    "ea": "0x14000d7c8",
+    "function_file": "functions/14000d7c8_SepSddlGetAclForString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsnicmp",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetAclForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1, int)",
+    "rank_score": 1223,
+    "size": 948,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "BamUserSettingsEnumerateUsers",
+    "ea": "0x14000cc54",
+    "function_file": "functions/14000cc54_BamUserSettingsEnumerateUsers.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwEnumerateKey",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "BamUserSettingsEnumerateUsers",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1049,
+    "size": 443,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BampReadProcessThrottlingSettings",
+    "ea": "0x140011c68",
+    "function_file": "functions/140011c68_BampReadProcessThrottlingSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BampReadProcessThrottlingSettings",
+    "prototype": "",
+    "rank_score": 1048,
+    "size": 512,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "BampUpdateThrottledProcessState",
+    "ea": "0x1400153a0",
+    "function_file": "functions/1400153a0_BampUpdateThrottledProcessState.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampUpdateThrottledProcessState",
+    "prototype": "NTSTATUS __fastcall(__int64, _DWORD *, _DWORD *, __int64, _DWORD *)",
+    "rank_score": 1023,
+    "size": 608,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BampThrottlingProcessPropagateStateToChildren",
+    "ea": "0x140011660",
+    "function_file": "functions/140011660_BampThrottlingProcessPropagateStateToChildren.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampThrottlingProcessPropagateStateToChildren",
+    "prototype": "",
+    "rank_score": 1020,
+    "size": 701,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "BampUpdateThrottledProcessSiufState",
+    "ea": "0x1400100b0",
+    "function_file": "functions/1400100b0_BampUpdateThrottledProcessSiufState.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeQueryUnbiasedInterruptTime"
+    ],
+    "matched_strings": [],
+    "name": "BampUpdateThrottledProcessSiufState",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1018,
+    "size": 345,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BampQueryProcessUserSidString",
+    "ea": "0x140012368",
+    "function_file": "functions/140012368_BampQueryProcessUserSidString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsReferencePrimaryToken",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BampQueryProcessUserSidString",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1015,
+    "size": 171,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WdmlibInit",
+    "ea": "0x14000d198",
+    "function_file": "functions/14000d198_WdmlibInit.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoCreateDeviceSecure",
+      "IoValidateDeviceIoControlAccess"
+    ],
+    "name": "WdmlibInit",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 883,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PiRegStateReadStackCreationSettingsFromKey",
+    "ea": "0x14000e03c",
+    "function_file": "functions/14000e03c_PiRegStateReadStackCreationSettingsFromKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeCaptureSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PiRegStateReadStackCreationSettingsFromKey",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 879,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BamUserSettingsInitialize",
+    "ea": "0x14000ce58",
+    "function_file": "functions/14000ce58_BamUserSettingsInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "BamUserSettingsInitialize",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 848,
+    "size": 361,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "BampUserSettingsOpenUserKey",
+    "ea": "0x140011b44",
+    "function_file": "functions/140011b44_BampUserSettingsOpenUserKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateKey",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BampUserSettingsOpenUserKey",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, __int16, void **)",
+    "rank_score": 827,
+    "size": 283,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "BampTempBoostCreateOrExtend",
+    "ea": "0x14000c18c",
+    "function_file": "functions/14000c18c_BampTempBoostCreateOrExtend.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeQueryUnbiasedInterruptTime",
+      "ntoskrnl!RtlRbInsertNodeEx"
+    ],
+    "matched_strings": [],
+    "name": "BampTempBoostCreateOrExtend",
+    "prototype": "",
+    "rank_score": 826,
+    "size": 592,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BampApplyThrottledProcessPolicy",
+    "ea": "0x140013740",
+    "function_file": "functions/140013740_BampApplyThrottledProcessPolicy.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "BampApplyThrottledProcessPolicy",
+    "prototype": "NTSTATUS __fastcall(__int64, int *)",
+    "rank_score": 824,
+    "size": 1331,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "ea": "0x14000e50c",
+    "function_file": "functions/14000e50c_SeUtilSecurityInfoFromSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlGetGroupSecurityDescriptor",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlGetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 824,
+    "size": 249,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SepSddlAddAceToAcl",
+    "ea": "0x14000d5f0",
+    "function_file": "functions/14000d5f0_SepSddlAddAceToAcl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlAddAceToAcl",
+    "prototype": "__int64 __fastcall(int, int, int, int, ACCESS_MASK AccessMask, int, PSID Sid)",
+    "rank_score": 815,
+    "size": 235,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BampTempBoostCheck",
+    "ea": "0x14000c0c8",
+    "function_file": "functions/14000c0c8_BampTempBoostCheck.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampTempBoostCheck",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 189,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "BampThrottlingShutdownModule",
+    "ea": "0x14000c83c",
+    "function_file": "functions/14000c83c_BampThrottlingShutdownModule.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "BampThrottlingShutdownModule",
+    "prototype": "__int64(void)",
+    "rank_score": 810,
+    "size": 329,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CmRegUtilUcValueSetUcString",
+    "ea": "0x14000e918",
+    "function_file": "functions/14000e918_CmRegUtilUcValueSetUcString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilUcValueSetUcString",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, PUNICODE_STRING ValueName)",
+    "rank_score": 807,
+    "size": 307,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateTlgAggregateSession",
+    "ea": "0x14000ec90",
+    "function_file": "functions/14000ec90_CreateTlgAggregateSession.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExAllocateTimer",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "CreateTlgAggregateSession",
+    "prototype": "",
+    "rank_score": 806,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FlushLookUpTableBucket",
+    "ea": "0x1400023b4",
+    "function_file": "functions/1400023b4_FlushLookUpTableBucket.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquireSpinLockExclusive",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleaseSpinLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "FlushLookUpTableBucket",
+    "prototype": "",
+    "rank_score": 806,
+    "size": 279,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BampThrottlingProcessEnumerateWindowlessDescendants",
+    "ea": "0x140011560",
+    "function_file": "functions/140011560_BampThrottlingProcessEnumerateWindowlessDescendants.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampThrottlingProcessEnumerateWindowlessDescendants",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 805,
+    "size": 249,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IopDevObjApplyPostCreationSettings",
+    "ea": "0x14000d434",
+    "function_file": "functions/14000d434_IopDevObjApplyPostCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeviceObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "IopDevObjApplyPostCreationSettings",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 734,
+    "size": 239,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IoDevObjCreateDeviceSecure",
+    "ea": "0x14000d2a0",
+    "function_file": "functions/14000d2a0_IoDevObjCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "IoDevObjCreateDeviceSecure",
+    "prototype": "__int64 __usercall@<rax>(PDRIVER_OBJECT DriverObject@<rcx>, int, char, __int64, __int64, PDEVICE_OBJECT)",
+    "rank_score": 658,
+    "size": 395,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BamUserSettingsCheckOrigin",
+    "ea": "0x140015878",
+    "function_file": "functions/140015878_BamUserSettingsCheckOrigin.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateFile",
+      "ntoskrnl!ZwQueryVolumeInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "BamUserSettingsCheckOrigin",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, bool *, _BYTE *)",
+    "rank_score": 657,
+    "size": 488,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 1,
+    "demangled": "BampStartThrottledProcessInformation",
+    "ea": "0x14001474c",
+    "function_file": "functions/14001474c_BampStartThrottledProcessInformation.md",
+    "matched_imports": [
+      "ntoskrnl!ExSubscribeWnfStateChange",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsLookupProcessByProcessId"
+    ],
+    "matched_strings": [],
+    "name": "BampStartThrottledProcessInformation",
+    "prototype": "",
+    "rank_score": 652,
+    "size": 1472,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "BampProcessWindowStateUpdate",
+    "ea": "0x140012eec",
+    "function_file": "functions/140012eec_BampProcessWindowStateUpdate.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetProcessServerSilo",
+      "ntoskrnl!PsGetProcessSessionId",
+      "ntoskrnl!PsGetServerSiloServiceSessionId"
+    ],
+    "matched_strings": [],
+    "name": "BampProcessWindowStateUpdate",
+    "prototype": "",
+    "rank_score": 635,
+    "size": 415,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "BamDriverUnload",
+    "ea": "0x14000b260",
+    "function_file": "functions/14000b260_BamDriverUnload.md",
+    "matched_imports": [
+      "ntoskrnl!ExUnregisterExtension",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!PoUnregisterPowerSettingCallback"
+    ],
+    "matched_strings": [],
+    "name": "BamDriverUnload",
+    "prototype": "",
+    "rank_score": 627,
+    "size": 137,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "BamControlDispatch",
+    "ea": "0x140011ee0",
+    "function_file": "functions/140011ee0_BamControlDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IoThreadToProcess",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "BamControlDispatch",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 625,
+    "size": 232,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "BampDereferenceThrottledProcessInformation",
+    "ea": "0x1400107f0",
+    "function_file": "functions/1400107f0_BampDereferenceThrottledProcessInformation.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExUnsubscribeWnfStateChange",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "BampDereferenceThrottledProcessInformation",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 614,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BampThrottlingInitializeModule",
+    "ea": "0x14000c474",
+    "function_file": "functions/14000c474_BampThrottlingInitializeModule.md",
+    "matched_imports": [
+      "ntoskrnl!ExUuidCreate",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "BampThrottlingInitializeModule",
+    "prototype": "__int64(void)",
+    "rank_score": 605,
+    "size": 310,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "BampIsProcessModern",
+    "ea": "0x1400014f8",
+    "function_file": "functions/1400014f8_BampIsProcessModern.md",
+    "matched_imports": [
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsQueryProcessAttributesByToken",
+      "ntoskrnl!PsReferencePrimaryToken"
+    ],
+    "matched_strings": [],
+    "name": "BampIsProcessModern",
+    "prototype": "",
+    "rank_score": 601,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SepSddlGetSidForString",
+    "ea": "0x14000db84",
+    "function_file": "functions/14000db84_SepSddlGetSidForString.md",
+    "matched_imports": [
+      "ntoskrnl!IoIsWdmVersionAvailable",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetSidForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1)",
+    "rank_score": 513,
+    "size": 177,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "PiRegStateOpenClassKey",
+    "ea": "0x14000dea8",
+    "function_file": "functions/14000dea8_PiRegStateOpenClassKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!_snwprintf"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class"
+    ],
+    "name": "PiRegStateOpenClassKey",
+    "prototype": "",
+    "rank_score": 459,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140016078",
+    "function_file": "functions/140016078_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!PoRegisterPowerSettingCallback",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 446,
+    "size": 364,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "BampThrottlingSetUserSettingsProcessInfo",
+    "ea": "0x14000c6f0",
+    "function_file": "functions/14000c6f0_BampThrottlingSetUserSettingsProcessInfo.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BampThrottlingSetUserSettingsProcessInfo",
+    "prototype": "",
+    "rank_score": 438,
+    "size": 323,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "BamUserSettingsAddOrUpdate",
+    "ea": "0x140015608",
+    "function_file": "functions/140015608_BamUserSettingsAddOrUpdate.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BamUserSettingsAddOrUpdate",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, struct _UNICODE_STRING *, int, int, char)",
+    "rank_score": 433,
+    "size": 615,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "BampQueuePolicyActionItemAfterStateChange",
+    "ea": "0x140010990",
+    "function_file": "functions/140010990_BampQueuePolicyActionItemAfterStateChange.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampQueuePolicyActionItemAfterStateChange",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 427,
+    "size": 140,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SeSddlSecurityDescriptorFromSDDL",
+    "ea": "0x14000d52c",
+    "function_file": "functions/14000d52c_SeSddlSecurityDescriptorFromSDDL.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SeSddlSecurityDescriptorFromSDDL",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 188,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PpRegStateReadCreateClassCreationSettings",
+    "ea": "0x14000e224",
+    "function_file": "functions/14000e224_PpRegStateReadCreateClassCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PpRegStateReadCreateClassCreationSettings",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 356,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "TlgUnregisterAggregateProvider",
+    "ea": "0x14000f0c0",
+    "function_file": "functions/14000f0c0_TlgUnregisterAggregateProvider.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx"
+    ],
+    "matched_strings": [],
+    "name": "TlgUnregisterAggregateProvider",
+    "prototype": "__int64(void)",
+    "rank_score": 418,
+    "size": 217,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x1400161ec",
+    "function_file": "functions/1400161ec_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BampInitializeUsersCallback",
+    "ea": "0x14000d040",
+    "function_file": "functions/14000d040_BampInitializeUsersCallback.md",
+    "matched_imports": [
+      "ntoskrnl!ZwDeleteKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BampInitializeUsersCallback",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 415,
+    "size": 335,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "BampQueueThrottledProcessActionItem",
+    "ea": "0x140011160",
+    "function_file": "functions/140011160_BampQueueThrottledProcessActionItem.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!KeQueryUnbiasedInterruptTime"
+    ],
+    "matched_strings": [],
+    "name": "BampQueueThrottledProcessActionItem",
+    "prototype": "NTSTATUS __fastcall(__int64, int, unsigned int, int)",
+    "rank_score": 414,
+    "size": 570,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "BampAcquireThrottledProcessLock",
+    "ea": "0x1400107a0",
+    "function_file": "functions/1400107a0_BampAcquireThrottledProcessLock.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampAcquireThrottledProcessLock",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 413,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "BampAcquireThrottlingWorkerLock",
+    "ea": "0x1400113a0",
+    "function_file": "functions/1400113a0_BampAcquireThrottlingWorkerLock.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampAcquireThrottlingWorkerLock",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "BampReleaseThrottledProcessLock",
+    "ea": "0x140010760",
+    "function_file": "functions/140010760_BampReleaseThrottledProcessLock.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampReleaseThrottledProcessLock",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 413,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14000b4d4",
+    "function_file": "functions/14000b4d4_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "__int64(void)",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TlgAggregateInternalProviderCallback(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *)",
+    "ea": "0x140013670",
+    "function_file": "functions/140013670_TlgAggregateInternalProviderCallback_GUID_const_ulong_uchar_unsigned_int64_unsigned_int64_EVENT_FILTER_DESCRIP.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExTryAcquirePushLockExclusiveEx"
+    ],
+    "matched_strings": [],
+    "name": "?TlgAggregateInternalProviderCallback@@YAXPEBU_GUID@@KE_K1PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z",
+    "prototype": "void __fastcall(const struct _GUID *, unsigned int, unsigned __int8, unsigned __int64, unsigned __int64, struct _EVENT_FILTER_DESCRIPTOR *, void *)",
+    "rank_score": 412,
+    "size": 100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "BampReleaseThrottlingWorkerLock",
+    "ea": "0x1400113f0",
+    "function_file": "functions/1400113f0_BampReleaseThrottlingWorkerLock.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampReleaseThrottlingWorkerLock",
+    "prototype": "",
+    "rank_score": 410,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "BampAcquireThrottlingLockShared",
+    "ea": "0x1400114e4",
+    "function_file": "functions/1400114e4_BampAcquireThrottlingLockShared.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampAcquireThrottlingLockShared",
+    "prototype": "__int64(void)",
+    "rank_score": 406,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "BampReleaseThrottlingLockShared",
+    "ea": "0x1400102d4",
+    "function_file": "functions/1400102d4_BampReleaseThrottlingLockShared.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampReleaseThrottlingLockShared",
+    "prototype": "__int64(void)",
+    "rank_score": 406,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DestroyAggregateSession",
+    "ea": "0x14000edc8",
+    "function_file": "functions/14000edc8_DestroyAggregateSession.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DestroyAggregateSession",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 405,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CancelTimerCallbacksAndDeleteTimer",
+    "ea": "0x14000eb58",
+    "function_file": "functions/14000eb58_CancelTimerCallbacksAndDeleteTimer.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteTimer",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CancelTimerCallbacksAndDeleteTimer",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "BampAcquireThrottlingLockExclusive",
+    "ea": "0x140012c1c",
+    "function_file": "functions/140012c1c_BampAcquireThrottlingLockExclusive.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampAcquireThrottlingLockExclusive",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "BampReleaseThrottlingLockExclusive",
+    "ea": "0x140012c50",
+    "function_file": "functions/140012c50_BampReleaseThrottlingLockExclusive.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampReleaseThrottlingLockExclusive",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "BampAcquireTempBoostsLockExclusive",
+    "ea": "0x14000b978",
+    "function_file": "functions/14000b978_BampAcquireTempBoostsLockExclusive.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampAcquireTempBoostsLockExclusive",
+    "prototype": "",
+    "rank_score": 401,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "BampReleaseTempBoostsLockExclusive",
+    "ea": "0x14000be6c",
+    "function_file": "functions/14000be6c_BampReleaseTempBoostsLockExclusive.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BampReleaseTempBoostsLockExclusive",
+    "prototype": "",
+    "rank_score": 401,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CmRegUtilCreateUcKey",
+    "ea": "0x14000e60c",
+    "function_file": "functions/14000e60c_CmRegUtilCreateUcKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateUcKey",
+    "prototype": "",
+    "rank_score": 243,
+    "size": 164,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "BampOpenThrottlingPolicyKeyHandle",
+    "ea": "0x140011e70",
+    "function_file": "functions/140011e70_BampOpenThrottlingPolicyKeyHandle.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "BampOpenThrottlingPolicyKeyHandle",
+    "prototype": "",
+    "rank_score": 242,
+    "size": 105,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilOpenExistingWstrKey",
+    "ea": "0x14000e718",
+    "function_file": "functions/14000e718_CmRegUtilOpenExistingWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilOpenExistingWstrKey",
+    "prototype": "",
+    "rank_score": 235,
+    "size": 133,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "BampRegisterKernelExtension",
+    "ea": "0x14000b360",
+    "function_file": "functions/14000b360_BampRegisterKernelExtension.md",
+    "matched_imports": [
+      "ntoskrnl!ExRegisterExtension"
+    ],
+    "matched_strings": [],
+    "name": "BampRegisterKernelExtension",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 232,
+    "size": 167,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x14000b8c0",
+    "function_file": "functions/14000b8c0_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BamUserSettingsRemove",
+    "ea": "0x14000cfc8",
+    "function_file": "functions/14000cfc8_BamUserSettingsRemove.md",
+    "matched_imports": [
+      "ntoskrnl!ZwDeleteValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BamUserSettingsRemove",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 60,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "BampUserSettingsUpdateSequenceNumber",
+    "ea": "0x140013624",
+    "function_file": "functions/140013624_BampUserSettingsUpdateSequenceNumber.md",
+    "matched_imports": [
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BampUserSettingsUpdateSequenceNumber",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 222,
+    "size": 62,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "BamUserSettingsGet",
+    "ea": "0x140012c84",
+    "function_file": "functions/140012c84_BamUserSettingsGet.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "BamUserSettingsGet",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 461,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BampThrottlingStartModule",
+    "ea": "0x14000b008",
+    "function_file": "functions/14000b008_BampThrottlingStartModule.md",
+    "matched_imports": [
+      "ntoskrnl!PsCreateSystemThread"
+    ],
+    "matched_strings": [],
+    "name": "BampThrottlingStartModule",
+    "prototype": "__int64(void)",
+    "rank_score": 221,
+    "size": 510,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 17,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001430",
+    "function_file": "functions/140001430_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _QWORD)",
+    "rank_score": 218,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "BampUserSettingsReadEntry",
+    "ea": "0x140011a98",
+    "function_file": "functions/140011a98_BampUserSettingsReadEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BampUserSettingsReadEntry",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 216,
+    "size": 165,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x140001cd4",
+    "function_file": "functions/140001cd4_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 233,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x1400162ac",
+    "function_file": "functions/1400162ac_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x1400020d8",
+    "function_file": "functions/1400020d8_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "BampTempBoostRemoveCallback",
+    "ea": "0x14000c3f0",
+    "function_file": "functions/14000c3f0_BampTempBoostRemoveCallback.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetProcessSessionId"
+    ],
+    "matched_strings": [],
+    "name": "BampTempBoostRemoveCallback",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 107,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SepSddlDaclFromSDDLString",
+    "ea": "0x14000d6e4",
+    "function_file": "functions/14000d6e4_SepSddlDaclFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlDaclFromSDDLString",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 221,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x14000b410",
+    "function_file": "functions/14000b410_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 187,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "BampInsertThrottlingActionItem",
+    "ea": "0x140011430",
+    "function_file": "functions/140011430_BampInsertThrottlingActionItem.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "BampInsertThrottlingActionItem",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 209,
+    "size": 171,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BampGetThrottledProcessExemptionState",
+    "ea": "0x140010e20",
+    "function_file": "functions/140010e20_BampGetThrottledProcessExemptionState.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "BampGetThrottledProcessExemptionState",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 479,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BampIsPerMechanismExemptionActive",
+    "ea": "0x140010cb0",
+    "function_file": "functions/140010cb0_BampIsPerMechanismExemptionActive.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "BampIsPerMechanismExemptionActive",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 353,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FlushEventEntryList",
+    "ea": "0x14000ee14",
+    "function_file": "functions/14000ee14_FlushEventEntryList.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "FlushEventEntryList",
+    "prototype": "__int64 __fastcall(REGHANDLE RegHandle, PCEVENT_DESCRIPTOR EventDescriptor)",
+    "rank_score": 204,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 47,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1400026d0",
+    "function_file": "functions/1400026d0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "LookUpTableFlushComplete",
+    "ea": "0x1400132ac",
+    "function_file": "functions/1400132ac_LookUpTableFlushComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LookUpTableFlushComplete",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 881,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "BampComputeThrottledProcessPolicy",
+    "ea": "0x140010a30",
+    "function_file": "functions/140010a30_BampComputeThrottledProcessPolicy.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampComputeThrottledProcessPolicy",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 619,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "BampUpdateProcessUserPresencePolicyCallback",
+    "ea": "0x14000c990",
+    "function_file": "functions/14000c990_BampUpdateProcessUserPresencePolicyCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampUpdateProcessUserPresencePolicyCallback",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 91,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140001dc4",
+    "function_file": "functions/140001dc4_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 274,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BampComputePpmPolicyFromWindowState",
+    "ea": "0x1400110d8",
+    "function_file": "functions/1400110d8_BampComputePpmPolicyFromWindowState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampComputePpmPolicyFromWindowState",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 126,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BampComputeExemptProcessPpmPolicy",
+    "ea": "0x140011010",
+    "function_file": "functions/140011010_BampComputeExemptProcessPpmPolicy.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampComputeExemptProcessPpmPolicy",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 107,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14000259c",
+    "function_file": "functions/14000259c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140016010",
+    "function_file": "functions/140016010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140002710",
+    "function_file": "functions/140002710_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x14000b820",
+    "function_file": "functions/14000b820_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BampThrottlingProcessRemoveFromTree",
+    "ea": "0x14001044c",
+    "function_file": "functions/14001044c_BampThrottlingProcessRemoveFromTree.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampThrottlingProcessRemoveFromTree",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 337,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "BampFindThrottledProcessInformation",
+    "ea": "0x140010684",
+    "function_file": "functions/140010684_BampFindThrottledProcessInformation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampFindThrottledProcessInformation",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 20,
+    "size": 200,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "memset",
+    "ea": "0x140002ac0",
+    "function_file": "functions/140002ac0_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 17,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x140001ad4",
+    "function_file": "functions/140001ad4_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 381,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14000b610",
+    "function_file": "functions/14000b610_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x140001c58",
+    "function_file": "functions/140001c58_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 118,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BampReferenceThrottledProcessInformation",
+    "ea": "0x140010880",
+    "function_file": "functions/140010880_BampReferenceThrottledProcessInformation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampReferenceThrottledProcessInformation",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 32,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ComputeFlushPeriod",
+    "ea": "0x14000ec00",
+    "function_file": "functions/14000ec00_ComputeFlushPeriod.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputeFlushPeriod",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 136,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "TlgAggregateInternalRegisteredProviderEtwCallback(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *)",
+    "ea": "0x140013230",
+    "function_file": "functions/140013230_TlgAggregateInternalRegisteredProviderEtwCallback_GUID_const_ulong_uchar_unsigned_int64_unsigned_int64_EVENT_F.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?TlgAggregateInternalRegisteredProviderEtwCallback@@YAXPEBU_GUID@@KE_K1PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z",
+    "prototype": "void __fastcall(const struct _GUID *, unsigned int, unsigned __int8, unsigned __int64, unsigned __int64, struct _EVENT_FILTER_DESCRIPTOR *, void *)",
+    "rank_score": 14,
+    "size": 115,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WdmlibIoCreateDeviceSecure",
+    "ea": "0x14000d224",
+    "function_file": "functions/14000d224_WdmlibIoCreateDeviceSecure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibIoCreateDeviceSecure",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, ULONG DeviceExtensionSize, PUNICODE_STRING DeviceName, ULONG DeviceType, ULONG DeviceCharacteristics, BOOLEAN Exclusive, PCUNICODE_STRING DefaultSDDLString, LPCGUID DeviceClassGuid, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 14,
+    "size": 114,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x14000b724",
+    "function_file": "functions/14000b724_wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BampCreateProcessCallback",
+    "ea": "0x140012420",
+    "function_file": "functions/140012420_BampCreateProcessCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampCreateProcessCallback",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "UpdateInternalStatsOnFlush",
+    "ea": "0x14000ef44",
+    "function_file": "functions/14000ef44_UpdateInternalStatsOnFlush.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateInternalStatsOnFlush",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 66,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x140001928",
+    "function_file": "functions/140001928_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x1400019f8",
+    "function_file": "functions/1400019f8_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BampProcessesWindowStateUpdate",
+    "ea": "0x140012ea0",
+    "function_file": "functions/140012ea0_BampProcessesWindowStateUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampProcessesWindowStateUpdate",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 67,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "BampRemoveThrottledProcessFromTable",
+    "ea": "0x140010308",
+    "function_file": "functions/140010308_BampRemoveThrottledProcessFromTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampRemoveThrottledProcessFromTable",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 12,
+    "size": 315,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "BampTempBoostsTreeCompareRoutine",
+    "ea": "0x14000c464",
+    "function_file": "functions/14000c464_BampTempBoostsTreeCompareRoutine.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampTempBoostsTreeCompareRoutine",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140016044",
+    "function_file": "functions/140016044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x140001edc",
+    "function_file": "functions/140001edc_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 58,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByRef<16>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByRef<16> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &)",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@U?$_tlgWrapperByVal@$00@@U?$_tlgWrapperByRef@$0BA@@@U?$_tlgWrapperArray@$00@@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@4AEBU?$_tlgWrapperByVal@$00@@AEBU?$_tlgWrapperByRef@$0BA@@@AEBU?$_tlgWrapperArray@$00@@35735735735735735735735745@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 1053,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "memmove",
+    "ea": "0x1400027c0",
+    "function_file": "functions/1400027c0_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 10,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BampCancelThrottledProcessActionItem",
+    "ea": "0x140013c7c",
+    "function_file": "functions/140013c7c_BampCancelThrottledProcessActionItem.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampCancelThrottledProcessActionItem",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 8,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WdmlibRtlInitUnicodeStringEx",
+    "ea": "0x1400022c0",
+    "function_file": "functions/1400022c0_WdmlibRtlInitUnicodeStringEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibRtlInitUnicodeStringEx",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DestinationString, PCWSTR SourceString)",
+    "rank_score": 8,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x1400018fc",
+    "function_file": "functions/1400018fc_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BampEnumerateThrottledProcesses",
+    "ea": "0x140013094",
+    "function_file": "functions/140013094_BampEnumerateThrottledProcesses.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampEnumerateThrottledProcesses",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 7,
+    "size": 393,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "Feature_UserPresenceThrottling__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x140001814",
+    "function_file": "functions/140001814_Feature_UserPresenceThrottling_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_UserPresenceThrottling__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "__int64(void)",
+    "rank_score": 7,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "BampThrottledProcessGetEffectiveState",
+    "ea": "0x140011090",
+    "function_file": "functions/140011090_BampThrottledProcessGetEffectiveState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampThrottledProcessGetEffectiveState",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CmRegUtilCreateWstrKey",
+    "ea": "0x14000e6b8",
+    "function_file": "functions/14000e6b8_CmRegUtilCreateWstrKey.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateWstrKey",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BampRemoveThrottlingActionItem",
+    "ea": "0x140011520",
+    "function_file": "functions/140011520_BampRemoveThrottlingActionItem.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BampRemoveThrottlingActionItem",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14000b5d4",
+    "function_file": "functions/14000b5d4_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14000b534",
+    "function_file": "functions/14000b534_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  }
+]

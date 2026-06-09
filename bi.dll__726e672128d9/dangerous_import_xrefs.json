@@ -1,0 +1,327 @@
+[
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000161b",
+        "from_func": "0x1800015d4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000161b",
+        "from_func": "0x1800015d4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-service-management-l1-1-0!CloseServiceHandle",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180003386",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-management-l1-1-0!CloseServiceHandle"
+      },
+      {
+        "from_ea": "0x18000338f",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-management-l1-1-0!CloseServiceHandle"
+      },
+      {
+        "from_ea": "0x180003386",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-management-l1-1-0!CloseServiceHandle"
+      },
+      {
+        "from_ea": "0x18000338f",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-management-l1-1-0!CloseServiceHandle"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-service-management-l1-1-0!OpenSCManagerW",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180003326",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-management-l1-1-0!OpenSCManagerW"
+      },
+      {
+        "from_ea": "0x180003326",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-management-l1-1-0!OpenSCManagerW"
+      },
+      {
+        "from_ea": "0x1800075d4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-service-management-l1-1-0!OpenSCManagerW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-service-management-l1-1-0!OpenServiceW",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000334b",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-management-l1-1-0!OpenServiceW"
+      },
+      {
+        "from_ea": "0x18000334b",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-management-l1-1-0!OpenServiceW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-service-private-l1-1-0!WaitServiceState",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180003370",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-private-l1-1-0!WaitServiceState"
+      },
+      {
+        "from_ea": "0x180003370",
+        "from_func": "0x180003228",
+        "from_func_name": "BipCreateRpcBinding",
+        "import": "api-ms-win-service-private-l1-1-0!WaitServiceState"
+      },
+      {
+        "from_ea": "0x1800075e8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-service-private-l1-1-0!WaitServiceState"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800014d6",
+        "from_func": "0x1800014d6",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlAllocateHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003422",
+        "from_func": "0x180003410",
+        "from_func_name": "MIDL_user_allocate",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x180007548",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlAllocateHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001750",
+        "from_func": "0x180001710",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180001750",
+        "from_func": "0x180001710",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180002862",
+        "from_func": "0x180002850",
+        "from_func_name": "MIDL_user_free",
+        "import": "ntdll!RtlFreeHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLengthSid",
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x180001acb",
+        "from_func": "0x1800019f0",
+        "from_func_name": "BiActivateInBackgroundEx",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1800020a9",
+        "from_func": "0x180002040",
+        "from_func_name": "BiCreateEvent",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1800021d9",
+        "from_func": "0x180002170",
+        "from_func_name": "BiCreateEventForPackageName",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x180002694",
+        "from_func": "0x180002630",
+        "from_func_name": "BiEnumerateWorkItemsForPackageName",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1800027a4",
+        "from_func": "0x180002740",
+        "from_func_name": "BiEnumerateWorkItemsForPackageNameEx",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x180002896",
+        "from_func": "0x180002870",
+        "from_func_name": "BiPackageChangeState",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x180001acb",
+        "from_func": "0x1800019f0",
+        "from_func_name": "BiActivateInBackgroundEx",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1800020a9",
+        "from_func": "0x180002040",
+        "from_func_name": "BiCreateEvent",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1800021d9",
+        "from_func": "0x180002170",
+        "from_func_name": "BiCreateEventForPackageName",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x180002694",
+        "from_func": "0x180002630",
+        "from_func_name": "BiEnumerateWorkItemsForPackageName",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1800027a4",
+        "from_func": "0x180002740",
+        "from_func_name": "BiEnumerateWorkItemsForPackageNameEx",
+        "import": "ntdll!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x180002896",
+        "from_func": "0x180002870",
+        "from_func_name": "BiPackageChangeState",
+        "import": "ntdll!RtlLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000176f",
+        "from_func": "0x180001710",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x18000176f",
+        "from_func": "0x180001710",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800017bc",
+        "from_func": "0x180001710",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x1800017bc",
+        "from_func": "0x180001710",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  }
+]

@@ -1,0 +1,5327 @@
+[
+  {
+    "callee_count": 46,
+    "caller_count": 2,
+    "demangled": "BfsServiceBootFilesEx2",
+    "ea": "0x140009fd4",
+    "function_file": "functions/140009fd4_BfsServiceBootFilesEx2.md",
+    "matched_imports": [
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "KERNEL32!WriteFile",
+      "SHLWAPI!PathRemoveBackslashW",
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [
+      "ServiceBootFiles MuiOnly:%c Res:%c Fonts:%c BootMgrOvw:%c BootStatOvw:%c DbgTrn:%c SuspendBDE:%c BootEx:%c Offline:%c DryRun:%c ChkReseal:%c",
+      "Default EFI application is not Windows boot manager, will not update.",
+      "Failed to create path for default EFI application. Last error = %#x",
+      "Bootmgfw on ESP is newer than that in source, will not update Default EFI application.",
+      "Failed to copy Boot Manager to default EFI application. Last error = %#x",
+      "Error copying boot files from %s to %s! Last Error = %#x",
+      "Copy files which lack a version: %s\t%s -> %s ",
+      "Creating Recovery directory.",
+      "Failed to expand Recovery directory path",
+      "Failed to create Recovery directory. Last error = %#x",
+      "Error uncompressing boor manager (%s)! Last Error = %#x",
+      "Error uncompressing boot status data log(%s)! Last Error = %#x",
+      "Error copying font files from %s to %s.Last Error = %#x",
+      "Copying font files from %s to %s...",
+      "Copying resource files from %s to %s...",
+      "Error copying %s to %s. Last Error = %#x",
+      "Error setting security attributes on %s. Last Error = %#x",
+      "|SOURCE|\\|RESOURCES|\\BOOTRES.DLL"
+    ],
+    "name": "BfsServiceBootFilesEx2",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc, unsigned int, void *)",
+    "rank_score": 20442,
+    "size": 5538,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 7,
+    "demangled": "PrepareUnicodePathEx",
+    "ea": "0x140011b18",
+    "function_file": "functions/140011b18_PrepareUnicodePathEx.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "msvcrt!_wcsnicmp",
+      "msvcrt!wcschr",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "PrepareUnicodePathEx",
+    "prototype": "char *__fastcall(STRSAFE_LPCWSTR pszSrc, wchar_t **)",
+    "rank_score": 10049,
+    "size": 3203,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "wmain",
+    "ea": "0x140001bc8",
+    "function_file": "functions/140001bc8_wmain.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetConsoleOutputCP",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleFileNameW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryW",
+      "KERNEL32!SetLastError",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wsetlocale",
+      "msvcrt!swprintf_s",
+      "ntdll!RtlGUIDFromString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [
+      "sysrepair",
+      "offlinerepair",
+      "kernel32.dll",
+      "SetThreadUILanguage"
+    ],
+    "name": "wmain",
+    "prototype": "__int64 __fastcall(unsigned int, __int64)",
+    "rank_score": 9220,
+    "size": 2389,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "BfspInitializeGlobalState",
+    "ea": "0x140006cd8",
+    "function_file": "functions/140006cd8_BfspInitializeGlobalState.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!GetVolumeNameForVolumeMountPointW",
+      "KERNEL32!GetVolumePathNameW",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!QueryDosDeviceW",
+      "SHLWAPI!PathIsPrefixW",
+      "SHLWAPI!PathRemoveBackslashW",
+      "msvcrt!_wcsnicmp",
+      "msvcrt!swprintf_s",
+      "msvcrt!wcschr",
+      "msvcrt!wcscpy_s",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Failed to GetVolumePathName for %ws (%u).",
+      "VolumePathName for %ws is %ws",
+      "Invalid VolumePathNameLegth %ws",
+      "Unable to GetVolumeNameForVolumeMountPoint %ws (%u).",
+      "Expected provided path \"%ws\" to start with %ws",
+      "\\System32\\bootstr.dll"
+    ],
+    "name": "BfspInitializeGlobalState",
+    "prototype": "__int64 __fastcall(char *Src, int, void *, __int64)",
+    "rank_score": 7691,
+    "size": 2070,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "DeleteFileEx2",
+    "ea": "0x140012810",
+    "function_file": "functions/140012810_DeleteFileEx2.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileNameW",
+      "KERNEL32!FindNextFileNameW",
+      "KERNEL32!GetFileInformationByHandle",
+      "KERNEL32!GetFileInformationByHandleEx",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetFileInformationByHandle",
+      "KERNEL32!SetLastError",
+      "ntdll!NtSetInformationFile",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [
+      "DeleteFileEx: Trying to set back attributes on hardlink given: %s",
+      "DeleteFileEx: Unable to restore attributes on [%s]; GLE = 0x%x",
+      "DeleteFileEx: Unable to open [%s]; GLE = 0x%x",
+      "DeleteFileEx: Unable to open [%s]; GLE = 0x%x",
+      "DeleteFileEx: Unable to clear out attributes on [%s]; GLE = 0x%x",
+      "DeleteFileEx: Unable to allocate hardlink path buffer",
+      "DeleteFileEx: Will not restore attributes on hardlinks of [%s]",
+      "DeleteFileEx: Unable to remove [%s]; GLE = 0x%x",
+      "DeleteFileEx: Unable to form long path name for [%s]; GLE = 0x%x",
+      "DeleteFileEx: Unable to get information on [%s]; GLE = 0x%x",
+      "DeleteFileEx: Unable to delete [%s]; GLE = 0x%x",
+      "DeleteFileEx: Unable to prepare Unicode path for [%s]; GLE = 0x%x"
+    ],
+    "name": "DeleteFileEx2",
+    "prototype": "_BOOL8 __fastcall(__int64)",
+    "rank_score": 7530,
+    "size": 1237,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "BfspCreateEnvironment",
+    "ea": "0x14000c024",
+    "function_file": "functions/14000c024_BfspCreateEnvironment.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "SHLWAPI!PathRemoveBackslashW",
+      "ntdll!RtlImageNtHeader"
+    ],
+    "matched_strings": [],
+    "name": "BfspCreateEnvironment",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc, LPWSTR pszPath, _QWORD *)",
+    "rank_score": 5464,
+    "size": 1459,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 3,
+    "demangled": "BfspCopyBootFileDirectory",
+    "ea": "0x14000b57c",
+    "function_file": "functions/14000b57c_BfspCopyBootFileDirectory.md",
+    "matched_imports": [
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "KERNEL32!FindNextFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "Error copying %s to %s. Last Error = %#x",
+      "Error creating %s path! Last Error = %#x",
+      "Source, %s, is older than destination, %s, will not update"
+    ],
+    "name": "BfspCopyBootFileDirectory",
+    "prototype": "__int64 __fastcall(__int64, __int64, const WCHAR *, const wchar_t *, int, int, int, int)",
+    "rank_score": 5392,
+    "size": 1957,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "BfspSpacesCopyToPhysicalPartitions",
+    "ea": "0x14000d494",
+    "function_file": "functions/14000d494_BfspSpacesCopyToPhysicalPartitions.md",
+    "matched_imports": [
+      "KERNEL32!CreateDirectoryW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [
+      "ServiceSpaces: %s does not exist",
+      "ServiceSpaces: Failed to create path %s. Last error = %#x",
+      "ServiceSpaces: Failed to copy %s to %s. Last Error = %#x",
+      "ServiceSpaces: Skipping non-Windows %s",
+      "ServiceSpaces: Skipping %s",
+      "CreatePath: Unable to get attributes for [%s]; GLE = 0x%x",
+      "CreatePath: Unable to create [%s]; GLE = 0x%x",
+      "CreatePath: Unable to create parent directory for [%s]; GLE = 0x%x",
+      "CreatePath: Unable to create intermediate path [%s]; GLE = 0x%x",
+      "CreatePath: Existing path [%s] is not a directory; GLE = 0x%x"
+    ],
+    "name": "BfspSpacesCopyToPhysicalPartitions",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, const wchar_t *, const wchar_t *, __int64)",
+    "rank_score": 5042,
+    "size": 1149,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfspOpenFveApi",
+    "ea": "0x140010878",
+    "function_file": "functions/140010878_BfspOpenFveApi.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW"
+    ],
+    "matched_strings": [
+      "Failed to load Fveapi.dll. HRESULT = [%x]",
+      "FVEAPI.DLL",
+      "Failed GetProcAddress for FveOpenVolumeW . HRESULT = [%x]",
+      "FveOpenVolumeW",
+      "FveCommitChangesEx",
+      "Failed GetProcAddress for FveCommitChanges . HRESULT = [%x]",
+      "FveCommitChanges",
+      "Failed GetProcAddress for FveCommitChangesEx .",
+      "Failed GetProcAddress for FveOpenVolumeByHandle . HRESULT = [%x]",
+      "FveOpenVolumeByHandle"
+    ],
+    "name": "BfspOpenFveApi",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 5030,
+    "size": 811,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "BfspChkDiskHelper",
+    "ea": "0x140009bdc",
+    "function_file": "functions/140009bdc_BfspChkDiskHelper.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeviceIoControl",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!GetVolumeInformationW",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!LoadLibraryW",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "BfsRepair: Failed to get system partition size %08x",
+      "BfsRepair: System volume too large for chkdsk. Size: %llu MB Max: %llu MB",
+      "BfsRepair: Failed to get system volume %08x",
+      "BfsRepair: Failed to get volume information %08x",
+      "FMIFS.DLL",
+      "BfsRepair: Failed to load FMIFS.DLL %08x",
+      "BfsRepair: Failed to get ChkdskEx proc address %08x",
+      "BfsRepair: Failed to unload system store. Status: %08x",
+      "BfsRepair: Failed to open system store. Status: %08x"
+    ],
+    "name": "BfspChkDiskHelper",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 4799,
+    "size": 1009,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "BfspCopyFile",
+    "ea": "0x14000bd28",
+    "function_file": "functions/14000bd28_BfspCopyFile.md",
+    "matched_imports": [
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!MoveFileExW",
+      "KERNEL32!SetLastError",
+      "KERNEL32!Sleep",
+      "RPCRT4!UuidCreate"
+    ],
+    "matched_strings": [
+      "BfspCopyFile(%s, %s) failed! (Attempt %d of %d) Last Error = %#x",
+      "BfspCopyFile failed to delete temporary file (%s)! Last Error = %#x."
+    ],
+    "name": "BfspCopyFile",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc, LPCWSTR lpFileName)",
+    "rank_score": 4107,
+    "size": 755,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "BiCreateKeySecurityDescriptor",
+    "ea": "0x14001e980",
+    "function_file": "functions/14001e980_BiCreateKeySecurityDescriptor.md",
+    "matched_imports": [
+      "ntdll!RtlAddAccessAllowedAceEx",
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCreateAcl",
+      "ntdll!RtlCreateSecurityDescriptor",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeSid",
+      "ntdll!RtlLengthSecurityDescriptor",
+      "ntdll!RtlLengthSid",
+      "ntdll!RtlSetDaclSecurityDescriptor",
+      "ntdll!RtlSetOwnerSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "BiCreateKeySecurityDescriptor",
+    "prototype": "struct _ACL *__fastcall(ACCESS_MASK AccessMask)",
+    "rank_score": 3841,
+    "size": 651,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "BfspPrintFileOwnerProcess",
+    "ea": "0x140003368",
+    "function_file": "functions/140003368_BfspPrintFileOwnerProcess.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "ntdll!NtClose",
+      "ntdll!NtOpenProcess",
+      "ntdll!NtQueryInformationFile",
+      "ntdll!NtQueryInformationProcess"
+    ],
+    "matched_strings": [
+      "BfspPrintFileOwnerProcess: Failed to acquire debugprivilege",
+      "BfspPrintFileOwnerProcess: Failed to open file!Last Error = %#x",
+      "BfspPrintFileOwnerProcess: NtOpenProcess failed!Status = %#x"
+    ],
+    "name": "BfspPrintFileOwnerProcess",
+    "prototype": "int __fastcall(LPCWSTR lpFileName)",
+    "rank_score": 3775,
+    "size": 800,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "BfspServiceSpaces",
+    "ea": "0x14000cfc0",
+    "function_file": "functions/14000cfc0_BfspServiceSpaces.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [
+      "|DEST|\\bootspaces.dll",
+      "Failed to service spaces DLL. Last Error = %#x",
+      "|SOURCE|\\Misc\\|FWTYPE|\\bootspaces.dll",
+      "Failed to service spaces default bootmgr",
+      "|SYSPART|\\|DEST|\\bootspaces.dll",
+      "Failed to service spaces bootmgr. Last Error = %#x",
+      "Error deleting stale spaces dll (%s)! Last Error = %#x"
+    ],
+    "name": "BfspServiceSpaces",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 3336,
+    "size": 747,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "BiConvertNtDeviceToBootEnvironment",
+    "ea": "0x140015cd8",
+    "function_file": "functions/140015cd8_BiConvertNtDeviceToBootEnvironment.md",
+    "matched_imports": [
+      "msvcrt!strcpy_s",
+      "msvcrt!wcscpy_s",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiConvertNtDeviceToBootEnvironment",
+    "prototype": "__int64(__int64, unsigned int, unsigned int, ...)",
+    "rank_score": 3247,
+    "size": 1986,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "BfspAdjustTokenPrivileges",
+    "ea": "0x14000e79c",
+    "function_file": "functions/14000e79c_BfspAdjustTokenPrivileges.md",
+    "matched_imports": [
+      "ADVAPI32!AdjustTokenPrivileges",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "Failed to adjust token priveleges! Error code = %#x",
+      "Failed to get user token! Error code = %#x"
+    ],
+    "name": "BfspAdjustTokenPrivileges",
+    "prototype": "__int64 __fastcall(PTOKEN_PRIVILEGES NewState, struct _TOKEN_PRIVILEGES **)",
+    "rank_score": 3099,
+    "size": 428,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BfspSetSecurityDescriptor",
+    "ea": "0x14000ed44",
+    "function_file": "functions/14000ed44_BfspSetSecurityDescriptor.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+      "ADVAPI32!GetSecurityDescriptorControl",
+      "ADVAPI32!GetSecurityDescriptorDacl",
+      "ADVAPI32!GetSecurityDescriptorGroup",
+      "ADVAPI32!GetSecurityDescriptorOwner",
+      "ADVAPI32!GetSecurityDescriptorSacl",
+      "ADVAPI32!SetNamedSecurityInfoW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "ConvertStringSecurityDescriptorToSecurityDescriptor failed! Error code = %#x",
+      "GetSecurityDescriptorOwner failed! Error code = %#x",
+      "GetSecurityDescriptorControl failed! Error code = %#x",
+      "SetNamedSecurityInfo failed! Error code = %#x",
+      "SetNamedSecurityInfo failed! Error code = %#x",
+      "GetSecurityDescriptorGroup failed! Error code = %#x"
+    ],
+    "name": "BfspSetSecurityDescriptor",
+    "prototype": "__int64 __fastcall(WCHAR *lpFileName, LPCWSTR StringSecurityDescriptor)",
+    "rank_score": 3079,
+    "size": 635,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "BfsRepairSystemPartition",
+    "ea": "0x140009658",
+    "function_file": "functions/140009658_BfsRepairSystemPartition.md",
+    "matched_imports": [
+      "KERNEL32!CreateDirectoryW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "msvcrt!_wfopen_s",
+      "msvcrt!fclose",
+      "msvcrt!wcscat_s",
+      "msvcrt!wcscpy_s",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [
+      "\\Logs\\bfsvc\\repair.log",
+      "BfsRepairSystemPartition flags(0x%08x), system root: %ws, online: %ws, boot files: %ws, caller: %d",
+      "BfsRepair: BCD failed validation check after file system repair.",
+      "BfsRepair: Failed to repair BCD store. Error: %08x",
+      "BfsRepair: Failed to service boot files. Error: %08x"
+    ],
+    "name": "BfsRepairSystemPartition",
+    "prototype": "__int64 __fastcall(unsigned int, void *, int, const wchar_t *)",
+    "rank_score": 3059,
+    "size": 1309,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfspIsWindowsBinary",
+    "ea": "0x140010194",
+    "function_file": "functions/140010194_BfspIsWindowsBinary.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!LoadLibraryExW",
+      "msvcrt!_wcsicmp",
+      "msvcrt!swprintf_s"
+    ],
+    "matched_strings": [
+      "version.dll"
+    ],
+    "name": "BfspIsWindowsBinary",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, int)",
+    "rank_score": 3059,
+    "size": 669,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CreatePath",
+    "ea": "0x1400116f4",
+    "function_file": "functions/1400116f4_CreatePath.md",
+    "matched_imports": [
+      "KERNEL32!CreateDirectoryW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [
+      "CreatePath: Unable to get attributes for [%s]; GLE = 0x%x",
+      "CreatePath: Unable to create [%s]; GLE = 0x%x",
+      "CreatePath: Unable to create parent directory for [%s]; GLE = 0x%x",
+      "CreatePath: Unable to create intermediate path [%s]; GLE = 0x%x",
+      "CreatePath: Existing path [%s] is not a directory; GLE = 0x%x"
+    ],
+    "name": "CreatePath",
+    "prototype": "_BOOL8 __fastcall(const wchar_t *)",
+    "rank_score": 3018,
+    "size": 474,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BfspFileExistsOnNtDevice",
+    "ea": "0x1400065a0",
+    "function_file": "functions/1400065a0_BfspFileExistsOnNtDevice.md",
+    "matched_imports": [
+      "KERNEL32!DeleteVolumeMountPointW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!QueryDosDeviceW",
+      "msvcrt!_wcsicmp",
+      "msvcrt!swprintf_s",
+      "msvcrt!wcscpy_s"
+    ],
+    "matched_strings": [
+      "Attempting to mount device %ws with volume name %ws",
+      "Failed to mount device %ws",
+      "Failed to allocate space for full path",
+      "Failed to create full file path"
+    ],
+    "name": "BfspFileExistsOnNtDevice",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, _DWORD *)",
+    "rank_score": 2992,
+    "size": 670,
+    "tags": [
+      "file_ops",
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BfspServiceDebuggerFiles",
+    "ea": "0x14000cc78",
+    "function_file": "functions/14000cc78_BfspServiceDebuggerFiles.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetPrivateProfileSectionW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "msvcrt!wcsrchr"
+    ],
+    "matched_strings": [
+      "ServiceDebuggerFiles: %ws does not exist",
+      "ServiceDebuggerFiles: Failed to allocate config buffer",
+      "Copying boot debugging files from %ws to %ws (%ws)",
+      "ServiceDebuggerFiles: ConfigBuffer is too small",
+      "Error copying boot debugging files from %ws to %ws (%ws). Last Error = %#x"
+    ],
+    "name": "BfspServiceDebuggerFiles",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 2856,
+    "size": 833,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SbpEnablePrivilege",
+    "ea": "0x140010e28",
+    "function_file": "functions/140010e28_SbpEnablePrivilege.md",
+    "matched_imports": [
+      "ADVAPI32!AdjustTokenPrivileges",
+      "ADVAPI32!DuplicateTokenEx",
+      "ADVAPI32!LookupPrivilegeValueW",
+      "ADVAPI32!OpenProcessToken",
+      "ADVAPI32!OpenThreadToken",
+      "ADVAPI32!SetThreadToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "SbpEnablePrivilege",
+    "prototype": "__int64 __fastcall(LPCWSTR lpName)",
+    "rank_score": 2826,
+    "size": 438,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "BfspGetSystemPartition",
+    "ea": "0x140002c14",
+    "function_file": "functions/140002c14_BfspGetSystemPartition.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "BfspGetSystemPartition",
+    "prototype": "wchar_t *__fastcall(char)",
+    "rank_score": 2825,
+    "size": 684,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BbiPrint",
+    "ea": "0x140002524",
+    "function_file": "functions/140002524_BbiPrint.md",
+    "matched_imports": [
+      "KERNEL32!GetConsoleMode",
+      "KERNEL32!GetConsoleOutputCP",
+      "KERNEL32!GetFileType",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!GetStdHandle",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!WideCharToMultiByte",
+      "KERNEL32!WriteConsoleW",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "BbiPrint",
+    "prototype": "int __fastcall(LPCWCH lpWideCharStr)",
+    "rank_score": 2814,
+    "size": 370,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BiLogFileOwnerProcess",
+    "ea": "0x140020324",
+    "function_file": "functions/140020324_BiLogFileOwnerProcess.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenFile",
+      "ntdll!ZwOpenProcess",
+      "ntdll!ZwQueryInformationFile",
+      "ntdll!ZwQueryInformationProcess"
+    ],
+    "matched_strings": [
+      "Attempting to determine owner of file %ws.",
+      "Failed to open file attributes. Status: %x",
+      "Failed to open process. Status: %x"
+    ],
+    "name": "BiLogFileOwnerProcess",
+    "prototype": "char __fastcall(struct _UNICODE_STRING *)",
+    "rank_score": 2769,
+    "size": 845,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 2,
+    "demangled": "BfsInitializeBcdStoreEx",
+    "ea": "0x140004080",
+    "function_file": "functions/140004080_BfsInitializeBcdStoreEx.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!SetLastError",
+      "SHLWAPI!PathRemoveBackslashW",
+      "msvcrt!swprintf_s",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [
+      "Opening store from %ws",
+      "Reopening system store.",
+      "Failed to create a new system store. Status = [%x]",
+      "BcdOpenStore failed with unexpected error code, Status = [%x]",
+      "Failed to create recovery store. Status = [%x]",
+      "REAGENT.DLL",
+      "WinRePostBCDRepair"
+    ],
+    "name": "BfsInitializeBcdStoreEx",
+    "prototype": "__int64 __fastcall(void *Src, unsigned int, __int64, __int128 *, __int64)",
+    "rank_score": 2764,
+    "size": 1343,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "BiCreatePartitionDevice",
+    "ea": "0x140016784",
+    "function_file": "functions/140016784_BiCreatePartitionDevice.md",
+    "matched_imports": [
+      "msvcrt!_wcsnicmp",
+      "msvcrt!wcschr",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenFile"
+    ],
+    "matched_strings": [
+      "BiCreatePartitionDevice: NestedVhd detected %ws"
+    ],
+    "name": "BiCreatePartitionDevice",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, int, _QWORD *, _DWORD *)",
+    "rank_score": 2711,
+    "size": 1157,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfspGetUserSidString",
+    "ea": "0x14000ea4c",
+    "function_file": "functions/14000ea4c_BfspGetUserSidString.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertSidToStringSidW",
+      "ADVAPI32!GetTokenInformation",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "Failed to get token information! Error code = %#x",
+      "Failed to convert user SID! Error code = %#x"
+    ],
+    "name": "BfspGetUserSidString",
+    "prototype": "__int64 __fastcall(LPWSTR *StringSid)",
+    "rank_score": 2696,
+    "size": 322,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BfspRestoreHyperVSetting",
+    "ea": "0x14000efc8",
+    "function_file": "functions/14000efc8_BfspRestoreHyperVSetting.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW",
+      "msvcrt!wcscpy_s",
+      "msvcrt!wcsrchr"
+    ],
+    "matched_strings": [
+      "DismOpenSession",
+      "DISMAPI.DLL",
+      "DismDelete"
+    ],
+    "name": "BfspRestoreHyperVSetting",
+    "prototype": "__int64 __fastcall(__int64, wchar_t *, _QWORD *, __int16)",
+    "rank_score": 2552,
+    "size": 722,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WdsCopyFileEx",
+    "ea": "0x140012cec",
+    "function_file": "functions/140012cec_WdsCopyFileEx.md",
+    "matched_imports": [
+      "KERNEL32!CopyFileExW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetFileAttributesW",
+      "KERNEL32!SetLastError",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [
+      "WdsCopyFileEx: Failed to copy [%s] to [%s], GLE = 0x%x; will retry in %u ms",
+      "WdsCopyFileEx: Failed to strip file attributes for %s, will delete. GLE = 0x%x",
+      "WdsCopyFileEx: Failed to delete %s. GLE = 0x%x"
+    ],
+    "name": "WdsCopyFileEx",
+    "prototype": "__int64(STRSAFE_LPCWSTR pszSrc, STRSAFE_LPCWSTR, __int64, __int64, int, ...)",
+    "rank_score": 2540,
+    "size": 533,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfspCompareObjects",
+    "ea": "0x140005100",
+    "function_file": "functions/140005100_BfspCompareObjects.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wcsupr",
+      "ntdll!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "BfspCompareObjects",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, unsigned int, char *)",
+    "rank_score": 2427,
+    "size": 436,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BfspMountVolume",
+    "ea": "0x140007780",
+    "function_file": "functions/140007780_BfspMountVolume.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetLogicalDrives",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetVolumeMountPointW",
+      "msvcrt!swprintf_s"
+    ],
+    "matched_strings": [
+      "Failed to allocate memory for mount location",
+      "Found potential mount location at %C",
+      "Attempting to mount at letter %ws",
+      "Mounted %ws at %ws",
+      "Attempt to mount volume %ws failed Error %u"
+    ],
+    "name": "BfspMountVolume",
+    "prototype": "DWORD __fastcall(LPCWSTR lpszVolumeName, LPCWSTR *)",
+    "rank_score": 2415,
+    "size": 364,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BfsGetVolumeName",
+    "ea": "0x140002830",
+    "function_file": "functions/140002830_BfsGetVolumeName.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!GetVolumeNameForVolumeMountPointW",
+      "KERNEL32!GetVolumePathNameW",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetVolumeName",
+    "prototype": "WCHAR *__fastcall(LPCWSTR lpszFileName)",
+    "rank_score": 2413,
+    "size": 239,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfspServiceBootStl",
+    "ea": "0x14000c8d8",
+    "function_file": "functions/14000c8d8_BfspServiceBootStl.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "Error copying %s to %s. Last Error = %#x",
+      "Source Boot.stl (%s) does not exist. Will skip copying %s",
+      "Destination Boot.stl exists. Will copy both boot.stls (current and pending) to the destination.",
+      "Source Pending Boot.stl (%s) does not exist. Will skip copying %s"
+    ],
+    "name": "BfspServiceBootStl",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2393,
+    "size": 922,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "BfspMapFileForRead",
+    "ea": "0x1400030c0",
+    "function_file": "functions/1400030c0_BfspMapFileForRead.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileMappingW",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetFileSizeEx",
+      "KERNEL32!GetLastError",
+      "KERNEL32!MapViewOfFile",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "Failed to open file %s for read! Error code = %#x",
+      "Unable to open file %s for read because the file or path does not exist",
+      "CreateFileMapping(%s) failed! Error code = %#x"
+    ],
+    "name": "BfspMapFileForRead",
+    "prototype": "LPVOID __fastcall(LPCWSTR lpFileName, DWORD *, _QWORD *)",
+    "rank_score": 2340,
+    "size": 522,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BiGetPartitionVhdFilePathFromUnicodeString",
+    "ea": "0x140017830",
+    "function_file": "functions/140017830_BiGetPartitionVhdFilePathFromUnicodeString.md",
+    "matched_imports": [
+      "msvcrt!wcsrchr",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!ZwClose",
+      "ntdll!ZwDeviceIoControlFile",
+      "ntdll!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "BiGetPartitionVhdFilePathFromUnicodeString",
+    "prototype": "ULONG *__fastcall(struct _UNICODE_STRING *)",
+    "rank_score": 2250,
+    "size": 693,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SyspartEnumerateDisks",
+    "ea": "0x140020ba4",
+    "function_file": "functions/140020ba4_SyspartEnumerateDisks.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s",
+      "ntdll!NtClose",
+      "ntdll!NtOpenDirectoryObject",
+      "ntdll!NtQueryDirectoryObject",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SyspartEnumerateDisks",
+    "prototype": "__int64 __fastcall(unsigned __int8 (__fastcall *)(wchar_t *, _QWORD, __int64), __int64)",
+    "rank_score": 2250,
+    "size": 556,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FormLongPathName",
+    "ea": "0x140011978",
+    "function_file": "functions/140011978_FormLongPathName.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetLongPathNameW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "FormLongPathName",
+    "prototype": "const WCHAR *__fastcall(const wchar_t *)",
+    "rank_score": 2205,
+    "size": 266,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "BiEnumerateElements",
+    "ea": "0x140019bb8",
+    "function_file": "functions/140019bb8_BiEnumerateElements.md",
+    "matched_imports": [
+      "msvcrt!wcstoul",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to get registry value. Element: %ws Status: %x",
+      "Failed to convert registry data to element. Element: %ws, Status: %x"
+    ],
+    "name": "BiEnumerateElements",
+    "prototype": "__int64 __fastcall(int, __int64, int, int, __int64, unsigned int *, _DWORD *, __int64, int)",
+    "rank_score": 2125,
+    "size": 1700,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "BfspObjectIsReferenced",
+    "ea": "0x1400078f4",
+    "function_file": "functions/1400078f4_BfspObjectIsReferenced.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Failed to open a handle to the bootmgr. Status = [%x]"
+    ],
+    "name": "BfspObjectIsReferenced",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, int, __int64, unsigned int, _BYTE *)",
+    "rank_score": 2055,
+    "size": 789,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "BiTranslateSymbolicLink",
+    "ea": "0x1400182d8",
+    "function_file": "functions/1400182d8_BiTranslateSymbolicLink.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenSymbolicLinkObject",
+      "ntdll!ZwQuerySymbolicLinkObject"
+    ],
+    "matched_strings": [],
+    "name": "BiTranslateSymbolicLink",
+    "prototype": "NTSTATUS __fastcall(PCWSTR SourceString, PWSTR *)",
+    "rank_score": 2048,
+    "size": 440,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SiTranslateSymbolicLink",
+    "ea": "0x14001d7cc",
+    "function_file": "functions/14001d7cc_SiTranslateSymbolicLink.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenSymbolicLinkObject",
+      "ntdll!NtQuerySymbolicLinkObject",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SiTranslateSymbolicLink",
+    "prototype": "NTSTATUS __fastcall(PCWSTR SourceString, PWSTR *)",
+    "rank_score": 2047,
+    "size": 452,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "LoadMUILibraryW",
+    "ea": "0x140026010",
+    "function_file": "functions/140026010_LoadMUILibraryW.md",
+    "matched_imports": [
+      "KERNEL32!FindResourceExW",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLocaleInfoW",
+      "KERNEL32!GetSystemDefaultUILanguage",
+      "KERNEL32!GetUserDefaultUILanguage",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!SearchPathW"
+    ],
+    "matched_strings": [],
+    "name": "LoadMUILibraryW",
+    "prototype": "HINSTANCE __stdcall(PCWSTR pszFullModuleName, DWORD dwLangConvention, LANGID LangID)",
+    "rank_score": 2040,
+    "size": 1214,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfspIsHashInSecurityDatabase",
+    "ea": "0x14000fa8c",
+    "function_file": "functions/14000fa8c_BfspIsHashInSecurityDatabase.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "bcrypt!BCryptCloseAlgorithmProvider",
+      "bcrypt!BCryptCreateHash",
+      "bcrypt!BCryptDestroyHash",
+      "bcrypt!BCryptFinishHash",
+      "bcrypt!BCryptHashData",
+      "bcrypt!BCryptOpenAlgorithmProvider",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "BfspIsHashInSecurityDatabase",
+    "prototype": "__int64 __fastcall(int, __int64, _DWORD *)",
+    "rank_score": 2029,
+    "size": 526,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BfspUncompressFile",
+    "ea": "0x1400038d4",
+    "function_file": "functions/1400038d4_BfspUncompressFile.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!DeviceIoControl",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetFileAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "BfspUncompressFile",
+    "prototype": "DWORD __fastcall(const wchar_t *)",
+    "rank_score": 2025,
+    "size": 296,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "BfspEnvExpandString",
+    "ea": "0x14000f50c",
+    "function_file": "functions/14000f50c_BfspEnvExpandString.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "BfspEnvExpandString",
+    "prototype": "wchar_t *__fastcall(__int64, const wchar_t *)",
+    "rank_score": 2013,
+    "size": 538,
+    "tags": []
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "BiUpdateBcdObject",
+    "ea": "0x140024cf0",
+    "function_file": "functions/140024cf0_BiUpdateBcdObject.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCompareMemory",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "BiUpdateBcdObject: %wZ Fw:%d",
+      "BiUpdateObject: Updating descriptions %ws %ws"
+    ],
+    "name": "BiUpdateBcdObject",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1945,
+    "size": 1124,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BiCreateBootEntry",
+    "ea": "0x1400228bc",
+    "function_file": "functions/1400228bc_BiCreateBootEntry.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "BiCreateBootEntry: Could not retrieve BCD Object application description. Status: %x",
+      "BiCreateBootEntry: Could not retrieve BCD Object application device. Status: %x",
+      "BiCreateBootEntry: Could not retrieve BCD Object application path. Status: %x"
+    ],
+    "name": "BiCreateBootEntry",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1944,
+    "size": 1014,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BfspSetFileDirectorySecurityDescriptor",
+    "ea": "0x14000ec18",
+    "function_file": "functions/14000ec18_BfspSetFileDirectorySecurityDescriptor.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!LocalFree",
+      "KERNEL32!SetLastError",
+      "msvcrt!swprintf_s"
+    ],
+    "matched_strings": [
+      "BfspSetSecurityDescriptor(%s) failed! Last Error = %#x"
+    ],
+    "name": "BfspSetFileDirectorySecurityDescriptor",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, int, const wchar_t *)",
+    "rank_score": 1879,
+    "size": 294,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BiLoadHive",
+    "ea": "0x14001f570",
+    "function_file": "functions/14001f570_BiLoadHive.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwLoadKey",
+      "ntdll!ZwOpenKey",
+      "ntdll!ZwQueryAttributesFile",
+      "ntdll!ZwUnloadKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine",
+      "\\Registry\\Machine",
+      "\\Registry\\Machine",
+      "Failed open key %ws. Status: %x",
+      "Failed open newly loaded key %ws. Flags: 0x%x Status: %x"
+    ],
+    "name": "BiLoadHive",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, __int64, void **)",
+    "rank_score": 1867,
+    "size": 1033,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BfspBackupCorruptStore",
+    "ea": "0x1400045c8",
+    "function_file": "functions/1400045c8_BfspBackupCorruptStore.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtSetInformationFile",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfspBackupCorruptStore",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *)",
+    "rank_score": 1857,
+    "size": 601,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "BiGetNtPartitionPathCallback",
+    "ea": "0x140017320",
+    "function_file": "functions/140017320_BiGetNtPartitionPathCallback.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "BiGetNtPartitionPathCallback",
+    "prototype": "char __fastcall(__int64, unsigned int, __int64)",
+    "rank_score": 1850,
+    "size": 815,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfspDeleteBootmgfwForceSha1Variable",
+    "ea": "0x14000c5e0",
+    "function_file": "functions/14000c5e0_BfspDeleteBootmgfwForceSha1Variable.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!NtQuerySystemEnvironmentValueEx",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtSetSystemEnvironmentValueEx",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Failed to create privilege info for BootmgfwForceSHA1 cleanup.",
+      "SeSystemEnvironmentPrivilege",
+      "Failed to acquire SE_SYSTEM_ENVIRONMENT_PRIVILEGE for BootmgfwForceSHA1 cleanup.",
+      "Failed to delete BootmgfwForceSHA1 variable. Status: %#x",
+      "Deleted BootmgfwForceSHA1 UEFI variable."
+    ],
+    "name": "BfspDeleteBootmgfwForceSha1Variable",
+    "prototype": "NTSTATUS()",
+    "rank_score": 1839,
+    "size": 469,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BiConvertElementToRegistryData",
+    "ea": "0x140019038",
+    "function_file": "functions/140019038_BiConvertElementToRegistryData.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlStringFromGUID"
+    ],
+    "matched_strings": [],
+    "name": "BiConvertElementToRegistryData",
+    "prototype": "__int64 __fastcall(unsigned int, const GUID *, unsigned int, unsigned int, _QWORD *, _DWORD *)",
+    "rank_score": 1834,
+    "size": 997,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BiGetSystemStorePathComponents",
+    "ea": "0x14001c508",
+    "function_file": "functions/14001c508_BiGetSystemStorePathComponents.md",
+    "matched_imports": [
+      "msvcrt!wcscat_s",
+      "msvcrt!wcscpy_s",
+      "msvcrt!wcsncpy_s",
+      "msvcrt!wcsrchr",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiGetSystemStorePathComponents",
+    "prototype": "__int64 __fastcall(wchar_t **, wchar_t **)",
+    "rank_score": 1827,
+    "size": 468,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "BcdGetSystemStorePath",
+    "ea": "0x14001c14c",
+    "function_file": "functions/14001c14c_BcdGetSystemStorePath.md",
+    "matched_imports": [
+      "msvcrt!wcscat_s",
+      "msvcrt!wcscpy_s",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to get system store path. Status: %x",
+      "System store path: %s",
+      "system32\\config\\BootBCD",
+      "Using cached BCD path: %s"
+    ],
+    "name": "BcdGetSystemStorePath",
+    "prototype": "__int64 __fastcall(wchar_t **)",
+    "rank_score": 1804,
+    "size": 597,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BfspRemoveInvalidBcdEntry",
+    "ea": "0x140008400",
+    "function_file": "functions/140008400_BfspRemoveInvalidBcdEntry.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlStringFromGUID"
+    ],
+    "matched_strings": [
+      "Failed to delete duplicate loader object. Status = [%x]"
+    ],
+    "name": "BfspRemoveInvalidBcdEntry",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1675,
+    "size": 654,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SbpParseSignatureDatabase",
+    "ea": "0x140010fe4",
+    "function_file": "functions/140010fe4_SbpParseSignatureDatabase.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "ntdll!NtQuerySystemEnvironmentValueEx",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "SeSystemEnvironmentPrivilege"
+    ],
+    "name": "SbpParseSignatureDatabase",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, LPGUID VendorGuid, _QWORD *, _DWORD *, _QWORD *, _DWORD *, _QWORD *, _DWORD *)",
+    "rank_score": 1667,
+    "size": 449,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 2,
+    "demangled": "BfspCreateBootmgrObject",
+    "ea": "0x1400052bc",
+    "function_file": "functions/1400052bc_BfspCreateBootmgrObject.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlStringFromGUID"
+    ],
+    "matched_strings": [
+      "Create BOOTMGR object RetainBootDefault:%c",
+      "Failed to copy bootmgr object data. Status = [%x]",
+      "Failed to open a handle to the bootmgr object. Status = [%x]",
+      "Failed to update bootmgr display order. Status = [%x]",
+      "Failed to open handle to fwbootmgr object. Status = [%x]"
+    ],
+    "name": "BfspCreateBootmgrObject",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, GUID *)",
+    "rank_score": 1656,
+    "size": 1401,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SiGetBiosSystemDisk",
+    "ea": "0x1400254d0",
+    "function_file": "functions/1400254d0_SiGetBiosSystemDisk.md",
+    "matched_imports": [
+      "msvcrt!_snwscanf_s",
+      "ntdll!NtClose",
+      "ntdll!NtQuerySymbolicLinkObject",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SiGetBiosSystemDisk",
+    "prototype": "__int64 __fastcall(WCHAR **)",
+    "rank_score": 1643,
+    "size": 654,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 4,
+    "demangled": "BcdCopyObjectEx",
+    "ea": "0x14001474c",
+    "function_file": "functions/14001474c_BcdCopyObjectEx.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Copying object. Flags: 0x%x",
+      "BcdCopyObjectEx: Failed to set firmware object. Target: %ws Flags: 0x%x Status: %x",
+      "BcdCopyObjectEx: Failed to enumerate source elements. Target: %ws Flags: 0x%x Status: %x",
+      "BcdCopyObjectEx: Failed to set target elements. Target: %ws Flags: 0x%x Element type: %lu Status: %x",
+      "BcdCopyObjectEx: Failed to copy object. Target: %ws Flags: 0x%x Status: %x",
+      "BcdCopyObjectEx: Failed to get object description Flags: 0x%x Status: %x",
+      "BcdCopyObjectEx: Failed to get generate object guid. Flags: 0x%x Status: %x",
+      "BcdCopyObjectEx: Failed to get object identifier. Flags: 0x%x Status: %x",
+      "BcdCopyObjectEx: Failed to create object. Target: %ws Flags: 0x%x  Status: %x"
+    ],
+    "name": "BcdCopyObjectEx",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, __int64, __int128 *, _QWORD *)",
+    "rank_score": 1628,
+    "size": 1907,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BiCreateFileDeviceElement",
+    "ea": "0x1400165b4",
+    "function_file": "functions/1400165b4_BiCreateFileDeviceElement.md",
+    "matched_imports": [
+      "msvcrt!_wcsnicmp",
+      "msvcrt!wcschr",
+      "msvcrt!wcscpy_s",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiCreateFileDeviceElement",
+    "prototype": "__int64 __fastcall(const wchar_t *Src, _QWORD *, unsigned int *)",
+    "rank_score": 1627,
+    "size": 456,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "BiOpenKey",
+    "ea": "0x14001f980",
+    "function_file": "functions/14001f980_BiOpenKey.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenKey",
+      "ntdll!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BiOpenKey",
+    "prototype": "__int64 __fastcall(unsigned __int64, const WCHAR *, ACCESS_MASK, void **)",
+    "rank_score": 1466,
+    "size": 449,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "BiCreateKey",
+    "ea": "0x14001e730",
+    "function_file": "functions/14001e730_BiCreateKey.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwCreateKey",
+      "ntdll!ZwOpenKey",
+      "ntdll!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BiCreateKey",
+    "prototype": "__int64 __fastcall(unsigned __int64, const WCHAR *, ACCESS_MASK, unsigned int, void **, bool *)",
+    "rank_score": 1460,
+    "size": 586,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 14,
+    "demangled": "BiGetRegistryValue",
+    "ea": "0x14001f324",
+    "function_file": "functions/14001f324_BiGetRegistryValue.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BiGetRegistryValue",
+    "prototype": "__int64 __fastcall(unsigned __int64, const WCHAR *, __int64, unsigned int, _QWORD *, ULONG *)",
+    "rank_score": 1442,
+    "size": 582,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "BiConvertRegistryDataToElement",
+    "ea": "0x140019544",
+    "function_file": "functions/140019544_BiConvertRegistryDataToElement.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlGUIDFromString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BiConvertRegistryDataToElement",
+    "prototype": "__int64 __fastcall(__int64, unsigned int *, unsigned int, unsigned int, int, GUID *Guid, unsigned int *)",
+    "rank_score": 1439,
+    "size": 1093,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SiGetRegistryValue",
+    "ea": "0x14001d260",
+    "function_file": "functions/14001d260_SiGetRegistryValue.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SiGetRegistryValue",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, __int64, __int64, _QWORD *, ULONG *)",
+    "rank_score": 1429,
+    "size": 400,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BfspIsVhdVolume",
+    "ea": "0x140002f14",
+    "function_file": "functions/140002f14_BfspIsVhdVolume.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateEvent",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtOpenFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfspIsVhdVolume",
+    "prototype": "bool __fastcall(PCWSTR SourceString)",
+    "rank_score": 1426,
+    "size": 420,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfspSetSystemVolumePath",
+    "ea": "0x140003690",
+    "function_file": "functions/140003690_BfspSetSystemVolumePath.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!GetVolumeNameForVolumeMountPointW",
+      "KERNEL32!GetVolumePathNameW",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!QueryDosDeviceW",
+      "msvcrt!wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "BfspSetSystemVolumePath",
+    "prototype": "__int64 __fastcall(LPCWSTR lpszFileName)",
+    "rank_score": 1418,
+    "size": 492,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "BfspCreateTokenPrivilegesInformation",
+    "ea": "0x14000e950",
+    "function_file": "functions/14000e950_BfspCreateTokenPrivilegesInformation.md",
+    "matched_imports": [
+      "ADVAPI32!LookupPrivilegeValueW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "BfspCreateTokenPrivilegesInformation",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, int, unsigned int **)",
+    "rank_score": 1417,
+    "size": 244,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BfspGetUserToken",
+    "ea": "0x14000eb94",
+    "function_file": "functions/14000eb94_BfspGetUserToken.md",
+    "matched_imports": [
+      "ADVAPI32!OpenProcessToken",
+      "ADVAPI32!OpenThreadToken",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "BfspGetUserToken",
+    "prototype": "__int64 __fastcall(PHANDLE TokenHandle)",
+    "rank_score": 1413,
+    "size": 125,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FormFullPathName",
+    "ea": "0x1400118d4",
+    "function_file": "functions/1400118d4_FormFullPathName.md",
+    "matched_imports": [
+      "KERNEL32!GetFullPathNameW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "FormFullPathName",
+    "prototype": "WCHAR *__fastcall(LPCWSTR lpFileName)",
+    "rank_score": 1403,
+    "size": 157,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "BfspCleanupAdditionalOptions",
+    "ea": "0x140004828",
+    "function_file": "functions/140004828_BfspCleanupAdditionalOptions.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Failed to open object. Status = [%x]",
+      "Failed to delete orphaned ramdisk. Status = [%x]"
+    ],
+    "name": "BfspCleanupAdditionalOptions",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1304,
+    "size": 560,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "BiCreateMergedBootEntry",
+    "ea": "0x140022e8c",
+    "function_file": "functions/140022e8c_BiCreateMergedBootEntry.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "BiCreateMergedBootEntry failed %x"
+    ],
+    "name": "BiCreateMergedBootEntry",
+    "prototype": "__int64 __fastcall(_DWORD *, _WORD *, _DWORD *, _WORD *, _QWORD *)",
+    "rank_score": 1266,
+    "size": 900,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "BiEnumerateSubKeys",
+    "ea": "0x14001ee20",
+    "function_file": "functions/14001ee20_BiEnumerateSubKeys.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!ZwEnumerateKey",
+      "ntdll!ZwQueryKey"
+    ],
+    "matched_strings": [],
+    "name": "BiEnumerateSubKeys",
+    "prototype": "__int64 __fastcall(unsigned __int64, char **, ULONG *)",
+    "rank_score": 1225,
+    "size": 894,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MapMUIFile",
+    "ea": "0x140025d64",
+    "function_file": "functions/140025d64_MapMUIFile.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileMappingW",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!MapViewOfFile"
+    ],
+    "matched_strings": [],
+    "name": "MapMUIFile",
+    "prototype": "HMODULE __fastcall(const WCHAR *, int, int)",
+    "rank_score": 1224,
+    "size": 228,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140001a74",
+    "function_file": "functions/140001a74_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "BfspEnumerateObjects",
+    "ea": "0x1400064c0",
+    "function_file": "functions/1400064c0_BfspEnumerateObjects.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "BfspEnumerateObjects",
+    "prototype": "__int64 __fastcall(int, int, _DWORD *, _QWORD *)",
+    "rank_score": 1209,
+    "size": 216,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "BcdCreateStoreEx",
+    "ea": "0x14001a964",
+    "function_file": "functions/14001a964_BcdCreateStoreEx.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\BootConfigurationData",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\BootConfigurationData",
+      "Unable to create tempory root key. Status: %x",
+      "Failed to create hive. Store: %ws Status: %x",
+      "Unable to create tempory new store key. Status: %x",
+      "Failed to create system store path. Status: %x",
+      "Failed to get system store path. Status: %x",
+      "Failed to open new system store. Store: %ws Status: %x",
+      "Failed to create store. Status: %x"
+    ],
+    "name": "BcdCreateStoreEx",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *p_DestinationString, __int64, _QWORD *)",
+    "rank_score": 1203,
+    "size": 788,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "BfspRemoveDuplicateEntries",
+    "ea": "0x140008104",
+    "function_file": "functions/140008104_BfspRemoveDuplicateEntries.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlStringFromGUID"
+    ],
+    "matched_strings": [
+      "Failed to open a handle to the OS loader element. Status = [%x]",
+      "Failed to delete duplicate loader object. Status = [%x]",
+      "Failed to remove duplicate object from bootmgr display order. Status = [%x]"
+    ],
+    "name": "BfspRemoveDuplicateEntries",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1175,
+    "size": 758,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BiUnloadHiveByName",
+    "ea": "0x14001fe24",
+    "function_file": "functions/14001fe24_BiUnloadHiveByName.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwUnloadKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine"
+    ],
+    "name": "BiUnloadHiveByName",
+    "prototype": "__int64 __fastcall(__int64, int, char)",
+    "rank_score": 1099,
+    "size": 331,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TraceLoggingRegister_EventRegister_2U",
+    "ea": "0x1400010ac",
+    "function_file": "functions/1400010ac_TraceLoggingRegister_EventRegister_2U.md",
+    "matched_imports": [
+      "ADVAPI32!EventRegister",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetModuleHandleExW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "advapi32.dll",
+      "api-ms-win-eventing-provider-l1-1-0.dll"
+    ],
+    "name": "TraceLoggingRegister_EventRegister_2U",
+    "prototype": "__int64 __fastcall(_QWORD *CallbackContext)",
+    "rank_score": 1096,
+    "size": 262,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "BiUpdateEfiEntry",
+    "ea": "0x14002515c",
+    "function_file": "functions/14002515c_BiUpdateEfiEntry.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "BiUpdateEfiEntry %d '%ws' failed 0x%x"
+    ],
+    "name": "BiUpdateEfiEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1074,
+    "size": 515,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BiGetDeviceFromEfiPath",
+    "ea": "0x140023f80",
+    "function_file": "functions/140023f80_BiGetDeviceFromEfiPath.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "BiGetDeviceFromEfiPath failed: %x"
+    ],
+    "name": "BiGetDeviceFromEfiPath",
+    "prototype": "__int64 __fastcall(char *Src, _QWORD *, _DWORD *)",
+    "rank_score": 1060,
+    "size": 473,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BfspSetAttributes",
+    "ea": "0x14000d2b4",
+    "function_file": "functions/14000d2b4_BfspSetAttributes.md",
+    "matched_imports": [
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetFileAttributesW",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "SetFileAttributes(%s) failed! Last Error = %#x."
+    ],
+    "name": "BfspSetAttributes",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, unsigned int)",
+    "rank_score": 1057,
+    "size": 266,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "BfspSetObjectStringElements",
+    "ea": "0x140008c74",
+    "function_file": "functions/140008c74_BfspSetObjectStringElements.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "Failed to open a handle to the template store. Status = [%x]"
+    ],
+    "name": "BfspSetObjectStringElements",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *, _QWORD *)",
+    "rank_score": 1052,
+    "size": 493,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BiCreateSystemStorePath",
+    "ea": "0x1400200a0",
+    "function_file": "functions/1400200a0_BiCreateSystemStorePath.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "BiCreateSystemStorePath",
+    "prototype": "__int64()",
+    "rank_score": 1047,
+    "size": 323,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 62,
+    "demangled": "BfspLogMessage",
+    "ea": "0x14000e628",
+    "function_file": "functions/14000e628_BfspLogMessage.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf_s",
+      "msvcrt!fflush",
+      "msvcrt!fwprintf"
+    ],
+    "matched_strings": [],
+    "name": "BfspLogMessage",
+    "prototype": "__int64(int, const wchar_t *, ...)",
+    "rank_score": 1031,
+    "size": 365,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BiCreateVhdRamdiskBootDevice",
+    "ea": "0x140016c10",
+    "function_file": "functions/140016c10_BiCreateVhdRamdiskBootDevice.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwDeviceIoControlFile",
+      "ntdll!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "BiCreateVhdRamdiskBootDevice",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1027,
+    "size": 495,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfspOpenSystemPartition",
+    "ea": "0x1400032d0",
+    "function_file": "functions/1400032d0_BfspOpenSystemPartition.md",
+    "matched_imports": [
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "BfspOpenSystemPartition",
+    "prototype": "__int64 __fastcall(_QWORD *, DWORD)",
+    "rank_score": 1015,
+    "size": 146,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 2,
+    "demangled": "BiOpenSystemStore",
+    "ea": "0x14001bd44",
+    "function_file": "functions/14001bd44_BiOpenSystemStore.md",
+    "matched_imports": [
+      "msvcrt!_wcsnicmp",
+      "msvcrt!wcstoul",
+      "ntdll!RtlFreeHeap",
+      "ntdll!ZwClose"
+    ],
+    "matched_strings": [
+      "Opening system store. Flags: 0x%x",
+      "\\Registry\\Machine",
+      "The system store is not already loaded",
+      "Specified flags prevent opening unloaded system store"
+    ],
+    "name": "BiOpenSystemStore",
+    "prototype": "__int64 __fastcall(__int64 *, unsigned int)",
+    "rank_score": 1003,
+    "size": 713,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "BfspValidateDevice",
+    "ea": "0x140009170",
+    "function_file": "functions/140009170_BfspValidateDevice.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Moving to Partition node with path %ws",
+      "Moving to File/Ramdisk node with path %ws",
+      "Moving to Composite node",
+      "Done validating Composite"
+    ],
+    "name": "BfspValidateDevice",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, _DWORD *)",
+    "rank_score": 989,
+    "size": 944,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "BiBindEfiBootManager",
+    "ea": "0x140021c10",
+    "function_file": "functions/140021c10_BiBindEfiBootManager.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "BcdCreateObject: Failed to acquire BCD sync mutant. Status: %x"
+    ],
+    "name": "BiBindEfiBootManager",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 882,
+    "size": 834,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetInstallLanguage",
+    "ea": "0x140025948",
+    "function_file": "functions/140025948_GetInstallLanguage.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "Software\\Microsoft\\Active Setup\\Installed Components\\{89820200-ECBD-11CF-8B85-00AA005B4383}"
+    ],
+    "name": "GetInstallLanguage",
+    "prototype": "__int64()",
+    "rank_score": 875,
+    "size": 259,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "BiCleanupLoadedStores",
+    "ea": "0x14001b354",
+    "function_file": "functions/14001b354_BiCleanupLoadedStores.md",
+    "matched_imports": [
+      "msvcrt!_wcsnicmp",
+      "msvcrt!wcstoul",
+      "ntdll!RtlFreeHeap",
+      "ntdll!ZwClose"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine"
+    ],
+    "name": "BiCleanupLoadedStores",
+    "prototype": "char __fastcall(char)",
+    "rank_score": 873,
+    "size": 353,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "BiLookupNtdllProcedureAddress",
+    "ea": "0x140020678",
+    "function_file": "functions/140020678_BiLookupNtdllProcedureAddress.md",
+    "matched_imports": [
+      "ntdll!LdrGetDllHandle",
+      "ntdll!LdrGetProcedureAddress",
+      "ntdll!RtlInitAnsiString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "BiLookupNtdllProcedureAddress",
+    "prototype": "__int64 __fastcall(PCSZ SourceString, PVOID *)",
+    "rank_score": 866,
+    "size": 160,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BfspValidateDeviceOptions",
+    "ea": "0x140009528",
+    "function_file": "functions/140009528_BfspValidateDeviceOptions.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "OVERLAY_CONFIG_PATH missing"
+    ],
+    "name": "BfspValidateDeviceOptions",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, _DWORD *)",
+    "rank_score": 859,
+    "size": 297,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BiCreateDirectoryPath",
+    "ea": "0x14001ff78",
+    "function_file": "functions/14001ff78_BiCreateDirectoryPath.md",
+    "matched_imports": [
+      "msvcrt!wcschr",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwCreateFile"
+    ],
+    "matched_strings": [],
+    "name": "BiCreateDirectoryPath",
+    "prototype": "__int64 __fastcall(void *, const wchar_t *, ULONG)",
+    "rank_score": 855,
+    "size": 288,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BiGetPhysicalDiskNumber",
+    "ea": "0x140017aec",
+    "function_file": "functions/140017aec_BiGetPhysicalDiskNumber.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "BiGetPhysicalDiskNumber",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, _DWORD *)",
+    "rank_score": 846,
+    "size": 268,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BiIsVolumePartitionInformationRetained",
+    "ea": "0x140017ee4",
+    "function_file": "functions/140017ee4_BiIsVolumePartitionInformationRetained.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwDeviceIoControlFile",
+      "ntdll!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "BiIsVolumePartitionInformationRetained",
+    "prototype": "bool __fastcall(PCWSTR SourceString)",
+    "rank_score": 844,
+    "size": 268,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BiUpdateObjectReferenceInEfiEntry",
+    "ea": "0x140025368",
+    "function_file": "functions/140025368_BiUpdateObjectReferenceInEfiEntry.md",
+    "matched_imports": [
+      "msvcrt!_wcsupr",
+      "msvcrt!wcsstr",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiUpdateObjectReferenceInEfiEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 830,
+    "size": 353,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BiGetNtPartitionPath",
+    "ea": "0x1400171b4",
+    "function_file": "functions/1400171b4_BiGetNtPartitionPath.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiGetNtPartitionPath",
+    "prototype": "__int64 __fastcall(int, _QWORD *)",
+    "rank_score": 827,
+    "size": 347,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BiIsBootRamdisk",
+    "ea": "0x140017db0",
+    "function_file": "functions/140017db0_BiIsBootRamdisk.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwDeviceIoControlFile",
+      "ntdll!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "BiIsBootRamdisk",
+    "prototype": "char __fastcall(_QWORD *)",
+    "rank_score": 825,
+    "size": 302,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 14,
+    "demangled": "BfspGetBcdElementData",
+    "ea": "0x140006a14",
+    "function_file": "functions/140006a14_BfspGetBcdElementData.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "BfspGetBcdElementData",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, _QWORD *, _DWORD *)",
+    "rank_score": 818,
+    "size": 235,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SiGetBiosSystemPartition",
+    "ea": "0x140025764",
+    "function_file": "functions/140025764_SiGetBiosSystemPartition.md",
+    "matched_imports": [
+      "msvcrt!wcsstr",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SiGetBiosSystemPartition",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 817,
+    "size": 312,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SiBootEntryGetNtFilePath",
+    "ea": "0x14001dbe0",
+    "function_file": "functions/14001dbe0_SiBootEntryGetNtFilePath.md",
+    "matched_imports": [
+      "ntdll!NtTranslateFilePath",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SiBootEntryGetNtFilePath",
+    "prototype": "__int64 __fastcall(__int64, struct _FILE_PATH **)",
+    "rank_score": 813,
+    "size": 183,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "BfspDeleteObjectFromDisplayOrder",
+    "ea": "0x14000619c",
+    "function_file": "functions/14000619c_BfspDeleteObjectFromDisplayOrder.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "BfspDeleteObjectFromDisplayOrder",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 809,
+    "size": 245,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfspScanAllDrivesForPath",
+    "ea": "0x140008694",
+    "function_file": "functions/140008694_BfspScanAllDrivesForPath.md",
+    "matched_imports": [
+      "KERNEL32!FindFirstVolumeW",
+      "KERNEL32!FindNextVolumeW",
+      "KERNEL32!FindVolumeClose",
+      "KERNEL32!QueryDosDeviceW"
+    ],
+    "matched_strings": [],
+    "name": "BfspScanAllDrivesForPath",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 807,
+    "size": 268,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BfspDeleteObjectInList",
+    "ea": "0x140006298",
+    "function_file": "functions/140006298_BfspDeleteObjectInList.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "BfspDeleteObjectInList",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, _QWORD *, _QWORD *, _DWORD *)",
+    "rank_score": 804,
+    "size": 204,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SiGetEfiSystemDevice",
+    "ea": "0x14001dd64",
+    "function_file": "functions/14001dd64_SiGetEfiSystemDevice.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Disambiguation successful. Device Path: %ws",
+      "System Device Path Found. Device Path: %ws",
+      "Attempting Disambiguation of system device. Found %lu ESP partitions and %lu Virtual ESP partitions."
+    ],
+    "name": "SiGetEfiSystemDevice",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 751,
+    "size": 428,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "BfspCreateOsLoaderObject",
+    "ea": "0x140005b98",
+    "function_file": "functions/140005b98_BfspCreateOsLoaderObject.md",
+    "matched_imports": [
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlStringFromGUID"
+    ],
+    "matched_strings": [
+      "Failed to open handle to the OS loader object. Status = [%x]",
+      "Failed to copy OS loader object data. Status = [%x]"
+    ],
+    "name": "BfspCreateOsLoaderObject",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int128 *)",
+    "rank_score": 726,
+    "size": 633,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 8,
+    "demangled": "BiOpenStoreWithHash",
+    "ea": "0x14001bb00",
+    "function_file": "functions/14001bb00_BiOpenStoreWithHash.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to open system store. Status: %x",
+      "Store path: \"%s\"",
+      "Store will be accessed with offline registry APIs.",
+      "BcdOpenStore: Failed to add store from file %ws. StoreFlags: 0x%x Status: %x",
+      "BcdOpenStore: Failed to acquire BCD sync Mutant. Store: %ws Flags: 0x%x Status: %x",
+      "Opening store. Flags: 0x%x",
+      "GuidCache"
+    ],
+    "name": "BiOpenStoreWithHash",
+    "prototype": "__int64 __fastcall(const void **, unsigned int, __int64, __int64 *)",
+    "rank_score": 722,
+    "size": 571,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x140001548",
+    "function_file": "functions/140001548_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "BOOL __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BfspShouldUseExFiles",
+    "ea": "0x14000fca0",
+    "function_file": "functions/14000fca0_BfspShouldUseExFiles.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!NtQuerySystemInformation"
+    ],
+    "matched_strings": [
+      "Using EX bins because bootmgfw on ESP is 2023 already."
+    ],
+    "name": "BfspShouldUseExFiles",
+    "prototype": "__int64 __fastcall(__int16, const WCHAR *, const wchar_t **, _DWORD *)",
+    "rank_score": 672,
+    "size": 646,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BiDoesHiveKeyExist",
+    "ea": "0x14001ed70",
+    "function_file": "functions/14001ed70_BiDoesHiveKeyExist.md",
+    "matched_imports": [
+      "msvcrt!wcschr",
+      "ntdll!ZwClose"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine"
+    ],
+    "name": "BiDoesHiveKeyExist",
+    "prototype": "bool __fastcall(const wchar_t *)",
+    "rank_score": 664,
+    "size": 168,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BiCreateHive",
+    "ea": "0x14001e648",
+    "function_file": "functions/14001e648_BiCreateHive.md",
+    "matched_imports": [
+      "ntdll!ZwClose",
+      "ntdll!ZwCreateFile",
+      "ntdll!ZwSaveKey"
+    ],
+    "matched_strings": [],
+    "name": "BiCreateHive",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, struct _UNICODE_STRING *)",
+    "rank_score": 655,
+    "size": 224,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SiOpenRegistryKey",
+    "ea": "0x14001d5bc",
+    "function_file": "functions/14001d5bc_SiOpenRegistryKey.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SiOpenRegistryKey",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, __int64, void **)",
+    "rank_score": 653,
+    "size": 168,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "BiOpenKeyNonBcd",
+    "ea": "0x14001fb48",
+    "function_file": "functions/14001fb48_BiOpenKeyNonBcd.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "BiOpenKeyNonBcd",
+    "prototype": "__int64 __fastcall(void *, const WCHAR *, ACCESS_MASK, void **)",
+    "rank_score": 647,
+    "size": 270,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BiGetDriveLayoutInformation",
+    "ea": "0x1400170dc",
+    "function_file": "functions/1400170dc_BiGetDriveLayoutInformation.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "BiGetDriveLayoutInformation",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString)",
+    "rank_score": 645,
+    "size": 208,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BfspCreateRecoveryStore",
+    "ea": "0x140005e18",
+    "function_file": "functions/140005e18_BfspCreateRecoveryStore.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Opening recovery store from %ws",
+      "Failed to create create {bootmgr} object. Status = [%x]",
+      "Failed to create a new recovery store. Status = [%x]",
+      "Failed to open recovery store. Status = [%x]",
+      "Failed to create create general objects. Status = [%x]"
+    ],
+    "name": "BfspCreateRecoveryStore",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 632,
+    "size": 421,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "BiDeleteRegistryValue",
+    "ea": "0x14001ece0",
+    "function_file": "functions/14001ece0_BiDeleteRegistryValue.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwDeleteValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BiDeleteRegistryValue",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, void *)",
+    "rank_score": 628,
+    "size": 138,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BiOpenEffectiveToken",
+    "ea": "0x14002180c",
+    "function_file": "functions/14002180c_BiOpenEffectiveToken.md",
+    "matched_imports": [
+      "ntdll!NtOpenProcessTokenEx",
+      "ntdll!NtOpenThreadTokenEx"
+    ],
+    "matched_strings": [],
+    "name": "BiOpenEffectiveToken",
+    "prototype": "int __fastcall(PHANDLE TokenHandle)",
+    "rank_score": 622,
+    "size": 116,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "BiDeleteKey",
+    "ea": "0x14001ec14",
+    "function_file": "functions/14001ec14_BiDeleteKey.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!ZwClose",
+      "ntdll!ZwDeleteKey"
+    ],
+    "matched_strings": [],
+    "name": "BiDeleteKey",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 620,
+    "size": 197,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfspGetMappedFileVersion",
+    "ea": "0x140010088",
+    "function_file": "functions/140010088_BfspGetMappedFileVersion.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp",
+      "ntdll!LdrAccessResource",
+      "ntdll!LdrFindResource_U"
+    ],
+    "matched_strings": [],
+    "name": "BfspGetMappedFileVersion",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 616,
+    "size": 259,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BfspIsSecuritySupported",
+    "ea": "0x14000c82c",
+    "function_file": "functions/14000c82c_BfspIsSecuritySupported.md",
+    "matched_imports": [
+      "KERNEL32!GetVolumeInformationW",
+      "KERNEL32!GetVolumePathNameW",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "BfspIsSecuritySupported",
+    "prototype": "__int64 __fastcall(const WCHAR *)",
+    "rank_score": 614,
+    "size": 164,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "pre_c_init",
+    "ea": "0x140001240",
+    "function_file": "functions/140001240_pre_c_init.md",
+    "matched_imports": [
+      "msvcrt!__set_app_type",
+      "msvcrt!__setusermatherr",
+      "msvcrt!_commode",
+      "msvcrt!_fmode"
+    ],
+    "matched_strings": [],
+    "name": "pre_c_init",
+    "prototype": "__int64()",
+    "rank_score": 614,
+    "size": 215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SiGetArcPathMnemonicKey",
+    "ea": "0x14001c9e4",
+    "function_file": "functions/14001c9e4_SiGetArcPathMnemonicKey.md",
+    "matched_imports": [
+      "msvcrt!wcsstr",
+      "msvcrt!wcstoul"
+    ],
+    "matched_strings": [],
+    "name": "SiGetArcPathMnemonicKey",
+    "prototype": "char __fastcall(wchar_t *Str, wchar_t *, unsigned int *, int)",
+    "rank_score": 606,
+    "size": 298,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfspFlushSystemPartition",
+    "ea": "0x140002ba8",
+    "function_file": "functions/140002ba8_BfspFlushSystemPartition.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!FlushFileBuffers",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "BfspFlushSystemPartition",
+    "prototype": "__int64()",
+    "rank_score": 604,
+    "size": 102,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 14,
+    "demangled": "BcdSetElementDataWithFlags",
+    "ea": "0x140018b54",
+    "function_file": "functions/140018b54_BcdSetElementDataWithFlags.md",
+    "matched_imports": [
+      "msvcrt!_ultow_s",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to open key for object's elements. Status: %x",
+      "Failed to open key for element %s. Status: %x",
+      "Failed to set registry data for element %s. Status: %x"
+    ],
+    "name": "BcdSetElementDataWithFlags",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, __int64, unsigned int)",
+    "rank_score": 574,
+    "size": 754,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 13,
+    "demangled": "BcdGetElementDataWithFlags",
+    "ea": "0x140018890",
+    "function_file": "functions/140018890_BcdGetElementDataWithFlags.md",
+    "matched_imports": [
+      "msvcrt!_ultow_s",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "BcdGetElementDataWithFlags: Failed to open elements key.Object: %ws Status: %x",
+      "BcdGetElementDataWithFlags: Failed to open key.Object: %ws Type: %ws Status: %x",
+      "BcdGetElementDataWithFlags: Failed to get registry value.Object: %ws Reg type: %lu Status: %x"
+    ],
+    "name": "BcdGetElementDataWithFlags",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, __int64, __int64, _DWORD *)",
+    "rank_score": 569,
+    "size": 700,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 24,
+    "demangled": "BiCloseKey",
+    "ea": "0x14001e5e4",
+    "function_file": "functions/14001e5e4_BiCloseKey.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!ZwClose",
+      "ntdll!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BiCloseKey",
+    "prototype": "NTSTATUS __fastcall(HANDLE Handle)",
+    "rank_score": 556,
+    "size": 92,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 1,
+    "demangled": "BfsCleanupBcdStore",
+    "ea": "0x140003d30",
+    "function_file": "functions/140003d30_BfsCleanupBcdStore.md",
+    "matched_imports": [
+      "KERNEL32!SetLastError",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [
+      "Attempting to enumerate objects",
+      "Failed to delete duplicate winloads. Status = [%x]"
+    ],
+    "name": "BfsCleanupBcdStore",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 549,
+    "size": 842,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfspOpenTemplateStore",
+    "ea": "0x140007c10",
+    "function_file": "functions/140007c10_BfspOpenTemplateStore.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\System32\\config\\BCD-Template",
+      "Opening template from %ws.",
+      "Could not open the BCD template store. Status = [%x]"
+    ],
+    "name": "BfspOpenTemplateStore",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 546,
+    "size": 198,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "BiTranslateFilePath",
+    "ea": "0x140024b30",
+    "function_file": "functions/140024b30_BiTranslateFilePath.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "ZwTranslateFilePath",
+      "BiTranslateFilePath failed. File type: %lu. Status: %x"
+    ],
+    "name": "BiTranslateFilePath",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, _QWORD *)",
+    "rank_score": 511,
+    "size": 327,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BfspCleanupRecoveryStore",
+    "ea": "0x140004f9c",
+    "function_file": "functions/140004f9c_BfspCleanupRecoveryStore.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Opening recovery store from %ws",
+      "Failed to open recovery store %ws. Status = [%x]"
+    ],
+    "name": "BfspCleanupRecoveryStore",
+    "prototype": "__int64()",
+    "rank_score": 510,
+    "size": 349,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_GetCurrentFeatureEnabledState",
+    "ea": "0x14000e26c",
+    "function_file": "functions/14000e26c_wil_details_GetCurrentFeatureEnabledState.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlQueryFeatureConfiguration"
+    ],
+    "name": "wil_details_GetCurrentFeatureEnabledState",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 509,
+    "size": 581,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BiAdoptStore",
+    "ea": "0x14001b1f4",
+    "function_file": "functions/14001b1f4_BiAdoptStore.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Failed to get system store path. Status: %x",
+      "Failed to open store from path. File: %ws Status: %x"
+    ],
+    "name": "BiAdoptStore",
+    "prototype": "__int64()",
+    "rank_score": 502,
+    "size": 344,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "BcdCopyObjects",
+    "ea": "0x140014ec8",
+    "function_file": "functions/140014ec8_BcdCopyObjects.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Copying objects. Version: %d. Type: 0x%08x"
+    ],
+    "name": "BcdCopyObjects",
+    "prototype": "__int64 __fastcall(__int64, unsigned int *, unsigned int, __int64)",
+    "rank_score": 465,
+    "size": 448,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BiIsWinPEBoot",
+    "ea": "0x140020298",
+    "function_file": "functions/140020298_BiIsWinPEBoot.md",
+    "matched_imports": [
+      "msvcrt!wcsstr",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control"
+    ],
+    "name": "BiIsWinPEBoot",
+    "prototype": "bool()",
+    "rank_score": 465,
+    "size": 131,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x14000e034",
+    "function_file": "functions/14000e034_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "_BOOL8 __fastcall(__int64, __int64, int)",
+    "rank_score": 465,
+    "size": 197,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SiIsWinPEBoot",
+    "ea": "0x14001d3f8",
+    "function_file": "functions/14001d3f8_SiIsWinPEBoot.md",
+    "matched_imports": [
+      "msvcrt!wcsstr",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control"
+    ],
+    "name": "SiIsWinPEBoot",
+    "prototype": "bool __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 464,
+    "size": 123,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfspAdjustDebugPrivilege",
+    "ea": "0x140002928",
+    "function_file": "functions/140002928_BfspAdjustDebugPrivilege.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "SeDebugPrivilege"
+    ],
+    "name": "BfspAdjustDebugPrivilege",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 454,
+    "size": 119,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BfspIdentifierIsReferenced",
+    "ea": "0x140006b08",
+    "function_file": "functions/140006b08_BfspIdentifierIsReferenced.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Failed to open a handle to the object element. Status = [%x]"
+    ],
+    "name": "BfspIdentifierIsReferenced",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, _QWORD *, __int64, unsigned int, _BYTE *)",
+    "rank_score": 450,
+    "size": 455,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "BiAcquirePrivilege",
+    "ea": "0x14002166c",
+    "function_file": "functions/14002166c_BiAcquirePrivilege.md",
+    "matched_imports": [
+      "ntdll!NtSetInformationThread",
+      "ntdll!RtlImpersonateSelf"
+    ],
+    "matched_strings": [],
+    "name": "BiAcquirePrivilege",
+    "prototype": "NTSTATUS __fastcall(unsigned int, __int64)",
+    "rank_score": 447,
+    "size": 138,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "SiOpenDevice",
+    "ea": "0x14001d514",
+    "function_file": "functions/14001d514_SiOpenDevice.md",
+    "matched_imports": [
+      "ntdll!NtOpenFile",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SiOpenDevice",
+    "prototype": "NTSTATUS __fastcall(PCWSTR SourceString, PHANDLE FileHandle)",
+    "rank_score": 446,
+    "size": 160,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 8,
+    "demangled": "BiDeleteElement",
+    "ea": "0x140019990",
+    "function_file": "functions/140019990_BiDeleteElement.md",
+    "matched_imports": [
+      "msvcrt!_ultow_s"
+    ],
+    "matched_strings": [
+      "BiDeleteElement: Failed to acquire BCD sync mutant. Status: %x",
+      "Failed to filter delete element %08x. Status: %x",
+      "Failed to open key for all object's elements. Status: %x",
+      "Failed to open element %ws key for delete. Status: %x",
+      "Failed to open element %ws key for delete. Status: %x"
+    ],
+    "name": "BiDeleteElement",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, char)",
+    "rank_score": 443,
+    "size": 545,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BiGetCurrentBcdMutantHandle",
+    "ea": "0x14001b57c",
+    "function_file": "functions/14001b57c_BiGetCurrentBcdMutantHandle.md",
+    "matched_imports": [
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenMutant"
+    ],
+    "matched_strings": [],
+    "name": "BiGetCurrentBcdMutantHandle",
+    "prototype": "NTSTATUS __fastcall(_QWORD *)",
+    "rank_score": 443,
+    "size": 200,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SiOpenArcNameObject",
+    "ea": "0x1400258a4",
+    "function_file": "functions/1400258a4_SiOpenArcNameObject.md",
+    "matched_imports": [
+      "ntdll!NtOpenSymbolicLinkObject",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SiOpenArcNameObject",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, void **)",
+    "rank_score": 443,
+    "size": 158,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfspBsdLogServicingEvent",
+    "ea": "0x140002a00",
+    "function_file": "functions/140002a00_BfspBsdLogServicingEvent.md",
+    "matched_imports": [
+      "KERNEL32!CreateFileW",
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [],
+    "name": "BfspBsdLogServicingEvent",
+    "prototype": "int __fastcall(LPCWSTR lpFileName, int)",
+    "rank_score": 437,
+    "size": 283,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 10,
+    "demangled": "BiSetRegistryValue",
+    "ea": "0x14001fc5c",
+    "function_file": "functions/14001fc5c_BiSetRegistryValue.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BiSetRegistryValue",
+    "prototype": "__int64 __fastcall(unsigned __int64, const WCHAR *, const WCHAR *, ULONG, PVOID Data, ULONG DataSize)",
+    "rank_score": 435,
+    "size": 280,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "BiQueryBootEntryOrder",
+    "ea": "0x140024714",
+    "function_file": "functions/140024714_BiQueryBootEntryOrder.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiQueryBootEntryOrder",
+    "prototype": "__int64 __fastcall(_QWORD *, unsigned int *)",
+    "rank_score": 433,
+    "size": 288,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BiAdjustPrivilege",
+    "ea": "0x1400216fc",
+    "function_file": "functions/1400216fc_BiAdjustPrivilege.md",
+    "matched_imports": [
+      "ntdll!NtAdjustPrivilegesToken",
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [],
+    "name": "BiAdjustPrivilege",
+    "prototype": "__int64 __fastcall(DWORD, char, bool *)",
+    "rank_score": 427,
+    "size": 264,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BiDeleteEfiNamespaceObjects",
+    "ea": "0x1400232c4",
+    "function_file": "functions/1400232c4_BiDeleteEfiNamespaceObjects.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiDeleteEfiNamespaceObjects",
+    "prototype": "__int64 __fastcall(char)",
+    "rank_score": 420,
+    "size": 382,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SiValidateSystemPartition",
+    "ea": "0x14001d998",
+    "function_file": "functions/14001d998_SiValidateSystemPartition.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "SiValidateSystemPartition",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, _DWORD *, __int64, __int64, char)",
+    "rank_score": 420,
+    "size": 435,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "BiGetElement",
+    "ea": "0x14001a5d8",
+    "function_file": "functions/14001a5d8_BiGetElement.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiGetElement",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, _QWORD *, _DWORD *)",
+    "rank_score": 419,
+    "size": 208,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BiConvertNtFilePathToBootEnvironment",
+    "ea": "0x1400164a0",
+    "function_file": "functions/1400164a0_BiConvertNtFilePathToBootEnvironment.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiConvertNtFilePathToBootEnvironment",
+    "prototype": "__int64 __fastcall(_DWORD *, __int64, _WORD *, unsigned int, _QWORD *)",
+    "rank_score": 417,
+    "size": 269,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BiGetSystemPartition",
+    "ea": "0x14001c458",
+    "function_file": "functions/14001c458_BiGetSystemPartition.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiGetSystemPartition",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 415,
+    "size": 170,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BfspSetThreadPagePriority",
+    "ea": "0x140003884",
+    "function_file": "functions/140003884_BfspSetThreadPagePriority.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThread",
+      "ntdll!NtSetInformationThread"
+    ],
+    "matched_strings": [],
+    "name": "BfspSetThreadPagePriority",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 413,
+    "size": 73,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "BfspGetThreadPagePriority",
+    "ea": "0x140002ec8",
+    "function_file": "functions/140002ec8_BfspGetThreadPagePriority.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThread",
+      "ntdll!NtQueryInformationThread"
+    ],
+    "matched_strings": [],
+    "name": "BfspGetThreadPagePriority",
+    "prototype": "__int64()",
+    "rank_score": 412,
+    "size": 70,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsTryCommitFveChanges",
+    "ea": "0x14001062c",
+    "function_file": "functions/14001062c_BfsTryCommitFveChanges.md",
+    "matched_imports": [
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [
+      "BfsTryCommitFveChanges failed.retry = %dHRESULT = [%x]",
+      "FveCommitChanges failed (FveCommitChangesEx Unavailable).retry = %dHRESULT = [%x]",
+      "FveCommitChanges failed.retry = %dHRESULT = [%x]",
+      "FveCommitChangesEx failed.retry = %dHRESULT = [%x]"
+    ],
+    "name": "BfsTryCommitFveChanges",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 375,
+    "size": 245,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "BfspCreateMemtestObject",
+    "ea": "0x1400058e4",
+    "function_file": "functions/1400058e4_BfspCreateMemtestObject.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s"
+    ],
+    "matched_strings": [
+      "Failed to set element application path. Status = [%x]",
+      "Failed to open handle to Memtest object. Status = [%x]",
+      "Failed to copy memtest object. Status = [%x]"
+    ],
+    "name": "BfspCreateMemtestObject",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 355,
+    "size": 508,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "BiCreateEfiEntry",
+    "ea": "0x140022cb8",
+    "function_file": "functions/140022cb8_BiCreateEfiEntry.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Created boot entry %d '%ws' using cached variable",
+      "Created new boot entry %d '%ws'",
+      "BiCreateEfiEntry failed %x"
+    ],
+    "name": "BiCreateEfiEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 355,
+    "size": 462,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 5,
+    "demangled": "BfspSetObjectDeviceAndPath",
+    "ea": "0x140008844",
+    "function_file": "functions/140008844_BfspSetObjectDeviceAndPath.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s"
+    ],
+    "matched_strings": [
+      "Failed to get handle to the template store. Status = [%x]",
+      "Failed to get element application path. Status = [%x]",
+      "Failed to set element application path. Status = [%x]"
+    ],
+    "name": "BfspSetObjectDeviceAndPath",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *, _QWORD *)",
+    "rank_score": 351,
+    "size": 1064,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BfspSuspendBitLocker",
+    "ea": "0x140010bac",
+    "function_file": "functions/140010bac_BfspSuspendBitLocker.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary"
+    ],
+    "matched_strings": [
+      "BfspOpenFveApi failed.FveApiFound = %d,HRESULT = [%x]",
+      "FveOpenVolumeW failed.HRESULT = [%x]",
+      "BfsTryCommitFveChanges failed.HRESULT = [%x]"
+    ],
+    "name": "BfspSuspendBitLocker",
+    "prototype": "__int64 __fastcall(__int64, __int64, _DWORD *, _DWORD *)",
+    "rank_score": 342,
+    "size": 629,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SiDisambiguateSystemDevice",
+    "ea": "0x14001dca0",
+    "function_file": "functions/14001dca0_SiDisambiguateSystemDevice.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control\\Syspart",
+      "SystemPartition"
+    ],
+    "name": "SiDisambiguateSystemDevice",
+    "prototype": "__int64 __fastcall(_DWORD *, _DWORD *, __int64, int)",
+    "rank_score": 315,
+    "size": 189,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "BiAddStoreFromFile",
+    "ea": "0x14001af00",
+    "function_file": "functions/14001af00_BiAddStoreFromFile.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s"
+    ],
+    "matched_strings": [
+      "Failed to open description key for store. Store: %s StoreKey: %ws Status: %x",
+      "Failed to find a key to load store %s. Last attempted key: %ws"
+    ],
+    "name": "BiAddStoreFromFile",
+    "prototype": "__int64 __fastcall(__int64, char, __int64, _QWORD *)",
+    "rank_score": 308,
+    "size": 748,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BiAllocateCachedGuid",
+    "ea": "0x1400207d4",
+    "function_file": "functions/1400207d4_BiAllocateCachedGuid.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "GuidCache",
+      "GuidCache"
+    ],
+    "name": "BiAllocateCachedGuid",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, _DWORD *, __int64)",
+    "rank_score": 308,
+    "size": 303,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "BiIsPortableWorkspaceBoot",
+    "ea": "0x1400201ec",
+    "function_file": "functions/1400201ec_BiIsPortableWorkspaceBoot.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\MiniNT"
+    ],
+    "name": "BiIsPortableWorkspaceBoot",
+    "prototype": "bool()",
+    "rank_score": 307,
+    "size": 165,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SiIsValidDiskDevice",
+    "ea": "0x140020ae8",
+    "function_file": "functions/140020ae8_SiIsValidDiskDevice.md",
+    "matched_imports": [
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "SymbolicLink",
+      "Directory"
+    ],
+    "name": "SiIsValidDiskDevice",
+    "prototype": "char __fastcall(wchar_t *String1, wchar_t *, int *)",
+    "rank_score": 294,
+    "size": 182,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BiDeleteEfiVariable",
+    "ea": "0x140023448",
+    "function_file": "functions/140023448_BiDeleteEfiVariable.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Failed to delete \"%ws\" variable. Status: %x"
+    ],
+    "name": "BiDeleteEfiVariable",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString)",
+    "rank_score": 280,
+    "size": 364,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BiGetFilePathFromEfiPath",
+    "ea": "0x140024160",
+    "function_file": "functions/140024160_BiGetFilePathFromEfiPath.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [
+      "BiGetFilePathFromEfiPath failed %x"
+    ],
+    "name": "BiGetFilePathFromEfiPath",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, unsigned int *)",
+    "rank_score": 257,
+    "size": 342,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BcdOpenSystemStore",
+    "ea": "0x14001ae30",
+    "function_file": "functions/14001ae30_BcdOpenSystemStore.md",
+    "matched_imports": [
+      "ntdll!ZwReleaseMutant"
+    ],
+    "matched_strings": [
+      "BcdOpenSystemStore: Failed to acquire BCD sync mutant.Status: %x"
+    ],
+    "name": "BcdOpenSystemStore",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 255,
+    "size": 94,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SiGetBootDeviceNameFromRegistry",
+    "ea": "0x14001cbe4",
+    "function_file": "functions/14001cbe4_SiGetBootDeviceNameFromRegistry.md",
+    "matched_imports": [
+      "msvcrt!_wcslwr"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control"
+    ],
+    "name": "SiGetBootDeviceNameFromRegistry",
+    "prototype": "__int64 __fastcall(int, wchar_t **, __int64, int)",
+    "rank_score": 255,
+    "size": 159,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BfsWillBitLockerResealSucceed",
+    "ea": "0x140010728",
+    "function_file": "functions/140010728_BfsWillBitLockerResealSucceed.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary"
+    ],
+    "matched_strings": [
+      "BfsWillBitLockerResealSucceed: BfspOpenFveApi failed. FveApiFound = %d, HRESULT = [%x]"
+    ],
+    "name": "BfsWillBitLockerResealSucceed",
+    "prototype": "__int64 __fastcall(unsigned int *)",
+    "rank_score": 250,
+    "size": 327,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "BiReleasePrivilege",
+    "ea": "0x140021888",
+    "function_file": "functions/140021888_BiReleasePrivilege.md",
+    "matched_imports": [
+      "ntdll!NtSetInformationThread"
+    ],
+    "matched_strings": [],
+    "name": "BiReleasePrivilege",
+    "prototype": "NTSTATUS __fastcall(__int64)",
+    "rank_score": 236,
+    "size": 83,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 19,
+    "demangled": "BiAcquireBcdSyncMutant",
+    "ea": "0x14001ae94",
+    "function_file": "functions/14001ae94_BiAcquireBcdSyncMutant.md",
+    "matched_imports": [
+      "ntdll!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "BiAcquireBcdSyncMutant",
+    "prototype": "NTSTATUS __fastcall(char)",
+    "rank_score": 231,
+    "size": 99,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "BiGetObjectDescription",
+    "ea": "0x140014574",
+    "function_file": "functions/140014574_BiGetObjectDescription.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiGetObjectDescription",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 230,
+    "size": 214,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "BiIsSystemStore",
+    "ea": "0x14001b64c",
+    "function_file": "functions/14001b64c_BiIsSystemStore.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiIsSystemStore",
+    "prototype": "bool __fastcall(unsigned __int64)",
+    "rank_score": 230,
+    "size": 151,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 64,
+    "demangled": "BiLogMessage",
+    "ea": "0x1400133e4",
+    "function_file": "functions/1400133e4_BiLogMessage.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "BiLogMessage",
+    "prototype": "__int64(int, const wchar_t *, ...)",
+    "rank_score": 229,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 18,
+    "demangled": "BiReleaseBcdSyncMutant",
+    "ea": "0x14001c014",
+    "function_file": "functions/14001c014_BiReleaseBcdSyncMutant.md",
+    "matched_imports": [
+      "ntdll!ZwReleaseMutant"
+    ],
+    "matched_strings": [],
+    "name": "BiReleaseBcdSyncMutant",
+    "prototype": "NTSTATUS __fastcall(char)",
+    "rank_score": 229,
+    "size": 34,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "BfspBsdLogRead",
+    "ea": "0x1400029a8",
+    "function_file": "functions/1400029a8_BfspBsdLogRead.md",
+    "matched_imports": [
+      "ntdll!NtReadFile"
+    ],
+    "matched_strings": [],
+    "name": "BfspBsdLogRead",
+    "prototype": "NTSTATUS __fastcall(unsigned int, void *, ULONG)",
+    "rank_score": 221,
+    "size": 79,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "BfspBsdLogWrite",
+    "ea": "0x140002b24",
+    "function_file": "functions/140002b24_BfspBsdLogWrite.md",
+    "matched_imports": [
+      "ntdll!NtWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "BfspBsdLogWrite",
+    "prototype": "NTSTATUS __fastcall(unsigned int, void *, ULONG)",
+    "rank_score": 221,
+    "size": 79,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "BiGetFirmwareType",
+    "ea": "0x14001c3a8",
+    "function_file": "functions/14001c3a8_BiGetFirmwareType.md",
+    "matched_imports": [
+      "ntdll!ZwQuerySystemInformation"
+    ],
+    "matched_strings": [],
+    "name": "BiGetFirmwareType",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 221,
+    "size": 167,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "BfspFileExists",
+    "ea": "0x140002b7c",
+    "function_file": "functions/140002b7c_BfspFileExists.md",
+    "matched_imports": [
+      "KERNEL32!GetFileAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "BfspFileExists",
+    "prototype": "__int64 __fastcall(const WCHAR *)",
+    "rank_score": 219,
+    "size": 35,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BiOpenStoreKeyFromObject",
+    "ea": "0x14001ba1c",
+    "function_file": "functions/14001ba1c_BiOpenStoreKeyFromObject.md",
+    "matched_imports": [
+      "ntdll!ZwQueryKey"
+    ],
+    "matched_strings": [],
+    "name": "BiOpenStoreKeyFromObject",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, void **)",
+    "rank_score": 218,
+    "size": 219,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "BiGetPartitionVhdFilePath",
+    "ea": "0x140017800",
+    "function_file": "functions/140017800_BiGetPartitionVhdFilePath.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BiGetPartitionVhdFilePath",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString)",
+    "rank_score": 215,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BiRemoveBootEntryFromNvramDisplayOrder",
+    "ea": "0x14002496c",
+    "function_file": "functions/14002496c_BiRemoveBootEntryFromNvramDisplayOrder.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BiRemoveBootEntryFromNvramDisplayOrder",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 215,
+    "size": 180,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "BiStringFromGUID",
+    "ea": "0x140020720",
+    "function_file": "functions/140020720_BiStringFromGUID.md",
+    "matched_imports": [
+      "msvcrt!swprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "BiStringFromGUID",
+    "prototype": "__int64 __fastcall(unsigned int *, __int64)",
+    "rank_score": 211,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "SiLogMessage",
+    "ea": "0x14001c844",
+    "function_file": "functions/14001c844_SiLogMessage.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "SiLogMessage",
+    "prototype": "__int64(int, const wchar_t *, ...)",
+    "rank_score": 209,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTransfer_EventWriteTransfer",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTransfer_EventWriteTransfer.md",
+    "matched_imports": [
+      "ADVAPI32!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, unsigned __int8 *, __int64, __int64, ULONG UserDataCount, struct _EVENT_DATA_DESCRIPTOR *)",
+    "rank_score": 203,
+    "size": 155,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 35,
+    "demangled": "BcdOpenObject",
+    "ea": "0x140013ee8",
+    "function_file": "functions/140013ee8_BcdOpenObject.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to open key for all objects. Status: %x",
+      "Failed to open object's key. Status: %x",
+      "Opening object %s",
+      "BcdOpenObject: Failed to acquire BCD sync mutant. Status: %x"
+    ],
+    "name": "BcdOpenObject",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, _QWORD *)",
+    "rank_score": 197,
+    "size": 468,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 43,
+    "demangled": "memcpy_0",
+    "ea": "0x1400265e2",
+    "function_file": "functions/1400265e2_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 30,
+    "demangled": "memset_0",
+    "ea": "0x1400265fa",
+    "function_file": "functions/1400265fa_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "BiDeleteBootEntry",
+    "ea": "0x140023218",
+    "function_file": "functions/140023218_BiDeleteBootEntry.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ZwDeleteBootEntry",
+      "Failed to delete boot entry 0x%x. Status: %x"
+    ],
+    "name": "BiDeleteBootEntry",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 120,
+    "size": 163,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "BfspCreateResumeObject",
+    "ea": "0x140005fc4",
+    "function_file": "functions/140005fc4_BfspCreateResumeObject.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to open handle to resume object. Status = [%x]",
+      "Failed to copy resume object data. Status = [%x]"
+    ],
+    "name": "BfspCreateResumeObject",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *, __int64)",
+    "rank_score": 114,
+    "size": 466,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "_wcsicmp_0",
+    "ea": "0x140001864",
+    "function_file": "functions/140001864_wcsicmp_0.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "_wcsicmp_0",
+    "prototype": "int __cdecl(const wchar_t *String1, const wchar_t *String2)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "memcmp_0",
+    "ea": "0x1400265d6",
+    "function_file": "functions/1400265d6_memcmp_0.md",
+    "matched_imports": [
+      "msvcrt!memcmp"
+    ],
+    "matched_strings": [],
+    "name": "memcmp_0",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "wcsncmp_0",
+    "ea": "0x14002661e",
+    "function_file": "functions/14002661e_wcsncmp_0.md",
+    "matched_imports": [
+      "msvcrt!wcsncmp"
+    ],
+    "matched_strings": [],
+    "name": "wcsncmp_0",
+    "prototype": "int __cdecl(const wchar_t *String1, const wchar_t *String2, size_t MaxCount)",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "memmove_0",
+    "ea": "0x1400265ee",
+    "function_file": "functions/1400265ee_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BfspCleanupNtldrSettings",
+    "ea": "0x140004e98",
+    "function_file": "functions/140004e98_BfspCleanupNtldrSettings.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to open a handle to the bootmgr element. Status = [%x]",
+      "Failed to open a handle to the ntldr element. Status = [%x]"
+    ],
+    "name": "BfspCleanupNtldrSettings",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 99,
+    "size": 253,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SyspartGetFirmwarePartition",
+    "ea": "0x140013814",
+    "function_file": "functions/140013814_SyspartGetFirmwarePartition.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "System Firmware Partition Path: %ws",
+      "Firmware Partition Query failed. Will attempt Direct path. Status: %x"
+    ],
+    "name": "SyspartGetFirmwarePartition",
+    "prototype": "__int64 __fastcall(void *, unsigned int, __int64)",
+    "rank_score": 85,
+    "size": 127,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SyspartGetSystemPartition",
+    "ea": "0x140013ac0",
+    "function_file": "functions/140013ac0_SyspartGetSystemPartition.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "System Partition Query failed. Will attempt Direct path. Status: %x",
+      "System Partition Path: %ws"
+    ],
+    "name": "SyspartGetSystemPartition",
+    "prototype": "__int64 __fastcall(void *, unsigned int, __int64)",
+    "rank_score": 85,
+    "size": 127,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "BfspCleanupDebuggerSettings",
+    "ea": "0x140004a60",
+    "function_file": "functions/140004a60_BfspCleanupDebuggerSettings.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to delete debugger settings element %08x. Status = [%x]"
+    ],
+    "name": "BfspCleanupDebuggerSettings",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 75,
+    "size": 951,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BfspCreateNtldrObject",
+    "ea": "0x140005ae8",
+    "function_file": "functions/140005ae8_BfspCreateNtldrObject.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to copy NTLDR object data. Status = [%x]"
+    ],
+    "name": "BfspCreateNtldrObject",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 58,
+    "size": 170,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "BfspCreateGeneralObjects",
+    "ea": "0x14000583c",
+    "function_file": "functions/14000583c_BfspCreateGeneralObjects.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to copy objects of type %08x data. Status = [%x]"
+    ],
+    "name": "BfspCreateGeneralObjects",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 57,
+    "size": 159,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BiCacheGuidValues",
+    "ea": "0x14002090c",
+    "function_file": "functions/14002090c_BiCacheGuidValues.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "GuidCache"
+    ],
+    "name": "BiCacheGuidValues",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, __int64, __int16, __int64)",
+    "rank_score": 57,
+    "size": 190,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 7,
+    "demangled": "BcdDeleteObject",
+    "ea": "0x140013b9c",
+    "function_file": "functions/140013b9c_BcdDeleteObject.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "BcdDeleteObject: Failed to acquire BCD sync mutant. Status: %x"
+    ],
+    "name": "BcdDeleteObject",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 54,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BiGetBcdDeviceType",
+    "ea": "0x140016f38",
+    "function_file": "functions/140016f38_BiGetBcdDeviceType.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "COMPOSITE"
+    ],
+    "name": "BiGetBcdDeviceType",
+    "prototype": "const wchar_t *__fastcall(unsigned int)",
+    "rank_score": 54,
+    "size": 166,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "BfspPopulateNewBcdStore",
+    "ea": "0x140007cdc",
+    "function_file": "functions/140007cdc_BfspPopulateNewBcdStore.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to create create {bootmgr} object. Status = [%x]"
+    ],
+    "name": "BfspPopulateNewBcdStore",
+    "prototype": "__int64 __fastcall(__int64, __int64, GUID *)",
+    "rank_score": 53,
+    "size": 316,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "BiEnumerateSubElements",
+    "ea": "0x14001a264",
+    "function_file": "functions/14001a264_BiEnumerateSubElements.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to open object %ws. Status: %x"
+    ],
+    "name": "BiEnumerateSubElements",
+    "prototype": "__int64 __fastcall(__int64, __int64 *, int, int, _QWORD **, unsigned int *, _DWORD *, _QWORD *, int)",
+    "rank_score": 52,
+    "size": 489,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 91,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140026650",
+    "function_file": "functions/140026650_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 35,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x140027010",
+    "function_file": "functions/140027010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 34,
+    "demangled": "BcdCloseObject",
+    "ea": "0x140013b48",
+    "function_file": "functions/140013b48_BcdCloseObject.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BcdCloseObject",
+    "prototype": "__int64 __fastcall(HANDLE Handle)",
+    "rank_score": 30,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "BiCreateObject",
+    "ea": "0x140014130",
+    "function_file": "functions/140014130_BiCreateObject.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BiCreateObject",
+    "prototype": "__int64 __fastcall(__int64, __int128 *, unsigned int *, char, _QWORD *)",
+    "rank_score": 28,
+    "size": 785,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14000e100",
+    "function_file": "functions/14000e100_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *, __int64, __int64)",
+    "rank_score": 27,
+    "size": 273,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400264f8",
+    "function_file": "functions/1400264f8_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Feature_Servicing_BfsvcDeferServicingOnPcr7Incompatibility__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x14000da90",
+    "function_file": "functions/14000da90_Feature_Servicing_BfsvcDeferServicingOnPcr7Incompatibility_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Servicing_BfsvcDeferServicingOnPcr7Incompatibility__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "__int64()",
+    "rank_score": 23,
+    "size": 42,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Feature_Servicing_BfsvcDeferServicingOnPcr7Incompatibility__private_IsEnabledFallback",
+    "ea": "0x14000dac0",
+    "function_file": "functions/14000dac0_Feature_Servicing_BfsvcDeferServicingOnPcr7Incompatibility_private_IsEnabledFallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Servicing_BfsvcDeferServicingOnPcr7Incompatibility__private_IsEnabledFallback",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 22,
+    "size": 12,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x14000dc30",
+    "function_file": "functions/14000dc30_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "__int64 __fastcall(__int64, volatile signed __int32 *, int, int)",
+    "rank_score": 17,
+    "size": 722,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x14000df08",
+    "function_file": "functions/14000df08_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "__int64 (__fastcall *__fastcall(__int64, __int64, int))(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _QWORD)",
+    "rank_score": 16,
+    "size": 292,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 7,
+    "demangled": "BcdCloseStore",
+    "ea": "0x14001a8c4",
+    "function_file": "functions/14001a8c4_BcdCloseStore.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BcdCloseStore",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 15,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlpImageNtHeader",
+    "ea": "0x1400018dc",
+    "function_file": "functions/1400018dc_RtlpImageNtHeader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlpImageNtHeader",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 12,
+    "size": 81,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x14000e218",
+    "function_file": "functions/14000e218_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "void __fastcall(unsigned __int8, int, __int64)",
+    "rank_score": 12,
+    "size": 78,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "BcdQueryObject",
+    "ea": "0x1400140c4",
+    "function_file": "functions/1400140c4_BcdQueryObject.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BcdQueryObject",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 10,
+    "size": 102,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "BiIsLinkedToFirmwareVariable",
+    "ea": "0x14001c6e4",
+    "function_file": "functions/14001c6e4_BiIsLinkedToFirmwareVariable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BiIsLinkedToFirmwareVariable",
+    "prototype": "char __fastcall(__int64, _DWORD *)",
+    "rank_score": 8,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BsdLogWriteEvent",
+    "ea": "0x140003a48",
+    "function_file": "functions/140003a48_BsdLogWriteEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BsdLogWriteEvent",
+    "prototype": "__int64 __fastcall(__int64, __int64, _DWORD *, void *)",
+    "rank_score": 8,
+    "size": 423,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WdsGetCopyRetryData",
+    "ea": "0x140012f08",
+    "function_file": "functions/140012f08_WdsGetCopyRetryData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdsGetCopyRetryData",
+    "prototype": "__int64 __fastcall(int, _DWORD *, _DWORD *)",
+    "rank_score": 8,
+    "size": 872,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "BfspGetBcdCopyFlags",
+    "ea": "0x1400069e0",
+    "function_file": "functions/1400069e0_BfspGetBcdCopyFlags.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfspGetBcdCopyFlags",
+    "prototype": "int __fastcall(int)",
+    "rank_score": 7,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "BfspLogDestroy",
+    "ea": "0x14000e578",
+    "function_file": "functions/14000e578_BfspLogDestroy.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfspLogDestroy",
+    "prototype": "__int64()",
+    "rank_score": 7,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "BfspLogInitialize",
+    "ea": "0x14000e5c8",
+    "function_file": "functions/14000e5c8_BfspLogInitialize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfspLogInitialize",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 7,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "StringCchCopyW",
+    "ea": "0x140003cbc",
+    "function_file": "functions/140003cbc_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 6,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCchCopyNExW",
+    "ea": "0x140011588",
+    "function_file": "functions/140011588_StringCchCopyNExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyNExW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy, STRSAFE_LPWSTR *ppszDestEnd, size_t *pcchRemaining, DWORD dwFlags)",
+    "rank_score": 4,
+    "size": 223,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCchCopyNW",
+    "ea": "0x140011670",
+    "function_file": "functions/140011670_StringCchCopyNW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyNW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 4,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SiGetSystemPartition",
+    "ea": "0x1400136f0",
+    "function_file": "functions/1400136f0_SiGetSystemPartition.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SiGetSystemPartition",
+    "prototype": "__int64 __fastcall(unsigned int, __int64)",
+    "rank_score": 3,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "StringCchCopyExW",
+    "ea": "0x14000f780",
+    "function_file": "functions/14000f780_StringCchCopyExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyExW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc, STRSAFE_LPWSTR *ppszDestEnd, size_t *pcchRemaining, DWORD dwFlags)",
+    "rank_score": 3,
+    "size": 175,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_tlgEnableCallback",
+    "ea": "0x1400011c0",
+    "function_file": "functions/1400011c0_tlgEnableCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgEnableCallback",
+    "prototype": "void __fastcall(LPCGUID SourceId, __int64 IsEnabled, __int64 Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, _QWORD *CallbackContext)",
+    "rank_score": 2,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SiGetFirmwareSystemPartition",
+    "ea": "0x1400135b0",
+    "function_file": "functions/1400135b0_SiGetFirmwareSystemPartition.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SiGetFirmwareSystemPartition",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 1,
+    "size": 8,
+    "tags": []
+  }
+]

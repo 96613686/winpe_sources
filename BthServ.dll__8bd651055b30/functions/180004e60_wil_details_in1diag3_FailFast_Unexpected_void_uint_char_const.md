@@ -1,0 +1,56 @@
+# wil::details::in1diag3::FailFast_Unexpected(void *,uint,char const *)
+
+- ea: `0x180004e60`
+- end: `0x180004e83`
+- name: `?FailFast_Unexpected@in1diag3@details@wil@@YAXPEAXIPEBD@Z`
+- size: `35`
+- prototype: `void __fastcall __noreturn(wil::details::in1diag3 *__hidden this, void *, unsigned int, const char *)`
+- caller_count: `6`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x180004148`
+- `0x18000451c`
+- `0x18000779c`
+- `0x1800078b4`
+- `0x180010410`
+- `0x1800131d0`
+
+## callees
+
+- `0x180002de8`
+
+## string_xrefs
+
+- `0x180004e76`: `onecore\internal\sdk\inc\wil\opensource/wil/resource.h`
+
+## pseudocode
+
+```c
+void __fastcall __noreturn wil::details::in1diag3::FailFast_Unexpected(
+        wil::details::in1diag3 *this,
+        void *a2,
+        __int64 a3,
+        const char *a4)
+{
+  wil::details::ReportFailure_Hr<3>(
+    (_DWORD)this,
+    (_DWORD)a2,
+    (unsigned int)"onecore\\internal\\sdk\\inc\\wil\\opensource/wil/resource.h",
+    (_DWORD)a4);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180004e60  sub     rsp, 48h
+0x180004e64  mov     rax, [rsp+48h]
+0x180004e69  mov     [rsp+48h+var_18], 8000FFFFh
+0x180004e71  mov     [rsp+48h+var_20], rax
+0x180004e76  lea     r8, aOnecoreInterna_1; "onecore\\internal\\sdk\\inc\\wil\\opens"...
+0x180004e7d  call    ??$ReportFailure_Hr@$02@details@wil@@YAXPEAXIPEBD110JW4FailureFlags@1@@Z; wil::details::ReportFailure_Hr<3>(void *,uint,char const *,char const *,char const *,void *,long,wil::FailureFlags)
+```

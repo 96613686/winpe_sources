@@ -1,0 +1,3560 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BCryptGetFipsAlgorithmMode",
+    "ea": "0x18000d550",
+    "function_file": "functions/18000d550_BCryptGetFipsAlgorithmMode.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Lsa\\FipsAlgorithmPolicy",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Lsa"
+    ],
+    "name": "BCryptGetFipsAlgorithmMode",
+    "prototype": "NTSTATUS __stdcall(BOOLEAN *pfEnabled)",
+    "rank_score": 2538,
+    "size": 893,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "InitializeProcessImageNameUM",
+    "ea": "0x180011ea8",
+    "function_file": "functions/180011ea8_InitializeProcessImageNameUM.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!GetProcessId",
+      "api-ms-win-core-psapi-l1-1-0!QueryFullProcessImageNameW",
+      "api-ms-win-service-private-l1-1-0!I_QueryTagInformation",
+      "ntdll!_wcsnicmp",
+      "ntdll!_wsplitpath_s",
+      "ntdll!wcsncpy_s"
+    ],
+    "matched_strings": [],
+    "name": "InitializeProcessImageNameUM",
+    "prototype": "",
+    "rank_score": 2446,
+    "size": 993,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CngSetAuditingInterface",
+    "ea": "0x18001316c",
+    "function_file": "functions/18001316c_CngSetAuditingInterface.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "api-ms-win-security-base-l1-1-0!PrivilegeCheck"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\audit.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\audit.c"
+    ],
+    "name": "CngSetAuditingInterface",
+    "prototype": "",
+    "rank_score": 2108,
+    "size": 438,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "LoadProviderEx",
+    "ea": "0x180007d60",
+    "function_file": "functions/180007d60_LoadProviderEx.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!_wcsicmp"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c"
+    ],
+    "name": "LoadProviderEx",
+    "prototype": "__int64 __fastcall(int, int, int, int, void *)",
+    "rank_score": 1532,
+    "size": 2856,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RegisterReopenWait",
+    "ea": "0x18000e190",
+    "function_file": "functions/18000e190_RegisterReopenWait.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-threadpool-private-l1-1-0!RegisterWaitForSingleObjectEx",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c"
+    ],
+    "name": "RegisterReopenWait",
+    "prototype": "",
+    "rank_score": 1264,
+    "size": 207,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "BCryptVerifySignature",
+    "ea": "0x180010680",
+    "function_file": "functions/180010680_BCryptVerifySignature.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer",
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!RtlDllShutdownInProgress"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptVerifySignature",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_KEY_HANDLE hKey, void *pPaddingInfo, PUCHAR pbHash, ULONG cbHash, PUCHAR pbSignature, ULONG cbSignature, ULONG dwFlags)",
+    "rank_score": 1126,
+    "size": 2123,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 8,
+    "demangled": "BCryptDestroyHash",
+    "ea": "0x180006da0",
+    "function_file": "functions/180006da0_BCryptDestroyHash.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDestroyHash",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_HASH_HANDLE hHash)",
+    "rank_score": 1043,
+    "size": 808,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 8,
+    "demangled": "IoCallKernelDriverQueryLoop(ulong,uchar *,ulong,uchar * *,ulong *,int *)",
+    "ea": "0x1800023f0",
+    "function_file": "functions/1800023f0_IoCallKernelDriverQueryLoop_ulong_uchar_ulong_uchar_ulong_int.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "?IoCallKernelDriverQueryLoop@@YAJKPEAEKPEAPEAEPEAKPEAH@Z",
+    "prototype": "int(unsigned int, unsigned __int8 *, unsigned int, unsigned __int8 **, unsigned int *, int *)",
+    "rank_score": 1031,
+    "size": 949,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_resetstkoflw_static",
+    "ea": "0x18001b220",
+    "function_file": "functions/18001b220_resetstkoflw_static.md",
+    "matched_imports": [
+      "api-ms-win-core-memory-l1-1-0!VirtualAlloc",
+      "api-ms-win-core-memory-l1-1-0!VirtualProtect",
+      "api-ms-win-core-memory-l1-1-0!VirtualQuery",
+      "api-ms-win-core-processthreads-l1-1-0!SetThreadStackGuarantee",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemInfo"
+    ],
+    "matched_strings": [],
+    "name": "_resetstkoflw_static",
+    "prototype": "",
+    "rank_score": 1005,
+    "size": 338,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "InitializeSystemPreferredCache",
+    "ea": "0x180009764",
+    "function_file": "functions/180009764_InitializeSystemPreferredCache.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlInitializeCriticalSection",
+      "ntdll!RtlInitializeResource"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c"
+    ],
+    "name": "InitializeSystemPreferredCache",
+    "prototype": "",
+    "rank_score": 1001,
+    "size": 529,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "_LoadImage",
+    "ea": "0x18000a070",
+    "function_file": "functions/18000a070_LoadImage.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "ntdll!RtlCompareUnicodeString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "bcrypt.dll"
+    ],
+    "name": "_LoadImage",
+    "prototype": "",
+    "rank_score": 950,
+    "size": 428,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VsmGetInterfaceProviderFromLibrary",
+    "ea": "0x18001a3cc",
+    "function_file": "functions/18001a3cc_VsmGetInterfaceProviderFromLibrary.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "bcryptprimitives.dll"
+    ],
+    "name": "VsmGetInterfaceProviderFromLibrary",
+    "prototype": "",
+    "rank_score": 907,
+    "size": 383,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "DllMain",
+    "ea": "0x18000a4e0",
+    "function_file": "functions/18000a4e0_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW",
+      "ntdll!LdrDisableThreadCalloutsForDll"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\bcrypt\\init.c"
+    ],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 873,
+    "size": 496,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VsmGetLinkedInterfaceProvider",
+    "ea": "0x18001a554",
+    "function_file": "functions/18001a554_VsmGetLinkedInterfaceProvider.md",
+    "matched_imports": [
+      "bcryptPrimitives!GetAsymmetricEncryptionInterface",
+      "bcryptPrimitives!GetCipherInterface",
+      "bcryptPrimitives!GetHashInterface",
+      "bcryptPrimitives!GetKeyDerivationInterface",
+      "bcryptPrimitives!GetKeyEncapsulationInterface",
+      "bcryptPrimitives!GetRngInterface",
+      "bcryptPrimitives!GetSecretAgreementInterface",
+      "bcryptPrimitives!GetSignatureInterface"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c"
+    ],
+    "name": "VsmGetLinkedInterfaceProvider",
+    "prototype": "",
+    "rank_score": 854,
+    "size": 192,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateTlgAggregateSession",
+    "ea": "0x1800115dc",
+    "function_file": "functions/1800115dc_CreateTlgAggregateSession.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-synch-l1-1-0!InitializeSRWLock",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolTimer"
+    ],
+    "matched_strings": [],
+    "name": "CreateTlgAggregateSession",
+    "prototype": "",
+    "rank_score": 804,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "IoShutdown(void)",
+    "ea": "0x18001a234",
+    "function_file": "functions/18001a234_IoShutdown_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?IoShutdown@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 803,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "DecrementReferenceCount",
+    "ea": "0x1800050b0",
+    "function_file": "functions/1800050b0_DecrementReferenceCount.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "DecrementReferenceCount",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 713,
+    "size": 444,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 3,
+    "demangled": "BCryptOpenAlgorithmProvider",
+    "ea": "0x1800070d0",
+    "function_file": "functions/1800070d0_BCryptOpenAlgorithmProvider.md",
+    "matched_imports": [
+      "ntdll!RtlDllShutdownInProgress",
+      "ntdll!wcsncpy_s"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptOpenAlgorithmProvider",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE *phAlgorithm, LPCWSTR pszAlgId, LPCWSTR pszImplementation, ULONG dwFlags)",
+    "rank_score": 658,
+    "size": 2043,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "UninitializeLoader",
+    "ea": "0x18001a2fc",
+    "function_file": "functions/18001a2fc_UninitializeLoader.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c"
+    ],
+    "name": "UninitializeLoader",
+    "prototype": "",
+    "rank_score": 656,
+    "size": 200,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "BCryptImportKeyPair",
+    "ea": "0x180008890",
+    "function_file": "functions/180008890_BCryptImportKeyPair.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "BCryptImportKeyPair",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE hAlgorithm, BCRYPT_KEY_HANDLE hImportKey, LPCWSTR pszBlobType, BCRYPT_KEY_HANDLE *phKey, PUCHAR pbInput, ULONG cbInput, ULONG dwFlags)",
+    "rank_score": 652,
+    "size": 2049,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 4,
+    "demangled": "BCryptResolveProviders",
+    "ea": "0x1800030a0",
+    "function_file": "functions/1800030a0_BCryptResolveProviders.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "BCryptResolveProviders",
+    "prototype": "NTSTATUS __stdcall(LPCWSTR pszContext, ULONG dwInterface, LPCWSTR pszFunction, LPCWSTR pszProvider, ULONG dwMode, ULONG dwFlags, ULONG *pcbBuffer, PCRYPT_PROVIDER_REFS *ppBuffer)",
+    "rank_score": 639,
+    "size": 1963,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 15,
+    "demangled": "IoCallKernelDriver(ulong,uchar *,ulong,uchar *,ulong *)",
+    "ea": "0x180002040",
+    "function_file": "functions/180002040_IoCallKernelDriver_ulong_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "?IoCallKernelDriver@@YAJKPEAEK0PEAK@Z",
+    "prototype": "int(unsigned int, unsigned __int8 *, unsigned int, unsigned __int8 *, unsigned int *)",
+    "rank_score": 632,
+    "size": 499,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CleanupSystemPreferredCache",
+    "ea": "0x18001267c",
+    "function_file": "functions/18001267c_CleanupSystemPreferredCache.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-legacy-l1-1-0!UnregisterWaitEx",
+      "ntdll!RtlDeleteCriticalSection",
+      "ntdll!RtlDeleteResource"
+    ],
+    "matched_strings": [],
+    "name": "CleanupSystemPreferredCache",
+    "prototype": "",
+    "rank_score": 627,
+    "size": 245,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "BcpRegisterConfigChangeNotifyNoLogging",
+    "ea": "0x18000997c",
+    "function_file": "functions/18000997c_BcpRegisterConfigChangeNotifyNoLogging.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW"
+    ],
+    "matched_strings": [],
+    "name": "BcpRegisterConfigChangeNotifyNoLogging",
+    "prototype": "",
+    "rank_score": 625,
+    "size": 531,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CancelTimerCallbacksAndDeleteTimer",
+    "ea": "0x18001aed8",
+    "function_file": "functions/18001aed8_CancelTimerCallbacksAndDeleteTimer.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "CancelTimerCallbacksAndDeleteTimer",
+    "prototype": "",
+    "rank_score": 603,
+    "size": 102,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "BCryptDestroyKey",
+    "ea": "0x180004e60",
+    "function_file": "functions/180004e60_BCryptDestroyKey.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDestroyKey",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_KEY_HANDLE hKey)",
+    "rank_score": 548,
+    "size": 504,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "BCryptDecrypt",
+    "ea": "0x18000fb30",
+    "function_file": "functions/18000fb30_BCryptDecrypt.md",
+    "matched_imports": [
+      "ntdll!EtwEventWriteTransfer"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDecrypt",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_KEY_HANDLE hKey, PUCHAR pbInput, ULONG cbInput, void *pPaddingInfo, PUCHAR pbIV, ULONG cbIV, PUCHAR pbOutput, ULONG cbOutput, ULONG *pcbResult, ULONG dwFlags)",
+    "rank_score": 523,
+    "size": 1672,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ReopenSystemPreferredRngHandle",
+    "ea": "0x18000e2c4",
+    "function_file": "functions/18000e2c4_ReopenSystemPreferredRngHandle.md",
+    "matched_imports": [
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c"
+    ],
+    "name": "ReopenSystemPreferredRngHandle",
+    "prototype": "",
+    "rank_score": 466,
+    "size": 158,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "_GetImagePath",
+    "ea": "0x18000a3e8",
+    "function_file": "functions/18000a3e8_GetImagePath.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemDirectoryW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c"
+    ],
+    "name": "_GetImagePath",
+    "prototype": "",
+    "rank_score": 458,
+    "size": 228,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 8,
+    "demangled": "BCryptCreateHash",
+    "ea": "0x180006020",
+    "function_file": "functions/180006020_BCryptCreateHash.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptCreateHash",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE hAlgorithm, BCRYPT_HASH_HANDLE *phHash, PUCHAR pbHashObject, ULONG cbHashObject, PUCHAR pbSecret, ULONG cbSecret, ULONG dwFlags)",
+    "rank_score": 450,
+    "size": 1733,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_IoOpenDevice(void)",
+    "ea": "0x1800022cc",
+    "function_file": "functions/1800022cc_IoOpenDevice_void.md",
+    "matched_imports": [
+      "ntdll!NtOpenFile",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?_IoOpenDevice@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 444,
+    "size": 157,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptGenerateSymmetricKey",
+    "ea": "0x180005bc0",
+    "function_file": "functions/180005bc0_BCryptGenerateSymmetricKey.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptGenerateSymmetricKey",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE hAlgorithm, BCRYPT_KEY_HANDLE *phKey, PUCHAR pbKeyObject, ULONG cbKeyObject, PUCHAR pbSecret, ULONG cbSecret, ULONG dwFlags)",
+    "rank_score": 435,
+    "size": 903,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "BCryptRegisterConfigChangeNotify",
+    "ea": "0x180019500",
+    "function_file": "functions/180019500_BCryptRegisterConfigChangeNotify.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-psapi-l1-1-0!QueryFullProcessImageNameW"
+    ],
+    "matched_strings": [],
+    "name": "BCryptRegisterConfigChangeNotify",
+    "prototype": "NTSTATUS __stdcall(HANDLE *phEvent)",
+    "rank_score": 417,
+    "size": 207,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "BCryptUnregisterConfigChangeNotify",
+    "ea": "0x180019920",
+    "function_file": "functions/180019920_BCryptUnregisterConfigChangeNotify.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-psapi-l1-1-0!QueryFullProcessImageNameW"
+    ],
+    "matched_strings": [],
+    "name": "BCryptUnregisterConfigChangeNotify",
+    "prototype": "NTSTATUS __stdcall(HANDLE hEvent)",
+    "rank_score": 417,
+    "size": 207,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TlgAggregateInternalProviderCallback(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *)",
+    "ea": "0x18001b0e0",
+    "function_file": "functions/18001b0e0_TlgAggregateInternalProviderCallback_GUID_const_ulong_uchar_unsigned_int64_unsigned_int64_EVENT_FILTER_DESCRIP.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!TryAcquireSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?TlgAggregateInternalProviderCallback@@YAXPEBU_GUID@@KE_K1PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z",
+    "prototype": "void __fastcall(const struct _GUID *, unsigned int, unsigned __int8, unsigned __int64, unsigned __int64, struct _EVENT_FILTER_DESCRIPTOR *, void *)",
+    "rank_score": 412,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "CachedCloseAlgorithmProvider",
+    "ea": "0x18001620c",
+    "function_file": "functions/18001620c_CachedCloseAlgorithmProvider.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared"
+    ],
+    "matched_strings": [],
+    "name": "CachedCloseAlgorithmProvider",
+    "prototype": "__int64 __fastcall(BCRYPT_ALG_HANDLE hAlgorithm)",
+    "rank_score": 408,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "addEntryToCache",
+    "ea": "0x180016318",
+    "function_file": "functions/180016318_addEntryToCache.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "addEntryToCache",
+    "prototype": "",
+    "rank_score": 407,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "BCryptDeriveKeyCapi",
+    "ea": "0x18000c1e0",
+    "function_file": "functions/18000c1e0_BCryptDeriveKeyCapi.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDeriveKeyCapi",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_HASH_HANDLE hHash, BCRYPT_ALG_HANDLE hTargetAlg, PUCHAR pbDerivedKey, ULONG cbDerivedKey, ULONG dwFlags)",
+    "rank_score": 405,
+    "size": 2263,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "findEntryInCache",
+    "ea": "0x18001641c",
+    "function_file": "functions/18001641c_findEntryInCache.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared"
+    ],
+    "matched_strings": [],
+    "name": "findEntryInCache",
+    "prototype": "__int64 __fastcall(wchar_t *String1)",
+    "rank_score": 405,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "GetPBKDF2Block",
+    "ea": "0x180005470",
+    "function_file": "functions/180005470_GetPBKDF2Block.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "GetPBKDF2Block",
+    "prototype": "__int64 __fastcall(BCRYPT_ALG_HANDLE hAlgorithm, PUCHAR pbSecret, ULONG cbSecret, PUCHAR pbInput, ULONG cbInput, __int64, int, PUCHAR pbHashObject, ULONG cbHashObject, PUCHAR pbOutput, void *, ULONG cbOutput)",
+    "rank_score": 394,
+    "size": 1669,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "BCryptGenRandom",
+    "ea": "0x180005280",
+    "function_file": "functions/180005280_BCryptGenRandom.md",
+    "matched_imports": [
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c"
+    ],
+    "name": "BCryptGenRandom",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE hAlgorithm, PUCHAR pbBuffer, ULONG cbBuffer, ULONG dwFlags)",
+    "rank_score": 355,
+    "size": 489,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BCryptResolveProvidersForBcoapCached",
+    "ea": "0x180002de0",
+    "function_file": "functions/180002de0_BCryptResolveProvidersForBcoapCached.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptResolveProvidersForBcoapCached",
+    "prototype": "__int64 __fastcall(LPCWSTR pszFunction, LPCWSTR pszProvider, ULONG dwFlags, ULONG *pcbBuffer, PCRYPT_PROVIDER_REFS *, __int64)",
+    "rank_score": 350,
+    "size": 691,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "BCryptSignHash",
+    "ea": "0x1800101c0",
+    "function_file": "functions/1800101c0_BCryptSignHash.md",
+    "matched_imports": [
+      "ntdll!RtlDllShutdownInProgress"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptSignHash",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_KEY_HANDLE hKey, void *pPaddingInfo, PUCHAR pbInput, ULONG cbInput, PUCHAR pbOutput, ULONG cbOutput, ULONG *pcbResult, ULONG dwFlags)",
+    "rank_score": 324,
+    "size": 1199,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "VsmOpenAlgorithmProvider",
+    "ea": "0x180014f98",
+    "function_file": "functions/180014f98_VsmOpenAlgorithmProvider.md",
+    "matched_imports": [
+      "ntdll!wcsncpy_s"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "VsmOpenAlgorithmProvider",
+    "prototype": "",
+    "rank_score": 317,
+    "size": 961,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetSystemPreferredRngHandle",
+    "ea": "0x180004800",
+    "function_file": "functions/180004800_GetSystemPreferredRngHandle.md",
+    "matched_imports": [
+      "ntdll!RtlAcquireResourceShared"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c"
+    ],
+    "name": "GetSystemPreferredRngHandle",
+    "prototype": "",
+    "rank_score": 309,
+    "size": 406,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "AllocateObjectBuffer",
+    "ea": "0x180005f50",
+    "function_file": "functions/180005f50_AllocateObjectBuffer.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "AllocateObjectBuffer",
+    "prototype": "",
+    "rank_score": 306,
+    "size": 199,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ConvertRsaPrivateBlobToFullRsa",
+    "ea": "0x18000bac0",
+    "function_file": "functions/18000bac0_ConvertRsaPrivateBlobToFullRsa.md",
+    "matched_imports": [
+      "bcryptPrimitives!MSCryptConvertRsaPrivateBlobToFullRsaBlob"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertRsaPrivateBlobToFullRsa",
+    "prototype": "",
+    "rank_score": 296,
+    "size": 217,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "BCryptDecapsulate",
+    "ea": "0x180014510",
+    "function_file": "functions/180014510_BCryptDecapsulate.md",
+    "matched_imports": [
+      "ntdll!RtlDllShutdownInProgress"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDecapsulate",
+    "prototype": "",
+    "rank_score": 274,
+    "size": 548,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "BCryptEncapsulate",
+    "ea": "0x180014740",
+    "function_file": "functions/180014740_BCryptEncapsulate.md",
+    "matched_imports": [
+      "ntdll!RtlDllShutdownInProgress"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptEncapsulate",
+    "prototype": "",
+    "rank_score": 274,
+    "size": 576,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "BCryptImportKey",
+    "ea": "0x18000b1d0",
+    "function_file": "functions/18000b1d0_BCryptImportKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptImportKey",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE hAlgorithm, BCRYPT_KEY_HANDLE hImportKey, LPCWSTR pszBlobType, BCRYPT_KEY_HANDLE *phKey, PUCHAR pbKeyObject, ULONG cbKeyObject, PUCHAR pbInput, ULONG cbInput, ULONG dwFlags)",
+    "rank_score": 270,
+    "size": 1193,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_InitializeLoaderLock",
+    "ea": "0x18000abd4",
+    "function_file": "functions/18000abd4_InitializeLoaderLock.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c"
+    ],
+    "name": "_InitializeLoaderLock",
+    "prototype": "",
+    "rank_score": 253,
+    "size": 68,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "WinErrorToNtStatus(ulong)",
+    "ea": "0x180003860",
+    "function_file": "functions/180003860_WinErrorToNtStatus_ulong.md",
+    "matched_imports": [
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "?WinErrorToNtStatus@@YAJK@Z",
+    "prototype": "__int64 __fastcall(NTSTATUS Status)",
+    "rank_score": 239,
+    "size": 771,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 54,
+    "demangled": "WPP_SF_sDsd",
+    "ea": "0x180007a7c",
+    "function_file": "functions/180007a7c_WPP_SF_sDsd.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_sDsd",
+    "prototype": "",
+    "rank_score": 237,
+    "size": 193,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SafeAllocaInitialize",
+    "ea": "0x18000a86c",
+    "function_file": "functions/18000a86c_SafeAllocaInitialize.md",
+    "matched_imports": [
+      "ntdll!RtlImageNtHeader"
+    ],
+    "matched_strings": [],
+    "name": "SafeAllocaInitialize",
+    "prototype": "",
+    "rank_score": 233,
+    "size": 195,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "BCryptDeriveKeyPBKDF2",
+    "ea": "0x18000bba0",
+    "function_file": "functions/18000bba0_BCryptDeriveKeyPBKDF2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDeriveKeyPBKDF2",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE hPrf, PUCHAR pbPassword, ULONG cbPassword, PUCHAR pbSalt, ULONG cbSalt, ULONGLONG cIterations, PUCHAR pbDerivedKey, ULONG cbDerivedKey, ULONG dwFlags)",
+    "rank_score": 232,
+    "size": 1583,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "RouterAesKeyWrap",
+    "ea": "0x18000e910",
+    "function_file": "functions/18000e910_RouterAesKeyWrap.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\routeraeskeywrap.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\routeraeskeywrap.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\routeraeskeywrap.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\routeraeskeywrap.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\routeraeskeywrap.c"
+    ],
+    "name": "RouterAesKeyWrap",
+    "prototype": "",
+    "rank_score": 228,
+    "size": 1032,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ApplySignaturePadding",
+    "ea": "0x180016b60",
+    "function_file": "functions/180016b60_ApplySignaturePadding.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c"
+    ],
+    "name": "ApplySignaturePadding",
+    "prototype": "",
+    "rank_score": 227,
+    "size": 916,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "InitializeConfig",
+    "ea": "0x1800129ac",
+    "function_file": "functions/1800129ac_InitializeConfig.md",
+    "matched_imports": [
+      "ntdll!RtlDllShutdownInProgress"
+    ],
+    "matched_strings": [],
+    "name": "InitializeConfig",
+    "prototype": "",
+    "rank_score": 227,
+    "size": 103,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "BcpUnregisterConfigChangeNotifyNoLogging",
+    "ea": "0x180019b1c",
+    "function_file": "functions/180019b1c_BcpUnregisterConfigChangeNotifyNoLogging.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "BcpUnregisterConfigChangeNotifyNoLogging",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 224,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptDeriveKey",
+    "ea": "0x180004390",
+    "function_file": "functions/180004390_BCryptDeriveKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDeriveKey",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_SECRET_HANDLE hSharedSecret, LPCWSTR pwszKDF, BCryptBufferDesc *pParameterList, PUCHAR pbDerivedKey, ULONG cbDerivedKey, ULONG *pcbResult, ULONG dwFlags)",
+    "rank_score": 223,
+    "size": 687,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "getCache",
+    "ea": "0x1800164bc",
+    "function_file": "functions/1800164bc_getCache.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!InitializeSRWLock"
+    ],
+    "matched_strings": [],
+    "name": "getCache",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 161,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "WPP_SF_qqdD",
+    "ea": "0x1800124c4",
+    "function_file": "functions/1800124c4_WPP_SF_qqdD.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qqdD",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 113,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "WPP_SF_q",
+    "ea": "0x18000d948",
+    "function_file": "functions/18000d948_WPP_SF_q.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 69,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WPP_SF_qSD",
+    "ea": "0x18000cd9c",
+    "function_file": "functions/18000cd9c_WPP_SF_qSD.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qSD",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 162,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "WPP_SF_qqqdqdqD",
+    "ea": "0x18000f8f8",
+    "function_file": "functions/18000f8f8_WPP_SF_qqqdqdqD.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qqqdqdqD",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 168,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "_FreeImage",
+    "ea": "0x18001aa70",
+    "function_file": "functions/18001aa70_FreeImage.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary"
+    ],
+    "matched_strings": [],
+    "name": "_FreeImage",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FlushEventEntryList",
+    "ea": "0x18001af80",
+    "function_file": "functions/18001af80_FlushEventEntryList.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "FlushEventEntryList",
+    "prototype": "__int64 __fastcall(REGHANDLE RegHandle, PCEVENT_DESCRIPTOR EventDescriptor)",
+    "rank_score": 204,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "TlgAggregateAbsorbEvent",
+    "ea": "0x180011014",
+    "function_file": "functions/180011014_TlgAggregateAbsorbEvent.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "TlgAggregateAbsorbEvent",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "EnableFlushTimer",
+    "ea": "0x180011464",
+    "function_file": "functions/180011464_EnableFlushTimer.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer"
+    ],
+    "matched_strings": [],
+    "name": "EnableFlushTimer",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 88,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTransfer_EventWriteTransfer",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_tlgWriteTransfer_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 13,
+    "demangled": "BCryptGetProperty",
+    "ea": "0x1800066f0",
+    "function_file": "functions/1800066f0_BCryptGetProperty.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptGetProperty",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_HANDLE hObject, LPCWSTR pszProperty, PUCHAR pbOutput, ULONG cbOutput, ULONG *pcbResult, ULONG dwFlags)",
+    "rank_score": 199,
+    "size": 1228,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "BCryptExportKey",
+    "ea": "0x180009ba0",
+    "function_file": "functions/180009ba0_BCryptExportKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptExportKey",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_KEY_HANDLE hKey, BCRYPT_KEY_HANDLE hExportKey, LPCWSTR pszBlobType, PUCHAR pbOutput, ULONG cbOutput, ULONG *pcbResult, ULONG dwFlags)",
+    "rank_score": 191,
+    "size": 1223,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "BCryptEncrypt",
+    "ea": "0x1800049a0",
+    "function_file": "functions/1800049a0_BCryptEncrypt.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptEncrypt",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_KEY_HANDLE hKey, PUCHAR pbInput, ULONG cbInput, void *pPaddingInfo, PUCHAR pbIV, ULONG cbIV, PUCHAR pbOutput, ULONG cbOutput, ULONG *pcbResult, ULONG dwFlags)",
+    "rank_score": 189,
+    "size": 1207,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CheckSignaturePadding",
+    "ea": "0x180017420",
+    "function_file": "functions/180017420_CheckSignaturePadding.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c"
+    ],
+    "name": "CheckSignaturePadding",
+    "prototype": "",
+    "rank_score": 186,
+    "size": 877,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptDuplicateHash",
+    "ea": "0x1800090a0",
+    "function_file": "functions/1800090a0_BCryptDuplicateHash.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDuplicateHash",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_HASH_HANDLE hHash, BCRYPT_HASH_HANDLE *phNewHash, PUCHAR pbHashObject, ULONG cbHashObject, ULONG dwFlags)",
+    "rank_score": 184,
+    "size": 894,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "VerifyPKCS1SigningFormat",
+    "ea": "0x180012a70",
+    "function_file": "functions/180012a70_VerifyPKCS1SigningFormat.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c"
+    ],
+    "name": "VerifyPKCS1SigningFormat",
+    "prototype": "",
+    "rank_score": 184,
+    "size": 589,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptDuplicateKey",
+    "ea": "0x18000acc0",
+    "function_file": "functions/18000acc0_BCryptDuplicateKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDuplicateKey",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_KEY_HANDLE hKey, BCRYPT_KEY_HANDLE *phNewKey, PUCHAR pbKeyObject, ULONG cbKeyObject, ULONG dwFlags)",
+    "rank_score": 182,
+    "size": 603,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BCryptSetProperty",
+    "ea": "0x180007b50",
+    "function_file": "functions/180007b50_BCryptSetProperty.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptSetProperty",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_HANDLE hObject, LPCWSTR pszProperty, PUCHAR pbInput, ULONG cbInput, ULONG dwFlags)",
+    "rank_score": 182,
+    "size": 520,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptSecretAgreement",
+    "ea": "0x180009570",
+    "function_file": "functions/180009570_BCryptSecretAgreement.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptSecretAgreement",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_KEY_HANDLE hPrivKey, BCRYPT_KEY_HANDLE hPubKey, BCRYPT_SECRET_HANDLE *phAgreedSecret, ULONG dwFlags)",
+    "rank_score": 181,
+    "size": 453,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "BCryptKeyDerivation",
+    "ea": "0x18000ce50",
+    "function_file": "functions/18000ce50_BCryptKeyDerivation.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptKeyDerivation",
+    "prototype": "",
+    "rank_score": 178,
+    "size": 423,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "ExportLegacyDsaKey",
+    "ea": "0x18000edac",
+    "function_file": "functions/18000edac_ExportLegacyDsaKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ExportLegacyDsaKey",
+    "prototype": "",
+    "rank_score": 150,
+    "size": 1098,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 4,
+    "demangled": "MaskGeneration",
+    "ea": "0x180012cc4",
+    "function_file": "functions/180012cc4_MaskGeneration.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c"
+    ],
+    "name": "MaskGeneration",
+    "prototype": "",
+    "rank_score": 148,
+    "size": 626,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "BCryptEnumAlgorithms",
+    "ea": "0x180001590",
+    "function_file": "functions/180001590_BCryptEnumAlgorithms.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptEnumAlgorithms",
+    "prototype": "NTSTATUS __stdcall(ULONG dwAlgOperations, ULONG *pAlgCount, BCRYPT_ALGORITHM_IDENTIFIER **ppAlgList, ULONG dwFlags)",
+    "rank_score": 147,
+    "size": 1080,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 8,
+    "demangled": "BCryptFinishHash",
+    "ea": "0x1800078e0",
+    "function_file": "functions/1800078e0_BCryptFinishHash.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptFinishHash",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_HASH_HANDLE hHash, PUCHAR pbOutput, ULONG cbOutput, ULONG dwFlags)",
+    "rank_score": 146,
+    "size": 405,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ConvertRsaPrivateBlobToLegacy",
+    "ea": "0x18000b824",
+    "function_file": "functions/18000b824_ConvertRsaPrivateBlobToLegacy.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertRsaPrivateBlobToLegacy",
+    "prototype": "",
+    "rank_score": 145,
+    "size": 661,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ExportLegacyDhKey",
+    "ea": "0x18000f1fc",
+    "function_file": "functions/18000f1fc_ExportLegacyDhKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ExportLegacyDhKey",
+    "prototype": "",
+    "rank_score": 145,
+    "size": 693,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ExportLegacyRsaKey",
+    "ea": "0x18000e368",
+    "function_file": "functions/18000e368_ExportLegacyRsaKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ExportLegacyRsaKey",
+    "prototype": "",
+    "rank_score": 145,
+    "size": 695,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ApplyEncryptionPadding",
+    "ea": "0x180014084",
+    "function_file": "functions/180014084_ApplyEncryptionPadding.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "ApplyEncryptionPadding",
+    "prototype": "",
+    "rank_score": 144,
+    "size": 649,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CheckEncryptionPadding",
+    "ea": "0x180014d6c",
+    "function_file": "functions/180014d6c_CheckEncryptionPadding.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "CheckEncryptionPadding",
+    "prototype": "",
+    "rank_score": 142,
+    "size": 549,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "BCryptDestroySecret",
+    "ea": "0x180004230",
+    "function_file": "functions/180004230_BCryptDestroySecret.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptDestroySecret",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_SECRET_HANDLE hSecret)",
+    "rank_score": 141,
+    "size": 335,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptGenerateKeyPair",
+    "ea": "0x18000a230",
+    "function_file": "functions/18000a230_BCryptGenerateKeyPair.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptGenerateKeyPair",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE hAlgorithm, BCRYPT_KEY_HANDLE *phKey, ULONG dwLength, ULONG dwFlags)",
+    "rank_score": 141,
+    "size": 433,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ExportFullRsaKey",
+    "ea": "0x18000e628",
+    "function_file": "functions/18000e628_ExportFullRsaKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ExportFullRsaKey",
+    "prototype": "",
+    "rank_score": 141,
+    "size": 459,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "BCryptFinalizeKeyPair",
+    "ea": "0x18000af30",
+    "function_file": "functions/18000af30_BCryptFinalizeKeyPair.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptFinalizeKeyPair",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_KEY_HANDLE hKey, ULONG dwFlags)",
+    "rank_score": 137,
+    "size": 348,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 27,
+    "demangled": "BCryptFree",
+    "ea": "0x1800041d0",
+    "function_file": "functions/1800041d0_BCryptFree.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BCryptFree",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 136,
+    "size": 36,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 36,
+    "demangled": "MSCryptFree",
+    "ea": "0x180009430",
+    "function_file": "functions/180009430_MSCryptFree.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "MSCryptFree",
+    "prototype": "",
+    "rank_score": 135,
+    "size": 25,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 51,
+    "demangled": "SafeAllocaAllocateFromHeap",
+    "ea": "0x180004200",
+    "function_file": "functions/180004200_SafeAllocaAllocateFromHeap.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "SafeAllocaAllocateFromHeap",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 135,
+    "size": 25,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 29,
+    "demangled": "memcpy_0",
+    "ea": "0x18001b79d",
+    "function_file": "functions/18001b79d_memcpy_0.md",
+    "matched_imports": [
+      "ntdll!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 135,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 31,
+    "demangled": "memset_0",
+    "ea": "0x18001b7a9",
+    "function_file": "functions/18001b7a9_memset_0.md",
+    "matched_imports": [
+      "ntdll!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 135,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 9,
+    "demangled": "__chkstk_0",
+    "ea": "0x18001b785",
+    "function_file": "functions/18001b785_chkstk_0.md",
+    "matched_imports": [
+      "ntdll!__chkstk"
+    ],
+    "matched_strings": [],
+    "name": "__chkstk_0",
+    "prototype": "",
+    "rank_score": 119,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "wcscmp_0",
+    "ea": "0x18001b7b5",
+    "function_file": "functions/18001b7b5_wcscmp_0.md",
+    "matched_imports": [
+      "ntdll!wcscmp"
+    ],
+    "matched_strings": [],
+    "name": "wcscmp_0",
+    "prototype": "int __cdecl(const wchar_t *String1, const wchar_t *String2)",
+    "rank_score": 118,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memcmp_0",
+    "ea": "0x18001b791",
+    "function_file": "functions/18001b791_memcmp_0.md",
+    "matched_imports": [
+      "ntdll!memcmp"
+    ],
+    "matched_strings": [],
+    "name": "memcmp_0",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 114,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "McGenEventWrite_USE_EtwEventWrite",
+    "ea": "0x180012a1c",
+    "function_file": "functions/180012a1c_McGenEventWrite_USE_EtwEventWrite.md",
+    "matched_imports": [
+      "ntdll!EtwEventWrite"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_USE_EtwEventWrite",
+    "prototype": "",
+    "rank_score": 112,
+    "size": 70,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ValidateFunctionTable",
+    "ea": "0x18000d030",
+    "function_file": "functions/18000d030_ValidateFunctionTable.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "ValidateFunctionTable",
+    "prototype": "",
+    "rank_score": 105,
+    "size": 1296,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RouterAesKeyUnwrap",
+    "ea": "0x180015a7c",
+    "function_file": "functions/180015a7c_RouterAesKeyUnwrap.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\routeraeskeywrap.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\routeraeskeywrap.c"
+    ],
+    "name": "RouterAesKeyUnwrap",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, void *Src, size_t Size)",
+    "rank_score": 104,
+    "size": 815,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "VsmLoadInterface",
+    "ea": "0x18001a61c",
+    "function_file": "functions/18001a61c_VsmLoadInterface.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c"
+    ],
+    "name": "VsmLoadInterface",
+    "prototype": "",
+    "rank_score": 104,
+    "size": 885,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "OpenSystemPreferredAlgorithmProvider",
+    "ea": "0x18000466c",
+    "function_file": "functions/18000466c_OpenSystemPreferredAlgorithmProvider.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c"
+    ],
+    "name": "OpenSystemPreferredAlgorithmProvider",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 395,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RouterGetKeyDataBlob",
+    "ea": "0x180015db4",
+    "function_file": "functions/180015db4_RouterGetKeyDataBlob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\routeraeskeywrap.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\routeraeskeywrap.c"
+    ],
+    "name": "RouterGetKeyDataBlob",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 408,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ConvertLegacyDsaV2PrivateBlob",
+    "ea": "0x180012318",
+    "function_file": "functions/180012318_ConvertLegacyDsaV2PrivateBlob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertLegacyDsaV2PrivateBlob",
+    "prototype": "",
+    "rank_score": 100,
+    "size": 422,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "_ProcessBufferDescParameters",
+    "ea": "0x18000b680",
+    "function_file": "functions/18000b680_ProcessBufferDescParameters.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "_ProcessBufferDescParameters",
+    "prototype": "",
+    "rank_score": 100,
+    "size": 411,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "BCryptCreateMultiHash",
+    "ea": "0x180014320",
+    "function_file": "functions/180014320_BCryptCreateMultiHash.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptCreateMultiHash",
+    "prototype": "",
+    "rank_score": 99,
+    "size": 489,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ConvertLegacyDsaPrivateBlob",
+    "ea": "0x180018270",
+    "function_file": "functions/180018270_ConvertLegacyDsaPrivateBlob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertLegacyDsaPrivateBlob",
+    "prototype": "",
+    "rank_score": 99,
+    "size": 489,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_NewLoadedProviderHandle",
+    "ea": "0x18000dac4",
+    "function_file": "functions/18000dac4_NewLoadedProviderHandle.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c"
+    ],
+    "name": "_NewLoadedProviderHandle",
+    "prototype": "",
+    "rank_score": 98,
+    "size": 348,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "VerifyRsaFullPrivateBlob",
+    "ea": "0x180009454",
+    "function_file": "functions/180009454_VerifyRsaFullPrivateBlob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\translate.c",
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\translate.c"
+    ],
+    "name": "VerifyRsaFullPrivateBlob",
+    "prototype": "",
+    "rank_score": 97,
+    "size": 270,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "InitializeCNG",
+    "ea": "0x18000a768",
+    "function_file": "functions/18000a768_InitializeCNG.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\bcrypt\\init.c"
+    ],
+    "name": "InitializeCNG",
+    "prototype": "",
+    "rank_score": 70,
+    "size": 253,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ApplyOAEPPaddingSeeded",
+    "ea": "0x180016564",
+    "function_file": "functions/180016564_ApplyOAEPPaddingSeeded.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c"
+    ],
+    "name": "ApplyOAEPPaddingSeeded",
+    "prototype": "__int64 __usercall@<rax>(BCRYPT_ALG_HANDLE hAlgorithm@<rcx>, ULONG cbBuffer@<edx>, ULONG cbHashObject@<r8d>, ULONG cbInput, BCRYPT_HASH_HANDLE phHash, void *Src, size_t Size, __int64, int)",
+    "rank_score": 69,
+    "size": 861,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ApplyPSSPaddingSalted",
+    "ea": "0x1800168c8",
+    "function_file": "functions/1800168c8_ApplyPSSPaddingSalted.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c"
+    ],
+    "name": "ApplyPSSPaddingSalted",
+    "prototype": "",
+    "rank_score": 68,
+    "size": 658,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "BCryptEnumProviders",
+    "ea": "0x180014990",
+    "function_file": "functions/180014990_BCryptEnumProviders.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptEnumProviders",
+    "prototype": "NTSTATUS __stdcall(LPCWSTR pszAlgId, ULONG *pImplCount, BCRYPT_PROVIDER_NAME **ppImplList, ULONG dwFlags)",
+    "rank_score": 66,
+    "size": 812,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CheckOAEPPadding",
+    "ea": "0x180016efc",
+    "function_file": "functions/180016efc_CheckOAEPPadding.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c"
+    ],
+    "name": "CheckOAEPPadding",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 690,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "CheckPSSPadding",
+    "ea": "0x1800171b4",
+    "function_file": "functions/1800171b4_CheckPSSPadding.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c"
+    ],
+    "name": "CheckPSSPadding",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 612,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 7,
+    "demangled": "BCryptCloseAlgorithmProvider",
+    "ea": "0x180005b00",
+    "function_file": "functions/180005b00_BCryptCloseAlgorithmProvider.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptCloseAlgorithmProvider",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE hAlgorithm, ULONG dwFlags)",
+    "rank_score": 63,
+    "size": 186,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 8,
+    "demangled": "BCryptHashData",
+    "ea": "0x18000cc10",
+    "function_file": "functions/18000cc10_BCryptHashData.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptHashData",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_HASH_HANDLE hHash, PUCHAR pbInput, ULONG cbInput, ULONG dwFlags)",
+    "rank_score": 63,
+    "size": 209,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ConvertDsaPrivateBlobToLegacy",
+    "ea": "0x180017abc",
+    "function_file": "functions/180017abc_ConvertDsaPrivateBlobToLegacy.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertDsaPrivateBlobToLegacy",
+    "prototype": "",
+    "rank_score": 59,
+    "size": 408,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ConvertDsaPublicBlobToLegacyV2",
+    "ea": "0x180017f48",
+    "function_file": "functions/180017f48_ConvertDsaPublicBlobToLegacyV2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertDsaPublicBlobToLegacyV2",
+    "prototype": "",
+    "rank_score": 59,
+    "size": 392,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ConvertLegacyDhPrivateBlob",
+    "ea": "0x1800180d8",
+    "function_file": "functions/1800180d8_ConvertLegacyDhPrivateBlob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertLegacyDhPrivateBlob",
+    "prototype": "",
+    "rank_score": 59,
+    "size": 402,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ApplyPKCS1SigningFormat",
+    "ea": "0x18000f6a8",
+    "function_file": "functions/18000f6a8_ApplyPKCS1SigningFormat.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\format.c"
+    ],
+    "name": "ApplyPKCS1SigningFormat",
+    "prototype": "__int64 __usercall@<rax>(void *Src@<rcx>, size_t Size@<rdx>, __int64, int, int)",
+    "rank_score": 58,
+    "size": 370,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ConvertDsaPublicBlobToLegacy",
+    "ea": "0x180017dd0",
+    "function_file": "functions/180017dd0_ConvertDsaPublicBlobToLegacy.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertDsaPublicBlobToLegacy",
+    "prototype": "",
+    "rank_score": 58,
+    "size": 368,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ConvertLegacyRsaPrivateBlob",
+    "ea": "0x18000df40",
+    "function_file": "functions/18000df40_ConvertLegacyRsaPrivateBlob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertLegacyRsaPrivateBlob",
+    "prototype": "",
+    "rank_score": 58,
+    "size": 378,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ConvertRsaFullPrivateBlob",
+    "ea": "0x18000e7fc",
+    "function_file": "functions/18000e7fc_ConvertRsaFullPrivateBlob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertRsaFullPrivateBlob",
+    "prototype": "",
+    "rank_score": 58,
+    "size": 267,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ConvertDhPrivateBlobToLegacy",
+    "ea": "0x180017828",
+    "function_file": "functions/180017828_ConvertDhPrivateBlobToLegacy.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertDhPrivateBlobToLegacy",
+    "prototype": "",
+    "rank_score": 57,
+    "size": 337,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ConvertDhPublicBlobToLegacy",
+    "ea": "0x180017980",
+    "function_file": "functions/180017980_ConvertDhPublicBlobToLegacy.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertDhPublicBlobToLegacy",
+    "prototype": "",
+    "rank_score": 57,
+    "size": 307,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ConvertRsaPublicBlobToLegacy",
+    "ea": "0x180018460",
+    "function_file": "functions/180018460_ConvertRsaPublicBlobToLegacy.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\translate\\bcrypttranslate.c"
+    ],
+    "name": "ConvertRsaPublicBlobToLegacy",
+    "prototype": "",
+    "rank_score": 57,
+    "size": 294,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "AllocateMultiObjectBuffer",
+    "ea": "0x180013fd4",
+    "function_file": "functions/180013fd4_AllocateMultiObjectBuffer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "AllocateMultiObjectBuffer",
+    "prototype": "",
+    "rank_score": 56,
+    "size": 168,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "BCryptProcessMultiOperations",
+    "ea": "0x180014cd0",
+    "function_file": "functions/180014cd0_BCryptProcessMultiOperations.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\crypt\\base.c"
+    ],
+    "name": "BCryptProcessMultiOperations",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 123,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "InitializeLoader",
+    "ea": "0x18000ab54",
+    "function_file": "functions/18000ab54_InitializeLoader.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\loader\\loader.c"
+    ],
+    "name": "InitializeLoader",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 120,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ReopenSystemPreferredRngCallback",
+    "ea": "0x18000e270",
+    "function_file": "functions/18000e270_ReopenSystemPreferredRngCallback.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\cryptoapi\\ncrypt\\common\\syspref.c"
+    ],
+    "name": "ReopenSystemPreferredRngCallback",
+    "prototype": "",
+    "rank_score": 53,
+    "size": 75,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 17,
+    "demangled": "IoPack_Configuration_ParamBlock(ulong,ushort const *,ulong,ushort const *,ushort const *,ushort const *,ulong,_CRYPT_CONTEXT_CONFIG *,_CRYPT_CONTEXT_FUNCTION_CONFIG *,ulong,uchar *,void *,ulong *,uchar *)",
+    "ea": "0x18000283c",
+    "function_file": "functions/18000283c_IoPack_Configuration_ParamBlock_ulong_ushort_const_ulong_ushort_const_ushort_const_ushort_const_ulong_CRYPT_CO.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoPack_Configuration_ParamBlock@@YAKKPEBGK000KPEAU_CRYPT_CONTEXT_CONFIG@@PEAU_CRYPT_CONTEXT_FUNCTION_CONFIG@@KPEAEPEAXPEAK3@Z",
+    "prototype": "unsigned int __usercall@<eax>(unsigned int@<ecx>, const unsigned __int16 *@<rdx>, unsigned int@<r8d>, const unsigned __int16 *@<r9>, const unsigned __int16 *Src, const unsigned __int16 *, unsigned int, struct _CRYPT_CONTEXT_CONFIG *, struct _CRYPT_CONTEXT_FUNCTION_CONFIG *, size_t Size, unsigned __int8 *, void *, unsigned int *, unsigned __int8 *)",
+    "rank_score": 40,
+    "size": 897,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 57,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18001b7e0",
+    "function_file": "functions/18001b7e0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "LookUpTableFlushComplete",
+    "ea": "0x18001181c",
+    "function_file": "functions/18001181c_LookUpTableFlushComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LookUpTableFlushComplete",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 881,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 47,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18001c010",
+    "function_file": "functions/18001c010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 10,
+    "demangled": "ValidateBaseAlgHandle",
+    "ea": "0x180006bd0",
+    "function_file": "functions/180006bd0_ValidateBaseAlgHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ValidateBaseAlgHandle",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 458,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 80,
+    "demangled": "DebugTraceError",
+    "ea": "0x180005060",
+    "function_file": "functions/180005060_DebugTraceError.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DebugTraceError",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18001b6ac",
+    "function_file": "functions/18001b6ac_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_DllMainCRTStartupForGS2",
+    "ea": "0x180013ad8",
+    "function_file": "functions/180013ad8_DllMainCRTStartupForGS2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartupForGS2",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 24,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptQueryContextFunctionConfiguration",
+    "ea": "0x180019070",
+    "function_file": "functions/180019070_BCryptQueryContextFunctionConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptQueryContextFunctionConfiguration",
+    "prototype": "NTSTATUS __stdcall(ULONG dwTable, LPCWSTR pszContext, ULONG dwInterface, LPCWSTR pszFunction, ULONG *pcbBuffer, PCRYPT_CONTEXT_FUNCTION_CONFIG *ppBuffer)",
+    "rank_score": 22,
+    "size": 547,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptConfigureContextFunction",
+    "ea": "0x180018860",
+    "function_file": "functions/180018860_BCryptConfigureContextFunction.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptConfigureContextFunction",
+    "prototype": "NTSTATUS __stdcall(ULONG dwTable, LPCWSTR pszContext, ULONG dwInterface, LPCWSTR pszFunction, PCRYPT_CONTEXT_FUNCTION_CONFIG pConfig)",
+    "rank_score": 21,
+    "size": 405,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptRemoveContextFunction",
+    "ea": "0x1800195e0",
+    "function_file": "functions/1800195e0_BCryptRemoveContextFunction.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptRemoveContextFunction",
+    "prototype": "NTSTATUS __stdcall(ULONG dwTable, LPCWSTR pszContext, ULONG dwInterface, LPCWSTR pszFunction)",
+    "rank_score": 21,
+    "size": 393,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BCryptRemoveContextFunctionProvider",
+    "ea": "0x180019770",
+    "function_file": "functions/180019770_BCryptRemoveContextFunctionProvider.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptRemoveContextFunctionProvider",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned __int16 *, unsigned int, unsigned __int16 *, unsigned __int16 *Src)",
+    "rank_score": 21,
+    "size": 425,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "__tailMerge_bcryptprimitives_dll",
+    "ea": "0x180013d66",
+    "function_file": "functions/180013d66_tailMerge_bcryptprimitives_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_bcryptprimitives_dll",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "BCryptQueryContextConfiguration",
+    "ea": "0x180018e90",
+    "function_file": "functions/180018e90_BCryptQueryContextConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptQueryContextConfiguration",
+    "prototype": "NTSTATUS __stdcall(ULONG dwTable, LPCWSTR pszContext, ULONG *pcbBuffer, PCRYPT_CONTEXT_CONFIG *ppBuffer)",
+    "rank_score": 20,
+    "size": 470,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "BCryptConfigureContext",
+    "ea": "0x1800186e0",
+    "function_file": "functions/1800186e0_BCryptConfigureContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptConfigureContext",
+    "prototype": "NTSTATUS __stdcall(ULONG dwTable, LPCWSTR pszContext, PCRYPT_CONTEXT_CONFIG pConfig)",
+    "rank_score": 19,
+    "size": 366,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "BCryptCreateContext",
+    "ea": "0x1800138c0",
+    "function_file": "functions/1800138c0_BCryptCreateContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptCreateContext",
+    "prototype": "NTSTATUS __stdcall(ULONG dwTable, LPCWSTR pszContext, PCRYPT_CONTEXT_CONFIG pConfig)",
+    "rank_score": 19,
+    "size": 376,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "BCryptDeleteContext",
+    "ea": "0x180018a00",
+    "function_file": "functions/180018a00_BCryptDeleteContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptDeleteContext",
+    "prototype": "NTSTATUS __stdcall(ULONG dwTable, LPCWSTR pszContext)",
+    "rank_score": 19,
+    "size": 369,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "GetTrustedEnvironment",
+    "ea": "0x18000b094",
+    "function_file": "functions/18000b094_GetTrustedEnvironment.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetTrustedEnvironment",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "TlgAggregateInternalRegisteredProviderEtwCallback(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *)",
+    "ea": "0x1800117a0",
+    "function_file": "functions/1800117a0_TlgAggregateInternalRegisteredProviderEtwCallback_GUID_const_ulong_uchar_unsigned_int64_unsigned_int64_EVENT_F.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?TlgAggregateInternalRegisteredProviderEtwCallback@@YAXPEBU_GUID@@KE_K1PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z",
+    "prototype": "void __fastcall(const struct _GUID *, unsigned int, unsigned __int8, unsigned __int64, unsigned __int64, struct _EVENT_FILTER_DESCRIPTOR *, void *)",
+    "rank_score": 14,
+    "size": 115,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ComputeEventEntryHash",
+    "ea": "0x1800113c4",
+    "function_file": "functions/1800113c4_ComputeEventEntryHash.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputeEventEntryHash",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 152,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ComputeFlushPeriod",
+    "ea": "0x1800116b8",
+    "function_file": "functions/1800116b8_ComputeFlushPeriod.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputeFlushPeriod",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 156,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "ReverseMemCopy",
+    "ea": "0x18000e0c0",
+    "function_file": "functions/18000e0c0_ReverseMemCopy.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ReverseMemCopy",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "UpdateInternalStatsOnFlush",
+    "ea": "0x1800136d4",
+    "function_file": "functions/1800136d4_UpdateInternalStatsOnFlush.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateInternalStatsOnFlush",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 66,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "ValidateInterfaceId(ulong,ulong)",
+    "ea": "0x180001d9c",
+    "function_file": "functions/180001d9c_ValidateInterfaceId_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateInterfaceId@@YAHKK@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned int)",
+    "rank_score": 13,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_LogBCryptOpenProviderFailure",
+    "ea": "0x18000dc6c",
+    "function_file": "functions/18000dc6c_LogBCryptOpenProviderFailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_LogBCryptOpenProviderFailure",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 48,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180013c80",
+    "function_file": "functions/180013c80_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 68,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "SzString_CchLength(ushort const *,ulong *,ulong)",
+    "ea": "0x180004120",
+    "function_file": "functions/180004120_SzString_CchLength_ushort_const_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SzString_CchLength@@YAKPEBGPEAKK@Z",
+    "prototype": "unsigned int __fastcall(const unsigned __int16 *, unsigned int *, unsigned int)",
+    "rank_score": 12,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ValidateConfigurationFlags(ulong,ulong,ulong)",
+    "ea": "0x18001a2bc",
+    "function_file": "functions/18001a2bc_ValidateConfigurationFlags_ulong_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateConfigurationFlags@@YAHKKK@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned int, unsigned int)",
+    "rank_score": 12,
+    "size": 55,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie_ex",
+    "ea": "0x180013ccc",
+    "function_file": "functions/180013ccc_security_init_cookie_ex.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie_ex",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "VerifyStackAvailable",
+    "ea": "0x18000cae4",
+    "function_file": "functions/18000cae4_VerifyStackAvailable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VerifyStackAvailable",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByRef<16>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByRef<16> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &)",
+    "ea": "0x180001168",
+    "function_file": "functions/180001168_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@U?$_tlgWrapperByVal@$00@@U?$_tlgWrapperByRef@$0BA@@@U?$_tlgWrapperArray@$00@@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@4AEBU?$_tlgWrapperByVal@$00@@AEBU?$_tlgWrapperByRef@$0BA@@@AEBU?$_tlgWrapperArray@$00@@35735735735735735735735745@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 1053,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "IoPack_Registration_ParamBlock(ushort const *,ulong,ulong,ulong,_CRYPT_PROVIDER_REG *,ulong *,uchar *)",
+    "ea": "0x180001c04",
+    "function_file": "functions/180001c04_IoPack_Registration_ParamBlock_ushort_const_ulong_ulong_ulong_CRYPT_PROVIDER_REG_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoPack_Registration_ParamBlock@@YAKPEBGKKKPEAU_CRYPT_PROVIDER_REG@@PEAKPEAE@Z",
+    "prototype": "unsigned int __usercall@<eax>(const unsigned __int16 *@<rcx>, unsigned int@<edx>, unsigned int@<r8d>, unsigned int@<r9d>, struct _CRYPT_PROVIDER_REG *, unsigned int *, unsigned __int8 *)",
+    "rank_score": 10,
+    "size": 290,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "ValidateBaseKeyHandle",
+    "ea": "0x180009740",
+    "function_file": "functions/180009740_ValidateBaseKeyHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ValidateBaseKeyHandle",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateNewEventEntry",
+    "ea": "0x180011b94",
+    "function_file": "functions/180011b94_CreateNewEventEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateNewEventEntry",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 551,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "IoUnpack_SG_SzStringArray(ushort * * *,ulong,uchar *,ulong,uchar *)",
+    "ea": "0x1800027ac",
+    "function_file": "functions/1800027ac_IoUnpack_SG_SzStringArray_ushort_ulong_uchar_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoUnpack_SG_SzStringArray@@YAKPEAPEAPEAGKPEAEK1@Z",
+    "prototype": "unsigned int(unsigned __int16 ***, unsigned int, unsigned __int8 *, unsigned int, unsigned __int8 *)",
+    "rank_score": 9,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "CachedOpenAlgorithmProvider",
+    "ea": "0x180016298",
+    "function_file": "functions/180016298_CachedOpenAlgorithmProvider.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CachedOpenAlgorithmProvider",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "_tlgKeywordOn",
+    "ea": "0x180010ed4",
+    "function_file": "functions/180010ed4_tlgKeywordOn.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgKeywordOn",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IoCopy_SzStringArray(ushort * *,ulong,ulong *,uchar *)",
+    "ea": "0x18001a008",
+    "function_file": "functions/18001a008_IoCopy_SzStringArray_ushort_ulong_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoCopy_SzStringArray@@YAKPEAPEAGKPEAKPEAE@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int16 **, unsigned int, unsigned int *, unsigned __int8 *)",
+    "rank_score": 7,
+    "size": 314,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IoCopy_ProviderReg(_CRYPT_PROVIDER_REG *,ulong *,uchar *)",
+    "ea": "0x18001253c",
+    "function_file": "functions/18001253c_IoCopy_ProviderReg_CRYPT_PROVIDER_REG_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoCopy_ProviderReg@@YAKPEAU_CRYPT_PROVIDER_REG@@PEAKPEAE@Z",
+    "prototype": "unsigned int __fastcall(struct _CRYPT_PROVIDER_REG *, unsigned int *, unsigned __int8 *)",
+    "rank_score": 6,
+    "size": 312,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IoCopy_SzString(ushort *,ulong *,uchar *)",
+    "ea": "0x180003d20",
+    "function_file": "functions/180003d20_IoCopy_SzString_ushort_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoCopy_SzString@@YAKPEAGPEAKPEAE@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int16 *Src, unsigned int *, unsigned __int8 *)",
+    "rank_score": 6,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "IoUnpack_SG_SzString(ushort * *,uchar *,ulong,uchar *)",
+    "ea": "0x180004050",
+    "function_file": "functions/180004050_IoUnpack_SG_SzString_ushort_uchar_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoUnpack_SG_SzString@@YAKPEAPEAGPEAEK1@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int16 **, unsigned __int8 *, unsigned int, unsigned __int8 *)",
+    "rank_score": 6,
+    "size": 194,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "_tlgWriteAgg",
+    "ea": "0x180010f80",
+    "function_file": "functions/180010f80_tlgWriteAgg.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgWriteAgg",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<ushort> const &)",
+    "ea": "0x1800010ac",
+    "function_file": "functions/1800010ac_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@G@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@G@@@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IoCopy_ImageReg(_CRYPT_IMAGE_REG *,ulong,ulong *,uchar *)",
+    "ea": "0x180019cbc",
+    "function_file": "functions/180019cbc_IoCopy_ImageReg_CRYPT_IMAGE_REG_ulong_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoCopy_ImageReg@@YAKPEAU_CRYPT_IMAGE_REG@@KPEAKPEAE@Z",
+    "prototype": "unsigned int __fastcall(struct _CRYPT_IMAGE_REG *, unsigned int, unsigned int *, unsigned __int8 *)",
+    "rank_score": 5,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IoCopy_InterfaceReg(_CRYPT_INTERFACE_REG *,ulong,ulong *,uchar *)",
+    "ea": "0x180019e84",
+    "function_file": "functions/180019e84_IoCopy_InterfaceReg_CRYPT_INTERFACE_REG_ulong_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoCopy_InterfaceReg@@YAKPEAU_CRYPT_INTERFACE_REG@@KPEAKPEAE@Z",
+    "prototype": "unsigned int __fastcall(struct _CRYPT_INTERFACE_REG *, unsigned int, unsigned int *, unsigned __int8 *)",
+    "rank_score": 5,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0zzqdq_USE_EtwEventWrite",
+    "ea": "0x18000dca4",
+    "function_file": "functions/18000dca4_McTemplateU0zzqdq_USE_EtwEventWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0zzqdq_USE_EtwEventWrite",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 225,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SymCryptRsaPkcs1RemoveEncryptionPadding",
+    "ea": "0x18001aae4",
+    "function_file": "functions/18001aae4_SymCryptRsaPkcs1RemoveEncryptionPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SymCryptRsaPkcs1RemoveEncryptionPadding",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 312,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "_tlgCreate1Sz_wchar_t",
+    "ea": "0x18000e150",
+    "function_file": "functions/18000e150_tlgCreate1Sz_wchar_t.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_wchar_t",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IoCopy_ImageRegs(_CRYPT_IMAGE_REG *,_CRYPT_IMAGE_REG *,uchar * *,uchar * *,ulong *,uchar *)",
+    "ea": "0x180019dac",
+    "function_file": "functions/180019dac_IoCopy_ImageRegs_CRYPT_IMAGE_REG_CRYPT_IMAGE_REG_uchar_uchar_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoCopy_ImageRegs@@YAKPEAU_CRYPT_IMAGE_REG@@0PEAPEAE1PEAKPEAE@Z",
+    "prototype": "unsigned int(struct _CRYPT_IMAGE_REG *, struct _CRYPT_IMAGE_REG *, unsigned __int8 **, unsigned __int8 **, unsigned int *, unsigned __int8 *)",
+    "rank_score": 4,
+    "size": 208,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IoCopy_InterfaceRegArray(_CRYPT_INTERFACE_REG * *,ulong,ulong,ulong *,uchar *)",
+    "ea": "0x180019f40",
+    "function_file": "functions/180019f40_IoCopy_InterfaceRegArray_CRYPT_INTERFACE_REG_ulong_ulong_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IoCopy_InterfaceRegArray@@YAKPEAPEAU_CRYPT_INTERFACE_REG@@KKPEAKPEAE@Z",
+    "prototype": "unsigned int __fastcall(struct _CRYPT_INTERFACE_REG **, unsigned int, unsigned int, unsigned int *, unsigned __int8 *)",
+    "rank_score": 4,
+    "size": 193,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "_RemoveFromLoadedProviderList",
+    "ea": "0x18001aa9c",
+    "function_file": "functions/18001aa9c_RemoveFromLoadedProviderList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_RemoveFromLoadedProviderList",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCchCopyW",
+    "ea": "0x18000da50",
+    "function_file": "functions/18000da50_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 3,
+    "size": 108,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_tlgEnableCallback",
+    "ea": "0x180010f00",
+    "function_file": "functions/180010f00_tlgEnableCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgEnableCallback",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 2,
+    "size": 119,
+    "tags": []
+  }
+]

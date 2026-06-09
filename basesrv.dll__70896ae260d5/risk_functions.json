@@ -1,0 +1,2327 @@
+[
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "ServerDllInitialization",
+    "ea": "0x180002f50",
+    "function_file": "functions/180002f50_ServerDllInitialization.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateDirectoryObject",
+      "ntdll!NtCreateFile",
+      "ntdll!NtCreateSymbolicLinkObject",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtQueryValueKey",
+      "ntdll!NtSetInformationObject",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlCreateSecurityDescriptor",
+      "ntdll!RtlCreateTagHeap",
+      "ntdll!RtlCreateUnicodeString",
+      "ntdll!RtlDeleteCriticalSection",
+      "ntdll!RtlExpandEnvironmentStrings_U",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlGetAce",
+      "ntdll!RtlGetCurrentServiceSessionId",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlInitUnicodeStringEx",
+      "ntdll!RtlInitializeCriticalSection",
+      "ntdll!RtlInitializeCriticalSectionAndSpinCount",
+      "ntdll!RtlQueryRegistryValuesEx",
+      "ntdll!RtlSetDaclSecurityDescriptor",
+      "ntdll!RtlSetSaclSecurityDescriptor",
+      "ntdll!_wcsicmp",
+      "ntdll!swprintf_s",
+      "ntdll!wcscat_s",
+      "ntdll!wcscpy_s",
+      "ntdll!wcsncpy_s"
+    ],
+    "matched_strings": [
+      "\\system32",
+      "\\Sessions\\BNOLINKS"
+    ],
+    "name": "ServerDllInitialization",
+    "prototype": "NTSTATUS __fastcall(__int64)",
+    "rank_score": 17392,
+    "size": 4638,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateBaseAcls",
+    "ea": "0x180004210",
+    "function_file": "functions/180004210_CreateBaseAcls.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlAddAccessAllowedAce",
+      "ntdll!RtlAddAccessAllowedAceEx",
+      "ntdll!RtlAddMandatoryAce",
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCreateAcl",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlLengthSid"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Session Manager"
+    ],
+    "name": "CreateBaseAcls",
+    "prototype": "NTSTATUS __fastcall(PACL *, PACL *, PACL *, PACL *, PACL *)",
+    "rank_score": 13725,
+    "size": 2910,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "BaseSrvDefineDosDevice",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_BaseSrvDefineDosDevice.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrIsClientSandboxed",
+      "CSRSRV!CsrRevertToSelf",
+      "CSRSRV!CsrValidateMessageBuffer",
+      "ntdll!NtClose",
+      "ntdll!NtCreateSymbolicLinkObject",
+      "ntdll!NtMakePermanentObject",
+      "ntdll!NtMakeTemporaryObject",
+      "ntdll!NtOpenSymbolicLinkObject",
+      "ntdll!NtQuerySymbolicLinkObject",
+      "ntdll!RtlAddAccessAllowedAce",
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyLuid",
+      "ntdll!RtlCreateAcl",
+      "ntdll!RtlCreateSecurityDescriptor",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeSid",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlLeaveCriticalSection",
+      "ntdll!RtlSetDaclSecurityDescriptor",
+      "ntdll!RtlUpcaseUnicodeChar",
+      "ntdll!_snwprintf_s",
+      "ntdll!_wcsicmp",
+      "ntdll!_wcsnicmp",
+      "ntdll!wcsnlen"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvDefineDosDevice",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 8482,
+    "size": 3727,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BaseSrvInitializeIniFileMappings",
+    "ea": "0x180004d80",
+    "function_file": "functions/180004d80_BaseSrvInitializeIniFileMappings.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtEnumerateKey",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyUnicodeString",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\IniFileMapping"
+    ],
+    "name": "BaseSrvInitializeIniFileMappings",
+    "prototype": "NTSTATUS()",
+    "rank_score": 3705,
+    "size": 1149,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ReadSettingsCache",
+    "ea": "0x1800029f0",
+    "function_file": "functions/1800029f0_ReadSettingsCache.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!wcsncpy_s"
+    ],
+    "matched_strings": [],
+    "name": "ReadSettingsCache",
+    "prototype": "int __fastcall(wchar_t *, void *)",
+    "rank_score": 3464,
+    "size": 1250,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BaseSrvLaunchCPL",
+    "ea": "0x18000b7ac",
+    "function_file": "functions/18000b7ac_BaseSrvLaunchCPL.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtResumeThread",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlAppendStringToString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\RunDll32.exe",
+      "  shell32.dll,Control_RunDLL ntvdmcpl.dll,,/originalapp:\""
+    ],
+    "name": "BaseSrvLaunchCPL",
+    "prototype": "__int64 __fastcall(STRING *Source, __int64)",
+    "rank_score": 3299,
+    "size": 643,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "BaseSrvGetNextVDMCommand",
+    "ea": "0x18000a960",
+    "function_file": "functions/18000a960_BaseSrvGetNextVDMCommand.md",
+    "matched_imports": [
+      "CSRSRV!CsrValidateMessageBuffer",
+      "ntdll!NtClose",
+      "ntdll!NtResetEvent",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvGetNextVDMCommand",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 3069,
+    "size": 2042,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "OpenGlobalizationUserSettingsKey_ForMua",
+    "ea": "0x18000cd80",
+    "function_file": "functions/18000cd80_OpenGlobalizationUserSettingsKey_ForMua.md",
+    "matched_imports": [
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlConvertSidToUnicodeString",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlGetPersistedStateLocation",
+      "ntdll!RtlSubAuthorityCountSid",
+      "ntdll!RtlSubAuthoritySid",
+      "ntdll!ZwClose",
+      "ntdll!ZwOpenKey",
+      "ntdll!ZwQueryInformationToken"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control\\International",
+      "TargetNtPath"
+    ],
+    "name": "OpenGlobalizationUserSettingsKey_ForMua",
+    "prototype": "__int64 __fastcall(__int64, __int64, void **, _DWORD *)",
+    "rank_score": 2741,
+    "size": 749,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "BaseSrvSaveIniFileMapping",
+    "ea": "0x180005210",
+    "function_file": "functions/180005210_BaseSrvSaveIniFileMapping.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtEnumerateKey",
+      "ntdll!NtEnumerateValueKey",
+      "ntdll!NtOpenKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyUnicodeString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvSaveIniFileMapping",
+    "prototype": "__int64 __fastcall(__int64, void *)",
+    "rank_score": 2655,
+    "size": 1219,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "BaseSrvRefreshIniFileMapping",
+    "ea": "0x180005f10",
+    "function_file": "functions/180005f10_BaseSrvRefreshIniFileMapping.md",
+    "matched_imports": [
+      "CSRSRV!CsrValidateMessageBuffer",
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlLockHeap",
+      "ntdll!RtlUnlockHeap"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\IniFileMapping"
+    ],
+    "name": "BaseSrvRefreshIniFileMapping",
+    "prototype": "NTSTATUS __fastcall(UNICODE_STRING *)",
+    "rank_score": 2500,
+    "size": 714,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "BaseSrvCheckDOS",
+    "ea": "0x180008644",
+    "function_file": "functions/180008644_BaseSrvCheckDOS.md",
+    "matched_imports": [
+      "CSRSRV!CsrLockProcessByClientId",
+      "CSRSRV!CsrUnlockProcess",
+      "ntdll!NtClose",
+      "ntdll!NtCompareTokens",
+      "ntdll!NtDuplicateObject",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvCheckDOS",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2241,
+    "size": 1124,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BaseSrvEnumWowProcess",
+    "ea": "0x180009afc",
+    "function_file": "functions/180009afc_BaseSrvEnumWowProcess.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrRevertToSelf",
+      "ntdll!NtClose",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvEnumWowProcess",
+    "prototype": "__int64 __fastcall(unsigned int *)",
+    "rank_score": 2231,
+    "size": 672,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "OpenGlobalizationUserSettingsKey_ForSingleUserModel",
+    "ea": "0x18000d074",
+    "function_file": "functions/18000d074_OpenGlobalizationUserSettingsKey_ForSingleUserModel.md",
+    "matched_imports": [
+      "ntdll!RtlCopyUnicodeString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!ZwClose",
+      "ntdll!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CommonGlobUserSettings\\"
+    ],
+    "name": "OpenGlobalizationUserSettingsKey_ForSingleUserModel",
+    "prototype": "__int64 __fastcall(ULONG, _QWORD *)",
+    "rank_score": 1880,
+    "size": 583,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BaseSrvCreateProcess2",
+    "ea": "0x180006ee0",
+    "function_file": "functions/180006ee0_BaseSrvCreateProcess2.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenProcess",
+      "ntdll!NtOpenThread",
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvCreateProcess2",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 1861,
+    "size": 816,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "BaseSrvNlsLogon",
+    "ea": "0x1800064c0",
+    "function_file": "functions/1800064c0_BaseSrvNlsLogon.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateKey",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlLeaveCriticalSection",
+      "ntdll!RtlOpenCurrentUser"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvNlsLogon",
+    "prototype": "NTSTATUS __fastcall(int)",
+    "rank_score": 1859,
+    "size": 472,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "BaseSrvCheckWOW",
+    "ea": "0x180008d80",
+    "function_file": "functions/180008d80_BaseSrvCheckWOW.md",
+    "matched_imports": [
+      "CSRSRV!CsrLockProcessByClientId",
+      "CSRSRV!CsrUnlockProcess",
+      "ntdll!NtClose",
+      "ntdll!NtCompareTokens",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlCompareUnicodeString",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvCheckWOW",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1839,
+    "size": 907,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BaseSrvCopyCommand",
+    "ea": "0x1800091dc",
+    "function_file": "functions/1800091dc_BaseSrvCopyCommand.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvCopyCommand",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1834,
+    "size": 1206,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvSaveVarNameMapping",
+    "ea": "0x1800056e0",
+    "function_file": "functions/1800056e0_BaseSrvSaveVarNameMapping.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyUnicodeString",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvSaveVarNameMapping",
+    "prototype": "__int64 __fastcall(__int64, __int64, const UNICODE_STRING *, const wchar_t *, _QWORD *)",
+    "rank_score": 1818,
+    "size": 704,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "BaseSrvFreeVDMInfo",
+    "ea": "0x18000a72c",
+    "function_file": "functions/18000a72c_BaseSrvFreeVDMInfo.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFreeVDMInfo",
+    "prototype": "BOOLEAN __fastcall(_QWORD *P)",
+    "rank_score": 1817,
+    "size": 351,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NlsUpdateCacheInfo",
+    "ea": "0x1800024b0",
+    "function_file": "functions/1800024b0_NlsUpdateCacheInfo.md",
+    "matched_imports": [
+      "ntdll!NtQueryMultipleValueKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!wcsncpy_s"
+    ],
+    "matched_strings": [],
+    "name": "NlsUpdateCacheInfo",
+    "prototype": "BOOLEAN __fastcall(__int64, __int64)",
+    "rank_score": 1643,
+    "size": 1328,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "BaseSrvRegisterThread",
+    "ea": "0x180005da0",
+    "function_file": "functions/180005da0_BaseSrvRegisterThread.md",
+    "matched_imports": [
+      "CSRSRV!CsrCreateThread",
+      "CSRSRV!CsrLockProcessByClientId",
+      "CSRSRV!CsrLockThreadByClientId",
+      "CSRSRV!CsrUnlockProcess",
+      "CSRSRV!CsrUnlockThread",
+      "ntdll!NtClose",
+      "ntdll!NtDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvRegisterThread",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1613,
+    "size": 348,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BaseSrvSetTermsrvClientTimeZone",
+    "ea": "0x180006220",
+    "function_file": "functions/180006220_BaseSrvSetTermsrvClientTimeZone.md",
+    "matched_imports": [
+      "CSRSRV!CsrValidateMessageBuffer",
+      "ntdll!LdrGetDllHandle",
+      "ntdll!LdrGetProcedureAddress",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlInitString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvSetTermsrvClientTimeZone",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1517,
+    "size": 661,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BaseSrvLaunchProcess",
+    "ea": "0x18000ba38",
+    "function_file": "functions/18000ba38_BaseSrvLaunchProcess.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateUserProcess",
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!NtQueryInformationToken",
+      "ntdll!NtSetInformationThread",
+      "ntdll!RtlCreateProcessParametersEx",
+      "ntdll!RtlDestroyProcessParameters"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvLaunchProcess",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, __int64, __int64, __int64, _QWORD *, _QWORD *)",
+    "rank_score": 1431,
+    "size": 731,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BaseSrvExitDOSTask",
+    "ea": "0x180009e9c",
+    "function_file": "functions/180009e9c_BaseSrvExitDOSTask.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvExitDOSTask",
+    "prototype": "__int64 __fastcall(_QWORD *, int)",
+    "rank_score": 1426,
+    "size": 271,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsClientSystem",
+    "ea": "0x18000c61c",
+    "function_file": "functions/18000c61c_IsClientSystem.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationToken",
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlEqualSid",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "IsClientSystem",
+    "prototype": "__int64 __fastcall(HANDLE TokenHandle)",
+    "rank_score": 1426,
+    "size": 416,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "OkToRunInSharedWOW",
+    "ea": "0x18000c7c4",
+    "function_file": "functions/18000c7c4_OkToRunInSharedWOW.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrLockProcessByClientId",
+      "CSRSRV!CsrRevertToSelf",
+      "CSRSRV!CsrUnlockProcess",
+      "ntdll!NtClose",
+      "ntdll!NtOpenProcessToken",
+      "ntdll!NtOpenThreadToken"
+    ],
+    "matched_strings": [],
+    "name": "OkToRunInSharedWOW",
+    "prototype": "__int64 __fastcall(__int64, __int64, void **)",
+    "rank_score": 1426,
+    "size": 291,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "IsGlobalSymbolicLink",
+    "ea": "0x180001eb0",
+    "function_file": "functions/180001eb0_IsGlobalSymbolicLink.md",
+    "matched_imports": [
+      "ntdll!NtQueryObject",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "IsGlobalSymbolicLink",
+    "prototype": "__int64 __fastcall(HANDLE Handle, BOOLEAN *)",
+    "rank_score": 1425,
+    "size": 359,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BaseSrvUpdateVDMSequenceNumber",
+    "ea": "0x18000c2a4",
+    "function_file": "functions/18000c2a4_BaseSrvUpdateVDMSequenceNumber.md",
+    "matched_imports": [
+      "CSRSRV!CsrLockProcessByClientId",
+      "CSRSRV!CsrUnlockProcess",
+      "ntdll!DbgPrint",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvUpdateVDMSequenceNumber",
+    "prototype": "__int64 __fastcall(char, __int64, unsigned int, __int64, __int64)",
+    "rank_score": 1251,
+    "size": 425,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CheckForGlobalDriveLetter",
+    "ea": "0x180002250",
+    "function_file": "functions/180002250_CheckForGlobalDriveLetter.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrRevertToSelf",
+      "ntdll!NtClose",
+      "ntdll!NtOpenSymbolicLinkObject",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!wcsncpy_s"
+    ],
+    "matched_strings": [],
+    "name": "CheckForGlobalDriveLetter",
+    "prototype": "BOOLEAN __fastcall(__int16)",
+    "rank_score": 1246,
+    "size": 306,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetThreadAuthenticationId",
+    "ea": "0x180006700",
+    "function_file": "functions/180006700_GetThreadAuthenticationId.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationToken",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyLuid",
+      "ntdll!RtlCopySid",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "GetThreadAuthenticationId",
+    "prototype": "__int64()",
+    "rank_score": 1225,
+    "size": 326,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvGetUserToken",
+    "ea": "0x18000b18c",
+    "function_file": "functions/18000b18c_BaseSrvGetUserToken.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrLockProcessByClientId",
+      "CSRSRV!CsrRevertToSelf",
+      "CSRSRV!CsrUnlockProcess",
+      "ntdll!NtOpenProcessToken",
+      "ntdll!NtOpenThreadToken"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvGetUserToken",
+    "prototype": "__int64 __fastcall(__int64, int, void **)",
+    "rank_score": 1224,
+    "size": 200,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvDupStandardHandles",
+    "ea": "0x180009788",
+    "function_file": "functions/180009788_BaseSrvDupStandardHandles.md",
+    "matched_imports": [
+      "ntdll!NtDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvDupStandardHandles",
+    "prototype": "NTSTATUS __fastcall(HANDLE SourceProcessHandle, __int64)",
+    "rank_score": 1217,
+    "size": 541,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BaseSrvSaveMappingTarget",
+    "ea": "0x1800059b0",
+    "function_file": "functions/1800059b0_BaseSrvSaveMappingTarget.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyUnicodeString",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvSaveMappingTarget",
+    "prototype": "__int64 __fastcall(wchar_t *String1, _QWORD *, _DWORD *)",
+    "rank_score": 1216,
+    "size": 515,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BaseSrvBSMThread",
+    "ea": "0x180006aa0",
+    "function_file": "functions/180006aa0_BaseSrvBSMThread.md",
+    "matched_imports": [
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlExitUserThread",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvBSMThread",
+    "prototype": "void()",
+    "rank_score": 1213,
+    "size": 235,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsNTVDMInstalled",
+    "ea": "0x18000d494",
+    "function_file": "functions/18000d494_IsNTVDMInstalled.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "NTVDMInstalled",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Control\\WOW"
+    ],
+    "name": "IsNTVDMInstalled",
+    "prototype": "bool()",
+    "rank_score": 1145,
+    "size": 292,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetPolicyState",
+    "ea": "0x18000d34c",
+    "function_file": "functions/18000d34c_GetPolicyState.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppCompat",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Control\\WOW"
+    ],
+    "name": "GetPolicyState",
+    "prototype": "__int64 __fastcall(char)",
+    "rank_score": 1135,
+    "size": 322,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BasepImpersonateClientProcess",
+    "ea": "0x180007f20",
+    "function_file": "functions/180007f20_BasepImpersonateClientProcess.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDuplicateToken",
+      "ntdll!NtOpenProcessToken",
+      "ntdll!NtSetInformationThread"
+    ],
+    "matched_strings": [],
+    "name": "BasepImpersonateClientProcess",
+    "prototype": "NTSTATUS __fastcall(void *)",
+    "rank_score": 1045,
+    "size": 274,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BaseSrvUpdateDOSEntry",
+    "ea": "0x18000c088",
+    "function_file": "functions/18000c088_BaseSrvUpdateDOSEntry.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDuplicateObject",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvUpdateDOSEntry",
+    "prototype": "__int64 __fastcall(unsigned int *, int)",
+    "rank_score": 1043,
+    "size": 448,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BaseSrvEnumWowTask",
+    "ea": "0x180009da4",
+    "function_file": "functions/180009da4_BaseSrvEnumWowTask.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvEnumWowTask",
+    "prototype": "__int64 __fastcall(unsigned int *)",
+    "rank_score": 1028,
+    "size": 242,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AddBSMRequest",
+    "ea": "0x180002020",
+    "function_file": "functions/180002020_AddBSMRequest.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyLuid",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "AddBSMRequest",
+    "prototype": "__int64 __fastcall(int, char, struct _LUID *)",
+    "rank_score": 1016,
+    "size": 347,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BaseSrvFreeSharedWowRecord",
+    "ea": "0x18000a674",
+    "function_file": "functions/18000a674_BaseSrvFreeSharedWowRecord.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFreeSharedWowRecord",
+    "prototype": "BOOLEAN __fastcall(_QWORD *)",
+    "rank_score": 915,
+    "size": 178,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BaseSrvFindSharedWow",
+    "ea": "0x18000a3b0",
+    "function_file": "functions/18000a3b0_BaseSrvFindSharedWow.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrRevertToSelf",
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFindSharedWow",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64, UNICODE_STRING *, __int64 *)",
+    "rank_score": 836,
+    "size": 296,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "BaseSrvNlsUpdateRegistryCache",
+    "ea": "0x1800068e0",
+    "function_file": "functions/1800068e0_BaseSrvNlsUpdateRegistryCache.md",
+    "matched_imports": [
+      "ntdll!NtNotifyChangeKey",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvNlsUpdateRegistryCache",
+    "prototype": "void __fastcall(PVOID ApcContext, PIO_STATUS_BLOCK IoStatusBlock, ULONG Reserved)",
+    "rank_score": 832,
+    "size": 180,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BaseSrvAddWowTask",
+    "ea": "0x1800083dc",
+    "function_file": "functions/1800083dc_BaseSrvAddWowTask.md",
+    "matched_imports": [
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvAddWowTask",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 827,
+    "size": 216,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BaseSrvExitWOWTask",
+    "ea": "0x18000a0a0",
+    "function_file": "functions/18000a0a0_BaseSrvExitWOWTask.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvExitWOWTask",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 826,
+    "size": 247,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsCallerAdminsOrSystem",
+    "ea": "0x18000cbc0",
+    "function_file": "functions/18000cbc0_IsCallerAdminsOrSystem.md",
+    "matched_imports": [
+      "ntdll!RtlCheckTokenMembershipEx",
+      "ntdll!RtlInitializeSidEx"
+    ],
+    "matched_strings": [],
+    "name": "IsCallerAdminsOrSystem",
+    "prototype": "__int64()",
+    "rank_score": 824,
+    "size": 199,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BaseSrvExitVDMWorker",
+    "ea": "0x18000a014",
+    "function_file": "functions/18000a014_BaseSrvExitVDMWorker.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvExitVDMWorker",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 815,
+    "size": 131,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BaseSrvImportApis",
+    "ea": "0x18000b524",
+    "function_file": "functions/18000b524_BaseSrvImportApis.md",
+    "matched_imports": [
+      "ntdll!LdrGetProcedureAddress",
+      "ntdll!LdrLoadDll",
+      "ntdll!RtlInitString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvImportApis",
+    "prototype": "NTSTATUS()",
+    "rank_score": 813,
+    "size": 229,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BaseSrvUpdateWOWEntry",
+    "ea": "0x18000c454",
+    "function_file": "functions/18000c454_BaseSrvUpdateWOWEntry.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvUpdateWOWEntry",
+    "prototype": "__int64 __fastcall(unsigned int *, int)",
+    "rank_score": 640,
+    "size": 394,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvCheckProcessAccess",
+    "ea": "0x180008ab0",
+    "function_file": "functions/180008ab0_BaseSrvCheckProcessAccess.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrRevertToSelf",
+      "ntdll!NtOpenProcess"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvCheckProcessAccess",
+    "prototype": "__int64 __fastcall(int, int, void **)",
+    "rank_score": 634,
+    "size": 191,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BaseSrvAddSepWowTask",
+    "ea": "0x18000806c",
+    "function_file": "functions/18000806c_BaseSrvAddSepWowTask.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvAddSepWowTask",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 630,
+    "size": 423,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BaseSrvSetTermsrvAppInstallMode",
+    "ea": "0x18000cb40",
+    "function_file": "functions/18000cb40_BaseSrvSetTermsrvAppInstallMode.md",
+    "matched_imports": [
+      "CSRSRV!CsrImpersonateClient",
+      "CSRSRV!CsrRevertToSelf"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvSetTermsrvAppInstallMode",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 622,
+    "size": 120,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BroadcastDriveLetterChange",
+    "ea": "0x180006ba0",
+    "function_file": "functions/180006ba0_BroadcastDriveLetterChange.md",
+    "matched_imports": [
+      "ntdll!LdrGetDllHandle",
+      "ntdll!LdrGetProcedureAddress",
+      "ntdll!RtlCopyLuid"
+    ],
+    "matched_strings": [],
+    "name": "BroadcastDriveLetterChange",
+    "prototype": "__int64 __fastcall(char, char, struct _LUID *)",
+    "rank_score": 618,
+    "size": 455,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "BaseSrvCreatePairWaitHandles",
+    "ea": "0x180009698",
+    "function_file": "functions/180009698_BaseSrvCreatePairWaitHandles.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateEvent",
+      "ntdll!NtDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvCreatePairWaitHandles",
+    "prototype": "NTSTATUS __fastcall(void **, void **)",
+    "rank_score": 617,
+    "size": 144,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "BaseSrvFreeConsoleRecord",
+    "ea": "0x18000a54c",
+    "function_file": "functions/18000a54c_BaseSrvFreeConsoleRecord.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFreeConsoleRecord",
+    "prototype": "void __fastcall(PVOID *P)",
+    "rank_score": 617,
+    "size": 193,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "InternalBaseSrvCreateProcess",
+    "ea": "0x180007280",
+    "function_file": "functions/180007280_InternalBaseSrvCreateProcess.md",
+    "matched_imports": [
+      "CSRSRV!CsrCreateProcess",
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!NtSetInformationProcess"
+    ],
+    "matched_strings": [],
+    "name": "InternalBaseSrvCreateProcess",
+    "prototype": "NTSTATUS __fastcall(int, int, unsigned int, int, __int64, HANDLE ProcessHandle, __int64, unsigned int *, __int16, __int64, _DWORD *)",
+    "rank_score": 616,
+    "size": 475,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvCloseStandardHandles",
+    "ea": "0x180009114",
+    "function_file": "functions/180009114_BaseSrvCloseStandardHandles.md",
+    "matched_imports": [
+      "ntdll!NtDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvCloseStandardHandles",
+    "prototype": "int __fastcall(HANDLE SourceProcessHandle, __int64)",
+    "rank_score": 614,
+    "size": 193,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SendWinStationBSM",
+    "ea": "0x18000789c",
+    "function_file": "functions/18000789c_SendWinStationBSM.md",
+    "matched_imports": [
+      "ntdll!LdrGetProcedureAddress",
+      "ntdll!LdrLoadDll",
+      "ntdll!LdrUnloadDll"
+    ],
+    "matched_strings": [],
+    "name": "SendWinStationBSM",
+    "prototype": "NTSTATUS()",
+    "rank_score": 614,
+    "size": 234,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BaseSrvAddSharedWowTask",
+    "ea": "0x18000821c",
+    "function_file": "functions/18000821c_BaseSrvAddSharedWowTask.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvAddSharedWowTask",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 429,
+    "size": 402,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BaseSrvAllocateWOWRecord",
+    "ea": "0x1800085bc",
+    "function_file": "functions/1800085bc_BaseSrvAllocateWOWRecord.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvAllocateWOWRecord",
+    "prototype": "_DWORD *()",
+    "rank_score": 426,
+    "size": 129,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "BaseSrvFreeWOWRecord",
+    "ea": "0x18000a894",
+    "function_file": "functions/18000a894_BaseSrvFreeWOWRecord.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFreeWOWRecord",
+    "prototype": "BOOLEAN __fastcall(_QWORD *P)",
+    "rank_score": 417,
+    "size": 95,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "GetCallerLuid",
+    "ea": "0x180002190",
+    "function_file": "functions/180002190_GetCallerLuid.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationToken",
+      "ntdll!RtlCopyLuid"
+    ],
+    "matched_strings": [],
+    "name": "GetCallerLuid",
+    "prototype": "__int64 __fastcall(PLUID DestinationLuid)",
+    "rank_score": 415,
+    "size": 173,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BaseSrvAllocateSharedWowRecord",
+    "ea": "0x180008514",
+    "function_file": "functions/180008514_BaseSrvAllocateSharedWowRecord.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvAllocateSharedWowRecord",
+    "prototype": "struct _UNICODE_STRING *__fastcall(PCUNICODE_STRING SourceString)",
+    "rank_score": 414,
+    "size": 161,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvSaveFileNameMapping",
+    "ea": "0x180005bc0",
+    "function_file": "functions/180005bc0_BaseSrvSaveFileNameMapping.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvSaveFileNameMapping",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString, _QWORD *)",
+    "rank_score": 414,
+    "size": 157,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FirstSoundSentry",
+    "ea": "0x18000cca0",
+    "function_file": "functions/18000cca0_FirstSoundSentry.md",
+    "matched_imports": [
+      "ntdll!LdrGetDllHandle",
+      "ntdll!LdrGetProcedureAddress"
+    ],
+    "matched_strings": [],
+    "name": "FirstSoundSentry",
+    "prototype": "__int64()",
+    "rank_score": 413,
+    "size": 141,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "BaseSrvGetVdmSequence",
+    "ea": "0x18000b458",
+    "function_file": "functions/18000b458_BaseSrvGetVdmSequence.md",
+    "matched_imports": [
+      "CSRSRV!CsrLockProcessByClientId",
+      "CSRSRV!CsrUnlockProcess"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvGetVdmSequence",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 408,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "BaseSrvFreeDOSRecord",
+    "ea": "0x18000a614",
+    "function_file": "functions/18000a614_BaseSrvFreeDOSRecord.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFreeDOSRecord",
+    "prototype": "BOOLEAN __fastcall(__int64)",
+    "rank_score": 317,
+    "size": 89,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "OpenRegistryKey",
+    "ea": "0x18000d2c4",
+    "function_file": "functions/18000d2c4_OpenRegistryKey.md",
+    "matched_imports": [
+      "ntdll!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "OpenRegistryKey",
+    "prototype": "NTSTATUS __fastcall(__int64, struct _UNICODE_STRING *, void **)",
+    "rank_score": 251,
+    "size": 75,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartupForGS",
+    "ea": "0x180007520",
+    "function_file": "functions/180007520_DllMainCRTStartupForGS.md",
+    "matched_imports": [
+      "ntdll!LdrDisableThreadCalloutsForDll"
+    ],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartupForGS",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 222,
+    "size": 39,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BaseSrvEqualAppNameMappings",
+    "ea": "0x18000c93c",
+    "function_file": "functions/18000c93c_BaseSrvEqualAppNameMappings.md",
+    "matched_imports": [
+      "ntdll!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvEqualAppNameMappings",
+    "prototype": "bool __fastcall(__int64, __int64)",
+    "rank_score": 215,
+    "size": 128,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BaseSrvAllocateDOSRecord",
+    "ea": "0x1800084bc",
+    "function_file": "functions/1800084bc_BaseSrvAllocateDOSRecord.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvAllocateDOSRecord",
+    "prototype": "PVOID()",
+    "rank_score": 214,
+    "size": 81,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BaseSrvFreeAppNameMapping",
+    "ea": "0x18000caa0",
+    "function_file": "functions/18000caa0_BaseSrvFreeAppNameMapping.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFreeAppNameMapping",
+    "prototype": "BOOLEAN __fastcall(PVOID **P)",
+    "rank_score": 214,
+    "size": 73,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BaseSrvFreeFileMapping",
+    "ea": "0x18000caf0",
+    "function_file": "functions/18000caf0_BaseSrvFreeFileMapping.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFreeFileMapping",
+    "prototype": "BOOLEAN __fastcall(PVOID *P)",
+    "rank_score": 214,
+    "size": 65,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvEqualVarNameMappings",
+    "ea": "0x18000ca28",
+    "function_file": "functions/18000ca28_BaseSrvEqualVarNameMappings.md",
+    "matched_imports": [
+      "ntdll!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvEqualVarNameMappings",
+    "prototype": "bool __fastcall(__int64, __int64)",
+    "rank_score": 213,
+    "size": 112,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvFreeVarNameMapping",
+    "ea": "0x180007470",
+    "function_file": "functions/180007470_BaseSrvFreeVarNameMapping.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFreeVarNameMapping",
+    "prototype": "BOOLEAN __fastcall(PVOID *P)",
+    "rank_score": 213,
+    "size": 55,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreateBSMThread",
+    "ea": "0x1800074b0",
+    "function_file": "functions/1800074b0_CreateBSMThread.md",
+    "matched_imports": [
+      "ntdll!RtlCreateUserThread"
+    ],
+    "matched_strings": [],
+    "name": "CreateBSMThread",
+    "prototype": "NTSTATUS()",
+    "rank_score": 212,
+    "size": 100,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "memset_0",
+    "ea": "0x18000d713",
+    "function_file": "functions/18000d713_memset_0.md",
+    "matched_imports": [
+      "ntdll!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 120,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "memmove_0",
+    "ea": "0x18000d707",
+    "function_file": "functions/18000d707_memmove_0.md",
+    "matched_imports": [
+      "ntdll!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 116,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memcpy_0",
+    "ea": "0x18000d6fb",
+    "function_file": "functions/18000d6fb_memcpy_0.md",
+    "matched_imports": [
+      "ntdll!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 114,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvFreeAndRemoveBatRecord",
+    "ea": "0x180006a40",
+    "function_file": "functions/180006a40_BaseSrvFreeAndRemoveBatRecord.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BaseSrvFreeAndRemoveBatRecord",
+    "prototype": "void __fastcall(_QWORD *)",
+    "rank_score": 113,
+    "size": 83,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "AllocateMemory",
+    "ea": "0x18000cd34",
+    "function_file": "functions/18000cd34_AllocateMemory.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "AllocateMemory",
+    "prototype": "PVOID __fastcall(SIZE_T)",
+    "rank_score": 112,
+    "size": 28,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "FreeMemory",
+    "ea": "0x18000cd5c",
+    "function_file": "functions/18000cd5c_FreeMemory.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "FreeMemory",
+    "prototype": "BOOLEAN __fastcall(void *)",
+    "rank_score": 112,
+    "size": 25,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "NtTerminateProcess_0",
+    "ea": "0x180007860",
+    "function_file": "functions/180007860_NtTerminateProcess_0.md",
+    "matched_imports": [
+      "ntdll!NtTerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "NtTerminateProcess_0",
+    "prototype": "NTSTATUS __stdcall(HANDLE ProcessHandle, NTSTATUS ExitStatus)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "RtlCaptureContext_0",
+    "ea": "0x18000786c",
+    "function_file": "functions/18000786c_RtlCaptureContext_0.md",
+    "matched_imports": [
+      "ntdll!RtlCaptureContext"
+    ],
+    "matched_strings": [],
+    "name": "RtlCaptureContext_0",
+    "prototype": "void __stdcall(PCONTEXT ContextRecord)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 20,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000d730",
+    "function_file": "functions/18000d730_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 32,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000d60c",
+    "function_file": "functions/18000d60c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 91,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18000e010",
+    "function_file": "functions/18000e010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BaseSrvCreateProcess",
+    "ea": "0x180007cf0",
+    "function_file": "functions/180007cf0_BaseSrvCreateProcess.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvCreateProcess",
+    "prototype": "__int64 __fastcall(_OWORD *)",
+    "rank_score": 17,
+    "size": 535,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BaseSrvFindSharedWowRecordByTaskId",
+    "ea": "0x18000a50c",
+    "function_file": "functions/18000a50c_BaseSrvFindSharedWowRecordByTaskId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvFindSharedWowRecordByTaskId",
+    "prototype": "__int64 __fastcall(__int64, int, _QWORD *, _QWORD *)",
+    "rank_score": 14,
+    "size": 57,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "BaseSrvUpdateVDMEntry",
+    "ea": "0x18000c250",
+    "function_file": "functions/18000c250_BaseSrvUpdateVDMEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvUpdateVDMEntry",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 14,
+    "size": 78,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "GetConsoleRecordDosSesId",
+    "ea": "0x18000c5e4",
+    "function_file": "functions/18000c5e4_GetConsoleRecordDosSesId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetConsoleRecordDosSesId",
+    "prototype": "__int64 __fastcall(int, _QWORD *)",
+    "rank_score": 14,
+    "size": 46,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__report_securityfailure",
+    "ea": "0x180007718",
+    "function_file": "functions/180007718_report_securityfailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__report_securityfailure",
+    "prototype": "void __fastcall __noreturn(unsigned int)",
+    "rank_score": 14,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BaseSrvConvertV1CreateProcessToV2",
+    "ea": "0x18000798c",
+    "function_file": "functions/18000798c_BaseSrvConvertV1CreateProcessToV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvConvertV1CreateProcessToV2",
+    "prototype": "void *__fastcall(__int64, __int64)",
+    "rank_score": 13,
+    "size": 226,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvGetWOWTaskId",
+    "ea": "0x18000b4a4",
+    "function_file": "functions/18000b4a4_BaseSrvGetWOWTaskId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvGetWOWTaskId",
+    "prototype": "__int64()",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180007558",
+    "function_file": "functions/180007558_raise_securityfailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "NTSTATUS __fastcall(struct _EXCEPTION_POINTERS *)",
+    "rank_score": 13,
+    "size": 27,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x1800077a4",
+    "function_file": "functions/1800077a4_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 67,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BaseSrvDeferredCreateProcess",
+    "ea": "0x180007220",
+    "function_file": "functions/180007220_BaseSrvDeferredCreateProcess.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvDeferredCreateProcess",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 12,
+    "size": 83,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie_ex",
+    "ea": "0x1800077f0",
+    "function_file": "functions/1800077f0_security_init_cookie_ex.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie_ex",
+    "prototype": "unsigned __int64 *__fastcall(unsigned __int64 *)",
+    "rank_score": 12,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "BaseSrvGetConsoleRecord",
+    "ea": "0x18000a8fc",
+    "function_file": "functions/18000a8fc_BaseSrvGetConsoleRecord.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvGetConsoleRecord",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 10,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "BaseSrvNlsUpdateCacheCount",
+    "ea": "0x180006e50",
+    "function_file": "functions/180006e50_BaseSrvNlsUpdateCacheCount.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvNlsUpdateCacheCount",
+    "prototype": "__int64()",
+    "rank_score": 10,
+    "size": 27,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BaseSrvCreateActivationContext",
+    "ea": "0x180007a80",
+    "function_file": "functions/180007a80_BaseSrvCreateActivationContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvCreateActivationContext",
+    "prototype": "__int64 __fastcall(_OWORD *)",
+    "rank_score": 7,
+    "size": 603,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "BaseSrvDeleteSharedWowRecord",
+    "ea": "0x180009730",
+    "function_file": "functions/180009730_BaseSrvDeleteSharedWowRecord.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvDeleteSharedWowRecord",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 7,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "BaseSrvFindSharedWowRecordByConsoleHandle",
+    "ea": "0x18000a4e0",
+    "function_file": "functions/18000a4e0_BaseSrvFindSharedWowRecordByConsoleHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvFindSharedWowRecordByConsoleHandle",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 5,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BaseSrvGetConsoleRecordByPid",
+    "ea": "0x18000a92c",
+    "function_file": "functions/18000a92c_BaseSrvGetConsoleRecordByPid.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvGetConsoleRecordByPid",
+    "prototype": "__int64 __fastcall(int, _QWORD *)",
+    "rank_score": 4,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BaseSrvGetSharedWowRecordByPid",
+    "ea": "0x18000b160",
+    "function_file": "functions/18000b160_BaseSrvGetSharedWowRecordByPid.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvGetSharedWowRecordByPid",
+    "prototype": "__int64 __fastcall(int, __int64 *)",
+    "rank_score": 4,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvAddDOSRecord",
+    "ea": "0x180008038",
+    "function_file": "functions/180008038_BaseSrvAddDOSRecord.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvAddDOSRecord",
+    "prototype": "_QWORD *__fastcall(__int64, _QWORD *)",
+    "rank_score": 3,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvAddWOWRecord",
+    "ea": "0x1800083b4",
+    "function_file": "functions/1800083b4_BaseSrvAddWOWRecord.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvAddWOWRecord",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 3,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BaseSrvCreateActivationContext2",
+    "ea": "0x180002390",
+    "function_file": "functions/180002390_BaseSrvCreateActivationContext2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvCreateActivationContext2",
+    "prototype": "__int64()",
+    "rank_score": 3,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvGetBatRecord",
+    "ea": "0x180006a10",
+    "function_file": "functions/180006a10_BaseSrvGetBatRecord.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvGetBatRecord",
+    "prototype": "_QWORD *__fastcall(__int64)",
+    "rank_score": 3,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BaseSrvRemoveDOSRecord",
+    "ea": "0x18000be3c",
+    "function_file": "functions/18000be3c_BaseSrvRemoveDOSRecord.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSrvRemoveDOSRecord",
+    "prototype": "void __fastcall(__int64, _QWORD *)",
+    "rank_score": 3,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCchCopyA",
+    "ea": "0x18000c8f0",
+    "function_file": "functions/18000c8f0_StringCchCopyA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyA",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cchDest, STRSAFE_LPCSTR pszSrc)",
+    "rank_score": 3,
+    "size": 66,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "BaseSetProcessCreateNotify",
+    "ea": "0x180006ed0",
+    "function_file": "functions/180006ed0_BaseSetProcessCreateNotify.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BaseSetProcessCreateNotify",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 0,
+    "size": 8,
+    "tags": []
+  }
+]

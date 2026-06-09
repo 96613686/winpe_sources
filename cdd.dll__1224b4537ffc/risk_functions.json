@@ -1,0 +1,5236 @@
+[
+  {
+    "callee_count": 16,
+    "caller_count": 2,
+    "demangled": "DrvEnablePDEVInternal(_devicemodeW *,ushort *,ulong,HSURF__ * *,ulong,ulong *,ulong,tagDEVINFO *,HDEV__ *,ushort *,void *,uchar)",
+    "ea": "0x14001d980",
+    "function_file": "functions/14001d980_DrvEnablePDEVInternal_devicemodeW_ushort_ulong_HSURF_ulong_ulong_ulong_tagDEVINFO_HDEV_ushort_void_uchar.md",
+    "matched_imports": [
+      "WIN32K!CddEngCreateRectRgn",
+      "WIN32K!EngAllocMem",
+      "WIN32K!EngQueryW32kCddInterface",
+      "WIN32K!W32GetSessionState",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeLookasideListEx",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSemaphore",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1",
+      "watchdog!WdLogSingleEntry2",
+      "watchdog!WdLogSingleEntry4",
+      "watchdog!WdLogSingleEntry5"
+    ],
+    "matched_strings": [],
+    "name": "?DrvEnablePDEVInternal@@YAPEAUDHPDEV__@@PEAU_devicemodeW@@PEAGKPEAPEAUHSURF__@@KPEAKKPEAUtagDEVINFO@@PEAUHDEV__@@1PEAXE@Z",
+    "prototype": "DHPDEV __fastcall(struct _devicemodeW *, unsigned __int16 *, __int64, HSURF *, size_t, unsigned int *, size_t, struct tagDEVINFO *, HDEV, unsigned __int16 *, void *, char)",
+    "rank_score": 16373,
+    "size": 5152,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "DrvCreateDeviceBitmapEx",
+    "ea": "0x140003840",
+    "function_file": "functions/140003840_DrvCreateDeviceBitmapEx.md",
+    "matched_imports": [
+      "WIN32K!EngDeleteSurface",
+      "WIN32K!W32GetSessionState",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeGetCurrentIrql",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogNewEntry5_WdTrace",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "DrvCreateDeviceBitmapEx",
+    "prototype": "FN_DrvCreateDeviceBitmapEx",
+    "rank_score": 13053,
+    "size": 3502,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "PresentWorkerThread(CDDPDEV *)",
+    "ea": "0x140011510",
+    "function_file": "functions/140011510_PresentWorkerThread_CDDPDEV.md",
+    "matched_imports": [
+      "WIN32K!CddEngSetRectRgn",
+      "WIN32K!EngFreeMem",
+      "WIN32K!EngIsSemaphoreOwned",
+      "ntoskrnl!ExAllocateFromLookasideListEx",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExFreeToLookasideListEx",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeInitializeTimer",
+      "ntoskrnl!KeReadStateEvent",
+      "ntoskrnl!KeSetActualBasePriorityThread",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeSetTimer",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ZwQuerySystemInformation",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1",
+      "watchdog!WdLogSingleEntry5"
+    ],
+    "matched_strings": [
+      "PresentWorkerThread: KeWait* returned STATUS_WAIT_0 but pClientThread is NULL\n",
+      "PresentWorkerThread: CDDDEVLOCK is not held\n",
+      "PresentWorkerThread: CDDDEVLOCK is not held\n"
+    ],
+    "name": "?PresentWorkerThread@@YAXPEAUCDDPDEV@@@Z",
+    "prototype": "void __fastcall(unsigned int *StartContext)",
+    "rank_score": 12583,
+    "size": 5299,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "CDDPDEV::OpenResource(uint,void *,uint,_EPROCESS *,uint *,void * *,unsigned __int64 *,void * *)",
+    "ea": "0x14001b6e8",
+    "function_file": "functions/14001b6e8_CDDPDEV_OpenResource_uint_void_uint_EPROCESS_uint_void_unsigned_int64_void.md",
+    "matched_imports": [
+      "WIN32K!EngAllocMem",
+      "WIN32K!EngFreeMem",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!ObCloseHandle",
+      "ntoskrnl!ObDuplicateObject",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsGetCurrentProcess",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?OpenResource@CDDPDEV@@QEAAIIPEAXIPEAU_EPROCESS@@PEAIPEAPEAXPEA_K3@Z",
+    "prototype": "__int64 __fastcall(CDDPDEV *this, int, void *, unsigned int, struct _EPROCESS *, unsigned int *, void **, unsigned __int64 *, void **)",
+    "rank_score": 9037,
+    "size": 2313,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 1,
+    "demangled": "BitBltBitmap(CDDPDEV *,_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *,_POINTL *,_BRUSHOBJ *,_POINTL *,ulong,int (*)(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *,_POINTL *,_BRUSHOBJ *,_POINTL *,ulong))",
+    "ea": "0x14000a254",
+    "function_file": "functions/14000a254_BitBltBitmap_CDDPDEV_SURFOBJ_SURFOBJ_SURFOBJ_CLIPOBJ_XLATEOBJ_RECTL_POINTL_POINTL_BRUSHOBJ_POINTL_ulong_int_SU.md",
+    "matched_imports": [
+      "WIN32K!EngBitBlt",
+      "WIN32K!W32GetSessionState",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Ivalid pco in GDIBITMAPACCESS2::StartAccessDst"
+    ],
+    "name": "?BitBltBitmap@@YAHPEAUCDDPDEV@@PEAU_SURFOBJ@@11PEAU_CLIPOBJ@@PEAU_XLATEOBJ@@PEAU_RECTL@@PEAU_POINTL@@5PEAU_BRUSHOBJ@@5KP6AH1112345565K@Z@Z",
+    "prototype": "__int64 __fastcall(unsigned int (**)(void), struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, RECTL *, struct _POINTL *, struct _POINTL *, struct _BRUSHOBJ *, struct _POINTL *, ROP4 rop4, int (*)(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct _RECTL *, struct _POINTL *, struct _POINTL *, struct _BRUSHOBJ *, struct _POINTL *, unsigned int))",
+    "rank_score": 8905,
+    "size": 7127,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "DrvDisablePDEV",
+    "ea": "0x140028a40",
+    "function_file": "functions/140028a40_DrvDisablePDEV.md",
+    "matched_imports": [
+      "WIN32K!CddEngDeleteRgn",
+      "WIN32K!EngDeletePalette",
+      "WIN32K!EngFreeMem",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!DbgkWerCaptureLiveKernelDump",
+      "ntoskrnl!ExDeleteLookasideListEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!ObfDereferenceObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [
+      "Not all redirection bitmaps are deleted at DrvDisablePDEV",
+      "cdd.dll"
+    ],
+    "name": "DrvDisablePDEV",
+    "prototype": "FN_DrvDisablePDEV",
+    "rank_score": 8635,
+    "size": 1769,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 2,
+    "demangled": "DrvTransparentBltInternal(_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_RECTL *,ulong,ulong,int (*)(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *,_POINTL *,_BRUSHOBJ *,_POINTL *,ulong))",
+    "ea": "0x140002504",
+    "function_file": "functions/140002504_DrvTransparentBltInternal_SURFOBJ_SURFOBJ_CLIPOBJ_XLATEOBJ_RECTL_RECTL_ulong_ulong_int_SURFOBJ_SURFOBJ_SURFOBJ.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!EngBitBlt",
+      "WIN32K!EngReleaseSemaphore",
+      "WIN32K!EngTransparentBlt",
+      "WIN32K!XLATEOBJ_iXlate",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [
+      "Ivalid pco in GDIBITMAPACCESS2::StartAccessDst"
+    ],
+    "name": "?DrvTransparentBltInternal@@YAHPEAU_SURFOBJ@@0PEAU_CLIPOBJ@@PEAU_XLATEOBJ@@PEAU_RECTL@@3KKP6AH000123PEAU_POINTL@@4PEAU_BRUSHOBJ@@4K@Z@Z",
+    "prototype": "int(struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct _RECTL *, struct _RECTL *, unsigned int, unsigned int, int (*)(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct _RECTL *, struct _POINTL *, struct _POINTL *, struct _BRUSHOBJ *, struct _POINTL *, unsigned int))",
+    "rank_score": 8200,
+    "size": 4909,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 2,
+    "demangled": "DrvAlphaBlendInternal(_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_RECTL *,_BLENDOBJ *,int (*)(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *,_POINTL *,_BRUSHOBJ *,_POINTL *,ulong))",
+    "ea": "0x140004904",
+    "function_file": "functions/140004904_DrvAlphaBlendInternal_SURFOBJ_SURFOBJ_CLIPOBJ_XLATEOBJ_RECTL_RECTL_BLENDOBJ_int_SURFOBJ_SURFOBJ_SURFOBJ_CLIPOB.md",
+    "matched_imports": [
+      "WIN32K!EngAlphaBlend",
+      "WIN32K!EngBitBlt",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [
+      "Ivalid pco in GDIBITMAPACCESS2::StartAccessDst"
+    ],
+    "name": "?DrvAlphaBlendInternal@@YAHPEAU_SURFOBJ@@0PEAU_CLIPOBJ@@PEAU_XLATEOBJ@@PEAU_RECTL@@3PEAU_BLENDOBJ@@P6AH000123PEAU_POINTL@@5PEAU_BRUSHOBJ@@5K@Z@Z",
+    "prototype": "int(struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct _RECTL *, struct _RECTL *, struct _BLENDOBJ *, int (*)(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct _RECTL *, struct _POINTL *, struct _POINTL *, struct _BRUSHOBJ *, struct _POINTL *, unsigned int))",
+    "rank_score": 8002,
+    "size": 5038,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "CDDPDEV::InitInternalBitmaps(void)",
+    "ea": "0x14002d4b4",
+    "function_file": "functions/14002d4b4_CDDPDEV_InitInternalBitmaps_void.md",
+    "matched_imports": [
+      "WIN32K!EngCTGetGammaTable",
+      "WIN32K!EngFreeMem",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "InitInternalBitmaps is not called by the worker thread"
+    ],
+    "name": "?InitInternalBitmaps@CDDPDEV@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this)",
+    "rank_score": 7590,
+    "size": 4449,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 5,
+    "demangled": "DrvBitBltInternal(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *,_POINTL *,_BRUSHOBJ *,_POINTL *,ulong,int (*)(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *,_POINTL *,_BRUSHOBJ *,_POINTL *,ulong))",
+    "ea": "0x14000919c",
+    "function_file": "functions/14000919c_DrvBitBltInternal_SURFOBJ_SURFOBJ_SURFOBJ_CLIPOBJ_XLATEOBJ_RECTL_POINTL_POINTL_BRUSHOBJ_POINTL_ulong_int_SURFO.md",
+    "matched_imports": [
+      "WIN32K!CddEngCombineRgn",
+      "WIN32K!CddEngCopyRgn",
+      "WIN32K!CddEngCreateRectRgn",
+      "WIN32K!CddEngDeleteRgn",
+      "WIN32K!CddEngOffsetRgn",
+      "WIN32K!EngBitBlt",
+      "WIN32K!EngCreateBitmap",
+      "WIN32K!EngDeleteSurface",
+      "WIN32K!EngLockSurface",
+      "WIN32K!EngUnlockSurface",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?DrvBitBltInternal@@YAHPEAU_SURFOBJ@@00PEAU_CLIPOBJ@@PEAU_XLATEOBJ@@PEAU_RECTL@@PEAU_POINTL@@4PEAU_BRUSHOBJ@@4KP6AH0001234454K@Z@Z",
+    "prototype": "int __fastcall(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, RECTL *prclTrg, POINTL *pptlSrc, struct _POINTL *, struct _BRUSHOBJ *, struct _POINTL *, struct CDDPDEV *, int (*)(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct _RECTL *, struct _POINTL *, struct _POINTL *, struct _BRUSHOBJ *, struct _POINTL *, unsigned int))",
+    "rank_score": 7270,
+    "size": 4274,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 2,
+    "demangled": "DrvStretchBltInternal(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,tagCOLORADJUSTMENT *,_POINTL *,_RECTL *,_RECTL *,_POINTL *,ulong,int (*)(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *,_POINTL *,_BRUSHOBJ *,_POINTL *,ulong))",
+    "ea": "0x140017518",
+    "function_file": "functions/140017518_DrvStretchBltInternal_SURFOBJ_SURFOBJ_SURFOBJ_CLIPOBJ_XLATEOBJ_tagCOLORADJUSTMENT_POINTL_RECTL_RECTL_POINTL_ul.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!EngBitBlt",
+      "WIN32K!EngReleaseSemaphore",
+      "WIN32K!EngStretchBlt",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [
+      "Ivalid pco in GDIBITMAPACCESS2::StartAccessDst"
+    ],
+    "name": "?DrvStretchBltInternal@@YAHPEAU_SURFOBJ@@00PEAU_CLIPOBJ@@PEAU_XLATEOBJ@@PEAUtagCOLORADJUSTMENT@@PEAU_POINTL@@PEAU_RECTL@@54KP6AH00012544PEAU_BRUSHOBJ@@4K@Z@Z",
+    "prototype": "int(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct tagCOLORADJUSTMENT *, struct _POINTL *, struct _RECTL *, struct _RECTL *, struct _POINTL *, unsigned int, int (*)(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct _RECTL *, struct _POINTL *, struct _POINTL *, struct _BRUSHOBJ *, struct _POINTL *, unsigned int))",
+    "rank_score": 6596,
+    "size": 4388,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "DrvEnableSurface",
+    "ea": "0x14002c6f0",
+    "function_file": "functions/14002c6f0_DrvEnableSurface.md",
+    "matched_imports": [
+      "WIN32K!EngAssociateSurface",
+      "WIN32K!EngCreateBitmap",
+      "WIN32K!EngCreateDeviceSurface",
+      "WIN32K!EngDeleteSurface",
+      "WIN32K!EngLockSurface",
+      "WIN32K!EngUnlockSurface",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1",
+      "watchdog!WdLogSingleEntry4",
+      "watchdog!WdLogSingleEntry5"
+    ],
+    "matched_strings": [],
+    "name": "DrvEnableSurface",
+    "prototype": "FN_DrvEnableSurface",
+    "rank_score": 6422,
+    "size": 1672,
+    "tags": []
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 2,
+    "demangled": "DrvStretchBltROPInternal(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,tagCOLORADJUSTMENT *,_POINTL *,_RECTL *,_RECTL *,_POINTL *,ulong,_BRUSHOBJ *,ulong,int (*)(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *,_POINTL *,_BRUSHOBJ *,_POINTL *,ulong),int (*)(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,tagCOLORADJUSTMENT *,_POINTL *,_RECTL *,_RECTL *,_POINTL *,ulong))",
+    "ea": "0x1400161b0",
+    "function_file": "functions/1400161b0_DrvStretchBltROPInternal_SURFOBJ_SURFOBJ_SURFOBJ_CLIPOBJ_XLATEOBJ_tagCOLORADJUSTMENT_POINTL_RECTL_RECTL_POINTL.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!EngBitBlt",
+      "WIN32K!EngReleaseSemaphore",
+      "WIN32K!EngStretchBltROP",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [
+      "Ivalid pco in GDIBITMAPACCESS2::StartAccessDst"
+    ],
+    "name": "?DrvStretchBltROPInternal@@YAHPEAU_SURFOBJ@@00PEAU_CLIPOBJ@@PEAU_XLATEOBJ@@PEAUtagCOLORADJUSTMENT@@PEAU_POINTL@@PEAU_RECTL@@54KPEAU_BRUSHOBJ@@KP6AH0001254464K@ZP6AH0001234554K@Z@Z",
+    "prototype": "int(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct tagCOLORADJUSTMENT *, struct _POINTL *, struct _RECTL *, struct _RECTL *, struct _POINTL *, unsigned int, struct _BRUSHOBJ *, unsigned int, int (*)(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct _RECTL *, struct _POINTL *, struct _POINTL *, struct _BRUSHOBJ *, struct _POINTL *, unsigned int), int (*)(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct tagCOLORADJUSTMENT *, struct _POINTL *, struct _RECTL *, struct _RECTL *, struct _POINTL *, unsigned int))",
+    "rank_score": 6398,
+    "size": 4474,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 2,
+    "demangled": "DrvPlgBltInternal(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,tagCOLORADJUSTMENT *,_POINTL *,_POINTFIX *,_RECTL *,_POINTL *,ulong,int (*)(_SURFOBJ *,_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *,_POINTL *,_BRUSHOBJ *,_POINTL *,ulong))",
+    "ea": "0x140019458",
+    "function_file": "functions/140019458_DrvPlgBltInternal_SURFOBJ_SURFOBJ_SURFOBJ_CLIPOBJ_XLATEOBJ_tagCOLORADJUSTMENT_POINTL_POINTFIX_RECTL_POINTL_ulo.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!EngBitBlt",
+      "WIN32K!EngPlgBlt",
+      "WIN32K!EngReleaseSemaphore",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [
+      "Ivalid pco in GDIBITMAPACCESS2::StartAccessDst"
+    ],
+    "name": "?DrvPlgBltInternal@@YAHPEAU_SURFOBJ@@00PEAU_CLIPOBJ@@PEAU_XLATEOBJ@@PEAUtagCOLORADJUSTMENT@@PEAU_POINTL@@PEAU_POINTFIX@@PEAU_RECTL@@4KP6AH00012644PEAU_BRUSHOBJ@@4K@Z@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _SURFOBJ *@<rcx>, struct _SURFOBJ *@<rdx>, struct _SURFOBJ *@<r8>, struct _CLIPOBJ *@<r9>, struct _XLATEOBJ *, struct tagCOLORADJUSTMENT *, struct _POINTL *, struct _POINTFIX *, RECTL *, struct _POINTL *, unsigned int, int (*)(struct _SURFOBJ *, struct _SURFOBJ *, struct _SURFOBJ *, struct _CLIPOBJ *, struct _XLATEOBJ *, struct _RECTL *, struct _POINTL *, struct _POINTL *, struct _BRUSHOBJ *, struct _POINTL *, unsigned int))",
+    "rank_score": 6198,
+    "size": 4099,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "CddBitmapHw::FlushCommandBufferAndIssueSyncObject(int,uint,tagRECT const *)",
+    "ea": "0x14000e880",
+    "function_file": "functions/14000e880_CddBitmapHw_FlushCommandBufferAndIssueSyncObject_int_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsGetCurrentProcess",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "CddIssueCommand: worker thread submission mutex is not held\n"
+    ],
+    "name": "?FlushCommandBufferAndIssueSyncObject@CddBitmapHw@@IEAAJHIPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(CddBitmapHw *__hidden this, int, unsigned int, const struct tagRECT *)",
+    "rank_score": 5972,
+    "size": 1772,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "CHwCommandBuffer::AddBitBltCommand(BITBLT_DATA *,uint,tagRECT const *,tagPOINT const *)",
+    "ea": "0x14000f370",
+    "function_file": "functions/14000f370_CHwCommandBuffer_AddBitBltCommand_BITBLT_DATA_uint_tagRECT_const_tagPOINT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeGetCurrentIrql",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Attempt to insert NULL allocation to the allocation list",
+      "Attempt to insert NULL allocation to the allocation list"
+    ],
+    "name": "?AddBitBltCommand@CHwCommandBuffer@@QEAAHPEAUBITBLT_DATA@@IPEBUtagRECT@@PEBUtagPOINT@@@Z",
+    "prototype": "__int64 __fastcall(CHwCommandBuffer *this, struct BITBLT_DATA *, unsigned int, const struct tagRECT *, const struct tagPOINT *)",
+    "rank_score": 5916,
+    "size": 2109,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 7,
+    "demangled": "CDDPDEV::FlushNoMutex(CCommandBufferMutex *,int,uint)",
+    "ea": "0x1400101a0",
+    "function_file": "functions/1400101a0_CDDPDEV_FlushNoMutex_CCommandBufferMutex_int_uint.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "CddIssueCommand: worker thread submission mutex is not held\n",
+      "CddIssueCommand: worker thread submission mutex is not held\n"
+    ],
+    "name": "?FlushNoMutex@CDDPDEV@@QEAAJPEAVCCommandBufferMutex@@HI@Z",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this, struct CCommandBufferMutex *, int, unsigned int)",
+    "rank_score": 5911,
+    "size": 1225,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "CddUpdateDevMode(void *,_devicemodeW *,_devicemodeW *,_GDIINFO *,_GDIINFO *,HSURF__ * *)",
+    "ea": "0x140027c80",
+    "function_file": "functions/140027c80_CddUpdateDevMode_void_devicemodeW_devicemodeW_GDIINFO_GDIINFO_HSURF.md",
+    "matched_imports": [
+      "WIN32K!EngAssociateSurface",
+      "WIN32K!EngCreateBitmap",
+      "WIN32K!EngCreateDeviceSurface",
+      "WIN32K!EngDeleteSurface",
+      "WIN32K!EngLockSurface",
+      "WIN32K!EngUnlockSurface",
+      "WIN32K!W32GetSessionState",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?CddUpdateDevMode@@YAHPEAXPEAU_devicemodeW@@1PEAU_GDIINFO@@2PEAPEAUHSURF__@@@Z",
+    "prototype": "__int64 __fastcall(struct CDDPDEV *, struct _devicemodeW *, struct _devicemodeW *, struct _GDIINFO *, struct _GDIINFO *, HSURF *)",
+    "rank_score": 5658,
+    "size": 2070,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "DrvEnableDriver",
+    "ea": "0x140036b30",
+    "function_file": "functions/140036b30_DrvEnableDriver.md",
+    "matched_imports": [
+      "WIN32K!EngCreateSemaphore",
+      "WIN32K!W32GetSessionState",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwSetSystemInformation",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "DrvEnableDriver",
+    "prototype": "FN_DrvEnableDriver",
+    "rank_score": 5428,
+    "size": 1349,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "CddBitmapSw::Release(void)",
+    "ea": "0x140032000",
+    "function_file": "functions/140032000_CddBitmapSw_Release_void.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!EngDeleteSurface",
+      "WIN32K!EngFreeMem",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeUnstackDetachProcess",
+      "ntoskrnl!MmUnmapViewInSystemSpace",
+      "ntoskrnl!MmUnmapViewOfSection",
+      "ntoskrnl!ObCloseHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "CddBitmapSw::Release is called after the bitmap was deleted"
+    ],
+    "name": "?Release@CddBitmapSw@@UEAAXXZ",
+    "prototype": "void __fastcall(CddBitmapSw *__hidden this)",
+    "rank_score": 4981,
+    "size": 1203,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 26,
+    "demangled": "CDDPDEV::Flush(void)",
+    "ea": "0x14000ef80",
+    "function_file": "functions/14000ef80_CDDPDEV_Flush_void.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "bFromWorkerThread is set for non worker thread in EnableWorkerThreadAccess",
+      "CddIssueCommand: worker thread submission mutex is not held\n"
+    ],
+    "name": "?Flush@CDDPDEV@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this)",
+    "rank_score": 4926,
+    "size": 997,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::Release(void)",
+    "ea": "0x1400015e0",
+    "function_file": "functions/1400015e0_CddBitmapHw_Release_void.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!EngFreeMem",
+      "WIN32K!EngReleaseSemaphore",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeUnstackDetachProcess",
+      "ntoskrnl!ObCloseHandle",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Bitmap is still in command buffer list"
+    ],
+    "name": "?Release@CddBitmapHw@@UEAAXXZ",
+    "prototype": "void __fastcall(CddBitmapHw *__hidden this)",
+    "rank_score": 4782,
+    "size": 1142,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CddBitmapStagingApertureMem::InitStagingApertureMem(uint,uint)",
+    "ea": "0x140030434",
+    "function_file": "functions/140030434_CddBitmapStagingApertureMem_InitStagingApertureMem_uint_uint.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "The staging surface start address must be cache line aligned"
+    ],
+    "name": "?InitStagingApertureMem@CddBitmapStagingApertureMem@@QEAAJII@Z",
+    "prototype": "__int64 __fastcall(CddBitmapStagingApertureMem *__hidden this, unsigned int, unsigned int)",
+    "rank_score": 4354,
+    "size": 1169,
+    "tags": []
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 0,
+    "demangled": "DrvStrokePath",
+    "ea": "0x140007b00",
+    "function_file": "functions/140007b00_DrvStrokePath.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!EngReleaseSemaphore",
+      "WIN32K!EngStrokePath",
+      "WIN32K!PATHOBJ_vGetBounds",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Error submitting ColorFill command"
+    ],
+    "name": "DrvStrokePath",
+    "prototype": "FN_DrvStrokePath",
+    "rank_score": 3809,
+    "size": 3086,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "EngWritePixelCallback(_W32KCDD_ENG_CALLBACKS *,uint,void * const)",
+    "ea": "0x1400339f0",
+    "function_file": "functions/1400339f0_EngWritePixelCallback_W32KCDD_ENG_CALLBACKS_uint_void_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Error submitting ColorFill command",
+      "WriteAddress is wrong in EngWritePixelCallback",
+      "Wrong surface offset in EngWritePixelCallback",
+      "X is wrong in EngWritePixelCallback",
+      "Y is wrong in EngWritePixelCallback"
+    ],
+    "name": "?EngWritePixelCallback@@YAXPEAU_W32KCDD_ENG_CALLBACKS@@IQEAX@Z",
+    "prototype": "void __fastcall(struct _W32KCDD_ENG_CALLBACKS *, unsigned int, void *const)",
+    "rank_score": 3721,
+    "size": 951,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "CStagingPool::GetGdiSurface(int,int,tagRECT const *,CDDBITMAP_GDIDESC *,uchar)",
+    "ea": "0x14000c33c",
+    "function_file": "functions/14000c33c_CStagingPool_GetGdiSurface_int_int_tagRECT_const_CDDBITMAP_GDIDESC_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?GetGdiSurface@CStagingPool@@QEAAJHHPEBUtagRECT@@PEAUCDDBITMAP_GDIDESC@@E@Z",
+    "prototype": "__int64 __usercall@<rax>(CStagingPool *__hidden this@<rcx>, int@<edx>, int@<r8d>, const struct tagRECT *@<r9>, struct CDDBITMAP_GDIDESC *, unsigned __int8)",
+    "rank_score": 3619,
+    "size": 1004,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "CHwCommandBuffer::FlushGdiCommands(void)",
+    "ea": "0x140010c2c",
+    "function_file": "functions/140010c2c_CHwCommandBuffer_FlushGdiCommands_void.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "pLastCommand is not NULL in FlushGdiCommands"
+    ],
+    "name": "?FlushGdiCommands@CHwCommandBuffer@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CHwCommandBuffer *__hidden this)",
+    "rank_score": 3483,
+    "size": 1387,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CddPresentBlt(CDDPDEV *,REGION_CORE *,_WORKERTHREAD_COMMAND)",
+    "ea": "0x14002a758",
+    "function_file": "functions/14002a758_CddPresentBlt_CDDPDEV_REGION_CORE_WORKERTHREAD_COMMAND.md",
+    "matched_imports": [
+      "WIN32K!CLIPOBJ_bEnum",
+      "WIN32K!CLIPOBJ_cEnumStart",
+      "WIN32K!CddEngGetRgnData",
+      "WIN32K!EngAllocMem",
+      "WIN32K!EngFreeMem",
+      "ntoskrnl!ExAllocateFromLookasideListEx",
+      "ntoskrnl!ExFreeToLookasideListEx",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry3"
+    ],
+    "matched_strings": [],
+    "name": "?CddPresentBlt@@YAJPEAUCDDPDEV@@PEAVREGION_CORE@@W4_WORKERTHREAD_COMMAND@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, int)",
+    "rank_score": 3238,
+    "size": 1490,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WorkerThreadStartup(CDDPDEV *,HDEV__ *)",
+    "ea": "0x14002c204",
+    "function_file": "functions/14002c204_WorkerThreadStartup_CDDPDEV_HDEV.md",
+    "matched_imports": [
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry5"
+    ],
+    "matched_strings": [],
+    "name": "?WorkerThreadStartup@@YAHPEAUCDDPDEV@@PEAUHDEV__@@@Z",
+    "prototype": "__int64 __fastcall(PVOID StartContext, HDEV)",
+    "rank_score": 3238,
+    "size": 770,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 27,
+    "caller_count": 0,
+    "demangled": "DrvLineTo",
+    "ea": "0x140005cc0",
+    "function_file": "functions/140005cc0_DrvLineTo.md",
+    "matched_imports": [
+      "WIN32K!EngLineTo",
+      "WIN32K!EngReleaseSemaphore",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Error submitting ColorFill command"
+    ],
+    "name": "DrvLineTo",
+    "prototype": "FN_DrvLineTo",
+    "rank_score": 3210,
+    "size": 3422,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "DrvCreateDeviceBitmap",
+    "ea": "0x140001230",
+    "function_file": "functions/140001230_DrvCreateDeviceBitmap.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogNewEntry5_WdTrace",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "DrvCreateDeviceBitmap",
+    "prototype": "FN_DrvCreateDeviceBitmap",
+    "rank_score": 3114,
+    "size": 926,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BootAnimationRelayThreadStartup(CDDPDEV *)",
+    "ea": "0x14002a344",
+    "function_file": "functions/14002a344_BootAnimationRelayThreadStartup_CDDPDEV.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2",
+      "watchdog!WdLogSingleEntry5"
+    ],
+    "matched_strings": [],
+    "name": "?BootAnimationRelayThreadStartup@@YAJPEAUCDDPDEV@@@Z",
+    "prototype": "__int64 __fastcall(PVOID StartContext)",
+    "rank_score": 3060,
+    "size": 864,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CddBitmapSw::SubmitPresentHistory(void)",
+    "ea": "0x140014e40",
+    "function_file": "functions/140014e40_CddBitmapSw_SubmitPresentHistory_void.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "CDD worker thread expected"
+    ],
+    "name": "?SubmitPresentHistory@CddBitmapSw@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CddBitmapSw *__hidden this)",
+    "rank_score": 3051,
+    "size": 741,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 12,
+    "demangled": "CddAllocShadowSysMem(CDDPDEV * const)",
+    "ea": "0x1400248f8",
+    "function_file": "functions/1400248f8_CddAllocShadowSysMem_CDDPDEV_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmCreateSection",
+      "ntoskrnl!MmMapViewInSessionSpace",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!MmSizeOfMdl",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry1",
+      "watchdog!WdLogSingleEntry2",
+      "watchdog!WdLogSingleEntry3"
+    ],
+    "matched_strings": [],
+    "name": "?CddAllocShadowSysMem@@YAXQEAUCDDPDEV@@@Z",
+    "prototype": "void __fastcall(struct CDDPDEV *const)",
+    "rank_score": 3034,
+    "size": 950,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CDDSYNCOBJECT::Create(CddBitmap *)",
+    "ea": "0x14001ef90",
+    "function_file": "functions/14001ef90_CDDSYNCOBJECT_Create_CddBitmap.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeStackAttachProcess",
+      "ntoskrnl!KeUnstackDetachProcess",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?Create@CDDSYNCOBJECT@@QEAAJPEAVCddBitmap@@@Z",
+    "prototype": "__int64 __fastcall(CDDSYNCOBJECT *__hidden this, struct CddBitmap *)",
+    "rank_score": 2910,
+    "size": 727,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RmtDisableDriver(void)",
+    "ea": "0x140034f70",
+    "function_file": "functions/140034f70_RmtDisableDriver_void.md",
+    "matched_imports": [
+      "WIN32K!EngDeleteSemaphore",
+      "WIN32K!EngFreeMem",
+      "WIN32K!W32GetSessionState",
+      "ntoskrnl!ZwSetSystemInformation"
+    ],
+    "matched_strings": [],
+    "name": "?RmtDisableDriver@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 2807,
+    "size": 356,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::SubmitPresentHistory(void)",
+    "ea": "0x140015130",
+    "function_file": "functions/140015130_CddBitmapHw_SubmitPresentHistory_void.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "CDD worker thread expected"
+    ],
+    "name": "?SubmitPresentHistory@CddBitmapHw@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CddBitmapHw *__hidden this)",
+    "rank_score": 2651,
+    "size": 765,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CDDPDEV::TrimAllocations(D3DDDI_TRIMRESIDENCYSET_FLAGS,unsigned __int64,int)",
+    "ea": "0x1400218e4",
+    "function_file": "functions/1400218e4_CDDPDEV_TrimAllocations_D3DDDI_TRIMRESIDENCYSET_FLAGS_unsigned_int64_int.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?TrimAllocations@CDDPDEV@@QEAAJUD3DDDI_TRIMRESIDENCYSET_FLAGS@@_KH@Z",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this, struct D3DDDI_TRIMRESIDENCYSET_FLAGS, unsigned __int64, int)",
+    "rank_score": 2637,
+    "size": 1137,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140047080",
+    "function_file": "functions/140047080_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExIsProcessorFeaturePresent",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeGetRecommendedSharedDataAlignment",
+      "ntoskrnl!RtlInitUnicodeString",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "Cache line size in bytes is not power of 2",
+      "Cache line size in pixels is not power of 2"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 2510,
+    "size": 612,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 12,
+    "demangled": "vGDIDirtyUpdate(CDDPDEV *,_RECTL *,_CLIPOBJ *)",
+    "ea": "0x1400226b0",
+    "function_file": "functions/1400226b0_vGDIDirtyUpdate_CDDPDEV_RECTL_CLIPOBJ.md",
+    "matched_imports": [
+      "WIN32K!CddEngCombineRgn",
+      "WIN32K!CddEngEqualRgn",
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!EngReleaseSemaphore",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?vGDIDirtyUpdate@@YAXPEAUCDDPDEV@@PEAU_RECTL@@PEAU_CLIPOBJ@@@Z",
+    "prototype": "void __fastcall(struct CDDPDEV *, struct _RECTL *, struct _CLIPOBJ *)",
+    "rank_score": 2442,
+    "size": 629,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "CreateAndEnableDevice(CDDPDEV *,_D3DKMT_DISPLAYMODE *,_CDDDXGK_INTERFACE *,int,_WORKERTHREAD_COMMAND)",
+    "ea": "0x140021d5c",
+    "function_file": "functions/140021d5c_CreateAndEnableDevice_CDDPDEV_D3DKMT_DISPLAYMODE_CDDDXGK_INTERFACE_int_WORKERTHREAD_COMMAND.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry1",
+      "watchdog!WdLogSingleEntry5"
+    ],
+    "matched_strings": [],
+    "name": "?CreateAndEnableDevice@@YAJPEAUCDDPDEV@@PEAU_D3DKMT_DISPLAYMODE@@PEAU_CDDDXGK_INTERFACE@@HW4_WORKERTHREAD_COMMAND@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 2437,
+    "size": 1279,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "OpenDxgkrnl(_DXGKCDD_INTERFACE *,_FILE_OBJECT * *,_DEVICE_OBJECT * *)",
+    "ea": "0x14002bcfc",
+    "function_file": "functions/14002bcfc_OpenDxgkrnl_DXGKCDD_INTERFACE_FILE_OBJECT_DEVICE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlInitUnicodeString",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?OpenDxgkrnl@@YAJPEAU_DXGKCDD_INTERFACE@@PEAPEAU_FILE_OBJECT@@PEAPEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(PVOID InputBuffer, PFILE_OBJECT *FileObject, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 2417,
+    "size": 518,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CStagingPool::InitGdiSurfaces(CDDPDEV *)",
+    "ea": "0x14003020c",
+    "function_file": "functions/14003020c_CStagingPool_InitGdiSurfaces_CDDPDEV.md",
+    "matched_imports": [
+      "WIN32K!EngCreateBitmap",
+      "WIN32K!EngLockSurface",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeSemaphore",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?InitGdiSurfaces@CStagingPool@@QEAAJPEAUCDDPDEV@@@Z",
+    "prototype": "__int64 __fastcall(CStagingPool *__hidden this, struct CDDPDEV *)",
+    "rank_score": 2406,
+    "size": 545,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "CddIssueCommand(CDDPDEV *,_WORKERTHREAD_COMMAND)",
+    "ea": "0x14000fbb4",
+    "function_file": "functions/14000fbb4_CddIssueCommand_CDDPDEV_WORKERTHREAD_COMMAND.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "CddIssueCommand: worker thread submission mutex is not held\n"
+    ],
+    "name": "?CddIssueCommand@@YAJPEAUCDDPDEV@@W4_WORKERTHREAD_COMMAND@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 2376,
+    "size": 502,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "CddBitmap::CreateGDIBitmap(CDDPDEV *,HBITMAP__ * *,int)",
+    "ea": "0x140004630",
+    "function_file": "functions/140004630_CddBitmap_CreateGDIBitmap_CDDPDEV_HBITMAP_int.md",
+    "matched_imports": [
+      "WIN32K!EngCreateDeviceBitmap",
+      "WIN32K!EngCreateRedirectionDeviceBitmap",
+      "WIN32K!EngCreateSemaphore",
+      "WIN32K!EngDeleteSemaphore",
+      "WIN32K!EngDeleteSurface",
+      "WIN32K!EngModifySurface",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CreateGDIBitmap@CddBitmap@@QEAAJPEAUCDDPDEV@@PEAPEAUHBITMAP__@@H@Z",
+    "prototype": "__int64 __fastcall(DHSURF dhsurf, struct CDDPDEV *, HBITMAP *, int)",
+    "rank_score": 2322,
+    "size": 645,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "CDDPDEV::EnsureResident(uint,CHwCommandBuffer *,uchar,unsigned __int64 *)",
+    "ea": "0x140015764",
+    "function_file": "functions/140015764_CDDPDEV_EnsureResident_uint_CHwCommandBuffer_uchar_unsigned_int64.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureResident@CDDPDEV@@QEAAJIPEAVCHwCommandBuffer@@EPEA_K@Z",
+    "prototype": "__int64 __usercall@<rax>(CDDPDEV *__hidden this@<rcx>, unsigned int@<edx>, struct CHwCommandBuffer *@<r8>, unsigned __int8@<r9b>, unsigned __int64 *)",
+    "rank_score": 2235,
+    "size": 865,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SepSddlSecurityDescriptorFromSDDLString",
+    "ea": "0x1400440a4",
+    "function_file": "functions/1400440a4_SepSddlSecurityDescriptorFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAbsoluteToSelfRelativeSD",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "name": "SepSddlSecurityDescriptorFromSDDLString",
+    "prototype": "",
+    "rank_score": 2068,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 0,
+    "demangled": "DrvStrokeAndFillPath",
+    "ea": "0x1400235c0",
+    "function_file": "functions/1400235c0_DrvStrokeAndFillPath.md",
+    "matched_imports": [
+      "WIN32K!EngStrokeAndFillPath",
+      "WIN32K!PATHOBJ_vGetBounds",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "DrvStrokeAndFillPath",
+    "prototype": "FN_DrvStrokeAndFillPath",
+    "rank_score": 2057,
+    "size": 2201,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CddUpdatePresentRects(void * const,tagRECT const * *,uint *)",
+    "ea": "0x14002b0b0",
+    "function_file": "functions/14002b0b0_CddUpdatePresentRects_void_const_tagRECT_const_uint.md",
+    "matched_imports": [
+      "WIN32K!CddEngCombineRgn",
+      "WIN32K!CddEngGetRgnBox",
+      "WIN32K!CddEngGetRgnData",
+      "WIN32K!CddEngRectInRgn",
+      "WIN32K!EngAllocMem",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CddUpdatePresentRects@@YAXQEAXPEAPEBUtagRECT@@PEAI@Z",
+    "prototype": "void __fastcall(_QWORD *, const struct tagRECT **, unsigned int *)",
+    "rank_score": 2025,
+    "size": 433,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CddPresentColorFill(CDDPDEV *)",
+    "ea": "0x14002ad30",
+    "function_file": "functions/14002ad30_CddPresentColorFill_CDDPDEV.md",
+    "matched_imports": [
+      "WIN32K!CLIPOBJ_bEnum",
+      "WIN32K!CLIPOBJ_cEnumStart",
+      "ntoskrnl!ExAllocateFromLookasideListEx",
+      "ntoskrnl!ExFreeToLookasideListEx",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CddPresentColorFill@@YAJPEAUCDDPDEV@@@Z",
+    "prototype": "__int64 __fastcall(struct CDDPDEV *)",
+    "rank_score": 2021,
+    "size": 883,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::RecreateDeviceAllocations(void)",
+    "ea": "0x14001b170",
+    "function_file": "functions/14001b170_CddBitmapHw_RecreateDeviceAllocations_void.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentProcess",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?RecreateDeviceAllocations@CddBitmapHw@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CddBitmapHw *__hidden this)",
+    "rank_score": 2009,
+    "size": 719,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "CCommandBufferMutex::CCommandBufferMutex(CDDPDEV *,uchar,uchar)",
+    "ea": "0x14001d488",
+    "function_file": "functions/14001d488_CCommandBufferMutex_CCommandBufferMutex_CDDPDEV_uchar_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "bAllowWorkerThreadAccess is not set for worker thread in EnableWorkerThreadAccess",
+      "bFromWorkerThread is set for non worker thread in EnableWorkerThreadAccess"
+    ],
+    "name": "??0CCommandBufferMutex@@QEAA@PEAUCDDPDEV@@EE@Z",
+    "prototype": "CCommandBufferMutex *__fastcall(CCommandBufferMutex *__hidden this, struct CDDPDEV *, unsigned __int8, unsigned __int8)",
+    "rank_score": 1902,
+    "size": 380,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CddBitmapSw::RecreateDeviceAllocations(void)",
+    "ea": "0x140031d40",
+    "function_file": "functions/140031d40_CddBitmapSw_RecreateDeviceAllocations_void.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentProcess",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?RecreateDeviceAllocations@CddBitmapSw@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CddBitmapSw *__hidden this)",
+    "rank_score": 1809,
+    "size": 692,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "bInitDefaultPalette(CDDPDEV *,tagDEVINFO *)",
+    "ea": "0x14001d6b0",
+    "function_file": "functions/14001d6b0_bInitDefaultPalette_CDDPDEV_tagDEVINFO.md",
+    "matched_imports": [
+      "WIN32K!EngAllocMem",
+      "WIN32K!EngCreatePalette",
+      "WIN32K!EngFreeMem",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?bInitDefaultPalette@@YAHPEAUCDDPDEV@@PEAUtagDEVINFO@@@Z",
+    "prototype": "__int64 __fastcall(struct CDDPDEV *, struct tagDEVINFO *)",
+    "rank_score": 1806,
+    "size": 591,
+    "tags": []
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 0,
+    "demangled": "DrvFillPath",
+    "ea": "0x140022e70",
+    "function_file": "functions/140022e70_DrvFillPath.md",
+    "matched_imports": [
+      "WIN32K!EngFillPath",
+      "WIN32K!PATHOBJ_vGetBounds",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "DrvFillPath",
+    "prototype": "FN_DrvFillPath",
+    "rank_score": 1644,
+    "size": 1854,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 10,
+    "demangled": "ReadFromFrameBuffer(CDDPDEV *,int,int,int,int)",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_ReadFromFrameBuffer_CDDPDEV_int_int_int_int.md",
+    "matched_imports": [
+      "WIN32K!CddEngCombineRgn",
+      "WIN32K!CddEngSetRectRgn",
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!EngReleaseSemaphore",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?ReadFromFrameBuffer@@YAXPEAUCDDPDEV@@HHHH@Z",
+    "prototype": "void __fastcall(struct CDDPDEV *, int, int, int, int)",
+    "rank_score": 1627,
+    "size": 468,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CddBitmapSw::GdiDirtyUpdate(CDDBITMAP_GDIDESC const *,_RECTL const *,_CLIPOBJ const *,tagPOINT const *)",
+    "ea": "0x1400210c0",
+    "function_file": "functions/1400210c0_CddBitmapSw_GdiDirtyUpdate_CDDBITMAP_GDIDESC_const_RECTL_const_CLIPOBJ_const_tagPOINT_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?GdiDirtyUpdate@CddBitmapSw@@UEAAXPEBUCDDBITMAP_GDIDESC@@PEBU_RECTL@@PEBU_CLIPOBJ@@PEBUtagPOINT@@@Z",
+    "prototype": "void __fastcall(CddBitmapSw *__hidden this, const struct CDDBITMAP_GDIDESC *, const struct _RECTL *, const struct _CLIPOBJ *, const struct tagPOINT *)",
+    "rank_score": 1616,
+    "size": 467,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CStagingPoolBase::InvalidateStagingPool(_WORKERTHREAD_COMMAND)",
+    "ea": "0x140030bd0",
+    "function_file": "functions/140030bd0_CStagingPoolBase_InvalidateStagingPool_WORKERTHREAD_COMMAND.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "InvalidateStagingPool is not called from the worker thread"
+    ],
+    "name": "?InvalidateStagingPool@CStagingPoolBase@@QEAAXW4_WORKERTHREAD_COMMAND@@@Z",
+    "prototype": "",
+    "rank_score": 1557,
+    "size": 490,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CddBitmap::AlphaBlendCallback(CLIP_RECTS_DATA *,uint,tagRECT const *)",
+    "ea": "0x140020ca0",
+    "function_file": "functions/140020ca0_CddBitmap_AlphaBlendCallback_CLIP_RECTS_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "Error submitting AlphaBlend command"
+    ],
+    "name": "?AlphaBlendCallback@CddBitmap@@SAJPEAUCLIP_RECTS_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(struct CLIP_RECTS_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 1556,
+    "size": 416,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CddBitmap::BitBltCallback(CLIP_RECTS_DATA *,uint,tagRECT const *)",
+    "ea": "0x14000ddd0",
+    "function_file": "functions/14000ddd0_CddBitmap_BitBltCallback_CLIP_RECTS_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "Error submitting BitBlt command"
+    ],
+    "name": "?BitBltCallback@CddBitmap@@SAJPEAUCLIP_RECTS_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(struct CLIP_RECTS_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 1556,
+    "size": 419,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CddBitmap::ColorFillCallback(CLIP_RECTS_DATA *,uint,tagRECT const *)",
+    "ea": "0x14001f5d0",
+    "function_file": "functions/14001f5d0_CddBitmap_ColorFillCallback_CLIP_RECTS_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "Error submitting ColorFill command"
+    ],
+    "name": "?ColorFillCallback@CddBitmap@@SAJPEAUCLIP_RECTS_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(struct CLIP_RECTS_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 1556,
+    "size": 416,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CddBitmap::StretchBltCallback(CLIP_RECTS_DATA *,uint,tagRECT const *)",
+    "ea": "0x14001f860",
+    "function_file": "functions/14001f860_CddBitmap_StretchBltCallback_CLIP_RECTS_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "Error submitting StretchBlt command"
+    ],
+    "name": "?StretchBltCallback@CddBitmap@@SAJPEAUCLIP_RECTS_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(struct CLIP_RECTS_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 1556,
+    "size": 416,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::StopGdiAccessNoUpdate(CDDBITMAP_GDIDESC *)",
+    "ea": "0x140014180",
+    "function_file": "functions/140014180_CddBitmapHw_StopGdiAccessNoUpdate_CDDBITMAP_GDIDESC.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Error in CddBitmapStagingApertureMem::DecrementGdiAccessCount"
+    ],
+    "name": "?StopGdiAccessNoUpdate@CddBitmapHw@@UEAAXPEAUCDDBITMAP_GDIDESC@@@Z",
+    "prototype": "void __fastcall(CddBitmapHw *__hidden this, struct CDDBITMAP_GDIDESC *)",
+    "rank_score": 1553,
+    "size": 381,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "CStagingPool::ReleaseGdiSurface(CDDBITMAP_GDIDESC *)",
+    "ea": "0x14000be40",
+    "function_file": "functions/14000be40_CStagingPool_ReleaseGdiSurface_CDDBITMAP_GDIDESC.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Error in CddBitmapStagingApertureMem::DecrementGdiAccessCount"
+    ],
+    "name": "?ReleaseGdiSurface@CStagingPool@@QEAAXPEAUCDDBITMAP_GDIDESC@@@Z",
+    "prototype": "void __fastcall(CStagingPool *__hidden this, struct CDDBITMAP_GDIDESC *)",
+    "rank_score": 1552,
+    "size": 318,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CStagingPoolBase::PickFreeStagingBitmap(void)",
+    "ea": "0x14001eda8",
+    "function_file": "functions/14001eda8_CStagingPoolBase_PickFreeStagingBitmap_void.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "The bitmap with no GDI access was not found"
+    ],
+    "name": "?PickFreeStagingBitmap@CStagingPoolBase@@IEAAJXZ",
+    "prototype": "__int64 __fastcall(CStagingPoolBase *__hidden this)",
+    "rank_score": 1546,
+    "size": 379,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "EngFillRectCallback(_W32KCDD_ENG_CALLBACKS *,uint,tagRECT const *)",
+    "ea": "0x140033800",
+    "function_file": "functions/140033800_EngFillRectCallback_W32KCDD_ENG_CALLBACKS_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Error submitting ColorFill command"
+    ],
+    "name": "?EngFillRectCallback@@YAXPEAU_W32KCDD_ENG_CALLBACKS@@IPEBUtagRECT@@@Z",
+    "prototype": "void __fastcall(struct _W32KCDD_ENG_CALLBACKS *, unsigned int, const struct tagRECT *)",
+    "rank_score": 1457,
+    "size": 485,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 5,
+    "demangled": "CDDPDEV::CreateAllocation(CddBitmap *,uint,uint,_D3DKMDT_GDISURFACETYPE,_D3DDDIFORMAT,_DXGKCDD_CREATE_ALLOCATION_FLAGS,uint *,uint *,void * *,uint *,uchar)",
+    "ea": "0x14001b448",
+    "function_file": "functions/14001b448_CDDPDEV_CreateAllocation_CddBitmap_uint_uint_D3DKMDT_GDISURFACETYPE_D3DDDIFORMAT_DXGKCDD_CREATE_ALLOCATION_FLA.md",
+    "matched_imports": [
+      "ntoskrnl!KeStackAttachProcess",
+      "ntoskrnl!KeUnstackDetachProcess",
+      "ntoskrnl!PsGetCurrentProcess",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?CreateAllocation@CDDPDEV@@QEAAJPEAVCddBitmap@@IIW4_D3DKMDT_GDISURFACETYPE@@W4_D3DDDIFORMAT@@U_DXGKCDD_CREATE_ALLOCATION_FLAGS@@PEAI4PEAPEAX4E@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, unsigned int, int, unsigned int, unsigned int, unsigned int *, __int64, unsigned __int64, __int64, char)",
+    "rank_score": 1427,
+    "size": 664,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WorkerThreadCleanup(CDDPDEV *)",
+    "ea": "0x140029130",
+    "function_file": "functions/140029130_WorkerThreadCleanup_CDDPDEV.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?WorkerThreadCleanup@@YAXPEAUCDDPDEV@@@Z",
+    "prototype": "void __fastcall(struct CDDPDEV *)",
+    "rank_score": 1404,
+    "size": 283,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PpRegStateUpdateStackCreationSettings",
+    "ea": "0x140044730",
+    "function_file": "functions/140044730_PpRegStateUpdateStackCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!SeCaptureSecurityDescriptor",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PpRegStateUpdateStackCreationSettings",
+    "prototype": "",
+    "rank_score": 1287,
+    "size": 372,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "CDDPDEV::DestroyDevice(_WORKERTHREAD_COMMAND)",
+    "ea": "0x14002d088",
+    "function_file": "functions/14002d088_CDDPDEV_DestroyDevice_WORKERTHREAD_COMMAND.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?DestroyDevice@CDDPDEV@@QEAAXW4_WORKERTHREAD_COMMAND@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1231,
+    "size": 410,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 24,
+    "demangled": "SURFACCESS::SURFACCESS(_SURFOBJ *)",
+    "ea": "0x140024f20",
+    "function_file": "functions/140024f20_SURFACCESS_SURFACCESS_SURFOBJ.md",
+    "matched_imports": [
+      "WIN32K!EngIsCddDeviceBitmap",
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "??0SURFACCESS@@QEAA@PEAU_SURFOBJ@@@Z",
+    "prototype": "SURFACCESS *__fastcall(SURFACCESS *__hidden this, struct _SURFOBJ *)",
+    "rank_score": 1227,
+    "size": 266,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SepSddlGetAclForString",
+    "ea": "0x140043b68",
+    "function_file": "functions/140043b68_SepSddlGetAclForString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsnicmp",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetAclForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1, int)",
+    "rank_score": 1223,
+    "size": 948,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "TryCreateDevice(CDDPDEV *,_D3DKMT_DISPLAYMODE *,_CDDDXGK_INTERFACE *,int,_WORKERTHREAD_COMMAND)",
+    "ea": "0x140022c28",
+    "function_file": "functions/140022c28_TryCreateDevice_CDDPDEV_D3DKMT_DISPLAYMODE_CDDDXGK_INTERFACE_int_WORKERTHREAD_COMMAND.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?TryCreateDevice@@YAXPEAUCDDPDEV@@PEAU_D3DKMT_DISPLAYMODE@@PEAU_CDDDXGK_INTERFACE@@HW4_WORKERTHREAD_COMMAND@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 1222,
+    "size": 565,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CHwCommandBuffer::CreateCommandBuffer(CDDPDEV *,uint,uint)",
+    "ea": "0x14002ece0",
+    "function_file": "functions/14002ece0_CHwCommandBuffer_CreateCommandBuffer_CDDPDEV_uint_uint.md",
+    "matched_imports": [
+      "WIN32K!EngAllocMem",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeEvent",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CreateCommandBuffer@CHwCommandBuffer@@QEAAJPEAUCDDPDEV@@II@Z",
+    "prototype": "__int64 __fastcall(CHwCommandBuffer *this, struct CDDPDEV *, int, ULONG)",
+    "rank_score": 1216,
+    "size": 313,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "bCreateSemaphores(CDDPDEV *)",
+    "ea": "0x140018c68",
+    "function_file": "functions/140018c68_bCreateSemaphores_CDDPDEV.md",
+    "matched_imports": [
+      "WIN32K!EngAllocMem",
+      "WIN32K!EngCreateSemaphore",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "?bCreateSemaphores@@YAHPEAUCDDPDEV@@@Z",
+    "prototype": "__int64 __fastcall(struct CDDPDEV *)",
+    "rank_score": 1204,
+    "size": 300,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CHwCommandBuffer::AddClearTypeBlendCommand(CLEARTYPEBLEND_DATA *,uint,tagRECT const *)",
+    "ea": "0x14001cce4",
+    "function_file": "functions/14001cce4_CHwCommandBuffer_AddClearTypeBlendCommand_CLEARTYPEBLEND_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "hTmpSurface is NULL in CHwCommandBuffer::AddClearTypeBlendCommand"
+    ],
+    "name": "?AddClearTypeBlendCommand@CHwCommandBuffer@@QEAAHPEAUCLEARTYPEBLEND_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(CHwCommandBuffer *__hidden this, struct CLEARTYPEBLEND_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 1164,
+    "size": 952,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CddBitmap::ClearTypeBlendCallback(CLIP_RECTS_DATA *,uint,tagRECT const *)",
+    "ea": "0x14002f640",
+    "function_file": "functions/14002f640_CddBitmap_ClearTypeBlendCallback_CLIP_RECTS_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "Error submitting ClearTypeBlend command"
+    ],
+    "name": "?ClearTypeBlendCallback@CddBitmap@@SAJPEAUCLIP_RECTS_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(struct CLIP_RECTS_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 1156,
+    "size": 363,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CddBitmap::TransparentBltCallback(CLIP_RECTS_DATA *,uint,tagRECT const *)",
+    "ea": "0x140031110",
+    "function_file": "functions/140031110_CddBitmap_TransparentBltCallback_CLIP_RECTS_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [
+      "Error submitting TransparentBlt command"
+    ],
+    "name": "?TransparentBltCallback@CddBitmap@@SAJPEAUCLIP_RECTS_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(struct CLIP_RECTS_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 1156,
+    "size": 372,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CDDMULTISURFLOCK::vLockShadowW(_RECTL *,_CLIPOBJ *)",
+    "ea": "0x140018730",
+    "function_file": "functions/140018730_CDDMULTISURFLOCK_vLockShadowW_RECTL_CLIPOBJ.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphoreNoWait",
+      "WIN32K!EngIsSemaphoreOwnedByCurrentThread",
+      "WIN32K!EngIsSemaphoreSharedByCurrentThread",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "CDDMULTISURFLOCK::CDDMULTISURFLOCK::vLockShadowWTrying to recursively accquire a lock exclusivethat is already owned shared\n"
+    ],
+    "name": "?vLockShadowW@CDDMULTISURFLOCK@@QEAAXPEAU_RECTL@@PEAU_CLIPOBJ@@@Z",
+    "prototype": "void __fastcall(CDDMULTISURFLOCK *__hidden this, struct _RECTL *, struct _CLIPOBJ *)",
+    "rank_score": 1061,
+    "size": 831,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrvLockDisplayArea",
+    "ea": "0x140022270",
+    "function_file": "functions/140022270_DrvLockDisplayArea.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphoreNoWait",
+      "WIN32K!EngIsSemaphoreOwnedByCurrentThread",
+      "WIN32K!EngReleaseSemaphore",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "DrvLockDisplayArea tile lock is still locked by current thread!\n"
+    ],
+    "name": "DrvLockDisplayArea",
+    "prototype": "FN_DrvLockDisplayArea",
+    "rank_score": 1049,
+    "size": 552,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "RmtCopyBits(_SURFOBJ *,_SURFOBJ *,_CLIPOBJ *,_XLATEOBJ *,_RECTL *,_POINTL *)",
+    "ea": "0x140025c90",
+    "function_file": "functions/140025c90_RmtCopyBits_SURFOBJ_SURFOBJ_CLIPOBJ_XLATEOBJ_RECTL_POINTL.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?RmtCopyBits@@YAHPEAU_SURFOBJ@@0PEAU_CLIPOBJ@@PEAU_XLATEOBJ@@PEAU_RECTL@@PEAU_POINTL@@@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _SURFOBJ *@<rcx>, struct _SURFOBJ *@<rdx>, struct _CLIPOBJ *@<r8>, struct _XLATEOBJ *@<r9>, RECTL *, struct _POINTL *)",
+    "rank_score": 1033,
+    "size": 1280,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CDDPDEV::CreateResidencyState(void)",
+    "ea": "0x14002cd8c",
+    "function_file": "functions/14002cd8c_CDDPDEV_CreateResidencyState_void.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?CreateResidencyState@CDDPDEV@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this)",
+    "rank_score": 1017,
+    "size": 455,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "CDDPDEV::DestroyAllocation(uint)",
+    "ea": "0x140001cb4",
+    "function_file": "functions/140001cb4_CDDPDEV_DestroyAllocation_uint.md",
+    "matched_imports": [
+      "ntoskrnl!KeStackAttachProcess",
+      "ntoskrnl!KeUnstackDetachProcess",
+      "ntoskrnl!PsGetCurrentProcess",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?DestroyAllocation@CDDPDEV@@QEAAJI@Z",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this, unsigned int)",
+    "rank_score": 1013,
+    "size": 274,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CddInternalDeviceIoctl(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140029e70",
+    "function_file": "functions/140029e70_CddInternalDeviceIoctl_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry2",
+      "watchdog!WdLogSingleEntry3"
+    ],
+    "matched_strings": [],
+    "name": "?CddInternalDeviceIoctl@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1013,
+    "size": 294,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "FlushCpuCache(CDDPDEV *,CddBitmapStagingApertureMem *,uint,tagRECT const *,uchar)",
+    "ea": "0x14002fbd4",
+    "function_file": "functions/14002fbd4_FlushCpuCache_CDDPDEV_CddBitmapStagingApertureMem_uint_tagRECT_const_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KeInvalidateRangeAllCaches",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?FlushCpuCache@@YAXPEAUCDDPDEV@@PEAVCddBitmapStagingApertureMem@@IPEBUtagRECT@@E@Z",
+    "prototype": "void __usercall(struct CDDPDEV *@<rcx>, struct CddBitmapStagingApertureMem *this@<rdx>, unsigned int@<r8d>, const struct tagRECT *@<r9>, unsigned __int8)",
+    "rank_score": 1013,
+    "size": 657,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CddAddD3DDirtyRgn(void * const,tagRECT const * const)",
+    "ea": "0x14001fe80",
+    "function_file": "functions/14001fe80_CddAddD3DDirtyRgn_void_const_tagRECT_const_const.md",
+    "matched_imports": [
+      "WIN32K!CddEngCombineRgn",
+      "WIN32K!CddEngSetRectRgn",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?CddAddD3DDirtyRgn@@YAXQEAXQEBUtagRECT@@@Z",
+    "prototype": "void __fastcall(_QWORD *, const struct tagRECT *const)",
+    "rank_score": 1012,
+    "size": 234,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RmtMovePointerEx(_SURFOBJ *,long,long,ulong)",
+    "ea": "0x140021660",
+    "function_file": "functions/140021660_RmtMovePointerEx_SURFOBJ_long_long_ulong.md",
+    "matched_imports": [
+      "WIN32K!EngReleaseSemaphore",
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?RmtMovePointerEx@@YAHPEAU_SURFOBJ@@JJK@Z",
+    "prototype": "__int64 __fastcall(struct _SURFOBJ *, int, int, unsigned int)",
+    "rank_score": 1007,
+    "size": 317,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "AllocPointerSurface(_POINTER_INFO *)",
+    "ea": "0x14002a218",
+    "function_file": "functions/14002a218_AllocPointerSurface_POINTER_INFO.md",
+    "matched_imports": [
+      "WIN32K!EngCreateBitmap",
+      "WIN32K!EngLockSurface",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry3"
+    ],
+    "matched_strings": [],
+    "name": "?AllocPointerSurface@@YAHPEAU_POINTER_INFO@@@Z",
+    "prototype": "__int64 __fastcall(struct _POINTER_INFO *)",
+    "rank_score": 1006,
+    "size": 292,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CddBitmapSw::CreateGDIObjects(CDDPDEV *)",
+    "ea": "0x1400316f4",
+    "function_file": "functions/1400316f4_CddBitmapSw_CreateGDIObjects_CDDPDEV.md",
+    "matched_imports": [
+      "WIN32K!EngCreateBitmap",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CreateGDIObjects@CddBitmapSw@@IEAAJPEAUCDDPDEV@@@Z",
+    "prototype": "__int64 __fastcall(CddBitmapSw *__hidden this, struct CDDPDEV *)",
+    "rank_score": 1005,
+    "size": 283,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RmtCreateDeviceBitmapEx(DHPDEV__ *,tagSIZE,ulong,ulong,DHSURF__ *,ulong,ulong,void * *)",
+    "ea": "0x140034cd0",
+    "function_file": "functions/140034cd0_RmtCreateDeviceBitmapEx_DHPDEV_tagSIZE_ulong_ulong_DHSURF_ulong_ulong_void.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?RmtCreateDeviceBitmapEx@@YAPEAUHBITMAP__@@PEAUDHPDEV__@@UtagSIZE@@KKPEAUDHSURF__@@KKPEAPEAX@Z",
+    "prototype": "HBITMAP __fastcall(struct DHPDEV__ *, struct tagSIZE, unsigned int, unsigned int, struct DHSURF__ *, unsigned int, unsigned int, void **)",
+    "rank_score": 1005,
+    "size": 374,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "CCommandBufferMutex::DisableWorkerThreadAccess(void)",
+    "ea": "0x140010798",
+    "function_file": "functions/140010798_CCommandBufferMutex_DisableWorkerThreadAccess_void.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Error in DisableWorkerThreadAccess"
+    ],
+    "name": "?DisableWorkerThreadAccess@CCommandBufferMutex@@QEAAXXZ",
+    "prototype": "void __fastcall(CCommandBufferMutex *__hidden this)",
+    "rank_score": 957,
+    "size": 163,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "CCommandBufferMutex::EnableWorkerThreadAccess(void)",
+    "ea": "0x1400106ec",
+    "function_file": "functions/1400106ec_CCommandBufferMutex_EnableWorkerThreadAccess_void.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Error in EnableWorkerThreadAccess"
+    ],
+    "name": "?EnableWorkerThreadAccess@CCommandBufferMutex@@QEAAXXZ",
+    "prototype": "void __fastcall(CCommandBufferMutex *__hidden this)",
+    "rank_score": 957,
+    "size": 164,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WdmlibInit",
+    "ea": "0x140043538",
+    "function_file": "functions/140043538_WdmlibInit.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoCreateDeviceSecure",
+      "IoValidateDeviceIoControlAccess"
+    ],
+    "name": "WdmlibInit",
+    "prototype": "",
+    "rank_score": 883,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PiRegStateReadStackCreationSettingsFromKey",
+    "ea": "0x1400443dc",
+    "function_file": "functions/1400443dc_PiRegStateReadStackCreationSettingsFromKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeCaptureSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PiRegStateReadStackCreationSettingsFromKey",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 879,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 17,
+    "demangled": "ClipDstRects(CLIP_RECTS_DATA *,long (*)(CLIP_RECTS_DATA *,uint,tagRECT const *))",
+    "ea": "0x14000cb44",
+    "function_file": "functions/14000cb44_ClipDstRects_CLIP_RECTS_DATA_long_CLIP_RECTS_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "WIN32K!CLIPOBJ_bEnum",
+      "WIN32K!CLIPOBJ_cEnumStart",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?ClipDstRects@@YAJPEAUCLIP_RECTS_DATA@@P6AJ0IPEBUtagRECT@@@Z@Z",
+    "prototype": "__int64 __fastcall(struct CLIP_RECTS_DATA *, int (*)(struct CLIP_RECTS_DATA *, unsigned int, const struct tagRECT *))",
+    "rank_score": 828,
+    "size": 889,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "CddBitmap::VidMemDirtyUpdate(void)",
+    "ea": "0x14000cec4",
+    "function_file": "functions/14000cec4_CddBitmap_VidMemDirtyUpdate_void.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?VidMemDirtyUpdate@CddBitmap@@QEAAXXZ",
+    "prototype": "void __fastcall(CddBitmap *__hidden this)",
+    "rank_score": 826,
+    "size": 179,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "ea": "0x1400448ac",
+    "function_file": "functions/1400448ac_SeUtilSecurityInfoFromSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlGetGroupSecurityDescriptor",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlGetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 824,
+    "size": 249,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "CDDPDEV::RemoveLruListEntryNoLockHeld(_LIST_ENTRY *)",
+    "ea": "0x140001b6c",
+    "function_file": "functions/140001b6c_CDDPDEV_RemoveLruListEntryNoLockHeld_LIST_ENTRY.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveLruListEntryNoLockHeld@CDDPDEV@@QEAAEPEAU_LIST_ENTRY@@@Z",
+    "prototype": "unsigned __int8 __fastcall(CDDPDEV *__hidden this, struct _LIST_ENTRY *)",
+    "rank_score": 822,
+    "size": 321,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "CDDPDEV::InvalidateInternalBitmaps(_WORKERTHREAD_COMMAND)",
+    "ea": "0x14002e61c",
+    "function_file": "functions/14002e61c_CDDPDEV_InvalidateInternalBitmaps_WORKERTHREAD_COMMAND.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?InvalidateInternalBitmaps@CDDPDEV@@QEAAXW4_WORKERTHREAD_COMMAND@@@Z",
+    "prototype": "",
+    "rank_score": 821,
+    "size": 352,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CDDPDEV::DestroyResidencyState(void)",
+    "ea": "0x14002d228",
+    "function_file": "functions/14002d228_CDDPDEV_DestroyResidencyState_void.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?DestroyResidencyState@CDDPDEV@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this)",
+    "rank_score": 818,
+    "size": 374,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CDirtyRegion::CompactDirtyRects(uint)",
+    "ea": "0x14002f7b4",
+    "function_file": "functions/14002f7b4_CDirtyRegion_CompactDirtyRects_uint.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CompactDirtyRects@CDirtyRegion@@IEAAXI@Z",
+    "prototype": "void __fastcall(CDirtyRegion *__hidden this, unsigned int)",
+    "rank_score": 818,
+    "size": 718,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CDDPDEV::SignalCommandBufferMonitoredFence(void)",
+    "ea": "0x1400129cc",
+    "function_file": "functions/1400129cc_CDDPDEV_SignalCommandBufferMonitoredFence_void.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?SignalCommandBufferMonitoredFence@CDDPDEV@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this)",
+    "rank_score": 817,
+    "size": 397,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::UpdateGdiMem(CDDBITMAP_GDIDESC *,tagRECT const *,tagRECT const *,_CLIPOBJ const *,int *)",
+    "ea": "0x140015f00",
+    "function_file": "functions/140015f00_CddBitmapHw_UpdateGdiMem_CDDBITMAP_GDIDESC_tagRECT_const_tagRECT_const_CLIPOBJ_const_int.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateGdiMem@CddBitmapHw@@UEAAJPEAUCDDBITMAP_GDIDESC@@PEBUtagRECT@@1PEBU_CLIPOBJ@@PEAH@Z",
+    "prototype": "__int64 __fastcall(CddBitmapHw *__hidden this, struct CDDBITMAP_GDIDESC *, const struct tagRECT *, const struct tagRECT *, const struct _CLIPOBJ *, int *)",
+    "rank_score": 817,
+    "size": 448,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CDDPDEV::WaitForCommandBufferMonitoredFence(unsigned __int64)",
+    "ea": "0x14002e960",
+    "function_file": "functions/14002e960_CDDPDEV_WaitForCommandBufferMonitoredFence_unsigned_int64.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?WaitForCommandBufferMonitoredFence@CDDPDEV@@QEAAJ_K@Z",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this, unsigned __int64)",
+    "rank_score": 816,
+    "size": 253,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::GdiDirtyUpdate(CDDBITMAP_GDIDESC const *,_RECTL const *,_CLIPOBJ const *,tagPOINT const *)",
+    "ea": "0x140020af0",
+    "function_file": "functions/140020af0_CddBitmapHw_GdiDirtyUpdate_CDDBITMAP_GDIDESC_const_RECTL_const_CLIPOBJ_const_tagPOINT_const.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?GdiDirtyUpdate@CddBitmapHw@@UEAAXPEBUCDDBITMAP_GDIDESC@@PEBU_RECTL@@PEBU_CLIPOBJ@@PEBUtagPOINT@@@Z",
+    "prototype": "void __fastcall(CddBitmapHw *__hidden this, const struct CDDBITMAP_GDIDESC *, const struct _RECTL *, const struct _CLIPOBJ *, const struct tagPOINT *)",
+    "rank_score": 815,
+    "size": 352,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SepSddlAddAceToAcl",
+    "ea": "0x140043990",
+    "function_file": "functions/140043990_SepSddlAddAceToAcl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlAddAceToAcl",
+    "prototype": "__int64 __fastcall(int, int, int, int, ACCESS_MASK AccessMask, int, PSID Sid)",
+    "rank_score": 815,
+    "size": 235,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BootGraphicsUpdateThread(CDDPDEV *)",
+    "ea": "0x14001d300",
+    "function_file": "functions/14001d300_BootGraphicsUpdateThread_CDDPDEV.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ObfReferenceObject",
+      "watchdog!SMgrGdiCallout"
+    ],
+    "matched_strings": [],
+    "name": "?BootGraphicsUpdateThread@@YAXPEAUCDDPDEV@@@Z",
+    "prototype": "KSTART_ROUTINE",
+    "rank_score": 814,
+    "size": 336,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CDDPDEV::RemoveLruListEntry(_LIST_ENTRY *)",
+    "ea": "0x1400113d4",
+    "function_file": "functions/1400113d4_CDDPDEV_RemoveLruListEntry_LIST_ENTRY.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveLruListEntry@CDDPDEV@@QEAAEPEAU_LIST_ENTRY@@@Z",
+    "prototype": "unsigned __int8 __fastcall(CDDPDEV *__hidden this, struct _LIST_ENTRY *)",
+    "rank_score": 806,
+    "size": 297,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DrvMovePointer",
+    "ea": "0x140013db0",
+    "function_file": "functions/140013db0_DrvMovePointer.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "DrvMovePointer",
+    "prototype": "FN_DrvMovePointer",
+    "rank_score": 806,
+    "size": 418,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DrvMovePointerEx",
+    "ea": "0x140012f10",
+    "function_file": "functions/140012f10_DrvMovePointerEx.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "DrvMovePointerEx",
+    "prototype": "",
+    "rank_score": 806,
+    "size": 439,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RmtPassThroughMovePointer(_SURFOBJ *,long,long,_RECTL *)",
+    "ea": "0x140035ee0",
+    "function_file": "functions/140035ee0_RmtPassThroughMovePointer_SURFOBJ_long_long_RECTL.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?RmtPassThroughMovePointer@@YAXPEAU_SURFOBJ@@JJPEAU_RECTL@@@Z",
+    "prototype": "void(struct _SURFOBJ *, int, int, struct _RECTL *)",
+    "rank_score": 805,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RmtPassThroughMovePointerEx(_SURFOBJ *,long,long,ulong)",
+    "ea": "0x140035fb0",
+    "function_file": "functions/140035fb0_RmtPassThroughMovePointerEx_SURFOBJ_long_long_ulong.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?RmtPassThroughMovePointerEx@@YAXPEAU_SURFOBJ@@JJK@Z",
+    "prototype": "void(struct _SURFOBJ *, int, int, unsigned int)",
+    "rank_score": 805,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CStagingPool::DestroyGdiSurfaces(void)",
+    "ea": "0x1400190f8",
+    "function_file": "functions/1400190f8_CStagingPool_DestroyGdiSurfaces_void.md",
+    "matched_imports": [
+      "WIN32K!EngDeleteSurface",
+      "WIN32K!EngUnlockSurface",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?DestroyGdiSurfaces@CStagingPool@@QEAAXXZ",
+    "prototype": "void __fastcall(CStagingPool *__hidden this)",
+    "rank_score": 803,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrvDeleteDeviceBitmapEx",
+    "ea": "0x14001f4d0",
+    "function_file": "functions/14001f4d0_DrvDeleteDeviceBitmapEx.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogNewEntry5_WdTrace",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "DrvDeleteDeviceBitmapEx",
+    "prototype": "FN_DrvDeleteDeviceBitmapEx",
+    "rank_score": 803,
+    "size": 237,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "vDeleteSemaphores(CDDPDEV *)",
+    "ea": "0x140019278",
+    "function_file": "functions/140019278_vDeleteSemaphores_CDDPDEV.md",
+    "matched_imports": [
+      "WIN32K!EngDeleteSemaphore",
+      "WIN32K!EngFreeMem"
+    ],
+    "matched_strings": [],
+    "name": "?vDeleteSemaphores@@YAXPEAUCDDPDEV@@@Z",
+    "prototype": "void __fastcall(struct CDDPDEV *)",
+    "rank_score": 803,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "CHwCommandBuffer::AddColorFillCommand(COLORFILL_DATA *,uint,tagRECT const *)",
+    "ea": "0x14000fdb0",
+    "function_file": "functions/14000fdb0_CHwCommandBuffer_AddColorFillCommand_COLORFILL_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Attempt to insert NULL allocation to the allocation list"
+    ],
+    "name": "?AddColorFillCommand@CHwCommandBuffer@@QEAAHPEAUCOLORFILL_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(CDDPDEV **this, struct COLORFILL_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 766,
+    "size": 996,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "CHwCommandBuffer::InsertToAllocationList(uint,uchar)",
+    "ea": "0x14001d0a4",
+    "function_file": "functions/14001d0a4_CHwCommandBuffer_InsertToAllocationList_uint_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [
+      "Attempt to insert NULL allocation to the allocation list"
+    ],
+    "name": "?InsertToAllocationList@CHwCommandBuffer@@IEAAIIE@Z",
+    "prototype": "unsigned int __fastcall(CHwCommandBuffer *__hidden this, unsigned int, unsigned __int8)",
+    "rank_score": 757,
+    "size": 260,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IopDevObjApplyPostCreationSettings",
+    "ea": "0x1400437d4",
+    "function_file": "functions/1400437d4_IopDevObjApplyPostCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeviceObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "IopDevObjApplyPostCreationSettings",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 734,
+    "size": 239,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "CddResidencyState::~CddResidencyState(void)",
+    "ea": "0x140022b9c",
+    "function_file": "functions/140022b9c_CddResidencyState_CddResidencyState_void.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KdDebuggerEnabled",
+      "watchdog!WdLogNewEntry5_WdError",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "??1CddResidencyState@@QEAA@XZ",
+    "prototype": "void __fastcall(CddResidencyState *__hidden this)",
+    "rank_score": 716,
+    "size": 133,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IoDevObjCreateDeviceSecure",
+    "ea": "0x140043640",
+    "function_file": "functions/140043640_IoDevObjCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "IoDevObjCreateDeviceSecure",
+    "prototype": "__int64 __usercall@<rax>(PDRIVER_OBJECT DriverObject@<rcx>, int, char, __int64, __int64, PDEVICE_OBJECT)",
+    "rank_score": 658,
+    "size": 395,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "DrvUnlockDisplayArea",
+    "ea": "0x1400342e0",
+    "function_file": "functions/1400342e0_DrvUnlockDisplayArea.md",
+    "matched_imports": [
+      "WIN32K!EngIsSemaphoreOwnedByCurrentThread",
+      "WIN32K!EngReleaseSemaphore"
+    ],
+    "matched_strings": [
+      "DrvUnlockDisplayArea tile lock is still locked by current thread!\n"
+    ],
+    "name": "DrvUnlockDisplayArea",
+    "prototype": "FN_DrvUnlockDisplayArea",
+    "rank_score": 648,
+    "size": 342,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x14001bff8",
+    "function_file": "functions/14001bff8_operator_new_unsigned_int64.md",
+    "matched_imports": [
+      "WIN32K!EngAllocMem",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(ULONG cjMemSize)",
+    "rank_score": 622,
+    "size": 135,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CDDSYNCOBJECT::UpdateDxProcessInfo(uint,void * const *)",
+    "ea": "0x14001c9e4",
+    "function_file": "functions/14001c9e4_CDDSYNCOBJECT_UpdateDxProcessInfo_uint_void_const.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentProcess",
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateDxProcessInfo@CDDSYNCOBJECT@@QEAAEIPEBQEAX@Z",
+    "prototype": "unsigned __int8 __fastcall(CDDSYNCOBJECT *__hidden this, unsigned int, void *const *)",
+    "rank_score": 618,
+    "size": 372,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CddDriverUnload(_DRIVER_OBJECT *)",
+    "ea": "0x140029dd0",
+    "function_file": "functions/140029dd0_CddDriverUnload_DRIVER_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "?CddDriverUnload@@YAXPEAU_DRIVER_OBJECT@@@Z",
+    "prototype": "void __fastcall(struct _DRIVER_OBJECT *)",
+    "rank_score": 614,
+    "size": 154,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "MovePointerInternal(_POINTER_INFO *,long,long,ulong)",
+    "ea": "0x14001d1b0",
+    "function_file": "functions/14001d1b0_MovePointerInternal_POINTER_INFO_long_long_ulong.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?MovePointerInternal@@YAXPEAU_POINTER_INFO@@JJK@Z",
+    "prototype": "void __fastcall(struct _POINTER_INFO *, int, int, unsigned int)",
+    "rank_score": 609,
+    "size": 328,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "bCopyColorPointer",
+    "ea": "0x140014670",
+    "function_file": "functions/140014670_bCopyColorPointer.md",
+    "matched_imports": [
+      "WIN32K!EngCopyBits",
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "bCopyColorPointer",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, char)",
+    "rank_score": 609,
+    "size": 615,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "vDisableSURF(CDDPDEV *)",
+    "ea": "0x140018d9c",
+    "function_file": "functions/140018d9c_vDisableSURF_CDDPDEV.md",
+    "matched_imports": [
+      "WIN32K!EngDeleteSurface",
+      "WIN32K!EngUnlockSurface"
+    ],
+    "matched_strings": [],
+    "name": "?vDisableSURF@@YAXPEAUCDDPDEV@@@Z",
+    "prototype": "void __fastcall(struct CDDPDEV *)",
+    "rank_score": 607,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CddSessionDataAccessor<CddSessionData>::AddSessionReference(void)",
+    "ea": "0x140034460",
+    "function_file": "functions/140034460_CddSessionDataAccessor_CddSessionData_AddSessionReference_void.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState",
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?AddSessionReference@?$CddSessionDataAccessor@UCddSessionData@@@@QEAAJXZ",
+    "prototype": "",
+    "rank_score": 605,
+    "size": 230,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CopySurfBits(void *,uint,void *,long,uint,tagRECT const *,int,int)",
+    "ea": "0x14000c890",
+    "function_file": "functions/14000c890_CopySurfBits_void_uint_void_long_uint_tagRECT_const_int_int.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCopyMemoryNonTemporal",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CopySurfBits@@YAXPEAXI0JIPEBUtagRECT@@HH@Z",
+    "prototype": "void __fastcall(char *, unsigned int, char *, int, unsigned int, const struct tagRECT *)",
+    "rank_score": 604,
+    "size": 352,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CopySurfBits2(void *,long,void *,long,uint,tagRECT const *,int,int)",
+    "ea": "0x1400155f4",
+    "function_file": "functions/1400155f4_CopySurfBits2_void_long_void_long_uint_tagRECT_const_int_int.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCopyMemoryNonTemporal",
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CopySurfBits2@@YAXPEAXJ0JIPEBUtagRECT@@HH@Z",
+    "prototype": "void __fastcall(char *, int, char *, int, unsigned int, const struct tagRECT *, int, int)",
+    "rank_score": 604,
+    "size": 361,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "TempSurfObjHelper::TempSurfObjHelper(CDDPDEV *,CddBitmap *)",
+    "ea": "0x140015d40",
+    "function_file": "functions/140015d40_TempSurfObjHelper_TempSurfObjHelper_CDDPDEV_CddBitmap.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "??0TempSurfObjHelper@@QEAA@PEAUCDDPDEV@@PEAVCddBitmap@@@Z",
+    "prototype": "TempSurfObjHelper *__fastcall(TempSurfObjHelper *__hidden this, struct CDDPDEV *, struct CddBitmap *)",
+    "rank_score": 604,
+    "size": 205,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CddSessionDataAccessor<CddSessionData>::RemoveSessionReference(void)",
+    "ea": "0x14002bf08",
+    "function_file": "functions/14002bf08_CddSessionDataAccessor_CddSessionData_RemoveSessionReference_void.md",
+    "matched_imports": [
+      "WIN32K!EngFreeMem",
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveSessionReference@?$CddSessionDataAccessor@UCddSessionData@@@@QEAAXXZ",
+    "prototype": "",
+    "rank_score": 603,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "RmtDeleteDeviceBitmapExSurf(_SURFOBJ *)",
+    "ea": "0x140034e90",
+    "function_file": "functions/140034e90_RmtDeleteDeviceBitmapExSurf_SURFOBJ.md",
+    "matched_imports": [
+      "WIN32K!EngIsCddDeviceBitmap",
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?RmtDeleteDeviceBitmapExSurf@@YAXPEAU_SURFOBJ@@@Z",
+    "prototype": "void __fastcall(struct _SURFOBJ *)",
+    "rank_score": 602,
+    "size": 88,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SepSddlGetSidForString",
+    "ea": "0x140043f24",
+    "function_file": "functions/140043f24_SepSddlGetSidForString.md",
+    "matched_imports": [
+      "ntoskrnl!IoIsWdmVersionAvailable",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetSidForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1)",
+    "rank_score": 513,
+    "size": 177,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "PiRegStateOpenClassKey",
+    "ea": "0x140044248",
+    "function_file": "functions/140044248_PiRegStateOpenClassKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!_snwprintf"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class"
+    ],
+    "name": "PiRegStateOpenClassKey",
+    "prototype": "",
+    "rank_score": 459,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "CDDSURFLOCK::vDone(void)",
+    "ea": "0x140033db0",
+    "function_file": "functions/140033db0_CDDSURFLOCK_vDone_void.md",
+    "matched_imports": [
+      "WIN32K!EngReleaseSemaphore"
+    ],
+    "matched_strings": [
+      "vUnLockBmpAndRemovePunt: cddBmp == NULL\n"
+    ],
+    "name": "?vDone@CDDSURFLOCK@@QEAAXXZ",
+    "prototype": "void __fastcall(CDDSURFLOCK *__hidden this)",
+    "rank_score": 450,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "CCommandBufferMutex::~CCommandBufferMutex(void)",
+    "ea": "0x14000df80",
+    "function_file": "functions/14000df80_CCommandBufferMutex_CCommandBufferMutex_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "??1CCommandBufferMutex@@QEAA@XZ",
+    "prototype": "void __fastcall(CCommandBufferMutex *__hidden this)",
+    "rank_score": 427,
+    "size": 72,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "CHwCommandBuffer::ResetCommandBuffer(void)",
+    "ea": "0x140011220",
+    "function_file": "functions/140011220_CHwCommandBuffer_ResetCommandBuffer_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?ResetCommandBuffer@CHwCommandBuffer@@QEAAXXZ",
+    "prototype": "void __fastcall(CHwCommandBuffer *__hidden this)",
+    "rank_score": 427,
+    "size": 202,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SeSddlSecurityDescriptorFromSDDL",
+    "ea": "0x1400438cc",
+    "function_file": "functions/1400438cc_SeSddlSecurityDescriptorFromSDDL.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SeSddlSecurityDescriptorFromSDDL",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 188,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CDDPDEV::EnsureResident(CddResidencyState *,CHwCommandBuffer *,uchar,unsigned __int64 *)",
+    "ea": "0x1400112f0",
+    "function_file": "functions/1400112f0_CDDPDEV_EnsureResident_CddResidencyState_CHwCommandBuffer_uchar_unsigned_int64.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureResident@CDDPDEV@@QEAAJPEAVCddResidencyState@@PEAVCHwCommandBuffer@@EPEA_K@Z",
+    "prototype": "__int64 __usercall@<rax>(CDDPDEV *__hidden this@<rcx>, struct CddResidencyState *@<rdx>, struct CHwCommandBuffer *@<r8>, unsigned __int8@<r9b>, unsigned __int64 *)",
+    "rank_score": 424,
+    "size": 219,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CHwCommandBuffer::AddStretchBltCommand(STRETCHBLT_DATA *,uint,tagRECT const *)",
+    "ea": "0x14001fa08",
+    "function_file": "functions/14001fa08_CHwCommandBuffer_AddStretchBltCommand_STRETCHBLT_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?AddStretchBltCommand@CHwCommandBuffer@@QEAAHPEAUSTRETCHBLT_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(CHwCommandBuffer *__hidden this, struct STRETCHBLT_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 424,
+    "size": 671,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 24,
+    "demangled": "SURFSWITCHLOCK::SURFSWITCHLOCK(_SURFOBJ *,_SURFOBJ *)",
+    "ea": "0x140025030",
+    "function_file": "functions/140025030_SURFSWITCHLOCK_SURFSWITCHLOCK_SURFOBJ_SURFOBJ.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore",
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "??0SURFSWITCHLOCK@@QEAA@PEAU_SURFOBJ@@0@Z",
+    "prototype": "SURFSWITCHLOCK *__fastcall(SURFSWITCHLOCK *__hidden this, struct _SURFOBJ *, struct _SURFOBJ *)",
+    "rank_score": 424,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 20,
+    "demangled": "WaitForStartGdiAccessToFinish(CDDPDEV *,CDDBITMAP_GDIDESC *,int)",
+    "ea": "0x14000c730",
+    "function_file": "functions/14000c730_WaitForStartGdiAccessToFinish_CDDPDEV_CDDBITMAP_GDIDESC_int.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry1"
+    ],
+    "matched_strings": [],
+    "name": "?WaitForStartGdiAccessToFinish@@YAXPEAUCDDPDEV@@PEAUCDDBITMAP_GDIDESC@@H@Z",
+    "prototype": "void __fastcall(struct CDDPDEV *, struct CDDBITMAP_GDIDESC *, int)",
+    "rank_score": 424,
+    "size": 217,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CHwCommandBuffer::AddAlphaBlendCommand(ALPHABLEND_DATA *,uint,tagRECT const *)",
+    "ea": "0x140020e48",
+    "function_file": "functions/140020e48_CHwCommandBuffer_AddAlphaBlendCommand_ALPHABLEND_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?AddAlphaBlendCommand@CHwCommandBuffer@@QEAAHPEAUALPHABLEND_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(CHwCommandBuffer *__hidden this, struct ALPHABLEND_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 423,
+    "size": 622,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CHwCommandBuffer::AddTransparentBltCommand(TRANSPARENTBLT_DATA *,uint,tagRECT const *)",
+    "ea": "0x14002ea64",
+    "function_file": "functions/14002ea64_CHwCommandBuffer_AddTransparentBltCommand_TRANSPARENTBLT_DATA_uint_tagRECT_const.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?AddTransparentBltCommand@CHwCommandBuffer@@QEAAHPEAUTRANSPARENTBLT_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(CHwCommandBuffer *__hidden this, struct TRANSPARENTBLT_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 423,
+    "size": 629,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 22,
+    "demangled": "SURFSWITCHLOCK::~SURFSWITCHLOCK(void)",
+    "ea": "0x14002793c",
+    "function_file": "functions/14002793c_SURFSWITCHLOCK_SURFSWITCHLOCK_void.md",
+    "matched_imports": [
+      "WIN32K!EngReleaseSemaphore",
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "??1SURFSWITCHLOCK@@QEAA@XZ",
+    "prototype": "void __fastcall(SURFSWITCHLOCK *__hidden this)",
+    "rank_score": 422,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PpRegStateReadCreateClassCreationSettings",
+    "ea": "0x1400445c4",
+    "function_file": "functions/1400445c4_PpRegStateReadCreateClassCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PpRegStateReadCreateClassCreationSettings",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 356,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "DbgLog(char const *,...)",
+    "ea": "0x1400224a0",
+    "function_file": "functions/1400224a0_DbgLog_char_const.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!vsprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "?DbgLog@@YAXPEBDZZ",
+    "prototype": "void(const char *Format, ...)",
+    "rank_score": 417,
+    "size": 129,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x1400472ec",
+    "function_file": "functions/1400472ec_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "CDDPDEV::AcquireResidencyLock(void)",
+    "ea": "0x1400023c0",
+    "function_file": "functions/1400023c0_CDDPDEV_AcquireResidencyLock_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?AcquireResidencyLock@CDDPDEV@@QEAAXXZ",
+    "prototype": "void __fastcall(CDDPDEV *__hidden this)",
+    "rank_score": 416,
+    "size": 78,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "CDDPDEV::ReleaseResidencyLock(void)",
+    "ea": "0x140002420",
+    "function_file": "functions/140002420_CDDPDEV_ReleaseResidencyLock_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?ReleaseResidencyLock@CDDPDEV@@QEAAXXZ",
+    "prototype": "void __fastcall(CDDPDEV *__hidden this)",
+    "rank_score": 416,
+    "size": 60,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CDDPDEV::IsCommandBufferFencePending(unsigned __int64)",
+    "ea": "0x14002e784",
+    "function_file": "functions/14002e784_CDDPDEV_IsCommandBufferFencePending_unsigned_int64.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?IsCommandBufferFencePending@CDDPDEV@@QEAAE_K@Z",
+    "prototype": "unsigned __int8(CDDPDEV *__hidden this, unsigned __int64)",
+    "rank_score": 415,
+    "size": 131,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "CHwCommandBuffer::DestroyCommandBuffer(void)",
+    "ea": "0x1400111c0",
+    "function_file": "functions/1400111c0_CHwCommandBuffer_DestroyCommandBuffer_void.md",
+    "matched_imports": [
+      "WIN32K!EngFreeMem",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?DestroyCommandBuffer@CHwCommandBuffer@@QEAAXXZ",
+    "prototype": "void __fastcall(CHwCommandBuffer *__hidden this)",
+    "rank_score": 415,
+    "size": 87,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "CHwCommandBuffer::RecoverAllocationListState(void)",
+    "ea": "0x140027bcc",
+    "function_file": "functions/140027bcc_CHwCommandBuffer_RecoverAllocationListState_void.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?RecoverAllocationListState@CHwCommandBuffer@@IEAAXXZ",
+    "prototype": "void __fastcall(CHwCommandBuffer *__hidden this)",
+    "rank_score": 415,
+    "size": 118,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::AddCommandBufferReference(CHwCommandBuffer *,tagRECT const *,uint,tagPOINT const *)",
+    "ea": "0x1400132d0",
+    "function_file": "functions/1400132d0_CddBitmapHw_AddCommandBufferReference_CHwCommandBuffer_tagRECT_const_uint_tagPOINT_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?AddCommandBufferReference@CddBitmapHw@@UEAAXPEAVCHwCommandBuffer@@PEBUtagRECT@@IPEBUtagPOINT@@@Z",
+    "prototype": "void(CddBitmapHw *__hidden this, struct CHwCommandBuffer *, const struct tagRECT *, unsigned int, const struct tagPOINT *)",
+    "rank_score": 414,
+    "size": 240,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CDDPDEV::ReleaseClientThread(_WORKERTHREAD_COMMAND,uchar *)",
+    "ea": "0x1400225ac",
+    "function_file": "functions/1400225ac_CDDPDEV_ReleaseClientThread_WORKERTHREAD_COMMAND_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!KeReadStateEvent",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?ReleaseClientThread@CDDPDEV@@QEAAXW4_WORKERTHREAD_COMMAND@@PEAE@Z",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 130,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "CDDPDEV::SyncGPUAccess(uint,int)",
+    "ea": "0x14000e35c",
+    "function_file": "functions/14000e35c_CDDPDEV_SyncGPUAccess_uint_int.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry3"
+    ],
+    "matched_strings": [],
+    "name": "?SyncGPUAccess@CDDPDEV@@QEAAJIH@Z",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this, unsigned int, int)",
+    "rank_score": 412,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrvSurfaceComplete",
+    "ea": "0x14000e710",
+    "function_file": "functions/14000e710_DrvSurfaceComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "DrvSurfaceComplete",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 110,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "RmtCompletePDEV(DHPDEV__ *,HDEV__ *)",
+    "ea": "0x140034bb0",
+    "function_file": "functions/140034bb0_RmtCompletePDEV_DHPDEV_HDEV.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?RmtCompletePDEV@@YAXPEAUDHPDEV__@@PEAUHDEV__@@@Z",
+    "prototype": "void __fastcall(struct DHPDEV__ *, HDEV)",
+    "rank_score": 412,
+    "size": 105,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "CDDMULTIBITMAPLOCK::CDDMULTIBITMAPLOCK(CddBitmap *,CddBitmap *)",
+    "ea": "0x14000c0b0",
+    "function_file": "functions/14000c0b0_CDDMULTIBITMAPLOCK_CDDMULTIBITMAPLOCK_CddBitmap_CddBitmap.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "??0CDDMULTIBITMAPLOCK@@QEAA@PEAVCddBitmap@@0@Z",
+    "prototype": "CDDMULTIBITMAPLOCK *(CDDMULTIBITMAPLOCK *__hidden this, struct CddBitmap *, struct CddBitmap *)",
+    "rank_score": 411,
+    "size": 278,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "CDDPDEV::CheckDeviceRemoved(long)",
+    "ea": "0x140027b1c",
+    "function_file": "functions/140027b1c_CDDPDEV_CheckDeviceRemoved_long.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdEvent",
+      "watchdog!WdLogSingleEntry2"
+    ],
+    "matched_strings": [],
+    "name": "?CheckDeviceRemoved@CDDPDEV@@QEAAXJ@Z",
+    "prototype": "void __fastcall(CDDPDEV *__hidden this, int)",
+    "rank_score": 409,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "CDDMULTIBITMAPLOCK::~CDDMULTIBITMAPLOCK(void)",
+    "ea": "0x14000bf90",
+    "function_file": "functions/14000bf90_CDDMULTIBITMAPLOCK_CDDMULTIBITMAPLOCK_void.md",
+    "matched_imports": [
+      "WIN32K!EngReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "??1CDDMULTIBITMAPLOCK@@QEAA@XZ",
+    "prototype": "void __fastcall(CDDMULTIBITMAPLOCK *__hidden this)",
+    "rank_score": 407,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CStagingPoolBase::CreateStagingPool(CDDPDEV *,uint,uint,uint,_DXGKCDD_CREATE_ALLOCATION_FLAGS)",
+    "ea": "0x14002fa88",
+    "function_file": "functions/14002fa88_CStagingPoolBase_CreateStagingPool_CDDPDEV_uint_uint_uint_DXGKCDD_CREATE_ALLOCATION_FLAGS.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdLowResource",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CreateStagingPool@CStagingPoolBase@@QEAAJPEAUCDDPDEV@@IIIU_DXGKCDD_CREATE_ALLOCATION_FLAGS@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _DWORD)",
+    "rank_score": 406,
+    "size": 323,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "CddBitmap::RemoveFromCddBitmapList(void)",
+    "ea": "0x14000229c",
+    "function_file": "functions/14000229c_CddBitmap_RemoveFromCddBitmapList_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveFromCddBitmapList@CddBitmap@@QEAAXXZ",
+    "prototype": "void __fastcall(CddBitmap *__hidden this)",
+    "rank_score": 406,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::StartGdiAccess(tagRECT const *,tagRECT const *,_CLIPOBJ const *,int,int,int *,CDDBITMAP_GDIDESC *,uchar)",
+    "ea": "0x14000ca00",
+    "function_file": "functions/14000ca00_CddBitmapHw_StartGdiAccess_tagRECT_const_tagRECT_const_CLIPOBJ_const_int_int_int_CDDBITMAP_GDIDESC_uchar.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?StartGdiAccess@CddBitmapHw@@UEAAJPEBUtagRECT@@0PEBU_CLIPOBJ@@HHPEAHPEAUCDDBITMAP_GDIDESC@@E@Z",
+    "prototype": "int(CddBitmapHw *__hidden this, const struct tagRECT *, const struct tagRECT *, const struct _CLIPOBJ *, int, int, int *, struct CDDBITMAP_GDIDESC *, unsigned __int8)",
+    "rank_score": 406,
+    "size": 317,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CddBitmap::Release(void)",
+    "ea": "0x140002020",
+    "function_file": "functions/140002020_CddBitmap_Release_void.md",
+    "matched_imports": [
+      "WIN32K!EngDeleteSemaphore",
+      "WIN32K!EngIsSemaphoreOwnedByCurrentThread"
+    ],
+    "matched_strings": [],
+    "name": "?Release@CddBitmap@@UEAAXXZ",
+    "prototype": "void __fastcall(CddBitmap *__hidden this)",
+    "rank_score": 404,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CopyBitsNonTemporal24_32(uint *,uint,uint const *,long,uint,uint)",
+    "ea": "0x140018f44",
+    "function_file": "functions/140018f44_CopyBitsNonTemporal24_32_uint_uint_uint_const_long_uint_uint.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdWarning",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "?CopyBitsNonTemporal24_32@@YAXPEAIIPEBIJII@Z",
+    "prototype": "void __fastcall(unsigned int *, unsigned int, const unsigned int *, int, unsigned int, unsigned int)",
+    "rank_score": 404,
+    "size": 377,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "FreePointerSurface(_POINTER_INFO *)",
+    "ea": "0x140018ef0",
+    "function_file": "functions/140018ef0_FreePointerSurface_POINTER_INFO.md",
+    "matched_imports": [
+      "WIN32K!EngDeleteSurface",
+      "WIN32K!EngUnlockSurface"
+    ],
+    "matched_strings": [],
+    "name": "?FreePointerSurface@@YAXPEAU_POINTER_INFO@@@Z",
+    "prototype": "void __fastcall(struct _POINTER_INFO *)",
+    "rank_score": 404,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CddBitmap::RemoveFromCddBitmapOnCloseProcessList(void)",
+    "ea": "0x14000232c",
+    "function_file": "functions/14000232c_CddBitmap_RemoveFromCddBitmapOnCloseProcessList_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafeAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveFromCddBitmapOnCloseProcessList@CddBitmap@@QEAAXXZ",
+    "prototype": "void __fastcall(CddBitmap *__hidden this)",
+    "rank_score": 403,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrvDeleteDeviceBitmap",
+    "ea": "0x14002c5a0",
+    "function_file": "functions/14002c5a0_DrvDeleteDeviceBitmap.md",
+    "matched_imports": [
+      "watchdog!WdLogNewEntry5_WdAssertion",
+      "watchdog!WdLogSingleEntry0"
+    ],
+    "matched_strings": [],
+    "name": "DrvDeleteDeviceBitmap",
+    "prototype": "FN_DrvDeleteDeviceBitmap",
+    "rank_score": 402,
+    "size": 112,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "CDDMULTISURFLOCK::vDone(void)",
+    "ea": "0x140008da4",
+    "function_file": "functions/140008da4_CDDMULTISURFLOCK_vDone_void.md",
+    "matched_imports": [
+      "WIN32K!EngReleaseSemaphore"
+    ],
+    "matched_strings": [
+      "vUnLockBmp1AndRemovePunt: cddBmp1 == NULL\n"
+    ],
+    "name": "?vDone@CDDMULTISURFLOCK@@QEAAXXZ",
+    "prototype": "void __fastcall(CDDMULTISURFLOCK *__hidden this)",
+    "rank_score": 252,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CDDMULTISURFLOCK::vUnLockBmp1AndRemovePunt(void)",
+    "ea": "0x140034204",
+    "function_file": "functions/140034204_CDDMULTISURFLOCK_vUnLockBmp1AndRemovePunt_void.md",
+    "matched_imports": [
+      "WIN32K!EngReleaseSemaphore"
+    ],
+    "matched_strings": [
+      "vUnLockBmp1AndRemovePunt: cddBmp1 == NULL\n"
+    ],
+    "name": "?vUnLockBmp1AndRemovePunt@CDDMULTISURFLOCK@@QEAAXXZ",
+    "prototype": "void __fastcall(CDDMULTISURFLOCK *__hidden this)",
+    "rank_score": 243,
+    "size": 72,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CmRegUtilCreateUcKey",
+    "ea": "0x1400449ac",
+    "function_file": "functions/1400449ac_CmRegUtilCreateUcKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateUcKey",
+    "prototype": "",
+    "rank_score": 243,
+    "size": 164,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilOpenExistingWstrKey",
+    "ea": "0x140044ab8",
+    "function_file": "functions/140044ab8_CmRegUtilOpenExistingWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilOpenExistingWstrKey",
+    "prototype": "",
+    "rank_score": 235,
+    "size": 133,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "SURFACCESS::Dispatch(void)",
+    "ea": "0x140027c48",
+    "function_file": "functions/140027c48_SURFACCESS_Dispatch_void.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?Dispatch@SURFACCESS@@QEAAPEAU_DDI_DISPATCH_TABLE@@XZ",
+    "prototype": "struct _DDI_DISPATCH_TABLE *__fastcall(SURFACCESS *__hidden this)",
+    "rank_score": 233,
+    "size": 41,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x140043480",
+    "function_file": "functions/140043480_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 24,
+    "demangled": "CGuardMutexEx::CGuardMutexEx(CDDMUTEX *,int)",
+    "ea": "0x140002470",
+    "function_file": "functions/140002470_CGuardMutexEx_CGuardMutexEx_CDDMUTEX_int.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireFastMutexUnsafe"
+    ],
+    "matched_strings": [],
+    "name": "??0CGuardMutexEx@@QEAA@PEAVCDDMUTEX@@H@Z",
+    "prototype": "CGuardMutexEx *__fastcall(CGuardMutexEx *__hidden this, struct CDDMUTEX *, int)",
+    "rank_score": 224,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "bIgnoreDeviceSurfaceUpdates(_SURFOBJ *,_CLIPOBJ * *)",
+    "ea": "0x14001d458",
+    "function_file": "functions/14001d458_bIgnoreDeviceSurfaceUpdates_SURFOBJ_CLIPOBJ.md",
+    "matched_imports": [
+      "WIN32K!EngUpdateDeviceSurface"
+    ],
+    "matched_strings": [],
+    "name": "?bIgnoreDeviceSurfaceUpdates@@YAHPEAU_SURFOBJ@@PEAPEAU_CLIPOBJ@@@Z",
+    "prototype": "__int64 __fastcall(struct _SURFOBJ *, struct _CLIPOBJ **)",
+    "rank_score": 223,
+    "size": 42,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "GetConnectedStandbyProcessName(CDDPDEV *)",
+    "ea": "0x140010670",
+    "function_file": "functions/140010670_GetConnectedStandbyProcessName_CDDPDEV.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "?GetConnectedStandbyProcessName@@YAXPEAUCDDPDEV@@@Z",
+    "prototype": "void __fastcall(struct CDDPDEV *)",
+    "rank_score": 217,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x140029980",
+    "function_file": "functions/140029980_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 218,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x1400473ac",
+    "function_file": "functions/1400473ac_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SepSddlDaclFromSDDLString",
+    "ea": "0x140043a84",
+    "function_file": "functions/140043a84_SepSddlDaclFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlDaclFromSDDLString",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 221,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x140043044",
+    "function_file": "functions/140043044_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 187,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "CDDSURFLOCK::vInit(CDDPDEV *,_SURFOBJ * *,_RECTL *,int *,_CLIPOBJ *)",
+    "ea": "0x140033e60",
+    "function_file": "functions/140033e60_CDDSURFLOCK_vInit_CDDPDEV_SURFOBJ_RECTL_int_CLIPOBJ.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "?vInit@CDDSURFLOCK@@QEAAXPEAUCDDPDEV@@PEAPEAU_SURFOBJ@@PEAU_RECTL@@PEAHPEAU_CLIPOBJ@@@Z",
+    "prototype": "void __fastcall(CDDSURFLOCK *this, struct CDDPDEV *, struct _SURFOBJ **, struct _RECTL *, int *, struct _CLIPOBJ *)",
+    "rank_score": 212,
+    "size": 220,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "CDDBITMAPLOCK::CDDBITMAPLOCK(CddBitmap *)",
+    "ea": "0x14000c010",
+    "function_file": "functions/14000c010_CDDBITMAPLOCK_CDDBITMAPLOCK_CddBitmap.md",
+    "matched_imports": [
+      "WIN32K!EngAcquireSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "??0CDDBITMAPLOCK@@QEAA@PEAVCddBitmap@@@Z",
+    "prototype": "CDDBITMAPLOCK *(CDDBITMAPLOCK *__hidden this, struct CddBitmap *)",
+    "rank_score": 211,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "CDDDEVLOCK::vUnlock(void)",
+    "ea": "0x140008714",
+    "function_file": "functions/140008714_CDDDEVLOCK_vUnlock_void.md",
+    "matched_imports": [
+      "WIN32K!EngReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "?vUnlock@CDDDEVLOCK@@QEAAXXZ",
+    "prototype": "void __fastcall(CDDDEVLOCK *__hidden this)",
+    "rank_score": 211,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RmtSurfaceComplete(DHPDEV__ *,void *)",
+    "ea": "0x140036730",
+    "function_file": "functions/140036730_RmtSurfaceComplete_DHPDEV_void.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?RmtSurfaceComplete@@YAHPEAUDHPDEV__@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct DHPDEV__ *, void *)",
+    "rank_score": 211,
+    "size": 63,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CddCreateClose(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140029d90",
+    "function_file": "functions/140029d90_CddCreateClose_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?CddCreateClose@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 210,
+    "size": 44,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "CDDBITMAPLOCK::~CDDBITMAPLOCK(void)",
+    "ea": "0x140006a30",
+    "function_file": "functions/140006a30_CDDBITMAPLOCK_CDDBITMAPLOCK_void.md",
+    "matched_imports": [
+      "WIN32K!EngReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "??1CDDBITMAPLOCK@@QEAA@XZ",
+    "prototype": "void __fastcall(CDDBITMAPLOCK *__hidden this)",
+    "rank_score": 209,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::SyncDXAccessInternal(void)",
+    "ea": "0x14000e210",
+    "function_file": "functions/14000e210_CddBitmapHw_SyncDXAccessInternal_void.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?SyncDXAccessInternal@CddBitmapHw@@UEAAXXZ",
+    "prototype": "void __fastcall(CddBitmapHw *__hidden this)",
+    "rank_score": 208,
+    "size": 323,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "SURFACCESS::GetCddBitmap(SURFACCESS &,CddBitmap * *,CDDPDEV * *)",
+    "ea": "0x1400347d0",
+    "function_file": "functions/1400347d0_SURFACCESS_GetCddBitmap_SURFACCESS_CddBitmap_CDDPDEV.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?GetCddBitmap@SURFACCESS@@QEAAEAEAV1@PEAPEAVCddBitmap@@PEAPEAUCDDPDEV@@@Z",
+    "prototype": "unsigned __int8 __fastcall(SURFACCESS *__hidden this, struct SURFACCESS *, struct CddBitmap **, struct CDDPDEV **)",
+    "rank_score": 208,
+    "size": 97,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x14001d60c",
+    "function_file": "functions/14001d60c_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wistd::unique_ptr<_W32KCDD_INTERFACE,wistd::default_delete<_W32KCDD_INTERFACE>>::reset(_W32KCDD_INTERFACE *)",
+    "ea": "0x140027970",
+    "function_file": "functions/140027970_wistd_unique_ptr_W32KCDD_INTERFACE_wistd_default_delete_W32KCDD_INTERFACE_reset_W32KCDD_INTERFACE.md",
+    "matched_imports": [
+      "WIN32K!EngFreeMem"
+    ],
+    "matched_strings": [],
+    "name": "?reset@?$unique_ptr@U_W32KCDD_INTERFACE@@U?$default_delete@U_W32KCDD_INTERFACE@@@wistd@@@wistd@@QEAAXPEAU_W32KCDD_INTERFACE@@@Z",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RmtCreateDeviceBitmap(DHPDEV__ *,tagSIZE,ulong)",
+    "ea": "0x140034c70",
+    "function_file": "functions/140034c70_RmtCreateDeviceBitmap_DHPDEV_tagSIZE_ulong.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?RmtCreateDeviceBitmap@@YAPEAUHBITMAP__@@PEAUDHPDEV__@@UtagSIZE@@K@Z",
+    "prototype": "HBITMAP __fastcall(struct DHPDEV__ *, struct tagSIZE, unsigned int)",
+    "rank_score": 201,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RmtDeleteDeviceBitmap(DHSURF__ *)",
+    "ea": "0x140034e50",
+    "function_file": "functions/140034e50_RmtDeleteDeviceBitmap_DHSURF.md",
+    "matched_imports": [
+      "WIN32K!W32GetSessionState"
+    ],
+    "matched_strings": [],
+    "name": "?RmtDeleteDeviceBitmap@@YAXPEAUDHSURF__@@@Z",
+    "prototype": "void __fastcall(struct DHSURF__ *)",
+    "rank_score": 201,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::unique_storage<wil::details::resource_policy<HSURF__ *,int (HSURF__ *),&EngDeleteSurface(HSURF__ *),wistd::integral_constant<unsigned __int64,0>,HSURF__ *,HSURF__ *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<HSURF__ *,int (HSURF__ *),&EngDeleteSurface(HSURF__ *),wistd::integral_constant<unsigned __int64,0>,HSURF__ *,HSURF__ *,0,std::nullptr_t>>(void)",
+    "ea": "0x140020c58",
+    "function_file": "functions/140020c58_wil_details_unique_storage_wil_details_resource_policy_HSURF_int_HSURF_EngDeleteSurface_HSURF_wistd_integral_c.md",
+    "matched_imports": [
+      "WIN32K!EngDeleteSurface"
+    ],
+    "matched_strings": [],
+    "name": "??1?$unique_storage@U?$resource_policy@PEAUHSURF__@@$$A6AHPEAU1@@Z$1?EngDeleteSurface@@YAH0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 114,
+    "size": 52,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DrvCopyBits",
+    "ea": "0x140009140",
+    "function_file": "functions/140009140_DrvCopyBits.md",
+    "matched_imports": [
+      "WIN32K!EngBitBlt"
+    ],
+    "matched_strings": [],
+    "name": "DrvCopyBits",
+    "prototype": "FN_DrvCopyBits",
+    "rank_score": 101,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ProbeForRead_0",
+    "ea": "0x140029456",
+    "function_file": "functions/140029456_ProbeForRead_0.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "ProbeForRead_0",
+    "prototype": "void __stdcall(volatile void *Address, SIZE_T Length, ULONG Alignment)",
+    "rank_score": 101,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 77,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1400371f0",
+    "function_file": "functions/1400371f0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 186,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x1400372d0",
+    "function_file": "functions/1400372d0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 68,
+    "demangled": "memset",
+    "ea": "0x140037640",
+    "function_file": "functions/140037640_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140029a60",
+    "function_file": "functions/140029a60_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 275,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 22,
+    "demangled": "CDDETWPROFILER::~CDDETWPROFILER(void)",
+    "ea": "0x140004600",
+    "function_file": "functions/140004600_CDDETWPROFILER_CDDETWPROFILER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CDDETWPROFILER@@QEAA@XZ",
+    "prototype": "void __fastcall(CDDETWPROFILER *__hidden this)",
+    "rank_score": 24,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400370fc",
+    "function_file": "functions/1400370fc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 18,
+    "demangled": "memmove",
+    "ea": "0x140037340",
+    "function_file": "functions/140037340_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 24,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CddResidencyState::OnCommandBufferFlush(CHwCommandBuffer *)",
+    "ea": "0x1400111a0",
+    "function_file": "functions/1400111a0_CddResidencyState_OnCommandBufferFlush_CHwCommandBuffer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnCommandBufferFlush@CddResidencyState@@QEAAXPEAVCHwCommandBuffer@@@Z",
+    "prototype": "void __fastcall(CddResidencyState *__hidden this, struct CHwCommandBuffer *)",
+    "rank_score": 23,
+    "size": 25,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "SURFACCESS::~SURFACCESS(void)",
+    "ea": "0x14002733c",
+    "function_file": "functions/14002733c_SURFACCESS_SURFACCESS_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1SURFACCESS@@QEAA@XZ",
+    "prototype": "void __fastcall(SURFACCESS *__hidden this)",
+    "rank_score": 23,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140047010",
+    "function_file": "functions/140047010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x1400433e0",
+    "function_file": "functions/1400433e0_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "RmtMovePointer(_SURFOBJ *,long,long,_RECTL *)",
+    "ea": "0x1400359f0",
+    "function_file": "functions/1400359f0_RmtMovePointer_SURFOBJ_long_long_RECTL.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RmtMovePointer@@YAXPEAU_SURFOBJ@@JJPEAU_RECTL@@@Z",
+    "prototype": "void __fastcall(struct _SURFOBJ *, int, int, struct _RECTL *)",
+    "rank_score": 19,
+    "size": 146,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "RmtStrokePath(_SURFOBJ *,_PATHOBJ *,_CLIPOBJ *,_XFORMOBJ *,_BRUSHOBJ *,_POINTL *,_LINEATTRS *,ulong)",
+    "ea": "0x140036670",
+    "function_file": "functions/140036670_RmtStrokePath_SURFOBJ_PATHOBJ_CLIPOBJ_XFORMOBJ_BRUSHOBJ_POINTL_LINEATTRS_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RmtStrokePath@@YAHPEAU_SURFOBJ@@PEAU_PATHOBJ@@PEAU_CLIPOBJ@@PEAU_XFORMOBJ@@PEAU_BRUSHOBJ@@PEAU_POINTL@@PEAU_LINEATTRS@@K@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _SURFOBJ *@<rcx>, struct _PATHOBJ *@<rdx>, struct _CLIPOBJ *@<r8>, struct _XFORMOBJ *@<r9>, struct _BRUSHOBJ *, struct _POINTL *, struct _LINEATTRS *, unsigned int)",
+    "rank_score": 18,
+    "size": 186,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "RmtFillPath(_SURFOBJ *,_PATHOBJ *,_CLIPOBJ *,_BRUSHOBJ *,_POINTL *,ulong,ulong)",
+    "ea": "0x140035630",
+    "function_file": "functions/140035630_RmtFillPath_SURFOBJ_PATHOBJ_CLIPOBJ_BRUSHOBJ_POINTL_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RmtFillPath@@YAHPEAU_SURFOBJ@@PEAU_PATHOBJ@@PEAU_CLIPOBJ@@PEAU_BRUSHOBJ@@PEAU_POINTL@@KK@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _SURFOBJ *@<rcx>, struct _PATHOBJ *@<rdx>, struct _CLIPOBJ *@<r8>, struct _BRUSHOBJ *@<r9>, struct _POINTL *, unsigned int, unsigned int)",
+    "rank_score": 17,
+    "size": 150,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "RmtStrokeAndFillPath(_SURFOBJ *,_PATHOBJ *,_CLIPOBJ *,_XFORMOBJ *,_BRUSHOBJ *,_LINEATTRS *,_BRUSHOBJ *,_POINTL *,ulong,ulong)",
+    "ea": "0x1400365a0",
+    "function_file": "functions/1400365a0_RmtStrokeAndFillPath_SURFOBJ_PATHOBJ_CLIPOBJ_XFORMOBJ_BRUSHOBJ_LINEATTRS_BRUSHOBJ_POINTL_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RmtStrokeAndFillPath@@YAHPEAU_SURFOBJ@@PEAU_PATHOBJ@@PEAU_CLIPOBJ@@PEAU_XFORMOBJ@@PEAU_BRUSHOBJ@@PEAU_LINEATTRS@@4PEAU_POINTL@@KK@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _SURFOBJ *@<rcx>, struct _PATHOBJ *@<rdx>, struct _CLIPOBJ *@<r8>, struct _XFORMOBJ *@<r9>, struct _BRUSHOBJ *, struct _LINEATTRS *, struct _BRUSHOBJ *, struct _POINTL *, unsigned int, unsigned int)",
+    "rank_score": 17,
+    "size": 201,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x1400298f8",
+    "function_file": "functions/1400298f8_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 129,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "CDDETWPROFILER::Init(CDDPDEV *,uint,_DXGKETW_PARAMS *,bool)",
+    "ea": "0x1400160c8",
+    "function_file": "functions/1400160c8_CDDETWPROFILER_Init_CDDPDEV_uint_DXGKETW_PARAMS_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@CDDETWPROFILER@@QEAAXPEAUCDDPDEV@@IPEAU_DXGKETW_PARAMS@@_N@Z",
+    "prototype": "void __fastcall(CDDETWPROFILER *__hidden this, struct CDDPDEV *, unsigned int, struct _DXGKETW_PARAMS *, bool)",
+    "rank_score": 16,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 6,
+    "demangled": "CDDMULTISURFLOCK::vInit(CDDPDEV *,_SURFOBJ * *,_SURFOBJ * *,_RECTL *,_RECTL *,int *,_CLIPOBJ *)",
+    "ea": "0x1400087ac",
+    "function_file": "functions/1400087ac_CDDMULTISURFLOCK_vInit_CDDPDEV_SURFOBJ_SURFOBJ_RECTL_RECTL_int_CLIPOBJ.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?vInit@CDDMULTISURFLOCK@@QEAAXPEAUCDDPDEV@@PEAPEAU_SURFOBJ@@1PEAU_RECTL@@2PEAHPEAU_CLIPOBJ@@@Z",
+    "prototype": "void __usercall(CDDMULTISURFLOCK *__hidden this@<rcx>, struct CDDPDEV *@<rdx>, struct _SURFOBJ **@<r8>, struct _SURFOBJ **@<r9>, struct _RECTL *, struct _RECTL *, int *, struct _CLIPOBJ *)",
+    "rank_score": 16,
+    "size": 567,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x140029774",
+    "function_file": "functions/140029774_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 381,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140029fc8",
+    "function_file": "functions/140029fc8_wil_details_RecordCachedUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14004325c",
+    "function_file": "functions/14004325c_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CDDPDEV::MakeResident(uint,D3DDDI_MAKERESIDENT_FLAGS,unsigned __int64 *,unsigned __int64 *)",
+    "ea": "0x140015ad0",
+    "function_file": "functions/140015ad0_CDDPDEV_MakeResident_uint_D3DDDI_MAKERESIDENT_FLAGS_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MakeResident@CDDPDEV@@QEAAJIUD3DDDI_MAKERESIDENT_FLAGS@@PEA_K1@Z",
+    "prototype": "__int64 __fastcall(CDDPDEV *__hidden this, unsigned int, struct D3DDDI_MAKERESIDENT_FLAGS, unsigned __int64 *, unsigned __int64 *)",
+    "rank_score": 14,
+    "size": 227,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ComputeColorFillParams(ulong,uint &,_DXGK_GDIROP_COLORFILL &)",
+    "ea": "0x140017404",
+    "function_file": "functions/140017404_ComputeColorFillParams_ulong_uint_DXGK_GDIROP_COLORFILL.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ComputeColorFillParams@@YAHKAEAIAEAW4_DXGK_GDIROP_COLORFILL@@@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned int *, enum _DXGK_GDIROP_COLORFILL *)",
+    "rank_score": 14,
+    "size": 141,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WdmlibIoCreateDeviceSecure",
+    "ea": "0x1400435c4",
+    "function_file": "functions/1400435c4_WdmlibIoCreateDeviceSecure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibIoCreateDeviceSecure",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, ULONG DeviceExtensionSize, PUNICODE_STRING DeviceName, ULONG DeviceType, ULONG DeviceCharacteristics, BOOLEAN Exclusive, PCUNICODE_STRING DefaultSDDLString, LPCGUID DeviceClassGuid, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 14,
+    "size": 117,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CHwCommandBuffer::IsAllocationReferenced(uint)",
+    "ea": "0x14000dda0",
+    "function_file": "functions/14000dda0_CHwCommandBuffer_IsAllocationReferenced_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsAllocationReferenced@CHwCommandBuffer@@QEAAHI@Z",
+    "prototype": "__int64 __fastcall(CHwCommandBuffer *__hidden this, unsigned int)",
+    "rank_score": 13,
+    "size": 34,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x1400295c8",
+    "function_file": "functions/1400295c8_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x140029698",
+    "function_file": "functions/140029698_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x140029b7c",
+    "function_file": "functions/140029b7c_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 77,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CddBitmapHw::StartGdiAccessNoUpdate(tagRECT const *,int,CDDBITMAP_GDIDESC *)",
+    "ea": "0x14000c2e0",
+    "function_file": "functions/14000c2e0_CddBitmapHw_StartGdiAccessNoUpdate_tagRECT_const_int_CDDBITMAP_GDIDESC.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StartGdiAccessNoUpdate@CddBitmapHw@@UEAAJPEBUtagRECT@@HPEAUCDDBITMAP_GDIDESC@@@Z",
+    "prototype": "int(CddBitmapHw *__hidden this, const struct tagRECT *, int, struct CDDBITMAP_GDIDESC *)",
+    "rank_score": 12,
+    "size": 83,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrvCompletePDEV",
+    "ea": "0x1400191d0",
+    "function_file": "functions/1400191d0_DrvCompletePDEV.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DrvCompletePDEV",
+    "prototype": "FN_DrvCompletePDEV",
+    "rank_score": 12,
+    "size": 73,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GdiIdxPfnPairs::UpdateEntry(int,ulong,__int64 (*)(void))",
+    "ea": "0x140036ab8",
+    "function_file": "functions/140036ab8_GdiIdxPfnPairs_UpdateEntry_int_ulong_int64_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateEntry@GdiIdxPfnPairs@@QEAAHHKP6A_JXZ@Z",
+    "prototype": "__int64 __fastcall(GdiIdxPfnPairs *__hidden this, int, unsigned int, __int64 (*)(void))",
+    "rank_score": 12,
+    "size": 104,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140047044",
+    "function_file": "functions/140047044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "CDDDEVLOCK::CDDDEVLOCK(HSEMAPHORE__ *,int)",
+    "ea": "0x14000874c",
+    "function_file": "functions/14000874c_CDDDEVLOCK_CDDDEVLOCK_HSEMAPHORE_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CDDDEVLOCK@@QEAA@PEAUHSEMAPHORE__@@H@Z",
+    "prototype": "CDDDEVLOCK *__fastcall(CDDDEVLOCK *__hidden this, HSEMAPHORE, int)",
+    "rank_score": 11,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CddBitmapBase::AddCommandBufferReference(CHwCommandBuffer *,tagRECT const *,uint,tagPOINT const *)",
+    "ea": "0x140014130",
+    "function_file": "functions/140014130_CddBitmapBase_AddCommandBufferReference_CHwCommandBuffer_tagRECT_const_uint_tagPOINT_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddCommandBufferReference@CddBitmapBase@@UEAAXPEAVCHwCommandBuffer@@PEBUtagRECT@@IPEBUtagPOINT@@@Z",
+    "prototype": "void __fastcall(CddBitmapBase *__hidden this, struct CHwCommandBuffer *, const struct tagRECT *, unsigned int, const struct tagPOINT *)",
+    "rank_score": 11,
+    "size": 73,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CddBitmapSw::StartGdiAccessNoUpdate(tagRECT const *,int,CDDBITMAP_GDIDESC *)",
+    "ea": "0x1400325e0",
+    "function_file": "functions/1400325e0_CddBitmapSw_StartGdiAccessNoUpdate_tagRECT_const_int_CDDBITMAP_GDIDESC.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StartGdiAccessNoUpdate@CddBitmapSw@@UEAAJPEBUtagRECT@@HPEAUCDDBITMAP_GDIDESC@@@Z",
+    "prototype": "__int64 __fastcall(CddBitmapSw *__hidden this, const struct tagRECT *, int, struct CDDBITMAP_GDIDESC *)",
+    "rank_score": 11,
+    "size": 76,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "CDDETWPROFILER::CDDETWPROFILER(CDDPDEV *,uint,_DXGKETW_PARAMS *,bool)",
+    "ea": "0x1400140c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CDDETWPROFILER@@QEAA@PEAUCDDPDEV@@IPEAU_DXGKETW_PARAMS@@_N@Z",
+    "prototype": "CDDETWPROFILER *__fastcall(CDDETWPROFILER *__hidden this, struct CDDPDEV *, unsigned int, struct _DXGKETW_PARAMS *, bool)",
+    "rank_score": 10,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CddBitmapBase::GetInCommandBuffer(uint)",
+    "ea": "0x140030060",
+    "function_file": "functions/140030060_CddBitmapBase_GetInCommandBuffer_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetInCommandBuffer@CddBitmapBase@@UEBAEI@Z",
+    "prototype": "unsigned __int8 __fastcall(CddBitmapBase *__hidden this, unsigned int)",
+    "rank_score": 10,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CddBitmapBase::OnCommandBufferFlush(CHwCommandBuffer *)",
+    "ea": "0x140014310",
+    "function_file": "functions/140014310_CddBitmapBase_OnCommandBufferFlush_CHwCommandBuffer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnCommandBufferFlush@CddBitmapBase@@UEAAXPEAVCHwCommandBuffer@@@Z",
+    "prototype": "void __fastcall(CddBitmapBase *__hidden this, struct CHwCommandBuffer *)",
+    "rank_score": 10,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CddBitmapBase::SetInCommandBuffer(uint,uchar)",
+    "ea": "0x140031100",
+    "function_file": "functions/140031100_CddBitmapBase_SetInCommandBuffer_uint_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetInCommandBuffer@CddBitmapBase@@UEAAXIE@Z",
+    "prototype": "void __fastcall(CddBitmapBase *__hidden this, unsigned int, unsigned __int8)",
+    "rank_score": 10,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CddBitmapSw::StopGdiAccessNoUpdate(CDDBITMAP_GDIDESC *)",
+    "ea": "0x140019390",
+    "function_file": "functions/140019390_CddBitmapSw_StopGdiAccessNoUpdate_CDDBITMAP_GDIDESC.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StopGdiAccessNoUpdate@CddBitmapSw@@UEAAXPEAUCDDBITMAP_GDIDESC@@@Z",
+    "prototype": "void __fastcall(CddBitmapSw *__hidden this, struct CDDBITMAP_GDIDESC *)",
+    "rank_score": 10,
+    "size": 16,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "RemotePDevMgr::FindPDev(DHPDEV__ *)",
+    "ea": "0x1400347a4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FindPDev@RemotePDevMgr@@QEAAPEAUPASSTHROUGH_PDEV@@PEAUDHPDEV__@@@Z",
+    "prototype": "struct PASSTHROUGH_PDEV *__fastcall(RemotePDevMgr *__hidden this, struct DHPDEV__ *)",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WdmlibRtlInitUnicodeStringEx",
+    "ea": "0x14003707c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibRtlInitUnicodeStringEx",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DestinationString, PCWSTR SourceString)",
+    "rank_score": 8,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "GDIBITMAPACCESS2::GDIBITMAPACCESS2(CDDPDEV *,CddBitmap *,CddBitmap *)",
+    "ea": "0x14000c810",
+    "function_file": "functions/14000c810_GDIBITMAPACCESS2_GDIBITMAPACCESS2_CDDPDEV_CddBitmap_CddBitmap.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0GDIBITMAPACCESS2@@QEAA@PEAUCDDPDEV@@PEAVCddBitmap@@1@Z",
+    "prototype": "GDIBITMAPACCESS2 *__fastcall(GDIBITMAPACCESS2 *__hidden this, struct CDDPDEV *, struct CddBitmap *, struct CddBitmap *)",
+    "rank_score": 7,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140029f9c",
+    "function_file": "functions/140029f9c_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wistd::invoke<void (*)(void *),_D3DKMT_DISPLAYMODE * &>(void (*&&)(void *),_D3DKMT_DISPLAYMODE * &)",
+    "ea": "0x14002a1b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$invoke@P6AXPEAX@ZAEAPEAU_D3DKMT_DISPLAYMODE@@@wistd@@YAX$$QEAP6AXPEAX@ZAEAPEAU_D3DKMT_DISPLAYMODE@@@Z",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CddBitmapSw::SyncDXAccessInternal(void)",
+    "ea": "0x140032640",
+    "function_file": "functions/140032640_CddBitmapSw_SyncDXAccessInternal_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SyncDXAccessInternal@CddBitmapSw@@UEAAXXZ",
+    "prototype": "void __fastcall(CddBitmapSw *__hidden this)",
+    "rank_score": 6,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "bCopyMonoPointer",
+    "ea": "0x140014540",
+    "function_file": "functions/140014540_bCopyMonoPointer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "bCopyMonoPointer",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 6,
+    "size": 297,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CmRegUtilCreateWstrKey",
+    "ea": "0x140044a58",
+    "function_file": "functions/140044a58_CmRegUtilCreateWstrKey.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateWstrKey",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FillMemoryNonTemporal(uint *,uint,uint,uint,uint)",
+    "ea": "0x140013c80",
+    "function_file": "functions/140013c80_FillMemoryNonTemporal_uint_uint_uint_uint_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FillMemoryNonTemporal@@YAXPEAIIIII@Z",
+    "prototype": "void __fastcall(unsigned int *, unsigned int, unsigned int, unsigned int, unsigned int)",
+    "rank_score": 4,
+    "size": 286,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RtlReadULong64FromUser",
+    "ea": "0x140043008",
+    "function_file": "functions/140043008_RtlReadULong64FromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULong64FromUser",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 4,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x140043220",
+    "function_file": "functions/140043220_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CDDWORKERTHREADTRACKER::~CDDWORKERTHREADTRACKER(void)",
+    "ea": "0x1400193a8",
+    "function_file": "functions/1400193a8_CDDWORKERTHREADTRACKER_CDDWORKERTHREADTRACKER_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CDDWORKERTHREADTRACKER@@QEAA@XZ",
+    "prototype": "void __fastcall(CDDWORKERTHREADTRACKER *__hidden this)",
+    "rank_score": 3,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x140043108",
+    "function_file": "functions/140043108_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Copy16TO32",
+    "ea": "0x1400334c4",
+    "function_file": "functions/1400334c4_Copy16TO32.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Copy16TO32",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 126,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CddBitmapSw::StartGdiAccess(tagRECT const *,tagRECT const *,_CLIPOBJ const *,int,int,int *,CDDBITMAP_GDIDESC *,uchar)",
+    "ea": "0x140018650",
+    "function_file": "functions/140018650_CddBitmapSw_StartGdiAccess_tagRECT_const_tagRECT_const_CLIPOBJ_const_int_int_int_CDDBITMAP_GDIDESC_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StartGdiAccess@CddBitmapSw@@UEAAJPEBUtagRECT@@0PEBU_CLIPOBJ@@HHPEAHPEAUCDDBITMAP_GDIDESC@@E@Z",
+    "prototype": "__int64 __fastcall(CddBitmapSw *__hidden this, const struct tagRECT *, const struct tagRECT *, const struct _CLIPOBJ *, int, int, int *, struct CDDBITMAP_GDIDESC *, unsigned __int8)",
+    "rank_score": 1,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CopyMemoryCallback(CLIP_RECTS_DATA *,uint,tagRECT const *)",
+    "ea": "0x1400155a0",
+    "function_file": "functions/1400155a0_CopyMemoryCallback_CLIP_RECTS_DATA_uint_tagRECT_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CopyMemoryCallback@@YAJPEAUCLIP_RECTS_DATA@@IPEBUtagRECT@@@Z",
+    "prototype": "__int64 __fastcall(struct CLIP_RECTS_DATA *, unsigned int, const struct tagRECT *)",
+    "rank_score": 1,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x140037220",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x140037230",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlReadULong64FromUser$thunk$2147908448085668007",
+    "ea": "0x140038010",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULong64FromUser$thunk$2147908448085668007",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  }
+]

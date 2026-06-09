@@ -1,0 +1,1857 @@
+[
+  {
+    "import": "FLTMGR!FltCreateFileEx",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x14000698c",
+        "from_func": "0x140006810",
+        "from_func_name": "BfsFileOpenAsUserCallback",
+        "import": "FLTMGR!FltCreateFileEx"
+      },
+      {
+        "from_ea": "0x14000698c",
+        "from_func": "0x140006810",
+        "from_func_name": "BfsFileOpenAsUserCallback",
+        "import": "FLTMGR!FltCreateFileEx"
+      },
+      {
+        "from_ea": "0x14001b7f4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "FLTMGR!FltCreateFileEx"
+      }
+    ]
+  },
+  {
+    "import": "FLTMGR!FltCreateFileEx2",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140003c82",
+        "from_func": "0x140003b80",
+        "from_func_name": "BfsNormalizeNameComponentEx",
+        "import": "FLTMGR!FltCreateFileEx2"
+      },
+      {
+        "from_ea": "0x140008e15",
+        "from_func": "0x140008d3c",
+        "from_func_name": "BfsOpenPolicyDirectory",
+        "import": "FLTMGR!FltCreateFileEx2"
+      },
+      {
+        "from_ea": "0x140010bf9",
+        "from_func": "0x140010b30",
+        "from_func_name": "BfsCreateStorage",
+        "import": "FLTMGR!FltCreateFileEx2"
+      },
+      {
+        "from_ea": "0x140003c82",
+        "from_func": "0x140003b80",
+        "from_func_name": "BfsNormalizeNameComponentEx",
+        "import": "FLTMGR!FltCreateFileEx2"
+      },
+      {
+        "from_ea": "0x140008e15",
+        "from_func": "0x140008d3c",
+        "from_func_name": "BfsOpenPolicyDirectory",
+        "import": "FLTMGR!FltCreateFileEx2"
+      },
+      {
+        "from_ea": "0x140010bf9",
+        "from_func": "0x140010b30",
+        "from_func_name": "BfsCreateStorage",
+        "import": "FLTMGR!FltCreateFileEx2"
+      }
+    ]
+  },
+  {
+    "import": "FLTMGR!FltSetFileContext",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400019a9",
+        "from_func": "0x140001870",
+        "from_func_name": "BfsGetFileContext",
+        "import": "FLTMGR!FltSetFileContext"
+      },
+      {
+        "from_ea": "0x1400019a9",
+        "from_func": "0x140001870",
+        "from_func_name": "BfsGetFileContext",
+        "import": "FLTMGR!FltSetFileContext"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IoCreateFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140009ec7",
+        "from_func": "0x140009b9c",
+        "from_func_name": "BfsProcessSetPolicyRequest",
+        "import": "ntoskrnl!IoCreateFile"
+      },
+      {
+        "from_ea": "0x140009ec7",
+        "from_func": "0x140009b9c",
+        "from_func_name": "BfsProcessSetPolicyRequest",
+        "import": "ntoskrnl!IoCreateFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IofCompleteRequest",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140003620",
+        "from_func": "0x140003610",
+        "from_func_name": "BfsClose",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400038c5",
+        "from_func": "0x140003640",
+        "from_func_name": "BfsDeviceIoControl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140003620",
+        "from_func": "0x140003610",
+        "from_func_name": "BfsClose",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400038c5",
+        "from_func": "0x140003640",
+        "from_func_name": "BfsDeviceIoControl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsGetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140002486",
+        "from_func": "0x140001fb0",
+        "from_func_name": "BfsPostCreateOperation",
+        "import": "ntoskrnl!PsGetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140002486",
+        "from_func": "0x140001fb0",
+        "from_func_name": "BfsPostCreateOperation",
+        "import": "ntoskrnl!PsGetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsImpersonateClient",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x14000fb64",
+        "from_func": "0x14000f9c8",
+        "from_func_name": "BfsImpersonateToken",
+        "import": "ntoskrnl!PsImpersonateClient"
+      },
+      {
+        "from_ea": "0x14000fe0b",
+        "from_func": "0x14000fc24",
+        "from_func_name": "BfsImpersonateUser",
+        "import": "ntoskrnl!PsImpersonateClient"
+      },
+      {
+        "from_ea": "0x14000ff17",
+        "from_func": "0x14000fecc",
+        "from_func_name": "BfsRevertTokenImpersonation",
+        "import": "ntoskrnl!PsImpersonateClient"
+      },
+      {
+        "from_ea": "0x14000fb64",
+        "from_func": "0x14000f9c8",
+        "from_func_name": "BfsImpersonateToken",
+        "import": "ntoskrnl!PsImpersonateClient"
+      },
+      {
+        "from_ea": "0x14000fe0b",
+        "from_func": "0x14000fc24",
+        "from_func_name": "BfsImpersonateUser",
+        "import": "ntoskrnl!PsImpersonateClient"
+      },
+      {
+        "from_ea": "0x14000ff17",
+        "from_func": "0x14000fecc",
+        "from_func_name": "BfsRevertTokenImpersonation",
+        "import": "ntoskrnl!PsImpersonateClient"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsRevertToSelf",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x14000fb3d",
+        "from_func": "0x14000f9c8",
+        "from_func_name": "BfsImpersonateToken",
+        "import": "ntoskrnl!PsRevertToSelf"
+      },
+      {
+        "from_ea": "0x14000fda4",
+        "from_func": "0x14000fc24",
+        "from_func_name": "BfsImpersonateUser",
+        "import": "ntoskrnl!PsRevertToSelf"
+      },
+      {
+        "from_ea": "0x14000fedb",
+        "from_func": "0x14000fecc",
+        "from_func_name": "BfsRevertTokenImpersonation",
+        "import": "ntoskrnl!PsRevertToSelf"
+      },
+      {
+        "from_ea": "0x14000fb3d",
+        "from_func": "0x14000f9c8",
+        "from_func_name": "BfsImpersonateToken",
+        "import": "ntoskrnl!PsRevertToSelf"
+      },
+      {
+        "from_ea": "0x14000fda4",
+        "from_func": "0x14000fc24",
+        "from_func_name": "BfsImpersonateUser",
+        "import": "ntoskrnl!PsRevertToSelf"
+      },
+      {
+        "from_ea": "0x14000fedb",
+        "from_func": "0x14000fecc",
+        "from_func_name": "BfsRevertTokenImpersonation",
+        "import": "ntoskrnl!PsRevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareUnicodeString",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000a09c",
+        "from_func": "0x140009b9c",
+        "from_func_name": "BfsProcessSetPolicyRequest",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x140010770",
+        "from_func": "0x140010760",
+        "from_func_name": "BfsCompareTableEntries",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x14000a09c",
+        "from_func": "0x140009b9c",
+        "from_func_name": "BfsProcessSetPolicyRequest",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x140010770",
+        "from_func": "0x140010760",
+        "from_func_name": "BfsCompareTableEntries",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlConvertSidToUnicodeString",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 24,
+    "xrefs": [
+      {
+        "from_ea": "0x14000827e",
+        "from_func": "0x140007e5c",
+        "from_func_name": "BfsInsertPolicyEntry",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x1400082e0",
+        "from_func": "0x140007e5c",
+        "from_func_name": "BfsInsertPolicyEntry",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140008a36",
+        "from_func": "0x140008598",
+        "from_func_name": "BfsInsertPolicyEntryLocked",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140008a5c",
+        "from_func": "0x140008598",
+        "from_func_name": "BfsInsertPolicyEntryLocked",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140008fa0",
+        "from_func": "0x140008e84",
+        "from_func_name": "BfsPolicyEntryExists",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140008fc2",
+        "from_func": "0x140008e84",
+        "from_func_name": "BfsPolicyEntryExists",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x1400091e8",
+        "from_func": "0x140009114",
+        "from_func_name": "BfsPolicyEntryExistsLocked",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140009207",
+        "from_func": "0x140009114",
+        "from_func_name": "BfsPolicyEntryExistsLocked",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x14000a5f0",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x14000a62c",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x14000dbfe",
+        "from_func": "0x14000dadc",
+        "from_func_name": "BfsPerformPrompt",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x14000ee2f",
+        "from_func": "0x14000ebf4",
+        "from_func_name": "BfsGetRegistryPrefix",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x14000827e",
+        "from_func": "0x140007e5c",
+        "from_func_name": "BfsInsertPolicyEntry",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x1400082e0",
+        "from_func": "0x140007e5c",
+        "from_func_name": "BfsInsertPolicyEntry",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140008a36",
+        "from_func": "0x140008598",
+        "from_func_name": "BfsInsertPolicyEntryLocked",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140008a5c",
+        "from_func": "0x140008598",
+        "from_func_name": "BfsInsertPolicyEntryLocked",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140008fa0",
+        "from_func": "0x140008e84",
+        "from_func_name": "BfsPolicyEntryExists",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140008fc2",
+        "from_func": "0x140008e84",
+        "from_func_name": "BfsPolicyEntryExists",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x1400091e8",
+        "from_func": "0x140009114",
+        "from_func_name": "BfsPolicyEntryExistsLocked",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x140009207",
+        "from_func": "0x140009114",
+        "from_func_name": "BfsPolicyEntryExistsLocked",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x14000a5f0",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x14000a62c",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x14000dbfe",
+        "from_func": "0x14000dadc",
+        "from_func_name": "BfsPerformPrompt",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x14000ee2f",
+        "from_func": "0x14000ebf4",
+        "from_func_name": "BfsGetRegistryPrefix",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCopySid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 24,
+    "xrefs": [
+      {
+        "from_ea": "0x1400079ae",
+        "from_func": "0x140007890",
+        "from_func_name": "BfsInsertNotPresentPolicyEntry",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x1400079e9",
+        "from_func": "0x140007890",
+        "from_func_name": "BfsInsertNotPresentPolicyEntry",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x140007ca2",
+        "from_func": "0x140007b60",
+        "from_func_name": "BfsInsertNotPresentPolicyEntryLocked",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x140007cd9",
+        "from_func": "0x140007b60",
+        "from_func_name": "BfsInsertNotPresentPolicyEntryLocked",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x1400080db",
+        "from_func": "0x140007e5c",
+        "from_func_name": "BfsInsertPolicyEntry",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000811b",
+        "from_func": "0x140007e5c",
+        "from_func_name": "BfsInsertPolicyEntry",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x140008844",
+        "from_func": "0x140008598",
+        "from_func_name": "BfsInsertPolicyEntryLocked",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x140008880",
+        "from_func": "0x140008598",
+        "from_func_name": "BfsInsertPolicyEntryLocked",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000b890",
+        "from_func": "0x14000b7bc",
+        "from_func_name": "BfsRedirectNamedPipe",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000b9ad",
+        "from_func": "0x14000b7bc",
+        "from_func_name": "BfsRedirectNamedPipe",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000d99a",
+        "from_func": "0x14000d848",
+        "from_func_name": "BfsUpdateGlobalFilePolicy",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000da03",
+        "from_func": "0x14000d848",
+        "from_func_name": "BfsUpdateGlobalFilePolicy",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x1400079ae",
+        "from_func": "0x140007890",
+        "from_func_name": "BfsInsertNotPresentPolicyEntry",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x1400079e9",
+        "from_func": "0x140007890",
+        "from_func_name": "BfsInsertNotPresentPolicyEntry",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x140007ca2",
+        "from_func": "0x140007b60",
+        "from_func_name": "BfsInsertNotPresentPolicyEntryLocked",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x140007cd9",
+        "from_func": "0x140007b60",
+        "from_func_name": "BfsInsertNotPresentPolicyEntryLocked",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x1400080db",
+        "from_func": "0x140007e5c",
+        "from_func_name": "BfsInsertPolicyEntry",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000811b",
+        "from_func": "0x140007e5c",
+        "from_func_name": "BfsInsertPolicyEntry",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x140008844",
+        "from_func": "0x140008598",
+        "from_func_name": "BfsInsertPolicyEntryLocked",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x140008880",
+        "from_func": "0x140008598",
+        "from_func_name": "BfsInsertPolicyEntryLocked",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000b890",
+        "from_func": "0x14000b7bc",
+        "from_func_name": "BfsRedirectNamedPipe",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000b9ad",
+        "from_func": "0x14000b7bc",
+        "from_func_name": "BfsRedirectNamedPipe",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000d99a",
+        "from_func": "0x14000d848",
+        "from_func_name": "BfsUpdateGlobalFilePolicy",
+        "import": "ntoskrnl!RtlCopySid"
+      },
+      {
+        "from_ea": "0x14000da03",
+        "from_func": "0x14000d848",
+        "from_func_name": "BfsUpdateGlobalFilePolicy",
+        "import": "ntoskrnl!RtlCopySid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCreateAcl",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x140012d8f",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      },
+      {
+        "from_ea": "0x140012ebf",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      },
+      {
+        "from_ea": "0x14001300a",
+        "from_func": "0x140012fb0",
+        "from_func_name": "BfsUpdateSecurityDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      },
+      {
+        "from_ea": "0x14001e4ac",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      },
+      {
+        "from_ea": "0x140012d8f",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      },
+      {
+        "from_ea": "0x140012ebf",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      },
+      {
+        "from_ea": "0x14001300a",
+        "from_func": "0x140012fb0",
+        "from_func_name": "BfsUpdateSecurityDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      },
+      {
+        "from_ea": "0x14001e4ac",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCreateSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140012c25",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140013109",
+        "from_func": "0x140012fb0",
+        "from_func_name": "BfsUpdateSecurityDescriptor",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14001e573",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140012c25",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140013109",
+        "from_func": "0x140012fb0",
+        "from_func_name": "BfsUpdateSecurityDescriptor",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14001e573",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlDeriveCapabilitySidsFromName",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140004471",
+        "from_func": "0x140004364",
+        "from_func_name": "BfsSetApplicableCapabilitySid",
+        "import": "ntoskrnl!RtlDeriveCapabilitySidsFromName"
+      },
+      {
+        "from_ea": "0x140004471",
+        "from_func": "0x140004364",
+        "from_func_name": "BfsSetApplicableCapabilitySid",
+        "import": "ntoskrnl!RtlDeriveCapabilitySidsFromName"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlEqualSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 18,
+    "xrefs": [
+      {
+        "from_ea": "0x14000456b",
+        "from_func": "0x1400044e4",
+        "from_func_name": "BfsVerifyAce",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x140008ce9",
+        "from_func": "0x140008ca8",
+        "from_func_name": "BfsLookupPolicyEntryHashTable",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x140008d00",
+        "from_func": "0x140008ca8",
+        "from_func_name": "BfsLookupPolicyEntryHashTable",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000b0ed",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000b14a",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000b721",
+        "from_func": "0x14000b6e0",
+        "from_func_name": "BfsLookupPipeMappingEntryHashTable",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000b738",
+        "from_func": "0x14000b6e0",
+        "from_func_name": "BfsLookupPipeMappingEntryHashTable",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000c953",
+        "from_func": "0x14000c8cc",
+        "from_func_name": "BfsGetGlobalFilePolicy",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000c96a",
+        "from_func": "0x14000c8cc",
+        "from_func_name": "BfsGetGlobalFilePolicy",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000456b",
+        "from_func": "0x1400044e4",
+        "from_func_name": "BfsVerifyAce",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x140008ce9",
+        "from_func": "0x140008ca8",
+        "from_func_name": "BfsLookupPolicyEntryHashTable",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x140008d00",
+        "from_func": "0x140008ca8",
+        "from_func_name": "BfsLookupPolicyEntryHashTable",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000b0ed",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000b14a",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000b721",
+        "from_func": "0x14000b6e0",
+        "from_func_name": "BfsLookupPipeMappingEntryHashTable",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000b738",
+        "from_func": "0x14000b6e0",
+        "from_func_name": "BfsLookupPipeMappingEntryHashTable",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000c953",
+        "from_func": "0x14000c8cc",
+        "from_func_name": "BfsGetGlobalFilePolicy",
+        "import": "ntoskrnl!RtlEqualSid"
+      },
+      {
+        "from_ea": "0x14000c96a",
+        "from_func": "0x14000c8cc",
+        "from_func_name": "BfsGetGlobalFilePolicy",
+        "import": "ntoskrnl!RtlEqualSid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlGetDaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b16d",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e6b8",
+        "from_func": "0x14000e560",
+        "from_func_name": "BfsAdjustRegistryKeySecurity",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14001e3ca",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000b16d",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e6b8",
+        "from_func": "0x14000e560",
+        "from_func_name": "BfsAdjustRegistryKeySecurity",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14001e3ca",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlGetGroupSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b10c",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlGetGroupSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000b10c",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlGetGroupSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b0b3",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlGetOwnerSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000b0b3",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlGetOwnerSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlGetSaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b239",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlGetSaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000b239",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!RtlGetSaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlLengthSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 34,
+    "xrefs": [
+      {
+        "from_ea": "0x140006c4e",
+        "from_func": "0x140006c24",
+        "from_func_name": "BfsGetNotPresentPolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140006c6c",
+        "from_func": "0x140006c24",
+        "from_func_name": "BfsGetNotPresentPolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140006d42",
+        "from_func": "0x140006d20",
+        "from_func_name": "BfsGetNotPresentPolicyEntryLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140006d60",
+        "from_func": "0x140006d20",
+        "from_func_name": "BfsGetNotPresentPolicyEntryLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000708b",
+        "from_func": "0x140007044",
+        "from_func_name": "BfsGetPolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1400070a8",
+        "from_func": "0x140007044",
+        "from_func_name": "BfsGetPolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000729b",
+        "from_func": "0x140007250",
+        "from_func_name": "BfsGetPolicyEntryLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1400072b8",
+        "from_func": "0x140007250",
+        "from_func_name": "BfsGetPolicyEntryLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140008ed0",
+        "from_func": "0x140008e84",
+        "from_func_name": "BfsPolicyEntryExists",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140008eee",
+        "from_func": "0x140008e84",
+        "from_func_name": "BfsPolicyEntryExists",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000915d",
+        "from_func": "0x140009114",
+        "from_func_name": "BfsPolicyEntryExistsLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000917b",
+        "from_func": "0x140009114",
+        "from_func_name": "BfsPolicyEntryExistsLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000a51c",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000a53a",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140012cc8",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140012ce8",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140012e52",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140006c4e",
+        "from_func": "0x140006c24",
+        "from_func_name": "BfsGetNotPresentPolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140006c6c",
+        "from_func": "0x140006c24",
+        "from_func_name": "BfsGetNotPresentPolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140006d42",
+        "from_func": "0x140006d20",
+        "from_func_name": "BfsGetNotPresentPolicyEntryLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140006d60",
+        "from_func": "0x140006d20",
+        "from_func_name": "BfsGetNotPresentPolicyEntryLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000708b",
+        "from_func": "0x140007044",
+        "from_func_name": "BfsGetPolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1400070a8",
+        "from_func": "0x140007044",
+        "from_func_name": "BfsGetPolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000729b",
+        "from_func": "0x140007250",
+        "from_func_name": "BfsGetPolicyEntryLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x1400072b8",
+        "from_func": "0x140007250",
+        "from_func_name": "BfsGetPolicyEntryLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140008ed0",
+        "from_func": "0x140008e84",
+        "from_func_name": "BfsPolicyEntryExists",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140008eee",
+        "from_func": "0x140008e84",
+        "from_func_name": "BfsPolicyEntryExists",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000915d",
+        "from_func": "0x140009114",
+        "from_func_name": "BfsPolicyEntryExistsLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000917b",
+        "from_func": "0x140009114",
+        "from_func_name": "BfsPolicyEntryExistsLocked",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000a51c",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000a53a",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140012cc8",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140012ce8",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x140012e52",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfiguration",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x14001e800",
+        "from_func": "0x14001e7c0",
+        "from_func_name": "wil_RtlStagingConfig_QueryFeatureState",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14001ec60",
+        "from_func": "0x14001ec10",
+        "from_func_name": "wil_details_UpdateFeatureConfiguredStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14001f6b1",
+        "from_func": "0x14001f650",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14001e800",
+        "from_func": "0x14001e7c0",
+        "from_func_name": "wil_RtlStagingConfig_QueryFeatureState",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14001ec60",
+        "from_func": "0x14001ec10",
+        "from_func_name": "wil_details_UpdateFeatureConfiguredStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14001f6b1",
+        "from_func": "0x14001f650",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001f5b8",
+        "from_func": "0x14001f590",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      },
+      {
+        "from_ea": "0x14001f5b8",
+        "from_func": "0x14001f590",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001f60e",
+        "from_func": "0x14001f590",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x14001f60e",
+        "from_func": "0x14001f590",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlSetControlSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140012d6d",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetControlSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140012d6d",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetControlSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlSetDaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140012e2b",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14001312c",
+        "from_func": "0x140012fb0",
+        "from_func_name": "BfsUpdateSecurityDescriptor",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14001e591",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140012e2b",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14001312c",
+        "from_func": "0x140012fb0",
+        "from_func_name": "BfsUpdateSecurityDescriptor",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14001e591",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlSetGroupSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140012c91",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetGroupSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140012c91",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetGroupSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlSetOwnerSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140012c68",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetOwnerSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140012c68",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetOwnerSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlSetSaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140012f15",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetSaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140012f15",
+        "from_func": "0x140012bf4",
+        "from_func_name": "BfsCreatePolicyStorageDescriptor",
+        "import": "ntoskrnl!RtlSetSaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001e894",
+        "from_func": "0x14001e884",
+        "from_func_name": "wil_UninitializeFeatureStaging",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x14001e894",
+        "from_func": "0x14001e884",
+        "from_func_name": "wil_UninitializeFeatureStaging",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeAccessCheck",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e390",
+        "from_func": "0x14000e110",
+        "from_func_name": "BfsAccessRegistryKeyAsUserCallback",
+        "import": "ntoskrnl!SeAccessCheck"
+      },
+      {
+        "from_ea": "0x14000e44c",
+        "from_func": "0x14000e110",
+        "from_func_name": "BfsAccessRegistryKeyAsUserCallback",
+        "import": "ntoskrnl!SeAccessCheck"
+      },
+      {
+        "from_ea": "0x14000e390",
+        "from_func": "0x14000e110",
+        "from_func_name": "BfsAccessRegistryKeyAsUserCallback",
+        "import": "ntoskrnl!SeAccessCheck"
+      },
+      {
+        "from_ea": "0x14000e44c",
+        "from_func": "0x14000e110",
+        "from_func_name": "BfsAccessRegistryKeyAsUserCallback",
+        "import": "ntoskrnl!SeAccessCheck"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeConvertStringSidToSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000cdcc",
+        "from_func": "0x14000cd20",
+        "from_func_name": "BfsLoadUserPolicyEntriesToGlobalFileTable",
+        "import": "ntoskrnl!SeConvertStringSidToSid"
+      },
+      {
+        "from_ea": "0x14000ced3",
+        "from_func": "0x14000cd20",
+        "from_func_name": "BfsLoadUserPolicyEntriesToGlobalFileTable",
+        "import": "ntoskrnl!SeConvertStringSidToSid"
+      },
+      {
+        "from_ea": "0x14000cdcc",
+        "from_func": "0x14000cd20",
+        "from_func_name": "BfsLoadUserPolicyEntriesToGlobalFileTable",
+        "import": "ntoskrnl!SeConvertStringSidToSid"
+      },
+      {
+        "from_ea": "0x14000ced3",
+        "from_func": "0x14000cd20",
+        "from_func_name": "BfsLoadUserPolicyEntriesToGlobalFileTable",
+        "import": "ntoskrnl!SeConvertStringSidToSid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwCreateFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140003dc6",
+        "from_func": "0x140003d14",
+        "from_func_name": "BfsOpenPolicyRootDirectory",
+        "import": "ntoskrnl!ZwCreateFile"
+      },
+      {
+        "from_ea": "0x140003dc6",
+        "from_func": "0x140003d14",
+        "from_func_name": "BfsOpenPolicyRootDirectory",
+        "import": "ntoskrnl!ZwCreateFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwDeleteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000a6c7",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!ZwDeleteFile"
+      },
+      {
+        "from_ea": "0x14000a6c7",
+        "from_func": "0x14000a4bc",
+        "from_func_name": "BfsRemovePolicyEntry",
+        "import": "ntoskrnl!ZwDeleteFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwDuplicateToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x14000524a",
+        "from_func": "0x140005138",
+        "from_func_name": "BfsApplyPolicyAsUser",
+        "import": "ntoskrnl!ZwDuplicateToken"
+      },
+      {
+        "from_ea": "0x14000f89a",
+        "from_func": "0x14000f7a0",
+        "from_func_name": "BfsGetUserToken",
+        "import": "ntoskrnl!ZwDuplicateToken"
+      },
+      {
+        "from_ea": "0x14000facb",
+        "from_func": "0x14000f9c8",
+        "from_func_name": "BfsImpersonateToken",
+        "import": "ntoskrnl!ZwDuplicateToken"
+      },
+      {
+        "from_ea": "0x14000fd2e",
+        "from_func": "0x14000fc24",
+        "from_func_name": "BfsImpersonateUser",
+        "import": "ntoskrnl!ZwDuplicateToken"
+      },
+      {
+        "from_ea": "0x14000524a",
+        "from_func": "0x140005138",
+        "from_func_name": "BfsApplyPolicyAsUser",
+        "import": "ntoskrnl!ZwDuplicateToken"
+      },
+      {
+        "from_ea": "0x14000f89a",
+        "from_func": "0x14000f7a0",
+        "from_func_name": "BfsGetUserToken",
+        "import": "ntoskrnl!ZwDuplicateToken"
+      },
+      {
+        "from_ea": "0x14000facb",
+        "from_func": "0x14000f9c8",
+        "from_func_name": "BfsImpersonateToken",
+        "import": "ntoskrnl!ZwDuplicateToken"
+      },
+      {
+        "from_ea": "0x14000fd2e",
+        "from_func": "0x14000fc24",
+        "from_func_name": "BfsImpersonateUser",
+        "import": "ntoskrnl!ZwDuplicateToken"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwOpenSymbolicLinkObject",
+    "tags": [
+      "reparse_path"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140003a70",
+        "from_func": "0x1400039dc",
+        "from_func_name": "BfsInitializeBootDevice",
+        "import": "ntoskrnl!ZwOpenSymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140003a70",
+        "from_func": "0x1400039dc",
+        "from_func_name": "BfsInitializeBootDevice",
+        "import": "ntoskrnl!ZwOpenSymbolicLinkObject"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwQuerySecurityObject",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 16,
+    "xrefs": [
+      {
+        "from_ea": "0x14000afb5",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000b05a",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000e2ae",
+        "from_func": "0x14000e110",
+        "from_func_name": "BfsAccessRegistryKeyAsUserCallback",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000e32a",
+        "from_func": "0x14000e110",
+        "from_func_name": "BfsAccessRegistryKeyAsUserCallback",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000e5be",
+        "from_func": "0x14000e560",
+        "from_func_name": "BfsAdjustRegistryKeySecurity",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000e65f",
+        "from_func": "0x14000e560",
+        "from_func_name": "BfsAdjustRegistryKeySecurity",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14001e2e4",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14001e36c",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000afb5",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000b05a",
+        "from_func": "0x14000af40",
+        "from_func_name": "BfsVerifyPolicySecurity",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000e2ae",
+        "from_func": "0x14000e110",
+        "from_func_name": "BfsAccessRegistryKeyAsUserCallback",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000e32a",
+        "from_func": "0x14000e110",
+        "from_func_name": "BfsAccessRegistryKeyAsUserCallback",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000e5be",
+        "from_func": "0x14000e560",
+        "from_func_name": "BfsAdjustRegistryKeySecurity",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14000e65f",
+        "from_func": "0x14000e560",
+        "from_func_name": "BfsAdjustRegistryKeySecurity",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14001e2e4",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      },
+      {
+        "from_ea": "0x14001e36c",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!ZwQuerySecurityObject"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwQuerySymbolicLinkObject",
+    "tags": [
+      "reparse_path"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140003aa4",
+        "from_func": "0x1400039dc",
+        "from_func_name": "BfsInitializeBootDevice",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140003b11",
+        "from_func": "0x1400039dc",
+        "from_func_name": "BfsInitializeBootDevice",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140003aa4",
+        "from_func": "0x1400039dc",
+        "from_func_name": "BfsInitializeBootDevice",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      },
+      {
+        "from_ea": "0x140003b11",
+        "from_func": "0x1400039dc",
+        "from_func_name": "BfsInitializeBootDevice",
+        "import": "ntoskrnl!ZwQuerySymbolicLinkObject"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140012460",
+        "from_func": "0x140012418",
+        "from_func_name": "BfsReadBlock",
+        "import": "ntoskrnl!ZwReadFile"
+      },
+      {
+        "from_ea": "0x140012460",
+        "from_func": "0x140012418",
+        "from_func_name": "BfsReadBlock",
+        "import": "ntoskrnl!ZwReadFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwSetSecurityObject",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x14000ac73",
+        "from_func": "0x14000aa50",
+        "from_func_name": "BfsUpdatePolicySecurity",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14000ae46",
+        "from_func": "0x14000accc",
+        "from_func_name": "BfsUpdateUserPolicyDirectorySecurity",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14000aedf",
+        "from_func": "0x14000accc",
+        "from_func_name": "BfsUpdateUserPolicyDirectorySecurity",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14001314c",
+        "from_func": "0x140012fb0",
+        "from_func_name": "BfsUpdateSecurityDescriptor",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14001e5ae",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14000ac73",
+        "from_func": "0x14000aa50",
+        "from_func_name": "BfsUpdatePolicySecurity",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14000ae46",
+        "from_func": "0x14000accc",
+        "from_func_name": "BfsUpdateUserPolicyDirectorySecurity",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14000aedf",
+        "from_func": "0x14000accc",
+        "from_func_name": "BfsUpdateUserPolicyDirectorySecurity",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14001314c",
+        "from_func": "0x140012fb0",
+        "from_func_name": "BfsUpdateSecurityDescriptor",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14001e5ae",
+        "from_func": "0x14001e1a0",
+        "from_func_name": "BfsVerifyVolumeRootDescriptor",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwWriteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140012af8",
+        "from_func": "0x140012ab0",
+        "from_func_name": "BfsWriteBlock",
+        "import": "ntoskrnl!ZwWriteFile"
+      },
+      {
+        "from_ea": "0x140012af8",
+        "from_func": "0x140012ab0",
+        "from_func_name": "BfsWriteBlock",
+        "import": "ntoskrnl!ZwWriteFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400035fd",
+        "from_func": "0x1400035fd",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "ntoskrnl!__C_specific_handler"
+      }
+    ]
+  }
+]

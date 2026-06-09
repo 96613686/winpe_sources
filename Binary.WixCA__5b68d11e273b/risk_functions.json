@@ -1,0 +1,5543 @@
+[
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "ExecSecureObjects",
+    "ea": "0x100044d9",
+    "function_file": "functions/100044d9_ExecSecureObjects.md",
+    "matched_imports": [
+      "ADVAPI32!BuildTrusteeWithSidW",
+      "ADVAPI32!GetNamedSecurityInfoW",
+      "ADVAPI32!GetSecurityDescriptorControl",
+      "ADVAPI32!SetEntriesInAclW",
+      "ADVAPI32!SetNamedSecurityInfoW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree",
+      "KERNEL32!lstrcmpW"
+    ],
+    "matched_strings": [
+      "CreateFolder",
+      "ServiceInstall",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\secureobj.cpp",
+      "Securing Object: %ls Type: %ls User: %ls",
+      "LocalService",
+      "NetworkService",
+      "failed to get sid for account: %ls%ls%ls",
+      "failed to get security info for object: %ls",
+      "failed to get security descriptor control for object: %ls",
+      "failed to add ACLs for object: %ls",
+      "failed to set security info for object: %ls"
+    ],
+    "name": "ExecSecureObjects",
+    "prototype": "int __stdcall(SE_OBJECT_TYPE ObjectType)",
+    "rank_score": 3640,
+    "size": 1538,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "sub_1000BDBD",
+    "ea": "0x1000bdbd",
+    "function_file": "functions/1000bdbd_sub_1000BDBD.md",
+    "matched_imports": [
+      "ADVAPI32!AdjustTokenPrivileges",
+      "ADVAPI32!LookupPrivilegeValueW",
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessTimes",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!OpenProcess"
+    ],
+    "matched_strings": [
+      "SeDebugPrivilege"
+    ],
+    "name": "sub_1000BDBD",
+    "prototype": "",
+    "rank_score": 3465,
+    "size": 769,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "sub_1000530D",
+    "ea": "0x1000530d",
+    "function_file": "functions/1000530d_sub_1000530D.md",
+    "matched_imports": [
+      "ADVAPI32!AdjustTokenPrivileges",
+      "ADVAPI32!ChangeServiceConfig2W",
+      "ADVAPI32!LookupPrivilegeValueW",
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\serviceconfig.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\serviceconfig.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\serviceconfig.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\serviceconfig.cpp",
+      "Failed to get process token.",
+      "SeShutdownPrivilege",
+      "Failed to get shutdown privilege LUID.",
+      "Failed to allocate memory for empty previous privileges.",
+      "Failed to allocate memory for previous privileges.",
+      "WARNING: Service \"%ls\" is not configurable on this server and will not be set.",
+      "Cannot change service configuration. Error: %ls"
+    ],
+    "name": "sub_1000530D",
+    "prototype": "",
+    "rank_score": 3397,
+    "size": 791,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_1000FD86",
+    "ea": "0x1000fd86",
+    "function_file": "functions/1000fd86_sub_1000FD86.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreatePipe",
+      "KERNEL32!DuplicateHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "Failed to create output pipe",
+      "Failed to create input pipe",
+      "Failed to duplicate write handle"
+    ],
+    "name": "sub_1000FD86",
+    "prototype": "",
+    "rank_score": 3148,
+    "size": 597,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 0,
+    "demangled": "ExecServiceConfig",
+    "ea": "0x1000582e",
+    "function_file": "functions/1000582e_ExecServiceConfig.md",
+    "matched_imports": [
+      "ADVAPI32!CloseServiceHandle",
+      "ADVAPI32!OpenSCManagerW",
+      "ADVAPI32!QueryServiceConfig2W",
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "ExecServiceConfig",
+      "Failed to read encoding key from CustomActionData.",
+      "Failed to open rollback CustomAction script.",
+      "Configuring Service: %ls",
+      "Failed to get service: %ls",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\serviceconfig.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\serviceconfig.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\serviceconfig.cpp",
+      "Failed to get current service config info.",
+      "failed to allocate memory for service failure actions.",
+      "failed to Query Service.",
+      "Failed to add service name to Rollback Log",
+      "failed to add data to Rollback CustomActionData",
+      "Failed to configure service: %ls"
+    ],
+    "name": "ExecServiceConfig",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 2945,
+    "size": 1586,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WixQueryOsDirs",
+    "ea": "0x100028f4",
+    "function_file": "functions/100028f4_WixQueryOsDirs.md",
+    "matched_imports": [
+      "SHELL32!SHGetFolderPathW"
+    ],
+    "matched_strings": [
+      "WIX_DIR_COMMON_ADMINTOOLS",
+      "WIX_DIR_COMMON_ALTSTARTUP",
+      "WIX_DIR_COMMON_DOCUMENTS",
+      "WIX_DIR_COMMON_FAVORITES",
+      "WIX_DIR_COMMON_MUSIC",
+      "WIX_DIR_COMMON_PICTURES",
+      "WIX_DIR_COMMON_VIDEO",
+      "WIX_DIR_INTERNET_CACHE"
+    ],
+    "name": "WixQueryOsDirs",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 2753,
+    "size": 903,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "WixWaitForEvent",
+    "ea": "0x10006e5d",
+    "function_file": "functions/10006e5d_WixWaitForEvent.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateEventW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree",
+      "KERNEL32!WaitForMultipleObjects",
+      "USER32!IsWindow",
+      "USER32!PostMessageW"
+    ],
+    "matched_strings": [
+      "Failed to create message window.",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\test.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\test.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\test.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\test.cpp",
+      "Failed to create the security descriptor for the events.",
+      "Failed to create the Global\\WixWaitForEventFail event.",
+      "Failed to create the Global\\WixWaitForEventSucceed event."
+    ],
+    "name": "WixWaitForEvent",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 2372,
+    "size": 553,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_1000D849",
+    "ea": "0x1000d849",
+    "function_file": "functions/1000d849_sub_1000D849.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GlobalAddAtomW",
+      "KERNEL32!GlobalDeleteAtom",
+      "KERNEL32!GlobalFindAtomW",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "Failed to create WcaVerboseLogging global atom.",
+      "Failed to delete WcaVerboseLogging global atom.",
+      "Failed to create WcaNotVerboseLogging global atom.",
+      "Failed to delete WcaNotVerboseLogging global atom."
+    ],
+    "name": "sub_1000D849",
+    "prototype": "int __stdcall(DWORD dwErrCode)",
+    "rank_score": 2276,
+    "size": 354,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "sub_1000F4BB",
+    "ea": "0x1000f4bb",
+    "function_file": "functions/1000f4bb_sub_1000F4BB.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "KERNEL32!FindNextFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetTempPathW",
+      "KERNEL32!GetWindowsDirectoryW"
+    ],
+    "matched_strings": [
+      "Failed to get temp path.",
+      "Failed to get windows path.",
+      "\\Installer\\",
+      "Failed to concat Installer directory on windows path string.",
+      "Failed to allocate wildcard path to ca scripts.",
+      "Failed to allocate path to clean up CAScript file: %ls, hr: 0x%x"
+    ],
+    "name": "sub_1000F4BB",
+    "prototype": "",
+    "rank_score": 2274,
+    "size": 567,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "sub_10010343",
+    "ea": "0x10010343",
+    "function_file": "functions/10010343_sub_10010343.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateProcessW",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetExitCodeProcess",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetPriorityClass",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [
+      "Failed to create output pipes",
+      "Command failed to execute.",
+      "Command line returned an error."
+    ],
+    "name": "sub_10010343",
+    "prototype": "int __stdcall(LPWSTR lpCommandLine, DWORD dwMilliseconds, int, int)",
+    "rank_score": 2152,
+    "size": 454,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "StartAddress",
+    "ea": "0x10006cb8",
+    "function_file": "functions/10006cb8_StartAddress.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetEvent",
+      "USER32!CreateWindowExW",
+      "USER32!DispatchMessageW",
+      "USER32!GetMessageW",
+      "USER32!IsDialogMessageW",
+      "USER32!RegisterClassW",
+      "USER32!TranslateMessage",
+      "USER32!UnregisterClassW"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\test.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\test.cpp",
+      "Failed to create window."
+    ],
+    "name": "StartAddress",
+    "prototype": "DWORD __stdcall(LPVOID lpThreadParameter)",
+    "rank_score": 2145,
+    "size": 341,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 29,
+    "caller_count": 0,
+    "demangled": "ExecXmlFile",
+    "ea": "0x100075d0",
+    "function_file": "functions/100075d0_ExecXmlFile.md",
+    "matched_imports": [
+      "KERNEL32!Sleep",
+      "OLEAUT32!SysAllocString",
+      "OLEAUT32!SysFreeString",
+      "OLEAUT32!VariantClear",
+      "OLEAUT32!VariantInit"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\xmlfile.cpp",
+      "XPath",
+      "ExecXmlFile",
+      "failed to initialize xml utilities",
+      "failed to read file name from custom action data",
+      "Custom action was told to act on a 64-bit component, but the custom action process is not running in WOW.",
+      "Custom action was told to act on a 64-bit component, but was unable to disable filesystem redirection through the Wow64 API.",
+      "Configuring Xml File: %ls",
+      "failed in querying IXMLDOMDocument2 interface",
+      "Error: current MSXML version does not support xpath query.",
+      "failed to load XML file: %ls",
+      "failed to find any nodes: %ls in XML file: %ls",
+      "failed to set text to: %ls for element %ls.  Make sure that XPath points to an element.",
+      "failed to find node: %ls in XML file: %ls",
+      "failed to create child element: %ls",
+      "failed to remove attribute: %ls",
+      "failed to delete child node: %ls",
+      "Failed to save changes to XML file: %ls",
+      "Failed to save changes to XML file: %ls",
+      "Unable to save changes to XML file: %ls, retry attempt: %x"
+    ],
+    "name": "ExecXmlFile",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 1990,
+    "size": 1980,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "RollbackServiceConfig",
+    "ea": "0x10005e60",
+    "function_file": "functions/10005e60_RollbackServiceConfig.md",
+    "matched_imports": [
+      "ADVAPI32!CloseServiceHandle",
+      "ADVAPI32!OpenSCManagerW",
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "Failed to read encoding key from CustomActionData.",
+      "Failed to open rollback CustomAction script.",
+      "Failed to get service: %ls",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\serviceconfig.cpp",
+      "Failed to configure service: %ls",
+      "RollbackServiceConfig",
+      "Failed to initialize 'RollbackServiceConfig'.",
+      "Failed to read rollback script into CustomAction data.",
+      "Reconfiguring Service: %ls"
+    ],
+    "name": "RollbackServiceConfig",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 1833,
+    "size": 936,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "ExecSecureObjectsRollback",
+    "ea": "0x10004adb",
+    "function_file": "functions/10004adb_ExecSecureObjectsRollback.md",
+    "matched_imports": [
+      "ADVAPI32!GetSecurityDescriptorControl",
+      "ADVAPI32!GetSecurityDescriptorDacl",
+      "ADVAPI32!SetNamedSecurityInfoW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\secureobj.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\secureobj.cpp",
+      "failed to get security descriptor control for object: %ls",
+      "ExecSecureObjectsRollback",
+      "failed to convert security descriptor string to a valid security descriptor",
+      "failed to get security descriptor's DACL - error code: %d",
+      "security descriptor does not contain a DACL",
+      "failed to set security info for object: %ls error code: %d"
+    ],
+    "name": "ExecSecureObjectsRollback",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 1798,
+    "size": 714,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "sub_1000380D",
+    "ea": "0x1000380d",
+    "function_file": "functions/1000380d_sub_1000380D.md",
+    "matched_imports": [
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "KERNEL32!FindNextFileW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "Path is a junction; skipping: %ls",
+      "Failed to allocate file search string in path: %S",
+      "Search path not found: %ls",
+      "Failed to find all files in path: %S",
+      "Failed to recurse path: %S",
+      "Failed while looping through files in directory: %S",
+      "Failed to allocate Property for RemoveFile table with property: %S.",
+      "Failed to set Property: %S with path: %S",
+      "RemoveFile",
+      "RemoveFile",
+      "Failed to add row to remove all files for WixRemoveFolderEx row: %S under path:",
+      "Failed to add row to remove folder for WixRemoveFolderEx row: %S under path: %S"
+    ],
+    "name": "sub_1000380D",
+    "prototype": "int __stdcall(LPCWSTR lpFileName, int, int, int, int, _DWORD *, int, int)",
+    "rank_score": 1716,
+    "size": 878,
+    "tags": [
+      "file_ops",
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "ExecXmlConfigRollback",
+    "ea": "0x1000942a",
+    "function_file": "functions/1000942a_ExecXmlConfigRollback.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [
+      "failed to read file name from custom action data",
+      "failed to read component bitness from custom action data",
+      "failed to read file contents from custom action data",
+      "Custom action was told to rollback a 64-bit component, but was unable to Disable Filesystem Redirection through the Wow64 API.",
+      "failed to open file: %ls",
+      "failed to write to file: %ls",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\xmlconfig.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\xmlconfig.cpp",
+      "ExecXmlConfigRollback",
+      "Custom action was told to rollback a 64-bit component, but the Wow64 API is unavailable."
+    ],
+    "name": "ExecXmlConfigRollback",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 1673,
+    "size": 617,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "ExecXmlFileRollback",
+    "ea": "0x10007d8c",
+    "function_file": "functions/10007d8c_ExecXmlFileRollback.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\xmlfile.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\xmlfile.cpp",
+      "failed to read file name from custom action data",
+      "ExecXmlFileRollback",
+      "failed to read component bitness from custom action data",
+      "failed to read file contents from custom action data",
+      "Custom action was told to rollback a 64-bit component, but the custom action process is not running in WOW.",
+      "Custom action was told to rollback a 64-bit component, but was unable to Disable Filesystem Redirection through the Wow64 API.",
+      "failed to open file: %ls",
+      "failed to write to file: %ls"
+    ],
+    "name": "ExecXmlFileRollback",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 1673,
+    "size": 617,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "sub_1000B616",
+    "ea": "0x1000b616",
+    "function_file": "functions/1000b616_sub_1000B616.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetFileSizeEx",
+      "KERNEL32!GetLastError",
+      "KERNEL32!ReadFile",
+      "KERNEL32!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000B616",
+    "prototype": "int __stdcall(int, int, LPCWSTR lpFileName, DWORD nNumberOfBytesToRead, LONG lDistanceToMove, SIZE_T dwBytes, int)",
+    "rank_score": 1622,
+    "size": 701,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "WixShellExecBinary",
+    "ea": "0x100069b8",
+    "function_file": "functions/100069b8_WixShellExecBinary.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetTempPathW",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\shellexecca.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\shellexecca.cpp",
+      "Failed to open new temp file: %ls",
+      "Failed to write data to new temp file: %ls"
+    ],
+    "name": "WixShellExecBinary",
+    "prototype": "int __stdcall(DWORD NumberOfBytesWritten)",
+    "rank_score": 1606,
+    "size": 511,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 0,
+    "demangled": "WixSchedInternetShortcuts",
+    "ea": "0x100020f7",
+    "function_file": "functions/100020f7_WixSchedInternetShortcuts.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance",
+      "ole32!CoInitialize",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [
+      "failed to initialize COM",
+      "failed to create an instance of IUniformResourceLocatorW, skipping shortcut creation",
+      "failed to create an instance of IShellLinkW, skipping shortcut creation",
+      "failed to open view on WixInternetShortcut table",
+      "failed to get shortcut component",
+      "failed to get shortcut directory",
+      "Skipping shortcut for null-action component '%ls'",
+      "Adding folder '%ls', component '%ls' to the CreateFolder table",
+      "CreateFolder",
+      "Folder '%ls' already exists in the CreateFolder table; the above error is harmless",
+      "Couldn't add temporary CreateFolder row",
+      "failed to allocate string for shortcut directory",
+      "failed to write shortcut path to custom action data",
+      "failed to write shortcut target to custom action data",
+      "failed to write shortcut attributes to custom action data",
+      "failed to write icon file to custom action data",
+      "failed to write icon index to custom action data",
+      "WixRollbackInternetShortcuts",
+      "failed to set WixRollbackInternetShortcuts rollback custom action data",
+      "WixCreateInternetShortcuts",
+      "failed to set WixCreateInternetShortcuts custom action data"
+    ],
+    "name": "WixSchedInternetShortcuts",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 1600,
+    "size": 1207,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "sub_1000C3DF",
+    "ea": "0x1000c3df",
+    "function_file": "functions/1000c3df_sub_1000C3DF.md",
+    "matched_imports": [
+      "KERNEL32!ExpandEnvironmentStringsW",
+      "KERNEL32!GetFullPathNameW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\pathutil.cpp"
+    ],
+    "name": "sub_1000C3DF",
+    "prototype": "int __stdcall(int, LPCWSTR lpSrc, LPWSTR FilePart)",
+    "rank_score": 1562,
+    "size": 617,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "sub_1000FC44",
+    "ea": "0x1000fc44",
+    "function_file": "functions/1000fc44_sub_1000FC44.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetFilePointer",
+      "KERNEL32!WriteFile",
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [
+      "Failed to move file pointer to end of file.",
+      "Failed to write data to ca script."
+    ],
+    "name": "sub_1000FC44",
+    "prototype": "int __stdcall(int, LPCWSTR lpString)",
+    "rank_score": 1497,
+    "size": 322,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_10006BB7",
+    "ea": "0x10006bb7",
+    "function_file": "functions/10006bb7_sub_10006BB7.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateEventW",
+      "KERNEL32!CreateThread",
+      "KERNEL32!GetLastError",
+      "KERNEL32!WaitForMultipleObjects"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\test.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\test.cpp",
+      "Failed to create initialization event.",
+      "Failed to create the UI thread."
+    ],
+    "name": "sub_10006BB7",
+    "prototype": "",
+    "rank_score": 1476,
+    "size": 257,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "sub_1000F9CC",
+    "ea": "0x1000f9cc",
+    "function_file": "functions/1000f9cc_sub_1000F9CC.md",
+    "matched_imports": [
+      "KERNEL32!GetFileSizeEx",
+      "KERNEL32!GetLastError",
+      "KERNEL32!ReadFile",
+      "KERNEL32!SetFilePointer"
+    ],
+    "matched_strings": [
+      "Invalid data read from ca script.",
+      "Failed to allocate memory to read in ca script.",
+      "Failed to read from ca script.",
+      "Failed to completely read ca script.",
+      "Failed to copy ca script."
+    ],
+    "name": "sub_1000F9CC",
+    "prototype": "",
+    "rank_score": 1442,
+    "size": 515,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "sub_1000CA52",
+    "ea": "0x1000ca52",
+    "function_file": "functions/1000ca52_sub_1000CA52.md",
+    "matched_imports": [
+      "KERNEL32!ExitProcess",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleHandleA",
+      "KERNEL32!GetProcAddress",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp",
+      "kernel32.dll"
+    ],
+    "name": "sub_1000CA52",
+    "prototype": "int __stdcall(OLECHAR *psz, int, int)",
+    "rank_score": 1428,
+    "size": 410,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "sub_100042BE",
+    "ea": "0x100042be",
+    "function_file": "functions/100042be_sub_100042BE.md",
+    "matched_imports": [
+      "ADVAPI32!GetNamedSecurityInfoW",
+      "ADVAPI32!GetSecurityDescriptorControl",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "Unable to schedule rollback for object: %ls",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\secureobj.cpp",
+      "Unable to schedule rollback for object (failed to get security descriptor control): %ls",
+      "Unable to schedule rollback for object (failed to convert security descriptor to a valid security descriptor string): %ls",
+      "failed to add object data to rollback CustomActionData",
+      "failed to add table name to rollback CustomActionData",
+      "failed to add security info data to rollback CustomActionData",
+      "failed to add data to rollbackCustomActionData",
+      "failed to add data to rollback CustomActionData",
+      "ExecSecureObjectsRollback",
+      "failed to schedule ExecSecureObjectsRollback for item: %ls of type: %ls"
+    ],
+    "name": "sub_100042BE",
+    "prototype": "int __stdcall(LPCWSTR pObjectName, LPCWSTR lpString2)",
+    "rank_score": 1305,
+    "size": 539,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_1000BC7E",
+    "ea": "0x1000bc7e",
+    "function_file": "functions/1000bc7e_sub_1000BC7E.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "rstrtmgr.dll"
+    ],
+    "name": "sub_1000BC7E",
+    "prototype": "",
+    "rank_score": 1066,
+    "size": 269,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "sub_1000F732",
+    "ea": "0x1000f732",
+    "function_file": "functions/1000f732_sub_1000F732.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetFilePointer"
+    ],
+    "matched_strings": [
+      "Failed to open CaScript: %ls"
+    ],
+    "name": "sub_1000F732",
+    "prototype": "",
+    "rank_score": 1059,
+    "size": 345,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "SchedXmlFile",
+    "ea": "0x10007ff5",
+    "function_file": "functions/10007ff5_SchedXmlFile.md",
+    "matched_imports": [
+      "KERNEL32!lstrcmpW"
+    ],
+    "matched_strings": [
+      "failed to write file indicator to custom action data",
+      "SchedXmlFile",
+      "Skipping SchedXmlFile because XmlFile table not present",
+      "failed to read XmlFile table",
+      "failed to write delete element action indicator to custom action data",
+      "failed to write delete value action indicator to custom action data",
+      "failed to write Preserve Date indicator to custom action data",
+      "failed to write Don't Preserve Date indicator to custom action data",
+      "failed to write uninstall change data",
+      "failed to copy file name",
+      "failed to write create element action indicator to custom action data",
+      "failed to write builkwrite value action indicator to custom action data",
+      "failed to write change data",
+      "ExecXmlFile",
+      "failed to schedule ExecXmlFile action"
+    ],
+    "name": "SchedXmlFile",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 1052,
+    "size": 1019,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "sub_1000F331",
+    "ea": "0x1000f331",
+    "function_file": "functions/1000f331_sub_1000F331.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetTempPathW",
+      "KERNEL32!GetWindowsDirectoryW"
+    ],
+    "matched_strings": [
+      "Failed to get temp path.",
+      "Failed to get windows path.",
+      "\\Installer\\",
+      "Failed to concat Installer directory on windows path string.",
+      "Failed to allocate path to ca script."
+    ],
+    "name": "sub_1000F331",
+    "prototype": "",
+    "rank_score": 1023,
+    "size": 394,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "sub_1000B556",
+    "ea": "0x1000b556",
+    "function_file": "functions/1000b556_sub_1000B556.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetFileTime",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000B556",
+    "prototype": "int __stdcall(LPCWSTR lpFileName, LPFILETIME lpCreationTime, LPFILETIME lpLastAccessTime, LPFILETIME lpLastWriteTime)",
+    "rank_score": 1017,
+    "size": 164,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "sub_1000B8D3",
+    "ea": "0x1000b8d3",
+    "function_file": "functions/1000b8d3_sub_1000B8D3.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetFileTime"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000B8D3",
+    "prototype": "int __stdcall(LPCWSTR lpFileName, FILETIME *lpCreationTime, FILETIME *lpLastAccessTime, FILETIME *lpLastWriteTime)",
+    "rank_score": 1017,
+    "size": 164,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "sub_1000B0B5",
+    "ea": "0x1000b0b5",
+    "function_file": "functions/1000b0b5_sub_1000B0B5.md",
+    "matched_imports": [
+      "ADVAPI32!GetTokenInformation",
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000B0B5",
+    "prototype": "int __stdcall(HANDLE ProcessHandle, int)",
+    "rank_score": 1014,
+    "size": 192,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "EnumFunc",
+    "ea": "0x10001228",
+    "function_file": "functions/10001228_EnumFunc.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError",
+      "USER32!GetWindowThreadProcessId",
+      "USER32!SendMessageTimeoutW"
+    ],
+    "matched_strings": [],
+    "name": "EnumFunc",
+    "prototype": "BOOL __stdcall(HWND, LPARAM)",
+    "rank_score": 1013,
+    "size": 195,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 27,
+    "caller_count": 0,
+    "demangled": "ExecXmlConfig",
+    "ea": "0x10008ba5",
+    "function_file": "functions/10008ba5_ExecXmlConfig.md",
+    "matched_imports": [
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [
+      "failed to initialize xml utilities",
+      "failed to read file name from custom action data",
+      "Custom action was told to act on a 64-bit component, but the custom action process is not running in WOW.",
+      "Custom action was told to act on a 64-bit component, but was unable to disable filesystem redirection through the Wow64 API.",
+      "Configuring Xml File: %ls",
+      "failed to load XML file: %ls",
+      "failed to set text to: %ls for element %ls.  Make sure that XPath points to an element.",
+      "failed to find node: %ls in XML file: %ls",
+      "failed to create child element: %ls",
+      "failed to remove attribute: %ls",
+      "Failed to save changes to XML file: %ls",
+      "Failed to save changes to XML file: %ls",
+      "Unable to save changes to XML file: %ls, retry attempt: %x",
+      "ExecXmlConfig",
+      "failed to query verify path: %ls",
+      "failed to remove created child element",
+      "Failed to select path %ls for deleting.  Skipping...",
+      "No VerifyPath specified for delete element of ID: %ls"
+    ],
+    "name": "ExecXmlConfig",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 1002,
+    "size": 2181,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "sub_1000D1F7",
+    "ea": "0x1000d1f7",
+    "function_file": "functions/1000d1f7_sub_1000D1F7.md",
+    "matched_imports": [
+      "OLEAUT32!SysAllocString",
+      "OLEAUT32!SysFreeString",
+      "OLEAUT32!VariantInit"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp"
+    ],
+    "name": "sub_1000D1F7",
+    "prototype": "int __stdcall(int, OLECHAR *psz, OLECHAR *)",
+    "rank_score": 956,
+    "size": 303,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "sub_1000BA7F",
+    "ea": "0x1000ba7f",
+    "function_file": "functions/1000ba7f_sub_1000BA7F.md",
+    "matched_imports": [
+      "ADVAPI32!LookupAccountNameW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\aclutil.cpp",
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\aclutil.cpp"
+    ],
+    "name": "sub_1000BA7F",
+    "prototype": "int __stdcall(LPCWSTR lpSystemName, LPCWSTR lpAccountName, int)",
+    "rank_score": 910,
+    "size": 377,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "sub_10010583",
+    "ea": "0x10010583",
+    "function_file": "functions/10010583_sub_10010583.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernel32.dll",
+      "failed to get handle to kernel32.dll"
+    ],
+    "name": "sub_10010583",
+    "prototype": "int(void)",
+    "rank_score": 899,
+    "size": 195,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "sub_1000570F",
+    "ea": "0x1000570f",
+    "function_file": "functions/1000570f_sub_1000570F.md",
+    "matched_imports": [
+      "ADVAPI32!OpenServiceW",
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "Service '%ls' does not exist on this system.",
+      "Failed to get handle to the service '%ls'. Error: %ls"
+    ],
+    "name": "sub_1000570F",
+    "prototype": "int __stdcall(SC_HANDLE hSCManager, LPCWSTR lpServiceName, DWORD dwDesiredAccess, int)",
+    "rank_score": 895,
+    "size": 162,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "sub_100086C2",
+    "ea": "0x100086c2",
+    "function_file": "functions/100086c2_sub_100086C2.md",
+    "matched_imports": [
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [
+      "failed to allocate memory for new xml file change list element",
+      "failed to add xml file change to list",
+      "failed to copy xml file path",
+      "failed to copy name of element",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\xmlconfig.cpp",
+      "failed to open view on XmlConfig table",
+      "failed to get XmlConfig record Id",
+      "failed to copy XmlConfig record Id",
+      "failed to get component name for XmlConfig: %ls",
+      "failed to copy component id",
+      "failed to get install state for component id",
+      "failed to get xml file for XmlConfig: %ls",
+      "failed to get XmlConfig flags for XmlConfig: %ls",
+      "failed to get Element Path for XmlConfig: %ls",
+      "failed to get Verify Path for XmlConfig: %ls",
+      "failed to get Name for XmlConfig: %ls",
+      "failed to get Value for XmlConfig: %ls",
+      "failed to get component attributes for XmlConfig: %ls"
+    ],
+    "name": "sub_100086C2",
+    "prototype": "int __stdcall(int, wchar_t *Str)",
+    "rank_score": 894,
+    "size": 943,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "WixQueryOsInfo",
+    "ea": "0x10002cd0",
+    "function_file": "functions/10002cd0_WixQueryOsInfo.md",
+    "matched_imports": [
+      "KERNEL32!GetVersionExW",
+      "USER32!GetSystemMetrics"
+    ],
+    "matched_strings": [
+      "WIX_SUITE_COMMUNICATIONS",
+      "WIX_SUITE_SECURITY_APPLIANCE",
+      "WIX_SUITE_COMPUTE_SERVER"
+    ],
+    "name": "WixQueryOsInfo",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 851,
+    "size": 616,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "sub_1001DD18",
+    "ea": "0x1001dd18",
+    "function_file": "functions/1001dd18_sub_1001DD18.md",
+    "matched_imports": [
+      "KERNEL32!GetConsoleCP",
+      "KERNEL32!GetLastError",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "sub_1001DD18",
+    "prototype": "",
+    "rank_score": 836,
+    "size": 940,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "sub_100026EB",
+    "ea": "0x100026eb",
+    "function_file": "functions/100026eb_sub_100026EB.md",
+    "matched_imports": [
+      "ADVAPI32!LookupAccountSidW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "Failed to get SID; skipping account %ls",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\osinfo.cpp",
+      "Failed to look up account for SID; skipping account %ls.",
+      "Failed write domain\\name property",
+      "Failed write name-only property"
+    ],
+    "name": "sub_100026EB",
+    "prototype": "int __stdcall(WELL_KNOWN_SID_TYPE WellKnownSidType, LPCWSTR szName, int)",
+    "rank_score": 833,
+    "size": 406,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 2,
+    "demangled": "sub_10003E9C",
+    "ea": "0x10003e9c",
+    "function_file": "functions/10003e9c_sub_10003E9C.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ServiceInstall",
+      "Registry",
+      "failed to open ServiceInstall table to secure object",
+      "failed to open view on ServiceInstall table",
+      "failed to execute view on ServiceInstall table",
+      "failed to fetch ServiceInstall row for secure object",
+      "failed to get service name for secure object: %ls",
+      "failed to get target path for directory id: %ls",
+      "failed to create formatted string for securing file object: %ls",
+      "failed to get file path from formatted string: %ls for secure object: %ls",
+      "failed to open Registry table to secure object",
+      "failed to open view on Registry table",
+      "failed to execute view on Registry table",
+      "failed to fetch Registry row for secure object",
+      "failed to allocate target registry string with HKLM root",
+      "failed to allocate target registry string with HKCU root",
+      "failed to allocate target registry string with HKCR root",
+      "failed to allocate target registry string with HKU root",
+      "Unknown registry key root specified for secure object: '%ls' root: %d"
+    ],
+    "name": "sub_10003E9C",
+    "prototype": "int __stdcall(int, LPCWSTR szValue, DWORD pcchPathBuf)",
+    "rank_score": 827,
+    "size": 964,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_1000B453",
+    "ea": "0x1000b453",
+    "function_file": "functions/1000b453_sub_1000B453.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetFileAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000B453",
+    "prototype": "int __stdcall(LPCWSTR lpFileName)",
+    "rank_score": 815,
+    "size": 144,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "try_get_first_available_module(`anonymous namespace'::module_id const * const,`anonymous namespace'::module_id const * const)",
+    "ea": "0x100128ce",
+    "function_file": "functions/100128ce_try_get_first_available_module_anonymous_namespace_module_id_const_const_anonymous_namespace_module_id_const_c.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LoadLibraryExW"
+    ],
+    "matched_strings": [],
+    "name": "?try_get_first_available_module@@YAPAUHINSTANCE__@@QBW4module_id@?A0x03f7da57@@0@Z",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 196,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "try_get_first_available_module(`anonymous namespace'::module_id const * const,`anonymous namespace'::module_id const * const)",
+    "ea": "0x1001a175",
+    "function_file": "functions/1001a175_try_get_first_available_module_anonymous_namespace_module_id_const_const_anonymous_namespace_module_id_const_c.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LoadLibraryExW"
+    ],
+    "matched_strings": [],
+    "name": "?try_get_first_available_module@@YAPAUHINSTANCE__@@QBW4module_id@?A0x391cf84c@@0@Z",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 201,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "___get_entropy",
+    "ea": "0x10010c2e",
+    "function_file": "functions/10010c2e_get_entropy.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "___get_entropy",
+    "prototype": "",
+    "rank_score": 811,
+    "size": 77,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "___raise_securityfailure",
+    "ea": "0x10010b0d",
+    "function_file": "functions/10010b0d_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "___raise_securityfailure",
+    "prototype": "int __cdecl(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 811,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "sub_1000B1DF",
+    "ea": "0x1000b1df",
+    "function_file": "functions/1000b1df_sub_1000B1DF.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError",
+      "KERNEL32!OpenProcess",
+      "KERNEL32!WaitForMultipleObjects"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000B1DF",
+    "prototype": "int __stdcall(int, int, DWORD dwMilliseconds)",
+    "rank_score": 806,
+    "size": 249,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "WixCreateInternetShortcuts",
+    "ea": "0x10001e21",
+    "function_file": "functions/10001e21_WixCreateInternetShortcuts.md",
+    "matched_imports": [
+      "ole32!CoInitialize",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [
+      "failed to initialize COM",
+      "WixCreateInternetShortcuts",
+      "failed to initialize WixCreateInternetShortcuts",
+      "failed to read shortcut path from custom action data",
+      "failed to read shortcut target from custom action data",
+      "failed to read shortcut attributes from custom action data",
+      "failed to read shortcut icon path from custom action data",
+      "failed to read shortcut icon index from custom action data",
+      "failed to create Internet shortcut"
+    ],
+    "name": "WixCreateInternetShortcuts",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 794,
+    "size": 453,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "sub_1000722E",
+    "ea": "0x1000722e",
+    "function_file": "functions/1000722e_sub_1000722E.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to get install state for Component: %ls",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\xmlfile.cpp",
+      "failed to allocate memory for new xml file change list element",
+      "XmlFile",
+      "failed to open view on XmlFile table",
+      "failed to add xml file change to list",
+      "failed to get XmlFile record Id",
+      "failed to copy XmlFile record Id",
+      "failed to get component name for XmlFile: %ls",
+      "failed to get xml file for XmlFile: %ls",
+      "failed to copy xml file path",
+      "failed to get XmlFile flags for XmlFile: %ls",
+      "failed to get XPath for XmlFile: %ls",
+      "failed to get Name for XmlFile: %ls",
+      "failed to copy name of element",
+      "failed to get Value for XmlFile: %ls",
+      "failed to get component attributes for XmlFile: %ls"
+    ],
+    "name": "sub_1000722E",
+    "prototype": "int __stdcall(int, MSIHANDLE hRecord)",
+    "rank_score": 753,
+    "size": 801,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "sub_100025AE",
+    "ea": "0x100025ae",
+    "function_file": "functions/100025ae_sub_100025AE.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\osinfo.cpp",
+      "Failed write property",
+      "dwmapi.dll",
+      "DwmIsCompositionEnabled",
+      "Unable to obtain function information, skipping Composition Enabled check.",
+      "Failed to retrieve Composition state",
+      "WIX_DWM_COMPOSITION_ENABLED"
+    ],
+    "name": "sub_100025AE",
+    "prototype": "",
+    "rank_score": 717,
+    "size": 174,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "sub_1000FFDB",
+    "ea": "0x1000ffdb",
+    "function_file": "functions/1000ffdb_sub_1000FFDB.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!ReadFile"
+    ],
+    "matched_strings": [
+      "Failed to read from handle.",
+      "Failed to allocate copy of string"
+    ],
+    "name": "sub_1000FFDB",
+    "prototype": "int __stdcall(int, HANDLE hFile)",
+    "rank_score": 713,
+    "size": 872,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "sub_1000D6EA",
+    "ea": "0x1000d6ea",
+    "function_file": "functions/1000d6ea_sub_1000D6EA.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "Software\\Policies\\Microsoft\\Windows\\Installer"
+    ],
+    "name": "sub_1000D6EA",
+    "prototype": "",
+    "rank_score": 675,
+    "size": 177,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "sub_1000CE26",
+    "ea": "0x1000ce26",
+    "function_file": "functions/1000ce26_sub_1000CE26.md",
+    "matched_imports": [
+      "OLEAUT32!SysAllocString",
+      "OLEAUT32!VariantClear",
+      "OLEAUT32!VariantInit"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp"
+    ],
+    "name": "sub_1000CE26",
+    "prototype": "int __stdcall(OLECHAR *psz, char, int)",
+    "rank_score": 658,
+    "size": 303,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "sub_1000F8CE",
+    "ea": "0x1000f8ce",
+    "function_file": "functions/1000f8ce_sub_1000F8CE.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "Failed to open CaScript: %ls"
+    ],
+    "name": "sub_1000F8CE",
+    "prototype": "",
+    "rank_score": 658,
+    "size": 254,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "sub_10004260",
+    "ea": "0x10004260",
+    "function_file": "functions/10004260_sub_10004260.md",
+    "matched_imports": [
+      "KERNEL32!lstrcmpW"
+    ],
+    "matched_strings": [
+      "CreateFolder",
+      "ServiceInstall",
+      "Registry"
+    ],
+    "name": "sub_10004260",
+    "prototype": "int __stdcall(LPCWSTR lpString2)",
+    "rank_score": 654,
+    "size": 94,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "try_cor_exit_process(uint)",
+    "ea": "0x10016340",
+    "function_file": "functions/10016340_try_cor_exit_process_uint.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetModuleHandleExW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "mscoree.dll"
+    ],
+    "name": "?try_cor_exit_process@@YAXI@Z",
+    "prototype": "void __cdecl(unsigned int)",
+    "rank_score": 654,
+    "size": 85,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "sub_10003E3C",
+    "ea": "0x10003e3c",
+    "function_file": "functions/10003e3c_sub_10003E3C.md",
+    "matched_imports": [
+      "KERNEL32!lstrcmpW"
+    ],
+    "matched_strings": [
+      "CreateFolder",
+      "ServiceInstall",
+      "Registry"
+    ],
+    "name": "sub_10003E3C",
+    "prototype": "int __stdcall(LPCWSTR lpString2)",
+    "rank_score": 653,
+    "size": 96,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "SchedXmlConfig",
+    "ea": "0x10009693",
+    "function_file": "functions/10009693_SchedXmlConfig.md",
+    "matched_imports": [
+      "KERNEL32!lstrcmpW"
+    ],
+    "matched_strings": [
+      "failed to write Preserve Date indicator to custom action data",
+      "failed to copy file name",
+      "failed to write change data",
+      "SchedXmlConfig",
+      "failed to read XmlConfig table",
+      "failed to process XmlConfig changes",
+      "Invalid flag configuration.  Cannot delete a fragment node.",
+      "failed to write action indicator custom action data",
+      "ExecXmlConfig",
+      "failed to schedule ExecXmlConfig action"
+    ],
+    "name": "SchedXmlConfig",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 652,
+    "size": 707,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "WixRemoveFoldersEx",
+    "ea": "0x10003b7b",
+    "function_file": "functions/10003b7b_WixRemoveFoldersEx.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WixRemoveFoldersEx",
+      "Failed to initialize WixRemoveFoldersEx.",
+      "WixRemoveFolderEx",
+      "WixRemoveFolderEx table doesn't exist, so there are no folders to remove.",
+      "Failed to open view on WixRemoveFolderEx table",
+      "Failed to get remove folder identity.",
+      "Failed to get remove folder component.",
+      "Failed to get remove folder property.",
+      "Failed to get remove folder mode",
+      "Failed to resolve remove folder property: %S for row: %S",
+      "Failed to expand path: %S for row: %S",
+      "Failed to backslash-terminate path: %S",
+      "Recursing path: %S for row: %S.",
+      "Failed while navigating path: %S for row: %S",
+      "Failure occured while processing WixRemoveFolderEx table"
+    ],
+    "name": "WixRemoveFoldersEx",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 652,
+    "size": 705,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "sub_1000265C",
+    "ea": "0x1000265c",
+    "function_file": "functions/1000265c_sub_1000265C.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\osinfo.cpp",
+      "d3d9.dll",
+      "Direct3DCreate9Ex",
+      "Unable to load Direct3DCreateEx function, so the driver is not a WDDM driver.",
+      "Failed write property"
+    ],
+    "name": "sub_1000265C",
+    "prototype": "",
+    "rank_score": 627,
+    "size": 143,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 29,
+    "demangled": "sub_1000AEFF",
+    "ea": "0x1000aeff",
+    "function_file": "functions/1000aeff_sub_1000AEFF.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000AEFF",
+    "prototype": "int __stdcall(LPVOID lpMem)",
+    "rank_score": 626,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "SchedServiceConfig",
+    "ea": "0x10006208",
+    "function_file": "functions/10006208_SchedServiceConfig.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SchedServiceConfig",
+      "Failed to open view on ServiceConfig table.",
+      "Failed to get component name",
+      "Failed to get install state for Component: %ls",
+      "Failed to get name of service.",
+      "Failed to get ServiceConfig.NewService.",
+      "Failed to add NewService data to CustomActionData",
+      "failed to get reset period in days between service restart attempts.",
+      "failed to get command line to run on service failure.",
+      "failed to get message to send to users when server reboots due to service failure.",
+      "RollbackServiceConfig",
+      "failed to schedule RollbackServiceConfig action",
+      "ExecServiceConfig",
+      "failed to schedule ExecServiceConfig action"
+    ],
+    "name": "SchedServiceConfig",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 625,
+    "size": 1031,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "sub_1000AD2C",
+    "ea": "0x1000ad2c",
+    "function_file": "functions/1000ad2c_sub_1000AD2C.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!LoadLibraryW"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000AD2C",
+    "prototype": "",
+    "rank_score": 618,
+    "size": 233,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "unknown_libname_43",
+    "ea": "0x100202d6",
+    "function_file": "functions/100202d6_unknown_libname_43.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!WriteConsoleW"
+    ],
+    "matched_strings": [],
+    "name": "unknown_libname_43",
+    "prototype": "int __cdecl(void *lpBuffer, DWORD nNumberOfCharsToWrite, LPDWORD lpNumberOfCharsWritten)",
+    "rank_score": 614,
+    "size": 85,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "sub_1000CCA3",
+    "ea": "0x1000cca3",
+    "function_file": "functions/1000cca3_sub_1000CCA3.md",
+    "matched_imports": [
+      "ole32!CLSIDFromProgID",
+      "ole32!CoInitialize"
+    ],
+    "matched_strings": [
+      "Msxml2.DOMDocument",
+      "MSXML.DOMDocument"
+    ],
+    "name": "sub_1000CCA3",
+    "prototype": "int(void)",
+    "rank_score": 613,
+    "size": 94,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "__invoke_watson",
+    "ea": "0x10015ccc",
+    "function_file": "functions/10015ccc_invoke_watson.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!IsProcessorFeaturePresent",
+      "KERNEL32!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__invoke_watson",
+    "prototype": "void __cdecl __noreturn(const wchar_t *Expression, const wchar_t *FunctionName, const wchar_t *FileName, unsigned int LineNo, uintptr_t Reserved)",
+    "rank_score": 609,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "sub_10001583",
+    "ea": "0x10001583",
+    "function_file": "functions/10001583_sub_10001583.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!OpenProcess",
+      "KERNEL32!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "sub_10001583",
+    "prototype": "int __stdcall(int, int, UINT uExitCode)",
+    "rank_score": 602,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 38,
+    "demangled": "sub_1000D51F",
+    "ea": "0x1000d51f",
+    "function_file": "functions/1000d51f_sub_1000D51F.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleFileNameW"
+    ],
+    "matched_strings": [
+      "Failed to copy CustomAction log name: %s"
+    ],
+    "name": "sub_1000D51F",
+    "prototype": "int __stdcall(MSIHANDLE hInstall, int)",
+    "rank_score": 500,
+    "size": 390,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "sub_1000BBF8",
+    "ea": "0x1000bbf8",
+    "function_file": "functions/1000bbf8_sub_1000BBF8.md",
+    "matched_imports": [
+      "ADVAPI32!CreateWellKnownSid",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\aclutil.cpp",
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\aclutil.cpp"
+    ],
+    "name": "sub_1000BBF8",
+    "prototype": "int __stdcall(WELL_KNOWN_SID_TYPE WellKnownSidType, int)",
+    "rank_score": 497,
+    "size": 134,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "sub_1000D0EB",
+    "ea": "0x1000d0eb",
+    "function_file": "functions/1000d0eb_sub_1000D0EB.md",
+    "matched_imports": [
+      "OLEAUT32!SysAllocString",
+      "OLEAUT32!SysFreeString"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp",
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp"
+    ],
+    "name": "sub_1000D0EB",
+    "prototype": "int __stdcall(int, OLECHAR *psz, int)",
+    "rank_score": 495,
+    "size": 134,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "sub_1000D171",
+    "ea": "0x1000d171",
+    "function_file": "functions/1000d171_sub_1000D171.md",
+    "matched_imports": [
+      "OLEAUT32!SysAllocString",
+      "OLEAUT32!SysFreeString"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp",
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp"
+    ],
+    "name": "sub_1000D171",
+    "prototype": "int __stdcall(int, OLECHAR *psz, int)",
+    "rank_score": 495,
+    "size": 134,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "sub_100070AC",
+    "ea": "0x100070ac",
+    "function_file": "functions/100070ac_sub_100070AC.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to write 64-bit file indicator to custom action data",
+      "failed to write file indicator to custom action data",
+      "failed to write XPath selectionlanguage indicator to custom action data",
+      "failed to write XSLPattern selectionlanguage indicator to custom action data",
+      "failed to write file to custom action data: %ls",
+      "failed to read file: %ls",
+      "failed to write component bitness to rollback custom action data",
+      "failed to write file name to rollback custom action data: %ls",
+      "failed to write file contents to rollback custom action data.",
+      "ExecXmlFileRollback",
+      "failed to schedule ExecXmlFileRollback for file: %ls"
+    ],
+    "name": "sub_100070AC",
+    "prototype": "int __stdcall(LPCWSTR lpFileName, LPCWSTR szValue, int)",
+    "rank_score": 484,
+    "size": 386,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "sub_1000CD01",
+    "ea": "0x1000cd01",
+    "function_file": "functions/1000cd01_sub_1000CD01.md",
+    "matched_imports": [
+      "OLEAUT32!SysAllocString",
+      "OLEAUT32!SysFreeString"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp"
+    ],
+    "name": "sub_1000CD01",
+    "prototype": "int __stdcall(OLECHAR *psz, char, int)",
+    "rank_score": 457,
+    "size": 293,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "sub_1000CBEC",
+    "ea": "0x1000cbec",
+    "function_file": "functions/1000cbec_sub_1000CBEC.md",
+    "matched_imports": [
+      "OLEAUT32!SysAllocString",
+      "OLEAUT32!SysFreeString"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp"
+    ],
+    "name": "sub_1000CBEC",
+    "prototype": "int __stdcall(int, OLECHAR *psz, int)",
+    "rank_score": 454,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "sub_1000CF55",
+    "ea": "0x1000cf55",
+    "function_file": "functions/1000cf55_sub_1000CF55.md",
+    "matched_imports": [
+      "OLEAUT32!SysAllocString",
+      "OLEAUT32!SysFreeString"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp"
+    ],
+    "name": "sub_1000CF55",
+    "prototype": "int __stdcall(int, OLECHAR *psz)",
+    "rank_score": 454,
+    "size": 113,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "sub_1000CC46",
+    "ea": "0x1000cc46",
+    "function_file": "functions/1000cc46_sub_1000CC46.md",
+    "matched_imports": [
+      "OLEAUT32!SysAllocString",
+      "OLEAUT32!SysFreeString"
+    ],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\libs\\dutil\\xmlutil.cpp"
+    ],
+    "name": "sub_1000CC46",
+    "prototype": "int __stdcall(int, OLECHAR *psz, int)",
+    "rank_score": 453,
+    "size": 93,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_100014A3",
+    "ea": "0x100014a3",
+    "function_file": "functions/100014a3_sub_100014A3.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "USER32!EnumWindows"
+    ],
+    "matched_strings": [
+      "Attempting to send process id 0x%x message id: %u"
+    ],
+    "name": "sub_100014A3",
+    "prototype": "",
+    "rank_score": 444,
+    "size": 114,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_1000E004",
+    "ea": "0x1000e004",
+    "function_file": "functions/1000e004_sub_1000E004.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GlobalAddAtomW"
+    ],
+    "matched_strings": [
+      "Failed to create WcaDeferredActionRequiresReboot global atom."
+    ],
+    "name": "sub_1000E004",
+    "prototype": "",
+    "rank_score": 444,
+    "size": 84,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 43,
+    "demangled": "__free_base",
+    "ea": "0x1001770e",
+    "function_file": "functions/1001770e_free_base.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "__free_base",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 428,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "sub_1001E585",
+    "ea": "0x1001e585",
+    "function_file": "functions/1001e585_sub_1001E585.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "sub_1001E585",
+    "prototype": "int __cdecl(int FileHandle, int, int)",
+    "rank_score": 426,
+    "size": 484,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "common_lseek_nolock<__int64>(int,__int64,int)",
+    "ea": "0x1001ec2d",
+    "function_file": "functions/1001ec2d_common_lseek_nolock_int64_int_int64_int.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetFilePointerEx"
+    ],
+    "matched_strings": [],
+    "name": "??$common_lseek_nolock@_J@@YA_JH_JH@Z",
+    "prototype": "int __cdecl(int FileHandle, LARGE_INTEGER liDistanceToMove, DWORD dwMoveMethod)",
+    "rank_score": 425,
+    "size": 126,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 22,
+    "demangled": "sub_1000AE3A",
+    "ea": "0x1000ae3a",
+    "function_file": "functions/1000ae3a_sub_1000AE3A.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000AE3A",
+    "prototype": "int __stdcall(SIZE_T dwBytes, int)",
+    "rank_score": 422,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 11,
+    "demangled": "sub_1000F269",
+    "ea": "0x1000f269",
+    "function_file": "functions/1000f269_sub_1000F269.md",
+    "matched_imports": [
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000F269",
+    "prototype": "int __stdcall(LPCWSTR lpString, int)",
+    "rank_score": 417,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "write_text_utf8_nolock(int,char const * const,uint)",
+    "ea": "0x1001e369",
+    "function_file": "functions/1001e369_write_text_utf8_nolock_int_char_const_const_uint.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?write_text_utf8_nolock@@YA?AUwrite_result@?A0x17268360@@HQBDI@Z",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 308,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 8,
+    "demangled": "___acrt_getptd",
+    "ea": "0x1001721d",
+    "function_file": "functions/1001721d_acrt_getptd.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "___acrt_getptd",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "sub_1000F6F2",
+    "ea": "0x1000f6f2",
+    "function_file": "functions/1000f6f2_sub_1000F6F2.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteFileW"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000F6F2",
+    "prototype": "int __stdcall(LPVOID lpMem, int)",
+    "rank_score": 415,
+    "size": 64,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "write_text_ansi_nolock(int,char const * const,uint)",
+    "ea": "0x1001e1a1",
+    "function_file": "functions/1001e1a1_write_text_ansi_nolock_int_char_const_const_uint.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?write_text_ansi_nolock@@YA?AUwrite_result@?A0x17268360@@HQBDI@Z",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 221,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "write_text_utf16le_nolock(int,char const * const,uint)",
+    "ea": "0x1001e27e",
+    "function_file": "functions/1001e27e_write_text_utf16le_nolock_int_char_const_const_uint.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?write_text_utf16le_nolock@@YA?AUwrite_result@?A0x17268360@@HQBDI@Z",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 235,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 7,
+    "demangled": "___acrt_getptd_noexit",
+    "ea": "0x10017374",
+    "function_file": "functions/10017374_acrt_getptd_noexit.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "___acrt_getptd_noexit",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "___acrt_initialize_command_line",
+    "ea": "0x10019ebb",
+    "function_file": "functions/10019ebb_acrt_initialize_command_line.md",
+    "matched_imports": [
+      "KERNEL32!GetCommandLineA",
+      "KERNEL32!GetCommandLineW"
+    ],
+    "matched_strings": [],
+    "name": "___acrt_initialize_command_line",
+    "prototype": "",
+    "rank_score": 410,
+    "size": 25,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "sub_1000AF39",
+    "ea": "0x1000af39",
+    "function_file": "functions/1000af39_sub_1000AF39.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapReAlloc"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000AF39",
+    "prototype": "int __stdcall(LPVOID lpMem, SIZE_T dwBytes, int)",
+    "rank_score": 410,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "sub_1000B01C",
+    "ea": "0x1000b01c",
+    "function_file": "functions/1000b01c_sub_1000B01C.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapSize"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000B01C",
+    "prototype": "int __stdcall(LPCVOID lpMem)",
+    "rank_score": 410,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "sub_1000C162",
+    "ea": "0x1000c162",
+    "function_file": "functions/1000c162_sub_1000C162.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!FreeLibrary"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000C162",
+    "prototype": "int __stdcall(LPCRITICAL_SECTION lpCriticalSection)",
+    "rank_score": 407,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "sub_100083F0",
+    "ea": "0x100083f0",
+    "function_file": "functions/100083f0_sub_100083F0.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to write 64-bit file indicator to custom action data",
+      "failed to write file indicator to custom action data",
+      "failed to write file to custom action data: %ls",
+      "failed to read file: %ls",
+      "failed to write component bitness to rollback custom action data",
+      "failed to write file name to rollback custom action data: %ls",
+      "failed to write file contents to rollback custom action data.",
+      "ExecXmlConfigRollback",
+      "failed to schedule ExecXmlConfigRollback for file: %ls"
+    ],
+    "name": "sub_100083F0",
+    "prototype": "int __stdcall(LPCWSTR lpFileName, LPCWSTR szValue, int)",
+    "rank_score": 403,
+    "size": 319,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 0,
+    "demangled": "WixRegisterRestartResources",
+    "ea": "0x100034ad",
+    "function_file": "functions/100034ad_WixRegisterRestartResources.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MsiRestartManagerSessionKey",
+      "Failed to get the MsiRestartManagerSessionKey property.",
+      "Failed to get the MsiRestartManagerSessionKey string length.",
+      "The MsiRestartManagerSessionKey property is not available to join.",
+      "Failed to open a view on the RestartResource table.",
+      "Failed to get the Component_ field value.",
+      "Registering service name %ls with the Restart Manager.",
+      "Failed to register the service name with the Restart Manager session."
+    ],
+    "name": "WixRegisterRestartResources",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 378,
+    "size": 864,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_10001C59",
+    "ea": "0x10001c59",
+    "function_file": "functions/10001c59_sub_10001C59.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "failed to create an instance of IUniformResourceLocatorW",
+      "failed to open storage for shortcut '%ls'",
+      "failed to write icon storage for shortcut '%ls'",
+      "failed to commit icon storage for shortcut '%ls'"
+    ],
+    "name": "sub_10001C59",
+    "prototype": "",
+    "rank_score": 377,
+    "size": 456,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "SchedSecureObjects",
+    "ea": "0x10004da5",
+    "function_file": "functions/10004da5_SchedSecureObjects.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to open view on SecureObjects table",
+      "failed to get Component attributes for secure object",
+      "failed to get target path of object '%ls'",
+      "failed to get Component name for secure object",
+      "failed to get install state for Component: %ls",
+      "failed to get domain for user to configure object",
+      "failed to get user to configure object",
+      "failed to get permission to configure object"
+    ],
+    "name": "SchedSecureObjects",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 376,
+    "size": 916,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "sub_1000DBA2",
+    "ea": "0x1000dba2",
+    "function_file": "functions/1000dba2_sub_1000DBA2.md",
+    "matched_imports": [
+      "KERNEL32!GetTickCount"
+    ],
+    "matched_strings": [
+      "failed to openexecute temp view with query %ls",
+      "could not create temp record for table: %ls",
+      "failed to add temporary row, dberr: %d, err: %ls"
+    ],
+    "name": "sub_1000DBA2",
+    "prototype": "int __cdecl(int, int, int, int, int, UINT cParams)",
+    "rank_score": 364,
+    "size": 1014,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_10001B5A",
+    "ea": "0x10001b5a",
+    "function_file": "functions/10001b5a_sub_10001B5A.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "Creating IShellLinkW shortcut '%ls' target '%ls'",
+      "failed to create an instance of IShellLinkW"
+    ],
+    "name": "sub_10001B5A",
+    "prototype": "",
+    "rank_score": 305,
+    "size": 255,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "sub_1000D79B",
+    "ea": "0x1000d79b",
+    "function_file": "functions/1000d79b_sub_1000D79B.md",
+    "matched_imports": [
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [
+      "MsiLogging",
+      "failed to get MsiLogging property"
+    ],
+    "name": "sub_1000D79B",
+    "prototype": "",
+    "rank_score": 298,
+    "size": 174,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "SchedSecureObjectsRollback",
+    "ea": "0x10005139",
+    "function_file": "functions/10005139_SchedSecureObjectsRollback.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to open view on SecureObjects table",
+      "failed to get Component attributes for secure object",
+      "SchedSecureObjectsRollback",
+      "failed to get target path of object '%ls' in order to schedule rollback",
+      "Failed to store ACL rollback information with error 0x%x - continuing",
+      "failed while looping through all objects to schedule rollback for"
+    ],
+    "name": "SchedSecureObjectsRollback",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 297,
+    "size": 468,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "WixRollbackInternetShortcuts",
+    "ea": "0x10001fe6",
+    "function_file": "functions/10001fe6_WixRollbackInternetShortcuts.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to read shortcut attributes from custom action data",
+      "WixRemoveInternetShortcuts",
+      "failed to initialize WixRemoveInternetShortcuts",
+      "failed to read shortcut path from custom action data for rollback",
+      "failed to delete file '%ls'",
+      "failed to skip shortcut target from custom action data for rollback"
+    ],
+    "name": "WixRollbackInternetShortcuts",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 271,
+    "size": 273,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "sub_10006753",
+    "ea": "0x10006753",
+    "function_file": "functions/10006753_sub_10006753.md",
+    "matched_imports": [
+      "SHELL32!ShellExecuteW"
+    ],
+    "matched_strings": [
+      "failed to get directory for target: %ls"
+    ],
+    "name": "sub_10006753",
+    "prototype": "int __stdcall(LPCWSTR lpFile)",
+    "rank_score": 259,
+    "size": 280,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 17,
+    "demangled": "___acrt_lock",
+    "ea": "0x10018c0a",
+    "function_file": "functions/10018c0a_acrt_lock.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "___acrt_lock",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 17,
+    "demangled": "___acrt_unlock",
+    "ea": "0x10018c52",
+    "function_file": "functions/10018c52_acrt_unlock.md",
+    "matched_imports": [
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "___acrt_unlock",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "sub_10008A71",
+    "ea": "0x10008a71",
+    "function_file": "functions/10008a71_sub_10008A71.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to write ElementPath to custom action data: %ls",
+      "failed to write Name to custom action data: %ls",
+      "failed to write Value to custom action data: %ls",
+      "failed to write VerifyPath to custom action data: %ls",
+      "failed to write additional changes value to custom action data"
+    ],
+    "name": "sub_10008A71",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 308,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WixQueryNativeMachine",
+    "ea": "0x10002881",
+    "function_file": "functions/10002881_WixQueryNativeMachine.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "WixQueryNativeMachine",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 216,
+    "size": 115,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "WixBroadcastEnvironmentChange",
+    "ea": "0x10001070",
+    "function_file": "functions/10001070_WixBroadcastEnvironmentChange.md",
+    "matched_imports": [
+      "USER32!SendMessageTimeoutW"
+    ],
+    "matched_strings": [],
+    "name": "WixBroadcastEnvironmentChange",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 214,
+    "size": 75,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "WixBroadcastSettingChange",
+    "ea": "0x100010bb",
+    "function_file": "functions/100010bb_WixBroadcastSettingChange.md",
+    "matched_imports": [
+      "USER32!SendMessageTimeoutW"
+    ],
+    "matched_strings": [],
+    "name": "WixBroadcastSettingChange",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 214,
+    "size": 72,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 10,
+    "demangled": "__calloc_base",
+    "ea": "0x10018c9c",
+    "function_file": "functions/10018c9c_calloc_base.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "__calloc_base",
+    "prototype": "void *__cdecl(size_t Count, size_t Size)",
+    "rank_score": 214,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "__msize",
+    "ea": "0x1001da85",
+    "function_file": "functions/1001da85_msize.md",
+    "matched_imports": [
+      "KERNEL32!HeapSize"
+    ],
+    "matched_strings": [],
+    "name": "__msize",
+    "prototype": "size_t __cdecl(void *Block)",
+    "rank_score": 214,
+    "size": 51,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "try_get_function(`anonymous namespace'::function_id,char const * const,A0x391cf84c::module_id const * const,A0x391cf84c::module_id const * const)",
+    "ea": "0x1001a23e",
+    "function_file": "functions/1001a23e_try_get_function_anonymous_namespace_function_id_char_const_const_A0x391cf84c_module_id_const_const_A0x391cf84.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [],
+    "name": "?try_get_function@@YAPAXW4function_id@?A0x391cf84c@@QBDQBW4module_id@2@2@Z",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 131,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__dcrt_lowio_initialize_console_output(void)",
+    "ea": "0x10020281",
+    "function_file": "functions/10020281_dcrt_lowio_initialize_console_output_void.md",
+    "matched_imports": [
+      "KERNEL32!CreateFileW"
+    ],
+    "matched_strings": [],
+    "name": "?__dcrt_lowio_initialize_console_output@@YAXXZ",
+    "prototype": "void __cdecl()",
+    "rank_score": 212,
+    "size": 31,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 8,
+    "demangled": "__malloc_base",
+    "ea": "0x10017748",
+    "function_file": "functions/10017748_malloc_base.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "__malloc_base",
+    "prototype": "void *__cdecl(size_t Size)",
+    "rank_score": 212,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "___acrt_WideCharToMultiByte",
+    "ea": "0x10019f50",
+    "function_file": "functions/10019f50_acrt_WideCharToMultiByte.md",
+    "matched_imports": [
+      "KERNEL32!WideCharToMultiByte"
+    ],
+    "matched_strings": [],
+    "name": "___acrt_WideCharToMultiByte",
+    "prototype": "int __cdecl(UINT CodePage, int, LPCWCH lpWideCharStr, int cchWideChar, LPSTR lpMultiByteStr, int cbMultiByte, int, int)",
+    "rank_score": 209,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "sub_1001D134",
+    "ea": "0x1001d134",
+    "function_file": "functions/1001d134_sub_1001D134.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "sub_1001D134",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "___acrt_uninitialize_stdio",
+    "ea": "0x10018823",
+    "function_file": "functions/10018823_acrt_uninitialize_stdio.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "___acrt_uninitialize_stdio",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "___vcrt_uninitialize_locks",
+    "ea": "0x10012882",
+    "function_file": "functions/10012882_vcrt_uninitialize_locks.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "___vcrt_uninitialize_locks",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "write_requires_double_translation_nolock(int)",
+    "ea": "0x1001e12e",
+    "function_file": "functions/1001e12e_write_requires_double_translation_nolock_int.md",
+    "matched_imports": [
+      "KERNEL32!GetConsoleMode"
+    ],
+    "matched_strings": [],
+    "name": "?write_requires_double_translation_nolock@@YA_NH@Z",
+    "prototype": "bool __cdecl(int FileHandle)",
+    "rank_score": 204,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "___acrt_lowio_destroy_handle_array",
+    "ea": "0x1001d2e8",
+    "function_file": "functions/1001d2e8_acrt_lowio_destroy_handle_array.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "___acrt_lowio_destroy_handle_array",
+    "prototype": "int __cdecl(LPCRITICAL_SECTION lpCriticalSection)",
+    "rank_score": 203,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "write_double_translated_unicode_nolock(char const * const,uint)",
+    "ea": "0x1001e0c4",
+    "function_file": "functions/1001e0c4_write_double_translated_unicode_nolock_char_const_const_uint.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?write_double_translated_unicode_nolock@@YA?AUwrite_result@?A0x17268360@@QBDI@Z",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "___acrt_uninitialize_locks",
+    "ea": "0x10018c21",
+    "function_file": "functions/10018c21_acrt_uninitialize_locks.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "___acrt_uninitialize_locks",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WixQueryOsWellKnownSID",
+    "ea": "0x10002f38",
+    "function_file": "functions/10002f38_WixQueryOsWellKnownSID.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WixQueryOsWellKnownSID",
+      "WixQueryOsWellKnownSID failed to initialize",
+      "WIX_ACCOUNT_LOCALSERVICE",
+      "WIX_ACCOUNT_NETWORKSERVICE"
+    ],
+    "name": "WixQueryOsWellKnownSID",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 196,
+    "size": 171,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "sub_1000660F",
+    "ea": "0x1000660f",
+    "function_file": "functions/1000660f_sub_1000660F.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\shellexecca.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\shellexecca.cpp",
+      "Failed to open view on Binary table",
+      "Failed to read Binary.Data."
+    ],
+    "name": "sub_1000660F",
+    "prototype": "int __stdcall(int, int, LPDWORD pcbDataBuf)",
+    "rank_score": 193,
+    "size": 324,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "sub_100012EB",
+    "ea": "0x100012eb",
+    "function_file": "functions/100012eb_sub_100012EB.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\closeapps.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\closeapps.cpp",
+      "d:\\a\\_work\\1\\s\\src\\ext\\ca\\wixca\\dll\\closeapps.cpp",
+      "Failed to create record for prompt."
+    ],
+    "name": "sub_100012EB",
+    "prototype": "int __stdcall(int, LPCWSTR szValue)",
+    "rank_score": 192,
+    "size": 299,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_1000566E",
+    "ea": "0x1000566e",
+    "function_file": "functions/1000566e_sub_1000566E.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to copy 'reboot' into action type.",
+      "Failed to copy 'restart' into action type.",
+      "Failed to copy 'runCommand' into action type.",
+      "Failed to copy 'none' into action type."
+    ],
+    "name": "sub_1000566E",
+    "prototype": "",
+    "rank_score": 185,
+    "size": 161,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_1000852F",
+    "ea": "0x1000852f",
+    "function_file": "functions/1000852f_sub_1000852F.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to free xml file element path in change list item",
+      "failed to free xml file verify path in change list item",
+      "failed to free xml file value in change list item",
+      "failed to free xml file change list item"
+    ],
+    "name": "sub_1000852F",
+    "prototype": "int __stdcall(LPVOID lpMem)",
+    "rank_score": 175,
+    "size": 154,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "sub_10002FE3",
+    "ea": "0x10002fe3",
+    "function_file": "functions/10002fe3_sub_10002FE3.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to get command line data",
+      "Command string must begin with quoted application name.",
+      "invalid command line property value"
+    ],
+    "name": "sub_10002FE3",
+    "prototype": "int __stdcall(LPCWSTR szName, _WORD **pcchValueBuf)",
+    "rank_score": 164,
+    "size": 257,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "sub_1000754F",
+    "ea": "0x1000754f",
+    "function_file": "functions/1000754f_sub_1000754F.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to write ElementPath to custom action data: %ls",
+      "failed to write Name to custom action data: %ls",
+      "failed to write Value to custom action data: %ls"
+    ],
+    "name": "sub_1000754F",
+    "prototype": "",
+    "rank_score": 135,
+    "size": 129,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 22,
+    "demangled": "MsiCloseHandle",
+    "ea": "0x1000995c",
+    "function_file": "functions/1000995c_MsiCloseHandle.md",
+    "matched_imports": [
+      "msi!__imp_MsiCloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "MsiCloseHandle",
+    "prototype": "UINT __stdcall(MSIHANDLE hAny)",
+    "rank_score": 132,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "MsiGetComponentStateW",
+    "ea": "0x10009980",
+    "function_file": "functions/10009980_MsiGetComponentStateW.md",
+    "matched_imports": [
+      "msi!__imp_MsiGetComponentStateW"
+    ],
+    "matched_strings": [],
+    "name": "MsiGetComponentStateW",
+    "prototype": "UINT __stdcall(MSIHANDLE hInstall, LPCWSTR szComponent, INSTALLSTATE *piInstalled, INSTALLSTATE *piAction)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "ConvertStringSecurityDescriptorToSecurityDescriptorW",
+    "ea": "0x100106cb",
+    "function_file": "functions/100106cb_ConvertStringSecurityDescriptorToSecurityDescriptorW.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+    ],
+    "matched_strings": [],
+    "name": "ConvertStringSecurityDescriptorToSecurityDescriptorW",
+    "prototype": "BOOL __stdcall(LPCWSTR StringSecurityDescriptor, DWORD StringSDRevision, PSECURITY_DESCRIPTOR *SecurityDescriptor, PULONG SecurityDescriptorSize)",
+    "rank_score": 122,
+    "size": 6,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "MsiDatabaseOpenViewW",
+    "ea": "0x10020f80",
+    "function_file": "functions/10020f80_MsiDatabaseOpenViewW.md",
+    "matched_imports": [
+      "msi!__imp_MsiDatabaseOpenViewW"
+    ],
+    "matched_strings": [],
+    "name": "MsiDatabaseOpenViewW",
+    "prototype": "UINT __stdcall(MSIHANDLE hDatabase, LPCWSTR szQuery, MSIHANDLE *phView)",
+    "rank_score": 122,
+    "size": 6,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ConvertSecurityDescriptorToStringSecurityDescriptorW",
+    "ea": "0x100106d1",
+    "function_file": "functions/100106d1_ConvertSecurityDescriptorToStringSecurityDescriptorW.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertSecurityDescriptorToStringSecurityDescriptorW"
+    ],
+    "matched_strings": [],
+    "name": "ConvertSecurityDescriptorToStringSecurityDescriptorW",
+    "prototype": "BOOL __stdcall(PSECURITY_DESCRIPTOR SecurityDescriptor, DWORD RequestedStringSDRevision, SECURITY_INFORMATION SecurityInformation, LPWSTR *StringSecurityDescriptor, PULONG StringSecurityDescriptorLen)",
+    "rank_score": 121,
+    "size": 6,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiDatabaseGetPrimaryKeysW",
+    "ea": "0x10020fa4",
+    "function_file": "functions/10020fa4_MsiDatabaseGetPrimaryKeysW.md",
+    "matched_imports": [
+      "msi!__imp_MsiDatabaseGetPrimaryKeysW"
+    ],
+    "matched_strings": [],
+    "name": "MsiDatabaseGetPrimaryKeysW",
+    "prototype": "UINT __stdcall(MSIHANDLE hDatabase, LPCWSTR szTableName, MSIHANDLE *phRecord)",
+    "rank_score": 121,
+    "size": 6,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiDoActionW",
+    "ea": "0x10020fda",
+    "function_file": "functions/10020fda_MsiDoActionW.md",
+    "matched_imports": [
+      "msi!__imp_MsiDoActionW"
+    ],
+    "matched_strings": [],
+    "name": "MsiDoActionW",
+    "prototype": "UINT __stdcall(MSIHANDLE hInstall, LPCWSTR szAction)",
+    "rank_score": 121,
+    "size": 6,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiViewGetErrorW",
+    "ea": "0x10020f86",
+    "function_file": "functions/10020f86_MsiViewGetErrorW.md",
+    "matched_imports": [
+      "msi!__imp_MsiViewGetErrorW"
+    ],
+    "matched_strings": [],
+    "name": "MsiViewGetErrorW",
+    "prototype": "MSIDBERROR __stdcall(MSIHANDLE hView, LPWSTR szColumnNameBuffer, LPDWORD pcchBuf)",
+    "rank_score": 121,
+    "size": 6,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "sub_10001000",
+    "ea": "0x10001000",
+    "function_file": "functions/10001000_sub_10001000.md",
+    "matched_imports": [
+      "ADVAPI32!RegCreateKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "sub_10001000",
+    "prototype": "LSTATUS (__stdcall *())(HKEY hKey, LPCWSTR lpSubKey, DWORD Reserved, LPWSTR lpClass, DWORD dwOptions, REGSAM samDesired, const LPSECURITY_ATTRIBUTES lpSecurityAttributes, PHKEY phkResult, LPDWORD lpdwDisposition)",
+    "rank_score": 120,
+    "size": 11,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 9,
+    "demangled": "MsiCreateRecord",
+    "ea": "0x10009962",
+    "function_file": "functions/10009962_MsiCreateRecord.md",
+    "matched_imports": [
+      "msi!__imp_MsiCreateRecord"
+    ],
+    "matched_strings": [],
+    "name": "MsiCreateRecord",
+    "prototype": "MSIHANDLE __stdcall(UINT cParams)",
+    "rank_score": 119,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "MsiRecordSetStringW",
+    "ea": "0x10009968",
+    "function_file": "functions/10009968_MsiRecordSetStringW.md",
+    "matched_imports": [
+      "msi!__imp_MsiRecordSetStringW"
+    ],
+    "matched_strings": [],
+    "name": "MsiRecordSetStringW",
+    "prototype": "UINT __stdcall(MSIHANDLE hRecord, UINT iField, LPCWSTR szValue)",
+    "rank_score": 116,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "MsiGetPropertyW",
+    "ea": "0x10020fce",
+    "function_file": "functions/10020fce_MsiGetPropertyW.md",
+    "matched_imports": [
+      "msi!__imp_MsiGetPropertyW"
+    ],
+    "matched_strings": [],
+    "name": "MsiGetPropertyW",
+    "prototype": "UINT __stdcall(MSIHANDLE hInstall, LPCWSTR szName, LPWSTR szValueBuf, LPDWORD pcchValueBuf)",
+    "rank_score": 113,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "MsiRecordSetInteger",
+    "ea": "0x10020faa",
+    "function_file": "functions/10020faa_MsiRecordSetInteger.md",
+    "matched_imports": [
+      "msi!__imp_MsiRecordSetInteger"
+    ],
+    "matched_strings": [],
+    "name": "MsiRecordSetInteger",
+    "prototype": "UINT __stdcall(MSIHANDLE hRecord, UINT iField, int iValue)",
+    "rank_score": 113,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "MsiSetPropertyW",
+    "ea": "0x10020fc2",
+    "function_file": "functions/10020fc2_MsiSetPropertyW.md",
+    "matched_imports": [
+      "msi!__imp_MsiSetPropertyW"
+    ],
+    "matched_strings": [],
+    "name": "MsiSetPropertyW",
+    "prototype": "UINT __stdcall(MSIHANDLE hInstall, LPCWSTR szName, LPCWSTR szValue)",
+    "rank_score": 113,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "MsiFormatRecordW",
+    "ea": "0x10020fd4",
+    "function_file": "functions/10020fd4_MsiFormatRecordW.md",
+    "matched_imports": [
+      "msi!__imp_MsiFormatRecordW"
+    ],
+    "matched_strings": [],
+    "name": "MsiFormatRecordW",
+    "prototype": "UINT __stdcall(MSIHANDLE hInstall, MSIHANDLE hRecord, LPWSTR szResultBuf, LPDWORD pcchResultBuf)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "MsiGetMode",
+    "ea": "0x10009974",
+    "function_file": "functions/10009974_MsiGetMode.md",
+    "matched_imports": [
+      "msi!__imp_MsiGetMode"
+    ],
+    "matched_strings": [],
+    "name": "MsiGetMode",
+    "prototype": "BOOL __stdcall(MSIHANDLE hInstall, MSIRUNMODE eRunMode)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "MsiViewExecute",
+    "ea": "0x10020f8c",
+    "function_file": "functions/10020f8c_MsiViewExecute.md",
+    "matched_imports": [
+      "msi!__imp_MsiViewExecute"
+    ],
+    "matched_strings": [],
+    "name": "MsiViewExecute",
+    "prototype": "UINT __stdcall(MSIHANDLE hView, MSIHANDLE hRecord)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "MsiViewFetch",
+    "ea": "0x10020f92",
+    "function_file": "functions/10020f92_MsiViewFetch.md",
+    "matched_imports": [
+      "msi!__imp_MsiViewFetch"
+    ],
+    "matched_strings": [],
+    "name": "MsiViewFetch",
+    "prototype": "UINT __stdcall(MSIHANDLE hView, MSIHANDLE *phRecord)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CreateToolhelp32Snapshot",
+    "ea": "0x100106e9",
+    "function_file": "functions/100106e9_CreateToolhelp32Snapshot.md",
+    "matched_imports": [
+      "KERNEL32!CreateToolhelp32Snapshot"
+    ],
+    "matched_strings": [],
+    "name": "CreateToolhelp32Snapshot",
+    "prototype": "HANDLE __stdcall(DWORD dwFlags, DWORD th32ProcessID)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiEvaluateConditionW",
+    "ea": "0x1000996e",
+    "function_file": "functions/1000996e_MsiEvaluateConditionW.md",
+    "matched_imports": [
+      "msi!__imp_MsiEvaluateConditionW"
+    ],
+    "matched_strings": [],
+    "name": "MsiEvaluateConditionW",
+    "prototype": "MSICONDITION __stdcall(MSIHANDLE hInstall, LPCWSTR szCondition)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiGetActiveDatabase",
+    "ea": "0x10020f74",
+    "function_file": "functions/10020f74_MsiGetActiveDatabase.md",
+    "matched_imports": [
+      "msi!__imp_MsiGetActiveDatabase"
+    ],
+    "matched_strings": [],
+    "name": "MsiGetActiveDatabase",
+    "prototype": "MSIHANDLE __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiGetPropertyA",
+    "ea": "0x10020fc8",
+    "function_file": "functions/10020fc8_MsiGetPropertyA.md",
+    "matched_imports": [
+      "msi!__imp_MsiGetPropertyA"
+    ],
+    "matched_strings": [],
+    "name": "MsiGetPropertyA",
+    "prototype": "UINT __stdcall(MSIHANDLE hInstall, LPCSTR szName, LPSTR szValueBuf, LPDWORD pcchValueBuf)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiGetTargetPathW",
+    "ea": "0x10020fe6",
+    "function_file": "functions/10020fe6_MsiGetTargetPathW.md",
+    "matched_imports": [
+      "msi!__imp_MsiGetTargetPathW"
+    ],
+    "matched_strings": [],
+    "name": "MsiGetTargetPathW",
+    "prototype": "UINT __stdcall(MSIHANDLE hInstall, LPCWSTR szFolder, LPWSTR szPathBuf, LPDWORD pcchPathBuf)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiProcessMessage",
+    "ea": "0x10020fe0",
+    "function_file": "functions/10020fe0_MsiProcessMessage.md",
+    "matched_imports": [
+      "msi!__imp_MsiProcessMessage"
+    ],
+    "matched_strings": [],
+    "name": "MsiProcessMessage",
+    "prototype": "int __stdcall(MSIHANDLE hInstall, INSTALLMESSAGE eMessageType, MSIHANDLE hRecord)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiRecordGetInteger",
+    "ea": "0x10020fb0",
+    "function_file": "functions/10020fb0_MsiRecordGetInteger.md",
+    "matched_imports": [
+      "msi!__imp_MsiRecordGetInteger"
+    ],
+    "matched_strings": [],
+    "name": "MsiRecordGetInteger",
+    "prototype": "int __stdcall(MSIHANDLE hRecord, UINT iField)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiRecordGetStringW",
+    "ea": "0x10020fb6",
+    "function_file": "functions/10020fb6_MsiRecordGetStringW.md",
+    "matched_imports": [
+      "msi!__imp_MsiRecordGetStringW"
+    ],
+    "matched_strings": [],
+    "name": "MsiRecordGetStringW",
+    "prototype": "UINT __stdcall(MSIHANDLE hRecord, UINT iField, LPWSTR szValueBuf, LPDWORD pcchValueBuf)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiRecordIsNull",
+    "ea": "0x1000997a",
+    "function_file": "functions/1000997a_MsiRecordIsNull.md",
+    "matched_imports": [
+      "msi!__imp_MsiRecordIsNull"
+    ],
+    "matched_strings": [],
+    "name": "MsiRecordIsNull",
+    "prototype": "BOOL __stdcall(MSIHANDLE hRecord, UINT iField)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiRecordReadStream",
+    "ea": "0x10020fbc",
+    "function_file": "functions/10020fbc_MsiRecordReadStream.md",
+    "matched_imports": [
+      "msi!__imp_MsiRecordReadStream"
+    ],
+    "matched_strings": [],
+    "name": "MsiRecordReadStream",
+    "prototype": "UINT __stdcall(MSIHANDLE hRecord, UINT iField, char *szDataBuf, LPDWORD pcbDataBuf)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiRecordSetStringA",
+    "ea": "0x10020f7a",
+    "function_file": "functions/10020f7a_MsiRecordSetStringA.md",
+    "matched_imports": [
+      "msi!__imp_MsiRecordSetStringA"
+    ],
+    "matched_strings": [],
+    "name": "MsiRecordSetStringA",
+    "prototype": "UINT __stdcall(MSIHANDLE hRecord, UINT iField, LPCSTR szValue)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiSetMode",
+    "ea": "0x10009956",
+    "function_file": "functions/10009956_MsiSetMode.md",
+    "matched_imports": [
+      "msi!__imp_MsiSetMode"
+    ],
+    "matched_strings": [],
+    "name": "MsiSetMode",
+    "prototype": "UINT __stdcall(MSIHANDLE hInstall, MSIRUNMODE eRunMode, BOOL fState)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiViewGetColumnInfo",
+    "ea": "0x10020f9e",
+    "function_file": "functions/10020f9e_MsiViewGetColumnInfo.md",
+    "matched_imports": [
+      "msi!__imp_MsiViewGetColumnInfo"
+    ],
+    "matched_strings": [],
+    "name": "MsiViewGetColumnInfo",
+    "prototype": "UINT __stdcall(MSIHANDLE hView, MSICOLINFO eColumnInfo, MSIHANDLE *phRecord)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "MsiViewModify",
+    "ea": "0x10020f98",
+    "function_file": "functions/10020f98_MsiViewModify.md",
+    "matched_imports": [
+      "msi!__imp_MsiViewModify"
+    ],
+    "matched_strings": [],
+    "name": "MsiViewModify",
+    "prototype": "UINT __stdcall(MSIHANDLE hView, MSIMODIFY eModifyMode, MSIHANDLE hRecord)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "sub_1000EAFC",
+    "ea": "0x1000eafc",
+    "function_file": "functions/1000eafc_sub_1000EAFC.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to allocate string for target path of folder: '%ls'",
+      "Failed to get target path for folder '%ls'"
+    ],
+    "name": "sub_1000EAFC",
+    "prototype": "int __stdcall(LPCWSTR szFolder, DWORD pcchPathBuf)",
+    "rank_score": 111,
+    "size": 298,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "sub_1000100B",
+    "ea": "0x1000100b",
+    "function_file": "functions/1000100b_sub_1000100B.md",
+    "matched_imports": [
+      "ADVAPI32!RegDeleteKeyW"
+    ],
+    "matched_strings": [],
+    "name": "sub_1000100B",
+    "prototype": "",
+    "rank_score": 110,
+    "size": 11,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "sub_10001016",
+    "ea": "0x10001016",
+    "function_file": "functions/10001016_sub_10001016.md",
+    "matched_imports": [
+      "ADVAPI32!RegDeleteValueW"
+    ],
+    "matched_strings": [],
+    "name": "sub_10001016",
+    "prototype": "",
+    "rank_score": 110,
+    "size": 11,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "sub_10001037",
+    "ea": "0x10001037",
+    "function_file": "functions/10001037_sub_10001037.md",
+    "matched_imports": [
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "sub_10001037",
+    "prototype": "",
+    "rank_score": 110,
+    "size": 11,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "sub_10001058",
+    "ea": "0x10001058",
+    "function_file": "functions/10001058_sub_10001058.md",
+    "matched_imports": [
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "sub_10001058",
+    "prototype": "",
+    "rank_score": 110,
+    "size": 11,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 8,
+    "demangled": "sub_1000E78C",
+    "ea": "0x1000e78c",
+    "function_file": "functions/1000e78c_sub_1000E78C.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to create record to format string"
+    ],
+    "name": "sub_1000E78C",
+    "prototype": "int __stdcall(MSIHANDLE hRecord, UINT iField, DWORD pcchResultBuf)",
+    "rank_score": 83,
+    "size": 341,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 11,
+    "demangled": "sub_1000ED03",
+    "ea": "0x1000ed03",
+    "function_file": "functions/1000ed03_sub_1000ED03.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to open view on database"
+    ],
+    "name": "sub_1000ED03",
+    "prototype": "int __stdcall(LPCWSTR szQuery, MSIHANDLE *phView)",
+    "rank_score": 78,
+    "size": 182,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 8,
+    "demangled": "sub_1000E070",
+    "ea": "0x1000e070",
+    "function_file": "functions/1000e070_sub_1000E070.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed MsiDoAction on deferred action"
+    ],
+    "name": "sub_1000E070",
+    "prototype": "int __stdcall(LPCWSTR szName, LPCWSTR szValue, int iValue)",
+    "rank_score": 77,
+    "size": 206,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "WixCloseApplications",
+    "ea": "0x100015c4",
+    "function_file": "functions/100015c4_WixCloseApplications.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to open view on WixCloseApplication table"
+    ],
+    "name": "WixCloseApplications",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 75,
+    "size": 936,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CommitCAScriptCleanup",
+    "ea": "0x10001103",
+    "function_file": "functions/10001103_CommitCAScriptCleanup.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CommitCAScriptCleanup"
+    ],
+    "name": "CommitCAScriptCleanup",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 69,
+    "size": 168,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "WixQueryOsDriverInfo",
+    "ea": "0x10002c7b",
+    "function_file": "functions/10002c7b_WixQueryOsDriverInfo.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to detect WIX_DWM_COMPOSITION_ENABLED"
+    ],
+    "name": "WixQueryOsDriverInfo",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 66,
+    "size": 85,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 7,
+    "demangled": "sub_1000E13E",
+    "ea": "0x1000e13e",
+    "function_file": "functions/1000e13e_sub_1000E13E.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to create record when sending error message"
+    ],
+    "name": "sub_1000E13E",
+    "prototype": "int __cdecl(int iValue, int, INSTALLMESSAGE eMessageType, int)",
+    "rank_score": 66,
+    "size": 274,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "sub_1000EDB9",
+    "ea": "0x1000edb9",
+    "function_file": "functions/1000edb9_sub_1000EDB9.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to open view on database with SQL: %ls"
+    ],
+    "name": "sub_1000EDB9",
+    "prototype": "int __stdcall(LPCWSTR szQuery, MSIHANDLE *phView)",
+    "rank_score": 66,
+    "size": 113,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CAQuietExec",
+    "ea": "0x100032ac",
+    "function_file": "functions/100032ac_CAQuietExec.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed in ExecCommon method"
+    ],
+    "name": "CAQuietExec",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 65,
+    "size": 83,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CAQuietExec64",
+    "ea": "0x10003259",
+    "function_file": "functions/10003259_CAQuietExec64.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed in ExecCommon64 method"
+    ],
+    "name": "CAQuietExec64",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 65,
+    "size": 83,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WixQuietExec",
+    "ea": "0x10003352",
+    "function_file": "functions/10003352_WixQuietExec.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed in ExecCommon method"
+    ],
+    "name": "WixQuietExec",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 65,
+    "size": 83,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WixQuietExec64",
+    "ea": "0x100032ff",
+    "function_file": "functions/100032ff_WixQuietExec64.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed in ExecCommon method"
+    ],
+    "name": "WixQuietExec64",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 65,
+    "size": 83,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WixSilentExec",
+    "ea": "0x100033f6",
+    "function_file": "functions/100033f6_WixSilentExec.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed in ExecCommon method"
+    ],
+    "name": "WixSilentExec",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 65,
+    "size": 81,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WixSilentExec64",
+    "ea": "0x100033a5",
+    "function_file": "functions/100033a5_WixSilentExec64.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed in ExecCommon method"
+    ],
+    "name": "WixSilentExec64",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 65,
+    "size": 81,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "sub_100030E4",
+    "ea": "0x100030e4",
+    "function_file": "functions/100030e4_sub_100030E4.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to get Command Line"
+    ],
+    "name": "sub_100030E4",
+    "prototype": "int __stdcall(LPCWSTR, LPCWSTR szName, int, int)",
+    "rank_score": 64,
+    "size": 174,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "sub_10003192",
+    "ea": "0x10003192",
+    "function_file": "functions/10003192_sub_10003192.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to get Command Line"
+    ],
+    "name": "sub_10003192",
+    "prototype": "int __stdcall(LPCWSTR, LPCWSTR szName, int, int)",
+    "rank_score": 59,
+    "size": 97,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "sub_1000E917",
+    "ea": "0x1000e917",
+    "function_file": "functions/1000e917_sub_1000E917.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "failed to read from stream"
+    ],
+    "name": "sub_1000E917",
+    "prototype": "int __stdcall(MSIHANDLE hRecord, UINT iField, int, LPDWORD pcbDataBuf)",
+    "rank_score": 57,
+    "size": 214,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "sub_10001416",
+    "ea": "0x10001416",
+    "function_file": "functions/10001416_sub_10001416.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "App: %ls found running, %d processes, attempting to send message."
+    ],
+    "name": "sub_10001416",
+    "prototype": "int __stdcall(int, int, DWORD dwMilliseconds)",
+    "rank_score": 49,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 19,
+    "demangled": "sub_1000E662",
+    "ea": "0x1000e662",
+    "function_file": "functions/1000e662_sub_1000E662.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000E662",
+    "prototype": "int __stdcall(LPCWSTR szName, DWORD pcchValueBuf)",
+    "rank_score": 48,
+    "size": 298,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 33,
+    "demangled": "sub_1000D9AB",
+    "ea": "0x1000d9ab",
+    "function_file": "functions/1000d9ab_sub_1000D9AB.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000D9AB",
+    "prototype": "_DWORD __cdecl(_DWORD, _DWORD)",
+    "rank_score": 46,
+    "size": 187,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "sub_1000FBCF",
+    "ea": "0x1000fbcf",
+    "function_file": "functions/1000fbcf_sub_1000FBCF.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to write number to script."
+    ],
+    "name": "sub_1000FBCF",
+    "prototype": "",
+    "rank_score": 46,
+    "size": 117,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "sub_1000F88B",
+    "ea": "0x1000f88b",
+    "function_file": "functions/1000f88b_sub_1000F88B.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to create script key."
+    ],
+    "name": "sub_1000F88B",
+    "prototype": "",
+    "rank_score": 45,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 11,
+    "demangled": "sub_1000E9ED",
+    "ea": "0x1000e9ed",
+    "function_file": "functions/1000e9ed_sub_1000E9ED.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000E9ED",
+    "prototype": "int __stdcall(MSIHANDLE hRecord, UINT iField, DWORD pcchValueBuf)",
+    "rank_score": 39,
+    "size": 271,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 22,
+    "demangled": "_LocaleUpdate::_LocaleUpdate(__crt_locale_pointers * const)",
+    "ea": "0x10013673",
+    "function_file": "functions/10013673_LocaleUpdate_LocaleUpdate_crt_locale_pointers_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0_LocaleUpdate@@QAE@QAU__crt_locale_pointers@@@Z",
+    "prototype": "_LocaleUpdate *__thiscall(_LocaleUpdate *__hidden this, struct __crt_locale_pointers *const)",
+    "rank_score": 37,
+    "size": 131,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "___scrt_dllmain_after_initialize_c",
+    "ea": "0x10010d71",
+    "function_file": "functions/10010d71_scrt_dllmain_after_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___scrt_dllmain_after_initialize_c",
+    "prototype": "",
+    "rank_score": 37,
+    "size": 43,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 47,
+    "demangled": "__security_check_cookie(x)",
+    "ea": "0x10010720",
+    "function_file": "functions/10010720_security_check_cookie_x.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "@__security_check_cookie@4",
+    "prototype": "void __fastcall(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 17,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 38,
+    "demangled": "sub_1000D4AE",
+    "ea": "0x1000d4ae",
+    "function_file": "functions/1000d4ae_sub_1000D4AE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000D4AE",
+    "prototype": "",
+    "rank_score": 37,
+    "size": 62,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DllEntryPoint",
+    "ea": "0x10010a51",
+    "function_file": "functions/10010a51_DllEntryPoint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllEntryPoint",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 33,
+    "size": 35,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "common_configure_argv<char>(_crt_argv_mode)",
+    "ea": "0x100163d0",
+    "function_file": "functions/100163d0_common_configure_argv_char_crt_argv_mode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$common_configure_argv@D@@YAHW4_crt_argv_mode@@@Z",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 312,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 108,
+    "demangled": "sub_1000DA66",
+    "ea": "0x1000da66",
+    "function_file": "functions/1000da66_sub_1000DA66.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000DA66",
+    "prototype": "_DWORD __cdecl(_DWORD, _DWORD)",
+    "rank_score": 30,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach(HINSTANCE__ * const,void * const)",
+    "ea": "0x10010784",
+    "function_file": "functions/10010784_dllmain_crt_process_attach_HINSTANCE_const_void_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z",
+    "prototype": "int __cdecl(HINSTANCE, void *const)",
+    "rank_score": 29,
+    "size": 266,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch(HINSTANCE__ * const,ulong,void * const)",
+    "ea": "0x10010920",
+    "function_file": "functions/10010920_dllmain_dispatch_HINSTANCE_const_ulong_void_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z",
+    "prototype": "int __cdecl(HINSTANCE hinstDLL, DWORD fdwReason, void *const lpvReserved)",
+    "rank_score": 29,
+    "size": 262,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "WixCloseApplicationsDeferred",
+    "ea": "0x1000196c",
+    "function_file": "functions/1000196c_WixCloseApplicationsDeferred.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WixCloseApplicationsDeferred",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 28,
+    "size": 486,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 26,
+    "demangled": "_memset",
+    "ea": "0x10011390",
+    "function_file": "functions/10011390_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 28,
+    "size": 346,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "sub_1000E355",
+    "ea": "0x1000e355",
+    "function_file": "functions/1000e355_sub_1000E355.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000E355",
+    "prototype": "int __stdcall(LPCWSTR szComponent)",
+    "rank_score": 28,
+    "size": 104,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 68,
+    "demangled": "__errno",
+    "ea": "0x10015d79",
+    "function_file": "functions/10015d79_errno.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__errno",
+    "prototype": "int *__cdecl()",
+    "rank_score": 27,
+    "size": 19,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 43,
+    "demangled": "__invalid_parameter_noinfo",
+    "ea": "0x10015cbc",
+    "function_file": "functions/10015cbc_invalid_parameter_noinfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__invalid_parameter_noinfo",
+    "prototype": "void __cdecl()",
+    "rank_score": 26,
+    "size": 16,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch(HINSTANCE__ * const,ulong,void * const)",
+    "ea": "0x10010731",
+    "function_file": "functions/10010731_dllmain_crt_dispatch_HINSTANCE_const_ulong_void_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?dllmain_crt_dispatch@@YGHQAUHINSTANCE__@@KQAX@Z",
+    "prototype": "int __stdcall(HINSTANCE, unsigned int, void *const)",
+    "rank_score": 26,
+    "size": 83,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 48,
+    "demangled": "sub_1000A952",
+    "ea": "0x1000a952",
+    "function_file": "functions/1000a952_sub_1000A952.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000A952",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 9,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 29,
+    "demangled": "__SEH_prolog4",
+    "ea": "0x10011180",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__SEH_prolog4",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "__acrt_get_utf8_acp_compatibility_codepage(void)",
+    "ea": "0x100193ae",
+    "function_file": "functions/100193ae_acrt_get_utf8_acp_compatibility_codepage_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?__acrt_get_utf8_acp_compatibility_codepage@@YAIXZ",
+    "prototype": "unsigned int __cdecl()",
+    "rank_score": 25,
+    "size": 65,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 39,
+    "demangled": "_guard_check_icall_nop(x)",
+    "ea": "0x1000b035",
+    "function_file": "functions/1000b035_guard_check_icall_nop_x.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "@_guard_check_icall_nop@4",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 1,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "_qsort",
+    "ea": "0x1001d540",
+    "function_file": "functions/1001d540_qsort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_qsort",
+    "prototype": "void __cdecl(void *Base, size_t NumOfElements, size_t SizeOfElements, _CoreCrtNonSecureSearchSortCompareFunction CompareFunction)",
+    "rank_score": 25,
+    "size": 1092,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 83,
+    "demangled": "nullsub_1",
+    "ea": "0x1000ad15",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "nullsub_1",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "common_expand_argv_wildcards<char>(char * * const,char * * * const)",
+    "ea": "0x10018eb1",
+    "function_file": "functions/10018eb1_common_expand_argv_wildcards_char_char_const_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$common_expand_argv_wildcards@D@@YAHQAPADQAPAPAD@Z",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 496,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 23,
+    "demangled": "__SEH_epilog4",
+    "ea": "0x100111c6",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__SEH_epilog4",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__configure_narrow_argv",
+    "ea": "0x100166d0",
+    "function_file": "functions/100166d0_configure_narrow_argv.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__configure_narrow_argv",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 22,
+    "size": 11,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_detach(bool)",
+    "ea": "0x1001088e",
+    "function_file": "functions/1001088e_dllmain_crt_process_detach_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?dllmain_crt_process_detach@@YAH_N@Z",
+    "prototype": "int __cdecl(__vcrt_bool Terminating)",
+    "rank_score": 22,
+    "size": 146,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "sub_1000E2AE",
+    "ea": "0x1000e2ae",
+    "function_file": "functions/1000e2ae_sub_1000E2AE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000E2AE",
+    "prototype": "int __stdcall(MSIHANDLE hView, MSIHANDLE *phRecord)",
+    "rank_score": 22,
+    "size": 81,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "sub_1000E8E1",
+    "ea": "0x1000e8e1",
+    "function_file": "functions/1000e8e1_sub_1000E8E1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000E8E1",
+    "prototype": "int __stdcall(MSIHANDLE hRecord, UINT iField, int)",
+    "rank_score": 22,
+    "size": 54,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "WixFailWhenDeferred",
+    "ea": "0x10006e43",
+    "function_file": "functions/10006e43_WixFailWhenDeferred.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WixFailWhenDeferred",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 21,
+    "size": 26,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "__std_fs_create_symbolic_link(x,x)",
+    "ea": "0x1000a19e",
+    "function_file": "functions/1000a19e_std_fs_create_symbolic_link_x_x.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___std_fs_create_symbolic_link@8",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 20,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "update_thread_multibyte_data_internal(__acrt_ptd * const,__crt_multibyte_data * * const)",
+    "ea": "0x10019b54",
+    "function_file": "functions/10019b54_update_thread_multibyte_data_internal_acrt_ptd_const_crt_multibyte_data_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?update_thread_multibyte_data_internal@@YAPAU__crt_multibyte_data@@QAU__acrt_ptd@@QAPAU1@@Z",
+    "prototype": "struct __crt_multibyte_data *__cdecl(struct __acrt_ptd *const, struct __crt_multibyte_data **const)",
+    "rank_score": 20,
+    "size": 150,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "WixShellExec",
+    "ea": "0x1000691a",
+    "function_file": "functions/1000691a_WixShellExec.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WixShellExec",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 19,
+    "size": 158,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "___acrt_update_thread_locale_data",
+    "ea": "0x1001b0b5",
+    "function_file": "functions/1001b0b5_acrt_update_thread_locale_data.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___acrt_update_thread_locale_data",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 119,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "_memmove",
+    "ea": "0x10011770",
+    "function_file": "functions/10011770_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 19,
+    "size": 1396,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "sub_1000EE2A",
+    "ea": "0x1000ee2a",
+    "function_file": "functions/1000ee2a_sub_1000EE2A.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000EE2A",
+    "prototype": "int __stdcall(INSTALLMESSAGE eMessageType, MSIHANDLE hRecord)",
+    "rank_score": 18,
+    "size": 50,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "WixCheckRebootRequired",
+    "ea": "0x100011ab",
+    "function_file": "functions/100011ab_WixCheckRebootRequired.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WixCheckRebootRequired",
+    "prototype": "int __stdcall(MSIHANDLE hInstall)",
+    "rank_score": 17,
+    "size": 125,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "common_exit(int,_crt_exit_cleanup_mode,_crt_exit_return_mode)",
+    "ea": "0x10016255",
+    "function_file": "functions/10016255_common_exit_int_crt_exit_cleanup_mode_crt_exit_return_mode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?common_exit@@YAXHW4_crt_exit_cleanup_mode@@W4_crt_exit_return_mode@@@Z",
+    "prototype": "void __cdecl(UINT uExitCode, enum _crt_exit_cleanup_mode, enum _crt_exit_return_mode)",
+    "rank_score": 17,
+    "size": 101,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "___scrt_dllmain_uninitialize_c",
+    "ea": "0x10010e0a",
+    "function_file": "functions/10010e0a_scrt_dllmain_uninitialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___scrt_dllmain_uninitialize_c",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 35,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "___scrt_is_ucrt_dll_in_use",
+    "ea": "0x10011376",
+    "function_file": "functions/10011376_scrt_is_ucrt_dll_in_use.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___scrt_is_ucrt_dll_in_use",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "__updatetlocinfoEx_nolock",
+    "ea": "0x1001b12c",
+    "function_file": "functions/1001b12c_updatetlocinfoEx_nolock.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__updatetlocinfoEx_nolock",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 80,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "_memmove_0",
+    "ea": "0x10011cf0",
+    "function_file": "functions/10011cf0_memmove_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 16,
+    "size": 1396,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "common_initialize_environment_nolock<char>(void)",
+    "ea": "0x100166db",
+    "function_file": "functions/100166db_common_initialize_environment_nolock_char_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$common_initialize_environment_nolock@D@@YAHXZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 83,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 12,
+    "demangled": "sub_1000EFCC",
+    "ea": "0x1000efcc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000EFCC",
+    "prototype": "int __stdcall(wchar_t SubStr, int)",
+    "rank_score": 16,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "___scrt_dllmain_crt_thread_attach",
+    "ea": "0x10010daa",
+    "function_file": "functions/10010daa_scrt_dllmain_crt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___scrt_dllmain_crt_thread_attach",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 31,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "___scrt_dllmain_exception_filter",
+    "ea": "0x10010dd6",
+    "function_file": "functions/10010dd6_scrt_dllmain_exception_filter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___scrt_dllmain_exception_filter",
+    "prototype": "int __cdecl(int, int, int, int, unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 52,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "common_tcsncpy_s<char>(char * const,uint,char const * const,uint)",
+    "ea": "0x10018a9a",
+    "function_file": "functions/10018a9a_common_tcsncpy_s_char_char_const_uint_char_const_const_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$common_tcsncpy_s@D@@YAHQADIQBDI@Z",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 179,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "parse_command_line<char>(char *,char * *,char *,uint *,uint *)",
+    "ea": "0x10016508",
+    "function_file": "functions/10016508_parse_command_line_char_char_char_char_uint_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$parse_command_line@D@@YAXPADPAPAD0PAI2@Z",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 377,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 15,
+    "demangled": "sub_1000D4F2",
+    "ea": "0x1000d4f2",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000D4F2",
+    "prototype": "int(void)",
+    "rank_score": 15,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "sub_1000E250",
+    "ea": "0x1000e250",
+    "function_file": "functions/1000e250_sub_1000E250.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000E250",
+    "prototype": "int __stdcall(MSIHANDLE hView, MSIHANDLE hRecord)",
+    "rank_score": 15,
+    "size": 94,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "sub_1000E2FF",
+    "ea": "0x1000e2ff",
+    "function_file": "functions/1000e2ff_sub_1000E2FF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000E2FF",
+    "prototype": "int __stdcall(MSIHANDLE hView, MSIHANDLE *phRecord)",
+    "rank_score": 15,
+    "size": 86,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 7,
+    "demangled": "sub_1000EE5C",
+    "ea": "0x1000ee5c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000EE5C",
+    "prototype": "int __stdcall(int iValue, int)",
+    "rank_score": 15,
+    "size": 232,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "sub_1000F126",
+    "ea": "0x1000f126",
+    "function_file": "functions/1000f126_sub_1000F126.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000F126",
+    "prototype": "int __stdcall(MSIHANDLE hRecord, UINT iField, LPCWSTR szValue)",
+    "rank_score": 15,
+    "size": 103,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DllMain(x,x,x)",
+    "ea": "0x10007086",
+    "function_file": "functions/10007086_DllMain_x_x_x.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMain@12",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 14,
+    "size": 38,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "___std_fs_create_symbolic_link@8_0",
+    "ea": "0x1000ad18",
+    "function_file": "functions/1000ad18_std_fs_create_symbolic_link_8_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___std_fs_create_symbolic_link@8_0",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 20,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__decomp",
+    "ea": "0x10020d65",
+    "function_file": "functions/10020d65_decomp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__decomp",
+    "prototype": "int __cdecl(double, int)",
+    "rank_score": 14,
+    "size": 222,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "common_flush_all(bool)",
+    "ea": "0x1001ab13",
+    "function_file": "functions/1001ab13_common_flush_all_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?common_flush_all@@YAH_N@Z",
+    "prototype": "int __cdecl(bool)",
+    "rank_score": 14,
+    "size": 79,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "common_flush_all_should_try_to_flush_stream(__crt_stdio_stream,int * const)",
+    "ea": "0x1001ab62",
+    "function_file": "functions/1001ab62_common_flush_all_should_try_to_flush_stream_crt_stdio_stream_int_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?common_flush_all_should_try_to_flush_stream@@YA_NV__crt_stdio_stream@@QAH@Z",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 51,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "sub_1000EF44",
+    "ea": "0x1000ef44",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000EF44",
+    "prototype": "int __stdcall(wchar_t SubStr, int)",
+    "rank_score": 14,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "___security_init_cookie",
+    "ea": "0x10010c7b",
+    "function_file": "functions/10010c7b_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 75,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__seh_filter_dll",
+    "ea": "0x10015fb5",
+    "function_file": "functions/10015fb5_seh_filter_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__seh_filter_dll",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 13,
+    "size": 32,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "dllmain_raw(HINSTANCE__ * const,ulong,void * const)",
+    "ea": "0x10010a26",
+    "function_file": "functions/10010a26_dllmain_raw_HINSTANCE_const_ulong_void_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?dllmain_raw@@YGHQAUHINSTANCE__@@KQAX@Z",
+    "prototype": "int __stdcall(HINSTANCE, unsigned int, void *const)",
+    "rank_score": 13,
+    "size": 43,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "___scrt_dllmain_before_initialize_c",
+    "ea": "0x10010d9c",
+    "function_file": "functions/10010d9c_scrt_dllmain_before_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___scrt_dllmain_before_initialize_c",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 14,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__lseeki64_nolock",
+    "ea": "0x1001ecab",
+    "function_file": "functions/1001ecab_lseeki64_nolock.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__lseeki64_nolock",
+    "prototype": "int __cdecl(int FileHandle, LARGE_INTEGER liDistanceToMove, DWORD dwMoveMethod)",
+    "rank_score": 12,
+    "size": 27,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "common_initialize_environment_nolock<char>(void)",
+    "ea": "0x100168c5",
+    "function_file": "functions/100168c5_common_initialize_environment_nolock_char_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "j_??$common_initialize_environment_nolock@D@@YAHXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 5,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "is_stream_flushable_or_commitable(long)",
+    "ea": "0x1001ab95",
+    "function_file": "functions/1001ab95_is_stream_flushable_or_commitable_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?is_stream_flushable_or_commitable@@YA_NJ@Z",
+    "prototype": "bool __cdecl(int)",
+    "rank_score": 12,
+    "size": 37,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "sub_1000A63E",
+    "ea": "0x1000a63e",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000A63E",
+    "prototype": "int __stdcall(int, LPCWSTR lpString, int)",
+    "rank_score": 12,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "sub_1000F1D7",
+    "ea": "0x1000f1d7",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000F1D7",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CompareFunction",
+    "ea": "0x10018cf9",
+    "function_file": "functions/10018cf9_CompareFunction.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompareFunction",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 24,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__crt_stdio_output::common_data<char>::common_data<char>(void)",
+    "ea": "0x10013f6b",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0?$common_data@D@__crt_stdio_output@@IAE@XZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 71,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__crt_stdio_output::common_data<wchar_t>::common_data<wchar_t>(void)",
+    "ea": "0x10013fb2",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0?$common_data@_W@__crt_stdio_output@@IAE@XZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 76,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "sub_1000F18D",
+    "ea": "0x1000f18d",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000F18D",
+    "prototype": "int __stdcall(LPCWSTR szTableName)",
+    "rank_score": 11,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "sub_1000A95B",
+    "ea": "0x1000a95b",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000A95B",
+    "prototype": "int __stdcall(LPCVOID lpMem, int)",
+    "rank_score": 10,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "sub_1000A54F",
+    "ea": "0x1000a54f",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sub_1000A54F",
+    "prototype": "_DWORD(_DWORD, _DWORD, ...)",
+    "rank_score": 9,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "create_environment<char>(char * const)",
+    "ea": "0x1001672e",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$create_environment@D@@YAQAPADQAD@Z",
+    "prototype": "int __cdecl(char *Source)",
+    "rank_score": 8,
+    "size": 209,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "replace_current_thread_locale_nolock(__acrt_ptd * const,__crt_locale_data * const)",
+    "ea": "0x100171a6",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?replace_current_thread_locale_nolock@@YAXQAU__acrt_ptd@@QAU__crt_locale_data@@@Z",
+    "prototype": "void __cdecl(struct __acrt_ptd *const, struct __crt_locale_data *const)",
+    "rank_score": 6,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "___acrt_lowio_create_handle_array",
+    "ea": "0x1001d26b",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___acrt_lowio_create_handle_array",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "__crt_stdio_output::string_output_adapter<char>::write_character(char,int * const)",
+    "ea": "0x10015827",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?write_character@?$string_output_adapter@D@__crt_stdio_output@@QBE_NDQAH@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 66,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "__crt_stdio_output::string_output_adapter<wchar_t>::write_character(wchar_t,int * const)",
+    "ea": "0x10015869",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?write_character@?$string_output_adapter@_W@__crt_stdio_output@@QBE_N_WQAH@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "___vcrt_thread_detach",
+    "ea": "0x1001251e",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___vcrt_thread_detach",
+    "prototype": "__vcrt_bool __cdecl()",
+    "rank_score": 3,
+    "size": 11,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__crt_stdio_output::write_multiple_characters<__crt_stdio_output::string_output_adapter<char>,char>(__crt_stdio_output::string_output_adapter<char> const &,char,int,int * const)",
+    "ea": "0x10013f0e",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$write_multiple_characters@V?$string_output_adapter@D@__crt_stdio_output@@D@__crt_stdio_output@@YAXABV?$string_output_adapter@D@0@DHQAH@Z",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__crt_stdio_output::write_multiple_characters<__crt_stdio_output::string_output_adapter<wchar_t>,char>(__crt_stdio_output::string_output_adapter<wchar_t> const &,char,int,int * const)",
+    "ea": "0x10013f3a",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$write_multiple_characters@V?$string_output_adapter@_W@__crt_stdio_output@@D@__crt_stdio_output@@YAXABV?$string_output_adapter@_W@0@DHQAH@Z",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "___acrt_thread_attach",
+    "ea": "0x10016b61",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___acrt_thread_attach",
+    "prototype": "__crt_bool __cdecl()",
+    "rank_score": 2,
+    "size": 11,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "___acrt_thread_detach",
+    "ea": "0x10016b6c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___acrt_thread_detach",
+    "prototype": "__crt_bool __cdecl()",
+    "rank_score": 2,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "___vcrt_thread_attach",
+    "ea": "0x10012513",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "___vcrt_thread_attach",
+    "prototype": "__vcrt_bool __cdecl()",
+    "rank_score": 2,
+    "size": 11,
+    "tags": []
+  }
+]

@@ -1,0 +1,34 @@
+# wil::details::FeatureImpl<__WilFeatureTraits_Feature_ID59213523>::GetCachedFeatureEnabledState(void)
+
+- ea: `0x180025b4c`
+- end: `0x180025c85`
+- name: `?GetCachedFeatureEnabledState@?$FeatureImpl@U__WilFeatureTraits_Feature_ID59213523@@@details@wil@@AEAA?ATwil_details_FeatureStateCache@@XZ`
+- size: `313`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `5`
+- tags: ``
+
+## callers
+
+- `0x180027af8`
+- `0x180028414`
+
+## callees
+
+- `0x18000aa04`
+- `0x18000b598`
+- `0x18000fc44`
+- `0x180025b4c`
+- `0x180026ca4`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x180025c0a`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x180025c0a`
+
+## pseudocode
+
+```c
+
+```

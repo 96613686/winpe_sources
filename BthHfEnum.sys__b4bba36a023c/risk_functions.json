@@ -1,0 +1,3138 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BtGenerateDWORD64HashWithHandle",
+    "ea": "0x140019e38",
+    "function_file": "functions/140019e38_BtGenerateDWORD64HashWithHandle.md",
+    "matched_imports": [
+      "ksecdd!BCryptCreateHash",
+      "ksecdd!BCryptDestroyHash",
+      "ksecdd!BCryptFinishHash",
+      "ksecdd!BCryptGetProperty",
+      "ksecdd!BCryptHashData",
+      "ntoskrnl!ExFreePool"
+    ],
+    "matched_strings": [],
+    "name": "BtGenerateDWORD64HashWithHandle",
+    "prototype": "__int64 __fastcall(PUCHAR pbInput, ULONG cbInput, BCRYPT_HANDLE hObject)",
+    "rank_score": 1606,
+    "size": 420,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BthIoctlSetServiceEventsOld",
+    "ea": "0x140007478",
+    "function_file": "functions/140007478_BthIoctlSetServiceEventsOld.md",
+    "matched_imports": [
+      "btampm!BtaMpmConnectionRequest",
+      "ntoskrnl!ExEventObjectType",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "BthIoctlSetServiceEventsOld",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1430,
+    "size": 745,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BthHwSleepstudyRegister",
+    "ea": "0x14000b758",
+    "function_file": "functions/14000b758_BthHwSleepstudyRegister.md",
+    "matched_imports": [
+      "ext-ms-win-sleepstudy-legacy-l1-1-0!SleepstudyHelper_GenerateGuid",
+      "ext-ms-win-sleepstudy-legacy-l1-1-0!SleepstudyHelper_GetPdoFriendlyName",
+      "ext-ms-win-sleepstudy-legacy-l1-1-0!SleepstudyHelper_RegisterComponentEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "BthHwSleepstudyRegister",
+    "prototype": "",
+    "rank_score": 1419,
+    "size": 512,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "InitializeTelemetryAssertsKMByDriverObject",
+    "ea": "0x14001a05c",
+    "function_file": "functions/14001a05c_InitializeTelemetryAssertsKMByDriverObject.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoQueryFullDriverPath",
+      "ntoskrnl!RtlFreeAnsiString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "InitializeTelemetryAssertsKMByDriverObject",
+    "prototype": "",
+    "rank_score": 1204,
+    "size": 252,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BypassIoctlGetDescriptor",
+    "ea": "0x140007dc0",
+    "function_file": "functions/140007dc0_BypassIoctlGetDescriptor.md",
+    "matched_imports": [
+      "btampm!BtaMpmBuildIndirectStringFromMessageWithSingleUTF8Arg",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetDevicePropertyData",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "@System32\\drivers\\bthhfenum.sys"
+    ],
+    "name": "BypassIoctlGetDescriptor",
+    "prototype": "NTSTATUS __fastcall(struct WDFDEVICE__ *, __int64, _QWORD *)",
+    "rank_score": 1066,
+    "size": 934,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "GetRoleConfigurationState(HfpRoleConfigurationSet *)",
+    "ea": "0x1400285d4",
+    "function_file": "functions/1400285d4_GetRoleConfigurationState_HfpRoleConfigurationSet.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Bluetooth\\Audio\\Hfp"
+    ],
+    "name": "?GetRoleConfigurationState@@YAJPEAUHfpRoleConfigurationSet@@@Z",
+    "prototype": "__int64 __fastcall(struct HfpRoleConfigurationSet *)",
+    "rank_score": 892,
+    "size": 1355,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "Bus_EvtDeviceFileCreate",
+    "ea": "0x140002b80",
+    "function_file": "functions/140002b80_Bus_EvtDeviceFileCreate.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\service"
+    ],
+    "name": "Bus_EvtDeviceFileCreate",
+    "prototype": "",
+    "rank_score": 883,
+    "size": 858,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FxDriverEntryWorker",
+    "ea": "0x1400157c4",
+    "function_file": "functions/1400157c4_FxDriverEntryWorker.md",
+    "matched_imports": [
+      "WDFLDR!WdfLdrQueryInterface",
+      "WDFLDR!WdfVersionBind",
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "FxDriverEntryWorker",
+    "prototype": "__int64 __fastcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 829,
+    "size": 360,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BthQueryDeviceCompatFlags",
+    "ea": "0x14002f6d0",
+    "function_file": "functions/14002f6d0_BthQueryDeviceCompatFlags.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KseQueryDeviceFlags",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "BthQueryDeviceCompatFlags",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 216,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "InitializeDeviceFriendlyName(WDFDEVICE__ *)",
+    "ea": "0x140028b28",
+    "function_file": "functions/140028b28_InitializeDeviceFriendlyName_WDFDEVICE.md",
+    "matched_imports": [
+      "btampm!BtaMpmBuildIndirectStringFromMessageWithSingleUTF8Arg",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoSetDevicePropertyData"
+    ],
+    "matched_strings": [
+      "@System32\\drivers\\bthhfenum.sys"
+    ],
+    "name": "?InitializeDeviceFriendlyName@@YAXPEAUWDFDEVICE__@@@Z",
+    "prototype": "void __fastcall(struct WDFDEVICE__ *)",
+    "rank_score": 657,
+    "size": 459,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "Bus_OnHfConnectionUpdate",
+    "ea": "0x14002b22c",
+    "function_file": "functions/14002b22c_Bus_OnHfConnectionUpdate.md",
+    "matched_imports": [
+      "btampm!BtaMpmUpdateConnectionStatus",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "Bus_OnHfConnectionUpdate",
+    "prototype": "__int64 __fastcall(WdfHelpers *this)",
+    "rank_score": 646,
+    "size": 686,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "ScoCloseCompletionRoutine(WDFREQUEST__ *,WDFIOTARGET__ *,_WDF_REQUEST_COMPLETION_PARAMS *,void *)",
+    "ea": "0x14000e510",
+    "function_file": "functions/14000e510_ScoCloseCompletionRoutine_WDFREQUEST_WDFIOTARGET_WDF_REQUEST_COMPLETION_PARAMS_void.md",
+    "matched_imports": [
+      "ext-ms-win-sleepstudy-legacy-l1-1-0!SleepstudyHelper_ComponentInactive",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?ScoCloseCompletionRoutine@@YAXPEAUWDFREQUEST__@@PEAUWDFIOTARGET__@@PEAU_WDF_REQUEST_COMPLETION_PARAMS@@PEAX@Z",
+    "prototype": "void __fastcall(struct WDFREQUEST__ *, struct WDFIOTARGET__ *, struct _WDF_REQUEST_COMPLETION_PARAMS *, void *)",
+    "rank_score": 646,
+    "size": 868,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BthIoctlSetServiceEvents",
+    "ea": "0x140007154",
+    "function_file": "functions/140007154_BthIoctlSetServiceEvents.md",
+    "matched_imports": [
+      "btampm!BtaMpmConnectionRequest",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "BthIoctlSetServiceEvents",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 642,
+    "size": 797,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ScoCreate",
+    "ea": "0x1400126dc",
+    "function_file": "functions/1400126dc_ScoCreate.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "ScoCreate",
+    "prototype": "",
+    "rank_score": 450,
+    "size": 2661,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 10,
+    "demangled": "SetScoState",
+    "ea": "0x1400112c4",
+    "function_file": "functions/1400112c4_SetScoState.md",
+    "matched_imports": [
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "SetScoState",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 448,
+    "size": 440,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportFormatter::Configure(Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportPacketHeaderType,unsigned __int64)",
+    "ea": "0x140017004",
+    "function_file": "functions/140017004_Microsoft_Bluetooth_Profiles_Hfp_Streaming_TransportFormatter_Configure_Microsoft_Bluetooth_Profiles_Hfp_Strea.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Configure@TransportFormatter@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@QEAAJW4TransportPacketHeaderType@23456@_K@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64)",
+    "rank_score": 426,
+    "size": 258,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportParser::Configure(Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportPacketHeaderType,unsigned __int64)",
+    "ea": "0x14001710c",
+    "function_file": "functions/14001710c_Microsoft_Bluetooth_Profiles_Hfp_Streaming_TransportParser_Configure_Microsoft_Bluetooth_Profiles_Hfp_Streamin.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Configure@TransportParser@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@QEAAJW4TransportPacketHeaderType@23456@_K@Z",
+    "prototype": "__int64 __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportParser *, int, __int64)",
+    "rank_score": 425,
+    "size": 246,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "BthHwUnInitialize",
+    "ea": "0x14000b960",
+    "function_file": "functions/14000b960_BthHwUnInitialize.md",
+    "matched_imports": [
+      "btampm!BtaMpmUnregister",
+      "ext-ms-win-sleepstudy-legacy-l1-1-0!SleepstudyHelper_UnregisterComponent"
+    ],
+    "matched_strings": [],
+    "name": "BthHwUnInitialize",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 534,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x1400302ac",
+    "function_file": "functions/1400302ac_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 185,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BtGenerateDWORD64Hash",
+    "ea": "0x140019db8",
+    "function_file": "functions/140019db8_BtGenerateDWORD64Hash.md",
+    "matched_imports": [
+      "ksecdd!BCryptCloseAlgorithmProvider",
+      "ksecdd!BCryptOpenAlgorithmProvider"
+    ],
+    "matched_strings": [],
+    "name": "BtGenerateDWORD64Hash",
+    "prototype": "__int64 __fastcall(PUCHAR pbInput, ULONG cbInput)",
+    "rank_score": 413,
+    "size": 122,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14002a0b4",
+    "function_file": "functions/14002a0b4_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "ScoOpenCompletionRoutine(WDFREQUEST__ *,WDFIOTARGET__ *,_WDF_REQUEST_COMPLETION_PARAMS *,void *)",
+    "ea": "0x14000fa40",
+    "function_file": "functions/14000fa40_ScoOpenCompletionRoutine_WDFREQUEST_WDFIOTARGET_WDF_REQUEST_COMPLETION_PARAMS_void.md",
+    "matched_imports": [
+      "ext-ms-win-sleepstudy-legacy-l1-1-0!SleepstudyHelper_ComponentActive"
+    ],
+    "matched_strings": [],
+    "name": "?ScoOpenCompletionRoutine@@YAXPEAUWDFREQUEST__@@PEAUWDFIOTARGET__@@PEAU_WDF_REQUEST_COMPLETION_PARAMS@@PEAX@Z",
+    "prototype": "void(struct WDFREQUEST__ *, struct WDFIOTARGET__ *, struct _WDF_REQUEST_COMPLETION_PARAMS *, void *)",
+    "rank_score": 253,
+    "size": 1242,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 9,
+    "demangled": "ScoUpdateAvdtpSuspension",
+    "ea": "0x14001117c",
+    "function_file": "functions/14001117c_ScoUpdateAvdtpSuspension.md",
+    "matched_imports": [
+      "ntoskrnl!KeClearEvent"
+    ],
+    "matched_strings": [],
+    "name": "ScoUpdateAvdtpSuspension",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 247,
+    "size": 321,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Bus_CreatePdo",
+    "ea": "0x14002a548",
+    "function_file": "functions/14002a548_Bus_CreatePdo.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "Bus_CreatePdo",
+    "prototype": "",
+    "rank_score": 239,
+    "size": 1653,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14003003c",
+    "function_file": "functions/14003003c_DriverEntry.md",
+    "matched_imports": [
+      "ext-ms-win-sleepstudy-legacy-l1-1-0!SleepstudyHelper_Initialize"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 239,
+    "size": 616,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ScoMpmSuspendStatusCallback",
+    "ea": "0x1400139e8",
+    "function_file": "functions/1400139e8_ScoMpmSuspendStatusCallback.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ScoMpmSuspendStatusCallback",
+    "prototype": "",
+    "rank_score": 237,
+    "size": 241,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "WdfIoQueueFindAndCompleteStatusIoctlRequest",
+    "ea": "0x14000aac0",
+    "function_file": "functions/14000aac0_WdfIoQueueFindAndCompleteStatusIoctlRequest.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "WdfIoQueueFindAndCompleteStatusIoctlRequest",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 235,
+    "size": 871,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetEnabledRemoteService(WDFDEVICE__ *)",
+    "ea": "0x1400281d0",
+    "function_file": "functions/1400281d0_GetEnabledRemoteService_WDFDEVICE.md",
+    "matched_imports": [
+      "btampm!BtaMpmGetRemoteDeviceProfileVersionAndAttribute"
+    ],
+    "matched_strings": [],
+    "name": "?GetEnabledRemoteService@@YA?AU_GUID@@PEAUWDFDEVICE__@@@Z",
+    "prototype": "struct _GUID *__fastcall(struct _GUID *__return_ptr __struct_ptr retstr, struct WDFDEVICE__ *)",
+    "rank_score": 232,
+    "size": 1021,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 68,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_",
+    "ea": "0x1400041d0",
+    "function_file": "functions/1400041d0_WPP_RECORDER_AND_TRACE_SF.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, char, _DWORD, __int16, __int64)",
+    "rank_score": 228,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 43,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_IOCTL_BTHHFP",
+    "ea": "0x140004810",
+    "function_file": "functions/140004810_WPP_RECORDER_AND_TRACE_SF_IOCTL_BTHHFP.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_IOCTL_BTHHFP",
+    "prototype": "",
+    "rank_score": 228,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SBC::MakeAndInitializeSbcDecoder(SBC_CONFIG const &,SBC * *)",
+    "ea": "0x1400186b0",
+    "function_file": "functions/1400186b0_SBC_MakeAndInitializeSbcDecoder_SBC_CONFIG_const_SBC.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MakeAndInitializeSbcDecoder@SBC@@SAJAEBUSBC_CONFIG@@PEAPEAV1@@Z",
+    "prototype": "__int64 __fastcall(const struct SBC_CONFIG *, struct SBC **)",
+    "rank_score": 226,
+    "size": 136,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SBC::MakeAndInitializeSbcEncoder(SBC_CONFIG const &,SBC * *)",
+    "ea": "0x140018740",
+    "function_file": "functions/140018740_SBC_MakeAndInitializeSbcEncoder_SBC_CONFIG_const_SBC.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MakeAndInitializeSbcEncoder@SBC@@SAJAEBUSBC_CONFIG@@PEAPEAV1@@Z",
+    "prototype": "__int64 __fastcall(const struct SBC_CONFIG *, struct SBC **)",
+    "rank_score": 226,
+    "size": 136,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x14002a490",
+    "function_file": "functions/14002a490_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "WdfRequestCompleteOrForwardStatusIoctlRequest",
+    "ea": "0x14000b0ac",
+    "function_file": "functions/14000b0ac_WdfRequestCompleteOrForwardStatusIoctlRequest.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "WdfRequestCompleteOrForwardStatusIoctlRequest",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 444,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "operator delete(void *)",
+    "ea": "0x140015d00",
+    "function_file": "functions/140015d00_operator_delete_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 221,
+    "size": 32,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "BthHwEnterD0",
+    "ea": "0x14000b44c",
+    "function_file": "functions/14000b44c_BthHwEnterD0.md",
+    "matched_imports": [
+      "btampm!BtaMpmConnectionRequest"
+    ],
+    "matched_strings": [],
+    "name": "BthHwEnterD0",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 299,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer::SetBuffer(char *,unsigned __int64,bool)",
+    "ea": "0x140016e64",
+    "function_file": "functions/140016e64_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ByteBuffer_SetBuffer_char_unsigned_int64_bool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?SetBuffer@ByteBuffer@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@QEAAXPEAD_K_N@Z",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer *this, char *, __int64)",
+    "rank_score": 219,
+    "size": 98,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BthRfcommQueueAtResponse",
+    "ea": "0x14000be18",
+    "function_file": "functions/14000be18_BthRfcommQueueAtResponse.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "BthRfcommQueueAtResponse",
+    "prototype": "__int64 __fastcall(__int64, _OWORD *)",
+    "rank_score": 218,
+    "size": 386,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "WdfHelpers::WdfDeviceSetPropertyToDeviceInterface(WDFDEVICE__ *,_GUID const &,_UNICODE_STRING const &,_DEVPROPKEY const &,ulong,unsigned __int64,void *)",
+    "ea": "0x14002ce10",
+    "function_file": "functions/14002ce10_WdfHelpers_WdfDeviceSetPropertyToDeviceInterface_WDFDEVICE_GUID_const_UNICODE_STRING_const_DEVPROPKEY_const_ul.md",
+    "matched_imports": [
+      "ntoskrnl!IoSetDeviceInterfacePropertyData"
+    ],
+    "matched_strings": [],
+    "name": "?WdfDeviceSetPropertyToDeviceInterface@WdfHelpers@@YAJPEAUWDFDEVICE__@@AEBU_GUID@@AEBU_UNICODE_STRING@@AEBU_DEVPROPKEY@@K_KPEAX@Z",
+    "prototype": "__int64 __fastcall(WdfHelpers *__hidden this, struct WDFDEVICE__ *, const struct _GUID *, const struct _UNICODE_STRING *, const struct _DEVPROPKEY *, unsigned int, unsigned __int64, void *)",
+    "rank_score": 218,
+    "size": 260,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer::~ByteBuffer(void)",
+    "ea": "0x140016cac",
+    "function_file": "functions/140016cac_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ByteBuffer_ByteBuffer_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1ByteBuffer@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@UEAA@XZ",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer *__hidden this)",
+    "rank_score": 217,
+    "size": 60,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "RfcommDisconnect",
+    "ea": "0x14000c438",
+    "function_file": "functions/14000c438_RfcommDisconnect.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "RfcommDisconnect",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 152,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "RfcommStartConnect",
+    "ea": "0x14000c4d8",
+    "function_file": "functions/14000c4d8_RfcommStartConnect.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "RfcommStartConnect",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 143,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_DLLDCODECIDDDl",
+    "ea": "0x140014774",
+    "function_file": "functions/140014774_WPP_RECORDER_AND_TRACE_SF_DLLDCODECIDDDl.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_DLLDCODECIDDDl",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 413,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x1400051b8",
+    "function_file": "functions/1400051b8_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 218,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x14003036c",
+    "function_file": "functions/14003036c_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 229,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_qRFCOMM_CONNECTION_STATUSq",
+    "ea": "0x14000a82c",
+    "function_file": "functions/14000a82c_WPP_RECORDER_AND_TRACE_SF_qRFCOMM_CONNECTION_STATUSq.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_qRFCOMM_CONNECTION_STATUSq",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 223,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x1400010f4",
+    "function_file": "functions/1400010f4_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _QWORD)",
+    "rank_score": 214,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x140029ff0",
+    "function_file": "functions/140029ff0_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 187,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "FxStubDriverUnloadCommon(void)",
+    "ea": "0x140015754",
+    "function_file": "functions/140015754_FxStubDriverUnloadCommon_void.md",
+    "matched_imports": [
+      "WDFLDR!WdfVersionUnbind"
+    ],
+    "matched_strings": [],
+    "name": "?FxStubDriverUnloadCommon@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 213,
+    "size": 48,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_q",
+    "ea": "0x14000498c",
+    "function_file": "functions/14000498c_WPP_RECORDER_AND_TRACE_SF_q.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_q",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_D",
+    "ea": "0x1400146bc",
+    "function_file": "functions/1400146bc_WPP_RECORDER_AND_TRACE_SF_D.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_D",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, char)",
+    "rank_score": 209,
+    "size": 176,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_SCOSTATESCOSTATE",
+    "ea": "0x140014c60",
+    "function_file": "functions/140014c60_WPP_RECORDER_AND_TRACE_SF_SCOSTATESCOSTATE.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_SCOSTATESCOSTATE",
+    "prototype": "",
+    "rank_score": 208,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_dd",
+    "ea": "0x14000a594",
+    "function_file": "functions/14000a594_WPP_RECORDER_AND_TRACE_SF_dd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_dd",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 196,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "Bus_IsDeviceConnected",
+    "ea": "0x14002b1bc",
+    "function_file": "functions/14002b1bc_Bus_IsDeviceConnected.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "Bus_IsDeviceConnected",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 206,
+    "size": 104,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF__guid_",
+    "ea": "0x1400044dc",
+    "function_file": "functions/1400044dc_WPP_RECORDER_AND_TRACE_SF_guid.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF__guid_",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_i",
+    "ea": "0x140014f24",
+    "function_file": "functions/140014f24_WPP_RECORDER_AND_TRACE_SF_i.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_i",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 176,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WPP_RECORDER_AND_TRACE_SF_ll",
+    "ea": "0x1400048c8",
+    "function_file": "functions/1400048c8_WPP_RECORDER_AND_TRACE_SF_ll.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_AND_TRACE_SF_ll",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 190,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ScoStreamOpenRequest",
+    "ea": "0x14002c5b8",
+    "function_file": "functions/14002c5b8_ScoStreamOpenRequest.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Received Sco stream open request while already streaming"
+    ],
+    "name": "ScoStreamOpenRequest",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 80,
+    "size": 445,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "Bus_IsAutoConnectionDisabled",
+    "ea": "0x14002ae68",
+    "function_file": "functions/14002ae68_Bus_IsAutoConnectionDisabled.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control\\Bluetooth\\Audio\\Hfp"
+    ],
+    "name": "Bus_IsAutoConnectionDisabled",
+    "prototype": "__int64(void)",
+    "rank_score": 61,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Bus_IsRemoteVolumeControlDisabled",
+    "ea": "0x14002affc",
+    "function_file": "functions/14002affc_Bus_IsRemoteVolumeControlDisabled.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Bluetooth\\Audio\\Hfp\\AudioGateway"
+    ],
+    "name": "Bus_IsRemoteVolumeControlDisabled",
+    "prototype": "",
+    "rank_score": 60,
+    "size": 442,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "ScoChannelOpen(WDFDEVICE__ *,void *,_SCO_OPEN_CONTEXT const *,void (*)(long,WDFDEVICE__ *))",
+    "ea": "0x14000d76c",
+    "function_file": "functions/14000d76c_ScoChannelOpen_WDFDEVICE_void_SCO_OPEN_CONTEXT_const_void_long_WDFDEVICE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoChannelOpen@@YAJPEAUWDFDEVICE__@@PEAXPEBU_SCO_OPEN_CONTEXT@@P6AXJ0@Z@Z",
+    "prototype": "__int64 __fastcall(struct WDFDEVICE__ *, void *, const struct _SCO_OPEN_CONTEXT *, struct WDFREQUEST__ *)",
+    "rank_score": 55,
+    "size": 1406,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ScoHandleServiceScoRequestAcknowledgementRequest",
+    "ea": "0x140013148",
+    "function_file": "functions/140013148_ScoHandleServiceScoRequestAcknowledgementRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ScoHandleServiceScoRequestAcknowledgementRequest",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 53,
+    "size": 1377,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "ScoHandleStreamFailure(long,WDFDEVICE__ *)",
+    "ea": "0x14000f700",
+    "function_file": "functions/14000f700_ScoHandleStreamFailure_long_WDFDEVICE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoHandleStreamFailure@@YAXJPEAUWDFDEVICE__@@@Z",
+    "prototype": "void __fastcall(int, struct WDFDEVICE__ *)",
+    "rank_score": 44,
+    "size": 379,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 9,
+    "demangled": "ScoChannelClose",
+    "ea": "0x140012100",
+    "function_file": "functions/140012100_ScoChannelClose.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ScoChannelClose",
+    "prototype": "",
+    "rank_score": 41,
+    "size": 666,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HandleServiceCodecNegotiationIndicationRequest",
+    "ea": "0x140009ad4",
+    "function_file": "functions/140009ad4_HandleServiceCodecNegotiationIndicationRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HandleServiceCodecNegotiationIndicationRequest",
+    "prototype": "__int64 __fastcall(WdfHelpers *this, __int64)",
+    "rank_score": 40,
+    "size": 662,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HandleServiceAGCapabilitiesIndicationRequest",
+    "ea": "0x1400098ac",
+    "function_file": "functions/1400098ac_HandleServiceAGCapabilitiesIndicationRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HandleServiceAGCapabilitiesIndicationRequest",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 39,
+    "size": 546,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ScoStreamGetStatusUpdate",
+    "ea": "0x14002c41c",
+    "function_file": "functions/14002c41c_ScoStreamGetStatusUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ScoStreamGetStatusUpdate",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 39,
+    "size": 404,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CompleteServiceAGCapabilitiesRequest",
+    "ea": "0x140006108",
+    "function_file": "functions/140006108_CompleteServiceAGCapabilitiesRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompleteServiceAGCapabilitiesRequest",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 38,
+    "size": 395,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ScoBuildOpenEnchancedChannelBrb(_BRB *,ushort,WDFDEVICE__ *,void *,ScoConfigurationOptions const *,_SCOCONTEXT *)",
+    "ea": "0x14000d3dc",
+    "function_file": "functions/14000d3dc_ScoBuildOpenEnchancedChannelBrb_BRB_ushort_WDFDEVICE_void_ScoConfigurationOptions_const_SCOCONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoBuildOpenEnchancedChannelBrb@@YAXPEAU_BRB@@GPEAUWDFDEVICE__@@PEAXPEBUScoConfigurationOptions@@PEAU_SCOCONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _BRB *, unsigned __int16, struct WDFDEVICE__ *, void *, const struct ScoConfigurationOptions *, struct _SCOCONTEXT *)",
+    "rank_score": 38,
+    "size": 547,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BypassIoctlGetConnectionStatusUpdate",
+    "ea": "0x140007b28",
+    "function_file": "functions/140007b28_BypassIoctlGetConnectionStatusUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BypassIoctlGetConnectionStatusUpdate",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 37,
+    "size": 314,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BypassIoctlGetMicVolumeStatusUpdate",
+    "ea": "0x14000828c",
+    "function_file": "functions/14000828c_BypassIoctlGetMicVolumeStatusUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BypassIoctlGetMicVolumeStatusUpdate",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 37,
+    "size": 292,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BypassIoctlGetNrecDisableStatusUpdate",
+    "ea": "0x1400083b8",
+    "function_file": "functions/1400083b8_BypassIoctlGetNrecDisableStatusUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BypassIoctlGetNrecDisableStatusUpdate",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 37,
+    "size": 292,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BypassIoctlGetSpeakerVolumeStatusUpdate",
+    "ea": "0x1400084e4",
+    "function_file": "functions/1400084e4_BypassIoctlGetSpeakerVolumeStatusUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BypassIoctlGetSpeakerVolumeStatusUpdate",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 37,
+    "size": 309,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ScoBuildOpenChannelBrb(_BRB *,ushort,WDFDEVICE__ *,void *,ScoConfigurationOptions const *,_SCOCONTEXT *)",
+    "ea": "0x14000d238",
+    "function_file": "functions/14000d238_ScoBuildOpenChannelBrb_BRB_ushort_WDFDEVICE_void_ScoConfigurationOptions_const_SCOCONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoBuildOpenChannelBrb@@YAXPEAU_BRB@@GPEAUWDFDEVICE__@@PEAXPEBUScoConfigurationOptions@@PEAU_SCOCONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _BRB *, unsigned __int16, struct WDFDEVICE__ *, void *, const struct ScoConfigurationOptions *, struct _SCOCONTEXT *)",
+    "rank_score": 37,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 44,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14001adc0",
+    "function_file": "functions/14001adc0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 7,
+    "demangled": "WdfIoQueueFindAndCompleteIoctlRequest",
+    "ea": "0x14000a914",
+    "function_file": "functions/14000a914_WdfIoQueueFindAndCompleteIoctlRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdfIoQueueFindAndCompleteIoctlRequest",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 36,
+    "size": 419,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 296,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x14001ae00",
+    "function_file": "functions/14001ae00_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "RetrieveServiceScoStatusRequestForIndication(_SCOCONTEXT *,_BTHHF_SCO_STATUS_INDICATION)",
+    "ea": "0x14000ce50",
+    "function_file": "functions/14000ce50_RetrieveServiceScoStatusRequestForIndication_SCOCONTEXT_BTHHF_SCO_STATUS_INDICATION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RetrieveServiceScoStatusRequestForIndication@@YA?AU?$pair@JPEAUWDFREQUEST__@@@utl@@PEAU_SCOCONTEXT@@W4_BTHHF_SCO_STATUS_INDICATION@@@Z",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 566,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ScoChannelOpenBrbBuild(WDFREQUEST__ *,WDFDEVICE__ *,void *,_SCO_OPEN_CONTEXT const *,_BRB *)",
+    "ea": "0x14000df64",
+    "function_file": "functions/14000df64_ScoChannelOpenBrbBuild_WDFREQUEST_WDFDEVICE_void_SCO_OPEN_CONTEXT_const_BRB.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoChannelOpenBrbBuild@@YAJPEAUWDFREQUEST__@@PEAUWDFDEVICE__@@PEAXPEBU_SCO_OPEN_CONTEXT@@PEAU_BRB@@@Z",
+    "prototype": "int(struct WDFREQUEST__ *, struct WDFDEVICE__ *, void *, const struct _SCO_OPEN_CONTEXT *, struct _BRB *)",
+    "rank_score": 31,
+    "size": 521,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ScoChannelRemoteConnect(WDFDEVICE__ *,void *,_SCO_LINK_TYPE)",
+    "ea": "0x1400014c4",
+    "function_file": "functions/1400014c4_ScoChannelRemoteConnect_WDFDEVICE_void_SCO_LINK_TYPE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoChannelRemoteConnect@@YAXPEAUWDFDEVICE__@@PEAXW4_SCO_LINK_TYPE@@@Z",
+    "prototype": "void __fastcall(struct WDFDEVICE__ *, void *, enum _SCO_LINK_TYPE)",
+    "rank_score": 30,
+    "size": 522,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ScoHandleServiceScoStatusIndicationRequest",
+    "ea": "0x1400136b0",
+    "function_file": "functions/1400136b0_ScoHandleServiceScoStatusIndicationRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ScoHandleServiceScoStatusIndicationRequest",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 30,
+    "size": 634,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "AudioQueueClient_CreateTransferBrb",
+    "ea": "0x140011714",
+    "function_file": "functions/140011714_AudioQueueClient_CreateTransferBrb.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AudioQueueClient_CreateTransferBrb",
+    "prototype": "",
+    "rank_score": 29,
+    "size": 634,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CompleteAudioDeviceGetCodecIdRequest",
+    "ea": "0x140005f38",
+    "function_file": "functions/140005f38_CompleteAudioDeviceGetCodecIdRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompleteAudioDeviceGetCodecIdRequest",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 29,
+    "size": 455,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue::ScoRequestCompletionRoutine(WDFREQUEST__ *,WDFIOTARGET__ *,_WDF_REQUEST_COMPLETION_PARAMS *)",
+    "ea": "0x140016320",
+    "function_file": "functions/140016320_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioInputQueue_ScoRequestCompletionRoutine_WDFREQUEST_WDFIOTARGET_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoRequestCompletionRoutine@AudioInputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@EEAAXPEAUWDFREQUEST__@@PEAUWDFIOTARGET__@@PEAU_WDF_REQUEST_COMPLETION_PARAMS@@@Z",
+    "prototype": "void(Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue *__hidden this, struct WDFREQUEST__ *, struct WDFIOTARGET__ *, struct _WDF_REQUEST_COMPLETION_PARAMS *)",
+    "rank_score": 29,
+    "size": 503,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioOutputQueue::ScoRequestCompletionRoutine(Microsoft::Bluetooth::Profiles::Hfp::Streaming::RequestContext *,WDFIOTARGET__ *,_WDF_REQUEST_COMPLETION_PARAMS *)",
+    "ea": "0x140016520",
+    "function_file": "functions/140016520_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioOutputQueue_ScoRequestCompletionRoutine_Microsoft_Bluetooth_Pr.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoRequestCompletionRoutine@AudioOutputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@AEAAXPEAVRequestContext@23456@PEAUWDFIOTARGET__@@PEAU_WDF_REQUEST_COMPLETION_PARAMS@@@Z",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioOutputQueue *__hidden this, struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::RequestContext *, struct WDFIOTARGET__ *, struct _WDF_REQUEST_COMPLETION_PARAMS *)",
+    "rank_score": 29,
+    "size": 346,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportParser::WriteBytesFromTransportStream(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteReader *)",
+    "ea": "0x140017380",
+    "function_file": "functions/140017380_Microsoft_Bluetooth_Profiles_Hfp_Streaming_TransportParser_WriteBytesFromTransportStream_Microsoft_Bluetooth_P.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WriteBytesFromTransportStream@TransportParser@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@QEAA?AUParseStats@123456@PEAVByteReader@23456@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteReader *)",
+    "rank_score": 29,
+    "size": 1090,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue::EmptyCompletedScoRequests(void)",
+    "ea": "0x140015e9c",
+    "function_file": "functions/140015e9c_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioInputQueue_EmptyCompletedScoRequests_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EmptyCompletedScoRequests@AudioInputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@AEAAXXZ",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue *__hidden this)",
+    "rank_score": 27,
+    "size": 183,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140005298",
+    "function_file": "functions/140005298_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 275,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "EvtServiceRequestCancel(WDFREQUEST__ *)",
+    "ea": "0x140006470",
+    "function_file": "functions/140006470_EvtServiceRequestCancel_WDFREQUEST.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EvtServiceRequestCancel@@YAXPEAUWDFREQUEST__@@@Z",
+    "prototype": "void __fastcall(struct WDFREQUEST__ *)",
+    "rank_score": 26,
+    "size": 476,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue::ScoRequestSend(WDFQUEUE__ *,void (*)(WDFREQUEST__ *,WDFIOTARGET__ *,_WDF_REQUEST_COMPLETION_PARAMS *,void *),void *,WDFREQUEST__ *)",
+    "ea": "0x140016680",
+    "function_file": "functions/140016680_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioInputQueue_ScoRequestSend_WDFQUEUE_void_WDFREQUEST_WDFIOTARGET.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoRequestSend@AudioInputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@EEAAJPEAUWDFQUEUE__@@P6AXPEAUWDFREQUEST__@@PEAUWDFIOTARGET__@@PEAU_WDF_REQUEST_COMPLETION_PARAMS@@PEAX@Z41@Z",
+    "prototype": "__int64 __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue *__hidden this, struct WDFQUEUE__ *, void (*)(struct WDFREQUEST__ *, struct WDFIOTARGET__ *, struct _WDF_REQUEST_COMPLETION_PARAMS *, void *), void *, struct WDFREQUEST__ *)",
+    "rank_score": 26,
+    "size": 184,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "BusRfcommAttemptSlcDisconnect",
+    "ea": "0x14000c030",
+    "function_file": "functions/14000c030_BusRfcommAttemptSlcDisconnect.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BusRfcommAttemptSlcDisconnect",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 168,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "BusRfcommAttemptSlcReconnect",
+    "ea": "0x14000c0e0",
+    "function_file": "functions/14000c0e0_BusRfcommAttemptSlcReconnect.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BusRfcommAttemptSlcReconnect",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 168,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "Microsoft::Bluetooth::Foundation::SentRequestCollection::Remove(WDFREQUEST__ *)",
+    "ea": "0x140016214",
+    "function_file": "functions/140016214_Microsoft_Bluetooth_Foundation_SentRequestCollection_Remove_WDFREQUEST.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Remove@SentRequestCollection@Foundation@Bluetooth@Microsoft@@QEAAXPEAUWDFREQUEST__@@@Z",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Foundation::SentRequestCollection *__hidden this, struct WDFREQUEST__ *)",
+    "rank_score": 25,
+    "size": 119,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ScoDataCompletionTimer(WDFTIMER__ *)",
+    "ea": "0x14000f2a0",
+    "function_file": "functions/14000f2a0_ScoDataCompletionTimer_WDFTIMER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoDataCompletionTimer@@YAXPEAUWDFTIMER__@@@Z",
+    "prototype": "void __fastcall(struct WDFTIMER__ *)",
+    "rank_score": 25,
+    "size": 249,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "memset",
+    "ea": "0x14001b2c0",
+    "function_file": "functions/14001b2c0_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 25,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader::DecrementPendingRequestCounter(void)",
+    "ea": "0x140017ba4",
+    "function_file": "functions/140017ba4_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ScoReader_DecrementPendingRequestCounter_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DecrementPendingRequestCounter@ScoReader@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@AEAAXXZ",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader *__hidden this)",
+    "rank_score": 24,
+    "size": 43,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ScoSelectChannelConfigsFromCodecId(_CODECID,_SCO_OPEN_CONTEXT const * *)",
+    "ea": "0x140010be8",
+    "function_file": "functions/140010be8_ScoSelectChannelConfigsFromCodecId_CODECID_SCO_OPEN_CONTEXT_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoSelectChannelConfigsFromCodecId@@YAJW4_CODECID@@PEAPEBU_SCO_OPEN_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 24,
+    "size": 146,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14001ac1c",
+    "function_file": "functions/14001ac1c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "AudioQueueClient_CompleteStreamTransferRequest",
+    "ea": "0x1400114e0",
+    "function_file": "functions/1400114e0_AudioQueueClient_CompleteStreamTransferRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AudioQueueClient_CompleteStreamTransferRequest",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 558,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader::GetPendingRequestCounter(void)",
+    "ea": "0x140017bd8",
+    "function_file": "functions/140017bd8_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ScoReader_GetPendingRequestCounter_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetPendingRequestCounter@ScoReader@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@AEBAHXZ",
+    "prototype": "__int64 __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader *__hidden this)",
+    "rank_score": 23,
+    "size": 45,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader::IncrementPendingRequestCounter(void)",
+    "ea": "0x140017c0c",
+    "function_file": "functions/140017c0c_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ScoReader_IncrementPendingRequestCounter_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IncrementPendingRequestCounter@ScoReader@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@AEAAXXZ",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader *__hidden this)",
+    "rank_score": 23,
+    "size": 43,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "ScoStreamProcessDataQueue(WDFQUEUE__ *)",
+    "ea": "0x140010eb0",
+    "function_file": "functions/140010eb0_ScoStreamProcessDataQueue_WDFQUEUE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoStreamProcessDataQueue@@YAXPEAUWDFQUEUE__@@@Z",
+    "prototype": "void __fastcall(struct WDFQUEUE__ *)",
+    "rank_score": 23,
+    "size": 515,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FxDriverEntry",
+    "ea": "0x140015790",
+    "function_file": "functions/140015790_FxDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FxDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x14002a3f0",
+    "function_file": "functions/14002a3f0_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader::SendRequest(void)",
+    "ea": "0x14002f2f4",
+    "function_file": "functions/14002f2f4_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ScoReader_SendRequest_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SendRequest@ScoReader@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@AEAA_NXZ",
+    "prototype": "bool __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader *__hidden this)",
+    "rank_score": 21,
+    "size": 305,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "wil::details::unique_storage<wil::details::resource_policy<WDFSPINLOCK__ *,void (*)(WDFSPINLOCK__ *),&WdfSpinLockRelease(WDFSPINLOCK__ *),wistd::integral_constant<unsigned __int64,2>,WDFSPINLOCK__ *,WDFSPINLOCK__ *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<WDFSPINLOCK__ *,void (*)(WDFSPINLOCK__ *),&WdfSpinLockRelease(WDFSPINLOCK__ *),wistd::integral_constant<unsigned __int64,2>,WDFSPINLOCK__ *,WDFSPINLOCK__ *,0,std::nullptr_t>>(void)",
+    "ea": "0x14000c570",
+    "function_file": "functions/14000c570_wil_details_unique_storage_wil_details_resource_policy_WDFSPINLOCK_void_WDFSPINLOCK_WdfSpinLockRelease_WDFSPIN.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_storage@U?$resource_policy@PEAUWDFSPINLOCK__@@P6AXPEAU1@@Z$1?WdfSpinLockRelease@@YAX0@ZU?$integral_constant@_K$01@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 21,
+    "size": 44,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioQueueProxy::GetContextFromObject(WDFQUEUE__ *)",
+    "ea": "0x140016118",
+    "function_file": "functions/140016118_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioQueueProxy_GetContextFromObject_WDFQUEUE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetContextFromObject@AudioQueueProxy@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@SAPEAV123456@PEAUWDFQUEUE__@@@Z",
+    "prototype": "struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioQueueProxy *__fastcall(struct WDFQUEUE__ *)",
+    "rank_score": 20,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ScoChannelOpenAsync(WDFDEVICE__ *)",
+    "ea": "0x14000dcf0",
+    "function_file": "functions/14000dcf0_ScoChannelOpenAsync_WDFDEVICE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoChannelOpenAsync@@YAJPEAUWDFDEVICE__@@@Z",
+    "prototype": "__int64 __fastcall(struct WDFDEVICE__ *)",
+    "rank_score": 20,
+    "size": 622,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "ScoSetCodecId",
+    "ea": "0x140013ae0",
+    "function_file": "functions/140013ae0_ScoSetCodecId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ScoSetCodecId",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 20,
+    "size": 459,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "wil::acquire_wdf_spin_lock(WDFSPINLOCK__ *)",
+    "ea": "0x140011484",
+    "function_file": "functions/140011484_wil_acquire_wdf_spin_lock_WDFSPINLOCK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?acquire_wdf_spin_lock@wil@@YA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAUWDFSPINLOCK__@@P6AXPEAU1@@Z$1?WdfSpinLockRelease@@YAX0@ZU?$integral_constant@_K$01@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@1@PEAUWDFSPINLOCK__@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 20,
+    "size": 60,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BthIoctlAtCommand",
+    "ea": "0x1400069f8",
+    "function_file": "functions/1400069f8_BthIoctlAtCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BthIoctlAtCommand",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 19,
+    "size": 661,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "GetScoState(_SCOCONTEXT *)",
+    "ea": "0x14000cb04",
+    "function_file": "functions/14000cb04_GetScoState_SCOCONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetScoState@@YA?AW4SCOSTATE@@PEAU_SCOCONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 19,
+    "size": 51,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "HandleAudioDriverScoOpen",
+    "ea": "0x140009750",
+    "function_file": "functions/140009750_HandleAudioDriverScoOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HandleAudioDriverScoOpen",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 18,
+    "size": 339,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "wil::details::unique_storage<wil::details::resource_policy<WDFSTRING__ *,void (*)(void *),&WdfObjectDelete(void *),wistd::integral_constant<unsigned __int64,0>,WDFSTRING__ *,WDFSTRING__ *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<WDFSTRING__ *,void (*)(void *),&WdfObjectDelete(void *),wistd::integral_constant<unsigned __int64,0>,WDFSTRING__ *,WDFSTRING__ *,0,std::nullptr_t>>(void)",
+    "ea": "0x140001a50",
+    "function_file": "functions/140001a50_wil_details_unique_storage_wil_details_resource_policy_WDFSTRING_void_void_WdfObjectDelete_void_wistd_integral.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_storage@U?$resource_policy@PEAUWDFSTRING__@@P6AXPEAX@Z$1?WdfObjectDelete@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 44,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Microsoft::Bluetooth::Foundation::SentRequestCollection::Stop(void)",
+    "ea": "0x1400167b8",
+    "function_file": "functions/1400167b8_Microsoft_Bluetooth_Foundation_SentRequestCollection_Stop_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Stop@SentRequestCollection@Foundation@Bluetooth@Microsoft@@QEAAXXZ",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Foundation::SentRequestCollection *__hidden this)",
+    "rank_score": 17,
+    "size": 286,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue::EvtScoRequestCompletionWorkItem(WDFWORKITEM__ *)",
+    "ea": "0x14002d320",
+    "function_file": "functions/14002d320_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioInputQueue_EvtScoRequestCompletionWorkItem_WDFWORKITEM.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EvtScoRequestCompletionWorkItem@AudioInputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@CAXPEAUWDFWORKITEM__@@@Z",
+    "prototype": "void __fastcall(struct WDFWORKITEM__ *)",
+    "rank_score": 17,
+    "size": 111,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioOutputQueue::EvtAttemptProcessingWorkItem(WDFWORKITEM__ *)",
+    "ea": "0x14002d280",
+    "function_file": "functions/14002d280_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioOutputQueue_EvtAttemptProcessingWorkItem_WDFWORKITEM.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EvtAttemptProcessingWorkItem@AudioOutputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@CAXPEAUWDFWORKITEM__@@@Z",
+    "prototype": "void __fastcall(struct WDFWORKITEM__ *)",
+    "rank_score": 17,
+    "size": 146,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader::ContinueReading(void)",
+    "ea": "0x14002f250",
+    "function_file": "functions/14002f250_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ScoReader_ContinueReading_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ContinueReading@ScoReader@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@QEAAXXZ",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader *__hidden this)",
+    "rank_score": 17,
+    "size": 155,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Bus_PlugInDevice",
+    "ea": "0x1400296f8",
+    "function_file": "functions/1400296f8_Bus_PlugInDevice.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Bus_PlugInDevice",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 293,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportFormatter::WriteFrameBytes(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteReader *)",
+    "ea": "0x1400177c8",
+    "function_file": "functions/1400177c8_Microsoft_Bluetooth_Profiles_Hfp_Streaming_TransportFormatter_WriteFrameBytes_Microsoft_Bluetooth_Profiles_Hfp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WriteFrameBytes@TransportFormatter@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@QEAAXPEAVByteReader@23456@@Z",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportFormatter *__hidden this, struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteReader *)",
+    "rank_score": 16,
+    "size": 201,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SBC::ConfigDecode(SBC_CONFIG const &)",
+    "ea": "0x140017fe8",
+    "function_file": "functions/140017fe8_SBC_ConfigDecode_SBC_CONFIG_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConfigDecode@SBC@@QEAAJAEBUSBC_CONFIG@@@Z",
+    "prototype": "__int64 __fastcall(SBC *__hidden this, const struct SBC_CONFIG *)",
+    "rank_score": 16,
+    "size": 163,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SBC::ConfigEncode(SBC_CONFIG const &,bool)",
+    "ea": "0x140018094",
+    "function_file": "functions/140018094_SBC_ConfigEncode_SBC_CONFIG_const_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConfigEncode@SBC@@QEAAJAEBUSBC_CONFIG@@_N@Z",
+    "prototype": "int(SBC *__hidden this, const struct SBC_CONFIG *, bool)",
+    "rank_score": 16,
+    "size": 171,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WdfHelpers::WdfDeviceCopyDevicePropertyToInterface(WDFDEVICE__ *,_DEVPROPKEY const &,_GUID const &,_UNICODE_STRING const &)",
+    "ea": "0x14002cd18",
+    "function_file": "functions/14002cd18_WdfHelpers_WdfDeviceCopyDevicePropertyToInterface_WDFDEVICE_DEVPROPKEY_const_GUID_const_UNICODE_STRING_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WdfDeviceCopyDevicePropertyToInterface@WdfHelpers@@YAJPEAUWDFDEVICE__@@AEBU_DEVPROPKEY@@AEBU_GUID@@AEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(WdfHelpers *__hidden this, struct WDFDEVICE__ *, const struct _DEVPROPKEY *, const struct _GUID *, const struct _UNICODE_STRING *)",
+    "rank_score": 16,
+    "size": 242,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "memmove",
+    "ea": "0x14001afc0",
+    "function_file": "functions/14001afc0_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 16,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x140004fac",
+    "function_file": "functions/140004fac_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 380,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x140005130",
+    "function_file": "functions/140005130_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 129,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140005644",
+    "function_file": "functions/140005644_wil_details_RecordCachedUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BthRfcommCreateQueue",
+    "ea": "0x14000bd78",
+    "function_file": "functions/14000bd78_BthRfcommCreateQueue.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BthRfcommCreateQueue",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 153,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BthScoServerRemoveReference(WDFDEVICE__ *,_SCO_INDICATION_PARAMETERS *)",
+    "ea": "0x14000ca10",
+    "function_file": "functions/14000ca10_BthScoServerRemoveReference_WDFDEVICE_SCO_INDICATION_PARAMETERS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?BthScoServerRemoveReference@@YAXPEAUWDFDEVICE__@@PEAU_SCO_INDICATION_PARAMETERS@@@Z",
+    "prototype": "void __fastcall(struct WDFDEVICE__ *, struct _SCO_INDICATION_PARAMETERS *)",
+    "rank_score": 15,
+    "size": 237,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportFormatter::ReadTransportStreamBytes(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteWriter *)",
+    "ea": "0x14001728c",
+    "function_file": "functions/14001728c_Microsoft_Bluetooth_Profiles_Hfp_Streaming_TransportFormatter_ReadTransportStreamBytes_Microsoft_Bluetooth_Pro.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadTransportStreamBytes@TransportFormatter@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@QEAAXPEAVByteWriter@23456@@Z",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportFormatter *__hidden this, struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteWriter *)",
+    "rank_score": 15,
+    "size": 123,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportParser::ReadFrameBytes(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteWriter *)",
+    "ea": "0x140017208",
+    "function_file": "functions/140017208_Microsoft_Bluetooth_Profiles_Hfp_Streaming_TransportParser_ReadFrameBytes_Microsoft_Bluetooth_Profiles_Hfp_Str.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadFrameBytes@TransportParser@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@QEAAXPEAVByteWriter@23456@@Z",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportParser *__hidden this, struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteWriter *)",
+    "rank_score": 15,
+    "size": 125,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ScoReopenTimer(WDFTIMER__ *)",
+    "ea": "0x14000fff0",
+    "function_file": "functions/14000fff0_ScoReopenTimer_WDFTIMER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoReopenTimer@@YAXPEAUWDFTIMER__@@@Z",
+    "prototype": "void __fastcall(struct WDFTIMER__ *)",
+    "rank_score": 15,
+    "size": 214,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14002a268",
+    "function_file": "functions/14002a268_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Bus_EvtDeviceQueryRemove",
+    "ea": "0x140002ee0",
+    "function_file": "functions/140002ee0_Bus_EvtDeviceQueryRemove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Bus_EvtDeviceQueryRemove",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 134,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportParser::GetTransportPacketStride(void)",
+    "ea": "0x140016d14",
+    "function_file": "functions/140016d14_Microsoft_Bluetooth_Profiles_Hfp_Streaming_TransportParser_GetTransportPacketStride_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTransportPacketStride@TransportParser@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@QEBA_KXZ",
+    "prototype": "unsigned __int64 __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::TransportParser *__hidden this)",
+    "rank_score": 14,
+    "size": 5,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::out_param_t<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<WDFKEY__ *,void (*)(void *),&WdfObjectDelete(void *),wistd::integral_constant<unsigned __int64,0>,WDFKEY__ *,WDFKEY__ *,0,std::nullptr_t>>>>::~out_param_t<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<WDFKEY__ *,void (*)(void *),&WdfObjectDelete(void *),wistd::integral_constant<unsigned __int64,0>,WDFKEY__ *,WDFKEY__ *,0,std::nullptr_t>>>>(void)",
+    "ea": "0x140001a2c",
+    "function_file": "functions/140001a2c_wil_details_out_param_t_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_WDFKEY_void_vo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$out_param_t@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAUWDFKEY__@@P6AXPEAX@Z$1?WdfObjectDelete@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 28,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::unique_storage<wil::details::resource_policy<WDFKEY__ *,void (*)(void *),&WdfObjectDelete(void *),wistd::integral_constant<unsigned __int64,0>,WDFKEY__ *,WDFKEY__ *,0,std::nullptr_t>>::reset(WDFKEY__ *)",
+    "ea": "0x1400024b8",
+    "function_file": "functions/1400024b8_wil_details_unique_storage_wil_details_resource_policy_WDFKEY_void_void_WdfObjectDelete_void_wistd_integral_co.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?reset@?$unique_storage@U?$resource_policy@PEAUWDFKEY__@@P6AXPEAX@Z$1?WdfObjectDelete@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAAXPEAUWDFKEY__@@@Z",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 65,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::wdf_request_completer::reset(WDFREQUEST__ *)",
+    "ea": "0x140002500",
+    "function_file": "functions/140002500_wil_wdf_request_completer_reset_WDFREQUEST.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?reset@wdf_request_completer@wil@@QEAAXPEAUWDFREQUEST__@@@Z",
+    "prototype": "void __fastcall(wil::wdf_request_completer *__hidden this, struct WDFREQUEST__ *)",
+    "rank_score": 14,
+    "size": 201,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AudioQueue_IsReadyToProcessNextRequest",
+    "ea": "0x14002ea08",
+    "function_file": "functions/14002ea08_AudioQueue_IsReadyToProcessNextRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AudioQueue_IsReadyToProcessNextRequest",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 31,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue::GetFirstCompletedScoRequest(void)",
+    "ea": "0x14001614c",
+    "function_file": "functions/14001614c_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioInputQueue_GetFirstCompletedScoRequest_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFirstCompletedScoRequest@AudioInputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@AEAAPEAVRequestContext@23456@XZ",
+    "prototype": "struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::RequestContext *__fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue *__hidden this)",
+    "rank_score": 13,
+    "size": 166,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue::RemoveCompletedScoRequest(Microsoft::Bluetooth::Profiles::Hfp::Streaming::RequestContext *)",
+    "ea": "0x140016294",
+    "function_file": "functions/140016294_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioInputQueue_RemoveCompletedScoRequest_Microsoft_Bluetooth_Profi.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveCompletedScoRequest@AudioInputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@AEAAXPEAVRequestContext@23456@@Z",
+    "prototype": "void __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue *__hidden this, struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::RequestContext *)",
+    "rank_score": 13,
+    "size": 130,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioOutputQueue::IsReadyToProcessNextRequest(void)",
+    "ea": "0x14002d400",
+    "function_file": "functions/14002d400_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioOutputQueue_IsReadyToProcessNextRequest_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsReadyToProcessNextRequest@AudioOutputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@UEBA_NXZ",
+    "prototype": "bool __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioOutputQueue *__hidden this)",
+    "rank_score": 13,
+    "size": 108,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer::ReadBytes(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteWriter *)",
+    "ea": "0x140016df0",
+    "function_file": "functions/140016df0_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ByteBuffer_ReadBytes_Microsoft_Bluetooth_Profiles_Hfp_Streaming_Byt.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadBytes@ByteBuffer@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@UEAA_KPEAVByteWriter@23456@@Z",
+    "prototype": "unsigned __int64 __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer *__hidden this, struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteWriter *)",
+    "rank_score": 13,
+    "size": 76,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer::WriteBytes(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteReader *)",
+    "ea": "0x140016ed0",
+    "function_file": "functions/140016ed0_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ByteBuffer_WriteBytes_Microsoft_Bluetooth_Profiles_Hfp_Streaming_By.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WriteBytes@ByteBuffer@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@UEAA_KPEAVByteReader@23456@@Z",
+    "prototype": "unsigned __int64 __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer *__hidden this, struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteReader *)",
+    "rank_score": 13,
+    "size": 76,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader::ReturnRequestToPool(WDFREQUEST__ *)",
+    "ea": "0x140017cb8",
+    "function_file": "functions/140017cb8_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ScoReader_ReturnRequestToPool_WDFREQUEST.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReturnRequestToPool@ScoReader@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@SAXPEAUWDFREQUEST__@@@Z",
+    "prototype": "void __fastcall(struct WDFREQUEST__ *)",
+    "rank_score": 13,
+    "size": 39,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SBC::IsConfigValid(SBC_CONFIG const &)",
+    "ea": "0x140018634",
+    "function_file": "functions/140018634_SBC_IsConfigValid_SBC_CONFIG_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsConfigValid@SBC@@SA_NAEBUSBC_CONFIG@@@Z",
+    "prototype": "bool __fastcall(const struct SBC_CONFIG *)",
+    "rank_score": 13,
+    "size": 117,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "WPP_SF_q",
+    "ea": "0x140016a90",
+    "function_file": "functions/140016a90_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 13,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x140004e00",
+    "function_file": "functions/140004e00_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x140004ed0",
+    "function_file": "functions/140004ed0_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue::GetCompletedScoRequestCount(void)",
+    "ea": "0x140016094",
+    "function_file": "functions/140016094_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioInputQueue_GetCompletedScoRequestCount_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCompletedScoRequestCount@AudioInputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@AEAAKXZ",
+    "prototype": "unsigned int __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue *__hidden this)",
+    "rank_score": 12,
+    "size": 125,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue::IsReadyToProcessNextRequest(void)",
+    "ea": "0x14002d3a0",
+    "function_file": "functions/14002d3a0_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioInputQueue_IsReadyToProcessNextRequest_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsReadyToProcessNextRequest@AudioInputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@UEBA_NXZ",
+    "prototype": "bool __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioInputQueue *__hidden this)",
+    "rank_score": 12,
+    "size": 87,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::AudioOutputQueue::EvtScoRequestCompletionRoutine(WDFREQUEST__ *,WDFIOTARGET__ *,_WDF_REQUEST_COMPLETION_PARAMS *,void *)",
+    "ea": "0x140016040",
+    "function_file": "functions/140016040_Microsoft_Bluetooth_Profiles_Hfp_Streaming_AudioOutputQueue_EvtScoRequestCompletionRoutine_WDFREQUEST_WDFIOTAR.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EvtScoRequestCompletionRoutine@AudioOutputQueue@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@CAXPEAUWDFREQUEST__@@PEAUWDFIOTARGET__@@PEAU_WDF_REQUEST_COMPLETION_PARAMS@@PEAX@Z",
+    "prototype": "static void(struct WDFREQUEST__ *, struct WDFIOTARGET__ *, struct _WDF_REQUEST_COMPLETION_PARAMS *, void *)",
+    "rank_score": 12,
+    "size": 78,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ScoReader::RequestCompletionRoutine(WDFREQUEST__ *,WDFIOTARGET__ *,_WDF_REQUEST_COMPLETION_PARAMS *,void *)",
+    "ea": "0x140017c70",
+    "function_file": "functions/140017c70_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ScoReader_RequestCompletionRoutine_WDFREQUEST_WDFIOTARGET_WDF_REQUE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RequestCompletionRoutine@ScoReader@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@CAXPEAUWDFREQUEST__@@PEAUWDFIOTARGET__@@PEAU_WDF_REQUEST_COMPLETION_PARAMS@@PEAX@Z",
+    "prototype": "static void(struct WDFREQUEST__ *, struct WDFIOTARGET__ *, struct _WDF_REQUEST_COMPLETION_PARAMS *, void *)",
+    "rank_score": 12,
+    "size": 63,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ScoOpenCompletionGetChannelHandle(_SCOCONTEXT *,_BRB *)",
+    "ea": "0x14000f9e0",
+    "function_file": "functions/14000f9e0_ScoOpenCompletionGetChannelHandle_SCOCONTEXT_BRB.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoOpenCompletionGetChannelHandle@@YAJPEAU_SCOCONTEXT@@PEAU_BRB@@@Z",
+    "prototype": "__int64 __fastcall(struct _SCOCONTEXT *, struct _BRB *)",
+    "rank_score": 12,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140030008",
+    "function_file": "functions/140030008_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "wil::out_param<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<WDFKEY__ *,void (*)(void *),&WdfObjectDelete(void *),wistd::integral_constant<unsigned __int64,0>,WDFKEY__ *,WDFKEY__ *,0,std::nullptr_t>>>>(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<WDFKEY__ *,void (*)(void *),&WdfObjectDelete(void *),wistd::integral_constant<unsigned __int64,0>,WDFKEY__ *,WDFKEY__ *,0,std::nullptr_t>>> &)",
+    "ea": "0x140001a10",
+    "function_file": "functions/140001a10_wil_out_param_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_WDFKEY_void_void_WdfObje.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$out_param@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAUWDFKEY__@@P6AXPEAX@Z$1?WdfObjectDelete@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@wil@@@wil@@YA?AU?$out_param_t@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAUWDFKEY__@@P6AXPEAX@Z$1?WdfObjectDelete@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@wil@@@details@0@AEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAUWDFKEY__@@P6AXPEAX@Z$1?WdfObjectDelete@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@0@@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 19,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x1400053b4",
+    "function_file": "functions/1400053b4_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 79,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer::ReadBytes(char *,unsigned __int64)",
+    "ea": "0x140016d80",
+    "function_file": "functions/140016d80_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ByteBuffer_ReadBytes_char_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadBytes@ByteBuffer@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@UEAA_KPEAD_K@Z",
+    "prototype": "size_t __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer *this, char *, size_t)",
+    "rank_score": 11,
+    "size": 92,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer::WriteBytes(char const *,unsigned __int64)",
+    "ea": "0x140016f30",
+    "function_file": "functions/140016f30_Microsoft_Bluetooth_Profiles_Hfp_Streaming_ByteBuffer_WriteBytes_char_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WriteBytes@ByteBuffer@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@UEAA_KPEBD_K@Z",
+    "prototype": "size_t __fastcall(Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteBuffer *this, const char *, size_t)",
+    "rank_score": 11,
+    "size": 86,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "NullCodec::GetInputBuffer(void)",
+    "ea": "0x14002ebc0",
+    "function_file": "functions/14002ebc0_NullCodec_GetInputBuffer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetInputBuffer@NullCodec@@UEAAAEAVByteWriter@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@XZ",
+    "prototype": "struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteWriter *__fastcall(NullCodec *__hidden this)",
+    "rank_score": 10,
+    "size": 5,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "NullCodec::GetOutputBuffer(void)",
+    "ea": "0x14002ec10",
+    "function_file": "functions/14002ec10_NullCodec_GetOutputBuffer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetOutputBuffer@NullCodec@@UEAAAEAVByteReader@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@XZ",
+    "prototype": "struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteReader *__fastcall(NullCodec *__hidden this)",
+    "rank_score": 10,
+    "size": 5,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "SbcWbsCodec::GetInputBuffer(void)",
+    "ea": "0x14002ebd0",
+    "function_file": "functions/14002ebd0_SbcWbsCodec_GetInputBuffer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetInputBuffer@SbcWbsCodec@@UEAAAEAVByteWriter@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@XZ",
+    "prototype": "struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteWriter *__fastcall(SbcWbsCodec *__hidden this)",
+    "rank_score": 10,
+    "size": 5,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "SbcWbsCodec::GetOutputBuffer(void)",
+    "ea": "0x14002ec20",
+    "function_file": "functions/14002ec20_SbcWbsCodec_GetOutputBuffer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetOutputBuffer@SbcWbsCodec@@UEAAAEAVByteReader@Streaming@Hfp@Profiles@Bluetooth@Microsoft@@XZ",
+    "prototype": "struct Microsoft::Bluetooth::Profiles::Hfp::Streaming::ByteReader *__fastcall(SbcWbsCodec *__hidden this)",
+    "rank_score": 10,
+    "size": 5,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "WdfIoQueueFindIoctlRequest",
+    "ea": "0x14000ae30",
+    "function_file": "functions/14000ae30_WdfIoQueueFindIoctlRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdfIoQueueFindIoctlRequest",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 452,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "WdfIoTargetCreateAndFormatRequestForBrb",
+    "ea": "0x14000affc",
+    "function_file": "functions/14000affc_WdfIoTargetCreateAndFormatRequestForBrb.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdfIoTargetCreateAndFormatRequestForBrb",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 10,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "_tlgKeywordOn",
+    "ea": "0x1400010c4",
+    "function_file": "functions/1400010c4_tlgKeywordOn.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgKeywordOn",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140004dd8",
+    "function_file": "functions/140004dd8_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ScoAudioDataQueueReady(WDFQUEUE__ *,void *)",
+    "ea": "0x14000d090",
+    "function_file": "functions/14000d090_ScoAudioDataQueueReady_WDFQUEUE_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoAudioDataQueueReady@@YAXPEAUWDFQUEUE__@@PEAX@Z",
+    "prototype": "void __fastcall(struct WDFQUEUE__ *, void *)",
+    "rank_score": 6,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x140016c14",
+    "function_file": "functions/140016c14_WPP_SF_qq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 6,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapSz<ushort> const &)",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapSz@G@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapSz@G@@@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "WPP_SF_qdq",
+    "ea": "0x140016ba8",
+    "function_file": "functions/140016ba8_WPP_SF_qdq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qdq",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &)",
+    "ea": "0x140001248",
+    "function_file": "functions/140001248_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@U1@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@43@Z",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 149,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x1400018f4",
+    "function_file": "functions/1400018f4_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@4@Z",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 147,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SBC::SbcControl::ReadSbcFrameData(int const (* const)[8],ushort (* const)[2][8])",
+    "ea": "0x1400187d0",
+    "function_file": "functions/1400187d0_SBC_SbcControl_ReadSbcFrameData_int_const_const_8_ushort_const_2_8.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadSbcFrameData@SbcControl@SBC@@QEAAXQEAY07$$CBHQEAY117G@Z",
+    "prototype": "void __fastcall(SBC::SbcControl *__hidden this, const int (*const)[8], unsigned __int16 (*const)[2][8])",
+    "rank_score": 4,
+    "size": 212,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ScoChannelOpenWorkItem(WDFWORKITEM__ *)",
+    "ea": "0x14000e180",
+    "function_file": "functions/14000e180_ScoChannelOpenWorkItem_WDFWORKITEM.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScoChannelOpenWorkItem@@YAXPEAUWDFWORKITEM__@@@Z",
+    "prototype": "void __fastcall(struct WDFWORKITEM__ *)",
+    "rank_score": 4,
+    "size": 193,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &)",
+    "ea": "0x1400013c0",
+    "function_file": "functions/1400013c0_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@U2@U2@U2@U2@U2@U2@U1@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@44444443@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 252,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &)",
+    "ea": "0x1400012e4",
+    "function_file": "functions/1400012e4_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@U2@U2@U2@U2@U1@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@444443@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x140001198",
+    "function_file": "functions/140001198_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U1@U1@U2@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@3344@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x140001878",
+    "function_file": "functions/140001878_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14002a22c",
+    "function_file": "functions/14002a22c_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "AudioQueueClient_AttemptProcessing",
+    "ea": "0x1400114c8",
+    "function_file": "functions/1400114c8_AudioQueueClient_AttemptProcessing.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AudioQueueClient_AttemptProcessing",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14002a114",
+    "function_file": "functions/14002a114_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BthIoctlOpenSco",
+    "ea": "0x140006f48",
+    "function_file": "functions/140006f48_BthIoctlOpenSco.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BthIoctlOpenSco",
+    "prototype": "__int64()",
+    "rank_score": 2,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCbCopyW",
+    "ea": "0x14000a464",
+    "function_file": "functions/14000a464_RtlStringCbCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCbCopyW",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cbDest, NTSTRSAFE_PCWSTR pszSrc)",
+    "rank_score": 2,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_tlgCreate1Sz_char",
+    "ea": "0x140001990",
+    "function_file": "functions/140001990_tlgCreate1Sz_char.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_char",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 48,
+    "tags": []
+  }
+]

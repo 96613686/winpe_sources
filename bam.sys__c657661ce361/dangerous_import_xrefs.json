@@ -1,0 +1,610 @@
+[
+  {
+    "import": "ntoskrnl!ExRegisterExtension",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b3f5",
+        "from_func": "0x14000b360",
+        "from_func_name": "BampRegisterKernelExtension",
+        "import": "ntoskrnl!ExRegisterExtension"
+      },
+      {
+        "from_ea": "0x14000b3f5",
+        "from_func": "0x14000b360",
+        "from_func_name": "BampRegisterKernelExtension",
+        "import": "ntoskrnl!ExRegisterExtension"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ExUnregisterExtension",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b270",
+        "from_func": "0x14000b260",
+        "from_func_name": "BamDriverUnload",
+        "import": "ntoskrnl!ExUnregisterExtension"
+      },
+      {
+        "from_ea": "0x14000b270",
+        "from_func": "0x14000b260",
+        "from_func_name": "BamDriverUnload",
+        "import": "ntoskrnl!ExUnregisterExtension"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IoOpenDriverRegistryKey",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000cea0",
+        "from_func": "0x14000ce58",
+        "from_func_name": "BamUserSettingsInitialize",
+        "import": "ntoskrnl!IoOpenDriverRegistryKey"
+      },
+      {
+        "from_ea": "0x14000cea0",
+        "from_func": "0x14000ce58",
+        "from_func_name": "BamUserSettingsInitialize",
+        "import": "ntoskrnl!IoOpenDriverRegistryKey"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IofCompleteRequest",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140011f22",
+        "from_func": "0x140011ee0",
+        "from_func_name": "BamControlDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140011f22",
+        "from_func": "0x140011ee0",
+        "from_func_name": "BamControlDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsGetServerSiloServiceSessionId",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140012f8d",
+        "from_func": "0x140012eec",
+        "from_func_name": "BampProcessWindowStateUpdate",
+        "import": "ntoskrnl!PsGetServerSiloServiceSessionId"
+      },
+      {
+        "from_ea": "0x140012f8d",
+        "from_func": "0x140012eec",
+        "from_func_name": "BampProcessWindowStateUpdate",
+        "import": "ntoskrnl!PsGetServerSiloServiceSessionId"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsLookupProcessByProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400120fa",
+        "from_func": "0x14001202c",
+        "from_func_name": "BampProcessWindowReportApply",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      },
+      {
+        "from_ea": "0x140014881",
+        "from_func": "0x14001474c",
+        "from_func_name": "BampStartThrottledProcessInformation",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      },
+      {
+        "from_ea": "0x1400120fa",
+        "from_func": "0x14001202c",
+        "from_func_name": "BampProcessWindowReportApply",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      },
+      {
+        "from_ea": "0x140014881",
+        "from_func": "0x14001474c",
+        "from_func_name": "BampStartThrottledProcessInformation",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareUnicodeString",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c725",
+        "from_func": "0x14000c6f0",
+        "from_func_name": "BampThrottlingSetUserSettingsProcessInfo",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x14000c744",
+        "from_func": "0x14000c6f0",
+        "from_func_name": "BampThrottlingSetUserSettingsProcessInfo",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x14000cb6d",
+        "from_func": "0x14000c9f4",
+        "from_func_name": "BamUserSettingsEnumerateSettingsForUser",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x14000cb90",
+        "from_func": "0x14000c9f4",
+        "from_func_name": "BamUserSettingsEnumerateSettingsForUser",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x14000c725",
+        "from_func": "0x14000c6f0",
+        "from_func_name": "BampThrottlingSetUserSettingsProcessInfo",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x14000c744",
+        "from_func": "0x14000c6f0",
+        "from_func_name": "BampThrottlingSetUserSettingsProcessInfo",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x14000cb6d",
+        "from_func": "0x14000c9f4",
+        "from_func_name": "BamUserSettingsEnumerateSettingsForUser",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x14000cb90",
+        "from_func": "0x14000c9f4",
+        "from_func_name": "BamUserSettingsEnumerateSettingsForUser",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlConvertSidToUnicodeString",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400123bf",
+        "from_func": "0x140012368",
+        "from_func_name": "BampQueryProcessUserSidString",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      },
+      {
+        "from_ea": "0x1400123bf",
+        "from_func": "0x140012368",
+        "from_func_name": "BampQueryProcessUserSidString",
+        "import": "ntoskrnl!RtlConvertSidToUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCreateSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000ddb2",
+        "from_func": "0x14000dd04",
+        "from_func_name": "SepSddlSecurityDescriptorFromSDDLString",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000ddb2",
+        "from_func": "0x14000dd04",
+        "from_func_name": "SepSddlSecurityDescriptorFromSDDLString",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlGetDaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e5ce",
+        "from_func": "0x14000e50c",
+        "from_func_name": "SeUtilSecurityInfoFromSecurityDescriptor",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e5ce",
+        "from_func": "0x14000e50c",
+        "from_func_name": "SeUtilSecurityInfoFromSecurityDescriptor",
+        "import": "ntoskrnl!RtlGetDaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlGetGroupSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e57d",
+        "from_func": "0x14000e50c",
+        "from_func_name": "SeUtilSecurityInfoFromSecurityDescriptor",
+        "import": "ntoskrnl!RtlGetGroupSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e57d",
+        "from_func": "0x14000e50c",
+        "from_func_name": "SeUtilSecurityInfoFromSecurityDescriptor",
+        "import": "ntoskrnl!RtlGetGroupSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e552",
+        "from_func": "0x14000e50c",
+        "from_func_name": "SeUtilSecurityInfoFromSecurityDescriptor",
+        "import": "ntoskrnl!RtlGetOwnerSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e552",
+        "from_func": "0x14000e50c",
+        "from_func_name": "SeUtilSecurityInfoFromSecurityDescriptor",
+        "import": "ntoskrnl!RtlGetOwnerSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlGetSaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e5a6",
+        "from_func": "0x14000e50c",
+        "from_func_name": "SeUtilSecurityInfoFromSecurityDescriptor",
+        "import": "ntoskrnl!RtlGetSaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e5a6",
+        "from_func": "0x14000e50c",
+        "from_func_name": "SeUtilSecurityInfoFromSecurityDescriptor",
+        "import": "ntoskrnl!RtlGetSaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlLengthSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e488",
+        "from_func": "0x14000e390",
+        "from_func_name": "PpRegStateUpdateStackCreationSettings",
+        "import": "ntoskrnl!RtlLengthSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e488",
+        "from_func": "0x14000e390",
+        "from_func_name": "PpRegStateUpdateStackCreationSettings",
+        "import": "ntoskrnl!RtlLengthSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlLengthSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d614",
+        "from_func": "0x14000d5f0",
+        "from_func_name": "SepSddlAddAceToAcl",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000d614",
+        "from_func": "0x14000d5f0",
+        "from_func_name": "SepSddlAddAceToAcl",
+        "import": "ntoskrnl!RtlLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfiguration",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b450",
+        "from_func": "0x14000b410",
+        "from_func_name": "wil_RtlStagingConfig_QueryFeatureState",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14000b910",
+        "from_func": "0x14000b8c0",
+        "from_func_name": "wil_details_UpdateFeatureConfiguredStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14001630d",
+        "from_func": "0x1400162ac",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14000b450",
+        "from_func": "0x14000b410",
+        "from_func_name": "wil_RtlStagingConfig_QueryFeatureState",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14000b910",
+        "from_func": "0x14000b8c0",
+        "from_func_name": "wil_details_UpdateFeatureConfiguredStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14001630d",
+        "from_func": "0x1400162ac",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140016214",
+        "from_func": "0x1400161ec",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      },
+      {
+        "from_ea": "0x140016214",
+        "from_func": "0x1400161ec",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001626a",
+        "from_func": "0x1400161ec",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x14001626a",
+        "from_func": "0x1400161ec",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlSetDaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000ddcb",
+        "from_func": "0x14000dd04",
+        "from_func_name": "SepSddlSecurityDescriptorFromSDDLString",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000ddcb",
+        "from_func": "0x14000dd04",
+        "from_func_name": "SepSddlSecurityDescriptorFromSDDLString",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b4e4",
+        "from_func": "0x14000b4d4",
+        "from_func_name": "wil_UninitializeFeatureStaging",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x14000b4e4",
+        "from_func": "0x14000b4d4",
+        "from_func_name": "wil_UninitializeFeatureStaging",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeCaptureSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e0e4",
+        "from_func": "0x14000e03c",
+        "from_func_name": "PiRegStateReadStackCreationSettingsFromKey",
+        "import": "ntoskrnl!SeCaptureSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e3fe",
+        "from_func": "0x14000e390",
+        "from_func_name": "PpRegStateUpdateStackCreationSettings",
+        "import": "ntoskrnl!SeCaptureSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e0e4",
+        "from_func": "0x14000e03c",
+        "from_func_name": "PiRegStateReadStackCreationSettingsFromKey",
+        "import": "ntoskrnl!SeCaptureSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000e3fe",
+        "from_func": "0x14000e390",
+        "from_func_name": "PpRegStateUpdateStackCreationSettings",
+        "import": "ntoskrnl!SeCaptureSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeQuerySecurityAttributesToken",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140014448",
+        "from_func": "0x1400143ec",
+        "from_func_name": "BampQueryProcessIdentifier",
+        "import": "ntoskrnl!SeQuerySecurityAttributesToken"
+      },
+      {
+        "from_ea": "0x1400144b3",
+        "from_func": "0x1400143ec",
+        "from_func_name": "BampQueryProcessIdentifier",
+        "import": "ntoskrnl!SeQuerySecurityAttributesToken"
+      },
+      {
+        "from_ea": "0x140014448",
+        "from_func": "0x1400143ec",
+        "from_func_name": "BampQueryProcessIdentifier",
+        "import": "ntoskrnl!SeQuerySecurityAttributesToken"
+      },
+      {
+        "from_ea": "0x1400144b3",
+        "from_func": "0x1400143ec",
+        "from_func_name": "BampQueryProcessIdentifier",
+        "import": "ntoskrnl!SeQuerySecurityAttributesToken"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwCreateFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140015922",
+        "from_func": "0x140015878",
+        "from_func_name": "BamUserSettingsCheckOrigin",
+        "import": "ntoskrnl!ZwCreateFile"
+      },
+      {
+        "from_ea": "0x140015922",
+        "from_func": "0x140015878",
+        "from_func_name": "BamUserSettingsCheckOrigin",
+        "import": "ntoskrnl!ZwCreateFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwSetSecurityObject",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d4f6",
+        "from_func": "0x14000d434",
+        "from_func_name": "IopDevObjApplyPostCreationSettings",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      },
+      {
+        "from_ea": "0x14000d4f6",
+        "from_func": "0x14000d434",
+        "from_func_name": "IopDevObjApplyPostCreationSettings",
+        "import": "ntoskrnl!ZwSetSecurityObject"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3624 @@
+[
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BfsInsertPolicyEntry",
+    "ea": "0x140007fec",
+    "function_file": "functions/140007fec_BfsInsertPolicyEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExSetTimer",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsInsertPolicyEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, unsigned __int8 *, unsigned __int8 *, __int64 *)",
+    "rank_score": 7453,
+    "size": 1845,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BfsPostCreateOperation",
+    "ea": "0x140001ba0",
+    "function_file": "functions/140001ba0_BfsPostCreateOperation.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "FLTMGR!FltSetCallbackDataDirty",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsGetCurrentProcessId",
+      "ntoskrnl!RtlCheckTokenCapability",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlGetNextEntryHashTable",
+      "ntoskrnl!RtlLookupEntryHashTable",
+      "ntoskrnl!RtlUpcaseUnicodeChar",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!SeQuerySessionIdToken",
+      "ntoskrnl!SeReleaseSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "BfsPostCreateOperation",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data, __int64, char *, char)",
+    "rank_score": 6163,
+    "size": 1952,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfsRegistryPreCreateCallback",
+    "ea": "0x14000f304",
+    "function_file": "functions/14000f304_BfsRegistryPreCreateCallback.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\WC\\Silo"
+    ],
+    "name": "BfsRegistryPreCreateCallback",
+    "prototype": "__int64 __fastcall(int, __int64, void *)",
+    "rank_score": 5664,
+    "size": 1124,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "BfsPreCreateOperation",
+    "ea": "0x140002620",
+    "function_file": "functions/140002620_BfsPreCreateOperation.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltGetFileSystemType",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsDereferenceImpersonationToken",
+      "ntoskrnl!PsDereferencePrimaryToken",
+      "ntoskrnl!PsReferenceImpersonationToken",
+      "ntoskrnl!PsReferencePrimaryToken",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsPreCreateOperation",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data, PVOID *, _QWORD *)",
+    "rank_score": 5464,
+    "size": 1800,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14001f078",
+    "function_file": "functions/14001f078_DriverEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltRegisterFilter",
+      "FLTMGR!FltStartFiltering",
+      "FLTMGR!FltUnregisterFilter",
+      "cng!BCryptCloseAlgorithmProvider",
+      "cng!BCryptOpenAlgorithmProvider",
+      "ntoskrnl!CmRegisterCallbackEx",
+      "ntoskrnl!CmUnRegisterCallback",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeRundownProtection",
+      "ntoskrnl!ExWaitForRundownProtectionRelease",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "\\SystemRoot\\System32\\config\\BFS"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 4922,
+    "size": 1296,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "BfsPreCreatePipeOperation",
+    "ea": "0x140002d30",
+    "function_file": "functions/140002d30_BfsPreCreatePipeOperation.md",
+    "matched_imports": [
+      "FLTMGR!FltFindExtraCreateParameter",
+      "FLTMGR!FltGetEcpListFromCallbackData",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltIsEcpFromUserMode",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsDereferenceImpersonationToken",
+      "ntoskrnl!PsDereferencePrimaryToken",
+      "ntoskrnl!PsReferenceImpersonationToken",
+      "ntoskrnl!PsReferencePrimaryToken",
+      "ntoskrnl!RtlPrefixUnicodeString",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsPreCreatePipeOperation",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data, __int64, _QWORD *)",
+    "rank_score": 4837,
+    "size": 1334,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfsRedirectNamedPipe",
+    "ea": "0x14000b94c",
+    "function_file": "functions/14000b94c_BfsRedirectNamedPipe.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateExtraCreateParameter",
+      "FLTMGR!FltAllocateExtraCreateParameterList",
+      "FLTMGR!FltGetEcpListFromCallbackData",
+      "FLTMGR!FltInsertExtraCreateParameter",
+      "FLTMGR!FltSetEcpListIntoCallbackData",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsRedirectNamedPipe",
+    "prototype": "__int64 __fastcall(PFLT_FILTER Filter, PFLT_CALLBACK_DATA Data, unsigned __int8 *SourceSid, unsigned __int8 *, __int64, PCUNICODE_STRING Source)",
+    "rank_score": 4835,
+    "size": 1351,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BfsInsertPolicyEntryLocked",
+    "ea": "0x140008728",
+    "function_file": "functions/140008728_BfsInsertPolicyEntryLocked.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExSetTimer",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsInsertPolicyEntryLocked",
+    "prototype": "__int64 __fastcall(struct _FLT_FILTER *, __int64, __int64, __int64, unsigned __int8 *, unsigned __int8 *, _DWORD *, __int64 *)",
+    "rank_score": 4653,
+    "size": 1799,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BfsPostCleanupOperation",
+    "ea": "0x1400017d0",
+    "function_file": "functions/1400017d0_BfsPostCleanupOperation.md",
+    "matched_imports": [
+      "FLTMGR!FltFsControlFile",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsPostCleanupOperation",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 4610,
+    "size": 968,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsCreatePolicyStorageDescriptor",
+    "ea": "0x140012d2c",
+    "function_file": "functions/140012d2c_BfsCreatePolicyStorageDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAceEx",
+      "ntoskrnl!RtlAddMandatoryAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetControlSecurityDescriptor",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!RtlSetGroupSecurityDescriptor",
+      "ntoskrnl!RtlSetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlSetSaclSecurityDescriptor",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "BfsCreatePolicyStorageDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor, unsigned __int8)",
+    "rank_score": 4451,
+    "size": 948,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "BfsRenameEntry",
+    "ea": "0x140012608",
+    "function_file": "functions/140012608_BfsRenameEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlClearBits",
+      "ntoskrnl!RtlInitializeBitMap",
+      "ntoskrnl!RtlSetBits"
+    ],
+    "matched_strings": [],
+    "name": "BfsRenameEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64, struct _RTL_BITMAP *, struct _RTL_BITMAP *)",
+    "rank_score": 4246,
+    "size": 1585,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "BfsInsertDirectoryEntry",
+    "ea": "0x140011ea8",
+    "function_file": "functions/140011ea8_BfsInsertDirectoryEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlClearBits",
+      "ntoskrnl!RtlFindClearBits",
+      "ntoskrnl!RtlInitializeBitMap",
+      "ntoskrnl!RtlSetBits"
+    ],
+    "matched_strings": [],
+    "name": "BfsInsertDirectoryEntry",
+    "prototype": "_DWORD *__fastcall(__int64, int, int, int, __int64)",
+    "rank_score": 4220,
+    "size": 1145,
+    "tags": []
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "BfsProcessSetPolicyRequest",
+    "ea": "0x140009d2c",
+    "function_file": "functions/140009d2c_BfsProcessSetPolicyRequest.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformationUnsafe",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateFile",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!SeQueryInformationToken",
+      "ntoskrnl!SeTokenObjectType",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsProcessSetPolicyRequest",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 4093,
+    "size": 1983,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfsVerifyVolumeRootDescriptor",
+    "ea": "0x14001e1a0",
+    "function_file": "functions/14001e1a0_BfsVerifyVolumeRootDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAceEx",
+      "ntoskrnl!RtlAddAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlGetAce",
+      "ntoskrnl!RtlGetAcesBufferSize",
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQuerySecurityObject",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsVerifyVolumeRootDescriptor",
+    "prototype": "__int64()",
+    "rank_score": 3944,
+    "size": 1192,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfsInitializeGlobalFileTable",
+    "ea": "0x14000cb34",
+    "function_file": "functions/14000cb34_BfsInitializeGlobalFileTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializePushLock",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlCreateHashTable",
+      "ntoskrnl!RtlDeleteHashTable",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwQueryDirectoryFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsInitializeGlobalFileTable",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 3832,
+    "size": 888,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsCalculateRegistryPrefix",
+    "ea": "0x14000e9d8",
+    "function_file": "functions/14000e9d8_BfsCalculateRegistryPrefix.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash",
+      "cng!BCryptDestroyHash",
+      "cng!BCryptFinishHash",
+      "cng!BCryptGetProperty",
+      "cng!BCryptHashData",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlStringFromGUID"
+    ],
+    "matched_strings": [
+      "\\Registry\\WC\\Silo"
+    ],
+    "name": "BfsCalculateRegistryPrefix",
+    "prototype": "__int64 __fastcall(PUCHAR *, PUCHAR *, struct _UNICODE_STRING *, struct _UNICODE_STRING *)",
+    "rank_score": 3661,
+    "size": 932,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "BfsCreateStorage",
+    "ea": "0x140010cc8",
+    "function_file": "functions/140010cc8_BfsCreateStorage.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializePushLock",
+      "ntoskrnl!RtlInitializeBitMap",
+      "ntoskrnl!RtlInitializeGenericTableAvl",
+      "ntoskrnl!ZwQueryInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsCreateStorage",
+    "prototype": "__int64 __fastcall(struct _FLT_FILTER *, struct _FLT_INSTANCE *, void *, struct _UNICODE_STRING *, unsigned __int64 **)",
+    "rank_score": 3480,
+    "size": 1221,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 5,
+    "demangled": "BfsCreateDirectory",
+    "ea": "0x14001093c",
+    "function_file": "functions/14001093c_BfsCreateDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializePushLock",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlInitializeGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "BfsCreateDirectory",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, _QWORD *)",
+    "rank_score": 3432,
+    "size": 899,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "BfsPolicyEntryExists",
+    "ea": "0x140009014",
+    "function_file": "functions/140009014_BfsPolicyEntryExists.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!ZwQueryDirectoryFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsPolicyEntryExists",
+    "prototype": "bool __fastcall(__int64, __int64, __int64, void *, PSID Sid)",
+    "rank_score": 3255,
+    "size": 647,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BfsInsertNotPresentPolicyEntry",
+    "ea": "0x140007a20",
+    "function_file": "functions/140007a20_BfsInsertNotPresentPolicyEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlCopySid"
+    ],
+    "matched_strings": [],
+    "name": "BfsInsertNotPresentPolicyEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned __int8 *, unsigned __int8 *)",
+    "rank_score": 3042,
+    "size": 713,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "BfsEnumeratePolicy",
+    "ea": "0x140006330",
+    "function_file": "functions/140006330_BfsEnumeratePolicy.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsEnumeratePolicy",
+    "prototype": "__int64 __fastcall(__int64, __int64, int *, _DWORD *)",
+    "rank_score": 3041,
+    "size": 1162,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "BfsAccessRegistryKeyAsUserCallback",
+    "ea": "0x14000e2a0",
+    "function_file": "functions/14000e2a0_BfsAccessRegistryKeyAsUserCallback.md",
+    "matched_imports": [
+      "ntoskrnl!CmKeyObjectType",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeReleaseSubjectContext",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateKey",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQuerySecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsAccessRegistryKeyAsUserCallback",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 2954,
+    "size": 1097,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BfsRemovePolicyEntry",
+    "ea": "0x14000a64c",
+    "function_file": "functions/14000a64c_BfsRemovePolicyEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!ZwDeleteFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsRemovePolicyEntry",
+    "prototype": "__int64 __fastcall(int, __int64, __int64, void *, PSID Sid)",
+    "rank_score": 2875,
+    "size": 731,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "BfsUnload",
+    "ea": "0x14001e020",
+    "function_file": "functions/14001e020_BfsUnload.md",
+    "matched_imports": [
+      "FLTMGR!FltUnregisterFilter",
+      "cng!BCryptCloseAlgorithmProvider",
+      "ntoskrnl!CmUnRegisterCallback",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExWaitForRundownProtectionRelease",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "BfsUnload",
+    "prototype": "__int64()",
+    "rank_score": 2851,
+    "size": 376,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfsProcessRename",
+    "ea": "0x14000424c",
+    "function_file": "functions/14000424c_BfsProcessRename.md",
+    "matched_imports": [
+      "FLTMGR!FltGetDestinationFileNameInformation",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsDereferenceImpersonationToken",
+      "ntoskrnl!PsDereferencePrimaryToken",
+      "ntoskrnl!PsReferenceImpersonationToken",
+      "ntoskrnl!PsReferencePrimaryToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsProcessRename",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data, __int64)",
+    "rank_score": 2830,
+    "size": 577,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BfsLoadUserPolicyEntriesToGlobalFileTable",
+    "ea": "0x14000ceb4",
+    "function_file": "functions/14000ceb4_BfsLoadUserPolicyEntriesToGlobalFileTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!SeConvertStringSidToSid",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryDirectoryFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsLoadUserPolicyEntriesToGlobalFileTable",
+    "prototype": "__int64 __fastcall(struct _FLT_FILTER *, __int64, __int64, __int64)",
+    "rank_score": 2638,
+    "size": 1048,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "BfsAddPolicyToGlobalFileTable",
+    "ea": "0x14000c0f4",
+    "function_file": "functions/14000c0f4_BfsAddPolicyToGlobalFileTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsAddPolicyToGlobalFileTable",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, const UNICODE_STRING *)",
+    "rank_score": 2636,
+    "size": 585,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfsCheckDeleteList",
+    "ea": "0x14000c344",
+    "function_file": "functions/14000c344_BfsCheckDeleteList.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsCheckDeleteList",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2616,
+    "size": 354,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "BfsPostCreatePipeOperation",
+    "ea": "0x140003f70",
+    "function_file": "functions/140003f70_BfsPostCreatePipeOperation.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltCancelFileOpen",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetCallbackDataDirty",
+      "FLTMGR!FltSetStreamHandleContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsPostCreatePipeOperation",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data, __int64, PVOID *, int)",
+    "rank_score": 2610,
+    "size": 723,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfsVerifyPolicySecurity",
+    "ea": "0x14000b0d0",
+    "function_file": "functions/14000b0d0_BfsVerifyPolicySecurity.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualSid",
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlGetGroupSecurityDescriptor",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlGetSaclSecurityDescriptor",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!ZwQuerySecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsVerifyPolicySecurity",
+    "prototype": "__int64 __fastcall(HANDLE Handle, _BYTE *)",
+    "rank_score": 2552,
+    "size": 919,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "BfsCheckAndApplyPolicy",
+    "ea": "0x140005768",
+    "function_file": "functions/140005768_BfsCheckAndApplyPolicy.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltReferenceFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCheckTokenCapability",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsCheckAndApplyPolicy",
+    "prototype": "char __fastcall(PVOID FltObject, PVOID, PACCESS_TOKEN Token, PFLT_CALLBACK_DATA Data, __int64 *)",
+    "rank_score": 2468,
+    "size": 1582,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BfsRemovePolicyFromGlobalFileTable",
+    "ea": "0x14000d734",
+    "function_file": "functions/14000d734_BfsRemovePolicyFromGlobalFileTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsRemovePolicyFromGlobalFileTable",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 2432,
+    "size": 453,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "BfsDeleteEntry",
+    "ea": "0x140011194",
+    "function_file": "functions/140011194_BfsDeleteEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlClearBits",
+      "ntoskrnl!RtlInitializeBitMap"
+    ],
+    "matched_strings": [],
+    "name": "BfsDeleteEntry",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int128 *)",
+    "rank_score": 2425,
+    "size": 618,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "BfsImpersonateUser",
+    "ea": "0x14000fdc8",
+    "function_file": "functions/14000fdc8_BfsImpersonateUser.md",
+    "matched_imports": [
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsImpersonateClient",
+      "ntoskrnl!PsReferenceImpersonationToken",
+      "ntoskrnl!PsRevertToSelf",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!SeTokenObjectType",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDuplicateToken",
+      "ntoskrnl!ZwSetInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsImpersonateUser",
+    "prototype": "__int64 __fastcall(void *, __int64)",
+    "rank_score": 2352,
+    "size": 671,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "BfsPerformPrompt",
+    "ea": "0x14000dc70",
+    "function_file": "functions/14000dc70_BfsPerformPrompt.md",
+    "matched_imports": [
+      "FLTMGR!FltReissueSynchronousIo",
+      "FLTMGR!FltSetCallbackDataDirty",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsPerformPrompt",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data, __int64, _QWORD *)",
+    "rank_score": 2254,
+    "size": 1416,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BfsPolicyEntryExistsLocked",
+    "ea": "0x1400092a4",
+    "function_file": "functions/1400092a4_BfsPolicyEntryExistsLocked.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!ZwQueryDirectoryFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsPolicyEntryExistsLocked",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64, __int64, void *, PSID Sid, int)",
+    "rank_score": 2251,
+    "size": 629,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "BfsPreCleanupOperation",
+    "ea": "0x140002350",
+    "function_file": "functions/140002350_BfsPreCleanupOperation.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileContext",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsPreCleanupOperation",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData, __int64, PFLT_CONTEXT *)",
+    "rank_score": 2231,
+    "size": 711,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsApplyPolicyAsUser",
+    "ea": "0x1400052c8",
+    "function_file": "functions/1400052c8_BfsApplyPolicyAsUser.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceFileNameInformation",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!SeTokenObjectType",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDuplicateToken",
+      "ntoskrnl!ZwSetInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsApplyPolicyAsUser",
+    "prototype": "__int64 __fastcall(__int64, void *, struct _FLT_FILE_NAME_INFORMATION *, __int64, __int64 *)",
+    "rank_score": 2159,
+    "size": 739,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BfsProcessQueryPolicyRequest",
+    "ea": "0x1400096c0",
+    "function_file": "functions/1400096c0_BfsProcessQueryPolicyRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ProbeForWrite",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!SeQueryInformationToken",
+      "ntoskrnl!SeTokenObjectType"
+    ],
+    "matched_strings": [],
+    "name": "BfsProcessQueryPolicyRequest",
+    "prototype": "__int64 __fastcall(HANDLE Handle, char *, SIZE_T Length)",
+    "rank_score": 2148,
+    "size": 1062,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsReadDeleteThresholdFromRegistry",
+    "ea": "0x14000d2d4",
+    "function_file": "functions/14000d2d4_BfsReadDeleteThresholdFromRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control\\FileSystem"
+    ],
+    "name": "BfsReadDeleteThresholdFromRegistry",
+    "prototype": "__int64()",
+    "rank_score": 2089,
+    "size": 688,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsImpersonateToken",
+    "ea": "0x14000fb6c",
+    "function_file": "functions/14000fb6c_BfsImpersonateToken.md",
+    "matched_imports": [
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsImpersonateClient",
+      "ntoskrnl!PsReferenceImpersonationToken",
+      "ntoskrnl!PsRevertToSelf",
+      "ntoskrnl!SeTokenObjectType",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDuplicateToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsImpersonateToken",
+    "prototype": "__int64 __fastcall(void *, __int64)",
+    "rank_score": 2048,
+    "size": 596,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BfsGetRegistryPrefix",
+    "ea": "0x14000ed84",
+    "function_file": "functions/14000ed84_BfsGetRegistryPrefix.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryPackageIdentity",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetRegistryPrefix",
+    "prototype": "__int64 __fastcall(PACCESS_TOKEN Token, _OWORD *, _OWORD *, _DWORD *)",
+    "rank_score": 2046,
+    "size": 885,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 18,
+    "demangled": "BfsDereferencePolicyEntryEx",
+    "ea": "0x1400061d0",
+    "function_file": "functions/1400061d0_BfsDereferencePolicyEntryEx.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsDereferencePolicyEntryEx",
+    "prototype": "void __fastcall(char *P, char)",
+    "rank_score": 2033,
+    "size": 343,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "BfsAddOrModifyEntry",
+    "ea": "0x1400104ec",
+    "function_file": "functions/1400104ec_BfsAddOrModifyEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsAddOrModifyEntry",
+    "prototype": "__int64 __fastcall(__int64, int, int, int, __int64, __m128i *)",
+    "rank_score": 2026,
+    "size": 607,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsCreateGlobalFileEntry",
+    "ea": "0x14000c5c4",
+    "function_file": "functions/14000c5c4_BfsCreateGlobalFileEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlCreateHashTable",
+      "ntoskrnl!RtlDeleteHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsCreateGlobalFileEntry",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString, int, struct _UNICODE_STRING **)",
+    "rank_score": 2018,
+    "size": 542,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfsRegistryPostCreateCallback",
+    "ea": "0x14000f100",
+    "function_file": "functions/14000f100_BfsRegistryPostCreateCallback.md",
+    "matched_imports": [
+      "ntoskrnl!CmKeyObjectType",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!SeQueryInformationToken",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "BfsRegistryPostCreateCallback",
+    "prototype": "__int64 __fastcall(__int64, __int64, void *)",
+    "rank_score": 1938,
+    "size": 508,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfsUpdatePolicySecurity",
+    "ea": "0x14000abe0",
+    "function_file": "functions/14000abe0_BfsUpdatePolicySecurity.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQueryDirectoryFile",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsUpdatePolicySecurity",
+    "prototype": "__int64 __fastcall(HANDLE Handle)",
+    "rank_score": 1860,
+    "size": 627,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 7,
+    "demangled": "BfsGetPolicyEntry",
+    "ea": "0x1400071d4",
+    "function_file": "functions/1400071d4_BfsGetPolicyEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetPolicyEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, void *, PSID Sid, __int64 *)",
+    "rank_score": 1859,
+    "size": 518,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfsUpdateUserPolicyDirectorySecurity",
+    "ea": "0x14000ae5c",
+    "function_file": "functions/14000ae5c_BfsUpdateUserPolicyDirectorySecurity.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQueryDirectoryFile",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsUpdateUserPolicyDirectorySecurity",
+    "prototype": "__int64 __fastcall(HANDLE Handle, PUNICODE_STRING FileName)",
+    "rank_score": 1859,
+    "size": 622,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BfsInsertNotPresentPolicyEntryLocked",
+    "ea": "0x140007cf0",
+    "function_file": "functions/140007cf0_BfsInsertNotPresentPolicyEntryLocked.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!RtlCopySid"
+    ],
+    "matched_strings": [],
+    "name": "BfsInsertNotPresentPolicyEntryLocked",
+    "prototype": "__int64 __fastcall(__int64, ULONG_PTR, unsigned __int8 *, unsigned __int8 *)",
+    "rank_score": 1842,
+    "size": 755,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsUpdateSecurityDescriptor",
+    "ea": "0x1400130e8",
+    "function_file": "functions/1400130e8_BfsUpdateSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlAddAccessAllowedAceEx",
+      "ntoskrnl!RtlAddAccessDeniedAceEx",
+      "ntoskrnl!RtlAddAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlGetAce",
+      "ntoskrnl!RtlGetAcesBufferSize",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsUpdateSecurityDescriptor",
+    "prototype": "__int64 __fastcall(HANDLE Handle, PACL Acl, PACL Dacl, ULONG AclLength, PSID, ACCESS_MASK AccessMask, char)",
+    "rank_score": 1837,
+    "size": 467,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "BfsClearGlobalFileEntry",
+    "ea": "0x14000c4ac",
+    "function_file": "functions/14000c4ac_BfsClearGlobalFileEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeleteHashTable",
+      "ntoskrnl!RtlEndEnumerationHashTable",
+      "ntoskrnl!RtlEnumerateEntryHashTable",
+      "ntoskrnl!RtlInitEnumerationHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsClearGlobalFileEntry",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 1828,
+    "size": 271,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfsUninitializePipeMappingTable",
+    "ea": "0x14000bfe8",
+    "function_file": "functions/14000bfe8_BfsUninitializePipeMappingTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlDeleteHashTable",
+      "ntoskrnl!RtlEndEnumerationHashTable",
+      "ntoskrnl!RtlEnumerateEntryHashTable",
+      "ntoskrnl!RtlInitEnumerationHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsUninitializePipeMappingTable",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 1816,
+    "size": 261,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "BfsQueueDeferredWorkItemAndWait",
+    "ea": "0x1400100e0",
+    "function_file": "functions/1400100e0_BfsQueueDeferredWorkItemAndWait.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateDeferredIoWorkItem",
+      "FLTMGR!FltFreeDeferredIoWorkItem",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltObjectReference",
+      "FLTMGR!FltQueueDeferredIoWorkItem",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsQueueDeferredWorkItemAndWait",
+    "prototype": "__int64 __fastcall(PVOID FltObject, PVOID, PFLT_CALLBACK_DATA Data, __int64, __int64)",
+    "rank_score": 1810,
+    "size": 501,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "BfsReleaseNamedPipeMapping",
+    "ea": "0x14000be9c",
+    "function_file": "functions/14000be9c_BfsReleaseNamedPipeMapping.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsReleaseNamedPipeMapping",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 1807,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsGetUserToken",
+    "ea": "0x14000f944",
+    "function_file": "functions/14000f944_BfsGetUserToken.md",
+    "matched_imports": [
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!SeTokenObjectType",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDuplicateToken",
+      "ntoskrnl!ZwSetInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetUserToken",
+    "prototype": "__int64 __fastcall(void *, PVOID *)",
+    "rank_score": 1748,
+    "size": 543,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BfsGetPolicyEntryLocked",
+    "ea": "0x1400073e0",
+    "function_file": "functions/1400073e0_BfsGetPolicyEntryLocked.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetPolicyEntryLocked",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, void *, PSID Sid, _DWORD *, __int64 *)",
+    "rank_score": 1653,
+    "size": 565,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "BfsGetPolicy",
+    "ea": "0x140006fa4",
+    "function_file": "functions/140006fa4_BfsGetPolicy.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetPolicy",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int128 *, _BYTE *)",
+    "rank_score": 1643,
+    "size": 553,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BfsUpdateGlobalFilePolicy",
+    "ea": "0x14000d9dc",
+    "function_file": "functions/14000d9dc_BfsUpdateGlobalFilePolicy.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopySid"
+    ],
+    "matched_strings": [],
+    "name": "BfsUpdateGlobalFilePolicy",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned __int8 *, unsigned __int8 *)",
+    "rank_score": 1643,
+    "size": 654,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "BfsDeviceIoControl",
+    "ea": "0x140003770",
+    "function_file": "functions/140003770_BfsDeviceIoControl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "BfsDeviceIoControl",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1633,
+    "size": 698,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfsBuildPathFromComponents",
+    "ea": "0x1400055b4",
+    "function_file": "functions/1400055b4_BfsBuildPathFromComponents.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsBuildPathFromComponents",
+    "prototype": "__int64 __fastcall(__int64 **, UNICODE_STRING *, UNICODE_STRING *, struct _UNICODE_STRING *)",
+    "rank_score": 1618,
+    "size": 430,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "BfsExpandDirectory",
+    "ea": "0x1400115f0",
+    "function_file": "functions/1400115f0_BfsExpandDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsExpandDirectory",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, __int64, _QWORD *, _QWORD *)",
+    "rank_score": 1612,
+    "size": 578,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "BfsDereferenceTableEntry",
+    "ea": "0x140011404",
+    "function_file": "functions/140011404_BfsDereferenceTableEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsDereferenceTableEntry",
+    "prototype": "void __fastcall(volatile signed __int32 *Buffer)",
+    "rank_score": 1610,
+    "size": 220,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfsCloseStorage",
+    "ea": "0x1400107ec",
+    "function_file": "functions/1400107ec_BfsCloseStorage.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEnumerateGenericTableAvl",
+      "ntoskrnl!RtlIsGenericTableEmptyAvl"
+    ],
+    "matched_strings": [],
+    "name": "BfsCloseStorage",
+    "prototype": "void __fastcall(_QWORD *P)",
+    "rank_score": 1606,
+    "size": 270,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "BfsIsApplicableToken",
+    "ea": "0x140003340",
+    "function_file": "functions/140003340_BfsIsApplicableToken.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!RtlCheckTokenCapability",
+      "ntoskrnl!SeQueryInformationToken",
+      "ntoskrnl!SeTokenObjectType",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "BfsIsApplicableToken",
+    "prototype": "_BOOL8 __fastcall(PVOID Object, char)",
+    "rank_score": 1556,
+    "size": 715,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BfsAdjustRegistryKeySecurity",
+    "ea": "0x14000e6f0",
+    "function_file": "functions/14000e6f0_BfsAdjustRegistryKeySecurity.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!ZwQuerySecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsAdjustRegistryKeySecurity",
+    "prototype": "__int64 __fastcall(HANDLE Handle, unsigned __int8 *, ACCESS_MASK AccessMask)",
+    "rank_score": 1452,
+    "size": 735,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BfsCheckPolicyAndPerformRenameAsUser",
+    "ea": "0x140005edc",
+    "function_file": "functions/140005edc_BfsCheckPolicyAndPerformRenameAsUser.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsCheckPolicyAndPerformRenameAsUser",
+    "prototype": "__int64 __fastcall(PVOID FltObject, PVOID, PACCESS_TOKEN Token, PFLT_CALLBACK_DATA Data, __int64)",
+    "rank_score": 1445,
+    "size": 747,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "BfsDeleteFileFromGlobalFileTable",
+    "ea": "0x14000c7e8",
+    "function_file": "functions/14000c7e8_BfsDeleteFileFromGlobalFileTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEndEnumerationHashTable",
+      "ntoskrnl!RtlEnumerateEntryHashTable",
+      "ntoskrnl!RtlInitEnumerationHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsDeleteFileFromGlobalFileTable",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 1445,
+    "size": 619,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfsInsertDirectory",
+    "ea": "0x140011cd4",
+    "function_file": "functions/140011cd4_BfsInsertDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInsertElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "BfsInsertDirectory",
+    "prototype": "__int64 __fastcall(__int64, const UNICODE_STRING *, PVOID **, unsigned __int8 *)",
+    "rank_score": 1429,
+    "size": 460,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BfsIdleCheckWorkitemRoutine",
+    "ea": "0x140007880",
+    "function_file": "functions/140007880_BfsIdleCheckWorkitemRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsIdleCheckWorkitemRoutine",
+    "prototype": "void __fastcall(PVOID IoObject, PVOID Context, PIO_WORKITEM IoWorkItem)",
+    "rank_score": 1423,
+    "size": 153,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BfsEnumerateDirectory",
+    "ea": "0x1400114e8",
+    "function_file": "functions/1400114e8_BfsEnumerateDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlFindSetBits",
+      "ntoskrnl!RtlInitializeBitMap",
+      "ntoskrnl!RtlNumberOfSetBits"
+    ],
+    "matched_strings": [],
+    "name": "BfsEnumerateDirectory",
+    "prototype": "__int64 __fastcall(__int64, int, _QWORD *)",
+    "rank_score": 1404,
+    "size": 256,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BfsProcessQueryPolicySizeRequest",
+    "ea": "0x140009aec",
+    "function_file": "functions/140009aec_BfsProcessQueryPolicySizeRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!SeQueryInformationToken",
+      "ntoskrnl!SeTokenObjectType"
+    ],
+    "matched_strings": [],
+    "name": "BfsProcessQueryPolicySizeRequest",
+    "prototype": "__int64 __fastcall(void *, __int64)",
+    "rank_score": 1343,
+    "size": 570,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsPromptForConsent",
+    "ea": "0x1400132c4",
+    "function_file": "functions/1400132c4_BfsPromptForConsent.md",
+    "matched_imports": [
+      "msrpc!NdrClientCall3",
+      "msrpc!RpcBindingBind",
+      "msrpc!RpcBindingCreateW",
+      "msrpc!RpcBindingFree",
+      "msrpc!RpcBindingUnbind",
+      "msrpc!RpcExceptionFilter",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "BfsPromptForConsent",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, _BYTE *)",
+    "rank_score": 1340,
+    "size": 849,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfsProcessDeletePolicyEntryRequest",
+    "ea": "0x140009520",
+    "function_file": "functions/140009520_BfsProcessDeletePolicyEntryRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!SeQueryInformationToken",
+      "ntoskrnl!SeTokenObjectType"
+    ],
+    "matched_strings": [],
+    "name": "BfsProcessDeletePolicyEntryRequest",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 1339,
+    "size": 410,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsSetApplicableCapabilitySid",
+    "ea": "0x140004494",
+    "function_file": "functions/140004494_BfsSetApplicableCapabilitySid.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeriveCapabilitySidsFromName",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "AgenticAppContainer"
+    ],
+    "name": "BfsSetApplicableCapabilitySid",
+    "prototype": "__int64()",
+    "rank_score": 1276,
+    "size": 378,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "BfsFileOpenAsUserCallback",
+    "ea": "0x1400069a0",
+    "function_file": "functions/1400069a0_BfsFileOpenAsUserCallback.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx",
+      "FLTMGR!FltQueryInformationFile",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsFileOpenAsUserCallback",
+    "prototype": "__int64 __fastcall(PFLT_FILTER Filter, PFLT_INSTANCE Instance, __int64, __int64)",
+    "rank_score": 1250,
+    "size": 733,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfsGetNotPresentPolicyEntry",
+    "ea": "0x140006db4",
+    "function_file": "functions/140006db4_BfsGetNotPresentPolicyEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetNotPresentPolicyEntry",
+    "prototype": "__int64 __fastcall(__int64, void *, void *, PRTL_DYNAMIC_HASH_TABLE_ENTRY *)",
+    "rank_score": 1246,
+    "size": 244,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsInitializeBootDevice",
+    "ea": "0x140003b0c",
+    "function_file": "functions/140003b0c_BfsInitializeBootDevice.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwOpenSymbolicLinkObject",
+      "ntoskrnl!ZwQuerySymbolicLinkObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsInitializeBootDevice",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING LinkTarget)",
+    "rank_score": 1237,
+    "size": 414,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BfsInitializePolicyTable",
+    "ea": "0x140007920",
+    "function_file": "functions/140007920_BfsInitializePolicyTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExAllocateTimer",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializePushLock",
+      "ntoskrnl!RtlCreateHashTable",
+      "ntoskrnl!RtlDeleteHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsInitializePolicyTable",
+    "prototype": "__int64()",
+    "rank_score": 1233,
+    "size": 250,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "BfsRegistryCallback",
+    "ea": "0x1400010c0",
+    "function_file": "functions/1400010c0_BfsRegistryCallback.md",
+    "matched_imports": [
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!PsDereferenceImpersonationToken",
+      "ntoskrnl!PsDereferencePrimaryToken",
+      "ntoskrnl!PsReferenceImpersonationToken",
+      "ntoskrnl!PsReferencePrimaryToken"
+    ],
+    "matched_strings": [],
+    "name": "BfsRegistryCallback",
+    "prototype": "__int64 __fastcall(PVOID CallbackContext, PVOID Argument1, __int64 Argument2)",
+    "rank_score": 1229,
+    "size": 420,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BfsUninitializePolicyTable",
+    "ea": "0x14000ab04",
+    "function_file": "functions/14000ab04_BfsUninitializePolicyTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteTimer",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeleteHashTable",
+      "ntoskrnl!RtlEndEnumerationHashTable",
+      "ntoskrnl!RtlEnumerateEntryHashTable",
+      "ntoskrnl!RtlInitEnumerationHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsUninitializePolicyTable",
+    "prototype": "void __fastcall(__int64, __int64, __int64)",
+    "rank_score": 1225,
+    "size": 213,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BfsGetFileContext",
+    "ea": "0x140001460",
+    "function_file": "functions/140001460_BfsGetFileContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltGetFileContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetFileContext",
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetFileContext",
+    "prototype": "__int64 __fastcall(__int64, struct _FILE_OBJECT *, PFLT_CONTEXT *)",
+    "rank_score": 1220,
+    "size": 683,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsUninitializeGlobalFileTable",
+    "ea": "0x14000d900",
+    "function_file": "functions/14000d900_BfsUninitializeGlobalFileTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeleteHashTable",
+      "ntoskrnl!RtlEndEnumerationHashTable",
+      "ntoskrnl!RtlEnumerateEntryHashTable",
+      "ntoskrnl!RtlInitEnumerationHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsUninitializeGlobalFileTable",
+    "prototype": "__int64()",
+    "rank_score": 1215,
+    "size": 213,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsRemoveKeyValues",
+    "ea": "0x14000f770",
+    "function_file": "functions/14000f770_BfsRemoveKeyValues.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwDeleteValueKey",
+      "ntoskrnl!ZwEnumerateValueKey"
+    ],
+    "matched_strings": [],
+    "name": "BfsRemoveKeyValues",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 1207,
+    "size": 461,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsAllocateAndConcatenatePath",
+    "ea": "0x140005150",
+    "function_file": "functions/140005150_BfsAllocateAndConcatenatePath.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsAllocateAndConcatenatePath",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING Source, PCUNICODE_STRING, struct _UNICODE_STRING *)",
+    "rank_score": 1206,
+    "size": 370,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "BfsNormalizeNameComponentEx",
+    "ea": "0x140003cb0",
+    "function_file": "functions/140003cb0_BfsNormalizeNameComponentEx.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltQueryDirectoryFile",
+      "ntoskrnl!IoGetTransactionParameterBlock",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "BfsNormalizeNameComponentEx",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, struct _UNICODE_STRING *, __int64, PUNICODE_STRING FileName, PVOID FileInformation, ULONG Length, char)",
+    "rank_score": 1034,
+    "size": 397,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BfsLookupPipeMappingEntryHashTable",
+    "ea": "0x14000b870",
+    "function_file": "functions/14000b870_BfsLookupPipeMappingEntryHashTable.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualSid",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlGetNextEntryHashTable",
+      "ntoskrnl!RtlLookupEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsLookupPipeMappingEntryHashTable",
+    "prototype": "PRTL_DYNAMIC_HASH_TABLE_ENTRY __fastcall(PRTL_DYNAMIC_HASH_TABLE HashTable, ULONG_PTR, void *, void *, PCUNICODE_STRING String2)",
+    "rank_score": 1024,
+    "size": 170,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "BfsFindEntry",
+    "ea": "0x140011838",
+    "function_file": "functions/140011838_BfsFindEntry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlFindSetBits",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlInitializeBitMap"
+    ],
+    "matched_strings": [],
+    "name": "BfsFindEntry",
+    "prototype": "__int64 __fastcall(__int64, const UNICODE_STRING *)",
+    "rank_score": 1007,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsLocateDirectory",
+    "ea": "0x140012328",
+    "function_file": "functions/140012328_BfsLocateDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "BfsLocateDirectory",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 1005,
+    "size": 205,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "BfsGenerateFileName",
+    "ea": "0x140003a30",
+    "function_file": "functions/140003a30_BfsGenerateFileName.md",
+    "matched_imports": [
+      "FLTMGR!FltCheckAndGrowNameControl",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltGetFileNameInformationUnsafe",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsGenerateFileName",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, PFLT_CALLBACK_DATA CallbackData, int, _BYTE *, PFLT_NAME_CONTROL NameCtrl)",
+    "rank_score": 1002,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BfsGetGlobalFilePolicy",
+    "ea": "0x14000ca5c",
+    "function_file": "functions/14000ca5c_BfsGetGlobalFilePolicy.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualSid",
+      "ntoskrnl!RtlGetNextEntryHashTable",
+      "ntoskrnl!RtlLookupEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetGlobalFilePolicy",
+    "prototype": "PRTL_DYNAMIC_HASH_TABLE_ENTRY __fastcall(__int64, unsigned __int8 *, unsigned __int8 *)",
+    "rank_score": 846,
+    "size": 209,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "BfsLookupPolicyEntryHashTable",
+    "ea": "0x140008e38",
+    "function_file": "functions/140008e38_BfsLookupPolicyEntryHashTable.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualSid",
+      "ntoskrnl!RtlGetNextEntryHashTable",
+      "ntoskrnl!RtlLookupEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsLookupPolicyEntryHashTable",
+    "prototype": "PRTL_DYNAMIC_HASH_TABLE_ENTRY __fastcall(PRTL_DYNAMIC_HASH_TABLE HashTable, ULONG_PTR, void *, void *)",
+    "rank_score": 843,
+    "size": 139,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BfsAcquireNamedPipeMapping",
+    "ea": "0x14000b4c8",
+    "function_file": "functions/14000b4c8_BfsAcquireNamedPipeMapping.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsAcquireNamedPipeMapping",
+    "prototype": "PRTL_DYNAMIC_HASH_TABLE_ENTRY __fastcall(__int64, unsigned __int8 *, unsigned __int8 *, const UNICODE_STRING *)",
+    "rank_score": 828,
+    "size": 228,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BfsInitializePipeMappingTable",
+    "ea": "0x14000b5b4",
+    "function_file": "functions/14000b5b4_BfsInitializePipeMappingTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializePushLock",
+      "ntoskrnl!RtlCreateHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsInitializePipeMappingTable",
+    "prototype": "__int64()",
+    "rank_score": 813,
+    "size": 154,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfsGetPublisherIdFromToken",
+    "ea": "0x14000761c",
+    "function_file": "functions/14000761c_BfsGetPublisherIdFromToken.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryPackageIdentityEx"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetPublisherIdFromToken",
+    "prototype": "__int64 __fastcall(__int64, struct _UNICODE_STRING *)",
+    "rank_score": 809,
+    "size": 386,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfsOpenRootDirectory",
+    "ea": "0x1400123fc",
+    "function_file": "functions/1400123fc_BfsOpenRootDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "BfsOpenRootDirectory",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 809,
+    "size": 421,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BfsIsPathRelevant",
+    "ea": "0x1400012b0",
+    "function_file": "functions/1400012b0_BfsIsPathRelevant.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "BfsIsPathRelevant",
+    "prototype": "bool __fastcall(__int64)",
+    "rank_score": 802,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BfsFileInPublisherDirectory",
+    "ea": "0x1400067c0",
+    "function_file": "functions/1400067c0_BfsFileInPublisherDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [
+      "ProgramData"
+    ],
+    "name": "BfsFileInPublisherDirectory",
+    "prototype": "__int64 __fastcall(__int64, __int64, _BYTE *, __int64)",
+    "rank_score": 662,
+    "size": 473,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "BfsGetGlobalFileEntry",
+    "ea": "0x140001320",
+    "function_file": "functions/140001320_BfsGetGlobalFileEntry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlGetNextEntryHashTable",
+      "ntoskrnl!RtlLookupEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetGlobalFileEntry",
+    "prototype": "PRTL_DYNAMIC_HASH_TABLE_ENTRY __fastcall(__int64, const UNICODE_STRING *)",
+    "rank_score": 628,
+    "size": 172,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "BfsRevertTokenImpersonation",
+    "ea": "0x140010070",
+    "function_file": "functions/140010070_BfsRevertTokenImpersonation.md",
+    "matched_imports": [
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsImpersonateClient",
+      "ntoskrnl!PsRevertToSelf"
+    ],
+    "matched_strings": [],
+    "name": "BfsRevertTokenImpersonation",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 625,
+    "size": 103,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BfsGetEntryBlock",
+    "ea": "0x140011a24",
+    "function_file": "functions/140011a24_BfsGetEntryBlock.md",
+    "matched_imports": [
+      "ntoskrnl!RtlFindSetBits",
+      "ntoskrnl!RtlInitializeBitMap"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetEntryBlock",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *, _DWORD *)",
+    "rank_score": 605,
+    "size": 241,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BfsGetNotPresentPolicyEntryLocked",
+    "ea": "0x140006eb0",
+    "function_file": "functions/140006eb0_BfsGetNotPresentPolicyEntryLocked.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "BfsGetNotPresentPolicyEntryLocked",
+    "prototype": "__int64 __fastcall(__int64, void *, void *, PRTL_DYNAMIC_HASH_TABLE_ENTRY *)",
+    "rank_score": 446,
+    "size": 163,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BfsRemoveAllPoliciesFromGlobalFileTable",
+    "ea": "0x14000d58c",
+    "function_file": "functions/14000d58c_BfsRemoveAllPoliciesFromGlobalFileTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsRemoveAllPoliciesFromGlobalFileTable",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 418,
+    "size": 348,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x14001f590",
+    "function_file": "functions/14001f590_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "__int64()",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BfsVerifyAce",
+    "ea": "0x140004614",
+    "function_file": "functions/140004614_BfsVerifyAce.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualSid",
+      "ntoskrnl!RtlGetAce"
+    ],
+    "matched_strings": [],
+    "name": "BfsVerifyAce",
+    "prototype": "__int64 __fastcall(PACL Acl, char, char, int, PSID Sid1, _BYTE *)",
+    "rank_score": 415,
+    "size": 187,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BfsReparseNamedPipe",
+    "ea": "0x14000bf74",
+    "function_file": "functions/14000bf74_BfsReparseNamedPipe.md",
+    "matched_imports": [
+      "FLTMGR!FltSetCallbackDataDirty",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "BfsReparseNamedPipe",
+    "prototype": "void __fastcall(PFLT_CALLBACK_DATA Data, UNICODE_STRING *)",
+    "rank_score": 413,
+    "size": 107,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14001e884",
+    "function_file": "functions/14001e884_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "__int64()",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "BfsIdleCheckTimerCallback",
+    "ea": "0x140007830",
+    "function_file": "functions/140007830_BfsIdleCheckTimerCallback.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItemEx"
+    ],
+    "matched_strings": [],
+    "name": "BfsIdleCheckTimerCallback",
+    "prototype": "void __fastcall(__int64, void *)",
+    "rank_score": 410,
+    "size": 66,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "KappxParsePackageFullNameFromToken",
+    "ea": "0x14001ed28",
+    "function_file": "functions/14001ed28_KappxParsePackageFullNameFromToken.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "KappxParsePackageFullNameFromToken",
+    "prototype": "__int64 __fastcall(unsigned __int16 *)",
+    "rank_score": 407,
+    "size": 257,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BfsAllocateBlock",
+    "ea": "0x140010754",
+    "function_file": "functions/140010754_BfsAllocateBlock.md",
+    "matched_imports": [
+      "ntoskrnl!RtlFindClearBits",
+      "ntoskrnl!RtlSetBits"
+    ],
+    "matched_strings": [],
+    "name": "BfsAllocateBlock",
+    "prototype": "__int64 __fastcall(__int64, ULONG *)",
+    "rank_score": 404,
+    "size": 102,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BfsFreeDirectoryBlockList",
+    "ea": "0x140011994",
+    "function_file": "functions/140011994_BfsFreeDirectoryBlockList.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "BfsFreeDirectoryBlockList",
+    "prototype": "void __fastcall(void **)",
+    "rank_score": 404,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "BfsOpenPolicyDirectory",
+    "ea": "0x140008ecc",
+    "function_file": "functions/140008ecc_BfsOpenPolicyDirectory.md",
+    "matched_imports": [
+      "FLTMGR!FltCreateFileEx2"
+    ],
+    "matched_strings": [],
+    "name": "BfsOpenPolicyDirectory",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, void **)",
+    "rank_score": 272,
+    "size": 321,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BfsOpenPolicyRootDirectory",
+    "ea": "0x140003e44",
+    "function_file": "functions/140003e44_BfsOpenPolicyRootDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsOpenPolicyRootDirectory",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, void **)",
+    "rank_score": 266,
+    "size": 292,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 68,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, unsigned __int8 *, __int64, __int64, int, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 226,
+    "size": 164,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x14001ec70",
+    "function_file": "functions/14001ec70_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "__int64 *()",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "BfsRenameAsUserCallback",
+    "ea": "0x14000a930",
+    "function_file": "functions/14000a930_BfsRenameAsUserCallback.md",
+    "matched_imports": [
+      "FLTMGR!FltSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsRenameAsUserCallback",
+    "prototype": "__int64 __fastcall(__int64, struct _FLT_INSTANCE *, __int64, __int64)",
+    "rank_score": 219,
+    "size": 364,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "BfsInsertEntryHashTable",
+    "ea": "0x140012ca0",
+    "function_file": "functions/140012ca0_BfsInsertEntryHashTable.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInsertEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsInsertEntryHashTable",
+    "prototype": "__int64 __fastcall(struct _RTL_DYNAMIC_HASH_TABLE *, ULONG_PTR, struct _RTL_DYNAMIC_HASH_TABLE_ENTRY *)",
+    "rank_score": 217,
+    "size": 45,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "BfsRemoveEntryHashTable",
+    "ea": "0x140012cd4",
+    "function_file": "functions/140012cd4_BfsRemoveEntryHashTable.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRemoveEntryHashTable"
+    ],
+    "matched_strings": [],
+    "name": "BfsRemoveEntryHashTable",
+    "prototype": "__int64 __fastcall(struct _RTL_DYNAMIC_HASH_TABLE *, struct _RTL_DYNAMIC_HASH_TABLE_ENTRY *)",
+    "rank_score": 217,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x140004b68",
+    "function_file": "functions/140004b68_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "_BOOL8 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 217,
+    "size": 218,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "BfsUpdateUnicodeStringHash",
+    "ea": "0x1400013e0",
+    "function_file": "functions/1400013e0_BfsUpdateUnicodeStringHash.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUpcaseUnicodeChar"
+    ],
+    "matched_strings": [],
+    "name": "BfsUpdateUnicodeStringHash",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, _QWORD *)",
+    "rank_score": 216,
+    "size": 108,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "BfsWriteBlock",
+    "ea": "0x140012c40",
+    "function_file": "functions/140012c40_BfsWriteBlock.md",
+    "matched_imports": [
+      "ntoskrnl!ZwWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsWriteBlock",
+    "prototype": "NTSTATUS __fastcall(__int64, int, void *)",
+    "rank_score": 216,
+    "size": 90,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x14001f650",
+    "function_file": "functions/14001f650_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "__int64 *()",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140004f6c",
+    "function_file": "functions/140004f6c_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "_DWORD *__fastcall(int, __int64)",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x14001e7c0",
+    "function_file": "functions/14001e7c0_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, int)",
+    "rank_score": 214,
+    "size": 187,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "BfsReadBlock",
+    "ea": "0x1400125a8",
+    "function_file": "functions/1400125a8_BfsReadBlock.md",
+    "matched_imports": [
+      "ntoskrnl!ZwReadFile"
+    ],
+    "matched_strings": [],
+    "name": "BfsReadBlock",
+    "prototype": "NTSTATUS __fastcall(__int64, int, void *)",
+    "rank_score": 213,
+    "size": 90,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "BfsCompareTableEntries",
+    "ea": "0x140010900",
+    "function_file": "functions/140010900_BfsCompareTableEntries.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BfsCompareTableEntries",
+    "prototype": "__int64 __fastcall(struct _RTL_AVL_TABLE *Table, PCUNICODE_STRING *FirstStruct, PCUNICODE_STRING *SecondStruct)",
+    "rank_score": 211,
+    "size": 53,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "BfsClose",
+    "ea": "0x140003740",
+    "function_file": "functions/140003740_BfsClose.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "BfsClose",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 210,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 84,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140013860",
+    "function_file": "functions/140013860_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "Feature_AgenticAppContainerBfsSupport__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x140003614",
+    "function_file": "functions/140003614_Feature_AgenticAppContainerBfsSupport_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_AgenticAppContainerBfsSupport__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "__int64()",
+    "rank_score": 31,
+    "size": 53,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140004c48",
+    "function_file": "functions/140004c48_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *, __int64, __int64)",
+    "rank_score": 27,
+    "size": 274,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BfsGetFinalPathComponent",
+    "ea": "0x140006d20",
+    "function_file": "functions/140006d20_BfsGetFinalPathComponent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsGetFinalPathComponent",
+    "prototype": "unsigned __int16 *__fastcall(unsigned __int16 *, __int64)",
+    "rank_score": 24,
+    "size": 139,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400136bc",
+    "function_file": "functions/1400136bc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "BfsUpdateHash",
+    "ea": "0x140012d00",
+    "function_file": "functions/140012d00_BfsUpdateHash.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsUpdateHash",
+    "prototype": "void __fastcall(__int64, unsigned int, __int64 *)",
+    "rank_score": 22,
+    "size": 37,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Feature_AgenticAppContainerBfsSupport__private_IsEnabledFallback",
+    "ea": "0x140003650",
+    "function_file": "functions/140003650_Feature_AgenticAppContainerBfsSupport_private_IsEnabledFallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_AgenticAppContainerBfsSupport__private_IsEnabledFallback",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 22,
+    "size": 22,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14001f010",
+    "function_file": "functions/14001f010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x14001ebd0",
+    "function_file": "functions/14001ebd0_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "__int64()",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 17,
+    "demangled": "memset",
+    "ea": "0x140013c80",
+    "function_file": "functions/140013c80_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 21,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x1400138a0",
+    "function_file": "functions/1400138a0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "wil_details_IsEnabledFallback",
+    "ea": "0x140003690",
+    "function_file": "functions/140003690_wil_details_IsEnabledFallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_IsEnabledFallback",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, volatile signed __int32 **)",
+    "rank_score": 17,
+    "size": 114,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "BfsGetPathComponent",
+    "ea": "0x140011bc8",
+    "function_file": "functions/140011bc8_BfsGetPathComponent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsGetPathComponent",
+    "prototype": "__int16 *__fastcall(__int16 *, _OWORD *, __int64)",
+    "rank_score": 16,
+    "size": 111,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x14000495c",
+    "function_file": "functions/14000495c_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "_DWORD *__fastcall(__int64, volatile signed __int32 *, __int64, int)",
+    "rank_score": 16,
+    "size": 381,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x140004ae0",
+    "function_file": "functions/140004ae0_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "__int64 (__fastcall *__fastcall(__int64, __int64, __int64))(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _QWORD)",
+    "rank_score": 16,
+    "size": 129,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14001e9c0",
+    "function_file": "functions/14001e9c0_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *, unsigned __int32, __int64)",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x14001ead4",
+    "function_file": "functions/14001ead4_wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "__int64()",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "BfsFinalHash",
+    "ea": "0x1400017b0",
+    "function_file": "functions/1400017b0_BfsFinalHash.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsFinalHash",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 13,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BfsGetPathComponentEx",
+    "ea": "0x140011c40",
+    "function_file": "functions/140011c40_BfsGetPathComponentEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsGetPathComponentEx",
+    "prototype": "__int16 *__fastcall(__int16 *, __int128 *, __int64, __int64)",
+    "rank_score": 13,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BfsRemoveFileEntryFromDeleteList",
+    "ea": "0x14000d6f0",
+    "function_file": "functions/14000d6f0_BfsRemoveFileEntryFromDeleteList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsRemoveFileEntryFromDeleteList",
+    "prototype": "_QWORD *__fastcall(__int64)",
+    "rank_score": 13,
+    "size": 60,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x1400047b0",
+    "function_file": "functions/1400047b0_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *, int, __int64, _DWORD *)",
+    "rank_score": 13,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x140004880",
+    "function_file": "functions/140004880_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *, int, __int64, _DWORD *)",
+    "rank_score": 13,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x140004d60",
+    "function_file": "functions/140004d60_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "void __fastcall(unsigned __int8, int, __int64)",
+    "rank_score": 13,
+    "size": 77,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14001f044",
+    "function_file": "functions/14001f044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "memmove",
+    "ea": "0x140013980",
+    "function_file": "functions/140013980_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 11,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "BfsGetFileName",
+    "ea": "0x140006c84",
+    "function_file": "functions/140006c84_BfsGetFileName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsGetFileName",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 9,
+    "size": 149,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140004784",
+    "function_file": "functions/140004784_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "__int64 *__fastcall(__int64 *)",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Feature_AppSiloSmbNoTrackDelete__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x140001270",
+    "function_file": "functions/140001270_Feature_AppSiloSmbNoTrackDelete_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_AppSiloSmbNoTrackDelete__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "__int64()",
+    "rank_score": 4,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14001e984",
+    "function_file": "functions/14001e984_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "__int64 __fastcall(_DWORD *, __int64)",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BfsGetPathLength",
+    "ea": "0x140006f5c",
+    "function_file": "functions/140006f5c_BfsGetPathLength.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsGetPathLength",
+    "prototype": "__int16 __fastcall(__int64 **, _WORD *, _WORD *)",
+    "rank_score": 3,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BfsQueryAccessOnly",
+    "ea": "0x14000a4f4",
+    "function_file": "functions/14000a4f4_BfsQueryAccessOnly.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsQueryAccessOnly",
+    "prototype": "bool __fastcall(int, __int64)",
+    "rank_score": 3,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCbCopyUnicodeString",
+    "ea": "0x14000e200",
+    "function_file": "functions/14000e200_RtlStringCbCopyUnicodeString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCbCopyUnicodeString",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cbDest, PCUNICODE_STRING SourceString)",
+    "rank_score": 3,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14001e8e4",
+    "function_file": "functions/14001e8e4_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "__int64 __fastcall(int, __int64, _QWORD *)",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "BfsGetRootDirectory",
+    "ea": "0x14001e008",
+    "function_file": "functions/14001e008_BfsGetRootDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsGetRootDirectory",
+    "prototype": "HANDLE()",
+    "rank_score": 2,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BfsGetShareName",
+    "ea": "0x1400077a4",
+    "function_file": "functions/1400077a4_BfsGetShareName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BfsGetShareName",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2,
+    "size": 120,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Feature_AppSiloSmbNoTrackDelete__private_IsEnabledFallback",
+    "ea": "0x140003670",
+    "function_file": "functions/140003670_Feature_AppSiloSmbNoTrackDelete_private_IsEnabledFallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_AppSiloSmbNoTrackDelete__private_IsEnabledFallback",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2,
+    "size": 22,
+    "tags": []
+  }
+]
