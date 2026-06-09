@@ -1,0 +1,26 @@
+# Microsoft.ReportingServices.RdlExpressions.ExpressionHostObjectModel.CustomCodeProxyBase::OnInit
+
+- ea: `0x1d90`
+- end: `0x1d91`
+- name: `Microsoft.ReportingServices.RdlExpressions.ExpressionHostObjectModel.CustomCodeProxyBase::OnInit`
+- size: `1`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `0`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x1da0`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x1d90  ret
+```

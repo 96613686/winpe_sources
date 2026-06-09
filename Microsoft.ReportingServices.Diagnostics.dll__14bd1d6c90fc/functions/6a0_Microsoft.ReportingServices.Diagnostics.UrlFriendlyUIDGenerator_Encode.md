@@ -1,0 +1,221 @@
+# Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::Encode
+
+- ea: `0x6a0`
+- end: `0x7b5`
+- name: `Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::Encode`
+- size: `277`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x7c0`
+
+## callees
+
+- `0x6a0`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x6a0  ldc.i4.s 0x18
+0x6a2  newarr   [mscorlib]System.Char
+0x6a7  stloc.3
+0x6a8  ldarg.0
+0x6a9  ldlen
+0x6aa  conv.i4
+0x6ab  ldc.i4.s 0xF
+0x6ad  beq.s    loc_6BA
+0x6af  ldstr    aUnexpectedSess// "Unexpected session id buffer"
+0x6b4  newobj   instance void [mscorlib]System.Exception::.ctor(string)
+0x6b9  throw
+0x6ba  ldc.i4.0
+0x6bb  stloc.1
+0x6bc  ldc.i4.0
+0x6bd  stloc.0
+0x6be  br       loc_796
+0x6c3  ldarg.0
+0x6c4  ldloc.0
+0x6c5  ldelem.u1
+0x6c6  ldarg.0
+0x6c7  ldloc.0
+0x6c8  ldc.i4.1
+0x6c9  add
+0x6ca  ldelem.u1
+0x6cb  ldc.i4.8
+0x6cc  shl
+0x6cd  or
+0x6ce  ldarg.0
+0x6cf  ldloc.0
+0x6d0  ldc.i4.2
+0x6d1  add
+0x6d2  ldelem.u1
+0x6d3  ldc.i4.s 0x10
+0x6d5  shl
+0x6d6  or
+0x6d7  ldarg.0
+0x6d8  ldloc.0
+0x6d9  ldc.i4.3
+0x6da  add
+0x6db  ldelem.u1
+0x6dc  ldc.i4.s 0x18
+0x6de  shl
+0x6df  or
+0x6e0  dup
+0x6e1  ldc.i4.s 0x1F
+0x6e3  and
+0x6e4  stloc.2
+0x6e5  ldloc.3
+0x6e6  ldloc.1
+0x6e7  dup
+0x6e8  ldc.i4.1
+0x6e9  add
+0x6ea  stloc.1
+0x6eb  ldsfld   char[] Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::s_encoding
+0x6f0  ldloc.2
+0x6f1  ldelem.u2
+0x6f2  stelem.i2
+0x6f3  dup
+0x6f4  ldc.i4.5
+0x6f5  shr
+0x6f6  ldc.i4.s 0x1F
+0x6f8  and
+0x6f9  stloc.2
+0x6fa  ldloc.3
+0x6fb  ldloc.1
+0x6fc  dup
+0x6fd  ldc.i4.1
+0x6fe  add
+0x6ff  stloc.1
+0x700  ldsfld   char[] Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::s_encoding
+0x705  ldloc.2
+0x706  ldelem.u2
+0x707  stelem.i2
+0x708  dup
+0x709  ldc.i4.s 0xA
+0x70b  shr
+0x70c  ldc.i4.s 0x1F
+0x70e  and
+0x70f  stloc.2
+0x710  ldloc.3
+0x711  ldloc.1
+0x712  dup
+0x713  ldc.i4.1
+0x714  add
+0x715  stloc.1
+0x716  ldsfld   char[] Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::s_encoding
+0x71b  ldloc.2
+0x71c  ldelem.u2
+0x71d  stelem.i2
+0x71e  dup
+0x71f  ldc.i4.s 0xF
+0x721  shr
+0x722  ldc.i4.s 0x1F
+0x724  and
+0x725  stloc.2
+0x726  ldloc.3
+0x727  ldloc.1
+0x728  dup
+0x729  ldc.i4.1
+0x72a  add
+0x72b  stloc.1
+0x72c  ldsfld   char[] Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::s_encoding
+0x731  ldloc.2
+0x732  ldelem.u2
+0x733  stelem.i2
+0x734  dup
+0x735  ldc.i4.s 0x14
+0x737  shr
+0x738  ldc.i4.s 0x1F
+0x73a  and
+0x73b  stloc.2
+0x73c  ldloc.3
+0x73d  ldloc.1
+0x73e  dup
+0x73f  ldc.i4.1
+0x740  add
+0x741  stloc.1
+0x742  ldsfld   char[] Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::s_encoding
+0x747  ldloc.2
+0x748  ldelem.u2
+0x749  stelem.i2
+0x74a  dup
+0x74b  ldc.i4.s 0x19
+0x74d  shr
+0x74e  ldc.i4.s 0x1F
+0x750  and
+0x751  stloc.2
+0x752  ldloc.3
+0x753  ldloc.1
+0x754  dup
+0x755  ldc.i4.1
+0x756  add
+0x757  stloc.1
+0x758  ldsfld   char[] Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::s_encoding
+0x75d  ldloc.2
+0x75e  ldelem.u2
+0x75f  stelem.i2
+0x760  ldc.i4.s 0x1E
+0x762  shr
+0x763  ldarg.0
+0x764  ldloc.0
+0x765  ldc.i4.4
+0x766  add
+0x767  ldelem.u1
+0x768  ldc.i4.2
+0x769  shl
+0x76a  or
+0x76b  dup
+0x76c  ldc.i4.s 0x1F
+0x76e  and
+0x76f  stloc.2
+0x770  ldloc.3
+0x771  ldloc.1
+0x772  dup
+0x773  ldc.i4.1
+0x774  add
+0x775  stloc.1
+0x776  ldsfld   char[] Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::s_encoding
+0x77b  ldloc.2
+0x77c  ldelem.u2
+0x77d  stelem.i2
+0x77e  ldc.i4.5
+0x77f  shr
+0x780  ldc.i4.s 0x1F
+0x782  and
+0x783  stloc.2
+0x784  ldloc.3
+0x785  ldloc.1
+0x786  dup
+0x787  ldc.i4.1
+0x788  add
+0x789  stloc.1
+0x78a  ldsfld   char[] Microsoft.ReportingServices.Diagnostics.UrlFriendlyUIDGenerator::s_encoding
+0x78f  ldloc.2
+0x790  ldelem.u2
+0x791  stelem.i2
+0x792  ldloc.0
+0x793  ldc.i4.5
+0x794  add
+0x795  stloc.0
+0x796  ldloc.0
+0x797  ldc.i4.s 0xF
+0x799  blt      loc_6C3
+0x79e  ldloc.1
+0x79f  ldc.i4.s 0x18
+0x7a1  beq.s    loc_7AE
+0x7a3  ldstr    aUnexpectedErro// "Unexpected error generating session id"
+0x7a8  newobj   instance void [mscorlib]System.Exception::.ctor(string)
+0x7ad  throw
+0x7ae  ldloc.3
+0x7af  newobj   instance void [mscorlib]System.String::.ctor(char[])
+0x7b4  ret
+```

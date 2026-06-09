@@ -1,0 +1,78 @@
+# Microsoft.Crm.Asynchronous.ServerConfiguration::ReadServerSetting
+
+- ea: `0xc960`
+- end: `0xc968`
+- name: `Microsoft.Crm.Asynchronous.ServerConfiguration::ReadServerSetting`
+- size: `8`
+- prototype: ``
+- caller_count: `62`
+- callee_count: `0`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0xbf40`
+- `0xbf60`
+- `0xbf80`
+- `0xbfa0`
+- `0xbfc0`
+- `0xbfe0`
+- `0xc000`
+- `0xc020`
+- `0xc040`
+- `0xc060`
+- `0xc080`
+- `0xc0a0`
+- `0xc130`
+- `0xc150`
+- `0xc170`
+- `0xc190`
+- `0xc1c0`
+- `0xc1e0`
+- `0xc200`
+- `0xc230`
+- `0xc250`
+- `0xc270`
+- `0xc290`
+- `0xc2b0`
+- `0xc2f0`
+- `0xc310`
+- `0xc330`
+- `0xc360`
+- `0xc3c0`
+- `0xc3f0`
+- `0xc420`
+- `0xc470`
+- `0xc4a0`
+- `0xc4d0`
+- `0xc500`
+- `0xc520`
+- `0xc550`
+- `0xc570`
+- `0xc590`
+- `0xc5b0`
+- `0xc5e0`
+- `0xc610`
+- `0xc640`
+- `0xc670`
+- `0xc690`
+- `0xc6b0`
+- `0xc6d0`
+- `0xc700`
+- `0xc720`
+- `0xc740`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0xc960  ldarg.0
+0xc961  ldarg.1
+0xc962  callvirt instance object [Microsoft.Crm.Core]Microsoft.Crm.ILocatorService::GetDeploymentSetting(string)
+0xc967  ret
+```

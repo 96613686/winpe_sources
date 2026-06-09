@@ -1,0 +1,992 @@
+[
+  {
+    "from_ea": "0x19c",
+    "from_func": "0x180",
+    "string_ea": "0x100ba",
+    "text": "Start finding anomalies created by solution import/uninstall for org {0}"
+  },
+  {
+    "from_ea": "0x422",
+    "from_func": "0x3d0",
+    "string_ea": "0x10222",
+    "text": "ALM Anomaly Detection task {0} executed for org {1} with status {2} and runmessage {3}"
+  },
+  {
+    "from_ea": "0x538",
+    "from_func": "0x530",
+    "string_ea": "0x102d0",
+    "text": "Task PreRunCheck Started"
+  },
+  {
+    "from_ea": "0x550",
+    "from_func": "0x530",
+    "string_ea": "0x10302",
+    "text": "Task Execute Started"
+  },
+  {
+    "from_ea": "0x568",
+    "from_func": "0x530",
+    "string_ea": "0x1032c",
+    "text": "Task Post Execute Started"
+  },
+  {
+    "from_ea": "0x580",
+    "from_func": "0x530",
+    "string_ea": "0x10360",
+    "text": "Task successfuly ran"
+  },
+  {
+    "from_ea": "0x5a9",
+    "from_func": "0x530",
+    "string_ea": "0x1038a",
+    "text": "Anomaly Detection Task {0} failed with ex: {1}"
+  },
+  {
+    "from_ea": "0x6e2",
+    "from_func": "0x6e0",
+    "string_ea": "0x103e8",
+    "text": "ALMSchemaMetadataDiscrepancyTask"
+  },
+  {
+    "from_ea": "0x6f8",
+    "from_func": "0x6f0",
+    "string_ea": "0x1042a",
+    "text": "ALM Schema Metadata Discrepancy task started for Org {0}"
+  },
+  {
+    "from_ea": "0x7af",
+    "from_func": "0x6f0",
+    "string_ea": "0x1049c",
+    "text": "ALM Schema Metadata Discrepancy task detected missing columns: {0}, missing tables: {1}, missing views: {2}, missing sprocs: {3} & duplicate labels:{4} for org: {5}"
+  },
+  {
+    "from_ea": "0x8fe",
+    "from_func": "0x8f0",
+    "string_ea": "0x1148c",
+    "text": "ALMRollupJobTableLimitDetectionTask"
+  },
+  {
+    "from_ea": "0x91e",
+    "from_func": "0x910",
+    "string_ea": "0x114d4",
+    "text": "ALM Rollup Job Table Limit task started for Org {0}"
+  },
+  {
+    "from_ea": "0x9a8",
+    "from_func": "0x910",
+    "string_ea": "0x1153c",
+    "text": "ALM Rollup Job Table Limit task completed for Org {0}"
+  },
+  {
+    "from_ea": "0xa00",
+    "from_func": "0xa00",
+    "string_ea": "0x11610",
+    "text": "\r\n\t\t\tDECLARE @RollupProperties TABLE\r\n\t\t\t(\r\n\t\t\t\tRollupPropertiesId uniqueidentifier\r\n\t\t\t)\r\n\r\n\t\t\tINSERT INTO @RollupProperties (RollupPropertiesId) SELECT DISTINCT RollupPropertiesId FROM [dbo].[RollupJob] (nolock)\r\n\t\t\t\r\n\t\t\tSELECT Count(1) FROM @RollupProperties"
+  },
+  {
+    "from_ea": "0xa38",
+    "from_func": "0xa30",
+    "string_ea": "0x1181c",
+    "text": "Attempting to Cleanup Solution Components for org {0}"
+  },
+  {
+    "from_ea": "0xad8",
+    "from_func": "0xa30",
+    "string_ea": "0x11888",
+    "text": "Cleanup of Solution Components for org {0} failedl"
+  },
+  {
+    "from_ea": "0xb20",
+    "from_func": "0xa30",
+    "string_ea": "0x118ee",
+    "text": "Cleanup of Solution Components for org {0} was successful"
+  },
+  {
+    "from_ea": "0xea3",
+    "from_func": "0xb80",
+    "string_ea": "0x11b58",
+    "text": "Error creating backup for Organization: {0}; SQL Server: {1}; Service Account: {2}, message: {3}"
+  },
+  {
+    "from_ea": "0x10c3",
+    "from_func": "0xb80",
+    "string_ea": "0x11d46",
+    "text": "_MANIFEST.XML"
+  },
+  {
+    "from_ea": "0x1163",
+    "from_func": "0xb80",
+    "string_ea": "0x11d62",
+    "text": "Error creating backup manifest for Organization: {0}; SQL Server: {1}; message: {2}"
+  },
+  {
+    "from_ea": "0x1335",
+    "from_func": "0x1320",
+    "string_ea": "0x11fae",
+    "text": "Error creating backup for SQL Server {0}, Database {1} Path {2}: {3}"
+  },
+  {
+    "from_ea": "0x136b",
+    "from_func": "0x1320",
+    "string_ea": "0x11fae",
+    "text": "Error creating backup for SQL Server {0}, Database {1} Path {2}: {3}"
+  },
+  {
+    "from_ea": "0x13b0",
+    "from_func": "0x13a0",
+    "string_ea": "0x12038",
+    "text": "Error creating backup path for organization id: {0}  : {1}"
+  },
+  {
+    "from_ea": "0x1405",
+    "from_func": "0x13f0",
+    "string_ea": "0x120ae",
+    "text": "Unable to update backup history for organization id: {0} : {1}"
+  },
+  {
+    "from_ea": "0x14cc",
+    "from_func": "0x14c0",
+    "string_ea": "0x12134",
+    "text": "*_MANIFEST.xml"
+  },
+  {
+    "from_ea": "0x1571",
+    "from_func": "0x1570",
+    "string_ea": "0x12152",
+    "text": "organizationService"
+  },
+  {
+    "from_ea": "0x1611",
+    "from_func": "0x15d0",
+    "string_ea": "0x121f6",
+    "text": "Organization {0} is not in healthy state. The OrganizationLifecycleStatus is {1}, the OrganizationLifecycleConfigurationStatus is {2}"
+  },
+  {
+    "from_ea": "0x16f0",
+    "from_func": "0x16e0",
+    "string_ea": "0x12370",
+    "text": "\r\n\t\t\tuse msdb\r\n\t\t\tSelect TOP 1 r.status,s.host_name,r.start_time\r\n\t\t\tFROM sys.dm_exec_requests r \r\n\t\t\tINNER JOIN sys.dm_exec_sessions s ON s.session_id = r.session_id\r\n\t\t\tWHERE \r\n\t\t\t\tr.command = 'BACKUP DATABASE' and \r\n\t\t\t\tr.database_id = DB_ID(@OrgDbName) and \r\n\t\t\t\ts.host_name is not null and\r\n\t\t\t\ts.host_name like '%CrmAsyncService'"
+  },
+  {
+    "from_ea": "0x1725",
+    "from_func": "0x16e0",
+    "string_ea": "0x12626",
+    "text": "There is already a full backup in progress for DB {0}. Host: {1}, Status {2}, Start Time: {3}"
+  },
+  {
+    "from_ea": "0x1b00",
+    "from_func": "0x1ad0",
+    "string_ea": "0x12978",
+    "text": "BEGIN\r\n\t\t\t\t\t\t\tSET NOCOUNT ON\r\n\t\t\t\t\t\t\tSET XACT_ABORT ON\r\n\r\n\t\t\t\t\t\t\tDECLARE @RecordCountToDelete int = 1\r\n\t\t\t\t\t\t\tDECLARE @ActivationsToDelete TABLE\r\n\t\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\tWorkflowId UNIQUEIDENTIFIER\r\n\t\t\t\t\t\t\t)\r\n\r\n\t\t\t\t\t\t\tWHILE @RecordCountToDelete > 0\r\n\t\t\t\t\t\t\t\tBEGIN\r\n\t\t\t\t\t\t\t\t\tBEGIN tran\r\n\t\t\t\t\t\t\t\t\t\tINSERT @ActivationsToDelete\r\n\t\t\t\t\t\t\t\t\t\t\tSELECT TOP 5000 WorkflowId \r\n\t\t\t\t\t\t\t\t\t\t\tFROM WorkflowBase\r\n\t\t\t\t\t\t\t\t\t\t\tWHERE\r\n\t\t\t\t\t\t\t\t\t\t\t\tType = 2\r\n\t\t\t\t\t\t\t\t\t\t\tAND (Category = 0 OR Category = 2 OR Category = 3)\r\n\t\t\t\t\t\t\t\t"
+  },
+  {
+    "from_ea": "0x1de2",
+    "from_func": "0x1dd0",
+    "string_ea": "0x13a94",
+    "text": "xp_cmdshell 'sqlcmd -S %COMPUTERNAME% -i {0}', no_output"
+  },
+  {
+    "from_ea": "0x1ebc",
+    "from_func": "0x1eb0",
+    "string_ea": "0x13b1c",
+    "text": "dtaConfigXml"
+  },
+  {
+    "from_ea": "0x1ec7",
+    "from_func": "0x1eb0",
+    "string_ea": "0x13b36",
+    "text": "directory"
+  },
+  {
+    "from_ea": "0x209c",
+    "from_func": "0x2090",
+    "string_ea": "0x13c7e",
+    "text": "DTADirectory"
+  },
+  {
+    "from_ea": "0x20aa",
+    "from_func": "0x2090",
+    "string_ea": "0x13c98",
+    "text": "DTADirectory not found"
+  },
+  {
+    "from_ea": "0x20bf",
+    "from_func": "0x2090",
+    "string_ea": "0x13cc6",
+    "text": "DTATemplate"
+  },
+  {
+    "from_ea": "0x20cd",
+    "from_func": "0x2090",
+    "string_ea": "0x13cde",
+    "text": "DTATemplate note found"
+  },
+  {
+    "from_ea": "0x2299",
+    "from_func": "0x2290",
+    "string_ea": "0x13de4",
+    "text": "Failed to delete remote trace '"
+  },
+  {
+    "from_ea": "0x243a",
+    "from_func": "0x2430",
+    "string_ea": "0x14014",
+    "text": "Operation type must be 'Deletion Service'"
+  },
+  {
+    "from_ea": "0x2657",
+    "from_func": "0x2600",
+    "string_ea": "0x1416c",
+    "text": "Operation type must be 'EntityKeyIndexCreate'"
+  },
+  {
+    "from_ea": "0x2970",
+    "from_func": "0x28c0",
+    "string_ea": "0x1422a",
+    "text": "update EntityKey set "
+  },
+  {
+    "from_ea": "0x2ad0",
+    "from_func": "0x2ad0",
+    "string_ea": "0x142cc",
+    "text": "EntityKeyIndexCreate"
+  },
+  {
+    "from_ea": "0x2b46",
+    "from_func": "0x2b40",
+    "string_ea": "0x142f6",
+    "text": "StepConfigurationOverride"
+  },
+  {
+    "from_ea": "0x2b5d",
+    "from_func": "0x2b40",
+    "string_ea": "0x1432a",
+    "text": "Invalid configuration"
+  },
+  {
+    "from_ea": "0x2b9c",
+    "from_func": "0x2b40",
+    "string_ea": "0x14356",
+    "text": "serviceendpoint"
+  },
+  {
+    "from_ea": "0x2d00",
+    "from_func": "0x2c60",
+    "string_ea": "0x14356",
+    "text": "serviceendpoint"
+  },
+  {
+    "from_ea": "0x2bd6",
+    "from_func": "0x2bd0",
+    "string_ea": "0x1437a",
+    "text": "SecureStepConfigurationOverride"
+  },
+  {
+    "from_ea": "0x2bed",
+    "from_func": "0x2bd0",
+    "string_ea": "0x143ba",
+    "text": "Invalid secure configuration"
+  },
+  {
+    "from_ea": "0x2c66",
+    "from_func": "0x2c60",
+    "string_ea": "0x143f4",
+    "text": "PluginTypeIdOverride"
+  },
+  {
+    "from_ea": "0x2c7d",
+    "from_func": "0x2c60",
+    "string_ea": "0x1441e",
+    "text": "Invalid plugin type id"
+  },
+  {
+    "from_ea": "0x2cc5",
+    "from_func": "0x2c60",
+    "string_ea": "0x1444c",
+    "text": "AsyncOperationCommand.GetPluginType: loading id '{0}', type '{1}', pluginTypeId:{2}"
+  },
+  {
+    "from_ea": "0x2d26",
+    "from_func": "0x2d20",
+    "string_ea": "0x144f4",
+    "text": "AsyncAutoDeleteOverride"
+  },
+  {
+    "from_ea": "0x2d3d",
+    "from_func": "0x2d20",
+    "string_ea": "0x14524",
+    "text": "Invalid auto delete setting"
+  },
+  {
+    "from_ea": "0x2dfa",
+    "from_func": "0x2db0",
+    "string_ea": "0x1459a",
+    "text": "Could not find the plugin assembly or type to execute."
+  },
+  {
+    "from_ea": "0x3001",
+    "from_func": "0x2fc0",
+    "string_ea": "0x1459a",
+    "text": "Could not find the plugin assembly or type to execute."
+  },
+  {
+    "from_ea": "0x30a7",
+    "from_func": "0x2fc0",
+    "string_ea": "0x1466c",
+    "text": "PluginTrace"
+  },
+  {
+    "from_ea": "0x30c4",
+    "from_func": "0x2fc0",
+    "string_ea": "0x1466c",
+    "text": "PluginTrace"
+  },
+  {
+    "from_ea": "0x30cf",
+    "from_func": "0x2fc0",
+    "string_ea": "0x1466c",
+    "text": "PluginTrace"
+  },
+  {
+    "from_ea": "0x317e",
+    "from_func": "0x3170",
+    "string_ea": "0x146ca",
+    "text": "Microsoft.Crm.ServiceBus.ServiceBusPlugin"
+  },
+  {
+    "from_ea": "0x3623",
+    "from_func": "0x3620",
+    "string_ea": "0x14848",
+    "text": "serviceType"
+  },
+  {
+    "from_ea": "0x399d",
+    "from_func": "0x38e0",
+    "string_ea": "0x14ab2",
+    "text": "IndexManagementServiceExecutionTimeoutInMinutes"
+  },
+  {
+    "from_ea": "0x3a30",
+    "from_func": "0x38e0",
+    "string_ea": "0x14be4",
+    "text": "  Completed Execution: DoIndexManagement"
+  },
+  {
+    "from_ea": "0x3bd4",
+    "from_func": "0x3b60",
+    "string_ea": "0x14d98",
+    "text": "  Completed Execution: QuickFindIndexUtility.ProcessIndexesForAllEntities"
+  },
+  {
+    "from_ea": "0x3c1e",
+    "from_func": "0x3b60",
+    "string_ea": "0x14e2c",
+    "text": "  Started Execution: ForeignKeyManagementService.FindMissedIndexesOnForeignKeys"
+  },
+  {
+    "from_ea": "0x3c62",
+    "from_func": "0x3b60",
+    "string_ea": "0x14ecc",
+    "text": "  Completed Execution: ForeignKeyManagementService.FindMissedIndexesOnForeignKeys"
+  },
+  {
+    "from_ea": "0x3ca0",
+    "from_func": "0x3b60",
+    "string_ea": "0x14f70",
+    "text": "  Started Execution: ForeignKeyManagementService.RecreateAllForeignKeyConstraints"
+  },
+  {
+    "from_ea": "0x3ce8",
+    "from_func": "0x3b60",
+    "string_ea": "0x15014",
+    "text": "  Completed Execution: ForeignKeyManagementService.RecreateAllForeignKeyConstraints"
+  },
+  {
+    "from_ea": "0x3d26",
+    "from_func": "0x3b60",
+    "string_ea": "0x150bc",
+    "text": "  Started Execution: IndexAndConstraintManagementService.Instance.RecreateAllIndexes"
+  },
+  {
+    "from_ea": "0x3d73",
+    "from_func": "0x3b60",
+    "string_ea": "0x15166",
+    "text": "  Completed Execution: IndexAndConstraintManagementService.Instance.RecreateAllIndexes"
+  },
+  {
+    "from_ea": "0x4a97",
+    "from_func": "0x49f0",
+    "string_ea": "0x15e28",
+    "text": "<link-entity name='activitypointer' from='activityid' to='activityid' alias='activitypointer'>"
+  },
+  {
+    "from_ea": "0x4adf",
+    "from_func": "0x49f0",
+    "string_ea": "0x15f70",
+    "text": "</link-entity>"
+  },
+  {
+    "from_ea": "0x5087",
+    "from_func": "0x5060",
+    "string_ea": "0x16136",
+    "text": "AccessMode"
+  },
+  {
+    "from_ea": "0x599a",
+    "from_func": "0x5990",
+    "string_ea": "0x1643a",
+    "text": "Operation type must be 'RefreshReadSharingSnapshots'"
+  },
+  {
+    "from_ea": "0x59d6",
+    "from_func": "0x5990",
+    "string_ea": "0x164a4",
+    "text": "InternalExecute:RegenerateReadSharingSnapshotData"
+  },
+  {
+    "from_ea": "0x5a15",
+    "from_func": "0x5990",
+    "string_ea": "0x164a4",
+    "text": "InternalExecute:RegenerateReadSharingSnapshotData"
+  },
+  {
+    "from_ea": "0x59db",
+    "from_func": "0x5990",
+    "string_ea": "0x16508",
+    "text": "Starting Execution: RegenerateReadSharingSnapshotData."
+  },
+  {
+    "from_ea": "0x5a1a",
+    "from_func": "0x5990",
+    "string_ea": "0x16576",
+    "text": "Completed Execution: RegenerateReadSharingSnapshotData."
+  },
+  {
+    "from_ea": "0x5a49",
+    "from_func": "0x5990",
+    "string_ea": "0x165e6",
+    "text": "SELECT ObjectTypeCode, COUNT(PrincipalObjectAccessId) AS ReadShareCount\r\n\t\t\t\t\t\t\t\t\t\t\t  FROM PrincipalObjectAccess POA \r\n\t\t\t\t\t\t\t\t\t\t\t  WHERE ((POA.AccessRightsMask | POA.InheritedAccessRightsMask) &1) = 1 \r\n\t\t\t\t\t\t\t\t\t\t\t  GROUP BY ObjectTypeCode "
+  },
+  {
+    "from_ea": "0x5a5c",
+    "from_func": "0x5990",
+    "string_ea": "0x167ca",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\5\\src\\Core\\ObjectModel\\Async\\Handlers\\System\\RefreshPrincipalObjectAccessReadSnapshotOperation.cs"
+  },
+  {
+    "from_ea": "0x5ab0",
+    "from_func": "0x5990",
+    "string_ea": "0x168ce",
+    "text": "ReadShareCount"
+  },
+  {
+    "from_ea": "0x5abe",
+    "from_func": "0x5990",
+    "string_ea": "0x168ce",
+    "text": "ReadShareCount"
+  },
+  {
+    "from_ea": "0x5adb",
+    "from_func": "0x5990",
+    "string_ea": "0x168ce",
+    "text": "ReadShareCount"
+  },
+  {
+    "from_ea": "0x5c7d",
+    "from_func": "0x5c70",
+    "string_ea": "0x168ec",
+    "text": "\r\ndeclare @d datetime\r\nset @d = DATEADD(n, @Minutes, GETUTCDATE())\r\nexec sp_trace_create @TraceId output, 0, @TraceFile, @MaxFileSize, @d\r\n"
+  },
+  {
+    "from_ea": "0x610c",
+    "from_func": "0x6100",
+    "string_ea": "0x16d64",
+    "text": "traceDirectory"
+  },
+  {
+    "from_ea": "0x6341",
+    "from_func": "0x6340",
+    "string_ea": "0x16d64",
+    "text": "traceDirectory"
+  },
+  {
+    "from_ea": "0x6670",
+    "from_func": "0x6670",
+    "string_ea": "0x16e8c",
+    "text": "SqmDatabaseAccessor"
+  },
+  {
+    "from_ea": "0x8a70",
+    "from_func": "0x8a70",
+    "string_ea": "0x16e8c",
+    "text": "SqmDatabaseAccessor"
+  },
+  {
+    "from_ea": "0x6ab0",
+    "from_func": "0x6ab0",
+    "string_ea": "0x1792c",
+    "text": "SELECT COUNT(*) FROM PrincipalObjectAttributeAccessBase"
+  },
+  {
+    "from_ea": "0x6ad0",
+    "from_func": "0x6ad0",
+    "string_ea": "0x1799c",
+    "text": "SELECT COUNT(*) FROM FieldSecurityProfile WHERE FieldSecurityProfileId <> '572329C1-A042-4E22-BE47-367C6374EA45'"
+  },
+  {
+    "from_ea": "0x6b0b",
+    "from_func": "0x6af0",
+    "string_ea": "0x17a7e",
+    "text": "SELECT AVG(Result.usercount), MAX(Result.usercount) FROM (SELECT COUNT(P.AttributeId) AS usercount FROM PrincipalObjectAttributeAccess AS P \r\nFULL OUTER JOIN (SELECT AttributeId FROM AttributeView WHERE IsSecured = 1) AS A \r\nON A.AttributeId = P.AttributeId GROUP BY (A.AttributeId)) AS Result"
+  },
+  {
+    "from_ea": "0x6be4",
+    "from_func": "0x6bd0",
+    "string_ea": "0x17f86",
+    "text": "select IsDuplicateDetectionEnabled,IsDuplicateDetectionEnabledForOnlineCreateUpdate,IsDuplicateDetectionEnabledForOfflineSync,IsDuplicateDetectionEnabledForImport from organizationbase"
+  },
+  {
+    "from_ea": "0x6e67",
+    "from_func": "0x6d90",
+    "string_ea": "0x1861e",
+    "text": "SELECT COUNT(*) FROM SolutionComponent WHERE ComponentType = @ComponentType AND SolutionId = @SolutionId"
+  },
+  {
+    "from_ea": "0x6eae",
+    "from_func": "0x6d90",
+    "string_ea": "0x186f0",
+    "text": "SELECT COUNT(*) FROM MetadataSchema.Entity AS e INNER JOIN SolutionComponent AS sol ON sol.ObjectId = e.EntityId WHERE sol.ComponentType = @ComponentType AND sol.SolutionId = @SolutionId AND e.IsCustomEntity = 1"
+  },
+  {
+    "from_ea": "0x6edc",
+    "from_func": "0x6d90",
+    "string_ea": "0x18898",
+    "text": "SELECT COUNT(*) FROM AttributeView AS A INNER JOIN SolutionComponent AS sol ON sol.ObjectId = A.EntityId  WHERE A.IsCustomField=1 AND sol.ComponentType = @ComponentType AND sol.SolutionId = @SolutionId"
+  },
+  {
+    "from_ea": "0x6f0a",
+    "from_func": "0x6d90",
+    "string_ea": "0x18a2c",
+    "text": "SELECT COUNT(*) FROM RelationshipView AS r INNER JOIN SolutionComponent AS sol ON sol.ObjectId = r.ReferencingEntityId WHERE r.IsCustomRelationship=1 AND sol.ComponentType = @ComponentType AND sol.SolutionId = @SolutionId"
+  },
+  {
+    "from_ea": "0x6fe4",
+    "from_func": "0x6fd0",
+    "string_ea": "0x18cba",
+    "text": "@ComponentType"
+  },
+  {
+    "from_ea": "0x705b",
+    "from_func": "0x7030",
+    "string_ea": "0x18cba",
+    "text": "@ComponentType"
+  },
+  {
+    "from_ea": "0x703d",
+    "from_func": "0x7030",
+    "string_ea": "0x18cd8",
+    "text": "SELECT COUNT(*) FROM WebResource as web INNER JOIN SolutionComponent as sol ON sol.ObjectId = web.WebResourceId where sol.ComponentType = @ComponentType AND sol.SolutionId = @SolutionId"
+  },
+  {
+    "from_ea": "0x70f6",
+    "from_func": "0x70e0",
+    "string_ea": "0x18ec6",
+    "text": "select sum(SuccessCount+FailureCount) from bulkdeleteoperationbase group by bulkdeleteoperationbase.BulkDeleteOperationId"
+  },
+  {
+    "from_ea": "0x712c",
+    "from_func": "0x70e0",
+    "string_ea": "0x18fba",
+    "text": "select sum(SuccessCount) from bulkdeleteoperationbase group by bulkdeleteoperationbase.BulkDeleteOperationId"
+  },
+  {
+    "from_ea": "0x7162",
+    "from_func": "0x70e0",
+    "string_ea": "0x19094",
+    "text": "select sum(FailureCount) from bulkdeleteoperationbase group by bulkdeleteoperationbase.BulkDeleteOperationId"
+  },
+  {
+    "from_ea": "0x71bb",
+    "from_func": "0x70e0",
+    "string_ea": "0x1916e",
+    "text": "select distinct OrderedQuerySetXml from bulkdeleteoperationbase where bulkdeleteoperationbase.OrderedQuerySetXml is not null and bulkdeleteoperationbase.BulkDeleteOperationId is not null"
+  },
+  {
+    "from_ea": "0x784d",
+    "from_func": "0x7840",
+    "string_ea": "0x1a7f8",
+    "text": "\r\ndeclare @tempTable table\r\n(\r\n  TableName nvarchar(128),\r\n  NumberOfRows bigint,\r\n  ReservedSpace nvarchar(20),\r\n  DataSpace nvarchar(20),\r\n  IndexSpace nvarchar(20),\r\n  UnusedSpace nvarchar(20)\r\n)\r\n\r\ndeclare @returnTable table\r\n(\r\n  ObjectTypeCode int,\r\n  ObjectCount bigint,\r\n  PrimaryTableSize int default 0,\r\n  SecondaryTableSize int default 0\r\n)\r\n\r\ndeclare @TableName sysname\r\n\r\ndeclare TableCursor cursor FORWARD_ONLY READ_ONLY for\r\nselect t.name from sys.tables t where t.type = 'U'\r\nand (t.n"
+  },
+  {
+    "from_ea": "0x78f3",
+    "from_func": "0x7890",
+    "string_ea": "0x1b618",
+    "text": "select FormXml from SystemForm where Type = 0"
+  },
+  {
+    "from_ea": "0x7924",
+    "from_func": "0x7890",
+    "string_ea": "0x1b674",
+    "text": "select FormXml from UserForm where Type = 0"
+  },
+  {
+    "from_ea": "0x79dc",
+    "from_func": "0x79a0",
+    "string_ea": "0x1b6fc",
+    "text": "classid"
+  },
+  {
+    "from_ea": "0x8274",
+    "from_func": "0x8260",
+    "string_ea": "0x1ba9c",
+    "text": "SELECT COUNT(1) FROM Email (NOLOCK) WHERE DirectionCode = 0 AND CreatedOn >= DATEADD(DAY, -1, GETUTCDATE())"
+  },
+  {
+    "from_ea": "0x82cb",
+    "from_func": "0x82b0",
+    "string_ea": "0x1bb74",
+    "text": "SELECT DeliveryPriorityCode, COUNT(1) FROM Email (NOLOCK) WHERE DirectionCode = 1 AND CreatedOn >= DATEADD(DAY, -1, GETUTCDATE()) GROUP BY DeliveryPriorityCode"
+  },
+  {
+    "from_ea": "0x84b2",
+    "from_func": "0x8490",
+    "string_ea": "0x1c1fe",
+    "text": "SELECT IncomingCredentialRetrieval, COUNT(1) FROM EmailServerProfile (NOLOCK) WHERE StateCode = 0 GROUP BY IncomingCredentialRetrieval"
+  },
+  {
+    "from_ea": "0x85c4",
+    "from_func": "0x85b0",
+    "string_ea": "0x1c41a",
+    "text": "SELECT COUNT(1) FROM EmailServerProfile (NOLOCK) WHERE StateCode = 0 And IncomingAuthenticationProtocol = 2"
+  },
+  {
+    "from_ea": "0x8622",
+    "from_func": "0x8600",
+    "string_ea": "0x1c4f2",
+    "text": "SELECT COUNT(1) FROM EmailServerProfile (NOLOCK) WHERE StateCode = 0 AND ServerType = 0 AND IncomingUseImpersonation = 1"
+  },
+  {
+    "from_ea": "0x8653",
+    "from_func": "0x8600",
+    "string_ea": "0x1c5e4",
+    "text": "SELECT OutgoingUseImpersonation, OutgoingAutoGrantDelegateAccess, COUNT(1) FROM EmailServerProfile (NOLOCK) WHERE StateCode = 0 AND ServerType = 0 GROUP BY OutgoingUseImpersonation, OutgoingAutoGrantDelegateAccess"
+  },
+  {
+    "from_ea": "0x871e",
+    "from_func": "0x86e0",
+    "string_ea": "0x1c790",
+    "text": "SELECT IncomingEmailDeliveryMethod, COUNT(1) FROM Mailbox (NOLOCK) WHERE StateCode = 0 AND RegardingObjectTypeCode = 8 GROUP BY IncomingEmailDeliveryMethod"
+  },
+  {
+    "from_ea": "0x8989",
+    "from_func": "0x8960",
+    "string_ea": "0x1cc2a",
+    "text": "SELECT COUNT(1), CorrelationMethod FROM Email (NOLOCK) WHERE DirectionCode = 0 AND StateCode = 1 AND StatusCode = 4 AND  CreatedOn >= DATEADD(DAY, -1, GETUTCDATE()) GROUP BY CorrelationMethod"
+  },
+  {
+    "from_ea": "0x9a81",
+    "from_func": "0x9a80",
+    "string_ea": "0x1d0a6",
+    "text": "traceWriter"
+  },
+  {
+    "from_ea": "0x9b3c",
+    "from_func": "0x9b30",
+    "string_ea": "0x1d17a",
+    "text": "traceFullPath"
+  },
+  {
+    "from_ea": "0x9e4f",
+    "from_func": "0x9e10",
+    "string_ea": "0x1d1fe",
+    "text": "comparer"
+  },
+  {
+    "from_ea": "0xb67e",
+    "from_func": "0xb670",
+    "string_ea": "0x1fbf8",
+    "text": "exec p_DeleteOldStatistics"
+  },
+  {
+    "from_ea": "0xb9fe",
+    "from_func": "0xb9f0",
+    "string_ea": "0x1fbf8",
+    "text": "exec p_DeleteOldStatistics"
+  },
+  {
+    "from_ea": "0xb68c",
+    "from_func": "0xb670",
+    "string_ea": "0x1fc2e",
+    "text": "RemoveOldRecords"
+  },
+  {
+    "from_ea": "0xba0f",
+    "from_func": "0xb9f0",
+    "string_ea": "0x1fc2e",
+    "text": "RemoveOldRecords"
+  },
+  {
+    "from_ea": "0xb980",
+    "from_func": "0xb980",
+    "string_ea": "0x2002a",
+    "text": "select cast( sum(numberreads + numberwrites) as int) from fn_virtualfilestats(db_id(), null)"
+  },
+  {
+    "from_ea": "0xbae1",
+    "from_func": "0xbae0",
+    "string_ea": "0x20172",
+    "text": "SELECT CONVERT(FLOAT,SUM (a.Result)) / CONVERT(FLOAT,SUM(b.Result)) \r\n\t\t\t\t FROM StatisticsData a \r\n\t\t\t\t INNER JOIN StatisticsData b \r\n\t\t\t\t ON a.EndTime = b.EndTime \r\n\t\t\t\t WHERE a.StatisticTypeId=@StatisticTypeCompletionTimeId \r\n\t\t\t\t AND b.StatisticTypeId=@StatisticTypeCompletedCountId \r\n\t\t\t\t AND a.OrganizationId=@OrganizationId \r\n\t\t\t\t AND b.OrganizationId=@OrganizationId \r\n\t\t\t\t AND a.EndTime > DATEADD(hour,@HoursBack,getUtcDate())"
+  },
+  {
+    "from_ea": "0xbaec",
+    "from_func": "0xbae0",
+    "string_ea": "0x204d8",
+    "text": "RequestCompletionAggregationPeriodHours"
+  },
+  {
+    "from_ea": "0xbbb6",
+    "from_func": "0xbb80",
+    "string_ea": "0x20548",
+    "text": "@StatisticTypeCompletionTimeId"
+  },
+  {
+    "from_ea": "0xbbc8",
+    "from_func": "0xbb80",
+    "string_ea": "0x20586",
+    "text": "@StatisticTypeCompletedCountId"
+  },
+  {
+    "from_ea": "0xbbee",
+    "from_func": "0xbb80",
+    "string_ea": "0x205da",
+    "text": "GetAverageCompletionTime"
+  },
+  {
+    "from_ea": "0xbc41",
+    "from_func": "0xbc40",
+    "string_ea": "0x20736",
+    "text": "SELECT COUNT(CrmUserId) \r\n\t\t\t\t\t FROM SystemUserOrganizations \r\n\t\t\t\t\t WHERE OrganizationId = @OrganizationId \r\n\t\t\t\t\tAND LastAccessTime >  DATEADD(minute,@MinutesInterval,getUtcDate()) "
+  },
+  {
+    "from_ea": "0xbdb0",
+    "from_func": "0xbdb0",
+    "string_ea": "0x20a5c",
+    "text": "OrganizationStatisticDataAccess"
+  },
+  {
+    "from_ea": "0xbdf9",
+    "from_func": "0xbde0",
+    "string_ea": "0x20a9c",
+    "text": "Exception while trying to open database connection for organization {0}"
+  },
+  {
+    "from_ea": "0xbe15",
+    "from_func": "0xbde0",
+    "string_ea": "0x20b2c",
+    "text": "OrganizationStatisticDataAccess: Exception while trying to open the database connection {0} : {1}"
+  },
+  {
+    "from_ea": "0xbe44",
+    "from_func": "0xbde0",
+    "string_ea": "0x20bf0",
+    "text": "ExecuteSqlCommandAndReturnRows"
+  },
+  {
+    "from_ea": "0xbe49",
+    "from_func": "0xbde0",
+    "string_ea": "0x20c2e",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\5\\src\\Core\\ObjectModel\\Async\\Handlers\\System\\StatisticsSqm\\OrganizationStatisticsDataAccess.cs"
+  },
+  {
+    "from_ea": "0xbeac",
+    "from_func": "0xbde0",
+    "string_ea": "0x20da8",
+    "text": "OrganizationStatisticDataAccess: Exception while trying to execute query: {0} - {1}"
+  },
+  {
+    "from_ea": "0xc077",
+    "from_func": "0xc050",
+    "string_ea": "0x20f36",
+    "text": "WriteValueToOrganizationTable"
+  },
+  {
+    "from_ea": "0xc544",
+    "from_func": "0xc470",
+    "string_ea": "0x21342",
+    "text": "InternalCreateStatisticRow"
+  },
+  {
+    "from_ea": "0xc5be",
+    "from_func": "0xc560",
+    "string_ea": "0x21378",
+    "text": "UpdateStatisticRow"
+  },
+  {
+    "from_ea": "0xc60a",
+    "from_func": "0xc5d0",
+    "string_ea": "0x21378",
+    "text": "UpdateStatisticRow"
+  },
+  {
+    "from_ea": "0xc9dd",
+    "from_func": "0xc920",
+    "string_ea": "0x2164c",
+    "text": "Reprovisioning language {0}. Version {1} provisioned and Version {2} installed"
+  },
+  {
+    "from_ea": "0xca60",
+    "from_func": "0xca60",
+    "string_ea": "0x216ea",
+    "text": "LanguagePacksDataAccess"
+  },
+  {
+    "from_ea": "0xcb68",
+    "from_func": "0xcb60",
+    "string_ea": "0x2183e",
+    "text": "if exists (select 1 from AsyncOperationBase where OperationType = @operationType and Data = @data)\r\nbegin\r\n\tdelete from AsyncOperationBase where OperationType = @operationType and Data = @data\r\nend\r\n\r\ninsert into AsyncOperationBase\r\n(\r\n\t[DependencyToken],\r\n\t[StateCode],\r\n\t[Data],\r\n\t[AsyncOperationId],\r\n\t[OperationType],\r\n\t[Name],\r\n\t[StatusCode],\r\n\t[PostponeUntil],\r\n\t[Depth],\r\n\t[OwningBusinessUnit],\r\n\t[ModifiedBy],\r\n\t[CreatedBy],\r\n\t[CorrelationId],\r\n\t[OwnerId],\r\n\t[OwnerIdType]\r\n) \r\nvalues\r\n(\r\n\t@d"
+  },
+  {
+    "from_ea": "0xcba5",
+    "from_func": "0xcb60",
+    "string_ea": "0x21de4",
+    "text": "@dependencyToken"
+  },
+  {
+    "from_ea": "0xcbaa",
+    "from_func": "0xcb60",
+    "string_ea": "0x21e06",
+    "text": "ReprovisionMuiPacksDependencyToken"
+  },
+  {
+    "from_ea": "0xcc86",
+    "from_func": "0xcb60",
+    "string_ea": "0x21f12",
+    "text": "@createdBy"
+  },
+  {
+    "from_ea": "0xce1c",
+    "from_func": "0xce00",
+    "string_ea": "0x22164",
+    "text": "Attempting to reprovision language {0}"
+  },
+  {
+    "from_ea": "0xceda",
+    "from_func": "0xced0",
+    "string_ea": "0x2220e",
+    "text": "Operation type must be 'OrgDBUpdate'"
+  },
+  {
+    "from_ea": "0xcf22",
+    "from_func": "0xced0",
+    "string_ea": "0x22258",
+    "text": "Attempting to apply dbUpdates for org {0}"
+  },
+  {
+    "from_ea": "0xcf83",
+    "from_func": "0xced0",
+    "string_ea": "0x222ac",
+    "text": "Applying dbUpdates for org {0} was successful."
+  },
+  {
+    "from_ea": "0xd083",
+    "from_func": "0xd080",
+    "string_ea": "0x2230a",
+    "text": "CopyUpdateActions started for orgId={0} and version {1}"
+  },
+  {
+    "from_ea": "0xd0ae",
+    "from_func": "0xd080",
+    "string_ea": "0x2237a",
+    "text": "Exception for orgId={0} in CopyUpdateActions {1}.\n {2}"
+  },
+  {
+    "from_ea": "0xd0de",
+    "from_func": "0xd080",
+    "string_ea": "0x223e8",
+    "text": "CopyUpdateActions finished for orgId={0}"
+  },
+  {
+    "from_ea": "0xd144",
+    "from_func": "0xd100",
+    "string_ea": "0x22494",
+    "text": "\r\nselect \r\n\tuat.[ActionId],\r\n\tuat.[UpgradeToVersionNumber],\r\n\tuat.[ExecutionOrder],\r\n\tuat.[WasExecuted],\r\n\tuat.[ActionName],\r\n\tuat.[Description],\r\n\tuat.[ExecutionTime],\r\n\tuat.[HashFile],\r\n\tuat.[HashValue],\r\n\tuat.[CreatedOnUtc]\r\n\t,@OrganizationId as OrganizationId\r\n\t,convert(datetime, convert(time, uat.[ExecutionTime])) as ExecutionTimeAsDateTime \r\nfrom [dbo].[UpgradeActionTracker] uat with(nolock)\r\nwhere uat.UpgradeToVersionNumber = @UpgradeToVersionNumber"
+  },
+  {
+    "from_ea": "0xd22a",
+    "from_func": "0xd220",
+    "string_ea": "0x2285e",
+    "text": "Operation type must be 'ReadCommittedSnapshotIsolationUpdate'"
+  },
+  {
+    "from_ea": "0xd23c",
+    "from_func": "0xd220",
+    "string_ea": "0x228da",
+    "text": "Attempting to change read committed snapshot isolation state for org {0}"
+  },
+  {
+    "from_ea": "0xd291",
+    "from_func": "0xd220",
+    "string_ea": "0x2297a",
+    "text": "Invalid Read Committed Snapshot Isolation State specified in the JobParameters. Allowed values are ON or OFF"
+  },
+  {
+    "from_ea": "0xd2dd",
+    "from_func": "0xd220",
+    "string_ea": "0x22a54",
+    "text": "Changing read committed snapshot isolation state for org {0} was successful"
+  },
+  {
+    "from_ea": "0xd313",
+    "from_func": "0xd220",
+    "string_ea": "0x22aec",
+    "text": "Error while updating read committed snapshot isolation for organization: {0}, Exception: {1}"
+  },
+  {
+    "from_ea": "0xd3ca",
+    "from_func": "0xd3c0",
+    "string_ea": "0x22ba6",
+    "text": "Operation type must be 'SnapshotIsolationUpdate'"
+  },
+  {
+    "from_ea": "0xd3dc",
+    "from_func": "0xd3c0",
+    "string_ea": "0x22c08",
+    "text": "Attempting to change snapshot isolation state for org {0}"
+  },
+  {
+    "from_ea": "0xd5a8",
+    "from_func": "0xd580",
+    "string_ea": "0x22e4e",
+    "text": "uninstall"
+  },
+  {
+    "from_ea": "0xd5bd",
+    "from_func": "0xd580",
+    "string_ea": "0x22e62",
+    "text": "Attempting to OptOut dbUpdates for org {0}"
+  },
+  {
+    "from_ea": "0xd5f8",
+    "from_func": "0xd580",
+    "string_ea": "0x22eb8",
+    "text": "Applying OptOut dbUpdates for org {0} was successful"
+  },
+  {
+    "from_ea": "0xd624",
+    "from_func": "0xd580",
+    "string_ea": "0x22f22",
+    "text": "Attempting to apply Optin dbUpdates for org {0}"
+  },
+  {
+    "from_ea": "0xd65f",
+    "from_func": "0xd580",
+    "string_ea": "0x22f82",
+    "text": "Applying Optin dbUpdates for org {0} was successful"
+  },
+  {
+    "from_ea": "0xe633",
+    "from_func": "0xe310",
+    "string_ea": "0x2325e",
+    "text": "p_ReindexAll could not update all statistics due to time constraint. {0}"
+  }
+]

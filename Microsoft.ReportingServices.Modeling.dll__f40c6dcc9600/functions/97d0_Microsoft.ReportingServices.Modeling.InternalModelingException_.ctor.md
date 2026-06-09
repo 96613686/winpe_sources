@@ -1,0 +1,83 @@
+# Microsoft.ReportingServices.Modeling.InternalModelingException::.ctor
+
+- ea: `0x97d0`
+- end: `0x97d9`
+- name: `Microsoft.ReportingServices.Modeling.InternalModelingException::.ctor`
+- size: `9`
+- prototype: ``
+- caller_count: `385`
+- callee_count: `1`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x10f0`
+- `0x1650`
+- `0x1680`
+- `0x79a0`
+- `0x7a10`
+- `0x7b30`
+- `0x80d0`
+- `0x81b0`
+- `0x82a0`
+- `0x8480`
+- `0x85b0`
+- `0x86b0`
+- `0x87f0`
+- `0x88c0`
+- `0x88f0`
+- `0x8bb0`
+- `0x8c50`
+- `0x8ce0`
+- `0x8fd0`
+- `0x9050`
+- `0x90d0`
+- `0x9190`
+- `0x9820`
+- `0x9930`
+- `0x9d50`
+- `0x9dc0`
+- `0x9eb0`
+- `0x9f40`
+- `0x9fb0`
+- `0xa4e0`
+- `0xa6f0`
+- `0xab20`
+- `0xab80`
+- `0xac90`
+- `0xae40`
+- `0xaf20`
+- `0xb100`
+- `0xb1c0`
+- `0xb290`
+- `0xb340`
+- `0xb530`
+- `0xbb10`
+- `0xbda0`
+- `0xbe40`
+- `0xbf00`
+- `0xbf70`
+- `0xc280`
+- `0xc2e0`
+- `0xc340`
+- `0xc6c0`
+
+## callees
+
+- `0x97e0`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x97d0  ldarg.0
+0x97d1  ldarg.1
+0x97d2  ldnull
+0x97d3  call     instance void Microsoft.ReportingServices.Modeling.InternalModelingException::.ctor(string traceMessage, class [mscorlib]System.Exception inner)
+0x97d8  ret
+```

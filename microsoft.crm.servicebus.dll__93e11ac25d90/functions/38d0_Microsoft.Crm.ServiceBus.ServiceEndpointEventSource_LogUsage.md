@@ -1,0 +1,185 @@
+# Microsoft.Crm.ServiceBus.ServiceEndpointEventSource::LogUsage
+
+- ea: `0x38d0`
+- end: `0x39e7`
+- name: `Microsoft.Crm.ServiceBus.ServiceEndpointEventSource::LogUsage`
+- size: `279`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0xbb0`
+
+## callees
+
+- `0x38d0`
+
+## string_xrefs
+
+- `0x39cd`: `Exception occured during Telemetry WriteEvent for serviceEndpointId: `
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x38d0  ldarg.0
+0x38d1  ldc.i4.1
+0x38d2  ldc.i4.s 0x1F
+0x38d4  newarr   [mscorlib]System.Object
+0x38d9  dup
+0x38da  ldc.i4.0
+0x38db  ldarg.1
+0x38dc  box      [mscorlib]System.Guid
+0x38e1  stelem.ref
+0x38e2  dup
+0x38e3  ldc.i4.1
+0x38e4  ldarg.2
+0x38e5  box      [mscorlib]System.Boolean
+0x38ea  stelem.ref
+0x38eb  dup
+0x38ec  ldc.i4.2
+0x38ed  ldarg.3
+0x38ee  stelem.ref
+0x38ef  dup
+0x38f0  ldc.i4.3
+0x38f1  ldarg.s  4
+0x38f3  stelem.ref
+0x38f4  dup
+0x38f5  ldc.i4.4
+0x38f6  ldarg.s  5
+0x38f8  stelem.ref
+0x38f9  dup
+0x38fa  ldc.i4.5
+0x38fb  ldarg.s  6
+0x38fd  stelem.ref
+0x38fe  dup
+0x38ff  ldc.i4.6
+0x3900  ldarg.s  7
+0x3902  stelem.ref
+0x3903  dup
+0x3904  ldc.i4.7
+0x3905  ldarg.s  8
+0x3907  stelem.ref
+0x3908  dup
+0x3909  ldc.i4.8
+0x390a  ldarg.s  9
+0x390c  stelem.ref
+0x390d  dup
+0x390e  ldc.i4.s 9
+0x3910  ldarg.s  0xA
+0x3912  stelem.ref
+0x3913  dup
+0x3914  ldc.i4.s 0xA
+0x3916  ldarg.s  0xB
+0x3918  box      [mscorlib]System.Boolean
+0x391d  stelem.ref
+0x391e  dup
+0x391f  ldc.i4.s 0xB
+0x3921  ldarg.s  0xC
+0x3923  box      [mscorlib]System.Boolean
+0x3928  stelem.ref
+0x3929  dup
+0x392a  ldc.i4.s 0xC
+0x392c  ldarg.s  0xD
+0x392e  stelem.ref
+0x392f  dup
+0x3930  ldc.i4.s 0xD
+0x3932  ldarg.s  0xE
+0x3934  stelem.ref
+0x3935  dup
+0x3936  ldc.i4.s 0xE
+0x3938  ldarg.s  0xF
+0x393a  stelem.ref
+0x393b  dup
+0x393c  ldc.i4.s 0xF
+0x393e  ldarg.s  0x10
+0x3940  stelem.ref
+0x3941  dup
+0x3942  ldc.i4.s 0x10
+0x3944  ldarg.s  0x11
+0x3946  stelem.ref
+0x3947  dup
+0x3948  ldc.i4.s 0x11
+0x394a  ldarg.s  0x12
+0x394c  stelem.ref
+0x394d  dup
+0x394e  ldc.i4.s 0x12
+0x3950  ldarg.s  0x13
+0x3952  box      [mscorlib]System.Guid
+0x3957  stelem.ref
+0x3958  dup
+0x3959  ldc.i4.s 0x13
+0x395b  ldarg.s  0x14
+0x395d  stelem.ref
+0x395e  dup
+0x395f  ldc.i4.s 0x14
+0x3961  ldarg.s  0x15
+0x3963  box      [mscorlib]System.Guid
+0x3968  stelem.ref
+0x3969  dup
+0x396a  ldc.i4.s 0x15
+0x396c  ldarg.s  0x16
+0x396e  box      [mscorlib]System.Guid
+0x3973  stelem.ref
+0x3974  dup
+0x3975  ldc.i4.s 0x16
+0x3977  ldarg.s  0x17
+0x3979  box      [mscorlib]System.Int64
+0x397e  stelem.ref
+0x397f  dup
+0x3980  ldc.i4.s 0x17
+0x3982  ldarg.s  0x18
+0x3984  stelem.ref
+0x3985  dup
+0x3986  ldc.i4.s 0x18
+0x3988  ldarg.s  0x19
+0x398a  stelem.ref
+0x398b  dup
+0x398c  ldc.i4.s 0x19
+0x398e  ldarg.s  0x1A
+0x3990  stelem.ref
+0x3991  dup
+0x3992  ldc.i4.s 0x1A
+0x3994  ldarg.s  0x1B
+0x3996  stelem.ref
+0x3997  dup
+0x3998  ldc.i4.s 0x1B
+0x399a  ldarg.s  0x1C
+0x399c  box      [mscorlib]System.Int32
+0x39a1  stelem.ref
+0x39a2  dup
+0x39a3  ldc.i4.s 0x1C
+0x39a5  ldarg.s  0x1D
+0x39a7  box      [mscorlib]System.Int32
+0x39ac  stelem.ref
+0x39ad  dup
+0x39ae  ldc.i4.s 0x1D
+0x39b0  ldarg.s  0x1E
+0x39b2  box      [mscorlib]System.Int32
+0x39b7  stelem.ref
+0x39b8  dup
+0x39b9  ldc.i4.s 0x1E
+0x39bb  ldarg.s  0x1F
+0x39bd  box      [mscorlib]System.Int32
+0x39c2  stelem.ref
+0x39c3  call     instance void [mscorlib]System.Diagnostics.Tracing.EventSource::WriteEvent(int32, object[])
+0x39c8  leave.s  loc_39E6
+0x39ca  ldarg.1
+0x39cb  ldc.i4.s 0x2F
+0x39cd  ldstr    aExceptionOccur// "Exception occured during Telemetry Writ"...
+0x39d2  ldarg.s  4
+0x39d4  call     string [mscorlib]System.String::Concat(string, string)
+0x39d9  ldc.i4.0
+0x39da  newarr   [mscorlib]System.Object
+0x39df  call     void [Microsoft.Crm.Core]Microsoft.Crm.CrmTrace::TraceError(class [mscorlib]System.Exception, valuetype [mscorlib]System.Guid, valuetype [Microsoft.Crm.Core]Microsoft.Crm.TraceCategory, string, object[])
+0x39e4  leave.s  loc_39E6
+0x39e6  ret
+```

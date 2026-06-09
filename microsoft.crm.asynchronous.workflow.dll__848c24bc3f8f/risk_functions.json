@@ -1,0 +1,1849 @@
+[
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::FlushPendingWorkflowLog",
+    "ea": "0x2920",
+    "function_file": "functions/2920_Microsoft.Crm.Workflow.WorkflowLogDataAccess_FlushPendingWorkflowLog.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Exception while trying to open database connection for organization {0}",
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\4\\src\\Core\\ObjectModel\\Async\\Handlers\\Workflow\\WorkflowLogDataAccess.cs"
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::FlushPendingWorkflowLog",
+    "prototype": "",
+    "rank_score": 108,
+    "size": 311,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::RestartWaitingWorkflowInstances",
+    "ea": "0x1830",
+    "function_file": "functions/1830_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_RestartWaitingWorkflowInstances.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\r\nif exists (select * from WorkflowWaitSubscriptionBase (nolock) where IsModified = 1)\r\nbegin\r\nupdate AsyncOperationBase\r\nset\r\n\tStateCode = @readyState,\r\n\tStatusCode = @waitingStatus,\r\n\tModifiedOn = @modifiedOn,\r\n\tModifiedBy = CreatedBy\r\nwhere\r\n\tStateCode = @suspendedState\r\nand RetryCount < @maxRetries\r\nand AsyncOperationId in (select AsyncOperationId from WorkflowWaitSubscriptionBase where IsModified = 1)\r\nend",
+      "@readyState"
+    ],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::RestartWaitingWorkflowInstances",
+    "prototype": "",
+    "rank_score": 103,
+    "size": 152,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::UpdateWaitSubscriptionRecord",
+    "ea": "0x1440",
+    "function_file": "functions/1440_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_UpdateWaitSubscriptionRecord.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "update WorkflowWaitSubscriptionBase\r\n\t\t\t\t\t\tset WaitOnAttributeList = @waitOnAttributeList\r\n\t\t\t\t\t\twhere EntityId = @entityId and \r\n\t\t\t\t\t\tEntityName = @entityName and \r\n\t\t\t\t\t\tAsyncOperationId = @asyncOperationId",
+      "Workflow {0} subscribed for updates of entity instance ({1},{2}) on attributes {3}."
+    ],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::UpdateWaitSubscriptionRecord",
+    "prototype": "",
+    "rank_score": 103,
+    "size": 176,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowDataAccess::UpdateWorkflowInstanceStage",
+    "ea": "0x2440",
+    "function_file": "functions/2440_Microsoft.Crm.Workflow.WorkflowDataAccess_UpdateWorkflowInstanceStage.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "update AsyncOperationBase\r\nset\r\n\tWorkflowStageName = @workflowStageName,\r\n\tModifiedOn = @modifiedOn,\r\n\tModifiedBy = CreatedBy\r\nwhere\r\n\tAsyncOperationId = @id",
+      "Workflow {0} has moved to stage '{1}'."
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowDataAccess::UpdateWorkflowInstanceStage",
+    "prototype": "",
+    "rank_score": 102,
+    "size": 147,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkflowPerformanceCounters::Initialize",
+    "ea": "0x1a0",
+    "function_file": "functions/1a0_Microsoft.Crm.Asynchronous.WorkflowPerformanceCounters_Initialize.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Total Workflow state writes",
+      "Total Workflow state writes"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.WorkflowPerformanceCounters::Initialize",
+    "prototype": "",
+    "rank_score": 91,
+    "size": 66,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::SavePendingWorkflowInstanceState",
+    "ea": "0x1ac0",
+    "function_file": "functions/1ac0_Microsoft.Crm.Workflow.WorkflowContext_SavePendingWorkflowInstanceState.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SavePendingWorkflowInstanceState: Failed save for workflow {0}; state is {1} bytes, postpone until: {2}, blocked: {3}. Delayed update command queued"
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::SavePendingWorkflowInstanceState",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 418,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::UpdateWorkflowLog",
+    "ea": "0x20d0",
+    "function_file": "functions/20d0_Microsoft.Crm.Workflow.WorkflowContext_UpdateWorkflowLog.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "completedon"
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::UpdateWorkflowLog",
+    "prototype": "",
+    "rank_score": 65,
+    "size": 399,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::GenerateUpdate",
+    "ea": "0x2bd0",
+    "function_file": "functions/2bd0_Microsoft.Crm.Workflow.WorkflowLogDataAccess_GenerateUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UPDATE [WorkflowLogBase] SET "
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::GenerateUpdate",
+    "prototype": "",
+    "rank_score": 65,
+    "size": 381,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::CreateWaitSubscriptionRecord",
+    "ea": "0x1580",
+    "function_file": "functions/1580_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_CreateWaitSubscriptionRecord.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Workflow {0} subscribed for updates of entity instance ({1},{2}) on attributes {3}."
+    ],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::CreateWaitSubscriptionRecord",
+    "prototype": "",
+    "rank_score": 64,
+    "size": 264,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::Unsubscribe",
+    "ea": "0x16e0",
+    "function_file": "functions/16e0_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_Unsubscribe.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "delete from WorkflowWaitSubscriptionBase where WorkflowWaitSubscriptionId = @subscriptionId"
+    ],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::Unsubscribe",
+    "prototype": "",
+    "rank_score": 62,
+    "size": 113,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowDataAccess::SaveWorkflowInstanceState",
+    "ea": "0x22d0",
+    "function_file": "functions/22d0_Microsoft.Crm.Workflow.WorkflowDataAccess_SaveWorkflowInstanceState.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "update AsyncOperationBase\r\nset\r\n\tPostponeUntil = @postponeUntil,\t\r\n\tWorkflowState = @workflowState,\r\n\tWorkflowIsBlocked = @workflowIsBlocked,\r\n\tModifiedOn = @modifiedOn,\r\n\tModifiedBy = CreatedBy\r\nwhere\r\n\tAsyncOperationId = @id"
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowDataAccess::SaveWorkflowInstanceState",
+    "prototype": "",
+    "rank_score": 62,
+    "size": 248,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::DeleteWaitSubscriptionRecordsWithIndex",
+    "ea": "0x17f0",
+    "function_file": "functions/17f0_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_DeleteWaitSubscriptionRecordsWithIndex.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "delete WorkflowWaitSubscriptionBase from WorkflowWaitSubscriptionBase with(index(ndx_CascadeRelationship_Asyncoperation_workflowwaitsubscription)) where AsyncOperationId=@workflowId"
+    ],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::DeleteWaitSubscriptionRecordsWithIndex",
+    "prototype": "",
+    "rank_score": 61,
+    "size": 57,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::DeleteWaitSubscriptionRecordsWithoutIndex",
+    "ea": "0x17b0",
+    "function_file": "functions/17b0_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_DeleteWaitSubscriptionRecordsWithoutIndex.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "delete from WorkflowWaitSubscriptionBase where AsyncOperationId = @workflowId2"
+    ],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::DeleteWaitSubscriptionRecordsWithoutIndex",
+    "prototype": "",
+    "rank_score": 61,
+    "size": 57,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::GetXamlWorkflowsResource",
+    "ea": "0x6d0",
+    "function_file": "functions/6d0_Microsoft.Crm.Workflow.ActivityHost_GetXamlWorkflowsResource.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Workflow.NotEnoughPrivilegesForXamlWorkflows"
+    ],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::GetXamlWorkflowsResource",
+    "prototype": "",
+    "rank_score": 60,
+    "size": 16,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.Activities.BulkMailItem::Execute",
+    "ea": "0x31b0",
+    "function_file": "functions/31b0_Microsoft.Crm.Workflow.Activities.BulkMailItem_Execute.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "TemplateId"
+    ],
+    "name": "Microsoft.Crm.Workflow.Activities.BulkMailItem::Execute",
+    "prototype": "",
+    "rank_score": 58,
+    "size": 531,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::PauseWorkflow",
+    "ea": "0x910",
+    "function_file": "functions/910_Microsoft.Crm.Workflow.ActivityHost_PauseWorkflow.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Encountered attempt to unload aborted workflow '{0}'"
+    ],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::PauseWorkflow",
+    "prototype": "",
+    "rank_score": 56,
+    "size": 317,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::GenerateInsert",
+    "ea": "0x2a60",
+    "function_file": "functions/2a60_Microsoft.Crm.Workflow.WorkflowLogDataAccess_GenerateInsert.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "INSERT INTO [WorkflowLogBase] ([ModifiedOnBehalfBy], [ModifiedBy], [CreatedBy],[ObjectTypeCode] "
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::GenerateInsert",
+    "prototype": "",
+    "rank_score": 55,
+    "size": 354,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::CancelWorkflow",
+    "ea": "0xa50",
+    "function_file": "functions/a50_Microsoft.Crm.Workflow.ActivityHost_CancelWorkflow.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Encountered attempt to terminate aborted workflow '{0}'"
+    ],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::CancelWorkflow",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 247,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::OnNotificationTimerEvent",
+    "ea": "0x640",
+    "function_file": "functions/640_Microsoft.Crm.Workflow.ActivityHost_OnNotificationTimerEvent.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WaitSubscriptionDataAccess.RestartWaitingWorkflowInstances"
+    ],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::OnNotificationTimerEvent",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 142,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::CreateWorkflowLog",
+    "ea": "0x1f30",
+    "function_file": "functions/1f30_Microsoft.Crm.Workflow.WorkflowContext_CreateWorkflowLog.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "createdon"
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::CreateWorkflowLog",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 303,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::EnqueueStateSaveCommand",
+    "ea": "0x1c70",
+    "function_file": "functions/1c70_Microsoft.Crm.Workflow.WorkflowContext_EnqueueStateSaveCommand.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SaveWorkflowInstanceState: Queued state save command for workflow {0}; state is {1} bytes, postpone until: {2}, blocked: {3}."
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::EnqueueStateSaveCommand",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 152,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogPersistentStrategyFactory::GetWorkflowLogPersistentStrategy",
+    "ea": "0x2fe0",
+    "function_file": "functions/2fe0_Microsoft.Crm.Workflow.WorkflowLogPersistentStrategyFactory_GetWorkflowLogPersistentStrategy.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WorkflowLogCacheStrategy"
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogPersistentStrategyFactory::GetWorkflowLogPersistentStrategy",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 48,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.AsyncWorkflowInstanceState::.ctor",
+    "ea": "0x2870",
+    "function_file": "functions/2870_Microsoft.Crm.Workflow.AsyncWorkflowInstanceState_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Total Workflow state writes"
+    ],
+    "name": "Microsoft.Crm.Workflow.AsyncWorkflowInstanceState::.ctor",
+    "prototype": "",
+    "rank_score": 53,
+    "size": 28,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::get_CommandName",
+    "ea": "0x2830",
+    "function_file": "functions/2830_Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand_get_CommandName.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "AsyncWorkflowSaveInstanceStateCommand"
+    ],
+    "name": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::get_CommandName",
+    "prototype": "",
+    "rank_score": 50,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::get_Name",
+    "ea": "0x1380",
+    "function_file": "functions/1380_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_get_Name.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WaitSubscriptionDataAccess"
+    ],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::get_Name",
+    "prototype": "",
+    "rank_score": 50,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowDataAccess::get_Name",
+    "ea": "0x22a0",
+    "function_file": "functions/22a0_Microsoft.Crm.Workflow.WorkflowDataAccess_get_Name.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WorkflowDataAccess"
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowDataAccess::get_Name",
+    "prototype": "",
+    "rank_score": 50,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::get_Name",
+    "ea": "0x28f0",
+    "function_file": "functions/28f0_Microsoft.Crm.Workflow.WorkflowLogDataAccess_get_Name.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WorkflowLogDataAccess"
+    ],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::get_Name",
+    "prototype": "",
+    "rank_score": 50,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::UnregisterAllListeners_0",
+    "ea": "0x35b0",
+    "function_file": "functions/35b0_Microsoft.Crm.Workflow.Services.WaitSubscriptionService_UnregisterAllListeners_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::UnregisterAllListeners_0",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 52,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::get_OrganizationConfiguration",
+    "ea": "0x1a90",
+    "function_file": "functions/1a90_Microsoft.Crm.Workflow.WorkflowContext_get_OrganizationConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::get_OrganizationConfiguration",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 33,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::AddHandlersAndExtensions",
+    "ea": "0x5d0",
+    "function_file": "functions/5d0_Microsoft.Crm.Workflow.ActivityHost_AddHandlersAndExtensions.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::AddHandlersAndExtensions",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 103,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.BulkMailWorkflow::CreateWorkflow",
+    "ea": "0xbb0",
+    "function_file": "functions/bb0_Microsoft.Crm.Workflow.BulkMailWorkflow_CreateWorkflow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.BulkMailWorkflow::CreateWorkflow",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 628,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ContextService::GetOrganizationConfiguration",
+    "ea": "0x3660",
+    "function_file": "functions/3660_ContextService_GetOrganizationConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ContextService::GetOrganizationConfiguration",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 64,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkflowHandlerGroup::Dispose_0",
+    "ea": "0x160",
+    "function_file": "functions/160_Microsoft.Crm.Asynchronous.WorkflowHandlerGroup_Dispose_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkflowHandlerGroup::Dispose_0",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 30,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::RegisterListener",
+    "ea": "0x34f0",
+    "function_file": "functions/34f0_Microsoft.Crm.Workflow.Services.WaitSubscriptionService_RegisterListener.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::RegisterListener",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::DeserializeAsyncData",
+    "ea": "0x1d80",
+    "function_file": "functions/1d80_Microsoft.Crm.Workflow.WorkflowContext_DeserializeAsyncData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::DeserializeAsyncData",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 221,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::UpdateAllPendingStepsStatus",
+    "ea": "0x1e60",
+    "function_file": "functions/1e60_Microsoft.Crm.Workflow.WorkflowContext_UpdateAllPendingStepsStatus.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::UpdateAllPendingStepsStatus",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 208,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkflowHandlerGroup::get_ActivityHost",
+    "ea": "0x90",
+    "function_file": "functions/90_Microsoft.Crm.Asynchronous.WorkflowHandlerGroup_get_ActivityHost.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkflowHandlerGroup::get_ActivityHost",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 7,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.IWorkflowLogPersistentStrategy::Update",
+    "ea": "0x28b0",
+    "function_file": "functions/28b0_Microsoft.Crm.Workflow.IWorkflowLogPersistentStrategy_Update.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.IWorkflowLogPersistentStrategy::Update",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 1,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.Services.AsyncExpressionService::.ctor",
+    "ea": "0x3440",
+    "function_file": "functions/3440_Microsoft.Crm.Workflow.Services.AsyncExpressionService_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.Services.AsyncExpressionService::.ctor",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 8,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.Services.AsyncExpressionService::GetEntityProperty",
+    "ea": "0x3450",
+    "function_file": "functions/3450_Microsoft.Crm.Workflow.Services.AsyncExpressionService_GetEntityProperty.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.Services.AsyncExpressionService::GetEntityProperty",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 85,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::.ctor",
+    "ea": "0x34c0",
+    "function_file": "functions/34c0_Microsoft.Crm.Workflow.Services.WaitSubscriptionService_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::.ctor",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 37,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::UnregisterAllListeners",
+    "ea": "0x35a0",
+    "function_file": "functions/35a0_Microsoft.Crm.Workflow.Services.WaitSubscriptionService_UnregisterAllListeners.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::UnregisterAllListeners",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 8,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::UnregisterListener",
+    "ea": "0x3560",
+    "function_file": "functions/3560_Microsoft.Crm.Workflow.Services.WaitSubscriptionService_UnregisterListener.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::UnregisterListener",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 51,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::UpdateWorkflowInstanceStage",
+    "ea": "0x1d60",
+    "function_file": "functions/1d60_Microsoft.Crm.Workflow.WorkflowContext_UpdateWorkflowInstanceStage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::UpdateWorkflowInstanceStage",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 24,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::UpdateWorkflowLogStatus",
+    "ea": "0x2060",
+    "function_file": "functions/2060_Microsoft.Crm.Workflow.WorkflowContext_UpdateWorkflowLogStatus.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::UpdateWorkflowLogStatus",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 98,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CreateCrmService_0",
+    "ea": "0x10e0",
+    "function_file": "functions/10e0_Microsoft.Crm.Workflow.LegacyWorkflowContext_CreateCrmService_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CreateCrmService_0",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 63,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CreateMetadataService_0",
+    "ea": "0x1150",
+    "function_file": "functions/1150_Microsoft.Crm.Workflow.LegacyWorkflowContext_CreateMetadataService_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CreateMetadataService_0",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 52,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::set_SubscriptionToRegister",
+    "ea": "0x3600",
+    "function_file": "functions/3600_Microsoft.Crm.Workflow.Services.WaitSubscriptionService_set_SubscriptionToRegister.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::set_SubscriptionToRegister",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 8,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService",
+    "ea": "0x1a20",
+    "function_file": "functions/1a20_Microsoft.Crm.Workflow.WorkflowContext_Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 76,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::Update",
+    "ea": "0x2f20",
+    "function_file": "functions/2f20_Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy_Update.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::Update",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 9,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::get_Configuration",
+    "ea": "0x2820",
+    "function_file": "functions/2820_Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand_get_Configuration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::get_Configuration",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CreateCrmService",
+    "ea": "0x10a0",
+    "function_file": "functions/10a0_Microsoft.Crm.Workflow.LegacyWorkflowContext_CreateCrmService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CreateCrmService",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 49,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CreateMetadataService",
+    "ea": "0x1120",
+    "function_file": "functions/1120_Microsoft.Crm.Workflow.LegacyWorkflowContext_CreateMetadataService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CreateMetadataService",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 38,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.LegacyWorkflowContext::get_PluginTypeId",
+    "ea": "0xea0",
+    "function_file": "functions/ea0_Microsoft.Crm.Workflow.LegacyWorkflowContext_get_PluginTypeId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.LegacyWorkflowContext::get_PluginTypeId",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 6,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::get_SubscriptionToRegister",
+    "ea": "0x35f0",
+    "function_file": "functions/35f0_Microsoft.Crm.Workflow.Services.WaitSubscriptionService_get_SubscriptionToRegister.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.Services.WaitSubscriptionService::get_SubscriptionToRegister",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::CreateSdkService",
+    "ea": "0x1d10",
+    "function_file": "functions/1d10_Microsoft.Crm.Workflow.WorkflowContext_CreateSdkService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::CreateSdkService",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 18,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowExpansionPlugin::.ctor",
+    "ea": "0x24f0",
+    "function_file": "functions/24f0_Microsoft.Crm.Workflow.WorkflowExpansionPlugin_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowExpansionPlugin::.ctor",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 7,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowExpansionPlugin::Execute",
+    "ea": "0x2500",
+    "function_file": "functions/2500_Microsoft.Crm.Workflow.WorkflowExpansionPlugin_Execute.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowExpansionPlugin::Execute",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 98,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogSdkPersistentStrategy::Update",
+    "ea": "0x2fb0",
+    "function_file": "functions/2fb0_Microsoft.Crm.Workflow.WorkflowLogSdkPersistentStrategy_Update.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogSdkPersistentStrategy::Update",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 19,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::ConvertInternal",
+    "ea": "0x25c0",
+    "function_file": "functions/25c0_Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter_ConvertInternal.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::ConvertInternal",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 314,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::Subscribe",
+    "ea": "0x1390",
+    "function_file": "functions/1390_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_Subscribe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::Subscribe",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 166,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::.ctor_0",
+    "ea": "0x1900",
+    "function_file": "functions/1900_Microsoft.Crm.Workflow.WorkflowContext_.ctor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::.ctor_0",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 105,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::UnsubscribeAll",
+    "ea": "0x1760",
+    "function_file": "functions/1760_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_UnsubscribeAll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::UnsubscribeAll",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 76,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::Enqueue",
+    "ea": "0x2ec0",
+    "function_file": "functions/2ec0_Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy_Enqueue.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::Enqueue",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 60,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::CompleteWorkflow",
+    "ea": "0x770",
+    "function_file": "functions/770_Microsoft.Crm.Workflow.ActivityHost_CompleteWorkflow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::CompleteWorkflow",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 147,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::EndAsyncEvent",
+    "ea": "0xb50",
+    "function_file": "functions/b50_Microsoft.Crm.Workflow.ActivityHost_EndAsyncEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::EndAsyncEvent",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.LegacyWorkflowContext::GetOnlyItem",
+    "ea": "0x1200",
+    "function_file": "functions/1200_Microsoft.Crm.Workflow.LegacyWorkflowContext_GetOnlyItem.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.LegacyWorkflowContext::GetOnlyItem",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 57,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::.ctor",
+    "ea": "0x1370",
+    "function_file": "functions/1370_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::.ctor",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowContext::.ctor",
+    "ea": "0x18e0",
+    "function_file": "functions/18e0_Microsoft.Crm.Workflow.WorkflowContext_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowContext::.ctor",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 22,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowDataAccess::.ctor",
+    "ea": "0x2290",
+    "function_file": "functions/2290_Microsoft.Crm.Workflow.WorkflowDataAccess_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowDataAccess::.ctor",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::Flush",
+    "ea": "0x2f30",
+    "function_file": "functions/2f30_Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy_Flush.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::Flush",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::SetParameter",
+    "ea": "0x2d50",
+    "function_file": "functions/2d50_Microsoft.Crm.Workflow.WorkflowLogDataAccess_SetParameter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::SetParameter",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 189,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::Convert",
+    "ea": "0x2590",
+    "function_file": "functions/2590_Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter_Convert.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::Convert",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 48,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "ContextService::.ctor",
+    "ea": "0x3620",
+    "function_file": "functions/3620_ContextService_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ContextService::.ctor",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 28,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::LogException",
+    "ea": "0xb70",
+    "function_file": "functions/b70_Microsoft.Crm.Workflow.ActivityHost_LogException.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::LogException",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CopyToParentWorkflowContext",
+    "ea": "0x1280",
+    "function_file": "functions/1280_Microsoft.Crm.Workflow.LegacyWorkflowContext_CopyToParentWorkflowContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.LegacyWorkflowContext::CopyToParentWorkflowContext",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 219,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::RetrieveWaitOnAttributeList",
+    "ea": "0x14f0",
+    "function_file": "functions/14f0_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_RetrieveWaitOnAttributeList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::RetrieveWaitOnAttributeList",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 129,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::TryUnsubscribeAll",
+    "ea": "0x1690",
+    "function_file": "functions/1690_Microsoft.Crm.Workflow.WaitSubscriptionDataAccess_TryUnsubscribeAll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WaitSubscriptionDataAccess::TryUnsubscribeAll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 76,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ContextService::CreateDataAccess",
+    "ea": "0x36c0",
+    "function_file": "functions/36c0_ContextService_CreateDataAccess.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ContextService::CreateDataAccess",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 13,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ContextService::GetOrgCultureInfo",
+    "ea": "0x36a0",
+    "function_file": "functions/36a0_ContextService_GetOrgCultureInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ContextService::GetOrgCultureInfo",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 23,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.IWorkflowLogPersistentStrategy::Flush",
+    "ea": "0x28a0",
+    "function_file": "functions/28a0_Microsoft.Crm.Workflow.IWorkflowLogPersistentStrategy_Flush.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.IWorkflowLogPersistentStrategy::Flush",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.LegacyWorkflowContext::ConvertDynamicEntityToEntityImageCollection",
+    "ea": "0x1240",
+    "function_file": "functions/1240_Microsoft.Crm.Workflow.LegacyWorkflowContext_ConvertDynamicEntityToEntityImageCollection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.LegacyWorkflowContext::ConvertDynamicEntityToEntityImageCollection",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.LegacyWorkflowContext::get_PrimaryEntityName",
+    "ea": "0xeb0",
+    "function_file": "functions/eb0_Microsoft.Crm.Workflow.LegacyWorkflowContext_get_PrimaryEntityName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.LegacyWorkflowContext::get_PrimaryEntityName",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowDataAccess::RetrieveWorkflowInstanceState",
+    "ea": "0x23d0",
+    "function_file": "functions/23d0_Microsoft.Crm.Workflow.WorkflowDataAccess_RetrieveWorkflowInstanceState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowDataAccess::RetrieveWorkflowInstanceState",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 99,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::.ctor",
+    "ea": "0x2580",
+    "function_file": "functions/2580_Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::.ctor",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 14,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ContextService::get_OrgCultureInfo",
+    "ea": "0x3650",
+    "function_file": "functions/3650_ContextService_get_OrgCultureInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ContextService::get_OrgCultureInfo",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 7,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkflowPerformanceCounters::GetPerformanceCounter",
+    "ea": "0x1f0",
+    "function_file": "functions/1f0_Microsoft.Crm.Asynchronous.WorkflowPerformanceCounters_GetPerformanceCounter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkflowPerformanceCounters::GetPerformanceCounter",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 71,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::.ctor",
+    "ea": "0x380",
+    "function_file": "functions/380_Microsoft.Crm.Workflow.ActivityHost_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 49,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.ActivityHost::OnPostWorkflowThreadEnded",
+    "ea": "0x750",
+    "function_file": "functions/750_Microsoft.Crm.Workflow.ActivityHost_OnPostWorkflowThreadEnded.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.ActivityHost::OnPostWorkflowThreadEnded",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::.ctor",
+    "ea": "0x27d0",
+    "function_file": "functions/27d0_Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.IWorkflowLogPersistentStrategy::Create",
+    "ea": "0x28c0",
+    "function_file": "functions/28c0_Microsoft.Crm.Workflow.IWorkflowLogPersistentStrategy_Create.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.IWorkflowLogPersistentStrategy::Create",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::.ctor",
+    "ea": "0x2e90",
+    "function_file": "functions/2e90_Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::Create",
+    "ea": "0x2f00",
+    "function_file": "functions/2f00_Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy_Create.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogCachePersistentStrategy::Create",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::.ctor",
+    "ea": "0x28e0",
+    "function_file": "functions/28e0_Microsoft.Crm.Workflow.WorkflowLogDataAccess_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDescriptor::.ctor",
+    "ea": "0x2e20",
+    "function_file": "functions/2e20_Microsoft.Crm.Workflow.WorkflowLogDescriptor_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDescriptor::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDescriptor::get_Entity",
+    "ea": "0x2e50",
+    "function_file": "functions/2e50_Microsoft.Crm.Workflow.WorkflowLogDescriptor_get_Entity.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDescriptor::get_Entity",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDescriptor::get_Operation",
+    "ea": "0x2e60",
+    "function_file": "functions/2e60_Microsoft.Crm.Workflow.WorkflowLogDescriptor_get_Operation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDescriptor::get_Operation",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::Convert_0",
+    "ea": "0x2700",
+    "function_file": "functions/2700_Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter_Convert_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::Convert_0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::Convert_4",
+    "ea": "0x2760",
+    "function_file": "functions/2760_Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter_Convert_4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::Convert_4",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::Convert_5",
+    "ea": "0x2790",
+    "function_file": "functions/2790_Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter_Convert_5.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowToAsyncResultConverter::Convert_5",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ContextService::get_Context",
+    "ea": "0x3640",
+    "function_file": "functions/3640_ContextService_get_Context.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ContextService::get_Context",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 12,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::InternalExecute",
+    "ea": "0x2840",
+    "function_file": "functions/2840_Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand_InternalExecute.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::InternalExecute",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 24,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::get_Id",
+    "ea": "0x27f0",
+    "function_file": "functions/27f0_Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand_get_Id.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.AsyncWorkflowSaveInstanceStateCommand::get_Id",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowDataAccess::GetName",
+    "ea": "0x22b0",
+    "function_file": "functions/22b0_Microsoft.Crm.Workflow.WorkflowDataAccess_GetName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowDataAccess::GetName",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowDataAccess::GetOrganizationId",
+    "ea": "0x22c0",
+    "function_file": "functions/22c0_Microsoft.Crm.Workflow.WorkflowDataAccess_GetOrganizationId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowDataAccess::GetOrganizationId",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::GetName",
+    "ea": "0x2900",
+    "function_file": "functions/2900_Microsoft.Crm.Workflow.WorkflowLogDataAccess_GetName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::GetName",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::GetOrganizationId",
+    "ea": "0x2910",
+    "function_file": "functions/2910_Microsoft.Crm.Workflow.WorkflowLogDataAccess_GetOrganizationId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDataAccess::GetOrganizationId",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogDescriptor::get_PrimartKey",
+    "ea": "0x2e40",
+    "function_file": "functions/2e40_Microsoft.Crm.Workflow.WorkflowLogDescriptor_get_PrimartKey.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogDescriptor::get_PrimartKey",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Workflow.WorkflowLogSdkPersistentStrategy::Create",
+    "ea": "0x2f90",
+    "function_file": "functions/2f90_Microsoft.Crm.Workflow.WorkflowLogSdkPersistentStrategy_Create.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Workflow.WorkflowLogSdkPersistentStrategy::Create",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  }
+]

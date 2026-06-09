@@ -1,0 +1,194 @@
+[
+  {
+    "from_ea": "0x1c1",
+    "from_func": "0x1a0",
+    "string_ea": "0x40ba",
+    "text": "Total Workflow state writes"
+  },
+  {
+    "from_ea": "0x1cc",
+    "from_func": "0x1a0",
+    "string_ea": "0x40ba",
+    "text": "Total Workflow state writes"
+  },
+  {
+    "from_ea": "0x2877",
+    "from_func": "0x2870",
+    "string_ea": "0x40ba",
+    "text": "Total Workflow state writes"
+  },
+  {
+    "from_ea": "0x6ad",
+    "from_func": "0x640",
+    "string_ea": "0x4470",
+    "text": "WaitSubscriptionDataAccess.RestartWaitingWorkflowInstances"
+  },
+  {
+    "from_ea": "0x6d0",
+    "from_func": "0x6d0",
+    "string_ea": "0x44e6",
+    "text": "Workflow.NotEnoughPrivilegesForXamlWorkflows"
+  },
+  {
+    "from_ea": "0xa0c",
+    "from_func": "0x910",
+    "string_ea": "0x4622",
+    "text": "Encountered attempt to unload aborted workflow '{0}'"
+  },
+  {
+    "from_ea": "0xb10",
+    "from_func": "0xa50",
+    "string_ea": "0x470c",
+    "text": "Encountered attempt to terminate aborted workflow '{0}'"
+  },
+  {
+    "from_ea": "0x1380",
+    "from_func": "0x1380",
+    "string_ea": "0x47ea",
+    "text": "WaitSubscriptionDataAccess"
+  },
+  {
+    "from_ea": "0x1447",
+    "from_func": "0x1440",
+    "string_ea": "0x4830",
+    "text": "update WorkflowWaitSubscriptionBase\r\n\t\t\t\t\t\tset WaitOnAttributeList = @waitOnAttributeList\r\n\t\t\t\t\t\twhere EntityId = @entityId and \r\n\t\t\t\t\t\tEntityName = @entityName and \r\n\t\t\t\t\t\tAsyncOperationId = @asyncOperationId"
+  },
+  {
+    "from_ea": "0x14b8",
+    "from_func": "0x1440",
+    "string_ea": "0x4a4e",
+    "text": "Workflow {0} subscribed for updates of entity instance ({1},{2}) on attributes {3}."
+  },
+  {
+    "from_ea": "0x164e",
+    "from_func": "0x1580",
+    "string_ea": "0x4a4e",
+    "text": "Workflow {0} subscribed for updates of entity instance ({1},{2}) on attributes {3}."
+  },
+  {
+    "from_ea": "0x16e7",
+    "from_func": "0x16e0",
+    "string_ea": "0x516a",
+    "text": "delete from WorkflowWaitSubscriptionBase where WorkflowWaitSubscriptionId = @subscriptionId"
+  },
+  {
+    "from_ea": "0x17b1",
+    "from_func": "0x17b0",
+    "string_ea": "0x5300",
+    "text": "delete from WorkflowWaitSubscriptionBase where AsyncOperationId = @workflowId2"
+  },
+  {
+    "from_ea": "0x17f1",
+    "from_func": "0x17f0",
+    "string_ea": "0x53b8",
+    "text": "delete WorkflowWaitSubscriptionBase from WorkflowWaitSubscriptionBase with(index(ndx_CascadeRelationship_Asyncoperation_workflowwaitsubscription)) where AsyncOperationId=@workflowId"
+  },
+  {
+    "from_ea": "0x1837",
+    "from_func": "0x1830",
+    "string_ea": "0x553c",
+    "text": "\r\nif exists (select * from WorkflowWaitSubscriptionBase (nolock) where IsModified = 1)\r\nbegin\r\nupdate AsyncOperationBase\r\nset\r\n\tStateCode = @readyState,\r\n\tStatusCode = @waitingStatus,\r\n\tModifiedOn = @modifiedOn,\r\n\tModifiedBy = CreatedBy\r\nwhere\r\n\tStateCode = @suspendedState\r\nand RetryCount < @maxRetries\r\nand AsyncOperationId in (select AsyncOperationId from WorkflowWaitSubscriptionBase where IsModified = 1)\r\nend"
+  },
+  {
+    "from_ea": "0x184d",
+    "from_func": "0x1830",
+    "string_ea": "0x587a",
+    "text": "@readyState"
+  },
+  {
+    "from_ea": "0x1b65",
+    "from_func": "0x1ac0",
+    "string_ea": "0x58e8",
+    "text": "SavePendingWorkflowInstanceState: Failed save for workflow {0}; state is {1} bytes, postpone until: {2}, blocked: {3}. Delayed update command queued"
+  },
+  {
+    "from_ea": "0x1c96",
+    "from_func": "0x1c70",
+    "string_ea": "0x5b10",
+    "text": "SaveWorkflowInstanceState: Queued state save command for workflow {0}; state is {1} bytes, postpone until: {2}, blocked: {3}."
+  },
+  {
+    "from_ea": "0x1fea",
+    "from_func": "0x1f30",
+    "string_ea": "0x5d86",
+    "text": "createdon"
+  },
+  {
+    "from_ea": "0x2206",
+    "from_func": "0x20d0",
+    "string_ea": "0x5eb4",
+    "text": "completedon"
+  },
+  {
+    "from_ea": "0x22a0",
+    "from_func": "0x22a0",
+    "string_ea": "0x5ef0",
+    "text": "WorkflowDataAccess"
+  },
+  {
+    "from_ea": "0x22d7",
+    "from_func": "0x22d0",
+    "string_ea": "0x5f16",
+    "text": "update AsyncOperationBase\r\nset\r\n\tPostponeUntil = @postponeUntil,\t\r\n\tWorkflowState = @workflowState,\r\n\tWorkflowIsBlocked = @workflowIsBlocked,\r\n\tModifiedOn = @modifiedOn,\r\n\tModifiedBy = CreatedBy\r\nwhere\r\n\tAsyncOperationId = @id"
+  },
+  {
+    "from_ea": "0x2447",
+    "from_func": "0x2440",
+    "string_ea": "0x6292",
+    "text": "update AsyncOperationBase\r\nset\r\n\tWorkflowStageName = @workflowStageName,\r\n\tModifiedOn = @modifiedOn,\r\n\tModifiedBy = CreatedBy\r\nwhere\r\n\tAsyncOperationId = @id"
+  },
+  {
+    "from_ea": "0x24b5",
+    "from_func": "0x2440",
+    "string_ea": "0x63f4",
+    "text": "Workflow {0} has moved to stage '{1}'."
+  },
+  {
+    "from_ea": "0x2830",
+    "from_func": "0x2830",
+    "string_ea": "0x6544",
+    "text": "AsyncWorkflowSaveInstanceStateCommand"
+  },
+  {
+    "from_ea": "0x28f0",
+    "from_func": "0x28f0",
+    "string_ea": "0x6590",
+    "text": "WorkflowLogDataAccess"
+  },
+  {
+    "from_ea": "0x2962",
+    "from_func": "0x2920",
+    "string_ea": "0x65bc",
+    "text": "Exception while trying to open database connection for organization {0}"
+  },
+  {
+    "from_ea": "0x2a11",
+    "from_func": "0x2920",
+    "string_ea": "0x667c",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\4\\src\\Core\\ObjectModel\\Async\\Handlers\\Workflow\\WorkflowLogDataAccess.cs"
+  },
+  {
+    "from_ea": "0x2a65",
+    "from_func": "0x2a60",
+    "string_ea": "0x67c8",
+    "text": "INSERT INTO [WorkflowLogBase] ([ModifiedOnBehalfBy], [ModifiedBy], [CreatedBy],[ObjectTypeCode] "
+  },
+  {
+    "from_ea": "0x2bd5",
+    "from_func": "0x2bd0",
+    "string_ea": "0x6916",
+    "text": "UPDATE [WorkflowLogBase] SET "
+  },
+  {
+    "from_ea": "0x2fe5",
+    "from_func": "0x2fe0",
+    "string_ea": "0x69ec",
+    "text": "WorkflowLogCacheStrategy"
+  },
+  {
+    "from_ea": "0x32a5",
+    "from_func": "0x31b0",
+    "string_ea": "0x6aba",
+    "text": "TemplateId"
+  }
+]

@@ -1,0 +1,2456 @@
+[
+  {
+    "from_ea": "0x65f",
+    "from_func": "0x590",
+    "string_ea": "0x1b016",
+    "text": "The Microsoft Dynamics CRM configuration database (MSCRM_CONFIG) can't be accessed. Make sure that the person running the tool has read access to these databases."
+  },
+  {
+    "from_ea": "0x786",
+    "from_func": "0x590",
+    "string_ea": "0x1b1a6",
+    "text": "The Microsoft Dynamics CRM organization database ({0}) can't be accessed. Make sure that the person running the tool has read access to these databases."
+  },
+  {
+    "from_ea": "0xa9d",
+    "from_func": "0xa80",
+    "string_ea": "0x1b3ce",
+    "text": "Cannot write to output file."
+  },
+  {
+    "from_ea": "0xbd1",
+    "from_func": "0xbb0",
+    "string_ea": "0x1b408",
+    "text": "Could not find connection information for MSCRM_CONFIG. Please provide Database Server name using \"/s\" parameter"
+  },
+  {
+    "from_ea": "0xbe2",
+    "from_func": "0xbb0",
+    "string_ea": "0x1b4ea",
+    "text": "Data Source={0};Initial Catalog=MSCRM_CONFIG;Integrated Security=SSPI;Connect Timeout=90"
+  },
+  {
+    "from_ea": "0xe45",
+    "from_func": "0xe30",
+    "string_ea": "0x1b792",
+    "text": "configdb"
+  },
+  {
+    "from_ea": "0xf60",
+    "from_func": "0xf40",
+    "string_ea": "0x1b7a4",
+    "text": "select PluginAssemblyId, Name, Version, Culture, PublicKeyToken, SourceType, Path, Content from PluginAssemblyBase with (NOLOCK) where CustomizationLevel >0 and PublicKeyToken != '31bf3856ad364e35'"
+  },
+  {
+    "from_ea": "0xf7e",
+    "from_func": "0xf40",
+    "string_ea": "0x1b930",
+    "text": "PluginAssemblyId"
+  },
+  {
+    "from_ea": "0xfc7",
+    "from_func": "0xf40",
+    "string_ea": "0x1b97c",
+    "text": "PublicKeyToken"
+  },
+  {
+    "from_ea": "0x1065",
+    "from_func": "0x1040",
+    "string_ea": "0x1b9ca",
+    "text": "select distinct\r\nm.Name as SdkMessageName,\r\np.TypeName,\r\np.PluginTypeId,\r\ne.LogicalName\r\nfrom SdkMessageProcessingStepBase step with (NOLOCK) \r\njoin SdkMessageBase m with (NOLOCK) on (step.SdkMessageId = m.SdkMessageId)\r\njoin PluginTypeBase p with (NOLOCK) on (p.PluginTypeId = step.PluginTypeId)\r\njoin PluginAssemblyBase pa with (NOLOCK) on (pa.PluginAssemblyId = p.PluginAssemblyId)\r\nleft join SdkMessageFilterBase f with (NOLOCK) on (f.SdkMessageFilterId = step.SdkMessageFilterId)\r\nleft join Enti"
+  },
+  {
+    "from_ea": "0x10c7",
+    "from_func": "0x1040",
+    "string_ea": "0x1bec2",
+    "text": "PluginTypeId"
+  },
+  {
+    "from_ea": "0x142a",
+    "from_func": "0x1420",
+    "string_ea": "0x1c064",
+    "text": "Microsoft.Crm.Sdk.IPlugin"
+  },
+  {
+    "from_ea": "0x1446",
+    "from_func": "0x1440",
+    "string_ea": "0x1c098",
+    "text": "Microsoft.Crm.Sdk, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+  },
+  {
+    "from_ea": "0x1725",
+    "from_func": "0x1720",
+    "string_ea": "0x1c1f8",
+    "text": "{0}, Version={1}, Culture={2}, PublicKeyToken={3}"
+  },
+  {
+    "from_ea": "0x1ac2",
+    "from_func": "0x1aa0",
+    "string_ea": "0x1c52c",
+    "text": "Checking for web resources accessing the 2007 web service endpoint"
+  },
+  {
+    "from_ea": "0x1b16",
+    "from_func": "0x1ae0",
+    "string_ea": "0x1c62a",
+    "text": "Checking for the 2007 web service calls in the IIS logs"
+  },
+  {
+    "from_ea": "0x1ea1",
+    "from_func": "0x1e90",
+    "string_ea": "0x1c69a",
+    "text": "Could not retrieve the CRM Website path (ISV folder) from the registry."
+  },
+  {
+    "from_ea": "0x1f26",
+    "from_func": "0x1f10",
+    "string_ea": "0x1c7ac",
+    "text": "WebSitePath"
+  },
+  {
+    "from_ea": "0x1fbc",
+    "from_func": "0x1f70",
+    "string_ea": "0x1c7fa",
+    "text": "crmservice.asmx"
+  },
+  {
+    "from_ea": "0x1fd2",
+    "from_func": "0x1f70",
+    "string_ea": "0x1c81a",
+    "text": "Web resource {0} contains a reference to the 2007 web service endpoint"
+  },
+  {
+    "from_ea": "0x2011",
+    "from_func": "0x1f70",
+    "string_ea": "0x1c8a8",
+    "text": "Did not find any web resources that contain calls to the 2007 web service endpoint"
+  },
+  {
+    "from_ea": "0x20d2",
+    "from_func": "0x2060",
+    "string_ea": "0x1c9a8",
+    "text": "/sim /c:\"MSCRMServices/2007/crmservice.asmx\" \"{0}\""
+  },
+  {
+    "from_ea": "0x2188",
+    "from_func": "0x2060",
+    "string_ea": "0x1ca74",
+    "text": "Findstr.exe did not complete successfully within 1 hour. Please check for references to crmservice.asmx in log files."
+  },
+  {
+    "from_ea": "0x21c1",
+    "from_func": "0x2060",
+    "string_ea": "0x1cb60",
+    "text": "IIS Logs contain calls to the 2007 web service endpoint"
+  },
+  {
+    "from_ea": "0x21e3",
+    "from_func": "0x2060",
+    "string_ea": "0x1cbd0",
+    "text": "IIS logs do not contain calls to the 2007 web service endpoint"
+  },
+  {
+    "from_ea": "0x2221",
+    "from_func": "0x2060",
+    "string_ea": "0x1cc98",
+    "text": "Folder specified for IIS logs does not exist or is not accessible."
+  },
+  {
+    "from_ea": "0x23e6",
+    "from_func": "0x23c0",
+    "string_ea": "0x1cda0",
+    "text": "IsConfigDBAvailable"
+  },
+  {
+    "from_ea": "0x242f",
+    "from_func": "0x23c0",
+    "string_ea": "0x1ce6a",
+    "text": "Cannot open connection on SQL Server. Connection string ({0})"
+  },
+  {
+    "from_ea": "0x7797",
+    "from_func": "0x7730",
+    "string_ea": "0x1ce6a",
+    "text": "Cannot open connection on SQL Server. Connection string ({0})"
+  },
+  {
+    "from_ea": "0x2456",
+    "from_func": "0x23c0",
+    "string_ea": "0x1cee6",
+    "text": "SQL Server does not exist or access denied. Connection string ({0})"
+  },
+  {
+    "from_ea": "0x77bd",
+    "from_func": "0x7730",
+    "string_ea": "0x1cee6",
+    "text": "SQL Server does not exist or access denied. Connection string ({0})"
+  },
+  {
+    "from_ea": "0x2657",
+    "from_func": "0x25e0",
+    "string_ea": "0x1cfac",
+    "text": "InstallDbVersion"
+  },
+  {
+    "from_ea": "0x2831",
+    "from_func": "0x2830",
+    "string_ea": "0x1d1c4",
+    "text": "InstallDynamicsSolution"
+  },
+  {
+    "from_ea": "0x2851",
+    "from_func": "0x2850",
+    "string_ea": "0x1d1f4",
+    "text": "InstallDynamicsSolutionsInvoker"
+  },
+  {
+    "from_ea": "0x28ef",
+    "from_func": "0x2880",
+    "string_ea": "0x1d234",
+    "text": "NOT AN ERROR SetupSolutionInstalled: {0}, {1} {2}, {3}, {4}, {5}, {6}, {7}"
+  },
+  {
+    "from_ea": "0x29d7",
+    "from_func": "0x2930",
+    "string_ea": "0x1d2ca",
+    "text": "NOT AN ERROR AppliedOrganizationDBUpdate: {0}, {1} {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}"
+  },
+  {
+    "from_ea": "0x2aa9",
+    "from_func": "0x2a40",
+    "string_ea": "0x1d38a",
+    "text": "NOT AN ERROR OrganizationUpgradeCompleted: {0}, {1} {2}, {3}, {4}, {5}"
+  },
+  {
+    "from_ea": "0x2be8",
+    "from_func": "0x2be0",
+    "string_ea": "0x1d482",
+    "text": "NOT AN ERROR PDConnected: {0}, package: {1}, started by this: {2}, attempt count: {3}"
+  },
+  {
+    "from_ea": "0x2c88",
+    "from_func": "0x2c80",
+    "string_ea": "0x1d622",
+    "text": "NOT AN ERROR PDRetry: {0}, attempt: {1}, package: {2}"
+  },
+  {
+    "from_ea": "0x2d31",
+    "from_func": "0x2d30",
+    "string_ea": "0x1d768",
+    "text": "claimsInfo"
+  },
+  {
+    "from_ea": "0x2e51",
+    "from_func": "0x2e50",
+    "string_ea": "0x1d768",
+    "text": "claimsInfo"
+  },
+  {
+    "from_ea": "0x2eb1",
+    "from_func": "0x2eb0",
+    "string_ea": "0x1d768",
+    "text": "claimsInfo"
+  },
+  {
+    "from_ea": "0x2f81",
+    "from_func": "0x2f80",
+    "string_ea": "0x1d768",
+    "text": "claimsInfo"
+  },
+  {
+    "from_ea": "0x2dc3",
+    "from_func": "0x2d50",
+    "string_ea": "0x1d77e",
+    "text": "ClaimsSessionSecurityTokenLifetime"
+  },
+  {
+    "from_ea": "0x3008",
+    "from_func": "0x3000",
+    "string_ea": "0x1d77e",
+    "text": "ClaimsSessionSecurityTokenLifetime"
+  },
+  {
+    "from_ea": "0x2df1",
+    "from_func": "0x2d50",
+    "string_ea": "0x1d7c4",
+    "text": "GetClaimsInfo"
+  },
+  {
+    "from_ea": "0x2df6",
+    "from_func": "0x2d50",
+    "string_ea": "0x1d7e0",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Claims\\ClaimsConfigurator.cs"
+  },
+  {
+    "from_ea": "0x304c",
+    "from_func": "0x3000",
+    "string_ea": "0x1d7e0",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Claims\\ClaimsConfigurator.cs"
+  },
+  {
+    "from_ea": "0x2e06",
+    "from_func": "0x2d50",
+    "string_ea": "0x1d890",
+    "text": "Error retrieving the ClaimsSessionSecurityTokenLifetime (in hours) attribute from the Deployment table. Exception = ({0})"
+  },
+  {
+    "from_ea": "0x2eda",
+    "from_func": "0x2eb0",
+    "string_ea": "0x1d984",
+    "text": "ClaimsInfo.ClaimsEnabledProperty"
+  },
+  {
+    "from_ea": "0x3141",
+    "from_func": "0x3140",
+    "string_ea": "0x1d984",
+    "text": "ClaimsInfo.ClaimsEnabledProperty"
+  },
+  {
+    "from_ea": "0x3166",
+    "from_func": "0x3160",
+    "string_ea": "0x1d984",
+    "text": "ClaimsInfo.ClaimsEnabledProperty"
+  },
+  {
+    "from_ea": "0x2efd",
+    "from_func": "0x2eb0",
+    "string_ea": "0x1d9c6",
+    "text": "ClaimsInfo.ClaimsFederationMetadataUrlProperty"
+  },
+  {
+    "from_ea": "0x3181",
+    "from_func": "0x3180",
+    "string_ea": "0x1d9c6",
+    "text": "ClaimsInfo.ClaimsFederationMetadataUrlProperty"
+  },
+  {
+    "from_ea": "0x31a6",
+    "from_func": "0x31a0",
+    "string_ea": "0x1d9c6",
+    "text": "ClaimsInfo.ClaimsFederationMetadataUrlProperty"
+  },
+  {
+    "from_ea": "0x34cd",
+    "from_func": "0x34c0",
+    "string_ea": "0x1d9c6",
+    "text": "ClaimsInfo.ClaimsFederationMetadataUrlProperty"
+  },
+  {
+    "from_ea": "0x2f25",
+    "from_func": "0x2eb0",
+    "string_ea": "0x1da24",
+    "text": "ClaimsInfo.ClaimsEncryptionCertificateProperty"
+  },
+  {
+    "from_ea": "0x2f4f",
+    "from_func": "0x2eb0",
+    "string_ea": "0x1da24",
+    "text": "ClaimsInfo.ClaimsEncryptionCertificateProperty"
+  },
+  {
+    "from_ea": "0x3281",
+    "from_func": "0x3280",
+    "string_ea": "0x1da24",
+    "text": "ClaimsInfo.ClaimsEncryptionCertificateProperty"
+  },
+  {
+    "from_ea": "0x32a6",
+    "from_func": "0x32a0",
+    "string_ea": "0x1da24",
+    "text": "ClaimsInfo.ClaimsEncryptionCertificateProperty"
+  },
+  {
+    "from_ea": "0x3047",
+    "from_func": "0x3000",
+    "string_ea": "0x1da82",
+    "text": "UpdateClaimsSessionSecurityTokenLifetimeInHours"
+  },
+  {
+    "from_ea": "0x31c1",
+    "from_func": "0x31c0",
+    "string_ea": "0x1daf8",
+    "text": "ClaimsInfo.ClaimsSessionSecurityTokenLifetimeInHoursProperty"
+  },
+  {
+    "from_ea": "0x31e6",
+    "from_func": "0x31e0",
+    "string_ea": "0x1daf8",
+    "text": "ClaimsInfo.ClaimsSessionSecurityTokenLifetimeInHoursProperty"
+  },
+  {
+    "from_ea": "0x3201",
+    "from_func": "0x3200",
+    "string_ea": "0x1db72",
+    "text": "ClaimsInfo.ClaimsLiveIdFederationMetadataUrlProperty"
+  },
+  {
+    "from_ea": "0x3226",
+    "from_func": "0x3220",
+    "string_ea": "0x1db72",
+    "text": "ClaimsInfo.ClaimsLiveIdFederationMetadataUrlProperty"
+  },
+  {
+    "from_ea": "0x3241",
+    "from_func": "0x3240",
+    "string_ea": "0x1dbdc",
+    "text": "ClaimsInfo.ClaimsOrgIdFederationMetadataUrlProperty"
+  },
+  {
+    "from_ea": "0x3266",
+    "from_func": "0x3260",
+    "string_ea": "0x1dbdc",
+    "text": "ClaimsInfo.ClaimsOrgIdFederationMetadataUrlProperty"
+  },
+  {
+    "from_ea": "0x32c1",
+    "from_func": "0x32c0",
+    "string_ea": "0x1dc44",
+    "text": "ClaimsInfo.ClaimsRelyingPartyIdentifierProperty"
+  },
+  {
+    "from_ea": "0x32e6",
+    "from_func": "0x32e0",
+    "string_ea": "0x1dc44",
+    "text": "ClaimsInfo.ClaimsRelyingPartyIdentifierProperty"
+  },
+  {
+    "from_ea": "0x3301",
+    "from_func": "0x3300",
+    "string_ea": "0x1dca4",
+    "text": "ClaimsInfo.ConfigDatabaseSchemaSupportsClaimsInfo"
+  },
+  {
+    "from_ea": "0x3326",
+    "from_func": "0x3320",
+    "string_ea": "0x1dca4",
+    "text": "ClaimsInfo.ConfigDatabaseSchemaSupportsClaimsInfo"
+  },
+  {
+    "from_ea": "0x3341",
+    "from_func": "0x3340",
+    "string_ea": "0x1dd08",
+    "text": "ClaimsInfo.FederationProviderIdProperty"
+  },
+  {
+    "from_ea": "0x3366",
+    "from_func": "0x3360",
+    "string_ea": "0x1dd08",
+    "text": "ClaimsInfo.FederationProviderIdProperty"
+  },
+  {
+    "from_ea": "0x36ea",
+    "from_func": "0x36d0",
+    "string_ea": "0x1df96",
+    "text": "SqlCommandTimeout"
+  },
+  {
+    "from_ea": "0x373a",
+    "from_func": "0x36d0",
+    "string_ea": "0x1df96",
+    "text": "SqlCommandTimeout"
+  },
+  {
+    "from_ea": "0x37a6",
+    "from_func": "0x37a0",
+    "string_ea": "0x1df96",
+    "text": "SqlCommandTimeout"
+  },
+  {
+    "from_ea": "0x36f7",
+    "from_func": "0x36d0",
+    "string_ea": "0x1dfd6",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Common\\ConnectionTimeoutModifier.cs"
+  },
+  {
+    "from_ea": "0x375e",
+    "from_func": "0x36d0",
+    "string_ea": "0x1dfd6",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Common\\ConnectionTimeoutModifier.cs"
+  },
+  {
+    "from_ea": "0x3778",
+    "from_func": "0x36d0",
+    "string_ea": "0x1e0c4",
+    "text": "Unable to update the command timeout for organization: {0} Exception {1}"
+  },
+  {
+    "from_ea": "0x388f",
+    "from_func": "0x37d0",
+    "string_ea": "0x1e188",
+    "text": "Error during the access of the Registry. Cannot set {0} value. Exception = ({1})"
+  },
+  {
+    "from_ea": "0x3973",
+    "from_func": "0x38b0",
+    "string_ea": "0x1e22a",
+    "text": "Error during the access of the Registry. Cannot reset {0} value. Exception = ({1})"
+  },
+  {
+    "from_ea": "0x44b0",
+    "from_func": "0x44b0",
+    "string_ea": "0x1e48a",
+    "text": "CRM_Server_InstallDir"
+  },
+  {
+    "from_ea": "0xa60d",
+    "from_func": "0xa5e0",
+    "string_ea": "0x1e48a",
+    "text": "CRM_Server_InstallDir"
+  },
+  {
+    "from_ea": "0x44d0",
+    "from_func": "0x44d0",
+    "string_ea": "0x1e4b6",
+    "text": "Retrieving installed language pack version for language {0}"
+  },
+  {
+    "from_ea": "0x4555",
+    "from_func": "0x44d0",
+    "string_ea": "0x1e60a",
+    "text": "Language pack for language {0} was not found in the registry!"
+  },
+  {
+    "from_ea": "0x4d1e",
+    "from_func": "0x4cf0",
+    "string_ea": "0x1e88e",
+    "text": "IfdIntranetAccessEnabled"
+  },
+  {
+    "from_ea": "0x4e90",
+    "from_func": "0x4e60",
+    "string_ea": "0x1e88e",
+    "text": "IfdIntranetAccessEnabled"
+  },
+  {
+    "from_ea": "0x4d4e",
+    "from_func": "0x4cf0",
+    "string_ea": "0x1e8e0",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Ifd\\IfdConfigurator.cs"
+  },
+  {
+    "from_ea": "0x4fc8",
+    "from_func": "0x4e60",
+    "string_ea": "0x1e8e0",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Ifd\\IfdConfigurator.cs"
+  },
+  {
+    "from_ea": "0x4fe9",
+    "from_func": "0x4e60",
+    "string_ea": "0x1e8e0",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Ifd\\IfdConfigurator.cs"
+  },
+  {
+    "from_ea": "0x5089",
+    "from_func": "0x5030",
+    "string_ea": "0x1e8e0",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Ifd\\IfdConfigurator.cs"
+  },
+  {
+    "from_ea": "0x50f2",
+    "from_func": "0x5030",
+    "string_ea": "0x1e8e0",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Ifd\\IfdConfigurator.cs"
+  },
+  {
+    "from_ea": "0x52d1",
+    "from_func": "0x52d0",
+    "string_ea": "0x1ebf6",
+    "text": "IfdInfo.IfdIntranetAccessEnabledProperty"
+  },
+  {
+    "from_ea": "0x52f6",
+    "from_func": "0x52f0",
+    "string_ea": "0x1ebf6",
+    "text": "IfdInfo.IfdIntranetAccessEnabledProperty"
+  },
+  {
+    "from_ea": "0x54a4",
+    "from_func": "0x5440",
+    "string_ea": "0x1ed1c",
+    "text": "IfdDiscoveryService.Warning.UrlUnavailable"
+  },
+  {
+    "from_ea": "0x5b69",
+    "from_func": "0x5b20",
+    "string_ea": "0x1ef88",
+    "text": "serviceappointment"
+  },
+  {
+    "from_ea": "0x5c0e",
+    "from_func": "0x5be0",
+    "string_ea": "0x1f026",
+    "text": "ReadSolution"
+  },
+  {
+    "from_ea": "0x18a35",
+    "from_func": "0x18a00",
+    "string_ea": "0x1f026",
+    "text": "ReadSolution"
+  },
+  {
+    "from_ea": "0x5c2d",
+    "from_func": "0x5be0",
+    "string_ea": "0x1f040",
+    "text": "UpdateSolution"
+  },
+  {
+    "from_ea": "0x18a54",
+    "from_func": "0x18a00",
+    "string_ea": "0x1f040",
+    "text": "UpdateSolution"
+  },
+  {
+    "from_ea": "0x5d4a",
+    "from_func": "0x5c90",
+    "string_ea": "0x1f0c6",
+    "text": "Failed to install solution {0} at location {1} : {2}"
+  },
+  {
+    "from_ea": "0x5f34",
+    "from_func": "0x5f20",
+    "string_ea": "0x1f130",
+    "text": "Installing {0} from {1}."
+  },
+  {
+    "from_ea": "0x6095",
+    "from_func": "0x5f20",
+    "string_ea": "0x1f26c",
+    "text": "Failed to install {0}"
+  },
+  {
+    "from_ea": "0x60f0",
+    "from_func": "0x5f20",
+    "string_ea": "0x1f298",
+    "text": "InstallDynamicsSolutionsAction: "
+  },
+  {
+    "from_ea": "0x19344",
+    "from_func": "0x191f0",
+    "string_ea": "0x1f298",
+    "text": "InstallDynamicsSolutionsAction: "
+  },
+  {
+    "from_ea": "0x6129",
+    "from_func": "0x5f20",
+    "string_ea": "0x1f2da",
+    "text": "fileFullPathAndName"
+  },
+  {
+    "from_ea": "0x61c3",
+    "from_func": "0x6180",
+    "string_ea": "0x1f338",
+    "text": "Install solution "
+  },
+  {
+    "from_ea": "0x629f",
+    "from_func": "0x6260",
+    "string_ea": "0x1f3bc",
+    "text": "Found {0} in cache {1}."
+  },
+  {
+    "from_ea": "0x6323",
+    "from_func": "0x6260",
+    "string_ea": "0x1f416",
+    "text": "PackageDeployer: Starting {0} install."
+  },
+  {
+    "from_ea": "0x63d0",
+    "from_func": "0x6260",
+    "string_ea": "0x1f480",
+    "text": "Failed to install package {0} on attempt {1} using Multi Tenant PD. "
+  },
+  {
+    "from_ea": "0x640b",
+    "from_func": "0x6260",
+    "string_ea": "0x1f562",
+    "text": "Failed to install package {0} on attempt {1}."
+  },
+  {
+    "from_ea": "0x6465",
+    "from_func": "0x6260",
+    "string_ea": "0x1f5be",
+    "text": "Failed to install package {0} on attempt {1}. Retrying in {2} seconds. Reason for retry: {3}"
+  },
+  {
+    "from_ea": "0x6678",
+    "from_func": "0x6670",
+    "string_ea": "0x1f9e8",
+    "text": "Package {0} was installed successfully on attempt {1}."
+  },
+  {
+    "from_ea": "0x6694",
+    "from_func": "0x6670",
+    "string_ea": "0x1fa56",
+    "text": "PackageDeployer Logs for attempt {0}: {1}"
+  },
+  {
+    "from_ea": "0x66b1",
+    "from_func": "0x6670",
+    "string_ea": "0x1faaa",
+    "text": "Package {0} failed to install on attempt {1}.\r\n{2}"
+  },
+  {
+    "from_ea": "0x67d5",
+    "from_func": "0x6710",
+    "string_ea": "0x1fb1e",
+    "text": "Failed to dispose importXml object correctly for solution {0}."
+  },
+  {
+    "from_ea": "0x6850",
+    "from_func": "0x6850",
+    "string_ea": "0x1fb9c",
+    "text": "UPDATE SolutionBase SET IsVisible = @Value WHERE UniqueName IN ("
+  },
+  {
+    "from_ea": "0x68ab",
+    "from_func": "0x6850",
+    "string_ea": "0x1fc6c",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\InstallDynamicsSolutions.cs"
+  },
+  {
+    "from_ea": "0x6cfb",
+    "from_func": "0x6cc0",
+    "string_ea": "0x1ffa6",
+    "text": "The complex data import failed because the compressed"
+  },
+  {
+    "from_ea": "0x6d28",
+    "from_func": "0x6cc0",
+    "string_ea": "0x2003c",
+    "text": "Invalid access token would be returned"
+  },
+  {
+    "from_ea": "0x6d50",
+    "from_func": "0x6cc0",
+    "string_ea": "0x2008a",
+    "text": "The solution installation or removal failed due to the installation or removal of another solution at the same time"
+  },
+  {
+    "from_ea": "0x6f7a",
+    "from_func": "0x6e00",
+    "string_ea": "0x20342",
+    "text": "PackageDeploymentExecutor failed to complete in {0} minutes."
+  },
+  {
+    "from_ea": "0x7061",
+    "from_func": "0x6fd0",
+    "string_ea": "0x204b4",
+    "text": "isinternalcrmappsinstall"
+  },
+  {
+    "from_ea": "0x7358",
+    "from_func": "0x7350",
+    "string_ea": "0x205c8",
+    "text": "DMSnapIn.Organization.Create"
+  },
+  {
+    "from_ea": "0x740a",
+    "from_func": "0x73d0",
+    "string_ea": "0x2067c",
+    "text": "install.xml"
+  },
+  {
+    "from_ea": "0x7568",
+    "from_func": "0x7560",
+    "string_ea": "0x2067c",
+    "text": "install.xml"
+  },
+  {
+    "from_ea": "0xcbd6",
+    "from_func": "0xcb90",
+    "string_ea": "0x2067c",
+    "text": "install.xml"
+  },
+  {
+    "from_ea": "0x1097f",
+    "from_func": "0x10960",
+    "string_ea": "0x2067c",
+    "text": "install.xml"
+  },
+  {
+    "from_ea": "0x15858",
+    "from_func": "0x15840",
+    "string_ea": "0x2067c",
+    "text": "install.xml"
+  },
+  {
+    "from_ea": "0x1696a",
+    "from_func": "0x16960",
+    "string_ea": "0x2067c",
+    "text": "install.xml"
+  },
+  {
+    "from_ea": "0x74b4",
+    "from_func": "0x7490",
+    "string_ea": "0x206ce",
+    "text": "DMSnapIn.Organization.Update"
+  },
+  {
+    "from_ea": "0x78e3",
+    "from_func": "0x78d0",
+    "string_ea": "0x209ac",
+    "text": "if convert(nvarchar, serverproperty('Edition')) <> 'SQL Azure' begin; alter database {0} set single_user with rollback immediate; end;"
+  },
+  {
+    "from_ea": "0x7949",
+    "from_func": "0x78d0",
+    "string_ea": "0x20b9a",
+    "text": "Setting SINGLE_USER mode with ROLLBACK for database({0}) on sqlServer({1})."
+  },
+  {
+    "from_ea": "0x7bbb",
+    "from_func": "0x7b80",
+    "string_ea": "0x21116",
+    "text": "RESTORE DATABASE @databaseName FROM  DISK = @backupFileName WITH  REPLACE;"
+  },
+  {
+    "from_ea": "0x7f25",
+    "from_func": "0x7f00",
+    "string_ea": "0x21512",
+    "text": "Cannot open the database ({0}) on the SQL Server ({1}) to check if it is a valid CRM database. Please verify that the user has access to this database and correct any other errors.The process will continue, but it returns this database as NOT valid CRM database. Exception: {2}"
+  },
+  {
+    "from_ea": "0x805a",
+    "from_func": "0x8050",
+    "string_ea": "0x21a44",
+    "text": "Database install.Xml path must be specified"
+  },
+  {
+    "from_ea": "0x84f8",
+    "from_func": "0x84f0",
+    "string_ea": "0x21e56",
+    "text": "InstallInfo.InstallType"
+  },
+  {
+    "from_ea": "0x89f1",
+    "from_func": "0x89f0",
+    "string_ea": "0x22242",
+    "text": "InstallInfo.CreateDatabase"
+  },
+  {
+    "from_ea": "0x8a16",
+    "from_func": "0x8a10",
+    "string_ea": "0x22242",
+    "text": "InstallInfo.CreateDatabase"
+  },
+  {
+    "from_ea": "0xc60d",
+    "from_func": "0xc600",
+    "string_ea": "0x22242",
+    "text": "InstallInfo.CreateDatabase"
+  },
+  {
+    "from_ea": "0xcac3",
+    "from_func": "0xcab0",
+    "string_ea": "0x22242",
+    "text": "InstallInfo.CreateDatabase"
+  },
+  {
+    "from_ea": "0xcb9d",
+    "from_func": "0xcb90",
+    "string_ea": "0x22242",
+    "text": "InstallInfo.CreateDatabase"
+  },
+  {
+    "from_ea": "0xcc73",
+    "from_func": "0xcc60",
+    "string_ea": "0x22242",
+    "text": "InstallInfo.CreateDatabase"
+  },
+  {
+    "from_ea": "0xcd34",
+    "from_func": "0xcd20",
+    "string_ea": "0x22242",
+    "text": "InstallInfo.CreateDatabase"
+  },
+  {
+    "from_ea": "0xd22d",
+    "from_func": "0xd220",
+    "string_ea": "0x22242",
+    "text": "InstallInfo.CreateDatabase"
+  },
+  {
+    "from_ea": "0x8a71",
+    "from_func": "0x8a70",
+    "string_ea": "0x222ca",
+    "text": "InstallInfo.UpgradeDatabase"
+  },
+  {
+    "from_ea": "0x8a96",
+    "from_func": "0x8a90",
+    "string_ea": "0x222ca",
+    "text": "InstallInfo.UpgradeDatabase"
+  },
+  {
+    "from_ea": "0xd249",
+    "from_func": "0xd220",
+    "string_ea": "0x222ca",
+    "text": "InstallInfo.UpgradeDatabase"
+  },
+  {
+    "from_ea": "0x8d71",
+    "from_func": "0x8d70",
+    "string_ea": "0x225f2",
+    "text": "InstallInfo.SqmOptIn"
+  },
+  {
+    "from_ea": "0x8d96",
+    "from_func": "0x8d90",
+    "string_ea": "0x225f2",
+    "text": "InstallInfo.SqmOptIn"
+  },
+  {
+    "from_ea": "0x8db1",
+    "from_func": "0x8db0",
+    "string_ea": "0x2261c",
+    "text": "InstallInfo.RunEdwChecks"
+  },
+  {
+    "from_ea": "0x8dd6",
+    "from_func": "0x8dd0",
+    "string_ea": "0x2261c",
+    "text": "InstallInfo.RunEdwChecks"
+  },
+  {
+    "from_ea": "0x8e71",
+    "from_func": "0x8e70",
+    "string_ea": "0x226bc",
+    "text": "ServerInstallInfo.UpgradeType"
+  },
+  {
+    "from_ea": "0x8e96",
+    "from_func": "0x8e90",
+    "string_ea": "0x226bc",
+    "text": "ServerInstallInfo.UpgradeType"
+  },
+  {
+    "from_ea": "0x1675b",
+    "from_func": "0x16750",
+    "string_ea": "0x226bc",
+    "text": "ServerInstallInfo.UpgradeType"
+  },
+  {
+    "from_ea": "0x8fc6",
+    "from_func": "0x8fc0",
+    "string_ea": "0x227a8",
+    "text": "ServerInstallInfo.PrivUserGroup"
+  },
+  {
+    "from_ea": "0x8fd9",
+    "from_func": "0x8fc0",
+    "string_ea": "0x227a8",
+    "text": "ServerInstallInfo.PrivUserGroup"
+  },
+  {
+    "from_ea": "0x8ff6",
+    "from_func": "0x8ff0",
+    "string_ea": "0x227a8",
+    "text": "ServerInstallInfo.PrivUserGroup"
+  },
+  {
+    "from_ea": "0x9016",
+    "from_func": "0x9010",
+    "string_ea": "0x227e8",
+    "text": "ServerInstallInfo.SqlAccessGroup"
+  },
+  {
+    "from_ea": "0x9029",
+    "from_func": "0x9010",
+    "string_ea": "0x227e8",
+    "text": "ServerInstallInfo.SqlAccessGroup"
+  },
+  {
+    "from_ea": "0x9046",
+    "from_func": "0x9040",
+    "string_ea": "0x227e8",
+    "text": "ServerInstallInfo.SqlAccessGroup"
+  },
+  {
+    "from_ea": "0x9066",
+    "from_func": "0x9060",
+    "string_ea": "0x2282a",
+    "text": "ServerInstallInfo.ReportingGroup"
+  },
+  {
+    "from_ea": "0x9079",
+    "from_func": "0x9060",
+    "string_ea": "0x2282a",
+    "text": "ServerInstallInfo.ReportingGroup"
+  },
+  {
+    "from_ea": "0x9096",
+    "from_func": "0x9090",
+    "string_ea": "0x2282a",
+    "text": "ServerInstallInfo.ReportingGroup"
+  },
+  {
+    "from_ea": "0x90b6",
+    "from_func": "0x90b0",
+    "string_ea": "0x2286c",
+    "text": "ServerInstallInfo.PrivReportingGroup"
+  },
+  {
+    "from_ea": "0x90c9",
+    "from_func": "0x90b0",
+    "string_ea": "0x2286c",
+    "text": "ServerInstallInfo.PrivReportingGroup"
+  },
+  {
+    "from_ea": "0x90e6",
+    "from_func": "0x90e0",
+    "string_ea": "0x2286c",
+    "text": "ServerInstallInfo.PrivReportingGroup"
+  },
+  {
+    "from_ea": "0x95a7",
+    "from_func": "0x94a0",
+    "string_ea": "0x22d10",
+    "text": "Error occured attempting to read properties from organization database {0}.{1}:  {2}"
+  },
+  {
+    "from_ea": "0x9896",
+    "from_func": "0x9890",
+    "string_ea": "0x230ca",
+    "text": "Installer.FailureMessage"
+  },
+  {
+    "from_ea": "0x9999",
+    "from_func": "0x9980",
+    "string_ea": "0x230fc",
+    "text": "9\\ImportExport\\newimport.xml"
+  },
+  {
+    "from_ea": "0x9b1e",
+    "from_func": "0x9b10",
+    "string_ea": "0x23136",
+    "text": "OrganizationSettings\\OrganizationSettings.xml"
+  },
+  {
+    "from_ea": "0x9c2c",
+    "from_func": "0x9b70",
+    "string_ea": "0x231dc",
+    "text": "Failed to retrieve MetadataCacheConfigContext."
+  },
+  {
+    "from_ea": "0x9ca4",
+    "from_func": "0x9b70",
+    "string_ea": "0x2323a",
+    "text": "Exception occurred during"
+  },
+  {
+    "from_ea": "0x9ccb",
+    "from_func": "0x9b70",
+    "string_ea": "0x2326e",
+    "text": "SetOrganizationState In Config"
+  },
+  {
+    "from_ea": "0x9d11",
+    "from_func": "0x9b70",
+    "string_ea": "0x232e4",
+    "text": "Exception occurred during the finally block of"
+  },
+  {
+    "from_ea": "0x9e60",
+    "from_func": "0x9e60",
+    "string_ea": "0x23342",
+    "text": "Setting Org version in config database"
+  },
+  {
+    "from_ea": "0x9e76",
+    "from_func": "0x9e60",
+    "string_ea": "0x23390",
+    "text": "Org version successfully set in config database"
+  },
+  {
+    "from_ea": "0x9e95",
+    "from_func": "0x9e90",
+    "string_ea": "0x233f0",
+    "text": "IF EXISTS (SELECT 1 FROM sys.columns WHERE name = 'OrganizationState' and object_id = OBJECT_ID('OrganizationBase', 'U'))\r\n\t\t\t\t\tEXEC('UPDATE OrganizationBase SET OrganizationState = {0}')"
+  },
+  {
+    "from_ea": "0x9ed1",
+    "from_func": "0x9e90",
+    "string_ea": "0x23568",
+    "text": "UpdateOrganizationDatabaseState"
+  },
+  {
+    "from_ea": "0x9f96",
+    "from_func": "0x9f10",
+    "string_ea": "0x236a4",
+    "text": "HandleExceptionInInstall threw an exception: {0}"
+  },
+  {
+    "from_ea": "0xa0cf",
+    "from_func": "0xa070",
+    "string_ea": "0x23772",
+    "text": "Not setting state to {0} as it is already set to {1}"
+  },
+  {
+    "from_ea": "0xa320",
+    "from_func": "0xa320",
+    "string_ea": "0x23f42",
+    "text": "Begin: Check if CRM Solutions are installed {0}"
+  },
+  {
+    "from_ea": "0xa348",
+    "from_func": "0xa320",
+    "string_ea": "0x24016",
+    "text": "msdynce_CRMExtensions"
+  },
+  {
+    "from_ea": "0xa37e",
+    "from_func": "0xa320",
+    "string_ea": "0x24042",
+    "text": "Error during CheckIfXrmOrg"
+  },
+  {
+    "from_ea": "0xa3ac",
+    "from_func": "0xa320",
+    "string_ea": "0x24078",
+    "text": "End: Check if CRM Solutions are installed isXrmOrg = {0}"
+  },
+  {
+    "from_ea": "0xa586",
+    "from_func": "0xa580",
+    "string_ea": "0x2410e",
+    "text": "XRM\\SQL\\9\\StoredProcedures\\catalog.xml"
+  },
+  {
+    "from_ea": "0x10d4e",
+    "from_func": "0x10cb0",
+    "string_ea": "0x2410e",
+    "text": "XRM\\SQL\\9\\StoredProcedures\\catalog.xml"
+  },
+  {
+    "from_ea": "0xa61f",
+    "from_func": "0xa5e0",
+    "string_ea": "0x241b8",
+    "text": "CRM_Live_InstallDir"
+  },
+  {
+    "from_ea": "0xaa1d",
+    "from_func": "0xa9c0",
+    "string_ea": "0x24398",
+    "text": "update EntityIndex set SolutionId = {0}\r\n\t\t\t\t\t\t\t\t\twhere IndexId = {1}"
+  },
+  {
+    "from_ea": "0xaabb",
+    "from_func": "0xaab0",
+    "string_ea": "0x24424",
+    "text": "\r\n\t\t\t\t\t\tselect distinct ObjectId, BaseSolutionId\r\n\t\t\t\t\t\tfrom DependencyNodeBase\r\n\t\t\t\t\t\twhere ComponentType = 1\r\n\t\t\t\t\t\tand BaseSolutionId in ({0}, {1})"
+  },
+  {
+    "from_ea": "0xac38",
+    "from_func": "0xabf0",
+    "string_ea": "0x24668",
+    "text": "UPDATE {0} SET SolutionId='{1}' WHERE SolutionId='{2}'"
+  },
+  {
+    "from_ea": "0xae6f",
+    "from_func": "0xae30",
+    "string_ea": "0x2473a",
+    "text": "Actions_Org\\Install"
+  },
+  {
+    "from_ea": "0xaec3",
+    "from_func": "0xae30",
+    "string_ea": "0x247de",
+    "text": "Executing Script to clean up Customer's ActivityFeed Plugin Customizations"
+  },
+  {
+    "from_ea": "0xaf4b",
+    "from_func": "0xae30",
+    "string_ea": "0x24874",
+    "text": "Success: Script executed to clean up Customer's ActivityFeed Plugin Customizations"
+  },
+  {
+    "from_ea": "0xb025",
+    "from_func": "0xb020",
+    "string_ea": "0x24926",
+    "text": "UpdateOptInSolutionInfo(): orgId = {0}, name = {1}, version = {2}."
+  },
+  {
+    "from_ea": "0xb08e",
+    "from_func": "0xb020",
+    "string_ea": "0x249fa",
+    "text": "UpdateOptInSolutionInfo"
+  },
+  {
+    "from_ea": "0xb093",
+    "from_func": "0xb020",
+    "string_ea": "0x24a2a",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\PostXrmOrganizationCreatedConfiguration.cs"
+  },
+  {
+    "from_ea": "0xb9dc",
+    "from_func": "0xb9d0",
+    "string_ea": "0x25be4",
+    "text": "filePath"
+  },
+  {
+    "from_ea": "0xba01",
+    "from_func": "0xba00",
+    "string_ea": "0x25bf6",
+    "text": "manifestPath"
+  },
+  {
+    "from_ea": "0xbb17",
+    "from_func": "0xbb10",
+    "string_ea": "0x25bf6",
+    "text": "manifestPath"
+  },
+  {
+    "from_ea": "0xba85",
+    "from_func": "0xba00",
+    "string_ea": "0x25c8c",
+    "text": "ConfigDB state restore for Organization: {0} Failed with Exception: {1}"
+  },
+  {
+    "from_ea": "0xbac4",
+    "from_func": "0xba00",
+    "string_ea": "0x25d1c",
+    "text": "Undo of ConfigDB state restore for Organization: {0} Failed with Exception: {1}"
+  },
+  {
+    "from_ea": "0xbb39",
+    "from_func": "0xbb10",
+    "string_ea": "0x25dbc",
+    "text": "Manifest file '{0}' could not be located."
+  },
+  {
+    "from_ea": "0xbb77",
+    "from_func": "0xbb10",
+    "string_ea": "0x25e10",
+    "text": "OrganizationManifest/TableRows/Organization/Id"
+  },
+  {
+    "from_ea": "0xbbe7",
+    "from_func": "0xbb10",
+    "string_ea": "0x25e10",
+    "text": "OrganizationManifest/TableRows/Organization/Id"
+  },
+  {
+    "from_ea": "0xbb99",
+    "from_func": "0xbb10",
+    "string_ea": "0x25e6e",
+    "text": "OrganizationManifest/TableRows/Organization/UniqueName"
+  },
+  {
+    "from_ea": "0xbc22",
+    "from_func": "0xbb10",
+    "string_ea": "0x25e6e",
+    "text": "OrganizationManifest/TableRows/Organization/UniqueName"
+  },
+  {
+    "from_ea": "0xbbda",
+    "from_func": "0xbb10",
+    "string_ea": "0x25edc",
+    "text": "'{0}' element is not present in the Manifest file '{1}'."
+  },
+  {
+    "from_ea": "0xbc15",
+    "from_func": "0xbb10",
+    "string_ea": "0x25edc",
+    "text": "'{0}' element is not present in the Manifest file '{1}'."
+  },
+  {
+    "from_ea": "0xbc51",
+    "from_func": "0xbb10",
+    "string_ea": "0x25f4e",
+    "text": "'{0}' Organization is not present in the Manifest file '{1}'."
+  },
+  {
+    "from_ea": "0xbc8a",
+    "from_func": "0xbb10",
+    "string_ea": "0x25fca",
+    "text": "Invalid OrganizationId '{0}' present in the Manifest file '{1}'."
+  },
+  {
+    "from_ea": "0xbeb2",
+    "from_func": "0xbe80",
+    "string_ea": "0x26288",
+    "text": "LegacyFeatureCheck.xml"
+  },
+  {
+    "from_ea": "0xbfd0",
+    "from_func": "0xbe80",
+    "string_ea": "0x2635a",
+    "text": "OrganizationLegacyPluginCustomActivityValidator.Failure"
+  },
+  {
+    "from_ea": "0xc240",
+    "from_func": "0xc230",
+    "string_ea": "0x268f0",
+    "text": "config\\5.0\\Scripts\\Reserved.sql"
+  },
+  {
+    "from_ea": "0xc333",
+    "from_func": "0xc230",
+    "string_ea": "0x26a56",
+    "text": "IsDeleted"
+  },
+  {
+    "from_ea": "0xc340",
+    "from_func": "0xc230",
+    "string_ea": "0x26a56",
+    "text": "IsDeleted"
+  },
+  {
+    "from_ea": "0xc389",
+    "from_func": "0xc380",
+    "string_ea": "0x26a6a",
+    "text": "Invalid XML format in the file: "
+  },
+  {
+    "from_ea": "0xc3a9",
+    "from_func": "0xc3a0",
+    "string_ea": "0x26a6a",
+    "text": "Invalid XML format in the file: "
+  },
+  {
+    "from_ea": "0xc625",
+    "from_func": "0xc600",
+    "string_ea": "0x26e96",
+    "text": "Cannot call this OrganizationDatabaseExistsValidator if CreateDatabase property is set to true"
+  },
+  {
+    "from_ea": "0xc879",
+    "from_func": "0xc860",
+    "string_ea": "0x27086",
+    "text": "FullTextInstalledValidator.Failure.NotInstalled"
+  },
+  {
+    "from_ea": "0xcad7",
+    "from_func": "0xcab0",
+    "string_ea": "0x27230",
+    "text": "Cannot call this OrganizationDatabaseNotDeployedValidator if CreateDatabase property is set to true"
+  },
+  {
+    "from_ea": "0xcb3b",
+    "from_func": "0xcab0",
+    "string_ea": "0x272f8",
+    "text": "OrganizationDatabaseNotAlreadyImportedValidator.Failure"
+  },
+  {
+    "from_ea": "0xcbb1",
+    "from_func": "0xcb90",
+    "string_ea": "0x27368",
+    "text": "Cannot call this OrganizationDatabaseVersionValidator if CreateDatabase property is set to true"
+  },
+  {
+    "from_ea": "0xcc87",
+    "from_func": "0xcc60",
+    "string_ea": "0x27538",
+    "text": "Cannot call this ImportUserMappingValidator if CreateDatabase property is set to true"
+  },
+  {
+    "from_ea": "0xcd48",
+    "from_func": "0xcd20",
+    "string_ea": "0x2766a",
+    "text": "Cannot call this ImportCurrentUserMapingValidator if CreateDatabase property is set to true"
+  },
+  {
+    "from_ea": "0xd059",
+    "from_func": "0xd010",
+    "string_ea": "0x27938",
+    "text": "select \r\n\ta.TableColumnName EncryptedAttributeColumnName, \r\n\tcase a.IsStoredOnPrimaryTable\r\n\t\twhen 1 then e.BaseTableName\r\n\t\telse e.ExtensionTableName\r\n\tend as TableName\r\nfrom EntityView e \r\ninner join AttributeView a on e.EntityId = a.EntityId\r\nwhere a.IsEncrypted = 1 \r\n"
+  },
+  {
+    "from_ea": "0xd1e9",
+    "from_func": "0xd1e0",
+    "string_ea": "0x27cb6",
+    "text": "Data encryption will be active after the install or upgrade. We strongly recommend that you copy the organization encryption key and store it in a safe place. For more information, see http://go.microsoft.com/fwlink/?LinkId=316366."
+  },
+  {
+    "from_ea": "0xdb5e",
+    "from_func": "0xdb40",
+    "string_ea": "0x27f10",
+    "text": "\r\ndeclare OrphanedWorkflows cursor for\r\n( \r\n\t(select W.WorkflowId from WorkflowBase W\r\n\t\tLeft Join MetadataSchema.Entity E on W.PrimaryEntity=E.ObjectTypeCode\r\n\t\twhere W.Category=2 and E.ObjectTypeCode is null)\r\n\t);\r\n\r\n\tdeclare @currentWorkflowID uniqueidentifier;\r\n\topen OrphanedWorkflows;\r\n\r\n\tfetch next from OrphanedWorkflows into @currentWorkflowID;\r\n\twhile @@FETCH_STATUS = 0\r\n\tbegin \r\n\r\n\t--iterate through stored workflowIDs and delete as needed\r\n\tdelete from DependencyBase \r\n\twhere RequiredCo"
+  },
+  {
+    "from_ea": "0xdb77",
+    "from_func": "0xdb40",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0xde4c",
+    "from_func": "0xddd0",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0xe0c6",
+    "from_func": "0xe040",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0xe307",
+    "from_func": "0xe2d0",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0xe54e",
+    "from_func": "0xe440",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0xe893",
+    "from_func": "0xe830",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0xf179",
+    "from_func": "0xf0c0",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0xf98d",
+    "from_func": "0xf930",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0xfa53",
+    "from_func": "0xf930",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0x1011c",
+    "from_func": "0x100a0",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0x10275",
+    "from_func": "0x10240",
+    "string_ea": "0x28eee",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\BusinessConfiguration.cs"
+  },
+  {
+    "from_ea": "0xdcd2",
+    "from_func": "0xdc60",
+    "string_ea": "0x28fc6",
+    "text": "LabelCacheSharingEnabled"
+  },
+  {
+    "from_ea": "0xddeb",
+    "from_func": "0xddd0",
+    "string_ea": "0x28ff8",
+    "text": "AllowReadCommittedSnapshotIsolation"
+  },
+  {
+    "from_ea": "0x100bb",
+    "from_func": "0x100a0",
+    "string_ea": "0x28ff8",
+    "text": "AllowReadCommittedSnapshotIsolation"
+  },
+  {
+    "from_ea": "0xde06",
+    "from_func": "0xddd0",
+    "string_ea": "0x29040",
+    "text": "if exists(select 1 from sys.databases where name = '{1}' and is_read_committed_snapshot_on = 0)\r\n\t\t\t\t\t\t\t\t\tbegin;\r\n\t\t\t\t\t\t\t\t\talter database {0} set read_committed_snapshot on with rollback immediate;\r\n\t\t\t\t\t\t\t\t\tend;"
+  },
+  {
+    "from_ea": "0x100d6",
+    "from_func": "0x100a0",
+    "string_ea": "0x29040",
+    "text": "if exists(select 1 from sys.databases where name = '{1}' and is_read_committed_snapshot_on = 0)\r\n\t\t\t\t\t\t\t\t\tbegin;\r\n\t\t\t\t\t\t\t\t\talter database {0} set read_committed_snapshot on with rollback immediate;\r\n\t\t\t\t\t\t\t\t\tend;"
+  },
+  {
+    "from_ea": "0xde47",
+    "from_func": "0xddd0",
+    "string_ea": "0x291ea",
+    "text": "SetReadCommittedSnapshotIsolationForDatabase"
+  },
+  {
+    "from_ea": "0x10117",
+    "from_func": "0x100a0",
+    "string_ea": "0x291ea",
+    "text": "SetReadCommittedSnapshotIsolationForDatabase"
+  },
+  {
+    "from_ea": "0xdf72",
+    "from_func": "0xdf10",
+    "string_ea": "0x29244",
+    "text": "9\\FeatureSet\\FeatureSet.xml"
+  },
+  {
+    "from_ea": "0xdfa7",
+    "from_func": "0xdf10",
+    "string_ea": "0x2927c",
+    "text": "BusinessConfigurator.BusinessResult"
+  },
+  {
+    "from_ea": "0xe094",
+    "from_func": "0xe040",
+    "string_ea": "0x292c4",
+    "text": "UPDATE OrganizationBase SET InitialVersion = @initialVersion Where InitialVersion IS NULL"
+  },
+  {
+    "from_ea": "0xe2ee",
+    "from_func": "0xe2d0",
+    "string_ea": "0x2940c",
+    "text": "\r\nIF OBJECT_ID('[SystemApplicationMetadataBase]','U') is not null\r\nBEGIN \r\n\tupdate [SystemApplicationMetadataBase] \r\n\tset [State]=2, [ModifiedOn]=GETUTCDATE()\r\n\twhere ([SystemApplicationMetadataId] = 'B7AD7D6F-AB4C-4261-AB8F-F8D61B3C1AB3')\r\n\r\n\tupdate [SystemApplicationMetadataBase]\r\n\tset [FormFactor]=1\r\n\twhere [FormFactor] is null\r\nEND\r\n\r\nIF OBJECT_ID('[UserApplicationMetadataBase]','U') is not null\r\nBEGIN \r\n\tupdate [UserApplicationMetadataBase]\r\n\tset [FormFactor]=1\r\n\twhere [FormFactor] is null\r"
+  },
+  {
+    "from_ea": "0xe4bb",
+    "from_func": "0xe440",
+    "string_ea": "0x29928",
+    "text": "\r\nWITH customizedComponents\r\nAS\r\n(SELECT {0}, \r\nROW_NUMBER() OVER(PARTITION BY {1} ORDER BY OverwriteTime) as OrderId, SolutionId\r\nFROM {2} \r\nWHERE OverwriteTime !=0 \r\nAND {1} IN \r\n(SELECT {1} FROM {2} WHERE  SolutionId IN (@fall12OptInSolutionId, @leoOptinSolutionId)) )\r\n\r\nUPDATE {2} SET SolutionId=@systemSolutionId WHERE {0} in \r\n(SELECT {0} FROM customizedComponents WHERE OrderId=1 and SolutionId IN (@fall12OptInSolutionId, @leoOptinSolutionId))\r\n"
+  },
+  {
+    "from_ea": "0xe549",
+    "from_func": "0xe440",
+    "string_ea": "0x29d30",
+    "text": "MoveCustomizedOptInComponentsToSystem"
+  },
+  {
+    "from_ea": "0xe599",
+    "from_func": "0xe590",
+    "string_ea": "0x29d7c",
+    "text": "December2012ProductUpdate"
+  },
+  {
+    "from_ea": "0xe5d4",
+    "from_func": "0xe590",
+    "string_ea": "0x29d7c",
+    "text": "December2012ProductUpdate"
+  },
+  {
+    "from_ea": "0xe5a9",
+    "from_func": "0xe590",
+    "string_ea": "0x29db0",
+    "text": "ServiceEnhancements610"
+  },
+  {
+    "from_ea": "0xe5db",
+    "from_func": "0xe590",
+    "string_ea": "0x29db0",
+    "text": "ServiceEnhancements610"
+  },
+  {
+    "from_ea": "0xe835",
+    "from_func": "0xe830",
+    "string_ea": "0x29e22",
+    "text": "UpdateOptInSolutionInfo(): orgId = {0}, name = {1}"
+  },
+  {
+    "from_ea": "0xe8d7",
+    "from_func": "0xe8d0",
+    "string_ea": "0x29eb2",
+    "text": "9\\Bin\\StringResourceMetadata.xml"
+  },
+  {
+    "from_ea": "0xf140",
+    "from_func": "0xf0c0",
+    "string_ea": "0x29f5a",
+    "text": "\r\nDELETE TOP (SELECT count(*) - 1 \r\nFROM DependencyFeatureBase WHERE DependencyFeatureId = @LeoFeatureId) \r\nFROM DependencyFeatureBase WHERE DependencyFeatureId = @LeoFeatureId\r\n\r\nDELETE FROM FieldPermissionBase WHERE SolutionId\r\nNOT IN (SELECT SolutionId FROM SolutionBase)"
+  },
+  {
+    "from_ea": "0xff0a",
+    "from_func": "0xfee0",
+    "string_ea": "0x2a58c",
+    "text": "Applying slipstream dbUpdates to organization. Id={0}, UniqueName={1}, langCode={2}"
+  },
+  {
+    "from_ea": "0xff7e",
+    "from_func": "0xfee0",
+    "string_ea": "0x2a634",
+    "text": "AutomaticallyInstallDatabaseUpdates"
+  },
+  {
+    "from_ea": "0xff93",
+    "from_func": "0xfee0",
+    "string_ea": "0x2a67c",
+    "text": "Applying latest dbUpdates to organization. Id={0}, UniqueName={1}, langCode={2}"
+  },
+  {
+    "from_ea": "0x1004d",
+    "from_func": "0x10010",
+    "string_ea": "0x2a71c",
+    "text": "OrganizationUtility.ApplyDbUpdate.Failed.Log"
+  },
+  {
+    "from_ea": "0x101e5",
+    "from_func": "0x101d0",
+    "string_ea": "0x2a776",
+    "text": "UpdateStoredProcedures.xml"
+  },
+  {
+    "from_ea": "0x1025f",
+    "from_func": "0x10240",
+    "string_ea": "0x2a7c6",
+    "text": "if not exists (select 1 from sys.objects where object_id = object_id(N'CascadeOperation') and type in (N'U'))\r\n\tcreate table [dbo].[CascadeOperation](\r\n\t\t[CascadeLinkType] [int] NOT NULL,\r\n\t\t[IsDeleteEntitySchema] [bit] default 0,\r\n\t\t[HasExtraConditions] [bit] default 0,\r\n\t\t[ReferencedEntityObjectTypeCode] [int] NOT NULL,\r\n\t\t[ReferencingEntityObjectTypeCode] [int] NOT NULL,\r\n\t\t[ReferencingAttributeColumnNumber] [int] NOT NULL,\r\n\t\t[CascadeStatement] nvarchar(max),\r\n\t\tprimary key clustered \r\n\t\t(\r\n"
+  },
+  {
+    "from_ea": "0x103e1",
+    "from_func": "0x103d0",
+    "string_ea": "0x2ad2a",
+    "text": "topicmodelconfiguration"
+  },
+  {
+    "from_ea": "0x103ec",
+    "from_func": "0x103d0",
+    "string_ea": "0x2ad5a",
+    "text": "contracttemplate"
+  },
+  {
+    "from_ea": "0x103f7",
+    "from_func": "0x103d0",
+    "string_ea": "0x2ad7c",
+    "text": "recommendationmodel"
+  },
+  {
+    "from_ea": "0x10402",
+    "from_func": "0x103d0",
+    "string_ea": "0x2ada4",
+    "text": "recommendationmodelmapping"
+  },
+  {
+    "from_ea": "0x1040d",
+    "from_func": "0x103d0",
+    "string_ea": "0x2ada4",
+    "text": "recommendationmodelmapping"
+  },
+  {
+    "from_ea": "0x107bd",
+    "from_func": "0x107a0",
+    "string_ea": "0x2aed8",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\DatabaseConfiguration.cs"
+  },
+  {
+    "from_ea": "0x108a5",
+    "from_func": "0x10880",
+    "string_ea": "0x2aed8",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\DatabaseConfiguration.cs"
+  },
+  {
+    "from_ea": "0x10a89",
+    "from_func": "0x10a60",
+    "string_ea": "0x2aed8",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\DatabaseConfiguration.cs"
+  },
+  {
+    "from_ea": "0x10dd7",
+    "from_func": "0x10da0",
+    "string_ea": "0x2aed8",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\DatabaseConfiguration.cs"
+  },
+  {
+    "from_ea": "0x107e8",
+    "from_func": "0x107a0",
+    "string_ea": "0x2af9a",
+    "text": "AddOrganization.Error.OrganizationAlreadyExists"
+  },
+  {
+    "from_ea": "0x10864",
+    "from_func": "0x10840",
+    "string_ea": "0x2b096",
+    "text": "CalculateInitialPartitionIdForOrganizationCreate"
+  },
+  {
+    "from_ea": "0x108a0",
+    "from_func": "0x10880",
+    "string_ea": "0x2b0f8",
+    "text": "CreateDeploymentIfNotPresent"
+  },
+  {
+    "from_ea": "0x108c2",
+    "from_func": "0x10880",
+    "string_ea": "0x2b132",
+    "text": "ConfigUtility.CreateDeployment for OrganizationId = {0}"
+  },
+  {
+    "from_ea": "0x109b8",
+    "from_func": "0x10960",
+    "string_ea": "0x2b1a2",
+    "text": "FullText support for {0} is not installed on {1}.  Using default"
+  },
+  {
+    "from_ea": "0x10da6",
+    "from_func": "0x10da0",
+    "string_ea": "0x2b6e2",
+    "text": "IF EXISTS (SELECT * FROM sys.tables WHERE object_id = object_id(N'dbo.RoleTemplatePrivilegesOldBackup'))\r\nBEGIN\r\nDROP TABLE [dbo].[RoleTemplatePrivilegesOldBackup]\r\nEND\r\n\r\nCREATE TABLE [dbo].[RoleTemplatePrivilegesOldBackup]( [RoleTemplateId] [uniqueidentifier] NOT NULL, [PrivilegeId] [uniqueidentifier] NOT NULL, [IsBasic] [bit] NOT NULL,\r\n[IsLocal] [bit] NOT NULL, [IsDeep] [bit] NOT NULL, [IsGlobal] [bit] NOT NULL, [Upgrading] [bit] NOT NULL, [RoleTemplatePrivilegeId] [uniqueidentifier] NOT NUL"
+  },
+  {
+    "from_ea": "0x10f2b",
+    "from_func": "0x10e80",
+    "string_ea": "0x2c19e",
+    "text": "GrantDatabaseAccessAction.MultipleDCsPrompt"
+  },
+  {
+    "from_ea": "0x10f88",
+    "from_func": "0x10f80",
+    "string_ea": "0x2c1f6",
+    "text": "GrantCrmServiceIdentityAccess does not apply for XDB org"
+  },
+  {
+    "from_ea": "0x10f99",
+    "from_func": "0x10f80",
+    "string_ea": "0x2c268",
+    "text": "MSCRMAsyncService"
+  },
+  {
+    "from_ea": "0x19f50",
+    "from_func": "0x19d30",
+    "string_ea": "0x2c268",
+    "text": "MSCRMAsyncService"
+  },
+  {
+    "from_ea": "0x19f64",
+    "from_func": "0x19d30",
+    "string_ea": "0x2c268",
+    "text": "MSCRMAsyncService"
+  },
+  {
+    "from_ea": "0x1a0e4",
+    "from_func": "0x1a0e0",
+    "string_ea": "0x2c268",
+    "text": "MSCRMAsyncService"
+  },
+  {
+    "from_ea": "0x1a107",
+    "from_func": "0x1a0e0",
+    "string_ea": "0x2c268",
+    "text": "MSCRMAsyncService"
+  },
+  {
+    "from_ea": "0x1a134",
+    "from_func": "0x1a130",
+    "string_ea": "0x2c268",
+    "text": "MSCRMAsyncService"
+  },
+  {
+    "from_ea": "0x1a157",
+    "from_func": "0x1a130",
+    "string_ea": "0x2c268",
+    "text": "MSCRMAsyncService"
+  },
+  {
+    "from_ea": "0x1102c",
+    "from_func": "0x10f80",
+    "string_ea": "0x2c31a",
+    "text": "Machine does not have AppServer or ApiServer roles installed."
+  },
+  {
+    "from_ea": "0x1104e",
+    "from_func": "0x10f80",
+    "string_ea": "0x2c3f8",
+    "text": "Grant access for ServiceAccount: {0}, WebAppAccount: {1}."
+  },
+  {
+    "from_ea": "0x114f4",
+    "from_func": "0x11490",
+    "string_ea": "0x2c52a",
+    "text": "RSConfigAction.Failure"
+  },
+  {
+    "from_ea": "0x11811",
+    "from_func": "0x11770",
+    "string_ea": "0x2c61a",
+    "text": "Reporting Services Web site metabase property UploadReadAheadSize must be set to {0} or higher."
+  },
+  {
+    "from_ea": "0x11bfa",
+    "from_func": "0x11b20",
+    "string_ea": "0x2c870",
+    "text": "ExistingRSValidator.Failure.NoPrivilege"
+  },
+  {
+    "from_ea": "0x11d4a",
+    "from_func": "0x11d20",
+    "string_ea": "0x2ca0a",
+    "text": "SrsExtensionsValidator.Failure"
+  },
+  {
+    "from_ea": "0x12065",
+    "from_func": "0x12000",
+    "string_ea": "0x2ca50",
+    "text": "Organization.Create.Failed.Log"
+  },
+  {
+    "from_ea": "0x121a8",
+    "from_func": "0x12190",
+    "string_ea": "0x2ca8e",
+    "text": "The deployment does not support multiple tenancy. All other orgs will be deleted and the newly created org will be set as default."
+  },
+  {
+    "from_ea": "0x12410",
+    "from_func": "0x12410",
+    "string_ea": "0x2cbfa",
+    "text": "CompleteUserMapping for {0} running"
+  },
+  {
+    "from_ea": "0x12460",
+    "from_func": "0x12410",
+    "string_ea": "0x2cc42",
+    "text": "CompleteUserMapping for {0} completed"
+  },
+  {
+    "from_ea": "0x124c0",
+    "from_func": "0x124c0",
+    "string_ea": "0x2cc8e",
+    "text": "Attempting to map user \"{0}\" with account {1}"
+  },
+  {
+    "from_ea": "0x124f8",
+    "from_func": "0x124c0",
+    "string_ea": "0x2ccea",
+    "text": "Error occurred while attempting to map user \"{0}\" with account {1} during user mapping: {2}"
+  },
+  {
+    "from_ea": "0x12916",
+    "from_func": "0x12910",
+    "string_ea": "0x2cf14",
+    "text": "MapByMappingFile running. Mapping users using UserMappingXMLString."
+  },
+  {
+    "from_ea": "0x12957",
+    "from_func": "0x12910",
+    "string_ea": "0x2cf9c",
+    "text": "/MappingConfiguration/UserMapping"
+  },
+  {
+    "from_ea": "0x129cf",
+    "from_func": "0x12910",
+    "string_ea": "0x2cff0",
+    "text": "/MappingConfiguration/DomainMapping"
+  },
+  {
+    "from_ea": "0x12c01",
+    "from_func": "0x12be0",
+    "string_ea": "0x2d072",
+    "text": "GenerateMappingFile completed"
+  },
+  {
+    "from_ea": "0x12d54",
+    "from_func": "0x12ca0",
+    "string_ea": "0x2d156",
+    "text": "GenerateMappingFile running. Generating Xml file with path={0}"
+  },
+  {
+    "from_ea": "0x13016",
+    "from_func": "0x12fc0",
+    "string_ea": "0x2d316",
+    "text": "User cannot be added to Active Directory as a foreign security principal: {0}"
+  },
+  {
+    "from_ea": "0x130b2",
+    "from_func": "0x12fc0",
+    "string_ea": "0x2d414",
+    "text": "Failed while trying to get user Sid and Guid from domain account"
+  },
+  {
+    "from_ea": "0x13164",
+    "from_func": "0x130e0",
+    "string_ea": "0x2d4f0",
+    "text": "Failed while trying to find user by LDAP path or principal name"
+  },
+  {
+    "from_ea": "0x133d5",
+    "from_func": "0x133c0",
+    "string_ea": "0x2d6d0",
+    "text": "Wrong filter used during the search in Active Directory resulted in this error. "
+  },
+  {
+    "from_ea": "0x13563",
+    "from_func": "0x13420",
+    "string_ea": "0x2d802",
+    "text": "objectSid"
+  },
+  {
+    "from_ea": "0x1363d",
+    "from_func": "0x135c0",
+    "string_ea": "0x2d802",
+    "text": "objectSid"
+  },
+  {
+    "from_ea": "0x138b1",
+    "from_func": "0x138b0",
+    "string_ea": "0x2d802",
+    "text": "objectSid"
+  },
+  {
+    "from_ea": "0x1397a",
+    "from_func": "0x13950",
+    "string_ea": "0x2da4a",
+    "text": "System Administrator \"{0}\" with account {1} was added to the configDB successfully"
+  },
+  {
+    "from_ea": "0x13b50",
+    "from_func": "0x13b50",
+    "string_ea": "0x2ddcc",
+    "text": "Organization.Import.UpdateUsers"
+  },
+  {
+    "from_ea": "0x14951",
+    "from_func": "0x14630",
+    "string_ea": "0x2ddcc",
+    "text": "Organization.Import.UpdateUsers"
+  },
+  {
+    "from_ea": "0x154c4",
+    "from_func": "0x15350",
+    "string_ea": "0x2ddcc",
+    "text": "Organization.Import.UpdateUsers"
+  },
+  {
+    "from_ea": "0x154e9",
+    "from_func": "0x15350",
+    "string_ea": "0x2ddcc",
+    "text": "Organization.Import.UpdateUsers"
+  },
+  {
+    "from_ea": "0x13bcd",
+    "from_func": "0x13bb0",
+    "string_ea": "0x2de42",
+    "text": "UPDATE SystemUserBase SET IsActiveDirectoryUser= @IsActiveDirectoryUser WHERE SystemUserId = @DBSystemUserId"
+  },
+  {
+    "from_ea": "0x13be3",
+    "from_func": "0x13bb0",
+    "string_ea": "0x2df1c",
+    "text": "@IsActiveDirectoryUser"
+  },
+  {
+    "from_ea": "0x13c0c",
+    "from_func": "0x13bb0",
+    "string_ea": "0x2df6a",
+    "text": "SetIsActiveDirectoryUser"
+  },
+  {
+    "from_ea": "0x13cc8",
+    "from_func": "0x13c90",
+    "string_ea": "0x2e256",
+    "text": "SELECT usr.SystemUserId AS SystemUserId,\r\n\t   FirstName,\r\n\t   LastName,\r\n\t   FullName,\r\n\t   r.Name + ' [' + bu.Name + ']' AS Role,\r\n\t   DomainName,\r\n\t   ActiveDirectoryGuid,\r\n\t   usr.IsDisabled AS IsDisabled,\r\n\t   AccessMode,\r\n\t   IsActiveDirectoryUser,\r\n\t   r.RoleTemplateId AS RoleTemplateId\r\nFROM SystemUserBase usr\r\nLEFT OUTER JOIN SystemUserRoles ur ON usr.SystemUserId = ur.SystemUserId\r\nLEFT OUTER JOIN ROLE r ON r.RoleId = ur.RoleId\r\nLEFT OUTER JOIN BusinessUnitBase bu ON r.BusinessUnitId = "
+  },
+  {
+    "from_ea": "0x13d93",
+    "from_func": "0x13d90",
+    "string_ea": "0x2e792",
+    "text": "reader"
+  },
+  {
+    "from_ea": "0x13e02",
+    "from_func": "0x13d90",
+    "string_ea": "0x2e7ee",
+    "text": "IsActiveDirectoryUser"
+  },
+  {
+    "from_ea": "0x13e18",
+    "from_func": "0x13d90",
+    "string_ea": "0x2e81a",
+    "text": "ActiveDirectoryGuid"
+  },
+  {
+    "from_ea": "0x13e92",
+    "from_func": "0x13e80",
+    "string_ea": "0x2e862",
+    "text": "RoleTemplateId"
+  },
+  {
+    "from_ea": "0x13ed2",
+    "from_func": "0x13e80",
+    "string_ea": "0x2e880",
+    "text": "AccessMode"
+  },
+  {
+    "from_ea": "0x13f31",
+    "from_func": "0x13f30",
+    "string_ea": "0x2e896",
+    "text": "UPDATE OrganizationLanguagePack SET OrganizationId = @newOrganizationId"
+  },
+  {
+    "from_ea": "0x13f5a",
+    "from_func": "0x13f30",
+    "string_ea": "0x2e94c",
+    "text": "UpdateLanguagePacks"
+  },
+  {
+    "from_ea": "0x14019",
+    "from_func": "0x13f70",
+    "string_ea": "0x2e974",
+    "text": " update OrganizationBase  set  PrivilegeUserGroupId = @PrivilegeUserGroupId,  SqlAccessGroupId = @SqlAccessGroupId, SqlAccessGroupName = @SqlAccessGroupName,  ReportingGroupId = @ReportingGroupId, ReportingGroupName = @ReportingGroupName,  PrivReportingGroupId = @PrivReportingGroupId, PrivReportingGroupName = @PrivReportingGroupName "
+  },
+  {
+    "from_ea": "0x14030",
+    "from_func": "0x13f70",
+    "string_ea": "0x2ec14",
+    "text": "@PrivilegeUserGroupId"
+  },
+  {
+    "from_ea": "0x14043",
+    "from_func": "0x13f70",
+    "string_ea": "0x2ec40",
+    "text": "@SqlAccessGroupId"
+  },
+  {
+    "from_ea": "0x14051",
+    "from_func": "0x13f70",
+    "string_ea": "0x2ec64",
+    "text": "@SqlAccessGroupName"
+  },
+  {
+    "from_ea": "0x140a8",
+    "from_func": "0x13f70",
+    "string_ea": "0x2ed34",
+    "text": "UpdateOrganizationOUGroups"
+  },
+  {
+    "from_ea": "0x14822",
+    "from_func": "0x14630",
+    "string_ea": "0x2f164",
+    "text": "Adding users to the config database"
+  },
+  {
+    "from_ea": "0x1488a",
+    "from_func": "0x14630",
+    "string_ea": "0x2f1ac",
+    "text": "Organization.Import.UpdateOrganization"
+  },
+  {
+    "from_ea": "0x148af",
+    "from_func": "0x14630",
+    "string_ea": "0x2f1ac",
+    "text": "Organization.Import.UpdateOrganization"
+  },
+  {
+    "from_ea": "0x14f42",
+    "from_func": "0x14d30",
+    "string_ea": "0x2f1ac",
+    "text": "Organization.Import.UpdateOrganization"
+  },
+  {
+    "from_ea": "0x14f7e",
+    "from_func": "0x14d30",
+    "string_ea": "0x2f1ac",
+    "text": "Organization.Import.UpdateOrganization"
+  },
+  {
+    "from_ea": "0x14a04",
+    "from_func": "0x14630",
+    "string_ea": "0x2f23a",
+    "text": "Performing GrantServiceAccountAccess on SqlServerName {0} where SqlServerMachineName={1}, reportServerUrl={2}"
+  },
+  {
+    "from_ea": "0x150c4",
+    "from_func": "0x14d30",
+    "string_ea": "0x2f23a",
+    "text": "Performing GrantServiceAccountAccess on SqlServerName {0} where SqlServerMachineName={1}, reportServerUrl={2}"
+  },
+  {
+    "from_ea": "0x14c54",
+    "from_func": "0x14c00",
+    "string_ea": "0x2f56a",
+    "text": "Organization ID defined in database specified for import already exists in the deployment. Assigning a new organization ID: {0}"
+  },
+  {
+    "from_ea": "0x14e18",
+    "from_func": "0x14d30",
+    "string_ea": "0x2f7bc",
+    "text": "Exception occured when attempting to retrieve security groups from configDB: {0}"
+  },
+  {
+    "from_ea": "0x14e45",
+    "from_func": "0x14d30",
+    "string_ea": "0x2f85e",
+    "text": "PrivilegedUserGroupName = {0}, SqlAccessGroupName = {1}, ReportingGroupName = {2}, PrivilegedReportingGroupName = {3}"
+  },
+  {
+    "from_ea": "0x156ab",
+    "from_func": "0x155c0",
+    "string_ea": "0x2f85e",
+    "text": "PrivilegedUserGroupName = {0}, SqlAccessGroupName = {1}, ReportingGroupName = {2}, PrivilegedReportingGroupName = {3}"
+  },
+  {
+    "from_ea": "0x14f6e",
+    "from_func": "0x14d30",
+    "string_ea": "0x2f9fe",
+    "text": "Update Organization"
+  },
+  {
+    "from_ea": "0x14fbe",
+    "from_func": "0x14d30",
+    "string_ea": "0x2fa26",
+    "text": "Verify Directory Objects failed with the following error: {0}"
+  },
+  {
+    "from_ea": "0x15707",
+    "from_func": "0x155c0",
+    "string_ea": "0x2fa26",
+    "text": "Verify Directory Objects failed with the following error: {0}"
+  },
+  {
+    "from_ea": "0x15052",
+    "from_func": "0x14d30",
+    "string_ea": "0x2faa2",
+    "text": "OrganizationUtility.ApplyDbUpdate"
+  },
+  {
+    "from_ea": "0x1507b",
+    "from_func": "0x14d30",
+    "string_ea": "0x2fae6",
+    "text": "Applying database updates"
+  },
+  {
+    "from_ea": "0x150ab",
+    "from_func": "0x14d30",
+    "string_ea": "0x2fb1a",
+    "text": "Skipped applying database updates as indicated."
+  },
+  {
+    "from_ea": "0x1522c",
+    "from_func": "0x14d30",
+    "string_ea": "0x2fb7a",
+    "text": "Organization.Import.Rollback.Failed.Log"
+  },
+  {
+    "from_ea": "0x1539d",
+    "from_func": "0x15350",
+    "string_ea": "0x2fd30",
+    "text": "PrivilegedReportingGroupName"
+  },
+  {
+    "from_ea": "0x153ae",
+    "from_func": "0x15350",
+    "string_ea": "0x2fd6a",
+    "text": "PrivilegedUserGroupName"
+  },
+  {
+    "from_ea": "0x153d0",
+    "from_func": "0x15350",
+    "string_ea": "0x2fdc0",
+    "text": "SqlAccessGroupName"
+  },
+  {
+    "from_ea": "0x155c0",
+    "from_func": "0x155c0",
+    "string_ea": "0x2ffb6",
+    "text": "UpdateOUGroupsInDatabase started"
+  },
+  {
+    "from_ea": "0x15794",
+    "from_func": "0x155c0",
+    "string_ea": "0x2fff8",
+    "text": "UpdateOUGroupsInDatabase finished"
+  },
+  {
+    "from_ea": "0x157b7",
+    "from_func": "0x157b0",
+    "string_ea": "0x3003c",
+    "text": "Granting access to CRM security groups for the deployment"
+  },
+  {
+    "from_ea": "0x15cb5",
+    "from_func": "0x15c80",
+    "string_ea": "0x301cc",
+    "text": "Organization.Update.OrgAndUsersInConfigDB"
+  },
+  {
+    "from_ea": "0x15cda",
+    "from_func": "0x15c80",
+    "string_ea": "0x301cc",
+    "text": "Organization.Update.OrgAndUsersInConfigDB"
+  },
+  {
+    "from_ea": "0x15d01",
+    "from_func": "0x15c80",
+    "string_ea": "0x30220",
+    "text": "Organization.Update.OrgInOrgDB"
+  },
+  {
+    "from_ea": "0x15d2d",
+    "from_func": "0x15c80",
+    "string_ea": "0x30220",
+    "text": "Organization.Update.OrgInOrgDB"
+  },
+  {
+    "from_ea": "0x15d76",
+    "from_func": "0x15c80",
+    "string_ea": "0x3025e",
+    "text": "Organization.Update.Success.Log"
+  },
+  {
+    "from_ea": "0x15da9",
+    "from_func": "0x15c80",
+    "string_ea": "0x3029e",
+    "text": "Organization.Update.Failed.Log"
+  },
+  {
+    "from_ea": "0x16b07",
+    "from_func": "0x16ad0",
+    "string_ea": "0x3029e",
+    "text": "Organization.Update.Failed.Log"
+  },
+  {
+    "from_ea": "0x15f0d",
+    "from_func": "0x15ee0",
+    "string_ea": "0x302dc",
+    "text": "Cannot restore Sql Encryption Key because the Encryption Key is not set in Config DB. Sql Encryption Key needs to be restored manually."
+  },
+  {
+    "from_ea": "0x16026",
+    "from_func": "0x15fe0",
+    "string_ea": "0x30430",
+    "text": "GetAllUsersFromConfigDB"
+  },
+  {
+    "from_ea": "0x1602b",
+    "from_func": "0x15fe0",
+    "string_ea": "0x30460",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\Organization\\Update\\UpdateOrganizationInstaller.cs"
+  },
+  {
+    "from_ea": "0x16bc8",
+    "from_func": "0x16bc0",
+    "string_ea": "0x305f6",
+    "text": "OrgUpdateStepsSkipMap"
+  },
+  {
+    "from_ea": "0x16c38",
+    "from_func": "0x16c30",
+    "string_ea": "0x30622",
+    "text": "OrgUpdateConfigSettings"
+  },
+  {
+    "from_ea": "0x16c68",
+    "from_func": "0x16c60",
+    "string_ea": "0x30652",
+    "text": "InternalPackageDeployerConfigSettings"
+  },
+  {
+    "from_ea": "0x16c97",
+    "from_func": "0x16c90",
+    "string_ea": "0x3069e",
+    "text": "MaxUpdateRunTimeInMin"
+  },
+  {
+    "from_ea": "0x16da5",
+    "from_func": "0x16d70",
+    "string_ea": "0x306e8",
+    "text": "Failed to execute action {0} on attempt {1}. Retrying in {2} seconds. "
+  },
+  {
+    "from_ea": "0x16ea3",
+    "from_func": "0x16e80",
+    "string_ea": "0x30802",
+    "text": "NOT AN ERROR: [OrgDbUpdate-GetConfigSettings] Found Site settings for {0}, value is {1}."
+  },
+  {
+    "from_ea": "0x170cb",
+    "from_func": "0x17070",
+    "string_ea": "0x30910",
+    "text": "Failed to enable org after update. Org could be in disabled state."
+  },
+  {
+    "from_ea": "0x1719f",
+    "from_func": "0x17070",
+    "string_ea": "0x30996",
+    "text": "databaseupdated"
+  },
+  {
+    "from_ea": "0x171f3",
+    "from_func": "0x171e0",
+    "string_ea": "0x309b6",
+    "text": "Failed to install organization db updates. One or more actions have failed. Failing actions are: {0}"
+  },
+  {
+    "from_ea": "0x17c4b",
+    "from_func": "0x17bf0",
+    "string_ea": "0x30bf8",
+    "text": "License type that is installed does not support multiple tenancy.You cannot have more than one organization. Now there are ({0}) organizations."
+  },
+  {
+    "from_ea": "0x17fed",
+    "from_func": "0x17f60",
+    "string_ea": "0x31048",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\WebServiceSettings\\ADConfigurator.cs"
+  },
+  {
+    "from_ea": "0x1801b",
+    "from_func": "0x17f60",
+    "string_ea": "0x31048",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\WebServiceSettings\\ADConfigurator.cs"
+  },
+  {
+    "from_ea": "0x1823c",
+    "from_func": "0x18140",
+    "string_ea": "0x31048",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\WebServiceSettings\\ADConfigurator.cs"
+  },
+  {
+    "from_ea": "0x1825d",
+    "from_func": "0x18140",
+    "string_ea": "0x31048",
+    "text": "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\44\\src\\Tools2\\DMSnapin\\lib\\WebServiceSettings\\ADConfigurator.cs"
+  },
+  {
+    "from_ea": "0x18364",
+    "from_func": "0x18310",
+    "string_ea": "0x3115a",
+    "text": "MultiTenantPD_JobHostException on attempt {0}"
+  },
+  {
+    "from_ea": "0x183b8",
+    "from_func": "0x18310",
+    "string_ea": "0x311b6",
+    "text": "PD API Host failed to complete package deployment after retrying for {0} times. Arguments: {1}"
+  },
+  {
+    "from_ea": "0x1846a",
+    "from_func": "0x183f0",
+    "string_ea": "0x313ee",
+    "text": "PdWebApiKeepCompletedJobs"
+  },
+  {
+    "from_ea": "0x18794",
+    "from_func": "0x18710",
+    "string_ea": "0x3151c",
+    "text": "CrmMultiTenantPackageDeploymentExecutorPath"
+  },
+  {
+    "from_ea": "0x18ba3",
+    "from_func": "0x18ab0",
+    "string_ea": "0x31682",
+    "text": "Failed to install Solution={0}, FileName={1} for OrgId= {2}"
+  },
+  {
+    "from_ea": "0x192df",
+    "from_func": "0x191f0",
+    "string_ea": "0x31888",
+    "text": "IsEnabledForUpdate = {0}, SkipStepForUpdate = {1}, Organization operation type = {2}"
+  },
+  {
+    "from_ea": "0x1982c",
+    "from_func": "0x19800",
+    "string_ea": "0x319ee",
+    "text": "MappingConfiguration"
+  },
+  {
+    "from_ea": "0x19b3b",
+    "from_func": "0x19ac0",
+    "string_ea": "0x31b16",
+    "text": "ServerState.ServiceName.Async"
+  },
+  {
+    "from_ea": "0x19b76",
+    "from_func": "0x19ac0",
+    "string_ea": "0x31b16",
+    "text": "ServerState.ServiceName.Async"
+  },
+  {
+    "from_ea": "0x19b4e",
+    "from_func": "0x19ac0",
+    "string_ea": "0x31b52",
+    "text": "ServerState.ServiceName.Async.Maintenance"
+  },
+  {
+    "from_ea": "0x19b9e",
+    "from_func": "0x19ac0",
+    "string_ea": "0x31ba6",
+    "text": "ServerState.ServiceName.Sandbox"
+  },
+  {
+    "from_ea": "0x19bc2",
+    "from_func": "0x19ac0",
+    "string_ea": "0x31be6",
+    "text": "ServerState.ServiceName.Unzip"
+  },
+  {
+    "from_ea": "0x19bd5",
+    "from_func": "0x19ac0",
+    "string_ea": "0x31c22",
+    "text": "ServerState.ServiceName.Website"
+  },
+  {
+    "from_ea": "0x19bfd",
+    "from_func": "0x19ac0",
+    "string_ea": "0x31c22",
+    "text": "ServerState.ServiceName.Website"
+  },
+  {
+    "from_ea": "0x19f40",
+    "from_func": "0x19d30",
+    "string_ea": "0x31c62",
+    "text": "MSCRMUnzipService"
+  },
+  {
+    "from_ea": "0x19f78",
+    "from_func": "0x19d30",
+    "string_ea": "0x31c86",
+    "text": "MSCRMSandboxService"
+  },
+  {
+    "from_ea": "0x1a0f3",
+    "from_func": "0x1a0e0",
+    "string_ea": "0x31dac",
+    "text": "MSCRMAsyncService$maintenance"
+  },
+  {
+    "from_ea": "0x1a116",
+    "from_func": "0x1a0e0",
+    "string_ea": "0x31dac",
+    "text": "MSCRMAsyncService$maintenance"
+  },
+  {
+    "from_ea": "0x1a143",
+    "from_func": "0x1a130",
+    "string_ea": "0x31dac",
+    "text": "MSCRMAsyncService$maintenance"
+  },
+  {
+    "from_ea": "0x1a166",
+    "from_func": "0x1a130",
+    "string_ea": "0x31dac",
+    "text": "MSCRMAsyncService$maintenance"
+  },
+  {
+    "from_ea": "0x1a214",
+    "from_func": "0x1a180",
+    "string_ea": "0x31e08",
+    "text": "Service ({0}) from machine ({1}) got an error and cannot be {3}. Exception: {2}"
+  },
+  {
+    "from_ea": "0x1a320",
+    "from_func": "0x1a2f0",
+    "string_ea": "0x31ff0",
+    "text": "Error during the access of the Registry on the remote machine ({0})"
+  },
+  {
+    "from_ea": "0x1a367",
+    "from_func": "0x1a2f0",
+    "string_ea": "0x32078",
+    "text": "Error during the access of the Registry on the remote machine ({0}). Exception: {1}"
+  },
+  {
+    "from_ea": "0x1a389",
+    "from_func": "0x1a2f0",
+    "string_ea": "0x32120",
+    "text": "Cannot open the key ({0}) in the Registry at this location ({1}) on this remote machine ({2})"
+  },
+  {
+    "from_ea": "0x1a3e5",
+    "from_func": "0x1a3d0",
+    "string_ea": "0x321dc",
+    "text": "Cannot set the start mode of service ({0}) on the remote machine ({1}). Exception: {2}"
+  },
+  {
+    "from_ea": "0x1a580",
+    "from_func": "0x1a550",
+    "string_ea": "0x3229c",
+    "text": "http://localhost:{0}/api/cache/{1}/flush"
+  },
+  {
+    "from_ea": "0x1a634",
+    "from_func": "0x1a550",
+    "string_ea": "0x322ee",
+    "text": "Failed to flush metadata cache in MTPD using {0}"
+  }
+]
