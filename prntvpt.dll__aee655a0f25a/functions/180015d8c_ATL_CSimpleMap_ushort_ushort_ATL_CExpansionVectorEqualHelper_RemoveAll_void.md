@@ -1,0 +1,32 @@
+# ATL::CSimpleMap<ushort *,ushort *,ATL::CExpansionVectorEqualHelper>::RemoveAll(void)
+
+- ea: `0x180015d8c`
+- end: `0x180015dd7`
+- name: `?RemoveAll@?$CSimpleMap@PEAGPEAGVCExpansionVectorEqualHelper@ATL@@@ATL@@QEAAXXZ`
+- size: `75`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x1800111f4`
+- `0x180012080`
+
+## callees
+
+- `0x180015d8c`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!_o_free` at `0x180015da1`
+- `api-ms-win-crt-private-l1-1-0!_o_free` at `0x180015db7`
+- `api-ms-win-crt-private-l1-1-0!_o_free` at `0x180015da1`
+- `api-ms-win-crt-private-l1-1-0!_o_free` at `0x180015db7`
+
+## pseudocode
+
+```c
+
+```

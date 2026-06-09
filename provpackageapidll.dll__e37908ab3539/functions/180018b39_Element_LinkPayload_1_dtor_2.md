@@ -1,0 +1,31 @@
+# _Element::LinkPayload_::_1_::dtor$2
+
+- ea: `0x180018b39`
+- end: `0x180018b45`
+- name: `_Element::LinkPayload_::_1_::dtor$2`
+- size: `12`
+- prototype: `int __fastcall(__int64, __int64)`
+- caller_count: `0`
+- callee_count: `1`
+- tags: `registry_config`
+
+## callees
+
+- `0x180006460`
+
+## pseudocode
+
+```c
+int __fastcall Element::LinkPayload_::_1_::dtor_2(__int64 a1, __int64 a2)
+{
+  return wil::unique_any_t<wil::details::unique_storage<wil::details::handle_invalid_resource_policy<int (*)(void *),&int CloseHandle(void *)>>>::~unique_any_t<wil::details::unique_storage<wil::details::handle_invalid_resource_policy<int (*)(void *),&int CloseHandle(void *)>>>((void **)(a2 + 112));
+}
+
+```
+
+## disassembly
+
+```asm
+0x180018b39  lea     rcx, [rdx+70h]
+0x180018b40  jmp     ??1?$unique_any_t@V?$unique_storage@U?$handle_invalid_resource_policy@P6AHPEAX@Z$1?CloseHandle@@YAH0@Z@details@wil@@@details@wil@@@wil@@QEAA@XZ; wil::unique_any_t<wil::details::unique_storage<wil::details::handle_invalid_resource_policy<int (*)(void *),&CloseHandle(void *)>>>::~unique_any_t<wil::details::unique_storage<wil::details::handle_invalid_resource_policy<int (*)(void *),&CloseHandle(void *)>>>(void)
+```

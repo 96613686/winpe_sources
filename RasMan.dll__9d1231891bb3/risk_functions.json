@@ -1,0 +1,3335 @@
+[
+  {
+    "callee_count": 17,
+    "caller_count": 2,
+    "demangled": "RasInitialize",
+    "ea": "0x18000b010",
+    "function_file": "functions/18000b010_RasInitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-service-management-l1-1-0!CloseServiceHandle",
+      "api-ms-win-service-winsvc-l1-1-0!OpenSCManagerA",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "ntdll.dll",
+      "SSTP service initialization failed, error = %d",
+      "RASMAN service initialization failed, error = %d",
+      "Rasman service was started by RasInitialize",
+      "TapiSrv service initialization failed, error = %d"
+    ],
+    "name": "RasInitialize",
+    "prototype": "__int64(void)",
+    "rank_score": 45914,
+    "size": 23708,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 134,
+    "demangled": "SubmitLocalRequest",
+    "ea": "0x180002f80",
+    "function_file": "functions/180002f80_SubmitLocalRequest.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+      "msvcrt!memcpy_s",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "SubmitLocalRequest-Protocol Start: OpenThreadToken Failed 0x%.8x"
+    ],
+    "name": "SubmitLocalRequest",
+    "prototype": "__int64(unsigned __int16, ...)",
+    "rank_score": 6532,
+    "size": 32904,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 14,
+    "demangled": "SubmitRequest",
+    "ea": "0x180011b40",
+    "function_file": "functions/180011b40_SubmitRequest.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+      "api-ms-win-security-base-l1-1-0!DuplicateToken",
+      "api-ms-win-security-base-l1-1-0!ImpersonateLoggedOnUser",
+      "api-ms-win-security-base-l1-1-0!RevertToSelf",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "PutRequestInQueue: OpenThreadToken Failed 0x%.8x",
+      "PutRequestInQueue: DuplicateToken Failed 0x%.8x",
+      "PutRequestInQueue: ImpersonateLoggedOnUser failed 0x%.8x"
+    ],
+    "name": "SubmitRequest",
+    "prototype": "",
+    "rank_score": 3801,
+    "size": 7090,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GetSidFromToken",
+    "ea": "0x180024990",
+    "function_file": "functions/180024990_GetSidFromToken.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!GlobalAlloc",
+      "api-ms-win-core-heap-l2-1-0!GlobalFree",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-string-obsolete-l1-1-0!lstrlenW",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation",
+      "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "GetSidFromToken: GetTokenInformation failed with %d",
+      "GetSidFromToken: Malloc token_user failed with %d",
+      "GetSidFromToken: GetTokenInformation2 failed with %d",
+      "GetSidFromToken: ConvertSidToStringSid failed with %d",
+      "GetSidFromToken: StringCchCopy failed with %d"
+    ],
+    "name": "GetSidFromToken",
+    "prototype": "__int64 __fastcall(HANDLE TokenHandle)",
+    "rank_score": 3634,
+    "size": 1010,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RasmanServiceMonitorThread",
+    "ea": "0x180014270",
+    "function_file": "functions/180014270_RasmanServiceMonitorThread.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibraryAndExitThread",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx",
+      "api-ms-win-service-management-l1-1-0!CloseServiceHandle",
+      "api-ms-win-service-winsvc-l1-1-0!NotifyServiceStatusChangeA",
+      "api-ms-win-service-winsvc-l1-1-0!OpenSCManagerA",
+      "api-ms-win-service-winsvc-l1-1-0!OpenServiceA",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "RasmanServiceMonitor thread Entered ...",
+      "RasmanServiceMonitorThread: NotifyServiceStatusChange failed, Error=%d",
+      "RasmanServiceMonitor: WaitForSingleObjectEx failed, Error= %d"
+    ],
+    "name": "RasmanServiceMonitorThread",
+    "prototype": "ULONG __stdcall(PVOID Parameter)",
+    "rank_score": 3137,
+    "size": 614,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "InitializeService",
+    "ea": "0x180013d10",
+    "function_file": "functions/180013d10_InitializeService.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-service-management-l1-1-0!CloseServiceHandle",
+      "api-ms-win-service-winsvc-l1-1-0!OpenServiceA",
+      "api-ms-win-service-winsvc-l1-1-0!QueryServiceStatus",
+      "api-ms-win-service-winsvc-l1-1-0!StartServiceA",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "InitializeService: Initializing %s service\n",
+      "InitializeService: SERVICE_STOPPED!\n",
+      "InitializeService: Starting the service",
+      "InitializeService: StartService returned 0x%x\n",
+      "InitializeService: Invalid service.status=%d\n",
+      "InitializeService: service is not coming out of START PENDING state\n"
+    ],
+    "name": "InitializeService",
+    "prototype": "__int64 __fastcall(SC_HANDLE hSCManager, LPCSTR lpServiceName)",
+    "rank_score": 3075,
+    "size": 1215,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "RasStartRasAutoIfRequired",
+    "ea": "0x1800202a0",
+    "function_file": "functions/1800202a0_RasStartRasAutoIfRequired.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-service-management-l1-1-0!CloseServiceHandle",
+      "api-ms-win-service-winsvc-l1-1-0!OpenSCManagerA",
+      "api-ms-win-service-winsvc-l1-1-0!OpenServiceA",
+      "api-ms-win-service-winsvc-l1-1-0!QueryServiceStatus",
+      "api-ms-win-service-winsvc-l1-1-0!StartServiceA"
+    ],
+    "matched_strings": [],
+    "name": "RasStartRasAutoIfRequired",
+    "prototype": "",
+    "rank_score": 3045,
+    "size": 1186,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PutLocalRequestInQueue",
+    "ea": "0x180011010",
+    "function_file": "functions/180011010_PutLocalRequestInQueue.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+      "api-ms-win-security-base-l1-1-0!DuplicateToken",
+      "api-ms-win-security-base-l1-1-0!ImpersonateLoggedOnUser",
+      "api-ms-win-security-base-l1-1-0!RevertToSelf",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "PutLocalRequestInQueue: OpenThreadToken Failed 0x%.8x",
+      "PutLocalRequestInQueue: DuplicateToken Failed 0x%.8x",
+      "PutLocalRequestInQueue: ImpersonateLoggedOnUser failed 0x%.8x"
+    ],
+    "name": "PutLocalRequestInQueue",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 2957,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "RasInitializeNoWait",
+    "ea": "0x180001760",
+    "function_file": "functions/180001760_RasInitializeNoWait.md",
+    "matched_imports": [
+      "WS2_32!__imp_WSAGetLastError",
+      "WS2_32!__imp_WSAStartup",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+    ],
+    "matched_strings": [
+      "rasmans.dll",
+      "ServiceRequestInProcess",
+      "ServiceInitialized"
+    ],
+    "name": "RasInitializeNoWait",
+    "prototype": "__int64()",
+    "rank_score": 2156,
+    "size": 1278,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ProcessAddNotification",
+    "ea": "0x180002504",
+    "function_file": "functions/180002504_ProcessAddNotification.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "ProcessAddNotification: InitializeRasmanMonitorThread failed, Error=%d",
+      "Rasman Service Status when ProcessAddNotification called for first time: %d"
+    ],
+    "name": "ProcessAddNotification",
+    "prototype": "",
+    "rank_score": 2100,
+    "size": 454,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 7,
+    "demangled": "IsRasmanProcess",
+    "ea": "0x180001c70",
+    "function_file": "functions/180001c70_IsRasmanProcess.md",
+    "matched_imports": [
+      "api-ms-win-core-processenvironment-l1-1-0!GetCommandLineA",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA",
+      "msvcrt!_strdup",
+      "msvcrt!_strlwr",
+      "msvcrt!free",
+      "msvcrt!strstr"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\rasman\\parameters"
+    ],
+    "name": "IsRasmanProcess",
+    "prototype": "__int64(void)",
+    "rank_score": 2086,
+    "size": 521,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RPCBind",
+    "ea": "0x1800144e0",
+    "function_file": "functions/1800144e0_RPCBind.md",
+    "matched_imports": [
+      "RPCRT4!I_RpcMapWin32Status",
+      "RPCRT4!RpcBindingFree",
+      "RPCRT4!RpcBindingFromStringBindingW",
+      "RPCRT4!RpcBindingSetAuthInfoExW",
+      "RPCRT4!RpcStringBindingComposeW",
+      "RPCRT4!RpcStringFreeW",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "Security=Impersonation Dynamic True"
+    ],
+    "name": "RPCBind",
+    "prototype": "__int64 __usercall@<rax>(RPC_WSTR NetworkAddr@<rcx>, RPC_WSTR ServerPrincName, int, int, RPC_WSTR, int, RPC_SECURITY_QOS *, RPC_BINDING_HANDLE *Binding)",
+    "rank_score": 2056,
+    "size": 439,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsModemPresent",
+    "ea": "0x180023810",
+    "function_file": "functions/180023810_IsModemPresent.md",
+    "matched_imports": [
+      "DEVOBJ!DevObjCreateDeviceInfoList",
+      "DEVOBJ!DevObjDestroyDeviceInfoList",
+      "DEVOBJ!DevObjEnumDeviceInterfaces",
+      "DEVOBJ!DevObjGetClassDevs",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "IsModemPresent: DevObjCreateDeviceInfoList failed (0x%x)"
+    ],
+    "name": "IsModemPresent",
+    "prototype": "",
+    "rank_score": 2045,
+    "size": 335,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180001500",
+    "function_file": "functions/180001500_DllMain.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFree",
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionAndSpinCount",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "rtutils!TraceDeregisterExA"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 2022,
+    "size": 599,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetCurrentToken",
+    "ea": "0x18002470c",
+    "function_file": "functions/18002470c_GetCurrentToken.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "GetCurrentToken: Invalid token pointer",
+      "GetCurrentToken: OpenProcessToken failed with %d",
+      "OpenThreadToken failed with %d"
+    ],
+    "name": "GetCurrentToken",
+    "prototype": "__int64 __fastcall(PHANDLE TokenHandle)",
+    "rank_score": 1938,
+    "size": 635,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "RpcConnect",
+    "ea": "0x180011574",
+    "function_file": "functions/180011574_RpcConnect.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-kernel32-legacy-l1-1-0!GetComputerNameW",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid",
+      "api-ms-win-security-base-l1-1-0!FreeSid",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "RpcConnect",
+    "prototype": "__int64 __usercall@<rax>(wchar_t *String1@<rcx>, int, int, int, int, int, RPC_SECURITY_QOS *, int, int, RPC_BINDING_HANDLE *Binding)",
+    "rank_score": 1830,
+    "size": 521,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DwSetEapUserInfo",
+    "ea": "0x180024358",
+    "function_file": "functions/180024358_DwSetEapUserInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteValueW"
+    ],
+    "matched_strings": [],
+    "name": "DwSetEapUserInfo",
+    "prototype": "",
+    "rank_score": 1822,
+    "size": 644,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "InitializeRasmanMonitorThread",
+    "ea": "0x180001214",
+    "function_file": "functions/180001214_InitializeRasmanMonitorThread.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExA",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "InitializeRasmanMonitorThread exiting ... %d",
+      "rasman.dll",
+      "InitializeRasmanMonitorThread Entered ..."
+    ],
+    "name": "InitializeRasmanMonitorThread",
+    "prototype": "",
+    "rank_score": 1743,
+    "size": 253,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "DwGetEapInfo",
+    "ea": "0x180023d40",
+    "function_file": "functions/180023d40_DwGetEapInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "DwGetEapInfo",
+    "prototype": "",
+    "rank_score": 1427,
+    "size": 397,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "InitializeConnection",
+    "ea": "0x180023618",
+    "function_file": "functions/180023618_InitializeConnection.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFree",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-kernel32-legacy-l1-1-0!GetComputerNameW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [],
+    "name": "InitializeConnection",
+    "prototype": "",
+    "rank_score": 1422,
+    "size": 495,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsServiceRunning",
+    "ea": "0x180001158",
+    "function_file": "functions/180001158_IsServiceRunning.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-service-management-l1-1-0!CloseServiceHandle",
+      "api-ms-win-service-winsvc-l1-1-0!OpenSCManagerA",
+      "api-ms-win-service-winsvc-l1-1-0!OpenServiceA",
+      "api-ms-win-service-winsvc-l1-1-0!QueryServiceStatus"
+    ],
+    "matched_strings": [],
+    "name": "IsServiceRunning",
+    "prototype": "",
+    "rank_score": 1414,
+    "size": 182,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180015254",
+    "function_file": "functions/180015254_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DwGetEapUserInfo",
+    "ea": "0x180023ed4",
+    "function_file": "functions/180023ed4_DwGetEapUserInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteValueW"
+    ],
+    "matched_strings": [],
+    "name": "DwGetEapUserInfo",
+    "prototype": "",
+    "rank_score": 1218,
+    "size": 611,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "StrDup",
+    "ea": "0x180025040",
+    "function_file": "functions/180025040_StrDup.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!GlobalAlloc",
+      "api-ms-win-core-heap-l2-1-0!GlobalFree",
+      "api-ms-win-core-string-obsolete-l1-1-0!lstrlenW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "StrDup: StringCchCopyEx failed with error 0x%x"
+    ],
+    "name": "StrDup",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 1046,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetProcessLowBoxStatus",
+    "ea": "0x1800021c0",
+    "function_file": "functions/1800021c0_GetProcessLowBoxStatus.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "ntdll!NtQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "GetProcessLowBoxStatus",
+    "prototype": "",
+    "rank_score": 1034,
+    "size": 157,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "RasRegisterPnPCommon",
+    "ea": "0x18001d8b0",
+    "function_file": "functions/18001d8b0_RasRegisterPnPCommon.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!DuplicateHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasRegisterPnPCommon",
+    "prototype": "",
+    "rank_score": 1032,
+    "size": 654,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RasPortDisconnect",
+    "ea": "0x18001a530",
+    "function_file": "functions/18001a530_RasPortDisconnect.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "RasPortDisconnect",
+    "prototype": "",
+    "rank_score": 1019,
+    "size": 481,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "DebugInitEx",
+    "ea": "0x180001fd0",
+    "function_file": "functions/180001fd0_DebugInitEx.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-psapi-ansi-l1-1-0!K32GetModuleBaseNameA",
+      "rtutils!TraceRegisterExA"
+    ],
+    "matched_strings": [],
+    "name": "DebugInitEx",
+    "prototype": "DWORD()",
+    "rank_score": 1011,
+    "size": 483,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "LoadSkuAndRole",
+    "ea": "0x180023c64",
+    "function_file": "functions/180023c64_LoadSkuAndRole.md",
+    "matched_imports": [
+      "DSROLE!DsRoleFreeMemory",
+      "DSROLE!DsRoleGetPrimaryDomainInformation",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-sysinfo-l1-1-0!GetVersionExW",
+      "api-ms-win-core-sysinfo-l1-2-0!GetProductInfo"
+    ],
+    "matched_strings": [],
+    "name": "LoadSkuAndRole",
+    "prototype": "",
+    "rank_score": 1006,
+    "size": 212,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "RasAddNotification",
+    "ea": "0x180001320",
+    "function_file": "functions/180001320_RasAddNotification.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "RasAddNotification called, hconn= %d, hevent= 0x%x, dwfFlags= 0x%x, ProcessId= %d"
+    ],
+    "name": "RasAddNotification",
+    "prototype": "",
+    "rank_score": 861,
+    "size": 466,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasProtocolUpdateConnection",
+    "ea": "0x18001d500",
+    "function_file": "functions/18001d500_RasProtocolUpdateConnection.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "RasProtocolUpdateConnection",
+    "prototype": "",
+    "rank_score": 828,
+    "size": 465,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasmanUninitialize",
+    "ea": "0x180020e30",
+    "function_file": "functions/180020e30_RasmanUninitialize.md",
+    "matched_imports": [
+      "WS2_32!__imp_WSACleanup",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "RasmanUninitialize",
+    "prototype": "",
+    "rank_score": 827,
+    "size": 379,
+    "tags": [
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "RasDoIke",
+    "ea": "0x180017930",
+    "function_file": "functions/180017930_RasDoIke.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "RasDoIke",
+    "prototype": "",
+    "rank_score": 811,
+    "size": 608,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180015344",
+    "function_file": "functions/180015344_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "GetUserSid",
+    "ea": "0x180024d88",
+    "function_file": "functions/180024d88_GetUserSid.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-string-obsolete-l1-1-0!lstrlenW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "GetUserSid: returning %d "
+    ],
+    "name": "GetUserSid",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 662,
+    "size": 475,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "RasProtocolStart",
+    "ea": "0x18001cd30",
+    "function_file": "functions/18001cd30_RasProtocolStart.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasProtocolStart",
+    "prototype": "",
+    "rank_score": 644,
+    "size": 1503,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "lrGetEapKeyFromToken",
+    "ea": "0x1800245e4",
+    "function_file": "functions/1800245e4_lrGetEapKeyFromToken.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "lrGetEapKeyFromToken",
+    "prototype": "",
+    "rank_score": 635,
+    "size": 206,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IsKnownDll",
+    "ea": "0x180024f6c",
+    "function_file": "functions/180024f6c_IsKnownDll.md",
+    "matched_imports": [
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemDirectoryW",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "IsKnownDll",
+    "prototype": "__int64 __fastcall(LPCWSTR lpSrc)",
+    "rank_score": 616,
+    "size": 203,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RasGetBuffer",
+    "ea": "0x180018160",
+    "function_file": "functions/180018160_RasGetBuffer.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasGetBuffer",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 304,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DwReplaceEapUserInfo",
+    "ea": "0x18002420c",
+    "function_file": "functions/18002420c_DwReplaceEapUserInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "DwReplaceEapUserInfo",
+    "prototype": "",
+    "rank_score": 607,
+    "size": 277,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RasmanServiceNotify",
+    "ea": "0x1800149c0",
+    "function_file": "functions/1800149c0_RasmanServiceNotify.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "RasmanServiceNotify",
+    "prototype": "",
+    "rank_score": 511,
+    "size": 119,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "RasPortOpenEx",
+    "ea": "0x18001b860",
+    "function_file": "functions/18001b860_RasPortOpenEx.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "RasPortOpenEx",
+    "prototype": "",
+    "rank_score": 421,
+    "size": 510,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RasSignalMonitorThreadExit",
+    "ea": "0x180022890",
+    "function_file": "functions/180022890_RasSignalMonitorThreadExit.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "RasSignalMonitorThreadExit",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 85,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "AllocateBuffer",
+    "ea": "0x180013a60",
+    "function_file": "functions/180013a60_AllocateBuffer.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "AllocateBuffer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 406,
+    "size": 383,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_GetNtDllProcedureAddress",
+    "ea": "0x180022664",
+    "function_file": "functions/180022664_wil_details_GetNtDllProcedureAddress.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "wil_details_GetNtDllProcedureAddress",
+    "prototype": "",
+    "rank_score": 353,
+    "size": 59,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "__delayLoadHelper2",
+    "ea": "0x180014230",
+    "function_file": "functions/180014230_delayLoadHelper2.md",
+    "matched_imports": [
+      "api-ms-win-core-delayload-l1-1-0!DelayLoadFailureHook",
+      "api-ms-win-core-delayload-l1-1-1!ResolveDelayLoadedAPI"
+    ],
+    "matched_strings": [],
+    "name": "__delayLoadHelper2",
+    "prototype": "",
+    "rank_score": 310,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "StringCchCopyWrapW",
+    "ea": "0x180025f98",
+    "function_file": "functions/180025f98_StringCchCopyWrapW.md",
+    "matched_imports": [
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "StringCchCopy failed due to error 0x%x"
+    ],
+    "name": "StringCchCopyWrapW",
+    "prototype": "",
+    "rank_score": 247,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasRegisterPnPEvent",
+    "ea": "0x18001db50",
+    "function_file": "functions/18001db50_RasRegisterPnPEvent.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasRegisterPnPEvent",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 263,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 61,
+    "demangled": "WPP_SF_",
+    "ea": "0x180020fd8",
+    "function_file": "functions/180020fd8_WPP_SF.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 175,
+    "demangled": "WPP_SF_d",
+    "ea": "0x180021000",
+    "function_file": "functions/180021000_WPP_SF_d.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 73,
+    "demangled": "WPP_SF_q",
+    "ea": "0x180021488",
+    "function_file": "functions/180021488_WPP_SF_q.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "RasRpcGetInstalledProtocolsEx",
+    "ea": "0x180023100",
+    "function_file": "functions/180023100_RasRpcGetInstalledProtocolsEx.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall3"
+    ],
+    "matched_strings": [],
+    "name": "RasRpcGetInstalledProtocolsEx",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 46,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RasPortReceive",
+    "ea": "0x18001ba70",
+    "function_file": "functions/18001ba70_RasPortReceive.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasPortReceive",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 437,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RasPortClose",
+    "ea": "0x18001a290",
+    "function_file": "functions/18001a290_RasPortClose.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasPortClose",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 352,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasPortListen",
+    "ea": "0x18001b5a0",
+    "function_file": "functions/18001b5a0_RasPortListen.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasPortListen",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 396,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasAddNotificationEx",
+    "ea": "0x180002c20",
+    "function_file": "functions/180002c20_RasAddNotificationEx.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasAddNotificationEx",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 380,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasDeviceConnect",
+    "ea": "0x1800172f0",
+    "function_file": "functions/1800172f0_RasDeviceConnect.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasDeviceConnect",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 351,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasPortFree",
+    "ea": "0x18001ac40",
+    "function_file": "functions/18001ac40_RasPortFree.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasPortFree",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 351,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasRequestNotification",
+    "ea": "0x18001dde0",
+    "function_file": "functions/18001dde0_RasRequestNotification.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasRequestNotification",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 321,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasServerPortClose",
+    "ea": "0x18001e720",
+    "function_file": "functions/18001e720_RasServerPortClose.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasServerPortClose",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 347,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasCreateConnection",
+    "ea": "0x180016d50",
+    "function_file": "functions/180016d50_RasCreateConnection.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasCreateConnection",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 311,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasPortOpen",
+    "ea": "0x18001b740",
+    "function_file": "functions/18001b740_RasPortOpen.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasPortOpen",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 273,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasPortReserve",
+    "ea": "0x18001bd70",
+    "function_file": "functions/18001bd70_RasPortReserve.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "RasPortReserve",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 271,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 15,
+    "demangled": "WPP_SF_qd",
+    "ea": "0x1800217a0",
+    "function_file": "functions/1800217a0_WPP_SF_qd.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qd",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "DwSetEapInfo",
+    "ea": "0x180024328",
+    "function_file": "functions/180024328_DwSetEapInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "DwSetEapInfo",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 41,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RemoteRasGetDevConfig",
+    "ea": "0x180023aa0",
+    "function_file": "functions/180023aa0_RemoteRasGetDevConfig.md",
+    "matched_imports": [
+      "RPCRT4!I_RpcExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "RemoteRasGetDevConfig",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 37,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CompareStringWrapW",
+    "ea": "0x180025f5c",
+    "function_file": "functions/180025f5c_CompareStringWrapW.md",
+    "matched_imports": [
+      "api-ms-win-core-string-l1-1-0!CompareStringW"
+    ],
+    "matched_strings": [],
+    "name": "CompareStringWrapW",
+    "prototype": "__int64 __fastcall(PCNZWCH lpString1, PCNZWCH lpString2)",
+    "rank_score": 211,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RasRpcGetDevConfig",
+    "ea": "0x180023060",
+    "function_file": "functions/180023060_RasRpcGetDevConfig.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall3"
+    ],
+    "matched_strings": [],
+    "name": "RasRpcGetDevConfig",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 56,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x1800219f4",
+    "function_file": "functions/1800219f4_WPP_SF_qq.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DtlCreateSizedNode",
+    "ea": "0x180026058",
+    "function_file": "functions/180026058_DtlCreateSizedNode.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!GlobalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "DtlCreateSizedNode",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "WPP_SF_c",
+    "ea": "0x1800213e4",
+    "function_file": "functions/1800213e4_WPP_SF_c.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_c",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 205,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreatePszNode",
+    "ea": "0x1800246b8",
+    "function_file": "functions/1800246b8_CreatePszNode.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "CreatePszNode",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "DtlCreateList",
+    "ea": "0x180026024",
+    "function_file": "functions/180026024_DtlCreateList.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!GlobalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "DtlCreateList",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "WPP_SF_qc",
+    "ea": "0x1800216e8",
+    "function_file": "functions/1800216e8_WPP_SF_qc.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qc",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x1800214c8",
+    "function_file": "functions/1800214c8_WPP_SF_qD.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "WPP_SF_qdd",
+    "ea": "0x1800218bc",
+    "function_file": "functions/1800218bc_WPP_SF_qdd.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qdd",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "WPP_SF_qdq",
+    "ea": "0x180021990",
+    "function_file": "functions/180021990_WPP_SF_qdq.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_qdq",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RasRpcDeleteEntry",
+    "ea": "0x180022f80",
+    "function_file": "functions/180022f80_RasRpcDeleteEntry.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall3"
+    ],
+    "matched_strings": [],
+    "name": "RasRpcDeleteEntry",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RasRpcGetSystemDirectory",
+    "ea": "0x180023140",
+    "function_file": "functions/180023140_RasRpcGetSystemDirectory.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall3"
+    ],
+    "matched_strings": [],
+    "name": "RasRpcGetSystemDirectory",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_AllocateAndInitializeSid",
+    "ea": "0x180015d04",
+    "function_file": "functions/180015d04_imp_load_AllocateAndInitializeSid.md",
+    "matched_imports": [
+      "api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_AllocateAndInitializeSid",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 12,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_ConvertSidToStringSidW",
+    "ea": "0x180015ce0",
+    "function_file": "functions/180015ce0_imp_load_ConvertSidToStringSidW.md",
+    "matched_imports": [
+      "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_ConvertSidToStringSidW",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 12,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DuplicateToken",
+    "ea": "0x1800158ea",
+    "function_file": "functions/1800158ea_imp_load_DuplicateToken.md",
+    "matched_imports": [
+      "api-ms-win-security-base-l1-1-0!DuplicateToken"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DuplicateToken",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 12,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_FreeSid",
+    "ea": "0x180015cf2",
+    "function_file": "functions/180015cf2_imp_load_FreeSid.md",
+    "matched_imports": [
+      "api-ms-win-security-base-l1-1-0!FreeSid"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_FreeSid",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 12,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_ImpersonateLoggedOnUser",
+    "ea": "0x1800158fc",
+    "function_file": "functions/1800158fc_imp_load_ImpersonateLoggedOnUser.md",
+    "matched_imports": [
+      "api-ms-win-security-base-l1-1-0!ImpersonateLoggedOnUser"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_ImpersonateLoggedOnUser",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 12,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_CloseServiceHandle",
+    "ea": "0x18001583b",
+    "function_file": "functions/18001583b_imp_load_CloseServiceHandle.md",
+    "matched_imports": [
+      "api-ms-win-service-management-l1-1-0!CloseServiceHandle"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_CloseServiceHandle",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_GetTokenInformation",
+    "ea": "0x180015c55",
+    "function_file": "functions/180015c55_imp_load_GetTokenInformation.md",
+    "matched_imports": [
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_GetTokenInformation",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_NotifyServiceStatusChangeA",
+    "ea": "0x18001590e",
+    "function_file": "functions/18001590e_imp_load_NotifyServiceStatusChangeA.md",
+    "matched_imports": [
+      "api-ms-win-service-winsvc-l1-1-0!NotifyServiceStatusChangeA"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_NotifyServiceStatusChangeA",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_OpenSCManagerA",
+    "ea": "0x1800157b0",
+    "function_file": "functions/1800157b0_imp_load_OpenSCManagerA.md",
+    "matched_imports": [
+      "api-ms-win-service-winsvc-l1-1-0!OpenSCManagerA"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_OpenSCManagerA",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_OpenServiceA",
+    "ea": "0x18001577a",
+    "function_file": "functions/18001577a_imp_load_OpenServiceA.md",
+    "matched_imports": [
+      "api-ms-win-service-winsvc-l1-1-0!OpenServiceA"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_OpenServiceA",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_QueryServiceStatus",
+    "ea": "0x18001584d",
+    "function_file": "functions/18001584d_imp_load_QueryServiceStatus.md",
+    "matched_imports": [
+      "api-ms-win-service-winsvc-l1-1-0!QueryServiceStatus"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_QueryServiceStatus",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_RpcStringBindingComposeW",
+    "ea": "0x180015d3a",
+    "function_file": "functions/180015d3a_imp_load_RpcStringBindingComposeW.md",
+    "matched_imports": [
+      "RPCRT4!RpcStringBindingComposeW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_RpcStringBindingComposeW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_StartServiceA",
+    "ea": "0x18001578c",
+    "function_file": "functions/18001578c_imp_load_StartServiceA.md",
+    "matched_imports": [
+      "api-ms-win-service-winsvc-l1-1-0!StartServiceA"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_StartServiceA",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_WSACleanup",
+    "ea": "0x18001585f",
+    "function_file": "functions/18001585f_imp_load_WSACleanup.md",
+    "matched_imports": [
+      "WS2_32!__imp_WSACleanup"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_WSACleanup",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "RasRpcGetInstalledProtocols",
+    "ea": "0x1800230e0",
+    "function_file": "functions/1800230e0_RasRpcGetInstalledProtocols.md",
+    "matched_imports": [
+      "RPCRT4!NdrClientCall3"
+    ],
+    "matched_strings": [],
+    "name": "RasRpcGetInstalledProtocols",
+    "prototype": "",
+    "rank_score": 120,
+    "size": 24,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 16,
+    "demangled": "memset_0",
+    "ea": "0x1800263ce",
+    "function_file": "functions/1800263ce_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 116,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DevObjCreateDeviceInfoList",
+    "ea": "0x180015b1b",
+    "function_file": "functions/180015b1b_imp_load_DevObjCreateDeviceInfoList.md",
+    "matched_imports": [
+      "DEVOBJ!DevObjCreateDeviceInfoList"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DevObjCreateDeviceInfoList",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "memcpy_0",
+    "ea": "0x1800263b6",
+    "function_file": "functions/1800263b6_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "Free0",
+    "ea": "0x1800246f4",
+    "function_file": "functions/1800246f4_Free0.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "Free0",
+    "prototype": "",
+    "rank_score": 105,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "memmove_0",
+    "ea": "0x1800263c2",
+    "function_file": "functions/1800263c2_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x180021d48",
+    "function_file": "functions/180021d48_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RtlQueryFeatureConfiguration"
+    ],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 242,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "StringCchCatExW",
+    "ea": "0x1800250fc",
+    "function_file": "functions/1800250fc_StringCchCatExW.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\cmdial32.dll"
+    ],
+    "name": "StringCchCatExW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc, STRSAFE_LPWSTR *ppszDestEnd, size_t *pcchRemaining, DWORD dwFlags)",
+    "rank_score": 56,
+    "size": 168,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180026400",
+    "function_file": "functions/180026400_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 33,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 56,
+    "demangled": "ValidatePortHandle",
+    "ea": "0x1800119c4",
+    "function_file": "functions/1800119c4_ValidatePortHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ValidatePortHandle",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "__tailMerge_api_ms_win_security_base_l1_1_0_dll",
+    "ea": "0x18001586b",
+    "function_file": "functions/18001586b_tailMerge_api_ms_win_security_base_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_api_ms_win_security_base_l1_1_0_dll",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 121,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "__tailMerge_api_ms_win_service_winsvc_l1_1_0_dll",
+    "ea": "0x1800156fb",
+    "function_file": "functions/1800156fb_tailMerge_api_ms_win_service_winsvc_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_api_ms_win_service_winsvc_l1_1_0_dll",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 121,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x1800223e4",
+    "function_file": "functions/1800223e4_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 273,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasSetCommSettings",
+    "ea": "0x18001ec70",
+    "function_file": "functions/18001ec70_RasSetCommSettings.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasSetCommSettings",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 380,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x18002233c",
+    "function_file": "functions/18002233c_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 161,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasUpdateDefaultRouteSettings",
+    "ea": "0x180020a40",
+    "function_file": "functions/180020a40_RasUpdateDefaultRouteSettings.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasUpdateDefaultRouteSettings",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 219,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1800262dc",
+    "function_file": "functions/1800262dc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "RasGetDevConfig",
+    "ea": "0x1800186d0",
+    "function_file": "functions/1800186d0_RasGetDevConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasGetDevConfig",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 704,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180014f00",
+    "function_file": "functions/180014f00_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_api_ms_win_security_sddl_l1_1_0_dll",
+    "ea": "0x180015c61",
+    "function_file": "functions/180015c61_tailMerge_api_ms_win_security_sddl_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_api_ms_win_security_sddl_l1_1_0_dll",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 121,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_api_ms_win_service_management_l1_1_0_dll",
+    "ea": "0x1800157bc",
+    "function_file": "functions/1800157bc_tailMerge_api_ms_win_service_management_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_api_ms_win_service_management_l1_1_0_dll",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 121,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "RasSecurityDialogReceive",
+    "ea": "0x18001e0b0",
+    "function_file": "functions/18001e0b0_RasSecurityDialogReceive.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasSecurityDialogReceive",
+    "prototype": "DWORD __stdcall(HPORT hPort, PBYTE pBuffer, PWORD pBufferLength, DWORD Timeout, HANDLE hEvent)",
+    "rank_score": 21,
+    "size": 553,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "RasSecurityDialogSend",
+    "ea": "0x18001e2e0",
+    "function_file": "functions/18001e2e0_RasSecurityDialogSend.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasSecurityDialogSend",
+    "prototype": "DWORD __stdcall(HPORT hPort, PBYTE pBuffer, WORD BufferLength)",
+    "rank_score": 20,
+    "size": 414,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180014f44",
+    "function_file": "functions/180014f44_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "__tailMerge_rpcrt4_dll",
+    "ea": "0x18001592c",
+    "function_file": "functions/18001592c_tailMerge_rpcrt4_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_rpcrt4_dll",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "RasIsTrustedCustomDll",
+    "ea": "0x180019ad0",
+    "function_file": "functions/180019ad0_RasIsTrustedCustomDll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasIsTrustedCustomDll",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, _DWORD *)",
+    "rank_score": 19,
+    "size": 499,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "RasRPCBind",
+    "ea": "0x180010cc0",
+    "function_file": "functions/180010cc0_RasRPCBind.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasRPCBind",
+    "prototype": "__int64 __fastcall(wchar_t *String1, RPC_BINDING_HANDLE *Binding)",
+    "rank_score": 18,
+    "size": 310,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "RasSecurityDialogGetInfo",
+    "ea": "0x18001df30",
+    "function_file": "functions/18001df30_RasSecurityDialogGetInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasSecurityDialogGetInfo",
+    "prototype": "DWORD __stdcall(HPORT hPort, RAS_SECURITY_INFO *pBuffer)",
+    "rank_score": 18,
+    "size": 366,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180027010",
+    "function_file": "functions/180027010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasCompressionGetInfo",
+    "ea": "0x180016b10",
+    "function_file": "functions/180016b10_RasCompressionGetInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasCompressionGetInfo",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 267,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasCompressionSetInfo",
+    "ea": "0x180016c30",
+    "function_file": "functions/180016c30_RasCompressionSetInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasCompressionSetInfo",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 267,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasGetDeviceConfigInfo",
+    "ea": "0x180018a80",
+    "function_file": "functions/180018a80_RasGetDeviceConfigInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasGetDeviceConfigInfo",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 285,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasPortConnectComplete",
+    "ea": "0x18001a400",
+    "function_file": "functions/18001a400_RasPortConnectComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasPortConnectComplete",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 297,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasPortEnumProtocols",
+    "ea": "0x18001ab30",
+    "function_file": "functions/18001ab30_RasPortEnumProtocols.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasPortEnumProtocols",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 262,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasPortGetProtocolCompression",
+    "ea": "0x18001b260",
+    "function_file": "functions/18001b260_RasPortGetProtocolCompression.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasPortGetProtocolCompression",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 280,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasPortSetProtocolCompression",
+    "ea": "0x18001c590",
+    "function_file": "functions/18001c590_RasPortSetProtocolCompression.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasPortSetProtocolCompression",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 280,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasProtocolCallback",
+    "ea": "0x18001c7d0",
+    "function_file": "functions/18001c7d0_RasProtocolCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasProtocolCallback",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 268,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasProtocolChangePassword",
+    "ea": "0x18001c8f0",
+    "function_file": "functions/18001c8f0_RasProtocolChangePassword.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasProtocolChangePassword",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 277,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasProtocolGetInfo",
+    "ea": "0x18001caf0",
+    "function_file": "functions/18001caf0_RasProtocolGetInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasProtocolGetInfo",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 268,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasProtocolRetry",
+    "ea": "0x18001cc10",
+    "function_file": "functions/18001cc10_RasProtocolRetry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasProtocolRetry",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 277,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasProtocolStop",
+    "ea": "0x18001d3f0",
+    "function_file": "functions/18001d3f0_RasProtocolStop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasProtocolStop",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 260,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasSetDevConfig",
+    "ea": "0x18001efc0",
+    "function_file": "functions/18001efc0_RasSetDevConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasSetDevConfig",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 322,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasSetDeviceConfigInfo",
+    "ea": "0x18001f110",
+    "function_file": "functions/18001f110_RasSetDeviceConfigInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasSetDeviceConfigInfo",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 268,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasUpdateAutoTriggerRegKeysEx",
+    "ea": "0x1800208b0",
+    "function_file": "functions/1800208b0_RasUpdateAutoTriggerRegKeysEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasUpdateAutoTriggerRegKeysEx",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 392,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasGetCustomScriptDll",
+    "ea": "0x1800185a0",
+    "function_file": "functions/1800185a0_RasGetCustomScriptDll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasGetCustomScriptDll",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 16,
+    "size": 287,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasGetProtocolInfo",
+    "ea": "0x1800195a0",
+    "function_file": "functions/1800195a0_RasGetProtocolInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasGetProtocolInfo",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 290,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasUpdateAutoTriggerRegKeys",
+    "ea": "0x180020750",
+    "function_file": "functions/180020750_RasUpdateAutoTriggerRegKeys.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasUpdateAutoTriggerRegKeys",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 340,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "__tailMerge_devobj_dll",
+    "ea": "0x180015a66",
+    "function_file": "functions/180015a66_tailMerge_devobj_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_devobj_dll",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x18002208c",
+    "function_file": "functions/18002208c_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 380,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x180022210",
+    "function_file": "functions/180022210_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 292,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasDeleteIkev2PskPolicy",
+    "ea": "0x180016f70",
+    "function_file": "functions/180016f70_RasDeleteIkev2PskPolicy.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasDeleteIkev2PskPolicy",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 196,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasGetDevConfigEx",
+    "ea": "0x1800189a0",
+    "function_file": "functions/1800189a0_RasGetDevConfigEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasGetDevConfigEx",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 217,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasProtocolEnum",
+    "ea": "0x18001ca10",
+    "function_file": "functions/18001ca10_RasProtocolEnum.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasProtocolEnum",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 204,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasProtocolStarted",
+    "ea": "0x18001d320",
+    "function_file": "functions/18001d320_RasProtocolStarted.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasProtocolStarted",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 193,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasSendProtocolResultToRasman",
+    "ea": "0x18001e640",
+    "function_file": "functions/18001e640_RasSendProtocolResultToRasman.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasSendProtocolResultToRasman",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 212,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasStartProtocolRenegotiation",
+    "ea": "0x1800201d0",
+    "function_file": "functions/1800201d0_RasStartProtocolRenegotiation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasStartProtocolRenegotiation",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 196,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasUpdateQoSPolicies",
+    "ea": "0x180020b30",
+    "function_file": "functions/180020b30_RasUpdateQoSPolicies.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasUpdateQoSPolicies",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 193,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__tailMerge_rtutils_dll",
+    "ea": "0x180015b27",
+    "function_file": "functions/180015b27_tailMerge_rtutils_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_rtutils_dll",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__tailMerge_ws2_32_dll",
+    "ea": "0x180015670",
+    "function_file": "functions/180015670_tailMerge_ws2_32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_ws2_32_dll",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__tailMerge_dsrole_dll",
+    "ea": "0x180015bb2",
+    "function_file": "functions/180015bb2_tailMerge_dsrole_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_dsrole_dll",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180026440",
+    "function_file": "functions/180026440_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetComputerSuiteMask",
+    "ea": "0x180023c30",
+    "function_file": "functions/180023c30_GetComputerSuiteMask.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetComputerSuiteMask",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_api_ms_win_eventing_obsolete_l1_1_0_dll",
+    "ea": "0x1800159db",
+    "function_file": "functions/1800159db_tailMerge_api_ms_win_eventing_obsolete_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_api_ms_win_eventing_obsolete_l1_1_0_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x180021ee0",
+    "function_file": "functions/180021ee0_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 201,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x180021fb0",
+    "function_file": "functions/180021fb0_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 213,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x1800224fc",
+    "function_file": "functions/1800224fc_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 76,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "RasGetInfo",
+    "ea": "0x180011860",
+    "function_file": "functions/180011860_RasGetInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasGetInfo",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 349,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "ValidateConnectionHandle",
+    "ea": "0x180011790",
+    "function_file": "functions/180011790_ValidateConnectionHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ValidateConnectionHandle",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "RasRpcUnloadDll",
+    "ea": "0x180022ea0",
+    "function_file": "functions/180022ea0_RasRpcUnloadDll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasRpcUnloadDll",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "StringCchCopyExW",
+    "ea": "0x1800251ac",
+    "function_file": "functions/1800251ac_StringCchCopyExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyExW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc, STRSAFE_LPWSTR *ppszDestEnd, size_t *pcchRemaining, DWORD dwFlags)",
+    "rank_score": 9,
+    "size": 278,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "RasReferenceRasmanInternal",
+    "ea": "0x180002974",
+    "function_file": "functions/180002974_RasReferenceRasmanInternal.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasReferenceRasmanInternal",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateCallbackNode",
+    "ea": "0x1800260b8",
+    "function_file": "functions/1800260b8_CreateCallbackNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateCallbackNode",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc, STRSAFE_LPCWSTR, STRSAFE_LPCWSTR)",
+    "rank_score": 6,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DwRemoveEapUserInfo",
+    "ea": "0x180024140",
+    "function_file": "functions/180024140_DwRemoveEapUserInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DwRemoveEapUserInfo",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 197,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasRpcRemoteRasDeleteEntry",
+    "ea": "0x180022d10",
+    "function_file": "functions/180022d10_RasRpcRemoteRasDeleteEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasRpcRemoteRasDeleteEntry",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 273,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasGetNumPortOpen",
+    "ea": "0x1800193f0",
+    "function_file": "functions/1800193f0_RasGetNumPortOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasGetNumPortOpen",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasLinkGetStatistics",
+    "ea": "0x180019cd0",
+    "function_file": "functions/180019cd0_RasLinkGetStatistics.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasLinkGetStatistics",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasRpcRemoteGetSystemDirectory",
+    "ea": "0x180022ba0",
+    "function_file": "functions/180022ba0_RasRpcRemoteGetSystemDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasRpcRemoteGetSystemDirectory",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 239,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RasSetCachedCredentials",
+    "ea": "0x18001ea40",
+    "function_file": "functions/18001ea40_RasSetCachedCredentials.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasSetCachedCredentials",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 204,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RemoteGetSystemDirectory",
+    "ea": "0x180023968",
+    "function_file": "functions/180023968_RemoteGetSystemDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RemoteGetSystemDirectory",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 110,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CopyParams",
+    "ea": "0x1800227a4",
+    "function_file": "functions/1800227a4_CopyParams.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CopyParams",
+    "prototype": "__int64 __fastcall(void *Src, void *)",
+    "rank_score": 4,
+    "size": 215,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "DtlAddNodeLast",
+    "ea": "0x180025fe4",
+    "function_file": "functions/180025fe4_DtlAddNodeLast.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DtlAddNodeLast",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RasRemoveNotificationEx",
+    "ea": "0x180002b40",
+    "function_file": "functions/180002b40_RasRemoveNotificationEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasRemoveNotificationEx",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCchCopyA",
+    "ea": "0x180014a40",
+    "function_file": "functions/180014a40_StringCchCopyA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyA",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cchDest, STRSAFE_LPCSTR pszSrc)",
+    "rank_score": 4,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCchCopyW",
+    "ea": "0x1800139e0",
+    "function_file": "functions/1800139e0_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 4,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateLocationNode",
+    "ea": "0x18002615c",
+    "function_file": "functions/18002615c_CreateLocationNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateLocationNode",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RemoteRasDeleteEntry",
+    "ea": "0x180023a7c",
+    "function_file": "functions/180023a7c_RemoteRasDeleteEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RemoteRasDeleteEntry",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCopyWorkerW",
+    "ea": "0x180014c0c",
+    "function_file": "functions/180014c0c_StringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 3,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "StringCbCopyA",
+    "ea": "0x180023280",
+    "function_file": "functions/180023280_StringCbCopyA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCbCopyA",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cbDest, STRSAFE_LPCSTR pszSrc)",
+    "rank_score": 2,
+    "size": 22,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "StringCopyWorkerA",
+    "ea": "0x1800141e0",
+    "function_file": "functions/1800141e0_StringCopyWorkerA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerA",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZCH pszSrc, size_t cchToCopy)",
+    "rank_score": 2,
+    "size": 73,
+    "tags": []
+  }
+]

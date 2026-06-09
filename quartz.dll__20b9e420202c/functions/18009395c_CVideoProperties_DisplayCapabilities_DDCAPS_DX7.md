@@ -1,0 +1,236 @@
+# CVideoProperties::DisplayCapabilities(_DDCAPS_DX7 *)
+
+- ea: `0x18009395c`
+- end: `0x180094c39`
+- name: `?DisplayCapabilities@CVideoProperties@@AEAAXPEAU_DDCAPS_DX7@@@Z`
+- size: `4829`
+- prototype: `void __fastcall(CVideoProperties *__hidden this, struct _DDCAPS_DX7 *)`
+- caller_count: `1`
+- callee_count: `6`
+- tags: ``
+
+## callers
+
+- `0x180095e98`
+
+## callees
+
+- `0x180004924`
+- `0x1800388a0`
+- `0x180093814`
+- `0x18009395c`
+- `0x180094c40`
+- `0x180143f6c`
+
+## import_xrefs
+
+- `USER32!SendMessageW` at `0x1800939af`
+- `USER32!SendMessageW` at `0x1800939d2`
+- `USER32!SendMessageW` at `0x1800939f5`
+- `USER32!SendMessageW` at `0x180093a18`
+- `USER32!SendMessageW` at `0x180093a3d`
+- `USER32!SendMessageW` at `0x180093a60`
+- `USER32!SendMessageW` at `0x180093a86`
+- `USER32!SendMessageW` at `0x180093aa9`
+- `USER32!SendMessageW` at `0x180093acf`
+- `USER32!SendMessageW` at `0x180093af2`
+- `USER32!SendMessageW` at `0x180093b19`
+- `USER32!SendMessageW` at `0x180093b40`
+- `USER32!SendMessageW` at `0x180093b66`
+- `USER32!SendMessageW` at `0x180093b8c`
+- `USER32!SendMessageW` at `0x180093bb2`
+- `USER32!SendMessageW` at `0x180093bd8`
+- `USER32!SendMessageW` at `0x180093bfe`
+- `USER32!SendMessageW` at `0x180093c24`
+- `USER32!SendMessageW` at `0x180093c4a`
+- `USER32!SendMessageW` at `0x180093c70`
+- `USER32!SendMessageW` at `0x180093c96`
+- `USER32!SendMessageW` at `0x180093cbc`
+- `USER32!SendMessageW` at `0x180093ce2`
+- `USER32!SendMessageW` at `0x180093d08`
+- `USER32!SendMessageW` at `0x180093d2e`
+- `USER32!SendMessageW` at `0x180093d54`
+- `USER32!SendMessageW` at `0x180093d7a`
+- `USER32!SendMessageW` at `0x180093da0`
+- `USER32!SendMessageW` at `0x180093dc3`
+- `USER32!SendMessageW` at `0x180093de6`
+- `USER32!SendMessageW` at `0x180093e09`
+- `USER32!SendMessageW` at `0x180093e2c`
+- `USER32!SendMessageW` at `0x180093e4f`
+- `USER32!SendMessageW` at `0x180093e71`
+- `USER32!SendMessageW` at `0x180093e94`
+- `USER32!SendMessageW` at `0x180093eb7`
+- `USER32!SendMessageW` at `0x180093eda`
+- `USER32!SendMessageW` at `0x180093efc`
+- `USER32!SendMessageW` at `0x180093f1e`
+- `USER32!SendMessageW` at `0x180093f44`
+- `USER32!SendMessageW` at `0x180093f6a`
+- `USER32!SendMessageW` at `0x180093f90`
+- `USER32!SendMessageW` at `0x180093fb6`
+- `USER32!SendMessageW` at `0x180093fdc`
+- `USER32!SendMessageW` at `0x180094002`
+- `USER32!SendMessageW` at `0x180094028`
+- `USER32!SendMessageW` at `0x18009404e`
+- `USER32!SendMessageW` at `0x180094074`
+- `USER32!SendMessageW` at `0x180094097`
+- `USER32!SendMessageW` at `0x1800940b9`
+- `USER32!SendMessageW` at `0x1800940dc`
+- `USER32!SendMessageW` at `0x1800940ff`
+- `USER32!SendMessageW` at `0x180094121`
+- `USER32!SendMessageW` at `0x180094143`
+- `USER32!SendMessageW` at `0x180094169`
+- `USER32!SendMessageW` at `0x18009418f`
+- `USER32!SendMessageW` at `0x1800941b5`
+- `USER32!SendMessageW` at `0x1800941db`
+- `USER32!SendMessageW` at `0x180094201`
+- `USER32!SendMessageW` at `0x180094227`
+- `USER32!SendMessageW` at `0x18009424d`
+- `USER32!SendMessageW` at `0x180094273`
+- `USER32!SendMessageW` at `0x180094299`
+- `USER32!SendMessageW` at `0x1800942bf`
+- `USER32!SendMessageW` at `0x1800942e5`
+- `USER32!SendMessageW` at `0x18009430b`
+- `USER32!SendMessageW` at `0x180094331`
+- `USER32!SendMessageW` at `0x180094357`
+- `USER32!SendMessageW` at `0x18009437d`
+- `USER32!SendMessageW` at `0x1800943a3`
+- `USER32!SendMessageW` at `0x1800943c9`
+- `USER32!SendMessageW` at `0x1800943ef`
+- `USER32!SendMessageW` at `0x180094415`
+- `USER32!SendMessageW` at `0x18009443b`
+- `USER32!SendMessageW` at `0x18009445e`
+- `USER32!SendMessageW` at `0x180094481`
+- `USER32!SendMessageW` at `0x1800944a4`
+- `USER32!SendMessageW` at `0x1800944c7`
+- `USER32!SendMessageW` at `0x1800944e9`
+- `USER32!SendMessageW` at `0x18009450c`
+- `USER32!SendMessageW` at `0x18009452f`
+- `USER32!SendMessageW` at `0x180094552`
+- `USER32!SendMessageW` at `0x180094574`
+- `USER32!SendMessageW` at `0x180094596`
+- `USER32!SendMessageW` at `0x1800945b9`
+- `USER32!SendMessageW` at `0x1800945dc`
+- `USER32!SendMessageW` at `0x1800945ff`
+- `USER32!SendMessageW` at `0x180094621`
+- `USER32!SendMessageW` at `0x180094644`
+- `USER32!SendMessageW` at `0x180094666`
+- `USER32!SendMessageW` at `0x180094688`
+- `USER32!SendMessageW` at `0x1800946a4`
+- `USER32!SendMessageW` at `0x1800946cc`
+- `USER32!SendMessageW` at `0x1800946f4`
+- `USER32!SendMessageW` at `0x18009471c`
+- `USER32!SendMessageW` at `0x180094744`
+- `USER32!SendMessageW` at `0x18009476c`
+- `USER32!SendMessageW` at `0x180094794`
+- `USER32!SendMessageW` at `0x1800947ef`
+- `USER32!SendMessageW` at `0x180094833`
+- `USER32!SendMessageW` at `0x180094877`
+- `USER32!SendMessageW` at `0x1800948bb`
+- `USER32!SendMessageW` at `0x1800948ff`
+- `USER32!SendMessageW` at `0x180094943`
+- `USER32!SendMessageW` at `0x180094987`
+- `USER32!SendMessageW` at `0x1800949cb`
+- `USER32!SendMessageW` at `0x180094a0f`
+- `USER32!SendMessageW` at `0x180094a53`
+- `USER32!SendMessageW` at `0x180094a9a`
+- `USER32!SendMessageW` at `0x180094ae1`
+- `USER32!SendMessageW` at `0x180094b28`
+- `USER32!SendMessageW` at `0x180094b6f`
+- `USER32!SendMessageW` at `0x180094bb6`
+- `USER32!SendMessageW` at `0x180094bfd`
+- `USER32!SendMessageW` at `0x1800939af`
+- `USER32!SendMessageW` at `0x1800939d2`
+- `USER32!SendMessageW` at `0x1800939f5`
+- `USER32!SendMessageW` at `0x180093a18`
+- `USER32!SendMessageW` at `0x180093a3d`
+- `USER32!SendMessageW` at `0x180093a60`
+- `USER32!SendMessageW` at `0x180093a86`
+- `USER32!SendMessageW` at `0x180093aa9`
+- `USER32!SendMessageW` at `0x180093acf`
+- `USER32!SendMessageW` at `0x180093af2`
+- `USER32!SendMessageW` at `0x180093b19`
+- `USER32!SendMessageW` at `0x180093b40`
+- `USER32!SendMessageW` at `0x180093b66`
+- `USER32!SendMessageW` at `0x180093b8c`
+- `USER32!SendMessageW` at `0x180093bb2`
+- `USER32!SendMessageW` at `0x180093bd8`
+- `USER32!SendMessageW` at `0x180093bfe`
+- `USER32!SendMessageW` at `0x180093c24`
+- `USER32!SendMessageW` at `0x180093c4a`
+- `USER32!SendMessageW` at `0x180093c70`
+- `USER32!SendMessageW` at `0x180093c96`
+- `USER32!SendMessageW` at `0x180093cbc`
+- `USER32!SendMessageW` at `0x180093ce2`
+- `USER32!SendMessageW` at `0x180093d08`
+- `USER32!SendMessageW` at `0x180093d2e`
+- `USER32!SendMessageW` at `0x180093d54`
+- `USER32!SendMessageW` at `0x180093d7a`
+- `USER32!SendMessageW` at `0x180093da0`
+- `USER32!SendMessageW` at `0x180093dc3`
+- `USER32!SendMessageW` at `0x180093de6`
+- `USER32!SendMessageW` at `0x180093e09`
+- `USER32!SendMessageW` at `0x180093e2c`
+- `USER32!SendMessageW` at `0x180093e4f`
+- `USER32!SendMessageW` at `0x180093e71`
+- `USER32!SendMessageW` at `0x180093e94`
+- `USER32!SendMessageW` at `0x180093eb7`
+- `USER32!SendMessageW` at `0x180093eda`
+- `USER32!SendMessageW` at `0x180093efc`
+- `USER32!SendMessageW` at `0x180093f1e`
+- `USER32!SendMessageW` at `0x180093f44`
+- `USER32!SendMessageW` at `0x180093f6a`
+- `USER32!SendMessageW` at `0x180093f90`
+- `USER32!SendMessageW` at `0x180093fb6`
+- `USER32!SendMessageW` at `0x180093fdc`
+- `USER32!SendMessageW` at `0x180094002`
+- `USER32!SendMessageW` at `0x180094028`
+- `USER32!SendMessageW` at `0x18009404e`
+- `USER32!SendMessageW` at `0x180094074`
+- `USER32!SendMessageW` at `0x180094097`
+- `USER32!SendMessageW` at `0x1800940b9`
+- `USER32!SendMessageW` at `0x1800940dc`
+- `USER32!SendMessageW` at `0x1800940ff`
+- `USER32!SendMessageW` at `0x180094121`
+- `USER32!SendMessageW` at `0x180094143`
+- `USER32!SendMessageW` at `0x180094169`
+- `USER32!SendMessageW` at `0x18009418f`
+- `USER32!SendMessageW` at `0x1800941b5`
+- `USER32!SendMessageW` at `0x1800941db`
+- `USER32!SendMessageW` at `0x180094201`
+- `USER32!SendMessageW` at `0x180094227`
+- `USER32!SendMessageW` at `0x18009424d`
+- `USER32!SendMessageW` at `0x180094273`
+- `USER32!SendMessageW` at `0x180094299`
+- `USER32!SendMessageW` at `0x1800942bf`
+- `USER32!SendMessageW` at `0x1800942e5`
+- `USER32!SendMessageW` at `0x18009430b`
+- `USER32!SendMessageW` at `0x180094331`
+- `USER32!SendMessageW` at `0x180094357`
+- `USER32!SendMessageW` at `0x18009437d`
+- `USER32!SendMessageW` at `0x1800943a3`
+- `USER32!SendMessageW` at `0x1800943c9`
+- `USER32!SendMessageW` at `0x1800943ef`
+- `USER32!SendMessageW` at `0x180094415`
+- `USER32!SendMessageW` at `0x18009443b`
+- `USER32!SendMessageW` at `0x18009445e`
+- `USER32!SendMessageW` at `0x180094481`
+- `USER32!SendMessageW` at `0x1800944a4`
+- `USER32!SendMessageW` at `0x1800944c7`
+- `USER32!SendMessageW` at `0x1800944e9`
+- `USER32!SendMessageW` at `0x18009450c`
+- `USER32!SendMessageW` at `0x18009452f`
+- `USER32!SendMessageW` at `0x180094552`
+- `USER32!SendMessageW` at `0x180094574`
+- `USER32!SendMessageW` at `0x180094596`
+- `USER32!SendMessageW` at `0x1800945b9`
+- `USER32!SendMessageW` at `0x1800945dc`
+
+## string_xrefs
+
+- `0x180093c3d`: `DDCAPS_READSCANLINE`
+
+## pseudocode
+
+```c
+
+```

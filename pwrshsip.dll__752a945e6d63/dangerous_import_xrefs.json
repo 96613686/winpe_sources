@@ -1,0 +1,146 @@
+[
+  {
+    "import": "KERNEL32!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800048d2",
+        "from_func": "0x180004834",
+        "from_func_name": "?Open@SipFile@@QEAAKPEBUSIP_SUBJECTINFO_@@_N@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800048d2",
+        "from_func": "0x180004834",
+        "from_func_name": "?Open@SipFile@@QEAAKPEBUSIP_SUBJECTINFO_@@_N@Z",
+        "import": "KERNEL32!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000169b",
+        "from_func": "0x180001654",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000169b",
+        "from_func": "0x180001654",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!ReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180004f9f",
+        "from_func": "0x180004ec0",
+        "from_func_name": "?Read@SipFile@@QEAAK_KKPEAXPEAK@Z",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x180004f9f",
+        "from_func": "0x180004ec0",
+        "from_func_name": "?Read@SipFile@@QEAAK_KKPEAXPEAK@Z",
+        "import": "KERNEL32!ReadFile"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!SetFilePointerEx",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x18000257c",
+        "from_func": "0x180002540",
+        "from_func_name": "?InitReadLoop@PsScriptFile@@UEAAKXZ",
+        "import": "KERNEL32!SetFilePointerEx"
+      },
+      {
+        "from_ea": "0x180004f58",
+        "from_func": "0x180004ec0",
+        "from_func_name": "?Read@SipFile@@QEAAK_KKPEAXPEAK@Z",
+        "import": "KERNEL32!SetFilePointerEx"
+      },
+      {
+        "from_ea": "0x18000524c",
+        "from_func": "0x180005220",
+        "from_func_name": "?Write@SipFile@@QEAAK_KKPEBX@Z",
+        "import": "KERNEL32!SetFilePointerEx"
+      },
+      {
+        "from_ea": "0x18000257c",
+        "from_func": "0x180002540",
+        "from_func_name": "?InitReadLoop@PsScriptFile@@UEAAKXZ",
+        "import": "KERNEL32!SetFilePointerEx"
+      },
+      {
+        "from_ea": "0x180004f58",
+        "from_func": "0x180004ec0",
+        "from_func_name": "?Read@SipFile@@QEAAK_KKPEAXPEAK@Z",
+        "import": "KERNEL32!SetFilePointerEx"
+      },
+      {
+        "from_ea": "0x18000524c",
+        "from_func": "0x180005220",
+        "from_func_name": "?Write@SipFile@@QEAAK_KKPEBX@Z",
+        "import": "KERNEL32!SetFilePointerEx"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!WriteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000527e",
+        "from_func": "0x180005220",
+        "from_func_name": "?Write@SipFile@@QEAAK_KKPEBX@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x18000527e",
+        "from_func": "0x180005220",
+        "from_func_name": "?Write@SipFile@@QEAAK_KKPEBX@Z",
+        "import": "KERNEL32!WriteFile"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001750",
+        "from_func": "0x180001750",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  }
+]

@@ -1,0 +1,575 @@
+[
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140006713",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140006b3d",
+        "from_func": "0x1400069e8",
+        "from_func_name": "??0Host@@QEAA@XZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140006713",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140006b3d",
+        "from_func": "0x1400069e8",
+        "from_func_name": "??0Host@@QEAA@XZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!AddVectoredExceptionHandler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140006805",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "KERNEL32!AddVectoredExceptionHandler"
+      },
+      {
+        "from_ea": "0x140006805",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "KERNEL32!AddVectoredExceptionHandler"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140001fbf",
+        "from_func": "0x140001f70",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140003275",
+        "from_func": "0x14000323c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140001fbf",
+        "from_func": "0x140001f70",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140003275",
+        "from_func": "0x14000323c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!InitOnceComplete",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x140004580",
+        "from_func": "0x1400044dc",
+        "from_func_name": "?Instance@SandboxLogging@@KAPEAV1@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x140005ed7",
+        "from_func": "0x140005e14",
+        "from_func_name": "?Instance@SandboxTelemetry@@KAPEAV1@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x1400073f7",
+        "from_func": "0x140007338",
+        "from_func_name": "?Instance@PerfLibTelemetry@@KAPEAV1@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x1400074b4",
+        "from_func": "0x140007410",
+        "from_func_name": "?Provider@PerfLibLogging@@SAPEBU_tlgProvider_t@@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x140004580",
+        "from_func": "0x1400044dc",
+        "from_func_name": "?Instance@SandboxLogging@@KAPEAV1@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x140005ed7",
+        "from_func": "0x140005e14",
+        "from_func_name": "?Instance@SandboxTelemetry@@KAPEAV1@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x1400073f7",
+        "from_func": "0x140007338",
+        "from_func_name": "?Instance@PerfLibTelemetry@@KAPEAV1@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x1400074b4",
+        "from_func": "0x140007410",
+        "from_func_name": "?Provider@PerfLibLogging@@SAPEBU_tlgProvider_t@@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140006010",
+        "from_func": "0x140005ffc",
+        "from_func_name": "?LoadSandboxDll@@YAJPEAU_pfnWinSpoolDrv@@PEBG@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1400068b7",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x140006010",
+        "from_func": "0x140005ffc",
+        "from_func_name": "?LoadSandboxDll@@YAJPEAU_pfnWinSpoolDrv@@PEBG@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1400068b7",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "KERNEL32!LoadLibraryW"
+      }
+    ]
+  },
+  {
+    "import": "USER32!DispatchMessageW",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400070af",
+        "from_func": "0x140007050",
+        "from_func_name": "?RunUsingConfiguration@Host@@QEAAJH@Z",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x1400070af",
+        "from_func": "0x140007050",
+        "from_func_name": "?RunUsingConfiguration@Host@@QEAAJH@Z",
+        "import": "USER32!DispatchMessageW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140006c62",
+        "from_func": "0x140006c20",
+        "from_func_name": "?GetGITPtr@CAtlModule@ATL@@UEAAJPEAPEAUIGlobalInterfaceTable@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x140006fd6",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x140006c62",
+        "from_func": "0x140006c20",
+        "from_func_name": "?GetGITPtr@CAtlModule@ATL@@UEAAJPEAPEAUIGlobalInterfaceTable@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x140006fd6",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoFreeUnusedLibraries",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140006d08",
+        "from_func": "0x140006cd0",
+        "from_func_name": "?MonitorProc@Host@@SAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoFreeUnusedLibraries"
+      },
+      {
+        "from_ea": "0x140006d08",
+        "from_func": "0x140006cd0",
+        "from_func_name": "?MonitorProc@Host@@SAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoFreeUnusedLibraries"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x140006a94",
+        "from_func": "0x1400069e8",
+        "from_func_name": "??0Host@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      },
+      {
+        "from_ea": "0x140006a94",
+        "from_func": "0x1400069e8",
+        "from_func_name": "??0Host@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      },
+      {
+        "from_ea": "0x14000b1a8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoRegisterClassObject",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140006e58",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoRegisterClassObject"
+      },
+      {
+        "from_ea": "0x140006e58",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoRegisterClassObject"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoResumeClassObjects",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140006f11",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoResumeClassObjects"
+      },
+      {
+        "from_ea": "0x140006fa3",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoResumeClassObjects"
+      },
+      {
+        "from_ea": "0x140006f11",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoResumeClassObjects"
+      },
+      {
+        "from_ea": "0x140006fa3",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoResumeClassObjects"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoRevokeClassObject",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140006f7c",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoRevokeClassObject"
+      },
+      {
+        "from_ea": "0x1400070f5",
+        "from_func": "0x140007050",
+        "from_func_name": "?RunUsingConfiguration@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoRevokeClassObject"
+      },
+      {
+        "from_ea": "0x140006f7c",
+        "from_func": "0x140006dcc",
+        "from_func_name": "?PreMessageLoop@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoRevokeClassObject"
+      },
+      {
+        "from_ea": "0x1400070f5",
+        "from_func": "0x140007050",
+        "from_func_name": "?RunUsingConfiguration@Host@@QEAAJH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoRevokeClassObject"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoSuspendClassObjects",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140006d42",
+        "from_func": "0x140006cd0",
+        "from_func_name": "?MonitorProc@Host@@SAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoSuspendClassObjects"
+      },
+      {
+        "from_ea": "0x140006d42",
+        "from_func": "0x140006cd0",
+        "from_func_name": "?MonitorProc@Host@@SAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoSuspendClassObjects"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoUninitialize",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140005a74",
+        "from_func": "0x1400059bc",
+        "from_func_name": "??1?$CAtlExeModuleT@VHost@@@ATL@@UEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x140005a74",
+        "from_func": "0x1400059bc",
+        "from_func_name": "??1?$CAtlExeModuleT@VHost@@@ATL@@UEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002556",
+        "from_func": "0x140002556",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___p__commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002562",
+        "from_func": "0x140002562",
+        "from_func_name": "__p__commode",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___p__commode"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000256e",
+        "from_func": "0x14000256e",
+        "from_func_name": "_o___stdio_common_vswprintf_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+      },
+      {
+        "from_ea": "0x14000b180",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configthreadlocale",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002592",
+        "from_func": "0x140002592",
+        "from_func_name": "_configthreadlocale",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configthreadlocale"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configure_wide_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000259e",
+        "from_func": "0x14000259e",
+        "from_func_name": "_o__configure_wide_argv_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configure_wide_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__get_wide_winmain_command_line",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400025c2",
+        "from_func": "0x1400025c2",
+        "from_func_name": "_o__get_wide_winmain_command_line_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__get_wide_winmain_command_line"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventRegister",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1400066c1",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "ntdll!EtwEventRegister"
+      },
+      {
+        "from_ea": "0x1400066c1",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "ntdll!EtwEventRegister"
+      },
+      {
+        "from_ea": "0x14000b1bc",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!EtwEventRegister"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventUnregister",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140006972",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "ntdll!EtwEventUnregister"
+      },
+      {
+        "from_ea": "0x140006972",
+        "from_func": "0x140006694",
+        "from_func_name": "wWinMain",
+        "import": "ntdll!EtwEventUnregister"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlReportException",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140007639",
+        "from_func": "0x1400075e0",
+        "from_func_name": "SpoolerVectoredHandler",
+        "import": "ntdll!RtlReportException"
+      },
+      {
+        "from_ea": "0x140007639",
+        "from_func": "0x1400075e0",
+        "from_func_name": "SpoolerVectoredHandler",
+        "import": "ntdll!RtlReportException"
+      }
+    ]
+  }
+]

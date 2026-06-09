@@ -1,0 +1,171 @@
+# wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState
+
+- ea: `0x180023430`
+- end: `0x180023541`
+- name: `wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState`
+- size: `273`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `3`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x180023404`
+- `0x1800236f8`
+
+## callees
+
+- `0x180023430`
+- `0x18002359c`
+- `0x18002f010`
+
+## pseudocode
+
+```c
+__int64 __fastcall wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState(
+        volatile signed __int32 *a1,
+        __int64 a2,
+        __int64 a3)
+{
+  unsigned int v3; // r14d
+  signed __int32 v5; // ebx
+  __int16 CurrentFeatureEnabledState; // di
+  int v8; // ebp
+  unsigned int v9; // esi
+  signed __int32 v10; // eax
+  int v12; // [rsp+50h] [rbp+8h] BYREF
+  __int64 v13; // [rsp+58h] [rbp+10h]
+
+  v3 = 0;
+  v12 = 0;
+  v13 = a2;
+  v5 = a2;
+  if ( g_wil_details_ensureSubscribedToFeatureConfigurationChanges )
+    v3 = g_wil_details_ensureSubscribedToFeatureConfigurationChanges();
+  CurrentFeatureEnabledState = wil_details_GetCurrentFeatureEnabledState(a3, &v12);
+  if ( *(_BYTE *)(a3 + 28) )
+    v8 = v12;
+  else
+    v8 = v3 != 0 ? v12 : 0;
+  while ( 1 )
+  {
+    LODWORD(v13) = v5;
+    v9 = v5;
+    if ( v8 )
+    {
+      LODWORD(v13) = v5;
+      if ( (v5 & 2) == 0 )
+      {
+        v9 = CurrentFeatureEnabledState & 0x9C1 | v5 & 0xFFFFF63E | 2;
+        LODWORD(v13) = v9;
+      }
+    }
+    if ( (v5 & 4) == 0 )
+    {
+      v9 = v9 & 0xFFFFFBFF | CurrentFeatureEnabledState & 0x400 | 4;
+      LODWORD(v13) = v9;
+    }
+    v10 = _InterlockedCompareExchange(a1, v9, v5);
+    if ( v5 == v10 )
+      break;
+    v5 = v10;
+  }
+  if ( (v5 & 4) == 0 && g_wil_details_subscribeFeatureStateCacheToConfigurationChanges )
+    g_wil_details_subscribeFeatureStateCacheToConfigurationChanges(a1, *(unsigned __int8 *)(a3 + 28), v3);
+  if ( !v8 )
+    LODWORD(v13) = CurrentFeatureEnabledState & 0x9C1 | v9 & 0xFFFFF63E;
+  return v13;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180023430  mov     [rsp+arg_10], rbx
+0x180023435  mov     [rsp+arg_18], rbp
+0x18002343a  push    rsi
+0x18002343b  push    rdi
+0x18002343c  push    r12
+0x18002343e  push    r14
+0x180023440  push    r15
+0x180023442  sub     rsp, 20h
+0x180023446  mov     rax, cs:g_wil_details_ensureSubscribedToFeatureConfigurationChanges
+0x18002344d  xor     r14d, r14d
+0x180023450  mov     [rsp+48h+arg_0], r14d
+0x180023455  mov     r15, r8
+0x180023458  mov     [rsp+48h+arg_8], rdx
+0x18002345d  mov     rbx, rdx
+0x180023460  mov     r12, rcx
+0x180023463  test    rax, rax
+0x180023466  jz      short loc_180023470
+0x180023468  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18002346d  mov     r14d, eax
+0x180023470  lea     rdx, [rsp+48h+arg_0]
+0x180023475  mov     rcx, r15
+0x180023478  call    wil_details_GetCurrentFeatureEnabledState
+0x18002347d  cmp     byte ptr [r15+1Ch], 0
+0x180023482  mov     rdi, rax
+0x180023485  jnz     short loc_180023494
+0x180023487  mov     ecx, r14d
+0x18002348a  neg     ecx
+0x18002348c  sbb     ebp, ebp
+0x18002348e  and     ebp, [rsp+48h+arg_0]
+0x180023492  jmp     short loc_180023498
+0x180023494  mov     ebp, [rsp+48h+arg_0]
+0x180023498  mov     dword ptr [rsp+48h+arg_8], ebx
+0x18002349c  mov     esi, ebx
+0x18002349e  test    ebp, ebp
+0x1800234a0  jz      short loc_1800234C1
+0x1800234a2  mov     dword ptr [rsp+48h+arg_8], ebx
+0x1800234a6  test    bl, 2
+0x1800234a9  jnz     short loc_1800234C1
+0x1800234ab  and     esi, 0FFFFF63Eh
+0x1800234b1  mov     eax, edi
+0x1800234b3  and     eax, 9C1h
+0x1800234b8  or      esi, eax
+0x1800234ba  or      esi, 2
+0x1800234bd  mov     dword ptr [rsp+48h+arg_8], esi
+0x1800234c1  mov     edx, ebx
+0x1800234c3  and     edx, 4
+0x1800234c6  jnz     short loc_1800234E1
+0x1800234c8  mov     eax, esi
+0x1800234ca  mov     ecx, edi
+0x1800234cc  and     ecx, 400h
+0x1800234d2  btr     eax, 0Ah
+0x1800234d6  mov     esi, ecx
+0x1800234d8  or      esi, eax
+0x1800234da  or      esi, 4
+0x1800234dd  mov     dword ptr [rsp+48h+arg_8], esi
+0x1800234e1  mov     eax, ebx
+0x1800234e3  lock cmpxchg [r12], esi
+0x1800234e9  jz      short loc_1800234EF
+0x1800234eb  mov     ebx, eax
+0x1800234ed  jmp     short loc_180023498
+0x1800234ef  test    edx, edx
+0x1800234f1  jnz     short loc_18002350F
+0x1800234f3  mov     rax, cs:g_wil_details_subscribeFeatureStateCacheToConfigurationChanges
+0x1800234fa  test    rax, rax
+0x1800234fd  jz      short loc_18002350F
+0x1800234ff  movzx   edx, byte ptr [r15+1Ch]
+0x180023504  mov     r8d, r14d
+0x180023507  mov     rcx, r12
+0x18002350a  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18002350f  test    ebp, ebp
+0x180023511  jnz     short loc_180023525
+0x180023513  and     esi, 0FFFFF63Eh
+0x180023519  and     edi, 9C1h
+0x18002351f  or      esi, edi
+0x180023521  mov     dword ptr [rsp+48h+arg_8], esi
+0x180023525  mov     rax, [rsp+48h+arg_8]
+0x18002352a  mov     rbx, [rsp+48h+arg_10]
+0x18002352f  mov     rbp, [rsp+48h+arg_18]
+0x180023534  add     rsp, 20h
+0x180023538  pop     r15
+0x18002353a  pop     r14
+0x18002353c  pop     r12
+0x18002353e  pop     rdi
+0x18002353f  pop     rsi
+0x180023540  retn
+```

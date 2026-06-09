@@ -1,0 +1,987 @@
+[
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001654",
+    "function_file": "functions/180001654_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CryptHash::InitHash(unsigned __int64,uint)",
+    "ea": "0x180004574",
+    "function_file": "functions/180004574_CryptHash_InitHash_unsigned_int64_uint.md",
+    "matched_imports": [
+      "ADVAPI32!CryptCreateHash",
+      "ADVAPI32!CryptGetProvParam",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?InitHash@CryptHash@@QEAAK_KI@Z",
+    "prototype": "unsigned int __fastcall(HCRYPTHASH *phHash, HCRYPTPROV hProv, ALG_ID Algid)",
+    "rank_score": 1015,
+    "size": 211,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x18000175c",
+    "function_file": "functions/18000175c_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PsIsMyFileType(ushort *,_GUID *)",
+    "ea": "0x180004bc0",
+    "function_file": "functions/180004bc0_PsIsMyFileType_ushort_GUID.md",
+    "matched_imports": [
+      "KERNEL32!SetLastError",
+      "msvcrt!_wcsicmp",
+      "msvcrt!wcsrchr"
+    ],
+    "matched_strings": [
+      "ps1xml",
+      "cdxml"
+    ],
+    "name": "?PsIsMyFileType@@YAHPEAGPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, struct _GUID *)",
+    "rank_score": 692,
+    "size": 215,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DllRegisterServer",
+    "ea": "0x1800052c0",
+    "function_file": "functions/1800052c0_DllRegisterServer.md",
+    "matched_imports": [
+      "CRYPT32!CryptSIPAddProvider",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleFileNameW"
+    ],
+    "matched_strings": [
+      "PsCreateHash"
+    ],
+    "name": "DllRegisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 655,
+    "size": 269,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x1800017a0",
+    "function_file": "functions/1800017a0_report_gsfailure.md",
+    "matched_imports": [
+      "KERNEL32!RtlCaptureContext",
+      "KERNEL32!RtlLookupFunctionEntry",
+      "KERNEL32!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 626,
+    "size": 416,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SipProvider::CreateHash(SIP_SUBJECTINFO_ const *,ulong *,SIP_INDIRECT_DATA_ *)",
+    "ea": "0x1800037bc",
+    "function_file": "functions/1800037bc_SipProvider_CreateHash_SIP_SUBJECTINFO_const_ulong_SIP_INDIRECT_DATA.md",
+    "matched_imports": [
+      "CRYPT32!CryptEncodeObject",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CreateHash@SipProvider@@QEAAKPEBUSIP_SUBJECTINFO_@@PEAKPEAUSIP_INDIRECT_DATA_@@@Z",
+    "prototype": "unsigned int(SipProvider *__hidden this, const struct SIP_SUBJECTINFO_ *, unsigned int *, struct SIP_INDIRECT_DATA_ *)",
+    "rank_score": 625,
+    "size": 749,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_CRT_INIT",
+    "ea": "0x1800010a0",
+    "function_file": "functions/1800010a0_CRT_INIT.md",
+    "matched_imports": [
+      "KERNEL32!Sleep",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "_CRT_INIT",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 549,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SipFile::ConvertFileEncodedStringToUnicode(uchar const *,ulong,ushort * *,ulong *)",
+    "ea": "0x1800034d4",
+    "function_file": "functions/1800034d4_SipFile_ConvertFileEncodedStringToUnicode_uchar_const_ulong_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!MultiByteToWideChar"
+    ],
+    "matched_strings": [],
+    "name": "?ConvertFileEncodedStringToUnicode@SipFile@@IEAAKPEBEKPEAPEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(SipFile *this, LPCCH lpMultiByteStr, int cbMultiByte, unsigned __int16 **, unsigned int *)",
+    "rank_score": 618,
+    "size": 364,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SipFile::ConvertUnicodeStringToFileEncoding(ushort const *,ulong,uchar * *,ulong *)",
+    "ea": "0x180003648",
+    "function_file": "functions/180003648_SipFile_ConvertUnicodeStringToFileEncoding_ushort_const_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!WideCharToMultiByte"
+    ],
+    "matched_strings": [],
+    "name": "?ConvertUnicodeStringToFileEncoding@SipFile@@IEAAKPEBGKPEAPEAEPEAK@Z",
+    "prototype": "unsigned int __usercall@<eax>(SipFile *__hidden this@<rcx>, LPCWCH lpWideCharStr@<rdx>, unsigned int cchWideChar@<r8d>, unsigned __int8 **@<r9>, unsigned int *)",
+    "rank_score": 618,
+    "size": 366,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SipFile::Read(unsigned __int64,ulong,void *,ulong *)",
+    "ea": "0x180004ec0",
+    "function_file": "functions/180004ec0_SipFile_Read_unsigned_int64_ulong_void_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!ReadFile",
+      "KERNEL32!SetFilePointerEx"
+    ],
+    "matched_strings": [],
+    "name": "?Read@SipFile@@QEAAK_KKPEAXPEAK@Z",
+    "prototype": "unsigned int(SipFile *__hidden this, unsigned __int64, unsigned int, void *, unsigned int *)",
+    "rank_score": 617,
+    "size": 269,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SipFile::Write(unsigned __int64,ulong,void const *)",
+    "ea": "0x180005220",
+    "function_file": "functions/180005220_SipFile_Write_unsigned_int64_ulong_void_const.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetFilePointerEx",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?Write@SipFile@@QEAAK_KKPEBX@Z",
+    "prototype": "unsigned int(SipFile *__hidden this, unsigned __int64, unsigned int, const void *)",
+    "rank_score": 614,
+    "size": 139,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SipCryptProvider::~SipCryptProvider(void)",
+    "ea": "0x180003374",
+    "function_file": "functions/180003374_SipCryptProvider_SipCryptProvider_void.md",
+    "matched_imports": [
+      "ADVAPI32!CryptReleaseContext",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "??1SipCryptProvider@@QEAA@XZ",
+    "prototype": "void __fastcall(SipCryptProvider *__hidden this)",
+    "rank_score": 606,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "SipFile::Open(SIP_SUBJECTINFO_ const *,bool)",
+    "ea": "0x180004834",
+    "function_file": "functions/180004834_SipFile_Open_SIP_SUBJECTINFO_const_bool.md",
+    "matched_imports": [
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?Open@SipFile@@QEAAKPEBUSIP_SUBJECTINFO_@@_N@Z",
+    "prototype": "unsigned int __fastcall(SipFile *__hidden this, const struct SIP_SUBJECTINFO_ *, bool)",
+    "rank_score": 430,
+    "size": 220,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SipFile::Close(void)",
+    "ea": "0x180003424",
+    "function_file": "functions/180003424_SipFile_Close_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?Close@SipFile@@QEAAKXZ",
+    "prototype": "unsigned int __fastcall(SipFile *__hidden this)",
+    "rank_score": 416,
+    "size": 169,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PsScriptFile::InitReadLoop(void)",
+    "ea": "0x180002540",
+    "function_file": "functions/180002540_PsScriptFile_InitReadLoop_void.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetFilePointerEx"
+    ],
+    "matched_strings": [],
+    "name": "?InitReadLoop@PsScriptFile@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(PsScriptFile *__hidden this)",
+    "rank_score": 412,
+    "size": 94,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SipProvider::GetHash(SipFile *,CryptHash *,uchar *,ulong,ulong *)",
+    "ea": "0x180004108",
+    "function_file": "functions/180004108_SipProvider_GetHash_SipFile_CryptHash_uchar_ulong_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!CryptHashData",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?GetHash@SipProvider@@QEAAKPEAVSipFile@@PEAVCryptHash@@PEAEKPEAK@Z",
+    "prototype": "unsigned int(SipProvider *__hidden this, struct SipFile *, struct CryptHash *, unsigned __int8 *, unsigned int, unsigned int *)",
+    "rank_score": 408,
+    "size": 271,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SipCryptProvider::GetAlgId(char const *,ulong *)",
+    "ea": "0x180003ba0",
+    "function_file": "functions/180003ba0_SipCryptProvider_GetAlgId_char_const_ulong.md",
+    "matched_imports": [
+      "CRYPT32!CertOIDToAlgId",
+      "CRYPT32!CryptFindOIDInfo"
+    ],
+    "matched_strings": [],
+    "name": "?GetAlgId@SipCryptProvider@@QEAAKPEBDPEAK@Z",
+    "prototype": "unsigned int(SipCryptProvider *__hidden this, const char *, unsigned int *)",
+    "rank_score": 405,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CryptHash::GetHash(uchar *,ulong,ulong *)",
+    "ea": "0x18000409c",
+    "function_file": "functions/18000409c_CryptHash_GetHash_uchar_ulong_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!CryptGetHashParam",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?GetHash@CryptHash@@QEAAKPEAEKPEAK@Z",
+    "prototype": "unsigned int(CryptHash *__hidden this, unsigned __int8 *, unsigned int, unsigned int *)",
+    "rank_score": 403,
+    "size": 102,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SipFile::GetSize(unsigned __int64 *)",
+    "ea": "0x180004500",
+    "function_file": "functions/180004500_SipFile_GetSize_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetFileSizeEx",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?GetSize@SipFile@@QEAAKPEA_K@Z",
+    "prototype": "unsigned int __fastcall(SipFile *__hidden this, unsigned __int64 *)",
+    "rank_score": 403,
+    "size": 108,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SipFile::SetSize(ushort *)",
+    "ea": "0x180004fd4",
+    "function_file": "functions/180004fd4_SipFile_SetSize_ushort.md",
+    "matched_imports": [
+      "KERNEL32!SetEndOfFile"
+    ],
+    "matched_strings": [],
+    "name": "?SetSize@SipFile@@QEAAKPEAG@Z",
+    "prototype": "unsigned int __fastcall(SipFile *__hidden this, unsigned __int16 *)",
+    "rank_score": 217,
+    "size": 212,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SipCryptProvider::SipCryptProvider(SIP_SUBJECTINFO_ const *)",
+    "ea": "0x1800032e8",
+    "function_file": "functions/1800032e8_SipCryptProvider_SipCryptProvider_SIP_SUBJECTINFO_const.md",
+    "matched_imports": [
+      "ADVAPI32!CryptAcquireContextW"
+    ],
+    "matched_strings": [],
+    "name": "??0SipCryptProvider@@QEAA@PEBUSIP_SUBJECTINFO_@@@Z",
+    "prototype": "SipCryptProvider *__fastcall(SipCryptProvider *__hidden this, const struct SIP_SUBJECTINFO_ *)",
+    "rank_score": 213,
+    "size": 90,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllUnregisterServer",
+    "ea": "0x1800053e0",
+    "function_file": "functions/1800053e0_DllUnregisterServer.md",
+    "matched_imports": [
+      "CRYPT32!CryptSIPRemoveProvider"
+    ],
+    "matched_strings": [],
+    "name": "DllUnregisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 210,
+    "size": 24,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "CryptHash::~CryptHash(void)",
+    "ea": "0x180003348",
+    "function_file": "functions/180003348_CryptHash_CryptHash_void.md",
+    "matched_imports": [
+      "ADVAPI32!CryptDestroyHash"
+    ],
+    "matched_strings": [],
+    "name": "??1CryptHash@@QEAA@XZ",
+    "prototype": "void __fastcall(CryptHash *__hidden this)",
+    "rank_score": 207,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "PsCreateHash(SIP_SUBJECTINFO_ const *,ulong *,SIP_INDIRECT_DATA_ *)",
+    "ea": "0x1800049c0",
+    "function_file": "functions/1800049c0_PsCreateHash_SIP_SUBJECTINFO_const_ulong_SIP_INDIRECT_DATA.md",
+    "matched_imports": [
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?PsCreateHash@@YAHPEBUSIP_SUBJECTINFO_@@PEAKPEAUSIP_INDIRECT_DATA_@@@Z",
+    "prototype": "__int64 __fastcall(const struct SIP_SUBJECTINFO_ *, unsigned int *, struct SIP_INDIRECT_DATA_ *)",
+    "rank_score": 204,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memcpy_0",
+    "ea": "0x1800054a2",
+    "function_file": "functions/1800054a2_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "wcsncmp_0",
+    "ea": "0x1800054c6",
+    "function_file": "functions/1800054c6_wcsncmp_0.md",
+    "matched_imports": [
+      "msvcrt!wcsncmp"
+    ],
+    "matched_strings": [],
+    "name": "wcsncmp_0",
+    "prototype": "int __cdecl(const wchar_t *String1, const wchar_t *String2, size_t MaxCount)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "memset_0",
+    "ea": "0x1800054ae",
+    "function_file": "functions/1800054ae_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 103,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "InitFormatInfo(void)",
+    "ea": "0x180002178",
+    "function_file": "functions/180002178_InitFormatInfo_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ps1xml",
+      "cdxml"
+    ],
+    "name": "?InitFormatInfo@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 102,
+    "size": 958,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 32,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180006010",
+    "function_file": "functions/180006010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "SipProvider::VerifySignature(SIP_SUBJECTINFO_ const *,SIP_INDIRECT_DATA_ const *)",
+    "ea": "0x1800050b0",
+    "function_file": "functions/1800050b0_SipProvider_VerifySignature_SIP_SUBJECTINFO_const_SIP_INDIRECT_DATA_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?VerifySignature@SipProvider@@QEAAKPEBUSIP_SUBJECTINFO_@@PEBUSIP_INDIRECT_DATA_@@@Z",
+    "prototype": "unsigned int(SipProvider *__hidden this, const struct SIP_SUBJECTINFO_ *, const struct SIP_INDIRECT_DATA_ *)",
+    "rank_score": 23,
+    "size": 360,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800012d0",
+    "function_file": "functions/1800012d0_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180005424",
+    "function_file": "functions/180005424_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 19,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001014",
+    "function_file": "functions/180001014_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 22,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SipProvider::GetCryptProviderAndHasher(SIP_SUBJECTINFO_ const *,SIP_INDIRECT_DATA_ const *,SipCryptProvider * *,CryptHash * *)",
+    "ea": "0x180003ed8",
+    "function_file": "functions/180003ed8_SipProvider_GetCryptProviderAndHasher_SIP_SUBJECTINFO_const_SIP_INDIRECT_DATA_const_SipCryptProvider_CryptHash.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCryptProviderAndHasher@SipProvider@@AEAAKPEBUSIP_SUBJECTINFO_@@PEBUSIP_INDIRECT_DATA_@@PEAPEAVSipCryptProvider@@PEAPEAVCryptHash@@@Z",
+    "prototype": "unsigned int(SipProvider *__hidden this, const struct SIP_SUBJECTINFO_ *, const struct SIP_INDIRECT_DATA_ *, struct SipCryptProvider **, struct CryptHash **)",
+    "rank_score": 21,
+    "size": 259,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "SipProvider::GetCryptProviderAndHasher(SIP_SUBJECTINFO_ const *,SipCryptProvider * *,CryptHash * *)",
+    "ea": "0x180003dd4",
+    "function_file": "functions/180003dd4_SipProvider_GetCryptProviderAndHasher_SIP_SUBJECTINFO_const_SipCryptProvider_CryptHash.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCryptProviderAndHasher@SipProvider@@AEAAKPEBUSIP_SUBJECTINFO_@@PEAPEAVSipCryptProvider@@PEAPEAVCryptHash@@@Z",
+    "prototype": "unsigned int(SipProvider *__hidden this, const struct SIP_SUBJECTINFO_ *, struct SipCryptProvider **, struct CryptHash **)",
+    "rank_score": 21,
+    "size": 251,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SipProvider::GetHashSize(SIP_SUBJECTINFO_ const *,ulong *)",
+    "ea": "0x1800042ec",
+    "function_file": "functions/1800042ec_SipProvider_GetHashSize_SIP_SUBJECTINFO_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetHashSize@SipProvider@@QEAAKPEBUSIP_SUBJECTINFO_@@PEAK@Z",
+    "prototype": "unsigned int(SipProvider *__hidden this, const struct SIP_SUBJECTINFO_ *, unsigned int *)",
+    "rank_score": 20,
+    "size": 220,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001314",
+    "function_file": "functions/180001314_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1800054f0",
+    "function_file": "functions/1800054f0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 19,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SipFile::GetContents(uchar * *,ulong *)",
+    "ea": "0x180003c70",
+    "function_file": "functions/180003c70_SipFile_GetContents_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetContents@SipFile@@QEAAKPEAPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(void **this, unsigned __int8 **, unsigned int *)",
+    "rank_score": 18,
+    "size": 215,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SipProvider::GetHash(SipFile *,SIP_SUBJECTINFO_ const *,uchar *,ulong,ulong *)",
+    "ea": "0x180004220",
+    "function_file": "functions/180004220_SipProvider_GetHash_SipFile_SIP_SUBJECTINFO_const_uchar_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetHash@SipProvider@@QEAAKPEAVSipFile@@PEBUSIP_SUBJECTINFO_@@PEAEKPEAK@Z",
+    "prototype": "unsigned int(SipProvider *__hidden this, struct SipFile *, const struct SIP_SUBJECTINFO_ *, unsigned __int8 *, unsigned int, unsigned int *)",
+    "rank_score": 18,
+    "size": 195,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SipProvider::GetCryptHasher(SipCryptProvider const *,ulong,CryptHash * *)",
+    "ea": "0x180003d50",
+    "function_file": "functions/180003d50_SipProvider_GetCryptHasher_SipCryptProvider_const_ulong_CryptHash.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCryptHasher@SipProvider@@CAKPEBVSipCryptProvider@@KPEAPEAVCryptHash@@@Z",
+    "prototype": "static unsigned int(const struct SipCryptProvider *, unsigned int, struct CryptHash **)",
+    "rank_score": 17,
+    "size": 124,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SipFile::OpenCommon(ushort const *)",
+    "ea": "0x180004918",
+    "function_file": "functions/180004918_SipFile_OpenCommon_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OpenCommon@SipFile@@AEAAKPEBG@Z",
+    "prototype": "unsigned int(SipFile *__hidden this, const unsigned __int16 *)",
+    "rank_score": 16,
+    "size": 154,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SipFile::InvalidateCache(void)",
+    "ea": "0x180004700",
+    "function_file": "functions/180004700_SipFile_InvalidateCache_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InvalidateCache@SipFile@@AEAAXXZ",
+    "prototype": "void __fastcall(SipFile *__hidden this)",
+    "rank_score": 14,
+    "size": 104,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180005530",
+    "function_file": "functions/180005530_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlIsTextUnicode",
+    "ea": "0x180002d64",
+    "function_file": "functions/180002d64_RtlIsTextUnicode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlIsTextUnicode",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 1405,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180001738",
+    "function_file": "functions/180001738_DllMain.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "SipFile::GetFileType(FileType *)",
+    "ea": "0x180003fe4",
+    "function_file": "functions/180003fe4_SipFile_GetFileType_FileType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFileType@SipFile@@QEAAKPEAW4FileType@@@Z",
+    "prototype": "unsigned int __fastcall(SipFile *__hidden this, enum FileType *)",
+    "rank_score": 9,
+    "size": 178,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SipFile::InitReadContentLoop(void)",
+    "ea": "0x180004650",
+    "function_file": "functions/180004650_SipFile_InitReadContentLoop_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitReadContentLoop@SipFile@@QEAAKXZ",
+    "prototype": "unsigned int __fastcall(SipFile *__hidden this)",
+    "rank_score": 7,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SipProvider::GetSignature(SIP_SUBJECTINFO_ const *,ulong *,ulong *,uchar *)",
+    "ea": "0x1800043d0",
+    "function_file": "functions/1800043d0_SipProvider_GetSignature_SIP_SUBJECTINFO_const_ulong_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSignature@SipProvider@@QEAAKPEBUSIP_SUBJECTINFO_@@PEAK1PEAE@Z",
+    "prototype": "unsigned int(SipProvider *__hidden this, const struct SIP_SUBJECTINFO_ *, unsigned int *, unsigned int *, unsigned __int8 *)",
+    "rank_score": 7,
+    "size": 275,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PsScriptFile::ReadContent(ulong *,ushort * *)",
+    "ea": "0x180002ae8",
+    "function_file": "functions/180002ae8_PsScriptFile_ReadContent_ulong_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadContent@PsScriptFile@@QEAAKPEAKPEAPEAG@Z",
+    "prototype": "unsigned int __fastcall(PsScriptFile *__hidden this, unsigned int *, unsigned __int16 **)",
+    "rank_score": 6,
+    "size": 259,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "PsScriptFile::RemoveSignature(void)",
+    "ea": "0x180002c00",
+    "function_file": "functions/180002c00_PsScriptFile_RemoveSignature_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveSignature@PsScriptFile@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(PsScriptFile *__hidden this)",
+    "rank_score": 6,
+    "size": 218,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "DetermineFileType(uchar const *,uint)",
+    "ea": "0x180003ab0",
+    "function_file": "functions/180003ab0_DetermineFileType_uchar_const_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DetermineFileType@@YA?AW4FileType@@PEBEI@Z",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SipProvider::PutSignature(SIP_SUBJECTINFO_ const *,ulong,ulong *,ulong,uchar *)",
+    "ea": "0x180004dd4",
+    "function_file": "functions/180004dd4_SipProvider_PutSignature_SIP_SUBJECTINFO_const_ulong_ulong_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PutSignature@SipProvider@@QEAAKPEBUSIP_SUBJECTINFO_@@KPEAKKPEAE@Z",
+    "prototype": "unsigned int(SipProvider *__hidden this, const struct SIP_SUBJECTINFO_ *, unsigned int, unsigned int *, unsigned int, unsigned __int8 *)",
+    "rank_score": 5,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_IsNonwritableInCurrentImage",
+    "ea": "0x1800015d0",
+    "function_file": "functions/1800015d0_IsNonwritableInCurrentImage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_IsNonwritableInCurrentImage",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCchCopyNW(ushort *,unsigned __int64,ushort const *,unsigned __int64)",
+    "ea": "0x180002ce0",
+    "function_file": "functions/180002ce0_StringCchCopyNW_ushort_unsigned_int64_ushort_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyNW@@YAJPEAG_KPEBG1@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, unsigned __int64)",
+    "rank_score": 3,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_FindPESection",
+    "ea": "0x180001580",
+    "function_file": "functions/180001580_FindPESection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_FindPESection",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 67,
+    "tags": []
+  }
+]

@@ -1,0 +1,4146 @@
+[
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "IpcpBegin",
+    "ea": "0x18001c310",
+    "function_file": "functions/18001c310_IpcpBegin.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA",
+      "api-ms-win-core-registry-l2-1-0!RegOpenKeyA",
+      "api-ms-win-core-string-l1-1-0!MultiByteToWideChar",
+      "api-ms-win-crt-private-l1-1-0!_o_mbstowcs"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\PPP\\ControlProtocols\\BuiltIn",
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\PPP\\ControlProtocols\\BuiltIn",
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\PPP\\ControlProtocols\\BuiltIn",
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\PPP\\ControlProtocols\\BuiltIn",
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\PPP\\ControlProtocols\\BuiltIn",
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\PPP\\ControlProtocols\\BuiltIn",
+      "SYSTEM\\CurrentControlSet\\Services\\RemoteAccess\\Parameters\\IP",
+      "IPCP: RasPortGetProtocolCompression=%d",
+      "RequestVJCompression",
+      "AcceptVJCompression",
+      "IPCP: Compress capabilities: s=$%x,%d,%d r=$%x,%d,%d"
+    ],
+    "name": "IpcpBegin",
+    "prototype": "__int64 __fastcall(_QWORD *, __int64)",
+    "rank_score": 6908,
+    "size": 4198,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "LoadProtocolDlls",
+    "ea": "0x1800049e4",
+    "function_file": "functions/1800049e4_LoadProtocolDlls.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsA",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegEnumKeyExA",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA",
+      "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyA",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA",
+      "rtutils!RouterLogEventA",
+      "rtutils!RouterLogEventStringA"
+    ],
+    "matched_strings": [
+      "Cannot enumerate Registry key values %d",
+      "Cannot open or obtain information about the PPP key or one of its subkeys. %d",
+      "Cannot access registry key values %d.",
+      "Point to Point Protocol engine was unable to load the %hs module. %d",
+      "RasCpEnumProtocolIds",
+      "The Point to Point Protocol module %hs returned an error while initializing. %d"
+    ],
+    "name": "LoadProtocolDlls",
+    "prototype": "__int64 __fastcall(__int64, DWORD, HKEY, _DWORD *)",
+    "rank_score": 5889,
+    "size": 1639,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetAdapterInfo",
+    "ea": "0x18002e3cc",
+    "function_file": "functions/18002e3cc_GetAdapterInfo.md",
+    "matched_imports": [
+      "IPHLPAPI!GetAdaptersInfo",
+      "IPHLPAPI!GetCurrentThreadCompartmentId",
+      "IPHLPAPI!GetPerAdapterInfo",
+      "IPHLPAPI!SetCurrentThreadCompartmentId",
+      "WS2_32!__imp_htonl",
+      "WS2_32!__imp_inet_addr",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "GetAdapterInfo: SetCurrentThreadCompartmentId failed and returned %d",
+      "GetAdapterInfo: SetCurrentThreadCompartmentId failed and returned %d"
+    ],
+    "name": "GetAdapterInfo",
+    "prototype": "__int64 __fastcall(ULONG IfIndex, __int64, unsigned int *)",
+    "rank_score": 4512,
+    "size": 1907,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "DhcpInform",
+    "ea": "0x180031120",
+    "function_file": "functions/180031120_DhcpInform.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "dhcpcsvc!DhcpRequestParams"
+    ],
+    "matched_strings": [
+      "DhcpInform: Send reponse to Protocol engine",
+      "DhcpInform: Send reponse to Protocol engine",
+      "DhcpInform: SendMessageToProtocolEngine=%d",
+      "DhcpInform: SendMessageToProtocolEngine=%d",
+      "DhcpInform: No need to send response to Protocol engine",
+      "DhcpInform: No need to send response to Protocol engine"
+    ],
+    "name": "DhcpInform",
+    "prototype": "void __fastcall(_DWORD *)",
+    "rank_score": 4481,
+    "size": 2983,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "IpcpProjectionNotification",
+    "ea": "0x18001ea80",
+    "function_file": "functions/18001ea80_IpcpProjectionNotification.md",
+    "matched_imports": [
+      "DNSAPI!DnsSetConfigDword",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-string-l1-1-0!MultiByteToWideChar",
+      "api-ms-win-crt-private-l1-1-0!wcschr",
+      "rasman!RasAllocInterfaceLuidIndex",
+      "rasman!RasFreeInterfaceLuidIndex",
+      "rtutils!LogEventW"
+    ],
+    "matched_strings": [
+      "IPCP: NsiGetCompartmentIdForRoutingDomain: failed Err: %d",
+      "IPCP: LocalAlloc for pLinkup Info =%d",
+      "IPCP:RasPortSetProtocolCompression(s=%d,%d r=%d,%d)",
+      "IPCP: RasPortSetProtocolCompression done(%d)"
+    ],
+    "name": "IpcpProjectionNotification",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4016,
+    "size": 3284,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "ReadRegistryInfo",
+    "ea": "0x180005908",
+    "function_file": "functions/180005908_ReadRegistryInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA",
+      "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyA",
+      "rtutils!RouterLogEventA",
+      "rtutils!RouterLogEventStringA"
+    ],
+    "matched_strings": [
+      "Cannot open or obtain information about the PPP key or one of its subkeys. %d",
+      "The Point to Point Protocol module %hs returned an error while initializing. %d",
+      "The Point to Point Protocol module %hs returned an error while initializing. %d",
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\ppp",
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\ppp\\ControlProtocols",
+      "The Point to Point Protocol failed to load the required PAP and/or CHAP authentication modules. %d",
+      "The Control Protocol %hs in the Point to Point Protocol module %hs returned an error while initializing. %d"
+    ],
+    "name": "ReadRegistryInfo",
+    "prototype": "__int64 __fastcall(PHKEY phkResult)",
+    "rank_score": 3951,
+    "size": 2528,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "LoadParserDll",
+    "ea": "0x18001264c",
+    "function_file": "functions/18001264c_LoadParserDll.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsA",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA"
+    ],
+    "matched_strings": [
+      "ParseDllPath",
+      "ParseDllPath"
+    ],
+    "name": "LoadParserDll",
+    "prototype": "BOOL __fastcall(HKEY hKey)",
+    "rank_score": 3508,
+    "size": 758,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "InitializeProtocolEngine",
+    "ea": "0x180008630",
+    "function_file": "functions/180008630_InitializeProtocolEngine.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA",
+      "rasman!RasActivateRoute",
+      "rasman!RasAllocateRoute",
+      "rasman!RasBundleGetPort",
+      "rasman!RasCompressionGetInfo",
+      "rasman!RasCompressionSetInfo",
+      "rasman!RasDeAllocateRoute",
+      "rasman!RasFreeBuffer",
+      "rasman!RasGetBuffer",
+      "rasman!RasGetConnectInfo",
+      "rasman!RasGetFramingCapabilities",
+      "rasman!RasGetInfo",
+      "rasman!RasGetPortUserData",
+      "rasman!RasGetTimeSinceLastActivity",
+      "rasman!RasInitializeNoWait",
+      "rasman!RasPortCancelReceive",
+      "rasman!RasPortGetBundle",
+      "rasman!RasPortGetProtocolCompression",
+      "rasman!RasPortGetStatisticsEx",
+      "rasman!RasPortSend",
+      "rasman!RasPortSetFramingEx",
+      "rasman!RasPortSetProtocolCompression",
+      "rasman!RasProtocolStarted",
+      "rasman!RasSendProtocolResultToRasman",
+      "rasman!RasSetConnectionUserData",
+      "rasman!RasUpdateDefaultRouteSettings"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\Rasman\\Parameters",
+      "System\\CurrentControlSet\\Services\\Rasman\\Parameters",
+      "Failed to open registry: %hs"
+    ],
+    "name": "InitializeProtocolEngine",
+    "prototype": "__int64 __fastcall(void *, unsigned int, char)",
+    "rank_score": 3373,
+    "size": 854,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SaveTcpipV6Param",
+    "ea": "0x1800306d4",
+    "function_file": "functions/1800306d4_SaveTcpipV6Param.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteValueW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+      "api-ms-win-core-registry-l2-1-0!RegCreateKeyW",
+      "api-ms-win-crt-private-l1-1-0!_o__wcslwr"
+    ],
+    "matched_strings": [
+      "RegSetValueEx(%ws) failed and returned %d",
+      "RegSetValueEx(%ws) failed and returned %d",
+      "RegSetValueEx(%ws) failed and returned %d",
+      "RegSetValueEx(%ws) failed and returned %d",
+      "RegDeleteValue(%ws) failed and returned %d",
+      "RegDeleteValue(%ws) failed and returned %d",
+      "RegOpenKeyEx(%ws) (v4) failed and returned %d",
+      "RegOpenKeyEx(%ws) (v4) failed and returned %d",
+      "RegOpenKeyEx(%ws) (v6) failed and returned %d",
+      "RegOpenKeyEx(%ws) (v6) failed and returned %d",
+      "RegCreateKey(%ws) (v6) failed and returned %d",
+      "RegCreateKey(%ws) (v6) failed and returned %d"
+    ],
+    "name": "SaveTcpipV6Param",
+    "prototype": "__int64 __fastcall(HKEY hKey, HKEY)",
+    "rank_score": 3107,
+    "size": 1297,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 2,
+    "demangled": "ProcessLineUpWorker",
+    "ea": "0x180016260",
+    "function_file": "functions/180016260_ProcessLineUpWorker.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-crt-private-l1-1-0!_o_isdigit"
+    ],
+    "matched_strings": [
+      "Starting PPP on link with IfType=0x%x,IPIf=0x%x,IPv6If=0x%x"
+    ],
+    "name": "ProcessLineUpWorker",
+    "prototype": "unsigned int __fastcall(__int64, int)",
+    "rank_score": 2901,
+    "size": 3846,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "MakeAuthenticatorMessage",
+    "ea": "0x18002787c",
+    "function_file": "functions/18002787c_MakeAuthenticatorMessage.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "pReceiveBuf->Length is less than PPP_CONFIG_HDR_LEN + 1 -- Dropping invalid packet",
+      "Error %d while processing Access-Request",
+      "The cached EapSendBufferr is NULL or its size is less than minimum size"
+    ],
+    "name": "MakeAuthenticatorMessage",
+    "prototype": "DWORD __fastcall(__int64, unsigned __int8 *, _BYTE *, unsigned int, __int64, __int64)",
+    "rank_score": 2759,
+    "size": 2346,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "InitializePPP",
+    "ea": "0x1800046e0",
+    "function_file": "functions/1800046e0_InitializePPP.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapCreate",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "api-ms-win-crt-private-l1-1-0!_o_srand",
+      "ntdll!RtlGetNtProductType",
+      "ntdll!RtlGetVersion"
+    ],
+    "matched_strings": [],
+    "name": "InitializePPP",
+    "prototype": "DWORD __fastcall(void *)",
+    "rank_score": 2635,
+    "size": 766,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SaveTcpipParam",
+    "ea": "0x18002ffa4",
+    "function_file": "functions/18002ffa4_SaveTcpipParam.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteValueW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+      "api-ms-win-core-registry-l2-1-0!RegCreateKeyW",
+      "api-ms-win-crt-private-l1-1-0!_o__wcslwr"
+    ],
+    "matched_strings": [
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "RegCreateKey(%ws) (v4) failed and returned %d",
+      "RegCreateKey(%ws) (v4) failed and returned %d",
+      "RegSetValueEx(%ws) failed and returned %d",
+      "RegSetValueEx(%ws) failed and returned %d",
+      "RegSetValueEx(%ws) failed and returned %d",
+      "RegSetValueEx(%ws) failed and returned %d",
+      "RegDeleteValue(%ws) failed and returned %d",
+      "RegDeleteValue(%ws) failed and returned %d"
+    ],
+    "name": "SaveTcpipParam",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 2627,
+    "size": 1160,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ReadDialParamsBlob",
+    "ea": "0x18002d0c0",
+    "function_file": "functions/18002d0c0_ReadDialParamsBlob.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaClose",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaFreeMemory",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaOpenPolicy",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaRetrievePrivateData",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "ReadDialParamsBlob",
+    "prototype": "ULONG __fastcall(__int64, _QWORD *, unsigned int *)",
+    "rank_score": 2461,
+    "size": 663,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "Ipv6cpBegin",
+    "ea": "0x180021b40",
+    "function_file": "functions/180021b40_Ipv6cpBegin.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-string-l1-1-0!MultiByteToWideChar",
+      "ntdll!RtlIpv6StringToAddressA"
+    ],
+    "matched_strings": [
+      "Ipv6CachedAddress"
+    ],
+    "name": "Ipv6cpBegin",
+    "prototype": "DWORD __fastcall(_QWORD *, __int64)",
+    "rank_score": 2288,
+    "size": 3333,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SaveWinsParam",
+    "ea": "0x180030bec",
+    "function_file": "functions/180030bec_SaveWinsParam.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteValueW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+      "api-ms-win-core-registry-l2-1-0!RegCreateKeyW"
+    ],
+    "matched_strings": [
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "RegCreateKey(%ws) (v4) failed and returned %d",
+      "RegCreateKey(%ws) (v4) failed and returned %d",
+      "RegSetValueEx(%ws) failed: %d",
+      "RegSetValueEx(%ws) failed: %d",
+      "RegDeleteValue(%ws) failed: %d",
+      "RegDeleteValue(%ws) failed: %d",
+      "RegSetValueEx(%ws) failed and returned %d",
+      "RegSetValueEx(%ws) failed and returned %d"
+    ],
+    "name": "SaveWinsParam",
+    "prototype": "__int64 __fastcall(HKEY hKey, __int64)",
+    "rank_score": 2227,
+    "size": 1054,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WorkerThread",
+    "ea": "0x1800183e0",
+    "function_file": "functions/1800183e0_WorkerThread.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-registry-l1-1-0!RegNotifyChangeKeyValue",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!ResetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "WorkerThread",
+    "prototype": "ULONG __stdcall(PVOID Parameter)",
+    "rank_score": 2218,
+    "size": 496,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DeallocateAndRemoveBcbFromTable",
+    "ea": "0x180010d3c",
+    "function_file": "functions/180010d3c_DeallocateAndRemoveBcbFromTable.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "DeallocateAndRemoveBcbFromTable",
+    "prototype": "void __fastcall(char *lpMem)",
+    "rank_score": 2208,
+    "size": 397,
+    "tags": []
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 7,
+    "demangled": "ApWork",
+    "ea": "0x1800023c0",
+    "function_file": "functions/1800023c0_ApWork.md",
+    "matched_imports": [
+      "RASAPI32!RasSetEapUserDataAEx",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-crt-private-l1-1-0!_o__itoa_s"
+    ],
+    "matched_strings": [
+      "Auth Protocol %x returned error %d",
+      "Auth Protocol %x terminated with error %d"
+    ],
+    "name": "ApWork",
+    "prototype": "unsigned int __fastcall(__int64, unsigned int, __int64, __int64, int)",
+    "rank_score": 2146,
+    "size": 3395,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "PPPCleanUp",
+    "ea": "0x180005054",
+    "function_file": "functions/180005054_PPPCleanUp.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!HeapDestroy",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [
+      "RasCpInit(FALSE) for protocol 0x%x returned error %d"
+    ],
+    "name": "PPPCleanUp",
+    "prototype": "void *()",
+    "rank_score": 2075,
+    "size": 798,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "InitializeServerProtocolEngine",
+    "ea": "0x180008990",
+    "function_file": "functions/180008990_InitializeServerProtocolEngine.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-kernel32-legacy-l1-1-0!GetComputerNameA",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA"
+    ],
+    "matched_strings": [],
+    "name": "InitializeServerProtocolEngine",
+    "prototype": "",
+    "rank_score": 2027,
+    "size": 727,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "InitEndpointDiscriminator",
+    "ea": "0x180011edc",
+    "function_file": "functions/180011edc_InitEndpointDiscriminator.md",
+    "matched_imports": [
+      "RPCRT4!UuidCreate",
+      "api-ms-win-core-kernel32-legacy-l1-1-0!GetComputerNameA",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "api-ms-win-crt-private-l1-1-0!_o_iswalpha",
+      "api-ms-win-crt-private-l1-1-0!_o_rand",
+      "api-ms-win-crt-private-l1-1-0!_o_srand",
+      "netutils!NetApiBufferFree",
+      "wkscli!NetWkstaTransportEnum"
+    ],
+    "matched_strings": [],
+    "name": "InitEndpointDiscriminator",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 2017,
+    "size": 545,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "Ipv6cpActivateRoute",
+    "ea": "0x1800211f4",
+    "function_file": "functions/1800211f4_Ipv6cpActivateRoute.md",
+    "matched_imports": [
+      "DNSAPI!DnsSetConfigDword",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-string-l1-1-0!MultiByteToWideChar",
+      "api-ms-win-crt-private-l1-1-0!wcschr",
+      "rasman!RasAllocInterfaceLuidIndex",
+      "rasman!RasFreeInterfaceLuidIndex"
+    ],
+    "matched_strings": [
+      "IPCP:RasUpdateDefaultRouteSettings failed. Error %d",
+      "IPCP:RasUpdateDefaultRouteSettings success",
+      "Ipv6cpProjectionNotification: NsiGetCompartmentIdForRoutingDomain: failed Err: %d"
+    ],
+    "name": "Ipv6cpActivateRoute",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1981,
+    "size": 2369,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "AllocateAndGetIpAddrTable",
+    "ea": "0x180032358",
+    "function_file": "functions/180032358_AllocateAndGetIpAddrTable.md",
+    "matched_imports": [
+      "IPHLPAPI!GetCurrentThreadCompartmentId",
+      "IPHLPAPI!GetIpAddrTable",
+      "IPHLPAPI!SetCurrentThreadCompartmentId",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "AllocateAndGetIpNetTable: SetCurrentThreadCompartmentId failed and returned %d",
+      "AllocateAndGetIpNetTable: SetCurrentThreadCompartmentId failed and returned %d"
+    ],
+    "name": "AllocateAndGetIpAddrTable",
+    "prototype": "__int64 __fastcall(LPVOID *, __int64, void *)",
+    "rank_score": 1905,
+    "size": 985,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "AllocateAndGetIpForwardTable",
+    "ea": "0x180032738",
+    "function_file": "functions/180032738_AllocateAndGetIpForwardTable.md",
+    "matched_imports": [
+      "IPHLPAPI!GetCurrentThreadCompartmentId",
+      "IPHLPAPI!GetIpForwardTable",
+      "IPHLPAPI!SetCurrentThreadCompartmentId",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "AllocateAndGetIpNetTable: SetCurrentThreadCompartmentId failed and returned %d",
+      "AllocateAndGetIpNetTable: SetCurrentThreadCompartmentId failed and returned %d"
+    ],
+    "name": "AllocateAndGetIpForwardTable",
+    "prototype": "__int64 __fastcall(LPVOID *, __int64, void *)",
+    "rank_score": 1905,
+    "size": 987,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "LoadTcpipParam",
+    "ea": "0x18002ef0c",
+    "function_file": "functions/18002ef0c_LoadTcpipParam.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "api-ms-win-crt-private-l1-1-0!_o__wcslwr"
+    ],
+    "matched_strings": [
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "RegOpenKeyEx(%ws) failed and returned %d"
+    ],
+    "name": "LoadTcpipParam",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 1904,
+    "size": 793,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "ReceiveIdentification",
+    "ea": "0x18000a9f0",
+    "function_file": "functions/18000a9f0_ReceiveIdentification.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-crt-private-l1-1-0!strstr"
+    ],
+    "matched_strings": [
+      "ReceiveIndication: Client%hs already present for port %d",
+      "ReceiveIndication: Client%hs already present for port %d",
+      "ReceiveIndication: Client%hs already present for port %d",
+      "ReceiveIdentification: insufficient buffer while copying szComputerName",
+      "ReceiveIdentification: insufficient buffer while copying szComputerName",
+      "ReceiveIdentification: Replaced userlist %p with %p"
+    ],
+    "name": "ReceiveIdentification",
+    "prototype": "char __fastcall(__int64, __int64, __int64, unsigned __int8 *)",
+    "rank_score": 1879,
+    "size": 2287,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "ProcessRasPortListenEvent",
+    "ea": "0x180017510",
+    "function_file": "functions/180017510_ProcessRasPortListenEvent.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "rasman!RasGetInfo",
+      "rasman!RasPortClose",
+      "rasman!RasPortConnectComplete",
+      "rasman!RasPortDisconnect",
+      "rasman!RasPortSetFraming",
+      "rasman!RasProtocolStart",
+      "rasman!RasSetEapInfo"
+    ],
+    "matched_strings": [
+      "RasPortConnectComplete on hPort %d returned error %d"
+    ],
+    "name": "ProcessRasPortListenEvent",
+    "prototype": "int __fastcall(__int64)",
+    "rank_score": 1876,
+    "size": 1916,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "SendMessageToProtocolEngine",
+    "ea": "0x180008d10",
+    "function_file": "functions/180008d10_SendMessageToProtocolEngine.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "PROTOCOL_MSG_Start recvd, d=%hs, hPort=%d,flags=%d,mask=%x,IfType=%d",
+      "PROTOCOL_MSG_Start: Encode password failed",
+      "PROTOCOL_MSG_Stop recvd",
+      "PROTOCOL_MSG_Callback recvd, hPort=%d",
+      "PROTOCOL_MSG_ChangePw recvd, hPort=%d",
+      "PROTOCOL_MSG_Retry recvd hPort=%d,u=%hs",
+      "PROTOCOL_MSG_LineDown recvd, hPort=%d",
+      "PROTOCOL_MSG_DdmCallbackDone recvd",
+      "PROTOCOL_MSG_DdmInterfaceInfo recvd,IPif=%x,IPv6=%x,Type=%x"
+    ],
+    "name": "SendMessageToProtocolEngine",
+    "prototype": "DWORD __fastcall(__int64)",
+    "rank_score": 1610,
+    "size": 2454,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "LoadTcpipInfo",
+    "ea": "0x18002ebd0",
+    "function_file": "functions/18002ebd0_LoadTcpipInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "System\\CurrentControlSet\\Services\\Tcpip\\Parameters",
+      "System\\CurrentControlSet\\Services\\NetBT\\Parameters\\Interfaces"
+    ],
+    "name": "LoadTcpipInfo",
+    "prototype": "__int64 __fastcall(__int64 *, const wchar_t *, int)",
+    "rank_score": 1599,
+    "size": 819,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "UninitializeServerProtocolEngine",
+    "ea": "0x1800097a0",
+    "function_file": "functions/1800097a0_UninitializeServerProtocolEngine.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-2-1!WaitForMultipleObjects"
+    ],
+    "matched_strings": [],
+    "name": "UninitializeServerProtocolEngine",
+    "prototype": "void *()",
+    "rank_score": 1426,
+    "size": 377,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "LoadWinsParam",
+    "ea": "0x18002f22c",
+    "function_file": "functions/18002f22c_LoadWinsParam.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "RegOpenKeyEx(%ws) failed and returned %d"
+    ],
+    "name": "LoadWinsParam",
+    "prototype": "__int64 __fastcall(HKEY hKey, __int64)",
+    "rank_score": 1303,
+    "size": 589,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetRouterPhoneBook",
+    "ea": "0x18001165c",
+    "function_file": "functions/18001165c_GetRouterPhoneBook.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-string-obsolete-l1-1-0!lstrlenA",
+      "api-ms-win-core-sysinfo-l1-1-0!GetWindowsDirectoryA"
+    ],
+    "matched_strings": [
+      "\\system32\\ras\\router.pbk",
+      "system32\\ras\\router.pbk"
+    ],
+    "name": "GetRouterPhoneBook",
+    "prototype": "DWORD __fastcall(CHAR **)",
+    "rank_score": 1284,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RasProcessEaphostAttributes",
+    "ea": "0x180029ba0",
+    "function_file": "functions/180029ba0_RasProcessEaphostAttributes.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "eappprxy!EapHostPeerFreeEapError",
+      "eappprxy!EapHostPeerGetResponseAttributes",
+      "eappprxy!EapHostPeerSetResponseAttributes"
+    ],
+    "matched_strings": [
+      "RasCreateEapAttributesWithResultTLV failed."
+    ],
+    "name": "RasProcessEaphostAttributes",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, unsigned int, __int64, _DWORD *)",
+    "rank_score": 1257,
+    "size": 1040,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "MakeAuthProtocolOption",
+    "ea": "0x180008338",
+    "function_file": "functions/180008338_MakeAuthProtocolOption.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "MakeAuthProtocolOption",
+    "prototype": "DWORD __fastcall(__int64)",
+    "rank_score": 1218,
+    "size": 422,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "SaveTcpipInfo",
+    "ea": "0x18002fce0",
+    "function_file": "functions/18002fce0_SaveTcpipInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "System\\CurrentControlSet\\Services\\Tcpip\\Parameters",
+      "System\\CurrentControlSet\\Services\\Tcpip\\Parameters",
+      "System\\CurrentControlSet\\Services\\Tcpip\\Parameters",
+      "System\\CurrentControlSet\\Services\\NetBT\\Parameters\\Interfaces",
+      "System\\CurrentControlSet\\Services\\NetBT\\Parameters\\Interfaces",
+      "System\\CurrentControlSet\\Services\\NetBT\\Parameters\\Interfaces"
+    ],
+    "name": "SaveTcpipInfo",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 1156,
+    "size": 702,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SaveTcpipV6Info",
+    "ea": "0x180030434",
+    "function_file": "functions/180030434_SaveTcpipV6Info.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "RegOpenKeyEx(%ws) failed and returned %d",
+      "System\\CurrentControlSet\\Services\\Tcpip\\Parameters",
+      "System\\CurrentControlSet\\Services\\Tcpip\\Parameters",
+      "System\\CurrentControlSet\\Services\\Tcpip\\Parameters",
+      "System\\CurrentControlSet\\Services\\Tcpip6\\Parameters",
+      "System\\CurrentControlSet\\Services\\Tcpip6\\Parameters",
+      "System\\CurrentControlSet\\Services\\Tcpip6\\Parameters"
+    ],
+    "name": "SaveTcpipV6Info",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1154,
+    "size": 663,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CcpBegin",
+    "ea": "0x180024d70",
+    "function_file": "functions/180024d70_CcpBegin.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "Send RCI_MacCompressionType = 0x%x",
+      "Receive RCI_MacCompressionType = 0x%x",
+      "Send Compression is Disabled",
+      "We do not want any compression or encryption on the local side",
+      "Receive Compression is disabled",
+      "We do not want to receive any compression or encryption from the remote side",
+      "ERROR_PROTOCOL_NOT_CONFIGURED"
+    ],
+    "name": "CcpBegin",
+    "prototype": "DWORD __fastcall(char **, unsigned int *)",
+    "rank_score": 1137,
+    "size": 2717,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "UninitializeProtocolEngine",
+    "ea": "0x1800096b0",
+    "function_file": "functions/1800096b0_UninitializeProtocolEngine.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [
+      "UninitializeProtocolEngine called",
+      "UninitializeProtocolEngine: Waiting For Worker Thread to exit."
+    ],
+    "name": "UninitializeProtocolEngine",
+    "prototype": "DWORD()",
+    "rank_score": 1094,
+    "size": 231,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RasInvokeIdentityUI",
+    "ea": "0x180029538",
+    "function_file": "functions/180029538_RasInvokeIdentityUI.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "eappprxy!EapHostPeerFreeEapError",
+      "eappprxy!EapHostPeerGetUIContext"
+    ],
+    "matched_strings": [
+      "EAP method wants to bring up UI on the server side. This is not a valid operation. Returning error: 0x%.x"
+    ],
+    "name": "RasInvokeIdentityUI",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, int, __int64)",
+    "rank_score": 1065,
+    "size": 771,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "CreateAccountingAttributes",
+    "ea": "0x18001063c",
+    "function_file": "functions/18001063c_CreateAccountingAttributes.md",
+    "matched_imports": [
+      "DSROLE!DsRoleFreeMemory",
+      "DSROLE!DsRoleGetPrimaryDomainInformation",
+      "WS2_32!__imp_ntohl",
+      "api-ms-win-crt-private-l1-1-0!_o__itoa_s"
+    ],
+    "matched_strings": [],
+    "name": "CreateAccountingAttributes",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1026,
+    "size": 1786,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "EapMethodWork",
+    "ea": "0x180027458",
+    "function_file": "functions/180027458_EapMethodWork.md",
+    "matched_imports": [
+      "eappprxy!EapHostPeerFreeEapError",
+      "eappprxy!EapHostPeerProcessReceivedPacket",
+      "eappprxy!EapHostPeerSetUIContext"
+    ],
+    "matched_strings": [
+      "Failed to construct EAP UI context during %hs with error: 0x%x. Failing auth."
+    ],
+    "name": "EapMethodWork",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, unsigned int, _DWORD *, __int64)",
+    "rank_score": 865,
+    "size": 795,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "InsertWorkItemInQ",
+    "ea": "0x18001246c",
+    "function_file": "functions/18001246c_InsertWorkItemInQ.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [
+      "Inserting extra PROTOCOL_MSG_LineDown for hPort=%d"
+    ],
+    "name": "InsertWorkItemInQ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 861,
+    "size": 354,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "RasTcpSetRoute",
+    "ea": "0x180033304",
+    "function_file": "functions/180033304_RasTcpSetRoute.md",
+    "matched_imports": [
+      "IPHLPAPI!DeleteIpForwardEntry",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "RasTcpSetRoute",
+    "prototype": "__int64 __fastcall(DWORD, DWORD, DWORD, int, int)",
+    "rank_score": 839,
+    "size": 1047,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x1800014a0",
+    "function_file": "functions/1800014a0_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 823,
+    "size": 181,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "LcpBegin",
+    "ea": "0x180006970",
+    "function_file": "functions/180006970_LcpBegin.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "PPP ConfigMask 0x%x ",
+      "PPP ConfigMask = %x",
+      "PPP ConfigMask = %x",
+      "Removing NegotiateMultilink due to registry override"
+    ],
+    "name": "LcpBegin",
+    "prototype": "DWORD __fastcall(LPVOID *, __int64)",
+    "rank_score": 801,
+    "size": 1704,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RasCreateEapAttributesWithResultTLV",
+    "ea": "0x180029094",
+    "function_file": "functions/180029094_RasCreateEapAttributesWithResultTLV.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "RasCreateEapAttributesWithResultTLV -- Entering.",
+      "RasCreateEapAttributesWithResultTLV: Constructed a response attribute.",
+      "RasCreateEapAttributesWithResultTLV: Leaving -- 0x%x.",
+      "RasCreateEapAttributesWithResultTLV: Leaving -- 0x%x."
+    ],
+    "name": "RasCreateEapAttributesWithResultTLV",
+    "prototype": "__int64 __fastcall(__int64, __int16)",
+    "rank_score": 769,
+    "size": 424,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RasCpEnumProtocolIds",
+    "ea": "0x180005380",
+    "function_file": "functions/180005380_RasCpEnumProtocolIds.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA"
+    ],
+    "matched_strings": [
+      "RasCpEnumProtocolIds",
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\ppp\\ControlProtocols\\BuiltIn",
+      "Protocol %x"
+    ],
+    "name": "RasCpEnumProtocolIds",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 759,
+    "size": 549,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "IpcpInit",
+    "ea": "0x18001e4d0",
+    "function_file": "functions/18001e4d0_IpcpInit.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA",
+      "api-ms-win-core-registry-l2-1-0!RegOpenKeyA"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\PPP\\ControlProtocols\\BuiltIn",
+      "MaxMSIPCPOptionCfgCnt"
+    ],
+    "name": "IpcpInit",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 724,
+    "size": 218,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ReadPPPKeyValues",
+    "ea": "0x180005698",
+    "function_file": "functions/180005698_ReadPPPKeyValues.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "Cannot access registry key values %d.",
+      "Using the default value for Registry parameter %hs because the value given is not in the legal range for the parameter. %d"
+    ],
+    "name": "ReadPPPKeyValues",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 711,
+    "size": 615,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ConvertIpv6AddressToFilterDescriptor_V6",
+    "ea": "0x18001928c",
+    "function_file": "functions/18001928c_ConvertIpv6AddressToFilterDescriptor_V6.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "MprInfoCreate failed  in ConvertIpv6AddressToFilterDescriptor_v6 and returned %d",
+      "MprInfoCreate failed  in ConvertIpv6AddressToFilterDescriptor_v6 and returned %d"
+    ],
+    "name": "ConvertIpv6AddressToFilterDescriptor_V6",
+    "prototype": "__int64 __fastcall(HLOCAL *, unsigned int)",
+    "rank_score": 704,
+    "size": 687,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PapInit",
+    "ea": "0x18002a800",
+    "function_file": "functions/18002a800_PapInit.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExA",
+      "api-ms-win-core-registry-l2-1-0!RegOpenKeyA"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Services\\RasMan\\PPP\\ControlProtocols\\BuiltIn"
+    ],
+    "name": "PapInit",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 672,
+    "size": 184,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 13,
+    "demangled": "InsertInTimerQ",
+    "ea": "0x18000f780",
+    "function_file": "functions/18000f780_InsertInTimerQ.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [
+      "InsertInTimerQ called portid=%d,Id=%d,Protocol=%x,EventType=%d,fAuth=%d,Timeout=%d"
+    ],
+    "name": "InsertInTimerQ",
+    "prototype": "DWORD __fastcall(unsigned int, __int64, unsigned int, int, int, int, int)",
+    "rank_score": 671,
+    "size": 510,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CheckCpsForInactivity",
+    "ea": "0x1800102bc",
+    "function_file": "functions/1800102bc_CheckCpsForInactivity.md",
+    "matched_imports": [
+      "rtutils!RouterLogDeregisterA",
+      "rtutils!RouterLogEventA",
+      "rtutils!RouterLogRegisterA"
+    ],
+    "matched_strings": [
+      "RemoteAccess"
+    ],
+    "name": "CheckCpsForInactivity",
+    "prototype": "char __fastcall(__int64, int)",
+    "rank_score": 666,
+    "size": 889,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "EapInit",
+    "ea": "0x180026eb0",
+    "function_file": "functions/180026eb0_EapInit.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Rasman\\PPP\\EAP"
+    ],
+    "name": "EapInit",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 664,
+    "size": 223,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "TryToBundleWithAnotherLink",
+    "ea": "0x180014bfc",
+    "function_file": "functions/180014bfc_TryToBundleWithAnotherLink.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapReAlloc",
+      "rasman!RasPortBundle"
+    ],
+    "matched_strings": [
+      "Bundling this link with hPort = %d"
+    ],
+    "name": "TryToBundleWithAnotherLink",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 664,
+    "size": 829,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ConvertIpAddressToFilterDescriptor",
+    "ea": "0x180019098",
+    "function_file": "functions/180019098_ConvertIpAddressToFilterDescriptor.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "MprInfoCreate failed  in ConvertIpAddressToFilterDescriptor and returned %d"
+    ],
+    "name": "ConvertIpAddressToFilterDescriptor",
+    "prototype": "__int64 __fastcall(HLOCAL *, unsigned int)",
+    "rank_score": 662,
+    "size": 492,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "ProcessDhcpInform",
+    "ea": "0x180015730",
+    "function_file": "functions/180015730_ProcessDhcpInform.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "GetCpIndexFromProtocol(IPCP) failed"
+    ],
+    "name": "ProcessDhcpInform",
+    "prototype": "HLOCAL __fastcall(__int64)",
+    "rank_score": 662,
+    "size": 485,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 31,
+    "caller_count": 6,
+    "demangled": "FsmThisLayerUp",
+    "ea": "0x18000ecac",
+    "function_file": "functions/18000ecac_FsmThisLayerUp.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "FsmThisLayerUp called for protocol = %x, port = %d",
+      "FsmThisLayerUp for protocol=%x,port=%d,RetCode=%d",
+      "LCP Configured successfully",
+      "Client: LCP Configured successfully for Guid %hs"
+    ],
+    "name": "FsmThisLayerUp",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 642,
+    "size": 2766,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AdjustHTokenImpersonateUser",
+    "ea": "0x18000fc50",
+    "function_file": "functions/18000fc50_AdjustHTokenImpersonateUser.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!DuplicateHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "AdjustHTokenImpersonateUser",
+    "prototype": "int __fastcall(__int64)",
+    "rank_score": 614,
+    "size": 227,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "HelperInitialize",
+    "ea": "0x180031dec",
+    "function_file": "functions/180031dec_HelperInitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "rtutils!TraceRegisterExA"
+    ],
+    "matched_strings": [
+      "HelperInitialize completed %d",
+      "HelperInitialize completed %d"
+    ],
+    "name": "HelperInitialize",
+    "prototype": "__int64()",
+    "rank_score": 502,
+    "size": 562,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "ReceiveTermReq",
+    "ea": "0x18000b720",
+    "function_file": "functions/18000b720_ReceiveTermReq.md",
+    "matched_imports": [
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "CoId=%hs: Layer=%hs: SubLayer=%hs: The connection attempt failed on port: %hs because of the authentication protocol selected. Check to see if the authentication protocol is supported in the operating systems at the client and server ends of the connection %d"
+    ],
+    "name": "ReceiveTermReq",
+    "prototype": "DWORD __fastcall(__int64, unsigned int, int *, unsigned __int8 *)",
+    "rank_score": 473,
+    "size": 1268,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RasGetEapHostAuthResult",
+    "ea": "0x180029244",
+    "function_file": "functions/180029244_RasGetEapHostAuthResult.md",
+    "matched_imports": [
+      "eappprxy!EapHostPeerFreeEapError",
+      "eappprxy!EapHostPeerGetResult"
+    ],
+    "matched_strings": [
+      "EAP Authentication complete :)."
+    ],
+    "name": "RasGetEapHostAuthResult",
+    "prototype": "__int64 __fastcall(__int64, int, __int64)",
+    "rank_score": 464,
+    "size": 749,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "MprInfoBlockAdd",
+    "ea": "0x18002d414",
+    "function_file": "functions/18002d414_MprInfoBlockAdd.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "MprInfoBlockAdd",
+    "prototype": "DWORD __stdcall(LPVOID lpHeader, DWORD dwInfoType, DWORD dwItemSize, DWORD dwItemCount, LPBYTE lpItemData, LPVOID *lplpNewHeader)",
+    "rank_score": 422,
+    "size": 625,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 17,
+    "demangled": "RasAuthAttributeDestroy",
+    "ea": "0x18001acd8",
+    "function_file": "functions/18001acd8_RasAuthAttributeDestroy.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "RasAuthAttributeDestroy",
+    "prototype": "HLOCAL __fastcall(_DWORD *hMem)",
+    "rank_score": 422,
+    "size": 400,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "RasAuthAttributeInsert",
+    "ea": "0x18001b4b0",
+    "function_file": "functions/18001b4b0_RasAuthAttributeInsert.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "RasAuthAttributeInsert",
+    "prototype": "DWORD __fastcall(unsigned int, __int64, int, __int64, size_t Size, void *Src)",
+    "rank_score": 415,
+    "size": 507,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CreateOrSetIpForwardEntry",
+    "ea": "0x18002d9fc",
+    "function_file": "functions/18002d9fc_CreateOrSetIpForwardEntry.md",
+    "matched_imports": [
+      "IPHLPAPI!ConvertInterfaceIndexToLuid",
+      "IPHLPAPI!ConvertIpv4MaskToLength"
+    ],
+    "matched_strings": [],
+    "name": "CreateOrSetIpForwardEntry",
+    "prototype": "int __fastcall(_DWORD *)",
+    "rank_score": 408,
+    "size": 293,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "DecodePassword",
+    "ea": "0x180018f24",
+    "function_file": "functions/180018f24_DecodePassword.md",
+    "matched_imports": [
+      "CRYPT32!CryptUnprotectData",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "DecodePassword",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 407,
+    "size": 162,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MprInfoCreate",
+    "ea": "0x18002d68c",
+    "function_file": "functions/18002d68c_MprInfoCreate.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "MprInfoCreate",
+    "prototype": "DWORD __stdcall(DWORD dwVersion, LPVOID *lplpNewHeader)",
+    "rank_score": 404,
+    "size": 116,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MprInfoDelete",
+    "ea": "0x18002d708",
+    "function_file": "functions/18002d708_MprInfoDelete.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "MprInfoDelete",
+    "prototype": "DWORD __stdcall(LPVOID lpHeader)",
+    "rank_score": 404,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 12,
+    "demangled": "LogPPPPacket",
+    "ea": "0x180012a20",
+    "function_file": "functions/180012a20_LogPPPPacket.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime"
+    ],
+    "matched_strings": [
+      "Protocol specific",
+      "Protocol specific",
+      "Protocol specific",
+      "%hsProtocol = %hs, Type = %hs, Length = 0x%x, Id = 0x%x, Port = %d"
+    ],
+    "name": "LogPPPPacket",
+    "prototype": "char __fastcall(int, __int64, unsigned __int8 *, unsigned int)",
+    "rank_score": 394,
+    "size": 812,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "FsmSendConfigResult",
+    "ea": "0x18000d8b4",
+    "function_file": "functions/18000d8b4_FsmSendConfigResult.md",
+    "matched_imports": [
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "CoId=%hs: Layer=%hs: SubLayer=%hs: The connection attempt failed on port: %hs because of the authentication protocol selected. Check to see if the authentication protocol is supported in the operating systems at the client and server ends of the connection %d",
+      "The control protocol for %x, returned error %d",
+      "while making a configure result on port %d"
+    ],
+    "name": "FsmSendConfigResult",
+    "prototype": "_BOOL8 __fastcall(__int64, __int64, __int64, _DWORD *)",
+    "rank_score": 360,
+    "size": 1125,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "ProcessProtocolEvent",
+    "ea": "0x180017220",
+    "function_file": "functions/180017220_ProcessProtocolEvent.md",
+    "matched_imports": [
+      "rtutils!RouterLogEventStringA"
+    ],
+    "matched_strings": [
+      "Processing protocol event",
+      "Unknown Protocol %d",
+      "RasCpInit(TRUE) for protocol 0x%x returned error %d"
+    ],
+    "name": "ProcessProtocolEvent",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 351,
+    "size": 742,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "NakCheck",
+    "ea": "0x18001fc1c",
+    "function_file": "functions/18001fc1c_NakCheck.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPCP: Naking IP compression",
+      "IPCP: RasSrvrAcquireAddress(%08x)...",
+      "IPCP: RasSrvrAcquireAddress done(%d)",
+      "IPCP: RasSrvrAcquireAddress done(%d)",
+      "IPCP: 3rd party DLL changed IP",
+      "IPCP: RasSrvrAcquireAddress(0)..."
+    ],
+    "name": "NakCheck",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *, __int64, __int64, _DWORD *, unsigned int)",
+    "rank_score": 284,
+    "size": 1899,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ProcessChangeNotification",
+    "ea": "0x1800152d0",
+    "function_file": "functions/1800152d0_ProcessChangeNotification.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [
+      "ChangeNotification for Protocol 0x%x failed, error=%d"
+    ],
+    "name": "ProcessChangeNotification",
+    "prototype": "",
+    "rank_score": 281,
+    "size": 335,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 19,
+    "demangled": "RemoveFromTimerQ",
+    "ea": "0x18000f984",
+    "function_file": "functions/18000f984_RemoveFromTimerQ.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "RemoveFromTimerQ called portid=%d,Id=%d,Protocol=%x,EventType=%d,fAuth=%d"
+    ],
+    "name": "RemoveFromTimerQ",
+    "prototype": "int __fastcall(unsigned int, unsigned int, int, int, int)",
+    "rank_score": 276,
+    "size": 369,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "ResetNetBTConfigInfo",
+    "ea": "0x180020920",
+    "function_file": "functions/180020920_ResetNetBTConfigInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "IPCP: ResetNetBTConfigInfo ..."
+    ],
+    "name": "ResetNetBTConfigInfo",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 264,
+    "size": 502,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetLocalComputerName",
+    "ea": "0x18001148c",
+    "function_file": "functions/18001148c_GetLocalComputerName.md",
+    "matched_imports": [
+      "api-ms-win-core-kernel32-legacy-l1-1-0!GetComputerNameA"
+    ],
+    "matched_strings": [
+      "GetLocalComputerName: StringCchPrintfA Failed"
+    ],
+    "name": "GetLocalComputerName",
+    "prototype": "int __fastcall(STRSAFE_LPSTR pszDest)",
+    "rank_score": 259,
+    "size": 267,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IpcpMakeConfigResult",
+    "ea": "0x18001e830",
+    "function_file": "functions/18001e830_IpcpMakeConfigResult.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPCP: IpcpMakeConfigResult for...",
+      "Dumping Bytes IpcpMakeConfigResult",
+      "IPCP: ConfigResult...",
+      "IPCP: ConfigResult...",
+      "DumpingBytes ConfigResult",
+      "DumpingBytes ConfigResult"
+    ],
+    "name": "IpcpMakeConfigResult",
+    "prototype": "",
+    "rank_score": 259,
+    "size": 517,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "StartAutoDisconnectForPort",
+    "ea": "0x18001427c",
+    "function_file": "functions/18001427c_StartAutoDisconnectForPort.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [],
+    "name": "StartAutoDisconnectForPort",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 232,
+    "size": 1186,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 25,
+    "demangled": "TraceHlp",
+    "ea": "0x18003230c",
+    "function_file": "functions/18003230c_TraceHlp.md",
+    "matched_imports": [
+      "rtutils!TraceVprintfExA"
+    ],
+    "matched_strings": [],
+    "name": "TraceHlp",
+    "prototype": "__int64 __fastcall(LPCSTR lpszFormat)",
+    "rank_score": 225,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "RasFreeEapConfigErrorMemory",
+    "ea": "0x18002c464",
+    "function_file": "functions/18002c464_RasFreeEapConfigErrorMemory.md",
+    "matched_imports": [
+      "eappcfg!EapHostPeerFreeErrorMemory"
+    ],
+    "matched_strings": [],
+    "name": "RasFreeEapConfigErrorMemory",
+    "prototype": "void __fastcall(EAP_ERROR *pEapError)",
+    "rank_score": 217,
+    "size": 135,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RasFreeEapConfigInputFieldArrayFields",
+    "ea": "0x18002c4f4",
+    "function_file": "functions/18002c4f4_RasFreeEapConfigInputFieldArrayFields.md",
+    "matched_imports": [
+      "api-ms-win-core-string-obsolete-l1-1-0!lstrlenW"
+    ],
+    "matched_strings": [],
+    "name": "RasFreeEapConfigInputFieldArrayFields",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 215,
+    "size": 235,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "NsiGetCompartmentIdForRoutingDomain",
+    "ea": "0x18002dc44",
+    "function_file": "functions/18002dc44_NsiGetCompartmentIdForRoutingDomain.md",
+    "matched_imports": [
+      "NSI!NsiGetParameter"
+    ],
+    "matched_strings": [],
+    "name": "NsiGetCompartmentIdForRoutingDomain",
+    "prototype": "__int64 __fastcall(_QWORD *, _DWORD *)",
+    "rank_score": 214,
+    "size": 177,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProcessStopPPP",
+    "ea": "0x180018160",
+    "function_file": "functions/180018160_ProcessStopPPP.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!ExitThread"
+    ],
+    "matched_strings": [],
+    "name": "ProcessStopPPP",
+    "prototype": "void __noreturn()",
+    "rank_score": 213,
+    "size": 59,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x1800046b8",
+    "function_file": "functions/1800046b8_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 212,
+    "size": 32,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 12,
+    "demangled": "WPP_SF_",
+    "ea": "0x18002cbac",
+    "function_file": "functions/18002cbac_WPP_SF.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 212,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "RasAuthAttributeCreate",
+    "ea": "0x18001ac50",
+    "function_file": "functions/18001ac50_RasAuthAttributeCreate.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "RasAuthAttributeCreate",
+    "prototype": "_DWORD *__fastcall(unsigned int)",
+    "rank_score": 209,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "RasAuthAttributeCopy",
+    "ea": "0x18001ab0c",
+    "function_file": "functions/18001ab0c_RasAuthAttributeCopy.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "RasAuthAttributeCopy",
+    "prototype": "_DWORD *__fastcall(_DWORD *)",
+    "rank_score": 208,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "RasAuthAttributeCopyWithAlloc",
+    "ea": "0x18001aba0",
+    "function_file": "functions/18001aba0_RasAuthAttributeCopyWithAlloc.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "RasAuthAttributeCopyWithAlloc",
+    "prototype": "_DWORD *__fastcall(_DWORD *, unsigned int)",
+    "rank_score": 207,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SetAllParameters",
+    "ea": "0x18002dda0",
+    "function_file": "functions/18002dda0_SetAllParameters.md",
+    "matched_imports": [
+      "NSI!NsiSetAllParametersEx"
+    ],
+    "matched_strings": [],
+    "name": "SetAllParameters",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 144,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "WPP_SF_d",
+    "ea": "0x18002cbe4",
+    "function_file": "functions/18002cbe4_WPP_SF_d.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 207,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "McGenEventWrite_EventWriteTransfer",
+    "ea": "0x18000310c",
+    "function_file": "functions/18000310c_McGenEventWrite_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 84,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "FsmInit",
+    "ea": "0x18000cf3c",
+    "function_file": "functions/18000cf3c_FsmInit.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmInit called for protocol = %x, port = %d",
+      "FsmInit for protocol = %x Configuration 0x%x ",
+      "FsmInit for protocol = %x Configuration 0x%x",
+      "FsmInit for protocol = %x failed with error %d"
+    ],
+    "name": "FsmInit",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 201,
+    "size": 1291,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Ipv6cpConfigRejReceived",
+    "ea": "0x180022b90",
+    "function_file": "functions/180022b90_Ipv6cpConfigRejReceived.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Ip6cpConfigRejReceived",
+      "Ipv6cpConfigRejReceived: Reject received for Interface Id",
+      "Ipv6cpConfigRejReceived: Rejected an option that we did not send.  Terminating PPP",
+      "Ip6cpConfigRejReceived: done %d"
+    ],
+    "name": "Ipv6cpConfigRejReceived",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *)",
+    "rank_score": 177,
+    "size": 352,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "LcpThisLayerUp",
+    "ea": "0x180007bd0",
+    "function_file": "functions/180007bd0_LcpThisLayerUp.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "PPP Multilink",
+      "\tRecv Framing = %hs,SSHF=%hs,MRRU=%d,LinkDiscrim=%x",
+      "\tSend Framing = %hs,SSHF=%hs,MRRU=%d,LinkDiscrim=%x"
+    ],
+    "name": "LcpThisLayerUp",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 151,
+    "size": 1889,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 2,
+    "demangled": "SetUserAuthorizedAttributes",
+    "ea": "0x18000380c",
+    "function_file": "functions/18000380c_SetUserAuthorizedAttributes.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Tunnel type configuration mismatch, returning ERROR_WRONG_TUNNEL_TYPE",
+      "Service Type %d is not of type Framed"
+    ],
+    "name": "SetUserAuthorizedAttributes",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, int, __int64)",
+    "rank_score": 145,
+    "size": 2494,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IpcpConfigAckReceived",
+    "ea": "0x18001d3c0",
+    "function_file": "functions/18001d3c0_IpcpConfigAckReceived.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPCP: IpcpConfigAckReceived...",
+      "DumpingBytes IpcpConfigAckReceived",
+      "IPCP: IpcpConfigAckReceived done(%d)"
+    ],
+    "name": "IpcpConfigAckReceived",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *)",
+    "rank_score": 141,
+    "size": 776,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IpcpMakeConfigRequest",
+    "ea": "0x18001e5b0",
+    "function_file": "functions/18001e5b0_IpcpMakeConfigRequest.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPCP: IpcpMakeConfigRequest",
+      "IPCP: ConfigRequest...",
+      "Dumping Bytes ConfigRequest"
+    ],
+    "name": "IpcpMakeConfigRequest",
+    "prototype": "__int64 __fastcall(__int64, _BYTE *)",
+    "rank_score": 139,
+    "size": 622,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Ipv6cpMakeConfigRequest",
+    "ea": "0x1800232c0",
+    "function_file": "functions/1800232c0_Ipv6cpMakeConfigRequest.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Ip6cpMakeConfigRequest retry count = %d",
+      "IPv6CP: ConfigRequest...",
+      "DumpingBytes ConfigRequest"
+    ],
+    "name": "Ipv6cpMakeConfigRequest",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 139,
+    "size": 385,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Ipv6cpConfigAckReceived",
+    "ea": "0x180022890",
+    "function_file": "functions/180022890_Ipv6cpConfigAckReceived.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Ipv6cpConfigAckReceived",
+      "Invalid Packet received in configack",
+      "Ipv6cpConfigAckReceived: done %d"
+    ],
+    "name": "Ipv6cpConfigAckReceived",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 137,
+    "size": 378,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "ApplyIpcpSettings",
+    "ea": "0x18001bab4",
+    "function_file": "functions/18001bab4_ApplyIpcpSettings.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPCP:RasUpdateDefaultRouteSettings failed. Error %d",
+      "IPCP:RasUpdateDefaultRouteSettings success"
+    ],
+    "name": "ApplyIpcpSettings",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, _DWORD *)",
+    "rank_score": 133,
+    "size": 1793,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 7,
+    "demangled": "FsmThisLayerFinished",
+    "ea": "0x18000e7a4",
+    "function_file": "functions/18000e7a4_FsmThisLayerFinished.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmThisLayerFinished called for protocol = %x, port = %d",
+      "FsmThisLayerFinished called for protocol = %x, port = %d: %d"
+    ],
+    "name": "FsmThisLayerFinished",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 131,
+    "size": 998,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 10,
+    "demangled": "FsmThisLayerDown",
+    "ea": "0x18000e540",
+    "function_file": "functions/18000e540_FsmThisLayerDown.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmThisLayerDown called for protocol = %x, port = %d",
+      "FsmThisLayerDown for protocol=%x,port=%d,RetCode=%d"
+    ],
+    "name": "FsmThisLayerDown",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 126,
+    "size": 606,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 51,
+    "demangled": "memcpy_0",
+    "ea": "0x180033a80",
+    "function_file": "functions/180033a80_memcpy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 194,
+    "demangled": "memset_0",
+    "ea": "0x180001d3e",
+    "function_file": "functions/180001d3e_memset_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 8,
+    "demangled": "FsmSendConfigReq",
+    "ea": "0x18000d6b4",
+    "function_file": "functions/18000d6b4_FsmSendConfigReq.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "The control protocol for %x, returned error %d",
+      "while making a configure request on port %d"
+    ],
+    "name": "FsmSendConfigReq",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 123,
+    "size": 503,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ReceiveProtocolRej",
+    "ea": "0x18000b2e8",
+    "function_file": "functions/18000b2e8_ReceiveProtocolRej.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "PPP Protocol Reject, Protocol = %x",
+      "Protocol Rej silently discarded on port %d. Lcp not open"
+    ],
+    "name": "ReceiveProtocolRej",
+    "prototype": "unsigned int __fastcall(__int64, unsigned __int8 *)",
+    "rank_score": 118,
+    "size": 654,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "InitializeNCPs",
+    "ea": "0x180012104",
+    "function_file": "functions/180012104_InitializeNCPs.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmInit for IPv4 CP failed as the VPN server is not configured for IPv4",
+      "FsmInit for IPv4 CP failed as the VPN server is not configured for IPv6"
+    ],
+    "name": "InitializeNCPs",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 116,
+    "size": 864,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "ReceiveConfigAck",
+    "ea": "0x180009fd0",
+    "function_file": "functions/180009fd0_ReceiveConfigAck.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Config Ack rcvd. on port %d silently discarded. Invalid Id",
+      "Illegal transition->ConfigAck received while in %hs state"
+    ],
+    "name": "ReceiveConfigAck",
+    "prototype": "unsigned int __fastcall(__int64, unsigned int, int *, _BYTE *)",
+    "rank_score": 116,
+    "size": 681,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "FsmOpen",
+    "ea": "0x18000c234",
+    "function_file": "functions/18000c234_FsmOpen.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmOpen event received for protocol %x on port %d",
+      "Illegal transition->FsmOpen received while in %hs state"
+    ],
+    "name": "FsmOpen",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 113,
+    "size": 430,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o___stdio_common_vsprintf_0",
+    "ea": "0x180001c8a",
+    "function_file": "functions/180001c8a_o_stdio_common_vsprintf_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vsprintf"
+    ],
+    "matched_strings": [],
+    "name": "_o___stdio_common_vsprintf_0",
+    "prototype": "int __cdecl(unsigned __int64 Options, char *Buffer, size_t BufferCount, const char *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o___stdio_common_vswprintf_0",
+    "ea": "0x180001c96",
+    "function_file": "functions/180001c96_o_stdio_common_vswprintf_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+    ],
+    "matched_strings": [],
+    "name": "_o___stdio_common_vswprintf_0",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__configure_narrow_argv_0",
+    "ea": "0x180001cae",
+    "function_file": "functions/180001cae_o_configure_narrow_argv_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_o__configure_narrow_argv_0",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__seh_filter_dll_0",
+    "ea": "0x180001cde",
+    "function_file": "functions/180001cde_o_seh_filter_dll_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_o__seh_filter_dll_0",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "FsmTimeoutConfRecv",
+    "ea": "0x18000cc7c",
+    "function_file": "functions/18000cc7c_FsmTimeoutConfRecv.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Peer Conf Recv timeout event received for portid=%d,Id=%d,Protocol=%x,fAuth=%d",
+      "We have sent the Ack, but not received the other side conf, We should complete this Layer forportid=%d,Id=%d,Protocol=%x,fAuth=%d"
+    ],
+    "name": "FsmTimeoutConfRecv",
+    "prototype": "void *__fastcall(__int64, __int64, unsigned int, int)",
+    "rank_score": 110,
+    "size": 324,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "IpcpConfigRejReceived",
+    "ea": "0x18001d940",
+    "function_file": "functions/18001d940_IpcpConfigRejReceived.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPCP: IpcpConfigRejReceived",
+      "IPCP: IP compression was rejected"
+    ],
+    "name": "IpcpConfigRejReceived",
+    "prototype": "__int64 __fastcall(_DWORD *, unsigned __int8 *)",
+    "rank_score": 108,
+    "size": 864,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "memcmp_0",
+    "ea": "0x180033a74",
+    "function_file": "functions/180033a74_memcmp_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memcmp"
+    ],
+    "matched_strings": [],
+    "name": "memcmp_0",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 108,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "CompletionRoutine",
+    "ea": "0x180009920",
+    "function_file": "functions/180009920_CompletionRoutine.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CompletionRoutine called for protocol %x",
+      "The control protocol for %x on port %d, returned error %d"
+    ],
+    "name": "CompletionRoutine",
+    "prototype": "",
+    "rank_score": 103,
+    "size": 387,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "FsmReset",
+    "ea": "0x18000d450",
+    "function_file": "functions/18000d450_FsmReset.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmReset called for protocol = %x, port = %d",
+      "Reset for protocol = %x failed with error %d"
+    ],
+    "name": "FsmReset",
+    "prototype": "",
+    "rank_score": 103,
+    "size": 397,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "Ipv6cpMakeConfigResult",
+    "ea": "0x180023450",
+    "function_file": "functions/180023450_Ipv6cpMakeConfigResult.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPv6CPMakeConfigResult",
+      "IPv6CPMakeConfigResult: done %d"
+    ],
+    "name": "Ipv6cpMakeConfigResult",
+    "prototype": "",
+    "rank_score": 103,
+    "size": 685,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "ProcessRemoveQuarantine",
+    "ea": "0x180017cf0",
+    "function_file": "functions/180017cf0_ProcessRemoveQuarantine.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ProcessRemoveQuarantine: removing quarantine-session-timer",
+      "ProcessRemoveQuarantine: adding session timeout %d"
+    ],
+    "name": "ProcessRemoveQuarantine",
+    "prototype": "",
+    "rank_score": 100,
+    "size": 348,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "Ipv6cpConfigNakReceived",
+    "ea": "0x180022a10",
+    "function_file": "functions/180022a10_Ipv6cpConfigNakReceived.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Ip6cpConfigNakReceived",
+      "Ip6cpConfigNakReceived: done %d"
+    ],
+    "name": "Ipv6cpConfigNakReceived",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 99,
+    "size": 365,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "RasTcpSetDhcpRoutes",
+    "ea": "0x180032fa4",
+    "function_file": "functions/180032fa4_RasTcpSetDhcpRoutes.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RasTcpSetDhcpRoutes: invalid destination descriptor first byte %d",
+      "RasTcpSetDhcpRoutes: invalid destination descriptor first byte %d"
+    ],
+    "name": "RasTcpSetDhcpRoutes",
+    "prototype": "unsigned __int64 __fastcall(unsigned int *, DWORD, int)",
+    "rank_score": 95,
+    "size": 857,
+    "tags": []
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "FsmTimeout",
+    "ea": "0x18000c8d4",
+    "function_file": "functions/18000c8d4_FsmTimeout.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Recv timeout event received for portid=%d,Id=%d,Protocol=%x,fAuth=%d"
+    ],
+    "name": "FsmTimeout",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, unsigned int)",
+    "rank_score": 82,
+    "size": 928,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "ProcessTimeout",
+    "ea": "0x1800181b0",
+    "function_file": "functions/1800181b0_ProcessTimeout.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Closing down since completion routine not called"
+    ],
+    "name": "ProcessTimeout",
+    "prototype": "",
+    "rank_score": 77,
+    "size": 545,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "FsmReceive",
+    "ea": "0x18000c3e8",
+    "function_file": "functions/18000c3e8_FsmReceive.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Non-LCP packet received when LCP is not opened"
+    ],
+    "name": "FsmReceive",
+    "prototype": "unsigned __int64 __fastcall(__int64, unsigned __int8 *, unsigned int)",
+    "rank_score": 76,
+    "size": 1253,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 12,
+    "demangled": "FsmClose",
+    "ea": "0x18000be68",
+    "function_file": "functions/18000be68_FsmClose.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmClose event received for protocol %x on port %d"
+    ],
+    "name": "FsmClose",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 75,
+    "size": 480,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "FsmConfigResultReceived",
+    "ea": "0x180009aac",
+    "function_file": "functions/180009aac_FsmConfigResultReceived.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "The control protocol for %x on port %d returned error %d"
+    ],
+    "name": "FsmConfigResultReceived",
+    "prototype": "__int64 __fastcall(__int64, __int64, _BYTE *)",
+    "rank_score": 74,
+    "size": 528,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "ReceiveConfigNakRej",
+    "ea": "0x18000a280",
+    "function_file": "functions/18000a280_ReceiveConfigNakRej.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Config Nak/Rej on port %d silently discarded. Invalid Id"
+    ],
+    "name": "ReceiveConfigNakRej",
+    "prototype": "unsigned int __fastcall(__int64, unsigned int, int *, _BYTE *)",
+    "rank_score": 74,
+    "size": 558,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "ReceiveConfigReq",
+    "ea": "0x18000a4c0",
+    "function_file": "functions/18000a4c0_ReceiveConfigReq.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Illegal transition->ConfigReq received while in %hs state"
+    ],
+    "name": "ReceiveConfigReq",
+    "prototype": "int __fastcall(__int64, unsigned int, int *, __int64)",
+    "rank_score": 74,
+    "size": 526,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "FsmUp",
+    "ea": "0x18000cdc8",
+    "function_file": "functions/18000cdc8_FsmUp.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmUp event received for protocol %x on port %d"
+    ],
+    "name": "FsmUp",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 72,
+    "size": 363,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "FsmDown",
+    "ea": "0x18000c050",
+    "function_file": "functions/18000c050_FsmDown.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmDown event received for protocol %x on port %d"
+    ],
+    "name": "FsmDown",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 66,
+    "size": 478,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CcpCheckOption",
+    "ea": "0x1800258b0",
+    "function_file": "functions/1800258b0_CcpCheckOption.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Nak - Compression disabled"
+    ],
+    "name": "CcpCheckOption",
+    "prototype": "__int64 __fastcall(_DWORD *, __int64, _BYTE *, _DWORD *, int)",
+    "rank_score": 64,
+    "size": 1160,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "FsmSendIdentification",
+    "ea": "0x18000dfac",
+    "function_file": "functions/18000dfac_FsmSendIdentification.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Sending ComputerName Identification %hs"
+    ],
+    "name": "FsmSendIdentification",
+    "prototype": "_BOOL8 __fastcall(__int64, int)",
+    "rank_score": 64,
+    "size": 557,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "FsmThisLayerStarted",
+    "ea": "0x18000eb90",
+    "function_file": "functions/18000eb90_FsmThisLayerStarted.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "FsmThisLayerStarted called for protocol = %x, port = %d"
+    ],
+    "name": "FsmThisLayerStarted",
+    "prototype": "",
+    "rank_score": 62,
+    "size": 278,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "RejectCheck",
+    "ea": "0x18002066c",
+    "function_file": "functions/18002066c_RejectCheck.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPCP: Rejecting IP compression"
+    ],
+    "name": "RejectCheck",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *, _BYTE *, __int64, _DWORD *)",
+    "rank_score": 62,
+    "size": 684,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SetMsMppeSendRecvKeys",
+    "ea": "0x180003568",
+    "function_file": "functions/180003568_SetMsMppeSendRecvKeys.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RasCompressionSetInfo failed, Error=%d"
+    ],
+    "name": "SetMsMppeSendRecvKeys",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 61,
+    "size": 391,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DeActivateRasConfig",
+    "ea": "0x18001c1bc",
+    "function_file": "functions/18001c1bc_DeActivateRasConfig.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DeActivateRasConfig"
+    ],
+    "name": "DeActivateRasConfig",
+    "prototype": "__int64 __fastcall(_DWORD *)",
+    "rank_score": 60,
+    "size": 325,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SetMsChapMppeKeys",
+    "ea": "0x18000339c",
+    "function_file": "functions/18000339c_SetMsChapMppeKeys.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RasCompressionSetInfo failed, Error=%d"
+    ],
+    "name": "SetMsChapMppeKeys",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64 *, __int128 *, int, int)",
+    "rank_score": 60,
+    "size": 452,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SetNoMppeKeys",
+    "ea": "0x1800036f8",
+    "function_file": "functions/1800036f8_SetNoMppeKeys.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RasCompressionSetInfo(NULL) failed, Error=%d"
+    ],
+    "name": "SetNoMppeKeys",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 60,
+    "size": 267,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "IpcpConfigNakReceived",
+    "ea": "0x18001d6d0",
+    "function_file": "functions/18001d6d0_IpcpConfigNakReceived.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPCP: IpcpConfigNakReceived"
+    ],
+    "name": "IpcpConfigNakReceived",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *)",
+    "rank_score": 56,
+    "size": 613,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Ipv6cpNakCheck",
+    "ea": "0x180023704",
+    "function_file": "functions/180023704_Ipv6cpNakCheck.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Ipv6cpNakCheck: Already allocated what user wants. Just returning!"
+    ],
+    "name": "Ipv6cpNakCheck",
+    "prototype": "",
+    "rank_score": 52,
+    "size": 715,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "IpcpThisLayerUp",
+    "ea": "0x18001fb90",
+    "function_file": "functions/18001fb90_IpcpThisLayerUp.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IPCP: Link already up...ignored."
+    ],
+    "name": "IpcpThisLayerUp",
+    "prototype": "",
+    "rank_score": 43,
+    "size": 134,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "GetCpIndexFromProtocol",
+    "ea": "0x180011230",
+    "function_file": "functions/180011230_GetCpIndexFromProtocol.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetCpIndexFromProtocol",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 40,
+    "size": 63,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 13,
+    "demangled": "NotifyCaller",
+    "ea": "0x18001348c",
+    "function_file": "functions/18001348c_NotifyCaller.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NotifyCaller",
+    "prototype": "HRESULT __fastcall(__int64, unsigned int, unsigned int *)",
+    "rank_score": 40,
+    "size": 1274,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "GetConfiguredInfo",
+    "ea": "0x180010f00",
+    "function_file": "functions/180010f00_GetConfiguredInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetConfiguredInfo",
+    "prototype": "",
+    "rank_score": 37,
+    "size": 809,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 31,
+    "demangled": "GetPointerToCPCB",
+    "ea": "0x1800115d0",
+    "function_file": "functions/1800115d0_GetPointerToCPCB.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetPointerToCPCB",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 37,
+    "size": 130,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 199,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180001460",
+    "function_file": "functions/180001460_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 172,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180034010",
+    "function_file": "functions/180034010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 4,
+    "demangled": "CbWork",
+    "ea": "0x18000442c",
+    "function_file": "functions/18000442c_CbWork.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CbWork",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 34,
+    "size": 643,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001410",
+    "function_file": "functions/180001410_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 33,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "LcpMakeConfigResult",
+    "ea": "0x180007690",
+    "function_file": "functions/180007690_LcpMakeConfigResult.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LcpMakeConfigResult",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 619,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 11,
+    "demangled": "PortSendOrDisconnect",
+    "ea": "0x180013e50",
+    "function_file": "functions/180013e50_PortSendOrDisconnect.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PortSendOrDisconnect",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 30,
+    "size": 374,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 4,
+    "demangled": "FsmSendTermReq",
+    "ea": "0x18000e358",
+    "function_file": "functions/18000e358_FsmSendTermReq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FsmSendTermReq",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 28,
+    "size": 481,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 90,
+    "demangled": "McTemplateU0z_EventWriteTransfer",
+    "ea": "0x180003170",
+    "function_file": "functions/180003170_McTemplateU0z_EventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0z_EventWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 28,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch",
+    "ea": "0x1800012d4",
+    "function_file": "functions/1800012d4_dllmain_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_dispatch",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 28,
+    "size": 295,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "LcpConfigAckReceived",
+    "ea": "0x180007020",
+    "function_file": "functions/180007020_LcpConfigAckReceived.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LcpConfigAckReceived",
+    "prototype": "__int64 __fastcall(_DWORD *, unsigned __int8 *)",
+    "rank_score": 27,
+    "size": 281,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_after_initialize_c",
+    "ea": "0x1800015e8",
+    "function_file": "functions/1800015e8_scrt_dllmain_after_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_after_initialize_c",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach",
+    "ea": "0x180001148",
+    "function_file": "functions/180001148_dllmain_crt_process_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_attach",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 250,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 157,
+    "demangled": "FormatRRASErrorString",
+    "ea": "0x18002b0dc",
+    "function_file": "functions/18002b0dc_FormatRRASErrorString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FormatRRASErrorString",
+    "prototype": "HRESULT(wchar_t *, const wchar_t *, ...)",
+    "rank_score": 26,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_c",
+    "ea": "0x1800016d0",
+    "function_file": "functions/1800016d0_scrt_dllmain_uninitialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_c",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 48,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch",
+    "ea": "0x1800010f0",
+    "function_file": "functions/1800010f0_dllmain_crt_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_dispatch",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1800339a8",
+    "function_file": "functions/1800339a8_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "StringCbCopyA",
+    "ea": "0x1800041d0",
+    "function_file": "functions/1800041d0_StringCbCopyA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCbCopyA",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cbDest, STRSAFE_LPCSTR pszSrc)",
+    "rank_score": 22,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "MapEapHostErrorToRasError",
+    "ea": "0x18002bdf4",
+    "function_file": "functions/18002bdf4_MapEapHostErrorToRasError.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MapEapHostErrorToRasError",
+    "prototype": "__int64 __fastcall(unsigned int, __int64, __int64)",
+    "rank_score": 21,
+    "size": 1639,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_detach",
+    "ea": "0x180001248",
+    "function_file": "functions/180001248_dllmain_crt_process_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_detach",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 131,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "GetPCBPointerFromhPort",
+    "ea": "0x1800115a0",
+    "function_file": "functions/1800115a0_GetPCBPointerFromhPort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetPCBPointerFromhPort",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 20,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CcpMakeConfigResult",
+    "ea": "0x180026270",
+    "function_file": "functions/180026270_CcpMakeConfigResult.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CcpMakeConfigResult",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 624,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "GetUId",
+    "ea": "0x180011748",
+    "function_file": "functions/180011748_GetUId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetUId",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 19,
+    "size": 38,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NotifyCompletionOnBundledPorts",
+    "ea": "0x180013c48",
+    "function_file": "functions/180013c48_NotifyCompletionOnBundledPorts.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NotifyCompletionOnBundledPorts",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 18,
+    "size": 164,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FsmSendProtocolRej",
+    "ea": "0x18000e1e0",
+    "function_file": "functions/18000e1e0_FsmSendProtocolRej.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FsmSendProtocolRej",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 17,
+    "size": 176,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CcpConfigAckReceived",
+    "ea": "0x180025d40",
+    "function_file": "functions/180025d40_CcpConfigAckReceived.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CcpConfigAckReceived",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *)",
+    "rank_score": 16,
+    "size": 191,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "LcpConfigRejReceived",
+    "ea": "0x1800071f0",
+    "function_file": "functions/1800071f0_LcpConfigRejReceived.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LcpConfigRejReceived",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *)",
+    "rank_score": 16,
+    "size": 271,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x1800188a0",
+    "function_file": "functions/1800188a0_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __fastcall(ULONGLONG SourceId, __int64 IsEnabled, __int64 Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, ULONGLONG *CallbackContext)",
+    "rank_score": 16,
+    "size": 310,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "NsiGetRoutingDomainIdForCompartment",
+    "ea": "0x18002dcfc",
+    "function_file": "functions/18002dcfc_NsiGetRoutingDomainIdForCompartment.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiGetRoutingDomainIdForCompartment",
+    "prototype": "__int64 __fastcall(__int64, GUID *)",
+    "rank_score": 16,
+    "size": 26,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__scrt_is_ucrt_dll_in_use",
+    "ea": "0x180001c30",
+    "function_file": "functions/180001c30_scrt_is_ucrt_dll_in_use.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_is_ucrt_dll_in_use",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CcpConfigRejReceived",
+    "ea": "0x180025f60",
+    "function_file": "functions/180025f60_CcpConfigRejReceived.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CcpConfigRejReceived",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *)",
+    "rank_score": 15,
+    "size": 224,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_exception_filter",
+    "ea": "0x180001680",
+    "function_file": "functions/180001680_scrt_dllmain_exception_filter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_exception_filter",
+    "prototype": "__int64 __fastcall(int, int, int, int, unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 72,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CcpConfigNakReceived",
+    "ea": "0x180025e10",
+    "function_file": "functions/180025e10_CcpConfigNakReceived.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CcpConfigNakReceived",
+    "prototype": "__int64 __fastcall(_DWORD *, unsigned __int8 *)",
+    "rank_score": 14,
+    "size": 320,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GetCallbackPrivilegeFromRequest",
+    "ea": "0x180024a6c",
+    "function_file": "functions/180024a6c_GetCallbackPrivilegeFromRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetCallbackPrivilegeFromRequest",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, _DWORD *)",
+    "rank_score": 13,
+    "size": 152,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "LcpConfigNakReceived",
+    "ea": "0x180007140",
+    "function_file": "functions/180007140_LcpConfigNakReceived.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LcpConfigNakReceived",
+    "prototype": "__int64 __fastcall(_DWORD *, unsigned __int8 *)",
+    "rank_score": 13,
+    "size": 168,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "StringCchCopyW",
+    "ea": "0x180020b1c",
+    "function_file": "functions/180020b1c_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 13,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_attach",
+    "ea": "0x180001634",
+    "function_file": "functions/180001634_scrt_dllmain_crt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_attach",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CcpMakeConfigRequest",
+    "ea": "0x180026210",
+    "function_file": "functions/180026210_CcpMakeConfigRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CcpMakeConfigRequest",
+    "prototype": "__int64 __fastcall(__int64, _BYTE *, int)",
+    "rank_score": 12,
+    "size": 80,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "LcpMakeConfigRequest",
+    "ea": "0x180007630",
+    "function_file": "functions/180007630_LcpMakeConfigRequest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LcpMakeConfigRequest",
+    "prototype": "__int64 __fastcall(__int64, _BYTE *, int)",
+    "rank_score": 12,
+    "size": 80,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "NotifyCallerOfFailure",
+    "ea": "0x180013b54",
+    "function_file": "functions/180013b54_NotifyCallerOfFailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NotifyCallerOfFailure",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 12,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "PrintEapError",
+    "ea": "0x180028c68",
+    "function_file": "functions/180028c68_PrintEapError.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PrintEapError",
+    "prototype": "HRESULT __fastcall(int *, int *)",
+    "rank_score": 12,
+    "size": 178,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_before_initialize_c",
+    "ea": "0x180001624",
+    "function_file": "functions/180001624_scrt_dllmain_before_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_before_initialize_c",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 7,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_detach",
+    "ea": "0x180001664",
+    "function_file": "functions/180001664_scrt_dllmain_crt_thread_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_detach",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_critical",
+    "ea": "0x180001708",
+    "function_file": "functions/180001708_scrt_dllmain_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "initialize_msvcrt_compatibility",
+    "ea": "0x1800010c0",
+    "function_file": "functions/1800010c0_initialize_msvcrt_compatibility.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "initialize_msvcrt_compatibility",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__scrt_stub_for_is_c_termination_complete",
+    "ea": "0x180001e00",
+    "function_file": "functions/180001e00_scrt_stub_for_is_c_termination_complete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_is_c_termination_complete",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "RasAuthAttributeGet",
+    "ea": "0x18001ae70",
+    "function_file": "functions/18001ae70_RasAuthAttributeGet.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasAuthAttributeGet",
+    "prototype": "_DWORD *__fastcall(int, __int64)",
+    "rank_score": 10,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "RasAuthAttributeGetVendorSpecific",
+    "ea": "0x18001b424",
+    "function_file": "functions/18001b424_RasAuthAttributeGetVendorSpecific.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasAuthAttributeGetVendorSpecific",
+    "prototype": "_DWORD *__fastcall(__int64, __int64, __int64)",
+    "rank_score": 10,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "RasAuthAttributeGetFirst",
+    "ea": "0x18001b3d0",
+    "function_file": "functions/18001b3d0_RasAuthAttributeGetFirst.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasAuthAttributeGetFirst",
+    "prototype": "_DWORD *__fastcall(int, __int64)",
+    "rank_score": 9,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "StringCchCopyA",
+    "ea": "0x18000bdd0",
+    "function_file": "functions/18000bdd0_StringCchCopyA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyA",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cchDest, STRSAFE_LPCSTR pszSrc)",
+    "rank_score": 9,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "RasAuthAttributeGetNext",
+    "ea": "0x18001b3f8",
+    "function_file": "functions/18001b3f8_RasAuthAttributeGetNext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasAuthAttributeGetNext",
+    "prototype": "_DWORD *__fastcall(_DWORD **, int)",
+    "rank_score": 8,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "StringCchPrintfW",
+    "ea": "0x180014b1c",
+    "function_file": "functions/180014b1c_StringCchPrintfW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchPrintfW",
+    "prototype": "HRESULT(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszFormat, ...)",
+    "rank_score": 8,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0zqbr1_EventWriteTransfer",
+    "ea": "0x1800133e0",
+    "function_file": "functions/1800133e0_McTemplateU0zqbr1_EventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0zqbr1_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 164,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "StringCbCopyNA",
+    "ea": "0x18000bd94",
+    "function_file": "functions/18000bd94_StringCbCopyNA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCbCopyNA",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cbDest, STRSAFE_PCNZCH pszSrc, size_t cbToCopy)",
+    "rank_score": 5,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "__local_stdio_printf_options",
+    "ea": "0x180001094",
+    "function_file": "functions/180001094_local_stdio_printf_options.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__local_stdio_printf_options",
+    "prototype": "unsigned __int64 *__cdecl()",
+    "rank_score": 5,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "__scrt_stub_for_acrt_uninitialize_critical",
+    "ea": "0x180001df4",
+    "function_file": "functions/180001df4_scrt_stub_for_acrt_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_acrt_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "RemovePcbFromTable",
+    "ea": "0x1800141bc",
+    "function_file": "functions/1800141bc_RemovePcbFromTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RemovePcbFromTable",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 4,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RasPPPSrvrAcquireAddress",
+    "ea": "0x18001870c",
+    "function_file": "functions/18001870c_RasPPPSrvrAcquireAddress.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasPPPSrvrAcquireAddress",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, __int64, __int64, __int64, __int128 *)",
+    "rank_score": 3,
+    "size": 94,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCopyWorkerA",
+    "ea": "0x18000be18",
+    "function_file": "functions/18000be18_StringCopyWorkerA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerA",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZCH pszSrc, size_t cchToCopy)",
+    "rank_score": 3,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCopyWorkerW",
+    "ea": "0x1800310c0",
+    "function_file": "functions/1800310c0_StringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 3,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "StringCbCopyW",
+    "ea": "0x180031010",
+    "function_file": "functions/180031010_StringCbCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCbCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cbDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 2,
+    "size": 27,
+    "tags": []
+  }
+]

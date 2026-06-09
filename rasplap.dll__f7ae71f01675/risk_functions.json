@@ -1,0 +1,1882 @@
+[
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetSmartCardCertificate(ushort *,_CERT_HASH *,_CRYPT_KEY_PROV_INFO *)",
+    "ea": "0x18000627c",
+    "function_file": "functions/18000627c_GetSmartCardCertificate_ushort_CERT_HASH_CRYPT_KEY_PROV_INFO.md",
+    "matched_imports": [
+      "ADVAPI32!CryptAcquireContextW",
+      "ADVAPI32!CryptDestroyKey",
+      "ADVAPI32!CryptGetKeyParam",
+      "ADVAPI32!CryptGetUserKey",
+      "ADVAPI32!CryptReleaseContext",
+      "CRYPT32!CertCreateCertificateContext",
+      "CRYPT32!CertFreeCertificateContext",
+      "CRYPT32!CertGetCertificateContextProperty",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "CertCreateCertificateContext failed and returned 0x%x",
+      "Hash compare failed"
+    ],
+    "name": "?GetSmartCardCertificate@@YAHPEAGPEAU_CERT_HASH@@PEAU_CRYPT_KEY_PROV_INFO@@@Z",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc, struct _CERT_HASH *, struct _CRYPT_KEY_PROV_INFO *)",
+    "rank_score": 5903,
+    "size": 968,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CRasCredential::Connect(IQueryContinueWithStatus *)",
+    "ea": "0x180002250",
+    "function_file": "functions/180002250_CRasCredential_Connect_IQueryContinueWithStatus.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateThread",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!Sleep",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "CRasCredential::Connect:Skip Raslogon as it is already connected",
+      "CRasCredential::Connect:Failed to CreateThread: hr = %#x"
+    ],
+    "name": "?Connect@CRasCredential@@UEAAJPEAUIQueryContinueWithStatus@@@Z",
+    "prototype": "__int64 __fastcall(CRasCredential *__hidden this, struct IQueryContinueWithStatus *)",
+    "rank_score": 5708,
+    "size": 1634,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WriteUserPreferences",
+    "ea": "0x18000a4f0",
+    "function_file": "functions/18000a4f0_WriteUserPreferences.md",
+    "matched_imports": [
+      "KERNEL32!RegDeleteValueW",
+      "KERNEL32!RegSetValueExW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "SkipConnectComplete",
+      "RedialAttempts",
+      "RedialOnLinkFailure",
+      "PersonalPhonebookPath",
+      "AlternatePhonebookPath",
+      "WriteUserPreferences",
+      "WriteUserPreferences=%d"
+    ],
+    "name": "WriteUserPreferences",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 5117,
+    "size": 1495,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GetScardCertInfo",
+    "ea": "0x18000688c",
+    "function_file": "functions/18000688c_GetScardCertInfo.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "WinSCard!SCardEstablishContext",
+      "WinSCard!SCardFreeMemory",
+      "WinSCard!SCardGetCardTypeProviderNameW",
+      "WinSCard!SCardGetStatusChangeW",
+      "WinSCard!SCardListCardsW",
+      "WinSCard!SCardListReadersW",
+      "WinSCard!SCardReleaseContext",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "Failed SCardListReaders: Error: %x",
+      "Reader: %S",
+      "No Smart card present in Reader: %S"
+    ],
+    "name": "GetScardCertInfo",
+    "prototype": "",
+    "rank_score": 3734,
+    "size": 963,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EnumerateRasEntries(_RAS_CONNECTION_INFO * *,ulong *)",
+    "ea": "0x180001a80",
+    "function_file": "functions/180001a80_EnumerateRasEntries_RAS_CONNECTION_INFO_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "RASAPI32!ClosePhonebookFile",
+      "RASAPI32!DwGetCustomAuthData",
+      "RASAPI32!GetPublicPhonebookPath",
+      "RASAPI32!ReadPhonebookFile",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "EnumerateRasEntries: Pbk path: %S",
+      "EnumerateRasEntries: ReadPhonebookFile returned %d entries",
+      "EnumerateRasEntries: Excluding entry [%S] as it is configured to use machine certs."
+    ],
+    "name": "?EnumerateRasEntries@@YAKPEAPEAU_RAS_CONNECTION_INFO@@PEAK@Z",
+    "prototype": "unsigned int __fastcall(struct _RAS_CONNECTION_INFO **, unsigned int *)",
+    "rank_score": 2942,
+    "size": 959,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "ReadUserPreferences",
+    "ea": "0x180009a30",
+    "function_file": "functions/180009a30_ReadUserPreferences.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree",
+      "KERNEL32!RegQueryValueExW",
+      "KERNEL32!lstrlenW",
+      "USER32!CharNextW",
+      "USER32!CharPrevW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "ReadUserPreferences",
+      "SkipConnectComplete",
+      "RedialAttempts",
+      "RedialOnLinkFailure",
+      "PersonalPhonebookPath",
+      "AlternatePhonebookPath",
+      "ReadUserPreferences=%d"
+    ],
+    "name": "ReadUserPreferences",
+    "prototype": "__int64 __fastcall(HKEY hKey, void *)",
+    "rank_score": 2118,
+    "size": 1140,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "EnumerateRasConnections(tagRASCONNW * *,ulong *)",
+    "ea": "0x180005778",
+    "function_file": "functions/180005778_EnumerateRasConnections_tagRASCONNW_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "RASAPI32!RasEnumConnectionsW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [],
+    "name": "?EnumerateRasConnections@@YAKPEAPEAUtagRASCONNW@@PEAK@Z",
+    "prototype": "unsigned int(struct tagRASCONNW **, unsigned int *)",
+    "rank_score": 2008,
+    "size": 388,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "RasConnect",
+    "ea": "0x180005d70",
+    "function_file": "functions/180005d70_RasConnect.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!LoadLibraryExW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "rasdlg.dll"
+    ],
+    "name": "RasConnect",
+    "prototype": "ULONG __stdcall(PVOID Parameter)",
+    "rank_score": 1876,
+    "size": 974,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SetLocationList",
+    "ea": "0x18000a2b0",
+    "function_file": "functions/18000a2b0_SetLocationList.md",
+    "matched_imports": [
+      "KERNEL32!RegCloseKey",
+      "KERNEL32!RegCreateKeyExW",
+      "KERNEL32!RegDeleteKeyExW",
+      "KERNEL32!RegEnumKeyExW",
+      "KERNEL32!RegSetValueExW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [],
+    "name": "SetLocationList",
+    "prototype": "",
+    "rank_score": 1818,
+    "size": 569,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CRasCredential::ReportResult(long,long,ushort * *,_CREDENTIAL_PROVIDER_STATUS_ICON *)",
+    "ea": "0x180001ee0",
+    "function_file": "functions/180001ee0_CRasCredential_ReportResult_long_long_ushort_CREDENTIAL_PROVIDER_STATUS_ICON.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "CRasCredential::ReportResult failed to update SC remove policy registry key : hr = %x",
+      "CRasCredential::ReportResult failed to get scard readername."
+    ],
+    "name": "?ReportResult@CRasCredential@@UEAAJJJPEAPEAGPEAW4_CREDENTIAL_PROVIDER_STATUS_ICON@@@Z",
+    "prototype": "__int64 __usercall@<rax>(CRasCredential *__hidden this@<rcx>, int@<edx>, int@<r8d>, unsigned __int16 **@<r9>, enum _CREDENTIAL_PROVIDER_STATUS_ICON *)",
+    "rank_score": 1722,
+    "size": 555,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "GetCallbackList",
+    "ea": "0x180009588",
+    "function_file": "functions/180009588_GetCallbackList.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree",
+      "KERNEL32!RegCloseKey",
+      "KERNEL32!RegEnumKeyExW",
+      "KERNEL32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "GetCallbackList",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 1623,
+    "size": 500,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetIdentityFromSmartcard",
+    "ea": "0x180005b90",
+    "function_file": "functions/180005b90_GetIdentityFromSmartcard.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "RASAPI32!RasGetCustomAuthDataW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "Failed to allocate memory to read configuration blob: %d."
+    ],
+    "name": "GetIdentityFromSmartcard",
+    "prototype": "",
+    "rank_score": 1455,
+    "size": 313,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SetCallbackList",
+    "ea": "0x180009eac",
+    "function_file": "functions/180009eac_SetCallbackList.md",
+    "matched_imports": [
+      "KERNEL32!RegCloseKey",
+      "KERNEL32!RegCreateKeyExW",
+      "KERNEL32!RegDeleteKeyExW",
+      "KERNEL32!RegEnumKeyExW",
+      "KERNEL32!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "SetCallbackList",
+    "prototype": "",
+    "rank_score": 1420,
+    "size": 528,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180002fc4",
+    "function_file": "functions/180002fc4_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetLocationList",
+    "ea": "0x180009784",
+    "function_file": "functions/180009784_GetLocationList.md",
+    "matched_imports": [
+      "KERNEL32!RegCloseKey",
+      "KERNEL32!RegEnumKeyExW",
+      "KERNEL32!RegOpenKeyExW",
+      "msvcrt!_wtol"
+    ],
+    "matched_strings": [],
+    "name": "GetLocationList",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 1221,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetScardReaderActivityCount",
+    "ea": "0x180006c58",
+    "function_file": "functions/180006c58_GetScardReaderActivityCount.md",
+    "matched_imports": [
+      "KERNEL32!WaitForSingleObject",
+      "WinSCard!SCardAccessStartedEvent",
+      "WinSCard!SCardEstablishContext",
+      "WinSCard!SCardGetStatusChangeW",
+      "WinSCard!SCardReleaseContext",
+      "WinSCard!SCardReleaseStartedEvent"
+    ],
+    "matched_strings": [],
+    "name": "GetScardReaderActivityCount",
+    "prototype": "",
+    "rank_score": 1205,
+    "size": 250,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "KerbBuildScLogonInfo",
+    "ea": "0x180006d58",
+    "function_file": "functions/180006d58_KerbBuildScLogonInfo.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "Failed StringCchCopyW",
+      "Failed StringCchCopyW"
+    ],
+    "name": "KerbBuildScLogonInfo",
+    "prototype": "",
+    "rank_score": 1088,
+    "size": 691,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MoveLogonPreferences",
+    "ea": "0x180009918",
+    "function_file": "functions/180009918_MoveLogonPreferences.md",
+    "matched_imports": [
+      "KERNEL32!RegCloseKey",
+      "KERNEL32!RegOpenKeyExW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "MoveLogonPreferences=%d"
+    ],
+    "name": "MoveLogonPreferences",
+    "prototype": "",
+    "rank_score": 1069,
+    "size": 271,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DwGetUserPreferences",
+    "ea": "0x180009368",
+    "function_file": "functions/180009368_DwGetUserPreferences.md",
+    "matched_imports": [
+      "KERNEL32!RegCloseKey",
+      "KERNEL32!RegOpenKeyExW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "RegOpenKeyEx=%d"
+    ],
+    "name": "DwGetUserPreferences",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 1066,
+    "size": 243,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "StrDup",
+    "ea": "0x180008b94",
+    "function_file": "functions/180008b94_StrDup.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!lstrlenW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "StrDup: StringCchCopyEx failed with error 0x%x"
+    ],
+    "name": "StrDup",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 1047,
+    "size": 191,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DllGetClassObject",
+    "ea": "0x180001080",
+    "function_file": "functions/180001080_DllGetClassObject.md",
+    "matched_imports": [
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetLastError",
+      "ntdll!NtQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "DllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 1037,
+    "size": 322,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ScPolicyStoreLogonReaderInfo",
+    "ea": "0x180002114",
+    "function_file": "functions/180002114_ScPolicyStoreLogonReaderInfo.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!RegCloseKey",
+      "KERNEL32!RegCreateKeyExA",
+      "KERNEL32!RegSetValueExA"
+    ],
+    "matched_strings": [],
+    "name": "ScPolicyStoreLogonReaderInfo",
+    "prototype": "__int64 __fastcall(int, int, int, int, void *Src)",
+    "rank_score": 1027,
+    "size": 300,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "GetEapCredentialsInputType",
+    "ea": "0x180007288",
+    "function_file": "functions/180007288_GetEapCredentialsInputType.md",
+    "matched_imports": [
+      "eappcfg!EapHostPeerFreeMemory",
+      "eappcfg!EapHostPeerQueryCredentialInputFields"
+    ],
+    "matched_strings": [],
+    "name": "GetEapCredentialsInputType",
+    "prototype": "",
+    "rank_score": 832,
+    "size": 1473,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DwSetUserPreferences",
+    "ea": "0x180009464",
+    "function_file": "functions/180009464_DwSetUserPreferences.md",
+    "matched_imports": [
+      "KERNEL32!RegCloseKey",
+      "KERNEL32!RegCreateKeyExW",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [],
+    "name": "DwSetUserPreferences",
+    "prototype": "",
+    "rank_score": 825,
+    "size": 286,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SetRegMultiSz",
+    "ea": "0x18000ae90",
+    "function_file": "functions/18000ae90_SetRegMultiSz.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!RegSetValueExW",
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [],
+    "name": "SetRegMultiSz",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName)",
+    "rank_score": 815,
+    "size": 283,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RasDisconnect",
+    "ea": "0x180006144",
+    "function_file": "functions/180006144_RasDisconnect.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree",
+      "RASAPI32!RasHangUpW",
+      "msvcrt!_wcsicmp",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [],
+    "name": "RasDisconnect",
+    "prototype": "__int64 __fastcall(wchar_t *String2)",
+    "rank_score": 806,
+    "size": 303,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x1800030c0",
+    "function_file": "functions/1800030c0_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ScPolicyGetPolicyOption",
+    "ea": "0x180007014",
+    "function_file": "functions/180007014_ScPolicyGetPolicyOption.md",
+    "matched_imports": [
+      "KERNEL32!RegCloseKey",
+      "KERNEL32!RegOpenKeyExA",
+      "KERNEL32!RegQueryValueExA"
+    ],
+    "matched_strings": [
+      "ScRemoveOption"
+    ],
+    "name": "ScPolicyGetPolicyOption",
+    "prototype": "",
+    "rank_score": 663,
+    "size": 210,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CRasCredential::_GetSerializationUnlockLogon(_CREDENTIAL_PROVIDER_CREDENTIAL_SERIALIZATION *)",
+    "ea": "0x180004bd8",
+    "function_file": "functions/180004bd8_CRasCredential_GetSerializationUnlockLogon_CREDENTIAL_PROVIDER_CREDENTIAL_SERIALIZATION.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?_GetSerializationUnlockLogon@CRasCredential@@AEAAJPEAU_CREDENTIAL_PROVIDER_CREDENTIAL_SERIALIZATION@@@Z",
+    "prototype": "__int64 __fastcall(CRasCredential *__hidden this, struct _CREDENTIAL_PROVIDER_CREDENTIAL_SERIALIZATION *)",
+    "rank_score": 641,
+    "size": 394,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_IsBuiltInAdministrator",
+    "ea": "0x180004d68",
+    "function_file": "functions/180004d68_IsBuiltInAdministrator.md",
+    "matched_imports": [
+      "KERNEL32!CompareStringW",
+      "ole32!CoCreateInstance",
+      "ole32!PropVariantClear"
+    ],
+    "matched_strings": [],
+    "name": "_IsBuiltInAdministrator",
+    "prototype": "__int64 __fastcall(PCNZWCH lpString1)",
+    "rank_score": 625,
+    "size": 260,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CRasCredential::_UnformatUsername(void)",
+    "ea": "0x1800054ac",
+    "function_file": "functions/1800054ac_CRasCredential_UnformatUsername_void.md",
+    "matched_imports": [
+      "KERNEL32!GetComputerNameW",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "?_UnformatUsername@CRasCredential@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CRasCredential *__hidden this)",
+    "rank_score": 619,
+    "size": 404,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_DllMain.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount",
+      "rtutils!TraceDeregisterExA"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 612,
+    "size": 101,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetRegSz",
+    "ea": "0x18000add4",
+    "function_file": "functions/18000add4_GetRegSz.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "GetRegSz",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName)",
+    "rank_score": 604,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "CRasCredential::_UpdateConnectStatus(void)",
+    "ea": "0x1800028b8",
+    "function_file": "functions/1800028b8_CRasCredential_UpdateConnectStatus_void.md",
+    "matched_imports": [
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "CRasCredential::_UpdateConnectStatus for [%S] as Connected",
+      "CRasCredential::_UpdateConnectStatus for [%S] as Disconnected"
+    ],
+    "name": "?_UpdateConnectStatus@CRasCredential@@AEAAXXZ",
+    "prototype": "void __fastcall(CRasCredential *__hidden this)",
+    "rank_score": 499,
+    "size": 177,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CRasCredential::_KerbInteractivePwdLogonFill(_KERB_INTERACTIVE_LOGON *)",
+    "ea": "0x180004e74",
+    "function_file": "functions/180004e74_CRasCredential_KerbInteractivePwdLogonFill_KERB_INTERACTIVE_LOGON.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree",
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [],
+    "name": "?_KerbInteractivePwdLogonFill@CRasCredential@@AEAAJPEAU_KERB_INTERACTIVE_LOGON@@@Z",
+    "prototype": "__int64 __fastcall(CRasCredential *__hidden this, struct _KERB_INTERACTIVE_LOGON *)",
+    "rank_score": 417,
+    "size": 224,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_StringStringCoAllocCopy",
+    "ea": "0x18000542c",
+    "function_file": "functions/18000542c_StringStringCoAllocCopy.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "_StringStringCoAllocCopy",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 414,
+    "size": 119,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CRasProvider::GetFieldDescriptorAt(ulong,_CREDENTIAL_PROVIDER_FIELD_DESCRIPTOR * *)",
+    "ea": "0x180003e40",
+    "function_file": "functions/180003e40_CRasProvider_GetFieldDescriptorAt_ulong_CREDENTIAL_PROVIDER_FIELD_DESCRIPTOR.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?GetFieldDescriptorAt@CRasProvider@@UEAAJKPEAPEAU_CREDENTIAL_PROVIDER_FIELD_DESCRIPTOR@@@Z",
+    "prototype": "__int64 __fastcall(CRasProvider *__hidden this, unsigned int, struct _CREDENTIAL_PROVIDER_FIELD_DESCRIPTOR **)",
+    "rank_score": 413,
+    "size": 161,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "SetRegSz",
+    "ea": "0x18000afb4",
+    "function_file": "functions/18000afb4_SetRegSz.md",
+    "matched_imports": [
+      "KERNEL32!RegSetValueExW",
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [],
+    "name": "SetRegSz",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName)",
+    "rank_score": 412,
+    "size": 100,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 9,
+    "demangled": "__delayLoadHelper2",
+    "ea": "0x1800015c0",
+    "function_file": "functions/1800015c0_delayLoadHelper2.md",
+    "matched_imports": [
+      "KERNEL32!DelayLoadFailureHook",
+      "KERNEL32!ResolveDelayLoadedAPI"
+    ],
+    "matched_strings": [],
+    "name": "__delayLoadHelper2",
+    "prototype": "",
+    "rank_score": 309,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "StringCchCopyWrapW",
+    "ea": "0x1800090f4",
+    "function_file": "functions/1800090f4_StringCchCopyWrapW.md",
+    "matched_imports": [
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [
+      "StringCchCopy failed due to error 0x%x"
+    ],
+    "name": "StringCchCopyWrapW",
+    "prototype": "",
+    "rank_score": 244,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "_StringResourceStringCoAllocCopy",
+    "ea": "0x180005380",
+    "function_file": "functions/180005380_StringResourceStringCoAllocCopy.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "_StringResourceStringCoAllocCopy",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 163,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CRasCredential::_KerbInteractiveSCLogonPack(_KERB_CERTIFICATE_LOGON const &,uchar * *,ulong *)",
+    "ea": "0x180005244",
+    "function_file": "functions/180005244_CRasCredential_KerbInteractiveSCLogonPack_KERB_CERTIFICATE_LOGON_const_uchar_ulong.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?_KerbInteractiveSCLogonPack@CRasCredential@@AEAAJAEBU_KERB_CERTIFICATE_LOGON@@PEAPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(CRasCredential *__hidden this, const struct _KERB_CERTIFICATE_LOGON *, unsigned __int8 **, unsigned int *)",
+    "rank_score": 216,
+    "size": 307,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CRasCredential::_KerbInteractivePwdLogonPack(_KERB_INTERACTIVE_LOGON const &,uchar * *,ulong *)",
+    "ea": "0x180004f5c",
+    "function_file": "functions/180004f5c_CRasCredential_KerbInteractivePwdLogonPack_KERB_INTERACTIVE_LOGON_const_uchar_ulong.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?_KerbInteractivePwdLogonPack@CRasCredential@@AEAAJAEBU_KERB_INTERACTIVE_LOGON@@PEAPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(CRasCredential *__hidden this, const struct _KERB_INTERACTIVE_LOGON *, unsigned __int8 **, unsigned int *)",
+    "rank_score": 215,
+    "size": 261,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RasFreeEapConfigErrorMemory",
+    "ea": "0x180007f6c",
+    "function_file": "functions/180007f6c_RasFreeEapConfigErrorMemory.md",
+    "matched_imports": [
+      "eappcfg!EapHostPeerFreeErrorMemory"
+    ],
+    "matched_strings": [],
+    "name": "RasFreeEapConfigErrorMemory",
+    "prototype": "__int64 __fastcall(EAP_ERROR *pEapError)",
+    "rank_score": 215,
+    "size": 142,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 11,
+    "demangled": "WPP_SF_",
+    "ea": "0x180008518",
+    "function_file": "functions/180008518_WPP_SF.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "StringCchPrintfExW",
+    "ea": "0x180008ddc",
+    "function_file": "functions/180008ddc_StringCchPrintfExW.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "StringCchPrintfExW",
+    "prototype": "HRESULT(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPWSTR *ppszDestEnd, size_t *pcchRemaining, DWORD dwFlags, STRSAFE_LPCWSTR pszFormat, ...)",
+    "rank_score": 209,
+    "size": 404,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "DtlDestroyList",
+    "ea": "0x18000aba4",
+    "function_file": "functions/18000aba4_DtlDestroyList.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "DtlDestroyList",
+    "prototype": "__int64 __fastcall(HGLOBAL hMem)",
+    "rank_score": 208,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "WPP_SF_d",
+    "ea": "0x180008540",
+    "function_file": "functions/180008540_WPP_SF_d.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CreatePszNode",
+    "ea": "0x180008854",
+    "function_file": "functions/180008854_CreatePszNode.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "CreatePszNode",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "DtlCreateList",
+    "ea": "0x18000ab10",
+    "function_file": "functions/18000ab10_DtlCreateList.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "DtlCreateList",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DtlCreateSizedNode",
+    "ea": "0x18000ab44",
+    "function_file": "functions/18000ab44_DtlCreateSizedNode.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "DtlCreateSizedNode",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RasFreeEapMemory",
+    "ea": "0x180008000",
+    "function_file": "functions/180008000_RasFreeEapMemory.md",
+    "matched_imports": [
+      "eappcfg!EapHostPeerFreeMemory"
+    ],
+    "matched_strings": [],
+    "name": "RasFreeEapMemory",
+    "prototype": "__int64 __fastcall(BYTE *pData)",
+    "rank_score": 205,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CClassFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x180001600",
+    "function_file": "functions/180001600_CClassFactory_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [
+      "rtutils!TracePrintfExA"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@CClassFactory@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CClassFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 204,
+    "size": 216,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "GetRegDword",
+    "ea": "0x18000ac40",
+    "function_file": "functions/18000ac40_GetRegDword.md",
+    "matched_imports": [
+      "KERNEL32!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "GetRegDword",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 94,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_CoTaskMemAlloc",
+    "ea": "0x180003351",
+    "function_file": "functions/180003351_imp_load_CoTaskMemAlloc.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_CoTaskMemAlloc",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_CoTaskMemFree",
+    "ea": "0x180003375",
+    "function_file": "functions/180003375_imp_load_CoTaskMemFree.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_CoTaskMemFree",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_CertCreateCertificateContext",
+    "ea": "0x180003400",
+    "function_file": "functions/180003400_imp_load_CertCreateCertificateContext.md",
+    "matched_imports": [
+      "CRYPT32!CertCreateCertificateContext"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_CertCreateCertificateContext",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_CoCreateInstance",
+    "ea": "0x180003363",
+    "function_file": "functions/180003363_imp_load_CoCreateInstance.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_CoCreateInstance",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_GetPublicPhonebookPath",
+    "ea": "0x1800034e5",
+    "function_file": "functions/1800034e5_imp_load_GetPublicPhonebookPath.md",
+    "matched_imports": [
+      "RASAPI32!GetPublicPhonebookPath"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_GetPublicPhonebookPath",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_ReadPhonebookFile",
+    "ea": "0x18000351b",
+    "function_file": "functions/18000351b_imp_load_ReadPhonebookFile.md",
+    "matched_imports": [
+      "RASAPI32!ReadPhonebookFile"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_ReadPhonebookFile",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_SCardAccessStartedEvent",
+    "ea": "0x18000377d",
+    "function_file": "functions/18000377d_imp_load_SCardAccessStartedEvent.md",
+    "matched_imports": [
+      "WinSCard!SCardAccessStartedEvent"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_SCardAccessStartedEvent",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_SCardListReadersW",
+    "ea": "0x18000378f",
+    "function_file": "functions/18000378f_imp_load_SCardListReadersW.md",
+    "matched_imports": [
+      "WinSCard!SCardListReadersW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_SCardListReadersW",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 11,
+    "demangled": "memset_0",
+    "ea": "0x18000b0ce",
+    "function_file": "functions/18000b0ce_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "Free0",
+    "ea": "0x1800089c0",
+    "function_file": "functions/1800089c0_Free0.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree"
+    ],
+    "matched_strings": [],
+    "name": "Free0",
+    "prototype": "",
+    "rank_score": 109,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "memcpy_0",
+    "ea": "0x18000b0c2",
+    "function_file": "functions/18000b0c2_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 20,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18000c010",
+    "function_file": "functions/18000c010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000b100",
+    "function_file": "functions/18000b100_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 25,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180002c30",
+    "function_file": "functions/180002c30_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000b044",
+    "function_file": "functions/18000b044_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "__tailMerge_winscard_dll",
+    "ea": "0x1800036fe",
+    "function_file": "functions/1800036fe_tailMerge_winscard_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_winscard_dll",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SetDefaultUserPreferences",
+    "ea": "0x18000a0c4",
+    "function_file": "functions/18000a0c4_SetDefaultUserPreferences.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetDefaultUserPreferences",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 20,
+    "size": 485,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180002c74",
+    "function_file": "functions/180002c74_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "__tailMerge_rasapi32_dll",
+    "ea": "0x180003430",
+    "function_file": "functions/180003430_tailMerge_rasapi32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_rasapi32_dll",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "DestroyUserPreferences",
+    "ea": "0x18000929c",
+    "function_file": "functions/18000929c_DestroyUserPreferences.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DestroyUserPreferences",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 19,
+    "size": 196,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MapEapHostErrorToRasError",
+    "ea": "0x180007850",
+    "function_file": "functions/180007850_MapEapHostErrorToRasError.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MapEapHostErrorToRasError",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 1814,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "__tailMerge_eappcfg_dll",
+    "ea": "0x1800038a4",
+    "function_file": "functions/1800038a4_tailMerge_eappcfg_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_eappcfg_dll",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "__tailMerge_ole32_dll",
+    "ea": "0x1800032c0",
+    "function_file": "functions/1800032c0_tailMerge_ole32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_ole32_dll",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__tailMerge_crypt32_dll",
+    "ea": "0x180003381",
+    "function_file": "functions/180003381_tailMerge_crypt32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_crypt32_dll",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__tailMerge_rtutils_dll",
+    "ea": "0x180003819",
+    "function_file": "functions/180003819_tailMerge_rtutils_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_rtutils_dll",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__tailMerge_sspicli_dll",
+    "ea": "0x18000364f",
+    "function_file": "functions/18000364f_tailMerge_sspicli_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_sspicli_dll",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18000b140",
+    "function_file": "functions/18000b140_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "operator delete(void *)",
+    "ea": "0x1800029b0",
+    "function_file": "functions/1800029b0_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 14,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_netutils_dll",
+    "ea": "0x180003539",
+    "function_file": "functions/180003539_tailMerge_netutils_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_netutils_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_wkscli_dll",
+    "ea": "0x1800035c4",
+    "function_file": "functions/1800035c4_tailMerge_wkscli_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_wkscli_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "StringCchCopyW",
+    "ea": "0x1800056d4",
+    "function_file": "functions/1800056d4_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 12,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllCanUnloadNow",
+    "ea": "0x180001310",
+    "function_file": "functions/180001310_DllCanUnloadNow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 11,
+    "size": 27,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CRasCredential::GetComboBoxValueCount(ulong,ulong *,ulong *)",
+    "ea": "0x180003b30",
+    "function_file": "functions/180003b30_CRasCredential_GetComboBoxValueCount_ulong_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetComboBoxValueCount@CRasCredential@@UEAAJKPEAK0@Z",
+    "prototype": "__int64 __fastcall(CRasCredential *__hidden this, unsigned int, unsigned int *, unsigned int *)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "EncodePasswordW",
+    "ea": "0x1800086d4",
+    "function_file": "functions/1800086d4_EncodePasswordW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EncodePasswordW",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "StringCchCopyExW",
+    "ea": "0x180008c5c",
+    "function_file": "functions/180008c5c_StringCchCopyExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyExW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc, STRSAFE_LPWSTR *ppszDestEnd, size_t *pcchRemaining, DWORD dwFlags)",
+    "rank_score": 10,
+    "size": 378,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "CRasCredential::_EraseFields(void)",
+    "ea": "0x180004aa0",
+    "function_file": "functions/180004aa0_CRasCredential_EraseFields_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_EraseFields@CRasCredential@@AEAAXXZ",
+    "prototype": "void __fastcall(CRasCredential *__hidden this)",
+    "rank_score": 7,
+    "size": 305,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateCallbackNode",
+    "ea": "0x180009148",
+    "function_file": "functions/180009148_CreateCallbackNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateCallbackNode",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc, STRSAFE_LPCWSTR, STRSAFE_LPCWSTR)",
+    "rank_score": 6,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "RasFreeEapMethodInfo",
+    "ea": "0x180008094",
+    "function_file": "functions/180008094_RasFreeEapMethodInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RasFreeEapMethodInfo",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 183,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180002970",
+    "function_file": "functions/180002970_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 6,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "DtlAddNodeLast",
+    "ea": "0x18000aad0",
+    "function_file": "functions/18000aad0_DtlAddNodeLast.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DtlAddNodeLast",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "StringExHandleOtherFlagsW",
+    "ea": "0x180009020",
+    "function_file": "functions/180009020_StringExHandleOtherFlagsW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringExHandleOtherFlagsW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cbDest, size_t cchOriginalDestLength, STRSAFE_LPWSTR *ppszDestEnd, size_t *pcchRemaining, DWORD dwFlags)",
+    "rank_score": 5,
+    "size": 157,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateLocationNode",
+    "ea": "0x1800091ec",
+    "function_file": "functions/1800091ec_CreateLocationNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateLocationNode",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "StringCchCopyNW",
+    "ea": "0x180005680",
+    "function_file": "functions/180005680_StringCchCopyNW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyNW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 3,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCopyWorkerW",
+    "ea": "0x180005720",
+    "function_file": "functions/180005720_StringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 3,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_UnicodeStringStringHijack",
+    "ea": "0x180005648",
+    "function_file": "functions/180005648_UnicodeStringStringHijack.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_UnicodeStringStringHijack",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DtlRemoveNode",
+    "ea": "0x18000abfc",
+    "function_file": "functions/18000abfc_DtlRemoveNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DtlRemoveNode",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "StringCopyWorkerW_0",
+    "ea": "0x180008f78",
+    "function_file": "functions/180008f78_StringCopyWorkerW_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW_0",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 2,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CRasProvider::GetFieldDescriptorCount(ulong *)",
+    "ea": "0x180003ef0",
+    "function_file": "functions/180003ef0_CRasProvider_GetFieldDescriptorCount_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFieldDescriptorCount@CRasProvider@@UEAAJPEAK@Z",
+    "prototype": "__int64 __fastcall(CRasProvider *__hidden this, unsigned int *)",
+    "rank_score": 1,
+    "size": 20,
+    "tags": []
+  }
+]
