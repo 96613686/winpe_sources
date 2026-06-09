@@ -1,0 +1,5131 @@
+[
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "ReportIisEvents",
+    "ea": "0x140022480",
+    "function_file": "functions/140022480_ReportIisEvents.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!_atoi64",
+      "msvcrt!atol",
+      "msvcrt!fgets",
+      "msvcrt!rewind",
+      "msvcrt!strtok_s"
+    ],
+    "matched_strings": [
+      "<Table name='httpRespTime' topic='overview' level='1' key='1200'>\r\n<Summary key='2' find='field' field='requestType' value='httpRespTimeTotal' topic='iis'>\r\n\t<Data label='iisRequests' name='requestRate' format='#,##0'/>\r\n\t<Data label='iisRespTime' name='responseTime' format='#,##0'/>\r\n</Summary>\r\n<Summary key='2' find='field' field='requestType' value='staticCachedHttp' topic='iis'>\r\n  <Data label='iisCachedStaticRequests' name='requestRate' format='#,##0'/>\r\n  <Data label='iisRespTime' name='re",
+      "<Item visible='false'><Data name='requestType' translate='value'>httpNonCached</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>\r\n",
+      "<Item><Data name='requestType' tab='1' translate='value'>staticCachedHttp</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='ulPercent'>%3d.0</Data><Data name='w3Percent'>0.0</Data><Data name='w3FilterPercent'>0.0</Data><Data name='isapiPercent'>0.0</Data><Data name='aspPercent'>0.0</Data><Data name='cgiPercent'>0.0</Data></Item>\r\n",
+      "<Item><Data name='requestType' tab='1' translate='value'>staticCachedHttp</Data><Data name='requestRate'>%1.3f</Data><Data name='cpu'>%1.3f</Data><Data name='ulPercent'>%3d.0</Data><Data name='w3Percent'>0.0</Data><Data name='w3FilterPercent'>0.0</Data><Data name='isapiPercent'>0.0</Data><Data name='aspPercent'>0.0</Data><Data name='cgiPercent'>0.0</Data></Item>\r\n",
+      "<Table name='topUrls' topic='url' level='1' key='2300'><Summary key='3' find='top' field='cpu' topic='process'>\r\n  <Data name='url' label='topUrlCpu'/>\r\n  <Data name='cpu' format='#,##0'/>\r\n</Summary>\r\n<Header>  <Threshold type='top' field='count' value='3'/>\r\n  <Threshold type='octave' field='requestRate'/>\r\n  <Data name='url' class='string'/>  <Data name='siteId' class='number'/>  <Data name='requestRate' class='number' format='%s'/>  <Data name='cached' class='number' format='%s'/>  <Data nam",
+      "<Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='cpu'>%1.3f</Data><Data name='bytesSentRate'>%d</Data></Item>\r\n",
+      "<Table name='topStaticUrls' topic='url' level='1' key='2400'>\r\n<Header><Threshold type='top' field='count' value='3'/>\r\n<Threshold type='octave' field='responseTime'/>\r\n<Data name='url' class='string'/><Data name='siteId' class='number'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><Data name='responseTime' class='number' format='#,##0'/><Data name='bytesSentRate' class='number'/></Header>\r\n",
+      "<Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%1.0f</Data><Data name='bytesSentRate'>%d</Data></Item>\r\n",
+      "<Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%1.0f</Data><Data name='bytesSentRate'>%d</Data></Item>\r\n",
+      "<Table name='slowestUrls' topic='url' level='1' key='2600'>\r\n<Summary key='3' find='top' field='responseTime' topic='iis'>\r\n  <Data name='url' label='slowestUrl'/>\r\n  <Data name='responseTime' format='#,##0'/>\r\n</Summary>\r\n<Header><Threshold type='top' field='count' value='3'/>\r\n<Threshold type='octave' field='responseTime'/>\r\n<Data name='url' class='string'/><Data name='siteId' class='number'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><",
+      "<Table name='topBytesSentUrls' topic='url' level='1' key='2500'>\r\n<Header><Threshold type='top' field='count' value='3' />\r\n<Threshold type='octave' field='bytesSentRate' />\r\n<Data name='url' class='string'/><Data name='siteId' class='number'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><Data name='bytesSentRate' class='number'/></Header>\r\n",
+      "<Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='bytesSentRate'>%d</Data></Item>\r\n",
+      "<Table name='clientRequests' topic='clients' level='1' key='4100'>\r\n<Summary key='3' find='top' field='responseTime' topic='iis'>\r\n  <Data name='ip' label='topClientRequest'/>\r\n  <Data name='requestRate' format='#,##0'/>\r\n</Summary>\r\n<Header><Threshold type='top' field='count' value='3'/>\r\n<Threshold type='octave' field='responseTime'/>\r\n<Data name='ip' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><Data name='responseTime' c",
+      "<Item><Data name='ip'>%S</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%I64u</Data></Item>\r\n",
+      "<Item><Data name='ip'>%S</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%I64u</Data></Item>\r\n",
+      "<Table name='clientResponses' topic='clients' level='1' key='4200'><Header><Threshold type='top' field='count' value='3'/>\r\n<Threshold type='octave' field='responseTime'/>\r\n<Data name='ip' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><Data name='responseTime' class='number' format='#,##0'/></Header>\r\n",
+      "<Table name='siteRequests' topic='sites' level='1' key='5200'>\r\n<Header><Threshold type='top' field='count' value='3'/>\r\n<Threshold type='octave' field='requestRate'/>\r\n<Data name='siteId' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='responseTime' class='number' format='#,##0'/><Data name='cached' class='number' format='%s'/><Data name='staticPercent' class='number' format='%s'/><Data name='cgiPercent' class='number' format='%s'/><Data name='aspPercent' class=",
+      "<Item><Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%I64u</Data><Data name='cached'>%1.3f</Data><Data name='staticPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data></Item>\r\n",
+      "<Item><Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%I64u</Data><Data name='cached'>%1.3f</Data><Data name='staticPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data></Item>\r\n",
+      "<Table name='siteResponseTime' topic='sites' level='1' key='5400'>\r\n<Header><Threshold type='top' field='count' value='3'/>\r\n<Threshold type='octave' field='responseTime'/>\r\n<Data name='siteId' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='responseTime' class='number' format='#,##0'/><Data name='cached' class='number' format='%s'/><Data name='staticPercent' class='number' format='%s'/><Data name='cgiPercent' class='number' format='%s'/><Data name='aspPercent' c",
+      "<Table name='siteCpuTime' topic='sites' level='1' key='5100'>\r\n<Header><Threshold type='top' field='count' value='3'/>\r\n<Threshold type='octave' field='cpu'/>\r\n<Data name='siteId' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><Data name='responseTime' class='number' format='#,##0'/><Data name='cpuTime' class='number' format='#,##0'/><Data name='cpu' class='number' format='%s'/></Header>\r\n",
+      "<Item><Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%I64u</Data><Data name='cpuTime'>%d</Data><Data name='cpu'>%1.3f</Data></Item>\r\n",
+      "<Table name='siteBytesSent' topic='sites' top='1' key='5300'>\r\n<Header><Threshold type='top' field='count' value='3'/>\r\n<Threshold type='octave' field='bytesSentRate'/>\r\n<Data name='siteId' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='bytesSentRate' class='number'/><Data name='cached' class='number' format='%s'/><Data name='staticPercent' class='number' format='%s'/><Data name='cgiPercent' class='number' format='%s'/><Data name='aspPercent' class='number' form",
+      "<Item><Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='bytesSentRate'>%d</Data><Data name='cached'>%1.3f</Data><Data name='staticPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data></Item>\r\n"
+    ],
+    "name": "ReportIisEvents",
+    "prototype": "",
+    "rank_score": 28212,
+    "size": 17471,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "DeleteHttpReqRecord(_HTTP_REQUEST_RECORD *,ulong)",
+    "ea": "0x14001bde0",
+    "function_file": "functions/14001bde0_DeleteHttpReqRecord_HTTP_REQUEST_RECORD_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!fprintf",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteHttpReqRecord@@YAKPEAU_HTTP_REQUEST_RECORD@@K@Z",
+    "prototype": "unsigned int __fastcall(struct _HTTP_REQUEST_RECORD *, unsigned int)",
+    "rank_score": 11025,
+    "size": 1338,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 27,
+    "caller_count": 1,
+    "demangled": "InitTraceContext(_TRACE_BASIC_INFO *)",
+    "ea": "0x140017398",
+    "function_file": "functions/140017398_InitTraceContext_TRACE_BASIC_INFO.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_SysStringLen",
+      "WS2_32!__imp_WSACleanup",
+      "WS2_32!__imp_WSAGetLastError",
+      "WS2_32!__imp_WSAStartup",
+      "api-ms-win-core-com-l1-1-0!CoCreateInstance",
+      "api-ms-win-core-com-l1-1-0!CoInitializeEx",
+      "api-ms-win-core-com-l1-1-0!CoSetProxyBlanket",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileAttributesW",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "api-ms-win-core-sysinfo-l1-1-0!GetVersionExW",
+      "api-ms-win-core-util-l1-1-0!EncodePointer",
+      "api-ms-win-eventing-tdh-l1-1-0!TdhLoadManifest",
+      "msvcrt!_wfopen",
+      "msvcrt!fclose",
+      "msvcrt!wprintf",
+      "ntdll!RtlDeleteCriticalSection",
+      "ntdll!RtlInitializeCriticalSection",
+      "pdh!PdhGetLogFileTypeW",
+      "wevtapi!EvtClose"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?InitTraceContext@@YAKPEAU_TRACE_BASIC_INFO@@@Z",
+    "prototype": "unsigned int __fastcall(struct _TRACE_BASIC_INFO *)",
+    "rank_score": 10541,
+    "size": 6501,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ReportPrintJobInfo2",
+    "ea": "0x1400268c8",
+    "function_file": "functions/1400268c8_ReportPrintJobInfo2.md",
+    "matched_imports": [
+      "msvcrt!_atoi64",
+      "msvcrt!atol",
+      "msvcrt!fgets",
+      "msvcrt!rewind",
+      "msvcrt!strtok_s"
+    ],
+    "matched_strings": [
+      "<Table name='spoolerJobs' level='1' topic='jobs'>\r\n<Summary key='2' find='average' field='jobSize' topic='jobs'>\r\n\t<Data name='jobSize' label='aveJobSize' format='#,##0'/>\r\n</Summary>\r\n<Header><Data name='jobId' class='string'/><Data name='type' class='number'/><Data name='jobSize' class='number'/><Data name='pages' class='number'/><Data name='PPS' class='number'/><Data name='files' class='number'/><Data name='gdiSize' class='number'/><Data name='color' class='number'/><Data name='xRes' class='n",
+      "<Item><Data name='jobId'>%d</Data><Data name='type'>%d</Data><Data name='jobSize'>%d</Data><Data name='pages'>%d</Data><Data name='PPS'>%d</Data><Data name='files'>%hd</Data><Data name='gdiSize'>%d</Data><Data name='color'>%hd</Data><Data name='xRes'>%hd</Data><Data name='yRes'>%hd</Data><Data name='qlty'>%hd</Data><Data name='copies'>%hd</Data><Data name='ttopt'>%hd</Data><Data name='threads'>%d</Data></Item>\r\n"
+    ],
+    "name": "ReportPrintJobInfo2",
+    "prototype": "__int64 __fastcall(struct _iobuf *)",
+    "rank_score": 10295,
+    "size": 1210,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "ProcessCleanup(void)",
+    "ea": "0x14001db34",
+    "function_file": "functions/14001db34_ProcessCleanup_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!_wfopen",
+      "msvcrt!fclose"
+    ],
+    "matched_strings": [],
+    "name": "?ProcessCleanup@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 10043,
+    "size": 1855,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "cbEnumSymbols",
+    "ea": "0x14003aab0",
+    "function_file": "functions/14003aab0_cbEnumSymbols.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "msvcrt!_wfsopen",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!fclose",
+      "msvcrt!fgets",
+      "msvcrt!fprintf",
+      "msvcrt!strcpy_s",
+      "msvcrt!strncpy_s",
+      "msvcrt!strstr",
+      "msvcrt!swprintf_s"
+    ],
+    "matched_strings": [
+      "%ls : warning : WPPFMT Event too complex. This event's decoding information will be omitted from the TMF file: %.80hs %.80hs\n",
+      "%ls : error : WPPFMT Failed to make path %ws\n",
+      "%ls : warning : WPPFMT Failed Create %ls (0x%0X)\n",
+      "#pragma autorecover\n#pragma classflags(\"forceupdate\")\n#pragma namespace(\"\\\\\\\\.\\\\root\\\\WMI\")\n//\n// WPP Generated File\n",
+      "%ls : error : WPPFMT File + Path\n",
+      "%ls : error : WPPFMT Failed to make path %ls\n",
+      "%ls : warning : WPPFMT Failed to open %ls (0x%0X)\n"
+    ],
+    "name": "cbEnumSymbols",
+    "prototype": "BOOL __stdcall(PSYMBOL_INFO pSymInfo, ULONG SymbolSize, PVOID UserContext)",
+    "rank_score": 7544,
+    "size": 2519,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "wmain",
+    "ea": "0x14002ec00",
+    "function_file": "functions/14002ec00_wmain.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-heap-l1-1-0!HeapSetInformation",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "dumpfile.xml",
+      "workload.xml"
+    ],
+    "name": "wmain",
+    "prototype": "",
+    "rank_score": 6551,
+    "size": 2926,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "PsEndCallback",
+    "ea": "0x140008d14",
+    "function_file": "functions/140008d14_PsEndCallback.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-security-lsalookup-l2-1-0!LookupAccountSidW"
+    ],
+    "matched_strings": [
+      "ProcessId",
+      "UserSID",
+      "UserSID",
+      "CommandLine",
+      "CommandLine"
+    ],
+    "name": "PsEndCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 6050,
+    "size": 1342,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "InternalBinPlaceWppFmt",
+    "ea": "0x14003a0cc",
+    "function_file": "functions/14003a0cc_InternalBinPlaceWppFmt.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileTime",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "dbghelp!SymSearch",
+      "imagehlp!SymCleanup",
+      "imagehlp!SymEnumTypesByName",
+      "imagehlp!SymGetOptions",
+      "imagehlp!SymSetOptions",
+      "msvcrt!fclose",
+      "msvcrt!fprintf",
+      "msvcrt!free",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "// PDB:  Last Updated :%04d-%02d-%02d:%02d:%02d:%02d:%03d (UTC) [%ls]\n"
+    ],
+    "name": "InternalBinPlaceWppFmt",
+    "prototype": "",
+    "rank_score": 5882,
+    "size": 1552,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "DeleteProcess(_PROCESS_RECORD *)",
+    "ea": "0x14001c85c",
+    "function_file": "functions/14001c85c_DeleteProcess_PROCESS_RECORD.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteProcess@@YAEPEAU_PROCESS_RECORD@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _PROCESS_RECORD *lpMem)",
+    "rank_score": 5622,
+    "size": 780,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "PsStartCallback",
+    "ea": "0x140009258",
+    "function_file": "functions/140009258_PsStartCallback.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-security-lsalookup-l2-1-0!LookupAccountSidW"
+    ],
+    "matched_strings": [
+      "ProcessId",
+      "UserSID",
+      "UserSID"
+    ],
+    "name": "PsStartCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 5161,
+    "size": 1324,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DeletePrintJobRecord(_PRINT_JOB_RECORD *,ulong)",
+    "ea": "0x14001c5d4",
+    "function_file": "functions/14001c5d4_DeletePrintJobRecord_PRINT_JOB_RECORD_ulong.md",
+    "matched_imports": [
+      "msvcrt!fprintf",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?DeletePrintJobRecord@@YAKPEAU_PRINT_JOB_RECORD@@K@Z",
+    "prototype": "unsigned int __fastcall(struct _PRINT_JOB_RECORD *, unsigned int)",
+    "rank_score": 4817,
+    "size": 641,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DumpUserData",
+    "ea": "0x140014e98",
+    "function_file": "functions/140014e98_DumpUserData.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "wevtapi!EvtIntRenderResourceEventTemplate"
+    ],
+    "matched_strings": [],
+    "name": "DumpUserData",
+    "prototype": "",
+    "rank_score": 4210,
+    "size": 599,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "WriteSummary(void)",
+    "ea": "0x1400277c8",
+    "function_file": "functions/1400277c8_WriteSummary_void.md",
+    "matched_imports": [
+      "api-ms-win-core-datetime-l1-1-0!GetDateFormatW",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "api-ms-win-core-timezone-l1-1-0!SystemTimeToTzSpecificLocalTime",
+      "msvcrt!_wfopen",
+      "msvcrt!fclose",
+      "msvcrt!fwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?WriteSummary@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 3830,
+    "size": 1556,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "InitializeGlobals",
+    "ea": "0x140039d80",
+    "function_file": "functions/140039d80_InitializeGlobals.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameW",
+      "api-ms-win-core-processenvironment-l1-1-0!GetEnvironmentVariableW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "dbghelp!SymInitializeW",
+      "imagehlp!SymRegisterCallback64",
+      "imagehlp!SymSetOptions",
+      "msvcrt!fprintf",
+      "msvcrt!free",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "_NT_SYMBOL_PATH",
+      "WPPFMT : error : out of memory from splitpath\n",
+      "Symbol Path = [%ws]\n"
+    ],
+    "name": "InitializeGlobals",
+    "prototype": "",
+    "rank_score": 3743,
+    "size": 836,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ProcessIisRequest",
+    "ea": "0x1400213a8",
+    "function_file": "functions/1400213a8_ProcessIisRequest.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-rtlsupport-l1-1-0!RtlCompareMemory",
+      "msvcrt!_stricmp",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "ProcessIisRequest",
+    "prototype": "",
+    "rank_score": 3645,
+    "size": 2464,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 36,
+    "caller_count": 1,
+    "demangled": "DeinitTraceContext(_TRACE_BASIC_INFO *)",
+    "ea": "0x140016ae0",
+    "function_file": "functions/140016ae0_DeinitTraceContext_TRACE_BASIC_INFO.md",
+    "matched_imports": [
+      "WS2_32!__imp_WSACleanup",
+      "api-ms-win-core-com-l1-1-0!CoUninitialize",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-eventing-consumer-l1-1-0!CloseTrace",
+      "api-ms-win-eventing-tdh-l1-1-0!TdhUnloadManifest",
+      "msvcrt!fclose",
+      "ntdll!RtlDeleteCriticalSection",
+      "wevtapi!EvtClose"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n",
+      "<?xml-stylesheet type=\"text/xsl\" href=\"%s\"?>\r\n"
+    ],
+    "name": "?DeinitTraceContext@@YAKPEAU_TRACE_BASIC_INFO@@@Z",
+    "prototype": "unsigned int __fastcall(struct _TRACE_BASIC_INFO *)",
+    "rank_score": 3579,
+    "size": 1686,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "QueryLog(void *,void *,_LIST_ENTRY *)",
+    "ea": "0x14001a760",
+    "function_file": "functions/14001a760_QueryLog_void_void_LIST_ENTRY.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "pdh!PdhAddCounterW",
+      "pdh!PdhExpandWildCardPathHW"
+    ],
+    "matched_strings": [],
+    "name": "?QueryLog@@YAJPEAX0PEAU_LIST_ENTRY@@@Z",
+    "prototype": "__int64 __fastcall(void *, void *, struct _LIST_ENTRY *)",
+    "rank_score": 3229,
+    "size": 1041,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ArgGetUserInput(ushort *,ulong,int,int,int *)",
+    "ea": "0x14003e014",
+    "function_file": "functions/14003e014_ArgGetUserInput_ushort_ulong_int_int_int.md",
+    "matched_imports": [
+      "api-ms-win-core-console-l1-1-0!GetConsoleMode",
+      "api-ms-win-core-console-l1-1-0!ReadConsoleW",
+      "api-ms-win-core-console-l1-1-0!SetConsoleMode",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!ReadFile",
+      "api-ms-win-core-processenvironment-l1-1-0!GetStdHandle",
+      "api-ms-win-core-string-l1-1-0!MultiByteToWideChar",
+      "msvcrt!_getmbcp",
+      "msvcrt!wprintf"
+    ],
+    "matched_strings": [],
+    "name": "?ArgGetUserInput@@YAJPEAGKHHPEAH@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned int, int, int, int *)",
+    "rank_score": 3222,
+    "size": 791,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ArgCheckFile(ushort const *,ulong)",
+    "ea": "0x14003db38",
+    "function_file": "functions/14003db38_ArgCheckFile_ushort_const_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!_wcslwr",
+      "msvcrt!wcsstr"
+    ],
+    "matched_strings": [],
+    "name": "?ArgCheckFile@@YAJPEBGK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, unsigned int)",
+    "rank_score": 3018,
+    "size": 459,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DeleteMofInfo",
+    "ea": "0x14001c320",
+    "function_file": "functions/14001c320_DeleteMofInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!fwprintf"
+    ],
+    "matched_strings": [],
+    "name": "DeleteMofInfo",
+    "prototype": "__int64 __fastcall(LPVOID lpMem, FILE *Stream)",
+    "rank_score": 3011,
+    "size": 686,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "TracerptAddStrings",
+    "ea": "0x14002f7ec",
+    "function_file": "functions/14002f7ec_TracerptAddStrings.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "api-ms-win-core-com-l1-1-0!CreateStreamOnHGlobal",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!GlobalAlloc",
+      "api-ms-win-core-heap-l2-1-0!GlobalFree",
+      "api-ms-win-core-heap-obsolete-l1-1-0!GlobalLock",
+      "api-ms-win-core-heap-obsolete-l1-1-0!GlobalUnlock",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeResource",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadResource",
+      "api-ms-win-core-libraryloader-l1-2-0!LockResource",
+      "api-ms-win-core-libraryloader-l1-2-0!SizeofResource",
+      "api-ms-win-core-libraryloader-l1-2-1!FindResourceW"
+    ],
+    "matched_strings": [
+      "TITLES.XML"
+    ],
+    "name": "TracerptAddStrings",
+    "prototype": "",
+    "rank_score": 2869,
+    "size": 540,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "OnProcess",
+    "ea": "0x140018d04",
+    "function_file": "functions/140018d04_OnProcess.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-eventing-consumer-l1-1-0!CloseTrace",
+      "api-ms-win-eventing-consumer-l1-1-0!OpenTraceW",
+      "api-ms-win-eventing-consumer-l1-1-0!ProcessTrace",
+      "wevtapi!EvtIntCreateLocalLogfile"
+    ],
+    "matched_strings": [],
+    "name": "OnProcess",
+    "prototype": "",
+    "rank_score": 2839,
+    "size": 1260,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "EventXmlDump::ConvertIntoEvtArray(EventDumpWorkspace *,_EVT_VARIANT *)",
+    "ea": "0x14000f104",
+    "function_file": "functions/14000f104_EventXmlDump_ConvertIntoEvtArray_EventDumpWorkspace_EVT_VARIANT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?ConvertIntoEvtArray@EventXmlDump@@QEAAKPEAVEventDumpWorkspace@@PEAU_EVT_VARIANT@@@Z",
+    "prototype": "unsigned int __fastcall(EventXmlDump *__hidden this, struct EventDumpWorkspace *, struct _EVT_VARIANT *)",
+    "rank_score": 2830,
+    "size": 1510,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "TranslateCouterPathToLangNeutral(_PDH_COUNTER_PATH_ELEMENTS_W *,ushort *)",
+    "ea": "0x14001ac30",
+    "function_file": "functions/14001ac30_TranslateCouterPathToLangNeutral_PDH_COUNTER_PATH_ELEMENTS_W_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-heap-l1-1-0!HeapReAlloc",
+      "msvcrt!wcschr",
+      "msvcrt!wcsstr",
+      "pdh!PdhTranslate009CounterW"
+    ],
+    "matched_strings": [],
+    "name": "?TranslateCouterPathToLangNeutral@@YAXPEAU_PDH_COUNTER_PATH_ELEMENTS_W@@PEAG@Z",
+    "prototype": "void(struct _PDH_COUNTER_PATH_ELEMENTS_W *, unsigned __int16 *)",
+    "rank_score": 2818,
+    "size": 692,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "TransformXML(ushort const *,ushort const *,ushort const *)",
+    "ea": "0x14003012c",
+    "function_file": "functions/14003012c_TransformXML_ushort_const_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "api-ms-win-core-com-l1-1-0!CoCreateInstance",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "?TransformXML@@YAJPEBG00@Z",
+    "prototype": "__int64 __fastcall(OLECHAR *psz, OLECHAR *, LPCWSTR lpFileName)",
+    "rank_score": 2642,
+    "size": 1150,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 10,
+    "demangled": "ArgPrintEx(ulong *,ushort const *)",
+    "ea": "0x14003d254",
+    "function_file": "functions/14003d254_ArgPrintEx_ulong_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-console-l1-1-0!WriteConsoleW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-processenvironment-l1-1-0!GetStdHandle",
+      "api-ms-win-core-string-l1-1-0!WideCharToMultiByte"
+    ],
+    "matched_strings": [],
+    "name": "?ArgPrintEx@@YAJPEAKPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, const unsigned __int16 *)",
+    "rank_score": 2628,
+    "size": 661,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "XmRWGetViewOfFileEx(ushort *,_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x140037e2c",
+    "function_file": "functions/140037e2c_XmRWGetViewOfFileEx_ushort_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileSize",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!GlobalAlloc",
+      "api-ms-win-core-heap-obsolete-l1-1-0!GlobalLock",
+      "api-ms-win-core-heap-obsolete-l1-1-0!GlobalUnlock",
+      "api-ms-win-core-memory-l1-1-0!CreateFileMappingW",
+      "api-ms-win-core-memory-l1-1-0!MapViewOfFile",
+      "api-ms-win-core-memory-l1-1-0!UnmapViewOfFile"
+    ],
+    "matched_strings": [],
+    "name": "?XmRWGetViewOfFileEx@@YAKPEAGPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int16 *, struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 2615,
+    "size": 359,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 7,
+    "demangled": "PrintUserDataEx",
+    "ea": "0x14001232c",
+    "function_file": "functions/14001232c_PrintUserDataEx.md",
+    "matched_imports": [
+      "WS2_32!WSAAddressToStringW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-string-l1-1-0!MultiByteToWideChar",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "api-ms-win-core-util-l1-1-0!DecodePointer",
+      "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+    ],
+    "matched_strings": [],
+    "name": "PrintUserDataEx",
+    "prototype": "__int64 __usercall@<rax>(int@<ecx>, char, __int64, int)",
+    "rank_score": 2478,
+    "size": 3485,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "EventXmlDump::DumpCustomData(_iobuf *,EventDumpWorkspace *)",
+    "ea": "0x14000fd88",
+    "function_file": "functions/14000fd88_EventXmlDump_DumpCustomData_iobuf_EventDumpWorkspace.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "wevtapi!EvtIntRenderResourceEventTemplate"
+    ],
+    "matched_strings": [],
+    "name": "?DumpCustomData@EventXmlDump@@QEAAKPEAU_iobuf@@PEAVEventDumpWorkspace@@@Z",
+    "prototype": "unsigned int(EventXmlDump *__hidden this, struct _iobuf *, struct EventDumpWorkspace *)",
+    "rank_score": 2420,
+    "size": 574,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PrintMuiSchemaTitles(_iobuf *,ushort *)",
+    "ea": "0x14002d050",
+    "function_file": "functions/14002d050_PrintMuiSchemaTitles_iobuf_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-localization-l1-2-0!GetFileMUIPath",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW"
+    ],
+    "matched_strings": [],
+    "name": "?PrintMuiSchemaTitles@@YAEPEAU_iobuf@@PEAG@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _iobuf *, unsigned __int16 *)",
+    "rank_score": 2418,
+    "size": 489,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "ArgExpandFiles(ushort * *,int)",
+    "ea": "0x14003dd0c",
+    "function_file": "functions/14003dd0c_ArgExpandFiles_ushort_int.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!FindClose",
+      "api-ms-win-core-file-l1-1-0!FindFirstFileW",
+      "api-ms-win-core-file-l1-1-0!FindNextFileW",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!_wmakepath_s",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "?ArgExpandFiles@@YAJPEAPEAGH@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 **, int)",
+    "rank_score": 2226,
+    "size": 768,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DumpProviderData",
+    "ea": "0x1400145a0",
+    "function_file": "functions/1400145a0_DumpProviderData.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "\t\t<tasks>\r\n",
+      "\t\t</tasks>\r\n",
+      "\t\t\t<task value=\"%d\" name=\"task%d\" message=\"$(string.string%d)\" />\r\n"
+    ],
+    "name": "DumpProviderData",
+    "prototype": "",
+    "rank_score": 2143,
+    "size": 757,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "LoadMUILibraryW",
+    "ea": "0x14003faf0",
+    "function_file": "functions/14003faf0_LoadMUILibraryW.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FindResourceExW",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-localization-l1-2-0!GetLocaleInfoW",
+      "api-ms-win-core-localization-obsolete-l1-2-0!GetSystemDefaultUILanguage",
+      "api-ms-win-core-localization-obsolete-l1-2-0!GetUserDefaultUILanguage",
+      "api-ms-win-core-processenvironment-l1-1-0!SearchPathW"
+    ],
+    "matched_strings": [],
+    "name": "LoadMUILibraryW",
+    "prototype": "HINSTANCE __stdcall(PCWSTR pszFullModuleName, DWORD dwLangConvention, LANGID LangID)",
+    "rank_score": 2039,
+    "size": 1195,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "fnLoad",
+    "ea": "0x14003b53c",
+    "function_file": "functions/14003b53c_fnLoad.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileSize",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "dbghelp!SymLoadModuleExW",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!fprintf"
+    ],
+    "matched_strings": [],
+    "name": "fnLoad",
+    "prototype": "",
+    "rank_score": 2020,
+    "size": 540,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ArgpReadMultiString(_ARGUMENT_INPUT *,ushort const *,TYPED_ARGUMENT<ushort *> *)",
+    "ea": "0x14003e954",
+    "function_file": "functions/14003e954_ArgpReadMultiString_ARGUMENT_INPUT_ushort_const_TYPED_ARGUMENT_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?ArgpReadMultiString@@YAJPEAU_ARGUMENT_INPUT@@PEBGPEAV?$TYPED_ARGUMENT@PEAG@@@Z",
+    "prototype": "",
+    "rank_score": 2009,
+    "size": 571,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "CleanupTableData(_TABLE_DATA *)",
+    "ea": "0x140029320",
+    "function_file": "functions/140029320_CleanupTableData_TABLE_DATA.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?CleanupTableData@@YAXPEAU_TABLE_DATA@@@Z",
+    "prototype": "void __fastcall(struct _TABLE_DATA *)",
+    "rank_score": 2008,
+    "size": 299,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ExtractResourceFile(ushort const *,ushort const *)",
+    "ea": "0x14002ea9c",
+    "function_file": "functions/14002ea9c_ExtractResourceFile_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadResource",
+      "api-ms-win-core-libraryloader-l1-2-0!LockResource",
+      "api-ms-win-core-libraryloader-l1-2-0!SizeofResource",
+      "api-ms-win-core-libraryloader-l1-2-1!FindResourceW"
+    ],
+    "matched_strings": [],
+    "name": "?ExtractResourceFile@@YAKPEBG0@Z",
+    "prototype": "unsigned int(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1813,
+    "size": 227,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ServicesCallback",
+    "ea": "0x140009880",
+    "function_file": "functions/140009880_ServicesCallback.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "ProcessId",
+      "ServiceState",
+      "ServiceName",
+      "ServiceName"
+    ],
+    "name": "ServicesCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 1788,
+    "size": 577,
+    "tags": [
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PrintEventDescriptor",
+    "ea": "0x140015974",
+    "function_file": "functions/140015974_PrintEventDescriptor.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [
+      "template=\"tid_%d\" ",
+      "task=\"task%d\" "
+    ],
+    "name": "PrintEventDescriptor",
+    "prototype": "",
+    "rank_score": 1708,
+    "size": 1287,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GetTmfFromImagePdb",
+    "ea": "0x140038924",
+    "function_file": "functions/140038924_GetTmfFromImagePdb.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "dbghelp!SymInitializeW",
+      "imagehlp!SymGetSymbolFileW",
+      "imagehlp!SymSetOptions",
+      "msvcrt!_wsplitpath_s",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [
+      "_NT_SYMBOL_PATH"
+    ],
+    "name": "GetTmfFromImagePdb",
+    "prototype": "",
+    "rank_score": 1674,
+    "size": 749,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 55,
+    "demangled": "TracerptFWPrintf(_iobuf *,ushort const *,...)",
+    "ea": "0x1400164c4",
+    "function_file": "functions/1400164c4_TracerptFWPrintf_iobuf_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!_vsnprintf",
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?TracerptFWPrintf@@YAKPEAU_iobuf@@PEBGZZ",
+    "prototype": "unsigned int(struct _iobuf *, const unsigned __int16 *, ...)",
+    "rank_score": 1641,
+    "size": 520,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "EventXmlDump::ProcessHeader(EventDumpWorkspace *)",
+    "ea": "0x140011120",
+    "function_file": "functions/140011120_EventXmlDump_ProcessHeader_EventDumpWorkspace.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "api-ms-win-core-timezone-l1-1-0!SystemTimeToTzSpecificLocalTime",
+      "api-ms-win-eventing-tdh-l1-1-0!TdhQueryProviderFieldInformation"
+    ],
+    "matched_strings": [],
+    "name": "?ProcessHeader@EventXmlDump@@UEAAKPEAVEventDumpWorkspace@@@Z",
+    "prototype": "unsigned int(EventXmlDump *__hidden this, struct EventDumpWorkspace *)",
+    "rank_score": 1635,
+    "size": 1255,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "XmRWOpenFile(ushort *,_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x140037f9c",
+    "function_file": "functions/140037f9c_XmRWOpenFile_ushort_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [
+      "XmlLite!CreateXmlReader",
+      "api-ms-win-core-com-l1-1-0!CreateStreamOnHGlobal",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW"
+    ],
+    "matched_strings": [],
+    "name": "?XmRWOpenFile@@YAKPEAGPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(LPCWSTR lpSrc, struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 1627,
+    "size": 248,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "StringElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x140037698",
+    "function_file": "functions/140037698_StringElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?StringElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 1623,
+    "size": 691,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ArgpReadDate(_ARGUMENT_INPUT *,ushort const *,TYPED_ARGUMENT<_SYSTEMTIME> *)",
+    "ea": "0x14003e7e4",
+    "function_file": "functions/14003e7e4_ArgpReadDate_ARGUMENT_INPUT_ushort_const_TYPED_ARGUMENT_SYSTEMTIME.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_VarDateFromStr",
+      "OLEAUT32!__imp_VariantTimeToSystemTime",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?ArgpReadDate@@YAJPEAU_ARGUMENT_INPUT@@PEBGPEAV?$TYPED_ARGUMENT@U_SYSTEMTIME@@@@@Z",
+    "prototype": "",
+    "rank_score": 1606,
+    "size": 360,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "AddEnumToGuidList",
+    "ea": "0x1400392c4",
+    "function_file": "functions/1400392c4_AddEnumToGuidList.md",
+    "matched_imports": [
+      "msvcrt!fprintf",
+      "msvcrt!free",
+      "msvcrt!malloc",
+      "msvcrt!strncpy_s"
+    ],
+    "matched_strings": [
+      "WPPFMT : error : Failed to add Enumeration entry : Memory allocation failed for Guid Enumeration Link.\n"
+    ],
+    "name": "AddEnumToGuidList",
+    "prototype": "",
+    "rank_score": 1449,
+    "size": 474,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 59,
+    "demangled": "TracerptFPutws(ushort const *,_iobuf *)",
+    "ea": "0x140016360",
+    "function_file": "functions/140016360_TracerptFPutws_ushort_const_iobuf.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?TracerptFPutws@@YAKPEBGPEAU_iobuf@@@Z",
+    "prototype": "unsigned int __fastcall(const unsigned __int16 *, struct _iobuf *)",
+    "rank_score": 1440,
+    "size": 348,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "PdhReader(void *)",
+    "ea": "0x14001a3b0",
+    "function_file": "functions/14001a3b0_PdhReader_void.md",
+    "matched_imports": [
+      "pdh!PdhBindInputDataSourceW",
+      "pdh!PdhCloseLog",
+      "pdh!PdhCloseQuery",
+      "pdh!PdhComputeCounterStatistics",
+      "pdh!PdhGetDataSourceTimeRangeH",
+      "pdh!PdhOpenQueryH",
+      "pdh!PdhSetQueryTimeRange"
+    ],
+    "matched_strings": [],
+    "name": "?PdhReader@@YAKPEAX@Z",
+    "prototype": "ULONG __stdcall(PVOID Parameter)",
+    "rank_score": 1420,
+    "size": 654,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MakeSureDirectoryPathExistsW",
+    "ea": "0x14003a6e4",
+    "function_file": "functions/14003a6e4_MakeSureDirectoryPathExistsW.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateDirectoryW",
+      "api-ms-win-core-file-l1-1-0!GetFileAttributesW",
+      "msvcrt!fprintf",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [
+      "WPPFMT : error : Failed to create directory %ws\n",
+      "WPPFMT : error : File already exists and is not a directory: %ws\n"
+    ],
+    "name": "MakeSureDirectoryPathExistsW",
+    "prototype": "",
+    "rank_score": 1298,
+    "size": 388,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DumpEnumsToTMF",
+    "ea": "0x1400397ac",
+    "function_file": "functions/1400397ac_DumpEnumsToTMF.md",
+    "matched_imports": [
+      "msvcrt!_wfsopen",
+      "msvcrt!fclose",
+      "msvcrt!fprintf"
+    ],
+    "matched_strings": [
+      "WPPFMT : error : File + Path\n"
+    ],
+    "name": "DumpEnumsToTMF",
+    "prototype": "",
+    "rank_score": 1263,
+    "size": 713,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ArgPrintError(long,ushort const *)",
+    "ea": "0x14003d124",
+    "function_file": "functions/14003d124_ArgPrintError_long_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW",
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW"
+    ],
+    "matched_strings": [
+      "pdh.dll"
+    ],
+    "name": "?ArgPrintError@@YAJJPEBG@Z",
+    "prototype": "__int64 __fastcall(DWORD dwMessageId, const unsigned __int16 *)",
+    "rank_score": 1256,
+    "size": 298,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PrintProcessData",
+    "ea": "0x14001fd7c",
+    "function_file": "functions/14001fd7c_PrintProcessData.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "\t<Item>\r\n\t\t<Data name='serviceName'>%s</Data>\r\n\t\t<Data name='launchedThreads'>%d</Data>\r\n\t\t<Data name='usedThreads'>%d</Data>\r\n\t\t<Data name='kernelCpuPer'>%.4f</Data>\r\n\t\t<Data name='userCpuPer'>%.4f</Data>\r\n\t\t<Data name='cpu'>%.4f</Data>\r\n\t</Item>\r\n",
+      "\t<Header>\r\n\t\t<Data span='3' />\r\n\t\t<Data name='threads' span='2' class='span'/>\r\n\t\t<Data span='3'/>\r\n\t</Header>\r\n",
+      "\t<Header>\r\n\t\t<Sort field='cpu' type='number' order='descending'/>\r\n\t\t<Sort field='image' type='text' order='ascending'/>\r\n\t\t<Threshold type='top' field='count' value='3'/>\r\n\t\t<Threshold type='octave' field='cpu'/>\r\n\t\t<Data name='image' class='string'/>\r\n\t\t<Data name='pid' class='string'/>\r\n\t\t<Data name='launchedThreads' summary='total' class='number'/>\r\n\t\t<Data name='usedThreads' summary='total' class='number'/>\r\n\t\t<Data name='kernelCpuPer' class='number' format='#,##0.0'/>\r\n\t\t<Data name='userCp",
+      "\t\t<Header>\r\n\t\t\t<Sort field='cpu' type='number' order='descending'/>\r\n\t\t\t<Sort field='process' type='text' order='ascending'/>\r\n\t\t\t<Data name='serviceName' class='string'/>\r\n\t\t<Data name='launchedThreads' class='number'/>\r\n\t\t<Data name='usedThreads' class='number'/>\r\n\t\t\t<Data name='kernelCpuPer' class='number' format='#,##0.0'/>\r\n\t\t\t<Data name='userCpuPer' class='number' format='#,##0.0'/>\r\n\t\t\t<Data name='cpu' class='number' format='#,##0.0'/>\r\n\t\t</Header>\r\n",
+      "\t\t<Data name='pid'>%d</Data>\r\n\t\t<Data name='launchedThreads'>%d</Data>\r\n\t\t<Data name='usedThreads'>%d</Data>\r\n\t\t<Data name='kernelCpuPer'>%.4f</Data>\r\n\t\t<Data name='userCpuPer'>%.4f</Data>\r\n\t\t<Data name='cpu'>%.4f</Data>\r\n\t\t<Data name='groupCpu' visible='false'>%.4f</Data>\r\n"
+    ],
+    "name": "PrintProcessData",
+    "prototype": "__int64 __fastcall(struct _iobuf *)",
+    "rank_score": 1227,
+    "size": 1421,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MapMUIFile",
+    "ea": "0x14003f844",
+    "function_file": "functions/14003f844_MapMUIFile.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-memory-l1-1-0!CreateFileMappingW",
+      "api-ms-win-core-memory-l1-1-0!MapViewOfFile"
+    ],
+    "matched_strings": [],
+    "name": "MapMUIFile",
+    "prototype": "",
+    "rank_score": 1224,
+    "size": 228,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140002984",
+    "function_file": "functions/140002984_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DeleteTracerptSection(_TRACERPT_SECTION *)",
+    "ea": "0x140032660",
+    "function_file": "functions/140032660_DeleteTracerptSection_TRACERPT_SECTION.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteTracerptSection@@YAXPEAU_TRACERPT_SECTION@@@Z",
+    "prototype": "void __fastcall(struct _TRACERPT_SECTION *this)",
+    "rank_score": 1221,
+    "size": 572,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ParseServiceGroupName",
+    "ea": "0x140007d94",
+    "function_file": "functions/140007d94_ParseServiceGroupName.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!_wcsicmp",
+      "msvcrt!wcstok_s"
+    ],
+    "matched_strings": [],
+    "name": "ParseServiceGroupName",
+    "prototype": "",
+    "rank_score": 1216,
+    "size": 298,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ReadTempFile",
+    "ea": "0x140013a78",
+    "function_file": "functions/140013a78_ReadTempFile.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!ReadFile",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "ReadTempFile",
+    "prototype": "",
+    "rank_score": 1215,
+    "size": 223,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CreateTableData(_TRACERPT_EVENT_TABLE *,_TRACERPT_JOINFIELD *,_TABLE_DATA *)",
+    "ea": "0x1400298cc",
+    "function_file": "functions/1400298cc_CreateTableData_TRACERPT_EVENT_TABLE_TRACERPT_JOINFIELD_TABLE_DATA.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?CreateTableData@@YAKPEAU_TRACERPT_EVENT_TABLE@@PEAU_TRACERPT_JOINFIELD@@PEAU_TABLE_DATA@@@Z",
+    "prototype": "unsigned int(struct _TRACERPT_EVENT_TABLE *, struct _TRACERPT_JOINFIELD *, struct _TABLE_DATA *)",
+    "rank_score": 1213,
+    "size": 886,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CreateTransTableData(_TRACERPT_EVENT_TABLE *,_TABLE_DATA *)",
+    "ea": "0x140029c48",
+    "function_file": "functions/140029c48_CreateTransTableData_TRACERPT_EVENT_TABLE_TABLE_DATA.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?CreateTransTableData@@YAJPEAU_TRACERPT_EVENT_TABLE@@PEAU_TABLE_DATA@@@Z",
+    "prototype": "__int64 __fastcall(struct _TRACERPT_EVENT_TABLE *, struct _TABLE_DATA *)",
+    "rank_score": 1213,
+    "size": 822,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "DeleteThread(_THREAD_RECORD *)",
+    "ea": "0x14001cb70",
+    "function_file": "functions/14001cb70_DeleteThread_THREAD_RECORD.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteThread@@YAEPEAU_THREAD_RECORD@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _THREAD_RECORD *lpMem)",
+    "rank_score": 1208,
+    "size": 271,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ArgpFileInitialize(ushort const *,_ARGUMENT_INPUT * *)",
+    "ea": "0x14003f0cc",
+    "function_file": "functions/14003f0cc_ArgpFileInitialize_ushort_const_ARGUMENT_INPUT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "msvcrt!_errno",
+      "msvcrt!_wfopen"
+    ],
+    "matched_strings": [],
+    "name": "?ArgpFileInitialize@@YAJPEBGPEAPEAU_ARGUMENT_INPUT@@@Z",
+    "prototype": "__int64 __fastcall(wchar_t *FileName, struct _ARGUMENT_INPUT **)",
+    "rank_score": 1204,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ParsePdhCounterPath(ushort *)",
+    "ea": "0x14001a314",
+    "function_file": "functions/14001a314_ParsePdhCounterPath_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "pdh!PdhParseCounterPathW"
+    ],
+    "matched_strings": [],
+    "name": "?ParsePdhCounterPath@@YAPEAU_PDH_COUNTER_PATH_ELEMENTS_W@@PEAG@Z",
+    "prototype": "struct _PDH_COUNTER_PATH_ELEMENTS_W *__fastcall(LPCWSTR szFullPathBuffer)",
+    "rank_score": 1204,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "PrintReportHeader",
+    "ea": "0x1400208e4",
+    "function_file": "functions/1400208e4_PrintReportHeader.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "\t\t<Data name='computer' header='computer'>%s</Data>\r\n",
+      "\t\t<Data name='computer' header='computer' translate='value'>Client</Data>\r\n",
+      "\t<Header>\r\n\t\t<Sort field='count' type='number' order='descending'/>\r\n\t\t<Threshold type='top' field='count' value='3'/>\r\n\t\t<Threshold type='octave' field='count'/>\r\n\t\t<Data name='event' class='string'/>\r\n\t\t<Data name='opcode' class='string'/>\r\n\t\t<Data name='task' class='string'/>\r\n\t\t<Data name='payloadGuid' class='code'/>\r\n\t\t<Data name='payloadId' class='string'/>\r\n\t\t<Data name='version' class='string'/>\r\n\t\t<Data name='count' class='number' summary='total'/>\r\n\t</Header>\r\n",
+      "\t<Item>\r\n\t\t<Data name='event'>%s</Data>\r\n\t\t<Data name='opcode'>%s</Data>\r\n\t\t<Data name='task'>%d</Data>\r\n\t\t<Data name='payloadGuid'>%s</Data>\r\n\t\t<Data name='payloadId'>%d</Data>\r\n\t\t<Data name='version'>%d</Data>\r\n\t\t<Data name='count'>%d</Data>\r\n\t</Item>\r\n",
+      "\t<Item>\r\n\t\t<Data name='event'>Unknown</Data>\r\n\t\t<Data name='opcode'>%d</Data>\r\n\t\t<Data name='task'>%d</Data>\r\n\t\t<Data name='payloadGuid'>%s</Data>\r\n\t\t<Data name='payloadId'>%d</Data>\r\n\t\t<Data name='version'>%d</Data>\r\n\t\t<Data name='count'>%d</Data>\r\n\t</Item>\r\n"
+    ],
+    "name": "PrintReportHeader",
+    "prototype": "__int64 __fastcall(struct _iobuf *)",
+    "rank_score": 1057,
+    "size": 2200,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetOutputStringFromPatternMatch(ushort *,unsigned __int64,ushort *,unsigned __int64,ushort *,ulong *)",
+    "ea": "0x140019960",
+    "function_file": "functions/140019960_GetOutputStringFromPatternMatch_ushort_unsigned_int64_ushort_unsigned_int64_ushort_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!wprintf"
+    ],
+    "matched_strings": [
+      "Mal-formed replacement string: %s\n"
+    ],
+    "name": "?GetOutputStringFromPatternMatch@@YAPEAGPEAG_K010PEAK@Z",
+    "prototype": "unsigned __int16 *__fastcall(unsigned __int16 *, unsigned __int64, unsigned __int16 *, unsigned __int64, unsigned __int16 *, unsigned int *)",
+    "rank_score": 1049,
+    "size": 371,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SortCompareItemData(_ITEM_DATA *,_ITEM_DATA *,uchar)",
+    "ea": "0x14002da1c",
+    "function_file": "functions/14002da1c_SortCompareItemData_ITEM_DATA_ITEM_DATA_uchar.md",
+    "matched_imports": [
+      "api-ms-win-core-timezone-l1-1-0!SystemTimeToFileTime",
+      "msvcrt!_strnicmp",
+      "msvcrt!_wcsicmp",
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "?SortCompareItemData@@YAJPEAU_ITEM_DATA@@0E@Z",
+    "prototype": "__int64 __fastcall(struct _ITEM_DATA *, struct _ITEM_DATA *, unsigned __int8)",
+    "rank_score": 1043,
+    "size": 581,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 58,
+    "demangled": "PrintMessage(uint,...)",
+    "ea": "0x14003694c",
+    "function_file": "functions/14003694c_PrintMessage_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-console-l1-1-0!WriteConsoleW",
+      "api-ms-win-core-file-l1-1-0!GetFileType",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadStringW",
+      "api-ms-win-core-processenvironment-l1-1-0!GetStdHandle",
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?PrintMessage@@YAXIZZ",
+    "prototype": "void(unsigned int, ...)",
+    "rank_score": 1030,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateTransRecord",
+    "ea": "0x14001bc90",
+    "function_file": "functions/14001bc90_CreateTransRecord.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "CreateTransRecord",
+    "prototype": "",
+    "rank_score": 1014,
+    "size": 170,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CountFileBuffers",
+    "ea": "0x140016a24",
+    "function_file": "functions/140016a24_CountFileBuffers.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileSize",
+      "api-ms-win-core-file-l1-1-0!ReadFile",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "CountFileBuffers",
+    "prototype": "",
+    "rank_score": 1013,
+    "size": 181,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ParseReplacementString(ushort *,unsigned __int64,_LIST_ENTRY *,_STRING_TOKEN *,ulong,ulong *)",
+    "ea": "0x140019b70",
+    "function_file": "functions/140019b70_ParseReplacementString_ushort_unsigned_int64_LIST_ENTRY_STRING_TOKEN_ulong_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!iswspace",
+      "msvcrt!wcstoul"
+    ],
+    "matched_strings": [],
+    "name": "?ParseReplacementString@@YAKPEAG_KPEAU_LIST_ENTRY@@PEAU_STRING_TOKEN@@KPEAK@Z",
+    "prototype": "unsigned int(unsigned __int16 *, unsigned __int64, struct _LIST_ENTRY *, struct _STRING_TOKEN *, unsigned int, unsigned int *)",
+    "rank_score": 1009,
+    "size": 665,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ArgpReadTime(ushort const *,TYPED_ARGUMENT<_SYSTEMTIME> *)",
+    "ea": "0x14003ecb4",
+    "function_file": "functions/14003ecb4_ArgpReadTime_ushort_const_TYPED_ARGUMENT_SYSTEMTIME.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-localization-l1-2-0!GetLocaleInfoW"
+    ],
+    "matched_strings": [],
+    "name": "?ArgpReadTime@@YAJPEBGPEAV?$TYPED_ARGUMENT@U_SYSTEMTIME@@@@@Z",
+    "prototype": "",
+    "rank_score": 1008,
+    "size": 496,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ArgpReadString(ushort const *,TYPED_ARGUMENT<ushort *> *)",
+    "ea": "0x14003eb98",
+    "function_file": "functions/14003eb98_ArgpReadString_ushort_const_TYPED_ARGUMENT_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?ArgpReadString@@YAJPEBGPEAV?$TYPED_ARGUMENT@PEAG@@@Z",
+    "prototype": "",
+    "rank_score": 1007,
+    "size": 275,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "ReportHotFileInfo",
+    "ea": "0x140021ff4",
+    "function_file": "functions/140021ff4_ReportHotFileInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "msvcrt!_wcsnicmp",
+      "msvcrt!qsort"
+    ],
+    "matched_strings": [
+      "<Table name='hotFile' level='1' key='100' topic='hotFiles'>\r\n<Summary key='4' find='top' field='ioRate' topic='diskInfo'>\r\n  <Data name='file' label='topFileIO'/>\r\n  <Data name='ioRate' format='#,##0'/>\r\n</Summary>\r\n<Header>\r\n  <Sort field='ioRate' type='number' order='descending'/>\r\n  <Threshold type='top' field='count' value='%d'/>\r\n  <Threshold type='octave' field='ioRate'/>\r\n  <Data name=\"disk\" class=\"string\"/>\r\n  <Data name=\"file\" class=\"string\"/>\r\n  <Data name=\"readRate\" class=\"number\" for",
+      "\t\t<Data name='ioRate' visible='false'>%1.3f</Data>\r\n\t\t<Data name='readRate'>%1.3f</Data>\r\n\t\t<Data name='readSize'>%d</Data>\r\n\t\t<Data name='writeRate'>%1.3f</Data>\r\n\t\t<Data name='writeSize'>%d</Data>\r\n",
+      "\t\t<Item>\r\n\t\t\t<Data name='image'>%s</Data>\r\n\t\t\t<Data name='pid'>%d</Data>\r\n\t\t\t<Data name='ioRate' visible='false'>%1.3f</Data>\r\n\t\t\t<Data name='readRate'>%1.3f</Data>\r\n\t\t\t<Data name='readSize'>%d</Data>\r\n\t\t\t<Data name='writeRate'>%1.3f</Data>\r\n\t\t\t<Data name='writeSize'>%d</Data>\r\n\t\t</Item>\r\n"
+    ],
+    "name": "ReportHotFileInfo",
+    "prototype": "__int64 __fastcall(struct _iobuf *)",
+    "rank_score": 960,
+    "size": 1158,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "AddGuid",
+    "ea": "0x1400394a4",
+    "function_file": "functions/1400394a4_AddGuid.md",
+    "matched_imports": [
+      "msvcrt!fprintf",
+      "msvcrt!free",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "WPPFMT : error : Failed to add EnumGuid entry : Memory allocation failed for Guid Enumeration Link.\n"
+    ],
+    "name": "AddGuid",
+    "prototype": "",
+    "rank_score": 847,
+    "size": 264,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "IoReadCallback",
+    "ea": "0x140006588",
+    "function_file": "functions/140006588_IoReadCallback.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "IoReadCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 844,
+    "size": 1080,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "IoWriteCallback",
+    "ea": "0x1400069c8",
+    "function_file": "functions/1400069c8_IoWriteCallback.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "IoWriteCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 843,
+    "size": 1001,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "ArgParseCommandLine(int,ushort * *,ARGUMENT *,TYPED_ARGUMENT<ushort *> *)",
+    "ea": "0x14003b990",
+    "function_file": "functions/14003b990_ArgParseCommandLine_int_ushort_ARGUMENT_TYPED_ARGUMENT_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-console-l2-1-0!GetConsoleScreenBufferInfo",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-localization-l1-2-0!SetThreadPreferredUILanguages",
+      "api-ms-win-core-processenvironment-l1-1-0!GetStdHandle"
+    ],
+    "matched_strings": [],
+    "name": "?ArgParseCommandLine@@YAJHPEAPEAGPEAVARGUMENT@@PEAV?$TYPED_ARGUMENT@PEAG@@@Z",
+    "prototype": "__int64 __fastcall(int, unsigned __int16 **)",
+    "rank_score": 828,
+    "size": 546,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "DumpEvent(_EVENT_RECORD *,EVENT_CATEGORY)",
+    "ea": "0x140011a0c",
+    "function_file": "functions/140011a0c_DumpEvent_EVENT_RECORD_EVENT_CATEGORY.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "wevtapi!EvtIntWriteXmlEventToLocalLogfile"
+    ],
+    "matched_strings": [],
+    "name": "?DumpEvent@@YAXPEAU_EVENT_RECORD@@W4EVENT_CATEGORY@@@Z",
+    "prototype": "",
+    "rank_score": 827,
+    "size": 608,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "TracerptCreateXmlDocument",
+    "ea": "0x14002fa10",
+    "function_file": "functions/14002fa10_TracerptCreateXmlDocument.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "TracerptCreateXmlDocument",
+    "prototype": "",
+    "rank_score": 827,
+    "size": 398,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "IncludeElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x140036258",
+    "function_file": "functions/140036258_IncludeElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?IncludeElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 822,
+    "size": 588,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "XmlCleanup(void *)",
+    "ea": "0x140038330",
+    "function_file": "functions/140038330_XmlCleanup_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?XmlCleanup@@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 819,
+    "size": 209,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DeleteTracerptReport(_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x14003252c",
+    "function_file": "functions/14003252c_DeleteTracerptReport_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteTracerptReport@@YAXPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 818,
+    "size": 299,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PrintDateStringXmlTag",
+    "ea": "0x14001f0f8",
+    "function_file": "functions/14001f0f8_PrintDateStringXmlTag.md",
+    "matched_imports": [
+      "api-ms-win-core-datetime-l1-1-0!GetDateFormatW",
+      "api-ms-win-core-datetime-l1-1-0!GetTimeFormatW",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "api-ms-win-core-timezone-l1-1-0!SystemTimeToTzSpecificLocalTime"
+    ],
+    "matched_strings": [],
+    "name": "PrintDateStringXmlTag",
+    "prototype": "__int64 __usercall@<rax>(unsigned __int16 *@<rcx>, __int64, char)",
+    "rank_score": 818,
+    "size": 562,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "XmRWWalk(_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x14003809c",
+    "function_file": "functions/14003809c_XmRWWalk_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?XmRWWalk@@YAKPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 815,
+    "size": 653,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "DeleteTracerptString(_TRACERPT_STRING *)",
+    "ea": "0x1400328a4",
+    "function_file": "functions/1400328a4_DeleteTracerptString_TRACERPT_STRING.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteTracerptString@@YAXPEAU_TRACERPT_STRING@@@Z",
+    "prototype": "void __fastcall(struct _TRACERPT_STRING *Block)",
+    "rank_score": 814,
+    "size": 95,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FormatErrorMessage",
+    "ea": "0x14001eed0",
+    "function_file": "functions/14001eed0_FormatErrorMessage.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW"
+    ],
+    "matched_strings": [],
+    "name": "FormatErrorMessage",
+    "prototype": "__int64 __fastcall(DWORD dwMessageId, LPCWSTR lpLibFileName, LPWSTR lpBuffer)",
+    "rank_score": 813,
+    "size": 145,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ImportAttributeFile(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x140035db4",
+    "function_file": "functions/140035db4_ImportAttributeFile_XMRW_OPEN_CONTEXT_UNICODE_STRING_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?ImportAttributeFile@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@0@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 809,
+    "size": 397,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "EventXmlDump::DumpRenderingInfo(_iobuf *,EventDumpWorkspace *)",
+    "ea": "0x140010a88",
+    "function_file": "functions/140010a88_EventXmlDump_DumpRenderingInfo_iobuf_EventDumpWorkspace.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW",
+      "api-ms-win-core-localization-l1-2-0!GetUserDefaultLocaleName"
+    ],
+    "matched_strings": [
+      "\t\t<Task>",
+      "</Task>\r\n",
+      "xmlns=\"http://schemas.microsoft.com/win/2004/08/events/trace\"",
+      "xmlns=\"http://schemas.microsoft.com/win/2004/08/events/trace\""
+    ],
+    "name": "?DumpRenderingInfo@EventXmlDump@@QEAAXPEAU_iobuf@@PEAVEventDumpWorkspace@@@Z",
+    "prototype": "void(EventXmlDump *__hidden this, struct _iobuf *, struct EventDumpWorkspace *)",
+    "rank_score": 808,
+    "size": 1266,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DeleteDisk",
+    "ea": "0x14001bd40",
+    "function_file": "functions/14001bd40_DeleteDisk.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DeleteDisk",
+    "prototype": "__int64 __fastcall(LPVOID lpMem)",
+    "rank_score": 806,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GenerateOutputString(ushort *,ushort *,_STRING_TOKEN *,ulong,_LIST_ENTRY *,ulong *)",
+    "ea": "0x140019760",
+    "function_file": "functions/140019760_GenerateOutputString_ushort_ushort_STRING_TOKEN_ulong_LIST_ENTRY_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?GenerateOutputString@@YAPEAGPEAG0PEAU_STRING_TOKEN@@KPEAU_LIST_ENTRY@@PEAK@Z",
+    "prototype": "unsigned __int16 *__fastcall(unsigned __int16 *, unsigned __int16 *, struct _STRING_TOKEN *, unsigned int, struct _LIST_ENTRY *, unsigned int *)",
+    "rank_score": 805,
+    "size": 504,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DeleteMofEvent(_MOF_EVENT *)",
+    "ea": "0x140029f84",
+    "function_file": "functions/140029f84_DeleteMofEvent_MOF_EVENT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteMofEvent@@YAXPEAU_MOF_EVENT@@@Z",
+    "prototype": "void __fastcall(struct _MOF_EVENT *lpMem)",
+    "rank_score": 803,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventXmlDump::DumpHeader(_iobuf *,EventDumpWorkspace *)",
+    "ea": "0x140010594",
+    "function_file": "functions/140010594_EventXmlDump_DumpHeader_iobuf_EventDumpWorkspace.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+    ],
+    "matched_strings": [
+      "\t\t<Task>%u</Task>\r\n",
+      "\t\t<TimeCreated RawTime=\"%I64u\" />\r\n",
+      "\t\t<TimeCreated SystemTime=\"",
+      "\t\t<Execution ProcessID=\"%u\" ThreadID=\"%u\" ProcessorID=\"%u\" ",
+      "\t\t<Computer>",
+      "</Computer>\r\n",
+      "\t\t<Computer />\r\n",
+      "\t\t<Security UserID=\""
+    ],
+    "name": "?DumpHeader@EventXmlDump@@QEAAKPEAU_iobuf@@PEAVEventDumpWorkspace@@@Z",
+    "prototype": "unsigned int(EventXmlDump *__hidden this, struct _iobuf *, struct EventDumpWorkspace *)",
+    "rank_score": 774,
+    "size": 1260,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PrintTaskOpcodeVersionSummary",
+    "ea": "0x14002130c",
+    "function_file": "functions/14002130c_PrintTaskOpcodeVersionSummary.md",
+    "matched_imports": [
+      "msvcrt!fwprintf"
+    ],
+    "matched_strings": [],
+    "name": "PrintTaskOpcodeVersionSummary",
+    "prototype": "__int64(FILE *Stream, int, int)",
+    "rank_score": 713,
+    "size": 148,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x140002414",
+    "function_file": "functions/140002414_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GetTmfSearchPath",
+    "ea": "0x140038570",
+    "function_file": "functions/140038570_GetTmfSearchPath.md",
+    "matched_imports": [
+      "api-ms-win-core-processenvironment-l1-1-0!GetCurrentDirectoryW",
+      "msvcrt!fprintf"
+    ],
+    "matched_strings": [
+      "TRACE_FORMAT_SEARCH_PATH",
+      "Could not get the current directory\n"
+    ],
+    "name": "GetTmfSearchPath",
+    "prototype": "",
+    "rank_score": 700,
+    "size": 393,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetInstallLanguage",
+    "ea": "0x14003f42c",
+    "function_file": "functions/14003f42c_GetInstallLanguage.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "Software\\Microsoft\\Active Setup\\Installed Components\\{89820200-ECBD-11CF-8B85-00AA005B4383}"
+    ],
+    "name": "GetInstallLanguage",
+    "prototype": "",
+    "rank_score": 676,
+    "size": 258,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "FindProcessById(ulong,uchar)",
+    "ea": "0x14001d700",
+    "function_file": "functions/14001d700_FindProcessById_ulong_uchar.md",
+    "matched_imports": [
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?FindProcessById@@YAPEAU_PROCESS_RECORD@@KE@Z",
+    "prototype": "struct _PROCESS_RECORD *__fastcall(unsigned int, unsigned __int8)",
+    "rank_score": 623,
+    "size": 126,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "TracerptFPuts(char const *,_iobuf *)",
+    "ea": "0x1400161b0",
+    "function_file": "functions/1400161b0_TracerptFPuts_char_const_iobuf.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?TracerptFPuts@@YAKPEBDPEAU_iobuf@@@Z",
+    "prototype": "unsigned int __fastcall(const char *Src, struct _iobuf *)",
+    "rank_score": 620,
+    "size": 251,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "TracerptSaveXmlDocument",
+    "ea": "0x14003003c",
+    "function_file": "functions/14003003c_TracerptSaveXmlDocument.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "api-ms-win-shcore-stream-l1-1-0!SHCreateStreamOnFileEx"
+    ],
+    "matched_strings": [],
+    "name": "TracerptSaveXmlDocument",
+    "prototype": "",
+    "rank_score": 614,
+    "size": 233,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "pre_c_init",
+    "ea": "0x140002100",
+    "function_file": "functions/140002100_pre_c_init.md",
+    "matched_imports": [
+      "msvcrt!__set_app_type",
+      "msvcrt!__setusermatherr",
+      "msvcrt!_commode",
+      "msvcrt!_fmode"
+    ],
+    "matched_strings": [],
+    "name": "pre_c_init",
+    "prototype": "",
+    "rank_score": 614,
+    "size": 215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "TracerptFseek(_iobuf *,ulong)",
+    "ea": "0x1400166d4",
+    "function_file": "functions/1400166d4_TracerptFseek_iobuf_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!SetEndOfFile",
+      "api-ms-win-core-file-l1-1-0!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "?TracerptFseek@@YAKPEAU_iobuf@@K@Z",
+    "prototype": "unsigned int __fastcall(struct _iobuf *, unsigned int)",
+    "rank_score": 612,
+    "size": 119,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "GetTempName(ushort *,unsigned __int64)",
+    "ea": "0x1400172f4",
+    "function_file": "functions/1400172f4_GetTempName_ushort_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!GetTempFileNameW",
+      "api-ms-win-core-file-l1-2-3!GetTempPath2W"
+    ],
+    "matched_strings": [],
+    "name": "?GetTempName@@YAKPEAG_K@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int16 *, unsigned __int64)",
+    "rank_score": 609,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetEtwLogType",
+    "ea": "0x14001717c",
+    "function_file": "functions/14001717c_GetEtwLogType.md",
+    "matched_imports": [
+      "api-ms-win-eventing-consumer-l1-1-0!CloseTrace",
+      "api-ms-win-eventing-consumer-l1-1-0!OpenTraceW",
+      "api-ms-win-eventing-consumer-l1-1-0!ProcessTrace"
+    ],
+    "matched_strings": [],
+    "name": "GetEtwLogType",
+    "prototype": "",
+    "rank_score": 605,
+    "size": 219,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RawClockInit(ushort const *,unsigned __int64)",
+    "ea": "0x14001e6d8",
+    "function_file": "functions/14001e6d8_RawClockInit_ushort_const_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-eventing-consumer-l1-1-0!CloseTrace",
+      "api-ms-win-eventing-consumer-l1-1-0!OpenTraceW",
+      "api-ms-win-eventing-consumer-l1-1-0!ProcessTrace"
+    ],
+    "matched_strings": [],
+    "name": "?RawClockInit@@YAXPEBG_K@Z",
+    "prototype": "void __fastcall(const unsigned __int16 *, unsigned __int64)",
+    "rank_score": 605,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DumpTemplateList",
+    "ea": "0x140014ccc",
+    "function_file": "functions/140014ccc_DumpTemplateList.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "\t\t<templates>\r\n",
+      "\t\t\t<template tid=\"tid_%d\">\r\n",
+      "\t\t\t</template>\r\n",
+      "\t\t</templates>\r\n"
+    ],
+    "name": "DumpTemplateList",
+    "prototype": "",
+    "rank_score": 569,
+    "size": 451,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "WriteErrorMessageToReport(_TRACE_BASIC_INFO *,long,ulong)",
+    "ea": "0x1400192b4",
+    "function_file": "functions/1400192b4_WriteErrorMessageToReport_TRACE_BASIC_INFO_long_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadStringW"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n",
+      "<?xml-stylesheet type=\"text/xsl\" href=\"%s\"?>\r\n",
+      "pdh.dll"
+    ],
+    "name": "?WriteErrorMessageToReport@@YAKPEAU_TRACE_BASIC_INFO@@JK@Z",
+    "prototype": "unsigned int __fastcall(struct _TRACE_BASIC_INFO *, int, unsigned int)",
+    "rank_score": 569,
+    "size": 677,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DumpMofTaskList",
+    "ea": "0x1400144c4",
+    "function_file": "functions/1400144c4_DumpMofTaskList.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "\t\t<tasks>\r\n",
+      "\t\t\t<task value=\"%d\" eventGUID=\"%ws\" name=\"task%d\" message=\"$(string.string%d)\" />\r\n",
+      "\t\t</tasks>\r\n"
+    ],
+    "name": "DumpMofTaskList",
+    "prototype": "",
+    "rank_score": 537,
+    "size": 212,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CpuCallback",
+    "ea": "0x1400032c0",
+    "function_file": "functions/1400032c0_CpuCallback.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [
+      "MemSize",
+      "ComputerName"
+    ],
+    "name": "CpuCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 506,
+    "size": 248,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UpdateFileLogicalDrive(ulong,unsigned __int64,unsigned __int64,ushort const *)",
+    "ea": "0x14001e308",
+    "function_file": "functions/14001e308_UpdateFileLogicalDrive_ulong_unsigned_int64_unsigned_int64_ushort_const.md",
+    "matched_imports": [
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateFileLogicalDrive@@YAXK_K0PEBG@Z",
+    "prototype": "void __fastcall(unsigned int, unsigned __int64, unsigned __int64, const unsigned __int16 *)",
+    "rank_score": 424,
+    "size": 185,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "EventXmlDump::~EventXmlDump(void)",
+    "ea": "0x14000f0bc",
+    "function_file": "functions/14000f0bc_EventXmlDump_EventXmlDump_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1EventXmlDump@@QEAA@XZ",
+    "prototype": "void __fastcall(EventXmlDump *__hidden this)",
+    "rank_score": 422,
+    "size": 65,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "ElementEnd(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK &)",
+    "ea": "0x14003290c",
+    "function_file": "functions/14003290c_ElementEnd_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?ElementEnd@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 421,
+    "size": 1209,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "TracerptFPrintf(_iobuf *,char const *,...)",
+    "ea": "0x14001601c",
+    "function_file": "functions/14001601c_TracerptFPrintf_iobuf_char_const.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "msvcrt!_vsnprintf"
+    ],
+    "matched_strings": [],
+    "name": "?TracerptFPrintf@@YAKPEAU_iobuf@@PEBDZZ",
+    "prototype": "unsigned int(struct _iobuf *, const char *, ...)",
+    "rank_score": 421,
+    "size": 270,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ExcludeElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x140035880",
+    "function_file": "functions/140035880_ExcludeElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?ExcludeElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 420,
+    "size": 398,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "HashTable<RPT_STRING,0,0>::Insert(RPT_STRING *)",
+    "ea": "0x1400365a8",
+    "function_file": "functions/1400365a8_HashTable_RPT_STRING_0_0_Insert_RPT_STRING.md",
+    "matched_imports": [
+      "ntdll!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?Insert@?$HashTable@VRPT_STRING@@$0A@$0A@@@QEAAKPEAVRPT_STRING@@@Z",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 396,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "XmlParseMuiPathAndPrintTitles(_iobuf *,ushort *)",
+    "ea": "0x14002e418",
+    "function_file": "functions/14002e418_XmlParseMuiPathAndPrintTitles_iobuf_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?XmlParseMuiPathAndPrintTitles@@YAKPEAU_iobuf@@PEAG@Z",
+    "prototype": "unsigned int __fastcall(struct _iobuf *, LPCWSTR lpSrc)",
+    "rank_score": 420,
+    "size": 291,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "EventDumpWorkspace::ProcessComplexType(_EVENT_DUMP_DATA *,_EVENT_PROPERTY_INFO *,ulong,ulong *,ushort &,uchar)",
+    "ea": "0x14000e540",
+    "function_file": "functions/14000e540_EventDumpWorkspace_ProcessComplexType_EVENT_DUMP_DATA_EVENT_PROPERTY_INFO_ulong_ulong_ushort_uchar.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?ProcessComplexType@EventDumpWorkspace@@IEAAKPEAU_EVENT_DUMP_DATA@@PEAU_EVENT_PROPERTY_INFO@@KPEAKAEAGE@Z",
+    "prototype": "unsigned int __fastcall(EventDumpWorkspace *__hidden this, struct _EVENT_DUMP_DATA *, struct _EVENT_PROPERTY_INFO *, unsigned int, unsigned int *, unsigned __int16 *, unsigned __int8)",
+    "rank_score": 419,
+    "size": 609,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "HashTable<RPT_STRING,0,0>::Find(_UNICODE_STRING *,RPT_STRING * *)",
+    "ea": "0x140035a14",
+    "function_file": "functions/140035a14_HashTable_RPT_STRING_0_0_Find_UNICODE_STRING_RPT_STRING.md",
+    "matched_imports": [
+      "ntdll!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?Find@?$HashTable@VRPT_STRING@@$0A@$0A@@@QEAAKPEAU_UNICODE_STRING@@PEAPEAVRPT_STRING@@@Z",
+    "prototype": "",
+    "rank_score": 419,
+    "size": 314,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "DeleteTransList(_LIST_ENTRY *,ulong)",
+    "ea": "0x14001cc88",
+    "function_file": "functions/14001cc88_DeleteTransList_LIST_ENTRY_ulong.md",
+    "matched_imports": [
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlLeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteTransList@@YAEPEAU_LIST_ENTRY@@K@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _LIST_ENTRY *, unsigned int)",
+    "rank_score": 417,
+    "size": 178,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "RPT_STRING::operator=(_UNICODE_STRING &)",
+    "ea": "0x140030910",
+    "function_file": "functions/140030910_RPT_STRING_operator_UNICODE_STRING.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "??4RPT_STRING@@QEAAPEBV0@AEAU_UNICODE_STRING@@@Z",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "TracerptFClose(_iobuf *)",
+    "ea": "0x140015fa0",
+    "function_file": "functions/140015fa0_TracerptFClose_iobuf.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "?TracerptFClose@@YAHPEAU_iobuf@@@Z",
+    "prototype": "__int64 __fastcall(struct _iobuf *)",
+    "rank_score": 417,
+    "size": 115,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "GetMofInfoHead(_GUID const *)",
+    "ea": "0x140004cac",
+    "function_file": "functions/140004cac_GetMofInfoHead_GUID_const.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetMofInfoHead@@YAPEAU_MOF_INFO@@PEBU_GUID@@@Z",
+    "prototype": "struct _MOF_INFO *__fastcall(const struct _GUID *)",
+    "rank_score": 416,
+    "size": 277,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "AddService(ulong,_PROCESS_RECORD *)",
+    "ea": "0x14001b8d8",
+    "function_file": "functions/14001b8d8_AddService_ulong_PROCESS_RECORD.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?AddService@@YAPEAU_SERVICE_RECORD@@KPEAU_PROCESS_RECORD@@@Z",
+    "prototype": "struct _SERVICE_RECORD *__fastcall(unsigned int, struct _PROCESS_RECORD *)",
+    "rank_score": 415,
+    "size": 135,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "FindMofTaskTran",
+    "ea": "0x14002ab24",
+    "function_file": "functions/14002ab24_FindMofTaskTran.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "FindMofTaskTran",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 213,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ArgpReadArgumentParams(_ARGUMENT_INPUT *,ARGUMENT *,unsigned __int64,ushort const *,int)",
+    "ea": "0x14003e608",
+    "function_file": "functions/14003e608_ArgpReadArgumentParams_ARGUMENT_INPUT_ARGUMENT_unsigned_int64_ushort_const_int.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?ArgpReadArgumentParams@@YAJPEAU_ARGUMENT_INPUT@@PEAVARGUMENT@@_KPEBGH@Z",
+    "prototype": "int(struct _ARGUMENT_INPUT *, struct ARGUMENT *, unsigned __int64, const unsigned __int16 *, int)",
+    "rank_score": 413,
+    "size": 467,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CopyUrlStr",
+    "ea": "0x14001ed3c",
+    "function_file": "functions/14001ed3c_CopyUrlStr.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "CopyUrlStr",
+    "prototype": "__int64 __fastcall(void *Src, size_t Size)",
+    "rank_score": 413,
+    "size": 88,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "FileOutputStream::Write(void const *,ulong,ulong *)",
+    "ea": "0x1400305b0",
+    "function_file": "functions/1400305b0_FileOutputStream_Write_void_const_ulong_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?Write@FileOutputStream@@UEAAJPEBXKPEAK@Z",
+    "prototype": "__int64 __fastcall(FileOutputStream *__hidden this, const void *, unsigned int, unsigned int *)",
+    "rank_score": 411,
+    "size": 56,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "AddThread(ulong,_EVENT_RECORD *,_THREAD_RECORD * *)",
+    "ea": "0x14001b968",
+    "function_file": "functions/14001b968_AddThread_ulong_EVENT_RECORD_THREAD_RECORD.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?AddThread@@YAEKPEAU_EVENT_RECORD@@PEAPEAU_THREAD_RECORD@@@Z",
+    "prototype": "unsigned __int8 __fastcall(unsigned int, struct _EVENT_RECORD *, struct _THREAD_RECORD **)",
+    "rank_score": 410,
+    "size": 215,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "ArgDuplicateString(ushort const *)",
+    "ea": "0x14003b898",
+    "function_file": "functions/14003b898_ArgDuplicateString_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?ArgDuplicateString@@YAPEAGPEBG@Z",
+    "prototype": "unsigned __int16 *__fastcall(const unsigned __int16 *Src)",
+    "rank_score": 410,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventTableElementEnd(_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x14003506c",
+    "function_file": "functions/14003506c_EventTableElementEnd_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?EventTableElementEnd@@YAKPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 410,
+    "size": 651,
+    "tags": []
+  },
+  {
+    "callee_count": 32,
+    "caller_count": 0,
+    "demangled": "GeneralEventCallback(_EVENT_RECORD *)",
+    "ea": "0x140003a30",
+    "function_file": "functions/140003a30_GeneralEventCallback_EVENT_RECORD.md",
+    "matched_imports": [
+      "tdh!TdhLoadManifestFromBinary"
+    ],
+    "matched_strings": [
+      "TaskId",
+      "IssuingThreadId",
+      "BinaryPath"
+    ],
+    "name": "?GeneralEventCallback@@YAXPEAU_EVENT_RECORD@@@Z",
+    "prototype": "void __fastcall(struct _EVENT_RECORD *)",
+    "rank_score": 409,
+    "size": 3173,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ImportElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x140035f48",
+    "function_file": "functions/140035f48_ImportElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?ImportElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 409,
+    "size": 453,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AddTemplate",
+    "ea": "0x140013f20",
+    "function_file": "functions/140013f20_AddTemplate.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "AddTemplate",
+    "prototype": "",
+    "rank_score": 407,
+    "size": 463,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CreateGroupbyColumnDataFromList(_TRACERPT_EVENT_TABLE *,_TABLE_DATA *,_TABLE_DATA *,_LIST_ENTRY *)",
+    "ea": "0x1400295e8",
+    "function_file": "functions/1400295e8_CreateGroupbyColumnDataFromList_TRACERPT_EVENT_TABLE_TABLE_DATA_TABLE_DATA_LIST_ENTRY.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?CreateGroupbyColumnDataFromList@@YAEPEAU_TRACERPT_EVENT_TABLE@@PEAU_TABLE_DATA@@1PEAU_LIST_ENTRY@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _TRACERPT_EVENT_TABLE *, struct _TABLE_DATA *, struct _TABLE_DATA *, struct _LIST_ENTRY *)",
+    "rank_score": 407,
+    "size": 421,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CreateGroupbyColumnDataFromTable(_TRACERPT_EVENT_TABLE *,_TABLE_DATA *)",
+    "ea": "0x140029794",
+    "function_file": "functions/140029794_CreateGroupbyColumnDataFromTable_TRACERPT_EVENT_TABLE_TABLE_DATA.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?CreateGroupbyColumnDataFromTable@@YAEPEAU_TRACERPT_EVENT_TABLE@@PEAU_TABLE_DATA@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _TRACERPT_EVENT_TABLE *, struct _TABLE_DATA *)",
+    "rank_score": 406,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "EventDumpWorkspace::CreateHexDump(ushort * *,ushort,ushort)",
+    "ea": "0x14000d9e0",
+    "function_file": "functions/14000d9e0_EventDumpWorkspace_CreateHexDump_ushort_ushort_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?CreateHexDump@EventDumpWorkspace@@IEAAKPEAPEAGGG@Z",
+    "prototype": "unsigned int __fastcall(EventDumpWorkspace *__hidden this, unsigned __int16 **, unsigned __int16, unsigned __int16)",
+    "rank_score": 405,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "EventDumpIterator::CopyFrom(EventDumpIterator const &)",
+    "ea": "0x14000d96c",
+    "function_file": "functions/14000d96c_EventDumpIterator_CopyFrom_EventDumpIterator_const.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?CopyFrom@EventDumpIterator@@AEAAXAEBV1@@Z",
+    "prototype": "void __fastcall(EventDumpIterator *__hidden this, const struct EventDumpIterator *)",
+    "rank_score": 404,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "FreeReplaceTokenList(_LIST_ENTRY *)",
+    "ea": "0x1400196f0",
+    "function_file": "functions/1400196f0_FreeReplaceTokenList_LIST_ENTRY.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?FreeReplaceTokenList@@YAXPEAU_LIST_ENTRY@@@Z",
+    "prototype": "void __fastcall(struct _LIST_ENTRY *)",
+    "rank_score": 403,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ReportElementEnd(_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x140036c08",
+    "function_file": "functions/140036c08_ReportElementEnd_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?ReportElementEnd@@YAKPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 403,
+    "size": 207,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NewReplaceToken(int)",
+    "ea": "0x140019adc",
+    "function_file": "functions/140019adc_NewReplaceToken_int.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?NewReplaceToken@@YAPEAU_REPLACE_TOKEN@@H@Z",
+    "prototype": "struct _REPLACE_TOKEN *__fastcall(int)",
+    "rank_score": 402,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ExportEventSchema(ushort const *)",
+    "ea": "0x1400152e8",
+    "function_file": "functions/1400152e8_ExportEventSchema_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n",
+      "<instrumentationManifest    xmlns=\"http://schemas.microsoft.com/win/2004/08/events\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\r\n    xmlns:win=\"http://manifests.microsoft.com/win/2004/08/windows/events\"\r\n    xmlns:trace=\"http://schemas.microsoft.com/win/2004/08/events/trace\"\r\n    xsi:schemaLocation=\"http://schemas.microsoft.com/win/2004/08/events eventman.xsd\"\r\n    >\r\n",
+      "</instrumentationManifest>\r\n"
+    ],
+    "name": "?ExportEventSchema@@YAKPEBG@Z",
+    "prototype": "unsigned int __fastcall(const unsigned __int16 *)",
+    "rank_score": 354,
+    "size": 753,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PrintWPPEventXmlDump(_iobuf *,_EVENT_RECORD *)",
+    "ea": "0x140013564",
+    "function_file": "functions/140013564_PrintWPPEventXmlDump_iobuf_EVENT_RECORD.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ComponentName",
+      "SubComponentName",
+      "\t\t<Component>",
+      "</Component>\r\n",
+      "\t\t<SubComponent>",
+      "</SubComponent>\r\n"
+    ],
+    "name": "?PrintWPPEventXmlDump@@YAKPEAU_iobuf@@PEAU_EVENT_RECORD@@@Z",
+    "prototype": "unsigned int __fastcall(struct _iobuf *, PEVENT_RECORD pEvent)",
+    "rank_score": 268,
+    "size": 590,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PrintWBEMSid",
+    "ea": "0x1400130d0",
+    "function_file": "functions/1400130d0_PrintWBEMSid.md",
+    "matched_imports": [
+      "api-ms-win-security-lsalookup-l2-1-0!LookupAccountSidW"
+    ],
+    "matched_strings": [],
+    "name": "PrintWBEMSid",
+    "prototype": "",
+    "rank_score": 238,
+    "size": 239,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DumpEventIntoXML(_iobuf *,_EVENT_RECORD *,int)",
+    "ea": "0x14000d598",
+    "function_file": "functions/14000d598_DumpEventIntoXML_iobuf_EVENT_RECORD_int.md",
+    "matched_imports": [
+      "api-ms-win-core-timezone-l1-1-0!GetTimeZoneInformation"
+    ],
+    "matched_strings": [],
+    "name": "?DumpEventIntoXML@@YAKPEAU_iobuf@@PEAU_EVENT_RECORD@@H@Z",
+    "prototype": "unsigned int __fastcall(struct _iobuf *, PEVENT_RECORD Event, int)",
+    "rank_score": 231,
+    "size": 409,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "CompareItemData(_ITEM_DATA *,_ITEM_DATA *)",
+    "ea": "0x140029454",
+    "function_file": "functions/140029454_CompareItemData_ITEM_DATA_ITEM_DATA.md",
+    "matched_imports": [
+      "ntdll!RtlCompareString"
+    ],
+    "matched_strings": [],
+    "name": "?CompareItemData@@YAJPEAU_ITEM_DATA@@0@Z",
+    "prototype": "__int64 __fastcall(struct _ITEM_DATA *, struct _ITEM_DATA *)",
+    "rank_score": 229,
+    "size": 131,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "PrintSidToString(uchar *,ushort *,ulong)",
+    "ea": "0x14002d650",
+    "function_file": "functions/14002d650_PrintSidToString_uchar_ushort_ulong.md",
+    "matched_imports": [
+      "api-ms-win-security-lsalookup-l2-1-0!LookupAccountSidW"
+    ],
+    "matched_strings": [],
+    "name": "?PrintSidToString@@YAKPEAEPEAGK@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int8 *, unsigned __int16 *, unsigned int)",
+    "rank_score": 227,
+    "size": 253,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)",
+    "ea": "0x140009c78",
+    "function_file": "functions/140009c78_StringCchPrintfW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+    "prototype": "__int64(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, ...)",
+    "rank_score": 221,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "TracerptFPutwc(ushort,_iobuf *)",
+    "ea": "0x1400162b4",
+    "function_file": "functions/1400162b4_TracerptFPutwc_ushort_iobuf.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?TracerptFPutwc@@YAKGPEAU_iobuf@@@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int16, struct _iobuf *)",
+    "rank_score": 218,
+    "size": 166,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "TracerptWFopen(ushort const *,uchar,uchar)",
+    "ea": "0x140016754",
+    "function_file": "functions/140016754_TracerptWFopen_ushort_const_uchar_uchar.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!CreateFileW"
+    ],
+    "matched_strings": [],
+    "name": "?TracerptWFopen@@YAPEAU_iobuf@@PEBGEE@Z",
+    "prototype": "struct _iobuf *__fastcall(const unsigned __int16 *, unsigned __int8, unsigned __int8)",
+    "rank_score": 217,
+    "size": 173,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "TracerptFPutc(uchar,_iobuf *)",
+    "ea": "0x140016130",
+    "function_file": "functions/140016130_TracerptFPutc_uchar_iobuf.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?TracerptFPutc@@YAKEPEAU_iobuf@@@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int8, struct _iobuf *)",
+    "rank_score": 213,
+    "size": 122,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "RaiseAllocationFailure",
+    "ea": "0x140015e84",
+    "function_file": "functions/140015e84_RaiseAllocationFailure.md",
+    "matched_imports": [
+      "api-ms-win-core-rtlsupport-l1-1-0!RtlRaiseException"
+    ],
+    "matched_strings": [],
+    "name": "RaiseAllocationFailure",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PatternMatch(ushort *,int,ushort *,ulong,_STRING_TOKEN *,ulong *)",
+    "ea": "0x140019e10",
+    "function_file": "functions/140019e10_PatternMatch_ushort_int_ushort_ulong_STRING_TOKEN_ulong.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?PatternMatch@@YAKPEAGH0KPEAU_STRING_TOKEN@@PEAK@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int16 *, int, unsigned __int16 *, unsigned int, struct _STRING_TOKEN *, unsigned int *)",
+    "rank_score": 207,
+    "size": 610,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RemoveCtrlCharA",
+    "ea": "0x140021f98",
+    "function_file": "functions/140021f98_RemoveCtrlCharA.md",
+    "matched_imports": [
+      "msvcrt!isprint"
+    ],
+    "matched_strings": [],
+    "name": "RemoveCtrlCharA",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "EventXmlDump::DumpData(_iobuf *,EventDumpWorkspace *,int)",
+    "ea": "0x14000ffcc",
+    "function_file": "functions/14000ffcc_EventXmlDump_DumpData_iobuf_EventDumpWorkspace_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\t\t</ComplexData>\r\n",
+      "\t\t</ComplexData>\r\n",
+      "\t\t</ComplexData>\r\n",
+      "\t\t<ComplexData Name=\""
+    ],
+    "name": "?DumpData@EventXmlDump@@QEAAKPEAU_iobuf@@PEAVEventDumpWorkspace@@H@Z",
+    "prototype": "unsigned int(EventXmlDump *__hidden this, struct _iobuf *, struct EventDumpWorkspace *, int)",
+    "rank_score": 201,
+    "size": 1310,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PrintServiceUsageTable",
+    "ea": "0x140021184",
+    "function_file": "functions/140021184_PrintServiceUsageTable.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\t<Item>\r\n\t\t<Data name='serviceName'>%s</Data>\r\n",
+      "\t\t<Data name='status'>%s</Data>\r\n\t\t<Data name='group'>%s</Data>\r\n\t\t<Data name='cpu'>%.4f</Data>\r\n\t\t<Data name='threads'>%d</Data>\r\n\t\t<Data name='kernelCpuPer'>%.4f</Data>\r\n\t\t<Data name='userCpuPer'>%.4f</Data>\r\n\t\t<Data name='readRate'>%1.3f</Data>\r\n\t\t<Data name='writeRate'>%1.3f</Data>\r\n\t\t<Data name='pfRate'>%1.3f</Data>\r\n\t\t<Data name='regRate'>%1.3f</Data>\r\n\t</Item>\r\n",
+      "<Table name='serviceStats' level='1' key='100' topic='service'>\r\n",
+      "\t<Header>\r\n\t\t<Sort field='cpu' type='number' order='descending'/>\r\n\t\t<Sort field='serviceName' type='text' order='ascending'/>\r\n\t\t<Threshold type='top' field='count' value='3'/>\r\n\t\t<Threshold type='octave' field='cpu'/>\r\n\t\t<Data name='serviceName' class='string'/>\r\n\t\t<Data name='pid' class='string'/>\r\n\t\t<Data name='description' class='string'/>\r\n\t\t<Data name='status' class='string'/>\r\n\t\t<Data name='group' class='string'/>\r\n\t\t<Data name='cpu' summary='total' class='number' format='#,##0.0'/>\r\n\t\t<"
+    ],
+    "name": "PrintServiceUsageTable",
+    "prototype": "__int64 __fastcall(struct _iobuf *)",
+    "rank_score": 178,
+    "size": 385,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PrintDiskTotals",
+    "ea": "0x14001f330",
+    "function_file": "functions/14001f330_PrintDiskTotals.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<Table level='1' name='diskTotals' key='200' topic='diskBreakDown'>\r\n<Summary key='4' find='top' field='ioRate' topic='diskInfo'>\r\n  <Data name='diskNumber' label='topDiskIO'/>\r\n  <Data name='ioRate' format='#,##0'/>\r\n</Summary>\r\n\t<Header>\r\n\t\t<Sort field='ioRate' type='number' order='descending'/>\r\n\t\t<Threshold type='top' value='all'/>\r\n\t\t<Data name='diskNumber' class='string'/>\r\n\t\t<Data name='readRate' class='number' format='#,##0.0'/>\r\n\t\t<Data name='readSize' class='number'/>\r\n\t\t<Data name='wr",
+      "\t<Header>\r\n\t\t<Sort field='ioRate' type='number' order='descending'/>\r\n\t\t<Data name='image' class='string'/>\r\n\t\t<Data name='pid' class='string'/>\r\n\t\t<Data name='authority' class='string'/>\r\n\t\t<Data name='readRate' class='number' format='#,##0.0'/>\r\n\t\t<Data name='readSize' class='number'/>\r\n\t\t<Data name='writeRate' class='number' format='#,##0.0'/>\r\n\t\t<Data name='writeSize' class='number'/>\r\n\t</Header>\r\n",
+      "\t<Item>\r\n\t\t<Data name='diskNumber'>%d</Data>\r\n\t\t<Data name='ioRate' visible='false'>%1.3f</Data>\r\n\t\t<Data name='readRate'>%1.3f</Data>\r\n\t\t<Data name='readSize'>%d</Data>\r\n\t\t<Data name='writeRate'>%1.3f</Data>\r\n\t\t<Data name='writeSize'>%d</Data>\r\n"
+    ],
+    "name": "PrintDiskTotals",
+    "prototype": "__int64 __fastcall(struct _iobuf *)",
+    "rank_score": 127,
+    "size": 374,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 28,
+    "demangled": "memcpy_0",
+    "ea": "0x1400400be",
+    "function_file": "functions/1400400be_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 87,
+    "demangled": "memset_0",
+    "ea": "0x1400400d6",
+    "function_file": "functions/1400400d6_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "EventXmlDump::Dump(_iobuf *,EventDumpWorkspace *,int)",
+    "ea": "0x14000faa4",
+    "function_file": "functions/14000faa4_EventXmlDump_Dump_iobuf_EventDumpWorkspace_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "xmlns=\"http://schemas.microsoft.com/win/2004/08/events/trace\"",
+      "xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\""
+    ],
+    "name": "?Dump@EventXmlDump@@QEAAKPEAU_iobuf@@PEAVEventDumpWorkspace@@H@Z",
+    "prototype": "unsigned int __fastcall(EventXmlDump *__hidden this, struct _iobuf *, struct EventDumpWorkspace *, int)",
+    "rank_score": 121,
+    "size": 731,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PrintJobCallback",
+    "ea": "0x140007ec4",
+    "function_file": "functions/140007ec4_PrintJobCallback.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "PagesPerSide",
+      "FilesOpened"
+    ],
+    "name": "PrintJobCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 118,
+    "size": 1402,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ThStartCallback",
+    "ea": "0x14000a0d4",
+    "function_file": "functions/14000a0d4_ThStartCallback.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ProcessId",
+      "TThreadId"
+    ],
+    "name": "ThStartCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 118,
+    "size": 712,
+    "tags": [
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x140002b51",
+    "function_file": "functions/140002b51_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HasAMatchingStart",
+    "ea": "0x140005834",
+    "function_file": "functions/140005834_HasAMatchingStart.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ProcessId",
+      "TThreadId"
+    ],
+    "name": "HasAMatchingStart",
+    "prototype": "__int64 __fastcall(struct _EVENT_RECORD *)",
+    "rank_score": 106,
+    "size": 216,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "memmove_0",
+    "ea": "0x1400400ca",
+    "function_file": "functions/1400400ca_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WriteTransactionStatistics",
+    "ea": "0x140027de4",
+    "function_file": "functions/140027de4_WriteTransactionStatistics.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<Table name='transactionStats' key='200' topic='process'>\r\n<Header>\r\n  <Threshold type='top' field='count' value='3' />\r\n  <Threshold type='octave' field='cpu' />\r\n  <Sort field='cpu' type='number' order='descending'/>\r\n  <Data name='transaction' class='string'/>\r\n  <Data name='task' class='number'/>\r\n  <Data name='responseTime' class='number' format='#,##0'/>\r\n  <Data name='requestRate' class='number' format='#,##0.0'/>\r\n  <Data name='kernelCpuPer' class='number' format='#,##0.0'/>\r\n  <Data nam",
+      "<Item>\r\n  <Data name='transaction' translate='value'>%s</Data>\r\n  <Data name='task'>%d</Data>\r\n  <Data name='count' visible='false'>%d</Data>\r\n  <Data name='responseTime'>%1.0f</Data>\r\n  <Data name='requestRate'>%1.2f</Data>\r\n  <Data name='kernelCpuPer'>%.4f</Data>\r\n  <Data name='userCpuPer'>%.4f</Data>\r\n  <Data name='cpu'>%1.2f</Data>\r\n</Item>\r\n"
+    ],
+    "name": "WriteTransactionStatistics",
+    "prototype": "__int64 __fastcall(struct _iobuf *)",
+    "rank_score": 100,
+    "size": 580,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PrintWPPEventCSVDump(_iobuf *,_EVENT_RECORD *)",
+    "ea": "0x140013304",
+    "function_file": "functions/140013304_PrintWPPEventCSVDump_iobuf_EVENT_RECORD.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ComponentName",
+      "SubComponentName"
+    ],
+    "name": "?PrintWPPEventCSVDump@@YAXPEAU_iobuf@@PEAU_EVENT_RECORD@@@Z",
+    "prototype": "void __fastcall(struct _iobuf *, PEVENT_RECORD pEvent)",
+    "rank_score": 98,
+    "size": 600,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ThreadPoolStartCallback",
+    "ea": "0x14000a3a4",
+    "function_file": "functions/14000a3a4_ThreadPoolStartCallback.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "TaskId"
+    ],
+    "name": "ThreadPoolStartCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 65,
+    "size": 187,
+    "tags": [
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "ThEndCallback",
+    "ea": "0x140009ea8",
+    "function_file": "functions/140009ea8_ThEndCallback.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ProcessId"
+    ],
+    "name": "ThEndCallback",
+    "prototype": "__int64 __fastcall(PEVENT_RECORD Event)",
+    "rank_score": 64,
+    "size": 549,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ColumnAttributeOutType(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COLUMN *)",
+    "ea": "0x140030cf8",
+    "function_file": "functions/140030cf8_ColumnAttributeOutType_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COLUMN.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "win:Xml"
+    ],
+    "name": "?ColumnAttributeOutType@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COLUMN@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COLUMN *)",
+    "rank_score": 63,
+    "size": 1340,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "GetSystemField",
+    "ea": "0x14002c100",
+    "function_file": "functions/14002c100_GetSystemField.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "sys:Task"
+    ],
+    "name": "GetSystemField",
+    "prototype": "",
+    "rank_score": 62,
+    "size": 838,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PrintPerThreadPerDiskTable",
+    "ea": "0x14001fb68",
+    "function_file": "functions/14001fb68_PrintPerThreadPerDiskTable.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\t<Item>\r\n\t\t<Data name='image'>%s</Data>\r\n\t\t<Data name='pid'>%d</Data>\r\n\t\t<Data name='authority'>%s</Data>\r\n\t\t<Data name='ioRate' visible='false'>%1.3f</Data>\r\n\t\t<Data name='readRate'>%1.3f</Data>\r\n\t\t<Data name='readSize'>%d</Data>\r\n\t\t<Data name='writeRate'>%1.3f</Data>\r\n\t\t<Data name='writeSize'>%d</Data>\r\n\t</Item>\r\n"
+    ],
+    "name": "PrintPerThreadPerDiskTable",
+    "prototype": "__int64 __fastcall(struct _iobuf *)",
+    "rank_score": 47,
+    "size": 523,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 96,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140040130",
+    "function_file": "functions/140040130_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 86,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x140041010",
+    "function_file": "functions/140041010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 26,
+    "demangled": "operator delete(void *,std::nothrow_t const &)",
+    "ea": "0x1400020e4",
+    "function_file": "functions/1400020e4_operator_delete_void_std_nothrow_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAXAEBUnothrow_t@std@@@Z",
+    "prototype": "void __fastcall(void *, const struct std::nothrow_t *)",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "UpdateThreadIisData",
+    "ea": "0x14000a5a0",
+    "function_file": "functions/14000a5a0_UpdateThreadIisData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateThreadIisData",
+    "prototype": "",
+    "rank_score": 35,
+    "size": 1196,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 26,
+    "demangled": "GetMofData(_EVENT_RECORD *,ushort *,void *,ulong *)",
+    "ea": "0x140004c2c",
+    "function_file": "functions/140004c2c_GetMofData_EVENT_RECORD_ushort_void_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetMofData@@YAKPEAU_EVENT_RECORD@@PEAGPEAXPEAK@Z",
+    "prototype": "unsigned int __fastcall(PEVENT_RECORD Event, unsigned __int16 *, void *, unsigned int *)",
+    "rank_score": 29,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "EventTableAttributesCheck(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EVENT_TABLE *)",
+    "ea": "0x140034dc4",
+    "function_file": "functions/140034dc4_EventTableAttributesCheck_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_EVENT_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventTableAttributesCheck@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EVENT_TABLE@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EVENT_TABLE *)",
+    "rank_score": 28,
+    "size": 674,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "operator delete(void *)",
+    "ea": "0x1400020f0",
+    "function_file": "functions/1400020f0_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 28,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 42,
+    "demangled": "EqualString(_UNICODE_STRING,ushort *,uchar)",
+    "ea": "0x140016808",
+    "function_file": "functions/140016808_EqualString_UNICODE_STRING_ushort_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EqualString@@YAEU_UNICODE_STRING@@PEAGE@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _UNICODE_STRING *__struct_ptr, unsigned __int16 *, unsigned __int8)",
+    "rank_score": 27,
+    "size": 238,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ColumnElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x1400318f0",
+    "function_file": "functions/1400318f0_ColumnElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ColumnElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 26,
+    "size": 860,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "ElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK &,_UNICODE_STRING_STACK *)",
+    "ea": "0x140032dcc",
+    "function_file": "functions/140032dcc_ElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK_UNICODE_STRING_STACK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING_STACK@@PEAU2@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 26,
+    "size": 1153,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PrintWbemSidToString(uchar *,ushort *,ulong,ulong)",
+    "ea": "0x14002d754",
+    "function_file": "functions/14002d754_PrintWbemSidToString_uchar_ushort_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PrintWbemSidToString@@YAKPEAEPEAGKK@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int8 *, unsigned __int16 *, unsigned int, unsigned int)",
+    "rank_score": 25,
+    "size": 131,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "EventTableElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x140035300",
+    "function_file": "functions/140035300_EventTableElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventTableElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 24,
+    "size": 548,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SectionElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x140037364",
+    "function_file": "functions/140037364_SectionElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SectionElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 24,
+    "size": 589,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14003ffc8",
+    "function_file": "functions/14003ffc8_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CounterTableElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x140032230",
+    "function_file": "functions/140032230_CounterTableElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CounterTableElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 23,
+    "size": 591,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "operator new(unsigned __int64,std::nothrow_t const &)",
+    "ea": "0x140002730",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_KAEBUnothrow_t@std@@@Z",
+    "prototype": "void *__fastcall(unsigned __int64, const struct std::nothrow_t *)",
+    "rank_score": 23,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 18,
+    "demangled": "PrintWString(_iobuf *,uchar,uchar,ushort *)",
+    "ea": "0x140013a04",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PrintWString@@YAXPEAU_iobuf@@EEPEAG@Z",
+    "prototype": "void __fastcall(struct _iobuf *, unsigned __int8, unsigned __int8, unsigned __int16 *)",
+    "rank_score": 21,
+    "size": 110,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "StringCchCopyW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x140009c04",
+    "function_file": "functions/140009c04_StringCchCopyW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyW@@YAJPEAG_KPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int64, const unsigned __int16 *)",
+    "rank_score": 20,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ColumnAttributesCheck(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COLUMN *,uchar)",
+    "ea": "0x1400315c8",
+    "function_file": "functions/1400315c8_ColumnAttributesCheck_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COLUMN_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ColumnAttributesCheck@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COLUMN@@E@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COLUMN *, unsigned __int8)",
+    "rank_score": 19,
+    "size": 802,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "EventXmlDump::ConvertPlainToXml(ushort *,ushort *,ulong *)",
+    "ea": "0x14000f6f0",
+    "function_file": "functions/14000f6f0_EventXmlDump_ConvertPlainToXml_ushort_ushort_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConvertPlainToXml@EventXmlDump@@QEAAKPEAG0PEAK@Z",
+    "prototype": "unsigned int __fastcall(EventXmlDump *__hidden this, unsigned __int16 *, unsigned __int16 *, unsigned int *)",
+    "rank_score": 19,
+    "size": 405,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "EventXmlDump::ConvertPlainToXmlForStructMember(ushort *,ushort *,ushort *,ulong *)",
+    "ea": "0x14000f88c",
+    "function_file": "functions/14000f88c_EventXmlDump_ConvertPlainToXmlForStructMember_ushort_ushort_ushort_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConvertPlainToXmlForStructMember@EventXmlDump@@QEAAKPEAG00PEAK@Z",
+    "prototype": "unsigned int(EventXmlDump *__hidden this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned int *)",
+    "rank_score": 18,
+    "size": 528,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "FindOrAddService(ulong,ulong)",
+    "ea": "0x14001d51c",
+    "function_file": "functions/14001d51c_FindOrAddService_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FindOrAddService@@YAPEAU_SERVICE_RECORD@@KK@Z",
+    "prototype": "struct _SERVICE_RECORD *__fastcall(unsigned int, unsigned int)",
+    "rank_score": 18,
+    "size": 196,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "CpdiGuidToString(ushort *,ulong,_GUID *)",
+    "ea": "0x140032488",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CpdiGuidToString@@YAPEAGPEAGKPEAU_GUID@@@Z",
+    "prototype": "unsigned __int16 *(unsigned __int16 *, unsigned int, struct _GUID *)",
+    "rank_score": 17,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "StringToUlong(_UNICODE_STRING &,ulong *)",
+    "ea": "0x140037a74",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringToUlong@@YAKAEAU_UNICODE_STRING@@PEAK@Z",
+    "prototype": "unsigned int __fastcall(struct _UNICODE_STRING *, unsigned int *)",
+    "rank_score": 17,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CalculateServiceUsage",
+    "ea": "0x14001e96c",
+    "function_file": "functions/14001e96c_CalculateServiceUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CalculateServiceUsage",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 594,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventTableAttributeTask(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EVENT_TABLE *)",
+    "ea": "0x140034a38",
+    "function_file": "functions/140034a38_EventTableAttributeTask_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_EVENT_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventTableAttributeTask@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EVENT_TABLE@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EVENT_TABLE *)",
+    "rank_score": 16,
+    "size": 205,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ReportElementStart(_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x140036ce0",
+    "function_file": "functions/140036ce0_ReportElementStart_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReportElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 16,
+    "size": 871,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "EventXmlDump::DumpError(_iobuf *,EventDumpWorkspace *,ulong)",
+    "ea": "0x1400104f0",
+    "function_file": "functions/1400104f0_EventXmlDump_DumpError_iobuf_EventDumpWorkspace_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DumpError@EventXmlDump@@QEAAKPEAU_iobuf@@PEAVEventDumpWorkspace@@K@Z",
+    "prototype": "unsigned int(EventXmlDump *__hidden this, struct _iobuf *, struct EventDumpWorkspace *, unsigned int)",
+    "rank_score": 15,
+    "size": 155,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetMatchedMofVersionManifest",
+    "ea": "0x1400049d4",
+    "function_file": "functions/1400049d4_GetMatchedMofVersionManifest.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetMatchedMofVersionManifest",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 288,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "UpdateProgress(void)",
+    "ea": "0x14001920c",
+    "function_file": "functions/14001920c_UpdateProgress_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateProgress@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 15,
+    "size": 160,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "_alloca_probe",
+    "ea": "0x1400401c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 10,
+    "demangled": "ArgPrintMessage(ulong *,uint,...)",
+    "ea": "0x14003d4f0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ArgPrintMessage@@YAJPEAKIZZ",
+    "prototype": "__int64(unsigned int *, UINT uID, ...)",
+    "rank_score": 14,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CompareJoinRowDataEntryColumn(_TRACERPT_COLUMN *,_TABLE_DATA *,_TABLE_DATA *,_JOIN_ROW_DATA_ENTRY *,_JOIN_ROW_DATA_ENTRY *)",
+    "ea": "0x1400294e0",
+    "function_file": "functions/1400294e0_CompareJoinRowDataEntryColumn_TRACERPT_COLUMN_TABLE_DATA_TABLE_DATA_JOIN_ROW_DATA_ENTRY_JOIN_ROW_DATA_ENTRY.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompareJoinRowDataEntryColumn@@YAJPEAU_TRACERPT_COLUMN@@PEAU_TABLE_DATA@@1PEAU_JOIN_ROW_DATA_ENTRY@@2@Z",
+    "prototype": "__int64 __fastcall(struct _TRACERPT_COLUMN *, struct _TABLE_DATA *, struct _TABLE_DATA *, struct _JOIN_ROW_DATA_ENTRY *, struct _JOIN_ROW_DATA_ENTRY *)",
+    "rank_score": 14,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CompareListElement(long,_TABLE_DATA *,_TABLE_DATA *,_LIST_ENTRY *,ulong,ulong)",
+    "ea": "0x14002956c",
+    "function_file": "functions/14002956c_CompareListElement_long_TABLE_DATA_TABLE_DATA_LIST_ENTRY_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompareListElement@@YAHJPEAU_TABLE_DATA@@0PEAU_LIST_ENTRY@@KK@Z",
+    "prototype": "__int64 __fastcall(int, struct _TABLE_DATA *, struct _TABLE_DATA *, struct _LIST_ENTRY *, unsigned int, unsigned int)",
+    "rank_score": 14,
+    "size": 115,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CounterTableAttributesCheck(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COUNTER_TABLE *)",
+    "ea": "0x140031fb8",
+    "function_file": "functions/140031fb8_CounterTableAttributesCheck_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COUNTER_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CounterTableAttributesCheck@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COUNTER_TABLE@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COUNTER_TABLE *)",
+    "rank_score": 14,
+    "size": 623,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "EventFieldAttributesCheck(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_FIELD *)",
+    "ea": "0x1400339c8",
+    "function_file": "functions/1400339c8_EventFieldAttributesCheck_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_FIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventFieldAttributesCheck@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_FIELD@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_FIELD *)",
+    "rank_score": 14,
+    "size": 478,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "EventFieldElementEnd(_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x140033bac",
+    "function_file": "functions/140033bac_EventFieldElementEnd_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventFieldElementEnd@@YAKPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 14,
+    "size": 784,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "EventJoinFieldElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x14003451c",
+    "function_file": "functions/14003451c_EventJoinFieldElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventJoinFieldElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 14,
+    "size": 672,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "GetMofVersion(_EVENT_RECORD *,_MOF_INFO *,uchar)",
+    "ea": "0x140004f08",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetMofVersion@@YAPEAU_MOF_VERSION@@PEAU_EVENT_RECORD@@PEAU_MOF_INFO@@E@Z",
+    "prototype": "struct _MOF_VERSION *__fastcall(PEVENT_RECORD Event, struct _MOF_INFO *, unsigned __int8)",
+    "rank_score": 14,
+    "size": 442,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "PrintPdhCounterTableData(_iobuf *,_PDH_COUNTER_PATH_ELEMENTS_W *,ushort *,_PDH_STATISTICS,ulong,int,int,int,int,int,int)",
+    "ea": "0x14001f4ac",
+    "function_file": "functions/14001f4ac_PrintPdhCounterTableData_iobuf_PDH_COUNTER_PATH_ELEMENTS_W_ushort_PDH_STATISTICS_ulong_int_int_int_int_int_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PrintPdhCounterTableData@@YAXPEAU_iobuf@@PEAU_PDH_COUNTER_PATH_ELEMENTS_W@@PEAGU_PDH_STATISTICS@@KHHHHHH@Z",
+    "prototype": "void __usercall(struct _iobuf *@<rcx>, struct _PDH_COUNTER_PATH_ELEMENTS_W *@<rdx>, unsigned __int16 *@<r8>, struct _PDH_STATISTICS *__struct_ptr@<r9>, unsigned int, int, int, int, int, int, int)",
+    "rank_score": 14,
+    "size": 806,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "UpdatePageFaultCount",
+    "ea": "0x14000a468",
+    "function_file": "functions/14000a468_UpdatePageFaultCount.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdatePageFaultCount",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 303,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "UpdateThreadPrintData",
+    "ea": "0x14000aa54",
+    "function_file": "functions/14000aa54_UpdateThreadPrintData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateThreadPrintData",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 345,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "__acrt_iob_func",
+    "ea": "0x140002bf0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__acrt_iob_func",
+    "prototype": "FILE *__cdecl(unsigned int Ix)",
+    "rank_score": 14,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 8,
+    "demangled": "utl::basic_string<ushort,utl::char_traits<ushort>,utl::allocator<ushort>>::assign(ushort const *,unsigned __int64)",
+    "ea": "0x140038850",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@?$basic_string@GU?$char_traits@G@utl@@V?$allocator@G@2@@utl@@QEAA_NPEBG_K@Z",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CompareMofCountListElement",
+    "ea": "0x14001ecac",
+    "function_file": "functions/14001ecac_CompareMofCountListElement.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompareMofCountListElement",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 136,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "EventXmlDump::OnPropertyFound(EventDumpWorkspace *,_EVENT_DUMP_DATA *,ushort,ushort)",
+    "ea": "0x140011030",
+    "function_file": "functions/140011030_EventXmlDump_OnPropertyFound_EventDumpWorkspace_EVENT_DUMP_DATA_ushort_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnPropertyFound@EventXmlDump@@UEAAKPEAVEventDumpWorkspace@@PEAU_EVENT_DUMP_DATA@@GG@Z",
+    "prototype": "unsigned int __fastcall(EventXmlDump *__hidden this, struct EventDumpWorkspace *, struct _EVENT_DUMP_DATA *, unsigned __int16, unsigned __int16)",
+    "rank_score": 13,
+    "size": 221,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for___ArgComp__",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_dynamic_initializer_for_ArgComp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for___ArgComp__",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 166,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for___ArgTmfPath__",
+    "ea": "0x140001f30",
+    "function_file": "functions/140001f30_dynamic_initializer_for_ArgTmfPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for___ArgTmfPath__",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 166,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "AdjustThreadTime",
+    "ea": "0x140002c20",
+    "function_file": "functions/140002c20_AdjustThreadTime.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AdjustThreadTime",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 370,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlpImageNtHeader",
+    "ea": "0x1400027fc",
+    "function_file": "functions/1400027fc_RtlpImageNtHeader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlpImageNtHeader",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 81,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SortCompareMemory(char *,ushort,char *,ushort,uchar)",
+    "ea": "0x14002dc68",
+    "function_file": "functions/14002dc68_SortCompareMemory_char_ushort_char_ushort_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SortCompareMemory@@YAJPEADG0GE@Z",
+    "prototype": "__int64 __fastcall(char *, unsigned __int16, char *, unsigned __int16, char)",
+    "rank_score": 12,
+    "size": 123,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CompareFileRecord",
+    "ea": "0x14001ec60",
+    "function_file": "functions/14001ec60_CompareFileRecord.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompareFileRecord",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 70,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "EventJoinFieldElementEnd(_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x1400343e8",
+    "function_file": "functions/1400343e8_EventJoinFieldElementEnd_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventJoinFieldElementEnd@@YAKPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 11,
+    "size": 301,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "XmlHonorOutTypeImpl::HonorOutType(EventDumpWorkspace *,_EVENT_PROPERTY_INFO *,ushort *)",
+    "ea": "0x140010f80",
+    "function_file": "functions/140010f80_XmlHonorOutTypeImpl_HonorOutType_EventDumpWorkspace_EVENT_PROPERTY_INFO_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HonorOutType@XmlHonorOutTypeImpl@@UEAAHPEAVEventDumpWorkspace@@PEAU_EVENT_PROPERTY_INFO@@PEAG@Z",
+    "prototype": "__int64 __fastcall(XmlHonorOutTypeImpl *__hidden this, struct EventDumpWorkspace *, struct _EVENT_PROPERTY_INFO *, unsigned __int16 *)",
+    "rank_score": 11,
+    "size": 46,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "XmlHonorOutTypeImplDataTag::HonorOutType(EventDumpWorkspace *,_EVENT_PROPERTY_INFO *,ushort *)",
+    "ea": "0x140010fc0",
+    "function_file": "functions/140010fc0_XmlHonorOutTypeImplDataTag_HonorOutType_EventDumpWorkspace_EVENT_PROPERTY_INFO_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HonorOutType@XmlHonorOutTypeImplDataTag@@UEAAHPEAVEventDumpWorkspace@@PEAU_EVENT_PROPERTY_INFO@@PEAG@Z",
+    "prototype": "__int64 __fastcall(XmlHonorOutTypeImplDataTag *__hidden this, struct EventDumpWorkspace *, struct _EVENT_PROPERTY_INFO *, unsigned __int16 *)",
+    "rank_score": 11,
+    "size": 91,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SectionAttributesCheck(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_SECTION *)",
+    "ea": "0x140037214",
+    "function_file": "functions/140037214_SectionAttributesCheck_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_SECTION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SectionAttributesCheck@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_SECTION@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_SECTION *)",
+    "rank_score": 10,
+    "size": 329,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "EventFieldAttributeField(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_FIELD *)",
+    "ea": "0x14003364c",
+    "function_file": "functions/14003364c_EventFieldAttributeField_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_FIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventFieldAttributeField@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_FIELD@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_FIELD *)",
+    "rank_score": 9,
+    "size": 446,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "EventFieldElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x140033ec4",
+    "function_file": "functions/140033ec4_EventFieldElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventFieldElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 9,
+    "size": 415,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "FindGlobalThreadById(ulong,_EVENT_RECORD *)",
+    "ea": "0x14001ceb0",
+    "function_file": "functions/14001ceb0_FindGlobalThreadById_ulong_EVENT_RECORD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FindGlobalThreadById@@YAPEAU_THREAD_RECORD@@KPEAU_EVENT_RECORD@@@Z",
+    "prototype": "struct _THREAD_RECORD *__fastcall(unsigned int, struct _EVENT_RECORD *)",
+    "rank_score": 9,
+    "size": 204,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SubTableElementStart(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING_STACK *)",
+    "ea": "0x140037b90",
+    "function_file": "functions/140037b90_SubTableElementStart_XMRW_OPEN_CONTEXT_UNICODE_STRING_STACK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SubTableElementStart@@YAKPEAU_XMRW_OPEN_CONTEXT@@PEAU_UNICODE_STRING_STACK@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING_STACK *)",
+    "rank_score": 9,
+    "size": 403,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "ArgPrintf(ushort const *,...)",
+    "ea": "0x14003d7b8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ArgPrintf@@YAJPEBGZZ",
+    "prototype": "__int64(const unsigned __int16 *, ...)",
+    "rank_score": 8,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CounterTableAttributeTitle(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COUNTER_TABLE *)",
+    "ea": "0x140031ec8",
+    "function_file": "functions/140031ec8_CounterTableAttributeTitle_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COUNTER_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CounterTableAttributeTitle@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COUNTER_TABLE@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COUNTER_TABLE *)",
+    "rank_score": 8,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "DpcIsrData::TimeRangeToIndecies(unsigned __int64,unsigned __int64,DpcIsrData::EVENT_INSTANCE_DATA const *,uint,uint &,uint &)",
+    "ea": "0x14000cc90",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?TimeRangeToIndecies@DpcIsrData@@AEBA_N_K0PEBUEVENT_INSTANCE_DATA@1@IAEAI2@Z",
+    "prototype": "bool __fastcall(DpcIsrData *__hidden this, unsigned __int64, unsigned __int64, const struct DpcIsrData::EVENT_INSTANCE_DATA *, unsigned int, unsigned int *, unsigned int *)",
+    "rank_score": 8,
+    "size": 397,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EqualJoinElementEnd(_XMRW_OPEN_CONTEXT *)",
+    "ea": "0x140033254",
+    "function_file": "functions/140033254_EqualJoinElementEnd_XMRW_OPEN_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EqualJoinElementEnd@@YAKPEAU_XMRW_OPEN_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *)",
+    "rank_score": 8,
+    "size": 440,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "EventTableAttributeTitle(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EVENT_TABLE *)",
+    "ea": "0x140034bd8",
+    "function_file": "functions/140034bd8_EventTableAttributeTitle_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_EVENT_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventTableAttributeTitle@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EVENT_TABLE@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EVENT_TABLE *)",
+    "rank_score": 8,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ExcludeAttributeCounter(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EXCLUSIVE_COUNTER *)",
+    "ea": "0x140035658",
+    "function_file": "functions/140035658_ExcludeAttributeCounter_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_EXCLUSIVE_COUNTER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ExcludeAttributeCounter@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EXCLUSIVE_COUNTER@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EXCLUSIVE_COUNTER *)",
+    "rank_score": 8,
+    "size": 316,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IncludeAttributeInstance(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_INCLUSIVE_INSTANCE *)",
+    "ea": "0x140036114",
+    "function_file": "functions/140036114_IncludeAttributeInstance_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_INCLUSIVE_INSTANCE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IncludeAttributeInstance@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_INCLUSIVE_INSTANCE@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_INCLUSIVE_INSTANCE *)",
+    "rank_score": 8,
+    "size": 316,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SectionAttributeTitle(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_SECTION *)",
+    "ea": "0x140037124",
+    "function_file": "functions/140037124_SectionAttributeTitle_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_SECTION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SectionAttributeTitle@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_SECTION@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_SECTION *)",
+    "rank_score": 8,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SortRowData",
+    "ea": "0x14002dcec",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SortRowData",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 285,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "StringAttributeID(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_STRING *)",
+    "ea": "0x1400375cc",
+    "function_file": "functions/1400375cc_StringAttributeID_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_STRING.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringAttributeID@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_STRING@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_STRING *)",
+    "rank_score": 8,
+    "size": 195,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ColumnAttributeGroupby(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COLUMN *)",
+    "ea": "0x140030ac0",
+    "function_file": "functions/140030ac0_ColumnAttributeGroupby_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COLUMN.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ColumnAttributeGroupby@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COLUMN@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COLUMN *)",
+    "rank_score": 7,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ColumnAttributeSort(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COLUMN *,uchar)",
+    "ea": "0x14003123c",
+    "function_file": "functions/14003123c_ColumnAttributeSort_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COLUMN_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ColumnAttributeSort@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COLUMN@@E@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COLUMN *, unsigned __int8)",
+    "rank_score": 7,
+    "size": 383,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventFieldAttributeAggregate(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_FIELD *)",
+    "ea": "0x140033414",
+    "function_file": "functions/140033414_EventFieldAttributeAggregate_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_FIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventFieldAttributeAggregate@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_FIELD@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_FIELD *)",
+    "rank_score": 7,
+    "size": 354,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "EventFieldAttributeProviderID(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_FIELD *)",
+    "ea": "0x140033810",
+    "function_file": "functions/140033810_EventFieldAttributeProviderID_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_FIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventFieldAttributeProviderID@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_FIELD@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_FIELD *)",
+    "rank_score": 7,
+    "size": 224,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "EventJoinFieldAttributeField(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_JOINFIELD *)",
+    "ea": "0x14003413c",
+    "function_file": "functions/14003413c_EventJoinFieldAttributeField_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_JOINFIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventJoinFieldAttributeField@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_JOINFIELD@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_JOINFIELD *)",
+    "rank_score": 7,
+    "size": 235,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "EventJoinFieldAttributeProviderID(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_JOINFIELD *)",
+    "ea": "0x140034230",
+    "function_file": "functions/140034230_EventJoinFieldAttributeProviderID_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_JOINFIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventJoinFieldAttributeProviderID@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_JOINFIELD@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_JOINFIELD *)",
+    "rank_score": 7,
+    "size": 224,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ExcludeAttributesCheck(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EXCLUSIVE_COUNTER *,_TRACERPT_COUNTER_TABLE *)",
+    "ea": "0x14003579c",
+    "function_file": "functions/14003579c_ExcludeAttributesCheck_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_EXCLUSIVE_COUNTER_TRACERPT_COUNTER_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ExcludeAttributesCheck@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EXCLUSIVE_COUNTER@@PEAU_TRACERPT_COUNTER_TABLE@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EXCLUSIVE_COUNTER *, struct _TRACERPT_COUNTER_TABLE *)",
+    "rank_score": 7,
+    "size": 219,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "StringCchCatW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x140009b40",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCatW@@YAJPEAG_KPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int64, const unsigned __int16 *)",
+    "rank_score": 7,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ColumnAttributeAlign(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COLUMN *)",
+    "ea": "0x1400309c0",
+    "function_file": "functions/1400309c0_ColumnAttributeAlign_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COLUMN.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ColumnAttributeAlign@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COLUMN@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COLUMN *)",
+    "rank_score": 6,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ColumnAttributeOrder(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COLUMN *)",
+    "ea": "0x140030bf8",
+    "function_file": "functions/140030bf8_ColumnAttributeOrder_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COLUMN.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ColumnAttributeOrder@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COLUMN@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COLUMN *)",
+    "rank_score": 6,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ColumnAttributeSummary(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COLUMN *)",
+    "ea": "0x1400313c4",
+    "function_file": "functions/1400313c4_ColumnAttributeSummary_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COLUMN.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ColumnAttributeSummary@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COLUMN@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COLUMN *)",
+    "rank_score": 6,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ColumnAttributeVisible(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COLUMN *)",
+    "ea": "0x1400314c8",
+    "function_file": "functions/1400314c8_ColumnAttributeVisible_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COLUMN.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ColumnAttributeVisible@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COLUMN@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COLUMN *)",
+    "rank_score": 6,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CounterTableAttributeKey(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COUNTER_TABLE *)",
+    "ea": "0x140031c54",
+    "function_file": "functions/140031c54_CounterTableAttributeKey_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COUNTER_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CounterTableAttributeKey@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COUNTER_TABLE@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COUNTER_TABLE *)",
+    "rank_score": 6,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CounterTableAttributeLevel(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COUNTER_TABLE *)",
+    "ea": "0x140031d28",
+    "function_file": "functions/140031d28_CounterTableAttributeLevel_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COUNTER_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CounterTableAttributeLevel@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COUNTER_TABLE@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COUNTER_TABLE *)",
+    "rank_score": 6,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CounterTableAttributeThreshold(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_COUNTER_TABLE *)",
+    "ea": "0x140031dfc",
+    "function_file": "functions/140031dfc_CounterTableAttributeThreshold_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_COUNTER_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CounterTableAttributeThreshold@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_COUNTER_TABLE@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_COUNTER_TABLE *)",
+    "rank_score": 6,
+    "size": 198,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventFieldAttributeEventID(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_FIELD *)",
+    "ea": "0x14003357c",
+    "function_file": "functions/14003357c_EventFieldAttributeEventID_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_FIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventFieldAttributeEventID@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_FIELD@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_FIELD *)",
+    "rank_score": 6,
+    "size": 202,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventFieldAttributeVersion(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_FIELD *)",
+    "ea": "0x1400338f8",
+    "function_file": "functions/1400338f8_EventFieldAttributeVersion_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_FIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventFieldAttributeVersion@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_FIELD@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_FIELD *)",
+    "rank_score": 6,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventJoinFieldAttributeEventID(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_JOINFIELD *)",
+    "ea": "0x14003406c",
+    "function_file": "functions/14003406c_EventJoinFieldAttributeEventID_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_JOINFIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventJoinFieldAttributeEventID@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_JOINFIELD@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_JOINFIELD *)",
+    "rank_score": 6,
+    "size": 202,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventJoinFieldAttributeVersion(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_JOINFIELD *)",
+    "ea": "0x140034318",
+    "function_file": "functions/140034318_EventJoinFieldAttributeVersion_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_JOINFIELD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventJoinFieldAttributeVersion@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_JOINFIELD@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_JOINFIELD *)",
+    "rank_score": 6,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventTableAttributeKey(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EVENT_TABLE *)",
+    "ea": "0x1400347c4",
+    "function_file": "functions/1400347c4_EventTableAttributeKey_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_EVENT_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventTableAttributeKey@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EVENT_TABLE@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EVENT_TABLE *)",
+    "rank_score": 6,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventTableAttributeLevel(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EVENT_TABLE *)",
+    "ea": "0x140034898",
+    "function_file": "functions/140034898_EventTableAttributeLevel_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_EVENT_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventTableAttributeLevel@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EVENT_TABLE@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EVENT_TABLE *)",
+    "rank_score": 6,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventTableAttributeRowCount(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EVENT_TABLE *)",
+    "ea": "0x14003496c",
+    "function_file": "functions/14003496c_EventTableAttributeRowCount_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_EVENT_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventTableAttributeRowCount@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EVENT_TABLE@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EVENT_TABLE *)",
+    "rank_score": 6,
+    "size": 198,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventTableAttributeThreshold(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EVENT_TABLE *)",
+    "ea": "0x140034b0c",
+    "function_file": "functions/140034b0c_EventTableAttributeThreshold_XMRW_OPEN_CONTEXT_UNICODE_STRING_TRACERPT_EVENT_TABLE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventTableAttributeThreshold@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EVENT_TABLE@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EVENT_TABLE *)",
+    "rank_score": 6,
+    "size": 198,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EventTableAttributeTransaction(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EVENT_TABLE *)",
+    "ea": "0x140034cc8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventTableAttributeTransaction@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EVENT_TABLE@@@Z",
+    "prototype": "unsigned int __fastcall(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EVENT_TABLE *)",
+    "rank_score": 6,
+    "size": 243,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "OpenTempFile",
+    "ea": "0x140011f98",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OpenTempFile",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ReportAttributeThreshold(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_REPORT *)",
+    "ea": "0x140036a60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReportAttributeThreshold@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_REPORT@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_REPORT *)",
+    "rank_score": 6,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ReportAttributeVersion(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_REPORT *)",
+    "ea": "0x140036b34",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReportAttributeVersion@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_REPORT@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_REPORT *)",
+    "rank_score": 6,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SectionAttributeKey(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_SECTION *)",
+    "ea": "0x140037050",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SectionAttributeKey@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_SECTION@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_SECTION *)",
+    "rank_score": 6,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SubTableAttributeRowCount(_XMRW_OPEN_CONTEXT *,_UNICODE_STRING &,_TRACERPT_EVENT_TABLE *)",
+    "ea": "0x140037ac4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SubTableAttributeRowCount@@YAKPEAU_XMRW_OPEN_CONTEXT@@AEAU_UNICODE_STRING@@PEAU_TRACERPT_EVENT_TABLE@@@Z",
+    "prototype": "unsigned int(struct _XMRW_OPEN_CONTEXT *, struct _UNICODE_STRING *, struct _TRACERPT_EVENT_TABLE *)",
+    "rank_score": 6,
+    "size": 198,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "StopThreadTrans",
+    "ea": "0x140009ac8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StopThreadTrans",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 111,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FindMatchMofVersion(_MOF_VERSION *,_EVENT_DESCRIPTOR const *,uchar,uchar)",
+    "ea": "0x14002aa44",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FindMatchMofVersion@@YAEPEAU_MOF_VERSION@@PEBU_EVENT_DESCRIPTOR@@EE@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _MOF_VERSION *, const struct _EVENT_DESCRIPTOR *, unsigned __int8, unsigned __int8)",
+    "rank_score": 2,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "FileOutputStream::Read(void *,ulong,ulong *)",
+    "ea": "0x14002f7e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Read@FileOutputStream@@UEAAJPEAXKPEAK@Z",
+    "prototype": "__int64 __fastcall(FileOutputStream *__hidden this, void *, unsigned int, unsigned int *)",
+    "rank_score": 0,
+    "size": 6,
+    "tags": []
+  }
+]

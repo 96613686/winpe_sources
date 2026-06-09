@@ -1,0 +1,31 @@
+# _CommandParamReceiver::operator()_::_1_::dtor$0
+
+- ea: `0x140011c59`
+- end: `0x140011c65`
+- name: `_CommandParamReceiver::operator()_::_1_::dtor$0`
+- size: `12`
+- prototype: `void __fastcall(__int64, __int64)`
+- caller_count: `0`
+- callee_count: `1`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x140008454`
+
+## pseudocode
+
+```c
+void __fastcall CommandParamReceiver::operator()_::_1_::dtor_0(__int64 a1, __int64 a2)
+{
+  errorlib::scoped_error<winerror_error::tag>::~scoped_error<winerror_error::tag>(a2 + 144, a2);
+}
+
+```
+
+## disassembly
+
+```asm
+0x140011c59  lea     rcx, [rdx+90h]
+0x140011c60  jmp     ??1?$scoped_error@Utag@winerror_error@@@errorlib@@QEAA@XZ; errorlib::scoped_error<winerror_error::tag>::~scoped_error<winerror_error::tag>(void)
+```
