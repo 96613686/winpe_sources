@@ -1,0 +1,221 @@
+# SXSVSHAREDDLG::Update(SXSVSharedItemSP &)
+
+- ea: `0x142828790`
+- end: `0x14282a175`
+- name: `?Update@SXSVSHAREDDLG@@QEAAXAEAVSXSVSharedItemSP@@@Z`
+- size: `6629`
+- prototype: `void(SXSVSHAREDDLG *__hidden this, struct SXSVSharedItemSP *)`
+- caller_count: `1`
+- callee_count: `27`
+- tags: `installer_update`
+
+## callers
+
+- `0x142827ea0`
+
+## callees
+
+- `0x140056330`
+- `0x14007f5c0`
+- `0x140099050`
+- `0x140099118`
+- `0x140099970`
+- `0x1404501c0`
+- `0x1404515b0`
+- `0x14047ce20`
+- `0x1404b2830`
+- `0x1406f14b0`
+- `0x1408cc4b0`
+- `0x1408cfe50`
+- `0x1409ab820`
+- `0x140c81ec0`
+- `0x140f8a450`
+- `0x141043090`
+- `0x14113d724`
+- `0x141349e30`
+- `0x141766e90`
+- `0x1417f6950`
+- `0x141b9a0f0`
+- `0x1423c0e30`
+- `0x142828790`
+- `0x14282acd0`
+- `0x14282b870`
+- `0x14282e020`
+- `0x14282ebbc`
+
+## import_xrefs
+
+- `mso40uiWin32Client!__imp_?IsDataSourceSubclassOf@FlexUI@@YA_NPEAUIDataSourceDescription@1@I@Z` at `0x142828a4f`
+- `mso40uiWin32Client!__imp_?IsDataSourceSubclassOf@FlexUI@@YA_NPEAUIDataSourceDescription@1@I@Z` at `0x14282992e`
+- `mso40uiWin32Client!__imp_?IsDataSourceSubclassOf@FlexUI@@YA_NPEAUIDataSourceDescription@1@I@Z` at `0x142829b85`
+- `mso40uiWin32Client!__imp_?IsDataSourceSubclassOf@FlexUI@@YA_NPEAUIDataSourceDescription@1@I@Z` at `0x142828a4f`
+- `mso40uiWin32Client!__imp_?IsDataSourceSubclassOf@FlexUI@@YA_NPEAUIDataSourceDescription@1@I@Z` at `0x14282992e`
+- `mso40uiWin32Client!__imp_?IsDataSourceSubclassOf@FlexUI@@YA_NPEAUIDataSourceDescription@1@I@Z` at `0x142829b85`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x14282884d`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428288a0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828900`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828960`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828ac2`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828b0f`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828b6f`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828bb9`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828c10`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828c8e`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828d83`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828dd0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828e4e`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828eb8`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828f20`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828f97`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428290d7`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829141`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829225`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x14282928f`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829362`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428293b2`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428294ee`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x14282956d`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428295e0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829878`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428299a0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428299f0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829a51`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829aa5`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829b02`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829c20`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829ca0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829cf3`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829d60`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829e40`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829ec0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x14282a130`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x14282884d`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428288a0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828900`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828960`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828ac2`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828b0f`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828b6f`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828bb9`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828c10`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828c8e`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828d83`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828dd0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828e4e`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828eb8`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828f20`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142828f97`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428290d7`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829141`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829225`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x14282928f`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829362`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428293b2`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428294ee`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x14282956d`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428295e0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829878`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428299a0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1428299f0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829a51`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829aa5`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829b02`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829c20`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829ca0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829cf3`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829d60`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829e40`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x142829ec0`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x14282a130`
+- `mso40uiWin32Client!__imp_?CreateString@FlexValue@FlexUI@@SA_NPEB_WAEAVFlexValueSP@2@@Z` at `0x142829848`
+- `mso40uiWin32Client!__imp_?CreateString@FlexValue@FlexUI@@SA_NPEB_WAEAVFlexValueSP@2@@Z` at `0x14282a100`
+- `mso40uiWin32Client!__imp_?CreateString@FlexValue@FlexUI@@SA_NPEB_WAEAVFlexValueSP@2@@Z` at `0x142829848`
+- `mso40uiWin32Client!__imp_?CreateString@FlexValue@FlexUI@@SA_NPEB_WAEAVFlexValueSP@2@@Z` at `0x14282a100`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828817`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828869`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428288c9`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828928`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828a8a`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828ad6`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828b37`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828b81`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828bd9`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828c51`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828d48`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828d97`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828e14`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828e80`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828ee8`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828f60`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428290a0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14282910a`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428291ea`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829253`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829328`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829376`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428294b1`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14282952f`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428295a4`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829836`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829960`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428299b5`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829a16`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829a68`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829ac8`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829be0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829c60`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829cb5`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829d24`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829e00`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829e82`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14282a0ea`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828817`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828869`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428288c9`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828928`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828a8a`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828ad6`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828b37`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828b81`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828bd9`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828c51`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828d48`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828d97`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828e14`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828e80`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828ee8`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142828f60`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428290a0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14282910a`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428291ea`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829253`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829328`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829376`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428294b1`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14282952f`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428295a4`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829836`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829960`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1428299b5`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829a16`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829a68`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829ac8`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829be0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829c60`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829cb5`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829d24`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829e00`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x142829e82`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14282a0ea`
+- `Mso20Win32Client!__imp_MsoRaiseException` at `0x1428298c5`
+- `Mso20Win32Client!__imp_MsoRaiseException` at `0x1428298cc`
+- `Mso20Win32Client!__imp_MsoRaiseException` at `0x14282a16e`
+- `Mso20Win32Client!__imp_MsoRaiseException` at `0x1428298c5`
+- `Mso20Win32Client!__imp_MsoRaiseException` at `0x1428298cc`
+- `Mso20Win32Client!__imp_MsoRaiseException` at `0x14282a16e`
+
+## pseudocode
+
+```c
+
+```

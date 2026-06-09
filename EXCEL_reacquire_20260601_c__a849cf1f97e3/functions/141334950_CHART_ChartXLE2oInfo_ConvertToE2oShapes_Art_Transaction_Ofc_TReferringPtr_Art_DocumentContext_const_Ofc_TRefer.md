@@ -1,0 +1,244 @@
+# CHART::ChartXLE2oInfo::ConvertToE2oShapes(Art::Transaction &,Ofc::TReferringPtr<Art::DocumentContext> const &,Ofc::TReferringPtr<IMsoDrawing> const &,MSOSP *,Ofc::TReferringPtr<Dr::GroupDrawingElement> const &,Art::ShapeConversionPath,Ofc::TReferringPtr<Dr::DrawingElement> &,Art::DiagramConversionPath,Art::GroupTransform2D const *,bool)
+
+- ea: `0x141334950`
+- end: `0x141336698`
+- name: `?ConvertToE2oShapes@ChartXLE2oInfo@CHART@@UEAA?AV?$TWeakPtr@VGroupDrawingElement@Dr@@@Ofc@@AEAVTransaction@Art@@AEBV?$TReferringPtr@VDocumentContext@Art@@@4@AEBV?$TReferringPtr@UIMsoDrawing@@@4@PEAUMSOSP@@AEBV?$TReferringPtr@VGroupDrawingElement@Dr@@@4@W4ShapeConversionPath@6@AEAV?$TReferringPtr@VDrawingElement@Dr@@@4@W4DiagramConversionPath@6@PEBVGroupTransform2D@6@_N@Z`
+- size: `7496`
+- prototype: `__int64 __fastcall(int, int, int, int, __int64, struct MSOSP *, __int64, int, __int64, int)`
+- caller_count: `0`
+- callee_count: `18`
+- tags: ``
+
+## callees
+
+- `0x14007f360`
+- `0x140381f60`
+- `0x1403f1370`
+- `0x1404330f0`
+- `0x140436a50`
+- `0x14044d220`
+- `0x14044d420`
+- `0x14047cd40`
+- `0x1404bb6c0`
+- `0x1405277c0`
+- `0x1408cc460`
+- `0x1408cc4b0`
+- `0x1408cfe50`
+- `0x141334950`
+- `0x1413dafb0`
+- `0x1417c9720`
+- `0x1418295b0`
+- `0x141e250d0`
+
+## import_xrefs
+
+- `KERNEL32!EncodePointer` at `0x1413356ad`
+- `KERNEL32!EncodePointer` at `0x1413358c0`
+- `KERNEL32!EncodePointer` at `0x141335d20`
+- `KERNEL32!EncodePointer` at `0x1413361eb`
+- `KERNEL32!EncodePointer` at `0x1413356ad`
+- `KERNEL32!EncodePointer` at `0x1413358c0`
+- `KERNEL32!EncodePointer` at `0x141335d20`
+- `KERNEL32!EncodePointer` at `0x1413361eb`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141335f71`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336040`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336083`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336419`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336500`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336542`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141335f71`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336040`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336083`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336419`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336500`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141336542`
+- `oart!__imp_?SetCharPropertyBag@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@AEBVTextCharPropertyBag@2@_N@Z` at `0x141336380`
+- `oart!__imp_?SetCharPropertyBag@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@AEBVTextCharPropertyBag@2@_N@Z` at `0x141336380`
+- `oart!__imp_??0NonVisualGroupDrawingShapeProps@Art@@QEAA@XZ` at `0x141335599`
+- `oart!__imp_??0NonVisualGroupDrawingShapeProps@Art@@QEAA@XZ` at `0x141335599`
+- `oart!__imp_??0NonVisualDrawingShapeProps@Art@@QEAA@XZ` at `0x141335a80`
+- `oart!__imp_??0NonVisualDrawingShapeProps@Art@@QEAA@XZ` at `0x141335a80`
+- `oart!__imp_??0NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x141334c8d`
+- `oart!__imp_??0NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x141334c8d`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141334c80`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335442`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14133558e`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14133578e`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335a71`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141334c80`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335442`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14133558e`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14133578e`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335a71`
+- `oart!__imp_??0ShapeDrawingElement@Dr@@QEAA@AEBVNonVisualDrawingProps@Art@@AEBVNonVisualDrawingShapeProps@3@AEBV?$TWeakPtr@VDrawingE2o@Dr@@@Ofc@@AEBV?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@3@AEBV?$TOptional@VShapeStyle@Art@@@6@AEBVTextBodyPropertyBag@3@$$QEAV?$TOwningPtr@VTextBody@Art@@@6@$$QEAV?$TOwningPtr@VIClientData@Dr@@@6@@Z` at `0x141335d00`
+- `oart!__imp_??0ShapeDrawingElement@Dr@@QEAA@AEBVNonVisualDrawingProps@Art@@AEBVNonVisualDrawingShapeProps@3@AEBV?$TWeakPtr@VDrawingE2o@Dr@@@Ofc@@AEBV?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@3@AEBV?$TOptional@VShapeStyle@Art@@@6@AEBVTextBodyPropertyBag@3@$$QEAV?$TOwningPtr@VTextBody@Art@@@6@$$QEAV?$TOwningPtr@VIClientData@Dr@@@6@@Z` at `0x141335d00`
+- `oart!__imp_?PutChars@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@PEB_W_N3@Z` at `0x1413362f0`
+- `oart!__imp_?PutChars@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@PEB_W_N3@Z` at `0x1413362f0`
+- `oart!__imp_??1NonVisualDrawingShapeProps@Art@@QEAA@XZ` at `0x141335de2`
+- `oart!__imp_??1NonVisualDrawingShapeProps@Art@@QEAA@XZ` at `0x141335de2`
+- `oart!__imp_??1NonVisualConnectorProps@Art@@QEAA@XZ` at `0x14133592e`
+- `oart!__imp_??1NonVisualConnectorProps@Art@@QEAA@XZ` at `0x14133592e`
+- `oart!__imp_?InsertField@TextBody@Art@@QEAA?AU_GUID@@AEAVCTransaction@Ofc@@AEAUTextRange@2@AEBV?$TWeakPtr@VITextFieldResolver@Art@@@5@PEB_W@Z` at `0x141336351`
+- `oart!__imp_?InsertField@TextBody@Art@@QEAA?AU_GUID@@AEAVCTransaction@Ofc@@AEAUTextRange@2@AEBV?$TWeakPtr@VITextFieldResolver@Art@@@5@PEB_W@Z` at `0x141336351`
+- `oart!__imp_??1GroupShapeProps@Art@@QEAA@XZ` at `0x141335742`
+- `oart!__imp_??1GroupShapeProps@Art@@QEAA@XZ` at `0x141335742`
+- `oart!__imp_??0BlipFillProps@Art@@QEAA@XZ` at `0x141335435`
+- `oart!__imp_??0BlipFillProps@Art@@QEAA@XZ` at `0x141335435`
+- `oart!__imp_??0ConnectorDrawingElement@Dr@@QEAA@AEBVNonVisualDrawingProps@Art@@AEBVNonVisualConnectorProps@3@AEBV?$TWeakPtr@VDrawingE2o@Dr@@@Ofc@@AEBV?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@3@AEBV?$TOptional@VShapeStyle@Art@@@6@$$QEAV?$TOwningPtr@VIClientData@Dr@@@6@@Z` at `0x1413358a0`
+- `oart!__imp_??0ConnectorDrawingElement@Dr@@QEAA@AEBVNonVisualDrawingProps@Art@@AEBVNonVisualConnectorProps@3@AEBV?$TWeakPtr@VDrawingE2o@Dr@@@Ofc@@AEBV?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@3@AEBV?$TOptional@VShapeStyle@Art@@@6@$$QEAV?$TOwningPtr@VIClientData@Dr@@@6@@Z` at `0x1413358a0`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141334c6d`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14133542a`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141335780`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141335a64`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141334c6d`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14133542a`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141335780`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141335a64`
+- `oart!__imp_??1NonVisualPictureProps@Art@@QEAA@XZ` at `0x14133550d`
+- `oart!__imp_??1NonVisualPictureProps@Art@@QEAA@XZ` at `0x14133550d`
+- `oart!__imp_??1ShapeStyleData@Art@@QEAA@XZ` at `0x141335914`
+- `oart!__imp_??1ShapeStyleData@Art@@QEAA@XZ` at `0x141335db3`
+- `oart!__imp_??1ShapeStyleData@Art@@QEAA@XZ` at `0x141335914`
+- `oart!__imp_??1ShapeStyleData@Art@@QEAA@XZ` at `0x141335db3`
+- `oart!__imp_?ConvertFromTextBox@Art@@YAXAEBV?$TOptional@VTextBox@Art@@@Ofc@@AEAVTextBodyPropertyBag@1@AEAV?$TOwningPtr@VTextBody@Art@@@3@@Z` at `0x141335c55`
+- `oart!__imp_?ConvertFromTextBox@Art@@YAXAEBV?$TOptional@VTextBox@Art@@@Ofc@@AEAVTextBodyPropertyBag@1@AEAV?$TOwningPtr@VTextBody@Art@@@3@@Z` at `0x141335c55`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141334d60`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141335534`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141335e00`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141334d60`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141335534`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x141335e00`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x141336100`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x141336100`
+- `oart!__imp_?GetBounds@GroupTransform2D@Art@@QEBAXAEAVRect64@2@@Z` at `0x141334bb1`
+- `oart!__imp_?GetBounds@GroupTransform2D@Art@@QEBAXAEAVRect64@2@@Z` at `0x141334bb1`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141334d4f`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335520`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335738`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335940`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335def`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141334d4f`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335520`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335738`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335940`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x141335def`
+- `oart!__imp_?GetTxLink@XLConversionInfoBase@XL@@UEBA?AV?$TWeakPtr@VITxLinkFmla@XL@@@Ofc@@XZ` at `0x141336135`
+- `oart!__imp_?GetTxLink@XLConversionInfoBase@XL@@UEBA?AV?$TWeakPtr@VITxLinkFmla@XL@@@Ofc@@XZ` at `0x141336240`
+- `oart!__imp_?GetTxLink@XLConversionInfoBase@XL@@UEBA?AV?$TWeakPtr@VITxLinkFmla@XL@@@Ofc@@XZ` at `0x141336135`
+- `oart!__imp_?GetTxLink@XLConversionInfoBase@XL@@UEBA?AV?$TWeakPtr@VITxLinkFmla@XL@@@Ofc@@XZ` at `0x141336240`
+- `oart!__imp_??1NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x141334d42`
+- `oart!__imp_??1NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x141334d42`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x141334a40`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x141334a60`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x141334b6b`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x141334bd9`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x141334a40`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x141334a60`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x141334b6b`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x141334bd9`
+- `oart!__imp_??1TextBox@Art@@QEAA@XZ` at `0x141335d93`
+- `oart!__imp_??1TextBox@Art@@QEAA@XZ` at `0x141335d93`
+- `oart!__imp_??0GroupTransform2D@Art@@QEAA@XZ` at `0x141334b30`
+- `oart!__imp_??0GroupTransform2D@Art@@QEAA@XZ` at `0x141334b30`
+- `oart!__imp_??4TextBodyPropertyBag@Art@@QEAAAEAV01@$$QEAV01@@Z` at `0x141335b37`
+- `oart!__imp_??4TextBodyPropertyBag@Art@@QEAAAEAV01@$$QEAV01@@Z` at `0x141335b37`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x14133642e`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x14133642e`
+- `oart!__imp_??$GetPropertyBag@VTextCharPropertyBag@Art@@@TextBody@Art@@QEBAXAEBUTextRange@1@AEAVTextCharPropertyBag@1@PEAVTextBodyImplCursor@1@@Z` at `0x141336317`
+- `oart!__imp_??$GetPropertyBag@VTextCharPropertyBag@Art@@@TextBody@Art@@QEBAXAEBUTextRange@1@AEAVTextCharPropertyBag@1@PEAVTextBodyImplCursor@1@@Z` at `0x141336317`
+- `oart!__imp_??0GroupDrawingElement@Dr@@QEAA@AEBVNonVisualDrawingProps@Art@@AEBVNonVisualGroupDrawingShapeProps@3@AEBV?$TWeakPtr@VDrawingE2o@Dr@@@Ofc@@AEBVGroupShapeProps@3@$$QEAV?$TOwningPtr@VIClientData@Dr@@@6@@Z` at `0x14133568f`
+- `oart!__imp_??0GroupDrawingElement@Dr@@QEAA@AEBVNonVisualDrawingProps@Art@@AEBVNonVisualGroupDrawingShapeProps@3@AEBV?$TWeakPtr@VDrawingE2o@Dr@@@Ofc@@AEBVGroupShapeProps@3@$$QEAV?$TOwningPtr@VIClientData@Dr@@@6@@Z` at `0x14133568f`
+- `oart!__imp_??0GroupShapeProps@Art@@QEAA@XZ` at `0x141335580`
+- `oart!__imp_??0GroupShapeProps@Art@@QEAA@XZ` at `0x141335580`
+- `oart!__imp_?ToTextBox@TextBody@Art@@QEBAXAEAVTextBox@2@AEBVTextBodyPropertyBag@2@@Z` at `0x141335be0`
+- `oart!__imp_?ToTextBox@TextBody@Art@@QEBAXAEAVTextBox@2@AEBVTextBodyPropertyBag@2@@Z` at `0x141335be0`
+- `oart!__imp_??1GroupTransform2D@Art@@QEAA@XZ` at `0x141334d93`
+- `oart!__imp_??1GroupTransform2D@Art@@QEAA@XZ` at `0x141334d93`
+- `oart!__imp_??0NonVisualPictureProps@Art@@QEAA@XZ` at `0x14133544f`
+- `oart!__imp_??0NonVisualPictureProps@Art@@QEAA@XZ` at `0x14133544f`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1413362ad`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1413362ad`
+- `oart!__imp_??1NonVisualGroupDrawingShapeProps@Art@@QEAA@XZ` at `0x14133572a`
+- `oart!__imp_??1NonVisualGroupDrawingShapeProps@Art@@QEAA@XZ` at `0x14133572a`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335b44`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335d6e`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335dd5`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335b44`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335d6e`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335dd5`
+- `oart!__imp_?GetTextBody@ShapeDrawingElement@Dr@@QEAAAEBV?$TReferringPtr@VTextBody@Art@@@Ofc@@XZ` at `0x14133618b`
+- `oart!__imp_?GetTextBody@ShapeDrawingElement@Dr@@QEAAAEBV?$TReferringPtr@VTextBody@Art@@@Ofc@@XZ` at `0x14133618b`
+- `oart!__imp_??1BlipFillProps@Art@@QEAA@XZ` at `0x14133552a`
+- `oart!__imp_??1BlipFillProps@Art@@QEAA@XZ` at `0x14133552a`
+- `oart!__imp_?SwapTextBody@ShapeDrawingElement@Dr@@QEAAXAEAV?$TOwningPtr@VTextBody@Art@@@Ofc@@@Z` at `0x141336220`
+- `oart!__imp_?SwapTextBody@ShapeDrawingElement@Dr@@QEAAXAEAV?$TOwningPtr@VTextBody@Art@@@Ofc@@@Z` at `0x141336220`
+- `oart!__imp_??0TextBody@Art@@QEAA@XZ` at `0x1413361c8`
+- `oart!__imp_??0TextBody@Art@@QEAA@XZ` at `0x1413361c8`
+- `oart!__imp_?CreateInkDrElemFromLegacy@XLDrawingLoadSaveHelper@XL@@SAXAEAUIPropConverter@Art@@AEBV?$TWeakPtr@VDrawingE2o@Dr@@@Ofc@@$$QEAV?$TOwningPtr@VIClientData@Dr@@@6@AEAV?$TOwningPtr@VDrawingElement@Dr@@@6@@Z` at `0x141335a2b`
+- `oart!__imp_?CreateInkDrElemFromLegacy@XLDrawingLoadSaveHelper@XL@@SAXAEAUIPropConverter@Art@@AEBV?$TWeakPtr@VDrawingE2o@Dr@@@Ofc@@$$QEAV?$TOwningPtr@VIClientData@Dr@@@6@AEAV?$TOwningPtr@VDrawingElement@Dr@@@6@@Z` at `0x141335a2b`
+- `oart!__imp_??0TextCharPropertyBag@Art@@QEAA@XZ` at `0x1413362c1`
+- `oart!__imp_??0TextCharPropertyBag@Art@@QEAA@XZ` at `0x1413362c1`
+- `oart!__imp_??0NonVisualConnectorProps@Art@@QEAA@XZ` at `0x1413357a0`
+- `oart!__imp_??0NonVisualConnectorProps@Art@@QEAA@XZ` at `0x1413357a0`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335aad`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335b2a`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335bf8`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335aad`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335b2a`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x141335bf8`
+- `oart!__imp_??0Rect64@Art@@QEAA@XZ` at `0x141334ba0`
+- `oart!__imp_??0Rect64@Art@@QEAA@XZ` at `0x141334ba0`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1413349e6`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x141336174`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1413349e6`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x141336174`
+- `mso40uiWin32Client!__imp_?StrongAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@PEAV12@@Z` at `0x141335e34`
+- `mso40uiWin32Client!__imp_?StrongAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@PEAV12@@Z` at `0x141336209`
+- `mso40uiWin32Client!__imp_?StrongAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@PEAV12@@Z` at `0x141335e34`
+- `mso40uiWin32Client!__imp_?StrongAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@PEAV12@@Z` at `0x141336209`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141335715`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1413358f8`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141335a35`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141335a4a`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141335d57`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141336146`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141336257`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141336560`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141336580`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14133658e`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141335715`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1413358f8`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141335a35`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141335a4a`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141335d57`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141336146`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141336257`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141336560`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141336580`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14133658e`
+- `mso40uiWin32Client!__imp_?StrongMoveAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@0@Z` at `0x1413356d0`
+- `mso40uiWin32Client!__imp_?StrongMoveAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@0@Z` at `0x1413358e3`
+- `mso40uiWin32Client!__imp_?StrongMoveAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@0@Z` at `0x141335d43`
+- `mso40uiWin32Client!__imp_?StrongMoveAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@0@Z` at `0x1413356d0`
+- `mso40uiWin32Client!__imp_?StrongMoveAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@0@Z` at `0x1413358e3`
+- `mso40uiWin32Client!__imp_?StrongMoveAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@0@Z` at `0x141335d43`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141334ac3`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141334b00`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141334b43`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141334e36`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141334eca`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141335489`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x14133554d`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141335629`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141335750`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141335829`
+
+## string_xrefs
+
+- `0x141336327`: `TxLink`
+
+## pseudocode
+
+```c
+
+```
