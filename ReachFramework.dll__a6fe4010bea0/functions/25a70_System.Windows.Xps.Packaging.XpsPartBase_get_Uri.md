@@ -1,0 +1,69 @@
+# System.Windows.Xps.Packaging.XpsPartBase::get_Uri
+
+- ea: `0x25a70`
+- end: `0x25a77`
+- name: `System.Windows.Xps.Packaging.XpsPartBase::get_Uri`
+- size: `7`
+- prototype: ``
+- caller_count: `42`
+- callee_count: `0`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x20a80`
+- `0x20b40`
+- `0x20b90`
+- `0x20c90`
+- `0x20d00`
+- `0x20dc0`
+- `0x211b0`
+- `0x21330`
+- `0x21370`
+- `0x213f0`
+- `0x21610`
+- `0x216a0`
+- `0x21730`
+- `0x217a0`
+- `0x218a0`
+- `0x218f0`
+- `0x21a00`
+- `0x21b90`
+- `0x22000`
+- `0x22190`
+- `0x22200`
+- `0x22330`
+- `0x224b0`
+- `0x22540`
+- `0x227d0`
+- `0x22870`
+- `0x22a70`
+- `0x22d40`
+- `0x22dc0`
+- `0x22e30`
+- `0x22e80`
+- `0x22f00`
+- `0x25b20`
+- `0x25e20`
+- `0x25f30`
+- `0x26140`
+- `0x26450`
+- `0x2edc0`
+- `0x2ee70`
+- `0x2f030`
+- `0x2f140`
+- `0x2f250`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x25a70  ldarg.0
+0x25a71  ldfld    class [System]System.Uri System.Windows.Xps.Packaging.XpsPartBase::_uri
+0x25a76  ret
+```

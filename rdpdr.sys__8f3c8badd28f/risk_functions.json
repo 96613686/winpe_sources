@@ -1,0 +1,4437 @@
+[
+  {
+    "callee_count": 27,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14002e078",
+    "function_file": "functions/14002e078_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!ObGetObjectSecurity",
+      "ntoskrnl!ObReleaseObjectSecurity",
+      "ntoskrnl!ObSetSecurityObjectByPointer",
+      "ntoskrnl!PsGetCurrentProcessId",
+      "ntoskrnl!RtlInitUnicodeString",
+      "rdbss!RxRegisterMinirdr"
+    ],
+    "matched_strings": [
+      "DrOpenHandleList"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 3952,
+    "size": 2079,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "TSAddWorkItemToQueue",
+    "ea": "0x1400018a0",
+    "function_file": "functions/1400018a0_TSAddWorkItemToQueue.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!PsCreateSystemThread"
+    ],
+    "matched_strings": [],
+    "name": "TSAddWorkItemToQueue",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 3642,
+    "size": 822,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DrDeleteAllConnections(ulong)",
+    "ea": "0x14002c9ec",
+    "function_file": "functions/14002c9ec_DrDeleteAllConnections_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "rdbss!RxDereference",
+      "rdbss!RxFinalizeConnection",
+      "rdbss!RxPrefixTableEndLookup",
+      "rdbss!RxPrefixTableLookupFirstObject",
+      "rdbss!RxPrefixTableLookupNextObject",
+      "rdbss!RxReference",
+      "rdbss!RxpTrackDereference",
+      "rdbss!RxpTrackReference"
+    ],
+    "matched_strings": [
+      "DrDeleteAllConnections",
+      "DrDeleteAllConnections"
+    ],
+    "name": "?DrDeleteAllConnections@@YAJK@Z",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 3288,
+    "size": 692,
+    "tags": []
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "DrSmartCard::IoControl(_RX_CONTEXT *)",
+    "ea": "0x140027190",
+    "function_file": "functions/140027190_DrSmartCard_IoControl_RX_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite",
+      "rdbss!RxAssociateContextWithMid",
+      "rdbss!RxLowIoCompletion",
+      "rdbss!RxSetMinirdrCancelRoutine"
+    ],
+    "matched_strings": [],
+    "name": "?IoControl@DrSmartCard@@UEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrSmartCard *this, PRX_CONTEXT RxContext, int)",
+    "rank_score": 2659,
+    "size": 2677,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "DrDevice::OnDeviceControlCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x140023500",
+    "function_file": "functions/140023500_DrDevice_OnDeviceControlCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "rdbss!RxMapAndDissociateMidFromContext"
+    ],
+    "matched_strings": [],
+    "name": "?OnDeviceControlCompletion@DrDevice@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int *, unsigned int, _DWORD *, RefCount *ContextPointer)",
+    "rank_score": 2637,
+    "size": 2017,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "DrPeekDispatch",
+    "ea": "0x1400254c0",
+    "function_file": "functions/1400254c0_DrPeekDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoGetRequestorSessionId",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!_wcsnicmp",
+      "rdbss!RxFsdDispatch"
+    ],
+    "matched_strings": [],
+    "name": "DrPeekDispatch",
+    "prototype": "int __fastcall(struct _KDPC *, IRP *)",
+    "rank_score": 2450,
+    "size": 1900,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DrEnumerateConnections",
+    "ea": "0x140019220",
+    "function_file": "functions/140019220_DrEnumerateConnections.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoGetRequestorSessionId",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ProbeForWrite",
+      "rdbss!RxPrefixTableEndLookup",
+      "rdbss!RxPrefixTableLookupFirstObject",
+      "rdbss!RxPrefixTableLookupNextObject"
+    ],
+    "matched_strings": [],
+    "name": "DrEnumerateConnections",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 2418,
+    "size": 1274,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "TSDeleteQueue",
+    "ea": "0x140005d58",
+    "function_file": "functions/140005d58_TSDeleteQueue.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsThreadType",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "TSDeleteQueue",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 2306,
+    "size": 386,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "DrDevice::CreateReferenceString(_UNICODE_STRING *)",
+    "ea": "0x140029aa8",
+    "function_file": "functions/140029aa8_DrDevice_CreateReferenceString_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!RtlAnsiStringToUnicodeString",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlIntegerToUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?CreateReferenceString@DrDevice@@QEAAXPEAU_UNICODE_STRING@@@Z",
+    "prototype": "void __fastcall(DrDevice *this, struct _UNICODE_STRING *)",
+    "rank_score": 2210,
+    "size": 470,
+    "tags": []
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 1,
+    "demangled": "DrSession::Connect(tagCHANNEL_CONNECT_IN *,tagCHANNEL_CONNECT_OUT *)",
+    "ea": "0x14001bf2c",
+    "function_file": "functions/14001bf2c_DrSession_Connect_tagCHANNEL_CONNECT_IN_tagCHANNEL_CONNECT_OUT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsGetCurrentProcessId",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?Connect@DrSession@@QEAAHPEAUtagCHANNEL_CONNECT_IN@@PEAUtagCHANNEL_CONNECT_OUT@@@Z",
+    "prototype": "_BOOL8 __fastcall(DrSession *this, struct tagCHANNEL_CONNECT_IN *, struct tagCHANNEL_CONNECT_OUT *)",
+    "rank_score": 2079,
+    "size": 1966,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SepSddlSecurityDescriptorFromSDDLString",
+    "ea": "0x14002194c",
+    "function_file": "functions/14002194c_SepSddlSecurityDescriptorFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAbsoluteToSelfRelativeSD",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "name": "SepSddlSecurityDescriptorFromSDDLString",
+    "prototype": "",
+    "rank_score": 2068,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "DrUninitialize",
+    "ea": "0x140017cac",
+    "function_file": "functions/140017cac_DrUninitialize.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "rdbss!RxCreateRxContext",
+      "rdbss!RxDereferenceAndDeleteRxContext_Real",
+      "rdbss!RxStopMinirdr",
+      "rdbss!RxUnregisterMinirdr"
+    ],
+    "matched_strings": [],
+    "name": "DrUninitialize",
+    "prototype": "__int64(void)",
+    "rank_score": 2025,
+    "size": 509,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DrQuerySpecialShare(ushort const *,ulong)",
+    "ea": "0x14002c618",
+    "function_file": "functions/14002c618_DrQuerySpecialShare_ushort_const_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?DrQuerySpecialShare@@YAHPEBGK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, unsigned int)",
+    "rank_score": 2008,
+    "size": 629,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateAdminSecurityDescriptor",
+    "ea": "0x1400176bc",
+    "function_file": "functions/1400176bc_CreateAdminSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlMapGenericMask",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "CreateAdminSecurityDescriptor",
+    "prototype": "__int64(void)",
+    "rank_score": 1948,
+    "size": 432,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "AllowNetworkServiceSecurityDescriptor(_DEVICE_OBJECT *,ulong *)",
+    "ea": "0x1400114c4",
+    "function_file": "functions/1400114c4_AllowNetworkServiceSecurityDescriptor_DEVICE_OBJECT_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ObGetObjectSecurity",
+      "ntoskrnl!ObReleaseObjectSecurity",
+      "ntoskrnl!ObSetSecurityObjectByPointer",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!SeValidSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "?AllowNetworkServiceSecurityDescriptor@@YAJPEAU_DEVICE_OBJECT@@PEAK@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, unsigned int *)",
+    "rank_score": 1651,
+    "size": 650,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DrIsIoRequestFromSID(void *,_IRP *,_IO_STACK_LOCATION *)",
+    "ea": "0x140016de0",
+    "function_file": "functions/140016de0_DrIsIoRequestFromSID_void_IRP_IO_STACK_LOCATION.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!RtlMapGenericMask",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeAppendPrivileges",
+      "ntoskrnl!SeFreePrivileges",
+      "ntoskrnl!SeLockSubjectContext",
+      "ntoskrnl!SeUnlockSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "?DrIsIoRequestFromSID@@YAEPEAXPEAU_IRP@@PEAU_IO_STACK_LOCATION@@@Z",
+    "prototype": "BOOLEAN __fastcall(void *, struct _IRP *, struct _IO_STACK_LOCATION *)",
+    "rank_score": 1634,
+    "size": 319,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "RDPDYN_HandleGetNextDevMgmtEventIOCTL",
+    "ea": "0x140001f10",
+    "function_file": "functions/140001f10_RDPDYN_HandleGetNextDevMgmtEventIOCTL.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "RDPDYN_HandleGetNextDevMgmtEventIOCTL",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1624,
+    "size": 586,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "DrIsSystemProcessRequest",
+    "ea": "0x140026f90",
+    "function_file": "functions/140026f90_DrIsSystemProcessRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualSid",
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlLengthRequiredSid",
+      "ntoskrnl!RtlSubAuthoritySid",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "DrIsSystemProcessRequest",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1620,
+    "size": 502,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DrGetConnectionInfo",
+    "ea": "0x140019f18",
+    "function_file": "functions/140019f18_DrGetConnectionInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "DrGetConnectionInfo",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1613,
+    "size": 892,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 8,
+    "demangled": "RDPDYN_DispatchNewDevMgmtEvent",
+    "ea": "0x1400027b0",
+    "function_file": "functions/1400027b0_RDPDYN_DispatchNewDevMgmtEvent.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "RDPDYN_DispatchNewDevMgmtEvent",
+    "prototype": "__int64 __fastcall(void *, unsigned int, unsigned int, struct DrDevice *)",
+    "rank_score": 1456,
+    "size": 642,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RDPDYN_Shutdown",
+    "ea": "0x140002d44",
+    "function_file": "functions/140002d44_RDPDYN_Shutdown.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "RDPDYN_Shutdown",
+    "prototype": "",
+    "rank_score": 1432,
+    "size": 431,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "InitializeServiceSid(void *,ulong * const)",
+    "ea": "0x1400023f4",
+    "function_file": "functions/1400023f4_InitializeServiceSid_void_ulong_const.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlSubAuthoritySid"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeServiceSid@@YAXPEAXQEAK@Z",
+    "prototype": "void __fastcall(PSID Sid, unsigned int *const)",
+    "rank_score": 1427,
+    "size": 246,
+    "tags": [
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DrStartMinirdrWorker",
+    "ea": "0x14001a950",
+    "function_file": "functions/14001a950_DrStartMinirdrWorker.md",
+    "matched_imports": [
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!PsTerminateSystemThread",
+      "rdbss!RxCreateRxContext",
+      "rdbss!RxDereferenceAndDeleteRxContext_Real",
+      "rdbss!RxStartMinirdr"
+    ],
+    "matched_strings": [],
+    "name": "DrStartMinirdrWorker",
+    "prototype": "KSTART_ROUTINE",
+    "rank_score": 1425,
+    "size": 364,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreatePrintPortInterface",
+    "ea": "0x14002bca0",
+    "function_file": "functions/14002bca0_CreatePrintPortInterface.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "CreatePrintPortInterface",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1405,
+    "size": 406,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PpRegStateUpdateStackCreationSettings",
+    "ea": "0x140021fd8",
+    "function_file": "functions/140021fd8_PpRegStateUpdateStackCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!SeCaptureSecurityDescriptor",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PpRegStateUpdateStackCreationSettings",
+    "prototype": "__int64 __fastcall(int, __int64)",
+    "rank_score": 1287,
+    "size": 372,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DrStartMinirdr",
+    "ea": "0x14001a728",
+    "function_file": "functions/14001a728_DrStartMinirdr.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "DrStartMinirdr",
+    "prototype": "__int64 __fastcall(PVOID StartContext)",
+    "rank_score": 1249,
+    "size": 532,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 17,
+    "demangled": "DrDevice::CompleteBusyExchange(SmartPtr<DrExchange> &,long,ulong)",
+    "ea": "0x140024020",
+    "function_file": "functions/140024020_DrDevice_CompleteBusyExchange_SmartPtr_DrExchange_long_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxMapAndDissociateMidFromContext"
+    ],
+    "matched_strings": [],
+    "name": "?CompleteBusyExchange@DrDevice@@IEAAXAEAV?$SmartPtr@VDrExchange@@@@JK@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, unsigned int)",
+    "rank_score": 1234,
+    "size": 339,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "AllocatePrinterPort",
+    "ea": "0x140004cd8",
+    "function_file": "functions/140004cd8_AllocatePrinterPort.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceInterfaceRegistryKey",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "AllocatePrinterPort",
+    "prototype": "__int64 __fastcall(int, __int64, __int64, _DWORD *, PHANDLE DeviceInterfaceRegKey, PUNICODE_STRING SymbolicLinkName)",
+    "rank_score": 1230,
+    "size": 465,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "QueryRegistryValue(ushort const *,ushort const *,uchar *,ulong)",
+    "ea": "0x140017544",
+    "function_file": "functions/140017544_QueryRegistryValue_ushort_const_ushort_const_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Terminal Server\\WinStations\\RDP-Tcp"
+    ],
+    "name": "?QueryRegistryValue@@YAJPEBG0PEAEK@Z",
+    "prototype": "int(const unsigned __int16 *, const unsigned __int16 *, unsigned __int8 *, unsigned int)",
+    "rank_score": 1098,
+    "size": 367,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CreateTermDD(void * *,void *,ulong,char const *,int)",
+    "ea": "0x14001b210",
+    "function_file": "functions/14001b210_CreateTermDD_void_void_ulong_char_const_int.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlIntegerToUnicodeString",
+      "ntoskrnl!ZwCreateFile"
+    ],
+    "matched_strings": [
+      "TermddOpenPacketXX"
+    ],
+    "name": "?CreateTermDD@@YAJPEAPEAXPEAXKPEBDH@Z",
+    "prototype": "__int64 __fastcall(void **, void *, ULONG, const char *, int)",
+    "rank_score": 1091,
+    "size": 696,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuerySpecialDeviceCap(ulong *)",
+    "ea": "0x140020880",
+    "function_file": "functions/140020880_QuerySpecialDeviceCap_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Terminal Server\\WinStations\\RDP-Tcp"
+    ],
+    "name": "?QuerySpecialDeviceCap@@YAJPEAK@Z",
+    "prototype": "__int64 __fastcall(unsigned int *)",
+    "rank_score": 1086,
+    "size": 351,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BuildServiceAcl(ulong *,_ACL *,_ACL * *)",
+    "ea": "0x14002ce44",
+    "function_file": "functions/14002ce44_BuildServiceAcl_ulong_ACL_ACL.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlLengthRequiredSid",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlMapGenericMask"
+    ],
+    "matched_strings": [],
+    "name": "?BuildServiceAcl@@YAJPEAKPEAU_ACL@@PEAPEAU1@@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, struct _ACL *Src, struct _ACL **)",
+    "rank_score": 1038,
+    "size": 267,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "DrSession::ReadCompletion(_IO_STATUS_BLOCK *)",
+    "ea": "0x140024360",
+    "function_file": "functions/140024360_DrSession_ReadCompletion_IO_STATUS_BLOCK.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "rdbss!RxDestroyMidAtlas"
+    ],
+    "matched_strings": [],
+    "name": "?ReadCompletion@DrSession@@AEAAXPEAU_IO_STATUS_BLOCK@@@Z",
+    "prototype": "void __fastcall(DrSession *__hidden this, struct _IO_STATUS_BLOCK *)",
+    "rank_score": 1031,
+    "size": 1217,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 7,
+    "demangled": "DrSession::PrivateSendToClient(void *,ulong,ISessionPacketSender *,long (*)(void *,_IO_STATUS_BLOCK *),int,int,void *)",
+    "ea": "0x140024cf0",
+    "function_file": "functions/140024cf0_DrSession_PrivateSendToClient_void_ulong_ISessionPacketSender_long_void_IO_STATUS_BLOCK_int_int_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PrivateSendToClient@DrSession@@AEAAJPEAXKPEAVISessionPacketSender@@P6AJ0PEAU_IO_STATUS_BLOCK@@@ZHH0@Z",
+    "prototype": "__int64 __usercall@<rax>(DrSession *__hidden this@<rcx>, void *@<rdx>, unsigned int@<r8d>, struct ISessionPacketSender *@<r9>, int (*)(void *, struct _IO_STATUS_BLOCK *), int, int, void *)",
+    "rank_score": 1030,
+    "size": 777,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RDPDYN_Close",
+    "ea": "0x14000487c",
+    "function_file": "functions/14000487c_RDPDYN_Close.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "RDPDYN_Close",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1027,
+    "size": 307,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RDPDYN_Cleanup",
+    "ea": "0x14000472c",
+    "function_file": "functions/14000472c_RDPDYN_Cleanup.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "RDPDYN_Cleanup",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1017,
+    "size": 328,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DrExchangeManager::CreateExchange(IExchangeUser *,void *,SmartPtr<DrExchange> &)",
+    "ea": "0x140028f80",
+    "function_file": "functions/140028f80_DrExchangeManager_CreateExchange_IExchangeUser_void_SmartPtr_DrExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxAssociateContextWithMid"
+    ],
+    "matched_strings": [],
+    "name": "?CreateExchange@DrExchangeManager@@QEAAHPEAVIExchangeUser@@PEAXAEAV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 1007,
+    "size": 306,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DrPrinterPort::Create(_RX_CONTEXT *)",
+    "ea": "0x140005510",
+    "function_file": "functions/140005510_DrPrinterPort_Create_RX_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?Create@DrPrinterPort@@UEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrPrinterPort *__hidden this, struct _RX_CONTEXT *)",
+    "rank_score": 1006,
+    "size": 326,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WdmlibInit",
+    "ea": "0x140020df0",
+    "function_file": "functions/140020df0_WdmlibInit.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoCreateDeviceSecure",
+      "IoValidateDeviceIoControlAccess"
+    ],
+    "name": "WdmlibInit",
+    "prototype": "",
+    "rank_score": 883,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PiRegStateReadStackCreationSettingsFromKey",
+    "ea": "0x140021c84",
+    "function_file": "functions/140021c84_PiRegStateReadStackCreationSettingsFromKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeCaptureSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PiRegStateReadStackCreationSettingsFromKey",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 879,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PurgeMupCache(void)",
+    "ea": "0x140018f30",
+    "function_file": "functions/140018f30_PurgeMupCache_void.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateFile",
+      "ntoskrnl!ZwFsControlFile"
+    ],
+    "matched_strings": [],
+    "name": "?PurgeMupCache@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 846,
+    "size": 432,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 0,
+    "demangled": "DrCreateVNetRoot",
+    "ea": "0x140025c40",
+    "function_file": "functions/140025c40_DrCreateVNetRoot.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnicodeToUTF8N",
+      "ntoskrnl!_stricmp"
+    ],
+    "matched_strings": [],
+    "name": "DrCreateVNetRoot",
+    "prototype": "",
+    "rank_score": 834,
+    "size": 1845,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SetPortDescrToDisabled",
+    "ea": "0x14001b8d0",
+    "function_file": "functions/14001b8d0_SetPortDescrToDisabled.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceInterfaceRegistryKey",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "SetPortDescrToDisabled",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING SymbolicLinkName)",
+    "rank_score": 826,
+    "size": 314,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "ea": "0x140022154",
+    "function_file": "functions/140022154_SeUtilSecurityInfoFromSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlGetGroupSecurityDescriptor",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlGetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 824,
+    "size": 249,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SepSddlGetAclForString",
+    "ea": "0x140021428",
+    "function_file": "functions/140021428_SepSddlGetAclForString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetAclForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1, int)",
+    "rank_score": 824,
+    "size": 934,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "DrEnumerateShares",
+    "ea": "0x140019aa4",
+    "function_file": "functions/140019aa4_DrEnumerateShares.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "DrEnumerateShares",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 823,
+    "size": 1131,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CFileVC::DuplicateHandleInPid(_IRP *,_IO_STACK_LOCATION *)",
+    "ea": "0x14002a2ec",
+    "function_file": "functions/14002a2ec_CFileVC_DuplicateHandleInPid_IRP_IO_STACK_LOCATION.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!ObDuplicateObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsLookupProcessByProcessId"
+    ],
+    "matched_strings": [],
+    "name": "?DuplicateHandleInPid@CFileVC@@QEAAJPEAU_IRP@@PEAU_IO_STACK_LOCATION@@@Z",
+    "prototype": "__int64 __fastcall(CFileVC *__hidden this, struct _IRP *, struct _IO_STACK_LOCATION *)",
+    "rank_score": 820,
+    "size": 516,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DrEnumerateServers",
+    "ea": "0x140019720",
+    "function_file": "functions/140019720_DrEnumerateServers.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "DrEnumerateServers",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 816,
+    "size": 891,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ReferenceRdpExtensionChannel(void * *,void *,ulong,char const *)",
+    "ea": "0x14001b4d0",
+    "function_file": "functions/14001b4d0_ReferenceRdpExtensionChannel_void_void_ulong_char_const.md",
+    "matched_imports": [
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?ReferenceRdpExtensionChannel@@YAJPEAPEAXPEAXKPEBD@Z",
+    "prototype": "__int64 __fastcall(PHANDLE Handle, HANDLE, unsigned int, const char *)",
+    "rank_score": 816,
+    "size": 303,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DevMgmtEventRequestIRPCancel(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140004500",
+    "function_file": "functions/140004500_DevMgmtEventRequestIRPCancel_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?DevMgmtEventRequestIRPCancel@@YAXPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "void(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 815,
+    "size": 251,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "DrCreate",
+    "ea": "0x140001350",
+    "function_file": "functions/140001350_DrCreate.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DrCreate",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 778,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SepSddlAddAceToAcl",
+    "ea": "0x140021250",
+    "function_file": "functions/140021250_SepSddlAddAceToAcl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlAddAceToAcl",
+    "prototype": "__int64 __fastcall(int, int, int, int, ACCESS_MASK AccessMask, int, PSID Sid)",
+    "rank_score": 815,
+    "size": 235,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "DrSession::DeleteChannel(int)",
+    "ea": "0x140002a40",
+    "function_file": "functions/140002a40_DrSession_DeleteChannel_int.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteChannel@DrSession@@AEAAXH@Z",
+    "prototype": "void __fastcall(DrSession *__hidden this, int)",
+    "rank_score": 809,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IopDevObjApplyPostCreationSettings",
+    "ea": "0x140021094",
+    "function_file": "functions/140021094_IopDevObjApplyPostCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeviceObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "IopDevObjApplyPostCreationSettings",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 734,
+    "size": 239,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IoDevObjCreateDeviceSecure",
+    "ea": "0x140020f00",
+    "function_file": "functions/140020f00_IoDevObjCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "IoDevObjCreateDeviceSecure",
+    "prototype": "__int64 __usercall@<rax>(PDRIVER_OBJECT DriverObject@<rcx>, int, char, __int64, __int64, PDEVICE_OBJECT)",
+    "rank_score": 658,
+    "size": 395,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CFileVC::DeviceIoControl(_IRP *)",
+    "ea": "0x14002a1e0",
+    "function_file": "functions/14002a1e0_CFileVC_DeviceIoControl_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!RtlLengthRequiredSid"
+    ],
+    "matched_strings": [],
+    "name": "?DeviceIoControl@CFileVC@@QEAAJPEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(CFileVC *this, struct _IRP *)",
+    "rank_score": 639,
+    "size": 262,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "DrDevice::OnDeviceIoCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange> &)",
+    "ea": "0x140022ab0",
+    "function_file": "functions/140022ab0_DrDevice_OnDeviceIoCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "?OnDeviceIoCompletion@DrDevice@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHAEAV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int *, unsigned int, _DWORD *, RefCount *)",
+    "rank_score": 631,
+    "size": 1396,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "DrDevice::OnReadCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x140023030",
+    "function_file": "functions/140023030_DrDevice_OnReadCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "?OnReadCompletion@DrDevice@@QEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int *, unsigned int, _DWORD *, RefCount **)",
+    "rank_score": 631,
+    "size": 1224,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "DrSession::SendCompletionRoutine(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x140027d50",
+    "function_file": "functions/140027d50_DrSession_SendCompletionRoutine_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp"
+    ],
+    "matched_strings": [],
+    "name": "?SendCompletionRoutine@DrSession@@CAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "static int(struct _DEVICE_OBJECT *, struct _IRP *, void *)",
+    "rank_score": 620,
+    "size": 459,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 6,
+    "demangled": "DrDeviceManager::FindDeviceByDosName(uchar *,SmartPtr<DrDevice> &,int)",
+    "ea": "0x1400268e0",
+    "function_file": "functions/1400268e0_DrDeviceManager_FindDeviceByDosName_uchar_SmartPtr_DrDevice_int.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!_stricmp"
+    ],
+    "matched_strings": [],
+    "name": "?FindDeviceByDosName@DrDeviceManager@@QEAAHPEAEAEAV?$SmartPtr@VDrDevice@@@@H@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 616,
+    "size": 352,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DYNVC_CreateDevice(_DRIVER_OBJECT *,_DEVICE_OBJECT * *)",
+    "ea": "0x140020ab0",
+    "function_file": "functions/140020ab0_DYNVC_CreateDevice_DRIVER_OBJECT_DEVICE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?DYNVC_CreateDevice@@YAJPEAU_DRIVER_OBJECT@@PEAPEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, struct _DEVICE_OBJECT **)",
+    "rank_score": 610,
+    "size": 384,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "DrExchangeManager::Start(void)",
+    "ea": "0x14001195c",
+    "function_file": "functions/14001195c_DrExchangeManager_Start_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxCreateMidAtlas"
+    ],
+    "matched_strings": [],
+    "name": "?Start@DrExchangeManager@@QEAAHXZ",
+    "prototype": "__int64 __fastcall(DrExchangeManager *__hidden this)",
+    "rank_score": 607,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DrSerialPort::CreateSerialPort(tagRDPDR_DEVICE_ANNOUNCE *)",
+    "ea": "0x14001dd70",
+    "function_file": "functions/14001dd70_DrSerialPort_CreateSerialPort_tagRDPDR_DEVICE_ANNOUNCE.md",
+    "matched_imports": [
+      "ntoskrnl!RtlMultiByteToUnicodeN",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "SERIALCOMM"
+    ],
+    "name": "?CreateSerialPort@DrSerialPort@@AEAAJPEAUtagRDPDR_DEVICE_ANNOUNCE@@@Z",
+    "prototype": "__int64 __fastcall(CHAR *this, struct tagRDPDR_DEVICE_ANNOUNCE *)",
+    "rank_score": 491,
+    "size": 481,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "PiRegStateOpenClassKey",
+    "ea": "0x140021af0",
+    "function_file": "functions/140021af0_PiRegStateOpenClassKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!_snwprintf"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class"
+    ],
+    "name": "PiRegStateOpenClassKey",
+    "prototype": "",
+    "rank_score": 459,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "DrDevice::Create(_RX_CONTEXT *)",
+    "ea": "0x14002b120",
+    "function_file": "functions/14002b120_DrDevice_Create_RX_CONTEXT.md",
+    "matched_imports": [
+      "rdbss!RxCreateNetFobx",
+      "rdbss!RxDisableLocalBuffering"
+    ],
+    "matched_strings": [],
+    "name": "?Create@DrDevice@@UEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrDevice *__hidden this, struct _RX_CONTEXT *)",
+    "rank_score": 444,
+    "size": 1027,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "DrDevice::IoControl(_RX_CONTEXT *)",
+    "ea": "0x14001eeb0",
+    "function_file": "functions/14001eeb0_DrDevice_IoControl_RX_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "?IoControl@DrDevice@@UEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrDevice *__hidden this, struct _RX_CONTEXT *)",
+    "rank_score": 439,
+    "size": 994,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 10,
+    "demangled": "DrSession::ReadMore(ulong,ulong)",
+    "ea": "0x140023cf0",
+    "function_file": "functions/140023cf0_DrSession_ReadMore_ulong_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?ReadMore@DrSession@@QEAAHKK@Z",
+    "prototype": "__int64 __fastcall(DrSession *__hidden this, unsigned int, unsigned int)",
+    "rank_score": 437,
+    "size": 807,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "DrDevice::OnCreateCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x1400010fc",
+    "function_file": "functions/1400010fc_DrDevice_OnCreateCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?OnCreateCompletion@DrDevice@@QEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, _DWORD *, __int64)",
+    "rank_score": 426,
+    "size": 522,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "DrSession::ReadPacket(void)",
+    "ea": "0x140024830",
+    "function_file": "functions/140024830_DrSession_ReadPacket_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?ReadPacket@DrSession@@AEAAXXZ",
+    "prototype": "void __fastcall(DrSession *__hidden this)",
+    "rank_score": 426,
+    "size": 535,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SeSddlSecurityDescriptorFromSDDL",
+    "ea": "0x14002118c",
+    "function_file": "functions/14002118c_SeSddlSecurityDescriptorFromSDDL.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SeSddlSecurityDescriptorFromSDDL",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 188,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 8,
+    "demangled": "DrDevice::CompleteRxContext(_RX_CONTEXT *,long,ulong)",
+    "ea": "0x140024180",
+    "function_file": "functions/140024180_DrDevice_CompleteRxContext_RX_CONTEXT_long_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "?CompleteRxContext@DrDevice@@KAXPEAU_RX_CONTEXT@@JK@Z",
+    "prototype": "void __fastcall(PRX_CONTEXT RxContext, int, unsigned int)",
+    "rank_score": 424,
+    "size": 297,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FAKEVID_Dispatch(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140020d64",
+    "function_file": "functions/140020d64_FAKEVID_Dispatch_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?FAKEVID_Dispatch@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 423,
+    "size": 132,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "DrDevice::VerifyCreateSecurity(_RX_CONTEXT *,ulong)",
+    "ea": "0x14002b698",
+    "function_file": "functions/14002b698_DrDevice_VerifyCreateSecurity_RX_CONTEXT_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetRequestorSessionId",
+      "ntoskrnl!SeQuerySessionIdToken"
+    ],
+    "matched_strings": [],
+    "name": "?VerifyCreateSecurity@DrDevice@@IEAAJPEAU_RX_CONTEXT@@K@Z",
+    "prototype": "__int64 __fastcall(DrDevice *this, struct _RX_CONTEXT *, int)",
+    "rank_score": 422,
+    "size": 658,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 17,
+    "demangled": "DrDevice::DiscardBusyExchange(SmartPtr<DrExchange> &)",
+    "ea": "0x1400117e0",
+    "function_file": "functions/1400117e0_DrDevice_DiscardBusyExchange_SmartPtr_DrExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "?DiscardBusyExchange@DrDevice@@IEAAXAEAV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 421,
+    "size": 135,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "DrDevice::MarkIdle(SmartPtr<DrExchange> &)",
+    "ea": "0x140011870",
+    "function_file": "functions/140011870_DrDevice_MarkIdle_SmartPtr_DrExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "?MarkIdle@DrDevice@@IEAAXAEAV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 420,
+    "size": 227,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PpRegStateReadCreateClassCreationSettings",
+    "ea": "0x140021e6c",
+    "function_file": "functions/140021e6c_PpRegStateReadCreateClassCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PpRegStateReadCreateClassCreationSettings",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 356,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x14002e8a0",
+    "function_file": "functions/14002e8a0_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "__int64(void)",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "GetDeviceFromRxContext(_RX_CONTEXT *,SmartPtr<DrDevice> &)",
+    "ea": "0x140001050",
+    "function_file": "functions/140001050_GetDeviceFromRxContext_RX_CONTEXT_SmartPtr_DrDevice.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?GetDeviceFromRxContext@@YAHPEAU_RX_CONTEXT@@AEAV?$SmartPtr@VDrDevice@@@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 416,
+    "size": 163,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DrSession::ReadCompletionRoutine(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x1400242b0",
+    "function_file": "functions/1400242b0_DrSession_ReadCompletionRoutine_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp"
+    ],
+    "matched_strings": [],
+    "name": "?ReadCompletionRoutine@DrSession@@CAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *, DrSession *)",
+    "rank_score": 415,
+    "size": 165,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrGetConnectionId(_RX_CONTEXT *,_UNICODE_STRING *,_RX_CONNECTION_ID *)",
+    "ea": "0x140028b40",
+    "function_file": "functions/140028b40_DrGetConnectionId_RX_CONTEXT_UNICODE_STRING_RX_CONNECTION_ID.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnicodeStringToInteger",
+      "ntoskrnl!SeQuerySessionIdToken"
+    ],
+    "matched_strings": [],
+    "name": "?DrGetConnectionId@@YAJPEAU_RX_CONTEXT@@PEAU_UNICODE_STRING@@PEAU_RX_CONNECTION_ID@@@Z",
+    "prototype": "__int64 __fastcall(struct _RX_CONTEXT *, struct _UNICODE_STRING *, struct _RX_CONNECTION_ID *)",
+    "rank_score": 414,
+    "size": 370,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 7,
+    "demangled": "DrSessionManager::FindSessionById(ulong,SmartPtr<DrSession> &)",
+    "ea": "0x140027f30",
+    "function_file": "functions/140027f30_DrSessionManager_FindSessionById_ulong_SmartPtr_DrSession.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?FindSessionById@DrSessionManager@@QEAAHKAEAV?$SmartPtr@VDrSession@@@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 414,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14001851c",
+    "function_file": "functions/14001851c_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "__int64(void)",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DrOnSessionConnect",
+    "ea": "0x14002aebc",
+    "function_file": "functions/14002aebc_DrOnSessionConnect.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "DrOnSessionConnect",
+    "prototype": "__int64 __fastcall(_QWORD *StartContext)",
+    "rank_score": 412,
+    "size": 453,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "DrDevice::FinishCreate(_RX_CONTEXT *)",
+    "ea": "0x14002b530",
+    "function_file": "functions/14002b530_DrDevice_FinishCreate_RX_CONTEXT.md",
+    "matched_imports": [
+      "rdbss!RxFinishFcbInitialization",
+      "rdbss!RxInferFileType"
+    ],
+    "matched_strings": [],
+    "name": "?FinishCreate@DrDevice@@IEAAXPEAU_RX_CONTEXT@@@Z",
+    "prototype": "void(DrDevice *__hidden this, struct _RX_CONTEXT *)",
+    "rank_score": 408,
+    "size": 351,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DrOnSessionDisconnect",
+    "ea": "0x14001a29c",
+    "function_file": "functions/14001a29c_DrOnSessionDisconnect.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "DrOnSessionDisconnect",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 408,
+    "size": 375,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DrOnUserLoggedOn",
+    "ea": "0x14001a41c",
+    "function_file": "functions/14001a41c_DrOnUserLoggedOn.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "DrOnUserLoggedOn",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 408,
+    "size": 375,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "FAKEVID_CreateDevice(_DRIVER_OBJECT *,uint,_DEVICE_OBJECT * *)",
+    "ea": "0x140020c38",
+    "function_file": "functions/140020c38_FAKEVID_CreateDevice_DRIVER_OBJECT_uint_DEVICE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?FAKEVID_CreateDevice@@YAJPEAU_DRIVER_OBJECT@@IPEAPEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, ULONG DeviceCharacteristics, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 408,
+    "size": 293,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DrCreateSrvCall",
+    "ea": "0x14002cf60",
+    "function_file": "functions/14002cf60_DrCreateSrvCall.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DrCreateSrvCall",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 339,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SepSddlGetSidForString",
+    "ea": "0x1400217d4",
+    "function_file": "functions/1400217d4_SepSddlGetSidForString.md",
+    "matched_imports": [
+      "ntoskrnl!IoIsWdmVersionAvailable",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetSidForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1)",
+    "rank_score": 314,
+    "size": 170,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "NPagedLookasideList::NPagedLookasideList(ulong,ulong)",
+    "ea": "0x140005fdc",
+    "function_file": "functions/140005fdc_NPagedLookasideList_NPagedLookasideList_ulong_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePool",
+      "ntoskrnl!ExInitializeNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "??0NPagedLookasideList@@QEAA@KK@Z",
+    "prototype": "NPagedLookasideList *(NPagedLookasideList *__hidden this, unsigned int, unsigned int)",
+    "rank_score": 311,
+    "size": 95,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DrSession::GetSndChannel(int,void * *)",
+    "ea": "0x14002bfa4",
+    "function_file": "functions/14002bfa4_DrSession_GetSndChannel_int_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!ObOpenObjectByPointer"
+    ],
+    "matched_strings": [],
+    "name": "?GetSndChannel@DrSession@@QEAAJHPEAPEAX@Z",
+    "prototype": "int(DrSession *__hidden this, int, void **)",
+    "rank_score": 307,
+    "size": 292,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DrSession::DrSession(void)",
+    "ea": "0x14001ba10",
+    "function_file": "functions/14001ba10_DrSession_DrSession_void.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [
+      "QuerDirCacheLock"
+    ],
+    "name": "??0DrSession@@QEAA@XZ",
+    "prototype": "DrSession *__fastcall(DrSession *__hidden this)",
+    "rank_score": 251,
+    "size": 665,
+    "tags": []
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "DrDrive::QueryDirectory(_RX_CONTEXT *)",
+    "ea": "0x140014d50",
+    "function_file": "functions/140014d50_DrDrive_QueryDirectory_RX_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?QueryDirectory@DrDrive@@UEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrDrive *this, struct _RX_CONTEXT *, int)",
+    "rank_score": 246,
+    "size": 1351,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CmRegUtilCreateUcKey",
+    "ea": "0x140022254",
+    "function_file": "functions/140022254_CmRegUtilCreateUcKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateUcKey",
+    "prototype": "",
+    "rank_score": 243,
+    "size": 164,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnQuerySdInfoCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x140013e70",
+    "function_file": "functions/140013e70_DrDrive_OnQuerySdInfoCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "?OnQuerySdInfoCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64(__int64, __int64, unsigned int, _DWORD *, ...)",
+    "rank_score": 240,
+    "size": 1253,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IsCallerAudioService",
+    "ea": "0x14002c54c",
+    "function_file": "functions/14002c54c_IsCallerAudioService.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthRequiredSid"
+    ],
+    "matched_strings": [],
+    "name": "IsCallerAudioService",
+    "prototype": "void *()",
+    "rank_score": 237,
+    "size": 132,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IsCallerTermsrvService",
+    "ea": "0x14002b088",
+    "function_file": "functions/14002b088_IsCallerTermsrvService.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthRequiredSid"
+    ],
+    "matched_strings": [],
+    "name": "IsCallerTermsrvService",
+    "prototype": "void *()",
+    "rank_score": 237,
+    "size": 132,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IsCallerUmrdpService(void)",
+    "ea": "0x140018ea4",
+    "function_file": "functions/140018ea4_IsCallerUmrdpService_void.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthRequiredSid"
+    ],
+    "matched_strings": [],
+    "name": "?IsCallerUmrdpService@@YAHXZ",
+    "prototype": "void *(void)",
+    "rank_score": 237,
+    "size": 132,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 51,
+    "demangled": "operator delete(void *)",
+    "ea": "0x140001e30",
+    "function_file": "functions/140001e30_operator_delete_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 236,
+    "size": 29,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilOpenExistingWstrKey",
+    "ea": "0x140022360",
+    "function_file": "functions/140022360_CmRegUtilOpenExistingWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilOpenExistingWstrKey",
+    "prototype": "",
+    "rank_score": 235,
+    "size": 133,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DrDevice::Write(_RX_CONTEXT *,int)",
+    "ea": "0x14001f900",
+    "function_file": "functions/14001f900_DrDevice_Write_RX_CONTEXT_int.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "?Write@DrDevice@@UEAAJPEAU_RX_CONTEXT@@H@Z",
+    "prototype": "__int64 __fastcall(DrDevice *__hidden this, struct _RX_CONTEXT *, int)",
+    "rank_score": 235,
+    "size": 652,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DrParallelPort::CreateLptPort(tagRDPDR_DEVICE_ANNOUNCE *)",
+    "ea": "0x14001e10c",
+    "function_file": "functions/14001e10c_DrParallelPort_CreateLptPort_tagRDPDR_DEVICE_ANNOUNCE.md",
+    "matched_imports": [
+      "ntoskrnl!RtlMultiByteToUnicodeN"
+    ],
+    "matched_strings": [],
+    "name": "?CreateLptPort@DrParallelPort@@AEAAJPEAUtagRDPDR_DEVICE_ANNOUNCE@@@Z",
+    "prototype": "__int64 __fastcall(CHAR *this, struct tagRDPDR_DEVICE_ANNOUNCE *)",
+    "rank_score": 231,
+    "size": 430,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RDPDYN_Dispatch",
+    "ea": "0x14002b930",
+    "function_file": "functions/14002b930_RDPDYN_Dispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "RDPDYN_Dispatch",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 231,
+    "size": 355,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x140018900",
+    "function_file": "functions/140018900_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "DrCheckCurrentProcessForServiceSid(void *)",
+    "ea": "0x14002a4f8",
+    "function_file": "functions/14002a4f8_DrCheckCurrentProcessForServiceSid_void.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCheckTokenMembership"
+    ],
+    "matched_strings": [],
+    "name": "?DrCheckCurrentProcessForServiceSid@@YAHPEAX@Z",
+    "prototype": "_BOOL8 __fastcall(void *)",
+    "rank_score": 225,
+    "size": 55,
+    "tags": [
+      "authz_impersonation",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 37,
+    "demangled": "operator new(unsigned __int64,unsigned __int64)",
+    "ea": "0x140003188",
+    "function_file": "functions/140003188_operator_new_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K0@Z",
+    "prototype": "void *__fastcall(unsigned __int64, unsigned __int64)",
+    "rank_score": 225,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "DrSmartCard::Create(_RX_CONTEXT *)",
+    "ea": "0x140011010",
+    "function_file": "functions/140011010_DrSmartCard_Create_RX_CONTEXT.md",
+    "matched_imports": [
+      "rdbss!RxCreateNetFobx"
+    ],
+    "matched_strings": [],
+    "name": "?Create@DrSmartCard@@UEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrSmartCard *__hidden this, struct _RX_CONTEXT *)",
+    "rank_score": 221,
+    "size": 338,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "DoubleList::CreateEntry(void *)",
+    "ea": "0x140002284",
+    "function_file": "functions/140002284_DoubleList_CreateEntry_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "?CreateEntry@DoubleList@@QEAAHPEAX@Z",
+    "prototype": "__int64 __fastcall(DoubleList *__hidden this, void *)",
+    "rank_score": 220,
+    "size": 146,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "DoubleList::RemoveEntry(ListEntry *)",
+    "ea": "0x140002564",
+    "function_file": "functions/140002564_DoubleList_RemoveEntry_ListEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveEntry@DoubleList@@QEAAXPEAVListEntry@@@Z",
+    "prototype": "void __fastcall(DoubleList *__hidden this, struct ListEntry *)",
+    "rank_score": 219,
+    "size": 65,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CompleteIRPWithDevMgmtEvent",
+    "ea": "0x140004604",
+    "function_file": "functions/140004604_CompleteIRPWithDevMgmtEvent.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "CompleteIRPWithDevMgmtEvent",
+    "prototype": "__int64 __fastcall(PIRP Irp, size_t Size, int, const void *, __int64)",
+    "rank_score": 217,
+    "size": 171,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VirtualChannel::Create(void *,ulong,char const *,_KEVENT *,RefCount *,int,int,int)",
+    "ea": "0x14001b144",
+    "function_file": "functions/14001b144_VirtualChannel_Create_void_ulong_char_const_KEVENT_RefCount_int_int_int.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?Create@VirtualChannel@@QEAAHPEAXKPEBDPEAU_KEVENT@@PEAVRefCount@@HHH@Z",
+    "prototype": "int(VirtualChannel *__hidden this, void *, unsigned int, const char *, struct _KEVENT *, struct RefCount *, int, int, int)",
+    "rank_score": 217,
+    "size": 195,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RDPDYN_HandleClientMsgIOCTL",
+    "ea": "0x14001ae20",
+    "function_file": "functions/14001ae20_RDPDYN_HandleClientMsgIOCTL.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "RDPDYN_HandleClientMsgIOCTL",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 216,
+    "size": 234,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x14002e960",
+    "function_file": "functions/14002e960_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CompleteIRPWithResizeMsg",
+    "ea": "0x14001aac4",
+    "function_file": "functions/14001aac4_CompleteIRPWithResizeMsg.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "CompleteIRPWithResizeMsg",
+    "prototype": "__int64 __fastcall(PIRP Irp)",
+    "rank_score": 215,
+    "size": 201,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RDPDYN_Create",
+    "ea": "0x14001ad48",
+    "function_file": "functions/14001ad48_RDPDYN_Create.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "RDPDYN_Create",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 214,
+    "size": 208,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SepSddlDaclFromSDDLString",
+    "ea": "0x140021344",
+    "function_file": "functions/140021344_SepSddlDaclFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlDaclFromSDDLString",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 221,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NPagedLookasideList::`vector deleting destructor'(uint)",
+    "ea": "0x1400060c0",
+    "function_file": "functions/1400060c0_NPagedLookasideList_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePool"
+    ],
+    "matched_strings": [],
+    "name": "??_ENPagedLookasideList@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(PVOID P, unsigned int)",
+    "rank_score": 212,
+    "size": 55,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_ChannelWriteCompletionRoutine(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x14002a060",
+    "function_file": "functions/14002a060_ChannelWriteCompletionRoutine_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?_ChannelWriteCompletionRoutine@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *, void *)",
+    "rank_score": 212,
+    "size": 95,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CFileVC::Close(_IRP *)",
+    "ea": "0x140020a7c",
+    "function_file": "functions/140020a7c_CFileVC_Close_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?Close@CFileVC@@QEAAJPEAU_IRP@@@Z",
+    "prototype": "int(CFileVC *__hidden this, struct _IRP *)",
+    "rank_score": 211,
+    "size": 44,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KernelEvent::`scalar deleting destructor'(uint)",
+    "ea": "0x140005240",
+    "function_file": "functions/140005240_KernelEvent_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "??_GKernelEvent@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(PVOID Entry, unsigned int)",
+    "rank_score": 211,
+    "size": 60,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "NPagedLookasideList::~NPagedLookasideList(void)",
+    "ea": "0x140006044",
+    "function_file": "functions/140006044_NPagedLookasideList_NPagedLookasideList_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "??1NPagedLookasideList@@UEAA@XZ",
+    "prototype": "void __fastcall(NPagedLookasideList *__hidden this)",
+    "rank_score": 211,
+    "size": 52,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "tagCHANNELCLOSECONTEXT::`scalar deleting destructor'(uint)",
+    "ea": "0x140025480",
+    "function_file": "functions/140025480_tagCHANNELCLOSECONTEXT_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??_GtagCHANNELCLOSECONTEXT@@QEAAPEAXI@Z",
+    "prototype": "void *__fastcall(PVOID P, unsigned int)",
+    "rank_score": 208,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "TopObj::operator new(unsigned __int64,unsigned __int64)",
+    "ea": "0x140003940",
+    "function_file": "functions/140003940_TopObj_operator_new_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??2TopObj@@SAPEAX_K0@Z",
+    "prototype": "void *__fastcall(unsigned __int64, unsigned __int64)",
+    "rank_score": 207,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DrDeleteConnection",
+    "ea": "0x1400190e8",
+    "function_file": "functions/1400190e8_DrDeleteConnection.md",
+    "matched_imports": [
+      "rdbss!RxFinalizeConnection"
+    ],
+    "matched_strings": [],
+    "name": "DrDeleteConnection",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 206,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "KernelResource::KernelResource(char const *)",
+    "ea": "0x140002c60",
+    "function_file": "functions/140002c60_KernelResource_KernelResource_char_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "??0KernelResource@@QEAA@PEBD@Z",
+    "prototype": "KernelResource *__fastcall(KernelResource *__hidden this, const char *)",
+    "rank_score": 205,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DrDevice::CreateDevicePath(_UNICODE_STRING *)",
+    "ea": "0x14001ede0",
+    "function_file": "functions/14001ede0_DrDevice_CreateDevicePath_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!RtlAppendUnicodeToString"
+    ],
+    "matched_strings": [],
+    "name": "?CreateDevicePath@DrDevice@@MEAAJPEAU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(DrDevice *__hidden this, PUNICODE_STRING Destination)",
+    "rank_score": 204,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DrPrinterPort::CreateDevicePath(_UNICODE_STRING *)",
+    "ea": "0x14001e5d0",
+    "function_file": "functions/14001e5d0_DrPrinterPort_CreateDevicePath_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!RtlAppendUnicodeToString"
+    ],
+    "matched_strings": [],
+    "name": "?CreateDevicePath@DrPrinterPort@@MEAAJPEAU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(DrPrinterPort *__hidden this, PUNICODE_STRING Destination)",
+    "rank_score": 204,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "KernelResource::~KernelResource(void)",
+    "ea": "0x140002bbc",
+    "function_file": "functions/140002bbc_KernelResource_KernelResource_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "??1KernelResource@@UEAA@XZ",
+    "prototype": "void __fastcall(KernelResource *__hidden this)",
+    "rank_score": 204,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RDPEVNTLIST_CreateNewList",
+    "ea": "0x140004120",
+    "function_file": "functions/140004120_RDPEVNTLIST_CreateNewList.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "RDPEVNTLIST_CreateNewList",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140005a98",
+    "function_file": "functions/140005a98_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, PEVENT_DATA_DESCRIPTOR)",
+    "rank_score": 202,
+    "size": 97,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "ProbeForRead_0",
+    "ea": "0x140003051",
+    "function_file": "functions/140003051_ProbeForRead_0.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "ProbeForRead_0",
+    "prototype": "void __stdcall(volatile void *Address, SIZE_T Length, ULONG Alignment)",
+    "rank_score": 105,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnSetFileInfoCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x140014b40",
+    "function_file": "functions/140014b40_DrDrive_OnSetFileInfoCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IRP_MJ_CREATE                  "
+    ],
+    "name": "?OnSetFileInfoCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64)",
+    "rank_score": 66,
+    "size": 169,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnNotifyChangeDirectoryCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x140012ff0",
+    "function_file": "functions/140012ff0_DrDrive_OnNotifyChangeDirectoryCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IRP_MJ_CREATE                  "
+    ],
+    "name": "?OnNotifyChangeDirectoryCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, _DWORD *, __int64)",
+    "rank_score": 62,
+    "size": 481,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DrDevice::OnWriteCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x14001f5fc",
+    "function_file": "functions/14001f5fc_DrDevice_OnWriteCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IRP_MJ_CREATE                  "
+    ],
+    "name": "?OnWriteCompletion@DrDevice@@QEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, _DWORD *, __int64)",
+    "rank_score": 59,
+    "size": 267,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnLocksCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x140012f40",
+    "function_file": "functions/140012f40_DrDrive_OnLocksCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IRP_MJ_CREATE                  "
+    ],
+    "name": "?OnLocksCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64)",
+    "rank_score": 56,
+    "size": 169,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnSetSdInfoCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x140014bf0",
+    "function_file": "functions/140014bf0_DrDrive_OnSetSdInfoCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IRP_MJ_CREATE                  "
+    ],
+    "name": "?OnSetSdInfoCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64)",
+    "rank_score": 56,
+    "size": 169,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnSetVolumeInfoCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x140014ca0",
+    "function_file": "functions/140014ca0_DrDrive_OnSetVolumeInfoCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "IRP_MJ_CREATE                  "
+    ],
+    "name": "?OnSetVolumeInfoCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64)",
+    "rank_score": 56,
+    "size": 169,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DrSession::LoadQueryDirPrefetchSettings(void)",
+    "ea": "0x14001cb3c",
+    "function_file": "functions/14001cb3c_DrSession_LoadQueryDirPrefetchSettings_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "QueryDirPrefetchMaxCacheEntries"
+    ],
+    "name": "?LoadQueryDirPrefetchSettings@DrSession@@QEAAXXZ",
+    "prototype": "void __fastcall(DrSession *__hidden this)",
+    "rank_score": 56,
+    "size": 256,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnQueryDirectoryCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x1400131e0",
+    "function_file": "functions/1400131e0_DrDrive_OnQueryDirectoryCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnQueryDirectoryCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64(__int64, __int64, unsigned int, _DWORD *, ...)",
+    "rank_score": 41,
+    "size": 1489,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "DrDrive::SetFileInfo(_RX_CONTEXT *)",
+    "ea": "0x140015c50",
+    "function_file": "functions/140015c50_DrDrive_SetFileInfo_RX_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetFileInfo@DrDrive@@UEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrDrive *__hidden this, struct _RX_CONTEXT *)",
+    "rank_score": 40,
+    "size": 1235,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 33,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140006480",
+    "function_file": "functions/140006480_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnQueryVolumeInfoCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x140014360",
+    "function_file": "functions/140014360_DrDrive_OnQueryVolumeInfoCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnQueryVolumeInfoCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64(__int64, __int64, unsigned int, _DWORD *, ...)",
+    "rank_score": 36,
+    "size": 2009,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 135,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140006560",
+    "function_file": "functions/140006560_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnQueryFileInfoCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x1400137c0",
+    "function_file": "functions/1400137c0_DrDrive_OnQueryFileInfoCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnQueryFileInfoCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64(__int64, __int64, unsigned int, _DWORD *, ...)",
+    "rank_score": 35,
+    "size": 1693,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 43,
+    "demangled": "memmove",
+    "ea": "0x1400065c0",
+    "function_file": "functions/1400065c0_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 28,
+    "demangled": "memset",
+    "ea": "0x1400068c0",
+    "function_file": "functions/1400068c0_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DrDrive::CreateDrive(tagRDPDR_DEVICE_ANNOUNCE *,ushort const *)",
+    "ea": "0x140011df0",
+    "function_file": "functions/140011df0_DrDrive_CreateDrive_tagRDPDR_DEVICE_ANNOUNCE_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateDrive@DrDrive@@QEAAJPEAUtagRDPDR_DEVICE_ANNOUNCE@@PEBG@Z",
+    "prototype": "__int64 __fastcall(DrDrive *__hidden this, struct tagRDPDR_DEVICE_ANNOUNCE *, const unsigned __int16 *)",
+    "rank_score": 28,
+    "size": 247,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 4,
+    "demangled": "DrSmartCard::CompleteIo(void)",
+    "ea": "0x14001fd20",
+    "function_file": "functions/14001fd20_DrSmartCard_CompleteIo_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteIo@DrSmartCard@@QEAAXXZ",
+    "prototype": "void __fastcall(DrSmartCard *__hidden this)",
+    "rank_score": 27,
+    "size": 261,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 56,
+    "demangled": "RefCount::Release(void)",
+    "ea": "0x140001660",
+    "function_file": "functions/140001660_RefCount_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@RefCount@@QEAAXXZ",
+    "prototype": "void __fastcall(RefCount *__hidden this)",
+    "rank_score": 27,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 61,
+    "demangled": "SmartPtr<DrFile>::~SmartPtr<DrFile>(void)",
+    "ea": "0x1400016a0",
+    "function_file": "functions/1400016a0_SmartPtr_DrFile_SmartPtr_DrFile_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$SmartPtr@VDrFile@@@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 27,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrSetFileInfo(_RX_CONTEXT *)",
+    "ea": "0x1400172d0",
+    "function_file": "functions/1400172d0_DrSetFileInfo_RX_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrSetFileInfo@@YAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _RX_CONTEXT *)",
+    "rank_score": 26,
+    "size": 163,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 147,
+    "demangled": "WPP_SF_",
+    "ea": "0x14000324c",
+    "function_file": "functions/14000324c_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 102,
+    "demangled": "WPP_SF_d",
+    "ea": "0x14000327c",
+    "function_file": "functions/14000327c_WPP_SF_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 26,
+    "demangled": "WPP_SF_dd",
+    "ea": "0x1400032c0",
+    "function_file": "functions/1400032c0_WPP_SF_dd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_dd",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 26,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 52,
+    "demangled": "RefCount::AddRef(void)",
+    "ea": "0x140001890",
+    "function_file": "functions/140001890_RefCount_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@RefCount@@QEAAXXZ",
+    "prototype": "void __fastcall(RefCount *__hidden this)",
+    "rank_score": 25,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DrDrive::Remove(void)",
+    "ea": "0x140015bc0",
+    "function_file": "functions/140015bc0_DrDrive_Remove_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Remove@DrDrive@@UEAAXXZ",
+    "prototype": "void __fastcall(DrDrive *__hidden this)",
+    "rank_score": 24,
+    "size": 123,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DrPrinterPort::Remove(void)",
+    "ea": "0x14001ea80",
+    "function_file": "functions/14001ea80_DrPrinterPort_Remove_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Remove@DrPrinterPort@@UEAAXXZ",
+    "prototype": "void __fastcall(DrPrinterPort *__hidden this)",
+    "rank_score": 24,
+    "size": 123,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DrSendMessageToClientCompletion",
+    "ea": "0x14001aba0",
+    "function_file": "functions/14001aba0_DrSendMessageToClientCompletion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DrSendMessageToClientCompletion",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 24,
+    "size": 106,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 3,
+    "demangled": "DrCreateSCardDevice(SmartPtr<DrSession> &,_V_NET_ROOT *,SmartPtr<DrDevice> &)",
+    "ea": "0x140026c18",
+    "function_file": "functions/140026c18_DrCreateSCardDevice_SmartPtr_DrSession_V_NET_ROOT_SmartPtr_DrDevice.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrCreateSCardDevice@@YAJAEAV?$SmartPtr@VDrSession@@@@PEAU_V_NET_ROOT@@AEAV?$SmartPtr@VDrDevice@@@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 23,
+    "size": 882,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400063dc",
+    "function_file": "functions/1400063dc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14002e010",
+    "function_file": "functions/14002e010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x140018860",
+    "function_file": "functions/140018860_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DrDevice::Read(_RX_CONTEXT *)",
+    "ea": "0x14001f710",
+    "function_file": "functions/14001f710_DrDevice_Read_RX_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Read@DrDevice@@QEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrDevice *__hidden this, struct _RX_CONTEXT *)",
+    "rank_score": 21,
+    "size": 454,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "DrDrive::NotifyChangeDirectory(_RX_CONTEXT *)",
+    "ea": "0x1400125e0",
+    "function_file": "functions/1400125e0_DrDrive_NotifyChangeDirectory_RX_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?NotifyChangeDirectory@DrDrive@@UEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrDrive *__hidden this, struct _RX_CONTEXT *)",
+    "rank_score": 20,
+    "size": 439,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 3,
+    "demangled": "DrSessionManager::FindOrCreateSessionById(ulong,int,int *,SmartPtr<DrSession> &)",
+    "ea": "0x140026a48",
+    "function_file": "functions/140026a48_DrSessionManager_FindOrCreateSessionById_ulong_int_int_SmartPtr_DrSession.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FindOrCreateSessionById@DrSessionManager@@QEAAJKHPEAHAEAV?$SmartPtr@VDrSession@@@@@Z",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 455,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "WPP_SF_q",
+    "ea": "0x1400036c0",
+    "function_file": "functions/1400036c0_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 18,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 17,
+    "demangled": "DoubleList::First(void)",
+    "ea": "0x140001c50",
+    "function_file": "functions/140001c50_DoubleList_First_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?First@DoubleList@@QEAAPEAVListEntry@@XZ",
+    "prototype": "struct ListEntry *__fastcall(DoubleList *__hidden this)",
+    "rank_score": 17,
+    "size": 18,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnDirectoryControlCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x1400127a0",
+    "function_file": "functions/1400127a0_DrDrive_OnDirectoryControlCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnDirectoryControlCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _DWORD *, RefCount **)",
+    "rank_score": 17,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrQueryDirectory(_RX_CONTEXT *)",
+    "ea": "0x1400170d0",
+    "function_file": "functions/1400170d0_DrQueryDirectory_RX_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrQueryDirectory@@YAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _RX_CONTEXT *)",
+    "rank_score": 16,
+    "size": 179,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DrSession::SendCompletion(tagWriteContext *,_IO_STATUS_BLOCK *)",
+    "ea": "0x14002a100",
+    "function_file": "functions/14002a100_DrSession_SendCompletion_tagWriteContext_IO_STATUS_BLOCK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SendCompletion@DrSession@@AEAAXPEAUtagWriteContext@@PEAU_IO_STATUS_BLOCK@@@Z",
+    "prototype": "void __fastcall(DrSession *__hidden this, struct tagWriteContext *, struct _IO_STATUS_BLOCK *)",
+    "rank_score": 16,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "QueryDirCache::CleanupCache(void)",
+    "ea": "0x1400167f4",
+    "function_file": "functions/1400167f4_QueryDirCache_CleanupCache_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CleanupCache@QueryDirCache@@QEAAXXZ",
+    "prototype": "void __fastcall(QueryDirCache *__hidden this)",
+    "rank_score": 16,
+    "size": 115,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "WPP_SF_Z",
+    "ea": "0x1400035a0",
+    "function_file": "functions/1400035a0_WPP_SF_Z.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 16,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "WdmlibIoCreateDeviceSecure",
+    "ea": "0x140020e7c",
+    "function_file": "functions/140020e7c_WdmlibIoCreateDeviceSecure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibIoCreateDeviceSecure",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, ULONG DeviceExtensionSize, PUNICODE_STRING DeviceName, ULONG DeviceType, ULONG DeviceCharacteristics, BOOLEAN Exclusive, PCUNICODE_STRING DefaultSDDLString, LPCGUID DeviceClassGuid, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 16,
+    "size": 119,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140003c50",
+    "function_file": "functions/140003c50_wil_details_RecordCachedUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 15,
+    "demangled": "DoubleList::Next(ListEntry *)",
+    "ea": "0x140001ef0",
+    "function_file": "functions/140001ef0_DoubleList_Next_ListEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Next@DoubleList@@QEAAPEAVListEntry@@PEAV2@@Z",
+    "prototype": "struct ListEntry *__fastcall(DoubleList *__hidden this, struct ListEntry *)",
+    "rank_score": 15,
+    "size": 17,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "SmartPtr<VirtualChannel>::operator=(VirtualChannel *)",
+    "ea": "0x140001830",
+    "function_file": "functions/140001830_SmartPtr_VirtualChannel_operator_VirtualChannel.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??4?$SmartPtr@VVirtualChannel@@@@QEAAAEAV0@PEAVVirtualChannel@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 15,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x1400186d0",
+    "function_file": "functions/1400186d0_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "DoubleList::Unlock(void)",
+    "ea": "0x140001e60",
+    "function_file": "functions/140001e60_DoubleList_Unlock_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Unlock@DoubleList@@QEAAXXZ",
+    "prototype": "void __fastcall(DoubleList *__hidden this)",
+    "rank_score": 14,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DrDrive::OnDeviceIoCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange> &)",
+    "ea": "0x1400229b0",
+    "function_file": "functions/1400229b0_DrDrive_OnDeviceIoCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnDeviceIoCompletion@DrDrive@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHAEAV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int *, unsigned int, _DWORD *, RefCount *)",
+    "rank_score": 14,
+    "size": 245,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "DrDrive::QueryDirectoryFromCache(_RX_CONTEXT *,_FILE_INFORMATION_CLASS)",
+    "ea": "0x1400152a0",
+    "function_file": "functions/1400152a0_DrDrive_QueryDirectoryFromCache_RX_CONTEXT_FILE_INFORMATION_CLASS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryDirectoryFromCache@DrDrive@@IEAAJPEAU_RX_CONTEXT@@W4_FILE_INFORMATION_CLASS@@@Z",
+    "prototype": "__int64 __fastcall(DrDrive *this, struct _RX_CONTEXT *, unsigned int)",
+    "rank_score": 14,
+    "size": 495,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DrExchangeManager::SendCompleted(void *,_IO_STATUS_BLOCK *)",
+    "ea": "0x14002ab90",
+    "function_file": "functions/14002ab90_DrExchangeManager_SendCompleted_void_IO_STATUS_BLOCK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SendCompleted@DrExchangeManager@@UEAAJPEAXPEAU_IO_STATUS_BLOCK@@@Z",
+    "prototype": "int(DrExchangeManager *__hidden this, void *, struct _IO_STATUS_BLOCK *)",
+    "rank_score": 14,
+    "size": 76,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "DrPrinterPort::CreatePortAnnounceEvent(tagRDPDR_DEVICE_ANNOUNCE *,tagRDPDR_PORTDEVICE_SUB *,ulong,ushort const *,ulong *)",
+    "ea": "0x14001e694",
+    "function_file": "functions/14001e694_DrPrinterPort_CreatePortAnnounceEvent_tagRDPDR_DEVICE_ANNOUNCE_tagRDPDR_PORTDEVICE_SUB_ulong_ushort_const_ulon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreatePortAnnounceEvent@DrPrinterPort@@QEAAJPEAUtagRDPDR_DEVICE_ANNOUNCE@@PEAUtagRDPDR_PORTDEVICE_SUB@@KPEBGPEAK@Z",
+    "prototype": "__int64 __fastcall(DrPrinterPort *this, struct tagRDPDR_DEVICE_ANNOUNCE *, wchar_t *, unsigned int, const unsigned __int16 *pszSrc, unsigned int *)",
+    "rank_score": 14,
+    "size": 424,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "QueryDirCache::`scalar deleting destructor'(uint)",
+    "ea": "0x1400037c0",
+    "function_file": "functions/1400037c0_QueryDirCache_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GQueryDirCache@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(QueryDirCache *__hidden this, unsigned int)",
+    "rank_score": 13,
+    "size": 48,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "DrDeviceManager::ProcessDeviceRemove(tagRDPDR_DEVICE_REMOVE *)",
+    "ea": "0x140020788",
+    "function_file": "functions/140020788_DrDeviceManager_ProcessDeviceRemove_tagRDPDR_DEVICE_REMOVE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessDeviceRemove@DrDeviceManager@@AEAAXPEAUtagRDPDR_DEVICE_REMOVE@@@Z",
+    "prototype": "void __fastcall(DrDeviceManager *__hidden this, struct tagRDPDR_DEVICE_REMOVE *)",
+    "rank_score": 12,
+    "size": 239,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrSetFileInfoAtCleanUp(_RX_CONTEXT *)",
+    "ea": "0x140017380",
+    "function_file": "functions/140017380_DrSetFileInfoAtCleanUp_RX_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrSetFileInfoAtCleanUp@@YAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _RX_CONTEXT *)",
+    "rank_score": 12,
+    "size": 58,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14002e044",
+    "function_file": "functions/14002e044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DrDevice::OnSetSdInfoCompletion(tagRDPDR_IOCOMPLETION_PACKET *,ulong,int *,SmartPtr<DrExchange>)",
+    "ea": "0x1400054f0",
+    "function_file": "functions/1400054f0_DrDevice_OnSetSdInfoCompletion_tagRDPDR_IOCOMPLETION_PACKET_ulong_int_SmartPtr_DrExchange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnSetSdInfoCompletion@DrDevice@@UEAAJPEAUtagRDPDR_IOCOMPLETION_PACKET@@KPEAHV?$SmartPtr@VDrExchange@@@@@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 25,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "DrDeviceManager::RemoveDevice(SmartPtr<DrDevice> &)",
+    "ea": "0x14002be98",
+    "function_file": "functions/14002be98_DrDeviceManager_RemoveDevice_SmartPtr_DrDevice.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveDevice@DrDeviceManager@@QEAAXAEAV?$SmartPtr@VDrDevice@@@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 11,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "QueryDirCache::PopulateCache(uchar *,ulong,ulong)",
+    "ea": "0x1400169f0",
+    "function_file": "functions/1400169f0_QueryDirCache_PopulateCache_uchar_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PopulateCache@QueryDirCache@@QEAAHPEAEKK@Z",
+    "prototype": "__int64 __fastcall(QueryDirCache *this, unsigned __int8 *, unsigned int, unsigned int)",
+    "rank_score": 11,
+    "size": 292,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "DoubleList::LockExclusive(void)",
+    "ea": "0x140002260",
+    "function_file": "functions/140002260_DoubleList_LockExclusive_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?LockExclusive@DoubleList@@QEAAXXZ",
+    "prototype": "void __fastcall(DoubleList *__hidden this)",
+    "rank_score": 10,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DrDevice::OnDevMgmtEventCompletion(void *)",
+    "ea": "0x140003230",
+    "function_file": "functions/140003230_DrDevice_OnDevMgmtEventCompletion_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnDevMgmtEventCompletion@DrDevice@@UEAAJPEAX@Z",
+    "prototype": "__int64 __fastcall(DrDevice *__hidden this, void *)",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DrDevice::Remove(void)",
+    "ea": "0x14001f8e0",
+    "function_file": "functions/14001f8e0_DrDevice_Remove_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Remove@DrDevice@@UEAAXXZ",
+    "prototype": "void __fastcall(DrDevice *__hidden this)",
+    "rank_score": 10,
+    "size": 8,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DrDeviceManager::OnDeviceListRemove(tagRDPDR_HEADER *,ulong,int *)",
+    "ea": "0x1400205a8",
+    "function_file": "functions/1400205a8_DrDeviceManager_OnDeviceListRemove_tagRDPDR_HEADER_ulong_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnDeviceListRemove@DrDeviceManager@@AEAAJPEAUtagRDPDR_HEADER@@KPEAH@Z",
+    "prototype": "__int64 __fastcall(DrSession **this, struct tagRDPDR_HEADER *, unsigned int, int *)",
+    "rank_score": 10,
+    "size": 474,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DrDeviceManager::RemoveAll(void)",
+    "ea": "0x14002c940",
+    "function_file": "functions/14002c940_DrDeviceManager_RemoveAll_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveAll@DrDeviceManager@@QEAAXXZ",
+    "prototype": "void __fastcall(DrDeviceManager *__hidden this)",
+    "rank_score": 10,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "DrRemoveOpenHandle(_FILE_OBJECT *)",
+    "ea": "0x14002ac20",
+    "function_file": "functions/14002ac20_DrRemoveOpenHandle_FILE_OBJECT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrRemoveOpenHandle@@YAXPEAU_FILE_OBJECT@@@Z",
+    "prototype": "void __fastcall(struct _FILE_OBJECT *)",
+    "rank_score": 10,
+    "size": 146,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DrSession::SendCompleted(void *,_IO_STATUS_BLOCK *)",
+    "ea": "0x14002c210",
+    "function_file": "functions/14002c210_DrSession_SendCompleted_void_IO_STATUS_BLOCK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SendCompleted@DrSession@@EEAAJPEAXPEAU_IO_STATUS_BLOCK@@@Z",
+    "prototype": "__int64 __fastcall(DrSession *__hidden this, void *, struct _IO_STATUS_BLOCK *)",
+    "rank_score": 10,
+    "size": 4,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "RefCount::~RefCount(void)",
+    "ea": "0x140001cb0",
+    "function_file": "functions/140001cb0_RefCount_RefCount_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1RefCount@@UEAA@XZ",
+    "prototype": "void __fastcall(RefCount *__hidden this)",
+    "rank_score": 10,
+    "size": 94,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "SmartPtr<DrDevice>::operator=(DrDevice *)",
+    "ea": "0x140001310",
+    "function_file": "functions/140001310_SmartPtr_DrDevice_operator_DrDevice.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??4?$SmartPtr@VDrDevice@@@@QEAAAEAV0@PEAVDrDevice@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 9,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WPP_SF_sL",
+    "ea": "0x140003704",
+    "function_file": "functions/140003704_WPP_SF_sL.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_sL",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DrDrive::OnFileBothDirectoryInformation(_RX_CONTEXT *,long,uchar *,ulong,long &,ulong &)",
+    "ea": "0x14001285c",
+    "function_file": "functions/14001285c_DrDrive_OnFileBothDirectoryInformation_RX_CONTEXT_long_uchar_ulong_long_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnFileBothDirectoryInformation@DrDrive@@IEAAJPEAU_RX_CONTEXT@@JPEAEKAEAJAEAK@Z",
+    "prototype": "__int64 __fastcall(DrDrive *__hidden this, struct _RX_CONTEXT *, int, unsigned __int8 *, unsigned int, int *, unsigned int *)",
+    "rank_score": 8,
+    "size": 471,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DrDrive::OnFileDirectoryInformation(_RX_CONTEXT *,long,uchar *,ulong,long &,ulong &)",
+    "ea": "0x140012a3c",
+    "function_file": "functions/140012a3c_DrDrive_OnFileDirectoryInformation_RX_CONTEXT_long_uchar_ulong_long_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnFileDirectoryInformation@DrDrive@@IEAAJPEAU_RX_CONTEXT@@JPEAEKAEAJAEAK@Z",
+    "prototype": "__int64 __fastcall(DrDrive *__hidden this, struct _RX_CONTEXT *, int, unsigned __int8 *, unsigned int, int *, unsigned int *)",
+    "rank_score": 8,
+    "size": 431,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DrDrive::OnFileFullDirectoryInformation(_RX_CONTEXT *,long,uchar *,ulong,long &,ulong &)",
+    "ea": "0x140012bf4",
+    "function_file": "functions/140012bf4_DrDrive_OnFileFullDirectoryInformation_RX_CONTEXT_long_uchar_ulong_long_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnFileFullDirectoryInformation@DrDrive@@IEAAJPEAU_RX_CONTEXT@@JPEAEKAEAJAEAK@Z",
+    "prototype": "__int64 __fastcall(DrDrive *__hidden this, struct _RX_CONTEXT *, int, unsigned __int8 *, unsigned int, int *, unsigned int *)",
+    "rank_score": 8,
+    "size": 438,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QueryDirCache::ValidateCacheBuffer(uchar *,ulong,ulong)",
+    "ea": "0x140016ba8",
+    "function_file": "functions/140016ba8_QueryDirCache_ValidateCacheBuffer_uchar_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateCacheBuffer@QueryDirCache@@IEAAHPEAEKK@Z",
+    "prototype": "__int64 __fastcall(QueryDirCache *__hidden this, unsigned __int8 *, unsigned int, unsigned int)",
+    "rank_score": 8,
+    "size": 466,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "RtlCopyFromUser",
+    "ea": "0x140003064",
+    "function_file": "functions/140003064_RtlCopyFromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 8,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "RtlCopyToUser",
+    "ea": "0x140011bfc",
+    "function_file": "functions/140011bfc_RtlCopyToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser",
+    "prototype": "void *__fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 8,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "RtlWriteULong64ToUser",
+    "ea": "0x140011c9c",
+    "function_file": "functions/140011c9c_RtlWriteULong64ToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser",
+    "prototype": "void __fastcall(_QWORD *, __int64)",
+    "rank_score": 8,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WdmlibRtlInitUnicodeStringEx",
+    "ea": "0x140005d08",
+    "function_file": "functions/140005d08_WdmlibRtlInitUnicodeStringEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibRtlInitUnicodeStringEx",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DestinationString, PCWSTR SourceString)",
+    "rank_score": 8,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DrDrive::CreateDriveAnnounceEvent(tagRDPDR_DEVICE_ANNOUNCE *,tagRDPDR_DRIVEDEVICE_SUB *,ulong,ushort const *,ulong *)",
+    "ea": "0x140011ef0",
+    "function_file": "functions/140011ef0_DrDrive_CreateDriveAnnounceEvent_tagRDPDR_DEVICE_ANNOUNCE_tagRDPDR_DRIVEDEVICE_SUB_ulong_ushort_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateDriveAnnounceEvent@DrDrive@@QEAAJPEAUtagRDPDR_DEVICE_ANNOUNCE@@PEAUtagRDPDR_DRIVEDEVICE_SUB@@KPEBGPEAK@Z",
+    "prototype": "__int64 __fastcall(DrDrive *this, struct tagRDPDR_DEVICE_ANNOUNCE *, wchar_t *, unsigned int, const unsigned __int16 *pszSrc, unsigned int *)",
+    "rank_score": 7,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DrSession::RemovePacketReceiver(ISessionPacketReceiver *)",
+    "ea": "0x14001d504",
+    "function_file": "functions/14001d504_DrSession_RemovePacketReceiver_ISessionPacketReceiver.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemovePacketReceiver@DrSession@@QEAAXPEAVISessionPacketReceiver@@@Z",
+    "prototype": "void __fastcall(DrSession *__hidden this, struct ISessionPacketReceiver *)",
+    "rank_score": 7,
+    "size": 84,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x1400064b0",
+    "function_file": "functions/1400064b0_RtlCopyVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 7,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "RtlReadULongFromUser",
+    "ea": "0x140011c60",
+    "function_file": "functions/140011c60_RtlReadULongFromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULongFromUser",
+    "prototype": "__int64 __fastcall(unsigned int *)",
+    "rank_score": 7,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "RtlWriteULongToUser",
+    "ea": "0x140011ce4",
+    "function_file": "functions/140011ce4_RtlWriteULongToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULongToUser",
+    "prototype": "void __fastcall(_DWORD *, int)",
+    "rank_score": 7,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "WPP_SF_S",
+    "ea": "0x140003b2c",
+    "function_file": "functions/140003b2c_WPP_SF_S.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_S",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 7,
+    "size": 102,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140003c24",
+    "function_file": "functions/140003c24_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "DoubleList::~DoubleList(void)",
+    "ea": "0x140002b90",
+    "function_file": "functions/140002b90_DoubleList_DoubleList_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1DoubleList@@UEAA@XZ",
+    "prototype": "void __fastcall(DoubleList *__hidden this)",
+    "rank_score": 6,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrCloseSrvOpen",
+    "ea": "0x14002c310",
+    "function_file": "functions/14002c310_DrCloseSrvOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DrCloseSrvOpen",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 162,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrNotifyChangeDirectory(_RX_CONTEXT *)",
+    "ea": "0x140017040",
+    "function_file": "functions/140017040_DrNotifyChangeDirectory_RX_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrNotifyChangeDirectory@@YAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _RX_CONTEXT *)",
+    "rank_score": 6,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DrPrinterPort::CreatePrinterPort(ushort *,ulong)",
+    "ea": "0x140029174",
+    "function_file": "functions/140029174_DrPrinterPort_CreatePrinterPort_ushort_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreatePrinterPort@DrPrinterPort@@QEAAJPEAGK@Z",
+    "prototype": "__int64 __fastcall(DrPrinterPort *this, unsigned __int16 *)",
+    "rank_score": 6,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrWrite",
+    "ea": "0x140017f90",
+    "function_file": "functions/140017f90_DrWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DrWrite",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CmRegUtilCreateWstrKey",
+    "ea": "0x140022300",
+    "function_file": "functions/140022300_CmRegUtilCreateWstrKey.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateWstrKey",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DrFile::GetCurrentQueryDirCacheEntry(_FILE_INFORMATION_CLASS)",
+    "ea": "0x1400168f0",
+    "function_file": "functions/1400168f0_DrFile_GetCurrentQueryDirCacheEntry_FILE_INFORMATION_CLASS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCurrentQueryDirCacheEntry@DrFile@@QEAAPEAUtagRDPDR_QUERYDIR_CACHE_ENTRY@@W4_FILE_INFORMATION_CLASS@@@Z",
+    "prototype": "struct tagRDPDR_QUERYDIR_CACHE_ENTRY *__fastcall(DrFile *this, unsigned int)",
+    "rank_score": 5,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DrFile::PopulateQueryDirectoryCache(uchar *,ulong,_FILE_INFORMATION_CLASS)",
+    "ea": "0x140016b1c",
+    "function_file": "functions/140016b1c_DrFile_PopulateQueryDirectoryCache_uchar_ulong_FILE_INFORMATION_CLASS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PopulateQueryDirectoryCache@DrFile@@QEAAHPEAEKW4_FILE_INFORMATION_CLASS@@@Z",
+    "prototype": "int __fastcall(DrFile *this, unsigned __int8 *, unsigned int, unsigned int)",
+    "rank_score": 5,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DrRead",
+    "ea": "0x140017bf0",
+    "function_file": "functions/140017bf0_DrRead.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DrRead",
+    "prototype": "__int64 __fastcall(struct _RX_CONTEXT *)",
+    "rank_score": 5,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "QueryDirCache::~QueryDirCache(void)",
+    "ea": "0x14001665c",
+    "function_file": "functions/14001665c_QueryDirCache_QueryDirCache_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1QueryDirCache@@UEAA@XZ",
+    "prototype": "void __fastcall(QueryDirCache *__hidden this)",
+    "rank_score": 5,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "RtlStringCchCopyW",
+    "ea": "0x1400024f0",
+    "function_file": "functions/1400024f0_RtlStringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchCopyW",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cchDest, NTSTRSAFE_PCWSTR pszSrc)",
+    "rank_score": 5,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "DrAddOpenHandle(_FILE_OBJECT *)",
+    "ea": "0x14002be3c",
+    "function_file": "functions/14002be3c_DrAddOpenHandle_FILE_OBJECT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrAddOpenHandle@@YAXPEAU_FILE_OBJECT@@@Z",
+    "prototype": "void __fastcall(struct _FILE_OBJECT *)",
+    "rank_score": 4,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DrFile::CleanupQueryDirCache(_FILE_INFORMATION_CLASS)",
+    "ea": "0x140016870",
+    "function_file": "functions/140016870_DrFile_CleanupQueryDirCache_FILE_INFORMATION_CLASS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CleanupQueryDirCache@DrFile@@QEAAXW4_FILE_INFORMATION_CLASS@@@Z",
+    "prototype": "void __fastcall(DrFile *__hidden this, enum _FILE_INFORMATION_CLASS)",
+    "rank_score": 4,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "DrSession::ServerAnnounceWrite(void)",
+    "ea": "0x14001d698",
+    "function_file": "functions/14001d698_DrSession_ServerAnnounceWrite_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ServerAnnounceWrite@DrSession@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(DrSession *__hidden this)",
+    "rank_score": 4,
+    "size": 114,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x140018694",
+    "function_file": "functions/140018694_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x1400039b0",
+    "function_file": "functions/1400039b0_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0j_EtwWriteTransfer",
+    "ea": "0x140005b00",
+    "function_file": "functions/140005b00_McTemplateK0j_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0j_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "QueryDirCache::NextCacheEntry(void)",
+    "ea": "0x140016974",
+    "function_file": "functions/140016974_QueryDirCache_NextCacheEntry_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?NextCacheEntry@QueryDirCache@@QEAAPEAUtagRDPDR_QUERYDIR_CACHE_ENTRY@@XZ",
+    "prototype": "struct tagRDPDR_QUERYDIR_CACHE_ENTRY *__fastcall(QueryDirCache *__hidden this)",
+    "rank_score": 3,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RtlStringCchCopyA",
+    "ea": "0x140002b24",
+    "function_file": "functions/140002b24_RtlStringCchCopyA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchCopyA",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PSTR pszDest, size_t cchDest, NTSTRSAFE_PCSTR pszSrc)",
+    "rank_score": 3,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14001857c",
+    "function_file": "functions/14001857c_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrDeallocateForSrvOpen",
+    "ea": "0x1400178d0",
+    "function_file": "functions/1400178d0_DrDeallocateForSrvOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DrDeallocateForSrvOpen",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrDrive::ShouldCreateDevice(void)",
+    "ea": "0x1400163f0",
+    "function_file": "functions/1400163f0_DrDrive_ShouldCreateDevice_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ShouldCreateDevice@DrDrive@@UEAAHXZ",
+    "prototype": "__int64 __fastcall(DrDrive *__hidden this)",
+    "rank_score": 2,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrIsValidDirectory(_RX_CONTEXT *,_UNICODE_STRING *)",
+    "ea": "0x140016f70",
+    "function_file": "functions/140016f70_DrIsValidDirectory_RX_CONTEXT_UNICODE_STRING.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrIsValidDirectory@@YAJPEAU_RX_CONTEXT@@PEAU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(struct _RX_CONTEXT *, struct _UNICODE_STRING *)",
+    "rank_score": 2,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrPrinterPort::ShouldCreatePort(void)",
+    "ea": "0x14001eb30",
+    "function_file": "functions/14001eb30_DrPrinterPort_ShouldCreatePort_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ShouldCreatePort@DrPrinterPort@@UEAAHXZ",
+    "prototype": "__int64 __fastcall(DrPrinterPort *__hidden this)",
+    "rank_score": 2,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DrPrinterPort::Write(_RX_CONTEXT *,int)",
+    "ea": "0x14001ec50",
+    "function_file": "functions/14001ec50_DrPrinterPort_Write_RX_CONTEXT_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Write@DrPrinterPort@@UEAAJPEAU_RX_CONTEXT@@H@Z",
+    "prototype": "__int64 __fastcall(DrPrinterPort *__hidden this, struct _RX_CONTEXT *, int)",
+    "rank_score": 2,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyFromUser$thunk$11487580757436585079",
+    "ea": "0x140007010",
+    "function_file": "functions/140007010_RtlCopyFromUser_thunk_11487580757436585079.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser$thunk$11487580757436585079",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyToUser$thunk$8481748130428616498",
+    "ea": "0x140007020",
+    "function_file": "functions/140007020_RtlCopyToUser_thunk_8481748130428616498.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser$thunk$8481748130428616498",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x1400064c0",
+    "function_file": "functions/1400064c0_RtlMoveVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlReadULongFromUser$thunk$16789519765233612629",
+    "ea": "0x140007030",
+    "function_file": "functions/140007030_RtlReadULongFromUser_thunk_16789519765233612629.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULongFromUser$thunk$16789519765233612629",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "ea": "0x140007040",
+    "function_file": "functions/140007040_RtlWriteULong64ToUser_thunk_4480820996488585629.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULongToUser$thunk$10400971452996433967",
+    "ea": "0x140007050",
+    "function_file": "functions/140007050_RtlWriteULongToUser_thunk_10400971452996433967.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULongToUser$thunk$10400971452996433967",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DrCheckForCollapsibleOpen(_RX_CONTEXT *)",
+    "ea": "0x140016d80",
+    "function_file": "functions/140016d80_DrCheckForCollapsibleOpen_RX_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrCheckForCollapsibleOpen@@YAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _RX_CONTEXT *)",
+    "rank_score": 0,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DrDevice::QueryDirectory(_RX_CONTEXT *)",
+    "ea": "0x140002d10",
+    "function_file": "functions/140002d10_DrDevice_QueryDirectory_RX_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryDirectory@DrDevice@@UEAAJPEAU_RX_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(DrDevice *__hidden this, struct _RX_CONTEXT *)",
+    "rank_score": 0,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DrDevice::ShouldCreateDevice(void)",
+    "ea": "0x14001f8f0",
+    "function_file": "functions/14001f8f0_DrDevice_ShouldCreateDevice_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ShouldCreateDevice@DrDevice@@UEAAHXZ",
+    "prototype": "__int64 __fastcall(DrDevice *__hidden this)",
+    "rank_score": 0,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DrExtendForNonCache(_RX_CONTEXT *,_LARGE_INTEGER *,_LARGE_INTEGER *)",
+    "ea": "0x140016dd0",
+    "function_file": "functions/140016dd0_DrExtendForNonCache_RX_CONTEXT_LARGE_INTEGER_LARGE_INTEGER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DrExtendForNonCache@@YAJPEAU_RX_CONTEXT@@PEAT_LARGE_INTEGER@@1@Z",
+    "prototype": "__int64 __fastcall(struct _RX_CONTEXT *, union _LARGE_INTEGER *, union _LARGE_INTEGER *)",
+    "rank_score": 0,
+    "size": 9,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DrParallelPort::ShouldCreatePort(void)",
+    "ea": "0x14001e330",
+    "function_file": "functions/14001e330_DrParallelPort_ShouldCreatePort_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ShouldCreatePort@DrParallelPort@@UEAAHXZ",
+    "prototype": "__int64 __fastcall(DrParallelPort *__hidden this)",
+    "rank_score": 0,
+    "size": 19,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DrSerialPort::ShouldCreatePort(void)",
+    "ea": "0x14001e0f0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ShouldCreatePort@DrSerialPort@@UEAAHXZ",
+    "prototype": "__int64 __fastcall(DrSerialPort *__hidden this)",
+    "rank_score": 0,
+    "size": 19,
+    "tags": []
+  }
+]
