@@ -1,0 +1,280 @@
+# FolderOptionsDlgProc(HWND__ *,uint,unsigned __int64,__int64)
+
+- ea: `0x1804a2240`
+- end: `0x1804a37ba`
+- name: `?FolderOptionsDlgProc@@YA_JPEAUHWND__@@I_K_J@Z`
+- size: `5498`
+- prototype: `__int64 __fastcall(HWND, unsigned int, unsigned __int64, __int64)`
+- caller_count: `0`
+- callee_count: `64`
+- tags: `registry_config, loader_planting, broker_com_uri`
+
+## callees
+
+- `0x180031d0c`
+- `0x180043ac0`
+- `0x18006b474`
+- `0x18006c090`
+- `0x18006c608`
+- `0x18006ce7c`
+- `0x180078a24`
+- `0x1800ad7c0`
+- `0x1800ae084`
+- `0x1800ae0e4`
+- `0x1800b1198`
+- `0x1800dea18`
+- `0x1800f066c`
+- `0x18012e4f0`
+- `0x18016e498`
+- `0x18016e538`
+- `0x180196e74`
+- `0x1801d76f8`
+- `0x1801ddce8`
+- `0x1801e4c00`
+- `0x1801ee80c`
+- `0x1801ef2d8`
+- `0x1801fabd0`
+- `0x1802237b4`
+- `0x180249490`
+- `0x18024999c`
+- `0x180289340`
+- `0x1802893a0`
+- `0x180289540`
+- `0x1802bc988`
+- `0x1802c011c`
+- `0x180307a1c`
+- `0x180337860`
+- `0x1804a0df4`
+- `0x1804a0e50`
+- `0x1804a0eac`
+- `0x1804a0f24`
+- `0x1804a1518`
+- `0x1804a1808`
+- `0x1804a1878`
+- `0x1804a18c8`
+- `0x1804a1a30`
+- `0x1804a1efc`
+- `0x1804a2088`
+- `0x1804a2240`
+- `0x1804a39f4`
+- `0x1804a3d20`
+- `0x1804a40a4`
+- `0x1804a4464`
+- `0x1804a4518`
+
+## import_xrefs
+
+- `api-ms-win-core-heap-l2-1-0!LocalAlloc` at `0x1804a27d6`
+- `api-ms-win-core-heap-l2-1-0!LocalAlloc` at `0x1804a27d6`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x1804a3765`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x1804a3765`
+- `api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW` at `0x1804a2d50`
+- `api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW` at `0x1804a2d50`
+- `USER32!CheckRadioButton` at `0x1804a252a`
+- `USER32!CheckRadioButton` at `0x1804a2a53`
+- `USER32!CheckRadioButton` at `0x1804a252a`
+- `USER32!CheckRadioButton` at `0x1804a2a53`
+- `USER32!LoadImageW` at `0x1804a2d7e`
+- `USER32!LoadImageW` at `0x1804a2d7e`
+- `USER32!GetWindowLongW` at `0x1804a2d9c`
+- `USER32!GetWindowLongW` at `0x1804a2d9c`
+- `USER32!DestroyWindow` at `0x1804a2f8c`
+- `USER32!DestroyWindow` at `0x1804a2f8c`
+- `USER32!GetAncestor` at `0x1804a303b`
+- `USER32!GetAncestor` at `0x1804a303b`
+- `USER32!EnableWindow` at `0x1804a24f0`
+- `USER32!EnableWindow` at `0x1804a254d`
+- `USER32!EnableWindow` at `0x1804a2571`
+- `USER32!EnableWindow` at `0x1804a2659`
+- `USER32!EnableWindow` at `0x1804a269a`
+- `USER32!EnableWindow` at `0x1804a26bf`
+- `USER32!EnableWindow` at `0x1804a270d`
+- `USER32!EnableWindow` at `0x1804a2901`
+- `USER32!EnableWindow` at `0x1804a2972`
+- `USER32!EnableWindow` at `0x1804a29af`
+- `USER32!EnableWindow` at `0x1804a29d6`
+- `USER32!EnableWindow` at `0x1804a2a7b`
+- `USER32!EnableWindow` at `0x1804a2e96`
+- `USER32!EnableWindow` at `0x1804a2ef1`
+- `USER32!EnableWindow` at `0x1804a2f2c`
+- `USER32!EnableWindow` at `0x1804a24f0`
+- `USER32!EnableWindow` at `0x1804a254d`
+- `USER32!EnableWindow` at `0x1804a2571`
+- `USER32!EnableWindow` at `0x1804a2659`
+- `USER32!EnableWindow` at `0x1804a269a`
+- `USER32!EnableWindow` at `0x1804a26bf`
+- `USER32!EnableWindow` at `0x1804a270d`
+- `USER32!EnableWindow` at `0x1804a2901`
+- `USER32!EnableWindow` at `0x1804a2972`
+- `USER32!EnableWindow` at `0x1804a29af`
+- `USER32!EnableWindow` at `0x1804a29d6`
+- `USER32!EnableWindow` at `0x1804a2a7b`
+- `USER32!EnableWindow` at `0x1804a2e96`
+- `USER32!EnableWindow` at `0x1804a2ef1`
+- `USER32!EnableWindow` at `0x1804a2f2c`
+- `USER32!GetParent` at `0x1804a2735`
+- `USER32!GetParent` at `0x1804a2735`
+- `USER32!IsDlgButtonChecked` at `0x1804a28da`
+- `USER32!IsDlgButtonChecked` at `0x1804a2984`
+- `USER32!IsDlgButtonChecked` at `0x1804a31aa`
+- `USER32!IsDlgButtonChecked` at `0x1804a31e5`
+- `USER32!IsDlgButtonChecked` at `0x1804a3284`
+- `USER32!IsDlgButtonChecked` at `0x1804a330c`
+- `USER32!IsDlgButtonChecked` at `0x1804a34e0`
+- `USER32!IsDlgButtonChecked` at `0x1804a34fe`
+- `USER32!IsDlgButtonChecked` at `0x1804a3568`
+- `USER32!IsDlgButtonChecked` at `0x1804a3586`
+- `USER32!IsDlgButtonChecked` at `0x1804a28da`
+- `USER32!IsDlgButtonChecked` at `0x1804a2984`
+- `USER32!IsDlgButtonChecked` at `0x1804a31aa`
+- `USER32!IsDlgButtonChecked` at `0x1804a31e5`
+- `USER32!IsDlgButtonChecked` at `0x1804a3284`
+- `USER32!IsDlgButtonChecked` at `0x1804a330c`
+- `USER32!IsDlgButtonChecked` at `0x1804a34e0`
+- `USER32!IsDlgButtonChecked` at `0x1804a34fe`
+- `USER32!IsDlgButtonChecked` at `0x1804a3568`
+- `USER32!IsDlgButtonChecked` at `0x1804a3586`
+- `USER32!CheckDlgButton` at `0x1804a24ca`
+- `USER32!CheckDlgButton` at `0x1804a2587`
+- `USER32!CheckDlgButton` at `0x1804a259d`
+- `USER32!CheckDlgButton` at `0x1804a25bc`
+- `USER32!CheckDlgButton` at `0x1804a25ed`
+- `USER32!CheckDlgButton` at `0x1804a261e`
+- `USER32!CheckDlgButton` at `0x1804a2637`
+- `USER32!CheckDlgButton` at `0x1804a28c8`
+- `USER32!CheckDlgButton` at `0x1804a2df2`
+- `USER32!CheckDlgButton` at `0x1804a2e0f`
+- `USER32!CheckDlgButton` at `0x1804a2e59`
+- `USER32!CheckDlgButton` at `0x1804a2e74`
+- `USER32!CheckDlgButton` at `0x1804a2eb3`
+- `USER32!CheckDlgButton` at `0x1804a2ecc`
+- `USER32!CheckDlgButton` at `0x1804a2f0a`
+- `USER32!CheckDlgButton` at `0x1804a24ca`
+- `USER32!CheckDlgButton` at `0x1804a2587`
+- `USER32!CheckDlgButton` at `0x1804a259d`
+- `USER32!CheckDlgButton` at `0x1804a25bc`
+- `USER32!CheckDlgButton` at `0x1804a25ed`
+- `USER32!CheckDlgButton` at `0x1804a261e`
+- `USER32!CheckDlgButton` at `0x1804a2637`
+- `USER32!CheckDlgButton` at `0x1804a28c8`
+- `USER32!CheckDlgButton` at `0x1804a2df2`
+- `USER32!CheckDlgButton` at `0x1804a2e0f`
+- `USER32!CheckDlgButton` at `0x1804a2e59`
+- `USER32!CheckDlgButton` at `0x1804a2e74`
+- `USER32!CheckDlgButton` at `0x1804a2eb3`
+- `USER32!CheckDlgButton` at `0x1804a2ecc`
+- `USER32!CheckDlgButton` at `0x1804a2f0a`
+- `USER32!DestroyIcon` at `0x1804a36ee`
+- `USER32!DestroyIcon` at `0x1804a370b`
+- `USER32!DestroyIcon` at `0x1804a3720`
+- `USER32!DestroyIcon` at `0x1804a36ee`
+- `USER32!DestroyIcon` at `0x1804a370b`
+- `USER32!DestroyIcon` at `0x1804a3720`
+- `USER32!GetWindowLongPtrW` at `0x1804a227c`
+- `USER32!GetWindowLongPtrW` at `0x1804a227c`
+- `USER32!SetWindowLongPtrW` at `0x1804a2811`
+- `USER32!SetWindowLongPtrW` at `0x1804a3736`
+- `USER32!SetWindowLongPtrW` at `0x1804a2811`
+- `USER32!SetWindowLongPtrW` at `0x1804a3736`
+- `USER32!GetWindowTextW` at `0x1804a2ff3`
+- `USER32!GetWindowTextW` at `0x1804a2ff3`
+- `USER32!GetDlgItem` at `0x1804a2460`
+- `USER32!GetDlgItem` at `0x1804a24de`
+- `USER32!GetDlgItem` at `0x1804a253c`
+- `USER32!GetDlgItem` at `0x1804a2560`
+- `USER32!GetDlgItem` at `0x1804a25fe`
+- `USER32!GetDlgItem` at `0x1804a2648`
+- `USER32!GetDlgItem` at `0x1804a2689`
+- `USER32!GetDlgItem` at `0x1804a26ae`
+- `USER32!GetDlgItem` at `0x1804a26fc`
+- `USER32!GetDlgItem` at `0x1804a28f0`
+- `USER32!GetDlgItem` at `0x1804a2961`
+- `USER32!GetDlgItem` at `0x1804a299e`
+- `USER32!GetDlgItem` at `0x1804a29c5`
+- `USER32!GetDlgItem` at `0x1804a2a6a`
+- `USER32!GetDlgItem` at `0x1804a2a8f`
+- `USER32!GetDlgItem` at `0x1804a2e85`
+- `USER32!GetDlgItem` at `0x1804a2ee0`
+- `USER32!GetDlgItem` at `0x1804a2f1b`
+- `USER32!GetDlgItem` at `0x1804a337d`
+- `USER32!GetDlgItem` at `0x1804a2460`
+- `USER32!GetDlgItem` at `0x1804a24de`
+- `USER32!GetDlgItem` at `0x1804a253c`
+- `USER32!GetDlgItem` at `0x1804a2560`
+- `USER32!GetDlgItem` at `0x1804a25fe`
+- `USER32!GetDlgItem` at `0x1804a2648`
+- `USER32!GetDlgItem` at `0x1804a2689`
+- `USER32!GetDlgItem` at `0x1804a26ae`
+- `USER32!GetDlgItem` at `0x1804a26fc`
+- `USER32!GetDlgItem` at `0x1804a28f0`
+- `USER32!GetDlgItem` at `0x1804a2961`
+- `USER32!GetDlgItem` at `0x1804a299e`
+- `USER32!GetDlgItem` at `0x1804a29c5`
+- `USER32!GetDlgItem` at `0x1804a2a6a`
+- `USER32!GetDlgItem` at `0x1804a2a8f`
+- `USER32!GetDlgItem` at `0x1804a2e85`
+- `USER32!GetDlgItem` at `0x1804a2ee0`
+- `USER32!GetDlgItem` at `0x1804a2f1b`
+- `USER32!GetDlgItem` at `0x1804a337d`
+- `USER32!SendDlgItemMessageW` at `0x1804a2dd5`
+- `USER32!SendDlgItemMessageW` at `0x1804a2dd5`
+- `USER32!SendMessageW` at `0x1804a247a`
+- `USER32!SendMessageW` at `0x1804a274f`
+- `USER32!SendMessageW` at `0x1804a2aac`
+- `USER32!SendMessageW` at `0x1804a2b08`
+- `USER32!SendMessageW` at `0x1804a2b2c`
+- `USER32!SendMessageW` at `0x1804a2b92`
+- `USER32!SendMessageW` at `0x1804a2bb1`
+- `USER32!SendMessageW` at `0x1804a2c00`
+- `USER32!SendMessageW` at `0x1804a2c22`
+- `USER32!SendMessageW` at `0x1804a2d13`
+- `USER32!SendMessageW` at `0x1804a339a`
+- `USER32!SendMessageW` at `0x1804a33b4`
+- `USER32!SendMessageW` at `0x1804a3463`
+- `USER32!SendMessageW` at `0x1804a247a`
+- `USER32!SendMessageW` at `0x1804a274f`
+- `USER32!SendMessageW` at `0x1804a2aac`
+- `USER32!SendMessageW` at `0x1804a2b08`
+- `USER32!SendMessageW` at `0x1804a2b2c`
+- `USER32!SendMessageW` at `0x1804a2b92`
+- `USER32!SendMessageW` at `0x1804a2bb1`
+- `USER32!SendMessageW` at `0x1804a2c00`
+- `USER32!SendMessageW` at `0x1804a2c22`
+- `USER32!SendMessageW` at `0x1804a2d13`
+- `USER32!SendMessageW` at `0x1804a339a`
+- `USER32!SendMessageW` at `0x1804a33b4`
+- `USER32!SendMessageW` at `0x1804a3463`
+- `api-ms-win-shcore-registry-l1-1-0!SHSetValueW` at `0x1804a3351`
+- `api-ms-win-shcore-registry-l1-1-0!SHSetValueW` at `0x1804a3430`
+- `api-ms-win-shcore-registry-l1-1-0!SHSetValueW` at `0x1804a34cc`
+- `api-ms-win-shcore-registry-l1-1-0!SHSetValueW` at `0x1804a3351`
+- `api-ms-win-shcore-registry-l1-1-0!SHSetValueW` at `0x1804a3430`
+- `api-ms-win-shcore-registry-l1-1-0!SHSetValueW` at `0x1804a34cc`
+- `api-ms-win-shcore-registry-l1-1-1!SHRegGetValueFromHKCUHKLM` at `0x1804a2a22`
+- `api-ms-win-shcore-registry-l1-1-1!SHRegGetValueFromHKCUHKLM` at `0x1804a32ec`
+- `api-ms-win-shcore-registry-l1-1-1!SHRegGetValueFromHKCUHKLM` at `0x1804a2a22`
+- `api-ms-win-shcore-registry-l1-1-1!SHRegGetValueFromHKCUHKLM` at `0x1804a32ec`
+- `SHCORE!__imp_SHRegGetBoolValueFromHKCUHKLM` at `0x1804a28b1`
+- `SHCORE!__imp_SHRegGetBoolValueFromHKCUHKLM` at `0x1804a3209`
+- `SHCORE!__imp_SHRegGetBoolValueFromHKCUHKLM` at `0x1804a28b1`
+- `SHCORE!__imp_SHRegGetBoolValueFromHKCUHKLM` at `0x1804a3209`
+- `SHLWAPI!__imp_SHSendMessageBroadcastW` at `0x1804a3369`
+- `SHLWAPI!__imp_SHSendMessageBroadcastW` at `0x1804a3369`
+- `dwmapi!DwmGetWindowAttribute` at `0x1804a3056`
+- `dwmapi!DwmGetWindowAttribute` at `0x1804a3056`
+- `UxTheme!__imp_ShouldAppsUseDarkMode` at `0x1804a278e`
+- `UxTheme!__imp_ShouldAppsUseDarkMode` at `0x1804a2fff`
+
+## string_xrefs
+
+- `0x1804a2d49`: `imageres.dll`
+- `0x1804a352f`: `SetShowRecommendations`
+- `0x1804a28a3`: `OpenFolderInNewTab`
+- `0x1804a31fb`: `OpenFolderInNewTab`
+- `0x1804a322e`: `OpenFolderInNewTab`
+
+## pseudocode
+
+```c
+
+```
