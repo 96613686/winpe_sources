@@ -1,0 +1,99 @@
+# Recycler::TryFinishConcurrentCollect<270602243>(void)
+
+- ea: `0x180253c50`
+- end: `0x180253cdd`
+- name: `??$TryFinishConcurrentCollect@$0BACBBAAD@@Recycler@@AEAAHXZ`
+- size: `141`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `2`
+- tags: ``
+
+## callers
+
+- `0x1801a7e10`
+
+## callees
+
+- `0x1801892d8`
+- `0x180253c50`
+
+## import_xrefs
+
+- `KERNEL32!SetThreadPriority` at `0x180253cad`
+- `KERNEL32!SetThreadPriority` at `0x180253cad`
+- `KERNEL32!GetTickCount` at `0x180253c7a`
+- `KERNEL32!GetTickCount` at `0x180253cb5`
+- `KERNEL32!GetTickCount` at `0x180253c7a`
+- `KERNEL32!GetTickCount` at `0x180253cb5`
+
+## pseudocode
+
+```c
+__int64 __fastcall Recycler::TryFinishConcurrentCollect<270602243>(__int64 a1)
+{
+  DWORD TickCount; // eax
+  void *v3; // rcx
+
+  if ( *(_QWORD *)(a1 + 12952) )
+  {
+    if ( (*(_DWORD *)a1 & 0x4000) != 0 )
+    {
+      if ( !*(_BYTE *)(a1 + 12910) )
+      {
+        TickCount = GetTickCount();
+        if ( *(_QWORD *)(a1 + 488) > (unsigned __int64)qword_18043CF78 || TickCount - *(_DWORD *)(a1 + 12960) > 0x1388 )
+        {
+          v3 = *(void **)(a1 + 12952);
+          *(_BYTE *)(a1 + 12910) = 1;
+          SetThreadPriority(v3, 0);
+        }
+      }
+      return 0;
+    }
+    if ( GetTickCount() <= *(_DWORD *)(a1 + 16292) )
+      return 0;
+  }
+  return Recycler::FinishConcurrentCollectWrapped(a1, 270602243);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180253c50  mov     [rsp+arg_0], rcx
+0x180253c55  push    rbx
+0x180253c56  sub     rsp, 20h
+0x180253c5a  mov     rbx, [rsp+28h+arg_0]
+0x180253c5f  cmp     qword ptr [rbx+3298h], 0
+0x180253c67  jz      short loc_180253CCB
+0x180253c69  test    dword ptr [rbx], 4000h
+0x180253c6f  jz      short loc_180253CB5
+0x180253c71  cmp     byte ptr [rbx+326Eh], 0
+0x180253c78  jnz     short loc_180253CC3
+0x180253c7a  call    cs:__imp_GetTickCount
+0x180253c80  mov     rcx, cs:qword_18043CF78
+0x180253c87  cmp     [rbx+1E8h], rcx
+0x180253c8e  ja      short loc_180253C9D
+0x180253c90  sub     eax, [rbx+32A0h]
+0x180253c96  cmp     eax, 1388h
+0x180253c9b  jbe     short loc_180253CC3
+0x180253c9d  mov     rcx, [rbx+3298h]; hThread
+0x180253ca4  xor     edx, edx; nPriority
+0x180253ca6  mov     byte ptr [rbx+326Eh], 1
+0x180253cad  call    cs:__imp_SetThreadPriority
+0x180253cb3  jmp     short loc_180253CC3
+0x180253cb5  call    cs:__imp_GetTickCount
+0x180253cbb  cmp     eax, [rbx+3FA4h]
+0x180253cc1  ja      short loc_180253CCB
+0x180253cc3  xor     eax, eax
+0x180253cc5  add     rsp, 20h
+0x180253cc9  pop     rbx
+0x180253cca  retn
+0x180253ccb  mov     edx, 10211003h
+0x180253cd0  mov     rcx, rbx
+0x180253cd3  add     rsp, 20h
+0x180253cd7  pop     rbx
+0x180253cd8  jmp     ?FinishConcurrentCollectWrapped@Recycler@@AEAAHW4CollectionFlags@@@Z; Recycler::FinishConcurrentCollectWrapped(CollectionFlags)
+```

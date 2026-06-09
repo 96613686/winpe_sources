@@ -1,0 +1,182 @@
+# CRemoteDesktopClientSettings::SetRdpProperty(ushort *,tagVARIANT)
+
+- ea: `0x1804048d0`
+- end: `0x180406394`
+- name: `?SetRdpProperty@CRemoteDesktopClientSettings@@UEAAJPEAGUtagVARIANT@@@Z`
+- size: `6852`
+- prototype: `__int64 __fastcall(CRemoteDesktopClientSettings *__hidden this, unsigned __int16 *, struct tagVARIANT *__struct_ptr)`
+- caller_count: `0`
+- callee_count: `48`
+- tags: `registry_config, broker_com_uri`
+
+## callees
+
+- `0x1800186a0`
+- `0x18002a334`
+- `0x180039c98`
+- `0x180039ce4`
+- `0x1800e9b1c`
+- `0x1800f7748`
+- `0x1802732c4`
+- `0x1803f82b8`
+- `0x1803f8588`
+- `0x1803f879c`
+- `0x1803f8930`
+- `0x1803f8b48`
+- `0x1803f8c54`
+- `0x1803f8d5c`
+- `0x1803f9068`
+- `0x1803f9620`
+- `0x1803f98d0`
+- `0x1803f9b80`
+- `0x1803f9dd8`
+- `0x1803fa084`
+- `0x1803fa5ec`
+- `0x1803fa898`
+- `0x1803fab48`
+- `0x1803fada8`
+- `0x1803fb000`
+- `0x1803fb2b0`
+- `0x1803fb508`
+- `0x1803fb6ac`
+- `0x1803fb9e4`
+- `0x1803fbc34`
+- `0x1803fc07c`
+- `0x1803fc2dc`
+- `0x1803fc484`
+- `0x1803fce20`
+- `0x1803fcfc4`
+- `0x1803fd168`
+- `0x1803fd330`
+- `0x1803fd4d8`
+- `0x1803fd6dc`
+- `0x1803fda24`
+- `0x1803ff08c`
+- `0x1803ff2fc`
+- `0x1803ff578`
+- `0x180403424`
+- `0x1804048d0`
+- `0x18040639c`
+- `0x180406450`
+- `0x18068c010`
+
+## import_xrefs
+
+- `msvcrt!_wcslwr` at `0x180404b90`
+- `msvcrt!_wcslwr` at `0x180404b90`
+- `msvcrt!_wcsicmp` at `0x180404ceb`
+- `msvcrt!_wcsicmp` at `0x180404d53`
+- `msvcrt!_wcsicmp` at `0x180404e58`
+- `msvcrt!_wcsicmp` at `0x180404eb8`
+- `msvcrt!_wcsicmp` at `0x180404f18`
+- `msvcrt!_wcsicmp` at `0x180404f78`
+- `msvcrt!_wcsicmp` at `0x180404f90`
+- `msvcrt!_wcsicmp` at `0x180404fa8`
+- `msvcrt!_wcsicmp` at `0x180405081`
+- `msvcrt!_wcsicmp` at `0x180405099`
+- `msvcrt!_wcsicmp` at `0x1804050b1`
+- `msvcrt!_wcsicmp` at `0x180405111`
+- `msvcrt!_wcsicmp` at `0x180405171`
+- `msvcrt!_wcsicmp` at `0x1804051d1`
+- `msvcrt!_wcsicmp` at `0x180405231`
+- `msvcrt!_wcsicmp` at `0x180405291`
+- `msvcrt!_wcsicmp` at `0x1804052f1`
+- `msvcrt!_wcsicmp` at `0x180405351`
+- `msvcrt!_wcsicmp` at `0x1804053b1`
+- `msvcrt!_wcsicmp` at `0x180405411`
+- `msvcrt!_wcsicmp` at `0x180405471`
+- `msvcrt!_wcsicmp` at `0x1804054d1`
+- `msvcrt!_wcsicmp` at `0x180405531`
+- `msvcrt!_wcsicmp` at `0x180405591`
+- `msvcrt!_wcsicmp` at `0x1804055f1`
+- `msvcrt!_wcsicmp` at `0x180405651`
+- `msvcrt!_wcsicmp` at `0x1804056b1`
+- `msvcrt!_wcsicmp` at `0x1804056c9`
+- `msvcrt!_wcsicmp` at `0x1804056e1`
+- `msvcrt!_wcsicmp` at `0x1804056f9`
+- `msvcrt!_wcsicmp` at `0x180405711`
+- `msvcrt!_wcsicmp` at `0x180405729`
+- `msvcrt!_wcsicmp` at `0x180405789`
+- `msvcrt!_wcsicmp` at `0x1804057e9`
+- `msvcrt!_wcsicmp` at `0x180405849`
+- `msvcrt!_wcsicmp` at `0x1804058a9`
+- `msvcrt!_wcsicmp` at `0x1804058c1`
+- `msvcrt!_wcsicmp` at `0x1804058d9`
+- `msvcrt!_wcsicmp` at `0x180405939`
+- `msvcrt!_wcsicmp` at `0x180405999`
+- `msvcrt!_wcsicmp` at `0x1804059b1`
+- `msvcrt!_wcsicmp` at `0x1804059c9`
+- `msvcrt!_wcsicmp` at `0x180405a69`
+- `msvcrt!_wcsicmp` at `0x180405b40`
+- `msvcrt!_wcsicmp` at `0x180405be0`
+- `msvcrt!_wcsicmp` at `0x180405c80`
+- `msvcrt!_wcsicmp` at `0x180405d20`
+- `msvcrt!_wcsicmp` at `0x180405e61`
+- `msvcrt!_wcsicmp` at `0x180405f6b`
+- `msvcrt!_wcsicmp` at `0x18040605f`
+- `msvcrt!_wcsicmp` at `0x1804060bf`
+- `msvcrt!_wcsicmp` at `0x180404ceb`
+- `msvcrt!_wcsicmp` at `0x180404d53`
+- `msvcrt!_wcsicmp` at `0x180404e58`
+- `msvcrt!_wcsicmp` at `0x180404eb8`
+- `msvcrt!_wcsicmp` at `0x180404f18`
+- `msvcrt!_wcsicmp` at `0x180404f78`
+- `msvcrt!_wcsicmp` at `0x180404f90`
+- `msvcrt!_wcsicmp` at `0x180404fa8`
+- `msvcrt!_wcsicmp` at `0x180405081`
+- `msvcrt!_wcsicmp` at `0x180405099`
+- `msvcrt!_wcsicmp` at `0x1804050b1`
+- `msvcrt!_wcsicmp` at `0x180405111`
+- `msvcrt!_wcsicmp` at `0x180405171`
+- `msvcrt!_wcsicmp` at `0x1804051d1`
+- `msvcrt!_wcsicmp` at `0x180405231`
+- `msvcrt!_wcsicmp` at `0x180405291`
+- `msvcrt!_wcsicmp` at `0x1804052f1`
+- `msvcrt!_wcsicmp` at `0x180405351`
+- `msvcrt!_wcsicmp` at `0x1804053b1`
+- `msvcrt!_wcsicmp` at `0x180405411`
+- `msvcrt!_wcsicmp` at `0x180405471`
+- `msvcrt!_wcsicmp` at `0x1804054d1`
+- `msvcrt!_wcsicmp` at `0x180405531`
+- `msvcrt!_wcsicmp` at `0x180405591`
+- `msvcrt!_wcsicmp` at `0x1804055f1`
+- `msvcrt!_wcsicmp` at `0x180405651`
+- `msvcrt!_wcsicmp` at `0x1804056b1`
+- `msvcrt!_wcsicmp` at `0x1804056c9`
+- `msvcrt!_wcsicmp` at `0x1804056e1`
+- `msvcrt!_wcsicmp` at `0x1804056f9`
+- `msvcrt!_wcsicmp` at `0x180405711`
+- `msvcrt!_wcsicmp` at `0x180405729`
+- `msvcrt!_wcsicmp` at `0x180405789`
+- `msvcrt!_wcsicmp` at `0x1804057e9`
+- `msvcrt!_wcsicmp` at `0x180405849`
+- `msvcrt!_wcsicmp` at `0x1804058a9`
+- `msvcrt!_wcsicmp` at `0x1804058c1`
+- `msvcrt!_wcsicmp` at `0x1804058d9`
+- `msvcrt!_wcsicmp` at `0x180405939`
+- `msvcrt!_wcsicmp` at `0x180405999`
+- `msvcrt!_wcsicmp` at `0x1804059b1`
+- `msvcrt!_wcsicmp` at `0x1804059c9`
+- `msvcrt!_wcsicmp` at `0x180405a69`
+- `msvcrt!_wcsicmp` at `0x180405b40`
+- `msvcrt!_wcsicmp` at `0x180405be0`
+- `msvcrt!_wcsicmp` at `0x180405c80`
+- `msvcrt!_wcsicmp` at `0x180405d20`
+- `msvcrt!_wcsicmp` at `0x180405e61`
+- `msvcrt!_wcsicmp` at `0x180405f6b`
+- `msvcrt!_wcsicmp` at `0x18040605f`
+- `msvcrt!_wcsicmp` at `0x1804060bf`
+
+## string_xrefs
+
+- `0x180405c76`: `ClxCommandLine`
+- `0x180405287`: `BitmapCachePersistEnable`
+- `0x180406055`: `SetClientProtocolSpecMode`
+- `0x180405b36`: `GatewayAccessToken`
+- `0x180405b2a`: `Unable to set fedauth token.`
+
+## pseudocode
+
+```c
+
+```
