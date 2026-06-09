@@ -1,0 +1,237 @@
+# FDlgFormFld(DLM,unsigned __int64,unsigned __int64,unsigned __int64,unsigned __int64)
+
+- ea: `0x181295770`
+- end: `0x18129623b`
+- name: `?FDlgFormFld@@YAHW4DLM@@_K111@Z`
+- size: `2763`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `23`
+- tags: ``
+
+## callees
+
+- `0x18000ace0`
+- `0x1800723b0`
+- `0x1800723f0`
+- `0x1801e4640`
+- `0x1802afbe4`
+- `0x1802c4d34`
+- `0x1804406b0`
+- `0x1804ddf94`
+- `0x18072bd30`
+- `0x1807d5c84`
+- `0x180cb1fa0`
+- `0x181295770`
+- `0x181820360`
+- `0x1818208bc`
+- `0x18182115c`
+- `0x181821324`
+- `0x18182153c`
+- `0x181822ad0`
+- `0x181822d68`
+- `0x181fc4a54`
+- `0x181fc4e80`
+- `0x181fc53c0`
+- `0x181fc556c`
+
+## import_xrefs
+
+- `MSO!__imp_?InsertListBoxEntry@@YAX_KPEB_W0@Z` at `0x181295b2c`
+- `MSO!__imp_?InsertListBoxEntry@@YAX_KPEB_W0@Z` at `0x181295b2c`
+- `MSO!__imp_?RedisplayTmc@@YAX_K@Z` at `0x181295a3f`
+- `MSO!__imp_?RedisplayTmc@@YAX_K@Z` at `0x181295a3f`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x1812958f0`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x181295c0c`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x181295c76`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x1812958f0`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x181295c0c`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x181295c76`
+- `MSO!__imp_?FRestoreDlg@@YA_N_N@Z` at `0x181295d70`
+- `MSO!__imp_?FRestoreDlg@@YA_N_N@Z` at `0x18129622c`
+- `MSO!__imp_?FRestoreDlg@@YA_N_N@Z` at `0x181295d70`
+- `MSO!__imp_?FRestoreDlg@@YA_N_N@Z` at `0x18129622c`
+- `MSO!__imp_?CchGetTmcText@@YA_K_KPEA_W0@Z` at `0x181295e17`
+- `MSO!__imp_?CchGetTmcText@@YA_K_KPEA_W0@Z` at `0x181295e7e`
+- `MSO!__imp_?CchGetTmcText@@YA_K_KPEA_W0@Z` at `0x181295ea4`
+- `MSO!__imp_?CchGetTmcText@@YA_K_KPEA_W0@Z` at `0x181295e17`
+- `MSO!__imp_?CchGetTmcText@@YA_K_KPEA_W0@Z` at `0x181295e7e`
+- `MSO!__imp_?CchGetTmcText@@YA_K_KPEA_W0@Z` at `0x181295ea4`
+- `MSO!__imp_?SetTmcTxs@@YAX_K0@Z` at `0x181295b95`
+- `MSO!__imp_?SetTmcTxs@@YAX_K0@Z` at `0x181295ca6`
+- `MSO!__imp_?SetTmcTxs@@YAX_K0@Z` at `0x181295b95`
+- `MSO!__imp_?SetTmcTxs@@YAX_K0@Z` at `0x181295ca6`
+- `MSO!__imp_?GetTmcText@@YAX_KPEA_W0@Z` at `0x181295c36`
+- `MSO!__imp_?GetTmcText@@YAX_KPEA_W0@Z` at `0x181295c36`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295a25`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295a57`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295cf9`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295d13`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295d41`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295d76`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f0b`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f1e`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f36`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f46`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f56`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f69`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f81`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f91`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295fac`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295fc2`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295fda`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296024`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296037`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296083`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960ac`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960b9`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960c9`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960d2`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960f0`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296100`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296110`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296119`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296137`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296147`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812961c1`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812961d4`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296202`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295a25`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295a57`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295cf9`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295d13`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295d41`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295d76`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f0b`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f1e`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f36`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f46`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f56`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f69`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f81`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295f91`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295fac`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295fc2`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181295fda`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296024`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296037`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296083`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960ac`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960b9`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960c9`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960d2`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812960f0`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296100`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296110`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296119`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296137`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296147`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812961c1`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1812961d4`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181296202`
+- `MSO!__imp_?FSetCabWz@@YA_NPEAPEAXPEB_W_K@Z` at `0x181295f30`
+- `MSO!__imp_?FSetCabWz@@YA_NPEAPEAXPEB_W_K@Z` at `0x181295f7b`
+- `MSO!__imp_?FSetCabWz@@YA_NPEAPEAXPEB_W_K@Z` at `0x181295f30`
+- `MSO!__imp_?FSetCabWz@@YA_NPEAPEAXPEB_W_K@Z` at `0x181295f7b`
+- `MSO!__imp_?DeleteListBoxEntry@@YAX_K0@Z` at `0x181295af9`
+- `MSO!__imp_?DeleteListBoxEntry@@YAX_K0@Z` at `0x181295b88`
+- `MSO!__imp_?DeleteListBoxEntry@@YAX_K0@Z` at `0x181295af9`
+- `MSO!__imp_?DeleteListBoxEntry@@YAX_K0@Z` at `0x181295b88`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x181295a0e`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x181295b38`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x1812961a9`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x181295a0e`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x181295b38`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x1812961a9`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x181295abc`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x181295bb4`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x181295bde`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x181295ffc`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x181295abc`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x181295bb4`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x181295bde`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x181295ffc`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18129598a`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x1812959ae`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x1812959d9`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295a51`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295b7c`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295c56`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295c65`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295ef1`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18129598a`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x1812959ae`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x1812959d9`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295a51`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295b7c`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295c56`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295c65`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x181295ef1`
+- `MSO!__imp_?EndDlg@@YAX_K@Z` at `0x181295d5b`
+- `MSO!__imp_?EndDlg@@YAX_K@Z` at `0x181295d99`
+- `MSO!__imp_?EndDlg@@YAX_K@Z` at `0x181295dba`
+- `MSO!__imp_?EndDlg@@YAX_K@Z` at `0x181295d5b`
+- `MSO!__imp_?EndDlg@@YAX_K@Z` at `0x181295d99`
+- `MSO!__imp_?EndDlg@@YAX_K@Z` at `0x181295dba`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295bab`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295c02`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295c6e`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295dac`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295dda`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295bab`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295c02`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295c6e`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295dac`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x181295dda`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x1812959ea`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x1812959fc`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295a1f`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295ba3`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295c18`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295c81`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295e31`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295e43`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181296181`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x18129618c`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x1812959ea`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x1812959fc`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295a1f`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295ba3`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295c18`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295c81`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295e31`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181295e43`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181296181`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x18129618c`
+- `MSO!__imp_?AddListBoxEntry@@YAX_KPEB_W@Z` at `0x181295c46`
+- `MSO!__imp_?AddListBoxEntry@@YAX_KPEB_W@Z` at `0x181295c46`
+- `MSO!__imp_?MsoSDMDALAutoLayoutCleanup@@YAXXZ` at `0x181295fa1`
+- `MSO!__imp_?MsoSDMDALAutoLayoutCleanup@@YAXXZ` at `0x181295fa1`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x18129586d`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295924`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295947`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295ad0`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295b4c`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295e53`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181296195`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x1812961b2`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x18129586d`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295924`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295947`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295ad0`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295b4c`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181295e53`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181296195`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x1812961b2`
+- `MSO!__imp_?GetListBoxEntry@@YAX_K0PEA_W0@Z` at `0x181295aed`
+- `MSO!__imp_?GetListBoxEntry@@YAX_K0PEA_W0@Z` at `0x181295b69`
+- `MSO!__imp_?GetListBoxEntry@@YAX_K0PEA_W0@Z` at `0x18129601e`
+- `MSO!__imp_?GetListBoxEntry@@YAX_K0PEA_W0@Z` at `0x181295aed`
+- `MSO!__imp_?GetListBoxEntry@@YAX_K0PEA_W0@Z` at `0x181295b69`
+- `MSO!__imp_?GetListBoxEntry@@YAX_K0PEA_W0@Z` at `0x18129601e`
+
+## pseudocode
+
+```c
+
+```

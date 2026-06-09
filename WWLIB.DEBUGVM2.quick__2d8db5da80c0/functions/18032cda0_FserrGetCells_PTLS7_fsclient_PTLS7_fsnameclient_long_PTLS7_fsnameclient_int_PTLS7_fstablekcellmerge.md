@@ -1,0 +1,106 @@
+# FserrGetCells(PTLS7::fsclient *,PTLS7::fsnameclient *,long,PTLS7::fsnameclient * *,int *,PTLS7::fstablekcellmerge *)
+
+- ea: `0x18032cda0`
+- end: `0x18032d523`
+- name: `?FserrGetCells@@YAJPEAUfsclient@PTLS7@@PEAUfsnameclient@2@JPEAPEAU32@PEAHPEAW4fstablekcellmerge@2@@Z`
+- size: `1923`
+- prototype: `int(struct PTLS7::fsclient *, struct PTLS7::fsnameclient *, int, struct PTLS7::fsnameclient **, int *, enum PTLS7::fstablekcellmerge *)`
+- caller_count: `0`
+- callee_count: `8`
+- tags: ``
+
+## callees
+
+- `0x18002a170`
+- `0x1801e4218`
+- `0x1801e467c`
+- `0x180256908`
+- `0x18032cda0`
+- `0x180338878`
+- `0x180365bc8`
+- `0x181319a3c`
+
+## import_xrefs
+
+- `KERNEL32!TlsGetValue` at `0x18032cdda`
+- `KERNEL32!TlsGetValue` at `0x18032ce0e`
+- `KERNEL32!TlsGetValue` at `0x18032ce2a`
+- `KERNEL32!TlsGetValue` at `0x18032ce51`
+- `KERNEL32!TlsGetValue` at `0x18032cebb`
+- `KERNEL32!TlsGetValue` at `0x18032cf4c`
+- `KERNEL32!TlsGetValue` at `0x18032cf6a`
+- `KERNEL32!TlsGetValue` at `0x18032cf90`
+- `KERNEL32!TlsGetValue` at `0x18032cfae`
+- `KERNEL32!TlsGetValue` at `0x18032cfd5`
+- `KERNEL32!TlsGetValue` at `0x18032cfe4`
+- `KERNEL32!TlsGetValue` at `0x18032d02a`
+- `KERNEL32!TlsGetValue` at `0x18032d054`
+- `KERNEL32!TlsGetValue` at `0x18032d09a`
+- `KERNEL32!TlsGetValue` at `0x18032d0ce`
+- `KERNEL32!TlsGetValue` at `0x18032d108`
+- `KERNEL32!TlsGetValue` at `0x18032d12a`
+- `KERNEL32!TlsGetValue` at `0x18032d161`
+- `KERNEL32!TlsGetValue` at `0x18032d19e`
+- `KERNEL32!TlsGetValue` at `0x18032d1cc`
+- `KERNEL32!TlsGetValue` at `0x18032d1f0`
+- `KERNEL32!TlsGetValue` at `0x18032d211`
+- `KERNEL32!TlsGetValue` at `0x18032d25c`
+- `KERNEL32!TlsGetValue` at `0x18032d290`
+- `KERNEL32!TlsGetValue` at `0x18032d2ca`
+- `KERNEL32!TlsGetValue` at `0x18032d2ec`
+- `KERNEL32!TlsGetValue` at `0x18032d323`
+- `KERNEL32!TlsGetValue` at `0x18032d360`
+- `KERNEL32!TlsGetValue` at `0x18032d38e`
+- `KERNEL32!TlsGetValue` at `0x18032d3b2`
+- `KERNEL32!TlsGetValue` at `0x18032d3e1`
+- `KERNEL32!TlsGetValue` at `0x18032d41f`
+- `KERNEL32!TlsGetValue` at `0x18032d44c`
+- `KERNEL32!TlsGetValue` at `0x18032d497`
+- `KERNEL32!TlsGetValue` at `0x18032cdda`
+- `KERNEL32!TlsGetValue` at `0x18032ce0e`
+- `KERNEL32!TlsGetValue` at `0x18032ce2a`
+- `KERNEL32!TlsGetValue` at `0x18032ce51`
+- `KERNEL32!TlsGetValue` at `0x18032cebb`
+- `KERNEL32!TlsGetValue` at `0x18032cf4c`
+- `KERNEL32!TlsGetValue` at `0x18032cf6a`
+- `KERNEL32!TlsGetValue` at `0x18032cf90`
+- `KERNEL32!TlsGetValue` at `0x18032cfae`
+- `KERNEL32!TlsGetValue` at `0x18032cfd5`
+- `KERNEL32!TlsGetValue` at `0x18032cfe4`
+- `KERNEL32!TlsGetValue` at `0x18032d02a`
+- `KERNEL32!TlsGetValue` at `0x18032d054`
+- `KERNEL32!TlsGetValue` at `0x18032d09a`
+- `KERNEL32!TlsGetValue` at `0x18032d0ce`
+- `KERNEL32!TlsGetValue` at `0x18032d108`
+- `KERNEL32!TlsGetValue` at `0x18032d12a`
+- `KERNEL32!TlsGetValue` at `0x18032d161`
+- `KERNEL32!TlsGetValue` at `0x18032d19e`
+- `KERNEL32!TlsGetValue` at `0x18032d1cc`
+- `KERNEL32!TlsGetValue` at `0x18032d1f0`
+- `KERNEL32!TlsGetValue` at `0x18032d211`
+- `KERNEL32!TlsGetValue` at `0x18032d25c`
+- `KERNEL32!TlsGetValue` at `0x18032d290`
+- `KERNEL32!TlsGetValue` at `0x18032d2ca`
+- `KERNEL32!TlsGetValue` at `0x18032d2ec`
+- `KERNEL32!TlsGetValue` at `0x18032d323`
+- `KERNEL32!TlsGetValue` at `0x18032d360`
+- `KERNEL32!TlsGetValue` at `0x18032d38e`
+- `KERNEL32!TlsGetValue` at `0x18032d3b2`
+- `KERNEL32!TlsGetValue` at `0x18032d3e1`
+- `KERNEL32!TlsGetValue` at `0x18032d41f`
+- `KERNEL32!TlsGetValue` at `0x18032d44c`
+- `KERNEL32!TlsGetValue` at `0x18032d497`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18032d50d`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18032d50d`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18032d501`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18032d501`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18032d4d5`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18032d4d5`
+- `pagelayout!?AssignParentChildLink@Lexicon@LD@@QEAAXPEAUfsnameclient@PTLS7@@0@Z` at `0x18032cf3d`
+- `pagelayout!?AssignParentChildLink@Lexicon@LD@@QEAAXPEAUfsnameclient@PTLS7@@0@Z` at `0x18032cf3d`
+
+## pseudocode
+
+```c
+
+```

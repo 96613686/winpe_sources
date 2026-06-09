@@ -1,0 +1,266 @@
+# sub_180F59CDC
+
+- ea: `0x180f59cdc`
+- end: `0x180f617aa`
+- name: `sub_180F59CDC`
+- size: `31438`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `393`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x180f59a90`
+
+## callees
+
+- `0x180012fb0`
+- `0x180017170`
+- `0x1800205e4`
+- `0x180026dfc`
+- `0x18002eeec`
+- `0x180030440`
+- `0x18004e550`
+- `0x18004e8f0`
+- `0x18004ee50`
+- `0x18004fbb0`
+- `0x18005a050`
+- `0x18005a320`
+- `0x18005a428`
+- `0x18005a528`
+- `0x18005ac5c`
+- `0x1800603ec`
+- `0x1800625f8`
+- `0x180065350`
+- `0x18006b8a0`
+- `0x18006d7ac`
+- `0x18006ddb4`
+- `0x180070978`
+- `0x180070c1c`
+- `0x180071400`
+- `0x180071820`
+- `0x180072180`
+- `0x1800721e4`
+- `0x1800721f0`
+- `0x1800723b0`
+- `0x180073554`
+- `0x1800735a4`
+- `0x1800736a0`
+- `0x1800754e8`
+- `0x1800976d0`
+- `0x18009d8f8`
+- `0x18009d968`
+- `0x18009da3c`
+- `0x18009fd28`
+- `0x1800a4f5c`
+- `0x1800aab20`
+- `0x1800b8f04`
+- `0x1800ba93c`
+- `0x1800bb360`
+- `0x1800c7624`
+- `0x1800caad0`
+- `0x1800cd618`
+- `0x1800dbf80`
+- `0x1800e8e50`
+- `0x1800ef830`
+- `0x1800f56cc`
+
+## import_xrefs
+
+- `KERNEL32!GetTickCount64` at `0x180f5d4ed`
+- `KERNEL32!GetTickCount64` at `0x180f6121b`
+- `KERNEL32!GetTickCount64` at `0x180f5d4ed`
+- `KERNEL32!GetTickCount64` at `0x180f6121b`
+- `KERNEL32!TlsGetValue` at `0x180f5a356`
+- `KERNEL32!TlsGetValue` at `0x180f5a356`
+- `MSO!MSO_1588` at `0x180f5a749`
+- `MSO!MSO_1588` at `0x180f5a749`
+- `MSO!MSO_2716` at `0x180f5f520`
+- `MSO!MSO_2716` at `0x180f5f520`
+- `MSO!MSO_4832` at `0x180f5de05`
+- `MSO!MSO_4832` at `0x180f5de05`
+- `MSO!MSO_5564` at `0x180f5b619`
+- `MSO!MSO_5564` at `0x180f5b619`
+- `MSO!MSO_7537` at `0x180f5a2db`
+- `MSO!MSO_7537` at `0x180f5a2db`
+- `MSO!MSO_9301` at `0x180f5a190`
+- `MSO!MSO_9301` at `0x180f5be9a`
+- `MSO!MSO_9301` at `0x180f5a190`
+- `MSO!MSO_9301` at `0x180f5be9a`
+- `MSO!MSO_11466` at `0x180f60730`
+- `MSO!MSO_11466` at `0x180f60730`
+- `MSO!MSO_13128` at `0x180f5eae5`
+- `MSO!MSO_13128` at `0x180f5eae5`
+- `MSO!MSO_13794` at `0x180f5df50`
+- `MSO!MSO_13794` at `0x180f5e04a`
+- `MSO!MSO_13794` at `0x180f5df50`
+- `MSO!MSO_13794` at `0x180f5e04a`
+- `MSO!MSO_15838` at `0x180f5f560`
+- `MSO!MSO_15838` at `0x180f60751`
+- `MSO!MSO_15838` at `0x180f5f560`
+- `MSO!MSO_15838` at `0x180f60751`
+- `MSO!MSO_17663` at `0x180f5a106`
+- `MSO!MSO_17663` at `0x180f5a106`
+- `MSO!MSO_19996` at `0x180f5d666`
+- `MSO!MSO_19996` at `0x180f5d666`
+- `MSO!MSO_24244` at `0x180f5de69`
+- `MSO!MSO_24244` at `0x180f5de69`
+- `MSO!MSO_25610` at `0x180f5a76f`
+- `MSO!MSO_25610` at `0x180f5bbff`
+- `MSO!MSO_25610` at `0x180f5bfb8`
+- `MSO!MSO_25610` at `0x180f5ceff`
+- `MSO!MSO_25610` at `0x180f5d0a5`
+- `MSO!MSO_25610` at `0x180f5da1b`
+- `MSO!MSO_25610` at `0x180f5da70`
+- `MSO!MSO_25610` at `0x180f60e3e`
+- `MSO!MSO_25610` at `0x180f60ec7`
+- `MSO!MSO_25610` at `0x180f5a76f`
+- `MSO!MSO_25610` at `0x180f5bbff`
+- `MSO!MSO_25610` at `0x180f5bfb8`
+- `MSO!MSO_25610` at `0x180f5ceff`
+- `MSO!MSO_25610` at `0x180f5d0a5`
+- `MSO!MSO_25610` at `0x180f5da1b`
+- `MSO!MSO_25610` at `0x180f5da70`
+- `MSO!MSO_25610` at `0x180f60e3e`
+- `MSO!MSO_25610` at `0x180f60ec7`
+- `MSO!MSO_25701` at `0x180f5f4f4`
+- `MSO!MSO_25701` at `0x180f5f4f4`
+- `MSO!MSO_29291` at `0x180f5c1d2`
+- `MSO!MSO_29291` at `0x180f5d0be`
+- `MSO!MSO_29291` at `0x180f5c1d2`
+- `MSO!MSO_29291` at `0x180f5d0be`
+- `MSO!MSO_30532` at `0x180f5c1ed`
+- `MSO!MSO_30532` at `0x180f5d0d9`
+- `MSO!MSO_30532` at `0x180f5c1ed`
+- `MSO!MSO_30532` at `0x180f5d0d9`
+- `MSO!MSO_32475` at `0x180f5e0a6`
+- `MSO!MSO_32475` at `0x180f5e0a6`
+- `MSO!MSO_32834` at `0x180f5f91a`
+- `MSO!MSO_32834` at `0x180f5f91a`
+- `MSO!MSO_33263` at `0x180f5bda7`
+- `MSO!MSO_33263` at `0x180f5bda7`
+- `MSO!MSO_36636` at `0x180f5a9d7`
+- `MSO!MSO_36636` at `0x180f5bfa4`
+- `MSO!MSO_36636` at `0x180f5cb2e`
+- `MSO!MSO_36636` at `0x180f5cded`
+- `MSO!MSO_36636` at `0x180f5daad`
+- `MSO!MSO_36636` at `0x180f60eb4`
+- `MSO!MSO_36636` at `0x180f5a9d7`
+- `MSO!MSO_36636` at `0x180f5bfa4`
+- `MSO!MSO_36636` at `0x180f5cb2e`
+- `MSO!MSO_36636` at `0x180f5cded`
+- `MSO!MSO_36636` at `0x180f5daad`
+- `MSO!MSO_36636` at `0x180f60eb4`
+- `MSO!MSO_36975` at `0x180f6147a`
+- `MSO!MSO_36975` at `0x180f6156a`
+- `MSO!MSO_36975` at `0x180f6147a`
+- `MSO!MSO_36975` at `0x180f6156a`
+- `MSO!MSO_37150` at `0x180f5f45a`
+- `MSO!MSO_37150` at `0x180f5f45a`
+- `MSO!MSO_48362` at `0x180f5db53`
+- `MSO!MSO_48362` at `0x180f5db53`
+- `MSO!MSO_48449` at `0x180f5b8e7`
+- `MSO!MSO_48449` at `0x180f5b8e7`
+- `MSO!MSO_52699` at `0x180f5c41a`
+- `MSO!MSO_52699` at `0x180f5c41a`
+- `MSO!MSO_52884` at `0x180f5bb73`
+- `MSO!MSO_52884` at `0x180f5bd67`
+- `MSO!MSO_52884` at `0x180f5bb73`
+- `MSO!MSO_52884` at `0x180f5bd67`
+- `MSO!MSO_55377` at `0x180f5cc6d`
+- `MSO!MSO_55377` at `0x180f5cc6d`
+- `MSO!MSO_56783` at `0x180f5e02d`
+- `MSO!MSO_56783` at `0x180f5e02d`
+- `MSO!MSO_62538` at `0x180f614ff`
+- `MSO!MSO_62538` at `0x180f61708`
+- `MSO!MSO_62538` at `0x180f614ff`
+- `MSO!MSO_62538` at `0x180f61708`
+- `Mso98Win32Client!Mso98Win32Client_7999` at `0x180f5c57b`
+- `Mso98Win32Client!Mso98Win32Client_7999` at `0x180f5c57b`
+- `Mso98Win32Client!Mso98Win32Client_30443` at `0x180f5c3e0`
+- `Mso98Win32Client!Mso98Win32Client_30443` at `0x180f5c3e0`
+- `Mso98Win32Client!Mso98Win32Client_34443` at `0x180f5c546`
+- `Mso98Win32Client!Mso98Win32Client_34443` at `0x180f5c941`
+- `Mso98Win32Client!Mso98Win32Client_34443` at `0x180f5c546`
+- `Mso98Win32Client!Mso98Win32Client_34443` at `0x180f5c941`
+- `Mso30Win32Client!Mso30Win32Client_17831` at `0x180f5e8c6`
+- `Mso30Win32Client!Mso30Win32Client_17831` at `0x180f5ecb1`
+- `Mso30Win32Client!Mso30Win32Client_17831` at `0x180f5e8c6`
+- `Mso30Win32Client!Mso30Win32Client_17831` at `0x180f5ecb1`
+- `Mso30Win32Client!Mso30Win32Client_30688` at `0x180f5fbac`
+- `Mso30Win32Client!Mso30Win32Client_30688` at `0x180f5fbac`
+- `Mso30Win32Client!Mso30Win32Client_46109` at `0x180f5abfb`
+- `Mso30Win32Client!Mso30Win32Client_46109` at `0x180f61168`
+- `Mso30Win32Client!Mso30Win32Client_46109` at `0x180f5abfb`
+- `Mso30Win32Client!Mso30Win32Client_46109` at `0x180f61168`
+- `Mso20Win32Client!__imp_Mso20Win32Client_241` at `0x180f5fdc1`
+- `Mso20Win32Client!__imp_Mso20Win32Client_241` at `0x180f61613`
+- `Mso20Win32Client!__imp_Mso20Win32Client_241` at `0x180f5fdc1`
+- `Mso20Win32Client!__imp_Mso20Win32Client_241` at `0x180f61613`
+- `Mso20Win32Client!Mso20Win32Client_309` at `0x180f59ebc`
+- `Mso20Win32Client!Mso20Win32Client_309` at `0x180f5a2c3`
+- `Mso20Win32Client!Mso20Win32Client_309` at `0x180f59ebc`
+- `Mso20Win32Client!Mso20Win32Client_309` at `0x180f5a2c3`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x180f5e351`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x180f5e45c`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x180f6126d`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x180f5e351`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x180f5e45c`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x180f6126d`
+- `Mso20Win32Client!Mso20Win32Client_10187` at `0x180f5a448`
+- `Mso20Win32Client!Mso20Win32Client_10187` at `0x180f60118`
+- `Mso20Win32Client!Mso20Win32Client_10187` at `0x180f61695`
+- `Mso20Win32Client!Mso20Win32Client_10187` at `0x180f5a448`
+- `Mso20Win32Client!Mso20Win32Client_10187` at `0x180f60118`
+- `Mso20Win32Client!Mso20Win32Client_10187` at `0x180f61695`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f5fd2e`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f5fd58`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f6148a`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f6150c`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f61579`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f6159b`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f5fd2e`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f5fd58`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f6148a`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f6150c`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f61579`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x180f6159b`
+- `Mso20Win32Client!Mso20Win32Client_46019` at `0x180f5ce14`
+- `Mso20Win32Client!Mso20Win32Client_46019` at `0x180f5ce14`
+- `Mso20Win32Client!Mso20Win32Client_46315` at `0x180f5fd08`
+- `Mso20Win32Client!Mso20Win32Client_46315` at `0x180f61455`
+- `Mso20Win32Client!Mso20Win32Client_46315` at `0x180f5fd08`
+- `Mso20Win32Client!Mso20Win32Client_46315` at `0x180f61455`
+- `Mso20Win32Client!Mso20Win32Client_54299` at `0x180f5cce5`
+- `Mso20Win32Client!Mso20Win32Client_54299` at `0x180f5cce5`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f59d4d`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f5a306`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f5abd6`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f5c4c5`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f5c802`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f6003d`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f6017c`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f59d4d`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f5a306`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f5abd6`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f5c4c5`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f5c802`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f6003d`
+- `Mso20Win32Client!Mso20Win32Client_60483` at `0x180f6017c`
+
+## string_xrefs
+
+- `0x180f6039a`: `IsCommentPresent`
+- `0x180f6040d`: `CommentPresentAfterFileOpenAndMerge`
+- `0x180f5acc0`: `Failed to fire the BeforeSave event during save`
+- `0x180f5f010`: `Schedule Background Compatibility Check`
+- `0x180f5c8f3`: `CantOpenFileForMerge`
+- `0x180f5c788`: `fLocksRemoved`
+- `0x180f5c7b3`: `Removed locks`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,174 @@
+# PopRtfState(RIBL *)
+
+- ea: `0x18201c06c`
+- end: `0x182022eb3`
+- name: `?PopRtfState@@YAXPEAURIBL@@@Z`
+- size: `28231`
+- prototype: `void __fastcall(struct RIBL *)`
+- caller_count: `1`
+- callee_count: `307`
+- tags: ``
+
+## callers
+
+- `0x182023fb0`
+
+## callees
+
+- `0x180023f5c`
+- `0x180030440`
+- `0x18004a750`
+- `0x18004ef98`
+- `0x1800526d0`
+- `0x1800540c4`
+- `0x18005414c`
+- `0x18005430c`
+- `0x18005ac80`
+- `0x1800603c4`
+- `0x18006fc08`
+- `0x18006fc8c`
+- `0x180070978`
+- `0x1800721e4`
+- `0x1800721f0`
+- `0x1800723b0`
+- `0x1800723f0`
+- `0x1800ac028`
+- `0x1800c8460`
+- `0x1800c8700`
+- `0x1800e7b10`
+- `0x1800f56cc`
+- `0x1800f70dc`
+- `0x1800f7118`
+- `0x180100c70`
+- `0x18010a450`
+- `0x18010a5a0`
+- `0x18010b258`
+- `0x18010b4e0`
+- `0x18010f290`
+- `0x18010f29c`
+- `0x18010fd38`
+- `0x180110200`
+- `0x180115ae4`
+- `0x180115c60`
+- `0x180115f30`
+- `0x18011b720`
+- `0x18011bec0`
+- `0x180126984`
+- `0x18012d8d4`
+- `0x1801304a4`
+- `0x18013098c`
+- `0x180130fd0`
+- `0x1801392a0`
+- `0x180139354`
+- `0x180140aa0`
+- `0x18014947c`
+- `0x18014ad60`
+- `0x1801516d8`
+- `0x1801848f8`
+
+## import_xrefs
+
+- `KERNEL32!TlsGetValue` at `0x18201c844`
+- `KERNEL32!TlsGetValue` at `0x18201c867`
+- `KERNEL32!TlsGetValue` at `0x18201c87b`
+- `KERNEL32!TlsGetValue` at `0x18201c88b`
+- `KERNEL32!TlsGetValue` at `0x18201c8c6`
+- `KERNEL32!TlsGetValue` at `0x18201c8ef`
+- `KERNEL32!TlsGetValue` at `0x18201c910`
+- `KERNEL32!TlsGetValue` at `0x18201c931`
+- `KERNEL32!TlsGetValue` at `0x18201c94c`
+- `KERNEL32!TlsGetValue` at `0x18201c95e`
+- `KERNEL32!TlsGetValue` at `0x18201ca84`
+- `KERNEL32!TlsGetValue` at `0x18201cdb2`
+- `KERNEL32!TlsGetValue` at `0x18201cdee`
+- `KERNEL32!TlsGetValue` at `0x18201cfda`
+- `KERNEL32!TlsGetValue` at `0x18201cffe`
+- `KERNEL32!TlsGetValue` at `0x18201d021`
+- `KERNEL32!TlsGetValue` at `0x18201d03b`
+- `KERNEL32!TlsGetValue` at `0x18201d0db`
+- `KERNEL32!TlsGetValue` at `0x18201df32`
+- `KERNEL32!TlsGetValue` at `0x18201df44`
+- `KERNEL32!TlsGetValue` at `0x18201efcc`
+- `KERNEL32!TlsGetValue` at `0x182020769`
+- `KERNEL32!TlsGetValue` at `0x18202077d`
+- `KERNEL32!TlsGetValue` at `0x182022ba4`
+- `KERNEL32!TlsGetValue` at `0x182022bb4`
+- `KERNEL32!TlsGetValue` at `0x18201c844`
+- `KERNEL32!TlsGetValue` at `0x18201c867`
+- `KERNEL32!TlsGetValue` at `0x18201c87b`
+- `KERNEL32!TlsGetValue` at `0x18201c88b`
+- `KERNEL32!TlsGetValue` at `0x18201c8c6`
+- `KERNEL32!TlsGetValue` at `0x18201c8ef`
+- `KERNEL32!TlsGetValue` at `0x18201c910`
+- `KERNEL32!TlsGetValue` at `0x18201c931`
+- `KERNEL32!TlsGetValue` at `0x18201c94c`
+- `KERNEL32!TlsGetValue` at `0x18201c95e`
+- `KERNEL32!TlsGetValue` at `0x18201ca84`
+- `KERNEL32!TlsGetValue` at `0x18201cdb2`
+- `KERNEL32!TlsGetValue` at `0x18201cdee`
+- `KERNEL32!TlsGetValue` at `0x18201cfda`
+- `KERNEL32!TlsGetValue` at `0x18201cffe`
+- `KERNEL32!TlsGetValue` at `0x18201d021`
+- `KERNEL32!TlsGetValue` at `0x18201d03b`
+- `KERNEL32!TlsGetValue` at `0x18201d0db`
+- `KERNEL32!TlsGetValue` at `0x18201df32`
+- `KERNEL32!TlsGetValue` at `0x18201df44`
+- `KERNEL32!TlsGetValue` at `0x18201efcc`
+- `KERNEL32!TlsGetValue` at `0x182020769`
+- `KERNEL32!TlsGetValue` at `0x18202077d`
+- `KERNEL32!TlsGetValue` at `0x182022ba4`
+- `KERNEL32!TlsGetValue` at `0x182022bb4`
+- `KERNEL32!GlobalReAlloc` at `0x18201db22`
+- `KERNEL32!GlobalReAlloc` at `0x18201db22`
+- `KERNEL32!GlobalFree` at `0x18201da43`
+- `KERNEL32!GlobalFree` at `0x18201db41`
+- `KERNEL32!GlobalFree` at `0x182020195`
+- `KERNEL32!GlobalFree` at `0x18201da43`
+- `KERNEL32!GlobalFree` at `0x18201db41`
+- `KERNEL32!GlobalFree` at `0x182020195`
+- `KERNEL32!LocalFileTimeToFileTime` at `0x182020fc8`
+- `KERNEL32!LocalFileTimeToFileTime` at `0x182020fc8`
+- `MSO!__imp_?MsoFPpvRealloc@@YAHPEAPEAX_J@Z` at `0x18202291e`
+- `MSO!__imp_?MsoFPpvRealloc@@YAHPEAPEAX_J@Z` at `0x18202291e`
+- `MSO!__imp_MsoFDocSumSetString` at `0x18202141a`
+- `MSO!__imp_MsoFDocSumSetString` at `0x18202141a`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201c57e`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201d4ee`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201d8c0`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201de3f`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201de83`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201c57e`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201d4ee`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201d8c0`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201de3f`
+- `MSO!__imp_?MsoFreePpv@@YAXPEAPEAX@Z` at `0x18201de83`
+- `MSO!__imp_MsoFUserDefAddProp` at `0x182021087`
+- `MSO!__imp_MsoFUserDefAddProp` at `0x182021087`
+- `MSO!__imp_MsoSumInfoSetSaveThumbnail` at `0x1820204d8`
+- `MSO!__imp_MsoSumInfoSetSaveThumbnail` at `0x1820204d8`
+- `Mso30Win32Client!__imp_?MsoHrHlinkCreateFromString@@YAJPEB_W00PEAUIHlinkSite@@KPEAUIUnknown@@AEBU_GUID@@PEAPEAXI@Z` at `0x18201f7b5`
+- `Mso30Win32Client!__imp_?MsoHrHlinkCreateFromString@@YAJPEB_W00PEAUIHlinkSite@@KPEAUIUnknown@@AEBU_GUID@@PEAPEAXI@Z` at `0x18201f7b5`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18201e905`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18201ecec`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18201eedd`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18201f37d`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1820221f3`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18201e905`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18201ecec`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18201eedd`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18201f37d`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1820221f3`
+- `Mso20Win32Client!__imp_?SendWarningTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18201efa0`
+- `Mso20Win32Client!__imp_?SendWarningTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18201efa0`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18201d3f2`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18201f272`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18201f6ca`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18201d3f2`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18201f272`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18201f6ca`
+
+## pseudocode
+
+```c
+
+```

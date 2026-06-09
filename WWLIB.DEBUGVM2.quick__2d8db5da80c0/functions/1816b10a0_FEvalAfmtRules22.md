@@ -1,0 +1,271 @@
+# FEvalAfmtRules22
+
+- ea: `0x1816b10a0`
+- end: `0x1816b646b`
+- name: `FEvalAfmtRules22`
+- size: `21451`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `49`
+- tags: ``
+
+## callees
+
+- `0x18004e6dc`
+- `0x1800721e4`
+- `0x1800723b0`
+- `0x1800dedf0`
+- `0x180102bc8`
+- `0x180140aa0`
+- `0x1801f07e0`
+- `0x1801f08d0`
+- `0x1801fa738`
+- `0x1802b193c`
+- `0x1802bc554`
+- `0x1802df0c0`
+- `0x18035bed4`
+- `0x1803ffcf4`
+- `0x180436dd0`
+- `0x180a18254`
+- `0x180a18ec4`
+- `0x180d8add8`
+- `0x180ec7db0`
+- `0x18110a15c`
+- `0x1816aa654`
+- `0x1816aa6f4`
+- `0x1816aa944`
+- `0x1816aaaa0`
+- `0x1816ab490`
+- `0x1816abb08`
+- `0x1816ac3d4`
+- `0x1816ac8b8`
+- `0x1816ac970`
+- `0x1816acc90`
+- `0x1816acd10`
+- `0x1816ad9e0`
+- `0x1816ada24`
+- `0x1816adba4`
+- `0x1816adcd8`
+- `0x1816ae29c`
+- `0x1816aedd4`
+- `0x1816b10a0`
+- `0x1816cee70`
+- `0x1816cf2d8`
+- `0x1816d0068`
+- `0x1816d0a58`
+- `0x1816d0c7c`
+- `0x1816d0d48`
+- `0x181c9ec10`
+- `0x181c9eff0`
+- `0x181c9f5dc`
+- `0x181ca0e20`
+- `0x181ca3a80`
+
+## import_xrefs
+
+- `KERNEL32!TlsGetValue` at `0x1816b1396`
+- `KERNEL32!TlsGetValue` at `0x1816b13ae`
+- `KERNEL32!TlsGetValue` at `0x1816b13c6`
+- `KERNEL32!TlsGetValue` at `0x1816b13db`
+- `KERNEL32!TlsGetValue` at `0x1816b142a`
+- `KERNEL32!TlsGetValue` at `0x1816b1445`
+- `KERNEL32!TlsGetValue` at `0x1816b1fbb`
+- `KERNEL32!TlsGetValue` at `0x1816b1fd0`
+- `KERNEL32!TlsGetValue` at `0x1816b1fe5`
+- `KERNEL32!TlsGetValue` at `0x1816b203b`
+- `KERNEL32!TlsGetValue` at `0x1816b204a`
+- `KERNEL32!TlsGetValue` at `0x1816b1396`
+- `KERNEL32!TlsGetValue` at `0x1816b13ae`
+- `KERNEL32!TlsGetValue` at `0x1816b13c6`
+- `KERNEL32!TlsGetValue` at `0x1816b13db`
+- `KERNEL32!TlsGetValue` at `0x1816b142a`
+- `KERNEL32!TlsGetValue` at `0x1816b1445`
+- `KERNEL32!TlsGetValue` at `0x1816b1fbb`
+- `KERNEL32!TlsGetValue` at `0x1816b1fd0`
+- `KERNEL32!TlsGetValue` at `0x1816b1fe5`
+- `KERNEL32!TlsGetValue` at `0x1816b203b`
+- `KERNEL32!TlsGetValue` at `0x1816b204a`
+- `Mso98Win32Client!__imp_MsoPushLprulDependents` at `0x1816b171b`
+- `Mso98Win32Client!__imp_MsoPushLprulDependents` at `0x1816b171b`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b1cb8`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b1ceb`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b1d20`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b1d67`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b28ed`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b1cb8`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b1ceb`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b1d20`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b1d67`
+- `Mso98Win32Client!__imp_MsoFAliasPrulPrul` at `0x1816b28ed`
+- `Mso98Win32Client!__imp_MsoSetCurrRulg` at `0x1816b3bfa`
+- `Mso98Win32Client!__imp_MsoSetCurrRulg` at `0x1816b3c0a`
+- `Mso98Win32Client!__imp_MsoSetCurrRulg` at `0x1816b3bfa`
+- `Mso98Win32Client!__imp_MsoSetCurrRulg` at `0x1816b3c0a`
+- `Mso98Win32Client!__imp_MsoPrultkFromDtk` at `0x1816b27ee`
+- `Mso98Win32Client!__imp_MsoPrultkFromDtk` at `0x1816b280b`
+- `Mso98Win32Client!__imp_MsoPrultkFromDtk` at `0x1816b31e4`
+- `Mso98Win32Client!__imp_MsoPrultkFromDtk` at `0x1816b27ee`
+- `Mso98Win32Client!__imp_MsoPrultkFromDtk` at `0x1816b280b`
+- `Mso98Win32Client!__imp_MsoPrultkFromDtk` at `0x1816b31e4`
+- `Mso98Win32Client!__imp_MsoDtkFindPrevToken` at `0x1816b31aa`
+- `Mso98Win32Client!__imp_MsoDtkFindPrevToken` at `0x1816b31c9`
+- `Mso98Win32Client!__imp_MsoDtkFindPrevToken` at `0x1816b31aa`
+- `Mso98Win32Client!__imp_MsoDtkFindPrevToken` at `0x1816b31c9`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b303c`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b304e`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b37de`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b37f0`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3804`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3c47`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3d2f`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3d40`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3d53`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b472d`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b473d`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b474f`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4761`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4e8c`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4e9e`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4eb2`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4fa2`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4fb3`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5286`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5296`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b52a8`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b52ba`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b56e1`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b56f4`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b570a`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5720`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5734`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5743`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5753`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5761`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5775`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5784`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5793`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b303c`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b304e`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b37de`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b37f0`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3804`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3c47`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3d2f`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3d40`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b3d53`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b472d`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b473d`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b474f`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4761`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4e8c`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4e9e`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4eb2`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4fa2`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b4fb3`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5286`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5296`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b52a8`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b52ba`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b56e1`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b56f4`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b570a`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5720`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5734`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5743`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5753`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5761`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5775`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5784`
+- `Mso98Win32Client!__imp_MsoSetElementRulv` at `0x1816b5793`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b1667`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2bac`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2bd3`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2cab`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2d12`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2d59`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2daf`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2e3e`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2ecc`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b383e`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b3ca5`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b4911`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b1667`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2bac`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2bd3`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2cab`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2d12`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2d59`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2daf`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2e3e`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b2ecc`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b383e`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b3ca5`
+- `Mso98Win32Client!__imp_MsoRulvElement` at `0x1816b4911`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b1c7f`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b2215`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b2a4d`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b4a21`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b6234`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b6245`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b6256`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b1c7f`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b2215`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b2a4d`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b4a21`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b6234`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b6245`
+- `Mso98Win32Client!__imp_MsoDelayScheduleIrul` at `0x1816b6256`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b11db`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b11fb`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1209`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b123b`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b128a`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1298`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b12b1`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b12e7`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b130c`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1323`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b15b1`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b15ca`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b15de`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1618`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1678`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b17cb`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1acc`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1afa`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1bac`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1c6e`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1d32`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1dff`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1e0d`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1e1b`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1e29`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1e79`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1ee7`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b2326`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b23a2`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b241e`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b4896`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b5032`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b5109`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b5d01`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b5dae`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b5e9e`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b11db`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b11fb`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1209`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b123b`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b128a`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1298`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b12b1`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b12e7`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b130c`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b1323`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b15b1`
+- `Mso98Win32Client!__imp_MsoSignalEventIrul` at `0x1816b15ca`
+
+## pseudocode
+
+```c
+
+```

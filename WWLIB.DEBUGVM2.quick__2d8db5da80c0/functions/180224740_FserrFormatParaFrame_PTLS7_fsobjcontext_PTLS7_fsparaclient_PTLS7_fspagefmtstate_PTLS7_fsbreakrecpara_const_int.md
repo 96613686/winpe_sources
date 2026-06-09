@@ -1,0 +1,183 @@
+# FserrFormatParaFrame(PTLS7::fsobjcontext *,PTLS7::fsparaclient *,PTLS7::fspagefmtstate *,PTLS7::fsbreakrecpara const *,int,PTLS7::fsnameclient *,long,int,int,int,ulong,PTLS7::tagFSRECT const *,PTLS7::fsmcsclient const *,PTLS7::_fskclear,PTLS7::_fsksuppresshardbreakbeforefirstpara,int,int,int,PTLS7::_fsfmtr *,PTLS7::fspara * *,PTLS7::fsbreakrecpara * *,long *,PTLS7::fsbaselineinfo *,PTLS7::_fsreuse *,PTLS7::fsmcsclient * *,PTLS7::_fskclear *,long *)
+
+- ea: `0x180224740`
+- end: `0x1802272f2`
+- name: `?FserrFormatParaFrame@@YAJPEAUfsobjcontext@PTLS7@@PEAUfsparaclient@2@PEAUfspagefmtstate@2@PEBUfsbreakrecpara@2@HPEAUfsnameclient@2@JHHHKPEBUtagFSRECT@2@PEBUfsmcsclient@2@W4_fskclear@2@W4_fsksuppresshardbreakbeforefirstpara@2@HHHPEAU_fsfmtr@2@PEAPEAUfspara@2@PEAPEAU52@PEAJPEAUfsbaselineinfo@2@PEAU_fsreuse@2@PEAPEAU82@PEAW492@PEAJ@Z`
+- size: `11186`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `39`
+- tags: `authz_impersonation`
+
+## callers
+
+- `0x180224590`
+
+## callees
+
+- `0x180020bbc`
+- `0x18002fdb4`
+- `0x180031c30`
+- `0x180047c48`
+- `0x18005263c`
+- `0x180058ffc`
+- `0x1800600b0`
+- `0x1800721e4`
+- `0x1800723b0`
+- `0x180126d84`
+- `0x1801e18c0`
+- `0x1801e4218`
+- `0x1801e467c`
+- `0x180222950`
+- `0x180224740`
+- `0x1802272f4`
+- `0x18022782c`
+- `0x1802282ac`
+- `0x180229634`
+- `0x1802336a0`
+- `0x180233cdc`
+- `0x180255580`
+- `0x180256908`
+- `0x180262cb0`
+- `0x1802694b8`
+- `0x180269ad0`
+- `0x18028cf98`
+- `0x18028d314`
+- `0x18028e3ac`
+- `0x180327b04`
+- `0x18034dbf0`
+- `0x18036aec8`
+- `0x18043a784`
+- `0x1804406b0`
+- `0x180bfd79c`
+- `0x180f6bb08`
+- `0x180fc3454`
+- `0x1810f8b7c`
+- `0x1814a1824`
+
+## import_xrefs
+
+- `KERNEL32!TlsGetValue` at `0x180224c10`
+- `KERNEL32!TlsGetValue` at `0x180224c98`
+- `KERNEL32!TlsGetValue` at `0x180224d03`
+- `KERNEL32!TlsGetValue` at `0x180224d6c`
+- `KERNEL32!TlsGetValue` at `0x180224df2`
+- `KERNEL32!TlsGetValue` at `0x180224e8f`
+- `KERNEL32!TlsGetValue` at `0x180224eb9`
+- `KERNEL32!TlsGetValue` at `0x180224ed2`
+- `KERNEL32!TlsGetValue` at `0x180224f01`
+- `KERNEL32!TlsGetValue` at `0x180224f10`
+- `KERNEL32!TlsGetValue` at `0x180224f47`
+- `KERNEL32!TlsGetValue` at `0x180224f81`
+- `KERNEL32!TlsGetValue` at `0x180224f9c`
+- `KERNEL32!TlsGetValue` at `0x1802251fc`
+- `KERNEL32!TlsGetValue` at `0x18022521a`
+- `KERNEL32!TlsGetValue` at `0x180225238`
+- `KERNEL32!TlsGetValue` at `0x180225256`
+- `KERNEL32!TlsGetValue` at `0x180225296`
+- `KERNEL32!TlsGetValue` at `0x1802252b6`
+- `KERNEL32!TlsGetValue` at `0x18022531c`
+- `KERNEL32!TlsGetValue` at `0x180225341`
+- `KERNEL32!TlsGetValue` at `0x180225cf4`
+- `KERNEL32!TlsGetValue` at `0x180225e32`
+- `KERNEL32!TlsGetValue` at `0x180225fe3`
+- `KERNEL32!TlsGetValue` at `0x180225fff`
+- `KERNEL32!TlsGetValue` at `0x180224c10`
+- `KERNEL32!TlsGetValue` at `0x180224c98`
+- `KERNEL32!TlsGetValue` at `0x180224d03`
+- `KERNEL32!TlsGetValue` at `0x180224d6c`
+- `KERNEL32!TlsGetValue` at `0x180224df2`
+- `KERNEL32!TlsGetValue` at `0x180224e8f`
+- `KERNEL32!TlsGetValue` at `0x180224eb9`
+- `KERNEL32!TlsGetValue` at `0x180224ed2`
+- `KERNEL32!TlsGetValue` at `0x180224f01`
+- `KERNEL32!TlsGetValue` at `0x180224f10`
+- `KERNEL32!TlsGetValue` at `0x180224f47`
+- `KERNEL32!TlsGetValue` at `0x180224f81`
+- `KERNEL32!TlsGetValue` at `0x180224f9c`
+- `KERNEL32!TlsGetValue` at `0x1802251fc`
+- `KERNEL32!TlsGetValue` at `0x18022521a`
+- `KERNEL32!TlsGetValue` at `0x180225238`
+- `KERNEL32!TlsGetValue` at `0x180225256`
+- `KERNEL32!TlsGetValue` at `0x180225296`
+- `KERNEL32!TlsGetValue` at `0x1802252b6`
+- `KERNEL32!TlsGetValue` at `0x18022531c`
+- `KERNEL32!TlsGetValue` at `0x180225341`
+- `KERNEL32!TlsGetValue` at `0x180225cf4`
+- `KERNEL32!TlsGetValue` at `0x180225e32`
+- `KERNEL32!TlsGetValue` at `0x180225fe3`
+- `KERNEL32!TlsGetValue` at `0x180225fff`
+- `mspts70!?FsAddFigureObstacle@PTLS7@@YAJPEAUfspagefmtstate@1@KPEBUfsfigobstinfo@1@W4fskfiguretype@1@PEAH@Z` at `0x180226ce0`
+- `mspts70!?FsAddFigureObstacle@PTLS7@@YAJPEAUfspagefmtstate@1@KPEBUfsfigobstinfo@1@W4fskfiguretype@1@PEAH@Z` at `0x180226ce0`
+- `mspts70!?FsSetFNewFormatIntoFmtState@PTLS7@@YAJPEAUfspagefmtstate@1@H@Z` at `0x180225577`
+- `mspts70!?FsSetFNewFormatIntoFmtState@PTLS7@@YAJPEAUfspagefmtstate@1@H@Z` at `0x180225577`
+- `mspts70!?FsCreateSubpage@PTLS7@@YAJPEAUfscontext@1@PEAUfspagefmtstate@1@PEBUfsbreakrecsubpage@1@HPEBUfsfmtsubpagein@1@PEAPEAUfssubpage@1@PEAUfsfmtout@1@PEAU_fsfmtr@1@PEAPEAU41@PEAPEAUfsmcsclient@1@@Z` at `0x180225768`
+- `mspts70!?FsCreateSubpage@PTLS7@@YAJPEAUfscontext@1@PEAUfspagefmtstate@1@PEBUfsbreakrecsubpage@1@HPEBUfsfmtsubpagein@1@PEAPEAUfssubpage@1@PEAUfsfmtout@1@PEAU_fsfmtr@1@PEAPEAU41@PEAPEAUfsmcsclient@1@@Z` at `0x180225768`
+- `mspts70!?FsGetColumnDimension@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSSHAFT@1@@Z` at `0x180225a87`
+- `mspts70!?FsGetColumnDimension@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSSHAFT@1@@Z` at `0x180225df1`
+- `mspts70!?FsGetColumnDimension@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSSHAFT@1@@Z` at `0x18022606b`
+- `mspts70!?FsGetColumnDimension@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSSHAFT@1@@Z` at `0x1802267ab`
+- `mspts70!?FsGetColumnDimension@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSSHAFT@1@@Z` at `0x180225a87`
+- `mspts70!?FsGetColumnDimension@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSSHAFT@1@@Z` at `0x180225df1`
+- `mspts70!?FsGetColumnDimension@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSSHAFT@1@@Z` at `0x18022606b`
+- `mspts70!?FsGetColumnDimension@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSSHAFT@1@@Z` at `0x1802267ab`
+- `mspts70!?FsAllocMemory@PTLS7@@YAJPEAUfscontext@1@JPEAPEAX@Z` at `0x180224971`
+- `mspts70!?FsAllocMemory@PTLS7@@YAJPEAUfscontext@1@JPEAPEAX@Z` at `0x180226540`
+- `mspts70!?FsAllocMemory@PTLS7@@YAJPEAUfscontext@1@JPEAPEAX@Z` at `0x180224971`
+- `mspts70!?FsAllocMemory@PTLS7@@YAJPEAUfscontext@1@JPEAPEAX@Z` at `0x180226540`
+- `mspts70!?FsGetFNewFormatFromFmtState@PTLS7@@YAJPEAUfspagefmtstate@1@PEAH@Z` at `0x18022495d`
+- `mspts70!?FsGetFNewFormatFromFmtState@PTLS7@@YAJPEAUfspagefmtstate@1@PEAH@Z` at `0x18022495d`
+- `mspts70!?FsResolveOverlap@PTLS7@@YAJPEAUfspagefmtstate@1@KPEBUtagFSRECT@1@PEAUfsnameclient@1@PEAUfsparaclient@1@PEBUfsoverlap@1@HPEAUtagFSVECTOR@1@@Z` at `0x180226291`
+- `mspts70!?FsResolveOverlap@PTLS7@@YAJPEAUfspagefmtstate@1@KPEBUtagFSRECT@1@PEAUfsnameclient@1@PEAUfsparaclient@1@PEBUfsoverlap@1@HPEAUtagFSVECTOR@1@@Z` at `0x1802263b1`
+- `mspts70!?FsResolveOverlap@PTLS7@@YAJPEAUfspagefmtstate@1@KPEBUtagFSRECT@1@PEAUfsnameclient@1@PEAUfsparaclient@1@PEBUfsoverlap@1@HPEAUtagFSVECTOR@1@@Z` at `0x180226291`
+- `mspts70!?FsResolveOverlap@PTLS7@@YAJPEAUfspagefmtstate@1@KPEBUtagFSRECT@1@PEAUfsnameclient@1@PEAUfsparaclient@1@PEBUfsoverlap@1@HPEAUtagFSVECTOR@1@@Z` at `0x1802263b1`
+- `mspts70!?FsGetFigureObstacleData@PTLS7@@YAJPEAUfspagefmtstate@1@PEAUfsnameclient@1@KPEAHPEAUfsflowaround@1@PEAUfsoverlap@1@PEAUtagFSPOINT@1@222@Z` at `0x180224bb1`
+- `mspts70!?FsGetFigureObstacleData@PTLS7@@YAJPEAUfspagefmtstate@1@PEAUfsnameclient@1@KPEAHPEAUfsflowaround@1@PEAUfsoverlap@1@PEAUtagFSPOINT@1@222@Z` at `0x180225bc1`
+- `mspts70!?FsGetFigureObstacleData@PTLS7@@YAJPEAUfspagefmtstate@1@PEAUfsnameclient@1@KPEAHPEAUfsflowaround@1@PEAUfsoverlap@1@PEAUtagFSPOINT@1@222@Z` at `0x180224bb1`
+- `mspts70!?FsGetFigureObstacleData@PTLS7@@YAJPEAUfspagefmtstate@1@PEAUfsnameclient@1@KPEAHPEAUfsflowaround@1@PEAUfsoverlap@1@PEAUtagFSPOINT@1@222@Z` at `0x180225bc1`
+- `mspts70!?FsFObstacleAllowed@PTLS7@@YAJPEAUfspagefmtstate@1@PEAUfsnameclient@1@PEAH@Z` at `0x180224a07`
+- `mspts70!?FsFObstacleAllowed@PTLS7@@YAJPEAUfspagefmtstate@1@PEAUfsnameclient@1@PEAH@Z` at `0x180224a07`
+- `mspts70!?FsGetClientHandle@PTLS7@@YAJPEAUfspagefmtstate@1@PEAPEAUfsgeomclient@1@@Z` at `0x180224b21`
+- `mspts70!?FsGetClientHandle@PTLS7@@YAJPEAUfspagefmtstate@1@PEAPEAUfsgeomclient@1@@Z` at `0x180224b21`
+- `mspts70!?FsGetPageRectangle@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSRECT@1@1@Z` at `0x180224ac5`
+- `mspts70!?FsGetPageRectangle@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSRECT@1@1@Z` at `0x180225a71`
+- `mspts70!?FsGetPageRectangle@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSRECT@1@1@Z` at `0x180225ddb`
+- `mspts70!?FsGetPageRectangle@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSRECT@1@1@Z` at `0x180224ac5`
+- `mspts70!?FsGetPageRectangle@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSRECT@1@1@Z` at `0x180225a71`
+- `mspts70!?FsGetPageRectangle@PTLS7@@YAJPEAUfspagefmtstate@1@KPEAUtagFSRECT@1@1@Z` at `0x180225ddb`
+- `mspts70!?FsGetVisibleRectangleSubpage@PTLS7@@YAJPEAUfscontext@1@PEAUfspagefmtstate@1@PEBUfssubpage@1@PEAKPEAUtagFSRECT@1@@Z` at `0x180227079`
+- `mspts70!?FsGetVisibleRectangleSubpage@PTLS7@@YAJPEAUfscontext@1@PEAUfspagefmtstate@1@PEBUfssubpage@1@PEAKPEAUtagFSRECT@1@@Z` at `0x180227079`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180224cc0`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x18022640a`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226433`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x18022680f`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x1802268f7`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226920`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226bcb`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226bf4`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226f8d`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226fb2`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x1802270a8`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x1802270cf`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180224cc0`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x18022640a`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226433`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x18022680f`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x1802268f7`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226920`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226bcb`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226bf4`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226f8d`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x180226fb2`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x1802270a8`
+- `mspts70!?FsTransformRectangle@PTLS7@@YAJKPEBUtagFSRECT@1@0KPEAU21@@Z` at `0x1802270cf`
+- `mspts70!?FsGetFBottomlessFromFmtState@PTLS7@@YAJPEAUfspagefmtstate@1@PEAH@Z` at `0x18022561c`
+- `mspts70!?FsGetFBottomlessFromFmtState@PTLS7@@YAJPEAUfspagefmtstate@1@PEAH@Z` at `0x18022561c`
+- `pagelayout!?AssignParentChildLink@Lexicon@LD@@QEAAXPEAUfsnameclient@PTLS7@@0@Z` at `0x180225426`
+- `pagelayout!?AssignParentChildLink@Lexicon@LD@@QEAAXPEAUfsnameclient@PTLS7@@0@Z` at `0x180225426`
+
+## pseudocode
+
+```c
+
+```

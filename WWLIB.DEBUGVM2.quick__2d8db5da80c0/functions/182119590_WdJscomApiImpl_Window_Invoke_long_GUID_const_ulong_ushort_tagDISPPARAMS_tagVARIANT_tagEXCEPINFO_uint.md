@@ -1,0 +1,155 @@
+# WdJscomApiImpl::Window::Invoke(long,_GUID const &,ulong,ushort,tagDISPPARAMS *,tagVARIANT *,tagEXCEPINFO *,uint *)
+
+- ea: `0x182119590`
+- end: `0x18211a2d3`
+- name: `?Invoke@Window@WdJscomApiImpl@@UEAAJJAEBU_GUID@@KGPEAUtagDISPPARAMS@@PEAUtagVARIANT@@PEAUtagEXCEPINFO@@PEAI@Z`
+- size: `3395`
+- prototype: `__int64 __usercall@<rax>(WdJscomApiImpl::Window *__hidden this@<rcx>, int@<edx>, const struct _GUID *@<r8>, unsigned int@<r9d>, unsigned __int16, struct tagDISPPARAMS *, struct tagVARIANT *, struct tagEXCEPINFO *, unsigned int *)`
+- caller_count: `0`
+- callee_count: `35`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x1804406b0`
+- `0x1804a0fb8`
+- `0x1804a14c4`
+- `0x1809314a0`
+- `0x180ee4644`
+- `0x181028160`
+- `0x182092800`
+- `0x18209462c`
+- `0x1820b2998`
+- `0x1820b5600`
+- `0x1820c3de4`
+- `0x1820c3f54`
+- `0x1820c3fbc`
+- `0x1820c5104`
+- `0x1820d80ec`
+- `0x1820d8418`
+- `0x1820d8740`
+- `0x1820d8b34`
+- `0x1820dc108`
+- `0x1820e8084`
+- `0x1820e80c8`
+- `0x1820e810c`
+- `0x1820f9150`
+- `0x182117a34`
+- `0x1821180f4`
+- `0x182118dfc`
+- `0x182119590`
+- `0x18211a2d4`
+- `0x18211a3d4`
+- `0x18211a5cc`
+- `0x18211a6cc`
+- `0x18211a73c`
+- `0x18211a7a4`
+- `0x18211a80c`
+- `0x18211a874`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_VariantInit` at `0x1821195bf`
+- `OLEAUT32!__imp_VariantInit` at `0x182119651`
+- `OLEAUT32!__imp_VariantInit` at `0x18211967c`
+- `OLEAUT32!__imp_VariantInit` at `0x182119686`
+- `OLEAUT32!__imp_VariantInit` at `0x1821196c5`
+- `OLEAUT32!__imp_VariantInit` at `0x1821196ed`
+- `OLEAUT32!__imp_VariantInit` at `0x1821196f7`
+- `OLEAUT32!__imp_VariantInit` at `0x182119761`
+- `OLEAUT32!__imp_VariantInit` at `0x18211976b`
+- `OLEAUT32!__imp_VariantInit` at `0x1821197ca`
+- `OLEAUT32!__imp_VariantInit` at `0x182119886`
+- `OLEAUT32!__imp_VariantInit` at `0x1821198d2`
+- `OLEAUT32!__imp_VariantInit` at `0x1821198fd`
+- `OLEAUT32!__imp_VariantInit` at `0x182119907`
+- `OLEAUT32!__imp_VariantInit` at `0x182119997`
+- `OLEAUT32!__imp_VariantInit` at `0x1821199c2`
+- `OLEAUT32!__imp_VariantInit` at `0x1821199cc`
+- `OLEAUT32!__imp_VariantInit` at `0x182119a1e`
+- `OLEAUT32!__imp_VariantInit` at `0x182119a41`
+- `OLEAUT32!__imp_VariantInit` at `0x182119a6c`
+- `OLEAUT32!__imp_VariantInit` at `0x182119a76`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ab5`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ae0`
+- `OLEAUT32!__imp_VariantInit` at `0x182119aea`
+- `OLEAUT32!__imp_VariantInit` at `0x182119b29`
+- `OLEAUT32!__imp_VariantInit` at `0x182119b54`
+- `OLEAUT32!__imp_VariantInit` at `0x182119b5e`
+- `OLEAUT32!__imp_VariantInit` at `0x182119b9d`
+- `OLEAUT32!__imp_VariantInit` at `0x182119bc8`
+- `OLEAUT32!__imp_VariantInit` at `0x182119bd2`
+- `OLEAUT32!__imp_VariantInit` at `0x182119c15`
+- `OLEAUT32!__imp_VariantInit` at `0x182119c35`
+- `OLEAUT32!__imp_VariantInit` at `0x182119c87`
+- `OLEAUT32!__imp_VariantInit` at `0x182119c91`
+- `OLEAUT32!__imp_VariantInit` at `0x182119cd0`
+- `OLEAUT32!__imp_VariantInit` at `0x182119cfb`
+- `OLEAUT32!__imp_VariantInit` at `0x182119d05`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ddb`
+- `OLEAUT32!__imp_VariantInit` at `0x182119e51`
+- `OLEAUT32!__imp_VariantInit` at `0x182119e7c`
+- `OLEAUT32!__imp_VariantInit` at `0x182119e86`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ec8`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ef3`
+- `OLEAUT32!__imp_VariantInit` at `0x182119efd`
+- `OLEAUT32!__imp_VariantInit` at `0x182119f3f`
+- `OLEAUT32!__imp_VariantInit` at `0x182119f6a`
+- `OLEAUT32!__imp_VariantInit` at `0x182119f74`
+- `OLEAUT32!__imp_VariantInit` at `0x182119fee`
+- `OLEAUT32!__imp_VariantInit` at `0x18211a015`
+- `OLEAUT32!__imp_VariantInit` at `0x1821195bf`
+- `OLEAUT32!__imp_VariantInit` at `0x182119651`
+- `OLEAUT32!__imp_VariantInit` at `0x18211967c`
+- `OLEAUT32!__imp_VariantInit` at `0x182119686`
+- `OLEAUT32!__imp_VariantInit` at `0x1821196c5`
+- `OLEAUT32!__imp_VariantInit` at `0x1821196ed`
+- `OLEAUT32!__imp_VariantInit` at `0x1821196f7`
+- `OLEAUT32!__imp_VariantInit` at `0x182119761`
+- `OLEAUT32!__imp_VariantInit` at `0x18211976b`
+- `OLEAUT32!__imp_VariantInit` at `0x1821197ca`
+- `OLEAUT32!__imp_VariantInit` at `0x182119886`
+- `OLEAUT32!__imp_VariantInit` at `0x1821198d2`
+- `OLEAUT32!__imp_VariantInit` at `0x1821198fd`
+- `OLEAUT32!__imp_VariantInit` at `0x182119907`
+- `OLEAUT32!__imp_VariantInit` at `0x182119997`
+- `OLEAUT32!__imp_VariantInit` at `0x1821199c2`
+- `OLEAUT32!__imp_VariantInit` at `0x1821199cc`
+- `OLEAUT32!__imp_VariantInit` at `0x182119a1e`
+- `OLEAUT32!__imp_VariantInit` at `0x182119a41`
+- `OLEAUT32!__imp_VariantInit` at `0x182119a6c`
+- `OLEAUT32!__imp_VariantInit` at `0x182119a76`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ab5`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ae0`
+- `OLEAUT32!__imp_VariantInit` at `0x182119aea`
+- `OLEAUT32!__imp_VariantInit` at `0x182119b29`
+- `OLEAUT32!__imp_VariantInit` at `0x182119b54`
+- `OLEAUT32!__imp_VariantInit` at `0x182119b5e`
+- `OLEAUT32!__imp_VariantInit` at `0x182119b9d`
+- `OLEAUT32!__imp_VariantInit` at `0x182119bc8`
+- `OLEAUT32!__imp_VariantInit` at `0x182119bd2`
+- `OLEAUT32!__imp_VariantInit` at `0x182119c15`
+- `OLEAUT32!__imp_VariantInit` at `0x182119c35`
+- `OLEAUT32!__imp_VariantInit` at `0x182119c87`
+- `OLEAUT32!__imp_VariantInit` at `0x182119c91`
+- `OLEAUT32!__imp_VariantInit` at `0x182119cd0`
+- `OLEAUT32!__imp_VariantInit` at `0x182119cfb`
+- `OLEAUT32!__imp_VariantInit` at `0x182119d05`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ddb`
+- `OLEAUT32!__imp_VariantInit` at `0x182119e51`
+- `OLEAUT32!__imp_VariantInit` at `0x182119e7c`
+- `OLEAUT32!__imp_VariantInit` at `0x182119e86`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ec8`
+- `OLEAUT32!__imp_VariantInit` at `0x182119ef3`
+- `OLEAUT32!__imp_VariantInit` at `0x182119efd`
+- `OLEAUT32!__imp_VariantInit` at `0x182119f3f`
+- `OLEAUT32!__imp_VariantInit` at `0x182119f6a`
+- `OLEAUT32!__imp_VariantInit` at `0x182119f74`
+- `OLEAUT32!__imp_VariantInit` at `0x182119fee`
+- `OLEAUT32!__imp_VariantInit` at `0x18211a015`
+
+## pseudocode
+
+```c
+
+```

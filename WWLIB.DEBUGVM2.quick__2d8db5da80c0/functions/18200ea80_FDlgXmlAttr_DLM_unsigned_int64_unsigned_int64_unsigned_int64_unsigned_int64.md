@@ -1,0 +1,197 @@
+# FDlgXmlAttr(DLM,unsigned __int64,unsigned __int64,unsigned __int64,unsigned __int64)
+
+- ea: `0x18200ea80`
+- end: `0x18200ff1d`
+- name: `?FDlgXmlAttr@@YAHW4DLM@@_K111@Z`
+- size: `5277`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `43`
+- tags: `registry_config, installer_update`
+
+## callees
+
+- `0x180071f0c`
+- `0x1800721e4`
+- `0x1800723b0`
+- `0x18010b4e0`
+- `0x180115ae4`
+- `0x1801317e8`
+- `0x180191548`
+- `0x1801feea0`
+- `0x1802afbe4`
+- `0x1802c28b0`
+- `0x1803601e8`
+- `0x18043a2b0`
+- `0x1804406b0`
+- `0x180469c14`
+- `0x18046a894`
+- `0x1804d24b0`
+- `0x1804ddf94`
+- `0x1804ddfdc`
+- `0x1804e2100`
+- `0x180525aa0`
+- `0x18054caa4`
+- `0x18054d164`
+- `0x18059bb28`
+- `0x1807d5c84`
+- `0x180945ef0`
+- `0x180d884d0`
+- `0x18107b2e0`
+- `0x181122c64`
+- `0x18114e2f4`
+- `0x18119a9fc`
+- `0x1811cea8c`
+- `0x18146bc18`
+- `0x181470370`
+- `0x1814704c8`
+- `0x1817c8450`
+- `0x181a3b3ac`
+- `0x181a3b4fc`
+- `0x181b7ad68`
+- `0x181db8094`
+- `0x181fe59a0`
+- `0x18200e594`
+- `0x18200ea80`
+- `0x18200ff20`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysFreeString` at `0x18200eeef`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200f115`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200f127`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200f9bf`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200fcba`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200fe27`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200eeef`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200f115`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200f127`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200f9bf`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200fcba`
+- `OLEAUT32!__imp_SysFreeString` at `0x18200fe27`
+- `MSO!__imp_?MsoFAutoLayoutCurDlg@@YA_NUtagPOINT@@@Z` at `0x18200f9e0`
+- `MSO!__imp_?MsoFAutoLayoutCurDlg@@YA_NUtagPOINT@@@Z` at `0x18200f9fe`
+- `MSO!__imp_?MsoFAutoLayoutCurDlg@@YA_NUtagPOINT@@@Z` at `0x18200f9e0`
+- `MSO!__imp_?MsoFAutoLayoutCurDlg@@YA_NUtagPOINT@@@Z` at `0x18200f9fe`
+- `MSO!__imp_?IEntryFindListBox@@YA_K_KPEB_WPEAW4LBC@@@Z` at `0x18200fc9a`
+- `MSO!__imp_?IEntryFindListBox@@YA_K_KPEB_WPEAW4LBC@@@Z` at `0x18200fdc9`
+- `MSO!__imp_?IEntryFindListBox@@YA_K_KPEB_WPEAW4LBC@@@Z` at `0x18200fc9a`
+- `MSO!__imp_?IEntryFindListBox@@YA_K_KPEB_WPEAW4LBC@@@Z` at `0x18200fdc9`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x18200f327`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x18200f327`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x18200eca3`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x18200f2e3`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x18200eca3`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x18200f2e3`
+- `MSO!__imp_?SetTmcTxs@@YAX_K0@Z` at `0x18200ef0d`
+- `MSO!__imp_?SetTmcTxs@@YAX_K0@Z` at `0x18200ef0d`
+- `MSO!__imp_?GetTmcText@@YAX_KPEA_W0@Z` at `0x18200ee87`
+- `MSO!__imp_?GetTmcText@@YAX_KPEA_W0@Z` at `0x18200ee87`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x18200eac4`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x18200eac4`
+- `MSO!__imp_?TmcGetFocus@@YA_KXZ` at `0x18200f316`
+- `MSO!__imp_?TmcGetFocus@@YA_KXZ` at `0x18200f353`
+- `MSO!__imp_?TmcGetFocus@@YA_KXZ` at `0x18200f316`
+- `MSO!__imp_?TmcGetFocus@@YA_KXZ` at `0x18200f353`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200f5b5`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200fa13`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200fcaf`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200fcdd`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200fdda`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200f5b5`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200fa13`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200fcaf`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200fcdd`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18200fdda`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x18200f882`
+- `MSO!__imp_?CentryListBoxTmc@@YA_K_K@Z` at `0x18200f882`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200ecb0`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200ecd7`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200f4dc`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200f5a2`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200f9a9`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200f9d7`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200fa9c`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200fc47`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200fcd2`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200fd9b`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200ecb0`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200ecd7`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200f4dc`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200f5a2`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200f9a9`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200f9d7`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200fa9c`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200fc47`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200fcd2`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x18200fd9b`
+- `MSO!__imp_?LimitTextTmc@@YAX_K0@Z` at `0x18200f5e5`
+- `MSO!__imp_?LimitTextTmc@@YAX_K0@Z` at `0x18200f5f9`
+- `MSO!__imp_?LimitTextTmc@@YAX_K0@Z` at `0x18200f5e5`
+- `MSO!__imp_?LimitTextTmc@@YAX_K0@Z` at `0x18200f5f9`
+- `MSO!__imp_?CchGetTmc@@YA_K_K@Z` at `0x18200ee44`
+- `MSO!__imp_?CchGetTmc@@YA_K_K@Z` at `0x18200ee44`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200eb77`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200ebc1`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200ec8f`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200f340`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200f8c3`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200fc0c`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200fe4c`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200eb77`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200ebc1`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200ec8f`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200f340`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200f8c3`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200fc0c`
+- `MSO!__imp_?SetDefaultTmc@@YAX_K@Z` at `0x18200fe4c`
+- `MSO!__imp_?MsoFSetupDalResizing@@YA_NHH_N@Z` at `0x18200f3e7`
+- `MSO!__imp_?MsoFSetupDalResizing@@YA_NHH_N@Z` at `0x18200f3e7`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200f9b4`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200f9c7`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200fc52`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200fcc2`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200fe1c`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200fe34`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200f9b4`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200f9c7`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200fc52`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200fcc2`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200fe1c`
+- `MSO!__imp_?SetReadOnlyTmc@@YAX_K_N@Z` at `0x18200fe34`
+- `MSO!__imp_?MsoSDMDALAutoLayoutCleanup@@YAXXZ` at `0x18200f37a`
+- `MSO!__imp_?MsoSDMDALAutoLayoutCleanup@@YAXXZ` at `0x18200f37a`
+- `MSO!__imp_?SetDlgCaption@@YAXPEB_W@Z` at `0x18200f4aa`
+- `MSO!__imp_?SetDlgCaption@@YAXPEB_W@Z` at `0x18200f4aa`
+- `MSO!__imp_?TmcGetDefault@@YA_K_N@Z` at `0x18200f333`
+- `MSO!__imp_?TmcGetDefault@@YA_K_N@Z` at `0x18200f365`
+- `MSO!__imp_?TmcGetDefault@@YA_K_N@Z` at `0x18200f333`
+- `MSO!__imp_?TmcGetDefault@@YA_K_N@Z` at `0x18200f365`
+- `USER32!SendMessageW` at `0x18200ec6e`
+- `USER32!SendMessageW` at `0x18200f28c`
+- `USER32!SendMessageW` at `0x18200f39f`
+- `USER32!SendMessageW` at `0x18200f3b8`
+- `USER32!SendMessageW` at `0x18200fb3b`
+- `USER32!SendMessageW` at `0x18200fbf7`
+- `USER32!SendMessageW` at `0x18200fe92`
+- `USER32!SendMessageW` at `0x18200febf`
+- `USER32!SendMessageW` at `0x18200ec6e`
+- `USER32!SendMessageW` at `0x18200f28c`
+- `USER32!SendMessageW` at `0x18200f39f`
+- `USER32!SendMessageW` at `0x18200f3b8`
+- `USER32!SendMessageW` at `0x18200fb3b`
+- `USER32!SendMessageW` at `0x18200fbf7`
+- `USER32!SendMessageW` at `0x18200fe92`
+- `USER32!SendMessageW` at `0x18200febf`
+- `USER32!SendMessageA` at `0x18200eff4`
+- `USER32!SendMessageA` at `0x18200fb66`
+- `USER32!SendMessageA` at `0x18200fd62`
+- `USER32!SendMessageA` at `0x18200eff4`
+- `USER32!SendMessageA` at `0x18200fb66`
+- `USER32!SendMessageA` at `0x18200fd62`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,200 @@
+# FUpdateRulerCore(WWD *,int,int,SELS &,SELS &)
+
+- ea: `0x180d6e360`
+- end: `0x180d704e2`
+- name: `?FUpdateRulerCore@@YA_NPEAVWWD@@HHAEAUSELS@@1@Z`
+- size: `8578`
+- prototype: `bool __usercall@<al>(struct WWD *@<rcx>, int@<edx>, int@<r8d>, struct SELS *@<r9>, struct SELS *)`
+- caller_count: `7`
+- callee_count: `77`
+- tags: `installer_update`
+
+## callers
+
+- `0x1805cdba0`
+- `0x180a9d508`
+- `0x180b0b394`
+- `0x180b0b840`
+- `0x180d6c0d0`
+- `0x180d6da54`
+- `0x18205124c`
+
+## callees
+
+- `0x180017380`
+- `0x180021e70`
+- `0x180023f7c`
+- `0x18002401c`
+- `0x180026fc0`
+- `0x180030318`
+- `0x180048698`
+- `0x18004bb70`
+- `0x18004e6dc`
+- `0x18004eea0`
+- `0x18004f244`
+- `0x18004fcd8`
+- `0x180050040`
+- `0x1800500c8`
+- `0x18005263c`
+- `0x18005414c`
+- `0x18005ac40`
+- `0x18005f42c`
+- `0x18005f484`
+- `0x18006f0f0`
+- `0x180070750`
+- `0x1800721e4`
+- `0x1800723b0`
+- `0x1800723df`
+- `0x180096270`
+- `0x1800a30c8`
+- `0x1800ac028`
+- `0x1800c24b8`
+- `0x1800ccc30`
+- `0x1800e9e44`
+- `0x1800f18b4`
+- `0x1800f75c8`
+- `0x1800f761c`
+- `0x18010048c`
+- `0x180101fe8`
+- `0x18010af0c`
+- `0x18010b2e0`
+- `0x18010b3c8`
+- `0x18010f848`
+- `0x1801e8fa0`
+- `0x1801f2e7c`
+- `0x18028165c`
+- `0x18028e5cc`
+- `0x18028f7ec`
+- `0x18028f8b4`
+- `0x180327dec`
+- `0x180338878`
+- `0x180365bc8`
+- `0x18036d77c`
+- `0x1803b2d5c`
+
+## import_xrefs
+
+- `KERNEL32!TlsGetValue` at `0x180d6e444`
+- `KERNEL32!TlsGetValue` at `0x180d6e658`
+- `KERNEL32!TlsGetValue` at `0x180d6e669`
+- `KERNEL32!TlsGetValue` at `0x180d6e7ba`
+- `KERNEL32!TlsGetValue` at `0x180d6ec27`
+- `KERNEL32!TlsGetValue` at `0x180d6ec45`
+- `KERNEL32!TlsGetValue` at `0x180d6ed39`
+- `KERNEL32!TlsGetValue` at `0x180d6ed64`
+- `KERNEL32!TlsGetValue` at `0x180d6ed87`
+- `KERNEL32!TlsGetValue` at `0x180d6ee2d`
+- `KERNEL32!TlsGetValue` at `0x180d6ef8a`
+- `KERNEL32!TlsGetValue` at `0x180d6efbd`
+- `KERNEL32!TlsGetValue` at `0x180d6f049`
+- `KERNEL32!TlsGetValue` at `0x180d6f06c`
+- `KERNEL32!TlsGetValue` at `0x180d6f0a1`
+- `KERNEL32!TlsGetValue` at `0x180d6f140`
+- `KERNEL32!TlsGetValue` at `0x180d6f168`
+- `KERNEL32!TlsGetValue` at `0x180d6f180`
+- `KERNEL32!TlsGetValue` at `0x180d6f596`
+- `KERNEL32!TlsGetValue` at `0x180d6f5c4`
+- `KERNEL32!TlsGetValue` at `0x180d6f5eb`
+- `KERNEL32!TlsGetValue` at `0x180d6f620`
+- `KERNEL32!TlsGetValue` at `0x180d6f63d`
+- `KERNEL32!TlsGetValue` at `0x180d6f65f`
+- `KERNEL32!TlsGetValue` at `0x180d6f683`
+- `KERNEL32!TlsGetValue` at `0x180d6f6a0`
+- `KERNEL32!TlsGetValue` at `0x180d6f6b3`
+- `KERNEL32!TlsGetValue` at `0x180d6f6e9`
+- `KERNEL32!TlsGetValue` at `0x180d6f6fc`
+- `KERNEL32!TlsGetValue` at `0x180d6f70f`
+- `KERNEL32!TlsGetValue` at `0x180d6f752`
+- `KERNEL32!TlsGetValue` at `0x180d6f76f`
+- `KERNEL32!TlsGetValue` at `0x180d6f789`
+- `KERNEL32!TlsGetValue` at `0x180d6f7b3`
+- `KERNEL32!TlsGetValue` at `0x180d6f7d8`
+- `KERNEL32!TlsGetValue` at `0x180d6f7f4`
+- `KERNEL32!TlsGetValue` at `0x180d6f81d`
+- `KERNEL32!TlsGetValue` at `0x180d6f83e`
+- `KERNEL32!TlsGetValue` at `0x180d6f85c`
+- `KERNEL32!TlsGetValue` at `0x180d6f87e`
+- `KERNEL32!TlsGetValue` at `0x180d6f8a0`
+- `KERNEL32!TlsGetValue` at `0x180d6f8bd`
+- `KERNEL32!TlsGetValue` at `0x180d6f8d0`
+- `KERNEL32!TlsGetValue` at `0x180d6f912`
+- `KERNEL32!TlsGetValue` at `0x180d6f925`
+- `KERNEL32!TlsGetValue` at `0x180d6f938`
+- `KERNEL32!TlsGetValue` at `0x180d6f9b2`
+- `KERNEL32!TlsGetValue` at `0x180d6f9d1`
+- `KERNEL32!TlsGetValue` at `0x180d6f9fc`
+- `KERNEL32!TlsGetValue` at `0x180d6fc42`
+- `KERNEL32!TlsGetValue` at `0x180d6fc5e`
+- `KERNEL32!TlsGetValue` at `0x180d6e444`
+- `KERNEL32!TlsGetValue` at `0x180d6e658`
+- `KERNEL32!TlsGetValue` at `0x180d6e669`
+- `KERNEL32!TlsGetValue` at `0x180d6e7ba`
+- `KERNEL32!TlsGetValue` at `0x180d6ec27`
+- `KERNEL32!TlsGetValue` at `0x180d6ec45`
+- `KERNEL32!TlsGetValue` at `0x180d6ed39`
+- `KERNEL32!TlsGetValue` at `0x180d6ed64`
+- `KERNEL32!TlsGetValue` at `0x180d6ed87`
+- `KERNEL32!TlsGetValue` at `0x180d6ee2d`
+- `KERNEL32!TlsGetValue` at `0x180d6ef8a`
+- `KERNEL32!TlsGetValue` at `0x180d6efbd`
+- `KERNEL32!TlsGetValue` at `0x180d6f049`
+- `KERNEL32!TlsGetValue` at `0x180d6f06c`
+- `KERNEL32!TlsGetValue` at `0x180d6f0a1`
+- `KERNEL32!TlsGetValue` at `0x180d6f140`
+- `KERNEL32!TlsGetValue` at `0x180d6f168`
+- `KERNEL32!TlsGetValue` at `0x180d6f180`
+- `KERNEL32!TlsGetValue` at `0x180d6f596`
+- `KERNEL32!TlsGetValue` at `0x180d6f5c4`
+- `KERNEL32!TlsGetValue` at `0x180d6f5eb`
+- `KERNEL32!TlsGetValue` at `0x180d6f620`
+- `KERNEL32!TlsGetValue` at `0x180d6f63d`
+- `KERNEL32!TlsGetValue` at `0x180d6f65f`
+- `KERNEL32!TlsGetValue` at `0x180d6f683`
+- `KERNEL32!TlsGetValue` at `0x180d6f6a0`
+- `KERNEL32!TlsGetValue` at `0x180d6f6b3`
+- `KERNEL32!TlsGetValue` at `0x180d6f6e9`
+- `KERNEL32!TlsGetValue` at `0x180d6f6fc`
+- `KERNEL32!TlsGetValue` at `0x180d6f70f`
+- `KERNEL32!TlsGetValue` at `0x180d6f752`
+- `KERNEL32!TlsGetValue` at `0x180d6f76f`
+- `KERNEL32!TlsGetValue` at `0x180d6f789`
+- `KERNEL32!TlsGetValue` at `0x180d6f7b3`
+- `KERNEL32!TlsGetValue` at `0x180d6f7d8`
+- `KERNEL32!TlsGetValue` at `0x180d6f7f4`
+- `KERNEL32!TlsGetValue` at `0x180d6f81d`
+- `KERNEL32!TlsGetValue` at `0x180d6f83e`
+- `KERNEL32!TlsGetValue` at `0x180d6f85c`
+- `KERNEL32!TlsGetValue` at `0x180d6f87e`
+- `KERNEL32!TlsGetValue` at `0x180d6f8a0`
+- `KERNEL32!TlsGetValue` at `0x180d6f8bd`
+- `KERNEL32!TlsGetValue` at `0x180d6f8d0`
+- `KERNEL32!TlsGetValue` at `0x180d6f912`
+- `KERNEL32!TlsGetValue` at `0x180d6f925`
+- `KERNEL32!TlsGetValue` at `0x180d6f938`
+- `KERNEL32!TlsGetValue` at `0x180d6f9b2`
+- `KERNEL32!TlsGetValue` at `0x180d6f9d1`
+- `KERNEL32!TlsGetValue` at `0x180d6f9fc`
+- `KERNEL32!TlsGetValue` at `0x180d6fc42`
+- `KERNEL32!TlsGetValue` at `0x180d6fc5e`
+- `USER32!EnableWindow` at `0x180d70229`
+- `USER32!EnableWindow` at `0x180d7024b`
+- `USER32!EnableWindow` at `0x180d70443`
+- `USER32!EnableWindow` at `0x180d70460`
+- `USER32!EnableWindow` at `0x180d70229`
+- `USER32!EnableWindow` at `0x180d7024b`
+- `USER32!EnableWindow` at `0x180d70443`
+- `USER32!EnableWindow` at `0x180d70460`
+- `USER32!IsWindowEnabled` at `0x180d70219`
+- `USER32!IsWindowEnabled` at `0x180d7023b`
+- `USER32!IsWindowEnabled` at `0x180d70434`
+- `USER32!IsWindowEnabled` at `0x180d70451`
+- `USER32!IsWindowEnabled` at `0x180d70219`
+- `USER32!IsWindowEnabled` at `0x180d7023b`
+- `USER32!IsWindowEnabled` at `0x180d70434`
+- `USER32!IsWindowEnabled` at `0x180d70451`
+
+## pseudocode
+
+```c
+
+```
