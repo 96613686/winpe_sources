@@ -1,0 +1,240 @@
+# DhcpCMProcessNewConnectionRequests
+
+- ea: `0x1800b0bb4`
+- end: `0x1800b1b71`
+- name: `DhcpCMProcessNewConnectionRequests`
+- size: `4029`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `11`
+- tags: ``
+
+## callers
+
+- `0x1800b02c0`
+
+## callees
+
+- `0x18000282c`
+- `0x180003228`
+- `0x1800058bc`
+- `0x18001c45c`
+- `0x1800aeb0c`
+- `0x1800aeeb4`
+- `0x1800af4e4`
+- `0x1800afc40`
+- `0x1800b0bb4`
+- `0x1800b3c9c`
+- `0x1800cdac0`
+
+## import_xrefs
+
+- `WS2_32!WSAConnect` at `0x1800b0ea6`
+- `WS2_32!WSAConnect` at `0x1800b0ea6`
+- `WS2_32!WSASetEvent` at `0x1800b0cd4`
+- `WS2_32!WSASetEvent` at `0x1800b0d19`
+- `WS2_32!WSASetEvent` at `0x1800b0dc1`
+- `WS2_32!WSASetEvent` at `0x1800b0e0a`
+- `WS2_32!WSASetEvent` at `0x1800b0eea`
+- `WS2_32!WSASetEvent` at `0x1800b0f65`
+- `WS2_32!WSASetEvent` at `0x1800b1021`
+- `WS2_32!WSASetEvent` at `0x1800b10f5`
+- `WS2_32!WSASetEvent` at `0x1800b113a`
+- `WS2_32!WSASetEvent` at `0x1800b1234`
+- `WS2_32!WSASetEvent` at `0x1800b1279`
+- `WS2_32!WSASetEvent` at `0x1800b12f1`
+- `WS2_32!WSASetEvent` at `0x1800b13d0`
+- `WS2_32!WSASetEvent` at `0x1800b1419`
+- `WS2_32!WSASetEvent` at `0x1800b14d8`
+- `WS2_32!WSASetEvent` at `0x1800b15b3`
+- `WS2_32!WSASetEvent` at `0x1800b165b`
+- `WS2_32!WSASetEvent` at `0x1800b172f`
+- `WS2_32!WSASetEvent` at `0x1800b17a2`
+- `WS2_32!WSASetEvent` at `0x1800b191f`
+- `WS2_32!WSASetEvent` at `0x1800b1a39`
+- `WS2_32!WSASetEvent` at `0x1800b1a69`
+- `WS2_32!WSASetEvent` at `0x1800b0cd4`
+- `WS2_32!WSASetEvent` at `0x1800b0d19`
+- `WS2_32!WSASetEvent` at `0x1800b0dc1`
+- `WS2_32!WSASetEvent` at `0x1800b0e0a`
+- `WS2_32!WSASetEvent` at `0x1800b0eea`
+- `WS2_32!WSASetEvent` at `0x1800b0f65`
+- `WS2_32!WSASetEvent` at `0x1800b1021`
+- `WS2_32!WSASetEvent` at `0x1800b10f5`
+- `WS2_32!WSASetEvent` at `0x1800b113a`
+- `WS2_32!WSASetEvent` at `0x1800b1234`
+- `WS2_32!WSASetEvent` at `0x1800b1279`
+- `WS2_32!WSASetEvent` at `0x1800b12f1`
+- `WS2_32!WSASetEvent` at `0x1800b13d0`
+- `WS2_32!WSASetEvent` at `0x1800b1419`
+- `WS2_32!WSASetEvent` at `0x1800b14d8`
+- `WS2_32!WSASetEvent` at `0x1800b15b3`
+- `WS2_32!WSASetEvent` at `0x1800b165b`
+- `WS2_32!WSASetEvent` at `0x1800b172f`
+- `WS2_32!WSASetEvent` at `0x1800b17a2`
+- `WS2_32!WSASetEvent` at `0x1800b191f`
+- `WS2_32!WSASetEvent` at `0x1800b1a39`
+- `WS2_32!WSASetEvent` at `0x1800b1a69`
+- `WS2_32!__imp_bind` at `0x1800b147e`
+- `WS2_32!__imp_bind` at `0x1800b147e`
+- `WS2_32!__imp_closesocket` at `0x1800b0d99`
+- `WS2_32!__imp_closesocket` at `0x1800b13a9`
+- `WS2_32!__imp_closesocket` at `0x1800b0d99`
+- `WS2_32!__imp_closesocket` at `0x1800b13a9`
+- `WS2_32!__imp_htonl` at `0x1800b0e54`
+- `WS2_32!__imp_htonl` at `0x1800b144b`
+- `WS2_32!__imp_htonl` at `0x1800b0e54`
+- `WS2_32!__imp_htonl` at `0x1800b144b`
+- `WS2_32!__imp_htons` at `0x1800b0e79`
+- `WS2_32!__imp_htons` at `0x1800b1461`
+- `WS2_32!__imp_htons` at `0x1800b0e79`
+- `WS2_32!__imp_htons` at `0x1800b1461`
+- `WS2_32!__imp_listen` at `0x1800b15e6`
+- `WS2_32!__imp_listen` at `0x1800b15e6`
+- `WS2_32!__imp_socket` at `0x1800b0c5f`
+- `WS2_32!__imp_socket` at `0x1800b11bf`
+- `WS2_32!__imp_socket` at `0x1800b0c5f`
+- `WS2_32!__imp_socket` at `0x1800b11bf`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0c78`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0ce4`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0d29`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0d88`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0dd1`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0e1e`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0eb7`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0efa`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0f75`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1031`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1105`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b114a`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b11d8`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1244`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1289`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1301`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1398`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b13e0`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b142d`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1493`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b14e8`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b15c7`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b15fd`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b166b`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1743`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b17b2`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b192f`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1a49`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1a79`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0c78`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0ce4`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0d29`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0d88`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0dd1`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0e1e`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0eb7`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0efa`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b0f75`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1031`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1105`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b114a`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b11d8`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1244`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1289`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1301`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1398`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b13e0`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b142d`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1493`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b14e8`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b15c7`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b15fd`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b166b`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1743`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b17b2`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b192f`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1a49`
+- `WS2_32!__imp_WSAGetLastError` at `0x1800b1a79`
+- `KERNEL32!ReleaseSRWLockExclusive` at `0x1800b0fcb`
+- `KERNEL32!ReleaseSRWLockExclusive` at `0x1800b153e`
+- `KERNEL32!ReleaseSRWLockExclusive` at `0x1800b16c1`
+- `KERNEL32!ReleaseSRWLockExclusive` at `0x1800b0fcb`
+- `KERNEL32!ReleaseSRWLockExclusive` at `0x1800b153e`
+- `KERNEL32!ReleaseSRWLockExclusive` at `0x1800b16c1`
+- `KERNEL32!AcquireSRWLockExclusive` at `0x1800b0fae`
+- `KERNEL32!AcquireSRWLockExclusive` at `0x1800b1521`
+- `KERNEL32!AcquireSRWLockExclusive` at `0x1800b16a4`
+- `KERNEL32!AcquireSRWLockExclusive` at `0x1800b0fae`
+- `KERNEL32!AcquireSRWLockExclusive` at `0x1800b1521`
+- `KERNEL32!AcquireSRWLockExclusive` at `0x1800b16a4`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b0d56`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b0e66`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b0f9f`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b10b7`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1176`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b12b5`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b132b`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1512`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1695`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b17de`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1885`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1aa5`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b0d56`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b0e66`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b0f9f`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b10b7`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1176`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b12b5`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b132b`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1512`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1695`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b17de`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1885`
+- `KERNEL32!ReleaseSRWLockShared` at `0x1800b1aa5`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0cbc`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0da9`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0e45`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0ed2`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0f4d`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1009`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b10a4`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b10dd`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b121c`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b12d9`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b13b8`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b14bd`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1597`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1640`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1713`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1787`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b186f`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b18aa`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1a1c`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0cbc`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0da9`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0e45`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0ed2`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b0f4d`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1009`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b10a4`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b10dd`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b121c`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b12d9`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b13b8`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b14bd`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1597`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1640`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1713`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1787`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b186f`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b18aa`
+- `KERNEL32!AcquireSRWLockShared` at `0x1800b1a1c`
+
+## string_xrefs
+
+- `0x1800b0fee`: `DeleteSocketFromGArray`
+- `0x1800b0ff5`: `DhcpCMMainThread`
+
+## pseudocode
+
+```c
+
+```

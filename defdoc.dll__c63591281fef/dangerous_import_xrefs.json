@@ -1,0 +1,71 @@
+[
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000168b",
+        "from_func": "0x180001644",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000168b",
+        "from_func": "0x180001644",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000272b",
+        "from_func": "0x180002504",
+        "from_func_name": "?DoWork@W3_DEFAULT_DOC_HANDLER@@QEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVDEFDOC_META_STORED_CONTEXT@@HKJ@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000298b",
+        "from_func": "0x180002504",
+        "from_func_name": "?DoWork@W3_DEFAULT_DOC_HANDLER@@QEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVDEFDOC_META_STORED_CONTEXT@@HKJ@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000272b",
+        "from_func": "0x180002504",
+        "from_func_name": "?DoWork@W3_DEFAULT_DOC_HANDLER@@QEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVDEFDOC_META_STORED_CONTEXT@@HKJ@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      },
+      {
+        "from_ea": "0x18000298b",
+        "from_func": "0x180002504",
+        "from_func_name": "?DoWork@W3_DEFAULT_DOC_HANDLER@@QEAA?AW4REQUEST_NOTIFICATION_STATUS@@PEAVIHttpContext@@PEAVDEFDOC_META_STORED_CONTEXT@@HKJ@Z",
+        "import": "iisutil!?Copy@STRU@@QEAAJPEBG@Z"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001740",
+        "from_func": "0x180001740",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  }
+]
