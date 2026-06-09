@@ -1,0 +1,828 @@
+# DispatchHelper::MarshalJsVarToVariantNoThrow(void *,tagVARIANT *,Js::ScriptContext *)
+
+- ea: `0x180026f4c`
+- end: `0x180027619`
+- name: `?MarshalJsVarToVariantNoThrow@DispatchHelper@@SAJPEAXPEAUtagVARIANT@@PEAVScriptContext@Js@@@Z`
+- size: `1741`
+- prototype: `__int64 __fastcall(void *, struct tagVARIANT *, struct Js::ScriptContext *)`
+- caller_count: `8`
+- callee_count: `11`
+- tags: `installer_update`
+
+## callers
+
+- `0x1800258e0`
+- `0x1801022e0`
+- `0x1801604ac`
+- `0x18016606c`
+- `0x180171810`
+- `0x1801d10a4`
+- `0x1801f6168`
+- `0x1801fa3b0`
+
+## callees
+
+- `0x1800044c8`
+- `0x180026f4c`
+- `0x1800280dc`
+- `0x18002814c`
+- `0x180043df0`
+- `0x18013e508`
+- `0x18017f3d0`
+- `0x180180650`
+- `0x180199be8`
+- `0x1801a4d20`
+- `0x18035e010`
+
+## import_xrefs
+
+- `KERNEL32!GetSystemTimeAsFileTime` at `0x180027192`
+- `KERNEL32!GetSystemTimeAsFileTime` at `0x1800271fa`
+- `KERNEL32!GetSystemTimeAsFileTime` at `0x180027192`
+- `KERNEL32!GetSystemTimeAsFileTime` at `0x1800271fa`
+- `KERNEL32!GetTickCount` at `0x180027019`
+- `KERNEL32!GetTickCount` at `0x18002720c`
+- `KERNEL32!GetTickCount` at `0x180027019`
+- `KERNEL32!GetTickCount` at `0x18002720c`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180027274`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x180027274`
+- `OLEAUT32!__imp_VariantInit` at `0x180027085`
+- `OLEAUT32!__imp_VariantInit` at `0x180027085`
+- `OLEAUT32!__imp_VariantCopy` at `0x180027502`
+- `OLEAUT32!__imp_VariantCopy` at `0x180027502`
+- `OLEAUT32!__imp_SafeArrayCopy` at `0x180027518`
+- `OLEAUT32!__imp_SafeArrayCopy` at `0x180027518`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=4
+__int64 __fastcall DispatchHelper::MarshalJsVarToVariantNoThrow(
+        unsigned __int64 a1,
+        struct tagVARIANT *a2,
+        void (__fastcall **a3)(struct Js::ScriptContext *))
+{
+  HRESULT v3; // r15d
+  void (__fastcall *v5)(struct Js::ScriptContext *); // rbx
+  __int64 v6; // rsi
+  int v7; // ecx
+  _DWORD *v8; // rax
+  void (__fastcall *v9)(struct Js::ScriptContext *); // rax
+  void (__fastcall *v10)(struct Js::ScriptContext *); // rbx
+  __int64 v11; // rcx
+  __int64 v12; // rdx
+  int v13; // ecx
+  int v14; // ecx
+  int v15; // ecx
+  int v16; // ecx
+  void (__fastcall *v17)(struct Js::ScriptContext *); // rbx
+  __int64 v19; // rax
+  __int64 v20; // rax
+  __int64 v21; // rcx
+  _QWORD *v22; // rax
+  __int64 v23; // rdi
+  DWORD TickCount; // eax
+  int v25; // ecx
+  int v26; // ecx
+  UINT v27; // esi
+  const OLECHAR *OriginalStringReference; // rax
+  BSTR v29; // rax
+  VARTYPE v30; // ax
+  double v31; // xmm0_8
+  __int64 v32; // rcx
+  void (__fastcall *v33)(struct Js::ScriptContext *); // rax
+  unsigned int v34; // eax
+  JsUtil::JobProcessor *v35; // rcx
+  int v36; // ecx
+  int v37; // ecx
+  int v38; // ecx
+  int v39; // ecx
+  int v40; // ecx
+  int v41; // ecx
+  int v42; // ecx
+  struct IDispatch *Dispatch; // rax
+  const VARIANTARG *v44; // rdx
+  int v45; // ecx
+  int v46; // ecx
+  bool v47; // zf
+  int v48; // ecx
+  int v49; // ecx
+  bool v50; // zf
+  bool v51; // zf
+  int v52; // ecx
+  int v53; // ecx
+  int v54; // ecx
+  int v55; // ecx
+  int v56; // ecx
+  struct Js::RecyclableObject *v57; // r8
+  int TypeId; // eax
+  char v59; // [rsp+20h] [rbp-98h]
+  __int64 v60; // [rsp+28h] [rbp-90h] BYREF
+  _QWORD v61[4]; // [rsp+30h] [rbp-88h] BYREF
+  _DWORD *v62; // [rsp+50h] [rbp-68h]
+  _QWORD *v63; // [rsp+58h] [rbp-60h]
+  __int16 v64; // [rsp+60h] [rbp-58h]
+  char v65; // [rsp+62h] [rbp-56h]
+  struct Js::ScriptContext *v66; // [rsp+68h] [rbp-50h]
+  __int64 v67; // [rsp+70h] [rbp-48h]
+  _QWORD *v68; // [rsp+78h] [rbp-40h] BYREF
+  _UNKNOWN *retaddr; // [rsp+B8h] [rbp+0h]
+
+  v67 = -2;
+  try
+  {
+    v3 = 0;
+    v61[0] = 0;
+    v61[2] = 0;
+    v62 = 0;
+    v66 = (struct Js::ScriptContext *)a3;
+    v63 = v61;
+    v64 = 0;
+    v59 = *((_BYTE *)a3 + 3136);
+    v65 = v59;
+    v61[1] = retaddr;
+    v61[3] = a3;
+    v5 = a3[148];
+    v6 = *((_QWORD *)v5 + 72);
+    if ( (byte_180439DC1 & 0x10) != 0 )
+      McTemplateU0pq_EventWriteTransfer(&BERP_IE_Context, &JSCRIPT_RUN_START, a3[148], 0);
+    v7 = *((_DWORD *)v5 + 22);
+    *((_DWORD *)v5 + 22) = v7 + 1;
+    if ( !v7 )
+    {
+      GetSystemTimeAsFileTime(*((LPFILETIME *)v5 + 1738));
+      v23 = *((_QWORD *)v5 + 1745);
+      if ( v23 )
+      {
+        TickCount = GetTickCount();
+        *(_DWORD *)(v23 + 16) = TickCount;
+        *(_DWORD *)(v23 + 20) = TickCount;
+      }
+      *(_BYTE *)(v6 + 12896) = 1;
+    }
+    v8 = (_DWORD *)*((_QWORD *)v5 + 78);
+    if ( v8 )
+    {
+      *v8 |= 2u;
+      v62 = v8;
+    }
+    *((_QWORD *)v5 + 78) = v61;
+    *((_BYTE *)v5 + 8849) = 1;
+    *(_BYTE *)(v6 + 12895) = 1;
+    *(_DWORD *)(v6 + 12884) = GetTickCount() + 300;
+    v9 = a3[337];
+    if ( v9 && *((_BYTE *)a3 + 3136) )
+    {
+      *((_BYTE *)a3 + 3136) = 0;
+      v9((struct Js::ScriptContext *)a3);
+    }
+    v10 = a3[297];
+    if ( v10 )
+    {
+      v11 = *((_QWORD *)v10 + 9);
+      if ( *(_DWORD *)(*(_QWORD *)(v11 + 1184) + 88LL) <= 2u
+        && (unsigned int)(*((_DWORD *)v10 + 22) - 1) <= 0x1E
+        && !*((_BYTE *)v10 + 117)
+        && (*(_DWORD *)(v11 + 1196) != 2 || !byte_18043CDB0) )
+      {
+        v34 = *(_DWORD *)(v11 + 3144);
+        if ( v34 < 3 )
+        {
+          *(_DWORD *)(v11 + 3144) = v34 + 1;
+          if ( !*(_BYTE *)(*((_QWORD *)v10 + 9) + 2748LL) )
+          {
+            v60 = 0;
+            if ( (byte_180439DC1 & 8) != 0 )
+              McTemplateU0pq_EventWriteTransfer(&BERP_IE_Context, &JSCRIPT_NATIVECODEGEN_DELAY_START, &v60, 0);
+            v35 = (JsUtil::JobProcessor *)*((_QWORD *)v10 + 3);
+            if ( *((_BYTE *)v35 + 8) )
+              JsUtil::BackgroundJobProcessor::PrioritizeManagerAndWait<NativeCodeGenerator>(v35);
+            else
+              JsUtil::ForegroundJobProcessor::PrioritizeManagerAndWait<NativeCodeGenerator>(v35, v10);
+            if ( (byte_180439DC1 & 8) != 0 )
+              McTemplateU0pq_EventWriteTransfer(&BERP_IE_Context, &JSCRIPT_NATIVECODEGEN_DELAY_STOP, &v60, 0);
+          }
+        }
+      }
+    }
+    VariantInit(a2);
+    if ( !a1 )
+      goto LABEL_33;
+    if ( HIWORD(a1) == 1 )
+    {
+LABEL_26:
+      a2->vt = 3;
+      a2->lVal = a1;
+      goto LABEL_27;
+    }
+    if ( a1 >= 0x4000000000000LL )
+      goto LABEL_43;
+    v12 = *(_QWORD *)(a1 + 8);
+    v13 = *(_DWORD *)v12;
+    if ( *(int *)v12 > 26 )
+    {
+      if ( v13 <= 40 )
+      {
+        if ( v13 == 40 )
+          goto LABEL_78;
+        if ( v13 <= 34 )
+        {
+          if ( v13 == 34 )
+            goto LABEL_78;
+          v53 = v13 - 27;
+          if ( !v53 )
+            goto LABEL_78;
+          v54 = v53 - 1;
+          if ( !v54 )
+            goto LABEL_78;
+          v55 = v54 - 1;
+          if ( !v55 )
+            goto LABEL_78;
+          v56 = v55 - 1;
+          if ( !v56 )
+            goto LABEL_78;
+          v39 = v56 - 2;
+          v50 = v39 == 0;
+          goto LABEL_105;
+        }
+        v52 = v13 - 35;
+        v51 = v52 == 0;
+      }
+      else
+      {
+        if ( v13 > 46 )
+        {
+          v36 = v13 - 47;
+          if ( !v36 )
+            goto LABEL_78;
+          v37 = v36 - 1;
+          if ( !v37 )
+            goto LABEL_78;
+          v38 = v37 - 1;
+          if ( !v38 )
+            goto LABEL_78;
+          v39 = v38 - 1;
+          if ( !v39 )
+            goto LABEL_77;
+LABEL_76:
+          if ( v39 != 1 )
+            goto LABEL_77;
+          goto LABEL_78;
+        }
+        if ( v13 == 46 )
+          goto LABEL_78;
+        v52 = v13 - 41;
+        v51 = v52 == 0;
+      }
+    }
+    else
+    {
+      if ( v13 == 26 )
+        goto LABEL_78;
+      if ( v13 <= 12 )
+      {
+        if ( v13 != 12 )
+        {
+          if ( v13 <= 6 )
+          {
+            if ( v13 == 6 )
+            {
+              a2->vt = 5;
+              v32 = *(_QWORD *)(a1 + 16);
+              if ( v32 < 0 )
+                v31 = (double)(int)(v32 & 1 | ((unsigned __int64)v32 >> 1))
+                    + (double)(int)(v32 & 1 | ((unsigned __int64)v32 >> 1));
+              else
+                v31 = (double)(int)v32;
+              goto LABEL_53;
+            }
+            if ( v13 )
+            {
+              v14 = v13 - 1;
+              if ( v14 )
+              {
+                v15 = v14 - 1;
+                if ( !v15 )
+                {
+                  a2->vt = 11;
+                  a2->iVal = -(*(_DWORD *)(a1 + 16) != 0);
+                  goto LABEL_27;
+                }
+                v16 = v15 - 1;
+                if ( !v16 )
+                  goto LABEL_26;
+                v25 = v16 - 1;
+                if ( !v25 )
+                {
+LABEL_43:
+                  a2->vt = 5;
+                  a2->llVal = a1 ^ 0xFFFC000000000000uLL;
+                  goto LABEL_27;
+                }
+                if ( v25 == 1 )
+                {
+                  a2->vt = 5;
+                  v31 = (double)(int)*(_QWORD *)(a1 + 16);
+LABEL_53:
+                  a2->dblVal = v31;
+                  goto LABEL_27;
+                }
+                goto LABEL_77;
+              }
+LABEL_33:
+              a2->vt = 1;
+              goto LABEL_27;
+            }
+            v30 = 0;
+LABEL_50:
+            a2->vt = v30;
+            goto LABEL_27;
+          }
+          v26 = v13 - 7;
+          if ( !v26 )
+          {
+            if ( a1 == *(_QWORD *)(*(_QWORD *)(v12 + 8) + 3224LL) )
+            {
+              a2->llVal = 0;
+            }
+            else
+            {
+              v27 = *(_DWORD *)(a1 + 16);
+              OriginalStringReference = (const OLECHAR *)Js::JavascriptString::GetOriginalStringReference((Js::JavascriptString *)a1);
+              v29 = SysAllocStringLen(OriginalStringReference, v27);
+              a2->llVal = (LONGLONG)v29;
+              if ( !v29 )
+                v3 = -2147024882;
+            }
+            a2->vt = 8;
+            goto LABEL_27;
+          }
+          v40 = v26 - 1;
+          if ( v40 )
+          {
+            v41 = v40 - 1;
+            if ( !v41 )
+            {
+              v3 = SafeArrayCopy(*(SAFEARRAY **)(a1 + 24), &a2->parray);
+              if ( v3 < 0 )
+                goto LABEL_27;
+              v30 = *(_WORD *)(a1 + 16);
+              goto LABEL_50;
+            }
+            v42 = v41 - 1;
+            if ( !v42 )
+            {
+              a2->vt = 7;
+              Dispatch = *(struct IDispatch **)(a1 + 16);
+LABEL_91:
+              a2->llVal = (LONGLONG)Dispatch;
+              goto LABEL_27;
+            }
+            if ( v42 == 1 )
+            {
+              Dispatch = HostDispatch::GetDispatch((HostDispatch *)a1);
+              if ( !Dispatch )
+              {
+                v44 = (const VARIANTARG *)((*(_QWORD *)(*(_QWORD *)(a1 + 24) + 16LL) + 16LL)
+                                         & -(__int64)(*(_QWORD *)(*(_QWORD *)(a1 + 24) + 16LL) != 0));
+                if ( v44 )
+                  v3 = VariantCopy(a2, v44);
+                else
+                  v3 = MapHr(-2147024891, 0);
+                goto LABEL_27;
+              }
+              a2->vt = 9;
+              goto LABEL_91;
+            }
+          }
+LABEL_77:
+          if ( (*(unsigned int (__fastcall **)(unsigned __int64))(*(_QWORD *)a1 + 504LL))(a1) )
+            goto LABEL_78;
+          v3 = -2147467263;
+LABEL_27:
+          if ( v59 )
+          {
+            v33 = a3[338];
+            if ( v33 )
+              v33((struct Js::ScriptContext *)a3);
+          }
+          v17 = a3[148];
+          *((_QWORD *)v17 + 78) = *(_QWORD *)(*((_QWORD *)v17 + 78) + 32LL);
+          *((_BYTE *)v17 + 8849) = 0;
+          *(_BYTE *)(*((_QWORD *)v17 + 72) + 12895LL) = 0;
+          v47 = (*((_DWORD *)v17 + 22))-- == 1;
+          if ( v47 )
+          {
+            GetSystemTimeAsFileTime((LPFILETIME)(*((_QWORD *)v17 + 1738) + 8LL));
+            *(_BYTE *)(*((_QWORD *)v17 + 72) + 12896LL) = 0;
+            v19 = *((_QWORD *)v17 + 1745);
+            if ( v19 )
+              *(_QWORD *)(v19 + 16) = 0;
+            ThreadContext::ClosePendingProjectionContexts((ThreadContext *)v17);
+            ThreadContext::ClosePendingScriptContexts((ThreadContext *)v17);
+            v20 = *((_QWORD *)v17 + 228);
+            v21 = *(_QWORD *)(v20 + 472);
+            *(_QWORD *)(v20 + 472) = 0;
+            while ( v21 )
+            {
+              v22 = (_QWORD *)(v21 + 208);
+              v21 = *(_QWORD *)(v21 + 208);
+              *v22 = 0;
+            }
+          }
+          if ( (byte_180439DC1 & 0x10) != 0 )
+            McTemplateU0pq_EventWriteTransfer(&BERP_IE_Context, &JSCRIPT_RUN_STOP, v17, 0);
+          LODWORD(v60) = v3;
+          return (unsigned int)v60;
+        }
+LABEL_78:
+        DispatchHelper::MarshalJsVarToDispatchVariant((void *)a1, a2);
+        goto LABEL_27;
+      }
+      if ( v13 <= 20 )
+      {
+        if ( v13 == 20 )
+          goto LABEL_78;
+        v45 = v13 - 13;
+        if ( !v45 )
+          goto LABEL_78;
+        v46 = v45 - 1;
+        if ( !v46 )
+          goto LABEL_78;
+        v48 = v46 - 2;
+        v47 = v48 == 0;
+LABEL_102:
+        if ( v47 )
+          goto LABEL_78;
+        v49 = v48 - 1;
+        if ( !v49 )
+          goto LABEL_78;
+        v39 = v49 - 1;
+        v50 = v39 == 0;
+LABEL_105:
+        if ( v50 )
+          goto LABEL_78;
+        goto LABEL_76;
+      }
+      v52 = v13 - 21;
+      v51 = v52 == 0;
+    }
+    if ( v51 )
+      goto LABEL_78;
+    v48 = v52 - 1;
+    v47 = v48 == 0;
+    goto LABEL_102;
+  }
+  catch ( Js::InternalErrorException )
+  {
+    LODWORD(v60) = -2147467259;
+    return (unsigned int)v60;
+  }
+  catch ( Js::OutOfMemoryException )
+  {
+    LODWORD(v60) = -2147024882;
+    return (unsigned int)v60;
+  }
+  catch ( Js::StackOverflowException )
+  {
+    LODWORD(v60) = -2146828260;
+    return (unsigned int)v60;
+  }
+  catch ( Js::NotImplementedException )
+  {
+    LODWORD(v60) = -2147467263;
+    return (unsigned int)v60;
+  }
+  catch ( Js::ScriptAbortException )
+  {
+    LODWORD(v60) = -2147467260;
+    return (unsigned int)v60;
+  }
+  catch ( Js::JavascriptExceptionObject *v68 )
+  {
+    if ( *v68
+      && ((unsigned int)Js::JavascriptOperators::GetTypeId(*v68) == 23
+       || (TypeId = Js::JavascriptOperators::GetTypeId(v57), TypeId == 11)) )
+    {
+      LODWORD(v60) = Js::JavascriptError::GetRuntimeErrorWithScriptEnter(v57, 0);
+    }
+    else
+    {
+      LODWORD(v60) = -2147024882;
+    }
+    return (unsigned int)v60;
+  }
+  catch ( ... )
+  {
+    LODWORD(v60) = -2147467259;
+  }
+  return (unsigned int)v60;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180026f4c  mov     r11, rsp
+0x180026f4f  mov     [r11+18h], r8
+0x180026f53  mov     [r11+10h], rdx
+0x180026f57  mov     [r11+8], rcx
+0x180026f5b  push    rbx
+0x180026f5c  push    rsi
+0x180026f5d  push    rdi
+0x180026f5e  push    r12
+0x180026f60  push    r13
+0x180026f62  push    r14
+0x180026f64  push    r15
+0x180026f66  sub     rsp, 80h
+0x180026f6d  mov     qword ptr [r11-48h], 0FFFFFFFFFFFFFFFEh
+0x180026f75  xor     r15d, r15d
+0x180026f78  mov     [rsp+0B8h+var_88], r15
+0x180026f7d  mov     [r11-78h], r15
+0x180026f81  mov     [r11-68h], r15
+0x180026f85  mov     rax, [rsp+0B8h]
+0x180026f8d  mov     r13, r8
+0x180026f90  mov     [r11-50h], r8
+0x180026f94  lea     rcx, [rsp+0B8h+var_88]
+0x180026f99  mov     [r11-60h], rcx
+0x180026f9d  mov     [r11-58h], r15w
+0x180026fa2  mov     cl, [r8+0C40h]
+0x180026fa9  mov     [rsp+0B8h+var_98], cl
+0x180026fad  mov     [rsp+0B8h+var_56], cl
+0x180026fb1  mov     [r11-80h], rax
+0x180026fb5  mov     [r11-70h], r8
+0x180026fb9  mov     rbx, [r8+4A0h]
+0x180026fc0  mov     rsi, [rbx+240h]
+0x180026fc7  test    cs:byte_180439DC1, 10h
+0x180026fce  jnz     loc_180027438
+0x180026fd4  mov     ecx, [rbx+58h]
+0x180026fd7  lea     eax, [rcx+1]
+0x180026fda  mov     [rbx+58h], eax
+0x180026fdd  test    ecx, ecx
+0x180026fdf  jz      loc_1800271F3
+0x180026fe5  mov     r14d, 1
+0x180026feb  mov     rax, [rbx+270h]
+0x180026ff2  test    rax, rax
+0x180026ff5  jz      short loc_180026FFF
+0x180026ff7  or      dword ptr [rax], 2
+0x180026ffa  mov     [rsp+0B8h+var_68], rax
+0x180026fff  lea     rax, [rsp+0B8h+var_88]
+0x180027004  mov     [rbx+270h], rax
+0x18002700b  mov     [rbx+2291h], r14b
+0x180027012  mov     [rsi+325Fh], r14b
+0x180027019  call    cs:__imp_GetTickCount
+0x18002701f  add     eax, 12Ch
+0x180027024  mov     [rsi+3254h], eax
+0x18002702a  mov     rax, [r13+0A88h]
+0x180027031  test    rax, rax
+0x180027034  jz      short loc_180027043
+0x180027036  cmp     [r13+0C40h], r15b
+0x18002703d  jnz     loc_1800272C8
+0x180027043  mov     rbx, [r13+948h]
+0x18002704a  test    rbx, rbx
+0x18002704d  jz      short loc_18002706F
+0x18002704f  mov     rcx, [rbx+48h]
+0x180027053  mov     rax, [rcx+4A0h]
+0x18002705a  cmp     dword ptr [rax+58h], 2
+0x18002705e  ja      short loc_18002706F
+0x180027060  mov     eax, [rbx+58h]
+0x180027063  sub     eax, r14d
+0x180027066  cmp     eax, 1Eh
+0x180027069  jbe     loc_180027315
+0x18002706f  mov     esi, 3
+0x180027074  mov     r12d, 8
+0x18002707a  mov     rbx, [rsp+0B8h+pvarg]
+0x180027082  mov     rcx, rbx; pvarg
+0x180027085  call    cs:__imp_VariantInit
+0x18002708b  mov     rdi, [rsp+0B8h+arg_0]
+0x180027093  test    rdi, rdi
+0x180027096  jz      loc_180027182
+0x18002709c  mov     rax, rdi
+0x18002709f  shr     rax, 30h
+0x1800270a3  cmp     rax, r14
+0x1800270a6  jz      short loc_180027111
+0x1800270a8  mov     rax, 4000000000000h
+0x1800270b2  cmp     rdi, rax
+0x1800270b5  jnb     loc_18002722F
+0x1800270bb  mov     rdx, [rdi+8]
+0x1800270bf  mov     ecx, [rdx]
+0x1800270c1  cmp     ecx, 1Ah
+0x1800270c4  jg      loc_1800273AD
+0x1800270ca  jz      loc_1800273F2
+0x1800270d0  cmp     ecx, 0Ch
+0x1800270d3  jg      loc_180027532
+0x1800270d9  jz      loc_1800273F2
+0x1800270df  cmp     ecx, 6
+0x1800270e2  jg      loc_18002724A
+0x1800270e8  jz      loc_1800272DC
+0x1800270ee  test    ecx, ecx
+0x1800270f0  jz      loc_180027293
+0x1800270f6  sub     ecx, 1
+0x1800270f9  jz      loc_180027182
+0x1800270ff  sub     ecx, 1
+0x180027102  jz      loc_180027397
+0x180027108  sub     ecx, 1
+0x18002710b  jnz     loc_18002722A
+0x180027111  mov     [rbx], si
+0x180027114  mov     [rbx+8], edi
+0x180027117  cmp     [rsp+0B8h+var_98], 0
+0x18002711c  jnz     loc_1800272F8
+0x180027122  mov     rbx, [r13+4A0h]
+0x180027129  mov     rax, [rbx+270h]
+0x180027130  mov     rcx, [rax+20h]
+0x180027134  mov     [rbx+270h], rcx
+0x18002713b  xor     r13d, r13d
+0x18002713e  mov     [rbx+2291h], r13b
+0x180027145  mov     rax, [rbx+240h]
+0x18002714c  mov     [rax+325Fh], r13b
+0x180027153  add     dword ptr [rbx+58h], 0FFFFFFFFh
+0x180027157  jz      short loc_180027188
+0x180027159  test    cs:byte_180439DC1, 10h
+0x180027160  jnz     loc_1800275D8
+0x180027166  mov     dword ptr [rsp+0B8h+var_90], r15d
+0x18002716b  mov     eax, dword ptr [rsp+0B8h+var_90]
+0x18002716f  add     rsp, 80h
+0x180027176  pop     r15
+0x180027178  pop     r14
+0x18002717a  pop     r13
+0x18002717c  pop     r12
+0x18002717e  pop     rdi
+0x18002717f  pop     rsi
+0x180027180  pop     rbx
+0x180027181  retn
+0x180027182  mov     [rbx], r14w
+0x180027186  jmp     short loc_180027117
+0x180027188  mov     rcx, [rbx+3650h]
+0x18002718f  add     rcx, r12; lpSystemTimeAsFileTime
+0x180027192  call    cs:__imp_GetSystemTimeAsFileTime
+0x180027198  mov     rax, [rbx+240h]
+0x18002719f  mov     [rax+3260h], r13b
+0x1800271a6  mov     rax, [rbx+3688h]
+0x1800271ad  test    rax, rax
+0x1800271b0  jz      short loc_1800271B6
+0x1800271b2  mov     [rax+10h], r13
+0x1800271b6  mov     rcx, rbx; this
+0x1800271b9  call    ?ClosePendingProjectionContexts@ThreadContext@@QEAAXXZ; ThreadContext::ClosePendingProjectionContexts(void)
+0x1800271be  mov     rcx, rbx; this
+0x1800271c1  call    ?ClosePendingScriptContexts@ThreadContext@@QEAAXXZ; ThreadContext::ClosePendingScriptContexts(void)
+0x1800271c6  mov     rax, [rbx+720h]
+0x1800271cd  mov     rcx, [rax+1D8h]
+0x1800271d4  mov     [rax+1D8h], r13
+0x1800271db  test    rcx, rcx
+0x1800271de  jz      loc_180027159
+0x1800271e4  lea     rax, [rcx+0D0h]
+0x1800271eb  mov     rcx, [rax]
+0x1800271ee  mov     [rax], r13
+0x1800271f1  jmp     short loc_1800271DB
+0x1800271f3  mov     rcx, [rbx+3650h]; lpSystemTimeAsFileTime
+0x1800271fa  call    cs:__imp_GetSystemTimeAsFileTime
+0x180027200  mov     rdi, [rbx+3688h]
+0x180027207  test    rdi, rdi
+0x18002720a  jz      short loc_180027218
+0x18002720c  call    cs:__imp_GetTickCount
+0x180027212  mov     [rdi+10h], eax
+0x180027215  mov     [rdi+14h], eax
+0x180027218  mov     r14d, 1
+0x18002721e  mov     [rsi+3260h], r14b
+0x180027225  jmp     loc_180026FEB
+0x18002722a  sub     ecx, 1
+0x18002722d  jnz     short loc_18002729D
+0x18002722f  mov     word ptr [rbx], 5
+0x180027234  mov     rax, 0FFFC000000000000h
+0x18002723e  xor     rdi, rax
+0x180027241  mov     [rbx+8], rdi
+0x180027245  jmp     loc_180027117
+0x18002724a  mov     eax, 7
+0x18002724f  sub     ecx, eax
+0x180027251  jnz     loc_180027496
+0x180027257  mov     rax, [rdx+8]
+0x18002725b  cmp     rdi, [rax+0C98h]
+0x180027262  jz      short loc_1800272BE
+0x180027264  mov     esi, [rdi+10h]
+0x180027267  mov     rcx, rdi; this
+0x18002726a  call    ?GetOriginalStringReference@JavascriptString@Js@@UEAAPEBXXZ; Js::JavascriptString::GetOriginalStringReference(void)
+0x18002726f  mov     edx, esi; ui
+0x180027271  mov     rcx, rax; strIn
+0x180027274  call    cs:__imp_SysAllocStringLen
+0x18002727a  mov     [rbx+8], rax
+0x18002727e  mov     ecx, 8007000Eh
+0x180027283  test    rax, rax
+0x180027286  cmovz   r15d, ecx
+0x18002728a  mov     [rbx], r12w
+0x18002728e  jmp     loc_180027117
+0x180027293  xor     eax, eax
+0x180027295  mov     [rbx], ax
+0x180027298  jmp     loc_180027117
+0x18002729d  cmp     ecx, 1
+0x1800272a0  jnz     loc_1800273D8
+0x1800272a6  mov     word ptr [rbx], 5
+0x1800272ab  xorps   xmm0, xmm0
+0x1800272ae  cvtsi2sd xmm0, qword ptr [rdi+10h]
+0x1800272b4  movsd   qword ptr [rbx+8], xmm0
+0x1800272b9  jmp     loc_180027117
+0x1800272be  mov     qword ptr [rbx+8], 0
+0x1800272c6  jmp     short loc_18002728A
+0x1800272c8  mov     [r13+0C40h], r15b
+0x1800272cf  mov     rcx, r13
+0x1800272d2  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1800272d7  jmp     loc_180027043
+0x1800272dc  mov     word ptr [rbx], 5
+0x1800272e1  mov     rcx, [rdi+10h]
+0x1800272e5  xorps   xmm0, xmm0
+0x1800272e8  test    rcx, rcx
+0x1800272eb  js      loc_18002740C
+0x1800272f1  cvtsi2sd xmm0, rcx
+0x1800272f6  jmp     short loc_1800272B4
+0x1800272f8  mov     rax, [r13+0A90h]
+0x1800272ff  test    rax, rax
+0x180027302  jz      loc_180027122
+0x180027308  mov     rcx, r13
+0x18002730b  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180027310  jmp     loc_180027122
+0x180027315  cmp     [rbx+75h], r15b
+0x180027319  jnz     loc_18002706F
+0x18002731f  cmp     dword ptr [rcx+4ACh], 2
+0x180027326  jz      loc_180027426
+0x18002732c  mov     eax, [rcx+0C48h]
+0x180027332  mov     esi, 3
+0x180027337  cmp     eax, esi
+0x180027339  jnb     loc_180027074
+0x18002733f  inc     eax
+0x180027341  mov     [rcx+0C48h], eax
+0x180027347  mov     rax, [rbx+48h]
+0x18002734b  cmp     [rax+0ABCh], r15b
+0x180027352  jnz     loc_180027074
+0x180027358  mov     [rsp+0B8h+var_90], r15
+0x18002735d  lea     r12d, [rsi+5]
+0x180027361  test    cs:byte_180439DC1, r12b
+0x180027368  jnz     loc_180027456
+0x18002736e  mov     rcx, [rbx+18h]; this
+0x180027372  mov     rdx, rbx
+0x180027375  cmp     [rcx+8], r15b
+0x180027379  jz      loc_180027402
+0x18002737f  call    ??$PrioritizeManagerAndWait@VNativeCodeGenerator@@@BackgroundJobProcessor@JsUtil@@QEAAXQEAVNativeCodeGenerator@@I@Z; JsUtil::BackgroundJobProcessor::PrioritizeManagerAndWait<NativeCodeGenerator>(NativeCodeGenerator * const,uint)
+0x180027384  nop
+0x180027385  test    cs:byte_180439DC1, r12b
+0x18002738c  jnz     loc_180027476
+0x180027392  jmp     loc_18002707A
+0x180027397  mov     word ptr [rbx], 0Bh
+0x18002739c  mov     eax, [rdi+10h]
+0x18002739f  neg     eax
+0x1800273a1  sbb     cx, cx
+0x1800273a4  mov     [rbx+8], cx
+0x1800273a8  jmp     loc_180027117
+0x1800273ad  cmp     ecx, 28h ; '('
+0x1800273b0  jle     loc_180027589
+0x1800273b6  cmp     ecx, 2Eh ; '.'
+0x1800273b9  jle     loc_1800275C5
+0x1800273bf  sub     ecx, 2Fh ; '/'
+0x1800273c2  jz      short loc_1800273F2
+0x1800273c4  sub     ecx, 1
+0x1800273c7  jz      short loc_1800273F2
+0x1800273c9  sub     ecx, 1
+0x1800273cc  jz      short loc_1800273F2
+0x1800273ce  sub     ecx, 1
+0x1800273d1  jz      short loc_1800273D8
+0x1800273d3  cmp     ecx, 1
+0x1800273d6  jz      short loc_1800273F2
+0x1800273d8  mov     rax, [rdi]
+0x1800273db  mov     rcx, rdi
+0x1800273de  mov     rax, [rax+1F8h]
+0x1800273e5  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1800273ea  test    eax, eax
+0x1800273ec  jz      loc_1800275CD
+0x1800273f2  mov     rdx, rbx; struct tagVARIANT *
+0x1800273f5  mov     rcx, rdi; void *
+0x1800273f8  call    ?MarshalJsVarToDispatchVariant@DispatchHelper@@CAXPEAXPEAUtagVARIANT@@@Z; DispatchHelper::MarshalJsVarToDispatchVariant(void *,tagVARIANT *)
+0x1800273fd  jmp     loc_180027117
+0x180027402  call    ??$PrioritizeManagerAndWait@VNativeCodeGenerator@@@ForegroundJobProcessor@JsUtil@@QEAAXQEAVNativeCodeGenerator@@I@Z; JsUtil::ForegroundJobProcessor::PrioritizeManagerAndWait<NativeCodeGenerator>(NativeCodeGenerator * const,uint)
+0x180027407  jmp     loc_180027385
+0x18002740c  mov     rax, rcx
+0x18002740f  shr     rax, 1
+0x180027412  and     rcx, r14
+0x180027415  or      rax, rcx
+0x180027418  cvtsi2sd xmm0, rax
+0x18002741d  addsd   xmm0, xmm0
+0x180027421  jmp     loc_1800272B4
+0x180027426  cmp     cs:byte_18043CDB0, r15b
+0x18002742d  jnz     loc_18002706F
+0x180027433  jmp     loc_18002732C
+0x180027438  xor     r9d, r9d
+0x18002743b  mov     r8, rbx
+0x18002743e  lea     rdx, JSCRIPT_RUN_START
+0x180027445  lea     rcx, BERP_IE_Context
+0x18002744c  call    McTemplateU0pq_EventWriteTransfer
+0x180027451  jmp     loc_180026FD4
+0x180027456  xor     r9d, r9d
+0x180027459  lea     r8, [rsp+0B8h+var_90]
+0x18002745e  lea     rdx, JSCRIPT_NATIVECODEGEN_DELAY_START
+0x180027465  lea     rcx, BERP_IE_Context
+0x18002746c  call    McTemplateU0pq_EventWriteTransfer
+0x180027471  jmp     loc_18002736E
+0x180027476  xor     r9d, r9d
+0x180027479  lea     r8, [rsp+0B8h+var_90]
+0x18002747e  lea     rdx, JSCRIPT_NATIVECODEGEN_DELAY_STOP
+0x180027485  lea     rcx, BERP_IE_Context
+  ... truncated ...
+```

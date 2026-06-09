@@ -1,0 +1,108 @@
+# HeapDumper::GetStringValue(ushort const *)
+
+- ea: `0x1801e7360`
+- end: `0x1801e73fb`
+- name: `?GetStringValue@HeapDumper@@AEAAPEBGPEBG@Z`
+- size: `155`
+- prototype: `const unsigned __int16 *(HeapDumper *__hidden this, const unsigned __int16 *)`
+- caller_count: `1`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x1801e6c28`
+
+## callees
+
+- `0x1801e7360`
+
+## import_xrefs
+
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathGetDriveNumberW` at `0x1801e73b0`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathGetDriveNumberW` at `0x1801e73b0`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathIsUNCW` at `0x1801e73be`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathIsUNCW` at `0x1801e73be`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathIsLFNFileSpecW` at `0x1801e73cb`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathIsLFNFileSpecW` at `0x1801e73cb`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathIsFileSpecW` at `0x1801e73d8`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathIsFileSpecW` at `0x1801e73d8`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathFindFileNameW` at `0x1801e73e5`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathFindFileNameW` at `0x1801e73e5`
+
+## pseudocode
+
+```c
+const unsigned __int16 *__fastcall HeapDumper::GetStringValue(HeapDumper *this, const unsigned __int16 *a2)
+{
+  __int64 v4; // rax
+
+  if ( !a2 )
+    return L"(null)";
+  v4 = -1;
+  do
+    ++v4;
+  while ( a2[v4] );
+  if ( !v4 )
+    return L"(empty string)";
+  if ( *((_BYTE *)this + 72)
+    && (PathGetDriveNumberW(a2) != -1 || PathIsUNCW(a2) || PathIsLFNFileSpecW(a2) && !PathIsFileSpecW(a2)) )
+  {
+    return PathFindFileNameW(a2);
+  }
+  return a2;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1801e7360  mov     rax, rsp
+0x1801e7363  mov     [rax+18h], rbx
+0x1801e7367  mov     [rax+10h], rdx
+0x1801e736b  mov     [rax+8], rcx
+0x1801e736f  push    rdi
+0x1801e7370  sub     rsp, 20h
+0x1801e7374  xor     edi, edi
+0x1801e7376  mov     rbx, rdx
+0x1801e7379  test    rdx, rdx
+0x1801e737c  jnz     short loc_1801E7387
+0x1801e737e  lea     rax, aNull_1; "(null)"
+0x1801e7385  jmp     short loc_1801E73F0
+0x1801e7387  or      rax, 0FFFFFFFFFFFFFFFFh
+0x1801e738b  inc     rax
+0x1801e738e  cmp     [rbx+rax*2], di
+0x1801e7392  jnz     short loc_1801E738B
+0x1801e7394  test    rax, rax
+0x1801e7397  jnz     short loc_1801E73A2
+0x1801e7399  lea     rax, aEmptyString; "(empty string)"
+0x1801e73a0  jmp     short loc_1801E73F0
+0x1801e73a2  mov     rax, [rsp+28h+arg_0]
+0x1801e73a7  cmp     [rax+48h], dil
+0x1801e73ab  jz      short loc_1801E73ED
+0x1801e73ad  mov     rcx, rbx; pszPath
+0x1801e73b0  call    cs:__imp_PathGetDriveNumberW
+0x1801e73b6  cmp     eax, 0FFFFFFFFh
+0x1801e73b9  jnz     short loc_1801E73E2
+0x1801e73bb  mov     rcx, rbx; pszPath
+0x1801e73be  call    cs:__imp_PathIsUNCW
+0x1801e73c4  test    eax, eax
+0x1801e73c6  jnz     short loc_1801E73E2
+0x1801e73c8  mov     rcx, rbx; pszName
+0x1801e73cb  call    cs:__imp_PathIsLFNFileSpecW
+0x1801e73d1  test    eax, eax
+0x1801e73d3  jz      short loc_1801E73ED
+0x1801e73d5  mov     rcx, rbx; pszPath
+0x1801e73d8  call    cs:__imp_PathIsFileSpecW
+0x1801e73de  test    eax, eax
+0x1801e73e0  jnz     short loc_1801E73ED
+0x1801e73e2  mov     rcx, rbx; pszPath
+0x1801e73e5  call    cs:__imp_PathFindFileNameW
+0x1801e73eb  jmp     short loc_1801E73F0
+0x1801e73ed  mov     rax, rbx
+0x1801e73f0  mov     rbx, [rsp+28h+arg_10]
+0x1801e73f5  add     rsp, 20h
+0x1801e73f9  pop     rdi
+0x1801e73fa  retn
+```
