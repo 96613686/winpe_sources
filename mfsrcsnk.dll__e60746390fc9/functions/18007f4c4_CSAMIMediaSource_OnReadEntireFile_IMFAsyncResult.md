@@ -1,0 +1,1108 @@
+# CSAMIMediaSource::OnReadEntireFile(IMFAsyncResult *)
+
+- ea: `0x18007f4c4`
+- end: `0x180080251`
+- name: `?OnReadEntireFile@CSAMIMediaSource@@AEAAJPEAUIMFAsyncResult@@@Z`
+- size: `3469`
+- prototype: `__int64 __fastcall(CSAMIMediaSource *__hidden this, struct IMFAsyncResult *)`
+- caller_count: `1`
+- callee_count: `15`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1801530f0`
+
+## callees
+
+- `0x18000e0c0`
+- `0x180010190`
+- `0x18001303c`
+- `0x180018b90`
+- `0x180034d10`
+- `0x18004689c`
+- `0x180073638`
+- `0x180073b14`
+- `0x180076fc0`
+- `0x18007f4c4`
+- `0x1800ecb08`
+- `0x1801095a8`
+- `0x1801099f0`
+- `0x180153d68`
+- `0x180173010`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800801e7`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800801e7`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x1800801d9`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x1800801d9`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18007f5d2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18008017b`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18007f5d2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18008017b`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x180080213`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x180080213`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18007f516`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18007f516`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180080209`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180080209`
+- `MFPlat!MFPutWorkItemEx2` at `0x1800801c0`
+- `MFPlat!MFPutWorkItemEx2` at `0x1800801c0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f536`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f606`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f6a8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f760`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f80e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f8c0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f96d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fa5c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fba0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fcb4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fd80`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fddd`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fee3`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007ff99`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18008003b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800800de`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f536`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f606`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f6a8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f760`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f80e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f8c0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007f96d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fa5c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fba0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fcb4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fd80`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fddd`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007fee3`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18007ff99`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18008003b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800800de`
+
+## string_xrefs
+
+- `0x18007f4ec`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x18007f866`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x18007f9c5`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x18007fab4`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x18007fbf8`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x18007fd0b`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x18007fe35`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x18007fe85`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x18007ff3b`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x18007fff0`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x180080093`: `CSAMIMediaSource::OnReadEntireFile`
+- `0x180080136`: `CSAMIMediaSource::OnReadEntireFile`
+
+## pseudocode
+
+```c
+__int64 __fastcall CSAMIMediaSource::OnReadEntireFile(CSAMIMediaSource *this, struct IMFAsyncResult *a2)
+{
+  __int64 v4; // rdx
+  wchar_t *v5; // rcx
+  int PresentationDescriptor; // edi
+  CallStackTracing *v7; // rax
+  struct CallStackContext *ThreadRelativeContext; // rax
+  __int64 v9; // rdx
+  __int64 v10; // rdx
+  wchar_t *v11; // rcx
+  CallStackTracing *v12; // rax
+  struct CallStackContext *v13; // rax
+  IMFAsyncResult *v14; // r13
+  wchar_t *v15; // rcx
+  CallStackTracing *v16; // rax
+  struct CallStackContext *v17; // rax
+  __int64 v18; // rcx
+  __int64 v19; // rdx
+  wchar_t *v20; // rcx
+  CallStackTracing *v21; // rax
+  struct CallStackContext *v22; // rax
+  DWORD v23; // r14d
+  __int64 v24; // rdx
+  int v25; // r8d
+  wchar_t *v26; // rcx
+  int v27; // r15d
+  CallStackTracing *v28; // rax
+  struct CallStackContext *v29; // rax
+  __int64 v30; // rdx
+  __int64 v31; // rdx
+  wchar_t *v32; // rcx
+  CallStackTracing *v33; // rax
+  struct CallStackContext *v34; // rax
+  unsigned __int64 v35; // rax
+  wchar_t *v36; // rcx
+  CallStackTracing *v37; // rax
+  struct CallStackContext *v38; // rax
+  unsigned __int64 v39; // r14
+  void *v40; // rax
+  __int64 v41; // rdx
+  void *v42; // rdi
+  wchar_t *v43; // rcx
+  CallStackTracing *v44; // rax
+  struct CallStackContext *v45; // rax
+  unsigned int v46; // r9d
+  int v47; // r9d
+  unsigned int v48; // eax
+  unsigned int v49; // r15d
+  void *v50; // rax
+  __int64 v51; // rdx
+  void *v52; // rdi
+  wchar_t *v53; // rcx
+  CallStackTracing *v54; // rax
+  struct CallStackContext *v55; // rax
+  unsigned int v56; // r9d
+  int v57; // r9d
+  unsigned int v58; // ecx
+  unsigned __int64 v59; // rdx
+  const char *v60; // rcx
+  __int64 v61; // rdx
+  wchar_t *v62; // rcx
+  CallStackTracing *v63; // rax
+  struct CallStackContext *v64; // rax
+  unsigned int v65; // ecx
+  const char *v66; // rcx
+  __int64 v67; // rdx
+  wchar_t *v68; // rcx
+  CallStackTracing *v69; // rax
+  wchar_t *v70; // rcx
+  CallStackTracing *v71; // rax
+  struct CallStackContext *v72; // rax
+  struct CallStackContext *v73; // rax
+  unsigned int v74; // ecx
+  wchar_t *v75; // rcx
+  CallStackTracing *v76; // rax
+  struct CallStackContext *v77; // rax
+  __int64 v78; // rdx
+  wchar_t *v79; // rcx
+  CallStackTracing *v80; // rax
+  struct CallStackContext *v81; // rax
+  wchar_t *v82; // rcx
+  CallStackTracing *v83; // rax
+  struct CallStackContext *v84; // rax
+  wchar_t *v85; // rcx
+  CallStackTracing *v86; // rax
+  struct CallStackContext *v87; // rax
+  struct IMFAsyncResultVtbl *lpVtbl; // rcx
+  HANDLE EventW; // rax
+  signed int LastError; // eax
+  bool v91; // sf
+  _BYTE v93[8]; // [rsp+30h] [rbp-30h] BYREF
+  void *i; // [rsp+38h] [rbp-28h] BYREF
+  int v95; // [rsp+40h] [rbp-20h] BYREF
+  IMFAsyncResult *pResult; // [rsp+48h] [rbp-18h] BYREF
+  int v97; // [rsp+50h] [rbp-10h] BYREF
+
+  CallStackScopeTrace::CallStackScopeTrace((CallStackScopeTrace *)v93, "CSAMIMediaSource::OnReadEntireFile", 265);
+  pResult = 0;
+  EnterCriticalSection((LPCRITICAL_SECTION)this + 1);
+  if ( !a2 )
+  {
+    v5 = (wchar_t *)CallStackTracing::s_wpInstance;
+    PresentationDescriptor = -2147467261;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v7 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v4);
+      CallStackTracing::s_wpInstance = v7;
+      if ( v7 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v7 + 8LL))(v7, 2032) )
+      {
+        v5 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v5 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v5 + 8) )
+    {
+      ThreadRelativeContext = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v5);
+      if ( *((_DWORD *)ThreadRelativeContext + 499) != -2147467261 )
+        CallStackContext::TraceFailure(ThreadRelativeContext, "CSAMIMediaSource::OnReadEntireFile", 277, -2147467261);
+    }
+    if ( !g_wppLevels )
+      goto LABEL_13;
+    v9 = 32;
+LABEL_12:
+    WPP_SF_qD(
+      *((_QWORD *)WPP_GLOBAL_Control + 2),
+      v9,
+      &WPP_0776a4c2c75433e71492a25261740b6d_Traceguids,
+      this,
+      PresentationDescriptor);
+LABEL_13:
+    LeaveCriticalSection((LPCRITICAL_SECTION)this + 1);
+    goto LABEL_210;
+  }
+  PresentationDescriptor = ((__int64 (__fastcall *)(struct IMFAsyncResult *, IMFAsyncResult **))a2->lpVtbl->GetState)(
+                             a2,
+                             &pResult);
+  if ( PresentationDescriptor < 0 )
+  {
+    v11 = (wchar_t *)CallStackTracing::s_wpInstance;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v12 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v10);
+      CallStackTracing::s_wpInstance = v12;
+      if ( v12 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v12 + 8LL))(v12, 2032) )
+      {
+        v11 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v11 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v11 + 8) )
+    {
+      v13 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v11);
+      if ( *((_DWORD *)v13 + 499) != PresentationDescriptor )
+        CallStackContext::TraceFailure(v13, "CSAMIMediaSource::OnReadEntireFile", 283, PresentationDescriptor);
+    }
+    if ( !g_wppLevels )
+      goto LABEL_13;
+    v9 = 33;
+    goto LABEL_12;
+  }
+  v14 = pResult;
+  if ( !pResult )
+  {
+    v15 = (wchar_t *)CallStackTracing::s_wpInstance;
+    PresentationDescriptor = -2147024809;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v16 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v10);
+      CallStackTracing::s_wpInstance = v16;
+      if ( v16 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v16 + 8LL))(v16, 2032) )
+      {
+        v15 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v15 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v15 + 8) )
+    {
+      v17 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v15);
+      if ( *((_DWORD *)v17 + 499) != -2147024809 )
+        CallStackContext::TraceFailure(v17, "CSAMIMediaSource::OnReadEntireFile", 285, -2147024809);
+    }
+    if ( !g_wppLevels )
+      goto LABEL_13;
+    v9 = 34;
+    goto LABEL_12;
+  }
+  v18 = *((_QWORD *)this + 90);
+  v97 = 0;
+  PresentationDescriptor = (*(__int64 (__fastcall **)(__int64, struct IMFAsyncResult *, int *))(*(_QWORD *)v18 + 88LL))(
+                             v18,
+                             a2,
+                             &v97);
+  if ( PresentationDescriptor < 0 )
+  {
+    v20 = (wchar_t *)CallStackTracing::s_wpInstance;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v21 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v19);
+      CallStackTracing::s_wpInstance = v21;
+      if ( v21 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v21 + 8LL))(v21, 2032) )
+      {
+        v20 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v20 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v20 + 8) )
+    {
+      v22 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v20);
+      if ( *((_DWORD *)v22 + 499) != PresentationDescriptor )
+        CallStackContext::TraceFailure(v22, "CSAMIMediaSource::OnReadEntireFile", 293, PresentationDescriptor);
+    }
+    v23 = 1;
+    if ( !g_wppLevels )
+      goto LABEL_196;
+    v24 = 35;
+    goto LABEL_47;
+  }
+  v25 = *((_DWORD *)this + 188);
+  if ( v97 != v25 )
+  {
+    v26 = (wchar_t *)CallStackTracing::s_wpInstance;
+    v27 = -1072875845;
+    PresentationDescriptor = -1072875845;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v28 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v19);
+      CallStackTracing::s_wpInstance = v28;
+      if ( v28 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v28 + 8LL))(v28, 2032) )
+      {
+        v26 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v26 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v26 + 8) )
+    {
+      v29 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v26);
+      if ( *((_DWORD *)v29 + 499) != -1072875845 )
+        CallStackContext::TraceFailure(v29, "CSAMIMediaSource::OnReadEntireFile", 299, -1072875845);
+    }
+    v23 = 1;
+    if ( !g_wppLevels )
+      goto LABEL_196;
+    v30 = 36;
+    goto LABEL_195;
+  }
+  PresentationDescriptor = CSAMIInterpreter::ParseSAMI(
+                             (CSAMIMediaSource *)((char *)this + 760),
+                             *((const char **)this + 93),
+                             v25);
+  if ( PresentationDescriptor < 0 )
+  {
+    v32 = (wchar_t *)CallStackTracing::s_wpInstance;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v33 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v31);
+      CallStackTracing::s_wpInstance = v33;
+      if ( v33 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v33 + 8LL))(v33, 2032) )
+      {
+        v32 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v32 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v32 + 8) )
+    {
+      v34 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v32);
+      if ( *((_DWORD *)v34 + 499) != PresentationDescriptor )
+        CallStackContext::TraceFailure(v34, "CSAMIMediaSource::OnReadEntireFile", 307, PresentationDescriptor);
+    }
+    v23 = 1;
+    if ( !g_wppLevels )
+      goto LABEL_196;
+    v24 = 37;
+    goto LABEL_47;
+  }
+  v35 = *((unsigned int *)this + 524);
+  *((_DWORD *)this + 648) = v35;
+  if ( !(_DWORD)v35 )
+  {
+    v36 = (wchar_t *)CallStackTracing::s_wpInstance;
+    v27 = -1072875845;
+    PresentationDescriptor = -1072875845;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v37 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v31);
+      CallStackTracing::s_wpInstance = v37;
+      if ( v37 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v37 + 8LL))(v37, 2032) )
+      {
+        v36 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v36 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v36 + 8) )
+    {
+      v38 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v36);
+      if ( *((_DWORD *)v38 + 499) != -1072875845 )
+        CallStackContext::TraceFailure(v38, "CSAMIMediaSource::OnReadEntireFile", 315, -1072875845);
+    }
+    v23 = 1;
+    if ( !g_wppLevels )
+      goto LABEL_196;
+    v30 = 38;
+    goto LABEL_195;
+  }
+  v39 = v35;
+  v40 = operator new(saturated_mul(v35, 8u));
+  v42 = v40;
+  if ( v40 )
+    `vector constructor iterator'(v40, 8u, v39, ComSmartPtr<IMFMediaType>::ComSmartPtr<IMFMediaType>);
+  else
+    v42 = 0;
+  *((_QWORD *)this + 325) = v42;
+  if ( !v42 )
+  {
+    v43 = (wchar_t *)CallStackTracing::s_wpInstance;
+    v27 = -2147024882;
+    PresentationDescriptor = -2147024882;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v44 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v41);
+      CallStackTracing::s_wpInstance = v44;
+      if ( v44 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v44 + 8LL))(v44, 2032) )
+      {
+        v43 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v43 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v43 + 8) )
+    {
+      v45 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v43);
+      if ( *((_DWORD *)v45 + 499) != -2147024882 )
+        CallStackContext::TraceFailure(v45, "CSAMIMediaSource::OnReadEntireFile", 322, -2147024882);
+    }
+    v23 = 1;
+    if ( !g_wppLevels )
+      goto LABEL_196;
+    v30 = 39;
+    goto LABEL_195;
+  }
+  v46 = 0;
+  v23 = 1;
+  for ( i = (void *)*((_QWORD *)this + 260); v46 < *((_DWORD *)this + 648); v46 = v47 + 1 )
+    CVPtrList::GetNext((CVPtrList *)v46, &i, (void **)(*((_QWORD *)this + 325) + 8LL * v46));
+  v48 = *((_DWORD *)this + 636);
+  *((_DWORD *)this + 652) = v48;
+  if ( v48 )
+  {
+    v49 = v48;
+    v50 = operator new(saturated_mul(v48, 8u));
+    v52 = v50;
+    if ( v50 )
+      `vector constructor iterator'(v50, 8u, v49, ComSmartPtr<IMFMediaType>::ComSmartPtr<IMFMediaType>);
+    else
+      v52 = 0;
+    *((_QWORD *)this + 327) = v52;
+    if ( !v52 )
+    {
+      v53 = (wchar_t *)CallStackTracing::s_wpInstance;
+      v27 = -2147024882;
+      PresentationDescriptor = -2147024882;
+      if ( !CallStackTracing::s_wpInstance )
+      {
+        v54 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v51);
+        CallStackTracing::s_wpInstance = v54;
+        if ( v54 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v54 + 8LL))(v54, 2032) )
+        {
+          v53 = (wchar_t *)CallStackTracing::s_wpInstance;
+        }
+        else
+        {
+          v53 = &qword_1801B07E0;
+          CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+        }
+      }
+      if ( *((_BYTE *)v53 + 8) )
+      {
+        v55 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v53);
+        if ( *((_DWORD *)v55 + 499) != -2147024882 )
+          CallStackContext::TraceFailure(v55, "CSAMIMediaSource::OnReadEntireFile", 342, -2147024882);
+      }
+      if ( !g_wppLevels )
+        goto LABEL_196;
+      v30 = 40;
+      goto LABEL_195;
+    }
+    v56 = 0;
+    for ( i = (void *)*((_QWORD *)this + 316); v56 < *((_DWORD *)this + 652); v56 = v57 + 1 )
+      CVPtrList::GetNext((CVPtrList *)v56, &i, (void **)(*((_QWORD *)this + 327) + 8LL * v56));
+    *((_DWORD *)this + 653) = 0;
+  }
+  v58 = *((_DWORD *)this + 640);
+  v59 = v58 + *((_DWORD *)this + 641);
+  i = 0;
+  if ( (unsigned int)v59 < v58 )
+  {
+    *((_DWORD *)this + 649) = -1;
+    v27 = -2147024362;
+    v85 = (wchar_t *)CallStackTracing::s_wpInstance;
+    PresentationDescriptor = -2147024362;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v86 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v59);
+      CallStackTracing::s_wpInstance = v86;
+      if ( v86 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v86 + 8LL))(v86, 2032) )
+      {
+        v85 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v85 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v85 + 8) )
+    {
+      v87 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v85);
+      if ( *((_DWORD *)v87 + 499) != -2147024362 )
+        CallStackContext::TraceFailure(v87, "CSAMIMediaSource::OnReadEntireFile", 369, -2147024362);
+    }
+    if ( !g_wppLevels )
+      goto LABEL_196;
+    v30 = 41;
+    goto LABEL_195;
+  }
+  *((_DWORD *)this + 649) = v59;
+  v60 = (const char *)*((_QWORD *)this + 323);
+  if ( v60 )
+  {
+    PresentationDescriptor = StringCchLengthA(v60, v59, (unsigned __int64 *)&i);
+    if ( PresentationDescriptor < 0 )
+    {
+      v62 = (wchar_t *)CallStackTracing::s_wpInstance;
+      if ( !CallStackTracing::s_wpInstance )
+      {
+        v63 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v61);
+        CallStackTracing::s_wpInstance = v63;
+        if ( v63 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v63 + 8LL))(v63, 2032) )
+        {
+          v62 = (wchar_t *)CallStackTracing::s_wpInstance;
+        }
+        else
+        {
+          v62 = &qword_1801B07E0;
+          CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+        }
+      }
+      if ( *((_BYTE *)v62 + 8) )
+      {
+        v64 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v62);
+        if ( *((_DWORD *)v64 + 499) != PresentationDescriptor )
+          CallStackContext::TraceFailure(v64, "CSAMIMediaSource::OnReadEntireFile", 373, PresentationDescriptor);
+      }
+      if ( !g_wppLevels )
+        goto LABEL_196;
+      v24 = 42;
+      goto LABEL_47;
+    }
+    v65 = *((_DWORD *)this + 649);
+    v59 = v65 + 2 * (_DWORD)i;
+    if ( (unsigned int)v59 >= v65 )
+    {
+      *((_DWORD *)this + 649) = v59;
+      goto LABEL_130;
+    }
+    *((_DWORD *)this + 649) = -1;
+    v27 = -2147024362;
+    v70 = (wchar_t *)CallStackTracing::s_wpInstance;
+    PresentationDescriptor = -2147024362;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v71 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v59);
+      CallStackTracing::s_wpInstance = v71;
+      if ( v71 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v71 + 8LL))(v71, 2032) )
+      {
+        v70 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v70 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v70 + 8) )
+    {
+      v72 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v70);
+      if ( *((_DWORD *)v72 + 499) != -2147024362 )
+        CallStackContext::TraceFailure(v72, "CSAMIMediaSource::OnReadEntireFile", 374, -2147024362);
+    }
+    if ( !g_wppLevels )
+      goto LABEL_196;
+    v30 = 43;
+LABEL_195:
+    WPP_SF_qD(*((_QWORD *)WPP_GLOBAL_Control + 2), v30, &WPP_0776a4c2c75433e71492a25261740b6d_Traceguids, this, v27);
+    goto LABEL_196;
+  }
+LABEL_130:
+  v66 = (const char *)*((_QWORD *)this + 322);
+  if ( v66 )
+  {
+    PresentationDescriptor = StringCchLengthA(v66, v59, (unsigned __int64 *)&i);
+    if ( PresentationDescriptor < 0 )
+    {
+      v68 = (wchar_t *)CallStackTracing::s_wpInstance;
+      if ( !CallStackTracing::s_wpInstance )
+      {
+        v69 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v67);
+        CallStackTracing::s_wpInstance = v69;
+        if ( v69 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v69 + 8LL))(v69, 2032) )
+        {
+          v68 = (wchar_t *)CallStackTracing::s_wpInstance;
+        }
+        else
+        {
+          v68 = &qword_1801B07E0;
+          CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+        }
+      }
+      if ( *((_BYTE *)v68 + 8) )
+      {
+        v73 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v68);
+        if ( *((_DWORD *)v73 + 499) != PresentationDescriptor )
+          CallStackContext::TraceFailure(v73, "CSAMIMediaSource::OnReadEntireFile", 379, PresentationDescriptor);
+      }
+      if ( !g_wppLevels )
+        goto LABEL_196;
+      v24 = 44;
+      goto LABEL_47;
+    }
+    v74 = *((_DWORD *)this + 649);
+    v59 = v74 + (unsigned int)i;
+    if ( (unsigned int)v59 < v74 )
+    {
+      *((_DWORD *)this + 649) = -1;
+      v27 = -2147024362;
+      v75 = (wchar_t *)CallStackTracing::s_wpInstance;
+      PresentationDescriptor = -2147024362;
+      if ( !CallStackTracing::s_wpInstance )
+      {
+        v76 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v59);
+        CallStackTracing::s_wpInstance = v76;
+        if ( v76 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v76 + 8LL))(v76, 2032) )
+        {
+          v75 = (wchar_t *)CallStackTracing::s_wpInstance;
+        }
+        else
+        {
+          v75 = &qword_1801B07E0;
+          CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+        }
+      }
+      if ( *((_BYTE *)v75 + 8) )
+      {
+        v77 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v75);
+        if ( *((_DWORD *)v77 + 499) != -2147024362 )
+          CallStackContext::TraceFailure(v77, "CSAMIMediaSource::OnReadEntireFile", 380, -2147024362);
+      }
+      if ( !g_wppLevels )
+        goto LABEL_196;
+      v30 = 45;
+      goto LABEL_195;
+    }
+  }
+  if ( (int)v59 + 300 < (unsigned int)v59 )
+  {
+    *((_DWORD *)this + 649) = -1;
+    v27 = -2147024362;
+    v82 = (wchar_t *)CallStackTracing::s_wpInstance;
+    PresentationDescriptor = -2147024362;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v83 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v59);
+      CallStackTracing::s_wpInstance = v83;
+      if ( v83 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v83 + 8LL))(v83, 2032) )
+      {
+        v82 = (wchar_t *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v82 = &qword_1801B07E0;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+      }
+    }
+    if ( *((_BYTE *)v82 + 8) )
+    {
+      v84 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v82);
+      if ( *((_DWORD *)v84 + 499) != -2147024362 )
+        CallStackContext::TraceFailure(v84, "CSAMIMediaSource::OnReadEntireFile", 383, -2147024362);
+    }
+    if ( !g_wppLevels )
+      goto LABEL_196;
+    v30 = 46;
+    goto LABEL_195;
+  }
+  *((_DWORD *)this + 649) = v59 + 300;
+  PresentationDescriptor = CMediaSourceBase::CreatePresentationDescriptor(this);
+  if ( PresentationDescriptor >= 0 )
+    goto LABEL_196;
+  v79 = (wchar_t *)CallStackTracing::s_wpInstance;
+  if ( !CallStackTracing::s_wpInstance )
+  {
+    v80 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v78);
+    CallStackTracing::s_wpInstance = v80;
+    if ( v80 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v80 + 8LL))(v80, 2032) )
+    {
+      v79 = (wchar_t *)CallStackTracing::s_wpInstance;
+    }
+    else
+    {
+      v79 = &qword_1801B07E0;
+      CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1801B07E0;
+    }
+  }
+  if ( *((_BYTE *)v79 + 8) )
+  {
+    v81 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v79);
+    if ( *((_DWORD *)v81 + 499) != PresentationDescriptor )
+      CallStackContext::TraceFailure(v81, "CSAMIMediaSource::OnReadEntireFile", 389, PresentationDescriptor);
+  }
+  if ( !g_wppLevels )
+    goto LABEL_196;
+  v24 = 47;
+LABEL_47:
+  WPP_SF_qD(
+    *((_QWORD *)WPP_GLOBAL_Control + 2),
+    v24,
+    &WPP_0776a4c2c75433e71492a25261740b6d_Traceguids,
+    this,
+    PresentationDescriptor);
+LABEL_196:
+  LeaveCriticalSection((LPCRITICAL_SECTION)this + 1);
+  lpVtbl = v14[5].lpVtbl;
+  LODWORD(v14[6].lpVtbl) = PresentationDescriptor;
+  if ( lpVtbl )
+  {
+    LODWORD(i) = 0;
+    v95 = 0;
+    if ( (*((int (__fastcall **)(struct IMFAsyncResultVtbl *, void **, int *))lpVtbl->QueryInterface + 3))(
+           lpVtbl,
+           &i,
+           &v95) >= 0 )
+      v23 = v95;
+    else
+      v95 = 1;
+    MFPutWorkItemEx2(v23, 0, v14);
+    goto LABEL_210;
+  }
+  if ( v14[7].lpVtbl )
+    goto LABEL_209;
+  EventW = CreateEventW(0, 1, 0, 0);
+  if ( EventW )
+  {
+    if ( _InterlockedCompareExchange64((volatile signed __int64 *)&v14[7], (signed __int64)EventW, 0) )
+      CloseHandle(EventW);
+    goto LABEL_209;
+  }
+  LastError = GetLastError();
+  v91 = LastError < 0;
+  if ( LastError > 0 )
+    v91 = 1;
+  if ( !v91 )
+LABEL_209:
+    SetEvent(v14[7].lpVtbl);
+LABEL_210:
+  ComSmartPtr<IMFMediaEvent>::~ComSmartPtr<IMFMediaEvent>(&pResult);
+  CallStackScopeTrace::~CallStackScopeTrace((CallStackScopeTrace *)v93);
+  return (unsigned int)PresentationDescriptor;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18007f4c4  mov     [rsp-38h+arg_10], rbx
+0x18007f4c9  push    rbp
+0x18007f4ca  push    rsi
+0x18007f4cb  push    rdi
+0x18007f4cc  push    r12
+0x18007f4ce  push    r13
+0x18007f4d0  push    r14
+0x18007f4d2  push    r15
+0x18007f4d4  mov     rbp, rsp
+0x18007f4d7  sub     rsp, 60h
+0x18007f4db  mov     rax, cs:__security_cookie
+0x18007f4e2  xor     rax, rsp
+0x18007f4e5  mov     [rbp+var_8], rax
+0x18007f4e9  mov     r14, rdx
+0x18007f4ec  lea     r15, aCsamimediasour_8; "CSAMIMediaSource::OnReadEntireFile"
+0x18007f4f3  mov     rsi, rcx
+0x18007f4f6  mov     rdx, r15; char *
+0x18007f4f9  mov     r8d, 109h; int
+0x18007f4ff  lea     rcx, [rbp+var_30]; this
+0x18007f503  call    ??0CallStackScopeTrace@@QEAA@PEBDJ@Z; CallStackScopeTrace::CallStackScopeTrace(char const *,long)
+0x18007f508  lea     rbx, [rsi+28h]
+0x18007f50c  xor     r12d, r12d
+0x18007f50f  mov     rcx, rbx; lpCriticalSection
+0x18007f512  mov     [rbp+pResult], r12
+0x18007f516  call    cs:__imp_EnterCriticalSection
+0x18007f51c  test    r14, r14
+0x18007f51f  jnz     loc_18007F5DD
+0x18007f525  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f52c  mov     edi, 80004003h
+0x18007f531  test    rcx, rcx
+0x18007f534  jnz     short loc_18007F577
+0x18007f536  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x18007f53c  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f543  mov     rcx, rax
+0x18007f546  test    rax, rax
+0x18007f549  jz      short loc_18007F569
+0x18007f54b  mov     rax, [rax]
+0x18007f54e  mov     edx, 7F0h
+0x18007f553  mov     rax, [rax+8]
+0x18007f557  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007f55c  test    eax, eax
+0x18007f55e  jz      short loc_18007F569
+0x18007f560  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f567  jmp     short loc_18007F577
+0x18007f569  lea     rcx, qword_1801B07E0; this
+0x18007f570  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f577  cmp     [rcx+8], r12b
+0x18007f57b  jz      short loc_18007F59E
+0x18007f57d  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x18007f582  cmp     [rax+7CCh], edi
+0x18007f588  jz      short loc_18007F59E
+0x18007f58a  mov     r9d, edi; int
+0x18007f58d  mov     r8d, 115h; int
+0x18007f593  mov     rdx, r15; char *
+0x18007f596  mov     rcx, rax; this
+0x18007f599  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x18007f59e  mov     r14d, 1
+0x18007f5a4  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, r14b; MFWppLevels g_wppLevels
+0x18007f5ab  jb      short loc_18007F5CF
+0x18007f5ad  lea     edx, [r14+1Fh]
+0x18007f5b1  mov     rcx, cs:WPP_GLOBAL_Control
+0x18007f5b8  lea     r8, WPP_0776a4c2c75433e71492a25261740b6d_Traceguids
+0x18007f5bf  mov     r9, rsi
+0x18007f5c2  mov     [rsp+60h+var_40], edi
+0x18007f5c6  mov     rcx, [rcx+10h]
+0x18007f5ca  call    WPP_SF_qD
+0x18007f5cf  mov     rcx, rbx; lpCriticalSection
+0x18007f5d2  call    cs:__imp_LeaveCriticalSection
+0x18007f5d8  jmp     loc_180080219
+0x18007f5dd  mov     rax, [r14]
+0x18007f5e0  lea     rdx, [rbp+pResult]
+0x18007f5e4  mov     rcx, r14
+0x18007f5e7  mov     rax, [rax+18h]
+0x18007f5eb  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007f5f0  mov     edi, eax
+0x18007f5f2  test    eax, eax
+0x18007f5f4  jns     loc_18007F68A
+0x18007f5fa  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f601  test    rcx, rcx
+0x18007f604  jnz     short loc_18007F647
+0x18007f606  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x18007f60c  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f613  mov     rcx, rax
+0x18007f616  test    rax, rax
+0x18007f619  jz      short loc_18007F639
+0x18007f61b  mov     rax, [rax]
+0x18007f61e  mov     edx, 7F0h
+0x18007f623  mov     rax, [rax+8]
+0x18007f627  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007f62c  test    eax, eax
+0x18007f62e  jz      short loc_18007F639
+0x18007f630  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f637  jmp     short loc_18007F647
+0x18007f639  lea     rcx, qword_1801B07E0; this
+0x18007f640  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f647  cmp     [rcx+8], r12b
+0x18007f64b  jz      short loc_18007F66E
+0x18007f64d  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x18007f652  cmp     [rax+7CCh], edi
+0x18007f658  jz      short loc_18007F66E
+0x18007f65a  mov     r9d, edi; int
+0x18007f65d  mov     r8d, 11Bh; int
+0x18007f663  mov     rdx, r15; char *
+0x18007f666  mov     rcx, rax; this
+0x18007f669  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x18007f66e  mov     r14d, 1
+0x18007f674  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, r14b; MFWppLevels g_wppLevels
+0x18007f67b  jb      loc_18007F5CF
+0x18007f681  lea     edx, [r14+20h]
+0x18007f685  jmp     loc_18007F5B1
+0x18007f68a  mov     r13, [rbp+pResult]
+0x18007f68e  test    r13, r13
+0x18007f691  jnz     loc_18007F72C
+0x18007f697  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f69e  mov     edi, 80070057h
+0x18007f6a3  test    rcx, rcx
+0x18007f6a6  jnz     short loc_18007F6E9
+0x18007f6a8  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x18007f6ae  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f6b5  mov     rcx, rax
+0x18007f6b8  test    rax, rax
+0x18007f6bb  jz      short loc_18007F6DB
+0x18007f6bd  mov     rax, [rax]
+0x18007f6c0  mov     edx, 7F0h
+0x18007f6c5  mov     rax, [rax+8]
+0x18007f6c9  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007f6ce  test    eax, eax
+0x18007f6d0  jz      short loc_18007F6DB
+0x18007f6d2  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f6d9  jmp     short loc_18007F6E9
+0x18007f6db  lea     rcx, qword_1801B07E0; this
+0x18007f6e2  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f6e9  cmp     [rcx+8], r12b
+0x18007f6ed  jz      short loc_18007F710
+0x18007f6ef  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x18007f6f4  cmp     [rax+7CCh], edi
+0x18007f6fa  jz      short loc_18007F710
+0x18007f6fc  mov     r9d, edi; int
+0x18007f6ff  mov     r8d, 11Dh; int
+0x18007f705  mov     rdx, r15; char *
+0x18007f708  mov     rcx, rax; this
+0x18007f70b  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x18007f710  mov     r14d, 1
+0x18007f716  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, r14b; MFWppLevels g_wppLevels
+0x18007f71d  jb      loc_18007F5CF
+0x18007f723  lea     edx, [r14+21h]
+0x18007f727  jmp     loc_18007F5B1
+0x18007f72c  mov     rcx, [rsi+2D0h]
+0x18007f733  lea     r8, [rbp+var_10]
+0x18007f737  mov     [rbp+var_10], r12d
+0x18007f73b  mov     rdx, r14
+0x18007f73e  mov     rax, [rcx]
+0x18007f741  mov     rax, [rax+58h]
+0x18007f745  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007f74a  mov     edi, eax
+0x18007f74c  test    eax, eax
+0x18007f74e  jns     loc_18007F7E8
+0x18007f754  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f75b  test    rcx, rcx
+0x18007f75e  jnz     short loc_18007F7A1
+0x18007f760  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x18007f766  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f76d  mov     rcx, rax
+0x18007f770  test    rax, rax
+0x18007f773  jz      short loc_18007F793
+0x18007f775  mov     rax, [rax]
+0x18007f778  mov     edx, 7F0h
+0x18007f77d  mov     rax, [rax+8]
+0x18007f781  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007f786  test    eax, eax
+0x18007f788  jz      short loc_18007F793
+0x18007f78a  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f791  jmp     short loc_18007F7A1
+0x18007f793  lea     rcx, qword_1801B07E0; this
+0x18007f79a  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f7a1  cmp     [rcx+8], r12b
+0x18007f7a5  jz      short loc_18007F7C8
+0x18007f7a7  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x18007f7ac  cmp     [rax+7CCh], edi
+0x18007f7b2  jz      short loc_18007F7C8
+0x18007f7b4  mov     r9d, edi; int
+0x18007f7b7  mov     r8d, 125h; int
+0x18007f7bd  mov     rdx, r15; char *
+0x18007f7c0  mov     rcx, rax; this
+0x18007f7c3  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x18007f7c8  mov     r14d, 1
+0x18007f7ce  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, r14b; MFWppLevels g_wppLevels
+0x18007f7d5  jb      loc_180080178
+0x18007f7db  lea     edx, [r14+22h]
+0x18007f7df  mov     [rsp+60h+var_40], edi
+0x18007f7e3  jmp     loc_18008015E
+0x18007f7e8  mov     r8d, [rsi+2F0h]; int
+0x18007f7ef  cmp     [rbp+var_10], r8d
+0x18007f7f3  jz      loc_18007F897
+0x18007f7f9  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f800  mov     r15d, 0C00D36BBh
+0x18007f806  mov     edi, r15d
+0x18007f809  test    rcx, rcx
+0x18007f80c  jnz     short loc_18007F84F
+0x18007f80e  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x18007f814  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f81b  mov     rcx, rax
+0x18007f81e  test    rax, rax
+0x18007f821  jz      short loc_18007F841
+0x18007f823  mov     rax, [rax]
+0x18007f826  mov     edx, 7F0h
+0x18007f82b  mov     rax, [rax+8]
+0x18007f82f  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007f834  test    eax, eax
+0x18007f836  jz      short loc_18007F841
+0x18007f838  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f83f  jmp     short loc_18007F84F
+0x18007f841  lea     rcx, qword_1801B07E0; this
+0x18007f848  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f84f  cmp     [rcx+8], r12b
+0x18007f853  jz      short loc_18007F87B
+0x18007f855  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x18007f85a  cmp     [rax+7CCh], r15d
+0x18007f861  jz      short loc_18007F87B
+0x18007f863  mov     r9d, r15d; int
+0x18007f866  lea     rdx, aCsamimediasour_8; "CSAMIMediaSource::OnReadEntireFile"
+0x18007f86d  mov     r8d, 12Bh; int
+0x18007f873  mov     rcx, rax; this
+0x18007f876  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x18007f87b  mov     r14d, 1
+0x18007f881  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, r14b; MFWppLevels g_wppLevels
+0x18007f888  jb      loc_180080178
+0x18007f88e  lea     edx, [r14+23h]
+0x18007f892  jmp     loc_180080159
+0x18007f897  mov     rdx, [rsi+2E8h]; char *
+0x18007f89e  lea     rcx, [rsi+2F8h]; this
+0x18007f8a5  call    ?ParseSAMI@CSAMIInterpreter@@QEAAJPEBDH@Z; CSAMIInterpreter::ParseSAMI(char const *,int)
+0x18007f8aa  mov     edi, eax
+0x18007f8ac  test    eax, eax
+0x18007f8ae  jns     loc_18007F944
+0x18007f8b4  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f8bb  test    rcx, rcx
+0x18007f8be  jnz     short loc_18007F901
+0x18007f8c0  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x18007f8c6  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f8cd  mov     rcx, rax
+0x18007f8d0  test    rax, rax
+0x18007f8d3  jz      short loc_18007F8F3
+0x18007f8d5  mov     rax, [rax]
+0x18007f8d8  mov     edx, 7F0h
+0x18007f8dd  mov     rax, [rax+8]
+0x18007f8e1  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007f8e6  test    eax, eax
+0x18007f8e8  jz      short loc_18007F8F3
+0x18007f8ea  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f8f1  jmp     short loc_18007F901
+0x18007f8f3  lea     rcx, qword_1801B07E0; this
+0x18007f8fa  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f901  cmp     [rcx+8], r12b
+0x18007f905  jz      short loc_18007F928
+0x18007f907  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x18007f90c  cmp     [rax+7CCh], edi
+0x18007f912  jz      short loc_18007F928
+0x18007f914  mov     r9d, edi; int
+0x18007f917  mov     r8d, 133h; int
+0x18007f91d  mov     rdx, r15; char *
+0x18007f920  mov     rcx, rax; this
+0x18007f923  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x18007f928  mov     r14d, 1
+0x18007f92e  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, r14b; MFWppLevels g_wppLevels
+0x18007f935  jb      loc_180080178
+0x18007f93b  lea     edx, [r14+24h]
+0x18007f93f  jmp     loc_18007F7DF
+0x18007f944  mov     eax, [rsi+830h]
+0x18007f94a  mov     [rsi+0A20h], eax
+0x18007f950  test    eax, eax
+0x18007f952  jnz     loc_18007F9F6
+0x18007f958  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f95f  mov     r15d, 0C00D36BBh
+0x18007f965  mov     edi, r15d
+0x18007f968  test    rcx, rcx
+0x18007f96b  jnz     short loc_18007F9AE
+0x18007f96d  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x18007f973  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f97a  mov     rcx, rax
+0x18007f97d  test    rax, rax
+0x18007f980  jz      short loc_18007F9A0
+0x18007f982  mov     rax, [rax]
+0x18007f985  mov     edx, 7F0h
+0x18007f98a  mov     rax, [rax+8]
+0x18007f98e  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007f993  test    eax, eax
+0x18007f995  jz      short loc_18007F9A0
+0x18007f997  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f99e  jmp     short loc_18007F9AE
+0x18007f9a0  lea     rcx, qword_1801B07E0; this
+0x18007f9a7  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x18007f9ae  cmp     [rcx+8], r12b
+0x18007f9b2  jz      short loc_18007F9DA
+0x18007f9b4  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x18007f9b9  cmp     [rax+7CCh], r15d
+0x18007f9c0  jz      short loc_18007F9DA
+0x18007f9c2  mov     r9d, r15d; int
+0x18007f9c5  lea     rdx, aCsamimediasour_8; "CSAMIMediaSource::OnReadEntireFile"
+0x18007f9cc  mov     r8d, 13Bh; int
+  ... truncated ...
+```

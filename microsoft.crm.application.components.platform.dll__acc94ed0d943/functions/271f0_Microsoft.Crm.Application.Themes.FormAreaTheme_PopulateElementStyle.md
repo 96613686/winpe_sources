@@ -1,0 +1,386 @@
+# Microsoft.Crm.Application.Themes.FormAreaTheme::PopulateElementStyle
+
+- ea: `0x271f0`
+- end: `0x27ef5`
+- name: `Microsoft.Crm.Application.Themes.FormAreaTheme::PopulateElementStyle`
+- size: `3333`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `74`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x271f0`
+- `0x27f10`
+- `0x27f30`
+- `0x27f50`
+- `0x27f70`
+- `0x27f90`
+- `0x27fb0`
+- `0x27fd0`
+- `0x27ff0`
+- `0x28010`
+- `0x28030`
+- `0x28050`
+- `0x28070`
+- `0x28090`
+- `0x280b0`
+- `0x280d0`
+- `0x280f0`
+- `0x28110`
+- `0x28130`
+- `0x28150`
+- `0x28170`
+- `0x28190`
+- `0x281b0`
+- `0x281d0`
+- `0x281f0`
+- `0x28210`
+- `0x28230`
+- `0x28250`
+- `0x28270`
+- `0x28290`
+- `0x282b0`
+- `0x282d0`
+- `0x282f0`
+- `0x28310`
+- `0x28330`
+- `0x28350`
+- `0x28370`
+- `0x28390`
+- `0x283b0`
+- `0x283d0`
+- `0x283f0`
+- `0x28410`
+- `0x28430`
+- `0x28450`
+- `0x28470`
+- `0x28490`
+- `0x284b0`
+- `0x284d0`
+- `0x284f0`
+- `0x28510`
+
+## string_xrefs
+
+- `0x27750`: `FormMenuBarBreadcrumb`
+- `0x2784c`: `NavigationSubAreaDisabled`
+- `0x27861`: `NavigationAreaLink`
+- `0x2788b`: `NavigationAreaLinkSelected`
+- `0x279c6`: `FormRoleCtrlOpened`
+- `0x279db`: `FormRoleCtrlTabLink`
+- `0x27a6e`: `HeaderHyperlink`
+- `0x27ba9`: `ReadOnlyControl`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x271f0  ldarg.1
+0x271f1  call     unsigned int32 <PrivateImplementationDetails>::ComputeStringHash(string s)
+0x271f6  stloc.0
+0x271f7  ldloc.0
+0x271f8  ldc.i4   0x7ACA722C
+0x271fd  bgt.un   loc_2745F
+0x27202  ldloc.0
+0x27203  ldc.i4   0x4C8492BD
+0x27208  bgt.un   loc_27336
+0x2720d  ldloc.0
+0x2720e  ldc.i4   0x23DB586E
+0x27213  bgt.un   loc_272A7
+0x27218  ldloc.0
+0x27219  ldc.i4   0xFF01B6A
+0x2721e  bgt.un.s loc_2725E
+0x27220  ldloc.0
+0x27221  ldc.i4   0x99E1D1E
+0x27226  bgt.un.s loc_27243
+0x27228  ldloc.0
+0x27229  ldc.i4   0x108B638
+0x2722e  beq      loc_27B3F
+0x27233  ldloc.0
+0x27234  ldc.i4   0x99E1D1E
+0x27239  beq      loc_27836
+0x2723e  br       loc_27EE4
+0x27243  ldloc.0
+0x27244  ldc.i4   0xB978231
+0x27249  beq      loc_27AAC
+0x2724e  ldloc.0
+0x2724f  ldc.i4   0xFF01B6A
+0x27254  beq      loc_27B7E
+0x27259  br       loc_27EE4
+0x2725e  ldloc.0
+0x2725f  ldc.i4   0x11752337
+0x27264  bgt.un.s loc_27281
+0x27266  ldloc.0
+0x27267  ldc.i4   0x114F9980
+0x2726c  beq      loc_2795C
+0x27271  ldloc.0
+0x27272  ldc.i4   0x11752337
+0x27277  beq      loc_27875
+0x2727c  br       loc_27EE4
+0x27281  ldloc.0
+0x27282  ldc.i4   0x13E24FF7
+0x27287  beq      loc_27764
+0x2728c  ldloc.0
+0x2728d  ldc.i4   0x194091BF
+0x27292  beq      loc_27A43
+0x27297  ldloc.0
+0x27298  ldc.i4   0x23DB586E
+0x2729d  beq      loc_27C3B
+0x272a2  br       loc_27EE4
+0x272a7  ldloc.0
+0x272a8  ldc.i4   0x35745F8F
+0x272ad  bgt.un.s loc_272ED
+0x272af  ldloc.0
+0x272b0  ldc.i4   0x2D877B6C
+0x272b5  bgt.un.s loc_272D2
+0x272b7  ldloc.0
+0x272b8  ldc.i4   0x27084330
+0x272bd  beq      loc_27AEB
+0x272c2  ldloc.0
+0x272c3  ldc.i4   0x2D877B6C
+0x272c8  beq      loc_278B4
+0x272cd  br       loc_27EE4
+0x272d2  ldloc.0
+0x272d3  ldc.i4   0x30FECA68
+0x272d8  beq      loc_27A04
+0x272dd  ldloc.0
+0x272de  ldc.i4   0x35745F8F
+0x272e3  beq      loc_276FB
+0x272e8  br       loc_27EE4
+0x272ed  ldloc.0
+0x272ee  ldc.i4   0x404B505D
+0x272f3  bgt.un.s loc_27310
+0x272f5  ldloc.0
+0x272f6  ldc.i4   0x3CFCFEFB
+0x272fb  beq      loc_279C5
+0x27300  ldloc.0
+0x27301  ldc.i4   0x404B505D
+0x27306  beq      loc_27C50
+0x2730b  br       loc_27EE4
+0x27310  ldloc.0
+0x27311  ldc.i4   0x428A1095
+0x27316  beq      loc_276D1
+0x2731b  ldloc.0
+0x2731c  ldc.i4   0x47ADB032
+0x27321  beq      loc_2784B
+0x27326  ldloc.0
+0x27327  ldc.i4   0x4C8492BD
+0x2732c  beq      loc_27BBD
+0x27331  br       loc_27EE4
+0x27336  ldloc.0
+0x27337  ldc.i4   0x5DDB48F2
+0x2733c  bgt.un   loc_273D0
+0x27341  ldloc.0
+0x27342  ldc.i4   0x52D7D736
+0x27347  bgt.un.s loc_27387
+0x27349  ldloc.0
+0x2734a  ldc.i4   0x4FE1B6A9
+0x2734f  bgt.un.s loc_2736C
+0x27351  ldloc.0
+0x27352  ldc.i4   0x4F367363
+0x27357  beq      loc_27986
+0x2735c  ldloc.0
+0x2735d  ldc.i4   0x4FE1B6A9
+0x27362  beq      loc_27BE7
+0x27367  br       loc_27EE4
+0x2736c  ldloc.0
+0x2736d  ldc.i4   0x524EA384
+0x27372  beq      loc_27725
+0x27377  ldloc.0
+0x27378  ldc.i4   0x52D7D736
+0x2737d  beq      loc_27C11
+0x27382  br       loc_27EE4
+0x27387  ldloc.0
+0x27388  ldc.i4   0x599ABCD0
+0x2738d  bgt.un.s loc_273AA
+0x2738f  ldloc.0
+0x27390  ldc.i4   0x585C57BD
+0x27395  beq      loc_27A97
+0x2739a  ldloc.0
+0x2739b  ldc.i4   0x599ABCD0
+0x273a0  beq      loc_27A2E
+0x273a5  br       loc_27EE4
+0x273aa  ldloc.0
+0x273ab  ldc.i4   0x5AF2B174
+0x273b0  beq      loc_2774F
+0x273b5  ldloc.0
+0x273b6  ldc.i4   0x5DA61C8E
+0x273bb  beq      loc_278DE
+0x273c0  ldloc.0
+0x273c1  ldc.i4   0x5DDB48F2
+0x273c6  beq      loc_276BC
+0x273cb  br       loc_27EE4
+0x273d0  ldloc.0
+0x273d1  ldc.i4   0x6FF9C43B
+0x273d6  bgt.un.s loc_27416
+0x273d8  ldloc.0
+0x273d9  ldc.i4   0x61F2E13A
+0x273de  bgt.un.s loc_273FB
+0x273e0  ldloc.0
+0x273e1  ldc.i4   0x5E371925
+0x273e6  beq      loc_277E2
+0x273eb  ldloc.0
+0x273ec  ldc.i4   0x61F2E13A
+0x273f1  beq      loc_277CD
+0x273f6  br       loc_27EE4
+0x273fb  ldloc.0
+0x273fc  ldc.i4   0x66614D76
+0x27401  beq      loc_277F7
+0x27406  ldloc.0
+0x27407  ldc.i4   0x6FF9C43B
+0x2740c  beq      loc_27B93
+0x27411  br       loc_27EE4
+0x27416  ldloc.0
+0x27417  ldc.i4   0x71AEF4CA
+0x2741c  bgt.un.s loc_27439
+0x2741e  ldloc.0
+0x2741f  ldc.i4   0x709F3006
+0x27424  beq      loc_27BD2
+0x27429  ldloc.0
+0x2742a  ldc.i4   0x71AEF4CA
+0x2742f  beq      loc_278C9
+0x27434  br       loc_27EE4
+0x27439  ldloc.0
+0x2743a  ldc.i4   0x73014161
+0x2743f  beq      loc_27A19
+0x27444  ldloc.0
+0x27445  ldc.i4   0x737B5F2F
+0x2744a  beq      loc_277A3
+0x2744f  ldloc.0
+0x27450  ldc.i4   0x7ACA722C
+0x27455  beq      loc_27B54
+0x2745a  br       loc_27EE4
+0x2745f  ldloc.0
+0x27460  ldc.i4   0xBB3B77CA
+0x27465  bgt.un   loc_27593
+0x2746a  ldloc.0
+0x2746b  ldc.i4   0x8C780ED6
+0x27470  bgt.un   loc_27504
+0x27475  ldloc.0
+0x27476  ldc.i4   0x7E7644A8
+0x2747b  bgt.un.s loc_274BB
+0x2747d  ldloc.0
+0x2747e  ldc.i4   0x7CC30422
+0x27483  bgt.un.s loc_274A0
+0x27485  ldloc.0
+0x27486  ldc.i4   0x7C5A1C77
+0x2748b  beq      loc_27779
+0x27490  ldloc.0
+0x27491  ldc.i4   0x7CC30422
+0x27496  beq      loc_2799B
+0x2749b  br       loc_27EE4
+0x274a0  ldloc.0
+0x274a1  ldc.i4   0x7D9437EF
+0x274a6  beq      loc_27AC1
+0x274ab  ldloc.0
+0x274ac  ldc.i4   0x7E7644A8
+0x274b1  beq      loc_2773A
+0x274b6  br       loc_27EE4
+0x274bb  ldloc.0
+0x274bc  ldc.i4   0x888F94B0
+0x274c1  bgt.un.s loc_274DE
+0x274c3  ldloc.0
+0x274c4  ldc.i4   0x845D1B18
+0x274c9  beq      loc_276E6
+0x274ce  ldloc.0
+0x274cf  ldc.i4   0x888F94B0
+0x274d4  beq      loc_27971
+0x274d9  br       loc_27EE4
+0x274de  ldloc.0
+0x274df  ldc.i4   0x8AFC5F3B
+0x274e4  beq      loc_27B2A
+0x274e9  ldloc.0
+0x274ea  ldc.i4   0x8B9773EB
+0x274ef  beq      loc_27AD6
+0x274f4  ldloc.0
+0x274f5  ldc.i4   0x8C780ED6
+0x274fa  beq      loc_27B69
+0x274ff  br       loc_27EE4
+0x27504  ldloc.0
+0x27505  ldc.i4   0x9B06BC72
+0x2750a  bgt.un.s loc_2754A
+0x2750c  ldloc.0
+0x2750d  ldc.i4   0x93113753
+0x27512  bgt.un.s loc_2752F
+0x27514  ldloc.0
+0x27515  ldc.i4   0x92404681
+0x2751a  beq      loc_27932
+0x2751f  ldloc.0
+0x27520  ldc.i4   0x93113753
+0x27525  beq      loc_27C65
+0x2752a  br       loc_27EE4
+0x2752f  ldloc.0
+0x27530  ldc.i4   0x93765A8E
+0x27535  beq      loc_27821
+0x2753a  ldloc.0
+0x2753b  ldc.i4   0x9B06BC72
+0x27540  beq      loc_27C8F
+0x27545  br       loc_27EE4
+0x2754a  ldloc.0
+0x2754b  ldc.i4   0xAC34AF95
+0x27550  bgt.un.s loc_2756D
+0x27552  ldloc.0
+0x27553  ldc.i4   0xA927FD4F
+0x27558  beq      loc_27B15
+0x2755d  ldloc.0
+0x2755e  ldc.i4   0xAC34AF95
+0x27563  beq      loc_279DA
+0x27568  br       loc_27EE4
+0x2756d  ldloc.0
+0x2756e  ldc.i4   0xB8F407AE
+0x27573  beq      loc_27947
+0x27578  ldloc.0
+0x27579  ldc.i4   0xBA93B48E
+0x2757e  beq      loc_27710
+0x27583  ldloc.0
+0x27584  ldc.i4   0xBB3B77CA
+0x27589  beq      loc_27A6D
+0x2758e  br       loc_27EE4
+0x27593  ldloc.0
+0x27594  ldc.i4   0xDDD52230
+0x27599  bgt.un   loc_2762D
+0x2759e  ldloc.0
+0x2759f  ldc.i4   0xCD388173
+0x275a4  bgt.un.s loc_275E4
+0x275a6  ldloc.0
+0x275a7  ldc.i4   0xC534DA20
+0x275ac  bgt.un.s loc_275C9
+0x275ae  ldloc.0
+0x275af  ldc.i4   0xBB6BC158
+0x275b4  beq      loc_27BA8
+0x275b9  ldloc.0
+0x275ba  ldc.i4   0xC534DA20
+0x275bf  beq      loc_27A58
+0x275c4  br       loc_27EE4
+0x275c9  ldloc.0
+0x275ca  ldc.i4   0xCB310C98
+0x275cf  beq      loc_27908
+0x275d4  ldloc.0
+0x275d5  ldc.i4   0xCD388173
+0x275da  beq      loc_27C7A
+0x275df  br       loc_27EE4
+0x275e4  ldloc.0
+0x275e5  ldc.i4   0xD0E24F3A
+0x275ea  bgt.un.s loc_27607
+0x275ec  ldloc.0
+0x275ed  ldc.i4   0xD08919C3
+0x275f2  beq      loc_2780C
+0x275f7  ldloc.0
+0x275f8  ldc.i4   0xD0E24F3A
+0x275fd  beq      loc_27C26
+0x27602  br       loc_27EE4
+0x27607  ldloc.0
+0x27608  ldc.i4   0xD78B23BF
+0x2760d  beq      loc_2788A
+0x27612  ldloc.0
+0x27613  ldc.i4   0xDA4EBB24
+0x27618  beq      loc_2778E
+  ... truncated ...
+```

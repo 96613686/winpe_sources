@@ -1,0 +1,84 @@
+# Microsoft.Crm.Application.WebServices.ParameterBag::Exists
+
+- ea: `0x190`
+- end: `0x19b`
+- name: `Microsoft.Crm.Application.WebServices.ParameterBag::Exists`
+- size: `11`
+- prototype: ``
+- caller_count: `52`
+- callee_count: `1`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x430`
+- `0xaf0`
+- `0xbe0`
+- `0x1000`
+- `0x1400`
+- `0x1580`
+- `0x1650`
+- `0x17d0`
+- `0x26f0`
+- `0x2ad0`
+- `0x2b10`
+- `0x2b90`
+- `0x2cb0`
+- `0x2d10`
+- `0x2e80`
+- `0x2f30`
+- `0x2f50`
+- `0x31b0`
+- `0x3450`
+- `0x3880`
+- `0x3920`
+- `0x39c0`
+- `0x3a00`
+- `0x3a40`
+- `0x3a60`
+- `0x3a80`
+- `0x3ac0`
+- `0x3c10`
+- `0x3c90`
+- `0x3cb0`
+- `0x3cd0`
+- `0x3da0`
+- `0x3dc0`
+- `0x3de0`
+- `0x3e00`
+- `0x3e20`
+- `0x3e40`
+- `0x3eb0`
+- `0x3f20`
+- `0x3f80`
+- `0x3ff0`
+- `0x4020`
+- `0x4100`
+- `0x4230`
+- `0x9850`
+- `0x9a10`
+- `0x9bd0`
+- `0xa0c0`
+- `0xa3d0`
+- `0xa7f0`
+
+## callees
+
+- `0x70`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x190  ldarg.0
+0x191  ldarg.1
+0x192  call     instance class [System.Xml]System.Xml.XmlNode Microsoft.Crm.Application.WebServices.ParameterBag::GetNode(string name)
+0x197  ldnull
+0x198  cgt.un
+0x19a  ret
+```
