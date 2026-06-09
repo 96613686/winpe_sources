@@ -1,0 +1,645 @@
+# RtlpQueryRegistryValues
+
+- ea: `0x1409737d4`
+- end: `0x140973cf9`
+- name: `RtlpQueryRegistryValues`
+- size: `1317`
+- prototype: `__int64 __fastcall(int, int, int, int, ULONG, char)`
+- caller_count: `33`
+- callee_count: `13`
+- tags: `reparse_path, authz_impersonation, registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x1407513f0`
+- `0x140763e90`
+- `0x1407765e8`
+- `0x1407ad7fc`
+- `0x1407ad890`
+- `0x1407ae864`
+- `0x1407ba024`
+- `0x1407ba884`
+- `0x1407cc7d8`
+- `0x1407cfe48`
+- `0x1407d6664`
+- `0x1407d6b88`
+- `0x1407e23cc`
+- `0x1407e37d8`
+- `0x1407e3874`
+- `0x140840730`
+- `0x140972e24`
+- `0x140973750`
+- `0x140973770`
+- `0x140975508`
+- `0x1409b055c`
+- `0x1409b2fd4`
+- `0x1409b3500`
+- `0x140a0ac14`
+- `0x140a5f680`
+- `0x140a6c288`
+- `0x140a6d1d4`
+- `0x140a6d948`
+- `0x140a6fd38`
+- `0x140a81b98`
+- `0x140ad9fbc`
+- `0x140ae2040`
+- `0x140b039e4`
+
+## callees
+
+- `0x14020f1c0`
+- `0x1403f2d50`
+- `0x1406daa70`
+- `0x1406daad0`
+- `0x1406daaf0`
+- `0x1406dab70`
+- `0x1406dc470`
+- `0x1406e8590`
+- `0x1409737d4`
+- `0x140973d00`
+- `0x140974194`
+- `0x140bae410`
+- `0x140bae8e0`
+
+## string_xrefs
+
+- `0x140973b56`: `RtlpQueryRegistryValues: Miscomputed buffer size at line %d\n`
+- `0x140973c8b`: `RtlpQueryRegistryValues: Miscomputed buffer size at line %d\n`
+
+## pseudocode
+
+```c
+__int64 __fastcall RtlpQueryRegistryValues(__int64 a1, const WCHAR *a2, _QWORD *a3, __int64 a4, ULONG a5, char a6)
+{
+  __int64 v6; // r15
+  const WCHAR *v8; // rbx
+  int v9; // r14d
+  __int64 result; // rax
+  int v11; // r14d
+  __int64 Pool2; // rax
+  __int64 v13; // rdi
+  NTSTATUS v14; // ebx
+  __int64 Length; // rsi
+  int *v16; // r13
+  int v17; // eax
+  const WCHAR *v18; // rdx
+  int v19; // r14d
+  NTSTATUS v20; // eax
+  int v21; // eax
+  __int64 v22; // rsi
+  __int64 v23; // rax
+  __int64 v24; // r14
+  int v25; // r15d
+  ULONG i; // esi
+  NTSTATUS v27; // eax
+  NTSTATUS v28; // eax
+  char v29; // al
+  int v30; // eax
+  __int64 v31; // r14
+  __int64 v32; // rax
+  int ResultLength; // [rsp+28h] [rbp-71h]
+  int ResultLengtha; // [rsp+28h] [rbp-71h]
+  HANDLE KeyHandle; // [rsp+40h] [rbp-59h] BYREF
+  HANDLE Handle; // [rsp+48h] [rbp-51h] BYREF
+  ULONG v37[2]; // [rsp+50h] [rbp-49h]
+  UNICODE_STRING ValueName; // [rsp+58h] [rbp-41h] BYREF
+  UNICODE_STRING DestinationString; // [rsp+68h] [rbp-31h] BYREF
+  OBJECT_ATTRIBUTES ObjectAttributes; // [rsp+78h] [rbp-21h] BYREF
+  int v41; // [rsp+F0h] [rbp+57h]
+
+  v6 = a4;
+  Handle = 0;
+  KeyHandle = 0;
+  a5 = 0;
+  v8 = a2;
+  v9 = a1;
+  memset(&ObjectAttributes, 0, 44);
+  DestinationString = 0;
+  ValueName = 0;
+  result = RtlpGetRegistryHandle(a1, a2, 0, &Handle);
+  if ( (int)result < 0 )
+    return result;
+  v11 = v9 & 0x40000000;
+  v41 = v11;
+  if ( v11 )
+    v8 = 0;
+  RtlInitUnicodeString(&DestinationString, v8);
+  Pool2 = ExAllocatePool2(256, 136, 1987211602);
+  v13 = Pool2;
+  if ( !Pool2 )
+  {
+    if ( !v11 )
+      ZwClose(Handle);
+    return 3221225495LL;
+  }
+  *(_DWORD *)(Pool2 + 8) = 0;
+  v14 = 0;
+  LODWORD(Length) = 134;
+  *(_QWORD *)v37 = 134;
+  KeyHandle = Handle;
+LABEL_20:
+  v16 = (int *)(a3 + 1);
+  if ( !*a3 && (*v16 & 0x21) == 0 )
+    goto LABEL_9;
+  v17 = *v16;
+  if ( (*v16 & 0x20) != 0 && (!a3[2] || (v17 & 1) != 0 || *a3) )
+    goto LABEL_48;
+  if ( (v17 & 3) != 0 && KeyHandle != Handle )
+  {
+    ZwClose(KeyHandle);
+    KeyHandle = Handle;
+  }
+  v18 = (const WCHAR *)a3[2];
+  if ( (*v16 & 1) != 0 )
+  {
+    if ( !v18 )
+    {
+LABEL_48:
+      v14 = -1073741811;
+      goto LABEL_9;
+    }
+    RtlInitUnicodeString(&DestinationString, v18);
+    ObjectAttributes.RootDirectory = Handle;
+    ObjectAttributes.Length = 48;
+    ObjectAttributes.ObjectName = &DestinationString;
+    ObjectAttributes.Attributes = 576;
+    *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+    v14 = ZwOpenKey(&KeyHandle, 0x2000000u, &ObjectAttributes);
+    if ( v14 < 0 )
+      goto LABEL_40;
+    if ( !*a3 )
+      goto LABEL_41;
+LABEL_50:
+    LODWORD(v24) = v37[0];
+    v25 = 0;
+    for ( i = 0; ; ++i )
+    {
+      v27 = ZwEnumerateValueKey(KeyHandle, i, KeyValueFullInformation, (PVOID)v13, v24, &a5);
+      v14 = v27;
+      if ( v27 == -2147483643 )
+      {
+        v14 = -1073741789;
+      }
+      else
+      {
+        if ( v27 == -2147483622 )
+        {
+          if ( i || (*v16 & 4) == 0 )
+            v14 = 0;
+          else
+            v14 = -1073741772;
+          goto LABEL_40;
+        }
+        if ( v27 >= 0 )
+        {
+          a5 = v24;
+          v30 = RtlpCallQueryRegistryRoutine(
+                  (_DWORD)KeyHandle,
+                  (_DWORD)a3,
+                  v13,
+                  (unsigned int)&a5,
+                  a4,
+                  ResultLengtha,
+                  a6);
+          v14 = v30;
+          goto LABEL_70;
+        }
+      }
+      v30 = v14;
+LABEL_70:
+      if ( v30 == -1073741789 )
+      {
+        v31 = a5;
+        if ( v13 )
+          ExFreePoolWithTag((PVOID)v13, 0);
+        v32 = ExAllocatePool2(256, v31 + 10, 1987211602);
+        v13 = v32;
+        if ( !v32 )
+        {
+LABEL_8:
+          v14 = -1073741801;
+          goto LABEL_9;
+        }
+        v14 = 0;
+        v24 = v31 + 8;
+        *(_DWORD *)(v32 + 8) = 0;
+        *(_QWORD *)v37 = v24;
+        if ( v25 > 4 )
+        {
+          DbgPrint("RtlpQueryRegistryValues: Miscomputed buffer size at line %d\n", 1646);
+          goto LABEL_41;
+        }
+        --i;
+        ++v25;
+      }
+      else
+      {
+        if ( v30 < 0 )
+          goto LABEL_40;
+        v25 = 0;
+        if ( (*v16 & 0x40) != 0 )
+        {
+          ValueName.Buffer = (wchar_t *)(v13 + 20);
+          ValueName.Length = *(_WORD *)(v13 + 16);
+          ValueName.MaximumLength = *(_WORD *)(v13 + 16);
+          if ( ZwDeleteValueKey(KeyHandle, &ValueName) >= 0 )
+            --i;
+        }
+      }
+    }
+  }
+  if ( v18 )
+  {
+    RtlInitUnicodeString(&ValueName, v18);
+    v19 = 0;
+    while ( 1 )
+    {
+      if ( v19 > 4 )
+      {
+        DbgPrint("RtlpQueryRegistryValues: Miscomputed buffer size at line %d\n", 1459);
+        goto LABEL_9;
+      }
+      ++v19;
+      v20 = ZwQueryValueKey(KeyHandle, &ValueName, KeyValueFullInformation, (PVOID)v13, Length, &a5);
+      v14 = v20;
+      if ( v20 == -2147483643 )
+        break;
+      if ( v20 >= 0 )
+      {
+        if ( *(_DWORD *)(v13 + 4) == 7 )
+        {
+          *(_WORD *)(a5 + v13) = 0;
+          *(_DWORD *)(v13 + 12) += 2;
+        }
+        a5 = Length;
+        v21 = RtlpCallQueryRegistryRoutine((_DWORD)KeyHandle, (_DWORD)a3, v13, (unsigned int)&a5, v6, ResultLength, a6);
+        v14 = v21;
+        if ( v21 != -1073741789 )
+        {
+          if ( v21 < 0 )
+            goto LABEL_9;
+          if ( (*v16 & 0x40) != 0 )
+            ZwDeleteValueKey(KeyHandle, &ValueName);
+LABEL_41:
+          LODWORD(Length) = v37[0];
+          a3 += 7;
+          v6 = a4;
+          goto LABEL_20;
+        }
+        v22 = a5;
+LABEL_43:
+        ExFreePoolWithTag((PVOID)v13, 0);
+        goto LABEL_44;
+      }
+      if ( v20 != -1073741772 )
+        goto LABEL_62;
+      v29 = a6;
+      *(_DWORD *)(v13 + 4) = 0;
+      *(_DWORD *)(v13 + 12) = 0;
+      a5 = Length;
+      v28 = RtlpCallQueryRegistryRoutine((_DWORD)KeyHandle, (_DWORD)a3, v13, (unsigned int)&a5, v6, ResultLength, v29);
+      v14 = v28;
+LABEL_65:
+      if ( v28 != -1073741789 )
+        goto LABEL_40;
+      v22 = a5;
+      if ( v13 )
+        goto LABEL_43;
+LABEL_44:
+      v23 = ExAllocatePool2(256, v22 + 10, 1987211602);
+      v13 = v23;
+      if ( !v23 )
+        goto LABEL_8;
+      v14 = 0;
+      Length = v22 + 8;
+      *(_DWORD *)(v23 + 8) = 0;
+      *(_QWORD *)v37 = Length;
+    }
+    v14 = -1073741789;
+LABEL_62:
+    v28 = v14;
+    goto LABEL_65;
+  }
+  if ( (*v16 & 8) == 0 )
+    goto LABEL_50;
+  v14 = guard_dispatch_icall_no_overrides(0, 0, 0);
+LABEL_40:
+  if ( v14 >= 0 )
+    goto LABEL_41;
+LABEL_9:
+  if ( Handle && !v41 )
+    ZwClose(Handle);
+  if ( KeyHandle && KeyHandle != Handle )
+    ZwClose(KeyHandle);
+  if ( v13 )
+    ExFreePoolWithTag((PVOID)v13, 0);
+  return (unsigned int)v14;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1409737d4  mov     [rsp-8+arg_8], rbx
+0x1409737d9  mov     [rsp-8+arg_18], r9
+0x1409737de  push    rbp
+0x1409737df  push    rsi
+0x1409737e0  push    rdi
+0x1409737e1  push    r12
+0x1409737e3  push    r13
+0x1409737e5  push    r14
+0x1409737e7  push    r15
+0x1409737e9  lea     rbp, [rsp-17h]
+0x1409737ee  sub     rsp, 0B0h
+0x1409737f5  xorps   xmm0, xmm0
+0x1409737f8  xor     esi, esi
+0x1409737fa  mov     r15, r9
+0x1409737fd  mov     [rbp+47h+Handle], rsi
+0x140973801  mov     r12, r8
+0x140973804  mov     [rbp+47h+KeyHandle], rsi
+0x140973808  xorps   xmm1, xmm1
+0x14097380b  mov     [rbp+47h+arg_20], esi
+0x14097380e  movups  xmmword ptr [rbp+47h+ObjectAttributes.ObjectName], xmm0
+0x140973812  xor     eax, eax
+0x140973814  lea     r9, [rbp+47h+Handle]
+0x140973818  xor     r8d, r8d
+0x14097381b  mov     rbx, rdx
+0x14097381e  movups  xmmword ptr [rbp+47h+ObjectAttributes+1Ch], xmm0
+0x140973822  mov     r14d, ecx
+0x140973825  movups  xmmword ptr [rbp+47h+ObjectAttributes.Length], xmm0
+0x140973829  movups  xmmword ptr [rbp+47h+DestinationString.Length], xmm0
+0x14097382d  movups  xmmword ptr [rbp+47h+ValueName.Length], xmm1
+0x140973831  call    RtlpGetRegistryHandle
+0x140973836  test    eax, eax
+0x140973838  js      loc_1409738C7
+0x14097383e  and     r14d, 40000000h
+0x140973845  lea     rcx, [rbp+47h+DestinationString]; DestinationString
+0x140973849  mov     [rbp+47h+arg_0], r14d
+0x14097384d  cmovnz  rbx, rsi
+0x140973851  mov     rdx, rbx; SourceString
+0x140973854  call    RtlInitUnicodeString
+0x140973859  mov     edx, 88h
+0x14097385e  mov     r8d, 76727152h
+0x140973864  lea     ecx, [rdx+78h]
+0x140973867  call    ExAllocatePool2
+0x14097386c  mov     rdi, rax
+0x14097386f  test    rax, rax
+0x140973872  jnz     short loc_1409738E3
+0x140973874  test    r14d, r14d
+0x140973877  jnz     short loc_140973882
+0x140973879  mov     rcx, [rbp+47h+Handle]; Handle
+0x14097387d  call    ZwClose
+0x140973882  mov     eax, 0C0000017h
+0x140973887  jmp     short loc_1409738C7
+0x140973889  mov     ebx, 0C0000017h
+0x14097388e  mov     rcx, [rbp+47h+Handle]; Handle
+0x140973892  test    rcx, rcx
+0x140973895  jz      short loc_1409738A2
+0x140973897  cmp     [rbp+47h+arg_0], 0
+0x14097389b  jnz     short loc_1409738A2
+0x14097389d  call    ZwClose
+0x1409738a2  mov     rcx, [rbp+47h+KeyHandle]; Handle
+0x1409738a6  test    rcx, rcx
+0x1409738a9  jz      short loc_1409738B6
+0x1409738ab  cmp     rcx, [rbp+47h+Handle]
+0x1409738af  jz      short loc_1409738B6
+0x1409738b1  call    ZwClose
+0x1409738b6  test    rdi, rdi
+0x1409738b9  jz      short loc_1409738C5
+0x1409738bb  xor     edx, edx; Tag
+0x1409738bd  mov     rcx, rdi; P
+0x1409738c0  call    ExFreePoolWithTag
+0x1409738c5  mov     eax, ebx
+0x1409738c7  mov     rbx, [rsp+0E0h+arg_8]
+0x1409738cf  add     rsp, 0B0h
+0x1409738d6  pop     r15
+0x1409738d8  pop     r14
+0x1409738da  pop     r13
+0x1409738dc  pop     r12
+0x1409738de  pop     rdi
+0x1409738df  pop     rsi
+0x1409738e0  pop     rbp
+0x1409738e1  retn
+0x1409738e3  mov     [rax+8], esi
+0x1409738e6  mov     ebx, esi
+0x1409738e8  mov     rax, [rbp+47h+Handle]
+0x1409738ec  mov     esi, 86h
+0x1409738f1  mov     qword ptr [rbp+47h+var_90], rsi
+0x1409738f5  mov     [rbp+47h+KeyHandle], rax
+0x1409738f9  mov     rcx, [r12]
+0x1409738fd  lea     r13, [r12+8]
+0x140973902  test    rcx, rcx
+0x140973905  jz      loc_140973AB0
+0x14097390b  mov     eax, [r13+0]
+0x14097390f  test    al, 20h
+0x140973911  jz      short loc_140973930
+0x140973913  cmp     qword ptr [r12+10h], 0
+0x140973919  jz      loc_140973AC1
+0x14097391f  test    al, 1
+0x140973921  jnz     loc_140973AC1
+0x140973927  test    rcx, rcx
+0x14097392a  jnz     loc_140973AC1
+0x140973930  test    al, 3
+0x140973932  jnz     loc_140973B31
+0x140973938  mov     eax, [r13+0]
+0x14097393c  mov     rdx, [r12+10h]; SourceString
+0x140973941  test    al, 1
+0x140973943  jnz     loc_140973A04
+0x140973949  test    rdx, rdx
+0x14097394c  jz      loc_140973ACB
+0x140973952  lea     rcx, [rbp+47h+ValueName]; DestinationString
+0x140973956  call    RtlInitUnicodeString
+0x14097395b  xor     r14d, r14d
+0x14097395e  cmp     r14d, 4
+0x140973962  jg      loc_140973B51
+0x140973968  mov     rcx, [rbp+47h+KeyHandle]; KeyHandle
+0x14097396c  lea     rax, [rbp+47h+arg_20]
+0x140973970  mov     [rsp+0E0h+ResultLength], rax; ResultLength
+0x140973975  lea     rdx, [rbp+47h+ValueName]; ValueName
+0x140973979  mov     r9, rdi; KeyValueInformation
+0x14097397c  mov     [rsp+0E0h+Length], esi; Length
+0x140973980  mov     r8d, 1; KeyValueInformationClass
+0x140973986  inc     r14d
+0x140973989  call    ZwQueryValueKey
+0x14097398e  mov     ebx, eax
+0x140973990  cmp     eax, 80000005h
+0x140973995  jz      loc_140973B90
+0x14097399b  test    eax, eax
+0x14097399d  js      loc_140973B99
+0x1409739a3  cmp     dword ptr [rdi+4], 7
+0x1409739a7  jnz     short loc_1409739B6
+0x1409739a9  mov     ecx, [rbp+47h+arg_20]
+0x1409739ac  xor     eax, eax
+0x1409739ae  mov     [rcx+rdi], ax
+0x1409739b2  add     dword ptr [rdi+0Ch], 2
+0x1409739b6  mov     al, [rbp+47h+arg_28]
+0x1409739b9  lea     r9, [rbp+47h+arg_20]
+0x1409739bd  mov     rcx, [rbp+47h+KeyHandle]
+0x1409739c1  mov     r8, rdi
+0x1409739c4  mov     [rsp+0E0h+var_B0], al
+0x1409739c8  mov     rdx, r12
+0x1409739cb  mov     qword ptr [rsp+0E0h+Length], r15
+0x1409739d0  mov     [rbp+47h+arg_20], esi
+0x1409739d3  call    RtlpCallQueryRegistryRoutine
+0x1409739d8  mov     ebx, eax
+0x1409739da  cmp     eax, 0C0000023h
+0x1409739df  jz      loc_140973A71
+0x1409739e5  test    eax, eax
+0x1409739e7  js      loc_14097388E
+0x1409739ed  mov     eax, [r13+0]
+0x1409739f1  test    al, 40h
+0x1409739f3  jz      short loc_140973A60
+0x1409739f5  mov     rcx, [rbp+47h+KeyHandle]; KeyHandle
+0x1409739f9  lea     rdx, [rbp+47h+ValueName]; ValueName
+0x1409739fd  call    ZwDeleteValueKey
+0x140973a02  jmp     short loc_140973A60
+0x140973a04  test    rdx, rdx
+0x140973a07  jz      loc_140973AC1
+0x140973a0d  lea     rcx, [rbp+47h+DestinationString]; DestinationString
+0x140973a11  call    RtlInitUnicodeString
+0x140973a16  mov     rax, [rbp+47h+Handle]
+0x140973a1a  lea     r8, [rbp+47h+ObjectAttributes]; ObjectAttributes
+0x140973a1e  mov     [rbp+47h+ObjectAttributes.RootDirectory], rax
+0x140973a22  lea     rcx, [rbp+47h+KeyHandle]; KeyHandle
+0x140973a26  lea     rax, [rbp+47h+DestinationString]
+0x140973a2a  mov     [rbp+47h+ObjectAttributes.Length], 30h ; '0'
+0x140973a31  xorps   xmm0, xmm0
+0x140973a34  mov     [rbp+47h+ObjectAttributes.ObjectName], rax
+0x140973a38  mov     edx, 2000000h; DesiredAccess
+0x140973a3d  mov     [rbp+47h+ObjectAttributes.Attributes], 240h
+0x140973a44  movdqu  xmmword ptr [rbp+47h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140973a49  call    ZwOpenKey
+0x140973a4e  mov     ebx, eax
+0x140973a50  test    eax, eax
+0x140973a52  jns     loc_140973B25
+0x140973a58  test    ebx, ebx
+0x140973a5a  js      loc_14097388E
+0x140973a60  mov     rsi, qword ptr [rbp+47h+var_90]
+0x140973a64  add     r12, 38h ; '8'
+0x140973a68  mov     r15, [rbp+47h+arg_18]
+0x140973a6c  jmp     loc_1409738F9
+0x140973a71  mov     esi, [rbp+47h+arg_20]
+0x140973a74  xor     edx, edx; Tag
+0x140973a76  mov     rcx, rdi; P
+0x140973a79  call    ExFreePoolWithTag
+0x140973a7e  mov     r8d, 76727152h
+0x140973a84  lea     rdx, [rsi+0Ah]
+0x140973a88  mov     ecx, 100h
+0x140973a8d  call    ExAllocatePool2
+0x140973a92  mov     rdi, rax
+0x140973a95  test    rax, rax
+0x140973a98  jz      loc_140973889
+0x140973a9e  xor     ebx, ebx
+0x140973aa0  add     rsi, 8
+0x140973aa4  mov     [rax+8], ebx
+0x140973aa7  mov     qword ptr [rbp+47h+var_90], rsi
+0x140973aab  jmp     loc_14097395E
+0x140973ab0  mov     eax, [r13+0]
+0x140973ab4  test    al, 21h
+0x140973ab6  jnz     loc_14097390B
+0x140973abc  jmp     loc_14097388E
+0x140973ac1  mov     ebx, 0C000000Dh
+0x140973ac6  jmp     loc_14097388E
+0x140973acb  test    al, 8
+0x140973acd  jnz     loc_140973B67
+0x140973ad3  mov     r14, qword ptr [rbp+47h+var_90]
+0x140973ad7  xor     r15d, r15d
+0x140973ada  xor     esi, esi
+0x140973adc  mov     rcx, [rbp+47h+KeyHandle]; KeyHandle
+0x140973ae0  lea     rax, [rbp+47h+arg_20]
+0x140973ae4  mov     [rsp+0E0h+ResultLength], rax; ResultLength
+0x140973ae9  mov     r9, rdi; KeyValueInformation
+0x140973aec  mov     r8d, 1; KeyValueInformationClass
+0x140973af2  mov     [rsp+0E0h+Length], r14d; Length
+0x140973af7  mov     edx, esi; Index
+0x140973af9  call    ZwEnumerateValueKey
+0x140973afe  mov     ebx, eax
+0x140973b00  cmp     eax, 80000005h
+0x140973b05  jz      loc_140973CA3
+0x140973b0b  cmp     eax, 8000001Ah
+0x140973b10  jnz     loc_140973BEE
+0x140973b16  test    esi, esi
+0x140973b18  jz      loc_140973CE3
+0x140973b1e  xor     ebx, ebx
+0x140973b20  jmp     loc_140973A58
+0x140973b25  cmp     qword ptr [r12], 0
+0x140973b2a  jnz     short loc_140973AD3
+0x140973b2c  jmp     loc_140973A60
+0x140973b31  mov     rcx, [rbp+47h+KeyHandle]; Handle
+0x140973b35  cmp     rcx, [rbp+47h+Handle]
+0x140973b39  jz      loc_140973938
+0x140973b3f  call    ZwClose
+0x140973b44  mov     rax, [rbp+47h+Handle]
+0x140973b48  mov     [rbp+47h+KeyHandle], rax
+0x140973b4c  jmp     loc_140973938
+0x140973b51  mov     edx, 5B3h
+0x140973b56  lea     rcx, aRtlpqueryregis; "RtlpQueryRegistryValues: Miscomputed bu"...
+0x140973b5d  call    DbgPrint
+0x140973b62  jmp     loc_14097388E
+0x140973b67  mov     rcx, [r12+18h]
+0x140973b6c  xor     r9d, r9d
+0x140973b6f  mov     rax, [r12]
+0x140973b73  xor     r8d, r8d
+0x140973b76  mov     [rsp+0E0h+ResultLength], rcx
+0x140973b7b  xor     edx, edx
+0x140973b7d  xor     ecx, ecx
+0x140973b7f  mov     qword ptr [rsp+0E0h+Length], r15
+0x140973b84  call    _guard_dispatch_icall_no_overrides
+0x140973b89  mov     ebx, eax
+0x140973b8b  jmp     loc_140973A58
+0x140973b90  mov     ebx, 0C0000023h
+0x140973b95  mov     eax, ebx
+0x140973b97  jmp     short loc_140973BD2
+0x140973b99  cmp     eax, 0C0000034h
+0x140973b9e  jnz     short loc_140973B95
+0x140973ba0  mov     al, [rbp+47h+arg_28]
+0x140973ba3  lea     r9, [rbp+47h+arg_20]
+0x140973ba7  mov     dword ptr [rdi+4], 0
+0x140973bae  mov     r8, rdi
+0x140973bb1  mov     dword ptr [rdi+0Ch], 0
+0x140973bb8  mov     rdx, r12
+0x140973bbb  mov     rcx, [rbp+47h+KeyHandle]
+0x140973bbf  mov     [rsp+0E0h+var_B0], al
+0x140973bc3  mov     qword ptr [rsp+0E0h+Length], r15
+0x140973bc8  mov     [rbp+47h+arg_20], esi
+0x140973bcb  call    RtlpCallQueryRegistryRoutine
+0x140973bd0  mov     ebx, eax
+0x140973bd2  cmp     eax, 0C0000023h
+0x140973bd7  jnz     loc_140973A58
+0x140973bdd  mov     esi, [rbp+47h+arg_20]
+0x140973be0  test    rdi, rdi
+0x140973be3  jnz     loc_140973A74
+0x140973be9  jmp     loc_140973A7E
+0x140973bee  test    eax, eax
+0x140973bf0  js      loc_140973CA8
+0x140973bf6  mov     al, [rbp+47h+arg_28]
+0x140973bf9  lea     r9, [rbp+47h+arg_20]
+0x140973bfd  mov     rcx, [rbp+47h+KeyHandle]
+0x140973c01  mov     r8, rdi
+0x140973c04  mov     [rsp+0E0h+var_B0], al
+0x140973c08  mov     rdx, r12
+0x140973c0b  mov     rax, [rbp+47h+arg_18]
+0x140973c0f  mov     qword ptr [rsp+0E0h+Length], rax
+0x140973c14  mov     [rbp+47h+arg_20], r14d
+0x140973c18  call    RtlpCallQueryRegistryRoutine
+0x140973c1d  mov     ebx, eax
+0x140973c1f  cmp     eax, 0C0000023h
+0x140973c24  jz      short loc_140973C40
+0x140973c26  test    eax, eax
+0x140973c28  js      loc_140973A58
+0x140973c2e  mov     eax, [r13+0]
+0x140973c32  xor     r15d, r15d
+0x140973c35  test    al, 40h
+0x140973c37  jnz     short loc_140973CAF
+0x140973c39  inc     esi
+0x140973c3b  jmp     loc_140973ADC
+0x140973c40  mov     r14d, [rbp+47h+arg_20]
+0x140973c44  test    rdi, rdi
+0x140973c47  jz      short loc_140973C53
+0x140973c49  xor     edx, edx; Tag
+0x140973c4b  mov     rcx, rdi; P
+0x140973c4e  call    ExFreePoolWithTag
+0x140973c53  mov     r8d, 76727152h
+  ... truncated ...
+```

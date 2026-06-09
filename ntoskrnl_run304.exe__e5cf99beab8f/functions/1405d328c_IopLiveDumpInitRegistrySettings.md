@@ -1,0 +1,242 @@
+# IopLiveDumpInitRegistrySettings
+
+- ea: `0x1405d328c`
+- end: `0x1405d3454`
+- name: `IopLiveDumpInitRegistrySettings`
+- size: `456`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `5`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x1404f0cd4`
+
+## callees
+
+- `0x1405cfb1c`
+- `0x1405cfb3c`
+- `0x1405d328c`
+- `0x1408eef70`
+- `0x140aaf718`
+
+## string_xrefs
+
+- `0x1405d32a4`: `\Registry\Machine\System\CurrentControlSet\Control\LiveDump`
+- `0x1405d3327`: `MirrorSystemPartitionOnly`
+- `0x1405d33f1`: `EnableIoSpaceWriteProtection`
+
+## pseudocode
+
+```c
+NTSTATUS __fastcall IopLiveDumpInitRegistrySettings(__int64 a1)
+{
+  NTSTATUS result; // eax
+  unsigned int RegistryULongValue; // eax
+  int v4; // ecx
+  unsigned __int64 v5; // rax
+  unsigned int v6; // ecx
+  __int16 RegistryBoolValue; // ax
+  HANDLE v8; // rcx
+  char v9; // al
+  HANDLE v10; // rcx
+  char v11; // al
+  HANDLE v12; // rcx
+  __int16 v13; // ax
+  HANDLE v14; // rcx
+  __int16 v15; // ax
+  HANDLE v16; // rcx
+  int v17; // eax
+  HANDLE v18; // rcx
+  int v19; // eax
+  HANDLE v20; // rcx
+  int v21; // eax
+  HANDLE v22; // rcx
+  char v23; // [rsp+20h] [rbp-20h]
+  _QWORD v24[2]; // [rsp+30h] [rbp-10h] BYREF
+  HANDLE Handle; // [rsp+58h] [rbp+18h] BYREF
+
+  Handle = 0;
+  v24[0] = 7864438;
+  v24[1] = L"\\Registry\\Machine\\System\\CurrentControlSet\\Control\\LiveDump";
+  v23 = 0;
+  result = IopOpenRegistryKey(&Handle, 0, v24, 131097, v23);
+  if ( result >= 0 )
+  {
+    RegistryULongValue = IopGetRegistryULongValue(Handle, L"DumpFileSize");
+    v4 = *(_DWORD *)(a1 + 80);
+    if ( RegistryULongValue )
+    {
+      v5 = (unsigned __int64)RegistryULongValue << 20;
+      v6 = v4 | 0x200;
+    }
+    else
+    {
+      v5 = 0;
+      v6 = v4 & 0xFFFFFDFF;
+    }
+    *(_DWORD *)(a1 + 80) = v6;
+    *(_QWORD *)(a1 + 1152) = v5;
+    RegistryBoolValue = IopGetRegistryBoolValue(Handle, L"UtilizeIOSpace");
+    v8 = Handle;
+    *(_DWORD *)(a1 + 80) ^= ((unsigned __int16)*(_DWORD *)(a1 + 80)
+                           ^ (unsigned __int16)(RegistryBoolValue << 11))
+                          & 0x800;
+    v9 = IopGetRegistryBoolValue(v8, L"MirrorSystemPartitionOnly");
+    v10 = Handle;
+    *(_DWORD *)(a1 + 80) ^= ((unsigned __int8)*(_DWORD *)(a1 + 80) ^ (unsigned __int8)(32 * v9)) & 0x20;
+    v11 = IopGetRegistryBoolValue(v10, L"EnableInstrumentation");
+    v12 = Handle;
+    *(_DWORD *)(a1 + 80) ^= ((unsigned __int8)*(_DWORD *)(a1 + 80) ^ (unsigned __int8)(v11 << 7)) & 0x80;
+    v13 = IopGetRegistryBoolValue(v12, L"SkipDisablingInterrupts");
+    v14 = Handle;
+    *(_DWORD *)(a1 + 80) ^= ((unsigned __int16)*(_DWORD *)(a1 + 80) ^ (unsigned __int16)(v13 << 8)) & 0x100;
+    v15 = IopGetRegistryBoolValue(v14, L"EnableDynamicLowMemoryThreshold");
+    v16 = Handle;
+    *(_DWORD *)(a1 + 80) ^= ((unsigned __int16)*(_DWORD *)(a1 + 80) ^ (unsigned __int16)(v15 << 13)) & 0x2000;
+    v17 = IopGetRegistryBoolValue(v16, L"EnableAdditionalEventTracing");
+    v18 = Handle;
+    *(_DWORD *)(a1 + 80) ^= (*(_DWORD *)(a1 + 80) ^ (v17 << 17)) & 0x20000;
+    v19 = IopGetRegistryBoolValue(v18, L"EnableIoSpaceCorruptionDetection");
+    v20 = Handle;
+    *(_DWORD *)(a1 + 80) ^= (*(_DWORD *)(a1 + 80) ^ (v19 << 18)) & 0x40000;
+    v21 = IopGetRegistryBoolValue(v20, L"EnableIoSpaceWriteProtection");
+    v22 = Handle;
+    *(_DWORD *)(a1 + 80) ^= (*(_DWORD *)(a1 + 80) ^ (v21 << 19)) & 0x80000;
+    result = IopGetRegistryULongValue(v22, L"SimulateError");
+    *(_DWORD *)(a1 + 1248) = result;
+  }
+  else
+  {
+    *(_DWORD *)(a1 + 80) &= 0xFFFDD45F;
+  }
+  if ( Handle )
+    return ObCloseHandle(Handle, 0);
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1405d328c  mov     [rsp-8+arg_0], rbx
+0x1405d3291  push    rbp
+0x1405d3292  mov     rbp, rsp
+0x1405d3295  sub     rsp, 40h
+0x1405d3299  mov     rbx, rcx
+0x1405d329c  mov     [rbp+Handle], 0
+0x1405d32a4  lea     rax, aRegistryMachin_121; "\\Registry\\Machine\\System\\CurrentCon"...
+0x1405d32ab  mov     [rbp+var_10], 780076h
+0x1405d32b3  lea     rcx, [rbp+Handle]
+0x1405d32b7  mov     [rbp+var_8], rax
+0x1405d32bb  mov     r9d, 20019h
+0x1405d32c1  mov     [rsp+40h+var_20], 0
+0x1405d32c6  lea     r8, [rbp+var_10]
+0x1405d32ca  xor     edx, edx
+0x1405d32cc  call    IopOpenRegistryKey
+0x1405d32d1  test    eax, eax
+0x1405d32d3  jns     short loc_1405D32E1
+0x1405d32d5  and     dword ptr [rbx+50h], 0FFFDD45Fh
+0x1405d32dc  jmp     loc_1405D3438
+0x1405d32e1  mov     rcx, [rbp+Handle]
+0x1405d32e5  lea     rdx, aDumpfilesize; "DumpFileSize"
+0x1405d32ec  call    IopGetRegistryULongValue
+0x1405d32f1  mov     ecx, [rbx+50h]
+0x1405d32f4  test    eax, eax
+0x1405d32f6  jz      short loc_1405D3304
+0x1405d32f8  mov     eax, eax
+0x1405d32fa  shl     rax, 14h
+0x1405d32fe  bts     ecx, 9
+0x1405d3302  jmp     short loc_1405D330A
+0x1405d3304  xor     eax, eax
+0x1405d3306  btr     ecx, 9
+0x1405d330a  mov     [rbx+50h], ecx
+0x1405d330d  lea     rdx, aUtilizeiospace; "UtilizeIOSpace"
+0x1405d3314  mov     [rbx+480h], rax
+0x1405d331b  mov     rcx, [rbp+Handle]
+0x1405d331f  call    IopGetRegistryBoolValue
+0x1405d3324  mov     ecx, [rbx+50h]
+0x1405d3327  lea     rdx, aMirrorsystempa; "MirrorSystemPartitionOnly"
+0x1405d332e  shl     eax, 0Bh
+0x1405d3331  xor     eax, ecx
+0x1405d3333  and     eax, 800h
+0x1405d3338  xor     eax, ecx
+0x1405d333a  mov     rcx, [rbp+Handle]
+0x1405d333e  mov     [rbx+50h], eax
+0x1405d3341  call    IopGetRegistryBoolValue
+0x1405d3346  mov     ecx, [rbx+50h]
+0x1405d3349  lea     rdx, aEnableinstrume; "EnableInstrumentation"
+0x1405d3350  shl     eax, 5
+0x1405d3353  xor     eax, ecx
+0x1405d3355  and     eax, 20h
+0x1405d3358  xor     eax, ecx
+0x1405d335a  mov     rcx, [rbp+Handle]
+0x1405d335e  mov     [rbx+50h], eax
+0x1405d3361  call    IopGetRegistryBoolValue
+0x1405d3366  mov     ecx, [rbx+50h]
+0x1405d3369  lea     rdx, aSkipdisablingi; "SkipDisablingInterrupts"
+0x1405d3370  shl     eax, 7
+0x1405d3373  xor     eax, ecx
+0x1405d3375  and     eax, 80h
+0x1405d337a  xor     eax, ecx
+0x1405d337c  mov     rcx, [rbp+Handle]
+0x1405d3380  mov     [rbx+50h], eax
+0x1405d3383  call    IopGetRegistryBoolValue
+0x1405d3388  mov     ecx, [rbx+50h]
+0x1405d338b  lea     rdx, aEnabledynamicl; "EnableDynamicLowMemoryThreshold"
+0x1405d3392  shl     eax, 8
+0x1405d3395  xor     eax, ecx
+0x1405d3397  and     eax, 100h
+0x1405d339c  xor     eax, ecx
+0x1405d339e  mov     rcx, [rbp+Handle]
+0x1405d33a2  mov     [rbx+50h], eax
+0x1405d33a5  call    IopGetRegistryBoolValue
+0x1405d33aa  mov     ecx, [rbx+50h]
+0x1405d33ad  lea     rdx, aEnableaddition; "EnableAdditionalEventTracing"
+0x1405d33b4  shl     eax, 0Dh
+0x1405d33b7  xor     eax, ecx
+0x1405d33b9  and     eax, 2000h
+0x1405d33be  xor     eax, ecx
+0x1405d33c0  mov     rcx, [rbp+Handle]
+0x1405d33c4  mov     [rbx+50h], eax
+0x1405d33c7  call    IopGetRegistryBoolValue
+0x1405d33cc  mov     ecx, [rbx+50h]
+0x1405d33cf  lea     rdx, aEnableiospacec; "EnableIoSpaceCorruptionDetection"
+0x1405d33d6  shl     eax, 11h
+0x1405d33d9  xor     eax, ecx
+0x1405d33db  and     eax, 20000h
+0x1405d33e0  xor     eax, ecx
+0x1405d33e2  mov     rcx, [rbp+Handle]
+0x1405d33e6  mov     [rbx+50h], eax
+0x1405d33e9  call    IopGetRegistryBoolValue
+0x1405d33ee  mov     ecx, [rbx+50h]
+0x1405d33f1  lea     rdx, aEnableiospacew; "EnableIoSpaceWriteProtection"
+0x1405d33f8  shl     eax, 12h
+0x1405d33fb  xor     eax, ecx
+0x1405d33fd  and     eax, 40000h
+0x1405d3402  xor     eax, ecx
+0x1405d3404  mov     rcx, [rbp+Handle]
+0x1405d3408  mov     [rbx+50h], eax
+0x1405d340b  call    IopGetRegistryBoolValue
+0x1405d3410  mov     ecx, [rbx+50h]
+0x1405d3413  lea     rdx, aSimulateerror; "SimulateError"
+0x1405d341a  shl     eax, 13h
+0x1405d341d  xor     eax, ecx
+0x1405d341f  and     eax, 80000h
+0x1405d3424  xor     eax, ecx
+0x1405d3426  mov     rcx, [rbp+Handle]
+0x1405d342a  mov     [rbx+50h], eax
+0x1405d342d  call    IopGetRegistryULongValue
+0x1405d3432  mov     [rbx+4E0h], eax
+0x1405d3438  mov     rcx, [rbp+Handle]; Handle
+0x1405d343c  test    rcx, rcx
+0x1405d343f  jz      short loc_1405D3448
+0x1405d3441  xor     edx, edx; PreviousMode
+0x1405d3443  call    ObCloseHandle
+0x1405d3448  mov     rbx, [rsp+40h+arg_0]
+0x1405d344d  add     rsp, 40h
+0x1405d3451  pop     rbp
+0x1405d3452  retn
+```

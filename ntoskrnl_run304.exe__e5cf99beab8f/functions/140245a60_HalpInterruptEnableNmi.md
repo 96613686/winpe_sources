@@ -1,0 +1,561 @@
+# HalpInterruptEnableNmi
+
+- ea: `0x140245a60`
+- end: `0x140245e04`
+- name: `HalpInterruptEnableNmi`
+- size: `932`
+- prototype: ``
+- caller_count: `3`
+- callee_count: `14`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x140b88f04`
+- `0x140b8d780`
+- `0x140b8f188`
+
+## callees
+
+- `0x140240338`
+- `0x14024113c`
+- `0x1402413a0`
+- `0x1402419d0`
+- `0x140241c1c`
+- `0x1402428b4`
+- `0x14024512c`
+- `0x140245868`
+- `0x140245a60`
+- `0x140245e6c`
+- `0x14053a530`
+- `0x1405826e0`
+- `0x1406d9d70`
+- `0x140b8cc64`
+
+## string_xrefs
+
+- `0x140245d49`: `minkernel\hals\lib\interrupts\common\intrupt.c`
+- `0x140245dd7`: `minkernel\hals\lib\interrupts\common\intrupt.c`
+- `0x140705423`: `minkernel\hals\lib\interrupts\common\intrupt.c`
+- `0x140705468`: `minkernel\hals\lib\interrupts\common\intrupt.c`
+
+## pseudocode
+
+```c
+__int64 HalpInterruptEnableNmi()
+{
+  char v0; // al
+  struct _KPRCB *CurrentPrcb; // r15
+  __int64 v2; // r9
+  __int64 v3; // rdx
+  char v4; // r12
+  __int64 v5; // r8
+  ULONG_PTR v6; // r14
+  unsigned int i; // ecx
+  __int64 v8; // rdi
+  int v9; // ebx
+  int v11; // eax
+  char v12; // cl
+  int v13; // esi
+  int v14; // ebx
+  int v15; // ecx
+  int v16; // eax
+  __int64 Number; // rcx
+  __int64 v18; // rax
+  __int64 Lines; // rax
+  __int64 v20; // rcx
+  __int64 v21; // rsi
+  int v22; // eax
+  int v23; // edx
+  int v24; // [rsp+28h] [rbp-91h]
+  __int64 v25; // [rsp+40h] [rbp-79h] BYREF
+  unsigned int v26; // [rsp+48h] [rbp-71h] BYREF
+  __int128 v27; // [rsp+50h] [rbp-69h] BYREF
+  __int128 v28; // [rsp+60h] [rbp-59h] BYREF
+  __int128 v29; // [rsp+70h] [rbp-49h]
+  __int64 v30; // [rsp+80h] [rbp-39h]
+  __int128 v31; // [rsp+88h] [rbp-31h] BYREF
+  __int128 *v32; // [rsp+98h] [rbp-21h]
+  __int128 v33; // [rsp+A0h] [rbp-19h] BYREF
+  __int128 v34; // [rsp+B0h] [rbp-9h] BYREF
+
+  v31 = 0;
+  LODWORD(v32) = 0;
+  v34 = 0;
+  v25 = 0;
+  v27 = 0;
+  v30 = 0;
+  v28 = 0;
+  v26 = 0;
+  v29 = 0;
+  v33 = 0;
+  v0 = HalpAcquireHighLevelLock(&HalpDeviceBlockUnblockPushLock.Timer.DueTime.QuadPart);
+  CurrentPrcb = KeGetCurrentPrcb();
+  v2 = 1;
+  v3 = (unsigned int)HalpInterruptProcessorCount;
+  v4 = v0;
+  v5 = (unsigned int)HalpInterruptProcessorCount;
+  v6 = 0;
+  for ( i = 0; i < (unsigned int)HalpInterruptProcessorCount; ++i )
+  {
+    v6 = HalpInterruptProcessorState + ((unsigned __int64)i << 6);
+    if ( *(_WORD *)(v6 + 16) == CurrentPrcb->Group && *(_BYTE *)(v6 + 18) == CurrentPrcb->GroupIndex )
+    {
+      v5 = i;
+      break;
+    }
+  }
+  if ( (_DWORD)v5 == (_DWORD)HalpInterruptProcessorCount )
+    KeBugCheckEx(
+      0x5Cu,
+      0x104u,
+      CurrentPrcb->GroupIndex | ((unsigned __int64)CurrentPrcb->Group << 8),
+      (unsigned int)HalpInterruptProcessorCount,
+      0);
+  v8 = HalpInterruptNmiSources;
+  while ( 1 )
+  {
+    while ( 1 )
+    {
+      if ( !v8 )
+      {
+        v9 = 0;
+        goto LABEL_7;
+      }
+      if ( *(_BYTE *)(v8 + 8) )
+      {
+        if ( !*(_BYTE *)(v6 + 13) )
+          goto LABEL_21;
+        v11 = *(_DWORD *)(v8 + 12);
+        if ( v11 != -1 && v11 != *(_DWORD *)(v6 + 4) )
+          goto LABEL_21;
+        v12 = v2;
+      }
+      else
+      {
+        v12 = 0;
+        if ( CurrentPrcb->Number )
+          goto LABEL_21;
+      }
+      v27 = 0;
+      v13 = 0;
+      v30 = 0;
+      v28 = 0;
+      v29 = 0;
+      v33 = 0;
+      if ( *(_BYTE *)(v8 + 8) )
+      {
+        if ( (*(_DWORD *)(v8 + 16) & 0xC) != 0xC )
+          v13 = v2;
+        DWORD2(v27) = v13;
+        if ( (*(_BYTE *)(v8 + 16) & 3) == 3 )
+        {
+          v14 = 2;
+          goto LABEL_17;
+        }
+LABEL_38:
+        v14 = v2;
+        goto LABEL_17;
+      }
+      v14 = 2;
+      if ( (*(_DWORD *)(v8 + 16) & 8) == 0 )
+        v13 = v2;
+      DWORD2(v27) = v13;
+      if ( (*(_DWORD *)(v8 + 16) & 3u) < 2 )
+        goto LABEL_38;
+LABEL_17:
+      LODWORD(v27) = v14;
+      v31 = 0u;
+      LODWORD(v33) = v33 & 0x80000000 | 0x40000002;
+      v32 = &v33;
+      HIDWORD(v27) = 16;
+      *(_QWORD *)&v28 = 0x2FFFFFFFFLL;
+      if ( !v12 )
+        break;
+      LODWORD(v31) = 5;
+      v15 = *(_DWORD *)(HalpInterruptController + 256);
+      HIDWORD(v25) = *(_DWORD *)(v8 + 20);
+      LODWORD(v25) = v15;
+LABEL_19:
+      LOBYTE(v5) = 15;
+      v9 = HalpInterruptSetLineState((unsigned int)&v25, 0, v5, v13, v14, (__int64)&v31, (__int64)&v28);
+      if ( v9 < 0 )
+        goto LABEL_7;
+      v2 = 1;
+LABEL_21:
+      v8 = *(_QWORD *)v8;
+    }
+    v16 = HalpInterruptGsiToLine(*(unsigned int *)(v8 + 20), &v25);
+    if ( v16 >= 0 )
+      break;
+    HalpInterruptSetProblemEx(0, 18, v16, -1, (__int64)"minkernel\\hals\\lib\\interrupts\\common\\intrupt.c", 1570);
+    v8 = *(_QWORD *)v8;
+    v2 = (unsigned int)(v3 - 17);
+  }
+  if ( HalpInterruptPhysicalModeOnly )
+  {
+    LODWORD(v31) = 3;
+  }
+  else
+  {
+    v34 = 0;
+    Number = CurrentPrcb->Number;
+    LODWORD(v31) = 1;
+    v18 = 0;
+    _bittestandset64(&v18, *(&KiSystemAvailableCpusSubscriptionLock.SchedulingGroup->Policy.Value + Number) & 0x3F);
+    *(_QWORD *)&v34 = v18;
+    *((_QWORD *)&v31 + 1) = &v34;
+  }
+  Lines = HalpInterruptFindLines(&v25, &v26);
+  if ( Lines )
+  {
+    if ( !*(_BYTE *)(*(_QWORD *)(Lines + 48) + 16LL * v26 + 12) )
+    {
+      v21 = HalpInterruptLookupController((unsigned int)v25);
+      if ( !v21 )
+      {
+        v24 = 1609;
+        v23 = 17;
+        goto LABEL_55;
+      }
+      v22 = HalpInterruptDestinationToTarget(v20, &v31, (char *)&v28 + 8);
+      if ( v22 < 0 )
+      {
+        HalpInterruptSetProblemEx(
+          v21,
+          19,
+          v22,
+          -1,
+          (__int64)"minkernel\\hals\\lib\\interrupts\\common\\intrupt.c",
+          1630);
+        goto LABEL_56;
+      }
+      if ( (*(_DWORD *)(HalpInterruptController + 244) & 0x100) != 0 && KeGetCurrentPrcb()->CpuVendor != 1 )
+      {
+        HalpIommuUpdateRemappingTableEntry(0, v33 & 0x3FFFFFFF, &v27);
+        DWORD2(v28) = 7;
+        LODWORD(v29) = v33 & 0x3FFFFFFF;
+      }
+      if ( qword_140FB9D88 )
+      {
+        v9 = HalpHvMapIoApicDeviceInterrupt(*(unsigned int *)(v21 + 256), &v27, 0);
+        if ( v9 < 0 )
+        {
+          HalpInterruptSetProblemEx(
+            v21,
+            31,
+            v9,
+            -1,
+            (__int64)"minkernel\\hals\\lib\\interrupts\\common\\intrupt.c",
+            1681);
+          goto LABEL_7;
+        }
+      }
+      HIDWORD(v27) &= ~0x10u;
+      v9 = HalpInterruptSetRemappedLineStateInternal(v21, &v25, &v27);
+      if ( v9 < 0 )
+        goto LABEL_7;
+      v13 = DWORD2(v27);
+      v14 = v27;
+    }
+    goto LABEL_19;
+  }
+  v24 = 1593;
+  v23 = 18;
+LABEL_55:
+  HalpInterruptSetProblemEx(0, v23, 0, -1, (__int64)"minkernel\\hals\\lib\\interrupts\\common\\intrupt.c", v24);
+LABEL_56:
+  v9 = -1073741275;
+LABEL_7:
+  LOBYTE(v3) = v4;
+  HalpReleaseHighLevelLock(&HalpDeviceBlockUnblockPushLock.Timer.DueTime, v3, v5, v2);
+  return (unsigned int)v9;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140245a60  push    rbp
+0x140245a62  push    rbx
+0x140245a63  push    rsi
+0x140245a64  push    rdi
+0x140245a65  push    r12
+0x140245a67  push    r13
+0x140245a69  push    r14
+0x140245a6b  push    r15
+0x140245a6d  lea     rbp, [rsp-1Fh]
+0x140245a72  sub     rsp, 0D8h
+0x140245a79  mov     rax, cs:__security_cookie
+0x140245a80  xor     rax, rsp
+0x140245a83  mov     [rbp+57h+var_50], rax
+0x140245a87  xorps   xmm0, xmm0
+0x140245a8a  lea     rcx, HalpDeviceBlockUnblockPushLock.Timer.DueTime; SpinLock
+0x140245a91  xor     eax, eax
+0x140245a93  xor     r13d, r13d
+0x140245a96  movups  [rbp+57h+var_88], xmm0
+0x140245a9a  mov     dword ptr [rbp+57h+var_78], eax
+0x140245a9d  movups  [rbp+57h+var_60], xmm0
+0x140245aa1  mov     [rbp+57h+var_D0], r13
+0x140245aa5  movups  [rbp+57h+var_C0], xmm0
+0x140245aa9  mov     [rbp+57h+var_90], rax
+0x140245aad  movups  [rbp+57h+var_B0], xmm0
+0x140245ab1  mov     [rbp+57h+var_C8], r13d
+0x140245ab5  movups  [rbp+57h+var_A0], xmm0
+0x140245ab9  movups  [rbp+57h+var_70], xmm0
+0x140245abd  call    HalpAcquireHighLevelLock
+0x140245ac2  mov     r15, gs:20h
+0x140245acb  lea     r9d, [r13+1]
+0x140245acf  mov     edx, cs:HalpInterruptProcessorCount
+0x140245ad5  mov     r12b, al
+0x140245ad8  mov     r8d, edx
+0x140245adb  mov     r14d, r13d
+0x140245ade  mov     ecx, r13d
+0x140245ae1  cmp     ecx, edx
+0x140245ae3  jb      loc_140245C3B
+0x140245ae9  cmp     r8d, edx
+0x140245aec  jz      loc_140245CCE
+0x140245af2  mov     rdi, cs:HalpInterruptNmiSources
+0x140245af9  test    rdi, rdi
+0x140245afc  jnz     short loc_140245B33
+0x140245afe  mov     ebx, r13d
+0x140245b01  mov     dl, r12b
+0x140245b04  lea     rcx, HalpDeviceBlockUnblockPushLock.Timer.DueTime
+0x140245b0b  call    HalpReleaseHighLevelLock
+0x140245b10  mov     eax, ebx
+0x140245b12  mov     rcx, [rbp+57h+var_50]
+0x140245b16  xor     rcx, rsp; StackCookie
+0x140245b19  call    __security_check_cookie
+0x140245b1e  add     rsp, 0D8h
+0x140245b25  pop     r15
+0x140245b27  pop     r14
+0x140245b29  pop     r13
+0x140245b2b  pop     r12
+0x140245b2d  pop     rdi
+0x140245b2e  pop     rsi
+0x140245b2f  pop     rbx
+0x140245b30  pop     rbp
+0x140245b31  retn
+0x140245b33  cmp     [rdi+8], r13b
+0x140245b37  jz      loc_140245CFD
+0x140245b3d  cmp     [r14+0Dh], r13b
+0x140245b41  jz      loc_140245C33
+0x140245b47  mov     eax, [rdi+0Ch]
+0x140245b4a  cmp     eax, 0FFFFFFFFh
+0x140245b4d  jnz     loc_140245C6D
+0x140245b53  mov     cl, r9b
+0x140245b56  xorps   xmm0, xmm0
+0x140245b59  xor     eax, eax
+0x140245b5b  movups  [rbp+57h+var_C0], xmm0
+0x140245b5f  mov     esi, dword ptr [rbp+57h+var_C0+8]
+0x140245b62  mov     [rbp+57h+var_90], rax
+0x140245b66  movups  [rbp+57h+var_B0], xmm0
+0x140245b6a  movups  [rbp+57h+var_A0], xmm0
+0x140245b6e  movups  [rbp+57h+var_70], xmm0
+0x140245b72  mov     eax, [rdi+10h]
+0x140245b75  and     eax, 0Ch
+0x140245b78  cmp     [rdi+8], r13b
+0x140245b7c  jz      loc_140245D0F
+0x140245b82  cmp     eax, 0Ch
+0x140245b85  cmovnz  esi, r9d
+0x140245b89  mov     dword ptr [rbp+57h+var_C0+8], esi
+0x140245b8c  mov     eax, [rdi+10h]
+0x140245b8f  and     eax, 3
+0x140245b92  cmp     al, 3
+0x140245b94  jnz     loc_140245D2D
+0x140245b9a  mov     ebx, 2
+0x140245b9f  mov     eax, dword ptr [rbp+57h+var_70]
+0x140245ba2  and     eax, 0C0000002h
+0x140245ba7  mov     dword ptr [rbp+57h+var_C0], ebx
+0x140245baa  or      eax, 40000002h
+0x140245baf  mov     qword ptr [rbp+57h+var_88], r13
+0x140245bb3  mov     dword ptr [rbp+57h+var_70], eax
+0x140245bb6  lea     rax, [rbp+57h+var_70]
+0x140245bba  mov     [rbp+57h+var_78], rax
+0x140245bbe  mov     qword ptr [rbp+57h+var_88+8], r13
+0x140245bc2  mov     dword ptr [rbp+57h+var_C0+0Ch], 10h
+0x140245bc9  mov     dword ptr [rbp+57h+var_B0], 0FFFFFFFFh
+0x140245bd0  mov     dword ptr [rbp+57h+var_B0+4], 2
+0x140245bd7  test    cl, cl
+0x140245bd9  jz      loc_140245D35
+0x140245bdf  mov     rax, cs:HalpInterruptController
+0x140245be6  mov     dword ptr [rbp+57h+var_88], 5
+0x140245bed  mov     ecx, [rax+100h]
+0x140245bf3  mov     eax, [rdi+14h]
+0x140245bf6  mov     dword ptr [rbp+57h+var_D0+4], eax
+0x140245bf9  mov     dword ptr [rbp+57h+var_D0], ecx
+0x140245bfc  lea     rax, [rbp+57h+var_B0]
+0x140245c00  mov     r9d, esi
+0x140245c03  mov     [rsp+110h+var_E0], rax
+0x140245c08  lea     rcx, [rbp+57h+var_D0]
+0x140245c0c  lea     rax, [rbp+57h+var_88]
+0x140245c10  mov     r8b, 0Fh
+0x140245c13  mov     [rsp+110h+var_E8], rax
+0x140245c18  xor     edx, edx
+0x140245c1a  mov     dword ptr [rsp+110h+BugCheckParameter4], ebx
+0x140245c1e  call    HalpInterruptSetLineState
+0x140245c23  mov     ebx, eax
+0x140245c25  test    eax, eax
+0x140245c27  js      loc_140245B01
+0x140245c2d  mov     r9d, 1
+0x140245c33  mov     rdi, [rdi]
+0x140245c36  jmp     loc_140245AF9
+0x140245c3b  movzx   eax, byte ptr [r15+0D0h]
+0x140245c43  mov     r14d, ecx
+0x140245c46  shl     r14, 6
+0x140245c4a  add     r14, cs:HalpInterruptProcessorState
+0x140245c51  cmp     [r14+10h], ax
+0x140245c56  jnz     short loc_140245CC6
+0x140245c58  mov     al, [r15+0D1h]
+0x140245c5f  cmp     [r14+12h], al
+0x140245c63  jnz     short loc_140245CC6
+0x140245c65  mov     r8d, ecx
+0x140245c68  jmp     loc_140245AE9
+0x140245c6d  cmp     eax, [r14+4]
+0x140245c71  jz      loc_140245B53
+0x140245c77  jmp     short loc_140245C33
+0x140245c79  mov     rcx, cs:HalpInterruptController
+0x140245c80  test    dword ptr [rcx+0F4h], 100h
+0x140245c8a  jnz     loc_140245D7C
+0x140245c90  cmp     cs:qword_140FB9D88, r13
+0x140245c97  jnz     loc_140245DBB
+0x140245c9d  and     dword ptr [rbp+57h+var_C0+0Ch], 0FFFFFFEFh
+0x140245ca1  lea     r8, [rbp+57h+var_C0]
+0x140245ca5  lea     rdx, [rbp+57h+var_D0]
+0x140245ca9  mov     rcx, rsi
+0x140245cac  call    HalpInterruptSetRemappedLineStateInternal
+0x140245cb1  mov     ebx, eax
+0x140245cb3  test    eax, eax
+0x140245cb5  js      loc_140245B01
+0x140245cbb  mov     esi, dword ptr [rbp+57h+var_C0+8]
+0x140245cbe  mov     ebx, dword ptr [rbp+57h+var_C0]
+0x140245cc1  jmp     loc_140245BFC
+0x140245cc6  add     ecx, r9d
+0x140245cc9  jmp     loc_140245AE1
+0x140245cce  movzx   r8d, byte ptr [r15+0D0h]
+0x140245cd6  mov     r9, rdx; BugCheckParameter3
+0x140245cd9  movzx   eax, byte ptr [r15+0D1h]
+0x140245ce1  mov     edx, 104h; BugCheckParameter1
+0x140245ce6  shl     r8, 8
+0x140245cea  mov     ecx, 5Ch ; '\'; BugCheckCode
+0x140245cef  or      r8, rax; BugCheckParameter2
+0x140245cf2  mov     [rsp+110h+BugCheckParameter4], r13; BugCheckParameter4
+0x140245cf7  call    KeBugCheckEx
+0x140245cfd  mov     cl, r13b
+0x140245d00  cmp     [r15+24h], r13d
+0x140245d04  jnz     loc_140245C33
+0x140245d0a  jmp     loc_140245B56
+0x140245d0f  test    eax, 0FFFFFFFBh
+0x140245d14  mov     ebx, 2
+0x140245d19  cmovz   esi, r9d
+0x140245d1d  mov     dword ptr [rbp+57h+var_C0+8], esi
+0x140245d20  mov     eax, [rdi+10h]
+0x140245d23  and     al, 3
+0x140245d25  cmp     al, 2
+0x140245d27  jnb     loc_140245B9F
+0x140245d2d  mov     ebx, r9d
+0x140245d30  jmp     loc_140245B9F
+0x140245d35  mov     ecx, [rdi+14h]
+0x140245d38  lea     rdx, [rbp+57h+var_D0]
+0x140245d3c  call    HalpInterruptGsiToLine
+0x140245d41  test    eax, eax
+0x140245d43  jns     loc_140705394
+0x140245d49  lea     rcx, aMinkernelHalsL_10; "minkernel\\hals\\lib\\interrupts\\commo"...
+0x140245d50  mov     dword ptr [rsp+110h+var_E8], 622h
+0x140245d58  mov     [rsp+110h+BugCheckParameter4], rcx
+0x140245d5d  or      r9d, 0FFFFFFFFh
+0x140245d61  xor     ecx, ecx
+0x140245d63  mov     r8d, eax
+0x140245d66  mov     edx, 12h
+0x140245d6b  call    HalpInterruptSetProblemEx
+0x140245d70  mov     rdi, [rdi]
+0x140245d73  lea     r9d, [rdx-11h]
+0x140245d77  jmp     loc_140245AF9
+0x140245d7c  mov     rax, gs:20h
+0x140245d85  cmp     byte ptr [rax+8Dh], 1
+0x140245d8c  jz      loc_140245C90
+0x140245d92  mov     edx, dword ptr [rbp+57h+var_70]
+0x140245d95  lea     r8, [rbp+57h+var_C0]
+0x140245d99  mov     ebx, 3FFFFFFFh
+0x140245d9e  xor     ecx, ecx
+0x140245da0  and     edx, ebx
+0x140245da2  call    HalpIommuUpdateRemappingTableEntry
+0x140245da7  mov     eax, dword ptr [rbp+57h+var_70]
+0x140245daa  and     eax, ebx
+0x140245dac  mov     dword ptr [rbp+57h+var_B0+8], 7
+0x140245db3  mov     dword ptr [rbp+57h+var_A0], eax
+0x140245db6  jmp     loc_140245C90
+0x140245dbb  mov     ecx, [rsi+100h]
+0x140245dc1  lea     rdx, [rbp+57h+var_C0]
+0x140245dc5  xor     r8d, r8d
+0x140245dc8  call    HalpHvMapIoApicDeviceInterrupt
+0x140245dcd  mov     ebx, eax
+0x140245dcf  test    eax, eax
+0x140245dd1  jns     loc_140245C9D
+0x140245dd7  lea     rax, aMinkernelHalsL_10; "minkernel\\hals\\lib\\interrupts\\commo"...
+0x140245dde  mov     dword ptr [rsp+110h+var_E8], 691h
+0x140245de6  or      r9d, 0FFFFFFFFh
+0x140245dea  mov     [rsp+110h+BugCheckParameter4], rax
+0x140245def  mov     r8d, ebx
+0x140245df2  mov     edx, 1Fh
+0x140245df7  mov     rcx, rsi
+0x140245dfa  call    HalpInterruptSetProblemEx
+0x140245dff  jmp     loc_140245B01
+0x140705394  cmp     cs:HalpInterruptPhysicalModeOnly, r13b
+0x14070539b  jz      short loc_1407053A6
+0x14070539d  mov     dword ptr [rbp+57h+var_88], 3
+0x1407053a4  jmp     short loc_1407053D7
+0x1407053a6  mov     rax, cs:KiSystemAvailableCpusSubscriptionLock.SchedulingGroup
+0x1407053ad  movups  [rbp+57h+var_60], xmm0
+0x1407053b1  mov     ecx, [r15+24h]
+0x1407053b5  mov     dword ptr [rbp+57h+var_88], 1
+0x1407053bc  mov     edx, [rax+rcx*4]
+0x1407053bf  movq    rax, xmm0
+0x1407053c4  and     edx, 3Fh
+0x1407053c7  bts     rax, rdx
+0x1407053cb  mov     qword ptr [rbp+57h+var_60], rax
+0x1407053cf  lea     rax, [rbp+57h+var_60]
+0x1407053d3  mov     qword ptr [rbp+57h+var_88+8], rax
+0x1407053d7  lea     rdx, [rbp+57h+var_C8]
+0x1407053db  lea     rcx, [rbp+57h+var_D0]
+0x1407053df  call    HalpInterruptFindLines
+0x1407053e4  test    rax, rax
+0x1407053e7  jz      short loc_140705457
+0x1407053e9  mov     ecx, [rbp+57h+var_C8]
+0x1407053ec  mov     rax, [rax+30h]
+0x1407053f0  add     rcx, rcx
+0x1407053f3  cmp     [rax+rcx*8+0Ch], r13b
+0x1407053f8  jnz     loc_140245BFC
+0x1407053fe  mov     ecx, dword ptr [rbp+57h+var_D0]
+0x140705401  call    HalpInterruptLookupController
+0x140705406  mov     rsi, rax
+0x140705409  test    rax, rax
+0x14070540c  jz      short loc_140705448
+0x14070540e  lea     r8, [rbp+57h+var_B0+8]
+0x140705412  lea     rdx, [rbp+57h+var_88]
+0x140705416  call    HalpInterruptDestinationToTarget
+0x14070541b  test    eax, eax
+0x14070541d  jns     loc_140245C79
+0x140705423  lea     rcx, aMinkernelHalsL_10; "minkernel\\hals\\lib\\interrupts\\commo"...
+0x14070542a  mov     dword ptr [rsp+110h+var_E8], 65Eh
+0x140705432  mov     [rsp+110h+BugCheckParameter4], rcx
+0x140705437  or      r9d, 0FFFFFFFFh
+0x14070543b  mov     rcx, rsi
+0x14070543e  mov     r8d, eax
+0x140705441  mov     edx, 13h
+0x140705446  jmp     short loc_140705479
+0x140705448  mov     dword ptr [rsp+110h+var_E8], 649h
+0x140705450  mov     edx, 11h
+0x140705455  jmp     short loc_140705464
+0x140705457  mov     dword ptr [rsp+110h+var_E8], 639h
+0x14070545f  mov     edx, 12h
+0x140705464  or      r9d, 0FFFFFFFFh
+0x140705468  lea     rax, aMinkernelHalsL_10; "minkernel\\hals\\lib\\interrupts\\commo"...
+0x14070546f  xor     r8d, r8d
+0x140705472  mov     [rsp+110h+BugCheckParameter4], rax
+0x140705477  xor     ecx, ecx
+0x140705479  call    HalpInterruptSetProblemEx
+0x14070547e  mov     ebx, 0C0000225h
+0x140705483  jmp     loc_140245B01
+```

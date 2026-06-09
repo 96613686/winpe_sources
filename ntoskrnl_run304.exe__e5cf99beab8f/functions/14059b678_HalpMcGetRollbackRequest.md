@@ -1,0 +1,103 @@
+# HalpMcGetRollbackRequest
+
+- ea: `0x14059b678`
+- end: `0x14059b731`
+- name: `HalpMcGetRollbackRequest`
+- size: `185`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `6`
+- tags: `registry_config, installer_update`
+
+## callers
+
+- `0x140746ae0`
+
+## callees
+
+- `0x1403f2d50`
+- `0x14059b678`
+- `0x140691504`
+- `0x1406e8590`
+- `0x1406f4880`
+- `0x140a25380`
+
+## string_xrefs
+
+- `0x14059b6ae`: `RtlQueryRegistryValuesEx`
+- `0x14059b6f4`: `McUpdate`
+- `0x14059b69c`: `RollbackRequest`
+
+## pseudocode
+
+```c
+__int64 HalpMcGetRollbackRequest()
+{
+  UNICODE_STRING DestinationString; // [rsp+30h] [rbp-29h] BYREF
+  _BYTE v2[8]; // [rsp+40h] [rbp-19h] BYREF
+  int v3; // [rsp+48h] [rbp-11h]
+  const wchar_t *v4; // [rsp+50h] [rbp-9h]
+  int *v5; // [rsp+58h] [rbp-1h]
+  int v6; // [rsp+60h] [rbp+7h]
+  int v7; // [rsp+C0h] [rbp+67h] BYREF
+
+  v7 = 0;
+  memset_0(v2, 0, 0x70u);
+  v3 = 288;
+  v4 = L"RollbackRequest";
+  v6 = 0x4000000;
+  v5 = &v7;
+  DestinationString = 0;
+  RtlInitUnicodeString(&DestinationString, L"RtlQueryRegistryValuesEx");
+  MmGetSystemRoutineAddress(&DestinationString);
+  if ( (int)guard_dispatch_icall_no_overrides(2, L"McUpdate", v2) >= 0 )
+    v7 &= 1u;
+  return PrExtControlOperations(11, &v7, 1);
+}
+
+```
+
+## disassembly
+
+```asm
+0x14059b678  push    rbp
+0x14059b67a  lea     rbp, [rsp-57h]
+0x14059b67f  sub     rsp, 0B0h
+0x14059b686  xor     edx, edx; Val
+0x14059b688  mov     [rbp+57h+arg_0], 0
+0x14059b68f  lea     rcx, [rbp+57h+var_70]; void *
+0x14059b693  lea     r8d, [rdx+70h]; Size
+0x14059b697  call    memset_0
+0x14059b69c  lea     rax, aRollbackreques; "RollbackRequest"
+0x14059b6a3  mov     [rbp+57h+var_68], 120h
+0x14059b6aa  mov     [rbp+57h+var_60], rax
+0x14059b6ae  lea     rdx, aRtlqueryregist; "RtlQueryRegistryValuesEx"
+0x14059b6b5  lea     rax, [rbp+57h+arg_0]
+0x14059b6b9  mov     [rbp+57h+var_50], 4000000h
+0x14059b6c0  xorps   xmm0, xmm0
+0x14059b6c3  mov     [rbp+57h+var_58], rax
+0x14059b6c7  lea     rcx, [rbp+57h+DestinationString]; DestinationString
+0x14059b6cb  movups  xmmword ptr [rbp+57h+DestinationString.Length], xmm0
+0x14059b6cf  call    RtlInitUnicodeString
+0x14059b6d4  lea     rcx, [rbp+57h+DestinationString]; SystemRoutineName
+0x14059b6d8  call    MmGetSystemRoutineAddress
+0x14059b6dd  lea     rcx, RtlQueryRegistryValues
+0x14059b6e4  mov     [rsp+0B0h+var_90], 0
+0x14059b6ed  test    rax, rax
+0x14059b6f0  lea     r8, [rbp+57h+var_70]
+0x14059b6f4  lea     rdx, aMcupdate; "McUpdate"
+0x14059b6fb  cmovz   rax, rcx
+0x14059b6ff  xor     r9d, r9d
+0x14059b702  lea     ecx, [r9+2]
+0x14059b706  call    _guard_dispatch_icall_no_overrides
+0x14059b70b  mov     r8d, 1
+0x14059b711  test    eax, eax
+0x14059b713  js      short loc_14059B719
+0x14059b715  and     [rbp+57h+arg_0], r8d
+0x14059b719  lea     rdx, [rbp+57h+arg_0]
+0x14059b71d  mov     ecx, 0Bh
+0x14059b722  call    PrExtControlOperations
+0x14059b727  add     rsp, 0B0h
+0x14059b72e  pop     rbp
+0x14059b72f  retn
+```

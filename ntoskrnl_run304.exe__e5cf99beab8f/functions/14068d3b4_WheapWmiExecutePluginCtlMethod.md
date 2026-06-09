@@ -1,0 +1,161 @@
+# WheapWmiExecutePluginCtlMethod
+
+- ea: `0x14068d3b4`
+- end: `0x14068d490`
+- name: `WheapWmiExecutePluginCtlMethod`
+- size: `220`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `2`
+- tags: `loader_planting`
+
+## callers
+
+- `0x14068d114`
+
+## callees
+
+- `0x14068d3b4`
+- `0x1406f4480`
+
+## import_xrefs
+
+- `PSHED!PshedAllocateMemory` at `0x14068d412`
+- `PSHED!PshedAllocateMemory` at `0x14068d412`
+- `PSHED!PshedDoPluginCtl` at `0x14068d450`
+- `PSHED!PshedDoPluginCtl` at `0x14068d450`
+- `PSHED!PshedFreeMemory` at `0x14068d461`
+- `PSHED!PshedFreeMemory` at `0x14068d461`
+
+## pseudocode
+
+```c
+__int64 __fastcall WheapWmiExecutePluginCtlMethod(
+        int a1,
+        unsigned int a2,
+        unsigned int *a3,
+        __int64 a4,
+        unsigned int *a5)
+{
+  unsigned int v5; // ebx
+  __int64 result; // rax
+  size_t v9; // rsi
+  PVOID Memory; // rax
+  void *v11; // r15
+
+  v5 = 0;
+  *a5 = 0;
+  if ( a1 == 1 )
+  {
+    if ( a2 < 4 || !a3 || (v9 = *a3, (unsigned int)v9 < 4) )
+    {
+      result = 3221225485LL;
+      goto LABEL_13;
+    }
+    v5 = 8;
+    if ( a2 >= 8 )
+    {
+      Memory = PshedAllocateMemory(v9);
+      v11 = Memory;
+      if ( !Memory )
+      {
+        result = 3221225626LL;
+        goto LABEL_13;
+      }
+      memmove(Memory, a3 + 1, v9);
+      a3[1] = a2 - 8;
+      *a3 = PshedDoPluginCtl((unsigned int)v9, v11, a3 + 1, a3 + 2);
+      PshedFreeMemory(v11);
+      v5 = a3[1] + 8;
+      if ( a2 >= v5 )
+      {
+        result = *a3;
+        goto LABEL_13;
+      }
+    }
+    result = 3221225507LL;
+  }
+  else
+  {
+    result = 3221226135LL;
+  }
+LABEL_13:
+  *a5 = v5;
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14068d3b4  push    rbx
+0x14068d3b6  push    rbp
+0x14068d3b7  push    rsi
+0x14068d3b8  push    rdi
+0x14068d3b9  push    r14
+0x14068d3bb  push    r15
+0x14068d3bd  sub     rsp, 28h
+0x14068d3c1  mov     r14, [rsp+58h+arg_20]
+0x14068d3c9  xor     ebx, ebx
+0x14068d3cb  mov     rdi, r8
+0x14068d3ce  mov     ebp, edx
+0x14068d3d0  mov     dword ptr [r14], 0
+0x14068d3d7  cmp     ecx, 1
+0x14068d3da  jz      short loc_14068D3E6
+0x14068d3dc  mov     eax, 0C0000297h
+0x14068d3e1  jmp     loc_14068D47F
+0x14068d3e6  cmp     ebp, 4
+0x14068d3e9  jb      loc_14068D47A
+0x14068d3ef  test    rdi, rdi
+0x14068d3f2  jz      loc_14068D47A
+0x14068d3f8  mov     esi, [r8]
+0x14068d3fb  cmp     esi, 4
+0x14068d3fe  jb      short loc_14068D47A
+0x14068d400  mov     ebx, 8
+0x14068d405  cmp     ebp, ebx
+0x14068d407  jnb     short loc_14068D410
+0x14068d409  mov     eax, 0C0000023h
+0x14068d40e  jmp     short loc_14068D47F
+0x14068d410  mov     ecx, esi; Size
+0x14068d412  call    cs:__imp_PshedAllocateMemory
+0x14068d419  nop     dword ptr [rax+rax+00h]
+0x14068d41e  mov     r15, rax
+0x14068d421  test    rax, rax
+0x14068d424  jnz     short loc_14068D42D
+0x14068d426  mov     eax, 0C000009Ah
+0x14068d42b  jmp     short loc_14068D47F
+0x14068d42d  lea     rbx, [rdi+4]
+0x14068d431  mov     r8, rsi; Size
+0x14068d434  mov     rdx, rbx; Src
+0x14068d437  mov     rcx, r15; void *
+0x14068d43a  call    memmove
+0x14068d43f  lea     eax, [rbp-8]
+0x14068d442  mov     r8, rbx
+0x14068d445  lea     r9, [rbx+4]
+0x14068d449  mov     [rbx], eax
+0x14068d44b  mov     rdx, r15
+0x14068d44e  mov     ecx, esi
+0x14068d450  call    cs:__imp_PshedDoPluginCtl
+0x14068d457  nop     dword ptr [rax+rax+00h]
+0x14068d45c  mov     rcx, r15; Address
+0x14068d45f  mov     [rdi], eax
+0x14068d461  call    cs:__imp_PshedFreeMemory
+0x14068d468  nop     dword ptr [rax+rax+00h]
+0x14068d46d  mov     ebx, [rbx]
+0x14068d46f  add     ebx, 8
+0x14068d472  cmp     ebp, ebx
+0x14068d474  jb      short loc_14068D409
+0x14068d476  mov     eax, [rdi]
+0x14068d478  jmp     short loc_14068D47F
+0x14068d47a  mov     eax, 0C000000Dh
+0x14068d47f  mov     [r14], ebx
+0x14068d482  add     rsp, 28h
+0x14068d486  pop     r15
+0x14068d488  pop     r14
+0x14068d48a  pop     rdi
+0x14068d48b  pop     rsi
+0x14068d48c  pop     rbp
+0x14068d48d  pop     rbx
+0x14068d48e  retn
+```

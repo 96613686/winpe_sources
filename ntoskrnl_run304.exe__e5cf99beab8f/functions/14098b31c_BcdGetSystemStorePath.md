@@ -1,0 +1,279 @@
+# BcdGetSystemStorePath
+
+- ea: `0x14098b31c`
+- end: `0x14098b53d`
+- name: `BcdGetSystemStorePath`
+- size: `545`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `9`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x140987284`
+
+## callees
+
+- `0x140543330`
+- `0x1405433d0`
+- `0x140729524`
+- `0x14098b31c`
+- `0x14098bcb8`
+- `0x14098be90`
+- `0x140a8baa0`
+- `0x140bae410`
+- `0x140bae8e0`
+
+## string_xrefs
+
+- `0x14098b4eb`: `Failed to get system store path. Status: %x`
+- `0x14098b44f`: `system32\config\BootBCD`
+- `0x14098b464`: `Using cached BCD path: %s`
+- `0x14098b371`: `System store path: %s`
+
+## pseudocode
+
+```c
+__int64 __fastcall BcdGetSystemStorePath(wchar_t **a1)
+{
+  wchar_t *v2; // rsi
+  __int64 FirmwareType; // rdx
+  __int64 v4; // rcx
+  int v5; // edx
+  const wchar_t *v6; // rbp
+  int SystemPartition; // eax
+  int v8; // ebx
+  __int64 v9; // rax
+  __int64 v10; // rcx
+  unsigned int v11; // r14d
+  wchar_t *v12; // rax
+  wchar_t *v13; // rdi
+  char IsStateSeparationEnabled; // al
+  const wchar_t *v15; // rbp
+  rsize_t v16; // rbx
+  wchar_t *Pool2; // rax
+  PVOID P; // [rsp+58h] [rbp+10h] BYREF
+  __int64 v20; // [rsp+60h] [rbp+18h] BYREF
+
+  v20 = 0;
+  v2 = 0;
+  P = 0;
+  FirmwareType = (unsigned int)BiGetFirmwareType(&v20);
+  if ( (v20 & 0x10000) != 0 )
+  {
+    IsStateSeparationEnabled = RtlIsStateSeparationEnabled(v4, FirmwareType);
+    v15 = L"\\OSDataRoot\\Windows\\";
+    if ( !IsStateSeparationEnabled )
+      v15 = L"\\SystemRoot\\";
+    v16 = IsStateSeparationEnabled != 0 ? 44LL : 36LL;
+    Pool2 = (wchar_t *)ExAllocatePool2(258, 2 * v16, 1262764866);
+    v13 = Pool2;
+    if ( !Pool2 )
+      return (unsigned int)-1073741801;
+    wcscpy_s(Pool2, v16, v15);
+    wcscat_s(v13, v16, L"system32\\config\\BootBCD");
+    BiLogMessage(2, L"Using cached BCD path: %s", v13);
+    v8 = 0;
+    goto LABEL_14;
+  }
+  v5 = FirmwareType - 1;
+  if ( v5 )
+  {
+    if ( (unsigned int)(v5 - 1) >= 2 )
+    {
+      v8 = -1073741637;
+      BiLogMessage(4, L"Failed to get system store path. Status: %x", 3221225659LL);
+      return (unsigned int)v8;
+    }
+    v6 = L"\\EFI\\Microsoft\\Boot\\BCD";
+  }
+  else
+  {
+    v6 = L"\\Boot\\BCD";
+  }
+  BiLogMessage(2, L"System store path: %s", v6);
+  SystemPartition = BiGetSystemPartition(&P);
+  v8 = SystemPartition;
+  if ( SystemPartition < 0 )
+  {
+    v13 = 0;
+    BiLogMessage(4, L"Failed to get system partition. Status: %x", (unsigned int)SystemPartition);
+    v2 = (wchar_t *)P;
+    goto LABEL_15;
+  }
+  v2 = (wchar_t *)P;
+  BiLogMessage(2, L"System partition: %s", P);
+  v9 = -1;
+  v10 = -1;
+  do
+    ++v10;
+  while ( v6[v10] );
+  do
+    ++v9;
+  while ( v2[v9] );
+  v11 = v10 + v9 + 1;
+  v12 = (wchar_t *)ExAllocatePool2(258, 2LL * v11, 1262764866);
+  v13 = v12;
+  if ( v12 )
+  {
+    wcscpy_s(v12, v11, v2);
+    wcscat_s(v13, v11, v6);
+LABEL_14:
+    *a1 = v13;
+    goto LABEL_15;
+  }
+  v8 = -1073741801;
+LABEL_15:
+  if ( v2 )
+    ExFreePoolWithTag(v2, 0x4B444342u);
+  if ( v8 < 0 && v13 )
+    ExFreePoolWithTag(v13, 0x4B444342u);
+  return (unsigned int)v8;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14098b31c  mov     rax, rsp
+0x14098b31f  mov     [rax+8], rbx
+0x14098b323  mov     [rax+20h], rbp
+0x14098b327  push    rsi
+0x14098b328  push    rdi
+0x14098b329  push    r12
+0x14098b32b  push    r14
+0x14098b32d  push    r15
+0x14098b32f  sub     rsp, 20h
+0x14098b333  xor     r12d, r12d
+0x14098b336  mov     r15, rcx
+0x14098b339  lea     rcx, [rax+18h]
+0x14098b33d  mov     [rax+18h], r12
+0x14098b341  mov     esi, r12d
+0x14098b344  mov     [rax+10h], r12
+0x14098b348  call    BiGetFirmwareType
+0x14098b34d  test    [rsp+48h+arg_10], 10000h
+0x14098b356  mov     edx, eax
+0x14098b358  jnz     loc_14098B3FC
+0x14098b35e  sub     edx, 1
+0x14098b361  jnz     loc_14098B4D4
+0x14098b367  lea     rbp, aBootBcd; "\\Boot\\BCD"
+0x14098b36e  mov     r8, rbp
+0x14098b371  lea     rdx, aSystemStorePat; "System store path: %s"
+0x14098b378  mov     ecx, 2
+0x14098b37d  call    BiLogMessage
+0x14098b382  lea     rcx, [rsp+48h+P]
+0x14098b387  call    BiGetSystemPartition
+0x14098b38c  mov     ebx, eax
+0x14098b38e  test    eax, eax
+0x14098b390  js      loc_14098B501
+0x14098b396  mov     rsi, [rsp+48h+P]
+0x14098b39b  lea     rdx, aSystemPartitio_1; "System partition: %s"
+0x14098b3a2  mov     r8, rsi
+0x14098b3a5  mov     ecx, 2
+0x14098b3aa  call    BiLogMessage
+0x14098b3af  or      rax, 0FFFFFFFFFFFFFFFFh
+0x14098b3b3  mov     rcx, rax
+0x14098b3b6  inc     rcx
+0x14098b3b9  cmp     [rbp+rcx*2+0], r12w
+0x14098b3bf  jnz     short loc_14098B3B6
+0x14098b3c1  inc     rax
+0x14098b3c4  cmp     [rsi+rax*2], r12w
+0x14098b3c9  jnz     short loc_14098B3C1
+0x14098b3cb  lea     r14, [rax+1]
+0x14098b3cf  mov     r8d, 4B444342h
+0x14098b3d5  add     r14, rcx
+0x14098b3d8  mov     ecx, 102h
+0x14098b3dd  mov     r14d, r14d
+0x14098b3e0  lea     rdx, [r14+r14]
+0x14098b3e4  call    ExAllocatePool2
+0x14098b3e9  mov     rdi, rax
+0x14098b3ec  test    rax, rax
+0x14098b3ef  jnz     loc_14098B4AF
+0x14098b3f5  mov     ebx, 0C0000017h
+0x14098b3fa  jmp     short loc_14098B47B
+0x14098b3fc  call    RtlIsStateSeparationEnabled
+0x14098b401  test    al, al
+0x14098b403  lea     rcx, aSystemroot_3; "\\SystemRoot\\"
+0x14098b40a  lea     rbp, aOsdatarootWind_2; "\\OSDataRoot\\Windows\\"
+0x14098b411  mov     r8d, 4B444342h
+0x14098b417  cmovz   rbp, rcx
+0x14098b41b  neg     al
+0x14098b41d  mov     ecx, 102h
+0x14098b422  sbb     rbx, rbx
+0x14098b425  and     ebx, 8
+0x14098b428  add     rbx, 24h ; '$'
+0x14098b42c  lea     rdx, [rbx+rbx]
+0x14098b430  call    ExAllocatePool2
+0x14098b435  mov     rdi, rax
+0x14098b438  test    rax, rax
+0x14098b43b  jz      loc_14098B4CD
+0x14098b441  mov     r8, rbp; Src
+0x14098b444  mov     rdx, rbx; SizeInWords
+0x14098b447  mov     rcx, rax; Dst
+0x14098b44a  call    wcscpy_s
+0x14098b44f  lea     r8, aSystem32Config_7; "system32\\config\\BootBCD"
+0x14098b456  mov     rdx, rbx; SizeInWords
+0x14098b459  mov     rcx, rdi; Dst
+0x14098b45c  call    wcscat_s
+0x14098b461  mov     r8, rdi
+0x14098b464  lea     rdx, aUsingCachedBcd; "Using cached BCD path: %s"
+0x14098b46b  mov     ecx, 2
+0x14098b470  call    BiLogMessage
+0x14098b475  mov     ebx, r12d
+0x14098b478  mov     [r15], rdi
+0x14098b47b  test    rsi, rsi
+0x14098b47e  jz      short loc_14098B48D
+0x14098b480  mov     edx, 4B444342h; Tag
+0x14098b485  mov     rcx, rsi; P
+0x14098b488  call    ExFreePoolWithTag
+0x14098b48d  test    ebx, ebx
+0x14098b48f  js      loc_14098B522
+0x14098b495  mov     rbp, [rsp+48h+arg_18]
+0x14098b49a  mov     eax, ebx
+0x14098b49c  mov     rbx, [rsp+48h+arg_0]
+0x14098b4a1  add     rsp, 20h
+0x14098b4a5  pop     r15
+0x14098b4a7  pop     r14
+0x14098b4a9  pop     r12
+0x14098b4ab  pop     rdi
+0x14098b4ac  pop     rsi
+0x14098b4ad  retn
+0x14098b4af  mov     r8, rsi; Src
+0x14098b4b2  mov     rdx, r14; SizeInWords
+0x14098b4b5  mov     rcx, rdi; Dst
+0x14098b4b8  call    wcscpy_s
+0x14098b4bd  mov     r8, rbp; Src
+0x14098b4c0  mov     rdx, r14; SizeInWords
+0x14098b4c3  mov     rcx, rdi; Dst
+0x14098b4c6  call    wcscat_s
+0x14098b4cb  jmp     short loc_14098B478
+0x14098b4cd  mov     ebx, 0C0000017h
+0x14098b4d2  jmp     short loc_14098B495
+0x14098b4d4  sub     edx, 1
+0x14098b4d7  jz      loc_140B61BA6
+0x14098b4dd  cmp     edx, 1
+0x14098b4e0  jz      loc_140B61BA6
+0x14098b4e6  mov     ebx, 0C00000BBh
+0x14098b4eb  lea     rdx, aFailedToGetSys_0; "Failed to get system store path. Status"...
+0x14098b4f2  mov     r8d, ebx
+0x14098b4f5  mov     ecx, 4
+0x14098b4fa  call    BiLogMessage
+0x14098b4ff  jmp     short loc_14098B495
+0x14098b501  mov     r8d, eax
+0x14098b504  lea     rdx, aFailedToGetSys; "Failed to get system partition. Status:"...
+0x14098b50b  mov     ecx, 4
+0x14098b510  mov     rdi, r12
+0x14098b513  call    BiLogMessage
+0x14098b518  mov     rsi, [rsp+48h+P]
+0x14098b51d  jmp     loc_14098B47B
+0x14098b522  test    rdi, rdi
+0x14098b525  jz      loc_14098B495
+0x14098b52b  mov     edx, 4B444342h; Tag
+0x14098b530  mov     rcx, rdi; P
+0x14098b533  call    ExFreePoolWithTag
+0x14098b538  jmp     loc_14098B495
+0x140b61ba6  lea     rbp, aEfiMicrosoftBo; "\\EFI\\Microsoft\\Boot\\BCD"
+0x140b61bad  jmp     loc_14098B36E
+```

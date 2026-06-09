@@ -1,0 +1,259 @@
+# CcSetupWatchForRegistryChanges
+
+- ea: `0x1405b7774`
+- end: `0x1405b7932`
+- name: `CcSetupWatchForRegistryChanges`
+- size: `446`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `8`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x140201558`
+
+## callees
+
+- `0x14020fe90`
+- `0x140211370`
+- `0x1403f2d50`
+- `0x1405b76fc`
+- `0x1405b7774`
+- `0x1406dccf0`
+- `0x1406f4880`
+- `0x140bae320`
+
+## string_xrefs
+
+- `0x1405b77eb`: `\Registry\Machine\System\CurrentControlSet\Control\Session Manager\Memory Management`
+- `0x1405b7833`: `CcSetupWatchForRegistryChanges: Failed to open Key, status=0x%08x "%wZ"\n`
+- `0x1405b788b`: `CcSetupWatchForRegistryChanges: Queued for "%wZ"\n`
+- `0x1405b790b`: `CcSetupWatchForRegistryChanges: Queuing worker thread, status=0x%08x for "%wZ"\n`
+- `0x140702f65`: `CcSetupWatchForRegistryChanges: Queuing worker thread, status=0x%08x for "%wZ"\n`
+- `0x1405b78a5`: `CcSetupWatchForRegistryChanges: Failed, status=0x%08x for "%wZ"\n`
+- `0x1405b78d1`: `CcSetupWatchForRegistryChanges: Error-unexpected memory allocation!\n`
+- `0x140702f37`: `CcSetupWatchForRegistryChanges: Error-unexpected memory allocation!\n`
+
+## pseudocode
+
+```c
+void CcSetupWatchForRegistryChanges()
+{
+  char *PoolWithTag; // rax
+  char *v1; // rbx
+  int v2; // edi
+  int v3; // eax
+  NTSTATUS v4; // eax
+  __int128 v5; // [rsp+A8h] [rbp-48h] BYREF
+  struct _IO_STATUS_BLOCK IoStatusBlock; // [rsp+B8h] [rbp-38h] BYREF
+
+  IoStatusBlock = 0;
+  PoolWithTag = (char *)ExAllocatePoolWithTag((POOL_TYPE)1536, 0x50u, 0x52576343u);
+  v1 = PoolWithTag;
+  if ( !ExPoolZeroingNativelySupported && PoolWithTag )
+    memset_0(PoolWithTag, 0, 0x50u);
+  if ( !v1 )
+  {
+    v2 = -1073741670;
+    goto LABEL_14;
+  }
+  RtlInitUnicodeString(
+    (PUNICODE_STRING)(v1 + 56),
+    L"\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Session Manager\\Memory Management");
+  *((_QWORD *)v1 + 5) = CcUpdateDynamicRegistrySettings;
+  *((_QWORD *)v1 + 2) = CcRegistryChangeCallback;
+  *((_QWORD *)v1 + 3) = v1;
+  *(_QWORD *)v1 = 0;
+  v3 = CcOpenRegistryPath(v1 + 56, v1 + 32);
+  v2 = v3;
+  if ( v3 < 0 )
+  {
+    DbgPrintEx(
+      0x7Fu,
+      0,
+      "CcSetupWatchForRegistryChanges: Failed to open Key, status=0x%08x \"%wZ\"\n",
+      (unsigned int)v3,
+      v1 + 56);
+    goto LABEL_14;
+  }
+  v4 = ZwNotifyChangeKey(*((HANDLE *)v1 + 4), 0, (PIO_APC_ROUTINE)v1, (PVOID)1, &IoStatusBlock, 5u, 1u, 0, 0, 1u);
+  v2 = v4;
+  if ( v4 == 259 )
+  {
+    DbgPrintEx(0x7Fu, 2u, "CcSetupWatchForRegistryChanges: Queued for \"%wZ\"\n", v1 + 56);
+LABEL_13:
+    CcRegistryWatchInitComplete = 1;
+    goto LABEL_14;
+  }
+  if ( v4 >= 0 )
+    goto LABEL_13;
+  DbgPrintEx(0x7Fu, 0, "CcSetupWatchForRegistryChanges: Failed, status=0x%08x for \"%wZ\"\n", (unsigned int)v4, v1 + 56);
+LABEL_14:
+  if ( v1 )
+  {
+    if ( v2 < 0 )
+    {
+      v5 = *(_OWORD *)(v1 + 56);
+      DbgPrintEx(
+        0x7Fu,
+        2u,
+        "CcSetupWatchForRegistryChanges: Queuing worker thread, status=0x%08x for \"%wZ\"\n",
+        (unsigned int)v2,
+        &v5);
+      v1[72] = 1;
+      ExQueueWorkItem((PWORK_QUEUE_ITEM)v1, DelayedWorkQueue);
+    }
+  }
+  else
+  {
+    DbgPrintEx(0x7Fu, 0, "CcSetupWatchForRegistryChanges: Error-unexpected memory allocation!\n");
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x1405b7774  push    rbx
+0x1405b7776  push    rsi
+0x1405b7777  push    rdi
+0x1405b7778  push    r14
+0x1405b777a  sub     rsp, 88h
+0x1405b7781  mov     [rsp+0A8h+var_58], 0C0000001h
+0x1405b7789  xorps   xmm0, xmm0
+0x1405b778c  movups  xmmword ptr [rsp+0A8h+var_38], xmm0
+0x1405b7791  mov     [rsp+0A8h+var_50], 0
+0x1405b779a  mov     edi, 50h ; 'P'
+0x1405b779f  mov     r8d, 52576343h; Tag
+0x1405b77a5  mov     edx, edi; NumberOfBytes
+0x1405b77a7  mov     ecx, 600h; PoolType
+0x1405b77ac  call    ExAllocatePoolWithTag
+0x1405b77b1  mov     rbx, rax
+0x1405b77b4  cmp     cs:ExPoolZeroingNativelySupported, 0
+0x1405b77bb  jnz     short loc_1405B77CF
+0x1405b77bd  test    rax, rax
+0x1405b77c0  jz      short loc_1405B77CF
+0x1405b77c2  mov     r8d, edi; Size
+0x1405b77c5  xor     edx, edx; Val
+0x1405b77c7  mov     rcx, rax; void *
+0x1405b77ca  call    memset_0
+0x1405b77cf  mov     [rsp+0A8h+var_50], rbx
+0x1405b77d4  test    rbx, rbx
+0x1405b77d7  jnz     short loc_1405B77E7
+0x1405b77d9  mov     edi, 0C000009Ah
+0x1405b77de  mov     [rsp+0A8h+var_58], edi
+0x1405b77e2  jmp     loc_1405B78CC
+0x1405b77e7  lea     rsi, [rbx+38h]
+0x1405b77eb  lea     rdx, aRegistryMachin_74; "\\Registry\\Machine\\System\\CurrentCon"...
+0x1405b77f2  mov     rcx, rsi; DestinationString
+0x1405b77f5  call    RtlInitUnicodeString
+0x1405b77fa  lea     rax, CcUpdateDynamicRegistrySettings
+0x1405b7801  mov     [rbx+28h], rax
+0x1405b7805  lea     rax, CcRegistryChangeCallback
+0x1405b780c  mov     [rbx+10h], rax
+0x1405b7810  mov     [rbx+18h], rbx
+0x1405b7814  mov     qword ptr [rbx], 0
+0x1405b781b  lea     rdx, [rbx+20h]
+0x1405b781f  mov     rcx, rsi
+0x1405b7822  call    CcOpenRegistryPath
+0x1405b7827  mov     edi, eax
+0x1405b7829  mov     [rsp+0A8h+var_58], eax
+0x1405b782d  xor     edx, edx; Event
+0x1405b782f  test    eax, eax
+0x1405b7831  jns     short loc_1405B783C
+0x1405b7833  lea     r8, aCcsetupwatchfo_3; "CcSetupWatchForRegistryChanges: Failed "...
+0x1405b783a  jmp     short loc_1405B78AE
+0x1405b783c  mov     [rsp+0A8h+Asynchronous], 1; Asynchronous
+0x1405b7841  mov     [rsp+0A8h+BufferSize], 0; BufferSize
+0x1405b7849  mov     [rsp+0A8h+Buffer], 0; Buffer
+0x1405b7852  mov     [rsp+0A8h+WatchTree], 1; WatchTree
+0x1405b7857  mov     [rsp+0A8h+CompletionFilter], 5; CompletionFilter
+0x1405b785f  lea     rax, [rsp+0A8h+var_38]
+0x1405b7864  mov     [rsp+0A8h+IoStatusBlock], rax; IoStatusBlock
+0x1405b7869  mov     r9d, 1; ApcContext
+0x1405b786f  mov     r8, rbx; ApcRoutine
+0x1405b7872  mov     rcx, [rbx+20h]; KeyHandle
+0x1405b7876  call    ZwNotifyChangeKey
+0x1405b787b  mov     edi, eax
+0x1405b787d  mov     [rsp+0A8h+var_58], eax
+0x1405b7881  cmp     eax, 103h
+0x1405b7886  jnz     short loc_1405B78A1
+0x1405b7888  mov     r9, rsi
+0x1405b788b  lea     r8, aCcsetupwatchfo_1; "CcSetupWatchForRegistryChanges: Queued "...
+0x1405b7892  mov     edx, 2; Level
+0x1405b7897  lea     ecx, [rdx+7Dh]; ComponentId
+0x1405b789a  call    DbgPrintEx
+0x1405b789f  jmp     short loc_1405B78C2
+0x1405b78a1  test    eax, eax
+0x1405b78a3  jns     short loc_1405B78C2
+0x1405b78a5  lea     r8, aCcsetupwatchfo_0; "CcSetupWatchForRegistryChanges: Failed,"...
+0x1405b78ac  xor     edx, edx; Level
+0x1405b78ae  mov     r9d, eax
+0x1405b78b1  mov     [rsp+0A8h+IoStatusBlock], rsi
+0x1405b78b6  mov     ecx, 7Fh; ComponentId
+0x1405b78bb  call    DbgPrintEx
+0x1405b78c0  jmp     short loc_1405B78CC
+0x1405b78c2  mov     cs:CcRegistryWatchInitComplete, 1
+0x1405b78cc  test    rbx, rbx
+0x1405b78cf  jnz     short loc_1405B78F0
+0x1405b78d1  lea     r8, aCcsetupwatchfo_2; "CcSetupWatchForRegistryChanges: Error-u"...
+0x1405b78d8  xor     edx, edx; Level
+0x1405b78da  lea     ecx, [rbx+7Fh]; ComponentId
+0x1405b78dd  call    DbgPrintEx
+0x1405b78e2  add     rsp, 88h
+0x1405b78e9  pop     r14
+0x1405b78eb  pop     rdi
+0x1405b78ec  pop     rsi
+0x1405b78ed  pop     rbx
+0x1405b78ee  retn
+0x1405b78f0  test    edi, edi
+0x1405b78f2  jns     short loc_1405B78E2
+0x1405b78f4  movups  xmm0, xmmword ptr [rbx+38h]
+0x1405b78f8  movdqu  [rsp+0A8h+var_48], xmm0
+0x1405b78fe  lea     rax, [rsp+0A8h+var_48]
+0x1405b7903  mov     [rsp+0A8h+IoStatusBlock], rax
+0x1405b7908  mov     r9d, edi
+0x1405b790b  lea     r8, aCcsetupwatchfo; "CcSetupWatchForRegistryChanges: Queuing"...
+0x1405b7912  mov     edx, 2; Level
+0x1405b7917  lea     ecx, [rdx+7Dh]; ComponentId
+0x1405b791a  call    DbgPrintEx
+0x1405b791f  mov     byte ptr [rbx+48h], 1
+0x1405b7923  mov     edx, 1; QueueType
+0x1405b7928  mov     rcx, rbx; WorkItem
+0x1405b792b  call    ExQueueWorkItem
+0x1405b7930  jmp     short loc_1405B78E2
+0x140702f24  push    rbx
+0x140702f26  push    rbp
+0x140702f27  sub     rsp, 58h
+0x140702f2b  mov     rbp, rdx
+0x140702f2e  mov     rbx, [rbp+58h]
+0x140702f32  test    rbx, rbx
+0x140702f35  jnz     short loc_140702F4A
+0x140702f37  lea     r8, aCcsetupwatchfo_2; "CcSetupWatchForRegistryChanges: Error-u"...
+0x140702f3e  xor     edx, edx; Level
+0x140702f40  lea     ecx, [rbx+7Fh]; ComponentId
+0x140702f43  call    DbgPrintEx
+0x140702f48  jmp     short loc_140702F8B
+0x140702f4a  mov     r9d, [rbp+50h]
+0x140702f4e  test    r9d, r9d
+0x140702f51  jns     short loc_140702F8B
+0x140702f53  movups  xmm0, xmmword ptr [rbx+38h]
+0x140702f57  movdqu  xmmword ptr [rbp+60h], xmm0
+0x140702f5c  lea     rax, [rbp+60h]
+0x140702f60  mov     qword ptr [rsp+68h+var_48], rax
+0x140702f65  lea     r8, aCcsetupwatchfo; "CcSetupWatchForRegistryChanges: Queuing"...
+0x140702f6c  mov     edx, 2; Level
+0x140702f71  lea     ecx, [rdx+7Dh]; ComponentId
+0x140702f74  call    DbgPrintEx
+0x140702f79  mov     byte ptr [rbx+48h], 1
+0x140702f7d  mov     edx, 1; QueueType
+0x140702f82  mov     rcx, rbx; WorkItem
+0x140702f85  call    ExQueueWorkItem
+0x140702f8a  nop
+0x140702f8b  add     rsp, 58h
+0x140702f8f  pop     rbp
+0x140702f90  pop     rbx
+0x140702f91  retn
+```

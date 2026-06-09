@@ -1,0 +1,491 @@
+# _PnpCtxGetCachedNodeBaseKey
+
+- ea: `0x1408bac70`
+- end: `0x1408badf4`
+- name: `_PnpCtxGetCachedNodeBaseKey`
+- size: `388`
+- prototype: ``
+- caller_count: `11`
+- callee_count: `5`
+- tags: `authz_impersonation, registry_config, service_task, installer_update, broker_com_uri`
+
+## callers
+
+- `0x140831dbc`
+- `0x1408b9fc8`
+- `0x1408ba1d0`
+- `0x1408c0170`
+- `0x1408c0a80`
+- `0x1408d8a34`
+- `0x1408dc128`
+- `0x1409606fc`
+- `0x140974ae8`
+- `0x1409b2718`
+- `0x140ad9cfc`
+
+## callees
+
+- `0x140838928`
+- `0x1408bac70`
+- `0x140964064`
+- `0x140a4a850`
+- `0x140bae8e0`
+
+## string_xrefs
+
+- `0x140b51c25`: `Services`
+- `0x140b51ca6`: `Control\CoDeviceInstallers`
+- `0x140b51cbe`: `HardwareConfig`
+
+## pseudocode
+
+```c
+__int64 __fastcall PnpCtxGetCachedNodeBaseKey(__int64 a1, _QWORD *a2, __int64 a3, _QWORD *a4)
+{
+  int v4; // edi
+  __int64 result; // rax
+  __int64 v8; // r9
+  __int64 v9; // rcx
+  void *EnumSecurityDescriptor; // r15
+  __int64 v11; // r10
+  int CachedContextBaseKey; // r14d
+  __int64 v13; // rax
+  __int64 v14; // [rsp+50h] [rbp-10h] BYREF
+  __int64 v15; // [rsp+58h] [rbp-8h] BYREF
+
+  v4 = a3 - 1;
+  v14 = 0;
+  v15 = 0;
+  result = 0;
+  v8 = 1;
+  if ( (_DWORD)a3 != 5 )
+  {
+    switch ( (int)a3 )
+    {
+      case 1:
+        result = SysCtxGetCachedContextBaseKey(a2[7], 1, &v14, 1);
+        goto LABEL_12;
+      case 2:
+        result = SysCtxGetCachedContextBaseKey(a2[7], 2, &v14, 1);
+        goto LABEL_12;
+      case 3:
+        result = SysCtxGetCachedContextBaseKey(a2[7], 3, &v14, 1);
+        goto LABEL_12;
+      case 4:
+        if ( *(_QWORD *)(a2[7] + 48LL) )
+        {
+          result = 0;
+          v14 = *(_QWORD *)(a2[7] + 48LL);
+        }
+        else
+        {
+          result = 3221225524LL;
+        }
+LABEL_12:
+        if ( (int)result < 0 )
+          return result;
+        goto LABEL_6;
+      case 6:
+        v9 = a2[9];
+        goto LABEL_5;
+      case 7:
+        v9 = a2[10];
+        goto LABEL_5;
+      case 8:
+        v9 = a2[11];
+        goto LABEL_5;
+      case 9:
+        v9 = a2[12];
+        goto LABEL_5;
+      case 10:
+        v9 = a2[13];
+        goto LABEL_5;
+      case 11:
+        v9 = a2[14];
+        goto LABEL_5;
+      case 12:
+        v9 = a2[15];
+        goto LABEL_5;
+      case 13:
+        v9 = a2[16];
+        goto LABEL_5;
+      case 14:
+        v9 = a2[17];
+        goto LABEL_5;
+      case 15:
+        v9 = a2[18];
+        goto LABEL_5;
+      default:
+        return 3221225485LL;
+    }
+  }
+  v9 = a2[8];
+LABEL_5:
+  v14 = v9;
+LABEL_6:
+  if ( v14 )
+  {
+    *a4 = v14;
+  }
+  else
+  {
+    switch ( v4 )
+    {
+      case 4:
+      case 5:
+      case 6:
+      case 7:
+      case 8:
+      case 9:
+      case 10:
+      case 11:
+      case 12:
+      case 13:
+      case 14:
+        EnumSecurityDescriptor = 0;
+        switch ( v4 )
+        {
+          case 0:
+          case 1:
+          case 2:
+          case 3:
+            return 3221225485LL;
+          case 4:
+            EnumSecurityDescriptor = (void *)PnpGetEnumSecurityDescriptor(0, a2, a3, v8);
+            if ( EnumSecurityDescriptor )
+            {
+              v8 = 4;
+LABEL_40:
+              CachedContextBaseKey = SysCtxGetCachedContextBaseKey(a2[7], (unsigned int)v8, &v15, v8);
+              if ( CachedContextBaseKey >= 0 )
+              {
+                CachedContextBaseKey = SysCtxRegCreateTree(a2[7], v15, v11, 0, 0x2000000, 0);
+                if ( CachedContextBaseKey >= 0 )
+                {
+                  switch ( v4 )
+                  {
+                    case 0:
+                    case 1:
+                    case 2:
+                    case 3:
+                      CachedContextBaseKey = -1073741811;
+                      goto LABEL_56;
+                    case 4:
+                      v13 = v14;
+                      a2[8] = v14;
+                      break;
+                    case 5:
+                      v13 = v14;
+                      a2[9] = v14;
+                      break;
+                    case 6:
+                      v13 = v14;
+                      a2[10] = v14;
+                      break;
+                    case 7:
+                      v13 = v14;
+                      a2[11] = v14;
+                      break;
+                    case 8:
+                      v13 = v14;
+                      a2[12] = v14;
+                      break;
+                    case 9:
+                      v13 = v14;
+                      a2[13] = v14;
+                      break;
+                    case 10:
+                      v13 = v14;
+                      a2[14] = v14;
+                      break;
+                    case 11:
+                      v13 = v14;
+                      a2[15] = v14;
+                      break;
+                    case 12:
+                      v13 = v14;
+                      a2[16] = v14;
+                      break;
+                    case 13:
+                      v13 = v14;
+                      a2[17] = v14;
+                      break;
+                    case 14:
+                      v13 = v14;
+                      a2[18] = v14;
+                      break;
+                    default:
+                      return 3221225485LL;
+                  }
+                  *a4 = v13;
+                }
+              }
+LABEL_56:
+              if ( EnumSecurityDescriptor )
+                ExFreePoolWithTag(EnumSecurityDescriptor, 0);
+              result = (unsigned int)CachedContextBaseKey;
+            }
+            else
+            {
+              result = 3221225701LL;
+            }
+            break;
+          case 5:
+            v8 = 4;
+            goto LABEL_40;
+          case 6:
+            v8 = 4;
+            goto LABEL_40;
+          case 7:
+            v8 = 4;
+            goto LABEL_40;
+          case 8:
+            v8 = 4;
+            goto LABEL_40;
+          case 9:
+            v8 = 4;
+            goto LABEL_40;
+          case 10:
+            v8 = 4;
+            goto LABEL_40;
+          case 11:
+            v8 = 4;
+            goto LABEL_40;
+          case 12:
+            v8 = 4;
+            goto LABEL_40;
+          case 13:
+            v8 = 4;
+            goto LABEL_40;
+          case 14:
+            goto LABEL_40;
+          default:
+            return 3221225485LL;
+        }
+        break;
+      default:
+        return 3221225485LL;
+    }
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1408bac70  mov     [rsp-28h+arg_8], rbx
+0x1408bac75  mov     [rsp-28h+arg_10], rsi
+0x1408bac7a  push    rbp
+0x1408bac7b  push    rdi
+0x1408bac7c  push    r12
+0x1408bac7e  push    r13
+0x1408bac80  push    r14
+0x1408bac82  mov     rbp, rsp
+0x1408bac85  sub     rsp, 60h
+0x1408bac89  xor     r12d, r12d
+0x1408bac8c  lea     edi, [r8-1]; switch 15 cases
+0x1408bac90  mov     [rbp+var_10], r12
+0x1408bac94  mov     rbx, r9
+0x1408bac97  mov     [rbp+var_8], r12
+0x1408bac9b  mov     rsi, rdx
+0x1408bac9e  lea     r13, cs:140000000h
+0x1408baca5  mov     r10, rcx
+0x1408baca8  mov     eax, r12d
+0x1408bacab  mov     r9d, 1
+0x1408bacb1  cmp     r8d, 5
+0x1408bacb5  jz      short loc_1408BACD6
+0x1408bacb7  cmp     edi, 0Eh
+0x1408bacba  ja      short def_1408BACCA; jumptable 00000001408BACCA default case, case 5
+0x1408bacbc  movsxd  rcx, edi
+0x1408bacbf  mov     edx, ds:(jpt_1408BACCA - 140000000h)[r13+rcx*4]
+0x1408bacc7  add     rdx, r13
+0x1408bacca  jmp     rdx; switch jump
+0x1408bacd0  mov     rcx, [rsi+60h]; jumptable 00000001408BACCA case 9
+0x1408bacd4  jmp     short loc_1408BACDA
+0x1408bacd6  mov     rcx, [rdx+40h]
+0x1408bacda  mov     [rbp+var_10], rcx
+0x1408bacde  mov     rcx, [rbp+var_10]
+0x1408bace2  test    rcx, rcx
+0x1408bace5  jz      loc_140B51BBA
+0x1408baceb  mov     [rbx], rcx
+0x1408bacee  lea     r11, [rsp+60h+var_s0]
+0x1408bacf3  mov     rbx, [r11+38h]
+0x1408bacf7  mov     rsi, [r11+40h]
+0x1408bacfb  mov     rsp, r11
+0x1408bacfe  pop     r14
+0x1408bad00  pop     r13
+0x1408bad02  pop     r12
+0x1408bad04  pop     rdi
+0x1408bad05  pop     rbp
+0x1408bad06  retn
+0x1408bad08  mov     eax, 0C000000Dh; jumptable 00000001408BACCA default case, case 5
+0x1408bad0d  jmp     short loc_1408BACEE
+0x1408bad0f  mov     rcx, [rsi+58h]; jumptable 00000001408BACCA case 8
+0x1408bad13  jmp     short loc_1408BACDA
+0x1408bad15  mov     rax, [rsi+38h]; jumptable 00000001408BACCA case 4
+0x1408bad19  mov     rcx, [rax+30h]
+0x1408bad1d  test    rcx, rcx
+0x1408bad20  jz      short loc_1408BAD41
+0x1408bad22  mov     eax, r12d
+0x1408bad25  mov     [rbp+var_10], rcx
+0x1408bad29  test    eax, eax
+0x1408bad2b  jns     short loc_1408BACDE
+0x1408bad2d  jmp     short loc_1408BACEE
+0x1408bad2f  mov     rcx, [rsi+50h]; jumptable 00000001408BACCA case 7
+0x1408bad33  jmp     short loc_1408BACDA
+0x1408bad35  mov     rcx, [rsi+48h]; jumptable 00000001408BACCA case 6
+0x1408bad39  jmp     short loc_1408BACDA
+0x1408bad3b  mov     rcx, [rsi+68h]; jumptable 00000001408BACCA case 10
+0x1408bad3f  jmp     short loc_1408BACDA
+0x1408bad41  mov     eax, 0C0000034h
+0x1408bad46  jmp     short loc_1408BAD29
+0x1408bad48  mov     rcx, [rsi+88h]; jumptable 00000001408BACCA case 14
+0x1408bad4f  jmp     short loc_1408BACDA
+0x1408bad51  mov     rcx, [rsi+70h]; jumptable 00000001408BACCA case 11
+0x1408bad55  jmp     short loc_1408BACDA
+0x1408bad57  mov     rcx, [rsi+78h]; jumptable 00000001408BACCA case 12
+0x1408bad5b  jmp     loc_1408BACDA
+0x1408bad60  mov     rcx, [rsi+80h]; jumptable 00000001408BACCA case 13
+0x1408bad67  jmp     loc_1408BACDA
+0x1408bad6c  mov     rcx, [rsi+90h]; jumptable 00000001408BACCA case 15
+0x1408bad73  jmp     loc_1408BACDA
+0x1408bad78  mov     rcx, [rsi+38h]; jumptable 00000001408BACCA case 1
+0x1408bad7c  lea     r8, [rbp+var_10]
+0x1408bad80  mov     edx, r9d
+0x1408bad83  call    _SysCtxGetCachedContextBaseKey
+0x1408bad88  jmp     short loc_1408BAD29
+0x1408bad8a  mov     rcx, [rsi+38h]; jumptable 00000001408BACCA case 2
+0x1408bad8e  lea     r8, [rbp+var_10]
+0x1408bad92  mov     edx, 2
+0x1408bad97  call    _SysCtxGetCachedContextBaseKey
+0x1408bad9c  jmp     short loc_1408BAD29
+0x1408bad9e  mov     rcx, [rsi+38h]; jumptable 00000001408BACCA case 3
+0x1408bada2  lea     r8, [rbp+var_10]
+0x1408bada6  mov     edx, 3
+0x1408badab  call    _SysCtxGetCachedContextBaseKey
+0x1408badb0  jmp     loc_1408BAD29
+0x140b51bba  cmp     edi, 0Eh; switch 15 cases
+0x140b51bbd  ja      def_1408BACCA; jumptable 00000001408BACCA default case, case 5
+0x140b51bc3  movsxd  rax, edi
+0x140b51bc6  mov     ecx, ds:(jpt_140B51BD1 - 140000000h)[r13+rax*4]
+0x140b51bce  add     rcx, r13
+0x140b51bd1  jmp     rcx; switch jump
+0x140b51bd7  mov     [rsp+60h+arg_0], r15; jumptable 0000000140B51BD1 cases 4-14
+0x140b51bdf  mov     r15, r12
+0x140b51be2  movsxd  rax, edi
+0x140b51be5  mov     ecx, ds:(jpt_140B51BF0 - 140000000h)[r13+rax*4]
+0x140b51bed  add     rcx, r13
+0x140b51bf0  jmp     rcx; switch jump
+0x140b51bf6  call    _PnpGetEnumSecurityDescriptor; jumptable 0000000140B51BF0 case 4
+0x140b51bfb  mov     r15, rax
+0x140b51bfe  test    rax, rax
+0x140b51c01  jnz     short loc_140B51C0D
+0x140b51c03  mov     eax, 0C00000E5h
+0x140b51c08  jmp     loc_140B51DC6
+0x140b51c0d  mov     r9d, 4
+0x140b51c13  lea     r10, aEnum; "Enum"
+0x140b51c1a  jmp     loc_140B51CC5
+0x140b51c1f  mov     r9d, 4; jumptable 0000000140B51BF0 case 5
+0x140b51c25  lea     r10, aServices_2; "Services"
+0x140b51c2c  jmp     loc_140B51CC5
+0x140b51c31  mov     r9d, 4; jumptable 0000000140B51BF0 case 6
+0x140b51c37  lea     r10, aControlClass_0; "Control\\Class"
+0x140b51c3e  jmp     loc_140B51CC5
+0x140b51c43  mov     r9d, 4; jumptable 0000000140B51BF0 case 7
+0x140b51c49  lea     r10, aControlDevicec_2; "Control\\DeviceClasses"
+0x140b51c50  jmp     short loc_140B51CC5
+0x140b51c52  movzx   ecx, byte ptr [r10+4]; jumptable 0000000140B51BF0 case 8
+0x140b51c57  lea     rax, aControlDevicec_2; "Control\\DeviceClasses"
+0x140b51c5e  test    cl, cl
+0x140b51c60  lea     r10, aControlDevicei; "Control\\DeviceInterfaces"
+0x140b51c67  mov     r9d, 4
+0x140b51c6d  cmovz   r10, rax
+0x140b51c71  jmp     short loc_140B51CC5
+0x140b51c73  mov     r9d, 4; jumptable 0000000140B51BF0 case 9
+0x140b51c79  lea     r10, aControlDevicec; "Control\\DeviceContainers"
+0x140b51c80  jmp     short loc_140B51CC5
+0x140b51c82  mov     r9d, 4; jumptable 0000000140B51BF0 case 10
+0x140b51c88  lea     r10, aControlDevicep; "Control\\DevicePanels"
+0x140b51c8f  jmp     short loc_140B51CC5
+0x140b51c91  mov     r9d, 4; jumptable 0000000140B51BF0 case 11
+0x140b51c97  lea     r10, aControlCritica; "Control\\CriticalDeviceDatabase"
+0x140b51c9e  jmp     short loc_140B51CC5
+0x140b51ca0  mov     r9d, 4; jumptable 0000000140B51BF0 case 12
+0x140b51ca6  lea     r10, aControlCodevic; "Control\\CoDeviceInstallers"
+0x140b51cad  jmp     short loc_140B51CC5
+0x140b51caf  mov     r9d, 4; jumptable 0000000140B51BF0 case 13
+0x140b51cb5  lea     r10, aHardwareProfil_2; "Hardware Profiles"
+0x140b51cbc  jmp     short loc_140B51CC5
+0x140b51cbe  lea     r10, aHardwareconfig_0; jumptable 0000000140B51BF0 case 14
+0x140b51cc5  mov     rcx, [rsi+38h]
+0x140b51cc9  lea     r8, [rbp+var_8]
+0x140b51ccd  mov     edx, r9d
+0x140b51cd0  call    _SysCtxGetCachedContextBaseKey
+0x140b51cd5  mov     r14d, eax
+0x140b51cd8  test    eax, eax
+0x140b51cda  js      loc_140B51DAD
+0x140b51ce0  mov     rdx, [rbp+var_8]
+0x140b51ce4  lea     rax, [rbp+var_10]
+0x140b51ce8  mov     rcx, [rsi+38h]
+0x140b51cec  xor     r9d, r9d
+0x140b51cef  mov     [rsp+60h+var_20], r12
+0x140b51cf4  mov     r8, r10
+0x140b51cf7  mov     [rsp+60h+var_28], rax
+0x140b51cfc  mov     [rsp+60h+var_38], r12
+0x140b51d01  mov     [rsp+60h+var_40], 2000000h
+0x140b51d09  call    _SysCtxRegCreateTree
+0x140b51d0e  mov     r14d, eax
+0x140b51d11  test    eax, eax
+0x140b51d13  js      loc_140B51DAD
+0x140b51d19  movsxd  rax, edi
+0x140b51d1c  mov     ecx, ds:(jpt_140B51D27 - 140000000h)[r13+rax*4]; switch 15 cases
+0x140b51d24  add     rcx, r13
+0x140b51d27  jmp     rcx; switch jump
+0x140b51d2d  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 4
+0x140b51d31  mov     [rsi+40h], rax
+0x140b51d35  jmp     short loc_140B51DA2
+0x140b51d37  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 5
+0x140b51d3b  mov     [rsi+48h], rax
+0x140b51d3f  jmp     short loc_140B51DA2
+0x140b51d41  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 6
+0x140b51d45  mov     [rsi+50h], rax
+0x140b51d49  jmp     short loc_140B51DA2
+0x140b51d4b  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 7
+0x140b51d4f  mov     [rsi+58h], rax
+0x140b51d53  jmp     short loc_140B51DA2
+0x140b51d55  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 8
+0x140b51d59  mov     [rsi+60h], rax
+0x140b51d5d  jmp     short loc_140B51DA2
+0x140b51d5f  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 9
+0x140b51d63  mov     [rsi+68h], rax
+0x140b51d67  jmp     short loc_140B51DA2
+0x140b51d69  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 10
+0x140b51d6d  mov     [rsi+70h], rax
+0x140b51d71  jmp     short loc_140B51DA2
+0x140b51d73  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 11
+0x140b51d77  mov     [rsi+78h], rax
+0x140b51d7b  jmp     short loc_140B51DA2
+0x140b51d7d  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 12
+0x140b51d81  mov     [rsi+80h], rax
+0x140b51d88  jmp     short loc_140B51DA2
+0x140b51d8a  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 13
+0x140b51d8e  mov     [rsi+88h], rax
+0x140b51d95  jmp     short loc_140B51DA2
+0x140b51d97  mov     rax, [rbp+var_10]; jumptable 0000000140B51D27 case 14
+0x140b51d9b  mov     [rsi+90h], rax
+0x140b51da2  mov     [rbx], rax
+0x140b51da5  jmp     short loc_140B51DAD
+0x140b51da7  mov     r14d, 0C000000Dh; jumptable 0000000140B51D27 cases 0-3
+0x140b51dad  test    r15, r15
+0x140b51db0  jz      short loc_140B51DBC
+0x140b51db2  xor     edx, edx; Tag
+0x140b51db4  mov     rcx, r15; P
+0x140b51db7  call    ExFreePoolWithTag
+0x140b51dbc  mov     eax, r14d
+0x140b51dbf  jmp     short loc_140B51DC6
+0x140b51dc1  mov     eax, 0C000000Dh; jumptable 0000000140B51BF0 cases 0-3
+0x140b51dc6  mov     r15, [rsp+60h+arg_0]
+0x140b51dce  jmp     loc_1408BACEE
+```

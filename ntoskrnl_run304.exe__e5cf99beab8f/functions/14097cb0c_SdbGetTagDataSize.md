@@ -1,0 +1,291 @@
+# SdbGetTagDataSize
+
+- ea: `0x14097cb0c`
+- end: `0x14097cd7d`
+- name: `SdbGetTagDataSize`
+- size: `625`
+- prototype: ``
+- caller_count: `11`
+- callee_count: `5`
+- tags: ``
+
+## callers
+
+- `0x14073394c`
+- `0x14077c1d8`
+- `0x140820b7c`
+- `0x140822a94`
+- `0x140825510`
+- `0x1408258b8`
+- `0x14097aa10`
+- `0x14097c350`
+- `0x14097ca68`
+- `0x140abd220`
+- `0x140acc104`
+
+## callees
+
+- `0x14048e440`
+- `0x14097cb0c`
+- `0x14097ce8c`
+- `0x14097cedc`
+- `0x14097d158`
+
+## string_xrefs
+
+- `0x14097cba8`: `Error reading size data [%x]`
+- `0x14097ccfc`: `Error reading size data [%x]`
+- `0x14097cc75`: `Error reading size data`
+- `0x14097cd3f`: `Error reading size data`
+
+## pseudocode
+
+```c
+__int64 __fastcall SdbGetTagDataSize(__int64 a1, int a2)
+{
+  unsigned __int16 TagFromTagID; // ax
+  int v5; // r15d
+  int v6; // ebx
+  __int64 result; // rax
+  __int64 v8; // [rsp+20h] [rbp-10h]
+  unsigned int v9; // [rsp+58h] [rbp+28h] BYREF
+
+  v9 = 0;
+  TagFromTagID = SdbGetTagFromTagID();
+  v5 = TagFromTagID;
+  v6 = TagFromTagID & 0xF000;
+  if ( (unsigned int)Feature_SdbValidateRootTagsOnOpen__private_IsEnabledDeviceUsageNoInline() )
+  {
+    switch ( v6 )
+    {
+      case 36864:
+LABEL_3:
+        v9 = 0;
+        if ( !(unsigned int)SdbpReadMappedData(a1, a2 + 2, &v9, 4u) )
+        {
+          v9 = 0x20000000;
+          AslLogCallPrintf(
+            1,
+            (unsigned int)"SdbGetTagDataSize",
+            311,
+            (unsigned int)"Error reading size data [%x]",
+            -1073741789);
+        }
+        result = v9;
+        goto LABEL_6;
+      case 16384:
+        goto LABEL_12;
+      case 12288:
+        result = 2;
+        break;
+      case 20480:
+        result = 8;
+        break;
+      case 24576:
+LABEL_12:
+        result = 4;
+        break;
+      case 4096:
+        result = 0;
+        break;
+      case 8192:
+        result = 1;
+        break;
+      case 28672:
+      case 32768:
+        goto LABEL_3;
+      default:
+        AslLogCallPrintf(
+          1,
+          (unsigned int)"SdbGetTagDataSize",
+          318,
+          (unsigned int)"Invalid TAG_TYPE encountered TAG: [0x%x]",
+          v5);
+        return 0x20000000;
+    }
+    v9 = result;
+LABEL_6:
+    if ( (int)result + a2 >= (unsigned int)result && (unsigned int)(result + a2) <= *(_DWORD *)(a1 + 20) )
+      return result;
+    LODWORD(v8) = -1073741675;
+    AslLogCallPrintf(1, (unsigned int)"SdbGetTagDataSize", 329, (unsigned int)"Error reading size data [%x]", v8);
+    return 0x20000000;
+  }
+  switch ( v6 )
+  {
+    case 24576:
+      goto LABEL_25;
+    case 12288:
+      result = 2;
+      goto LABEL_26;
+    case 16384:
+LABEL_25:
+      result = 4;
+LABEL_26:
+      v9 = result;
+      goto LABEL_27;
+    case 4096:
+      result = 0;
+      goto LABEL_26;
+    case 8192:
+      result = 1;
+      goto LABEL_26;
+    case 20480:
+      result = 8;
+      goto LABEL_26;
+  }
+  v9 = 0;
+  if ( !(unsigned int)SdbpReadMappedData(a1, a2 + 2, &v9, 4u) )
+    AslLogCallPrintf(1, (unsigned int)"SdbGetTagDataSize", 364, (unsigned int)"Error reading size data");
+  result = v9;
+LABEL_27:
+  if ( (int)result + a2 < (unsigned int)result || (unsigned int)(result + a2) > *(_DWORD *)(a1 + 20) )
+  {
+    AslLogCallPrintf(1, (unsigned int)"SdbGetTagDataSize", 375, (unsigned int)"Error reading size data");
+    return 0x20000000;
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14097cb0c  mov     [rsp-18h+arg_0], rbx
+0x14097cb11  mov     [rsp-18h+arg_10], rsi
+0x14097cb16  push    rbp
+0x14097cb17  push    r14
+0x14097cb19  push    r15
+0x14097cb1b  mov     rbp, rsp
+0x14097cb1e  sub     rsp, 30h
+0x14097cb22  mov     r14d, edx
+0x14097cb25  mov     [rbp+arg_8], 0
+0x14097cb2c  mov     rsi, rcx
+0x14097cb2f  call    SdbGetTagFromTagID
+0x14097cb34  movzx   r15d, ax
+0x14097cb38  mov     ebx, r15d
+0x14097cb3b  and     ebx, 0F000h
+0x14097cb41  call    Feature_SdbValidateRootTagsOnOpen__private_IsEnabledDeviceUsageNoInline
+0x14097cb46  test    eax, eax
+0x14097cb48  jz      loc_14097CBF2
+0x14097cb4e  cmp     ebx, 9000h
+0x14097cb54  jnz     short loc_14097CBCD
+0x14097cb56  lea     edx, [r14+2]
+0x14097cb5a  mov     [rbp+arg_8], 0
+0x14097cb61  mov     r9d, 4
+0x14097cb67  lea     r8, [rbp+arg_8]
+0x14097cb6b  mov     rcx, rsi
+0x14097cb6e  call    SdbpReadMappedData
+0x14097cb73  test    eax, eax
+0x14097cb75  jz      loc_14097CCFC
+0x14097cb7b  mov     eax, [rbp+arg_8]
+0x14097cb7e  lea     ecx, [rax+r14]
+0x14097cb82  cmp     ecx, eax
+0x14097cb84  jb      short loc_14097CBA0
+0x14097cb86  cmp     ecx, [rsi+14h]
+0x14097cb89  ja      short loc_14097CBA0
+0x14097cb8b  mov     rbx, [rsp+30h+arg_0]
+0x14097cb90  mov     rsi, [rsp+30h+arg_10]
+0x14097cb95  add     rsp, 30h
+0x14097cb99  pop     r15
+0x14097cb9b  pop     r14
+0x14097cb9d  pop     rbp
+0x14097cb9e  retn
+0x14097cba0  mov     [rsp+30h+var_10], 0C0000095h
+0x14097cba8  lea     r9, aErrorReadingSi; "Error reading size data [%x]"
+0x14097cbaf  mov     r8d, 149h
+0x14097cbb5  lea     rdx, aSdbgettagdatas; "SdbGetTagDataSize"
+0x14097cbbc  mov     ecx, 1
+0x14097cbc1  call    AslLogCallPrintf
+0x14097cbc6  mov     eax, 20000000h
+0x14097cbcb  jmp     short loc_14097CB8B
+0x14097cbcd  cmp     ebx, 4000h
+0x14097cbd3  jnz     short loc_14097CBDF
+0x14097cbd5  mov     eax, 4
+0x14097cbda  mov     [rbp+arg_8], eax
+0x14097cbdd  jmp     short loc_14097CB7E
+0x14097cbdf  cmp     ebx, 3000h
+0x14097cbe5  jnz     loc_14097CC9F
+0x14097cbeb  mov     eax, 2
+0x14097cbf0  jmp     short loc_14097CBDA
+0x14097cbf2  cmp     ebx, 6000h
+0x14097cbf8  jz      short loc_14097CC5C
+0x14097cbfa  cmp     ebx, 3000h
+0x14097cc00  jz      loc_14097CC98
+0x14097cc06  cmp     ebx, 4000h
+0x14097cc0c  jz      short loc_14097CC5C
+0x14097cc0e  cmp     ebx, 1000h
+0x14097cc14  jz      loc_14097CD76
+0x14097cc1a  cmp     ebx, 2000h
+0x14097cc20  jz      loc_14097CD6C
+0x14097cc26  cmp     ebx, 5000h
+0x14097cc2c  jz      loc_14097CD62
+0x14097cc32  lea     edx, [r14+2]
+0x14097cc36  mov     [rbp+arg_8], 0
+0x14097cc3d  mov     r9d, 4
+0x14097cc43  lea     r8, [rbp+arg_8]
+0x14097cc47  mov     rcx, rsi
+0x14097cc4a  call    SdbpReadMappedData
+0x14097cc4f  test    eax, eax
+0x14097cc51  jz      loc_14097CD3F
+0x14097cc57  mov     eax, [rbp+arg_8]
+0x14097cc5a  jmp     short loc_14097CC64
+0x14097cc5c  mov     eax, 4
+0x14097cc61  mov     [rbp+arg_8], eax
+0x14097cc64  lea     ecx, [rax+r14]
+0x14097cc68  cmp     ecx, eax
+0x14097cc6a  jb      short loc_14097CC75
+0x14097cc6c  cmp     ecx, [rsi+14h]
+0x14097cc6f  jbe     loc_14097CB8B
+0x14097cc75  lea     r9, aErrorReadingSi_0; "Error reading size data"
+0x14097cc7c  mov     r8d, 177h
+0x14097cc82  lea     rdx, aSdbgettagdatas; "SdbGetTagDataSize"
+0x14097cc89  mov     ecx, 1
+0x14097cc8e  call    AslLogCallPrintf
+0x14097cc93  jmp     loc_14097CBC6
+0x14097cc98  mov     eax, 2
+0x14097cc9d  jmp     short loc_14097CC61
+0x14097cc9f  cmp     ebx, 5000h
+0x14097cca5  jnz     short loc_14097CCB1
+0x14097cca7  mov     eax, 8
+0x14097ccac  jmp     loc_14097CBDA
+0x14097ccb1  cmp     ebx, 6000h
+0x14097ccb7  jz      loc_14097CBD5
+0x14097ccbd  cmp     ebx, 1000h
+0x14097ccc3  jz      short loc_14097CD38
+0x14097ccc5  cmp     ebx, 2000h
+0x14097cccb  jz      short loc_14097CD2E
+0x14097cccd  cmp     ebx, 7000h
+0x14097ccd3  jz      loc_14097CB56
+0x14097ccd9  cmp     ebx, 8000h
+0x14097ccdf  jz      loc_14097CB56
+0x14097cce5  mov     [rsp+30h+var_10], r15d
+0x14097ccea  lea     r9, aInvalidTagType_0; "Invalid TAG_TYPE encountered TAG: [0x%x"...
+0x14097ccf1  mov     r8d, 13Eh
+0x14097ccf7  jmp     loc_14097CBB5
+0x14097ccfc  lea     r9, aErrorReadingSi; "Error reading size data [%x]"
+0x14097cd03  mov     [rbp+arg_8], 20000000h
+0x14097cd0a  mov     r8d, 137h
+0x14097cd10  mov     [rsp+30h+var_10], 0C0000023h
+0x14097cd18  lea     rdx, aSdbgettagdatas; "SdbGetTagDataSize"
+0x14097cd1f  mov     ecx, 1
+0x14097cd24  call    AslLogCallPrintf
+0x14097cd29  jmp     loc_14097CB7B
+0x14097cd2e  mov     eax, 1
+0x14097cd33  jmp     loc_14097CBDA
+0x14097cd38  xor     eax, eax
+0x14097cd3a  jmp     loc_14097CBDA
+0x14097cd3f  lea     r9, aErrorReadingSi_0; "Error reading size data"
+0x14097cd46  mov     r8d, 16Ch
+0x14097cd4c  lea     rdx, aSdbgettagdatas; "SdbGetTagDataSize"
+0x14097cd53  mov     ecx, 1
+0x14097cd58  call    AslLogCallPrintf
+0x14097cd5d  jmp     loc_14097CC57
+0x14097cd62  mov     eax, 8
+0x14097cd67  jmp     loc_14097CC61
+0x14097cd6c  mov     eax, 1
+0x14097cd71  jmp     loc_14097CC61
+0x14097cd76  xor     eax, eax
+0x14097cd78  jmp     loc_14097CC61
+```

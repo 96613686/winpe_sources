@@ -1,0 +1,280 @@
+# SecureDump_PrepareForInit
+
+- ea: `0x1405da30c`
+- end: `0x1405da559`
+- name: `SecureDump_PrepareForInit`
+- size: `589`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `4`
+- tags: `registry_config`
+
+## callers
+
+- `0x140c5c6f4`
+
+## callees
+
+- `0x1405da2dc`
+- `0x1405da30c`
+- `0x1405da800`
+- `0x140bae8e0`
+
+## string_xrefs
+
+- `0x1405da334`: `\Registry\Machine\System\CurrentControlSet\Control\CrashControl`
+- `0x1405da31b`: `\Registry\Machine\System\CurrentControlSet\Control\CrashControl\EncryptionCertificates\Certificate.1`
+- `0x1405da33f`: `\Registry\Machine\System\CurrentControlSet\Control\CrashControl\ForceDumpsDisabled`
+
+## pseudocode
+
+```c
+void __fastcall SecureDump_PrepareForInit(__int64 a1, _BYTE *a2)
+{
+  unsigned int v3; // ebx
+  int Registry; // eax
+  int v5; // eax
+  _QWORD v6[2]; // [rsp+30h] [rbp-30h] BYREF
+  _QWORD v7[2]; // [rsp+40h] [rbp-20h] BYREF
+  _QWORD v8[2]; // [rsp+50h] [rbp-10h] BYREF
+  char v9; // [rsp+80h] [rbp+20h] BYREF
+  PVOID P; // [rsp+90h] [rbp+30h] BYREF
+
+  v7[0] = 13238472;
+  v7[1] = L"\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl\\EncryptionCertificates\\Certificate.1";
+  P = 0;
+  v6[1] = L"\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl";
+  v8[1] = L"\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl\\ForceDumpsDisabled";
+  v6[0] = 8388734;
+  v8[0] = 10879140;
+  ForceDumpDisabled = 1;
+  if ( !a2 )
+    return;
+  *a2 = 0;
+  xmmword_140E4C418 = 0;
+  v3 = 2;
+  *(_OWORD *)&dwFlags = 0;
+  Registry = SecureDump_ReadRegistry((unsigned int)v8, (unsigned int)L"GuardedHost", 4, (unsigned int)&P, (__int64)&v9);
+  if ( Registry < 0 )
+  {
+    if ( Registry != -1073741772 )
+      goto LABEL_20;
+  }
+  else
+  {
+    LODWORD(xmmword_140E4C418) = *(_DWORD *)P;
+    ExFreePoolWithTag(P, 0);
+    P = 0;
+    if ( (_DWORD)xmmword_140E4C418 )
+    {
+LABEL_19:
+      v3 = 0;
+      goto LABEL_20;
+    }
+  }
+  v5 = SecureDump_ReadRegistry(
+         (unsigned int)v6,
+         (unsigned int)L"DumpEncryptionEnabled",
+         4,
+         (unsigned int)&P,
+         (__int64)&v9);
+  if ( v5 < 0 )
+  {
+    if ( v5 != -1073741772 )
+      goto LABEL_20;
+    ForceDumpDisabled = 0;
+    goto LABEL_19;
+  }
+  DWORD1(xmmword_140E4C418) = *(_DWORD *)P;
+  ExFreePoolWithTag(P, 0);
+  P = 0;
+  if ( !DWORD1(xmmword_140E4C418) )
+    goto LABEL_8;
+  *a2 = 1;
+  if ( (int)SecureDump_ReadRegistry(
+              (unsigned int)v6,
+              (unsigned int)L"ProvisionDumpKeyWithCertificate",
+              4,
+              (unsigned int)&P,
+              (__int64)&v9) >= 0 )
+  {
+    SecureDmpLoadCertificate = *(_DWORD *)P != 0;
+    ExFreePoolWithTag(P, 0);
+  }
+  if ( SecureDmpLoadCertificate
+    || (int)SecureDump_ReadRegistry(
+              (unsigned int)v7,
+              (unsigned int)L"PublicKey",
+              3,
+              (unsigned int)&xmmword_140E4C418 + 8,
+              (__int64)&dwFlags) >= 0
+    && (int)SecureDump_ReadRegistry(
+              (unsigned int)v7,
+              (unsigned int)L"Thumbprint",
+              1,
+              (unsigned int)(&dwFlags + 2),
+              (__int64)(&dwFlags + 1)) >= 0 )
+  {
+LABEL_8:
+    ForceDumpDisabled = 0;
+LABEL_9:
+    SecureDmpEncryptionContext = 1;
+    return;
+  }
+LABEL_20:
+  if ( ForceDumpDisabled != 1 )
+    goto LABEL_9;
+  if ( *((_QWORD *)&xmmword_140E4C418 + 1) )
+  {
+    ExFreePoolWithTag(*((PVOID *)&xmmword_140E4C418 + 1), 0);
+    *((_QWORD *)&xmmword_140E4C418 + 1) = 0;
+  }
+  if ( *((_QWORD *)&dwFlags + 1) )
+  {
+    ExFreePoolWithTag(*((PVOID *)&dwFlags + 1), 0);
+    *((_QWORD *)&dwFlags + 1) = 0;
+  }
+  if ( v3 )
+  {
+    SecureDmpEncryptionContext = 3;
+    SecureDump_LogErrorEvent(v3);
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x1405da30c  mov     [rsp-18h+arg_8], rbx
+0x1405da311  push    rbp
+0x1405da312  push    rsi
+0x1405da313  push    rdi
+0x1405da314  mov     rbp, rsp
+0x1405da317  sub     rsp, 60h
+0x1405da31b  lea     rax, aRegistryMachin_85; "\\Registry\\Machine\\System\\CurrentCon"...
+0x1405da322  mov     [rbp+var_20], 0CA00C8h
+0x1405da32a  mov     [rbp+var_18], rax
+0x1405da32e  xor     esi, esi
+0x1405da330  mov     [rbp+P], rsi
+0x1405da334  lea     rax, aRegistryMachin_32; "\\Registry\\Machine\\System\\CurrentCon"...
+0x1405da33b  mov     [rbp+var_28], rax
+0x1405da33f  lea     rax, aRegistryMachin_213; "\\Registry\\Machine\\System\\CurrentCon"...
+0x1405da346  mov     [rbp+var_8], rax
+0x1405da34a  mov     rdi, rdx
+0x1405da34d  mov     [rbp+var_30], 80007Eh
+0x1405da355  mov     [rbp+var_10], 0A600A4h
+0x1405da35d  mov     cs:ForceDumpDisabled, 1
+0x1405da364  test    rdx, rdx
+0x1405da367  jz      loc_1405DA433
+0x1405da36d  xorps   xmm0, xmm0
+0x1405da370  mov     [rdx], sil
+0x1405da373  lea     rax, [rbp+arg_0]
+0x1405da377  lea     rdx, aGuardedhost; "GuardedHost"
+0x1405da37e  mov     [rsp+60h+var_40], rax
+0x1405da383  lea     r9, [rbp+P]
+0x1405da387  lea     r8d, [rsi+4]
+0x1405da38b  lea     rcx, [rbp+var_10]
+0x1405da38f  movups  cs:xmmword_140E4C418, xmm0
+0x1405da396  lea     ebx, [rsi+2]
+0x1405da399  movups  cs:dwFlags, xmm0
+0x1405da3a0  call    SecureDump_ReadRegistry
+0x1405da3a5  test    eax, eax
+0x1405da3a7  js      short loc_1405DA3CD
+0x1405da3a9  mov     rcx, [rbp+P]; P
+0x1405da3ad  xor     edx, edx; Tag
+0x1405da3af  mov     eax, [rcx]
+0x1405da3b1  mov     dword ptr cs:xmmword_140E4C418, eax
+0x1405da3b7  call    ExFreePoolWithTag
+0x1405da3bc  cmp     dword ptr cs:xmmword_140E4C418, esi
+0x1405da3c2  mov     [rbp+P], rsi
+0x1405da3c6  jz      short loc_1405DA3D8
+0x1405da3c8  jmp     loc_1405DA4F8
+0x1405da3cd  cmp     eax, 0C0000034h
+0x1405da3d2  jnz     loc_1405DA4FA
+0x1405da3d8  lea     rax, [rbp+arg_0]
+0x1405da3dc  mov     r8d, 4
+0x1405da3e2  lea     r9, [rbp+P]
+0x1405da3e6  mov     [rsp+60h+var_40], rax
+0x1405da3eb  lea     rdx, aDumpencryption; "DumpEncryptionEnabled"
+0x1405da3f2  lea     rcx, [rbp+var_30]
+0x1405da3f6  call    SecureDump_ReadRegistry
+0x1405da3fb  test    eax, eax
+0x1405da3fd  js      loc_1405DA4EA
+0x1405da403  mov     rcx, [rbp+P]; P
+0x1405da407  xor     edx, edx; Tag
+0x1405da409  mov     eax, [rcx]
+0x1405da40b  mov     dword ptr cs:xmmword_140E4C418+4, eax
+0x1405da411  call    ExFreePoolWithTag
+0x1405da416  cmp     dword ptr cs:xmmword_140E4C418+4, esi
+0x1405da41c  mov     [rbp+P], rsi
+0x1405da420  jnz     short loc_1405DA444
+0x1405da422  mov     cs:ForceDumpDisabled, sil
+0x1405da429  mov     cs:SecureDmpEncryptionContext, 1
+0x1405da433  mov     rbx, [rsp+60h+arg_8]
+0x1405da43b  add     rsp, 60h
+0x1405da43f  pop     rdi
+0x1405da440  pop     rsi
+0x1405da441  pop     rbp
+0x1405da442  retn
+0x1405da444  lea     rax, [rbp+arg_0]
+0x1405da448  mov     byte ptr [rdi], 1
+0x1405da44b  lea     r9, [rbp+P]
+0x1405da44f  mov     [rsp+60h+var_40], rax
+0x1405da454  mov     r8d, 4
+0x1405da45a  lea     rdx, aProvisiondumpk; "ProvisionDumpKeyWithCertificate"
+0x1405da461  lea     rcx, [rbp+var_30]
+0x1405da465  call    SecureDump_ReadRegistry
+0x1405da46a  test    eax, eax
+0x1405da46c  js      short loc_1405DA482
+0x1405da46e  mov     rcx, [rbp+P]; P
+0x1405da472  cmp     [rcx], esi
+0x1405da474  setnbe  cs:SecureDmpLoadCertificate
+0x1405da47b  xor     edx, edx; Tag
+0x1405da47d  call    ExFreePoolWithTag
+0x1405da482  cmp     cs:SecureDmpLoadCertificate, sil
+0x1405da489  jnz     short loc_1405DA422
+0x1405da48b  lea     rax, dwFlags
+0x1405da492  mov     r8d, 3
+0x1405da498  lea     r9, xmmword_140E4C418+8
+0x1405da49f  mov     [rsp+60h+var_40], rax
+0x1405da4a4  lea     rdx, aPublickey; "PublicKey"
+0x1405da4ab  lea     rcx, [rbp+var_20]
+0x1405da4af  call    SecureDump_ReadRegistry
+0x1405da4b4  test    eax, eax
+0x1405da4b6  js      short loc_1405DA4FA
+0x1405da4b8  lea     rax, dwFlags+4
+0x1405da4bf  mov     r8d, 1
+0x1405da4c5  lea     r9, dwFlags+8
+0x1405da4cc  mov     [rsp+60h+var_40], rax
+0x1405da4d1  lea     rdx, aThumbprint; "Thumbprint"
+0x1405da4d8  lea     rcx, [rbp+var_20]
+0x1405da4dc  call    SecureDump_ReadRegistry
+0x1405da4e1  test    eax, eax
+0x1405da4e3  js      short loc_1405DA4FA
+0x1405da4e5  jmp     loc_1405DA422
+0x1405da4ea  cmp     eax, 0C0000034h
+0x1405da4ef  jnz     short loc_1405DA4FA
+0x1405da4f1  mov     cs:ForceDumpDisabled, sil
+0x1405da4f8  mov     ebx, esi
+0x1405da4fa  cmp     cs:ForceDumpDisabled, 1
+0x1405da501  jnz     loc_1405DA429
+0x1405da507  mov     rcx, qword ptr cs:xmmword_140E4C418+8; P
+0x1405da50e  test    rcx, rcx
+0x1405da511  jz      short loc_1405DA521
+0x1405da513  xor     edx, edx; Tag
+0x1405da515  call    ExFreePoolWithTag
+0x1405da51a  mov     qword ptr cs:xmmword_140E4C418+8, rsi
+0x1405da521  mov     rcx, qword ptr cs:dwFlags+8; P
+0x1405da528  test    rcx, rcx
+0x1405da52b  jz      short loc_1405DA53B
+0x1405da52d  xor     edx, edx; Tag
+0x1405da52f  call    ExFreePoolWithTag
+0x1405da534  mov     qword ptr cs:dwFlags+8, rsi
+0x1405da53b  test    ebx, ebx
+0x1405da53d  jz      loc_1405DA433
+0x1405da543  mov     ecx, ebx
+0x1405da545  mov     cs:SecureDmpEncryptionContext, 3
+0x1405da54f  call    SecureDump_LogErrorEvent
+0x1405da554  jmp     loc_1405DA433
+```

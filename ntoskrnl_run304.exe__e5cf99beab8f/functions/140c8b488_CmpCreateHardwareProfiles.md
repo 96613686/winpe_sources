@@ -1,0 +1,641 @@
+# CmpCreateHardwareProfiles
+
+- ea: `0x140c8b488`
+- end: `0x140c8bcfd`
+- name: `CmpCreateHardwareProfiles`
+- size: `2165`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `15`
+- tags: `reparse_path, authz_impersonation, registry_config, broker_com_uri`
+
+## callers
+
+- `0x140c89fc4`
+
+## callees
+
+- `0x14047f8a8`
+- `0x1406d9d70`
+- `0x1406daa70`
+- `0x1406daad0`
+- `0x1406dab70`
+- `0x1406dac30`
+- `0x1406db490`
+- `0x140724264`
+- `0x1407f580c`
+- `0x1407f9198`
+- `0x1407f9314`
+- `0x140964870`
+- `0x140c8ab40`
+- `0x140c8ad70`
+- `0x140c8b488`
+
+## string_xrefs
+
+- `0x140c8bb7c`: `\Registry\Machine\%wZ\CurrentControlSet\%wZ`
+- `0x140c8bc01`: `\Registry\Machine\%wZ\CurrentControlSet\%wZ`
+- `0x140c8bad6`: `\Registry\Machine\%wZ\CurrentControlSet\Hardware Profiles\%04d`
+
+## pseudocode
+
+```c
+__int64 __fastcall CmpCreateHardwareProfiles(__int64 a1)
+{
+  int v2; // eax
+  HANDLE v3; // r14
+  NTSTATUS v4; // ebx
+  NTSTATUS v5; // eax
+  __int64 v6; // rdi
+  char v7; // si
+  __int16 v8; // dx
+  int v9; // r8d
+  ULONG Class; // [rsp+20h] [rbp-E0h]
+  unsigned int Data; // [rsp+40h] [rbp-C0h] BYREF
+  ULONG Disposition; // [rsp+44h] [rbp-BCh] BYREF
+  _BYTE v14[8]; // [rsp+48h] [rbp-B8h] BYREF
+  HANDLE v15; // [rsp+50h] [rbp-B0h] BYREF
+  UNICODE_STRING DestinationString; // [rsp+58h] [rbp-A8h] BYREF
+  OBJECT_ATTRIBUTES ObjectAttributes; // [rsp+68h] [rbp-98h] BYREF
+  HANDLE KeyHandle; // [rsp+98h] [rbp-68h] BYREF
+  HANDLE v19; // [rsp+A0h] [rbp-60h] BYREF
+  HANDLE Handle; // [rsp+A8h] [rbp-58h] BYREF
+  HANDLE v21; // [rsp+B0h] [rbp-50h] BYREF
+  ULONG ResultLength; // [rsp+B8h] [rbp-48h] BYREF
+  HANDLE v23; // [rsp+C0h] [rbp-40h] BYREF
+  UNICODE_STRING String1; // [rsp+C8h] [rbp-38h] BYREF
+  HANDLE v25; // [rsp+D8h] [rbp-28h] BYREF
+  _DWORD KeyValueInformation[32]; // [rsp+E0h] [rbp-20h] BYREF
+  _BYTE v27[256]; // [rsp+160h] [rbp+60h] BYREF
+  int v28; // [rsp+260h] [rbp+160h] BYREF
+
+  Handle = 0;
+  ResultLength = 0;
+  Disposition = 0;
+  v25 = 0;
+  KeyHandle = 0;
+  memset(&ObjectAttributes, 0, 44);
+  v19 = 0;
+  String1 = 0;
+  v21 = 0;
+  DestinationString = 0;
+  v15 = 0;
+  Data = 0;
+  v2 = CmpOpenDevicesControlSet(a1, &v25, &String1);
+  v3 = v25;
+  v4 = v2;
+  if ( v2 >= 0 )
+  {
+    ObjectAttributes.RootDirectory = v25;
+    ObjectAttributes.ObjectName = (PUNICODE_STRING)L"$&";
+    ObjectAttributes.Length = 48;
+    ObjectAttributes.Attributes = 576;
+    *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+    v5 = ZwOpenKey(&KeyHandle, 0x20019u, &ObjectAttributes);
+    v4 = v5;
+    if ( v5 == -1073741772 )
+    {
+      if ( !HIDWORD(WheapPfaLock.KernelStack) )
+        goto LABEL_44;
+      ObjectAttributes.Length = 48;
+      ObjectAttributes.ObjectName = (PUNICODE_STRING)&CmpControlString;
+      ObjectAttributes.RootDirectory = v3;
+      ObjectAttributes.Attributes = 576;
+      *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+      v4 = ZwCreateKey(&Handle, 0x20019u, &ObjectAttributes, 0, 0, 0, &Disposition);
+      if ( v4 < 0 )
+        goto LABEL_44;
+      ZwClose(Handle);
+      Handle = 0;
+      ObjectAttributes.ObjectName = (PUNICODE_STRING)L"$&";
+      ObjectAttributes.Length = 48;
+      ObjectAttributes.RootDirectory = v3;
+      ObjectAttributes.Attributes = 576;
+      *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+      v4 = ZwCreateKey(&KeyHandle, 0x20019u, &ObjectAttributes, 0, 0, 0, &Disposition);
+      if ( v4 < 0 )
+        goto LABEL_44;
+      ObjectAttributes.RootDirectory = KeyHandle;
+      ObjectAttributes.Length = 48;
+      ObjectAttributes.ObjectName = (PUNICODE_STRING)L"\"$";
+      ObjectAttributes.Attributes = 576;
+      *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+      v4 = ZwCreateKey(&Handle, 0x20019u, &ObjectAttributes, 0, 0, 0, &Disposition);
+      if ( v4 < 0 )
+        goto LABEL_44;
+      Data = 0;
+      *(_QWORD *)&DestinationString.Length = 0x1000000;
+      DestinationString.Buffer = (wchar_t *)v27;
+      RtlUnicodeStringPrintf(&DestinationString, L"%04d", 0);
+      ObjectAttributes.RootDirectory = Handle;
+      ObjectAttributes.Length = 48;
+      ObjectAttributes.ObjectName = &DestinationString;
+      ObjectAttributes.Attributes = 576;
+      *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+      v4 = ZwCreateKey(&v19, 0x20019u, &ObjectAttributes, 0, 0, 0, &Disposition);
+      ZwClose(Handle);
+      Handle = 0;
+      if ( v4 < 0 )
+        goto LABEL_44;
+      ZwClose(v19);
+      v19 = 0;
+      v4 = ZwSetValueKey(KeyHandle, (PUNICODE_STRING)&CmpCurrentConfigString, 0, 4u, &Data, 4u);
+      if ( v4 < 0 )
+        goto LABEL_44;
+    }
+    else
+    {
+      if ( v5 < 0 )
+        goto LABEL_44;
+      v4 = ZwQueryValueKey(
+             KeyHandle,
+             (PUNICODE_STRING)&CmpCurrentConfigString,
+             KeyValueFullInformation,
+             KeyValueInformation,
+             0x80u,
+             &ResultLength);
+      if ( v4 < 0 || KeyValueInformation[1] != 4 )
+        goto LABEL_44;
+      Data = *(_DWORD *)((char *)KeyValueInformation + KeyValueInformation[2]);
+    }
+    ObjectAttributes.Length = 48;
+    ObjectAttributes.ObjectName = (PUNICODE_STRING)L"\"$";
+    ObjectAttributes.RootDirectory = v3;
+    ObjectAttributes.Attributes = 576;
+    *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+    v4 = ZwOpenKey(&v21, 0x20019u, &ObjectAttributes);
+    if ( v4 == -1073741772 )
+    {
+      if ( !HIDWORD(WheapPfaLock.KernelStack) )
+        goto LABEL_44;
+      v4 = ZwCreateKey(&v21, 0x20019u, &ObjectAttributes, 0, 0, 0, &Disposition);
+    }
+    if ( v4 >= 0 )
+    {
+      *(_QWORD *)&DestinationString.Length = 0x1000000;
+      DestinationString.Buffer = (wchar_t *)v27;
+      RtlUnicodeStringPrintf(&DestinationString, L"%04d", Data);
+      ObjectAttributes.RootDirectory = v21;
+      ObjectAttributes.Length = 48;
+      ObjectAttributes.ObjectName = &DestinationString;
+      ObjectAttributes.Attributes = 576;
+      *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+      v4 = ZwOpenKey(&v19, 0x2001Fu, &ObjectAttributes);
+      if ( v4 == -1073741772 )
+      {
+        if ( !HIDWORD(WheapPfaLock.KernelStack) )
+          goto LABEL_44;
+        v4 = ZwCreateKey(&v19, 0x2001Fu, &ObjectAttributes, 0, 0, 0, &Disposition);
+      }
+      if ( v4 >= 0 )
+      {
+        v6 = *(_QWORD *)(a1 + 240);
+        v7 = 0;
+        v8 = *(_WORD *)(v6 + 8);
+        if ( v8 == 3 )
+        {
+          v8 = 1;
+          *(_WORD *)(v6 + 8) = 1;
+        }
+        if ( *(_WORD *)(v6 + 4) == 1 )
+          goto LABEL_30;
+        if ( *(_WORD *)(v6 + 4) == 2 )
+        {
+LABEL_31:
+          ObjectAttributes.RootDirectory = KeyHandle;
+          ObjectAttributes.Length = 48;
+          ObjectAttributes.ObjectName = (PUNICODE_STRING)&CmpStrCurrentDockInfoString;
+          ObjectAttributes.Attributes = 576;
+          *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+          if ( ZwCreateKey(&v15, 0x2001Fu, &ObjectAttributes, 0, 0, 1u, &Disposition) >= 0 )
+          {
+            CmpAddDockingInfo((int)v15);
+            ZwClose(v15);
+            v15 = 0;
+          }
+          if ( *(_WORD *)(v6 + 8) == 1 )
+            v7 = 1;
+          goto LABEL_35;
+        }
+        if ( *(_WORD *)(v6 + 4) != 3 )
+        {
+LABEL_35:
+          ObjectAttributes.Length = 48;
+          ObjectAttributes.ObjectName = (PUNICODE_STRING)L"24";
+          ObjectAttributes.RootDirectory = v3;
+          ObjectAttributes.Attributes = 576;
+          *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+          if ( ZwOpenKey(&v15, 0xF003Fu, &ObjectAttributes) >= 0 )
+          {
+            CmDeleteKeyRecursive((int)v15, 0, (int)&v28, 256, Class);
+            ZwClose(v15);
+            v15 = 0;
+          }
+          v4 = ZwCreateKey(&v15, 0x20u, &ObjectAttributes, 0, 0, 3u, &Disposition);
+          if ( v4 >= 0 )
+          {
+            *(_QWORD *)&DestinationString.Length = 0x1000000;
+            DestinationString.Buffer = (wchar_t *)v27;
+            RtlUnicodeStringPrintf(
+              &DestinationString,
+              L"\\Registry\\Machine\\%wZ\\CurrentControlSet\\Hardware Profiles\\%04d",
+              &String1,
+              Data);
+            v4 = ZwSetValueKey(
+                   v15,
+                   (PUNICODE_STRING)&PspActiveProcessLock.SchedulingGroup,
+                   0,
+                   6u,
+                   DestinationString.Buffer,
+                   DestinationString.Length);
+            if ( !RtlEqualUnicodeString(&String1, &CmpSystemHiveNameString, 1u) )
+            {
+              ZwClose(v15);
+              v15 = 0;
+              *(_QWORD *)&DestinationString.Length = 0x1000000;
+              DestinationString.Buffer = (wchar_t *)v27;
+              RtlUnicodeStringPrintf(
+                &DestinationString,
+                L"\\Registry\\Machine\\%wZ\\CurrentControlSet\\%wZ",
+                &CmpSystemHiveNameString,
+                L"24");
+              ObjectAttributes.Length = 48;
+              ObjectAttributes.ObjectName = &DestinationString;
+              ObjectAttributes.RootDirectory = 0;
+              ObjectAttributes.Attributes = 576;
+              *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+              v4 = ZwCreateKey(&v15, 0x20u, &ObjectAttributes, 0, 0, 3u, &Disposition);
+              if ( v4 >= 0 )
+              {
+                *(_QWORD *)&DestinationString.Length = 0x1000000;
+                DestinationString.Buffer = (wchar_t *)v27;
+                RtlUnicodeStringPrintf(
+                  &DestinationString,
+                  L"\\Registry\\Machine\\%wZ\\CurrentControlSet\\%wZ",
+                  &String1,
+                  L"24");
+                v4 = ZwSetValueKey(
+                       v15,
+                       (PUNICODE_STRING)&PspActiveProcessLock.SchedulingGroup,
+                       0,
+                       6u,
+                       DestinationString.Buffer,
+                       DestinationString.Length);
+              }
+            }
+          }
+          if ( v7 )
+          {
+            v23 = 0;
+            v14[0] = 0;
+            LODWORD(v25) = 131073;
+            WORD2(v25) = 0;
+            v4 = CmSetAcpiHwProfile(
+                   (unsigned int)&v25,
+                   (unsigned int)CmpHwprofileDefaultSelect,
+                   v9,
+                   (unsigned int)&v23,
+                   (__int64)v14);
+            if ( v4 >= 0 )
+              ZwClose(v23);
+          }
+          goto LABEL_44;
+        }
+        LOWORD(Class) = v8;
+        v4 = CmpCloneHwProfile(KeyHandle, v21, v19, Data, Class, &v19, &Data);
+        if ( v4 < 0 )
+        {
+          v19 = 0;
+          goto LABEL_44;
+        }
+        v4 = ZwSetValueKey(KeyHandle, (PUNICODE_STRING)&CmpCurrentConfigString, 0, 4u, &Data, 4u);
+        if ( v4 >= 0 )
+        {
+LABEL_30:
+          CmpAddAliasEntry(KeyHandle, v6 + 4, Data);
+          goto LABEL_31;
+        }
+      }
+    }
+  }
+LABEL_44:
+  if ( v3 )
+    ZwClose(v3);
+  if ( KeyHandle )
+    ZwClose(KeyHandle);
+  if ( v19 )
+    ZwClose(v19);
+  if ( v21 )
+    ZwClose(v21);
+  if ( v15 )
+    ZwClose(v15);
+  return (unsigned int)v4;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140c8b488  push    rbp
+0x140c8b48a  push    rbx
+0x140c8b48b  push    rsi
+0x140c8b48c  push    rdi
+0x140c8b48d  push    r12
+0x140c8b48f  push    r13
+0x140c8b491  push    r14
+0x140c8b493  push    r15
+0x140c8b495  lea     rbp, [rsp-278h]
+0x140c8b49d  sub     rsp, 378h
+0x140c8b4a4  mov     rax, cs:__security_cookie
+0x140c8b4ab  xor     rax, rsp
+0x140c8b4ae  mov     [rbp+2B0h+var_50], rax
+0x140c8b4b5  xor     r12d, r12d
+0x140c8b4b8  lea     r8, [rbp+2B0h+String1]
+0x140c8b4bc  xorps   xmm0, xmm0
+0x140c8b4bf  mov     [rbp+2B0h+Handle], r12
+0x140c8b4c3  xorps   xmm1, xmm1
+0x140c8b4c6  mov     [rbp+2B0h+ResultLength], r12d
+0x140c8b4ca  movups  xmmword ptr [rsp+3B0h+ObjectAttributes.ObjectName], xmm0
+0x140c8b4cf  xor     eax, eax
+0x140c8b4d1  mov     [rsp+3B0h+var_36C], r12d
+0x140c8b4d6  lea     rdx, [rbp+2B0h+var_2D8]
+0x140c8b4da  mov     [rbp+2B0h+var_2D8], r12
+0x140c8b4de  movups  xmmword ptr [rbp+2B0h+ObjectAttributes+1Ch], xmm0
+0x140c8b4e2  mov     rdi, rcx
+0x140c8b4e5  mov     [rbp+2B0h+KeyHandle], r12
+0x140c8b4e9  movups  xmmword ptr [rsp+3B0h+ObjectAttributes.Length], xmm0
+0x140c8b4ee  mov     [rbp+2B0h+var_310], r12
+0x140c8b4f2  movups  xmmword ptr [rbp+2B0h+String1.Length], xmm0
+0x140c8b4f6  mov     [rbp+2B0h+var_300], r12
+0x140c8b4fa  movups  xmmword ptr [rsp+3B0h+DestinationString.Length], xmm1
+0x140c8b4ff  mov     [rsp+3B0h+var_360], r12
+0x140c8b504  mov     [rsp+3B0h+Data], r12d
+0x140c8b509  call    CmpOpenDevicesControlSet
+0x140c8b50e  mov     r14, [rbp+2B0h+var_2D8]
+0x140c8b512  mov     ebx, eax
+0x140c8b514  test    eax, eax
+0x140c8b516  js      loc_140C8BC91
+0x140c8b51c  lea     rax, CmpControlIdConfigDbString; "$&"
+0x140c8b523  mov     [rsp+3B0h+ObjectAttributes.RootDirectory], r14
+0x140c8b528  xorps   xmm0, xmm0
+0x140c8b52b  mov     [rsp+3B0h+ObjectAttributes.ObjectName], rax
+0x140c8b530  mov     esi, 20019h
+0x140c8b535  lea     r13d, [r12+30h]
+0x140c8b53a  mov     r15d, 240h
+0x140c8b540  mov     [rsp+3B0h+ObjectAttributes.Length], r13d
+0x140c8b545  mov     edx, esi; DesiredAccess
+0x140c8b547  mov     [rbp+2B0h+ObjectAttributes.Attributes], r15d
+0x140c8b54b  lea     r8, [rsp+3B0h+ObjectAttributes]; ObjectAttributes
+0x140c8b550  lea     rcx, [rbp+2B0h+KeyHandle]; KeyHandle
+0x140c8b554  movdqu  xmmword ptr [rbp+2B0h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140c8b559  call    ZwOpenKey
+0x140c8b55e  mov     ebx, eax
+0x140c8b560  cmp     eax, 0C0000034h
+0x140c8b565  jnz     loc_140C8B75B
+0x140c8b56b  cmp     dword ptr cs:WheapPfaLock.KernelStack+4, r12d
+0x140c8b572  jz      loc_140C8BC91
+0x140c8b578  lea     rax, CmpControlString
+0x140c8b57f  mov     [rsp+3B0h+ObjectAttributes.Length], r13d
+0x140c8b584  mov     [rsp+3B0h+ObjectAttributes.ObjectName], rax
+0x140c8b589  lea     r8, [rsp+3B0h+ObjectAttributes]; ObjectAttributes
+0x140c8b58e  lea     rax, [rsp+3B0h+var_36C]
+0x140c8b593  mov     [rsp+3B0h+ObjectAttributes.RootDirectory], r14
+0x140c8b598  mov     [rsp+3B0h+Disposition], rax; Disposition
+0x140c8b59d  lea     rcx, [rbp+2B0h+Handle]; KeyHandle
+0x140c8b5a1  xorps   xmm0, xmm0
+0x140c8b5a4  mov     [rsp+3B0h+CreateOptions], r12d; CreateOptions
+0x140c8b5a9  xor     r9d, r9d; TitleIndex
+0x140c8b5ac  mov     [rsp+3B0h+Class], r12; Class
+0x140c8b5b1  mov     edx, esi; DesiredAccess
+0x140c8b5b3  mov     [rbp+2B0h+ObjectAttributes.Attributes], r15d
+0x140c8b5b7  movdqu  xmmword ptr [rbp+2B0h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140c8b5bc  call    ZwCreateKey
+0x140c8b5c1  mov     ebx, eax
+0x140c8b5c3  test    eax, eax
+0x140c8b5c5  js      loc_140C8BC91
+0x140c8b5cb  mov     rcx, [rbp+2B0h+Handle]; Handle
+0x140c8b5cf  call    ZwClose
+0x140c8b5d4  lea     rax, CmpControlIdConfigDbString; "$&"
+0x140c8b5db  mov     [rbp+2B0h+Handle], r12
+0x140c8b5df  mov     [rsp+3B0h+ObjectAttributes.ObjectName], rax
+0x140c8b5e4  lea     r8, [rsp+3B0h+ObjectAttributes]; ObjectAttributes
+0x140c8b5e9  lea     rax, [rsp+3B0h+var_36C]
+0x140c8b5ee  mov     [rsp+3B0h+ObjectAttributes.Length], r13d
+0x140c8b5f3  mov     [rsp+3B0h+Disposition], rax; Disposition
+0x140c8b5f8  lea     rcx, [rbp+2B0h+KeyHandle]; KeyHandle
+0x140c8b5fc  xorps   xmm0, xmm0
+0x140c8b5ff  mov     [rsp+3B0h+CreateOptions], r12d; CreateOptions
+0x140c8b604  xor     r9d, r9d; TitleIndex
+0x140c8b607  mov     [rsp+3B0h+Class], r12; Class
+0x140c8b60c  mov     edx, esi; DesiredAccess
+0x140c8b60e  mov     [rsp+3B0h+ObjectAttributes.RootDirectory], r14
+0x140c8b613  mov     [rbp+2B0h+ObjectAttributes.Attributes], r15d
+0x140c8b617  movdqu  xmmword ptr [rbp+2B0h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140c8b61c  call    ZwCreateKey
+0x140c8b621  mov     ebx, eax
+0x140c8b623  test    eax, eax
+0x140c8b625  js      loc_140C8BC91
+0x140c8b62b  mov     rax, [rbp+2B0h+KeyHandle]
+0x140c8b62f  lea     r8, [rsp+3B0h+ObjectAttributes]; ObjectAttributes
+0x140c8b634  mov     [rsp+3B0h+ObjectAttributes.RootDirectory], rax
+0x140c8b639  lea     rcx, [rbp+2B0h+Handle]; KeyHandle
+0x140c8b63d  lea     rax, CmpHardwareProfilesString; "\"$"
+0x140c8b644  mov     [rsp+3B0h+ObjectAttributes.Length], r13d
+0x140c8b649  mov     [rsp+3B0h+ObjectAttributes.ObjectName], rax
+0x140c8b64e  xorps   xmm0, xmm0
+0x140c8b651  lea     rax, [rsp+3B0h+var_36C]
+0x140c8b656  mov     [rbp+2B0h+ObjectAttributes.Attributes], r15d
+0x140c8b65a  mov     [rsp+3B0h+Disposition], rax; Disposition
+0x140c8b65f  xor     r9d, r9d; TitleIndex
+0x140c8b662  mov     [rsp+3B0h+CreateOptions], r12d; CreateOptions
+0x140c8b667  mov     edx, esi; DesiredAccess
+0x140c8b669  mov     [rsp+3B0h+Class], r12; Class
+0x140c8b66e  movdqu  xmmword ptr [rbp+2B0h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140c8b673  call    ZwCreateKey
+0x140c8b678  mov     ebx, eax
+0x140c8b67a  test    eax, eax
+0x140c8b67c  js      loc_140C8BC91
+0x140c8b682  xorps   xmm0, xmm0
+0x140c8b685  mov     [rsp+3B0h+Data], r12d
+0x140c8b68a  movups  xmmword ptr [rsp+3B0h+DestinationString.Length], xmm0
+0x140c8b68f  mov     eax, 100h
+0x140c8b694  lea     rdx, a04d; "%04d"
+0x140c8b69b  mov     [rsp+3B0h+DestinationString.MaximumLength], ax
+0x140c8b6a0  lea     rcx, [rsp+3B0h+DestinationString]; DestinationString
+0x140c8b6a5  lea     rax, [rbp+2B0h+var_250]
+0x140c8b6a9  xor     r8d, r8d
+0x140c8b6ac  mov     [rsp+3B0h+DestinationString.Buffer], rax
+0x140c8b6b1  call    RtlUnicodeStringPrintf
+0x140c8b6b6  mov     rax, [rbp+2B0h+Handle]
+0x140c8b6ba  lea     r8, [rsp+3B0h+ObjectAttributes]; ObjectAttributes
+0x140c8b6bf  mov     [rsp+3B0h+ObjectAttributes.RootDirectory], rax
+0x140c8b6c4  lea     rcx, [rbp+2B0h+var_310]; KeyHandle
+0x140c8b6c8  lea     rax, [rsp+3B0h+DestinationString]
+0x140c8b6cd  mov     [rsp+3B0h+ObjectAttributes.Length], r13d
+0x140c8b6d2  mov     [rsp+3B0h+ObjectAttributes.ObjectName], rax
+0x140c8b6d7  xorps   xmm0, xmm0
+0x140c8b6da  lea     rax, [rsp+3B0h+var_36C]
+0x140c8b6df  mov     [rbp+2B0h+ObjectAttributes.Attributes], r15d
+0x140c8b6e3  mov     [rsp+3B0h+Disposition], rax; Disposition
+0x140c8b6e8  xor     r9d, r9d; TitleIndex
+0x140c8b6eb  mov     [rsp+3B0h+CreateOptions], r12d; CreateOptions
+0x140c8b6f0  mov     edx, esi; DesiredAccess
+0x140c8b6f2  mov     [rsp+3B0h+Class], r12; Class
+0x140c8b6f7  movdqu  xmmword ptr [rbp+2B0h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140c8b6fc  call    ZwCreateKey
+0x140c8b701  mov     rcx, [rbp+2B0h+Handle]; Handle
+0x140c8b705  mov     ebx, eax
+0x140c8b707  call    ZwClose
+0x140c8b70c  mov     [rbp+2B0h+Handle], r12
+0x140c8b710  test    ebx, ebx
+0x140c8b712  js      loc_140C8BC91
+0x140c8b718  mov     rcx, [rbp+2B0h+var_310]; Handle
+0x140c8b71c  call    ZwClose
+0x140c8b721  mov     rcx, [rbp+2B0h+KeyHandle]; KeyHandle
+0x140c8b725  lea     r15d, [r12+4]
+0x140c8b72a  lea     rax, [rsp+3B0h+Data]
+0x140c8b72f  mov     [rsp+3B0h+CreateOptions], r15d; DataSize
+0x140c8b734  mov     r9d, r15d; Type
+0x140c8b737  mov     [rsp+3B0h+Class], rax; Data
+0x140c8b73c  xor     r8d, r8d; TitleIndex
+0x140c8b73f  mov     [rbp+2B0h+var_310], r12
+0x140c8b743  lea     rdx, CmpCurrentConfigString; ValueName
+0x140c8b74a  call    ZwSetValueKey
+0x140c8b74f  mov     ebx, eax
+0x140c8b751  test    eax, eax
+0x140c8b753  js      loc_140C8BC91
+0x140c8b759  jmp     short loc_140C8B7B3
+0x140c8b75b  test    eax, eax
+0x140c8b75d  js      loc_140C8BC91
+0x140c8b763  mov     rcx, [rbp+2B0h+KeyHandle]; KeyHandle
+0x140c8b767  lea     rax, [rbp+2B0h+ResultLength]
+0x140c8b76b  mov     qword ptr [rsp+3B0h+CreateOptions], rax; ResultLength
+0x140c8b770  lea     r9, [rbp+2B0h+KeyValueInformation]; KeyValueInformation
+0x140c8b774  mov     r8d, 1; KeyValueInformationClass
+0x140c8b77a  mov     dword ptr [rsp+3B0h+Class], 80h; Length
+0x140c8b782  lea     rdx, CmpCurrentConfigString; ValueName
+0x140c8b789  call    ZwQueryValueKey
+0x140c8b78e  mov     ebx, eax
+0x140c8b790  test    eax, eax
+0x140c8b792  js      loc_140C8BC91
+0x140c8b798  mov     r15d, 4
+0x140c8b79e  cmp     [rbp+2B0h+var_2CC], r15d
+0x140c8b7a2  jnz     loc_140C8BC91
+0x140c8b7a8  mov     eax, [rbp+2B0h+var_2C8]
+0x140c8b7ab  mov     ecx, [rbp+rax+2B0h+KeyValueInformation]
+0x140c8b7af  mov     [rsp+3B0h+Data], ecx
+0x140c8b7b3  lea     rax, CmpHardwareProfilesString; "\"$"
+0x140c8b7ba  mov     [rsp+3B0h+ObjectAttributes.Length], r13d
+0x140c8b7bf  xorps   xmm0, xmm0
+0x140c8b7c2  mov     [rsp+3B0h+ObjectAttributes.ObjectName], rax
+0x140c8b7c7  lea     r8, [rsp+3B0h+ObjectAttributes]; ObjectAttributes
+0x140c8b7cc  mov     [rsp+3B0h+ObjectAttributes.RootDirectory], r14
+0x140c8b7d1  mov     edx, esi; DesiredAccess
+0x140c8b7d3  mov     [rbp+2B0h+ObjectAttributes.Attributes], 240h
+0x140c8b7da  lea     rcx, [rbp+2B0h+var_300]; KeyHandle
+0x140c8b7de  movdqu  xmmword ptr [rbp+2B0h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140c8b7e3  call    ZwOpenKey
+0x140c8b7e8  mov     ebx, eax
+0x140c8b7ea  cmp     eax, 0C0000034h
+0x140c8b7ef  jnz     short loc_140C8B827
+0x140c8b7f1  cmp     dword ptr cs:WheapPfaLock.KernelStack+4, r12d
+0x140c8b7f8  jz      loc_140C8BC91
+0x140c8b7fe  lea     rax, [rsp+3B0h+var_36C]
+0x140c8b803  xor     r9d, r9d; TitleIndex
+0x140c8b806  mov     [rsp+3B0h+Disposition], rax; Disposition
+0x140c8b80b  lea     r8, [rsp+3B0h+ObjectAttributes]; ObjectAttributes
+0x140c8b810  mov     [rsp+3B0h+CreateOptions], r12d; CreateOptions
+0x140c8b815  lea     rcx, [rbp+2B0h+var_300]; KeyHandle
+0x140c8b819  mov     edx, esi; DesiredAccess
+0x140c8b81b  mov     [rsp+3B0h+Class], r12; Class
+0x140c8b820  call    ZwCreateKey
+0x140c8b825  mov     ebx, eax
+0x140c8b827  test    ebx, ebx
+0x140c8b829  js      loc_140C8BC91
+0x140c8b82f  mov     r8d, [rsp+3B0h+Data]
+0x140c8b834  lea     rdx, a04d; "%04d"
+0x140c8b83b  xorps   xmm0, xmm0
+0x140c8b83e  lea     rcx, [rsp+3B0h+DestinationString]; DestinationString
+0x140c8b843  movups  xmmword ptr [rsp+3B0h+DestinationString.Length], xmm0
+0x140c8b848  mov     eax, 100h
+0x140c8b84d  mov     [rsp+3B0h+DestinationString.MaximumLength], ax
+0x140c8b852  lea     rax, [rbp+2B0h+var_250]
+0x140c8b856  mov     [rsp+3B0h+DestinationString.Buffer], rax
+0x140c8b85b  call    RtlUnicodeStringPrintf
+0x140c8b860  mov     rax, [rbp+2B0h+var_300]
+0x140c8b864  lea     r8, [rsp+3B0h+ObjectAttributes]; ObjectAttributes
+0x140c8b869  mov     [rsp+3B0h+ObjectAttributes.RootDirectory], rax
+0x140c8b86e  lea     rcx, [rbp+2B0h+var_310]; KeyHandle
+0x140c8b872  lea     rax, [rsp+3B0h+DestinationString]
+0x140c8b877  mov     [rsp+3B0h+ObjectAttributes.Length], r13d
+0x140c8b87c  xorps   xmm0, xmm0
+0x140c8b87f  mov     [rsp+3B0h+ObjectAttributes.ObjectName], rax
+0x140c8b884  mov     esi, 2001Fh
+0x140c8b889  mov     [rbp+2B0h+ObjectAttributes.Attributes], 240h
+0x140c8b890  mov     edx, esi; DesiredAccess
+0x140c8b892  movdqu  xmmword ptr [rbp+2B0h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140c8b897  call    ZwOpenKey
+0x140c8b89c  mov     ebx, eax
+0x140c8b89e  cmp     eax, 0C0000034h
+0x140c8b8a3  jnz     short loc_140C8B8DB
+0x140c8b8a5  cmp     dword ptr cs:WheapPfaLock.KernelStack+4, r12d
+0x140c8b8ac  jz      loc_140C8BC91
+0x140c8b8b2  lea     rax, [rsp+3B0h+var_36C]
+0x140c8b8b7  xor     r9d, r9d; TitleIndex
+0x140c8b8ba  mov     [rsp+3B0h+Disposition], rax; Disposition
+0x140c8b8bf  lea     r8, [rsp+3B0h+ObjectAttributes]; ObjectAttributes
+0x140c8b8c4  mov     [rsp+3B0h+CreateOptions], r12d; CreateOptions
+0x140c8b8c9  lea     rcx, [rbp+2B0h+var_310]; KeyHandle
+0x140c8b8cd  mov     edx, esi; DesiredAccess
+0x140c8b8cf  mov     [rsp+3B0h+Class], r12; ULONG
+0x140c8b8d4  call    ZwCreateKey
+0x140c8b8d9  mov     ebx, eax
+0x140c8b8db  test    ebx, ebx
+0x140c8b8dd  js      loc_140C8BC91
+0x140c8b8e3  mov     rdi, [rdi+0F0h]
+0x140c8b8ea  mov     ebx, 3
+0x140c8b8ef  movzx   esi, r12b
+0x140c8b8f3  movzx   edx, word ptr [rdi+8]
+0x140c8b8f7  cmp     dx, bx
+0x140c8b8fa  jnz     short loc_140C8B903
+0x140c8b8fc  lea     edx, [rbx-2]
+0x140c8b8ff  mov     [rdi+8], dx
+0x140c8b903  movzx   ecx, word ptr [rdi+4]
+0x140c8b907  sub     ecx, 1
+0x140c8b90a  jz      loc_140C8B993
+0x140c8b910  sub     ecx, 1
+0x140c8b913  jz      loc_140C8B9A5
+0x140c8b919  cmp     ecx, 1
+0x140c8b91c  jnz     loc_140C8BA2B
+0x140c8b922  mov     r9d, [rsp+3B0h+Data]
+0x140c8b927  lea     rax, [rsp+3B0h+Data]
+0x140c8b92c  mov     r8, [rbp+2B0h+var_310]
+0x140c8b930  mov     rcx, [rbp+2B0h+KeyHandle]
+0x140c8b934  mov     [rsp+3B0h+Disposition], rax
+0x140c8b939  lea     rax, [rbp+2B0h+var_310]
+0x140c8b93d  mov     qword ptr [rsp+3B0h+CreateOptions], rax
+0x140c8b942  mov     word ptr [rsp+3B0h+Class], dx
+0x140c8b947  mov     rdx, [rbp+2B0h+var_300]
+0x140c8b94b  call    CmpCloneHwProfile
+0x140c8b950  mov     ebx, eax
+0x140c8b952  test    eax, eax
+0x140c8b954  jns     short loc_140C8B95F
+0x140c8b956  mov     [rbp+2B0h+var_310], r12
+0x140c8b95a  jmp     loc_140C8BC91
+0x140c8b95f  mov     rcx, [rbp+2B0h+KeyHandle]; KeyHandle
+0x140c8b963  lea     rax, [rsp+3B0h+Data]
+0x140c8b968  mov     [rsp+3B0h+CreateOptions], r15d; DataSize
+0x140c8b96d  lea     rdx, CmpCurrentConfigString; ValueName
+0x140c8b974  mov     r9d, r15d; Type
+0x140c8b977  mov     [rsp+3B0h+Class], rax; Data
+0x140c8b97c  xor     r8d, r8d; TitleIndex
+0x140c8b97f  call    ZwSetValueKey
+0x140c8b984  mov     ebx, eax
+0x140c8b986  test    eax, eax
+0x140c8b988  js      loc_140C8BC91
+0x140c8b98e  mov     ebx, 3
+0x140c8b993  mov     r8d, [rsp+3B0h+Data]
+0x140c8b998  lea     rdx, [rdi+4]
+  ... truncated ...
+```

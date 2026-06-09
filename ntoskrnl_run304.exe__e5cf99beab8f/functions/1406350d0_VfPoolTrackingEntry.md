@@ -1,0 +1,241 @@
+# VfPoolTrackingEntry
+
+- ea: `0x1406350d0`
+- end: `0x1406355d6`
+- name: `VfPoolTrackingEntry`
+- size: `1286`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `6`
+- tags: ``
+
+## callees
+
+- `0x140538640`
+- `0x1406350d0`
+- `0x1406d9d70`
+- `0x140bc72e0`
+- `0x140bc7368`
+- `0x140bc7440`
+
+## string_xrefs
+
+- `0x1406353db`: `MmAllocateContiguousMemorySpecifyCache`
+- `0x1406353f7`: `MmAllocateContiguousMemorySpecifyCacheNode`
+- `0x14063535d`: `MmCreateMdl`
+- `0x140635387`: `MmFreeNonCachedMemory`
+- `0x140635341`: `MmAllocateNonCachedMemory`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x1406350d0  mov     [rsp-8+arg_0], rbx
+0x1406350d5  mov     [rsp-8+arg_8], rdi
+0x1406350da  push    rbp
+0x1406350db  lea     rbp, [rsp-290h]
+0x1406350e3  sub     rsp, 390h
+0x1406350ea  mov     rax, cs:__security_cookie
+0x1406350f1  xor     rax, rsp
+0x1406350f4  mov     [rbp+290h+var_10], rax
+0x1406350fb  xor     edi, edi
+0x1406350fd  mov     qword ptr cs:ViPtUnloadRundown.___u0, rdi
+0x140635104  call    ViPtInitCircularPoolTrace
+0x140635109  mov     ebx, eax
+0x14063510b  test    eax, eax
+0x14063510d  js      loc_1406355AA
+0x140635113  test    cs:VfOptionFlags, 1000h
+0x14063511d  jz      short loc_140635124
+0x14063511f  call    ViPtInitAvlTrees
+0x140635124  cmp     cs:VfDifRunningWithoutReboot, dil
+0x14063512b  jnz     short loc_140635143
+0x14063512d  test    cs:VfOptionFlags, 800h
+0x140635137  jnz     short loc_140635143
+0x140635139  mov     cs:MmTrackLockedPages, 1
+0x140635143  lea     rax, ViPtPluginUnload
+0x14063514a  mov     [rsp+390h+var_368], 19Dh
+0x140635152  mov     cs:qword_140EF2608, rax
+0x140635159  lea     rax, aExallocatepool_0; "ExAllocatePool"
+0x140635160  mov     [rsp+390h+var_370], rax
+0x140635165  lea     rax, ViSpIoAllocateIrp_Exit
+0x14063516c  mov     [rsp+390h+var_360], rax
+0x140635171  lea     rax, aExallocatepool; "ExAllocatePool2"
+0x140635178  mov     [rsp+390h+var_350], rax
+0x14063517d  lea     rax, ViSpIoAllocateIrp_Exit
+0x140635184  mov     [rsp+390h+var_340], rax
+0x140635189  lea     rax, aExallocatepool_13; "ExAllocatePool3"
+0x140635190  mov     [rsp+390h+var_330], rax
+0x140635195  lea     rax, ViSpIoAllocateIrp_Exit
+0x14063519c  mov     [rsp+390h+var_318], rax
+0x1406351a1  lea     rax, aExallocatepool_1; "ExAllocatePoolWithTag"
+0x1406351a8  mov     [rbp+290h+var_310], rax
+0x1406351ac  lea     rax, ViSpIoAllocateIrp_Exit
+0x1406351b3  mov     [rbp+290h+var_300], rax
+0x1406351b7  lea     rax, aExallocatepool_15; "ExAllocatePoolWithTagPriority"
+0x1406351be  mov     [rbp+290h+var_2F0], rax
+0x1406351c2  lea     rax, ViSpIoAllocateIrp_Exit
+0x1406351c9  mov     [rbp+290h+var_2E0], rax
+0x1406351cd  lea     rax, aExallocatepool_14; "ExAllocatePoolWithQuota"
+0x1406351d4  mov     [rbp+290h+var_2D0], rax
+0x1406351d8  lea     rax, ViSpIoAllocateIrp_Exit
+0x1406351df  mov     [rbp+290h+var_2C0], rax
+0x1406351e3  lea     rax, aExallocatepool_16; "ExAllocatePoolWithQuotaTag"
+0x1406351ea  mov     [rbp+290h+var_2B0], rax
+0x1406351ee  lea     rax, ViSpIoAllocateIrp_Exit
+0x1406351f5  mov     [rbp+290h+var_2A0], rax
+0x1406351f9  lea     rax, aExfreepool_1; "ExFreePool"
+0x140635200  mov     [rbp+290h+var_290], rax
+0x140635204  lea     rax, ViSpIoAllocateIrp_Exit
+0x14063520b  mov     [rbp+290h+var_280], rax
+0x14063520f  lea     rax, aExfreepoolwith_1; "ExFreePoolWithTag"
+0x140635216  mov     [rbp+290h+var_270], rax
+0x14063521a  lea     rax, ViSpIoAllocateIrp_Exit
+0x140635221  mov     [rbp+290h+var_260], rax
+0x140635225  lea     rax, aIoallocatemdl_0; "IoAllocateMdl"
+0x14063522c  mov     [rbp+290h+var_250], rax
+0x140635230  lea     rax, VfPtIoAllocateMdl_Exit
+0x140635237  mov     [rbp+290h+var_238], rax
+0x14063523b  lea     rax, aIofreemdl; "IoFreeMdl"
+0x140635242  mov     [rbp+290h+var_230], rax
+0x140635246  lea     rax, aMmallocatepage_3; "MmAllocatePagesForMdl"
+0x14063524d  mov     [rbp+290h+var_210], rax
+0x140635254  lea     rax, VfPtMmAllocatePagesForMdl_Exit
+0x14063525b  mov     [rbp+290h+var_1F8], rax
+0x140635262  lea     rax, aMmallocatepage; "MmAllocatePagesForMdlEx"
+0x140635269  mov     [rbp+290h+var_1F0], rax
+0x140635270  lea     rax, VfPtMmAllocatePagesForMdlEx_Exit
+0x140635277  mov     [rbp+290h+var_1D8], rax
+0x14063527e  lea     rax, aMmallocatenode; "MmAllocateNodePagesForMdlEx"
+0x140635285  mov     [rbp+290h+var_1D0], rax
+0x14063528c  mov     [rsp+390h+var_358], rdi
+0x140635291  mov     [rsp+390h+var_348], 1A3h
+0x140635299  mov     [rsp+390h+var_338], rdi
+0x14063529e  mov     [rsp+390h+var_328], 1A2h
+0x1406352a6  mov     [rsp+390h+var_320], rdi
+0x1406352ab  mov     [rbp+290h+var_308], 19Eh
+0x1406352b2  mov     [rbp+290h+var_2F8], rdi
+0x1406352b6  mov     [rbp+290h+var_2E8], 19Fh
+0x1406352bd  mov     [rbp+290h+var_2D8], rdi
+0x1406352c1  mov     [rbp+290h+var_2C8], 1A0h
+0x1406352c8  mov     [rbp+290h+var_2B8], rdi
+0x1406352cc  mov     [rbp+290h+var_2A8], 1A1h
+0x1406352d3  mov     [rbp+290h+var_298], rdi
+0x1406352d7  mov     [rbp+290h+var_288], 191h
+0x1406352de  mov     [rbp+290h+var_278], rdi
+0x1406352e2  mov     [rbp+290h+var_268], 190h
+0x1406352e9  mov     [rbp+290h+var_258], rdi
+0x1406352ed  mov     [rbp+290h+var_248], 16Dh
+0x1406352f4  mov     [rbp+290h+var_240], rdi
+0x1406352f8  mov     [rbp+290h+var_228], 153h
+0x1406352ff  mov     [rbp+290h+var_220], rdi
+0x140635303  mov     [rbp+290h+var_218], rdi
+0x140635307  mov     [rbp+290h+var_208], 0E6h
+0x140635311  mov     [rbp+290h+var_200], rdi
+0x140635318  mov     [rbp+290h+var_1E8], 0E5h
+0x140635322  mov     [rbp+290h+var_1E0], rdi
+0x140635329  lea     rax, VfPtMmAllocateNodePagesForMdlEx_Exit
+0x140635330  mov     [rbp+290h+var_1C8], 0E8h
+0x14063533a  mov     [rbp+290h+var_1B8], rax
+0x140635341  lea     rax, aMmallocatenonc_0; "MmAllocateNonCachedMemory"
+0x140635348  mov     [rbp+290h+var_1B0], rax
+0x14063534f  lea     rax, VfPtMmAllocateNonCachedMemory_Exit
+0x140635356  mov     [rbp+290h+var_198], rax
+0x14063535d  lea     rax, aMmcreatemdl_0; "MmCreateMdl"
+0x140635364  mov     [rbp+290h+var_190], rax
+0x14063536b  lea     rax, VfPtMmCreateMdl_Exit
+0x140635372  mov     [rbp+290h+var_178], rax
+0x140635379  lea     rax, aMmfreepagesfro_0; "MmFreePagesFromMdl"
+0x140635380  mov     [rbp+290h+var_170], rax
+0x140635387  lea     rax, aMmfreenoncache; "MmFreeNonCachedMemory"
+0x14063538e  mov     [rbp+290h+var_150], rax
+0x140635395  lea     rax, VfPtMmFreeNonCachedMemory_Entry
+0x14063539c  mov     [rbp+290h+var_140], rax
+0x1406353a3  lea     rax, aMmallocatecont_0; "MmAllocateContiguousMemory"
+0x1406353aa  mov     [rbp+290h+var_130], rax
+0x1406353b1  lea     rax, VfPtMmAllocateContiguousMemory_Exit
+0x1406353b8  mov     [rbp+290h+var_118], rax
+0x1406353bf  lea     rax, aMmallocatecont; "MmAllocateContiguousMemoryEx"
+0x1406353c6  mov     [rbp+290h+var_110], rax
+0x1406353cd  lea     rax, VfPtMmAllocateContiguousMemoryEx_Exit
+0x1406353d4  mov     [rbp+290h+var_F8], rax
+0x1406353db  lea     rax, aMmallocatecont_9; "MmAllocateContiguousMemorySpecifyCache"
+0x1406353e2  mov     [rbp+290h+var_F0], rax
+0x1406353e9  lea     rax, VfPtMmAllocateContiguousMemorySpecifyCache_Exit
+0x1406353f0  mov     [rbp+290h+var_D8], rax
+0x1406353f7  lea     rax, aMmallocatecont_11; "MmAllocateContiguousMemorySpecifyCacheN"...
+0x1406353fe  mov     [rbp+290h+var_D0], rax
+0x140635405  lea     rax, VfPtMmAllocateContiguousMemorySpecifyCache_Exit
+0x14063540c  mov     [rbp+290h+var_B8], rax
+0x140635413  lea     rax, aMmallocatecont_7; "MmAllocateContiguousNodeMemory"
+0x14063541a  mov     [rbp+290h+var_B0], rax
+0x140635421  lea     rax, VfPtMmAllocateContiguousMemorySpecifyCache_Exit
+0x140635428  mov     [rbp+290h+var_98], rax
+0x14063542f  lea     rax, aMmfreecontiguo; "MmFreeContiguousMemory"
+0x140635436  mov     [rbp+290h+var_90], rax
+0x14063543d  lea     rax, VfPtMmFreeContiguousMemory_Entry
+0x140635444  mov     [rbp+290h+var_80], rax
+0x14063544b  lea     rax, aMmallocatemapp_2; "MmAllocateMappingAddress"
+0x140635452  mov     [rbp+290h+var_70], rax
+0x140635459  lea     rax, VfPtMmAllocateMappingAddress_Exit
+0x140635460  mov     [rbp+290h+var_58], rax
+0x140635467  lea     rax, aMmallocatemapp_0; "MmAllocateMappingAddressEx"
+0x14063546e  mov     [rbp+290h+var_50], rax
+0x140635475  lea     rax, VfPtMmAllocateMappingAddressEx_Exit
+0x14063547c  mov     [rbp+290h+var_38], rax
+0x140635483  lea     rax, aMmfreemappinga; "MmFreeMappingAddress"
+0x14063548a  mov     [rbp+290h+var_30], rax
+0x140635491  lea     rax, VfPtMmFreeMappingAddress_Entry
+0x140635498  mov     [rbp+290h+var_20], rax
+0x14063549f  mov     [rbp+290h+var_1C0], rdi
+0x1406354a6  mov     [rbp+290h+var_1A8], 0E7h
+0x1406354b0  mov     [rbp+290h+var_1A0], rdi
+0x1406354b7  mov     [rbp+290h+var_188], 0E3h
+0x1406354c1  mov     [rbp+290h+var_180], rdi
+0x1406354c8  mov     [rbp+290h+var_168], 0E0h
+0x1406354d2  mov     [rbp+290h+var_160], rdi
+0x1406354d9  mov     [rbp+290h+var_158], rdi
+0x1406354e0  mov     [rbp+290h+var_148], 0E1h
+0x1406354ea  mov     [rbp+290h+var_138], rdi
+0x1406354f1  mov     [rbp+290h+var_128], 0EEh
+0x1406354fb  mov     [rbp+290h+var_120], rdi
+0x140635502  mov     [rbp+290h+var_108], 0EDh
+0x14063550c  mov     [rbp+290h+var_100], rdi
+0x140635513  mov     [rbp+290h+var_E8], 0ECh
+0x14063551d  mov     [rbp+290h+var_E0], rdi
+0x140635524  mov     [rbp+290h+var_C8], 0EBh
+0x14063552e  mov     [rbp+290h+var_C0], rdi
+0x140635535  mov     [rbp+290h+var_A8], 0EAh
+0x14063553f  mov     [rbp+290h+var_A0], rdi
+0x140635546  mov     [rbp+290h+var_88], 0E2h
+0x140635550  mov     [rbp+290h+var_78], rdi
+0x140635557  mov     [rbp+290h+var_68], 0E9h
+0x140635561  mov     [rbp+290h+var_60], rdi
+0x140635568  mov     [rbp+290h+var_48], 1D1h
+0x140635572  mov     [rbp+290h+var_40], rdi
+0x140635579  mov     [rbp+290h+var_28], 1D2h
+0x140635583  mov     [rbp+290h+var_18], rdi
+0x14063558a  mov     edx, 1Bh
+0x14063558f  lea     r9, ViPoolTrackingSetting
+0x140635596  lea     rcx, [rsp+390h+var_370]
+0x14063559b  lea     r8d, [rdx-18h]
+0x14063559f  call    DifRegisterPlugin
+0x1406355a4  mov     ebx, eax
+0x1406355a6  test    eax, eax
+0x1406355a8  jns     short loc_1406355AF
+0x1406355aa  call    ViPtPluginUnload
+0x1406355af  mov     eax, ebx
+0x1406355b1  mov     rcx, [rbp+290h+var_10]
+0x1406355b8  xor     rcx, rsp; StackCookie
+0x1406355bb  call    __security_check_cookie
+0x1406355c0  lea     r11, [rsp+390h+var_s0]
+0x1406355c8  mov     rbx, [r11+10h]
+0x1406355cc  mov     rdi, [r11+18h]
+0x1406355d0  mov     rsp, r11
+0x1406355d3  pop     rbp
+0x1406355d4  retn
+```
