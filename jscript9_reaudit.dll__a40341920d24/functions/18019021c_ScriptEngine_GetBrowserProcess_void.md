@@ -1,0 +1,451 @@
+# ScriptEngine::GetBrowserProcess(void)
+
+- ea: `0x18019021c`
+- end: `0x1801905b2`
+- name: `?GetBrowserProcess@ScriptEngine@@QEAA?AW4_BROWSER_PROCESS@@XZ`
+- size: `918`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `2`
+- tags: `loader_planting, broker_com_uri`
+
+## callers
+
+- `0x18019dc68`
+
+## callees
+
+- `0x18019021c`
+- `0x180341dd0`
+
+## import_xrefs
+
+- `msvcrt!_wcsicmp` at `0x18019027c`
+- `msvcrt!_wcsicmp` at `0x18019029a`
+- `msvcrt!_wcsicmp` at `0x1801902b8`
+- `msvcrt!_wcsicmp` at `0x1801902d6`
+- `msvcrt!_wcsicmp` at `0x1801902f4`
+- `msvcrt!_wcsicmp` at `0x180190312`
+- `msvcrt!_wcsicmp` at `0x180190330`
+- `msvcrt!_wcsicmp` at `0x180190348`
+- `msvcrt!_wcsicmp` at `0x180190360`
+- `msvcrt!_wcsicmp` at `0x180190378`
+- `msvcrt!_wcsicmp` at `0x180190390`
+- `msvcrt!_wcsicmp` at `0x1801903ae`
+- `msvcrt!_wcsicmp` at `0x1801903cc`
+- `msvcrt!_wcsicmp` at `0x1801903ea`
+- `msvcrt!_wcsicmp` at `0x180190408`
+- `msvcrt!_wcsicmp` at `0x180190426`
+- `msvcrt!_wcsicmp` at `0x180190463`
+- `msvcrt!_wcsicmp` at `0x180190481`
+- `msvcrt!_wcsicmp` at `0x180190499`
+- `msvcrt!_wcsicmp` at `0x1801904b1`
+- `msvcrt!_wcsicmp` at `0x1801904e7`
+- `msvcrt!_wcsicmp` at `0x180190505`
+- `msvcrt!_wcsicmp` at `0x180190520`
+- `msvcrt!_wcsicmp` at `0x18019053b`
+- `msvcrt!_wcsicmp` at `0x180190556`
+- `msvcrt!_wcsicmp` at `0x180190571`
+- `msvcrt!_wcsicmp` at `0x18019027c`
+- `msvcrt!_wcsicmp` at `0x18019029a`
+- `msvcrt!_wcsicmp` at `0x1801902b8`
+- `msvcrt!_wcsicmp` at `0x1801902d6`
+- `msvcrt!_wcsicmp` at `0x1801902f4`
+- `msvcrt!_wcsicmp` at `0x180190312`
+- `msvcrt!_wcsicmp` at `0x180190330`
+- `msvcrt!_wcsicmp` at `0x180190348`
+- `msvcrt!_wcsicmp` at `0x180190360`
+- `msvcrt!_wcsicmp` at `0x180190378`
+- `msvcrt!_wcsicmp` at `0x180190390`
+- `msvcrt!_wcsicmp` at `0x1801903ae`
+- `msvcrt!_wcsicmp` at `0x1801903cc`
+- `msvcrt!_wcsicmp` at `0x1801903ea`
+- `msvcrt!_wcsicmp` at `0x180190408`
+- `msvcrt!_wcsicmp` at `0x180190426`
+- `msvcrt!_wcsicmp` at `0x180190463`
+- `msvcrt!_wcsicmp` at `0x180190481`
+- `msvcrt!_wcsicmp` at `0x180190499`
+- `msvcrt!_wcsicmp` at `0x1801904b1`
+- `msvcrt!_wcsicmp` at `0x1801904e7`
+- `msvcrt!_wcsicmp` at `0x180190505`
+- `msvcrt!_wcsicmp` at `0x180190520`
+- `msvcrt!_wcsicmp` at `0x18019053b`
+- `msvcrt!_wcsicmp` at `0x180190556`
+- `msvcrt!_wcsicmp` at `0x180190571`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathFindFileNameW` at `0x180190269`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!PathFindFileNameW` at `0x180190269`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!StrStrIW` at `0x180190444`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!StrStrIW` at `0x180190444`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!StrCmpICW` at `0x1801904c9`
+- `api-ms-win-downlevel-shlwapi-l1-1-0!StrCmpICW` at `0x1801904c9`
+- `KERNEL32!GetModuleFileNameW` at `0x180190256`
+- `KERNEL32!GetModuleFileNameW` at `0x180190256`
+
+## string_xrefs
+
+- `0x1801903c2`: `USERACCOUNTBROKER.EXE`
+- `0x1801904fb`: `browser_broker.exe`
+- `0x180190567`: `rundll32.exe`
+
+## pseudocode
+
+```c
+__int64 ScriptEngine::GetBrowserProcess()
+{
+  __int64 result; // rax
+  const wchar_t *FileNameW; // rbx
+  WCHAR Filename[264]; // [rsp+20h] [rbp-228h] BYREF
+
+  result = (unsigned int)dword_18043D918;
+  if ( !dword_18043D918 )
+  {
+    if ( GetModuleFileNameW(0, Filename, 0x104u) )
+    {
+      FileNameW = PathFindFileNameW(Filename);
+      if ( !_wcsicmp(FileNameW, L"IEXPLORE.EXE") )
+      {
+        result = 1;
+LABEL_55:
+        dword_18043D918 = result;
+        return result;
+      }
+      if ( !_wcsicmp(FileNameW, L"MSFEEDSSYNC.EXE") )
+      {
+        result = 2;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"SYSPREP.EXE") )
+      {
+        result = 3;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"EXPLORER.EXE") )
+      {
+        result = 4;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"LOADER42.EXE") )
+      {
+        result = 6;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"WWAHOST.EXE") )
+      {
+        result = 7;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"IEUTLAUNCH.EXE")
+        || !_wcsicmp(FileNameW, L"TE.EXE")
+        || !_wcsicmp(FileNameW, L"Te.ProcessHost.exe")
+        || !_wcsicmp(FileNameW, L"FAKEVIRTUALSURFACETESTAPP.EXE") )
+      {
+        result = 5;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"MSOOBE.EXE") )
+      {
+        result = 8;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"NETPLWIZ.EXE") )
+      {
+        result = 9;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"USERACCOUNTBROKER.EXE") )
+      {
+        result = 10;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"MSHTMPAD.EXE") )
+      {
+        result = 11;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"FirstLogonAnim.exe") )
+      {
+        result = 12;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"RESTOREOPTIN.EXE") )
+      {
+        result = 13;
+        goto LABEL_55;
+      }
+      if ( StrStrIW(FileNameW, L"DCIScanner") )
+      {
+        result = 17;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"microsoftedge.exe") )
+      {
+        result = 15;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"microsoftedgecp.exe")
+        || !_wcsicmp(FileNameW, L"microsoftedgebchost.exe")
+        || !_wcsicmp(FileNameW, L"microsoftedgedevtools.exe") )
+      {
+        result = 16;
+        goto LABEL_55;
+      }
+      if ( !StrCmpICW(FileNameW, L"microsoftedgesh.exe") )
+      {
+        result = 23;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"pickerhost.exe") )
+      {
+        result = 20;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"browser_broker.exe") )
+      {
+        result = 19;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"jshost.exe") )
+      {
+        result = 21;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"authhost.exe") )
+      {
+        result = 22;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"mshta.exe") )
+      {
+        result = 24;
+        goto LABEL_55;
+      }
+      if ( !_wcsicmp(FileNameW, L"rundll32.exe") )
+      {
+        result = 25;
+        goto LABEL_55;
+      }
+    }
+    result = 0xFFFFFFFFLL;
+    goto LABEL_55;
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18019021c  mov     [rsp+arg_0], rcx
+0x180190221  push    rbx
+0x180190222  sub     rsp, 240h
+0x180190229  mov     rax, cs:__security_cookie
+0x180190230  xor     rax, rsp
+0x180190233  mov     [rsp+248h+var_18], rax
+0x18019023b  mov     eax, cs:dword_18043D918
+0x180190241  test    eax, eax
+0x180190243  jnz     loc_180190599
+0x180190249  mov     r8d, 104h; nSize
+0x18019024f  lea     rdx, [rsp+248h+Filename]; lpFilename
+0x180190254  xor     ecx, ecx; hModule
+0x180190256  call    cs:__imp_GetModuleFileNameW
+0x18019025c  test    eax, eax
+0x18019025e  jz      loc_180190590
+0x180190264  lea     rcx, [rsp+248h+Filename]; pszPath
+0x180190269  call    cs:__imp_PathFindFileNameW
+0x18019026f  mov     rcx, rax; String1
+0x180190272  lea     rdx, aIexploreExe; "IEXPLORE.EXE"
+0x180190279  mov     rbx, rax
+0x18019027c  call    cs:__imp__wcsicmp
+0x180190282  test    eax, eax
+0x180190284  jnz     short loc_180190290
+0x180190286  mov     eax, 1
+0x18019028b  jmp     loc_180190593
+0x180190290  lea     rdx, aMsfeedssyncExe; "MSFEEDSSYNC.EXE"
+0x180190297  mov     rcx, rbx; String1
+0x18019029a  call    cs:__imp__wcsicmp
+0x1801902a0  test    eax, eax
+0x1801902a2  jnz     short loc_1801902AE
+0x1801902a4  mov     eax, 2
+0x1801902a9  jmp     loc_180190593
+0x1801902ae  lea     rdx, aSysprepExe; "SYSPREP.EXE"
+0x1801902b5  mov     rcx, rbx; String1
+0x1801902b8  call    cs:__imp__wcsicmp
+0x1801902be  test    eax, eax
+0x1801902c0  jnz     short loc_1801902CC
+0x1801902c2  mov     eax, 3
+0x1801902c7  jmp     loc_180190593
+0x1801902cc  lea     rdx, aExplorerExe; "EXPLORER.EXE"
+0x1801902d3  mov     rcx, rbx; String1
+0x1801902d6  call    cs:__imp__wcsicmp
+0x1801902dc  test    eax, eax
+0x1801902de  jnz     short loc_1801902EA
+0x1801902e0  mov     eax, 4
+0x1801902e5  jmp     loc_180190593
+0x1801902ea  lea     rdx, aLoader42Exe; "LOADER42.EXE"
+0x1801902f1  mov     rcx, rbx; String1
+0x1801902f4  call    cs:__imp__wcsicmp
+0x1801902fa  test    eax, eax
+0x1801902fc  jnz     short loc_180190308
+0x1801902fe  mov     eax, 6
+0x180190303  jmp     loc_180190593
+0x180190308  lea     rdx, aWwahostExe_0; "WWAHOST.EXE"
+0x18019030f  mov     rcx, rbx; String1
+0x180190312  call    cs:__imp__wcsicmp
+0x180190318  test    eax, eax
+0x18019031a  jnz     short loc_180190326
+0x18019031c  mov     eax, 7
+0x180190321  jmp     loc_180190593
+0x180190326  lea     rdx, aIeutlaunchExe; "IEUTLAUNCH.EXE"
+0x18019032d  mov     rcx, rbx; String1
+0x180190330  call    cs:__imp__wcsicmp
+0x180190336  test    eax, eax
+0x180190338  jz      loc_180190589
+0x18019033e  lea     rdx, aTeExe; "TE.EXE"
+0x180190345  mov     rcx, rbx; String1
+0x180190348  call    cs:__imp__wcsicmp
+0x18019034e  test    eax, eax
+0x180190350  jz      loc_180190589
+0x180190356  lea     rdx, aTeProcesshostE; "Te.ProcessHost.exe"
+0x18019035d  mov     rcx, rbx; String1
+0x180190360  call    cs:__imp__wcsicmp
+0x180190366  test    eax, eax
+0x180190368  jz      loc_180190589
+0x18019036e  lea     rdx, aFakevirtualsur; "FAKEVIRTUALSURFACETESTAPP.EXE"
+0x180190375  mov     rcx, rbx; String1
+0x180190378  call    cs:__imp__wcsicmp
+0x18019037e  test    eax, eax
+0x180190380  jz      loc_180190589
+0x180190386  lea     rdx, aMsoobeExe; "MSOOBE.EXE"
+0x18019038d  mov     rcx, rbx; String1
+0x180190390  call    cs:__imp__wcsicmp
+0x180190396  test    eax, eax
+0x180190398  jnz     short loc_1801903A4
+0x18019039a  mov     eax, 8
+0x18019039f  jmp     loc_180190593
+0x1801903a4  lea     rdx, aNetplwizExe; "NETPLWIZ.EXE"
+0x1801903ab  mov     rcx, rbx; String1
+0x1801903ae  call    cs:__imp__wcsicmp
+0x1801903b4  test    eax, eax
+0x1801903b6  jnz     short loc_1801903C2
+0x1801903b8  mov     eax, 9
+0x1801903bd  jmp     loc_180190593
+0x1801903c2  lea     rdx, aUseraccountbro; "USERACCOUNTBROKER.EXE"
+0x1801903c9  mov     rcx, rbx; String1
+0x1801903cc  call    cs:__imp__wcsicmp
+0x1801903d2  test    eax, eax
+0x1801903d4  jnz     short loc_1801903E0
+0x1801903d6  mov     eax, 0Ah
+0x1801903db  jmp     loc_180190593
+0x1801903e0  lea     rdx, aMshtmpadExe; "MSHTMPAD.EXE"
+0x1801903e7  mov     rcx, rbx; String1
+0x1801903ea  call    cs:__imp__wcsicmp
+0x1801903f0  test    eax, eax
+0x1801903f2  jnz     short loc_1801903FE
+0x1801903f4  mov     eax, 0Bh
+0x1801903f9  jmp     loc_180190593
+0x1801903fe  lea     rdx, aFirstlogonanim; "FirstLogonAnim.exe"
+0x180190405  mov     rcx, rbx; String1
+0x180190408  call    cs:__imp__wcsicmp
+0x18019040e  test    eax, eax
+0x180190410  jnz     short loc_18019041C
+0x180190412  mov     eax, 0Ch
+0x180190417  jmp     loc_180190593
+0x18019041c  lea     rdx, aRestoreoptinEx; "RESTOREOPTIN.EXE"
+0x180190423  mov     rcx, rbx; String1
+0x180190426  call    cs:__imp__wcsicmp
+0x18019042c  test    eax, eax
+0x18019042e  jnz     short loc_18019043A
+0x180190430  mov     eax, 0Dh
+0x180190435  jmp     loc_180190593
+0x18019043a  lea     rdx, pszSrch; "DCIScanner"
+0x180190441  mov     rcx, rbx; pszFirst
+0x180190444  call    cs:__imp_StrStrIW
+0x18019044a  test    rax, rax
+0x18019044d  jz      short loc_180190459
+0x18019044f  mov     eax, 11h
+0x180190454  jmp     loc_180190593
+0x180190459  lea     rdx, aMicrosoftedgeE; "microsoftedge.exe"
+0x180190460  mov     rcx, rbx; String1
+0x180190463  call    cs:__imp__wcsicmp
+0x180190469  test    eax, eax
+0x18019046b  jnz     short loc_180190477
+0x18019046d  mov     eax, 0Fh
+0x180190472  jmp     loc_180190593
+0x180190477  lea     rdx, aMicrosoftedgec; "microsoftedgecp.exe"
+0x18019047e  mov     rcx, rbx; String1
+0x180190481  call    cs:__imp__wcsicmp
+0x180190487  test    eax, eax
+0x180190489  jz      loc_180190582
+0x18019048f  lea     rdx, aMicrosoftedgeb; "microsoftedgebchost.exe"
+0x180190496  mov     rcx, rbx; String1
+0x180190499  call    cs:__imp__wcsicmp
+0x18019049f  test    eax, eax
+0x1801904a1  jz      loc_180190582
+0x1801904a7  lea     rdx, aMicrosoftedged; "microsoftedgedevtools.exe"
+0x1801904ae  mov     rcx, rbx; String1
+0x1801904b1  call    cs:__imp__wcsicmp
+0x1801904b7  test    eax, eax
+0x1801904b9  jz      loc_180190582
+0x1801904bf  lea     rdx, pszStr2; "microsoftedgesh.exe"
+0x1801904c6  mov     rcx, rbx; pszStr1
+0x1801904c9  call    cs:__imp_StrCmpICW
+0x1801904cf  test    eax, eax
+0x1801904d1  jnz     short loc_1801904DD
+0x1801904d3  mov     eax, 17h
+0x1801904d8  jmp     loc_180190593
+0x1801904dd  lea     rdx, aPickerhostExe; "pickerhost.exe"
+0x1801904e4  mov     rcx, rbx; String1
+0x1801904e7  call    cs:__imp__wcsicmp
+0x1801904ed  test    eax, eax
+0x1801904ef  jnz     short loc_1801904FB
+0x1801904f1  mov     eax, 14h
+0x1801904f6  jmp     loc_180190593
+0x1801904fb  lea     rdx, aBrowserBrokerE; "browser_broker.exe"
+0x180190502  mov     rcx, rbx; String1
+0x180190505  call    cs:__imp__wcsicmp
+0x18019050b  test    eax, eax
+0x18019050d  jnz     short loc_180190516
+0x18019050f  mov     eax, 13h
+0x180190514  jmp     short loc_180190593
+0x180190516  lea     rdx, aJshostExe_0; "jshost.exe"
+0x18019051d  mov     rcx, rbx; String1
+0x180190520  call    cs:__imp__wcsicmp
+0x180190526  test    eax, eax
+0x180190528  jnz     short loc_180190531
+0x18019052a  mov     eax, 15h
+0x18019052f  jmp     short loc_180190593
+0x180190531  lea     rdx, aAuthhostExe; "authhost.exe"
+0x180190538  mov     rcx, rbx; String1
+0x18019053b  call    cs:__imp__wcsicmp
+0x180190541  test    eax, eax
+0x180190543  jnz     short loc_18019054C
+0x180190545  mov     eax, 16h
+0x18019054a  jmp     short loc_180190593
+0x18019054c  lea     rdx, aMshtaExe; "mshta.exe"
+0x180190553  mov     rcx, rbx; String1
+0x180190556  call    cs:__imp__wcsicmp
+0x18019055c  test    eax, eax
+0x18019055e  jnz     short loc_180190567
+0x180190560  mov     eax, 18h
+0x180190565  jmp     short loc_180190593
+0x180190567  lea     rdx, aRundll32Exe; "rundll32.exe"
+0x18019056e  mov     rcx, rbx; String1
+0x180190571  call    cs:__imp__wcsicmp
+0x180190577  test    eax, eax
+0x180190579  jnz     short loc_180190590
+0x18019057b  mov     eax, 19h
+0x180190580  jmp     short loc_180190593
+0x180190582  mov     eax, 10h
+0x180190587  jmp     short loc_180190593
+0x180190589  mov     eax, 5
+0x18019058e  jmp     short loc_180190593
+0x180190590  or      eax, 0FFFFFFFFh
+0x180190593  mov     cs:dword_18043D918, eax
+0x180190599  mov     rcx, [rsp+248h+var_18]
+0x1801905a1  xor     rcx, rsp; StackCookie
+0x1801905a4  call    __security_check_cookie
+0x1801905a9  add     rsp, 240h
+0x1801905b0  pop     rbx
+0x1801905b1  retn
+```

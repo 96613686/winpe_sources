@@ -1,0 +1,694 @@
+# ArenaAllocatorBase<InPlaceFreeListPolicy>::SnailAlloc(unsigned __int64)
+
+- ea: `0x180010504`
+- end: `0x180010ada`
+- name: `?SnailAlloc@?$ArenaAllocatorBase@VInPlaceFreeListPolicy@@@@AEAAPEAD_K@Z`
+- size: `1494`
+- prototype: ``
+- caller_count: `8`
+- callee_count: `11`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x180060508`
+- `0x180060c30`
+- `0x1800802d0`
+- `0x180116c5c`
+- `0x1801315c0`
+- `0x180131eb4`
+- `0x1801475f8`
+- `0x18014a184`
+
+## callees
+
+- `0x180004d60`
+- `0x1800052bc`
+- `0x18000ef2c`
+- `0x18000f7c4`
+- `0x180010504`
+- `0x180010e48`
+- `0x18006a5f0`
+- `0x1801b10e0`
+- `0x180255a38`
+- `0x180255c94`
+- `0x18035e010`
+
+## import_xrefs
+
+- `KERNEL32!InterlockedPushEntrySList` at `0x180010a5d`
+- `KERNEL32!InterlockedPushEntrySList` at `0x180010a5d`
+- `KERNEL32!InterlockedPopEntrySList` at `0x180010894`
+- `KERNEL32!InterlockedPopEntrySList` at `0x180010894`
+
+## pseudocode
+
+```c
+char *__fastcall ArenaAllocatorBase<InPlaceFreeListPolicy>::SnailAlloc(unsigned __int64 a1, unsigned __int64 a2)
+{
+  unsigned __int64 v2; // rdi
+  unsigned __int64 v3; // r12
+  unsigned __int64 v4; // r14
+  PageAllocator **v5; // r15
+  void (*v6)(void); // rax
+  char *v7; // rbx
+  __int64 v8; // r8
+  _QWORD *v9; // rax
+  _QWORD *v10; // rcx
+  char *result; // rax
+  _QWORD *v12; // r9
+  unsigned __int64 v13; // r8
+  _QWORD *v14; // r10
+  int v15; // r11d
+  __int64 v16; // rax
+  char *v17; // r11
+  unsigned __int64 v18; // rcx
+  signed __int64 v19; // rax
+  _QWORD *v20; // rdx
+  __int64 v21; // rax
+  __int64 v22; // rcx
+  unsigned int v23; // eax
+  unsigned __int64 v24; // rcx
+  unsigned __int64 v25; // rax
+  __int64 v26; // rax
+  unsigned __int64 v27; // rbx
+  __int64 v28; // rsi
+  bool v29; // zf
+  unsigned __int64 v30; // r15
+  unsigned __int64 *v31; // r9
+  unsigned __int64 *v32; // r13
+  char v33; // r8
+  struct PageSegment *v34; // rbp
+  unsigned int v35; // ebx
+  unsigned int v36; // eax
+  unsigned int v37; // edx
+  unsigned int v38; // r11d
+  unsigned int v39; // r10d
+  char v40; // cl
+  unsigned int v41; // r8d
+  union _SLIST_HEADER *v42; // rcx
+  PSLIST_ENTRY v43; // rax
+  PSLIST_ENTRY v44; // r13
+  _QWORD **v45; // r8
+  _QWORD *v46; // rcx
+  int v47; // edx
+  _QWORD *v48; // rcx
+  signed __int64 v49; // rax
+  int Next; // ebx
+  int v51; // ebx
+  struct Segment *v52; // rax
+  struct PageSegment *v53; // [rsp+28h] [rbp-50h] BYREF
+  unsigned __int64 v54; // [rsp+30h] [rbp-48h]
+
+  v2 = a1;
+  v3 = a2;
+  if ( a2 > *(_QWORD *)(a1 + 72) )
+  {
+LABEL_2:
+    v4 = v3 + 32;
+    if ( v3 + 32 < v3 )
+    {
+      v4 = -1;
+LABEL_4:
+      v5 = (PageAllocator **)(v2 + 40);
+      goto LABEL_5;
+    }
+    if ( v3 + 4143 < v3 + 32 || v3 == -4144 )
+      goto LABEL_4;
+    v27 = (v3 + 4143) >> 12;
+    v5 = (PageAllocator **)(v2 + 40);
+    v28 = *(_QWORD *)(v2 + 40);
+    v54 = v27;
+    v53 = 0;
+    if ( v27 > *(unsigned int *)(v28 + 88) )
+    {
+      v52 = PageAllocator::AllocSegment((PageAllocator *)v28, v27);
+      v34 = v52;
+      if ( !v52 )
+        goto LABEL_5;
+      v7 = (char *)*((_QWORD *)v52 + 2);
+      a1 = *((_QWORD *)v52 + 3) - *((unsigned int *)v52 + 8);
+      *(_QWORD *)v7 = a1;
+      goto LABEL_28;
+    }
+    v29 = *(_DWORD *)(v28 + 152) == 0;
+    *(_BYTE *)(v28 + 139) = 1;
+    if ( v29 )
+      AsymetricCriticalSection::FastEnter((AsymetricCriticalSection *)(v28 + 200));
+    v30 = (unsigned int)v27;
+    v31 = (unsigned __int64 *)(v28 + 8);
+    if ( *(_QWORD *)(v28 + 104) >= (unsigned __int64)(unsigned int)v27 )
+    {
+      v32 = (unsigned __int64 *)(v28 + 8);
+      v33 = 32 - v27;
+LABEL_42:
+      while ( 1 )
+      {
+        v32 = (unsigned __int64 *)*v32;
+        if ( v32 == v31 )
+          break;
+        v34 = (struct PageSegment *)(v32 + 2);
+        v35 = *((_DWORD *)v32 + 18);
+        if ( v35 >= (unsigned int)v30 )
+        {
+          v36 = *((_DWORD *)v32 + 16);
+          v29 = !_BitScanForward(&v37, v36);
+          v38 = -1;
+          if ( !v29 )
+            v38 = v37;
+          v39 = 0xFFFFFFFF >> v33;
+          while ( 1 )
+          {
+            v33 = 32 - v30;
+            if ( v38 == -1 )
+              break;
+            a2 = v32[5] - *((unsigned int *)v32 + 12) - v38;
+            if ( a2 < v30 )
+              break;
+            if ( (_DWORD)v30 == 1 || (a2 = v39 << v38, (v36 & (v39 << v38)) == (_DWORD)a2) )
+            {
+              *((_DWORD *)v32 + 16) = v36 & ~(v39 << v38);
+              *((_DWORD *)v32 + 18) = v35 - v30;
+              v7 = (char *)(v32[4] + (v38 << 12));
+              if ( !v7 )
+                goto LABEL_42;
+              a1 = (unsigned int)((_DWORD)v30 << 12);
+              *(_QWORD *)(v28 + 160) += a1;
+              v19 = _InterlockedExchangeAdd64(&qword_18043D988, a1);
+              if ( (Microsoft_JScriptEnableBits & 0x200) != 0 )
+                McTemplateU0x_EventWriteTransfer(a1, a2, v19 + a1);
+              if ( !*((_DWORD *)v32 + 18) )
+              {
+                *(_QWORD *)v32[1] = *v32;
+                *(_QWORD *)(*v32 + 8) = v32[1];
+                a1 = *(_QWORD *)(v28 + 24);
+                v32[1] = *(_QWORD *)(a1 + 8);
+                *v32 = a1;
+                **(_QWORD **)(a1 + 8) = v32;
+                *(_QWORD *)(a1 + 8) = v32;
+              }
+              goto LABEL_23;
+            }
+            v40 = v38 + 1;
+            v38 = -1;
+            v29 = !_BitScanForward(&v41, v36 & (-1 << v40));
+            if ( !v29 )
+              v38 = v41;
+          }
+        }
+      }
+      if ( (_DWORD)v30 == 1 )
+      {
+        v42 = *(union _SLIST_HEADER **)(v28 + 128);
+        if ( v42 )
+        {
+          v43 = InterlockedPopEntrySList(v42);
+          v44 = v43;
+          if ( v43 )
+          {
+            v34 = (struct PageSegment *)*((_QWORD *)&v43->Next + 1);
+            Next = (int)v43[1].Next;
+            v53 = v34;
+            if ( Next == 1 )
+            {
+              v7 = (char *)v43;
+              *v43 = 0;
+              v43[1] = 0;
+            }
+            else
+            {
+              v51 = Next - 1;
+              LODWORD(v43[1].Next) = v51;
+              InterlockedPushEntrySList(*(PSLIST_HEADER *)(v28 + 128), v43);
+              v7 = (char *)v44 + (unsigned int)(v51 << 12);
+            }
+            if ( v7 )
+              goto LABEL_24;
+          }
+          v31 = (unsigned __int64 *)(v28 + 8);
+        }
+      }
+    }
+    v45 = *(_QWORD ***)(v28 + 40);
+    if ( v45 == (_QWORD **)(v28 + 40) )
+    {
+      v7 = PageAllocator::TryAllocDecommitedPages((PageAllocator *)v28, v30, &v53);
+      if ( v7 )
+      {
+LABEL_60:
+        v34 = v53;
+LABEL_24:
+        if ( !*(_DWORD *)(v28 + 152) )
+          *(_DWORD *)(v28 + 240) = 0;
+        v5 = (PageAllocator **)(v2 + 40);
+        if ( !v7 )
+          goto LABEL_5;
+        *(_QWORD *)v7 = v54;
+LABEL_28:
+        *((_QWORD *)v7 + 1) = v34;
+        if ( v7 )
+        {
+LABEL_29:
+          v20 = v7 + 16;
+          *((_QWORD *)v7 + 4) = v7;
+          v21 = (*(_QWORD *)v7 << 12) - 48LL;
+          *((_QWORD *)v7 + 5) = 0;
+          *((_QWORD *)v7 + 3) = v21;
+          ++*(_DWORD *)(v2 + 80);
+          v22 = *(_QWORD *)(v2 + 16);
+          if ( v22 )
+          {
+            *(_QWORD *)(v22 + 24) = *(_QWORD *)(v2 + 48) - v22 - 32;
+            v23 = *(_DWORD *)(v2 + 64) - *(_DWORD *)(v2 + 48);
+            if ( v23 >= 0x10 || *(_BYTE *)(v2 + 56) )
+            {
+              v24 = v23;
+              v25 = *(_QWORD *)(v2 + 72);
+              if ( v25 <= v24 )
+                v25 = v24;
+              *(_QWORD *)(v2 + 72) = v25;
+            }
+            else
+            {
+              v46 = *(_QWORD **)(v2 + 16);
+              *(_QWORD *)(v2 + 16) = *v46;
+              *v46 = *(_QWORD *)(v2 + 24);
+              *(_QWORD *)(v2 + 24) = v46;
+            }
+          }
+          v26 = *(_QWORD *)(v2 + 16);
+          *(_QWORD *)(v2 + 48) = &v7[*((_QWORD *)v7 + 5) + 48];
+          *(_QWORD *)(v2 + 64) = (char *)v20 + *((_QWORD *)v7 + 3) + 32;
+          *v20 = v26;
+          result = *(char **)(v2 + 48);
+          *(_QWORD *)(v2 + 16) = v20;
+          *(_QWORD *)(v2 + 48) = &result[v3];
+          return result;
+        }
+LABEL_5:
+        v6 = *(void (**)(void))(v2 + 8);
+        if ( !v6 || (v6(), (v7 = (char *)PageAllocator::AllocPagesForBytes(*v5, v4)) == 0) )
+        {
+          v8 = v3 + 16;
+          if ( v3 + 16 < v3 )
+            v8 = -1;
+          v9 = (_QWORD *)AllocateArray<HeapAllocator,char,1>(a1, a2, v8);
+          v10 = v9;
+          if ( v9 )
+          {
+            v9[1] = v3;
+            *v9 = *(_QWORD *)(v2 + 32);
+            result = (char *)(v9 + 2);
+            *(_QWORD *)(v2 + 32) = v10;
+            *(_DWORD *)(v2 + 80) = 2;
+          }
+          else
+          {
+            if ( *(_QWORD *)v2 )
+              (*(void (__fastcall **)(_QWORD))v2)(0);
+            return 0;
+          }
+          return result;
+        }
+        goto LABEL_29;
+      }
+      v34 = (struct PageSegment *)PageAllocator::AddPageSegment((PageAllocator *)v28);
+      if ( !v34 )
+      {
+        v7 = 0;
+        goto LABEL_60;
+      }
+    }
+    else
+    {
+      v34 = (struct PageSegment *)(v45 + 2);
+      v47 = *(_DWORD *)(v28 + 88);
+      *v45[1] = *v45;
+      (*v45)[1] = v45[1];
+      if ( (_DWORD)v30 == v47 )
+        v48 = *(_QWORD **)(v28 + 24);
+      else
+        v48 = (_QWORD *)*v31;
+      v45[1] = (_QWORD *)v48[1];
+      *v45 = v48;
+      *(_QWORD *)v48[1] = v45;
+      v48[1] = v45;
+    }
+    v7 = PageSegment::AllocPages(v34, v30);
+    a1 = (unsigned int)((_DWORD)v30 << 12);
+    *(_QWORD *)(v28 + 160) += a1;
+    v49 = _InterlockedExchangeAdd64(&qword_18043D988, a1);
+    if ( (Microsoft_JScriptEnableBits & 0x200) != 0 )
+      McTemplateU0x_EventWriteTransfer(a1, a2, v49 + a1);
+LABEL_23:
+    *(_QWORD *)(v28 + 104) -= v30;
+    goto LABEL_24;
+  }
+  v12 = *(_QWORD **)(a1 + 16);
+  v13 = 0;
+  v14 = v12;
+  a2 = *v12;
+  v15 = 10;
+  while ( 1 )
+  {
+    v16 = *(_QWORD *)(a2 + 24);
+    a1 = *(_QWORD *)(a2 + 8) - v16;
+    if ( a1 >= v3 )
+      break;
+    if ( v13 <= a1 )
+      v13 = *(_QWORD *)(a2 + 8) - v16;
+    if ( --v15 )
+    {
+      v14 = (_QWORD *)a2;
+      a2 = *(_QWORD *)a2;
+      if ( a2 )
+        continue;
+    }
+    goto LABEL_2;
+  }
+  v17 = (char *)(v16 + a2);
+  *(_QWORD *)(a2 + 24) = v3 + v16;
+  if ( a1 == *(_QWORD *)(v2 + 72) || v13 > *(_QWORD *)(v2 + 72) )
+    *(_QWORD *)(v2 + 72) = v13;
+  v18 = a1 - v3;
+  if ( v18 > v12[1] - v12[3] )
+  {
+    *v14 = *(_QWORD *)a2;
+    ArenaAllocatorBase<InPlaceFreeListPolicy>::SetCacheBlock(v2, a2, v13, v12);
+  }
+  else if ( v18 < 0x10 && !*(_BYTE *)(v2 + 56) )
+  {
+    *v14 = *(_QWORD *)a2;
+    *(_QWORD *)a2 = *(_QWORD *)(v2 + 24);
+    *(_QWORD *)(v2 + 24) = a2;
+  }
+  return v17 + 32;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180010504  mov     rax, rsp
+0x180010507  mov     [rax+18h], rbx
+0x18001050b  mov     [rax+10h], rdx
+0x18001050f  mov     [rax+8], rcx
+0x180010513  push    rbp
+0x180010514  push    rsi
+0x180010515  push    rdi
+0x180010516  push    r12
+0x180010518  push    r13
+0x18001051a  push    r14
+0x18001051c  push    r15
+0x18001051e  sub     rsp, 40h
+0x180010522  mov     rdi, rcx
+0x180010525  mov     r12, rdx
+0x180010528  cmp     rdx, [rcx+48h]
+0x18001052c  jbe     short loc_1800105A8
+0x18001052e  lea     r14, [r12+20h]
+0x180010533  or      rsi, 0FFFFFFFFFFFFFFFFh
+0x180010537  cmp     r14, r12
+0x18001053a  jnb     loc_180010774
+0x180010540  mov     r14, rsi
+0x180010543  lea     r15, [rdi+28h]
+0x180010547  mov     rax, [rdi+8]
+0x18001054b  test    rax, rax
+0x18001054e  jz      short loc_18001056C
+0x180010550  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180010555  mov     rcx, [r15]; this
+0x180010558  mov     rdx, r14; unsigned __int64
+0x18001055b  call    ?AllocPagesForBytes@PageAllocator@@QEAAPEAVPageAllocation@@_K@Z; PageAllocator::AllocPagesForBytes(unsigned __int64)
+0x180010560  mov     rbx, rax
+0x180010563  test    rax, rax
+0x180010566  jnz     loc_180010696
+0x18001056c  lea     r8, [r12+10h]
+0x180010571  cmp     r8, r12
+0x180010574  cmovb   r8, rsi
+0x180010578  call    ??$AllocateArray@UHeapAllocator@@D$00@@YAPEADPEAUHeapAllocator@@P80@EAAPEAD_K@Z1@Z; AllocateArray<HeapAllocator,char,1>(HeapAllocator *,char * (HeapAllocator::*)(unsigned __int64),unsigned __int64)
+0x18001057d  mov     rcx, rax
+0x180010580  test    rax, rax
+0x180010583  jz      loc_180010AC6
+0x180010589  mov     [rax+8], r12
+0x18001058d  mov     rax, [rdi+20h]
+0x180010591  mov     [rcx], rax
+0x180010594  lea     rax, [rcx+10h]
+0x180010598  mov     [rdi+20h], rcx
+0x18001059c  mov     dword ptr [rdi+50h], 2
+0x1800105a3  jmp     loc_180010725
+0x1800105a8  mov     r9, [rdi+10h]
+0x1800105ac  xor     r8d, r8d
+0x1800105af  mov     r10, r9
+0x1800105b2  mov     rdx, [r9]
+0x1800105b5  lea     r11d, [r8+0Ah]
+0x1800105b9  mov     rax, [rdx+18h]
+0x1800105bd  mov     rcx, [rdx+8]
+0x1800105c1  sub     rcx, rax
+0x1800105c4  cmp     rcx, r12
+0x1800105c7  jb      loc_18001098F
+0x1800105cd  lea     r11, [rax+rdx]
+0x1800105d1  add     rax, r12
+0x1800105d4  mov     [rdx+18h], rax
+0x1800105d8  cmp     rcx, [rdi+48h]
+0x1800105dc  jnz     loc_180010901
+0x1800105e2  mov     [rdi+48h], r8
+0x1800105e6  mov     rax, [r9+8]
+0x1800105ea  sub     rcx, r12
+0x1800105ed  sub     rax, [r9+18h]
+0x1800105f1  cmp     rcx, rax
+0x1800105f4  ja      loc_180010A21
+0x1800105fa  cmp     rcx, 10h
+0x1800105fe  jb      loc_1800109B4
+0x180010604  lea     rax, [r11+20h]
+0x180010608  jmp     loc_180010725
+0x18001060d  sub     ebx, r15d
+0x180010610  mov     ecx, r11d
+0x180010613  shl     r10d, cl
+0x180010616  shl     r11d, 0Ch
+0x18001061a  not     r10d
+0x18001061d  and     r10d, eax
+0x180010620  mov     [rbp+30h], r10d
+0x180010624  mov     [rbp+38h], ebx
+0x180010627  mov     ebx, r11d
+0x18001062a  add     rbx, [rbp+10h]
+0x18001062e  jz      loc_1800107E8
+0x180010634  mov     eax, r15d
+0x180010637  shl     eax, 0Ch
+0x18001063a  mov     ecx, eax
+0x18001063c  add     [rsi+0A0h], rcx
+0x180010643  lock xadd cs:qword_18043D988, rax
+0x18001064c  test    byte ptr cs:Microsoft_JScriptEnableBits+1, 2
+0x180010653  jnz     loc_180010AB8
+0x180010659  cmp     dword ptr [rbp+38h], 0
+0x18001065d  jz      loc_18001073D
+0x180010663  sub     [rsi+68h], r15
+0x180010667  cmp     dword ptr [rsi+98h], 0
+0x18001066e  jz      loc_1800109D4
+0x180010674  lea     r15, [rdi+28h]
+0x180010678  test    rbx, rbx
+0x18001067b  jz      loc_180010A86
+0x180010681  mov     rax, [rsp+78h+var_48]
+0x180010686  mov     [rbx], rax
+0x180010689  mov     [rbx+8], rbp
+0x18001068d  test    rbx, rbx
+0x180010690  jz      loc_180010A86
+0x180010696  lea     rdx, [rbx+10h]
+0x18001069a  mov     [rdx+10h], rbx
+0x18001069e  mov     rax, [rbx]
+0x1800106a1  shl     rax, 0Ch
+0x1800106a5  sub     rax, 30h ; '0'
+0x1800106a9  mov     qword ptr [rdx+18h], 0
+0x1800106b1  mov     [rdx+8], rax
+0x1800106b5  inc     dword ptr [rdi+50h]
+0x1800106b8  mov     rcx, [rdi+10h]
+0x1800106bc  test    rcx, rcx
+0x1800106bf  jz      short loc_1800106F0
+0x1800106c1  mov     rax, [rdi+30h]
+0x1800106c5  sub     rax, rcx
+0x1800106c8  sub     rax, 20h ; ' '
+0x1800106cc  mov     [rcx+18h], rax
+0x1800106d0  mov     eax, [rdi+40h]
+0x1800106d3  sub     eax, [rdi+30h]
+0x1800106d6  cmp     eax, 10h
+0x1800106d9  jb      loc_1800108DC
+0x1800106df  mov     ecx, eax
+0x1800106e1  mov     rax, [rdi+48h]
+0x1800106e5  cmp     rax, rcx
+0x1800106e8  cmovbe  rax, rcx
+0x1800106ec  mov     [rdi+48h], rax
+0x1800106f0  mov     rcx, [rdx+18h]
+0x1800106f4  mov     rax, [rdi+10h]
+0x1800106f8  add     rcx, 20h ; ' '
+0x1800106fc  add     rcx, rdx
+0x1800106ff  mov     [rdi+30h], rcx
+0x180010703  mov     rcx, [rdx+8]
+0x180010707  add     rcx, 20h ; ' '
+0x18001070b  add     rcx, rdx
+0x18001070e  mov     [rdi+40h], rcx
+0x180010712  mov     [rdx], rax
+0x180010715  mov     rax, [rdi+30h]
+0x180010719  mov     [rdi+10h], rdx
+0x18001071d  lea     rcx, [rax+r12]
+0x180010721  mov     [rdi+30h], rcx
+0x180010725  mov     rbx, [rsp+78h+arg_10]
+0x18001072d  add     rsp, 40h
+0x180010731  pop     r15
+0x180010733  pop     r14
+0x180010735  pop     r13
+0x180010737  pop     r12
+0x180010739  pop     rdi
+0x18001073a  pop     rsi
+0x18001073b  pop     rbp
+0x18001073c  retn
+0x18001073d  mov     rcx, [r13+8]
+0x180010741  mov     rax, [r13+0]
+0x180010745  mov     [rcx], rax
+0x180010748  mov     rcx, [r13+0]
+0x18001074c  mov     rax, [r13+8]
+0x180010750  mov     [rcx+8], rax
+0x180010754  mov     rcx, [rsi+18h]
+0x180010758  mov     rax, [rcx+8]
+0x18001075c  mov     [r13+8], rax
+0x180010760  mov     [r13+0], rcx
+0x180010764  mov     rax, [rcx+8]
+0x180010768  mov     [rax], r13
+0x18001076b  mov     [rcx+8], r13
+0x18001076f  jmp     loc_180010663
+0x180010774  lea     rbx, [r14+100Fh]
+0x18001077b  cmp     rbx, r14
+0x18001077e  jb      loc_180010543
+0x180010784  cmp     rbx, rsi
+0x180010787  jz      loc_180010543
+0x18001078d  shr     rbx, 0Ch
+0x180010791  lea     r15, [rdi+28h]
+0x180010795  mov     rsi, [r15]
+0x180010798  mov     [rsp+78h+var_48], rbx
+0x18001079d  mov     [rsp+78h+var_50], 0
+0x1800107a6  mov     eax, [rsi+58h]
+0x1800107a9  cmp     rbx, rax
+0x1800107ac  ja      loc_180010A8F
+0x1800107b2  cmp     dword ptr [rsi+98h], 0
+0x1800107b9  mov     byte ptr [rsi+8Bh], 1
+0x1800107c0  jz      loc_180010A10
+0x1800107c6  mov     r15d, ebx
+0x1800107c9  lea     r9, [rsi+8]
+0x1800107cd  cmp     [rsi+68h], r15
+0x1800107d1  jb      loc_1800108AA
+0x1800107d7  mov     r8d, 20h ; ' '
+0x1800107dd  mov     r13, r9
+0x1800107e0  sub     r8d, r15d
+0x1800107e3  mov     [rsp+78h+var_58], r8d
+0x1800107e8  mov     r13, [r13+0]
+0x1800107ec  cmp     r13, r9
+0x1800107ef  jz      loc_180010882
+0x1800107f5  lea     rbp, [r13+10h]
+0x1800107f9  mov     ebx, [rbp+38h]
+0x1800107fc  cmp     ebx, r15d
+0x1800107ff  jb      short loc_1800107E8
+0x180010801  mov     eax, [rbp+30h]
+0x180010804  bsf     edx, eax
+0x180010807  setnz   cl
+0x18001080a  or      r11d, 0FFFFFFFFh
+0x18001080e  test    cl, cl
+0x180010810  mov     ecx, r8d
+0x180010813  cmovnz  r11d, edx
+0x180010817  or      r10d, 0FFFFFFFFh
+0x18001081b  shr     r10d, cl
+0x18001081e  mov     r8d, [rsp+78h+var_58]
+0x180010823  mov     [rsp+78h+var_54], 0
+0x18001082b  cmp     r11d, 0FFFFFFFFh
+0x18001082f  jz      short loc_1800107E8
+0x180010831  mov     ecx, [rbp+20h]
+0x180010834  mov     rdx, [rbp+18h]
+0x180010838  sub     rdx, rcx
+0x18001083b  mov     ecx, r11d
+0x18001083e  sub     rdx, rcx
+0x180010841  cmp     rdx, r15
+0x180010844  jb      short loc_1800107E8
+0x180010846  cmp     r15d, 1
+0x18001084a  jz      loc_18001060D
+0x180010850  mov     ecx, r11d
+0x180010853  mov     edx, r10d
+0x180010856  shl     edx, cl
+0x180010858  mov     ecx, edx
+0x18001085a  and     ecx, eax
+0x18001085c  cmp     ecx, edx
+0x18001085e  jz      loc_18001060D
+0x180010864  lea     ecx, [r11+1]
+0x180010868  or      r11d, 0FFFFFFFFh
+0x18001086c  mov     edx, r11d
+0x18001086f  shl     edx, cl
+0x180010871  and     edx, eax
+0x180010873  bsf     r8d, edx
+0x180010877  setnz   cl
+0x18001087a  test    cl, cl
+0x18001087c  cmovnz  r11d, r8d
+0x180010880  jmp     short loc_18001081E
+0x180010882  cmp     r15d, 1
+0x180010886  jnz     short loc_1800108AA
+0x180010888  mov     rcx, [rsi+80h]; ListHead
+0x18001088f  test    rcx, rcx
+0x180010892  jz      short loc_1800108AA
+0x180010894  call    cs:__imp_InterlockedPopEntrySList
+0x18001089a  mov     r13, rax
+0x18001089d  test    rax, rax
+0x1800108a0  jnz     loc_180010A3D
+0x1800108a6  lea     r9, [rsi+8]
+0x1800108aa  lea     rax, [rsi+28h]
+0x1800108ae  mov     r8, [rax]
+0x1800108b1  cmp     r8, rax
+0x1800108b4  jnz     short loc_180010910
+0x1800108b6  lea     r8, [rsp+78h+var_50]; struct PageSegment **
+0x1800108bb  mov     edx, r15d; unsigned int
+0x1800108be  mov     rcx, rsi; this
+0x1800108c1  call    ?TryAllocDecommitedPages@PageAllocator@@IEAAPEADIPEAPEAVPageSegment@@@Z; PageAllocator::TryAllocDecommitedPages(uint,PageSegment * *)
+0x1800108c6  mov     rbx, rax
+0x1800108c9  test    rax, rax
+0x1800108cc  jz      loc_1800109E3
+0x1800108d2  mov     rbp, [rsp+78h+var_50]
+0x1800108d7  jmp     loc_180010667
+0x1800108dc  cmp     byte ptr [rdi+38h], 0
+0x1800108e0  jnz     loc_1800106DF
+0x1800108e6  mov     rcx, [rdi+10h]
+0x1800108ea  mov     rax, [rcx]
+0x1800108ed  mov     [rdi+10h], rax
+0x1800108f1  mov     rax, [rdi+18h]
+0x1800108f5  mov     [rcx], rax
+0x1800108f8  mov     [rdi+18h], rcx
+0x1800108fc  jmp     loc_1800106F0
+0x180010901  cmp     r8, [rdi+48h]
+0x180010905  jbe     loc_1800105E6
+0x18001090b  jmp     loc_1800105E2
+0x180010910  mov     rcx, [r8+8]
+0x180010914  lea     rbp, [r8+10h]
+0x180010918  mov     rax, [r8]
+0x18001091b  mov     edx, [rsi+58h]
+0x18001091e  mov     [rcx], rax
+0x180010921  mov     rcx, [r8]
+0x180010924  mov     rax, [r8+8]
+0x180010928  mov     [rcx+8], rax
+0x18001092c  cmp     r15d, edx
+0x18001092f  jz      loc_180010A34
+0x180010935  mov     rcx, [r9]
+0x180010938  mov     rax, [rcx+8]
+0x18001093c  mov     [r8+8], rax
+0x180010940  mov     [r8], rcx
+0x180010943  mov     rax, [rcx+8]
+0x180010947  mov     [rax], r8
+0x18001094a  mov     [rcx+8], r8
+0x18001094e  mov     edx, r15d; unsigned int
+0x180010951  mov     rcx, rbp; this
+0x180010954  call    ?AllocPages@PageSegment@@QEAAPEADI@Z; PageSegment::AllocPages(uint)
+0x180010959  mov     rbx, rax
+0x18001095c  mov     eax, r15d
+0x18001095f  shl     eax, 0Ch
+0x180010962  mov     ecx, eax
+0x180010964  add     [rsi+0A0h], rcx
+0x18001096b  lock xadd cs:qword_18043D988, rax
+0x180010974  test    byte ptr cs:Microsoft_JScriptEnableBits+1, 2
+0x18001097b  jz      loc_180010663
+0x180010981  lea     r8, [rax+rcx]
+0x180010985  call    McTemplateU0x_EventWriteTransfer
+0x18001098a  jmp     loc_180010663
+  ... truncated ...
+```

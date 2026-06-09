@@ -1,0 +1,1587 @@
+[
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "KbdHid_PnP",
+    "ea": "0x14000f930",
+    "function_file": "functions/14000f930_KbdHid_PnP.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockAndWaitEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoWMIRegistrationControl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_PnP",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PVOID Tag)",
+    "rank_score": 4635,
+    "size": 1045,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "KbdHid_AddDevice",
+    "ea": "0x140010690",
+    "function_file": "functions/140010690_KbdHid_AddDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoAttachDeviceToDeviceStack",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoInitializeRemoveLockEx",
+      "ntoskrnl!IoWriteErrorLogEntry",
+      "ntoskrnl!KeInitializeDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeInitializeTimer",
+      "ntoskrnl!PoSetPowerState"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_AddDevice",
+    "prototype": "__int64 __fastcall(PVOID IoObject, PDEVICE_OBJECT TargetDevice)",
+    "rank_score": 4225,
+    "size": 1430,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "KbdHid_ReadComplete",
+    "ea": "0x140001300",
+    "function_file": "functions/140001300_KbdHid_ReadComplete.md",
+    "matched_imports": [
+      "HIDPARSE!HidP_GetUsagesEx",
+      "HIDPARSE!HidP_TranslateUsageAndPagesToI8042ScanCodes",
+      "HIDPARSE!HidP_UsageAndPageListDifference",
+      "ntoskrnl!DbgBreakPointWithStatus",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KdRefreshDebuggerNotPresent",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeSetTimerEx"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_ReadComplete",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 3963,
+    "size": 1780,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "KbdHid_StartDevice",
+    "ea": "0x14000ff70",
+    "function_file": "functions/14000ff70_KbdHid_StartDevice.md",
+    "matched_imports": [
+      "HIDPARSE!HidP_GetCaps",
+      "HIDPARSE!HidP_MaxUsageListLength",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!MmBuildMdlForNonPagedPool",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_StartDevice",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 3660,
+    "size": 1428,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "KbdHid_Create",
+    "ea": "0x1400026a0",
+    "function_file": "functions/1400026a0_KbdHid_Create.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_Create",
+    "prototype": "",
+    "rank_score": 3244,
+    "size": 1746,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "KbdHid_SetLedIndicators",
+    "ea": "0x140003040",
+    "function_file": "functions/140003040_KbdHid_SetLedIndicators.md",
+    "matched_imports": [
+      "HIDPARSE!HidP_SetUsages",
+      "HIDPARSE!HidP_UnsetUsages",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!MmBuildMdlForNonPagedPool"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_SetLedIndicators",
+    "prototype": "",
+    "rank_score": 3242,
+    "size": 1064,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "KbdHid_QueryExtendedAttributes",
+    "ea": "0x1400042d0",
+    "function_file": "functions/1400042d0_KbdHid_QueryExtendedAttributes.md",
+    "matched_imports": [
+      "HIDPARSE!HidP_GetUsageValue",
+      "HIDPARSE!HidP_GetValueCaps",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_QueryExtendedAttributes",
+    "prototype": "",
+    "rank_score": 2244,
+    "size": 2370,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "KbdHid_StartRead",
+    "ea": "0x140001a00",
+    "function_file": "functions/140001a00_KbdHid_StartRead.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_StartRead",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 2034,
+    "size": 802,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WppLoadTracingSupport",
+    "ea": "0x14000f1cc",
+    "function_file": "functions/14000f1cc_WppLoadTracingSupport.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WppLoadTracingSupport",
+    "prototype": "",
+    "rank_score": 2005,
+    "size": 320,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "KbdHidCrashDump",
+    "ea": "0x14001130c",
+    "function_file": "functions/14001130c_KbdHidCrashDump.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "KbdHidCrashDump",
+    "prototype": "__int64 __fastcall(PCWSTR Source)",
+    "rank_score": 1960,
+    "size": 844,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "KbdHid_Power",
+    "ea": "0x140003b20",
+    "function_file": "functions/140003b20_KbdHid_Power.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoCallDriver",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_Power",
+    "prototype": "",
+    "rank_score": 1627,
+    "size": 554,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LoadKeyboardUsageMappingList",
+    "ea": "0x140004f80",
+    "function_file": "functions/140004f80_LoadKeyboardUsageMappingList.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwEnumerateValueKey"
+    ],
+    "matched_strings": [],
+    "name": "LoadKeyboardUsageMappingList",
+    "prototype": "",
+    "rank_score": 1618,
+    "size": 488,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "KbdHid_S0IdleStateUpdate",
+    "ea": "0x140001ed0",
+    "function_file": "functions/140001ed0_KbdHid_S0IdleStateUpdate.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_S0IdleStateUpdate",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 1032,
+    "size": 599,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Kbdhid_ServiceParameters",
+    "ea": "0x140011660",
+    "function_file": "functions/140011660_Kbdhid_ServiceParameters.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "Kbdhid_ServiceParameters",
+    "prototype": "",
+    "rank_score": 981,
+    "size": 534,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "KbdHid_IOCTL",
+    "ea": "0x140003470",
+    "function_file": "functions/140003470_KbdHid_IOCTL.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_IOCTL",
+    "prototype": "",
+    "rank_score": 841,
+    "size": 1421,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KbdHid_SetLedIndicatorsComplete",
+    "ea": "0x140003f60",
+    "function_file": "functions/140003f60_KbdHid_SetLedIndicatorsComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_SetLedIndicatorsComplete",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 822,
+    "size": 147,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "KbdHid_SendS0IdleStopResumeIrp",
+    "ea": "0x14000fd50",
+    "function_file": "functions/14000fd50_KbdHid_SendS0IdleStopResumeIrp.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_SendS0IdleStopResumeIrp",
+    "prototype": "",
+    "rank_score": 819,
+    "size": 526,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "KbdHid_CallHidClass",
+    "ea": "0x140010510",
+    "function_file": "functions/140010510_KbdHid_CallHidClass.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_CallHidClass",
+    "prototype": "",
+    "rank_score": 816,
+    "size": 370,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "KbdHid_S0IdleStateChangeWorkItem",
+    "ea": "0x140004d30",
+    "function_file": "functions/140004d30_KbdHid_S0IdleStateChangeWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_S0IdleStateChangeWorkItem",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 815,
+    "size": 271,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KbdHid_Flush",
+    "ea": "0x140005800",
+    "function_file": "functions/140005800_KbdHid_Flush.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_Flush",
+    "prototype": "",
+    "rank_score": 812,
+    "size": 206,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KbdHid_PassThrough",
+    "ea": "0x140003d50",
+    "function_file": "functions/140003d50_KbdHid_PassThrough.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_PassThrough",
+    "prototype": "",
+    "rank_score": 812,
+    "size": 157,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "KbdHid_QueryDeviceKey",
+    "ea": "0x140003e30",
+    "function_file": "functions/140003e30_KbdHid_QueryDeviceKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_QueryDeviceKey",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 805,
+    "size": 286,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x140011940",
+    "function_file": "functions/140011940_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlRegisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 637,
+    "size": 387,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "KbdHid_PowerCompletion",
+    "ea": "0x140006680",
+    "function_file": "functions/140006680_KbdHid_PowerCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_PowerCompletion",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 627,
+    "size": 347,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "KbdHid_WaitForExtendedAttributesQueryCompletion",
+    "ea": "0x140005928",
+    "function_file": "functions/140005928_KbdHid_WaitForExtendedAttributesQueryCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_WaitForExtendedAttributesQueryCompletion",
+    "prototype": "",
+    "rank_score": 624,
+    "size": 221,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KbdHid_SystemControl",
+    "ea": "0x140010e30",
+    "function_file": "functions/140010e30_KbdHid_SystemControl.md",
+    "matched_imports": [
+      "WMILIB!WmiSystemControl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_SystemControl",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 622,
+    "size": 146,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14000f5bc",
+    "function_file": "functions/14000f5bc_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 433,
+    "size": 90,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "KbdHid_PresenceNotificationCompleted",
+    "ea": "0x1400053c0",
+    "function_file": "functions/1400053c0_KbdHid_PresenceNotificationCompleted.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_PresenceNotificationCompleted",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 424,
+    "size": 196,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WppCleanupKm",
+    "ea": "0x14000f118",
+    "function_file": "functions/14000f118_WppCleanupKm.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogStop",
+      "ntoskrnl!IoWMIRegistrationControl"
+    ],
+    "matched_strings": [],
+    "name": "WppCleanupKm",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "KbdHid_LogError",
+    "ea": "0x1400058d4",
+    "function_file": "functions/1400058d4_KbdHid_LogError.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_LogError",
+    "prototype": "",
+    "rank_score": 402,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140011168",
+    "function_file": "functions/140011168_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 252,
+    "size": 414,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "OpenSubkey",
+    "ea": "0x140010de0",
+    "function_file": "functions/140010de0_OpenSubkey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "OpenSubkey",
+    "prototype": "",
+    "rank_score": 231,
+    "size": 69,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x14000f7fc",
+    "function_file": "functions/14000f7fc_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KbdHid_QueryWmiDataBlock",
+    "ea": "0x140010c30",
+    "function_file": "functions/140010c30_KbdHid_QueryWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_QueryWmiDataBlock",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 183,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "WPP_RECORDER_SF_",
+    "ea": "0x140005a0c",
+    "function_file": "functions/140005a0c_WPP_RECORDER_SF.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 185,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "KbdHid_CancelAutoRepeatTimer",
+    "ea": "0x140001d30",
+    "function_file": "functions/140001d30_KbdHid_CancelAutoRepeatTimer.md",
+    "matched_imports": [
+      "ntoskrnl!KeCancelTimer"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_CancelAutoRepeatTimer",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 216,
+    "size": 112,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x1400062e4",
+    "function_file": "functions/1400062e4_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 233,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x140011010",
+    "function_file": "functions/140011010_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 224,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x14000649c",
+    "function_file": "functions/14000649c_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KbdHid_PnPComplete",
+    "ea": "0x140005170",
+    "function_file": "functions/140005170_KbdHid_PnPComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_PnPComplete",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 66,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KbdHid_SetWmiDataBlock",
+    "ea": "0x14000f8f0",
+    "function_file": "functions/14000f8f0_KbdHid_SetWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_SetWmiDataBlock",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 53,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "KbdHid_CreateComplete",
+    "ea": "0x140003e00",
+    "function_file": "functions/140003e00_KbdHid_CreateComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_CreateComplete",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "WPP_RECORDER_SF_qd",
+    "ea": "0x1400052a0",
+    "function_file": "functions/1400052a0_WPP_RECORDER_SF_qd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qd",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 275,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "WPP_RECORDER_SF_qqd",
+    "ea": "0x140005d88",
+    "function_file": "functions/140005d88_WPP_RECORDER_SF_qqd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qqd",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 312,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "KbdHidProcessCrashDump",
+    "ea": "0x140002400",
+    "function_file": "functions/140002400_KbdHidProcessCrashDump.md",
+    "matched_imports": [
+      "ntoskrnl!KeBugCheckEx"
+    ],
+    "matched_strings": [],
+    "name": "KbdHidProcessCrashDump",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 658,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WPP_RECORDER_SF_q",
+    "ea": "0x1400068bc",
+    "function_file": "functions/1400068bc_WPP_RECORDER_SF_q.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_q",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 180,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qdddddddd",
+    "ea": "0x140006c6c",
+    "function_file": "functions/140006c6c_WPP_RECORDER_SF_qdddddddd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qdddddddd",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 443,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qqqDDl",
+    "ea": "0x140005580",
+    "function_file": "functions/140005580_WPP_RECORDER_SF_qqqDDl.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qqqDDl",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 389,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qqsd",
+    "ea": "0x140004130",
+    "function_file": "functions/140004130_WPP_RECORDER_SF_qqsd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qqsd",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 400,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_d",
+    "ea": "0x140005c9c",
+    "function_file": "functions/140005c9c_WPP_RECORDER_SF_d.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_d",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_dd",
+    "ea": "0x140005490",
+    "function_file": "functions/140005490_WPP_RECORDER_SF_dd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_dd",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qLL",
+    "ea": "0x140002130",
+    "function_file": "functions/140002130_WPP_RECORDER_SF_qLL.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qLL",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 259,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qLqd",
+    "ea": "0x140004e50",
+    "function_file": "functions/140004e50_WPP_RECORDER_SF_qLqd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qLqd",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 292,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qqdl",
+    "ea": "0x140002d80",
+    "function_file": "functions/140002d80_WPP_RECORDER_SF_qqdl.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qqdl",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 293,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qqqDD",
+    "ea": "0x140002eb0",
+    "function_file": "functions/140002eb0_WPP_RECORDER_SF_qqqDD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qqqDD",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 379,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qqqd",
+    "ea": "0x140006e30",
+    "function_file": "functions/140006e30_WPP_RECORDER_SF_qqqd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qqqd",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 277,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qqql",
+    "ea": "0x140004000",
+    "function_file": "functions/140004000_WPP_RECORDER_SF_qqql.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qqql",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 293,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_Lqd",
+    "ea": "0x140005ba8",
+    "function_file": "functions/140005ba8_WPP_RECORDER_SF_Lqd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_Lqd",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 235,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qDd",
+    "ea": "0x140006978",
+    "function_file": "functions/140006978_WPP_RECORDER_SF_qDd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qDd",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 243,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qdd",
+    "ea": "0x140006b70",
+    "function_file": "functions/140006b70_WPP_RECORDER_SF_qdd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qdd",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 245,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qqL",
+    "ea": "0x140003a10",
+    "function_file": "functions/140003a10_WPP_RECORDER_SF_qqL.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qqL",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 252,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qqc",
+    "ea": "0x140004c20",
+    "function_file": "functions/140004c20_WPP_RECORDER_SF_qqc.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qqc",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 252,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_qql",
+    "ea": "0x140006a74",
+    "function_file": "functions/140006a74_WPP_RECORDER_SF_qql.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qql",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 244,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, PEVENT_DATA_DESCRIPTOR)",
+    "rank_score": 202,
+    "size": 164,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KbdHid_InitiateStartRead",
+    "ea": "0x140006870",
+    "function_file": "functions/140006870_KbdHid_InitiateStartRead.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "KbdHid_InitiateStartRead",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 201,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 33,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140007170",
+    "function_file": "functions/140007170_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140007130",
+    "function_file": "functions/140007130_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 24,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140006ffc",
+    "function_file": "functions/140006ffc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140011100",
+    "function_file": "functions/140011100_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x14000f7e0",
+    "function_file": "functions/14000f7e0_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x1400060e4",
+    "function_file": "functions/1400060e4_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 380,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x140006268",
+    "function_file": "functions/140006268_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 118,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14000f6b8",
+    "function_file": "functions/14000f6b8_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x140005f38",
+    "function_file": "functions/140005f38_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x140006008",
+    "function_file": "functions/140006008_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140011134",
+    "function_file": "functions/140011134_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x1400071a0",
+    "function_file": "functions/1400071a0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "memset",
+    "ea": "0x140007540",
+    "function_file": "functions/140007540_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 12,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "memmove",
+    "ea": "0x140007240",
+    "function_file": "functions/140007240_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 11,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies",
+    "ea": "0x14000f010",
+    "function_file": "functions/14000f010_wil_details_EvaluateFeatureDependencies.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 191,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x1400057a0",
+    "function_file": "functions/1400057a0_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14000f67c",
+    "function_file": "functions/14000f67c_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14000f61c",
+    "function_file": "functions/14000f61c_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x1400063d4",
+    "function_file": "functions/1400063d4_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 31,
+    "tags": []
+  }
+]

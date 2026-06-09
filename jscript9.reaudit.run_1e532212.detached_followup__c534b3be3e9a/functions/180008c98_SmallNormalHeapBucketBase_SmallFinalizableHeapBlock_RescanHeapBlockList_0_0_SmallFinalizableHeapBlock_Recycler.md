@@ -1,0 +1,175 @@
+# SmallNormalHeapBucketBase<SmallFinalizableHeapBlock>::RescanHeapBlockList<0,0>(SmallFinalizableHeapBlock *,Recycler *,RescanFlags)
+
+- ea: `0x180008c98`
+- end: `0x180008dab`
+- name: `??$RescanHeapBlockList@$0A@$0A@@?$SmallNormalHeapBucketBase@VSmallFinalizableHeapBlock@@@@KA_KPEAVSmallFinalizableHeapBlock@@PEAVRecycler@@W4RescanFlags@@@Z`
+- size: `275`
+- prototype: `__int64 __fastcall(SmallFinalizableHeapBlock *this)`
+- caller_count: `1`
+- callee_count: `2`
+- tags: ``
+
+## callers
+
+- `0x180008e4c`
+
+## callees
+
+- `0x180008c98`
+- `0x1800095f4`
+
+## import_xrefs
+
+- `KERNEL32!ResetWriteWatch` at `0x180008d89`
+- `KERNEL32!ResetWriteWatch` at `0x180008d89`
+- `KERNEL32!GetWriteWatch` at `0x180008d37`
+- `KERNEL32!GetWriteWatch` at `0x180008d37`
+
+## pseudocode
+
+```c
+__int64 __fastcall SmallNormalHeapBucketBase<SmallFinalizableHeapBlock>::RescanHeapBlockList<0,0>(
+        SmallFinalizableHeapBlock *this,
+        __int64 a2,
+        unsigned int a3)
+{
+  SmallFinalizableHeapBlock *v3; // rbx
+  __int64 v4; // rdi
+  int v6; // ebp
+  void *v7; // rdx
+  DWORD dwGranularity; // [rsp+30h] [rbp-48h] BYREF
+  ULONG_PTR dwCount; // [rsp+38h] [rbp-40h] BYREF
+  PVOID Addresses; // [rsp+40h] [rbp-38h] BYREF
+
+  v3 = this;
+  v4 = 0;
+  if ( this )
+  {
+    v6 = a3 & 1;
+    do
+    {
+      if ( v6 )
+      {
+        *((_BYTE *)v3 + 120) = 0;
+      }
+      else if ( *((_BYTE *)v3 + 120) )
+      {
+        if ( (a3 & 2) != 0 )
+          ResetWriteWatch(*((LPVOID *)v3 + 1), 0x1000u);
+        goto LABEL_10;
+      }
+      if ( *((_WORD *)v3 + 40) )
+      {
+        if ( *((_BYTE *)v3 + 25) )
+        {
+          if ( !*(_BYTE *)(a2 + 12888) )
+          {
+            *((_BYTE *)v3 + 25) = 0;
+LABEL_19:
+            SmallNormalHeapBucketBase<SmallFinalizableHeapBlock>::RescanObjects<0,0>(v3);
+LABEL_11:
+            ++v4;
+            goto LABEL_12;
+          }
+        }
+        else if ( !*(_BYTE *)(a2 + 12901) )
+        {
+          v7 = (void *)*((_QWORD *)v3 + 1);
+          dwCount = 1;
+          dwGranularity = 4096;
+          Addresses = 0;
+          if ( GetWriteWatch((a3 >> 1) & 1, v7, 0x1000u, &Addresses, &dwCount, &dwGranularity) || dwCount )
+            goto LABEL_19;
+        }
+      }
+LABEL_10:
+      if ( *((_BYTE *)v3 + 120) )
+        goto LABEL_11;
+LABEL_12:
+      v3 = (SmallFinalizableHeapBlock *)*((_QWORD *)v3 + 4);
+    }
+    while ( v3 );
+  }
+  return v4;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180008c98  mov     rax, rsp
+0x180008c9b  mov     [rax+18h], r8d
+0x180008c9f  mov     [rax+10h], rdx
+0x180008ca3  mov     [rax+8], rcx
+0x180008ca7  push    rbx
+0x180008ca8  push    rbp
+0x180008ca9  push    rsi
+0x180008caa  push    rdi
+0x180008cab  push    r15
+0x180008cad  sub     rsp, 50h
+0x180008cb1  xor     r15d, r15d
+0x180008cb4  mov     rbx, rcx
+0x180008cb7  mov     edi, r15d
+0x180008cba  test    rcx, rcx
+0x180008cbd  jz      loc_180008D5E
+0x180008cc3  mov     ebp, r8d
+0x180008cc6  mov     rsi, rdx
+0x180008cc9  and     ebp, 1
+0x180008ccc  test    ebp, ebp
+0x180008cce  jz      loc_180008D6C
+0x180008cd4  mov     [rbx+78h], r15b
+0x180008cd8  cmp     [rbx+50h], r15w
+0x180008cdd  jz      short loc_180008D48
+0x180008cdf  cmp     [rbx+19h], r15b
+0x180008ce3  jnz     loc_180008D91
+0x180008ce9  cmp     [rsi+3265h], r15b
+0x180008cf0  jnz     short loc_180008D48
+0x180008cf2  mov     ecx, [rsp+78h+arg_10]
+0x180008cf9  lea     rax, [rsp+78h+dwGranularity]
+0x180008cfe  mov     rdx, [rbx+8]; lpBaseAddress
+0x180008d02  lea     r9, [rsp+78h+Addresses]; lpAddresses
+0x180008d07  mov     [rsp+78h+lpdwGranularity], rax; lpdwGranularity
+0x180008d0c  mov     r8d, 1000h; dwRegionSize
+0x180008d12  shr     ecx, 1
+0x180008d14  lea     rax, [rsp+78h+dwCount]
+0x180008d19  and     ecx, 1; dwFlags
+0x180008d1c  mov     [rsp+78h+lpdwCount], rax; lpdwCount
+0x180008d21  mov     [rsp+78h+dwCount], 1
+0x180008d2a  mov     [rsp+78h+dwGranularity], 1000h
+0x180008d32  mov     [rsp+78h+Addresses], r15
+0x180008d37  call    cs:__imp_GetWriteWatch
+0x180008d3d  test    eax, eax
+0x180008d3f  jnz     short loc_180008D9E
+0x180008d41  cmp     [rsp+78h+dwCount], r15
+0x180008d46  jnz     short loc_180008D9E
+0x180008d48  cmp     [rbx+78h], r15b
+0x180008d4c  jz      short loc_180008D51
+0x180008d4e  inc     rdi
+0x180008d51  mov     rbx, [rbx+20h]
+0x180008d55  test    rbx, rbx
+0x180008d58  jnz     loc_180008CCC
+0x180008d5e  mov     rax, rdi
+0x180008d61  add     rsp, 50h
+0x180008d65  pop     r15
+0x180008d67  pop     rdi
+0x180008d68  pop     rsi
+0x180008d69  pop     rbp
+0x180008d6a  pop     rbx
+0x180008d6b  retn
+0x180008d6c  cmp     [rbx+78h], r15b
+0x180008d70  jz      loc_180008CD8
+0x180008d76  test    byte ptr [rsp+78h+arg_10], 2
+0x180008d7e  jz      short loc_180008D48
+0x180008d80  mov     rcx, [rbx+8]; lpBaseAddress
+0x180008d84  mov     edx, 1000h; dwRegionSize
+0x180008d89  call    cs:__imp_ResetWriteWatch
+0x180008d8f  jmp     short loc_180008D48
+0x180008d91  cmp     [rsi+3258h], r15b
+0x180008d98  jnz     short loc_180008D48
+0x180008d9a  mov     [rbx+19h], r15b
+0x180008d9e  mov     rdx, rsi
+0x180008da1  mov     rcx, rbx; this
+0x180008da4  call    ??$RescanObjects@$0A@$0A@@?$SmallNormalHeapBucketBase@VSmallFinalizableHeapBlock@@@@KAXPEAVSmallFinalizableHeapBlock@@PEAVRecycler@@@Z; SmallNormalHeapBucketBase<SmallFinalizableHeapBlock>::RescanObjects<0,0>(SmallFinalizableHeapBlock *,Recycler *)
+0x180008da9  jmp     short loc_180008D4E
+```

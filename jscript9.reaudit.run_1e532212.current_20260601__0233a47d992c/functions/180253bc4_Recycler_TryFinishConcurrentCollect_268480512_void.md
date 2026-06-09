@@ -1,0 +1,90 @@
+# Recycler::TryFinishConcurrentCollect<268480512>(void)
+
+- ea: `0x180253bc4`
+- end: `0x180253c4a`
+- name: `??$TryFinishConcurrentCollect@$0BAAALAAA@@Recycler@@AEAAHXZ`
+- size: `134`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `3`
+- tags: ``
+
+## callers
+
+- `0x1801a7a4c`
+- `0x1801a7a88`
+
+## callees
+
+- `0x1801892d8`
+- `0x180253900`
+- `0x180253bc4`
+
+## import_xrefs
+
+- `KERNEL32!SetThreadPriority` at `0x180253c21`
+- `KERNEL32!SetThreadPriority` at `0x180253c21`
+- `KERNEL32!GetTickCount` at `0x180253bee`
+- `KERNEL32!GetTickCount` at `0x180253bee`
+
+## pseudocode
+
+```c
+__int64 __fastcall Recycler::TryFinishConcurrentCollect<268480512>(__int64 a1)
+{
+  DWORD TickCount; // eax
+  void *v3; // rcx
+
+  if ( !*(_QWORD *)(a1 + 12952) || (*(_DWORD *)a1 & 0x4000) == 0 )
+    return Recycler::FinishConcurrentCollectWrapped(a1, 268480512);
+  if ( !*(_BYTE *)(a1 + 12910) )
+  {
+    TickCount = GetTickCount();
+    if ( *(_QWORD *)(a1 + 488) > (unsigned __int64)qword_18043CF78 || TickCount - *(_DWORD *)(a1 + 12960) > 0x1388 )
+    {
+      v3 = *(void **)(a1 + 12952);
+      *(_BYTE *)(a1 + 12910) = 1;
+      SetThreadPriority(v3, 0);
+    }
+  }
+  return (unsigned __int8)Recycler::FinishDisposeObjectsWrapped<268480512>(a1);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180253bc4  mov     [rsp+arg_0], rcx
+0x180253bc9  push    rbx
+0x180253bca  sub     rsp, 20h
+0x180253bce  mov     rbx, [rsp+28h+arg_0]
+0x180253bd3  cmp     qword ptr [rbx+3298h], 0
+0x180253bdb  jz      short loc_180253C38
+0x180253bdd  test    dword ptr [rbx], 4000h
+0x180253be3  jz      short loc_180253C38
+0x180253be5  cmp     byte ptr [rbx+326Eh], 0
+0x180253bec  jnz     short loc_180253C27
+0x180253bee  call    cs:__imp_GetTickCount
+0x180253bf4  mov     rcx, cs:qword_18043CF78
+0x180253bfb  cmp     [rbx+1E8h], rcx
+0x180253c02  ja      short loc_180253C11
+0x180253c04  sub     eax, [rbx+32A0h]
+0x180253c0a  cmp     eax, 1388h
+0x180253c0f  jbe     short loc_180253C27
+0x180253c11  mov     rcx, [rbx+3298h]; hThread
+0x180253c18  xor     edx, edx; nPriority
+0x180253c1a  mov     byte ptr [rbx+326Eh], 1
+0x180253c21  call    cs:__imp_SetThreadPriority
+0x180253c27  mov     rcx, rbx
+0x180253c2a  call    ??$FinishDisposeObjectsWrapped@$0BAAALAAA@@Recycler@@AEAA_NXZ; Recycler::FinishDisposeObjectsWrapped<268480512>(void)
+0x180253c2f  movzx   eax, al
+0x180253c32  add     rsp, 20h
+0x180253c36  pop     rbx
+0x180253c37  retn
+0x180253c38  mov     edx, 1000B000h
+0x180253c3d  mov     rcx, rbx
+0x180253c40  add     rsp, 20h
+0x180253c44  pop     rbx
+0x180253c45  jmp     ?FinishConcurrentCollectWrapped@Recycler@@AEAAHW4CollectionFlags@@@Z; Recycler::FinishConcurrentCollectWrapped(CollectionFlags)
+```

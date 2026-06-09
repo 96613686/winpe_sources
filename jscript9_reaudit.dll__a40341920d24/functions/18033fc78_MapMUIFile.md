@@ -1,0 +1,131 @@
+# MapMUIFile
+
+- ea: `0x18033fc78`
+- end: `0x18033fd66`
+- name: `MapMUIFile`
+- size: `238`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `1`
+- tags: `file_ops, loader_planting`
+
+## callers
+
+- `0x18033fdb4`
+- `0x18033fed0`
+
+## callees
+
+- `0x18033fc78`
+
+## import_xrefs
+
+- `KERNEL32!MapViewOfFile` at `0x18033fd1f`
+- `KERNEL32!MapViewOfFile` at `0x18033fd1f`
+- `KERNEL32!CreateFileMappingW` at `0x18033fcf2`
+- `KERNEL32!CreateFileMappingW` at `0x18033fcf2`
+- `KERNEL32!CreateFileW` at `0x18033fcc2`
+- `KERNEL32!CreateFileW` at `0x18033fcc2`
+- `KERNEL32!LoadLibraryExW` at `0x18033fd51`
+- `KERNEL32!LoadLibraryExW` at `0x18033fd51`
+- `KERNEL32!CloseHandle` at `0x18033fcfe`
+- `KERNEL32!CloseHandle` at `0x18033fd2b`
+- `KERNEL32!CloseHandle` at `0x18033fcfe`
+- `KERNEL32!CloseHandle` at `0x18033fd2b`
+
+## pseudocode
+
+```c
+HMODULE __fastcall MapMUIFile(const WCHAR *a1, int a2, int a3)
+{
+  HANDLE FileW; // rax
+  void *v4; // rbx
+  HANDLE FileMappingW; // rdi
+  unsigned __int64 v6; // rbx
+
+  if ( a1 )
+  {
+    if ( !a2 )
+      return LoadLibraryExW(a1, 0, a3 != 0);
+    FileW = CreateFileW(a1, 0x80000000, 5u, 0, 3u, 0, 0);
+    v4 = FileW;
+    if ( FileW != (HANDLE)-1LL )
+    {
+      FileMappingW = CreateFileMappingW(FileW, 0, 8u, 0, 0, 0);
+      CloseHandle(v4);
+      if ( FileMappingW )
+      {
+        v6 = (unsigned __int64)MapViewOfFile(FileMappingW, 1u, 0, 0, 0);
+        CloseHandle(FileMappingW);
+        return (HMODULE)((v6 | 1) & -(__int64)(v6 != 0));
+      }
+    }
+  }
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18033fc78  mov     rax, rsp
+0x18033fc7b  mov     [rax+20h], rbx
+0x18033fc7f  mov     [rax+18h], r8d
+0x18033fc83  mov     [rax+10h], edx
+0x18033fc86  mov     [rax+8], rcx
+0x18033fc8a  push    rdi
+0x18033fc8b  sub     rsp, 40h
+0x18033fc8f  test    rcx, rcx
+0x18033fc92  jz      loc_18033FD59
+0x18033fc98  test    edx, edx
+0x18033fc9a  jz      loc_18033FD43
+0x18033fca0  mov     qword ptr [rax-18h], 0
+0x18033fca8  xor     r9d, r9d; lpSecurityAttributes
+0x18033fcab  mov     dword ptr [rax-20h], 0
+0x18033fcb2  mov     edx, 80000000h; dwDesiredAccess
+0x18033fcb7  mov     dword ptr [rax-28h], 3
+0x18033fcbe  lea     r8d, [r9+5]; dwShareMode
+0x18033fcc2  call    cs:__imp_CreateFileW
+0x18033fcc8  mov     rbx, rax
+0x18033fccb  cmp     rax, 0FFFFFFFFFFFFFFFFh
+0x18033fccf  jz      loc_18033FD59
+0x18033fcd5  xor     r9d, r9d; dwMaximumSizeHigh
+0x18033fcd8  mov     [rsp+48h+lpName], 0; lpName
+0x18033fce1  xor     edx, edx; lpFileMappingAttributes
+0x18033fce3  mov     [rsp+48h+dwMaximumSizeLow], 0; dwMaximumSizeLow
+0x18033fceb  mov     rcx, rax; hFile
+0x18033fcee  lea     r8d, [r9+8]; flProtect
+0x18033fcf2  call    cs:__imp_CreateFileMappingW
+0x18033fcf8  mov     rcx, rbx; hObject
+0x18033fcfb  mov     rdi, rax
+0x18033fcfe  call    cs:__imp_CloseHandle
+0x18033fd04  test    rdi, rdi
+0x18033fd07  jz      short loc_18033FD59
+0x18033fd09  xor     r9d, r9d; dwFileOffsetLow
+0x18033fd0c  mov     qword ptr [rsp+48h+dwMaximumSizeLow], 0; dwNumberOfBytesToMap
+0x18033fd15  xor     r8d, r8d; dwFileOffsetHigh
+0x18033fd18  mov     rcx, rdi; hFileMappingObject
+0x18033fd1b  lea     edx, [r9+1]; dwDesiredAccess
+0x18033fd1f  call    cs:__imp_MapViewOfFile
+0x18033fd25  mov     rcx, rdi; hObject
+0x18033fd28  mov     rbx, rax
+0x18033fd2b  call    cs:__imp_CloseHandle
+0x18033fd31  mov     rcx, rbx
+0x18033fd34  or      rcx, 1; lpLibFileName
+0x18033fd38  neg     rbx
+0x18033fd3b  sbb     rax, rax
+0x18033fd3e  and     rax, rcx
+0x18033fd41  jmp     short loc_18033FD5B
+0x18033fd43  xor     r8d, r8d
+0x18033fd46  cmp     [rsp+48h+arg_10], r8d
+0x18033fd4b  setnz   r8b; dwFlags
+0x18033fd4f  xor     edx, edx; hFile
+0x18033fd51  call    cs:__imp_LoadLibraryExW
+0x18033fd57  jmp     short loc_18033FD5B
+0x18033fd59  xor     eax, eax
+0x18033fd5b  mov     rbx, [rsp+48h+arg_18]
+0x18033fd60  add     rsp, 40h
+0x18033fd64  pop     rdi
+0x18033fd65  retn
+```

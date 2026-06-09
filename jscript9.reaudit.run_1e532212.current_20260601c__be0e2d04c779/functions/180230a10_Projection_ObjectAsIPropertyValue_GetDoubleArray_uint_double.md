@@ -1,0 +1,362 @@
+# Projection::ObjectAsIPropertyValue::GetDoubleArray(uint *,double * *)
+
+- ea: `0x180230a10`
+- end: `0x180230c9b`
+- name: `?GetDoubleArray@ObjectAsIPropertyValue@Projection@@UEAAJPEAIPEAPEAN@Z`
+- size: `651`
+- prototype: `__int64 __fastcall(Projection::ObjectAsIPropertyValue *__hidden this, unsigned int *, double **)`
+- caller_count: `1`
+- callee_count: `15`
+- tags: `file_ops, service_task`
+
+## callers
+
+- `0x180230cb0`
+
+## callees
+
+- `0x180024810`
+- `0x180024b80`
+- `0x180024cd0`
+- `0x1800257dc`
+- `0x180026f10`
+- `0x18002bde8`
+- `0x18002c348`
+- `0x180130b04`
+- `0x180146f40`
+- `0x1801c8120`
+- `0x1801c8178`
+- `0x180230340`
+- `0x180230a10`
+- `0x180233f50`
+- `0x180234b74`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentThreadId` at `0x180230a41`
+- `KERNEL32!GetCurrentThreadId` at `0x180230a41`
+- `api-ms-win-downlevel-ole32-l1-1-0!CoTaskMemAlloc` at `0x180230bd2`
+- `api-ms-win-downlevel-ole32-l1-1-0!CoTaskMemAlloc` at `0x180230bd2`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=3
+__int64 __fastcall Projection::ObjectAsIPropertyValue::GetDoubleArray(
+        Projection::ObjectAsIPropertyValue *this,
+        unsigned int *a2,
+        double **a3)
+{
+  int v3; // ebx
+  volatile signed __int32 *v5; // rbx
+  __int64 v6; // rdi
+  __int64 v7; // rax
+  __int64 v8; // rcx
+  unsigned __int64 v9; // rsi
+  unsigned __int8 *v10; // rax
+  unsigned __int64 v11; // rdx
+  int *v12; // rbx
+  double *v13; // rax
+  __int64 i; // rdx
+  struct Js::RecyclableObject *v15; // rbx
+  unsigned __int64 v16; // [rsp+28h] [rbp-E0h]
+  int Value; // [rsp+40h] [rbp-C8h]
+  ScriptSite *v18; // [rsp+48h] [rbp-C0h]
+  struct Js::RecyclableObject **v19; // [rsp+58h] [rbp-B0h] BYREF
+  _OWORD v20[2]; // [rsp+60h] [rbp-A8h] BYREF
+  __int64 v21; // [rsp+80h] [rbp-88h]
+  _BYTE v22[24]; // [rsp+88h] [rbp-80h] BYREF
+  _BYTE v23[24]; // [rsp+A0h] [rbp-68h] BYREF
+  _BYTE v24[80]; // [rsp+B8h] [rbp-50h] BYREF
+  void *retaddr; // [rsp+108h] [rbp+0h]
+
+  v3 = *((_DWORD *)this + 18);
+  if ( v3 != GetCurrentThreadId() )
+    return 2147549454LL;
+  v5 = (volatile signed __int32 *)*((_QWORD *)this + 4);
+  if ( !v5 )
+    return 2147942405LL;
+  _InterlockedIncrement(v5);
+  v6 = *(_QWORD *)(*((_QWORD *)this + 5) + 112LL);
+  if ( !ThreadContext::IsStackAvailableNoThrow(*(ThreadContext **)(v6 + 1184), 0x450u) )
+    return 2147943401LL;
+  v18 = (ScriptSite *)v5;
+  Projection::ObjectAsIPropertyValue::AddRef(this);
+  AutoCallerPointer::AutoCallerPointer((AutoCallerPointer *)v24, (struct ScriptSite *)v5, 0);
+  AutoHostScriptContextStackPointer::AutoHostScriptContextStackPointer(
+    (AutoHostScriptContextStackPointer *)v23,
+    (struct ScriptSite *)v5,
+    *(struct HostScriptContext **)(v6 + 2680));
+  try
+  {
+    memset(v20, 0, sizeof(v20));
+    v21 = 0;
+    Js::EnterScriptObject::EnterScriptObject(
+      (Js::EnterScriptObject *)v22,
+      (struct Js::ScriptContext *)v6,
+      (struct Js::ScriptEntryExitRecord *)v20,
+      retaddr,
+      1,
+      1,
+      0);
+    Js::ScriptContext::OnScriptStart((Js::ScriptContext *)v6, 1, *(_BYTE *)(v6 + 3136), 1);
+    if ( a3 && a2 )
+    {
+      v7 = *((_QWORD *)this + 11);
+      if ( *(_BYTE *)(v7 + 88) && (v8 = *(_QWORD *)(v7 + 112), **(_DWORD **)(v8 + 8) == 12) )
+      {
+        v9 = *(unsigned int *)(v8 + 16);
+        v10 = (unsigned __int8 *)operator new[](saturated_mul(v9, 4u));
+        v12 = (int *)v10;
+        if ( v10 )
+        {
+          Value = Projection::ObjectAsIReference::get_Value(
+                    *((Projection::ObjectAsIReference **)this + 11),
+                    v11,
+                    v10,
+                    0,
+                    0,
+                    v16,
+                    0);
+          if ( Value >= 0 )
+          {
+            v13 = (double *)CoTaskMemAlloc(8 * v9);
+            *a3 = v13;
+            if ( v13 )
+            {
+              for ( i = 0; (unsigned int)i < (unsigned int)v9; i = (unsigned int)(i + 1) )
+                (*a3)[i] = (double)v12[i];
+              *a2 = v9;
+            }
+            else
+            {
+              Value = -2147024882;
+            }
+          }
+          operator delete[](v12);
+        }
+        else
+        {
+          Value = -2147024882;
+        }
+      }
+      else
+      {
+        Value = -2147316576;
+      }
+    }
+    else
+    {
+      Value = -2147467261;
+    }
+    Js::EnterScriptObject::~EnterScriptObject((Js::EnterScriptObject *)v22);
+  }
+  catch ( Js::JavascriptExceptionObject *v19 )
+  {
+    v15 = *v19;
+    if ( *v19
+      && ((unsigned int)Js::JavascriptOperators::GetTypeId(*v19) == 23
+       || (unsigned int)Js::JavascriptOperators::GetTypeId(v15) == 11) )
+    {
+      Value = Js::JavascriptError::GetRuntimeErrorWithScriptEnter(v15, 0);
+      if ( Js::JavascriptErrorDebug::Is(v15) )
+        Js::JavascriptErrorDebug::SetErrorInfo(v15);
+    }
+    else
+    {
+      Value = -2147467259;
+    }
+  }
+  catch ( Js::InternalErrorException )
+  {
+    Value = -2147467259;
+  }
+  catch ( Js::OutOfMemoryException )
+  {
+    Value = -2147024882;
+  }
+  catch ( Js::StackOverflowException )
+  {
+    Value = -2146828260;
+  }
+  catch ( Js::NotImplementedException )
+  {
+    Value = -2147467263;
+  }
+  catch ( Js::ScriptAbortException )
+  {
+    Value = -2147467260;
+  }
+  catch ( ... )
+  {
+    Value = -2147467259;
+  }
+  ScriptSite::Release(v18);
+  Projection::ObjectAsIPropertyValue::Release(this);
+  AutoHostScriptContextStackPointer::~AutoHostScriptContextStackPointer((AutoHostScriptContextStackPointer *)v23);
+  AutoCallerPointer::~AutoCallerPointer((AutoCallerPointer *)v24);
+  return (unsigned int)Value;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180230a10  mov     rax, rsp
+0x180230a13  mov     [rax+18h], r8
+0x180230a17  mov     [rax+10h], rdx
+0x180230a1b  mov     [rax+8], rcx
+0x180230a1f  push    rsi
+0x180230a20  push    rdi
+0x180230a21  push    r12
+0x180230a23  push    r14
+0x180230a25  push    r15
+0x180230a27  sub     rsp, 0E0h
+0x180230a2e  mov     [rsp+108h+var_B8], 0FFFFFFFFFFFFFFFEh
+0x180230a37  mov     [rax+20h], rbx
+0x180230a3b  mov     rax, rcx
+0x180230a3e  mov     ebx, [rcx+48h]
+0x180230a41  call    cs:__imp_GetCurrentThreadId
+0x180230a47  cmp     ebx, eax
+0x180230a49  jz      short loc_180230A55
+0x180230a4b  mov     eax, 8001010Eh
+0x180230a50  jmp     loc_180230C83
+0x180230a55  mov     rax, [rsp+108h+arg_0]
+0x180230a5d  mov     rbx, [rax+20h]
+0x180230a61  test    rbx, rbx
+0x180230a64  jnz     short loc_180230A70
+0x180230a66  mov     eax, 80070005h
+0x180230a6b  jmp     loc_180230C83
+0x180230a70  lock inc dword ptr [rbx]
+0x180230a73  mov     rax, [rsp+108h+arg_0]
+0x180230a7b  mov     rcx, [rax+28h]
+0x180230a7f  mov     rdi, [rcx+70h]
+0x180230a83  mov     edx, 450h; unsigned __int64
+0x180230a88  mov     rcx, [rdi+4A0h]; this
+0x180230a8f  call    ?IsStackAvailableNoThrow@ThreadContext@@QEAA_N_K@Z; ThreadContext::IsStackAvailableNoThrow(unsigned __int64)
+0x180230a94  test    al, al
+0x180230a96  jnz     short loc_180230AA2
+0x180230a98  mov     eax, 800703E9h
+0x180230a9d  jmp     loc_180230C83
+0x180230aa2  mov     [rsp+108h+var_C0], rbx
+0x180230aa7  mov     r15, [rsp+108h+arg_0]
+0x180230aaf  mov     rcx, r15; this
+0x180230ab2  call    ?AddRef@ObjectAsIPropertyValue@Projection@@UEAAKXZ; Projection::ObjectAsIPropertyValue::AddRef(void)
+0x180230ab7  xor     r8d, r8d; struct IUnknown *
+0x180230aba  mov     rdx, rbx; struct ScriptSite *
+0x180230abd  lea     rcx, [rsp+108h+var_50]; this
+0x180230ac5  call    ??0AutoCallerPointer@@QEAA@PEAVScriptSite@@PEAUIUnknown@@@Z; AutoCallerPointer::AutoCallerPointer(ScriptSite *,IUnknown *)
+0x180230aca  nop
+0x180230acb  mov     r8, [rdi+0A78h]; struct HostScriptContext *
+0x180230ad2  mov     rdx, rbx; struct ScriptSite *
+0x180230ad5  lea     rcx, [rsp+108h+var_68]; this
+0x180230add  call    ??0AutoHostScriptContextStackPointer@@QEAA@PEAVScriptSite@@PEAVHostScriptContext@@@Z; AutoHostScriptContextStackPointer::AutoHostScriptContextStackPointer(ScriptSite *,HostScriptContext *)
+0x180230ae2  nop
+0x180230ae3  xorps   xmm0, xmm0
+0x180230ae6  xor     eax, eax
+0x180230ae8  movups  [rsp+108h+var_A8], xmm0
+0x180230aed  movups  [rsp+108h+var_98], xmm0
+0x180230af2  mov     [rsp+108h+var_88], rax
+0x180230afa  mov     r9, [rsp+108h]; void *
+0x180230b02  mov     byte ptr [rsp+108h+var_D8], al; bool
+0x180230b06  mov     byte ptr [rsp+108h+var_E0], 1; unsigned __int64
+0x180230b0b  mov     [rsp+108h+var_E8], 1; bool
+0x180230b10  lea     r8, [rsp+108h+var_A8]; struct Js::ScriptEntryExitRecord *
+0x180230b15  mov     rdx, rdi; struct Js::ScriptContext *
+0x180230b18  lea     rcx, [rsp+108h+var_80]; this
+0x180230b20  call    ??0EnterScriptObject@Js@@QEAA@PEAVScriptContext@1@PEAUScriptEntryExitRecord@1@PEAX_N33@Z; Js::EnterScriptObject::EnterScriptObject(Js::ScriptContext *,Js::ScriptEntryExitRecord *,void *,bool,bool,bool)
+0x180230b25  nop
+0x180230b26  mov     r9b, 1; bool
+0x180230b29  mov     r8b, [rdi+0C40h]; bool
+0x180230b30  mov     dl, r9b; bool
+0x180230b33  mov     rcx, rdi; this
+0x180230b36  call    ?OnScriptStart@ScriptContext@Js@@QEAAX_N00@Z; Js::ScriptContext::OnScriptStart(bool,bool,bool)
+0x180230b3b  mov     rdi, [rsp+108h+arg_10]
+0x180230b43  test    rdi, rdi
+0x180230b46  jz      loc_180230C28
+0x180230b4c  mov     r14, [rsp+108h+arg_8]
+0x180230b54  test    r14, r14
+0x180230b57  jz      loc_180230C28
+0x180230b5d  mov     rax, [r15+58h]
+0x180230b61  cmp     byte ptr [rax+58h], 0
+0x180230b65  jz      loc_180230C1E
+0x180230b6b  mov     rcx, [rax+70h]
+0x180230b6f  mov     rax, [rcx+8]
+0x180230b73  cmp     dword ptr [rax], 0Ch
+0x180230b76  jnz     loc_180230C1E
+0x180230b7c  mov     esi, [rcx+10h]
+0x180230b7f  mov     eax, 4
+0x180230b84  mul     rsi
+0x180230b87  mov     rcx, 0FFFFFFFFFFFFFFFFh
+0x180230b8e  cmovb   rax, rcx
+0x180230b92  mov     rcx, rax; unsigned __int64
+0x180230b95  call    ??_U@YAPEAX_K@Z; operator new[](unsigned __int64)
+0x180230b9a  mov     rbx, rax
+0x180230b9d  test    rax, rax
+0x180230ba0  jz      short loc_180230C14
+0x180230ba2  mov     [rsp+108h+var_D8], 0; unsigned __int8 *
+0x180230bab  mov     dword ptr [rsp+108h+var_E8], 0; unsigned int
+0x180230bb3  xor     r9d, r9d; struct ProjectionModel::ConcreteType *
+0x180230bb6  mov     r8, rax; unsigned __int8 *
+0x180230bb9  mov     rcx, [r15+58h]; this
+0x180230bbd  call    ?get_Value@ObjectAsIReference@Projection@@QEAAJ_KPEAEPEBUConcreteType@ProjectionModel@@I01@Z; Projection::ObjectAsIReference::get_Value(unsigned __int64,uchar *,ProjectionModel::ConcreteType const *,uint,unsigned __int64,uchar *)
+0x180230bc2  mov     [rsp+108h+var_C8], eax
+0x180230bc6  test    eax, eax
+0x180230bc8  js      short loc_180230C0A
+0x180230bca  lea     rcx, ds:0[rsi*8]; cb
+0x180230bd2  call    cs:__imp_CoTaskMemAlloc
+0x180230bd8  mov     [rdi], rax
+0x180230bdb  test    rax, rax
+0x180230bde  jz      short loc_180230C02
+0x180230be0  xor     edx, edx
+0x180230be2  test    esi, esi
+0x180230be4  jz      short loc_180230BFD
+0x180230be6  movd    xmm0, dword ptr [rbx+rdx*4]
+0x180230beb  cvtdq2pd xmm0, xmm0
+0x180230bef  mov     rax, [rdi]
+0x180230bf2  movsd   qword ptr [rax+rdx*8], xmm0
+0x180230bf7  inc     edx
+0x180230bf9  cmp     edx, esi
+0x180230bfb  jb      short loc_180230BE6
+0x180230bfd  mov     [r14], esi
+0x180230c00  jmp     short loc_180230C0A
+0x180230c02  mov     [rsp+108h+var_C8], 8007000Eh
+0x180230c0a  mov     rcx, rbx; void *
+0x180230c0d  call    ??_V@YAXPEAX@Z; operator delete[](void *)
+0x180230c12  jmp     short loc_180230C30
+0x180230c14  mov     [rsp+108h+var_C8], 8007000Eh
+0x180230c1c  jmp     short loc_180230C30
+0x180230c1e  mov     [rsp+108h+var_C8], 80028CA0h
+0x180230c26  jmp     short loc_180230C30
+0x180230c28  mov     [rsp+108h+var_C8], 80004003h
+0x180230c30  lea     rcx, [rsp+108h+var_80]; this
+0x180230c38  call    ??1EnterScriptObject@Js@@QEAA@XZ; Js::EnterScriptObject::~EnterScriptObject(void)
+0x180230c3d  nop
+0x180230c3e  jmp     short loc_180230C4C
+0x180230c40  jmp     short loc_180230C4C
+0x180230c42  jmp     short loc_180230C4C
+0x180230c44  jmp     short loc_180230C4C
+0x180230c46  jmp     short loc_180230C4C
+0x180230c48  jmp     short loc_180230C4C
+0x180230c4a  jmp     short $+2
+0x180230c4c  mov     rcx, [rsp+108h+var_C0]; this
+0x180230c51  call    ?Release@ScriptSite@@QEAAXXZ; ScriptSite::Release(void)
+0x180230c56  mov     rcx, [rsp+108h+arg_0]; this
+0x180230c5e  call    ?Release@ObjectAsIPropertyValue@Projection@@UEAAKXZ; Projection::ObjectAsIPropertyValue::Release(void)
+0x180230c63  nop
+0x180230c64  lea     rcx, [rsp+108h+var_68]; this
+0x180230c6c  call    ??1AutoHostScriptContextStackPointer@@QEAA@XZ; AutoHostScriptContextStackPointer::~AutoHostScriptContextStackPointer(void)
+0x180230c71  nop
+0x180230c72  lea     rcx, [rsp+108h+var_50]; this
+0x180230c7a  call    ??1AutoCallerPointer@@QEAA@XZ; AutoCallerPointer::~AutoCallerPointer(void)
+0x180230c7f  mov     eax, [rsp+108h+var_C8]
+0x180230c83  mov     rbx, [rsp+108h+arg_18]
+0x180230c8b  add     rsp, 0E0h
+0x180230c92  pop     r15
+0x180230c94  pop     r14
+0x180230c96  pop     r12
+0x180230c98  pop     rdi
+0x180230c99  pop     rsi
+0x180230c9a  retn
+```

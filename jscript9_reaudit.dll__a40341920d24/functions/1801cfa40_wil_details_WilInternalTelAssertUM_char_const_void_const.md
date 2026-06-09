@@ -1,0 +1,32 @@
+# wil::details::WilInternalTelAssertUM(char const *,void const *)
+
+- ea: `0x1801cfa40`
+- end: `0x1801cfafc`
+- name: `?WilInternalTelAssertUM@details@wil@@YAXPEBDPEBX@Z`
+- size: `188`
+- prototype: `void __fastcall(wil::details *__hidden this, const char *, const void *)`
+- caller_count: `0`
+- callee_count: `2`
+- tags: `loader_planting`
+
+## callees
+
+- `0x1801cfa40`
+- `0x18035e010`
+
+## import_xrefs
+
+- `KERNEL32!GetModuleHandleW` at `0x1801cfac2`
+- `KERNEL32!GetModuleHandleW` at `0x1801cfac2`
+- `KERNEL32!GetProcAddress` at `0x1801cfad9`
+- `KERNEL32!GetProcAddress` at `0x1801cfad9`
+
+## string_xrefs
+
+- `0x1801cfabb`: `ntdll.dll`
+
+## pseudocode
+
+```c
+
+```

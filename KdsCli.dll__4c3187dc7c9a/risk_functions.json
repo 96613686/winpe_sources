@@ -1,0 +1,5104 @@
+[
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::~FeatureStateManager(void)",
+    "ea": "0x180011e8c",
+    "function_file": "functions/180011e8c_wil_details_FeatureStateManager_FeatureStateManager_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "??1FeatureStateManager@details@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details::FeatureStateManager *__hidden this)",
+    "rank_score": 4818,
+    "size": 492,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "GetDCInfoForLocalDC(ldap *,ushort * *,int *)",
+    "ea": "0x180003160",
+    "function_file": "functions/180003160_GetDCInfoForLocalDC_ldap_ushort_int.md",
+    "matched_imports": [
+      "WLDAP32!__imp_LdapGetLastError",
+      "WLDAP32!__imp_ldap_count_valuesW",
+      "WLDAP32!__imp_ldap_first_entry",
+      "WLDAP32!__imp_ldap_get_valuesW",
+      "WLDAP32!__imp_ldap_msgfree",
+      "WLDAP32!__imp_ldap_search_ext_sW",
+      "WLDAP32!__imp_ldap_value_freeW",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaClose",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaFreeMemory",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaOpenPolicy",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaQueryInformationPolicy",
+      "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "<sid=%s>"
+    ],
+    "name": "?GetDCInfoForLocalDC@@YAJPEAUldap@@PEAPEAGPEAH@Z",
+    "prototype": "__int64 __fastcall(LDAP *ld, unsigned __int16 **, int *)",
+    "rank_score": 3967,
+    "size": 1082,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ConvertSIDToSD(void *,_SECURITY_DESCRIPTOR * *,ulong *)",
+    "ea": "0x180018520",
+    "function_file": "functions/180018520_ConvertSIDToSD_void_SECURITY_DESCRIPTOR_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-base-l1-1-0!AddAccessAllowedAce",
+      "api-ms-win-security-base-l1-1-0!GetLengthSid",
+      "api-ms-win-security-base-l1-1-0!InitializeAcl",
+      "api-ms-win-security-base-l1-1-0!InitializeSecurityDescriptor",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorDacl",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorGroup",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorOwner",
+      "ntdll!RtlMakeSelfRelativeSD"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "?ConvertSIDToSD@@YAJPEAXPEAPEAU_SECURITY_DESCRIPTOR@@PEAK@Z",
+    "prototype": "__int64 __fastcall(PSID pSid, struct _SECURITY_DESCRIPTOR **, unsigned int *)",
+    "rank_score": 3881,
+    "size": 710,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "ParseRootKey",
+    "ea": "0x180005a24",
+    "function_file": "functions/180005a24_ParseRootKey.md",
+    "matched_imports": [
+      "RPCRT4!UuidFromStringW",
+      "WLDAP32!__imp_LdapGetLastError",
+      "WLDAP32!__imp_ber_free",
+      "WLDAP32!__imp_ldap_first_attributeW",
+      "WLDAP32!__imp_ldap_get_valuesW",
+      "WLDAP32!__imp_ldap_get_values_lenW",
+      "WLDAP32!__imp_ldap_memfreeW",
+      "WLDAP32!__imp_ldap_next_attributeW",
+      "WLDAP32!__imp_ldap_value_freeW",
+      "WLDAP32!__imp_ldap_value_free_len",
+      "api-ms-win-crt-private-l1-1-0!_o__wtoi64"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "msKds-CreateTime",
+      "msKds-CreateTime"
+    ],
+    "name": "ParseRootKey",
+    "prototype": "__int64 __fastcall(LDAP *ld, LDAPMessage *entry)",
+    "rank_score": 3417,
+    "size": 2871,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "WriteSIDKeyInCache(_SID_KEY_HEADER *,ulong,uchar *,ulong,ushort const *,ushort const *)",
+    "ea": "0x18000ce40",
+    "function_file": "functions/18000ce40_WriteSIDKeyInCache_SID_KEY_HEADER_ulong_uchar_ulong_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "CRYPT32!CryptProtectData",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-kernel32-legacy-l1-1-0!CreateFileTransactedW",
+      "ntdll!NtCommitTransaction",
+      "ntdll!NtCreateTransaction",
+      "ntdll!NtRollbackTransaction"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "?WriteSIDKeyInCache@@YAJPEAU_SID_KEY_HEADER@@KPEAEKPEBG2@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _SID_KEY_HEADER *Src@<rcx>, unsigned int@<edx>, unsigned __int8 *@<r8>, unsigned int@<r9d>, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 3026,
+    "size": 1023,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "KdsCreateClientLRPCBinding(void * *)",
+    "ea": "0x18000f9f0",
+    "function_file": "functions/18000f9f0_KdsCreateClientLRPCBinding_void.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFree",
+      "RPCRT4!RpcBindingFromStringBindingW",
+      "RPCRT4!RpcBindingSetAuthInfoExW",
+      "RPCRT4!RpcBindingSetOption",
+      "RPCRT4!RpcEpResolveBinding",
+      "RPCRT4!RpcStringBindingComposeW",
+      "RPCRT4!RpcStringFreeW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx"
+    ],
+    "name": "?KdsCreateClientLRPCBinding@@YAJPEAPEAX@Z",
+    "prototype": "__int64 __fastcall(void **)",
+    "rank_score": 2868,
+    "size": 645,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData> * *)",
+    "ea": "0x1800125e0",
+    "function_file": "functions/1800125e0_wil_details_abi_ProcessLocalStorageData_wil_details_abi_FeatureStateData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-synch-l1-1-0!CreateMutexExW",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionEx",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "",
+    "rank_score": 2831,
+    "size": 967,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ParseRootKeyMetaData",
+    "ea": "0x180006564",
+    "function_file": "functions/180006564_ParseRootKeyMetaData.md",
+    "matched_imports": [
+      "RPCRT4!UuidFromStringW",
+      "WLDAP32!__imp_LdapGetLastError",
+      "WLDAP32!__imp_ber_free",
+      "WLDAP32!__imp_ldap_first_attributeW",
+      "WLDAP32!__imp_ldap_get_valuesW",
+      "WLDAP32!__imp_ldap_memfreeW",
+      "WLDAP32!__imp_ldap_next_attributeW",
+      "WLDAP32!__imp_ldap_value_freeW",
+      "api-ms-win-crt-private-l1-1-0!_o__wtoi64"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "msKds-CreateTime"
+    ],
+    "name": "ParseRootKeyMetaData",
+    "prototype": "__int64 __fastcall(LDAP *ld, LDAPMessage *entry)",
+    "rank_score": 2716,
+    "size": 924,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetCachedBindingToMachineDC",
+    "ea": "0x18000ef64",
+    "function_file": "functions/18000ef64_GetCachedBindingToMachineDC.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFree",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx"
+    ],
+    "name": "GetCachedBindingToMachineDC",
+    "prototype": "__int64 __fastcall(int, int, int, RPC_BINDING_HANDLE *, _DWORD *)",
+    "rank_score": 2669,
+    "size": 573,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData> * *)",
+    "ea": "0x18001223c",
+    "function_file": "functions/18001223c_wil_details_abi_ProcessLocalStorageData_wil_details_abi_ProcessLocalData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-synch-l1-1-0!CreateMutexExW",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "",
+    "rank_score": 2630,
+    "size": 926,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "GetDCInfo(ldap *,ushort const *,ushort * *,int *)",
+    "ea": "0x180002bf0",
+    "function_file": "functions/180002bf0_GetDCInfo_ldap_ushort_const_ushort_int.md",
+    "matched_imports": [
+      "WLDAP32!__imp_LdapGetLastError",
+      "WLDAP32!__imp_ldap_count_valuesW",
+      "WLDAP32!__imp_ldap_first_entry",
+      "WLDAP32!__imp_ldap_get_valuesW",
+      "WLDAP32!__imp_ldap_msgfree",
+      "WLDAP32!__imp_ldap_search_ext_sW",
+      "WLDAP32!__imp_ldap_value_freeW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx"
+    ],
+    "name": "?GetDCInfo@@YAJPEAUldap@@PEBGPEAPEAGPEAH@Z",
+    "prototype": "__int64 __fastcall(LDAP *ld, const unsigned __int16 *, unsigned __int16 **, int *)",
+    "rank_score": 2602,
+    "size": 1375,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "ParseServerConfig",
+    "ea": "0x180007354",
+    "function_file": "functions/180007354_ParseServerConfig.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ber_free",
+      "WLDAP32!__imp_ldap_count_valuesW",
+      "WLDAP32!__imp_ldap_first_attributeW",
+      "WLDAP32!__imp_ldap_get_valuesW",
+      "WLDAP32!__imp_ldap_get_values_lenW",
+      "WLDAP32!__imp_ldap_memfreeW",
+      "WLDAP32!__imp_ldap_next_attributeW",
+      "WLDAP32!__imp_ldap_value_freeW",
+      "WLDAP32!__imp_ldap_value_free_len"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx"
+    ],
+    "name": "ParseServerConfig",
+    "prototype": "__int64 __fastcall(LDAP *ld, LDAPMessage *entry, unsigned int *)",
+    "rank_score": 2574,
+    "size": 1711,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "QueryADSnapshotBrowserState(ldap *,_AD_LDAP_BROWSER_STATE * *)",
+    "ea": "0x180009e04",
+    "function_file": "functions/180009e04_QueryADSnapshotBrowserState_ldap_AD_LDAP_BROWSER_STATE.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ldap_count_valuesW",
+      "WLDAP32!__imp_ldap_first_entry",
+      "WLDAP32!__imp_ldap_get_valuesW",
+      "WLDAP32!__imp_ldap_msgfree",
+      "WLDAP32!__imp_ldap_search_sW",
+      "api-ms-win-crt-private-l1-1-0!_o__wcsicmp",
+      "api-ms-win-crt-private-l1-1-0!_o_wcstoul"
+    ],
+    "matched_strings": [
+      "configurationNamingContext",
+      "configurationNamingContext",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?QueryADSnapshotBrowserState@@YAJPEAUldap@@PEAPEAU_AD_LDAP_BROWSER_STATE@@@Z",
+    "prototype": "__int64 __fastcall(LDAP *ld, struct _AD_LDAP_BROWSER_STATE **)",
+    "rank_score": 2565,
+    "size": 840,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::EnabledStateManager::~EnabledStateManager(void)",
+    "ea": "0x18000a72c",
+    "function_file": "functions/18000a72c_wil_details_EnabledStateManager_EnabledStateManager_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "??1EnabledStateManager@details@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details::EnabledStateManager *__hidden this)",
+    "rank_score": 2406,
+    "size": 326,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "DeleteFolder(ushort const *)",
+    "ea": "0x18000abbc",
+    "function_file": "functions/18000abbc_DeleteFolder_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-file-l1-1-0!FindClose",
+      "api-ms-win-core-file-l1-1-0!FindFirstFileExW",
+      "api-ms-win-core-file-l1-1-0!FindNextFileW",
+      "api-ms-win-core-file-l1-1-0!RemoveDirectoryW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "?DeleteFolder@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 2292,
+    "size": 612,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "SIDKeyProtect",
+    "ea": "0x180017850",
+    "function_file": "functions/180017850_SIDKeyProtect.md",
+    "matched_imports": [
+      "NTASN1!__imp_RtlAsn1EncodeAndAllocate",
+      "NTASN1!__imp_RtlAsn1GetModuleHandle",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-string-l1-1-0!CompareStringW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx"
+    ],
+    "name": "SIDKeyProtect",
+    "prototype": "__int64 __fastcall(PCNZWCH lpString1, const WCHAR *, UCHAR *, ULONG, __int64, __int64, _DWORD *, unsigned int)",
+    "rank_score": 2239,
+    "size": 1469,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::QueueBackgroundSRUMUsageReporting(uint,ushort,uint)",
+    "ea": "0x180014418",
+    "function_file": "functions/180014418_wil_details_FeatureStateManager_QueueBackgroundSRUMUsageReporting_uint_ushort_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?QueueBackgroundSRUMUsageReporting@FeatureStateManager@details@wil@@QEAAXIGI@Z",
+    "prototype": "void __fastcall(PVOID pv, unsigned int, unsigned __int16, unsigned int)",
+    "rank_score": 2219,
+    "size": 391,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::EnabledStateManager::QueueBackgroundUsageReporting(uint,wil_details_FeatureReportingCache *)",
+    "ea": "0x18000c740",
+    "function_file": "functions/18000c740_wil_details_EnabledStateManager_QueueBackgroundUsageReporting_uint_wil_details_FeatureReportingCache.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?QueueBackgroundUsageReporting@EnabledStateManager@details@wil@@QEAAXIPEAUwil_details_FeatureReportingCache@@@Z",
+    "prototype": "void __fastcall(PVOID pv, unsigned int, struct wil_details_FeatureReportingCache *)",
+    "rank_score": 2218,
+    "size": 401,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "KdsCreateClientBinding(ushort const *,int,int,int,void * *,int *)",
+    "ea": "0x18000f640",
+    "function_file": "functions/18000f640_KdsCreateClientBinding_ushort_const_int_int_int_void_int.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFree",
+      "RPCRT4!RpcBindingFromStringBindingW",
+      "RPCRT4!RpcBindingSetAuthInfoExW",
+      "RPCRT4!RpcEpResolveBinding",
+      "RPCRT4!RpcStringBindingComposeW",
+      "RPCRT4!RpcStringFreeW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "ntdll!NtSetInformationThread"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx"
+    ],
+    "name": "?KdsCreateClientBinding@@YAJPEBGHHHPEAPEAXPEAH@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, int, int, int, void **, int *)",
+    "rank_score": 2166,
+    "size": 935,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QueryADSnapshotBrowserDomainNames(ldap *,_AD_LDAP_BROWSER_STATE *)",
+    "ea": "0x180009ba4",
+    "function_file": "functions/180009ba4_QueryADSnapshotBrowserDomainNames_ldap_AD_LDAP_BROWSER_STATE.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ldap_first_entry",
+      "WLDAP32!__imp_ldap_get_valuesW",
+      "WLDAP32!__imp_ldap_msgfree",
+      "WLDAP32!__imp_ldap_next_entry",
+      "WLDAP32!__imp_ldap_search_sW",
+      "api-ms-win-crt-private-l1-1-0!_o__wcsicmp"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?QueryADSnapshotBrowserDomainNames@@YAJPEAUldap@@PEAU_AD_LDAP_BROWSER_STATE@@@Z",
+    "prototype": "__int64 __fastcall(LDAP *ld, struct _AD_LDAP_BROWSER_STATE *)",
+    "rank_score": 2070,
+    "size": 602,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "wil::details_abi::SemaphoreValue::CreateFromValueInternal(ushort const *,bool,unsigned __int64)",
+    "ea": "0x1800129b0",
+    "function_file": "functions/1800129b0_wil_details_abi_SemaphoreValue_CreateFromValueInternal_ushort_const_bool_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateSemaphoreExW"
+    ],
+    "matched_strings": [],
+    "name": "?CreateFromValueInternal@SemaphoreValue@details_abi@wil@@AEAAJPEBG_N_K@Z",
+    "prototype": "__int64 __fastcall(wil::details_abi::SemaphoreValue *__hidden this, const unsigned __int16 *, bool, unsigned __int64)",
+    "rank_score": 2013,
+    "size": 525,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "GetLdapBinding(ushort const *,ldap * *)",
+    "ea": "0x180003670",
+    "function_file": "functions/180003670_GetLdapBinding_ushort_const_ldap.md",
+    "matched_imports": [
+      "WLDAP32!__imp_LdapGetLastError",
+      "WLDAP32!__imp_ldap_bind_sW",
+      "WLDAP32!__imp_ldap_initW",
+      "WLDAP32!__imp_ldap_set_optionW",
+      "WLDAP32!__imp_ldap_unbind"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx"
+    ],
+    "name": "?GetLdapBinding@@YAJPEBGPEAPEAUldap@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *lpMem, struct ldap **)",
+    "rank_score": 1908,
+    "size": 574,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetCachedBindingForRemoteDomain",
+    "ea": "0x18000edb8",
+    "function_file": "functions/18000edb8_GetCachedBindingForRemoteDomain.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFree",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx"
+    ],
+    "name": "GetCachedBindingForRemoteDomain",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned int, int, int, __int64)",
+    "rank_score": 1870,
+    "size": 422,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "GetSpecifiedKeyLdap(_SECURITY_DESCRIPTOR *,ulong,ulong,uchar * const,ulong,_SID_KEY_BLOB_VER,uchar *,ulong)",
+    "ea": "0x180009408",
+    "function_file": "functions/180009408_GetSpecifiedKeyLdap_SECURITY_DESCRIPTOR_ulong_ulong_uchar_const_ulong_SID_KEY_BLOB_VER_uchar_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+      "api-ms-win-core-processthreads-l1-1-0!SetThreadToken"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GetSpecifiedKeyLdap@@YAJPEAU_SECURITY_DESCRIPTOR@@KKQEAEKW4_SID_KEY_BLOB_VER@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 1839,
+    "size": 1047,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "wil::details_abi::SemaphoreValue::TryGetValueInternal(ushort const *,bool,unsigned __int64 *,bool *)",
+    "ea": "0x180015d78",
+    "function_file": "functions/180015d78_wil_details_abi_SemaphoreValue_TryGetValueInternal_ushort_const_bool_unsigned_int64_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!OpenSemaphoreW"
+    ],
+    "matched_strings": [],
+    "name": "?TryGetValueInternal@SemaphoreValue@details_abi@wil@@CAJPEBG_NPEA_KPEA_N@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, bool, unsigned __int64 *, bool *)",
+    "rank_score": 1813,
+    "size": 620,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::EnsureTimerUnderLock(void)",
+    "ea": "0x180012d38",
+    "function_file": "functions/180012d38_wil_details_FeatureStateManager_EnsureTimerUnderLock_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureTimerUnderLock@FeatureStateManager@details@wil@@AEAAXXZ",
+    "prototype": "void __fastcall(PVOID pv)",
+    "rank_score": 1803,
+    "size": 212,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetTokenUserSid",
+    "ea": "0x180010304",
+    "function_file": "functions/180010304_GetTokenUserSid.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-base-l1-1-0!CopySid",
+      "api-ms-win-security-base-l1-1-0!GetLengthSid",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "GetTokenUserSid",
+    "prototype": "__int64 __fastcall(HANDLE TokenHandle)",
+    "rank_score": 1789,
+    "size": 490,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetSnapshotBrowserLdapBinding(ulong,_AD_LDAP_BROWSER_STATE * *,ldap * *)",
+    "ea": "0x180009148",
+    "function_file": "functions/180009148_GetSnapshotBrowserLdapBinding_ulong_AD_LDAP_BROWSER_STATE_ldap.md",
+    "matched_imports": [
+      "WLDAP32!__imp_LdapGetLastError",
+      "WLDAP32!__imp_ldap_bind_sW",
+      "WLDAP32!__imp_ldap_initW",
+      "WLDAP32!__imp_ldap_set_optionW",
+      "WLDAP32!__imp_ldap_unbind"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GetSnapshotBrowserLdapBinding@@YAJKPEAPEAU_AD_LDAP_BROWSER_STATE@@PEAPEAUldap@@@Z",
+    "prototype": "__int64 __fastcall(ULONG PortNumber, struct _AD_LDAP_BROWSER_STATE **, struct ldap **)",
+    "rank_score": 1753,
+    "size": 695,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180004180",
+    "function_file": "functions/180004180_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls",
+      "api-ms-win-core-synch-l1-1-0!InitializeSRWLock",
+      "api-ms-win-eventing-classicprovider-l1-1-0!RegisterTraceGuidsW",
+      "api-ms-win-eventing-classicprovider-l1-1-0!UnregisterTraceGuids",
+      "ntdll!RtlImageNtHeader"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 1639,
+    "size": 455,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "GetSingleStringAttr",
+    "ea": "0x180003b1c",
+    "function_file": "functions/180003b1c_GetSingleStringAttr.md",
+    "matched_imports": [
+      "WLDAP32!__imp_LdapGetLastError",
+      "WLDAP32!__imp_ldap_count_valuesW",
+      "WLDAP32!__imp_ldap_first_entry",
+      "WLDAP32!__imp_ldap_get_valuesW",
+      "WLDAP32!__imp_ldap_msgfree",
+      "WLDAP32!__imp_ldap_search_ext_sW",
+      "WLDAP32!__imp_ldap_value_freeW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx"
+    ],
+    "name": "GetSingleStringAttr",
+    "prototype": "__int64 __usercall@<rax>(LDAP *ld@<rcx>, PWSTR attr@<rdx>, int, __int64)",
+    "rank_score": 1593,
+    "size": 601,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IsSIDKeyFound",
+    "ea": "0x18000bfd8",
+    "function_file": "functions/18000bfd8_IsSIDKeyFound.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileSize",
+      "api-ms-win-core-file-l1-1-0!ReadFile",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "IsSIDKeyFound",
+    "prototype": "__int64 __fastcall(const WCHAR *, unsigned int, unsigned int, int, __int64, int *, _QWORD *, DWORD *)",
+    "rank_score": 1559,
+    "size": 542,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetHashOfSecruityDescr",
+    "ea": "0x18000b758",
+    "function_file": "functions/18000b758_GetHashOfSecruityDescr.md",
+    "matched_imports": [
+      "CRYPT32!CryptBinaryToStringW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "bcrypt!BCryptCloseAlgorithmProvider",
+      "bcrypt!BCryptCreateHash",
+      "bcrypt!BCryptDestroyHash",
+      "bcrypt!BCryptFinishHash",
+      "bcrypt!BCryptHashData"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "GetHashOfSecruityDescr",
+    "prototype": "__int64 __fastcall(PUCHAR pbInput, ULONG cbInput)",
+    "rank_score": 1550,
+    "size": 499,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CNG_AesKeyUnwrap(uchar *,ulong,uchar *,ulong,uchar * *,ulong *)",
+    "ea": "0x1800173d8",
+    "function_file": "functions/1800173d8_CNG_AesKeyUnwrap_uchar_ulong_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "bcrypt!BCryptCloseAlgorithmProvider",
+      "bcrypt!BCryptDestroyKey",
+      "bcrypt!BCryptExportKey",
+      "bcrypt!BCryptGenerateSymmetricKey",
+      "bcrypt!BCryptImportKey"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx"
+    ],
+    "name": "?CNG_AesKeyUnwrap@@YAJPEAEK0KPEAPEAEPEAK@Z",
+    "prototype": "__int64 __usercall@<rax>(PUCHAR pbInput@<rcx>, ULONG cbInput@<edx>, PUCHAR pbSecret@<r8>, unsigned int@<r9d>, unsigned __int8 **, unsigned int *)",
+    "rank_score": 1511,
+    "size": 602,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CNG_AesKeyWrap(uchar *,ulong,uchar *,ulong,uchar * *,ulong *)",
+    "ea": "0x180017638",
+    "function_file": "functions/180017638_CNG_AesKeyWrap_uchar_ulong_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "bcrypt!BCryptCloseAlgorithmProvider",
+      "bcrypt!BCryptDestroyKey",
+      "bcrypt!BCryptExportKey",
+      "bcrypt!BCryptGenerateSymmetricKey"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx"
+    ],
+    "name": "?CNG_AesKeyWrap@@YAJPEAEK0KPEAPEAEPEAK@Z",
+    "prototype": "__int64 __usercall@<rax>(PUCHAR pbSecret@<rcx>, ULONG cbSecret@<edx>, PUCHAR@<r8>, unsigned int@<r9d>, unsigned __int8 **, unsigned int *)",
+    "rank_score": 1510,
+    "size": 520,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GenerateEphemeralKeyPair(ushort *,uchar *,ulong,ulong,ulong,void * *)",
+    "ea": "0x18000dc90",
+    "function_file": "functions/18000dc90_GenerateEphemeralKeyPair_ushort_uchar_ulong_ulong_ulong_void.md",
+    "matched_imports": [
+      "bcrypt!BCryptCloseAlgorithmProvider",
+      "bcrypt!BCryptDestroyKey",
+      "bcrypt!BCryptFinalizeKeyPair",
+      "bcrypt!BCryptGenRandom",
+      "bcrypt!BCryptGenerateKeyPair",
+      "bcrypt!BCryptSetProperty"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx"
+    ],
+    "name": "?GenerateEphemeralKeyPair@@YAJPEAGPEAEKKKPEAPEAX@Z",
+    "prototype": "int(unsigned __int16 *, unsigned __int8 *, unsigned int, unsigned int, unsigned int, void **)",
+    "rank_score": 1510,
+    "size": 481,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::EnabledStateManager::ProcessShutdown(void)",
+    "ea": "0x18000c6a4",
+    "function_file": "functions/18000c6a4_wil_details_EnabledStateManager_ProcessShutdown_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?ProcessShutdown@EnabledStateManager@details@wil@@QEAAXXZ",
+    "prototype": "void __fastcall(wil::details::EnabledStateManager *__hidden this)",
+    "rank_score": 1405,
+    "size": 148,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "GenerateSecretAgreementPrivateKey(uchar * const,ushort *,ushort *,uchar *,ulong,uchar *,ulong,ulong,ulong,_SID_KEY_BLOB_VER,void * *,ushort * *)",
+    "ea": "0x18000dfc0",
+    "function_file": "functions/18000dfc0_GenerateSecretAgreementPrivateKey_uchar_const_ushort_ushort_uchar_ulong_uchar_ulong_ulong_ulong_SID_KEY_BLOB_V.md",
+    "matched_imports": [
+      "bcrypt!BCryptCloseAlgorithmProvider",
+      "bcrypt!BCryptDestroyKey",
+      "bcrypt!BCryptFinalizeKeyPair",
+      "bcrypt!BCryptGenerateKeyPair",
+      "bcrypt!BCryptSetProperty"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx"
+    ],
+    "name": "?GenerateSecretAgreementPrivateKey@@YAJQEAEPEAG1PEAEK2KKKW4_SID_KEY_BLOB_VER@@PEAPEAXPEAPEAG@Z",
+    "prototype": "int __high(unsigned __int8 *const, unsigned __int16 *, unsigned __int16 *, unsigned __int8 *, unsigned int, unsigned __int8 *, unsigned int, unsigned int, unsigned int, enum _SID_KEY_BLOB_VER, void **, unsigned __int16 **)",
+    "rank_score": 1401,
+    "size": 1399,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_GetGmsaPasswordForInterval(_SECURITY_DESCRIPTOR *,void *,unsigned __int64,uchar * *,ulong *,uchar *,ulong)",
+    "ea": "0x180016df0",
+    "function_file": "functions/180016df0_GetGmsaPasswordForInterval_SECURITY_DESCRIPTOR_void_unsigned_int64_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-base-l1-1-0!GetLengthSid",
+      "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorLength",
+      "api-ms-win-security-base-l1-1-0!IsValidSecurityDescriptor",
+      "api-ms-win-security-base-l1-1-0!IsValidSid",
+      "api-ms-win-security-base-private-l1-1-0!IsValidRelativeSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx"
+    ],
+    "name": "?_GetGmsaPasswordForInterval@@YAJPEAU_SECURITY_DESCRIPTOR@@PEAX_KPEAPEAEPEAKPEAEK@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _SECURITY_DESCRIPTOR *@<rcx>, unsigned __int8 *@<rdx>, unsigned __int64@<r8>, unsigned __int8 **@<r9>, unsigned int *, unsigned __int8 *, unsigned int)",
+    "rank_score": 1400,
+    "size": 570,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "GetAllRootKeysMetaData(ldap *,ushort const *,ulong *,_LIST_ENTRY * *)",
+    "ea": "0x1800054e0",
+    "function_file": "functions/1800054e0_GetAllRootKeysMetaData_ldap_ushort_const_ulong_LIST_ENTRY.md",
+    "matched_imports": [
+      "WLDAP32!__imp_LdapGetLastError",
+      "WLDAP32!__imp_ldap_count_entries",
+      "WLDAP32!__imp_ldap_first_entry",
+      "WLDAP32!__imp_ldap_msgfree",
+      "WLDAP32!__imp_ldap_next_entry",
+      "WLDAP32!__imp_ldap_search_ext_sW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "msKds-CreateTime"
+    ],
+    "name": "?GetAllRootKeysMetaData@@YAJPEAUldap@@PEBGPEAKPEAPEAU_LIST_ENTRY@@@Z",
+    "prototype": "__int64 __fastcall(LDAP *ld, const unsigned __int16 *, unsigned int *, struct _LIST_ENTRY **)",
+    "rank_score": 1354,
+    "size": 600,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "OpenCallerToken(ulong,void * *)",
+    "ea": "0x180010708",
+    "function_file": "functions/180010708_OpenCallerToken_ulong_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?OpenCallerToken@@YAJKPEAPEAX@Z",
+    "prototype": "__int64 __fastcall(DWORD DesiredAccess, void **)",
+    "rank_score": 1306,
+    "size": 205,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::RecordWnfUsageIndex(__WIL__WNF_STATE_NAME const *,unsigned __int64,wil::details_abi::RawUsageIndex const &)",
+    "ea": "0x180014f88",
+    "function_file": "functions/180014f88_wil_details_abi_RecordWnfUsageIndex_WIL_WNF_STATE_NAME_const_unsigned_int64_wil_details_abi_RawUsageIndex_cons.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?RecordWnfUsageIndex@details_abi@wil@@YAXPEBU__WIL__WNF_STATE_NAME@@_KAEBVRawUsageIndex@12@@Z",
+    "prototype": "void __fastcall(wil::details_abi *__hidden this, const struct __WIL__WNF_STATE_NAME *, unsigned __int64, const struct wil::details_abi::RawUsageIndex *)",
+    "rank_score": 1277,
+    "size": 973,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::details_abi::SubscriptionList::OnSignaled(wil::srwlock &)",
+    "ea": "0x180014354",
+    "function_file": "functions/180014354_wil_details_abi_SubscriptionList_OnSignaled_wil_srwlock.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared"
+    ],
+    "matched_strings": [],
+    "name": "?OnSignaled@SubscriptionList@details_abi@wil@@QEAAXAEAVsrwlock@3@@Z",
+    "prototype": "void __fastcall(LPCRITICAL_SECTION lpCriticalSection, PSRWLOCK SRWLock)",
+    "rank_score": 1207,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "_GetGmsaPasswordForKeyID(void *,void *,uchar *,ulong,uchar *,ulong)",
+    "ea": "0x180017030",
+    "function_file": "functions/180017030_GetGmsaPasswordForKeyID_void_void_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "api-ms-win-security-base-l1-1-0!GetLengthSid",
+      "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorLength",
+      "api-ms-win-security-base-l1-1-0!IsValidSecurityDescriptor",
+      "api-ms-win-security-base-l1-1-0!IsValidSid",
+      "api-ms-win-security-base-private-l1-1-0!IsValidRelativeSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx"
+    ],
+    "name": "?_GetGmsaPasswordForKeyID@@YAJPEAX0PEAEK1K@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, unsigned __int8 *, unsigned __int8 *, unsigned int, unsigned __int8 *, unsigned int)",
+    "rank_score": 1203,
+    "size": 657,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "FindAndReadSIDKeyInCache(_GUID *,ulong,ulong,ulong,int,int,ushort const *,ulong,ushort const *,int *,_SID_KEY_HEADER * *,ulong *)",
+    "ea": "0x18000aef0",
+    "function_file": "functions/18000aef0_FindAndReadSIDKeyInCache_GUID_ulong_ulong_ulong_int_int_ushort_const_ulong_ushort_const_int_SID_KEY_HEADER_ulo.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!FindClose",
+      "api-ms-win-core-file-l1-1-0!FindFirstFileExW",
+      "api-ms-win-core-file-l1-1-0!FindNextFileW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "?FindAndReadSIDKeyInCache@@YAJPEAU_GUID@@KKKHHPEBGK1PEAHPEAPEAU_SID_KEY_HEADER@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _GUID *, unsigned int, int, int, int, int, const unsigned __int16 *, unsigned int, unsigned __int16 *, int *, struct _SID_KEY_HEADER **, unsigned int *)",
+    "rank_score": 1200,
+    "size": 1047,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 9,
+    "demangled": "GenerateDerivedKey(ushort const *,uchar *,ulong,uchar *,ulong,uchar *,ulong,ulong *,uchar *,ulong,ulong,uchar *,ulong,ushort * *)",
+    "ea": "0x18000d6a0",
+    "function_file": "functions/18000d6a0_GenerateDerivedKey_ushort_const_uchar_ulong_uchar_ulong_uchar_ulong_ulong_uchar_ulong_ulong_uchar_ulong_ushort.md",
+    "matched_imports": [
+      "bcrypt!BCryptCloseAlgorithmProvider",
+      "bcrypt!BCryptDestroyKey",
+      "bcrypt!BCryptGenerateSymmetricKey",
+      "bcrypt!BCryptKeyDerivation"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeykdf.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeykdf.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeykdf.cxx"
+    ],
+    "name": "?GenerateDerivedKey@@YAJPEBGPEAEK1K1KPEAK1KK1KPEAPEAG@Z",
+    "prototype": "HRESULT __stdcall(PINFORMATIONCARD_CRYPTO_HANDLE hCrypto, DWORD cbLabel, PBYTE pLabel, DWORD cbNonce, PBYTE pNonce, DWORD derivedKeyLength, DWORD offset, LPCWSTR algId, DWORD *pcbKey, PBYTE *ppKey)",
+    "rank_score": 1164,
+    "size": 799,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GenerateRootKeyAttributes",
+    "ea": "0x180004f9c",
+    "function_file": "functions/180004f9c_GenerateRootKeyAttributes.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__ui64tow_s",
+      "api-ms-win-crt-private-l1-1-0!_o__ultow_s"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "msKds-CreateTime",
+      "nTSecurityDescriptor"
+    ],
+    "name": "GenerateRootKeyAttributes",
+    "prototype": "",
+    "rank_score": 1149,
+    "size": 735,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ParseFileSearchResult",
+    "ea": "0x18000c1fc",
+    "function_file": "functions/18000c1fc_ParseFileSearchResult.md",
+    "matched_imports": [
+      "CRYPT32!CryptUnprotectData",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "ParseFileSearchResult",
+    "prototype": "__int64 __fastcall(const WCHAR *, __int64, _QWORD *, unsigned int, unsigned int, unsigned int, int, int, __int64, _DWORD *, void **, _DWORD *)",
+    "rank_score": 1126,
+    "size": 1020,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "GetCachedBCryptHandle(ushort const *,void * *,ulong,int *)",
+    "ea": "0x180010f9c",
+    "function_file": "functions/180010f9c_GetCachedBCryptHandle_ushort_const_void_ulong_int.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared",
+      "bcrypt!BCryptCloseAlgorithmProvider",
+      "bcrypt!BCryptGetProperty",
+      "bcrypt!BCryptOpenAlgorithmProvider"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\bcryptprovhandlecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\bcryptprovhandlecache.cxx"
+    ],
+    "name": "?GetCachedBCryptHandle@@YAJPEBGPEAPEAXKPEAH@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *Src, void **, unsigned int, int *)",
+    "rank_score": 1113,
+    "size": 318,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetSpecifiedSidKey(ushort const *,int,ulong,uchar * const,ulong,_SID_KEY_BLOB_VER,uchar *,ulong)",
+    "ea": "0x18001a034",
+    "function_file": "functions/18001a034_GetSpecifiedSidKey_ushort_const_int_ulong_uchar_const_ulong_SID_KEY_BLOB_VER_uchar_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "?GetSpecifiedSidKey@@YAJPEBGHKQEAEKW4_SID_KEY_BLOB_VER@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(const WCHAR *, int, unsigned int, unsigned __int8 *, unsigned int, unsigned int, __int64, ULONG SecurityDescriptorSize)",
+    "rank_score": 1111,
+    "size": 473,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetLatestSidKey(ushort const *,int,uchar * *,ulong *,uchar *,ulong,ulong)",
+    "ea": "0x180019a6c",
+    "function_file": "functions/180019a6c_GetLatestSidKey_ushort_const_int_uchar_ulong_uchar_ulong_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "?GetLatestSidKey@@YAJPEBGHPEAPEAEPEAKPEAEKK@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR StringSid, int, unsigned __int8 **, unsigned int *, unsigned __int8 *, ULONG SecurityDescriptorSize, unsigned int)",
+    "rank_score": 1109,
+    "size": 375,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "GetAllRootKeys(ldap *,ushort const *,ulong *,_ROOT_KEY_HEADER * *)",
+    "ea": "0x180005330",
+    "function_file": "functions/180005330_GetAllRootKeys_ldap_ushort_const_ulong_ROOT_KEY_HEADER.md",
+    "matched_imports": [
+      "WLDAP32!__imp_LdapGetLastError",
+      "WLDAP32!__imp_ldap_count_entries",
+      "WLDAP32!__imp_ldap_first_entry",
+      "WLDAP32!__imp_ldap_msgfree",
+      "WLDAP32!__imp_ldap_next_entry"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx"
+    ],
+    "name": "?GetAllRootKeys@@YAJPEAUldap@@PEBGPEAKPEAPEAU_ROOT_KEY_HEADER@@@Z",
+    "prototype": "__int64 __fastcall(LDAP *ld, const unsigned __int16 *, unsigned int *, struct _ROOT_KEY_HEADER **)",
+    "rank_score": 1108,
+    "size": 424,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QueryLocalAdministrator(void *,int *)",
+    "ea": "0x18000a26c",
+    "function_file": "functions/18000a26c_QueryLocalAdministrator_void_int.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid",
+      "api-ms-win-security-base-l1-1-0!CheckTokenMembership",
+      "api-ms-win-security-base-l1-1-0!FreeSid"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?QueryLocalAdministrator@@YAJPEAXPEAH@Z",
+    "prototype": "__int64 __fastcall(HANDLE TokenHandle, int *)",
+    "rank_score": 1066,
+    "size": 272,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "wil::details_abi::heap_buffer::ensure(unsigned __int64)",
+    "ea": "0x18000d284",
+    "function_file": "functions/18000d284_wil_details_abi_heap_buffer_ensure_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?ensure@heap_buffer@details_abi@wil@@QEAA_N_K@Z",
+    "prototype": "bool __fastcall(wil::details_abi::heap_buffer *__hidden this, unsigned __int64)",
+    "rank_score": 1009,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "QueryRootKeyObjects",
+    "ea": "0x180006908",
+    "function_file": "functions/180006908_QueryRootKeyObjects.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ldap_search_ext_sW",
+      "api-ms-win-crt-private-l1-1-0!_o__ui64tow_s",
+      "api-ms-win-crt-private-l1-1-0!_o_wcscpy_s"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "msKds-CreateTime",
+      "msKds-CreateTime"
+    ],
+    "name": "QueryRootKeyObjects",
+    "prototype": "",
+    "rank_score": 996,
+    "size": 936,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "GenerateSecretFromSecretAgreement(void *,void *,ushort const *,uchar *,ulong,uchar *,ulong)",
+    "ea": "0x18000e644",
+    "function_file": "functions/18000e644_GenerateSecretFromSecretAgreement_void_void_ushort_const_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "bcrypt!BCryptDeriveKey",
+      "bcrypt!BCryptDestroySecret",
+      "bcrypt!BCryptSecretAgreement"
+    ],
+    "matched_strings": [
+      "KDS service",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx"
+    ],
+    "name": "?GenerateSecretFromSecretAgreement@@YAJPEAX0PEBGPEAEK2K@Z",
+    "prototype": "__int64 __fastcall(BCRYPT_KEY_HANDLE hPubKey, BCRYPT_KEY_HANDLE hPrivKey, PINFORMATIONCARD_CRYPTO_HANDLE hCrypto, DWORD cbLabel, PBYTE pLabel, unsigned __int8 *, unsigned int)",
+    "rank_score": 963,
+    "size": 590,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetUserSidStr(ushort * *)",
+    "ea": "0x180010500",
+    "function_file": "functions/180010500_GetUserSidStr_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?GetUserSidStr@@YAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 **)",
+    "rank_score": 948,
+    "size": 286,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "CreateRootKey(ldap *,ushort const *,ushort const *,ushort const *,unsigned __int64,_GUID *)",
+    "ea": "0x180004a00",
+    "function_file": "functions/180004a00_CreateRootKey_ldap_ushort_const_ushort_const_ushort_const_unsigned_int64_GUID.md",
+    "matched_imports": [
+      "RPCRT4!RpcStringFreeW",
+      "RPCRT4!UuidFromStringW",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "bcrypt!BCryptGenRandom"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx"
+    ],
+    "name": "?CreateRootKey@@YAJPEAUldap@@PEBG11_KPEAU_GUID@@@Z",
+    "prototype": "__int64 __usercall@<rax>(LDAP *ld@<rcx>, PWSTR base@<rdx>, const unsigned __int16 *@<r8>, const unsigned __int16 *@<r9>, unsigned __int64, struct _GUID *)",
+    "rank_score": 931,
+    "size": 854,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GetCachedMachineDomainInfo(ushort * *,ushort * *)",
+    "ea": "0x18000fe30",
+    "function_file": "functions/18000fe30_GetCachedMachineDomainInfo_ushort_ushort.md",
+    "matched_imports": [
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaClose",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaFreeMemory",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaOpenPolicy",
+      "api-ms-win-security-lsapolicy-l1-1-0!LsaQueryInformationPolicy"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?GetCachedMachineDomainInfo@@YAJPEAPEAG0@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 **, unsigned __int16 **)",
+    "rank_score": 920,
+    "size": 462,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "wil::details::WilApiImpl_SubscribeFeatureStateChangeNotification(FEATURE_STATE_CHANGE_SUBSCRIPTION__ * *,void (*)(void *),void *)",
+    "ea": "0x180016220",
+    "function_file": "functions/180016220_wil_details_WilApiImpl_SubscribeFeatureStateChangeNotification_FEATURE_STATE_CHANGE_SUBSCRIPTION_void_void_voi.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "name": "?WilApiImpl_SubscribeFeatureStateChangeNotification@details@wil@@YAXPEAPEAUFEATURE_STATE_CHANGE_SUBSCRIPTION__@@P6AXPEAX@Z1@Z",
+    "prototype": "void __fastcall(struct FEATURE_STATE_CHANGE_SUBSCRIPTION__ **this, struct FEATURE_STATE_CHANGE_SUBSCRIPTION__ **, void (*)(void *), void *)",
+    "rank_score": 906,
+    "size": 269,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "wil::details::ProcessHeapAlloc(ulong,unsigned __int64)",
+    "ea": "0x18000c600",
+    "function_file": "functions/18000c600_wil_details_ProcessHeapAlloc_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?ProcessHeapAlloc@details@wil@@YAPEAXK_K@Z",
+    "prototype": "void *__fastcall(DWORD dwFlags, SIZE_T dwBytes, unsigned __int64)",
+    "rank_score": 858,
+    "size": 158,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "GetKeyFromKdsService(uchar *,ulong,_GUID *,long,long,long,int,ulong,ushort const *,ulong,ushort const *,uchar * *,ulong *)",
+    "ea": "0x180019274",
+    "function_file": "functions/180019274_GetKeyFromKdsService_uchar_ulong_GUID_long_long_long_int_ulong_ushort_const_ulong_ushort_const_uchar_ulong.md",
+    "matched_imports": [
+      "RPCRT4!I_RpcExceptionFilter",
+      "RPCRT4!RpcBindingFree"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "?GetKeyFromKdsService@@YAJPEAEKPEAU_GUID@@JJJHKPEBGK2PEAPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, int, struct _GUID *, int, int, int, int, unsigned int, unsigned __int16 *, unsigned int, unsigned __int16 *, unsigned __int8 **, unsigned int *)",
+    "rank_score": 849,
+    "size": 1103,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::RecordFeatureUsage(uint,wil_details_ServiceReportingKind,unsigned __int64)",
+    "ea": "0x1800147d4",
+    "function_file": "functions/1800147d4_wil_details_FeatureStateManager_RecordFeatureUsage_uint_wil_details_ServiceReportingKind_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?RecordFeatureUsage@FeatureStateManager@details@wil@@QEAAXIW4wil_details_ServiceReportingKind@@_K@Z",
+    "prototype": "",
+    "rank_score": 830,
+    "size": 270,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001654",
+    "function_file": "functions/180001654_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 824,
+    "size": 181,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::details::FeatureStateManager::EnsureStateData(void)",
+    "ea": "0x180012c84",
+    "function_file": "functions/180012c84_wil_details_FeatureStateManager_EnsureStateData_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureStateData@FeatureStateManager@details@wil@@AEAA_NXZ",
+    "prototype": "bool __fastcall(wil::details::FeatureStateManager *__hidden this)",
+    "rank_score": 807,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalData::~ThreadLocalData(void)",
+    "ea": "0x180012080",
+    "function_file": "functions/180012080_wil_details_abi_ThreadLocalData_ThreadLocalData_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1ThreadLocalData@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalData *__hidden this)",
+    "rank_score": 802,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetServerConfigFromAD",
+    "ea": "0x18000713c",
+    "function_file": "functions/18000713c_GetServerConfigFromAD.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ldap_first_entry",
+      "WLDAP32!__imp_ldap_msgfree",
+      "WLDAP32!__imp_ldap_search_ext_sW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx",
+      "(&(objectClass=msKds-ProvServerConfiguration)(cn=Group Key Distribution Service Server Configuration))"
+    ],
+    "name": "GetServerConfigFromAD",
+    "prototype": "__int64 __fastcall(LDAP *ld, PWSTR base, unsigned int *)",
+    "rank_score": 772,
+    "size": 528,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "SIDKeyUnprotect",
+    "ea": "0x180017e20",
+    "function_file": "functions/180017e20_SIDKeyUnprotect.md",
+    "matched_imports": [
+      "NTASN1!__imp_RtlAsn1DecodeAndAllocate",
+      "NTASN1!__imp_RtlAsn1GetModuleHandle"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyprotect.cxx"
+    ],
+    "name": "SIDKeyUnprotect",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned __int8 **, unsigned int *, unsigned int)",
+    "rank_score": 757,
+    "size": 1138,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CreateSIDKeyCacheFolder",
+    "ea": "0x18000a878",
+    "function_file": "functions/18000a878_CreateSIDKeyCacheFolder.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateDirectoryW",
+      "ntdll!wcschr"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "CreateSIDKeyCacheFolder",
+    "prototype": "",
+    "rank_score": 718,
+    "size": 362,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "QueryLdapRecoveryPort(ulong *)",
+    "ea": "0x18000a154",
+    "function_file": "functions/18000a154_QueryLdapRecoveryPort_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?QueryLdapRecoveryPort@@YAJPEAK@Z",
+    "prototype": "__int64 __fastcall(unsigned int *)",
+    "rank_score": 715,
+    "size": 273,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "GenerateSecretAgreementPubKey(ushort *,uchar *,ulong,void * *)",
+    "ea": "0x18000e540",
+    "function_file": "functions/18000e540_GenerateSecretAgreementPubKey_ushort_uchar_ulong_void.md",
+    "matched_imports": [
+      "bcrypt!BCryptCloseAlgorithmProvider",
+      "bcrypt!BCryptDestroyKey",
+      "bcrypt!BCryptImportKeyPair"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx"
+    ],
+    "name": "?GenerateSecretAgreementPubKey@@YAJPEAGPEAEKPEAPEAX@Z",
+    "prototype": "int(unsigned __int16 *, unsigned __int8 *, unsigned int, void **)",
+    "rank_score": 707,
+    "size": 254,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IsLowbox(int *)",
+    "ea": "0x180010624",
+    "function_file": "functions/180010624_IsLowbox_int.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?IsLowbox@@YAJPEAH@Z",
+    "prototype": "__int64 __fastcall(int *)",
+    "rank_score": 706,
+    "size": 220,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GenerateSecDescrBerVal",
+    "ea": "0x180005284",
+    "function_file": "functions/180005284_GenerateSecDescrBerVal.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx"
+    ],
+    "name": "GenerateSecDescrBerVal",
+    "prototype": "",
+    "rank_score": 664,
+    "size": 163,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "TestServerConfig(_KDS_CONFIGURATION *,ushort * *)",
+    "ea": "0x18000e8a0",
+    "function_file": "functions/18000e8a0_TestServerConfig_KDS_CONFIGURATION_ushort.md",
+    "matched_imports": [
+      "bcrypt!BCryptDestroyKey"
+    ],
+    "matched_strings": [],
+    "name": "?TestServerConfig@@YAJPEAU_KDS_CONFIGURATION@@PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(struct _KDS_CONFIGURATION *, unsigned __int16 **)",
+    "rank_score": 633,
+    "size": 527,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "wil::details::LogFailure(void *,uint,char const *,char const *,char const *,void *,wil::FailureType,wil::details::ResultStatus const &,ushort const *,bool,ushort *,unsigned __int64,char *,unsigned __int64,wil::FailureFlags,wil::FailureInfo *)",
+    "ea": "0x180013e58",
+    "function_file": "functions/180013e58_wil_details_LogFailure_void_uint_char_const_char_const_char_const_void_wil_FailureType_wil_details_ResultStatu.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?LogFailure@details@wil@@YAXPEAXIPEBD110W4FailureType@2@AEBUResultStatus@12@PEBG_NPEAG_KPEAD7W4FailureFlags@2@PEAUFailureInfo@2@@Z",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 760,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::EnsureSubscribedToFeatureConfigurationChanges(void)",
+    "ea": "0x18000ae28",
+    "function_file": "functions/18000ae28_wil_details_EnsureSubscribedToFeatureConfigurationChanges_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureSubscribedToFeatureConfigurationChanges@details@wil@@YAIXZ",
+    "prototype": "unsigned int __fastcall(wil::details *__hidden this)",
+    "rank_score": 615,
+    "size": 188,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_Return<1>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x180011768",
+    "function_file": "functions/180011768_wil_details_ReportFailure_Return_1_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Return@$00@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 660,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_NoReturn<3>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions)",
+    "ea": "0x180011500",
+    "function_file": "functions/180011500_wil_details_ReportFailure_NoReturn_3_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_NoReturn@$02@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@@Z",
+    "prototype": "",
+    "rank_score": 613,
+    "size": 608,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::FeatureStateData::~FeatureStateData(void)",
+    "ea": "0x180011db4",
+    "function_file": "functions/180011db4_wil_details_abi_FeatureStateData_FeatureStateData_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1FeatureStateData@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details_abi::FeatureStateData *__hidden this)",
+    "rank_score": 607,
+    "size": 208,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GetL0KeyForSpecifiedIntervalLdap(ldap *,ushort *,ulong,unsigned __int64,_L0_key * *)",
+    "ea": "0x180008afc",
+    "function_file": "functions/180008afc_GetL0KeyForSpecifiedIntervalLdap_ldap_ushort_ulong_unsigned_int64_L0_key.md",
+    "matched_imports": [
+      "RPCRT4!RpcStringFreeW",
+      "RPCRT4!UuidToStringW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GetL0KeyForSpecifiedIntervalLdap@@YAJPEAUldap@@PEAGK_KPEAPEAU_L0_key@@@Z",
+    "prototype": "__int64 __usercall@<rax>(LDAP *ld@<rcx>, unsigned __int16 *@<rdx>, unsigned int@<r8d>, unsigned __int64@<r9>, struct _L0_key **)",
+    "rank_score": 592,
+    "size": 492,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ComputeLatestL0KeyLdap(ldap *,ushort *,_GUID *,ulong,unsigned __int64,_L0_key * *)",
+    "ea": "0x180007d28",
+    "function_file": "functions/180007d28_ComputeLatestL0KeyLdap_ldap_ushort_GUID_ulong_unsigned_int64_L0_key.md",
+    "matched_imports": [
+      "RPCRT4!RpcStringFreeW",
+      "RPCRT4!UuidToStringW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?ComputeLatestL0KeyLdap@@YAJPEAUldap@@PEAGPEAU_GUID@@K_KPEAPEAU_L0_key@@@Z",
+    "prototype": "__int64 __fastcall(struct ldap *, unsigned __int16 *, UUID *Uuid, unsigned int, struct _ROOT_KEY_HEADER *, struct _L0_key **)",
+    "rank_score": 590,
+    "size": 362,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetSpecifiedL0KeyLdap(ldap *,ushort *,_GUID *,ulong,unsigned __int64,_L0_key * *)",
+    "ea": "0x180009a14",
+    "function_file": "functions/180009a14_GetSpecifiedL0KeyLdap_ldap_ushort_GUID_ulong_unsigned_int64_L0_key.md",
+    "matched_imports": [
+      "RPCRT4!RpcStringFreeW",
+      "RPCRT4!UuidToStringW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GetSpecifiedL0KeyLdap@@YAJPEAUldap@@PEAGPEAU_GUID@@K_KPEAPEAU_L0_key@@@Z",
+    "prototype": "__int64 __fastcall(struct ldap *, unsigned __int16 *, UUID *Uuid, unsigned int, unsigned __int64, struct _L0_key **)",
+    "rank_score": 590,
+    "size": 394,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "GetDomainControllerInfo(int,int,ushort const *,ushort * *,unsigned __int64 *,ushort * *,unsigned __int64 *,int *)",
+    "ea": "0x18000f1a8",
+    "function_file": "functions/18000f1a8_GetDomainControllerInfo_int_int_ushort_const_ushort_unsigned_int64_ushort_unsigned_int64_int.md",
+    "matched_imports": [
+      "logoncli!DsGetDcNameW",
+      "netutils!NetApiBufferFree"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx"
+    ],
+    "name": "?GetDomainControllerInfo@@YAJHHPEBGPEAPEAGPEA_K12PEAH@Z",
+    "prototype": "int(int, int, const unsigned __int16 *, unsigned __int16 **, unsigned __int64 *, unsigned __int16 **, unsigned __int64 *, int *)",
+    "rank_score": 552,
+    "size": 716,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GenerateLatestSecretAgreementSecret",
+    "ea": "0x1800189b8",
+    "function_file": "functions/1800189b8_GenerateLatestSecretAgreementSecret.md",
+    "matched_imports": [
+      "bcrypt!BCryptDestroyKey"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "GenerateLatestSecretAgreementSecret",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 551,
+    "size": 455,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "GenerateSIDPublicKeyBlob(void *,uchar * *,ulong *)",
+    "ea": "0x18000de80",
+    "function_file": "functions/18000de80_GenerateSIDPublicKeyBlob_void_uchar_ulong.md",
+    "matched_imports": [
+      "bcrypt!BCryptExportKey"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeysecagr.cxx"
+    ],
+    "name": "?GenerateSIDPublicKeyBlob@@YAJPEAXPEAPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(BCRYPT_KEY_HANDLE hKey, unsigned __int8 **, unsigned int *)",
+    "rank_score": 549,
+    "size": 299,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ConvertStrToUlong(ushort *,ulong *)",
+    "ea": "0x18000fcbc",
+    "function_file": "functions/18000fcbc_ConvertStrToUlong_ushort_ulong.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlUnicodeStringToInteger"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?ConvertStrToUlong@@YAJPEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, unsigned int *)",
+    "rank_score": 515,
+    "size": 169,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "GetUserStorageArea",
+    "ea": "0x18000be6c",
+    "function_file": "functions/18000be6c_GetUserStorageArea.md",
+    "matched_imports": [
+      "profapi!__imp_GetBasicProfileFolderPath"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "GetUserStorageArea",
+    "prototype": "",
+    "rank_score": 511,
+    "size": 358,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GenerateSpecifiedSecretAgreementSecret",
+    "ea": "0x1800190b4",
+    "function_file": "functions/1800190b4_GenerateSpecifiedSecretAgreementSecret.md",
+    "matched_imports": [
+      "bcrypt!BCryptDestroyKey"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "GenerateSpecifiedSecretAgreementSecret",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _QWORD)",
+    "rank_score": 509,
+    "size": 442,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetLastestKeyFromQueryResult",
+    "ea": "0x180005740",
+    "function_file": "functions/180005740_GetLastestKeyFromQueryResult.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ldap_first_entry",
+      "WLDAP32!__imp_ldap_next_entry"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx"
+    ],
+    "name": "GetLastestKeyFromQueryResult",
+    "prototype": "__int64 __fastcall(LDAP *ld)",
+    "rank_score": 509,
+    "size": 345,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_QueryFeatureState",
+    "ea": "0x18001688c",
+    "function_file": "functions/18001688c_wil_QueryFeatureState.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlQueryFeatureConfiguration"
+    ],
+    "name": "wil_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 506,
+    "size": 358,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GenerateObjGuid(ushort * *)",
+    "ea": "0x18000fd6c",
+    "function_file": "functions/18000fd6c_GenerateObjGuid_ushort.md",
+    "matched_imports": [
+      "RPCRT4!UuidToStringW",
+      "bcrypt!BCryptGenRandom"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?GenerateObjGuid@@YAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(RPC_WSTR *StringUuid)",
+    "rank_score": 505,
+    "size": 184,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_NtUpdateWnfStateData",
+    "ea": "0x180016a80",
+    "function_file": "functions/180016a80_wil_details_NtUpdateWnfStateData.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "NtUpdateWnfStateData"
+    ],
+    "name": "wil_details_NtUpdateWnfStateData",
+    "prototype": "",
+    "rank_score": 505,
+    "size": 170,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::unique_storage<wil::details::resource_policy<void *,void (*)(void *),&wil::details::UnregisterWilFeatureConfigurationChange(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<void *,void (*)(void *),&wil::details::UnregisterWilFeatureConfigurationChange(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>(void)",
+    "ea": "0x180011d48",
+    "function_file": "functions/180011d48_wil_details_unique_storage_wil_details_resource_policy_void_void_void_wil_details_UnregisterWilFeatureConfigur.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlUnregisterFeatureConfigurationChangeNotification"
+    ],
+    "name": "??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@Z$1?UnregisterWilFeatureConfigurationChange@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 503,
+    "size": 100,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlDllShutdownInProgress(void)",
+    "ea": "0x180015660",
+    "function_file": "functions/180015660_wil_details_RtlDllShutdownInProgress_void.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlDllShutdownInProgress"
+    ],
+    "name": "?RtlDllShutdownInProgress@details@wil@@YAEXZ",
+    "prototype": "unsigned __int8 __fastcall(wil::details *__hidden this)",
+    "rank_score": 492,
+    "size": 90,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GenerateServerConfigAttributes(ldapmodW * * const,_KDS_CONFIGURATION *,berval *,berval *,ushort * const)",
+    "ea": "0x180006dbc",
+    "function_file": "functions/180006dbc_GenerateServerConfigAttributes_ldapmodW_const_KDS_CONFIGURATION_berval_berval_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__ultow_s"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx"
+    ],
+    "name": "?GenerateServerConfigAttributes@@YAJQEAPEAUldapmodW@@PEAU_KDS_CONFIGURATION@@PEAUberval@@2QEAG@Z",
+    "prototype": "__int64 __usercall@<rax>(struct ldapmodW **const@<rcx>, struct _KDS_CONFIGURATION *@<rdx>, struct berval *@<r8>, struct berval *@<r9>, unsigned __int16 *const)",
+    "rank_score": 479,
+    "size": 491,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IsMachineInTheSameForest",
+    "ea": "0x18000f560",
+    "function_file": "functions/18000f560_IsMachineInTheSameForest.md",
+    "matched_imports": [
+      "api-ms-win-security-lsalookup-l1-1-2!LsaLookupUserAccountType",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx"
+    ],
+    "name": "IsMachineInTheSameForest",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 475,
+    "size": 206,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "GetSIDKeyFileName(_GUID,ulong,int,ushort const *,ushort * *)",
+    "ea": "0x18000bb30",
+    "function_file": "functions/18000bb30_GetSIDKeyFileName_GUID_ulong_int_ushort_const_ushort.md",
+    "matched_imports": [
+      "RPCRT4!RpcStringFreeW",
+      "RPCRT4!UuidToStringW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "?GetSIDKeyFileName@@YAJU_GUID@@KHPEBGPEAPEAG@Z",
+    "prototype": "int(struct _GUID *__struct_ptr, unsigned int, int, const unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 471,
+    "size": 468,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "wil_details_WriteSRUMWnfUsageBuffer(wil::details_abi::heap_vector<wil_details_FeatureUsageSRUM> *)",
+    "ea": "0x18001664c",
+    "function_file": "functions/18001664c_wil_details_WriteSRUMWnfUsageBuffer_wil_details_abi_heap_vector_wil_details_FeatureUsageSRUM.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?wil_details_WriteSRUMWnfUsageBuffer@@YAJPEAV?$heap_vector@Uwil_details_FeatureUsageSRUM@@@details_abi@wil@@@Z",
+    "prototype": "",
+    "rank_score": 471,
+    "size": 568,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "AddBCryptHandleCache",
+    "ea": "0x180010dcc",
+    "function_file": "functions/180010dcc_AddBCryptHandleCache.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\bcryptprovhandlecache.cxx"
+    ],
+    "name": "AddBCryptHandleCache",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 469,
+    "size": 347,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::MicrosoftInternalNotifyFailure(wil::FailureInfo *)",
+    "ea": "0x1800141e0",
+    "function_file": "functions/1800141e0_wil_details_MicrosoftInternalNotifyFailure_wil_FailureInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?MicrosoftInternalNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct wil::FailureInfo *)",
+    "rank_score": 464,
+    "size": 272,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::WilDynamicLoadRaiseFailFastException(_EXCEPTION_RECORD *,_CONTEXT *,ulong)",
+    "ea": "0x1800163a0",
+    "function_file": "functions/1800163a0_wil_details_WilDynamicLoadRaiseFailFastException_EXCEPTION_RECORD_CONTEXT_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?WilDynamicLoadRaiseFailFastException@details@wil@@YAXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct _EXCEPTION_RECORD *, struct _CONTEXT *, unsigned int)",
+    "rank_score": 462,
+    "size": 88,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_StagingConfig_LogStagedFeatureUsage",
+    "ea": "0x180016a00",
+    "function_file": "functions/180016a00_wil_StagingConfig_LogStagedFeatureUsage.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "wil_StagingConfig_LogStagedFeatureUsage",
+    "prototype": "",
+    "rank_score": 462,
+    "size": 120,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "wil::details::WilApiImpl_RecordFeatureUsage(uint,uint,uint,char const *)",
+    "ea": "0x1800160e0",
+    "function_file": "functions/1800160e0_wil_details_WilApiImpl_RecordFeatureUsage_uint_uint_uint_char_const.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?WilApiImpl_RecordFeatureUsage@details@wil@@YAXIIIPEBD@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, unsigned int, unsigned int, unsigned int, const char *)",
+    "rank_score": 459,
+    "size": 299,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlNtStatusToDosErrorNoTeb(long)",
+    "ea": "0x1800156c0",
+    "function_file": "functions/1800156c0_wil_details_RtlNtStatusToDosErrorNoTeb_long.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?RtlNtStatusToDosErrorNoTeb@details@wil@@YAKJ@Z",
+    "prototype": "unsigned int __fastcall(wil::details *__hidden this, int)",
+    "rank_score": 452,
+    "size": 98,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::FormatNtStatusMsg(long,ushort *,ulong)",
+    "ea": "0x180013110",
+    "function_file": "functions/180013110_wil_details_FormatNtStatusMsg_long_ushort_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?FormatNtStatusMsg@details@wil@@YAXJPEAGK@Z",
+    "prototype": "void __fastcall(DWORD dwMessageId, LPWSTR lpBuffer, DWORD nSize, unsigned int)",
+    "rank_score": 451,
+    "size": 112,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 74,
+    "demangled": "SIDKeyProvFree(void *)",
+    "ea": "0x180010950",
+    "function_file": "functions/180010950_SIDKeyProvFree_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?SIDKeyProvFree@@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *lpMem)",
+    "rank_score": 436,
+    "size": 39,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportUsageToServiceDirect(wil_details_FeatureReportingCache *,uint,int,int,wil_details_ServiceReportingKind,uint,unsigned __int64,uchar)",
+    "ea": "0x18000cb6c",
+    "function_file": "functions/18000cb6c_wil_details_ReportUsageToServiceDirect_wil_details_FeatureReportingCache_uint_int_int_wil_details_ServiceRepor.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?ReportUsageToServiceDirect@details@wil@@YAHPEAUwil_details_FeatureReportingCache@@IHHW4wil_details_ServiceReportingKind@@I_KE@Z",
+    "prototype": "",
+    "rank_score": 418,
+    "size": 402,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil::details::SubscribeFeatureStateCacheToConfigurationChanges(wil_details_FeatureStateCache *,wil_FeatureChangeTime,uint)",
+    "ea": "0x18000cd04",
+    "function_file": "functions/18000cd04_wil_details_SubscribeFeatureStateCacheToConfigurationChanges_wil_details_FeatureStateCache_wil_FeatureChangeTi.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?SubscribeFeatureStateCacheToConfigurationChanges@details@wil@@YAXPEATwil_details_FeatureStateCache@@W4wil_FeatureChangeTime@@I@Z",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 202,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "wil::GetFailureLogString(ushort *,unsigned __int64,wil::FailureInfo const &)",
+    "ea": "0x180013414",
+    "function_file": "functions/180013414_wil_GetFailureLogString_ushort_unsigned_int64_wil_FailureInfo_const.md",
+    "matched_imports": [
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetFailureLogString@wil@@YAJPEAG_KAEBUFailureInfo@1@@Z",
+    "prototype": "__int64 __fastcall(wil *__hidden this, unsigned __int16 *, unsigned __int64, const struct wil::FailureInfo *)",
+    "rank_score": 413,
+    "size": 694,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "ea": "0x18001a920",
+    "function_file": "functions/18001a920_wil_details_dynamic_atexit_destructor_for_g_threadFailureCallbacks.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "GetCurrentTimeInULL(void)",
+    "ea": "0x1800100d0",
+    "function_file": "functions/1800100d0_GetCurrentTimeInULL_void.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime",
+      "api-ms-win-core-timezone-l1-1-0!SystemTimeToFileTime"
+    ],
+    "matched_strings": [],
+    "name": "?GetCurrentTimeInULL@@YA_KXZ",
+    "prototype": "unsigned __int64(void)",
+    "rank_score": 410,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "wil::details::GetContextAndNotifyFailure(wil::FailureInfo *,char *,unsigned __int64)",
+    "ea": "0x1800131c0",
+    "function_file": "functions/1800131c0_wil_details_GetContextAndNotifyFailure_wil_FailureInfo_char_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetContextAndNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@PEAD_K@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct wil::FailureInfo *, char *, unsigned __int64)",
+    "rank_score": 410,
+    "size": 518,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalFailureInfo::Set(wil::FailureInfo const &,uint)",
+    "ea": "0x180015728",
+    "function_file": "functions/180015728_wil_details_abi_ThreadLocalFailureInfo_Set_wil_FailureInfo_const_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?Set@ThreadLocalFailureInfo@details_abi@wil@@QEAAXAEBUFailureInfo@3@I@Z",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalFailureInfo *__hidden this, const struct wil::FailureInfo *, unsigned int)",
+    "rank_score": 409,
+    "size": 537,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "GetSIDKeyLdapWorker(_SECURITY_DESCRIPTOR *,ulong,ulong,ulong,_GUID *,ulong,ulong,ulong,int,uchar * *,ulong *)",
+    "ea": "0x180008eb4",
+    "function_file": "functions/180008eb4_GetSIDKeyLdapWorker_SECURITY_DESCRIPTOR_ulong_ulong_ulong_GUID_ulong_ulong_ulong_int_uchar_ulong.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ldap_unbind"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GetSIDKeyLdapWorker@@YAJPEAU_SECURITY_DESCRIPTOR@@KKKPEAU_GUID@@KKKHPEAPEAEPEAK@Z",
+    "prototype": "int(struct _SECURITY_DESCRIPTOR *, unsigned int, unsigned int, unsigned int, struct _GUID *, unsigned int, unsigned int, unsigned int, int, unsigned __int8 **, unsigned int *)",
+    "rank_score": 358,
+    "size": 653,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "AddADObject(ldap *,ushort *,_SIDKEY_AD_ATTRIBUTE *,ulong)",
+    "ea": "0x180002888",
+    "function_file": "functions/180002888_AddADObject_ldap_ushort_SIDKEY_AD_ATTRIBUTE_ulong.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ldap_add_sW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx"
+    ],
+    "name": "?AddADObject@@YAJPEAUldap@@PEAGPEAU_SIDKEY_AD_ATTRIBUTE@@K@Z",
+    "prototype": "int(struct ldap *, unsigned __int16 *, struct _SIDKEY_AD_ATTRIBUTE *, unsigned int)",
+    "rank_score": 351,
+    "size": 387,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "DeleteAllCachedKeys(ushort *)",
+    "ea": "0x18000a9f0",
+    "function_file": "functions/18000a9f0_DeleteAllCachedKeys_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "?DeleteAllCachedKeys@@YAJPEAG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *)",
+    "rank_score": 351,
+    "size": 451,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 56,
+    "demangled": "SIDKeyProvAlloc(unsigned __int64)",
+    "ea": "0x180010920",
+    "function_file": "functions/180010920_SIDKeyProvAlloc_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?SIDKeyProvAlloc@@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(unsigned __int64)",
+    "rank_score": 335,
+    "size": 38,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SetServerConfig(ldap *,ushort const *,_KDS_CONFIGURATION *)",
+    "ea": "0x180007a10",
+    "function_file": "functions/180007a10_SetServerConfig_ldap_ushort_const_KDS_CONFIGURATION.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ldap_modify_sW"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx"
+    ],
+    "name": "?SetServerConfig@@YAJPEAUldap@@PEBGPEAU_KDS_CONFIGURATION@@@Z",
+    "prototype": "__int64 __fastcall(LDAP *ld, PWSTR dn, struct _KDS_CONFIGURATION *)",
+    "rank_score": 317,
+    "size": 326,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "__delayLoadHelper2",
+    "ea": "0x18001a560",
+    "function_file": "functions/18001a560_delayLoadHelper2.md",
+    "matched_imports": [
+      "api-ms-win-core-delayload-l1-1-0!DelayLoadFailureHook",
+      "api-ms-win-core-delayload-l1-1-1!ResolveDelayLoadedAPI"
+    ],
+    "matched_strings": [],
+    "name": "__delayLoadHelper2",
+    "prototype": "",
+    "rank_score": 308,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GenerateLatestSecretFromSidKey",
+    "ea": "0x180018b88",
+    "function_file": "functions/180018b88_GenerateLatestSecretFromSidKey.md",
+    "matched_imports": [
+      "bcrypt!BCryptGenRandom"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "GenerateLatestSecretFromSidKey",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 275,
+    "size": 237,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "AddCacheEntry(ushort const *,ulong,void *)",
+    "ea": "0x18000eab8",
+    "function_file": "functions/18000eab8_AddCacheEntry_ushort_const_ulong_void.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFree"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx"
+    ],
+    "name": "?AddCacheEntry@@YAJPEBGKPEAX@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *Src, unsigned int, void *)",
+    "rank_score": 271,
+    "size": 302,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ComputeSIDPubKeyLdap(_L0_key *,uchar * const,uchar * *,ulong *)",
+    "ea": "0x1800080e8",
+    "function_file": "functions/1800080e8_ComputeSIDPubKeyLdap_L0_key_uchar_const_uchar_ulong.md",
+    "matched_imports": [
+      "bcrypt!BCryptDestroyKey"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?ComputeSIDPubKeyLdap@@YAJPEAU_L0_key@@QEAEPEAPEAEPEAK@Z",
+    "prototype": "int(struct _L0_key *, unsigned __int8 *const, unsigned __int8 **, unsigned int *)",
+    "rank_score": 269,
+    "size": 338,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetRootKey(ldap *,ushort const *,ushort const *,unsigned __int64,unsigned __int64,_ROOT_KEY_HEADER * *)",
+    "ea": "0x1800058a0",
+    "function_file": "functions/1800058a0_GetRootKey_ldap_ushort_const_ushort_const_unsigned_int64_unsigned_int64_ROOT_KEY_HEADER.md",
+    "matched_imports": [
+      "WLDAP32!__imp_ldap_msgfree"
+    ],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx"
+    ],
+    "name": "?GetRootKey@@YAJPEAUldap@@PEBG1_K2PEAPEAU_ROOT_KEY_HEADER@@@Z",
+    "prototype": "__int64 __usercall@<rax>(LDAP *ld@<rcx>, const unsigned __int16 *@<rdx>, const unsigned __int16 *@<r8>, unsigned __int64@<r9>, unsigned __int64, struct _ROOT_KEY_HEADER **)",
+    "rank_score": 266,
+    "size": 139,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "GetLatestKey(_SECURITY_DESCRIPTOR *,ulong,uchar * *,ulong *,uchar *,ulong,ulong)",
+    "ea": "0x1800196cc",
+    "function_file": "functions/1800196cc_GetLatestKey_SECURITY_DESCRIPTOR_ulong_uchar_ulong_uchar_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "hrCache"
+    ],
+    "name": "?GetLatestKey@@YAJPEAU_SECURITY_DESCRIPTOR@@KPEAPEAEPEAKPEAEKK@Z",
+    "prototype": "__int64 __fastcall(struct _SECURITY_DESCRIPTOR *, unsigned int, unsigned __int8 **, unsigned int *, unsigned __int8 *, unsigned int, unsigned int)",
+    "rank_score": 250,
+    "size": 921,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::RawUsageIndex::RecordUsageInternal(void *,unsigned __int64,void *,unsigned __int64,uint)",
+    "ea": "0x180014c04",
+    "function_file": "functions/180014c04_wil_details_abi_RawUsageIndex_RecordUsageInternal_void_unsigned_int64_void_unsigned_int64_uint.md",
+    "matched_imports": [
+      "ntdll!memmove_s"
+    ],
+    "matched_strings": [],
+    "name": "?RecordUsageInternal@RawUsageIndex@details_abi@wil@@AEAA_NPEAX_K01I@Z",
+    "prototype": "bool __fastcall(wil::details_abi::RawUsageIndex *__hidden this, void *Buf1, size_t Size, void *, unsigned __int64, unsigned int)",
+    "rank_score": 223,
+    "size": 893,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FreeCacheEntry",
+    "ea": "0x18000ec54",
+    "function_file": "functions/18000ec54_FreeCacheEntry.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingFree"
+    ],
+    "matched_strings": [],
+    "name": "FreeCacheEntry",
+    "prototype": "__int64 __fastcall(void *lpMem)",
+    "rank_score": 214,
+    "size": 71,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 14,
+    "demangled": "WPP_SF_",
+    "ea": "0x180003e08",
+    "function_file": "functions/180003e08_WPP_SF.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 214,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 3,
+    "demangled": "GenerateSIDKey(uchar * const,ulong,_KEK_KEY_INFO *,_SID_KEY_BLOB_VER,uchar * *,ulong *,uchar *,ulong)",
+    "ea": "0x180018c7c",
+    "function_file": "functions/180018c7c_GenerateSIDKey_uchar_const_ulong_KEK_KEY_INFO_SID_KEY_BLOB_VER_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "?GenerateSIDKey@@YAJQEAEKPEAU_KEK_KEY_INFO@@W4_SID_KEY_BLOB_VER@@PEAPEAEPEAKPEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, __int64, int, _QWORD *, unsigned int *, __int64)",
+    "rank_score": 213,
+    "size": 1072,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "GetSidKeyServicePath(ldap *,ushort * *)",
+    "ea": "0x18000398c",
+    "function_file": "functions/18000398c_GetSidKeyServicePath_ldap_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "configurationNamingContext",
+      "cn=Group Key Distribution Service,cn=Services,"
+    ],
+    "name": "?GetSidKeyServicePath@@YAJPEAUldap@@PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(LDAP *ld, unsigned __int16 **)",
+    "rank_score": 213,
+    "size": 392,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "GetSpecifiedKey(_SECURITY_DESCRIPTOR *,ulong,ulong,uchar * const,ulong,_SID_KEY_BLOB_VER,uchar *,ulong)",
+    "ea": "0x180019bec",
+    "function_file": "functions/180019bec_GetSpecifiedKey_SECURITY_DESCRIPTOR_ulong_ulong_uchar_const_ulong_SID_KEY_BLOB_VER_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "?GetSpecifiedKey@@YAJPEAU_SECURITY_DESCRIPTOR@@KKQEAEKW4_SID_KEY_BLOB_VER@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, unsigned int, unsigned int, unsigned __int8 *, unsigned int, unsigned int, __int64, unsigned int)",
+    "rank_score": 210,
+    "size": 1087,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "WPP_SF_D",
+    "ea": "0x180003e30",
+    "function_file": "functions/180003e30_WPP_SF_D.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_D",
+    "prototype": "",
+    "rank_score": 208,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WPP_SF_S",
+    "ea": "0x180003e70",
+    "function_file": "functions/180003e70_WPP_SF_S.md",
+    "matched_imports": [
+      "api-ms-win-eventing-classicprovider-l1-1-0!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_S",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 208,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "McGenEventWrite_EventWriteTransfer",
+    "ea": "0x180006cb8",
+    "function_file": "functions/180006cb8_McGenEventWrite_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::GetThreadLocalDataCache(bool)",
+    "ea": "0x18001399c",
+    "function_file": "functions/18001399c_wil_details_abi_GetThreadLocalDataCache_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadLocalDataCache@details_abi@wil@@YAPEAUThreadLocalData@12@_N@Z",
+    "prototype": "struct wil::details_abi::ThreadLocalData *__fastcall(wil::details_abi *__hidden this, bool)",
+    "rank_score": 204,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "UnlockRpcCache(_RPC_CACHE_TYPE)",
+    "ea": "0x18000fc80",
+    "function_file": "functions/18000fc80_UnlockRpcCache_RPC_CACHE_TYPE.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared"
+    ],
+    "matched_strings": [],
+    "name": "?UnlockRpcCache@@YAXW4_RPC_CACHE_TYPE@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 202,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ParseBCryptKDFParam(uchar *,ulong,ulong *,ulong * *,uchar *,ulong,uchar *,ulong,_BCryptBufferDesc * *)",
+    "ea": "0x18000da88",
+    "function_file": "functions/18000da88_ParseBCryptKDFParam_uchar_ulong_ulong_ulong_uchar_ulong_uchar_ulong_BCryptBufferDesc.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeykdf.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeykdf.cxx",
+      "KDS service"
+    ],
+    "name": "?ParseBCryptKDFParam@@YAJPEAEKPEAKPEAPEAK0K0KPEAPEAU_BCryptBufferDesc@@@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, unsigned int, unsigned int *, unsigned int **, unsigned __int8 *, unsigned int, unsigned __int8 *, unsigned int, struct _BCryptBufferDesc **)",
+    "rank_score": 160,
+    "size": 513,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ClientComputeL2Key(_SID_KEY_HEADER *,_KEK_KEY_INFO *,ushort *,uchar * const,uchar * const,long,ulong,long,ulong)",
+    "ea": "0x180018298",
+    "function_file": "functions/180018298_ClientComputeL2Key_SID_KEY_HEADER_KEK_KEY_INFO_ushort_uchar_const_uchar_const_long_ulong_long_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "?ClientComputeL2Key@@YAJPEAU_SID_KEY_HEADER@@PEAU_KEK_KEY_INFO@@PEAGQEAE3JKJK@Z",
+    "prototype": "int(struct _SID_KEY_HEADER *, struct _KEK_KEY_INFO *, unsigned __int16 *, unsigned __int8 *const, unsigned __int8 *const, int, unsigned int, int, unsigned int)",
+    "rank_score": 151,
+    "size": 639,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "GetKDSSrvConfigPath(ldap *,ushort * *)",
+    "ea": "0x1800035a0",
+    "function_file": "functions/1800035a0_GetKDSSrvConfigPath_ldap_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "cn=Group Key Distribution Service Server Configuration,cn=Server Configuration,"
+    ],
+    "name": "?GetKDSSrvConfigPath@@YAJPEAUldap@@PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(struct ldap *, unsigned __int16 **)",
+    "rank_score": 127,
+    "size": 197,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 27,
+    "demangled": "memcpy_0",
+    "ea": "0x18001a6ac",
+    "function_file": "functions/18001a6ac_memcpy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 3,
+    "demangled": "ComputeL0Key(_ROOT_KEY_HEADER *,ulong,_L0_key * *)",
+    "ea": "0x180004624",
+    "function_file": "functions/180004624_ComputeL0Key_ROOT_KEY_HEADER_ulong_L0_key.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx"
+    ],
+    "name": "?ComputeL0Key@@YAJPEAU_ROOT_KEY_HEADER@@KPEAPEAU_L0_key@@@Z",
+    "prototype": "int(struct _ROOT_KEY_HEADER *, unsigned int, struct _L0_key **)",
+    "rank_score": 121,
+    "size": 982,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_RpcStringBindingComposeW",
+    "ea": "0x180002675",
+    "function_file": "functions/180002675_imp_load_RpcStringBindingComposeW.md",
+    "matched_imports": [
+      "RPCRT4!RpcStringBindingComposeW"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_RpcStringBindingComposeW",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 19,
+    "demangled": "memset_0",
+    "ea": "0x180001f7c",
+    "function_file": "functions/180001f7c_memset_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 119,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetServerConfig(ldap *,ushort const *,int,_KDS_CONFIGURATION * *)",
+    "ea": "0x180007060",
+    "function_file": "functions/180007060_GetServerConfig_ldap_ushort_const_int_KDS_CONFIGURATION.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx"
+    ],
+    "name": "?GetServerConfig@@YAJPEAUldap@@PEBGHPEAPEAU_KDS_CONFIGURATION@@@Z",
+    "prototype": "__int64 __fastcall(LDAP *ld, PWSTR base, int, struct _KDS_CONFIGURATION **)",
+    "rank_score": 117,
+    "size": 211,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ValidateSrvConfig(_KDS_CONFIGURATION *,ushort * *)",
+    "ea": "0x180007c20",
+    "function_file": "functions/180007c20_ValidateSrvConfig_KDS_CONFIGURATION_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx"
+    ],
+    "name": "?ValidateSrvConfig@@YAJPEAU_KDS_CONFIGURATION@@PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(struct _KDS_CONFIGURATION *, unsigned __int16 **)",
+    "rank_score": 115,
+    "size": 258,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GenerateL1KeyLdap(uchar *,ulong,_L0_key *,ulong,uchar * const,uchar * const)",
+    "ea": "0x180008570",
+    "function_file": "functions/180008570_GenerateL1KeyLdap_uchar_ulong_L0_key_ulong_uchar_const_uchar_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GenerateL1KeyLdap@@YAJPEAEKPEAU_L0_key@@KQEAE2@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, unsigned int, struct _L0_key *, unsigned int, unsigned __int8 *const, unsigned __int8 *const)",
+    "rank_score": 114,
+    "size": 728,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetSIDKeyCacheFolder(uchar *,ulong,int,ushort * *,ushort * *)",
+    "ea": "0x18000b960",
+    "function_file": "functions/18000b960_GetSIDKeyCacheFolder_uchar_ulong_int_ushort_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "?GetSIDKeyCacheFolder@@YAJPEAEKHPEAPEAG1@Z",
+    "prototype": "__int64 __usercall@<rax>(PUCHAR pbInput@<rcx>, ULONG cbInput@<edx>, int@<r8d>, unsigned __int16 **@<r9>, unsigned __int16 **)",
+    "rank_score": 111,
+    "size": 458,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_BCryptCreateHash",
+    "ea": "0x180002390",
+    "function_file": "functions/180002390_imp_load_BCryptCreateHash.md",
+    "matched_imports": [
+      "bcrypt!BCryptCreateHash"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_BCryptCreateHash",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_BCryptOpenAlgorithmProvider",
+    "ea": "0x1800026e1",
+    "function_file": "functions/1800026e1_imp_load_BCryptOpenAlgorithmProvider.md",
+    "matched_imports": [
+      "bcrypt!BCryptOpenAlgorithmProvider"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_BCryptOpenAlgorithmProvider",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_GetBasicProfileFolderPath",
+    "ea": "0x1800027a2",
+    "function_file": "functions/1800027a2_imp_load_GetBasicProfileFolderPath.md",
+    "matched_imports": [
+      "profapi!__imp_GetBasicProfileFolderPath"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_GetBasicProfileFolderPath",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__stdio_common_vswprintf_s",
+    "ea": "0x180001eb6",
+    "function_file": "functions/180001eb6_stdio_common_vswprintf_s.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "__stdio_common_vswprintf_s",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o___stdio_common_vswprintf_0",
+    "ea": "0x180001eaa",
+    "function_file": "functions/180001eaa_o_stdio_common_vswprintf_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+    ],
+    "matched_strings": [],
+    "name": "_o___stdio_common_vswprintf_0",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__configure_narrow_argv_0",
+    "ea": "0x180001ece",
+    "function_file": "functions/180001ece_o_configure_narrow_argv_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_o__configure_narrow_argv_0",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__seh_filter_dll_0",
+    "ea": "0x180001f28",
+    "function_file": "functions/180001f28_o_seh_filter_dll_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_o__seh_filter_dll_0",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 11,
+    "demangled": "memcpy_s",
+    "ea": "0x180001f4c",
+    "function_file": "functions/180001f4c_memcpy_s.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o_memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_s",
+    "prototype": "static errno_t __cdecl(void *const Destination, const rsize_t DestinationSize, const void *const Source, const rsize_t SourceSize)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetLatestL0KeyLdap(ldap *,ushort *,ulong,_L0_key * *)",
+    "ea": "0x180008cf0",
+    "function_file": "functions/180008cf0_GetLatestL0KeyLdap_ldap_ushort_ulong_L0_key.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GetLatestL0KeyLdap@@YAJPEAUldap@@PEAGKPEAPEAU_L0_key@@@Z",
+    "prototype": "__int64 __fastcall(struct ldap *, unsigned __int16 *, unsigned int, struct _L0_key **)",
+    "rank_score": 110,
+    "size": 294,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "ValidateClientKEKInfo(uchar * const,ulong,_KEK_KEY_INFO * *)",
+    "ea": "0x180010980",
+    "function_file": "functions/180010980_ValidateClientKEKInfo_uchar_const_ulong_KEK_KEY_INFO.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?ValidateClientKEKInfo@@YAJQEAEKPEAPEAU_KEK_KEY_INFO@@@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *const, unsigned int, struct _KEK_KEY_INFO **)",
+    "rank_score": 108,
+    "size": 269,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ValidateSIDKey(_SID_KEY_HEADER const *,ulong,int)",
+    "ea": "0x180010a94",
+    "function_file": "functions/180010a94_ValidateSIDKey_SID_KEY_HEADER_const_ulong_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?ValidateSIDKey@@YAJPEBU_SID_KEY_HEADER@@KH@Z",
+    "prototype": "__int64 __fastcall(const struct _SID_KEY_HEADER *, unsigned int, int)",
+    "rank_score": 108,
+    "size": 606,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "GenerateSingleValueBervalAttribute(ulong,ushort *,berval *,ldapmodW * *)",
+    "ea": "0x180002a5c",
+    "function_file": "functions/180002a5c_GenerateSingleValueBervalAttribute_ulong_ushort_berval_ldapmodW.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx"
+    ],
+    "name": "?GenerateSingleValueBervalAttribute@@YAJKPEAGPEAUberval@@PEAPEAUldapmodW@@@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned __int16 *, struct berval *, struct ldapmodW **)",
+    "rank_score": 107,
+    "size": 195,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "GenerateSingleValueStrAttribute(ulong,ushort *,ushort *,ldapmodW * *)",
+    "ea": "0x180002b28",
+    "function_file": "functions/180002b28_GenerateSingleValueStrAttribute_ulong_ushort_ushort_ldapmodW.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx"
+    ],
+    "name": "?GenerateSingleValueStrAttribute@@YAJKPEAG0PEAPEAUldapmodW@@@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned __int16 *, unsigned __int16 *, struct ldapmodW **)",
+    "rank_score": 107,
+    "size": 193,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetRootKeyDN(ushort const *,ushort const *,ushort * *)",
+    "ea": "0x180005934",
+    "function_file": "functions/180005934_GetRootKeyDN_ushort_const_ushort_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx"
+    ],
+    "name": "?GetRootKeyDN@@YAJPEBG0PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 107,
+    "size": 232,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetSPN",
+    "ea": "0x18000f47c",
+    "function_file": "functions/18000f47c_GetSPN.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx",
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx"
+    ],
+    "name": "GetSPN",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 107,
+    "size": 222,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "wcscmp_0",
+    "ea": "0x18001a694",
+    "function_file": "functions/18001a694_wcscmp_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!wcscmp"
+    ],
+    "matched_strings": [],
+    "name": "wcscmp_0",
+    "prototype": "int __cdecl(const wchar_t *String1, const wchar_t *String2)",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "wcscpy_s",
+    "ea": "0x180001f64",
+    "function_file": "functions/180001f64_wcscpy_s.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o_wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "wcscpy_s",
+    "prototype": "errno_t __cdecl(wchar_t *Destination, rsize_t SizeInWords, const wchar_t *Source)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_GetLastError<3>(void *,uint,char const *,char const *,char const *,void *)",
+    "ea": "0x1800112d0",
+    "function_file": "functions/1800112d0_wil_details_ReportFailure_GetLastError_3_void_uint_char_const_char_const_char_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h",
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_GetLastError@$02@details@wil@@YAKPEAXIPEBD110@Z",
+    "prototype": "",
+    "rank_score": 85,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetMRKPath(ldap *,ushort * *)",
+    "ea": "0x1800038c0",
+    "function_file": "functions/1800038c0_GetMRKPath_ldap_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsad.cxx"
+    ],
+    "name": "?GetMRKPath@@YAJPEAUldap@@PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(struct ldap *, unsigned __int16 **)",
+    "rank_score": 78,
+    "size": 197,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ValidateKDFParam(uchar *,ulong)",
+    "ea": "0x180007b60",
+    "function_file": "functions/180007b60_ValidateKDFParam_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx"
+    ],
+    "name": "?ValidateKDFParam@@YAJPEAEK@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, unsigned int)",
+    "rank_score": 76,
+    "size": 183,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetDefaultServerConfig(_KDS_CONFIGURATION * *)",
+    "ea": "0x180006fb0",
+    "function_file": "functions/180006fb0_GetDefaultServerConfig_KDS_CONFIGURATION.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdssrvconfig.cxx"
+    ],
+    "name": "?GetDefaultServerConfig@@YAJPEAPEAU_KDS_CONFIGURATION@@@Z",
+    "prototype": "__int64 __fastcall(struct _KDS_CONFIGURATION **)",
+    "rank_score": 75,
+    "size": 163,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "_GenerateGmsaPassword(uchar * const,ulong,_KEK_KEY_INFO *,uchar *,ulong,uchar * *,ulong *,uchar *,ulong)",
+    "ea": "0x180016b30",
+    "function_file": "functions/180016b30_GenerateGmsaPassword_uchar_const_ulong_KEK_KEY_INFO_uchar_ulong_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx"
+    ],
+    "name": "?_GenerateGmsaPassword@@YAJQEAEKPEAU_KEK_KEY_INFO@@PEAEKPEAPEAEPEAK2K@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _SID_KEY_HEADER *@<rcx>, unsigned int@<edx>, struct _KEK_KEY_INFO *@<r8>, unsigned __int8 *@<r9>, DWORD, unsigned __int8 **, unsigned int *, unsigned __int8 *, unsigned int)",
+    "rank_score": 75,
+    "size": 697,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ComputeSIDPrivateKeyLdap(_L0_key *,uchar *,ulong,ulong,ulong,int,uchar * const,uchar * const)",
+    "ea": "0x180007e98",
+    "function_file": "functions/180007e98_ComputeSIDPrivateKeyLdap_L0_key_uchar_ulong_ulong_ulong_int_uchar_const_uchar_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?ComputeSIDPrivateKeyLdap@@YAJPEAU_L0_key@@PEAEKKKHQEAE2@Z",
+    "prototype": "__int64 __fastcall(struct _L0_key *, unsigned __int8 *, unsigned int, unsigned int, unsigned int, int, unsigned __int8 *const, unsigned __int8 *const)",
+    "rank_score": 72,
+    "size": 586,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GetL0Key(ldap *,_GUID *,ulong,ulong,unsigned __int64,_L0_key * *)",
+    "ea": "0x18000898c",
+    "function_file": "functions/18000898c_GetL0Key_ldap_GUID_ulong_ulong_unsigned_int64_L0_key.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GetL0Key@@YAJPEAUldap@@PEAU_GUID@@KK_KPEAPEAU_L0_key@@@Z",
+    "prototype": "__int64 __usercall@<rax>(struct ldap *@<rcx>, UUID *Uuid@<rdx>, unsigned int@<r8d>, unsigned int@<r9d>, unsigned __int64, struct _L0_key **)",
+    "rank_score": 71,
+    "size": 360,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "FindKeyInCache",
+    "ea": "0x1800187ec",
+    "function_file": "functions/1800187ec_FindKeyInCache.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "FindKeyInCache",
+    "prototype": "__int64 __fastcall(_DWORD *, UCHAR *, ULONG, int, int, unsigned __int16 *, unsigned int, int *, struct _SID_KEY_HEADER **, unsigned int *, unsigned __int16 **, unsigned __int16 **)",
+    "rank_score": 70,
+    "size": 453,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "FormatReturnBlobLdap(ushort *,ushort *,_L0_key *,uchar * const,ulong,uchar * const,ulong,uchar *,ulong,uchar * *,ulong *)",
+    "ea": "0x180008240",
+    "function_file": "functions/180008240_FormatReturnBlobLdap_ushort_ushort_L0_key_uchar_const_ulong_uchar_const_ulong_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?FormatReturnBlobLdap@@YAJPEAG0PEAU_L0_key@@QEAEK2KPEAEKPEAPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int16 *, struct _L0_key *, unsigned __int8 *const, unsigned int, unsigned __int8 *const, unsigned int, size_t, size_t, unsigned __int8 **, unsigned int *)",
+    "rank_score": 70,
+    "size": 738,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "FindKeyForOfflineUsage(int,ushort const *,ushort const *,ulong,int *,_SID_KEY_HEADER * *,ulong *)",
+    "ea": "0x18000b310",
+    "function_file": "functions/18000b310_FindKeyForOfflineUsage_int_ushort_const_ushort_const_ulong_int_SID_KEY_HEADER_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "?FindKeyForOfflineUsage@@YAJHPEBG0KPEAHPEAPEAU_SID_KEY_HEADER@@PEAK@Z",
+    "prototype": "__int64 __usercall@<rax>(int@<ecx>, const unsigned __int16 *@<rdx>, const unsigned __int16 *@<r8>, unsigned int@<r9d>, int *, struct _SID_KEY_HEADER **, unsigned int *)",
+    "rank_score": 69,
+    "size": 637,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetSIDKeyFileNameFilter(ulong,int,ushort const *,ushort * *)",
+    "ea": "0x18000bd0c",
+    "function_file": "functions/18000bd0c_GetSIDKeyFileNameFilter_ulong_int_ushort_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyfilecache.cxx"
+    ],
+    "name": "?GetSIDKeyFileNameFilter@@YAJKHPEBGPEAPEAG@Z",
+    "prototype": "int(unsigned int, int, const unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 69,
+    "size": 344,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetSpecifiedKeyLdapWorker(_SECURITY_DESCRIPTOR *,ulong,ulong,_GUID *,long,long,long,uchar * *,ulong *)",
+    "ea": "0x180009828",
+    "function_file": "functions/180009828_GetSpecifiedKeyLdapWorker_SECURITY_DESCRIPTOR_ulong_ulong_GUID_long_long_long_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GetSpecifiedKeyLdapWorker@@YAJPEAU_SECURITY_DESCRIPTOR@@KKPEAU_GUID@@JJJPEAPEAEPEAK@Z",
+    "prototype": "int(struct _SECURITY_DESCRIPTOR *, unsigned int, unsigned int, struct _GUID *, int, int, int, unsigned __int8 **, unsigned int *)",
+    "rank_score": 69,
+    "size": 483,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ParseSidKeyResult(_SID_KEY_HEADER const *,ulong,_KEK_KEY_INFO *,uchar * const,long *,ulong *,uchar * const,long *,ulong *,uchar * *)",
+    "ea": "0x18001a214",
+    "function_file": "functions/18001a214_ParseSidKeyResult_SID_KEY_HEADER_const_ulong_KEK_KEY_INFO_uchar_const_long_ulong_uchar_const_long_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\sidkeyrpcclient.cxx"
+    ],
+    "name": "?ParseSidKeyResult@@YAJPEBU_SID_KEY_HEADER@@KPEAU_KEK_KEY_INFO@@QEAEPEAJPEAK234PEAPEAE@Z",
+    "prototype": "__int64 __fastcall(const struct _SID_KEY_HEADER *, unsigned int, struct _KEK_KEY_INFO *, unsigned __int8 *const, int *, unsigned int *, unsigned __int8 *const, int *, unsigned int *, unsigned __int8 **)",
+    "rank_score": 69,
+    "size": 564,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "GenerateKDFContext(_GUID,ulong,long,long,ulong,uchar * *,ulong *,ulong *)",
+    "ea": "0x18000d9d0",
+    "function_file": "functions/18000d9d0_GenerateKDFContext_GUID_ulong_long_long_ulong_uchar_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeykdf.cxx"
+    ],
+    "name": "?GenerateKDFContext@@YAJU_GUID@@KJJKPEAPEAEPEAK2@Z",
+    "prototype": "__int64 __fastcall(struct _GUID *, unsigned int, int, int, unsigned int, unsigned __int8 **, unsigned int *, unsigned int *)",
+    "rank_score": 68,
+    "size": 178,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GenerateL2KeyLdap(_L0_key *,uchar * const,ulong,ulong,uchar * const)",
+    "ea": "0x180008850",
+    "function_file": "functions/180008850_GenerateL2KeyLdap_L0_key_uchar_const_ulong_ulong_uchar_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GenerateL2KeyLdap@@YAJPEAU_L0_key@@QEAEKK1@Z",
+    "prototype": "int(struct _L0_key *, unsigned __int8 *const, unsigned int, unsigned int, unsigned __int8 *const)",
+    "rank_score": 68,
+    "size": 309,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "GetRootKeyLdap(ldap *,ushort *,ushort const *,unsigned __int64,unsigned __int64,_ROOT_KEY_HEADER * *)",
+    "ea": "0x180008e1c",
+    "function_file": "functions/180008e1c_GetRootKeyLdap_ldap_ushort_ushort_const_unsigned_int64_unsigned_int64_ROOT_KEY_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\sidkeyldap.cxx"
+    ],
+    "name": "?GetRootKeyLdap@@YAJPEAUldap@@PEAGPEBG_K3PEAPEAU_ROOT_KEY_HEADER@@@Z",
+    "prototype": "__int64 __fastcall(struct ldap *, unsigned __int16 *, const unsigned __int16 *, unsigned __int64, unsigned __int64, struct _ROOT_KEY_HEADER **)",
+    "rank_score": 68,
+    "size": 143,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetAndLockCachedRPCBinding(ushort const *,ulong,ushort const *,int,int,int,void * *,_RPC_CACHE_TYPE *,int *)",
+    "ea": "0x18000ecb0",
+    "function_file": "functions/18000ecb0_GetAndLockCachedRPCBinding_ushort_const_ulong_ushort_const_int_int_int_void_RPC_CACHE_TYPE_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyrpccommon.cxx"
+    ],
+    "name": "?GetAndLockCachedRPCBinding@@YAJPEBGK0HHHPEAPEAXPEAW4_RPC_CACHE_TYPE@@PEAH@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned int, const unsigned __int16 *, int, int, int, void **, enum _RPC_CACHE_TYPE *, int *)",
+    "rank_score": 67,
+    "size": 255,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AddRootMetaDataToSortedList(__ROOT_KEY_METADATA *,_LIST_ENTRY *)",
+    "ea": "0x180004568",
+    "function_file": "functions/180004568_AddRootMetaDataToSortedList_ROOT_KEY_METADATA_LIST_ENTRY.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\kdscli\\kdsrootkey.cxx"
+    ],
+    "name": "?AddRootMetaDataToSortedList@@YAJPEAU__ROOT_KEY_METADATA@@PEAU_LIST_ENTRY@@@Z",
+    "prototype": "__int64 __fastcall(struct __ROOT_KEY_METADATA *, struct _LIST_ENTRY *)",
+    "rank_score": 65,
+    "size": 180,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "GetIntervalStartTime(unsigned __int64,ulong,ulong,ulong,unsigned __int64 *)",
+    "ea": "0x180010270",
+    "function_file": "functions/180010270_GetIntervalStartTime_unsigned_int64_ulong_ulong_ulong_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?GetIntervalStartTime@@YAJ_KKKKPEA_K@Z",
+    "prototype": "__int64 __fastcall(unsigned __int64, unsigned int, unsigned int, unsigned int, unsigned __int64 *)",
+    "rank_score": 65,
+    "size": 115,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "KdsGetKeyStartTime",
+    "ea": "0x180017310",
+    "function_file": "functions/180017310_KdsGetKeyStartTime.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\rpcclient\\gmsahelp.cxx"
+    ],
+    "name": "KdsGetKeyStartTime",
+    "prototype": "",
+    "rank_score": 64,
+    "size": 121,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ValidateSIDKeyID(uchar * const,ulong)",
+    "ea": "0x180010cf8",
+    "function_file": "functions/180010cf8_ValidateSIDKeyID_uchar_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\keyman\\sidkeyprov\\common\\sidkeyutil.cxx"
+    ],
+    "name": "?ValidateSIDKeyID@@YAPEAU_SID_KEY_ID_HEADER@@QEAEK@Z",
+    "prototype": "struct _SID_KEY_ID_HEADER *__fastcall(unsigned __int8 *const, unsigned int)",
+    "rank_score": 64,
+    "size": 91,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "wil::details::in1diag3::FailFast_Unexpected(void *,uint,char const *)",
+    "ea": "0x180012e14",
+    "function_file": "functions/180012e14_wil_details_in1diag3_FailFast_Unexpected_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "?FailFast_Unexpected@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this, void *, unsigned int, const char *)",
+    "rank_score": 45,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "wil::details::FeatureImpl<__WilFeatureTraits_Feature_Servicing_KdsSvc_DynamicCacheRefresh>::GetCachedFeatureEnabledState(void)",
+    "ea": "0x18000b594",
+    "function_file": "functions/18000b594_wil_details_FeatureImpl_WilFeatureTraits_Feature_Servicing_KdsSvc_DynamicCacheRefresh_GetCachedFeatureEnabledS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCachedFeatureEnabledState@?$FeatureImpl@U__WilFeatureTraits_Feature_Servicing_KdsSvc_DynamicCacheRefresh@@@details@wil@@AEAA?ATwil_details_FeatureStateCache@@XZ",
+    "prototype": "",
+    "rank_score": 39,
+    "size": 444,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 114,
+    "demangled": "SidKeyDebugTraceError(ulong,char const *,char const *,ulong)",
+    "ea": "0x18001a450",
+    "function_file": "functions/18001a450_SidKeyDebugTraceError_ulong_char_const_char_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SidKeyDebugTraceError@@YAXKPEBD0K@Z",
+    "prototype": "void __fastcall(unsigned int, const char *, const char *, unsigned int)",
+    "rank_score": 37,
+    "size": 62,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 47,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180001630",
+    "function_file": "functions/180001630_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 46,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18001b010",
+    "function_file": "functions/18001b010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureImpl<__WilFeatureTraits_Feature_Servicing_KdsSvc_DynamicCacheRefresh>::ReportUsage(bool,wil::ReportingKind,unsigned __int64)",
+    "ea": "0x18000ca94",
+    "function_file": "functions/18000ca94_wil_details_FeatureImpl_WilFeatureTraits_Feature_Servicing_KdsSvc_DynamicCacheRefresh_ReportUsage_bool_wil_Rep.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReportUsage@?$FeatureImpl@U__WilFeatureTraits_Feature_Servicing_KdsSvc_DynamicCacheRefresh@@@details@wil@@QEAAX_NW4ReportingKind@3@_K@Z",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 210,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 22,
+    "demangled": "__tailMerge_wldap32_dll",
+    "ea": "0x180002039",
+    "function_file": "functions/180002039_tailMerge_wldap32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_wldap32_dll",
+    "prototype": "",
+    "rank_score": 34,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800015e0",
+    "function_file": "functions/1800015e0_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 33,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 20,
+    "demangled": "__tailMerge_bcrypt_dll",
+    "ea": "0x18000218a",
+    "function_file": "functions/18000218a_tailMerge_bcrypt_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_bcrypt_dll",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "FreeL0Key(_L0_key *)",
+    "ea": "0x180004d5c",
+    "function_file": "functions/180004d5c_FreeL0Key_L0_key.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FreeL0Key@@YAXPEAU_L0_key@@@Z",
+    "prototype": "void __fastcall(struct _L0_key *lpMem)",
+    "rank_score": 31,
+    "size": 185,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "FreeRootKey(_ROOT_KEY_HEADER *)",
+    "ea": "0x180004e20",
+    "function_file": "functions/180004e20_FreeRootKey_ROOT_KEY_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FreeRootKey@@YAXPEAU_ROOT_KEY_HEADER@@@Z",
+    "prototype": "void __fastcall(struct _ROOT_KEY_HEADER *lpMem)",
+    "rank_score": 29,
+    "size": 184,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch",
+    "ea": "0x1800014a4",
+    "function_file": "functions/1800014a4_dllmain_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_dispatch",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 28,
+    "size": 295,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_after_initialize_c",
+    "ea": "0x18000179c",
+    "function_file": "functions/18000179c_scrt_dllmain_after_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_after_initialize_c",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach",
+    "ea": "0x180001318",
+    "function_file": "functions/180001318_dllmain_crt_process_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_attach",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 250,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_c",
+    "ea": "0x180001884",
+    "function_file": "functions/180001884_scrt_dllmain_uninitialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_c",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 48,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch",
+    "ea": "0x1800012c0",
+    "function_file": "functions/1800012c0_dllmain_crt_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_dispatch",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FreeRootKeyConfig(_ROOT_KEY_HEADER)",
+    "ea": "0x180004ee0",
+    "function_file": "functions/180004ee0_FreeRootKeyConfig_ROOT_KEY_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FreeRootKeyConfig@@YAXU_ROOT_KEY_HEADER@@@Z",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 85,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FreeServerConfig(_KDS_CONFIGURATION *)",
+    "ea": "0x180006d90",
+    "function_file": "functions/180006d90_FreeServerConfig_KDS_CONFIGURATION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FreeServerConfig@@YAXPEAU_KDS_CONFIGURATION@@@Z",
+    "prototype": "void __fastcall(struct _KDS_CONFIGURATION *lpMem)",
+    "rank_score": 24,
+    "size": 36,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18001a5c0",
+    "function_file": "functions/18001a5c0_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "__tailMerge_rpcrt4_dll",
+    "ea": "0x180002215",
+    "function_file": "functions/180002215_tailMerge_rpcrt4_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_rpcrt4_dll",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureImpl<__WilFeatureTraits_Feature_Servicing_KdsSvc_DynamicCacheRefresh>::__private_IsEnabled(void)",
+    "ea": "0x18000d248",
+    "function_file": "functions/18000d248_wil_details_FeatureImpl_WilFeatureTraits_Feature_Servicing_KdsSvc_DynamicCacheRefresh_private_IsEnabled_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?__private_IsEnabled@?$FeatureImpl@U__WilFeatureTraits_Feature_Servicing_KdsSvc_DynamicCacheRefresh@@@details@wil@@QEAA_NXZ",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 53,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_detach",
+    "ea": "0x180001418",
+    "function_file": "functions/180001418_dllmain_crt_process_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_detach",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 131,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "wil::details::EnabledStateManager::RecordCachedUsageUnderLock(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_RTL_SRWLOCK *,void (*)(_RTL_SRWLOCK *),&ReleaseSRWLockExclusive(_RTL_SRWLOCK *),wistd::integral_constant<unsigned __int64,1>,_RTL_SRWLOCK *,_RTL_SRWLOCK *,0,std::nullptr_t>>> const &)",
+    "ea": "0x18000c8d8",
+    "function_file": "functions/18000c8d8_wil_details_EnabledStateManager_RecordCachedUsageUnderLock_wil_unique_any_t_wil_details_unique_storage_wil_det.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecordCachedUsageUnderLock@EnabledStateManager@details@wil@@AEAAXAEBV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAU_RTL_SRWLOCK@@P6AXPEAU1@@Z$1?ReleaseSRWLockExclusive@@YAX0@ZU?$integral_constant@_K$00@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@3@@Z",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 437,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "swprintf_s",
+    "ea": "0x180001fdc",
+    "function_file": "functions/180001fdc_swprintf_s.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "swprintf_s",
+    "prototype": "int(wchar_t *const Buffer, const size_t BufferCount, const wchar_t *const Format, ...)",
+    "rank_score": 18,
+    "size": 93,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x18000d35c",
+    "function_file": "functions/18000d35c_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 730,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SIDKeyCopyString(ushort *,ushort * *)",
+    "ea": "0x180010850",
+    "function_file": "functions/180010850_SIDKeyCopyString_ushort_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SIDKeyCopyString@@YAJPEAGPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 16,
+    "size": 193,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__scrt_is_ucrt_dll_in_use",
+    "ea": "0x180001e68",
+    "function_file": "functions/180001e68_scrt_is_ucrt_dll_in_use.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_is_ucrt_dll_in_use",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::IsFeatureConfigured(wil_FeatureState *,uint,bool,wil_FeatureStore,int *)",
+    "ea": "0x180013d70",
+    "function_file": "functions/180013d70_wil_details_IsFeatureConfigured_wil_FeatureState_uint_bool_wil_FeatureStore_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsFeatureConfigured@details@wil@@YA_NPEAUwil_FeatureState@@I_NW4wil_FeatureStore@@PEAH@Z",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 226,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_exception_filter",
+    "ea": "0x180001834",
+    "function_file": "functions/180001834_scrt_dllmain_exception_filter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_exception_filter",
+    "prototype": "__int64 __fastcall(int, int, int, int, unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 72,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__tailMerge_crypt32_dll",
+    "ea": "0x1800023c0",
+    "function_file": "functions/1800023c0_tailMerge_crypt32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_crypt32_dll",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__tailMerge_ntasn1_dll",
+    "ea": "0x1800027ae",
+    "function_file": "functions/1800027ae_tailMerge_ntasn1_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_ntasn1_dll",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "DeleteAttrsList(ldapmodW * *,ulong)",
+    "ea": "0x180002a14",
+    "function_file": "functions/180002a14_DeleteAttrsList_ldapmodW_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteAttrsList@@YAXPEAPEAUldapmodW@@K@Z",
+    "prototype": "void __fastcall(struct ldapmodW **, unsigned int)",
+    "rank_score": 14,
+    "size": 66,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SIDKeyCopyBuffer(ulong,uchar *,ulong *,uchar * *)",
+    "ea": "0x1800107e0",
+    "function_file": "functions/1800107e0_SIDKeyCopyBuffer_ulong_uchar_ulong_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SIDKeyCopyBuffer@@YAJKPEAEPEAKPEAPEAE@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned __int8 *Src, unsigned int *, unsigned __int8 **)",
+    "rank_score": 14,
+    "size": 103,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_attach",
+    "ea": "0x1800017e8",
+    "function_file": "functions/1800017e8_scrt_dllmain_crt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_attach",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_logoncli_dll",
+    "ea": "0x180002559",
+    "function_file": "functions/180002559_tailMerge_logoncli_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_logoncli_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_netutils_dll",
+    "ea": "0x1800025e4",
+    "function_file": "functions/1800025e4_tailMerge_netutils_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_netutils_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_profapi_dll",
+    "ea": "0x180002723",
+    "function_file": "functions/180002723_tailMerge_profapi_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_profapi_dll",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_before_initialize_c",
+    "ea": "0x1800017d8",
+    "function_file": "functions/1800017d8_scrt_dllmain_before_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_before_initialize_c",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 7,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_detach",
+    "ea": "0x180001818",
+    "function_file": "functions/180001818_scrt_dllmain_crt_thread_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_detach",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_critical",
+    "ea": "0x1800018bc",
+    "function_file": "functions/1800018bc_scrt_dllmain_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "initialize_msvcrt_compatibility",
+    "ea": "0x180001290",
+    "function_file": "functions/180001290_initialize_msvcrt_compatibility.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "initialize_msvcrt_compatibility",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180002864",
+    "function_file": "functions/180002864_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 12,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::UsageIndex<wil_details_ServiceReportingKind,uint,0>::RecordUsage(wil_details_ServiceReportingKind,uint,uint)",
+    "ea": "0x180014988",
+    "function_file": "functions/180014988_wil_details_abi_UsageIndex_wil_details_ServiceReportingKind_uint_0_RecordUsage_wil_details_ServiceReportingKin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecordUsage@?$UsageIndex@W4wil_details_ServiceReportingKind@@I$0A@@details_abi@wil@@QEAA_NW4wil_details_ServiceReportingKind@@II@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 49,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::UsageIndex<wil_details_ServiceReportingKind,uint,2>::RecordUsage(wil_details_ServiceReportingKind,uint,uint)",
+    "ea": "0x180014954",
+    "function_file": "functions/180014954_wil_details_abi_UsageIndex_wil_details_ServiceReportingKind_uint_2_RecordUsage_wil_details_ServiceReportingKin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecordUsage@?$UsageIndex@W4wil_details_ServiceReportingKind@@I$01@details_abi@wil@@QEAA_NW4wil_details_ServiceReportingKind@@II@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__scrt_stub_for_is_c_termination_complete",
+    "ea": "0x18000287c",
+    "function_file": "functions/18000287c_scrt_stub_for_is_c_termination_complete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_is_c_termination_complete",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "ea": "0x180001220",
+    "function_file": "functions/180001220_wil_details_dynamic_initializer_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil::details::HrToNtStatus(long)",
+    "ea": "0x180013bac",
+    "function_file": "functions/180013bac_wil_details_HrToNtStatus_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HrToNtStatus@details@wil@@YAJJ@Z",
+    "prototype": "__int64 __fastcall(wil::details *__hidden this, int)",
+    "rank_score": 10,
+    "size": 444,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "wil::details::in1diag3::_FailFast_GetLastError(void *,uint,char const *)",
+    "ea": "0x1800165c8",
+    "function_file": "functions/1800165c8_wil_details_in1diag3_FailFast_GetLastError_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFast_GetLastError@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this, void *, unsigned int, const char *)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)",
+    "ea": "0x180003d7c",
+    "function_file": "functions/180003d7c_StringCchPrintfW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+    "prototype": "__int64(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, ...)",
+    "rank_score": 7,
+    "size": 131,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "_alloca_probe",
+    "ea": "0x18001a640",
+    "function_file": "functions/18001a640_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::details::ReportFailure_Hr<2>(void *,uint,char const *,char const *,char const *,void *,long,wil::FailureFlags)",
+    "ea": "0x180011440",
+    "function_file": "functions/180011440_wil_details_ReportFailure_Hr_2_void_uint_char_const_char_const_char_const_void_long_wil_FailureFlags.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Hr@$01@details@wil@@YAXPEAXIPEBD110JW4FailureFlags@1@@Z",
+    "prototype": "__int64 __fastcall(int, int, int, int, __int64, __int64, wil::details *)",
+    "rank_score": 6,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)",
+    "ea": "0x180015630",
+    "function_file": "functions/180015630_wil_details_in1diag3_Return_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void(wil::details::in1diag3 *__hidden this, void *, unsigned int, const char *, int)",
+    "rank_score": 6,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "wil::details::in1diag3::_FailFastImmediate_Unexpected(void)",
+    "ea": "0x1800165b8",
+    "function_file": "functions/1800165b8_wil_details_in1diag3_FailFastImmediate_Unexpected_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFastImmediate_Unexpected@in1diag3@details@wil@@YAXXZ",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this)",
+    "rank_score": 6,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "wil::details_abi::UsageIndexProperty::Read(uchar * &,uchar *)",
+    "ea": "0x1800145a8",
+    "function_file": "functions/1800145a8_wil_details_abi_UsageIndexProperty_Read_uchar_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Read@UsageIndexProperty@details_abi@wil@@QEAA_NAEAPEAEPEAE@Z",
+    "prototype": "bool __fastcall(wil::details_abi::UsageIndexProperty *__hidden this, unsigned __int8 **, unsigned __int8 *)",
+    "rank_score": 6,
+    "size": 230,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "McTemplateU0z_EventWriteTransfer",
+    "ea": "0x180006d10",
+    "function_file": "functions/180006d10_McTemplateU0z_EventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0z_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "__local_stdio_printf_options",
+    "ea": "0x180001264",
+    "function_file": "functions/180001264_local_stdio_printf_options.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__local_stdio_printf_options",
+    "prototype": "unsigned __int64 *__cdecl()",
+    "rank_score": 5,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "__scrt_stub_for_acrt_uninitialize_critical",
+    "ea": "0x180002870",
+    "function_file": "functions/180002870_scrt_stub_for_acrt_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_acrt_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "atexit",
+    "ea": "0x180001ae8",
+    "function_file": "functions/180001ae8_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 5,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::GetThreadContext(wil::FailureInfo *,wil::details::ThreadFailureCallbackHolder *,char *,unsigned __int64)",
+    "ea": "0x1800138b8",
+    "function_file": "functions/1800138b8_wil_details_ThreadFailureCallbackHolder_GetThreadContext_wil_FailureInfo_wil_details_ThreadFailureCallbackHold.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetThreadContext@ThreadFailureCallbackHolder@details@wil@@SA_NPEAUFailureInfo@3@PEAV123@PEAD_K@Z",
+    "prototype": "bool __fastcall(struct wil::FailureInfo *, struct wil::details::ThreadFailureCallbackHolder *, char *, unsigned __int64)",
+    "rank_score": 5,
+    "size": 220,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "wil::details_abi::UsageIndexes::UsageIndexes(void)",
+    "ea": "0x180011b2c",
+    "function_file": "functions/180011b2c_wil_details_abi_UsageIndexes_UsageIndexes_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0UsageIndexes@details_abi@wil@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(wil::details_abi::UsageIndexes *__hidden this)",
+    "rank_score": 5,
+    "size": 192,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x180004370",
+    "function_file": "functions/180004370_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 4,
+    "size": 256,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::UsageIndexProperty::Write(uchar * &,uchar *)",
+    "ea": "0x1800164dc",
+    "function_file": "functions/1800164dc_wil_details_abi_UsageIndexProperty_Write_uchar_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Write@UsageIndexProperty@details_abi@wil@@QEBA_NAEAPEAEPEAE@Z",
+    "prototype": "bool __fastcall(wil::details_abi::UsageIndexProperty *__hidden this, unsigned __int8 **, unsigned __int8 *)",
+    "rank_score": 4,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "FindCachedRPCHandle(ushort const *)",
+    "ea": "0x18000ebec",
+    "function_file": "functions/18000ebec_FindCachedRPCHandle_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FindCachedRPCHandle@@YAPEAU_RPC_HANDLE_CACHE@@PEBG@Z",
+    "prototype": "struct _RPC_HANDLE_CACHE *__fastcall(const unsigned __int16 *)",
+    "rank_score": 3,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "wistd::__function::__func<_lambda_8db0ce862824541f40dfb767113f1e28_,bool (void *,unsigned __int64,void *,unsigned __int64,uint)>::__move(wistd::__function::__base<bool (void *,unsigned __int64,void *,unsigned __int64,uint)> *)",
+    "ea": "0x180016610",
+    "function_file": "functions/180016610_wistd_function_func_lambda_8db0ce862824541f40dfb767113f1e28_bool_void_unsigned_int64_void_unsigned_int64_uint_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?__move@?$__func@V_lambda_8db0ce862824541f40dfb767113f1e28_@@$$A6A_NPEAX_K01I@Z@__function@wistd@@UEAAXPEAV?$__base@$$A6A_NPEAX_K01I@Z@23@@Z",
+    "prototype": "",
+    "rank_score": 0,
+    "size": 29,
+    "tags": []
+  }
+]

@@ -1,0 +1,41 @@
+# ComputeGrfscrUTF16(void const *)
+
+- ea: `0x180160ea0`
+- end: `0x180160f16`
+- name: `?ComputeGrfscrUTF16@@YAKPEBX@Z`
+- size: `118`
+- prototype: `unsigned int __fastcall(wchar_t *String2)`
+- caller_count: `7`
+- callee_count: `1`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18015ef30`
+- `0x1801d7748`
+- `0x1801d789c`
+- `0x1801d9540`
+- `0x180216d4c`
+- `0x18021cb60`
+- `0x18021cc10`
+
+## callees
+
+- `0x180160ea0`
+
+## import_xrefs
+
+- `msvcrt!_wcsicmp` at `0x180160edb`
+- `msvcrt!_wcsicmp` at `0x180160ef4`
+- `msvcrt!_wcsicmp` at `0x180160edb`
+- `msvcrt!_wcsicmp` at `0x180160ef4`
+
+## string_xrefs
+
+- `0x180160eed`: `STRIP EMBEDDED HTML COMMENTS`
+
+## pseudocode
+
+```c
+
+```

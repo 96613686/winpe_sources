@@ -1,0 +1,39 @@
+# InitializeProtectedPolicy
+
+- ea: `0x18018f000`
+- end: `0x18018f080`
+- name: `InitializeProtectedPolicy`
+- size: `128`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: `registry_config, loader_planting`
+
+## callers
+
+- `0x18018ef00`
+
+## callees
+
+- `0x18018f000`
+
+## import_xrefs
+
+- `KERNEL32!VirtualProtect` at `0x18018f04d`
+- `KERNEL32!VirtualProtect` at `0x18018f074`
+- `KERNEL32!VirtualProtect` at `0x18018f04d`
+- `KERNEL32!VirtualProtect` at `0x18018f074`
+- `KERNEL32!GetModuleHandleW` at `0x18018f015`
+- `KERNEL32!GetModuleHandleW` at `0x18018f015`
+- `KERNEL32!GetProcAddress` at `0x18018f02a`
+- `KERNEL32!GetProcAddress` at `0x18018f02a`
+
+## string_xrefs
+
+- `0x18018f006`: `api-ms-win-core-processthreads-l1-1-2.dll`
+
+## pseudocode
+
+```c
+
+```

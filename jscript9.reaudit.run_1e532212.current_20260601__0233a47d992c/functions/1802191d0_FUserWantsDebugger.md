@@ -1,0 +1,33 @@
+# FUserWantsDebugger
+
+- ea: `0x1802191d0`
+- end: `0x180219266`
+- name: `FUserWantsDebugger`
+- size: `150`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: `registry_config`
+
+## callers
+
+- `0x180111564`
+
+## callees
+
+- `0x1802191d0`
+
+## import_xrefs
+
+- `api-ms-win-downlevel-advapi32-l1-1-0!RegCloseKey` at `0x180219258`
+- `api-ms-win-downlevel-advapi32-l1-1-0!RegCloseKey` at `0x180219258`
+- `api-ms-win-downlevel-advapi32-l1-1-0!RegOpenKeyExW` at `0x18021920b`
+- `api-ms-win-downlevel-advapi32-l1-1-0!RegOpenKeyExW` at `0x18021920b`
+- `api-ms-win-downlevel-advapi32-l1-1-0!RegQueryValueExW` at `0x18021923d`
+- `api-ms-win-downlevel-advapi32-l1-1-0!RegQueryValueExW` at `0x18021923d`
+
+## pseudocode
+
+```c
+
+```

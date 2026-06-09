@@ -1,0 +1,132 @@
+# SmallNormalHeapBlock::NeedRescanObjects(Recycler *,RescanFlags)
+
+- ea: `0x180009500`
+- end: `0x1800095ec`
+- name: `?NeedRescanObjects@SmallNormalHeapBlock@@QEAA_NPEAVRecycler@@W4RescanFlags@@@Z`
+- size: `236`
+- prototype: ``
+- caller_count: `3`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x180008e4c`
+- `0x180255dd8`
+- `0x180255e44`
+
+## callees
+
+- `0x180009500`
+
+## import_xrefs
+
+- `KERNEL32!ResetWriteWatch` at `0x1800095ca`
+- `KERNEL32!ResetWriteWatch` at `0x1800095ca`
+- `KERNEL32!GetWriteWatch` at `0x180009599`
+- `KERNEL32!GetWriteWatch` at `0x180009599`
+
+## pseudocode
+
+```c
+bool __fastcall SmallNormalHeapBlock::NeedRescanObjects(__int64 a1, __int64 a2, unsigned int a3)
+{
+  void *v3; // rdx
+  DWORD dwGranularity; // [rsp+30h] [rbp-28h] BYREF
+  ULONG_PTR dwCount; // [rsp+38h] [rbp-20h] BYREF
+  PVOID Addresses; // [rsp+40h] [rbp-18h] BYREF
+
+  if ( (a3 & 1) != 0 )
+  {
+    *(_BYTE *)(a1 + 120) = 0;
+  }
+  else if ( *(_BYTE *)(a1 + 120) )
+  {
+    if ( (a3 & 2) != 0 )
+    {
+      ResetWriteWatch(*(LPVOID *)(a1 + 8), 0x1000u);
+      return 0;
+    }
+    return 0;
+  }
+  if ( !*(_WORD *)(a1 + 80) )
+    return 0;
+  if ( !*(_BYTE *)(a1 + 25) )
+  {
+    if ( !*(_BYTE *)(a2 + 12901) )
+    {
+      v3 = *(void **)(a1 + 8);
+      dwCount = 1;
+      dwGranularity = 4096;
+      Addresses = 0;
+      if ( !GetWriteWatch((a3 >> 1) & 1, v3, 0x1000u, &Addresses, &dwCount, &dwGranularity) )
+        return dwCount != 0;
+      return 1;
+    }
+    return 0;
+  }
+  if ( *(_BYTE *)(a2 + 12888) )
+    return 0;
+  *(_BYTE *)(a1 + 25) = 0;
+  return 1;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180009500  mov     [rsp+arg_10], r8d
+0x180009505  mov     [rsp+arg_8], rdx
+0x18000950a  mov     [rsp+arg_0], rcx
+0x18000950f  sub     rsp, 58h
+0x180009513  mov     r10d, [rsp+58h+arg_10]
+0x180009518  mov     rcx, [rsp+58h+arg_0]
+0x18000951d  test    r10b, 1
+0x180009521  jz      loc_1800095B1
+0x180009527  mov     byte ptr [rcx+78h], 0
+0x18000952b  cmp     word ptr [rcx+50h], 0
+0x180009530  jz      loc_1800095DD
+0x180009536  cmp     byte ptr [rcx+19h], 0
+0x18000953a  mov     rax, [rsp+58h+arg_8]
+0x18000953f  jnz     loc_1800095D4
+0x180009545  cmp     byte ptr [rax+3265h], 0
+0x18000954c  jnz     loc_1800095DD
+0x180009552  mov     rdx, [rcx+8]; lpBaseAddress
+0x180009556  lea     rax, [rsp+58h+dwGranularity]
+0x18000955b  mov     [rsp+58h+lpdwGranularity], rax; lpdwGranularity
+0x180009560  lea     r9, [rsp+58h+Addresses]; lpAddresses
+0x180009565  shr     r10d, 1
+0x180009568  lea     rax, [rsp+58h+dwCount]
+0x18000956d  and     r10d, 1
+0x180009571  mov     [rsp+58h+lpdwCount], rax; lpdwCount
+0x180009576  mov     ecx, r10d; dwFlags
+0x180009579  mov     [rsp+58h+dwCount], 1
+0x180009582  mov     r8d, 1000h; dwRegionSize
+0x180009588  mov     [rsp+58h+dwGranularity], 1000h
+0x180009590  mov     [rsp+58h+Addresses], 0
+0x180009599  call    cs:__imp_GetWriteWatch
+0x18000959f  test    eax, eax
+0x1800095a1  jnz     short loc_1800095E5
+0x1800095a3  cmp     [rsp+58h+dwCount], 0
+0x1800095a9  setnz   al
+0x1800095ac  add     rsp, 58h
+0x1800095b0  retn
+0x1800095b1  cmp     byte ptr [rcx+78h], 0
+0x1800095b5  jz      loc_18000952B
+0x1800095bb  test    r10b, 2
+0x1800095bf  jz      short loc_1800095DD
+0x1800095c1  mov     rcx, [rcx+8]; lpBaseAddress
+0x1800095c5  mov     edx, 1000h; dwRegionSize
+0x1800095ca  call    cs:__imp_ResetWriteWatch
+0x1800095d0  xor     al, al
+0x1800095d2  jmp     short loc_1800095AC
+0x1800095d4  cmp     byte ptr [rax+3258h], 0
+0x1800095db  jz      short loc_1800095E1
+0x1800095dd  xor     al, al
+0x1800095df  jmp     short loc_1800095AC
+0x1800095e1  mov     byte ptr [rcx+19h], 0
+0x1800095e5  mov     al, 1
+0x1800095e7  add     rsp, 58h
+0x1800095eb  retn
+```
