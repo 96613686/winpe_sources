@@ -1,0 +1,1275 @@
+[
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "PriExchangeDirs",
+    "ea": "0x14000223c",
+    "function_file": "functions/14000223c_PriExchangeDirs.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetVolumeName",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!TmTransactionObjectType",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PriExchangeDirs",
+    "prototype": "__int64 __fastcall(void *, void *, void *, void *, void *)",
+    "rank_score": 4431,
+    "size": 1650,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "PFPostCreate",
+    "ea": "0x140009aa0",
+    "function_file": "functions/140009aa0_PFPostCreate.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltDeleteStreamContext",
+      "FLTMGR!FltReissueSynchronousIo",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "FLTMGR!FltRemoveOpenReparseEntry",
+      "FLTMGR!FltSetCallbackDataDirty",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!IoGetTopLevelIrp",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsGetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "PFPostCreate",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 3249,
+    "size": 1204,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PFSubsumeContext",
+    "ea": "0x140001628",
+    "function_file": "functions/140001628_PFSubsumeContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceExclusive",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltDeleteStreamContext",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseResource",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "PFSubsumeContext",
+    "prototype": "__int64 __fastcall(PFLT_FILTER Filter, PFLT_INSTANCE Instance, __int64, __int64, __int64, PHANDLE TargetHandle)",
+    "rank_score": 3009,
+    "size": 710,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "PriGetObjectsFromUserHandle",
+    "ea": "0x14000aee0",
+    "function_file": "functions/14000aee0_PriGetObjectsFromUserHandle.md",
+    "matched_imports": [
+      "FLTMGR!FltEnumerateInstances",
+      "FLTMGR!FltGetVolumeFromFileObject",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltObjectReference",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PriGetObjectsFromUserHandle",
+    "prototype": "__int64 __fastcall(HANDLE Handle, ACCESS_MASK DesiredAccess, struct _FLT_FILTER **, PFLT_INSTANCE *, PFLT_VOLUME *, HANDLE *, PVOID *)",
+    "rank_score": 2209,
+    "size": 553,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PFSendExtractMessage",
+    "ea": "0x14000ab38",
+    "function_file": "functions/14000ab38_PFSendExtractMessage.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltSendMessage",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsProcessType",
+      "ntoskrnl!ZwDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "PFSendExtractMessage",
+    "prototype": "",
+    "rank_score": 2111,
+    "size": 790,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PFOpenById",
+    "ea": "0x140001188",
+    "function_file": "functions/140001188_PFOpenById.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFile",
+      "FLTMGR!FltQueryInformationFile",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!ObReferenceObjectByHandle"
+    ],
+    "matched_strings": [],
+    "name": "PFOpenById",
+    "prototype": "__int64 __usercall@<rax>(PFLT_FILTER Filter@<rcx>, PFLT_INSTANCE Instance@<rdx>, char, PVOID *Object, __int64, char)",
+    "rank_score": 1949,
+    "size": 783,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Unload",
+    "ea": "0x14000a230",
+    "function_file": "functions/14000a230_Unload.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceExclusive",
+      "FLTMGR!FltCloseCommunicationPort",
+      "FLTMGR!FltReleaseResource",
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!ExDeletePagedLookasideList",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!MmGetSystemRoutineAddress"
+    ],
+    "matched_strings": [
+      "RtlUnregisterFeatureConfigurationChangeNotification"
+    ],
+    "name": "Unload",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1877,
+    "size": 485,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14000c078",
+    "function_file": "functions/14000c078_DriverEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltBuildDefaultSecurityDescriptor",
+      "FLTMGR!FltCreateCommunicationPort",
+      "FLTMGR!FltFreeSecurityDescriptor",
+      "FLTMGR!FltRegisterFilter",
+      "FLTMGR!FltStartFiltering",
+      "ntoskrnl!ExInitializePagedLookasideList",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 1860,
+    "size": 591,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PFGetContextByFileObject",
+    "ea": "0x140009378",
+    "function_file": "functions/140009378_PFGetContextByFileObject.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltDeleteStreamContext",
+      "FLTMGR!FltFsControlFile",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetStreamContext",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "PFGetContextByFileObject",
+    "prototype": "__int64 __usercall@<rax>(PFLT_FILTER Filter@<rcx>, PFLT_INSTANCE Instance@<rdx>, PFILE_OBJECT FileObject@<r8>, __int64)",
+    "rank_score": 1808,
+    "size": 586,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PFReleaseContextAndUntagFile",
+    "ea": "0x14000a0d0",
+    "function_file": "functions/14000a0d0_PFReleaseContextAndUntagFile.md",
+    "matched_imports": [
+      "FLTMGR!FltDeleteStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltUntagFile",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "PFReleaseContextAndUntagFile",
+    "prototype": "",
+    "rank_score": 1715,
+    "size": 332,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PFPreCreate",
+    "ea": "0x140009f60",
+    "function_file": "functions/140009f60_PFPreCreate.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceShared",
+      "FLTMGR!FltAddOpenReparseEntry",
+      "FLTMGR!FltGetRequestorProcessId",
+      "FLTMGR!FltReleaseResource",
+      "FLTMGR!FltRemoveOpenReparseEntry",
+      "FLTMGR!FltSetCallbackDataDirty",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "PFPreCreate",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 1625,
+    "size": 359,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PriStubCreateChild",
+    "ea": "0x14000b4b8",
+    "function_file": "functions/14000b4b8_PriStubCreateChild.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFile",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "PriStubCreateChild",
+    "prototype": "__int64 __fastcall(void *, ACCESS_MASK, ULONG, ULONG, ULONG FileAttributes, __int128 *, void **TargetHandle)",
+    "rank_score": 1447,
+    "size": 499,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WMCommListInsert",
+    "ea": "0x14000ba5c",
+    "function_file": "functions/14000ba5c_WMCommListInsert.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceExclusive",
+      "FLTMGR!FltReleaseResource",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenProcess"
+    ],
+    "matched_strings": [],
+    "name": "WMCommListInsert",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 1436,
+    "size": 451,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PFSetSubsumedStatus",
+    "ea": "0x140001558",
+    "function_file": "functions/140001558_PFSetSubsumedStatus.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceExclusive",
+      "FLTMGR!FltDeleteStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseResource",
+      "FLTMGR!FltUntagFile",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "PFSetSubsumedStatus",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE InitiatingInstance)",
+    "rank_score": 1403,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PFOpenReparseTarget",
+    "ea": "0x1400098a8",
+    "function_file": "functions/1400098a8_PFOpenReparseTarget.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFile",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "PFOpenReparseTarget",
+    "prototype": "",
+    "rank_score": 1347,
+    "size": 498,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DuplicateEventIntoProcess",
+    "ea": "0x140002050",
+    "function_file": "functions/140002050_DuplicateEventIntoProcess.md",
+    "matched_imports": [
+      "ntoskrnl!ExEventObjectType",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateEvent",
+      "ntoskrnl!ZwDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "DuplicateEventIntoProcess",
+    "prototype": "__int64 __fastcall(HANDLE TargetProcessHandle, PHANDLE TargetHandle, PVOID *Object)",
+    "rank_score": 1134,
+    "size": 269,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PFGetWritableHandle",
+    "ea": "0x1400095c8",
+    "function_file": "functions/1400095c8_PFGetWritableHandle.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFile",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "PFGetWritableHandle",
+    "prototype": "",
+    "rank_score": 1047,
+    "size": 534,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PriStubRename",
+    "ea": "0x14000b6b4",
+    "function_file": "functions/14000b6b4_PriStubRename.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "PriStubRename",
+    "prototype": "__int64 __fastcall(HANDLE Handle, __int64, ULONG, FILE_INFORMATION_CLASS)",
+    "rank_score": 1016,
+    "size": 360,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PFOnlyConsiderDirectories",
+    "ea": "0x1400097f0",
+    "function_file": "functions/1400097f0_PFOnlyConsiderDirectories.md",
+    "matched_imports": [
+      "FLTMGR!FltIsDirectory",
+      "FLTMGR!FltReissueSynchronousIo",
+      "FLTMGR!FltRemoveOpenReparseEntry",
+      "FLTMGR!FltSetCallbackDataDirty"
+    ],
+    "matched_strings": [],
+    "name": "PFOnlyConsiderDirectories",
+    "prototype": "__int64 __usercall@<rax>(PFLT_CALLBACK_DATA CallbackData@<rcx>, __int64)",
+    "rank_score": 822,
+    "size": 176,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x14000c2d0",
+    "function_file": "functions/14000c2d0_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress"
+    ],
+    "matched_strings": [
+      "RtlQueryFeatureConfigurationChangeStamp",
+      "RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "__int64(void)",
+    "rank_score": 698,
+    "size": 506,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "PriProcessMessage",
+    "ea": "0x14000b110",
+    "function_file": "functions/14000b110_PriProcessMessage.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "PriProcessMessage",
+    "prototype": "__int64 __fastcall(__int64, volatile void *, unsigned int, char *, SIZE_T Length, _DWORD *)",
+    "rank_score": 628,
+    "size": 928,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "WMCommListEntryRelease",
+    "ea": "0x140002a94",
+    "function_file": "functions/140002a94_WMCommListEntryRelease.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseClientPort",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "WMCommListEntryRelease",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 616,
+    "size": 104,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PriSubsumeContext",
+    "ea": "0x14000b824",
+    "function_file": "functions/14000b824_PriSubsumeContext.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PriSubsumeContext",
+    "prototype": "__int64 __fastcall(void *, __int64, __int64, void **)",
+    "rank_score": 605,
+    "size": 220,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WMCommListGet",
+    "ea": "0x14000b9d8",
+    "function_file": "functions/14000b9d8_WMCommListGet.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquireResourceShared",
+      "FLTMGR!FltReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "WMCommListGet",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 124,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PFPathIsUnderTempDir",
+    "ea": "0x1400014a0",
+    "function_file": "functions/1400014a0_PFPathIsUnderTempDir.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "PFPathIsUnderTempDir",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 177,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PriStringEnsureCapacity",
+    "ea": "0x1400029e8",
+    "function_file": "functions/1400029e8_PriStringEnsureCapacity.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "PriStringEnsureCapacity",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 405,
+    "size": 137,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x14000c4d0",
+    "function_file": "functions/14000c4d0_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress"
+    ],
+    "matched_strings": [
+      "RtlQueryFeatureConfiguration"
+    ],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 257,
+    "size": 432,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x14000a710",
+    "function_file": "functions/14000a710_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress"
+    ],
+    "matched_strings": [
+      "RtlQueryFeatureConfiguration"
+    ],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 256,
+    "size": 341,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "PriCreateTransactional",
+    "ea": "0x140002164",
+    "function_file": "functions/140002164_PriCreateTransactional.md",
+    "matched_imports": [
+      "FLTMGR!FltCreateFileEx2"
+    ],
+    "matched_strings": [],
+    "name": "PriCreateTransactional",
+    "prototype": "__int64 __fastcall(int, int, int, int, __int64, int, PHANDLE FileHandle, PFILE_OBJECT *FileObject)",
+    "rank_score": 242,
+    "size": 208,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x140001c54",
+    "function_file": "functions/140001c54_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 277,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PFSendExchangeCloseHandlesMessage",
+    "ea": "0x14000aa34",
+    "function_file": "functions/14000aa34_PFSendExchangeCloseHandlesMessage.md",
+    "matched_imports": [
+      "FLTMGR!FltSendMessage"
+    ],
+    "matched_strings": [],
+    "name": "PFSendExchangeCloseHandlesMessage",
+    "prototype": "__int64 __fastcall(PFLT_FILTER Filter)",
+    "rank_score": 216,
+    "size": 252,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "WMCommListCreate",
+    "ea": "0x14000b9a0",
+    "function_file": "functions/14000b9a0_WMCommListCreate.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "WMCommListCreate",
+    "prototype": "__int64(void)",
+    "rank_score": 211,
+    "size": 50,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "MatchByGuid",
+    "ea": "0x14000b910",
+    "function_file": "functions/14000b910_MatchByGuid.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "MatchByGuid",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 39,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "PriDuplicateBufferFromUser",
+    "ea": "0x14000ae54",
+    "function_file": "functions/14000ae54_PriDuplicateBufferFromUser.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "PriDuplicateBufferFromUser",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 206,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PriGetString",
+    "ea": "0x140002950",
+    "function_file": "functions/140002950_PriGetString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "PriGetString",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 205,
+    "size": 144,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RtlRecordFeatureUsage",
+    "ea": "0x140001fe4",
+    "function_file": "functions/140001fe4_wil_details_RtlRecordFeatureUsage.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RtlRecordFeatureUsage",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "ProbeForRead_0",
+    "ea": "0x14000102f",
+    "function_file": "functions/14000102f_ProbeForRead_0.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "ProbeForRead_0",
+    "prototype": "void __stdcall(volatile void *Address, SIZE_T Length, ULONG Alignment)",
+    "rank_score": 104,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140002bb0",
+    "function_file": "functions/140002bb0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 24,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140002c90",
+    "function_file": "functions/140002c90_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140002b2c",
+    "function_file": "functions/140002b2c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14000c010",
+    "function_file": "functions/14000c010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x140001978",
+    "function_file": "functions/140001978_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 723,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "PriGetEntry",
+    "ea": "0x14000b950",
+    "function_file": "functions/14000b950_PriGetEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PriGetEntry",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 74,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14000a570",
+    "function_file": "functions/14000a570_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140001d98",
+    "function_file": "functions/140001d98_wil_details_RecordCachedUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14000c044",
+    "function_file": "functions/14000c044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140002c30",
+    "function_file": "functions/140002c30_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "memmove",
+    "ea": "0x140002d00",
+    "function_file": "functions/140002d00_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 12,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "WMCommListEntryAddRef",
+    "ea": "0x140002a78",
+    "function_file": "functions/140002a78_WMCommListEntryAddRef.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WMCommListEntryAddRef",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 19,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "MatchByProcessId",
+    "ea": "0x14000b940",
+    "function_file": "functions/14000b940_MatchByProcessId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MatchByProcessId",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 9,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "memset",
+    "ea": "0x140003000",
+    "function_file": "functions/140003000_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 7,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies",
+    "ea": "0x14000a41c",
+    "function_file": "functions/14000a41c_wil_details_EvaluateFeatureDependencies.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 271,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "RtlCopyFromUser",
+    "ea": "0x140001044",
+    "function_file": "functions/140001044_RtlCopyFromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 5,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RtlWriteUCharToUser",
+    "ea": "0x140009008",
+    "function_file": "functions/140009008_RtlWriteUCharToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteUCharToUser",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 4,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RtlWriteULong64ToUser",
+    "ea": "0x140009050",
+    "function_file": "functions/140009050_RtlWriteULong64ToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 4,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RtlWriteUShortToUser",
+    "ea": "0x140009098",
+    "function_file": "functions/140009098_RtlWriteUShortToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteUShortToUser",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 4,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__cpu_features_init",
+    "ea": "0x1400010e0",
+    "function_file": "functions/1400010e0_cpu_features_init.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__cpu_features_init",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__memset_repmovs",
+    "ea": "0x140003140",
+    "function_file": "functions/140003140_memset_repmovs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_repmovs",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14000a534",
+    "function_file": "functions/14000a534_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ParsePathElement",
+    "ea": "0x1400018f4",
+    "function_file": "functions/1400018f4_ParsePathElement.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ParsePathElement",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x140002be0",
+    "function_file": "functions/140002be0_RtlCopyVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 2,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x140001d70",
+    "function_file": "functions/140001d70_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyFromUser$thunk$11487580757436585079",
+    "ea": "0x140004010",
+    "function_file": "functions/140004010_RtlCopyFromUser_thunk_11487580757436585079.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser$thunk$11487580757436585079",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x140002bf0",
+    "function_file": "functions/140002bf0_RtlMoveVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteUCharToUser$thunk$17166446407143655193",
+    "ea": "0x140004020",
+    "function_file": "functions/140004020_RtlWriteUCharToUser_thunk_17166446407143655193.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteUCharToUser$thunk$17166446407143655193",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "ea": "0x140004030",
+    "function_file": "functions/140004030_RtlWriteULong64ToUser_thunk_4480820996488585629.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteUShortToUser$thunk$4279219291461662417",
+    "ea": "0x140004040",
+    "function_file": "functions/140004040_RtlWriteUShortToUser_thunk_4279219291461662417.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteUShortToUser$thunk$4279219291461662417",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__memset_spec_ermsb_repmovsb",
+    "ea": "0x140003380",
+    "function_file": "functions/140003380_memset_spec_ermsb_repmovsb.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_spec_ermsb_repmovsb",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 51,
+    "tags": []
+  }
+]

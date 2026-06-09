@@ -1,0 +1,1503 @@
+[
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WerSubmitUserCrashReportExt",
+    "ea": "0x14000c010",
+    "function_file": "functions/14000c010_WerSubmitUserCrashReportExt.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ObCloseHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateEvent",
+      "ntoskrnl!ZwCreateSection",
+      "ntoskrnl!ZwDuplicateObject",
+      "ntoskrnl!ZwMapViewOfSection",
+      "ntoskrnl!ZwQueryInformationThread",
+      "ntoskrnl!ZwUnmapViewOfSection"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: WerSubmitUserCrashReportExt: ZwQueryInformationThread/ThreadBasicInformation returned NTSTATUS %08X\n",
+      "WERKERNELHOST: WerSubmitUserCrashReportExt: ZwCreateEvent returned NTSTATUS %08X\n",
+      "WERKERNELHOST: WerSubmitUserCrashReportExt: ZwDuplicateObject/CompletionEvent returned NTSTATUS %08X\n",
+      "WERKERNELHOST: WerSubmitUserCrashReportExt: ZwCreateSection returned NTSTATUS %08X\n"
+    ],
+    "name": "WerSubmitUserCrashReportExt",
+    "prototype": "__int64 __fastcall(void *, __int64, __int64, int, int)",
+    "rank_score": 4595,
+    "size": 1358,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WerpCreateStoreDirectory",
+    "ea": "0x14000eb08",
+    "function_file": "functions/14000eb08_WerpCreateStoreDirectory.md",
+    "matched_imports": [
+      "ksecdd!SecLookupWellKnownSid",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateFile",
+      "ntoskrnl!RtlAddAccessAllowedAceEx",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!RtlSetOwnerSecurityDescriptor",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "WerpCreateStoreDirectory",
+    "prototype": "__int64()",
+    "rank_score": 3670,
+    "size": 880,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WerpSubmitReport",
+    "ea": "0x1400100f4",
+    "function_file": "functions/1400100f4_WerpSubmitReport.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwAlpcConnectPort",
+      "ntoskrnl!ZwAlpcSendWaitReceivePort",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDeleteKey",
+      "ntoskrnl!ZwQuerySystemInformation"
+    ],
+    "matched_strings": [
+      "\\WindowsErrorReportingServicePort",
+      "WERKERNELHOST: WerpGetRegistryKey failed for the busy key 0x%X\n",
+      "WERKERNELHOST: StringCchCopy failed for key with 0x%x\n",
+      "WERKERNELHOST: StringCchCopy failed for id with 0x%x\n",
+      "WERKERNELHOST: Service returned failure, ReplyMsg->u.status 0x%X\n"
+    ],
+    "name": "WerpSubmitReport",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 3662,
+    "size": 1545,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WerpCheckSpaceAvailableFull",
+    "ea": "0x14000d68c",
+    "function_file": "functions/14000d68c_WerpCheckSpaceAvailableFull.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwEnumerateKey",
+      "ntoskrnl!ZwQueryKey"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: WerpCheckSpaceAvailableFull: Failed to open key %ws\n"
+    ],
+    "name": "WerpCheckSpaceAvailableFull",
+    "prototype": "unsigned int *__fastcall(HANDLE KeyHandle, _DWORD *)",
+    "rank_score": 3261,
+    "size": 855,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WerpSetLastFullReportTime",
+    "ea": "0x14000fda8",
+    "function_file": "functions/14000fda8_WerpSetLastFullReportTime.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: Could not open NT_FULL_LIVE_KERNEL_REG_KEY_PATH, status 0x%X\n",
+      "WERKERNELHOST: Could not open NT_FULL_LIVE_KERNEL_REG_KEY_PATH, status 0x%X\n",
+      "WERKERNELHOST: Could not open report type key %ws, status 0x%X\n",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl"
+    ],
+    "name": "WerpSetLastFullReportTime",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 2791,
+    "size": 837,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WerpInitThrottlePolicy",
+    "ea": "0x140012588",
+    "function_file": "functions/140012588_WerpInitThrottlePolicy.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwEnumerateKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl\\FullLiveKernelReports",
+      "ComponentThrottleThreshold",
+      "VrfComponentThrottleThreshold",
+      "WERKERNELHOST: Registry PerComponentThreshold cannot be shorter than SystemThreshold.\n",
+      "WERKERNELHOST: Registry VrfComponentThreshold cannot be shorter than VrfSystemThreshold.\n",
+      "WERKERNELHOST: WerpInitThrottlePolicy: Failed to open key %ws\n",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl"
+    ],
+    "name": "WerpInitThrottlePolicy",
+    "prototype": "__int64()",
+    "rank_score": 2519,
+    "size": 1283,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WerpCreateReportMini",
+    "ea": "0x14000e83c",
+    "function_file": "functions/14000e83c_WerpCreateReportMini.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwFlushKey"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: ZwCreateKey failed with scode 0x%x for the root\n",
+      "WERKERNELHOST: ZwCreateKey failed with scode 0x%x for the report type\n",
+      "WERKERNELHOST: ZwCreateKey failed with scode 0x%x for the report id\n",
+      "WERKERNELHOST: Report id %S already exists\n",
+      "WERKERNELHOST: WerpCreateRegistryKey failed with status 0x%x for report pending\n",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl"
+    ],
+    "name": "WerpCreateReportMini",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, HANDLE *)",
+    "rank_score": 2470,
+    "size": 708,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WerpCreateDumpFile",
+    "ea": "0x14000dc94",
+    "function_file": "functions/14000dc94_WerpCreateDumpFile.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!IoCreateFile",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetOwnerSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: WerpCreateDumpFile: Invalid parameter\n",
+      "WERKERNELHOST: A dump file has already been opened. Filename %ws\n",
+      "WERKERNELHOST: Failed to create report directory, status 0x%X\n",
+      "WERKERNELHOST: Could not create file %ws, status 0x%X\n",
+      "WERKERNELHOST: WerpCreateDumpFile - created file handle %p, name %ws\n"
+    ],
+    "name": "WerpCreateDumpFile",
+    "prototype": "__int64 __fastcall(__int64, void **)",
+    "rank_score": 2461,
+    "size": 820,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WerpCreateReportFull",
+    "ea": "0x14000e464",
+    "function_file": "functions/14000e464_WerpCreateReportFull.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwFlushKey"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: ZwCreateKey failed with scode 0x%x for the root\n",
+      "WERKERNELHOST: ZwCreateKey failed with scode 0x%x for the report type\n",
+      "WERKERNELHOST: ZwCreateKey failed with scode 0x%x for the report id\n",
+      "WERKERNELHOST: Report id %S already exists\n",
+      "WERKERNELHOST: WerpCreateRegistryKey failed with status 0x%x for report pending\n",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl"
+    ],
+    "name": "WerpCreateReportFull",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, HANDLE *)",
+    "rank_score": 2270,
+    "size": 703,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "WerLiveKernelCreateReportExt",
+    "ea": "0x14000c6f0",
+    "function_file": "functions/14000c6f0_WerLiveKernelCreateReportExt.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: WerLiveKernelCreateReportExt: Invalid parameter\n",
+      "WERKERNELHOST: WerLiveKernelCreateReportExt: Reports not initialized\n",
+      "WERKERNELHOST: CheckPolicy throttled dump creation for Component \n",
+      "WERKERNELHOST:  RtlStringCchCopyW failed to copy ComponentName, status 0x%X\n",
+      "WERKERNELHOST: Could not create report ID, error 0x%X\n",
+      "WERKERNELHOST: WerKernelCreateReport failed, status 0x%X\n",
+      "WERKERNELHOST: WerLiveKernelCreateReport: returning reportHandle %p Policy %i\n",
+      "WERKERNELHOST: EtwWrite failed with 0x%X\n"
+    ],
+    "name": "WerLiveKernelCreateReportExt",
+    "prototype": "__int64 __fastcall(const WCHAR *, int *, _QWORD *)",
+    "rank_score": 2168,
+    "size": 1102,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WerpSendWersvcMessageWERSVC_REPORT_CRASH",
+    "ea": "0x140001368",
+    "function_file": "functions/140001368_WerpSendWersvcMessageWERSVC_REPORT_CRASH.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObCloseHandle",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!PsProcessType",
+      "ntoskrnl!ZwDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "WerpSendWersvcMessageWERSVC_REPORT_CRASH",
+    "prototype": "__int64 __fastcall(PVOID *, __int64, int, int, __int64)",
+    "rank_score": 1908,
+    "size": 578,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WerpExceedsPerComponentThreshold",
+    "ea": "0x14000efa4",
+    "function_file": "functions/14000efa4_WerpExceedsPerComponentThreshold.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: WerpExceedsPerComponentThreshold: Invalid param OverrideSystemPolicy\n",
+      "WERKERNELHOST: Component %ws: OverridePolicy enabled. New threshold time %lli\n",
+      "WERKERNELHOST: Component %ws: Threshold time is not met. Threshold time %lli, Current time %lli\n",
+      "WERKERNELHOST: Component %ws: Threshold time is met. Threshold time %lli, Current time %lli\n"
+    ],
+    "name": "WerpExceedsPerComponentThreshold",
+    "prototype": "char __fastcall(PCWSTR SourceString, signed __int64, unsigned __int64, _BYTE *)",
+    "rank_score": 1586,
+    "size": 407,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "WerLiveKernelInitSystemExt",
+    "ea": "0x140012080",
+    "function_file": "functions/140012080_WerLiveKernelInitSystemExt.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!EtwSetInformation",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQueryDirectoryFile"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: WerpInitRootPath failed with status 0x%X\n",
+      "\\SystemRoot\\System32",
+      "wersvc.dll"
+    ],
+    "name": "WerLiveKernelInitSystemExt",
+    "prototype": "__int64()",
+    "rank_score": 1582,
+    "size": 570,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WerpCountFullDump",
+    "ea": "0x14000da6c",
+    "function_file": "functions/14000da6c_WerpCountFullDump.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQueryDirectoryFile"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: Could not open root dump directory, status 0x%X\n",
+      "WERKERNELHOST: ZwQueryDirectoryFile failed with status 0x%X\n"
+    ],
+    "name": "WerpCountFullDump",
+    "prototype": "__int64 __fastcall(_DWORD *)",
+    "rank_score": 1517,
+    "size": 543,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "WerpQueryComponentOverridePolicy",
+    "ea": "0x14000f6d8",
+    "function_file": "functions/14000f6d8_WerpQueryComponentOverridePolicy.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: WerpQueryComponentOverridePolicy: Invalid params\n",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl\\FullLiveKernelReports",
+      "WERKERNELHOST: RtlStringCbPrintfW failed for generating KeyBuffer for component %ws, status 0x%X.\n",
+      "WERKERNELHOST: WerpGetRegistryKey failed for opening %ws, status 0x%X.\n",
+      "WERKERNELHOST: OverridePolicy found for component %ws, Overridden threshold time %lli\n",
+      "WERKERNELHOST: OverridePolicy not found for component %ws\n",
+      "WERKERNELHOST: Failed to query OverridePolicy for component %ws, status 0x%X\n"
+    ],
+    "name": "WerpQueryComponentOverridePolicy",
+    "prototype": "__int64 __fastcall(WCHAR *, _BYTE *, __int64 *)",
+    "rank_score": 1510,
+    "size": 475,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "WerpRefreshRootPath",
+    "ea": "0x14000f8bc",
+    "function_file": "functions/14000f8bc_WerpRefreshRootPath.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "LiveKernelReportsPath",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl\\LiveKernelReports",
+      "WERKERNELHOST: WerpRefreshRootPath: LiveKernelReportsPath value is an invalid string.\n",
+      "WERKERNELHOST: The live reports root path has changed.\n",
+      "WERKERNELHOST: New root path buffer could not be allocated. Using existing path.\n",
+      "WERKERNELHOST: Could not create new root path. Using existing path.\n"
+    ],
+    "name": "WerpRefreshRootPath",
+    "prototype": "__int64()",
+    "rank_score": 1463,
+    "size": 732,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WerpAllocateAndInitializeSid",
+    "ea": "0x14000d070",
+    "function_file": "functions/14000d070_WerpAllocateAndInitializeSid.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlLengthRequiredSid",
+      "ntoskrnl!RtlSubAuthoritySid"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: RtlInitializeSid failed\n"
+    ],
+    "name": "WerpAllocateAndInitializeSid",
+    "prototype": "__int64 __fastcall(PSID_IDENTIFIER_AUTHORITY IdentifierAuthority, __int64, __int64, __int64, int, int, int, int, int, int, _QWORD *)",
+    "rank_score": 1454,
+    "size": 252,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WerpFullDumpIsThrottled",
+    "ea": "0x14000f1f8",
+    "function_file": "functions/14000f1f8_WerpFullDumpIsThrottled.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetPhysicalMemoryRanges",
+      "ntoskrnl!MmIsVerifierEnabled",
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "WerpFullDumpIsThrottled",
+    "prototype": "char __fastcall(PCWSTR SourceString, _DWORD *)",
+    "rank_score": 1429,
+    "size": 480,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WerpCheckSpaceAvailable",
+    "ea": "0x14000d558",
+    "function_file": "functions/14000d558_WerpCheckSpaceAvailable.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwQueryKey"
+    ],
+    "matched_strings": [],
+    "name": "WerpCheckSpaceAvailable",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 1405,
+    "size": 302,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WerpCreateRegistryKey",
+    "ea": "0x14000dfd0",
+    "function_file": "functions/14000dfd0_WerpCreateRegistryKey.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetOwnerSecurityDescriptor",
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: ZwCreateKey failed with scode 0x%x\n"
+    ],
+    "name": "WerpCreateRegistryKey",
+    "prototype": "__int64 __fastcall(void *, const WCHAR *, ACCESS_MASK, char, void **KeyHandle, bool *)",
+    "rank_score": 1299,
+    "size": 446,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WerpCreateReportDirectory",
+    "ea": "0x14000e260",
+    "function_file": "functions/14000e260_WerpCreateReportDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!IoCreateFile",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlSetOwnerSecurityDescriptor",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: Failed to initialize report directory ReportType, status 0x%X\n"
+    ],
+    "name": "WerpCreateReportDirectory",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1298,
+    "size": 507,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WerStartSystemErrorHandler",
+    "ea": "0x14000ce68",
+    "function_file": "functions/14000ce68_WerStartSystemErrorHandler.md",
+    "matched_imports": [
+      "ntoskrnl!EtwEventEnabled",
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!EtwWrite",
+      "ntoskrnl!ZwQueryWnfStateNameInformation",
+      "ntoskrnl!ZwUpdateWnfStateData"
+    ],
+    "matched_strings": [],
+    "name": "WerStartSystemErrorHandler",
+    "prototype": "__int64()",
+    "rank_score": 1236,
+    "size": 312,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "WerpInitRootPath",
+    "ea": "0x1400122c0",
+    "function_file": "functions/1400122c0_WerpInitRootPath.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: ZwCreateKey failed with scode 0x%x for the root\n",
+      "LiveKernelReportsPath",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl\\LiveKernelReports",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl"
+    ],
+    "name": "WerpInitRootPath",
+    "prototype": "__int64()",
+    "rank_score": 1185,
+    "size": 703,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WerpCheckDiskSpace",
+    "ea": "0x14000d2a8",
+    "function_file": "functions/14000d2a8_WerpCheckDiskSpace.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQueryVolumeInformationFile"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: Could not open root dump directory, status 0x%X\n"
+    ],
+    "name": "WerpCheckDiskSpace",
+    "prototype": "char()",
+    "rank_score": 1086,
+    "size": 391,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WerpCancelReport",
+    "ea": "0x14000d1d0",
+    "function_file": "functions/14000d1d0_WerpCancelReport.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDeleteKey"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: ZwDeleteKey failed with 0x%x\n"
+    ],
+    "name": "WerpCancelReport",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 1055,
+    "size": 210,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WerpSendWersvcMessage",
+    "ea": "0x1400011a0",
+    "function_file": "functions/1400011a0_WerpSendWersvcMessage.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ZwAlpcConnectPort",
+      "ntoskrnl!ZwAlpcSendWaitReceivePort",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQuerySystemInformation"
+    ],
+    "matched_strings": [],
+    "name": "WerpSendWersvcMessage",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1017,
+    "size": 447,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WerpCheckPolicy",
+    "ea": "0x14000d438",
+    "function_file": "functions/14000d438_WerpCheckPolicy.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "WerpCheckPolicy",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, int, int *)",
+    "rank_score": 1015,
+    "size": 281,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "WerLiveKernelOpenDumpFileExt",
+    "ea": "0x14000cb50",
+    "function_file": "functions/14000cb50_WerLiveKernelOpenDumpFileExt.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST:  WerLiveKernelOpenDumpFileExt: Invalid parameter\n",
+      "WERKERNELHOST: WerLiveKernelOpenDumpFileExt: invalid context.\n",
+      "WERKERNELHOST: WepCreateDumpFile failed, status 0x%x\n",
+      "WERKERNELHOST: WerLiveKernelOpenDumpFileExt: returning dump handle %p, report reportHandle %p\n"
+    ],
+    "name": "WerLiveKernelOpenDumpFileExt",
+    "prototype": "__int64 __fastcall(_DWORD *, _QWORD *)",
+    "rank_score": 963,
+    "size": 240,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "WerpGetRegistryKey",
+    "ea": "0x14000f3e0",
+    "function_file": "functions/14000f3e0_WerpGetRegistryKey.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: ZwOpenKey failed with scode 0x%x\n"
+    ],
+    "name": "WerpGetRegistryKey",
+    "prototype": "__int64 __fastcall(void *, const WCHAR *, ACCESS_MASK, void **)",
+    "rank_score": 890,
+    "size": 209,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WerpDeleteDumpFile",
+    "ea": "0x14000ee80",
+    "function_file": "functions/14000ee80_WerpDeleteDumpFile.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!IoCreateFile",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: WerpDeleteDumpFile No dump file to delete. \n"
+    ],
+    "name": "WerpDeleteDumpFile",
+    "prototype": "NTSTATUS __fastcall(__int64)",
+    "rank_score": 884,
+    "size": 286,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "WerLiveKernelSubmitReportExt",
+    "ea": "0x14000cc50",
+    "function_file": "functions/14000cc50_WerLiveKernelSubmitReportExt.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx"
+    ],
+    "matched_strings": [
+      "WERKERNELHOST: EtwWrite failed with 0x%X\n"
+    ],
+    "name": "WerLiveKernelSubmitReportExt",
+    "prototype": "__int64 __fastcall(_DWORD *)",
+    "rank_score": 859,
+    "size": 528,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WerpRefreshThrottlePolicy",
+    "ea": "0x14000fba0",
+    "function_file": "functions/14000fba0_WerpRefreshThrottlePolicy.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl\\FullLiveKernelReports",
+      "ComponentThrottleThreshold",
+      "VrfComponentThrottleThreshold",
+      "WERKERNELHOST: Registry PerComponentThreshold cannot be shorter than SystemThreshold.\n",
+      "WERKERNELHOST: Registry VrfComponentThreshold cannot be shorter than VrfSystemThreshold.\n"
+    ],
+    "name": "WerpRefreshThrottlePolicy",
+    "prototype": "NTSTATUS()",
+    "rank_score": 829,
+    "size": 514,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WerWaitForSystemErrorHandler",
+    "ea": "0x14000cfa8",
+    "function_file": "functions/14000cfa8_WerWaitForSystemErrorHandler.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenEvent",
+      "ntoskrnl!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "\\KernelObjects\\SystemErrorPortReady"
+    ],
+    "name": "WerWaitForSystemErrorHandler",
+    "prototype": "NTSTATUS __fastcall(int)",
+    "rank_score": 684,
+    "size": 194,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x140012a94",
+    "function_file": "functions/140012a94_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlRegisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "__int64()",
+    "rank_score": 616,
+    "size": 353,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WerpCreateReportId",
+    "ea": "0x14000e72c",
+    "function_file": "functions/14000e72c_WerpCreateReportId.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExSystemTimeToLocalTime",
+      "ntoskrnl!RtlTimeToTimeFields"
+    ],
+    "matched_strings": [],
+    "name": "WerpCreateReportId",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 606,
+    "size": 265,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WerpCloseHandle",
+    "ea": "0x14000d9ec",
+    "function_file": "functions/14000d9ec_WerpCloseHandle.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "WerpCloseHandle",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 603,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WerpGetRegistryValueInfo",
+    "ea": "0x14000f640",
+    "function_file": "functions/14000f640_WerpGetRegistryValueInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "WerpGetRegistryValueInfo",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, PUNICODE_STRING ValueName, _QWORD *)",
+    "rank_score": 417,
+    "size": 143,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140002078",
+    "function_file": "functions/140002078_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *, __int64, __int64)",
+    "rank_score": 230,
+    "size": 656,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x140001f88",
+    "function_file": "functions/140001f88_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "_BOOL8 __fastcall(__int64, __int64, unsigned int)",
+    "rank_score": 226,
+    "size": 233,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "WerpAllocateMem",
+    "ea": "0x14000d174",
+    "function_file": "functions/14000d174_WerpAllocateMem.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WerpAllocateMem",
+    "prototype": "PVOID __fastcall(int)",
+    "rank_score": 216,
+    "size": 84,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WerpGetRegistryUlongValue",
+    "ea": "0x14000f5b4",
+    "function_file": "functions/14000f5b4_WerpGetRegistryUlongValue.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WerpGetRegistryUlongValue",
+    "prototype": "__int64 __fastcall(void *, struct _UNICODE_STRING *, int, _DWORD *)",
+    "rank_score": 216,
+    "size": 132,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x140012bfc",
+    "function_file": "functions/140012bfc_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "void()",
+    "rank_score": 215,
+    "size": 383,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x1400023e8",
+    "function_file": "functions/1400023e8_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "_DWORD *__fastcall(int, __int64)",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x140010a80",
+    "function_file": "functions/140010a80_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "void()",
+    "rank_score": 215,
+    "size": 292,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WerpGetRegistryLong64Value",
+    "ea": "0x14000f4b8",
+    "function_file": "functions/14000f4b8_WerpGetRegistryLong64Value.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WerpGetRegistryLong64Value",
+    "prototype": "__int64 __fastcall(void *, struct _UNICODE_STRING *, void *, _QWORD *)",
+    "rank_score": 214,
+    "size": 140,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WerpCreateReport",
+    "ea": "0x14000e194",
+    "function_file": "functions/14000e194_WerpCreateReport.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "WerpCreateReport",
+    "prototype": "__int64 __fastcall(int, __int64, __int64, __int64, __int64)",
+    "rank_score": 206,
+    "size": 197,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RtlStringCchPrintfW",
+    "ea": "0x140001a24",
+    "function_file": "functions/140001a24_RtlStringCchPrintfW.md",
+    "matched_imports": [
+      "ntoskrnl!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "RtlStringCchPrintfW",
+    "prototype": "NTSTATUS(NTSTRSAFE_PWSTR pszDest, size_t cchDest, NTSTRSAFE_PCWSTR pszFormat, ...)",
+    "rank_score": 204,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WerpFreeMem",
+    "ea": "0x14000f1d4",
+    "function_file": "functions/14000f1d4_WerpFreeMem.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WerpFreeMem",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 204,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140001788",
+    "function_file": "functions/140001788_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, const EVENT_DESCRIPTOR *, __int64, ULONG UserDataCount, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 203,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, unsigned __int8 *, __int64, __int64, ULONG UserDataCount, struct _EVENT_DATA_DESCRIPTOR *)",
+    "rank_score": 203,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140002750",
+    "function_file": "functions/140002750_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 30,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x140001e68",
+    "function_file": "functions/140001e68_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "__int64 (__fastcall *__fastcall(__int64, __int64, unsigned int))(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 279,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14000261c",
+    "function_file": "functions/14000261c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140012010",
+    "function_file": "functions/140012010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x140002310",
+    "function_file": "functions/140002310_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "void __fastcall(unsigned __int8, int)",
+    "rank_score": 22,
+    "size": 60,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x140001b8c",
+    "function_file": "functions/140001b8c_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "__int64 __fastcall(__int64, volatile signed __int32 *, int, int)",
+    "rank_score": 17,
+    "size": 723,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140002790",
+    "function_file": "functions/140002790_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x1400108e4",
+    "function_file": "functions/1400108e4_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *, unsigned __int32, __int64)",
+    "rank_score": 16,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WerpGetRegistryTimeoutValue",
+    "ea": "0x14000f54c",
+    "function_file": "functions/14000f54c_WerpGetRegistryTimeoutValue.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WerpGetRegistryTimeoutValue",
+    "prototype": "__int64 __fastcall(void *, struct _UNICODE_STRING *, unsigned int, __int64 *)",
+    "rank_score": 15,
+    "size": 98,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Feature_Servicing_WerReportBootLKD__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x1400015ec",
+    "function_file": "functions/1400015ec_Feature_Servicing_WerReportBootLKD_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Servicing_WerReportBootLKD__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "__int64()",
+    "rank_score": 14,
+    "size": 53,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "memset",
+    "ea": "0x140002c40",
+    "function_file": "functions/140002c40_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 13,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140012044",
+    "function_file": "functions/140012044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x1400027c0",
+    "function_file": "functions/1400027c0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140012d84",
+    "function_file": "functions/140012d84_DriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllUnload",
+    "ea": "0x140010bb0",
+    "function_file": "functions/140010bb0_DllUnload.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllUnload",
+    "prototype": "__int64()",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "memmove",
+    "ea": "0x140002940",
+    "function_file": "functions/140002940_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 8,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies",
+    "ea": "0x140010790",
+    "function_file": "functions/140010790_wil_details_EvaluateFeatureDependencies.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies",
+    "prototype": "void()",
+    "rank_score": 6,
+    "size": 271,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0zqqqq_EtwWriteTransfer",
+    "ea": "0x1400017e8",
+    "function_file": "functions/1400017e8_McTemplateU0zqqqq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0zqqqq_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64, const wchar_t *, int, char, char, char)",
+    "rank_score": 5,
+    "size": 204,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0zqzq_EtwWriteTransfer",
+    "ea": "0x1400018bc",
+    "function_file": "functions/1400018bc_McTemplateU0zqzq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0zqzq_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64, const wchar_t *, int, const wchar_t *, char)",
+    "rank_score": 5,
+    "size": 223,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140001640",
+    "function_file": "functions/140001640_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x1400108a8",
+    "function_file": "functions/1400108a8_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "__int64 __fastcall(unsigned int *, __int64)",
+    "rank_score": 3,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WerpSuppressReadFaultsFilter",
+    "ea": "0x1400015b0",
+    "function_file": "functions/1400015b0_WerpSuppressReadFaultsFilter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WerpSuppressReadFaultsFilter",
+    "prototype": "_BOOL8 __fastcall(int, __int64, unsigned __int64)",
+    "rank_score": 2,
+    "size": 50,
+    "tags": []
+  }
+]
