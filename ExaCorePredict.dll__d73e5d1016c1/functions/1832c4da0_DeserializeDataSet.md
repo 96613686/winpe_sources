@@ -1,0 +1,173 @@
+# DeserializeDataSet
+
+- ea: `0x1832c4da0`
+- end: `0x1832c5e44`
+- name: `DeserializeDataSet`
+- size: `4260`
+- prototype: `__int64 __fastcall(DataSet *this)`
+- caller_count: `2`
+- callee_count: `60`
+- tags: `registry_config`
+
+## callers
+
+- `0x1832c6c40`
+- `0x1832c9d60`
+
+## callees
+
+- `0x182da9d20`
+- `0x182dbf6f0`
+- `0x182dbf780`
+- `0x182dbf7f0`
+- `0x182dbf8c0`
+- `0x182dc10b0`
+- `0x182dc2100`
+- `0x182dc3140`
+- `0x182dc8fe0`
+- `0x182fd7d80`
+- `0x1830529d0`
+- `0x183052ed0`
+- `0x183053010`
+- `0x183053060`
+- `0x183053170`
+- `0x1830f9e50`
+- `0x1830fa150`
+- `0x1831006a0`
+- `0x183292260`
+- `0x183292af0`
+- `0x183292fd0`
+- `0x183293960`
+- `0x183293e40`
+- `0x183294380`
+- `0x183294d40`
+- `0x183295220`
+- `0x183295700`
+- `0x183295a90`
+- `0x183295b10`
+- `0x183295b50`
+- `0x183295bd0`
+- `0x183295c10`
+- `0x183295c50`
+- `0x183295cd0`
+- `0x183295d10`
+- `0x183295d50`
+- `0x183297080`
+- `0x183297880`
+- `0x18329fef0`
+- `0x18329ffd0`
+- `0x1832a0040`
+- `0x1832a0120`
+- `0x1832a0190`
+- `0x1832a0200`
+- `0x1832a0320`
+- `0x1832a0390`
+- `0x1832a0400`
+- `0x1832a64c0`
+- `0x1832aa590`
+- `0x1832c3a30`
+
+## import_xrefs
+
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c4eac`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c4f0a`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c4f64`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c4fb9`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5024`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c507e`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c50d3`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5131`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5189`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5326`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5365`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c53b2`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c53f7`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c55ce`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c56b3`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5799`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5879`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5958`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5a38`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5b23`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c4eac`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c4f0a`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c4f64`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c4fb9`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5024`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c507e`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c50d3`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5131`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5189`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5326`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5365`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c53b2`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c53f7`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c55ce`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c56b3`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5799`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5879`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5958`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5a38`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1832c5b23`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c52bb`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c52c2`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c52c9`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c52d0`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c5c50`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c5c57`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c5c5e`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c5c65`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c52bb`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c52c2`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c52c9`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c52d0`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c5c50`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c5c57`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c5c5e`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo_noreturn` at `0x1832c5c65`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c4ea0`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c4efe`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c4f58`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c4fad`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5018`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5072`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c50c7`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5125`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c517d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c531a`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5359`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c53a6`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c53eb`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c55c2`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c56a7`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c578d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c586d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c594c`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5a2c`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5b17`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c4ea0`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c4efe`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c4f58`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c4fad`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5018`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5072`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c50c7`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5125`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c517d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c531a`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5359`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c53a6`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c53eb`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c55c2`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c56a7`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c578d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c586d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c594c`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5a2c`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1832c5b17`
+
+## pseudocode
+
+```c
+
+```

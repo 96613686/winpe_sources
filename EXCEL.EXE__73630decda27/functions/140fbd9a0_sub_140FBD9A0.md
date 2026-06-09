@@ -1,0 +1,184 @@
+# sub_140FBD9A0
+
+- ea: `0x140fbd9a0`
+- end: `0x140fbf573`
+- name: `sub_140FBD9A0`
+- size: `7123`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `44`
+- tags: `registry_config, installer_update`
+
+## callees
+
+- `0x14004e950`
+- `0x140054fe0`
+- `0x140055190`
+- `0x140055280`
+- `0x1400768c0`
+- `0x1400769a0`
+- `0x1400790a0`
+- `0x14007ee80`
+- `0x14007fb80`
+- `0x14007fc60`
+- `0x1400a2f20`
+- `0x1400d2e40`
+- `0x1400d5ee0`
+- `0x1400d71fc`
+- `0x14016ed60`
+- `0x140183210`
+- `0x1401f9200`
+- `0x140308ad0`
+- `0x14045ae55`
+- `0x140581ff0`
+- `0x1405839c0`
+- `0x140584984`
+- `0x1408d2bb0`
+- `0x1408d6570`
+- `0x140d35cd0`
+- `0x140de7794`
+- `0x140de8dc0`
+- `0x140fbd9a0`
+- `0x141081bd0`
+- `0x1410b4aa0`
+- `0x1410bf740`
+- `0x1410d57c0`
+- `0x14119a0b0`
+- `0x1411a71a0`
+- `0x1411e9510`
+- `0x141225d50`
+- `0x1412640f0`
+- `0x1412d51a0`
+- `0x141315a10`
+- `0x141323780`
+- `0x1413253b0`
+- `0x14132e070`
+- `0x14137bdb0`
+- `0x14360dec0`
+
+## import_xrefs
+
+- `KERNEL32!EnterCriticalSection` at `0x140fbdc19`
+- `KERNEL32!EnterCriticalSection` at `0x140fbf366`
+- `KERNEL32!EnterCriticalSection` at `0x140fbdc19`
+- `KERNEL32!EnterCriticalSection` at `0x140fbf366`
+- `KERNEL32!LeaveCriticalSection` at `0x140fbdc80`
+- `KERNEL32!LeaveCriticalSection` at `0x140fbf397`
+- `KERNEL32!LeaveCriticalSection` at `0x140fbdc80`
+- `KERNEL32!LeaveCriticalSection` at `0x140fbf397`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe12d`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe320`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe387`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe4c0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe530`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe587`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe5ec`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe7e0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe12d`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe320`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe387`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe4c0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe530`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe587`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe5ec`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x140fbe7e0`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe315`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe380`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe4b5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe529`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe580`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe5e5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe740`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe315`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe380`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe4b5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe529`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe580`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe5e5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x140fbe740`
+- `Mso30Win32Client!Mso30Win32Client_55647` at `0x140fbdf75`
+- `Mso30Win32Client!Mso30Win32Client_55647` at `0x140fbdf75`
+- `Mso20Win32Client!__imp_Mso20Win32Client_7228` at `0x140fbf560`
+- `Mso20Win32Client!__imp_Mso20Win32Client_7228` at `0x140fbf560`
+- `Mso20Win32Client!Mso20Win32Client_9342` at `0x140fbdc57`
+- `Mso20Win32Client!Mso20Win32Client_9342` at `0x140fbdf20`
+- `Mso20Win32Client!Mso20Win32Client_9342` at `0x140fbdc57`
+- `Mso20Win32Client!Mso20Win32Client_9342` at `0x140fbdf20`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbed89`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbedcc`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbedf2`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbee2f`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbee6c`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbeeaa`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbeeea`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbef2a`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbef6a`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbefaa`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbefea`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf02a`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf052`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf074`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf0af`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf0ea`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf112`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf137`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf18f`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf1b4`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf1ef`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf212`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf269`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbed89`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbedcc`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbedf2`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbee2f`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbee6c`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbeeaa`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbeeea`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbef2a`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbef6a`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbefaa`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbefea`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf02a`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf052`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf074`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf0af`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf0ea`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf112`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf137`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf18f`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf1b4`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf1ef`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf212`
+- `Mso20Win32Client!Mso20Win32Client_14361` at `0x140fbf269`
+- `Mso20Win32Client!Mso20Win32Client_36279` at `0x140fbe3f2`
+- `Mso20Win32Client!Mso20Win32Client_36279` at `0x140fbe3f2`
+- `Mso20Win32Client!Mso20Win32Client_42422` at `0x140fbe251`
+- `Mso20Win32Client!Mso20Win32Client_42422` at `0x140fbe8e0`
+- `Mso20Win32Client!Mso20Win32Client_42422` at `0x140fbe251`
+- `Mso20Win32Client!Mso20Win32Client_42422` at `0x140fbe8e0`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x140fbe40d`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x140fbe428`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x140fbe44b`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x140fbe466`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x140fbe40d`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x140fbe428`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x140fbe44b`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x140fbe466`
+
+## string_xrefs
+
+- `0x140fbedb8`: `End_TokenIsValid`
+- `0x140fbe191`: `GetLastUpdate.`
+- `0x140fbe851`: `GetLastUpdate.`
+- `0x140fbf0d6`: `LastUpdateValueRegistry`
+- `0x140fbea38`: `ParseDataForLastUpdateValue`
+- `0x140fbeaa8`: `wstrLastUpdateValue_length`
+- `0x140fbf09b`: `LastUpdateValueRetrieved`
+- `0x140fbe049`: `MailboxExternalDirectoryObjectIdNotFound`
+- `0x140fbe7b3`: `MailboxExternalDirectoryObjectIdNotFound`
+
+## pseudocode
+
+```c
+
+```

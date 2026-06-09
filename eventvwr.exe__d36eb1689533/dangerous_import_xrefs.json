@@ -1,0 +1,143 @@
+[
+  {
+    "import": "KERNEL32!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400027aa",
+        "from_func": "0x1400023ac",
+        "from_func_name": "main",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x1400027aa",
+        "from_func": "0x1400023ac",
+        "from_func_name": "main",
+        "import": "KERNEL32!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateProcessW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140002b49",
+        "from_func": "0x1400023ac",
+        "from_func_name": "main",
+        "import": "KERNEL32!CreateProcessW"
+      },
+      {
+        "from_ea": "0x140002b49",
+        "from_func": "0x1400023ac",
+        "from_func_name": "main",
+        "import": "KERNEL32!CreateProcessW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCommandLineW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140002442",
+        "from_func": "0x1400023ac",
+        "from_func_name": "main",
+        "import": "KERNEL32!GetCommandLineW"
+      },
+      {
+        "from_ea": "0x140002442",
+        "from_func": "0x1400023ac",
+        "from_func_name": "main",
+        "import": "KERNEL32!GetCommandLineW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400015cb",
+        "from_func": "0x140001584",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1400015cb",
+        "from_func": "0x140001584",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "SHELL32!CommandLineToArgvW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x140002450",
+        "from_func": "0x1400023ac",
+        "from_func_name": "main",
+        "import": "SHELL32!CommandLineToArgvW"
+      },
+      {
+        "from_ea": "0x140002450",
+        "from_func": "0x1400023ac",
+        "from_func_name": "main",
+        "import": "SHELL32!CommandLineToArgvW"
+      },
+      {
+        "from_ea": "0x140004b8c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "SHELL32!CommandLineToArgvW"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140001673",
+        "from_func": "0x140001673",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!_commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140001106",
+        "from_func": "0x140001060",
+        "from_func_name": "pre_c_init",
+        "import": "msvcrt!_commode"
+      }
+    ]
+  }
+]

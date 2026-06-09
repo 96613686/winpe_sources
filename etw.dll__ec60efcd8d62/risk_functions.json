@@ -1,0 +1,2095 @@
+[
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "EtwpSetWmiGuidSecurity(ushort *,_ACL *,ulong)",
+    "ea": "0x1800140cc",
+    "function_file": "functions/1800140cc_EtwpSetWmiGuidSecurity_ushort_ACL_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-io-l1-1-0!DeviceIoControl",
+      "api-ms-win-core-io-l1-1-0!GetOverlappedResult",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-security-base-l1-1-0!InitializeSecurityDescriptor",
+      "api-ms-win-security-base-l1-1-0!SetKernelObjectSecurity",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorDacl",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorSacl",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpSetWmiGuidSecurity@@YAKPEAGPEAU_ACL@@K@Z",
+    "prototype": "unsigned int(unsigned __int16 *, struct _ACL *, unsigned int)",
+    "rank_score": 3050,
+    "size": 777,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "EtwpCleanupTraceLog(_TRACELOG_CONTEXT *,uchar)",
+    "ea": "0x18000416c",
+    "function_file": "functions/18000416c_EtwpCleanupTraceLog_TRACELOG_CONTEXT_uchar.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-memory-l1-1-0!VirtualFreeEx",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "ntdll!NtCancelIoFile",
+      "ntdll!NtClose",
+      "ntdll!NtFreeVirtualMemory",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpCleanupTraceLog@@YAXPEAU_TRACELOG_CONTEXT@@E@Z",
+    "prototype": "void __fastcall(struct _TRACELOG_CONTEXT *, unsigned __int8)",
+    "rank_score": 3043,
+    "size": 1526,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 0,
+    "demangled": "StartTraceA",
+    "ea": "0x18000c4a0",
+    "function_file": "functions/18000c4a0_StartTraceA.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!GetFullPathNameA",
+      "api-ms-win-crt-private-l1-1-0!strchr",
+      "api-ms-win-crt-private-l1-1-0!strrchr",
+      "api-ms-win-crt-private-l1-1-0!strstr",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlInitAnsiString",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "StartTraceA",
+    "prototype": "ULONG __stdcall(PTRACEHANDLE TraceHandle, LPCSTR InstanceName, PEVENT_TRACE_PROPERTIES Properties)",
+    "rank_score": 2656,
+    "size": 2027,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "EventAccessQuery",
+    "ea": "0x18000bbe0",
+    "function_file": "functions/18000bbe0_EventAccessQuery.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!RtlGetPersistedStateLocation",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlQueryRegistryValueWithFallback",
+      "ntdll!RtlSetLastWin32Error",
+      "ntdll!RtlValidRelativeSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Control\\WMI\\Security",
+      "ETWSecurityPath"
+    ],
+    "name": "EventAccessQuery",
+    "prototype": "ULONG __stdcall(LPGUID Guid, PSECURITY_DESCRIPTOR Buffer, PULONG BufferSize)",
+    "rank_score": 2334,
+    "size": 882,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "EventAccessRemove",
+    "ea": "0x18000bf60",
+    "function_file": "functions/18000bf60_EventAccessRemove.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteValueW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!RtlGetPersistedStateLocation",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Control\\WMI\\Security",
+      "ETWSecurityPath"
+    ],
+    "name": "EventAccessRemove",
+    "prototype": "ULONG __stdcall(LPGUID Guid)",
+    "rank_score": 2322,
+    "size": 813,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 5,
+    "demangled": "ControlTraceA",
+    "ea": "0x1800099c0",
+    "function_file": "functions/1800099c0_ControlTraceA.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!GetFullPathNameA",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlFreeAnsiString",
+      "ntdll!RtlInitAnsiString",
+      "ntdll!RtlSetLastWin32Error",
+      "ntdll!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "ControlTraceA",
+    "prototype": "ULONG __stdcall(TRACEHANDLE TraceHandle, LPCSTR InstanceName, PEVENT_TRACE_PROPERTIES Properties, ULONG ControlCode)",
+    "rank_score": 2276,
+    "size": 2347,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 0,
+    "demangled": "StartTraceW",
+    "ea": "0x18000cca0",
+    "function_file": "functions/18000cca0_StartTraceW.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!GetFullPathNameW",
+      "api-ms-win-crt-private-l1-1-0!wcschr",
+      "api-ms-win-crt-private-l1-1-0!wcsrchr",
+      "api-ms-win-crt-private-l1-1-0!wcsstr",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "StartTraceW",
+    "prototype": "ULONG __stdcall(PTRACEHANDLE TraceHandle, LPCWSTR InstanceName, PEVENT_TRACE_PROPERTIES Properties)",
+    "rank_score": 2059,
+    "size": 2332,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "EtwpSetOrAddAce(_GUID *,ulong,void *,ulong,uchar)",
+    "ea": "0x180013e28",
+    "function_file": "functions/180013e28_EtwpSetOrAddAce_GUID_ulong_void_ulong_uchar.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-base-l1-1-0!AddAccessAllowedAce",
+      "api-ms-win-security-base-l1-1-0!AddAccessDeniedAce",
+      "api-ms-win-security-base-l1-1-0!GetLengthSid",
+      "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorDacl",
+      "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorSacl",
+      "api-ms-win-security-base-l1-1-0!IsValidSid",
+      "ntdll!RtlCreateAcl"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpSetOrAddAce@@YAKPEAU_GUID@@KPEAXKE@Z",
+    "prototype": "unsigned int __usercall@<eax>(struct _GUID *@<rcx>, unsigned int@<edx>, void *@<r8>, unsigned int@<r9d>, unsigned __int8)",
+    "rank_score": 2056,
+    "size": 670,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "EtwpSetupRealTimeContext(_TRACELOG_CONTEXT *)",
+    "ea": "0x18000ff6c",
+    "function_file": "functions/18000ff6c_EtwpSetupRealTimeContext_TRACELOG_CONTEXT.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "ntdll!EtwpGetCpuSpeed",
+      "ntdll!NtAllocateVirtualMemoryEx",
+      "ntdll!NtFreeVirtualMemory",
+      "ntdll!NtQueryPerformanceCounter",
+      "ntdll!RtlGetNativeSystemInformation",
+      "ntdll!RtlInitializeBitMapEx",
+      "ntdll!RtlInterlockedSetBitRunEx"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpSetupRealTimeContext@@YAKPEAU_TRACELOG_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(struct _TRACELOG_CONTEXT *)",
+    "rank_score": 2055,
+    "size": 1357,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "ProcessTrace",
+    "ea": "0x180007500",
+    "function_file": "functions/180007500_ProcessTrace.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockExclusive",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "ProcessTrace",
+    "prototype": "ULONG __stdcall(PTRACEHANDLE HandleArray, ULONG HandleCount, LPFILETIME StartTime, LPFILETIME EndTime)",
+    "rank_score": 2048,
+    "size": 1304,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "EtwpCheckForEnoughFreeSpace(ushort const *,ulong,ulong,ulong,ulong)",
+    "ea": "0x180008f30",
+    "function_file": "functions/180008f30_EtwpCheckForEnoughFreeSpace_ushort_const_ulong_ulong_ulong_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!GetDiskFreeSpaceExW",
+      "api-ms-win-core-file-l1-1-0!GetFileAttributesExW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemDirectoryW",
+      "ntdll!NtOpenKey",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\MiniNT"
+    ],
+    "name": "?EtwpCheckForEnoughFreeSpace@@YAKPEBGKKKK@Z",
+    "prototype": "unsigned int __usercall@<eax>(const unsigned __int16 *@<rcx>, unsigned int@<edx>, unsigned int@<r8d>, unsigned int@<r9d>, unsigned int)",
+    "rank_score": 1714,
+    "size": 753,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 3,
+    "demangled": "EtwpProcessLogHeader(_TRACELOG_CONTEXT * *,ulong,uchar)",
+    "ea": "0x1800052b4",
+    "function_file": "functions/1800052b4_EtwpProcessLogHeader_TRACELOG_CONTEXT_ulong_uchar.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "ntdll!NtQueryInformationFile",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpProcessLogHeader@@YAKPEAPEAU_TRACELOG_CONTEXT@@KE@Z",
+    "prototype": "unsigned int __fastcall(struct _TRACELOG_CONTEXT **, unsigned int, unsigned __int8)",
+    "rank_score": 1657,
+    "size": 2574,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "EtwpStopLogger(_WMI_LOGGER_INFORMATION *,ulong,_EVENT_FILTER_DESCRIPTOR *)",
+    "ea": "0x1800138d0",
+    "function_file": "functions/1800138d0_EtwpStopLogger_WMI_LOGGER_INFORMATION_ulong_EVENT_FILTER_DESCRIPTOR.md",
+    "matched_imports": [
+      "ext-ms-win-eventing-rundown-l1-1-0!EtwLogSysConfigRundown",
+      "ntdll!RtlGetCurrentServiceSessionId"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpStopLogger@@YAKPEAU_WMI_LOGGER_INFORMATION@@KPEAU_EVENT_FILTER_DESCRIPTOR@@@Z",
+    "prototype": "unsigned int __fastcall(struct _WMI_LOGGER_INFORMATION *, unsigned int, struct _EVENT_FILTER_DESCRIPTOR *)",
+    "rank_score": 1457,
+    "size": 754,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "EtwpFlushLogger(_WMI_LOGGER_INFORMATION *,ulong,_EVENT_FILTER_DESCRIPTOR *)",
+    "ea": "0x180013284",
+    "function_file": "functions/180013284_EtwpFlushLogger_WMI_LOGGER_INFORMATION_ulong_EVENT_FILTER_DESCRIPTOR.md",
+    "matched_imports": [
+      "ntdll!RtlGetCurrentServiceSessionId"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpFlushLogger@@YAKPEAU_WMI_LOGGER_INFORMATION@@KPEAU_EVENT_FILTER_DESCRIPTOR@@@Z",
+    "prototype": "unsigned int __fastcall(struct _WMI_LOGGER_INFORMATION *, unsigned int, struct _EVENT_FILTER_DESCRIPTOR *)",
+    "rank_score": 1242,
+    "size": 528,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EtwpChangePrivs(uchar,ulong *)",
+    "ea": "0x180013c30",
+    "function_file": "functions/180013c30_EtwpChangePrivs_uchar_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "api-ms-win-security-base-l1-1-0!AdjustTokenPrivileges"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpChangePrivs@@YAKEPEAK@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int8, unsigned int *)",
+    "rank_score": 1237,
+    "size": 344,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "EnableTraceEx2",
+    "ea": "0x18000ad70",
+    "function_file": "functions/18000ad70_EnableTraceEx2.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ext-ms-win-eventing-rundown-l1-1-0!EtwLogSysConfigRundown",
+      "ntdll!EtwDeliverDataBlock",
+      "ntdll!EtwSendNotification",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "EnableTraceEx2",
+    "prototype": "ULONG __stdcall(TRACEHANDLE TraceHandle, LPCGUID ProviderId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, ULONG Timeout, PENABLE_TRACE_PARAMETERS EnableParameters)",
+    "rank_score": 1050,
+    "size": 2158,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "EtwpGenerateLogHeaderForRealtime(_EVENT_TRACE_PROPERTIES *,ulong,_TRACE_LOGFILE_HEADER *)",
+    "ea": "0x18000f098",
+    "function_file": "functions/18000f098_EtwpGenerateLogHeaderForRealtime_EVENT_TRACE_PROPERTIES_ulong_TRACE_LOGFILE_HEADER.md",
+    "matched_imports": [
+      "ntdll!EtwpGetCpuSpeed",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!RtlQueryPerformanceFrequency",
+      "ntdll!RtlQueryTimeZoneInformation"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpGenerateLogHeaderForRealtime@@YAKPEAU_EVENT_TRACE_PROPERTIES@@KPEAU_TRACE_LOGFILE_HEADER@@@Z",
+    "prototype": "unsigned int __fastcall(struct _EVENT_TRACE_PROPERTIES *, unsigned int, struct _TRACE_LOGFILE_HEADER *)",
+    "rank_score": 1021,
+    "size": 742,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "EtwpFreeTraceHandle(unsigned __int64)",
+    "ea": "0x180004ea8",
+    "function_file": "functions/180004ea8_EtwpFreeTraceHandle_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-2-0!WakeConditionVariable",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpFreeTraceHandle@@YAK_K@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int64)",
+    "rank_score": 1019,
+    "size": 219,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 6,
+    "demangled": "ControlTraceW",
+    "ea": "0x18000a300",
+    "function_file": "functions/18000a300_ControlTraceW.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!GetFullPathNameW",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "ControlTraceW",
+    "prototype": "ULONG __stdcall(TRACEHANDLE TraceHandle, LPCWSTR InstanceName, PEVENT_TRACE_PROPERTIES Properties, ULONG ControlCode)",
+    "rank_score": 881,
+    "size": 2652,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "EtwpAdvanceToNewEvent(_TRACE_STREAM_CONTEXT *)",
+    "ea": "0x180014b10",
+    "function_file": "functions/180014b10_EtwpAdvanceToNewEvent_TRACE_STREAM_CONTEXT.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!ReadFile",
+      "api-ms-win-core-io-l1-1-0!GetOverlappedResult",
+      "ntdll!NtSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpAdvanceToNewEvent@@YAKPEAU_TRACE_STREAM_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _TRACE_STREAM_CONTEXT *)",
+    "rank_score": 858,
+    "size": 882,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "OpenTraceW",
+    "ea": "0x180007060",
+    "function_file": "functions/180007060_OpenTraceW.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!NtQueryLicenseValue",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "OpenTraceW",
+    "prototype": "TRACEHANDLE __stdcall(PEVENT_TRACE_LOGFILEW Logfile)",
+    "rank_score": 835,
+    "size": 1175,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "RemoveTraceCallback",
+    "ea": "0x1800080f0",
+    "function_file": "functions/1800080f0_RemoveTraceCallback.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockExclusive",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "RemoveTraceCallback",
+    "prototype": "ULONG __stdcall(LPCGUID pGuid)",
+    "rank_score": 830,
+    "size": 562,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001584",
+    "function_file": "functions/180001584_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 823,
+    "size": 181,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "EtwpSynchReadFile(void *,void *,ulong,ulong *,_OVERLAPPED *,unsigned __int64)",
+    "ea": "0x180012c14",
+    "function_file": "functions/180012c14_EtwpSynchReadFile_void_void_ulong_ulong_OVERLAPPED_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!ReadFile",
+      "api-ms-win-core-io-l1-1-0!GetOverlappedResult"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpSynchReadFile@@YAHPEAX0KPEAKPEAU_OVERLAPPED@@_K@Z",
+    "prototype": "__int64 __usercall@<rax>(HANDLE hFile@<rcx>, void *@<rdx>, unsigned int@<r8d>, unsigned int *@<r9>, struct _OVERLAPPED *, unsigned __int64)",
+    "rank_score": 820,
+    "size": 166,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "EtwpAllocateTraceHandle(ulong)",
+    "ea": "0x180003fa8",
+    "function_file": "functions/180003fa8_EtwpAllocateTraceHandle_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpAllocateTraceHandle@@YAPEAU_TRACELOG_CONTEXT@@K@Z",
+    "prototype": "struct _TRACELOG_CONTEXT *__fastcall(unsigned int)",
+    "rank_score": 632,
+    "size": 444,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "TraceConfigureLastBranchRecord",
+    "ea": "0x18000d5f0",
+    "function_file": "functions/18000d5f0_TraceConfigureLastBranchRecord.md",
+    "matched_imports": [
+      "ntdll!NtSetSystemInformation"
+    ],
+    "matched_strings": [],
+    "name": "TraceConfigureLastBranchRecord",
+    "prototype": "",
+    "rank_score": 625,
+    "size": 382,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180002340",
+    "function_file": "functions/180002340_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventRegister",
+      "api-ms-win-eventing-provider-l1-1-0!EventSetInformation",
+      "api-ms-win-eventing-provider-l1-1-0!EventUnregister"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 614,
+    "size": 189,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "OpenTraceA",
+    "ea": "0x180002870",
+    "function_file": "functions/180002870_OpenTraceA.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "OpenTraceA",
+    "prototype": "TRACEHANDLE __stdcall(PEVENT_TRACE_LOGFILEA Logfile)",
+    "rank_score": 614,
+    "size": 197,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "EtwpRemovePlaybackEngineBufferReference(_TRACELOG_CONTEXT *,_WMI_BUFFER_HEADER *)",
+    "ea": "0x1800060b4",
+    "function_file": "functions/1800060b4_EtwpRemovePlaybackEngineBufferReference_TRACELOG_CONTEXT_WMI_BUFFER_HEADER.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ResetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpRemovePlaybackEngineBufferReference@@YAJPEAU_TRACELOG_CONTEXT@@PEAU_WMI_BUFFER_HEADER@@@Z",
+    "prototype": "__int64 __fastcall(struct _TRACELOG_CONTEXT *, struct _WMI_BUFFER_HEADER *)",
+    "rank_score": 609,
+    "size": 196,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "EtwpSendUmLogRequest(ETWTRACECONTROLCODE,_WMI_LOGGER_INFORMATION *,ulong,_EVENT_FILTER_DESCRIPTOR *)",
+    "ea": "0x18001356c",
+    "function_file": "functions/18001356c_EtwpSendUmLogRequest_ETWTRACECONTROLCODE_WMI_LOGGER_INFORMATION_ulong_EVENT_FILTER_DESCRIPTOR.md",
+    "matched_imports": [
+      "ntdll!EtwProcessPrivateLoggerRequest",
+      "ntdll!EtwSendNotification"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpSendUmLogRequest@@YAKW4ETWTRACECONTROLCODE@@PEAU_WMI_LOGGER_INFORMATION@@KPEAU_EVENT_FILTER_DESCRIPTOR@@@Z",
+    "prototype": "unsigned int __high(enum ETWTRACECONTROLCODE, struct _WMI_LOGGER_INFORMATION *, unsigned int, struct _EVENT_FILTER_DESCRIPTOR *)",
+    "rank_score": 435,
+    "size": 623,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "EtwpGenerateHeaderEventForRealtime(ulong,_TRACE_LOGFILE_HEADER *,_SYSTEM_TRACE_HEADER * *,ulong *)",
+    "ea": "0x18000ef18",
+    "function_file": "functions/18000ef18_EtwpGenerateHeaderEventForRealtime_ulong_TRACE_LOGFILE_HEADER_SYSTEM_TRACE_HEADER_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpGenerateHeaderEventForRealtime@@YAKKPEAU_TRACE_LOGFILE_HEADER@@PEAPEAU_SYSTEM_TRACE_HEADER@@PEAK@Z",
+    "prototype": "unsigned int __fastcall(unsigned int, struct _TRACE_LOGFILE_HEADER *, struct _SYSTEM_TRACE_HEADER **, unsigned int *)",
+    "rank_score": 431,
+    "size": 377,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "EventAccessControl",
+    "ea": "0x18000b970",
+    "function_file": "functions/18000b970_EventAccessControl.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "EventAccessControl",
+    "prototype": "ULONG __stdcall(LPGUID Guid, ULONG Operation, PSID Sid, ULONG Rights, BOOLEAN AllowOrDeny)",
+    "rank_score": 430,
+    "size": 618,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "OpenTraceFromRealTimeLoggerWithAllocationOptions",
+    "ea": "0x180006c60",
+    "function_file": "functions/180006c60_OpenTraceFromRealTimeLoggerWithAllocationOptions.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl"
+    ],
+    "matched_strings": [],
+    "name": "OpenTraceFromRealTimeLoggerWithAllocationOptions",
+    "prototype": "",
+    "rank_score": 422,
+    "size": 1009,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "EtwpFreeRtBuffer(_TRACELOG_CONTEXT *,_WMI_BUFFER_HEADER *)",
+    "ea": "0x180010c5c",
+    "function_file": "functions/180010c5c_EtwpFreeRtBuffer_TRACELOG_CONTEXT_WMI_BUFFER_HEADER.md",
+    "matched_imports": [
+      "api-ms-win-core-memory-l1-1-0!VirtualFree",
+      "ntdll!RtlInterlockedClearBitRunEx"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpFreeRtBuffer@@YAXPEAU_TRACELOG_CONTEXT@@PEAU_WMI_BUFFER_HEADER@@@Z",
+    "prototype": "void(struct _TRACELOG_CONTEXT *, struct _WMI_BUFFER_HEADER *)",
+    "rank_score": 418,
+    "size": 139,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "EtwpReadSpecialHeaderEvents(_TRACELOG_CONTEXT *,_WMI_BUFFER_HEADER *,ulong)",
+    "ea": "0x180005cc8",
+    "function_file": "functions/180005cc8_EtwpReadSpecialHeaderEvents_TRACELOG_CONTEXT_WMI_BUFFER_HEADER_ulong.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!wcsnlen"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpReadSpecialHeaderEvents@@YAKPEAU_TRACELOG_CONTEXT@@PEAU_WMI_BUFFER_HEADER@@K@Z",
+    "prototype": "unsigned int(struct _TRACELOG_CONTEXT *, struct _WMI_BUFFER_HEADER *, unsigned int)",
+    "rank_score": 417,
+    "size": 876,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "OpenTraceFromFile",
+    "ea": "0x180006970",
+    "function_file": "functions/180006970_OpenTraceFromFile.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl"
+    ],
+    "matched_strings": [],
+    "name": "OpenTraceFromFile",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, struct ETW_OPEN_TRACE_OPTIONS *)",
+    "rank_score": 414,
+    "size": 700,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "OpenTraceFromBufferStream",
+    "ea": "0x180006740",
+    "function_file": "functions/180006740_OpenTraceFromBufferStream.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl"
+    ],
+    "matched_strings": [],
+    "name": "OpenTraceFromBufferStream",
+    "prototype": "__int64 __fastcall(struct ETW_OPEN_TRACE_OPTIONS *)",
+    "rank_score": 413,
+    "size": 540,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "EtwpRemoveBufferRefEntry(unsigned __int64,_WMI_BUFFER_HEADER *)",
+    "ea": "0x18000603c",
+    "function_file": "functions/18000603c_EtwpRemoveBufferRefEntry_unsigned_int64_WMI_BUFFER_HEADER.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpRemoveBufferRefEntry@@YAX_KPEAU_WMI_BUFFER_HEADER@@@Z",
+    "prototype": "void __fastcall(unsigned __int64, struct _WMI_BUFFER_HEADER *)",
+    "rank_score": 405,
+    "size": 111,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "EtwpBuildEventTableCompressedBufferingMode(_TRACELOG_CONTEXT *)",
+    "ea": "0x18001502c",
+    "function_file": "functions/18001502c_EtwpBuildEventTableCompressedBufferingMode_TRACELOG_CONTEXT.md",
+    "matched_imports": [
+      "ntdll!RtlDecompressBufferEx"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpBuildEventTableCompressedBufferingMode@@YAKPEAU_TRACELOG_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _TRACELOG_CONTEXT *)",
+    "rank_score": 252,
+    "size": 567,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 44,
+    "demangled": "_tlgWriteTransfer_EtwEventWriteTransfer",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_tlgWriteTransfer_EtwEventWriteTransfer.md",
+    "matched_imports": [
+      "ntdll!EtwEventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwEventWriteTransfer",
+    "prototype": "",
+    "rank_score": 236,
+    "size": 151,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "EtwpInitializeCompression(_TRACELOG_CONTEXT *)",
+    "ea": "0x180013084",
+    "function_file": "functions/180013084_EtwpInitializeCompression_TRACELOG_CONTEXT.md",
+    "matched_imports": [
+      "ntdll!RtlGetCompressionWorkSpaceSize"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpInitializeCompression@@YAKPEAU_TRACELOG_CONTEXT@@@Z",
+    "prototype": "unsigned int __fastcall(struct _TRACELOG_CONTEXT *)",
+    "rank_score": 228,
+    "size": 174,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "EtwpDecompressBufferInPlace(_TRACELOG_CONTEXT *,_WMI_BUFFER_HEADER *)",
+    "ea": "0x18001526c",
+    "function_file": "functions/18001526c_EtwpDecompressBufferInPlace_TRACELOG_CONTEXT_WMI_BUFFER_HEADER.md",
+    "matched_imports": [
+      "ntdll!RtlDecompressBufferEx"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpDecompressBufferInPlace@@YAKPEAU_TRACELOG_CONTEXT@@PEAU_WMI_BUFFER_HEADER@@@Z",
+    "prototype": "ULONG __fastcall(struct _TRACELOG_CONTEXT *, struct _WMI_BUFFER_HEADER *)",
+    "rank_score": 226,
+    "size": 179,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "EtwpDecompressStreamBuffer(_TRACE_STREAM_CONTEXT *)",
+    "ea": "0x180012f80",
+    "function_file": "functions/180012f80_EtwpDecompressStreamBuffer_TRACE_STREAM_CONTEXT.md",
+    "matched_imports": [
+      "ntdll!RtlDecompressBufferEx"
+    ],
+    "matched_strings": [],
+    "name": "?EtwpDecompressStreamBuffer@@YAEPEAU_TRACE_STREAM_CONTEXT@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _TRACE_STREAM_CONTEXT *)",
+    "rank_score": 224,
+    "size": 252,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 23,
+    "demangled": "RtlNtStatusToDosError_0",
+    "ea": "0x180001ee2",
+    "function_file": "functions/180001ee2_RtlNtStatusToDosError_0.md",
+    "matched_imports": [
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "RtlNtStatusToDosError_0",
+    "prototype": "ULONG __stdcall(NTSTATUS Status)",
+    "rank_score": 133,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 38,
+    "demangled": "memset_0",
+    "ea": "0x180001eb2",
+    "function_file": "functions/180001eb2_memset_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 14,
+    "demangled": "NtTraceControl_0",
+    "ea": "0x180001eca",
+    "function_file": "functions/180001eca_NtTraceControl_0.md",
+    "matched_imports": [
+      "ntdll!NtTraceControl"
+    ],
+    "matched_strings": [],
+    "name": "NtTraceControl_0",
+    "prototype": "",
+    "rank_score": 124,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_EtwLogSysConfigRundown",
+    "ea": "0x180001fbd",
+    "function_file": "functions/180001fbd_imp_load_EtwLogSysConfigRundown.md",
+    "matched_imports": [
+      "ext-ms-win-eventing-rundown-l1-1-0!EtwLogSysConfigRundown"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_EtwLogSysConfigRundown",
+    "prototype": "",
+    "rank_score": 121,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 14,
+    "demangled": "memcpy_0",
+    "ea": "0x180015834",
+    "function_file": "functions/180015834_memcpy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 114,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o___stdio_common_vswprintf_0",
+    "ea": "0x180001dfe",
+    "function_file": "functions/180001dfe_o_stdio_common_vswprintf_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+    ],
+    "matched_strings": [],
+    "name": "_o___stdio_common_vswprintf_0",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__configure_narrow_argv_0",
+    "ea": "0x180001e22",
+    "function_file": "functions/180001e22_o_configure_narrow_argv_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_o__configure_narrow_argv_0",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__seh_filter_dll_0",
+    "ea": "0x180001e6a",
+    "function_file": "functions/180001e6a_o_seh_filter_dll_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_o__seh_filter_dll_0",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_o___std_exception_copy_0",
+    "ea": "0x180001dda",
+    "function_file": "functions/180001dda_o_std_exception_copy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___std_exception_copy"
+    ],
+    "matched_strings": [],
+    "name": "_o___std_exception_copy_0",
+    "prototype": "",
+    "rank_score": 103,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "memmove_0",
+    "ea": "0x180015840",
+    "function_file": "functions/180015840_memmove_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 61,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180001560",
+    "function_file": "functions/180001560_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001510",
+    "function_file": "functions/180001510_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 33,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180002014",
+    "function_file": "functions/180002014_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 33,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 20,
+    "demangled": "operator delete(void *,std::nothrow_t const &)",
+    "ea": "0x180002020",
+    "function_file": "functions/180002020_operator_delete_void_std_nothrow_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAXAEBUnothrow_t@std@@@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 31,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "EtwpMapEventToEventTrace(_TRACELOG_CONTEXT *,void *,_EVENT_TRACE *,ulong,_WMI_BUFFER_HEADER *)",
+    "ea": "0x180012120",
+    "function_file": "functions/180012120_EtwpMapEventToEventTrace_TRACELOG_CONTEXT_void_EVENT_TRACE_ulong_WMI_BUFFER_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpMapEventToEventTrace@@YAKPEAU_TRACELOG_CONTEXT@@PEAXPEAU_EVENT_TRACE@@KPEAU_WMI_BUFFER_HEADER@@@Z",
+    "prototype": "unsigned int __usercall@<eax>(struct _TRACELOG_CONTEXT *@<rcx>, void *@<rdx>, struct _EVENT_TRACE *@<r8>, unsigned int@<r9d>, struct _WMI_BUFFER_HEADER *)",
+    "rank_score": 28,
+    "size": 1301,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180016010",
+    "function_file": "functions/180016010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch",
+    "ea": "0x1800013d4",
+    "function_file": "functions/1800013d4_dllmain_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_dispatch",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 28,
+    "size": 295,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_after_initialize_c",
+    "ea": "0x1800016cc",
+    "function_file": "functions/1800016cc_scrt_dllmain_after_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_after_initialize_c",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach",
+    "ea": "0x180001248",
+    "function_file": "functions/180001248_dllmain_crt_process_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_attach",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 250,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 27,
+    "demangled": "operator new(unsigned __int64,std::nothrow_t const &)",
+    "ea": "0x180001ff0",
+    "function_file": "functions/180001ff0_operator_new_unsigned_int64_std_nothrow_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_KAEBUnothrow_t@std@@@Z",
+    "prototype": "void *__fastcall(unsigned __int64, const struct std::nothrow_t *)",
+    "rank_score": 27,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_c",
+    "ea": "0x1800017b4",
+    "function_file": "functions/1800017b4_scrt_dllmain_uninitialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_c",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 48,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch",
+    "ea": "0x1800011f0",
+    "function_file": "functions/1800011f0_dllmain_crt_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_dispatch",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1800156c0",
+    "function_file": "functions/1800156c0_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 18,
+    "demangled": "_tlgWriteActivityAutoStop<16,5>(_tlgProvider_t const *,_GUID const *)",
+    "ea": "0x180002ec4",
+    "function_file": "functions/180002ec4_tlgWriteActivityAutoStop_16_5_tlgProvider_t_const_GUID_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_tlgWriteActivityAutoStop@$0BA@$04@@YAXPEBU_tlgProvider_t@@PEBU_GUID@@@Z",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_detach",
+    "ea": "0x180001348",
+    "function_file": "functions/180001348_dllmain_crt_process_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_detach",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 131,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "EtwpCopyFlagExtensions(_EVENT_TRACE_PROPERTIES *,_WMI_LOGGER_INFORMATION *,ulong)",
+    "ea": "0x180009228",
+    "function_file": "functions/180009228_EtwpCopyFlagExtensions_EVENT_TRACE_PROPERTIES_WMI_LOGGER_INFORMATION_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpCopyFlagExtensions@@YAKPEAU_EVENT_TRACE_PROPERTIES@@PEAU_WMI_LOGGER_INFORMATION@@K@Z",
+    "prototype": "unsigned int __fastcall(struct _EVENT_TRACE_PROPERTIES *, struct _WMI_LOGGER_INFORMATION *, unsigned int)",
+    "rank_score": 17,
+    "size": 216,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "EtwpFreeBuffer(_TRACELOG_CONTEXT *,_WMI_BUFFER_HEADER *)",
+    "ea": "0x180010c00",
+    "function_file": "functions/180010c00_EtwpFreeBuffer_TRACELOG_CONTEXT_WMI_BUFFER_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpFreeBuffer@@YAXPEAU_TRACELOG_CONTEXT@@PEAU_WMI_BUFFER_HEADER@@@Z",
+    "prototype": "void __fastcall(struct _TRACELOG_CONTEXT *, struct _WMI_BUFFER_HEADER *)",
+    "rank_score": 17,
+    "size": 83,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "EtwpHeapPush(_TRACE_STREAM_HEAP *,_TRACE_STREAM_CONTEXT *)",
+    "ea": "0x180014558",
+    "function_file": "functions/180014558_EtwpHeapPush_TRACE_STREAM_HEAP_TRACE_STREAM_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpHeapPush@@YAXPEAU_TRACE_STREAM_HEAP@@PEAU_TRACE_STREAM_CONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _TRACE_STREAM_HEAP *, struct _TRACE_STREAM_CONTEXT *)",
+    "rank_score": 17,
+    "size": 298,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "EtwpCheckFlagExtensions(_EVENT_TRACE_PROPERTIES *,ulong *)",
+    "ea": "0x180008e3c",
+    "function_file": "functions/180008e3c_EtwpCheckFlagExtensions_EVENT_TRACE_PROPERTIES_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpCheckFlagExtensions@@YAKPEAU_EVENT_TRACE_PROPERTIES@@PEAK@Z",
+    "prototype": "unsigned int __fastcall(struct _EVENT_TRACE_PROPERTIES *, unsigned int *)",
+    "rank_score": 16,
+    "size": 236,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "EtwpGetFreeBuffer(_TRACELOG_CONTEXT *)",
+    "ea": "0x180010d44",
+    "function_file": "functions/180010d44_EtwpGetFreeBuffer_TRACELOG_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpGetFreeBuffer@@YAPEAU_WMI_BUFFER_HEADER@@PEAU_TRACELOG_CONTEXT@@@Z",
+    "prototype": "struct _WMI_BUFFER_HEADER *__fastcall(struct _TRACELOG_CONTEXT *)",
+    "rank_score": 16,
+    "size": 110,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "EtwpInsertBuffer(_TRACELOG_CONTEXT *,_TRACE_BUFFER_LIST_ENTRY *)",
+    "ea": "0x180015578",
+    "function_file": "functions/180015578_EtwpInsertBuffer_TRACELOG_CONTEXT_TRACE_BUFFER_LIST_ENTRY.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpInsertBuffer@@YAXPEAU_TRACELOG_CONTEXT@@PEAU_TRACE_BUFFER_LIST_ENTRY@@@Z",
+    "prototype": "void __fastcall(struct _TRACELOG_CONTEXT *, struct _TRACE_BUFFER_LIST_ENTRY *)",
+    "rank_score": 16,
+    "size": 225,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "EtwpUpdateLogger(_WMI_LOGGER_INFORMATION *,ulong,_EVENT_FILTER_DESCRIPTOR *)",
+    "ea": "0x180013bc8",
+    "function_file": "functions/180013bc8_EtwpUpdateLogger_WMI_LOGGER_INFORMATION_ulong_EVENT_FILTER_DESCRIPTOR.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpUpdateLogger@@YAKPEAU_WMI_LOGGER_INFORMATION@@KPEAU_EVENT_FILTER_DESCRIPTOR@@@Z",
+    "prototype": "unsigned int __fastcall(struct _WMI_LOGGER_INFORMATION *, unsigned int, struct _EVENT_FILTER_DESCRIPTOR *)",
+    "rank_score": 16,
+    "size": 98,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__scrt_is_ucrt_dll_in_use",
+    "ea": "0x180001d98",
+    "function_file": "functions/180001d98_scrt_is_ucrt_dll_in_use.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_is_ucrt_dll_in_use",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "EtwpUpdateBufferEntryQpcDelta(_TRACELOG_CONTEXT *,_TRACE_BUFFER_LIST_ENTRY *)",
+    "ea": "0x180012cc0",
+    "function_file": "functions/180012cc0_EtwpUpdateBufferEntryQpcDelta_TRACELOG_CONTEXT_TRACE_BUFFER_LIST_ENTRY.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpUpdateBufferEntryQpcDelta@@YAXPEAU_TRACELOG_CONTEXT@@PEAU_TRACE_BUFFER_LIST_ENTRY@@@Z",
+    "prototype": "void __fastcall(struct _TRACELOG_CONTEXT *, struct _TRACE_BUFFER_LIST_ENTRY *)",
+    "rank_score": 15,
+    "size": 156,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "EtwpUpdateStreamQpcDelta(_TRACE_STREAM_CONTEXT *)",
+    "ea": "0x180012d64",
+    "function_file": "functions/180012d64_EtwpUpdateStreamQpcDelta_TRACE_STREAM_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpUpdateStreamQpcDelta@@YAXPEAU_TRACE_STREAM_CONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _TRACE_STREAM_CONTEXT *)",
+    "rank_score": 15,
+    "size": 166,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_exception_filter",
+    "ea": "0x180001764",
+    "function_file": "functions/180001764_scrt_dllmain_exception_filter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_exception_filter",
+    "prototype": "__int64 __fastcall(int, int, int, int, unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 72,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "EtwpGetComparableEventTimeStamp(_TRACELOG_CONTEXT *,_ETW_EVENT_INFO *,_LARGE_INTEGER *)",
+    "ea": "0x180010cf0",
+    "function_file": "functions/180010cf0_EtwpGetComparableEventTimeStamp_TRACELOG_CONTEXT_ETW_EVENT_INFO_LARGE_INTEGER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpGetComparableEventTimeStamp@@YAXPEAU_TRACELOG_CONTEXT@@PEAU_ETW_EVENT_INFO@@PEAT_LARGE_INTEGER@@@Z",
+    "prototype": "void __fastcall(struct _TRACELOG_CONTEXT *, struct _ETW_EVENT_INFO *, union _LARGE_INTEGER *)",
+    "rank_score": 14,
+    "size": 78,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__tailMerge_ext_ms_win_eventing_rundown_l1_1_0_dll",
+    "ea": "0x180001f3e",
+    "function_file": "functions/180001f3e_tailMerge_ext_ms_win_eventing_rundown_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_ext_ms_win_eventing_rundown_l1_1_0_dll",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_attach",
+    "ea": "0x180001718",
+    "function_file": "functions/180001718_scrt_dllmain_crt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_attach",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_before_initialize_c",
+    "ea": "0x180001708",
+    "function_file": "functions/180001708_scrt_dllmain_before_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_before_initialize_c",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 7,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_detach",
+    "ea": "0x180001748",
+    "function_file": "functions/180001748_scrt_dllmain_crt_thread_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_detach",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_critical",
+    "ea": "0x1800017ec",
+    "function_file": "functions/1800017ec_scrt_dllmain_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "initialize_msvcrt_compatibility",
+    "ea": "0x1800011c0",
+    "function_file": "functions/1800011c0_initialize_msvcrt_compatibility.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "initialize_msvcrt_compatibility",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "UpdateTraceA",
+    "ea": "0x180002750",
+    "function_file": "functions/180002750_UpdateTraceA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateTraceA",
+    "prototype": "ULONG __stdcall(TRACEHANDLE TraceHandle, LPCSTR InstanceName, PEVENT_TRACE_PROPERTIES Properties)",
+    "rank_score": 11,
+    "size": 11,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "UpdateTraceW",
+    "ea": "0x180002770",
+    "function_file": "functions/180002770_UpdateTraceW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateTraceW",
+    "prototype": "ULONG __stdcall(TRACEHANDLE TraceHandle, LPCWSTR InstanceName, PEVENT_TRACE_PROPERTIES Properties)",
+    "rank_score": 11,
+    "size": 11,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__scrt_stub_for_is_c_termination_complete",
+    "ea": "0x180002334",
+    "function_file": "functions/180002334_scrt_stub_for_is_c_termination_complete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_is_c_termination_complete",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "EtwpGetNextEvent(_WMI_BUFFER_HEADER *,_TRACELOG_CONTEXT *,ulong *,_ETW_EVENT_INFO *)",
+    "ea": "0x1800110b0",
+    "function_file": "functions/1800110b0_EtwpGetNextEvent_WMI_BUFFER_HEADER_TRACELOG_CONTEXT_ulong_ETW_EVENT_INFO.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpGetNextEvent@@YAEPEAU_WMI_BUFFER_HEADER@@PEAU_TRACELOG_CONTEXT@@PEAKPEAU_ETW_EVENT_INFO@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _WMI_BUFFER_HEADER *, struct _TRACELOG_CONTEXT *, unsigned int *, struct _ETW_EVENT_INFO *)",
+    "rank_score": 10,
+    "size": 152,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "EtwpValidateFilterDescriptors(uchar,ulong,ulong,_EVENT_FILTER_DESCRIPTOR *)",
+    "ea": "0x180009488",
+    "function_file": "functions/180009488_EtwpValidateFilterDescriptors_uchar_ulong_ulong_EVENT_FILTER_DESCRIPTOR.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpValidateFilterDescriptors@@YAKEKKPEAU_EVENT_FILTER_DESCRIPTOR@@@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int8, unsigned int, unsigned int, struct _EVENT_FILTER_DESCRIPTOR *)",
+    "rank_score": 9,
+    "size": 848,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "EtwpCopyLogfileInfoFromOptions(_TRACELOG_CONTEXT *,ETW_OPEN_TRACE_OPTIONS const *,ushort const *,ushort const *)",
+    "ea": "0x1800049dc",
+    "function_file": "functions/1800049dc_EtwpCopyLogfileInfoFromOptions_TRACELOG_CONTEXT_ETW_OPEN_TRACE_OPTIONS_const_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpCopyLogfileInfoFromOptions@@YAKPEAU_TRACELOG_CONTEXT@@PEBUETW_OPEN_TRACE_OPTIONS@@PEBG2@Z",
+    "prototype": "unsigned int(struct _TRACELOG_CONTEXT *, const struct ETW_OPEN_TRACE_OPTIONS *, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 8,
+    "size": 330,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "EtwpGetNextEventOffsetType",
+    "ea": "0x180012e48",
+    "function_file": "functions/180012e48_EtwpGetNextEventOffsetType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EtwpGetNextEventOffsetType",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 8,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "EtwpQueryLogger(_WMI_LOGGER_INFORMATION *,ulong,_EVENT_FILTER_DESCRIPTOR *)",
+    "ea": "0x180013504",
+    "function_file": "functions/180013504_EtwpQueryLogger_WMI_LOGGER_INFORMATION_ulong_EVENT_FILTER_DESCRIPTOR.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpQueryLogger@@YAKPEAU_WMI_LOGGER_INFORMATION@@KPEAU_EVENT_FILTER_DESCRIPTOR@@@Z",
+    "prototype": "unsigned int __fastcall(struct _WMI_LOGGER_INFORMATION *, unsigned int, struct _EVENT_FILTER_DESCRIPTOR *)",
+    "rank_score": 8,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "EtwpQueryRealTimeTraceProperties(ushort *,_REALTIME_TRACE_PROPERTIES *,ulong *,ulong *)",
+    "ea": "0x18000fe48",
+    "function_file": "functions/18000fe48_EtwpQueryRealTimeTraceProperties_ushort_REALTIME_TRACE_PROPERTIES_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpQueryRealTimeTraceProperties@@YAKPEAGPEAU_REALTIME_TRACE_PROPERTIES@@PEAK2@Z",
+    "prototype": "unsigned int __fastcall(LPCWSTR InstanceName, PEVENT_TRACE_PROPERTIES Properties, unsigned int *, unsigned int *)",
+    "rank_score": 8,
+    "size": 212,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "EtwpStartLogger(_WMI_LOGGER_INFORMATION *,ulong,_EVENT_FILTER_DESCRIPTOR *)",
+    "ea": "0x1800137e4",
+    "function_file": "functions/1800137e4_EtwpStartLogger_WMI_LOGGER_INFORMATION_ulong_EVENT_FILTER_DESCRIPTOR.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpStartLogger@@YAKPEAU_WMI_LOGGER_INFORMATION@@KPEAU_EVENT_FILTER_DESCRIPTOR@@@Z",
+    "prototype": "unsigned int __fastcall(struct _WMI_LOGGER_INFORMATION *, unsigned int, struct _EVENT_FILTER_DESCRIPTOR *)",
+    "rank_score": 8,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "operator new[](unsigned __int64,std::nothrow_t const &)",
+    "ea": "0x18000202c",
+    "function_file": "functions/18000202c_operator_new_unsigned_int64_std_nothrow_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_U@YAPEAX_KAEBUnothrow_t@std@@@Z",
+    "prototype": "void *__fastcall(unsigned __int64, const struct std::nothrow_t *)",
+    "rank_score": 8,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "EtwpDoBufferCallback2(_TRACELOG_CONTEXT *,_WMI_BUFFER_HEADER *)",
+    "ea": "0x180010b38",
+    "function_file": "functions/180010b38_EtwpDoBufferCallback2_TRACELOG_CONTEXT_WMI_BUFFER_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpDoBufferCallback2@@YAKPEAU_TRACELOG_CONTEXT@@PEAU_WMI_BUFFER_HEADER@@@Z",
+    "prototype": "unsigned int __fastcall(struct _TRACELOG_CONTEXT *, struct _WMI_BUFFER_HEADER *)",
+    "rank_score": 7,
+    "size": 95,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "EtwpValidateBuffer(_TRACELOG_CONTEXT *,_WMI_BUFFER_HEADER *)",
+    "ea": "0x180012e10",
+    "function_file": "functions/180012e10_EtwpValidateBuffer_TRACELOG_CONTEXT_WMI_BUFFER_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpValidateBuffer@@YAEPEAU_TRACELOG_CONTEXT@@PEAU_WMI_BUFFER_HEADER@@@Z",
+    "prototype": "bool __fastcall(struct _TRACELOG_CONTEXT *, struct _WMI_BUFFER_HEADER *)",
+    "rank_score": 7,
+    "size": 50,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "EtwpValidateTraceProperties(_EVENT_TRACE_PROPERTIES *,ulong *,_EVENT_FILTER_DESCRIPTOR * *,ulong *)",
+    "ea": "0x1800098ec",
+    "function_file": "functions/1800098ec_EtwpValidateTraceProperties_EVENT_TRACE_PROPERTIES_ulong_EVENT_FILTER_DESCRIPTOR_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpValidateTraceProperties@@YAKPEAU_EVENT_TRACE_PROPERTIES@@PEAKPEAPEAU_EVENT_FILTER_DESCRIPTOR@@1@Z",
+    "prototype": "unsigned int __fastcall(struct _EVENT_TRACE_PROPERTIES *, unsigned int *, struct _EVENT_FILTER_DESCRIPTOR **, unsigned int *)",
+    "rank_score": 7,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ETWP_BUFFER_QUEUE::Pop(void)",
+    "ea": "0x1800104c0",
+    "function_file": "functions/1800104c0_ETWP_BUFFER_QUEUE_Pop_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Pop@ETWP_BUFFER_QUEUE@@QEAAPEBU_WMI_BUFFER_HEADER@@XZ",
+    "prototype": "const struct _WMI_BUFFER_HEADER *__fastcall(ETWP_BUFFER_QUEUE *__hidden this)",
+    "rank_score": 6,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "EtwpCopyInfoToProperties(_WMI_LOGGER_INFORMATION *,_EVENT_TRACE_PROPERTIES *)",
+    "ea": "0x180013138",
+    "function_file": "functions/180013138_EtwpCopyInfoToProperties_WMI_LOGGER_INFORMATION_EVENT_TRACE_PROPERTIES.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpCopyInfoToProperties@@YAXPEAU_WMI_LOGGER_INFORMATION@@PEAU_EVENT_TRACE_PROPERTIES@@@Z",
+    "prototype": "void __fastcall(struct _WMI_LOGGER_INFORMATION *, struct _EVENT_TRACE_PROPERTIES *)",
+    "rank_score": 6,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "EtwpCopyLogfileInfo(_TRACELOG_CONTEXT *,_EVENT_TRACE_LOGFILEW *)",
+    "ea": "0x18000485c",
+    "function_file": "functions/18000485c_EtwpCopyLogfileInfo_TRACELOG_CONTEXT_EVENT_TRACE_LOGFILEW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpCopyLogfileInfo@@YAKPEAU_TRACELOG_CONTEXT@@PEAU_EVENT_TRACE_LOGFILEW@@@Z",
+    "prototype": "unsigned int __fastcall(struct _TRACELOG_CONTEXT *, struct _EVENT_TRACE_LOGFILEW *)",
+    "rank_score": 6,
+    "size": 378,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "EtwpCopyPropertiesToInfo(_EVENT_TRACE_PROPERTIES *,_WMI_LOGGER_INFORMATION *)",
+    "ea": "0x1800131ec",
+    "function_file": "functions/1800131ec_EtwpCopyPropertiesToInfo_EVENT_TRACE_PROPERTIES_WMI_LOGGER_INFORMATION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpCopyPropertiesToInfo@@YAXPEAU_EVENT_TRACE_PROPERTIES@@PEAU_WMI_LOGGER_INFORMATION@@@Z",
+    "prototype": "void __fastcall(struct _EVENT_TRACE_PROPERTIES *, struct _WMI_LOGGER_INFORMATION *)",
+    "rank_score": 6,
+    "size": 146,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "EtwpHeapCreate(ulong)",
+    "ea": "0x1800144f8",
+    "function_file": "functions/1800144f8_EtwpHeapCreate_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpHeapCreate@@YAPEAU_TRACE_STREAM_HEAP@@K@Z",
+    "prototype": "struct _TRACE_STREAM_HEAP *__fastcall(unsigned int)",
+    "rank_score": 6,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "EtwpIncrementLoggerFile(_WMI_LOGGER_INFORMATION *,ulong,_EVENT_FILTER_DESCRIPTOR *)",
+    "ea": "0x18001349c",
+    "function_file": "functions/18001349c_EtwpIncrementLoggerFile_WMI_LOGGER_INFORMATION_ulong_EVENT_FILTER_DESCRIPTOR.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpIncrementLoggerFile@@YAKPEAU_WMI_LOGGER_INFORMATION@@KPEAU_EVENT_FILTER_DESCRIPTOR@@@Z",
+    "prototype": "unsigned int __fastcall(struct _WMI_LOGGER_INFORMATION *, unsigned int, struct _EVENT_FILTER_DESCRIPTOR *)",
+    "rank_score": 6,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "StringCchCopyW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x180006180",
+    "function_file": "functions/180006180_StringCchCopyW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyW@@YAJPEAG_KPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int64, const unsigned __int16 *)",
+    "rank_score": 6,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "EnableTraceEx",
+    "ea": "0x180002450",
+    "function_file": "functions/180002450_EnableTraceEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EnableTraceEx",
+    "prototype": "ULONG __stdcall(LPCGUID ProviderId, LPCGUID SourceId, TRACEHANDLE TraceHandle, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, ULONG EnableProperty, PEVENT_FILTER_DESCRIPTOR EnableFilterDesc)",
+    "rank_score": 5,
+    "size": 204,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "EtwpDoBufferCallback(_TRACELOG_CONTEXT *,_WMI_BUFFER_HEADER *)",
+    "ea": "0x180010ba0",
+    "function_file": "functions/180010ba0_EtwpDoBufferCallback_TRACELOG_CONTEXT_WMI_BUFFER_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpDoBufferCallback@@YAKPEAU_TRACELOG_CONTEXT@@PEAU_WMI_BUFFER_HEADER@@@Z",
+    "prototype": "unsigned int __fastcall(struct _TRACELOG_CONTEXT *, struct _WMI_BUFFER_HEADER *)",
+    "rank_score": 5,
+    "size": 88,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "EtwpGuidToString(ushort *,ulong,_GUID const *)",
+    "ea": "0x180013d90",
+    "function_file": "functions/180013d90_EtwpGuidToString_ushort_ulong_GUID_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpGuidToString@@YAPEAGPEAGKPEBU_GUID@@@Z",
+    "prototype": "unsigned __int16 *__fastcall(unsigned __int16 *, unsigned int, const struct _GUID *)",
+    "rank_score": 5,
+    "size": 146,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "__scrt_stub_for_acrt_uninitialize_critical",
+    "ea": "0x180002328",
+    "function_file": "functions/180002328_scrt_stub_for_acrt_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_acrt_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "utl::_HashTable<ETW_BUFFER_HEADER const *,utl::pair<ETW_BUFFER_HEADER const * const,PROCESS_TRACE_BUFFER_REF_ENTRY>,utl::hash<ETW_BUFFER_HEADER const *>,utl::equal_to<ETW_BUFFER_HEADER const *>,utl::allocator<utl::pair<ETW_BUFFER_HEADER const * const,PROCESS_TRACE_BUFFER_REF_ENTRY>>,0>::find<void>(ETW_BUFFER_HEADER const * const &)",
+    "ea": "0x180002f34",
+    "function_file": "functions/180002f34_utl_HashTable_ETW_BUFFER_HEADER_const_utl_pair_ETW_BUFFER_HEADER_const_const_PROCESS_TRACE_BUFFER_REF_ENTRY_ut.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$find@X@?$_HashTable@PEBUETW_BUFFER_HEADER@@U?$pair@QEBUETW_BUFFER_HEADER@@UPROCESS_TRACE_BUFFER_REF_ENTRY@@@utl@@U?$hash@PEBUETW_BUFFER_HEADER@@@3@U?$equal_to@PEBUETW_BUFFER_HEADER@@@3@V?$allocator@U?$pair@QEBUETW_BUFFER_HEADER@@UPROCESS_TRACE_BUFFER_REF_ENTRY@@@utl@@@3@$0A@@utl@@QEAA?AV?$_DlistIt@U?$_HashNode@U?$pair@QEBUETW_BUFFER_HEADER@@UPROCESS_TRACE_BUFFER_REF_ENTRY@@@utl@@@utl@@U?$pair@QEBUETW_BUFFER_HEADER@@UPROCESS_TRACE_BUFFER_REF_ENTRY@@@2@@1@AEBQEBUETW_BUFFER_HEADER@@@Z",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 152,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "EtwpCacheMaxLogger(void)",
+    "ea": "0x180008de0",
+    "function_file": "functions/180008de0_EtwpCacheMaxLogger_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpCacheMaxLogger@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 4,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "__local_stdio_printf_options",
+    "ea": "0x180001194",
+    "function_file": "functions/180001194_local_stdio_printf_options.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__local_stdio_printf_options",
+    "prototype": "unsigned __int64 *__cdecl()",
+    "rank_score": 4,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "EtwpCopyLogHeader(_TRACE_LOGFILE_HEADER *,void *,ulong,ushort * *)",
+    "ea": "0x180004768",
+    "function_file": "functions/180004768_EtwpCopyLogHeader_TRACE_LOGFILE_HEADER_void_ulong_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EtwpCopyLogHeader@@YAXPEAU_TRACE_LOGFILE_HEADER@@PEAXKPEAPEAG@Z",
+    "prototype": "void __fastcall(struct _TRACE_LOGFILE_HEADER *, void *, unsigned int, unsigned __int16 **)",
+    "rank_score": 3,
+    "size": 238,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_tlgEnableCallback",
+    "ea": "0x1800010b0",
+    "function_file": "functions/1800010b0_tlgEnableCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgEnableCallback",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 2,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "OpenTraceFromRealTimeLogger",
+    "ea": "0x180006c40",
+    "function_file": "functions/180006c40_OpenTraceFromRealTimeLogger.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OpenTraceFromRealTimeLogger",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 25,
+    "tags": []
+  }
+]
