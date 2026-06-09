@@ -1,0 +1,276 @@
+# TraceProvider::CreateFile2ProxyActivity::StopActivity(void)
+
+- ea: `0x18001fac0`
+- end: `0x18001fcec`
+- name: `?StopActivity@CreateFile2ProxyActivity@TraceProvider@@MEAAXXZ`
+- size: `556`
+- prototype: `void __fastcall(TraceProvider::CreateFile2ProxyActivity *__hidden this)`
+- caller_count: `0`
+- callee_count: `6`
+- tags: `file_ops`
+
+## callees
+
+- `0x180001010`
+- `0x180001650`
+- `0x18000e2d8`
+- `0x18000e964`
+- `0x1800115cc`
+- `0x18001fac0`
+
+## import_xrefs
+
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x18001fc8d`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x18001fc8d`
+
+## pseudocode
+
+```c
+void __fastcall TraceProvider::CreateFile2ProxyActivity::StopActivity(TraceProvider::CreateFile2ProxyActivity *this)
+{
+  __int64 v1; // rdi
+  int v3; // eax
+  int *v4; // rdi
+  __int64 v5; // rdx
+  __int64 v6; // r8
+  const struct _tlgProvider_t *v7; // r9
+  const unsigned __int16 *v8; // rcx
+  __int64 v9; // r8
+  const struct _tlgProvider_t *v10; // rdi
+  DWORD CurrentThreadId; // eax
+  __int64 v12; // r8
+  __int64 v13; // r9
+  int v14; // [rsp+C0h] [rbp-80h] BYREF
+  int v15; // [rsp+C4h] [rbp-7Ch] BYREF
+  int v16; // [rsp+C8h] [rbp-78h] BYREF
+  int v17; // [rsp+CCh] [rbp-74h] BYREF
+  const unsigned __int16 *v18; // [rsp+D0h] [rbp-70h] BYREF
+  const unsigned __int16 *v19; // [rsp+D8h] [rbp-68h] BYREF
+  const unsigned __int16 *v20; // [rsp+E0h] [rbp-60h] BYREF
+  const unsigned __int16 *v21; // [rsp+E8h] [rbp-58h] BYREF
+  const unsigned __int16 *v22; // [rsp+F0h] [rbp-50h] BYREF
+  const unsigned __int16 *v23; // [rsp+F8h] [rbp-48h] BYREF
+  const unsigned __int16 *v24; // [rsp+100h] [rbp-40h] BYREF
+  const unsigned __int16 *v25; // [rsp+108h] [rbp-38h] BYREF
+  const unsigned __int16 *v26; // [rsp+110h] [rbp-30h] BYREF
+  __int64 v27; // [rsp+118h] [rbp-28h] BYREF
+  _QWORD v28[4]; // [rsp+120h] [rbp-20h] BYREF
+  DWORD v29; // [rsp+150h] [rbp+10h] BYREF
+  int v30; // [rsp+158h] [rbp+18h] BYREF
+  __int64 v31; // [rsp+160h] [rbp+20h] BYREF
+  int v32; // [rsp+168h] [rbp+28h] BYREF
+
+  v1 = *((_QWORD *)this + 34);
+  v3 = *(_DWORD *)(v1 + 72);
+  if ( v3 < 0 && (v4 = (int *)(v1 + 80), v3 == v4[2]) && v4 )
+  {
+    wil::ActivityBase<TraceProvider,1,0,5,0,_TlgReflectorTag_Param0IsProviderType>::zInternalStop();
+    v7 = TraceProvider::Provider();
+    if ( *(_DWORD *)v7 > 5u )
+    {
+      v8 = (const unsigned __int16 *)*((_QWORD *)v4 + 6);
+      v20 = (const unsigned __int16 *)*((_QWORD *)v4 + 14);
+      v9 = *((_QWORD *)this + 34);
+      LODWORD(v31) = v4[26];
+      v21 = (const unsigned __int16 *)*((_QWORD *)v4 + 12);
+      v22 = (const unsigned __int16 *)*((_QWORD *)v4 + 11);
+      v32 = v4[20];
+      v23 = (const unsigned __int16 *)*((_QWORD *)v4 + 9);
+      v14 = v4[8];
+      v24 = (const unsigned __int16 *)*((_QWORD *)v4 + 3);
+      v15 = *v4;
+      v25 = (const unsigned __int16 *)*((_QWORD *)v4 + 16);
+      v16 = v4[16];
+      v26 = (const unsigned __int16 *)*((_QWORD *)v4 + 7);
+      v17 = v4[2];
+      v18 = v8;
+      v29 = v4[17];
+      v30 = v4[4];
+      v19 = (const unsigned __int16 *)*((_QWORD *)v4 + 15);
+      v27 = 0x1000000;
+      v28[0] = 0;
+      _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),&long _tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<unsigned short>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<unsigned short>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<unsigned short>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<char>>(
+        (__int64)v7,
+        (__int64)byte_18002CCAD,
+        v9 + 8,
+        (__int64)v7,
+        (__int64)v28,
+        (__int64)&v27,
+        (__int64)&v17,
+        &v26,
+        (__int64)&v16,
+        &v25,
+        (__int64)&v15,
+        &v24,
+        (__int64)&v14,
+        &v23,
+        (__int64)&v32,
+        &v22,
+        &v21,
+        (__int64)&v31,
+        &v20,
+        &v19,
+        (__int64)&v30,
+        (__int64)&v29,
+        &v18);
+    }
+  }
+  else
+  {
+    wil::ActivityBase<TraceProvider,1,0,5,0,_TlgReflectorTag_Param0IsProviderType>::zInternalStop();
+    v10 = TraceProvider::Provider();
+    if ( *(_DWORD *)v10 > 5u )
+    {
+      CurrentThreadId = GetCurrentThreadId();
+      v12 = *((_QWORD *)this + 34);
+      v29 = CurrentThreadId;
+      v30 = *(_DWORD *)(v12 + 72);
+      v31 = 0;
+      _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),&long _tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(
+        (__int64)v10,
+        (__int64)&unk_18002CE00,
+        v12 + 8,
+        v13,
+        (__int64)&v31,
+        (__int64)&v30,
+        (__int64)&v29);
+    }
+  }
+  wil::ActivityBase<TraceProvider,1,0,5,0,_TlgReflectorTag_Param0IsProviderType>::IgnoreCurrentThread(this, v5, v6, v7);
+}
+
+```
+
+## disassembly
+
+```asm
+0x18001fac0  push    rbp
+0x18001fac2  push    rbx
+0x18001fac3  push    rdi
+0x18001fac4  lea     rbp, [rsp+10h]
+0x18001fac9  sub     rsp, 130h
+0x18001fad0  mov     rdi, [rcx+110h]
+0x18001fad7  mov     rbx, rcx
+0x18001fada  mov     eax, [rdi+48h]
+0x18001fadd  test    eax, eax
+0x18001fadf  jns     loc_18001FC79
+0x18001fae5  add     rdi, 50h ; 'P'
+0x18001fae9  cmp     eax, [rdi+8]
+0x18001faec  jnz     loc_18001FC79
+0x18001faf2  test    rdi, rdi
+0x18001faf5  jz      loc_18001FC79
+0x18001fafb  call    ?zInternalStop@?$ActivityBase@VTraceProvider@@$00$0A@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXXZ; wil::ActivityBase<TraceProvider,1,0,5,0,_TlgReflectorTag_Param0IsProviderType>::zInternalStop(void)
+0x18001fb00  call    ?Provider@TraceProvider@@SAPEBU_tlgProvider_t@@XZ; TraceProvider::Provider(void)
+0x18001fb05  mov     r9, rax
+0x18001fb08  mov     ecx, [rax]
+0x18001fb0a  cmp     ecx, 5
+0x18001fb0d  jbe     loc_18001FCDA
+0x18001fb13  mov     rax, [rdi+70h]
+0x18001fb17  lea     rdx, byte_18002CCAD
+0x18001fb1e  mov     rcx, [rdi+30h]
+0x18001fb22  mov     [rbp+var_60], rax
+0x18001fb26  mov     eax, [rdi+68h]
+0x18001fb29  mov     r8, [rbx+110h]
+0x18001fb30  mov     dword ptr [rbp+arg_10], eax
+0x18001fb33  add     r8, 8
+0x18001fb37  mov     rax, [rdi+60h]
+0x18001fb3b  mov     [rbp+var_58], rax
+0x18001fb3f  mov     rax, [rdi+58h]
+0x18001fb43  mov     [rbp+var_50], rax
+0x18001fb47  mov     eax, [rdi+50h]
+0x18001fb4a  mov     [rbp+arg_18], eax
+0x18001fb4d  mov     rax, [rdi+48h]
+0x18001fb51  mov     [rbp+var_48], rax
+0x18001fb55  mov     eax, [rdi+20h]
+0x18001fb58  mov     [rbp+var_80], eax
+0x18001fb5b  mov     rax, [rdi+18h]
+0x18001fb5f  mov     [rbp+var_40], rax
+0x18001fb63  mov     eax, [rdi]
+0x18001fb65  mov     [rbp+var_7C], eax
+0x18001fb68  mov     rax, [rdi+80h]
+0x18001fb6f  mov     [rbp+var_38], rax
+0x18001fb73  mov     eax, [rdi+40h]
+0x18001fb76  mov     [rbp+var_78], eax
+0x18001fb79  mov     rax, [rdi+38h]
+0x18001fb7d  mov     [rbp+var_30], rax
+0x18001fb81  mov     eax, [rdi+8]
+0x18001fb84  mov     [rbp+var_74], eax
+0x18001fb87  lea     rax, [rbp+var_70]
+0x18001fb8b  mov     [rsp+140h+var_90], rax
+0x18001fb93  lea     rax, [rbp+arg_0]
+0x18001fb97  mov     [rsp+140h+var_98], rax
+0x18001fb9f  lea     rax, [rbp+arg_8]
+0x18001fba3  mov     [rsp+140h+var_A0], rax
+0x18001fbab  lea     rax, [rbp+var_68]
+0x18001fbaf  mov     [rsp+140h+var_A8], rax
+0x18001fbb7  lea     rax, [rbp+var_60]
+0x18001fbbb  mov     [rsp+140h+var_B0], rax
+0x18001fbc3  lea     rax, [rbp+arg_10]
+0x18001fbc7  mov     [rsp+140h+var_B8], rax
+0x18001fbcf  lea     rax, [rbp+var_58]
+0x18001fbd3  mov     [rsp+140h+var_C0], rax
+0x18001fbdb  lea     rax, [rbp+var_50]
+0x18001fbdf  mov     [rsp+140h+var_C8], rax
+0x18001fbe4  lea     rax, [rbp+arg_18]
+0x18001fbe8  mov     [rsp+140h+var_D0], rax
+0x18001fbed  lea     rax, [rbp+var_48]
+0x18001fbf1  mov     [rsp+140h+var_D8], rax
+0x18001fbf6  lea     rax, [rbp+var_80]
+0x18001fbfa  mov     [rsp+140h+var_E0], rax
+0x18001fbff  lea     rax, [rbp+var_40]
+0x18001fc03  mov     [rsp+140h+var_E8], rax
+0x18001fc08  lea     rax, [rbp+var_7C]
+0x18001fc0c  mov     [rsp+140h+var_F0], rax
+0x18001fc11  lea     rax, [rbp+var_38]
+0x18001fc15  mov     [rsp+140h+var_F8], rax
+0x18001fc1a  lea     rax, [rbp+var_78]
+0x18001fc1e  mov     [rsp+140h+var_100], rax
+0x18001fc23  lea     rax, [rbp+var_30]
+0x18001fc27  mov     [rsp+140h+var_108], rax
+0x18001fc2c  lea     rax, [rbp+var_74]
+0x18001fc30  mov     [rbp+var_70], rcx
+0x18001fc34  mov     ecx, [rdi+44h]
+0x18001fc37  mov     [rsp+140h+var_110], rax
+0x18001fc3c  lea     rax, [rbp+var_28]
+0x18001fc40  mov     [rbp+arg_0], ecx
+0x18001fc43  mov     ecx, [rdi+10h]
+0x18001fc46  mov     [rbp+arg_8], ecx
+0x18001fc49  mov     rcx, [rdi+78h]
+0x18001fc4d  mov     [rsp+140h+var_118], rax
+0x18001fc52  lea     rax, [rbp+var_20]
+0x18001fc56  mov     [rbp+var_68], rcx
+0x18001fc5a  mov     rcx, r9
+0x18001fc5d  mov     [rsp+140h+var_120], rax
+0x18001fc62  mov     [rbp+var_28], 1000000h
+0x18001fc6a  mov     [rbp+var_20], 0
+0x18001fc72  call    ??$Write@U?$_tlgWrapperByVal@$07@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@G@@U2@U3@U2@U3@U4@U2@U3@U4@U2@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@G@@45456456445@Z; _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<char>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &)
+0x18001fc77  jmp     short loc_18001FCDA
+0x18001fc79  call    ?zInternalStop@?$ActivityBase@VTraceProvider@@$00$0A@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXXZ; wil::ActivityBase<TraceProvider,1,0,5,0,_TlgReflectorTag_Param0IsProviderType>::zInternalStop(void)
+0x18001fc7e  call    ?Provider@TraceProvider@@SAPEBU_tlgProvider_t@@XZ; TraceProvider::Provider(void)
+0x18001fc83  mov     rdi, rax
+0x18001fc86  mov     ecx, [rax]
+0x18001fc88  cmp     ecx, 5
+0x18001fc8b  jbe     short loc_18001FCDA
+0x18001fc8d  call    cs:__imp_GetCurrentThreadId
+0x18001fc93  mov     r8, [rbx+110h]
+0x18001fc9a  lea     rdx, unk_18002CE00
+0x18001fca1  mov     [rbp+arg_0], eax
+0x18001fca4  lea     rax, [rbp+arg_0]
+0x18001fca8  mov     [rsp+140h+var_110], rax
+0x18001fcad  lea     rax, [rbp+arg_8]
+0x18001fcb1  mov     [rsp+140h+var_118], rax
+0x18001fcb6  lea     rax, [rbp+arg_10]
+0x18001fcba  mov     ecx, [r8+48h]
+0x18001fcbe  add     r8, 8
+0x18001fcc2  mov     [rbp+arg_8], ecx
+0x18001fcc5  mov     rcx, rdi
+0x18001fcc8  mov     [rsp+140h+var_120], rax
+0x18001fccd  mov     [rbp+arg_10], 0
+0x18001fcd5  call    ??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@4@Z; _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)
+0x18001fcda  mov     rcx, rbx
+0x18001fcdd  add     rsp, 130h
+0x18001fce4  pop     rdi
+0x18001fce5  pop     rbx
+0x18001fce6  pop     rbp
+0x18001fce7  jmp     ?IgnoreCurrentThread@?$ActivityBase@VTraceProvider@@$00$0A@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXXZ; wil::ActivityBase<TraceProvider,1,0,5,0,_TlgReflectorTag_Param0IsProviderType>::IgnoreCurrentThread(void)
+```

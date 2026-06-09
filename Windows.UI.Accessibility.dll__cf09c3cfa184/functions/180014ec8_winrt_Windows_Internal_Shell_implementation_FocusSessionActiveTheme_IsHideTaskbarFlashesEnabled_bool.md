@@ -1,0 +1,34 @@
+# winrt::Windows::Internal::Shell::implementation::FocusSessionActiveTheme::IsHideTaskbarFlashesEnabled(bool)
+
+- ea: `0x180014ec8`
+- end: `0x180014f69`
+- name: `?IsHideTaskbarFlashesEnabled@FocusSessionActiveTheme@implementation@Shell@Internal@Windows@winrt@@QEAAX_N@Z`
+- size: `161`
+- prototype: `void __fastcall(winrt::Windows::Internal::Shell::implementation::FocusSessionActiveTheme *__hidden this, bool)`
+- caller_count: `1`
+- callee_count: `6`
+- tags: `service_task`
+
+## callers
+
+- `0x180017170`
+
+## callees
+
+- `0x180008ebc`
+- `0x180008fa8`
+- `0x180011b54`
+- `0x180011fa8`
+- `0x180013938`
+- `0x180014ec8`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x180014eed`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x180014eed`
+
+## pseudocode
+
+```c
+
+```
