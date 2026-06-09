@@ -1,0 +1,162 @@
+[
+  {
+    "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001bed",
+        "from_func": "0x180001bb8",
+        "from_func_name": "?LoadProvider@@YA?AW4_MI_Result@@PEAU_WSP_HOSTED_PROVIDER@@@Z",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180001bed",
+        "from_func": "0x180001bb8",
+        "from_func_name": "?LoadProvider@@YA?AW4_MI_Result@@PEAU_WSP_HOSTED_PROVIDER@@@Z",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800018eb",
+        "from_func": "0x1800018a4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800018eb",
+        "from_func": "0x1800018a4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002189",
+        "from_func": "0x180001fec",
+        "from_func_name": "?ServiceInit@@YAXKPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180002189",
+        "from_func": "0x180001fec",
+        "from_func_name": "?ServiceInit@@YAXKPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180004f88",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001f9c",
+        "from_func": "0x180001f3c",
+        "from_func_name": "?ReportServiceStatus@@YAXKKK@Z",
+        "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x180004fec",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-service-winsvc-l1-1-0!RegisterServiceCtrlHandlerW",
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002392",
+        "from_func": "0x180002300",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEAG@Z",
+        "import": "api-ms-win-service-winsvc-l1-1-0!RegisterServiceCtrlHandlerW"
+      },
+      {
+        "from_ea": "0x180002392",
+        "from_func": "0x180002300",
+        "from_func_name": "?ServiceMain@@YAXKPEAPEAG@Z",
+        "import": "api-ms-win-service-winsvc-l1-1-0!RegisterServiceCtrlHandlerW"
+      },
+      {
+        "from_ea": "0x180004fc4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-service-winsvc-l1-1-0!RegisterServiceCtrlHandlerW"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800019a0",
+        "from_func": "0x1800019a0",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlGetVersion",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800021ab",
+        "from_func": "0x180001fec",
+        "from_func_name": "?ServiceInit@@YAXKPEAPEAG@Z",
+        "import": "ntdll!RtlGetVersion"
+      },
+      {
+        "from_ea": "0x1800021ab",
+        "from_func": "0x180001fec",
+        "from_func_name": "?ServiceInit@@YAXKPEAPEAG@Z",
+        "import": "ntdll!RtlGetVersion"
+      },
+      {
+        "from_ea": "0x180005078",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlGetVersion"
+      }
+    ]
+  }
+]

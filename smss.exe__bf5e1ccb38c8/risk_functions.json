@@ -1,0 +1,4812 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpCreateSecurityDescriptors",
+    "ea": "0x14000b930",
+    "function_file": "functions/14000b930_SmpCreateSecurityDescriptors.md",
+    "matched_imports": [
+      "ntdll!RtlAddAccessAllowedAce",
+      "ntdll!RtlAddMandatoryAce",
+      "ntdll!RtlAddProcessTrustLabelAce",
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCreateAcl",
+      "ntdll!RtlCreateSecurityDescriptor",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlGetAce",
+      "ntdll!RtlLengthSid",
+      "ntdll!RtlSetDaclSecurityDescriptor",
+      "ntdll!RtlSetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SmpCreateSecurityDescriptors",
+    "prototype": "",
+    "rank_score": 22267,
+    "size": 3181,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpCreateProtectedPrefixes",
+    "ea": "0x14000a140",
+    "function_file": "functions/14000a140_SmpCreateProtectedPrefixes.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtOpenFile",
+      "ntdll!NtSetSecurityObject",
+      "ntdll!RtlAddAccessAllowedAce",
+      "ntdll!RtlAddMandatoryAce",
+      "ntdll!RtlAdjustPrivilege",
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlCreateAcl",
+      "ntdll!RtlCreateSecurityDescriptor",
+      "ntdll!RtlFreeSid",
+      "ntdll!RtlSetDaclSecurityDescriptor",
+      "ntdll!RtlSetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "\\Device\\NamedPipe\\ProtectedPrefix\\LocalService",
+      "\\Device\\mailslot\\ProtectedPrefix\\NetWorkService",
+      "\\Device\\NamedPipe\\ProtectedPrefix\\NetWorkService",
+      "\\Device\\mailslot\\ProtectedPrefix\\LocalService"
+    ],
+    "name": "SmpCreateProtectedPrefixes",
+    "prototype": "",
+    "rank_score": 10035,
+    "size": 2899,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 26,
+    "caller_count": 1,
+    "demangled": "SmpLoadDataFromRegistry",
+    "ea": "0x14000c638",
+    "function_file": "functions/14000c638_SmpLoadDataFromRegistry.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateDirectoryObject",
+      "ntdll!NtDeleteValueKey",
+      "ntdll!NtInitializeRegistry",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtQuerySystemInformationEx",
+      "ntdll!NtResumeThread",
+      "ntdll!NtSerializeBoot",
+      "ntdll!NtSetEvent",
+      "ntdll!NtSetValueKey",
+      "ntdll!NtTerminateProcess",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCreateEnvironment",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlGetNtSystemRoot",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlIsStateSeparationEnabled",
+      "ntdll!RtlPrefixUnicodeString",
+      "ntdll!RtlQueryPerformanceCounter",
+      "ntdll!RtlQueryPerformanceFrequency",
+      "ntdll!RtlQueryRegistryValuesEx",
+      "ntdll!RtlSetCurrentEnvironment",
+      "ntdll!TpAllocWork",
+      "ntdll!TpPostWork",
+      "ntdll!TpReleaseWork",
+      "ntdll!TpWaitForWork"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\MiniNT",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Session Manager\\Environment",
+      "SmpLoadDataFromRegistry",
+      "SmpLoadDataFromRegistry",
+      "SmpLoadDataFromRegistry",
+      "SmpLoadDataFromRegistry",
+      "SmpLoadDataFromRegistry",
+      "\\REGISTRY\\MACHINE\\OSDATA\\Session Manager"
+    ],
+    "name": "SmpLoadDataFromRegistry",
+    "prototype": "__int64 __fastcall(HANDLE EventHandle)",
+    "rank_score": 9451,
+    "size": 3544,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "SmpParseCommandLine",
+    "ea": "0x140004610",
+    "function_file": "functions/140004610_SmpParseCommandLine.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCompareUnicodeString",
+      "ntdll!RtlCreateUnicodeString",
+      "ntdll!RtlDosPathNameToNtPathName_U",
+      "ntdll!RtlDosSearchPath_U",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlExpandEnvironmentStrings_U",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlQueryEnvironmentVariable_U",
+      "ntdll!iswctype"
+    ],
+    "matched_strings": [
+      "SmpParseCommandLine"
+    ],
+    "name": "SmpParseCommandLine",
+    "prototype": "",
+    "rank_score": 8506,
+    "size": 2059,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "SmpStartCsr",
+    "ea": "0x1400036d0",
+    "function_file": "functions/1400036d0_SmpStartCsr.md",
+    "matched_imports": [
+      "ntdll!NtAlpcSendWaitReceivePort",
+      "ntdll!NtClearEvent",
+      "ntdll!NtClose",
+      "ntdll!NtQueryEvent",
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!NtResumeThread",
+      "ntdll!NtTerminateProcess",
+      "ntdll!NtUnmapViewOfSection",
+      "ntdll!NtWaitForMultipleObjects",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlAcquireSRWLockShared",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlDeleteNoSplay",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlReleaseSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockShared",
+      "ntdll!RtlSleepConditionVariableSRW"
+    ],
+    "matched_strings": [
+      "SmpAllocateInitialCommandBuffer",
+      "SmpExecuteCommand",
+      "SmpExecuteCommand",
+      "SmpExecuteCommand"
+    ],
+    "name": "SmpStartCsr",
+    "prototype": "",
+    "rank_score": 7230,
+    "size": 2798,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "wmain",
+    "ea": "0x140005f64",
+    "function_file": "functions/140005f64_wmain.md",
+    "matched_imports": [
+      "ntdll!EtwEventRegister",
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtSetInformationProcess",
+      "ntdll!NtWaitForMultipleObjects",
+      "ntdll!RtlGetCurrentServiceSessionId",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlInitUnicodeStringEx",
+      "ntdll!RtlInitializeSRWLock",
+      "ntdll!RtlSetHeapInformation",
+      "ntdll!RtlSetThreadIsCritical",
+      "ntdll!TpAllocAlpcCompletion",
+      "ntdll!TpAllocPool",
+      "ntdll!TpAllocWork",
+      "ntdll!TpPostWork",
+      "ntdll!TpSetPoolMinThreads"
+    ],
+    "matched_strings": [
+      "Session Manager failed to set affinity update mode",
+      "Thread pool allocation",
+      "Configuring thread pool minimum thread number",
+      "ALPC Completion object allocation",
+      "Thread pool work object allocation."
+    ],
+    "name": "wmain",
+    "prototype": "",
+    "rank_score": 6093,
+    "size": 1799,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "GetFinalPathNameByHandleW",
+    "ea": "0x140019a5c",
+    "function_file": "functions/140019a5c_GetFinalPathNameByHandleW.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlSetLastWin32Error",
+      "ntdll!wcslen"
+    ],
+    "matched_strings": [],
+    "name": "GetFinalPathNameByHandleW",
+    "prototype": "__int64 __fastcall(HANDLE Handle)",
+    "rank_score": 5641,
+    "size": 1286,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmscpParseArgs",
+    "ea": "0x1400069d0",
+    "function_file": "functions/1400069d0_SmscpParseArgs.md",
+    "matched_imports": [
+      "ntdll!LdrQueryImageFileExecutionOptions",
+      "ntdll!NtDelayExecution",
+      "ntdll!NtMapViewOfSection",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlGetCurrentServiceSessionId",
+      "ntdll!wcstoul"
+    ],
+    "matched_strings": [],
+    "name": "SmscpParseArgs",
+    "prototype": "",
+    "rank_score": 4633,
+    "size": 1370,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "SmpApiCallback",
+    "ea": "0x140001880",
+    "function_file": "functions/140001880_SmpApiCallback.md",
+    "matched_imports": [
+      "ntdll!AlpcGetMessageAttribute",
+      "ntdll!AlpcInitializeMessageAttribute",
+      "ntdll!NtAlpcCancelMessage",
+      "ntdll!NtAlpcDisconnectPort",
+      "ntdll!NtAlpcSendWaitReceivePort",
+      "ntdll!NtClose",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlReleaseSRWLockExclusive",
+      "ntdll!RtlSetThreadIsCritical",
+      "ntdll!TpSetPoolMinThreads"
+    ],
+    "matched_strings": [],
+    "name": "SmpApiCallback",
+    "prototype": "",
+    "rank_score": 4452,
+    "size": 1456,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "CreateFileInternal",
+    "ea": "0x14001a3fc",
+    "function_file": "functions/14001a3fc_CreateFileInternal.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtQueryEaFile",
+      "ntdll!NtQueryInformationFile",
+      "ntdll!NtSetInformationFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlDosPathNameToRelativeNtPathName_U_WithStatus",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeStringEx",
+      "ntdll!RtlReleaseRelativeName",
+      "ntdll!RtlSetLastWin32Error",
+      "ntdll!SbSelectProcedure"
+    ],
+    "matched_strings": [],
+    "name": "CreateFileInternal",
+    "prototype": "__int64 __usercall@<rax>(PCWSTR SourceString@<rcx>, __int64, int)",
+    "rank_score": 4085,
+    "size": 1959,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "SmpInit",
+    "ea": "0x1400146ac",
+    "function_file": "functions/1400146ac_SmpInit.md",
+    "matched_imports": [
+      "ntdll!NtAlpcCreatePort",
+      "ntdll!NtClose",
+      "ntdll!NtOpenEvent",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtSetInformationProcess",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlClearAllBits",
+      "ntdll!RtlCreateTagHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitializeBitMap",
+      "ntdll!RtlSetBits"
+    ],
+    "matched_strings": [
+      "\\Device\\VolumesSafeForWriteAccess"
+    ],
+    "name": "SmpInit",
+    "prototype": "",
+    "rank_score": 4022,
+    "size": 1466,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "InternalFindFirstFileExW",
+    "ea": "0x14001bb50",
+    "function_file": "functions/14001bb50_InternalFindFirstFileExW.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryDirectoryFileEx",
+      "ntdll!RtlCompareMemory",
+      "ntdll!RtlDosPathNameToRelativeNtPathName_U",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlIsDosDeviceName_U",
+      "ntdll!RtlReleaseRelativeName",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "InternalFindFirstFileExW",
+    "prototype": "__int64 __fastcall(PCWSTR DosName)",
+    "rank_score": 3858,
+    "size": 1307,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 6,
+    "demangled": "SmpExecuteImage",
+    "ea": "0x1400053e0",
+    "function_file": "functions/1400053e0_SmpExecuteImage.md",
+    "matched_imports": [
+      "ntdll!EtwEventEnabled",
+      "ntdll!EtwEventWrite",
+      "ntdll!NtClose",
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtResumeThread",
+      "ntdll!NtSetInformationProcess",
+      "ntdll!NtTerminateProcess",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlCreateProcessParametersEx",
+      "ntdll!RtlCreateUserProcessEx",
+      "ntdll!RtlDestroyProcessParameters",
+      "ntdll!RtlFindSetBits",
+      "ntdll!RtlInterlockedSetBitRun",
+      "ntdll!RtlTestBit"
+    ],
+    "matched_strings": [],
+    "name": "SmpExecuteImage",
+    "prototype": "",
+    "rank_score": 3855,
+    "size": 1457,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "SmpHandleConnectionRequest",
+    "ea": "0x140001f60",
+    "function_file": "functions/140001f60_SmpHandleConnectionRequest.md",
+    "matched_imports": [
+      "ntdll!AlpcGetMessageAttribute",
+      "ntdll!NtAlpcAcceptConnectPort",
+      "ntdll!NtAlpcConnectPort",
+      "ntdll!NtAlpcOpenSenderProcess",
+      "ntdll!NtClose",
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlAcquireSRWLockShared",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeStringEx",
+      "ntdll!RtlInitializeSRWLock",
+      "ntdll!RtlReleaseSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockShared"
+    ],
+    "matched_strings": [],
+    "name": "SmpHandleConnectionRequest",
+    "prototype": "",
+    "rank_score": 3655,
+    "size": 2101,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SmpTranslateSystemPartitionInformation",
+    "ea": "0x14000b514",
+    "function_file": "functions/14000b514_SmpTranslateSystemPartitionInformation.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtOpenSymbolicLinkObject",
+      "ntdll!NtQueryDirectoryObject",
+      "ntdll!NtQuerySymbolicLinkObject",
+      "ntdll!NtQueryValueKey",
+      "ntdll!NtSetValueKey",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlGetNtSystemRoot",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [
+      "SmpTranslateSystemPartitionInformation",
+      "SmpTranslateSystemPartitionInformation",
+      "SymbolicLink",
+      "\\Registry\\Machine\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup",
+      "SystemPartition",
+      "\\Registry\\Machine\\System\\Setup"
+    ],
+    "name": "SmpTranslateSystemPartitionInformation",
+    "prototype": "",
+    "rank_score": 3511,
+    "size": 980,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SmpInitializeKnownDllsInternal",
+    "ea": "0x140008470",
+    "function_file": "functions/140008470_SmpInitializeKnownDllsInternal.md",
+    "matched_imports": [
+      "ntdll!LdrVerifyImageMatchesChecksumEx",
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryObject",
+      "ntdll!NtSystemDebugControl",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlAppxIsFileOwnedByTrustedInstaller",
+      "ntdll!RtlCompareUnicodeString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "SmpInitializeKnownDllsInternal",
+      "SmpInitializeKnownDllsInternal",
+      "SmpInitializeKnownDllsInternal",
+      "Verification of a KnownDLL failed.",
+      "Non-DLL file included in KnownDLL list."
+    ],
+    "name": "SmpInitializeKnownDllsInternal",
+    "prototype": "",
+    "rank_score": 3482,
+    "size": 1596,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpInitializePendingRename",
+    "ea": "0x14000e080",
+    "function_file": "functions/14000e080_SmpInitializePendingRename.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateMutant",
+      "ntdll!RtlAddAccessAllowedAce",
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCreateAcl",
+      "ntdll!RtlCreateSecurityDescriptor",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeSid",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlLengthSid",
+      "ntdll!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "\\PendingRenameMutex"
+    ],
+    "name": "SmpInitializePendingRename",
+    "prototype": "",
+    "rank_score": 3297,
+    "size": 607,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpGetPlatformBinary",
+    "ea": "0x1400143b0",
+    "function_file": "functions/1400143b0_SmpGetPlatformBinary.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtDeleteFile",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtWriteFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SmpGetPlatformBinary",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING Destination)",
+    "rank_score": 3058,
+    "size": 756,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SmpSetDumpSecurityAndAttributes",
+    "ea": "0x140012930",
+    "function_file": "functions/140012930_SmpSetDumpSecurityAndAttributes.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationFile",
+      "ntdll!NtSetInformationFile",
+      "ntdll!NtSetSecurityObject",
+      "ntdll!RtlAddAccessAllowedAce",
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlCreateAcl",
+      "ntdll!RtlCreateSecurityDescriptor",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlSetDaclSecurityDescriptor",
+      "ntdll!RtlSetOwnerSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SmpSetDumpSecurityAndAttributes",
+    "prototype": "__int64 __fastcall(HANDLE FileHandle)",
+    "rank_score": 3039,
+    "size": 641,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpCreateDynamicEnvironmentVariables",
+    "ea": "0x140013a40",
+    "function_file": "functions/140013a40_SmpCreateDynamicEnvironmentVariables.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtQueryValueKey",
+      "ntdll!NtSetValueKey",
+      "ntdll!_wcsupr_s"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\Hardware\\Description\\System\\CentralProcessor\\0",
+      "SmpCreateDynamicEnvironmentVariables",
+      "SmpCreateDynamicEnvironmentVariables",
+      "DSREPAIR"
+    ],
+    "name": "SmpCreateDynamicEnvironmentVariables",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 2837,
+    "size": 1426,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "SmpSbCreateSession",
+    "ea": "0x140002bb0",
+    "function_file": "functions/140002bb0_SmpSbCreateSession.md",
+    "matched_imports": [
+      "ntdll!NtAlpcSendWaitReceivePort",
+      "ntdll!NtClose",
+      "ntdll!NtDuplicateObject",
+      "ntdll!NtResumeThread",
+      "ntdll!RtlAcquireSRWLockShared",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "SmpSbCreateSession",
+      "SmpSbCreateSession",
+      "SmpSbCreateSession",
+      "SmpSbCreateSession"
+    ],
+    "name": "SmpSbCreateSession",
+    "prototype": "",
+    "rank_score": 2802,
+    "size": 1337,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BasepGetVolumeDosLetterNameFromNTName",
+    "ea": "0x14001933c",
+    "function_file": "functions/14001933c_BasepGetVolumeDosLetterNameFromNTName.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlSetLastWin32Error",
+      "ntdll!_wcsnicmp",
+      "ntdll!wcslen"
+    ],
+    "matched_strings": [
+      "\\\\.\\MountPointManager"
+    ],
+    "name": "BasepGetVolumeDosLetterNameFromNTName",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 2683,
+    "size": 819,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "SmpRunSecureKernelTrustlets",
+    "ea": "0x140016190",
+    "function_file": "functions/140016190_SmpRunSecureKernelTrustlets.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Failed to open interface key.",
+      "SecureKernelTrustlet registry key not found",
+      "Registry Buffer too small",
+      "Failed to query SecureKernelTrustlet registry value.",
+      "SecureKernelTrustlet registry value is the wrong type.",
+      "Provided trustlet path is too long.",
+      "Failed to allocate memory for trustlet path buffer.",
+      "Failed to add prefix to trustlet path.",
+      "Failed to append registry data to trustlet path."
+    ],
+    "name": "SmpRunSecureKernelTrustlets",
+    "prototype": "",
+    "rank_score": 2609,
+    "size": 1123,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "GetLongPathNameW",
+    "ea": "0x14001ae48",
+    "function_file": "functions/14001ae48_GetLongPathNameW.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlSetLastWin32Error",
+      "ntdll!wcslen"
+    ],
+    "matched_strings": [],
+    "name": "GetLongPathNameW",
+    "prototype": "__int64 __fastcall(PCWSTR Name, void *)",
+    "rank_score": 2438,
+    "size": 999,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SmpEnableCachingOnDedicatedMemoryWorker",
+    "ea": "0x1400108cc",
+    "function_file": "functions/1400108cc_SmpEnableCachingOnDedicatedMemoryWorker.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtManagePartition",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SmpEnableCachingOnDedicatedMemoryWorker",
+    "prototype": "",
+    "rank_score": 2420,
+    "size": 742,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SmpSaveOldPageFiles",
+    "ea": "0x140009100",
+    "function_file": "functions/140009100_SmpSaveOldPageFiles.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtFlushKey",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!NtSetValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl\\MachineCrash",
+      "SavedPageFilePath"
+    ],
+    "name": "SmpSaveOldPageFiles",
+    "prototype": "",
+    "rank_score": 2345,
+    "size": 953,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BasepGetVolumeGUIDFromNTName",
+    "ea": "0x140019678",
+    "function_file": "functions/140019678_BasepGetVolumeGUIDFromNTName.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlSetLastWin32Error",
+      "ntdll!wcslen"
+    ],
+    "matched_strings": [
+      "\\\\.\\MountPointManager"
+    ],
+    "name": "BasepGetVolumeGUIDFromNTName",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 2281,
+    "size": 766,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "SmpProcessFileRenames",
+    "ea": "0x140015ae8",
+    "function_file": "functions/140015ae8_SmpProcessFileRenames.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAdjustPrivilege",
+      "ntdll!RtlDeleteRegistryValue",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "ClearTempFiles",
+      "PendingFileRenameOperations",
+      "PendingFileRenameOperations",
+      "PendingFileRenameOperations2",
+      "PendingFileRenameOperations2",
+      "\\REGISTRY\\MACHINE\\OSDATA\\Session Manager",
+      "\\REGISTRY\\MACHINE\\OSDATA\\Session Manager",
+      "SmpProcessFileRenames"
+    ],
+    "name": "SmpProcessFileRenames",
+    "prototype": "",
+    "rank_score": 2182,
+    "size": 980,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SmpCreateWorkingSetSwapPagingFile",
+    "ea": "0x140010344",
+    "function_file": "functions/140010344_SmpCreateWorkingSetSwapPagingFile.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreatePagingFile",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlUpcaseUnicodeChar"
+    ],
+    "matched_strings": [
+      "SmpCreateWorkingSetSwapPagingFile"
+    ],
+    "name": "SmpCreateWorkingSetSwapPagingFile",
+    "prototype": "",
+    "rank_score": 2109,
+    "size": 1155,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "BasepGetFileRedirectionStatus",
+    "ea": "0x14001b450",
+    "function_file": "functions/14001b450_BasepGetFileRedirectionStatus.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlDosPathNameToNtPathName_U_WithStatus",
+      "ntdll!RtlFreeHeap",
+      "ntdll!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "BasepGetFileRedirectionStatus",
+    "prototype": "",
+    "rank_score": 2041,
+    "size": 547,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "SmpReleaseControlBlock",
+    "ea": "0x140004ec0",
+    "function_file": "functions/140004ec0_SmpReleaseControlBlock.md",
+    "matched_imports": [
+      "ntdll!NtAlpcSendWaitReceivePort",
+      "ntdll!NtClose",
+      "ntdll!NtUnmapViewOfSection",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlDeleteNoSplay",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "SmpReleaseControlBlock",
+    "prototype": "__int64 __fastcall(PVOID BaseAddress)",
+    "rank_score": 2030,
+    "size": 361,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SmpCheckForCrashDump",
+    "ea": "0x140011438",
+    "function_file": "functions/140011438_SmpCheckForCrashDump.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateKey",
+      "ntdll!NtOpenFile",
+      "ntdll!NtReadFile",
+      "ntdll!NtSetValueKey",
+      "ntdll!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl\\MachineCrash",
+      "TempDestination"
+    ],
+    "name": "SmpCheckForCrashDump",
+    "prototype": "",
+    "rank_score": 1954,
+    "size": 794,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpAllocateControlBlock",
+    "ea": "0x1400041d0",
+    "function_file": "functions/1400041d0_SmpAllocateControlBlock.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateEvent",
+      "ntdll!NtCreateSection",
+      "ntdll!NtMapViewOfSection",
+      "ntdll!NtUnmapViewOfSection",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SmpAllocateControlBlock",
+    "prototype": "",
+    "rank_score": 1864,
+    "size": 1067,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateMergeLink",
+    "ea": "0x1400094c0",
+    "function_file": "functions/1400094c0_CreateMergeLink.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDeleteKey",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryKey",
+      "ntdll!NtSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "CreateMergeLink",
+    "prototype": "",
+    "rank_score": 1847,
+    "size": 472,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SmpSaveRegistryValue_U",
+    "ea": "0x140007e50",
+    "function_file": "functions/140007e50_SmpSaveRegistryValue_U.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCompareUnicodeString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "SmpSaveRegistryValue_U",
+    "prototype": "",
+    "rank_score": 1839,
+    "size": 615,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpEstablishClientSecurity",
+    "ea": "0x140017740",
+    "function_file": "functions/140017740_SmpEstablishClientSecurity.md",
+    "matched_imports": [
+      "ntdll!NtAlpcImpersonateClientOfPort",
+      "ntdll!NtClose",
+      "ntdll!NtOpenThreadToken",
+      "ntdll!NtQueryInformationToken",
+      "ntdll!NtSetInformationThread",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlAcquireSRWLockShared",
+      "ntdll!RtlReleaseSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockShared"
+    ],
+    "matched_strings": [],
+    "name": "SmpEstablishClientSecurity",
+    "prototype": "",
+    "rank_score": 1835,
+    "size": 356,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SmscpLoadSubSystem",
+    "ea": "0x1400050a0",
+    "function_file": "functions/1400050a0_SmscpLoadSubSystem.md",
+    "matched_imports": [
+      "ntdll!EtwEventEnabled",
+      "ntdll!EtwEventWrite",
+      "ntdll!NtQueryEvent",
+      "ntdll!NtResumeThread",
+      "ntdll!NtSetInformationProcess",
+      "ntdll!NtTerminateProcess",
+      "ntdll!NtWaitForMultipleObjects"
+    ],
+    "matched_strings": [],
+    "name": "SmscpLoadSubSystem",
+    "prototype": "",
+    "rank_score": 1825,
+    "size": 821,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SmpStartServerSilo",
+    "ea": "0x140017ad0",
+    "function_file": "functions/140017ad0_SmpStartServerSilo.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDuplicateObject",
+      "ntdll!NtQueryInformationJobObject",
+      "ntdll!NtResumeThread",
+      "ntdll!NtTerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "SmpStartServerSilo",
+    "prototype": "",
+    "rank_score": 1818,
+    "size": 396,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpConfigureSharedSessionData",
+    "ea": "0x140009930",
+    "function_file": "functions/140009930_SmpConfigureSharedSessionData.md",
+    "matched_imports": [
+      "ntdll!NtCreateSection",
+      "ntdll!NtDuplicateObject",
+      "ntdll!NtMapViewOfSection",
+      "ntdll!NtUnmapViewOfSection",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "SmpConfigureSharedSessionData",
+      "SmpConfigureSharedSessionData",
+      "SmpConfigureSharedSessionData"
+    ],
+    "name": "SmpConfigureSharedSessionData",
+    "prototype": "",
+    "rank_score": 1801,
+    "size": 2047,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SmpCreatePagingFileDescriptor",
+    "ea": "0x14000fa74",
+    "function_file": "functions/14000fa74_SmpCreatePagingFileDescriptor.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlUpcaseUnicodeChar"
+    ],
+    "matched_strings": [
+      "SmpCreatePagingFileDescriptor",
+      "SmpCreatePagingFileDescriptor",
+      "SmpCreatePagingFileDescriptor",
+      "SmpCreatePagingFileDescriptor"
+    ],
+    "name": "SmpCreatePagingFileDescriptor",
+    "prototype": "",
+    "rank_score": 1801,
+    "size": 638,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmpOpenKnownDllsHandles",
+    "ea": "0x140015660",
+    "function_file": "functions/140015660_SmpOpenKnownDllsHandles.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateDirectoryObject",
+      "ntdll!NtCreateSymbolicLinkObject",
+      "ntdll!NtOpenFile",
+      "ntdll!RtlDosPathNameToNtPathName_U_WithStatus",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "KnownDllPath",
+      "SmpOpenKnownDllsHandles",
+      "SmpOpenKnownDllsHandles"
+    ],
+    "name": "SmpOpenKnownDllsHandles",
+    "prototype": "",
+    "rank_score": 1780,
+    "size": 635,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SmpClearTemporaryFiles",
+    "ea": "0x14000e2e8",
+    "function_file": "functions/14000e2e8_SmpClearTemporaryFiles.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryDirectoryFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlDeleteRegistryValue",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "ClearTempFiles"
+    ],
+    "name": "SmpClearTemporaryFiles",
+    "prototype": "",
+    "rank_score": 1698,
+    "size": 497,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpCopyFile",
+    "ea": "0x140011758",
+    "function_file": "functions/140011758_SmpCopyFile.md",
+    "matched_imports": [
+      "ntdll!NtAllocateVirtualMemory",
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtFreeVirtualMemory",
+      "ntdll!NtReadFile",
+      "ntdll!NtSetInformationFile",
+      "ntdll!NtWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpCopyFile",
+    "prototype": "__int64 __fastcall(HANDLE FileHandle)",
+    "rank_score": 1662,
+    "size": 870,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SmpCreateVolumeDescriptor",
+    "ea": "0x14000fed0",
+    "function_file": "functions/14000fed0_SmpCreateVolumeDescriptor.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryVolumeInformationFile",
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [
+      "SmpCreateVolumeDescriptor",
+      "SmpCreateVolumeDescriptor",
+      "SmpCreateVolumeDescriptor"
+    ],
+    "name": "SmpCreateVolumeDescriptor",
+    "prototype": "",
+    "rank_score": 1586,
+    "size": 788,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SmpReplaceSystemHiveOnSoftReboot",
+    "ea": "0x140016018",
+    "function_file": "functions/140016018_SmpReplaceSystemHiveOnSoftReboot.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\SystemRoot\\System32\\config\\SYSTEM.ksr.tmp",
+      "\\SystemRoot\\System32\\config\\SYSTEM",
+      "Failed to replace system hive on soft reboot",
+      "SmpReplaceSystemHiveOnSoftReboot",
+      "\\SystemRoot\\System32\\config\\SYSTEM.LOG1",
+      "\\SystemRoot\\System32\\config\\SYSTEM.LOG2"
+    ],
+    "name": "SmpReplaceSystemHiveOnSoftReboot",
+    "prototype": "",
+    "rank_score": 1479,
+    "size": 355,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SmpUpdatePagefileUsageCallback",
+    "ea": "0x1400078c0",
+    "function_file": "functions/1400078c0_SmpUpdatePagefileUsageCallback.md",
+    "matched_imports": [
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtSetValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SmpUpdatePagefileUsageCallback"
+    ],
+    "name": "SmpUpdatePagefileUsageCallback",
+    "prototype": "",
+    "rank_score": 1470,
+    "size": 991,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpFinalizePathStrings",
+    "ea": "0x14000e6c0",
+    "function_file": "functions/14000e6c0_SmpFinalizePathStrings.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlGetNtSystemRoot",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\system32;"
+    ],
+    "name": "SmpFinalizePathStrings",
+    "prototype": "",
+    "rank_score": 1453,
+    "size": 218,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SmscMain",
+    "ea": "0x140006680",
+    "function_file": "functions/140006680_SmscMain.md",
+    "matched_imports": [
+      "ntdll!NtDelayExecution",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlConnectToSm",
+      "ntdll!RtlCreateTagHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmscMain",
+    "prototype": "",
+    "rank_score": 1446,
+    "size": 837,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateRegistryLinksForMachine",
+    "ea": "0x14000b21c",
+    "function_file": "functions/14000b21c_CreateRegistryLinksForMachine.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCopyUnicodeString",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "CreateRegistryLinksForMachine",
+    "prototype": "",
+    "rank_score": 1438,
+    "size": 450,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpCreateEmergencyPagingFile",
+    "ea": "0x14000f5b0",
+    "function_file": "functions/14000f5b0_SmpCreateEmergencyPagingFile.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpCreateEmergencyPagingFile",
+    "prototype": "",
+    "rank_score": 1415,
+    "size": 317,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FindClose",
+    "ea": "0x14001ba7c",
+    "function_file": "functions/14001ba7c_FindClose.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlDeleteCriticalSection",
+      "ntdll!RtlEnterCriticalSection",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlLeaveCriticalSection",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "FindClose",
+    "prototype": "__int64 __fastcall(PVOID BaseAddress)",
+    "rank_score": 1414,
+    "size": 203,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpComputeDesiredPfSizeBasedOnHistory",
+    "ea": "0x14000da48",
+    "function_file": "functions/14000da48_SmpComputeDesiredPfSizeBasedOnHistory.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlSecondsSince1970ToTime",
+      "ntdll!qsort"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+      "InstallDate",
+      "SmpComputeDesiredPfSizeBasedOnHistory"
+    ],
+    "name": "SmpComputeDesiredPfSizeBasedOnHistory",
+    "prototype": "",
+    "rank_score": 1391,
+    "size": 718,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SmpRecordCreatedPageFiles",
+    "ea": "0x140011158",
+    "function_file": "functions/140011158_SmpRecordCreatedPageFiles.md",
+    "matched_imports": [
+      "ntdll!NtDeleteValueKey",
+      "ntdll!NtFlushKey",
+      "ntdll!NtSetValueKey",
+      "ntdll!RtlCompareMemory",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "TempPageFile",
+      "SmpRecordCreatedPageFiles",
+      "SmpRecordCreatedPageFiles"
+    ],
+    "name": "SmpRecordCreatedPageFiles",
+    "prototype": "",
+    "rank_score": 1346,
+    "size": 359,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SmpPagefileInitialize",
+    "ea": "0x140010dc8",
+    "function_file": "functions/140010dc8_SmpPagefileInitialize.md",
+    "matched_imports": [
+      "ntdll!NtOpenKey",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!RtlGetNtSystemRoot",
+      "ntdll!RtlGetVersion",
+      "ntdll!RtlUpcaseUnicodeChar"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Session Manager\\Memory Management",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\CrashControl"
+    ],
+    "name": "SmpPagefileInitialize",
+    "prototype": "",
+    "rank_score": 1342,
+    "size": 669,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NtProcessStartupW_AfterSecurityCookieInitialized",
+    "ea": "0x140005c00",
+    "function_file": "functions/140005c00_NtProcessStartupW_AfterSecurityCookieInitialized.md",
+    "matched_imports": [
+      "ntdll!NtTerminateProcess",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlNormalizeProcessParams",
+      "ntdll!iswspace"
+    ],
+    "matched_strings": [],
+    "name": "NtProcessStartupW_AfterSecurityCookieInitialized",
+    "prototype": "",
+    "rank_score": 1339,
+    "size": 861,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpInitializeKnownDllsAsync",
+    "ea": "0x140014e2c",
+    "function_file": "functions/140014e2c_SmpInitializeKnownDllsAsync.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateEvent",
+      "ntdll!NtSetEvent",
+      "ntdll!TpAllocWork",
+      "ntdll!TpPostWork",
+      "ntdll!TpReleaseWork"
+    ],
+    "matched_strings": [
+      "\\KnownDlls\\SmKnownDllsInitialized",
+      "SmpInitializeKnownDllsAsync"
+    ],
+    "name": "SmpInitializeKnownDllsAsync",
+    "prototype": "",
+    "rank_score": 1324,
+    "size": 246,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SmpInitializeDosDevices",
+    "ea": "0x140014c70",
+    "function_file": "functions/140014c70_SmpInitializeDosDevices.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateSymbolicLinkObject",
+      "ntdll!NtMakeTemporaryObject",
+      "ntdll!NtOpenDirectoryObject"
+    ],
+    "matched_strings": [],
+    "name": "SmpInitializeDosDevices",
+    "prototype": "",
+    "rank_score": 1267,
+    "size": 436,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SmpConfigureEnvironment",
+    "ea": "0x140013370",
+    "function_file": "functions/140013370_SmpConfigureEnvironment.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlSetEnvironmentVariable",
+      "ntdll!_wcsicmp"
+    ],
+    "matched_strings": [
+      "SmpConfigureEnvironment"
+    ],
+    "name": "SmpConfigureEnvironment",
+    "prototype": "__int64 __fastcall(wchar_t *Str1)",
+    "rank_score": 1264,
+    "size": 245,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpLogPFROError",
+    "ea": "0x1400153bc",
+    "function_file": "functions/1400153bc_SmpLogPFROError.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtQueryInformationFile",
+      "ntdll!NtSetInformationFile",
+      "ntdll!NtWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpLogPFROError",
+    "prototype": "",
+    "rank_score": 1261,
+    "size": 667,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SmpSendPlatformBinaryStatus",
+    "ea": "0x1400165fc",
+    "function_file": "functions/1400165fc_SmpSendPlatformBinaryStatus.md",
+    "matched_imports": [
+      "ntdll!EtwEventWrite",
+      "ntdll!NtClose",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtOpenFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SmpSendPlatformBinaryStatus",
+    "prototype": "",
+    "rank_score": 1250,
+    "size": 692,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpShuffleMove",
+    "ea": "0x140016958",
+    "function_file": "functions/140016958_SmpShuffleMove.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpShuffleMove",
+    "prototype": "",
+    "rank_score": 1250,
+    "size": 564,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SmpSaveOldPageFile",
+    "ea": "0x140012608",
+    "function_file": "functions/140012608_SmpSaveOldPageFile.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeToString",
+      "ntdll!RtlCopyUnicodeString",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SmpSaveOldPageFile",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString)",
+    "rank_score": 1247,
+    "size": 407,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreateKeyRecursively",
+    "ea": "0x1400096a0",
+    "function_file": "functions/1400096a0_CreateKeyRecursively.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "CreateKeyRecursively",
+    "prototype": "",
+    "rank_score": 1226,
+    "size": 636,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SmpInitializeKnownDlls",
+    "ea": "0x14000eb40",
+    "function_file": "functions/14000eb40_SmpInitializeKnownDlls.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlWow64IsWowGuestMachineSupported"
+    ],
+    "matched_strings": [
+      "\\KnownDlls32",
+      "SmpInitializeKnownDlls",
+      "SmpInitializeKnownDlls"
+    ],
+    "name": "SmpInitializeKnownDlls",
+    "prototype": "",
+    "rank_score": 1151,
+    "size": 474,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmpConfigureObjectDirectories",
+    "ea": "0x140013680",
+    "function_file": "functions/140013680_SmpConfigureObjectDirectories.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateDirectoryObject",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "SmpConfigureObjectDirectories"
+    ],
+    "name": "SmpConfigureObjectDirectories",
+    "prototype": "",
+    "rank_score": 1104,
+    "size": 292,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpIsRamdiskBoot",
+    "ea": "0x140010c5c",
+    "function_file": "functions/140010c5c_SmpIsRamdiskBoot.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control"
+    ],
+    "name": "SmpIsRamdiskBoot",
+    "prototype": "",
+    "rank_score": 1095,
+    "size": 356,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SmpQuerySameVolume",
+    "ea": "0x140012320",
+    "function_file": "functions/140012320_SmpQuerySameVolume.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryVolumeInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpQuerySameVolume",
+    "prototype": "__int64 __fastcall(HANDLE FileHandle)",
+    "rank_score": 1058,
+    "size": 402,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "InternalGetFileAttributesW",
+    "ea": "0x14001a090",
+    "function_file": "functions/14001a090_InternalGetFileAttributesW.md",
+    "matched_imports": [
+      "ntdll!NtQueryAttributesFile",
+      "ntdll!RtlDosPathNameToNtPathName_U_WithStatus",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlIsDosDeviceName_U",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "InternalGetFileAttributesW",
+    "prototype": "__int64 __fastcall(PCWSTR Name)",
+    "rank_score": 1057,
+    "size": 266,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SmpGetDumpDestination",
+    "ea": "0x140011d24",
+    "function_file": "functions/140011d24_SmpGetDumpDestination.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!RtlCompareMemory",
+      "ntdll!RtlCreateUnicodeString",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpGetDumpDestination",
+    "prototype": "",
+    "rank_score": 1054,
+    "size": 570,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmscpLoadSubSystemsForMuSession",
+    "ea": "0x140006f30",
+    "function_file": "functions/140006f30_SmscpLoadSubSystemsForMuSession.md",
+    "matched_imports": [
+      "ntdll!NtSerializeBoot",
+      "ntdll!NtSetSystemInformation",
+      "ntdll!RtlAcquirePrivilege",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlReleasePrivilege"
+    ],
+    "matched_strings": [],
+    "name": "SmscpLoadSubSystemsForMuSession",
+    "prototype": "",
+    "rank_score": 1053,
+    "size": 938,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpCheckMemoryCoolingCompatibility",
+    "ea": "0x14000d6f8",
+    "function_file": "functions/14000d6f8_SmpCheckMemoryCoolingCompatibility.md",
+    "matched_imports": [
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!NtUpdateWnfStateData",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SmpCheckMemoryCoolingCompatibility",
+    "prototype": "",
+    "rank_score": 1033,
+    "size": 235,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "SmpTerminate",
+    "ea": "0x140017d5c",
+    "function_file": "functions/140017d5c_SmpTerminate.md",
+    "matched_imports": [
+      "ntdll!NtPowerInformation",
+      "ntdll!NtRaiseHardError",
+      "ntdll!NtTerminateProcess",
+      "ntdll!RtlAdjustPrivilege"
+    ],
+    "matched_strings": [],
+    "name": "SmpTerminate",
+    "prototype": "void __fastcall __noreturn(PULONG_PTR Parameters, ULONG UnicodeStringParameterMask, ULONG NumberOfParameters)",
+    "rank_score": 1032,
+    "size": 195,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SmpDisposeSubSysSynch",
+    "ea": "0x140017ff0",
+    "function_file": "functions/140017ff0_SmpDisposeSubSysSynch.md",
+    "matched_imports": [
+      "ntdll!NtClearEvent",
+      "ntdll!NtClose",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "SmpDisposeSubSysSynch",
+    "prototype": "__int64 __fastcall(PVOID BaseAddress)",
+    "rank_score": 1017,
+    "size": 145,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SmpGetSubSysSynch",
+    "ea": "0x140018088",
+    "function_file": "functions/140018088_SmpGetSubSysSynch.md",
+    "matched_imports": [
+      "ntdll!NtCreateEvent",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "SmpGetSubSysSynch",
+    "prototype": "",
+    "rank_score": 1014,
+    "size": 198,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "SmpAsyncMemoryConfiguration",
+    "ea": "0x14000f120",
+    "function_file": "functions/14000f120_SmpAsyncMemoryConfiguration.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtInitializeRegistry",
+      "ntdll!NtSetSystemInformation",
+      "ntdll!RtlSubscribeWnfStateChangeNotification"
+    ],
+    "matched_strings": [
+      "SmpAsyncMemoryConfiguration",
+      "SmpAsyncMemoryConfiguration",
+      "SmpAsyncMemoryConfiguration"
+    ],
+    "name": "SmpAsyncMemoryConfiguration",
+    "prototype": "",
+    "rank_score": 960,
+    "size": 345,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SmpProcessModuleImports",
+    "ea": "0x140007cb0",
+    "function_file": "functions/140007cb0_SmpProcessModuleImports.md",
+    "matched_imports": [
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlInitAnsiString",
+      "ntdll!_stricmp"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "ntdll32.dll"
+    ],
+    "name": "SmpProcessModuleImports",
+    "prototype": "",
+    "rank_score": 907,
+    "size": 405,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SmscpShouldRequireProcessMitigation",
+    "ea": "0x140018458",
+    "function_file": "functions/140018458_SmscpShouldRequireProcessMitigation.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+    ],
+    "name": "SmscpShouldRequireProcessMitigation",
+    "prototype": "",
+    "rank_score": 897,
+    "size": 430,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpLoadPnPSerializeSettings",
+    "ea": "0x1400072e0",
+    "function_file": "functions/1400072e0_SmpLoadPnPSerializeSettings.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\PnP"
+    ],
+    "name": "SmpLoadPnPSerializeSettings",
+    "prototype": "",
+    "rank_score": 895,
+    "size": 312,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmpSetCoreProcessIds",
+    "ea": "0x140017954",
+    "function_file": "functions/140017954_SmpSetCoreProcessIds.md",
+    "matched_imports": [
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockExclusive",
+      "ntdll!RtlWakeAllConditionVariable"
+    ],
+    "matched_strings": [
+      "SmpSetCoreProcessIds"
+    ],
+    "name": "SmpSetCoreProcessIds",
+    "prototype": "",
+    "rank_score": 867,
+    "size": 203,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "SmpCheckFolderForRedirections",
+    "ea": "0x1400130f4",
+    "function_file": "functions/1400130f4_SmpCheckFolderForRedirections.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpCheckFolderForRedirections",
+    "prototype": "",
+    "rank_score": 861,
+    "size": 478,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SmpTryOverwriteReadonlyFile",
+    "ea": "0x140016b94",
+    "function_file": "functions/140016b94_SmpTryOverwriteReadonlyFile.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtQueryAttributesFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpTryOverwriteReadonlyFile",
+    "prototype": "",
+    "rank_score": 850,
+    "size": 413,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 10,
+    "demangled": "SmpDereferenceKnownSubSys",
+    "ea": "0x140001e40",
+    "function_file": "functions/140001e40_SmpDereferenceKnownSubSys.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpDereferenceKnownSubSys",
+    "prototype": "__int64 __fastcall(PVOID BaseAddress)",
+    "rank_score": 835,
+    "size": 272,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "SmpTerminateCSR",
+    "ea": "0x140001630",
+    "function_file": "functions/140001630_SmpTerminateCSR.md",
+    "matched_imports": [
+      "ntdll!NtTerminateProcess",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "SmpTerminateCSR",
+    "prototype": "",
+    "rank_score": 834,
+    "size": 581,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "SmpRenameTargetFile",
+    "ea": "0x140015ef8",
+    "function_file": "functions/140015ef8_SmpRenameTargetFile.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtSetInformationFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SmpRenameTargetFile",
+    "prototype": "",
+    "rank_score": 830,
+    "size": 282,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 2,
+    "demangled": "SmpLoadSubSystem",
+    "ea": "0x1400151e0",
+    "function_file": "functions/1400151e0_SmpLoadSubSystem.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtResumeThread",
+      "ntdll!NtTerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "SmpLoadSubSystem",
+    "prototype": "",
+    "rank_score": 829,
+    "size": 469,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpRandomizeDllList",
+    "ea": "0x140008ba8",
+    "function_file": "functions/140008ba8_SmpRandomizeDllList.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlRandomEx",
+      "ntdll!qsort_s"
+    ],
+    "matched_strings": [],
+    "name": "SmpRandomizeDllList",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 287,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 5,
+    "demangled": "SmpExecuteCommand",
+    "ea": "0x140003450",
+    "function_file": "functions/140003450_SmpExecuteCommand.md",
+    "matched_imports": [
+      "ntdll!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [
+      "SmpExecuteCommand",
+      "SmpExecuteCommand",
+      "SmpExecuteCommand"
+    ],
+    "name": "SmpExecuteCommand",
+    "prototype": "",
+    "rank_score": 759,
+    "size": 626,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SmpDeletePagingFile",
+    "ea": "0x1400107e8",
+    "function_file": "functions/1400107e8_SmpDeletePagingFile.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtSetInformationFile"
+    ],
+    "matched_strings": [
+      "SmpDeletePagingFile",
+      "SmpDeletePagingFile"
+    ],
+    "name": "SmpDeletePagingFile",
+    "prototype": "",
+    "rank_score": 736,
+    "size": 219,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpReadySubSys",
+    "ea": "0x1400011b0",
+    "function_file": "functions/1400011b0_SmpReadySubSys.md",
+    "matched_imports": [
+      "ntdll!NtSetEvent",
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockExclusive",
+      "ntdll!RtlWakeAllConditionVariable"
+    ],
+    "matched_strings": [],
+    "name": "SmpReadySubSys",
+    "prototype": "",
+    "rank_score": 714,
+    "size": 155,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SmpInitializeKnownDllsWorker",
+    "ea": "0x140014f30",
+    "function_file": "functions/140014f30_SmpInitializeKnownDllsWorker.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtSetEvent",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Failure in known dll worker.",
+      "SmpInitializeKnownDllsWorker"
+    ],
+    "name": "SmpInitializeKnownDllsWorker",
+    "prototype": "",
+    "rank_score": 695,
+    "size": 142,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpCreateVolumeDescriptors",
+    "ea": "0x1400101ec",
+    "function_file": "functions/1400101ec_SmpCreateVolumeDescriptors.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationProcess",
+      "ntdll!RtlInitUnicodeStringEx"
+    ],
+    "matched_strings": [
+      "SmpCreateVolumeDescriptors"
+    ],
+    "name": "SmpCreateVolumeDescriptors",
+    "prototype": "",
+    "rank_score": 658,
+    "size": 335,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpQueryVolumeFreeSpace",
+    "ea": "0x1400124b8",
+    "function_file": "functions/1400124b8_SmpQueryVolumeFreeSpace.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryVolumeInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpQueryVolumeFreeSpace",
+    "prototype": "",
+    "rank_score": 645,
+    "size": 328,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpReadSafeBootOption",
+    "ea": "0x14000e904",
+    "function_file": "functions/14000e904_SmpReadSafeBootOption.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!NtQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "SmpReadSafeBootOption",
+    "prototype": "",
+    "rank_score": 644,
+    "size": 232,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "SmpDestroyControlBlock",
+    "ea": "0x140005ac4",
+    "function_file": "functions/140005ac4_SmpDestroyControlBlock.md",
+    "matched_imports": [
+      "ntdll!NtTerminateProcess",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpDestroyControlBlock",
+    "prototype": "__int64 __fastcall(PVOID BaseAddress)",
+    "rank_score": 642,
+    "size": 269,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SmpPathCanBeTrustedIsNotARedirection",
+    "ea": "0x14001598c",
+    "function_file": "functions/14001598c_SmpPathCanBeTrustedIsNotARedirection.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCompareUnicodeStrings",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SmpPathCanBeTrustedIsNotARedirection",
+    "prototype": "",
+    "rank_score": 638,
+    "size": 339,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SmpQueryPathFromRegistry",
+    "ea": "0x140012204",
+    "function_file": "functions/140012204_SmpQueryPathFromRegistry.md",
+    "matched_imports": [
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlDosPathNameToNtPathName_U",
+      "ntdll!RtlExpandEnvironmentStrings_U"
+    ],
+    "matched_strings": [],
+    "name": "SmpQueryPathFromRegistry",
+    "prototype": "",
+    "rank_score": 636,
+    "size": 278,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpConfigureRenameTempDir",
+    "ea": "0x140013830",
+    "function_file": "functions/140013830_SmpConfigureRenameTempDir.md",
+    "matched_imports": [
+      "ntdll!RtlCopyUnicodeString",
+      "ntdll!RtlDosPathNameToNtPathName_U",
+      "ntdll!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpConfigureRenameTempDir",
+    "prototype": "",
+    "rank_score": 632,
+    "size": 128,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BasepOpenParentDirectoryNoRedirection",
+    "ea": "0x14001b67c",
+    "function_file": "functions/14001b67c_BasepOpenParentDirectoryNoRedirection.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BasepOpenParentDirectoryNoRedirection",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString)",
+    "rank_score": 629,
+    "size": 383,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmpConfigureSubSystems",
+    "ea": "0x140013950",
+    "function_file": "functions/140013950_SmpConfigureSubSystems.md",
+    "matched_imports": [
+      "ntdll!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "SmpConfigureSubSystems",
+    "prototype": "__int64 __usercall@<rax>(wchar_t *Str1@<rcx>, int, __int64)",
+    "rank_score": 623,
+    "size": 195,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SmpDeallocSavedRegistryEntry",
+    "ea": "0x14000b408",
+    "function_file": "functions/14000b408_SmpDeallocSavedRegistryEntry.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpDeallocSavedRegistryEntry",
+    "prototype": "__int64 __fastcall(PVOID BaseAddress)",
+    "rank_score": 623,
+    "size": 83,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpGetCoreProcessIds",
+    "ea": "0x14000aed4",
+    "function_file": "functions/14000aed4_SmpGetCoreProcessIds.md",
+    "matched_imports": [
+      "ntdll!RtlAcquireSRWLockShared",
+      "ntdll!RtlReleaseSRWLockShared",
+      "ntdll!RtlSleepConditionVariableSRW"
+    ],
+    "matched_strings": [],
+    "name": "SmpGetCoreProcessIds",
+    "prototype": "",
+    "rank_score": 623,
+    "size": 144,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "SmpOpenTargetFile",
+    "ea": "0x1400158e4",
+    "function_file": "functions/1400158e4_SmpOpenTargetFile.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpOpenTargetFile",
+    "prototype": "__int64 __fastcall(int, int, int, int, ULONG)",
+    "rank_score": 618,
+    "size": 159,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpExpandKnownDllsPath",
+    "ea": "0x14000d83c",
+    "function_file": "functions/14000d83c_SmpExpandKnownDllsPath.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlAppendUnicodeStringToString",
+      "ntdll!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpExpandKnownDllsPath",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING Source, PUNICODE_STRING Destination)",
+    "rank_score": 613,
+    "size": 147,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "SmpCreatePagingFiles",
+    "ea": "0x14000fcf8",
+    "function_file": "functions/14000fcf8_SmpCreatePagingFiles.md",
+    "matched_imports": [
+      "ntdll!NtSetSystemInformation",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SmpCreatePagingFiles",
+      "SmpCreatePagingFiles"
+    ],
+    "name": "SmpCreatePagingFiles",
+    "prototype": "",
+    "rank_score": 520,
+    "size": 464,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmpConfigureKnownDlls",
+    "ea": "0x1400135c0",
+    "function_file": "functions/1400135c0_SmpConfigureKnownDlls.md",
+    "matched_imports": [
+      "ntdll!_wcsicmp"
+    ],
+    "matched_strings": [
+      "DllDirectory",
+      "DllDirectory32"
+    ],
+    "name": "SmpConfigureKnownDlls",
+    "prototype": "__int64 __usercall@<rax>(wchar_t *Str1@<rcx>, int, __int64)",
+    "rank_score": 502,
+    "size": 99,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmpDeleteFile",
+    "ea": "0x140013fd8",
+    "function_file": "functions/140013fd8_SmpDeleteFile.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile"
+    ],
+    "matched_strings": [
+      "SmpDeleteFile"
+    ],
+    "name": "SmpDeleteFile",
+    "prototype": "",
+    "rank_score": 497,
+    "size": 231,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SmpCreatePagefileOnVolume",
+    "ea": "0x14000f6f4",
+    "function_file": "functions/14000f6f4_SmpCreatePagefileOnVolume.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile"
+    ],
+    "matched_strings": [
+      "SmpCreatePagefileOnVolume"
+    ],
+    "name": "SmpCreatePagefileOnVolume",
+    "prototype": "",
+    "rank_score": 493,
+    "size": 718,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SmpCreatePagingFile",
+    "ea": "0x14000f9c8",
+    "function_file": "functions/14000f9c8_SmpCreatePagingFile.md",
+    "matched_imports": [
+      "ntdll!NtCreatePagingFile",
+      "ntdll!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [
+      "SmpCreatePagingFile"
+    ],
+    "name": "SmpCreatePagingFile",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2)",
+    "rank_score": 476,
+    "size": 165,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BasepGetModuleHandleExW",
+    "ea": "0x14001a1a0",
+    "function_file": "functions/14001a1a0_BasepGetModuleHandleExW.md",
+    "matched_imports": [
+      "ntdll!LdrGetDllHandle",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "BasepGetModuleHandleExW",
+    "prototype": "",
+    "rank_score": 453,
+    "size": 119,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NtPnpInitializeLibrary",
+    "ea": "0x14001c7cc",
+    "function_file": "functions/14001c7cc_NtPnpInitializeLibrary.md",
+    "matched_imports": [
+      "ntdll!NtCreateFile",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "NtPnpInitializeLibrary",
+    "prototype": "",
+    "rank_score": 453,
+    "size": 208,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SmpForceDeleteTargetFile",
+    "ea": "0x14001426c",
+    "function_file": "functions/14001426c_SmpForceDeleteTargetFile.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtQueryAttributesFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpForceDeleteTargetFile",
+    "prototype": "",
+    "rank_score": 450,
+    "size": 318,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 5,
+    "demangled": "SmpWaitForStatusChange",
+    "ea": "0x140018154",
+    "function_file": "functions/140018154_SmpWaitForStatusChange.md",
+    "matched_imports": [
+      "ntdll!NtDelayExecution",
+      "ntdll!NtWaitForMultipleObjects"
+    ],
+    "matched_strings": [],
+    "name": "SmpWaitForStatusChange",
+    "prototype": "",
+    "rank_score": 445,
+    "size": 370,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpGetControlDeviceHandle",
+    "ea": "0x14000dfc0",
+    "function_file": "functions/14000dfc0_SmpGetControlDeviceHandle.md",
+    "matched_imports": [
+      "ntdll!NtOpenFile",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpGetControlDeviceHandle",
+    "prototype": "",
+    "rank_score": 443,
+    "size": 172,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SmpQueryFileExists",
+    "ea": "0x140012078",
+    "function_file": "functions/140012078_SmpQueryFileExists.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpQueryFileExists",
+    "prototype": "",
+    "rank_score": 443,
+    "size": 120,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmscpIsDebuggerPresent",
+    "ea": "0x140018350",
+    "function_file": "functions/140018350_SmscpIsDebuggerPresent.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "SmscpIsDebuggerPresent",
+    "prototype": "",
+    "rank_score": 443,
+    "size": 137,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmpConfigureS0InitCmd",
+    "ea": "0x1400138c0",
+    "function_file": "functions/1400138c0_SmpConfigureS0InitCmd.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlInitUnicodeStringEx"
+    ],
+    "matched_strings": [],
+    "name": "SmpConfigureS0InitCmd",
+    "prototype": "",
+    "rank_score": 433,
+    "size": 132,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "SmpSaveRegistryValue",
+    "ea": "0x1400182cc",
+    "function_file": "functions/1400182cc_SmpSaveRegistryValue.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpSaveRegistryValue",
+    "prototype": "",
+    "rank_score": 430,
+    "size": 123,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpFinishPFROLogging",
+    "ea": "0x140014100",
+    "function_file": "functions/140014100_SmpFinishPFROLogging.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpFinishPFROLogging",
+    "prototype": "",
+    "rank_score": 428,
+    "size": 356,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmpCreateTempFile",
+    "ea": "0x140011ac4",
+    "function_file": "functions/140011ac4_SmpCreateTempFile.md",
+    "matched_imports": [
+      "ntdll!RtlDosPathNameToNtPathName_U",
+      "ntdll!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpCreateTempFile",
+    "prototype": "",
+    "rank_score": 427,
+    "size": 227,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SmpCheckHybridPriority",
+    "ea": "0x14000f280",
+    "function_file": "functions/14000f280_SmpCheckHybridPriority.md",
+    "matched_imports": [
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlComputeCrc32"
+    ],
+    "matched_strings": [],
+    "name": "SmpCheckHybridPriority",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 356,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpEventWriteString2",
+    "ea": "0x14000d608",
+    "function_file": "functions/14000d608_SmpEventWriteString2.md",
+    "matched_imports": [
+      "ntdll!EtwEventEnabled",
+      "ntdll!EtwEventWrite"
+    ],
+    "matched_strings": [],
+    "name": "SmpEventWriteString2",
+    "prototype": "",
+    "rank_score": 424,
+    "size": 234,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SkipPathTypeIndicator_U",
+    "ea": "0x14001b298",
+    "function_file": "functions/14001b298_SkipPathTypeIndicator_U.md",
+    "matched_imports": [
+      "ntdll!RtlDetermineDosPathNameType_U",
+      "ntdll!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "SkipPathTypeIndicator_U",
+    "prototype": "",
+    "rank_score": 423,
+    "size": 158,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 12,
+    "demangled": "BaseSetLastNTError",
+    "ea": "0x14001cabc",
+    "function_file": "functions/14001cabc_BaseSetLastNTError.md",
+    "matched_imports": [
+      "ntdll!RtlNtStatusToDosError",
+      "ntdll!RtlSetLastWin32Error"
+    ],
+    "matched_strings": [],
+    "name": "BaseSetLastNTError",
+    "prototype": "",
+    "rank_score": 422,
+    "size": 30,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpGetFirstSessionId",
+    "ea": "0x14000accc",
+    "function_file": "functions/14000accc_SmpGetFirstSessionId.md",
+    "matched_imports": [
+      "ntdll!NtDelayExecution",
+      "ntdll!RtlGetCurrentServiceSessionId"
+    ],
+    "matched_strings": [],
+    "name": "SmpGetFirstSessionId",
+    "prototype": "",
+    "rank_score": 422,
+    "size": 44,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BasepGetDirectoryRedirectionStatus",
+    "ea": "0x14001b33c",
+    "function_file": "functions/14001b33c_BasepGetDirectoryRedirectionStatus.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BasepGetDirectoryRedirectionStatus",
+    "prototype": "__int64 __fastcall(NTSTRSAFE_PCWSTR pszSrc)",
+    "rank_score": 418,
+    "size": 269,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PathReplaceGreedy",
+    "ea": "0x140018ebc",
+    "function_file": "functions/140018ebc_PathReplaceGreedy.md",
+    "matched_imports": [
+      "ntdll!RtlUpcaseUnicodeChar"
+    ],
+    "matched_strings": [],
+    "name": "PathReplaceGreedy",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 614,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetProcAddressForCaller",
+    "ea": "0x14001a254",
+    "function_file": "functions/14001a254_GetProcAddressForCaller.md",
+    "matched_imports": [
+      "ntdll!LdrGetProcedureAddressForCaller",
+      "ntdll!RtlInitString"
+    ],
+    "matched_strings": [],
+    "name": "GetProcAddressForCaller",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 185,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SmpCreateKnownSubSys",
+    "ea": "0x140003390",
+    "function_file": "functions/140003390_SmpCreateKnownSubSys.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SmpCreateKnownSubSys",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 178,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpCreateDedicatedMemoryPagefile",
+    "ea": "0x14000f4d8",
+    "function_file": "functions/14000f4d8_SmpCreateDedicatedMemoryPagefile.md",
+    "matched_imports": [
+      "ntdll!NtCreatePagingFile",
+      "ntdll!NtQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "SmpCreateDedicatedMemoryPagefile",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 209,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SmpEventWrite",
+    "ea": "0x14000d450",
+    "function_file": "functions/14000d450_SmpEventWrite.md",
+    "matched_imports": [
+      "ntdll!EtwEventEnabled",
+      "ntdll!EtwEventWrite"
+    ],
+    "matched_strings": [],
+    "name": "SmpEventWrite",
+    "prototype": "__int64 __fastcall(PCEVENT_DESCRIPTOR EventDescriptor)",
+    "rank_score": 414,
+    "size": 62,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpEventWriteString",
+    "ea": "0x140011bb0",
+    "function_file": "functions/140011bb0_SmpEventWriteString.md",
+    "matched_imports": [
+      "ntdll!EtwEventEnabled",
+      "ntdll!EtwEventWrite"
+    ],
+    "matched_strings": [],
+    "name": "SmpEventWriteString",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 153,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SmpEventWriteULONG",
+    "ea": "0x140008d10",
+    "function_file": "functions/140008d10_SmpEventWriteULONG.md",
+    "matched_imports": [
+      "ntdll!EtwEventEnabled",
+      "ntdll!EtwEventWrite"
+    ],
+    "matched_strings": [],
+    "name": "SmpEventWriteULONG",
+    "prototype": "__int64 __fastcall(PCEVENT_DESCRIPTOR EventDescriptor)",
+    "rank_score": 414,
+    "size": 119,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpEventWriteULONGString",
+    "ea": "0x140008d90",
+    "function_file": "functions/140008d90_SmpEventWriteULONGString.md",
+    "matched_imports": [
+      "ntdll!EtwEventEnabled",
+      "ntdll!EtwEventWrite"
+    ],
+    "matched_strings": [],
+    "name": "SmpEventWriteULONGString",
+    "prototype": "__int64 __fastcall(PCEVENT_DESCRIPTOR EventDescriptor)",
+    "rank_score": 414,
+    "size": 187,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpReadyBootSync",
+    "ea": "0x14000df30",
+    "function_file": "functions/14000df30_SmpReadyBootSync.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpReadyBootSync",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 138,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SmscpExecuteInitialCommand",
+    "ea": "0x140007420",
+    "function_file": "functions/140007420_SmscpExecuteInitialCommand.md",
+    "matched_imports": [
+      "ntdll!NtTerminateProcess"
+    ],
+    "matched_strings": [
+      "SmscpExecuteInitialCommand",
+      "SmscpExecuteInitialCommand"
+    ],
+    "name": "SmscpExecuteInitialCommand",
+    "prototype": "",
+    "rank_score": 314,
+    "size": 574,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "SmpCreateInitialSession",
+    "ea": "0x140017c70",
+    "function_file": "functions/140017c70_SmpCreateInitialSession.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "SmpCreateInitialSession"
+    ],
+    "name": "SmpCreateInitialSession",
+    "prototype": "",
+    "rank_score": 268,
+    "size": 229,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpAdjustPagefileSizeforLowStorage",
+    "ea": "0x14000efb8",
+    "function_file": "functions/14000efb8_SmpAdjustPagefileSizeforLowStorage.md",
+    "matched_imports": [
+      "ntdll!NtQueryLicenseValue"
+    ],
+    "matched_strings": [
+      "System-ConfigurePagefileForLowStorage-Enabled"
+    ],
+    "name": "SmpAdjustPagefileSizeforLowStorage",
+    "prototype": "",
+    "rank_score": 264,
+    "size": 350,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpInitializeSessionManagement",
+    "ea": "0x14000ea00",
+    "function_file": "functions/14000ea00_SmpInitializeSessionManagement.md",
+    "matched_imports": [
+      "ntdll!NtCreateEvent"
+    ],
+    "matched_strings": [],
+    "name": "SmpInitializeSessionManagement",
+    "prototype": "",
+    "rank_score": 243,
+    "size": 86,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SmpFindRegistryValueEx",
+    "ea": "0x140008ab4",
+    "function_file": "functions/140008ab4_SmpFindRegistryValueEx.md",
+    "matched_imports": [
+      "ntdll!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpFindRegistryValueEx",
+    "prototype": "",
+    "rank_score": 233,
+    "size": 77,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SmpGetProcessId",
+    "ea": "0x140001450",
+    "function_file": "functions/140001450_SmpGetProcessId.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationProcess"
+    ],
+    "matched_strings": [],
+    "name": "SmpGetProcessId",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 69,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SmpQueryDwordFromRegistry",
+    "ea": "0x140011fe8",
+    "function_file": "functions/140011fe8_SmpQueryDwordFromRegistry.md",
+    "matched_imports": [
+      "ntdll!NtQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "SmpQueryDwordFromRegistry",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 136,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ApiSetpSearchForApiSet",
+    "ea": "0x1400077c0",
+    "function_file": "functions/1400077c0_ApiSetpSearchForApiSet.md",
+    "matched_imports": [
+      "ntdll!RtlCompareUnicodeStrings"
+    ],
+    "matched_strings": [],
+    "name": "ApiSetpSearchForApiSet",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 240,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ApiSetpSearchForApiSetHost",
+    "ea": "0x140008fc0",
+    "function_file": "functions/140008fc0_ApiSetpSearchForApiSetHost.md",
+    "matched_imports": [
+      "ntdll!RtlCompareUnicodeStrings"
+    ],
+    "matched_strings": [],
+    "name": "ApiSetpSearchForApiSetHost",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 177,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ApiSetpSearchForHostOverrideIndex_V7",
+    "ea": "0x140018d84",
+    "function_file": "functions/140018d84_ApiSetpSearchForHostOverrideIndex_V7.md",
+    "matched_imports": [
+      "ntdll!RtlCompareUnicodeStrings"
+    ],
+    "matched_strings": [],
+    "name": "ApiSetpSearchForHostOverrideIndex_V7",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 138,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "RtlStringCbPrintfW",
+    "ea": "0x140004e30",
+    "function_file": "functions/140004e30_RtlStringCbPrintfW.md",
+    "matched_imports": [
+      "ntdll!_vsnwprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "RtlStringCbPrintfW",
+    "prototype": "NTSTATUS(NTSTRSAFE_PWSTR pszDest, size_t cbDest, NTSTRSAFE_PCWSTR pszFormat, ...)",
+    "rank_score": 223,
+    "size": 138,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpFindModuleInModuleList",
+    "ea": "0x140008b10",
+    "function_file": "functions/140008b10_SmpFindModuleInModuleList.md",
+    "matched_imports": [
+      "ntdll!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpFindModuleInModuleList",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 145,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "SmpDeleteTargetFile",
+    "ea": "0x1400140c8",
+    "function_file": "functions/1400140c8_SmpDeleteTargetFile.md",
+    "matched_imports": [
+      "ntdll!NtSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpDeleteTargetFile",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 50,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "SmpUnlockKnownSubSysList",
+    "ea": "0x1400030f0",
+    "function_file": "functions/1400030f0_SmpUnlockKnownSubSysList.md",
+    "matched_imports": [
+      "ntdll!RtlReleaseSRWLockExclusive",
+      "ntdll!RtlReleaseSRWLockShared"
+    ],
+    "matched_strings": [],
+    "name": "SmpUnlockKnownSubSysList",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 30,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SmpSetTargetAttributes",
+    "ea": "0x1400168b8",
+    "function_file": "functions/1400168b8_SmpSetTargetAttributes.md",
+    "matched_imports": [
+      "ntdll!NtSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "SmpSetTargetAttributes",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 152,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SmpUnhandledExceptionFilter",
+    "ea": "0x140017e28",
+    "function_file": "functions/140017e28_SmpUnhandledExceptionFilter.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmpUnhandledExceptionFilter",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 149,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NtPnpOpenDeviceInterfaceKey",
+    "ea": "0x14001c8a4",
+    "function_file": "functions/14001c8a4_NtPnpOpenDeviceInterfaceKey.md",
+    "matched_imports": [
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [],
+    "name": "NtPnpOpenDeviceInterfaceKey",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 280,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "SmpLockKnownSubSysList",
+    "ea": "0x140008cd0",
+    "function_file": "functions/140008cd0_SmpLockKnownSubSysList.md",
+    "matched_imports": [
+      "ntdll!RtlAcquireSRWLockExclusive",
+      "ntdll!RtlAcquireSRWLockShared"
+    ],
+    "matched_strings": [],
+    "name": "SmpLockKnownSubSysList",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 53,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SmpNtSerializeBoot",
+    "ea": "0x14000d418",
+    "function_file": "functions/14000d418_SmpNtSerializeBoot.md",
+    "matched_imports": [
+      "ntdll!NtSerializeBoot"
+    ],
+    "matched_strings": [],
+    "name": "SmpNtSerializeBoot",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 48,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTransfer_EtwEventWriteTransfer",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTransfer_EtwEventWriteTransfer.md",
+    "matched_imports": [
+      "ntdll!EtwEventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwEventWriteTransfer",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 161,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 42,
+    "demangled": "memset_0",
+    "ea": "0x14001cc29",
+    "function_file": "functions/14001cc29_memset_0.md",
+    "matched_imports": [
+      "ntdll!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 135,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpCompleteSubSysStatusChange",
+    "ea": "0x14000b8f0",
+    "function_file": "functions/14000b8f0_SmpCompleteSubSysStatusChange.md",
+    "matched_imports": [
+      "ntdll!NtSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "SmpCompleteSubSysStatusChange",
+    "prototype": "",
+    "rank_score": 123,
+    "size": 57,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 12,
+    "demangled": "memcpy_0",
+    "ea": "0x14001cc11",
+    "function_file": "functions/14001cc11_memcpy_0.md",
+    "matched_imports": [
+      "ntdll!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t MaxCount)",
+    "rank_score": 122,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "memmove_0",
+    "ea": "0x14001cc1d",
+    "function_file": "functions/14001cc1d_memmove_0.md",
+    "matched_imports": [
+      "ntdll!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 116,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmpGetCrashParameters",
+    "ea": "0x140011c50",
+    "function_file": "functions/140011c50_SmpGetCrashParameters.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Overwrite"
+    ],
+    "name": "SmpGetCrashParameters",
+    "prototype": "",
+    "rank_score": 67,
+    "size": 203,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x140016d44",
+    "function_file": "functions/140016d44_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RtlQueryFeatureConfiguration"
+    ],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 242,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CreateFileW",
+    "ea": "0x14001abac",
+    "function_file": "functions/14001abac_CreateFileW.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\\\.\\MountPointManager"
+    ],
+    "name": "CreateFileW",
+    "prototype": "",
+    "rank_score": 63,
+    "size": 81,
+    "tags": [
+      "file_ops",
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 92,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14001cc40",
+    "function_file": "functions/14001cc40_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 30,
+    "demangled": "SmpLogFailureString",
+    "ea": "0x1400010ec",
+    "function_file": "functions/1400010ec_SmpLogFailureString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpLogFailureString",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 175,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 41,
+    "demangled": "SmpLogFailure",
+    "ea": "0x14000d4c0",
+    "function_file": "functions/14000d4c0_SmpLogFailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpLogFailure",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 117,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140017404",
+    "function_file": "functions/140017404_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 273,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14001cb2c",
+    "function_file": "functions/14001cb2c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_RecordFeatureUsage",
+    "ea": "0x140016e3c",
+    "function_file": "functions/140016e3c_wil_RtlStagingConfig_RecordFeatureUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_RecordFeatureUsage",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 90,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x140017398",
+    "function_file": "functions/140017398_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 101,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NtProcessStartupW",
+    "ea": "0x140005be0",
+    "function_file": "functions/140005be0_NtProcessStartupW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NtProcessStartupW",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 23,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmpConfigureExcludeKnownDlls",
+    "ea": "0x140013470",
+    "function_file": "functions/140013470_SmpConfigureExcludeKnownDlls.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureExcludeKnownDlls",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 105,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmpConfigureFileRenames",
+    "ea": "0x140013570",
+    "function_file": "functions/140013570_SmpConfigureFileRenames.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureFileRenames",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 65,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "SmpFreeSavedRegistryEntry",
+    "ea": "0x14000d494",
+    "function_file": "functions/14000d494_SmpFreeSavedRegistryEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpFreeSavedRegistryEntry",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 37,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpConfigureBackgroundLoadKnownDlls",
+    "ea": "0x140013300",
+    "function_file": "functions/140013300_SmpConfigureBackgroundLoadKnownDlls.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureBackgroundLoadKnownDlls",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 22,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpConfigureNumberInitialSessions",
+    "ea": "0x140013630",
+    "function_file": "functions/140013630_SmpConfigureNumberInitialSessions.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureNumberInitialSessions",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 72,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x14001e010",
+    "function_file": "functions/14001e010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SmpDeleteSubSys",
+    "ea": "0x140017f58",
+    "function_file": "functions/140017f58_SmpDeleteSubSys.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpDeleteSubSys",
+    "prototype": "__int64 __fastcall(PVOID BaseAddress)",
+    "rank_score": 18,
+    "size": 143,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "wil_details_IsEnabledFallback",
+    "ea": "0x1400176c0",
+    "function_file": "functions/1400176c0_wil_details_IsEnabledFallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_IsEnabledFallback",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 120,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 13,
+    "demangled": "SmLogFailureInt",
+    "ea": "0x140003114",
+    "function_file": "functions/140003114_SmLogFailureInt.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmLogFailureInt",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x1400170e8",
+    "function_file": "functions/1400170e8_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 380,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x14001726c",
+    "function_file": "functions/14001726c_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 292,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpComputeDesiredPfSizeForCrashDump",
+    "ea": "0x14000dd1c",
+    "function_file": "functions/14000dd1c_SmpComputeDesiredPfSizeForCrashDump.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpComputeDesiredPfSizeForCrashDump",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 339,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_GetNtDllProcedureAddress",
+    "ea": "0x140017684",
+    "function_file": "functions/140017684_wil_details_GetNtDllProcedureAddress.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_GetNtDllProcedureAddress",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 54,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SmpSessionIdIsInitialSessions",
+    "ea": "0x1400010b0",
+    "function_file": "functions/1400010b0_SmpSessionIdIsInitialSessions.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpSessionIdIsInitialSessions",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 53,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SmpSessionIdToInitialSessionIndex",
+    "ea": "0x140008f80",
+    "function_file": "functions/140008f80_SmpSessionIdToInitialSessionIndex.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpSessionIdToInitialSessionIndex",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 46,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14000eeb0",
+    "function_file": "functions/14000eeb0_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 68,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x140016f3c",
+    "function_file": "functions/140016f3c_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 201,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x14001700c",
+    "function_file": "functions/14001700c_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 213,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreateFile2",
+    "ea": "0x14001a39c",
+    "function_file": "functions/14001a39c_CreateFile2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateFile2",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 47,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmpConfigureExecute",
+    "ea": "0x1400134e0",
+    "function_file": "functions/1400134e0_SmpConfigureExecute.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureExecute",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 81,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmpConfigureOneTimeExecute",
+    "ea": "0x1400137b0",
+    "function_file": "functions/1400137b0_SmpConfigureOneTimeExecute.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureOneTimeExecute",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "SmpInternalLogFailure",
+    "ea": "0x140005998",
+    "function_file": "functions/140005998_SmpInternalLogFailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpInternalLogFailure",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 294,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmpUpdatePagingFileSizes",
+    "ea": "0x14000d8ec",
+    "function_file": "functions/14000d8ec_SmpUpdatePagingFileSizes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpUpdatePagingFileSizes",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 55,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie_ex",
+    "ea": "0x14000eefc",
+    "function_file": "functions/14000eefc_security_init_cookie_ex.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie_ex",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x14001751c",
+    "function_file": "functions/14001751c_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 76,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpConfigureAllowProtectedRenames",
+    "ea": "0x1400132e0",
+    "function_file": "functions/1400132e0_SmpConfigureAllowProtectedRenames.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureAllowProtectedRenames",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 23,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpConfigureClearTempFiles",
+    "ea": "0x140013320",
+    "function_file": "functions/140013320_SmpConfigureClearTempFiles.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureClearTempFiles",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 19,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpConfigureDosDevices",
+    "ea": "0x140013340",
+    "function_file": "functions/140013340_SmpConfigureDosDevices.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureDosDevices",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 28,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpConfigureExistingPageFiles",
+    "ea": "0x140013540",
+    "function_file": "functions/140013540_SmpConfigureExistingPageFiles.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureExistingPageFiles",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 31,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpConfigurePagefileOptions",
+    "ea": "0x140013810",
+    "function_file": "functions/140013810_SmpConfigurePagefileOptions.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigurePagefileOptions",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 22,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpConfigureWaitForPagingFiles",
+    "ea": "0x140013a20",
+    "function_file": "functions/140013a20_SmpConfigureWaitForPagingFiles.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpConfigureWaitForPagingFiles",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 22,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmpPagefileUsageSampleCompare",
+    "ea": "0x14000b3f0",
+    "function_file": "functions/14000b3f0_SmpPagefileUsageSampleCompare.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpPagefileUsageSampleCompare",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CreateFileDowngrade_Win7",
+    "ea": "0x14001a3f0",
+    "function_file": "functions/14001a3f0_CreateFileDowngrade_Win7.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateFileDowngrade_Win7",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "SmpSortDllList",
+    "ea": "0x14000d8e0",
+    "function_file": "functions/14000d8e0_SmpSortDllList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpSortDllList",
+    "prototype": "int __cdecl(void *, const void *, const void *)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "SmpCheckSubSysStatus",
+    "ea": "0x14000aca0",
+    "function_file": "functions/14000aca0_SmpCheckSubSysStatus.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpCheckSubSysStatus",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SmpMakeSystemManagedPagingFileDescriptor",
+    "ea": "0x14000af6c",
+    "function_file": "functions/14000af6c_SmpMakeSystemManagedPagingFileDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpMakeSystemManagedPagingFileDescriptor",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 374,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmpProcessPagefileDescriptor",
+    "ea": "0x14000b464",
+    "function_file": "functions/14000b464_SmpProcessPagefileDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpProcessPagefileDescriptor",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "RtlStringCchLengthW",
+    "ea": "0x14001b8f0",
+    "function_file": "functions/14001b8f0_RtlStringCchLengthW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchLengthW",
+    "prototype": "NTSTATUS __stdcall(STRSAFE_PCNZWCH psz, size_t cchMax, size_t *pcchLength)",
+    "rank_score": 5,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmpCreatePagefileFromDescriptor",
+    "ea": "0x14000ea5c",
+    "function_file": "functions/14000ea5c_SmpCreatePagefileFromDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmpCreatePagefileFromDescriptor",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 135,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Feature_TimestampsOnCreate__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x14001ac04",
+    "function_file": "functions/14001ac04_Feature_TimestampsOnCreate_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_TimestampsOnCreate__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCbCopyUnicodeString",
+    "ea": "0x14001b804",
+    "function_file": "functions/14001b804_RtlStringCbCopyUnicodeString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCbCopyUnicodeString",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cbDest, PCUNICODE_STRING SourceString)",
+    "rank_score": 3,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RtlStringCbCopyW",
+    "ea": "0x14000e5a8",
+    "function_file": "functions/14000e5a8_RtlStringCbCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCbCopyW",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cbDest, NTSTRSAFE_PCWSTR pszSrc)",
+    "rank_score": 3,
+    "size": 108,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCchCopyExW",
+    "ea": "0x14001c9c4",
+    "function_file": "functions/14001c9c4_RtlStringCchCopyExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchCopyExW",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cchDest, NTSTRSAFE_PCWSTR pszSrc, NTSTRSAFE_PWSTR *ppszDestEnd, size_t *pcchRemaining, ULONG dwFlags)",
+    "rank_score": 3,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RtlStringCchCopyW",
+    "ea": "0x14001b8a4",
+    "function_file": "functions/14001b8a4_RtlStringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchCopyW",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cchDest, NTSTRSAFE_PCWSTR pszSrc)",
+    "rank_score": 3,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "StringCchCopyW",
+    "ea": "0x140019ff4",
+    "function_file": "functions/140019ff4_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 3,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCopyWorkerW",
+    "ea": "0x14001a038",
+    "function_file": "functions/14001a038_StringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 3,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Feature_TimestampsOnCreate__private_IsEnabledFallback",
+    "ea": "0x14001ac34",
+    "function_file": "functions/14001ac34_Feature_TimestampsOnCreate_private_IsEnabledFallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_TimestampsOnCreate__private_IsEnabledFallback",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCopyWorkerW",
+    "ea": "0x14001b92c",
+    "function_file": "functions/14001b92c_RtlStringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCopyWorkerW",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 2,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Wow64SelectWowNodePathInternal",
+    "ea": "0x140019128",
+    "function_file": "functions/140019128_Wow64SelectWowNodePathInternal.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Wow64SelectWowNodePathInternal",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 35,
+    "tags": []
+  }
+]

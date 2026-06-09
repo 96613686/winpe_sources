@@ -1,0 +1,111 @@
+# SPTelemetry::ModelUpdate::AsimovDownloadFiles_Suppressed(uint,uint)
+
+- ea: `0x14000bf74`
+- end: `0x14000c045`
+- name: `?AsimovDownloadFiles_Suppressed@ModelUpdate@SPTelemetry@@QEAAXII@Z`
+- size: `209`
+- prototype: `void __fastcall(SPTelemetry::ModelUpdate *this, int, int)`
+- caller_count: `1`
+- callee_count: `4`
+- tags: `installer_update`
+
+## callers
+
+- `0x14000d1f4`
+
+## callees
+
+- `0x14000176c`
+- `0x140002600`
+- `0x1400077b0`
+- `0x14000bf74`
+
+## pseudocode
+
+```c
+void __fastcall SPTelemetry::ModelUpdate::AsimovDownloadFiles_Suppressed(
+        SPTelemetry::ModelUpdate *this,
+        int a2,
+        int a3)
+{
+  const struct _tlgProvider_t *v6; // rax
+  __int64 v7; // r9
+  int v8; // [rsp+30h] [rbp-68h] BYREF
+  int v9; // [rsp+34h] [rbp-64h] BYREF
+  _BYTE v10[32]; // [rsp+40h] [rbp-58h] BYREF
+  int *v11; // [rsp+60h] [rbp-38h]
+  __int64 v12; // [rsp+68h] [rbp-30h]
+  int *v13; // [rsp+70h] [rbp-28h]
+  __int64 v14; // [rsp+78h] [rbp-20h]
+
+  v6 = SPTraceLoggingClass::Provider();
+  if ( *(_DWORD *)v6 > 4u
+    && (*((_QWORD *)v6 + 2) & 0x400000000000LL) != 0
+    && (*((_QWORD *)v6 + 3) & 0x400000000000LL) == *((_QWORD *)v6 + 3) )
+  {
+    v7 = *((_QWORD *)this + 6);
+    v13 = &v8;
+    v8 = a3;
+    v11 = &v9;
+    v9 = a2;
+    v14 = 4;
+    v12 = 4;
+    tlgWriteTransfer_EventWriteTransfer(v6, &word_14002A0C6, (char *)this + 32, v7, 4, v10);
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x14000bf74  mov     [rsp+arg_8], rbx
+0x14000bf79  mov     [rsp+arg_10], rsi
+0x14000bf7e  push    rdi
+0x14000bf7f  sub     rsp, 90h
+0x14000bf86  mov     rax, cs:__security_cookie
+0x14000bf8d  xor     rax, rsp
+0x14000bf90  mov     [rsp+98h+var_18], rax
+0x14000bf98  mov     edi, r8d
+0x14000bf9b  mov     esi, edx
+0x14000bf9d  mov     rbx, rcx
+0x14000bfa0  call    ?Provider@SPTraceLoggingClass@@SAPEBU_tlgProvider_t@@XZ; SPTraceLoggingClass::Provider(void)
+0x14000bfa5  mov     r10d, 4
+0x14000bfab  mov     ecx, [rax]
+0x14000bfad  cmp     ecx, r10d
+0x14000bfb0  jbe     short loc_14000C020
+0x14000bfb2  mov     r9, [rax+18h]
+0x14000bfb6  mov     rdx, 400000000000h
+0x14000bfc0  mov     rcx, [rax+10h]
+0x14000bfc4  test    rdx, rcx
+0x14000bfc7  jz      short loc_14000C020
+0x14000bfc9  mov     rcx, r9
+0x14000bfcc  and     rcx, rdx
+0x14000bfcf  cmp     rcx, r9
+0x14000bfd2  jnz     short loc_14000C020
+0x14000bfd4  mov     r9, [rbx+30h]
+0x14000bfd8  lea     rcx, [rsp+98h+var_68]
+0x14000bfdd  mov     [rsp+98h+var_28], rcx
+0x14000bfe2  lea     r8, [rbx+20h]
+0x14000bfe6  lea     rcx, [rsp+98h+var_64]
+0x14000bfeb  mov     [rsp+98h+var_68], edi
+0x14000bfef  mov     [rsp+98h+var_38], rcx
+0x14000bff4  lea     rdx, word_14002A0C6
+0x14000bffb  lea     rcx, [rsp+98h+var_58]
+0x14000c000  mov     [rsp+98h+var_64], esi
+0x14000c004  mov     [rsp+98h+var_70], rcx
+0x14000c009  mov     rcx, rax
+0x14000c00c  mov     [rsp+98h+var_20], r10
+0x14000c011  mov     [rsp+98h+var_30], r10
+0x14000c016  mov     [rsp+98h+var_78], r10d
+0x14000c01b  call    _tlgWriteTransfer_EventWriteTransfer
+0x14000c020  mov     rcx, [rsp+98h+var_18]
+0x14000c028  xor     rcx, rsp; StackCookie
+0x14000c02b  call    __security_check_cookie
+0x14000c030  lea     r11, [rsp+98h+var_8]
+0x14000c038  mov     rbx, [r11+18h]
+0x14000c03c  mov     rsi, [r11+20h]
+0x14000c040  mov     rsp, r11
+0x14000c043  pop     rdi
+0x14000c044  retn
+```

@@ -1,0 +1,244 @@
+# StartDocPrinterW
+
+- ea: `0x140025f50`
+- end: `0x14002bd81`
+- name: `StartDocPrinterW`
+- size: `24113`
+- prototype: `DWORD __stdcall(HANDLE hPrinter, DWORD Level, LPBYTE pDocInfo)`
+- caller_count: `1`
+- callee_count: `13`
+- tags: `loader_planting`
+
+## callers
+
+- `0x14003de90`
+
+## callees
+
+- `0x1400132e4`
+- `0x140014c00`
+- `0x140015290`
+- `0x140015378`
+- `0x140016654`
+- `0x140018b14`
+- `0x140018b34`
+- `0x140018ea4`
+- `0x140018fa8`
+- `0x140025f50`
+- `0x140065d38`
+- `0x140080828`
+- `0x140081010`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x14002834e`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x14002aa47`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x14002834e`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW` at `0x14002aa47`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x1400283a3`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x14002aa8b`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x1400283a3`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x14002aa8b`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002651e`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002654b`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140026570`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140026595`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400271b1`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027947`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027982`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400279bd`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400279ec`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027a47`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027a82`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027abc`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027af6`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027b23`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027c59`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027c90`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027cc6`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027cfc`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027d24`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027d4d`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027d72`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027da8`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027dd9`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027e0a`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027e32`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027e5b`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027ffd`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400287cb`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028806`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028841`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028870`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028913`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002894e`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028989`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400289b8`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140029b6d`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a308`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a342`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a37c`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a3a9`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a40b`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a446`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a480`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a4ba`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a4e7`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a753`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002ae8b`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002aec5`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002aeff`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002af2c`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002afcf`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b00a`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b045`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b074`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b8be`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b8f0`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b921`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b952`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b97a`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b9a3`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b9c8`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b9fe`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002ba2f`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002ba60`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002ba88`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002baad`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002bb92`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002bbbf`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002bbe4`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002bc09`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002651e`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002654b`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140026570`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140026595`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400271b1`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027947`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027982`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400279bd`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400279ec`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027a47`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027a82`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027abc`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027af6`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027b23`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027c59`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027c90`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027cc6`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027cfc`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027d24`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027d4d`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027d72`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027da8`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027dd9`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027e0a`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027e32`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027e5b`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140027ffd`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400287cb`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028806`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028841`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028870`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028913`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002894e`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140028989`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1400289b8`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x140029b6d`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a308`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a342`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a37c`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a3a9`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a40b`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a446`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a480`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a4ba`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a4e7`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002a753`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002ae8b`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002aec5`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002aeff`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002af2c`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002afcf`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b00a`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b045`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b074`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b8be`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b8f0`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b921`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b952`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b97a`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b9a3`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b9c8`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002b9fe`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002ba2f`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002ba60`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002ba88`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002baad`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002bb92`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002bbbf`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002bbe4`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x14002bc09`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140025ff5`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400260d1`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140026356`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x14002650a`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140026537`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x14002655c`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140026581`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400265c5`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x14002666c`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400267a7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400270d6`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x14002719d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027742`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400277b6`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027817`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400278c5`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027932`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x14002796d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400279a8`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400279d6`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027a32`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027a6d`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027aa7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027ae1`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027b0e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027bf5`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027c43`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027c7b`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027cb1`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027ce7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027d10`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027d39`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027d5e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027d94`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027dc5`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027df6`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027e1e`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027e47`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140027fe7`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140028159`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400285ee`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140028667`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400286d6`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140028749`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400287b6`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400287f1`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x14002882c`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x14002885a`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400288fe`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140028939`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x140028974`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1400289a2`
+
+## string_xrefs
+
+- `0x140028330`: `ntdll.dll`
+- `0x14002aa29`: `ntdll.dll`
+
+## pseudocode
+
+```c
+
+```
