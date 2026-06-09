@@ -1,0 +1,1090 @@
+[
+  {
+    "import": "ADVAPI32!ConvertSidToStringSidW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180008434",
+        "from_func": "0x1800083fc",
+        "from_func_name": "?GetCurrentUserSid@@YAJAEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x1800088e3",
+        "from_func": "0x180008830",
+        "from_func_name": "?GetUserTokenFromSid@@YAJPEBGKPEAPEAX@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x180008434",
+        "from_func": "0x1800083fc",
+        "from_func_name": "?GetCurrentUserSid@@YAJAEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x1800088e3",
+        "from_func": "0x180008830",
+        "from_func_name": "?GetUserTokenFromSid@@YAJPEBGKPEAPEAX@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!CopySid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800087c5",
+        "from_func": "0x18000867c",
+        "from_func_name": "?GetUserSidFromToken@@YAJPEAXPEAPEAX@Z",
+        "import": "ADVAPI32!CopySid"
+      },
+      {
+        "from_ea": "0x1800087c5",
+        "from_func": "0x18000867c",
+        "from_func_name": "?GetUserSidFromToken@@YAJPEAXPEAPEAX@Z",
+        "import": "ADVAPI32!CopySid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!CreateProcessAsUserW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003561",
+        "from_func": "0x180003378",
+        "from_func_name": "?ExecuteLockWorkStation@@YAJXZ",
+        "import": "ADVAPI32!CreateProcessAsUserW"
+      },
+      {
+        "from_ea": "0x180003561",
+        "from_func": "0x180003378",
+        "from_func_name": "?ExecuteLockWorkStation@@YAJXZ",
+        "import": "ADVAPI32!CreateProcessAsUserW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetLengthSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180008799",
+        "from_func": "0x18000867c",
+        "from_func_name": "?GetUserSidFromToken@@YAJPEAXPEAPEAX@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x180008799",
+        "from_func": "0x18000867c",
+        "from_func_name": "?GetUserSidFromToken@@YAJPEAXPEAPEAX@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ImpersonateLoggedOnUser",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001c6cb",
+        "from_func": "0x18001c54c",
+        "from_func_name": "?__ImpersonateUser@@YAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@KAEA_N@Z",
+        "import": "ADVAPI32!ImpersonateLoggedOnUser"
+      },
+      {
+        "from_ea": "0x18001c6cb",
+        "from_func": "0x18001c54c",
+        "from_func_name": "?__ImpersonateUser@@YAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@KAEA_N@Z",
+        "import": "ADVAPI32!ImpersonateLoggedOnUser"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenProcessToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800084fe",
+        "from_func": "0x180008484",
+        "from_func_name": "?GetCurrentUserSid@@YAJPEAPEAX@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x1800084fe",
+        "from_func": "0x180008484",
+        "from_func_name": "?GetCurrentUserSid@@YAJPEAPEAX@Z",
+        "import": "ADVAPI32!OpenProcessToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenThreadToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800084c2",
+        "from_func": "0x180008484",
+        "from_func_name": "?GetCurrentUserSid@@YAJPEAPEAX@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x1800084c2",
+        "from_func": "0x180008484",
+        "from_func_name": "?GetCurrentUserSid@@YAJPEAPEAX@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000991d",
+        "from_func": "0x1800098b0",
+        "from_func_name": "?WriteRegDWORDValue@@YAJPEAUHKEY__@@PEBG1KPEAU_SECURITY_ATTRIBUTES@@@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x180009a89",
+        "from_func": "0x180009a14",
+        "from_func_name": "?WriteRegSZValue@@YAJPEAUHKEY__@@PEBG11PEAU_SECURITY_ATTRIBUTES@@H@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x18000991d",
+        "from_func": "0x1800098b0",
+        "from_func_name": "?WriteRegDWORDValue@@YAJPEAUHKEY__@@PEBG1KPEAU_SECURITY_ATTRIBUTES@@@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x180009a89",
+        "from_func": "0x180009a14",
+        "from_func_name": "?WriteRegSZValue@@YAJPEAUHKEY__@@PEBG11PEAU_SECURITY_ATTRIBUTES@@H@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180007814",
+        "from_func": "0x1800076a0",
+        "from_func_name": "?DeleteRegKeyRecursive@@YAJPEAUHKEY__@@PEBG@Z",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x180007814",
+        "from_func": "0x1800076a0",
+        "from_func_name": "?DeleteRegKeyRecursive@@YAJPEAUHKEY__@@PEBG@Z",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180019be0",
+        "from_func": "0x180019b64",
+        "from_func_name": "?DeleteCookie@RemoteAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x18001aa39",
+        "from_func": "0x18001a958",
+        "from_func_name": "?DeleteApp@AppRegistry@@QEAAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x180019be0",
+        "from_func": "0x180019b64",
+        "from_func_name": "?DeleteCookie@RemoteAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x18001aa39",
+        "from_func": "0x18001a958",
+        "from_func_name": "?DeleteApp@AppRegistry@@QEAAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenCurrentUser",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000fe16",
+        "from_func": "0x18000fdf8",
+        "from_func_name": "?GetKey@CurrentUserRegKeyHelper@@QEAAJAEAPEAUHKEY__@@@Z",
+        "import": "ADVAPI32!RegOpenCurrentUser"
+      },
+      {
+        "from_ea": "0x18001a822",
+        "from_func": "0x18001a800",
+        "from_func_name": "?AddApp@AppRegistry@@QEAAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@W4PackageApplicationType@@@Z",
+        "import": "ADVAPI32!RegOpenCurrentUser"
+      },
+      {
+        "from_ea": "0x18000fe16",
+        "from_func": "0x18000fdf8",
+        "from_func_name": "?GetKey@CurrentUserRegKeyHelper@@QEAAJAEAPEAUHKEY__@@@Z",
+        "import": "ADVAPI32!RegOpenCurrentUser"
+      },
+      {
+        "from_ea": "0x18001a822",
+        "from_func": "0x18001a800",
+        "from_func_name": "?AddApp@AppRegistry@@QEAAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@W4PackageApplicationType@@@Z",
+        "import": "ADVAPI32!RegOpenCurrentUser"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 26,
+    "xrefs": [
+      {
+        "from_ea": "0x180007701",
+        "from_func": "0x1800076a0",
+        "from_func_name": "?DeleteRegKeyRecursive@@YAJPEAUHKEY__@@PEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180008bf2",
+        "from_func": "0x180008b90",
+        "from_func_name": "?ReadRegDWORDValue@@YAJPEAKPEAUHKEY__@@PEBG2@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180008d5c",
+        "from_func": "0x180008cec",
+        "from_func_name": "?ReadRegMultiSZValue@@YAJPEAUHKEY__@@PEBG1AEAV?$list@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$allocator@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@2@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000902b",
+        "from_func": "0x180008fc4",
+        "from_func_name": "?ReadRegQWORDValue@@YAJPEA_JPEAUHKEY__@@PEBG2@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000917f",
+        "from_func": "0x180009134",
+        "from_func_name": "?ReadRegSZValue@@YAJPEAG_KPEAUHKEY__@@PEBG3PEAK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000f391",
+        "from_func": "0x18000ea88",
+        "from_func_name": "?GetJob@JobHelper@@QEAAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAU_SwJob@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000fb28",
+        "from_func": "0x18000fa44",
+        "from_func_name": "?GetJobs@JobHelper@@QEAAJAEAV?$list@U_SwJob@@V?$allocator@U_SwJob@@@std@@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180019b9a",
+        "from_func": "0x180019b64",
+        "from_func_name": "?DeleteCookie@RemoteAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001a58f",
+        "from_func": "0x18001a4f8",
+        "from_func_name": "?UnsubscribeRemoteWorkspace@RemoteAppUtil@@SAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001a995",
+        "from_func": "0x18001a958",
+        "from_func_name": "?DeleteApp@AppRegistry@@QEAAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001ac18",
+        "from_func": "0x18001ab3c",
+        "from_func_name": "?GetApps@AppRegistry@@QEAAJAEAV?$list@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$allocator@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@2@@std@@W4PackageApplicationType@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001b30f",
+        "from_func": "0x18001b05c",
+        "from_func_name": "?AddJob@CDownloadService@@QEAAJPEBG0W4BG_JOB_PRIORITY@@KKKHPEAU_GUID@@PEAVCBITSDownloadMonitor@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001e3f6",
+        "from_func": "0x18001e3a4",
+        "from_func_name": "GetBITSManager",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180007701",
+        "from_func": "0x1800076a0",
+        "from_func_name": "?DeleteRegKeyRecursive@@YAJPEAUHKEY__@@PEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180008bf2",
+        "from_func": "0x180008b90",
+        "from_func_name": "?ReadRegDWORDValue@@YAJPEAKPEAUHKEY__@@PEBG2@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180008d5c",
+        "from_func": "0x180008cec",
+        "from_func_name": "?ReadRegMultiSZValue@@YAJPEAUHKEY__@@PEBG1AEAV?$list@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$allocator@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@2@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000902b",
+        "from_func": "0x180008fc4",
+        "from_func_name": "?ReadRegQWORDValue@@YAJPEA_JPEAUHKEY__@@PEBG2@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000917f",
+        "from_func": "0x180009134",
+        "from_func_name": "?ReadRegSZValue@@YAJPEAG_KPEAUHKEY__@@PEBG3PEAK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000f391",
+        "from_func": "0x18000ea88",
+        "from_func_name": "?GetJob@JobHelper@@QEAAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AEAU_SwJob@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000fb28",
+        "from_func": "0x18000fa44",
+        "from_func_name": "?GetJobs@JobHelper@@QEAAJAEAV?$list@U_SwJob@@V?$allocator@U_SwJob@@@std@@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180019b9a",
+        "from_func": "0x180019b64",
+        "from_func_name": "?DeleteCookie@RemoteAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001a58f",
+        "from_func": "0x18001a4f8",
+        "from_func_name": "?UnsubscribeRemoteWorkspace@RemoteAppUtil@@SAJXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001a995",
+        "from_func": "0x18001a958",
+        "from_func_name": "?DeleteApp@AppRegistry@@QEAAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001ac18",
+        "from_func": "0x18001ab3c",
+        "from_func_name": "?GetApps@AppRegistry@@QEAAJAEAV?$list@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$allocator@V?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@2@@std@@W4PackageApplicationType@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001b30f",
+        "from_func": "0x18001b05c",
+        "from_func_name": "?AddJob@CDownloadService@@QEAAJPEBG0W4BG_JOB_PRIORITY@@KKKHPEAU_GUID@@PEAVCBITSDownloadMonitor@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18001e3f6",
+        "from_func": "0x18001e3a4",
+        "from_func_name": "GetBITSManager",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180009983",
+        "from_func": "0x1800098b0",
+        "from_func_name": "?WriteRegDWORDValue@@YAJPEAUHKEY__@@PEBG1KPEAU_SECURITY_ATTRIBUTES@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180009b29",
+        "from_func": "0x180009a14",
+        "from_func_name": "?WriteRegSZValue@@YAJPEAUHKEY__@@PEBG11PEAU_SECURITY_ATTRIBUTES@@H@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180009983",
+        "from_func": "0x1800098b0",
+        "from_func_name": "?WriteRegDWORDValue@@YAJPEAUHKEY__@@PEBG1KPEAU_SECURITY_ATTRIBUTES@@@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180009b29",
+        "from_func": "0x180009a14",
+        "from_func_name": "?WriteRegSZValue@@YAJPEAUHKEY__@@PEBG11PEAU_SECURITY_ATTRIBUTES@@H@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RevertToSelf",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x18001b712",
+        "from_func": "0x18001b6bc",
+        "from_func_name": "?CancelJob@CDownloadService@@QEAAJAEBU_GUID@@@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x18001ba10",
+        "from_func": "0x18001b9d4",
+        "from_func_name": "?Complete@CDownloadService@@QEAAJAEBU_GUID@@@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x18001bd31",
+        "from_func": "0x18001bcd4",
+        "from_func_name": "?GetJobStatus@CDownloadService@@QEAAJAEBU_GUID@@PEAU_MDMSW_JOBSTATUS@@@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x18001c04a",
+        "from_func": "0x18001bfcc",
+        "from_func_name": "?ModifyJobSource@CDownloadService@@QEAAJAEBU_GUID@@PEBG1@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x18001c501",
+        "from_func": "0x18001c4f8",
+        "from_func_name": "?_RevertToSelf@@YAXPEBG@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x18001b712",
+        "from_func": "0x18001b6bc",
+        "from_func_name": "?CancelJob@CDownloadService@@QEAAJAEBU_GUID@@@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x18001ba10",
+        "from_func": "0x18001b9d4",
+        "from_func_name": "?Complete@CDownloadService@@QEAAJAEBU_GUID@@@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x18001bd31",
+        "from_func": "0x18001bcd4",
+        "from_func_name": "?GetJobStatus@CDownloadService@@QEAAJAEBU_GUID@@PEAU_MDMSW_JOBSTATUS@@@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x18001c04a",
+        "from_func": "0x18001bfcc",
+        "from_func_name": "?ModifyJobSource@CDownloadService@@QEAAJAEBU_GUID@@PEBG1@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x18001c501",
+        "from_func": "0x18001c4f8",
+        "from_func_name": "?_RevertToSelf@@YAXPEBG@Z",
+        "import": "ADVAPI32!RevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "DMCmnUtils!DmGetActiveUserSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180004c49",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmGetActiveUserSid"
+      },
+      {
+        "from_ea": "0x180004c49",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmGetActiveUserSid"
+      },
+      {
+        "from_ea": "0x18002822c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "DMCmnUtils!DmGetActiveUserSid"
+      }
+    ]
+  },
+  {
+    "import": "DMCmnUtils!DmGetCurrentUserSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180004c67",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmGetCurrentUserSid"
+      },
+      {
+        "from_ea": "0x180004c67",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmGetCurrentUserSid"
+      }
+    ]
+  },
+  {
+    "import": "DMCmnUtils!DmGetUserTokenFromSid",
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180004cab",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmGetUserTokenFromSid"
+      },
+      {
+        "from_ea": "0x180006e3a",
+        "from_func": "0x180006df0",
+        "from_func_name": "?ResourceManagerUninstallWmiApp@@YAJPEBG0@Z",
+        "import": "DMCmnUtils!DmGetUserTokenFromSid"
+      },
+      {
+        "from_ea": "0x180004cab",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmGetUserTokenFromSid"
+      },
+      {
+        "from_ea": "0x180006e3a",
+        "from_func": "0x180006df0",
+        "from_func_name": "?ResourceManagerUninstallWmiApp@@YAJPEBG0@Z",
+        "import": "DMCmnUtils!DmGetUserTokenFromSid"
+      }
+    ]
+  },
+  {
+    "import": "DMCmnUtils!DmImpersonate",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180004d36",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmImpersonate"
+      },
+      {
+        "from_ea": "0x180006e9a",
+        "from_func": "0x180006df0",
+        "from_func_name": "?ResourceManagerUninstallWmiApp@@YAJPEBG0@Z",
+        "import": "DMCmnUtils!DmImpersonate"
+      },
+      {
+        "from_ea": "0x180004d36",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmImpersonate"
+      },
+      {
+        "from_ea": "0x180006e9a",
+        "from_func": "0x180006df0",
+        "from_func_name": "?ResourceManagerUninstallWmiApp@@YAJPEBG0@Z",
+        "import": "DMCmnUtils!DmImpersonate"
+      }
+    ]
+  },
+  {
+    "import": "DMCmnUtils!DmRevertToSelf",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180004ea4",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmRevertToSelf"
+      },
+      {
+        "from_ea": "0x180006f79",
+        "from_func": "0x180006df0",
+        "from_func_name": "?ResourceManagerUninstallWmiApp@@YAJPEBG0@Z",
+        "import": "DMCmnUtils!DmRevertToSelf"
+      },
+      {
+        "from_ea": "0x180004ea4",
+        "from_func": "0x180004950",
+        "from_func_name": "?PostSessionWork@@YAJPEBGW4tagDMACCOUNTLOOKUPTYPE@@EW4PushRouterSubmitOrigin@@@Z",
+        "import": "DMCmnUtils!DmRevertToSelf"
+      },
+      {
+        "from_ea": "0x180006f79",
+        "from_func": "0x180006df0",
+        "from_func_name": "?ResourceManagerUninstallWmiApp@@YAJPEBG0@Z",
+        "import": "DMCmnUtils!DmRevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "DMCmnUtils!OmaDmRegistryGetDWORD",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001eea7",
+        "from_func": "0x18001ee24",
+        "from_func_name": "?IsLOBEnabled@@YAJPEAH@Z",
+        "import": "DMCmnUtils!OmaDmRegistryGetDWORD"
+      },
+      {
+        "from_ea": "0x18001eea7",
+        "from_func": "0x18001ee24",
+        "from_func_name": "?IsLOBEnabled@@YAJPEAH@Z",
+        "import": "DMCmnUtils!OmaDmRegistryGetDWORD"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001857c",
+        "from_func": "0x1800184e4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@0@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x18001857c",
+        "from_func": "0x1800184e4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@0@Z",
+        "import": "KERNEL32!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!DeleteFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c5d7",
+        "from_func": "0x18000c588",
+        "from_func_name": "?DeleteContent@JobHelper@@AEAAJU_SwJob@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x18000c66a",
+        "from_func": "0x18000c588",
+        "from_func_name": "?DeleteContent@JobHelper@@AEAAJU_SwJob@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x18001875c",
+        "from_func": "0x1800184e4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@0@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x180018939",
+        "from_func": "0x1800187f4",
+        "from_func_name": "?DeleteWebApp@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x18000c5d7",
+        "from_func": "0x18000c588",
+        "from_func_name": "?DeleteContent@JobHelper@@AEAAJU_SwJob@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x18000c66a",
+        "from_func": "0x18000c588",
+        "from_func_name": "?DeleteContent@JobHelper@@AEAAJU_SwJob@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x18001875c",
+        "from_func": "0x1800184e4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@0@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x180018939",
+        "from_func": "0x1800187f4",
+        "from_func_name": "?DeleteWebApp@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001d7b",
+        "from_func": "0x180001d34",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180002e9c",
+        "from_func": "0x180002e64",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001d7b",
+        "from_func": "0x180001d34",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180002e9c",
+        "from_func": "0x180002e64",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!WriteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18001865d",
+        "from_func": "0x1800184e4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@0@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x1800186d5",
+        "from_func": "0x1800184e4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@0@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x18001865d",
+        "from_func": "0x1800184e4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@0@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x1800186d5",
+        "from_func": "0x1800184e4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@0@Z",
+        "import": "KERNEL32!WriteFile"
+      }
+    ]
+  },
+  {
+    "import": "SHLWAPI!UrlUnescapeW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x18000761e",
+        "from_func": "0x1800075b0",
+        "from_func_name": "?DecodeURL@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@PEBG@Z",
+        "import": "SHLWAPI!UrlUnescapeW"
+      },
+      {
+        "from_ea": "0x18000765d",
+        "from_func": "0x1800075b0",
+        "from_func_name": "?DecodeURL@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@PEBG@Z",
+        "import": "SHLWAPI!UrlUnescapeW"
+      },
+      {
+        "from_ea": "0x18000761e",
+        "from_func": "0x1800075b0",
+        "from_func_name": "?DecodeURL@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@PEBG@Z",
+        "import": "SHLWAPI!UrlUnescapeW"
+      },
+      {
+        "from_ea": "0x18000765d",
+        "from_func": "0x1800075b0",
+        "from_func_name": "?DecodeURL@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@PEBG@Z",
+        "import": "SHLWAPI!UrlUnescapeW"
+      },
+      {
+        "from_ea": "0x1800282cc",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "SHLWAPI!UrlUnescapeW"
+      }
+    ]
+  },
+  {
+    "import": "WSClient!WSLicenseInstallLicense",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180016930",
+        "from_func": "0x180016814",
+        "from_func_name": "?InstallAppLicense@@YAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "WSClient!WSLicenseInstallLicense"
+      },
+      {
+        "from_ea": "0x180016930",
+        "from_func": "0x180016814",
+        "from_func_name": "?InstallAppLicense@@YAJV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "WSClient!WSLicenseInstallLicense"
+      }
+    ]
+  },
+  {
+    "import": "dmEnrollEngine!GetEnrollmentSID",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800032e9",
+        "from_func": "0x1800032a8",
+        "from_func_name": "?DmGetEnrollmentSid@@YAJPEBGPEAPEAG@Z",
+        "import": "dmEnrollEngine!GetEnrollmentSID"
+      },
+      {
+        "from_ea": "0x1800032e9",
+        "from_func": "0x1800032a8",
+        "from_func_name": "?DmGetEnrollmentSid@@YAJPEBGPEAPEAG@Z",
+        "import": "dmEnrollEngine!GetEnrollmentSID"
+      },
+      {
+        "from_ea": "0x180028254",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "dmEnrollEngine!GetEnrollmentSID"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18001f289",
+        "from_func": "0x18001f280",
+        "from_func_name": "__C_specific_handler_noexcept",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180001e23",
+        "from_func": "0x180001e23",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x18001f289",
+        "from_func": "0x18001f280",
+        "from_func_name": "__C_specific_handler_noexcept",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180002175",
+        "from_func": "0x180002175",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "msvcrt!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ae6",
+        "from_func": "0x180001ae6",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "msvcrt!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000202e",
+        "from_func": "0x18000202e",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CLSIDFromString",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003276",
+        "from_func": "0x180003204",
+        "from_func_name": "?DmConvertInternalAccountIdToEnrollmentId@@YAJPEAGPEAU_GUID@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x180003276",
+        "from_func": "0x180003204",
+        "from_func_name": "?DmConvertInternalAccountIdToEnrollmentId@@YAJPEAGPEAU_GUID@@@Z",
+        "import": "ole32!CLSIDFromString"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemFree",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180015bd5",
+        "from_func": "0x180015a2c",
+        "from_func_name": "?GetPackageFullNameFromManifest@@YAJPEBGAEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@_N@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180015bd5",
+        "from_func": "0x180015a2c",
+        "from_func_name": "?GetPackageFullNameFromManifest@@YAJPEBGAEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@_N@Z",
+        "import": "ole32!CoTaskMemFree"
+      }
+    ]
+  },
+  {
+    "import": "urlmon!IsValidURL",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180018430",
+        "from_func": "0x1800182b4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJU_SwJob@@@Z",
+        "import": "urlmon!IsValidURL"
+      },
+      {
+        "from_ea": "0x180018430",
+        "from_func": "0x1800182b4",
+        "from_func_name": "?CreateWebLink@WebAppUtil@@SAJU_SwJob@@@Z",
+        "import": "urlmon!IsValidURL"
+      },
+      {
+        "from_ea": "0x1800282f4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "urlmon!IsValidURL"
+      }
+    ]
+  }
+]

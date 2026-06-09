@@ -1,0 +1,244 @@
+# Jot::CNavigationDropdown::Initialize(void)
+
+- ea: `0x1400966e0`
+- end: `0x1400974da`
+- name: `?Initialize@CNavigationDropdown@Jot@@AEAAXXZ`
+- size: `3578`
+- prototype: `void __fastcall(Jot::CNavigationDropdown *__hidden this)`
+- caller_count: `1`
+- callee_count: `39`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x140096050`
+
+## callees
+
+- `0x140018bd8`
+- `0x14001c240`
+- `0x14001c6fc`
+- `0x14001c780`
+- `0x14001c8f0`
+- `0x14001c930`
+- `0x140020644`
+- `0x140020ab0`
+- `0x1400218f4`
+- `0x1400223c0`
+- `0x1400239dc`
+- `0x14002643c`
+- `0x14002a850`
+- `0x1400389e8`
+- `0x140049270`
+- `0x1400492bc`
+- `0x140049304`
+- `0x1400494a0`
+- `0x140049500`
+- `0x140049910`
+- `0x140049aa4`
+- `0x1400569a0`
+- `0x140057580`
+- `0x140078e48`
+- `0x1400966e0`
+- `0x140097af4`
+- `0x140097bd0`
+- `0x140097c7c`
+- `0x140097fd4`
+- `0x140098030`
+- `0x14009808c`
+- `0x1400980e8`
+- `0x140098144`
+- `0x1400981a0`
+- `0x1400981fc`
+- `0x140098258`
+- `0x1400982b4`
+- `0x140134808`
+- `0x14013e4d4`
+
+## import_xrefs
+
+- `KERNEL32!FindAtomW` at `0x1400968e5`
+- `KERNEL32!FindAtomW` at `0x1400968e5`
+- `onmain!?IsHostedWorkspaceEnabled@Jot@@YA_NXZ` at `0x140096b25`
+- `onmain!?IsHostedWorkspaceEnabled@Jot@@YA_NXZ` at `0x140096b25`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140096707`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x14009676e`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x1400967f5`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140096a5a`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140096f1e`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x14009708e`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140097111`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140097228`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140097457`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140096707`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x14009676e`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x1400967f5`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140096a5a`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140096f1e`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x14009708e`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140097111`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140097228`
+- `onmain!?IsLicensedForFluentUI@Jot@@YA_NXZ` at `0x140097457`
+- `onmain!?AddNotebookInHeaders@Jot@@YAAEBVTriggeredFeatureGate@Optimized@AB@Mso@@XZ` at `0x140096d14`
+- `onmain!?AddNotebookInHeaders@Jot@@YAAEBVTriggeredFeatureGate@Optimized@AB@Mso@@XZ` at `0x140096e1c`
+- `onmain!?AddNotebookInHeaders@Jot@@YAAEBVTriggeredFeatureGate@Optimized@AB@Mso@@XZ` at `0x140096d14`
+- `onmain!?AddNotebookInHeaders@Jot@@YAAEBVTriggeredFeatureGate@Optimized@AB@Mso@@XZ` at `0x140096e1c`
+- `onmain!?ShadowCopilotSection@Jot@@YAAEBVTriggeredFeatureGate@Optimized@AB@Mso@@XZ` at `0x140097098`
+- `onmain!?ShadowCopilotSection@Jot@@YAAEBVTriggeredFeatureGate@Optimized@AB@Mso@@XZ` at `0x140097098`
+- `mso40uiWin32Client!__imp_?InsertBefore@Node@NetUI@@QEAAJPEAV12@0@Z` at `0x140096cfd`
+- `mso40uiWin32Client!__imp_?InsertBefore@Node@NetUI@@QEAAJPEAV12@0@Z` at `0x140096d37`
+- `mso40uiWin32Client!__imp_?InsertBefore@Node@NetUI@@QEAAJPEAV12@0@Z` at `0x140096e00`
+- `mso40uiWin32Client!__imp_?InsertBefore@Node@NetUI@@QEAAJPEAV12@0@Z` at `0x140096cfd`
+- `mso40uiWin32Client!__imp_?InsertBefore@Node@NetUI@@QEAAJPEAV12@0@Z` at `0x140096d37`
+- `mso40uiWin32Client!__imp_?InsertBefore@Node@NetUI@@QEAAJPEAV12@0@Z` at `0x140096e00`
+- `mso40uiWin32Client!__imp_?SetPadding@Element@NetUI@@QEAAJHHHH@Z` at `0x140096ce0`
+- `mso40uiWin32Client!__imp_?SetPadding@Element@NetUI@@QEAAJHHHH@Z` at `0x140096dd1`
+- `mso40uiWin32Client!__imp_?SetPadding@Element@NetUI@@QEAAJHHHH@Z` at `0x140096ce0`
+- `mso40uiWin32Client!__imp_?SetPadding@Element@NetUI@@QEAAJHHHH@Z` at `0x140096dd1`
+- `mso40uiWin32Client!__imp_?SetHidden@ScrollBar@NetUI@@QEAAX_N@Z` at `0x1400971f7`
+- `mso40uiWin32Client!__imp_?SetHidden@ScrollBar@NetUI@@QEAAX_N@Z` at `0x1400971f7`
+- `mso40uiWin32Client!__imp_?EndDefer@Node@NetUI@@SAXXZ` at `0x1400974d3`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x140096864`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x140096c2f`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x140096e4d`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x14009741f`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x140096864`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x140096c2f`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x140096e4d`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x14009741f`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096754`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096789`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400967b4`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400967db`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096834`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009687b`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400968bc`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400968f1`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009691c`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096943`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009696a`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096995`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400969c0`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400969e7`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096a12`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096a39`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096a75`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096ad2`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096b04`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096b68`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096bc8`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096bef`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096c16`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096c6b`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096c8e`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096de4`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096e64`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096e8b`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096eb6`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096edd`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096f04`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096f39`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096f64`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096f8f`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096fba`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096fe5`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009701b`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097046`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009706d`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400970bb`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400970e2`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009712c`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097157`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009717e`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400971a9`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400971d4`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009720e`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097243`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009726e`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400972a4`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400972cf`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400972fa`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097321`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097357`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400973a8`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400973cb`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097436`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097472`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009749d`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096754`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096789`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400967b4`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400967db`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096834`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009687b`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400968bc`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400968f1`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009691c`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096943`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009696a`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096995`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400969c0`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400969e7`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096a12`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096a39`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096a75`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096ad2`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096b04`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096b68`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096bc8`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096bef`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096c16`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096c6b`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096c8e`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096de4`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096e64`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096e8b`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096eb6`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096edd`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096f04`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096f39`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096f64`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096f8f`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096fba`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140096fe5`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009701b`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097046`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009706d`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400970bb`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400970e2`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009712c`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097157`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009717e`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400971a9`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400971d4`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009720e`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097243`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009726e`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400972a4`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400972cf`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400972fa`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097321`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097357`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400973a8`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x1400973cb`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097436`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x140097472`
+- `mso40uiWin32Client!__imp_?FindNodeSelfOrDescendent@Node@NetUI@@QEBAPEBV12@G@Z` at `0x14009749d`
+- `mso40uiWin32Client!__imp_?StartDefer@Node@NetUI@@SAXXZ` at `0x140096700`
+- `mso40uiWin32Client!__imp_?StartDefer@Node@NetUI@@SAXXZ` at `0x140096700`
+- `mso40uiWin32Client!__imp_?SetActive@Element@NetUI@@QEAAJH@Z` at `0x140096d84`
+- `mso40uiWin32Client!__imp_?SetActive@Element@NetUI@@QEAAJH@Z` at `0x140096d84`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x140096853`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x140097407`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x140096853`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x140097407`
+
+## string_xrefs
+
+- `0x1400968de`: `SearchComponentScrollViewer`
+
+## pseudocode
+
+```c
+
+```

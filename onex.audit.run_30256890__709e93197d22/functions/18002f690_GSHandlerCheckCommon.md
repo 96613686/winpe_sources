@@ -1,0 +1,72 @@
+# __GSHandlerCheckCommon
+
+- ea: `0x18002f690`
+- end: `0x18002f6f3`
+- name: `__GSHandlerCheckCommon`
+- size: `99`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `2`
+- tags: `loader_planting, broker_com_uri`
+
+## callers
+
+- `0x18002f66c`
+
+## callees
+
+- `0x180020250`
+- `0x18002f690`
+
+## pseudocode
+
+```c
+__int64 __fastcall _GSHandlerCheckCommon(__int64 a1, __int64 a2)
+{
+  __int64 v3; // rcx
+  __int64 v4; // rax
+
+  v3 = *(unsigned int *)(*(_QWORD *)(a2 + 16) + 8LL);
+  v4 = *(_QWORD *)(a2 + 8);
+  if ( (*(_BYTE *)(v3 + v4 + 3) & 0xF) != 0 )
+    return a1 + (*(_BYTE *)(v3 + v4 + 3) & 0xF0);
+  else
+    return a1;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18002f690  mov     r10, rcx
+0x18002f693  mov     r11, rdx
+0x18002f696  mov     ecx, [r8]
+0x18002f699  and     ecx, 0FFFFFFF8h
+0x18002f69c  test    byte ptr [r8], 4
+0x18002f6a0  jz      short loc_18002F6B7
+0x18002f6a2  mov     eax, [r8+8]
+0x18002f6a6  movsxd  r9, dword ptr [r8+4]
+0x18002f6aa  neg     eax
+0x18002f6ac  movsxd  rdx, eax
+0x18002f6af  add     r9, r10
+0x18002f6b2  and     r9, rdx
+0x18002f6b5  jmp     short loc_18002F6BA
+0x18002f6b7  mov     r9, r10
+0x18002f6ba  movsxd  rax, ecx
+0x18002f6bd  mov     rdx, [rax+r9]
+0x18002f6c1  mov     rax, [r11+10h]
+0x18002f6c5  mov     ecx, [rax+8]
+0x18002f6c8  mov     rax, [r11+8]
+0x18002f6cc  test    byte ptr [rcx+rax+3], 0Fh
+0x18002f6d1  jz      short loc_18002F6E5
+0x18002f6d3  movzx   eax, byte ptr [rcx+rax+3]
+0x18002f6d8  mov     ecx, 0FFFFFFF0h
+0x18002f6dd  and     rax, rcx
+0x18002f6e0  add     rax, r10
+0x18002f6e3  jmp     short loc_18002F6E8
+0x18002f6e5  mov     rax, r10
+0x18002f6e8  xor     rdx, rax
+0x18002f6eb  mov     rcx, rdx; StackCookie
+0x18002f6ee  jmp     __security_check_cookie
+```
