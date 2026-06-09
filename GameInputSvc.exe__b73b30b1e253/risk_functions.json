@@ -1,0 +1,1238 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LoadDllImports",
+    "ea": "0x14000704c",
+    "function_file": "functions/14000704c_LoadDllImports.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW"
+    ],
+    "matched_strings": [
+      "RegOpenKeyExW",
+      "combase",
+      "WindowsCreateStringReference",
+      "ntdll",
+      "GetWindowThreadProcessId"
+    ],
+    "name": "LoadDllImports",
+    "prototype": "FARPROC()",
+    "rank_score": 6048,
+    "size": 733,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "ModifySystemFile(ushort const *,ushort const *)",
+    "ea": "0x140004c20",
+    "function_file": "functions/140004c20_ModifySystemFile_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileAttributesW",
+      "api-ms-win-core-file-l1-1-0!GetFullPathNameW",
+      "api-ms-win-core-file-l1-1-0!GetTempFileNameW",
+      "api-ms-win-core-file-l1-1-0!GetVolumePathNameW",
+      "api-ms-win-core-file-l1-1-0!SetFileAttributesW",
+      "api-ms-win-core-file-l2-1-0!CopyFileExW",
+      "api-ms-win-core-file-l2-1-0!MoveFileExW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-provider-l1-1-0!GetNamedSecurityInfoW",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+    ],
+    "matched_strings": [],
+    "name": "?ModifySystemFile@@YAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpExistingFileName, LPCWSTR lpFileName)",
+    "rank_score": 5659,
+    "size": 2582,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ModifyGameInputFiles",
+    "ea": "0x140002ac0",
+    "function_file": "functions/140002ac0_ModifyGameInputFiles.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-kernel32-legacy-l1-1-1!VerifyVersionInfoW",
+      "api-ms-win-core-registry-l1-1-0!RegGetValueW",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemDirectoryW",
+      "api-ms-win-core-wow64-l1-1-1!GetSystemWow64DirectoryW",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!VerSetConditionMask",
+      "ntdll!swprintf_s"
+    ],
+    "matched_strings": [
+      "GameInput.dll",
+      "GameInput.dll",
+      "GameInputRedist.dll",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp"
+    ],
+    "name": "ModifyGameInputFiles",
+    "prototype": "__int64 __fastcall(char)",
+    "rank_score": 5601,
+    "size": 2885,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "InitializeSession",
+    "ea": "0x140003e54",
+    "function_file": "functions/140003e54_InitializeSession.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessAsUserW",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-security-base-l1-1-0!AdjustTokenPrivileges",
+      "api-ms-win-security-base-l1-1-0!DuplicateTokenEx",
+      "api-ms-win-security-base-l1-1-0!SetTokenInformation",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!swprintf_s",
+      "ntdll!wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "InitializeSession",
+    "prototype": "__int64 __fastcall(HINSTANCE, _QWORD *)",
+    "rank_score": 4865,
+    "size": 2114,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GameInputModule::LoadModule(GameInputModule::ModuleKind,GameInputVersion const &)",
+    "ea": "0x140006750",
+    "function_file": "functions/140006750_GameInputModule_LoadModule_GameInputModule_ModuleKind_GameInputVersion_const.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!GetFileAttributesW",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [
+      "GameInput.dll",
+      "GameInputRedist.dll",
+      "GameInputCreate",
+      "DllCanUnloadNow",
+      "DllGetClassObject"
+    ],
+    "name": "?LoadModule@GameInputModule@@AEAAJW4ModuleKind@1@AEBUGameInputVersion@@@Z",
+    "prototype": "__int64 __fastcall(struct _RTL_CRITICAL_SECTION *, int, const WCHAR *)",
+    "rank_score": 2029,
+    "size": 391,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ProcessWaitCallback",
+    "ea": "0x1400046a0",
+    "function_file": "functions/1400046a0_ProcessWaitCallback.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-kernel32-legacy-l1-1-0!WTSGetActiveConsoleSessionId",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeProcess",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount64"
+    ],
+    "matched_strings": [
+      "GameInputService instance died",
+      "GameInputService watchdog runaway"
+    ],
+    "name": "ProcessWaitCallback",
+    "prototype": "__int64 __fastcall(PVOID Parameter)",
+    "rank_score": 1899,
+    "size": 568,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CopyFileIfNewer(ushort const *,ushort const *)",
+    "ea": "0x140001e5c",
+    "function_file": "functions/140001e5c_CopyFileIfNewer_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-file-l2-1-0!MoveFileExW",
+      "api-ms-win-core-file-l2-1-2!CopyFileW",
+      "api-ms-win-core-kernel32-legacy-l1-1-0!MoveFileW",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!swprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "?CopyFileIfNewer@@YAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpExistingFileName, LPCWSTR lpFileName)",
+    "rank_score": 1833,
+    "size": 911,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "DeleteSession",
+    "ea": "0x140003b3c",
+    "function_file": "functions/140003b3c_DeleteSession.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "GameInput Instance timeout during Session deletion"
+    ],
+    "name": "DeleteSession",
+    "prototype": "BOOLEAN __fastcall(HANDLE *)",
+    "rank_score": 1568,
+    "size": 281,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetFileVersion",
+    "ea": "0x140002340",
+    "function_file": "functions/140002340_GetFileVersion.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-version-l1-1-0!VerQueryValueW",
+      "api-ms-win-core-version-l1-1-1!GetFileVersionInfoSizeW",
+      "api-ms-win-core-version-l1-1-1!GetFileVersionInfoW",
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "GetFileVersion",
+    "prototype": "__int64 __fastcall(LPCWSTR lptstrFilename, _QWORD *)",
+    "rank_score": 1429,
+    "size": 694,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GameInputServerManager::LoadGameInput(void)",
+    "ea": "0x14000199c",
+    "function_file": "functions/14000199c_GameInputServerManager_LoadGameInput_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "?LoadGameInput@GameInputServerManager@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(struct _RTL_CRITICAL_SECTION **this)",
+    "rank_score": 1422,
+    "size": 839,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "StopAllSessions(void)",
+    "ea": "0x140004950",
+    "function_file": "functions/140004950_StopAllSessions_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!OpenEventW",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "ext-ms-win-session-wtsapi32-l1-1-0!WTSEnumerateSessionsW",
+      "ext-ms-win-session-wtsapi32-l1-1-0!WTSFreeMemory"
+    ],
+    "matched_strings": [],
+    "name": "?StopAllSessions@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 1418,
+    "size": 355,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "InitializeService",
+    "ea": "0x1400028f8",
+    "function_file": "functions/1400028f8_InitializeService.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-kernel32-legacy-l1-1-0!WTSGetActiveConsoleSessionId",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection",
+      "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW"
+    ],
+    "matched_strings": [
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp"
+    ],
+    "name": "InitializeService",
+    "prototype": "signed int __fastcall(_QWORD *lpContext)",
+    "rank_score": 1309,
+    "size": 450,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GameInputModule::GetSystemDirPath(ushort const *,utl::unique_ptr<ushort [0],utl::default_delete<ushort [0]>> &,unsigned __int64 *)",
+    "ea": "0x140006578",
+    "function_file": "functions/140006578_GameInputModule_GetSystemDirPath_ushort_const_utl_unique_ptr_ushort_0_utl_default_delete_ushort_0_unsigned_int.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemDirectoryW",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!towlower"
+    ],
+    "matched_strings": [],
+    "name": "?GetSystemDirPath@GameInputModule@@CAJPEBGAEAV?$unique_ptr@$$BY0A@GU?$default_delete@$$BY0A@G@utl@@@utl@@PEA_K@Z",
+    "prototype": "signed int __fastcall(__int64, void **)",
+    "rank_score": 1225,
+    "size": 335,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GameInputUninitialize",
+    "ea": "0x140007588",
+    "function_file": "functions/140007588_GameInputUninitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "ntdll!EtwEventUnregister"
+    ],
+    "matched_strings": [],
+    "name": "GameInputUninitialize",
+    "prototype": "void()",
+    "rank_score": 1225,
+    "size": 195,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GameInputModule::ValidateModuleCertChain(ushort const *)",
+    "ea": "0x1400068e0",
+    "function_file": "functions/1400068e0_GameInputModule_ValidateModuleCertChain_ushort_const.md",
+    "matched_imports": [
+      "CRYPT32!CertVerifyCertificateChainPolicy",
+      "WINTRUST!WTHelperGetProvSignerFromChain",
+      "WINTRUST!WTHelperProvDataFromStateData",
+      "WINTRUST!WinVerifyTrust",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?ValidateModuleCertChain@GameInputModule@@CAJPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 1218,
+    "size": 399,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RunInstance",
+    "ea": "0x140005a88",
+    "function_file": "functions/140005a88_RunInstance.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-2-0!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "RunInstance",
+    "prototype": "__int64 __fastcall(unsigned __int16 *)",
+    "rank_score": 1209,
+    "size": 491,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SetObjectSD(ushort const *,_SE_OBJECT_TYPE,void *)",
+    "ea": "0x14000578c",
+    "function_file": "functions/14000578c_SetObjectSD_ushort_const_SE_OBJECT_TYPE_void.md",
+    "matched_imports": [
+      "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorDacl",
+      "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorGroup",
+      "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorOwner",
+      "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorSacl",
+      "api-ms-win-security-provider-l1-1-0!SetNamedSecurityInfoW"
+    ],
+    "matched_strings": [],
+    "name": "?SetObjectSD@@YAJPEBGW4_SE_OBJECT_TYPE@@PEAX@Z",
+    "prototype": "__int64 __fastcall(LPWSTR pObjectName, enum _SE_OBJECT_TYPE, void *)",
+    "rank_score": 1047,
+    "size": 412,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ServiceMain",
+    "ea": "0x1400037d0",
+    "function_file": "functions/1400037d0_ServiceMain.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+    ],
+    "matched_strings": [],
+    "name": "ServiceMain",
+    "prototype": "int()",
+    "rank_score": 1024,
+    "size": 212,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "EnsureSessionStarted(ulong)",
+    "ea": "0x140003c5c",
+    "function_file": "functions/140003c5c_EnsureSessionStarted_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureSessionStarted@@YAJK@Z",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 820,
+    "size": 495,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GameInputFailFast",
+    "ea": "0x140007488",
+    "function_file": "functions/140007488_GameInputFailFast.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-2!RaiseFailFastException",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "ntdll!NtTerminateProcess",
+      "ntdll!RtlCaptureContext"
+    ],
+    "matched_strings": [],
+    "name": "GameInputFailFast",
+    "prototype": "NTSTATUS __fastcall(NTSTATUS, unsigned int)",
+    "rank_score": 813,
+    "size": 248,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GameInputServerManager::WaitForStopOnEvent(ushort const *)",
+    "ea": "0x140001d80",
+    "function_file": "functions/140001d80_GameInputServerManager_WaitForStopOnEvent_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!OpenEventW",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?WaitForStopOnEvent@GameInputServerManager@@QEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(GameInputServerManager *this, const unsigned __int16 *)",
+    "rank_score": 804,
+    "size": 213,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "wWinMain",
+    "ea": "0x140005cb8",
+    "function_file": "functions/140005cb8_wWinMain.md",
+    "matched_imports": [
+      "ntdll!_wcsicmp",
+      "ntdll!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "/install",
+      "/uninstall"
+    ],
+    "name": "wWinMain",
+    "prototype": "int __stdcall(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nShowCmd)",
+    "rank_score": 718,
+    "size": 138,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "InitPlatformInfo",
+    "ea": "0x140006de4",
+    "function_file": "functions/140006de4_InitPlatformInfo.md",
+    "matched_imports": [
+      "ntdll!NtQueryLicenseValue",
+      "ntdll!RtlGetVersion",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "onecore\\xbox\\gameinput\\common\\PlatformInfo.cpp",
+      "onecore\\xbox\\gameinput\\common\\PlatformInfo.cpp"
+    ],
+    "name": "InitPlatformInfo",
+    "prototype": "__int64()",
+    "rank_score": 710,
+    "size": 610,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GameInputModule::~GameInputModule(void)",
+    "ea": "0x14000652c",
+    "function_file": "functions/14000652c_GameInputModule_GameInputModule_void.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1GameInputModule@@QEAA@XZ",
+    "prototype": "void __fastcall(struct _RTL_CRITICAL_SECTION *this)",
+    "rank_score": 703,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ProcessWaitCallbackWatcher",
+    "ea": "0x1400048e0",
+    "function_file": "functions/1400048e0_ProcessWaitCallbackWatcher.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ProcessWaitCallbackWatcher",
+    "prototype": "ULONG __fastcall(HANDLE *Parameter)",
+    "rank_score": 701,
+    "size": 104,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "_wWinMain(void)",
+    "ea": "0x140007330",
+    "function_file": "functions/140007330_wWinMain_void.md",
+    "matched_imports": [
+      "api-ms-win-core-processenvironment-l1-1-0!GetCommandLineW",
+      "api-ms-win-core-processthreads-l1-1-0!GetStartupInfoW",
+      "ntdll!EtwEventRegister"
+    ],
+    "matched_strings": [],
+    "name": "?_wWinMain@@YAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 632,
+    "size": 338,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetModuleFileNameOrPath(HINSTANCE__ *,bool,ushort * *)",
+    "ea": "0x1400025fc",
+    "function_file": "functions/1400025fc_GetModuleFileNameOrPath_HINSTANCE_bool_ushort.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameW",
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "?GetModuleFileNameOrPath@@YAJPEAUHINSTANCE__@@_NPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(HINSTANCE, char, unsigned __int16 **)",
+    "rank_score": 627,
+    "size": 405,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "utl::scope_exit__ModifySystemFile_::_2_::_lambda_1___::_scope_exit__ModifySystemFile_::_2_::_lambda_1___",
+    "ea": "0x140004abc",
+    "function_file": "functions/140004abc_utl_scope_exit_ModifySystemFile_2_lambda_1_scope_exit_ModifySystemFile_2_lambda_1.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l2-1-0!MoveFileExW",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "utl::scope_exit__ModifySystemFile_::_2_::_lambda_1___::_scope_exit__ModifySystemFile_::_2_::_lambda_1___",
+    "prototype": "HLOCAL *__fastcall(__int64)",
+    "rank_score": 624,
+    "size": 131,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RunService(void)",
+    "ea": "0x140003624",
+    "function_file": "functions/140003624_RunService_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-service-core-l1-1-0!StartServiceCtrlDispatcherW"
+    ],
+    "matched_strings": [
+      "onecore\\xbox\\gameinput\\published\\svc\\service.cpp",
+      "GameInputService service starting",
+      "GameInputService service stopped"
+    ],
+    "name": "?RunService@@YAJXZ",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, int)",
+    "rank_score": 548,
+    "size": 416,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "InitIsInDwm",
+    "ea": "0x140006c94",
+    "function_file": "functions/140006c94_InitIsInDwm.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameW"
+    ],
+    "matched_strings": [
+      "onecore\\xbox\\gameinput\\common\\PlatformInfo.cpp"
+    ],
+    "name": "InitIsInDwm",
+    "prototype": "__int64()",
+    "rank_score": 457,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SetFileAttributesAndAcl(ushort const *,ulong,void *)",
+    "ea": "0x14000563c",
+    "function_file": "functions/14000563c_SetFileAttributesAndAcl_ushort_const_ulong_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!SetFileAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "?SetFileAttributesAndAcl@@YAJPEBGKPEAX@Z",
+    "prototype": "__int64 __fastcall(LPWSTR pObjectName, DWORD, void *)",
+    "rank_score": 437,
+    "size": 327,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CreateEventName",
+    "ea": "0x140003a18",
+    "function_file": "functions/140003a18_CreateEventName.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!swprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "CreateEventName",
+    "prototype": "__int64 __fastcall(int, wchar_t **)",
+    "rank_score": 416,
+    "size": 284,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DeleteFiles(ushort const *)",
+    "ea": "0x1400021f4",
+    "function_file": "functions/1400021f4_DeleteFiles_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteFiles@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName)",
+    "rank_score": 416,
+    "size": 325,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GameInputServerManager::~GameInputServerManager(void)",
+    "ea": "0x140001718",
+    "function_file": "functions/140001718_GameInputServerManager_GameInputServerManager_void.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "??1GameInputServerManager@@QEAA@XZ",
+    "prototype": "void __fastcall(GameInputServerManager *__hidden this)",
+    "rank_score": 415,
+    "size": 169,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "EnableRedirectionGuard",
+    "ea": "0x1400059bc",
+    "function_file": "functions/1400059bc_EnableRedirectionGuard.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-1!SetProcessMitigationPolicy"
+    ],
+    "matched_strings": [],
+    "name": "EnableRedirectionGuard",
+    "prototype": "__int64()",
+    "rank_score": 414,
+    "size": 197,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GameInputModule::IsXbox(void)",
+    "ea": "0x1400066d0",
+    "function_file": "functions/1400066d0_GameInputModule_IsXbox_void.md",
+    "matched_imports": [
+      "ntdll!NtQueryLicenseValue",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?IsXbox@GameInputModule@@CA_NXZ",
+    "prototype": "bool(void)",
+    "rank_score": 413,
+    "size": 122,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ConstructStatics",
+    "ea": "0x140006b74",
+    "function_file": "functions/140006b74_ConstructStatics.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [
+      "onecore\\xbox\\gameinput\\common\\Crt.cpp"
+    ],
+    "name": "ConstructStatics",
+    "prototype": "__int64()",
+    "rank_score": 266,
+    "size": 282,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x1400061c4",
+    "function_file": "functions/1400061c4_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [
+      "ntdll!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *, __int64, __int64)",
+    "rank_score": 240,
+    "size": 653,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x14000613c",
+    "function_file": "functions/14000613c_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntdll!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "_BOOL8 __fastcall(__int64, __int64, int)",
+    "rank_score": 234,
+    "size": 130,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "operator delete[](void *)",
+    "ea": "0x140006b48",
+    "function_file": "functions/140006b48_operator_delete_void.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "??_V@YAXPEAX@Z",
+    "prototype": "void __fastcall(PVOID P)",
+    "rank_score": 230,
+    "size": 38,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "EnableNecessaryPrivileges(void)",
+    "ea": "0x140004b48",
+    "function_file": "functions/140004b48_EnableNecessaryPrivileges_void.md",
+    "matched_imports": [
+      "ntdll!RtlAdjustPrivilege"
+    ],
+    "matched_strings": [],
+    "name": "?EnableNecessaryPrivileges@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 224,
+    "size": 208,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GameInputModule::ValidateModuleVersion(HINSTANCE__ *,GameInputVersion const &)",
+    "ea": "0x140006a78",
+    "function_file": "functions/140006a78_GameInputModule_ValidateModuleVersion_HINSTANCE_GameInputVersion_const.md",
+    "matched_imports": [
+      "ntdll!LdrResSearchResource"
+    ],
+    "matched_strings": [],
+    "name": "?ValidateModuleVersion@GameInputModule@@CA_NPEAUHINSTANCE__@@AEBUGameInputVersion@@@Z",
+    "prototype": "bool __fastcall(HINSTANCE, const struct GameInputVersion *)",
+    "rank_score": 215,
+    "size": 200,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_tlgWriteTransfer_GameInputEventWriteTransfer",
+    "ea": "0x1400010cc",
+    "function_file": "functions/1400010cc_tlgWriteTransfer_GameInputEventWriteTransfer.md",
+    "matched_imports": [
+      "ntdll!EtwEventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_GameInputEventWriteTransfer",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *, __int64, __int64, int, __int64)",
+    "rank_score": 214,
+    "size": 151,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "memset_0",
+    "ea": "0x140007735",
+    "function_file": "functions/140007735_memset_0.md",
+    "matched_imports": [
+      "ntdll!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 116,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x1400014a0",
+    "function_file": "functions/1400014a0_report_gsfailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 29,
+    "size": 375,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 25,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_GameInputEventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@D@@U?$_tlgWrapperByVal@$03@@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_GameInputEventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@D@@AEBU?$_tlgWrapperByVal@$03@@4@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64 **, __int64, __int64)",
+    "rank_score": 29,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140007750",
+    "function_file": "functions/140007750_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 27,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x140006020",
+    "function_file": "functions/140006020_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "__int64 (__fastcall *__fastcall(__int64, __int64, unsigned int))(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 278,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400076cc",
+    "function_file": "functions/1400076cc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x140006458",
+    "function_file": "functions/140006458_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "void __fastcall(unsigned __int8, int)",
+    "rank_score": 22,
+    "size": 60,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x140008010",
+    "function_file": "functions/140008010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x140005d48",
+    "function_file": "functions/140005d48_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "__int64 __fastcall(__int64, volatile signed __int32 *, int, int)",
+    "rank_score": 17,
+    "size": 722,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140001620",
+    "function_file": "functions/140001620_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 68,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie_ex",
+    "ea": "0x14000166c",
+    "function_file": "functions/14000166c_security_init_cookie_ex.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie_ex",
+    "prototype": "unsigned __int64 *__fastcall(unsigned __int64 *)",
+    "rank_score": 12,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x1400077c0",
+    "function_file": "functions/1400077c0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GameInputServerManager::CreateServer(void)",
+    "ea": "0x1400017c8",
+    "function_file": "functions/1400017c8_GameInputServerManager_CreateServer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateServer@GameInputServerManager@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(GameInputServerManager *__hidden this)",
+    "rank_score": 8,
+    "size": 461,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_GameInputEventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &)",
+    "ea": "0x14000116c",
+    "function_file": "functions/14000116c_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@D@@U?$_tlgWrapperByVal@$03@@U1@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_GameInputEventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@D@@AEBU?$_tlgWrapperByVal@$03@@3@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64 **, __int64, __int64 **)",
+    "rank_score": 7,
+    "size": 232,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IsFileNewerThan(ushort const *,ushort const *)",
+    "ea": "0x140002798",
+    "function_file": "functions/140002798_IsFileNewerThan_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsFileNewerThan@@YAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 6,
+    "size": 232,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_GameInputEventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x14000125c",
+    "function_file": "functions/14000125c_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@D@@U?$_tlgWrapperByVal@$03@@U1@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_GameInputEventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@D@@AEBU?$_tlgWrapperByVal@$03@@34@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64 **, __int64, __int64 **, __int64)",
+    "rank_score": 6,
+    "size": 225,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GameInputServerManager::Start(void)",
+    "ea": "0x140001cec",
+    "function_file": "functions/140001cec_GameInputServerManager_Start_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Start@GameInputServerManager@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(struct _RTL_CRITICAL_SECTION **this)",
+    "rank_score": 5,
+    "size": 142,
+    "tags": []
+  }
+]

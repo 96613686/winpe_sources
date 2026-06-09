@@ -1,0 +1,1264 @@
+[
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "DepFSInstanceSetup",
+    "ea": "0x18000fc50",
+    "function_file": "functions/18000fc50_DepFSInstanceSetup.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltClose",
+      "FLTMGR!FltDeviceIoControlFile",
+      "FLTMGR!FltGetDiskDeviceObject",
+      "FLTMGR!FltGetVolumeName",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltObjectReference",
+      "FLTMGR!FltOpenVolume",
+      "FLTMGR!FltQuerySecurityObject",
+      "FLTMGR!FltSetInstanceContext",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ObSetSecurityObjectByPointer",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSInstanceSetup",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned __int64, int)",
+    "rank_score": 7457,
+    "size": 4010,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x180013078",
+    "function_file": "functions/180013078_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!FsRtlAreVolumeStartupApplicationsComplete",
+      "ntoskrnl!FsRtlQueryMaximumVirtualDiskNestingLevel",
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KdDebuggerNotPresent",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\FileSystem\\GroupPolicyKeys",
+      "VirtualDiskNoLocalMount",
+      "VirtualDiskExpandOnMount",
+      "AccessControl",
+      "ISOMountAllowNormalUser"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 4657,
+    "size": 1223,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "DepFSHandleAutochkForHostVolume",
+    "ea": "0x1800084f4",
+    "function_file": "functions/1800084f4_DepFSHandleAutochkForHostVolume.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltFlushBuffers",
+      "FLTMGR!FltOpenVolume",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeBugCheckEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSHandleAutochkForHostVolume",
+    "prototype": "",
+    "rank_score": 4421,
+    "size": 1373,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "DepFSAutochkWaitWorker",
+    "ea": "0x180008010",
+    "function_file": "functions/180008010_DepFSAutochkWaitWorker.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!FsRtlAreVolumeStartupApplicationsComplete",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSAutochkWaitWorker",
+    "prototype": "KSTART_ROUTINE",
+    "rank_score": 3427,
+    "size": 1078,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "DepFSDismountDependency",
+    "ea": "0x18000aa48",
+    "function_file": "functions/18000aa48_DepFSDismountDependency.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeBugCheck",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSDismountDependency",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 3420,
+    "size": 1150,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DepFSUnload",
+    "ea": "0x18000a120",
+    "function_file": "functions/18000a120_DepFSUnload.md",
+    "matched_imports": [
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoWMIRegistrationControl",
+      "ntoskrnl!KeDeregisterBugCheckReasonCallback",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "DepFSUnload",
+    "prototype": "",
+    "rank_score": 3208,
+    "size": 516,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DepFSRegisterFilters",
+    "ea": "0x18000d50c",
+    "function_file": "functions/18000d50c_DepFSRegisterFilters.md",
+    "matched_imports": [
+      "FLTMGR!FltRegisterFilter",
+      "FLTMGR!FltStartFiltering",
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!FsRtlAreVolumeStartupApplicationsComplete",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "DepFSRegisterFilters",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT Driver)",
+    "rank_score": 2855,
+    "size": 1207,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "DepFSDismountDependencyList",
+    "ea": "0x18000aecc",
+    "function_file": "functions/18000aecc_DepFSDismountDependencyList.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "DepFSDismountDependencyList",
+    "prototype": "",
+    "rank_score": 2417,
+    "size": 768,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 8,
+    "demangled": "DepFSGenerateDependencyList",
+    "ea": "0x18000eac0",
+    "function_file": "functions/18000eac0_DepFSGenerateDependencyList.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeBugCheck",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "DepFSGenerateDependencyList",
+    "prototype": "",
+    "rank_score": 2230,
+    "size": 2079,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DepFSPreCreate",
+    "ea": "0x180008d60",
+    "function_file": "functions/180008d60_DepFSPreCreate.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!FsRtlAreVolumeStartupApplicationsComplete",
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!SeAccessCheck"
+    ],
+    "matched_strings": [],
+    "name": "DepFSPreCreate",
+    "prototype": "",
+    "rank_score": 2230,
+    "size": 759,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "DependentFSDismountForUnsurface",
+    "ea": "0x18000b5f0",
+    "function_file": "functions/18000b5f0_DependentFSDismountForUnsurface.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForMultipleObjects"
+    ],
+    "matched_strings": [],
+    "name": "DependentFSDismountForUnsurface",
+    "prototype": "",
+    "rank_score": 2213,
+    "size": 878,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 14,
+    "demangled": "DereferenceDependencyContext",
+    "ea": "0x18000f73c",
+    "function_file": "functions/18000f73c_DereferenceDependencyContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DereferenceDependencyContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 2020,
+    "size": 472,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WppLoadTracingSupport",
+    "ea": "0x18000a490",
+    "function_file": "functions/18000a490_WppLoadTracingSupport.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "WppLoadTracingSupport",
+    "prototype": "",
+    "rank_score": 2005,
+    "size": 320,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "DepFSCheckHostFileObject",
+    "ea": "0x1800090f8",
+    "function_file": "functions/1800090f8_DepFSCheckHostFileObject.md",
+    "matched_imports": [
+      "ntoskrnl!FsRtlMupGetProviderIdFromName",
+      "ntoskrnl!FsRtlMupGetProviderInfoFromFileObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DepFSCheckHostFileObject",
+    "prototype": "__int64 __fastcall(HANDLE FileHandle, PFILE_OBJECT pFileObject)",
+    "rank_score": 1819,
+    "size": 1282,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DepFSDismountDependenciesOnVolume",
+    "ea": "0x18000a874",
+    "function_file": "functions/18000a874_DepFSDismountDependenciesOnVolume.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "DepFSDismountDependenciesOnVolume",
+    "prototype": "",
+    "rank_score": 1810,
+    "size": 460,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DepFSHandleQueryDependentVolume",
+    "ea": "0x18000bcc8",
+    "function_file": "functions/18000bcc8_DepFSHandleQueryDependentVolume.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DepFSHandleQueryDependentVolume",
+    "prototype": "",
+    "rank_score": 1641,
+    "size": 2735,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "DepFSPostVolumeMount",
+    "ea": "0x180001610",
+    "function_file": "functions/180001610_DepFSPostVolumeMount.md",
+    "matched_imports": [
+      "FLTMGR!FltFreeGenericWorkItem",
+      "FLTMGR!FltGetDeviceObject",
+      "FLTMGR!FltGetDiskDeviceObject",
+      "FLTMGR!FltQueueGenericWorkItem",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSPostVolumeMount",
+    "prototype": "",
+    "rank_score": 1614,
+    "size": 1009,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "DepFSNotifyChildren",
+    "ea": "0x18001127c",
+    "function_file": "functions/18001127c_DepFSNotifyChildren.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSNotifyChildren",
+    "prototype": "",
+    "rank_score": 1611,
+    "size": 627,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "DepFSSendIoctl",
+    "ea": "0x18000f5f8",
+    "function_file": "functions/18000f5f8_DepFSSendIoctl.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSSendIoctl",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 1606,
+    "size": 316,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DepFSBugCheckNotEnoughSpace",
+    "ea": "0x1800011a4",
+    "function_file": "functions/1800011a4_DepFSBugCheckNotEnoughSpace.md",
+    "matched_imports": [
+      "ntoskrnl!KeBugCheckEx",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateEvent",
+      "ntoskrnl!ZwQuerySystemInformation",
+      "ntoskrnl!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "\\BaseNamedObjects\\BootShellComplete"
+    ],
+    "name": "DepFSBugCheckNotEnoughSpace",
+    "prototype": "",
+    "rank_score": 1274,
+    "size": 317,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "DepFSPreVolumeMount",
+    "ea": "0x18000d1c0",
+    "function_file": "functions/18000d1c0_DepFSPreVolumeMount.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateGenericWorkItem",
+      "FLTMGR!FltFreeGenericWorkItem",
+      "FLTMGR!FltGetDeviceObject",
+      "FLTMGR!FltGetDiskDeviceObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSPreVolumeMount",
+    "prototype": "",
+    "rank_score": 1212,
+    "size": 838,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DepFSGetParentVolumeContext",
+    "ea": "0x18000f2e8",
+    "function_file": "functions/18000f2e8_DepFSGetParentVolumeContext.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltGetVolumeFromFileObject",
+      "FLTMGR!FltGetVolumeInstanceFromName",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "DepFSGetParentVolumeContext",
+    "prototype": "",
+    "rank_score": 1208,
+    "size": 460,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DepFSPostCreate",
+    "ea": "0x180008c10",
+    "function_file": "functions/180008c10_DepFSPostCreate.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "DepFSPostCreate",
+    "prototype": "",
+    "rank_score": 1207,
+    "size": 326,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DepFSCheckRamdiskBoot",
+    "ea": "0x1800012e8",
+    "function_file": "functions/1800012e8_DepFSCheckRamdiskBoot.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSCheckRamdiskBoot",
+    "prototype": "",
+    "rank_score": 1206,
+    "size": 319,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "DependentFSDereferenceDependency",
+    "ea": "0x18000d9d0",
+    "function_file": "functions/18000d9d0_DependentFSDereferenceDependency.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "DependentFSDereferenceDependency",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1205,
+    "size": 193,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "FsDepRegisterUnregisterForBugchecks",
+    "ea": "0x18000a32c",
+    "function_file": "functions/18000a32c_FsDepRegisterUnregisterForBugchecks.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeDeregisterBugCheckReasonCallback",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeRegisterBugCheckReasonCallback"
+    ],
+    "matched_strings": [],
+    "name": "FsDepRegisterUnregisterForBugchecks",
+    "prototype": "",
+    "rank_score": 1205,
+    "size": 202,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DepFSCheckSmbLoopback",
+    "ea": "0x180009600",
+    "function_file": "functions/180009600_DepFSCheckSmbLoopback.md",
+    "matched_imports": [
+      "ntoskrnl!KdDebuggerEnabled",
+      "ntoskrnl!KdDebuggerNotPresent",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateEvent",
+      "ntoskrnl!ZwQueryInformationFile",
+      "ntoskrnl!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSCheckSmbLoopback",
+    "prototype": "__int64 __fastcall(HANDLE FileHandle)",
+    "rank_score": 1039,
+    "size": 562,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "ReferenceVolumeContext",
+    "ea": "0x18000f970",
+    "function_file": "functions/18000f970_ReferenceVolumeContext.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltObjectReference",
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "ReferenceVolumeContext",
+    "prototype": "__int64 __fastcall(PFLT_CONTEXT Context)",
+    "rank_score": 1013,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "DepFSSendDismountRequest",
+    "ea": "0x18000b1d4",
+    "function_file": "functions/18000b1d4_DepFSSendDismountRequest.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltFsControlFile",
+      "FLTMGR!FltOpenVolume",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSSendDismountRequest",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1010,
+    "size": 618,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "DepFSCleanupVolumeContext",
+    "ea": "0x180010c00",
+    "function_file": "functions/180010c00_DepFSCleanupVolumeContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "DepFSCleanupVolumeContext",
+    "prototype": "",
+    "rank_score": 1009,
+    "size": 399,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DependentFSDismountForSystemEvent",
+    "ea": "0x18000b450",
+    "function_file": "functions/18000b450_DependentFSDismountForSystemEvent.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "DependentFSDismountForSystemEvent",
+    "prototype": "",
+    "rank_score": 1008,
+    "size": 408,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "DepFSDecrementActiveMountCount",
+    "ea": "0x18000b964",
+    "function_file": "functions/18000b964_DepFSDecrementActiveMountCount.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "DepFSDecrementActiveMountCount",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 808,
+    "size": 309,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DepFSIncrementActiveMountCount",
+    "ea": "0x18000f4bc",
+    "function_file": "functions/18000f4bc_DepFSIncrementActiveMountCount.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "DepFSIncrementActiveMountCount",
+    "prototype": "",
+    "rank_score": 806,
+    "size": 310,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 19,
+    "demangled": "DereferenceVolumeContext",
+    "ea": "0x18000f91c",
+    "function_file": "functions/18000f91c_DereferenceVolumeContext.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "DereferenceVolumeContext",
+    "prototype": "__int64(void)",
+    "rank_score": 619,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DepFSCheckDependencies",
+    "ea": "0x18000e88c",
+    "function_file": "functions/18000e88c_DepFSCheckDependencies.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DepFSCheckDependencies",
+    "prototype": "",
+    "rank_score": 612,
+    "size": 557,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "DepFSForEachDependency",
+    "ea": "0x18000bb48",
+    "function_file": "functions/18000bb48_DepFSForEachDependency.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DepFSForEachDependency",
+    "prototype": "",
+    "rank_score": 609,
+    "size": 378,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DepFSDecrementActiveMountCountForVolume",
+    "ea": "0x18000baa0",
+    "function_file": "functions/18000baa0_DepFSDecrementActiveMountCountForVolume.md",
+    "matched_imports": [
+      "FLTMGR!FltFreeGenericWorkItem",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DepFSDecrementActiveMountCountForVolume",
+    "prototype": "void __stdcall(PFLT_GENERIC_WORKITEM FltWorkItem, PVOID FltObject, PVOID Context)",
+    "rank_score": 604,
+    "size": 159,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DependentFSCheckStoragePrivilege",
+    "ea": "0x18000e770",
+    "function_file": "functions/18000e770_DependentFSCheckStoragePrivilege.md",
+    "matched_imports": [
+      "ntoskrnl!RtlIsSandboxedToken",
+      "ntoskrnl!SePrivilegeCheck"
+    ],
+    "matched_strings": [],
+    "name": "DependentFSCheckStoragePrivilege",
+    "prototype": "__int64 __fastcall(PSECURITY_SUBJECT_CONTEXT SubjectSecurityContext)",
+    "rank_score": 423,
+    "size": 206,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DepFSInstanceTeardownComplete",
+    "ea": "0x180010fd0",
+    "function_file": "functions/180010fd0_DepFSInstanceTeardownComplete.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "DepFSInstanceTeardownComplete",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 228,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DependentFSRegisterDeviceName",
+    "ea": "0x18000e680",
+    "function_file": "functions/18000e680_DependentFSRegisterDeviceName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DependentFSRegisterDeviceName",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 226,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DepFSCheckFileSystemNameForMatch",
+    "ea": "0x180009060",
+    "function_file": "functions/180009060_DepFSCheckFileSystemNameForMatch.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DepFSCheckFileSystemNameForMatch",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 143,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WppInitKm",
+    "ea": "0x18000a3fc",
+    "function_file": "functions/18000a3fc_WppInitKm.md",
+    "matched_imports": [
+      "ntoskrnl!IoWMIRegistrationControl"
+    ],
+    "matched_strings": [],
+    "name": "WppInitKm",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DepFSDeleteParentLink",
+    "ea": "0x180001ca8",
+    "function_file": "functions/180001ca8_DepFSDeleteParentLink.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DepFSDeleteParentLink",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 203,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x180001fb0",
+    "function_file": "functions/180001fb0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "WPP_SF_D",
+    "ea": "0x180001020",
+    "function_file": "functions/180001020_WPP_SF_D.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_D",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180001e3c",
+    "function_file": "functions/180001e3c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x180013010",
+    "function_file": "functions/180013010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180001f70",
+    "function_file": "functions/180001f70_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 18,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "WPP_SF_q",
+    "ea": "0x1800010b8",
+    "function_file": "functions/1800010b8_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 15,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x180001150",
+    "function_file": "functions/180001150_WPP_SF_qq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 13,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180013044",
+    "function_file": "functions/180013044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180001fe0",
+    "function_file": "functions/180001fe0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "memset",
+    "ea": "0x180002480",
+    "function_file": "functions/180002480_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 11,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x1800010fc",
+    "function_file": "functions/1800010fc_WPP_SF_qD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 10,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "memmove",
+    "ea": "0x180002180",
+    "function_file": "functions/180002180_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 10,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WPP_SF_",
+    "ea": "0x180001430",
+    "function_file": "functions/180001430_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "DepFSFindOurVolumeContext",
+    "ea": "0x18000844c",
+    "function_file": "functions/18000844c_DepFSFindOurVolumeContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DepFSFindOurVolumeContext",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_DD",
+    "ea": "0x180001460",
+    "function_file": "functions/180001460_WPP_SF_DD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DD",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_Dq",
+    "ea": "0x180001064",
+    "function_file": "functions/180001064_WPP_SF_Dq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_Dq",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_qqD",
+    "ea": "0x1800015a8",
+    "function_file": "functions/1800015a8_WPP_SF_qqD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qqD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 7,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_qqq",
+    "ea": "0x180001ad0",
+    "function_file": "functions/180001ad0_WPP_SF_qqq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qqq",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 7,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_SF_qddZ",
+    "ea": "0x180001a08",
+    "function_file": "functions/180001a08_WPP_SF_qddZ.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qddZ",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 194,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WPP_SF_Dqq",
+    "ea": "0x180001544",
+    "function_file": "functions/180001544_WPP_SF_Dqq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_Dqq",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WPP_SF_qqqDD",
+    "ea": "0x180001ba4",
+    "function_file": "functions/180001ba4_WPP_SF_qqqDD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qqqDD",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__cpu_features_init",
+    "ea": "0x180001ec0",
+    "function_file": "functions/180001ec0_cpu_features_init.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__cpu_features_init",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "memcmp",
+    "ea": "0x180002060",
+    "function_file": "functions/180002060_memcmp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memcmp",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 3,
+    "size": 199,
+    "tags": []
+  }
+]

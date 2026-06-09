@@ -1,0 +1,34 @@
+# DirectUI::Element::OnMouseFocusMoved(DirectUI::Element *,DirectUI::Element *)
+
+- ea: `0x180003700`
+- end: `0x180003706`
+- name: `?OnMouseFocusMoved@Element@DirectUI@@UEAAXPEAV12@0@Z_0`
+- size: `6`
+- prototype: `void(DirectUI::Element *__hidden this, struct DirectUI::Element *, struct DirectUI::Element *)`
+- caller_count: `0`
+- callee_count: `0`
+- tags: ``
+
+## import_xrefs
+
+- `DUI70!?OnMouseFocusMoved@Element@DirectUI@@UEAAXPEAV12@0@Z` at `0x180003700`
+
+## pseudocode
+
+```c
+// attributes: thunk
+void __fastcall DirectUI::Element::OnMouseFocusMoved(
+        DirectUI::Element *this,
+        struct DirectUI::Element *a2,
+        struct DirectUI::Element *a3)
+{
+  __imp_?OnMouseFocusMoved@Element@DirectUI@@UEAAXPEAV12@0@Z(this, a2, a3);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180003700  jmp     cs:__imp_?OnMouseFocusMoved@Element@DirectUI@@UEAAXPEAV12@0@Z
+```

@@ -1,0 +1,4001 @@
+[
+  {
+    "import": "ADVAPI32!AccessCheckAndAuditAlarmW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400454a2",
+        "from_func": "0x1400452ac",
+        "from_func_name": "?FaxSvcAccessCheck@@YAKKPEAHPEAKH@Z",
+        "import": "ADVAPI32!AccessCheckAndAuditAlarmW"
+      },
+      {
+        "from_ea": "0x1400454a2",
+        "from_func": "0x1400452ac",
+        "from_func_name": "?FaxSvcAccessCheck@@YAKKPEAHPEAKH@Z",
+        "import": "ADVAPI32!AccessCheckAndAuditAlarmW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!AdjustTokenPrivileges",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14006f75d",
+        "from_func": "0x14006f634",
+        "from_func_name": "EnableProcessPrivilege",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      },
+      {
+        "from_ea": "0x14006f75d",
+        "from_func": "0x14006f634",
+        "from_func_name": "EnableProcessPrivilege",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!AllocateAndInitializeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140072bec",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x140072c60",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x140080c4f",
+        "from_func": "0x140080ba8",
+        "from_func_name": "?IsLocalCall@@YA_NPEAX@Z",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x140072bec",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x140072c60",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x140080c4f",
+        "from_func": "0x140080ba8",
+        "from_func_name": "?IsLocalCall@@YA_NPEAX@Z",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!CloseServiceHandle",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140072564",
+        "from_func": "0x140072518",
+        "from_func_name": "?FaxCloseService@@YAKPEAUSC_HANDLE__@@0@Z",
+        "import": "ADVAPI32!CloseServiceHandle"
+      },
+      {
+        "from_ea": "0x1400725ae",
+        "from_func": "0x140072518",
+        "from_func_name": "?FaxCloseService@@YAKPEAUSC_HANDLE__@@0@Z",
+        "import": "ADVAPI32!CloseServiceHandle"
+      },
+      {
+        "from_ea": "0x140072564",
+        "from_func": "0x140072518",
+        "from_func_name": "?FaxCloseService@@YAKPEAUSC_HANDLE__@@0@Z",
+        "import": "ADVAPI32!CloseServiceHandle"
+      },
+      {
+        "from_ea": "0x1400725ae",
+        "from_func": "0x140072518",
+        "from_func_name": "?FaxCloseService@@YAKPEAUSC_HANDLE__@@0@Z",
+        "import": "ADVAPI32!CloseServiceHandle"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ControlService",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400739e5",
+        "from_func": "0x140073750",
+        "from_func_name": "StopService",
+        "import": "ADVAPI32!ControlService"
+      },
+      {
+        "from_ea": "0x1400739e5",
+        "from_func": "0x140073750",
+        "from_func_name": "StopService",
+        "import": "ADVAPI32!ControlService"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ConvertSidToStringSidW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x140008879",
+        "from_func": "0x140008810",
+        "from_func_name": "?GetFileNameFromSIDAndMessageID@CFaxArchiving@@QEAAKPEAX_KPEAGK@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x140008a73",
+        "from_func": "0x140008974",
+        "from_func_name": "?GetFileNamePattern@CFaxArchiving@@QEAAKHHPEAXPEAGK@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x14000d529",
+        "from_func": "0x14000d4d4",
+        "from_func_name": "?GetRegKeyNameForAccount@CFaxAccount@@AEBAKPEAPEAG@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x14001d1ae",
+        "from_func": "0x14001cf70",
+        "from_func_name": "FAX_SendDocumentEx",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x14002170c",
+        "from_func": "0x140021530",
+        "from_func_name": "FAX_StartCopyToServer",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x140008879",
+        "from_func": "0x140008810",
+        "from_func_name": "?GetFileNameFromSIDAndMessageID@CFaxArchiving@@QEAAKPEAX_KPEAGK@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x140008a73",
+        "from_func": "0x140008974",
+        "from_func_name": "?GetFileNamePattern@CFaxArchiving@@QEAAKHHPEAXPEAGK@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x14000d529",
+        "from_func": "0x14000d4d4",
+        "from_func_name": "?GetRegKeyNameForAccount@CFaxAccount@@AEBAKPEAPEAG@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x14001d1ae",
+        "from_func": "0x14001cf70",
+        "from_func_name": "FAX_SendDocumentEx",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x14002170c",
+        "from_func": "0x140021530",
+        "from_func_name": "FAX_StartCopyToServer",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400069c8",
+        "from_func": "0x140006954",
+        "from_func_name": "?CreateArchiveStructure@CFaxArchiving@@QEAAKPEBG@Z",
+        "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x1400450a6",
+        "from_func": "0x14004501c",
+        "from_func_name": "?CreateDefaultSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x1400069c8",
+        "from_func": "0x140006954",
+        "from_func_name": "?CreateArchiveStructure@CFaxArchiving@@QEAAKPEBG@Z",
+        "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x1400450a6",
+        "from_func": "0x14004501c",
+        "from_func_name": "?CreateDefaultSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ConvertStringSidToSidW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140006cc1",
+        "from_func": "0x140006b0c",
+        "from_func_name": "?ExtractComponentsFromArchiveFileName@CFaxArchiving@@QEAAKPEBGPEA_KPEAPEAX@Z",
+        "import": "ADVAPI32!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x14000df62",
+        "from_func": "0x14000df00",
+        "from_func_name": "RegEnumAccountsCB",
+        "import": "ADVAPI32!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x140006cc1",
+        "from_func": "0x140006b0c",
+        "from_func_name": "?ExtractComponentsFromArchiveFileName@CFaxArchiving@@QEAAKPEBGPEA_KPEAPEAX@Z",
+        "import": "ADVAPI32!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x14000df62",
+        "from_func": "0x14000df00",
+        "from_func_name": "RegEnumAccountsCB",
+        "import": "ADVAPI32!ConvertStringSidToSidW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!CopySid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14006f0a9",
+        "from_func": "0x14006ef88",
+        "from_func_name": "AllocateAndCopySid",
+        "import": "ADVAPI32!CopySid"
+      },
+      {
+        "from_ea": "0x1400736bf",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!CopySid"
+      },
+      {
+        "from_ea": "0x14006f0a9",
+        "from_func": "0x14006ef88",
+        "from_func_name": "AllocateAndCopySid",
+        "import": "ADVAPI32!CopySid"
+      },
+      {
+        "from_ea": "0x1400736bf",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!CopySid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!CreatePrivateObjectSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140045178",
+        "from_func": "0x14004501c",
+        "from_func_name": "?CreateDefaultSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!CreatePrivateObjectSecurity"
+      },
+      {
+        "from_ea": "0x140045178",
+        "from_func": "0x14004501c",
+        "from_func_name": "?CreateDefaultSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!CreatePrivateObjectSecurity"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!DestroyPrivateObjectSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400241ab",
+        "from_func": "0x140023fa0",
+        "from_func_name": "FreeServiceGlobals",
+        "import": "ADVAPI32!DestroyPrivateObjectSecurity"
+      },
+      {
+        "from_ea": "0x140045253",
+        "from_func": "0x14004501c",
+        "from_func_name": "?CreateDefaultSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!DestroyPrivateObjectSecurity"
+      },
+      {
+        "from_ea": "0x1400241ab",
+        "from_func": "0x140023fa0",
+        "from_func_name": "FreeServiceGlobals",
+        "import": "ADVAPI32!DestroyPrivateObjectSecurity"
+      },
+      {
+        "from_ea": "0x140045253",
+        "from_func": "0x14004501c",
+        "from_func_name": "?CreateDefaultSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!DestroyPrivateObjectSecurity"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!DuplicateToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140044e19",
+        "from_func": "0x140044a10",
+        "from_func_name": "GetReceiptsConfiguration",
+        "import": "ADVAPI32!DuplicateToken"
+      },
+      {
+        "from_ea": "0x140044e19",
+        "from_func": "0x140044a10",
+        "from_func_name": "GetReceiptsConfiguration",
+        "import": "ADVAPI32!DuplicateToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!EnumDependentServicesW",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14007386a",
+        "from_func": "0x140073750",
+        "from_func_name": "StopService",
+        "import": "ADVAPI32!EnumDependentServicesW"
+      },
+      {
+        "from_ea": "0x14007395f",
+        "from_func": "0x140073750",
+        "from_func_name": "StopService",
+        "import": "ADVAPI32!EnumDependentServicesW"
+      },
+      {
+        "from_ea": "0x14007386a",
+        "from_func": "0x140073750",
+        "from_func_name": "StopService",
+        "import": "ADVAPI32!EnumDependentServicesW"
+      },
+      {
+        "from_ea": "0x14007395f",
+        "from_func": "0x140073750",
+        "from_func_name": "StopService",
+        "import": "ADVAPI32!EnumDependentServicesW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!EqualSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 13,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e9c2",
+        "from_func": "0x14000e964",
+        "from_func_name": "?_FindAccountBySid@CFaxAccountList@@AEAAPEAVCFaxAccount@@PEAXPEAV?$_List_iterator@V?$_List_val@U?$_List_simple_types@PEAVCFaxAccount@@@std@@@std@@@std@@@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x14000f4ab",
+        "from_func": "0x14000f2f0",
+        "from_func_name": "FAX_GetAccountInfo",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x14001308d",
+        "from_func": "0x140012e20",
+        "from_func_name": "FindArchivedMessageAfterAccessCheck",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x140014a80",
+        "from_func": "0x140014a48",
+        "from_func_name": "?InterestedJob@@YAHPEAU_JOB_QUEUE@@KHPEAX@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x140044ff7",
+        "from_func": "0x140044f7c",
+        "from_func_name": "?AccessibleJob@@YAHPEAU_JOB_QUEUE@@HKPEAX@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x140056d51",
+        "from_func": "0x140056c80",
+        "from_func_name": "?MatchEvent@CFaxEventExtended@@UEBAHAEAVCClient@@@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x14000e9c2",
+        "from_func": "0x14000e964",
+        "from_func_name": "?_FindAccountBySid@CFaxAccountList@@AEAAPEAVCFaxAccount@@PEAXPEAV?$_List_iterator@V?$_List_val@U?$_List_simple_types@PEAVCFaxAccount@@@std@@@std@@@std@@@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x14000f4ab",
+        "from_func": "0x14000f2f0",
+        "from_func_name": "FAX_GetAccountInfo",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x14001308d",
+        "from_func": "0x140012e20",
+        "from_func_name": "FindArchivedMessageAfterAccessCheck",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x140014a80",
+        "from_func": "0x140014a48",
+        "from_func_name": "?InterestedJob@@YAHPEAU_JOB_QUEUE@@KHPEAX@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x140044ff7",
+        "from_func": "0x140044f7c",
+        "from_func_name": "?AccessibleJob@@YAHPEAU_JOB_QUEUE@@HKPEAX@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x140056d51",
+        "from_func": "0x140056c80",
+        "from_func_name": "?MatchEvent@CFaxEventExtended@@UEBAHAEAVCClient@@@Z",
+        "import": "ADVAPI32!EqualSid"
+      },
+      {
+        "from_ea": "0x140056dc1",
+        "from_func": "0x140056d90",
+        "from_func_name": "?MatchEvent@CFaxEventLegacy@@UEBAHAEAVCClient@@@Z",
+        "import": "ADVAPI32!EqualSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!FreeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x140072d4d",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x140072d62",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x140072de9",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x140072df9",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x140080c7c",
+        "from_func": "0x140080ba8",
+        "from_func_name": "?IsLocalCall@@YA_NPEAX@Z",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x140072d4d",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x140072d62",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x140072de9",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x140072df9",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x140080c7c",
+        "from_func": "0x140080ba8",
+        "from_func_name": "?IsLocalCall@@YA_NPEAX@Z",
+        "import": "ADVAPI32!FreeSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetLengthSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x140036b5c",
+        "from_func": "0x140036a18",
+        "from_func_name": "?CalcJobQueuePersistentSize@@YAKQEAU_JOB_QUEUE@@@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x140037185",
+        "from_func": "0x140036eb4",
+        "from_func_name": "?CommitQueueEntry@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x14006f059",
+        "from_func": "0x14006ef88",
+        "from_func_name": "AllocateAndCopySid",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x14007366b",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x140036b5c",
+        "from_func": "0x140036a18",
+        "from_func_name": "?CalcJobQueuePersistentSize@@YAKQEAU_JOB_QUEUE@@@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x140037185",
+        "from_func": "0x140036eb4",
+        "from_func_name": "?CommitQueueEntry@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x14006f059",
+        "from_func": "0x14006ef88",
+        "from_func_name": "AllocateAndCopySid",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x14007366b",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!GetLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetPrivateObjectSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400464d5",
+        "from_func": "0x1400462e0",
+        "from_func_name": "FAX_GetSecurityEx2",
+        "import": "ADVAPI32!GetPrivateObjectSecurity"
+      },
+      {
+        "from_ea": "0x140046530",
+        "from_func": "0x1400462e0",
+        "from_func_name": "FAX_GetSecurityEx2",
+        "import": "ADVAPI32!GetPrivateObjectSecurity"
+      },
+      {
+        "from_ea": "0x1400464d5",
+        "from_func": "0x1400462e0",
+        "from_func_name": "FAX_GetSecurityEx2",
+        "import": "ADVAPI32!GetPrivateObjectSecurity"
+      },
+      {
+        "from_ea": "0x140046530",
+        "from_func": "0x1400462e0",
+        "from_func_name": "FAX_GetSecurityEx2",
+        "import": "ADVAPI32!GetPrivateObjectSecurity"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetSecurityDescriptorControl",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140045dde",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!GetSecurityDescriptorControl"
+      },
+      {
+        "from_ea": "0x140045dde",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!GetSecurityDescriptorControl"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetSecurityDescriptorDacl",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400733a4",
+        "from_func": "0x1400732cc",
+        "from_func_name": "DestroySecurityAttributes",
+        "import": "ADVAPI32!GetSecurityDescriptorDacl"
+      },
+      {
+        "from_ea": "0x1400733a4",
+        "from_func": "0x1400732cc",
+        "from_func_name": "DestroySecurityAttributes",
+        "import": "ADVAPI32!GetSecurityDescriptorDacl"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetSecurityDescriptorLength",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140045e21",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!GetSecurityDescriptorLength"
+      },
+      {
+        "from_ea": "0x140045e21",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!GetSecurityDescriptorLength"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetSecurityDescriptorOwner",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14007333f",
+        "from_func": "0x1400732cc",
+        "from_func_name": "DestroySecurityAttributes",
+        "import": "ADVAPI32!GetSecurityDescriptorOwner"
+      },
+      {
+        "from_ea": "0x14007333f",
+        "from_func": "0x1400732cc",
+        "from_func_name": "DestroySecurityAttributes",
+        "import": "ADVAPI32!GetSecurityDescriptorOwner"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ImpersonateLoggedOnUser",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140078677",
+        "from_func": "0x140076bac",
+        "from_func_name": "SendMail",
+        "import": "ADVAPI32!ImpersonateLoggedOnUser"
+      },
+      {
+        "from_ea": "0x140078677",
+        "from_func": "0x140076bac",
+        "from_func_name": "SendMail",
+        "import": "ADVAPI32!ImpersonateLoggedOnUser"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!InitializeSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140072aaa",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!InitializeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140072aaa",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!InitializeSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!IsValidSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140045ba7",
+        "from_func": "0x1400459a4",
+        "from_func_name": "?LoadSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!IsValidSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140045d8c",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!IsValidSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140046472",
+        "from_func": "0x1400462e0",
+        "from_func_name": "FAX_GetSecurityEx2",
+        "import": "ADVAPI32!IsValidSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140045ba7",
+        "from_func": "0x1400459a4",
+        "from_func_name": "?LoadSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!IsValidSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140045d8c",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!IsValidSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140046472",
+        "from_func": "0x1400462e0",
+        "from_func_name": "FAX_GetSecurityEx2",
+        "import": "ADVAPI32!IsValidSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!IsValidSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140036f14",
+        "from_func": "0x140036eb4",
+        "from_func_name": "?CommitQueueEntry@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "ADVAPI32!IsValidSid"
+      },
+      {
+        "from_ea": "0x14006f007",
+        "from_func": "0x14006ef88",
+        "from_func_name": "AllocateAndCopySid",
+        "import": "ADVAPI32!IsValidSid"
+      },
+      {
+        "from_ea": "0x14007362d",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!IsValidSid"
+      },
+      {
+        "from_ea": "0x140036f14",
+        "from_func": "0x140036eb4",
+        "from_func_name": "?CommitQueueEntry@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "ADVAPI32!IsValidSid"
+      },
+      {
+        "from_ea": "0x14006f007",
+        "from_func": "0x14006ef88",
+        "from_func_name": "AllocateAndCopySid",
+        "import": "ADVAPI32!IsValidSid"
+      },
+      {
+        "from_ea": "0x14007362d",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!IsValidSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!LookupAccountSidW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14006f3e0",
+        "from_func": "0x14006f350",
+        "from_func_name": "ConvertUserSidToName",
+        "import": "ADVAPI32!LookupAccountSidW"
+      },
+      {
+        "from_ea": "0x14006f4f9",
+        "from_func": "0x14006f350",
+        "from_func_name": "ConvertUserSidToName",
+        "import": "ADVAPI32!LookupAccountSidW"
+      },
+      {
+        "from_ea": "0x14006f3e0",
+        "from_func": "0x14006f350",
+        "from_func_name": "ConvertUserSidToName",
+        "import": "ADVAPI32!LookupAccountSidW"
+      },
+      {
+        "from_ea": "0x14006f4f9",
+        "from_func": "0x14006f350",
+        "from_func_name": "ConvertUserSidToName",
+        "import": "ADVAPI32!LookupAccountSidW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!LookupPrivilegeValueW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14006f6ab",
+        "from_func": "0x14006f634",
+        "from_func_name": "EnableProcessPrivilege",
+        "import": "ADVAPI32!LookupPrivilegeValueW"
+      },
+      {
+        "from_ea": "0x14006f6ab",
+        "from_func": "0x14006f634",
+        "from_func_name": "EnableProcessPrivilege",
+        "import": "ADVAPI32!LookupPrivilegeValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenProcessToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140045107",
+        "from_func": "0x14004501c",
+        "from_func_name": "?CreateDefaultSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x14006f713",
+        "from_func": "0x14006f634",
+        "from_func_name": "EnableProcessPrivilege",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x1400734bf",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x140045107",
+        "from_func": "0x14004501c",
+        "from_func_name": "?CreateDefaultSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x14006f713",
+        "from_func": "0x14006f634",
+        "from_func_name": "EnableProcessPrivilege",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x1400734bf",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!OpenProcessToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenServiceW",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400726c3",
+        "from_func": "0x140072604",
+        "from_func_name": "?FaxOpenService@@YAKPEBG0PEAPEAUSC_HANDLE__@@1KKPEAK@Z",
+        "import": "ADVAPI32!OpenServiceW"
+      },
+      {
+        "from_ea": "0x1400726c3",
+        "from_func": "0x140072604",
+        "from_func_name": "?FaxOpenService@@YAKPEBG0PEAPEAUSC_HANDLE__@@1KKPEAK@Z",
+        "import": "ADVAPI32!OpenServiceW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenThreadToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x14004562c",
+        "from_func": "0x140045560",
+        "from_func_name": "?GetClientUserName@@YAPEAGXZ",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x140046840",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x140073493",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x140080c0a",
+        "from_func": "0x140080ba8",
+        "from_func_name": "?IsLocalCall@@YA_NPEAX@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x14004562c",
+        "from_func": "0x140045560",
+        "from_func_name": "?GetClientUserName@@YAPEAGXZ",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x140046840",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x140073493",
+        "from_func": "0x140073418",
+        "from_func_name": "GetCurrentThreadSID",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x140080c0a",
+        "from_func": "0x140080ba8",
+        "from_func_name": "?IsLocalCall@@YA_NPEAX@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!QueryServiceStatus",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140072710",
+        "from_func": "0x140072604",
+        "from_func_name": "?FaxOpenService@@YAKPEBG0PEAPEAUSC_HANDLE__@@1KKPEAK@Z",
+        "import": "ADVAPI32!QueryServiceStatus"
+      },
+      {
+        "from_ea": "0x14007280c",
+        "from_func": "0x140072798",
+        "from_func_name": "?WaitForServiceStopOrStart@@YAKPEAUSC_HANDLE__@@HK@Z",
+        "import": "ADVAPI32!QueryServiceStatus"
+      },
+      {
+        "from_ea": "0x1400728a9",
+        "from_func": "0x140072798",
+        "from_func_name": "?WaitForServiceStopOrStart@@YAKPEAUSC_HANDLE__@@HK@Z",
+        "import": "ADVAPI32!QueryServiceStatus"
+      },
+      {
+        "from_ea": "0x140072710",
+        "from_func": "0x140072604",
+        "from_func_name": "?FaxOpenService@@YAKPEBG0PEAPEAUSC_HANDLE__@@1KKPEAK@Z",
+        "import": "ADVAPI32!QueryServiceStatus"
+      },
+      {
+        "from_ea": "0x14007280c",
+        "from_func": "0x140072798",
+        "from_func_name": "?WaitForServiceStopOrStart@@YAKPEAUSC_HANDLE__@@HK@Z",
+        "import": "ADVAPI32!QueryServiceStatus"
+      },
+      {
+        "from_ea": "0x1400728a9",
+        "from_func": "0x140072798",
+        "from_func_name": "?WaitForServiceStopOrStart@@YAKPEAUSC_HANDLE__@@HK@Z",
+        "import": "ADVAPI32!QueryServiceStatus"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x140045a42",
+        "from_func": "0x1400459a4",
+        "from_func_name": "?LoadSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x140045d3e",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14007091e",
+        "from_func": "0x1400708c4",
+        "from_func_name": "OpenRegistryKey",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14007bd48",
+        "from_func": "0x14007bc44",
+        "from_func_name": "AddNewProviderToRegistry",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14007ef03",
+        "from_func": "0x14007ee18",
+        "from_func_name": "StoreActivityLoggingSettings",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14007f756",
+        "from_func": "0x14007f654",
+        "from_func_name": "StoreReceiptsSettings",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x140045a42",
+        "from_func": "0x1400459a4",
+        "from_func_name": "?LoadSecurityDescriptor@@YAKXZ",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x140045d3e",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14007091e",
+        "from_func": "0x1400708c4",
+        "from_func_name": "OpenRegistryKey",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14007bd48",
+        "from_func": "0x14007bc44",
+        "from_func_name": "AddNewProviderToRegistry",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14007ef03",
+        "from_func": "0x14007ee18",
+        "from_func_name": "StoreActivityLoggingSettings",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14007f756",
+        "from_func": "0x14007f654",
+        "from_func_name": "StoreReceiptsSettings",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x14007bf6b",
+        "from_func": "0x14007bc44",
+        "from_func_name": "AddNewProviderToRegistry",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x14007c3db",
+        "from_func": "0x14007c2a8",
+        "from_func_name": "DeleteOutboundRuleKey",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x14007d263",
+        "from_func": "0x14007d030",
+        "from_func_name": "GetOrigSetupData",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x14007e7ac",
+        "from_func": "0x14007e6f4",
+        "from_func_name": "RemoveProviderFromRegistry",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x14007bf6b",
+        "from_func": "0x14007bc44",
+        "from_func_name": "AddNewProviderToRegistry",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x14007c3db",
+        "from_func": "0x14007c2a8",
+        "from_func_name": "DeleteOutboundRuleKey",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x14007d263",
+        "from_func": "0x14007d030",
+        "from_func_name": "GetOrigSetupData",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      },
+      {
+        "from_ea": "0x14007e7ac",
+        "from_func": "0x14007e6f4",
+        "from_func_name": "RemoveProviderFromRegistry",
+        "import": "ADVAPI32!RegDeleteKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteKeyW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x14005c601",
+        "from_func": "0x14005c470",
+        "from_func_name": "?EnumOutboundRoutingGroupsCB@@YAHPEAUHKEY__@@PEBGKPEAX@Z",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x14005e93a",
+        "from_func": "0x14005e6a0",
+        "from_func_name": "FAX_RemoveOutboundGroup",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x14005ff5d",
+        "from_func": "0x14005fe20",
+        "from_func_name": "?EnumOutboundRoutingRulesCB@@YAHPEAUHKEY__@@PEBGKPEAX@Z",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x14006ffae",
+        "from_func": "0x14006fc98",
+        "from_func_name": "DeleteDeviceEntry",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x140070177",
+        "from_func": "0x140070020",
+        "from_func_name": "DeleteRegistryKey",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x14005c601",
+        "from_func": "0x14005c470",
+        "from_func_name": "?EnumOutboundRoutingGroupsCB@@YAHPEAUHKEY__@@PEBGKPEAX@Z",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x14005e93a",
+        "from_func": "0x14005e6a0",
+        "from_func_name": "FAX_RemoveOutboundGroup",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x14005ff5d",
+        "from_func": "0x14005fe20",
+        "from_func_name": "?EnumOutboundRoutingRulesCB@@YAHPEAUHKEY__@@PEBGKPEAX@Z",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x14006ffae",
+        "from_func": "0x14006fc98",
+        "from_func_name": "DeleteDeviceEntry",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x140070177",
+        "from_func": "0x140070020",
+        "from_func_name": "DeleteRegistryKey",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x14000cb81",
+        "from_func": "0x14000cac8",
+        "from_func_name": "?Delete@CFaxAccount@@QEAAKPEBG@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x14002324a",
+        "from_func": "0x140023108",
+        "from_func_name": "?EncryptReceiptsPassword@@YAXXZ",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x14006fe24",
+        "from_func": "0x14006fc98",
+        "from_func_name": "DeleteDeviceEntry",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x14000cb81",
+        "from_func": "0x14000cac8",
+        "from_func_name": "?Delete@CFaxAccount@@QEAAKPEBG@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x14002324a",
+        "from_func": "0x140023108",
+        "from_func_name": "?EncryptReceiptsPassword@@YAXXZ",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x14006fe24",
+        "from_func": "0x14006fc98",
+        "from_func_name": "DeleteDeviceEntry",
+        "import": "ADVAPI32!RegDeleteValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 16,
+    "xrefs": [
+      {
+        "from_ea": "0x14001ec10",
+        "from_func": "0x14001eb10",
+        "from_func_name": "FAX_SetConfigWizardUsed",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1400220b1",
+        "from_func": "0x140021fb0",
+        "from_func_name": "FAX_UnregisterRoutingExtension",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1400700b2",
+        "from_func": "0x140070020",
+        "from_func_name": "DeleteRegistryKey",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140070982",
+        "from_func": "0x1400708c4",
+        "from_func_name": "OpenRegistryKey",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140071c9a",
+        "from_func": "0x140071c54",
+        "from_func_name": "?GetDebugLevel@@YAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1400730cb",
+        "from_func": "0x140072e44",
+        "from_func_name": "CreateSvcStartEvent",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14007bccc",
+        "from_func": "0x14007bc44",
+        "from_func_name": "AddNewProviderToRegistry",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14007e764",
+        "from_func": "0x14007e6f4",
+        "from_func_name": "RemoveProviderFromRegistry",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001ec10",
+        "from_func": "0x14001eb10",
+        "from_func_name": "FAX_SetConfigWizardUsed",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1400220b1",
+        "from_func": "0x140021fb0",
+        "from_func_name": "FAX_UnregisterRoutingExtension",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1400700b2",
+        "from_func": "0x140070020",
+        "from_func_name": "DeleteRegistryKey",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140070982",
+        "from_func": "0x1400708c4",
+        "from_func_name": "OpenRegistryKey",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140071c9a",
+        "from_func": "0x140071c54",
+        "from_func_name": "?GetDebugLevel@@YAKXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1400730cb",
+        "from_func": "0x140072e44",
+        "from_func_name": "CreateSvcStartEvent",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14007bccc",
+        "from_func": "0x14007bc44",
+        "from_func_name": "AddNewProviderToRegistry",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14007e764",
+        "from_func": "0x14007e6f4",
+        "from_func_name": "RemoveProviderFromRegistry",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 16,
+    "xrefs": [
+      {
+        "from_ea": "0x140045e52",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x140045f29",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14006f96c",
+        "from_func": "0x14006f808",
+        "from_func_name": "?GetRegistryStringValue@@YAPEAGPEAUHKEY__@@KPEBG1PEAK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14006fac9",
+        "from_func": "0x14006fa88",
+        "from_func_name": "?SetRegistryStringValue@@YAHPEAUHKEY__@@KPEBG1J@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x140070649",
+        "from_func": "0x140070554",
+        "from_func_name": "GetRegistryBinary",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x1400706fd",
+        "from_func": "0x140070684",
+        "from_func_name": "GetRegistryDwordDefault",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x1400709cb",
+        "from_func": "0x1400709a0",
+        "from_func_name": "SetRegistryBinary",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x140070a24",
+        "from_func": "0x1400709fc",
+        "from_func_name": "SetRegistryDword",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x140045e52",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x140045f29",
+        "from_func": "0x140045c88",
+        "from_func_name": "?SaveSecurityDescriptor@@YAKPEAX@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14006f96c",
+        "from_func": "0x14006f808",
+        "from_func_name": "?GetRegistryStringValue@@YAPEAGPEAUHKEY__@@KPEBG1PEAK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14006fac9",
+        "from_func": "0x14006fa88",
+        "from_func_name": "?SetRegistryStringValue@@YAHPEAUHKEY__@@KPEBG1J@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x140070649",
+        "from_func": "0x140070554",
+        "from_func_name": "GetRegistryBinary",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x1400706fd",
+        "from_func": "0x140070684",
+        "from_func_name": "GetRegistryDwordDefault",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x1400709cb",
+        "from_func": "0x1400709a0",
+        "from_func_name": "SetRegistryBinary",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x140070a24",
+        "from_func": "0x1400709fc",
+        "from_func_name": "SetRegistryDword",
+        "import": "ADVAPI32!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegisterServiceCtrlHandlerW",
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14002390b",
+        "from_func": "0x1400236a0",
+        "from_func_name": "?FaxServiceMain@@YAXKPEAPEAG@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerW"
+      },
+      {
+        "from_ea": "0x14002390b",
+        "from_func": "0x1400236a0",
+        "from_func_name": "?FaxServiceMain@@YAXKPEAPEAG@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RevertToSelf",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400787e6",
+        "from_func": "0x140076bac",
+        "from_func_name": "SendMail",
+        "import": "ADVAPI32!RevertToSelf"
+      },
+      {
+        "from_ea": "0x1400787e6",
+        "from_func": "0x140076bac",
+        "from_func_name": "SendMail",
+        "import": "ADVAPI32!RevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetEntriesInAclW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140072cfa",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!SetEntriesInAclW"
+      },
+      {
+        "from_ea": "0x140072cfa",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!SetEntriesInAclW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetPrivateObjectSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140046911",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "ADVAPI32!SetPrivateObjectSecurity"
+      },
+      {
+        "from_ea": "0x140046911",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "ADVAPI32!SetPrivateObjectSecurity"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetSecurityDescriptorDacl",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140072d7c",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!SetSecurityDescriptorDacl"
+      },
+      {
+        "from_ea": "0x140072d7c",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!SetSecurityDescriptorDacl"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetSecurityDescriptorGroup",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140072b78",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!SetSecurityDescriptorGroup"
+      },
+      {
+        "from_ea": "0x140072b78",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!SetSecurityDescriptorGroup"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetSecurityDescriptorOwner",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140072b31",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!SetSecurityDescriptorOwner"
+      },
+      {
+        "from_ea": "0x140072b31",
+        "from_func": "0x140072970",
+        "from_func_name": "CreateSecurityAttributesWithThreadAsOwner",
+        "import": "ADVAPI32!SetSecurityDescriptorOwner"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetServiceStatus",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140025249",
+        "from_func": "0x140025194",
+        "from_func_name": "?ReportServiceStatus@@YAHKKK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x140025249",
+        "from_func": "0x140025194",
+        "from_func_name": "?ReportServiceStatus@@YAHKKK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!StartServiceCtrlDispatcherW",
+    "tags": [
+      "service_task",
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140027839",
+        "from_func": "0x140027708",
+        "from_func_name": "wWinMain",
+        "import": "ADVAPI32!StartServiceCtrlDispatcherW"
+      },
+      {
+        "from_ea": "0x140027839",
+        "from_func": "0x140027708",
+        "from_func_name": "wWinMain",
+        "import": "ADVAPI32!StartServiceCtrlDispatcherW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CompareStringW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14006668f",
+        "from_func": "0x140066628",
+        "from_func_name": "?UnExpandEnvironmentString@@YAHPEBG0PEAGI@Z",
+        "import": "KERNEL32!CompareStringW"
+      },
+      {
+        "from_ea": "0x14006668f",
+        "from_func": "0x140066628",
+        "from_func_name": "?UnExpandEnvironmentString@@YAHPEBG0PEAGI@Z",
+        "import": "KERNEL32!CompareStringW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CopyFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x14000da65",
+        "from_func": "0x14000d79c",
+        "from_func_name": "?ReAssignMessage@@YAKPEBG_KPEAU_FAX_REASSIGN_INFO@@PEAPEAXK@Z",
+        "import": "KERNEL32!CopyFileW"
+      },
+      {
+        "from_ea": "0x14002d1de",
+        "from_func": "0x14002cfcc",
+        "from_func_name": "?ArchiveOutboundJob@@YAHPEBU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!CopyFileW"
+      },
+      {
+        "from_ea": "0x14002eebb",
+        "from_func": "0x14002eb78",
+        "from_func_name": "?CreateTiffFile@@YAHPEAU_JOB_QUEUE@@PEBGPEAGK@Z",
+        "import": "KERNEL32!CopyFileW"
+      },
+      {
+        "from_ea": "0x140040676",
+        "from_func": "0x14003ed20",
+        "from_func_name": "?FaxReceiveThread@@YAKPEAU_FAX_RECEIVE_ITEM@@@Z",
+        "import": "KERNEL32!CopyFileW"
+      },
+      {
+        "from_ea": "0x14000da65",
+        "from_func": "0x14000d79c",
+        "from_func_name": "?ReAssignMessage@@YAKPEBG_KPEAU_FAX_REASSIGN_INFO@@PEAPEAXK@Z",
+        "import": "KERNEL32!CopyFileW"
+      },
+      {
+        "from_ea": "0x14002d1de",
+        "from_func": "0x14002cfcc",
+        "from_func_name": "?ArchiveOutboundJob@@YAHPEBU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!CopyFileW"
+      },
+      {
+        "from_ea": "0x14002eebb",
+        "from_func": "0x14002eb78",
+        "from_func_name": "?CreateTiffFile@@YAHPEAU_JOB_QUEUE@@PEBGPEAGK@Z",
+        "import": "KERNEL32!CopyFileW"
+      },
+      {
+        "from_ea": "0x140040676",
+        "from_func": "0x14003ed20",
+        "from_func_name": "?FaxReceiveThread@@YAKPEAU_FAX_RECEIVE_ITEM@@@Z",
+        "import": "KERNEL32!CopyFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x14006a418",
+        "from_func": "0x14006a3a4",
+        "from_func_name": "InternalSafeCreateFile",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x14006c026",
+        "from_func": "0x14006bff4",
+        "from_func_name": "?SafeDeleteFileByHandle@@YAHPEAG@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x1400797c3",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x14006a418",
+        "from_func": "0x14006a3a4",
+        "from_func_name": "InternalSafeCreateFile",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x14006c026",
+        "from_func": "0x14006bff4",
+        "from_func_name": "?SafeDeleteFileByHandle@@YAHPEAG@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x1400797c3",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateIoCompletionPort",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x14003275a",
+        "from_func": "0x1400326fc",
+        "from_func_name": "?InitializeJobManager@@YAHPEAU_REG_FAX_SERVICE@@@Z",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x14004c482",
+        "from_func": "0x14004c3cc",
+        "from_func_name": "?TapiInitialize@@YAKPEAU_REG_FAX_SERVICE@@@Z",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x140056a5a",
+        "from_func": "0x1400569ec",
+        "from_func_name": "?InitializeServerEvents@@YAKXZ",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x140056ab5",
+        "from_func": "0x1400569ec",
+        "from_func_name": "?InitializeServerEvents@@YAKXZ",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x14005a0e7",
+        "from_func": "0x14005a080",
+        "from_func_name": "?Init@CNotificationMap@@QEAAKXZ",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x14003275a",
+        "from_func": "0x1400326fc",
+        "from_func_name": "?InitializeJobManager@@YAHPEAU_REG_FAX_SERVICE@@@Z",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x14004c482",
+        "from_func": "0x14004c3cc",
+        "from_func_name": "?TapiInitialize@@YAKPEAU_REG_FAX_SERVICE@@@Z",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x140056a5a",
+        "from_func": "0x1400569ec",
+        "from_func_name": "?InitializeServerEvents@@YAKXZ",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x140056ab5",
+        "from_func": "0x1400569ec",
+        "from_func_name": "?InitializeServerEvents@@YAKXZ",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      },
+      {
+        "from_ea": "0x14005a0e7",
+        "from_func": "0x14005a080",
+        "from_func_name": "?Init@CNotificationMap@@QEAAKXZ",
+        "import": "KERNEL32!CreateIoCompletionPort"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!DeleteFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 78,
+    "xrefs": [
+      {
+        "from_ea": "0x140006190",
+        "from_func": "0x140005f7c",
+        "from_func_name": "?ArchiveAutoDelete@@YAHPEBGKH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14000dcfc",
+        "from_func": "0x14000d79c",
+        "from_func_name": "?ReAssignMessage@@YAKPEBG_KPEAU_FAX_REASSIGN_INFO@@PEAPEAXK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14000ddc4",
+        "from_func": "0x14000d79c",
+        "from_func_name": "?ReAssignMessage@@YAKPEBG_KPEAU_FAX_REASSIGN_INFO@@PEAPEAXK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001cd71",
+        "from_func": "0x14001cb80",
+        "from_func_name": "FAX_RemoveMessage",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001df43",
+        "from_func": "0x14001cf70",
+        "from_func_name": "FAX_SendDocumentEx",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001e0aa",
+        "from_func": "0x14001cf70",
+        "from_func_name": "FAX_SendDocumentEx",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001e8d6",
+        "from_func": "0x14001e140",
+        "from_func_name": "FAX_SetActivityLoggingConfiguration",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001e9d4",
+        "from_func": "0x14001e140",
+        "from_func_name": "FAX_SetActivityLoggingConfiguration",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140021ae7",
+        "from_func": "0x140021530",
+        "from_func_name": "FAX_StartCopyToServer",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002853c",
+        "from_func": "0x140028424",
+        "from_func_name": "DeleteLogActivityFile",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002c877",
+        "from_func": "0x14002c70c",
+        "from_func_name": "?CloseFaxHandle@@YAXPEAU_HANDLE_ENTRY@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002d285",
+        "from_func": "0x14002cfcc",
+        "from_func_name": "?ArchiveOutboundJob@@YAHPEBU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002e18a",
+        "from_func": "0x14002dee0",
+        "from_func_name": "CreateCoverpageTiffFile",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002e24e",
+        "from_func": "0x14002dee0",
+        "from_func_name": "CreateCoverpageTiffFile",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002ed73",
+        "from_func": "0x14002eb78",
+        "from_func_name": "?CreateTiffFile@@YAHPEAU_JOB_QUEUE@@PEBGPEAGK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002ef07",
+        "from_func": "0x14002eb78",
+        "from_func_name": "?CreateTiffFile@@YAHPEAU_JOB_QUEUE@@PEBGPEAGK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002ef5c",
+        "from_func": "0x14002eb78",
+        "from_func_name": "?CreateTiffFile@@YAHPEAU_JOB_QUEUE@@PEBGPEAGK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002f0d5",
+        "from_func": "0x14002efb8",
+        "from_func_name": "?CreateTiffFileForJob@@YAHPEAU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002f296",
+        "from_func": "0x14002f168",
+        "from_func_name": "?CreateTiffFileForPreview@@YAHPEAU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003267f",
+        "from_func": "0x140031b6c",
+        "from_func_name": "?HandleFailedSendJob@@YAHPEAU_JOB_ENTRY@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140037551",
+        "from_func": "0x140036eb4",
+        "from_func_name": "?CommitQueueEntry@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140037ea9",
+        "from_func": "0x140037cd4",
+        "from_func_name": "?DeleteQueueFiles@@YAHPEBG@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140038b29",
+        "from_func": "0x1400388d0",
+        "from_func_name": "?GetMergedFileSize@@YAKPEBGKPEBU_FAX_COVERPAGE_INFO_EXW@@PEBU_FAX_PERSONAL_PROFILEW@@2@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003a8e4",
+        "from_func": "0x14003a754",
+        "from_func_name": "?ReadJobQueueFile@@YAHPEBGPEAPEAU_JOB_QUEUE_FILE@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003aeea",
+        "from_func": "0x14003ac78",
+        "from_func_name": "?RemoveParentJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003af7e",
+        "from_func": "0x14003ac78",
+        "from_func_name": "?RemoveParentJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b025",
+        "from_func": "0x14003ac78",
+        "from_func_name": "?RemoveParentJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b4c3",
+        "from_func": "0x14003b2fc",
+        "from_func_name": "?RemoveReceiveJob@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b56f",
+        "from_func": "0x14003b2fc",
+        "from_func_name": "?RemoveReceiveJob@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b600",
+        "from_func": "0x14003b2fc",
+        "from_func_name": "?RemoveReceiveJob@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b6e7",
+        "from_func": "0x14003b2fc",
+        "from_func_name": "?RemoveReceiveJob@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003ba0f",
+        "from_func": "0x14003b880",
+        "from_func_name": "?RemoveRecipientJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003baa9",
+        "from_func": "0x14003b880",
+        "from_func_name": "?RemoveRecipientJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003bb40",
+        "from_func": "0x14003b880",
+        "from_func_name": "?RemoveRecipientJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003d137",
+        "from_func": "0x14003d010",
+        "from_func_name": "?RestoreRecipientJob@@YAHPEBG@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14004072d",
+        "from_func": "0x14003ed20",
+        "from_func_name": "?FaxReceiveThread@@YAKPEAU_FAX_RECEIVE_ITEM@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x1400415c8",
+        "from_func": "0x14003ed20",
+        "from_func_name": "?FaxReceiveThread@@YAKPEAU_FAX_RECEIVE_ITEM@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140042c63",
+        "from_func": "0x140042b40",
+        "from_func_name": "?FaxRouteDeleteFile@@YAJKPEBG@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14006dd5e",
+        "from_func": "0x14006d8b0",
+        "from_func_name": "CheckToSeeIfSameDir",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140006190",
+        "from_func": "0x140005f7c",
+        "from_func_name": "?ArchiveAutoDelete@@YAHPEBGKH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14000dcfc",
+        "from_func": "0x14000d79c",
+        "from_func_name": "?ReAssignMessage@@YAKPEBG_KPEAU_FAX_REASSIGN_INFO@@PEAPEAXK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14000ddc4",
+        "from_func": "0x14000d79c",
+        "from_func_name": "?ReAssignMessage@@YAKPEBG_KPEAU_FAX_REASSIGN_INFO@@PEAPEAXK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001cd71",
+        "from_func": "0x14001cb80",
+        "from_func_name": "FAX_RemoveMessage",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001df43",
+        "from_func": "0x14001cf70",
+        "from_func_name": "FAX_SendDocumentEx",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001e0aa",
+        "from_func": "0x14001cf70",
+        "from_func_name": "FAX_SendDocumentEx",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001e8d6",
+        "from_func": "0x14001e140",
+        "from_func_name": "FAX_SetActivityLoggingConfiguration",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14001e9d4",
+        "from_func": "0x14001e140",
+        "from_func_name": "FAX_SetActivityLoggingConfiguration",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140021ae7",
+        "from_func": "0x140021530",
+        "from_func_name": "FAX_StartCopyToServer",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002853c",
+        "from_func": "0x140028424",
+        "from_func_name": "DeleteLogActivityFile",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002c877",
+        "from_func": "0x14002c70c",
+        "from_func_name": "?CloseFaxHandle@@YAXPEAU_HANDLE_ENTRY@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002d285",
+        "from_func": "0x14002cfcc",
+        "from_func_name": "?ArchiveOutboundJob@@YAHPEBU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002e18a",
+        "from_func": "0x14002dee0",
+        "from_func_name": "CreateCoverpageTiffFile",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002e24e",
+        "from_func": "0x14002dee0",
+        "from_func_name": "CreateCoverpageTiffFile",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002ed73",
+        "from_func": "0x14002eb78",
+        "from_func_name": "?CreateTiffFile@@YAHPEAU_JOB_QUEUE@@PEBGPEAGK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002ef07",
+        "from_func": "0x14002eb78",
+        "from_func_name": "?CreateTiffFile@@YAHPEAU_JOB_QUEUE@@PEBGPEAGK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002ef5c",
+        "from_func": "0x14002eb78",
+        "from_func_name": "?CreateTiffFile@@YAHPEAU_JOB_QUEUE@@PEBGPEAGK@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002f0d5",
+        "from_func": "0x14002efb8",
+        "from_func_name": "?CreateTiffFileForJob@@YAHPEAU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14002f296",
+        "from_func": "0x14002f168",
+        "from_func_name": "?CreateTiffFileForPreview@@YAHPEAU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003267f",
+        "from_func": "0x140031b6c",
+        "from_func_name": "?HandleFailedSendJob@@YAHPEAU_JOB_ENTRY@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140037551",
+        "from_func": "0x140036eb4",
+        "from_func_name": "?CommitQueueEntry@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140037ea9",
+        "from_func": "0x140037cd4",
+        "from_func_name": "?DeleteQueueFiles@@YAHPEBG@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140038b29",
+        "from_func": "0x1400388d0",
+        "from_func_name": "?GetMergedFileSize@@YAKPEBGKPEBU_FAX_COVERPAGE_INFO_EXW@@PEBU_FAX_PERSONAL_PROFILEW@@2@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003a8e4",
+        "from_func": "0x14003a754",
+        "from_func_name": "?ReadJobQueueFile@@YAHPEBGPEAPEAU_JOB_QUEUE_FILE@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003aeea",
+        "from_func": "0x14003ac78",
+        "from_func_name": "?RemoveParentJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003af7e",
+        "from_func": "0x14003ac78",
+        "from_func_name": "?RemoveParentJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b025",
+        "from_func": "0x14003ac78",
+        "from_func_name": "?RemoveParentJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b4c3",
+        "from_func": "0x14003b2fc",
+        "from_func_name": "?RemoveReceiveJob@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b56f",
+        "from_func": "0x14003b2fc",
+        "from_func_name": "?RemoveReceiveJob@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b600",
+        "from_func": "0x14003b2fc",
+        "from_func_name": "?RemoveReceiveJob@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003b6e7",
+        "from_func": "0x14003b2fc",
+        "from_func_name": "?RemoveReceiveJob@@YAHPEAU_JOB_QUEUE@@H@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003ba0f",
+        "from_func": "0x14003b880",
+        "from_func_name": "?RemoveRecipientJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003baa9",
+        "from_func": "0x14003b880",
+        "from_func_name": "?RemoveRecipientJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003bb40",
+        "from_func": "0x14003b880",
+        "from_func_name": "?RemoveRecipientJob@@YAHPEAU_JOB_QUEUE@@HH@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14003d137",
+        "from_func": "0x14003d010",
+        "from_func_name": "?RestoreRecipientJob@@YAHPEBG@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14004072d",
+        "from_func": "0x14003ed20",
+        "from_func_name": "?FaxReceiveThread@@YAKPEAU_FAX_RECEIVE_ITEM@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x1400415c8",
+        "from_func": "0x14003ed20",
+        "from_func_name": "?FaxReceiveThread@@YAKPEAU_FAX_RECEIVE_ITEM@@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140042c63",
+        "from_func": "0x140042b40",
+        "from_func_name": "?FaxRouteDeleteFile@@YAJKPEBG@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x14006dd5e",
+        "from_func": "0x14006d8b0",
+        "from_func_name": "CheckToSeeIfSameDir",
+        "import": "KERNEL32!DeleteFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetComputerNameW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140025339",
+        "from_func": "0x1400252a8",
+        "from_func_name": "?RpcBindToFaxClient@@YAKPEBG0HPEAPEAX@Z",
+        "import": "KERNEL32!GetComputerNameW"
+      },
+      {
+        "from_ea": "0x140064196",
+        "from_func": "0x1400640b0",
+        "from_func_name": "PrepareReceiptBody",
+        "import": "KERNEL32!GetComputerNameW"
+      },
+      {
+        "from_ea": "0x140025339",
+        "from_func": "0x1400252a8",
+        "from_func_name": "?RpcBindToFaxClient@@YAKPEBG0HPEAPEAX@Z",
+        "import": "KERNEL32!GetComputerNameW"
+      },
+      {
+        "from_ea": "0x140064196",
+        "from_func": "0x1400640b0",
+        "from_func_name": "PrepareReceiptBody",
+        "import": "KERNEL32!GetComputerNameW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140002b9b",
+        "from_func": "0x140002b54",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1400687e1",
+        "from_func": "0x1400687a8",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140068b85",
+        "from_func": "0x140068b4c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140002b9b",
+        "from_func": "0x140002b54",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1400687e1",
+        "from_func": "0x1400687a8",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140068b85",
+        "from_func": "0x140068b4c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 16,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c0a6",
+        "from_func": "0x14000bf38",
+        "from_func_name": "?SearchMessage@CFaxArchiving@@QEAAK_KHPEAXPEAGK@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14003f38e",
+        "from_func": "0x14003ed20",
+        "from_func_name": "?FaxReceiveThread@@YAKPEAU_FAX_RECEIVE_ITEM@@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x140042452",
+        "from_func": "0x1400423a8",
+        "from_func_name": "?FaxRoute@@YAHPEAU_JOB_QUEUE@@PEBGPEAU_FAX_ROUTE@@PEAPEAU_ROUTE_FAILURE_INFO@@PEAK@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x140066e60",
+        "from_func": "0x140066db4",
+        "from_func_name": "MakeDirectory",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14006e241",
+        "from_func": "0x14006e160",
+        "from_func_name": "IsValidFaxFolder",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14006e9b1",
+        "from_func": "0x14006e6dc",
+        "from_func_name": "ValidateCoverpage",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14006ec4c",
+        "from_func": "0x14006e6dc",
+        "from_func_name": "ValidateCoverpage",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14006ec5e",
+        "from_func": "0x14006e6dc",
+        "from_func_name": "ValidateCoverpage",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14000c0a6",
+        "from_func": "0x14000bf38",
+        "from_func_name": "?SearchMessage@CFaxArchiving@@QEAAK_KHPEAXPEAGK@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14003f38e",
+        "from_func": "0x14003ed20",
+        "from_func_name": "?FaxReceiveThread@@YAKPEAU_FAX_RECEIVE_ITEM@@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x140042452",
+        "from_func": "0x1400423a8",
+        "from_func_name": "?FaxRoute@@YAHPEAU_JOB_QUEUE@@PEBGPEAU_FAX_ROUTE@@PEAPEAU_ROUTE_FAILURE_INFO@@PEAK@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x140066e60",
+        "from_func": "0x140066db4",
+        "from_func_name": "MakeDirectory",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14006e241",
+        "from_func": "0x14006e160",
+        "from_func_name": "IsValidFaxFolder",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14006e9b1",
+        "from_func": "0x14006e6dc",
+        "from_func_name": "ValidateCoverpage",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14006ec4c",
+        "from_func": "0x14006e6dc",
+        "from_func_name": "ValidateCoverpage",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x14006ec5e",
+        "from_func": "0x14006e6dc",
+        "from_func_name": "ValidateCoverpage",
+        "import": "KERNEL32!GetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetFinalPathNameByHandleW",
+    "tags": [
+      "reparse_path"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14006a504",
+        "from_func": "0x14006a46c",
+        "from_func_name": "?IsValidFilePath@@YAHPEAGPEAX@Z",
+        "import": "KERNEL32!GetFinalPathNameByHandleW"
+      },
+      {
+        "from_ea": "0x14006a504",
+        "from_func": "0x14006a46c",
+        "from_func_name": "?IsValidFilePath@@YAHPEAGPEAX@Z",
+        "import": "KERNEL32!GetFinalPathNameByHandleW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetQueuedCompletionStatus",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x1400305a4",
+        "from_func": "0x140030520",
+        "from_func_name": "?FaxStatusThread@@YAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14004cba1",
+        "from_func": "0x14004caf0",
+        "from_func_name": "?TapiWorkerThread@@YAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x1400561c5",
+        "from_func": "0x140056150",
+        "from_func_name": "?FaxDispatchEventThread@@YAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140056377",
+        "from_func": "0x1400562f0",
+        "from_func_name": "?FaxSendEventThread@@YAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14005995c",
+        "from_func": "0x1400598e0",
+        "from_func_name": "?ExtNotificationThread@CNotificationMap@@CAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x1400305a4",
+        "from_func": "0x140030520",
+        "from_func_name": "?FaxStatusThread@@YAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14004cba1",
+        "from_func": "0x14004caf0",
+        "from_func_name": "?TapiWorkerThread@@YAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x1400561c5",
+        "from_func": "0x140056150",
+        "from_func_name": "?FaxDispatchEventThread@@YAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140056377",
+        "from_func": "0x1400562f0",
+        "from_func_name": "?FaxSendEventThread@@YAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14005995c",
+        "from_func": "0x1400598e0",
+        "from_func_name": "?ExtNotificationThread@CNotificationMap@@CAKPEAX@Z",
+        "import": "KERNEL32!GetQueuedCompletionStatus"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!InitOnceComplete",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140080852",
+        "from_func": "0x14008079c",
+        "from_func_name": "??1Completer@?$static_lazy@VUalPrintLogging@@@details@wil@@QEAA@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x140080b8f",
+        "from_func": "0x140080acc",
+        "from_func_name": "?Instance@UalPrintTelemetry@@KAPEAV1@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x140080852",
+        "from_func": "0x14008079c",
+        "from_func_name": "??1Completer@?$static_lazy@VUalPrintLogging@@@details@wil@@QEAA@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      },
+      {
+        "from_ea": "0x140080b8f",
+        "from_func": "0x140080acc",
+        "from_func_name": "?Instance@UalPrintTelemetry@@KAPEAV1@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140081540",
+        "from_func": "0x140081508",
+        "from_func_name": "UalOpenSession",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x140081540",
+        "from_func": "0x140081508",
+        "from_func_name": "UalOpenSession",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x140004242",
+        "from_func": "0x140003d5c",
+        "from_func_name": "?LoadDeviceProviders@@YAHPEAU_REG_FAX_SERVICE@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1400439bb",
+        "from_func": "0x140043484",
+        "from_func_name": "?InitializeRouting@@YAHPEAU_REG_FAX_SERVICE@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x140070b74",
+        "from_func": "0x140070b0c",
+        "from_func_name": "GetLicensingPolicyValue",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x140073e4c",
+        "from_func": "0x140073c4c",
+        "from_func_name": "AppendLocalizedDirName",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x14007605f",
+        "from_func": "0x140075fb4",
+        "from_func_name": "GetResInst",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1400762bf",
+        "from_func": "0x1400760cc",
+        "from_func_name": "LoadLibraryFromLocalFolder",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x140004242",
+        "from_func": "0x140003d5c",
+        "from_func_name": "?LoadDeviceProviders@@YAHPEAU_REG_FAX_SERVICE@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1400439bb",
+        "from_func": "0x140043484",
+        "from_func_name": "?InitializeRouting@@YAHPEAU_REG_FAX_SERVICE@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x140070b74",
+        "from_func": "0x140070b0c",
+        "from_func_name": "GetLicensingPolicyValue",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x140073e4c",
+        "from_func": "0x140073c4c",
+        "from_func_name": "AppendLocalizedDirName",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x14007605f",
+        "from_func": "0x140075fb4",
+        "from_func_name": "GetResInst",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1400762bf",
+        "from_func": "0x1400760cc",
+        "from_func_name": "LoadLibraryFromLocalFolder",
+        "import": "KERNEL32!LoadLibraryW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!MoveFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14002be38",
+        "from_func": "0x14002bb00",
+        "from_func_name": "ReplaceLogActivityFile",
+        "import": "KERNEL32!MoveFileW"
+      },
+      {
+        "from_ea": "0x14002be38",
+        "from_func": "0x14002bb00",
+        "from_func_name": "ReplaceLogActivityFile",
+        "import": "KERNEL32!MoveFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!PostQueuedCompletionStatus",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 32,
+    "xrefs": [
+      {
+        "from_ea": "0x140011ef9",
+        "from_func": "0x14001186c",
+        "from_func_name": "FAXStartServerNotificationInternal",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140016705",
+        "from_func": "0x1400164a0",
+        "from_func_name": "FAX_AnswerCall",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x1400256d5",
+        "from_func": "0x1400255a0",
+        "from_func_name": "?SetServiceIsDownFlagThread@@YAKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140030de2",
+        "from_func": "0x140030520",
+        "from_func_name": "?FaxStatusThread@@YAKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140046f22",
+        "from_func": "0x140046a7c",
+        "from_func_name": "?EndFaxSvc@@YAXK@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140047f87",
+        "from_func": "0x140047edc",
+        "from_func_name": "?NotifyServiceThreadsToTerminate@@YAHXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140047fe0",
+        "from_func": "0x140047edc",
+        "from_func_name": "?NotifyServiceThreadsToTerminate@@YAHXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14004803d",
+        "from_func": "0x140047edc",
+        "from_func_name": "?NotifyServiceThreadsToTerminate@@YAHXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140048096",
+        "from_func": "0x140047edc",
+        "from_func_name": "?NotifyServiceThreadsToTerminate@@YAHXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140054e5d",
+        "from_func": "0x140054d38",
+        "from_func_name": "?AddEvent@CClient@@QEAAKPEAVCFaxEvent@@@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140055a63",
+        "from_func": "0x14005584c",
+        "from_func_name": "?CreateFaxEvent@@YAHKKKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140055fc0",
+        "from_func": "0x140055e60",
+        "from_func_name": "?DelEvent@CClient@@QEAAKXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14005650f",
+        "from_func": "0x1400562f0",
+        "from_func_name": "?FaxSendEventThread@@YAKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14005795b",
+        "from_func": "0x14005783c",
+        "from_func_name": "?PostFaxEventEx@@YAKPEAU_FAX_EVENT_EX_1@@KPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140059a5e",
+        "from_func": "0x1400598e0",
+        "from_func_name": "?ExtNotificationThread@CNotificationMap@@CAKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14005a487",
+        "from_func": "0x14005a340",
+        "from_func_name": "?Notify@CLocalNotificationSink@@UEAAJKPEBG0PEAXPEAEKPEAH@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140011ef9",
+        "from_func": "0x14001186c",
+        "from_func_name": "FAXStartServerNotificationInternal",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140016705",
+        "from_func": "0x1400164a0",
+        "from_func_name": "FAX_AnswerCall",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x1400256d5",
+        "from_func": "0x1400255a0",
+        "from_func_name": "?SetServiceIsDownFlagThread@@YAKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140030de2",
+        "from_func": "0x140030520",
+        "from_func_name": "?FaxStatusThread@@YAKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140046f22",
+        "from_func": "0x140046a7c",
+        "from_func_name": "?EndFaxSvc@@YAXK@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140047f87",
+        "from_func": "0x140047edc",
+        "from_func_name": "?NotifyServiceThreadsToTerminate@@YAHXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140047fe0",
+        "from_func": "0x140047edc",
+        "from_func_name": "?NotifyServiceThreadsToTerminate@@YAHXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14004803d",
+        "from_func": "0x140047edc",
+        "from_func_name": "?NotifyServiceThreadsToTerminate@@YAHXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140048096",
+        "from_func": "0x140047edc",
+        "from_func_name": "?NotifyServiceThreadsToTerminate@@YAHXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140054e5d",
+        "from_func": "0x140054d38",
+        "from_func_name": "?AddEvent@CClient@@QEAAKPEAVCFaxEvent@@@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140055a63",
+        "from_func": "0x14005584c",
+        "from_func_name": "?CreateFaxEvent@@YAHKKKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140055fc0",
+        "from_func": "0x140055e60",
+        "from_func_name": "?DelEvent@CClient@@QEAAKXZ",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14005650f",
+        "from_func": "0x1400562f0",
+        "from_func_name": "?FaxSendEventThread@@YAKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14005795b",
+        "from_func": "0x14005783c",
+        "from_func_name": "?PostFaxEventEx@@YAKPEAU_FAX_EVENT_EX_1@@KPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x140059a5e",
+        "from_func": "0x1400598e0",
+        "from_func_name": "?ExtNotificationThread@CNotificationMap@@CAKPEAX@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      },
+      {
+        "from_ea": "0x14005a487",
+        "from_func": "0x14005a340",
+        "from_func_name": "?Notify@CLocalNotificationSink@@UEAAJKPEBG0PEAXPEAEKPEAH@Z",
+        "import": "KERNEL32!PostQueuedCompletionStatus"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!ReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 22,
+    "xrefs": [
+      {
+        "from_ea": "0x14001c542",
+        "from_func": "0x14001c420",
+        "from_func_name": "FAX_ReadFile",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140038c74",
+        "from_func": "0x140038bac",
+        "from_func_name": "GetQueueFileHashAndData",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140038d6a",
+        "from_func": "0x140038bac",
+        "from_func_name": "GetQueueFileHashAndData",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140038eb7",
+        "from_func": "0x140038bac",
+        "from_func_name": "GetQueueFileHashAndData",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140039009",
+        "from_func": "0x140038f94",
+        "from_func_name": "GetQueueFileVersion",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x14003ab9c",
+        "from_func": "0x14003aa50",
+        "from_func_name": "ReadLegacyJobQueueFile",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140079844",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140079919",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140079e1e",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140079e9d",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x14007a12c",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x14001c542",
+        "from_func": "0x14001c420",
+        "from_func_name": "FAX_ReadFile",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140038c74",
+        "from_func": "0x140038bac",
+        "from_func_name": "GetQueueFileHashAndData",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140038d6a",
+        "from_func": "0x140038bac",
+        "from_func_name": "GetQueueFileHashAndData",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140038eb7",
+        "from_func": "0x140038bac",
+        "from_func_name": "GetQueueFileHashAndData",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140039009",
+        "from_func": "0x140038f94",
+        "from_func_name": "GetQueueFileVersion",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x14003ab9c",
+        "from_func": "0x14003aa50",
+        "from_func_name": "ReadLegacyJobQueueFile",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140079844",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140079919",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140079e1e",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x140079e9d",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      },
+      {
+        "from_ea": "0x14007a12c",
+        "from_func": "0x14007965c",
+        "from_func_name": "RenderCoverPage",
+        "import": "KERNEL32!ReadFile"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!RemoveDirectoryW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000bec0",
+        "from_func": "0x14000bde0",
+        "from_func_name": "?RemoveArchiveFolder@CFaxArchiving@@AEAAKPEBGH@Z",
+        "import": "KERNEL32!RemoveDirectoryW"
+      },
+      {
+        "from_ea": "0x14000bec0",
+        "from_func": "0x14000bde0",
+        "from_func_name": "?RemoveArchiveFolder@CFaxArchiving@@AEAAKPEBGH@Z",
+        "import": "KERNEL32!RemoveDirectoryW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!SetFileInformationByHandle",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14006c06f",
+        "from_func": "0x14006bff4",
+        "from_func_name": "?SafeDeleteFileByHandle@@YAHPEAG@Z",
+        "import": "KERNEL32!SetFileInformationByHandle"
+      },
+      {
+        "from_ea": "0x14006c06f",
+        "from_func": "0x14006bff4",
+        "from_func_name": "?SafeDeleteFileByHandle@@YAHPEAG@Z",
+        "import": "KERNEL32!SetFileInformationByHandle"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!SetFilePointer",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x1400282e7",
+        "from_func": "0x140027f80",
+        "from_func_name": "CreateLogFile",
+        "import": "KERNEL32!SetFilePointer"
+      },
+      {
+        "from_ea": "0x140038c19",
+        "from_func": "0x140038bac",
+        "from_func_name": "GetQueueFileHashAndData",
+        "import": "KERNEL32!SetFilePointer"
+      },
+      {
+        "from_ea": "0x14003aaaf",
+        "from_func": "0x14003aa50",
+        "from_func_name": "ReadLegacyJobQueueFile",
+        "import": "KERNEL32!SetFilePointer"
+      },
+      {
+        "from_ea": "0x140071e88",
+        "from_func": "0x140071d04",
+        "from_func_name": "debugOpenLogFile",
+        "import": "KERNEL32!SetFilePointer"
+      },
+      {
+        "from_ea": "0x1400282e7",
+        "from_func": "0x140027f80",
+        "from_func_name": "CreateLogFile",
+        "import": "KERNEL32!SetFilePointer"
+      },
+      {
+        "from_ea": "0x140038c19",
+        "from_func": "0x140038bac",
+        "from_func_name": "GetQueueFileHashAndData",
+        "import": "KERNEL32!SetFilePointer"
+      },
+      {
+        "from_ea": "0x14003aaaf",
+        "from_func": "0x14003aa50",
+        "from_func_name": "ReadLegacyJobQueueFile",
+        "import": "KERNEL32!SetFilePointer"
+      },
+      {
+        "from_ea": "0x140071e88",
+        "from_func": "0x140071d04",
+        "from_func_name": "debugOpenLogFile",
+        "import": "KERNEL32!SetFilePointer"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!SetFileTime",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14002c00c",
+        "from_func": "0x14002bf54",
+        "from_func_name": "SetFileToCurrentTime",
+        "import": "KERNEL32!SetFileTime"
+      },
+      {
+        "from_ea": "0x14002c00c",
+        "from_func": "0x14002bf54",
+        "from_func_name": "SetFileToCurrentTime",
+        "import": "KERNEL32!SetFileTime"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!SetProcessMitigationPolicy",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140023710",
+        "from_func": "0x1400236a0",
+        "from_func_name": "?FaxServiceMain@@YAXKPEAPEAG@Z",
+        "import": "KERNEL32!SetProcessMitigationPolicy"
+      },
+      {
+        "from_ea": "0x140023710",
+        "from_func": "0x1400236a0",
+        "from_func_name": "?FaxServiceMain@@YAXKPEAPEAG@Z",
+        "import": "KERNEL32!SetProcessMitigationPolicy"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!WriteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 20,
+    "xrefs": [
+      {
+        "from_ea": "0x14002239a",
+        "from_func": "0x140022290",
+        "from_func_name": "FAX_WriteFile",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140027efd",
+        "from_func": "0x140027a58",
+        "from_func_name": "?CreateLogDB@@YAKPEBGPEAPEAX1@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x14002815c",
+        "from_func": "0x140027f80",
+        "from_func_name": "CreateLogFile",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140028201",
+        "from_func": "0x140027f80",
+        "from_func_name": "CreateLogFile",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x14002b818",
+        "from_func": "0x14002b684",
+        "from_func_name": "?LogInboundActivity@@YAHPEAU_JOB_QUEUE@@PEBU_FSPI_JOB_STATUS@@@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x14002ba56",
+        "from_func": "0x14002b8c0",
+        "from_func_name": "?LogOutboundActivity@@YAHPEAU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140036d2f",
+        "from_func": "0x140036c44",
+        "from_func_name": "CommitHashedQueueEntry",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140036d90",
+        "from_func": "0x140036c44",
+        "from_func_name": "CommitHashedQueueEntry",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140036def",
+        "from_func": "0x140036c44",
+        "from_func_name": "CommitHashedQueueEntry",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140036e3d",
+        "from_func": "0x140036c44",
+        "from_func_name": "CommitHashedQueueEntry",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x14002239a",
+        "from_func": "0x140022290",
+        "from_func_name": "FAX_WriteFile",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140027efd",
+        "from_func": "0x140027a58",
+        "from_func_name": "?CreateLogDB@@YAKPEBGPEAPEAX1@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x14002815c",
+        "from_func": "0x140027f80",
+        "from_func_name": "CreateLogFile",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140028201",
+        "from_func": "0x140027f80",
+        "from_func_name": "CreateLogFile",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x14002b818",
+        "from_func": "0x14002b684",
+        "from_func_name": "?LogInboundActivity@@YAHPEAU_JOB_QUEUE@@PEBU_FSPI_JOB_STATUS@@@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x14002ba56",
+        "from_func": "0x14002b8c0",
+        "from_func_name": "?LogOutboundActivity@@YAHPEAU_JOB_QUEUE@@@Z",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140036d2f",
+        "from_func": "0x140036c44",
+        "from_func_name": "CommitHashedQueueEntry",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140036d90",
+        "from_func": "0x140036c44",
+        "from_func_name": "CommitHashedQueueEntry",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140036def",
+        "from_func": "0x140036c44",
+        "from_func_name": "CommitHashedQueueEntry",
+        "import": "KERNEL32!WriteFile"
+      },
+      {
+        "from_ea": "0x140036e3d",
+        "from_func": "0x140036c44",
+        "from_func_name": "CommitHashedQueueEntry",
+        "import": "KERNEL32!WriteFile"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcImpersonateClient",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x140045310",
+        "from_func": "0x1400452ac",
+        "from_func_name": "?FaxSvcAccessCheck@@YAKKPEAHPEAKH@Z",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x1400455d0",
+        "from_func": "0x140045560",
+        "from_func_name": "?GetClientUserName@@YAPEAGXZ",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x1400457dd",
+        "from_func": "0x140045798",
+        "from_func_name": "?GetClientUserSID@@YAPEAXXZ",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x1400467f1",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x140081341",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x140045310",
+        "from_func": "0x1400452ac",
+        "from_func_name": "?FaxSvcAccessCheck@@YAKKPEAHPEAKH@Z",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x1400455d0",
+        "from_func": "0x140045560",
+        "from_func_name": "?GetClientUserName@@YAPEAGXZ",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x1400457dd",
+        "from_func": "0x140045798",
+        "from_func_name": "?GetClientUserSID@@YAPEAXXZ",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x1400467f1",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x140081341",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "RPCRT4!RpcImpersonateClient"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcRevertToSelf",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x140045506",
+        "from_func": "0x1400452ac",
+        "from_func_name": "?FaxSvcAccessCheck@@YAKKPEAHPEAKH@Z",
+        "import": "RPCRT4!RpcRevertToSelf"
+      },
+      {
+        "from_ea": "0x140045713",
+        "from_func": "0x140045560",
+        "from_func_name": "?GetClientUserName@@YAPEAGXZ",
+        "import": "RPCRT4!RpcRevertToSelf"
+      },
+      {
+        "from_ea": "0x140045869",
+        "from_func": "0x140045798",
+        "from_func_name": "?GetClientUserSID@@YAPEAXXZ",
+        "import": "RPCRT4!RpcRevertToSelf"
+      },
+      {
+        "from_ea": "0x14004687e",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "RPCRT4!RpcRevertToSelf"
+      },
+      {
+        "from_ea": "0x1400468ba",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "RPCRT4!RpcRevertToSelf"
+      },
+      {
+        "from_ea": "0x140045506",
+        "from_func": "0x1400452ac",
+        "from_func_name": "?FaxSvcAccessCheck@@YAKKPEAHPEAKH@Z",
+        "import": "RPCRT4!RpcRevertToSelf"
+      },
+      {
+        "from_ea": "0x140045713",
+        "from_func": "0x140045560",
+        "from_func_name": "?GetClientUserName@@YAPEAGXZ",
+        "import": "RPCRT4!RpcRevertToSelf"
+      },
+      {
+        "from_ea": "0x140045869",
+        "from_func": "0x140045798",
+        "from_func_name": "?GetClientUserSID@@YAPEAXXZ",
+        "import": "RPCRT4!RpcRevertToSelf"
+      },
+      {
+        "from_ea": "0x14004687e",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "RPCRT4!RpcRevertToSelf"
+      },
+      {
+        "from_ea": "0x1400468ba",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "RPCRT4!RpcRevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcRevertToSelfEx",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140081384",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x1400814d9",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x140081384",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x1400814d9",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcStringBindingComposeW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400253af",
+        "from_func": "0x1400252a8",
+        "from_func_name": "?RpcBindToFaxClient@@YAKPEBG0HPEAPEAX@Z",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      },
+      {
+        "from_ea": "0x1400253af",
+        "from_func": "0x1400252a8",
+        "from_func_name": "?RpcBindToFaxClient@@YAKPEBG0HPEAPEAX@Z",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x14008184b",
+        "from_func": "0x1400817f4",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x1400023bd",
+        "from_func": "0x1400023bd",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x14008184b",
+        "from_func": "0x1400817f4",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002912",
+        "from_func": "0x140002912",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "msvcrt!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400022c8",
+        "from_func": "0x1400022c8",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "msvcrt!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002c4f",
+        "from_func": "0x140002c4f",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!_commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140001fb6",
+        "from_func": "0x140001f10",
+        "from_func_name": "pre_c_init",
+        "import": "msvcrt!_commode"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x1400024c0",
+        "from_func": "0x140002480",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x140002660",
+        "from_func": "0x140002628",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x1400024c0",
+        "from_func": "0x140002480",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x140002660",
+        "from_func": "0x140002628",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x140099a9c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlIpv4StringToAddressExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140081460",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "ntdll!RtlIpv4StringToAddressExW"
+      },
+      {
+        "from_ea": "0x140081460",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "ntdll!RtlIpv4StringToAddressExW"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlIpv6StringToAddressExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140081432",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "ntdll!RtlIpv6StringToAddressExW"
+      },
+      {
+        "from_ea": "0x140081432",
+        "from_func": "0x1400812e8",
+        "from_func_name": "UalCollectData",
+        "import": "ntdll!RtlIpv6StringToAddressExW"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400024df",
+        "from_func": "0x140002480",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x14000267f",
+        "from_func": "0x140002628",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x1400024df",
+        "from_func": "0x140002480",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x14000267f",
+        "from_func": "0x140002628",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlValidRelativeSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400466ed",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "ntdll!RtlValidRelativeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x1400466ed",
+        "from_func": "0x140046610",
+        "from_func_name": "FAX_SetSecurityEx2",
+        "import": "ntdll!RtlValidRelativeSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000252c",
+        "from_func": "0x140002480",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x1400026cc",
+        "from_func": "0x140002628",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x14000252c",
+        "from_func": "0x140002480",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x1400026cc",
+        "from_func": "0x140002628",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!WinSqmIncrementDWORD",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001d678",
+        "from_func": "0x14001cf70",
+        "from_func_name": "FAX_SendDocumentEx",
+        "import": "ntdll!WinSqmIncrementDWORD"
+      },
+      {
+        "from_ea": "0x14001d678",
+        "from_func": "0x14001cf70",
+        "from_func_name": "FAX_SendDocumentEx",
+        "import": "ntdll!WinSqmIncrementDWORD"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CLSIDFromString",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140066cfc",
+        "from_func": "0x140066c9c",
+        "from_func_name": "IsValidGUID",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x140066cfc",
+        "from_func": "0x140066c9c",
+        "from_func_name": "IsValidGUID",
+        "import": "ole32!CLSIDFromString"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemFree",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400148f3",
+        "from_func": "0x1400147e0",
+        "from_func_name": "?GlobalRoutingInfoMethodEnumerator@@YAHPEAU_ROUTING_METHOD@@PEAX@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x140014f79",
+        "from_func": "0x140014e30",
+        "from_func_name": "?RoutingMethodEnumerator@@YAHPEAU_ROUTING_METHOD@@PEAX@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1400148f3",
+        "from_func": "0x1400147e0",
+        "from_func_name": "?GlobalRoutingInfoMethodEnumerator@@YAHPEAU_ROUTING_METHOD@@PEAX@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x140014f79",
+        "from_func": "0x140014e30",
+        "from_func_name": "?RoutingMethodEnumerator@@YAHPEAU_ROUTING_METHOD@@PEAX@Z",
+        "import": "ole32!CoTaskMemFree"
+      }
+    ]
+  }
+]

@@ -1,0 +1,180 @@
+# FwpmProviderContextGetSecurityInfoByKey0
+
+- ea: `0x180056130`
+- end: `0x180056250`
+- name: `FwpmProviderContextGetSecurityInfoByKey0`
+- size: `288`
+- prototype: `NTSTATUS __stdcall(HANDLE engineHandle, const GUID *key, SECURITY_INFORMATION securityInfo, PSID *sidOwner, PSID *sidGroup, PACL *dacl, PACL *sacl, PSECURITY_DESCRIPTOR *securityDescriptor)`
+- caller_count: `0`
+- callee_count: `8`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callees
+
+- `0x180004904`
+- `0x1800050cc`
+- `0x180008440`
+- `0x180008f10`
+- `0x18000fccc`
+- `0x1800115b4`
+- `0x1800203c0`
+- `0x180056130`
+
+## import_xrefs
+
+- `ntoskrnl!KeGetCurrentIrql` at `0x180056184`
+- `ntoskrnl!KeGetCurrentIrql` at `0x180056184`
+
+## string_xrefs
+
+- `0x18005619a`: `FwpmProviderContextGetSecurityInfoByKey0`
+- `0x1800561dd`: `FwppProxyProviderContextGetSecurityInfoByKey`
+
+## pseudocode
+
+```c
+NTSTATUS __stdcall FwpmProviderContextGetSecurityInfoByKey0(
+        HANDLE engineHandle,
+        const GUID *key,
+        SECURITY_INFORMATION securityInfo,
+        PSID *sidOwner,
+        PSID *sidGroup,
+        PACL *dacl,
+        PACL *sacl,
+        PSECURITY_DESCRIPTOR *securityDescriptor)
+{
+  int v10; // r13d
+  __int64 v12; // rcx
+  __int64 v13; // r8
+  __int64 v14; // rax
+  int SecurityInfoByKey; // eax
+  __int64 v16; // rcx
+  __int64 Info; // rbx
+  PSECURITY_DESCRIPTOR SecurityDescriptor[2]; // [rsp+30h] [rbp-68h] BYREF
+
+  v10 = (int)key;
+  *(_OWORD *)SecurityDescriptor = 0;
+  if ( KeGetCurrentIrql() )
+  {
+    v13 = 3221225659LL;
+LABEL_3:
+    v14 = WfpReportAppErrorAsNtStatus(v12, (__int64)"FwpmProviderContextGetSecurityInfoByKey0", v13);
+    goto LABEL_9;
+  }
+  if ( !engineHandle || !securityDescriptor )
+  {
+    v13 = 3223453724LL;
+    goto LABEL_3;
+  }
+  SecurityInfoByKey = FwppProxyProviderContextGetSecurityInfoByKey(
+                        *(_QWORD *)engineHandle,
+                        *((_QWORD *)engineHandle + 1),
+                        v10,
+                        securityInfo,
+                        (__int64)SecurityDescriptor);
+  if ( SecurityInfoByKey >= 0 )
+  {
+    Info = FwppSecurityDescriptorGetInfo(SecurityDescriptor[1], securityInfo, sidOwner, sidGroup, dacl, sacl);
+    if ( !Info )
+    {
+      *securityDescriptor = SecurityDescriptor[1];
+      return WfpErrorToFwpErr(Info);
+    }
+    goto LABEL_10;
+  }
+  v14 = WfpReportSysErrorAsNtStatus(v16, (int)"FwppProxyProviderContextGetSecurityInfoByKey", SecurityInfoByKey);
+LABEL_9:
+  Info = v14;
+  if ( v14 )
+LABEL_10:
+    FwppDeepFree_GUID(SecurityDescriptor[1]);
+  return WfpErrorToFwpErr(Info);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180056130  push    rbx
+0x180056132  push    rbp
+0x180056133  push    rsi
+0x180056134  push    rdi
+0x180056135  push    r12
+0x180056137  push    r13
+0x180056139  push    r14
+0x18005613b  push    r15
+0x18005613d  sub     rsp, 58h
+0x180056141  mov     rax, cs:__security_cookie
+0x180056148  xor     rax, rsp
+0x18005614b  mov     [rsp+98h+var_58], rax
+0x180056150  mov     r14, [rsp+98h+sidGroup]
+0x180056158  xorps   xmm0, xmm0
+0x18005615b  mov     r15, [rsp+98h+dacl]
+0x180056163  mov     rbp, r9
+0x180056166  mov     r12, [rsp+98h+sacl]
+0x18005616e  mov     esi, r8d
+0x180056171  mov     rdi, [rsp+98h+securityDescriptor]
+0x180056179  mov     r13, rdx
+0x18005617c  movups  xmmword ptr [rsp+98h+SecurityDescriptor], xmm0
+0x180056181  mov     rbx, rcx
+0x180056184  call    cs:__imp_KeGetCurrentIrql
+0x18005618b  nop     dword ptr [rax+rax+00h]
+0x180056190  test    al, al
+0x180056192  jz      short loc_1800561A8
+0x180056194  mov     r8d, 0C00000BBh
+0x18005619a  lea     rdx, aFwpmproviderco_2; "FwpmProviderContextGetSecurityInfoByKey"...
+0x1800561a1  call    WfpReportAppErrorAsNtStatus
+0x1800561a6  jmp     short loc_1800561E9
+0x1800561a8  test    rbx, rbx
+0x1800561ab  jnz     short loc_1800561B5
+0x1800561ad  mov     r8d, 0C022001Ch
+0x1800561b3  jmp     short loc_18005619A
+0x1800561b5  test    rdi, rdi
+0x1800561b8  jz      short loc_1800561AD
+0x1800561ba  mov     rdx, [rbx+8]
+0x1800561be  lea     rax, [rsp+98h+SecurityDescriptor]
+0x1800561c3  mov     rcx, [rbx]
+0x1800561c6  mov     r9d, esi
+0x1800561c9  mov     r8, r13
+0x1800561cc  mov     [rsp+98h+Dacl], rax
+0x1800561d1  call    FwppProxyProviderContextGetSecurityInfoByKey
+0x1800561d6  test    eax, eax
+0x1800561d8  jns     short loc_180056222
+0x1800561da  mov     r8d, eax
+0x1800561dd  lea     rdx, aFwppproxyprovi_3; "FwppProxyProviderContextGetSecurityInfo"...
+0x1800561e4  call    WfpReportSysErrorAsNtStatus
+0x1800561e9  mov     rbx, rax
+0x1800561ec  test    rax, rax
+0x1800561ef  jz      short loc_1800561FB
+0x1800561f1  mov     rcx, [rsp+98h+SecurityDescriptor+8]
+0x1800561f6  call    FwppDeepFree_GUID
+0x1800561fb  mov     rcx, rbx
+0x1800561fe  call    WfpErrorToFwpErr
+0x180056203  mov     rcx, [rsp+98h+var_58]
+0x180056208  xor     rcx, rsp; StackCookie
+0x18005620b  call    __security_check_cookie
+0x180056210  add     rsp, 58h
+0x180056214  pop     r15
+0x180056216  pop     r14
+0x180056218  pop     r13
+0x18005621a  pop     r12
+0x18005621c  pop     rdi
+0x18005621d  pop     rsi
+0x18005621e  pop     rbp
+0x18005621f  pop     rbx
+0x180056220  retn
+0x180056222  mov     rcx, [rsp+98h+SecurityDescriptor+8]; SecurityDescriptor
+0x180056227  mov     r9, r14
+0x18005622a  mov     [rsp+98h+Sacl], r12; Sacl
+0x18005622f  mov     r8, rbp
+0x180056232  mov     edx, esi
+0x180056234  mov     [rsp+98h+Dacl], r15; Dacl
+0x180056239  call    FwppSecurityDescriptorGetInfo
+0x18005623e  mov     rbx, rax
+0x180056241  test    rax, rax
+0x180056244  jnz     short loc_1800561F1
+0x180056246  mov     rax, [rsp+98h+SecurityDescriptor+8]
+0x18005624b  mov     [rdi], rax
+0x18005624e  jmp     short loc_1800561FB
+```
