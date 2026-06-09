@@ -1,0 +1,532 @@
+[
+  {
+    "import": "RPCRT4!RpcImpersonateClient",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800019e0",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x1800019e0",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x180009320",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "RPCRT4!RpcImpersonateClient"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcRevertToSelfEx",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001a5b",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x180001a5b",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-crt-l1-1-0!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180003307",
+        "from_func": "0x1800032b0",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "api-ms-win-core-crt-l1-1-0!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180001d72",
+        "from_func": "0x180001d72",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "api-ms-win-core-crt-l1-1-0!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180003307",
+        "from_func": "0x1800032b0",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "api-ms-win-core-crt-l1-1-0!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x1800092e4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-crt-l1-1-0!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000202f",
+        "from_func": "0x180001fe8",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180002b42",
+        "from_func": "0x180002ad0",
+        "from_func_name": "SspirGetInprocDispatchTable",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000202f",
+        "from_func": "0x180001fe8",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180002b42",
+        "from_func": "0x180002ad0",
+        "from_func_name": "SspirGetInprocDispatchTable",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventActivityIdControl",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800026b1",
+        "from_func": "0x1800026a0",
+        "from_func_name": "SspiSrvCallBegin",
+        "import": "ntdll!EtwEventActivityIdControl"
+      },
+      {
+        "from_ea": "0x1800026b1",
+        "from_func": "0x1800026a0",
+        "from_func_name": "SspiSrvCallBegin",
+        "import": "ntdll!EtwEventActivityIdControl"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtClose",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180001a4f",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "ntdll!NtClose"
+      },
+      {
+        "from_ea": "0x180001a4f",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "ntdll!NtClose"
+      },
+      {
+        "from_ea": "0x18000930c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!NtClose"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtOpenThreadToken",
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001a07",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "ntdll!NtOpenThreadToken"
+      },
+      {
+        "from_ea": "0x180001a07",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "ntdll!NtOpenThreadToken"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtQueryInformationToken",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001a30",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "ntdll!NtQueryInformationToken"
+      },
+      {
+        "from_ea": "0x180001a30",
+        "from_func": "0x1800019b0",
+        "from_func_name": "CheckLowboxAccess",
+        "import": "ntdll!NtQueryInformationToken"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlAllocateAndInitializeSid",
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x180002489",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x1800024c8",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x180002507",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x180002549",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x180002587",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x1800025c7",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x180002489",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x1800024c8",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x180002507",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x180002549",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x180002587",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x1800025c7",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlAllocateAndInitializeSid"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002180",
+        "from_func": "0x180002140",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180002180",
+        "from_func": "0x180002140",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCreateAndSetSD",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002609",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlCreateAndSetSD"
+      },
+      {
+        "from_ea": "0x180002609",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlCreateAndSetSD"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlDeriveCapabilitySidsFromName",
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800025df",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlDeriveCapabilitySidsFromName"
+      },
+      {
+        "from_ea": "0x1800025df",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlDeriveCapabilitySidsFromName"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180002825",
+        "from_func": "0x1800027c0",
+        "from_func_name": "SspiSrvInitialize",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x18000287f",
+        "from_func": "0x1800027c0",
+        "from_func_name": "SspiSrvInitialize",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x180002825",
+        "from_func": "0x1800027c0",
+        "from_func_name": "SspiSrvInitialize",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x18000287f",
+        "from_func": "0x1800027c0",
+        "from_func_name": "SspiSrvInitialize",
+        "import": "ntdll!RtlFreeHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeSid",
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x180002626",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002636",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002646",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002656",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002665",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002674",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002626",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002636",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002646",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002656",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002665",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      },
+      {
+        "from_ea": "0x180002674",
+        "from_func": "0x18000233c",
+        "from_func_name": "LsapMakeLowBoxRpcSD",
+        "import": "ntdll!RtlFreeSid"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000219f",
+        "from_func": "0x180002140",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x18000219f",
+        "from_func": "0x180002140",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlValidSid",
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001cf5",
+        "from_func": "0x180001c80",
+        "from_func_name": "SspirLookupAccountSid",
+        "import": "ntdll!RtlValidSid"
+      },
+      {
+        "from_ea": "0x180001cf5",
+        "from_func": "0x180001c80",
+        "from_func_name": "SspirLookupAccountSid",
+        "import": "ntdll!RtlValidSid"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800021ec",
+        "from_func": "0x180002140",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x1800021ec",
+        "from_func": "0x180002140",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  }
+]

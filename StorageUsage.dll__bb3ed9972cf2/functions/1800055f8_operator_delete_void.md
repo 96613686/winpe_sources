@@ -1,0 +1,40 @@
+# operator delete(void *)
+
+- ea: `0x1800055f8`
+- end: `0x1800055fd`
+- name: `??3@YAXPEAX@Z`
+- size: `5`
+- prototype: `void __cdecl(void *Block)`
+- caller_count: `6`
+- callee_count: `1`
+- tags: `file_ops`
+
+## callers
+
+- `0x180005604`
+- `0x180005610`
+- `0x1800100cc`
+- `0x180027310`
+- `0x180027340`
+- `0x18002a664`
+
+## callees
+
+- `0x180005c34`
+
+## pseudocode
+
+```c
+// attributes: thunk
+void __cdecl operator delete(void *Block)
+{
+  free(Block);
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800055f8  jmp     free
+```

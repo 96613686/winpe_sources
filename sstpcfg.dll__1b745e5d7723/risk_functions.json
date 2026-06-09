@@ -1,0 +1,1378 @@
+[
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "GetSstpCertListRemote",
+    "ea": "0x180005830",
+    "function_file": "functions/180005830_GetSstpCertListRemote.md",
+    "matched_imports": [
+      "CRYPT32!CertCloseStore",
+      "CRYPT32!CertEnumCertificatesInStore",
+      "CRYPT32!CertFreeCertificateContext",
+      "CRYPT32!CertOpenStore",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "msvcrt!wcscpy_s",
+      "msvcrt!wcsncat_s"
+    ],
+    "matched_strings": [],
+    "name": "GetSstpCertListRemote",
+    "prototype": "__int64 __fastcall(wchar_t *Source)",
+    "rank_score": 5426,
+    "size": 1636,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "FFileTimeToStr",
+    "ea": "0x180002a00",
+    "function_file": "functions/180002a00_FFileTimeToStr.md",
+    "matched_imports": [
+      "api-ms-win-core-datetime-l1-1-0!GetDateFormatW",
+      "api-ms-win-core-datetime-l1-1-0!GetTimeFormatW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!FileTimeToLocalFileTime",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime"
+    ],
+    "matched_strings": [],
+    "name": "FFileTimeToStr",
+    "prototype": "",
+    "rank_score": 4823,
+    "size": 1856,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "IsCertificateEKUServerAuth",
+    "ea": "0x1800070f0",
+    "function_file": "functions/1800070f0_IsCertificateEKUServerAuth.md",
+    "matched_imports": [
+      "CRYPT32!CertGetEnhancedKeyUsage",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!_strcmpi"
+    ],
+    "matched_strings": [],
+    "name": "IsCertificateEKUServerAuth",
+    "prototype": "__int64 __fastcall(PCCERT_CONTEXT pCertContext)",
+    "rank_score": 3416,
+    "size": 784,
+    "tags": []
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 1,
+    "demangled": "PlumbCertificateToHttp",
+    "ea": "0x180007450",
+    "function_file": "functions/180007450_PlumbCertificateToHttp.md",
+    "matched_imports": [
+      "CRYPT32!CertFreeCertificateContext",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "rtutils!RouterLogEventStringW",
+      "rtutils!RouterLogEventW"
+    ],
+    "matched_strings": [
+      "Hash parameters configured are invalid. Bailing out with error: %d.",
+      "Hash parameters configured are invalid. Bailing out with error: %d.",
+      "Remove Certificate Status: %d.",
+      "Attempting removal of certificates bound to port: %d.",
+      "Admin has configured the Hash, tring to use them",
+      "Unable to find certificates corresponds to configuration",
+      "Found certificate correspond to the configuration",
+      "Found certificates corresponds to configuration, %ws, %ws",
+      "Unable to use the configured certificate, bail out",
+      "PlumbCertificateToHttp completed with status: %d"
+    ],
+    "name": "PlumbCertificateToHttp",
+    "prototype": "",
+    "rank_score": 3279,
+    "size": 4581,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "CheckIfCertificateAllowed",
+    "ea": "0x180001d10",
+    "function_file": "functions/180001d10_CheckIfCertificateAllowed.md",
+    "matched_imports": [
+      "CRYPT32!CertFreeCertificateContext",
+      "HTTPAPI!HttpInitialize",
+      "HTTPAPI!HttpTerminate",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "Unable to open the SSTPSVC Params Key: %d",
+      "Unable to open the SSTPSVC Params Key: %d",
+      "HttpInitialize for configuration Failed: %d"
+    ],
+    "name": "CheckIfCertificateAllowed",
+    "prototype": "",
+    "rank_score": 3208,
+    "size": 1884,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "GetSslCertificateToConfigure",
+    "ea": "0x180005370",
+    "function_file": "functions/180005370_GetSslCertificateToConfigure.md",
+    "matched_imports": [
+      "CRYPT32!CertCloseStore",
+      "CRYPT32!CertDuplicateCertificateContext",
+      "CRYPT32!CertEnumCertificatesInStore",
+      "CRYPT32!CertFreeCertificateContext",
+      "CRYPT32!CertNameToStrW",
+      "CRYPT32!CertOpenStore",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError"
+    ],
+    "matched_strings": [
+      "Unable to open the certificate store...%d"
+    ],
+    "name": "GetSslCertificateToConfigure",
+    "prototype": "",
+    "rank_score": 2871,
+    "size": 1208,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SetCertificateToSsl",
+    "ea": "0x18000863c",
+    "function_file": "functions/18000863c_SetCertificateToSsl.md",
+    "matched_imports": [
+      "CRYPT32!CertGetCertificateContextProperty",
+      "HTTPAPI!HttpSetServiceConfiguration",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [
+      "HttpSetServiceConfiguration(v4) fails with error %d"
+    ],
+    "name": "SetCertificateToSsl",
+    "prototype": "__int64 __fastcall(PCCERT_CONTEXT pCertContext)",
+    "rank_score": 2474,
+    "size": 803,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "SetupSstpServerConfig",
+    "ea": "0x180009720",
+    "function_file": "functions/180009720_SetupSstpServerConfig.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+      "rtutils!RouterLogEventStringW"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "Unable to open the SSTPSVC Params Key: %d",
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters\\ConfigStore",
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters\\ConfigStore",
+      "ConfigStore key not present. Possible leak of URLACL/CertInfo as the current config is assumed to be default",
+      "Unable to create config store Security Desc: %d",
+      "Unable to create the config store key. Bailing out - %d",
+      "Failure to open the config store: %d"
+    ],
+    "name": "SetupSstpServerConfig",
+    "prototype": "__int64()",
+    "rank_score": 2387,
+    "size": 1038,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "GetCertificateFromName",
+    "ea": "0x180003aac",
+    "function_file": "functions/180003aac_GetCertificateFromName.md",
+    "matched_imports": [
+      "CRYPT32!CertCloseStore",
+      "CRYPT32!CertDuplicateCertificateContext",
+      "CRYPT32!CertEnumCertificatesInStore",
+      "CRYPT32!CertOpenStore",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "Unable to open the certificate store...%d"
+    ],
+    "name": "GetCertificateFromName",
+    "prototype": "",
+    "rank_score": 2257,
+    "size": 856,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 7,
+    "demangled": "GetHashFromCertificate",
+    "ea": "0x180004f10",
+    "function_file": "functions/180004f10_GetHashFromCertificate.md",
+    "matched_imports": [
+      "CRYPT32!CryptHashCertificate",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-cryptoapi-l1-1-0!CryptAcquireContextW",
+      "api-ms-win-security-cryptoapi-l1-1-0!CryptReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "GetHashFromCertificate",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 2232,
+    "size": 1114,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetCertFriendlyName",
+    "ea": "0x180003280",
+    "function_file": "functions/180003280_GetCertFriendlyName.md",
+    "matched_imports": [
+      "CRYPT32!CertGetCertificateContextProperty",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "GetCertFriendlyName",
+    "prototype": "__int64 __fastcall(PCCERT_CONTEXT pCertContext)",
+    "rank_score": 2013,
+    "size": 648,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FreeSstpCertNode",
+    "ea": "0x1800031a0",
+    "function_file": "functions/1800031a0_FreeSstpCertNode.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "FreeSstpCertNode",
+    "prototype": "",
+    "rank_score": 2003,
+    "size": 218,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ConfigureSstpServer",
+    "ea": "0x180002518",
+    "function_file": "functions/180002518_ConfigureSstpServer.md",
+    "matched_imports": [
+      "HTTPAPI!HttpDeleteServiceConfiguration",
+      "HTTPAPI!HttpInitialize",
+      "HTTPAPI!HttpSetServiceConfiguration",
+      "HTTPAPI!HttpTerminate",
+      "rtutils!RouterLogEventStringW"
+    ],
+    "matched_strings": [
+      "Unable to initialize HTTP for server configuration: %d",
+      "HttpDeleteServiceConfiguration fails with error %d for %ws",
+      "HttpSetServiceConfiguration fails with error %d for %ws",
+      "HttpSetServiceConfiguration for default URL ACL fails %d"
+    ],
+    "name": "ConfigureSstpServer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 1819,
+    "size": 1161,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "CertPropertyToStr",
+    "ea": "0x180001a6c",
+    "function_file": "functions/180001a6c_CertPropertyToStr.md",
+    "matched_imports": [
+      "CRYPT32!CertGetNameStringW",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "CertPropertyToStr",
+    "prototype": "__int64 __fastcall(PCCERT_CONTEXT pCertContext, DWORD dwFlags)",
+    "rank_score": 1814,
+    "size": 660,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "GetCryptoBindingInfo",
+    "ea": "0x1800044a0",
+    "function_file": "functions/1800044a0_GetCryptoBindingInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "rtutils!RouterLogEventStringW"
+    ],
+    "matched_strings": [
+      "isHashConfiguredByAdmin",
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "Unable to open the parameter store for SSTPSVC: %d",
+      "GetCryptoBindingInfo completes with %d"
+    ],
+    "name": "GetCryptoBindingInfo",
+    "prototype": "",
+    "rank_score": 1814,
+    "size": 1928,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "handleV4V6RegCertMismatch",
+    "ea": "0x18000a414",
+    "function_file": "functions/18000a414_handleV4V6RegCertMismatch.md",
+    "matched_imports": [
+      "CRYPT32!CertCompareCertificate",
+      "CRYPT32!CertNameToStrW",
+      "rtutils!RouterLogEventW"
+    ],
+    "matched_strings": [
+      "No SSL binding exist currently, plumb the SSTP configured certificate",
+      "No SSL binding exist currently for V4, plumb the SSTP configured cert which is same as current V6 binding",
+      "Current V6 SSL binding does not matches with the current SSTP configuration, bail out",
+      "Current V6 SSL binding does not matches with the current SSTP configuration, Trying to correct it",
+      "Current V6 SSL binding does not matches with the current SSTP configuration, Trying to correct it",
+      "No SSL binding exist currently for V6, plumb the SSTP configured cert which is same as current V4 binding",
+      "Current V4 SSL binding does not matches with the current SSTP configuration, bail out",
+      "Current V4 SSL binding does not matches with the current SSTP configuration, Trying to correct it",
+      "Current V4 SSL binding does not matches with the current SSTP configuration, Trying to correct it",
+      "Current V4 and V6 SSL binding does not matches with the current SSTP configuration, Trying to correct it",
+      "Current V4 and/or V6 SSL binding does not matches with the current SSTP configuration, bail out",
+      "Certificates currently Configured as same as the SSL certificates binding"
+    ],
+    "name": "handleV4V6RegCertMismatch",
+    "prototype": "",
+    "rank_score": 1724,
+    "size": 2143,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "GetCertificateFromHash",
+    "ea": "0x180003820",
+    "function_file": "functions/180003820_GetCertificateFromHash.md",
+    "matched_imports": [
+      "CRYPT32!CertCloseStore",
+      "CRYPT32!CertFindCertificateInStore",
+      "CRYPT32!CertOpenStore",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "msvcrt!wcscpy_s",
+      "msvcrt!wcsncat_s"
+    ],
+    "matched_strings": [
+      "Unable to open the certificate store...%d"
+    ],
+    "name": "GetCertificateFromHash",
+    "prototype": "__int64 __fastcall(wchar_t *Source)",
+    "rank_score": 1655,
+    "size": 645,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "GetCertificateBindingFromAddress",
+    "ea": "0x180003510",
+    "function_file": "functions/180003510_GetCertificateBindingFromAddress.md",
+    "matched_imports": [
+      "HTTPAPI!HttpQueryServiceConfiguration",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "rtutils!RouterLogEventStringW"
+    ],
+    "matched_strings": [
+      "GetCertificateBindingFromAddress operation completed with status: %d"
+    ],
+    "name": "GetCertificateBindingFromAddress",
+    "prototype": "",
+    "rank_score": 1485,
+    "size": 777,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "StoreCertHash",
+    "ea": "0x180009b34",
+    "function_file": "functions/180009b34_StoreCertHash.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+    ],
+    "matched_strings": [
+      "isHashConfiguredByAdmin",
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "Unable to open the SSTPSVC Params Key: %d",
+      "Trying to store sha256 cert hash in registry fails with %d",
+      "Trying to store sha1 cert hash in registry fails with %d",
+      "Trying to store HASH configuration type %d"
+    ],
+    "name": "StoreCertHash",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 1276,
+    "size": 795,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "GetCertificateFromSha256Hash",
+    "ea": "0x180003e10",
+    "function_file": "functions/180003e10_GetCertificateFromSha256Hash.md",
+    "matched_imports": [
+      "CRYPT32!CertCloseStore",
+      "CRYPT32!CertOpenStore",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "msvcrt!wcscpy_s",
+      "msvcrt!wcsncat_s"
+    ],
+    "matched_strings": [
+      "Unable to open the certificate store...%d"
+    ],
+    "name": "GetCertificateFromSha256Hash",
+    "prototype": "__int64 __fastcall(wchar_t *Source)",
+    "rank_score": 1255,
+    "size": 489,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x1800017b4",
+    "function_file": "functions/1800017b4_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "SetSstpConfiguration",
+    "ea": "0x180008e70",
+    "function_file": "functions/180008e70_SetSstpConfiguration.md",
+    "matched_imports": [
+      "CRYPT32!CertFreeCertificateContext",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "Unable to open the SSTPSVC Params Key: %d",
+      "Trying to store HASH configuration %d"
+    ],
+    "name": "SetSstpConfiguration",
+    "prototype": "__int64 __fastcall(__int64, wchar_t *, int, __int64)",
+    "rank_score": 1160,
+    "size": 1196,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "GetCertificateFromSslInfo",
+    "ea": "0x180004000",
+    "function_file": "functions/180004000_GetCertificateFromSslInfo.md",
+    "matched_imports": [
+      "CRYPT32!CertCloseStore",
+      "CRYPT32!CertFindCertificateInStore",
+      "CRYPT32!CertOpenStore",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError"
+    ],
+    "matched_strings": [
+      "Unable to open the certificate store...%d"
+    ],
+    "name": "GetCertificateFromSslInfo",
+    "prototype": "",
+    "rank_score": 1055,
+    "size": 760,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "GetCryptoBindingSupportedAlgoInfo",
+    "ea": "0x180004c30",
+    "function_file": "functions/180004c30_GetCryptoBindingSupportedAlgoInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "Unable to open the parameter store for SSTPSVC: %d"
+    ],
+    "name": "GetCryptoBindingSupportedAlgoInfo",
+    "prototype": "",
+    "rank_score": 913,
+    "size": 721,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "GetSstpConfiguration",
+    "ea": "0x180005ea0",
+    "function_file": "functions/180005ea0_GetSstpConfiguration.md",
+    "matched_imports": [
+      "CRYPT32!CertFreeCertificateContext",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "GetSstpConfiguration",
+    "prototype": "",
+    "rank_score": 827,
+    "size": 703,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GetCertificateFromStoreForSha256Hash",
+    "ea": "0x180004300",
+    "function_file": "functions/180004300_GetCertificateFromStoreForSha256Hash.md",
+    "matched_imports": [
+      "CRYPT32!CertDuplicateCertificateContext",
+      "CRYPT32!CertEnumCertificatesInStore",
+      "CRYPT32!CertFreeCertificateContext"
+    ],
+    "matched_strings": [],
+    "name": "GetCertificateFromStoreForSha256Hash",
+    "prototype": "__int64 __fastcall(HCERTSTORE hCertStore)",
+    "rank_score": 812,
+    "size": 408,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "HandleV4V6CertMismatch",
+    "ea": "0x180006b6c",
+    "function_file": "functions/180006b6c_HandleV4V6CertMismatch.md",
+    "matched_imports": [
+      "CRYPT32!CertCompareCertificate",
+      "rtutils!RouterLogEventStringW",
+      "rtutils!RouterLogEventW"
+    ],
+    "matched_strings": [
+      "Certificate is configured for V6 but not for V4, attempting to configure V4.",
+      "Certificate is configured for V4 but not for V6, attempting to configure V6"
+    ],
+    "name": "HandleV4V6CertMismatch",
+    "prototype": "",
+    "rank_score": 720,
+    "size": 1398,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetSstpIsHttps",
+    "ea": "0x180006168",
+    "function_file": "functions/180006168_GetSstpIsHttps.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "Unable to open the parameter store for SSTPSVC: %d"
+    ],
+    "name": "GetSstpIsHttps",
+    "prototype": "",
+    "rank_score": 711,
+    "size": 520,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "SetSstpProxyConfig",
+    "ea": "0x180009330",
+    "function_file": "functions/180009330_SetSstpProxyConfig.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "Unable to open the SSTPSVC Params Key: %d"
+    ],
+    "name": "SetSstpProxyConfig",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 711,
+    "size": 535,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x1800014d8",
+    "function_file": "functions/1800014d8_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "GetSstpProxyConfig",
+    "ea": "0x180006380",
+    "function_file": "functions/180006380_GetSstpProxyConfig.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "Unable to open the parameter store for SSTPSVC: %d"
+    ],
+    "name": "GetSstpProxyConfig",
+    "prototype": "",
+    "rank_score": 710,
+    "size": 516,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x1800029a8",
+    "function_file": "functions/1800029a8_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls",
+      "rtutils!RouterLogDeregisterW",
+      "rtutils!RouterLogRegisterW"
+    ],
+    "matched_strings": [
+      "RasSstpConfig"
+    ],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 662,
+    "size": 80,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ClearCertHash",
+    "ea": "0x180002474",
+    "function_file": "functions/180002474_ClearCertHash.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegDeleteValueW"
+    ],
+    "matched_strings": [
+      "isHashConfiguredByAdmin"
+    ],
+    "name": "ClearCertHash",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 654,
+    "size": 157,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x180001520",
+    "function_file": "functions/180001520_report_gsfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-rtlsupport-l1-1-0!RtlCaptureContext",
+      "api-ms-win-core-rtlsupport-l1-1-0!RtlLookupFunctionEntry",
+      "api-ms-win-core-rtlsupport-l1-1-0!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 626,
+    "size": 416,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_CRT_INIT",
+    "ea": "0x180001050",
+    "function_file": "functions/180001050_CRT_INIT.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "_CRT_INIT",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 549,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "GetSstpServerConfig",
+    "ea": "0x180006590",
+    "function_file": "functions/180006590_GetSstpServerConfig.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\SstpSvc\\Parameters",
+      "GetServerConfig: Unable to open the config store: %d",
+      "Server ConfigInfo: UseHttps: %!bool! Port: %d"
+    ],
+    "name": "GetSstpServerConfig",
+    "prototype": "",
+    "rank_score": 552,
+    "size": 507,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "GetSstpServerConfigp",
+    "ea": "0x180006794",
+    "function_file": "functions/180006794_GetSstpServerConfigp.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "GetSstpServerConfigp",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 424,
+    "size": 641,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SetSstpServerConfig",
+    "ea": "0x180009550",
+    "function_file": "functions/180009550_SetSstpServerConfig.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "SetSstpServerConfig",
+    "prototype": "__int64 __fastcall(HKEY hKey)",
+    "rank_score": 420,
+    "size": 453,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "SetSslCertificateToHttpV4",
+    "ea": "0x180008968",
+    "function_file": "functions/180008968_SetSslCertificateToHttpV4.md",
+    "matched_imports": [
+      "CRYPT32!CertNameToStrW",
+      "rtutils!RouterLogEventStringW"
+    ],
+    "matched_strings": [],
+    "name": "SetSslCertificateToHttpV4",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 630,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "SetSslCertificateToHttpV6",
+    "ea": "0x180008be4",
+    "function_file": "functions/180008be4_SetSslCertificateToHttpV6.md",
+    "matched_imports": [
+      "CRYPT32!CertNameToStrW",
+      "rtutils!RouterLogEventStringW"
+    ],
+    "matched_strings": [],
+    "name": "SetSslCertificateToHttpV6",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 635,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "IsPrivateKeyPresent",
+    "ea": "0x180007408",
+    "function_file": "functions/180007408_IsPrivateKeyPresent.md",
+    "matched_imports": [
+      "CRYPT32!CertGetCertificateContextProperty",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "IsPrivateKeyPresent",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__delayLoadHelper2",
+    "ea": "0x18000ad60",
+    "function_file": "functions/18000ad60_delayLoadHelper2.md",
+    "matched_imports": [
+      "api-ms-win-core-delayload-l1-1-0!DelayLoadFailureHook",
+      "api-ms-win-core-delayload-l1-1-1!ResolveDelayLoadedAPI"
+    ],
+    "matched_strings": [],
+    "name": "__delayLoadHelper2",
+    "prototype": "",
+    "rank_score": 302,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 31,
+    "demangled": "WPP_SF_d",
+    "ea": "0x18000a044",
+    "function_file": "functions/18000a044_WPP_SF_d.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 235,
+    "size": 62,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 22,
+    "demangled": "WPP_SF_",
+    "ea": "0x18000a014",
+    "function_file": "functions/18000a014_WPP_SF.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 232,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "UnbindSslCertificate",
+    "ea": "0x180009ee4",
+    "function_file": "functions/180009ee4_UnbindSslCertificate.md",
+    "matched_imports": [
+      "HTTPAPI!HttpDeleteServiceConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "UnbindSslCertificate",
+    "prototype": "",
+    "rank_score": 230,
+    "size": 297,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 32,
+    "demangled": "FormatRRASErrorString",
+    "ea": "0x18000acbc",
+    "function_file": "functions/18000acbc_FormatRRASErrorString.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "FormatRRASErrorString",
+    "prototype": "__int64(_QWORD, _QWORD, ...)",
+    "rank_score": 226,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "WPP_SF_S",
+    "ea": "0x18000a110",
+    "function_file": "functions/18000a110_WPP_SF_S.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_S",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 97,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WPP_SF_SS",
+    "ea": "0x18000a178",
+    "function_file": "functions/18000a178_WPP_SF_SS.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_SS",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 163,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WPP_SF_sD",
+    "ea": "0x18000a38c",
+    "function_file": "functions/18000a38c_WPP_SF_sD.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_sD",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 115,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "WPP_SF_ddddddddd",
+    "ea": "0x18000a284",
+    "function_file": "functions/18000a284_WPP_SF_ddddddddd.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_ddddddddd",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 171,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "StringCchPrintfW",
+    "ea": "0x180009e58",
+    "function_file": "functions/180009e58_StringCchPrintfW.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "StringCchPrintfW",
+    "prototype": "HRESULT(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszFormat, ...)",
+    "rank_score": 203,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_HttpDeleteServiceConfiguration",
+    "ea": "0x18000194f",
+    "function_file": "functions/18000194f_imp_load_HttpDeleteServiceConfiguration.md",
+    "matched_imports": [
+      "HTTPAPI!HttpDeleteServiceConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_HttpDeleteServiceConfiguration",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_HttpQueryServiceConfiguration",
+    "ea": "0x180001973",
+    "function_file": "functions/180001973_imp_load_HttpQueryServiceConfiguration.md",
+    "matched_imports": [
+      "HTTPAPI!HttpQueryServiceConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_HttpQueryServiceConfiguration",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_HttpSetServiceConfiguration",
+    "ea": "0x180001997",
+    "function_file": "functions/180001997_imp_load_HttpSetServiceConfiguration.md",
+    "matched_imports": [
+      "HTTPAPI!HttpSetServiceConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_HttpSetServiceConfiguration",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 33,
+    "demangled": "memset_0",
+    "ea": "0x18000ae4e",
+    "function_file": "functions/18000ae4e_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetUrlForConfig",
+    "ea": "0x180006a20",
+    "function_file": "functions/180006a20_GetUrlForConfig.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Error during prefix construction: 0x%x"
+    ],
+    "name": "GetUrlForConfig",
+    "prototype": "",
+    "rank_score": 70,
+    "size": 323,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 36,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000ae80",
+    "function_file": "functions/18000ae80_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 35,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18000c010",
+    "function_file": "functions/18000c010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001280",
+    "function_file": "functions/180001280_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000adc0",
+    "function_file": "functions/18000adc0_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x1800012c4",
+    "function_file": "functions/1800012c4_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "__tailMerge_httpapi_dll",
+    "ea": "0x1800018d0",
+    "function_file": "functions/1800018d0_tailMerge_httpapi_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_httpapi_dll",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "__tailMerge_rtutils_dll",
+    "ea": "0x1800019a3",
+    "function_file": "functions/1800019a3_tailMerge_rtutils_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_rtutils_dll",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18000aec0",
+    "function_file": "functions/18000aec0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "_alloca_probe",
+    "ea": "0x18000af10",
+    "function_file": "functions/18000af10_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 77,
+    "tags": []
+  }
+]

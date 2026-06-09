@@ -1,0 +1,362 @@
+# SspNtStatusToSecStatus
+
+- ea: `0x180005cc0`
+- end: `0x18000619a`
+- name: `SspNtStatusToSecStatus`
+- size: `1242`
+- prototype: `__int64 __fastcall(_QWORD)`
+- caller_count: `43`
+- callee_count: `1`
+- tags: `loader_planting`
+
+## callers
+
+- `0x180001090`
+- `0x180002130`
+- `0x180004290`
+- `0x1800049c0`
+- `0x180005190`
+- `0x180005370`
+- `0x180005400`
+- `0x180005860`
+- `0x180007610`
+- `0x1800078a0`
+- `0x180008920`
+- `0x1800090e0`
+- `0x180009360`
+- `0x18000e9d0`
+- `0x18000fae0`
+- `0x18000ffb0`
+- `0x180010f00`
+- `0x1800110f0`
+- `0x1800113a0`
+- `0x180012570`
+- `0x1800135e0`
+- `0x1800137a0`
+- `0x180013a10`
+- `0x180013bf0`
+- `0x1800145d0`
+- `0x180017410`
+- `0x180017760`
+- `0x180017e40`
+- `0x180018430`
+- `0x18001b700`
+- `0x18001bb20`
+- `0x18001bc50`
+- `0x18001bdac`
+- `0x18001c010`
+- `0x18001c130`
+- `0x18001c1f0`
+- `0x18001c2b0`
+- `0x18001c380`
+- `0x18001c530`
+- `0x18001c5f0`
+- `0x1800201e4`
+- `0x180020540`
+- `0x1800207f0`
+
+## callees
+
+- `0x180005cc0`
+
+## import_xrefs
+
+- `ntdll!RtlNtStatusToDosErrorNoTeb` at `0x180005d36`
+- `ntdll!RtlNtStatusToDosErrorNoTeb` at `0x180005d36`
+
+## pseudocode
+
+```c
+__int64 __fastcall SspNtStatusToSecStatus(NTSTATUS a1)
+{
+  signed int v2; // eax
+
+  if ( (a1 & 0x1FFF0000) == 0x90000 || !a1 )
+    return (unsigned int)a1;
+  if ( a1 > -1073741517 )
+  {
+    if ( a1 > -1073741063 )
+    {
+      if ( a1 > -1073740792 )
+      {
+        if ( a1 == -1073740789 )
+          return (unsigned int)-2146892969;
+        if ( a1 != -1073740781 )
+        {
+          if ( a1 != -1073740776 )
+          {
+            if ( a1 == -1073740755 )
+              return (unsigned int)-2146892959;
+            if ( a1 == -1073740753 )
+              return (unsigned int)-2146892958;
+            goto LABEL_16;
+          }
+          return (unsigned int)-2146893044;
+        }
+      }
+      else
+      {
+        if ( a1 == -1073740792 )
+          return (unsigned int)-2146893044;
+        switch ( a1 )
+        {
+          case -1073741058:
+            a1 = -2146892993;
+            break;
+          case -1073741024:
+          case -1073740928:
+          case -1073740927:
+          case -1073740925:
+          case -1073740924:
+          case -1073740923:
+          case -1073740922:
+          case -1073740921:
+          case -1073740916:
+          case -1073740913:
+            return (unsigned int)-2146893044;
+          case -1073740965:
+            a1 = -2146892986;
+            break;
+          case -1073740920:
+            a1 = -2146892976;
+            break;
+          default:
+            goto LABEL_16;
+        }
+      }
+    }
+    else
+    {
+      if ( a1 == -1073741063 )
+        return (unsigned int)-2146893044;
+      switch ( a1 )
+      {
+        case -1073741477:
+        case -1073741421:
+        case -1073741276:
+        case -1073741260:
+          return (unsigned int)-2146893044;
+        case -1073741429:
+LABEL_32:
+          a1 = -2146893053;
+          break;
+        case -1073741428:
+        case -1073741416:
+        case -1073741415:
+        case -1073741414:
+        case -1073741413:
+          return (unsigned int)a1;
+        case -1073741427:
+        case -1073741424:
+        case -1073741422:
+        case -1073741261:
+        case -1073741252:
+LABEL_31:
+          a1 = -2146893039;
+          break;
+        default:
+          goto LABEL_16;
+      }
+    }
+  }
+  else
+  {
+    if ( a1 == -1073741517 )
+      return (unsigned int)-2146893020;
+    if ( a1 <= -1073741816 )
+    {
+      if ( a1 == -1073741816 )
+        return (unsigned int)-2146893055;
+      if ( a1 <= -2146885613 )
+      {
+        switch ( a1 )
+        {
+          case -2146885613:
+            return (unsigned int)-2146893044;
+          case -2147483635:
+            return (unsigned int)-2146893048;
+          case -2146885616:
+          case -2146885614:
+            return (unsigned int)-2146893044;
+        }
+        goto LABEL_16;
+      }
+      if ( a1 != -2146869247 && a1 != -2146762480 )
+      {
+LABEL_16:
+        v2 = RtlNtStatusToDosErrorNoTeb(a1);
+        a1 = v2;
+        if ( v2 >= 0 || (v2 & 0x1FFF0000) != 0x90000 )
+          return (unsigned int)-2146893052;
+        return (unsigned int)a1;
+      }
+      return (unsigned int)-2146893044;
+    }
+    switch ( a1 )
+    {
+      case -1073741811:
+      case -1073741717:
+      case -1073741562:
+        return (unsigned int)-2146893048;
+      case -1073741801:
+      case -1073741670:
+        a1 = -2146893056;
+        break;
+      case -1073741789:
+        a1 = -2146893023;
+        break;
+      case -1073741772:
+        goto LABEL_32;
+      case -1073741730:
+      case -1073741634:
+      case -1073741601:
+        goto LABEL_31;
+      case -1073741729:
+        a1 = -2146893043;
+        break;
+      case -1073741727:
+        a1 = -2146893050;
+        break;
+      case -1073741724:
+      case -1073741718:
+      case -1073741716:
+      case -1073741715:
+      case -1073741714:
+      case -1073741713:
+      case -1073741712:
+      case -1073741711:
+      case -1073741710:
+        return (unsigned int)-2146893044;
+      case -1073741637:
+        a1 = -2146893054;
+        break;
+      case -1073741595:
+        return (unsigned int)-2146893052;
+      default:
+        goto LABEL_16;
+    }
+  }
+  return (unsigned int)a1;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180005cc0  sub     rsp, 28h
+0x180005cc4  mov     eax, ecx
+0x180005cc6  and     eax, 1FFF0000h
+0x180005ccb  cmp     eax, 90000h
+0x180005cd0  jnz     short loc_180005CD9
+0x180005cd2  mov     eax, ecx; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005cd4  add     rsp, 28h
+0x180005cd8  retn
+0x180005cd9  test    ecx, ecx
+0x180005cdb  jz      short loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005cdd  cmp     ecx, 0C0000133h
+0x180005ce3  jg      loc_180005DD4
+0x180005ce9  jz      loc_180005DCA
+0x180005cef  cmp     ecx, 0C0000008h
+0x180005cf5  jg      short loc_180005D62
+0x180005cf7  jz      short loc_180005D58
+0x180005cf9  cmp     ecx, 80092013h
+0x180005cff  jg      short loc_180005D26
+0x180005d01  jz      short loc_180005D1F; jumptable 0000000180005D8C cases -1073741724,-1073741718,-1073741716--1073741710
+0x180005d03  cmp     ecx, 8000000Dh
+0x180005d09  jz      loc_180005DA2; jumptable 0000000180005D8C cases -1073741811,-1073741717,-1073741562
+0x180005d0f  cmp     ecx, 80092010h
+0x180005d15  jz      short loc_180005D1F; jumptable 0000000180005D8C cases -1073741724,-1073741718,-1073741716--1073741710
+0x180005d17  cmp     ecx, 80092012h
+0x180005d1d  jnz     short def_180005D8C; jumptable 0000000180005D8C default case, cases -1073741810--1073741802,-1073741800--1073741790,-1073741788--1073741773,-1073741771--1073741731,-1073741728,-1073741726,-1073741725,-1073741723--1073741719,-1073741709--1073741671,-1073741669--1073741638,-1073741636,-1073741635,-1073741633--1073741602,-1073741600--1073741596,-1073741594--1073741563
+0x180005d1f  mov     ecx, 8009030Ch; jumptable 0000000180005D8C cases -1073741724,-1073741718,-1073741716--1073741710
+0x180005d24  jmp     short loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005d26  cmp     ecx, 80096001h
+0x180005d2c  jz      short loc_180005D1F; jumptable 0000000180005D8C cases -1073741724,-1073741718,-1073741716--1073741710
+0x180005d2e  cmp     ecx, 800B0110h
+0x180005d34  jz      short loc_180005D1F; jumptable 0000000180005D8C cases -1073741724,-1073741718,-1073741716--1073741710
+0x180005d36  call    cs:__imp_RtlNtStatusToDosErrorNoTeb; jumptable 0000000180005D8C default case, cases -1073741810--1073741802,-1073741800--1073741790,-1073741788--1073741773,-1073741771--1073741731,-1073741728,-1073741726,-1073741725,-1073741723--1073741719,-1073741709--1073741671,-1073741669--1073741638,-1073741636,-1073741635,-1073741633--1073741602,-1073741600--1073741596,-1073741594--1073741563
+0x180005d3c  mov     ecx, eax
+0x180005d3e  test    eax, eax
+0x180005d40  jns     short loc_180005D4E; jumptable 0000000180005D8C case -1073741595
+0x180005d42  and     eax, 1FFF0000h
+0x180005d47  cmp     eax, 90000h
+0x180005d4c  jz      short loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005d4e  mov     ecx, 80090304h; jumptable 0000000180005D8C case -1073741595
+0x180005d53  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005d58  mov     ecx, 80090301h
+0x180005d5d  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005d62  lea     eax, [rcx+3FFFFFF3h]; switch 250 cases
+0x180005d68  cmp     eax, 0F9h
+0x180005d6d  ja      short def_180005D8C; jumptable 0000000180005D8C default case, cases -1073741810--1073741802,-1073741800--1073741790,-1073741788--1073741773,-1073741771--1073741731,-1073741728,-1073741726,-1073741725,-1073741723--1073741719,-1073741709--1073741671,-1073741669--1073741638,-1073741636,-1073741635,-1073741633--1073741602,-1073741600--1073741596,-1073741594--1073741563
+0x180005d6f  lea     r8, __ImageBase
+0x180005d76  cdqe
+0x180005d78  movzx   eax, ds:(byte_180005F00 - 180000000h)[r8+rax]
+0x180005d81  mov     edx, ds:(jpt_180005D8C - 180000000h)[r8+rax*4]
+0x180005d89  add     rdx, r8
+0x180005d8c  jmp     rdx; switch jump
+0x180005d8e  mov     ecx, 8009030Dh; jumptable 0000000180005D8C case -1073741729
+0x180005d93  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005d98  mov     ecx, 80090300h; jumptable 0000000180005D8C cases -1073741801,-1073741670
+0x180005d9d  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005da2  mov     ecx, 80090308h; jumptable 0000000180005D8C cases -1073741811,-1073741717,-1073741562
+0x180005da7  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005dac  mov     ecx, 80090306h; jumptable 0000000180005D8C case -1073741727
+0x180005db1  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005db6  mov     ecx, 80090321h; jumptable 0000000180005D8C case -1073741789
+0x180005dbb  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005dc0  mov     ecx, 80090302h; jumptable 0000000180005D8C case -1073741637
+0x180005dc5  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005dca  mov     ecx, 80090324h
+0x180005dcf  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005dd4  cmp     ecx, 0C00002F9h
+0x180005dda  jg      short loc_180005E26
+0x180005ddc  jz      loc_180005D1F; jumptable 0000000180005D8C cases -1073741724,-1073741718,-1073741716--1073741710
+0x180005de2  lea     eax, [rcx+3FFFFEA5h]; switch 226 cases
+0x180005de8  cmp     eax, 0E1h
+0x180005ded  ja      def_180005D8C; jumptable 0000000180005D8C default case, cases -1073741810--1073741802,-1073741800--1073741790,-1073741788--1073741773,-1073741771--1073741731,-1073741728,-1073741726,-1073741725,-1073741723--1073741719,-1073741709--1073741671,-1073741669--1073741638,-1073741636,-1073741635,-1073741633--1073741602,-1073741600--1073741596,-1073741594--1073741563
+0x180005df3  lea     r8, __ImageBase
+0x180005dfa  cdqe
+0x180005dfc  movzx   eax, ds:(byte_180006010 - 180000000h)[r8+rax]
+0x180005e05  mov     edx, ds:(jpt_180005E10 - 180000000h)[r8+rax*4]
+0x180005e0d  add     rdx, r8
+0x180005e10  jmp     rdx; switch jump
+0x180005e12  mov     ecx, 80090311h; jumptable 0000000180005D8C cases -1073741730,-1073741634,-1073741601
+0x180005e17  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005e1c  mov     ecx, 80090303h; jumptable 0000000180005D8C case -1073741772
+0x180005e21  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005e26  cmp     ecx, 0C0000408h
+0x180005e2c  jg      short loc_180005E82
+0x180005e2e  jz      loc_180005D1F; jumptable 0000000180005D8C cases -1073741724,-1073741718,-1073741716--1073741710
+0x180005e34  lea     eax, [rcx+3FFFFD02h]; switch 146 cases
+0x180005e3a  cmp     eax, 91h
+0x180005e3f  ja      def_180005D8C; jumptable 0000000180005D8C default case, cases -1073741810--1073741802,-1073741800--1073741790,-1073741788--1073741773,-1073741771--1073741731,-1073741728,-1073741726,-1073741725,-1073741723--1073741719,-1073741709--1073741671,-1073741669--1073741638,-1073741636,-1073741635,-1073741633--1073741602,-1073741600--1073741596,-1073741594--1073741563
+0x180005e45  lea     r8, __ImageBase
+0x180005e4c  cdqe
+0x180005e4e  movzx   eax, ds:(byte_180006108 - 180000000h)[r8+rax]
+0x180005e57  mov     edx, ds:(jpt_180005E62 - 180000000h)[r8+rax*4]
+0x180005e5f  add     rdx, r8
+0x180005e62  jmp     rdx; switch jump
+0x180005e64  mov     ecx, 8009033Fh; jumptable 0000000180005E62 case -1073741058
+0x180005e69  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005e6e  mov     ecx, 80090350h; jumptable 0000000180005E62 case -1073740920
+0x180005e73  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005e78  mov     ecx, 80090346h; jumptable 0000000180005E62 case -1073740965
+0x180005e7d  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005e82  cmp     ecx, 0C000040Bh
+0x180005e88  jz      short loc_180005ECA
+0x180005e8a  cmp     ecx, 0C0000413h
+0x180005e90  jz      loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005e96  cmp     ecx, 0C0000418h
+0x180005e9c  jz      loc_180005D1F; jumptable 0000000180005D8C cases -1073741724,-1073741718,-1073741716--1073741710
+0x180005ea2  cmp     ecx, 0C000042Dh
+0x180005ea8  jz      short loc_180005EC0
+0x180005eaa  cmp     ecx, 0C000042Fh
+0x180005eb0  jnz     def_180005D8C; jumptable 0000000180005D8C default case, cases -1073741810--1073741802,-1073741800--1073741790,-1073741788--1073741773,-1073741771--1073741731,-1073741728,-1073741726,-1073741725,-1073741723--1073741719,-1073741709--1073741671,-1073741669--1073741638,-1073741636,-1073741635,-1073741633--1073741602,-1073741600--1073741596,-1073741594--1073741563
+0x180005eb6  mov     ecx, 80090362h
+0x180005ebb  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005ec0  mov     ecx, 80090361h
+0x180005ec5  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+0x180005eca  mov     ecx, 80090357h
+0x180005ecf  jmp     loc_180005CD2; jumptable 0000000180005E10 cases -1073741428,-1073741416--1073741413
+```

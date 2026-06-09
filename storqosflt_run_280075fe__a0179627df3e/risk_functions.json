@@ -1,0 +1,2037 @@
+[
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "SqospCreateDevice",
+    "ea": "0x1400111bc",
+    "function_file": "functions/1400111bc_SqospCreateDevice.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltGetDiskDeviceObject",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleasePushLockEx",
+      "FLTMGR!FltSetInstanceContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeLookasideListEx",
+      "ntoskrnl!InitializeSListHead",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoVolumeDeviceToDosName",
+      "ntoskrnl!KeInitializeDpc",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeInitializeTimer",
+      "ntoskrnl!KeQueryMaximumProcessorCountEx",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PcwCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "SqospCreateDevice",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFLT_VOLUME Volume)",
+    "rank_score": 4436,
+    "size": 1387,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SqospCreateQoSControlSecurityDescriptor",
+    "ea": "0x140012c78",
+    "function_file": "functions/140012c78_SqospCreateQoSControlSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlAbsoluteToSelfRelativeSD",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlLengthRequiredSid",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!RtlSetGroupSecurityDescriptor",
+      "ntoskrnl!RtlSetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlSubAuthoritySid",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "SqospCreateQoSControlSecurityDescriptor",
+    "prototype": "",
+    "rank_score": 4047,
+    "size": 1358,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x1400161ec",
+    "function_file": "functions/1400161ec_DriverEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateGenericWorkItem",
+      "FLTMGR!FltBuildDefaultSecurityDescriptor",
+      "FLTMGR!FltCreateCommunicationPort",
+      "FLTMGR!FltFreeSecurityDescriptor",
+      "FLTMGR!FltInitializePushLock",
+      "FLTMGR!FltRegisterFilter",
+      "FLTMGR!FltStartFiltering",
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExInitializeLookasideListEx",
+      "ntoskrnl!PcwRegister",
+      "ntoskrnl!RtlGetVersion",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\QoS",
+      "CapacityCompensationPercent"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 2770,
+    "size": 1837,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "SqospHandleControlRequest",
+    "ea": "0x140014d10",
+    "function_file": "functions/140014d10_SqospHandleControlRequest.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltGetStreamHandleContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeReleaseSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "SqospHandleControlRequest",
+    "prototype": "",
+    "rank_score": 1673,
+    "size": 2133,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SqosFilterUnloadInternal",
+    "ea": "0x1400126f8",
+    "function_file": "functions/1400126f8_SqosFilterUnloadInternal.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseCommunicationPort",
+      "FLTMGR!FltFreeGenericWorkItem",
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!ExDeleteLookasideListEx",
+      "ntoskrnl!PcwUnregister",
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "SqosFilterUnloadInternal",
+    "prototype": "",
+    "rank_score": 1648,
+    "size": 333,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SqospStartJob",
+    "ea": "0x140001380",
+    "function_file": "functions/140001380_SqospStartJob.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeAreAllApcsDisabled",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospStartJob",
+    "prototype": "",
+    "rank_score": 1640,
+    "size": 1452,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SqospCreateFlow",
+    "ea": "0x140005e88",
+    "function_file": "functions/140005e88_SqospCreateFlow.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromLookasideListEx",
+      "ntoskrnl!ExFreeToLookasideListEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!PcwCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "SqospCreateFlow",
+    "prototype": "__int64 __fastcall(PKSPIN_LOCK SpinLock)",
+    "rank_score": 1621,
+    "size": 427,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SqospAllocateStreamHandleContext",
+    "ea": "0x140003460",
+    "function_file": "functions/140003460_SqospAllocateStreamHandleContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltInitializePushLock",
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospAllocateStreamHandleContext",
+    "prototype": "",
+    "rank_score": 1607,
+    "size": 478,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SqospFailJob",
+    "ea": "0x140006b04",
+    "function_file": "functions/140006b04_SqospFailJob.md",
+    "matched_imports": [
+      "FLTMGR!FltCompletePendedPreOperation",
+      "FLTMGR!FltReferenceContext",
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeAreAllApcsDisabled",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospFailJob",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 1427,
+    "size": 324,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SqospInitializeJobDispatcher",
+    "ea": "0x140016078",
+    "function_file": "functions/140016078_SqospInitializeJobDispatcher.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeQueue",
+      "ntoskrnl!KeQueryMaximumProcessorCountEx",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "SqospInitializeJobDispatcher",
+    "prototype": "__int64 __fastcall(PVOID *Object)",
+    "rank_score": 1244,
+    "size": 363,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SqospHandleVolumeThroughputAllocation",
+    "ea": "0x140015570",
+    "function_file": "functions/140015570_SqospHandleVolumeThroughputAllocation.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!MmUnlockPages"
+    ],
+    "matched_strings": [],
+    "name": "SqospHandleVolumeThroughputAllocation",
+    "prototype": "__int64 __fastcall(PVOID VirtualAddress, ULONG Length)",
+    "rank_score": 1212,
+    "size": 662,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SqospHandleVolumeStatsRequest",
+    "ea": "0x140011f10",
+    "function_file": "functions/140011f10_SqospHandleVolumeStatsRequest.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!MmUnlockPages"
+    ],
+    "matched_strings": [],
+    "name": "SqospHandleVolumeStatsRequest",
+    "prototype": "",
+    "rank_score": 1206,
+    "size": 379,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "SqosPostCreate",
+    "ea": "0x140014420",
+    "function_file": "functions/140014420_SqosPostCreate.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "FLTMGR!FltSetStreamHandleContext"
+    ],
+    "matched_strings": [
+      "Created"
+    ],
+    "name": "SqosPostCreate",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 1050,
+    "size": 610,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SqospCompleteJob",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_SqospCompleteJob.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospCompleteJob",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 1042,
+    "size": 426,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "SqosPostReadWrite",
+    "ea": "0x1400011c0",
+    "function_file": "functions/1400011c0_SqosPostReadWrite.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqosPostReadWrite",
+    "prototype": "",
+    "rank_score": 1041,
+    "size": 434,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SqospLimiterProcessQueue",
+    "ea": "0x140006e98",
+    "function_file": "functions/140006e98_SqospLimiterProcessQueue.md",
+    "matched_imports": [
+      "FLTMGR!FltCbdqRemoveNextIo",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospLimiterProcessQueue",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 1021,
+    "size": 403,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SqosDelayedJobQueueCompleteCanceledIo",
+    "ea": "0x1400066e0",
+    "function_file": "functions/1400066e0_SqosDelayedJobQueueCompleteCanceledIo.md",
+    "matched_imports": [
+      "FLTMGR!FltCompletePendedPreOperation",
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext",
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExpInterlockedPushEntrySList"
+    ],
+    "matched_strings": [],
+    "name": "SqosDelayedJobQueueCompleteCanceledIo",
+    "prototype": "",
+    "rank_score": 1014,
+    "size": 215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SqospCleanupDevice",
+    "ea": "0x140011008",
+    "function_file": "functions/140011008_SqospCleanupDevice.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteLookasideListEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!PcwCloseInstance"
+    ],
+    "matched_strings": [],
+    "name": "SqospCleanupDevice",
+    "prototype": "",
+    "rank_score": 1014,
+    "size": 182,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BalanceUpdateStatsForStartingJob",
+    "ea": "0x140002bf0",
+    "function_file": "functions/140002bf0_BalanceUpdateStatsForStartingJob.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "BalanceUpdateStatsForStartingJob",
+    "prototype": "",
+    "rank_score": 833,
+    "size": 911,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SqospUpdateClientPolicy",
+    "ea": "0x140006424",
+    "function_file": "functions/140006424_SqospUpdateClientPolicy.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SqospUpdateClientPolicy",
+    "prototype": "__int64 __fastcall(PKSPIN_LOCK SpinLock)",
+    "rank_score": 829,
+    "size": 578,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SqospModifyStreamHandleContext",
+    "ea": "0x140006188",
+    "function_file": "functions/140006188_SqospModifyStreamHandleContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospModifyStreamHandleContext",
+    "prototype": "",
+    "rank_score": 820,
+    "size": 405,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PplpCreateLookasideListEx",
+    "ea": "0x140005b08",
+    "function_file": "functions/140005b08_PplpCreateLookasideListEx.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool3",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeLookasideListEx",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PplpCreateLookasideListEx",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 314,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SqospWriteVolumeStats",
+    "ea": "0x140007938",
+    "function_file": "functions/140007938_SqospWriteVolumeStats.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospWriteVolumeStats",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 1337,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "SqospCreateStreamHandleContext",
+    "ea": "0x14000603c",
+    "function_file": "functions/14000603c_SqospCreateStreamHandleContext.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetStreamHandleContext"
+    ],
+    "matched_strings": [],
+    "name": "SqospCreateStreamHandleContext",
+    "prototype": "",
+    "rank_score": 809,
+    "size": 323,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "SqospRemoveClient",
+    "ea": "0x140015810",
+    "function_file": "functions/140015810_SqospRemoveClient.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!RtlRbRemoveNode"
+    ],
+    "matched_strings": [],
+    "name": "SqospRemoveClient",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 808,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SqospRemoveDevice",
+    "ea": "0x140011c5c",
+    "function_file": "functions/140011c5c_SqospRemoveDevice.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltAcquirePushLockSharedEx",
+      "FLTMGR!FltReleasePushLockEx"
+    ],
+    "matched_strings": [],
+    "name": "SqospRemoveDevice",
+    "prototype": "",
+    "rank_score": 808,
+    "size": 354,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SqosPreReadWrite",
+    "ea": "0x1400142c0",
+    "function_file": "functions/1400142c0_SqosPreReadWrite.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltGetStreamHandleContext",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "SqosPreReadWrite",
+    "prototype": "",
+    "rank_score": 806,
+    "size": 334,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SqospGetRegistryUINT32",
+    "ea": "0x140014040",
+    "function_file": "functions/140014040_SqospGetRegistryUINT32.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "SqospGetRegistryUINT32",
+    "prototype": "",
+    "rank_score": 647,
+    "size": 485,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 7,
+    "demangled": "SqospDestroyJob",
+    "ea": "0x140001ab0",
+    "function_file": "functions/140001ab0_SqospDestroyJob.md",
+    "matched_imports": [
+      "FLTMGR!FltQueueGenericWorkItem",
+      "ntoskrnl!ExFreeToLookasideListEx",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "SqospDestroyJob",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 645,
+    "size": 268,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SqospQueueJobForDispatch",
+    "ea": "0x140003de0",
+    "function_file": "functions/140003de0_SqospQueueJobForDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!ExTryQueueWorkItem",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!KeInsertQueue"
+    ],
+    "matched_strings": [],
+    "name": "SqospQueueJobForDispatch",
+    "prototype": "",
+    "rank_score": 627,
+    "size": 205,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SqospGetParametersUINT32",
+    "ea": "0x140013e70",
+    "function_file": "functions/140013e70_SqospGetParametersUINT32.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "SqospGetParametersUINT32",
+    "prototype": "",
+    "rank_score": 618,
+    "size": 456,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SqospCreateJob",
+    "ea": "0x140003790",
+    "function_file": "functions/140003790_SqospCreateJob.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockSharedEx",
+      "FLTMGR!FltReleasePushLockEx",
+      "ntoskrnl!ExAllocateFromLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "SqospCreateJob",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 206,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SqosInstanceTeardownComplete",
+    "ea": "0x140012990",
+    "function_file": "functions/140012990_SqosInstanceTeardownComplete.md",
+    "matched_imports": [
+      "FLTMGR!FltDeleteInstanceContext",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "SqosInstanceTeardownComplete",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 211,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PplpLazyInitializeLookasideList",
+    "ea": "0x140004910",
+    "function_file": "functions/140004910_PplpLazyInitializeLookasideList.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeLookasideListEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PplpLazyInitializeLookasideList",
+    "prototype": "",
+    "rank_score": 614,
+    "size": 143,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SqosJobDispatcherThreadRoutine",
+    "ea": "0x140011dd0",
+    "function_file": "functions/140011dd0_SqosJobDispatcherThreadRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExTryQueueWorkItem",
+      "ntoskrnl!KeRemoveQueue",
+      "ntoskrnl!KeSetActualBasePriorityThread"
+    ],
+    "matched_strings": [],
+    "name": "SqosJobDispatcherThreadRoutine",
+    "prototype": "KSTART_ROUTINE",
+    "rank_score": 612,
+    "size": 121,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SqospQueryVolumeId",
+    "ea": "0x140011b00",
+    "function_file": "functions/140011b00_SqospQueryVolumeId.md",
+    "matched_imports": [
+      "FLTMGR!FltGetVolumeGuidName",
+      "ntoskrnl!RtlGUIDFromString",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SqospQueryVolumeId",
+    "prototype": "__int64 __fastcall(PFLT_VOLUME Volume)",
+    "rank_score": 608,
+    "size": 340,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SqospLookupFlow",
+    "ea": "0x140003870",
+    "function_file": "functions/140003870_SqospLookupFlow.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospLookupFlow",
+    "prototype": "__int64 __fastcall(PKSPIN_LOCK SpinLock)",
+    "rank_score": 606,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SqospTryAcquireDeviceLock",
+    "ea": "0x140004640",
+    "function_file": "functions/140004640_SqospTryAcquireDeviceLock.md",
+    "matched_imports": [
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeTryToAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "SqospTryAcquireDeviceLock",
+    "prototype": "",
+    "rank_score": 605,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SqosTraceStreamHandleContext",
+    "ea": "0x1400147e0",
+    "function_file": "functions/1400147e0_SqosTraceStreamHandleContext.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation"
+    ],
+    "matched_strings": [
+      "Created"
+    ],
+    "name": "SqosTraceStreamHandleContext",
+    "prototype": "",
+    "rank_score": 444,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "BalanceUpdateCostEstimatesInternal",
+    "ea": "0x1400056e0",
+    "function_file": "functions/1400056e0_BalanceUpdateCostEstimatesInternal.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "BalanceUpdateCostEstimatesInternal",
+    "prototype": "",
+    "rank_score": 432,
+    "size": 909,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SqospCompleteJobsOutsideLock",
+    "ea": "0x140002490",
+    "function_file": "functions/140002490_SqospCompleteJobsOutsideLock.md",
+    "matched_imports": [
+      "FLTMGR!FltCompletePendedPostOperation",
+      "FLTMGR!FltCompletePendedPreOperation"
+    ],
+    "matched_strings": [],
+    "name": "SqospCompleteJobsOutsideLock",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 173,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SqospDispatchDeferredJob",
+    "ea": "0x140006a38",
+    "function_file": "functions/140006a38_SqospDispatchDeferredJob.md",
+    "matched_imports": [
+      "FLTMGR!FltCompletePendedPreOperation",
+      "FLTMGR!FltLockUserBuffer"
+    ],
+    "matched_strings": [],
+    "name": "SqospDispatchDeferredJob",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 426,
+    "size": 196,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 6,
+    "demangled": "SqospProcessJobDispatcherContext",
+    "ea": "0x140001940",
+    "function_file": "functions/140001940_SqospProcessJobDispatcherContext.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "HAL!KeQueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "SqospProcessJobDispatcherContext",
+    "prototype": "",
+    "rank_score": 424,
+    "size": 361,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x140016920",
+    "function_file": "functions/140016920_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SqospQueueDeviceTimer",
+    "ea": "0x140004550",
+    "function_file": "functions/140004550_SqospQueueDeviceTimer.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "ntoskrnl!KeSetTimer"
+    ],
+    "matched_strings": [],
+    "name": "SqospQueueDeviceTimer",
+    "prototype": "__int64 __fastcall(PFLT_CONTEXT Context)",
+    "rank_score": 416,
+    "size": 89,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SqospDeviceUpdateVolumeId",
+    "ea": "0x140011730",
+    "function_file": "functions/140011730_SqospDeviceUpdateVolumeId.md",
+    "matched_imports": [
+      "FLTMGR!FltAcquirePushLockExclusiveEx",
+      "FLTMGR!FltReleasePushLockEx"
+    ],
+    "matched_strings": [],
+    "name": "SqospDeviceUpdateVolumeId",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 174,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SqospCleanupFlow",
+    "ea": "0x1400110c4",
+    "function_file": "functions/1400110c4_SqospCleanupFlow.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToLookasideListEx",
+      "ntoskrnl!PcwCloseInstance"
+    ],
+    "matched_strings": [],
+    "name": "SqospCleanupFlow",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 414,
+    "size": 77,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SqospCreateClient",
+    "ea": "0x140011138",
+    "function_file": "functions/140011138_SqospCreateClient.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromLookasideListEx",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospCreateClient",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 125,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "SqosMessageNotifyCallback",
+    "ea": "0x140012a70",
+    "function_file": "functions/140012a70_SqosMessageNotifyCallback.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "SqosMessageNotifyCallback",
+    "prototype": "NTSTATUS __stdcall(PVOID PortCookie, PVOID InputBuffer, ULONG InputBufferLength, PVOID OutputBuffer, ULONG OutputBufferLength, PULONG ReturnOutputBufferLength)",
+    "rank_score": 410,
+    "size": 513,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SqospCheckVolumeStatsLocked",
+    "ea": "0x140002620",
+    "function_file": "functions/140002620_SqospCheckVolumeStatsLocked.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospCheckVolumeStatsLocked",
+    "prototype": "",
+    "rank_score": 407,
+    "size": 350,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "SqospReleaseClient",
+    "ea": "0x140003940",
+    "function_file": "functions/140003940_SqospReleaseClient.md",
+    "matched_imports": [
+      "FLTMGR!FltQueueGenericWorkItem",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "SqospReleaseClient",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 407,
+    "size": 116,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SqospRemoveFlow",
+    "ea": "0x140004a8c",
+    "function_file": "functions/140004a8c_SqospRemoveFlow.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospRemoveFlow",
+    "prototype": "__int64 __fastcall(PKSPIN_LOCK SpinLock)",
+    "rank_score": 406,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SqospRemoveClientFlows",
+    "ea": "0x140004b3c",
+    "function_file": "functions/140004b3c_SqospRemoveClientFlows.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SqospRemoveClientFlows",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SqospSetVolumeStatsTimer",
+    "ea": "0x140007824",
+    "function_file": "functions/140007824_SqospSetVolumeStatsTimer.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "ntoskrnl!KeSetTimerEx"
+    ],
+    "matched_strings": [],
+    "name": "SqospSetVolumeStatsTimer",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x140013c40",
+    "function_file": "functions/140013c40_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x1400169e0",
+    "function_file": "functions/1400169e0_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "SqospCleanupClient",
+    "ea": "0x1400158a0",
+    "function_file": "functions/1400158a0_SqospCleanupClient.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "SqospCleanupClient",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 215,
+    "size": 62,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x1400084d0",
+    "function_file": "functions/1400084d0_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "PplpGenericAllocateFunction",
+    "ea": "0x140003d40",
+    "function_file": "functions/140003d40_PplpGenericAllocateFunction.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "PplpGenericAllocateFunction",
+    "prototype": "ALLOCATE_FUNCTION_EX",
+    "rank_score": 210,
+    "size": 26,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "PplpGenericFreeFunction",
+    "ea": "0x140003d60",
+    "function_file": "functions/140003d60_PplpGenericFreeFunction.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "PplpGenericFreeFunction",
+    "prototype": "FREE_FUNCTION_EX",
+    "rank_score": 210,
+    "size": 32,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "SqospFreeUnicodeString",
+    "ea": "0x140003ec0",
+    "function_file": "functions/140003ec0_SqospFreeUnicodeString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SqospFreeUnicodeString",
+    "prototype": "",
+    "rank_score": 208,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SqospAllocateUnicodeString",
+    "ea": "0x140003a80",
+    "function_file": "functions/140003a80_SqospAllocateUnicodeString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "SqospAllocateUnicodeString",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 225,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "SqospAllocate",
+    "ea": "0x1400089b8",
+    "function_file": "functions/1400089b8_SqospAllocate.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "SqospAllocate",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "SqospFlushDeferredJobList",
+    "ea": "0x1400025e0",
+    "function_file": "functions/1400025e0_SqospFlushDeferredJobList.md",
+    "matched_imports": [
+      "ntoskrnl!ExpInterlockedFlushSList"
+    ],
+    "matched_strings": [],
+    "name": "SqospFlushDeferredJobList",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "SqospFree",
+    "ea": "0x140008a54",
+    "function_file": "functions/140008a54_SqospFree.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SqospFree",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BalanceRemoveFirstDelayedJob",
+    "ea": "0x1400054ac",
+    "function_file": "functions/1400054ac_BalanceRemoveFirstDelayedJob.md",
+    "matched_imports": [
+      "FLTMGR!FltCbdqRemoveIo"
+    ],
+    "matched_strings": [],
+    "name": "BalanceRemoveFirstDelayedJob",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SqosPreClose",
+    "ea": "0x140014740",
+    "function_file": "functions/140014740_SqosPreClose.md",
+    "matched_imports": [
+      "FLTMGR!FltDeleteStreamHandleContext"
+    ],
+    "matched_strings": [],
+    "name": "SqosPreClose",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 152,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DvpRemoveWorkQueueRunningDown",
+    "ea": "0x140008aec",
+    "function_file": "functions/140008aec_DvpRemoveWorkQueueRunningDown.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "DvpRemoveWorkQueueRunningDown",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140008d60",
+    "function_file": "functions/140008d60_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BalanceUpdateDeviceStats",
+    "ea": "0x140001d10",
+    "function_file": "functions/140001d10_BalanceUpdateDeviceStats.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceUpdateDeviceStats",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 1101,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BalanceUpdateStatsForCompletedJob",
+    "ea": "0x140001bd0",
+    "function_file": "functions/140001bd0_BalanceUpdateStatsForCompletedJob.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceUpdateStatsForCompletedJob",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 306,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140008d20",
+    "function_file": "functions/140008d20_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 26,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140008b7c",
+    "function_file": "functions/140008b7c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140016010",
+    "function_file": "functions/140016010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "WPP_SF_d",
+    "ea": "0x14000666c",
+    "function_file": "functions/14000666c_WPP_SF_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x140013ba0",
+    "function_file": "functions/140013ba0_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "BalanceCompleteJob",
+    "ea": "0x140003080",
+    "function_file": "functions/140003080_BalanceCompleteJob.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceCompleteJob",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 194,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BalanceComputeThroughputFunction",
+    "ea": "0x1400031a0",
+    "function_file": "functions/1400031a0_BalanceComputeThroughputFunction.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceComputeThroughputFunction",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 686,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "BalanceIssueJob",
+    "ea": "0x140002a30",
+    "function_file": "functions/140002a30_BalanceIssueJob.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceIssueJob",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 433,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SqospFlushDeferredJobCompletions",
+    "ea": "0x140002550",
+    "function_file": "functions/140002550_SqospFlushDeferredJobCompletions.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SqospFlushDeferredJobCompletions",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 130,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "BalanceUpdateDeviceMode",
+    "ea": "0x140005a74",
+    "function_file": "functions/140005a74_BalanceUpdateDeviceMode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceUpdateDeviceMode",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 47,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BalanceUpdateFlowAverageStats",
+    "ea": "0x1400021b0",
+    "function_file": "functions/1400021b0_BalanceUpdateFlowAverageStats.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceUpdateFlowAverageStats",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 326,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "memset",
+    "ea": "0x140009240",
+    "function_file": "functions/140009240_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 14,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x1400139e8",
+    "function_file": "functions/1400139e8_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x140013aa4",
+    "function_file": "functions/140013aa4_wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DvRemoveOrderedWorkQueue",
+    "ea": "0x140008a8c",
+    "function_file": "functions/140008a8c_DvRemoveOrderedWorkQueue.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DvRemoveOrderedWorkQueue",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 88,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SqosClientNodeComparisonRoutine",
+    "ea": "0x140005dc4",
+    "function_file": "functions/140005dc4_SqosClientNodeComparisonRoutine.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SqosClientNodeComparisonRoutine",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 25,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140016044",
+    "function_file": "functions/140016044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "BalanceUpdateMovingAverage",
+    "ea": "0x140002170",
+    "function_file": "functions/140002170_BalanceUpdateMovingAverage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceUpdateMovingAverage",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 50,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SqosDelayedJobQueueRemoveIo",
+    "ea": "0x140006890",
+    "function_file": "functions/140006890_SqosDelayedJobQueueRemoveIo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SqosDelayedJobQueueRemoveIo",
+    "prototype": "void __stdcall(PFLT_CALLBACK_DATA_QUEUE Cbdq, PFLT_CALLBACK_DATA Cbd)",
+    "rank_score": 11,
+    "size": 56,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "WPP_SF_q",
+    "ea": "0x140008368",
+    "function_file": "functions/140008368_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "WPP_SF_D",
+    "ea": "0x140008250",
+    "function_file": "functions/140008250_WPP_SF_D.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_D",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "memmove",
+    "ea": "0x140008f40",
+    "function_file": "functions/140008f40_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 8,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x1400084a4",
+    "function_file": "functions/1400084a4_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SqospLimiterReplenishQuota",
+    "ea": "0x140007094",
+    "function_file": "functions/140007094_SqospLimiterReplenishQuota.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SqospLimiterReplenishQuota",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 411,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x1400083b4",
+    "function_file": "functions/1400083b4_WPP_SF_qD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SqospCopyUnicodeString",
+    "ea": "0x140003a10",
+    "function_file": "functions/140003a10_SqospCopyUnicodeString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SqospCopyUnicodeString",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING DestinationString, PCUNICODE_STRING SourceString)",
+    "rank_score": 6,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_SF_sqZ_guid_DD",
+    "ea": "0x140008880",
+    "function_file": "functions/140008880_WPP_SF_sqZ_guid_DD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_sqZ_guid_DD",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "BalanceSetFlowMinimumIoRate",
+    "ea": "0x140004c50",
+    "function_file": "functions/140004c50_BalanceSetFlowMinimumIoRate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceSetFlowMinimumIoRate",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 50,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "BalanceSetLatencyTarget",
+    "ea": "0x140005614",
+    "function_file": "functions/140005614_BalanceSetLatencyTarget.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceSetLatencyTarget",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RtlUnicodeStringCopy",
+    "ea": "0x140003be0",
+    "function_file": "functions/140003be0_RtlUnicodeStringCopy.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlUnicodeStringCopy",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DestinationString, PCUNICODE_STRING SourceString)",
+    "rank_score": 5,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "RtlUnicodeStringValidateDestWorker",
+    "ea": "0x140003b70",
+    "function_file": "functions/140003b70_RtlUnicodeStringValidateDestWorker.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlUnicodeStringValidateDestWorker",
+    "prototype": "NTSTATUS __stdcall(PCUNICODE_STRING DestinationString, wchar_t **ppszDest, size_t *pcchDest, size_t *pcchDestLength, const size_t cchMax, ULONG dwFlags)",
+    "rank_score": 5,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SqosPreCreate",
+    "ea": "0x140014690",
+    "function_file": "functions/140014690_SqosPreCreate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SqosPreCreate",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 165,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "memcmp",
+    "ea": "0x140008e20",
+    "function_file": "functions/140008e20_memcmp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memcmp",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 5,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "BalanceRestoreCostEstimates",
+    "ea": "0x140004280",
+    "function_file": "functions/140004280_BalanceRestoreCostEstimates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceRestoreCostEstimates",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BalanceSetLowerThreshold",
+    "ea": "0x140005684",
+    "function_file": "functions/140005684_BalanceSetLowerThreshold.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceSetLowerThreshold",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "RtlUnicodeStringValidateWorker",
+    "ea": "0x140003c90",
+    "function_file": "functions/140003c90_RtlUnicodeStringValidateWorker.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlUnicodeStringValidateWorker",
+    "prototype": "NTSTATUS __stdcall(PCUNICODE_STRING SourceString, const size_t cchMax, ULONG dwFlags)",
+    "rank_score": 4,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SqospAreExternalDeviceCostEstimatesValid",
+    "ea": "0x140004610",
+    "function_file": "functions/140004610_SqospAreExternalDeviceCostEstimatesValid.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SqospAreExternalDeviceCostEstimatesValid",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x1400139ac",
+    "function_file": "functions/1400139ac_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SqospWriteUnicodeString",
+    "ea": "0x1400078e4",
+    "function_file": "functions/1400078e4_SqospWriteUnicodeString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SqospWriteUnicodeString",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14001390c",
+    "function_file": "functions/14001390c_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlWideCharArrayCopyWorker",
+    "ea": "0x140003ce0",
+    "function_file": "functions/140003ce0_RtlWideCharArrayCopyWorker.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWideCharArrayCopyWorker",
+    "prototype": "NTSTATUS __stdcall(wchar_t *pszDest, size_t cchDest, size_t *pcchNewDestLength, const wchar_t *pszSrc, size_t cchSrcLength)",
+    "rank_score": 2,
+    "size": 79,
+    "tags": []
+  }
+]

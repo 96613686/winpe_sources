@@ -1,0 +1,874 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LsapMakeLowBoxRpcSD",
+    "ea": "0x18000235c",
+    "function_file": "functions/18000235c_LsapMakeLowBoxRpcSD.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlCreateAndSetSD",
+      "ntdll!RtlDeriveCapabilitySidsFromName",
+      "ntdll!RtlFreeSid"
+    ],
+    "matched_strings": [
+      "lpacIdentityServices"
+    ],
+    "name": "LsapMakeLowBoxRpcSD",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 2890,
+    "size": 944,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180002008",
+    "function_file": "functions/180002008_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspiSrvInitialize",
+    "ea": "0x180002840",
+    "function_file": "functions/180002840_SspiSrvInitialize.md",
+    "matched_imports": [
+      "RPCRT4!I_RpcMapWin32Status",
+      "RPCRT4!RpcServerRegisterIf3",
+      "RPCRT4!RpcServerUseProtseqEpW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SspiSrvInitialize",
+    "prototype": "int __fastcall(__int64)",
+    "rank_score": 1034,
+    "size": 257,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CheckLowboxAccess",
+    "ea": "0x1800019b0",
+    "function_file": "functions/1800019b0_CheckLowboxAccess.md",
+    "matched_imports": [
+      "RPCRT4!RpcImpersonateClient",
+      "RPCRT4!RpcRevertToSelfEx",
+      "ntdll!NtClose",
+      "ntdll!NtOpenThreadToken",
+      "ntdll!NtQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "CheckLowboxAccess",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1033,
+    "size": 254,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180002124",
+    "function_file": "functions/180002124_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SspirGetInprocDispatchTable",
+    "ea": "0x180002b70",
+    "function_file": "functions/180002b70_SspirGetInprocDispatchTable.md",
+    "matched_imports": [
+      "RPCRT4!I_RpcMapWin32Status",
+      "RPCRT4!RpcServerInqCallAttributesW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspirGetInprocDispatchTable",
+    "prototype": "",
+    "rank_score": 634,
+    "size": 195,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x180002160",
+    "function_file": "functions/180002160_report_gsfailure.md",
+    "matched_imports": [
+      "ntdll!RtlCaptureContext",
+      "ntdll!RtlLookupFunctionEntry",
+      "ntdll!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 626,
+    "size": 416,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspiSrvClientCallback",
+    "ea": "0x180002740",
+    "function_file": "functions/180002740_SspiSrvClientCallback.md",
+    "matched_imports": [
+      "RPCRT4!I_RpcExceptionFilter",
+      "RPCRT4!I_RpcMapWin32Status",
+      "RPCRT4!NdrClientCall3"
+    ],
+    "matched_strings": [],
+    "name": "SspiSrvClientCallback",
+    "prototype": "",
+    "rank_score": 603,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "_CRT_INIT",
+    "ea": "0x180001dac",
+    "function_file": "functions/180001dac_CRT_INIT.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "_CRT_INIT",
+    "prototype": "",
+    "rank_score": 418,
+    "size": 222,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "__GSHandlerCheck_SEH",
+    "ea": "0x180003360",
+    "function_file": "functions/180003360_GSHandlerCheck_SEH.md",
+    "matched_imports": [
+      "api-ms-win-core-crt-l1-1-0!__C_specific_handler"
+    ],
+    "matched_strings": [],
+    "name": "__GSHandlerCheck_SEH",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_RECORD *ExceptionRecord, void *EstablisherFrame, struct _CONTEXT *ContextRecord, struct _DISPATCHER_CONTEXT *DispatcherContext)",
+    "rank_score": 232,
+    "size": 104,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirLookupAccountSid",
+    "ea": "0x180001ca0",
+    "function_file": "functions/180001ca0_SspirLookupAccountSid.md",
+    "matched_imports": [
+      "ntdll!RtlValidSid"
+    ],
+    "matched_strings": [],
+    "name": "SspirLookupAccountSid",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 248,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "SspiSrvCallBegin",
+    "ea": "0x180002714",
+    "function_file": "functions/180002714_SspiSrvCallBegin.md",
+    "matched_imports": [
+      "ntdll!EtwEventActivityIdControl"
+    ],
+    "matched_strings": [],
+    "name": "SspiSrvCallBegin",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 35,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180002104",
+    "function_file": "functions/180002104_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 212,
+    "size": 25,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "memset_0",
+    "ea": "0x1800032c4",
+    "function_file": "functions/1800032c4_memset_0.md",
+    "matched_imports": [
+      "api-ms-win-core-crt-l1-1-0!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_decode_pointer",
+    "ea": "0x180001fe8",
+    "function_file": "functions/180001fe8_decode_pointer.md",
+    "matched_imports": [
+      "api-ms-win-core-util-l1-1-0!DecodePointer"
+    ],
+    "matched_strings": [],
+    "name": "_decode_pointer",
+    "prototype": "PVOID __stdcall(PVOID Ptr)",
+    "rank_score": 101,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_encoded_null",
+    "ea": "0x180001ff8",
+    "function_file": "functions/180001ff8_encoded_null.md",
+    "matched_imports": [
+      "api-ms-win-core-util-l1-1-0!EncodePointer"
+    ],
+    "matched_strings": [],
+    "name": "_encoded_null",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 9,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_initterm_0",
+    "ea": "0x1800020f7",
+    "function_file": "functions/1800020f7_initterm_0.md",
+    "matched_imports": [
+      "api-ms-win-core-crt-l2-1-0!_initterm"
+    ],
+    "matched_strings": [],
+    "name": "_initterm_0",
+    "prototype": "void __cdecl(_PVFV *First, _PVFV *Last)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_initterm_e_0",
+    "ea": "0x1800020eb",
+    "function_file": "functions/1800020eb_initterm_e_0.md",
+    "matched_imports": [
+      "api-ms-win-core-crt-l2-1-0!_initterm_e"
+    ],
+    "matched_strings": [],
+    "name": "_initterm_e_0",
+    "prototype": "int __cdecl(_PIFV *First, _PIFV *Last)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "memcpy_0",
+    "ea": "0x1800032b8",
+    "function_file": "functions/1800032b8_memcpy_0.md",
+    "matched_imports": [
+      "api-ms-win-core-crt-l1-1-0!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspirProcessSecurityContext",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_SspirProcessSecurityContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirProcessSecurityContext",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, __int64, __int64, __int128 *, __int128 *, int, int, __int64, __int64, __int64, __int64, __int64, __int64, __int64, _OWORD *, __int64, __int64, __int64, __int64, __int64)",
+    "rank_score": 29,
+    "size": 652,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 18,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180004010",
+    "function_file": "functions/180004010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 29,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1800033f0",
+    "function_file": "functions/1800033f0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 26,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspirDeleteSecurityContext",
+    "ea": "0x180001470",
+    "function_file": "functions/180001470_SspirDeleteSecurityContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirDeleteSecurityContext",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 144,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1800032f4",
+    "function_file": "functions/1800032f4_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001e90",
+    "function_file": "functions/180001e90_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SspirLogonUser",
+    "ea": "0x1800016d0",
+    "function_file": "functions/1800016d0_SspirLogonUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirLogonUser",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, __int64, unsigned int, int, __int64, __int64, unsigned int *, int, __int64, __int64, _QWORD *, __int64, __int64, _QWORD *, _OWORD *)",
+    "rank_score": 20,
+    "size": 726,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SspirCallRpc",
+    "ea": "0x1800012b0",
+    "function_file": "functions/1800012b0_SspirCallRpc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirCallRpc",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, const void *, _DWORD *, __int16 **, __int64)",
+    "rank_score": 18,
+    "size": 276,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspirAcquireCredentialsHandle",
+    "ea": "0x180001540",
+    "function_file": "functions/180001540_SspirAcquireCredentialsHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirAcquireCredentialsHandle",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 392,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SspirNegQueryContextAttributes",
+    "ea": "0x180002e10",
+    "function_file": "functions/180002e10_SspirNegQueryContextAttributes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirNegQueryContextAttributes",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 256,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SspirSslQueryCredentialsAttributes",
+    "ea": "0x180003060",
+    "function_file": "functions/180003060_SspirSslQueryCredentialsAttributes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirSslQueryCredentialsAttributes",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 282,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001ed4",
+    "function_file": "functions/180001ed4_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 16,
+    "size": 257,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "MIDL_user_free",
+    "ea": "0x1800013d0",
+    "function_file": "functions/1800013d0_MIDL_user_free.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MIDL_user_free",
+    "prototype": "void __stdcall(void *)",
+    "rank_score": 15,
+    "size": 38,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspirApplyControlToken",
+    "ea": "0x180001c10",
+    "function_file": "functions/180001c10_SspirApplyControlToken.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirApplyControlToken",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 132,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "LSA_SSPI_HANDLE_rundown",
+    "ea": "0x180001be0",
+    "function_file": "functions/180001be0_LSA_SSPI_HANDLE_rundown.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LSA_SSPI_HANDLE_rundown",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 38,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MIDL_user_allocate",
+    "ea": "0x180001510",
+    "function_file": "functions/180001510_MIDL_user_allocate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MIDL_user_allocate",
+    "prototype": "void *__stdcall(size_t size)",
+    "rank_score": 14,
+    "size": 31,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspirFreeCredentialsHandle",
+    "ea": "0x180001ac0",
+    "function_file": "functions/180001ac0_SspirFreeCredentialsHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirFreeCredentialsHandle",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 127,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirProcessSecurityContext2",
+    "ea": "0x180002f20",
+    "function_file": "functions/180002f20_SspirProcessSecurityContext2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirProcessSecurityContext2",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 311,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SspirSslSetCredentialsAttributes",
+    "ea": "0x180003180",
+    "function_file": "functions/180003180_SspirSslSetCredentialsAttributes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirSslSetCredentialsAttributes",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 142,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SspirSslSetCredentialsAttributesEx",
+    "ea": "0x180003220",
+    "function_file": "functions/180003220_SspirSslSetCredentialsAttributesEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirSslSetCredentialsAttributesEx",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 146,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SspirGetUserName",
+    "ea": "0x180001400",
+    "function_file": "functions/180001400_SspirGetUserName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirGetUserName",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 105,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180003430",
+    "function_file": "functions/180003430_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirConnectRpc",
+    "ea": "0x180001b50",
+    "function_file": "functions/180001b50_SspirConnectRpc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirConnectRpc",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 84,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirDeleteSecurityContext2",
+    "ea": "0x180002ad0",
+    "function_file": "functions/180002ad0_SspirDeleteSecurityContext2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirDeleteSecurityContext2",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 66,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirLogonSystemManagedAdmin",
+    "ea": "0x180002ca0",
+    "function_file": "functions/180002ca0_SspirLogonSystemManagedAdmin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirLogonSystemManagedAdmin",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 113,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x180003490",
+    "function_file": "functions/180003490_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirAcquireCredentialsHandle2",
+    "ea": "0x180002950",
+    "function_file": "functions/180002950_SspirAcquireCredentialsHandle2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirAcquireCredentialsHandle2",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirLogonUser2",
+    "ea": "0x180002d20",
+    "function_file": "functions/180002d20_SspirLogonUser2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirLogonUser2",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 231,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirApplyControlToken2",
+    "ea": "0x180002a20",
+    "function_file": "functions/180002a20_SspirApplyControlToken2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirApplyControlToken2",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 66,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirCallRpc2",
+    "ea": "0x180002a70",
+    "function_file": "functions/180002a70_SspirCallRpc2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirCallRpc2",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirFreeCredentialsHandle2",
+    "ea": "0x180002b20",
+    "function_file": "functions/180002b20_SspirFreeCredentialsHandle2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirFreeCredentialsHandle2",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 66,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspirGetUserName2",
+    "ea": "0x180002c40",
+    "function_file": "functions/180002c40_SspirGetUserName2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspirGetUserName2",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 76,
+    "tags": []
+  }
+]
