@@ -1,0 +1,52 @@
+# wil::details::ReportFailure_CaughtExceptionCommon<3>(void *,uint,char const *,char const *,char const *,void *,ushort *,unsigned __int64,wil::SupportedExceptions)
+
+- ea: `0x1800065ac`
+- end: `0x1800065d5`
+- name: `??$ReportFailure_CaughtExceptionCommon@$02@details@wil@@YA?AUResultStatus@01@PEAXIPEBD110PEAG_KW4SupportedExceptions@1@@Z`
+- size: `41`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18000655c`
+
+## callees
+
+- `0x1800065dc`
+
+## pseudocode
+
+```c
+void __fastcall __noreturn wil::details::ReportFailure_CaughtExceptionCommon<3>(
+        __int64 a1,
+        int a2,
+        int a3,
+        __int64 a4,
+        int a5,
+        int a6,
+        __int64 a7,
+        __int64 a8)
+{
+  int v8; // [rsp+20h] [rbp-48h]
+  int v9; // [rsp+28h] [rbp-40h]
+  _BYTE v10[24]; // [rsp+50h] [rbp-18h] BYREF
+
+  wil::details::ReportFailure_CaughtExceptionCommonNoReturnBase<3>((__int64)v10, a2, a3, a4, v8, v9, a7, a8);
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800065ac  sub     rsp, 68h
+0x1800065b0  mov     rax, [rsp+68h+arg_38]
+0x1800065b8  lea     rcx, [rsp+68h+var_18]
+0x1800065bd  mov     [rsp+68h+var_30], rax
+0x1800065c2  mov     rax, [rsp+68h+arg_30]
+0x1800065ca  mov     [rsp+68h+var_38], rax
+0x1800065cf  call    ??$ReportFailure_CaughtExceptionCommonNoReturnBase@$02@details@wil@@YA?AUResultStatus@01@PEAXIPEBD110PEAG_KW4SupportedExceptions@1@@Z; wil::details::ReportFailure_CaughtExceptionCommonNoReturnBase<3>(void *,uint,char const *,char const *,char const *,void *,ushort *,unsigned __int64,wil::SupportedExceptions)
+```
