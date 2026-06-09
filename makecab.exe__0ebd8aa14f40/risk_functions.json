@@ -1,0 +1,2025 @@
+[
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "fciOpenUNC",
+    "ea": "0x140005c80",
+    "function_file": "functions/140005c80_fciOpenUNC.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileA",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!Sleep",
+      "msvcrt!_errno",
+      "msvcrt!_open_osfhandle",
+      "msvcrt!ctime",
+      "msvcrt!printf",
+      "msvcrt!time"
+    ],
+    "matched_strings": [
+      "[%.19s] File open error (Win32Error=0x%X), retrying %s\n",
+      "_open_osfhandle(%s) failed errno=%d\n",
+      "[%.19s] File open error (Win32Error=0x%X), %s\n"
+    ],
+    "name": "fciOpenUNC",
+    "prototype": "",
+    "rank_score": 3542,
+    "size": 780,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "ensureDirectoryUNC",
+    "ea": "0x140009454",
+    "function_file": "functions/140009454_ensureDirectoryUNC.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateDirectoryW",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetLastError",
+      "USER32!CharNextExA",
+      "msvcrt!__doserrno",
+      "msvcrt!_errno",
+      "msvcrt!printf"
+    ],
+    "matched_strings": [
+      "Could not create file in directory: %1",
+      "EnsureDirectory: Cant create file: %s, errno=%d, _doserrno=%d, GLE=%d\n",
+      "Path is invalid: %1",
+      "Ran out of temp file names after %1 attempts: %2"
+    ],
+    "name": "ensureDirectoryUNC",
+    "prototype": "",
+    "rank_score": 3198,
+    "size": 1066,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "ensureDirectory",
+    "ea": "0x14000907c",
+    "function_file": "functions/14000907c_ensureDirectory.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetLastError",
+      "USER32!CharNextExA",
+      "msvcrt!__doserrno",
+      "msvcrt!_close",
+      "msvcrt!_errno",
+      "msvcrt!_mkdir",
+      "msvcrt!_open",
+      "msvcrt!_unlink",
+      "msvcrt!printf"
+    ],
+    "matched_strings": [
+      "Could not create file in directory: %1",
+      "EnsureDirectory: Cant create file: %s, errno=%d, _doserrno=%d, GLE=%d\n",
+      "Path is invalid: %1",
+      "Ran out of temp file names after %1 attempts: %2"
+    ],
+    "name": "ensureDirectory",
+    "prototype": "__int64 __fastcall(LPCSTR lpCurrentChar)",
+    "rank_score": 3197,
+    "size": 978,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "main",
+    "ea": "0x140006a6c",
+    "function_file": "functions/140006a6c_main.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetVersion",
+      "msvcrt!clock",
+      "msvcrt!exit",
+      "msvcrt!free",
+      "msvcrt!malloc",
+      "msvcrt!printf",
+      "msvcrt!setvbuf"
+    ],
+    "matched_strings": [
+      "Kernel32.dll",
+      "Cabinet Maker - Lossless Data Compression Tool\n\n",
+      "MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]\nMAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]\n\n  source         File to compress.\n  destination    File name to give compressed file.  If omitted, the\n                 last character of the source file name is replaced\n                 with an underscore (_) and used as the destination.\n  /F directives  A file with MakeCAB directives (may be repeated). Refer to\n                 Microsoft Cabinet SDK for information on "
+    ],
+    "name": "main",
+    "prototype": "int __fastcall(int argc, const char **argv, const char **envp)",
+    "rank_score": 3163,
+    "size": 919,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "FGetTTFVersion",
+    "ea": "0x14000d9c8",
+    "function_file": "functions/14000d9c8_FGetTTFVersion.md",
+    "matched_imports": [
+      "msvcrt!_close",
+      "msvcrt!_lseek",
+      "msvcrt!_open",
+      "msvcrt!_read",
+      "msvcrt!_stricmp",
+      "msvcrt!atol",
+      "msvcrt!strpbrk",
+      "msvcrt!strspn"
+    ],
+    "matched_strings": [],
+    "name": "FGetTTFVersion",
+    "prototype": "",
+    "rank_score": 3010,
+    "size": 808,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "infCreate",
+    "ea": "0x14000c6d4",
+    "function_file": "functions/14000c6d4_infCreate.md",
+    "matched_imports": [
+      "msvcrt!_strdup",
+      "msvcrt!fclose",
+      "msvcrt!fopen",
+      "msvcrt!fprintf",
+      "msvcrt!free",
+      "msvcrt!malloc",
+      "msvcrt!toupper"
+    ],
+    "matched_strings": [
+      "Cannot create %1",
+      "Cannot create %1: %2",
+      "INF header variable template"
+    ],
+    "name": "infCreate",
+    "prototype": "__int64 __fastcall(void *Src, __int64)",
+    "rank_score": 2938,
+    "size": 977,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "getCommand",
+    "ea": "0x140002c80",
+    "function_file": "functions/140002c80_getCommand.md",
+    "matched_imports": [
+      "msvcrt!_stricmp",
+      "msvcrt!strpbrk",
+      "msvcrt!strspn"
+    ],
+    "matched_strings": [
+      "Delete",
+      "Delete",
+      "No variable name in %1 command",
+      "Command name too long: %1",
+      "Unexpected parameters on %1 command: %2",
+      "%1 command without %2 command",
+      "Unknown command: %1"
+    ],
+    "name": "getCommand",
+    "prototype": "",
+    "rank_score": 2918,
+    "size": 1205,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "fciOpen",
+    "ea": "0x1400058e0",
+    "function_file": "functions/1400058e0_fciOpen.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileA",
+      "KERNEL32!GetLastError",
+      "KERNEL32!Sleep",
+      "msvcrt!_errno",
+      "msvcrt!_open_osfhandle",
+      "msvcrt!ctime",
+      "msvcrt!printf",
+      "msvcrt!time"
+    ],
+    "matched_strings": [
+      "[%.19s] File open error (Win32Error=0x%X), retrying %s\n",
+      "_open_osfhandle(%s) failed errno=%d\n"
+    ],
+    "name": "fciOpen",
+    "prototype": "INT_PTR __cdecl(LPSTR pszFile, int oflag, int pmode, int *err, void *pv)",
+    "rank_score": 2695,
+    "size": 500,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "buildInfAndRpt",
+    "ea": "0x140003f68",
+    "function_file": "functions/140003f68_buildInfAndRpt.md",
+    "matched_imports": [
+      "msvcrt!ctime",
+      "msvcrt!fclose",
+      "msvcrt!fopen",
+      "msvcrt!fprintf",
+      "msvcrt!time"
+    ],
+    "matched_strings": [
+      "Cannot create report file: %1",
+      "After/Before:           %1%% compression"
+    ],
+    "name": "buildInfAndRpt",
+    "prototype": "",
+    "rank_score": 2317,
+    "size": 1065,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "TFOpen",
+    "ea": "0x14000d888",
+    "function_file": "functions/14000d888_TFOpen.md",
+    "matched_imports": [
+      "msvcrt!_lseek",
+      "msvcrt!_open",
+      "msvcrt!_read",
+      "msvcrt!_strdup",
+      "msvcrt!free",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "Could not open file %1",
+      "Out of memory opening file: %1"
+    ],
+    "name": "TFOpen",
+    "prototype": "__int64 __fastcall(char *Source)",
+    "rank_score": 2285,
+    "size": 313,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CopyOneFile",
+    "ea": "0x14000873c",
+    "function_file": "functions/14000873c_CopyOneFile.md",
+    "matched_imports": [
+      "msvcrt!_close",
+      "msvcrt!_eof",
+      "msvcrt!_open",
+      "msvcrt!_read",
+      "msvcrt!_write",
+      "msvcrt!free",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "Cannot open file: %1",
+      "Cannot open file: %1",
+      "Could not allocate buffer to copy %1 to %2",
+      "Cannot read file: %1",
+      "Cannot write file: %1"
+    ],
+    "name": "CopyOneFile",
+    "prototype": "",
+    "rank_score": 2221,
+    "size": 535,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "catTempFile",
+    "ea": "0x14000acd8",
+    "function_file": "functions/14000acd8_catTempFile.md",
+    "matched_imports": [
+      "msvcrt!fclose",
+      "msvcrt!feof",
+      "msvcrt!ferror",
+      "msvcrt!fopen",
+      "msvcrt!fread",
+      "msvcrt!free",
+      "msvcrt!fwrite",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "Cannot open %1: %2",
+      "Out of memory copying %1 %2 to %3",
+      "Read failed copying %1 %2 to %3",
+      "Write failed copying %1 %2 to %3"
+    ],
+    "name": "catTempFile",
+    "prototype": "",
+    "rank_score": 2167,
+    "size": 408,
+    "tags": []
+  },
+  {
+    "callee_count": 28,
+    "caller_count": 1,
+    "demangled": "doFile",
+    "ea": "0x14000488c",
+    "function_file": "functions/14000488c_doFile.md",
+    "matched_imports": [
+      "Cabinet!__imp_FCIAddFile",
+      "Cabinet!__imp_FCIFlushFolder",
+      "msvcrt!atoi",
+      "msvcrt!atol"
+    ],
+    "matched_strings": [
+      "DoNotCopyFiles",
+      "CopyCommand: %1 to %2",
+      "Variable %1 may not be combined with Variable %2",
+      "NOT IMPLEMENTED YET: compressing single files: %1"
+    ],
+    "name": "doFile",
+    "prototype": "",
+    "rank_score": 1820,
+    "size": 1792,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SetFileTimeAndAttr",
+    "ea": "0x140008d20",
+    "function_file": "functions/140008d20_SetFileTimeAndAttr.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileA",
+      "KERNEL32!DosDateTimeToFileTime",
+      "KERNEL32!LocalFileTimeToFileTime",
+      "KERNEL32!SetFileAttributesA",
+      "KERNEL32!SetFileTime",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "SetFileTimeAndAttr",
+    "prototype": "",
+    "rank_score": 1615,
+    "size": 318,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "parseParameterList",
+    "ea": "0x1400034e4",
+    "function_file": "functions/1400034e4_parseParameterList.md",
+    "matched_imports": [
+      "msvcrt!_strdup",
+      "msvcrt!free",
+      "msvcrt!malloc",
+      "msvcrt!strpbrk",
+      "msvcrt!strspn"
+    ],
+    "matched_strings": [],
+    "name": "parseParameterList",
+    "prototype": "",
+    "rank_score": 1414,
+    "size": 605,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "getFileChecksum",
+    "ea": "0x1400066f4",
+    "function_file": "functions/1400066f4_getFileChecksum.md",
+    "matched_imports": [
+      "msvcrt!_close",
+      "msvcrt!_eof",
+      "msvcrt!_open",
+      "msvcrt!_read",
+      "msvcrt!free",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "Could not open file: %1",
+      "Read failure doing CRC on file: %1"
+    ],
+    "name": "getFileChecksum",
+    "prototype": "",
+    "rank_score": 1285,
+    "size": 311,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "infDestroy",
+    "ea": "0x14000caac",
+    "function_file": "functions/14000caac_infDestroy.md",
+    "matched_imports": [
+      "msvcrt!fclose",
+      "msvcrt!free",
+      "msvcrt!remove"
+    ],
+    "matched_strings": [
+      "Cannot delete %1: %2"
+    ],
+    "name": "infDestroy",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 1257,
+    "size": 204,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "MsgSetWorker",
+    "ea": "0x14000cec0",
+    "function_file": "functions/14000cec0_MsgSetWorker.md",
+    "matched_imports": [
+      "msvcrt!atoi",
+      "msvcrt!isdigit"
+    ],
+    "matched_strings": [],
+    "name": "MsgSetWorker",
+    "prototype": "",
+    "rank_score": 1230,
+    "size": 1468,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140001844",
+    "function_file": "functions/140001844_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "BOOLfromPSZ",
+    "ea": "0x140001a24",
+    "function_file": "functions/140001a24_BOOLfromPSZ.md",
+    "matched_imports": [
+      "msvcrt!_stricmp"
+    ],
+    "matched_strings": [],
+    "name": "BOOLfromPSZ",
+    "prototype": "__int64 __fastcall(char *String1)",
+    "rank_score": 1207,
+    "size": 217,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "infGenerate",
+    "ea": "0x14000cb80",
+    "function_file": "functions/14000cb80_infGenerate.md",
+    "matched_imports": [
+      "msvcrt!ctime",
+      "msvcrt!fclose",
+      "msvcrt!fopen",
+      "msvcrt!toupper"
+    ],
+    "matched_strings": [
+      "InfCommentString",
+      "Cannot create INF file: %1"
+    ],
+    "name": "infGenerate",
+    "prototype": "",
+    "rank_score": 1103,
+    "size": 613,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "VarCreate",
+    "ea": "0x14000dcf8",
+    "function_file": "functions/14000dcf8_VarCreate.md",
+    "matched_imports": [
+      "msvcrt!_strdup",
+      "msvcrt!free",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "[INTERR] Variable already created: %1",
+      "attempting to create variable: %1"
+    ],
+    "name": "VarCreate",
+    "prototype": "",
+    "rank_score": 1094,
+    "size": 448,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "addFileToSession",
+    "ea": "0x140003d28",
+    "function_file": "functions/140003d28_addFileToSession.md",
+    "matched_imports": [
+      "msvcrt!_strdup",
+      "msvcrt!atoi",
+      "msvcrt!free",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "Duplicate file name: %1 already defined at %2(%3)"
+    ],
+    "name": "addFileToSession",
+    "prototype": "",
+    "rank_score": 1052,
+    "size": 568,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ccabFromSession",
+    "ea": "0x140004398",
+    "function_file": "functions/140004398_ccabFromSession.md",
+    "matched_imports": [
+      "msvcrt!atoi",
+      "msvcrt!atol"
+    ],
+    "matched_strings": [
+      "CabinetNameTemplate"
+    ],
+    "name": "ccabFromSession",
+    "prototype": "",
+    "rank_score": 1051,
+    "size": 523,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "modeInfAddLine",
+    "ea": "0x140007120",
+    "function_file": "functions/140007120_modeInfAddLine.md",
+    "matched_imports": [
+      "msvcrt!_strdup",
+      "msvcrt!atoi",
+      "msvcrt!free",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "Illegal to write to INF file area in layout section"
+    ],
+    "name": "modeInfAddLine",
+    "prototype": "",
+    "rank_score": 1050,
+    "size": 404,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FATDateFromPsz",
+    "ea": "0x14000a894",
+    "function_file": "functions/14000a894_FATDateFromPsz.md",
+    "matched_imports": [
+      "msvcrt!atoi",
+      "msvcrt!strchr"
+    ],
+    "matched_strings": [],
+    "name": "FATDateFromPsz",
+    "prototype": "__int64 __fastcall(char *Str)",
+    "rank_score": 1007,
+    "size": 463,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "newDiskIfNecessary",
+    "ea": "0x1400072bc",
+    "function_file": "functions/1400072bc_newDiskIfNecessary.md",
+    "matched_imports": [
+      "msvcrt!atoi",
+      "msvcrt!atol"
+    ],
+    "matched_strings": [
+      "DiskDirectoryTemplate",
+      "DiskLabelTemplate",
+      "disk directory name",
+      "DiskDirectory*"
+    ],
+    "name": "newDiskIfNecessary",
+    "prototype": "",
+    "rank_score": 976,
+    "size": 575,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "processFile",
+    "ea": "0x140007e18",
+    "function_file": "functions/140007e18_processFile.md",
+    "matched_imports": [
+      "Cabinet!__imp_FCIAddFile",
+      "Cabinet!__imp_FCICreate",
+      "Cabinet!__imp_FCIDestroy",
+      "Cabinet!__imp_FCIFlushCabinet"
+    ],
+    "matched_strings": [
+      "FCICreate"
+    ],
+    "name": "processFile",
+    "prototype": "",
+    "rank_score": 868,
+    "size": 879,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ensureFile",
+    "ea": "0x140009884",
+    "function_file": "functions/140009884_ensureFile.md",
+    "matched_imports": [
+      "msvcrt!_close",
+      "msvcrt!_errno",
+      "msvcrt!_open",
+      "msvcrt!_unlink"
+    ],
+    "matched_strings": [
+      "Cannot create %1: %2"
+    ],
+    "name": "ensureFile",
+    "prototype": "__int64 __fastcall(char *FileName)",
+    "rank_score": 855,
+    "size": 171,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "parseCommandLine",
+    "ea": "0x140007504",
+    "function_file": "functions/140007504_parseCommandLine.md",
+    "matched_imports": [
+      "msvcrt!_strdup",
+      "msvcrt!atoi",
+      "msvcrt!free",
+      "msvcrt!toupper"
+    ],
+    "matched_strings": [],
+    "name": "parseCommandLine",
+    "prototype": "",
+    "rank_score": 826,
+    "size": 927,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "OpenFileUNC",
+    "ea": "0x140008b90",
+    "function_file": "functions/140008b90_OpenFileUNC.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "msvcrt!_open_osfhandle"
+    ],
+    "matched_strings": [],
+    "name": "OpenFileUNC",
+    "prototype": "",
+    "rank_score": 819,
+    "size": 393,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "getFileSizeUNC",
+    "ea": "0x1400099d4",
+    "function_file": "functions/1400099d4_getFileSizeUNC.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetFileSize"
+    ],
+    "matched_strings": [],
+    "name": "getFileSizeUNC",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName)",
+    "rank_score": 814,
+    "size": 207,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "checkVariableDefinitions",
+    "ea": "0x14000463c",
+    "function_file": "functions/14000463c_checkVariableDefinitions.md",
+    "matched_imports": [
+      "msvcrt!_stricmp",
+      "msvcrt!_strnicmp",
+      "msvcrt!isdigit"
+    ],
+    "matched_strings": [],
+    "name": "checkVariableDefinitions",
+    "prototype": "",
+    "rank_score": 807,
+    "size": 373,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "GLDestroyList",
+    "ea": "0x14000a564",
+    "function_file": "functions/14000a564_GLDestroyList.md",
+    "matched_imports": [
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "GLDestroyList",
+    "prototype": "",
+    "rank_score": 712,
+    "size": 261,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x140001318",
+    "function_file": "functions/140001318_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CompMemoryFromPSZ",
+    "ea": "0x140001b84",
+    "function_file": "functions/140001b84_CompMemoryFromPSZ.md",
+    "matched_imports": [
+      "msvcrt!atoi"
+    ],
+    "matched_strings": [
+      "Compression Memory not in range (%1..%2): %3",
+      "Compression Memory not in range (%1..%2): %3"
+    ],
+    "name": "CompMemoryFromPSZ",
+    "prototype": "",
+    "rank_score": 695,
+    "size": 243,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "DFPParse",
+    "ea": "0x140001de0",
+    "function_file": "functions/140001de0_DFPParse.md",
+    "matched_imports": [
+      "msvcrt!_read",
+      "msvcrt!printf",
+      "msvcrt!strspn"
+    ],
+    "matched_strings": [
+      "Tried to read from write-only file: %1"
+    ],
+    "name": "DFPParse",
+    "prototype": "",
+    "rank_score": 670,
+    "size": 996,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "DFPParseVarAssignment",
+    "ea": "0x1400021cc",
+    "function_file": "functions/1400021cc_DFPParseVarAssignment.md",
+    "matched_imports": [
+      "msvcrt!strpbrk",
+      "msvcrt!strspn"
+    ],
+    "matched_strings": [
+      "No variable name in %1 command"
+    ],
+    "name": "DFPParseVarAssignment",
+    "prototype": "",
+    "rank_score": 658,
+    "size": 266,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CompLevelFromPSZ",
+    "ea": "0x140001b04",
+    "function_file": "functions/140001b04_CompLevelFromPSZ.md",
+    "matched_imports": [
+      "msvcrt!atoi"
+    ],
+    "matched_strings": [
+      "Compression Level not in range (%1..%2): %3"
+    ],
+    "name": "CompLevelFromPSZ",
+    "prototype": "",
+    "rank_score": 654,
+    "size": 121,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "substituteVariables",
+    "ea": "0x140003a30",
+    "function_file": "functions/140003a30_substituteVariables.md",
+    "matched_imports": [
+      "msvcrt!strchr",
+      "msvcrt!strpbrk",
+      "msvcrt!strspn"
+    ],
+    "matched_strings": [
+      "Buffer overflow while copying: %1"
+    ],
+    "name": "substituteVariables",
+    "prototype": "__int64 __usercall@<rax>(char *Str@<rcx>, __int64)",
+    "rank_score": 652,
+    "size": 594,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "GetFullPathUNCW",
+    "ea": "0x140008a78",
+    "function_file": "functions/140008a78_GetFullPathUNCW.md",
+    "matched_imports": [
+      "KERNEL32!GetFullPathNameW",
+      "KERNEL32!MultiByteToWideChar",
+      "msvcrt!memmove_s"
+    ],
+    "matched_strings": [
+      "Cannot open file: %1"
+    ],
+    "name": "GetFullPathUNCW",
+    "prototype": "",
+    "rank_score": 651,
+    "size": 274,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "GLAdd",
+    "ea": "0x14000a29c",
+    "function_file": "functions/14000a29c_GLAdd.md",
+    "matched_imports": [
+      "msvcrt!_strdup",
+      "msvcrt!free",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "%1 already exists: %2"
+    ],
+    "name": "GLAdd",
+    "prototype": "",
+    "rank_score": 650,
+    "size": 340,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "__report_rangecheckfailure",
+    "ea": "0x140001508",
+    "function_file": "functions/140001508_report_rangecheckfailure.md",
+    "matched_imports": [
+      "KERNEL32!RtlCaptureContext",
+      "KERNEL32!RtlLookupFunctionEntry",
+      "KERNEL32!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_rangecheckfailure",
+    "prototype": "",
+    "rank_score": 630,
+    "size": 294,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "addCommas",
+    "ea": "0x14000d528",
+    "function_file": "functions/14000d528_addCommas.md",
+    "matched_imports": [
+      "msvcrt!strpbrk",
+      "msvcrt!strspn"
+    ],
+    "matched_strings": [],
+    "name": "addCommas",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 362,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "pre_c_init",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_pre_c_init.md",
+    "matched_imports": [
+      "msvcrt!__set_app_type",
+      "msvcrt!__setusermatherr",
+      "msvcrt!_commode",
+      "msvcrt!_fmode"
+    ],
+    "matched_strings": [],
+    "name": "pre_c_init",
+    "prototype": "",
+    "rank_score": 614,
+    "size": 215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "findItem",
+    "ea": "0x14000a670",
+    "function_file": "functions/14000a670_findItem.md",
+    "matched_imports": [
+      "msvcrt!_stricmp",
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "findItem",
+    "prototype": "",
+    "rank_score": 612,
+    "size": 302,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "printError",
+    "ea": "0x1400078ac",
+    "function_file": "functions/1400078ac_printError.md",
+    "matched_imports": [
+      "msvcrt!printf"
+    ],
+    "matched_strings": [],
+    "name": "printError",
+    "prototype": "",
+    "rank_score": 608,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "IMDSfromPSZ",
+    "ea": "0x1400022dc",
+    "function_file": "functions/1400022dc_IMDSfromPSZ.md",
+    "matched_imports": [
+      "msvcrt!_stricmp",
+      "msvcrt!atol"
+    ],
+    "matched_strings": [],
+    "name": "IMDSfromPSZ",
+    "prototype": "__int64 __fastcall(char *String)",
+    "rank_score": 606,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VarDelete",
+    "ea": "0x14000df18",
+    "function_file": "functions/14000df18_VarDelete.md",
+    "matched_imports": [
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "VarDelete",
+    "prototype": "",
+    "rank_score": 503,
+    "size": 111,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "doNew",
+    "ea": "0x140004f94",
+    "function_file": "functions/140004f94_doNew.md",
+    "matched_imports": [
+      "Cabinet!__imp_FCIFlushCabinet",
+      "Cabinet!__imp_FCIFlushFolder"
+    ],
+    "matched_strings": [
+      "Directive '%1 %2' not valid outside of a cabinet"
+    ],
+    "name": "doNew",
+    "prototype": "",
+    "rank_score": 458,
+    "size": 428,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CompTypeFromPSZ",
+    "ea": "0x140001c80",
+    "function_file": "functions/140001c80_CompTypeFromPSZ.md",
+    "matched_imports": [
+      "msvcrt!_stricmp"
+    ],
+    "matched_strings": [
+      "Invalid Compression Type: %1"
+    ],
+    "name": "CompTypeFromPSZ",
+    "prototype": "__int64 __fastcall(char *String1)",
+    "rank_score": 454,
+    "size": 106,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "setVarValue",
+    "ea": "0x14000e1f4",
+    "function_file": "functions/14000e1f4_setVarValue.md",
+    "matched_imports": [
+      "msvcrt!_strdup",
+      "msvcrt!free"
+    ],
+    "matched_strings": [
+      "attempting to set variable: %1"
+    ],
+    "name": "setVarValue",
+    "prototype": "",
+    "rank_score": 450,
+    "size": 372,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "mapFCIError",
+    "ea": "0x140006e0c",
+    "function_file": "functions/140006e0c_mapFCIError.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "(%1)Unknown compression type",
+      "(%1)Failure compressing data from file %2",
+      "(%1)Failure opening source file %2: %3",
+      "(%1)Failure reading source file %2: %3",
+      "(%1)Failure on temporary file: %2",
+      "create process failed",
+      "bad file handle/incompatible I/O operation",
+      "file already exists",
+      "file/path does not exist",
+      "cannot move file across devices"
+    ],
+    "name": "mapFCIError",
+    "prototype": "",
+    "rank_score": 421,
+    "size": 584,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "tcompFromSession",
+    "ea": "0x1400084d8",
+    "function_file": "functions/1400084d8_tcompFromSession.md",
+    "matched_imports": [
+      "msvcrt!atoi"
+    ],
+    "matched_strings": [
+      "Compress",
+      "CompressionType",
+      "CompressionLevel",
+      "CompressionMemory",
+      "CompressionMemory"
+    ],
+    "name": "tcompFromSession",
+    "prototype": "",
+    "rank_score": 419,
+    "size": 319,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "my_tempnam",
+    "ea": "0x140009b38",
+    "function_file": "functions/140009b38_my_tempnam.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "msvcrt!_tempnam"
+    ],
+    "matched_strings": [],
+    "name": "my_tempnam",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 229,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "fciDelete",
+    "ea": "0x140005730",
+    "function_file": "functions/140005730_fciDelete.md",
+    "matched_imports": [
+      "msvcrt!_errno",
+      "msvcrt!remove"
+    ],
+    "matched_strings": [],
+    "name": "fciDelete",
+    "prototype": "int __cdecl(LPSTR pszFile, int *err, void *pv)",
+    "rank_score": 411,
+    "size": 48,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "lineOut",
+    "ea": "0x14000328c",
+    "function_file": "functions/14000328c_lineOut.md",
+    "matched_imports": [
+      "msvcrt!printf"
+    ],
+    "matched_strings": [],
+    "name": "lineOut",
+    "prototype": "",
+    "rank_score": 407,
+    "size": 126,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "hashString",
+    "ea": "0x14000a7a4",
+    "function_file": "functions/14000a7a4_hashString.md",
+    "matched_imports": [
+      "msvcrt!toupper"
+    ],
+    "matched_strings": [],
+    "name": "hashString",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 72,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "fciTempFile",
+    "ea": "0x1400061d0",
+    "function_file": "functions/1400061d0_fciTempFile.md",
+    "matched_imports": [
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "fciTempFile",
+    "prototype": "BOOL __cdecl(char *pszTempName, int cbTempName, void *pv)",
+    "rank_score": 403,
+    "size": 171,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "fciRead",
+    "ea": "0x140005fa0",
+    "function_file": "functions/140005fa0_fciRead.md",
+    "matched_imports": [
+      "msvcrt!_errno",
+      "msvcrt!_read"
+    ],
+    "matched_strings": [],
+    "name": "fciRead",
+    "prototype": "UINT __cdecl(INT_PTR hf, void *memory, UINT cb, int *err, void *pv)",
+    "rank_score": 401,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "fciWrite",
+    "ea": "0x140006290",
+    "function_file": "functions/140006290_fciWrite.md",
+    "matched_imports": [
+      "msvcrt!_errno",
+      "msvcrt!_write"
+    ],
+    "matched_strings": [],
+    "name": "fciWrite",
+    "prototype": "UINT __cdecl(INT_PTR hf, void *memory, UINT cb, int *err, void *pv)",
+    "rank_score": 401,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "doHeaderFooter",
+    "ea": "0x14000b128",
+    "function_file": "functions/14000b128_doHeaderFooter.md",
+    "matched_imports": [
+      "msvcrt!fprintf"
+    ],
+    "matched_strings": [
+      "INF header variable template",
+      "Write of %1 failed on INF file: %2"
+    ],
+    "name": "doHeaderFooter",
+    "prototype": "",
+    "rank_score": 290,
+    "size": 426,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "getCompressedFileName",
+    "ea": "0x140006590",
+    "function_file": "functions/140006590_getCompressedFileName.md",
+    "matched_imports": [
+      "USER32!CharNextExA"
+    ],
+    "matched_strings": [
+      "CompressedFileExtensionChar"
+    ],
+    "name": "getCompressedFileName",
+    "prototype": "",
+    "rank_score": 267,
+    "size": 348,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "SubstituteFormatString",
+    "ea": "0x14000a000",
+    "function_file": "functions/14000a000_SubstituteFormatString.md",
+    "matched_imports": [
+      "msvcrt!strchr"
+    ],
+    "matched_strings": [
+      "Buffer overflow while copying: %1"
+    ],
+    "name": "SubstituteFormatString",
+    "prototype": "",
+    "rank_score": 255,
+    "size": 661,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ensureCabinet",
+    "ea": "0x1400052b0",
+    "function_file": "functions/1400052b0_ensureCabinet.md",
+    "matched_imports": [
+      "Cabinet!__imp_FCICreate"
+    ],
+    "matched_strings": [
+      "FCICreate"
+    ],
+    "name": "ensureCabinet",
+    "prototype": "",
+    "rank_score": 249,
+    "size": 346,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "processLineWithQuotes",
+    "ea": "0x140003934",
+    "function_file": "functions/140003934_processLineWithQuotes.md",
+    "matched_imports": [
+      "msvcrt!strspn"
+    ],
+    "matched_strings": [
+      "InfWrite string"
+    ],
+    "name": "processLineWithQuotes",
+    "prototype": "",
+    "rank_score": 246,
+    "size": 243,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VarCreateList",
+    "ea": "0x14000dec0",
+    "function_file": "functions/14000dec0_VarCreateList.md",
+    "matched_imports": [
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [
+      "attempting to create a variable list"
+    ],
+    "name": "VarCreateList",
+    "prototype": "",
+    "rank_score": 244,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "parseSetCommand",
+    "ea": "0x1400038b8",
+    "function_file": "functions/1400038b8_parseSetCommand.md",
+    "matched_imports": [
+      "msvcrt!printf"
+    ],
+    "matched_strings": [],
+    "name": "parseSetCommand",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 116,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "StringCbPrintfA",
+    "ea": "0x140008e64",
+    "function_file": "functions/140008e64_StringCbPrintfA.md",
+    "matched_imports": [
+      "msvcrt!_vsnprintf"
+    ],
+    "matched_strings": [],
+    "name": "StringCbPrintfA",
+    "prototype": "HRESULT(STRSAFE_LPSTR pszDest, size_t cbDest, STRSAFE_LPCSTR pszFormat, ...)",
+    "rank_score": 212,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "getQuotedString",
+    "ea": "0x14000313c",
+    "function_file": "functions/14000313c_getQuotedString.md",
+    "matched_imports": [
+      "msvcrt!strpbrk"
+    ],
+    "matched_strings": [],
+    "name": "getQuotedString",
+    "prototype": "__int64 __usercall@<rax>(void *@<rcx>, __int64, __int64)",
+    "rank_score": 209,
+    "size": 328,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "getFileSize",
+    "ea": "0x140009938",
+    "function_file": "functions/140009938_getFileSize.md",
+    "matched_imports": [
+      "msvcrt!_stat"
+    ],
+    "matched_strings": [],
+    "name": "getFileSize",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 147,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "GLCreateList",
+    "ea": "0x14000a4f8",
+    "function_file": "functions/14000a4f8_GLCreateList.md",
+    "matched_imports": [
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "GLCreateList",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "fnvcvLong",
+    "ea": "0x140002920",
+    "function_file": "functions/140002920_fnvcvLong.md",
+    "matched_imports": [
+      "msvcrt!isdigit"
+    ],
+    "matched_strings": [],
+    "name": "fnvcvLong",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "getJustFileNameAndExt",
+    "ea": "0x140009aac",
+    "function_file": "functions/140009aac_getJustFileNameAndExt.md",
+    "matched_imports": [
+      "USER32!CharNextExA"
+    ],
+    "matched_strings": [],
+    "name": "getJustFileNameAndExt",
+    "prototype": "__int64 __fastcall(LPCSTR lpCurrentChar)",
+    "rank_score": 206,
+    "size": 131,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "TmpClose",
+    "ea": "0x140008ee4",
+    "function_file": "functions/140008ee4_TmpClose.md",
+    "matched_imports": [
+      "msvcrt!fclose"
+    ],
+    "matched_strings": [],
+    "name": "TmpClose",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "findVar",
+    "ea": "0x14000e138",
+    "function_file": "functions/14000e138_findVar.md",
+    "matched_imports": [
+      "msvcrt!_stricmp"
+    ],
+    "matched_strings": [],
+    "name": "findVar",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 18,
+    "demangled": "memset_0",
+    "ea": "0x14000e412",
+    "function_file": "functions/14000e412_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 118,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 9,
+    "demangled": "memcpy_0",
+    "ea": "0x14000e406",
+    "function_file": "functions/14000e406_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 109,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "inCabinet",
+    "ea": "0x140006a34",
+    "function_file": "functions/140006a34_inCabinet.md",
+    "matched_imports": [
+      "msvcrt!atoi"
+    ],
+    "matched_strings": [],
+    "name": "inCabinet",
+    "prototype": "",
+    "rank_score": 105,
+    "size": 50,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "fciStatus",
+    "ea": "0x140006030",
+    "function_file": "functions/140006030_fciStatus.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "%1%% - raw=%2  compressed=%3"
+    ],
+    "name": "fciStatus",
+    "prototype": "int __cdecl(UINT typeStatus, ULONG cb1, ULONG cb2, void *pv)",
+    "rank_score": 58,
+    "size": 408,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "fciOpenInfoEx",
+    "ea": "0x140005b10",
+    "function_file": "functions/140005b10_fciOpenInfoEx.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Could not open file: %1"
+    ],
+    "name": "fciOpenInfoEx",
+    "prototype": "__int64 __usercall@<rax>(LPSTR pszFile@<rcx>, int *err, void *, int)",
+    "rank_score": 50,
+    "size": 310,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 36,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14000e450",
+    "function_file": "functions/14000e450_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 28,
+    "demangled": "VarFind",
+    "ea": "0x14000dfd8",
+    "function_file": "functions/14000dfd8_VarFind.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VarFind",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 2,
+    "demangled": "executeCommand",
+    "ea": "0x1400054b0",
+    "function_file": "functions/1400054b0_executeCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "executeCommand",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 529,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 89,
+    "demangled": "ErrSet",
+    "ea": "0x140008620",
+    "function_file": "functions/140008620_ErrSet.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ErrSet",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14000e394",
+    "function_file": "functions/14000e394_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x14000f010",
+    "function_file": "functions/14000f010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "MsgSet",
+    "ea": "0x14000ce88",
+    "function_file": "functions/14000ce88_MsgSet.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MsgSet",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x14000e490",
+    "function_file": "functions/14000e490_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "GetInfCustomVar",
+    "ea": "0x14000aa6c",
+    "function_file": "functions/14000aa6c_GetInfCustomVar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetInfCustomVar",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 404,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlpImageNtHeader",
+    "ea": "0x1400016ac",
+    "function_file": "functions/1400016ac_RtlpImageNtHeader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlpImageNtHeader",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 81,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "fnvcvCompLevel",
+    "ea": "0x140002670",
+    "function_file": "functions/140002670_fnvcvCompLevel.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "fnvcvCompLevel",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 126,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "fnvcvCompMemory",
+    "ea": "0x140002700",
+    "function_file": "functions/140002700_fnvcvCompMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "fnvcvCompMemory",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 126,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "fnvcvCompType",
+    "ea": "0x140002790",
+    "function_file": "functions/140002790_fnvcvCompType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "fnvcvCompType",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 126,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "nameFromTemplate",
+    "ea": "0x14000d70c",
+    "function_file": "functions/14000d70c_nameFromTemplate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "nameFromTemplate",
+    "prototype": "__int64 __usercall@<rax>(STRSAFE_LPSTR pszDest@<rcx>, __int64, __int64)",
+    "rank_score": 11,
+    "size": 299,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GLCopyToList",
+    "ea": "0x14000a3f8",
+    "function_file": "functions/14000a3f8_GLCopyToList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GLCopyToList",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "VarSet",
+    "ea": "0x14000e028",
+    "function_file": "functions/14000e028_VarSet.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VarSet",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 147,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "_alloca_probe",
+    "ea": "0x14000e4e0",
+    "function_file": "functions/14000e4e0_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "getLineFormat",
+    "ea": "0x14000c2bc",
+    "function_file": "functions/14000c2bc_getLineFormat.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "getLineFormat",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCchCatA",
+    "ea": "0x140002344",
+    "function_file": "functions/140002344_StringCchCatA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCatA",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cchDest, STRSAFE_LPCSTR pszSrc)",
+    "rank_score": 5,
+    "size": 165,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "appendPathSeparator",
+    "ea": "0x140008f3c",
+    "function_file": "functions/140008f3c_appendPathSeparator.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "appendPathSeparator",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "copyBounded",
+    "ea": "0x14000d698",
+    "function_file": "functions/14000d698_copyBounded.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "copyBounded",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "isValidVarName",
+    "ea": "0x14000e1a4",
+    "function_file": "functions/14000e1a4_isValidVarName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "isValidVarName",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "fciOpenInfo",
+    "ea": "0x140005ae0",
+    "function_file": "functions/140005ae0_fciOpenInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "fciOpenInfo",
+    "prototype": "INT_PTR __cdecl(LPSTR pszName, USHORT *pdate, USHORT *ptime, USHORT *pattribs, int *err, void *pv)",
+    "rank_score": 1,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "fciOpenInfoUNC",
+    "ea": "0x140005c50",
+    "function_file": "functions/140005c50_fciOpenInfoUNC.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "fciOpenInfoUNC",
+    "prototype": "__int64 __fastcall(int, int, int, int, int *, void *)",
+    "rank_score": 1,
+    "size": 42,
+    "tags": []
+  }
+]

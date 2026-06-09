@@ -1,0 +1,373 @@
+# LuafvIsTargetWRP
+
+- ea: `0x140020850`
+- end: `0x140020b8b`
+- name: `LuafvIsTargetWRP`
+- size: `827`
+- prototype: `__int64 __fastcall(__int64, __int64, _BYTE *)`
+- caller_count: `1`
+- callee_count: `3`
+- tags: `authz_impersonation`
+
+## callers
+
+- `0x140025820`
+
+## callees
+
+- `0x140001730`
+- `0x140005d00`
+- `0x140020850`
+
+## import_xrefs
+
+- `ntoskrnl!ExAllocateFromPagedLookasideList` at `0x140020b0b`
+- `ntoskrnl!ExAllocateFromPagedLookasideList` at `0x140020b0b`
+- `ntoskrnl!ExFreeToPagedLookasideList` at `0x140020ac5`
+- `ntoskrnl!ExFreeToPagedLookasideList` at `0x140020ac5`
+- `ntoskrnl!RtlCreateUnicodeString` at `0x1400208ea`
+- `ntoskrnl!RtlCreateUnicodeString` at `0x1400208ea`
+- `ntoskrnl!RtlFreeUnicodeString` at `0x140020a23`
+- `ntoskrnl!RtlFreeUnicodeString` at `0x140020a23`
+- `ntoskrnl!RtlPrefixUnicodeString` at `0x1400209e2`
+- `ntoskrnl!RtlPrefixUnicodeString` at `0x1400209e2`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140020a7d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140020a7d`
+- `ntoskrnl!ExAllocatePool2` at `0x140020947`
+- `ntoskrnl!ExAllocatePool2` at `0x140020947`
+- `FLTMGR!FltReleaseContext` at `0x140020a9e`
+- `FLTMGR!FltReleaseContext` at `0x140020a9e`
+- `FLTMGR!FltGetInstanceContext` at `0x140020b47`
+- `FLTMGR!FltGetInstanceContext` at `0x140020b47`
+- `FLTMGR!FltReleasePushLockEx` at `0x14002098a`
+- `FLTMGR!FltReleasePushLockEx` at `0x140020a60`
+- `FLTMGR!FltReleasePushLockEx` at `0x14002098a`
+- `FLTMGR!FltReleasePushLockEx` at `0x140020a60`
+- `FLTMGR!FltAcquirePushLockExclusiveEx` at `0x14002096f`
+- `FLTMGR!FltAcquirePushLockExclusiveEx` at `0x140020a42`
+- `FLTMGR!FltAcquirePushLockExclusiveEx` at `0x14002096f`
+- `FLTMGR!FltAcquirePushLockExclusiveEx` at `0x140020a42`
+
+## pseudocode
+
+```c
+__int64 __fastcall LuafvIsTargetWRP(__int64 a1, __int64 a2, _BYTE *a3)
+{
+  __int64 v3; // r9
+  bool v6; // zf
+  __int64 v7; // rbx
+  _WORD *v8; // rax
+  _WORD *v9; // rax
+  unsigned __int16 v10; // dx
+  const void *v11; // r13
+  int v12; // ebp
+  unsigned int v13; // r12d
+  char v14; // di
+  __int64 Pool2; // r15
+  int InstanceContext; // edi
+  PWSTR Buffer; // rbx
+  unsigned int v19; // edi
+  unsigned int v20; // eax
+  PVOID v21; // rax
+  UNICODE_STRING String2; // [rsp+20h] [rbp-58h] BYREF
+  struct _UNICODE_STRING DestinationString; // [rsp+30h] [rbp-48h] BYREF
+  PFLT_CONTEXT Context; // [rsp+80h] [rbp+8h] BYREF
+  PFLT_INSTANCE Instance; // [rsp+88h] [rbp+10h]
+
+  v3 = *(_QWORD *)(a1 + 16);
+  String2 = 0;
+  Context = 0;
+  DestinationString = 0;
+  v6 = (*(_DWORD *)(v3 + 32) & 0x2000) == 0;
+  *a3 = 0;
+  if ( !v6 )
+    goto LABEL_14;
+  if ( (*(_DWORD *)(*(_QWORD *)(a2 + 32) + 80LL) & 0x800) != 0 )
+    goto LABEL_14;
+  v7 = *(_QWORD *)(v3 + 8);
+  v8 = *(_WORD **)(v7 + 96);
+  if ( !v8 || !*v8 )
+    goto LABEL_14;
+  Instance = *(PFLT_INSTANCE *)(a2 + 24);
+  if ( !RtlCreateUnicodeString(&DestinationString, L"windows") )
+  {
+    InstanceContext = -1073741670;
+    goto LABEL_15;
+  }
+  v9 = *(_WORD **)(v7 + 96);
+  v10 = *(_WORD *)(v7 + 88);
+  v11 = v9 + 1;
+  if ( *v9 != 92 )
+  {
+    v11 = *(const void **)(v7 + 96);
+    v10 += 2;
+  }
+  v12 = v10;
+  v13 = v10 + 8;
+  if ( v10 > 0xB8u )
+  {
+    v14 = -1;
+LABEL_10:
+    Pool2 = ExAllocatePool2(256, v13, 1717663052);
+    goto LABEL_11;
+  }
+  v19 = 0;
+  v20 = 56;
+  do
+  {
+    if ( v10 <= v20 )
+      break;
+    ++v19;
+    v20 += 32;
+  }
+  while ( v19 < 5 );
+  v21 = ExAllocateFromPagedLookasideList((PPAGED_LOOKASIDE_LIST)&StringLookaside[16 * (unsigned __int64)v19]);
+  v14 = v19 + 2;
+  Pool2 = (__int64)v21;
+  if ( v14 == -1 )
+    goto LABEL_10;
+LABEL_11:
+  if ( !Pool2 )
+  {
+    String2.Buffer = 0;
+    goto LABEL_25;
+  }
+  *(_DWORD *)Pool2 = v12;
+  *(_BYTE *)(Pool2 + 4) = v14;
+  FltAcquirePushLockExclusiveEx(&PoolLock, 0);
+  dword_14000ECBC += v12;
+  FltReleasePushLockEx(&PoolLock, 0);
+  String2.Buffer = (PWSTR)(Pool2 + 8);
+  if ( Pool2 == -8 )
+  {
+LABEL_25:
+    InstanceContext = -1073741670;
+    goto LABEL_15;
+  }
+  String2.MaximumLength = v12;
+  String2.Length = v12 - 2;
+  memmove((void *)(Pool2 + 8), v11, (unsigned __int16)(v12 - 2));
+  String2.Buffer[(unsigned __int64)String2.Length >> 1] = 0;
+  if ( !RtlPrefixUnicodeString(&DestinationString, &String2, 1u) )
+  {
+LABEL_14:
+    InstanceContext = 0;
+    goto LABEL_15;
+  }
+  InstanceContext = FltGetInstanceContext(Instance, &Context);
+  if ( InstanceContext >= 0 )
+  {
+    InstanceContext = LuafvIsFileWRP(v7 + 88, a2, *((_QWORD *)Context + 4), a3);
+    if ( InstanceContext >= 0 )
+      goto LABEL_14;
+    *a3 = 0;
+  }
+LABEL_15:
+  if ( DestinationString.Buffer )
+    RtlFreeUnicodeString(&DestinationString);
+  Buffer = String2.Buffer;
+  if ( String2.Buffer )
+  {
+    FltAcquirePushLockExclusiveEx(&PoolLock, 0);
+    dword_14000ECBC -= *((_DWORD *)Buffer - 2);
+    FltReleasePushLockEx(&PoolLock, 0);
+    if ( *((_BYTE *)Buffer - 4) < 7u )
+      ExFreeToPagedLookasideList((PPAGED_LOOKASIDE_LIST)LookasideLists[*((unsigned __int8 *)Buffer - 4)], Buffer - 4);
+    else
+      ExFreePoolWithTag(Buffer - 4, 0x6661754Cu);
+  }
+  if ( Context )
+    FltReleaseContext(Context);
+  return (unsigned int)InstanceContext;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140020850  mov     rax, rsp
+0x140020853  push    rdi
+0x140020854  sub     rsp, 70h
+0x140020858  mov     r9, [rcx+10h]
+0x14002085c  xorps   xmm0, xmm0
+0x14002085f  mov     [rax+18h], rbx
+0x140020863  xorps   xmm1, xmm1
+0x140020866  mov     [rax-10h], rbp
+0x14002086a  mov     [rax-18h], rsi
+0x14002086e  mov     rsi, rdx
+0x140020871  mov     [rax-20h], r12
+0x140020875  mov     [rax-28h], r13
+0x140020879  mov     [rax-30h], r14
+0x14002087d  mov     r14, r8
+0x140020880  movups  xmmword ptr [rax-58h], xmm0
+0x140020884  mov     qword ptr [rax+8], 0
+0x14002088c  movups  xmmword ptr [rax-48h], xmm1
+0x140020890  test    dword ptr [r9+20h], 2000h
+0x140020898  mov     [rax-38h], r15
+0x14002089c  mov     byte ptr [r8], 0
+0x1400208a0  jnz     loc_1400209F6
+0x1400208a6  mov     rax, [rdx+20h]
+0x1400208aa  test    dword ptr [rax+50h], 800h
+0x1400208b1  jnz     loc_1400209F6
+0x1400208b7  mov     rbx, [r9+8]
+0x1400208bb  mov     rax, [rbx+60h]
+0x1400208bf  test    rax, rax
+0x1400208c2  jz      loc_1400209F6
+0x1400208c8  cmp     word ptr [rax], 0
+0x1400208cc  jz      loc_1400209F6
+0x1400208d2  mov     rax, [rdx+18h]
+0x1400208d6  lea     rcx, [rsp+78h+DestinationString]; DestinationString
+0x1400208db  lea     rdx, SourceString; "windows"
+0x1400208e2  mov     [rsp+78h+Instance], rax
+0x1400208ea  call    cs:__imp_RtlCreateUnicodeString
+0x1400208f1  nop     dword ptr [rax+rax+00h]
+0x1400208f6  test    al, al
+0x1400208f8  jz      loc_140020B2D
+0x1400208fe  mov     rax, [rbx+60h]
+0x140020902  movzx   edx, word ptr [rbx+58h]
+0x140020906  cmp     word ptr [rax], 5Ch ; '\'
+0x14002090a  lea     r13, [rax+2]
+0x14002090e  cmovnz  r13, rax
+0x140020912  lea     eax, [rdx+2]
+0x140020915  cmovnz  dx, ax
+0x140020919  movzx   ebp, dx
+0x14002091c  lea     r12d, [rbp+8]
+0x140020920  cmp     r12d, 8
+0x140020924  jb      loc_140020AD3
+0x14002092a  cmp     ebp, 0B8h
+0x140020930  jbe     loc_140020AE6
+0x140020936  mov     dil, 0FFh
+0x140020939  mov     edx, r12d
+0x14002093c  mov     ecx, 100h
+0x140020941  mov     r8d, 6661754Ch
+0x140020947  call    cs:__imp_ExAllocatePool2
+0x14002094e  nop     dword ptr [rax+rax+00h]
+0x140020953  mov     r15, rax
+0x140020956  test    r15, r15
+0x140020959  jz      loc_140020AD3
+0x14002095f  xor     edx, edx
+0x140020961  mov     [r15], ebp
+0x140020964  lea     rcx, PoolLock
+0x14002096b  mov     [r15+4], dil
+0x14002096f  call    cs:__imp_FltAcquirePushLockExclusiveEx
+0x140020976  nop     dword ptr [rax+rax+00h]
+0x14002097b  add     cs:dword_14000ECBC, ebp
+0x140020981  lea     rcx, PoolLock
+0x140020988  xor     edx, edx
+0x14002098a  call    cs:__imp_FltReleasePushLockEx
+0x140020991  nop     dword ptr [rax+rax+00h]
+0x140020996  lea     rcx, [r15+8]; void *
+0x14002099a  mov     [rsp+78h+String2.Buffer], rcx
+0x14002099f  test    rcx, rcx
+0x1400209a2  jz      loc_140020ADC
+0x1400209a8  lea     eax, [rbp-2]
+0x1400209ab  mov     [rsp+78h+String2.MaximumLength], bp
+0x1400209b0  movzx   r8d, ax; Size
+0x1400209b4  mov     rdx, r13; Src
+0x1400209b7  mov     [rsp+78h+String2.Length], r8w
+0x1400209bd  call    memmove
+0x1400209c2  movzx   edx, [rsp+78h+String2.Length]
+0x1400209c7  xor     ecx, ecx
+0x1400209c9  mov     rax, [rsp+78h+String2.Buffer]
+0x1400209ce  mov     r8b, 1; CaseInSensitive
+0x1400209d1  shr     rdx, 1
+0x1400209d4  mov     [rax+rdx*2], cx
+0x1400209d8  lea     rdx, [rsp+78h+String2]; String2
+0x1400209dd  lea     rcx, [rsp+78h+DestinationString]; String1
+0x1400209e2  call    cs:__imp_RtlPrefixUnicodeString
+0x1400209e9  nop     dword ptr [rax+rax+00h]
+0x1400209ee  test    al, al
+0x1400209f0  jnz     loc_140020B37
+0x1400209f6  xor     edi, edi
+0x1400209f8  cmp     [rsp+78h+DestinationString.Buffer], 0
+0x1400209fe  mov     r15, [rsp+78h+var_38]
+0x140020a03  mov     r14, [rsp+78h+var_30]
+0x140020a08  mov     r13, [rsp+78h+var_28]
+0x140020a0d  mov     r12, [rsp+78h+var_20]
+0x140020a12  mov     rsi, [rsp+78h+var_18]
+0x140020a17  mov     rbp, [rsp+78h+var_10]
+0x140020a1c  jz      short loc_140020A2F
+0x140020a1e  lea     rcx, [rsp+78h+DestinationString]; UnicodeString
+0x140020a23  call    cs:__imp_RtlFreeUnicodeString
+0x140020a2a  nop     dword ptr [rax+rax+00h]
+0x140020a2f  mov     rbx, [rsp+78h+String2.Buffer]
+0x140020a34  test    rbx, rbx
+0x140020a37  jz      short loc_140020A89
+0x140020a39  xor     edx, edx
+0x140020a3b  lea     rcx, PoolLock
+0x140020a42  call    cs:__imp_FltAcquirePushLockExclusiveEx
+0x140020a49  nop     dword ptr [rax+rax+00h]
+0x140020a4e  mov     eax, [rbx-8]
+0x140020a51  lea     rcx, PoolLock
+0x140020a58  sub     cs:dword_14000ECBC, eax
+0x140020a5e  xor     edx, edx
+0x140020a60  call    cs:__imp_FltReleasePushLockEx
+0x140020a67  nop     dword ptr [rax+rax+00h]
+0x140020a6c  movzx   eax, byte ptr [rbx-4]
+0x140020a70  cmp     al, 7
+0x140020a72  jb      short loc_140020AB3
+0x140020a74  mov     edx, 6661754Ch; Tag
+0x140020a79  lea     rcx, [rbx-8]; P
+0x140020a7d  call    cs:__imp_ExFreePoolWithTag
+0x140020a84  nop     dword ptr [rax+rax+00h]
+0x140020a89  mov     rcx, [rsp+78h+Context]; Context
+0x140020a91  mov     rbx, [rsp+78h+arg_10]
+0x140020a99  test    rcx, rcx
+0x140020a9c  jz      short loc_140020AAA
+0x140020a9e  call    cs:__imp_FltReleaseContext
+0x140020aa5  nop     dword ptr [rax+rax+00h]
+0x140020aaa  mov     eax, edi
+0x140020aac  add     rsp, 70h
+0x140020ab0  pop     rdi
+0x140020ab1  retn
+0x140020ab3  mov     rcx, rax
+0x140020ab6  lea     rdx, [rbx-8]; Entry
+0x140020aba  lea     rax, LookasideLists
+0x140020ac1  mov     rcx, [rax+rcx*8]; Lookaside
+0x140020ac5  call    cs:__imp_ExFreeToPagedLookasideList
+0x140020acc  nop     dword ptr [rax+rax+00h]
+0x140020ad1  jmp     short loc_140020A89
+0x140020ad3  mov     [rsp+78h+String2.Buffer], 0
+0x140020adc  mov     edi, 0C000009Ah
+0x140020ae1  jmp     loc_1400209F8
+0x140020ae6  xor     edi, edi
+0x140020ae8  mov     eax, 38h ; '8'
+0x140020aed  cmp     ebp, eax
+0x140020aef  jbe     short loc_140020AFB
+0x140020af1  inc     edi
+0x140020af3  add     eax, 20h ; ' '
+0x140020af6  cmp     edi, 5
+0x140020af9  jb      short loc_140020AED
+0x140020afb  lea     rax, StringLookaside
+0x140020b02  mov     ecx, edi
+0x140020b04  shl     rcx, 7
+0x140020b08  add     rcx, rax; Lookaside
+0x140020b0b  call    cs:__imp_ExAllocateFromPagedLookasideList
+0x140020b12  nop     dword ptr [rax+rax+00h]
+0x140020b17  add     dil, 2
+0x140020b1b  mov     r15, rax
+0x140020b1e  cmp     dil, 0FFh
+0x140020b22  jnz     loc_140020956
+0x140020b28  jmp     loc_140020939
+0x140020b2d  mov     edi, 0C000009Ah
+0x140020b32  jmp     loc_1400209F8
+0x140020b37  mov     rcx, [rsp+78h+Instance]; Instance
+0x140020b3f  lea     rdx, [rsp+78h+Context]; Context
+0x140020b47  call    cs:__imp_FltGetInstanceContext
+0x140020b4e  nop     dword ptr [rax+rax+00h]
+0x140020b53  mov     edi, eax
+0x140020b55  test    eax, eax
+0x140020b57  js      loc_1400209F8
+0x140020b5d  mov     r8, [rsp+78h+Context]
+0x140020b65  lea     rcx, [rbx+58h]
+0x140020b69  mov     r9, r14
+0x140020b6c  mov     rdx, rsi
+0x140020b6f  mov     r8, [r8+20h]
+0x140020b73  call    LuafvIsFileWRP
+0x140020b78  mov     edi, eax
+0x140020b7a  test    eax, eax
+0x140020b7c  jns     loc_1400209F6
+0x140020b82  mov     byte ptr [r14], 0
+0x140020b86  jmp     loc_1400209F8
+```

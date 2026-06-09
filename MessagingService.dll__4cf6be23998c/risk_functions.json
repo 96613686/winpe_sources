@@ -1,0 +1,3516 @@
+[
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "TextMessage::_Initialize(Windows::Devices::Sms::ISmsMessageBase *,ulong)",
+    "ea": "0x18000a328",
+    "function_file": "functions/18000a328_TextMessage_Initialize_Windows_Devices_Sms_ISmsMessageBase_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsGetStringRawBuffer"
+    ],
+    "matched_strings": [],
+    "name": "?_Initialize@TextMessage@@AEAAJPEAUISmsMessageBase@Sms@Devices@Windows@@K@Z",
+    "prototype": "__int64 __fastcall(TextMessage *this, __int64 (__fastcall ***)(struct Windows::Devices::Sms::ISmsMessageBase *, GUID *, __int64 *), int)",
+    "rank_score": 4216,
+    "size": 1118,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IncomingMessageRegistrationEvent::_GetCurrentSID(void * *)",
+    "ea": "0x180009be4",
+    "function_file": "functions/180009be4_IncomingMessageRegistrationEvent_GetCurrentSID_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "api-ms-win-security-base-l1-1-0!CopySid",
+      "api-ms-win-security-base-l1-1-0!GetLengthSid",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation",
+      "api-ms-win-security-base-l1-1-0!IsValidSid",
+      "msvcrt!??_V@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "?_GetCurrentSID@IncomingMessageRegistrationEvent@@CAJPEAPEAX@Z",
+    "prototype": "__int64 __fastcall(void **)",
+    "rank_score": 4040,
+    "size": 620,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SmsMessageFilterBuilder::CreateTextMessageFilter(utl::basic_string<ushort,utl::char_traits<ushort>,utl::allocator<ushort>> *)",
+    "ea": "0x180009524",
+    "function_file": "functions/180009524_SmsMessageFilterBuilder_CreateTextMessageFilter_utl_basic_string_ushort_utl_char_traits_ushort_utl_allocator_u.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!RaiseException",
+      "api-ms-win-core-winrt-l1-1-0!RoGetActivationFactory",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsGetStringRawBuffer"
+    ],
+    "matched_strings": [],
+    "name": "?CreateTextMessageFilter@SmsMessageFilterBuilder@@SAJPEAV?$basic_string@GU?$char_traits@G@utl@@V?$allocator@G@2@@utl@@@Z",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 2228,
+    "size": 1440,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MessagingService::OnStarted(void)",
+    "ea": "0x180003090",
+    "function_file": "functions/180003090_MessagingService_OnStarted_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoInitializeEx",
+      "api-ms-win-core-com-l1-1-0!CoUninitialize",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionEx",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolWork",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolWork"
+    ],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\messagingservice.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\messagingservice.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\messagingservice.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\messagingservice.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\messagingservice.cpp",
+      "onecoreuap\\internal\\base\\inc\\CComInit.h",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?OnStarted@MessagingService@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(MessagingService *__hidden this)",
+    "rank_score": 1919,
+    "size": 1015,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ServiceBase::_ServiceMainInner(void)",
+    "ea": "0x1800062dc",
+    "function_file": "functions/1800062dc_ServiceBase_ServiceMainInner_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoFreeUnusedLibrariesEx",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW"
+    ],
+    "matched_strings": [],
+    "name": "?_ServiceMainInner@ServiceBase@@AEAAJXZ",
+    "prototype": "signed int __fastcall(ServiceBase *this)",
+    "rank_score": 1649,
+    "size": 614,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ReceiveTextMessageTask::_CreateStoreMessage(ISmMessageSMS * *)",
+    "ea": "0x180008168",
+    "function_file": "functions/180008168_ReceiveTextMessageTask_CreateStoreMessage_ISmMessageSMS.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoCreateInstance",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "api-ms-win-core-timezone-l1-1-0!SystemTimeToFileTime"
+    ],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp"
+    ],
+    "name": "?_CreateStoreMessage@ReceiveTextMessageTask@@AEAAJPEAPEAUISmMessageSMS@@@Z",
+    "prototype": "__int64 __fastcall(ReceiveTextMessageTask *__hidden this, struct ISmMessageSMS **)",
+    "rank_score": 1491,
+    "size": 1900,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ServiceBase::ServiceStop(void)",
+    "ea": "0x180005fe8",
+    "function_file": "functions/180005fe8_ServiceBase_ServiceStop_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoFreeUnusedLibrariesEx",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+      "api-ms-win-core-threadpool-legacy-l1-1-0!UnregisterWaitEx"
+    ],
+    "matched_strings": [],
+    "name": "?ServiceStop@ServiceBase@@QEAAXXZ",
+    "prototype": "void __fastcall(ServiceBase *this, __int64, __int64)",
+    "rank_score": 1450,
+    "size": 407,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "IncomingMessageRegistrationEvent::_Initialize(ushort const *,ushort const *,ulong,void (*)(void *,_CBROKERED_EVENT_ID,void *,void *,ulong,ulong,_BI_ACTIVATION_STATUS *))",
+    "ea": "0x180009e58",
+    "function_file": "functions/180009e58_IncomingMessageRegistrationEvent_Initialize_ushort_const_ushort_const_ulong_void_void_CBROKERED_EVENT_ID_void_.md",
+    "matched_imports": [
+      "EventAggregation!BriCreateBrokeredEvent",
+      "EventAggregation!BriDeleteBrokeredEvent",
+      "EventAggregation!EaCreateAggregation",
+      "msvcrt!??_V@YAXPEAX@Z"
+    ],
+    "matched_strings": [
+      "MessagingService_Text",
+      "RegistrationXml"
+    ],
+    "name": "?_Initialize@IncomingMessageRegistrationEvent@@AEAAJPEBG0KP6AXPEAXU_CBROKERED_EVENT_ID@@11KKPEAW4_BI_ACTIVATION_STATUS@@@Z@Z",
+    "prototype": "__int64 __fastcall(IncomingMessageRegistrationEvent *this, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1352,
+    "size": 661,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180002844",
+    "function_file": "functions/180002844_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ServiceBase::_ServiceCtrlHandler(ulong,ulong,void *,void *)",
+    "ea": "0x1800061a0",
+    "function_file": "functions/1800061a0_ServiceBase_ServiceCtrlHandler_ulong_ulong_void_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?_ServiceCtrlHandler@ServiceBase@@CAKKKPEAX0@Z",
+    "prototype": "__int64 __fastcall(__int64 dwControl, DWORD dwEventType, LPVOID lpEventData, char *lpContext)",
+    "rank_score": 1047,
+    "size": 309,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "AsyncWorkQueue::_QueueWorkItemAt(IAsyncCallback *,IUnknown *,AsyncWorkQueue::InsertPosition)",
+    "ea": "0x180005a7c",
+    "function_file": "functions/180005a7c_AsyncWorkQueue_QueueWorkItemAt_IAsyncCallback_IUnknown_AsyncWorkQueue_InsertPosition.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-threadpool-l1-2-0!SubmitThreadpoolWork"
+    ],
+    "matched_strings": [],
+    "name": "?_QueueWorkItemAt@AsyncWorkQueue@@AEAAJPEAUIAsyncCallback@@PEAUIUnknown@@W4InsertPosition@1@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 1018,
+    "size": 338,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "AsyncWorkQueue::_AsyncCallback(void)",
+    "ea": "0x180005720",
+    "function_file": "functions/180005720_AsyncWorkQueue_AsyncCallback_void.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?_AsyncCallback@AsyncWorkQueue@@AEAAXXZ",
+    "prototype": "void __fastcall(AsyncWorkQueue *__hidden this)",
+    "rank_score": 830,
+    "size": 415,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180002e70",
+    "function_file": "functions/180002e70_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls",
+      "api-ms-win-eventing-provider-l1-1-0!EventRegister",
+      "api-ms-win-eventing-provider-l1-1-0!EventSetInformation",
+      "api-ms-win-eventing-provider-l1-1-0!EventUnregister"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 814,
+    "size": 207,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ReceiveTextMessageTask::_FindReplacementMessage(ISmMessage * *)",
+    "ea": "0x1800088dc",
+    "function_file": "functions/1800088dc_ReceiveTextMessageTask_FindReplacementMessage_ISmMessage.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp"
+    ],
+    "name": "?_FindReplacementMessage@ReceiveTextMessageTask@@AEAAJPEAPEAUISmMessage@@@Z",
+    "prototype": "__int64 __fastcall(ReceiveTextMessageTask *__hidden this, struct ISmMessage **)",
+    "rank_score": 715,
+    "size": 1155,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180002934",
+    "function_file": "functions/180002934_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "BOOL __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MessagingService::_GetServiceIdleTimeoutInterval(void)",
+    "ea": "0x180003678",
+    "function_file": "functions/180003678_MessagingService_GetServiceIdleTimeoutInterval_void.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "Software\\Microsoft\\Messaging\\Service"
+    ],
+    "name": "?_GetServiceIdleTimeoutInterval@MessagingService@@CAKXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 674,
+    "size": 243,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MessagingService::OnStarting(void)",
+    "ea": "0x1800034a0",
+    "function_file": "functions/1800034a0_MessagingService_OnStarting_void.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "iertutil!__imp_?UseEdgeBrowserComponentsForProcess@@YAJXZ"
+    ],
+    "matched_strings": [
+      "MessagingService.dll",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\messagingservice.cpp"
+    ],
+    "name": "?OnStarting@MessagingService@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(MessagingService *__hidden this)",
+    "rank_score": 512,
+    "size": 76,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "MicrosoftTelemetryAssertTriggeredNoArgs",
+    "ea": "0x18000a8e0",
+    "function_file": "functions/18000a8e0_MicrosoftTelemetryAssertTriggeredNoArgs.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExA",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "MicrosoftTelemetryAssertTriggeredNoArgs",
+    "prototype": "int()",
+    "rank_score": 466,
+    "size": 162,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ServiceBase::ServiceMain(ulong,ushort const * *)",
+    "ea": "0x180005d98",
+    "function_file": "functions/180005d98_ServiceBase_ServiceMain_ulong_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW"
+    ],
+    "matched_strings": [],
+    "name": "?ServiceMain@ServiceBase@@QEAAJKPEAPEBG@Z",
+    "prototype": "__int64 __fastcall(ServiceBase *this, __int64, WCHAR **)",
+    "rank_score": 442,
+    "size": 584,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__g_messagingServiceInstance__",
+    "ea": "0x180001500",
+    "function_file": "functions/180001500_dynamic_initializer_for_g_messagingServiceInstance.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionEx",
+      "api-ms-win-eventing-provider-l1-1-0!EventSetInformation"
+    ],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__g_messagingServiceInstance__",
+    "prototype": "int()",
+    "rank_score": 433,
+    "size": 136,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IncomingTextMessageHandler::Shutdown(void)",
+    "ea": "0x180007318",
+    "function_file": "functions/180007318_IncomingTextMessageHandler_Shutdown_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Shutdown@IncomingTextMessageHandler@@QEAAXXZ",
+    "prototype": "void __fastcall(IncomingTextMessageHandler *__hidden this)",
+    "rank_score": 427,
+    "size": 238,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ServiceBase::_UpdateStatus(ulong)",
+    "ea": "0x180006548",
+    "function_file": "functions/180006548_ServiceBase_UpdateStatus_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+    ],
+    "matched_strings": [],
+    "name": "?_UpdateStatus@ServiceBase@@AEAAJK@Z",
+    "prototype": "signed int __fastcall(ServiceBase *this, int)",
+    "rank_score": 426,
+    "size": 178,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "AsyncWorkQueue::_CancelAllAsync(int)",
+    "ea": "0x1800058c8",
+    "function_file": "functions/1800058c8_AsyncWorkQueue_CancelAllAsync_int.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?_CancelAllAsync@AsyncWorkQueue@@AEAAXH@Z",
+    "prototype": "void __fastcall(AsyncWorkQueue *__hidden this, int)",
+    "rank_score": 421,
+    "size": 429,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ATL::CAtlModule::~CAtlModule(void)",
+    "ea": "0x180002c08",
+    "function_file": "functions/180002c08_ATL_CAtlModule_CAtlModule_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??1CAtlModule@ATL@@UEAA@XZ",
+    "prototype": "void __fastcall(ATL::CAtlModule *this, unsigned int)",
+    "rank_score": 416,
+    "size": 160,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ServiceBase::~ServiceBase(void)",
+    "ea": "0x180005d18",
+    "function_file": "functions/180005d18_ServiceBase_ServiceBase_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1ServiceBase@@UEAA@XZ",
+    "prototype": "void __fastcall(ServiceBase *__hidden this)",
+    "rank_score": 415,
+    "size": 58,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AsyncWorkQueue::~AsyncWorkQueue(void)",
+    "ea": "0x18000547c",
+    "function_file": "functions/18000547c_AsyncWorkQueue_AsyncWorkQueue_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolWork"
+    ],
+    "matched_strings": [],
+    "name": "??1AsyncWorkQueue@@MEAA@XZ",
+    "prototype": "void __fastcall(AsyncWorkQueue *__hidden this)",
+    "rank_score": 414,
+    "size": 121,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "IncomingTextMessageHandler::_OnNewMessageEvent(void *,_CBROKERED_EVENT_ID,void *,void *,ulong,ulong,_BI_ACTIVATION_STATUS *)",
+    "ea": "0x1800078a0",
+    "function_file": "functions/1800078a0_IncomingTextMessageHandler_OnNewMessageEvent_void_CBROKERED_EVENT_ID_void_void_ulong_ulong_BI_ACTIVATION_STATU.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?_OnNewMessageEvent@IncomingTextMessageHandler@@CAXPEAXU_CBROKERED_EVENT_ID@@00KKPEAW4_BI_ACTIVATION_STATUS@@@Z",
+    "prototype": "void __fastcall(__int64, __int64, __int64, const IID *)",
+    "rank_score": 325,
+    "size": 135,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "TransportManager::_StartIdleTimer(void)",
+    "ea": "0x1800051cc",
+    "function_file": "functions/1800051cc_TransportManager_StartIdleTimer_void.md",
+    "matched_imports": [
+      "PhoneUtil!OneShotTimer_CreateInstance"
+    ],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?_StartIdleTimer@TransportManager@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(TransportManager *__hidden this)",
+    "rank_score": 300,
+    "size": 401,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "IncomingTextMessageHandler::_OnNewMessage(void *)",
+    "ea": "0x180007594",
+    "function_file": "functions/180007594_IncomingTextMessageHandler_OnNewMessage_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoGetClassObject"
+    ],
+    "matched_strings": [
+      "New message received and receive task scheduled."
+    ],
+    "name": "?_OnNewMessage@IncomingTextMessageHandler@@AEAAJPEAX@Z",
+    "prototype": "__int64 __fastcall(IncomingTextMessageHandler *this, const IID *, __int64)",
+    "rank_score": 283,
+    "size": 771,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<IncomingTextMessageHandler>::`vector deleting destructor'(uint)",
+    "ea": "0x1800071b0",
+    "function_file": "functions/1800071b0_ATL_CComObject_IncomingTextMessageHandler_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VIncomingTextMessageHandler@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "IncomingTextMessageHandler *__fastcall(IncomingTextMessageHandler *this, char)",
+    "rank_score": 233,
+    "size": 87,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<ReceiveTextMessageTask>::`scalar deleting destructor'(uint)",
+    "ea": "0x180007bb0",
+    "function_file": "functions/180007bb0_ATL_CComObject_ReceiveTextMessageTask_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_G?$CComObject@VReceiveTextMessageTask@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "ReceiveTextMessageTask *__fastcall(ReceiveTextMessageTask *this, char)",
+    "rank_score": 233,
+    "size": 87,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<TransportManager>::`vector deleting destructor'(uint)",
+    "ea": "0x180003f20",
+    "function_file": "functions/180003f20_ATL_CComObject_TransportManager_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VTransportManager@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "TransportManager *__fastcall(TransportManager *this, char)",
+    "rank_score": 233,
+    "size": 109,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMessagingServiceDll::`vector deleting destructor'(uint)",
+    "ea": "0x180002cb0",
+    "function_file": "functions/180002cb0_CMessagingServiceDll_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_ECMessagingServiceDll@@UEAAPEAXI@Z",
+    "prototype": "CMessagingServiceDll *__fastcall(CMessagingServiceDll *this, char)",
+    "rank_score": 233,
+    "size": 114,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::`scalar deleting destructor'(uint)",
+    "ea": "0x180003ea0",
+    "function_file": "functions/180003ea0_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_ITransportTask_ATL_CComPtr_I.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_G?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJPEAUITransportTask@@@ZV?$CComPtr@UITransportTask@@@2@UEmpty@detail@@U67@U67@U67@U67@U67@U67@U67@@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(void *, char)",
+    "rank_score": 232,
+    "size": 48,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>::`scalar deleting destructor'(uint)",
+    "ea": "0x180003fa0",
+    "function_file": "functions/180003fa0_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_ITransportTask_ATL_CComPtr_ITransportTask_d.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_G?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJPEAUITransportTask@@@ZV?$CComPtr@UITransportTask@@@2@UEmpty@detail@@U67@U67@U67@U67@U67@U67@U67@@@MEAAPEAXI@Z",
+    "prototype": "_QWORD **__fastcall(_QWORD **, char)",
+    "rank_score": 232,
+    "size": 125,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "IncomingTextMessageHandler::`vector deleting destructor'(uint)",
+    "ea": "0x180007210",
+    "function_file": "functions/180007210_IncomingTextMessageHandler_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_EIncomingTextMessageHandler@@MEAAPEAXI@Z",
+    "prototype": "IncomingTextMessageHandler *__fastcall(IncomingTextMessageHandler *this, char)",
+    "rank_score": 232,
+    "size": 48,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Udm::_dynamic_atexit_destructor_for__s_serviceDll__",
+    "ea": "0x18000b170",
+    "function_file": "functions/18000b170_Udm_dynamic_atexit_destructor_for_s_serviceDll.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary"
+    ],
+    "matched_strings": [],
+    "name": "Udm::_dynamic_atexit_destructor_for__s_serviceDll__",
+    "prototype": "BOOL()",
+    "rank_score": 231,
+    "size": 27,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Udm::_dynamic_initializer_for__s_serviceDllLock__",
+    "ea": "0x180001700",
+    "function_file": "functions/180001700_Udm_dynamic_initializer_for_s_serviceDllLock.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionEx"
+    ],
+    "matched_strings": [],
+    "name": "Udm::_dynamic_initializer_for__s_serviceDllLock__",
+    "prototype": "int()",
+    "rank_score": 231,
+    "size": 38,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MessagingService::OnStopping(int)",
+    "ea": "0x180003500",
+    "function_file": "functions/180003500_MessagingService_OnStopping_int.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary"
+    ],
+    "matched_strings": [],
+    "name": "?OnStopping@MessagingService@@UEAAJH@Z",
+    "prototype": "__int64 __fastcall(MessagingService *__hidden this, int)",
+    "rank_score": 226,
+    "size": 192,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IncomingMessageRegistrationEvent::~IncomingMessageRegistrationEvent(void)",
+    "ea": "0x180009aec",
+    "function_file": "functions/180009aec_IncomingMessageRegistrationEvent_IncomingMessageRegistrationEvent_void.md",
+    "matched_imports": [
+      "EventAggregation!BriDeleteBrokeredEvent"
+    ],
+    "matched_strings": [],
+    "name": "??1IncomingMessageRegistrationEvent@@QEAA@XZ",
+    "prototype": "void __fastcall(IncomingMessageRegistrationEvent *__hidden this)",
+    "rank_score": 225,
+    "size": 124,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "tlx::_delete<IncomingMessageRegistrationEvent>(IncomingMessageRegistrationEvent *)",
+    "ea": "0x180007128",
+    "function_file": "functions/180007128_tlx_delete_IncomingMessageRegistrationEvent_IncomingMessageRegistrationEvent.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??$_delete@VIncomingMessageRegistrationEvent@@@tlx@@YAXPEAVIncomingMessageRegistrationEvent@@@Z",
+    "prototype": "void __fastcall(IncomingMessageRegistrationEvent *)",
+    "rank_score": 225,
+    "size": 33,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "ReceiveTextMessageTask::Execute(void)",
+    "ea": "0x180007d50",
+    "function_file": "functions/180007d50_ReceiveTextMessageTask_Execute_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp"
+    ],
+    "name": "?Execute@ReceiveTextMessageTask@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(ReceiveTextMessageTask *__hidden this)",
+    "rank_score": 224,
+    "size": 712,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "_tlgWriteTransfer_EventWriteTransfer",
+    "ea": "0x18000108c",
+    "function_file": "functions/18000108c_tlgWriteTransfer_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, unsigned __int8 *, const GUID *, const GUID *, ULONG UserDataCount, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 224,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<TextMessage>::`vector deleting destructor'(uint)",
+    "ea": "0x18000a160",
+    "function_file": "functions/18000a160_ATL_CComObject_TextMessage_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VTextMessage@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "TextMessage *__fastcall(TextMessage *this, char)",
+    "rank_score": 223,
+    "size": 87,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<TextMessageTransport>::`vector deleting destructor'(uint)",
+    "ea": "0x180006b50",
+    "function_file": "functions/180006b50_ATL_CComObject_TextMessageTransport_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VTextMessageTransport@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "TextMessageTransport *__fastcall(TextMessageTransport *this, char)",
+    "rank_score": 223,
+    "size": 87,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MessagingService::`scalar deleting destructor'(uint)",
+    "ea": "0x180002fd0",
+    "function_file": "functions/180002fd0_MessagingService_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_GMessagingService@@UEAAPEAXI@Z",
+    "prototype": "MessagingService *__fastcall(MessagingService *this, char)",
+    "rank_score": 223,
+    "size": 76,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CAtlModule::GetGITPtr(IGlobalInterfaceTable * *)",
+    "ea": "0x180002d60",
+    "function_file": "functions/180002d60_ATL_CAtlModule_GetGITPtr_IGlobalInterfaceTable.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?GetGITPtr@CAtlModule@ATL@@UEAAJPEAPEAUIGlobalInterfaceTable@@@Z",
+    "prototype": "__int64 __fastcall(ATL::CAtlModule *__hidden this, struct IGlobalInterfaceTable **)",
+    "rank_score": 222,
+    "size": 117,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::`vector deleting destructor'(uint)",
+    "ea": "0x180003ee0",
+    "function_file": "functions/180003ee0_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_void_detail_Empty_detail_Emp.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJXZUEmpty@detail@@U45@U45@U45@U45@U45@U45@U45@U45@@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(void *, char)",
+    "rank_score": 222,
+    "size": 48,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ConfigValueStringList::`scalar deleting destructor'(uint)",
+    "ea": "0x1800070f0",
+    "function_file": "functions/1800070f0_ConfigValueStringList_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_GConfigValueStringList@@UEAAPEAXI@Z",
+    "prototype": "ConfigValueStringList *__fastcall(ConfigValueStringList *this, char)",
+    "rank_score": 222,
+    "size": 48,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>::`scalar deleting destructor'(uint)",
+    "ea": "0x180004030",
+    "function_file": "functions/180004030_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_void_detail_Empty_detail_Empty_detail_Empty.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_G?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJXZUEmpty@detail@@U45@U45@U45@U45@U45@U45@U45@U45@@@MEAAPEAXI@Z",
+    "prototype": "_QWORD **__fastcall(_QWORD **, char)",
+    "rank_score": 222,
+    "size": 94,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ReceiveTextMessageTask::`scalar deleting destructor'(uint)",
+    "ea": "0x180007c10",
+    "function_file": "functions/180007c10_ReceiveTextMessageTask_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_GReceiveTextMessageTask@@MEAAPEAXI@Z",
+    "prototype": "ReceiveTextMessageTask *__fastcall(ReceiveTextMessageTask *this, char)",
+    "rank_score": 222,
+    "size": 48,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ServiceBase::`scalar deleting destructor'(uint)",
+    "ea": "0x180005d60",
+    "function_file": "functions/180005d60_ServiceBase_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_GServiceBase@@UEAAPEAXI@Z",
+    "prototype": "ServiceBase *__fastcall(ServiceBase *this, char)",
+    "rank_score": 222,
+    "size": 48,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__IncomingTextMessageHandler::sm_instanceLock__",
+    "ea": "0x1800016b0",
+    "function_file": "functions/1800016b0_dynamic_initializer_for_IncomingTextMessageHandler_sm_instanceLock.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSectionEx"
+    ],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__IncomingTextMessageHandler::sm_instanceLock__",
+    "prototype": "int()",
+    "rank_score": 221,
+    "size": 38,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 12,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001730",
+    "function_file": "functions/180001730_operator_new_unsigned_int64.md",
+    "matched_imports": [
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 215,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "IncomingMessageRegistrationEvent::FreeEaEventHandle(void *)",
+    "ea": "0x180009b70",
+    "function_file": "functions/180009b70_IncomingMessageRegistrationEvent_FreeEaEventHandle_void.md",
+    "matched_imports": [
+      "EventAggregation!EaDeleteAggregation"
+    ],
+    "matched_strings": [],
+    "name": "?FreeEaEventHandle@IncomingMessageRegistrationEvent@@CAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 214,
+    "size": 43,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "McGenEventWrite_EventWriteTransfer",
+    "ea": "0x180006764",
+    "function_file": "functions/180006764_McGenEventWrite_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, const EVENT_DESCRIPTOR *, __int64, ULONG UserDataCount, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 214,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlComModule::~CAtlComModule(void)",
+    "ea": "0x180005404",
+    "function_file": "functions/180005404_ATL_CAtlComModule_CAtlComModule_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CAtlComModule@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CAtlComModule *__hidden this)",
+    "rank_score": 213,
+    "size": 112,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ATL::CComCriticalSection::Init(void)",
+    "ea": "0x180002dec",
+    "function_file": "functions/180002dec_ATL_CComCriticalSection_Init_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Init@CComCriticalSection@ATL@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(struct _RTL_CRITICAL_SECTION *this)",
+    "rank_score": 213,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CComInit::~CComInit(void)",
+    "ea": "0x180002fa0",
+    "function_file": "functions/180002fa0_CComInit_CComInit_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoUninitialize"
+    ],
+    "matched_strings": [],
+    "name": "??1CComInit@@QEAA@XZ",
+    "prototype": "void __fastcall(CComInit *__hidden this)",
+    "rank_score": 212,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AsyncWorkQueue::WaitForCallbacksToComplete(void)",
+    "ea": "0x1800056c0",
+    "function_file": "functions/1800056c0_AsyncWorkQueue_WaitForCallbacksToComplete_void.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolWorkCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?WaitForCallbacksToComplete@AsyncWorkQueue@@UEAAXXZ",
+    "prototype": "void __fastcall(AsyncWorkQueue *__hidden this)",
+    "rank_score": 211,
+    "size": 26,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "AsyncWorkQueue::CancelAllAndWait(void)",
+    "ea": "0x180005590",
+    "function_file": "functions/180005590_AsyncWorkQueue_CancelAllAndWait_void.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolWorkCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?CancelAllAndWait@AsyncWorkQueue@@UEAAXXZ",
+    "prototype": "void __fastcall(struct _TP_WORK **this)",
+    "rank_score": 202,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "AsyncWorkQueue::ShutDown(void)",
+    "ea": "0x180005690",
+    "function_file": "functions/180005690_AsyncWorkQueue_ShutDown_void.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolWorkCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?ShutDown@AsyncWorkQueue@@UEAAXXZ",
+    "prototype": "void __fastcall(struct _TP_WORK **this)",
+    "rank_score": 202,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ReceiveTextMessageTask::_ParseTrigger(Windows::Devices::Sms::ISmsMessageBase * *)",
+    "ea": "0x180008e54",
+    "function_file": "functions/180008e54_ReceiveTextMessageTask_ParseTrigger_Windows_Devices_Sms_ISmsMessageBase.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp"
+    ],
+    "name": "?_ParseTrigger@ReceiveTextMessageTask@@AEAAJPEAPEAUISmsMessageBase@Sms@Devices@Windows@@@Z",
+    "prototype": "__int64 __fastcall(ReceiveTextMessageTask *__hidden this, struct Windows::Devices::Sms::ISmsMessageBase **)",
+    "rank_score": 182,
+    "size": 710,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "TransportManager::_ScheduleTask(ITransportTask *)",
+    "ea": "0x180005030",
+    "function_file": "functions/180005030_TransportManager_ScheduleTask_ITransportTask.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?_ScheduleTask@TransportManager@@AEAAJPEAUITransportTask@@@Z",
+    "prototype": "__int64 __fastcall(TransportManager *__hidden this, struct ITransportTask *)",
+    "rank_score": 149,
+    "size": 405,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Udm::_dynamic_atexit_destructor_for__s_serviceDllLock__",
+    "ea": "0x18000b1a0",
+    "function_file": "functions/18000b1a0_Udm_dynamic_atexit_destructor_for_s_serviceDllLock.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "Udm::_dynamic_atexit_destructor_for__s_serviceDllLock__",
+    "prototype": "void()",
+    "rank_score": 130,
+    "size": 14,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "TransportManager::_OnTaskCompleted(ITransportTask *)",
+    "ea": "0x180004ea0",
+    "function_file": "functions/180004ea0_TransportManager_OnTaskCompleted_ITransportTask.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?_OnTaskCompleted@TransportManager@@AEAAJPEAUITransportTask@@@Z",
+    "prototype": "__int64 __fastcall(TransportManager *__hidden this, struct ITransportTask *)",
+    "rank_score": 120,
+    "size": 393,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__IncomingTextMessageHandler::sm_instanceLock__",
+    "ea": "0x18000b150",
+    "function_file": "functions/18000b150_dynamic_atexit_destructor_for_IncomingTextMessageHandler_sm_instanceLock.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__IncomingTextMessageHandler::sm_instanceLock__",
+    "prototype": "void()",
+    "rank_score": 120,
+    "size": 14,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180002556",
+    "function_file": "functions/180002556_operator_delete_void.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z_0",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 117,
+    "size": 6,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "TransportManager::_Initialize(IAsyncWorkQueue *,ITransportManagerCallback *,ulong)",
+    "ea": "0x180004c48",
+    "function_file": "functions/180004c48_TransportManager_Initialize_IAsyncWorkQueue_ITransportManagerCallback_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp",
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?_Initialize@TransportManager@@AEAAJPEAUIAsyncWorkQueue@@PEAUITransportManagerCallback@@K@Z",
+    "prototype": "__int64 __fastcall(TransportManager *this, struct IAsyncWorkQueue *, struct ITransportManagerCallback *, int)",
+    "rank_score": 113,
+    "size": 587,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180002b2e",
+    "function_file": "functions/180002b2e_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "memset_0",
+    "ea": "0x18000aa27",
+    "function_file": "functions/18000aa27_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 106,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "memcpy_0",
+    "ea": "0x180002706",
+    "function_file": "functions/180002706_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_CxxThrowException_0",
+    "ea": "0x1800026ec",
+    "function_file": "functions/1800026ec_CxxThrowException_0.md",
+    "matched_imports": [
+      "msvcrt!_CxxThrowException"
+    ],
+    "matched_strings": [],
+    "name": "_CxxThrowException_0",
+    "prototype": "void __stdcall __noreturn(void *pExceptionObject, _ThrowInfo *pThrowInfo)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "exception::~exception(void)",
+    "ea": "0x1800026cd",
+    "function_file": "functions/1800026cd_exception_exception_void.md",
+    "matched_imports": [
+      "msvcrt!??1exception@@UEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1exception@@UEAA@XZ_0",
+    "prototype": "void __fastcall(exception *this)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "memmove_0",
+    "ea": "0x180002712",
+    "function_file": "functions/180002712_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MessagingService::OnTransportsIdle(void)",
+    "ea": "0x1800035d0",
+    "function_file": "functions/1800035d0_MessagingService_OnTransportsIdle_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\messagingservice.cpp"
+    ],
+    "name": "?OnTransportsIdle@MessagingService@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(MessagingService *__hidden this)",
+    "rank_score": 76,
+    "size": 162,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "TransportManager::Shutdown(void)",
+    "ea": "0x180004984",
+    "function_file": "functions/180004984_TransportManager_Shutdown_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?Shutdown@TransportManager@@QEAAXXZ",
+    "prototype": "void __fastcall(TransportManager *__hidden this)",
+    "rank_score": 70,
+    "size": 333,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "Log_HREvent_3",
+    "ea": "0x180007248",
+    "function_file": "functions/180007248_Log_HREvent_3.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\incomingtextmessagehandler.cpp"
+    ],
+    "name": "Log_HREvent_3",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64)",
+    "rank_score": 67,
+    "size": 23,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ReceiveTextMessageTask::CreateInstance(Windows::Devices::Sms::ISmsMessageReceivedTriggerDetails *,ITransportTaskCallback *,ReceiveTextMessageTask * *)",
+    "ea": "0x180007c48",
+    "function_file": "functions/180007c48_ReceiveTextMessageTask_CreateInstance_Windows_Devices_Sms_ISmsMessageReceivedTriggerDetails_ITransportTaskCall.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp"
+    ],
+    "name": "?CreateInstance@ReceiveTextMessageTask@@SAJPEAUISmsMessageReceivedTriggerDetails@Sms@Devices@Windows@@PEAUITransportTaskCallback@@PEAPEAV1@@Z",
+    "prototype": "__int64 __fastcall(struct Windows::Devices::Sms::ISmsMessageReceivedTriggerDetails *, struct ITransportTaskCallback *, struct ReceiveTextMessageTask **)",
+    "rank_score": 67,
+    "size": 252,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ReceiveTextMessageTask::_CompleteTask(void)",
+    "ea": "0x1800080c8",
+    "function_file": "functions/1800080c8_ReceiveTextMessageTask_CompleteTask_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp"
+    ],
+    "name": "?_CompleteTask@ReceiveTextMessageTask@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(ReceiveTextMessageTask *__hidden this)",
+    "rank_score": 67,
+    "size": 153,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "TransportManager::OnTaskCompleted(ITransportTask *)",
+    "ea": "0x180004500",
+    "function_file": "functions/180004500_TransportManager_OnTaskCompleted_ITransportTask.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?OnTaskCompleted@TransportManager@@UEAAJPEAUITransportTask@@@Z",
+    "prototype": "__int64 __fastcall(TransportManager *this, struct ITransportTask *, __int64, __int64)",
+    "rank_score": 67,
+    "size": 271,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "TransportManager::ScheduleTask(ITransportTask *)",
+    "ea": "0x180004880",
+    "function_file": "functions/180004880_TransportManager_ScheduleTask_ITransportTask.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?ScheduleTask@TransportManager@@UEAAJPEAUITransportTask@@@Z",
+    "prototype": "__int64 __fastcall(wchar_t *this, struct ITransportTask *, int, int)",
+    "rank_score": 66,
+    "size": 251,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Log_AssertionEvent",
+    "ea": "0x1800044c4",
+    "function_file": "functions/1800044c4_Log_AssertionEvent.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "Log_AssertionEvent",
+    "prototype": "void __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 63,
+    "size": 17,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ReceiveTextMessageTask::_ReceiveMessage(void)",
+    "ea": "0x180009120",
+    "function_file": "functions/180009120_ReceiveTextMessageTask_ReceiveMessage_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\receivetextmessagetask.cpp"
+    ],
+    "name": "?_ReceiveMessage@ReceiveTextMessageTask@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(ReceiveTextMessageTask *__hidden this)",
+    "rank_score": 63,
+    "size": 700,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "TransportManager::Start(void)",
+    "ea": "0x180004ad8",
+    "function_file": "functions/180004ad8_TransportManager_Start_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?Start@TransportManager@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(TransportManager *__hidden this)",
+    "rank_score": 58,
+    "size": 181,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "Log_HREvent_5",
+    "ea": "0x180009bc4",
+    "function_file": "functions/180009bc4_Log_HREvent_5.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\incomingmessageregistrationevent.cpp"
+    ],
+    "name": "Log_HREvent_5",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64)",
+    "rank_score": 57,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "TransportManager::_ExecuteNextTask(void)",
+    "ea": "0x180004ba0",
+    "function_file": "functions/180004ba0_TransportManager_ExecuteNextTask_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\service\\transportmanager.cpp"
+    ],
+    "name": "?_ExecuteNextTask@TransportManager@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(TransportManager *this, __int64)",
+    "rank_score": 55,
+    "size": 161,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Log_AssertionEvent_0",
+    "ea": "0x180009ba4",
+    "function_file": "functions/180009ba4_Log_AssertionEvent_0.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecoreuap\\net\\messaging\\desktoptransport\\texttransport\\lib\\incomingmessageregistrationevent.cpp"
+    ],
+    "name": "Log_AssertionEvent_0",
+    "prototype": "void __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 52,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "IncomingTextMessageHandler::_RegisterForTextMessages(void)",
+    "ea": "0x180007930",
+    "function_file": "functions/180007930_IncomingTextMessageHandler_RegisterForTextMessages_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_RegisterForTextMessages@IncomingTextMessageHandler@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(IncomingTextMessageHandler *__hidden this)",
+    "rank_score": 44,
+    "size": 430,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "TextMessageTransport::_Initialize(ITransportTaskScheduler *,ITransportTaskCallback *)",
+    "ea": "0x180006df0",
+    "function_file": "functions/180006df0_TextMessageTransport_Initialize_ITransportTaskScheduler_ITransportTaskCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Initialize@TextMessageTransport@@AEAAJPEAUITransportTaskScheduler@@PEAUITransportTaskCallback@@@Z",
+    "prototype": "__int64 __fastcall(TextMessageTransport *this, struct ITransportTaskScheduler *, struct ITransportTaskCallback *)",
+    "rank_score": 40,
+    "size": 485,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 42,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000aa50",
+    "function_file": "functions/18000aa50_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IncomingTextMessageHandler::_Initialize(ITransportTaskScheduler *,ITransportTaskCallback *)",
+    "ea": "0x18000749c",
+    "function_file": "functions/18000749c_IncomingTextMessageHandler_Initialize_ITransportTaskScheduler_ITransportTaskCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Initialize@IncomingTextMessageHandler@@AEAAJPEAUITransportTaskScheduler@@PEAUITransportTaskCallback@@@Z",
+    "prototype": "__int64 __fastcall(IncomingTextMessageHandler *__hidden this, struct ITransportTaskScheduler *, struct ITransportTaskCallback *)",
+    "rank_score": 36,
+    "size": 239,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 84,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18000c010",
+    "function_file": "functions/18000c010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__c_pDefaultValue_SmsInterceptPorts__",
+    "ea": "0x180001630",
+    "function_file": "functions/180001630_dynamic_initializer_for_c_pDefaultValue_SmsInterceptPorts.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__c_pDefaultValue_SmsInterceptPorts__",
+    "prototype": "int()",
+    "rank_score": 32,
+    "size": 32,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__c_pDefaultValue_SmsInterceptPrefixes__",
+    "ea": "0x180001660",
+    "function_file": "functions/180001660_dynamic_initializer_for_c_pDefaultValue_SmsInterceptPrefixes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__c_pDefaultValue_SmsInterceptPrefixes__",
+    "prototype": "int()",
+    "rank_score": 32,
+    "size": 32,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CAtlModuleT<CMessagingServiceDll>::AddCommonRGSReplacements(IRegistrarBase *)",
+    "ea": "0x180002d30",
+    "function_file": "functions/180002d30_ATL_CAtlModuleT_CMessagingServiceDll_AddCommonRGSReplacements_IRegistrarBase.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddCommonRGSReplacements@?$CAtlModuleT@VCMessagingServiceDll@@@ATL@@UEAAJPEAUIRegistrarBase@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 31,
+    "size": 39,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 19,
+    "demangled": "Log_HREvent_0",
+    "ea": "0x1800044dc",
+    "function_file": "functions/1800044dc_Log_HREvent_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Log_HREvent_0",
+    "prototype": "void __fastcall(__int64, int, char *, __int64)",
+    "rank_score": 31,
+    "size": 22,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Udm::_dynamic_initializer_for__s_serviceDll__",
+    "ea": "0x1800016e0",
+    "function_file": "functions/1800016e0_Udm_dynamic_initializer_for_s_serviceDll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Udm::_dynamic_initializer_for__s_serviceDll__",
+    "prototype": "int()",
+    "rank_score": 31,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__c_pDefaultValue_SmsInterceptPorts__",
+    "ea": "0x18000b0e0",
+    "function_file": "functions/18000b0e0_dynamic_atexit_destructor_for_c_pDefaultValue_SmsInterceptPorts.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__c_pDefaultValue_SmsInterceptPorts__",
+    "prototype": "void()",
+    "rank_score": 31,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__c_pDefaultValue_SmsInterceptPrefixes__",
+    "ea": "0x18000b100",
+    "function_file": "functions/18000b100_dynamic_atexit_destructor_for_c_pDefaultValue_SmsInterceptPrefixes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__c_pDefaultValue_SmsInterceptPrefixes__",
+    "prototype": "void()",
+    "rank_score": 31,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "QueueAsyncWorkItem_ATL::CComPtr_TransportManager__long_(__cdecl_TransportManager::_)(ITransportTask__)_ATL::CComPtr_ITransportTask___",
+    "ea": "0x180003774",
+    "function_file": "functions/180003774_QueueAsyncWorkItem_ATL_CComPtr_TransportManager_long_cdecl_TransportManager_ITransportTask_ATL_CComPtr_ITransp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QueueAsyncWorkItem_ATL::CComPtr_TransportManager__long_(__cdecl_TransportManager::_)(ITransportTask__)_ATL::CComPtr_ITransportTask___",
+    "prototype": "__int64 __fastcall(__int64, __int64 *, _OWORD *, __int64 *)",
+    "rank_score": 29,
+    "size": 428,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "utl::list<AsyncWorkQueue::AsyncWorkItem,utl::allocator<AsyncWorkQueue::AsyncWorkItem>>::clear(void)",
+    "ea": "0x180005bd4",
+    "function_file": "functions/180005bd4_utl_list_AsyncWorkQueue_AsyncWorkItem_utl_allocator_AsyncWorkQueue_AsyncWorkItem_clear_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?clear@?$list@UAsyncWorkItem@AsyncWorkQueue@@V?$allocator@UAsyncWorkItem@AsyncWorkQueue@@@utl@@@utl@@QEAAXXZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 28,
+    "size": 141,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "ConfigValueStringList::ConfigValueStringList(void)",
+    "ea": "0x180006fdc",
+    "function_file": "functions/180006fdc_ConfigValueStringList_ConfigValueStringList_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0ConfigValueStringList@@QEAA@XZ",
+    "prototype": "ConfigValueStringList *__fastcall(ConfigValueStringList *__hidden this)",
+    "rank_score": 27,
+    "size": 153,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "ConfigValueStringList::~ConfigValueStringList(void)",
+    "ea": "0x18000707c",
+    "function_file": "functions/18000707c_ConfigValueStringList_ConfigValueStringList_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1ConfigValueStringList@@UEAA@XZ",
+    "prototype": "void __fastcall(ConfigValueStringList *__hidden this)",
+    "rank_score": 27,
+    "size": 107,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IncomingTextMessageHandler::Start(void)",
+    "ea": "0x18000740c",
+    "function_file": "functions/18000740c_IncomingTextMessageHandler_Start_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Start@IncomingTextMessageHandler@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(IncomingTextMessageHandler *__hidden this)",
+    "rank_score": 27,
+    "size": 135,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::CreateInstance(ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>> * *)",
+    "ea": "0x180004190",
+    "function_file": "functions/180004190_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_ITransportTask_ATL_CComPtr_I.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJPEAUITransportTask@@@ZV?$CComPtr@UITransportTask@@@2@UEmpty@detail@@U67@U67@U67@U67@U67@U67@U67@@@@ATL@@SAJPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 26,
+    "size": 147,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "TransportManager::~TransportManager(void)",
+    "ea": "0x180003dc8",
+    "function_file": "functions/180003dc8_TransportManager_TransportManager_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1TransportManager@@MEAA@XZ",
+    "prototype": "void __fastcall(TransportManager *__hidden this)",
+    "rank_score": 26,
+    "size": 205,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<TransportManager>::CreateInstance(ATL::CComObject<TransportManager> * *)",
+    "ea": "0x1800042c8",
+    "function_file": "functions/1800042c8_ATL_CComObject_TransportManager_CreateInstance_ATL_CComObject_TransportManager.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComObject@VTransportManager@@@ATL@@SAJPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 25,
+    "size": 231,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "IncomingTextMessageHandler::~IncomingTextMessageHandler(void)",
+    "ea": "0x180007150",
+    "function_file": "functions/180007150_IncomingTextMessageHandler_IncomingTextMessageHandler_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1IncomingTextMessageHandler@@MEAA@XZ",
+    "prototype": "void __fastcall(IncomingTextMessageHandler *__hidden this)",
+    "rank_score": 25,
+    "size": 81,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::~CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>(void)",
+    "ea": "0x180003cac",
+    "function_file": "functions/180003cac_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_ITransportTask_ATL_CComPtr_I.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJPEAUITransportTask@@@ZV?$CComPtr@UITransportTask@@@2@UEmpty@detail@@U67@U67@U67@U67@U67@U67@U67@@@@ATL@@UEAA@XZ",
+    "prototype": "void **__fastcall(__int64)",
+    "rank_score": 24,
+    "size": 132,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180002b6c",
+    "function_file": "functions/180002b6c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "operator delete(void *,std::nothrow_t const &)",
+    "ea": "0x18000266c",
+    "function_file": "functions/18000266c_operator_delete_void_std_nothrow_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAXAEBUnothrow_t@std@@@Z",
+    "prototype": "void __fastcall(void *, const struct std::nothrow_t *)",
+    "rank_score": 24,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>(void *)",
+    "ea": "0x180003ac4",
+    "function_file": "functions/180003ac4_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_ITransportTask_ATL_CComPtr_I.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJPEAUITransportTask@@@ZV?$CComPtr@UITransportTask@@@2@UEmpty@detail@@U67@U67@U67@U67@U67@U67@U67@@@@ATL@@QEAA@PEAX@Z",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 23,
+    "size": 236,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::Release(void)",
+    "ea": "0x180004740",
+    "function_file": "functions/180004740_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_ITransportTask_ATL_CComPtr_I.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJPEAUITransportTask@@@ZV?$CComPtr@UITransportTask@@@2@UEmpty@detail@@U67@U67@U67@U67@U67@U67@U67@@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *)",
+    "rank_score": 23,
+    "size": 129,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<IncomingTextMessageHandler>::Release(void)",
+    "ea": "0x180007290",
+    "function_file": "functions/180007290_ATL_CComObject_IncomingTextMessageHandler_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VIncomingTextMessageHandler@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *)",
+    "rank_score": 23,
+    "size": 129,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<ReceiveTextMessageTask>::Release(void)",
+    "ea": "0x180008040",
+    "function_file": "functions/180008040_ATL_CComObject_ReceiveTextMessageTask_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VReceiveTextMessageTask@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *)",
+    "rank_score": 23,
+    "size": 129,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180002300",
+    "function_file": "functions/180002300_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__g_messagingServiceInstance__",
+    "ea": "0x18000b040",
+    "function_file": "functions/18000b040_dynamic_atexit_destructor_for_g_messagingServiceInstance.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__g_messagingServiceInstance__",
+    "prototype": "void()",
+    "rank_score": 23,
+    "size": 44,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__IncomingTextMessageHandler::sm_incomingTextMessageHandler__",
+    "ea": "0x18000b120",
+    "function_file": "functions/18000b120_dynamic_atexit_destructor_for_IncomingTextMessageHandler_sm_incomingTextMessageHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__IncomingTextMessageHandler::sm_incomingTextMessageHandler__",
+    "prototype": "__int64()",
+    "rank_score": 22,
+    "size": 33,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__c_pDefaultValue_SiProtocols__",
+    "ea": "0x180001600",
+    "function_file": "functions/180001600_dynamic_initializer_for_c_pDefaultValue_SiProtocols.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__c_pDefaultValue_SiProtocols__",
+    "prototype": "int()",
+    "rank_score": 22,
+    "size": 32,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "utl::basic_string<ushort,utl::char_traits<ushort>,utl::allocator<ushort>>::assign(ushort const *)",
+    "ea": "0x1800093e4",
+    "function_file": "functions/1800093e4_utl_basic_string_ushort_utl_char_traits_ushort_utl_allocator_ushort_assign_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@?$basic_string@GU?$char_traits@G@utl@@V?$allocator@G@2@@utl@@QEAA_NPEBG@Z",
+    "prototype": "char __fastcall(__int64, _WORD *)",
+    "rank_score": 22,
+    "size": 314,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x1800046c0",
+    "function_file": "functions/1800046c0_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_ITransportTask_ATL_CComPtr_I.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJPEAUITransportTask@@@ZV?$CComPtr@UITransportTask@@@2@UEmpty@detail@@U67@U67@U67@U67@U67@U67@U67@@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(char *, const struct _GUID *, char **)",
+    "rank_score": 21,
+    "size": 18,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<IncomingTextMessageHandler>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180007270",
+    "function_file": "functions/180007270_ATL_CComObject_IncomingTextMessageHandler_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VIncomingTextMessageHandler@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(char *, const struct _GUID *, char **)",
+    "rank_score": 21,
+    "size": 18,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<ReceiveTextMessageTask>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180008020",
+    "function_file": "functions/180008020_ATL_CComObject_ReceiveTextMessageTask_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VReceiveTextMessageTask@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(char *, const struct _GUID *, char **)",
+    "rank_score": 21,
+    "size": 18,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "ATL::CComObjectRootBase::InternalQueryInterface(void *,ATL::_ATL_INTMAP_ENTRY const *,_GUID const &,void * *)",
+    "ea": "0x1800043b8",
+    "function_file": "functions/1800043b8_ATL_CComObjectRootBase_InternalQueryInterface_void_ATL_ATL_INTMAP_ENTRY_const_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalQueryInterface@CComObjectRootBase@ATL@@SAJPEAXPEBU_ATL_INTMAP_ENTRY@2@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(char *, const struct ATL::_ATL_INTMAP_ENTRY *, const struct _GUID *, char **)",
+    "rank_score": 21,
+    "size": 260,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "EventWriteCommsErrorOriginateEvent(long,char const * const,ulong)",
+    "ea": "0x180006858",
+    "function_file": "functions/180006858_EventWriteCommsErrorOriginateEvent_long_char_const_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventWriteCommsErrorOriginateEvent@@YAXJQEBDK@Z",
+    "prototype": "void __fastcall(__int64, char *, __int64, __int64)",
+    "rank_score": 21,
+    "size": 71,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>::ProcessWorkItem(IUnknown *)",
+    "ea": "0x180004650",
+    "function_file": "functions/180004650_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_ITransportTask_ATL_CComPtr_ITransportTask_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessWorkItem@?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJPEAUITransportTask@@@ZV?$CComPtr@UITransportTask@@@2@UEmpty@detail@@U67@U67@U67@U67@U67@U67@U67@@@UEAAJPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 21,
+    "size": 44,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_MessagingService::OnStarted_::_1_::dtor$0",
+    "ea": "0x18000ae9c",
+    "function_file": "functions/18000ae9c_MessagingService_OnStarted_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_MessagingService::OnStarted_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_MessagingService::OnStarted_::_1_::dtor$2",
+    "ea": "0x18000aec0",
+    "function_file": "functions/18000aec0_MessagingService_OnStarted_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_MessagingService::OnStarted_::_1_::dtor$2",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_MessagingService::OnStarted_::_1_::dtor$7",
+    "ea": "0x18000aed2",
+    "function_file": "functions/18000aed2_MessagingService_OnStarted_1_dtor_7.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_MessagingService::OnStarted_::_1_::dtor$7",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_QueueAsyncWorkItem_ATL::CComPtr_TransportManager__long_(__cdecl_TransportManager::_)(ITransportTask__)_ATL::CComPtr_ITransportTask____::_1_::dtor$0",
+    "ea": "0x18000aee4",
+    "function_file": "functions/18000aee4_QueueAsyncWorkItem_ATL_CComPtr_TransportManager_long_cdecl_TransportManager_ITransportTask_ATL_CComPtr_ITransp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_QueueAsyncWorkItem_ATL::CComPtr_TransportManager__long_(__cdecl_TransportManager::_)(ITransportTask__)_ATL::CComPtr_ITransportTask____::_1_::dtor$0",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_TransportManager::ScheduleTask_::_1_::dtor$0",
+    "ea": "0x18000af2c",
+    "function_file": "functions/18000af2c_TransportManager_ScheduleTask_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_TransportManager::ScheduleTask_::_1_::dtor$0",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_TransportManager::ScheduleTask_::_1_::dtor$1",
+    "ea": "0x18000af3e",
+    "function_file": "functions/18000af3e_TransportManager_ScheduleTask_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_TransportManager::ScheduleTask_::_1_::dtor$1",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_TransportManager::_ExecuteNextTask_::_1_::dtor$0",
+    "ea": "0x18000aeae",
+    "function_file": "functions/18000aeae_TransportManager_ExecuteNextTask_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_TransportManager::_ExecuteNextTask_::_1_::dtor$0",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_TransportManager::_ScheduleTask_::_1_::dtor$0",
+    "ea": "0x18000af50",
+    "function_file": "functions/18000af50_TransportManager_ScheduleTask_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_TransportManager::_ScheduleTask_::_1_::dtor$0",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_TransportManager::_ScheduleTask_::_1_::dtor$1",
+    "ea": "0x18000af62",
+    "function_file": "functions/18000af62_TransportManager_ScheduleTask_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_TransportManager::_ScheduleTask_::_1_::dtor$1",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__c_pDefaultValue_SiProtocols__",
+    "ea": "0x18000b0c0",
+    "function_file": "functions/18000b0c0_dynamic_atexit_destructor_for_c_pDefaultValue_SiProtocols.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__c_pDefaultValue_SiProtocols__",
+    "prototype": "void()",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__IncomingTextMessageHandler::sm_incomingTextMessageHandler__",
+    "ea": "0x180001690",
+    "function_file": "functions/180001690_dynamic_initializer_for_IncomingTextMessageHandler_sm_incomingTextMessageHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__IncomingTextMessageHandler::sm_incomingTextMessageHandler__",
+    "prototype": "int()",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "EventWriteCommsErrorPropagateEvent(long,char const * const,ulong)",
+    "ea": "0x1800068a8",
+    "function_file": "functions/1800068a8_EventWriteCommsErrorPropagateEvent_long_char_const_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EventWriteCommsErrorPropagateEvent@@YAXJQEBDK@Z",
+    "prototype": "void __fastcall(__int64, char *, __int64, __int64)",
+    "rank_score": 20,
+    "size": 71,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(ITransportTask *),ATL::CComPtr<ITransportTask>,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>::CancelWorkItem(IUnknown *)",
+    "ea": "0x180003050",
+    "function_file": "functions/180003050_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_ITransportTask_ATL_CComPtr_ITransportTask_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CancelWorkItem@?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJPEAUITransportTask@@@ZV?$CComPtr@UITransportTask@@@2@UEmpty@detail@@U67@U67@U67@U67@U67@U67@U67@@@UEAAJPEAUIUnknown@@@Z",
+    "prototype": "__int64()",
+    "rank_score": 20,
+    "size": 3,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180002344",
+    "function_file": "functions/180002344_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, __int64 fdwReason, void *)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "QueueAsyncWorkItem_ATL::CComPtr_TransportManager__long_(__cdecl_TransportManager::_)(void)_",
+    "ea": "0x180003928",
+    "function_file": "functions/180003928_QueueAsyncWorkItem_ATL_CComPtr_TransportManager_long_cdecl_TransportManager_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QueueAsyncWorkItem_ATL::CComPtr_TransportManager__long_(__cdecl_TransportManager::_)(void)_",
+    "prototype": "__int64 __fastcall(__int64, __int64 *, _OWORD *)",
+    "rank_score": 19,
+    "size": 404,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "TextMessage::CreateInstance(Windows::Devices::Sms::ISmsMessageBase *,ulong,TextMessage * *)",
+    "ea": "0x18000a1c0",
+    "function_file": "functions/18000a1c0_TextMessage_CreateInstance_Windows_Devices_Sms_ISmsMessageBase_ulong_TextMessage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@TextMessage@@SAJPEAUISmsMessageBase@Sms@Devices@Windows@@KPEAPEAV1@@Z",
+    "prototype": "__int64 __fastcall(__int64 (__fastcall ***)(struct Windows::Devices::Sms::ISmsMessageBase *, GUID *, __int64 *), __int64, struct TextMessage **)",
+    "rank_score": 19,
+    "size": 261,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Copy(unsigned __int64,unsigned __int64)",
+    "ea": "0x180001908",
+    "function_file": "functions/180001908_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z",
+    "prototype": "size_t *__fastcall(const void **Src, unsigned __int64, size_t)",
+    "rank_score": 18,
+    "size": 247,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "ATL::CComPtr<IAsyncWorkQueue>::~CComPtr<IAsyncWorkQueue>(void)",
+    "ea": "0x180002f7c",
+    "function_file": "functions/180002f7c_ATL_CComPtr_IAsyncWorkQueue_CComPtr_IAsyncWorkQueue_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UIAsyncWorkQueue@@@ATL@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 17,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::CreateInstance(ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>> * *)",
+    "ea": "0x18000422c",
+    "function_file": "functions/18000422c_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_void_detail_Empty_detail_Emp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJXZUEmpty@detail@@U45@U45@U45@U45@U45@U45@U45@U45@@@@ATL@@SAJPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 16,
+    "size": 147,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "ATL::CComPtr<TransportManager>::~CComPtr<TransportManager>(void)",
+    "ea": "0x180002be4",
+    "function_file": "functions/180002be4_ATL_CComPtr_TransportManager_CComPtr_TransportManager_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@VTransportManager@@@ATL@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 16,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "ATL::CComPtrBase<IAsyncCallback>::~CComPtrBase<IAsyncCallback>(void)",
+    "ea": "0x180003da4",
+    "function_file": "functions/180003da4_ATL_CComPtrBase_IAsyncCallback_CComPtrBase_IAsyncCallback_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtrBase@UIAsyncCallback@@@ATL@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 16,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ReceiveTextMessageTask::_Initialize(Windows::Devices::Sms::ISmsMessageReceivedTriggerDetails *,ITransportTaskCallback *)",
+    "ea": "0x180008d68",
+    "function_file": "functions/180008d68_ReceiveTextMessageTask_Initialize_Windows_Devices_Sms_ISmsMessageReceivedTriggerDetails_ITransportTaskCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Initialize@ReceiveTextMessageTask@@AEAAJPEAUISmsMessageReceivedTriggerDetails@Sms@Devices@Windows@@PEAUITransportTaskCallback@@@Z",
+    "prototype": "__int64 __fastcall(ReceiveTextMessageTask *__hidden this, struct Windows::Devices::Sms::ISmsMessageReceivedTriggerDetails *, struct ITransportTaskCallback *)",
+    "rank_score": 16,
+    "size": 228,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ATL::CComObject<TransportManager>::Release(void)",
+    "ea": "0x1800047d0",
+    "function_file": "functions/1800047d0_ATL_CComObject_TransportManager_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VTransportManager@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(volatile signed __int32 *)",
+    "rank_score": 15,
+    "size": 129,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Log_HREvent_2",
+    "ea": "0x180006be8",
+    "function_file": "functions/180006be8_Log_HREvent_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Log_HREvent_2",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64)",
+    "rank_score": 15,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Log_HREvent_6",
+    "ea": "0x18000a2ec",
+    "function_file": "functions/18000a2ec_Log_HREvent_6.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Log_HREvent_6",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64)",
+    "rank_score": 15,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18000aac0",
+    "function_file": "functions/18000aac0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "atexit",
+    "ea": "0x180002634",
+    "function_file": "functions/180002634_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 15,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Log_HREvent",
+    "ea": "0x18000307c",
+    "function_file": "functions/18000307c_Log_HREvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Log_HREvent",
+    "prototype": "void __fastcall(__int64, __int64, char *, __int64)",
+    "rank_score": 14,
+    "size": 11,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ReceiveTextMessageTask::~ReceiveTextMessageTask(void)",
+    "ea": "0x180007ae4",
+    "function_file": "functions/180007ae4_ReceiveTextMessageTask_ReceiveTextMessageTask_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1ReceiveTextMessageTask@@MEAA@XZ",
+    "prototype": "void __fastcall(ReceiveTextMessageTask *__hidden this)",
+    "rank_score": 14,
+    "size": 96,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>(void *)",
+    "ea": "0x180003bb8",
+    "function_file": "functions/180003bb8_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_void_detail_Empty_detail_Emp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJXZUEmpty@detail@@U45@U45@U45@U45@U45@U45@U45@U45@@@@ATL@@QEAA@PEAX@Z",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 13,
+    "size": 236,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::~CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>(void)",
+    "ea": "0x180003d38",
+    "function_file": "functions/180003d38_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_void_detail_Empty_detail_Emp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJXZUEmpty@detail@@U45@U45@U45@U45@U45@U45@U45@U45@@@@ATL@@UEAA@XZ",
+    "prototype": "void **__fastcall(__int64)",
+    "rank_score": 13,
+    "size": 101,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ATL::CComObject<TransportManager>::AddRef(void)",
+    "ea": "0x180004140",
+    "function_file": "functions/180004140_ATL_CComObject_TransportManager_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VTransportManager@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 13,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ATL::CComObject<TransportManager>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180004700",
+    "function_file": "functions/180004700_ATL_CComObject_TransportManager_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VTransportManager@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(char *, const struct _GUID *, char **)",
+    "rank_score": 13,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::_dynamic_initializer_for___AtlComModule__",
+    "ea": "0x180001590",
+    "function_file": "functions/180001590_ATL_dynamic_initializer_for_AtlComModule.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ATL::_dynamic_initializer_for___AtlComModule__",
+    "prototype": "int()",
+    "rank_score": 13,
+    "size": 55,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x1800046e0",
+    "function_file": "functions/1800046e0_ATL_CComObject_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_void_detail_Empty_detail_Emp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@V?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJXZUEmpty@detail@@U45@U45@U45@U45@U45@U45@U45@U45@@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(char *, const struct _GUID *, char **)",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<TextMessage>::AddRef(void)",
+    "ea": "0x180004110",
+    "function_file": "functions/180004110_ATL_CComObject_TextMessage_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VTextMessage@@@ATL@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 11,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<TextMessage>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000a310",
+    "function_file": "functions/18000a310_ATL_CComObject_TextMessage_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VTextMessage@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(char *, const struct _GUID *, char **)",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<TextMessageTransport>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180006c10",
+    "function_file": "functions/180006c10_ATL_CComObject_TextMessageTransport_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VTextMessageTransport@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(char *, const struct _GUID *, char **)",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::_dynamic_atexit_destructor_for___AtlComModule__",
+    "ea": "0x18000b080",
+    "function_file": "functions/18000b080_ATL_dynamic_atexit_destructor_for_AtlComModule.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ATL::_dynamic_atexit_destructor_for___AtlComModule__",
+    "prototype": "void()",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "GenericWorkItem<ATL::CComPtr<TransportManager>,long (TransportManager::*)(void),detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty,detail::Empty>::ProcessWorkItem(IUnknown *)",
+    "ea": "0x180004690",
+    "function_file": "functions/180004690_GenericWorkItem_ATL_CComPtr_TransportManager_long_TransportManager_void_detail_Empty_detail_Empty_detail_Empty.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessWorkItem@?$GenericWorkItem@V?$CComPtr@VTransportManager@@@ATL@@P8TransportManager@@EAAJXZUEmpty@detail@@U45@U45@U45@U45@U45@U45@U45@U45@@@UEAAJPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 11,
+    "size": 37,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ServiceMain",
+    "ea": "0x180002f50",
+    "function_file": "functions/180002f50_ServiceMain.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ServiceMain",
+    "prototype": "__int64 __fastcall(ServiceBase *, const unsigned __int16 **)",
+    "rank_score": 11,
+    "size": 8,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<TransportManager>::AddRef`adjustor{16}' (void)",
+    "ea": "0x180004180",
+    "function_file": "functions/180004180_thunk_ATL_CComObject_TransportManager_AddRef_adjustor_16_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VTransportManager@@@ATL@@WBA@EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<TransportManager>::AddRef`adjustor{8}' (void)",
+    "ea": "0x180004170",
+    "function_file": "functions/180004170_thunk_ATL_CComObject_TransportManager_AddRef_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VTransportManager@@@ATL@@W7EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<TransportManager>::QueryInterface`adjustor{16}' (_GUID const &,void * *)",
+    "ea": "0x180004730",
+    "function_file": "functions/180004730_thunk_ATL_CComObject_TransportManager_QueryInterface_adjustor_16_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VTransportManager@@@ATL@@WBA@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(__int64, const struct _GUID *, char **)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<TransportManager>::QueryInterface`adjustor{8}' (_GUID const &,void * *)",
+    "ea": "0x180004720",
+    "function_file": "functions/180004720_thunk_ATL_CComObject_TransportManager_QueryInterface_adjustor_8_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VTransportManager@@@ATL@@W7EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(__int64, const struct _GUID *, char **)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<TransportManager>::Release`adjustor{16}' (void)",
+    "ea": "0x180004870",
+    "function_file": "functions/180004870_thunk_ATL_CComObject_TransportManager_Release_adjustor_16_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VTransportManager@@@ATL@@WBA@EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:ATL::CComObject<TransportManager>::Release`adjustor{8}' (void)",
+    "ea": "0x180004860",
+    "function_file": "functions/180004860_thunk_ATL_CComObject_TransportManager_Release_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VTransportManager@@@ATL@@W7EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "MessagingService::GetControlsAccepted(void)",
+    "ea": "0x180003030",
+    "function_file": "functions/180003030_MessagingService_GetControlsAccepted_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetControlsAccepted@MessagingService@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(MessagingService *this)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ServiceBase::GetServiceType(void)",
+    "ea": "0x180003040",
+    "function_file": "functions/180003040_ServiceBase_GetServiceType_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetServiceType@ServiceBase@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(ServiceBase *this)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ServiceBase::GetWaitHint(void)",
+    "ea": "0x180003060",
+    "function_file": "functions/180003060_ServiceBase_GetWaitHint_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetWaitHint@ServiceBase@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(ServiceBase *this)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ServiceBase::OnStartedStopping(int)",
+    "ea": "0x180003490",
+    "function_file": "functions/180003490_ServiceBase_OnStartedStopping_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnStartedStopping@ServiceBase@@UEAAXH@Z",
+    "prototype": "void __fastcall(ServiceBase *this)",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "SvchostPushServiceGlobals",
+    "ea": "0x180002f60",
+    "function_file": "functions/180002f60_SvchostPushServiceGlobals.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SvchostPushServiceGlobals",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 10,
+    "size": 8,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCriticalSection::Init_::_1_::filt$0",
+    "ea": "0x18000ae76",
+    "function_file": "functions/18000ae76_ATL_CComCriticalSection_Init_1_filt_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCriticalSection::Init_::_1_::filt$0",
+    "prototype": "_BOOL8 __fastcall(_DWORD **)",
+    "rank_score": 10,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_TransportManager_::CreateInstance_::_1_::catch$4",
+    "ea": "0x18000af08",
+    "function_file": "functions/18000af08_ATL_CComObject_TransportManager_CreateInstance_1_catch_4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_TransportManager_::CreateInstance_::_1_::catch$4",
+    "prototype": "__int64()",
+    "rank_score": 10,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_tlgDefineProvider_annotation__Tlgg_messagingServiceProviderProv",
+    "ea": "0x180002f70",
+    "function_file": "functions/180002f70_tlgDefineProvider_annotation_Tlgg_messagingServiceProviderProv.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgDefineProvider_annotation__Tlgg_messagingServiceProviderProv",
+    "prototype": "void()",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<ushort> const &)",
+    "ea": "0x180001148",
+    "function_file": "functions/180001148_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@G@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@G@@@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64 **)",
+    "rank_score": 9,
+    "size": 138,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign(char const *,unsigned __int64)",
+    "ea": "0x180001c10",
+    "function_file": "functions/180001c10_std_basic_string_char_std_char_traits_char_std_allocator_char_assign_char_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD_K@Z",
+    "prototype": "size_t *__fastcall(size_t *, char *Src, size_t Size)",
+    "rank_score": 9,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "TransportManager::_StopIdleTimer(void)",
+    "ea": "0x180005364",
+    "function_file": "functions/180005364_TransportManager_StopIdleTimer_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_StopIdleTimer@TransportManager@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(TransportManager *__hidden this)",
+    "rank_score": 7,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "McTemplateU0zq_EventWriteTransfer",
+    "ea": "0x1800067bc",
+    "function_file": "functions/1800067bc_McTemplateU0zq_EventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0zq_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, const EVENT_DESCRIPTOR *, const wchar_t *, int)",
+    "rank_score": 6,
+    "size": 149,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x1800012d0",
+    "function_file": "functions/1800012d0_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U1@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@3@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64, char **, __int64)",
+    "rank_score": 6,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "operator new(unsigned __int64,std::nothrow_t const &)",
+    "ea": "0x180002678",
+    "function_file": "functions/180002678_operator_new_unsigned_int64_std_nothrow_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_KAEBUnothrow_t@std@@@Z",
+    "prototype": "void *__fastcall(size_t, const struct std::nothrow_t *)",
+    "rank_score": 6,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<ushort>,_tlgWrapSz<ushort>,_tlgWrapperByVal<8>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<ushort> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<8> const &)",
+    "ea": "0x1800011d8",
+    "function_file": "functions/1800011d8_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@G@@U1@U?$_tlgWrapperByVal@$07@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@G@@3AEBU?$_tlgWrapperByVal@$07@@@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64 **, __int64 **, __int64)",
+    "rank_score": 5,
+    "size": 241,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<4>,_tlgWrapperByVal<8>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &)",
+    "ea": "0x180001394",
+    "function_file": "functions/180001394_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapperByVal@$07@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapperByVal@$07@@@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64, __int64)",
+    "rank_score": 5,
+    "size": 117,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "std::_Xbad_alloc(void)",
+    "ea": "0x180001a68",
+    "function_file": "functions/180001a68_std_Xbad_alloc_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xbad_alloc@std@@YAXXZ",
+    "prototype": "void __noreturn(void)",
+    "rank_score": 5,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x180006600",
+    "function_file": "functions/180006600_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __fastcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, unsigned __int16 *CallbackContext)",
+    "rank_score": 4,
+    "size": 256,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "ea": "0x18000ab00",
+    "function_file": "functions/18000ab00_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "prototype": "void *__fastcall(__int64, __int64)",
+    "rank_score": 4,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "std::_Syserror_map(int)",
+    "ea": "0x180002030",
+    "function_file": "functions/180002030_std_Syserror_map_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Syserror_map@std@@YAPEBDH@Z",
+    "prototype": "const char *__fastcall(int)",
+    "rank_score": 4,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "ea": "0x18000ab44",
+    "function_file": "functions/18000ab44_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "prototype": "void __fastcall __noreturn(__int64, __int64)",
+    "rank_score": 2,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_tlgEnableCallback",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_tlgEnableCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgEnableCallback",
+    "prototype": "void __fastcall(LPCGUID SourceId, __int64 IsEnabled, __int64 Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, _QWORD *CallbackContext)",
+    "rank_score": 2,
+    "size": 118,
+    "tags": []
+  }
+]

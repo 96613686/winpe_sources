@@ -1,0 +1,4472 @@
+[
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateMbbSecurityDescriptor(void *)",
+    "ea": "0x14001d774",
+    "function_file": "functions/14001d774_CreateMbbSecurityDescriptor_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlLengthRequiredSid",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!RtlSubAuthoritySid",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "?CreateMbbSecurityDescriptor@@YAJPEAX@Z",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 4041,
+    "size": 967,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "MbbUtilGetCommandString(_MBB_COMMAND *)",
+    "ea": "0x14003e100",
+    "function_file": "functions/14003e100_MbbUtilGetCommandString_MBB_COMMAND.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilGetCommandString@@YAPEADPEAU_MBB_COMMAND@@@Z",
+    "prototype": "char (near **__fastcall(struct _MBB_COMMAND *Source1))[32]",
+    "rank_score": 2644,
+    "size": 890,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MbbIpSetLastIPAddresses(void *,MBB_ADDRESS_TABLE_ID,_MBB_IPADDRESS_ENTRY *,ulong)",
+    "ea": "0x140045688",
+    "function_file": "functions/140045688_MbbIpSetLastIPAddresses_void_MBB_ADDRESS_TABLE_ID_MBB_IPADDRESS_ENTRY_ulong.md",
+    "matched_imports": [
+      "NDIS!NdisCloseConfiguration",
+      "NDIS!NdisOpenConfigurationEx",
+      "NDIS!NdisWriteConfiguration",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlIpv4AddressToStringW",
+      "ntoskrnl!RtlIpv6AddressToStringW"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpSetLastIPAddresses@@YAHPEAXW4MBB_ADDRESS_TABLE_ID@@PEAU_MBB_IPADDRESS_ENTRY@@K@Z",
+    "prototype": "__int64 __fastcall(void *, unsigned int, __int64, unsigned int)",
+    "rank_score": 2434,
+    "size": 1147,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbAdapterSetOptionalServiceSupport(_MINIPORT_ADAPTER_CONTEXT *)",
+    "ea": "0x140004c70",
+    "function_file": "functions/140004c70_MbbAdapterSetOptionalServiceSupport_MINIPORT_ADAPTER_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAdapterSetOptionalServiceSupport@@YAXPEAU_MINIPORT_ADAPTER_CONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _MINIPORT_ADAPTER_CONTEXT *)",
+    "rank_score": 2430,
+    "size": 943,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "MbbUtilMbbToWwanContextType(_GUID *)",
+    "ea": "0x14003e5b8",
+    "function_file": "functions/14003e5b8_MbbUtilMbbToWwanContextType_GUID.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilMbbToWwanContextType@@YA?AW4_WWAN_CONTEXT_TYPE@@PEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(struct _GUID *)",
+    "rank_score": 2419,
+    "size": 566,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "MbbIpGetDhcpDefaultGatewayAddressTable(_MBB_IPADDRESS_ENTRY * *,ulong *,_GUID *)",
+    "ea": "0x1400432ec",
+    "function_file": "functions/1400432ec_MbbIpGetDhcpDefaultGatewayAddressTable_MBB_IPADDRESS_ENTRY_ulong_GUID.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlIpv4StringToAddressW",
+      "ntoskrnl!RtlIpv6StringToAddressW",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "?MbbIpGetDhcpDefaultGatewayAddressTable@@YAHPEAPEAU_MBB_IPADDRESS_ENTRY@@PEAKPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_IPADDRESS_ENTRY **, unsigned int *, struct _GUID *)",
+    "rank_score": 1983,
+    "size": 1648,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "MbbIpGetLastIPAddresses(void *,MBB_ADDRESS_TABLE_ID,_MBB_IPADDRESS_ENTRY * *,ulong *)",
+    "ea": "0x140043eb4",
+    "function_file": "functions/140043eb4_MbbIpGetLastIPAddresses_void_MBB_ADDRESS_TABLE_ID_MBB_IPADDRESS_ENTRY_ulong.md",
+    "matched_imports": [
+      "NDIS!NdisCloseConfiguration",
+      "NDIS!NdisOpenConfigurationEx",
+      "NDIS!NdisReadConfiguration",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlIpv4StringToAddressW",
+      "ntoskrnl!RtlIpv6StringToAddressW"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpGetLastIPAddresses@@YAHPEAXW4MBB_ADDRESS_TABLE_ID@@PEAPEAU_MBB_IPADDRESS_ENTRY@@PEAK@Z",
+    "prototype": "__int64 __fastcall(void *, unsigned int, struct in_addr **, _DWORD *)",
+    "rank_score": 1848,
+    "size": 1728,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "MbbWorkMgrCleanup(void *)",
+    "ea": "0x140023db0",
+    "function_file": "functions/140023db0_MbbWorkMgrCleanup_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsThreadType",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?MbbWorkMgrCleanup@@YAXPEAX@Z",
+    "prototype": "void __fastcall(PVOID P)",
+    "rank_score": 1721,
+    "size": 406,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14006703c",
+    "function_file": "functions/14006703c_DriverEntry.md",
+    "matched_imports": [
+      "WDFLDR!WdfRegisterClassLibrary",
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!ZwPowerInformation"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 1683,
+    "size": 1537,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "WwanUpdateIPStack",
+    "ea": "0x140046d80",
+    "function_file": "functions/140046d80_WwanUpdateIPStack.md",
+    "matched_imports": [
+      "NETIO!InitializeIpInterfaceEntry",
+      "NETIO!SetIpInterfaceEntry",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "WwanUpdateIPStack",
+    "prototype": "",
+    "rank_score": 1644,
+    "size": 1454,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MbxDevice::PostReleaseHardware(void)",
+    "ea": "0x14000ca94",
+    "function_file": "functions/14000ca94_MbxDevice_PostReleaseHardware_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!ExRundownCompleted",
+      "ntoskrnl!ExUnsubscribeWnfStateChange",
+      "ntoskrnl!ExWaitForRundownProtectionRelease",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PostReleaseHardware@MbxDevice@@QEAAXXZ",
+    "prototype": "void __fastcall(MbxDevice *__hidden this)",
+    "rank_score": 1441,
+    "size": 497,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "MbbNdisMultiCarrierDsCidListStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140030830",
+    "function_file": "functions/140030830_MbbNdisMultiCarrierDsCidListStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisMultiCarrierDsCidListStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, unsigned int, _DWORD *, unsigned int)",
+    "rank_score": 1235,
+    "size": 899,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MbbIpBuildInterfaceRegistryPath(_GUID *,uchar,ulong *,ushort * *)",
+    "ea": "0x14004253c",
+    "function_file": "functions/14004253c_MbbIpBuildInterfaceRegistryPath_GUID_uchar_ulong_ushort.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlIsStateSeparationEnabled",
+      "ntoskrnl!RtlStringFromGUID"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\Tcpip6\\Parameters\\Interfaces\\",
+      "\\Registry\\Machine\\OSDATA\\Networking\\Dhcp\\Client4\\",
+      "\\Registry\\Machine\\OSDATA\\Networking\\Dhcp\\Client6\\"
+    ],
+    "name": "?MbbIpBuildInterfaceRegistryPath@@YAJPEAU_GUID@@EPEAKPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(GUID *Guid, char, unsigned int *, unsigned __int16 **)",
+    "rank_score": 1200,
+    "size": 756,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 18,
+    "demangled": "MbbReqMgrCreateRequest(_MBB_REQUEST_MANAGER *,_NDIS_OID_REQUEST *,ulong,int *,uchar)",
+    "ea": "0x140019b6c",
+    "function_file": "functions/140019b6c_MbbReqMgrCreateRequest_MBB_REQUEST_MANAGER_NDIS_OID_REQUEST_ulong_int_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?MbbReqMgrCreateRequest@@YAPEAU_MBB_REQUEST_CONTEXT@@PEAU_MBB_REQUEST_MANAGER@@PEAU_NDIS_OID_REQUEST@@KPEAHE@Z",
+    "prototype": "struct _MBB_REQUEST_CONTEXT *__fastcall(struct _MBB_REQUEST_MANAGER *, struct _NDIS_OID_REQUEST *, __int64, int *, unsigned __int8)",
+    "rank_score": 1056,
+    "size": 1027,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "MbbUtilDisconnectOnDeleteMPDP(_MINIPORT_ADAPTER_CONTEXT *,_MINIPORT_INTERFACE_CONTEXT *)",
+    "ea": "0x14001ea18",
+    "function_file": "functions/14001ea18_MbbUtilDisconnectOnDeleteMPDP_MINIPORT_ADAPTER_CONTEXT_MINIPORT_INTERFACE_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilDisconnectOnDeleteMPDP@@YAHPEAU_MINIPORT_ADAPTER_CONTEXT@@PEAU_MINIPORT_INTERFACE_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(PKSPIN_LOCK SpinLock, struct _MINIPORT_INTERFACE_CONTEXT *)",
+    "rank_score": 1045,
+    "size": 643,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 10,
+    "demangled": "MbbReqMgrQueueEvent(_MBB_REQUEST_MANAGER *,_MBB_REQUEST_CONTEXT *,MBB_REQUEST_EVENT,void *,ulong)",
+    "ea": "0x14001a9ec",
+    "function_file": "functions/14001a9ec_MbbReqMgrQueueEvent_MBB_REQUEST_MANAGER_MBB_REQUEST_CONTEXT_MBB_REQUEST_EVENT_void_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbReqMgrQueueEvent@@YAXPEAU_MBB_REQUEST_MANAGER@@PEAU_MBB_REQUEST_CONTEXT@@W4MBB_REQUEST_EVENT@@PEAXK@Z",
+    "prototype": "void __fastcall(__int64, __int64, int, __int64, int)",
+    "rank_score": 1036,
+    "size": 506,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MbbIpReportIps(_MBB_IPADDRESS_ENTRY *,ulong,_NET_LUID_LH *,ulong)",
+    "ea": "0x1400450ac",
+    "function_file": "functions/1400450ac_MbbIpReportIps_MBB_IPADDRESS_ENTRY_ulong_NET_LUID_LH_ulong.md",
+    "matched_imports": [
+      "NETIO!CreateUnicastIpAddressEntry",
+      "NETIO!DeleteUnicastIpAddressEntry",
+      "NETIO!InitializeUnicastIpAddressEntry"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpReportIps@@YAXPEAU_MBB_IPADDRESS_ENTRY@@KPEAT_NET_LUID_LH@@K@Z",
+    "prototype": "void __fastcall(struct _MBB_IPADDRESS_ENTRY *, unsigned int, union _NET_LUID_LH *, NET_IFINDEX)",
+    "rank_score": 1026,
+    "size": 915,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "MbbWorkMgrInitialize(ulong)",
+    "ea": "0x140023f4c",
+    "function_file": "functions/140023f4c_MbbWorkMgrInitialize_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!PsCreateSystemThread"
+    ],
+    "matched_strings": [],
+    "name": "?MbbWorkMgrInitialize@@YAPEAXK@Z",
+    "prototype": "void *__fastcall(unsigned int)",
+    "rank_score": 1020,
+    "size": 408,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "EvtDriverUnload",
+    "ea": "0x140024f00",
+    "function_file": "functions/140024f00_EvtDriverUnload.md",
+    "matched_imports": [
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "EvtDriverUnload",
+    "prototype": "",
+    "rank_score": 1017,
+    "size": 295,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "MbbAllocMgrCleanup(void *)",
+    "ea": "0x14001dd20",
+    "function_file": "functions/14001dd20_MbbAllocMgrCleanup_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteNPagedLookasideList",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAllocMgrCleanup@@YAXPEAX@Z",
+    "prototype": "void __fastcall(PVOID P)",
+    "rank_score": 1016,
+    "size": 206,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MbbAllocMgrInitialize(ulong,ulong,ulong,MBB_ALLOC_FLAGS)",
+    "ea": "0x14001deb0",
+    "function_file": "functions/14001deb0_MbbAllocMgrInitialize_ulong_ulong_ulong_MBB_ALLOC_FLAGS.md",
+    "matched_imports": [
+      "NDIS!NdisGetVersion",
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAllocMgrInitialize@@YAPEAXKKKTMBB_ALLOC_FLAGS@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 1016,
+    "size": 314,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MbbWorkMgrProcessWorkItem(void *)",
+    "ea": "0x1400240f0",
+    "function_file": "functions/1400240f0_MbbWorkMgrProcessWorkItem_void.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!PsTerminateSystemThread"
+    ],
+    "matched_strings": [],
+    "name": "?MbbWorkMgrProcessWorkItem@@YAXPEAX@Z",
+    "prototype": "KSTART_ROUTINE",
+    "rank_score": 1005,
+    "size": 374,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 33,
+    "demangled": "MbbReqMgrDerefRequest(_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x140019f78",
+    "function_file": "functions/140019f78_MbbReqMgrDerefRequest_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?MbbReqMgrDerefRequest@@YAXPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 844,
+    "size": 488,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MbbIpEvaluateReportedRoutes(_MBB_IPADDRESS_ENTRY *,ulong,_MBB_IPADDRESS_ENTRY *,ulong,_MBB_IPADDRESS_ENTRY *,ulong,_NET_LUID_LH *,ulong,uchar)",
+    "ea": "0x140042e30",
+    "function_file": "functions/140042e30_MbbIpEvaluateReportedRoutes_MBB_IPADDRESS_ENTRY_ulong_MBB_IPADDRESS_ENTRY_ulong_MBB_IPADDRESS_ENTRY_ulong_NET_.md",
+    "matched_imports": [
+      "NETIO!DeleteIpForwardEntry2",
+      "NETIO!FreeMibTable",
+      "NETIO!GetIpForwardTable2",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpEvaluateReportedRoutes@@YAXPEAU_MBB_IPADDRESS_ENTRY@@K0K0KPEAT_NET_LUID_LH@@KE@Z",
+    "prototype": "void __fastcall(struct _MBB_IPADDRESS_ENTRY *, unsigned int, struct _MBB_IPADDRESS_ENTRY *, unsigned int, struct _MBB_IPADDRESS_ENTRY *, unsigned int, union _NET_LUID_LH *Source1, unsigned int, unsigned int)",
+    "rank_score": 833,
+    "size": 663,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MbbIpEvaluateReportedIp(_MBB_IPADDRESS_ENTRY *,ulong,_MBB_IPADDRESS_ENTRY *,ulong,_NET_LUID_LH *,ulong)",
+    "ea": "0x140042bf4",
+    "function_file": "functions/140042bf4_MbbIpEvaluateReportedIp_MBB_IPADDRESS_ENTRY_ulong_MBB_IPADDRESS_ENTRY_ulong_NET_LUID_LH_ulong.md",
+    "matched_imports": [
+      "NETIO!DeleteUnicastIpAddressEntry",
+      "NETIO!FreeMibTable",
+      "NETIO!GetUnicastIpAddressTable",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpEvaluateReportedIp@@YAEPEAU_MBB_IPADDRESS_ENTRY@@K0KPEAT_NET_LUID_LH@@K@Z",
+    "prototype": "char __fastcall(struct _MBB_IPADDRESS_ENTRY *, unsigned int, struct _MBB_IPADDRESS_ENTRY *, unsigned int, union _NET_LUID_LH *Source1, NET_IFINDEX)",
+    "rank_score": 832,
+    "size": 563,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "MbbNdisSmsReadStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140036da0",
+    "function_file": "functions/140036da0_MbbNdisSmsReadStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSmsReadStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, _DWORD *, unsigned int)",
+    "rank_score": 831,
+    "size": 1137,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "FxDriverEntryWorker",
+    "ea": "0x140042074",
+    "function_file": "functions/140042074_FxDriverEntryWorker.md",
+    "matched_imports": [
+      "WDFLDR!WdfLdrQueryInterface",
+      "WDFLDR!WdfVersionBind",
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "FxDriverEntryWorker",
+    "prototype": "__int64 __fastcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 829,
+    "size": 360,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MbbAdapterFWDeviceServicesToCapabilities(_MINIPORT_ADAPTER_CONTEXT *,_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x140002edc",
+    "function_file": "functions/140002edc_MbbAdapterFWDeviceServicesToCapabilities_MINIPORT_ADAPTER_CONTEXT_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAdapterFWDeviceServicesToCapabilities@@YAHPEAU_MINIPORT_ADAPTER_CONTEXT@@PEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(KSPIN_LOCK *, struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 828,
+    "size": 500,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MbbNdisSetModemLoggingConfig(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140014d50",
+    "function_file": "functions/140014d50_MbbNdisSetModemLoggingConfig_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSetModemLoggingConfig@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 826,
+    "size": 326,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MbbWriteEventCommon(unsigned __int64,_EVENT_DESCRIPTOR const *,_GUID *,_GUID *,ushort,char *)",
+    "ea": "0x1400416a8",
+    "function_file": "functions/1400416a8_MbbWriteEventCommon_unsigned_int64_EVENT_DESCRIPTOR_const_GUID_GUID_ushort_char.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWrite",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbWriteEventCommon@@YAX_KPEBU_EVENT_DESCRIPTOR@@PEAU_GUID@@2GPEAD@Z",
+    "prototype": "void __fastcall(REGHANDLE RegHandle, PCEVENT_DESCRIPTOR EventDescriptor, LPCGUID ActivityId, LPCGUID RelatedActivityId, unsigned __int16, char *)",
+    "rank_score": 816,
+    "size": 300,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateTlgAggregateSession",
+    "ea": "0x1400659a4",
+    "function_file": "functions/1400659a4_CreateTlgAggregateSession.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExAllocateTimer",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "CreateTlgAggregateSession",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 806,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "EtwOpnEventControlEnableCallback(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *)",
+    "ea": "0x14001db50",
+    "function_file": "functions/14001db50_EtwOpnEventControlEnableCallback_GUID_const_ulong_uchar_unsigned_int64_unsigned_int64_EVENT_FILTER_DESCRIPTOR_.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?EtwOpnEventControlEnableCallback@@YAXPEBU_GUID@@KE_K1PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z",
+    "prototype": "ETWENABLECALLBACK",
+    "rank_score": 803,
+    "size": 167,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "FxStubDriverUnloadCommon(void)",
+    "ea": "0x140041f20",
+    "function_file": "functions/140041f20_FxStubDriverUnloadCommon_void.md",
+    "matched_imports": [
+      "WDFLDR!WdfVersionUnbind",
+      "WDFLDR!WdfVersionUnbindClass",
+      "ntoskrnl!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "?FxStubDriverUnloadCommon@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 716,
+    "size": 275,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MbbCxBindClient",
+    "ea": "0x140025030",
+    "function_file": "functions/140025030_MbbCxBindClient.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [
+      "\n\n************************* \n* MbbCx detected a function count mismatch. The driver \n* using this extension will not load until it is re-compiled \n* with the latest version of the extension's header and libs \n"
+    ],
+    "name": "MbbCxBindClient",
+    "prototype": "",
+    "rank_score": 664,
+    "size": 343,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "MbbOpen(_MINIPORT_ADAPTER_CONTEXT *)",
+    "ea": "0x1400174d8",
+    "function_file": "functions/1400174d8_MbbOpen_MINIPORT_ADAPTER_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?MbbOpen@@YAJPEAU_MINIPORT_ADAPTER_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(PKSPIN_LOCK SpinLock)",
+    "rank_score": 647,
+    "size": 1023,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "MbbUtilReportWakeCommand(_MINIPORT_ADAPTER_CONTEXT *,_MBB_WAKE_REASON *,ulong)",
+    "ea": "0x14003fa34",
+    "function_file": "functions/14003fa34_MbbUtilReportWakeCommand_MINIPORT_ADAPTER_CONTEXT_MBB_WAKE_REASON_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilReportWakeCommand@@YAJPEAU_MINIPORT_ADAPTER_CONTEXT@@PEAU_MBB_WAKE_REASON@@K@Z",
+    "prototype": "__int64 __fastcall(PKSPIN_LOCK SpinLock, struct _MBB_WAKE_REASON *, int)",
+    "rank_score": 645,
+    "size": 1408,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "MbbNdisMiniportOidRequestCompletion(void *,_MBB_REQUEST_CONTEXT *,int)",
+    "ea": "0x1400124a0",
+    "function_file": "functions/1400124a0_MbbNdisMiniportOidRequestCompletion_void_MBB_REQUEST_CONTEXT_int.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisMiniportOidRequestCompletion@@YAXPEAXPEAU_MBB_REQUEST_CONTEXT@@H@Z",
+    "prototype": "void __fastcall(void *, struct _MBB_REQUEST_CONTEXT *, int)",
+    "rank_score": 638,
+    "size": 1000,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MbbIpProcessRouteEntry(_MBB_IPADDRESS_ENTRY *,ulong,_MBB_IPADDRESS_ENTRY *,ulong,_MBB_IPADDRESS_ENTRY *,ulong,_MIB_IPFORWARD_ROW2 *)",
+    "ea": "0x1400448c8",
+    "function_file": "functions/1400448c8_MbbIpProcessRouteEntry_MBB_IPADDRESS_ENTRY_ulong_MBB_IPADDRESS_ENTRY_ulong_MBB_IPADDRESS_ENTRY_ulong_MIB_IPFOR.md",
+    "matched_imports": [
+      "NETIO!DeleteIpForwardEntry2",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpProcessRouteEntry@@YAEPEAU_MBB_IPADDRESS_ENTRY@@K0K0KPEAU_MIB_IPFORWARD_ROW2@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _MBB_IPADDRESS_ENTRY *, unsigned int, struct _MBB_IPADDRESS_ENTRY *, unsigned int, struct _MBB_IPADDRESS_ENTRY *, unsigned int, MIB_IPFORWARD_ROW2 *Row)",
+    "rank_score": 633,
+    "size": 819,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MbbNdisSubscribeDeviceServiceEventsStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x1400376f0",
+    "function_file": "functions/1400376f0_MbbNdisSubscribeDeviceServiceEventsStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSubscribeDeviceServiceEventsStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, unsigned int)",
+    "rank_score": 632,
+    "size": 652,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MbxDevice::ReportDetectedWakeReason(void)",
+    "ea": "0x14000d0b4",
+    "function_file": "functions/14000d0b4_MbxDevice_ReportDetectedWakeReason_void.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?ReportDetectedWakeReason@MbxDevice@@AEAAXXZ",
+    "prototype": "void __fastcall(MbxDevice *__hidden this)",
+    "rank_score": 632,
+    "size": 788,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MbbUtilPopulateWwanIPAddressState(_MBB_IP_ADDRESS_INFO *,_MBB_IPADDRESS_ENTRY *,_MBB_IPADDRESS_ENTRY *,_MBB_IPADDRESS_ENTRY *,ulong,ulong,ulong,_WWAN_IP_ADDRESS_STATE *)",
+    "ea": "0x14001f614",
+    "function_file": "functions/14001f614_MbbUtilPopulateWwanIPAddressState_MBB_IP_ADDRESS_INFO_MBB_IPADDRESS_ENTRY_MBB_IPADDRESS_ENTRY_MBB_IPADDRESS_EN.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilPopulateWwanIPAddressState@@YAHPEAU_MBB_IP_ADDRESS_INFO@@PEAU_MBB_IPADDRESS_ENTRY@@11KKKPEAU_WWAN_IP_ADDRESS_STATE@@@Z",
+    "prototype": "__int64 __fastcall(WWAN_IP_CONFIGURATION_FLAGS *, struct _MBB_IPADDRESS_ENTRY *, struct _MBB_IPADDRESS_ENTRY *, struct _MBB_IPADDRESS_ENTRY *, ULONG, ULONG, ULONG, struct _WWAN_IP_ADDRESS_STATE *)",
+    "rank_score": 628,
+    "size": 535,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MbbUtilInternalCIDCompletion(void *,_MBB_REQUEST_CONTEXT *,int)",
+    "ea": "0x14001f3f0",
+    "function_file": "functions/14001f3f0_MbbUtilInternalCIDCompletion_void_MBB_REQUEST_CONTEXT_int.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilInternalCIDCompletion@@YAXPEAXPEAU_MBB_REQUEST_CONTEXT@@H@Z",
+    "prototype": "void __fastcall(void *, struct _MBB_REQUEST_CONTEXT *, unsigned int)",
+    "rank_score": 626,
+    "size": 248,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MbbIpReportRoutes(_MBB_IPADDRESS_ENTRY *,ulong,_NET_LUID_LH *,ulong)",
+    "ea": "0x140045448",
+    "function_file": "functions/140045448_MbbIpReportRoutes_MBB_IPADDRESS_ENTRY_ulong_NET_LUID_LH_ulong.md",
+    "matched_imports": [
+      "NETIO!CreateIpForwardEntry2",
+      "NETIO!InitializeIpForwardEntry"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpReportRoutes@@YAXPEAU_MBB_IPADDRESS_ENTRY@@KPEAT_NET_LUID_LH@@K@Z",
+    "prototype": "void __fastcall(struct _MBB_IPADDRESS_ENTRY *, unsigned int, union _NET_LUID_LH *, NET_IFINDEX)",
+    "rank_score": 622,
+    "size": 569,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "MbbAllocMgrFree(void *)",
+    "ea": "0x14001ddf4",
+    "function_file": "functions/14001ddf4_MbbAllocMgrFree_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAllocMgrFree@@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 617,
+    "size": 181,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x140067644",
+    "function_file": "functions/140067644_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlRegisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "__int64(void)",
+    "rank_score": 616,
+    "size": 353,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MbbAllocMgrAllocate(void *)",
+    "ea": "0x14001dc34",
+    "function_file": "functions/14001dc34_MbbAllocMgrAllocate_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAllocMgrAllocate@@YAPEAXPEAX@Z",
+    "prototype": "void *__fastcall(PNPAGED_LOOKASIDE_LIST Lookaside)",
+    "rank_score": 615,
+    "size": 228,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "FreeDeviceServiceState(_MBB_DS_STATE *)",
+    "ea": "0x140001f90",
+    "function_file": "functions/140001f90_FreeDeviceServiceState_MBB_DS_STATE.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?FreeDeviceServiceState@@YAXPEAU_MBB_DS_STATE@@@Z",
+    "prototype": "void __fastcall(struct _MBB_DS_STATE *)",
+    "rank_score": 614,
+    "size": 139,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "MbbAdapterConfigureDeviceServiceSubscription(_MINIPORT_ADAPTER_CONTEXT *,uchar,ulong,ulong)",
+    "ea": "0x140002024",
+    "function_file": "functions/140002024_MbbAdapterConfigureDeviceServiceSubscription_MINIPORT_ADAPTER_CONTEXT_uchar_ulong_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAdapterConfigureDeviceServiceSubscription@@YAHPEAU_MINIPORT_ADAPTER_CONTEXT@@EKK@Z",
+    "prototype": "__int64 __fastcall(KSPIN_LOCK *, char, int, int)",
+    "rank_score": 465,
+    "size": 587,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "MbbWwanRemoveSessionFromAdapterList(_MINIPORT_ADAPTER_CONTEXT *,_MINIPORT_INTERFACE_CONTEXT *)",
+    "ea": "0x140001b34",
+    "function_file": "functions/140001b34_MbbWwanRemoveSessionFromAdapterList_MINIPORT_ADAPTER_CONTEXT_MINIPORT_INTERFACE_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "RemoveSessionFromAdapterList"
+    ],
+    "name": "?MbbWwanRemoveSessionFromAdapterList@@YA_NPEAU_MINIPORT_ADAPTER_CONTEXT@@PEAU_MINIPORT_INTERFACE_CONTEXT@@@Z",
+    "prototype": "bool __fastcall(PKSPIN_LOCK SpinLock, struct _MINIPORT_INTERFACE_CONTEXT *)",
+    "rank_score": 460,
+    "size": 376,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "MbbAdapterConfigurePacketFiltersOnSession(_MINIPORT_ADAPTER_CONTEXT *,uchar,ulong)",
+    "ea": "0x140002278",
+    "function_file": "functions/140002278_MbbAdapterConfigurePacketFiltersOnSession_MINIPORT_ADAPTER_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAdapterConfigurePacketFiltersOnSession@@YAHPEAU_MINIPORT_ADAPTER_CONTEXT@@EK@Z",
+    "prototype": "__int64 __fastcall(KSPIN_LOCK *, char, int)",
+    "rank_score": 454,
+    "size": 588,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "MbbAdapterQueryDeviceServices(_MINIPORT_ADAPTER_CONTEXT *)",
+    "ea": "0x140003ab0",
+    "function_file": "functions/140003ab0_MbbAdapterQueryDeviceServices_MINIPORT_ADAPTER_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAdapterQueryDeviceServices@@YAHPEAU_MINIPORT_ADAPTER_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(KSPIN_LOCK *)",
+    "rank_score": 454,
+    "size": 634,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MbbNdisEnumerateDeviceServiceCommands(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x14000ff80",
+    "function_file": "functions/14000ff80_MbbNdisEnumerateDeviceServiceCommands_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisEnumerateDeviceServiceCommands@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *)",
+    "rank_score": 443,
+    "size": 580,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "MbbNdisSarConfigHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140035080",
+    "function_file": "functions/140035080_MbbNdisSarConfigHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSarConfigHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, _DWORD *, unsigned int)",
+    "rank_score": 443,
+    "size": 1180,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MbbNdisDeviceServiceListStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x14002d460",
+    "function_file": "functions/14002d460_MbbNdisDeviceServiceListStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisDeviceServiceListStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, unsigned int, unsigned int *, unsigned int)",
+    "rank_score": 442,
+    "size": 1594,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "MbbNdisModemConfigInfoHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140030100",
+    "function_file": "functions/140030100_MbbNdisModemConfigInfoHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisModemConfigInfoHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, unsigned int, _DWORD *, unsigned int)",
+    "rank_score": 442,
+    "size": 1156,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "MbbNdisLteAttachConfigHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x14002fb40",
+    "function_file": "functions/14002fb40_MbbNdisLteAttachConfigHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisLteAttachConfigHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, struct _MBB_MS_LTE_ATTACH_CONFIG_INFO *, unsigned int)",
+    "rank_score": 441,
+    "size": 1393,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "MbbUtilCommonCIDResponse(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong,_MBB_OID_HANDLER_ENTRY *)",
+    "ea": "0x14001e250",
+    "function_file": "functions/14001e250_MbbUtilCommonCIDResponse_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong_MBB_OID_HANDLER_ENTRY.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilCommonCIDResponse@@YAXPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEKPEAU_MBB_OID_HANDLER_ENTRY@@@Z",
+    "prototype": "void __fastcall(__int64, int, int, __int64, int, __int64)",
+    "rank_score": 441,
+    "size": 1183,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "MbbNdisDeviceServiceEventStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x14002d18c",
+    "function_file": "functions/14002d18c_MbbNdisDeviceServiceEventStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisDeviceServiceEventStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, const void *, unsigned int Size)",
+    "rank_score": 436,
+    "size": 710,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MbbNdisServiceActivationStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x1400357c0",
+    "function_file": "functions/1400357c0_MbbNdisServiceActivationStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisServiceActivationStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, _DWORD *, unsigned int)",
+    "rank_score": 436,
+    "size": 912,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "MbbReqMgrAcquireSharedReassembleContext(_MBB_REQUEST_MANAGER *,_MBB_COMMAND_FRAGMENT_HEADER *,ulong,_GUID)",
+    "ea": "0x1400193bc",
+    "function_file": "functions/1400193bc_MbbReqMgrAcquireSharedReassembleContext_MBB_REQUEST_MANAGER_MBB_COMMAND_FRAGMENT_HEADER_ulong_GUID.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbReqMgrAcquireSharedReassembleContext@@YAPEAU_MBB_REASSEMBLE_CONTEXT@@PEAU_MBB_REQUEST_MANAGER@@PEAU_MBB_COMMAND_FRAGMENT_HEADER@@KU_GUID@@@Z",
+    "prototype": "struct _MBB_REASSEMBLE_CONTEXT *__fastcall(struct _MBB_REQUEST_MANAGER *, struct _MBB_COMMAND_FRAGMENT_HEADER *, unsigned int, struct _GUID *__struct_ptr)",
+    "rank_score": 436,
+    "size": 743,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MbbNdisDeviceServiceResponseStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x14002daa0",
+    "function_file": "functions/14002daa0_MbbNdisDeviceServiceResponseStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisDeviceServiceResponseStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, const void *, unsigned int Size)",
+    "rank_score": 435,
+    "size": 808,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MbbNdisDeviceServiceSessionReceive(_MINIPORT_ADAPTER_CONTEXT *,ulong,uchar *,ulong)",
+    "ea": "0x14000fca8",
+    "function_file": "functions/14000fca8_MbbNdisDeviceServiceSessionReceive_MINIPORT_ADAPTER_CONTEXT_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisDeviceServiceSessionReceive@@YAHPEAU_MINIPORT_ADAPTER_CONTEXT@@KPEAEK@Z",
+    "prototype": "__int64 __fastcall(struct _MINIPORT_ADAPTER_CONTEXT *, int, unsigned __int8 *, unsigned int)",
+    "rank_score": 431,
+    "size": 477,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MbbNdisEnumerateDeviceServices(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x1400101d0",
+    "function_file": "functions/1400101d0_MbbNdisEnumerateDeviceServices_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisEnumerateDeviceServices@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *)",
+    "rank_score": 431,
+    "size": 573,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MbbNdisSubscribeDeviceServiceEvents(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140017230",
+    "function_file": "functions/140017230_MbbNdisSubscribeDeviceServiceEvents_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSubscribeDeviceServiceEvents@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MINIPORT_ADAPTER_CONTEXT ***, unsigned __int8 *, unsigned int *)",
+    "rank_score": 431,
+    "size": 617,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MbbNdisSetDeviceServiceSession(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140014540",
+    "function_file": "functions/140014540_MbbNdisSetDeviceServiceSession_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSetDeviceServiceSession@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 430,
+    "size": 486,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "EvtCxPostD0ExitPreHardwareDisabled",
+    "ea": "0x14000a4f0",
+    "function_file": "functions/14000a4f0_EvtCxPostD0ExitPreHardwareDisabled.md",
+    "matched_imports": [
+      "ntoskrnl!ExRundownCompleted",
+      "ntoskrnl!ExWaitForRundownProtectionRelease"
+    ],
+    "matched_strings": [],
+    "name": "EvtCxPostD0ExitPreHardwareDisabled",
+    "prototype": "",
+    "rank_score": 428,
+    "size": 270,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MbbIpEnableDisableDhcp(_NET_LUID_LH *,_GUID *,uchar,uchar)",
+    "ea": "0x140042838",
+    "function_file": "functions/140042838_MbbIpEnableDisableDhcp_NET_LUID_LH_GUID_uchar_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpEnableDisableDhcp@@YAJPEAT_NET_LUID_LH@@PEAU_GUID@@EE@Z",
+    "prototype": "int(union _NET_LUID_LH *, struct _GUID *, unsigned __int8, unsigned __int8)",
+    "rank_score": 427,
+    "size": 352,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MbbNdisSetSarConfig(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140015fc0",
+    "function_file": "functions/140015fc0_MbbNdisSetSarConfig_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSetSarConfig@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 427,
+    "size": 373,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MbbUtilWwanToMbbSmsSetConfiguration(_WWAN_SET_SMS_CONFIGURATION *,ulong,_MBB_SET_SMS_CONFIGURATION * *,ulong *)",
+    "ea": "0x1400235d8",
+    "function_file": "functions/1400235d8_MbbUtilWwanToMbbSmsSetConfiguration_WWAN_SET_SMS_CONFIGURATION_ulong_MBB_SET_SMS_CONFIGURATION_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlAnsiStringToUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilWwanToMbbSmsSetConfiguration@@YAJPEAU_WWAN_SET_SMS_CONFIGURATION@@KPEAPEAU_MBB_SET_SMS_CONFIGURATION@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _WWAN_SET_SMS_CONFIGURATION *, int, struct _MBB_SET_SMS_CONFIGURATION **, unsigned int *)",
+    "rank_score": 427,
+    "size": 347,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MbbNdisUiccAccessBinaryStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x1400389c0",
+    "function_file": "functions/1400389c0_MbbNdisUiccAccessBinaryStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisUiccAccessBinaryStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, _DWORD *, unsigned int)",
+    "rank_score": 426,
+    "size": 949,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MbbNdisUiccAccessRecordStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140038d80",
+    "function_file": "functions/140038d80_MbbNdisUiccAccessRecordStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisUiccAccessRecordStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, _DWORD *, unsigned int)",
+    "rank_score": 426,
+    "size": 949,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MbbNdisUiccOpenChannelInfoStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140039ee0",
+    "function_file": "functions/140039ee0_MbbNdisUiccOpenChannelInfoStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisUiccOpenChannelInfoStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, __int16 *, unsigned int)",
+    "rank_score": 426,
+    "size": 977,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 17,
+    "demangled": "MbbAdapterGetRequestManager(_MINIPORT_ADAPTER_CONTEXT *)",
+    "ea": "0x140003124",
+    "function_file": "functions/140003124_MbbAdapterGetRequestManager_MINIPORT_ADAPTER_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAdapterGetRequestManager@@YAPEAU_MBB_REQUEST_MANAGER@@PEAU_MINIPORT_ADAPTER_CONTEXT@@@Z",
+    "prototype": "struct _MBB_REQUEST_MANAGER *__fastcall(PKSPIN_LOCK SpinLock)",
+    "rank_score": 420,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MbxDiagnostics::PublishSleepStudyCustomData(unsigned __int64,_GUID const *,ushort const *,unsigned __int64)",
+    "ea": "0x140026048",
+    "function_file": "functions/140026048_MbxDiagnostics_PublishSleepStudyCustomData_unsigned_int64_GUID_const_ushort_const_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWrite",
+      "ntoskrnl!RtlInt64ToUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PublishSleepStudyCustomData@MbxDiagnostics@@CAJ_KPEBU_GUID@@PEBG0@Z",
+    "prototype": "static int(unsigned __int64, const struct _GUID *, const unsigned __int16 *, unsigned __int64)",
+    "rank_score": 417,
+    "size": 468,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MbbNdisSetUiccOpenChannel(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x1400168f0",
+    "function_file": "functions/1400168f0_MbbNdisSetUiccOpenChannel_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSetUiccOpenChannel@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 416,
+    "size": 234,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MbbUtilUiccAccessBinary(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140020a58",
+    "function_file": "functions/140020a58_MbbUtilUiccAccessBinary_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilUiccAccessBinary@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 416,
+    "size": 218,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MbbUtilUiccAccessRecord(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140020b38",
+    "function_file": "functions/140020b38_MbbUtilUiccAccessRecord_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilUiccAccessRecord@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 416,
+    "size": 218,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "MbbAdapterGetDataClass(_MINIPORT_ADAPTER_CONTEXT *,ulong *)",
+    "ea": "0x1400030d8",
+    "function_file": "functions/1400030d8_MbbAdapterGetDataClass_MINIPORT_ADAPTER_CONTEXT_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAdapterGetDataClass@@YAXPEAU_MINIPORT_ADAPTER_CONTEXT@@PEAK@Z",
+    "prototype": "void __fastcall(PKSPIN_LOCK SpinLock, unsigned int *)",
+    "rank_score": 414,
+    "size": 70,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MbbAdapterSetDataClass(_MINIPORT_ADAPTER_CONTEXT *,ulong,uchar)",
+    "ea": "0x140004c0c",
+    "function_file": "functions/140004c0c_MbbAdapterSetDataClass_MINIPORT_ADAPTER_CONTEXT_ulong_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAdapterSetDataClass@@YAXPEAU_MINIPORT_ADAPTER_CONTEXT@@KE@Z",
+    "prototype": "void __fastcall(PKSPIN_LOCK SpinLock, unsigned int, unsigned __int8)",
+    "rank_score": 414,
+    "size": 94,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MbbIpAddressTableIdToRegistryValueName(MBB_ADDRESS_TABLE_ID,_UNICODE_STRING *,_UNICODE_STRING *)",
+    "ea": "0x140042488",
+    "function_file": "functions/140042488_MbbIpAddressTableIdToRegistryValueName_MBB_ADDRESS_TABLE_ID_UNICODE_STRING_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpAddressTableIdToRegistryValueName@@YAXW4MBB_ADDRESS_TABLE_ID@@PEAU_UNICODE_STRING@@1@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 414,
+    "size": 174,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MbbIpFindIpInTable(_MBB_IPADDRESS_ENTRY *,ulong,_MIB_UNICASTIPADDRESS_ROW *,ulong *)",
+    "ea": "0x14004316c",
+    "function_file": "functions/14004316c_MbbIpFindIpInTable_MBB_IPADDRESS_ENTRY_ulong_MIB_UNICASTIPADDRESS_ROW_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpFindIpInTable@@YAHPEAU_MBB_IPADDRESS_ENTRY@@KPEAU_MIB_UNICASTIPADDRESS_ROW@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_IPADDRESS_ENTRY *, unsigned int, struct _MIB_UNICASTIPADDRESS_ROW *, unsigned int *)",
+    "rank_score": 414,
+    "size": 200,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MbbIpFindRouteInTable(_MBB_IPADDRESS_ENTRY *,ulong,_MIB_IPFORWARD_ROW2 *,ulong *)",
+    "ea": "0x14004323c",
+    "function_file": "functions/14004323c_MbbIpFindRouteInTable_MBB_IPADDRESS_ENTRY_ulong_MIB_IPFORWARD_ROW2_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpFindRouteInTable@@YAHPEAU_MBB_IPADDRESS_ENTRY@@KPEAU_MIB_IPFORWARD_ROW2@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_IPADDRESS_ENTRY *, unsigned int, struct _MIB_IPFORWARD_ROW2 *, unsigned int *)",
+    "rank_score": 414,
+    "size": 170,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "MbbWwanReferenceSessionForSessionId(_MINIPORT_ADAPTER_CONTEXT *,ulong)",
+    "ea": "0x140001abc",
+    "function_file": "functions/140001abc_MbbWwanReferenceSessionForSessionId_MINIPORT_ADAPTER_CONTEXT_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbWwanReferenceSessionForSessionId@@YAPEAU_MINIPORT_INTERFACE_CONTEXT@@PEAU_MINIPORT_ADAPTER_CONTEXT@@K@Z",
+    "prototype": "struct _MINIPORT_INTERFACE_CONTEXT *__fastcall(PKSPIN_LOCK SpinLock, unsigned int)",
+    "rank_score": 414,
+    "size": 111,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MbbIpFindDnsInTable(_MBB_IPADDRESS_ENTRY *,ulong,_MBB_IPADDRESS_ENTRY *,ulong *)",
+    "ea": "0x1400430d0",
+    "function_file": "functions/1400430d0_MbbIpFindDnsInTable_MBB_IPADDRESS_ENTRY_ulong_MBB_IPADDRESS_ENTRY_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpFindDnsInTable@@YAHPEAU_MBB_IPADDRESS_ENTRY@@K0PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_IPADDRESS_ENTRY *, unsigned int, struct _MBB_IPADDRESS_ENTRY *, unsigned int *)",
+    "rank_score": 413,
+    "size": 149,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TlgAggregateInternalProviderCallback(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *)",
+    "ea": "0x1400660d0",
+    "function_file": "functions/1400660d0_TlgAggregateInternalProviderCallback_GUID_const_ulong_uchar_unsigned_int64_unsigned_int64_EVENT_FILTER_DESCRIP.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExTryAcquirePushLockExclusiveEx"
+    ],
+    "matched_strings": [],
+    "name": "?TlgAggregateInternalProviderCallback@@YAXPEBU_GUID@@KE_K1PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z",
+    "prototype": "void __fastcall(const struct _GUID *, int, __int64, __int64)",
+    "rank_score": 412,
+    "size": 98,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details::lambda_call__DriverEntry_::_2_::_lambda_1___::_lambda_call__DriverEntry_::_2_::_lambda_1___",
+    "ea": "0x140024bf4",
+    "function_file": "functions/140024bf4_wil_details_lambda_call_DriverEntry_2_lambda_1_lambda_call_DriverEntry_2_lambda_1.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil::details::lambda_call__DriverEntry_::_2_::_lambda_1___::_lambda_call__DriverEntry_::_2_::_lambda_1___",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 412,
+    "size": 100,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "MbbAdapterIsMultiCarrierCapable(_MINIPORT_ADAPTER_CONTEXT *)",
+    "ea": "0x140003498",
+    "function_file": "functions/140003498_MbbAdapterIsMultiCarrierCapable_MINIPORT_ADAPTER_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbAdapterIsMultiCarrierCapable@@YAEPEAU_MINIPORT_ADAPTER_CONTEXT@@@Z",
+    "prototype": "unsigned __int8 __fastcall(PKSPIN_LOCK SpinLock)",
+    "rank_score": 407,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CancelTimerCallbacksAndDeleteTimer",
+    "ea": "0x1400658fc",
+    "function_file": "functions/1400658fc_CancelTimerCallbacksAndDeleteTimer.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteTimer",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CancelTimerCallbacksAndDeleteTimer",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 404,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 4,
+    "demangled": "MbbNdisIndicatePacketService(_MBB_REQUEST_CONTEXT *,int,ulong)",
+    "ea": "0x14002ec90",
+    "function_file": "functions/14002ec90_MbbNdisIndicatePacketService_MBB_REQUEST_CONTEXT_int_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisIndicatePacketService@@YAXPEAU_MBB_REQUEST_CONTEXT@@HK@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_CONTEXT *, int, unsigned int)",
+    "rank_score": 268,
+    "size": 1074,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 5,
+    "demangled": "MbbNdisIndicateReadyInfo(_MBB_REQUEST_CONTEXT *,int)",
+    "ea": "0x14002f228",
+    "function_file": "functions/14002f228_MbbNdisIndicateReadyInfo_MBB_REQUEST_CONTEXT_int.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisIndicateReadyInfo@@YAXPEAU_MBB_REQUEST_CONTEXT@@H@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_CONTEXT *, int, unsigned int, int)",
+    "rank_score": 262,
+    "size": 1324,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "MbbUtilValidateAndMbbToNdisWwanNwParamsInfo(_MBB_REQUEST_CONTEXT *,_MBB_NW_PARAMS_INFO *,ulong,_NDIS_WWAN_NETWORK_PARAMS_INFO * &,ulong &)",
+    "ea": "0x14004041c",
+    "function_file": "functions/14004041c_MbbUtilValidateAndMbbToNdisWwanNwParamsInfo_MBB_REQUEST_CONTEXT_MBB_NW_PARAMS_INFO_ulong_NDIS_WWAN_NETWORK_PAR.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilValidateAndMbbToNdisWwanNwParamsInfo@@YAKPEAU_MBB_REQUEST_CONTEXT@@PEAU_MBB_NW_PARAMS_INFO@@KAEAPEAU_NDIS_WWAN_NETWORK_PARAMS_INFO@@AEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, struct _MBB_NW_PARAMS_INFO *, int, struct _NDIS_WWAN_NETWORK_PARAMS_INFO **, unsigned int *)",
+    "rank_score": 252,
+    "size": 2565,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 18,
+    "demangled": "MbbReqMgrDispatchRequest(_MBB_REQUEST_CONTEXT *,uchar,int (*)(void *,_MBB_REQUEST_CONTEXT *),void (*)(void *,_MBB_REQUEST_CONTEXT *,int),void (*)(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong))",
+    "ea": "0x14001a168",
+    "function_file": "functions/14001a168_MbbReqMgrDispatchRequest_MBB_REQUEST_CONTEXT_uchar_int_void_MBB_REQUEST_CONTEXT_void_void_MBB_REQUEST_CONTEXT_.md",
+    "matched_imports": [
+      "NDIS!NdisGetSystemUpTimeEx"
+    ],
+    "matched_strings": [],
+    "name": "?MbbReqMgrDispatchRequest@@YAHPEAU_MBB_REQUEST_CONTEXT@@EP6AHPEAX0@ZP6AX10H@ZP6AX0HW4_MBB_STATUS@@PEAEK@Z@Z",
+    "prototype": "__int64 __fastcall(union _LARGE_INTEGER *, char, int (*)(void *, struct _MBB_REQUEST_CONTEXT *), void (*)(void *, struct _MBB_REQUEST_CONTEXT *, int), void (__high *)(struct _MBB_REQUEST_CONTEXT *, int, enum _MBB_STATUS, unsigned __int8 *, unsigned int))",
+    "rank_score": 242,
+    "size": 152,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "MbbUtilSendMessageFragmentComplete(void *,void *,long)",
+    "ea": "0x14001ffa4",
+    "function_file": "functions/14001ffa4_MbbUtilSendMessageFragmentComplete_void_void_long.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilSendMessageFragmentComplete@@YAXPEAX0J@Z",
+    "prototype": "void __fastcall(void *, _QWORD *, int)",
+    "rank_score": 240,
+    "size": 902,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MbbNdisSmsConfigurationStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x1400367e0",
+    "function_file": "functions/1400367e0_MbbNdisSmsConfigurationStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSmsConfigurationStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int IsVariableFieldValid, unsigned int, __int64, unsigned int)",
+    "rank_score": 237,
+    "size": 1007,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MbbNdisPacketServiceStatusHandlerHelper<_MBB_PACKET_SERVICE_INFO_V3_AND_HIGHER>(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140028340",
+    "function_file": "functions/140028340_MbbNdisPacketServiceStatusHandlerHelper_MBB_PACKET_SERVICE_INFO_V3_AND_HIGHER_MBB_REQUEST_CONTEXT_int_MBB_STAT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??$MbbNdisPacketServiceStatusHandlerHelper@U_MBB_PACKET_SERVICE_INFO_V3_AND_HIGHER@@@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, int, unsigned int, __int64, unsigned int)",
+    "rank_score": 236,
+    "size": 1127,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "MbbUtilSendMbimError(ulong,_MBB_ERROR,_MINIPORT_ADAPTER_CONTEXT *,_GUID,_MBB_COMMAND *)",
+    "ea": "0x14001fcf4",
+    "function_file": "functions/14001fcf4_MbbUtilSendMbimError_ulong_MBB_ERROR_MINIPORT_ADAPTER_CONTEXT_GUID_MBB_COMMAND.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilSendMbimError@@YAXKW4_MBB_ERROR@@PEAU_MINIPORT_ADAPTER_CONTEXT@@U_GUID@@PEAU_MBB_COMMAND@@@Z",
+    "prototype": "void __fastcall(int, int, __int64, const GUID *, struct _MBB_COMMAND *Source1)",
+    "rank_score": 236,
+    "size": 681,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MbbNdisDeviceServiceStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x14002ddd0",
+    "function_file": "functions/14002ddd0_MbbNdisDeviceServiceStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisDeviceServiceStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, const void *, unsigned int)",
+    "rank_score": 235,
+    "size": 189,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "MbbNdisReadyInfoStatusHandlerHelper<_MBB_SUBSCRIBER_READY_INFO>(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x1400287b0",
+    "function_file": "functions/1400287b0_MbbNdisReadyInfoStatusHandlerHelper_MBB_SUBSCRIBER_READY_INFO_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??$MbbNdisReadyInfoStatusHandlerHelper@U_MBB_SUBSCRIBER_READY_INFO@@@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, int, unsigned int, __int64, unsigned int)",
+    "rank_score": 233,
+    "size": 1282,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "MbbNdisReadyInfoStatusHandlerHelper<_MBB_SUBSCRIBER_READY_INFO_EX3>(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140028cb8",
+    "function_file": "functions/140028cb8_MbbNdisReadyInfoStatusHandlerHelper_MBB_SUBSCRIBER_READY_INFO_EX3_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??$MbbNdisReadyInfoStatusHandlerHelper@U_MBB_SUBSCRIBER_READY_INFO_EX3@@@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, int, unsigned int, __int64, unsigned int)",
+    "rank_score": 233,
+    "size": 1282,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "MbbNdisReadyInfoStatusHandlerHelper<_MBB_SUBSCRIBER_READY_INFO_EX4>(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x1400291c0",
+    "function_file": "functions/1400291c0_MbbNdisReadyInfoStatusHandlerHelper_MBB_SUBSCRIBER_READY_INFO_EX4_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??$MbbNdisReadyInfoStatusHandlerHelper@U_MBB_SUBSCRIBER_READY_INFO_EX4@@@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, int, unsigned int, __int64, unsigned int)",
+    "rank_score": 233,
+    "size": 1282,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MbbNdisPacketServiceStateCompletionHandler(_MBB_REQUEST_CONTEXT *,int)",
+    "ea": "0x1400128b0",
+    "function_file": "functions/1400128b0_MbbNdisPacketServiceStateCompletionHandler_MBB_REQUEST_CONTEXT_int.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisPacketServiceStateCompletionHandler@@YAXPEAU_MBB_REQUEST_CONTEXT@@H@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_CONTEXT *, int)",
+    "rank_score": 232,
+    "size": 71,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MbbUtilWwanToMbbSetLteAttachContext(_WWAN_SET_LTE_ATTACH *,_MBB_SET_MS_CONTEXT_LTE_ATTACH_CONFIG * *,ulong *)",
+    "ea": "0x140022030",
+    "function_file": "functions/140022030_MbbUtilWwanToMbbSetLteAttachContext_WWAN_SET_LTE_ATTACH_MBB_SET_MS_CONTEXT_LTE_ATTACH_CONFIG_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilWwanToMbbSetLteAttachContext@@YAJPEAU_WWAN_SET_LTE_ATTACH@@PEAPEAU_MBB_SET_MS_CONTEXT_LTE_ATTACH_CONFIG@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _WWAN_SET_LTE_ATTACH *, struct _MBB_SET_MS_CONTEXT_LTE_ATTACH_CONFIG **, unsigned int *)",
+    "rank_score": 232,
+    "size": 980,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MbbNdisPacketServiceStatusHandlerHelper<_MBB_PACKET_SERVICE>(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140027eb8",
+    "function_file": "functions/140027eb8_MbbNdisPacketServiceStatusHandlerHelper_MBB_PACKET_SERVICE_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??$MbbNdisPacketServiceStatusHandlerHelper@U_MBB_PACKET_SERVICE@@@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, int, unsigned int, __int64, unsigned int)",
+    "rank_score": 231,
+    "size": 570,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MbbNdisPacketServiceStatusHandlerHelper<_MBB_PACKET_SERVICE_INFO_V2>(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x1400280f8",
+    "function_file": "functions/1400280f8_MbbNdisPacketServiceStatusHandlerHelper_MBB_PACKET_SERVICE_INFO_V2_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ul.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??$MbbNdisPacketServiceStatusHandlerHelper@U_MBB_PACKET_SERVICE_INFO_V2@@@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, int, unsigned int, __int64, unsigned int)",
+    "rank_score": 231,
+    "size": 575,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "MbxRequest::Complete(long)",
+    "ea": "0x14000efa4",
+    "function_file": "functions/14000efa4_MbxRequest_Complete_long.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Complete@MbxRequest@@QEAAXJ@Z",
+    "prototype": "void(MbxRequest *__hidden this, int)",
+    "rank_score": 229,
+    "size": 275,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 156,
+    "demangled": "WPP_RECORDER_SF_DD",
+    "ea": "0x1400051ac",
+    "function_file": "functions/1400051ac_WPP_RECORDER_SF_DD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_DD",
+    "prototype": "",
+    "rank_score": 229,
+    "size": 266,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 86,
+    "demangled": "WPP_RECORDER_SF_Ddd",
+    "ea": "0x140005644",
+    "function_file": "functions/140005644_WPP_RECORDER_SF_Ddd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_Ddd",
+    "prototype": "__int64(_DWORD, _DWORD, _DWORD, _DWORD, __int64, char, char, ...)",
+    "rank_score": 229,
+    "size": 302,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140008918",
+    "function_file": "functions/140008918_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 229,
+    "size": 599,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 100,
+    "demangled": "WPP_RECORDER_SF_",
+    "ea": "0x140001cf8",
+    "function_file": "functions/140001cf8_WPP_RECORDER_SF.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, __int64)",
+    "rank_score": 228,
+    "size": 185,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 144,
+    "demangled": "WPP_RECORDER_SF_d",
+    "ea": "0x140001db8",
+    "function_file": "functions/140001db8_WPP_RECORDER_SF_d.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_d",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD, __int64, char)",
+    "rank_score": 228,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MbbNdisSetServiceActivation(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140016200",
+    "function_file": "functions/140016200_MbbNdisSetServiceActivation_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSetServiceActivation@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 227,
+    "size": 349,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "MbbUtilFindDeviceService(_MINIPORT_ADAPTER_CONTEXT *,_GUID *)",
+    "ea": "0x14001eca4",
+    "function_file": "functions/14001eca4_MbbUtilFindDeviceService_MINIPORT_ADAPTER_CONTEXT_GUID.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilFindDeviceService@@YAPEAU_MBB_DS@@PEAU_MINIPORT_ADAPTER_CONTEXT@@PEAU_GUID@@@Z",
+    "prototype": "struct _MBB_DS *__fastcall(struct _MINIPORT_ADAPTER_CONTEXT *, struct _GUID *)",
+    "rank_score": 227,
+    "size": 102,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 80,
+    "demangled": "MbbUtilNdisMiniportIndicateStatusEx(_MINIPORT_INTERFACE_CONTEXT *,_NDIS_STATUS_INDICATION *)",
+    "ea": "0x14003f994",
+    "function_file": "functions/14003f994_MbbUtilNdisMiniportIndicateStatusEx_MINIPORT_INTERFACE_CONTEXT_NDIS_STATUS_INDICATION.md",
+    "matched_imports": [
+      "NDIS!NdisMIndicateStatusEx"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilNdisMiniportIndicateStatusEx@@YAXPEAU_MINIPORT_INTERFACE_CONTEXT@@PEAU_NDIS_STATUS_INDICATION@@@Z",
+    "prototype": "void __fastcall(NDIS_HANDLE *, struct _NDIS_STATUS_INDICATION *)",
+    "rank_score": 227,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MbbNdisSetPacketService(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140015290",
+    "function_file": "functions/140015290_MbbNdisSetPacketService_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSetPacketService@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 226,
+    "size": 260,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "MbbUtilIsNativeMbnService(_GUID *)",
+    "ea": "0x14001f5b8",
+    "function_file": "functions/14001f5b8_MbbUtilIsNativeMbnService_GUID.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilIsNativeMbnService@@YAEPEAU_GUID@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _GUID *Source2)",
+    "rank_score": 225,
+    "size": 83,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MbbIpProcessIpEntry(_MBB_IPADDRESS_ENTRY *,ulong,_MBB_IPADDRESS_ENTRY *,ulong,_MIB_UNICASTIPADDRESS_ROW *)",
+    "ea": "0x1400445e8",
+    "function_file": "functions/1400445e8_MbbIpProcessIpEntry_MBB_IPADDRESS_ENTRY_ulong_MBB_IPADDRESS_ENTRY_ulong_MIB_UNICASTIPADDRESS_ROW.md",
+    "matched_imports": [
+      "NETIO!DeleteUnicastIpAddressEntry"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpProcessIpEntry@@YAEPEAU_MBB_IPADDRESS_ENTRY@@K0KPEAU_MIB_UNICASTIPADDRESS_ROW@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _MBB_IPADDRESS_ENTRY *, unsigned int, struct _MBB_IPADDRESS_ENTRY *, unsigned int, MIB_UNICASTIPADDRESS_ROW *Row)",
+    "rank_score": 222,
+    "size": 727,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MbbNdisReadyInfoCompletionHandler(_MBB_REQUEST_CONTEXT *,int)",
+    "ea": "0x140013880",
+    "function_file": "functions/140013880_MbbNdisReadyInfoCompletionHandler_MBB_REQUEST_CONTEXT_int.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisReadyInfoCompletionHandler@@YAXPEAU_MBB_REQUEST_CONTEXT@@H@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_CONTEXT *, int)",
+    "rank_score": 222,
+    "size": 71,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 22,
+    "demangled": "MbbReqMgrLockManager(_MBB_REQUEST_MANAGER *)",
+    "ea": "0x14001a87c",
+    "function_file": "functions/14001a87c_MbbReqMgrLockManager_MBB_REQUEST_MANAGER.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc"
+    ],
+    "matched_strings": [],
+    "name": "?MbbReqMgrLockManager@@YAXPEAU_MBB_REQUEST_MANAGER@@@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_MANAGER *)",
+    "rank_score": 222,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MbbSendOpenMsg(void *,_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x140017c80",
+    "function_file": "functions/140017c80_MbbSendOpenMsg_void_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbSendOpenMsg@@YAHPEAXPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(void *, struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 220,
+    "size": 500,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "WPP_RECORDER_SF_DDL",
+    "ea": "0x140017fb4",
+    "function_file": "functions/140017fb4_WPP_RECORDER_SF_DDL.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_DDL",
+    "prototype": "__int64(_DWORD, _DWORD, _DWORD, _DWORD, __int64, char, char, ...)",
+    "rank_score": 216,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_DLLd",
+    "ea": "0x1400183f8",
+    "function_file": "functions/1400183f8_WPP_RECORDER_SF_DLLd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_DLLd",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 281,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_DLLdd",
+    "ea": "0x14003b538",
+    "function_file": "functions/14003b538_WPP_RECORDER_SF_DLLdd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_DLLdd",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD)",
+    "rank_score": 216,
+    "size": 305,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_DdLL",
+    "ea": "0x14003b880",
+    "function_file": "functions/14003b880_WPP_RECORDER_SF_DdLL.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_DdLL",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 269,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 15,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x1400010b4",
+    "function_file": "functions/1400010b4_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 216,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x140008838",
+    "function_file": "functions/140008838_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 218,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MbbCompleteRequest(_MBB_REQUEST_CONTEXT *,int)",
+    "ea": "0x14000f900",
+    "function_file": "functions/14000f900_MbbCompleteRequest_MBB_REQUEST_CONTEXT_int.md",
+    "matched_imports": [
+      "NDIS!NdisMOidRequestComplete"
+    ],
+    "matched_strings": [],
+    "name": "?MbbCompleteRequest@@YAXPEAU_MBB_REQUEST_CONTEXT@@H@Z",
+    "prototype": "void(struct _MBB_REQUEST_CONTEXT *, int)",
+    "rank_score": 215,
+    "size": 103,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_DDLL",
+    "ea": "0x1400180a0",
+    "function_file": "functions/1400180a0_WPP_RECORDER_SF_DDLL.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_DDLL",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD)",
+    "rank_score": 215,
+    "size": 268,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_DLLL",
+    "ea": "0x14001ba9c",
+    "function_file": "functions/14001ba9c_WPP_RECORDER_SF_DLLL.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_DLLL",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 267,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x1400677ac",
+    "function_file": "functions/1400677ac_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 383,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x1400657d0",
+    "function_file": "functions/1400657d0_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 292,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "EvtAdapterPreProcessOidRequest",
+    "ea": "0x140008f40",
+    "function_file": "functions/140008f40_EvtAdapterPreProcessOidRequest.md",
+    "matched_imports": [
+      "NDIS!NdisMOidRequestComplete"
+    ],
+    "matched_strings": [],
+    "name": "EvtAdapterPreProcessOidRequest",
+    "prototype": "void __fastcall(__int64, struct _NDIS_OID_REQUEST *, __int64)",
+    "rank_score": 214,
+    "size": 156,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbUtilWwanToMbbSetSarConfig(_WWAN_SET_SAR_CONFIG *,_MBB_SET_SAR_CONFIG * *,ulong *)",
+    "ea": "0x140022d98",
+    "function_file": "functions/140022d98_MbbUtilWwanToMbbSetSarConfig_WWAN_SET_SAR_CONFIG_MBB_SET_SAR_CONFIG_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilWwanToMbbSetSarConfig@@YAHPEAU_WWAN_SET_SAR_CONFIG@@PEAPEAU_MBB_SET_SAR_CONFIG@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _WWAN_SET_SAR_CONFIG *, struct _MBB_SET_SAR_CONFIG **, unsigned int *)",
+    "rank_score": 214,
+    "size": 226,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "WPP_RECORDER_SF_Dddd",
+    "ea": "0x1400187d8",
+    "function_file": "functions/1400187d8_WPP_RECORDER_SF_Dddd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_Dddd",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 344,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "WPP_RECORDER_SF_Ds",
+    "ea": "0x140005778",
+    "function_file": "functions/140005778_WPP_RECORDER_SF_Ds.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_Ds",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 370,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "WPP_RECORDER_SF_i",
+    "ea": "0x140001ea4",
+    "function_file": "functions/140001ea4_WPP_RECORDER_SF_i.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_i",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MbbIpGetConfiguration(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x14000f9c0",
+    "function_file": "functions/14000f9c0_MbbIpGetConfiguration_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbIpGetConfiguration@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 212,
+    "size": 104,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WPP_RECORDER_SF_Ddddd",
+    "ea": "0x14003bacc",
+    "function_file": "functions/14003bacc_WPP_RECORDER_SF_Ddddd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_Ddddd",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD)",
+    "rank_score": 211,
+    "size": 306,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WPP_RECORDER_SF_ddd",
+    "ea": "0x14000d684",
+    "function_file": "functions/14000d684_WPP_RECORDER_SF_ddd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_ddd",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "WPP_RECORDER_SF_qd",
+    "ea": "0x140009104",
+    "function_file": "functions/140009104_WPP_RECORDER_SF_qd.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_qd",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 276,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "MbbReqMgrDrainCompleteCallback(void *)",
+    "ea": "0x14001a210",
+    "function_file": "functions/14001a210_MbbReqMgrDrainCompleteCallback_void.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?MbbReqMgrDrainCompleteCallback@@YAXPEAX@Z",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 210,
+    "size": 27,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "WPP_RECORDER_SF_i_IPV4_",
+    "ea": "0x140046378",
+    "function_file": "functions/140046378_WPP_RECORDER_SF_i_IPV4.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_i_IPV4_",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD)",
+    "rank_score": 209,
+    "size": 216,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "WPP_RECORDER_SF_i_IPV6_",
+    "ea": "0x1400466a4",
+    "function_file": "functions/1400466a4_WPP_RECORDER_SF_i_IPV6.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_i_IPV6_",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _DWORD, _DWORD)",
+    "rank_score": 209,
+    "size": 216,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbUtilWwanToMbbUiccAccessBinary(_WWAN_UICC_ACCESS_BINARY *,_MBB_UICC_ACCESS_BINARY * *,ulong *)",
+    "ea": "0x140023a7c",
+    "function_file": "functions/140023a7c_MbbUtilWwanToMbbUiccAccessBinary_WWAN_UICC_ACCESS_BINARY_MBB_UICC_ACCESS_BINARY_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilWwanToMbbUiccAccessBinary@@YAHPEAU_WWAN_UICC_ACCESS_BINARY@@PEAPEAU_MBB_UICC_ACCESS_BINARY@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _WWAN_UICC_ACCESS_BINARY *, struct _MBB_UICC_ACCESS_BINARY **, unsigned int *)",
+    "rank_score": 205,
+    "size": 304,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbUtilWwanToMbbUiccAccessRecord(_WWAN_UICC_ACCESS_RECORD *,_MBB_UICC_ACCESS_RECORD * *,ulong *)",
+    "ea": "0x140023bb4",
+    "function_file": "functions/140023bb4_MbbUtilWwanToMbbUiccAccessRecord_WWAN_UICC_ACCESS_RECORD_MBB_UICC_ACCESS_RECORD_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilWwanToMbbUiccAccessRecord@@YAHPEAU_WWAN_UICC_ACCESS_RECORD@@PEAPEAU_MBB_UICC_ACCESS_RECORD@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _WWAN_UICC_ACCESS_RECORD *, struct _MBB_UICC_ACCESS_RECORD **, unsigned int *)",
+    "rank_score": 205,
+    "size": 298,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MbbUtilWwanToMbbUiccFilePath(_WWAN_UICC_FILE_PATH *,_MBB_UICC_FILE_PATH * *,ulong *)",
+    "ea": "0x140023ce4",
+    "function_file": "functions/140023ce4_MbbUtilWwanToMbbUiccFilePath_WWAN_UICC_FILE_PATH_MBB_UICC_FILE_PATH_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbUtilWwanToMbbUiccFilePath@@YAHPEAU_WWAN_UICC_FILE_PATH@@PEAPEAU_MBB_UICC_FILE_PATH@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _WWAN_UICC_FILE_PATH *, struct _MBB_UICC_FILE_PATH **, unsigned int *)",
+    "rank_score": 205,
+    "size": 197,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FlushEventEntryList",
+    "ea": "0x140065b28",
+    "function_file": "functions/140065b28_FlushEventEntryList.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "FlushEventEntryList",
+    "prototype": "__int64 __fastcall(REGHANDLE RegHandle, PCEVENT_DESCRIPTOR EventDescriptor)",
+    "rank_score": 204,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbUtilWwanToMbbSetUiccOpenChannel<_MBB_SET_UICC_OPEN_CHANNEL>(_WWAN_SET_UICC_OPEN_CHANNEL *,_MBB_SET_UICC_OPEN_CHANNEL * *,ulong *)",
+    "ea": "0x14001d530",
+    "function_file": "functions/14001d530_MbbUtilWwanToMbbSetUiccOpenChannel_MBB_SET_UICC_OPEN_CHANNEL_WWAN_SET_UICC_OPEN_CHANNEL_MBB_SET_UICC_OPEN_CHAN.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??$MbbUtilWwanToMbbSetUiccOpenChannel@U_MBB_SET_UICC_OPEN_CHANNEL@@@@YAHPEAU_WWAN_SET_UICC_OPEN_CHANNEL@@PEAPEAU_MBB_SET_UICC_OPEN_CHANNEL@@PEAK@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64 *, unsigned int *)",
+    "rank_score": 204,
+    "size": 192,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbUtilWwanToMbbSetUiccOpenChannel<_MBB_SET_UICC_OPEN_CHANNEL_EX4>(_WWAN_SET_UICC_OPEN_CHANNEL *,_MBB_SET_UICC_OPEN_CHANNEL_EX4 * *,ulong *)",
+    "ea": "0x14001d5f8",
+    "function_file": "functions/14001d5f8_MbbUtilWwanToMbbSetUiccOpenChannel_MBB_SET_UICC_OPEN_CHANNEL_EX4_WWAN_SET_UICC_OPEN_CHANNEL_MBB_SET_UICC_OPEN_.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??$MbbUtilWwanToMbbSetUiccOpenChannel@U_MBB_SET_UICC_OPEN_CHANNEL_EX4@@@@YAHPEAU_WWAN_SET_UICC_OPEN_CHANNEL@@PEAPEAU_MBB_SET_UICC_OPEN_CHANNEL_EX4@@PEAK@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64 *, unsigned int *)",
+    "rank_score": 204,
+    "size": 198,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MbbNdisSmsDelete(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140016ed0",
+    "function_file": "functions/140016ed0_MbbNdisSmsDelete_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSmsDelete@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 202,
+    "size": 108,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MbbNdisSmsRead(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x140016f50",
+    "function_file": "functions/140016f50_MbbNdisSmsRead_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?MbbNdisSmsRead@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 202,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MbxDiagnostics::FlushSleepStudyData(bool)",
+    "ea": "0x140025854",
+    "function_file": "functions/140025854_MbxDiagnostics_FlushSleepStudyData_bool.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "PacketServiceWakeCnt",
+      "UnknownOrIncomingPacketWakeCnt"
+    ],
+    "name": "?FlushSleepStudyData@MbxDiagnostics@@QEAAX_N@Z",
+    "prototype": "void __fastcall(MbxDiagnostics *__hidden this, bool)",
+    "rank_score": 128,
+    "size": 1308,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "MbbUtilWwanDeleteMPDP(_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x1400212ec",
+    "function_file": "functions/1400212ec_MbbUtilWwanDeleteMPDP_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "AttemptToDeletePrimaryInterface",
+      "MbbCxcompleted"
+    ],
+    "name": "?MbbUtilWwanDeleteMPDP@@YAHPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 119,
+    "size": 991,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MbbUtilWwanCreateMPDP(_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x140020ed8",
+    "function_file": "functions/140020ed8_MbbUtilWwanCreateMPDP_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MbbCxMbxDeviceCreateAdapter",
+      "MbbCxCompleted"
+    ],
+    "name": "?MbbUtilWwanCreateMPDP@@YAHPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, __int64, int, int)",
+    "rank_score": 116,
+    "size": 1035,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MbbNdisSetMPDP(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140014b10",
+    "function_file": "functions/140014b10_MbbNdisSetMPDP_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MbbCxCommandOnNonPhysicalInterface",
+      "MbbCxCommandOnNonPhysicalInterface"
+    ],
+    "name": "?MbbNdisSetMPDP@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 111,
+    "size": 561,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "MbxDevice::CreateAdapter(NETADAPTER__ * *,bool)",
+    "ea": "0x1400099cc",
+    "function_file": "functions/1400099cc_MbxDevice_CreateAdapter_NETADAPTER_bool.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "adapterExtensionInit"
+    ],
+    "name": "?CreateAdapter@MbxDevice@@QEAAJPEAPEAUNETADAPTER__@@_N@Z",
+    "prototype": "__int64 __fastcall(MbxDevice *__hidden this, struct NETADAPTER__ **, bool)",
+    "rank_score": 78,
+    "size": 1085,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 31,
+    "demangled": "MbbUtilQueryAttributeWithParameter(_MBB_REQUEST_CONTEXT *,uchar *,ulong)",
+    "ea": "0x14001fc2c",
+    "function_file": "functions/14001fc2c_MbbUtilQueryAttributeWithParameter_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilQueryAttributeWithParameter@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int)",
+    "rank_score": 61,
+    "size": 194,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 39,
+    "demangled": "MbbUtilSetAttributeWithParameter(_MBB_REQUEST_CONTEXT *,uchar *,ulong)",
+    "ea": "0x1400208bc",
+    "function_file": "functions/1400208bc_MbbUtilSetAttributeWithParameter_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilSetAttributeWithParameter@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int)",
+    "rank_score": 61,
+    "size": 197,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MbbAdapterDispatchConfigureDeviceServiceSubscriptionRequest(void *,_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x1400026f0",
+    "function_file": "functions/1400026f0_MbbAdapterDispatchConfigureDeviceServiceSubscriptionRequest_void_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbAdapterDispatchConfigureDeviceServiceSubscriptionRequest@@YAHPEAXPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "int(void *, struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 58,
+    "size": 325,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MbbUtilDeviceServiceCommand(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x14001e7b8",
+    "function_file": "functions/14001e7b8_MbbUtilDeviceServiceCommand_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilDeviceServiceCommand@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, __int64)",
+    "rank_score": 51,
+    "size": 599,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MbbAdapterDispatchConfigurePacketFiltersRequest(void *,_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x140002840",
+    "function_file": "functions/140002840_MbbAdapterDispatchConfigurePacketFiltersRequest_void_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbAdapterDispatchConfigurePacketFiltersRequest@@YAHPEAXPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(void *, struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 47,
+    "size": 275,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MbbAdapterDispatchQueryDeviceServicesRequest(void *,_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x140002960",
+    "function_file": "functions/140002960_MbbAdapterDispatchQueryDeviceServicesRequest_void_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbAdapterDispatchQueryDeviceServicesRequest@@YAHPEAXPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(void *, struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 45,
+    "size": 204,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 25,
+    "demangled": "MbbIsVariableFieldValid(ulong,ulong,ulong,ulong,ulong,int)",
+    "ea": "0x14003df70",
+    "function_file": "functions/14003df70_MbbIsVariableFieldValid_ulong_ulong_ulong_ulong_ulong_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbIsVariableFieldValid@@YAJKKKKKH@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, int)",
+    "rank_score": 43,
+    "size": 394,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "MbbNdisGetOidHandlerByCommand(_MBB_COMMAND *)",
+    "ea": "0x140011278",
+    "function_file": "functions/140011278_MbbNdisGetOidHandlerByCommand_MBB_COMMAND.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisGetOidHandlerByCommand@@YAPEAU_MBB_OID_HANDLER_ENTRY@@PEAU_MBB_COMMAND@@@Z",
+    "prototype": "struct _MBB_OID_HANDLER_ENTRY *__fastcall(struct _MBB_COMMAND *)",
+    "rank_score": 39,
+    "size": 167,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 76,
+    "demangled": "MbbUtilMbbToWwanStatus(_MBB_STATUS)",
+    "ea": "0x14003f7e4",
+    "function_file": "functions/14003f7e4_MbbUtilMbbToWwanStatus_MBB_STATUS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilMbbToWwanStatus@@YAKW4_MBB_STATUS@@@Z",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 38,
+    "size": 185,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 137,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140047e50",
+    "function_file": "functions/140047e50_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 310,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140047e90",
+    "function_file": "functions/140047e90_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "imp_MbbDeviceSendDeviceServiceSessionDataComplete",
+    "ea": "0x14000ec40",
+    "function_file": "functions/14000ec40_imp_MbbDeviceSendDeviceServiceSessionDataComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "imp_MbbDeviceSendDeviceServiceSessionDataComplete",
+    "prototype": "void __stdcall(WDFMEMORY Data, NTSTATUS NtStatus)",
+    "rank_score": 35,
+    "size": 150,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MbbNdisModemLoggingConfigHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140030590",
+    "function_file": "functions/140030590_MbbNdisModemLoggingConfigHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisModemLoggingConfigHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, __int64, unsigned int)",
+    "rank_score": 34,
+    "size": 662,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "MbbUtilSetupCommandMessage(_MBB_REQUEST_CONTEXT *,_MBB_COMMAND *,_MBB_COMMAND_TYPE,uchar *,ulong)",
+    "ea": "0x140020988",
+    "function_file": "functions/140020988_MbbUtilSetupCommandMessage_MBB_REQUEST_CONTEXT_MBB_COMMAND_MBB_COMMAND_TYPE_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilSetupCommandMessage@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAU_MBB_COMMAND@@W4_MBB_COMMAND_TYPE@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 34,
+    "size": 200,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MbbNdisDssStateStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong,_WWAN_DEVICE_SERVICE_SESSION_STATE)",
+    "ea": "0x14002deb8",
+    "function_file": "functions/14002deb8_MbbNdisDssStateStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong_WWAN_DEVICE_SERVICE_SESSION_STATE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisDssStateStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEKW4_WWAN_DEVICE_SERVICE_SESSION_STATE@@@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int)",
+    "rank_score": 33,
+    "size": 563,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 59,
+    "demangled": "memmove",
+    "ea": "0x140048040",
+    "function_file": "functions/140048040_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MbbNdisDssWriteCompleteStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x14002e100",
+    "function_file": "functions/14002e100_MbbNdisDssWriteCompleteStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisDssWriteCompleteStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 30,
+    "size": 419,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "MbbNdisIndicatePacketServiceFailure(_MBB_REQUEST_CONTEXT *,ulong)",
+    "ea": "0x14002f0c8",
+    "function_file": "functions/14002f0c8_MbbNdisIndicatePacketServiceFailure_MBB_REQUEST_CONTEXT_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisIndicatePacketServiceFailure@@YAXPEAU_MBB_REQUEST_CONTEXT@@K@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned int)",
+    "rank_score": 30,
+    "size": 343,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 11,
+    "demangled": "MbbUtilSendMessageFragmentsAndLog(_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x1400206cc",
+    "function_file": "functions/1400206cc_MbbUtilSendMessageFragmentsAndLog_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilSendMessageFragmentsAndLog@@YAHPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 30,
+    "size": 490,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "imp_MbbDeviceInitialize",
+    "ea": "0x14000e900",
+    "function_file": "functions/14000e900_imp_MbbDeviceInitialize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "imp_MbbDeviceInitialize",
+    "prototype": "NTSTATUS __stdcall(WDFDEVICE Device, PMBB_DEVICE_CONFIG Config)",
+    "rank_score": 29,
+    "size": 438,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 123,
+    "demangled": "memset",
+    "ea": "0x140048340",
+    "function_file": "functions/140048340_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "MbbReqFsmSendComplete(_MBB_REQUEST_CONTEXT *,MBB_REQUEST_STATE,_MBB_EVENT_ENTRY *)",
+    "ea": "0x140019290",
+    "function_file": "functions/140019290_MbbReqFsmSendComplete_MBB_REQUEST_CONTEXT_MBB_REQUEST_STATE_MBB_EVENT_ENTRY.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbReqFsmSendComplete@@YAXPEAU_MBB_REQUEST_CONTEXT@@W4MBB_REQUEST_STATE@@PEAU_MBB_EVENT_ENTRY@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 28,
+    "size": 207,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MbbUtilMbbToWwanLteAttachConfigInfo(_MBB_MS_LTE_ATTACH_CONFIG_INFO *,_WWAN_LTE_ATTACH_CONFIG *)",
+    "ea": "0x14003f028",
+    "function_file": "functions/14003f028_MbbUtilMbbToWwanLteAttachConfigInfo_MBB_MS_LTE_ATTACH_CONFIG_INFO_WWAN_LTE_ATTACH_CONFIG.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilMbbToWwanLteAttachConfigInfo@@YAXPEAU_MBB_MS_LTE_ATTACH_CONFIG_INFO@@PEAU_WWAN_LTE_ATTACH_CONFIG@@@Z",
+    "prototype": "void __fastcall(struct _MBB_MS_LTE_ATTACH_CONFIG_INFO *, struct _WWAN_LTE_ATTACH_CONFIG *)",
+    "rank_score": 28,
+    "size": 460,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MbbNdisPacketServiceStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140031cc0",
+    "function_file": "functions/140031cc0_MbbNdisPacketServiceStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisPacketServiceStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 339,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MbbNdisSmsSetConfiguration(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140017110",
+    "function_file": "functions/140017110_MbbNdisSmsSetConfiguration_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisSmsSetConfiguration@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 26,
+    "size": 272,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MbbUtilWriteMbimVersionOpnEvent(_GUID *,ulong,_MBB_STATUS,_MBB_MS_VERSION_INFO *)",
+    "ea": "0x140020c18",
+    "function_file": "functions/140020c18_MbbUtilWriteMbimVersionOpnEvent_GUID_ulong_MBB_STATUS_MBB_MS_VERSION_INFO.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilWriteMbimVersionOpnEvent@@YAXPEAU_GUID@@KW4_MBB_STATUS@@PEAU_MBB_MS_VERSION_INFO@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 290,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "MbbWriteEvent(_EVENT_DESCRIPTOR const *,_GUID *,_GUID *,ushort,...)",
+    "ea": "0x140041664",
+    "function_file": "functions/140041664_MbbWriteEvent_EVENT_DESCRIPTOR_const_GUID_GUID_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbWriteEvent@@YAXPEBU_EVENT_DESCRIPTOR@@PEAU_GUID@@1GZZ",
+    "prototype": "void(PCEVENT_DESCRIPTOR EventDescriptor, LPCGUID ActivityId, LPCGUID RelatedActivityId, unsigned __int16, ...)",
+    "rank_score": 26,
+    "size": 60,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MbxDevice::ReportFirstIndication(_MBB_COMMAND &)",
+    "ea": "0x14000d3d0",
+    "function_file": "functions/14000d3d0_MbxDevice_ReportFirstIndication_MBB_COMMAND.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReportFirstIndication@MbxDevice@@QEAAXAEAU_MBB_COMMAND@@@Z",
+    "prototype": "void(MbxDevice *__hidden this, struct _MBB_COMMAND *)",
+    "rank_score": 26,
+    "size": 197,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "imp_MbbDeviceInitConfig",
+    "ea": "0x14000e840",
+    "function_file": "functions/14000e840_imp_MbbDeviceInitConfig.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "imp_MbbDeviceInitConfig",
+    "prototype": "NTSTATUS __stdcall(PWDFDEVICE_INIT DeviceInit)",
+    "rank_score": 26,
+    "size": 184,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "LookUpTableFlushComplete",
+    "ea": "0x140065bc8",
+    "function_file": "functions/140065bc8_LookUpTableFlushComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LookUpTableFlushComplete",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 25,
+    "size": 990,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MbbNdisGetModemConfigInfo(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x140010f40",
+    "function_file": "functions/140010f40_MbbNdisGetModemConfigInfo_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisGetModemConfigInfo@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 25,
+    "size": 180,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "EvtAdapterUpdateNdisPmParameters",
+    "ea": "0x140008ff0",
+    "function_file": "functions/140008ff0_EvtAdapterUpdateNdisPmParameters.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EvtAdapterUpdateNdisPmParameters",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 158,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "EvtSelfIoRequestCompletionRoutine",
+    "ea": "0x14000b230",
+    "function_file": "functions/14000b230_EvtSelfIoRequestCompletionRoutine.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EvtSelfIoRequestCompletionRoutine",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 114,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MbbNdisGetLteAttachConfig(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x140010e20",
+    "function_file": "functions/140010e20_MbbNdisGetLteAttachConfig_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisGetLteAttachConfig@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *)",
+    "rank_score": 23,
+    "size": 102,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MbbNdisGetModemLoggingConfig(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x140011000",
+    "function_file": "functions/140011000_MbbNdisGetModemLoggingConfig_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisGetModemLoggingConfig@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 23,
+    "size": 102,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MbbNdisGetSarConfig(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x1400117c0",
+    "function_file": "functions/1400117c0_MbbNdisGetSarConfig_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisGetSarConfig@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *)",
+    "rank_score": 23,
+    "size": 102,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "MbbUtilWriteStringToBuffer(uchar *,ulong,ulong,_MBB_STRING *,uchar const *,ulong)",
+    "ea": "0x140020d40",
+    "function_file": "functions/140020d40_MbbUtilWriteStringToBuffer_uchar_ulong_ulong_MBB_STRING_uchar_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilWriteStringToBuffer@@YAKPEAEKKPEAU_MBB_STRING@@PEBEK@Z",
+    "prototype": "unsigned int __fastcall(unsigned __int8 *, unsigned int, unsigned int, struct _MBB_STRING *, const unsigned __int8 *Src, size_t Size)",
+    "rank_score": 23,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140047d1c",
+    "function_file": "functions/140047d1c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FxDriverEntry",
+    "ea": "0x140042040",
+    "function_file": "functions/140042040_FxDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FxDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MbbNdisAdapterReadParameters(_MINIPORT_ADAPTER_CONTEXT *)",
+    "ea": "0x140005df4",
+    "function_file": "functions/140005df4_MbbNdisAdapterReadParameters_MINIPORT_ADAPTER_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisAdapterReadParameters@@YAJPEAU_MINIPORT_ADAPTER_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _MINIPORT_ADAPTER_CONTEXT *)",
+    "rank_score": 22,
+    "size": 936,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MbbNdisMultiCarrierDsCidListCompletionHandler(_MBB_REQUEST_CONTEXT *,int)",
+    "ea": "0x140012890",
+    "function_file": "functions/140012890_MbbNdisMultiCarrierDsCidListCompletionHandler_MBB_REQUEST_CONTEXT_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisMultiCarrierDsCidListCompletionHandler@@YAXPEAU_MBB_REQUEST_CONTEXT@@H@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_CONTEXT *, int)",
+    "rank_score": 22,
+    "size": 19,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "MbxQueueMessage(_MBB_REQUEST_MANAGER *,MBX_MESSAGE,void *,void *)",
+    "ea": "0x14001b818",
+    "function_file": "functions/14001b818_MbxQueueMessage_MBB_REQUEST_MANAGER_MBX_MESSAGE_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbxQueueMessage@@YAHPEAU_MBB_REQUEST_MANAGER@@W4MBX_MESSAGE@@PEAX2@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 22,
+    "size": 138,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "MbxRequest::_CreateInner(WDFDEVICE__ *,MbxRequest::RequestType,MbxRequest::MessageType,void *,void *,unsigned __int64,_GUID const *,MBBREQUEST__ * *)",
+    "ea": "0x14000f0c0",
+    "function_file": "functions/14000f0c0_MbxRequest_CreateInner_WDFDEVICE_MbxRequest_RequestType_MbxRequest_MessageType_void_void_unsigned_int64_GUID_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_CreateInner@MbxRequest@@CAJPEAUWDFDEVICE__@@W4RequestType@1@W4MessageType@1@PEAX3_KPEBU_GUID@@PEAPEAUMBBREQUEST__@@@Z",
+    "prototype": "__int64 __fastcall(__int64, int, int, __int64, __int64, __int64, __int128 *, _QWORD *)",
+    "rank_score": 22,
+    "size": 468,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "MbbNdisSetDeviceServiceCommand(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x140010db0",
+    "function_file": "functions/140010db0_MbbNdisSetDeviceServiceCommand_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisSetDeviceServiceCommand@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 21,
+    "size": 15,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "MbbUtilIndicateMPDPState(_MBB_REQUEST_CONTEXT *,int,_MINIPORT_INTERFACE_CONTEXT *)",
+    "ea": "0x14001f25c",
+    "function_file": "functions/14001f25c_MbbUtilIndicateMPDPState_MBB_REQUEST_CONTEXT_int_MINIPORT_INTERFACE_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilIndicateMPDPState@@YAXPEAU_MBB_REQUEST_CONTEXT@@HPEAU_MINIPORT_INTERFACE_CONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_CONTEXT *, int, struct _MINIPORT_INTERFACE_CONTEXT *)",
+    "rank_score": 21,
+    "size": 386,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "MbbWriteEventOpn(_EVENT_DESCRIPTOR const *,_GUID *,_GUID *,ushort,...)",
+    "ea": "0x140024338",
+    "function_file": "functions/140024338_MbbWriteEventOpn_EVENT_DESCRIPTOR_const_GUID_GUID_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbWriteEventOpn@@YAXPEBU_EVENT_DESCRIPTOR@@PEAU_GUID@@1GZZ",
+    "prototype": "void(PCEVENT_DESCRIPTOR EventDescriptor, LPCGUID ActivityId, LPCGUID RelatedActivityId, unsigned __int16, ...)",
+    "rank_score": 21,
+    "size": 60,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "DereferenceSession(_MINIPORT_INTERFACE_CONTEXT *)",
+    "ea": "0x1400018f0",
+    "function_file": "functions/1400018f0_DereferenceSession_MINIPORT_INTERFACE_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DereferenceSession@@YAXPEAU_MINIPORT_INTERFACE_CONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _MINIPORT_INTERFACE_CONTEXT *)",
+    "rank_score": 20,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "MbbNdisIndicateReadyInfoFailure(_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x14002f75c",
+    "function_file": "functions/14002f75c_MbbNdisIndicateReadyInfoFailure_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisIndicateReadyInfoFailure@@YAXPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 20,
+    "size": 372,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MbbNdisParseCommandResponse(ulong,_MBB_REQUEST_CONTEXT *)",
+    "ea": "0x140012900",
+    "function_file": "functions/140012900_MbbNdisParseCommandResponse_ulong_MBB_REQUEST_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisParseCommandResponse@@YAHKPEAU_MBB_REQUEST_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(int, struct _MBB_REQUEST_CONTEXT *)",
+    "rank_score": 20,
+    "size": 291,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MbbNdisSmsDeleteStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140036be0",
+    "function_file": "functions/140036be0_MbbNdisSmsDeleteStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisSmsDeleteStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int)",
+    "rank_score": 20,
+    "size": 429,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CreateControlDevice(_UNICODE_STRING *)",
+    "ea": "0x140024c60",
+    "function_file": "functions/140024c60_CreateControlDevice_UNICODE_STRING.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateControlDevice@@YAJPEAU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *)",
+    "rank_score": 19,
+    "size": 493,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MbbLibFragmentBufferToCommandMessages",
+    "ea": "0x140008c50",
+    "function_file": "functions/140008c50_MbbLibFragmentBufferToCommandMessages.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MbbLibFragmentBufferToCommandMessages",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, unsigned int, _DWORD *, unsigned int, _DWORD *, unsigned int *, __int64)",
+    "rank_score": 18,
+    "size": 580,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MbbOpenDoneHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x1400178e0",
+    "function_file": "functions/1400178e0_MbbOpenDoneHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbOpenDoneHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 429,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x140008430",
+    "function_file": "functions/140008430_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 723,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "Feature_MbbCx_Fix_OutOfScopeReadsInResponseHandlers__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x14003b090",
+    "function_file": "functions/14003b090_Feature_MbbCx_Fix_OutOfScopeReadsInResponseHandlers_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_MbbCx_Fix_OutOfScopeReadsInResponseHandlers__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "__int64(void)",
+    "rank_score": 16,
+    "size": 53,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MbbNdisDssWrite(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x14000fe90",
+    "function_file": "functions/14000fe90_MbbNdisDssWrite_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisDssWrite@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 16,
+    "size": 231,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MbbRegReadULongParameter(WDFDEVICE__ *,ulong &,_UNICODE_STRING const *)",
+    "ea": "0x14001e030",
+    "function_file": "functions/14001e030_MbbRegReadULongParameter_WDFDEVICE_ulong_UNICODE_STRING_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbRegReadULongParameter@@YAJPEAUWDFDEVICE__@@AEAKPEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(struct WDFDEVICE__ *, unsigned int *, const struct _UNICODE_STRING *)",
+    "rank_score": 16,
+    "size": 277,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "mbbcx_p::ExtractValidateNextTlv(uchar * &,ulong &,mbbcx_p::MbbTlvError &,ushort)",
+    "ea": "0x140047530",
+    "function_file": "functions/140047530_mbbcx_p_ExtractValidateNextTlv_uchar_ulong_mbbcx_p_MbbTlvError_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ExtractValidateNextTlv@mbbcx_p@@YAPEAU_MBB_TLV_IE@@AEAPEAEAEAKAEAW4MbbTlvError@1@G@Z",
+    "prototype": "struct _MBB_TLV_IE *__fastcall(mbbcx_p *this, unsigned __int8 **, unsigned int *, enum mbbcx_p::MbbTlvError *)",
+    "rank_score": 16,
+    "size": 335,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x14000870c",
+    "function_file": "functions/14000870c_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 293,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x14002561c",
+    "function_file": "functions/14002561c_wil_details_RecordCachedUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 16,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MbbUtilUpdateWwanDeviceCapsEx(_WWAN_DEVICE_CAPS_EX *,_MINIPORT_ADAPTER_CONTEXT *)",
+    "ea": "0x14004029c",
+    "function_file": "functions/14004029c_MbbUtilUpdateWwanDeviceCapsEx_WWAN_DEVICE_CAPS_EX_MINIPORT_ADAPTER_CONTEXT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilUpdateWwanDeviceCapsEx@@YAXPEAU_WWAN_DEVICE_CAPS_EX@@PEAU_MINIPORT_ADAPTER_CONTEXT@@@Z",
+    "prototype": "void __fastcall(struct _WWAN_DEVICE_CAPS_EX *, struct _MINIPORT_ADAPTER_CONTEXT *)",
+    "rank_score": 15,
+    "size": 375,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbxDevice::MbxDevice(WDFDEVICE__ *,_MBB_DEVICE_CONFIG const &,_MBX_PRIVATE_GLOBALS *)",
+    "ea": "0x140009568",
+    "function_file": "functions/140009568_MbxDevice_MbxDevice_WDFDEVICE_MBB_DEVICE_CONFIG_const_MBX_PRIVATE_GLOBALS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0MbxDevice@@AEAA@PEAUWDFDEVICE__@@AEBU_MBB_DEVICE_CONFIG@@PEAU_MBX_PRIVATE_GLOBALS@@@Z",
+    "prototype": "MbxDevice *(MbxDevice *__hidden this, struct WDFDEVICE__ *, const struct _MBB_DEVICE_CONFIG *, struct _MBX_PRIVATE_GLOBALS *)",
+    "rank_score": 15,
+    "size": 294,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MbxDevice::Open(void)",
+    "ea": "0x14000c648",
+    "function_file": "functions/14000c648_MbxDevice_Open_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Open@MbxDevice@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(MbxDevice *__hidden this)",
+    "rank_score": 15,
+    "size": 122,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MbbNdisReadyInfoStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x140033ef0",
+    "function_file": "functions/140033ef0_MbbNdisReadyInfoStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisReadyInfoStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 81,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "TlgAggregateInternalRegisteredProviderEtwCallback(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *)",
+    "ea": "0x140066140",
+    "function_file": "functions/140066140_TlgAggregateInternalRegisteredProviderEtwCallback_GUID_const_ulong_uchar_unsigned_int64_unsigned_int64_EVENT_F.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?TlgAggregateInternalRegisteredProviderEtwCallback@@YAXPEBU_GUID@@KE_K1PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z",
+    "prototype": "void __fastcall(const struct _GUID *, __int64, char, __int64, unsigned __int64, struct _EVENT_FILTER_DESCRIPTOR *, _QWORD *)",
+    "rank_score": 14,
+    "size": 115,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x140065650",
+    "function_file": "functions/140065650_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 209,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Feature_Mbbcx_Fix_Ip_Configuration_After_Disconnect__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x140007568",
+    "function_file": "functions/140007568_Feature_Mbbcx_Fix_Ip_Configuration_After_Disconnect_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Mbbcx_Fix_Ip_Configuration_After_Disconnect__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "__int64(void)",
+    "rank_score": 13,
+    "size": 53,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbCxCompleteWdfRequest(_WWAN_NDIS_OID_REQUEST *,int,unsigned __int64)",
+    "ea": "0x14000f970",
+    "function_file": "functions/14000f970_MbbCxCompleteWdfRequest_WWAN_NDIS_OID_REQUEST_int_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbCxCompleteWdfRequest@@YAXPEAU_WWAN_NDIS_OID_REQUEST@@H_K@Z",
+    "prototype": "void __fastcall(struct _WWAN_NDIS_OID_REQUEST *, int, unsigned __int64)",
+    "rank_score": 13,
+    "size": 63,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "imp_MbbDeviceReceiveDeviceServiceSessionData",
+    "ea": "0x14000eac0",
+    "function_file": "functions/14000eac0_imp_MbbDeviceReceiveDeviceServiceSessionData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "imp_MbbDeviceReceiveDeviceServiceSessionData",
+    "prototype": "void __stdcall(WDFDEVICE Device, DSS_SESSION_ID SessionId, WDFMEMORY Data)",
+    "rank_score": 13,
+    "size": 138,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Feature_MbbCx_Fix_OutOfScopeReadsInResponseHandlers__private_IsEnabledFallback",
+    "ea": "0x14003b0cc",
+    "function_file": "functions/14003b0cc_Feature_MbbCx_Fix_OutOfScopeReadsInResponseHandlers_private_IsEnabledFallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_MbbCx_Fix_OutOfScopeReadsInResponseHandlers__private_IsEnabledFallback",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 22,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Feature_Mbbcx_Fix_Ip_Configuration_After_Disconnect__private_IsEnabledFallback",
+    "ea": "0x1400075a4",
+    "function_file": "functions/1400075a4_Feature_Mbbcx_Fix_Ip_Configuration_After_Disconnect_private_IsEnabledFallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Mbbcx_Fix_Ip_Configuration_After_Disconnect__private_IsEnabledFallback",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 22,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140067008",
+    "function_file": "functions/140067008_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "imp_MbbRequestComplete",
+    "ea": "0x14000f300",
+    "function_file": "functions/14000f300_imp_MbbRequestComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "imp_MbbRequestComplete",
+    "prototype": "void __stdcall(MBBREQUEST Request, NTSTATUS NtStatus)",
+    "rank_score": 12,
+    "size": 100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "imp_MbbRequestCompleteWithInformation",
+    "ea": "0x14000f370",
+    "function_file": "functions/14000f370_imp_MbbRequestCompleteWithInformation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "imp_MbbRequestCompleteWithInformation",
+    "prototype": "void __stdcall(MBBREQUEST Request, NTSTATUS NtStatus, ULONG_PTR Information)",
+    "rank_score": 12,
+    "size": 117,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x140008b78",
+    "function_file": "functions/140008b78_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 79,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "MbbNdisDssOpenStatusHandler(_MBB_REQUEST_CONTEXT *,int,_MBB_STATUS,uchar *,ulong)",
+    "ea": "0x14002dea0",
+    "function_file": "functions/14002dea0_MbbNdisDssOpenStatusHandler_MBB_REQUEST_CONTEXT_int_MBB_STATUS_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisDssOpenStatusHandler@@YAHPEAU_MBB_REQUEST_CONTEXT@@HW4_MBB_STATUS@@PEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "MbbNdisUiccUpdateBinary(_MBB_REQUEST_CONTEXT *,uchar *,ulong *)",
+    "ea": "0x1400174a0",
+    "function_file": "functions/1400174a0_MbbNdisUiccUpdateBinary_MBB_REQUEST_CONTEXT_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisUiccUpdateBinary@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByRef<16>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<1>,_tlgWrapperArray<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByRef<16> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &)",
+    "ea": "0x1400014b0",
+    "function_file": "functions/1400014b0_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@U?$_tlgWrapperByVal@$00@@U?$_tlgWrapperByRef@$0BA@@@U?$_tlgWrapperArray@$00@@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U1@U3@U5@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@4AEBU?$_tlgWrapperByVal@$00@@AEBU?$_tlgWrapperByRef@$0BA@@@AEBU?$_tlgWrapperArray@$00@@35735735735735735735735745@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 1053,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "MbbUtilWwanToMbbContextType(_WWAN_CONTEXT_TYPE,_GUID *)",
+    "ea": "0x140021818",
+    "function_file": "functions/140021818_MbbUtilWwanToMbbContextType_WWAN_CONTEXT_TYPE_GUID.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbUtilWwanToMbbContextType@@YAXW4_WWAN_CONTEXT_TYPE@@PEAU_GUID@@@Z",
+    "prototype": "void __fastcall(int, struct _GUID *)",
+    "rank_score": 10,
+    "size": 399,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "mbbcx_p::ParseTlvNSSAI(_MBB_TLV_IE * const,_WWAN_SINGLE_NSSAI *,ulong)",
+    "ea": "0x140047814",
+    "function_file": "functions/140047814_mbbcx_p_ParseTlvNSSAI_MBB_TLV_IE_const_WWAN_SINGLE_NSSAI_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ParseTlvNSSAI@mbbcx_p@@YAXQEAU_MBB_TLV_IE@@PEAU_WWAN_SINGLE_NSSAI@@K@Z",
+    "prototype": "void __fastcall(mbbcx_p *this, struct _MBB_TLV_IE *const, struct _WWAN_SINGLE_NSSAI *)",
+    "rank_score": 8,
+    "size": 201,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByRef<16>,_tlgWrapperByRef<16>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x140001300",
+    "function_file": "functions/140001300_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@G@@U?$_tlgWrapperByRef@$0BA@@@U3@U1@U1@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@G@@AEBU?$_tlgWrapperByRef@$0BA@@@533@Z",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "mbbcx_p::CalculateAndBldMbbSnssai",
+    "ea": "0x140047394",
+    "function_file": "functions/140047394_mbbcx_p_CalculateAndBldMbbSnssai.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "mbbcx_p::CalculateAndBldMbbSnssai",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 7,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<4>,_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &)",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@G@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@G@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64, _QWORD *)",
+    "rank_score": 6,
+    "size": 164,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &)",
+    "ea": "0x140001158",
+    "function_file": "functions/140001158_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@3333333333333333@Z",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 415,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "mbbcx_p::GetSNSSAICountInTlv(_MBB_TLV_IE * const,ulong &)",
+    "ea": "0x1400476d0",
+    "function_file": "functions/1400476d0_mbbcx_p_GetSNSSAICountInTlv_MBB_TLV_IE_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSNSSAICountInTlv@mbbcx_p@@YA?AW4MbbTlvError@1@QEAU_MBB_TLV_IE@@AEAK@Z",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 6,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x1400013ec",
+    "function_file": "functions/1400013ec_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapSz@D@@U?$_tlgWrapperByVal@$03@@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapSz@D@@AEBU?$_tlgWrapperByVal@$03@@4@Z",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbUtilMbbToWwanReadyInfo<_MBB_SUBSCRIBER_READY_INFO>(_MBB_SUBSCRIBER_READY_INFO *,_WWAN_READY_INFO *)",
+    "ea": "0x14003c3c0",
+    "function_file": "functions/14003c3c0_MbbUtilMbbToWwanReadyInfo_MBB_SUBSCRIBER_READY_INFO_MBB_SUBSCRIBER_READY_INFO_WWAN_READY_INFO.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$MbbUtilMbbToWwanReadyInfo@U_MBB_SUBSCRIBER_READY_INFO@@@@YAXPEAU_MBB_SUBSCRIBER_READY_INFO@@PEAU_WWAN_READY_INFO@@@Z",
+    "prototype": "__int64 __fastcall(_DWORD *, _DWORD *)",
+    "rank_score": 4,
+    "size": 215,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbUtilMbbToWwanReadyInfo<_MBB_SUBSCRIBER_READY_INFO_EX3>(_MBB_SUBSCRIBER_READY_INFO_EX3 *,_WWAN_READY_INFO *)",
+    "ea": "0x14003c4a0",
+    "function_file": "functions/14003c4a0_MbbUtilMbbToWwanReadyInfo_MBB_SUBSCRIBER_READY_INFO_EX3_MBB_SUBSCRIBER_READY_INFO_EX3_WWAN_READY_INFO.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$MbbUtilMbbToWwanReadyInfo@U_MBB_SUBSCRIBER_READY_INFO_EX3@@@@YAXPEAU_MBB_SUBSCRIBER_READY_INFO_EX3@@PEAU_WWAN_READY_INFO@@@Z",
+    "prototype": "__int64 __fastcall(_DWORD *, _DWORD *)",
+    "rank_score": 4,
+    "size": 226,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MbbUtilMbbToWwanReadyInfo<_MBB_SUBSCRIBER_READY_INFO_EX4>(_MBB_SUBSCRIBER_READY_INFO_EX4 *,_WWAN_READY_INFO *)",
+    "ea": "0x14003c588",
+    "function_file": "functions/14003c588_MbbUtilMbbToWwanReadyInfo_MBB_SUBSCRIBER_READY_INFO_EX4_MBB_SUBSCRIBER_READY_INFO_EX4_WWAN_READY_INFO.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$MbbUtilMbbToWwanReadyInfo@U_MBB_SUBSCRIBER_READY_INFO_EX4@@@@YAXPEAU_MBB_SUBSCRIBER_READY_INFO_EX4@@PEAU_WWAN_READY_INFO@@@Z",
+    "prototype": "__int64 __fastcall(_DWORD *, _DWORD *)",
+    "rank_score": 4,
+    "size": 223,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140026230",
+    "function_file": "functions/140026230_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MbbNdisGetReadyInfo(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x140011560",
+    "function_file": "functions/140011560_MbbNdisGetReadyInfo_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisGetReadyInfo@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 2,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "MbbNdisUiccReadRecord(_MBB_REQUEST_CONTEXT *,uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x1400174c0",
+    "function_file": "functions/1400174c0_MbbNdisUiccReadRecord_MBB_REQUEST_CONTEXT_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MbbNdisUiccReadRecord@@YAHPEAU_MBB_REQUEST_CONTEXT@@PEAEPEAK12@Z",
+    "prototype": "__int64 __fastcall(struct _MBB_REQUEST_CONTEXT *, unsigned __int8 *, unsigned int *, unsigned __int8 *)",
+    "rank_score": 1,
+    "size": 15,
+    "tags": []
+  }
+]
