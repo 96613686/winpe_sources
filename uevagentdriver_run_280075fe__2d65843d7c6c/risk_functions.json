@@ -1,0 +1,1078 @@
+[
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ComPortSendMsg",
+    "ea": "0x14000a3c4",
+    "function_file": "functions/14000a3c4_ComPortSendMsg.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseClientPort",
+      "FLTMGR!FltSendMessage",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "UevFilter.ComPort: Closing client port\n",
+      "UevFilter.ComPort: Closing client port\n",
+      "UevFilter.ComPortSendMsg: Entry\n",
+      "UevFilter.ComPortSendMsg: Invalid parameter specified\n",
+      "UevFilter.ComPortSendMsg: Exit, retStatus = 0x%X\n"
+    ],
+    "name": "ComPortSendMsg",
+    "prototype": "__int64 __fastcall(PVOID SenderBuffer)",
+    "rank_score": 3218,
+    "size": 401,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetCompletionPortSecurityDescriptor",
+    "ea": "0x14000c1bc",
+    "function_file": "functions/14000c1bc_GetCompletionPortSecurityDescriptor.md",
+    "matched_imports": [
+      "ksecdd!SecLookupWellKnownSid",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "UevFilter.GetCompletionPortSecurityDescriptor: Entry\n",
+      "UevFilter.GetCompletionPortSecurityDescriptor: Failed to get WinAuthenticatedUserSid. Error = 0x%0X.\n",
+      "UevFilter.GetCompletionPortSecurityDescriptor: Failed to allocate memory for descriptor. Error = 0x%0X.\n",
+      "UevFilter.GetCompletionPortSecurityDescriptor: Failed to create descriptor. Error = 0x%0X.\n",
+      "UevFilter.GetCompletionPortSecurityDescriptor: Failed to create new ACL. Error = 0x%0X.\n",
+      "UevFilter.GetCompletionPortSecurityDescriptor: Failed to add ACE to ACL. Error = 0x%0X.\n",
+      "UevFilter.GetCompletionPortSecurityDescriptor: Failed to set DACL. Error = 0x%0X.\n",
+      "UevFilter.GetCompletionPortSecurityDescriptor: Exit. Error = 0x%0X.\n",
+      "UevFilter.LookupWellKnownSid: Entry\n",
+      "UevFilter.LookupWellKnownSid: Failed to allocate buffer for SID. Error = 0x%0X.\n",
+      "UevFilter.LookupWellKnownSid: Failed to get SID size. Error = 0x%0X.\n",
+      "UevFilter.LookupWellKnownSid: Failed to get well known SID. Error = 0x%0X.\n",
+      "UevFilter.LookupWellKnownSid: Exit. Error = 0x%0X.\n"
+    ],
+    "name": "GetCompletionPortSecurityDescriptor",
+    "prototype": "",
+    "rank_score": 1953,
+    "size": 736,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ComPortClose",
+    "ea": "0x14000a008",
+    "function_file": "functions/14000a008_ComPortClose.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseClientPort",
+      "FLTMGR!FltCloseCommunicationPort",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "UevFilter.ComPort: Closing client port\n",
+      "UevFilter.ComPortClose: Entry\n",
+      "UevFilter.ComportClose: Exit\n"
+    ],
+    "name": "ComPortClose",
+    "prototype": "",
+    "rank_score": 1535,
+    "size": 272,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PortDisconnectHandler",
+    "ea": "0x14000a770",
+    "function_file": "functions/14000a770_PortDisconnectHandler.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseClientPort",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "UevFilter.ComPort: Closing client port\n"
+    ],
+    "name": "PortDisconnectHandler",
+    "prototype": "void __stdcall(PVOID ConnectionCookie)",
+    "rank_score": 1463,
+    "size": 211,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "GetSessionIdFromProcessId",
+    "ea": "0x14000aec4",
+    "function_file": "functions/14000aec4_GetSessionIdFromProcessId.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenProcess",
+      "ntoskrnl!ZwOpenProcessTokenEx",
+      "ntoskrnl!ZwQueryInformationToken"
+    ],
+    "matched_strings": [
+      "UevFilter.GetSessionIdFromProcessId: Entry\n",
+      "UevFilter.GetSessionIdFromProcessId: Failed to open process handle. Error = 0x%0X.\n",
+      "UevFilter.GetSessionIdFromProcessId: Failed to open process token. Error = 0x%0X.\n",
+      "UevFilter.GetSessionIdFromProcessId: Failed to get session ID. Error = 0x%0X.\n",
+      "UevFilter.GetSessionIdFromProcessId: Session ID = %d.\n",
+      "UevFilter.GetSessionIdFromProcessId: Exit. Error = 0x%0X.\n"
+    ],
+    "name": "GetSessionIdFromProcessId",
+    "prototype": "",
+    "rank_score": 1258,
+    "size": 369,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ComPortCreate",
+    "ea": "0x14000a120",
+    "function_file": "functions/14000a120_ComPortCreate.md",
+    "matched_imports": [
+      "FLTMGR!FltBuildDefaultSecurityDescriptor",
+      "FLTMGR!FltCreateCommunicationPort",
+      "FLTMGR!FltFreeSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "UevFilter.ComPortCreate: Entry\n",
+      "UevFilter.ComPortCreate: Failed building security descriptor, error = 0x%X\n",
+      "\\UevConnectCreateNotifyPort",
+      "UevFilter.ComPortCreate: Failed creating communication port, error = 0x%X\n",
+      "UevFilter.ComPortCreate: Exit, retStatus = 0x%X\n"
+    ],
+    "name": "ComPortCreate",
+    "prototype": "",
+    "rank_score": 1257,
+    "size": 347,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ReadRegistryValue",
+    "ea": "0x14000b908",
+    "function_file": "functions/14000b908_ReadRegistryValue.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "UevFilter.ReadRegistryValue: Entry\n",
+      "UevFilter.ReadRegistryValue: Invalid parameter specified\n",
+      "UevFilter.ReadRegistryValue: Exit, status = 0x%X\n"
+    ],
+    "name": "ReadRegistryValue",
+    "prototype": "",
+    "rank_score": 1170,
+    "size": 507,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "IsProcessListedUnderRegistryKey",
+    "ea": "0x1400016ac",
+    "function_file": "functions/1400016ac_IsProcessListedUnderRegistryKey.md",
+    "matched_imports": [
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "UevFilter.IsMonitoredProcess: Invalid parameter: pRegistryKey parameter is NULL.\n"
+    ],
+    "name": "IsProcessListedUnderRegistryKey",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING Source, PCUNICODE_STRING SourceString)",
+    "rank_score": 1093,
+    "size": 514,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ComPortInit",
+    "ea": "0x14000a284",
+    "function_file": "functions/14000a284_ComPortInit.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "UevFilter.ComPortInit: Entry\n",
+      "UevFilter.ComPortInit: Failed resourse initialization, status = 0x%X\n",
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\UEV\\Agent\\Configuration",
+      "UevFilter.ComPortInit: Send message timeout not configured, using default value\n",
+      "UevFilter.ComPortInit: Setting send message timeout to 0x%X ms\n",
+      "UevFilter.ComPortInit: Setting send message to not timeout\n",
+      "UevFilter.ComPortInit: Exit, retStatus = 0x%X\n"
+    ],
+    "name": "ComPortInit",
+    "prototype": "",
+    "rank_score": 918,
+    "size": 313,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ProcessEventUninitialize",
+    "ea": "0x14000b34c",
+    "function_file": "functions/14000b34c_ProcessEventUninitialize.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseCommunicationPort",
+      "ntoskrnl!KeAcquireGuardedMutex",
+      "ntoskrnl!KeReleaseGuardedMutex"
+    ],
+    "matched_strings": [
+      "UevFilter.CloseProcessEventCompletionPort: Entry\n",
+      "UevFilter.CloseProcessEventCompletionPort: Exit\n"
+    ],
+    "name": "ProcessEventUninitialize",
+    "prototype": "",
+    "rank_score": 895,
+    "size": 197,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IsClientSessionValid",
+    "ea": "0x14000a55c",
+    "function_file": "functions/14000a55c_IsClientSessionValid.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenProcessTokenEx",
+      "ntoskrnl!ZwQueryInformationToken"
+    ],
+    "matched_strings": [
+      "UevFilter.IsClientSessionValid: Failed to open process token, status = 0x%X\n"
+    ],
+    "name": "IsClientSessionValid",
+    "prototype": "",
+    "rank_score": 856,
+    "size": 250,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SendProcessEventMessage",
+    "ea": "0x14000b418",
+    "function_file": "functions/14000b418_SendProcessEventMessage.md",
+    "matched_imports": [
+      "FLTMGR!FltSendMessage",
+      "ntoskrnl!KeAcquireGuardedMutex",
+      "ntoskrnl!KeReleaseGuardedMutex"
+    ],
+    "matched_strings": [],
+    "name": "SendProcessEventMessage",
+    "prototype": "",
+    "rank_score": 820,
+    "size": 410,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IsSupportedVersion",
+    "ea": "0x14000b03c",
+    "function_file": "functions/14000b03c_IsSupportedVersion.md",
+    "matched_imports": [
+      "ntoskrnl!RtlVerifyVersionInfo",
+      "ntoskrnl!VerSetConditionMask"
+    ],
+    "matched_strings": [],
+    "name": "IsSupportedVersion",
+    "prototype": "",
+    "rank_score": 807,
+    "size": 276,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "UnInitializeDriver",
+    "ea": "0x14000b614",
+    "function_file": "functions/14000b614_UnInitializeDriver.md",
+    "matched_imports": [
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!PsSetCreateProcessNotifyRoutineEx"
+    ],
+    "matched_strings": [
+      "UevFilter.ComPortUnInit: Entry\n",
+      "UevFilter.ComPortUnInit: Failed resourse deletion, status = 0x%X\n",
+      "UevFilter.ComPortUnInit: Exit\n"
+    ],
+    "name": "UnInitializeDriver",
+    "prototype": "",
+    "rank_score": 750,
+    "size": 282,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "PortConnectHandler_0",
+    "ea": "0x14000b160",
+    "function_file": "functions/14000b160_PortConnectHandler_0.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireGuardedMutex",
+      "ntoskrnl!KeReleaseGuardedMutex",
+      "ntoskrnl!PsGetCurrentProcessId"
+    ],
+    "matched_strings": [
+      "UevFilter.PortConnectHandler: Session ID %d already exists in table.\n"
+    ],
+    "name": "PortConnectHandler_0",
+    "prototype": "NTSTATUS __stdcall(PFLT_PORT ClientPort, PVOID ServerPortCookie, PVOID ConnectionContext, ULONG SizeOfContext, PVOID *ConnectionPortCookie)",
+    "rank_score": 670,
+    "size": 281,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CreateProcessEventCompletionPort",
+    "ea": "0x14000c078",
+    "function_file": "functions/14000c078_CreateProcessEventCompletionPort.md",
+    "matched_imports": [
+      "FLTMGR!FltCreateCommunicationPort",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "UevFilter.CreateProcessEventCompletionPort: Entry\n",
+      "UevFilter.CreateProcessEventCompletionPort: Failed building security descriptor. Error = 0x%0X.\n",
+      "UevFilter.CreateProcessEventCompletionPort: Failed creating communication port. Error = 0x%0X.\n",
+      "UevFilter.CreateProcessEventCompletionPort: Exit. Error = 0x%0X.\n"
+    ],
+    "name": "CreateProcessEventCompletionPort",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 315,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetMaxConnections",
+    "ea": "0x14000c4a4",
+    "function_file": "functions/14000c4a4_GetMaxConnections.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\UEV\\Agent\\Configuration",
+      "UevFilter.GetMaxConnections: Max connections not configured, using default value\n"
+    ],
+    "name": "GetMaxConnections",
+    "prototype": "",
+    "rank_score": 516,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 21,
+    "demangled": "DbgTraceFrmt",
+    "ea": "0x1400011b0",
+    "function_file": "functions/1400011b0_DbgTraceFrmt.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!_vsnprintf"
+    ],
+    "matched_strings": [],
+    "name": "DbgTraceFrmt",
+    "prototype": "",
+    "rank_score": 445,
+    "size": 225,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 13,
+    "demangled": "DbgTraceFrmtErr",
+    "ea": "0x140001298",
+    "function_file": "functions/140001298_DbgTraceFrmtErr.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!_vsnprintf"
+    ],
+    "matched_strings": [],
+    "name": "DbgTraceFrmtErr",
+    "prototype": "__int64 __fastcall(char *Format)",
+    "rank_score": 437,
+    "size": 217,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ProcessCreateNotification",
+    "ea": "0x14000aca0",
+    "function_file": "functions/14000aca0_ProcessCreateNotification.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [
+      "UevFilter.ProcessCreateNotification: Entry\n",
+      "UevFilter.ProcessCreateNotification: Process name = %wZ\n",
+      "UevFilter.ProcessCreateNotification: Failed to obtain the process name, status = 0x%X\n",
+      "UevFilter.ProcessCreateDestroyNotification: Exit\n"
+    ],
+    "name": "ProcessCreateNotification",
+    "prototype": "",
+    "rank_score": 401,
+    "size": 320,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14000c614",
+    "function_file": "functions/14000c614_DriverEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltRegisterFilter"
+    ],
+    "matched_strings": [
+      "UevFilter.DriverEntry: ComPort initialization failed, status = 0x%X\n",
+      "UevFilter.DriverEntry: Communication Port creation failed, status = 0x%X\n",
+      "UevFilter.DriverEntry: Failed to create process event port. status = 0x%X\n"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 365,
+    "size": 346,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ProcessEventInitialize",
+    "ea": "0x14000c55c",
+    "function_file": "functions/14000c55c_ProcessEventInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeGuardedMutex"
+    ],
+    "matched_strings": [
+      "UevFilter.ProcessEventInitialize: Failed to allocate completion port. Status = 0x%0X.\n"
+    ],
+    "name": "ProcessEventInitialize",
+    "prototype": "",
+    "rank_score": 270,
+    "size": 176,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 36,
+    "demangled": "DbgTrace",
+    "ea": "0x140001118",
+    "function_file": "functions/140001118_DbgTrace.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "DbgTrace",
+    "prototype": "",
+    "rank_score": 247,
+    "size": 71,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "DbgTraceErr",
+    "ea": "0x140001168",
+    "function_file": "functions/140001168_DbgTraceErr.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "DbgTraceErr",
+    "prototype": "__int64 __fastcall(PCSTR Format)",
+    "rank_score": 231,
+    "size": 63,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140001030",
+    "function_file": "functions/140001030_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 89,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HookProcessNotify",
+    "ea": "0x14000ac48",
+    "function_file": "functions/14000ac48_HookProcessNotify.md",
+    "matched_imports": [
+      "ntoskrnl!PsSetCreateProcessNotifyRoutineEx"
+    ],
+    "matched_strings": [],
+    "name": "HookProcessNotify",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 80,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "McGenEventUnregister_EtwUnregister",
+    "ea": "0x1400014c8",
+    "function_file": "functions/1400014c8_McGenEventUnregister_EtwUnregister.md",
+    "matched_imports": [
+      "ntoskrnl!EtwUnregister"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventUnregister_EtwUnregister",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 49,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "McGenEventRegister_EtwRegister",
+    "ea": "0x140001488",
+    "function_file": "functions/140001488_McGenEventRegister_EtwRegister.md",
+    "matched_imports": [
+      "ntoskrnl!EtwRegister"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventRegister_EtwRegister",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 57,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "FreeGenericBuffer",
+    "ea": "0x14000164c",
+    "function_file": "functions/14000164c_FreeGenericBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "FreeGenericBuffer",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 211,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "AllocateGenericBuffer",
+    "ea": "0x1400015c0",
+    "function_file": "functions/1400015c0_AllocateGenericBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "AllocateGenericBuffer",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetFileNameFromPath",
+    "ea": "0x14000b76c",
+    "function_file": "functions/14000b76c_GetFileNameFromPath.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UevFilter.GetFileNameFromPath: Entry\n",
+      "UevFilter.GetFileNameFromPath: Invalid file name.\n",
+      "UevFilter.GetFileNameFromPath: Invalid parameter specified\n",
+      "UevFilter.GetProcessNameFromPath: Exit, retStatus = 0x%X\n"
+    ],
+    "name": "GetFileNameFromPath",
+    "prototype": "",
+    "rank_score": 166,
+    "size": 225,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "ReadRegistryDword",
+    "ea": "0x14000b854",
+    "function_file": "functions/14000b854_ReadRegistryDword.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UevFilter.ReadRegistryDword: Entry\n",
+      "UevFilter.ReadRegistryDword: Invalid parameter specified\n",
+      "UevFilter.ReadRegistryDword: Exit, status = 0x%X\n"
+    ],
+    "name": "ReadRegistryDword",
+    "prototype": "",
+    "rank_score": 140,
+    "size": 171,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RemoveFilterHashTableEntry",
+    "ea": "0x14000ab5c",
+    "function_file": "functions/14000ab5c_RemoveFilterHashTableEntry.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UevFilter.RemoveHandleFromHashTable: Entry\n",
+      "UevFilter.RemoveHandleFromHashTable: Exit\n"
+    ],
+    "name": "RemoveFilterHashTableEntry",
+    "prototype": "",
+    "rank_score": 87,
+    "size": 227,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400018fc",
+    "function_file": "functions/1400018fc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14000c010",
+    "function_file": "functions/14000c010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140001a30",
+    "function_file": "functions/140001a30_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 19,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140001a70",
+    "function_file": "functions/140001a70_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ProcessNotification",
+    "ea": "0x14000adf0",
+    "function_file": "functions/14000adf0_ProcessNotification.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ProcessNotification",
+    "prototype": "void __stdcall(PEPROCESS Process, HANDLE ProcessId, PPS_CREATE_NOTIFY_INFO CreateInfo)",
+    "rank_score": 14,
+    "size": 86,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetDebugLevel",
+    "ea": "0x14000b734",
+    "function_file": "functions/14000b734_GetDebugLevel.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetDebugLevel",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 50,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14000c044",
+    "function_file": "functions/14000c044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140001aa0",
+    "function_file": "functions/140001aa0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "memset",
+    "ea": "0x140001b40",
+    "function_file": "functions/140001b40_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 10,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "FreeFilterHashTable",
+    "ea": "0x14000aad0",
+    "function_file": "functions/14000aad0_FreeFilterHashTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FreeFilterHashTable",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 134,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "McTemplateK0s_EtwWriteTransfer",
+    "ea": "0x140001544",
+    "function_file": "functions/140001544_McTemplateK0s_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0s_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "AddFilterHashTableEntry",
+    "ea": "0x14000a84c",
+    "function_file": "functions/14000a84c_AddFilterHashTableEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AddFilterHashTableEntry",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "AllocateFilterHashTable",
+    "ea": "0x14000a900",
+    "function_file": "functions/14000a900_AllocateFilterHashTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AllocateFilterHashTable",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "FindKeyInFilterHashTable",
+    "ea": "0x14000a994",
+    "function_file": "functions/14000a994_FindKeyInFilterHashTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FindKeyInFilterHashTable",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 150,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "FindTableEntryInFilterHashTable",
+    "ea": "0x14000aa30",
+    "function_file": "functions/14000aa30_FindTableEntryInFilterHashTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FindTableEntryInFilterHashTable",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0_EtwWriteTransfer",
+    "ea": "0x140001500",
+    "function_file": "functions/140001500_McTemplateK0_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0hzr0q_EtwWriteTransfer",
+    "ea": "0x140001090",
+    "function_file": "functions/140001090_McTemplateK0hzr0q_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0hzr0q_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140001380",
+    "function_file": "functions/140001380_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__cpu_features_init",
+    "ea": "0x140001980",
+    "function_file": "functions/140001980_cpu_features_init.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__cpu_features_init",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__memset_repmovs",
+    "ea": "0x140001c80",
+    "function_file": "functions/140001c80_memset_repmovs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_repmovs",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__memset_query",
+    "ea": "0x140001d00",
+    "function_file": "functions/140001d00_memset_query.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_query",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__memset_spec_ermsb_repmovsb",
+    "ea": "0x140001ec0",
+    "function_file": "functions/140001ec0_memset_spec_ermsb_repmovsb.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__memset_spec_ermsb_repmovsb",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 51,
+    "tags": []
+  }
+]

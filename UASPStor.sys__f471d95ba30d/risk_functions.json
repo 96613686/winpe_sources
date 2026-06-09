@@ -1,0 +1,1572 @@
+[
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "UaspFreeResources",
+    "ea": "0x140003618",
+    "function_file": "functions/140003618_UaspFreeResources.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExWaitForRundownProtectionRelease",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "UsbdHandleInfo->PendingDelete should be set here UsbdHandleInfo 0x%p\n"
+    ],
+    "name": "UaspFreeResources",
+    "prototype": "",
+    "rank_score": 5868,
+    "size": 1387,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "StatusPipeCompletion",
+    "ea": "0x14000a7bc",
+    "function_file": "functions/14000a7bc_StatusPipeCompletion.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "StatusPipeCompletion",
+    "prototype": "",
+    "rank_score": 5047,
+    "size": 3339,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "QueueCancel",
+    "ea": "0x14000785c",
+    "function_file": "functions/14000785c_QueueCancel.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "QueueCancel",
+    "prototype": "",
+    "rank_score": 3217,
+    "size": 1118,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "SenseIUCompletion",
+    "ea": "0x140008720",
+    "function_file": "functions/140008720_SenseIUCompletion.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!IoCancelIrp"
+    ],
+    "matched_strings": [],
+    "name": "SenseIUCompletion",
+    "prototype": "",
+    "rank_score": 3046,
+    "size": 1740,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "USBDInternal_QueryUsbVerifierSettings",
+    "ea": "0x14000c9f0",
+    "function_file": "functions/14000c9f0_USBDInternal_QueryUsbVerifierSettings.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!MmIsDriverVerifying",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "IoOpenDriverRegistryKey",
+      "IoOpenDriverRegistryKey failed with 0x%x\n",
+      "RtlQueryRegistrySettings failed, ignoring this error0x%x\n"
+    ],
+    "name": "USBDInternal_QueryUsbVerifierSettings",
+    "prototype": "",
+    "rank_score": 2691,
+    "size": 881,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "USBD_CreateHandle",
+    "ea": "0x14000cd68",
+    "function_file": "functions/14000cd68_USBD_CreateHandle.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!RtlGetVersion"
+    ],
+    "matched_strings": [
+      "USBD_CreateHandle Successful: usbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBD_CreateHandle",
+    "prototype": "NTSTATUS __stdcall(PDEVICE_OBJECT DeviceObject, PDEVICE_OBJECT TargetDeviceObject, ULONG USBDClientContractVersion, ULONG PoolTag, USBD_HANDLE *USBDHandle)",
+    "rank_score": 2465,
+    "size": 1049,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "UaspStartIo",
+    "ea": "0x140002320",
+    "function_file": "functions/140002320_UaspStartIo.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory",
+      "storport!StorPortNotification"
+    ],
+    "matched_strings": [],
+    "name": "UaspStartIo",
+    "prototype": "",
+    "rank_score": 2444,
+    "size": 1596,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "UaspQueueWorkItem",
+    "ea": "0x140005744",
+    "function_file": "functions/140005744_UaspQueueWorkItem.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "storport!StorPortNotification"
+    ],
+    "matched_strings": [],
+    "name": "UaspQueueWorkItem",
+    "prototype": "",
+    "rank_score": 1814,
+    "size": 504,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "UaspDetectPortableWorkspace",
+    "ea": "0x140005490",
+    "function_file": "functions/140005490_UaspDetectPortableWorkspace.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!IoGetDeviceProperty",
+      "ntoskrnl!PoDisableSleepStates",
+      "ntoskrnl!RtlCheckPortableOperatingSystem",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!RtlSetPortableOperatingSystem",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Enum\\HTREE\\ROOT\\0",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Policies\\Microsoft\\PortableOperatingSystem"
+    ],
+    "name": "UaspDetectPortableWorkspace",
+    "prototype": "",
+    "rank_score": 1710,
+    "size": 683,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "USBD_UrbAllocate",
+    "ea": "0x14000d370",
+    "function_file": "functions/14000d370_USBD_UrbAllocate.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "UsbdHandleInfo->PendingDelete should be set here UsbdHandleInfo 0x%p\n",
+      "UsbdHandleInfo->PendingDelete is set, UsbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBD_UrbAllocate",
+    "prototype": "NTSTATUS __stdcall(USBD_HANDLE USBDHandle, PURB *Urb)",
+    "rank_score": 1688,
+    "size": 487,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "DataCompletion",
+    "ea": "0x1400072c0",
+    "function_file": "functions/1400072c0_DataCompletion.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!IoCancelIrp"
+    ],
+    "matched_strings": [],
+    "name": "DataCompletion",
+    "prototype": "",
+    "rank_score": 1634,
+    "size": 869,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "UasInitializeDevice",
+    "ea": "0x1400015cc",
+    "function_file": "functions/1400015cc_UasInitializeDevice.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!IoAllocateWorkItem",
+      "storport!StorPortExtendedFunction"
+    ],
+    "matched_strings": [],
+    "name": "UasInitializeDevice",
+    "prototype": "__int64 __fastcall(__int64, struct _DEVICE_OBJECT *, struct _DEVICE_OBJECT *)",
+    "rank_score": 1434,
+    "size": 1022,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "UaspSyncSendUsbRequestNew",
+    "ea": "0x14000607c",
+    "function_file": "functions/14000607c_UaspSyncSendUsbRequestNew.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "UaspSyncSendUsbRequestNew",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 1418,
+    "size": 368,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "UaspInternalDeviceIoControl",
+    "ea": "0x140005d64",
+    "function_file": "functions/140005d64_UaspInternalDeviceIoControl.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "UaspInternalDeviceIoControl",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, __int64, int)",
+    "rank_score": 1415,
+    "size": 326,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBDInternal_BuildAndSendQueryInterfaceSynchronously",
+    "ea": "0x14000c550",
+    "function_file": "functions/14000c550_USBDInternal_BuildAndSendQueryInterfaceSynchronously.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBDInternal_BuildAndSendQueryInterfaceSynchronously",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PDEVICE_OBJECT)",
+    "rank_score": 1414,
+    "size": 350,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "USBDInternal_BuildandSendIoctlSynchronously",
+    "ea": "0x14000c8a4",
+    "function_file": "functions/14000c8a4_USBDInternal_BuildandSendIoctlSynchronously.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "USBDInternal_BuildandSendIoctlSynchronously",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PDEVICE_OBJECT)",
+    "rank_score": 1414,
+    "size": 325,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBDInternal_BuildServicePath",
+    "ea": "0x14000c6b4",
+    "function_file": "functions/14000c6b4_USBDInternal_BuildServicePath.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [
+      "Couldnt allocate servicePath of size %d\n"
+    ],
+    "name": "USBDInternal_BuildServicePath",
+    "prototype": "",
+    "rank_score": 1267,
+    "size": 490,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "USBD_QueryUsbCapability",
+    "ea": "0x14000d188",
+    "function_file": "functions/14000d188_USBD_QueryUsbCapability.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [
+      "OutputBuffer must be NULL for GUID_USB_CAPABILITY_DEVICE_CONNECTION_HIGH_SPEED_COMPATIBLE\n"
+    ],
+    "name": "USBD_QueryUsbCapability",
+    "prototype": "NTSTATUS __stdcall(USBD_HANDLE USBDHandle, const GUID *CapabilityType, ULONG OutputBufferLength, PUCHAR OutputBuffer, PULONG ResultLength)",
+    "rank_score": 1257,
+    "size": 481,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "UaspCompleteWorkItem",
+    "ea": "0x140005358",
+    "function_file": "functions/140005358_UaspCompleteWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "storport!StorPortNotification"
+    ],
+    "matched_strings": [],
+    "name": "UaspCompleteWorkItem",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1218,
+    "size": 304,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UaspGetBusInterface",
+    "ea": "0x14000678c",
+    "function_file": "functions/14000678c_UaspGetBusInterface.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoSetCompletionRoutineEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "UaspGetBusInterface",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 1215,
+    "size": 314,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UaspGetMaximumTransferLength",
+    "ea": "0x140001b64",
+    "function_file": "functions/140001b64_UaspGetMaximumTransferLength.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "UaspGetMaximumTransferLength",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 1215,
+    "size": 284,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "InitializeQueue",
+    "ea": "0x14000762c",
+    "function_file": "functions/14000762c_InitializeQueue.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "InitializeQueue",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1207,
+    "size": 554,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ReadyIUCompletion",
+    "ea": "0x14000a450",
+    "function_file": "functions/14000a450_ReadyIUCompletion.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault"
+    ],
+    "matched_strings": [
+      "ReadReadyIU",
+      "WriteReadyIU"
+    ],
+    "name": "ReadyIUCompletion",
+    "prototype": "",
+    "rank_score": 1126,
+    "size": 870,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ResponseIUCompletion",
+    "ea": "0x140008430",
+    "function_file": "functions/140008430_ResponseIUCompletion.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault"
+    ],
+    "matched_strings": [],
+    "name": "ResponseIUCompletion",
+    "prototype": "",
+    "rank_score": 1043,
+    "size": 740,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "TaskIUCompletion",
+    "ea": "0x140008e00",
+    "function_file": "functions/140008e00_TaskIUCompletion.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault"
+    ],
+    "matched_strings": [],
+    "name": "TaskIUCompletion",
+    "prototype": "",
+    "rank_score": 1043,
+    "size": 658,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CommandIUCompletion",
+    "ea": "0x140007010",
+    "function_file": "functions/140007010_CommandIUCompletion.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault"
+    ],
+    "matched_strings": [],
+    "name": "CommandIUCompletion",
+    "prototype": "",
+    "rank_score": 1032,
+    "size": 668,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IssueCommandSS",
+    "ea": "0x14000be7c",
+    "function_file": "functions/14000be7c_IssueCommandSS.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!IoCancelIrp",
+      "storport!StorPortExtendedFunction"
+    ],
+    "matched_strings": [],
+    "name": "IssueCommandSS",
+    "prototype": "",
+    "rank_score": 1024,
+    "size": 1104,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QueueCommandSS",
+    "ea": "0x14000c368",
+    "function_file": "functions/14000c368_QueueCommandSS.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "storport!StorPortExtendedFunction",
+      "storport!StorPortNotification"
+    ],
+    "matched_strings": [],
+    "name": "QueueCommandSS",
+    "prototype": "",
+    "rank_score": 1020,
+    "size": 482,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "UaspSelectConfiguration",
+    "ea": "0x140002130",
+    "function_file": "functions/140002130_UaspSelectConfiguration.md",
+    "matched_imports": [
+      "USBD!USBD_CreateConfigurationRequestEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "UaspSelectConfiguration",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 1018,
+    "size": 488,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "QueueFindNextFree",
+    "ea": "0x140007cc0",
+    "function_file": "functions/140007cc0_QueueFindNextFree.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "QueueFindNextFree",
+    "prototype": "",
+    "rank_score": 1010,
+    "size": 542,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "UaspGetDescriptor",
+    "ea": "0x140005944",
+    "function_file": "functions/140005944_UaspGetDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "UaspGetDescriptor",
+    "prototype": "__int64 __fastcall(__int64, __int64, char, char, __int16, int, unsigned int, PVOID *)",
+    "rank_score": 1006,
+    "size": 351,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "USBD_UrbFree",
+    "ea": "0x14000d560",
+    "function_file": "functions/14000d560_USBD_UrbFree.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "UsbdHandleInfo->PendingDelete should be set here UsbdHandleInfo 0x%p\n"
+    ],
+    "name": "USBD_UrbFree",
+    "prototype": "void __stdcall(USBD_HANDLE USBDHandle, PURB Urb)",
+    "rank_score": 845,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "QueueUpdateCompletion",
+    "ea": "0x1400081dc",
+    "function_file": "functions/1400081dc_QueueUpdateCompletion.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!KeSetEvent",
+      "storport!StorPortNotification"
+    ],
+    "matched_strings": [],
+    "name": "QueueUpdateCompletion",
+    "prototype": "",
+    "rank_score": 831,
+    "size": 358,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IssueDataTransferRequest",
+    "ea": "0x140009fe0",
+    "function_file": "functions/140009fe0_IssueDataTransferRequest.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "storport!StorPortExtendedFunction"
+    ],
+    "matched_strings": [],
+    "name": "IssueDataTransferRequest",
+    "prototype": "",
+    "rank_score": 819,
+    "size": 583,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QueueCommandHS",
+    "ea": "0x14000a2b8",
+    "function_file": "functions/14000a2b8_QueueCommandHS.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "storport!StorPortExtendedFunction",
+      "storport!StorPortNotification"
+    ],
+    "matched_strings": [],
+    "name": "QueueCommandHS",
+    "prototype": "",
+    "rank_score": 818,
+    "size": 387,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CancelReadyIrp",
+    "ea": "0x140009a88",
+    "function_file": "functions/140009a88_CancelReadyIrp.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "CancelReadyIrp",
+    "prototype": "",
+    "rank_score": 805,
+    "size": 232,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "UaspDumpIssueBulkOrInterruptRequest",
+    "ea": "0x1400019d0",
+    "function_file": "functions/1400019d0_UaspDumpIssueBulkOrInterruptRequest.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "storport!StorPortGetPhysicalAddress"
+    ],
+    "matched_strings": [
+      "UASPSTOR: URB completion. Urb: %p, Status: 0x%lX\n"
+    ],
+    "name": "UaspDumpIssueBulkOrInterruptRequest",
+    "prototype": "",
+    "rank_score": 658,
+    "size": 397,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x140017078",
+    "function_file": "functions/140017078_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlRegisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 353,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CancelStatusIrp",
+    "ea": "0x140009b78",
+    "function_file": "functions/140009b78_CancelStatusIrp.md",
+    "matched_imports": [
+      "ntoskrnl!IoCancelIrp",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "CancelStatusIrp",
+    "prototype": "",
+    "rank_score": 605,
+    "size": 143,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UaspGetStringDescriptors",
+    "ea": "0x140005be0",
+    "function_file": "functions/140005be0_UaspGetStringDescriptors.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "UaspGetStringDescriptors",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 605,
+    "size": 382,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "FreeReservedMDLs",
+    "ea": "0x140005238",
+    "function_file": "functions/140005238_FreeReservedMDLs.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeMdl"
+    ],
+    "matched_strings": [],
+    "name": "FreeReservedMDLs",
+    "prototype": "",
+    "rank_score": 604,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "QueueUpdateTaskCompletion",
+    "ea": "0x140008348",
+    "function_file": "functions/140008348_QueueUpdateTaskCompletion.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "storport!StorPortNotification"
+    ],
+    "matched_strings": [],
+    "name": "QueueUpdateTaskCompletion",
+    "prototype": "",
+    "rank_score": 436,
+    "size": 213,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "UaspAllocatePool",
+    "ea": "0x1400052b8",
+    "function_file": "functions/1400052b8_UaspAllocatePool.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "UaspAllocatePool",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 413,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DumpUninitialize",
+    "ea": "0x140003190",
+    "function_file": "functions/140003190_DumpUninitialize.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "DumpUninitialize",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "QueueReleaseEntry",
+    "ea": "0x140007ee4",
+    "function_file": "functions/140007ee4_QueueReleaseEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "QueueReleaseEntry",
+    "prototype": "",
+    "rank_score": 407,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "UaspGetDescriptors",
+    "ea": "0x140005aac",
+    "function_file": "functions/140005aac_UaspGetDescriptors.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "UaspGetDescriptors",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 406,
+    "size": 302,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_SP",
+    "ea": "0x14000b89c",
+    "function_file": "functions/14000b89c_WPP_RECORDER_SF_SP.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [
+      "PnPRemove"
+    ],
+    "name": "WPP_RECORDER_SF_SP",
+    "prototype": "",
+    "rank_score": 244,
+    "size": 219,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "QueueTaskWorkItem",
+    "ea": "0x140007f80",
+    "function_file": "functions/140007f80_QueueTaskWorkItem.md",
+    "matched_imports": [
+      "storport!StorPortNotification"
+    ],
+    "matched_strings": [],
+    "name": "QueueTaskWorkItem",
+    "prototype": "",
+    "rank_score": 231,
+    "size": 595,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14000301c",
+    "function_file": "functions/14000301c_DriverEntry.md",
+    "matched_imports": [
+      "storport!StorPortInitialize"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 225,
+    "size": 325,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "IssueCommandHS",
+    "ea": "0x140009c10",
+    "function_file": "functions/140009c10_IssueCommandHS.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderLogGetDefault"
+    ],
+    "matched_strings": [],
+    "name": "IssueCommandHS",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 968,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "UaspInitializeTracing",
+    "ea": "0x140003f50",
+    "function_file": "functions/140003f50_UaspInitializeTracing.md",
+    "matched_imports": [
+      "WppRecorder!imp_WppRecorderConfigure"
+    ],
+    "matched_strings": [],
+    "name": "UaspInitializeTracing",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 218,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "OpenStreamArray",
+    "ea": "0x140001154",
+    "function_file": "functions/140001154_OpenStreamArray.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "OpenStreamArray",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 576,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "WPP_RECORDER_SF_",
+    "ea": "0x140002964",
+    "function_file": "functions/140002964_WPP_RECORDER_SF.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 185,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "WPP_RECORDER_SF_iD",
+    "ea": "0x140004adc",
+    "function_file": "functions/140004adc_WPP_RECORDER_SF_iD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_iD",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 276,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x1400171e0",
+    "function_file": "functions/1400171e0_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 383,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140004d5c",
+    "function_file": "functions/140004d5c_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x140015850",
+    "function_file": "functions/140015850_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 292,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "WPP_RECORDER_SF_d",
+    "ea": "0x140002a24",
+    "function_file": "functions/140002a24_WPP_RECORDER_SF_d.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_d",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "UaspGetDumpPointers",
+    "ea": "0x140006dc8",
+    "function_file": "functions/140006dc8_UaspGetDumpPointers.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "UaspGetDumpPointers",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 567,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "USBD_SyncCompletionRoutine",
+    "ea": "0x140006050",
+    "function_file": "functions/140006050_USBD_SyncCompletionRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "USBD_SyncCompletionRoutine",
+    "prototype": "IO_COMPLETION_ROUTINE",
+    "rank_score": 210,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "UaspProcessServiceRequest",
+    "ea": "0x140004030",
+    "function_file": "functions/140004030_UaspProcessServiceRequest.md",
+    "matched_imports": [
+      "storport!StorPortExtendedFunction"
+    ],
+    "matched_strings": [],
+    "name": "UaspProcessServiceRequest",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 48,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "IssueBulkRequest",
+    "ea": "0x140001020",
+    "function_file": "functions/140001020_IssueBulkRequest.md",
+    "matched_imports": [
+      "ntoskrnl!IoSetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "IssueBulkRequest",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 302,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "WPP_RECORDER_SF_Di",
+    "ea": "0x140009098",
+    "function_file": "functions/140009098_WPP_RECORDER_SF_Di.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_Di",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 274,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "WPP_RECORDER_SF_i",
+    "ea": "0x1400098a0",
+    "function_file": "functions/1400098a0_WPP_RECORDER_SF_i.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_i",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WPP_RECORDER_SF_DiD",
+    "ea": "0x1400091b0",
+    "function_file": "functions/1400091b0_WPP_RECORDER_SF_DiD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_DiD",
+    "prototype": "",
+    "rank_score": 208,
+    "size": 310,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WPP_RECORDER_SF_P",
+    "ea": "0x140002bec",
+    "function_file": "functions/140002bec_WPP_RECORDER_SF_P.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_P",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 231,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WPP_RECORDER_SF_PDDDDDDDDDDD",
+    "ea": "0x140002dd8",
+    "function_file": "functions/140002dd8_WPP_RECORDER_SF_PDDDDDDDDDDD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_PDDDDDDDDDDD",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 574,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WPP_RECORDER_SF_iiD",
+    "ea": "0x14000bd7c",
+    "function_file": "functions/14000bd7c_WPP_RECORDER_SF_iiD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_iiD",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_DD",
+    "ea": "0x14000b4d0",
+    "function_file": "functions/14000b4d0_WPP_RECORDER_SF_DD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_DD",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 196,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_RECORDER_SF_dD",
+    "ea": "0x14000492c",
+    "function_file": "functions/14000492c_WPP_RECORDER_SF_dD.md",
+    "matched_imports": [
+      "WppRecorder!WppAutoLogTrace"
+    ],
+    "matched_strings": [],
+    "name": "WPP_RECORDER_SF_dD",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 209,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 46,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x14000d830",
+    "function_file": "functions/14000d830_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14000d7f0",
+    "function_file": "functions/14000d7f0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 25,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14000d6bc",
+    "function_file": "functions/14000d6bc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140017010",
+    "function_file": "functions/140017010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "memset",
+    "ea": "0x14000dc00",
+    "function_file": "functions/14000dc00_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 19,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x1400156b8",
+    "function_file": "functions/1400156b8_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "UaspParseConfigurationDescriptor",
+    "ea": "0x140001ec8",
+    "function_file": "functions/140001ec8_UaspParseConfigurationDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UaspParseConfigurationDescriptor",
+    "prototype": "char __fastcall(__int64, unsigned __int8 *, _QWORD *, _BYTE *, _BYTE *, _BYTE *, _BYTE *, _DWORD *)",
+    "rank_score": 15,
+    "size": 415,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PipeCompletionRoutine",
+    "ea": "0x1400013a0",
+    "function_file": "functions/1400013a0_PipeCompletionRoutine.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PipeCompletionRoutine",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 95,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140017044",
+    "function_file": "functions/140017044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x14000d860",
+    "function_file": "functions/14000d860_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "memmove",
+    "ea": "0x14000d900",
+    "function_file": "functions/14000d900_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 10,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies",
+    "ea": "0x140015564",
+    "function_file": "functions/140015564_wil_details_EvaluateFeatureDependencies.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 271,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x14001567c",
+    "function_file": "functions/14001567c_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 51,
+    "tags": []
+  }
+]

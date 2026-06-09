@@ -1,0 +1,84 @@
+# wil_details_FeatureStateCache::get_Variant
+
+- ea: `0x14b10`
+- end: `0x14b26`
+- name: `wil_details_FeatureStateCache::get_Variant`
+- size: `22`
+- prototype: ``
+- caller_count: `115`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x1140`
+- `0x12f0`
+- `0x14a0`
+- `0x1620`
+- `0x17a0`
+- `0x1920`
+- `0x1ab0`
+- `0x1c40`
+- `0x1dd0`
+- `0x1f50`
+- `0x20d0`
+- `0x2270`
+- `0x2410`
+- `0x25b0`
+- `0x2740`
+- `0x28d0`
+- `0x2a60`
+- `0x2bf0`
+- `0x2d80`
+- `0x2f10`
+- `0x30a0`
+- `0x3230`
+- `0x33c0`
+- `0x3550`
+- `0x36e0`
+- `0x3870`
+- `0x3a00`
+- `0x3b90`
+- `0x3d40`
+- `0x3ef0`
+- `0x40a0`
+- `0x4250`
+- `0x4400`
+- `0x45b0`
+- `0x4760`
+- `0x4910`
+- `0x4ac0`
+- `0x4c70`
+- `0x4e20`
+- `0x4fd0`
+- `0x5180`
+- `0x5330`
+- `0x54e0`
+- `0x5690`
+- `0x5840`
+- `0x59f0`
+- `0x5b80`
+- `0x5d00`
+- `0x5e90`
+- `0x6020`
+
+## callees
+
+- `0x15860`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x14b10  ldarg.0
+0x14b11  ldflda   valuetype AnonymousStructure wil_details_FeatureStateCache::Anonymous
+0x14b16  ldflda   valuetype AnonymousUnion1 AnonymousStructure::Union
+0x14b1b  ldflda   valuetype AnonymousUnion2 AnonymousUnion1::Union
+0x14b20  call     instance int32 AnonymousUnion2::get_Variant()
+0x14b25  ret
+```

@@ -1,0 +1,357 @@
+[
+  {
+    "import": "FLTMGR!FltBuildDefaultSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000a168",
+        "from_func": "0x14000a120",
+        "from_func_name": "ComPortCreate",
+        "import": "FLTMGR!FltBuildDefaultSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000a168",
+        "from_func": "0x14000a120",
+        "from_func_name": "ComPortCreate",
+        "import": "FLTMGR!FltBuildDefaultSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "FLTMGR!FltCloseCommunicationPort",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000a029",
+        "from_func": "0x14000a008",
+        "from_func_name": "ComPortClose",
+        "import": "FLTMGR!FltCloseCommunicationPort"
+      },
+      {
+        "from_ea": "0x14000b39e",
+        "from_func": "0x14000b34c",
+        "from_func_name": "ProcessEventUninitialize",
+        "import": "FLTMGR!FltCloseCommunicationPort"
+      },
+      {
+        "from_ea": "0x14000a029",
+        "from_func": "0x14000a008",
+        "from_func_name": "ComPortClose",
+        "import": "FLTMGR!FltCloseCommunicationPort"
+      },
+      {
+        "from_ea": "0x14000b39e",
+        "from_func": "0x14000b34c",
+        "from_func_name": "ProcessEventUninitialize",
+        "import": "FLTMGR!FltCloseCommunicationPort"
+      }
+    ]
+  },
+  {
+    "import": "FLTMGR!FltCreateCommunicationPort",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000a21d",
+        "from_func": "0x14000a120",
+        "from_func_name": "ComPortCreate",
+        "import": "FLTMGR!FltCreateCommunicationPort"
+      },
+      {
+        "from_ea": "0x14000c15a",
+        "from_func": "0x14000c078",
+        "from_func_name": "CreateProcessEventCompletionPort",
+        "import": "FLTMGR!FltCreateCommunicationPort"
+      },
+      {
+        "from_ea": "0x14000a21d",
+        "from_func": "0x14000a120",
+        "from_func_name": "ComPortCreate",
+        "import": "FLTMGR!FltCreateCommunicationPort"
+      },
+      {
+        "from_ea": "0x14000c15a",
+        "from_func": "0x14000c078",
+        "from_func_name": "CreateProcessEventCompletionPort",
+        "import": "FLTMGR!FltCreateCommunicationPort"
+      }
+    ]
+  },
+  {
+    "import": "FLTMGR!FltFreeSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x14000a24f",
+        "from_func": "0x14000a120",
+        "from_func_name": "ComPortCreate",
+        "import": "FLTMGR!FltFreeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000bb1e",
+        "from_func": "0x14000a120",
+        "from_func_name": "ComPortCreate",
+        "import": "FLTMGR!FltFreeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x140009348",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "FLTMGR!FltFreeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000a24f",
+        "from_func": "0x14000a120",
+        "from_func_name": "ComPortCreate",
+        "import": "FLTMGR!FltFreeSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000bb1e",
+        "from_func": "0x14000a120",
+        "from_func_name": "ComPortCreate",
+        "import": "FLTMGR!FltFreeSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ksecdd!SecLookupWellKnownSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c275",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ksecdd!SecLookupWellKnownSid"
+      },
+      {
+        "from_ea": "0x14000c2c6",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ksecdd!SecLookupWellKnownSid"
+      },
+      {
+        "from_ea": "0x140009334",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ksecdd!SecLookupWellKnownSid"
+      },
+      {
+        "from_ea": "0x14000c275",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ksecdd!SecLookupWellKnownSid"
+      },
+      {
+        "from_ea": "0x14000c2c6",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ksecdd!SecLookupWellKnownSid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsGetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000b19d",
+        "from_func": "0x14000b160",
+        "from_func_name": "PortConnectHandler_0",
+        "import": "ntoskrnl!PsGetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14000b19d",
+        "from_func": "0x14000b160",
+        "from_func_name": "PortConnectHandler_0",
+        "import": "ntoskrnl!PsGetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsSetCreateProcessNotifyRoutineEx",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000ac6d",
+        "from_func": "0x14000ac48",
+        "from_func_name": "HookProcessNotify",
+        "import": "ntoskrnl!PsSetCreateProcessNotifyRoutineEx"
+      },
+      {
+        "from_ea": "0x14000b661",
+        "from_func": "0x14000b614",
+        "from_func_name": "UnInitializeDriver",
+        "import": "ntoskrnl!PsSetCreateProcessNotifyRoutineEx"
+      },
+      {
+        "from_ea": "0x14000ac6d",
+        "from_func": "0x14000ac48",
+        "from_func_name": "HookProcessNotify",
+        "import": "ntoskrnl!PsSetCreateProcessNotifyRoutineEx"
+      },
+      {
+        "from_ea": "0x14000b661",
+        "from_func": "0x14000b614",
+        "from_func_name": "UnInitializeDriver",
+        "import": "ntoskrnl!PsSetCreateProcessNotifyRoutineEx"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCreateAcl",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c3aa",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      },
+      {
+        "from_ea": "0x14000c3aa",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ntoskrnl!RtlCreateAcl"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCreateSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c379",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000c379",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlLengthSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c30a",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000c30a",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ntoskrnl!RtlLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlSetDaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c422",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000c422",
+        "from_func": "0x14000c1bc",
+        "from_func_name": "GetCompletionPortSecurityDescriptor",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwOpenProcessTokenEx",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000a5a3",
+        "from_func": "0x14000a55c",
+        "from_func_name": "IsClientSessionValid",
+        "import": "ntoskrnl!ZwOpenProcessTokenEx"
+      },
+      {
+        "from_ea": "0x14000af7a",
+        "from_func": "0x14000aec4",
+        "from_func_name": "GetSessionIdFromProcessId",
+        "import": "ntoskrnl!ZwOpenProcessTokenEx"
+      },
+      {
+        "from_ea": "0x14000a5a3",
+        "from_func": "0x14000a55c",
+        "from_func_name": "IsClientSessionValid",
+        "import": "ntoskrnl!ZwOpenProcessTokenEx"
+      },
+      {
+        "from_ea": "0x14000af7a",
+        "from_func": "0x14000aec4",
+        "from_func_name": "GetSessionIdFromProcessId",
+        "import": "ntoskrnl!ZwOpenProcessTokenEx"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000101d",
+        "from_func": "0x14000101d",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "ntoskrnl!__C_specific_handler"
+      }
+    ]
+  }
+]
