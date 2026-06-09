@@ -1,0 +1,220 @@
+# SPCopyFilesAndFolders(ushort const *,ushort const *,SPStringArray &,SPStringArray &,void *,SetupPlatform::IGenericProgress *)
+
+- ea: `0x1803f0f3c`
+- end: `0x1803f1d2a`
+- name: `?SPCopyFilesAndFolders@@YAJPEBG0AEAVSPStringArray@@1PEAXPEAUIGenericProgress@SetupPlatform@@@Z`
+- size: `3566`
+- prototype: `__int64 __fastcall(const char *, const char *, struct SPStringArray *, struct SPStringArray *, void *, struct SetupPlatform::IGenericProgress *)`
+- caller_count: `2`
+- callee_count: `11`
+- tags: `file_ops, installer_update`
+
+## callers
+
+- `0x180288084`
+- `0x1803f1d30`
+
+## callees
+
+- `0x180044810`
+- `0x180057dec`
+- `0x1803f0f3c`
+- `0x1803f2ca0`
+- `0x1804058b0`
+- `0x180405958`
+- `0x180406480`
+- `0x180406640`
+- `0x18040a5a8`
+- `0x18040c6d4`
+- `0x180509010`
+
+## import_xrefs
+
+- `msvcrt!wcsrchr` at `0x1803f1223`
+- `msvcrt!wcsrchr` at `0x1803f1223`
+- `msvcrt!towupper` at `0x1803f1193`
+- `msvcrt!towupper` at `0x1803f11a0`
+- `msvcrt!towupper` at `0x1803f1193`
+- `msvcrt!towupper` at `0x1803f11a0`
+- `KERNEL32!GetProcessHeap` at `0x1803f127d`
+- `KERNEL32!GetProcessHeap` at `0x1803f133a`
+- `KERNEL32!GetProcessHeap` at `0x1803f136a`
+- `KERNEL32!GetProcessHeap` at `0x1803f14be`
+- `KERNEL32!GetProcessHeap` at `0x1803f14e3`
+- `KERNEL32!GetProcessHeap` at `0x1803f1508`
+- `KERNEL32!GetProcessHeap` at `0x1803f1698`
+- `KERNEL32!GetProcessHeap` at `0x1803f16bd`
+- `KERNEL32!GetProcessHeap` at `0x1803f178a`
+- `KERNEL32!GetProcessHeap` at `0x1803f17af`
+- `KERNEL32!GetProcessHeap` at `0x1803f184a`
+- `KERNEL32!GetProcessHeap` at `0x1803f1970`
+- `KERNEL32!GetProcessHeap` at `0x1803f199c`
+- `KERNEL32!GetProcessHeap` at `0x1803f1ab9`
+- `KERNEL32!GetProcessHeap` at `0x1803f1b7c`
+- `KERNEL32!GetProcessHeap` at `0x1803f1c43`
+- `KERNEL32!GetProcessHeap` at `0x1803f1ce7`
+- `KERNEL32!GetProcessHeap` at `0x1803f1d0c`
+- `KERNEL32!GetProcessHeap` at `0x1803f127d`
+- `KERNEL32!GetProcessHeap` at `0x1803f133a`
+- `KERNEL32!GetProcessHeap` at `0x1803f136a`
+- `KERNEL32!GetProcessHeap` at `0x1803f14be`
+- `KERNEL32!GetProcessHeap` at `0x1803f14e3`
+- `KERNEL32!GetProcessHeap` at `0x1803f1508`
+- `KERNEL32!GetProcessHeap` at `0x1803f1698`
+- `KERNEL32!GetProcessHeap` at `0x1803f16bd`
+- `KERNEL32!GetProcessHeap` at `0x1803f178a`
+- `KERNEL32!GetProcessHeap` at `0x1803f17af`
+- `KERNEL32!GetProcessHeap` at `0x1803f184a`
+- `KERNEL32!GetProcessHeap` at `0x1803f1970`
+- `KERNEL32!GetProcessHeap` at `0x1803f199c`
+- `KERNEL32!GetProcessHeap` at `0x1803f1ab9`
+- `KERNEL32!GetProcessHeap` at `0x1803f1b7c`
+- `KERNEL32!GetProcessHeap` at `0x1803f1c43`
+- `KERNEL32!GetProcessHeap` at `0x1803f1ce7`
+- `KERNEL32!GetProcessHeap` at `0x1803f1d0c`
+- `KERNEL32!HeapFree` at `0x1803f128b`
+- `KERNEL32!HeapFree` at `0x1803f1348`
+- `KERNEL32!HeapFree` at `0x1803f1378`
+- `KERNEL32!HeapFree` at `0x1803f14cc`
+- `KERNEL32!HeapFree` at `0x1803f14f1`
+- `KERNEL32!HeapFree` at `0x1803f1516`
+- `KERNEL32!HeapFree` at `0x1803f16a6`
+- `KERNEL32!HeapFree` at `0x1803f16cb`
+- `KERNEL32!HeapFree` at `0x1803f1798`
+- `KERNEL32!HeapFree` at `0x1803f17bd`
+- `KERNEL32!HeapFree` at `0x1803f1858`
+- `KERNEL32!HeapFree` at `0x1803f197e`
+- `KERNEL32!HeapFree` at `0x1803f19aa`
+- `KERNEL32!HeapFree` at `0x1803f1ac7`
+- `KERNEL32!HeapFree` at `0x1803f1b8a`
+- `KERNEL32!HeapFree` at `0x1803f1c51`
+- `KERNEL32!HeapFree` at `0x1803f1cf5`
+- `KERNEL32!HeapFree` at `0x1803f1d1a`
+- `KERNEL32!HeapFree` at `0x1803f128b`
+- `KERNEL32!HeapFree` at `0x1803f1348`
+- `KERNEL32!HeapFree` at `0x1803f1378`
+- `KERNEL32!HeapFree` at `0x1803f14cc`
+- `KERNEL32!HeapFree` at `0x1803f14f1`
+- `KERNEL32!HeapFree` at `0x1803f1516`
+- `KERNEL32!HeapFree` at `0x1803f16a6`
+- `KERNEL32!HeapFree` at `0x1803f16cb`
+- `KERNEL32!HeapFree` at `0x1803f1798`
+- `KERNEL32!HeapFree` at `0x1803f17bd`
+- `KERNEL32!HeapFree` at `0x1803f1858`
+- `KERNEL32!HeapFree` at `0x1803f197e`
+- `KERNEL32!HeapFree` at `0x1803f19aa`
+- `KERNEL32!HeapFree` at `0x1803f1ac7`
+- `KERNEL32!HeapFree` at `0x1803f1b8a`
+- `KERNEL32!HeapFree` at `0x1803f1c51`
+- `KERNEL32!HeapFree` at `0x1803f1cf5`
+- `KERNEL32!HeapFree` at `0x1803f1d1a`
+- `KERNEL32!GetLastError` at `0x1803f0f76`
+- `KERNEL32!GetLastError` at `0x1803f0fe4`
+- `KERNEL32!GetLastError` at `0x1803f13fb`
+- `KERNEL32!GetLastError` at `0x1803f1413`
+- `KERNEL32!GetLastError` at `0x1803f142f`
+- `KERNEL32!GetLastError` at `0x1803f1524`
+- `KERNEL32!GetLastError` at `0x1803f153c`
+- `KERNEL32!GetLastError` at `0x1803f1558`
+- `KERNEL32!GetLastError` at `0x1803f15f7`
+- `KERNEL32!GetLastError` at `0x1803f16e8`
+- `KERNEL32!GetLastError` at `0x1803f17cb`
+- `KERNEL32!GetLastError` at `0x1803f19cb`
+- `KERNEL32!GetLastError` at `0x1803f19e3`
+- `KERNEL32!GetLastError` at `0x1803f19ff`
+- `KERNEL32!GetLastError` at `0x1803f1ada`
+- `KERNEL32!GetLastError` at `0x1803f1ba1`
+- `KERNEL32!GetLastError` at `0x1803f1c68`
+- `KERNEL32!GetLastError` at `0x1803f0f76`
+- `KERNEL32!GetLastError` at `0x1803f0fe4`
+- `KERNEL32!GetLastError` at `0x1803f13fb`
+- `KERNEL32!GetLastError` at `0x1803f1413`
+- `KERNEL32!GetLastError` at `0x1803f142f`
+- `KERNEL32!GetLastError` at `0x1803f1524`
+- `KERNEL32!GetLastError` at `0x1803f153c`
+- `KERNEL32!GetLastError` at `0x1803f1558`
+- `KERNEL32!GetLastError` at `0x1803f15f7`
+- `KERNEL32!GetLastError` at `0x1803f16e8`
+- `KERNEL32!GetLastError` at `0x1803f17cb`
+- `KERNEL32!GetLastError` at `0x1803f19cb`
+- `KERNEL32!GetLastError` at `0x1803f19e3`
+- `KERNEL32!GetLastError` at `0x1803f19ff`
+- `KERNEL32!GetLastError` at `0x1803f1ada`
+- `KERNEL32!GetLastError` at `0x1803f1ba1`
+- `KERNEL32!GetLastError` at `0x1803f1c68`
+- `KERNEL32!CopyFileExW` at `0x1803f12e9`
+- `KERNEL32!CopyFileExW` at `0x1803f12e9`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f0fde`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1045`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f14aa`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f15ec`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f167d`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f176f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f182f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1a9a`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1b61`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1c28`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1ccc`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f0fde`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1045`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f14aa`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f15ec`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f167d`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f176f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f182f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1a9a`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1b61`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1c28`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803f1ccc`
+- `WDSCORE!CurrentIP` at `0x1803f0f7e`
+- `WDSCORE!CurrentIP` at `0x1803f0fec`
+- `WDSCORE!CurrentIP` at `0x1803f1437`
+- `WDSCORE!CurrentIP` at `0x1803f1560`
+- `WDSCORE!CurrentIP` at `0x1803f15ff`
+- `WDSCORE!CurrentIP` at `0x1803f16f1`
+- `WDSCORE!CurrentIP` at `0x1803f17d3`
+- `WDSCORE!CurrentIP` at `0x1803f1a07`
+- `WDSCORE!CurrentIP` at `0x1803f1ae3`
+- `WDSCORE!CurrentIP` at `0x1803f1baa`
+- `WDSCORE!CurrentIP` at `0x1803f1c70`
+- `WDSCORE!CurrentIP` at `0x1803f0f7e`
+- `WDSCORE!CurrentIP` at `0x1803f0fec`
+- `WDSCORE!CurrentIP` at `0x1803f1437`
+- `WDSCORE!CurrentIP` at `0x1803f1560`
+- `WDSCORE!CurrentIP` at `0x1803f15ff`
+- `WDSCORE!CurrentIP` at `0x1803f16f1`
+- `WDSCORE!CurrentIP` at `0x1803f17d3`
+- `WDSCORE!CurrentIP` at `0x1803f1a07`
+- `WDSCORE!CurrentIP` at `0x1803f1ae3`
+- `WDSCORE!CurrentIP` at `0x1803f1baa`
+- `WDSCORE!CurrentIP` at `0x1803f1c70`
+
+## string_xrefs
+
+- `0x1803f17dc`: `SPCopyFilesAndFolders: Cancelled`
+- `0x1803f1c79`: `SPCopyFilesAndFolders: Cancelled`
+- `0x1803f0faf`: `SPCopyFilesAndFolders`
+- `0x1803f147b`: `SPCopyFilesAndFolders`
+- `0x1803f15bd`: `SPCopyFilesAndFolders`
+- `0x1803f164e`: `SPCopyFilesAndFolders`
+- `0x1803f1740`: `SPCopyFilesAndFolders`
+- `0x1803f1800`: `SPCopyFilesAndFolders`
+- `0x1803f1a6b`: `SPCopyFilesAndFolders`
+- `0x1803f1b32`: `SPCopyFilesAndFolders`
+- `0x1803f1bf9`: `SPCopyFilesAndFolders`
+- `0x1803f1c9d`: `SPCopyFilesAndFolders`
+- `0x1803f0f8b`: `SPCopyFilesAndFolders: Number of file names found: %d`
+- `0x1803f171c`: `SPCopyFilesAndFolders: Failed to build source file path %s ++ %s. hr = 0x%x`
+- `0x1803f1bd4`: `SPCopyFilesAndFolders: Failed to build source file path %s ++ %s. hr = 0x%x`
+- `0x1803f0ff9`: `SPCopyFilesAndFolders: Number of folder names found: %d`
+- `0x1803f1457`: `SPCopyFilesAndFolders: Failed to create target parent directory %s. hr = 0x%x`
+- `0x1803f162a`: `SPCopyFilesAndFolders: Failed to build target file path %s ++ %s. hr = 0x%x`
+- `0x1803f1b0d`: `SPCopyFilesAndFolders: Failed to build target file path %s ++ %s. hr = 0x%x`
+- `0x1803f1a40`: `SPCopyFilesAndFolders: Failed while copying folder %s -> %s. hr = 0x%x`
+- `0x1803f1599`: `SPCopyFilesAndFolders: Failed to copy file %s -> %s. hr = 0x%x`
+
+## pseudocode
+
+```c
+
+```

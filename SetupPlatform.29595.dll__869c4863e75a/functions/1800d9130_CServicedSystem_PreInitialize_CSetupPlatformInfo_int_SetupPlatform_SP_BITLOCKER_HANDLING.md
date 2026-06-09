@@ -1,0 +1,198 @@
+# CServicedSystem::PreInitialize(CSetupPlatformInfo *,int,SetupPlatform::SP_BITLOCKER_HANDLING)
+
+- ea: `0x1800d9130`
+- end: `0x1800d9c97`
+- name: `?PreInitialize@CServicedSystem@@MEAAJPEAVCSetupPlatformInfo@@HW4SP_BITLOCKER_HANDLING@SetupPlatform@@@Z`
+- size: `2919`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `6`
+- tags: `registry_config, service_task, installer_update, broker_com_uri`
+
+## callees
+
+- `0x180057dec`
+- `0x1800d39f0`
+- `0x1800d9130`
+- `0x1804299a0`
+- `0x1804bbfa0`
+- `0x180509010`
+
+## import_xrefs
+
+- `KERNEL32!GetLastError` at `0x1800d91f5`
+- `KERNEL32!GetLastError` at `0x1800d94e5`
+- `KERNEL32!GetLastError` at `0x1800d9575`
+- `KERNEL32!GetLastError` at `0x1800d96f0`
+- `KERNEL32!GetLastError` at `0x1800d97aa`
+- `KERNEL32!GetLastError` at `0x1800d9811`
+- `KERNEL32!GetLastError` at `0x1800d988e`
+- `KERNEL32!GetLastError` at `0x1800d9905`
+- `KERNEL32!GetLastError` at `0x1800d996c`
+- `KERNEL32!GetLastError` at `0x1800d99de`
+- `KERNEL32!GetLastError` at `0x1800d9a47`
+- `KERNEL32!GetLastError` at `0x1800d9b15`
+- `KERNEL32!GetLastError` at `0x1800d91f5`
+- `KERNEL32!GetLastError` at `0x1800d94e5`
+- `KERNEL32!GetLastError` at `0x1800d9575`
+- `KERNEL32!GetLastError` at `0x1800d96f0`
+- `KERNEL32!GetLastError` at `0x1800d97aa`
+- `KERNEL32!GetLastError` at `0x1800d9811`
+- `KERNEL32!GetLastError` at `0x1800d988e`
+- `KERNEL32!GetLastError` at `0x1800d9905`
+- `KERNEL32!GetLastError` at `0x1800d996c`
+- `KERNEL32!GetLastError` at `0x1800d99de`
+- `KERNEL32!GetLastError` at `0x1800d9a47`
+- `KERNEL32!GetLastError` at `0x1800d9b15`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800d92f7`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800d9355`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800d93b3`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800d9414`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800d92f7`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800d9355`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800d93b3`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800d9414`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800d92eb`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800d9349`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800d93a7`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800d9408`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800d92eb`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800d9349`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800d93a7`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800d9408`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d91ea`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d932c`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d938a`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d93eb`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d9445`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d91ea`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d932c`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d938a`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d93eb`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800d9445`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d91b2`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d928e`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d92d8`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d933d`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d939b`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d93fc`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d91b2`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d928e`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d92d8`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d933d`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d939b`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800d93fc`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x1800d9272`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x1800d9272`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d92bc`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d9316`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d9374`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d93d5`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d942f`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d92bc`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d9316`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d9374`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d93d5`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1800d942f`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800d9194`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800d94b7`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800d9194`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800d94b7`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800d919d`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800d94c0`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800d919d`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800d94c0`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d92c7`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d9321`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d937f`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d93e0`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d943a`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d92c7`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d9321`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d937f`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d93e0`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800d943a`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d92aa`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d9304`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d9362`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d93c0`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d9421`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d92aa`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d9304`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d9362`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d93c0`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800d9421`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d925f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9543`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d95cf`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d974f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9804`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d986b`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d98e8`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d995f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d99c6`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9a41`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9aa1`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9b05`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9b74`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9bda`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9c40`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d925f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9543`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d95cf`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d974f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9804`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d986b`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d98e8`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d995f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d99c6`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9a41`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9aa1`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9b05`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9b74`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9bda`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800d9c40`
+- `WDSCORE!CurrentIP` at `0x1800d91fd`
+- `WDSCORE!CurrentIP` at `0x1800d94ed`
+- `WDSCORE!CurrentIP` at `0x1800d957d`
+- `WDSCORE!CurrentIP` at `0x1800d96f8`
+- `WDSCORE!CurrentIP` at `0x1800d97b2`
+- `WDSCORE!CurrentIP` at `0x1800d9819`
+- `WDSCORE!CurrentIP` at `0x1800d9896`
+- `WDSCORE!CurrentIP` at `0x1800d990d`
+- `WDSCORE!CurrentIP` at `0x1800d9974`
+- `WDSCORE!CurrentIP` at `0x1800d99e6`
+- `WDSCORE!CurrentIP` at `0x1800d9a4f`
+- `WDSCORE!CurrentIP` at `0x1800d9b1d`
+- `WDSCORE!CurrentIP` at `0x1800d91fd`
+- `WDSCORE!CurrentIP` at `0x1800d94ed`
+- `WDSCORE!CurrentIP` at `0x1800d957d`
+- `WDSCORE!CurrentIP` at `0x1800d96f8`
+- `WDSCORE!CurrentIP` at `0x1800d97b2`
+- `WDSCORE!CurrentIP` at `0x1800d9819`
+- `WDSCORE!CurrentIP` at `0x1800d9896`
+- `WDSCORE!CurrentIP` at `0x1800d990d`
+- `WDSCORE!CurrentIP` at `0x1800d9974`
+- `WDSCORE!CurrentIP` at `0x1800d99e6`
+- `WDSCORE!CurrentIP` at `0x1800d9a4f`
+- `WDSCORE!CurrentIP` at `0x1800d9b1d`
+
+## string_xrefs
+
+- `0x1800d9239`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800d946b`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800d92cd`: `SafeOS.Mount`
+- `0x1800d922d`: `CServicedSystem::PreInitialize`
+- `0x1800d9464`: `CServicedSystem::PreInitialize`
+- `0x1800d9209`: `CServicedSystem::PreInitialize: Base preinitialization failed. Error: 0x%08X`
+- `0x1800d989f`: `CServicedSystem::PreInitialize: Client requested to keep BitLocker active unconditionally, but the configuration cannot be auto-unlocked. Cannot continue`
+- `0x1800d94fa`: `CServicedSystem::PreInitialize: FveCheckSuspendBitLockerOnUpgrade failed: 0x%08x, assuming auto-unlock and limited TPM-protected suspension are not supported`
+- `0x1800d9764`: `CServicedSystem::PreInitialize: Unexpected enum value`
+- `0x1800d9abc`: `CServicedSystem::PreInitialize: Unexpected enum value`
+- `0x1800d9c55`: `CServicedSystem::PreInitialize: Unexpected enum value`
+
+## pseudocode
+
+```c
+
+```

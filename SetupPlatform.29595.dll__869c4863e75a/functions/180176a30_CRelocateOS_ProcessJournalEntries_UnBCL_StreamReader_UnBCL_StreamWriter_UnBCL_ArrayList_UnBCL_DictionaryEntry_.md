@@ -1,0 +1,194 @@
+# CRelocateOS::ProcessJournalEntries(UnBCL::StreamReader *,UnBCL::StreamWriter *,UnBCL::ArrayList<UnBCL::DictionaryEntry<UnBCL::String *,UnBCL::String *> *> *)
+
+- ea: `0x180176a30`
+- end: `0x1801772b5`
+- name: `?ProcessJournalEntries@CRelocateOS@@IEAAJPEAVStreamReader@UnBCL@@PEAVStreamWriter@3@PEAV?$ArrayList@PEAV?$DictionaryEntry@PEAVString@UnBCL@@PEAV12@@UnBCL@@@3@@Z`
+- size: `2181`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `4`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x180167100`
+
+## callees
+
+- `0x180057dec`
+- `0x180176a30`
+- `0x1804bbfa0`
+- `0x180509010`
+
+## import_xrefs
+
+- `msvcrt!iswalpha` at `0x180176b92`
+- `msvcrt!iswalpha` at `0x180176c45`
+- `msvcrt!iswalpha` at `0x180176b92`
+- `msvcrt!iswalpha` at `0x180176c45`
+- `KERNEL32!GetLastError` at `0x180176d32`
+- `KERNEL32!GetLastError` at `0x18017712b`
+- `KERNEL32!GetLastError` at `0x1801771f1`
+- `KERNEL32!GetLastError` at `0x180176d32`
+- `KERNEL32!GetLastError` at `0x18017712b`
+- `KERNEL32!GetLastError` at `0x1801771f1`
+- `unbcl!?get_CString@StringBuilder@UnBCL@@QEBAPEBGXZ` at `0x180177140`
+- `unbcl!?get_CString@StringBuilder@UnBCL@@QEBAPEBGXZ` at `0x1801771c2`
+- `unbcl!?get_CString@StringBuilder@UnBCL@@QEBAPEBGXZ` at `0x180177140`
+- `unbcl!?get_CString@StringBuilder@UnBCL@@QEBAPEBGXZ` at `0x1801771c2`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x180177035`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x180177046`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x1801770a4`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x1801770e4`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x180177121`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x180177035`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x180177046`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x1801770a4`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x1801770e4`
+- `unbcl!?Append@StringBuilder@UnBCL@@QEAAPEAV12@PEBG@Z` at `0x180177121`
+- `unbcl!??1StringBuilder@UnBCL@@UEAA@XZ` at `0x1801771db`
+- `unbcl!??1StringBuilder@UnBCL@@UEAA@XZ` at `0x1801771db`
+- `unbcl!??0StringBuilder@UnBCL@@QEAA@XZ` at `0x180176ff7`
+- `unbcl!??0StringBuilder@UnBCL@@QEAA@XZ` at `0x180176ff7`
+- `unbcl!?Split@String@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@2@PEBG@Z` at `0x180176ada`
+- `unbcl!?Split@String@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@2@PEBG@Z` at `0x180176ada`
+- `unbcl!?StartsWith@String@UnBCL@@QEBAHPEBGH@Z` at `0x180176ee1`
+- `unbcl!?StartsWith@String@UnBCL@@QEBAHPEBGH@Z` at `0x180176ee1`
+- `unbcl!??0String@UnBCL@@QEAA@PEBV01@@Z` at `0x180176fb8`
+- `unbcl!??0String@UnBCL@@QEAA@PEBV01@@Z` at `0x180176fb8`
+- `unbcl!?Compare@String@UnBCL@@SAHPEBV12@0H@Z` at `0x180176e52`
+- `unbcl!?Compare@String@UnBCL@@SAHPEBV12@0H@Z` at `0x180176e52`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176b05`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176b32`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176b63`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176ba4`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176bdf`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176c13`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176c57`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176c95`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176cc6`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176cfc`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176e20`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176e99`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176f00`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180177002`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x18017706e`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801770b5`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801770ee`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176b05`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176b32`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176b63`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176ba4`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176bdf`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176c13`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176c57`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176c95`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176cc6`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176cfc`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176e20`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176e99`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180176f00`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x180177002`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x18017706e`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801770b5`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801770ee`
+- `unbcl!??0?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEAA@PEAV?$ArrayList@PEAVString@UnBCL@@@1@@Z` at `0x180176ae7`
+- `unbcl!??0?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEAA@PEAV?$ArrayList@PEAVString@UnBCL@@@1@@Z` at `0x180176ae7`
+- `unbcl!??1?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180177280`
+- `unbcl!??1?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180177280`
+- `unbcl!?Concat@String@UnBCL@@SAPEAV12@PEBG0@Z` at `0x180176e81`
+- `unbcl!?Concat@String@UnBCL@@SAPEAV12@PEBG0@Z` at `0x180176e81`
+- `unbcl!?get_P@?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@2@XZ` at `0x180176af2`
+- `unbcl!?get_P@?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@2@XZ` at `0x180176af2`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180176ab7`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180177050`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180176ab7`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180177050`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@XZ` at `0x180176a6a`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@XZ` at `0x180176dc0`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@XZ` at `0x180176a6a`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@XZ` at `0x180176dc0`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x180176f91`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x180176f91`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x180176aa2`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x180176f74`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x180176fe2`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x180176aa2`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x180176f74`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x180176fe2`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180176aca`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180176d47`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180176ec6`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x18017705f`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180177206`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180176aca`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180176d47`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180176ec6`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x18017705f`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180177206`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176b89`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176bca`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176c3c`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176c80`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176cec`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176d22`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176d50`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176e71`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176ecf`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180177028`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180177097`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180177114`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x18017720f`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176b89`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176bca`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176c3c`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176c80`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176cec`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176d22`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176d50`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176e71`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180176ecf`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180177028`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180177097`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180177114`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x18017720f`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180176aad`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180176eef`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180176f7f`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180176fed`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1801771e6`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x18017728f`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180176aad`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180176eef`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180176f7f`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x180176fed`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1801771e6`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x18017728f`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x180176a93`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x180176e8e`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x180176f65`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x180176fd3`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x180176a93`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x180176e8e`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x180176f65`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x180176fd3`
+- `unbcl!?Replace@String@UnBCL@@QEBAPEAV12@PEAV12@0H@Z` at `0x180176f58`
+- `unbcl!?Replace@String@UnBCL@@QEBAPEAV12@PEAV12@0H@Z` at `0x180176f58`
+- `WDSCORE!WdsSetupLogMessageW` at `0x180176db6`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801771a6`
+- `WDSCORE!WdsSetupLogMessageW` at `0x180177275`
+- `WDSCORE!WdsSetupLogMessageW` at `0x180176db6`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801771a6`
+- `WDSCORE!WdsSetupLogMessageW` at `0x180177275`
+- `WDSCORE!CurrentIP` at `0x180176d3a`
+- `WDSCORE!CurrentIP` at `0x180177133`
+- `WDSCORE!CurrentIP` at `0x1801771f9`
+- `WDSCORE!CurrentIP` at `0x180176d3a`
+- `WDSCORE!CurrentIP` at `0x180177133`
+- `WDSCORE!CurrentIP` at `0x1801771f9`
+
+## pseudocode
+
+```c
+
+```

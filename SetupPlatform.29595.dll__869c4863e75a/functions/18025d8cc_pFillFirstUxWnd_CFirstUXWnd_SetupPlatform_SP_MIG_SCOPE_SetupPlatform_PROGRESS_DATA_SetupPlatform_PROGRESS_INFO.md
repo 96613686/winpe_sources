@@ -1,0 +1,220 @@
+# pFillFirstUxWnd(CFirstUXWnd *,SetupPlatform::SP_MIG_SCOPE,SetupPlatform::_PROGRESS_DATA *,SetupPlatform::PROGRESS_INFO *,uint,uint *,UnBCL::String *)
+
+- ea: `0x18025d8cc`
+- end: `0x18025e725`
+- name: `?pFillFirstUxWnd@@YAXPEAVCFirstUXWnd@@W4SP_MIG_SCOPE@SetupPlatform@@PEAU_PROGRESS_DATA@3@PEAUPROGRESS_INFO@3@IPEAIPEAVString@UnBCL@@@Z`
+- size: `3673`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `23`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x18024ddf0`
+
+## callees
+
+- `0x180057dec`
+- `0x18025d8cc`
+- `0x1802e2078`
+- `0x1804463d0`
+- `0x180446728`
+- `0x1804467e4`
+- `0x180446a00`
+- `0x180446ac0`
+- `0x180446bdc`
+- `0x180446d98`
+- `0x18044775c`
+- `0x1804477ec`
+- `0x1804479f0`
+- `0x180447bb0`
+- `0x180447e00`
+- `0x180447f18`
+- `0x180447ff0`
+- `0x180448148`
+- `0x180448308`
+- `0x180448534`
+- `0x1804488ac`
+- `0x180448b00`
+- `0x180509010`
+
+## import_xrefs
+
+- `KERNEL32!GetLastError` at `0x18025d965`
+- `KERNEL32!GetLastError` at `0x18025d9e8`
+- `KERNEL32!GetLastError` at `0x18025db83`
+- `KERNEL32!GetLastError` at `0x18025dc09`
+- `KERNEL32!GetLastError` at `0x18025dc8f`
+- `KERNEL32!GetLastError` at `0x18025dd15`
+- `KERNEL32!GetLastError` at `0x18025ddac`
+- `KERNEL32!GetLastError` at `0x18025de2d`
+- `KERNEL32!GetLastError` at `0x18025df00`
+- `KERNEL32!GetLastError` at `0x18025dfd6`
+- `KERNEL32!GetLastError` at `0x18025e077`
+- `KERNEL32!GetLastError` at `0x18025e10a`
+- `KERNEL32!GetLastError` at `0x18025e1ae`
+- `KERNEL32!GetLastError` at `0x18025e231`
+- `KERNEL32!GetLastError` at `0x18025e2b7`
+- `KERNEL32!GetLastError` at `0x18025e33d`
+- `KERNEL32!GetLastError` at `0x18025e3bf`
+- `KERNEL32!GetLastError` at `0x18025e496`
+- `KERNEL32!GetLastError` at `0x18025e56c`
+- `KERNEL32!GetLastError` at `0x18025e60d`
+- `KERNEL32!GetLastError` at `0x18025e6a0`
+- `KERNEL32!GetLastError` at `0x18025d965`
+- `KERNEL32!GetLastError` at `0x18025d9e8`
+- `KERNEL32!GetLastError` at `0x18025db83`
+- `KERNEL32!GetLastError` at `0x18025dc09`
+- `KERNEL32!GetLastError` at `0x18025dc8f`
+- `KERNEL32!GetLastError` at `0x18025dd15`
+- `KERNEL32!GetLastError` at `0x18025ddac`
+- `KERNEL32!GetLastError` at `0x18025de2d`
+- `KERNEL32!GetLastError` at `0x18025df00`
+- `KERNEL32!GetLastError` at `0x18025dfd6`
+- `KERNEL32!GetLastError` at `0x18025e077`
+- `KERNEL32!GetLastError` at `0x18025e10a`
+- `KERNEL32!GetLastError` at `0x18025e1ae`
+- `KERNEL32!GetLastError` at `0x18025e231`
+- `KERNEL32!GetLastError` at `0x18025e2b7`
+- `KERNEL32!GetLastError` at `0x18025e33d`
+- `KERNEL32!GetLastError` at `0x18025e3bf`
+- `KERNEL32!GetLastError` at `0x18025e496`
+- `KERNEL32!GetLastError` at `0x18025e56c`
+- `KERNEL32!GetLastError` at `0x18025e60d`
+- `KERNEL32!GetLastError` at `0x18025e6a0`
+- `unbcl!?Compare@String@UnBCL@@SAHPEBV12@0H@Z` at `0x18025dabc`
+- `unbcl!?Compare@String@UnBCL@@SAHPEBV12@0H@Z` at `0x18025db3e`
+- `unbcl!?Compare@String@UnBCL@@SAHPEBV12@0H@Z` at `0x18025dabc`
+- `unbcl!?Compare@String@UnBCL@@SAHPEBV12@0H@Z` at `0x18025db3e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18025da8a`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18025daad`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18025db0c`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18025db2f`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18025da8a`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18025daad`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18025db0c`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18025db2f`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x18025dac8`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x18025db4a`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x18025dac8`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x18025db4a`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x18025daa0`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x18025db22`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x18025daa0`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x18025db22`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x18025da5c`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x18025dade`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x18025da5c`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x18025dade`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x18025e179`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x18025e184`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x18025e179`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x18025e184`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x18025da7f`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x18025db01`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x18025da7f`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x18025db01`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025d9cf`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025da52`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025dbed`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025dc73`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025dcf9`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025dd7f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025de18`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025de99`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025df6f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e046`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e0e9`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e16e`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e218`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e29b`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e321`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e3a7`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e429`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e505`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e5dc`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e67f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e704`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025d9cf`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025da52`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025dbed`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025dc73`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025dcf9`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025dd7f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025de18`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025de99`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025df6f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e046`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e0e9`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e16e`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e218`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e29b`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e321`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e3a7`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e429`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e505`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e5dc`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e67f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x18025e704`
+- `WDSCORE!CurrentIP` at `0x18025d96d`
+- `WDSCORE!CurrentIP` at `0x18025d9f0`
+- `WDSCORE!CurrentIP` at `0x18025db8b`
+- `WDSCORE!CurrentIP` at `0x18025dc11`
+- `WDSCORE!CurrentIP` at `0x18025dc97`
+- `WDSCORE!CurrentIP` at `0x18025dd1d`
+- `WDSCORE!CurrentIP` at `0x18025ddb4`
+- `WDSCORE!CurrentIP` at `0x18025de35`
+- `WDSCORE!CurrentIP` at `0x18025df08`
+- `WDSCORE!CurrentIP` at `0x18025dfde`
+- `WDSCORE!CurrentIP` at `0x18025e07f`
+- `WDSCORE!CurrentIP` at `0x18025e112`
+- `WDSCORE!CurrentIP` at `0x18025e1b6`
+- `WDSCORE!CurrentIP` at `0x18025e239`
+- `WDSCORE!CurrentIP` at `0x18025e2bf`
+- `WDSCORE!CurrentIP` at `0x18025e345`
+- `WDSCORE!CurrentIP` at `0x18025e3c7`
+- `WDSCORE!CurrentIP` at `0x18025e49e`
+- `WDSCORE!CurrentIP` at `0x18025e574`
+- `WDSCORE!CurrentIP` at `0x18025e615`
+- `WDSCORE!CurrentIP` at `0x18025e6a8`
+- `WDSCORE!CurrentIP` at `0x18025d96d`
+- `WDSCORE!CurrentIP` at `0x18025d9f0`
+- `WDSCORE!CurrentIP` at `0x18025db8b`
+- `WDSCORE!CurrentIP` at `0x18025dc11`
+- `WDSCORE!CurrentIP` at `0x18025dc97`
+- `WDSCORE!CurrentIP` at `0x18025dd1d`
+- `WDSCORE!CurrentIP` at `0x18025ddb4`
+- `WDSCORE!CurrentIP` at `0x18025de35`
+- `WDSCORE!CurrentIP` at `0x18025df08`
+- `WDSCORE!CurrentIP` at `0x18025dfde`
+- `WDSCORE!CurrentIP` at `0x18025e07f`
+- `WDSCORE!CurrentIP` at `0x18025e112`
+- `WDSCORE!CurrentIP` at `0x18025e1b6`
+- `WDSCORE!CurrentIP` at `0x18025e239`
+- `WDSCORE!CurrentIP` at `0x18025e2bf`
+- `WDSCORE!CurrentIP` at `0x18025e345`
+- `WDSCORE!CurrentIP` at `0x18025e3c7`
+- `WDSCORE!CurrentIP` at `0x18025e49e`
+- `WDSCORE!CurrentIP` at `0x18025e574`
+- `WDSCORE!CurrentIP` at `0x18025e615`
+- `WDSCORE!CurrentIP` at `0x18025e6a8`
+
+## string_xrefs
+
+- `0x18025da65`: `ShutdownAfterInstallation`
+- `0x18025d97a`: `pFillFirstUxWnd: Failed to set update progress text. Error: 0x%08X`
+- `0x18025d9fd`: `pFillFirstUxWnd: Failed to update title text. Error: 0x%08X`
+- `0x18025ddc1`: `pFillFirstUxWnd: Failed to set update enterprise attribution text. Error: 0x%08X`
+- `0x18025df18`: `pFillFirstUxWnd: Failed to set update phase text for phase %u. Error: 0x%08X`
+- `0x18025db98`: `pFillFirstUxWnd: Failed to set update message text. Error: 0x%08X`
+- `0x18025dd2a`: `pFillFirstUxWnd: Failed to set update unified progress. Error: 0x%08X`
+- `0x18025dca4`: `pFillFirstUxWnd: Failed to set update progress text format. Error: 0x%08X`
+- `0x18025e11e`: `pFillFirstUxWnd: Failed to show update controls. Error: 0x%08X`
+- `0x18025e092`: `pFillFirstUxWnd: Failed to set update current phase index for %u. Error: 0x%08X`
+
+## pseudocode
+
+```c
+
+```

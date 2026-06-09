@@ -1,0 +1,201 @@
+# DiskLayout::ApplyProperties(IWpxPartition *,SetupPlatform::IPartition *)
+
+- ea: `0x1803d51a0`
+- end: `0x1803d633f`
+- name: `?ApplyProperties@DiskLayout@@AEAAJPEAUIWpxPartition@@PEAUIPartition@SetupPlatform@@@Z`
+- size: `4511`
+- prototype: `__int64 __fastcall(DiskLayout *__hidden this, struct IWpxPartition *, struct SetupPlatform::IPartition *)`
+- caller_count: `2`
+- callee_count: `7`
+- tags: `installer_update`
+
+## callers
+
+- `0x1803d7b28`
+- `0x1803d9208`
+
+## callees
+
+- `0x180044820`
+- `0x180057dec`
+- `0x1802dacac`
+- `0x1803d51a0`
+- `0x1803dbe30`
+- `0x1804bbfa0`
+- `0x180509010`
+
+## import_xrefs
+
+- `msvcrt!wcsstr` at `0x1803d5d56`
+- `msvcrt!wcsstr` at `0x1803d5d56`
+- `KERNEL32!GetLastError` at `0x1803d521d`
+- `KERNEL32!GetLastError` at `0x1803d52a6`
+- `KERNEL32!GetLastError` at `0x1803d53e6`
+- `KERNEL32!GetLastError` at `0x1803d54f7`
+- `KERNEL32!GetLastError` at `0x1803d55fe`
+- `KERNEL32!GetLastError` at `0x1803d56bf`
+- `KERNEL32!GetLastError` at `0x1803d577b`
+- `KERNEL32!GetLastError` at `0x1803d584a`
+- `KERNEL32!GetLastError` at `0x1803d5902`
+- `KERNEL32!GetLastError` at `0x1803d59d2`
+- `KERNEL32!GetLastError` at `0x1803d5afb`
+- `KERNEL32!GetLastError` at `0x1803d5b92`
+- `KERNEL32!GetLastError` at `0x1803d5c35`
+- `KERNEL32!GetLastError` at `0x1803d5cc6`
+- `KERNEL32!GetLastError` at `0x1803d5e19`
+- `KERNEL32!GetLastError` at `0x1803d5ec5`
+- `KERNEL32!GetLastError` at `0x1803d5f84`
+- `KERNEL32!GetLastError` at `0x1803d5ff8`
+- `KERNEL32!GetLastError` at `0x1803d6072`
+- `KERNEL32!GetLastError` at `0x1803d60fe`
+- `KERNEL32!GetLastError` at `0x1803d619a`
+- `KERNEL32!GetLastError` at `0x1803d6206`
+- `KERNEL32!GetLastError` at `0x1803d6280`
+- `KERNEL32!GetLastError` at `0x1803d62dd`
+- `KERNEL32!GetLastError` at `0x1803d521d`
+- `KERNEL32!GetLastError` at `0x1803d52a6`
+- `KERNEL32!GetLastError` at `0x1803d53e6`
+- `KERNEL32!GetLastError` at `0x1803d54f7`
+- `KERNEL32!GetLastError` at `0x1803d55fe`
+- `KERNEL32!GetLastError` at `0x1803d56bf`
+- `KERNEL32!GetLastError` at `0x1803d577b`
+- `KERNEL32!GetLastError` at `0x1803d584a`
+- `KERNEL32!GetLastError` at `0x1803d5902`
+- `KERNEL32!GetLastError` at `0x1803d59d2`
+- `KERNEL32!GetLastError` at `0x1803d5afb`
+- `KERNEL32!GetLastError` at `0x1803d5b92`
+- `KERNEL32!GetLastError` at `0x1803d5c35`
+- `KERNEL32!GetLastError` at `0x1803d5cc6`
+- `KERNEL32!GetLastError` at `0x1803d5e19`
+- `KERNEL32!GetLastError` at `0x1803d5ec5`
+- `KERNEL32!GetLastError` at `0x1803d5f84`
+- `KERNEL32!GetLastError` at `0x1803d5ff8`
+- `KERNEL32!GetLastError` at `0x1803d6072`
+- `KERNEL32!GetLastError` at `0x1803d60fe`
+- `KERNEL32!GetLastError` at `0x1803d619a`
+- `KERNEL32!GetLastError` at `0x1803d6206`
+- `KERNEL32!GetLastError` at `0x1803d6280`
+- `KERNEL32!GetLastError` at `0x1803d62dd`
+- `unbcl!?Format@String@UnBCL@@SAPEAV12@PEBGZZ` at `0x1803d5d6b`
+- `unbcl!?Format@String@UnBCL@@SAPEAV12@PEBGZZ` at `0x1803d5d6b`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@XZ` at `0x1803d5d45`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@XZ` at `0x1803d5d45`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1803d5db1`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1803d5db1`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x1803d5d99`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x1803d5d99`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1803d5d87`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1803d5ddc`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1803d5d87`
+- `unbcl!??4?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAAAEAV01@AEBV01@@Z` at `0x1803d5ddc`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1803d5df1`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1803d5ea1`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1803d5df1`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1803d5ea1`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1803d5dfa`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1803d5eaa`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1803d5dfa`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1803d5eaa`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1803d5de7`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1803d5e8b`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1803d5f3a`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1803d5de7`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1803d5e8b`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1803d5f3a`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1803d5d78`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1803d5dcd`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1803d5d78`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1803d5dcd`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5282`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5315`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5457`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d557a`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d566f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5730`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d57fe`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d58bb`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5986`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5a43`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5bf9`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5c9c`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5e80`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5f2f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d605f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d60db`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5282`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5315`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5457`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d557a`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d566f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5730`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d57fe`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d58bb`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5986`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5a43`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5bf9`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5c9c`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5e80`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d5f2f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d605f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803d60db`
+- `WDSCORE!CurrentIP` at `0x1803d5225`
+- `WDSCORE!CurrentIP` at `0x1803d52ae`
+- `WDSCORE!CurrentIP` at `0x1803d53ee`
+- `WDSCORE!CurrentIP` at `0x1803d54ff`
+- `WDSCORE!CurrentIP` at `0x1803d5606`
+- `WDSCORE!CurrentIP` at `0x1803d56c7`
+- `WDSCORE!CurrentIP` at `0x1803d5783`
+- `WDSCORE!CurrentIP` at `0x1803d5852`
+- `WDSCORE!CurrentIP` at `0x1803d590a`
+- `WDSCORE!CurrentIP` at `0x1803d59da`
+- `WDSCORE!CurrentIP` at `0x1803d5b03`
+- `WDSCORE!CurrentIP` at `0x1803d5b9a`
+- `WDSCORE!CurrentIP` at `0x1803d5c3d`
+- `WDSCORE!CurrentIP` at `0x1803d5cce`
+- `WDSCORE!CurrentIP` at `0x1803d5e21`
+- `WDSCORE!CurrentIP` at `0x1803d5ecd`
+- `WDSCORE!CurrentIP` at `0x1803d5f8c`
+- `WDSCORE!CurrentIP` at `0x1803d6000`
+- `WDSCORE!CurrentIP` at `0x1803d607a`
+- `WDSCORE!CurrentIP` at `0x1803d6106`
+- `WDSCORE!CurrentIP` at `0x1803d61a2`
+- `WDSCORE!CurrentIP` at `0x1803d620e`
+- `WDSCORE!CurrentIP` at `0x1803d6288`
+- `WDSCORE!CurrentIP` at `0x1803d62e5`
+- `WDSCORE!CurrentIP` at `0x1803d5225`
+- `WDSCORE!CurrentIP` at `0x1803d52ae`
+- `WDSCORE!CurrentIP` at `0x1803d53ee`
+- `WDSCORE!CurrentIP` at `0x1803d54ff`
+- `WDSCORE!CurrentIP` at `0x1803d5606`
+- `WDSCORE!CurrentIP` at `0x1803d56c7`
+- `WDSCORE!CurrentIP` at `0x1803d5783`
+- `WDSCORE!CurrentIP` at `0x1803d5852`
+- `WDSCORE!CurrentIP` at `0x1803d590a`
+- `WDSCORE!CurrentIP` at `0x1803d59da`
+- `WDSCORE!CurrentIP` at `0x1803d5b03`
+- `WDSCORE!CurrentIP` at `0x1803d5b9a`
+- `WDSCORE!CurrentIP` at `0x1803d5c3d`
+- `WDSCORE!CurrentIP` at `0x1803d5cce`
+- `WDSCORE!CurrentIP` at `0x1803d5e21`
+- `WDSCORE!CurrentIP` at `0x1803d5ecd`
+- `WDSCORE!CurrentIP` at `0x1803d5f8c`
+- `WDSCORE!CurrentIP` at `0x1803d6000`
+- `WDSCORE!CurrentIP` at `0x1803d607a`
+- `WDSCORE!CurrentIP` at `0x1803d6106`
+- `WDSCORE!CurrentIP` at `0x1803d61a2`
+- `WDSCORE!CurrentIP` at `0x1803d620e`
+- `WDSCORE!CurrentIP` at `0x1803d6288`
+- `WDSCORE!CurrentIP` at `0x1803d62e5`
+
+## string_xrefs
+
+- `0x1803d5b0f`: `DiskLayout::ApplyProperties: Failed to read target disk properties: 0x%08x`
+- `0x1803d5cda`: `DiskLayout::ApplyProperties: Failed to update partition type: 0x%08x`
+- `0x1803d5ed9`: `DiskLayout::ApplyProperties: Failed to update partition type: 0x%08x`
+- `0x1803d6217`: `DiskLayout::ApplyProperties: Cannot create an EFI partition on an MBR disk`
+
+## pseudocode
+
+```c
+
+```

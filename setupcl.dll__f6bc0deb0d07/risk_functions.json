@@ -1,0 +1,3392 @@
+[
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "SclRegRenameKey",
+    "ea": "0x180009cd0",
+    "function_file": "functions/180009cd0_SclRegRenameKey.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtRenameKey",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!_wcsicmp",
+      "ntdll!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SclRegRenameKey",
+    "prototype": "__int64 __fastcall(void *, wchar_t *, wchar_t *)",
+    "rank_score": 5035,
+    "size": 1204,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SclpMigrateHive",
+    "ea": "0x18000c73c",
+    "function_file": "functions/18000c73c_SclpMigrateHive.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtFlushKey",
+      "ntdll!NtOpenKey",
+      "ntdll!NtRestoreKey",
+      "ntdll!NtSaveKeyEx",
+      "ntdll!NtSetSecurityObject"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE",
+      "WINDOWS.OLD\\WINDOWS\\System32\\config",
+      "(%lx): Failed to calculate Windows.old's hive path for [%ws]",
+      "(%lx): Failed to calculate excluded hive path",
+      "(%lx): Error opening old hive key [%ws]",
+      "(%lx): Error opening current hive key [%ws]",
+      "Error opening excluded key [%ws]: [0x%08X]",
+      "(%lx): Error opening excluded hive file [%ws]",
+      "(%lx): Error setting default security info to [%ws]",
+      "(%lx): Error copying security info from [%ws] to [%ws]",
+      "(%lx): Error copying hive content from [%ws] to [%ws]",
+      "(%lx): Error re-opening excluded key [%ws]",
+      "(%lx): Error re-opening excluded hive file [%ws]",
+      "Successfully restored (by recursive copy) hive content for [%ws]"
+    ],
+    "name": "SclpMigrateHive",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, const WCHAR *, void *, __int64, __int64)",
+    "rank_score": 4239,
+    "size": 2461,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SclStateRecordResults",
+    "ea": "0x180003408",
+    "function_file": "functions/180003408_SclStateRecordResults.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtFlushKey"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SYSTEM\\SETUP\\SETUPCL",
+      "Number of registry keys processed",
+      "Number of registry keys processed",
+      "Number of registry keys processed",
+      "Number of registry keys renamed",
+      "Number of registry keys renamed",
+      "Number of registry keys renamed",
+      "Number of registry keys renamed",
+      "RegKeyRenameCount",
+      "RegKeyRenameCount",
+      "Number of registry values processed",
+      "Number of registry values processed",
+      "Number of registry values processed",
+      "Number of registry values processed",
+      "Number of registry values renamed",
+      "Number of registry values renamed",
+      "Number of registry values renamed",
+      "Number of registry values renamed",
+      "RegValueRenameCount",
+      "RegValueRenameCount",
+      "Number of registry values updated",
+      "Number of registry values updated",
+      "Number of registry values updated",
+      "Number of registry values updated",
+      "RegDataUpdateCount",
+      "RegDataUpdateCount",
+      "Number of registry security descriptors updated",
+      "Number of registry security descriptors updated",
+      "Number of registry security descriptors updated",
+      "Number of registry security descriptors updated",
+      "SecObjectSDUpdateCount",
+      "SecObjectSDUpdateCount",
+      "Number of registry security descriptors processed",
+      "Number of registry security descriptors processed",
+      "Number of registry security descriptors processed",
+      "Number of registry security descriptors processed",
+      "Number of $Secure security descriptors updated",
+      "Number of $Secure security descriptors updated",
+      "Number of $Secure security descriptors updated",
+      "Number of $Secure security descriptors updated",
+      "FsSecureSDUpdateCount",
+      "FsSecureSDUpdateCount",
+      "Number of $Secure security descriptors failed",
+      "Number of $Secure security descriptors failed",
+      "Number of $Secure security descriptors failed",
+      "Number of $Secure security descriptors failed",
+      "FsSecureSDFailedUpdateCount",
+      "FsSecureSDFailedUpdateCount",
+      "Number of $Secure security descriptors processed",
+      "Number of $Secure security descriptors processed",
+      "Number of $Secure security descriptors processed",
+      "Number of $Secure security descriptors processed",
+      "Number of $MFT security descriptors updated",
+      "Number of $MFT security descriptors updated",
+      "Number of $MFT security descriptors updated",
+      "Number of $MFT security descriptors updated",
+      "FsMftSDUpdateCount",
+      "FsMftSDUpdateCount",
+      "Number of $MFT security descriptors failed",
+      "Number of $MFT security descriptors failed",
+      "Number of $MFT security descriptors failed",
+      "Number of $MFT security descriptors failed",
+      "FsMftSDFailedUpdateCount",
+      "FsMftSDFailedUpdateCount",
+      "Number of $MFT security descriptors processed",
+      "Number of $MFT security descriptors processed",
+      "Number of $MFT security descriptors processed",
+      "Number of $MFT security descriptors processed",
+      "Number of reparse points processed",
+      "Number of reparse points processed",
+      "Number of reparse points processed",
+      "Number of reparse points processed",
+      "ReparsePointProcessCount",
+      "ReparsePointProcessCount",
+      "Number of reparse points updated",
+      "Number of reparse points updated",
+      "Number of reparse points updated",
+      "Number of reparse points updated",
+      "ReparsePointUpdateCount",
+      "ReparsePointUpdateCount",
+      "Time spent processing registry (in ms)",
+      "Time spent processing registry (in ms)",
+      "Time spent processing registry (in ms)",
+      "Time spent processing registry (in ms)",
+      "FileACLTime",
+      "FileACLTime"
+    ],
+    "name": "SclStateRecordResults",
+    "prototype": "__int64 __fastcall(int, __int64, __int64)",
+    "rank_score": 4132,
+    "size": 3964,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "SclOpenOS",
+    "ea": "0x18000deec",
+    "function_file": "functions/18000deec_SclOpenOS.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap",
+      "ntdll!wcsrchr"
+    ],
+    "matched_strings": [
+      "SECURITY",
+      "System32\\config",
+      "System32\\config",
+      "System32\\config",
+      "System32\\config",
+      "System32\\config"
+    ],
+    "name": "SclOpenOS",
+    "prototype": "__int64 __fastcall(void *, wchar_t *, const wchar_t **)",
+    "rank_score": 3702,
+    "size": 1520,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SclpGetAndWriteBootEntry",
+    "ea": "0x18000ec38",
+    "function_file": "functions/18000ec38_SclpGetAndWriteBootEntry.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtQuerySystemEnvironmentValueEx",
+      "ntdll!NtWriteFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!swprintf_s",
+      "ntdll!wcsncpy_s",
+      "ntdll!wcsrchr"
+    ],
+    "matched_strings": [
+      "SclpGetAndWriteBootEntry",
+      "(%lx): Failed to create boot entry recovery file"
+    ],
+    "name": "SclpGetAndWriteBootEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 3115,
+    "size": 1233,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "SclRegCopyKeyRecursiveByHandle",
+    "ea": "0x180007fb0",
+    "function_file": "functions/180007fb0_SclRegCopyKeyRecursiveByHandle.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtSetValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "SclRegCopyKeyRecursiveByHandle",
+      "(%lx): Failed to create full path for source key.",
+      "(%lx): Failed to create full path for destination key.",
+      "(%lx): Failed to open source child key",
+      "(%lx): Failed to create destination child key",
+      "(%lx): Failed to migrate security info for child key",
+      "Copying [%ws] -> [%ws]",
+      "Copying [%ws] -> [%ws]",
+      "Copying [%ws]",
+      "Copying [%ws]",
+      "Copying to [%ws]",
+      "Copying to [%ws]",
+      "(%lx): Failed to create full path for source key/value.",
+      "(%lx): Failed to create full path for destination key/value."
+    ],
+    "name": "SclRegCopyKeyRecursiveByHandle",
+    "prototype": "__int64 __fastcall(__int64, void *, __int64, _WORD *, _WORD *, _DWORD *, _DWORD *)",
+    "rank_score": 2891,
+    "size": 2308,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "SclStateConfigureBootTimeExecution",
+    "ea": "0x180002cc8",
+    "function_file": "functions/180002cc8_SclStateConfigureBootTimeExecution.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDeleteValueKey",
+      "ntdll!NtFlushKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SYSTEM\\SETUP\\SETUPCL\\SESSION MANAGER",
+      "SclStateConfigureBootTimeExecution",
+      "SclStateConfigureBootTimeExecution",
+      "SclStateConfigureBootTimeExecution",
+      "SclStateConfigureBootTimeExecution",
+      "SclStateConfigureBootTimeExecution",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CURRENTCONTROLSET\\CONTROL\\SESSION MANAGER",
+      "%ws value not found; nothing to delete.",
+      "%ws value not found; nothing to delete.",
+      "Successfully configured SetupCl %s at next boot; a registry change %s",
+      "(%lx): Failed to update %ws value."
+    ],
+    "name": "SclStateConfigureBootTimeExecution",
+    "prototype": "__int64 __fastcall(__int64, char, char)",
+    "rank_score": 2506,
+    "size": 1701,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 26,
+    "caller_count": 3,
+    "demangled": "SclpExecuteRequestInternal",
+    "ea": "0x1800065f8",
+    "function_file": "functions/1800065f8_SclpExecuteRequestInternal.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtQuerySystemTime",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SYSTEM\\SETUP\\SETUPCL\\PendingRequest",
+      "Acquiring needed privileges...",
+      "(%lx): Failed to acquire needed privileges",
+      "Marking event [&SclEvent_ProcessRegistry_Start]",
+      "Marking event [&SclEvent_ProcessRegistry_Stop]",
+      "(%lx): Failed to process registry",
+      "Upgrade hive updates ares only supported in online mode; cannot proceed...",
+      "SkipMigrateRootACL",
+      "Error retrieving ACL migration information: [0x%08X]",
+      "Migration of root ACL: %ws",
+      "(%lx): Failed to execute upgrade hive updates",
+      "Marking event [&SclEvent_RetargetLinks_Start]",
+      "Marking event [&SclEvent_RetargetLinks_Stop]",
+      "(%lx): Failed to retarget links"
+    ],
+    "name": "SclpExecuteRequestInternal",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _OWORD *, union _LARGE_INTEGER, char)",
+    "rank_score": 2456,
+    "size": 2341,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "SclpStateValidateAndRetrieveChangedKeys",
+    "ea": "0x18000548c",
+    "function_file": "functions/18000548c_SclpStateValidateAndRetrieveChangedKeys.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "System32\\config",
+      "(%lx): Failure during enumeration of values."
+    ],
+    "name": "SclpStateValidateAndRetrieveChangedKeys",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, _QWORD *, void *, PCWSTR SourceString, _QWORD *)",
+    "rank_score": 2341,
+    "size": 1187,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SclpCreateDatabaseProtection",
+    "ea": "0x18000c4b4",
+    "function_file": "functions/18000c4b4_SclpCreateDatabaseProtection.md",
+    "matched_imports": [
+      "ntdll!RtlAddAccessAllowedAce",
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCreateAcl",
+      "ntdll!RtlCreateSecurityDescriptor",
+      "ntdll!RtlGetAce",
+      "ntdll!RtlLengthSid",
+      "ntdll!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SclpCreateDatabaseProtection",
+    "prototype": "int __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 2236,
+    "size": 463,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 3,
+    "demangled": "SclGetPendedRequest",
+    "ea": "0x180002010",
+    "function_file": "functions/180002010_SclGetPendedRequest.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SclRetrieveSid",
+      "SclRetrieveSid",
+      "SidAccountDomainOld",
+      "SidAccountDomainOld",
+      "SidAccountDomainNew",
+      "SidAccountDomainNew",
+      "SclpCanonicalizePaths failed. Error: 0x%08X"
+    ],
+    "name": "SclGetPendedRequest",
+    "prototype": "__int64 __fastcall(__int64, void *)",
+    "rank_score": 2127,
+    "size": 1492,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SclpRegExpandProfileHivePath",
+    "ea": "0x18000d220",
+    "function_file": "functions/18000d220_SclpRegExpandProfileHivePath.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlDestroyEnvironment",
+      "ntdll!RtlExpandEnvironmentStrings_U",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "SclpRegExpandProfileHivePath",
+      "SclpRegExpandProfileHivePath",
+      "SclpRegExpandProfileHivePath",
+      "Expanded profile hive path: NT path = [%ws]"
+    ],
+    "name": "SclpRegExpandProfileHivePath",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, const wchar_t *, __int64, __int64, PWSTR *)",
+    "rank_score": 1994,
+    "size": 1018,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SclpWipeHive",
+    "ea": "0x18000d620",
+    "function_file": "functions/18000d620_SclpWipeHive.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDeleteValueKey",
+      "ntdll!NtFlushKey",
+      "ntdll!NtOpenKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!_wcsicmp"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE",
+      "(%lx): Error opening hive key [%ws]",
+      "(%lx): Failed to delete value [%wZ]"
+    ],
+    "name": "SclpWipeHive",
+    "prototype": "__int64 __fastcall(__int64, __int64, wchar_t *)",
+    "rank_score": 1969,
+    "size": 1209,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SclpGetMountPoints",
+    "ea": "0x18000f7e4",
+    "function_file": "functions/18000f7e4_SclpGetMountPoints.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "(%lx): Unable to open handle to [%ws].",
+      "\\Device\\MountPointManager",
+      "\\\\.\\MountPointManager",
+      "SclpGetMountPoints",
+      "SclpGetMountPoints",
+      "(%lx): Unable to query mount points."
+    ],
+    "name": "SclpGetMountPoints",
+    "prototype": "__int64 __fastcall(__int64, ULONG **)",
+    "rank_score": 1880,
+    "size": 707,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "SclStateStoreChanges",
+    "ea": "0x180004428",
+    "function_file": "functions/180004428_SclStateStoreChanges.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtSaveKeyEx",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SYSTEM\\SETUP\\SETUPCL",
+      "SECURITY",
+      "System32\\config",
+      "(%lx): Error opening SetupCl hive file [%ws]"
+    ],
+    "name": "SclStateStoreChanges",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD **)",
+    "rank_score": 1842,
+    "size": 1045,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SclpGetVolumeHandle",
+    "ea": "0x18000fc6c",
+    "function_file": "functions/18000fc6c_SclpGetVolumeHandle.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!RtlEqualUnicodeString",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "(%lx): Unable to open handle to [%ws]."
+    ],
+    "name": "SclpGetVolumeHandle",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, void **)",
+    "rank_score": 1704,
+    "size": 1278,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SclpGrowPartition",
+    "ea": "0x180010170",
+    "function_file": "functions/180010170_SclpGrowPartition.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!RtlFreeHeap",
+      "ntdll!_wcsicmp"
+    ],
+    "matched_strings": [
+      "Partition/Volume extension succeeded."
+    ],
+    "name": "SclpGrowPartition",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1665,
+    "size": 972,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 2,
+    "demangled": "SclRegProcessUserProfileHives",
+    "ea": "0x18000bc68",
+    "function_file": "functions/18000bc68_SclRegProcessUserProfileHives.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "PATHNAME",
+      "PATHNAME",
+      "(%lx): Failure during enumeration of subkeys.",
+      "(%lx): Failed to open PROFILELIST key.",
+      "PROFILEIMAGEPATH"
+    ],
+    "name": "SclRegProcessUserProfileHives",
+    "prototype": "__int64 __fastcall(__int64, __int64, const WCHAR *, const WCHAR *, const wchar_t *, __int64)",
+    "rank_score": 1645,
+    "size": 1452,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "CanonicalizeObjectPathByHandle",
+    "ea": "0x180014fa0",
+    "function_file": "functions/180014fa0_CanonicalizeObjectPathByHandle.md",
+    "matched_imports": [
+      "ntdll!NtQueryObject",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "CanonicalizeObjectPathByHandle",
+    "prototype": "__int64 __fastcall(HANDLE Handle, _QWORD *)",
+    "rank_score": 1631,
+    "size": 393,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 4,
+    "demangled": "SclRegProcessKeyByHandle",
+    "ea": "0x18000acec",
+    "function_file": "functions/18000acec_SclRegProcessKeyByHandle.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "(%lx): Failed call to SclProcessObjectSecurity().",
+      "(%lx): Failed to open child key: [%ws]",
+      "(%lx): Failed to get canonical path for a changed reg key",
+      "(%lx): Failed to process registry key!"
+    ],
+    "name": "SclRegProcessKeyByHandle",
+    "prototype": "__int64 __fastcall(__int64, void *, char, __int64)",
+    "rank_score": 1618,
+    "size": 1319,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SclRegCopyKeyRecursiveByName",
+    "ea": "0x1800088bc",
+    "function_file": "functions/1800088bc_SclRegCopyKeyRecursiveByName.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "(%lx): Failed to open source key [%ws].",
+      "SclRegCopyKeyRecursiveByName",
+      "SclRegCopyKeyRecursiveByName",
+      "SclRegCopyKeyRecursiveByName",
+      "Source key [%ws] didn't already exist",
+      "(%lx): Failed to query object security for size.",
+      "(%lx): Failed to create destination key [%ws].",
+      "Target key [%ws] already exists"
+    ],
+    "name": "SclRegCopyKeyRecursiveByName",
+    "prototype": "__int64 __fastcall(void *, const WCHAR *, const WCHAR *)",
+    "rank_score": 1565,
+    "size": 798,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "SclRegLoadUnloadHive",
+    "ea": "0x180009904",
+    "function_file": "functions/180009904_SclRegLoadUnloadHive.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateFile",
+      "ntdll!NtDelayExecution",
+      "ntdll!NtLoadKey",
+      "ntdll!NtUnloadKey",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Saw SHARING_VIOLATION while loading hive [%ws]; is it already loaded?",
+      "(%lx): Failed to find loaded hive path for key: [%ws]",
+      "Hive file [%ws] is in use; will attempt retries to ensure unload"
+    ],
+    "name": "SclRegLoadUnloadHive",
+    "prototype": "__int64 __fastcall(char, const WCHAR *, const WCHAR *)",
+    "rank_score": 1557,
+    "size": 953,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SclpStateStoreChangedKeys",
+    "ea": "0x1800051d8",
+    "function_file": "functions/1800051d8_SclpStateStoreChangedKeys.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "System32\\config"
+    ],
+    "name": "SclpStateStoreChangedKeys",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, void *, const WCHAR *, _QWORD *)",
+    "rank_score": 1482,
+    "size": 555,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RetargetLinkReparsePointByHandle",
+    "ea": "0x180016118",
+    "function_file": "functions/180016118_RetargetLinkReparsePointByHandle.md",
+    "matched_imports": [
+      "ntdll!NtFsControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlAdjustPrivilege",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "FixReparsePointPath: Ignoring reparse point with tag [0x%X]."
+    ],
+    "name": "RetargetLinkReparsePointByHandle",
+    "prototype": "__int64 __fastcall(char *Handle, const wchar_t *, const wchar_t *, _DWORD *)",
+    "rank_score": 1479,
+    "size": 545,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SclpGrowPartitionInternal",
+    "ea": "0x180010544",
+    "function_file": "functions/180010544_SclpGrowPartitionInternal.md",
+    "matched_imports": [
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtFsControlFile",
+      "ntdll!NtQueryVolumeInformationFile",
+      "ntdll!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "Partition extension not needed."
+    ],
+    "name": "SclpGrowPartitionInternal",
+    "prototype": "__int64 __fastcall(__int64, void *, void *, __int64, __int64)",
+    "rank_score": 1462,
+    "size": 900,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SclpCanonicalizePaths",
+    "ea": "0x180004c88",
+    "function_file": "functions/180004c88_SclpCanonicalizePaths.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SclDosPathToNtPath error with %ws. Error: 0x%08X",
+      "SclpCanonicalizePaths",
+      "SclpCanonicalizePaths",
+      "CanonicalizeObjectPath error with %ws. Error: 0x%08X"
+    ],
+    "name": "SclpCanonicalizePaths",
+    "prototype": "__int64 __fastcall(void *, _WORD *, _QWORD *)",
+    "rank_score": 1392,
+    "size": 718,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "SclStateValidateAndRetrieveChanges",
+    "ea": "0x180004844",
+    "function_file": "functions/180004844_SclStateValidateAndRetrieveChanges.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtQuerySystemInformation",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "SECURITY",
+      "System32\\config"
+    ],
+    "name": "SclStateValidateAndRetrieveChanges",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 1351,
+    "size": 1086,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SclRegProcessOfflineRegistry",
+    "ea": "0x1800111bc",
+    "function_file": "functions/1800111bc_SclRegProcessOfflineRegistry.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SECURITY",
+      "SECURITY",
+      "Marking event [&SclEvent_ProcessSystemRegistry_Start]",
+      "Marking event [&SclEvent_ProcessSystemRegistry_Stop]",
+      "(%lx): Failed to process offline registry",
+      "SclRegProcessOfflineRegistry"
+    ],
+    "name": "SclRegProcessOfflineRegistry",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64 *)",
+    "rank_score": 1290,
+    "size": 1569,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "SclPreCompilePendedRequests",
+    "ea": "0x1800061b0",
+    "function_file": "functions/1800061b0_SclPreCompilePendedRequests.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SclPreCompilePendedRequests",
+    "prototype": "__int64 __fastcall(wchar_t *, __int64, _OWORD *)",
+    "rank_score": 1250,
+    "size": 715,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SclCreateFakeNtPathEnvironment",
+    "ea": "0x180007944",
+    "function_file": "functions/180007944_SclCreateFakeNtPathEnvironment.md",
+    "matched_imports": [
+      "ntdll!RtlCreateEnvironment",
+      "ntdll!RtlDestroyEnvironment",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlSetEnvironmentVariable"
+    ],
+    "matched_strings": [],
+    "name": "SclCreateFakeNtPathEnvironment",
+    "prototype": "__int64 __fastcall(const WCHAR *, __int64, PWSTR *)",
+    "rank_score": 1226,
+    "size": 378,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SclpLinkProcessReparsePoint",
+    "ea": "0x180010b08",
+    "function_file": "functions/180010b08_SclpLinkProcessReparsePoint.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Ignoring unrecognized reparse tag [0x%x], [ID=0x%I64x]",
+      "SclpLinkProcessReparsePoint",
+      "SclpLinkProcessReparsePoint",
+      "(%lx): Failed to retrieve reparse point's path, path restrictions will not be honored [ID=0x%I64x]",
+      "Not changing symbolic link %s due to path restrictions",
+      "(%lx): Failed to validate if we should process symbolic link %s",
+      "<path unavailable>",
+      "<path unavailable>",
+      "<path unavailable>",
+      "<path unavailable>",
+      "(%lx): Failed to retarget reparse point [ID=0x%I64x]: [%ws]",
+      "Successfully processed reparse point [%ws]; update %s",
+      "(%lx): Failed to process reparse point [ID=0x%I64x]: [%ws]"
+    ],
+    "name": "SclpLinkProcessReparsePoint",
+    "prototype": "__int64 __fastcall(void *, __int64, int, __int64)",
+    "rank_score": 1164,
+    "size": 1075,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SclRegRenameValue",
+    "ea": "0x18000a190",
+    "function_file": "functions/18000a190_SclRegRenameValue.md",
+    "matched_imports": [
+      "ntdll!NtDeleteValueKey",
+      "ntdll!NtSetValueKey",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Can't rename reg value [%ws] to [%ws]; the target already exists",
+      "SclRegRenameValue",
+      "(%lx): Failed to rename value [%ws] to [%ws]"
+    ],
+    "name": "SclRegRenameValue",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, const WCHAR *, const WCHAR *)",
+    "rank_score": 1147,
+    "size": 411,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SclpFsProcessVolumeByHandle",
+    "ea": "0x180011d8c",
+    "function_file": "functions/180011d8c_SclpFsProcessVolumeByHandle.md",
+    "matched_imports": [
+      "ntdll!NtFsControlFile",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SclpFsProcessVolumeByHandle",
+    "prototype": "__int64 __fastcall(__int64, void *)",
+    "rank_score": 1031,
+    "size": 695,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "SclRegDeleteKey",
+    "ea": "0x180008d44",
+    "function_file": "functions/180008d44_SclRegDeleteKey.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDeleteKey",
+      "ntdll!NtOpenKey",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SclRegDeleteKey",
+    "prototype": "__int64 __fastcall(HANDLE Handle)",
+    "rank_score": 1028,
+    "size": 245,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "SclRegGetValue",
+    "ea": "0x180009668",
+    "function_file": "functions/180009668_SclRegGetValue.md",
+    "matched_imports": [
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SclRegGetValue",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, const WCHAR *, int, _QWORD *, ULONG ResultLength)",
+    "rank_score": 1023,
+    "size": 500,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "SclRegDeleteKeyRecursive",
+    "ea": "0x180008e40",
+    "function_file": "functions/180008e40_SclRegDeleteKeyRecursive.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "(%lx): Failed to open subkey '%ws'",
+      "(%lx): Failed to open subkey '%ws'",
+      "SclRegDeleteKeyRecursive",
+      "(%lx): Unable to recursively delete subkey '%ws'"
+    ],
+    "name": "SclRegDeleteKeyRecursive",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *)",
+    "rank_score": 1003,
+    "size": 423,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SclDeleteFileObject",
+    "ea": "0x18000e4e4",
+    "function_file": "functions/18000e4e4_SclDeleteFileObject.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtSetInformationFile"
+    ],
+    "matched_strings": [
+      "(%lx): Failed to open [%ws]",
+      "SclDeleteFileObject",
+      "(%lx): Unable to delete [%ws]"
+    ],
+    "name": "SclDeleteFileObject",
+    "prototype": "__int64 __fastcall(const WCHAR *)",
+    "rank_score": 948,
+    "size": 386,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "SclPendRequest",
+    "ea": "0x180002640",
+    "function_file": "functions/180002640_SclPendRequest.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtFlushKey",
+      "ntdll!RtlLengthSid"
+    ],
+    "matched_strings": [
+      "SidAccountDomainOld",
+      "SidAccountDomainNew"
+    ],
+    "name": "SclPendRequest",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 929,
+    "size": 1043,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WdsEnumVolumeReparsePointsByHandle",
+    "ea": "0x180016340",
+    "function_file": "functions/180016340_WdsEnumVolumeReparsePointsByHandle.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryDirectoryFile",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "$Extend\\$Reparse:$R:$INDEX_ALLOCATION"
+    ],
+    "name": "WdsEnumVolumeReparsePointsByHandle",
+    "prototype": "__int64 __fastcall(char *, __int64, __int64, __int64, __int64)",
+    "rank_score": 888,
+    "size": 589,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "GenerateRandomData",
+    "ea": "0x180014da0",
+    "function_file": "functions/180014da0_GenerateRandomData.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtOpenFile",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "GenerateRandomData",
+    "prototype": "_BOOL8 __fastcall(PVOID OutputBuffer, ULONG OutputBufferLength)",
+    "rank_score": 846,
+    "size": 275,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SclSecuritySetDescriptor",
+    "ea": "0x180001bc0",
+    "function_file": "functions/180001bc0_SclSecuritySetDescriptor.md",
+    "matched_imports": [
+      "ntdll!NtSetSecurityObject",
+      "ntdll!RtlGetControlSecurityDescriptor",
+      "ntdll!RtlSetControlSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SclSecuritySetDescriptor",
+    "prototype": "int __fastcall(HANDLE Handle, PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 835,
+    "size": 171,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "SclReleasePrivileges",
+    "ea": "0x180001970",
+    "function_file": "functions/180001970_SclReleasePrivileges.md",
+    "matched_imports": [
+      "ntdll!RtlAdjustPrivilege",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SclReleasePrivileges",
+    "prototype": "__int64 __fastcall(_DWORD *P)",
+    "rank_score": 829,
+    "size": 162,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GetReparsePointData",
+    "ea": "0x180015f7c",
+    "function_file": "functions/180015f7c_GetReparsePointData.md",
+    "matched_imports": [
+      "ntdll!NtFsControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "GetReparsePointData",
+    "prototype": "__int64 __fastcall(HANDLE Handle, _QWORD *, _DWORD *, _DWORD *)",
+    "rank_score": 824,
+    "size": 260,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SclLoadStringResource",
+    "ea": "0x180007d60",
+    "function_file": "functions/180007d60_SclLoadStringResource.md",
+    "matched_imports": [
+      "ntdll!RtlAnsiStringToUnicodeString",
+      "ntdll!RtlCreateUnicodeString",
+      "ntdll!RtlFindMessage",
+      "ntdll!RtlInitAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "SclLoadStringResource",
+    "prototype": "__int64 __fastcall(void *, struct _UNICODE_STRING *, ULONG)",
+    "rank_score": 812,
+    "size": 144,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SclRetrieveSid",
+    "ea": "0x180001a18",
+    "function_file": "functions/180001a18_SclRetrieveSid.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "(%lx): Failed to open key [%ws]!",
+      "SclRetrieveSid",
+      "SclRetrieveSid"
+    ],
+    "name": "SclRetrieveSid",
+    "prototype": "__int64 __fastcall(HANDLE, const WCHAR *, const WCHAR *, _QWORD *)",
+    "rank_score": 748,
+    "size": 378,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "SclAcquireRequiredPrivileges",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_SclAcquireRequiredPrivileges.md",
+    "matched_imports": [
+      "ntdll!RtlAdjustPrivilege",
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [
+      "(%lx): Unable to enable privilege [%u]!",
+      "SclAcquireRequiredPrivileges"
+    ],
+    "name": "SclAcquireRequiredPrivileges",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 712,
+    "size": 390,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "SclFsProcessVolume",
+    "ea": "0x18001188c",
+    "function_file": "functions/18001188c_SclFsProcessVolume.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!_wcsicmp"
+    ],
+    "matched_strings": [
+      "The current (host) OS is not supported for FS SID replacement!"
+    ],
+    "name": "SclFsProcessVolume",
+    "prototype": "__int64 __fastcall(_BYTE *, _WORD *)",
+    "rank_score": 680,
+    "size": 1057,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SclRegEnumerateHiveList",
+    "ea": "0x180008ff0",
+    "function_file": "functions/180008ff0_SclRegEnumerateHiveList.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CURRENTCONTROLSET\\CONTROL\\HIVELIST"
+    ],
+    "name": "SclRegEnumerateHiveList",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 668,
+    "size": 294,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CanonicalizeObjectPath",
+    "ea": "0x180014ebc",
+    "function_file": "functions/180014ebc_CanonicalizeObjectPath.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "CanonicalizeObjectPath",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, __int64)",
+    "rank_score": 645,
+    "size": 221,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "SclCreateKeyEx",
+    "ea": "0x18000154c",
+    "function_file": "functions/18000154c_SclCreateKeyEx.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtCreateKey",
+      "ntdll!NtQueryKey"
+    ],
+    "matched_strings": [],
+    "name": "SclCreateKeyEx",
+    "prototype": "__int64 __fastcall(void *, struct _UNICODE_STRING *, ACCESS_MASK, int, ULONG *Disposition, void **KeyHandle)",
+    "rank_score": 630,
+    "size": 233,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SclFileObjectExists",
+    "ea": "0x18000e66c",
+    "function_file": "functions/18000e66c_SclFileObjectExists.md",
+    "matched_imports": [
+      "ntdll!NtQueryAttributesFile",
+      "ntdll!RtlSetThreadErrorMode"
+    ],
+    "matched_strings": [],
+    "name": "SclFileObjectExists",
+    "prototype": "bool __fastcall(const WCHAR *)",
+    "rank_score": 617,
+    "size": 205,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SclFreeRequest",
+    "ea": "0x180001f70",
+    "function_file": "functions/180001f70_SclFreeRequest.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SclFreeRequest",
+    "prototype": "void *__fastcall(_QWORD *)",
+    "rank_score": 616,
+    "size": 148,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SclpFileGetLastWriteTime",
+    "ea": "0x180004f5c",
+    "function_file": "functions/180004f5c_SclpFileGetLastWriteTime.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenFile",
+      "ntdll!NtQueryInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "SclpFileGetLastWriteTime",
+    "prototype": "__int64 __fastcall(const WCHAR *, _QWORD *)",
+    "rank_score": 616,
+    "size": 249,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SclpFreeRenameItem",
+    "ea": "0x18000c68c",
+    "function_file": "functions/18000c68c_SclpFreeRenameItem.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SclpFreeRenameItem",
+    "prototype": "BOOLEAN __fastcall(_QWORD *P)",
+    "rank_score": 613,
+    "size": 119,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "EfiApiInitialize",
+    "ea": "0x180014094",
+    "function_file": "functions/180014094_EfiApiInitialize.md",
+    "matched_imports": [
+      "ntdll!LdrGetDllHandle",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "NtDeleteBootEntry",
+      "NtDeleteDriverEntry",
+      "NtTranslateFilePath"
+    ],
+    "name": "EfiApiInitialize",
+    "prototype": "__int64()",
+    "rank_score": 595,
+    "size": 471,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SclExtractSidSubString",
+    "ea": "0x180001764",
+    "function_file": "functions/180001764_SclExtractSidSubString.md",
+    "matched_imports": [
+      "ntdll!RtlConvertSidToUnicodeString",
+      "ntdll!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [
+      "(%lx): RtlConvertSidToUnicodeString failed!",
+      "SclExtractSidSubString",
+      "SclExtractSidSubString",
+      "RtlConvertSidToUnicodeString returned too short of a string."
+    ],
+    "name": "SclExtractSidSubString",
+    "prototype": "__int64 __fastcall(PSID Sid, _WORD *)",
+    "rank_score": 586,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SclRegProcessUpgradeRegistryOnline",
+    "ea": "0x18000b90c",
+    "function_file": "functions/18000b90c_SclRegProcessUpgradeRegistryOnline.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "SECURITY",
+      "SECURITY",
+      "Deleted SECURITY hive contents in target image Status:0x%x",
+      "SclRegProcessUpgradeRegistryOnline",
+      "Deleted SAM hive contents in target image Status:0x%x",
+      "Migrating SAM registry content",
+      "Migrating SECURITY registry content",
+      "(%lx): Failed to create the SECURITY root descriptor."
+    ],
+    "name": "SclRegProcessUpgradeRegistryOnline",
+    "prototype": "__int64 __fastcall(__int64, char)",
+    "rank_score": 583,
+    "size": 853,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "FixReparsePointPath",
+    "ea": "0x1800156f8",
+    "function_file": "functions/1800156f8_FixReparsePointPath.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "FixReparsePointPath: Skipping the current symbolic link; it's relative.",
+      "FixReparsePointPath: Reparse points with ReparseTag [0x%x] cannot be updated.",
+      "Updates required for link; Old SubstName = [%s], Old PrintName = [%s]"
+    ],
+    "name": "FixReparsePointPath",
+    "prototype": "__int64 __fastcall(unsigned int *, _DWORD *, int *, const wchar_t *, STRSAFE_PCNZWCH, _DWORD *)",
+    "rank_score": 576,
+    "size": 2173,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SclProcessObjectSecurity",
+    "ea": "0x1800121d4",
+    "function_file": "functions/1800121d4_SclProcessObjectSecurity.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "(%lx): Failed to query object security!",
+      "SclProcessObjectSecurity",
+      "(%lx): Failed to set security info."
+    ],
+    "name": "SclProcessObjectSecurity",
+    "prototype": "__int64 __fastcall(__int64, void *, _BYTE *)",
+    "rank_score": 550,
+    "size": 471,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SclRegCopySecurityInfo",
+    "ea": "0x180008be0",
+    "function_file": "functions/180008be0_SclRegCopySecurityInfo.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "(%lx): Failed to query object security for size.",
+      "SclRegCopySecurityInfo",
+      "(%lx): Failed to create destination child key."
+    ],
+    "name": "SclRegCopySecurityInfo",
+    "prototype": "__int64 __fastcall(__int64, __int64, void *)",
+    "rank_score": 548,
+    "size": 349,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SclpRemoveContextNoOps",
+    "ea": "0x1800072d0",
+    "function_file": "functions/1800072d0_SclpRemoveContextNoOps.md",
+    "matched_imports": [
+      "ntdll!_wcsicmp"
+    ],
+    "matched_strings": [
+      "Old and new paths are identical ([%ws]); skipping path replacement...",
+      "SclpRemoveContextNoOps",
+      "Old and new SID strings are identical ([%ws]); skipping SID replacement..."
+    ],
+    "name": "SclpRemoveContextNoOps",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 544,
+    "size": 238,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ProcessOnlineRegistryHives",
+    "ea": "0x180010f44",
+    "function_file": "functions/180010f44_ProcessOnlineRegistryHives.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SECURITY",
+      "Marking event [&SclEvent_ProcessSystemRegistry_Start]",
+      "Marking event [&SclEvent_ProcessSystemRegistry_Stop]",
+      "\\REGISTRY\\USER\\.DEFAULT",
+      "\\REGISTRY\\MACHINE\\SAM",
+      "\\REGISTRY\\MACHINE\\SAM\\SAM",
+      "\\REGISTRY\\MACHINE\\SECURITY",
+      "\\REGISTRY\\MACHINE\\SOFTWARE",
+      "\\REGISTRY\\MACHINE\\SYSTEM",
+      "ProcessOnlineRegistryHives",
+      "ProcessOnlineRegistryHives",
+      "ProcessOnlineRegistryHives"
+    ],
+    "name": "ProcessOnlineRegistryHives",
+    "prototype": "__int64 __fastcall(__int64, __int64 *)",
+    "rank_score": 510,
+    "size": 623,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SclGenerateUniqueAccountDomainSid",
+    "ea": "0x180001848",
+    "function_file": "functions/180001848_SclGenerateUniqueAccountDomainSid.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateAndInitializeSid",
+      "ntdll!RtlFreeSid"
+    ],
+    "matched_strings": [
+      "Unable to generate new account domain SID",
+      "SclGenerateUniqueAccountDomainSid"
+    ],
+    "name": "SclGenerateUniqueAccountDomainSid",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 508,
+    "size": 281,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SclpForceContextOps",
+    "ea": "0x180006f24",
+    "function_file": "functions/180006f24_SclpForceContextOps.md",
+    "matched_imports": [
+      "ntdll!_wcsicmp"
+    ],
+    "matched_strings": [
+      "Old and new paths were identical ([%ws]); using new path [%ws]...",
+      "Old and new SID strings are identical ([%ws]); using new SID string [%ws]..."
+    ],
+    "name": "SclpForceContextOps",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 505,
+    "size": 307,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "SclStateClearChanges",
+    "ea": "0x180002b98",
+    "function_file": "functions/180002b98_SclStateClearChanges.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "System32\\config"
+    ],
+    "name": "SclStateClearChanges",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 502,
+    "size": 298,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SclpGptInitZeroedPartitionGuids",
+    "ea": "0x18000f22c",
+    "function_file": "functions/18000f22c_SclpGptInitZeroedPartitionGuids.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Found and updated NULL GUID at partition %u"
+    ],
+    "name": "SclpGptInitZeroedPartitionGuids",
+    "prototype": "__int64 __fastcall(_BYTE *, unsigned int, char *)",
+    "rank_score": 472,
+    "size": 518,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "SclRegGetString",
+    "ea": "0x18000952c",
+    "function_file": "functions/18000952c_SclRegGetString.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Value [%ws] is not registry string value"
+    ],
+    "name": "SclRegGetString",
+    "prototype": "__int64 __fastcall(HANDLE, const WCHAR *, __int64, _WORD *, unsigned int)",
+    "rank_score": 470,
+    "size": 309,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SclRegGetDword",
+    "ea": "0x180009438",
+    "function_file": "functions/180009438_SclRegGetDword.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Value [%ws] is not registry DWORD value"
+    ],
+    "name": "SclRegGetDword",
+    "prototype": "__int64 __fastcall(HANDLE, const WCHAR *, __int64, _DWORD *)",
+    "rank_score": 467,
+    "size": 238,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SclpStateUpdateRequestField",
+    "ea": "0x18000540c",
+    "function_file": "functions/18000540c_SclpStateUpdateRequestField.md",
+    "matched_imports": [
+      "ntdll!NtDeleteValueKey",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SclpStateUpdateRequestField",
+    "prototype": "int __fastcall(HANDLE KeyHandle, PCWSTR SourceString, __int64, int, int)",
+    "rank_score": 434,
+    "size": 120,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "SclDosPathToNtPath",
+    "ea": "0x180007ac4",
+    "function_file": "functions/180007ac4_SclDosPathToNtPath.md",
+    "matched_imports": [
+      "ntdll!RtlDosPathNameToNtPathName_U_WithStatus",
+      "ntdll!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SclDosPathToNtPath",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 431,
+    "size": 102,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "SclRequestIsValid",
+    "ea": "0x180006484",
+    "function_file": "functions/180006484_SclRequestIsValid.md",
+    "matched_imports": [
+      "ntdll!RtlValidSid"
+    ],
+    "matched_strings": [],
+    "name": "SclRequestIsValid",
+    "prototype": "bool __fastcall(__int64, __int64)",
+    "rank_score": 429,
+    "size": 365,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SclDuplicateSid",
+    "ea": "0x1800016e4",
+    "function_file": "functions/1800016e4_SclDuplicateSid.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SclDuplicateSid",
+    "prototype": "__int64 __fastcall(void *Src, _QWORD *)",
+    "rank_score": 424,
+    "size": 119,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SclEtwWriteSid",
+    "ea": "0x1800059a4",
+    "function_file": "functions/1800059a4_SclEtwWriteSid.md",
+    "matched_imports": [
+      "ntdll!EtwEventWrite",
+      "ntdll!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SclEtwWriteSid",
+    "prototype": "void __fastcall(__int64, __int64, void *)",
+    "rank_score": 423,
+    "size": 118,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "BuildPath",
+    "ea": "0x1800151f0",
+    "function_file": "functions/1800151f0_BuildPath.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BuildPath",
+    "prototype": "wchar_t *__fastcall(STRSAFE_PCNZWCH pszSrc, STRSAFE_PCNZWCH)",
+    "rank_score": 421,
+    "size": 463,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "SclCloneString",
+    "ea": "0x18000a75c",
+    "function_file": "functions/18000a75c_SclCloneString.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SclCloneString",
+    "prototype": "__int64 __fastcall(_WORD *, __int64, _QWORD *, _QWORD *)",
+    "rank_score": 421,
+    "size": 142,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SclFindAndReplaceChars",
+    "ea": "0x1800126d8",
+    "function_file": "functions/1800126d8_SclFindAndReplaceChars.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "SclFindAndReplaceChars",
+    "prototype": "__int64 __fastcall(char *Src, unsigned __int64, unsigned __int64 *, unsigned __int64 *, __int64, __int64, const void *, unsigned __int64, bool *)",
+    "rank_score": 421,
+    "size": 695,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "SclExpandString",
+    "ea": "0x180007b30",
+    "function_file": "functions/180007b30_SclExpandString.md",
+    "matched_imports": [
+      "ntdll!RtlExpandEnvironmentStrings_U",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SclExpandString",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, void *)",
+    "rank_score": 418,
+    "size": 241,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SclLogGenericMessageV",
+    "ea": "0x18000a564",
+    "function_file": "functions/18000a564_SclLogGenericMessageV.md",
+    "matched_imports": [
+      "ntdll!EtwEventWrite",
+      "ntdll!_vsnprintf"
+    ],
+    "matched_strings": [],
+    "name": "SclLogGenericMessageV",
+    "prototype": "int __fastcall(_QWORD *, unsigned int, __int64, int, __int64, char *Format, va_list ArgList)",
+    "rank_score": 416,
+    "size": 306,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SclRegValueExists",
+    "ea": "0x18000a4a0",
+    "function_file": "functions/18000a4a0_SclRegValueExists.md",
+    "matched_imports": [
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SclRegValueExists",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, const WCHAR *, bool *)",
+    "rank_score": 416,
+    "size": 126,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SclpIsLinkInPaths",
+    "ea": "0x1800109f0",
+    "function_file": "functions/1800109f0_SclpIsLinkInPaths.md",
+    "matched_imports": [
+      "ntdll!_wcsicmp",
+      "ntdll!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "SclpIsLinkInPaths",
+    "prototype": "__int64 __fastcall(wchar_t *String1, _WORD *, _DWORD *)",
+    "rank_score": 415,
+    "size": 272,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SclRegKeyExists",
+    "ea": "0x180009864",
+    "function_file": "functions/180009864_SclRegKeyExists.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "SclRegKeyExists",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, bool *)",
+    "rank_score": 414,
+    "size": 152,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "EfiApiGetProcedureAddress",
+    "ea": "0x180014040",
+    "function_file": "functions/180014040_EfiApiGetProcedureAddress.md",
+    "matched_imports": [
+      "ntdll!LdrGetProcedureAddress",
+      "ntdll!RtlInitAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "EfiApiGetProcedureAddress",
+    "prototype": "PVOID __fastcall(PVOID BaseAddress, const char *)",
+    "rank_score": 412,
+    "size": 78,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SclpStateOpenRequestKey",
+    "ea": "0x18000505c",
+    "function_file": "functions/18000505c_SclpStateOpenRequestKey.md",
+    "matched_imports": [
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SYSTEM\\SETUP\\SETUPCL",
+      "Manipulating a pended request in offline mode requires access to the offline SYSTEM hive.",
+      "SclpStateOpenRequestKey",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\SETUP\\SETUPCL\\PendingRequest"
+    ],
+    "name": "SclpStateOpenRequestKey",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 397,
+    "size": 225,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "SclRegProcessKeySubkeys",
+    "ea": "0x18000b21c",
+    "function_file": "functions/18000b21c_SclRegProcessKeySubkeys.md",
+    "matched_imports": [
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [
+      "(%lx): Failure during enumeration of subkeys.",
+      "SclCreateKey failed to open child key [%.*ws], returning STATUS_ACCESS_DENIED; will try with lowered access rights",
+      "(%lx): Failed to open child key: [%.*ws]"
+    ],
+    "name": "SclRegProcessKeySubkeys",
+    "prototype": "__int64 __fastcall(_BYTE *, void *, __int64, __int64, __int64 *, __int64, char *)",
+    "rank_score": 358,
+    "size": 779,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SclLinkProcessVolume",
+    "ea": "0x1800108d0",
+    "function_file": "functions/1800108d0_SclLinkProcessVolume.md",
+    "matched_imports": [
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [
+      "Processing links on volume [%ws]: old base = [%ws]; new base = [%ws]",
+      "SclLinkProcessVolume",
+      "(%lx): Failed to enumerate reparse points on volume [%ws]"
+    ],
+    "name": "SclLinkProcessVolume",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *)",
+    "rank_score": 347,
+    "size": 279,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 3,
+    "demangled": "SclpResolveRequest",
+    "ea": "0x1800073c4",
+    "function_file": "functions/1800073c4_SclpResolveRequest.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SECURITY\\POLICY\\POLACDMS",
+      "\\REGISTRY\\MACHINE\\SECURITY\\POLICY\\POLACDMS",
+      "Requests to replace the account domain SID that don't provide an explicit 'old' SID require access to the SECURITY hive.",
+      "PATHNAME",
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION",
+      "Requests to replace the OS drive path that don't provide an explicit 'old' path require access to the SOFTWARE hive.",
+      "Requests to replace the OS drive path that don't provide an explicit 'new' path require access to the SOFTWARE hive."
+    ],
+    "name": "SclpResolveRequest",
+    "prototype": "__int64 __fastcall(__int64, __int64, _DWORD *)",
+    "rank_score": 331,
+    "size": 971,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SclRegProcessProfileHive",
+    "ea": "0x18000b738",
+    "function_file": "functions/18000b738_SclRegProcessProfileHive.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Found hive [%ws] already loaded at: [%ws]"
+    ],
+    "name": "SclRegProcessProfileHive",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *)",
+    "rank_score": 271,
+    "size": 461,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SclGetDiskHandle",
+    "ea": "0x18000e8d4",
+    "function_file": "functions/18000e8d4_SclGetDiskHandle.md",
+    "matched_imports": [
+      "ntdll!NtCreateFile"
+    ],
+    "matched_strings": [
+      "(%lx): Unable to open handle to [%ws]."
+    ],
+    "name": "SclGetDiskHandle",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, void **)",
+    "rank_score": 269,
+    "size": 333,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SclRegSetValue_UStr",
+    "ea": "0x18000a394",
+    "function_file": "functions/18000a394_SclRegSetValue_UStr.md",
+    "matched_imports": [
+      "ntdll!NtSetValueKey"
+    ],
+    "matched_strings": [
+      "SclRegSetValue_UStr"
+    ],
+    "name": "SclRegSetValue_UStr",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, __int64, WCHAR *, unsigned int, PVOID Data, ULONG DataSize, ULONG Type)",
+    "rank_score": 266,
+    "size": 261,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SclpSetDiskLayout",
+    "ea": "0x18000f438",
+    "function_file": "functions/18000f438_SclpSetDiskLayout.md",
+    "matched_imports": [
+      "ntdll!NtDeviceIoControlFile"
+    ],
+    "matched_strings": [
+      "Successfully updated layout"
+    ],
+    "name": "SclpSetDiskLayout",
+    "prototype": "__int64 __fastcall(__int64, void *, void *, ULONG)",
+    "rank_score": 264,
+    "size": 165,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SclRegProcessKey",
+    "ea": "0x18000ac28",
+    "function_file": "functions/18000ac28_SclRegProcessKey.md",
+    "matched_imports": [
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [
+      "(%lx): Failed to open key: [%ws]"
+    ],
+    "name": "SclRegProcessKey",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, __int64)",
+    "rank_score": 257,
+    "size": 187,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SclGetVolumeHandle",
+    "ea": "0x18000e740",
+    "function_file": "functions/18000e740_SclGetVolumeHandle.md",
+    "matched_imports": [
+      "ntdll!NtOpenFile"
+    ],
+    "matched_strings": [
+      "(%lx): Failed NtOpenFile on [%ws]"
+    ],
+    "name": "SclGetVolumeHandle",
+    "prototype": "__int64 __fastcall(const WCHAR *, void **)",
+    "rank_score": 256,
+    "size": 238,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "EFIOSBOCreateEx",
+    "ea": "0x18001378c",
+    "function_file": "functions/18001378c_EFIOSBOCreateEx.md",
+    "matched_imports": [
+      "ntdll!RtlAdjustPrivilege"
+    ],
+    "matched_strings": [],
+    "name": "EFIOSBOCreateEx",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 239,
+    "size": 892,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "OSDriverSetFileName",
+    "ea": "0x180014a94",
+    "function_file": "functions/180014a94_OSDriverSetFileName.md",
+    "matched_imports": [
+      "ntdll!wcsrchr"
+    ],
+    "matched_strings": [],
+    "name": "OSDriverSetFileName",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *)",
+    "rank_score": 225,
+    "size": 129,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "SclCreateKey",
+    "ea": "0x1800014e8",
+    "function_file": "functions/1800014e8_SclCreateKey.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SclCreateKey",
+    "prototype": "__int64 __fastcall(__int64, const WCHAR *, unsigned int, __int64)",
+    "rank_score": 225,
+    "size": 91,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "INIT_OBJA_EX",
+    "ea": "0x180001c74",
+    "function_file": "functions/180001c74_INIT_OBJA_EX.md",
+    "matched_imports": [
+      "ntdll!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "INIT_OBJA_EX",
+    "prototype": "__int64 __fastcall(__int64, struct _UNICODE_STRING *, const WCHAR *, int, __int64)",
+    "rank_score": 223,
+    "size": 90,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "SclOpenKey",
+    "ea": "0x1800025ec",
+    "function_file": "functions/1800025ec_SclOpenKey.md",
+    "matched_imports": [
+      "ntdll!NtOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "SclOpenKey",
+    "prototype": "NTSTATUS __fastcall(void *, struct _UNICODE_STRING *, ACCESS_MASK, int, void **KeyHandle)",
+    "rank_score": 223,
+    "size": 75,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "SclSecurityGetDescriptor",
+    "ea": "0x180001b98",
+    "function_file": "functions/180001b98_SclSecurityGetDescriptor.md",
+    "matched_imports": [
+      "ntdll!NtQuerySecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "SclSecurityGetDescriptor",
+    "prototype": "NTSTATUS __fastcall(void *, void *, ULONG, ULONG *LengthNeeded)",
+    "rank_score": 223,
+    "size": 31,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartupForGS",
+    "ea": "0x1800011a0",
+    "function_file": "functions/1800011a0_DllMainCRTStartupForGS.md",
+    "matched_imports": [
+      "ntdll!LdrDisableThreadCalloutsForDll"
+    ],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartupForGS",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 222,
+    "size": 39,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "BuildPathMulti",
+    "ea": "0x1800153c8",
+    "function_file": "functions/1800153c8_BuildPathMulti.md",
+    "matched_imports": [
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "BuildPathMulti",
+    "prototype": "wchar_t *(unsigned int, const wchar_t *, const wchar_t *, ...)",
+    "rank_score": 219,
+    "size": 166,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "SclpRegAddProcessItemToList",
+    "ea": "0x18000d124",
+    "function_file": "functions/18000d124_SclpRegAddProcessItemToList.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "SclpRegAddProcessItemToList",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, _WORD *, unsigned int, int)",
+    "rank_score": 218,
+    "size": 244,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "RtlStringCchPrintfW",
+    "ea": "0x180001d48",
+    "function_file": "functions/180001d48_RtlStringCchPrintfW.md",
+    "matched_imports": [
+      "ntdll!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "RtlStringCchPrintfW",
+    "prototype": "__int64(wchar_t *, unsigned __int64, const wchar_t *, ...)",
+    "rank_score": 216,
+    "size": 132,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SclEtwWriteString",
+    "ea": "0x180005a20",
+    "function_file": "functions/180005a20_SclEtwWriteString.md",
+    "matched_imports": [
+      "ntdll!EtwEventWrite"
+    ],
+    "matched_strings": [],
+    "name": "SclEtwWriteString",
+    "prototype": "void __fastcall(__int64, __int64, __int64)",
+    "rank_score": 216,
+    "size": 101,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SclLogTimingEvent",
+    "ea": "0x18000a69c",
+    "function_file": "functions/18000a69c_SclLogTimingEvent.md",
+    "matched_imports": [
+      "ntdll!EtwEventWrite"
+    ],
+    "matched_strings": [],
+    "name": "SclLogTimingEvent",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 216,
+    "size": 74,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "INTERNAL_ERROR_ACTION(long)",
+    "ea": "0x180016d88",
+    "function_file": "functions/180016d88_INTERNAL_ERROR_ACTION_long.md",
+    "matched_imports": [
+      "ntdll!RtlRaiseStatus"
+    ],
+    "matched_strings": [],
+    "name": "?INTERNAL_ERROR_ACTION@@YAXJ@Z",
+    "prototype": "void __fastcall __noreturn()",
+    "rank_score": 214,
+    "size": 16,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SclEtwWriteStringStringUll",
+    "ea": "0x180001ec4",
+    "function_file": "functions/180001ec4_SclEtwWriteStringStringUll.md",
+    "matched_imports": [
+      "ntdll!EtwEventWrite"
+    ],
+    "matched_strings": [],
+    "name": "SclEtwWriteStringStringUll",
+    "prototype": "void __fastcall(__int64, __int64, __int64, __int64, char)",
+    "rank_score": 214,
+    "size": 164,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "GetLoadedHiveKeyNameInternal(wchar_t const *,wchar_t *,unsigned __int64)",
+    "ea": "0x180016a5c",
+    "function_file": "functions/180016a5c_GetLoadedHiveKeyNameInternal_wchar_t_const_wchar_t_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Not-null check failed: FullOfflineHiveFilePath",
+      "lusSanitizedFilePath.Length != 0",
+      "::RtlStringCchCopyNW(KeyNameBuffer, KeyNameBufferSize, lusKeyName.Buffer, cchKeyName)"
+    ],
+    "name": "?GetLoadedHiveKeyNameInternal@@YAJPEB_WPEA_W_K@Z",
+    "prototype": "__int64 __fastcall(const wchar_t *, wchar_t *)",
+    "rank_score": 148,
+    "size": 803,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SclpStateOpenStatusKey",
+    "ea": "0x180005144",
+    "function_file": "functions/180005144_SclpStateOpenStatusKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SYSTEM\\SETUP\\SETUPCL",
+      "Manipulating SetupCl status in offline mode requires access to the offline SYSTEM hive.",
+      "SclpStateOpenStatusKey"
+    ],
+    "name": "SclpStateOpenStatusKey",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 146,
+    "size": 139,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 24,
+    "demangled": "memset_0",
+    "ea": "0x1800179c5",
+    "function_file": "functions/1800179c5_memset_0.md",
+    "matched_imports": [
+      "ntdll!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 134,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 16,
+    "demangled": "memcpy_0",
+    "ea": "0x1800179ad",
+    "function_file": "functions/1800179ad_memcpy_0.md",
+    "matched_imports": [
+      "ntdll!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 126,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "memmove_0",
+    "ea": "0x1800179b9",
+    "function_file": "functions/1800179b9_memmove_0.md",
+    "matched_imports": [
+      "ntdll!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SclRegProcessOnlineRegistry",
+    "ea": "0x1800117e4",
+    "function_file": "functions/1800117e4_SclRegProcessOnlineRegistry.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION",
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\PROFILELIST"
+    ],
+    "name": "SclRegProcessOnlineRegistry",
+    "prototype": "__int64 __fastcall(__int64, __int64 *)",
+    "rank_score": 106,
+    "size": 160,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SclRegProcessKeyValues",
+    "ea": "0x18000b530",
+    "function_file": "functions/18000b530_SclRegProcessKeyValues.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "(%lx): Failure during enumeration of values."
+    ],
+    "name": "SclRegProcessKeyValues",
+    "prototype": "__int64 __fastcall(_BYTE *, __int64, __int64 *, __int64, char *)",
+    "rank_score": 63,
+    "size": 514,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SclpUefiRefreshDiskBootConfig",
+    "ea": "0x18000f4e4",
+    "function_file": "functions/18000f4e4_SclpUefiRefreshDiskBootConfig.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SclpUefiRefreshDiskBootConfig"
+    ],
+    "name": "SclpUefiRefreshDiskBootConfig",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 62,
+    "size": 387,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "SclRegGetCanonicalMountKeyPath",
+    "ea": "0x180009374",
+    "function_file": "functions/180009374_SclRegGetCanonicalMountKeyPath.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE"
+    ],
+    "name": "SclRegGetCanonicalMountKeyPath",
+    "prototype": "__int64 __fastcall(__int64, wchar_t **)",
+    "rank_score": 60,
+    "size": 188,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 53,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1800179e0",
+    "function_file": "functions/1800179e0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 28,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180018010",
+    "function_file": "functions/180018010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "EFIDECreateDriverEntry",
+    "ea": "0x180014784",
+    "function_file": "functions/180014784_EFIDECreateDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EFIDECreateDriverEntry",
+    "prototype": "_QWORD *__fastcall(_DWORD *, __int64)",
+    "rank_score": 34,
+    "size": 386,
+    "tags": [
+      "file_ops",
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "EFIDECreateNewDriverEntry",
+    "ea": "0x18001490c",
+    "function_file": "functions/18001490c_EFIDECreateNewDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EFIDECreateNewDriverEntry",
+    "prototype": "_QWORD *__fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 29,
+    "size": 197,
+    "tags": [
+      "file_ops",
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 64,
+    "demangled": "SclLogGenericMessage",
+    "ea": "0x18000a524",
+    "function_file": "functions/18000a524_SclLogGenericMessage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclLogGenericMessage",
+    "prototype": "__int64(__int64, int, int, int, __int64, char *, ...)",
+    "rank_score": 27,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18001792c",
+    "function_file": "functions/18001792c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "EFIDEAddOrUpdateDriverEntry",
+    "ea": "0x1800145d0",
+    "function_file": "functions/1800145d0_EFIDEAddOrUpdateDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EFIDEAddOrUpdateDriverEntry",
+    "prototype": "__int64 __fastcall(_DWORD *, char)",
+    "rank_score": 19,
+    "size": 429,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "EFIOSBECreate",
+    "ea": "0x180012dfc",
+    "function_file": "functions/180012dfc_EFIOSBECreate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EFIOSBECreate",
+    "prototype": "_QWORD *__fastcall(__int64, __int64, int)",
+    "rank_score": 18,
+    "size": 752,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "SclRegSetValue",
+    "ea": "0x18000a334",
+    "function_file": "functions/18000a334_SclRegSetValue.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclRegSetValue",
+    "prototype": "__int64 __fastcall(void *, __int64, __int64, void *, ULONG, ULONG Type)",
+    "rank_score": 17,
+    "size": 89,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SclGetOnlineOSVolumeNtPath",
+    "ea": "0x180007cac",
+    "function_file": "functions/180007cac_SclGetOnlineOSVolumeNtPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclGetOnlineOSVolumeNtPath",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 16,
+    "size": 89,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "SclOSIsValid",
+    "ea": "0x18000de94",
+    "function_file": "functions/18000de94_SclOSIsValid.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclOSIsValid",
+    "prototype": "char __fastcall(__int64)",
+    "rank_score": 15,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "OSDriverSetNtPath",
+    "ea": "0x180014b70",
+    "function_file": "functions/180014b70_OSDriverSetNtPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OSDriverSetNtPath",
+    "prototype": "char __fastcall(__int64, const wchar_t *)",
+    "rank_score": 14,
+    "size": 75,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SclProcessSecurityBlob",
+    "ea": "0x1800123b4",
+    "function_file": "functions/1800123b4_SclProcessSecurityBlob.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclProcessSecurityBlob",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, char *)",
+    "rank_score": 13,
+    "size": 120,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001360",
+    "function_file": "functions/180001360_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 68,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "SBE_FREE",
+    "ea": "0x180012d4c",
+    "function_file": "functions/180012d4c_SBE_FREE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SBE_FREE",
+    "prototype": "__int64 (*__fastcall(__int64))(void)",
+    "rank_score": 12,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "StringCchCopyW",
+    "ea": "0x18000f670",
+    "function_file": "functions/18000f670_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 12,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie_ex",
+    "ea": "0x1800013ac",
+    "function_file": "functions/1800013ac_security_init_cookie_ex.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie_ex",
+    "prototype": "unsigned __int64 *__fastcall(unsigned __int64 *)",
+    "rank_score": 12,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "OSBODeleteBootEntry",
+    "ea": "0x1800129a0",
+    "function_file": "functions/1800129a0_OSBODeleteBootEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OSBODeleteBootEntry",
+    "prototype": "char __fastcall(__int64, __int64)",
+    "rank_score": 9,
+    "size": 389,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "Windows::ErrorHandling::Rtl::CBaseFrame<Windows::ErrorHandling::Rtl::CSimpleNtStatusCarryingFrame,long>::OriginateNtStatus(Windows::ErrorHandling::_RTL_CALL_SITE const &,long)",
+    "ea": "0x180016da0",
+    "function_file": "functions/180016da0_Windows_ErrorHandling_Rtl_CBaseFrame_Windows_ErrorHandling_Rtl_CSimpleNtStatusCarryingFrame_long_OriginateNtSt.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OriginateNtStatus@?$CBaseFrame@UCSimpleNtStatusCarryingFrame@Rtl@ErrorHandling@Windows@@J@Rtl@ErrorHandling@Windows@@QEAAJAEBU_RTL_CALL_SITE@34@J@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, __int64, unsigned int)",
+    "rank_score": 7,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "EFIOSBODelete",
+    "ea": "0x180013b10",
+    "function_file": "functions/180013b10_EFIOSBODelete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EFIOSBODelete",
+    "prototype": "void __fastcall(_QWORD *)",
+    "rank_score": 6,
+    "size": 180,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "OSBODeleteDriverEntry",
+    "ea": "0x180012b30",
+    "function_file": "functions/180012b30_OSBODeleteDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OSBODeleteDriverEntry",
+    "prototype": "char __fastcall(__int64, int)",
+    "rank_score": 6,
+    "size": 344,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "RtlStringCchCopyW",
+    "ea": "0x180001cd4",
+    "function_file": "functions/180001cd4_RtlStringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchCopyW",
+    "prototype": "__int64 __fastcall(_WORD *, unsigned __int64, _WORD *)",
+    "rank_score": 6,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SclMultiSzFindNextString",
+    "ea": "0x18000a7f0",
+    "function_file": "functions/18000a7f0_SclMultiSzFindNextString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclMultiSzFindNextString",
+    "prototype": "__int64 __fastcall(unsigned __int64, unsigned __int64, unsigned __int64, _QWORD *, _QWORD *)",
+    "rank_score": 6,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SclRegApplyRename",
+    "ea": "0x18000ab90",
+    "function_file": "functions/18000ab90_SclRegApplyRename.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclRegApplyRename",
+    "prototype": "__int64 __fastcall(_BYTE *, __int64, __int64)",
+    "rank_score": 6,
+    "size": 143,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SclRegEnumerateKey",
+    "ea": "0x1800091c0",
+    "function_file": "functions/1800091c0_SclRegEnumerateKey.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclRegEnumerateKey",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, int, __int64, int, __int64)",
+    "rank_score": 6,
+    "size": 72,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "SclRegEnumerateValueKey",
+    "ea": "0x18000923c",
+    "function_file": "functions/18000923c_SclRegEnumerateValueKey.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclRegEnumerateValueKey",
+    "prototype": "__int64 __fastcall(__int64, int, int, int, __int64, __int64)",
+    "rank_score": 6,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "EfiDeleteDriverEntry",
+    "ea": "0x180014274",
+    "function_file": "functions/180014274_EfiDeleteDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EfiDeleteDriverEntry",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 5,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "EfiTranslateFilePath",
+    "ea": "0x180014444",
+    "function_file": "functions/180014444_EfiTranslateFilePath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EfiTranslateFilePath",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 5,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SclMultiSzRemoveString",
+    "ea": "0x18000a9b0",
+    "function_file": "functions/18000a9b0_SclMultiSzRemoveString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclMultiSzRemoveString",
+    "prototype": "__int64 __fastcall(unsigned __int64, __int64, _WORD *, _QWORD *)",
+    "rank_score": 5,
+    "size": 201,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SclpFreeRenameList",
+    "ea": "0x18000c70c",
+    "function_file": "functions/18000c70c_SclpFreeRenameList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclpFreeRenameList",
+    "prototype": "BOOLEAN __fastcall(_QWORD **)",
+    "rank_score": 5,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "StringCchCopyNW",
+    "ea": "0x180014bc4",
+    "function_file": "functions/180014bc4_StringCchCopyNW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyNW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 5,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AddPathN",
+    "ea": "0x180015130",
+    "function_file": "functions/180015130_AddPathN.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AddPathN",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "EFIGetHardDrivePath",
+    "ea": "0x180012d74",
+    "function_file": "functions/180012d74_EFIGetHardDrivePath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EFIGetHardDrivePath",
+    "prototype": "char __fastcall(_DWORD *, _DWORD *)",
+    "rank_score": 4,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "OSBESetBootPath",
+    "ea": "0x180013e38",
+    "function_file": "functions/180013e38_OSBESetBootPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OSBESetBootPath",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *)",
+    "rank_score": 4,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "OSBESetOsLoaderPath",
+    "ea": "0x180013f98",
+    "function_file": "functions/180013f98_OSBESetOsLoaderPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OSBESetOsLoaderPath",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *)",
+    "rank_score": 4,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "OSDriverSetDirPath",
+    "ea": "0x180014a40",
+    "function_file": "functions/180014a40_OSDriverSetDirPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OSDriverSetDirPath",
+    "prototype": "char __fastcall(__int64, const wchar_t *)",
+    "rank_score": 4,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "RtlStringCchCopyNW",
+    "ea": "0x180001464",
+    "function_file": "functions/180001464_RtlStringCchCopyNW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchCopyNW",
+    "prototype": "__int64 __fastcall(_WORD *, unsigned __int64, _WORD *, unsigned __int64)",
+    "rank_score": 4,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Windows::StringUtil::TrimLongPathPrefix<_LUNICODE_STRING>(_LUNICODE_STRING const &)",
+    "ea": "0x1800169d0",
+    "function_file": "functions/1800169d0_Windows_StringUtil_TrimLongPathPrefix_LUNICODE_STRING_LUNICODE_STRING_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$TrimLongPathPrefix@U_LUNICODE_STRING@@@StringUtil@Windows@@YA?AU_LUNICODE_STRING@@AEBU2@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int64 *)",
+    "rank_score": 4,
+    "size": 134,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RtlStringCbCopyNW",
+    "ea": "0x18000a6ec",
+    "function_file": "functions/18000a6ec_RtlStringCbCopyNW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCbCopyNW",
+    "prototype": "__int64 __fastcall(_WORD *, unsigned __int64, _WORD *, unsigned __int64)",
+    "rank_score": 3,
+    "size": 104,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "StringCchCopyNExW",
+    "ea": "0x180015474",
+    "function_file": "functions/180015474_StringCchCopyNExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyNExW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy, STRSAFE_LPWSTR *ppszDestEnd, size_t *pcchRemaining, DWORD dwFlags)",
+    "rank_score": 3,
+    "size": 223,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "EFIOSBEDelete",
+    "ea": "0x180013100",
+    "function_file": "functions/180013100_EFIOSBEDelete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EFIOSBEDelete",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 2,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCchCopyNW(wchar_t *,unsigned __int64,wchar_t const *,unsigned __int64)",
+    "ea": "0x180016dc4",
+    "function_file": "functions/180016dc4_RtlStringCchCopyNW_wchar_t_unsigned_int64_wchar_t_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RtlStringCchCopyNW@@YAJPEA_W_KPEB_W1@Z",
+    "prototype": "__int64 __fastcall(wchar_t *, __int64, wchar_t *, unsigned __int64)",
+    "rank_score": 2,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SclReplaceCharInString",
+    "ea": "0x18000aa80",
+    "function_file": "functions/18000aa80_SclReplaceCharInString.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SclReplaceCharInString",
+    "prototype": "__int64 __fastcall(_WORD *, __int16, __int16)",
+    "rank_score": 2,
+    "size": 38,
+    "tags": []
+  }
+]

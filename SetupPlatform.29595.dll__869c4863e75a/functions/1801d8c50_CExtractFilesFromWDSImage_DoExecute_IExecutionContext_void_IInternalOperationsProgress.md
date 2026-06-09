@@ -1,0 +1,180 @@
+# CExtractFilesFromWDSImage::DoExecute(IExecutionContext *,void *,IInternalOperationsProgress *)
+
+- ea: `0x1801d8c50`
+- end: `0x1801d964c`
+- name: `?DoExecute@CExtractFilesFromWDSImage@@UEAAJPEAUIExecutionContext@@PEAXPEAUIInternalOperationsProgress@@@Z`
+- size: `2556`
+- prototype: `void __fastcall __noreturn(CExtractFilesFromWDSImage *__hidden this, struct IExecutionContext *, void *, struct IInternalOperationsProgress *)`
+- caller_count: `0`
+- callee_count: `5`
+- tags: `file_ops, installer_update, broker_com_uri`
+
+## callees
+
+- `0x18001413d`
+- `0x180057dec`
+- `0x1801d8c50`
+- `0x1801dd188`
+- `0x180509010`
+
+## import_xrefs
+
+- `KERNEL32!GetLastError` at `0x1801d8e6d`
+- `KERNEL32!GetLastError` at `0x1801d8e83`
+- `KERNEL32!GetLastError` at `0x1801d8eaa`
+- `KERNEL32!GetLastError` at `0x1801d9024`
+- `KERNEL32!GetLastError` at `0x1801d91d0`
+- `KERNEL32!GetLastError` at `0x1801d91e7`
+- `KERNEL32!GetLastError` at `0x1801d9207`
+- `KERNEL32!GetLastError` at `0x1801d92a7`
+- `KERNEL32!GetLastError` at `0x1801d92bd`
+- `KERNEL32!GetLastError` at `0x1801d92dd`
+- `KERNEL32!GetLastError` at `0x1801d938c`
+- `KERNEL32!GetLastError` at `0x1801d93a2`
+- `KERNEL32!GetLastError` at `0x1801d93c2`
+- `KERNEL32!GetLastError` at `0x1801d9463`
+- `KERNEL32!GetLastError` at `0x1801d9479`
+- `KERNEL32!GetLastError` at `0x1801d9492`
+- `KERNEL32!GetLastError` at `0x1801d95ae`
+- `KERNEL32!GetLastError` at `0x1801d8e6d`
+- `KERNEL32!GetLastError` at `0x1801d8e83`
+- `KERNEL32!GetLastError` at `0x1801d8eaa`
+- `KERNEL32!GetLastError` at `0x1801d9024`
+- `KERNEL32!GetLastError` at `0x1801d91d0`
+- `KERNEL32!GetLastError` at `0x1801d91e7`
+- `KERNEL32!GetLastError` at `0x1801d9207`
+- `KERNEL32!GetLastError` at `0x1801d92a7`
+- `KERNEL32!GetLastError` at `0x1801d92bd`
+- `KERNEL32!GetLastError` at `0x1801d92dd`
+- `KERNEL32!GetLastError` at `0x1801d938c`
+- `KERNEL32!GetLastError` at `0x1801d93a2`
+- `KERNEL32!GetLastError` at `0x1801d93c2`
+- `KERNEL32!GetLastError` at `0x1801d9463`
+- `KERNEL32!GetLastError` at `0x1801d9479`
+- `KERNEL32!GetLastError` at `0x1801d9492`
+- `KERNEL32!GetLastError` at `0x1801d95ae`
+- `unbcl!?GetFileName@Path@UnBCL@@SAPEAVString@2@PEBV32@@Z` at `0x1801d8fc7`
+- `unbcl!?GetFileName@Path@UnBCL@@SAPEAVString@2@PEBV32@@Z` at `0x1801d8fc7`
+- `unbcl!??0Exception@UnBCL@@QEAA@XZ` at `0x1801d8ca7`
+- `unbcl!??0Exception@UnBCL@@QEAA@XZ` at `0x1801d8ca7`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1801d8ffe`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1801d8ffe`
+- `unbcl!??1Exception@UnBCL@@UEAA@XZ` at `0x1801d91a9`
+- `unbcl!??1Exception@UnBCL@@UEAA@XZ` at `0x1801d91a9`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d8d0a`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d8f74`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d8fa0`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d9070`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d913b`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d94b9`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d8d0a`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d8f74`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d8fa0`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d9070`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d913b`
+- `unbcl!??C?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@1@XZ` at `0x1801d94b9`
+- `unbcl!?get_P@?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@2@XZ` at `0x1801d8cf8`
+- `unbcl!?get_P@?$SmartPtr@V?$ArrayList@PEAVString@UnBCL@@@UnBCL@@@UnBCL@@QEBAPEAV?$ArrayList@PEAVString@UnBCL@@@2@XZ` at `0x1801d8cf8`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d3e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d4e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d5e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d6e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d7e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8fe2`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8ff2`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d3e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d4e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d5e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d6e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8d7e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8fe2`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801d8ff2`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801d9044`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801d9122`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801d9044`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801d9122`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8cce`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8dcf`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8e1f`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8e4d`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8ec1`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8ecd`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d904d`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d9060`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d9097`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d912b`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d9162`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d92f3`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d94a8`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d94e0`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8cce`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8dcf`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8e1f`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8e4d`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8ec1`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d8ecd`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d904d`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d9060`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d9097`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d912b`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d9162`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d92f3`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d94a8`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1801d94e0`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1801d901e`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1801d9193`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1801d901e`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1801d9193`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1801d8fd8`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1801d900f`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1801d8fd8`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1801d900f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d8f44`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d9114`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d9278`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d935d`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d9433`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d9548`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d961b`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d8f44`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d9114`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d9278`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d935d`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d9433`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d9548`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1801d961b`
+- `WDSCORE!CurrentIP` at `0x1801d8eb3`
+- `WDSCORE!CurrentIP` at `0x1801d902e`
+- `WDSCORE!CurrentIP` at `0x1801d920f`
+- `WDSCORE!CurrentIP` at `0x1801d92e5`
+- `WDSCORE!CurrentIP` at `0x1801d93ca`
+- `WDSCORE!CurrentIP` at `0x1801d949a`
+- `WDSCORE!CurrentIP` at `0x1801d95b6`
+- `WDSCORE!CurrentIP` at `0x1801d8eb3`
+- `WDSCORE!CurrentIP` at `0x1801d902e`
+- `WDSCORE!CurrentIP` at `0x1801d920f`
+- `WDSCORE!CurrentIP` at `0x1801d92e5`
+- `WDSCORE!CurrentIP` at `0x1801d93ca`
+- `WDSCORE!CurrentIP` at `0x1801d949a`
+- `WDSCORE!CurrentIP` at `0x1801d95b6`
+- `WIMGAPI!WIMRegisterLogFile` at `0x1801d8cdc`
+- `WIMGAPI!WIMRegisterLogFile` at `0x1801d8cdc`
+- `WIMGAPI!WIMCreateFile` at `0x1801d8df3`
+- `WIMGAPI!WIMCreateFile` at `0x1801d8df3`
+- `WIMGAPI!WIMSetTemporaryPath` at `0x1801d8e2b`
+- `WIMGAPI!WIMSetTemporaryPath` at `0x1801d8e2b`
+- `WIMGAPI!WIMSetReferenceFile` at `0x1801d8e5f`
+- `WIMGAPI!WIMSetReferenceFile` at `0x1801d8e5f`
+- `WIMGAPI!WIMExtractImagePathByWimHandle` at `0x1801d917d`
+- `WIMGAPI!WIMExtractImagePathByWimHandle` at `0x1801d917d`
+
+## string_xrefs
+
+- `0x1801d93dd`: `%hs: Cannot set temp path. Error: 0x%x`
+- `0x1801d9307`: `%hs: Failure while opening image file %s. Error 0x%08X`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,254 @@
+# CSuspendBitlocker::DoExecute(IExecutionContext *,void *,IInternalOperationsProgress *)
+
+- ea: `0x180170c50`
+- end: `0x1801724b4`
+- name: `?DoExecute@CSuspendBitlocker@@UEAAJPEAUIExecutionContext@@PEAXPEAUIInternalOperationsProgress@@@Z`
+- size: `6244`
+- prototype: `__int64 __fastcall(CSuspendBitlocker *__hidden this, struct IExecutionContext *, void *, struct IInternalOperationsProgress *)`
+- caller_count: `0`
+- callee_count: `13`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callees
+
+- `0x180057dec`
+- `0x18005dd24`
+- `0x18012b158`
+- `0x180155c70`
+- `0x18015dd4c`
+- `0x1801602a4`
+- `0x180170c50`
+- `0x1801782ac`
+- `0x18017a6a4`
+- `0x1802e2078`
+- `0x18032c348`
+- `0x1804bbfa0`
+- `0x180509010`
+
+## import_xrefs
+
+- `msvcrt!_wcsicmp` at `0x180171031`
+- `msvcrt!_wcsicmp` at `0x18017106f`
+- `msvcrt!_wcsicmp` at `0x180171031`
+- `msvcrt!_wcsicmp` at `0x18017106f`
+- `msvcrt!towupper` at `0x180171d93`
+- `msvcrt!towupper` at `0x180171e57`
+- `msvcrt!towupper` at `0x180171d93`
+- `msvcrt!towupper` at `0x180171e57`
+- `msvcrt!iswalpha` at `0x180171c3d`
+- `msvcrt!iswalpha` at `0x180171d51`
+- `msvcrt!iswalpha` at `0x180171c3d`
+- `msvcrt!iswalpha` at `0x180171d51`
+- `KERNEL32!GetLastError` at `0x180170d07`
+- `KERNEL32!GetLastError` at `0x180170d91`
+- `KERNEL32!GetLastError` at `0x180170df4`
+- `KERNEL32!GetLastError` at `0x180170ecb`
+- `KERNEL32!GetLastError` at `0x180170f69`
+- `KERNEL32!GetLastError` at `0x180171079`
+- `KERNEL32!GetLastError` at `0x1801710e7`
+- `KERNEL32!GetLastError` at `0x180171155`
+- `KERNEL32!GetLastError` at `0x1801711ea`
+- `KERNEL32!GetLastError` at `0x1801712c1`
+- `KERNEL32!GetLastError` at `0x18017135f`
+- `KERNEL32!GetLastError` at `0x180171421`
+- `KERNEL32!GetLastError` at `0x18017147c`
+- `KERNEL32!GetLastError` at `0x1801714f8`
+- `KERNEL32!GetLastError` at `0x180171572`
+- `KERNEL32!GetLastError` at `0x1801715e3`
+- `KERNEL32!GetLastError` at `0x18017167c`
+- `KERNEL32!GetLastError` at `0x180171724`
+- `KERNEL32!GetLastError` at `0x1801717cf`
+- `KERNEL32!GetLastError` at `0x18017182f`
+- `KERNEL32!GetLastError` at `0x1801718d3`
+- `KERNEL32!GetLastError` at `0x18017196b`
+- `KERNEL32!GetLastError` at `0x1801719f0`
+- `KERNEL32!GetLastError` at `0x180171aac`
+- `KERNEL32!GetLastError` at `0x180171dc9`
+- `KERNEL32!GetLastError` at `0x180171e62`
+- `KERNEL32!GetLastError` at `0x180171efb`
+- `KERNEL32!GetLastError` at `0x180171fdf`
+- `KERNEL32!GetLastError` at `0x1801720ce`
+- `KERNEL32!GetLastError` at `0x1801721bc`
+- `KERNEL32!GetLastError` at `0x1801722d5`
+- `KERNEL32!GetLastError` at `0x1801723b1`
+- `KERNEL32!GetLastError` at `0x180170d07`
+- `KERNEL32!GetLastError` at `0x180170d91`
+- `KERNEL32!GetLastError` at `0x180170df4`
+- `KERNEL32!GetLastError` at `0x180170ecb`
+- `KERNEL32!GetLastError` at `0x180170f69`
+- `KERNEL32!GetLastError` at `0x180171079`
+- `KERNEL32!GetLastError` at `0x1801710e7`
+- `KERNEL32!GetLastError` at `0x180171155`
+- `KERNEL32!GetLastError` at `0x1801711ea`
+- `KERNEL32!GetLastError` at `0x1801712c1`
+- `KERNEL32!GetLastError` at `0x18017135f`
+- `KERNEL32!GetLastError` at `0x180171421`
+- `KERNEL32!GetLastError` at `0x18017147c`
+- `KERNEL32!GetLastError` at `0x1801714f8`
+- `KERNEL32!GetLastError` at `0x180171572`
+- `KERNEL32!GetLastError` at `0x1801715e3`
+- `KERNEL32!GetLastError` at `0x18017167c`
+- `KERNEL32!GetLastError` at `0x180171724`
+- `KERNEL32!GetLastError` at `0x1801717cf`
+- `KERNEL32!GetLastError` at `0x18017182f`
+- `KERNEL32!GetLastError` at `0x1801718d3`
+- `KERNEL32!GetLastError` at `0x18017196b`
+- `KERNEL32!GetLastError` at `0x1801719f0`
+- `KERNEL32!GetLastError` at `0x180171aac`
+- `KERNEL32!GetLastError` at `0x180171dc9`
+- `KERNEL32!GetLastError` at `0x180171e62`
+- `KERNEL32!GetLastError` at `0x180171efb`
+- `KERNEL32!GetLastError` at `0x180171fdf`
+- `KERNEL32!GetLastError` at `0x1801720ce`
+- `KERNEL32!GetLastError` at `0x1801721bc`
+- `KERNEL32!GetLastError` at `0x1801722d5`
+- `KERNEL32!GetLastError` at `0x1801723b1`
+- `unbcl!?get_Length@String@UnBCL@@QEBAHXZ` at `0x180171d2d`
+- `unbcl!?get_Length@String@UnBCL@@QEBAHXZ` at `0x180171d2d`
+- `unbcl!?WithoutLongPrefix@Path@UnBCL@@SAPEAVString@2@PEBV32@@Z` at `0x180171c00`
+- `unbcl!?WithoutLongPrefix@Path@UnBCL@@SAPEAVString@2@PEBV32@@Z` at `0x180171c00`
+- `unbcl!?get_Item@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEAAAEAPEAVString@2@H@Z` at `0x180171dc0`
+- `unbcl!?get_Item@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEAAAEAPEAVString@2@H@Z` at `0x180171dc0`
+- `unbcl!?Add@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEAAHPEAVString@2@@Z` at `0x180171ca6`
+- `unbcl!?Add@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEAAHPEAVString@2@@Z` at `0x180171d14`
+- `unbcl!?Add@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEAAHPEAVString@2@@Z` at `0x180171ca6`
+- `unbcl!?Add@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEAAHPEAVString@2@@Z` at `0x180171d14`
+- `unbcl!?get_Count@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEBAHXZ` at `0x180171dab`
+- `unbcl!?get_Count@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEBAHXZ` at `0x1801720a0`
+- `unbcl!?get_Count@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEBAHXZ` at `0x180171dab`
+- `unbcl!?get_Count@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEBAHXZ` at `0x1801720a0`
+- `unbcl!?set_AutoDelete@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEAAXH@Z` at `0x180171b32`
+- `unbcl!?set_AutoDelete@?$ArrayList@PEAVString@UnBCL@@@UnBCL@@UEAAXH@Z` at `0x180171b32`
+- `unbcl!??_D?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAAXXZ` at `0x18017217d`
+- `unbcl!??_D?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAAXXZ` at `0x1801722c5`
+- `unbcl!??_D?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAAXXZ` at `0x180172372`
+- `unbcl!??_D?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAAXXZ` at `0x18017244d`
+- `unbcl!??_D?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAAXXZ` at `0x18017217d`
+- `unbcl!??_D?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAAXXZ` at `0x1801722c5`
+- `unbcl!??_D?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAAXXZ` at `0x180172372`
+- `unbcl!??_D?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAAXXZ` at `0x18017244d`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x180170cd4`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x180170cd4`
+- `unbcl!??0?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAA@XZ` at `0x180171b22`
+- `unbcl!??0?$ArrayList@PEAVString@UnBCL@@@UnBCL@@QEAA@XZ` at `0x180171b22`
+- `unbcl!?get_Chars@String@UnBCL@@QEBAAEBGH@Z` at `0x180171d8a`
+- `unbcl!?get_Chars@String@UnBCL@@QEBAAEBGH@Z` at `0x180171e4e`
+- `unbcl!?get_Chars@String@UnBCL@@QEBAAEBGH@Z` at `0x180171d8a`
+- `unbcl!?get_Chars@String@UnBCL@@QEBAAEBGH@Z` at `0x180171e4e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180170ee0`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180170f7e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171005`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171043`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801712d6`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171374`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171700`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18017189f`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801718ab`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171c18`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180172057`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801720b3`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180170ee0`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180170f7e`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171005`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171043`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801712d6`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171374`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171700`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x18017189f`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801718ab`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180171c18`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x180172057`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1801720b3`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x180170cec`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x180170cec`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x180170cb6`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x180171c91`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x180171cff`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x180170cb6`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x180171c91`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x180171cff`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x180171c66`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x180171ccf`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x180171c66`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x180171ccf`
+- `unbcl!??1ISerializable@UnBCL@@UEAA@XZ` at `0x180172197`
+- `unbcl!??1ISerializable@UnBCL@@UEAA@XZ` at `0x18017238c`
+- `unbcl!??1ISerializable@UnBCL@@UEAA@XZ` at `0x180172467`
+- `unbcl!??1ISerializable@UnBCL@@UEAA@XZ` at `0x180172197`
+- `unbcl!??1ISerializable@UnBCL@@UEAA@XZ` at `0x18017238c`
+- `unbcl!??1ISerializable@UnBCL@@UEAA@XZ` at `0x180172467`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180170e61`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180170e98`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180170ef6`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180170f8d`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171018`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171056`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171257`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x18017128e`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801712ec`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171383`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171738`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801718e7`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171b3c`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171c2b`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171c4b`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171c7c`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171d24`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171d3f`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171d62`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171d7f`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801723c5`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180170e61`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180170e98`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180170ef6`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180170f8d`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171018`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171056`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171257`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x18017128e`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801712ec`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171383`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171738`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801718e7`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171b3c`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171c2b`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171c4b`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171c7c`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171d24`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171d3f`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171d62`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x180171d7f`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1801723c5`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180170e6a`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180170ea1`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180170eff`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180170f96`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180171021`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x18017105f`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180171260`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x180171297`
+
+## string_xrefs
+
+- `0x180170eaa`: `SafeBootCommandTrusted`
+- `0x1801712a0`: `SafeBootCommandTrusted`
+- `0x18017108a`: `Auto-unlock was configured successfully, will not suspend protection on the OS volume`
+- `0x1801710f8`: `Previously failed to configure auto-unlock, will suspend protection on the OS volume`
+- `0x180170f0d`: `BitLocker configured to trust Safe OS: %s`
+- `0x180171303`: `BitLocker configured to trust Safe OS: %s`
+- `0x180170fa2`: `BitLocker configured to trust Safe OS boot command: %s`
+- `0x180171398`: `BitLocker configured to trust Safe OS boot command: %s`
+- `0x180171432`: `Policy: Suspend protection fully on any volume we require access to`
+- `0x18017148d`: `Policy: Suspend protection on any volume we require access to`
+- `0x1801718fc`: `CSuspendBitlocker::DoExecute: Failed to suspend by final OS path %s: 0x%08x`
+- `0x180171de6`: `Processing path: %s`
+- `0x180171e73`: `Skipping this path, it's on the OS volume`
+- `0x1801723d7`: `CSuspendBitlocker::DoExecute: Unsupported final OS dir path %s`
+- `0x180171f82`: `Protection is active on non-OS path %s`
+- `0x1801721dc`: `CSuspendBitlocker::DoExecute: Failed to suspend by path %s: 0x%08x`
+
+## pseudocode
+
+```c
+
+```

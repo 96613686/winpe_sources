@@ -1,0 +1,202 @@
+# CSetupAutomation::ResolveTarget(_FIRMWARE_TYPE,void *,ulong *,UnBCL::String * *,UnBCL::String * *)
+
+- ea: `0x1803c0994`
+- end: `0x1803c1dee`
+- name: `?ResolveTarget@CSetupAutomation@@QEAAJW4_FIRMWARE_TYPE@@PEAXPEAKPEAPEAVString@UnBCL@@3@Z`
+- size: `5210`
+- prototype: `__int64 __usercall@<rax>(CSetupAutomation *__hidden this@<rcx>, enum _FIRMWARE_TYPE@<edx>, void *@<r8>, unsigned int *@<r9>, struct UnBCL::String **, struct UnBCL::String **)`
+- caller_count: `2`
+- callee_count: `11`
+- tags: `registry_config, installer_update`
+
+## callers
+
+- `0x1800bdd70`
+- `0x1803c1e00`
+
+## callees
+
+- `0x180057dec`
+- `0x1802d6868`
+- `0x1803bc5d4`
+- `0x1803bc8d8`
+- `0x1803c0994`
+- `0x1803c4448`
+- `0x1803c74f0`
+- `0x1803dda5c`
+- `0x1803e53c8`
+- `0x1804bbf46`
+- `0x180509010`
+
+## import_xrefs
+
+- `KERNEL32!GetLastError` at `0x1803c09eb`
+- `KERNEL32!GetLastError` at `0x1803c0b75`
+- `KERNEL32!GetLastError` at `0x1803c0c05`
+- `KERNEL32!GetLastError` at `0x1803c0c62`
+- `KERNEL32!GetLastError` at `0x1803c0ce5`
+- `KERNEL32!GetLastError` at `0x1803c0d91`
+- `KERNEL32!GetLastError` at `0x1803c0df9`
+- `KERNEL32!GetLastError` at `0x1803c0e84`
+- `KERNEL32!GetLastError` at `0x1803c0f38`
+- `KERNEL32!GetLastError` at `0x1803c0f9d`
+- `KERNEL32!GetLastError` at `0x1803c1084`
+- `KERNEL32!GetLastError` at `0x1803c1127`
+- `KERNEL32!GetLastError` at `0x1803c11a0`
+- `KERNEL32!GetLastError` at `0x1803c124f`
+- `KERNEL32!GetLastError` at `0x1803c14ab`
+- `KERNEL32!GetLastError` at `0x1803c159e`
+- `KERNEL32!GetLastError` at `0x1803c1693`
+- `KERNEL32!GetLastError` at `0x1803c1763`
+- `KERNEL32!GetLastError` at `0x1803c1833`
+- `KERNEL32!GetLastError` at `0x1803c1903`
+- `KERNEL32!GetLastError` at `0x1803c19af`
+- `KERNEL32!GetLastError` at `0x1803c1a8b`
+- `KERNEL32!GetLastError` at `0x1803c1b4b`
+- `KERNEL32!GetLastError` at `0x1803c1c55`
+- `KERNEL32!GetLastError` at `0x1803c1ccb`
+- `KERNEL32!GetLastError` at `0x1803c1d29`
+- `KERNEL32!GetLastError` at `0x1803c09eb`
+- `KERNEL32!GetLastError` at `0x1803c0b75`
+- `KERNEL32!GetLastError` at `0x1803c0c05`
+- `KERNEL32!GetLastError` at `0x1803c0c62`
+- `KERNEL32!GetLastError` at `0x1803c0ce5`
+- `KERNEL32!GetLastError` at `0x1803c0d91`
+- `KERNEL32!GetLastError` at `0x1803c0df9`
+- `KERNEL32!GetLastError` at `0x1803c0e84`
+- `KERNEL32!GetLastError` at `0x1803c0f38`
+- `KERNEL32!GetLastError` at `0x1803c0f9d`
+- `KERNEL32!GetLastError` at `0x1803c1084`
+- `KERNEL32!GetLastError` at `0x1803c1127`
+- `KERNEL32!GetLastError` at `0x1803c11a0`
+- `KERNEL32!GetLastError` at `0x1803c124f`
+- `KERNEL32!GetLastError` at `0x1803c14ab`
+- `KERNEL32!GetLastError` at `0x1803c159e`
+- `KERNEL32!GetLastError` at `0x1803c1693`
+- `KERNEL32!GetLastError` at `0x1803c1763`
+- `KERNEL32!GetLastError` at `0x1803c1833`
+- `KERNEL32!GetLastError` at `0x1803c1903`
+- `KERNEL32!GetLastError` at `0x1803c19af`
+- `KERNEL32!GetLastError` at `0x1803c1a8b`
+- `KERNEL32!GetLastError` at `0x1803c1b4b`
+- `KERNEL32!GetLastError` at `0x1803c1c55`
+- `KERNEL32!GetLastError` at `0x1803c1ccb`
+- `KERNEL32!GetLastError` at `0x1803c1d29`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1803c0b28`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1803c1076`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1803c0b28`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1803c1076`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1803c161d`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1803c161d`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x1803c1605`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x1803c1605`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1803c1c10`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1803c1c10`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1803c1c19`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1803c1c19`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0a52`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0bdc`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0d72`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0dea`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0e52`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0ee1`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c1025`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c10df`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c11f4`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c12ab`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c1507`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c15fa`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c16eb`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c17bb`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c188b`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c195b`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c1a07`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c1ae5`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0a52`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0bdc`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0d72`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0dea`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0e52`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c0ee1`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c1025`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c10df`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c11f4`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c12ab`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c1507`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c15fa`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c16eb`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c17bb`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c188b`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c195b`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c1a07`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1803c1ae5`
+- `WDSCORE!CurrentIP` at `0x1803c09f3`
+- `WDSCORE!CurrentIP` at `0x1803c0b7d`
+- `WDSCORE!CurrentIP` at `0x1803c0c0d`
+- `WDSCORE!CurrentIP` at `0x1803c0c6a`
+- `WDSCORE!CurrentIP` at `0x1803c0ced`
+- `WDSCORE!CurrentIP` at `0x1803c0d99`
+- `WDSCORE!CurrentIP` at `0x1803c0e01`
+- `WDSCORE!CurrentIP` at `0x1803c0e8c`
+- `WDSCORE!CurrentIP` at `0x1803c0f40`
+- `WDSCORE!CurrentIP` at `0x1803c0fa5`
+- `WDSCORE!CurrentIP` at `0x1803c108c`
+- `WDSCORE!CurrentIP` at `0x1803c112f`
+- `WDSCORE!CurrentIP` at `0x1803c11a8`
+- `WDSCORE!CurrentIP` at `0x1803c1257`
+- `WDSCORE!CurrentIP` at `0x1803c14b3`
+- `WDSCORE!CurrentIP` at `0x1803c15a6`
+- `WDSCORE!CurrentIP` at `0x1803c169b`
+- `WDSCORE!CurrentIP` at `0x1803c176b`
+- `WDSCORE!CurrentIP` at `0x1803c183b`
+- `WDSCORE!CurrentIP` at `0x1803c190b`
+- `WDSCORE!CurrentIP` at `0x1803c19b7`
+- `WDSCORE!CurrentIP` at `0x1803c1a93`
+- `WDSCORE!CurrentIP` at `0x1803c1b53`
+- `WDSCORE!CurrentIP` at `0x1803c1c5d`
+- `WDSCORE!CurrentIP` at `0x1803c1cd3`
+- `WDSCORE!CurrentIP` at `0x1803c1d32`
+- `WDSCORE!CurrentIP` at `0x1803c09f3`
+- `WDSCORE!CurrentIP` at `0x1803c0b7d`
+- `WDSCORE!CurrentIP` at `0x1803c0c0d`
+- `WDSCORE!CurrentIP` at `0x1803c0c6a`
+- `WDSCORE!CurrentIP` at `0x1803c0ced`
+- `WDSCORE!CurrentIP` at `0x1803c0d99`
+- `WDSCORE!CurrentIP` at `0x1803c0e01`
+- `WDSCORE!CurrentIP` at `0x1803c0e8c`
+- `WDSCORE!CurrentIP` at `0x1803c0f40`
+- `WDSCORE!CurrentIP` at `0x1803c0fa5`
+- `WDSCORE!CurrentIP` at `0x1803c108c`
+- `WDSCORE!CurrentIP` at `0x1803c112f`
+- `WDSCORE!CurrentIP` at `0x1803c11a8`
+- `WDSCORE!CurrentIP` at `0x1803c1257`
+- `WDSCORE!CurrentIP` at `0x1803c14b3`
+- `WDSCORE!CurrentIP` at `0x1803c15a6`
+- `WDSCORE!CurrentIP` at `0x1803c169b`
+- `WDSCORE!CurrentIP` at `0x1803c176b`
+- `WDSCORE!CurrentIP` at `0x1803c183b`
+- `WDSCORE!CurrentIP` at `0x1803c190b`
+- `WDSCORE!CurrentIP` at `0x1803c19b7`
+- `WDSCORE!CurrentIP` at `0x1803c1a93`
+- `WDSCORE!CurrentIP` at `0x1803c1b53`
+- `WDSCORE!CurrentIP` at `0x1803c1c5d`
+- `WDSCORE!CurrentIP` at `0x1803c1cd3`
+- `WDSCORE!CurrentIP` at `0x1803c1d32`
+
+## string_xrefs
+
+- `0x1803c09ff`: `CSetupAutomation::ResolveTarget: Failed to determine install image info: 0x%08x`
+- `0x1803c0b89`: `CSetupAutomation::ResolveTarget: Failed to refresh cached target info: 0x%08x`
+- `0x1803c0f4d`: `CSetupAutomation::ResolveTarget: Failed to refresh cached target info: 0x%08x`
+- `0x1803c1b5f`: `CSetupAutomation::ResolveTarget: Failed to refresh cached target info: 0x%08x`
+- `0x1803c1138`: `CSetupAutomation::ResolveTarget: Unsupported state: install image is not a WIM file!`
+- `0x1803c0c19`: `CSetupAutomation::ResolveTarget: Failed to read host firmware type: 0x%08x`
+- `0x1803c0e0a`: `CSetupAutomation::ResolveTarget: Cannot apply custom disk configuration: disk platform not available`
+- `0x1803c0fdd`: `CSetupAutomation::ResolveTarget: Resolving the target install disk [%u]...`
+- `0x1803c16a7`: `CSetupAutomation::ResolveTarget: Couldn't update cached target information: 0x%08x`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,227 @@
+# CDeploymentBase::ExecuteCurrentOperations(int,SetupPlatform::IOperationsProgress *)
+
+- ea: `0x1800c4e3c`
+- end: `0x1800c5da6`
+- name: `?ExecuteCurrentOperations@CDeploymentBase@@QEAA?AW4SYSTEM_STATE@SetupPlatform@@HPEAUIOperationsProgress@3@@Z`
+- size: `3946`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `10`
+- tags: `loader_planting, installer_update, broker_com_uri`
+
+## callers
+
+- `0x1800c5db0`
+- `0x1800c6110`
+
+## callees
+
+- `0x18001413d`
+- `0x180057dec`
+- `0x1800b1404`
+- `0x1800c4e3c`
+- `0x1800c6158`
+- `0x1802d68d4`
+- `0x1802e6604`
+- `0x18034e330`
+- `0x180354338`
+- `0x180509010`
+
+## import_xrefs
+
+- `ntdll!RtlNtStatusToDosError` at `0x1800c56f7`
+- `ntdll!RtlNtStatusToDosError` at `0x1800c5706`
+- `ntdll!RtlNtStatusToDosError` at `0x1800c56f7`
+- `ntdll!RtlNtStatusToDosError` at `0x1800c5706`
+- `KERNEL32!GetLastError` at `0x1800c4e8f`
+- `KERNEL32!GetLastError` at `0x1800c5024`
+- `KERNEL32!GetLastError` at `0x1800c51c0`
+- `KERNEL32!GetLastError` at `0x1800c5260`
+- `KERNEL32!GetLastError` at `0x1800c5500`
+- `KERNEL32!GetLastError` at `0x1800c560a`
+- `KERNEL32!GetLastError` at `0x1800c5789`
+- `KERNEL32!GetLastError` at `0x1800c581e`
+- `KERNEL32!GetLastError` at `0x1800c5885`
+- `KERNEL32!GetLastError` at `0x1800c58ea`
+- `KERNEL32!GetLastError` at `0x1800c598f`
+- `KERNEL32!GetLastError` at `0x1800c59a5`
+- `KERNEL32!GetLastError` at `0x1800c59c8`
+- `KERNEL32!GetLastError` at `0x1800c5a7e`
+- `KERNEL32!GetLastError` at `0x1800c5b22`
+- `KERNEL32!GetLastError` at `0x1800c5bd5`
+- `KERNEL32!GetLastError` at `0x1800c5c94`
+- `KERNEL32!GetLastError` at `0x1800c4e8f`
+- `KERNEL32!GetLastError` at `0x1800c5024`
+- `KERNEL32!GetLastError` at `0x1800c51c0`
+- `KERNEL32!GetLastError` at `0x1800c5260`
+- `KERNEL32!GetLastError` at `0x1800c5500`
+- `KERNEL32!GetLastError` at `0x1800c560a`
+- `KERNEL32!GetLastError` at `0x1800c5789`
+- `KERNEL32!GetLastError` at `0x1800c581e`
+- `KERNEL32!GetLastError` at `0x1800c5885`
+- `KERNEL32!GetLastError` at `0x1800c58ea`
+- `KERNEL32!GetLastError` at `0x1800c598f`
+- `KERNEL32!GetLastError` at `0x1800c59a5`
+- `KERNEL32!GetLastError` at `0x1800c59c8`
+- `KERNEL32!GetLastError` at `0x1800c5a7e`
+- `KERNEL32!GetLastError` at `0x1800c5b22`
+- `KERNEL32!GetLastError` at `0x1800c5bd5`
+- `KERNEL32!GetLastError` at `0x1800c5c94`
+- `KERNEL32!SetLastError` at `0x1800c5723`
+- `KERNEL32!SetLastError` at `0x1800c5723`
+- `KERNEL32!EnterCriticalSection` at `0x1800c5154`
+- `KERNEL32!EnterCriticalSection` at `0x1800c5154`
+- `unbcl!?ToString@DateTime@UnBCL@@UEBAPEAVString@2@XZ` at `0x1800c4f64`
+- `unbcl!?ToString@DateTime@UnBCL@@UEBAPEAVString@2@XZ` at `0x1800c4f64`
+- `unbcl!?Format@String@UnBCL@@SAPEAV12@PEBGZZ` at `0x1800c5350`
+- `unbcl!?Format@String@UnBCL@@SAPEAV12@PEBGZZ` at `0x1800c5350`
+- `unbcl!?IsEnvironmentVarSetTrue@Environment@UnBCL@@SAHPEBVString@2@H@Z` at `0x1800c50b3`
+- `unbcl!?IsEnvironmentVarSetTrue@Environment@UnBCL@@SAHPEBVString@2@H@Z` at `0x1800c50fe`
+- `unbcl!?IsEnvironmentVarSetTrue@Environment@UnBCL@@SAHPEBVString@2@H@Z` at `0x1800c50b3`
+- `unbcl!?IsEnvironmentVarSetTrue@Environment@UnBCL@@SAHPEBVString@2@H@Z` at `0x1800c50fe`
+- `unbcl!??0Exception@UnBCL@@QEAA@XZ` at `0x1800c5175`
+- `unbcl!??0Exception@UnBCL@@QEAA@XZ` at `0x1800c5175`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800c5393`
+- `unbcl!?Combine@Path@UnBCL@@SAPEAVString@2@PEBV32@0@Z` at `0x1800c5393`
+- `unbcl!??1Exception@UnBCL@@UEAA@XZ` at `0x1800c56d0`
+- `unbcl!??1Exception@UnBCL@@UEAA@XZ` at `0x1800c56d0`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800c4f89`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800c5385`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800c4f89`
+- `unbcl!?get_P@?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@2@XZ` at `0x1800c5385`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800c4feb`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800c50c3`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800c510e`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800c53b3`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800c4feb`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800c50c3`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800c510e`
+- `unbcl!??1String@UnBCL@@UEAA@XZ` at `0x1800c53b3`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800c4fca`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800c50a7`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800c50f2`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800c5377`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800c4fca`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800c50a7`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800c50f2`
+- `unbcl!??0String@UnBCL@@QEAA@PEBG@Z` at `0x1800c5377`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x1800c4f49`
+- `unbcl!??2Object@UnBCL@@SAPEAX_K@Z` at `0x1800c4f49`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c52d9`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c532f`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c53c1`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c53db`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c59e3`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c52d9`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c532f`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c53c1`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c53db`
+- `unbcl!??C?$SmartPtr@VString@UnBCL@@@UnBCL@@QEBAPEAVString@1@XZ` at `0x1800c59e3`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c52e2`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c5338`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c53ca`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c53e4`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c59ec`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c52e2`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c5338`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c53ca`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c53e4`
+- `unbcl!?get_CString@String@UnBCL@@QEBAPEBGXZ` at `0x1800c59ec`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800c4fff`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800c5413`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800c5422`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800c4fff`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800c5413`
+- `unbcl!??1?$SmartPtr@VString@UnBCL@@@UnBCL@@UEAA@XZ` at `0x1800c5422`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800c4f75`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800c5361`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800c53a4`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800c4f75`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800c5361`
+- `unbcl!??0?$SmartPtr@VString@UnBCL@@@UnBCL@@QEAA@PEAVString@1@@Z` at `0x1800c53a4`
+- `unbcl!?GetNow@DateTime@UnBCL@@SA?AV12@H@Z` at `0x1800c4f36`
+- `unbcl!?GetNow@DateTime@UnBCL@@SA?AV12@H@Z` at `0x1800c4f36`
+- `unbcl!??1DateTime@UnBCL@@UEAA@XZ` at `0x1800c500e`
+- `unbcl!??1DateTime@UnBCL@@UEAA@XZ` at `0x1800c500e`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c4f04`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5092`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5221`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c52c9`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5569`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5675`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c57ef`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c587f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c58e4`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c594c`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5a46`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5ae4`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5b88`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5c36`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5cf5`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c4f04`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5092`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5221`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c52c9`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5569`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5675`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c57ef`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c587f`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c58e4`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c594c`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5a46`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5ae4`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5b88`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5c36`
+- `WDSCORE!WdsSetupLogMessageW` at `0x1800c5cf5`
+- `WDSCORE!CurrentIP` at `0x1800c4e97`
+- `WDSCORE!CurrentIP` at `0x1800c502c`
+- `WDSCORE!CurrentIP` at `0x1800c51c8`
+- `WDSCORE!CurrentIP` at `0x1800c5268`
+- `WDSCORE!CurrentIP` at `0x1800c5508`
+- `WDSCORE!CurrentIP` at `0x1800c5612`
+- `WDSCORE!CurrentIP` at `0x1800c5791`
+- `WDSCORE!CurrentIP` at `0x1800c5826`
+- `WDSCORE!CurrentIP` at `0x1800c588d`
+- `WDSCORE!CurrentIP` at `0x1800c58f2`
+- `WDSCORE!CurrentIP` at `0x1800c59d0`
+- `WDSCORE!CurrentIP` at `0x1800c5a86`
+- `WDSCORE!CurrentIP` at `0x1800c5b2a`
+- `WDSCORE!CurrentIP` at `0x1800c5bdd`
+- `WDSCORE!CurrentIP` at `0x1800c5c9c`
+- `WDSCORE!CurrentIP` at `0x1800c4e97`
+- `WDSCORE!CurrentIP` at `0x1800c502c`
+- `WDSCORE!CurrentIP` at `0x1800c51c8`
+- `WDSCORE!CurrentIP` at `0x1800c5268`
+- `WDSCORE!CurrentIP` at `0x1800c5508`
+- `WDSCORE!CurrentIP` at `0x1800c5612`
+- `WDSCORE!CurrentIP` at `0x1800c5791`
+- `WDSCORE!CurrentIP` at `0x1800c5826`
+- `WDSCORE!CurrentIP` at `0x1800c588d`
+- `WDSCORE!CurrentIP` at `0x1800c58f2`
+- `WDSCORE!CurrentIP` at `0x1800c59d0`
+- `WDSCORE!CurrentIP` at `0x1800c5a86`
+- `WDSCORE!CurrentIP` at `0x1800c5b2a`
+- `WDSCORE!CurrentIP` at `0x1800c5bdd`
+- `WDSCORE!CurrentIP` at `0x1800c5c9c`
+
+## string_xrefs
+
+- `0x1800c4ede`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c5065`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c5201`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c52a9`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c5549`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c5655`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c57cf`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c585f`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c5ac4`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c5b68`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c5c16`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c5cd5`: `base\ntsetup\setupplatform\lib\src\installation.cpp`
+- `0x1800c59f8`: `Failed to write disk space to file: %s. Error = %d`
+
+## pseudocode
+
+```c
+
+```
