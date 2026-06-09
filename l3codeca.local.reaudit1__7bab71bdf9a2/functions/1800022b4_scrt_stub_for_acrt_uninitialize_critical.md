@@ -1,0 +1,35 @@
+# __scrt_stub_for_acrt_uninitialize_critical
+
+- ea: `0x1800022b4`
+- end: `0x1800022b7`
+- name: `__scrt_stub_for_acrt_uninitialize_critical`
+- size: `3`
+- prototype: ``
+- caller_count: `5`
+- callee_count: `0`
+- tags: ``
+
+## callers
+
+- `0x1800015b8`
+- `0x1800015e8`
+- `0x18000168c`
+- `0x1800016a8`
+- `0x180001848`
+
+## pseudocode
+
+```c
+char _scrt_stub_for_acrt_uninitialize_critical()
+{
+  return 1;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800022b4  mov     al, 1
+0x1800022b6  retn
+```

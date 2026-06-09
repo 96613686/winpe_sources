@@ -1,0 +1,3837 @@
+[
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x18002b078",
+    "function_file": "functions/18002b078_DriverEntry.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExRegisterExtension",
+      "ntoskrnl!ExUnregisterExtension",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoRegisterShutdownNotification",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetProcessId",
+      "ntoskrnl!PsGetSiloMonitorContextSlot",
+      "ntoskrnl!PsRegisterSiloMonitor",
+      "ntoskrnl!PsSetCreateProcessNotifyRoutineEx2",
+      "ntoskrnl!PsStartSiloMonitor",
+      "ntoskrnl!PsUnregisterSiloMonitor",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 4278,
+    "size": 1644,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "SspiEncodeAuthIdentityAsStrings",
+    "ea": "0x1800092d0",
+    "function_file": "functions/1800092d0_SspiEncodeAuthIdentityAsStrings.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SspiEncodeAuthIdentityAsStrings",
+    "prototype": "SECURITY_STATUS __stdcall(PSEC_WINNT_AUTH_IDENTITY_OPAQUE pAuthIdentity, PCWSTR *ppszUserName, PCWSTR *ppszDomainName, PCWSTR *ppszPackedCredentialsString)",
+    "rank_score": 3846,
+    "size": 3481,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "KsecpRemoveRpcConnection(_EPROCESS *)",
+    "ea": "0x18000150c",
+    "function_file": "functions/18000150c_KsecpRemoveRpcConnection_EPROCESS.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!ExTryConvertPushLockSharedToExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsGetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "?KsecpRemoveRpcConnection@@YAPEAXPEAU_EPROCESS@@@Z",
+    "prototype": "void *__fastcall(struct _EPROCESS *)",
+    "rank_score": 3420,
+    "size": 687,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "HandlePendingIrps",
+    "ea": "0x18000f898",
+    "function_file": "functions/18000f898_HandlePendingIrps.md",
+    "matched_imports": [
+      "ntoskrnl!IoCsqInsertIrpEx",
+      "ntoskrnl!IoCsqRemoveNextIrp",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireGuardedMutex",
+      "ntoskrnl!KeReleaseGuardedMutex",
+      "ntoskrnl!MmCopyVirtualMemory",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!NtFreeVirtualMemory",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!ZwAllocateVirtualMemory"
+    ],
+    "matched_strings": [],
+    "name": "HandlePendingIrps",
+    "prototype": "__int64 __fastcall(PVOID InsertContext)",
+    "rank_score": 3231,
+    "size": 1113,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "KsecRemoveValidAddressCommon",
+    "ea": "0x180005718",
+    "function_file": "functions/180005718_KsecRemoveValidAddressCommon.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!ExTryConvertPushLockSharedToExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!MmUserProbeAddress",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsIsProtectedProcess",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "KsecRemoveValidAddressCommon",
+    "prototype": "__int64 __fastcall(unsigned __int8 *)",
+    "rank_score": 3139,
+    "size": 1081,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LoadCngExtension(void)",
+    "ea": "0x18000b3c4",
+    "function_file": "functions/18000b3c4_LoadCngExtension_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?LoadCngExtension@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 3021,
+    "size": 977,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "KsecIoctlAllocVm(_KSECDDLSASTATE *,void *,ulong,void *,ulong,ulong *)",
+    "ea": "0x18000cbb4",
+    "function_file": "functions/18000cbb4_KsecIoctlAllocVm_KSECDDLSASTATE_void_ulong_void_ulong_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExRaiseDatatypeMisalignment",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!PsIsProtectedProcess",
+      "ntoskrnl!PsProcessType",
+      "ntoskrnl!ZwAllocateVirtualMemory",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwFreeVirtualMemory"
+    ],
+    "matched_strings": [],
+    "name": "?KsecIoctlAllocVm@@YAJPEAU_KSECDDLSASTATE@@PEAXK1KPEAK@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _KSECDDLSASTATE *@<rcx>, void *@<rdx>, unsigned int@<r8d>, void *@<r9>, unsigned int, unsigned int *)",
+    "rank_score": 2819,
+    "size": 1119,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 9,
+    "demangled": "KsecInsertValidAddress",
+    "ea": "0x1800021bc",
+    "function_file": "functions/1800021bc_KsecInsertValidAddress.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!MmIsUserAddress",
+      "ntoskrnl!MmUserProbeAddress",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsIsProtectedProcess",
+      "ntoskrnl!ZwQueryVirtualMemory"
+    ],
+    "matched_strings": [],
+    "name": "KsecInsertValidAddress",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, unsigned int)",
+    "rank_score": 2747,
+    "size": 1063,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SecLookupWellKnownSid",
+    "ea": "0x180004190",
+    "function_file": "functions/180004190_SecLookupWellKnownSid.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "SecLookupWellKnownSid",
+    "prototype": "NTSTATUS __stdcall(WELL_KNOWN_SID_TYPE SidType, PSID Sid, ULONG SidBufferSize, PULONG SidSize)",
+    "rank_score": 2739,
+    "size": 844,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 3,
+    "demangled": "KsecProcessSecurityContext",
+    "ea": "0x1800248c0",
+    "function_file": "functions/1800248c0_KsecProcessSecurityContext.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDuplicateObject",
+      "ntoskrnl!ZwDuplicateToken",
+      "ntoskrnl!ZwOpenProcessTokenEx",
+      "ntoskrnl!ZwOpenThreadTokenEx",
+      "ntoskrnl!ZwQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "KsecProcessSecurityContext",
+    "prototype": "",
+    "rank_score": 2672,
+    "size": 1984,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 4,
+    "demangled": "DeleteSecurityContextInternal",
+    "ea": "0x180025db0",
+    "function_file": "functions/180025db0_DeleteSecurityContextInternal.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDuplicateObject",
+      "ntoskrnl!ZwDuplicateToken",
+      "ntoskrnl!ZwOpenProcessTokenEx",
+      "ntoskrnl!ZwOpenThreadTokenEx",
+      "ntoskrnl!ZwQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "DeleteSecurityContextInternal",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 2667,
+    "size": 1372,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "CallAsyncFunction",
+    "ea": "0x1800242e0",
+    "function_file": "functions/1800242e0_CallAsyncFunction.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwDuplicateObject",
+      "ntoskrnl!ZwDuplicateToken",
+      "ntoskrnl!ZwOpenProcessTokenEx",
+      "ntoskrnl!ZwOpenThreadTokenEx",
+      "ntoskrnl!ZwQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "CallAsyncFunction",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 2661,
+    "size": 1247,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "KsecRemoveVmAllocations",
+    "ea": "0x180005cf0",
+    "function_file": "functions/180005cf0_KsecRemoveVmAllocations.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!ExTryConvertPushLockSharedToExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsIsProtectedProcess",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "KsecRemoveVmAllocations",
+    "prototype": "",
+    "rank_score": 2407,
+    "size": 413,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "KsecRemoveValidVm",
+    "ea": "0x180005b58",
+    "function_file": "functions/180005b58_KsecRemoveValidVm.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!ExTryConvertPushLockSharedToExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "KsecRemoveValidVm",
+    "prototype": "__int64 __fastcall(struct _EPROCESS *, unsigned __int8 *)",
+    "rank_score": 2213,
+    "size": 401,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "SspiEncodeStringsAsAuthIdentity",
+    "ea": "0x18000a070",
+    "function_file": "functions/18000a070_SspiEncodeStringsAsAuthIdentity.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SspiEncodeStringsAsAuthIdentity",
+    "prototype": "SECURITY_STATUS __stdcall(PCWSTR pszUserName, PCWSTR pszDomainName, PCWSTR pszPackedCredentialsString, PSEC_WINNT_AUTH_IDENTITY_OPAQUE *ppAuthIdentity)",
+    "rank_score": 2030,
+    "size": 1612,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "InitializePackages",
+    "ea": "0x180021b18",
+    "function_file": "functions/180021b18_InitializePackages.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsIsCurrentThreadInServerSilo",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "InitializePackages",
+    "prototype": "",
+    "rank_score": 2022,
+    "size": 1243,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "KsecpGetRpcConnection",
+    "ea": "0x180001ae4",
+    "function_file": "functions/180001ae4_KsecpGetRpcConnection.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsGetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "KsecpGetRpcConnection",
+    "prototype": "",
+    "rank_score": 1818,
+    "size": 263,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "KsecIoctlCopyVm(void *,ulong)",
+    "ea": "0x180004e7c",
+    "function_file": "functions/180004e7c_KsecIoctlCopyVm_void_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockSharedEx",
+      "ntoskrnl!ExRaiseDatatypeMisalignment",
+      "ntoskrnl!ExReleasePushLockSharedEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!PsProcessType"
+    ],
+    "matched_strings": [],
+    "name": "?KsecIoctlCopyVm@@YAJPEAXK@Z",
+    "prototype": "__int64 __fastcall(void *Src, unsigned int)",
+    "rank_score": 1715,
+    "size": 734,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "KsecDeviceControl",
+    "ea": "0x180026f68",
+    "function_file": "functions/180026f68_KsecDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!IoGetRequestorProcess",
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObfReferenceObject",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwFreeVirtualMemory"
+    ],
+    "matched_strings": [],
+    "name": "KsecDeviceControl",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int, _DWORD *, unsigned int *, int, PIRP Irp)",
+    "rank_score": 1639,
+    "size": 802,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SspiCopyAuthIdentity",
+    "ea": "0x180008cf0",
+    "function_file": "functions/180008cf0_SspiCopyAuthIdentity.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "SspiCopyAuthIdentity",
+    "prototype": "SECURITY_STATUS __stdcall(PSEC_WINNT_AUTH_IDENTITY_OPAQUE AuthData, PSEC_WINNT_AUTH_IDENTITY_OPAQUE *AuthDataCopy)",
+    "rank_score": 1627,
+    "size": 1485,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "KsecdCreateSiloNotification",
+    "ea": "0x180023380",
+    "function_file": "functions/180023380_KsecdCreateSiloNotification.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeBugCheckEx",
+      "ntoskrnl!PsCreateSiloContext",
+      "ntoskrnl!PsGetHostSilo",
+      "ntoskrnl!PsGetPermanentSiloContext",
+      "ntoskrnl!PsInsertPermanentSiloContext",
+      "ntoskrnl!PsIsHostSilo"
+    ],
+    "matched_strings": [],
+    "name": "KsecdCreateSiloNotification",
+    "prototype": "",
+    "rank_score": 1613,
+    "size": 688,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "CreateClient",
+    "ea": "0x180006bf4",
+    "function_file": "functions/180006bf4_CreateClient.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetProcessId",
+      "ntoskrnl!PsGetProcessSecurityPort",
+      "ntoskrnl!PsGetThreadProcessId",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CreateClient",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1432,
+    "size": 393,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "SecFreeCommon",
+    "ea": "0x18000ba98",
+    "function_file": "functions/18000ba98_SecFreeCommon.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmIsUserAddress",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsIsProtectedProcess",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwFreeVirtualMemory"
+    ],
+    "matched_strings": [],
+    "name": "SecFreeCommon",
+    "prototype": "__int64 __fastcall(HANDLE ProcessHandle)",
+    "rank_score": 1431,
+    "size": 357,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "KSecRegisterSecurityProvider",
+    "ea": "0x18000bf50",
+    "function_file": "functions/18000bf50_KSecRegisterSecurityProvider.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!PsIsCurrentThreadInServerSilo"
+    ],
+    "matched_strings": [],
+    "name": "KSecRegisterSecurityProvider",
+    "prototype": "",
+    "rank_score": 1422,
+    "size": 521,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SspipLookupAccountSid",
+    "ea": "0x180003e20",
+    "function_file": "functions/180003e20_SspipLookupAccountSid.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SspipLookupAccountSid",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, UNICODE_STRING *, _DWORD *, PUNICODE_STRING DestinationString, __int64)",
+    "rank_score": 1419,
+    "size": 542,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SecSetPagingMode",
+    "ea": "0x18000c1f0",
+    "function_file": "functions/18000c1f0_SecSetPagingMode.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!MmLockPagableDataSection",
+      "ntoskrnl!MmUnlockPagableImageSection",
+      "ntoskrnl!PsIsCurrentThreadInServerSilo"
+    ],
+    "matched_strings": [],
+    "name": "SecSetPagingMode",
+    "prototype": "",
+    "rank_score": 1228,
+    "size": 522,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "SspiExcludePackage",
+    "ea": "0x18000a6d0",
+    "function_file": "functions/18000a6d0_SspiExcludePackage.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!wcsstr"
+    ],
+    "matched_strings": [],
+    "name": "SspiExcludePackage",
+    "prototype": "SECURITY_STATUS __stdcall(PSEC_WINNT_AUTH_IDENTITY_OPAQUE AuthIdentity, PCWSTR pszPackageName, PSEC_WINNT_AUTH_IDENTITY_OPAQUE *ppNewAuthIdentity)",
+    "rank_score": 1226,
+    "size": 902,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "KsecInsertValidVm(_KSECDDLSASTATE *,void *,_EPROCESS *,uchar *,ulong,ulong)",
+    "ea": "0x18000c7a0",
+    "function_file": "functions/18000c7a0_KsecInsertValidVm_KSECDDLSASTATE_void_EPROCESS_uchar_ulong_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?KsecInsertValidVm@@YAJPEAU_KSECDDLSASTATE@@PEAXPEAU_EPROCESS@@PEAEKK@Z",
+    "prototype": "__int64 __usercall@<rax>(struct _KSECDDLSASTATE *@<rcx>, void *@<rdx>, struct _EPROCESS *@<r8>, unsigned __int8 *@<r9>, unsigned int, unsigned int)",
+    "rank_score": 1209,
+    "size": 403,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SspipDeleteSecurityContext",
+    "ea": "0x180003c38",
+    "function_file": "functions/180003c38_SspipDeleteSecurityContext.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipDeleteSecurityContext",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 1030,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "KsecIoctlClientCallback(void *,ulong,void *,ulong,ulong *)",
+    "ea": "0x18000d01c",
+    "function_file": "functions/18000d01c_KsecIoctlClientCallback_void_ulong_void_ulong_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExRaiseDatatypeMisalignment",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ZwFreeVirtualMemory"
+    ],
+    "matched_strings": [],
+    "name": "?KsecIoctlClientCallback@@YAJPEAXK0KPEAK@Z",
+    "prototype": "__int64 __usercall@<rax>(void *Src@<rcx>, unsigned int@<edx>, void *@<r8>, unsigned int@<r9d>, unsigned int *)",
+    "rank_score": 1025,
+    "size": 716,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SspipAcquireCredentialsHandle",
+    "ea": "0x18000368c",
+    "function_file": "functions/18000368c_SspipAcquireCredentialsHandle.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipAcquireCredentialsHandle",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, __int64, int, __int64, __int64, __int64, int, _OWORD *, __int64 *)",
+    "rank_score": 1023,
+    "size": 960,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SspipFreeCredentialsHandle",
+    "ea": "0x180003a54",
+    "function_file": "functions/180003a54_SspipFreeCredentialsHandle.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipFreeCredentialsHandle",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 1020,
+    "size": 475,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "AcquireCredentialsHandleMarshalParams",
+    "ea": "0x180027420",
+    "function_file": "functions/180027420_AcquireCredentialsHandleMarshalParams.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenProcessTokenEx",
+      "ntoskrnl!ZwOpenThreadTokenEx",
+      "ntoskrnl!ZwQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "AcquireCredentialsHandleMarshalParams",
+    "prototype": "",
+    "rank_score": 1019,
+    "size": 539,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspipSslSetCredentialsAttributesEx",
+    "ea": "0x18000b184",
+    "function_file": "functions/18000b184_SspipSslSetCredentialsAttributesEx.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipSslSetCredentialsAttributesEx",
+    "prototype": "CLIENT_CALL_RETURN __fastcall(_QWORD *, int, __int64)",
+    "rank_score": 1016,
+    "size": 269,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspipSslSetCredentialsAttributes",
+    "ea": "0x180003574",
+    "function_file": "functions/180003574_SspipSslSetCredentialsAttributes.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipSslSetCredentialsAttributes",
+    "prototype": "CLIENT_CALL_RETURN __fastcall(_QWORD *, __int64)",
+    "rank_score": 1015,
+    "size": 229,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "KsecIoctlAllocPool(void *,ulong,void *,ulong,ulong *)",
+    "ea": "0x18000c93c",
+    "function_file": "functions/18000c93c_KsecIoctlAllocPool_void_ulong_void_ulong_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExRaiseDatatypeMisalignment",
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "?KsecIoctlAllocPool@@YAJPEAXK0KPEAK@Z",
+    "prototype": "int(void *, unsigned int, void *, unsigned int, unsigned int *)",
+    "rank_score": 1014,
+    "size": 626,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "LsaRegisterLogonProcess",
+    "ea": "0x18001f870",
+    "function_file": "functions/18001f870_LsaRegisterLogonProcess.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenEvent",
+      "ntoskrnl!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "\\SECURITY\\LSA_AUTHENTICATION_INITIALIZED"
+    ],
+    "name": "LsaRegisterLogonProcess",
+    "prototype": "NTSTATUS __stdcall(PLSA_STRING LogonProcessName, PHANDLE LsaHandle, PLSA_OPERATIONAL_MODE SecurityMode)",
+    "rank_score": 877,
+    "size": 365,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "SspipProcessSecurityContext",
+    "ea": "0x180002a84",
+    "function_file": "functions/180002a84_SspipProcessSecurityContext.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipProcessSecurityContext",
+    "prototype": "__int64 __fastcall(__int128 *, _OWORD *, __int64, struct _SecBufferDesc *, int, int, _OWORD *, __int64, _DWORD *, __int64, bool *, __int64, _DWORD *, __int64, __int64)",
+    "rank_score": 856,
+    "size": 2792,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 46,
+    "demangled": "KsecddLsaStateRef::KsecddLsaStateRef(void)",
+    "ea": "0x180001c00",
+    "function_file": "functions/180001c00_KsecddLsaStateRef_KsecddLsaStateRef_void.md",
+    "matched_imports": [
+      "ntoskrnl!KeBugCheckEx",
+      "ntoskrnl!PsGetCurrentServerSilo",
+      "ntoskrnl!PsGetPermanentSiloContext"
+    ],
+    "matched_strings": [],
+    "name": "??0KsecddLsaStateRef@@QEAA@XZ",
+    "prototype": "KsecddLsaStateRef *__fastcall(KsecddLsaStateRef *__hidden this)",
+    "rank_score": 837,
+    "size": 234,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SspipLogonUser",
+    "ea": "0x1800076a0",
+    "function_file": "functions/1800076a0_SspipLogonUser.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipLogonUser",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64, int, __int64, __int64, _QWORD *, __int64, __int64, _QWORD *, _OWORD *, __int64)",
+    "rank_score": 821,
+    "size": 869,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "CallRpcSPM",
+    "ea": "0x1800272ec",
+    "function_file": "functions/1800272ec_CallRpcSPM.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "CallRpcSPM",
+    "prototype": "",
+    "rank_score": 819,
+    "size": 291,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SspipApplyControlToken",
+    "ea": "0x18000ad04",
+    "function_file": "functions/18000ad04_SspipApplyControlToken.md",
+    "matched_imports": [
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipApplyControlToken",
+    "prototype": "CLIENT_CALL_RETURN __fastcall(_QWORD *, __int64)",
+    "rank_score": 817,
+    "size": 267,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspipLogonSystemManagedAdmin",
+    "ea": "0x18000ae18",
+    "function_file": "functions/18000ae18_SspipLogonSystemManagedAdmin.md",
+    "matched_imports": [
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipLogonSystemManagedAdmin",
+    "prototype": "CLIENT_CALL_RETURN __fastcall(__int64, _QWORD *)",
+    "rank_score": 816,
+    "size": 261,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspipNegQueryContextAttributes",
+    "ea": "0x18000af24",
+    "function_file": "functions/18000af24_SspipNegQueryContextAttributes.md",
+    "matched_imports": [
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipNegQueryContextAttributes",
+    "prototype": "CLIENT_CALL_RETURN __fastcall(_QWORD *, int, _QWORD *)",
+    "rank_score": 816,
+    "size": 284,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SspipSslQueryCredentialsAttributes",
+    "ea": "0x18000b048",
+    "function_file": "functions/18000b048_SspipSslQueryCredentialsAttributes.md",
+    "matched_imports": [
+      "msrpc!NdrClientCall3",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsGetProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SspipSslQueryCredentialsAttributes",
+    "prototype": "CLIENT_CALL_RETURN __fastcall(_QWORD *, int, _QWORD *)",
+    "rank_score": 816,
+    "size": 308,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DisconnectRpcConnectionCallback(_RPC_ASYNC_STATE *,void *,_RPC_ASYNC_EVENT)",
+    "ea": "0x180007d40",
+    "function_file": "functions/180007d40_DisconnectRpcConnectionCallback_RPC_ASYNC_STATE_void_RPC_ASYNC_EVENT.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "msrpc!RpcAsyncCompleteCall",
+      "msrpc!RpcSsDestroyClientContext",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?DisconnectRpcConnectionCallback@@YAXPEAU_RPC_ASYNC_STATE@@PEAXW4_RPC_ASYNC_EVENT@@@Z",
+    "prototype": "void __fastcall(PVOID P, void *, enum _RPC_ASYNC_EVENT)",
+    "rank_score": 814,
+    "size": 242,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "KsecIoctlDupLsaHandle(void *,ulong,void *,ulong,ulong *)",
+    "ea": "0x180005160",
+    "function_file": "functions/180005160_KsecIoctlDupLsaHandle_void_ulong_void_ulong_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExRaiseDatatypeMisalignment",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ZwDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "?KsecIoctlDupLsaHandle@@YAJPEAXK0KPEAK@Z",
+    "prototype": "__int64 __usercall@<rax>(void *Src@<rcx>, unsigned int@<edx>, void *@<r8>, unsigned int@<r9d>, unsigned int *)",
+    "rank_score": 814,
+    "size": 628,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "IoctlIpcInitGlobal",
+    "ea": "0x18002313c",
+    "function_file": "functions/18002313c_IoctlIpcInitGlobal.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteLookasideListEx",
+      "ntoskrnl!ExInitializeLookasideListEx",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "IoctlIpcInitGlobal",
+    "prototype": "NTSTATUS()",
+    "rank_score": 813,
+    "size": 178,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "KsecIoctlHandleFunctionReturn",
+    "ea": "0x180005e94",
+    "function_file": "functions/180005e94_KsecIoctlHandleFunctionReturn.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "KsecIoctlHandleFunctionReturn",
+    "prototype": "__int64 __fastcall(void *Src, size_t Size)",
+    "rank_score": 624,
+    "size": 428,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SecMakeSPNEx2",
+    "ea": "0x180022800",
+    "function_file": "functions/180022800_SecMakeSPNEx2.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlIntegerToUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SecMakeSPNEx2",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING ServiceClass, PUNICODE_STRING ServiceName, PUNICODE_STRING InstanceName, USHORT InstancePort, PUNICODE_STRING Referrer, PUNICODE_STRING InTargetInfo, PUNICODE_STRING Spn, PULONG TotalSize, BOOLEAN Allocate, BOOLEAN IsTargetInfoMarshaled)",
+    "rank_score": 623,
+    "size": 829,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SecpLookupAccountName",
+    "ea": "0x18002092c",
+    "function_file": "functions/18002092c_SecpLookupAccountName.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SecpLookupAccountName",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 479,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "KsecDisconnectRpcConnection",
+    "ea": "0x180001478",
+    "function_file": "functions/180001478_KsecDisconnectRpcConnection.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "msrpc!RpcSsDestroyClientContext",
+      "ntoskrnl!PsIsCurrentThreadInServerSilo"
+    ],
+    "matched_strings": [],
+    "name": "KsecDisconnectRpcConnection",
+    "prototype": "",
+    "rank_score": 617,
+    "size": 141,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "PendingCallFailure",
+    "ea": "0x1800075c4",
+    "function_file": "functions/1800075c4_PendingCallFailure.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExFreeToLookasideListEx",
+      "ntoskrnl!ExInterlockedInsertHeadList"
+    ],
+    "matched_strings": [],
+    "name": "PendingCallFailure",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 617,
+    "size": 211,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SspiHelperCompareUserNames(ushort const *,ushort const *,ushort const *,uchar *)",
+    "ea": "0x180008438",
+    "function_file": "functions/180008438_SspiHelperCompareUserNames_ushort_const_ushort_const_ushort_const_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "?SspiHelperCompareUserNames@@YAJPEBG00PEAE@Z",
+    "prototype": "__int64 __fastcall(PCWSTR, unsigned __int64 SourceString, unsigned __int64, unsigned __int8 *)",
+    "rank_score": 617,
+    "size": 375,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "PendingCallPush",
+    "ea": "0x180026530",
+    "function_file": "functions/180026530_PendingCallPush.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromLookasideListEx",
+      "ntoskrnl!ExInterlockedInsertTailList",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx"
+    ],
+    "matched_strings": [],
+    "name": "PendingCallPush",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 155,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SecpGetRpcBinding",
+    "ea": "0x180027d28",
+    "function_file": "functions/180027d28_SecpGetRpcBinding.md",
+    "matched_imports": [
+      "msrpc!RpcBindingBind",
+      "msrpc!RpcBindingCreateW",
+      "msrpc!RpcBindingFree"
+    ],
+    "matched_strings": [],
+    "name": "SecpGetRpcBinding",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 296,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "LocalCredUnmarshalCredentialW(ushort const *,_CRED_MARSHAL_TYPE *,void * *)",
+    "ea": "0x1800081c4",
+    "function_file": "functions/1800081c4_LocalCredUnmarshalCredentialW_ushort_const_CRED_MARSHAL_TYPE_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?LocalCredUnmarshalCredentialW@@YAKPEBGPEAW4_CRED_MARSHAL_TYPE@@PEAPEAX@Z",
+    "prototype": "unsigned int __fastcall(const unsigned __int16 *, enum _CRED_MARSHAL_TYPE *, void **)",
+    "rank_score": 612,
+    "size": 622,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CreateRpcConnection",
+    "ea": "0x18001f310",
+    "function_file": "functions/18001f310_CreateRpcConnection.md",
+    "matched_imports": [
+      "msrpc!I_RpcExceptionFilter",
+      "msrpc!RpcBindingFree",
+      "msrpc!RpcBindingUnbind"
+    ],
+    "matched_strings": [],
+    "name": "CreateRpcConnection",
+    "prototype": "",
+    "rank_score": 606,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "KsecIoctlInsertProtectedProcessAddress(_KSECDDLSASTATE *,void *,ulong)",
+    "ea": "0x18000d86c",
+    "function_file": "functions/18000d86c_KsecIoctlInsertProtectedProcessAddress_KSECDDLSASTATE_void_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExRaiseDatatypeMisalignment",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!PsGetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "?KsecIoctlInsertProtectedProcessAddress@@YAJPEAU_KSECDDLSASTATE@@PEAXK@Z",
+    "prototype": "__int64 __fastcall(struct _KSECDDLSASTATE *, void *, unsigned int)",
+    "rank_score": 606,
+    "size": 218,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "KsecIoctlRemoveProtectedProcessAddress(_KSECDDLSASTATE *,void *,ulong)",
+    "ea": "0x18000d94c",
+    "function_file": "functions/18000d94c_KsecIoctlRemoveProtectedProcessAddress_KSECDDLSASTATE_void_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExRaiseDatatypeMisalignment",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!PsGetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "?KsecIoctlRemoveProtectedProcessAddress@@YAJPEAU_KSECDDLSASTATE@@PEAXK@Z",
+    "prototype": "__int64 __fastcall(struct _KSECDDLSASTATE *, void *, unsigned int)",
+    "rank_score": 606,
+    "size": 178,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "KsecCopyVirtualMemory(_EPROCESS *,void const *,_EPROCESS *,void *,unsigned __int64)",
+    "ea": "0x180004dbc",
+    "function_file": "functions/180004dbc_KsecCopyVirtualMemory_EPROCESS_void_const_EPROCESS_void_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!MmCopyVirtualMemory",
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "?KsecCopyVirtualMemory@@YAJPEAU_EPROCESS@@PEBX0PEAX_K@Z",
+    "prototype": "int(struct _EPROCESS *, const void *, struct _EPROCESS *, void *, unsigned __int64)",
+    "rank_score": 603,
+    "size": 184,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PendingCallPullBatch",
+    "ea": "0x1800263e0",
+    "function_file": "functions/1800263e0_PendingCallPullBatch.md",
+    "matched_imports": [
+      "ntoskrnl!ExInterlockedInsertHeadList",
+      "ntoskrnl!ExInterlockedRemoveHeadList"
+    ],
+    "matched_strings": [],
+    "name": "PendingCallPullBatch",
+    "prototype": "",
+    "rank_score": 603,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "OpenSyncEvent",
+    "ea": "0x18000c548",
+    "function_file": "functions/18000c548_OpenSyncEvent.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwOpenEvent"
+    ],
+    "matched_strings": [
+      "\\SECURITY\\LSA_AUTHENTICATION_INITIALIZED"
+    ],
+    "name": "OpenSyncEvent",
+    "prototype": "__int64 __fastcall(PHANDLE EventHandle)",
+    "rank_score": 472,
+    "size": 132,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 46,
+    "demangled": "KsecddLsaStateRef::~KsecddLsaStateRef(void)",
+    "ea": "0x180001cf0",
+    "function_file": "functions/180001cf0_KsecddLsaStateRef_KsecddLsaStateRef_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExQueueWorkItem",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "??1KsecddLsaStateRef@@QEAA@XZ",
+    "prototype": "void __fastcall(KsecddLsaStateRef *__hidden this)",
+    "rank_score": 428,
+    "size": 167,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "KsecDispatch",
+    "ea": "0x180026d90",
+    "function_file": "functions/180026d90_KsecDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "KsecDispatch",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 427,
+    "size": 464,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x18002b6ec",
+    "function_file": "functions/18002b6ec_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "__int64(void)",
+    "rank_score": 427,
+    "size": 183,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "CallSPM",
+    "ea": "0x180020e74",
+    "function_file": "functions/180020e74_CallSPM.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetProcessSecurityPort"
+    ],
+    "matched_strings": [],
+    "name": "CallSPM",
+    "prototype": "",
+    "rank_score": 425,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ImpersonateSecurityContext",
+    "ea": "0x1800299f0",
+    "function_file": "functions/1800299f0_ImpersonateSecurityContext.md",
+    "matched_imports": [
+      "ntoskrnl!PsImpersonateClient",
+      "ntoskrnl!SeTokenImpersonationLevel"
+    ],
+    "matched_strings": [],
+    "name": "ImpersonateSecurityContext",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext)",
+    "rank_score": 424,
+    "size": 155,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "IsOkayToExecRpc",
+    "ea": "0x180004074",
+    "function_file": "functions/180004074_IsOkayToExecRpc.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetProcessSecurityPort"
+    ],
+    "matched_strings": [],
+    "name": "IsOkayToExecRpc",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 424,
+    "size": 87,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SspiMarshalAuthIdentity",
+    "ea": "0x180006420",
+    "function_file": "functions/180006420_SspiMarshalAuthIdentity.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "SspiMarshalAuthIdentity",
+    "prototype": "SECURITY_STATUS __stdcall(PSEC_WINNT_AUTH_IDENTITY_OPAQUE AuthIdentity, unsigned int *AuthIdentityLength, char **AuthIdentityByteArray)",
+    "rank_score": 420,
+    "size": 715,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "KsecIoctlCopyPool(void *,ulong)",
+    "ea": "0x18000d2f0",
+    "function_file": "functions/18000d2f0_KsecIoctlCopyPool_void_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExRaiseDatatypeMisalignment",
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "?KsecIoctlCopyPool@@YAJPEAXK@Z",
+    "prototype": "__int64 __fastcall(void *Src, unsigned int)",
+    "rank_score": 415,
+    "size": 636,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "LocateClient",
+    "ea": "0x180001a98",
+    "function_file": "functions/180001a98_LocateClient.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!PsGetProcessSecurityPort"
+    ],
+    "matched_strings": [],
+    "name": "LocateClient",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 67,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "TokenBindingVerifyMessage",
+    "ea": "0x180023760",
+    "function_file": "functions/180023760_TokenBindingVerifyMessage.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "TokenBindingVerifyMessage",
+    "prototype": "__int64 __usercall@<rax>(unsigned __int8 *@<rcx>, int, __int64)",
+    "rank_score": 414,
+    "size": 703,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CallInProgressStarted",
+    "ea": "0x1800266c0",
+    "function_file": "functions/1800266c0_CallInProgressStarted.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExAllocateFromLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "CallInProgressStarted",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 135,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "KsecUpdateUserTokenSessionId(void *,ulong)",
+    "ea": "0x18000da6c",
+    "function_file": "functions/18000da6c_KsecUpdateUserTokenSessionId_void_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExRaiseDatatypeMisalignment",
+      "ntoskrnl!SeSetSessionIdTokenWithLinked"
+    ],
+    "matched_strings": [],
+    "name": "?KsecUpdateUserTokenSessionId@@YAJPEAXK@Z",
+    "prototype": "__int64 __fastcall(void *Src, unsigned int)",
+    "rank_score": 413,
+    "size": 95,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PendingCallDelete",
+    "ea": "0x180026670",
+    "function_file": "functions/180026670_PendingCallDelete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "PendingCallDelete",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 413,
+    "size": 61,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "IoctlIpcCleanupGlobal",
+    "ea": "0x180023048",
+    "function_file": "functions/180023048_IoctlIpcCleanupGlobal.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "IoctlIpcCleanupGlobal",
+    "prototype": "void()",
+    "rank_score": 411,
+    "size": 48,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "KSecLocatePackageEx",
+    "ea": "0x1800018f8",
+    "function_file": "functions/1800018f8_KSecLocatePackageEx.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "KSecLocatePackageEx",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String1)",
+    "rank_score": 408,
+    "size": 359,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x1800216f0",
+    "function_file": "functions/1800216f0_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 236,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x18000ef40",
+    "function_file": "functions/18000ef40_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 233,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x18002b7ac",
+    "function_file": "functions/18002b7ac_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 223,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CallInProgressCompleted",
+    "ea": "0x180026750",
+    "function_file": "functions/180026750_CallInProgressCompleted.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "CallInProgressCompleted",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 75,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ProcessSecurityContextMarshalParams",
+    "ea": "0x180025730",
+    "function_file": "functions/180025730_ProcessSecurityContextMarshalParams.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "ProcessSecurityContextMarshalParams",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 1168,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "RevertSecurityContext",
+    "ea": "0x180029420",
+    "function_file": "functions/180029420_RevertSecurityContext.md",
+    "matched_imports": [
+      "ntoskrnl!PsImpersonateClient"
+    ],
+    "matched_strings": [],
+    "name": "RevertSecurityContext",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext)",
+    "rank_score": 220,
+    "size": 49,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SecpLookupWellKnownSid",
+    "ea": "0x180027ebc",
+    "function_file": "functions/180027ebc_SecpLookupWellKnownSid.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SecpLookupWellKnownSid",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 347,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "SspNtStatusToSecStatus",
+    "ea": "0x180006830",
+    "function_file": "functions/180006830_SspNtStatusToSecStatus.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNtStatusToDosErrorNoTeb"
+    ],
+    "matched_strings": [],
+    "name": "SspNtStatusToSecStatus",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 218,
+    "size": 956,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "SspiLocalFree",
+    "ea": "0x180004050",
+    "function_file": "functions/180004050_SspiLocalFree.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SspiLocalFree",
+    "prototype": "void __stdcall(PVOID DataBuffer)",
+    "rank_score": 216,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "QuerySecurityContextToken",
+    "ea": "0x180029370",
+    "function_file": "functions/180029370_QuerySecurityContextToken.md",
+    "matched_imports": [
+      "ntoskrnl!NtDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "QuerySecurityContextToken",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, void **Token)",
+    "rank_score": 214,
+    "size": 163,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x180022bd0",
+    "function_file": "functions/180022bd0_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 187,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SspiInitAsyncInterface",
+    "ea": "0x180022cc0",
+    "function_file": "functions/180022cc0_SspiInitAsyncInterface.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "SspiInitAsyncInterface",
+    "prototype": "NTSTATUS()",
+    "rank_score": 213,
+    "size": 113,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "SspirProcessSecurityContext",
+    "ea": "0x1800046fc",
+    "function_file": "functions/1800046fc_SspirProcessSecurityContext.md",
+    "matched_imports": [
+      "msrpc!NdrClientCall3"
+    ],
+    "matched_strings": [],
+    "name": "SspirProcessSecurityContext",
+    "prototype": "CLIENT_CALL_RETURN __fastcall(__int64, __int64, __int64, __int64, __int64, __int64, int, int, __int64, __int64, __int64, __int64, __int64, __int64, __int64, __int64, __int64, __int64, __int64, __int64, __int64)",
+    "rank_score": 213,
+    "size": 267,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CsqCompleteCanceledIrp",
+    "ea": "0x18000fd00",
+    "function_file": "functions/18000fd00_CsqCompleteCanceledIrp.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "CsqCompleteCanceledIrp",
+    "prototype": "IO_CSQ_COMPLETE_CANCELED_IRP",
+    "rank_score": 212,
+    "size": 91,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DeleteSecurityContextMarshalParams",
+    "ea": "0x1800265e0",
+    "function_file": "functions/1800265e0_DeleteSecurityContextMarshalParams.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "DeleteSecurityContextMarshalParams",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 137,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspiCreateAsyncContext",
+    "ea": "0x180026390",
+    "function_file": "functions/180026390_SspiCreateAsyncContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "SspiCreateAsyncContext",
+    "prototype": "SspiAsyncContext *__stdcall()",
+    "rank_score": 212,
+    "size": 66,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "KsecSetDeviceSecurity",
+    "ea": "0x180020f30",
+    "function_file": "functions/180020f30_KsecSetDeviceSecurity.md",
+    "matched_imports": [
+      "ntoskrnl!ObSetSecurityObjectByPointer"
+    ],
+    "matched_strings": [],
+    "name": "KsecSetDeviceSecurity",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 211,
+    "size": 34,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SspiFreeAsyncContext",
+    "ea": "0x1800264b0",
+    "function_file": "functions/1800264b0_SspiFreeAsyncContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "SspiFreeAsyncContext",
+    "prototype": "void __stdcall(SspiAsyncContext *Handle)",
+    "rank_score": 211,
+    "size": 118,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "MapSecurityError",
+    "ea": "0x1800046e0",
+    "function_file": "functions/1800046e0_MapSecurityError.md",
+    "matched_imports": [
+      "ntoskrnl!RtlMapSecurityErrorToNtStatus"
+    ],
+    "matched_strings": [],
+    "name": "MapSecurityError",
+    "prototype": "NTSTATUS __stdcall(SECURITY_STATUS SecStatus)",
+    "rank_score": 210,
+    "size": 22,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "MapKernelContextHandle",
+    "ea": "0x1800017c4",
+    "function_file": "functions/1800017c4_MapKernelContextHandle.md",
+    "matched_imports": [
+      "ntoskrnl!MmIsUserAddress"
+    ],
+    "matched_strings": [],
+    "name": "MapKernelContextHandle",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 208,
+    "size": 228,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "TBFreeBuffer",
+    "ea": "0x18001f058",
+    "function_file": "functions/18001f058_TBFreeBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "TBFreeBuffer",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "TBAllocateBuffer",
+    "ea": "0x18001f008",
+    "function_file": "functions/18001f008_TBAllocateBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "TBAllocateBuffer",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IoctlIpcCleanupSilo",
+    "ea": "0x180027e58",
+    "function_file": "functions/180027e58_IoctlIpcCleanupSilo.md",
+    "matched_imports": [
+      "ntoskrnl!ExInterlockedRemoveHeadList"
+    ],
+    "matched_strings": [],
+    "name": "IoctlIpcCleanupSilo",
+    "prototype": "PLIST_ENTRY __fastcall(__int64)",
+    "rank_score": 203,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x1800010f4",
+    "function_file": "functions/1800010f4_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "SspipSleep(ulong)",
+    "ea": "0x180007594",
+    "function_file": "functions/180007594_SspipSleep_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread"
+    ],
+    "matched_strings": [],
+    "name": "?SspipSleep@@YAJK@Z",
+    "prototype": "NTSTATUS __fastcall()",
+    "rank_score": 202,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KSecCreateContextList",
+    "ea": "0x180029530",
+    "function_file": "functions/180029530_KSecCreateContextList.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "KSecCreateContextList",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "ProbeForRead_0",
+    "ea": "0x180007a4f",
+    "function_file": "functions/180007a4f_ProbeForRead_0.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "ProbeForRead_0",
+    "prototype": "void __stdcall(volatile void *Address, SIZE_T Length, ULONG Alignment)",
+    "rank_score": 104,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 36,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180010840",
+    "function_file": "functions/180010840_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 120,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x180010920",
+    "function_file": "functions/180010920_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "ProcessSecurityContextUnMarshalResponse",
+    "ea": "0x1800251d0",
+    "function_file": "functions/1800251d0_ProcessSecurityContextUnMarshalResponse.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ProcessSecurityContextUnMarshalResponse",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 1362,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 42,
+    "demangled": "memmove",
+    "ea": "0x180010980",
+    "function_file": "functions/180010980_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 33,
+    "demangled": "memset",
+    "ea": "0x180010c80",
+    "function_file": "functions/180010c80_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x18000f030",
+    "function_file": "functions/18000f030_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 27,
+    "size": 275,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 29,
+    "demangled": "WPP_SF_",
+    "ea": "0x180007ba8",
+    "function_file": "functions/180007ba8_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 33,
+    "demangled": "WPP_SF_D",
+    "ea": "0x180007bd8",
+    "function_file": "functions/180007bd8_WPP_SF_D.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_D",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "_VerifyTokenBinding",
+    "ea": "0x180023a28",
+    "function_file": "functions/180023a28_VerifyTokenBinding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_VerifyTokenBinding",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 1459,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x18000eec4",
+    "function_file": "functions/18000eec4_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 25,
+    "size": 118,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "KsecRegisterExtension",
+    "ea": "0x180022b44",
+    "function_file": "functions/180022b44_KsecRegisterExtension.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "KsecRegisterExtension",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 24,
+    "size": 134,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 24,
+    "demangled": "KsecddLsaStateRef::IsValid(void)",
+    "ea": "0x180001f90",
+    "function_file": "functions/180001f90_KsecddLsaStateRef_IsValid_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsValid@KsecddLsaStateRef@@QEAA_NXZ",
+    "prototype": "bool __fastcall(KsecddLsaStateRef *__hidden this)",
+    "rank_score": 24,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 24,
+    "demangled": "KsecddLsaStateRef::operator _KSECDDLSASTATE *(void)",
+    "ea": "0x180002820",
+    "function_file": "functions/180002820_KsecddLsaStateRef_operator_KSECDDLSASTATE_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??BKsecddLsaStateRef@@QEAAPEAU_KSECDDLSASTATE@@XZ",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 24,
+    "size": 4,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "SspiCompareAuthIdentities",
+    "ea": "0x180008a40",
+    "function_file": "functions/180008a40_SspiCompareAuthIdentities.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiCompareAuthIdentities",
+    "prototype": "SECURITY_STATUS __stdcall(PSEC_WINNT_AUTH_IDENTITY_OPAQUE AuthIdentity1, PSEC_WINNT_AUTH_IDENTITY_OPAQUE AuthIdentity2, PBOOLEAN SameSuppliedUser, PBOOLEAN SameSuppliedIdentity)",
+    "rank_score": 24,
+    "size": 676,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18001072c",
+    "function_file": "functions/18001072c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x18002b010",
+    "function_file": "functions/18002b010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x18000f14c",
+    "function_file": "functions/18000f14c_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 22,
+    "size": 60,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x180021650",
+    "function_file": "functions/180021650_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "QueryContextAttributesExW",
+    "ea": "0x180029690",
+    "function_file": "functions/180029690_QueryContextAttributesExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QueryContextAttributesExW",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, unsigned int ulAttribute, void *pBuffer, unsigned int cbBuffer)",
+    "rank_score": 20,
+    "size": 339,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "QueryContextAttributesW",
+    "ea": "0x180029570",
+    "function_file": "functions/180029570_QueryContextAttributesW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QueryContextAttributesW",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, unsigned int ulAttribute, void *pBuffer)",
+    "rank_score": 20,
+    "size": 281,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "ImportSecurityContextW",
+    "ea": "0x1800219f0",
+    "function_file": "functions/1800219f0_ImportSecurityContextW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ImportSecurityContextW",
+    "prototype": "SECURITY_STATUS __stdcall(PSECURITY_STRING pszPackage, PSecBuffer pPackedContext, void *Token, PCtxtHandle phContext)",
+    "rank_score": 19,
+    "size": 288,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "DecryptMessage",
+    "ea": "0x180029c90",
+    "function_file": "functions/180029c90_DecryptMessage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DecryptMessage",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, PSecBufferDesc pMessage, unsigned int MessageSeqNo, unsigned int *pfQOP)",
+    "rank_score": 17,
+    "size": 230,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "EncryptMessage",
+    "ea": "0x180029ba0",
+    "function_file": "functions/180029ba0_EncryptMessage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EncryptMessage",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, unsigned int fQOP, PSecBufferDesc pMessage, unsigned int MessageSeqNo)",
+    "rank_score": 17,
+    "size": 220,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "KsecInstallBuiltinPackages",
+    "ea": "0x18002262c",
+    "function_file": "functions/18002262c_KsecInstallBuiltinPackages.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "KsecInstallBuiltinPackages",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 210,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SspiAcceptSecurityContextAsync",
+    "ea": "0x1800240e0",
+    "function_file": "functions/1800240e0_SspiAcceptSecurityContextAsync.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiAcceptSecurityContextAsync",
+    "prototype": "SECURITY_STATUS __stdcall(SspiAsyncContext *AsyncContext, PCredHandle phCredential, PCtxtHandle phContext, PSecBufferDesc pInput, unsigned int fContextReq, unsigned int TargetDataRep, PCtxtHandle phNewContext, PSecBufferDesc pOutput, unsigned int *pfContextAttr, PTimeStamp ptsExpiry)",
+    "rank_score": 17,
+    "size": 498,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SspiValidateAuthIdentity",
+    "ea": "0x180006700",
+    "function_file": "functions/180006700_SspiValidateAuthIdentity.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiValidateAuthIdentity",
+    "prototype": "SECURITY_STATUS __stdcall(PSEC_WINNT_AUTH_IDENTITY_OPAQUE AuthData)",
+    "rank_score": 17,
+    "size": 298,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 13,
+    "demangled": "IsOkayToExec",
+    "ea": "0x180001a68",
+    "function_file": "functions/180001a68_IsOkayToExec.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "IsOkayToExec",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "KsecRemoveValidAddress",
+    "ea": "0x180007a0c",
+    "function_file": "functions/180007a0c_KsecRemoveValidAddress.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "KsecRemoveValidAddress",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x18000ed40",
+    "function_file": "functions/18000ed40_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 380,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x18000b860",
+    "function_file": "functions/18000b860_wil_details_RecordCachedUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 12,
+    "demangled": "RtlCopyFromUser",
+    "ea": "0x180007a64",
+    "function_file": "functions/180007a64_RtlCopyFromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 15,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ApplyControlToken",
+    "ea": "0x180021870",
+    "function_file": "functions/180021870_ApplyControlToken.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ApplyControlToken",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, PSecBufferDesc pInput)",
+    "rank_score": 14,
+    "size": 101,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x180021518",
+    "function_file": "functions/180021518_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "AddCredentialsW",
+    "ea": "0x1800217b0",
+    "function_file": "functions/1800217b0_AddCredentialsW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AddCredentialsW",
+    "prototype": "SECURITY_STATUS __stdcall(PCredHandle hCredentials, PSECURITY_STRING pPrincipal, PSECURITY_STRING pPackage, unsigned int fCredentialUse, void *pAuthData, SEC_GET_KEY_FN pGetKeyFn, void *pvGetKeyArgument, PTimeStamp ptsExpiry)",
+    "rank_score": 13,
+    "size": 173,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Feature_Schannel_SslCopyTlsExtensions__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x18000e7c4",
+    "function_file": "functions/18000e7c4_Feature_Schannel_SslCopyTlsExtensions_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Schannel_SslCopyTlsExtensions__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "__int64(void)",
+    "rank_score": 13,
+    "size": 53,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "InitSecurityInterfaceW",
+    "ea": "0x18000ba40",
+    "function_file": "functions/18000ba40_InitSecurityInterfaceW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "InitSecurityInterfaceW",
+    "prototype": "PSecurityFunctionTableW __stdcall()",
+    "rank_score": 13,
+    "size": 81,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "KsecCreateProcessNotifyRoutine",
+    "ea": "0x1800272b0",
+    "function_file": "functions/1800272b0_KsecCreateProcessNotifyRoutine.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "KsecCreateProcessNotifyRoutine",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 35,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SetCredentialsAttributesW",
+    "ea": "0x180021980",
+    "function_file": "functions/180021980_SetCredentialsAttributesW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetCredentialsAttributesW",
+    "prototype": "SECURITY_STATUS __stdcall(PCredHandle phCredential, unsigned int ulAttribute, void *pBuffer, unsigned int cbBuffer)",
+    "rank_score": 13,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SslCopyTlsExtensions",
+    "ea": "0x18000e820",
+    "function_file": "functions/18000e820_SslCopyTlsExtensions.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SslCopyTlsExtensions",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, __int64, char, __int64, int)",
+    "rank_score": 13,
+    "size": 114,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WPP_SF_dLLqqL",
+    "ea": "0x18000dd48",
+    "function_file": "functions/18000dd48_WPP_SF_dLLqqL.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_dLLqqL",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 143,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x18000eb94",
+    "function_file": "functions/18000eb94_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x18000ec64",
+    "function_file": "functions/18000ec64_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BCryptRegisterConfigChangeNotify",
+    "ea": "0x18000e6a0",
+    "function_file": "functions/18000e6a0_BCryptRegisterConfigChangeNotify.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptRegisterConfigChangeNotify",
+    "prototype": "NTSTATUS __stdcall(HANDLE *phEvent)",
+    "rank_score": 12,
+    "size": 43,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BCryptUnregisterConfigChangeNotify",
+    "ea": "0x18000e790",
+    "function_file": "functions/18000e790_BCryptUnregisterConfigChangeNotify.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptUnregisterConfigChangeNotify",
+    "prototype": "NTSTATUS __stdcall(HANDLE hEvent)",
+    "rank_score": 12,
+    "size": 43,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CompleteAuthToken",
+    "ea": "0x180029300",
+    "function_file": "functions/180029300_CompleteAuthToken.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CompleteAuthToken",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, PSecBufferDesc pToken)",
+    "rank_score": 12,
+    "size": 42,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ExportSecurityContext",
+    "ea": "0x1800219b0",
+    "function_file": "functions/1800219b0_ExportSecurityContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ExportSecurityContext",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, ULONG fFlags, PSecBuffer pPackedContext, void **pToken)",
+    "rank_score": 12,
+    "size": 50,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Feature_Schannel_SslCopyTlsExtensions__private_IsEnabledFallback",
+    "ea": "0x18000e800",
+    "function_file": "functions/18000e800_Feature_Schannel_SslCopyTlsExtensions_private_IsEnabledFallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_Schannel_SslCopyTlsExtensions__private_IsEnabledFallback",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 15,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FreeContextBuffer",
+    "ea": "0x180027290",
+    "function_file": "functions/180027290_FreeContextBuffer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FreeContextBuffer",
+    "prototype": "SECURITY_STATUS __stdcall(PVOID pvContextBuffer)",
+    "rank_score": 12,
+    "size": 17,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "LsaLogonUser",
+    "ea": "0x18001f730",
+    "function_file": "functions/18001f730_LsaLogonUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LsaLogonUser",
+    "prototype": "NTSTATUS __stdcall(HANDLE LsaHandle, PLSA_STRING OriginName, SECURITY_LOGON_TYPE LogonType, ULONG AuthenticationPackage, PVOID AuthenticationInformation, ULONG AuthenticationInformationLength, PTOKEN_GROUPS LocalGroups, PTOKEN_SOURCE SourceContext, PVOID *ProfileBuffer, PULONG ProfileBufferLength, PLUID LogonId, PHANDLE Token, PQUOTA_LIMITS Quotas, PNTSTATUS SubStatus)",
+    "rank_score": 12,
+    "size": 137,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MakeSignature",
+    "ea": "0x180029330",
+    "function_file": "functions/180029330_MakeSignature.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MakeSignature",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, unsigned int fQOP, PSecBufferDesc pMessage, unsigned int MessageSeqNo)",
+    "rank_score": 12,
+    "size": 50,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SecLookupAccountName",
+    "ea": "0x18000bc10",
+    "function_file": "functions/18000bc10_SecLookupAccountName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SecLookupAccountName",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING Name, PULONG SidSize, PSID Sid, PSID_NAME_USE NameUse, PULONG DomainSize, PUNICODE_STRING ReferencedDomain)",
+    "rank_score": 12,
+    "size": 71,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SslGetExtensions",
+    "ea": "0x18000ea50",
+    "function_file": "functions/18000ea50_SslGetExtensions.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SslGetExtensions",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 75,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspiAcquireCredentialsHandleAsyncW",
+    "ea": "0x1800276c0",
+    "function_file": "functions/1800276c0_SspiAcquireCredentialsHandleAsyncW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiAcquireCredentialsHandleAsyncW",
+    "prototype": "SECURITY_STATUS __stdcall(SspiAsyncContext *AsyncContext, PSECURITY_STRING pszPrincipal, PSECURITY_STRING pszPackage, unsigned int fCredentialUse, void *pvLogonId, void *pAuthData, SEC_GET_KEY_FN pGetKeyFn, void *pvGetKeyArgument, PCredHandle phCredential, PTimeStamp ptsExpiry)",
+    "rank_score": 12,
+    "size": 111,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspiDeleteSecurityContextAsync",
+    "ea": "0x180025d80",
+    "function_file": "functions/180025d80_SspiDeleteSecurityContextAsync.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiDeleteSecurityContextAsync",
+    "prototype": "SECURITY_STATUS __stdcall(SspiAsyncContext *AsyncContext, PCtxtHandle phContext)",
+    "rank_score": 12,
+    "size": 39,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SspiInitializeSecurityContextAsyncW",
+    "ea": "0x180022d40",
+    "function_file": "functions/180022d40_SspiInitializeSecurityContextAsyncW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiInitializeSecurityContextAsyncW",
+    "prototype": "SECURITY_STATUS __stdcall(SspiAsyncContext *AsyncContext, PCredHandle phCredential, PCtxtHandle phContext, PSECURITY_STRING pszTargetName, unsigned int fContextReq, unsigned int Reserved1, unsigned int TargetDataRep, PSecBufferDesc pInput, unsigned int Reserved2, PCtxtHandle phNewContext, PSecBufferDesc pOutput, unsigned int *pfContextAttr, PTimeStamp ptsExpiry)",
+    "rank_score": 12,
+    "size": 121,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VerifySignature",
+    "ea": "0x180029460",
+    "function_file": "functions/180029460_VerifySignature.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VerifySignature",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext, PSecBufferDesc pMessage, unsigned int MessageSeqNo, unsigned int *pfQOP)",
+    "rank_score": 12,
+    "size": 50,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x18002b044",
+    "function_file": "functions/18002b044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AcceptSecurityContext",
+    "ea": "0x180024850",
+    "function_file": "functions/180024850_AcceptSecurityContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AcceptSecurityContext",
+    "prototype": "SECURITY_STATUS __stdcall(PCredHandle phCredential, PCtxtHandle phContext, PSecBufferDesc pInput, unsigned int fContextReq, unsigned int TargetDataRep, PCtxtHandle phNewContext, PSecBufferDesc pOutput, unsigned int *pfContextAttr, PTimeStamp ptsExpiry)",
+    "rank_score": 11,
+    "size": 96,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "AcquireCredentialsHandleW",
+    "ea": "0x180027650",
+    "function_file": "functions/180027650_AcquireCredentialsHandleW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AcquireCredentialsHandleW",
+    "prototype": "SECURITY_STATUS __stdcall(PSECURITY_STRING pPrincipal, PSECURITY_STRING pPackage, unsigned int fCredentialUse, void *pvLogonId, void *pAuthData, SEC_GET_KEY_FN pGetKeyFn, void *pvGetKeyArgument, PCredHandle phCredential, PTimeStamp ptsExpiry)",
+    "rank_score": 11,
+    "size": 93,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DeleteSecurityContext",
+    "ea": "0x180025d60",
+    "function_file": "functions/180025d60_DeleteSecurityContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DeleteSecurityContext",
+    "prototype": "SECURITY_STATUS __stdcall(PCtxtHandle phContext)",
+    "rank_score": 11,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "EnumerateSecurityPackagesW",
+    "ea": "0x1800218e0",
+    "function_file": "functions/1800218e0_EnumerateSecurityPackagesW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EnumerateSecurityPackagesW",
+    "prototype": "SECURITY_STATUS __stdcall(unsigned int *pcPackages, PSecPkgInfoW *ppPackageInfo)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "FreeCredentialsHandle",
+    "ea": "0x1800279c0",
+    "function_file": "functions/1800279c0_FreeCredentialsHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FreeCredentialsHandle",
+    "prototype": "SECURITY_STATUS __stdcall(PCredHandle phCredential)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "GetSecurityUserInfo",
+    "ea": "0x180004b20",
+    "function_file": "functions/180004b20_GetSecurityUserInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetSecurityUserInfo",
+    "prototype": "NTSTATUS __stdcall(PLUID LogonId, ULONG Flags, PSecurityUserData *UserInformation)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "InitializeSecurityContextW",
+    "ea": "0x1800247d0",
+    "function_file": "functions/1800247d0_InitializeSecurityContextW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "InitializeSecurityContextW",
+    "prototype": "SECURITY_STATUS __stdcall(PCredHandle phCredential, PCtxtHandle phContext, PSECURITY_STRING pTargetName, unsigned int fContextReq, unsigned int Reserved1, unsigned int TargetDataRep, PSecBufferDesc pInput, unsigned int Reserved2, PCtxtHandle phNewContext, PSecBufferDesc pOutput, unsigned int *pfContextAttr, PTimeStamp ptsExpiry)",
+    "rank_score": 11,
+    "size": 118,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "QueryCredentialsAttributesW",
+    "ea": "0x180021960",
+    "function_file": "functions/180021960_QueryCredentialsAttributesW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QueryCredentialsAttributesW",
+    "prototype": "SECURITY_STATUS __stdcall(PCredHandle phCredential, unsigned int ulAttribute, void *pBuffer)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "QuerySecurityPackageInfoW",
+    "ea": "0x180027a00",
+    "function_file": "functions/180027a00_QuerySecurityPackageInfoW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuerySecurityPackageInfoW",
+    "prototype": "SECURITY_STATUS __stdcall(PSECURITY_STRING pPackageName, PSecPkgInfoW *ppPackageInfo)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SecLookupAccountSid",
+    "ea": "0x180003660",
+    "function_file": "functions/180003660_SecLookupAccountSid.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SecLookupAccountSid",
+    "prototype": "NTSTATUS __stdcall(PSID Sid, PULONG NameSize, PUNICODE_STRING NameBuffer, PULONG DomainSize, PUNICODE_STRING DomainBuffer, PSID_NAME_USE NameUse)",
+    "rank_score": 11,
+    "size": 35,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SecMakeSPN",
+    "ea": "0x180022740",
+    "function_file": "functions/180022740_SecMakeSPN.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SecMakeSPN",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING ServiceClass, PUNICODE_STRING ServiceName, PUNICODE_STRING InstanceName, USHORT InstancePort, PUNICODE_STRING Referrer, PUNICODE_STRING Spn, PULONG Length, BOOLEAN Allocate)",
+    "rank_score": 11,
+    "size": 78,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SecMakeSPNEx",
+    "ea": "0x1800227a0",
+    "function_file": "functions/1800227a0_SecMakeSPNEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SecMakeSPNEx",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING ServiceClass, PUNICODE_STRING ServiceName, PUNICODE_STRING InstanceName, USHORT InstancePort, PUNICODE_STRING Referrer, PUNICODE_STRING TargetInfo, PUNICODE_STRING Spn, PULONG Length, BOOLEAN Allocate)",
+    "rank_score": 11,
+    "size": 82,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SspiFreeCredentialsHandleAsync",
+    "ea": "0x180022ca0",
+    "function_file": "functions/180022ca0_SspiFreeCredentialsHandleAsync.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiFreeCredentialsHandleAsync",
+    "prototype": "SECURITY_STATUS __stdcall(SspiAsyncContext *AsyncContext, PCredHandle phCredential)",
+    "rank_score": 11,
+    "size": 24,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SspiGetAsyncCallStatus",
+    "ea": "0x180026d70",
+    "function_file": "functions/180026d70_SspiGetAsyncCallStatus.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiGetAsyncCallStatus",
+    "prototype": "SECURITY_STATUS __stdcall(SspiAsyncContext *Handle)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SspiSetAsyncNotifyCallback",
+    "ea": "0x180026d40",
+    "function_file": "functions/180026d40_SspiSetAsyncNotifyCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiSetAsyncNotifyCallback",
+    "prototype": "SECURITY_STATUS __stdcall(SspiAsyncContext *Context, SspiAsyncNotifyCallback Callback, void *CallbackData)",
+    "rank_score": 11,
+    "size": 31,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SspiUnmarshalAuthIdentity",
+    "ea": "0x18000ac70",
+    "function_file": "functions/18000ac70_SspiUnmarshalAuthIdentity.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SspiUnmarshalAuthIdentity",
+    "prototype": "SECURITY_STATUS __stdcall(unsigned int AuthIdentityLength, char *AuthIdentityByteArray, PSEC_WINNT_AUTH_IDENTITY_OPAQUE *ppAuthIdentity)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DeleteSecurityContextUnMarshalResponse",
+    "ea": "0x180022730",
+    "function_file": "functions/180022730_DeleteSecurityContextUnMarshalResponse.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DeleteSecurityContextUnMarshalResponse",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "NegCompleteToken",
+    "ea": "0x180022710",
+    "function_file": "functions/180022710_NegCompleteToken.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NegCompleteToken",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "WPP_SF_qL",
+    "ea": "0x18000df18",
+    "function_file": "functions/18000df18_WPP_SF_qL.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qL",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CopyExtraBuffers(_SecBufferInfoArray *,_SecBufferDesc *)",
+    "ea": "0x180004b38",
+    "function_file": "functions/180004b38_CopyExtraBuffers_SecBufferInfoArray_SecBufferDesc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CopyExtraBuffers@@YAJPEAU_SecBufferInfoArray@@PEAU_SecBufferDesc@@@Z",
+    "prototype": "__int64 __fastcall(struct _SecBufferInfoArray *, struct _SecBufferDesc *)",
+    "rank_score": 7,
+    "size": 307,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "TBPopulateTokenBindingHash",
+    "ea": "0x180023fe4",
+    "function_file": "functions/180023fe4_TBPopulateTokenBindingHash.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TBPopulateTokenBindingHash",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 235,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_qqL",
+    "ea": "0x18000e044",
+    "function_file": "functions/18000e044_WPP_SF_qqL.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qqL",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x18000b834",
+    "function_file": "functions/18000b834_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "LocalCredIsMarshaledCredentialW(ushort const *)",
+    "ea": "0x180007fc4",
+    "function_file": "functions/180007fc4_LocalCredIsMarshaledCredentialW_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?LocalCredIsMarshaledCredentialW@@YAHPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 6,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "RtlCopyToUser",
+    "ea": "0x18001f520",
+    "function_file": "functions/18001f520_RtlCopyToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 6,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "RtlWriteULong64ToUser",
+    "ea": "0x18001f5c0",
+    "function_file": "functions/18001f5c0_RtlWriteULong64ToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "AsyncSspiMarshaler<KernelAllocator>::CopyBuffer<uchar>(uchar * *,uchar *,ulong)",
+    "ea": "0x18000f414",
+    "function_file": "functions/18000f414_AsyncSspiMarshaler_KernelAllocator_CopyBuffer_uchar_uchar_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$CopyBuffer@E@?$AsyncSspiMarshaler@UKernelAllocator@@@@QEAAJPEAPEAEPEAEK@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, const void *, unsigned int)",
+    "rank_score": 5,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "KsecCreateRpcConnection",
+    "ea": "0x1800011d0",
+    "function_file": "functions/1800011d0_KsecCreateRpcConnection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "KsecCreateRpcConnection",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 88,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "KsecFindValidVm(_KSECDDLSASTATE *,_EPROCESS *,uchar *,ulong,ulong)",
+    "ea": "0x18000c648",
+    "function_file": "functions/18000c648_KsecFindValidVm_KSECDDLSASTATE_EPROCESS_uchar_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?KsecFindValidVm@@YAKPEAU_KSECDDLSASTATE@@PEAU_EPROCESS@@PEAEKK@Z",
+    "prototype": "unsigned int __fastcall(struct _KSECDDLSASTATE *, struct _EPROCESS *, unsigned __int8 *, unsigned int, unsigned int)",
+    "rank_score": 5,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "LogKsecTokenBindingVerifyMessage(uchar,uchar,uchar,ulong,_LARGE_INTEGER,_LARGE_INTEGER,long)",
+    "ea": "0x18000fe7c",
+    "function_file": "functions/18000fe7c_LogKsecTokenBindingVerifyMessage_uchar_uchar_uchar_ulong_LARGE_INTEGER_LARGE_INTEGER_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?LogKsecTokenBindingVerifyMessage@@YAXEEEKT_LARGE_INTEGER@@0J@Z",
+    "prototype": "void __fastcall(unsigned __int8, unsigned __int8, unsigned __int8, unsigned int, union _LARGE_INTEGER, union _LARGE_INTEGER, int)",
+    "rank_score": 5,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TBCopyKeyTypes",
+    "ea": "0x1800049e8",
+    "function_file": "functions/1800049e8_TBCopyKeyTypes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TBCopyKeyTypes",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 164,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "WPP_SF_q",
+    "ea": "0x18000ded4",
+    "function_file": "functions/18000ded4_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_CopyTokenBinding(uchar *,ulong *,ulong,TOKENBINDING_IDENTIFIER *,ulong *,TOKENBINDING_TYPE *,uchar *)",
+    "ea": "0x18000ff44",
+    "function_file": "functions/18000ff44_CopyTokenBinding_uchar_ulong_ulong_TOKENBINDING_IDENTIFIER_ulong_TOKENBINDING_TYPE_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_CopyTokenBinding@@YAJPEAEPEAKKPEAUTOKENBINDING_IDENTIFIER@@1PEAW4TOKENBINDING_TYPE@@0@Z",
+    "prototype": "int(unsigned __int8 *, unsigned int *, unsigned int, struct TOKENBINDING_IDENTIFIER *, unsigned int *, enum TOKENBINDING_TYPE *, unsigned __int8 *)",
+    "rank_score": 5,
+    "size": 283,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CredpMarshalSize",
+    "ea": "0x18001f08c",
+    "function_file": "functions/18001f08c_CredpMarshalSize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CredpMarshalSize",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RtlReadULong64FromUser",
+    "ea": "0x18001f584",
+    "function_file": "functions/18001f584_RtlReadULong64FromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULong64FromUser",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WPP_SF_LL",
+    "ea": "0x18000b298",
+    "function_file": "functions/18000b298_WPP_SF_LL.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_LL",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 4,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$00@@U1@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapperByVal@$07@@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$00@@33AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapperByVal@$07@@4@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 180,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x1800214dc",
+    "function_file": "functions/1800214dc_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AsyncSspiMarshaler<KernelAllocator>::CopyString(_UNICODE_STRING *,_UNICODE_STRING *)",
+    "ea": "0x180002780",
+    "function_file": "functions/180002780_AsyncSspiMarshaler_KernelAllocator_CopyString_UNICODE_STRING_UNICODE_STRING.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CopyString@?$AsyncSspiMarshaler@UKernelAllocator@@@@QEAAJPEAU_UNICODE_STRING@@0@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned __int16 *)",
+    "rank_score": 3,
+    "size": 101,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BCryptCreateHash",
+    "ea": "0x180002710",
+    "function_file": "functions/180002710_BCryptCreateHash.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptCreateHash",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE hAlgorithm, BCRYPT_HASH_HANDLE *phHash, PUCHAR pbHashObject, ULONG cbHashObject, PUCHAR pbSecret, ULONG cbSecret, ULONG dwFlags)",
+    "rank_score": 3,
+    "size": 95,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x180010870",
+    "function_file": "functions/180010870_RtlCopyVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 3,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "TokenBindingGetKeyTypesServer",
+    "ea": "0x180023700",
+    "function_file": "functions/180023700_TokenBindingGetKeyTypesServer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TokenBindingGetKeyTypesServer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x1800213c4",
+    "function_file": "functions/1800213c4_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BCryptOpenAlgorithmProvider",
+    "ea": "0x1800044f0",
+    "function_file": "functions/1800044f0_BCryptOpenAlgorithmProvider.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BCryptOpenAlgorithmProvider",
+    "prototype": "NTSTATUS __stdcall(BCRYPT_ALG_HANDLE *phAlgorithm, LPCWSTR pszAlgId, LPCWSTR pszImplementation, ULONG dwFlags)",
+    "rank_score": 2,
+    "size": 46,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SslOpenProvider",
+    "ea": "0x18000eb60",
+    "function_file": "functions/18000eb60_SslOpenProvider.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SslOpenProvider",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SystemPrng(uchar *,unsigned __int64)",
+    "ea": "0x18000e250",
+    "function_file": "functions/18000e250_SystemPrng_uchar_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SystemPrng@@YAHPEAE_K@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, unsigned __int64)",
+    "rank_score": 2,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TokenBindingGetHighestSupportedVersion",
+    "ea": "0x1800236a0",
+    "function_file": "functions/1800236a0_TokenBindingGetHighestSupportedVersion.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TokenBindingGetHighestSupportedVersion",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_tlgCreate1Sz_char",
+    "ea": "0x180001198",
+    "function_file": "functions/180001198_tlgCreate1Sz_char.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_char",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CsqRemoveIrp",
+    "ea": "0x180002830",
+    "function_file": "functions/180002830_CsqRemoveIrp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CsqRemoveIrp",
+    "prototype": "IO_CSQ_REMOVE_IRP",
+    "rank_score": 1,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyFromUser$thunk$11487580757436585079",
+    "ea": "0x180012010",
+    "function_file": "functions/180012010_RtlCopyFromUser_thunk_11487580757436585079.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser$thunk$11487580757436585079",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyToUser$thunk$8481748130428616498",
+    "ea": "0x180012020",
+    "function_file": "functions/180012020_RtlCopyToUser_thunk_8481748130428616498.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser$thunk$8481748130428616498",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x180010880",
+    "function_file": "functions/180010880_RtlMoveVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlReadULong64FromUser$thunk$2147908448085668007",
+    "ea": "0x180012030",
+    "function_file": "functions/180012030_RtlReadULong64FromUser_thunk_2147908448085668007.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlReadULong64FromUser$thunk$2147908448085668007",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "ea": "0x180012040",
+    "function_file": "functions/180012040_RtlWriteULong64ToUser_thunk_4480820996488585629.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  }
+]

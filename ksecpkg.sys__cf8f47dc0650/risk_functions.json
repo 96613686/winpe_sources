@@ -1,0 +1,3494 @@
+[
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "NtLmInitKernelContext",
+    "ea": "0x140023580",
+    "function_file": "functions/140023580_NtLmInitKernelContext.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash",
+      "cng!BCryptDestroyHash",
+      "cng!BCryptFinishHash",
+      "cng!BCryptHashData",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwQueryObject",
+      "ntoskrnl!ZwSetInformationObject"
+    ],
+    "matched_strings": [
+      "Token"
+    ],
+    "name": "NtLmInitKernelContext",
+    "prototype": "",
+    "rank_score": 6063,
+    "size": 2031,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "Pku2uQueryContextAttributes",
+    "ea": "0x1400291a0",
+    "function_file": "functions/1400291a0_Pku2uQueryContextAttributes.md",
+    "matched_imports": [
+      "ksecdd!FreeContextBuffer",
+      "ksecdd!KSecAllocateContextBuffer",
+      "ksecdd!QuerySecurityPackageInfoW",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [
+      "Invalid handle supplied for GetContextToken(0x%x)\n",
+      "PKU2U Security Package"
+    ],
+    "name": "Pku2uQueryContextAttributes",
+    "prototype": "",
+    "rank_score": 2919,
+    "size": 1244,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "SspSignSealHelper",
+    "ea": "0x140030a90",
+    "function_file": "functions/140030a90_SspSignSealHelper.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash",
+      "cng!BCryptDestroyHash",
+      "cng!BCryptDestroyKey",
+      "cng!BCryptDuplicateKey",
+      "cng!BCryptEncrypt",
+      "cng!BCryptFinishHash",
+      "cng!BCryptHashData"
+    ],
+    "matched_strings": [],
+    "name": "SspSignSealHelper",
+    "prototype": "",
+    "rank_score": 2821,
+    "size": 1642,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CSslSerializeHelper::DeserializeContextWorker(CSslUserContext *,ulong)",
+    "ea": "0x140002510",
+    "function_file": "functions/140002510_CSslSerializeHelper_DeserializeContextWorker_CSslUserContext_ulong.md",
+    "matched_imports": [
+      "cng!SslImportKey",
+      "cng!SslIncrementProviderReferenceCount",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?DeserializeContextWorker@CSslSerializeHelper@@AEAAJPEAUCSslUserContext@@K@Z",
+    "prototype": "__int64 __fastcall(CSslSerializeHelper *__hidden this, struct CSslUserContext *, unsigned int)",
+    "rank_score": 2441,
+    "size": 1799,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "LoadCNG",
+    "ea": "0x14002c95c",
+    "function_file": "functions/14002c95c_LoadCNG.md",
+    "matched_imports": [
+      "cng!BCryptGetProperty",
+      "cng!BCryptOpenAlgorithmProvider",
+      "cng!BCryptSetProperty"
+    ],
+    "matched_strings": [],
+    "name": "LoadCNG",
+    "prototype": "__int64()",
+    "rank_score": 2210,
+    "size": 778,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "GetExternalCipherAlgorithms",
+    "ea": "0x14000d5d8",
+    "function_file": "functions/14000d5d8_GetExternalCipherAlgorithms.md",
+    "matched_imports": [
+      "cng!BCryptCloseAlgorithmProvider",
+      "cng!BCryptGetProperty",
+      "cng!BCryptOpenAlgorithmProvider",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwEnumerateKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\MACHINE\\System\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft SSL Protocol Provider\\Cipher",
+      "\\Registry\\MACHINE\\System\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft SSL Protocol Provider\\Cipher"
+    ],
+    "name": "GetExternalCipherAlgorithms",
+    "prototype": "",
+    "rank_score": 2116,
+    "size": 813,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NtLmQueryContextAttributes",
+    "ea": "0x140030590",
+    "function_file": "functions/140030590_NtLmQueryContextAttributes.md",
+    "matched_imports": [
+      "ksecdd!FreeContextBuffer",
+      "ksecdd!KSecAllocateContextBuffer"
+    ],
+    "matched_strings": [
+      "NTLM Security Package"
+    ],
+    "name": "NtLmQueryContextAttributes",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1863,
+    "size": 1263,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SchannelMapLsaToKernelContext",
+    "ea": "0x140023240",
+    "function_file": "functions/140023240_SchannelMapLsaToKernelContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafe",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsGetCurrentServerSilo",
+      "ntoskrnl!PsGetSiloIdentifier",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlInsertElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "SchannelMapLsaToKernelContext",
+    "prototype": "",
+    "rank_score": 1806,
+    "size": 478,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NtLmGetContextToken",
+    "ea": "0x14002fba0",
+    "function_file": "functions/14002fba0_NtLmGetContextToken.md",
+    "matched_imports": [
+      "cng!BCryptDestroyKey",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetInformationObject"
+    ],
+    "matched_strings": [],
+    "name": "NtLmGetContextToken",
+    "prototype": "__int64 __fastcall(PVOID P, _QWORD *, _QWORD *)",
+    "rank_score": 1805,
+    "size": 435,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "GetExternalHashAlgorithms",
+    "ea": "0x14000d200",
+    "function_file": "functions/14000d200_GetExternalHashAlgorithms.md",
+    "matched_imports": [
+      "cng!BCryptCloseAlgorithmProvider",
+      "cng!BCryptGetProperty",
+      "cng!BCryptOpenAlgorithmProvider",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwEnumerateKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\MACHINE\\System\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft SSL Protocol Provider\\Hash",
+      "\\Registry\\MACHINE\\System\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft SSL Protocol Provider\\Hash"
+    ],
+    "name": "GetExternalHashAlgorithms",
+    "prototype": "",
+    "rank_score": 1717,
+    "size": 776,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "GetExternalKeyExchangeAlgorithms",
+    "ea": "0x14000ca84",
+    "function_file": "functions/14000ca84_GetExternalKeyExchangeAlgorithms.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwEnumerateKey",
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [
+      "\\Registry\\MACHINE\\System\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft SSL Protocol Provider\\KeyExchange",
+      "\\Registry\\MACHINE\\System\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft SSL Protocol Provider\\KeyExchange"
+    ],
+    "name": "GetExternalKeyExchangeAlgorithms",
+    "prototype": "",
+    "rank_score": 1716,
+    "size": 801,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "GetExternalSignatureAlgorithms",
+    "ea": "0x14000ce40",
+    "function_file": "functions/14000ce40_GetExternalSignatureAlgorithms.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwEnumerateKey",
+      "ntoskrnl!_wcsicmp"
+    ],
+    "matched_strings": [
+      "\\Registry\\MACHINE\\System\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft SSL Protocol Provider\\Signature",
+      "\\Registry\\MACHINE\\System\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft SSL Protocol Provider\\Signature"
+    ],
+    "name": "GetExternalSignatureAlgorithms",
+    "prototype": "",
+    "rank_score": 1517,
+    "size": 803,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "TlsOpenRegKey",
+    "ea": "0x14000c86c",
+    "function_file": "functions/14000c86c_TlsOpenRegKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "TlsOpenRegKey",
+    "prototype": "__int64 __fastcall(PCWSTR Source, PCWSTR, PHANDLE KeyHandle)",
+    "rank_score": 1438,
+    "size": 379,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DeleteUserContext(CSslUserContext *)",
+    "ea": "0x1400045b0",
+    "function_file": "functions/1400045b0_DeleteUserContext_CSslUserContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!ExInitializePagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteUserContext@@YAXPEAUCSslUserContext@@@Z",
+    "prototype": "void __fastcall(PVOID Entry)",
+    "rank_score": 1427,
+    "size": 363,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "NtlmDerefContext",
+    "ea": "0x14002fe40",
+    "function_file": "functions/14002fe40_NtlmDerefContext.md",
+    "matched_imports": [
+      "cng!BCryptDestroyKey",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetInformationObject"
+    ],
+    "matched_strings": [],
+    "name": "NtlmDerefContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1413,
+    "size": 237,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SchannelLookupKernelContextFromLsa",
+    "ea": "0x140021804",
+    "function_file": "functions/140021804_SchannelLookupKernelContextFromLsa.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafe",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsGetCurrentServerSilo",
+      "ntoskrnl!PsGetSiloIdentifier",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "SchannelLookupKernelContextFromLsa",
+    "prototype": "",
+    "rank_score": 1407,
+    "size": 338,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SchannelUnMapLsaToKernelContext(unsigned __int64,unsigned __int64)",
+    "ea": "0x140005170",
+    "function_file": "functions/140005170_SchannelUnMapLsaToKernelContext_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafe",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!PsGetCurrentServerSilo",
+      "ntoskrnl!PsGetSiloIdentifier",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?SchannelUnMapLsaToKernelContext@@YAX_K0@Z",
+    "prototype": "void __fastcall(unsigned __int64, unsigned __int64)",
+    "rank_score": 1404,
+    "size": 331,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateUserContext(ulong)",
+    "ea": "0x140002c20",
+    "function_file": "functions/140002c20_CreateUserContext_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "?CreateUserContext@@YAPEAUCSslUserContext@@K@Z",
+    "prototype": "struct CSslUserContext *__fastcall(size_t Size)",
+    "rank_score": 1218,
+    "size": 405,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "UpdateTrafficSecretAndDeriveNewKey(unsigned __int64,unsigned __int64 *,unsigned __int64 *,unsigned __int64 *)",
+    "ea": "0x14000be38",
+    "function_file": "functions/14000be38_UpdateTrafficSecretAndDeriveNewKey_unsigned_int64_unsigned_int64_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "cng!SslExpandNextGenTrafficKey",
+      "cng!SslExpandWriteKey",
+      "cng!SslFreeObject"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateTrafficSecretAndDeriveNewKey@@YAJ_KPEA_K11@Z",
+    "prototype": "__int64 __fastcall(unsigned __int64, unsigned __int64 *, unsigned __int64 *, unsigned __int64 *)",
+    "rank_score": 1214,
+    "size": 307,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HMACwithSHA",
+    "ea": "0x14002f568",
+    "function_file": "functions/14002f568_HMACwithSHA.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash",
+      "cng!BCryptDestroyHash",
+      "cng!BCryptFinishHash",
+      "cng!BCryptHashData",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "HMACwithSHA",
+    "prototype": "__int64 __fastcall(PUCHAR pbSecret, ULONG cbSecret, PUCHAR pbInput, ULONG cbInput, __int64)",
+    "rank_score": 1205,
+    "size": 319,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NegoExtsInitDefaults",
+    "ea": "0x1400223a4",
+    "function_file": "functions/1400223a4_NegoExtsInitDefaults.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "MaxTokenSize",
+      "NegoExtsInitDefault:OpenKey failed:0x%x\n",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Lsa\\NegoExtender\\Parameters"
+    ],
+    "name": "NegoExtsInitDefaults",
+    "prototype": "",
+    "rank_score": 1166,
+    "size": 352,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Pku2uInitDefaults",
+    "ea": "0x140021ea0",
+    "function_file": "functions/140021ea0_Pku2uInitDefaults.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "MaxTokenSize",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Lsa\\Pku2uSSP\\Parameters",
+      "Pku2uInitDefault:OpenKey failed:0x%x\n"
+    ],
+    "name": "Pku2uInitDefaults",
+    "prototype": "",
+    "rank_score": 1166,
+    "size": 352,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "KerbInitDefaults",
+    "ea": "0x140020a50",
+    "function_file": "functions/140020a50_KerbInitDefaults.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Lsa\\Kerberos\\Parameters",
+      "MaxTokenSize"
+    ],
+    "name": "KerbInitDefaults",
+    "prototype": "",
+    "rank_score": 1125,
+    "size": 314,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 35,
+    "demangled": "KsecDebugOut",
+    "ea": "0x140007008",
+    "function_file": "functions/140007008_KsecDebugOut.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!_vsnprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "KsecDebugOut",
+    "prototype": "__int64(_QWORD, const char *, ...)",
+    "rank_score": 1029,
+    "size": 275,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "Pku2uCreateKernelModeContext",
+    "ea": "0x1400299f8",
+    "function_file": "functions/1400299f8_Pku2uCreateKernelModeContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "Pku2uCreateKernelModeContext",
+    "prototype": "",
+    "rank_score": 1015,
+    "size": 918,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "KerbCreateKernelModeContext",
+    "ea": "0x1400301f0",
+    "function_file": "functions/1400301f0_KerbCreateKernelModeContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "KerbCreateKernelModeContext",
+    "prototype": "",
+    "rank_score": 1014,
+    "size": 928,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "aesDR",
+    "ea": "0x14002d1d0",
+    "function_file": "functions/14002d1d0_aesDR.md",
+    "matched_imports": [
+      "cng!BCryptDestroyKey",
+      "cng!BCryptEncrypt",
+      "cng!BCryptGenerateSymmetricKey",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "aesDR",
+    "prototype": "",
+    "rank_score": 1010,
+    "size": 385,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DigestUnMapLsaToKernelContext(unsigned __int64,unsigned __int64)",
+    "ea": "0x1400089e0",
+    "function_file": "functions/1400089e0_DigestUnMapLsaToKernelContext_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutexUnsafe",
+      "ntoskrnl!ExReleaseFastMutexUnsafe",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?DigestUnMapLsaToKernelContext@@YAJ_K0@Z",
+    "prototype": "__int64 __fastcall(unsigned __int64, unsigned __int64)",
+    "rank_score": 1003,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "KsecExRegisterOneExtension",
+    "ea": "0x1400207ec",
+    "function_file": "functions/1400207ec_KsecExRegisterOneExtension.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "KsecExRegisterOneExtension: IoBuildDeviceIoControlRequest failed\n",
+      "KsecExRegisterOneExtension: IoCallDriver failed: 0x%lx\n"
+    ],
+    "name": "KsecExRegisterOneExtension",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PVOID InputBuffer)",
+    "rank_score": 895,
+    "size": 285,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "GetExternalSchannelAlgorithmsDeferred",
+    "ea": "0x140003e30",
+    "function_file": "functions/140003e30_GetExternalSchannelAlgorithmsDeferred.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "GetExternalSchannelAlgorithmsDeferred",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SslUnsealComputeDecryptErrorDelay(void)",
+    "ea": "0x14000c15c",
+    "function_file": "functions/14000c15c_SslUnsealComputeDecryptErrorDelay_void.md",
+    "matched_imports": [
+      "cng!BCryptGenRandom"
+    ],
+    "matched_strings": [],
+    "name": "?SslUnsealComputeDecryptErrorDelay@@YAKXZ",
+    "prototype": "unsigned int(void)",
+    "rank_score": 813,
+    "size": 196,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "NtLmCreateKernelModeContext",
+    "ea": "0x140020d50",
+    "function_file": "functions/140020d50_NtLmCreateKernelModeContext.md",
+    "matched_imports": [
+      "cng!BCryptImportKey",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "NtLmCreateKernelModeContext",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, char **)",
+    "rank_score": 812,
+    "size": 713,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "KsecExRegisterExtensions",
+    "ea": "0x1400206f8",
+    "function_file": "functions/1400206f8_KsecExRegisterExtensions.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "KsecExRegisterExtensions: IoGetDeviceObjectPointer failed: 0x%lx\n"
+    ],
+    "name": "KsecExRegisterExtensions",
+    "prototype": "__int64()",
+    "rank_score": 655,
+    "size": 237,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "InitializeClientSideSslProvCache(void)",
+    "ea": "0x14000abc0",
+    "function_file": "functions/14000abc0_InitializeClientSideSslProvCache_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeClientSideSslProvCache@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 612,
+    "size": 118,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "KerbInitKernelPackage",
+    "ea": "0x140020c10",
+    "function_file": "functions/140020c10_KerbInitKernelPackage.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "KerbInitKernelPackage",
+    "prototype": "",
+    "rank_score": 605,
+    "size": 202,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateCachedSslProv(CACHED_SSL_PROVIDER *,ushort const *)",
+    "ea": "0x14000a9e4",
+    "function_file": "functions/14000a9e4_CreateCachedSslProv_CACHED_SSL_PROVIDER_ushort_const.md",
+    "matched_imports": [
+      "cng!SslFreeObject",
+      "cng!SslOpenProvider",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?CreateCachedSslProv@@YAJPEAUCACHED_SSL_PROVIDER@@PEBG@Z",
+    "prototype": "int(struct CACHED_SSL_PROVIDER *, const unsigned __int16 *)",
+    "rank_score": 604,
+    "size": 191,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Pku2uGetContextToken",
+    "ea": "0x140028fb0",
+    "function_file": "functions/140028fb0_Pku2uGetContextToken.md",
+    "matched_imports": [
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!ObReferenceObjectByHandle"
+    ],
+    "matched_strings": [
+      "Invalid handle supplied for GetContextToken(0x%x)\n",
+      "Pku2uGetContextToken Called\n"
+    ],
+    "name": "Pku2uGetContextToken",
+    "prototype": "",
+    "rank_score": 485,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Pku2uMakeSignature",
+    "ea": "0x1400290b0",
+    "function_file": "functions/1400290b0_Pku2uMakeSignature.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireResourceExclusive",
+      "ntoskrnl!ExReleaseResourceAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "Invalid handle supplied for GetContextToken(0x%x)\n"
+    ],
+    "name": "Pku2uMakeSignature",
+    "prototype": "",
+    "rank_score": 447,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Pku2uSealMessage",
+    "ea": "0x140029690",
+    "function_file": "functions/140029690_Pku2uSealMessage.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireResourceExclusive",
+      "ntoskrnl!ExReleaseResourceAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "Invalid handle supplied for GetContextToken(0x%x)\n"
+    ],
+    "name": "Pku2uSealMessage",
+    "prototype": "",
+    "rank_score": 447,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Pku2uUnsealMessage",
+    "ea": "0x140029780",
+    "function_file": "functions/140029780_Pku2uUnsealMessage.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireResourceExclusive",
+      "ntoskrnl!ExReleaseResourceAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "Invalid handle supplied for GetContextToken(0x%x)\n"
+    ],
+    "name": "Pku2uUnsealMessage",
+    "prototype": "",
+    "rank_score": 447,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Pku2uVerifySignature",
+    "ea": "0x140029870",
+    "function_file": "functions/140029870_Pku2uVerifySignature.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireResourceExclusive",
+      "ntoskrnl!ExReleaseResourceAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "Invalid handle supplied for GetContextToken(0x%x)\n"
+    ],
+    "name": "Pku2uVerifySignature",
+    "prototype": "",
+    "rank_score": 447,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Pku2uImportContext",
+    "ea": "0x140021db0",
+    "function_file": "functions/140021db0_Pku2uImportContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExEnterCriticalRegionAndAcquireResourceExclusive",
+      "ntoskrnl!ExReleaseResourceAndLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "Failed to create kernel mode context: 0x%x\n"
+    ],
+    "name": "Pku2uImportContext",
+    "prototype": "",
+    "rank_score": 446,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SpQueryStreamSizes(CSslUserContext *,_SecPkgContext_StreamSizes *)",
+    "ea": "0x140003eb0",
+    "function_file": "functions/140003eb0_SpQueryStreamSizes_CSslUserContext_SecPkgContext_StreamSizes.md",
+    "matched_imports": [
+      "cng!SslLookupCipherLengths",
+      "cng!SslLookupCipherSuiteInfo"
+    ],
+    "matched_strings": [],
+    "name": "?SpQueryStreamSizes@@YAJPEAUCSslUserContext@@PEAU_SecPkgContext_StreamSizes@@@Z",
+    "prototype": "__int64 __fastcall(struct CSslUserContext *, struct _SecPkgContext_StreamSizes *)",
+    "rank_score": 421,
+    "size": 932,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "QueryStreamSizes(unsigned __int64,ulong,ulong,ulong,ulong *,ulong *,ulong *)",
+    "ea": "0x140002160",
+    "function_file": "functions/140002160_QueryStreamSizes_unsigned_int64_ulong_ulong_ulong_ulong_ulong_ulong.md",
+    "matched_imports": [
+      "cng!SslLookupCipherLengths",
+      "cng!SslLookupCipherSuiteInfo"
+    ],
+    "matched_strings": [],
+    "name": "?QueryStreamSizes@@YAJ_KKKKPEAK11@Z",
+    "prototype": "__int64 __fastcall(unsigned __int64, unsigned int, unsigned int, unsigned int, unsigned int *, unsigned int *, unsigned int *)",
+    "rank_score": 420,
+    "size": 679,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "CngRsa32Compat_rc4_key",
+    "ea": "0x14000ee70",
+    "function_file": "functions/14000ee70_CngRsa32Compat_rc4_key.md",
+    "matched_imports": [
+      "cng!BCryptDestroyKey",
+      "cng!BCryptGenerateSymmetricKey"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_rc4_key",
+    "prototype": "__int64 __fastcall(BCRYPT_KEY_HANDLE *phKey, ULONG cbSecret, PUCHAR pbSecret)",
+    "rank_score": 419,
+    "size": 130,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "GetSslStringFromRegistry",
+    "ea": "0x14000c6fc",
+    "function_file": "functions/14000c6fc_GetSslStringFromRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "GetSslStringFromRegistry",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, PCWSTR SourceString, unsigned __int16 *)",
+    "rank_score": 419,
+    "size": 236,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "KerberosCryptoPolicy::Create(Kerb3961PolicyType)",
+    "ea": "0x140007f68",
+    "function_file": "functions/140007f68_KerberosCryptoPolicy_Create_Kerb3961PolicyType.md",
+    "matched_imports": [
+      "Kerb3961Kernel!__imp_GetLocalCipherPolicy",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?Create@KerberosCryptoPolicy@@SA?AV?$unique_ptr@VKerberosCryptoPolicy@@U?$default_delete@VKerberosCryptoPolicy@@@utl@@@utl@@W4Kerb3961PolicyType@@@Z",
+    "prototype": "",
+    "rank_score": 418,
+    "size": 406,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x140032184",
+    "function_file": "functions/140032184_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "CngRsa32Compat_MD5Final",
+    "ea": "0x140004ad0",
+    "function_file": "functions/140004ad0_CngRsa32Compat_MD5Final.md",
+    "matched_imports": [
+      "cng!BCryptDestroyHash",
+      "cng!BCryptFinishHash"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_MD5Final",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 79,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "GetSslDWordFromRegistry",
+    "ea": "0x14000c63c",
+    "function_file": "functions/14000c63c_GetSslDWordFromRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "GetSslDWordFromRegistry",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 416,
+    "size": 185,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "shaHmacInitializeCommon",
+    "ea": "0x14000eca0",
+    "function_file": "functions/14000eca0_shaHmacInitializeCommon.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "shaHmacInitializeCommon",
+    "prototype": "__int64 __fastcall(PUCHAR pbSecret, ULONG cbSecret)",
+    "rank_score": 415,
+    "size": 186,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DestroyClientSideSslProvCache(void)",
+    "ea": "0x14000ab4c",
+    "function_file": "functions/14000ab4c_DestroyClientSideSslProvCache_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?DestroyClientSideSslProvCache@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 413,
+    "size": 109,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetMsRc4AlgorithmProvider(void)",
+    "ea": "0x140004b30",
+    "function_file": "functions/140004b30_GetMsRc4AlgorithmProvider_void.md",
+    "matched_imports": [
+      "cng!BCryptCloseAlgorithmProvider",
+      "cng!BCryptOpenAlgorithmProvider"
+    ],
+    "matched_strings": [],
+    "name": "?GetMsRc4AlgorithmProvider@@YAPEAXXZ",
+    "prototype": "void *(void)",
+    "rank_score": 413,
+    "size": 120,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "TSCreateKernelModeContext",
+    "ea": "0x140022718",
+    "function_file": "functions/140022718_TSCreateKernelModeContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "TSCreateKernelModeContext",
+    "prototype": "__int64 __fastcall(int, int, int, int, size_t Size)",
+    "rank_score": 412,
+    "size": 728,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x14002025c",
+    "function_file": "functions/14002025c_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "SslDerefContext",
+    "ea": "0x14002fd60",
+    "function_file": "functions/14002fd60_SslDerefContext.md",
+    "matched_imports": [
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "SslDerefContext",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 411,
+    "size": 134,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "TSKCreateKerbCertLogonBuffer",
+    "ea": "0x140022bcc",
+    "function_file": "functions/140022bcc_TSKCreateKerbCertLogonBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "TSKCreateKerbCertLogonBuffer",
+    "prototype": "__int64 __fastcall(int, int, int, int, size_t, __int64)",
+    "rank_score": 408,
+    "size": 453,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "TSKCreateKerbLogonBuffer",
+    "ea": "0x140022d98",
+    "function_file": "functions/140022d98_TSKCreateKerbLogonBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "TSKCreateKerbLogonBuffer",
+    "prototype": "",
+    "rank_score": 407,
+    "size": 383,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "NegoExtsFreeContext",
+    "ea": "0x14000e344",
+    "function_file": "functions/14000e344_NegoExtsFreeContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!tolower"
+    ],
+    "matched_strings": [],
+    "name": "NegoExtsFreeContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 406,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SslGetContextToken",
+    "ea": "0x140028eb0",
+    "function_file": "functions/140028eb0_SslGetContextToken.md",
+    "matched_imports": [
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!ObReferenceObjectByHandle"
+    ],
+    "matched_strings": [],
+    "name": "SslGetContextToken",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 405,
+    "size": 228,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "KerbGetContextToken",
+    "ea": "0x140030100",
+    "function_file": "functions/140030100_KerbGetContextToken.md",
+    "matched_imports": [
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!ObReferenceObjectByHandle"
+    ],
+    "matched_strings": [],
+    "name": "KerbGetContextToken",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 220,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WDigestGetContextToken",
+    "ea": "0x1400286c0",
+    "function_file": "functions/1400286c0_WDigestGetContextToken.md",
+    "matched_imports": [
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!ObReferenceObjectByHandle"
+    ],
+    "matched_strings": [],
+    "name": "WDigestGetContextToken",
+    "prototype": "__int64 __fastcall(unsigned __int64)",
+    "rank_score": 404,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DestroyCachedSslProv(CACHED_SSL_PROVIDER *)",
+    "ea": "0x14000aaf8",
+    "function_file": "functions/14000aaf8_DestroyCachedSslProv_CACHED_SSL_PROVIDER.md",
+    "matched_imports": [
+      "cng!SslFreeObject",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?DestroyCachedSslProv@@YAXPEAUCACHED_SSL_PROVIDER@@@Z",
+    "prototype": "void __fastcall(struct CACHED_SSL_PROVIDER *)",
+    "rank_score": 403,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "md4Initialize",
+    "ea": "0x14000ea50",
+    "function_file": "functions/14000ea50_md4Initialize.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "md4Initialize",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "TSGetContextToken",
+    "ea": "0x140022a50",
+    "function_file": "functions/140022a50_TSGetContextToken.md",
+    "matched_imports": [
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!ObReferenceObjectByHandle"
+    ],
+    "matched_strings": [],
+    "name": "TSGetContextToken",
+    "prototype": "",
+    "rank_score": 402,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140032078",
+    "function_file": "functions/140032078_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitAnsiString"
+    ],
+    "matched_strings": [
+      "KsecExRegisterExtensions failed: 0x%lx\n",
+      "Security device driver extensions loaded\n"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 331,
+    "size": 262,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DigestCreateChalResp",
+    "ea": "0x140009e7c",
+    "function_file": "functions/140009e7c_DigestCreateChalResp.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitString"
+    ],
+    "matched_strings": [
+      "digest-uri",
+      ",hashed-dirs=\"%hZ\",service-name=\"%hZ\",channel-binding=\"%hZ\""
+    ],
+    "name": "DigestCreateChalResp",
+    "prototype": "",
+    "rank_score": 330,
+    "size": 1416,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Pku2uExportContext",
+    "ea": "0x14000db50",
+    "function_file": "functions/14000db50_Pku2uExportContext.md",
+    "matched_imports": [
+      "ntoskrnl!NtDuplicateObject"
+    ],
+    "matched_strings": [
+      "Invalid handle supplied for ExportSecurityContext(%p)n"
+    ],
+    "name": "Pku2uExportContext",
+    "prototype": "",
+    "rank_score": 257,
+    "size": 338,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "CngRsa32Compat_MD5Update",
+    "ea": "0x140004cd0",
+    "function_file": "functions/140004cd0_CngRsa32Compat_MD5Update.md",
+    "matched_imports": [
+      "cng!BCryptHashData"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_MD5Update",
+    "prototype": "",
+    "rank_score": 228,
+    "size": 41,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x140020640",
+    "function_file": "functions/140020640_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CngRsa32Compat_SHA256Update",
+    "ea": "0x14000ec20",
+    "function_file": "functions/14000ec20_CngRsa32Compat_SHA256Update.md",
+    "matched_imports": [
+      "cng!BCryptHashData"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_SHA256Update",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 39,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "KsecDispatch",
+    "ea": "0x140020180",
+    "function_file": "functions/140020180_KsecDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "KsecDispatch",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 222,
+    "size": 213,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "CngRsa32Compat_rc4",
+    "ea": "0x14000ee04",
+    "function_file": "functions/14000ee04_CngRsa32Compat_rc4.md",
+    "matched_imports": [
+      "cng!BCryptEncrypt"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_rc4",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 99,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "aesInitializeCommon",
+    "ea": "0x14000e66c",
+    "function_file": "functions/14000e66c_aesInitializeCommon.md",
+    "matched_imports": [
+      "cng!BCryptGenerateSymmetricKey"
+    ],
+    "matched_strings": [],
+    "name": "aesInitializeCommon",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 315,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "utl::unique_ptr<KerberosCryptoPolicy,utl::default_delete<KerberosCryptoPolicy>>::~unique_ptr<KerberosCryptoPolicy,utl::default_delete<KerberosCryptoPolicy>>(void)",
+    "ea": "0x140005ff8",
+    "function_file": "functions/140005ff8_utl_unique_ptr_KerberosCryptoPolicy_utl_default_delete_KerberosCryptoPolicy_unique_ptr_KerberosCryptoPolicy_ut.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@VKerberosCryptoPolicy@@U?$default_delete@VKerberosCryptoPolicy@@@utl@@@utl@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 46,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "CngRsa32Compat_MD5Init",
+    "ea": "0x140004bb0",
+    "function_file": "functions/140004bb0_CngRsa32Compat_MD5Init.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_MD5Init",
+    "prototype": "__int64 __fastcall(BCRYPT_HASH_HANDLE *phHash)",
+    "rank_score": 217,
+    "size": 64,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "KerberosCryptoPolicy::CipherHasAttribute(long,Kerb3961::CipherAttributes,bool &,Kerb3961PolicyType)",
+    "ea": "0x140007ef8",
+    "function_file": "functions/140007ef8_KerberosCryptoPolicy_CipherHasAttribute_long_Kerb3961_CipherAttributes_bool_Kerb3961PolicyType.md",
+    "matched_imports": [
+      "Kerb3961Kernel!__imp_GetLocalCipherPolicy"
+    ],
+    "matched_strings": [],
+    "name": "?CipherHasAttribute@KerberosCryptoPolicy@@SAJJW4CipherAttributes@Kerb3961@@AEA_NW4Kerb3961PolicyType@@@Z",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 104,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SpExportSecurityContext",
+    "ea": "0x140025cf0",
+    "function_file": "functions/140025cf0_SpExportSecurityContext.md",
+    "matched_imports": [
+      "ntoskrnl!NtDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "SpExportSecurityContext",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 256,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x14000e1a0",
+    "function_file": "functions/14000e1a0_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 233,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x140032244",
+    "function_file": "functions/140032244_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CSslUserContext::GenerateKeyUpdateRecord(SPBuffer *)",
+    "ea": "0x14000acd4",
+    "function_file": "functions/14000acd4_CSslUserContext_GenerateKeyUpdateRecord_SPBuffer.md",
+    "matched_imports": [
+      "cng!SslEncryptPacket"
+    ],
+    "matched_strings": [],
+    "name": "?GenerateKeyUpdateRecord@CSslUserContext@@QEAAJPEAUSPBuffer@@@Z",
+    "prototype": "__int64 __fastcall(CSslUserContext *__hidden this, struct SPBuffer *)",
+    "rank_score": 215,
+    "size": 200,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NtLmExportSecurityContext",
+    "ea": "0x140021020",
+    "function_file": "functions/140021020_NtLmExportSecurityContext.md",
+    "matched_imports": [
+      "ntoskrnl!NtDuplicateObject"
+    ],
+    "matched_strings": [],
+    "name": "NtLmExportSecurityContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 215,
+    "size": 222,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SpQueryNegotiatedTlsExtensions(CSslUserContext *,_SecPkgContext_NegotiatedTlsExtensions *)",
+    "ea": "0x140004940",
+    "function_file": "functions/140004940_SpQueryNegotiatedTlsExtensions_CSslUserContext_SecPkgContext_NegotiatedTlsExtensions.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?SpQueryNegotiatedTlsExtensions@@YAJPEAUCSslUserContext@@PEAU_SecPkgContext_NegotiatedTlsExtensions@@@Z",
+    "prototype": "__int64 __fastcall(struct CSslUserContext *, struct _SecPkgContext_NegotiatedTlsExtensions *)",
+    "rank_score": 215,
+    "size": 360,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Pku2uBuildFullServiceName",
+    "ea": "0x14000d9b0",
+    "function_file": "functions/14000d9b0_Pku2uBuildFullServiceName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "Pku2uBuildFullServiceName",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 221,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CngRsa32Compat_SHA256Init",
+    "ea": "0x14000f728",
+    "function_file": "functions/14000f728_CngRsa32Compat_SHA256Init.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_SHA256Init",
+    "prototype": "__int64 __fastcall(BCRYPT_HASH_HANDLE *phHash)",
+    "rank_score": 213,
+    "size": 71,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CngRsa32Compat_SHA384Init",
+    "ea": "0x14000f6d8",
+    "function_file": "functions/14000f6d8_CngRsa32Compat_SHA384Init.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_SHA384Init",
+    "prototype": "__int64 __fastcall(BCRYPT_HASH_HANDLE *phHash)",
+    "rank_score": 213,
+    "size": 71,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CngRsa32Compat_SHA512Init",
+    "ea": "0x14000ec50",
+    "function_file": "functions/14000ec50_CngRsa32Compat_SHA512Init.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_SHA512Init",
+    "prototype": "__int64 __fastcall(BCRYPT_HASH_HANDLE *phHash)",
+    "rank_score": 213,
+    "size": 71,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CngRsa32Compat_SHAInit",
+    "ea": "0x14000f688",
+    "function_file": "functions/14000f688_CngRsa32Compat_SHAInit.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_SHAInit",
+    "prototype": "__int64 __fastcall(BCRYPT_HASH_HANDLE *phHash)",
+    "rank_score": 213,
+    "size": 71,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "utl::unique_ptr<_KERB_STORED_CREDENTIAL,KerberosCryptoPolicy::StoredCredDeleter>::~unique_ptr<_KERB_STORED_CREDENTIAL,KerberosCryptoPolicy::StoredCredDeleter>(void)",
+    "ea": "0x140007584",
+    "function_file": "functions/140007584_utl_unique_ptr_KERB_STORED_CREDENTIAL_KerberosCryptoPolicy_StoredCredDeleter_unique_ptr_KERB_STORED_CREDENTIAL.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@U_KERB_STORED_CREDENTIAL@@UStoredCredDeleter@KerberosCryptoPolicy@@@utl@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 41,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "DigestAllocateMemory",
+    "ea": "0x140008a70",
+    "function_file": "functions/140008a70_DigestAllocateMemory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "DigestAllocateMemory",
+    "prototype": "__int64 __fastcall(size_t Size)",
+    "rank_score": 210,
+    "size": 88,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WDigestReferenceContext",
+    "ea": "0x14000936c",
+    "function_file": "functions/14000936c_WDigestReferenceContext.md",
+    "matched_imports": [
+      "ntoskrnl!MmIsUserAddress"
+    ],
+    "matched_strings": [],
+    "name": "WDigestReferenceContext",
+    "prototype": "",
+    "rank_score": 208,
+    "size": 50,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "NegoExtsCreateKernelModeContext",
+    "ea": "0x14002c664",
+    "function_file": "functions/14002c664_NegoExtsCreateKernelModeContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "NegoExtsCreateKernelModeContext",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 213,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "rc4HmacBaseInitializeOld",
+    "ea": "0x14000f150",
+    "function_file": "functions/14000f150_rc4HmacBaseInitializeOld.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "rc4HmacBaseInitializeOld",
+    "prototype": "__int64 __usercall@<rax>(void *Src@<rcx>, size_t Size@<rdx>, char, __int64)",
+    "rank_score": 207,
+    "size": 237,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "DigestFreeMemory",
+    "ea": "0x140008ad0",
+    "function_file": "functions/140008ad0_DigestFreeMemory.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DigestFreeMemory",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "TlsCloseRegKey",
+    "ea": "0x14000c7f0",
+    "function_file": "functions/14000c7f0_TlsCloseRegKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "TlsCloseRegKey",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SpQueryTokenBinding(CSslUserContext *,_SecPkgContext_TokenBinding *)",
+    "ea": "0x140004890",
+    "function_file": "functions/140004890_SpQueryTokenBinding_CSslUserContext_SecPkgContext_TokenBinding.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?SpQueryTokenBinding@@YAJPEAUCSslUserContext@@PEAU_SecPkgContext_TokenBinding@@@Z",
+    "prototype": "__int64 __fastcall(struct CSslUserContext *, struct _SecPkgContext_TokenBinding *)",
+    "rank_score": 204,
+    "size": 165,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "utl::make_unique<Kerb3961::MutableBinary [0],0>(unsigned __int64)",
+    "ea": "0x140007490",
+    "function_file": "functions/140007490_utl_make_unique_Kerb3961_MutableBinary_0_0_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??$make_unique@$$BY0A@UMutableBinary@Kerb3961@@$0A@@utl@@YA?AV?$unique_ptr@$$BY0A@UMutableBinary@Kerb3961@@U?$default_delete@$$BY0A@UMutableBinary@Kerb3961@@@utl@@@0@_K@Z",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 127,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SpQueryTokenBindingEKM(CSslUserContext *,_SecPkgContext_KeyingMaterial *)",
+    "ea": "0x14000bcb4",
+    "function_file": "functions/14000bcb4_SpQueryTokenBindingEKM_CSslUserContext_SecPkgContext_KeyingMaterial.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?SpQueryTokenBindingEKM@@YAJPEAUCSslUserContext@@PEAU_SecPkgContext_KeyingMaterial@@@Z",
+    "prototype": "__int64 __fastcall(struct CSslUserContext *, struct _SecPkgContext_KeyingMaterial *)",
+    "rank_score": 203,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "WSTUnsealMessage",
+    "ea": "0x14002ae10",
+    "function_file": "functions/14002ae10_WSTUnsealMessage.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\protocols\\pku2u\\message.cxx",
+      "Can't have readonly & readonly_w_checksum\n",
+      "Failed to verify signature token: %#x\n",
+      "SpUnsealMessage tempered header\n"
+    ],
+    "name": "WSTUnsealMessage",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 3560,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "utl::unique_ptr<Kerb3961::MutableBinary [0],utl::default_delete<Kerb3961::MutableBinary [0]>>::~unique_ptr<Kerb3961::MutableBinary [0],utl::default_delete<Kerb3961::MutableBinary [0]>>(void)",
+    "ea": "0x140007534",
+    "function_file": "functions/140007534_utl_unique_ptr_Kerb3961_MutableBinary_0_utl_default_delete_Kerb3961_MutableBinary_0_unique_ptr_Kerb3961_Mutabl.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@$$BY0A@UMutableBinary@Kerb3961@@U?$default_delete@$$BY0A@UMutableBinary@Kerb3961@@@utl@@@utl@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TSDeleteKernelContext",
+    "ea": "0x140022a00",
+    "function_file": "functions/140022a00_TSDeleteKernelContext.md",
+    "matched_imports": [
+      "ntoskrnl!MmIsUserAddress"
+    ],
+    "matched_strings": [],
+    "name": "TSDeleteKernelContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 202,
+    "size": 66,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001070",
+    "function_file": "functions/140001070_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, ULONG, __int64)",
+    "rank_score": 202,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "TlsExternalAlgorithmLock_Delete",
+    "ea": "0x14000c824",
+    "function_file": "functions/14000c824_TlsExternalAlgorithmLock_Delete.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "TlsExternalAlgorithmLock_Delete",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WSTVerifySignature",
+    "ea": "0x14002bc00",
+    "function_file": "functions/14002bc00_WSTVerifySignature.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\protocols\\pku2u\\message.cxx",
+      "onecore\\ds\\security\\protocols\\pku2u\\message.cxx",
+      "Can't have readonly & readonly_w_checksum\n",
+      "Failed to verify signature token: %#x\n"
+    ],
+    "name": "WSTVerifySignature",
+    "prototype": "",
+    "rank_score": 183,
+    "size": 788,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "WSTVerifySignatureToken",
+    "ea": "0x14002bf1c",
+    "function_file": "functions/14002bf1c_WSTVerifySignatureToken.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "bad token id in the header\n",
+      "bad token header\n",
+      "bad EC in token header\n",
+      "token header too small\n"
+    ],
+    "name": "WSTVerifySignatureToken",
+    "prototype": "",
+    "rank_score": 171,
+    "size": 805,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "WSTMakeSignature",
+    "ea": "0x140029fe4",
+    "function_file": "functions/140029fe4_WSTMakeSignature.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\protocols\\pku2u\\message.cxx",
+      "onecore\\ds\\security\\protocols\\pku2u\\message.cxx",
+      "Can't have readonly & readonly_w_checksum\n"
+    ],
+    "name": "WSTMakeSignature",
+    "prototype": "",
+    "rank_score": 144,
+    "size": 762,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "WSTSealMessage",
+    "ea": "0x14002a4d8",
+    "function_file": "functions/14002a4d8_WSTSealMessage.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\ds\\security\\protocols\\pku2u\\message.cxx",
+      "Can't have readonly & readonly_w_checksum\n"
+    ],
+    "name": "WSTSealMessage",
+    "prototype": "",
+    "rank_score": 119,
+    "size": 2352,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ProbeForRead_0",
+    "ea": "0x140006f46",
+    "function_file": "functions/140006f46_ProbeForRead_0.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "ProbeForRead_0",
+    "prototype": "void __stdcall(volatile void *Address, SIZE_T Length, ULONG Alignment)",
+    "rank_score": 101,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "NegoExtsImportContext",
+    "ea": "0x140022280",
+    "function_file": "functions/140022280_NegoExtsImportContext.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to create kernel mode context: %#x\n",
+      "the package failed to create kernel mode context: %#x\n"
+    ],
+    "name": "NegoExtsImportContext",
+    "prototype": "",
+    "rank_score": 87,
+    "size": 284,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "NegoExtsInitKernelContext",
+    "ea": "0x140022510",
+    "function_file": "functions/140022510_NegoExtsInitKernelContext.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to create kernel mode context: 0x%x\n",
+      "NegoExtsInitKernelContext package failed to create kernel mode context: %#x\n"
+    ],
+    "name": "NegoExtsInitKernelContext",
+    "prototype": "",
+    "rank_score": 87,
+    "size": 318,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NegoExtsDeleteKernelContext",
+    "ea": "0x1400221e0",
+    "function_file": "functions/1400221e0_NegoExtsDeleteKernelContext.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "NegoExtsDeleteKernelContext called\n",
+      "NegoExtsDeleteKernelContext returned %#x\n"
+    ],
+    "name": "NegoExtsDeleteKernelContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 85,
+    "size": 140,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NegoExtsGetContextToken",
+    "ea": "0x14002c250",
+    "function_file": "functions/14002c250_NegoExtsGetContextToken.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "NegoExtsGetContextToken returned %#x\n",
+      "NegoExtsGetContextToken called\n"
+    ],
+    "name": "NegoExtsGetContextToken",
+    "prototype": "",
+    "rank_score": 85,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GetExternalSchannelAlgorithms",
+    "ea": "0x14000bff0",
+    "function_file": "functions/14000bff0_GetExternalSchannelAlgorithms.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\Registry\\MACHINE\\System\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft SSL Protocol Provider"
+    ],
+    "name": "GetExternalSchannelAlgorithms",
+    "prototype": "",
+    "rank_score": 69,
+    "size": 123,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WSTMakeSignatureToken",
+    "ea": "0x14002a2e4",
+    "function_file": "functions/14002a2e4_WSTMakeSignatureToken.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WSTMakeSignatureToken CFX buffer too small %d, expected %d!\n"
+    ],
+    "name": "WSTMakeSignatureToken",
+    "prototype": "",
+    "rank_score": 47,
+    "size": 389,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Pku2uDeleteKernelContext",
+    "ea": "0x140021d20",
+    "function_file": "functions/140021d20_Pku2uDeleteKernelContext.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Pku2uDeleteKernelContext called\n"
+    ],
+    "name": "Pku2uDeleteKernelContext",
+    "prototype": "",
+    "rank_score": 45,
+    "size": 138,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Pku2uInitKernelContext",
+    "ea": "0x140022010",
+    "function_file": "functions/140022010_Pku2uInitKernelContext.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to create kernel mode context: 0x%x\n"
+    ],
+    "name": "Pku2uInitKernelContext",
+    "prototype": "",
+    "rank_score": 45,
+    "size": 163,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 71,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140010160",
+    "function_file": "functions/140010160_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 85,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140010240",
+    "function_file": "functions/140010240_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 6,
+    "demangled": "md5Hmac",
+    "ea": "0x14000eef8",
+    "function_file": "functions/14000eef8_md5Hmac.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "md5Hmac",
+    "prototype": "__int64 __usercall@<rax>(void *Src@<rcx>, size_t Size@<rdx>, __int64, int, __int64)",
+    "rank_score": 36,
+    "size": 426,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 6,
+    "demangled": "md5Hmac_0",
+    "ea": "0x14000f340",
+    "function_file": "functions/14000f340_md5Hmac_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "md5Hmac_0",
+    "prototype": "__int64 __usercall@<rax>(void *Src@<rcx>, size_t Size@<rdx>, __int64, int, __int64)",
+    "rank_score": 36,
+    "size": 426,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 81,
+    "demangled": "memmove",
+    "ea": "0x1400102c0",
+    "function_file": "functions/1400102c0_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 42,
+    "demangled": "memset",
+    "ea": "0x1400105c0",
+    "function_file": "functions/1400105c0_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "KerbVerifySignatureToken(_KERB_KERNEL_CONTEXT *,_SecBuffer *,ulong,uchar,unsigned __int64,uchar *,_KERB_GSS_SIGNATURE * *,ulong *,long *,_CRYPTO_SYSTEM * *,unsigned __int64 *)",
+    "ea": "0x140025504",
+    "function_file": "functions/140025504_KerbVerifySignatureToken_KERB_KERNEL_CONTEXT_SecBuffer_ulong_uchar_unsigned_int64_uchar_KERB_GSS_SIGNATURE_ulo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?KerbVerifySignatureToken@@YAJPEAU_KERB_KERNEL_CONTEXT@@PEAU_SecBuffer@@KE_KPEAEPEAPEAU_KERB_GSS_SIGNATURE@@PEAKPEAJPEAPEAU_CRYPTO_SYSTEM@@PEA_K@Z",
+    "prototype": "__int64 __fastcall(struct _KERB_KERNEL_CONTEXT *, struct _SecBuffer *, unsigned int, unsigned __int8, char, unsigned __int8 *, struct _KERB_GSS_SIGNATURE **, unsigned int *, int *, struct _CRYPTO_SYSTEM **, unsigned __int64 *)",
+    "rank_score": 23,
+    "size": 2017,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140006ecc",
+    "function_file": "functions/140006ecc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CSslSerializeHelper::ComputeDeserializeLength(ulong *)",
+    "ea": "0x140003cf0",
+    "function_file": "functions/140003cf0_CSslSerializeHelper_ComputeDeserializeLength_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ComputeDeserializeLength@CSslSerializeHelper@@AEAAJPEAK@Z",
+    "prototype": "__int64 __fastcall(CSslSerializeHelper *__hidden this, unsigned int *)",
+    "rank_score": 22,
+    "size": 153,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140032010",
+    "function_file": "functions/140032010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x1400205a0",
+    "function_file": "functions/1400205a0_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "KerberosCryptoPolicy::FromKerberosKey(_KERB_ENCRYPTION_KEY *,bool,bool,Kerb3961PolicyType)",
+    "ea": "0x140008104",
+    "function_file": "functions/140008104_KerberosCryptoPolicy_FromKerberosKey_KERB_ENCRYPTION_KEY_bool_bool_Kerb3961PolicyType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FromKerberosKey@KerberosCryptoPolicy@@SA?AV?$unique_ptr@VKerberosCryptoPolicy@@U?$default_delete@VKerberosCryptoPolicy@@@utl@@@utl@@PEAU_KERB_ENCRYPTION_KEY@@_N1W4Kerb3961PolicyType@@@Z",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 154,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "KerberosCryptoPolicy::SelectEncryptionAlgorithm(Kerb3961::KeyUsage,KdcPrincipalKeyState)",
+    "ea": "0x140008320",
+    "function_file": "functions/140008320_KerberosCryptoPolicy_SelectEncryptionAlgorithm_Kerb3961_KeyUsage_KdcPrincipalKeyState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SelectEncryptionAlgorithm@KerberosCryptoPolicy@@QEAAPEAUEncryptionAlgorithm@Kerb3961@@W4KeyUsage@3@W4KdcPrincipalKeyState@@@Z",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 178,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CSslSerializeHelper::DeserializeContext(uchar *,ulong,CSslUserContext * *)",
+    "ea": "0x140002410",
+    "function_file": "functions/140002410_CSslSerializeHelper_DeserializeContext_uchar_ulong_CSslUserContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeserializeContext@CSslSerializeHelper@@QEAAJPEAEKPEAPEAUCSslUserContext@@@Z",
+    "prototype": "__int64 __fastcall(CSslSerializeHelper *__hidden this, unsigned __int8 *, unsigned int, struct CSslUserContext **)",
+    "rank_score": 16,
+    "size": 235,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ComputeSHA1Hash",
+    "ea": "0x14000e55c",
+    "function_file": "functions/14000e55c_ComputeSHA1Hash.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputeSHA1Hash",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 248,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 12,
+    "demangled": "LibAttach",
+    "ea": "0x14002c848",
+    "function_file": "functions/14002c848_LibAttach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LibAttach",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x14000df9c",
+    "function_file": "functions/14000df9c_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 381,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x140007150",
+    "function_file": "functions/140007150_wil_details_RecordCachedUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "KerberosCryptoPolicy::OpenEncryptionAlgorithm(ulong,Kerb3961::KeyUsage)",
+    "ea": "0x140008248",
+    "function_file": "functions/140008248_KerberosCryptoPolicy_OpenEncryptionAlgorithm_ulong_Kerb3961_KeyUsage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OpenEncryptionAlgorithm@KerberosCryptoPolicy@@QEBAPEAUEncryptionAlgorithm@Kerb3961@@KW4KeyUsage@3@@Z",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 208,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140020410",
+    "function_file": "functions/140020410_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x14000e120",
+    "function_file": "functions/14000e120_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 120,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ConvertSchannelProtocolToSsl(ulong)",
+    "ea": "0x140003750",
+    "function_file": "functions/140003750_ConvertSchannelProtocolToSsl_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConvertSchannelProtocolToSsl@@YAGK@Z",
+    "prototype": "unsigned __int16 __fastcall(unsigned int)",
+    "rank_score": 14,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "KerbDereferenceContext",
+    "ea": "0x140025e28",
+    "function_file": "functions/140025e28_KerbDereferenceContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "KerbDereferenceContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 14,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "Pku2uDereferenceContext",
+    "ea": "0x140029d94",
+    "function_file": "functions/140029d94_Pku2uDereferenceContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Pku2uDereferenceContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 14,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SpQueryApplicationProtocol(CSslUserContext *,_SecPkgContext_ApplicationProtocol *)",
+    "ea": "0x140004760",
+    "function_file": "functions/140004760_SpQueryApplicationProtocol_CSslUserContext_SecPkgContext_ApplicationProtocol.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SpQueryApplicationProtocol@@YAJPEAUCSslUserContext@@PEAU_SecPkgContext_ApplicationProtocol@@@Z",
+    "prototype": "int(struct CSslUserContext *, struct _SecPkgContext_ApplicationProtocol *)",
+    "rank_score": 14,
+    "size": 153,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "TranslateToSecurityStatus(ulong)",
+    "ea": "0x14000c2ac",
+    "function_file": "functions/14000c2ac_TranslateToSecurityStatus_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?TranslateToSecurityStatus@@YAJK@Z",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 14,
+    "size": 233,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "utl::unique_ptr<_KERB_ENCRYPTION_KEY,KerberosCryptoPolicy::EncryptionKeyDeleter>::~unique_ptr<_KERB_ENCRYPTION_KEY,KerberosCryptoPolicy::EncryptionKeyDeleter>(void)",
+    "ea": "0x14000755c",
+    "function_file": "functions/14000755c_utl_unique_ptr_KERB_ENCRYPTION_KEY_KerberosCryptoPolicy_EncryptionKeyDeleter_unique_ptr_KERB_ENCRYPTION_KEY_Ke.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@U_KERB_ENCRYPTION_KEY@@UEncryptionKeyDeleter@KerberosCryptoPolicy@@@utl@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 32,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NtLmImportSecurityContext",
+    "ea": "0x140021110",
+    "function_file": "functions/140021110_NtLmImportSecurityContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NtLmImportSecurityContext",
+    "prototype": "__int64 __fastcall(__int64, __int64, PVOID *)",
+    "rank_score": 13,
+    "size": 73,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SslImportSecurityContext",
+    "ea": "0x140021960",
+    "function_file": "functions/140021960_SslImportSecurityContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SslImportSecurityContext",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 69,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x14000ddf0",
+    "function_file": "functions/14000ddf0_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x14000dec0",
+    "function_file": "functions/14000dec0_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "CDLocateCheckSum",
+    "ea": "0x1400261e0",
+    "function_file": "functions/1400261e0_CDLocateCheckSum.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CDLocateCheckSum",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CSslUserContext::SetEncryptMessageComplete(void)",
+    "ea": "0x140004730",
+    "function_file": "functions/140004730_CSslUserContext_SetEncryptMessageComplete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetEncryptMessageComplete@CSslUserContext@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CSslUserContext *__hidden this)",
+    "rank_score": 12,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CacheClientSideSslProv(CACHED_SSL_PROVIDER *)",
+    "ea": "0x14000a970",
+    "function_file": "functions/14000a970_CacheClientSideSslProv_CACHED_SSL_PROVIDER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CacheClientSideSslProv@@YAJPEAUCACHED_SSL_PROVIDER@@@Z",
+    "prototype": "__int64 __fastcall(struct CACHED_SSL_PROVIDER *)",
+    "rank_score": 12,
+    "size": 109,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "KerbMakeSignatureToken(_KERB_KERNEL_CONTEXT *,ulong,_SecBuffer *,ulong,uchar,unsigned __int64,ulong,_KERB_GSS_SIGNATURE * *,unsigned __int64 *)",
+    "ea": "0x140027324",
+    "function_file": "functions/140027324_KerbMakeSignatureToken_KERB_KERNEL_CONTEXT_ulong_SecBuffer_ulong_uchar_unsigned_int64_ulong_KERB_GSS_SIGNATURE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?KerbMakeSignatureToken@@YAJPEAU_KERB_KERNEL_CONTEXT@@KPEAU_SecBuffer@@KE_KKPEAPEAU_KERB_GSS_SIGNATURE@@PEA_K@Z",
+    "prototype": "__int64 __fastcall(struct _KERB_KERNEL_CONTEXT *, unsigned int, struct _SecBuffer *, unsigned int, char, char, unsigned int, struct _KERB_GSS_SIGNATURE **, unsigned __int64 *)",
+    "rank_score": 12,
+    "size": 832,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140032044",
+    "function_file": "functions/140032044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DigestAVLCompareLsaContexts(_RTL_AVL_TABLE *,void *,void *)",
+    "ea": "0x1400087f0",
+    "function_file": "functions/1400087f0_DigestAVLCompareLsaContexts_RTL_AVL_TABLE_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DigestAVLCompareLsaContexts@@YA?AW4_RTL_GENERIC_COMPARE_RESULTS@@PEAU_RTL_AVL_TABLE@@PEAX1@Z",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 11,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SchannelAvlCompareLsaContexts",
+    "ea": "0x140023d80",
+    "function_file": "functions/140023d80_SchannelAvlCompareLsaContexts.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SchannelAvlCompareLsaContexts",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 11,
+    "size": 38,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "WDigestCompleteToken",
+    "ea": "0x140021500",
+    "function_file": "functions/140021500_WDigestCompleteToken.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WDigestCompleteToken",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "CDGenerateRandomBits",
+    "ea": "0x14002ddb8",
+    "function_file": "functions/14002ddb8_CDGenerateRandomBits.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CDGenerateRandomBits",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CSslUserContext::GetPostHandshakeAuthExtensionReceived(void)",
+    "ea": "0x14000af40",
+    "function_file": "functions/14000af40_CSslUserContext_GetPostHandshakeAuthExtensionReceived_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetPostHandshakeAuthExtensionReceived@CSslUserContext@@UEAAEXZ",
+    "prototype": "unsigned __int8 __fastcall(CSslUserContext *__hidden this)",
+    "rank_score": 10,
+    "size": 7,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CSslUserContext::GetSelectedApplicationProtocol(void)",
+    "ea": "0x14000aff0",
+    "function_file": "functions/14000aff0_CSslUserContext_GetSelectedApplicationProtocol_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSelectedApplicationProtocol@CSslUserContext@@UEAAQEAU_SecPkgContext_ApplicationProtocol@@XZ",
+    "prototype": "struct _SecPkgContext_ApplicationProtocol *__fastcall(CSslUserContext *__hidden this)",
+    "rank_score": 10,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "KerbReferenceContext",
+    "ea": "0x140025df0",
+    "function_file": "functions/140025df0_KerbReferenceContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "KerbReferenceContext",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "NegoExtsCompleteToken",
+    "ea": "0x140020910",
+    "function_file": "functions/140020910_NegoExtsCompleteToken.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NegoExtsCompleteToken",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "Pku2uReferenceContext",
+    "ea": "0x140029f3c",
+    "function_file": "functions/140029f3c_Pku2uReferenceContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Pku2uReferenceContext",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "WDigestDerefContext",
+    "ea": "0x1400285b8",
+    "function_file": "functions/1400285b8_WDigestDerefContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WDigestDerefContext",
+    "prototype": "__int64 __fastcall(unsigned __int64)",
+    "rank_score": 10,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "WDigestImportSecurityContext",
+    "ea": "0x140020d40",
+    "function_file": "functions/140020d40_WDigestImportSecurityContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WDigestImportSecurityContext",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "n_fold_internal",
+    "ea": "0x14000f900",
+    "function_file": "functions/14000f900_n_fold_internal.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "n_fold_internal",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 294,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "CDLocateCSystem",
+    "ea": "0x14002c874",
+    "function_file": "functions/14002c874_CDLocateCSystem.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CDLocateCSystem",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 50,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "StringFree",
+    "ea": "0x1400095a0",
+    "function_file": "functions/1400095a0_StringFree.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringFree",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "wcscpy_s",
+    "ea": "0x140006110",
+    "function_file": "functions/140006110_wcscpy_s.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wcscpy_s",
+    "prototype": "errno_t __cdecl(wchar_t *Dst, rsize_t SizeInWords, const wchar_t *Src)",
+    "rank_score": 9,
+    "size": 126,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "memcmp",
+    "ea": "0x140010ae0",
+    "function_file": "functions/140010ae0_memcmp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memcmp",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 8,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "_guard_check_icall_nop",
+    "ea": "0x140006e50",
+    "function_file": "functions/140006e50_guard_check_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_check_icall_nop",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x140007124",
+    "function_file": "functions/140007124_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RemoveExternalSchannelAlgorithms",
+    "ea": "0x14000c074",
+    "function_file": "functions/14000c074_RemoveExternalSchannelAlgorithms.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RemoveExternalSchannelAlgorithms",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "RtlStringCchCopyNW(ushort *,unsigned __int64,ushort const *,unsigned __int64)",
+    "ea": "0x14000c5d8",
+    "function_file": "functions/14000c5d8_RtlStringCchCopyNW_ushort_unsigned_int64_ushort_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RtlStringCchCopyNW@@YAJPEAG_KPEBG1@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, unsigned __int64)",
+    "rank_score": 6,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SslReferenceContext",
+    "ea": "0x14002fdf0",
+    "function_file": "functions/14002fdf0_SslReferenceContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SslReferenceContext",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "StringAllocate",
+    "ea": "0x1400093fc",
+    "function_file": "functions/1400093fc_StringAllocate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringAllocate",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "KerbGetChecksumAndEncryptionType(_KERB_KERNEL_CONTEXT *,uchar,ulong,long *,long *)",
+    "ea": "0x140026d38",
+    "function_file": "functions/140026d38_KerbGetChecksumAndEncryptionType_KERB_KERNEL_CONTEXT_uchar_ulong_long_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?KerbGetChecksumAndEncryptionType@@YAJPEAU_KERB_KERNEL_CONTEXT@@EKPEAJ1@Z",
+    "prototype": "__int64 __fastcall(struct _KERB_KERNEL_CONTEXT *, unsigned __int8, unsigned int, int *, int *)",
+    "rank_score": 5,
+    "size": 251,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "RtlCopyToUser",
+    "ea": "0x140020110",
+    "function_file": "functions/140020110_RtlCopyToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 5,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SslDeleteKernelContext",
+    "ea": "0x140023430",
+    "function_file": "functions/140023430_SslDeleteKernelContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SslDeleteKernelContext",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 5,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "g_make_token_header(gss_OID_desc_struct *,int,uchar * *,int)",
+    "ea": "0x1400084c4",
+    "function_file": "functions/1400084c4_g_make_token_header_gss_OID_desc_struct_int_uchar_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?g_make_token_header@@YAXPEAUgss_OID_desc_struct@@HPEAPEAEH@Z",
+    "prototype": "void __fastcall(struct gss_OID_desc_struct *, int, unsigned __int8 **, int)",
+    "rank_score": 5,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "g_verify_token_header(gss_OID_desc_struct *,int *,uchar * *,int,int)",
+    "ea": "0x1400085dc",
+    "function_file": "functions/1400085dc_g_verify_token_header_gss_OID_desc_struct_int_uchar_int_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?g_verify_token_header@@YAHPEAUgss_OID_desc_struct@@PEAHPEAPEAEHH@Z",
+    "prototype": "int(struct gss_OID_desc_struct *, int *, unsigned __int8 **, int, int)",
+    "rank_score": 5,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "g_token_size(gss_OID_desc_struct *,uint,ulong *)",
+    "ea": "0x140008584",
+    "function_file": "functions/140008584_g_token_size_gss_OID_desc_struct_uint_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?g_token_size@@YAJPEAUgss_OID_desc_struct@@IPEAK@Z",
+    "prototype": "__int64 __fastcall(struct gss_OID_desc_struct *, unsigned int, unsigned int *)",
+    "rank_score": 4,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "memmove_s",
+    "ea": "0x1400062a4",
+    "function_file": "functions/1400062a4_memmove_s.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove_s",
+    "prototype": "errno_t __cdecl(void *, rsize_t DstSize, const void *Src, rsize_t MaxCount)",
+    "rank_score": 4,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x1400203d4",
+    "function_file": "functions/1400203d4_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "write_char",
+    "ea": "0x140006d88",
+    "function_file": "functions/140006d88_write_char.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "write_char",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DestroyCachedProviderArray",
+    "ea": "0x14000aaac",
+    "function_file": "functions/14000aaac_DestroyCachedProviderArray.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DestroyCachedProviderArray",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FindSslProvHandleInCache(ushort const *)",
+    "ea": "0x140003d90",
+    "function_file": "functions/140003d90_FindSslProvHandleInCache_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FindSslProvHandleInCache@@YA_KPEBG@Z",
+    "prototype": "unsigned __int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 3,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "KerbDeleteKernelContext",
+    "ea": "0x140020920",
+    "function_file": "functions/140020920_KerbDeleteKernelContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "KerbDeleteKernelContext",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NtLmDeleteKernelContext",
+    "ea": "0x140023500",
+    "function_file": "functions/140023500_NtLmDeleteKernelContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NtLmDeleteKernelContext",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 3,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "WDigestDeleteKernelContext",
+    "ea": "0x140021520",
+    "function_file": "functions/140021520_WDigestDeleteKernelContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WDigestDeleteKernelContext",
+    "prototype": "__int64 __fastcall(unsigned __int64)",
+    "rank_score": 3,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "der_read_length(uchar * *,int *)",
+    "ea": "0x140008448",
+    "function_file": "functions/140008448_der_read_length_uchar_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?der_read_length@@YAHPEAPEAEPEAH@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 **, int *)",
+    "rank_score": 3,
+    "size": 114,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x1400202bc",
+    "function_file": "functions/1400202bc_wil_details_BuildFeatureStateCacheFromQueryResults.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "write_string",
+    "ea": "0x140006dd8",
+    "function_file": "functions/140006dd8_write_string.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "write_string",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ContextIsTokenOK",
+    "ea": "0x1400093d0",
+    "function_file": "functions/1400093d0_ContextIsTokenOK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ContextIsTokenOK",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x140010190",
+    "function_file": "functions/140010190_RtlCopyVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 2,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_tlgCreate1Sz_char",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgCreate1Sz_char.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_char",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CSslUserContext::GetReadWriteApplicationTrafficSecrets(unsigned __int64 *,unsigned __int64 *)",
+    "ea": "0x14000afb0",
+    "function_file": "functions/14000afb0_CSslUserContext_GetReadWriteApplicationTrafficSecrets_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetReadWriteApplicationTrafficSecrets@CSslUserContext@@UEAAXPEA_K0@Z",
+    "prototype": "void __fastcall(CSslUserContext *__hidden this, unsigned __int64 *, unsigned __int64 *)",
+    "rank_score": 1,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyToUser$thunk$8481748130428616498",
+    "ea": "0x140011010",
+    "function_file": "functions/140011010_RtlCopyToUser_thunk_8481748130428616498.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser$thunk$8481748130428616498",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x1400101a0",
+    "function_file": "functions/1400101a0_RtlMoveVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x14000e290",
+    "function_file": "functions/14000e290_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CSslUserContext::GetReadWriteKeys(unsigned __int64 *,unsigned __int64 *)",
+    "ea": "0x14000afd0",
+    "function_file": "functions/14000afd0_CSslUserContext_GetReadWriteKeys_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetReadWriteKeys@CSslUserContext@@UEAAXPEA_K0@Z",
+    "prototype": "void __fastcall(CSslUserContext *__hidden this, unsigned __int64 *, unsigned __int64 *)",
+    "rank_score": 0,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CSslUserContext::GetSelectedTBParameters(void)",
+    "ea": "0x14000b010",
+    "function_file": "functions/14000b010_CSslUserContext_GetSelectedTBParameters_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSelectedTBParameters@CSslUserContext@@UEAAQEAU_SecPkgContext_TokenBinding@@XZ",
+    "prototype": "struct _SecPkgContext_TokenBinding *__fastcall(CSslUserContext *__hidden this)",
+    "rank_score": 0,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CSslUserContext::GetTokenBindingEKM(void)",
+    "ea": "0x14000b050",
+    "function_file": "functions/14000b050_CSslUserContext_GetTokenBindingEKM_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTokenBindingEKM@CSslUserContext@@UEAAQEAU_SecPkgContext_KeyingMaterial@@XZ",
+    "prototype": "struct _SecPkgContext_KeyingMaterial *__fastcall(CSslUserContext *__hidden this)",
+    "rank_score": 0,
+    "size": 8,
+    "tags": []
+  }
+]
