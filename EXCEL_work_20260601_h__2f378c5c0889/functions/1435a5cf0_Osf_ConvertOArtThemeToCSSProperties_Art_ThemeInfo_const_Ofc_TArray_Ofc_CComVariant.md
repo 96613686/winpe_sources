@@ -1,0 +1,179 @@
+# Osf::ConvertOArtThemeToCSSProperties(Art::ThemeInfo const &,Ofc::TArray<Ofc::CComVariant> &)
+
+- ea: `0x1435a5cf0`
+- end: `0x1435a6595`
+- name: `?ConvertOArtThemeToCSSProperties@Osf@@YAXAEBVThemeInfo@Art@@AEAV?$TArray@VCComVariant@Ofc@@@Ofc@@@Z`
+- size: `2213`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `7`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1435a5c00`
+
+## callees
+
+- `0x1405b3350`
+- `0x1405c0110`
+- `0x1408cfe50`
+- `0x14165e94c`
+- `0x14173b620`
+- `0x1435a5cf0`
+- `0x1435a6700`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_VariantClear` at `0x1435a6420`
+- `OLEAUT32!__imp_VariantClear` at `0x1435a6420`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5db2`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5e0d`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5e6d`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5ecd`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5f2d`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5f8d`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5fef`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a604f`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a60af`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a610f`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a616f`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5db2`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5e0d`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5e6d`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5ecd`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5f2d`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5f8d`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a5fef`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a604f`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a60af`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a610f`
+- `oart!__imp_??4Color@Art@@QEAAAEAV01@W4PresetSchemeColor@1@@Z` at `0x1435a616f`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5d60`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5dc0`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5e20`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5e80`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5ee0`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5f40`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5fa0`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a6000`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a6060`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a60c0`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a6120`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a6180`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5d60`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5dc0`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5e20`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5e80`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5ee0`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5f40`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a5fa0`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a6000`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a6060`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a60c0`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a6120`
+- `oart!__imp_?ResolveColor@StyleResolverHelper@Art@@SAXAEBVThemeInfo@2@AEAVColor@2@@Z` at `0x1435a6180`
+- `oart!__imp_??0Color@Art@@QEAA@W4PresetSchemeColor@1@@Z` at `0x1435a5d4d`
+- `oart!__imp_??0Color@Art@@QEAA@W4PresetSchemeColor@1@@Z` at `0x1435a5d4d`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6240`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6275`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a62a5`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6305`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6336`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6367`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6240`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6275`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a62a5`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6305`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6336`
+- `oart!__imp_?GetTypeface@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@W4FontSlotIndex@2@PEAPEBVTextFont@2@@Z` at `0x1435a6367`
+- `oart!__imp_?GetTypefaceForLid@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@KPEAPEBVTextFont@2@@Z` at `0x1435a62d5`
+- `oart!__imp_?GetTypefaceForLid@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@KPEAPEBVTextFont@2@@Z` at `0x1435a6397`
+- `oart!__imp_?GetTypefaceForLid@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@KPEAPEBVTextFont@2@@Z` at `0x1435a62d5`
+- `oart!__imp_?GetTypefaceForLid@FontScheme@Art@@QEBAAEBVTextTypeface@2@W4FontCollectionIndex@2@KPEAPEBVTextFont@2@@Z` at `0x1435a6397`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5d6a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5dca`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5e2a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5e8a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5eea`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5f4a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5faa`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a600a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a606a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a60ca`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a612a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a618a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5d6a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5dca`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5e2a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5e8a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5eea`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5f4a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a5faa`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a600a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a606a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a60ca`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a612a`
+- `oart!__imp_?GetCOLORREF@Color@Art@@QEBAKXZ` at `0x1435a618a`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1435a61cb`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1435a61cb`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1435a61e9`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1435a61e9`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1435a63c0`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1435a63c0`
+- `Mso30Win32Client!__imp_MsoFValidLid` at `0x1435a6214`
+- `Mso30Win32Client!__imp_MsoFValidLid` at `0x1435a6214`
+- `Mso30Win32Client!__imp_MsoGetUILcid` at `0x1435a6209`
+- `Mso30Win32Client!__imp_MsoGetUILcid` at `0x1435a6209`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6460`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a646e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6480`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a648e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64a0`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64ae`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64c0`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64ce`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64e0`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64ee`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6500`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a650e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6520`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a652e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6540`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a654e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6560`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a656e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6580`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a658e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6460`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a646e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6480`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a648e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64a0`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64ae`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64c0`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64ce`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64e0`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a64ee`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6500`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a650e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6520`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a652e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6540`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a654e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6560`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a656e`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a6580`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1435a658e`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1435a63d8`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1435a63e1`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1435a6437`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1435a63d8`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1435a63e1`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1435a6437`
+
+## pseudocode
+
+```c
+
+```
