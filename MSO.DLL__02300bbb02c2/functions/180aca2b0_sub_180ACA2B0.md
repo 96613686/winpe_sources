@@ -1,0 +1,232 @@
+# sub_180ACA2B0
+
+- ea: `0x180aca2b0`
+- end: `0x180acb176`
+- name: `sub_180ACA2B0`
+- size: `3782`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `9`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x180aca024`
+
+## callees
+
+- `0x1800326a8`
+- `0x1800326e8`
+- `0x180032d80`
+- `0x18010e788`
+- `0x180183568`
+- `0x18023c2e0`
+- `0x1804266e4`
+- `0x18047f4a8`
+- `0x180aca2b0`
+
+## import_xrefs
+
+- `Mso20Win32Client!Mso20Win32Client_1405` at `0x180acb11e`
+- `Mso20Win32Client!Mso20Win32Client_1405` at `0x180acb11e`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca309`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca784`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca7e8`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca84c`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca8b0`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca97e`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180acaa47`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180acaaab`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180acab0f`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca309`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca784`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca7e8`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca84c`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca8b0`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180aca97e`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180acaa47`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180acaaab`
+- `Mso20Win32Client!Mso20Win32Client_2517` at `0x180acab0f`
+- `Mso20Win32Client!Mso20Win32Client_9692` at `0x180aca2ec`
+- `Mso20Win32Client!Mso20Win32Client_9692` at `0x180aca4d2`
+- `Mso20Win32Client!Mso20Win32Client_9692` at `0x180aca2ec`
+- `Mso20Win32Client!Mso20Win32Client_9692` at `0x180aca4d2`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca34e`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca42d`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca50b`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca567`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca5c3`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca622`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca681`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca6e9`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca74a`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca7ae`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca812`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca876`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca8da`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca93f`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca9a8`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaa0d`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaa71`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaad5`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acab39`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acab9e`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acac03`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acacb0`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acad90`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acae70`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaf1d`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaf92`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acb007`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acb0a7`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca34e`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca42d`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca50b`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca567`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca5c3`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca622`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca681`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca6e9`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca74a`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca7ae`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca812`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca876`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca8da`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca93f`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180aca9a8`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaa0d`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaa71`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaad5`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acab39`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acab9e`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acac03`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acacb0`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acad90`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acae70`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaf1d`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acaf92`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acb007`
+- `Mso20Win32Client!Mso20Win32Client_16198` at `0x180acb0a7`
+- `Mso20Win32Client!Mso20Win32Client_25501` at `0x180aca2f7`
+- `Mso20Win32Client!Mso20Win32Client_25501` at `0x180aca2f7`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca35a`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca439`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca517`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca573`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca5cf`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca62e`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca68d`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca6f5`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca756`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca7ba`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca81e`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca882`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca8e6`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca94b`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca9b4`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaa19`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaa7d`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaae1`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acab45`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acabaa`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acac0f`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acacbc`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acad9c`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acae7c`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaf29`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaf9e`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acb013`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca35a`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca439`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca517`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca573`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca5cf`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca62e`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca68d`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca6f5`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca756`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca7ba`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca81e`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca882`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca8e6`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca94b`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180aca9b4`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaa19`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaa7d`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaae1`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acab45`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acabaa`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acac0f`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acacbc`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acad9c`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acae7c`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaf29`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acaf9e`
+- `Mso20Win32Client!Mso20Win32Client_27729` at `0x180acb013`
+- `Mso20Win32Client!Mso20Win32Client_33791` at `0x180acb03e`
+- `Mso20Win32Client!Mso20Win32Client_33791` at `0x180acb03e`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca4e1`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca53d`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca599`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca5f8`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca657`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca6bf`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca720`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca915`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca9e3`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acab74`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acabd9`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acac86`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acad66`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acae46`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca4e1`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca53d`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca599`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca5f8`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca657`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca6bf`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca720`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca915`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180aca9e3`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acab74`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acabd9`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acac86`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acad66`
+- `Mso20Win32Client!Mso20Win32Client_36664` at `0x180acae46`
+- `Mso20Win32Client!Mso20Win32Client_43328` at `0x180aca3e6`
+- `Mso20Win32Client!Mso20Win32Client_43328` at `0x180acaf68`
+- `Mso20Win32Client!Mso20Win32Client_43328` at `0x180acafdd`
+- `Mso20Win32Client!Mso20Win32Client_43328` at `0x180aca3e6`
+- `Mso20Win32Client!Mso20Win32Client_43328` at `0x180acaf68`
+- `Mso20Win32Client!Mso20Win32Client_43328` at `0x180acafdd`
+- `Mso20Win32Client!Mso20Win32Client_50865` at `0x180acaef3`
+- `Mso20Win32Client!Mso20Win32Client_50865` at `0x180acaef3`
+- `Mso20Win32Client!Mso20Win32Client_60511` at `0x180acb04c`
+- `Mso20Win32Client!Mso20Win32Client_60511` at `0x180acb0b5`
+- `Mso20Win32Client!Mso20Win32Client_60511` at `0x180acb04c`
+- `Mso20Win32Client!Mso20Win32Client_60511` at `0x180acb0b5`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180aca3b0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180aca493`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180acb110`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180aca3b0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180aca493`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x180acb110`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180aca3a9`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180aca48c`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180acb109`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180aca3a9`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180aca48c`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x180acb109`
+
+## string_xrefs
+
+- `0x180aca40c`: `HasMoreToCome`
+- `0x180aca5a2`: `DisplayPath`
+- `0x180acac8f`: `LastAccessedTime`
+- `0x180acad6f`: `DateCreated`
+
+## pseudocode
+
+```c
+
+```
