@@ -1,0 +1,156 @@
+# FCommandPicture(DGCB *)
+
+- ea: `0x18041dc00`
+- end: `0x18041f1df`
+- name: `?FCommandPicture@@YAHPEAUDGCB@@@Z`
+- size: `5599`
+- prototype: `__int64 __fastcall(struct DGCB *)`
+- caller_count: `0`
+- callee_count: `28`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callees
+
+- `0x18000a7d4`
+- `0x18001d310`
+- `0x1800ca890`
+- `0x1800ca8c0`
+- `0x1800caa30`
+- `0x1800cab14`
+- `0x1800f3260`
+- `0x1801109e0`
+- `0x180110aa4`
+- `0x18018b42c`
+- `0x180244370`
+- `0x1802444e0`
+- `0x1802f5e30`
+- `0x1803e27f8`
+- `0x18041dc00`
+- `0x180428bb0`
+- `0x180428e10`
+- `0x180460874`
+- `0x180485240`
+- `0x180485dd0`
+- `0x180b50570`
+- `0x180b7efe0`
+- `0x1811b6298`
+- `0x1811b71e4`
+- `0x1811b7470`
+- `0x1811b98f0`
+- `0x1811e9928`
+- `0x1811ff064`
+
+## import_xrefs
+
+- `KERNEL32!MulDiv` at `0x18041eecc`
+- `KERNEL32!MulDiv` at `0x18041eecc`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041e023`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041e03a`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041f0a4`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041f106`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041f165`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041f1c0`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041e023`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041e03a`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041f0a4`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041f106`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041f165`
+- `Mso98Win32Client!__imp_?MsoFIsNinch@@YAHW4MSOPID@@PEBX_K@Z` at `0x18041f1c0`
+- `Mso98Win32Client!__imp_?MsoGetPropSetNinch@@YAXW4MSOPSID@@PEAX@Z` at `0x18041efc0`
+- `Mso98Win32Client!__imp_?MsoGetPropSetNinch@@YAXW4MSOPSID@@PEAX@Z` at `0x18041efc0`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e3da`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e3f5`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e422`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e43d`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e484`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e4a1`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e4de`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e4fb`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e53c`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e557`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e641`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e65e`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e69b`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e6b8`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e6f5`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e712`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e74f`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e76c`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e7a8`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e7c4`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e7ff`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e821`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e8a0`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e8c7`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e910`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e937`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eae1`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eafc`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eb2a`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eb47`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eb85`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eba2`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ebe0`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ebfd`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ec3b`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ec58`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ec96`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ecb7`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e3da`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e3f5`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e422`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e43d`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e484`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e4a1`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e4de`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e4fb`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e53c`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e557`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e641`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e65e`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e69b`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e6b8`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e6f5`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e712`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e74f`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e76c`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e7a8`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e7c4`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e7ff`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e821`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e8a0`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e8c7`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e910`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041e937`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eae1`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eafc`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eb2a`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eb47`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eb85`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041eba2`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ebe0`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ebfd`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ec3b`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ec58`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ec96`
+- `Mso98Win32Client!__imp_?MsoPopinfoGet@@YAPEBUMSOPINFO@@W4MSOPID@@@Z` at `0x18041ecb7`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18041ee86`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18041ef2e`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18041ee86`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18041ef2e`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041dfb2`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041e25d`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041e861`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041e900`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041ea5c`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041dfb2`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041e25d`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041e861`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041e900`
+- `Mso20Win32Client!__imp_?MsoGetApp@@YAHXZ` at `0x18041ea5c`
+
+## pseudocode
+
+```c
+
+```

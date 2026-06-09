@@ -1,0 +1,198 @@
+# TBCDD::LInputEvent(_msoctlenv *,uint,unsigned __int64,__int64)
+
+- ea: `0x180a2e5e0`
+- end: `0x180a2f783`
+- name: `?LInputEvent@TBCDD@@UEAA_JPEAU_msoctlenv@@I_K_J@Z`
+- size: `4515`
+- prototype: `__int64 __fastcall(TBCDD *__hidden this, struct _msoctlenv *, UINT Msg, WPARAM wParam, LPARAM lParam)`
+- caller_count: `1`
+- callee_count: `6`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callers
+
+- `0x18169d400`
+
+## callees
+
+- `0x18000a7d4`
+- `0x180485240`
+- `0x180485dd0`
+- `0x180a2e5e0`
+- `0x180a30968`
+- `0x18169ca30`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentThreadId` at `0x180a2f195`
+- `KERNEL32!GetCurrentThreadId` at `0x180a2f195`
+- `Mso98Win32Client!__imp_?FGetDisplayedText@TBC@@IEAAHPEAU_msoceo@@PEA_WH@Z` at `0x180a2e956`
+- `Mso98Win32Client!__imp_?FGetDisplayedText@TBC@@IEAAHPEAU_msoceo@@PEA_WH@Z` at `0x180a2f595`
+- `Mso98Win32Client!__imp_?FGetDisplayedText@TBC@@IEAAHPEAU_msoceo@@PEA_WH@Z` at `0x180a2e956`
+- `Mso98Win32Client!__imp_?FGetDisplayedText@TBC@@IEAAHPEAU_msoceo@@PEA_WH@Z` at `0x180a2f595`
+- `Mso98Win32Client!__imp_?CbvPreDrawMenuControl@@YAKPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2e9b5`
+- `Mso98Win32Client!__imp_?CbvPreDrawMenuControl@@YAKPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2f5db`
+- `Mso98Win32Client!__imp_?CbvPreDrawMenuControl@@YAKPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2e9b5`
+- `Mso98Win32Client!__imp_?CbvPreDrawMenuControl@@YAKPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2f5db`
+- `Mso98Win32Client!__imp_?CbvDrawMenuArrows@@YAXPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2ea28`
+- `Mso98Win32Client!__imp_?CbvDrawMenuArrows@@YAXPEAU_msoctlenv@@HHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2ea28`
+- `Mso98Win32Client!__imp_?CbtDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2eac9`
+- `Mso98Win32Client!__imp_?CbtDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2eac9`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x180a2e975`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x180a2f5b4`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x180a2e975`
+- `Mso98Win32Client!__imp_?MsoFUseCbv@@YAHPEBU_msoceo@@H@Z` at `0x180a2f5b4`
+- `Mso98Win32Client!__imp_?MsoGetOrientedArrowWidth@@YAHPEBU_msoceo@@HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2e8b3`
+- `Mso98Win32Client!__imp_?MsoGetOrientedArrowWidth@@YAHPEBU_msoceo@@HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2e8b3`
+- `Mso98Win32Client!__imp_?GetCursors@Common@SharedUI@Mso@@YAAEBUCursors@123@XZ` at `0x180a2e8f3`
+- `Mso98Win32Client!__imp_?GetCursors@Common@SharedUI@Mso@@YAAEBUCursors@123@XZ` at `0x180a2f485`
+- `Mso98Win32Client!__imp_?GetCursors@Common@SharedUI@Mso@@YAAEBUCursors@123@XZ` at `0x180a2e8f3`
+- `Mso98Win32Client!__imp_?GetCursors@Common@SharedUI@Mso@@YAAEBUCursors@123@XZ` at `0x180a2f485`
+- `Mso98Win32Client!__imp_?FUnchainCtlMem@@YAHPEAUCTLMEM@@@Z` at `0x180a2e6d2`
+- `Mso98Win32Client!__imp_?FUnchainCtlMem@@YAHPEAUCTLMEM@@@Z` at `0x180a2e85a`
+- `Mso98Win32Client!__imp_?FUnchainCtlMem@@YAHPEAUCTLMEM@@@Z` at `0x180a2f35d`
+- `Mso98Win32Client!__imp_?FUnchainCtlMem@@YAHPEAUCTLMEM@@@Z` at `0x180a2e6d2`
+- `Mso98Win32Client!__imp_?FUnchainCtlMem@@YAHPEAUCTLMEM@@@Z` at `0x180a2e85a`
+- `Mso98Win32Client!__imp_?FUnchainCtlMem@@YAHPEAUCTLMEM@@@Z` at `0x180a2f35d`
+- `Mso98Win32Client!__imp_?CbvDrawMenuIcon@@YAXPEAU_msoctlenv@@HHPEAUIMsoButtonUser@@PEAPEAXPEAX3HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2e9e9`
+- `Mso98Win32Client!__imp_?CbvDrawMenuIcon@@YAXPEAU_msoctlenv@@HHPEAUIMsoButtonUser@@PEAPEAXPEAX3HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2f60f`
+- `Mso98Win32Client!__imp_?CbvDrawMenuIcon@@YAXPEAU_msoctlenv@@HHPEAUIMsoButtonUser@@PEAPEAXPEAX3HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2e9e9`
+- `Mso98Win32Client!__imp_?CbvDrawMenuIcon@@YAXPEAU_msoctlenv@@HHPEAUIMsoButtonUser@@PEAPEAXPEAX3HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2f60f`
+- `Mso98Win32Client!__imp_?ChainCtlMem@@YAXPEAUMSOINST@@PEAUCTLMEM@@PEAUISimpleUnknown@@@Z` at `0x180a2e6b0`
+- `Mso98Win32Client!__imp_?ChainCtlMem@@YAXPEAUMSOINST@@PEAUCTLMEM@@PEAUISimpleUnknown@@@Z` at `0x180a2e823`
+- `Mso98Win32Client!__imp_?ChainCtlMem@@YAXPEAUMSOINST@@PEAUCTLMEM@@PEAUISimpleUnknown@@@Z` at `0x180a2f33a`
+- `Mso98Win32Client!__imp_?ChainCtlMem@@YAXPEAUMSOINST@@PEAUCTLMEM@@PEAUISimpleUnknown@@@Z` at `0x180a2e6b0`
+- `Mso98Win32Client!__imp_?ChainCtlMem@@YAXPEAUMSOINST@@PEAUCTLMEM@@PEAUISimpleUnknown@@@Z` at `0x180a2e823`
+- `Mso98Win32Client!__imp_?ChainCtlMem@@YAXPEAUMSOINST@@PEAUCTLMEM@@PEAUISimpleUnknown@@@Z` at `0x180a2f33a`
+- `Mso98Win32Client!__imp_?DrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHH@Z` at `0x180a2eb0c`
+- `Mso98Win32Client!__imp_?DrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHH@Z` at `0x180a2eb0c`
+- `Mso98Win32Client!__imp_?CbvDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2ea6b`
+- `Mso98Win32Client!__imp_?CbvDrawButtonEx@@YAXPEAU_msoctlenv@@HPEAUIMsoButtonUser@@PEAPEAXPEAX3HPEB_WHHHV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2ea6b`
+- `Mso98Win32Client!__imp_?CbvDrawMenuText@@YAXPEAU_msoctlenv@@HPEB_WH1HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2ea0f`
+- `Mso98Win32Client!__imp_?CbvDrawMenuText@@YAXPEAU_msoctlenv@@HPEB_WH1HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2f635`
+- `Mso98Win32Client!__imp_?CbvDrawMenuText@@YAXPEAU_msoctlenv@@HPEB_WH1HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2ea0f`
+- `Mso98Win32Client!__imp_?CbvDrawMenuText@@YAXPEAU_msoctlenv@@HPEB_WH1HV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2f635`
+- `mso40uiWin32Client!__imp_?PtbsFromControl@@YAPEAUIMsoToolbarSetEx@@PEAUIMsoControl@@@Z` at `0x180a2eb9d`
+- `mso40uiWin32Client!__imp_?PtbsFromControl@@YAPEAUIMsoToolbarSetEx@@PEAUIMsoControl@@@Z` at `0x180a2eb9d`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2ea88`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2f67f`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2ea88`
+- `mso40uiWin32Client!__imp_?MsoThemeGetHTheme@Theme@Mso@@YAPEAXW4ENUM_MSOHTHEMES@@V?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@@Z` at `0x180a2f67f`
+- `mso40uiWin32Client!__imp_?MsoRepostMouseDown@@YAXPEAUHWND__@@I_K_JH@Z` at `0x180a2ee92`
+- `mso40uiWin32Client!__imp_?MsoRepostMouseDown@@YAXPEAUHWND__@@I_K_JH@Z` at `0x180a2f1b4`
+- `mso40uiWin32Client!__imp_?MsoRepostMouseDown@@YAXPEAUHWND__@@I_K_JH@Z` at `0x180a2ee92`
+- `mso40uiWin32Client!__imp_?MsoRepostMouseDown@@YAXPEAUHWND__@@I_K_JH@Z` at `0x180a2f1b4`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x180a2ea79`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x180a2f670`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x180a2ea79`
+- `mso40uiWin32Client!__imp_?MsoFInDialogGcc@@YA_NPEBU_msoceo@@@Z` at `0x180a2f670`
+- `Mso20Win32Client!__imp_?MsoGetMsWheelRollMessage@@YAIXZ` at `0x180a2eea3`
+- `Mso20Win32Client!__imp_?MsoGetMsWheelRollMessage@@YAIXZ` at `0x180a2eea3`
+- `Mso20Win32Client!__imp_?MsoGetSystemScaleFactor@Mso@@YA?AV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@XZ` at `0x180a2e8a2`
+- `Mso20Win32Client!__imp_?MsoGetSystemScaleFactor@Mso@@YA?AV?$TUnits@MU?$TUnitsRatioTag@UDevicePixels@Math@@UDeviceIndependentPixels@2@@Math@@@Math@@XZ` at `0x180a2e8a2`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2e6f0`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2ebf4`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2ef9e`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2f03d`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2f4d4`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2e6f0`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2ebf4`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2ef9e`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2f03d`
+- `Mso20Win32Client!__imp_?MsoSendMessage@@YA_JPEAUHWND__@@I_K_J@Z` at `0x180a2f4d4`
+- `USER32!SetFocus` at `0x180a2ebc4`
+- `USER32!SetFocus` at `0x180a2ebc4`
+- `USER32!GetClientRect` at `0x180a2eca3`
+- `USER32!GetClientRect` at `0x180a2ed22`
+- `USER32!GetClientRect` at `0x180a2ee37`
+- `USER32!GetClientRect` at `0x180a2eee2`
+- `USER32!GetClientRect` at `0x180a2ef3e`
+- `USER32!GetClientRect` at `0x180a2efdb`
+- `USER32!GetClientRect` at `0x180a2f131`
+- `USER32!GetClientRect` at `0x180a2eca3`
+- `USER32!GetClientRect` at `0x180a2ed22`
+- `USER32!GetClientRect` at `0x180a2ee37`
+- `USER32!GetClientRect` at `0x180a2eee2`
+- `USER32!GetClientRect` at `0x180a2ef3e`
+- `USER32!GetClientRect` at `0x180a2efdb`
+- `USER32!GetClientRect` at `0x180a2f131`
+- `USER32!GetWindowThreadProcessId` at `0x180a2f18d`
+- `USER32!GetWindowThreadProcessId` at `0x180a2f18d`
+- `USER32!SetCursor` at `0x180a2e8fc`
+- `USER32!SetCursor` at `0x180a2ed75`
+- `USER32!SetCursor` at `0x180a2f48e`
+- `USER32!SetCursor` at `0x180a2e8fc`
+- `USER32!SetCursor` at `0x180a2ed75`
+- `USER32!SetCursor` at `0x180a2f48e`
+- `USER32!PtInRect` at `0x180a2e8c5`
+- `USER32!PtInRect` at `0x180a2ec08`
+- `USER32!PtInRect` at `0x180a2ed59`
+- `USER32!PtInRect` at `0x180a2edc3`
+- `USER32!PtInRect` at `0x180a2edee`
+- `USER32!PtInRect` at `0x180a2ee6f`
+- `USER32!PtInRect` at `0x180a2ef6d`
+- `USER32!PtInRect` at `0x180a2f00a`
+- `USER32!PtInRect` at `0x180a2f0b2`
+- `USER32!PtInRect` at `0x180a2f100`
+- `USER32!PtInRect` at `0x180a2f145`
+- `USER32!PtInRect` at `0x180a2f273`
+- `USER32!PtInRect` at `0x180a2f3f1`
+- `USER32!PtInRect` at `0x180a2f73d`
+- `USER32!PtInRect` at `0x180a2e8c5`
+- `USER32!PtInRect` at `0x180a2ec08`
+- `USER32!PtInRect` at `0x180a2ed59`
+- `USER32!PtInRect` at `0x180a2edc3`
+- `USER32!PtInRect` at `0x180a2edee`
+- `USER32!PtInRect` at `0x180a2ee6f`
+- `USER32!PtInRect` at `0x180a2ef6d`
+- `USER32!PtInRect` at `0x180a2f00a`
+- `USER32!PtInRect` at `0x180a2f0b2`
+- `USER32!PtInRect` at `0x180a2f100`
+- `USER32!PtInRect` at `0x180a2f145`
+- `USER32!PtInRect` at `0x180a2f273`
+- `USER32!PtInRect` at `0x180a2f3f1`
+- `USER32!PtInRect` at `0x180a2f73d`
+- `USER32!GetCapture` at `0x180a2ef77`
+- `USER32!GetCapture` at `0x180a2f014`
+- `USER32!GetCapture` at `0x180a2f053`
+- `USER32!GetCapture` at `0x180a2ef77`
+- `USER32!GetCapture` at `0x180a2f014`
+- `USER32!GetCapture` at `0x180a2f053`
+- `USER32!ClientToScreen` at `0x180a2f177`
+- `USER32!ClientToScreen` at `0x180a2f177`
+- `USER32!MapWindowPoints` at `0x180a2ecd7`
+- `USER32!MapWindowPoints` at `0x180a2ed14`
+- `USER32!MapWindowPoints` at `0x180a2ee60`
+- `USER32!MapWindowPoints` at `0x180a2ef20`
+- `USER32!MapWindowPoints` at `0x180a2ef5e`
+- `USER32!MapWindowPoints` at `0x180a2effb`
+- `USER32!MapWindowPoints` at `0x180a2f124`
+- `USER32!MapWindowPoints` at `0x180a2f4af`
+- `USER32!MapWindowPoints` at `0x180a2ecd7`
+- `USER32!MapWindowPoints` at `0x180a2ed14`
+- `USER32!MapWindowPoints` at `0x180a2ee60`
+- `USER32!MapWindowPoints` at `0x180a2ef20`
+- `USER32!MapWindowPoints` at `0x180a2ef5e`
+- `USER32!MapWindowPoints` at `0x180a2effb`
+- `USER32!MapWindowPoints` at `0x180a2f124`
+- `USER32!MapWindowPoints` at `0x180a2f4af`
+- `USER32!WindowFromPoint` at `0x180a2f182`
+- `USER32!WindowFromPoint` at `0x180a2f182`
+- `USER32!SetCapture` at `0x180a2efaf`
+- `USER32!SetCapture` at `0x180a2f065`
+- `USER32!SetCapture` at `0x180a2efaf`
+- `USER32!SetCapture` at `0x180a2f065`
+- `USER32!SendMessageA` at `0x180a2eec8`
+- `USER32!SendMessageA` at `0x180a2eec8`
+- `USER32!LoadCursorW` at `0x180a2ed6c`
+- `USER32!LoadCursorW` at `0x180a2ed6c`
+- `USER32!InflateRect` at `0x180a2ed93`
+- `USER32!InflateRect` at `0x180a2ed93`
+- `USER32!MessageBeep` at `0x180a2e76d`
+- `USER32!MessageBeep` at `0x180a2e76d`
+
+## pseudocode
+
+```c
+
+```
