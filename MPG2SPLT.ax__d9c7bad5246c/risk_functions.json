@@ -1,0 +1,5545 @@
+[
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Mpeg2DemuxTrace::CeHomeETWProvider::CeHomeETWProvider(ulong,ulong,ulong,ulong)",
+    "ea": "0x180010870",
+    "function_file": "functions/180010870_Mpeg2DemuxTrace_CeHomeETWProvider_CeHomeETWProvider_ulong_ulong_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!ExpandEnvironmentStringsW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryW"
+    ],
+    "matched_strings": [
+      "%SystemRoot%\\ehome\\ehTrace.dll"
+    ],
+    "name": "??0CeHomeETWProvider@Mpeg2DemuxTrace@@IEAA@KKKK@Z",
+    "prototype": "__int64 __fastcall(Mpeg2DemuxTrace::CeHomeETWProvider *__hidden this, unsigned int, unsigned int, unsigned int, unsigned int)",
+    "rank_score": 2259,
+    "size": 687,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BufferWriter::CAsyncIO::IOAsyncWrite(void *,void const *,ulong,_OVERLAPPED *)",
+    "ea": "0x180015000",
+    "function_file": "functions/180015000_BufferWriter_CAsyncIO_IOAsyncWrite_void_void_const_ulong_OVERLAPPED.md",
+    "matched_imports": [
+      "KERNEL32!CreateThread",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!ResetEvent",
+      "KERNEL32!SetEvent",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?IOAsyncWrite@CAsyncIO@BufferWriter@@QEAAHPEAXPEBXKPEAU_OVERLAPPED@@@Z",
+    "prototype": "__int64 __fastcall(BufferWriter::CAsyncIO *__hidden this, HANDLE hFile, LPCVOID lpBuffer, DWORD nNumberOfBytesToWrite, LPOVERLAPPED lpOverlapped)",
+    "rank_score": 2214,
+    "size": 286,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "CMPEG2Demultiplexer::CMPEG2Demultiplexer(ushort const *,IUnknown *,_GUID const &,long *)",
+    "ea": "0x180012acc",
+    "function_file": "functions/180012acc_CMPEG2Demultiplexer_CMPEG2Demultiplexer_ushort_const_IUnknown_GUID_const_long.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!InitializeCriticalSection",
+      "KERNEL32!QueryPerformanceFrequency",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [
+      "WriteCapture",
+      "WriteCaptureDir",
+      "WriteCapturePath"
+    ],
+    "name": "??0CMPEG2Demultiplexer@@QEAA@PEBGPEAUIUnknown@@AEBU_GUID@@PEAJ@Z",
+    "prototype": "CMPEG2Demultiplexer *__usercall@<rax>(CMPEG2Demultiplexer *__hidden this@<rcx>, const unsigned __int16 *@<rdx>, struct IUnknown *@<r8>, const struct _GUID *@<r9>, int *)",
+    "rank_score": 2181,
+    "size": 1429,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AMovieSetupRegisterServer",
+    "ea": "0x1800026b8",
+    "function_file": "functions/1800026b8_AMovieSetupRegisterServer.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegSetValueExW",
+      "ole32!StringFromGUID2"
+    ],
+    "matched_strings": [
+      "CLSID\\%ls",
+      "ThreadingModel"
+    ],
+    "name": "AMovieSetupRegisterServer",
+    "prototype": "",
+    "rank_score": 2130,
+    "size": 776,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CMPEG2Demultiplexer::~CMPEG2Demultiplexer(void)",
+    "ea": "0x180013168",
+    "function_file": "functions/180013168_CMPEG2Demultiplexer_CMPEG2Demultiplexer_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!HeapFree",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMPEG2Demultiplexer@@UEAA@XZ",
+    "prototype": "void __fastcall(CMPEG2Demultiplexer *__hidden this)",
+    "rank_score": 2036,
+    "size": 847,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "COutputQueue::ThreadProc(void)",
+    "ea": "0x1800338e0",
+    "function_file": "functions/1800338e0_COutputQueue_ThreadProc_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetEvent",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?ThreadProc@COutputQueue@@IEAAKXZ",
+    "prototype": "unsigned int __fastcall(COutputQueue *__hidden this)",
+    "rank_score": 2020,
+    "size": 545,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BufferWriter::CAsyncIO::~CAsyncIO(void)",
+    "ea": "0x180013068",
+    "function_file": "functions/180013068_BufferWriter_CAsyncIO_CAsyncIO_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "??1CAsyncIO@BufferWriter@@UEAA@XZ",
+    "prototype": "void __fastcall(BufferWriter::CAsyncIO *__hidden this)",
+    "rank_score": 1904,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "CMPEG2PushClock::CMPEG2PushClock(int,HKEY__ *,CMpeg2Stats *,CMPEG2Demultiplexer *,ulong,ulong,ulong,ulong,ulong,long *)",
+    "ea": "0x18002506c",
+    "function_file": "functions/18002506c_CMPEG2PushClock_CMPEG2PushClock_int_HKEY_CMpeg2Stats_CMPEG2Demultiplexer_ulong_ulong_ulong_ulong_ulong_long.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!InitializeCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "WINMM!timeGetTime"
+    ],
+    "matched_strings": [],
+    "name": "??0CMPEG2PushClock@@QEAA@HPEAUHKEY__@@PEAVCMpeg2Stats@@PEAVCMPEG2Demultiplexer@@KKKKKPEAJ@Z",
+    "prototype": "CMPEG2PushClock *(CMPEG2PushClock *__hidden this, int, HKEY, struct CMpeg2Stats *, struct CMPEG2Demultiplexer *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, int *)",
+    "rank_score": 1817,
+    "size": 1091,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "AMovieDllRegisterServer2",
+    "ea": "0x1800023c4",
+    "function_file": "functions/1800023c4_AMovieDllRegisterServer2.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleFileNameA",
+      "KERNEL32!MultiByteToWideChar",
+      "ole32!CoCreateInstance",
+      "ole32!CoFreeUnusedLibraries",
+      "ole32!CoInitializeEx",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [],
+    "name": "AMovieDllRegisterServer2",
+    "prototype": "",
+    "rank_score": 1653,
+    "size": 551,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "CMPEG2PushClock::~CMPEG2PushClock(void)",
+    "ea": "0x180025570",
+    "function_file": "functions/180025570_CMPEG2PushClock_CMPEG2PushClock_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!SetEvent",
+      "KERNEL32!WaitForSingleObject",
+      "WINMM!timeEndPeriod"
+    ],
+    "matched_strings": [],
+    "name": "??1CMPEG2PushClock@@QEAA@XZ",
+    "prototype": "void __fastcall(CMPEG2PushClock *__hidden this)",
+    "rank_score": 1620,
+    "size": 337,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Mpeg2DemuxAttributes::TCProducerConsumer<Mpeg2DemuxAttributes::CDemuxIMediaSample *>::Pop(Mpeg2DemuxAttributes::CDemuxIMediaSample * *)",
+    "ea": "0x180019294",
+    "function_file": "functions/180019294_Mpeg2DemuxAttributes_TCProducerConsumer_Mpeg2DemuxAttributes_CDemuxIMediaSample_Pop_Mpeg2DemuxAttributes_CDemu.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!ResetEvent",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?Pop@?$TCProducerConsumer@PEAVCDemuxIMediaSample@Mpeg2DemuxAttributes@@@Mpeg2DemuxAttributes@@QEAAKPEAPEAVCDemuxIMediaSample@2@@Z",
+    "prototype": "__int64 __fastcall(LPCRITICAL_SECTION lpCriticalSection)",
+    "rank_score": 1618,
+    "size": 439,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CMPEG2Demultiplexer::ConnectESEvents(void)",
+    "ea": "0x18001376c",
+    "function_file": "functions/18001376c_CMPEG2Demultiplexer_ConnectESEvents_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?ConnectESEvents@CMPEG2Demultiplexer@@QEAAXXZ",
+    "prototype": "void __fastcall(CMPEG2Demultiplexer *__hidden this)",
+    "rank_score": 1449,
+    "size": 739,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Mp2DemuxSec::CDemuxSec::CreateSecurityAttributes(_ACCESS_MODE,ulong,_ACCESS_MODE,ulong)",
+    "ea": "0x180018340",
+    "function_file": "functions/180018340_Mp2DemuxSec_CDemuxSec_CreateSecurityAttributes_ACCESS_MODE_ulong_ACCESS_MODE_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!BuildTrusteeWithSidW",
+      "ADVAPI32!InitializeSecurityDescriptor",
+      "ADVAPI32!SetEntriesInAclW",
+      "ADVAPI32!SetSecurityDescriptorDacl",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?CreateSecurityAttributes@CDemuxSec@Mp2DemuxSec@@IEAAJW4_ACCESS_MODE@@K0K@Z",
+    "prototype": "__int64 __fastcall(Mp2DemuxSec::CDemuxSec *__hidden this, enum _ACCESS_MODE, unsigned int, enum _ACCESS_MODE, unsigned int)",
+    "rank_score": 1439,
+    "size": 437,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BufferWriter::CAsyncIO::IOCreateFile(unsigned __int64,ushort const *,_SECURITY_ATTRIBUTES *,ulong)",
+    "ea": "0x180015190",
+    "function_file": "functions/180015190_BufferWriter_CAsyncIO_IOCreateFile_unsigned_int64_ushort_const_SECURITY_ATTRIBUTES_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!CreateIoCompletionPort",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?IOCreateFile@CAsyncIO@BufferWriter@@QEAAPEAX_KPEBGPEAU_SECURITY_ATTRIBUTES@@K@Z",
+    "prototype": "void *__fastcall(BufferWriter::CAsyncIO *__hidden this, ULONG_PTR CompletionKey, LPCWSTR lpFileName, struct _SECURITY_ATTRIBUTES *, unsigned int)",
+    "rank_score": 1424,
+    "size": 201,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CBaseSplitterFilter::CreateStream(ushort const *,CStreamNotify * *)",
+    "ea": "0x18000c488",
+    "function_file": "functions/18000c488_CBaseSplitterFilter_CreateStream_ushort_const_CStreamNotify.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!InitializeCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateStream@CBaseSplitterFilter@@QEAAJPEBGPEAPEAVCStreamNotify@@@Z",
+    "prototype": "__int64 __fastcall(CBaseSplitterFilter *__hidden this, const unsigned __int16 *, struct CStreamNotify **)",
+    "rank_score": 1409,
+    "size": 486,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "COutputQueue::~COutputQueue(void)",
+    "ea": "0x180033190",
+    "function_file": "functions/180033190_COutputQueue_COutputQueue_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "??1COutputQueue@@QEAA@XZ",
+    "prototype": "void __fastcall(COutputQueue *__hidden this)",
+    "rank_score": 1321,
+    "size": 205,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "__scrt_initialize_thread_safe_statics",
+    "ea": "0x180001540",
+    "function_file": "functions/180001540_scrt_initialize_thread_safe_statics.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount"
+    ],
+    "matched_strings": [
+      "api-ms-win-core-synch-l1-2-0.dll",
+      "kernel32.dll"
+    ],
+    "name": "__scrt_initialize_thread_safe_statics",
+    "prototype": "",
+    "rank_score": 1295,
+    "size": 208,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CMpeg2SharedMem::CMpeg2SharedMem(ushort const *,ulong,_SECURITY_ATTRIBUTES *,long *)",
+    "ea": "0x180010280",
+    "function_file": "functions/180010280_CMpeg2SharedMem_CMpeg2SharedMem_ushort_const_ulong_SECURITY_ATTRIBUTES_long.md",
+    "matched_imports": [
+      "KERNEL32!CreateFileMappingW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!MapViewOfFile",
+      "KERNEL32!OpenFileMappingW"
+    ],
+    "matched_strings": [],
+    "name": "??0CMpeg2SharedMem@@QEAA@PEBGKPEAU_SECURITY_ATTRIBUTES@@PEAJ@Z",
+    "prototype": "CMpeg2SharedMem *__fastcall(CMpeg2SharedMem *__hidden this, LPCWSTR lpName, DWORD dwMaximumSizeLow, LPSECURITY_ATTRIBUTES lpFileMappingAttributes, int *)",
+    "rank_score": 1235,
+    "size": 245,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CTSContentManager::~CTSContentManager(void)",
+    "ea": "0x18002e264",
+    "function_file": "functions/18002e264_CTSContentManager_CTSContentManager_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1CTSContentManager@@UEAA@XZ",
+    "prototype": "void __fastcall(CTSContentManager *__hidden this)",
+    "rank_score": 1229,
+    "size": 440,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMediaSampleWrapper::Release(void)",
+    "ea": "0x18002bc00",
+    "function_file": "functions/18002bc00_CMediaSampleWrapper_Release_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?Release@CMediaSampleWrapper@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMediaSampleWrapper *__hidden this)",
+    "rank_score": 1216,
+    "size": 264,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CEnumStreamMapBase::AddStreamMap(ulong,ushort const *,ulong,void *)",
+    "ea": "0x1800279d0",
+    "function_file": "functions/1800279d0_CEnumStreamMapBase_AddStreamMap_ulong_ushort_const_ulong_void.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o_wcscpy_s",
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?AddStreamMap@CEnumStreamMapBase@@QEAAJKPEBGKPEAX@Z",
+    "prototype": "__int64 __fastcall(CEnumStreamMapBase *__hidden this, unsigned int, const unsigned __int16 *, unsigned int, void *Src)",
+    "rank_score": 1215,
+    "size": 248,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CMPEG2PushClock::ConfirmAdviseThreadRunning_(void)",
+    "ea": "0x180025ed8",
+    "function_file": "functions/180025ed8_CMPEG2PushClock_ConfirmAdviseThreadRunning_void.md",
+    "matched_imports": [
+      "KERNEL32!CreateThread",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetThreadPriority",
+      "WINMM!timeBeginPeriod",
+      "WINMM!timeEndPeriod",
+      "WINMM!timeGetDevCaps"
+    ],
+    "matched_strings": [],
+    "name": "?ConfirmAdviseThreadRunning_@CMPEG2PushClock@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CMPEG2PushClock *__hidden this)",
+    "rank_score": 1204,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CAMThread::~CAMThread(void)",
+    "ea": "0x180006fe4",
+    "function_file": "functions/180006fe4_CAMThread_CAMThread_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "??1CAMThread@@UEAA@XZ",
+    "prototype": "void __fastcall(CAMThread *__hidden this)",
+    "rank_score": 1203,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BufferWriter::CBufferWriter::CreateInstance(ushort const *,ulong,BufferWriter::CBufferWriter * *)",
+    "ea": "0x180013d34",
+    "function_file": "functions/180013d34_BufferWriter_CBufferWriter_CreateInstance_ushort_const_ulong_BufferWriter_CBufferWriter.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@CBufferWriter@BufferWriter@@SAJPEBGKPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, unsigned int, struct BufferWriter::CBufferWriter **)",
+    "rank_score": 1029,
+    "size": 346,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "COutputQueue::COutputQueue(IPin *,long *,int,int,long,int,long,ulong,bool)",
+    "ea": "0x180032fbc",
+    "function_file": "functions/180032fbc_COutputQueue_COutputQueue_IPin_long_int_int_long_int_long_ulong_bool.md",
+    "matched_imports": [
+      "KERNEL32!CreateSemaphoreW",
+      "KERNEL32!CreateThread",
+      "KERNEL32!GetLastError",
+      "KERNEL32!InitializeCriticalSection",
+      "KERNEL32!SetThreadPriority"
+    ],
+    "matched_strings": [],
+    "name": "??0COutputQueue@@QEAA@PEAUIPin@@PEAJHHJHJK_N@Z",
+    "prototype": "COutputQueue *__usercall@<rax>(COutputQueue *__hidden this@<rcx>, struct IPin *@<rdx>, int *@<r8>, int@<r9d>, int, int, int, int, unsigned int, bool)",
+    "rank_score": 1010,
+    "size": 459,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMPEG2PushClock::ThreadEntry(void *)",
+    "ea": "0x1800275a0",
+    "function_file": "functions/1800275a0_CMPEG2PushClock_ThreadEntry_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!ResetEvent",
+      "KERNEL32!WaitForMultipleObjects"
+    ],
+    "matched_strings": [],
+    "name": "?ThreadEntry@CMPEG2PushClock@@SAKPEAX@Z",
+    "prototype": "DWORD __stdcall(LPVOID lpThreadParameter)",
+    "rank_score": 1005,
+    "size": 206,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CBaseFilter::Register(void)",
+    "ea": "0x180005950",
+    "function_file": "functions/180005950_CBaseFilter_Register_void.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance",
+      "ole32!CoFreeUnusedLibraries",
+      "ole32!CoInitializeEx",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [],
+    "name": "?Register@CBaseFilter@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CBaseFilter *__hidden this)",
+    "rank_score": 836,
+    "size": 153,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CBaseFilter::Unregister(void)",
+    "ea": "0x180006510",
+    "function_file": "functions/180006510_CBaseFilter_Unregister_void.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance",
+      "ole32!CoFreeUnusedLibraries",
+      "ole32!CoInitializeEx",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [],
+    "name": "?Unregister@CBaseFilter@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CBaseFilter *__hidden this)",
+    "rank_score": 835,
+    "size": 174,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CMPEG2Demultiplexer::CreatePin_(ushort const *,_PinDirection,_AMMediaType *,long,int,ulong,ulong,DEMUX_PIN_RECORD * *)",
+    "ea": "0x1800140bc",
+    "function_file": "functions/1800140bc_CMPEG2Demultiplexer_CreatePin_ushort_const_PinDirection_AMMediaType_long_int_ulong_ulong_DEMUX_PIN_RECORD.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "api-ms-win-crt-private-l1-1-0!_o_qsort",
+      "api-ms-win-crt-private-l1-1-0!_o_wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?CreatePin_@CMPEG2Demultiplexer@@AEAAJPEBGW4_PinDirection@@PEAU_AMMediaType@@JHKKPEAPEAUDEMUX_PIN_RECORD@@@Z",
+    "prototype": "__int64 __usercall@<rax>(CMPEG2Demultiplexer *__hidden this@<rcx>, const unsigned __int16 *@<rdx>, enum _PinDirection@<r8d>, struct _AMMediaType *@<r9>, int, int, unsigned int, unsigned int, struct DEMUX_PIN_RECORD **)",
+    "rank_score": 834,
+    "size": 686,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "Mp2DemuxSec::CDemuxSec::~CDemuxSec(void)",
+    "ea": "0x180017f44",
+    "function_file": "functions/180017f44_Mp2DemuxSec_CDemuxSec_CDemuxSec_void.md",
+    "matched_imports": [
+      "ADVAPI32!FreeSid",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "??1CDemuxSec@Mp2DemuxSec@@UEAA@XZ",
+    "prototype": "void __fastcall(Mp2DemuxSec::CDemuxSec *__hidden this)",
+    "rank_score": 827,
+    "size": 127,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "CMPEG2Demultiplexer::CreateStreamMap_(ulong,ulong *,ushort const *,ulong,ulong,void *,int,int)",
+    "ea": "0x180014370",
+    "function_file": "functions/180014370_CMPEG2Demultiplexer_CreateStreamMap_ulong_ulong_ushort_const_ulong_ulong_void_int_int.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateStreamMap_@CMPEG2Demultiplexer@@AEAAJKPEAKPEBGKKPEAXHH@Z",
+    "prototype": "__int64 __usercall@<rax>(CMPEG2Demultiplexer *__hidden this@<rcx>, unsigned int@<edx>, unsigned int *@<r8>, const unsigned __int16 *@<r9>, unsigned int, unsigned int, void *, int, int)",
+    "rank_score": 824,
+    "size": 493,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001484",
+    "function_file": "functions/180001484_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 823,
+    "size": 181,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "CMPEG2Demultiplexer::DeletePin_(ushort const *)",
+    "ea": "0x180014608",
+    "function_file": "functions/180014608_CMPEG2Demultiplexer_DeletePin_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?DeletePin_@CMPEG2Demultiplexer@@AEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Demultiplexer *__hidden this, const unsigned __int16 *)",
+    "rank_score": 821,
+    "size": 353,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CMPEG2Demultiplexer::ReadFromStream(IStream *)",
+    "ea": "0x180016ae0",
+    "function_file": "functions/180016ae0_CMPEG2Demultiplexer_ReadFromStream_IStream.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?ReadFromStream@CMPEG2Demultiplexer@@UEAAJPEAUIStream@@@Z",
+    "prototype": "int(CMPEG2Demultiplexer *__hidden this, struct IStream *)",
+    "rank_score": 820,
+    "size": 421,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 5,
+    "demangled": "CMPEG2DemuxOutputPin::SendSample(IMediaSample *)",
+    "ea": "0x180023c8c",
+    "function_file": "functions/180023c8c_CMPEG2DemuxOutputPin_SendSample_IMediaSample.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?SendSample@CMPEG2DemuxOutputPin@@QEAAJPEAUIMediaSample@@@Z",
+    "prototype": "int(CMPEG2DemuxOutputPin *__hidden this, struct IMediaSample *)",
+    "rank_score": 820,
+    "size": 655,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "CBaseSplitterFilter::~CBaseSplitterFilter(void)",
+    "ea": "0x18000b87c",
+    "function_file": "functions/18000b87c_CBaseSplitterFilter_CBaseSplitterFilter_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CBaseSplitterFilter@@UEAA@XZ",
+    "prototype": "void __fastcall(CBaseSplitterFilter *__hidden this)",
+    "rank_score": 819,
+    "size": 177,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CMPEG2Demultiplexer::DeleteStreamMap_(ulong,ulong *,ushort const *,ulong)",
+    "ea": "0x180014770",
+    "function_file": "functions/180014770_CMPEG2Demultiplexer_DeleteStreamMap_ulong_ulong_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteStreamMap_@CMPEG2Demultiplexer@@AEAAJKPEAKPEBGK@Z",
+    "prototype": "__int64 __usercall@<rax>(CMPEG2Demultiplexer *__hidden this@<rcx>, unsigned int@<edx>, unsigned int *@<r8>, const unsigned __int16 *@<r9>, unsigned int)",
+    "rank_score": 819,
+    "size": 293,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CMediaSampleWrapperPool::~CMediaSampleWrapperPool(void)",
+    "ea": "0x18002b34c",
+    "function_file": "functions/18002b34c_CMediaSampleWrapperPool_CMediaSampleWrapperPool_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMediaSampleWrapperPool@@UEAA@XZ",
+    "prototype": "void __fastcall(CMediaSampleWrapperPool *__hidden this)",
+    "rank_score": 817,
+    "size": 271,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "EliminateSubKey",
+    "ea": "0x180002a50",
+    "function_file": "functions/180002a50_EliminateSubKey.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteKeyW",
+      "ADVAPI32!RegEnumKeyExW",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "EliminateSubKey",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpSubKey)",
+    "rank_score": 816,
+    "size": 317,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "EnableStats(ushort const *,int *)",
+    "ea": "0x180018728",
+    "function_file": "functions/180018728_EnableStats_ushort_const_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "?EnableStats@@YAJPEBGPEAH@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpSubKey, int *)",
+    "rank_score": 815,
+    "size": 299,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CBaseAllocator::Decommit(void)",
+    "ea": "0x180003f20",
+    "function_file": "functions/180003f20_CBaseAllocator_Decommit_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!ReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "?Decommit@CBaseAllocator@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CBaseAllocator *__hidden this)",
+    "rank_score": 814,
+    "size": 197,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CMPEG2Controller::ClearConfig(void)",
+    "ea": "0x18001e740",
+    "function_file": "functions/18001e740_CMPEG2Controller_ClearConfig_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?ClearConfig@CMPEG2Controller@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CMPEG2Controller *__hidden this)",
+    "rank_score": 814,
+    "size": 137,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BufferWriter::CAsyncIO::Active(void)",
+    "ea": "0x18001367c",
+    "function_file": "functions/18001367c_BufferWriter_CAsyncIO_Active_void.md",
+    "matched_imports": [
+      "KERNEL32!CreateIoCompletionPort",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Active@CAsyncIO@BufferWriter@@QEAAKXZ",
+    "prototype": "unsigned int __fastcall(BufferWriter::CAsyncIO *__hidden this)",
+    "rank_score": 813,
+    "size": 97,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BufferWriter::CAsyncIO::ThreadEntry(void *)",
+    "ea": "0x180017980",
+    "function_file": "functions/180017980_BufferWriter_CAsyncIO_ThreadEntry_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetQueuedCompletionStatus",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?ThreadEntry@CAsyncIO@BufferWriter@@SAKPEAX@Z",
+    "prototype": "DWORD __stdcall(LPVOID lpThreadParameter)",
+    "rank_score": 813,
+    "size": 160,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CMPEG2Demultiplexer::WriteToStream(IStream *)",
+    "ea": "0x180017b70",
+    "function_file": "functions/180017b70_CMPEG2Demultiplexer_WriteToStream_IStream.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?WriteToStream@CMPEG2Demultiplexer@@UEAAJPEAUIStream@@@Z",
+    "prototype": "int(CMPEG2Demultiplexer *__hidden this, struct IStream *)",
+    "rank_score": 808,
+    "size": 385,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "CAMThread::CallWorker(ulong)",
+    "ea": "0x180007054",
+    "function_file": "functions/180007054_CAMThread_CallWorker_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetEvent",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?CallWorker@CAMThread@@QEAAKK@Z",
+    "prototype": "unsigned int __fastcall(CAMThread *__hidden this, unsigned int)",
+    "rank_score": 807,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CMMPullPin::StartThread(void)",
+    "ea": "0x18000ed0c",
+    "function_file": "functions/18000ed0c_CMMPullPin_StartThread_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?StartThread@CMMPullPin@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CMMPullPin *__hidden this)",
+    "rank_score": 807,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CMp2PullPin::StopThread(void)",
+    "ea": "0x18001bd30",
+    "function_file": "functions/18001bd30_CMp2PullPin_StopThread_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?StopThread@CMp2PullPin@@IEAAJXZ",
+    "prototype": "__int64 __fastcall(CMp2PullPin *__hidden this)",
+    "rank_score": 807,
+    "size": 185,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CMMPullPin::StopThread(void)",
+    "ea": "0x18000edbc",
+    "function_file": "functions/18000edbc_CMMPullPin_StopThread_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?StopThread@CMMPullPin@@IEAAJXZ",
+    "prototype": "__int64 __fastcall(CMMPullPin *__hidden this)",
+    "rank_score": 806,
+    "size": 185,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CMp2PullPin::StartThread(void)",
+    "ea": "0x18001bc80",
+    "function_file": "functions/18001bc80_CMp2PullPin_StartThread_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?StartThread@CMp2PullPin@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CMp2PullPin *__hidden this)",
+    "rank_score": 806,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CESEvent::GetData(tagSAFEARRAY * *)",
+    "ea": "0x180014bc0",
+    "function_file": "functions/180014bc0_CESEvent_GetData_tagSAFEARRAY.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayAccessData",
+      "OLEAUT32!__imp_SafeArrayCreate",
+      "OLEAUT32!__imp_SafeArrayDestroy",
+      "OLEAUT32!__imp_SafeArrayUnaccessData"
+    ],
+    "matched_strings": [],
+    "name": "?GetData@CESEvent@@UEAAJPEAPEAUtagSAFEARRAY@@@Z",
+    "prototype": "__int64 __fastcall(CESEvent *__hidden this, struct tagSAFEARRAY **)",
+    "rank_score": 803,
+    "size": 222,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CPbdaTagTableHandler::~CPbdaTagTableHandler(void)",
+    "ea": "0x18002c5f0",
+    "function_file": "functions/18002c5f0_CPbdaTagTableHandler_CPbdaTagTableHandler_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "api-ms-win-crt-private-l1-1-0!_o_free"
+    ],
+    "matched_strings": [],
+    "name": "??1CPbdaTagTableHandler@@QEAA@XZ",
+    "prototype": "void __fastcall(CPbdaTagTableHandler *__hidden this)",
+    "rank_score": 724,
+    "size": 145,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Mpeg2DemuxAttributes::TCProducerConsumer<Mpeg2DemuxAttributes::CDemuxIMediaSample *>::~TCProducerConsumer<Mpeg2DemuxAttributes::CDemuxIMediaSample *>(void)",
+    "ea": "0x180017e3c",
+    "function_file": "functions/180017e3c_Mpeg2DemuxAttributes_TCProducerConsumer_Mpeg2DemuxAttributes_CDemuxIMediaSample_TCProducerConsumer_Mpeg2DemuxA.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1?$TCProducerConsumer@PEAVCDemuxIMediaSample@Mpeg2DemuxAttributes@@@Mpeg2DemuxAttributes@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(LPCRITICAL_SECTION lpCriticalSection)",
+    "rank_score": 715,
+    "size": 202,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CMPEG2DemuxOutputPin::~CMPEG2DemuxOutputPin(void)",
+    "ea": "0x1800221c4",
+    "function_file": "functions/1800221c4_CMPEG2DemuxOutputPin_CMPEG2DemuxOutputPin_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMPEG2DemuxOutputPin@@UEAA@XZ",
+    "prototype": "void __fastcall(CMPEG2DemuxOutputPin *__hidden this)",
+    "rank_score": 631,
+    "size": 414,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CreateBufferWriterEvent",
+    "ea": "0x180013a58",
+    "function_file": "functions/180013a58_CreateBufferWriterEvent.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!OpenEventW"
+    ],
+    "matched_strings": [],
+    "name": "CreateBufferWriterEvent",
+    "prototype": "",
+    "rank_score": 627,
+    "size": 249,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CBaseInputPin::GetAllocator(IMemAllocator * *)",
+    "ea": "0x1800042f0",
+    "function_file": "functions/1800042f0_CBaseInputPin_GetAllocator_IMemAllocator.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?GetAllocator@CBaseInputPin@@UEAAJPEAPEAUIMemAllocator@@@Z",
+    "prototype": "__int64 __fastcall(CBaseInputPin *__hidden this, struct IMemAllocator **)",
+    "rank_score": 623,
+    "size": 135,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "Mp2DemuxSec::CDemuxSec::CreateSids(void)",
+    "ea": "0x1800184fc",
+    "function_file": "functions/1800184fc_Mp2DemuxSec_CDemuxSec_CreateSids_void.md",
+    "matched_imports": [
+      "ADVAPI32!AllocateAndInitializeSid",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CreateSids@CDemuxSec@Mp2DemuxSec@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(Mp2DemuxSec::CDemuxSec *__hidden this)",
+    "rank_score": 619,
+    "size": 349,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CMPEG2Controller::EnumStreamMap(CMPEG2DemuxOutputPin *,CEnumStreamMapBase *)",
+    "ea": "0x18001e944",
+    "function_file": "functions/18001e944_CMPEG2Controller_EnumStreamMap_CMPEG2DemuxOutputPin_CEnumStreamMapBase.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?EnumStreamMap@CMPEG2Controller@@QEAAJPEAVCMPEG2DemuxOutputPin@@PEAVCEnumStreamMapBase@@@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Controller *__hidden this, struct CMPEG2DemuxOutputPin *, struct CEnumStreamMapBase *)",
+    "rank_score": 617,
+    "size": 278,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CDShowESEventEx::`vector deleting destructor'(uint)",
+    "ea": "0x180013540",
+    "function_file": "functions/180013540_CDShowESEventEx_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??_ECDShowESEventEx@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CDShowESEventEx *__hidden this, unsigned int)",
+    "rank_score": 615,
+    "size": 133,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CEnumStreamMapBase::~CEnumStreamMapBase(void)",
+    "ea": "0x18002787c",
+    "function_file": "functions/18002787c_CEnumStreamMapBase_CEnumStreamMapBase_void.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??1CEnumStreamMapBase@@UEAA@XZ",
+    "prototype": "void __fastcall(CEnumStreamMapBase *__hidden this)",
+    "rank_score": 614,
+    "size": 92,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StatsEnabled(ushort const *)",
+    "ea": "0x18001a160",
+    "function_file": "functions/18001a160_StatsEnabled_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "?StatsEnabled@@YAHPEBG@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpSubKey)",
+    "rank_score": 614,
+    "size": 200,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CBaseAllocator::Commit(void)",
+    "ea": "0x180003b90",
+    "function_file": "functions/180003b90_CBaseAllocator_Commit_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Commit@CBaseAllocator@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CBaseAllocator *__hidden this)",
+    "rank_score": 613,
+    "size": 165,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Mpeg2DemuxAttributes::CMediaSampleWrapper::~CMediaSampleWrapper(void)",
+    "ea": "0x18001800c",
+    "function_file": "functions/18001800c_Mpeg2DemuxAttributes_CMediaSampleWrapper_CMediaSampleWrapper_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMediaSampleWrapper@Mpeg2DemuxAttributes@@MEAA@XZ",
+    "prototype": "void __fastcall(Mpeg2DemuxAttributes::CMediaSampleWrapper *__hidden this)",
+    "rank_score": 605,
+    "size": 120,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CMediaSampleWrapperPool::CMediaSampleWrapperPool(CMPEG2DemuxOutputPin *,int,int,CRefCountedCritSec *,ulong,HKEY__ *,CMpeg2Stats *,long *)",
+    "ea": "0x18002b180",
+    "function_file": "functions/18002b180_CMediaSampleWrapperPool_CMediaSampleWrapperPool_CMPEG2DemuxOutputPin_int_int_CRefCountedCritSec_ulong_HKEY_CMp.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??0CMediaSampleWrapperPool@@QEAA@PEAVCMPEG2DemuxOutputPin@@HHPEAVCRefCountedCritSec@@KPEAUHKEY__@@PEAVCMpeg2Stats@@PEAJ@Z",
+    "prototype": "CMediaSampleWrapperPool *__fastcall(CMediaSampleWrapperPool *__hidden this, struct CMPEG2DemuxOutputPin *, int, int, struct CRefCountedCritSec *, unsigned int, HKEY, struct CMpeg2Stats *, int *)",
+    "rank_score": 604,
+    "size": 230,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CAMThread::Create(void)",
+    "ea": "0x180007114",
+    "function_file": "functions/180007114_CAMThread_Create_void.md",
+    "matched_imports": [
+      "KERNEL32!CreateThread",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Create@CAMThread@@QEAAHXZ",
+    "prototype": "__int64 __fastcall(CAMThread *__hidden this)",
+    "rank_score": 603,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "CMPEG2Controller::~CMPEG2Controller(void)",
+    "ea": "0x18001d5d4",
+    "function_file": "functions/18001d5d4_CMPEG2Controller_CMPEG2Controller_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1CMPEG2Controller@@UEAA@XZ",
+    "prototype": "void __fastcall(CMPEG2Controller *__hidden this)",
+    "rank_score": 529,
+    "size": 233,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CTClockSubordinate<__int64,__int64>::~CTClockSubordinate<__int64,__int64>(void)",
+    "ea": "0x1800254b8",
+    "function_file": "functions/1800254b8_CTClockSubordinate_int64_int64_CTClockSubordinate_int64_int64_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "api-ms-win-crt-private-l1-1-0!_o_free"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CTClockSubordinate@_J_J@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 516,
+    "size": 177,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CAMThread::CoInitializeHelper(void)",
+    "ea": "0x1800070c4",
+    "function_file": "functions/1800070c4_CAMThread_CoInitializeHelper_void.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ole32.dll"
+    ],
+    "name": "?CoInitializeHelper@CAMThread@@SAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 454,
+    "size": 72,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CMPEG2Demultiplexer::LoadMpeg2Program_(void)",
+    "ea": "0x1800156e4",
+    "function_file": "functions/1800156e4_CMPEG2Demultiplexer_LoadMpeg2Program_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?LoadMpeg2Program_@CMPEG2Demultiplexer@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CMPEG2Demultiplexer *__hidden this)",
+    "rank_score": 447,
+    "size": 801,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CMPEG2Demultiplexer::LoadMpeg2Transport_(void)",
+    "ea": "0x180015a0c",
+    "function_file": "functions/180015a0c_CMPEG2Demultiplexer_LoadMpeg2Transport_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?LoadMpeg2Transport_@CMPEG2Demultiplexer@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CMPEG2Demultiplexer *__hidden this)",
+    "rank_score": 447,
+    "size": 851,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::SetPositions(__int64 *,ulong,__int64 *,ulong)",
+    "ea": "0x180024c50",
+    "function_file": "functions/180024c50_CMpeg2DemuxMediaSeekingCOM_SetPositions_int64_ulong_int64_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?SetPositions@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEA_JK0K@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, __int64 *, unsigned int, __int64 *, unsigned int)",
+    "rank_score": 428,
+    "size": 629,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "CreateMediaType(_AMMediaType const *)",
+    "ea": "0x180006a9c",
+    "function_file": "functions/180006a9c_CreateMediaType_AMMediaType_const.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?CreateMediaType@@YAPEAU_AMMediaType@@PEBU1@@Z",
+    "prototype": "struct _AMMediaType *__fastcall(const struct _AMMediaType *)",
+    "rank_score": 421,
+    "size": 76,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "CTSProgram::~CTSProgram(void)",
+    "ea": "0x18002e424",
+    "function_file": "functions/18002e424_CTSProgram_CTSProgram_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CTSProgram@@QEAA@XZ",
+    "prototype": "void __fastcall(CTSProgram *__hidden this)",
+    "rank_score": 419,
+    "size": 235,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "RegGetValIfExist(HKEY__ *,ushort const *,ulong,int,ulong *)",
+    "ea": "0x18001991c",
+    "function_file": "functions/18001991c_RegGetValIfExist_HKEY_ushort_const_ulong_int_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "?RegGetValIfExist@@YAJPEAUHKEY__@@PEBGKHPEAK@Z",
+    "prototype": "__int64 __usercall@<rax>(HKEY hKey@<rcx>, LPCWSTR lpValueName@<rdx>, unsigned int@<r8d>, int@<r9d>, unsigned int *)",
+    "rank_score": 419,
+    "size": 159,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CBDAMPEG2Demux::CreateTopology(ulong,ulong)",
+    "ea": "0x18001c0b0",
+    "function_file": "functions/18001c0b0_CBDAMPEG2Demux_CreateTopology_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateTopology@CBDAMPEG2Demux@@UEAAJKK@Z",
+    "prototype": "__int64 __fastcall(CBDAMPEG2Demux *__hidden this, unsigned int, unsigned int)",
+    "rank_score": 417,
+    "size": 243,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CMPEG2DemuxInputPin::~CMPEG2DemuxInputPin(void)",
+    "ea": "0x18001a6ac",
+    "function_file": "functions/18001a6ac_CMPEG2DemuxInputPin_CMPEG2DemuxInputPin_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMPEG2DemuxInputPin@@UEAA@XZ",
+    "prototype": "void __fastcall(CMPEG2DemuxInputPin *__hidden this)",
+    "rank_score": 417,
+    "size": 243,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "CMediaType::AllocFormatBuffer(ulong)",
+    "ea": "0x18000699c",
+    "function_file": "functions/18000699c_CMediaType_AllocFormatBuffer_ulong.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?AllocFormatBuffer@CMediaType@@QEAAPEAEK@Z",
+    "prototype": "unsigned __int8 *(CMediaType *__hidden this, unsigned int)",
+    "rank_score": 416,
+    "size": 105,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CMpeg2VersionFilteredPSIParse::PSICurSectionCompleted(long)",
+    "ea": "0x180021200",
+    "function_file": "functions/180021200_CMpeg2VersionFilteredPSIParse_PSICurSectionCompleted_long.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?PSICurSectionCompleted@CMpeg2VersionFilteredPSIParse@@UEAAXJ@Z",
+    "prototype": "void __fastcall(CMpeg2VersionFilteredPSIParse *__hidden this, int)",
+    "rank_score": 416,
+    "size": 224,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "TGenericMap<unsigned __int64,ulong,0,5,19>::Remove(ulong,unsigned __int64 *)",
+    "ea": "0x1800305a4",
+    "function_file": "functions/1800305a4_TGenericMap_unsigned_int64_ulong_0_5_19_Remove_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Remove@?$TGenericMap@_KK$0A@$04$0BD@@@QEAAJKPEA_K@Z",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 190,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMediaSampleWrapperPool::WrapAndComplete(IMediaSample *,uchar *,int,int,CTStickyVal<int> *)",
+    "ea": "0x18002c170",
+    "function_file": "functions/18002c170_CMediaSampleWrapperPool_WrapAndComplete_IMediaSample_uchar_int_int_CTStickyVal_int.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?WrapAndComplete@CMediaSampleWrapperPool@@UEAAJPEAUIMediaSample@@PEAEHHPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 176,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMediaSampleWrapperPool::WrapAndComplete(IMediaSample *,uchar *,int,int,__int64 *,__int64 *,CTStickyVal<int> *)",
+    "ea": "0x18002c230",
+    "function_file": "functions/18002c230_CMediaSampleWrapperPool_WrapAndComplete_IMediaSample_uchar_int_int_int64_int64_CTStickyVal_int.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?WrapAndComplete@CMediaSampleWrapperPool@@UEAAJPEAUIMediaSample@@PEAEHHPEA_J2PEAV?$CTStickyVal@H@@@Z",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 236,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::SetTimeFormat(_GUID const *)",
+    "ea": "0x180024f60",
+    "function_file": "functions/180024f60_CMpeg2DemuxMediaSeekingCOM_SetTimeFormat_GUID_const.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?SetTimeFormat@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEBU_GUID@@@Z",
+    "prototype": "int(CMpeg2DemuxMediaSeekingCOM *__hidden this, const struct _GUID *)",
+    "rank_score": 415,
+    "size": 261,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RegGetValIfExist(HKEY__ *,ushort *,ushort *,ulong,ushort *)",
+    "ea": "0x1800197f8",
+    "function_file": "functions/1800197f8_RegGetValIfExist_HKEY_ushort_ushort_ulong_ushort.md",
+    "matched_imports": [
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "?RegGetValIfExist@@YAJPEAUHKEY__@@PEAG1K1@Z",
+    "prototype": "__int64 __usercall@<rax>(HKEY hKey@<rcx>, LPCWSTR lpValueName@<rdx>, BYTE *lpData@<r8>, unsigned int@<r9d>, unsigned __int16 *)",
+    "rank_score": 414,
+    "size": 285,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::GetPositions(__int64 *,__int64 *)",
+    "ea": "0x1800244d0",
+    "function_file": "functions/1800244d0_CMpeg2DemuxMediaSeekingCOM_GetPositions_int64_int64.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetPositions@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEA_J0@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, __int64 *, __int64 *)",
+    "rank_score": 413,
+    "size": 141,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CPCRRecordBufferSource::CompleteCopyBuffer(unsigned __int64,uchar *,int,int,CTStickyVal<int> *,Mpeg2DemuxAttributes::CAttributeList *)",
+    "ea": "0x18002ef00",
+    "function_file": "functions/18002ef00_CPCRRecordBufferSource_CompleteCopyBuffer_unsigned_int64_uchar_int_int_CTStickyVal_int_Mpeg2DemuxAttributes_CA.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CompleteCopyBuffer@CPCRRecordBufferSource@@UEAAJ_KPEAEHHPEAV?$CTStickyVal@H@@PEAVCAttributeList@Mpeg2DemuxAttributes@@@Z",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "CTSContentManager::UnregisterKnownStream(SINGULAR_STREAM *)",
+    "ea": "0x180030f74",
+    "function_file": "functions/180030f74_CTSContentManager_UnregisterKnownStream_SINGULAR_STREAM.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?UnregisterKnownStream@CTSContentManager@@QEAAJPEAUSINGULAR_STREAM@@@Z",
+    "prototype": "__int64 __fastcall(CTSContentManager *__hidden this, struct SINGULAR_STREAM *)",
+    "rank_score": 413,
+    "size": 381,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::GetAvailable(__int64 *,__int64 *)",
+    "ea": "0x180024140",
+    "function_file": "functions/180024140_CMpeg2DemuxMediaSeekingCOM_GetAvailable_int64_int64.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetAvailable@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEA_J0@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, __int64 *, __int64 *)",
+    "rank_score": 412,
+    "size": 120,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::GetCurrentPosition(__int64 *)",
+    "ea": "0x180024200",
+    "function_file": "functions/180024200_CMpeg2DemuxMediaSeekingCOM_GetCurrentPosition_int64.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetCurrentPosition@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEA_J@Z",
+    "prototype": "int(CMpeg2DemuxMediaSeekingCOM *__hidden this, __int64 *)",
+    "rank_score": 412,
+    "size": 111,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::GetDuration(__int64 *)",
+    "ea": "0x180024280",
+    "function_file": "functions/180024280_CMpeg2DemuxMediaSeekingCOM_GetDuration_int64.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetDuration@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEA_J@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, __int64 *)",
+    "rank_score": 412,
+    "size": 176,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::GetStopPosition(__int64 *)",
+    "ea": "0x180024630",
+    "function_file": "functions/180024630_CMpeg2DemuxMediaSeekingCOM_GetStopPosition_int64.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetStopPosition@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEA_J@Z",
+    "prototype": "int(CMpeg2DemuxMediaSeekingCOM *__hidden this, __int64 *)",
+    "rank_score": 412,
+    "size": 111,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::SetRate(double)",
+    "ea": "0x180024ed0",
+    "function_file": "functions/180024ed0_CMpeg2DemuxMediaSeekingCOM_SetRate_double.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?SetRate@CMpeg2DemuxMediaSeekingCOM@@UEAAJN@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, double)",
+    "rank_score": 412,
+    "size": 130,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::GetRate(double *)",
+    "ea": "0x1800245b0",
+    "function_file": "functions/1800245b0_CMpeg2DemuxMediaSeekingCOM_GetRate_double.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetRate@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEAN@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, double *)",
+    "rank_score": 411,
+    "size": 108,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RegKey::SetValue(ushort const *,ushort const *)",
+    "ea": "0x18000e398",
+    "function_file": "functions/18000e398_RegKey_SetValue_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!lstrlenW"
+    ],
+    "matched_strings": [],
+    "name": "?SetValue@RegKey@@QEBAJPEBG0@Z",
+    "prototype": "int(RegKey *__hidden this, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 411,
+    "size": 87,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "CTSContentManager::RegisterKnownStream(SINGULAR_STREAM *)",
+    "ea": "0x18003042c",
+    "function_file": "functions/18003042c_CTSContentManager_RegisterKnownStream_SINGULAR_STREAM.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?RegisterKnownStream@CTSContentManager@@QEAAJPEAUSINGULAR_STREAM@@@Z",
+    "prototype": "__int64 __fastcall(CTSContentManager *__hidden this, struct SINGULAR_STREAM *)",
+    "rank_score": 410,
+    "size": 220,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "CTClockSubordinate<__int64,__int64>::Reset(int)",
+    "ea": "0x1800270f0",
+    "function_file": "functions/1800270f0_CTClockSubordinate_int64_int64_Reset_int.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Reset@?$CTClockSubordinate@_J_J@@QEAAXH@Z",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 409,
+    "size": 131,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "TGenericMap<unsigned __int64,ulong,0,5,19>::Store(unsigned __int64,ulong)",
+    "ea": "0x180030d08",
+    "function_file": "functions/180030d08_TGenericMap_unsigned_int64_ulong_0_5_19_Store_unsigned_int64_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Store@?$TGenericMap@_KK$0A@$04$0BD@@@QEAAJ_KK@Z",
+    "prototype": "",
+    "rank_score": 409,
+    "size": 239,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CBDAMPEG2Demux::CreatePin(ulong,ulong *)",
+    "ea": "0x18001bf80",
+    "function_file": "functions/18001bf80_CBDAMPEG2Demux_CreatePin_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreatePin@CBDAMPEG2Demux@@UEAAJKPEAK@Z",
+    "prototype": "__int64 __fastcall(CBDAMPEG2Demux *__hidden this, unsigned int, unsigned int *)",
+    "rank_score": 408,
+    "size": 288,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "TGenericMap<unsigned __int64,ulong,1,10,19>::Find(ulong,unsigned __int64 *)",
+    "ea": "0x18002efd0",
+    "function_file": "functions/18002efd0_TGenericMap_unsigned_int64_ulong_1_10_19_Find_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Find@?$TGenericMap@_KK$00$09$0BD@@@QEAAJKPEA_K@Z",
+    "prototype": "",
+    "rank_score": 408,
+    "size": 152,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CMMPullPin::PauseThread(void)",
+    "ea": "0x18000e8b0",
+    "function_file": "functions/18000e8b0_CMMPullPin_PauseThread_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?PauseThread@CMMPullPin@@IEAAJXZ",
+    "prototype": "__int64 __fastcall(CMMPullPin *__hidden this)",
+    "rank_score": 407,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "Mpeg2DemuxAttributes::CAttributeList::CAttributeList(void)",
+    "ea": "0x180017cf8",
+    "function_file": "functions/180017cf8_Mpeg2DemuxAttributes_CAttributeList_CAttributeList_void.md",
+    "matched_imports": [
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??0CAttributeList@Mpeg2DemuxAttributes@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(Mpeg2DemuxAttributes::CAttributeList *__hidden this)",
+    "rank_score": 407,
+    "size": 180,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "TGenericMap<unsigned __int64,ulong,0,5,19>::RemoveFirst(unsigned __int64 *)",
+    "ea": "0x180030668",
+    "function_file": "functions/180030668_TGenericMap_unsigned_int64_ulong_0_5_19_RemoveFirst_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveFirst@?$TGenericMap@_KK$0A@$04$0BD@@@QEAAJPEA_K@Z",
+    "prototype": "",
+    "rank_score": 407,
+    "size": 137,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BufferWriter::CBufferWriter::CreateInstance(ushort *,BufferWriter::CBufferWriter * *)",
+    "ea": "0x180013bb8",
+    "function_file": "functions/180013bb8_BufferWriter_CBufferWriter_CreateInstance_ushort_BufferWriter_CBufferWriter.md",
+    "matched_imports": [
+      "ole32!CoCreateGuid",
+      "ole32!StringFromGUID2"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@CBufferWriter@BufferWriter@@SAJPEAGPEAPEAV12@@Z",
+    "prototype": "static int(unsigned __int16 *, struct BufferWriter::CBufferWriter **)",
+    "rank_score": 406,
+    "size": 371,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CBDAMPEG2Demux::DeletePin(ulong)",
+    "ea": "0x18001c1d0",
+    "function_file": "functions/18001c1d0_CBDAMPEG2Demux_DeletePin_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?DeletePin@CBDAMPEG2Demux@@UEAAJK@Z",
+    "prototype": "__int64 __fastcall(CBDAMPEG2Demux *__hidden this, unsigned int)",
+    "rank_score": 405,
+    "size": 204,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CMp2PullPin::PauseThread(void)",
+    "ea": "0x18001b468",
+    "function_file": "functions/18001b468_CMp2PullPin_PauseThread_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?PauseThread@CMp2PullPin@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CMp2PullPin *__hidden this)",
+    "rank_score": 405,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CMpeg2PBDAPESStreamParser::~CMpeg2PBDAPESStreamParser(void)",
+    "ea": "0x18002c514",
+    "function_file": "functions/18002c514_CMpeg2PBDAPESStreamParser_CMpeg2PBDAPESStreamParser_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "WINMM!timeKillEvent"
+    ],
+    "matched_strings": [],
+    "name": "??1CMpeg2PBDAPESStreamParser@@UEAA@XZ",
+    "prototype": "void __fastcall(CMpeg2PBDAPESStreamParser *__hidden this)",
+    "rank_score": 405,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CBaseAllocator::CBaseAllocator(ushort const *,IUnknown *,long *,int,int)",
+    "ea": "0x180002c50",
+    "function_file": "functions/180002c50_CBaseAllocator_CBaseAllocator_ushort_const_IUnknown_long_int_int.md",
+    "matched_imports": [
+      "KERNEL32!CreateSemaphoreExW",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??0CBaseAllocator@@QEAA@PEBGPEAUIUnknown@@PEAJHH@Z",
+    "prototype": "CBaseAllocator *__fastcall(CBaseAllocator *__hidden this, const unsigned __int16 *, struct IUnknown *, int *, int, int)",
+    "rank_score": 404,
+    "size": 162,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CBaseAllocator::~CBaseAllocator(void)",
+    "ea": "0x180002ff4",
+    "function_file": "functions/180002ff4_CBaseAllocator_CBaseAllocator_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CBaseAllocator@@UEAA@XZ",
+    "prototype": "void __fastcall(CBaseAllocator *__hidden this)",
+    "rank_score": 404,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CAMThread::CAMThread(long *)",
+    "ea": "0x180006f90",
+    "function_file": "functions/180006f90_CAMThread_CAMThread_long.md",
+    "matched_imports": [
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??0CAMThread@@QEAA@PEAJ@Z",
+    "prototype": "CAMThread *__fastcall(CAMThread *__hidden this, int *)",
+    "rank_score": 403,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMPEG2PSISectionBufferSource::GetCopyBuffer(unsigned __int64 *,uchar * *,int *)",
+    "ea": "0x18002f260",
+    "function_file": "functions/18002f260_CMPEG2PSISectionBufferSource_GetCopyBuffer_unsigned_int64_uchar_int.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?GetCopyBuffer@CMPEG2PSISectionBufferSource@@UEAAJPEA_KPEAPEAEPEAH@Z",
+    "prototype": "__int64 __fastcall(CMPEG2PSISectionBufferSource *__hidden this, unsigned __int64 *, unsigned __int8 **, int *)",
+    "rank_score": 403,
+    "size": 163,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CMediaSampleCopyBuffer::SendSample(IMediaSample *)",
+    "ea": "0x18002bd38",
+    "function_file": "functions/18002bd38_CMediaSampleCopyBuffer_SendSample_IMediaSample.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?SendSample@CMediaSampleCopyBuffer@@AEAAJPEAUIMediaSample@@@Z",
+    "prototype": "int(CMediaSampleCopyBuffer *__hidden this, struct IMediaSample *)",
+    "rank_score": 403,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CStreamPull::OnReadError(long)",
+    "ea": "0x18001b3c0",
+    "function_file": "functions/18001b3c0_CStreamPull_OnReadError_long.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?OnReadError@CStreamPull@@UEAAXJ@Z",
+    "prototype": "void __fastcall(CStreamPull *__hidden this, int)",
+    "rank_score": 403,
+    "size": 159,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CBaseAllocator::SetNotify(IMemAllocatorNotifyCallbackTemp *)",
+    "ea": "0x180005e70",
+    "function_file": "functions/180005e70_CBaseAllocator_SetNotify_IMemAllocatorNotifyCallbackTemp.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?SetNotify@CBaseAllocator@@UEAAJPEAUIMemAllocatorNotifyCallbackTemp@@@Z",
+    "prototype": "__int64 __fastcall(CBaseAllocator *__hidden this, struct IMemAllocatorNotifyCallbackTemp *)",
+    "rank_score": 402,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__scrt_uninitialize_thread_safe_statics",
+    "ea": "0x180001620",
+    "function_file": "functions/180001620_scrt_uninitialize_thread_safe_statics.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "__scrt_uninitialize_thread_safe_statics",
+    "prototype": "void __cdecl()",
+    "rank_score": 401,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "Mpeg2DemuxAttributes::CAttributeList::Reset(void)",
+    "ea": "0x180019a60",
+    "function_file": "functions/180019a60_Mpeg2DemuxAttributes_CAttributeList_Reset_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Reset@CAttributeList@Mpeg2DemuxAttributes@@QEAAXXZ",
+    "prototype": "void __fastcall(Mpeg2DemuxAttributes::CAttributeList *__hidden this)",
+    "rank_score": 307,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "CPCRRecordBufferSource::RegisterIPCRValueNotify(CIPCRValueNotify *)",
+    "ea": "0x1800303e8",
+    "function_file": "functions/1800303e8_CPCRRecordBufferSource_RegisterIPCRValueNotify_CIPCRValueNotify.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?RegisterIPCRValueNotify@CPCRRecordBufferSource@@QEAAXPEAVCIPCRValueNotify@@@Z",
+    "prototype": "void __fastcall(CPCRRecordBufferSource *__hidden this, struct CIPCRValueNotify *)",
+    "rank_score": 306,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "CAMThread::Reply(ulong)",
+    "ea": "0x1800071e4",
+    "function_file": "functions/1800071e4_CAMThread_Reply_ulong.md",
+    "matched_imports": [
+      "KERNEL32!ResetEvent",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?Reply@CAMThread@@QEAAXK@Z",
+    "prototype": "void __fastcall(CAMThread *__hidden this, unsigned int)",
+    "rank_score": 302,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AMovieSetupUnregisterServer",
+    "ea": "0x1800029c8",
+    "function_file": "functions/1800029c8_AMovieSetupUnregisterServer.md",
+    "matched_imports": [
+      "ole32!StringFromGUID2"
+    ],
+    "matched_strings": [
+      "CLSID\\%ls"
+    ],
+    "name": "AMovieSetupUnregisterServer",
+    "prototype": "",
+    "rank_score": 275,
+    "size": 130,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 30,
+    "demangled": "FreeMediaType(_AMMediaType &)",
+    "ea": "0x180006b18",
+    "function_file": "functions/180006b18_FreeMediaType_AMMediaType.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?FreeMediaType@@YAXAEAU_AMMediaType@@@Z",
+    "prototype": "void __fastcall(struct _AMMediaType *)",
+    "rank_score": 236,
+    "size": 54,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CDShowMPEG2Demux::GetPages(tagCAUUID *)",
+    "ea": "0x180014d40",
+    "function_file": "functions/180014d40_CDShowMPEG2Demux_GetPages_tagCAUUID.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetPages@CDShowMPEG2Demux@@UEAAJPEAUtagCAUUID@@@Z",
+    "prototype": "__int64 __fastcall(CDShowMPEG2Demux *__hidden this, struct tagCAUUID *)",
+    "rank_score": 232,
+    "size": 167,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "CopyMediaType(_AMMediaType *,_AMMediaType const *)",
+    "ea": "0x180006a0c",
+    "function_file": "functions/180006a0c_CopyMediaType_AMMediaType_AMMediaType_const.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?CopyMediaType@@YAJPEAU_AMMediaType@@PEBU1@@Z",
+    "prototype": "__int64 __fastcall(struct _AMMediaType *, const struct _AMMediaType *)",
+    "rank_score": 223,
+    "size": 135,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CScratchMediaSample::Release(void)",
+    "ea": "0x18002ad70",
+    "function_file": "functions/18002ad70_CScratchMediaSample_Release_void.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?Release@CScratchMediaSample@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CScratchMediaSample *__hidden this)",
+    "rank_score": 222,
+    "size": 68,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 10,
+    "demangled": "DeleteMediaType(_AMMediaType *)",
+    "ea": "0x180006af0",
+    "function_file": "functions/180006af0_DeleteMediaType_AMMediaType.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteMediaType@@YAXPEAU_AMMediaType@@@Z",
+    "prototype": "void __fastcall(struct _AMMediaType *pv)",
+    "rank_score": 222,
+    "size": 33,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RegKey::CreateSubKey(ushort const *,ulong,ushort *,ulong,_SECURITY_ATTRIBUTES *,ulong *)",
+    "ea": "0x18000e2cc",
+    "function_file": "functions/18000e2cc_RegKey_CreateSubKey_ushort_const_ulong_ushort_ulong_SECURITY_ATTRIBUTES_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCreateKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?CreateSubKey@RegKey@@QEBA?AV1@PEBGKPEAGKPEAU_SECURITY_ATTRIBUTES@@PEAK@Z",
+    "prototype": "struct RegKey __high(const unsigned __int16 *, unsigned int, unsigned __int16 *, unsigned int, struct _SECURITY_ATTRIBUTES *, unsigned int *)",
+    "rank_score": 222,
+    "size": 133,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CBaseOutputPin::InitAllocator(IMemAllocator * *)",
+    "ea": "0x180004810",
+    "function_file": "functions/180004810_CBaseOutputPin_InitAllocator_IMemAllocator.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?InitAllocator@CBaseOutputPin@@UEAAJPEAPEAUIMemAllocator@@@Z",
+    "prototype": "int(CBaseOutputPin *__hidden this, struct IMemAllocator **)",
+    "rank_score": 220,
+    "size": 40,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CProgramStreamMapper::ProcessStream_(IMediaSample *,MPEG2_SYS_BUFFER *,CTStickyVal<int> *)",
+    "ea": "0x180032688",
+    "function_file": "functions/180032688_CProgramStreamMapper_ProcessStream_IMediaSample_MPEG2_SYS_BUFFER_CTStickyVal_int.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?ProcessStream_@CProgramStreamMapper@@AEAAHPEAUIMediaSample@@PEAUMPEG2_SYS_BUFFER@@PEAV?$CTStickyVal@H@@@Z",
+    "prototype": "__int64 __fastcall(__int64, struct IMediaSample *, __int64, __int64)",
+    "rank_score": 220,
+    "size": 458,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CMPEG2Parser::Info(long,_AMMediaType * *,ulong *,ulong *,ulong *,ushort * *,IUnknown * *,IUnknown * *)",
+    "ea": "0x1800084a0",
+    "function_file": "functions/1800084a0_CMPEG2Parser_Info_long_AMMediaType_ulong_ulong_ulong_ushort_IUnknown_IUnknown.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?Info@CMPEG2Parser@@UEAAJJPEAPEAU_AMMediaType@@PEAK11PEAPEAGPEAPEAUIUnknown@@3@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Parser *__hidden this, int, struct _AMMediaType **, unsigned int *, unsigned int *, unsigned int *, unsigned __int16 **, struct IUnknown **, struct IUnknown **)",
+    "rank_score": 219,
+    "size": 487,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BufferWriter::CBufferWriter::PendWrite(uchar *,long,IUnknown *)",
+    "ea": "0x1800162f4",
+    "function_file": "functions/1800162f4_BufferWriter_CBufferWriter_PendWrite_uchar_long_IUnknown.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?PendWrite@CBufferWriter@BufferWriter@@QEAAJPEAEJPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(BufferWriter::CBufferWriter *__hidden this, LPCVOID lpBuffer, int, struct IUnknown *)",
+    "rank_score": 218,
+    "size": 275,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "CMpeg2VersionFilteredPSIParse::~CMpeg2VersionFilteredPSIParse(void)",
+    "ea": "0x18001d7f0",
+    "function_file": "functions/18001d7f0_CMpeg2VersionFilteredPSIParse_CMpeg2VersionFilteredPSIParse_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMpeg2VersionFilteredPSIParse@@UEAA@XZ",
+    "prototype": "void __fastcall(CMpeg2VersionFilteredPSIParse *__hidden this)",
+    "rank_score": 218,
+    "size": 149,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CSplitterOutputPin::~CSplitterOutputPin(void)",
+    "ea": "0x18000b934",
+    "function_file": "functions/18000b934_CSplitterOutputPin_CSplitterOutputPin_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CSplitterOutputPin@@UEAA@XZ",
+    "prototype": "void __fastcall(CSplitterOutputPin *__hidden this)",
+    "rank_score": 218,
+    "size": 175,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "CStreamParser::CopyStream(uchar *,int,CTStickyVal<int> *)",
+    "ea": "0x180029040",
+    "function_file": "functions/180029040_CStreamParser_CopyStream_uchar_int_CTStickyVal_int.md",
+    "matched_imports": [
+      "KERNEL32!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "?CopyStream@CStreamParser@@IEAAHPEAEHPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "__int64 __fastcall(_DWORD *, unsigned __int8 *, int, __int64)",
+    "rank_score": 218,
+    "size": 235,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "TSimpleVector<CPCRValue *>::Remove(ulong,CPCRValue * *)",
+    "ea": "0x180017020",
+    "function_file": "functions/180017020_TSimpleVector_CPCRValue_Remove_ulong_CPCRValue.md",
+    "matched_imports": [
+      "KERNEL32!HeapReAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?Remove@?$TSimpleVector@PEAVCPCRValue@@@@QEAAJKPEAPEAVCPCRValue@@@Z",
+    "prototype": "",
+    "rank_score": 218,
+    "size": 142,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CEnumMediaTypes::Next(ulong,_AMMediaType * *,ulong *)",
+    "ea": "0x180004a10",
+    "function_file": "functions/180004a10_CEnumMediaTypes_Next_ulong_AMMediaType_ulong.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?Next@CEnumMediaTypes@@UEAAJKPEAPEAU_AMMediaType@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CEnumMediaTypes *__hidden this, unsigned int, struct _AMMediaType **, unsigned int *)",
+    "rank_score": 217,
+    "size": 383,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "Mpeg2DemuxAttributes::CAttributeList::~CAttributeList(void)",
+    "ea": "0x180017f0c",
+    "function_file": "functions/180017f0c_Mpeg2DemuxAttributes_CAttributeList_CAttributeList_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CAttributeList@Mpeg2DemuxAttributes@@UEAA@XZ",
+    "prototype": "void __fastcall(Mpeg2DemuxAttributes::CAttributeList *__hidden this)",
+    "rank_score": 217,
+    "size": 50,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CMPEG2PSISectionBufferSource::~CMPEG2PSISectionBufferSource(void)",
+    "ea": "0x18002e084",
+    "function_file": "functions/18002e084_CMPEG2PSISectionBufferSource_CMPEG2PSISectionBufferSource_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMPEG2PSISectionBufferSource@@UEAA@XZ",
+    "prototype": "void __fastcall(CMPEG2PSISectionBufferSource *__hidden this)",
+    "rank_score": 216,
+    "size": 185,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CMediaSampleCopyBuffer::~CMediaSampleCopyBuffer(void)",
+    "ea": "0x18002b26c",
+    "function_file": "functions/18002b26c_CMediaSampleCopyBuffer_CMediaSampleCopyBuffer_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMediaSampleCopyBuffer@@UEAA@XZ",
+    "prototype": "void __fastcall(CMediaSampleCopyBuffer *__hidden this)",
+    "rank_score": 216,
+    "size": 218,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CPCRRecordBufferSource::~CPCRRecordBufferSource(void)",
+    "ea": "0x18002e198",
+    "function_file": "functions/18002e198_CPCRRecordBufferSource_CPCRRecordBufferSource_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CPCRRecordBufferSource@@UEAA@XZ",
+    "prototype": "void __fastcall(CPCRRecordBufferSource *__hidden this)",
+    "rank_score": 216,
+    "size": 140,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "AMGetWideString",
+    "ea": "0x180007214",
+    "function_file": "functions/180007214_AMGetWideString.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "AMGetWideString",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 215,
+    "size": 156,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Mpeg2DemuxAttributes::CDemuxIMediaSamplePool::CreateInstance(Mpeg2DemuxAttributes::CDemuxIMediaSamplePool * *)",
+    "ea": "0x18002288c",
+    "function_file": "functions/18002288c_Mpeg2DemuxAttributes_CDemuxIMediaSamplePool_CreateInstance_Mpeg2DemuxAttributes_CDemuxIMediaSamplePool.md",
+    "matched_imports": [
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@CDemuxIMediaSamplePool@Mpeg2DemuxAttributes@@SAJPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(struct Mpeg2DemuxAttributes::CDemuxIMediaSamplePool **)",
+    "rank_score": 215,
+    "size": 211,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CMpeg2DemuxMediaSeekingCore::~CMpeg2DemuxMediaSeekingCore(void)",
+    "ea": "0x180024044",
+    "function_file": "functions/180024044_CMpeg2DemuxMediaSeekingCore_CMpeg2DemuxMediaSeekingCore_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CMpeg2DemuxMediaSeekingCore@@QEAA@XZ",
+    "prototype": "void __fastcall(CMpeg2DemuxMediaSeekingCore *__hidden this)",
+    "rank_score": 213,
+    "size": 56,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Mpeg2DemuxTrace::CeHomeETWDLL::UnloadeHomeETWDll(void)",
+    "ea": "0x180012a58",
+    "function_file": "functions/180012a58_Mpeg2DemuxTrace_CeHomeETWDLL_UnloadeHomeETWDll_void.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary"
+    ],
+    "matched_strings": [],
+    "name": "?UnloadeHomeETWDll@CeHomeETWDLL@Mpeg2DemuxTrace@@AEAAXXZ",
+    "prototype": "void __fastcall(Mpeg2DemuxTrace::CeHomeETWDLL *__hidden this)",
+    "rank_score": 213,
+    "size": 109,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RegKey::Open(HKEY__ *,ushort const *,ulong)",
+    "ea": "0x18000e358",
+    "function_file": "functions/18000e358_RegKey_Open_HKEY_ushort_const_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?Open@RegKey@@IEAAXPEAUHKEY__@@PEBGK@Z",
+    "prototype": "void(RegKey *__hidden this, HKEY, const unsigned __int16 *, unsigned int)",
+    "rank_score": 213,
+    "size": 57,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_DllEntryPoint",
+    "ea": "0x1800022f0",
+    "function_file": "functions/1800022f0_DllEntryPoint.md",
+    "matched_imports": [
+      "KERNEL32!DisableThreadLibraryCalls"
+    ],
+    "matched_strings": [],
+    "name": "_DllEntryPoint",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 56,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2VersionFilteredPSIParse::CVersionMap::`scalar deleting destructor'(uint)",
+    "ea": "0x18001d9e0",
+    "function_file": "functions/18001d9e0_CMpeg2VersionFilteredPSIParse_CVersionMap_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??_GCVersionMap@CMpeg2VersionFilteredPSIParse@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CMpeg2VersionFilteredPSIParse::CVersionMap *__hidden this, unsigned int)",
+    "rank_score": 212,
+    "size": 119,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "StreamPIDMap<unsigned __int64,10>::`vector deleting destructor'(uint)",
+    "ea": "0x18002e5a0",
+    "function_file": "functions/18002e5a0_StreamPIDMap_unsigned_int64_10_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??_E?$StreamPIDMap@_K$09@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 212,
+    "size": 119,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "TGenericMap<unsigned __int64,ulong,0,5,19>::`vector deleting destructor'(uint)",
+    "ea": "0x18002e520",
+    "function_file": "functions/18002e520_TGenericMap_unsigned_int64_ulong_0_5_19_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??_E?$TGenericMap@_KK$0A@$04$0BD@@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 212,
+    "size": 119,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "CMPEG2Demultiplexer::FindPinRecordLocked_(ushort const *,DEMUX_PIN_RECORD * *,ulong *)",
+    "ea": "0x180014998",
+    "function_file": "functions/180014998_CMPEG2Demultiplexer_FindPinRecordLocked_ushort_const_DEMUX_PIN_RECORD_ulong.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?FindPinRecordLocked_@CMPEG2Demultiplexer@@AEAAJPEBGPEAPEAUDEMUX_PIN_RECORD@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Demultiplexer *__hidden this, const unsigned __int16 *, struct DEMUX_PIN_RECORD **, unsigned int *)",
+    "rank_score": 210,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "CMPEG2Demultiplexer::CreateOutputPin_(ushort const *,_AMMediaType *,DEMUX_PIN_RECORD * *)",
+    "ea": "0x180013f9c",
+    "function_file": "functions/180013f9c_CMPEG2Demultiplexer_CreateOutputPin_ushort_const_AMMediaType_DEMUX_PIN_RECORD.md",
+    "matched_imports": [
+      "KERNEL32!MulDiv"
+    ],
+    "matched_strings": [],
+    "name": "?CreateOutputPin_@CMPEG2Demultiplexer@@AEAAJPEBGPEAU_AMMediaType@@PEAPEAUDEMUX_PIN_RECORD@@@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Demultiplexer *__hidden this, const unsigned __int16 *, struct _AMMediaType *, struct DEMUX_PIN_RECORD **)",
+    "rank_score": 209,
+    "size": 282,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "COutputQueue::NotifyThread(void)",
+    "ea": "0x180033630",
+    "function_file": "functions/180033630_COutputQueue_NotifyThread_void.md",
+    "matched_imports": [
+      "KERNEL32!ReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "?NotifyThread@COutputQueue@@IEAAXXZ",
+    "prototype": "void __fastcall(COutputQueue *__hidden this)",
+    "rank_score": 207,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CMMPullPin::ThreadProc(void)",
+    "ea": "0x18000ee80",
+    "function_file": "functions/18000ee80_CMMPullPin_ThreadProc_void.md",
+    "matched_imports": [
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?ThreadProc@CMMPullPin@@MEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMMPullPin *__hidden this)",
+    "rank_score": 205,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CMp2PullPin::ThreadProc(void)",
+    "ea": "0x18001bdf0",
+    "function_file": "functions/18001bdf0_CMp2PullPin_ThreadProc_void.md",
+    "matched_imports": [
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?ThreadProc@CMp2PullPin@@MEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMp2PullPin *__hidden this)",
+    "rank_score": 205,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CMpeg2Stats::OnJoinLeaveGraph(IFilterGraph *)",
+    "ea": "0x180016090",
+    "function_file": "functions/180016090_CMpeg2Stats_OnJoinLeaveGraph_IFilterGraph.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?OnJoinLeaveGraph@CMpeg2Stats@@QEAAXPEAUIFilterGraph@@@Z",
+    "prototype": "void __fastcall(CMpeg2Stats *__hidden this, struct IFilterGraph *)",
+    "rank_score": 205,
+    "size": 228,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BufferWriter::CBufferWriter::~CBufferWriter(void)",
+    "ea": "0x180013124",
+    "function_file": "functions/180013124_BufferWriter_CBufferWriter_CBufferWriter_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "??1CBufferWriter@BufferWriter@@MEAA@XZ",
+    "prototype": "void __fastcall(BufferWriter::CBufferWriter *__hidden this)",
+    "rank_score": 203,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CAMEvent::CAMEvent(int,long *)",
+    "ea": "0x180006f44",
+    "function_file": "functions/180006f44_CAMEvent_CAMEvent_int_long.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW"
+    ],
+    "matched_strings": [],
+    "name": "??0CAMEvent@@QEAA@HPEAJ@Z",
+    "prototype": "CAMEvent *__fastcall(CAMEvent *__hidden this, int, int *)",
+    "rank_score": 203,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CAMThread::InitialThreadProc(void *)",
+    "ea": "0x1800071a0",
+    "function_file": "functions/1800071a0_CAMThread_InitialThreadProc_void.md",
+    "matched_imports": [
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [],
+    "name": "?InitialThreadProc@CAMThread@@SAKPEAX@Z",
+    "prototype": "DWORD __stdcall(LPVOID lpThreadParameter)",
+    "rank_score": 203,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "COutputQueue::InitialThreadProc(void *)",
+    "ea": "0x180033510",
+    "function_file": "functions/180033510_COutputQueue_InitialThreadProc_void.md",
+    "matched_imports": [
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [],
+    "name": "?InitialThreadProc@COutputQueue@@KAKPEAX@Z",
+    "prototype": "DWORD __stdcall(LPVOID lpThreadParameter)",
+    "rank_score": 203,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 32,
+    "demangled": "memcpy_0",
+    "ea": "0x180033dfd",
+    "function_file": "functions/180033dfd_memcpy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 52,
+    "demangled": "memset_0",
+    "ea": "0x180001e98",
+    "function_file": "functions/180001e98_memset_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__stdio_common_vsnwprintf_s",
+    "ea": "0x180001dda",
+    "function_file": "functions/180001dda_stdio_common_vsnwprintf_s.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vsnwprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "__stdio_common_vsnwprintf_s",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, size_t MaxCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__stdio_common_vswprintf_s",
+    "ea": "0x180001de6",
+    "function_file": "functions/180001de6_stdio_common_vswprintf_s.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "__stdio_common_vswprintf_s",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__configure_narrow_argv_0",
+    "ea": "0x180001e0a",
+    "function_file": "functions/180001e0a_o_configure_narrow_argv_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_o__configure_narrow_argv_0",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__seh_filter_dll_0",
+    "ea": "0x180001e68",
+    "function_file": "functions/180001e68_o_seh_filter_dll_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_o__seh_filter_dll_0",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DEMUX_PIN_RECORD::Compare(void const *,void const *)",
+    "ea": "0x180013750",
+    "function_file": "functions/180013750_DEMUX_PIN_RECORD_Compare_void_const_void_const.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?Compare@DEMUX_PIN_RECORD@@SAHPEBX0@Z",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 110,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "memcmp_0",
+    "ea": "0x180033df1",
+    "function_file": "functions/180033df1_memcmp_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memcmp"
+    ],
+    "matched_strings": [],
+    "name": "memcmp_0",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 110,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memmove_0",
+    "ea": "0x180033e09",
+    "function_file": "functions/180033e09_memmove_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 58,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180001460",
+    "function_file": "functions/180001460_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 479,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180034010",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 202,
+    "demangled": "operator delete(void *,unsigned __int64)",
+    "ea": "0x180001048",
+    "function_file": "functions/180001048_operator_delete_void_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX_K@Z",
+    "prototype": "void __fastcall(void *, unsigned __int64)",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "AC3ParserFilter::CreateInstance(IUnknown *,long *)",
+    "ea": "0x18000a5d0",
+    "function_file": "functions/18000a5d0_AC3ParserFilter_CreateInstance_IUnknown_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@AC3ParserFilter@@SAPEAVCUnknown@@PEAUIUnknown@@PEAJ@Z",
+    "prototype": "struct CUnknown *__fastcall(struct IUnknown *, int *)",
+    "rank_score": 35,
+    "size": 162,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMPEG2SplitterFilter::CreateInstance(IUnknown *,long *)",
+    "ea": "0x180007cc0",
+    "function_file": "functions/180007cc0_CMPEG2SplitterFilter_CreateInstance_IUnknown_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CMPEG2SplitterFilter@@SAPEAVCUnknown@@PEAUIUnknown@@PEAJ@Z",
+    "prototype": "struct CUnknown *__fastcall(struct IUnknown *, int *)",
+    "rank_score": 35,
+    "size": 171,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DllGetClassObject",
+    "ea": "0x180002200",
+    "function_file": "functions/180002200_DllGetClassObject.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 35,
+    "size": 231,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001410",
+    "function_file": "functions/180001410_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 33,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "CMpeg2PBDAPSISectionParser::ProcessSysBuffer(IMediaSample *,MPEG2_SYS_BUFFER *,int,int,int,int,int,CTStickyVal<int> *)",
+    "ea": "0x18002d710",
+    "function_file": "functions/18002d710_CMpeg2PBDAPSISectionParser_ProcessSysBuffer_IMediaSample_MPEG2_SYS_BUFFER_int_int_int_int_int_CTStickyVal_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessSysBuffer@CMpeg2PBDAPSISectionParser@@UEAAJPEAUIMediaSample@@PEAUMPEG2_SYS_BUFFER@@HHHHHPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "__int64 __usercall@<rax>(CCopyFrameParser *this@<rcx>, int, int, int, int, __int64)",
+    "rank_score": 32,
+    "size": 449,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CMpeg2StatsCOM::NonDelegatingQueryInterface(_GUID const &,void * *)",
+    "ea": "0x180012520",
+    "function_file": "functions/180012520_CMpeg2StatsCOM_NonDelegatingQueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?NonDelegatingQueryInterface@CMpeg2StatsCOM@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CMpeg2StatsCOM *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 30,
+    "size": 536,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CTSContentManager::ClearConfig_(void)",
+    "ea": "0x18002ecc0",
+    "function_file": "functions/18002ecc0_CTSContentManager_ClearConfig_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ClearConfig_@CTSContentManager@@MEAAXXZ",
+    "prototype": "void __fastcall(CTSContentManager *__hidden this)",
+    "rank_score": 30,
+    "size": 212,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 25,
+    "demangled": "CMpeg2Stats::~CMpeg2Stats(void)",
+    "ea": "0x180010ea8",
+    "function_file": "functions/180010ea8_CMpeg2Stats_CMpeg2Stats_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CMpeg2Stats@@QEAA@XZ",
+    "prototype": "void __fastcall(CMpeg2Stats *__hidden this)",
+    "rank_score": 29,
+    "size": 94,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch",
+    "ea": "0x1800012d4",
+    "function_file": "functions/1800012d4_dllmain_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_dispatch",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 28,
+    "size": 295,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 81,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001008",
+    "function_file": "functions/180001008_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 28,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_after_initialize_c",
+    "ea": "0x1800016dc",
+    "function_file": "functions/1800016dc_scrt_dllmain_after_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_after_initialize_c",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach",
+    "ea": "0x180001148",
+    "function_file": "functions/180001148_dllmain_crt_process_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_attach",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 250,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CMPEG2Parser::Init(CParseReader *)",
+    "ea": "0x180008750",
+    "function_file": "functions/180008750_CMPEG2Parser_Init_CParseReader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@CMPEG2Parser@@UEAAJPEAVCParseReader@@@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Parser *__hidden this, struct CParseReader *)",
+    "rank_score": 26,
+    "size": 1121,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CTSContentManager::ReplaceSection_(SECTION_BUFFER *,SECTION_BUFFER *)",
+    "ea": "0x1800306f8",
+    "function_file": "functions/1800306f8_CTSContentManager_ReplaceSection_SECTION_BUFFER_SECTION_BUFFER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReplaceSection_@CTSContentManager@@AEAAJPEAUSECTION_BUFFER@@0@Z",
+    "prototype": "__int64 __fastcall(CTSContentManager *__hidden this, struct SECTION_BUFFER *, struct SECTION_BUFFER *)",
+    "rank_score": 26,
+    "size": 658,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch",
+    "ea": "0x1800010f0",
+    "function_file": "functions/1800010f0_dllmain_crt_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_dispatch",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CMpeg2PSIParse::ProcessBuffer_(uchar * *,int *,CTStickyVal<int> *)",
+    "ea": "0x180029b4c",
+    "function_file": "functions/180029b4c_CMpeg2PSIParse_ProcessBuffer_uchar_int_CTStickyVal_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessBuffer_@CMpeg2PSIParse@@AEAAHPEAPEAEPEAHPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "__int64 __fastcall(CCopyFrameParser *this)",
+    "rank_score": 25,
+    "size": 1033,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "AC3ParserFilter::Parser::Init(CParseReader *)",
+    "ea": "0x18000a870",
+    "function_file": "functions/18000a870_AC3ParserFilter_Parser_Init_CParseReader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@Parser@AC3ParserFilter@@UEAAJPEAVCParseReader@@@Z",
+    "prototype": "int(AC3ParserFilter::Parser *__hidden this, struct CParseReader *)",
+    "rank_score": 24,
+    "size": 466,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 8,
+    "demangled": "CCopyFrameParser::~CCopyFrameParser(void)",
+    "ea": "0x18002858c",
+    "function_file": "functions/18002858c_CCopyFrameParser_CCopyFrameParser_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CCopyFrameParser@@UEAA@XZ",
+    "prototype": "void __fastcall(CCopyFrameParser *__hidden this)",
+    "rank_score": 24,
+    "size": 173,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMPEG2Demultiplexer::CreateInstance(IUnknown *,long *)",
+    "ea": "0x180013ea0",
+    "function_file": "functions/180013ea0_CMPEG2Demultiplexer_CreateInstance_IUnknown_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CMPEG2Demultiplexer@@SAPEAVCUnknown@@PEAUIUnknown@@PEAJ@Z",
+    "prototype": "struct CUnknown *__fastcall(struct IUnknown *, int *)",
+    "rank_score": 24,
+    "size": 115,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMPEG2Demultiplexer::CreateInstance_NoClock(IUnknown *,long *)",
+    "ea": "0x180013f20",
+    "function_file": "functions/180013f20_CMPEG2Demultiplexer_CreateInstance_NoClock_IUnknown_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance_NoClock@CMPEG2Demultiplexer@@SAPEAVCUnknown@@PEAUIUnknown@@PEAJ@Z",
+    "prototype": "struct CUnknown *__fastcall(struct IUnknown *, int *)",
+    "rank_score": 24,
+    "size": 115,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CMpeg2TransportStatsCOM::`vector deleting destructor'(uint)",
+    "ea": "0x18001159c",
+    "function_file": "functions/18001159c_CMpeg2TransportStatsCOM_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_ECMpeg2TransportStatsCOM@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CMpeg2TransportStatsCOM *__hidden this, unsigned int)",
+    "rank_score": 24,
+    "size": 66,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CTSProgram::ReplaceSection_(SECTION_BUFFER *,SECTION_BUFFER *)",
+    "ea": "0x180030990",
+    "function_file": "functions/180030990_CTSProgram_ReplaceSection_SECTION_BUFFER_SECTION_BUFFER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReplaceSection_@CTSProgram@@AEAAJPEAUSECTION_BUFFER@@0@Z",
+    "prototype": "__int64 __fastcall(CTSProgram *__hidden this, struct SECTION_BUFFER *, struct SECTION_BUFFER *)",
+    "rank_score": 24,
+    "size": 646,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180033d18",
+    "function_file": "functions/180033d18_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BufferWriter::CBufferWriter::IOCompleted(unsigned __int64,ulong,_OVERLAPPED *)",
+    "ea": "0x180015130",
+    "function_file": "functions/180015130_BufferWriter_CBufferWriter_IOCompleted_unsigned_int64_ulong_OVERLAPPED.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IOCompleted@CBufferWriter@BufferWriter@@MEAAX_KKPEAU_OVERLAPPED@@@Z",
+    "prototype": "void __fastcall(BufferWriter::CBufferWriter *__hidden this, unsigned __int64, unsigned int, struct _OVERLAPPED *)",
+    "rank_score": 23,
+    "size": 90,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "CBufferSourceManager::Complete(CTStickyVal<int> *)",
+    "ea": "0x180028dc4",
+    "function_file": "functions/180028dc4_CBufferSourceManager_Complete_CTStickyVal_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Complete@CBufferSourceManager@@IEAAJPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 23,
+    "size": 75,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMpeg2StatsCOM::`vector deleting destructor'(uint)",
+    "ea": "0x180011640",
+    "function_file": "functions/180011640_CMpeg2StatsCOM_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_ECMpeg2StatsCOM@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CMpeg2StatsCOM *__hidden this, unsigned int)",
+    "rank_score": 23,
+    "size": 52,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CMPEG2Demultiplexer::GetClassID(_GUID *)",
+    "ea": "0x180014b90",
+    "function_file": "functions/180014b90_CMPEG2Demultiplexer_GetClassID_GUID.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetClassID@CMPEG2Demultiplexer@@UEAAJPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Demultiplexer *__hidden this, struct _GUID *)",
+    "rank_score": 22,
+    "size": 25,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CMPEG2DemuxInputPin::CompleteConnect(IPin *)",
+    "ea": "0x18001ac30",
+    "function_file": "functions/18001ac30_CMPEG2DemuxInputPin_CompleteConnect_IPin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteConnect@CMPEG2DemuxInputPin@@UEAAJPEAUIPin@@@Z",
+    "prototype": "int(CMPEG2DemuxInputPin *__hidden this, struct IPin *)",
+    "rank_score": 22,
+    "size": 604,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CMpeg2SCRParser::ProcessSysBuffer(IMediaSample *,MPEG2_SYS_BUFFER *,int,int,int,int,int,CTStickyVal<int> *)",
+    "ea": "0x18002a9a0",
+    "function_file": "functions/18002a9a0_CMpeg2SCRParser_ProcessSysBuffer_IMediaSample_MPEG2_SYS_BUFFER_int_int_int_int_int_CTStickyVal_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessSysBuffer@CMpeg2SCRParser@@UEAAJPEAUIMediaSample@@PEAUMPEG2_SYS_BUFFER@@HHHHHPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "__int64 __usercall@<rax>(CCopyFrameParser *this@<rcx>, int, int, int, int, __int64)",
+    "rank_score": 22,
+    "size": 812,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Mpeg2DemuxAttributes::TCDynamicProdCons<Mpeg2DemuxAttributes::CAttribute>::DeleteObj_(Mpeg2DemuxAttributes::CAttribute *)",
+    "ea": "0x180018660",
+    "function_file": "functions/180018660_Mpeg2DemuxAttributes_TCDynamicProdCons_Mpeg2DemuxAttributes_CAttribute_DeleteObj_Mpeg2DemuxAttributes_CAttribu.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteObj_@?$TCDynamicProdCons@VCAttribute@Mpeg2DemuxAttributes@@@Mpeg2DemuxAttributes@@MEAAXPEAVCAttribute@2@@Z",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 49,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "RawParser::Init(CParseReader *)",
+    "ea": "0x18000f010",
+    "function_file": "functions/18000f010_RawParser_Init_CParseReader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@RawParser@@UEAAJPEAVCParseReader@@@Z",
+    "prototype": "int(RawParser *__hidden this, struct CParseReader *)",
+    "rank_score": 22,
+    "size": 413,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "llMulDiv(__int64,__int64,__int64,__int64)",
+    "ea": "0x180032da4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?llMulDiv@@YA_J_J000@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 22,
+    "size": 530,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CMediaSampleCopyBuffer::WrapAndAttributeSample(Mpeg2DemuxAttributes::CAttributeList *,IMediaSample *,IMediaSample * *)",
+    "ea": "0x18002bf7c",
+    "function_file": "functions/18002bf7c_CMediaSampleCopyBuffer_WrapAndAttributeSample_Mpeg2DemuxAttributes_CAttributeList_IMediaSample_IMediaSample.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WrapAndAttributeSample@CMediaSampleCopyBuffer@@AEAAJPEAVCAttributeList@Mpeg2DemuxAttributes@@PEAUIMediaSample@@PEAPEAU4@@Z",
+    "prototype": "int(CMediaSampleCopyBuffer *__hidden this, struct Mpeg2DemuxAttributes::CAttributeList *, struct IMediaSample *, struct IMediaSample **)",
+    "rank_score": 21,
+    "size": 488,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_detach",
+    "ea": "0x180001248",
+    "function_file": "functions/180001248_dllmain_crt_process_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_detach",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 131,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "CBaseList::RemoveI(__POSITION *)",
+    "ea": "0x180006860",
+    "function_file": "functions/180006860_CBaseList_RemoveI_POSITION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveI@CBaseList@@IEAAPEAXPEAU__POSITION@@@Z",
+    "prototype": "void *(CBaseList *__hidden this, struct __POSITION *)",
+    "rank_score": 20,
+    "size": 126,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "operator new[](unsigned __int64)",
+    "ea": "0x180001054",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_U@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(unsigned __int64)",
+    "rank_score": 20,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CMpeg2MacroVisionParser::ProcessSysBuffer(IMediaSample *,MPEG2_SYS_BUFFER *,int,int,int,int,int,CTStickyVal<int> *)",
+    "ea": "0x18002a2f0",
+    "function_file": "functions/18002a2f0_CMpeg2MacroVisionParser_ProcessSysBuffer_IMediaSample_MPEG2_SYS_BUFFER_int_int_int_int_int_CTStickyVal_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessSysBuffer@CMpeg2MacroVisionParser@@UEAAJPEAUIMediaSample@@PEAUMPEG2_SYS_BUFFER@@HHHHHPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "__int64 __usercall@<rax>(CCopyFrameParser *this@<rcx>, int, int, int, int, __int64)",
+    "rank_score": 19,
+    "size": 392,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CMPEG2Parser::CalcDuration(CParseReader *)",
+    "ea": "0x1800076c0",
+    "function_file": "functions/1800076c0_CMPEG2Parser_CalcDuration_CParseReader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CalcDuration@CMPEG2Parser@@AEAAXPEAVCParseReader@@@Z",
+    "prototype": "void __fastcall(CMPEG2Parser *__hidden this, struct CParseReader *)",
+    "rank_score": 18,
+    "size": 289,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CMpeg2PCRParser::ProcessSysBuffer(IMediaSample *,MPEG2_SYS_BUFFER *,int,int,int,int,int,CTStickyVal<int> *)",
+    "ea": "0x18002a480",
+    "function_file": "functions/18002a480_CMpeg2PCRParser_ProcessSysBuffer_IMediaSample_MPEG2_SYS_BUFFER_int_int_int_int_int_CTStickyVal_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessSysBuffer@CMpeg2PCRParser@@UEAAJPEAUIMediaSample@@PEAUMPEG2_SYS_BUFFER@@HHHHHPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "__int64 __usercall@<rax>(CCopyFrameParser *this@<rcx>, int, int, int, int, __int64)",
+    "rank_score": 18,
+    "size": 329,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "CSpltBaseParser::NewInitBuffer(uchar * *,uint,CParseReader *)",
+    "ea": "0x18000d148",
+    "function_file": "functions/18000d148_CSpltBaseParser_NewInitBuffer_uchar_uint_CParseReader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?NewInitBuffer@CSpltBaseParser@@IEAAIPEAPEAEIPEAVCParseReader@@@Z",
+    "prototype": "unsigned int __fastcall(CSpltBaseParser *__hidden this, unsigned __int8 **, unsigned int, struct CParseReader *)",
+    "rank_score": 18,
+    "size": 254,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CBufferSourceManager::CompleteCopyBuffer_(CTStickyVal<int> *)",
+    "ea": "0x180028e18",
+    "function_file": "functions/180028e18_CBufferSourceManager_CompleteCopyBuffer_CTStickyVal_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteCopyBuffer_@CBufferSourceManager@@AEAAJPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 390,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CMPEG2Demultiplexer::DeleteAllOutputPins_(void)",
+    "ea": "0x180014564",
+    "function_file": "functions/180014564_CMPEG2Demultiplexer_DeleteAllOutputPins_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteAllOutputPins_@CMPEG2Demultiplexer@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CMPEG2Demultiplexer *__hidden this)",
+    "rank_score": 17,
+    "size": 158,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMPEG2SplitterFilter::CompleteConnect(IPin *)",
+    "ea": "0x180007870",
+    "function_file": "functions/180007870_CMPEG2SplitterFilter_CompleteConnect_IPin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteConnect@CMPEG2SplitterFilter@@UEAAJPEAUIPin@@@Z",
+    "prototype": "__int64 __fastcall(CMPEG2SplitterFilter *__hidden this, struct IPin *)",
+    "rank_score": 17,
+    "size": 559,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMediaSampleCopyBuffer::CompleteCopyBuffer(unsigned __int64,uchar *,int,int,__int64 *,__int64 *,CTStickyVal<int> *,Mpeg2DemuxAttributes::CAttributeList *)",
+    "ea": "0x18002b570",
+    "function_file": "functions/18002b570_CMediaSampleCopyBuffer_CompleteCopyBuffer_unsigned_int64_uchar_int_int_int64_int64_CTStickyVal_int_Mpeg2DemuxA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteCopyBuffer@CMediaSampleCopyBuffer@@UEAAJ_KPEAEHHPEA_J2PEAV?$CTStickyVal@H@@PEAVCAttributeList@Mpeg2DemuxAttributes@@@Z",
+    "prototype": "__int64 __usercall@<rax>(CMediaSampleCopyBuffer *this@<rcx>, struct IMediaSample *@<rdx>, int, __int64, __int64, int, struct Mpeg2DemuxAttributes::CAttributeList *)",
+    "rank_score": 16,
+    "size": 278,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CMpeg2DemuxMediaSeekingCore::SetFileStopPosition(__int64 *)",
+    "ea": "0x180024b28",
+    "function_file": "functions/180024b28_CMpeg2DemuxMediaSeekingCore_SetFileStopPosition_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetFileStopPosition@CMpeg2DemuxMediaSeekingCore@@QEAAJPEA_J@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCore *__hidden this, __int64 *)",
+    "rank_score": 16,
+    "size": 288,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_c",
+    "ea": "0x1800017c4",
+    "function_file": "functions/1800017c4_scrt_dllmain_uninitialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_c",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 48,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__scrt_is_ucrt_dll_in_use",
+    "ea": "0x180001d9c",
+    "function_file": "functions/180001d9c_scrt_is_ucrt_dll_in_use.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_is_ucrt_dll_in_use",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CBaseSplitterFilter::CompleteConnect(IPin *)",
+    "ea": "0x18000c2e0",
+    "function_file": "functions/18000c2e0_CBaseSplitterFilter_CompleteConnect_IPin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteConnect@CBaseSplitterFilter@@UEAAJPEAUIPin@@@Z",
+    "prototype": "__int64 __fastcall(CBaseSplitterFilter *__hidden this, struct IPin *)",
+    "rank_score": 15,
+    "size": 382,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "CBufferSourceManager::AbortBuffer(void)",
+    "ea": "0x180028a7c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AbortBuffer@CBufferSourceManager@@IEAAXXZ",
+    "prototype": "void __fastcall(CBufferSourceManager *__hidden this)",
+    "rank_score": 15,
+    "size": 147,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CBufferSourceManager::WrapAndCompleteEmptySample(Mpeg2DemuxAttributes::CAttributeList *)",
+    "ea": "0x18002ae14",
+    "function_file": "functions/18002ae14_CBufferSourceManager_WrapAndCompleteEmptySample_Mpeg2DemuxAttributes_CAttributeList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WrapAndCompleteEmptySample@CBufferSourceManager@@IEAAJPEAVCAttributeList@Mpeg2DemuxAttributes@@@Z",
+    "prototype": "__int64 __fastcall(CBufferSourceManager *__hidden this, struct Mpeg2DemuxAttributes::CAttributeList *)",
+    "rank_score": 15,
+    "size": 212,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CDShowMPEG2Demux::CreateOutputPin(_AMMediaType *,ushort *,IPin * *)",
+    "ea": "0x18001be80",
+    "function_file": "functions/18001be80_CDShowMPEG2Demux_CreateOutputPin_AMMediaType_ushort_IPin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateOutputPin@CDShowMPEG2Demux@@UEAAJPEAU_AMMediaType@@PEAGPEAPEAUIPin@@@Z",
+    "prototype": "int(CDShowMPEG2Demux *__hidden this, struct _AMMediaType *, unsigned __int16 *, struct IPin **)",
+    "rank_score": 15,
+    "size": 236,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMPEG2PSISectionBufferSource::CompleteCopyBuffer(unsigned __int64,uchar *,int,int,CTStickyVal<int> *,Mpeg2DemuxAttributes::CAttributeList *)",
+    "ea": "0x18002ee20",
+    "function_file": "functions/18002ee20_CMPEG2PSISectionBufferSource_CompleteCopyBuffer_unsigned_int64_uchar_int_int_CTStickyVal_int_Mpeg2DemuxAttribu.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteCopyBuffer@CMPEG2PSISectionBufferSource@@UEAAJ_KPEAEHHPEAV?$CTStickyVal@H@@PEAVCAttributeList@Mpeg2DemuxAttributes@@@Z",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CPSContentManager::ClearConfig_(void)",
+    "ea": "0x18002ec60",
+    "function_file": "functions/18002ec60_CPSContentManager_ClearConfig_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ClearConfig_@CPSContentManager@@MEAAXXZ",
+    "prototype": "void __fastcall(CPSContentManager *__hidden this)",
+    "rank_score": 15,
+    "size": 81,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_exception_filter",
+    "ea": "0x180001774",
+    "function_file": "functions/180001774_scrt_dllmain_exception_filter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_exception_filter",
+    "prototype": "__int64 __fastcall(int, int, int, int, unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 72,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CBaseList::RemoveAll(void)",
+    "ea": "0x18000681c",
+    "function_file": "functions/18000681c_CBaseList_RemoveAll_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RemoveAll@CBaseList@@QEAAXXZ",
+    "prototype": "void __fastcall(CBaseList *__hidden this)",
+    "rank_score": 14,
+    "size": 61,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CCopyFrameParser::`scalar deleting destructor'(uint)",
+    "ea": "0x180028830",
+    "function_file": "functions/180028830_CCopyFrameParser_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCCopyFrameParser@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CCopyFrameParser *__hidden this, unsigned int)",
+    "rank_score": 14,
+    "size": 52,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CMpeg2PESStreamParser::ParseCommonPESHeader_(uchar *)",
+    "ea": "0x180029530",
+    "function_file": "functions/180029530_CMpeg2PESStreamParser_ParseCommonPESHeader_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ParseCommonPESHeader_@CMpeg2PESStreamParser@@AEAAHPEAE@Z",
+    "prototype": "__int64 __fastcall(CMpeg2PESStreamParser *__hidden this, unsigned __int8 *)",
+    "rank_score": 14,
+    "size": 174,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CMpeg2StatsCOM::~CMpeg2StatsCOM(void)",
+    "ea": "0x180010f0c",
+    "function_file": "functions/180010f0c_CMpeg2StatsCOM_CMpeg2StatsCOM_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CMpeg2StatsCOM@@UEAA@XZ",
+    "prototype": "void __fastcall(CMpeg2StatsCOM *__hidden this)",
+    "rank_score": 14,
+    "size": 109,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CTClockSubordinate<__int64,__int64>::ComputeNewScalingVal_(void)",
+    "ea": "0x180025da4",
+    "function_file": "functions/180025da4_CTClockSubordinate_int64_int64_ComputeNewScalingVal_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ComputeNewScalingVal_@?$CTClockSubordinate@_J_J@@AEAAXXZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 300,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BufferWriter::CAsyncIO::`vector deleting destructor'(uint)",
+    "ea": "0x1800134c0",
+    "function_file": "functions/1800134c0_BufferWriter_CAsyncIO_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_ECAsyncIO@BufferWriter@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(BufferWriter::CAsyncIO *__hidden this, unsigned int)",
+    "rank_score": 13,
+    "size": 52,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "BufferWriter::CBufferWriter::`scalar deleting destructor'(uint)",
+    "ea": "0x180013500",
+    "function_file": "functions/180013500_BufferWriter_CBufferWriter_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCBufferWriter@BufferWriter@@MEAAPEAXI@Z",
+    "prototype": "void *__fastcall(BufferWriter::CBufferWriter *__hidden this, unsigned int)",
+    "rank_score": 13,
+    "size": 52,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CIAsyncReader<65539>::`vector deleting destructor'(uint)",
+    "ea": "0x18001d980",
+    "function_file": "functions/18001d980_CIAsyncReader_65539_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CIAsyncReader@$0BAAAD@@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 13,
+    "size": 76,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "CMPEG2Controller::MapStreamInternal(ulong,CBufferSource *,ulong,void *,unsigned __int64 *)",
+    "ea": "0x180020f30",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MapStreamInternal@CMPEG2Controller@@QEAAJKPEAVCBufferSource@@KPEAXPEA_K@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Controller *__hidden this, unsigned int, struct CBufferSource *, unsigned int, void *, unsigned __int64 *)",
+    "rank_score": 13,
+    "size": 303,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMediaSampleCopyBuffer::`vector deleting destructor'(uint)",
+    "ea": "0x18002b470",
+    "function_file": "functions/18002b470_CMediaSampleCopyBuffer_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_ECMediaSampleCopyBuffer@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CMediaSampleCopyBuffer *__hidden this, unsigned int)",
+    "rank_score": 13,
+    "size": 52,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::CheckCapabilities(ulong *)",
+    "ea": "0x1800240b0",
+    "function_file": "functions/1800240b0_CMpeg2DemuxMediaSeekingCOM_CheckCapabilities_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CheckCapabilities@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEAK@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, unsigned int *)",
+    "rank_score": 13,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::IsFormatSupported(_GUID const *)",
+    "ea": "0x180024730",
+    "function_file": "functions/180024730_CMpeg2DemuxMediaSeekingCOM_IsFormatSupported_GUID_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsFormatSupported@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEBU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, const struct _GUID *)",
+    "rank_score": 13,
+    "size": 204,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2PESStreamParser::CheckCompletePacket(IMediaSample *,uchar * *,int *,int *,int *,__int64 *,__int64 *)",
+    "ea": "0x180028c60",
+    "function_file": "functions/180028c60_CMpeg2PESStreamParser_CheckCompletePacket_IMediaSample_uchar_int_int_int_int64_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CheckCompletePacket@CMpeg2PESStreamParser@@EEAAHPEAUIMediaSample@@PEAPEAEPEAH22PEA_J3@Z",
+    "prototype": "__int64 __fastcall(CMpeg2PESStreamParser *__hidden this, struct IMediaSample *, unsigned __int8 **, int *, int *, int *, __int64 *, __int64 *)",
+    "rank_score": 13,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2StatsCOM::CreateInstance(IUnknown *,long *)",
+    "ea": "0x180011730",
+    "function_file": "functions/180011730_CMpeg2StatsCOM_CreateInstance_IUnknown_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CMpeg2StatsCOM@@SAPEAVCUnknown@@PEAUIUnknown@@PEAJ@Z",
+    "prototype": "struct CUnknown *__fastcall(struct IUnknown *, int *)",
+    "rank_score": 13,
+    "size": 186,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DllInitClasses(int)",
+    "ea": "0x1800020ac",
+    "function_file": "functions/1800020ac_DllInitClasses_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DllInitClasses@@YAXH@Z",
+    "prototype": "void __fastcall(int)",
+    "rank_score": 13,
+    "size": 77,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_attach",
+    "ea": "0x180001728",
+    "function_file": "functions/180001728_scrt_dllmain_crt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_attach",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 8,
+    "demangled": "CMPEG2Controller::UnmapStreamInternal(ulong,unsigned __int64)",
+    "ea": "0x180021df8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UnmapStreamInternal@CMPEG2Controller@@QEAAJK_K@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Controller *__hidden this, unsigned int, struct CDemuxBaseParser *)",
+    "rank_score": 12,
+    "size": 126,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMPEG2ProgramController::CMpeg2MacroVision::CompleteCopyBuffer(unsigned __int64,uchar *,int,int,CTStickyVal<int> *,Mpeg2DemuxAttributes::CAttributeList *)",
+    "ea": "0x18001e850",
+    "function_file": "functions/18001e850_CMPEG2ProgramController_CMpeg2MacroVision_CompleteCopyBuffer_unsigned_int64_uchar_int_int_CTStickyVal_int_Mpeg.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteCopyBuffer@CMpeg2MacroVision@CMPEG2ProgramController@@UEAAJ_KPEAEHHPEAV?$CTStickyVal@H@@PEAVCAttributeList@Mpeg2DemuxAttributes@@@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::GetTimeFormatW(_GUID *)",
+    "ea": "0x1800246b0",
+    "function_file": "functions/1800246b0_CMpeg2DemuxMediaSeekingCOM_GetTimeFormatW_GUID.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTimeFormatW@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, struct _GUID *)",
+    "rank_score": 12,
+    "size": 109,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::QueryPreferredFormat(_GUID *)",
+    "ea": "0x180024950",
+    "function_file": "functions/180024950_CMpeg2DemuxMediaSeekingCOM_QueryPreferredFormat_GUID.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryPreferredFormat@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, struct _GUID *)",
+    "rank_score": 12,
+    "size": 127,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2ProgramStatsCOM::Enable(int *)",
+    "ea": "0x1800117f0",
+    "function_file": "functions/1800117f0_CMpeg2ProgramStatsCOM_Enable_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Enable@CMpeg2ProgramStatsCOM@@UEAAJPEAH@Z",
+    "prototype": "__int64 __fastcall(CMpeg2ProgramStatsCOM *__hidden this, int *)",
+    "rank_score": 12,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMpeg2TransportStatsCOM::Enable(int *)",
+    "ea": "0x180011810",
+    "function_file": "functions/180011810_CMpeg2TransportStatsCOM_Enable_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Enable@CMpeg2TransportStatsCOM@@UEAAJPEAH@Z",
+    "prototype": "__int64 __fastcall(CMpeg2TransportStatsCOM *__hidden this, int *)",
+    "rank_score": 12,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180001f74",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 12,
+    "size": 5,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Mpeg2DemuxAttributes::TCDynamicProdCons<Mpeg2DemuxAttributes::CDemuxIMediaSample>::DeleteObj_(Mpeg2DemuxAttributes::CDemuxIMediaSample *)",
+    "ea": "0x180022b40",
+    "function_file": "functions/180022b40_Mpeg2DemuxAttributes_TCDynamicProdCons_Mpeg2DemuxAttributes_CDemuxIMediaSample_DeleteObj_Mpeg2DemuxAttributes_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteObj_@?$TCDynamicProdCons@VCDemuxIMediaSample@Mpeg2DemuxAttributes@@@Mpeg2DemuxAttributes@@MEAAXPEAVCDemuxIMediaSample@2@@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_before_initialize_c",
+    "ea": "0x180001718",
+    "function_file": "functions/180001718_scrt_dllmain_before_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_before_initialize_c",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 7,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_detach",
+    "ea": "0x180001758",
+    "function_file": "functions/180001758_scrt_dllmain_crt_thread_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_detach",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_critical",
+    "ea": "0x1800017fc",
+    "function_file": "functions/1800017fc_scrt_dllmain_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "initialize_msvcrt_compatibility",
+    "ea": "0x1800010c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "initialize_msvcrt_compatibility",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001060",
+    "function_file": "functions/180001060_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 12,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CBaseFilter::GetClassID(_GUID *)",
+    "ea": "0x180004440",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetClassID@CBaseFilter@@UEAAJPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(CBaseFilter *__hidden this, struct _GUID *)",
+    "rank_score": 11,
+    "size": 22,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "CBaseInputPin::AddRef(void)",
+    "ea": "0x1800032c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@CBaseInputPin@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CBaseInputPin *__hidden this)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "CBaseList::AddTailI(void *)",
+    "ea": "0x1800067a4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddTailI@CBaseList@@IEAAPEAU__POSITION@@PEAX@Z",
+    "prototype": "struct __POSITION *__fastcall(CBaseList *__hidden this, void *)",
+    "rank_score": 11,
+    "size": 114,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CBaseOutputPin::CompleteConnect(IPin *)",
+    "ea": "0x180003c40",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteConnect@CBaseOutputPin@@UEAAJPEAUIPin@@@Z",
+    "prototype": "__int64 __fastcall(CBaseOutputPin *__hidden this, struct IPin *)",
+    "rank_score": 11,
+    "size": 26,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CBufferSource::CompleteCopyBuffer(unsigned __int64,uchar *,int,int,__int64 *,__int64 *,CTStickyVal<int> *,Mpeg2DemuxAttributes::CAttributeList *)",
+    "ea": "0x18001e810",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteCopyBuffer@CBufferSource@@UEAAJ_KPEAEHHPEA_J2PEAV?$CTStickyVal@H@@PEAVCAttributeList@Mpeg2DemuxAttributes@@@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 57,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "CMPEG2SplitterFilter::Release(void)",
+    "ea": "0x1800059f0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CMPEG2SplitterFilter@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMPEG2SplitterFilter *__hidden this)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMediaSampleCopyBuffer::CompleteCopyBuffer(unsigned __int64,uchar *,int,int,CTStickyVal<int> *,Mpeg2DemuxAttributes::CAttributeList *)",
+    "ea": "0x18002b510",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteCopyBuffer@CMediaSampleCopyBuffer@@UEAAJ_KPEAEHHPEAV?$CTStickyVal@H@@PEAVCAttributeList@Mpeg2DemuxAttributes@@@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 84,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::AddRef(void)",
+    "ea": "0x180024090",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@CMpeg2DemuxMediaSeekingCOM@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this)",
+    "rank_score": 11,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::GetCapabilities(ulong *)",
+    "ea": "0x1800241c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCapabilities@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEAK@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, unsigned int *)",
+    "rank_score": 11,
+    "size": 55,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::GetPreroll(__int64 *)",
+    "ea": "0x180024570",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetPreroll@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEA_J@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, __int64 *)",
+    "rank_score": 11,
+    "size": 58,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::IsUsingTimeFormat(_GUID const *)",
+    "ea": "0x1800248d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsUsingTimeFormat@CMpeg2DemuxMediaSeekingCOM@@UEAAJPEBU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, const struct _GUID *)",
+    "rank_score": 11,
+    "size": 83,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180024930",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CMpeg2DemuxMediaSeekingCOM@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 11,
+    "size": 19,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2DemuxMediaSeekingCOM::Release(void)",
+    "ea": "0x1800249e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CMpeg2DemuxMediaSeekingCOM@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMpeg2DemuxMediaSeekingCOM *__hidden this)",
+    "rank_score": 11,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2PESStreamParser::CompletionRetVal_(long)",
+    "ea": "0x180028fb0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompletionRetVal_@CMpeg2PESStreamParser@@EEAAXJ@Z",
+    "prototype": "void __fastcall(CMpeg2PESStreamParser *__hidden this, int)",
+    "rank_score": 11,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2TransportStatsCOM::AddRef(void)",
+    "ea": "0x180011700",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@CMpeg2TransportStatsCOM@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMpeg2TransportStatsCOM *__hidden this)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2TransportStatsCOM::GetSharedMemory(uchar * *,ulong *)",
+    "ea": "0x180011930",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSharedMemory@CMpeg2TransportStatsCOM@@UEAAJPEAPEAEPEAK@Z",
+    "prototype": "__int64 __fastcall(CMpeg2TransportStatsCOM *__hidden this, unsigned __int8 **, unsigned int *)",
+    "rank_score": 11,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2TransportStatsCOM::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180012960",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CMpeg2TransportStatsCOM@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CMpeg2TransportStatsCOM *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2TransportStatsCOM::Release(void)",
+    "ea": "0x180012980",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CMpeg2TransportStatsCOM@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CMpeg2TransportStatsCOM *__hidden this)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMpeg2VersionFilteredPSIParse::CheckCompleteSection(uchar *,int)",
+    "ea": "0x180028d80",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CheckCompleteSection@CMpeg2VersionFilteredPSIParse@@UEAAHPEAEH@Z",
+    "prototype": "__int64 __fastcall(CMpeg2VersionFilteredPSIParse *__hidden this, unsigned __int8 *, int)",
+    "rank_score": 11,
+    "size": 60,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CSplitterInputPin::CompleteConnect(IPin *)",
+    "ea": "0x18000c470",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CompleteConnect@CSplitterInputPin@@UEAAJPEAUIPin@@@Z",
+    "prototype": "__int64 __fastcall(CSplitterInputPin *__hidden this, struct IPin *)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "CSplitterOutputPin::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180005140",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CSplitterOutputPin@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CSplitterOutputPin *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CStreamToPinMap::Compare(void const *,void const *)",
+    "ea": "0x18001e7d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Compare@CStreamToPinMap@@SAHPEBX0@Z",
+    "prototype": "int __cdecl(const void *, const void *)",
+    "rank_score": 11,
+    "size": 47,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllCanUnloadNow",
+    "ea": "0x1800021d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 11,
+    "size": 36,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllRegisterServer",
+    "ea": "0x180001f80",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllRegisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 11,
+    "size": 10,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllUnregisterServer",
+    "ea": "0x180001f90",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllUnregisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 11,
+    "size": 7,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:CMPEG2Demultiplexer::GetClassID`adjustor{96}' (_GUID *)",
+    "ea": "0x180014bb0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetClassID@CMPEG2Demultiplexer@@WGA@EAAJPEAU_GUID@@@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:CMpeg2ProgramStatsCOM::`vector deleting destructor'`adjustor{8}' (uint)",
+    "ea": "0x180011110",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_ECMpeg2ProgramStatsCOM@@W7EAAPEAXI@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CESEvent::SetCompletionStatus(ulong)",
+    "ea": "0x1800174c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetCompletionStatus@CESEvent@@UEAAJK@Z",
+    "prototype": "__int64 __fastcall(CESEvent *__hidden this, unsigned int)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "CMediaType::SetFormat(uchar *,ulong)",
+    "ea": "0x180006b54",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetFormat@CMediaType@@QEAAHPEAEK@Z",
+    "prototype": "int(CMediaType *__hidden this, unsigned __int8 *, unsigned int)",
+    "rank_score": 10,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "CMpeg2StreamAnalyzer::CreateAVStream_(ushort const *,_AMMediaType *,uchar,uchar,int,ulong)",
+    "ea": "0x18001e880",
+    "function_file": "functions/18001e880_CMpeg2StreamAnalyzer_CreateAVStream_ushort_const_AMMediaType_uchar_uchar_int_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateAVStream_@CMpeg2StreamAnalyzer@@IEAAJPEBGPEAU_AMMediaType@@EEHK@Z",
+    "prototype": "int(CMpeg2StreamAnalyzer *__hidden this, const unsigned __int16 *, struct _AMMediaType *, unsigned __int8, unsigned __int8, int, unsigned int)",
+    "rank_score": 10,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Mp2DemuxSec::CDemuxDiagnosticsSec::GetIdAuthority_Access(void)",
+    "ea": "0x1800118c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetIdAuthority_Access@CDemuxDiagnosticsSec@Mp2DemuxSec@@MEAAPEAU_SID_IDENTIFIER_AUTHORITY@@XZ",
+    "prototype": "struct _SID_IDENTIFIER_AUTHORITY *__fastcall(Mp2DemuxSec::CDemuxDiagnosticsSec *__hidden this)",
+    "rank_score": 10,
+    "size": 8,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Mp2DemuxSec::CDemuxDiagnosticsSec::GetIdAuthority_Creator(void)",
+    "ea": "0x1800118d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetIdAuthority_Creator@CDemuxDiagnosticsSec@Mp2DemuxSec@@MEAAPEAU_SID_IDENTIFIER_AUTHORITY@@XZ",
+    "prototype": "struct _SID_IDENTIFIER_AUTHORITY *__fastcall(Mp2DemuxSec::CDemuxDiagnosticsSec *__hidden this)",
+    "rank_score": 10,
+    "size": 8,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "CBaseSeeking::IsSeekable(void)",
+    "ea": "0x18000feb4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsSeekable@CBaseSeeking@@AEAAHXZ",
+    "prototype": "__int64 __fastcall(CBaseSeeking *__hidden this)",
+    "rank_score": 9,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "CMPEG2Parser::CreateDefaultStream(uchar,ushort const *,CMediaType *,int,int,int)",
+    "ea": "0x180007b40",
+    "function_file": "functions/180007b40_CMPEG2Parser_CreateDefaultStream_uchar_ushort_const_CMediaType_int_int_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateDefaultStream@CMPEG2Parser@@AEAAJEPEBGPEAVCMediaType@@HHH@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Parser *__hidden this, unsigned __int8, const unsigned __int16 *, struct CMediaType *, int, int, int)",
+    "rank_score": 9,
+    "size": 377,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CMediaSampleCopyBuffer::CMediaSampleCopyBuffer(CMPEG2DemuxOutputPin *,int,int,CRefCountedCritSec *,HKEY__ *,ulong,CMpeg2Stats *)",
+    "ea": "0x18002b038",
+    "function_file": "functions/18002b038_CMediaSampleCopyBuffer_CMediaSampleCopyBuffer_CMPEG2DemuxOutputPin_int_int_CRefCountedCritSec_HKEY_ulong_CMpeg.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CMediaSampleCopyBuffer@@QEAA@PEAVCMPEG2DemuxOutputPin@@HHPEAVCRefCountedCritSec@@PEAUHKEY__@@KPEAVCMpeg2Stats@@@Z",
+    "prototype": "CMediaSampleCopyBuffer *__fastcall(CMediaSampleCopyBuffer *__hidden this, struct CMPEG2DemuxOutputPin *, int, int, struct CRefCountedCritSec *, HKEY, unsigned int, struct CMpeg2Stats *)",
+    "rank_score": 9,
+    "size": 320,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "ParseAC3Header(uchar const *,tWAVEFORMATEX *)",
+    "ea": "0x18000ae8c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ParseAC3Header@@YAHPEBEPEAUtWAVEFORMATEX@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int8 *, struct tWAVEFORMATEX *)",
+    "rank_score": 9,
+    "size": 314,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "CMMPullPin::CleanupCancelled(void)",
+    "ea": "0x18000e55c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CleanupCancelled@CMMPullPin@@IEAAXXZ",
+    "prototype": "void __fastcall(CMMPullPin *__hidden this)",
+    "rank_score": 8,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CMpeg2PSIParse::ProcessSysBuffer(IMediaSample *,MPEG2_SYS_BUFFER *,int,int,int,int,int,CTStickyVal<int> *)",
+    "ea": "0x18002a7e0",
+    "function_file": "functions/18002a7e0_CMpeg2PSIParse_ProcessSysBuffer_IMediaSample_MPEG2_SYS_BUFFER_int_int_int_int_int_CTStickyVal_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessSysBuffer@CMpeg2PSIParse@@UEAAJPEAUIMediaSample@@PEAUMPEG2_SYS_BUFFER@@HHHHHPEAV?$CTStickyVal@H@@@Z",
+    "prototype": "__int64 __usercall@<rax>(CCopyFrameParser *this@<rcx>, int, int, int, int, __int64)",
+    "rank_score": 8,
+    "size": 439,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "CUnknown::NonDelegatingQueryInterface(_GUID const &,void * *)",
+    "ea": "0x180002bb8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?NonDelegatingQueryInterface@CUnknown@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CUnknown *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 8,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "Mpeg2DemuxTrace::CTeHomeETWEvent<EH_MPEG2_ERROR_EVENT>::TraceEvent(EH_MPEG2_ERROR_EVENT *)",
+    "ea": "0x180027674",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?TraceEvent@?$CTeHomeETWEvent@UEH_MPEG2_ERROR_EVENT@@@Mpeg2DemuxTrace@@QEAAXPEAUEH_MPEG2_ERROR_EVENT@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 8,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "swprintf_s",
+    "ea": "0x180001f04",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "swprintf_s",
+    "prototype": "int(wchar_t *const Buffer, const size_t BufferCount, const wchar_t *const Format, ...)",
+    "rank_score": 8,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "CBufferSourceManager::CopyBlock(uchar *,int,int *)",
+    "ea": "0x180028fd8",
+    "function_file": "functions/180028fd8_CBufferSourceManager_CopyBlock_uchar_int_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CopyBlock@CBufferSourceManager@@IEAAHPEAEHPEAH@Z",
+    "prototype": "__int64 __fastcall(CBufferSourceManager *__hidden this, unsigned __int8 *, int, int *)",
+    "rank_score": 7,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "CCopyFrameParser::GetNewFrameBuffer(IMediaSample *)",
+    "ea": "0x180029270",
+    "function_file": "functions/180029270_CCopyFrameParser_GetNewFrameBuffer_IMediaSample.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetNewFrameBuffer@CCopyFrameParser@@IEAAJPEAUIMediaSample@@@Z",
+    "prototype": "__int64 __fastcall(CCopyFrameParser *__hidden this, struct IMediaSample *)",
+    "rank_score": 7,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CMPEG2Demultiplexer::InitPullModeStream(IAsyncReader *)",
+    "ea": "0x180015260",
+    "function_file": "functions/180015260_CMPEG2Demultiplexer_InitPullModeStream_IAsyncReader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitPullModeStream@CMPEG2Demultiplexer@@QEAAJPEAUIAsyncReader@@@Z",
+    "prototype": "__int64 __fastcall(CMPEG2Demultiplexer *__hidden this, struct IAsyncReader *)",
+    "rank_score": 6,
+    "size": 295,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CBasePin::AttemptConnection(IPin *,CMediaType const *)",
+    "ea": "0x180003734",
+    "function_file": "functions/180003734_CBasePin_AttemptConnection_IPin_CMediaType_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AttemptConnection@CBasePin@@IEAAJPEAUIPin@@PEBVCMediaType@@@Z",
+    "prototype": "__int64 __fastcall(CBasePin *__hidden this, struct IPin *, const struct CMediaType *)",
+    "rank_score": 5,
+    "size": 274,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CCopyFrameParser::CCopyFrameParser(CBufferSource *,CMpeg2Stats *,int)",
+    "ea": "0x180028038",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0CCopyFrameParser@@QEAA@PEAVCBufferSource@@PEAVCMpeg2Stats@@H@Z",
+    "prototype": "CCopyFrameParser *__fastcall(CCopyFrameParser *__hidden this, struct CBufferSource *, struct CMpeg2Stats *, int)",
+    "rank_score": 5,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CIAsyncReader<65539>::SetWindow(__int64,long *)",
+    "ea": "0x18001a060",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetWindow@?$CIAsyncReader@$0BAAAD@@@QEAAQEAE_JPEAJ@Z",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CMPEG2Demultiplexer::CreateInputPinLocked_(void)",
+    "ea": "0x180013b58",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInputPinLocked_@CMPEG2Demultiplexer@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CMPEG2Demultiplexer *__hidden this)",
+    "rank_score": 5,
+    "size": 88,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CMPEG2SplitterFilter::CreateParser(CParserNotify *,CMediaType *)",
+    "ea": "0x180007d80",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateParser@CMPEG2SplitterFilter@@UEAAPEAVCSpltBaseParser@@PEAVCParserNotify@@PEAVCMediaType@@@Z",
+    "prototype": "struct CSpltBaseParser *__fastcall(CMPEG2SplitterFilter *__hidden this, struct CParserNotify *, struct CMediaType *)",
+    "rank_score": 5,
+    "size": 203,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMediaSampleCopyBuffer::GetCopyBuffer(unsigned __int64 *,uchar * *,int *)",
+    "ea": "0x18002b690",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCopyBuffer@CMediaSampleCopyBuffer@@UEAAJPEA_KPEAPEAEPEAH@Z",
+    "prototype": "__int64 __fastcall(CMediaSampleCopyBuffer *__hidden this, unsigned __int64 *, unsigned __int8 **, int *)",
+    "rank_score": 5,
+    "size": 373,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "AC3ParserFilter::CreateParser(CParserNotify *,CMediaType *)",
+    "ea": "0x18000a680",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateParser@AC3ParserFilter@@UEAAPEAVCSpltBaseParser@@PEAVCParserNotify@@PEAVCMediaType@@@Z",
+    "prototype": "struct CSpltBaseParser *__fastcall(AC3ParserFilter *__hidden this, struct CParserNotify *, struct CMediaType *)",
+    "rank_score": 4,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CBufferSourceManager::GetNewCopyBuffer(int *)",
+    "ea": "0x180029208",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetNewCopyBuffer@CBufferSourceManager@@IEAAJPEAH@Z",
+    "prototype": "__int64 __fastcall(CBufferSourceManager *__hidden this, int *)",
+    "rank_score": 4,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CMPEG2ProgramController::GetAnalyzer_(CMPEG2Demultiplexer *,IAsyncReader *)",
+    "ea": "0x18001ed70",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetAnalyzer_@CMPEG2ProgramController@@MEAAPEAVCMpeg2StreamAnalyzer@@PEAVCMPEG2Demultiplexer@@PEAUIAsyncReader@@@Z",
+    "prototype": "struct CMpeg2StreamAnalyzer *__fastcall(CMPEG2ProgramController *__hidden this, struct CMPEG2Demultiplexer *, struct IAsyncReader *)",
+    "rank_score": 4,
+    "size": 198,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CClassFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x180001fb0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CClassFactory@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CClassFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 3,
+    "size": 245,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CBDAMPEG2Demux::GetNodeDescriptors(ulong *,ulong,_BDANODE_DESCRIPTOR * const)",
+    "ea": "0x18001c650",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetNodeDescriptors@CBDAMPEG2Demux@@UEAAJPEAKKQEAU_BDANODE_DESCRIPTOR@@@Z",
+    "prototype": "__int64 __fastcall(CBDAMPEG2Demux *__hidden this, unsigned int *, unsigned int, struct _BDANODE_DESCRIPTOR *const)",
+    "rank_score": 2,
+    "size": 129,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CDShowMPEG2Demux::DeleteOutputPin(ushort *)",
+    "ea": "0x18001c1b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteOutputPin@CDShowMPEG2Demux@@UEAAJPEAG@Z",
+    "prototype": "__int64 __fastcall(CDShowMPEG2Demux *__hidden this, unsigned __int16 *)",
+    "rank_score": 2,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CMediaSampleCopyBuffer::ReleaseCopyBuffer(unsigned __int64,uchar *,int)",
+    "ea": "0x18002bd10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReleaseCopyBuffer@CMediaSampleCopyBuffer@@UEAAJ_KPEAEH@Z",
+    "prototype": "__int64 __fastcall(CMediaSampleCopyBuffer *__hidden this, unsigned __int64, unsigned __int8 *, int)",
+    "rank_score": 2,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CPCRRecordBufferSource::ReleaseCopyBuffer(unsigned __int64,uchar *,int)",
+    "ea": "0x180021ac0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReleaseCopyBuffer@CPCRRecordBufferSource@@UEAAJ_KPEAEH@Z",
+    "prototype": "__int64 __fastcall(CPCRRecordBufferSource *__hidden this, unsigned __int64, unsigned __int8 *, int)",
+    "rank_score": 2,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CParseReaderFromAsync::IsSeekable(void)",
+    "ea": "0x1800097a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsSeekable@CParseReaderFromAsync@@UEAAHXZ",
+    "prototype": "__int64 __fastcall(CParseReaderFromAsync *__hidden this)",
+    "rank_score": 2,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CParseReaderFromAsync::Read(uchar *,ulong)",
+    "ea": "0x18000a100",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Read@CParseReaderFromAsync@@UEAAJPEAEK@Z",
+    "prototype": "__int64 __fastcall(CParseReaderFromAsync *__hidden this, unsigned __int8 *, unsigned int)",
+    "rank_score": 2,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CBDAMPEG2Demux::GetTemplateConnections(ulong *,ulong,_BDA_TEMPLATE_CONNECTION * const)",
+    "ea": "0x18001c850",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTemplateConnections@CBDAMPEG2Demux@@UEAAJPEAKKQEAU_BDA_TEMPLATE_CONNECTION@@@Z",
+    "prototype": "__int64 __fastcall(CBDAMPEG2Demux *__hidden this, unsigned int *, unsigned int, struct _BDA_TEMPLATE_CONNECTION *const)",
+    "rank_score": 1,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CBaseSplitterFilter::CImplParserNotify::CreateStream(ushort const *,CStreamNotify * *)",
+    "ea": "0x18000c680",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateStream@CImplParserNotify@CBaseSplitterFilter@@UEAAJPEBGPEAPEAVCStreamNotify@@@Z",
+    "prototype": "__int64 __fastcall(CBaseSplitterFilter::CImplParserNotify *__hidden this, const unsigned __int16 *, struct CStreamNotify **)",
+    "rank_score": 1,
+    "size": 9,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMPEG2PSISectionBufferSource::ReleaseCopyBuffer(unsigned __int64,uchar *,int)",
+    "ea": "0x180030510",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReleaseCopyBuffer@CMPEG2PSISectionBufferSource@@UEAAJ_KPEAEH@Z",
+    "prototype": "__int64 __fastcall(CMPEG2PSISectionBufferSource *__hidden this, unsigned __int64, unsigned __int8 *, int)",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CMPEG2ProgramController::CMpeg2MacroVision::GetCopyBuffer(unsigned __int64 *,uchar * *,int *)",
+    "ea": "0x18001ef70",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCopyBuffer@CMpeg2MacroVision@CMPEG2ProgramController@@UEAAJPEA_KPEAPEAEPEAH@Z",
+    "prototype": "__int64 __fastcall(CMPEG2ProgramController::CMpeg2MacroVision *__hidden this, unsigned __int64 *, unsigned __int8 **, int *)",
+    "rank_score": 1,
+    "size": 46,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CMPEG2TransportController::IsCopyBufferSource_(ulong,CMediaType *)",
+    "ea": "0x18000d930",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsCopyBufferSource_@CMPEG2TransportController@@MEAAHKPEAVCMediaType@@@Z",
+    "prototype": "__int64 __fastcall(CMPEG2TransportController *__hidden this, unsigned int, struct CMediaType *)",
+    "rank_score": 1,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CPCRRecordBufferSource::GetCopyBuffer(unsigned __int64 *,uchar * *,int *)",
+    "ea": "0x18002f310",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCopyBuffer@CPCRRecordBufferSource@@UEAAJPEA_KPEAPEAEPEAH@Z",
+    "prototype": "__int64 __fastcall(CPCRRecordBufferSource *__hidden this, unsigned __int64 *, unsigned __int8 **, int *)",
+    "rank_score": 1,
+    "size": 46,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CParseReaderFromAsync::Available(__int64 *)",
+    "ea": "0x180007690",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Available@CParseReaderFromAsync@@UEAAJPEA_J@Z",
+    "prototype": "__int64 __fastcall(CParseReaderFromAsync *__hidden this, __int64 *)",
+    "rank_score": 1,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CParseReaderFromAsync::Length(__int64 *)",
+    "ea": "0x180009800",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Length@CParseReaderFromAsync@@UEAAJPEA_J@Z",
+    "prototype": "__int64 __fastcall(CParseReaderFromAsync *__hidden this, __int64 *)",
+    "rank_score": 1,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Mp2DemuxSec::CWriteEventSec::InternalInit(void)",
+    "ea": "0x1800155c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalInit@CWriteEventSec@Mp2DemuxSec@@MEAAJXZ",
+    "prototype": "__int64 __fastcall(Mp2DemuxSec::CWriteEventSec *__hidden this)",
+    "rank_score": 1,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:CCopyFrameParser::`vector deleting destructor'`adjustor{48}' (uint)",
+    "ea": "0x1800287a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_ECCopyFrameParser@@WDA@EAAPEAXI@Z",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 9,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CParseReaderFromAsync::SetPointer(__int64)",
+    "ea": "0x18000a2c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetPointer@CParseReaderFromAsync@@UEAAJ_J@Z",
+    "prototype": "__int64 __fastcall(CParseReaderFromAsync *__hidden this, __int64)",
+    "rank_score": 0,
+    "size": 7,
+    "tags": []
+  }
+]
