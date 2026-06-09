@@ -1,0 +1,255 @@
+# AzureADGraphConnection::FetchSIDByPrincipalNameOrObjectID(IMemObj *,_GUID const &,CAutoRg<wchar_t> const &,CAutoRg<wchar_t> const &,bool,bool const &,uchar * *,ulong &,AADErrorState &,CAutoRg<wchar_t> &)
+
+- ea: `0x10154f7a0`
+- end: `0x10155121c`
+- name: `?FetchSIDByPrincipalNameOrObjectID@AzureADGraphConnection@@UEAAKPEAVIMemObj@@AEBU_GUID@@AEBV?$CAutoRg@_W@@2_NAEB_NPEAPEAEAEAKAEAW4AADErrorState@@AEAV4@@Z`
+- size: `6780`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `15`
+- tags: `authz_impersonation, service_task, broker_com_uri`
+
+## callees
+
+- `0x100401070`
+- `0x100401090`
+- `0x100401433`
+- `0x100422f40`
+- `0x10071db70`
+- `0x10077eac0`
+- `0x10154c680`
+- `0x10154ebe0`
+- `0x10154f5f0`
+- `0x10154f7a0`
+- `0x101551230`
+- `0x101553340`
+- `0x101554170`
+- `0x101554960`
+- `0x1015552c0`
+
+## import_xrefs
+
+- `RPCRT4!UuidFromStringW` at `0x1015502ba`
+- `RPCRT4!UuidFromStringW` at `0x101550fa2`
+- `RPCRT4!UuidFromStringW` at `0x1015502ba`
+- `RPCRT4!UuidFromStringW` at `0x101550fa2`
+- `SHLWAPI!UrlEscapeW` at `0x10154f9fb`
+- `SHLWAPI!UrlEscapeW` at `0x10154fce1`
+- `SHLWAPI!UrlEscapeW` at `0x101550783`
+- `SHLWAPI!UrlEscapeW` at `0x10154f9fb`
+- `SHLWAPI!UrlEscapeW` at `0x10154fce1`
+- `SHLWAPI!UrlEscapeW` at `0x101550783`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10154f8d2`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10154fa66`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10154fd41`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101550406`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10154f8d2`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10154fa66`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10154fd41`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101550406`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x10154ffbd`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101550191`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x1015507e2`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101550c8c`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101550e89`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x1015510fe`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x10154ffbd`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101550191`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x1015507e2`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101550c8c`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101550e89`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x1015510fe`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10154fc55`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10154fc69`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10155038a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10155039e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015506de`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015506f3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10155072b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101550b2b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10154fc55`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10154fc69`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10155038a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10155039e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015506de`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x1015506f3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x10155072b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101550b2b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154fa79`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154fc2a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154fd54`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154ff00`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154ffd1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10155009e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015500b7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015501ae`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550419`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015505db`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015507f6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10155080e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015509ad`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015509ca`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550a27`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550a46`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550a7e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550acf`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550af2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550b7e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550c9d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10155104a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101551113`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101551186`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101551191`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10155119c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511a8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511b3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511be`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511c8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511d1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511db`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511e4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511ef`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154fa79`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154fc2a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154fd54`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154ff00`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10154ffd1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10155009e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015500b7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015501ae`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550419`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015505db`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015507f6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10155080e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015509ad`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015509ca`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550a27`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550a46`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550a7e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550acf`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550af2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550b7e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101550c9d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10155104a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101551113`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101551186`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101551191`
+- `sqldk!??_V@YAXPEAX@Z` at `0x10155119c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511a8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511b3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511be`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511c8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511d1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511db`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511e4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1015511ef`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10154f93e`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1015500c6`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550134`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1015501c4`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1015501f3`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550226`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550251`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550dc4`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550e2f`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550eb3`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550ee2`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550f15`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550f40`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x10154f93e`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1015500c6`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550134`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1015501c4`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1015501f3`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550226`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550251`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550dc4`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550e2f`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550eb3`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550ee2`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550f15`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x101550f40`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x10154f95c`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015500eb`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550156`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015501e5`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550214`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550247`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550272`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550de9`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550e51`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550ed4`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550f03`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550f36`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550f61`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x10154f95c`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015500eb`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550156`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1015501e5`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550214`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550247`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550272`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550de9`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550e51`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550ed4`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550f03`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550f36`
+- `sqlTsEs!?FEqIgnoreCaseW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x101550f61`
+- `VCRUNTIME140!strstr` at `0x10154ff3f`
+- `VCRUNTIME140!strstr` at `0x10155031f`
+- `VCRUNTIME140!strstr` at `0x10155035f`
+- `VCRUNTIME140!strstr` at `0x101550630`
+- `VCRUNTIME140!strstr` at `0x10155064a`
+- `VCRUNTIME140!strstr` at `0x101550a65`
+- `VCRUNTIME140!strstr` at `0x101550a94`
+- `VCRUNTIME140!strstr` at `0x101550bd7`
+- `VCRUNTIME140!strstr` at `0x101550bed`
+- `VCRUNTIME140!strstr` at `0x10154ff3f`
+- `VCRUNTIME140!strstr` at `0x10155031f`
+- `VCRUNTIME140!strstr` at `0x10155035f`
+- `VCRUNTIME140!strstr` at `0x101550630`
+- `VCRUNTIME140!strstr` at `0x10155064a`
+- `VCRUNTIME140!strstr` at `0x101550a65`
+- `VCRUNTIME140!strstr` at `0x101550a94`
+- `VCRUNTIME140!strstr` at `0x101550bd7`
+- `VCRUNTIME140!strstr` at `0x101550bed`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1015502d4`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1015502f8`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101550fb8`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101550ff2`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1015502d4`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1015502f8`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101550fb8`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101550ff2`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101550304`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101550fc4`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101550ffe`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101550304`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101550fc4`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101550ffe`
+- `api-ms-win-crt-convert-l1-1-0!mbstowcs_s` at `0x10154ffee`
+- `api-ms-win-crt-convert-l1-1-0!mbstowcs_s` at `0x101550ccf`
+
+## string_xrefs
+
+- `0x10154f879`: `/servicePrincipals?$filter=displayName eq '`
+- `0x10154f8c5`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x10154fa58`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x10154fd33`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x10154ffa9`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x10155017d`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x1015503f9`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x1015507d1`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x101550c78`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x101550e75`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x1015510e9`: `sql\ntdbms\msql\security\src\AzureActiveDirectoryService.cpp`
+- `0x10155010a`: `"securityEnabled":`
+- `0x101550e08`: `"securityEnabled":`
+- `0x101550237`: `ServicePrincipal`
+- `0x101550f26`: `ServicePrincipal`
+
+## pseudocode
+
+```c
+
+```

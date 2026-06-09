@@ -1,0 +1,785 @@
+# yyparse(CParser *)
+
+- ea: `0x100467840`
+- end: `0x10046787a`
+- name: `?yyparse@@YA_NPEAVCParser@@@Z`
+- size: `58`
+- prototype: `bool __fastcall(struct CParser *)`
+- caller_count: `1`
+- callee_count: `1931`
+- tags: `file_ops, authz_impersonation, registry_config, loader_planting, service_task, installer_update, broker_com_uri`
+
+## callers
+
+- `0x100467900`
+
+## callees
+
+- `0x100401070`
+- `0x100401090`
+- `0x100401150`
+- `0x1004017a0`
+- `0x1004017b0`
+- `0x100403080`
+- `0x100403160`
+- `0x100403190`
+- `0x1004031a0`
+- `0x1004031b0`
+- `0x1004085b0`
+- `0x100408610`
+- `0x100408660`
+- `0x100409b70`
+- `0x10040be50`
+- `0x10040bf00`
+- `0x10040bf10`
+- `0x10040bf20`
+- `0x10040bf30`
+- `0x10040bf40`
+- `0x10040bf50`
+- `0x10040bf80`
+- `0x10040bfa0`
+- `0x10040bfe0`
+- `0x10040c050`
+- `0x10040e4a0`
+- `0x10040e4b0`
+- `0x10040e500`
+- `0x10040e5e0`
+- `0x10040e6a0`
+- `0x10040e6d0`
+- `0x10040ed80`
+- `0x1004112c0`
+- `0x100411410`
+- `0x1004114a0`
+- `0x100411510`
+- `0x100411540`
+- `0x100413af0`
+- `0x100416920`
+- `0x100416970`
+- `0x10041c390`
+- `0x1004206a0`
+- `0x10042e600`
+- `0x1004308d0`
+- `0x100430960`
+- `0x100430c20`
+- `0x10043f770`
+- `0x10043f7b0`
+- `0x100447270`
+- `0x10045c290`
+
+## import_xrefs
+
+- `sqldk!?GetOperatingSystemName@OsInfo@@QEBAQEB_WXZ` at `0x1010ddae3`
+- `sqldk!?GetOperatingSystemName@OsInfo@@QEBAQEB_WXZ` at `0x1010ddaf9`
+- `sqldk!?GetOperatingSystemName@OsInfo@@QEBAQEB_WXZ` at `0x1010ddae3`
+- `sqldk!?GetOperatingSystemName@OsInfo@@QEBAQEB_WXZ` at `0x1010ddaf9`
+- `sqldk!?IsLinux@OsInfo@@QEBA?B_NXZ` at `0x1010ddaac`
+- `sqldk!?IsLinux@OsInfo@@QEBA?B_NXZ` at `0x1010ddaac`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1010a2e58`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1010a2e58`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100509bfd`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100535679`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100536e92`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10053702b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1005650da`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10058846b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1005e733f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1005eb6e8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10064e4e7`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100666081`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100667965`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100667b02`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006a5485`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006a55ec`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006a666b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006c7a75`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006c7b4a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006c7e66`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006c869c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006c8ece`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006d41f1`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006fdb14`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006fddde`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1006fe093`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100733ee7`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100733f3a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100733fe8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10074b1f2`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10074b2cf`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10074ec57`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x100767660`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101029e8b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102a144`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102b2d7`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102b506`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102b825`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102c315`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102d9b5`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102e63a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102e7f3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102e903`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102e9ec`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102eaf3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102f2a3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102f4d2`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102f613`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102f842`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102fcb1`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102fddb`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10102ff3b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103020e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101030374`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010304d0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010306c7`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103089d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101030d1d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101030e28`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101030fe5`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010333b7`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103346f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010336b0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010339ee`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101033c80`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101033fcf`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103430e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101034417`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101034527`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101034718`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101034891`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010349e5`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101034c24`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101034e4b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101034fbe`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101035146`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010352f3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101035479`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101035654`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010357cc`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101035917`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101035af2`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101035c6c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101035d48`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101035fa6`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101036090`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103613e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103620f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010362ce`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103638d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103644c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103650b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010366ee`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101036827`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101036911`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101036a4d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101036b98`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101036c68`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101036d36`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101036f7b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037082`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037139`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010372b0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037367`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010374d3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010376cb`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037805`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103791e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037a37`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037b50`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037c1c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037d68`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037e1d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101037ed5`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101038127`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010381dc`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103841d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010385ed`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101038736`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101038886`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010389f7`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101038bc5`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101038caf`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010390d5`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101039370`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101039585`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101039722`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010397f9`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101039df9`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101039f43`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103a04c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103a27f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103a61a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103a731`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103a846`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103ab13`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103b667`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103b723`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103ba9a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103bce6`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103be54`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103c1b0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103c547`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103c680`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103c7a2`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103cbea`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103ccc2`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103cddb`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103d1cf`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103d2ac`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103d593`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103d672`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103ddb0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103de6d`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103e13c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103e244`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103e508`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103e614`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103e6e1`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103e796`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103e84b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103f043`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103f1cf`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103f4b3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103f781`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10103f977`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101040f1e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101041024`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10104135f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101041482`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101041983`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101041a19`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10104214a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10104249a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010425eb`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10104269b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10104289f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101042970`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101042af0`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101042c6a`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101042de4`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101042f5e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010430d8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10104325f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010435cd`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010438ca`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10104399b`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101043ce2`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101043e30`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x10104401c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010440ed`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010444b4`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1010445ed`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101044775`
+
+## string_xrefs
+
+- `0x1010a8e27`: `READTEXT`
+- `0x101086ab9`: `DELETE`
+- `0x10102b029`: `CREATE DATABASE`
+- `0x10102b4a5`: `CREATE DATABASE ENCRYPTION KEY`
+- `0x10108181c`: `CREATE TYPE`
+- `0x10108201a`: `CREATE TYPE`
+- `0x1010e4648`: `CREATE AVAILABILITY GROUP`
+- `0x101054565`: `CREATE SPATIAL INDEX`
+- `0x10107300f`: `CREATE FULLTEXT INDEX`
+- `0x101056140`: `CREATE INDEX`
+- `0x101057746`: `CREATE INDEX`
+- `0x101087490`: `CREATE INDEX`
+- `0x101086a2a`: `UPDATE`
+- `0x10106df06`: `CREATE EXTERNAL TABLE`
+- `0x10106e876`: `CREATE EXTERNAL TABLE`
+- `0x10106e999`: `CREATE EXTERNAL TABLE`
+- `0x10106f085`: `CREATE EXTERNAL TABLE`
+- `0x10106f16a`: `CREATE EXTERNAL TABLE`
+- `0x1010cea94`: `CREATE ENDPOINT`
+- `0x1010ceb03`: `CREATE ENDPOINT`
+- `0x101043561`: `CREATE TABLE`
+- `0x10107a41c`: `CREATE ASSEMBLY`
+- `0x1010a4be9`: `UPDATE STATISTICS`
+- `0x1010a4d06`: `UPDATE STATISTICS`
+- `0x1010a4e75`: `UPDATE STATISTICS`
+- `0x1010a50ae`: `UPDATE STATISTICS`
+- `0x1010a5566`: `UPDATE STATISTICS`
+- `0x1010a5bc7`: `UPDATE STATISTICS`
+- `0x1010a5d32`: `UPDATE STATISTICS`
+- `0x1010a5e78`: `UPDATE STATISTICS`
+- `0x1010a6082`: `UPDATE STATISTICS`
+- `0x1010a66f5`: `UPDATE STATISTICS`
+- `0x1010a6790`: `UPDATE STATISTICS`
+- `0x1010a6b92`: `UPDATE STATISTICS`
+- `0x101076d9b`: `CREATE PARTITION FUNCTION`
+- `0x101078050`: `CREATE PARTITION SCHEME`
+- `0x1010806f7`: `MOVE CONVERSATION`
+- `0x1010cb26f`: `CREATE FULLTEXT CATALOG`
+- `0x10107dd28`: `ALTER SERVICE`
+- `0x10107c47b`: `CREATE QUEUE`
+- `0x10107c128`: `CREATE CONTRACT`
+- `0x10107d938`: `CREATE SERVICE`
+- `0x10107ebbe`: `CREATE ROUTE`
+- `0x10105c687`: `CREATE ROLE`
+- `0x10105aa02`: `CREATE USER`
+- `0x1010d1d95`: `CREATE SYNONYM`
+- `0x1010d1e07`: `CREATE SYNONYM`
+- `0x101088a8e`: `CREATE SCHEMA`
+- `0x101088b0d`: `CREATE SCHEMA`
+- `0x101067d4f`: `CREATE LOGIN`
+- `0x10106813a`: `CREATE LOGIN`
+- `0x10106838a`: `CREATE LOGIN`
+- `0x10106855d`: `CREATE LOGIN`
+- `0x101068837`: `CREATE LOGIN`
+- `0x101052df8`: `CREATE XML INDEX`
+- `0x10105326f`: `CREATE XML INDEX`
+- `0x1010576c3`: `CREATE XML INDEX`
+- `0x101070b05`: `CREATE CERTIFICATE`
+- `0x101063cba`: `CREATE MASTER KEY`
+- `0x101066526`: `OPEN MASTER KEY`
+- `0x10106f918`: `CREATE CREDENTIAL`
+- `0x10106fa36`: `CREATE CREDENTIAL`
+- `0x10105ebb3`: `CREATE ASYMMETRIC KEY`
+- `0x101065f30`: `RESTORE SERVICE MASTER KEY`
+- `0x101065384`: `ALTER SERVICE MASTER KEY`
+- `0x101065a70`: `BACKUP SERVICE MASTER KEY`
+- `0x1010d7758`: `CREATE WORKLOAD GROUP`
+- `0x1010da4fb`: `CREATE WORKLOAD GROUP`
+- `0x1010da669`: `CREATE WORKLOAD GROUP`
+- `0x1010d5d18`: `CREATE RESOURCE POOL`
+- `0x10107045f`: `CREATE CRYPTOGRAPHIC PROVIDER`
+- `0x1010d2998`: `CREATE EVENT SESSION`
+- `0x1010dad1c`: `CREATE SERVER ROLE`
+- `0x1010ccf4c`: `CREATE FULLTEXT STOPLIST`
+- `0x1010daf52`: `CREATE SERVER AUDIT`
+- `0x1010e2739`: `ALTER SERVER CONFIGURATION`
+- `0x1010e3368`: `CREATE SEQUENCE`
+- `0x1010e3512`: `CREATE SEQUENCE`
+- `0x1010e36a6`: `CREATE SEQUENCE`
+- `0x1010a44da`: `CREATE STATISTICS`
+- `0x1010a480c`: `CREATE STATISTICS`
+- `0x1010a4e7c`: `CREATE STATISTICS`
+- `0x1010a50b5`: `CREATE STATISTICS`
+- `0x1010a556d`: `CREATE STATISTICS`
+- `0x1010a5bce`: `CREATE STATISTICS`
+- `0x1010a5e7f`: `CREATE STATISTICS`
+- `0x1010a6089`: `CREATE STATISTICS`
+- `0x1010a66fc`: `CREATE STATISTICS`
+- `0x1010a6797`: `CREATE STATISTICS`
+- `0x1010a6b99`: `CREATE STATISTICS`
+- `0x1010e8e38`: `CREATE SECURITY POLICY`
+- `0x1010e8eb7`: `CREATE SECURITY POLICY`
+- `0x1010e8f5b`: `CREATE SECURITY POLICY`
+- `0x1010e940c`: `ALTER SECURITY POLICY`
+- `0x1010e948b`: `ALTER SECURITY POLICY`
+- `0x1010e952f`: `ALTER SECURITY POLICY`
+- `0x101062800`: `CREATE COLUMN MASTER KEY`
+- `0x101062f31`: `CREATE COLUMN ENCRYPTION KEY`
+- `0x101052ab3`: `CREATE SELECTIVE XML INDEX`
+- `0x1010e7b02`: `CREATE AUDIT`
+- `0x1010e7b72`: `CREATE AUDIT`
+- `0x1010eaaa5`: `CREATE EXTERNAL LIBRARY`
+- `0x1010d68dd`: `CREATE EXTERNAL RESOURCE POOL`
+- `0x10102f760`: `ALTER DATABASE SCOPED CONFIGURATION`
+- `0x10102f7df`: `ALTER DATABASE SCOPED CONFIGURATION`
+- `0x10102f94f`: `ALTER DATABASE SCOPED CONFIGURATION`
+- `0x10102f9db`: `ALTER DATABASE SCOPED CONFIGURATION`
+- `0x10102fa46`: `ALTER DATABASE SCOPED CONFIGURATION`
+- `0x10102fab1`: `ALTER DATABASE SCOPED CONFIGURATION`
+- `0x10102fb1c`: `ALTER DATABASE SCOPED CONFIGURATION`
+- `0x10102fb87`: `ALTER DATABASE SCOPED CONFIGURATION`
+- `0x1010ebb6b`: `CREATE EXTERNAL LANGUAGE`
+- `0x1010ed549`: `CREATE EXTERNAL STREAM`
+- `0x10106b5ec`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106b6ba`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106b7f3`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106b8db`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106b952`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106ba3a`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106bd20`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106c078`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106c13a`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106c1b2`: `CREATE EXTERNAL FILE FORMAT`
+- `0x10106c611`: `CREATE EXTERNAL DATA SOURCE`
+- `0x10108249c`: `CREATE/ALTER FUNCTION`
+- `0x101078753`: `CREATE/ALTER PROCEDURE`
+- `0x101078961`: `CREATE/ALTER PROCEDURE`
+- `0x101078cfa`: `CREATE/ALTER PROCEDURE`
+- `0x101078d76`: `CREATE/ALTER PROCEDURE`
+- `0x101086ccb`: `CREATE/ALTER VIEW`
+- `0x1010ee0d3`: `CREATE POOL`
+- `0x1010ee13e`: `CREATE POOL`
+- `0x10107f4ca`: `CREATE BINDING`
+- `0x101085a2c`: `CREATE/ALTER TRIGGER`
+- `0x101086414`: `CREATE/ALTER TRIGGER`
+- `0x10109b3e1`: `RECOMPILE`
+- `0x101084717`: `CREATE AGGREGATE`
+- `0x1010847b9`: `CREATE AGGREGATE`
+- `0x1010821e7`: `CREATE FUNCTION`
+- `0x10108224e`: `CREATE FUNCTION`
+- `0x100665f2b`: `CREATE PROCEDURE`
+- `0x10108c83d`: `DROP SECURITY POLICY`
+- `0x10102b1b5`: `CREATE DATABASE AUDIT SPECIFICATION`
+- `0x101086b2f`: `CREATE VIEW`
+- `0x1010a8f9a`: `WRITETEXT`
+- `0x1010a9365`: `UPDATETEXT`
+- `0x101088699`: `CREATE DEFAULT`
+- `0x101088705`: `CREATE DEFAULT`
+- `0x1010887cb`: `CREATE DEFAULT`
+- `0x1010881eb`: `CREATE RULE`
+- `0x101088262`: `CREATE RULE`
+- `0x101088328`: `CREATE RULE`
+- `0x10107bb2e`: `CREATE MESSAGE TYPE`
+- `0x10107e228`: `CREATE BROKER PRIORITY`
+- `0x10107f2d1`: `CREATE REMOTE SERVICE BINDING`
+- `0x1010a6d24`: `CREATE EVENT NOTIFICATION`
+- `0x10107e9b3`: `ALTER BROKER PRIORITY`
+- `0x10107eafd`: `DROP BROKER PRIORITY`
+- `0x1010de854`: `CREATE SERVER AUDIT SPECIFICATION`
+- `0x1010529a2`: `CREATE PRIMARY XML INDEX`
+- `0x100643607`: `update`
+- `0x100736f9e`: `delete`
+- `0x1010b1362`: `openxml`
+- `0x10109dfdb`: `read_write_filegroups`
+- `0x1010b32eb`: `OPENQUERY`
+- `0x1010b37df`: `OPENDATASOURCE`
+- `0x1010b3936`: `OPENDATASOURCE`
+- `0x1010b0d64`: `OPENROWSET`
+- `0x1010b0f2b`: `OPENROWSET`
+- `0x1010b3049`: `OPENROWSET`
+- `0x1010b3107`: `OPENROWSET`
+- `0x1010b45cd`: `OPENROWSET`
+- `0x1010b4a6d`: `OPENROWSET`
+- `0x1010b4bb9`: `OPENROWSET`
+- `0x1010b4c17`: `OPENROWSET`
+- `0x1010b4ff3`: `OPENROWSET`
+- `0x1010b5280`: `OPENROWSET`
+- `0x1010b5510`: `OPENROWSET`
+- `0x1010b58e9`: `OPENROWSET`
+- `0x1010b909f`: `OPENROWSET`
+- `0x1010b91ed`: `OPENROWSET`
+- `0x1010b92a5`: `OPENROWSET`
+- `0x1010b93de`: `OPENROWSET`
+- `0x1010b947e`: `OPENROWSET`
+- `0x1010b9645`: `OPENROWSET`
+- `0x101042838`: `XML_COMPRESSION`
+- `0x10105a283`: `XML_COMPRESSION`
+- `0x10108b7c9`: `XML_COMPRESSION`
+- `0x10108bacf`: `XML_COMPRESSION`
+- `0x1010acbdd`: `COMPUTE`
+- `0x1010b1604`: `OPENXML`
+- `0x1010b18a3`: `OPENXML`
+- `0x1010b1a41`: `OPENXML`
+- `0x10104bacd`: `suser_sid`
+- `0x10104c27b`: `suser_sid`
+- `0x10104d501`: `suser_sid`
+- `0x10104dcaf`: `suser_sid`
+- `0x10102b7c4`: `CREATE DATABASE SCOPED CREDENTIAL`
+- `0x10102b8fd`: `CREATE DATABASE SCOPED CREDENTIAL`
+- `0x1010ede9c`: `RENAME`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x100467840  mov     [rsp+arg_0], rcx
+0x100467845  push    rbx
+0x100467846  push    rbp
+0x100467847  push    rsi
+0x100467848  push    rdi
+0x100467849  mov     eax, 251D8h
+0x10046784e  call    _alloca_probe
+0x100467853  sub     rsp, rax
+0x100467856  mov     [rsp+251F8h+var_234A8], 0FFFFFFFFFFFFFFFEh
+0x100467862  mov     rax, cs:__security_cookie
+0x100467869  xor     rax, rsp
+0x10046786c  mov     [rsp+251F8h+var_38], rax
+0x100467874  jmp     loc_1004660FE
+0x10045c5ea  mov     [rsp+251F8h+var_14B68], 0; jumptable 00000001004665D2 case 3494
+0x10045c5f6  jmp     def_1004665D2; jumptable 00000001004665D2 default case, cases 14-22,24-26,30-33,46,50,53,56,61-82,86-93,95-97,99-322,336,340,342,345,347-349,351,364,365,378-381,384-386,416,422,424,444,449,454,463,466,479,482-485,495,496,500,501,509,539,546,547,641,648,709,711,712,745,746,749-752,758,760,762,769-774,861,868-870,917,922,923,925-928,996,997,1002,1003,1010,1017,1036,1037,1043,1077,1078,1080,1156,1157,1164,1187,1188,1198-1200,1203,1208,1209,1215-1217,1230,1241,1254,1256,1257,1277,1278,1283,1288,1303,1306,1315,1319,1320,1329,1330,1333,1334,1344,1350,1358,1361,1366,1377,1385,1424,1429,1468,1474-1477,1488-1490,1494,1502,1506-1510,1525-1527,1538-1540,1543,1548,1574,1578,1581,1585,1588,1590,1596-1600,1603,1608,1610-1615,1617,1619,1620,1626,1628,1636,1643,1647,1648,1661,1686,1689,1690,1745,1748,1750,1752,1754,1762,1764,1765,1767-1769,1794,1808,1811-1814,1827-1829,1881,1946,2005,2007,2011,2017,2034,2035,2041,2052,2053,2063,2066,2068,2069,2077,2089,2092,2093,2098,2100,2118,2128,2131,2132,2136,2138,2143,2144,2147,2180-2182,2222,2238,223
+0x10045c73f  mov     eax, [rsp+251F8h+var_2503C]; jumptable 00000001004665D2 case 3016
+0x10045c746  bts     eax, 0Eh
+0x10045c74a  mov     [rsp+251F8h+var_2503C], eax
+0x10045c751  mov     eax, 50h ; 'P'
+0x10045c756  imul    rax, 0
+0x10045c75a  mov     rcx, [rsp+251F8h+var_23430]
+0x10045c762  add     rcx, rax
+0x10045c765  mov     rax, rcx
+0x10045c768  add     rax, 8
+0x10045c76c  mov     eax, [rax]
+0x10045c76e  mov     [rsp+251F8h+var_25008], eax
+0x10045c775  mov     eax, 50h ; 'P'
+0x10045c77a  imul    rax, 0
+0x10045c77e  mov     rcx, [rsp+251F8h+var_23430]
+0x10045c786  add     rcx, rax
+0x10045c789  mov     rax, rcx
+0x10045c78c  add     rax, 0Ch
+0x10045c790  mov     eax, [rax]
+0x10045c792  mov     [rsp+251F8h+var_2500C], eax
+0x10045c799  mov     [rsp+251F8h+var_25020], 0
+0x10045c7a4  mov     eax, 50h ; 'P'
+0x10045c7a9  imul    rax, 0
+0x10045c7ad  mov     rcx, [rsp+251F8h+var_23430]
+0x10045c7b5  add     rcx, rax
+0x10045c7b8  mov     rax, rcx
+0x10045c7bb  add     rax, 8
+0x10045c7bf  mov     [rsp+251F8h+var_1C308], rax
+0x10045c7c7  mov     rcx, [rsp+251F8h+arg_0]; this
+0x10045c7cf  call    ?PdrgcidDefd@CRelOp_BaseSetOp@@UEAAPEBVDRgCId@@XZ; CRelOp_BaseSetOp::PdrgcidDefd(void)
+0x10045c7d4  mov     rcx, [rsp+251F8h+var_1C308]
+0x10045c7dc  mov     edx, [rcx]; int
+0x10045c7de  mov     rcx, rax; struct CAlgStmt *
+0x10045c7e1  call    ?SetEndOffset@CParser@@SAXPEAVCAlgStmt@@H@Z; CParser::SetEndOffset(CAlgStmt *,int)
+0x10045c7e6  jmp     def_1004665D2; jumptable 00000001004665D2 default case, cases 14-22,24-26,30-33,46,50,53,56,61-82,86-93,95-97,99-322,336,340,342,345,347-349,351,364,365,378-381,384-386,416,422,424,444,449,454,463,466,479,482-485,495,496,500,501,509,539,546,547,641,648,709,711,712,745,746,749-752,758,760,762,769-774,861,868-870,917,922,923,925-928,996,997,1002,1003,1010,1017,1036,1037,1043,1077,1078,1080,1156,1157,1164,1187,1188,1198-1200,1203,1208,1209,1215-1217,1230,1241,1254,1256,1257,1277,1278,1283,1288,1303,1306,1315,1319,1320,1329,1330,1333,1334,1344,1350,1358,1361,1366,1377,1385,1424,1429,1468,1474-1477,1488-1490,1494,1502,1506-1510,1525-1527,1538-1540,1543,1548,1574,1578,1581,1585,1588,1590,1596-1600,1603,1608,1610-1615,1617,1619,1620,1626,1628,1636,1643,1647,1648,1661,1686,1689,1690,1745,1748,1750,1752,1754,1762,1764,1765,1767-1769,1794,1808,1811-1814,1827-1829,1881,1946,2005,2007,2011,2017,2034,2035,2041,2052,2053,2063,2066,2068,2069,2077,2089,2092,2093,2098,2100,2118,2128,2131,2132,2136,2138,2143,2144,2147,2180-2182,2222,2238,223
+0x10045c7eb  mov     rcx, [rsp+251F8h+arg_0]; jumptable 00000001004665D2 case 3017
+0x10045c7f3  call    ?Pdistinfo@CLogOp_Union@@UEBAPEBVCDistInfo@@XZ; CLogOp_Union::Pdistinfo(void)
+0x10045c7f8  mov     rcx, rax; this
+0x10045c7fb  call    ?FConsumed@CAlgStmt@@QEBA_NXZ; CAlgStmt::FConsumed(void)
+0x10045c800  movzx   eax, al
+0x10045c803  test    eax, eax
+0x10045c805  jz      short loc_10045C814
+0x10045c807  mov     rcx, [rsp+251F8h+arg_0]; this
+0x10045c80f  call    ?CreateNextStep@CParser@@QEAAXXZ; CParser::CreateNextStep(void)
+0x10045c814  mov     eax, [rsp+251F8h+var_2503C]
+0x10045c81b  btr     eax, 0Eh
+0x10045c81f  mov     [rsp+251F8h+var_2503C], eax
+0x10045c826  jmp     def_1004665D2; jumptable 00000001004665D2 default case, cases 14-22,24-26,30-33,46,50,53,56,61-82,86-93,95-97,99-322,336,340,342,345,347-349,351,364,365,378-381,384-386,416,422,424,444,449,454,463,466,479,482-485,495,496,500,501,509,539,546,547,641,648,709,711,712,745,746,749-752,758,760,762,769-774,861,868-870,917,922,923,925-928,996,997,1002,1003,1010,1017,1036,1037,1043,1077,1078,1080,1156,1157,1164,1187,1188,1198-1200,1203,1208,1209,1215-1217,1230,1241,1254,1256,1257,1277,1278,1283,1288,1303,1306,1315,1319,1320,1329,1330,1333,1334,1344,1350,1358,1361,1366,1377,1385,1424,1429,1468,1474-1477,1488-1490,1494,1502,1506-1510,1525-1527,1538-1540,1543,1548,1574,1578,1581,1585,1588,1590,1596-1600,1603,1608,1610-1615,1617,1619,1620,1626,1628,1636,1643,1647,1648,1661,1686,1689,1690,1745,1748,1750,1752,1754,1762,1764,1765,1767-1769,1794,1808,1811-1814,1827-1829,1881,1946,2005,2007,2011,2017,2034,2035,2041,2052,2053,2063,2066,2068,2069,2077,2089,2092,2093,2098,2100,2118,2128,2131,2132,2136,2138,2143,2144,2147,2180-2182,2222,2238,223
+0x100460c8b  lea     rax, [rsp+251F8h+var_838]
+0x100460c93  add     rax, 800h
+0x100460c99  sub     rax, 2
+0x100460c9d  cmp     [rsp+251F8h+var_23438], rax
+0x100460ca5  jnb     loc_1004676BE
+0x100460cab  movsxd  rax, [rsp+251F8h+var_24FF0]
+0x100460cb3  imul    rax, 2
+0x100460cb7  lea     rcx, qword_102483170
+0x100460cbe  add     rcx, rax
+0x100460cc1  mov     rax, rcx
+0x100460cc4  movzx   eax, word ptr [rax]
+0x100460cc7  mov     [rsp+251F8h+var_2506C], ax
+0x100460ccf  movsx   eax, [rsp+251F8h+var_2506C]
+0x100460cd7  test    eax, eax
+0x100460cd9  jl      loc_1010297EA
+0x100460cdf  movzx   eax, [rsp+251F8h+var_2506C]
+0x100460ce7  mov     [rsp+251F8h+var_25070], ax
+0x100460cef  mov     rax, [rsp+251F8h+var_23438]
+0x100460cf7  add     rax, 2
+0x100460cfb  mov     [rsp+251F8h+var_23438], rax
+0x100460d03  mov     rax, [rsp+251F8h+var_23438]
+0x100460d0b  movzx   ecx, [rsp+251F8h+var_25070]
+0x100460d13  mov     [rax], cx
+0x100460d16  mov     rax, [rsp+251F8h+var_23430]
+0x100460d1e  add     rax, 50h ; 'P'
+0x100460d22  mov     [rsp+251F8h+var_23430], rax
+0x100460d2a  lea     rax, [rsp+251F8h+var_14B18]
+0x100460d32  mov     rdi, [rsp+251F8h+var_23430]
+0x100460d3a  mov     rsi, rax
+0x100460d3d  mov     ecx, 50h ; 'P'
+0x100460d42  rep movsb
+0x100460d44  mov     [rsp+251F8h+var_24FF8], 0FFFFFFFFh
+0x100460d4f  cmp     [rsp+251F8h+var_24FFC], 0
+0x100460d57  jg      loc_101029A24
+0x100460d5d  jmp     loc_100466397
+0x1004660d4  movsxd  rax, [rsp+251F8h+var_24FF0]
+0x1004660dc  imul    rax, 2
+0x1004660e0  lea     rcx, qword_102483170
+0x1004660e7  add     rcx, rax
+0x1004660ea  mov     rax, rcx
+0x1004660ed  movzx   eax, word ptr [rax]
+0x1004660f0  mov     [rsp+251F8h+var_25070], ax
+0x1004660f8  jmp     loc_10046670D
+0x1004660fe  mov     [rsp+251F8h+var_234A0], 0
+0x10046610a  mov     rax, [rsp+251F8h+arg_0]
+0x100466112  add     rax, 0C0h
+0x100466118  mov     [rsp+251F8h+var_23498], rax
+0x100466120  mov     [rsp+251F8h+var_23490], 0
+0x10046612c  mov     [rsp+251F8h+var_23488], 0
+0x100466138  mov     [rsp+251F8h+var_23480], 0
+0x100466144  mov     [rsp+251F8h+var_2503C], 0
+0x10046614f  mov     [rsp+251F8h+var_25038], 0
+0x10046615a  mov     [rsp+251F8h+var_25034], 0
+0x100466165  mov     [rsp+251F8h+var_25030], 0
+0x100466170  mov     dword ptr [rsp+251F8h+var_2502C], 0
+0x10046617b  mov     [rsp+251F8h+var_25028], 0
+0x100466186  mov     [rsp+251F8h+var_25024], 0
+0x100466191  mov     [rsp+251F8h+var_23478], 0
+0x10046619d  mov     [rsp+251F8h+var_23470], 0
+0x1004661a9  mov     [rsp+251F8h+var_25020], 0
+0x1004661b4  mov     [rsp+251F8h+var_2501C], 0
+0x1004661bf  mov     [rsp+251F8h+var_23468], 0
+0x1004661cb  mov     [rsp+251F8h+var_25018], 1
+0x1004661d6  mov     [rsp+251F8h+var_25014], 0FFFFFFFFh
+0x1004661e1  mov     [rsp+251F8h+var_23460], 0
+0x1004661ed  mov     [rsp+251F8h+var_23458], 0
+0x1004661f9  mov     [rsp+251F8h+var_25010], 0
+0x100466204  mov     [rsp+251F8h+var_25158], 0
+0x10046620c  mov     [rsp+251F8h+var_25157], 0
+0x100466214  mov     [rsp+251F8h+var_25156], 0
+0x10046621c  mov     [rsp+251F8h+var_2500C], 0
+0x100466227  mov     [rsp+251F8h+var_25008], 0
+0x100466232  mov     [rsp+251F8h+var_25155], 1
+0x10046623a  mov     [rsp+251F8h+var_25004], 0
+0x100466245  mov     [rsp+251F8h+var_25000], 0
+0x100466250  mov     [rsp+251F8h+var_25154], 0
+0x100466258  mov     rcx, [rsp+251F8h+arg_0]; this
+0x100466260  call    ?PDBSOpt@CParser@@QEBAPEAVCDbAndSetOpts@@XZ; CParser::PDBSOpt(void)
+0x100466265  mov     rcx, rax; this
+0x100466268  call    ?FQuotedIdentOn@CDbAndSetOpts@@QEBA_NXZ; CDbAndSetOpts::FQuotedIdentOn(void)
+0x10046626d  mov     [rsp+251F8h+var_25150], al
+0x100466274  mov     rcx, [rsp+251F8h+arg_0]; this
+0x10046627c  call    ?PDBSOpt@CParser@@QEBAPEAVCDbAndSetOpts@@XZ; CParser::PDBSOpt(void)
+0x100466281  mov     [rsp+251F8h+var_23450], rax
+0x100466289  lea     rdx, [rsp+251F8h+var_908]; struct CCompExecCtxt *
+0x100466291  mov     ecx, 20h ; ' '; this
+0x100466296  call    ?RefCXCtxtS@CAutoSetStCS@@QEBAAEBVCCompExecCtxtStmt@@AEBVCCompExecCtxt@@@Z; CAutoSetStCS::RefCXCtxtS(CCompExecCtxt const &)
+0x10046629b  mov     [rsp+251F8h+var_23448], rax
+0x1004662a3  mov     rax, [rsp+251F8h+var_23448]
+0x1004662ab  add     rax, 8
+0x1004662af  mov     [rsp+251F8h+var_23440], rax
+0x1004662b7  mov     rax, [rsp+251F8h+var_23440]
+0x1004662bf  mov     rcx, [rsp+251F8h+var_23450]
+0x1004662c7  mov     [rax], rcx
+0x1004662ca  mov     rax, [rsp+251F8h+var_23440]
+0x1004662d2  add     rax, 8
+0x1004662d6  lea     rcx, ?SetQuotedIdent@CDbAndSetOpts@@QEAAX_N@Z; CDbAndSetOpts::SetQuotedIdent(bool)
+0x1004662dd  mov     [rax], rcx
+0x1004662e0  mov     rax, [rsp+251F8h+var_23440]
+0x1004662e8  add     rax, 10h
+0x1004662ec  movzx   ecx, [rsp+251F8h+var_25150]
+0x1004662f4  mov     [rax], cl
+0x1004662f6  mov     rdi, [rsp+251F8h+var_23448]
+0x1004662fe  xor     eax, eax
+0x100466300  mov     ecx, 8
+0x100466305  rep stosb
+0x100466307  mov     rcx, [rsp+251F8h+var_23448]
+0x10046630f  call    ??0?$FunctorVirtualBase@X@@QEAA@XZ; FunctorVirtualBase<void>::FunctorVirtualBase<void>(void)
+0x100466314  mov     rax, [rsp+251F8h+var_23448]
+0x10046631c  lea     rcx, ??_7?$MethodCallBinderVirtual_1@XVCSequenceProjectContext@@P81@EAAX_N@Z_N@@6B@; const MethodCallBinderVirtual_1<void,CSequenceProjectContext,void (CSequenceProjectContext::*)(bool),bool>::`vftable'
+0x100466323  mov     [rax], rcx
+0x100466326  lea     r8, [rsp+251F8h+var_25154]
+0x10046632e  mov     rdx, [rsp+251F8h+var_23448]
+0x100466336  lea     rcx, [rsp+251F8h+var_182A8]
+0x10046633e  call    ??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$Allocator@D@Sql@Babylon@Microsoft@@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$Allocator@D@Sql@Babylon@Microsoft@@@1@0@Z; std::initializer_list<std::basic_string<char,std::char_traits<char>,Microsoft::Babylon::Sql::Allocator<char>>>::initializer_list<std::basic_string<char,std::char_traits<char>,Microsoft::Babylon::Sql::Allocator<char>>>(std::basic_string<char,std::char_traits<char>,Microsoft::Babylon::Sql::Allocator<char>> const *,std::basic_string<char,std::char_traits<char>,Microsoft::Babylon::Sql::Allocator<char>> const *)
+0x100466343  nop
+0x100466344  mov     [rsp+251F8h+var_24FFC], 0
+0x10046634f  mov     [rsp+251F8h+var_24FF8], 0FFFFFFFFh
+0x10046635a  lea     rax, [rsp+251F8h+var_838]
+0x100466362  mov     [rsp+251F8h+var_23438], rax
+0x10046636a  lea     rax, [rsp+251F8h+var_14928]
+0x100466372  mov     [rsp+251F8h+var_23430], rax
+0x10046637a  xor     eax, eax
+0x10046637c  mov     [rsp+251F8h+var_25070], ax
+0x100466384  mov     rax, [rsp+251F8h+var_23438]
+0x10046638c  movzx   ecx, [rsp+251F8h+var_25070]
+0x100466394  mov     [rax], cx
+0x100466397  xor     eax, eax
+0x100466399  cmp     eax, 1
+0x10046639c  jz      loc_1010EFBFE
+0x1004663a2  mov     rax, [rsp+251F8h+arg_0]
+0x1004663aa  add     rax, 25B8h
+0x1004663b0  mov     rcx, rax; this
+0x1004663b3  call    ?YieldIfNecessary@CFastYield@@QEAA_NXZ; CFastYield::YieldIfNecessary(void)
+0x1004663b8  movsx   rax, [rsp+251F8h+var_25070]
+0x1004663c1  imul    rax, 2
+0x1004663c5  lea     rcx, qword_10246D280
+0x1004663cc  add     rcx, rax
+0x1004663cf  mov     rax, rcx
+0x1004663d2  movsx   eax, word ptr [rax]
+0x1004663d5  mov     [rsp+251F8h+var_24FF4], eax
+0x1004663dc  cmp     [rsp+251F8h+var_24FF4], 0
+0x1004663e4  jnz     loc_100466788
+0x1004663ea  cmp     [rsp+251F8h+var_24FF8], 0
+0x1004663f2  jl      loc_10046678E
+0x1004663f8  movsx   rax, [rsp+251F8h+var_25070]
+0x100466401  imul    rax, 4
+0x100466405  lea     rcx, qword_10247A510
+0x10046640c  add     rcx, rax
+0x10046640f  mov     rax, rcx
+0x100466412  mov     eax, [rax]
+0x100466414  mov     [rsp+251F8h+var_24FF0], eax
+0x10046641b  cmp     [rsp+251F8h+var_24FF0], 0
+0x100466423  jz      short loc_10046647E
+0x100466425  mov     eax, [rsp+251F8h+var_24FF8]
+0x10046642c  mov     ecx, [rsp+251F8h+var_24FF0]
+0x100466433  add     ecx, eax
+0x100466435  mov     eax, ecx
+0x100466437  mov     [rsp+251F8h+var_24FF0], eax
+0x10046643e  cmp     [rsp+251F8h+var_24FF0], 0
+0x100466446  jl      short loc_10046647E
+0x100466448  cmp     [rsp+251F8h+var_24FF0], 23135h
+0x100466453  jg      short loc_10046647E
+0x100466455  movsxd  rax, [rsp+251F8h+var_24FF0]
+0x10046645d  imul    rax, 2
+0x100466461  lea     rcx, qword_1024CA580
+0x100466468  add     rcx, rax
+0x10046646b  mov     rax, rcx
+0x10046646e  movsx   eax, word ptr [rax]
+0x100466471  cmp     eax, [rsp+251F8h+var_24FF8]
+0x100466478  jz      loc_100460C8B
+0x10046647e  movsx   rax, [rsp+251F8h+var_25070]
+0x100466487  imul    rax, 4
+0x10046648b  lea     rcx, qword_1024718B0
+0x100466492  add     rcx, rax
+0x100466495  mov     rax, rcx
+0x100466498  mov     eax, [rax]
+0x10046649a  mov     [rsp+251F8h+var_24FF0], eax
+0x1004664a1  cmp     [rsp+251F8h+var_24FF0], 0
+0x1004664a9  jz      loc_101029852
+0x1004664af  mov     eax, [rsp+251F8h+var_24FF8]
+0x1004664b6  mov     ecx, [rsp+251F8h+var_24FF0]
+0x1004664bd  add     ecx, eax
+0x1004664bf  mov     eax, ecx
+0x1004664c1  mov     [rsp+251F8h+var_24FF0], eax
+0x1004664c8  cmp     [rsp+251F8h+var_24FF0], 0
+0x1004664d0  jl      loc_101029852
+0x1004664d6  cmp     [rsp+251F8h+var_24FF0], 23135h
+0x1004664e1  jg      loc_101029852
+0x1004664e7  movsxd  rax, [rsp+251F8h+var_24FF0]
+0x1004664ef  imul    rax, 2
+0x1004664f3  lea     rcx, qword_1024CA580
+0x1004664fa  add     rcx, rax
+0x1004664fd  mov     rax, rcx
+0x100466500  movsx   eax, word ptr [rax]
+0x100466503  cmp     eax, [rsp+251F8h+var_24FF8]
+0x10046650a  jnz     loc_101029852
+0x100466510  movsxd  rax, [rsp+251F8h+var_24FF0]
+0x100466518  imul    rax, 2
+0x10046651c  lea     rcx, qword_102483170
+0x100466523  add     rcx, rax
+0x100466526  mov     rax, rcx
+0x100466529  movsx   eax, word ptr [rax]
+0x10046652c  mov     [rsp+251F8h+var_24FF4], eax
+0x100466533  jmp     short loc_100466536
+0x100466536  movsxd  rax, [rsp+251F8h+var_24FF4]
+0x10046653e  imul    rax, 1
+0x100466542  lea     rcx, qword_102468A00
+0x100466549  add     rcx, rax
+0x10046654c  mov     rax, rcx
+0x10046654f  movzx   eax, byte ptr [rax]
+0x100466552  mov     [rsp+251F8h+var_24FE8], eax
+0x100466559  mov     eax, [rsp+251F8h+var_24FE8]
+0x100466560  dec     eax
+0x100466562  neg     eax
+0x100466564  cdqe
+0x100466566  imul    rax, 50h ; 'P'
+0x10046656a  mov     rcx, [rsp+251F8h+var_23430]
+0x100466572  add     rcx, rax
+0x100466575  mov     rax, rcx
+0x100466578  lea     rcx, [rsp+251F8h+var_14B68]
+0x100466580  mov     rdi, rcx
+0x100466583  mov     rsi, rax
+0x100466586  mov     ecx, 50h ; 'P'
+0x10046658b  rep movsb
+0x10046658d  mov     eax, [rsp+251F8h+var_24FF4]
+0x100466594  mov     [rsp+251F8h+var_24FE4], eax
+0x10046659b  mov     eax, [rsp+251F8h+var_24FE4]
+0x1004665a2  sub     eax, 7; switch 4652 cases
+0x1004665a5  mov     [rsp+251F8h+var_24FE4], eax
+0x1004665ac  cmp     [rsp+251F8h+var_24FE4], 122Bh
+0x1004665b7  ja      short def_1004665D2; jumptable 00000001004665D2 default case, cases 14-22,24-26,30-33,46,50,53,56,61-82,86-93,95-97,99-322,336,340,342,345,347-349,351,364,365,378-381,384-386,416,422,424,444,449,454,463,466,479,482-485,495,496,500,501,509,539,546,547,641,648,709,711,712,745,746,749-752,758,760,762,769-774,861,868-870,917,922,923,925-928,996,997,1002,1003,1010,1017,1036,1037,1043,1077,1078,1080,1156,1157,1164,1187,1188,1198-1200,1203,1208,1209,1215-1217,1230,1241,1254,1256,1257,1277,1278,1283,1288,1303,1306,1315,1319,1320,1329,1330,1333,1334,1344,1350,1358,1361,1366,1377,1385,1424,1429,1468,1474-1477,1488-1490,1494,1502,1506-1510,1525-1527,1538-1540,1543,1548,1574,1578,1581,1585,1588,1590,1596-1600,1603,1608,1610-1615,1617,1619,1620,1626,1628,1636,1643,1647,1648,1661,1686,1689,1690,1745,1748,1750,1752,1754,1762,1764,1765,1767-1769,1794,1808,1811-1814,1827-1829,1881,1946,2005,2007,2011,2017,2034,2035,2041,2052,2053,2063,2066,2068,2069,2077,2089,2092,2093,2098,2100,2118,2128,2131,2132,2136,2138,2143,2144,2147,2180-2182,2222,2238,223
+0x1004665b9  movsxd  rax, [rsp+251F8h+var_24FE4]
+0x1004665c1  lea     rcx, ?m_szName@CXplOp_ParameterSensitivePredicate@@0QEBDEB; this
+0x1004665c8  mov     eax, ds:(jpt_1004665D2 - 100400000h)[rcx+rax*4]
+0x1004665cf  add     rax, rcx
+0x1004665d2  jmp     rax; switch jump
+0x1004665d5  movsxd  rax, [rsp+251F8h+var_24FE8]; jumptable 00000001004665D2 default case, cases 14-22,24-26,30-33,46,50,53,56,61-82,86-93,95-97,99-322,336,340,342,345,347-349,351,364,365,378-381,384-386,416,422,424,444,449,454,463,466,479,482-485,495,496,500,501,509,539,546,547,641,648,709,711,712,745,746,749-752,758,760,762,769-774,861,868-870,917,922,923,925-928,996,997,1002,1003,1010,1017,1036,1037,1043,1077,1078,1080,1156,1157,1164,1187,1188,1198-1200,1203,1208,1209,1215-1217,1230,1241,1254,1256,1257,1277,1278,1283,1288,1303,1306,1315,1319,1320,1329,1330,1333,1334,1344,1350,1358,1361,1366,1377,1385,1424,1429,1468,1474-1477,1488-1490,1494,1502,1506-1510,1525-1527,1538-1540,1543,1548,1574,1578,1581,1585,1588,1590,1596-1600,1603,1608,1610-1615,1617,1619,1620,1626,1628,1636,1643,1647,1648,1661,1686,1689,1690,1745,1748,1750,1752,1754,1762,1764,1765,1767-1769,1794,1808,1811-1814,1827-1829,1881,1946,2005,2007,2011,2017,2034,2035,2041,2052,2053,2063,2066,2068,2069,2077,2089,2092,2093,2098,2100,2118,2128,2131,2132,2136,2138,2143,2144,2147,2180-2182,2222,2238,223
+  ... truncated ...
+```

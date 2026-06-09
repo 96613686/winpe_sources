@@ -1,0 +1,248 @@
+# rbioActorsProgressSubCommand
+
+- ea: `0x101345940`
+- end: `0x101346c62`
+- name: `rbioActorsProgressSubCommand`
+- size: `4898`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `16`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x101346c70`
+- `0x101347b90`
+
+## callees
+
+- `0x100401070`
+- `0x100401090`
+- `0x100401433`
+- `0x100403080`
+- `0x100422f40`
+- `0x10042dc70`
+- `0x1011ebad0`
+- `0x1011ec140`
+- `0x101300f80`
+- `0x10133dca0`
+- `0x101345940`
+- `0x101e472e0`
+- `0x101e61b40`
+- `0x101e88db0`
+- `0x101e88fe0`
+- `0x101ec5660`
+
+## import_xrefs
+
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x101345e0e`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x101345f08`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x1013460ec`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x101346bbd`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x101346bbd`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345b07`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345c54`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345ca4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345d08`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345da4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345e38`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345e97`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345ec8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10134625a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013462c7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101346325`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345b07`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345c54`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345ca4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345d08`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345da4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345e38`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345e97`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101345ec8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x10134625a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1013462c7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101346325`
+- `sqldk!SystemThread_TlsIndex` at `0x1013459b3`
+- `sqldk!SystemThread_TlsIndex` at `0x101346b85`
+- `sqldk!SystemThread_TlsOffset` at `0x1013459bd`
+- `sqldk!SystemThread_TlsOffset` at `0x101346b8e`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1013459d8`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101346ba7`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1013459d8`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101346ba7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101346bcc`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101346bdb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101346c2f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101346bcc`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101346bdb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101346c2f`
+- `sqlTsEs!?InitSpace@CXVariant@@QEAAXPEAVIMemObj@@PEBVCTypeInfo@@K@Z` at `0x101345bd6`
+- `sqlTsEs!?InitSpace@CXVariant@@QEAAXPEAVIMemObj@@PEBVCTypeInfo@@K@Z` at `0x101345bd6`
+- `sqlTsEs!?PwszXvtName@@YAPEB_WE@Z` at `0x101345c26`
+- `sqlTsEs!?PwszXvtName@@YAPEB_WE@Z` at `0x101345c34`
+- `sqlTsEs!?PwszXvtName@@YAPEB_WE@Z` at `0x101345c26`
+- `sqlTsEs!?PwszXvtName@@YAPEB_WE@Z` at `0x101345c34`
+- `sqlTsEs!?ConvertToWstr@SQLDATE@@QEBAJPEA_WKPEAKJPEBQEB_WW4EPadding@@@Z` at `0x1013466b5`
+- `sqlTsEs!?ConvertToWstr@SQLDATE@@QEBAJPEA_WKPEAKJPEBQEB_WW4EPadding@@@Z` at `0x101346937`
+- `sqlTsEs!?ConvertToWstr@SQLDATE@@QEBAJPEA_WKPEAKJPEBQEB_WW4EPadding@@@Z` at `0x101346a73`
+- `sqlTsEs!?ConvertToWstr@SQLDATE@@QEBAJPEA_WKPEAKJPEBQEB_WW4EPadding@@@Z` at `0x101346b05`
+- `sqlTsEs!?ConvertToWstr@SQLDATE@@QEBAJPEA_WKPEAKJPEBQEB_WW4EPadding@@@Z` at `0x1013466b5`
+- `sqlTsEs!?ConvertToWstr@SQLDATE@@QEBAJPEA_WKPEAKJPEBQEB_WW4EPadding@@@Z` at `0x101346937`
+- `sqlTsEs!?ConvertToWstr@SQLDATE@@QEBAJPEA_WKPEAKJPEBQEB_WW4EPadding@@@Z` at `0x101346a73`
+- `sqlTsEs!?ConvertToWstr@SQLDATE@@QEBAJPEA_WKPEAKJPEBQEB_WW4EPadding@@@Z` at `0x101346b05`
+- `sqlmin!?GetSeReportFailure@@YAPEAVSeReportFailure@@XZ` at `0x101346213`
+- `sqlmin!?GetSeReportFailure@@YAPEAVSeReportFailure@@XZ` at `0x101346213`
+- `sqlmin!?IsRbIoForwarderMode@RecoveryUnit@@QEBA_NXZ` at `0x101345ee2`
+- `sqlmin!?IsRbIoForwarderMode@RecoveryUnit@@QEBA_NXZ` at `0x10134608d`
+- `sqlmin!?IsRbIoForwarderMode@RecoveryUnit@@QEBA_NXZ` at `0x101345ee2`
+- `sqlmin!?IsRbIoForwarderMode@RecoveryUnit@@QEBA_NXZ` at `0x10134608d`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346397`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013463b8`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013463d4`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013463f0`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134640c`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346428`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346444`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346460`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134647f`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134649b`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013464b7`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013464d3`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013464f2`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134650e`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134652d`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346549`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346568`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346584`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346397`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013463b8`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013463d4`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013463f0`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134640c`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346428`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346444`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346460`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134647f`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134649b`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013464b7`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013464d3`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x1013464f2`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134650e`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x10134652d`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346549`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346568`
+- `sqlmin!?AddNewColumn@BackupResultSet@@IEAAXPEB_WW4ColumnType@BackupColumn@@I@Z` at `0x101346584`
+- `sqlmin!??0BackupResultSet@@QEAA@PEAVBackupOperation@@KPEAVIMemObj@@@Z` at `0x101345aa6`
+- `sqlmin!??0BackupResultSet@@QEAA@PEAVBackupOperation@@KPEAVIMemObj@@@Z` at `0x101345aa6`
+- `sqlmin!??1BackupResultSet@@QEAA@XZ` at `0x101346bea`
+- `sqlmin!??1BackupResultSet@@QEAA@XZ` at `0x101346bea`
+- `sqlmin!?GetBlankRow@BackupResultSet@@UEAAPEAVBackupResultSetRow@@XZ` at `0x1013465a4`
+- `sqlmin!?GetBlankRow@BackupResultSet@@UEAAPEAVBackupResultSetRow@@XZ` at `0x101346844`
+- `sqlmin!?GetBlankRow@BackupResultSet@@UEAAPEAVBackupResultSetRow@@XZ` at `0x1013465a4`
+- `sqlmin!?GetBlankRow@BackupResultSet@@UEAAPEAVBackupResultSetRow@@XZ` at `0x101346844`
+- `sqlmin!?SetLongColumn@BackupResultSetRow@@QEAAXJ@Z` at `0x1013465ff`
+- `sqlmin!?SetLongColumn@BackupResultSetRow@@QEAAXJ@Z` at `0x10134689e`
+- `sqlmin!?SetLongColumn@BackupResultSetRow@@QEAAXJ@Z` at `0x1013465ff`
+- `sqlmin!?SetLongColumn@BackupResultSetRow@@QEAAXJ@Z` at `0x10134689e`
+- `sqlmin!?CompleteAndSendRow@BackupResultSet@@UEAAXPEAVBackupResultSetRow@@@Z` at `0x1013467d7`
+- `sqlmin!?CompleteAndSendRow@BackupResultSet@@UEAAXPEAVBackupResultSetRow@@@Z` at `0x101346b46`
+- `sqlmin!?CompleteAndSendRow@BackupResultSet@@UEAAXPEAVBackupResultSetRow@@@Z` at `0x1013467d7`
+- `sqlmin!?CompleteAndSendRow@BackupResultSet@@UEAAXPEAVBackupResultSetRow@@@Z` at `0x101346b46`
+- `sqlmin!?EndResultSet@BackupResultSet@@QEAAXH@Z` at `0x101346b71`
+- `sqlmin!?EndResultSet@BackupResultSet@@QEAAXH@Z` at `0x101346b71`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013465cc`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013466d8`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x10134672a`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x10134677d`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013467ad`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101346875`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x10134695a`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101346a04`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101346a96`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101346b28`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013465cc`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013466d8`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x10134672a`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x10134677d`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x1013467ad`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101346875`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x10134695a`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101346a04`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101346a96`
+- `sqlmin!?SetStringColumn@BackupResultSetRow@@QEAAXPEFB_WH@Z` at `0x101346b28`
+- `sqlmin!?SetBoolColumn@BackupResultSetRow@@QEAAXH@Z` at `0x1013465b5`
+- `sqlmin!?SetBoolColumn@BackupResultSetRow@@QEAAXH@Z` at `0x10134685e`
+- `sqlmin!?SetBoolColumn@BackupResultSetRow@@QEAAXH@Z` at `0x1013465b5`
+- `sqlmin!?SetBoolColumn@BackupResultSetRow@@QEAAXH@Z` at `0x10134685e`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346631`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x10134664a`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013466f1`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346713`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346743`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346796`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013467c6`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013468c8`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013468e5`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346977`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346991`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346a21`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346ab3`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346b35`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346631`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x10134664a`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013466f1`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346713`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346743`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346796`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013467c6`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013468c8`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x1013468e5`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346977`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346991`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346a21`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346ab3`
+- `sqlmin!?SetLongLongColumn@BackupResultSetRow@@QEAAXAEB_J@Z` at `0x101346b35`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x1013465dd`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x1013465ee`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x101346702`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x101346886`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x101346892`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x101346984`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x1013465dd`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x1013465ee`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x101346702`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x101346886`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x101346892`
+- `sqlmin!?SetGuidColumn@BackupResultSetRow@@QEAAXAEBU_GUID@@@Z` at `0x101346984`
+- `sqlmin!?SetShortColumn@BackupResultSetRow@@QEAAXF@Z` at `0x101346610`
+- `sqlmin!?SetShortColumn@BackupResultSetRow@@QEAAXF@Z` at `0x1013468ab`
+- `sqlmin!?SetShortColumn@BackupResultSetRow@@QEAAXF@Z` at `0x101346610`
+- `sqlmin!?SetShortColumn@BackupResultSetRow@@QEAAXF@Z` at `0x1013468ab`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x101346014`
+- `sqlmin!?CbLogicalDbNameInternal@DBTABLE@@QEBAKXZ` at `0x101346014`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x10134602b`
+- `sqlmin!?LogicalDbNameInternal@DBTABLE@@QEBAPEB_WXZ` at `0x10134602b`
+- `sqlmin!?utgettime@@YAXPEAUSQLDATEBASE@@HPEA_N@Z` at `0x10134665f`
+- `sqlmin!?utgettime@@YAXPEAUSQLDATEBASE@@HPEA_N@Z` at `0x10134665f`
+- `rbio!RbIoFsGetVlfLayoutDef` at `0x101345fcb`
+- `rbio!RbIoFsGetVlfLayoutDef` at `0x101345fcb`
+- `rbio!RbIoConnectionFind` at `0x101345e4b`
+- `rbio!RbIoConnectionFind` at `0x101345e4b`
+- `rbio!RbIoConnectionRelease` at `0x101346c19`
+- `rbio!RbIoConnectionRelease` at `0x101346c19`
+- `rbio!RbIoInitializeAsClientIfNeeded` at `0x101346223`
+- `rbio!RbIoInitializeAsClientIfNeeded` at `0x101346223`
+- `rbio!RbIoConnectionOpen` at `0x101346272`
+- `rbio!RbIoConnectionOpen` at `0x101346272`
+- `rbio!RbIoXlogGetVlfDefinition` at `0x1013462e0`
+
+## string_xrefs
+
+- `0x101346299`: `'RbIoConnectionOpen' failure. HRESULT: %lx.\n`
+- `0x101346470`: `LastUpdated`
+
+## pseudocode
+
+```c
+
+```

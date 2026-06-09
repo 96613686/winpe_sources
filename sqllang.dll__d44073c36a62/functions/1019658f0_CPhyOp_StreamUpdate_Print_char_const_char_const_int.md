@@ -1,0 +1,229 @@
+# CPhyOp_StreamUpdate::Print(char const *,char const *,int)
+
+- ea: `0x1019658f0`
+- end: `0x101966598`
+- name: `?Print@CPhyOp_StreamUpdate@@UEAAXPEBD0H@Z`
+- size: `3240`
+- prototype: `void(CPhyOp_StreamUpdate *__hidden this, const char *, const char *, int)`
+- caller_count: `0`
+- callee_count: `7`
+- tags: `installer_update`
+
+## callees
+
+- `0x100aac440`
+- `0x100aac570`
+- `0x101952140`
+- `0x1019658f0`
+- `0x1019c2b80`
+- `0x1019c2f60`
+- `0x1019c3360`
+
+## import_xrefs
+
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x10196593b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019659e7`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965a18`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965a49`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965a88`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965aa1`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965ae1`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965b21`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965b7f`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965bdb`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965c29`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965c6a`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965cc9`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965d17`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965d5b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965dc0`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965e0e`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965e4e`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965f0b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965f4b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965f97`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965feb`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x10196603f`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101966093`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019660e7`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x10196612c`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101966187`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019661ba`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x10196620b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019662b9`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101966305`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019663ce`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101966503`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x10196593b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019659e7`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965a18`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965a49`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965a88`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965aa1`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965ae1`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965b21`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965b7f`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965bdb`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965c29`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965c6a`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965cc9`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965d17`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965d5b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965dc0`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965e0e`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965e4e`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965f0b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965f4b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965f97`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101965feb`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x10196603f`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101966093`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019660e7`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x10196612c`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101966187`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019661ba`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x10196620b`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019662b9`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101966305`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x1019663ce`
+- `sqldk!?GetStream@TraceStreamHolder@@QEAAAEAVSOS_TraceStream@@XZ` at `0x101966503`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196594b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196597c`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019659a1`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019659f7`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965a28`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965a59`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965ab1`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965af1`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965b31`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965b8f`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965bf8`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965c39`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965c7a`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965ce6`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965d27`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965d6b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965ddd`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965e1e`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965e5e`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965f1b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965f5b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965fa7`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965ffb`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196604f`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019660a3`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019660f7`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196613c`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101966197`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019661ca`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196621b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019662c9`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101966315`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019663de`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101966513`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196653c`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196594b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196597c`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019659a1`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019659f7`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965a28`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965a59`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965ab1`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965af1`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965b31`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965b8f`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965bf8`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965c39`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965c7a`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965ce6`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965d27`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965d6b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965ddd`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965e1e`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965e5e`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965f1b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965f5b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965fa7`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101965ffb`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196604f`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019660a3`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019660f7`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196613c`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101966197`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019661ca`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196621b`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019662c9`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101966315`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x1019663de`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x101966513`
+- `sqldk!??0TraceStreamProtector@@QEAA@AEAVSOS_TraceStream@@@Z` at `0x10196653c`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965963`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965994`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019659bd`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965a75`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965acd`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965b0d`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965b4d`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965bab`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965c14`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965c55`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965c96`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965d02`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965d43`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965d87`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965df9`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965e3a`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965e7a`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965f37`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965f77`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965fc3`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966017`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x10196606b`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019660bf`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966113`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966158`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019661ab`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019661e6`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966237`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019662e5`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966335`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019663f2`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x10196652f`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966555`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965963`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965994`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019659bd`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965a75`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965acd`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965b0d`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965b4d`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965bab`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965c14`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965c55`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965c96`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965d02`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965d43`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965d87`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965df9`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965e3a`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965e7a`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965f37`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965f77`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101965fc3`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966017`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x10196606b`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019660bf`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966113`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966158`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019661ab`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019661e6`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966237`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019662e5`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x101966335`
+- `sqldk!??1TraceStreamProtector@@QEAA@XZ` at `0x1019663f2`
+
+## pseudocode
+
+```c
+
+```
