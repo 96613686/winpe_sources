@@ -1,0 +1,31 @@
+# __GetStoreInstallPath_::_1_::dtor$4
+
+- ea: `0x18000c107`
+- end: `0x18000c113`
+- name: `__GetStoreInstallPath_::_1_::dtor$4`
+- size: `12`
+- prototype: `__int64 __fastcall(__int64, __int64)`
+- caller_count: `0`
+- callee_count: `1`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callees
+
+- `0x1800068a4`
+
+## pseudocode
+
+```c
+__int64 __fastcall _GetStoreInstallPath_::_1_::dtor_4(__int64 a1, __int64 a2)
+{
+  return wil::com_ptr_t<Windows::Storage::IApplicationDataStatics,wil::err_returncode_policy>::~com_ptr_t<Windows::Storage::IApplicationDataStatics,wil::err_returncode_policy>((__int64 *)(a2 + 88));
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000c107  lea     rcx, [rdx+58h]
+0x18000c10e  jmp     ??1?$com_ptr_t@UIApplicationDataStatics@Storage@Windows@@Uerr_returncode_policy@wil@@@wil@@QEAA@XZ; wil::com_ptr_t<Windows::Storage::IApplicationDataStatics,wil::err_returncode_policy>::~com_ptr_t<Windows::Storage::IApplicationDataStatics,wil::err_returncode_policy>(void)
+```

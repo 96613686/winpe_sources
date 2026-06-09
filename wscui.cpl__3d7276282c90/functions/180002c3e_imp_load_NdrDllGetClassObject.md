@@ -1,0 +1,35 @@
+# __imp_load_NdrDllGetClassObject
+
+- ea: `0x180002c3e`
+- end: `0x180002c4a`
+- name: `__imp_load_NdrDllGetClassObject`
+- size: `12`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `1`
+- tags: `loader_planting`
+
+## callees
+
+- `0x180002b86`
+
+## import_xrefs
+
+- `RPCRT4!NdrDllGetClassObject` at `0x180002c3e`
+
+## pseudocode
+
+```c
+__int64 load_NdrDllGetClassObject()
+{
+  return _tailMerge_rpcrt4_dll();
+}
+
+```
+
+## disassembly
+
+```asm
+0x180002c3e  lea     rax, __imp_NdrDllGetClassObject
+0x180002c45  jmp     __tailMerge_rpcrt4_dll
+```
