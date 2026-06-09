@@ -1,0 +1,1254 @@
+# App::ParseCommandLine(void)
+
+- ea: `0x14001c9e4`
+- end: `0x14001d98f`
+- name: `?ParseCommandLine@App@@SAKXZ`
+- size: `4011`
+- prototype: `unsigned int(void)`
+- caller_count: `1`
+- callee_count: `34`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x14001a54c`
+
+## callees
+
+- `0x140004170`
+- `0x140005d78`
+- `0x140005f10`
+- `0x140005f4c`
+- `0x1400085b4`
+- `0x14000a8d8`
+- `0x14000d35c`
+- `0x14000e17c`
+- `0x140016480`
+- `0x140016954`
+- `0x140016d04`
+- `0x140017af0`
+- `0x140018318`
+- `0x14001854c`
+- `0x140018920`
+- `0x14001942c`
+- `0x140019bd8`
+- `0x140019e1c`
+- `0x14001c02c`
+- `0x14001c0b4`
+- `0x14001c698`
+- `0x14001c9e4`
+- `0x14001d9d4`
+- `0x14001da6c`
+- `0x14001dc0c`
+- `0x14001dd60`
+- `0x14001ddf4`
+- `0x14001def8`
+- `0x14003f8e0`
+- `0x14003fa8c`
+- `0x14004eb34`
+- `0x14004ebe8`
+- `0x14004fce4`
+- `0x14004fe00`
+
+## import_xrefs
+
+- `KERNEL32!OpenEventW` at `0x14001d269`
+- `KERNEL32!OpenEventW` at `0x14001d377`
+- `KERNEL32!OpenEventW` at `0x14001d269`
+- `KERNEL32!OpenEventW` at `0x14001d377`
+- `KERNEL32!GetLastError` at `0x14001d27b`
+- `KERNEL32!GetLastError` at `0x14001d2a5`
+- `KERNEL32!GetLastError` at `0x14001d27b`
+- `KERNEL32!GetLastError` at `0x14001d2a5`
+- `KERNEL32!SetLastError` at `0x14001d29f`
+- `KERNEL32!SetLastError` at `0x14001d29f`
+
+## string_xrefs
+
+- `0x14001cd90`: `no file name after the -txml switch`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=8
+__int64 App::ParseCommandLine(void)
+{
+  __int64 v0; // rax
+  __int64 v1; // rcx
+  _QWORD *v2; // rax
+  __int64 v3; // rcx
+  unsigned __int16 v4; // r9
+  __int64 v5; // rax
+  __int64 v6; // rax
+  unsigned __int16 v7; // r9
+  __int64 v8; // rax
+  unsigned __int16 v9; // r9
+  _QWORD **v10; // rcx
+  __int64 v11; // rax
+  __int64 v12; // r9
+  __int64 v13; // rax
+  bool v14; // al
+  __int64 v15; // rax
+  _QWORD *v16; // rbx
+  __int64 v17; // rdx
+  __int64 v18; // rax
+  __int64 v19; // rdx
+  __int64 v20; // rax
+  __int64 v21; // r9
+  __int64 v22; // rax
+  __int64 v23; // r9
+  __int64 v25; // rax
+  __int64 v26; // r9
+  __int64 v27; // rbx
+  __int64 v28; // rax
+  __int64 v29; // r9
+  _QWORD *next_cl_token; // rax
+  __int64 v31; // rax
+  __int64 v32; // rax
+  __int64 v33; // rax
+  __int64 v34; // rax
+  __int64 v35; // r9
+  __int64 v36; // rax
+  __int64 v37; // r9
+  __int64 v38; // rax
+  __int64 v39; // r9
+  _QWORD *v40; // rax
+  unsigned __int16 v41; // r9
+  _QWORD *v42; // rbx
+  unsigned int v43; // ebx
+  int v44; // r8d
+  __int64 v45; // rax
+  __int64 v46; // rax
+  __int64 v47; // r9
+  __int64 v48; // rax
+  __int64 v49; // r9
+  _QWORD *v50; // rax
+  _QWORD *v51; // rax
+  _QWORD *v52; // rbx
+  __int64 v53; // rax
+  __int64 v54; // rax
+  __int64 v55; // r9
+  __int64 v56; // rax
+  __int64 v57; // r9
+  _QWORD *v58; // rax
+  _QWORD *v59; // rbx
+  __int64 v60; // rax
+  __int64 v61; // rax
+  __int64 v62; // r9
+  __int64 v63; // rax
+  __int64 v64; // r9
+  _QWORD *v65; // rax
+  _QWORD *v66; // rbx
+  __int64 v67; // rax
+  __int64 v68; // rax
+  __int64 v69; // r9
+  __int64 v70; // rax
+  __int64 v71; // r9
+  _QWORD *v72; // rax
+  _QWORD *v73; // rbx
+  __int64 v74; // rax
+  __int64 v75; // rax
+  __int64 v76; // r9
+  __int64 v77; // rax
+  __int64 v78; // r9
+  __int64 v79; // rax
+  __int64 v80; // rax
+  __int64 v81; // rax
+  __int64 v82; // r9
+  __int64 v83; // rax
+  __int64 v84; // r9
+  _QWORD *v85; // rax
+  unsigned __int16 v86; // r9
+  double *v87; // rcx
+  DWORD LastError; // edi
+  unsigned __int16 v89; // r9
+  __int64 v90; // rax
+  __int64 v91; // r9
+  __int64 v92; // rax
+  __int64 v93; // r9
+  _QWORD *v94; // rax
+  unsigned __int16 v95; // r9
+  unsigned int v96; // ebx
+  int v97; // r8d
+  __int64 v98; // rax
+  __int64 v99; // r9
+  __int64 v100; // rax
+  __int64 v101; // r9
+  __int64 v102; // rax
+  __int64 v103; // rax
+  __int64 v104; // r9
+  __int64 v105; // rax
+  __int64 v106; // r9
+  __int64 v107; // rax
+  __int64 v108; // r9
+  __int64 v109; // rax
+  __int64 v110; // r9
+  __int64 v111; // rax
+  __int64 v112; // r9
+  unsigned __int16 v113; // r9
+  __int64 v114; // rax
+  __int64 v115; // r9
+  unsigned __int64 **v116; // rax
+  unsigned __int64 v117; // rbx
+  __int64 v118; // rax
+  __int64 v119; // rax
+  __int64 v120; // r9
+  unsigned __int16 v121; // r9
+  __int64 v122; // rax
+  __int64 v123; // r9
+  unsigned __int64 **v124; // rax
+  unsigned __int64 v125; // rbx
+  __int64 v126; // rax
+  __int64 v127; // r9
+  unsigned __int16 v128; // r9
+  __int64 v129; // rax
+  __int64 v130; // r9
+  unsigned __int64 **v131; // rax
+  unsigned __int64 v132; // rbx
+  __int64 v133; // rax
+  __int64 v134; // r9
+  unsigned __int16 v135; // r9
+  __int64 v136; // rax
+  __int64 v137; // r9
+  __int64 v138; // rax
+  __int64 v139; // r9
+  __int64 v140; // rcx
+  __int64 v141; // rcx
+  __int64 v142; // rax
+  __int64 v143; // r9
+  __int64 v144; // rax
+  __int64 v145; // rax
+  __int64 v146; // r9
+  char v147; // [rsp+20h] [rbp-30h]
+  _QWORD *v148; // [rsp+80h] [rbp+30h] BYREF
+  double v149; // [rsp+88h] [rbp+38h] BYREF
+  _QWORD *v150; // [rsp+90h] [rbp+40h] BYREF
+  unsigned __int64 v151; // [rsp+98h] [rbp+48h] BYREF
+
+  v0 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+  mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::GetCommandLineW(v0);
+  LODWORD(v149) = 0;
+  LOBYTE(v148) = 0;
+  if ( !(unsigned int)RegHelper::ReadDWORDValue(v1, L"SaveETLFiles", &v149, &v148) && !(_BYTE)v148 )
+  {
+    if ( LODWORD(v149) )
+    {
+      App::s_SaveETLFiles = 1;
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>(
+        &v148,
+        L"%windir%\\performance\\winsat\\");
+      v2 = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::ExpandEnvStrings(
+                       &v148,
+                       &v149);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        &v148,
+        *v2);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v149);
+      App::AddSwitchWordIfNotPresent(qword_1401C6310, L"admp", v148[3]);
+      RegHelper::WriteDWORDValue(v3, L"SaveETLFiles");
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+    }
+    else
+    {
+      App::s_SaveETLFiles = 0;
+    }
+  }
+  if ( !**(_QWORD **)CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine)
+    || (v5 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine),
+        (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::is_all_white_space(v5)) )
+  {
+    mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)0xD2, 10171, v4);
+    Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+    return 87;
+  }
+  v6 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+  if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::are_quotes_ballanced(
+                          v6,
+                          34) )
+  {
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>(
+      &v148,
+      260);
+    v8 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    if ( !(unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::remove_first_cl_token(
+                             v8,
+                             &v148) )
+    {
+      mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)0xE1, 10001, v9);
+      Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+      v10 = &v148;
+LABEL_12:
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(v10);
+      return 87;
+    }
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+    v11 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    LOBYTE(v12) = 1;
+    App::s_Help = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                    v11,
+                    L"help",
+                    &v148,
+                    v12);
+    v13 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch(
+                            v13,
+                            63,
+                            &v148)
+      || (v14 = 0, App::s_Help) )
+    {
+      v14 = 1;
+    }
+    App::s_Help = v14;
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>(
+      &v149,
+      qword_1401C6310 != 0);
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>(&v148);
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::remove_first_cl_token(
+      &v149,
+      &v148);
+    v15 = mlib::m_traits<unsigned short>::CStrlen(L"help", 0x10000);
+    v16 = v148;
+    if ( !(unsigned int)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::comparei_str(
+                          &v148,
+                          v17,
+                          *v148,
+                          L"help",
+                          v15)
+      || (v18 = mlib::m_traits<unsigned short>::CStrlen(L"?", 0x10000),
+          !(unsigned int)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::comparei_str(
+                           &v148,
+                           v19,
+                           *v16,
+                           L"?",
+                           v18)) )
+    {
+      App::s_Help = 1;
+    }
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v149);
+    v20 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    LOBYTE(v21) = 1;
+    App::s_Verbose = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                       v20,
+                       L"v",
+                       &v148,
+                       v21);
+    v22 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    LOBYTE(v23) = 1;
+    App::s_VVerbose = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                        v22,
+                        L"vv",
+                        &v148,
+                        v23);
+    if ( App::s_VVerbose )
+      App::s_Verbose = 1;
+    if ( App::s_Help )
+      return 0;
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>(&v150);
+    v151 = 0;
+    v25 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v26) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v25,
+                            L"txml",
+                            &v151,
+                            v26) )
+    {
+      v27 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_xmlTestFile);
+      v28 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v29) = 1;
+      next_cl_token = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+                                  v28,
+                                  &v148,
+                                  v151,
+                                  v29);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        v27,
+        *next_cl_token);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+      v31 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_xmlTestFile);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::strip_lt_ws(v31);
+      if ( !**(_QWORD **)CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_xmlTestFile) )
+        goto LABEL_25;
+    }
+    v32 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v32,
+                            L"log",
+                            &v151,
+                            0) )
+    {
+      v33 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_tokenq(
+        v33,
+        &v148,
+        v151);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        &v150,
+        v148);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+      if ( !(unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::is_cl_switch(&v150) )
+      {
+        v34 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+        LOBYTE(v35) = 1;
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+          v34,
+          &v148,
+          v151,
+          v35);
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+      }
+    }
+    v36 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v37) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v36,
+                            L"xml",
+                            &v151,
+                            v37) )
+    {
+      v38 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v39) = 1;
+      v40 = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+                        v38,
+                        &v148,
+                        v151,
+                        v39);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        &v150,
+        *v40);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::strip_lt_ws(&v150);
+      v42 = v150;
+      if ( !*v150 )
+      {
+        v43 = 342;
+        v44 = 10009;
+LABEL_33:
+        mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)v43, v44, v41);
+LABEL_25:
+        Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+LABEL_26:
+        v10 = &v150;
+        goto LABEL_12;
+      }
+      v45 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_XMLOutputFileName);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        v45,
+        v42);
+    }
+    v46 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v47) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v46,
+                            L"admp",
+                            &v151,
+                            v47) )
+    {
+      v48 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v49) = 1;
+      v50 = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+                        v48,
+                        &v148,
+                        v151,
+                        v49);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        &v150,
+        *v50);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::strip_lt_ws(&v150);
+      v51 = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::ExpandEnvStrings(
+                        &v150,
+                        &v148);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        &v150,
+        *v51);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+      v52 = v150;
+      if ( !*v150 )
+      {
+        v43 = 366;
+        v44 = 10040;
+        goto LABEL_33;
+      }
+      v53 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_AssessmentDumpFileName);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        v53,
+        v52);
+    }
+    v54 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v55) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v54,
+                            L"datastore",
+                            &v151,
+                            v55) )
+    {
+      v56 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v57) = 1;
+      v58 = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+                        v56,
+                        &v148,
+                        v151,
+                        v57);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        &v150,
+        *v58);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::strip_lt_ws(&v150);
+      v59 = v150;
+      if ( !*v150 )
+      {
+        v43 = 386;
+        v44 = 10168;
+        goto LABEL_33;
+      }
+      v60 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(App::s_AssessmentDatastoreDirName);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        v60,
+        v59);
+    }
+    v61 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v62) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v61,
+                            L"note",
+                            &v151,
+                            v62) )
+    {
+      v63 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v64) = 1;
+      v65 = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+                        v63,
+                        &v148,
+                        v151,
+                        v64);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        &v150,
+        *v65);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::strip_lt_ws(&v150);
+      v66 = v150;
+      if ( *v150 )
+      {
+        v67 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(App::s_Note);
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+          v67,
+          v66);
+      }
+    }
+    if ( App::s_IsPrivateBld )
+    {
+      v68 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v69) = 1;
+      if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                              v68,
+                              L"cpuff",
+                              &v151,
+                              v69) )
+      {
+        v70 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+        LOBYTE(v71) = 1;
+        v72 = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+                          v70,
+                          &v148,
+                          v151,
+                          v71);
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+          &v150,
+          *v72);
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::strip_lt_ws(&v150);
+        v73 = v150;
+        if ( !*v150 )
+          goto LABEL_25;
+        v74 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CpuScoreFactorsFile);
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+          v74,
+          v73);
+      }
+      if ( App::s_IsPrivateBld )
+      {
+        v75 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+        v148 = 0;
+        LOBYTE(v76) = 1;
+        App::s_SkipSchemaChk = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                                 v75,
+                                 L"ssc",
+                                 &v148,
+                                 v76);
+        if ( App::s_SkipSchemaChk
+          || (v77 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_ExEnv),
+              v148 = 0,
+              LOBYTE(v78) = 1,
+              App::s_SkipSchemaChk = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                                       v77,
+                                       L"ssc",
+                                       &v148,
+                                       v78)) )
+        {
+          v79 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&mlib::stdoutw);
+          v80 = std::operator<<<unsigned short,std::char_traits<unsigned short>>(
+                  v79 + 240,
+                  "-- Skipping Schema check! (private only)");
+          std::endl(v80);
+        }
+      }
+    }
+    v81 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v82) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v81,
+                            L"cancelevent",
+                            &v151,
+                            v82) )
+    {
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>(&v148);
+      v83 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v84) = 1;
+      v85 = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+                        v83,
+                        &v149,
+                        v151,
+                        v84);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        &v148,
+        *v85);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v149);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::strip_lt_ws(&v148);
+      if ( !*v148 )
+      {
+        mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)0x1C8, 10174, v86);
+        Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+LABEL_57:
+        v87 = (double *)&v148;
+LABEL_58:
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(v87);
+        goto LABEL_26;
+      }
+      App::s_CanceLEventHandle = OpenEventW(0x1F0003u, 0, (LPCWSTR)v148[3]);
+      if ( !App::s_CanceLEventHandle )
+      {
+        LastError = GetLastError();
+        mlib::MUISpf_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)0x1D2, 10057, v89);
+        SetLastError(LastError);
+        GetLastError();
+        Record_Win32Error_w("base\\winsat\\exe\\app.cpp", v147);
+        goto LABEL_57;
+      }
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+    }
+    v90 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v91) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v90,
+                            L"moobegoevent",
+                            &v151,
+                            v91) )
+    {
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>(&v148);
+      v92 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v93) = 1;
+      v94 = (_QWORD *)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+                        v92,
+                        &v149,
+                        v151,
+                        v93);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::attach_buf(
+        &v148,
+        *v94);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v149);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::strip_lt_ws(&v148);
+      if ( !*v148 )
+      {
+        v96 = 486;
+        v97 = 10175;
+LABEL_65:
+        mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)v96, v97, v95);
+        Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+        goto LABEL_57;
+      }
+      App::s_MoobeGoeventhandle = OpenEventW(0x1F0003u, 0, (LPCWSTR)v148[3]);
+      if ( !App::s_MoobeGoeventhandle )
+      {
+        v96 = 493;
+        v97 = 10127;
+        goto LABEL_65;
+      }
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+    }
+    v98 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    LOBYTE(v99) = 1;
+    App::s_keepDWMRnning = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                             v98,
+                             L"kdr",
+                             &v148,
+                             v99);
+    v100 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    LOBYTE(v101) = 1;
+    App::s_includeGUID = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                           v100,
+                           L"iguid",
+                           &v148,
+                           v101);
+    if ( App::s_includeGUID )
+    {
+      v102 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(App::s_GUID);
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::UuidCreate(v102);
+    }
+    v103 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    LOBYTE(v104) = 1;
+    App::s_DumpComputerName = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                                v103,
+                                L"icn",
+                                &v148,
+                                v104);
+    v105 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    LOBYTE(v106) = 1;
+    App::s_AllowFormalOnBatt = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                                 v105,
+                                 L"fonbat",
+                                 &v148,
+                                 v106);
+    v107 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    LOBYTE(v108) = 1;
+    App::s_RequireBatt = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                           v107,
+                           L"requirebatt",
+                           &v148,
+                           v108);
+    v109 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v110) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v109,
+                            L"iter",
+                            &v151,
+                            v110) )
+    {
+      v111 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v112) = 1;
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+        v111,
+        &v149,
+        v151,
+        v112);
+      LODWORD(v148) = 0;
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::to_UINT(
+        &v149,
+        &v148,
+        0);
+      App::s_Iteration = (unsigned int)v148;
+      if ( !(unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::IsPositiveInteger(&v149)
+        || !App::s_Iteration )
+      {
+        mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)0x21A, 10039, v113);
+        Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+        v87 = &v149;
+        goto LABEL_58;
+      }
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v149);
+    }
+    v114 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v115) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v114,
+                            L"watchdog",
+                            &v151,
+                            v115) )
+    {
+      App::s_WatchDogEnabled = 1;
+      v116 = (unsigned __int64 **)CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      v117 = v151;
+      if ( v151 < **v116 )
+      {
+        v118 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+          v118,
+          &v148,
+          v117,
+          0);
+        if ( !(unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::is_cl_switch(&v148) )
+        {
+          v119 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+          LOBYTE(v120) = 1;
+          mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+            v119,
+            &v149,
+            v117,
+            v120);
+          mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v149);
+          v149 = 0.0;
+          mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::to_double(
+            &v148,
+            &v149);
+          App::s_ClWatchDogTimeout = v149;
+          if ( !(unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::IsPositiveNumber(&v148)
+            || App::s_ClWatchDogTimeout < 0.1 )
+          {
+            App::s_ClWatchDogTimeout = 0.0;
+            App::s_WatchDogEnabled = 0;
+            mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)0x23B, 10184, v121);
+            Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+            goto LABEL_57;
+          }
+        }
+        mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+      }
+    }
+    v122 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v123) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v122,
+                            L"xwait",
+                            &v151,
+                            v123) )
+    {
+      v124 = (unsigned __int64 **)CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      v125 = v151;
+      if ( v151 >= **v124 )
+      {
+        App::s_CancelWaitTimeS = 0.0;
+        v43 = 604;
+        v44 = 10205;
+        goto LABEL_33;
+      }
+      v126 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v127) = 1;
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+        v126,
+        &v148,
+        v125,
+        v127);
+      v149 = 0.0;
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::to_double(
+        &v148,
+        &v149);
+      App::s_CancelWaitTimeS = v149;
+      if ( !(unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::is_cl_switch(&v148)
+        && (!(unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::IsPositiveNumber(&v148)
+         || App::s_CancelWaitTimeS < 1.0) )
+      {
+        App::s_CancelWaitTimeS = 0.0;
+        mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)0x256, 10205, v128);
+        Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+        goto LABEL_57;
+      }
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+    }
+    v129 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v130) = 1;
+    if ( (unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                            v129,
+                            L"xwdfinal",
+                            &v151,
+                            v130) )
+    {
+      v131 = (unsigned __int64 **)CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      v132 = v151;
+      if ( v151 >= **v131 )
+      {
+        App::s_FinalWatchDogTimeS = 0.0;
+        v43 = 635;
+        v44 = 10206;
+        goto LABEL_33;
+      }
+      v133 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+      LOBYTE(v134) = 1;
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::get_next_cl_token(
+        v133,
+        &v148,
+        v132,
+        v134);
+      v149 = 0.0;
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::to_double(
+        &v148,
+        &v149);
+      App::s_FinalWatchDogTimeS = v149;
+      if ( !(unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::is_cl_switch(&v148)
+        && (!(unsigned __int8)mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::IsPositiveNumber(&v148)
+         || App::s_FinalWatchDogTimeS < 1.0) )
+      {
+        App::s_FinalWatchDogTimeS = 0.0;
+        mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)0x275, 10206, v135);
+        Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+        goto LABEL_57;
+      }
+      mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v148);
+    }
+    v136 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v137) = 1;
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+      v136,
+      L"glpi",
+      &v151,
+      v137);
+    v138 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v139) = 1;
+    App::s_SuppressWatchDog = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                                v138,
+                                L"suppresswd",
+                                &v151,
+                                v139);
+    if ( !App::s_SuppressWatchDog )
+    {
+      LODWORD(v149) = 0;
+      LOBYTE(v148) = 1;
+      if ( !(unsigned int)RegHelper::ReadDWORDValue(v140, L"SuppressWatchDogTimer", &v149, &v148) && !(_BYTE)v148 )
+      {
+        if ( LODWORD(v149) )
+        {
+          App::s_SuppressWatchDog = 1;
+          RegHelper::WriteDWORDValue(v141, L"SuppressWatchDogTimer");
+        }
+        else
+        {
+          App::s_SuppressWatchDog = 0;
+        }
+      }
+    }
+    v142 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    LOBYTE(v143) = 1;
+    App::s_AllowUnsupported = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                                v142,
+                                L"unsupported",
+                                &v151,
+                                v143);
+    v144 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    App::s_WsSwapTest = mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+                          v144,
+                          L"wsswap",
+                          &v148,
+                          0);
+    v145 = CSmartPtr<mlib::handle_ostreamT<unsigned short,std::char_traits<unsigned short>>>::operator->(&App::s_CommandLine);
+    v148 = 0;
+    LOBYTE(v146) = 1;
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::has_switch_word(
+      v145,
+      L"log",
+      &v148,
+      v146);
+    mlib::fundamental_string<unsigned short,mlib::m_traits<unsigned short>,std::allocator<unsigned short>>::detach_buf(&v150);
+    return 0;
+  }
+  mlib::MUIStr_((mlib *)"base\\winsat\\exe\\app.cpp", (const char *)0xD7, 10170, v7);
+  Record_InternalError_w("base\\winsat\\exe\\app.cpp");
+  return 87;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14001c9e4  push    rbp
+0x14001c9e6  push    rbx
+0x14001c9e7  push    rsi
+0x14001c9e8  push    rdi
+0x14001c9e9  push    r14
+0x14001c9eb  mov     rbp, rsp
+0x14001c9ee  sub     rsp, 50h
+0x14001c9f2  movaps  [rsp+50h+var_10], xmm6
+0x14001c9f7  movaps  [rsp+50h+var_20], xmm7
+0x14001c9fc  xor     esi, esi
+0x14001c9fe  lea     r14, ?s_CommandLine@App@@2V?$CSmartPtr@V?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@@@A; CSmartPtr<mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>> App::s_CommandLine
+0x14001ca05  mov     rcx, r14
+0x14001ca08  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001ca0d  mov     rcx, rax
+0x14001ca10  call    ?GetCommandLineW@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAAKXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::GetCommandLineW(void)
+0x14001ca15  mov     dword ptr [rbp+arg_8], esi
+0x14001ca18  mov     byte ptr [rbp+arg_0], sil
+0x14001ca1c  lea     r9, [rbp+arg_0]
+0x14001ca20  lea     r8, [rbp+arg_8]
+0x14001ca24  lea     rdx, aSaveetlfiles; "SaveETLFiles"
+0x14001ca2b  call    ?ReadDWORDValue@RegHelper@@SAKW4Enum@WinSATRegistryKeys@@PEBGAEAKPEA_N@Z; RegHelper::ReadDWORDValue(WinSATRegistryKeys::Enum,ushort const *,ulong &,bool *)
+0x14001ca30  test    eax, eax
+0x14001ca32  jnz     short loc_14001CAB3
+0x14001ca34  cmp     byte ptr [rbp+arg_0], sil
+0x14001ca38  jnz     short loc_14001CAB3
+0x14001ca3a  cmp     dword ptr [rbp+arg_8], esi
+0x14001ca3d  jz      short loc_14001CAAC
+0x14001ca3f  mov     cs:?s_SaveETLFiles@App@@2_NA, 1; bool App::s_SaveETLFiles
+0x14001ca46  lea     rdx, aWindirPerforma; "%windir%\\performance\\winsat\\"
+0x14001ca4d  lea     rcx, [rbp+arg_0]
+0x14001ca51  call    ??0?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA@PEBG@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>(ushort const *)
+0x14001ca56  nop
+0x14001ca57  lea     rdx, [rbp+arg_8]
+0x14001ca5b  lea     rcx, [rbp+arg_0]
+0x14001ca5f  call    ?ExpandEnvStrings@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEBA?AV12@XZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::ExpandEnvStrings(void)
+0x14001ca64  mov     rdx, [rax]
+0x14001ca67  lea     rcx, [rbp+arg_0]
+0x14001ca6b  call    ?attach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXPEAV?$mstring_buf@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@2@@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::attach_buf(mlib::mstring_buf<ushort,mlib::m_traits<ushort>,std::allocator<ushort>> *)
+0x14001ca70  lea     rcx, [rbp+arg_8]
+0x14001ca74  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001ca79  mov     r8, [rbp+arg_0]
+0x14001ca7d  mov     r8, [r8+18h]
+0x14001ca81  lea     rdx, aAdmp; "admp"
+0x14001ca88  mov     rcx, cs:qword_1401C6310
+0x14001ca8f  call    ?AddSwitchWordIfNotPresent@App@@SA_NAEAV?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@PEBG1@Z; App::AddSwitchWordIfNotPresent(mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>> &,ushort const *,ushort const *)
+0x14001ca94  lea     rdx, aSaveetlfiles; "SaveETLFiles"
+0x14001ca9b  call    ?WriteDWORDValue@RegHelper@@SAKW4Enum@WinSATRegistryKeys@@PEBGK@Z; RegHelper::WriteDWORDValue(WinSATRegistryKeys::Enum,ushort const *,ulong)
+0x14001caa0  nop
+0x14001caa1  lea     rcx, [rbp+arg_0]
+0x14001caa5  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001caaa  jmp     short loc_14001CAB3
+0x14001caac  mov     cs:?s_SaveETLFiles@App@@2_NA, sil; bool App::s_SaveETLFiles
+0x14001cab3  mov     rcx, r14
+0x14001cab6  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cabb  mov     rcx, [rax]
+0x14001cabe  cmp     [rcx], rsi
+0x14001cac1  jz      loc_14001D94B
+0x14001cac7  mov     rcx, r14
+0x14001caca  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cacf  mov     rcx, rax
+0x14001cad2  call    ?is_all_white_space@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEBA_NXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::is_all_white_space(void)
+0x14001cad7  test    al, al
+0x14001cad9  jnz     loc_14001D94B
+0x14001cadf  mov     rcx, r14
+0x14001cae2  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cae7  mov     edx, 22h ; '"'
+0x14001caec  mov     rcx, rax
+0x14001caef  call    ?are_quotes_ballanced@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEBA_NG@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::are_quotes_ballanced(ushort)
+0x14001caf4  test    al, al
+0x14001caf6  jnz     short loc_14001CB2A
+0x14001caf8  mov     ebx, 0D7h
+0x14001cafd  mov     r8d, 27BAh; int
+0x14001cb03  mov     edx, ebx; char *
+0x14001cb05  lea     rcx, aBaseWinsatExeA; "base\\winsat\\exe\\app.cpp"
+0x14001cb0c  call    ?MUIStr_@mlib@@YAPEBGPEBDHG@Z; mlib::MUIStr_(char const *,int,ushort)
+0x14001cb11  mov     r8, rax
+0x14001cb14  xor     r9d, r9d
+0x14001cb17  mov     edx, ebx
+0x14001cb19  lea     rcx, aBaseWinsatExeA; "base\\winsat\\exe\\app.cpp"
+0x14001cb20  call    Record_InternalError_w
+0x14001cb25  jmp     loc_14001D975
+0x14001cb2a  mov     edx, 104h
+0x14001cb2f  lea     rcx, [rbp+arg_0]
+0x14001cb33  call    ??0?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA@_K@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>(unsigned __int64)
+0x14001cb38  nop
+0x14001cb39  mov     rcx, r14
+0x14001cb3c  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cb41  lea     rdx, [rbp+arg_0]
+0x14001cb45  mov     rcx, rax
+0x14001cb48  call    ?remove_first_cl_token@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA_NAEAV12@_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::remove_first_cl_token(mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>> &,bool)
+0x14001cb4d  test    al, al
+0x14001cb4f  jnz     short loc_14001CB8A
+0x14001cb51  mov     ebx, 0E1h
+0x14001cb56  mov     r8d, 2711h; int
+0x14001cb5c  mov     edx, ebx; char *
+0x14001cb5e  lea     rcx, aBaseWinsatExeA; "base\\winsat\\exe\\app.cpp"
+0x14001cb65  call    ?MUIStr_@mlib@@YAPEBGPEBDHG@Z; mlib::MUIStr_(char const *,int,ushort)
+0x14001cb6a  mov     r8, rax
+0x14001cb6d  mov     edx, ebx
+0x14001cb6f  lea     rcx, aBaseWinsatExeA; "base\\winsat\\exe\\app.cpp"
+0x14001cb76  call    Record_InternalError_w
+0x14001cb7b  nop
+0x14001cb7c  lea     rcx, [rbp+arg_0]
+0x14001cb80  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001cb85  jmp     loc_14001D975
+0x14001cb8a  lea     rcx, [rbp+arg_0]
+0x14001cb8e  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001cb93  mov     rcx, r14
+0x14001cb96  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cb9b  mov     [rbp+arg_0], rsi
+0x14001cb9f  mov     r9b, 1
+0x14001cba2  lea     r8, [rbp+arg_0]
+0x14001cba6  lea     rbx, aHelp; "help"
+0x14001cbad  mov     rdx, rbx
+0x14001cbb0  mov     rcx, rax
+0x14001cbb3  call    ?has_switch_word@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA_NPEBGAEA_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::has_switch_word(ushort const *,unsigned __int64 &,bool)
+0x14001cbb8  mov     cs:?s_Help@App@@2_NA, al; bool App::s_Help
+0x14001cbbe  mov     rcx, r14
+0x14001cbc1  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cbc6  mov     [rbp+arg_0], rsi
+0x14001cbca  mov     edx, 3Fh ; '?'
+0x14001cbcf  lea     r8, [rbp+arg_0]
+0x14001cbd3  mov     rcx, rax
+0x14001cbd6  call    ?has_switch@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA_NGAEA_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::has_switch(ushort,unsigned __int64 &,bool)
+0x14001cbdb  test    al, al
+0x14001cbdd  jnz     short loc_14001CBEB
+0x14001cbdf  cmp     cs:?s_Help@App@@2_NA, sil; bool App::s_Help
+0x14001cbe6  mov     al, sil
+0x14001cbe9  jz      short loc_14001CBED
+0x14001cbeb  mov     al, 1
+0x14001cbed  mov     cs:?s_Help@App@@2_NA, al; bool App::s_Help
+0x14001cbf3  mov     rdx, rsi
+0x14001cbf6  cmp     cs:qword_1401C6310, rsi
+0x14001cbfd  setnz   dl
+0x14001cc00  lea     rcx, [rbp+arg_8]
+0x14001cc04  call    ??0?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA@_K@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>(unsigned __int64)
+0x14001cc09  nop
+0x14001cc0a  lea     rcx, [rbp+arg_0]
+0x14001cc0e  call    ??0?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA@XZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>(void)
+0x14001cc13  nop
+0x14001cc14  lea     rdx, [rbp+arg_0]
+0x14001cc18  lea     rcx, [rbp+arg_8]
+0x14001cc1c  call    ?remove_first_cl_token@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA_NAEAV12@_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::remove_first_cl_token(mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>> &,bool)
+0x14001cc21  mov     edi, 10000h
+0x14001cc26  mov     edx, edi
+0x14001cc28  mov     rcx, rbx
+0x14001cc2b  call    ?CStrlen@?$m_traits@G@mlib@@SA_KPEBG_K@Z; mlib::m_traits<ushort>::CStrlen(ushort const *,unsigned __int64)
+0x14001cc30  mov     qword ptr [rsp+50h+var_30], rax
+0x14001cc35  mov     r9, rbx
+0x14001cc38  mov     rbx, [rbp+arg_0]
+0x14001cc3c  mov     r8, [rbx]
+0x14001cc3f  lea     rcx, [rbp+arg_0]
+0x14001cc43  call    ?comparei_str@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEBAH_K0PEBG0@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::comparei_str(unsigned __int64,unsigned __int64,ushort const *,unsigned __int64)
+0x14001cc48  test    eax, eax
+0x14001cc4a  jz      short loc_14001CC76
+0x14001cc4c  mov     edx, edi
+0x14001cc4e  lea     rcx, asc_14012F46C; "?"
+0x14001cc55  call    ?CStrlen@?$m_traits@G@mlib@@SA_KPEBG_K@Z; mlib::m_traits<ushort>::CStrlen(ushort const *,unsigned __int64)
+0x14001cc5a  mov     qword ptr [rsp+50h+var_30], rax; char
+0x14001cc5f  lea     r9, asc_14012F46C; "?"
+0x14001cc66  mov     r8, [rbx]
+0x14001cc69  lea     rcx, [rbp+arg_0]
+0x14001cc6d  call    ?comparei_str@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEBAH_K0PEBG0@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::comparei_str(unsigned __int64,unsigned __int64,ushort const *,unsigned __int64)
+0x14001cc72  test    eax, eax
+0x14001cc74  jnz     short loc_14001CC7D
+0x14001cc76  mov     cs:?s_Help@App@@2_NA, 1; bool App::s_Help
+0x14001cc7d  lea     rcx, [rbp+arg_0]
+0x14001cc81  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001cc86  nop
+0x14001cc87  lea     rcx, [rbp+arg_8]
+0x14001cc8b  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001cc90  mov     rcx, r14
+0x14001cc93  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cc98  mov     [rbp+arg_0], rsi
+0x14001cc9c  mov     r9b, 1
+0x14001cc9f  lea     r8, [rbp+arg_0]
+0x14001cca3  lea     rdx, aV; "v"
+0x14001ccaa  mov     rcx, rax
+0x14001ccad  call    ?has_switch_word@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA_NPEBGAEA_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::has_switch_word(ushort const *,unsigned __int64 &,bool)
+0x14001ccb2  mov     cs:?s_Verbose@App@@2_NA, al; bool App::s_Verbose
+0x14001ccb8  mov     rcx, r14
+0x14001ccbb  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001ccc0  mov     [rbp+arg_0], rsi
+0x14001ccc4  mov     r9b, 1
+0x14001ccc7  lea     r8, [rbp+arg_0]
+0x14001cccb  lea     rdx, aVv; "vv"
+0x14001ccd2  mov     rcx, rax
+0x14001ccd5  call    ?has_switch_word@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA_NPEBGAEA_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::has_switch_word(ushort const *,unsigned __int64 &,bool)
+0x14001ccda  mov     cs:?s_VVerbose@App@@2_NA, al; bool App::s_VVerbose
+0x14001cce0  test    al, al
+0x14001cce2  jz      short loc_14001CCEB
+0x14001cce4  mov     cs:?s_Verbose@App@@2_NA, 1; bool App::s_Verbose
+0x14001cceb  cmp     cs:?s_Help@App@@2_NA, sil; bool App::s_Help
+0x14001ccf2  jz      short loc_14001CCFB
+0x14001ccf4  xor     eax, eax
+0x14001ccf6  jmp     loc_14001D97A
+0x14001ccfb  lea     rcx, [rbp+arg_10]
+0x14001ccff  call    ??0?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA@XZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>(void)
+0x14001cd04  nop
+0x14001cd05  mov     [rbp+arg_18], rsi
+0x14001cd09  mov     rcx, r14
+0x14001cd0c  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cd11  mov     r9b, 1
+0x14001cd14  lea     r8, [rbp+arg_18]
+0x14001cd18  lea     rdx, aTxml; "txml"
+0x14001cd1f  mov     rcx, rax
+0x14001cd22  call    ?has_switch_word@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA_NPEBGAEA_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::has_switch_word(ushort const *,unsigned __int64 &,bool)
+0x14001cd27  test    al, al
+0x14001cd29  jz      loc_14001CDB2
+0x14001cd2f  lea     rdi, ?s_xmlTestFile@App@@2V?$CSmartPtr@V?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@@@A; CSmartPtr<mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>> App::s_xmlTestFile
+0x14001cd36  mov     rcx, rdi
+0x14001cd39  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cd3e  mov     rbx, rax
+0x14001cd41  mov     rcx, r14
+0x14001cd44  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cd49  mov     r9b, 1
+0x14001cd4c  mov     r8, [rbp+arg_18]
+0x14001cd50  lea     rdx, [rbp+arg_0]
+0x14001cd54  mov     rcx, rax
+0x14001cd57  call    ?get_next_cl_token@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA?AV12@_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::get_next_cl_token(unsigned __int64,bool)
+0x14001cd5c  mov     rdx, [rax]
+0x14001cd5f  mov     rcx, rbx
+0x14001cd62  call    ?attach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXPEAV?$mstring_buf@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@2@@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::attach_buf(mlib::mstring_buf<ushort,mlib::m_traits<ushort>,std::allocator<ushort>> *)
+0x14001cd67  lea     rcx, [rbp+arg_0]
+0x14001cd6b  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001cd70  mov     rcx, rdi
+0x14001cd73  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cd78  mov     rcx, rax
+0x14001cd7b  call    ?strip_lt_ws@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAAAEAV12@XZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::strip_lt_ws(void)
+0x14001cd80  mov     rcx, rdi
+0x14001cd83  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cd88  mov     rcx, [rax]
+0x14001cd8b  cmp     [rcx], rsi
+0x14001cd8e  jnz     short loc_14001CDB2
+0x14001cd90  lea     r8, aNoFileNameAfte_0; "no file name after the -txml switch"
+0x14001cd97  mov     edx, 128h
+0x14001cd9c  lea     rcx, aBaseWinsatExeA; "base\\winsat\\exe\\app.cpp"
+0x14001cda3  call    Record_InternalError_w
+0x14001cda8  nop
+0x14001cda9  lea     rcx, [rbp+arg_10]
+0x14001cdad  jmp     loc_14001CB80
+0x14001cdb2  mov     rcx, r14
+0x14001cdb5  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cdba  xor     r9d, r9d
+0x14001cdbd  lea     r8, [rbp+arg_18]
+0x14001cdc1  lea     rdx, aLog_0; "log"
+0x14001cdc8  mov     rcx, rax
+0x14001cdcb  call    ?has_switch_word@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA_NPEBGAEA_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::has_switch_word(ushort const *,unsigned __int64 &,bool)
+0x14001cdd0  test    al, al
+0x14001cdd2  jz      short loc_14001CE33
+0x14001cdd4  mov     rcx, r14
+0x14001cdd7  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001cddc  mov     r8, [rbp+arg_18]
+0x14001cde0  lea     rdx, [rbp+arg_0]
+0x14001cde4  mov     rcx, rax
+0x14001cde7  call    ?get_next_cl_tokenq@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEBA?AV12@_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::get_next_cl_tokenq(unsigned __int64,bool)
+0x14001cdec  mov     rdx, [rbp+arg_0]
+0x14001cdf0  lea     rcx, [rbp+arg_10]
+0x14001cdf4  call    ?attach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXPEAV?$mstring_buf@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@2@@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::attach_buf(mlib::mstring_buf<ushort,mlib::m_traits<ushort>,std::allocator<ushort>> *)
+0x14001cdf9  lea     rcx, [rbp+arg_0]
+0x14001cdfd  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001ce02  lea     rcx, [rbp+arg_10]
+0x14001ce06  call    ?is_cl_switch@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEBA_NXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::is_cl_switch(void)
+0x14001ce0b  test    al, al
+0x14001ce0d  jnz     short loc_14001CE33
+0x14001ce0f  mov     rcx, r14
+0x14001ce12  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001ce17  mov     r9b, 1
+0x14001ce1a  mov     r8, [rbp+arg_18]
+0x14001ce1e  lea     rdx, [rbp+arg_0]
+0x14001ce22  mov     rcx, rax
+0x14001ce25  call    ?get_next_cl_token@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA?AV12@_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::get_next_cl_token(unsigned __int64,bool)
+0x14001ce2a  lea     rcx, [rbp+arg_0]
+0x14001ce2e  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001ce33  mov     rcx, r14
+0x14001ce36  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001ce3b  mov     r9b, 1
+0x14001ce3e  lea     r8, [rbp+arg_18]
+0x14001ce42  lea     rdx, aXml; "xml"
+0x14001ce49  mov     rcx, rax
+0x14001ce4c  call    ?has_switch_word@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA_NPEBGAEA_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::has_switch_word(ushort const *,unsigned __int64 &,bool)
+0x14001ce51  test    al, al
+0x14001ce53  jz      short loc_14001CED1
+0x14001ce55  mov     rcx, r14
+0x14001ce58  call    ??C?$CSmartPtr@V?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@@@QEBAPEAV?$handle_ostreamT@GU?$char_traits@G@std@@@mlib@@XZ; CSmartPtr<mlib::handle_ostreamT<ushort,std::char_traits<ushort>>>::operator->(void)
+0x14001ce5d  mov     r9b, 1
+0x14001ce60  mov     r8, [rbp+arg_18]
+0x14001ce64  lea     rdx, [rbp+arg_0]
+0x14001ce68  mov     rcx, rax
+0x14001ce6b  call    ?get_next_cl_token@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAA?AV12@_K_N@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::get_next_cl_token(unsigned __int64,bool)
+0x14001ce70  mov     rdx, [rax]
+0x14001ce73  lea     rcx, [rbp+arg_10]
+0x14001ce77  call    ?attach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXPEAV?$mstring_buf@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@2@@Z; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::attach_buf(mlib::mstring_buf<ushort,mlib::m_traits<ushort>,std::allocator<ushort>> *)
+0x14001ce7c  lea     rcx, [rbp+arg_0]
+0x14001ce80  call    ?detach_buf@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@IEAAXXZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::detach_buf(void)
+0x14001ce85  lea     rcx, [rbp+arg_10]
+0x14001ce89  call    ?strip_lt_ws@?$fundamental_string@GV?$m_traits@G@mlib@@V?$allocator@G@std@@@mlib@@QEAAAEAV12@XZ; mlib::fundamental_string<ushort,mlib::m_traits<ushort>,std::allocator<ushort>>::strip_lt_ws(void)
+0x14001ce8e  mov     rbx, [rbp+arg_10]
+0x14001ce92  cmp     [rbx], rsi
+0x14001ce95  jnz     short loc_14001CEBA
+  ... truncated ...
+```

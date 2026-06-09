@@ -1,0 +1,2538 @@
+[
+  {
+    "import": "ADVAPI32!CreateProcessWithTokenW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000ea40",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "ADVAPI32!CreateProcessWithTokenW"
+      },
+      {
+        "from_ea": "0x18000ea40",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "ADVAPI32!CreateProcessWithTokenW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!DuplicateTokenEx",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e909",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "ADVAPI32!DuplicateTokenEx"
+      },
+      {
+        "from_ea": "0x18000e909",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "ADVAPI32!DuplicateTokenEx"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!GetLengthSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001064e",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      },
+      {
+        "from_ea": "0x18001064e",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "ADVAPI32!GetLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!IsValidSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000854c",
+        "from_func": "0x1800082f0",
+        "from_func_name": "?Initialize@CWinInetHelperClass@@UEAAJKQEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "ADVAPI32!IsValidSid"
+      },
+      {
+        "from_ea": "0x18000854c",
+        "from_func": "0x1800082f0",
+        "from_func_name": "?Initialize@CWinInetHelperClass@@UEAAJKQEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "ADVAPI32!IsValidSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenThreadToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e8d7",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18000fb3b",
+        "from_func": "0x18000f91c",
+        "from_func_name": "?ExecuteConnectionThread@CWinInetHelperClass@@AEAAJHPEAW4WHCConnectionErrors@@PEAJPEAKQEAU_WINHTTP_PROXY_INFO@@PEAUsockaddr_storage@@@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180010605",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18001090c",
+        "from_func": "0x1800108e4",
+        "from_func_name": "?SuspendImpersonate@@YAKPEAPEAX@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18000e8d7",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18000fb3b",
+        "from_func": "0x18000f91c",
+        "from_func_name": "?ExecuteConnectionThread@CWinInetHelperClass@@AEAAJHPEAW4WHCConnectionErrors@@PEAJPEAKQEAU_WINHTTP_PROXY_INFO@@PEAUsockaddr_storage@@@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180010605",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18001090c",
+        "from_func": "0x1800108e4",
+        "from_func_name": "?SuspendImpersonate@@YAKPEAPEAX@Z",
+        "import": "ADVAPI32!OpenThreadToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000bae8",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x18000bae8",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b986",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x18000b986",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 14,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b265",
+        "from_func": "0x18000b204",
+        "from_func_name": "?RecurseDeleteKey@CRegKey@ATL@@QEAAJPEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000b963",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000ba29",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000ba7e",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000bbe1",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180010f22",
+        "from_func": "0x180010cb8",
+        "from_func_name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180011099",
+        "from_func": "0x180010cb8",
+        "from_func_name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000b265",
+        "from_func": "0x18000b204",
+        "from_func_name": "?RecurseDeleteKey@CRegKey@ATL@@QEAAJPEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000b963",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000ba29",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000ba7e",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000bbe1",
+        "from_func": "0x18000b6fc",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180010f22",
+        "from_func": "0x180010cb8",
+        "from_func_name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180011099",
+        "from_func": "0x180010cb8",
+        "from_func_name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180003d7e",
+        "from_func": "0x180003b40",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003e03",
+        "from_func": "0x180003b40",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003fab",
+        "from_func": "0x180003b40",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003d7e",
+        "from_func": "0x180003b40",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003e03",
+        "from_func": "0x180003b40",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003fab",
+        "from_func": "0x180003b40",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001d9b",
+        "from_func": "0x180001d54",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180003583",
+        "from_func": "0x180003548",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001d9b",
+        "from_func": "0x180001d54",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180003583",
+        "from_func": "0x180003548",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180004782",
+        "from_func": "0x180004724",
+        "from_func_name": "?DeleteSubKey@CRegKey@ATL@@QEAAJPEBG@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x18000b566",
+        "from_func": "0x18000b518",
+        "from_func_name": "?RegisterFromResource@CRegObject@ATL@@IEAAJPEBG00H@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180004782",
+        "from_func": "0x180004724",
+        "from_func_name": "?DeleteSubKey@CRegKey@ATL@@QEAAJPEBG@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x18000b566",
+        "from_func": "0x18000b518",
+        "from_func_name": "?RegisterFromResource@CRegObject@ATL@@IEAAJPEBG00H@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "WINHTTP!WinHttpCrackUrl",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000999c",
+        "from_func": "0x180009858",
+        "from_func_name": "?LowHealthGetPacFileServerInfo@CWinInetHelperClass@@AEAAJXZ",
+        "import": "WINHTTP!WinHttpCrackUrl"
+      },
+      {
+        "from_ea": "0x18000999c",
+        "from_func": "0x180009858",
+        "from_func_name": "?LowHealthGetPacFileServerInfo@CWinInetHelperClass@@AEAAJXZ",
+        "import": "WINHTTP!WinHttpCrackUrl"
+      }
+    ]
+  },
+  {
+    "import": "WINHTTP!WinHttpDetectAutoProxyConfigUrl",
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800098ce",
+        "from_func": "0x180009858",
+        "from_func_name": "?LowHealthGetPacFileServerInfo@CWinInetHelperClass@@AEAAJXZ",
+        "import": "WINHTTP!WinHttpDetectAutoProxyConfigUrl"
+      },
+      {
+        "from_ea": "0x1800098ce",
+        "from_func": "0x180009858",
+        "from_func_name": "?LowHealthGetPacFileServerInfo@CWinInetHelperClass@@AEAAJXZ",
+        "import": "WINHTTP!WinHttpDetectAutoProxyConfigUrl"
+      }
+    ]
+  },
+  {
+    "import": "WINHTTP!WinHttpGetDefaultProxyConfiguration",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000df98",
+        "from_func": "0x18000de18",
+        "from_func_name": "?GetAutoProxyInfo@@YAJPEBGPEAU_WINHTTP_PROXY_INFO@@PEAU_WINHTTP_AUTOPROXY_OPTIONS@@PEAH@Z",
+        "import": "WINHTTP!WinHttpGetDefaultProxyConfiguration"
+      },
+      {
+        "from_ea": "0x18000df98",
+        "from_func": "0x18000de18",
+        "from_func_name": "?GetAutoProxyInfo@@YAJPEBGPEAU_WINHTTP_PROXY_INFO@@PEAU_WINHTTP_AUTOPROXY_OPTIONS@@PEAH@Z",
+        "import": "WINHTTP!WinHttpGetDefaultProxyConfiguration"
+      }
+    ]
+  },
+  {
+    "import": "WINHTTP!WinHttpGetIEProxyConfigForCurrentUser",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e244",
+        "from_func": "0x18000e230",
+        "from_func_name": "?GetUserProxyConfig@@YAJPEAU_WINHTTP_CURRENT_USER_IE_PROXY_CONFIG@@@Z",
+        "import": "WINHTTP!WinHttpGetIEProxyConfigForCurrentUser"
+      },
+      {
+        "from_ea": "0x18000e244",
+        "from_func": "0x18000e230",
+        "from_func_name": "?GetUserProxyConfig@@YAJPEAU_WINHTTP_CURRENT_USER_IE_PROXY_CONFIG@@@Z",
+        "import": "WINHTTP!WinHttpGetIEProxyConfigForCurrentUser"
+      }
+    ]
+  },
+  {
+    "import": "WINHTTP!WinHttpGetProxyForUrl",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000df4a",
+        "from_func": "0x18000de18",
+        "from_func_name": "?GetAutoProxyInfo@@YAJPEBGPEAU_WINHTTP_PROXY_INFO@@PEAU_WINHTTP_AUTOPROXY_OPTIONS@@PEAH@Z",
+        "import": "WINHTTP!WinHttpGetProxyForUrl"
+      },
+      {
+        "from_ea": "0x18000df4a",
+        "from_func": "0x18000de18",
+        "from_func_name": "?GetAutoProxyInfo@@YAJPEBGPEAU_WINHTTP_PROXY_INFO@@PEAU_WINHTTP_AUTOPROXY_OPTIONS@@PEAH@Z",
+        "import": "WINHTTP!WinHttpGetProxyForUrl"
+      }
+    ]
+  },
+  {
+    "import": "WININET!InternetCrackUrlW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e3fe",
+        "from_func": "0x18000e2a4",
+        "from_func_name": "?CrackURL@@YAJPEBGPEAGK1K1PEAW4WHCInternetScheme@@PEAH@Z",
+        "import": "WININET!InternetCrackUrlW"
+      },
+      {
+        "from_ea": "0x18000e3fe",
+        "from_func": "0x18000e2a4",
+        "from_func_name": "?CrackURL@@YAJPEBGPEAGK1K1PEAW4WHCInternetScheme@@PEAH@Z",
+        "import": "WININET!InternetCrackUrlW"
+      }
+    ]
+  },
+  {
+    "import": "WININET!InternetInitializeAutoProxyDll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e76d",
+        "from_func": "0x18000e650",
+        "from_func_name": "?SetAutoDetectProxyFlagForUser@@YAXPEAUHWND__@@PEAUHINSTANCE__@@PEADH@Z",
+        "import": "WININET!InternetInitializeAutoProxyDll"
+      },
+      {
+        "from_ea": "0x18000e76d",
+        "from_func": "0x18000e650",
+        "from_func_name": "?SetAutoDetectProxyFlagForUser@@YAXPEAUHWND__@@PEAUHINSTANCE__@@PEADH@Z",
+        "import": "WININET!InternetInitializeAutoProxyDll"
+      }
+    ]
+  },
+  {
+    "import": "WS2_32!__imp_WSACleanup",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000efcb",
+        "from_func": "0x18000eb64",
+        "from_func_name": "?GetFirstProxy@@YAJQEBGPEAUsockaddr_storage@@PEAH@Z",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x180010556",
+        "from_func": "0x180010450",
+        "from_func_name": "?ExecuteDNSQuery@@YAJPEBGGKPEAUsockaddr_storage@@@Z",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x18000efcb",
+        "from_func": "0x18000eb64",
+        "from_func_name": "?GetFirstProxy@@YAJQEBGPEAUsockaddr_storage@@PEAH@Z",
+        "import": "WS2_32!__imp_WSACleanup"
+      },
+      {
+        "from_ea": "0x180010556",
+        "from_func": "0x180010450",
+        "from_func_name": "?ExecuteDNSQuery@@YAJPEBGGKPEAUsockaddr_storage@@@Z",
+        "import": "WS2_32!__imp_WSACleanup"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoCreateGuid",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e921",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateGuid"
+      },
+      {
+        "from_ea": "0x18000e921",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateGuid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x180002a0f",
+        "from_func": "0x180002940",
+        "from_func_name": "??0CWinInetHelperClass@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x1800050a0",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x180010d5d",
+        "from_func": "0x180010cb8",
+        "from_func_name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x180011422",
+        "from_func": "0x1800113e0",
+        "from_func_name": "?GetGITPtr@CAtlModule@ATL@@UEAAJPEAPEAUIGlobalInterfaceTable@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x180002a0f",
+        "from_func": "0x180002940",
+        "from_func_name": "??0CWinInetHelperClass@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x1800050a0",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x180010d5d",
+        "from_func": "0x180010cb8",
+        "from_func_name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x180011422",
+        "from_func": "0x1800113e0",
+        "from_func_name": "?GetGITPtr@CAtlModule@ATL@@UEAAJPEAPEAUIGlobalInterfaceTable@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180005018",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      },
+      {
+        "from_ea": "0x180005018",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc",
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ],
+    "xref_count": 79,
+    "xrefs": [
+      {
+        "from_ea": "0x180004c90",
+        "from_func": "0x180004c20",
+        "from_func_name": "?GetAttributeInfo@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHelperAttributeInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180004dd6",
+        "from_func": "0x180004d60",
+        "from_func_name": "?GetAttributes@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180004e60",
+        "from_func": "0x180004d60",
+        "from_func_name": "?GetAttributes@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000575e",
+        "from_func": "0x180005750",
+        "from_func_name": "?GetDiagnosticsInfo@CWinInetHelperClass@@UEAAJPEAPEAUtagDiagnosticsInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180005c2c",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180005db9",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180005e71",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180005fda",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006107",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800061df",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800062b5",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800063fd",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800064ba",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800065d7",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000672d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800068bc",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006aa0",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006b6d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006c8f",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006df7",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006f5d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180007241",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000799a",
+        "from_func": "0x180007800",
+        "from_func_name": "?GetRepairInfo@CWinInetHelperClass@@UEAAJW4tagPROBLEM_TYPE@@PEAKPEAPEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180007ac8",
+        "from_func": "0x180007800",
+        "from_func_name": "?GetRepairInfo@CWinInetHelperClass@@UEAAJW4tagPROBLEM_TYPE@@PEAKPEAPEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000850c",
+        "from_func": "0x1800082f0",
+        "from_func_name": "?Initialize@CWinInetHelperClass@@UEAAJKQEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000aba3",
+        "from_func": "0x18000ab0c",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEAGPEAPEAG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000c7d4",
+        "from_func": "0x18000c764",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000ca62",
+        "from_func": "0x18000ca0c",
+        "from_func_name": "?StringCchCopyWithAlloc@@YAJPEAPEAG_KPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180010399",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800105c4",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18001065e",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800107f5",
+        "from_func": "0x1800107dc",
+        "from_func_name": "?LoadStringWithAlloc@@YAJIPEAPEAGI@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180012308",
+        "from_func": "0x1800122f0",
+        "from_func_name": "?GetDiagnosticsInfo@CNetDiagHelperImpl@@UEAAJPEAPEAUtagDiagnosticsInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180012576",
+        "from_func": "0x180012510",
+        "from_func_name": "?PopulateRepairInfo@@YAJPEBUtagRepairInfoMap@@PEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800125ac",
+        "from_func": "0x180012510",
+        "from_func_name": "?PopulateRepairInfo@@YAJPEBUtagRepairInfoMap@@PEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180012730",
+        "from_func": "0x1800126c0",
+        "from_func_name": "?SetCount@_attributes_array_t@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800127fa",
+        "from_func": "0x180012794",
+        "from_func_name": "?AppendAndDetach@_hypothesis_builder@@QEAAJKPEAV1@PEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800128e6",
+        "from_func": "0x180012794",
+        "from_func_name": "?AppendAndDetach@_hypothesis_builder@@QEAAJKPEAV1@PEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180012ba4",
+        "from_func": "0x180012b74",
+        "from_func_name": "?SetCount@_hypothesis_builder@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180004c90",
+        "from_func": "0x180004c20",
+        "from_func_name": "?GetAttributeInfo@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHelperAttributeInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180004dd6",
+        "from_func": "0x180004d60",
+        "from_func_name": "?GetAttributes@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180004e60",
+        "from_func": "0x180004d60",
+        "from_func_name": "?GetAttributes@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000575e",
+        "from_func": "0x180005750",
+        "from_func_name": "?GetDiagnosticsInfo@CWinInetHelperClass@@UEAAJPEAPEAUtagDiagnosticsInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180005c2c",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180005db9",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180005e71",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180005fda",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006107",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800061df",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800062b5",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800063fd",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800064ba",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800065d7",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000672d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800068bc",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006aa0",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006b6d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006c8f",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006df7",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180006f5d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180007241",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000799a",
+        "from_func": "0x180007800",
+        "from_func_name": "?GetRepairInfo@CWinInetHelperClass@@UEAAJW4tagPROBLEM_TYPE@@PEAKPEAPEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180007ac8",
+        "from_func": "0x180007800",
+        "from_func_name": "?GetRepairInfo@CWinInetHelperClass@@UEAAJW4tagPROBLEM_TYPE@@PEAKPEAPEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000850c",
+        "from_func": "0x1800082f0",
+        "from_func_name": "?Initialize@CWinInetHelperClass@@UEAAJKQEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000aba3",
+        "from_func": "0x18000ab0c",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEAGPEAPEAG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000c7d4",
+        "from_func": "0x18000c764",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000ca62",
+        "from_func": "0x18000ca0c",
+        "from_func_name": "?StringCchCopyWithAlloc@@YAJPEAPEAG_KPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180010399",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800105c4",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18001065e",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800107f5",
+        "from_func": "0x1800107dc",
+        "from_func_name": "?LoadStringWithAlloc@@YAJIPEAPEAGI@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180012308",
+        "from_func": "0x1800122f0",
+        "from_func_name": "?GetDiagnosticsInfo@CNetDiagHelperImpl@@UEAAJPEAPEAUtagDiagnosticsInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180012576",
+        "from_func": "0x180012510",
+        "from_func_name": "?PopulateRepairInfo@@YAJPEBUtagRepairInfoMap@@PEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800125ac",
+        "from_func": "0x180012510",
+        "from_func_name": "?PopulateRepairInfo@@YAJPEBUtagRepairInfoMap@@PEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180012730",
+        "from_func": "0x1800126c0",
+        "from_func_name": "?SetCount@_attributes_array_t@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800127fa",
+        "from_func": "0x180012794",
+        "from_func_name": "?AppendAndDetach@_hypothesis_builder@@QEAAJKPEAV1@PEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800128e6",
+        "from_func": "0x180012794",
+        "from_func_name": "?AppendAndDetach@_hypothesis_builder@@QEAAJKPEAV1@PEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180012ba4",
+        "from_func": "0x180012b74",
+        "from_func_name": "?SetCount@_hypothesis_builder@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800199b0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ],
+    "xref_count": 168,
+    "xrefs": [
+      {
+        "from_ea": "0x180002bc9",
+        "from_func": "0x180002ba8",
+        "from_func_name": "??0_attribute_t@@QEAA@AEBUsockaddr_storage@@PEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180002c6d",
+        "from_func": "0x180002c54",
+        "from_func_name": "??0_attribute_t@@QEAA@AEBUtagOCTET_STRING@@PEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180002ced",
+        "from_func": "0x180002ccc",
+        "from_func_name": "??0_attribute_t@@QEAA@PEBG0@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180002d65",
+        "from_func": "0x180002d4c",
+        "from_func_name": "??0_attribute_t@@QEAA@_NPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180002e6f",
+        "from_func": "0x180002e38",
+        "from_func_name": "??1CNetDiagHelperEx@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180003191",
+        "from_func": "0x180002f7c",
+        "from_func_name": "??1CWinInetHelperClass@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180003328",
+        "from_func": "0x1800032ec",
+        "from_func_name": "??1_hypothesis_builder@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004403",
+        "from_func": "0x180004330",
+        "from_func_name": "?Copy@_attribute_t@@QEAAJPEBUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004ad7",
+        "from_func": "0x180004ac4",
+        "from_func_name": "?FreeAll@_attribute_t@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004af7",
+        "from_func": "0x180004ac4",
+        "from_func_name": "?FreeAll@_attribute_t@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004b15",
+        "from_func": "0x180004ac4",
+        "from_func_name": "?FreeAll@_attribute_t@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004b48",
+        "from_func": "0x180004b38",
+        "from_func_name": "?FreeAll@_hypothesis_builder@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004b5f",
+        "from_func": "0x180004b38",
+        "from_func_name": "?FreeAll@_hypothesis_builder@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004ba6",
+        "from_func": "0x180004b38",
+        "from_func_name": "?FreeAll@_hypothesis_builder@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004bb6",
+        "from_func": "0x180004b38",
+        "from_func_name": "?FreeAll@_hypothesis_builder@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004d12",
+        "from_func": "0x180004c20",
+        "from_func_name": "?GetAttributeInfo@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHelperAttributeInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004d27",
+        "from_func": "0x180004c20",
+        "from_func_name": "?GetAttributeInfo@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHelperAttributeInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004eb4",
+        "from_func": "0x180004d60",
+        "from_func_name": "?GetAttributes@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004ec3",
+        "from_func": "0x180004d60",
+        "from_func_name": "?GetAttributes@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005be2",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005c80",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005d22",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005d69",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005e28",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005f33",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005f8d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000600d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800060b9",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006190",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000626c",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000636c",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800063ad",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000646e",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000658a",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800066e7",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006870",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006910",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800069b9",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006a08",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006a51",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006b21",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006c40",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006db1",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006f0d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800071f3",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007625",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007bae",
+        "from_func": "0x180007800",
+        "from_func_name": "?GetRepairInfo@CWinInetHelperClass@@UEAAJW4tagPROBLEM_TYPE@@PEAKPEAPEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000829f",
+        "from_func": "0x1800081b0",
+        "from_func_name": "?Initialize@CNetDiagHelperImpl@@UEAAJKQEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000856f",
+        "from_func": "0x1800082f0",
+        "from_func_name": "?Initialize@CWinInetHelperClass@@UEAAJKQEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000ab8b",
+        "from_func": "0x18000ab0c",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEAGPEAPEAG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000ad9d",
+        "from_func": "0x18000ab0c",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEAGPEAPEAG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b130",
+        "from_func": "0x18000b020",
+        "from_func_name": "?ReconfirmLowHealth@CWinInetHelperClass@@UEAAJKPEAUtagHypothesisResult@@PEAPEAGPEAW4tagDIAGNOSIS_STATUS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b15f",
+        "from_func": "0x18000b020",
+        "from_func_name": "?ReconfirmLowHealth@CWinInetHelperClass@@UEAAJKPEAUtagHypothesisResult@@PEAPEAGPEAW4tagDIAGNOSIS_STATUS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b418",
+        "from_func": "0x18000b374",
+        "from_func_name": "?RegisterBuffer@CRegParser@ATL@@QEAAJPEAGH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000c6ef",
+        "from_func": "0x18000c6cc",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000c70f",
+        "from_func": "0x18000c6cc",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000c77d",
+        "from_func": "0x18000c764",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000c79d",
+        "from_func": "0x18000c764",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800103d5",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800103e9",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800103f8",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001040e",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180010422",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800106da",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180010852",
+        "from_func": "0x1800107dc",
+        "from_func_name": "?LoadStringWithAlloc@@YAJIPEAPEAGI@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012018",
+        "from_func": "0x180011ef0",
+        "from_func_name": "?Copy@_attributes_array_t@@QEAAJKPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800120a9",
+        "from_func": "0x180011ef0",
+        "from_func_name": "?Copy@_attributes_array_t@@QEAAJKPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001211b",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012135",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012160",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012178",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012190",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800121a8",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800121cc",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800121fc",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800123e6",
+        "from_func": "0x180012350",
+        "from_func_name": "?GetKeyAttributes@CNetDiagHelperImpl@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001242a",
+        "from_func": "0x180012350",
+        "from_func_name": "?GetKeyAttributes@CNetDiagHelperImpl@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012601",
+        "from_func": "0x180012510",
+        "from_func_name": "?PopulateRepairInfo@@YAJPEBUtagRepairInfoMap@@PEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001270b",
+        "from_func": "0x1800126c0",
+        "from_func_name": "?SetCount@_attributes_array_t@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012857",
+        "from_func": "0x180012794",
+        "from_func_name": "?AppendAndDetach@_hypothesis_builder@@QEAAJKPEAV1@PEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001296c",
+        "from_func": "0x180012940",
+        "from_func_name": "?Create@_hypothesis_builder@@QEAAJPEBGAEAV_attribute_t@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012a14",
+        "from_func": "0x1800129e8",
+        "from_func_name": "?Create@_hypothesis_builder@@QEAAJPEBGK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012a9d",
+        "from_func": "0x180012a5c",
+        "from_func_name": "?DetachInPlace@_hypothesis_builder@@IEAAJAEAUtagHYPOTHESIS@@PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012c57",
+        "from_func": "0x180012b74",
+        "from_func_name": "?SetCount@_hypothesis_builder@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180002bc9",
+        "from_func": "0x180002ba8",
+        "from_func_name": "??0_attribute_t@@QEAA@AEBUsockaddr_storage@@PEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180002c6d",
+        "from_func": "0x180002c54",
+        "from_func_name": "??0_attribute_t@@QEAA@AEBUtagOCTET_STRING@@PEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180002ced",
+        "from_func": "0x180002ccc",
+        "from_func_name": "??0_attribute_t@@QEAA@PEBG0@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180002d65",
+        "from_func": "0x180002d4c",
+        "from_func_name": "??0_attribute_t@@QEAA@_NPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180002e6f",
+        "from_func": "0x180002e38",
+        "from_func_name": "??1CNetDiagHelperEx@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180003191",
+        "from_func": "0x180002f7c",
+        "from_func_name": "??1CWinInetHelperClass@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180003328",
+        "from_func": "0x1800032ec",
+        "from_func_name": "??1_hypothesis_builder@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004403",
+        "from_func": "0x180004330",
+        "from_func_name": "?Copy@_attribute_t@@QEAAJPEBUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004ad7",
+        "from_func": "0x180004ac4",
+        "from_func_name": "?FreeAll@_attribute_t@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004af7",
+        "from_func": "0x180004ac4",
+        "from_func_name": "?FreeAll@_attribute_t@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004b15",
+        "from_func": "0x180004ac4",
+        "from_func_name": "?FreeAll@_attribute_t@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004b48",
+        "from_func": "0x180004b38",
+        "from_func_name": "?FreeAll@_hypothesis_builder@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004b5f",
+        "from_func": "0x180004b38",
+        "from_func_name": "?FreeAll@_hypothesis_builder@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004ba6",
+        "from_func": "0x180004b38",
+        "from_func_name": "?FreeAll@_hypothesis_builder@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004bb6",
+        "from_func": "0x180004b38",
+        "from_func_name": "?FreeAll@_hypothesis_builder@@QEAAXXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004d12",
+        "from_func": "0x180004c20",
+        "from_func_name": "?GetAttributeInfo@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHelperAttributeInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004d27",
+        "from_func": "0x180004c20",
+        "from_func_name": "?GetAttributeInfo@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHelperAttributeInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004eb4",
+        "from_func": "0x180004d60",
+        "from_func_name": "?GetAttributes@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180004ec3",
+        "from_func": "0x180004d60",
+        "from_func_name": "?GetAttributes@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005be2",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005c80",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005d22",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005d69",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005e28",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005f33",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180005f8d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000600d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800060b9",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006190",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000626c",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000636c",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800063ad",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000646e",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000658a",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800066e7",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006870",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006910",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800069b9",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006a08",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006a51",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006b21",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006c40",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006db1",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180006f0d",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800071f3",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007625",
+        "from_func": "0x180005b30",
+        "from_func_name": "?GetLowerHypotheses@CWinInetHelperClass@@UEAAJPEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007bae",
+        "from_func": "0x180007800",
+        "from_func_name": "?GetRepairInfo@CWinInetHelperClass@@UEAAJW4tagPROBLEM_TYPE@@PEAKPEAPEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000829f",
+        "from_func": "0x1800081b0",
+        "from_func_name": "?Initialize@CNetDiagHelperImpl@@UEAAJKQEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000856f",
+        "from_func": "0x1800082f0",
+        "from_func_name": "?Initialize@CWinInetHelperClass@@UEAAJKQEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000ab8b",
+        "from_func": "0x18000ab0c",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEAGPEAPEAG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000ad9d",
+        "from_func": "0x18000ab0c",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEAGPEAPEAG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b130",
+        "from_func": "0x18000b020",
+        "from_func_name": "?ReconfirmLowHealth@CWinInetHelperClass@@UEAAJKPEAUtagHypothesisResult@@PEAPEAGPEAW4tagDIAGNOSIS_STATUS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b15f",
+        "from_func": "0x18000b020",
+        "from_func_name": "?ReconfirmLowHealth@CWinInetHelperClass@@UEAAJKPEAUtagHypothesisResult@@PEAPEAGPEAW4tagDIAGNOSIS_STATUS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b418",
+        "from_func": "0x18000b374",
+        "from_func_name": "?RegisterBuffer@CRegParser@ATL@@QEAAJPEAGH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000c6ef",
+        "from_func": "0x18000c6cc",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000c70f",
+        "from_func": "0x18000c6cc",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000c77d",
+        "from_func": "0x18000c764",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000c79d",
+        "from_func": "0x18000c764",
+        "from_func_name": "?SetValue@_attribute_t@@QEAAJPEBUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800103d5",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800103e9",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800103f8",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001040e",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180010422",
+        "from_func": "0x180010324",
+        "from_func_name": "?AssembleStringsWithAlloc@@YAJPEAPEAGIPEBG1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800106da",
+        "from_func": "0x180010590",
+        "from_func_name": "?GetProcessSID@@YAJPEAUtagOCTET_STRING@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180010852",
+        "from_func": "0x1800107dc",
+        "from_func_name": "?LoadStringWithAlloc@@YAJIPEAPEAGI@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012018",
+        "from_func": "0x180011ef0",
+        "from_func_name": "?Copy@_attributes_array_t@@QEAAJKPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800120a9",
+        "from_func": "0x180011ef0",
+        "from_func_name": "?Copy@_attributes_array_t@@QEAAJKPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001211b",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012135",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012160",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012178",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012190",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800121a8",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800121cc",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800121fc",
+        "from_func": "0x1800120e8",
+        "from_func_name": "?FreeRepairInfos@@YAXPEAUtagRepairInfo@@KH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800123e6",
+        "from_func": "0x180012350",
+        "from_func_name": "?GetKeyAttributes@CNetDiagHelperImpl@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001242a",
+        "from_func": "0x180012350",
+        "from_func_name": "?GetKeyAttributes@CNetDiagHelperImpl@@UEAAJPEAKPEAPEAUtagHELPER_ATTRIBUTE@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012601",
+        "from_func": "0x180012510",
+        "from_func_name": "?PopulateRepairInfo@@YAJPEBUtagRepairInfoMap@@PEAUtagRepairInfo@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001270b",
+        "from_func": "0x1800126c0",
+        "from_func_name": "?SetCount@_attributes_array_t@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012857",
+        "from_func": "0x180012794",
+        "from_func_name": "?AppendAndDetach@_hypothesis_builder@@QEAAJKPEAV1@PEAKPEAPEAUtagHYPOTHESIS@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001296c",
+        "from_func": "0x180012940",
+        "from_func_name": "?Create@_hypothesis_builder@@QEAAJPEBGAEAV_attribute_t@@@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012a14",
+        "from_func": "0x1800129e8",
+        "from_func_name": "?Create@_hypothesis_builder@@QEAAJPEBGK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012a9d",
+        "from_func": "0x180012a5c",
+        "from_func_name": "?DetachInPlace@_hypothesis_builder@@IEAAJAEAUtagHYPOTHESIS@@PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180012c57",
+        "from_func": "0x180012b74",
+        "from_func_name": "?SetCount@_hypothesis_builder@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoTaskMemRealloc",
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180004107",
+        "from_func": "0x1800040ac",
+        "from_func_name": "?Append@CParseBuffer@CRegParser@ATL@@QEAAHPEBGH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemRealloc"
+      },
+      {
+        "from_ea": "0x180012bea",
+        "from_func": "0x180012b74",
+        "from_func_name": "?SetCount@_hypothesis_builder@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemRealloc"
+      },
+      {
+        "from_ea": "0x180004107",
+        "from_func": "0x1800040ac",
+        "from_func_name": "?Append@CParseBuffer@CRegParser@ATL@@QEAAHPEBGH@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemRealloc"
+      },
+      {
+        "from_ea": "0x180012bea",
+        "from_func": "0x180012b74",
+        "from_func_name": "?SetCount@_hypothesis_builder@@QEAAJK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemRealloc"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoUninitialize",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800050db",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x18000542f",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x1800054a4",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x1800050db",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x18000542f",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x1800054a4",
+        "from_func": "0x180004fcc",
+        "from_func_name": "?GetConnectivityCapability@@YAKPEAW4_CONNECTIVITY_CAPABILITY@@0PEAK1@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!StringFromGUID2",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e945",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!StringFromGUID2"
+      },
+      {
+        "from_ea": "0x180010e0a",
+        "from_func": "0x180010cb8",
+        "from_func_name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+        "import": "api-ms-win-core-com-l1-1-0!StringFromGUID2"
+      },
+      {
+        "from_ea": "0x18000e945",
+        "from_func": "0x18000e7d0",
+        "from_func_name": "?_RunAsImpersonatedUser@@YAJPEBG@Z",
+        "import": "api-ms-win-core-com-l1-1-0!StringFromGUID2"
+      },
+      {
+        "from_ea": "0x180010e0a",
+        "from_func": "0x180010cb8",
+        "from_func_name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+        "import": "api-ms-win-core-com-l1-1-0!StringFromGUID2"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800017f6",
+        "from_func": "0x1800017f6",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001f6b",
+        "from_func": "0x180001f6b",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 7,
+    "xrefs": [
+      {
+        "from_ea": "0x180001900",
+        "from_func": "0x1800018c0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180001aa0",
+        "from_func": "0x180001a68",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180001ea2",
+        "from_func": "0x180001e5c",
+        "from_func_name": "_invoke_watson",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180001900",
+        "from_func": "0x1800018c0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180001aa0",
+        "from_func": "0x180001a68",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180001ea2",
+        "from_func": "0x180001e5c",
+        "from_func_name": "_invoke_watson",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x1800198e8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlIpv4StringToAddressExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180010766",
+        "from_func": "0x18001070c",
+        "from_func_name": "?IsIPAddress@@YAHPEAGPEAUsockaddr_storage@@@Z",
+        "import": "ntdll!RtlIpv4StringToAddressExW"
+      },
+      {
+        "from_ea": "0x180010766",
+        "from_func": "0x18001070c",
+        "from_func_name": "?IsIPAddress@@YAHPEAGPEAUsockaddr_storage@@@Z",
+        "import": "ntdll!RtlIpv4StringToAddressExW"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlIpv4StringToAddressW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000f6ad",
+        "from_func": "0x18000f5f8",
+        "from_func_name": "?ProcessTokenIntoAddress@@YAXPEBG0W4_PARSE_PROXY_STRING_TOKEN_TYPE@@PEAUsockaddr_storage@@PEAJ@Z",
+        "import": "ntdll!RtlIpv4StringToAddressW"
+      },
+      {
+        "from_ea": "0x18000f6ad",
+        "from_func": "0x18000f5f8",
+        "from_func_name": "?ProcessTokenIntoAddress@@YAXPEBG0W4_PARSE_PROXY_STRING_TOKEN_TYPE@@PEAUsockaddr_storage@@PEAJ@Z",
+        "import": "ntdll!RtlIpv4StringToAddressW"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlIpv6StringToAddressExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180010785",
+        "from_func": "0x18001070c",
+        "from_func_name": "?IsIPAddress@@YAHPEAGPEAUsockaddr_storage@@@Z",
+        "import": "ntdll!RtlIpv6StringToAddressExW"
+      },
+      {
+        "from_ea": "0x180010785",
+        "from_func": "0x18001070c",
+        "from_func_name": "?IsIPAddress@@YAHPEAGPEAUsockaddr_storage@@@Z",
+        "import": "ntdll!RtlIpv6StringToAddressExW"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlIpv6StringToAddressW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000f6ca",
+        "from_func": "0x18000f5f8",
+        "from_func_name": "?ProcessTokenIntoAddress@@YAXPEBG0W4_PARSE_PROXY_STRING_TOKEN_TYPE@@PEAUsockaddr_storage@@PEAJ@Z",
+        "import": "ntdll!RtlIpv6StringToAddressW"
+      },
+      {
+        "from_ea": "0x18000f6ca",
+        "from_func": "0x18000f5f8",
+        "from_func_name": "?ProcessTokenIntoAddress@@YAXPEBG0W4_PARSE_PROXY_STRING_TOKEN_TYPE@@PEAUsockaddr_storage@@PEAJ@Z",
+        "import": "ntdll!RtlIpv6StringToAddressW"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x18000191f",
+        "from_func": "0x1800018c0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x180001abf",
+        "from_func": "0x180001a68",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x180001eb7",
+        "from_func": "0x180001e5c",
+        "from_func_name": "_invoke_watson",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x18000191f",
+        "from_func": "0x1800018c0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x180001abf",
+        "from_func": "0x180001a68",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x180001eb7",
+        "from_func": "0x180001e5c",
+        "from_func_name": "_invoke_watson",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x18000196c",
+        "from_func": "0x1800018c0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x180001b0c",
+        "from_func": "0x180001a68",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x180001ef6",
+        "from_func": "0x180001e5c",
+        "from_func_name": "_invoke_watson",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x18000196c",
+        "from_func": "0x1800018c0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x180001b0c",
+        "from_func": "0x180001a68",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x180001ef6",
+        "from_func": "0x180001e5c",
+        "from_func_name": "_invoke_watson",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  }
+]
