@@ -1,0 +1,281 @@
+# SignalSynchronizationObjectInternal(uint,uint const *,_D3DDDICB_SIGNALFLAGS,ulong,uint const *,unsigned __int64 const *,unsigned __int64,void * const *,DXGPROCESS *,SIGNAL_SYNC_OBJ_FLAGS)
+
+- ea: `0x14032aa08`
+- end: `0x14032d740`
+- name: `?SignalSynchronizationObjectInternal@@YAJIPEBIU_D3DDDICB_SIGNALFLAGS@@K0PEB_K_KPEBQEAXPEAVDXGPROCESS@@USIGNAL_SYNC_OBJ_FLAGS@@@Z`
+- size: `11576`
+- prototype: `int __high(unsigned int, const unsigned int *, struct _D3DDDICB_SIGNALFLAGS, unsigned int, const unsigned int *, const unsigned __int64 *, unsigned __int64, void *const *, struct DXGPROCESS *, struct SIGNAL_SYNC_OBJ_FLAGS)`
+- caller_count: `7`
+- callee_count: `41`
+- tags: ``
+
+## callers
+
+- `0x14032a238`
+- `0x14034b1bc`
+- `0x14034f270`
+- `0x140350050`
+- `0x1403a2a44`
+- `0x1403a5e3c`
+- `0x1403deb00`
+
+## callees
+
+- `0x140012380`
+- `0x140015780`
+- `0x140015970`
+- `0x140015d70`
+- `0x140016330`
+- `0x140017fb8`
+- `0x14001ab20`
+- `0x14001b890`
+- `0x14001baa0`
+- `0x14001cbe0`
+- `0x14001ccf0`
+- `0x14001d070`
+- `0x14001d144`
+- `0x14001e630`
+- `0x14001f120`
+- `0x14001f460`
+- `0x14001f870`
+- `0x140020150`
+- `0x140020200`
+- `0x140021b20`
+- `0x14002d9f0`
+- `0x14002dd20`
+- `0x14002ec90`
+- `0x140030860`
+- `0x140033ce0`
+- `0x140037a84`
+- `0x140038c48`
+- `0x14004255c`
+- `0x140047790`
+- `0x14004885c`
+- `0x1400549f0`
+- `0x1400553f0`
+- `0x1400670a4`
+- `0x1400a0100`
+- `0x1400a01e0`
+- `0x1400a0540`
+- `0x14019fcc4`
+- `0x14032aa08`
+- `0x14032d748`
+- `0x14032d860`
+- `0x14032d8b0`
+
+## import_xrefs
+
+- `ntoskrnl!KeLeaveCriticalRegion` at `0x14032b029`
+- `ntoskrnl!KeLeaveCriticalRegion` at `0x14032b0fc`
+- `ntoskrnl!KeLeaveCriticalRegion` at `0x14032b43e`
+- `ntoskrnl!KeLeaveCriticalRegion` at `0x14032b029`
+- `ntoskrnl!KeLeaveCriticalRegion` at `0x14032b0fc`
+- `ntoskrnl!KeLeaveCriticalRegion` at `0x14032b43e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b473`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b6c8`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b727`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b75e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b795`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b80d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b8ef`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b92e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b96d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b9ac`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ba2c`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bbcf`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bbeb`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bc14`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bd31`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bdac`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032be3a`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c1ac`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c1c8`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c245`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c2c7`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c308`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c33f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c37e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c391`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c3c8`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c407`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c460`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c497`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c4ce`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c52e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c56d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c5b1`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c5e8`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c61f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c656`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c6ce`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c71c`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c7d2`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c830`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c868`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c8e1`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c95c`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c994`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c9dc`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ca14`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032caaf`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cae6`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cb1d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cb95`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cbe2`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cc1a`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cc52`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cc8a`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cd1b`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cd53`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cd8b`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cdc3`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ce1e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ced7`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ceff`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cf3e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b473`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b6c8`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b727`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b75e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b795`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b80d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b8ef`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b92e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b96d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032b9ac`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ba2c`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bbcf`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bbeb`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bc14`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bd31`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032bdac`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032be3a`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c1ac`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c1c8`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c245`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c2c7`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c308`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c33f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c37e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c391`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c3c8`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c407`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c460`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c497`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c4ce`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c52e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c56d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c5b1`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c5e8`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c61f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c656`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c6ce`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c71c`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c7d2`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c830`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c868`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c8e1`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c95c`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c994`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032c9dc`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ca14`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032caaf`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cae6`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cb1d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cb95`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cbe2`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cc1a`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cc52`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cc8a`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cd1b`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cd53`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cd8b`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cdc3`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ce1e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ced7`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032ceff`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14032cf3e`
+- `ntoskrnl!ExAllocatePool2` at `0x14032b4ad`
+- `ntoskrnl!ExAllocatePool2` at `0x14032b5ac`
+- `ntoskrnl!ExAllocatePool2` at `0x14032bcab`
+- `ntoskrnl!ExAllocatePool2` at `0x14032c0e2`
+- `ntoskrnl!ExAllocatePool2` at `0x14032c124`
+- `ntoskrnl!ExAllocatePool2` at `0x14032d2af`
+- `ntoskrnl!ExAllocatePool2` at `0x14032b4ad`
+- `ntoskrnl!ExAllocatePool2` at `0x14032b5ac`
+- `ntoskrnl!ExAllocatePool2` at `0x14032bcab`
+- `ntoskrnl!ExAllocatePool2` at `0x14032c0e2`
+- `ntoskrnl!ExAllocatePool2` at `0x14032c124`
+- `ntoskrnl!ExAllocatePool2` at `0x14032d2af`
+- `ntoskrnl!ExReleasePushLockSharedEx` at `0x14032b01d`
+- `ntoskrnl!ExReleasePushLockSharedEx` at `0x14032b0f0`
+- `ntoskrnl!ExReleasePushLockSharedEx` at `0x14032b01d`
+- `ntoskrnl!ExReleasePushLockSharedEx` at `0x14032b0f0`
+- `ntoskrnl!ExReleaseResourceLite` at `0x14032b432`
+- `ntoskrnl!ExReleaseResourceLite` at `0x14032b432`
+- `watchdog!WdLogSingleEntry4` at `0x14032d0b6`
+- `watchdog!WdLogSingleEntry4` at `0x14032d495`
+- `watchdog!WdLogSingleEntry4` at `0x14032d63f`
+- `watchdog!WdLogSingleEntry4` at `0x14032d6e3`
+- `watchdog!WdLogSingleEntry4` at `0x14032d0b6`
+- `watchdog!WdLogSingleEntry4` at `0x14032d495`
+- `watchdog!WdLogSingleEntry4` at `0x14032d63f`
+- `watchdog!WdLogSingleEntry4` at `0x14032d6e3`
+- `watchdog!WdLogSingleEntry2` at `0x14032d568`
+- `watchdog!WdLogSingleEntry2` at `0x14032d568`
+- `watchdog!WdLogSingleEntry3` at `0x14032cfc7`
+- `watchdog!WdLogSingleEntry3` at `0x14032d254`
+- `watchdog!WdLogSingleEntry3` at `0x14032d355`
+- `watchdog!WdLogSingleEntry3` at `0x14032d678`
+- `watchdog!WdLogSingleEntry3` at `0x14032cfc7`
+- `watchdog!WdLogSingleEntry3` at `0x14032d254`
+- `watchdog!WdLogSingleEntry3` at `0x14032d355`
+- `watchdog!WdLogSingleEntry3` at `0x14032d678`
+- `watchdog!WdLogSingleEntry0` at `0x14032b4e8`
+- `watchdog!WdLogSingleEntry0` at `0x14032ba6e`
+- `watchdog!WdLogSingleEntry0` at `0x14032babc`
+- `watchdog!WdLogSingleEntry0` at `0x14032bc28`
+- `watchdog!WdLogSingleEntry0` at `0x14032c00e`
+- `watchdog!WdLogSingleEntry0` at `0x14032c7f9`
+- `watchdog!WdLogSingleEntry0` at `0x14032c8fc`
+- `watchdog!WdLogSingleEntry0` at `0x14032ccae`
+- `watchdog!WdLogSingleEntry0` at `0x14032cf6b`
+- `watchdog!WdLogSingleEntry0` at `0x14032d014`
+- `watchdog!WdLogSingleEntry0` at `0x14032d127`
+- `watchdog!WdLogSingleEntry0` at `0x14032d147`
+- `watchdog!WdLogSingleEntry0` at `0x14032d19f`
+- `watchdog!WdLogSingleEntry0` at `0x14032d1ef`
+- `watchdog!WdLogSingleEntry0` at `0x14032d2c6`
+- `watchdog!WdLogSingleEntry0` at `0x14032d3b9`
+- `watchdog!WdLogSingleEntry0` at `0x14032d413`
+- `watchdog!WdLogSingleEntry0` at `0x14032d4c8`
+- `watchdog!WdLogSingleEntry0` at `0x14032b4e8`
+- `watchdog!WdLogSingleEntry0` at `0x14032ba6e`
+- `watchdog!WdLogSingleEntry0` at `0x14032babc`
+- `watchdog!WdLogSingleEntry0` at `0x14032bc28`
+- `watchdog!WdLogSingleEntry0` at `0x14032c00e`
+- `watchdog!WdLogSingleEntry0` at `0x14032c7f9`
+- `watchdog!WdLogSingleEntry0` at `0x14032c8fc`
+- `watchdog!WdLogSingleEntry0` at `0x14032ccae`
+- `watchdog!WdLogSingleEntry0` at `0x14032cf6b`
+- `watchdog!WdLogSingleEntry0` at `0x14032d014`
+- `watchdog!WdLogSingleEntry0` at `0x14032d127`
+- `watchdog!WdLogSingleEntry0` at `0x14032d147`
+- `watchdog!WdLogSingleEntry0` at `0x14032d19f`
+- `watchdog!WdLogSingleEntry0` at `0x14032d1ef`
+- `watchdog!WdLogSingleEntry0` at `0x14032d2c6`
+- `watchdog!WdLogSingleEntry0` at `0x14032d3b9`
+
+## string_xrefs
+
+- `0x14032d55c`: `Sync object 0x%I64x is created with SignalByKmd and cannot be signaled`
+- `0x14032d5a7`: `SignalSynchronizationObjectFromGpu on device 0x%p attempts to use a sync object opened on a different device 0x%p.`
+- `0x14032ca7f`: `0x%I64x object is opened with NoSignal flag and thus cannot be signaled.`
+- `0x14032d6bb`: `0x%I64x failed, failed to create a sync object on logical adapter 0x%I64x returning 0x%I64x`
+- `0x14032b8bc`: `0x%I64x encountered exception when copying monitored fence value array.`
+
+## pseudocode
+
+```c
+
+```
