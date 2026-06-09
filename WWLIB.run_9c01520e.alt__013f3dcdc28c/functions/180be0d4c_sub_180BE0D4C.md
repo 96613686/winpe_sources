@@ -1,0 +1,282 @@
+# sub_180BE0D4C
+
+- ea: `0x180be0d4c`
+- end: `0x180be43b0`
+- name: `sub_180BE0D4C`
+- size: `13924`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `105`
+- tags: `registry_config`
+
+## callers
+
+- `0x180be0ae0`
+- `0x180ce0b94`
+
+## callees
+
+- `0x180047f6c`
+- `0x18007c600`
+- `0x180087a20`
+- `0x18008cc28`
+- `0x18009cea0`
+- `0x18009e83c`
+- `0x1800a710c`
+- `0x1800a740c`
+- `0x1800a774c`
+- `0x1800b78b0`
+- `0x1800cf5dc`
+- `0x1800cfa1c`
+- `0x1800d65e8`
+- `0x1800dd300`
+- `0x1800e7afc`
+- `0x1800ef8f0`
+- `0x1801172d4`
+- `0x1801213c0`
+- `0x180169cf0`
+- `0x18016a3dc`
+- `0x180192280`
+- `0x1801f50f8`
+- `0x180216ce0`
+- `0x180231cd8`
+- `0x180308970`
+- `0x180313270`
+- `0x18037be30`
+- `0x18041676c`
+- `0x1804167fc`
+- `0x180439ce0`
+- `0x18043fda4`
+- `0x180441ffc`
+- `0x18048dcb4`
+- `0x1804b3e1c`
+- `0x1804bbf1c`
+- `0x1804bc45c`
+- `0x18059bacc`
+- `0x1805a8170`
+- `0x1805aed50`
+- `0x1805b229c`
+- `0x1805b33a4`
+- `0x1805b3464`
+- `0x1805b4744`
+- `0x1805b493c`
+- `0x1805c1728`
+- `0x1805cfc60`
+- `0x1805d0810`
+- `0x1805d08d4`
+- `0x1805df720`
+- `0x1805fea7c`
+
+## import_xrefs
+
+- `oart!oart_3697` at `0x180be1442`
+- `oart!oart_3697` at `0x180be1442`
+- `oart!oart_3887` at `0x180be0f00`
+- `oart!oart_3887` at `0x180be0f00`
+- `oart!oart_9864` at `0x180be2cb9`
+- `oart!oart_9864` at `0x180be2ec8`
+- `oart!oart_9864` at `0x180be2cb9`
+- `oart!oart_9864` at `0x180be2ec8`
+- `oart!oart_9876` at `0x180be2d0c`
+- `oart!oart_9876` at `0x180be2d0c`
+- `oart!__imp_oart_16065` at `0x180be1a4a`
+- `oart!__imp_oart_16065` at `0x180be1b8a`
+- `oart!__imp_oart_16065` at `0x180be1da6`
+- `oart!__imp_oart_16065` at `0x180be20e8`
+- `oart!__imp_oart_16065` at `0x180be2e6c`
+- `oart!__imp_oart_16065` at `0x180be2fc6`
+- `oart!__imp_oart_16065` at `0x180be3082`
+- `oart!__imp_oart_16065` at `0x180be3444`
+- `oart!__imp_oart_16065` at `0x180be3b19`
+- `oart!__imp_oart_16065` at `0x180be3cf3`
+- `oart!__imp_oart_16065` at `0x180be3d91`
+- `oart!__imp_oart_16065` at `0x180be3e73`
+- `oart!__imp_oart_16065` at `0x180be3f16`
+- `oart!__imp_oart_16065` at `0x180be1a4a`
+- `oart!__imp_oart_16065` at `0x180be1b8a`
+- `oart!__imp_oart_16065` at `0x180be1da6`
+- `oart!__imp_oart_16065` at `0x180be20e8`
+- `oart!__imp_oart_16065` at `0x180be2e6c`
+- `oart!__imp_oart_16065` at `0x180be2fc6`
+- `oart!__imp_oart_16065` at `0x180be3082`
+- `oart!__imp_oart_16065` at `0x180be3444`
+- `oart!__imp_oart_16065` at `0x180be3b19`
+- `oart!__imp_oart_16065` at `0x180be3cf3`
+- `oart!__imp_oart_16065` at `0x180be3d91`
+- `oart!__imp_oart_16065` at `0x180be3e73`
+- `oart!__imp_oart_16065` at `0x180be3f16`
+- `oart!oart_18027` at `0x180be3729`
+- `oart!oart_18027` at `0x180be3729`
+- `oart!oart_20343` at `0x180be1486`
+- `oart!oart_20343` at `0x180be1486`
+- `oart!oart_20873` at `0x180be1e43`
+- `oart!oart_20873` at `0x180be1e43`
+- `oart!oart_23214` at `0x180be2ede`
+- `oart!oart_23214` at `0x180be2ede`
+- `oart!oart_32339` at `0x180be2ced`
+- `oart!oart_32339` at `0x180be2f0d`
+- `oart!oart_32339` at `0x180be2ced`
+- `oart!oart_32339` at `0x180be2f0d`
+- `oart!oart_35459` at `0x180be1e92`
+- `oart!oart_35459` at `0x180be1e92`
+- `oart!oart_38568` at `0x180be3717`
+- `oart!oart_38568` at `0x180be3717`
+- `oart!oart_40286` at `0x180be0faf`
+- `oart!oart_40286` at `0x180be13fe`
+- `oart!oart_40286` at `0x180be0faf`
+- `oart!oart_40286` at `0x180be13fe`
+- `oart!oart_43267` at `0x180be2d23`
+- `oart!oart_43267` at `0x180be2d23`
+- `oart!oart_44118` at `0x180be118d`
+- `oart!oart_44118` at `0x180be118d`
+- `oart!oart_45965` at `0x180be1470`
+- `oart!oart_45965` at `0x180be1470`
+- `oart!__imp_oart_46753` at `0x180be2d4c`
+- `oart!__imp_oart_46753` at `0x180be2f26`
+- `oart!__imp_oart_46753` at `0x180be2d4c`
+- `oart!__imp_oart_46753` at `0x180be2f26`
+- `oart!oart_51136` at `0x180be213b`
+- `oart!oart_51136` at `0x180be213b`
+- `oart!oart_53519` at `0x180be3781`
+- `oart!oart_53519` at `0x180be3781`
+- `oart!oart_64799` at `0x180be1155`
+- `oart!oart_64799` at `0x180be1163`
+- `oart!oart_64799` at `0x180be1341`
+- `oart!oart_64799` at `0x180be21d2`
+- `oart!oart_64799` at `0x180be1155`
+- `oart!oart_64799` at `0x180be1163`
+- `oart!oart_64799` at `0x180be1341`
+- `oart!oart_64799` at `0x180be21d2`
+- `KERNEL32!TlsGetValue` at `0x180be2613`
+- `KERNEL32!TlsGetValue` at `0x180be2641`
+- `KERNEL32!TlsGetValue` at `0x180be413e`
+- `KERNEL32!TlsGetValue` at `0x180be4164`
+- `KERNEL32!TlsGetValue` at `0x180be41a7`
+- `KERNEL32!TlsGetValue` at `0x180be4211`
+- `KERNEL32!TlsGetValue` at `0x180be4224`
+- `KERNEL32!TlsGetValue` at `0x180be2613`
+- `KERNEL32!TlsGetValue` at `0x180be2641`
+- `KERNEL32!TlsGetValue` at `0x180be413e`
+- `KERNEL32!TlsGetValue` at `0x180be4164`
+- `KERNEL32!TlsGetValue` at `0x180be41a7`
+- `KERNEL32!TlsGetValue` at `0x180be4211`
+- `KERNEL32!TlsGetValue` at `0x180be4224`
+- `MSO!MSO_20505` at `0x180be1608`
+- `MSO!MSO_20505` at `0x180be1702`
+- `MSO!MSO_20505` at `0x180be1608`
+- `MSO!MSO_20505` at `0x180be1702`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x180be0e64`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x180be1131`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x180be0e64`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x180be1131`
+- `mso40uiWin32Client!mso40uiWin32Client_9926` at `0x180be2dde`
+- `mso40uiWin32Client!mso40uiWin32Client_9926` at `0x180be2dde`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be0e7a`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be1992`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be19d5`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be2a58`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be3738`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be0e7a`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be1992`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be19d5`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be2a58`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x180be3738`
+- `mso40uiWin32Client!mso40uiWin32Client_31001` at `0x180be2dc8`
+- `mso40uiWin32Client!mso40uiWin32Client_31001` at `0x180be2dc8`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be0f29`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be1103`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be15a2`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be1730`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be1755`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be211f`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be2975`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be2cc7`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be2cfb`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be2d1a`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be317d`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be31f1`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be36fe`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be3bc4`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be3bea`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be3f70`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be3fb3`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be0f29`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be1103`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be15a2`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be1730`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be1755`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be211f`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be2975`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be2cc7`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be2cfb`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be2d1a`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be317d`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be31f1`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be36fe`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be3bc4`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be3bea`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be3f70`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x180be3fb3`
+- `mso40uiWin32Client!mso40uiWin32Client_48684` at `0x180be1fd8`
+- `mso40uiWin32Client!mso40uiWin32Client_48684` at `0x180be1fd8`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be19f1`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1a3c`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1a58`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1a66`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1a74`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1b31`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1b7c`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1b98`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1ba6`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1bb4`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1d2e`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1d41`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1d98`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1db4`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1dc2`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be1dd0`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be208f`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be20da`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be20f6`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2104`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2112`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be277b`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2789`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2d5a`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2dec`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2dfa`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2e18`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2e5e`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2e7a`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2e88`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2e96`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2f39`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2f47`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2f62`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2fb8`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2fd4`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2fe2`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be2ff0`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be3005`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be3013`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be302e`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be3074`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be3090`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be30a8`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be30b6`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be33ee`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be3436`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be3452`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be3460`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x180be346e`
+
+## string_xrefs
+
+- `0x180be2176`: `http://schemas.openxmlformats.org/drawingml/2006/chart`
+- `0x180be2c29`: `http://schemas.openxmlformats.org/drawingml/2006/chart`
+
+## pseudocode
+
+```c
+
+```
