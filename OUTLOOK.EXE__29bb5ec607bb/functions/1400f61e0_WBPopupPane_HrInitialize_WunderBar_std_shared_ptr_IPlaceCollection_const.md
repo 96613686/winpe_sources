@@ -1,0 +1,143 @@
+# WBPopupPane::HrInitialize(WunderBar *,std::shared_ptr<IPlaceCollection> const &)
+
+- ea: `0x1400f61e0`
+- end: `0x1400f6b08`
+- name: `?HrInitialize@WBPopupPane@@UEAAJPEAVWunderBar@@AEBV?$shared_ptr@UIPlaceCollection@@@std@@@Z`
+- size: `2344`
+- prototype: `__int64 __fastcall(CLayeredWnd *this)`
+- caller_count: `0`
+- callee_count: `23`
+- tags: `loader_planting`
+
+## callees
+
+- `0x14001dd7c`
+- `0x14001f620`
+- `0x140031560`
+- `0x14009bcdc`
+- `0x1400a7ba4`
+- `0x1400f5678`
+- `0x1400f61e0`
+- `0x1400f6b08`
+- `0x1400f6c1c`
+- `0x1400f831c`
+- `0x140122bd8`
+- `0x14012314c`
+- `0x14012d708`
+- `0x14012dce4`
+- `0x14012e9a0`
+- `0x1401311a0`
+- `0x14015aa30`
+- `0x1401f257c`
+- `0x140244080`
+- `0x140273310`
+- `0x1402d2490`
+- `0x1406fcd14`
+- `0x1407e99f0`
+
+## import_xrefs
+
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f6264`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f6740`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f691e`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f69ad`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f6af8`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f6264`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f6740`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f691e`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f69ad`
+- `OLMAPI32!EtwTraceErrorTag` at `0x1400f6af8`
+- `USER32!GetWindowLongPtrA` at `0x1400f64a6`
+- `USER32!GetWindowLongPtrA` at `0x1400f64a6`
+- `USER32!SetWindowLongPtrA` at `0x1400f64bc`
+- `USER32!SetWindowLongPtrA` at `0x1400f64bc`
+- `USER32!GetAncestor` at `0x1400f65fd`
+- `USER32!GetAncestor` at `0x1400f65fd`
+- `Mso98Win32Client!__imp_?MsoHrLoadWunderBarStyles@@YAJPEAPEAVValue@NetUI@@@Z` at `0x1400f6549`
+- `Mso98Win32Client!__imp_?MsoHrLoadWunderBarStyles@@YAJPEAPEAVValue@NetUI@@@Z` at `0x1400f6549`
+- `mso40uiWin32Client!__imp_?SetLayout@Element@NetUI@@QEAAJW4DALLayoutType@2@@Z` at `0x1400f67fb`
+- `mso40uiWin32Client!__imp_?SetLayout@Element@NetUI@@QEAAJW4DALLayoutType@2@@Z` at `0x1400f67fb`
+- `mso40uiWin32Client!__imp_?FontFacePropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f67b0`
+- `mso40uiWin32Client!__imp_?FontFacePropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f67bd`
+- `mso40uiWin32Client!__imp_?FontFacePropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f67dc`
+- `mso40uiWin32Client!__imp_?FontFacePropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f67b0`
+- `mso40uiWin32Client!__imp_?FontFacePropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f67bd`
+- `mso40uiWin32Client!__imp_?FontFacePropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f67dc`
+- `mso40uiWin32Client!__imp_?GetValue@Node@NetUI@@QEBAPEAVValue@2@PEBUPropertyInfo@2@HE@Z` at `0x1400f6722`
+- `mso40uiWin32Client!__imp_?GetValue@Node@NetUI@@QEBAPEAVValue@2@PEBUPropertyInfo@2@HE@Z` at `0x1400f67cf`
+- `mso40uiWin32Client!__imp_?GetValue@Node@NetUI@@QEBAPEAVValue@2@PEBUPropertyInfo@2@HE@Z` at `0x1400f6722`
+- `mso40uiWin32Client!__imp_?GetValue@Node@NetUI@@QEBAPEAVValue@2@PEBUPropertyInfo@2@HE@Z` at `0x1400f67cf`
+- `mso40uiWin32Client!__imp_?SetPalette@Element@NetUI@@QEAAJPEAU?$ITPalette@W4Swatch@UIColor@Mso@@@UIColor@Mso@@@Z` at `0x1400f66ed`
+- `mso40uiWin32Client!__imp_?SetPalette@Element@NetUI@@QEAAJPEAU?$ITPalette@W4Swatch@UIColor@Mso@@@UIColor@Mso@@@Z` at `0x1400f66ed`
+- `mso40uiWin32Client!__imp_MsoCrCbvGet` at `0x1400f69f1`
+- `mso40uiWin32Client!__imp_MsoCrCbvGet` at `0x1400f69f1`
+- `mso40uiWin32Client!__imp_?SetValue@Node@NetUI@@QEAAJPEBUPropertyInfo@2@PEAVValue@2@@Z` at `0x1400f6781`
+- `mso40uiWin32Client!__imp_?SetValue@Node@NetUI@@QEAAJPEBUPropertyInfo@2@PEAVValue@2@@Z` at `0x1400f67ec`
+- `mso40uiWin32Client!__imp_?SetValue@Node@NetUI@@QEAAJPEBUPropertyInfo@2@PEAVValue@2@@Z` at `0x1400f6aac`
+- `mso40uiWin32Client!__imp_?SetValue@Node@NetUI@@QEAAJPEBUPropertyInfo@2@PEAVValue@2@@Z` at `0x1400f6781`
+- `mso40uiWin32Client!__imp_?SetValue@Node@NetUI@@QEAAJPEBUPropertyInfo@2@PEAVValue@2@@Z` at `0x1400f67ec`
+- `mso40uiWin32Client!__imp_?SetValue@Node@NetUI@@QEAAJPEBUPropertyInfo@2@PEAVValue@2@@Z` at `0x1400f6aac`
+- `mso40uiWin32Client!__imp_?SetFontSize@Element@NetUI@@QEAAJH@Z` at `0x1400f682c`
+- `mso40uiWin32Client!__imp_?SetFontSize@Element@NetUI@@QEAAJH@Z` at `0x1400f682c`
+- `mso40uiWin32Client!__imp_?CreateDocumentWindow@NUIDocument@NetUI@@SAJPEAUHINSTANCE__@@PEAUHWND__@@HHHHKIPEAVValue@2@PEAPEAV12@@Z` at `0x1400f65a0`
+- `mso40uiWin32Client!__imp_?CreateDocumentWindow@NUIDocument@NetUI@@SAJPEAUHINSTANCE__@@PEAUHWND__@@HHHHKIPEAVValue@2@PEAPEAV12@@Z` at `0x1400f65a0`
+- `mso40uiWin32Client!__imp_?GetStaticClassInfo@HWNDElement@NetUI@@SAPEAUIClassInfo@2@XZ` at `0x1400f6832`
+- `mso40uiWin32Client!__imp_?GetStaticClassInfo@HWNDElement@NetUI@@SAPEAUIClassInfo@2@XZ` at `0x1400f6875`
+- `mso40uiWin32Client!__imp_?GetStaticClassInfo@HWNDElement@NetUI@@SAPEAUIClassInfo@2@XZ` at `0x1400f6832`
+- `mso40uiWin32Client!__imp_?GetStaticClassInfo@HWNDElement@NetUI@@SAPEAUIClassInfo@2@XZ` at `0x1400f6875`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x1400f66b7`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x1400f6813`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x1400f66b7`
+- `mso40uiWin32Client!__imp_?Add@Node@NetUI@@QEAAJPEAV12@@Z` at `0x1400f6813`
+- `mso40uiWin32Client!__imp_?GetPalette@Element@NetUI@@QEBAPEAU?$ITPalette@W4Swatch@UIColor@Mso@@@UIColor@Mso@@XZ` at `0x1400f66e0`
+- `mso40uiWin32Client!__imp_?GetPalette@Element@NetUI@@QEBAPEAU?$ITPalette@W4Swatch@UIColor@Mso@@@UIColor@Mso@@XZ` at `0x1400f66e0`
+- `mso40uiWin32Client!__imp_?AddDragDropHandler@HWNDElement@NetUI@@QEAAJPEAUIDragDropHandler@2@@Z` at `0x1400f685f`
+- `mso40uiWin32Client!__imp_?AddDragDropHandler@HWNDElement@NetUI@@QEAAJPEAUIDragDropHandler@2@@Z` at `0x1400f685f`
+- `mso40uiWin32Client!__imp_?ContentPropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f6701`
+- `mso40uiWin32Client!__imp_?ContentPropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f6710`
+- `mso40uiWin32Client!__imp_?ContentPropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f6771`
+- `mso40uiWin32Client!__imp_?ContentPropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f6a9d`
+- `mso40uiWin32Client!__imp_?ContentPropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f6701`
+- `mso40uiWin32Client!__imp_?ContentPropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f6710`
+- `mso40uiWin32Client!__imp_?ContentPropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f6771`
+- `mso40uiWin32Client!__imp_?ContentPropInfo@Element@NetUI@@SAPEBUPropertyInfo@2@XZ` at `0x1400f6a9d`
+- `mso40uiWin32Client!__imp_?SetNativeHWNDHost@NUIDocument@NetUI@@QEAAPEAVNativeHWNDHost@2@PEAV32@@Z` at `0x1400f6650`
+- `mso40uiWin32Client!__imp_?SetNativeHWNDHost@NUIDocument@NetUI@@QEAAPEAVNativeHWNDHost@2@PEAV32@@Z` at `0x1400f6650`
+- `mso40uiWin32Client!__imp_?GetRootElement@NUIDocument@NetUI@@QEBAPEAVElement@2@XZ` at `0x1400f6672`
+- `mso40uiWin32Client!__imp_?GetRootElement@NUIDocument@NetUI@@QEBAPEAVElement@2@XZ` at `0x1400f686c`
+- `mso40uiWin32Client!__imp_?GetRootElement@NUIDocument@NetUI@@QEBAPEAVElement@2@XZ` at `0x1400f6672`
+- `mso40uiWin32Client!__imp_?GetRootElement@NUIDocument@NetUI@@QEBAPEAVElement@2@XZ` at `0x1400f686c`
+- `mso40uiWin32Client!__imp_?AddListener@Node@NetUI@@QEAAJPEAUIElementListener@2@_N@Z` at `0x1400f68b3`
+- `mso40uiWin32Client!__imp_?AddListener@Node@NetUI@@QEAAJPEAUIElementListener@2@_N@Z` at `0x1400f68b3`
+- `mso40uiWin32Client!__imp_?CreateColor@Value@NetUI@@SAPEAV12@K@Z` at `0x1400f69fe`
+- `mso40uiWin32Client!__imp_?CreateColor@Value@NetUI@@SAPEAV12@K@Z` at `0x1400f69fe`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f653f`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f6795`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f6943`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f6952`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f696a`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f69b6`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f653f`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f6795`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f6943`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f6952`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f696a`
+- `mso40uiWin32Client!__imp_?Release@BaseValue@NetUI@@QEAAXXZ` at `0x1400f69b6`
+- `mso40uiWin32Client!__imp_?Create@Element@NetUI@@SAJIPEAPEAV12@@Z` at `0x1400f669f`
+- `mso40uiWin32Client!__imp_?Create@Element@NetUI@@SAJIPEAPEAV12@@Z` at `0x1400f669f`
+- `mso40uiWin32Client!__imp_?GetWindowHWND@NUIDocument@NetUI@@QEBAPEAUHWND__@@XZ` at `0x1400f6661`
+- `mso40uiWin32Client!__imp_?GetWindowHWND@NUIDocument@NetUI@@QEBAPEAUHWND__@@XZ` at `0x1400f6661`
+- `mso40uiWin32Client!__imp_?SetScreenInformation@NativeHWNDHost@NetUI@@QEAAXAEAUIScreenInformation@DisplayClassInformation@Mso@@@Z` at `0x1400f6617`
+- `mso40uiWin32Client!__imp_?SetScreenInformation@NativeHWNDHost@NetUI@@QEAAXAEAUIScreenInformation@DisplayClassInformation@Mso@@@Z` at `0x1400f6617`
+- `Mso30Win32Client!__imp_?MsoFRtlUI@@YAHXZ` at `0x1400f64d7`
+- `Mso30Win32Client!__imp_?MsoFRtlUI@@YAHXZ` at `0x1400f64d7`
+- `Mso20Win32Client!__imp_?MsoGetDpiForSystem@Mso@@YAHXZ` at `0x1400f63a8`
+- `Mso20Win32Client!__imp_?MsoGetDpiForSystem@Mso@@YAHXZ` at `0x1400f63a8`
+- `Mso20Win32Client!__imp_?GetScreenInformation@DisplayClassInformation@Mso@@YA?AV?$TCntPtr@UIScreenInformation@DisplayClassInformation@Mso@@@2@PEAUHWND__@@@Z` at `0x1400f660a`
+- `Mso20Win32Client!__imp_?GetScreenInformation@DisplayClassInformation@Mso@@YA?AV?$TCntPtr@UIScreenInformation@DisplayClassInformation@Mso@@@2@PEAUHWND__@@@Z` at `0x1400f660a`
+
+## pseudocode
+
+```c
+
+```
