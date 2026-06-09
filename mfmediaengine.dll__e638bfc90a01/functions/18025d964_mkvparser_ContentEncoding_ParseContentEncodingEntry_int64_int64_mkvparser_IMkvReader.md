@@ -1,0 +1,221 @@
+# mkvparser::ContentEncoding::ParseContentEncodingEntry(__int64,__int64,mkvparser::IMkvReader *)
+
+- ea: `0x18025d964`
+- end: `0x18025ef99`
+- name: `?ParseContentEncodingEntry@ContentEncoding@mkvparser@@QEAAJ_J0PEAUIMkvReader@2@@Z`
+- size: `5685`
+- prototype: `__int64 __fastcall(mkvparser::ContentEncoding *this, struct mkvparser::IMkvReader *, __int64, struct mkvparser::IMkvReader *)`
+- caller_count: `1`
+- callee_count: `15`
+- tags: ``
+
+## callers
+
+- `0x180250b38`
+
+## callees
+
+- `0x18001be0c`
+- `0x1800256e0`
+- `0x18003a650`
+- `0x180123d84`
+- `0x1801a191c`
+- `0x1801fedd0`
+- `0x18025d964`
+- `0x18025efa0`
+- `0x18025efcc`
+- `0x18026e920`
+- `0x1802cdbc4`
+- `0x1802e6e0c`
+- `0x1802e7c20`
+- `0x1802e844c`
+- `0x180458010`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025db1f`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025dc8d`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025de0a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025dfa3`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e13a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e476`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e5a8`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e6d5`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e7f8`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e941`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025ea73`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025eb9e`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025ecd0`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025edf3`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025ef44`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025db1f`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025dc8d`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025de0a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025dfa3`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e13a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e476`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e5a8`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e6d5`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e7f8`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025e941`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025ea73`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025eb9e`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025ecd0`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025edf3`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18025ef44`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025da9a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dab6`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dc08`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dc24`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dd85`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dda1`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025df1e`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025df3a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e0b5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e0d1`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e3f1`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e40d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e523`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e53f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e650`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e66c`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e773`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e78f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e8bc`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e8d8`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e9ee`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ea0a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025eb19`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025eb35`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ec4b`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ec67`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ed6e`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ed8a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025eebf`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025eedb`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025da9a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dab6`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dc08`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dc24`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dd85`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025dda1`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025df1e`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025df3a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e0b5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e0d1`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e3f1`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e40d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e523`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e53f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e650`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e66c`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e773`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e78f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e8bc`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e8d8`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025e9ee`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ea0a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025eb19`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025eb35`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ec4b`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ec67`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ed6e`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025ed8a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025eebf`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18025eedb`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025daa6`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025dc14`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025dd91`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025df2a`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e0c1`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e3fd`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e52f`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e65c`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e77f`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e8c8`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e9fa`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025eb25`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025ec57`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025ed7a`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025eecb`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025daa6`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025dc14`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025dd91`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025df2a`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e0c1`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e3fd`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e52f`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e65c`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e77f`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e8c8`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025e9fa`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025eb25`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025ec57`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025ed7a`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18025eecb`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025da4b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dacc`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dbb4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dc3a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dd30`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ddb7`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dec0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025df50`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e057`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e0e7`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e3a2`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e423`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e4c5`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e555`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e5f7`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e682`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e724`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e7a5`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e86d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e8ee`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e990`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ea20`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025eaca`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025eb4b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ebed`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ec7d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ed1f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025eda0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ee61`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025eef1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025da4b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dacc`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dbb4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dc3a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dd30`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ddb7`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025dec0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025df50`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e057`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e0e7`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e3a2`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e423`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e4c5`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e555`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e5f7`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e682`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e724`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e7a5`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e86d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e8ee`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025e990`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ea20`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025eaca`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025eb4b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ebed`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ec7d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ed1f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025eda0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025ee61`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18025eef1`
+
+## pseudocode
+
+```c
+
+```
