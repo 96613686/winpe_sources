@@ -1,0 +1,67 @@
+# wil_StagingConfig_LogStagedFeatureUsage
+
+- ea: `0x14000d2e0`
+- end: `0x14000d336`
+- name: `wil_StagingConfig_LogStagedFeatureUsage`
+- size: `86`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `3`
+- tags: `registry_config`
+
+## callees
+
+- `0x14000ced0`
+- `0x14000d2e0`
+- `0x140010010`
+
+## pseudocode
+
+```c
+FARPROC __fastcall wil_StagingConfig_LogStagedFeatureUsage(unsigned int a1, unsigned int a2, __int64 a3)
+{
+  FARPROC result; // rax
+  char v4; // bl
+
+  result = (FARPROC)g_wil_details_pfnLogStagedFeatureUsage;
+  v4 = a3;
+  if ( g_wil_details_pfnLogStagedFeatureUsage
+    || (result = wil_details_GetKernelBaseProcAddress("LogStagedFeatureUsage"),
+        (g_wil_details_pfnLogStagedFeatureUsage = (__int64)result) != 0) )
+  {
+    LOBYTE(a3) = v4;
+    return (FARPROC)((__int64 (__fastcall *)(_QWORD, _QWORD, __int64))result)(a1, a2, a3);
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x14000d2e0  mov     [rsp+arg_0], rbx
+0x14000d2e5  mov     [rsp+arg_8], rsi
+0x14000d2ea  push    rdi
+0x14000d2eb  sub     rsp, 20h
+0x14000d2ef  mov     rax, cs:g_wil_details_pfnLogStagedFeatureUsage
+0x14000d2f6  mov     bl, r8b
+0x14000d2f9  mov     edi, edx
+0x14000d2fb  mov     esi, ecx
+0x14000d2fd  test    rax, rax
+0x14000d300  jnz     short loc_14000D31A
+0x14000d302  lea     rcx, aLogstagedfeatu; "LogStagedFeatureUsage"
+0x14000d309  call    ?wil_details_GetKernelBaseProcAddress@@YAP6A_JXZPEBD@Z; wil_details_GetKernelBaseProcAddress(char const *)
+0x14000d30e  mov     cs:g_wil_details_pfnLogStagedFeatureUsage, rax
+0x14000d315  test    rax, rax
+0x14000d318  jz      short loc_14000D326
+0x14000d31a  mov     r8b, bl
+0x14000d31d  mov     edx, edi
+0x14000d31f  mov     ecx, esi
+0x14000d321  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x14000d326  mov     rbx, [rsp+28h+arg_0]
+0x14000d32b  mov     rsi, [rsp+28h+arg_8]
+0x14000d330  add     rsp, 20h
+0x14000d334  pop     rdi
+0x14000d335  retn
+```

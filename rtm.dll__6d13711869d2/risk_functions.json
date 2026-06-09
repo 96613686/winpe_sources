@@ -1,0 +1,3041 @@
+[
+  {
+    "callee_count": 21,
+    "caller_count": 0,
+    "demangled": "RtmAddRouteToDest",
+    "ea": "0x18000b440",
+    "function_file": "functions/18000b440_RtmAddRouteToDest.md",
+    "matched_imports": [
+      "KERNEL32!CreateTimerQueueTimer",
+      "KERNEL32!DeleteTimerQueueTimer",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "WS2_32!__imp_htonl",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlIpv6AddressToStringA",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmAddRouteToDest",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, PRTM_ROUTE_HANDLE RouteHandle, PRTM_NET_ADDRESS DestAddress, PRTM_ROUTE_INFO RouteInfo, ULONG TimeToLive, RTM_ROUTE_LIST_HANDLE RouteListHandle, RTM_NOTIFY_FLAGS NotifyType, RTM_NOTIFY_HANDLE NotifyHandle, PRTM_ROUTE_CHANGE_FLAGS ChangeFlags)",
+    "rank_score": 4476,
+    "size": 4366,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "ProcessChangedDestLists",
+    "ea": "0x180002dd0",
+    "function_file": "functions/180002dd0_ProcessChangedDestLists.md",
+    "matched_imports": [
+      "KERNEL32!ChangeTimerQueueTimer",
+      "KERNEL32!DeleteTimerQueueTimer",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection",
+      "WS2_32!__imp_htonl",
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlIpv6AddressToStringA",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [
+      "ProcessChangedDestLists: Dests Removed: %ld"
+    ],
+    "name": "ProcessChangedDestLists",
+    "prototype": "void __stdcall(PVOID, BOOLEAN)",
+    "rank_score": 3490,
+    "size": 2390,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "RtmDeleteRouteToDest",
+    "ea": "0x18000c560",
+    "function_file": "functions/18000c560_RtmDeleteRouteToDest.md",
+    "matched_imports": [
+      "KERNEL32!CreateTimerQueueTimer",
+      "KERNEL32!DeleteTimerQueueTimer",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "WS2_32!__imp_htonl",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlIpv6AddressToStringA",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmDeleteRouteToDest",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_ROUTE_HANDLE RouteHandle, PRTM_ROUTE_CHANGE_FLAGS ChangeFlags)",
+    "rank_score": 3453,
+    "size": 2133,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "RtmUpdateAndUnlockRoute",
+    "ea": "0x18000cf90",
+    "function_file": "functions/18000cf90_RtmUpdateAndUnlockRoute.md",
+    "matched_imports": [
+      "KERNEL32!CreateTimerQueueTimer",
+      "KERNEL32!DeleteTimerQueueTimer",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "WS2_32!__imp_htonl",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlIpv6AddressToStringA",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmUpdateAndUnlockRoute",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_ROUTE_HANDLE RouteHandle, ULONG TimeToLive, RTM_ROUTE_LIST_HANDLE RouteListHandle, RTM_NOTIFY_FLAGS NotifyType, RTM_NOTIFY_HANDLE NotifyHandle, PRTM_ROUTE_CHANGE_FLAGS ChangeFlags)",
+    "rank_score": 3062,
+    "size": 2340,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RtmWriteAddressFamilyConfig",
+    "ea": "0x180004b50",
+    "function_file": "functions/180004b50_RtmWriteAddressFamilyConfig.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExA",
+      "ADVAPI32!RegDeleteKeyA",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegSetValueExA"
+    ],
+    "matched_strings": [
+      "Address Family Config: Address Size %d out of bounds",
+      "Address Family Config: No supported views",
+      "Address Family Config: # opaque ptrs out of range",
+      "Address Family Config: # nexthops out of range",
+      "Address Family Config: # handles returned in enum",
+      "Entered: RtmWriteAddressFamilyConfig ",
+      "Address Family Config: Error %d opening instance key",
+      "Leaving: RtmWriteAddressFamilyConfig ",
+      "Leaving: RtmWriteAddressFamilyConfig ",
+      "Address Family Config: Error %d creating address family key",
+      "Address Family Config: # Change notify regs out of range",
+      "Leaving: RtmWriteAddressFamilyConfig",
+      "Leaving: RtmWriteAddressFamilyConfig",
+      "Address Family Config: Error %d writing address family params"
+    ],
+    "name": "RtmWriteAddressFamilyConfig",
+    "prototype": "",
+    "rank_score": 3002,
+    "size": 1912,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MgmDeInitialize",
+    "ea": "0x180012100",
+    "function_file": "functions/180012100_MgmDeInitialize.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!HeapFree",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!WaitForSingleObject",
+      "ntdll!NtClose",
+      "ntdll!RtlDeleteTimerQueue",
+      "rtutils!RouterLogDeregisterA"
+    ],
+    "matched_strings": [
+      "Locked list being deleted is not empty",
+      "Locked list being deleted is not empty",
+      "Locked list being deleted is not empty",
+      "Locked list being deleted is not empty",
+      "Number of threads in MGM : %x"
+    ],
+    "name": "MgmDeInitialize",
+    "prototype": "",
+    "rank_score": 2829,
+    "size": 1297,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RtmDeleteRouteTable",
+    "ea": "0x180010550",
+    "function_file": "functions/180010550_RtmDeleteRouteTable.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!HeapDestroy",
+      "KERNEL32!HeapFree",
+      "KERNEL32!Sleep",
+      "ntdll!NtCancelTimer",
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [],
+    "name": "RtmDeleteRouteTable",
+    "prototype": "",
+    "rank_score": 2815,
+    "size": 369,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RtmCreateRouteEnum",
+    "ea": "0x180005dc0",
+    "function_file": "functions/180005dc0_RtmCreateRouteEnum.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "RtmCreateRouteEnum",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_DEST_HANDLE DestHandle, RTM_VIEW_SET TargetViews, RTM_ENUM_FLAGS EnumFlags, PRTM_NET_ADDRESS StartDest, RTM_MATCH_FLAGS MatchingFlags, PRTM_ROUTE_INFO CriteriaRoute, ULONG CriteriaInterface, PRTM_ENUM_HANDLE RtmEnumHandle)",
+    "rank_score": 2809,
+    "size": 730,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CreateAddressFamily",
+    "ea": "0x180009118",
+    "function_file": "functions/180009118_CreateAddressFamily.md",
+    "matched_imports": [
+      "KERNEL32!CreateTimerQueue",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!InitializeCriticalSection",
+      "ntdll!RtlInitializeResource"
+    ],
+    "matched_strings": [],
+    "name": "CreateAddressFamily",
+    "prototype": "__int64 __fastcall(LPVOID lpMem)",
+    "rank_score": 2634,
+    "size": 904,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "MgmInitialize",
+    "ea": "0x180013b00",
+    "function_file": "functions/180013b00_MgmInitialize.md",
+    "matched_imports": [
+      "KERNEL32!CreateSemaphoreA",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!LeaveCriticalSection",
+      "ntdll!RtlCreateTimerQueue",
+      "rtutils!RouterLogEventA",
+      "rtutils!RouterLogRegisterA"
+    ],
+    "matched_strings": [
+      "MgmInitialize : MGM already running",
+      "MgmInitialize : Failed to create activity count semaphore : %x"
+    ],
+    "name": "MgmInitialize",
+    "prototype": "",
+    "rank_score": 2511,
+    "size": 1782,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180007840",
+    "function_file": "functions/180007840_DllMain.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!DisableThreadLibraryCalls",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!LeaveCriticalSection",
+      "ntdll!RtlDeleteResource",
+      "rtutils!RouterLogDeregisterA"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 2432,
+    "size": 491,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "DoEnterSyncList",
+    "ea": "0x18001163c",
+    "function_file": "functions/18001163c_DoEnterSyncList.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventA",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetLastError",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DoEnterSyncList",
+    "prototype": "",
+    "rank_score": 2424,
+    "size": 308,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "DestroyAddressFamily",
+    "ea": "0x18000995c",
+    "function_file": "functions/18000995c_DestroyAddressFamily.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!DeleteTimerQueueEx",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlDeleteResource"
+    ],
+    "matched_strings": [],
+    "name": "DestroyAddressFamily",
+    "prototype": "__int64 __fastcall(LPVOID lpMem)",
+    "rank_score": 2419,
+    "size": 375,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RtmReadAddressFamilyConfig",
+    "ea": "0x180004300",
+    "function_file": "functions/180004300_RtmReadAddressFamilyConfig.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegQueryValueExA"
+    ],
+    "matched_strings": [
+      "Entered: RtmReadAddressFamilyConfig ",
+      "Address Family Config: Error %d opening address family key",
+      "Leaving: RtmReadAddressFamilyConfig ",
+      "Address Family Config: Error %d reading address size key. Using default...",
+      "Address Family Config: Address Size %d out of bounds",
+      "Address Family Config: No supported views",
+      "Address Family Config: # notifications out of range",
+      "Address Family Config: # opaque ptrs out of range",
+      "Address Family Config: # nexthops out of range",
+      "Address Family Config: # handles returned in enum",
+      "Leaving: RtmReadAddressFamilyConfig",
+      "Leaving: RtmReadAddressFamilyConfig"
+    ],
+    "name": "RtmReadAddressFamilyConfig",
+    "prototype": "",
+    "rank_score": 2321,
+    "size": 1556,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "RtmDeleteEnumHandle",
+    "ea": "0x1800060a0",
+    "function_file": "functions/1800060a0_RtmDeleteEnumHandle.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmDeleteEnumHandle",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_ENUM_HANDLE EnumHandle)",
+    "rank_score": 2219,
+    "size": 413,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RtmDeregisterFromChangeNotification",
+    "ea": "0x180003730",
+    "function_file": "functions/180003730_RtmDeregisterFromChangeNotification.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmDeregisterFromChangeNotification",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_NOTIFY_HANDLE NotifyHandle)",
+    "rank_score": 1822,
+    "size": 608,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "NotifyClients",
+    "ea": "0x18000e7a0",
+    "function_file": "functions/18000e7a0_NotifyClients.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "NotifyClients",
+    "prototype": "",
+    "rank_score": 1814,
+    "size": 632,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 9,
+    "demangled": "RtmApiStartup",
+    "ea": "0x180007a34",
+    "function_file": "functions/180007a34_RtmApiStartup.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlReleaseResource",
+      "rtutils!RouterLogDeregisterA",
+      "rtutils!RouterLogRegisterA"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Services\\RemoteAccess\\RoutingTableManager",
+      "RtmApiStartup: Failed to copy memory with error: %x"
+    ],
+    "name": "RtmApiStartup",
+    "prototype": "",
+    "rank_score": 1750,
+    "size": 520,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CreateReadWriteLock",
+    "ea": "0x180014dd8",
+    "function_file": "functions/180014dd8_CreateReadWriteLock.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventA",
+      "KERNEL32!GetLastError",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [
+      "CreateReadWriteLock failed to allocate lock : %x",
+      "CreateReadWriteLock failed to initialize critical section : %x",
+      "CreateReadWriteLock failed to create event : %x"
+    ],
+    "name": "CreateReadWriteLock",
+    "prototype": "",
+    "rank_score": 1730,
+    "size": 439,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "AddToChangedDestLists",
+    "ea": "0x1800027d8",
+    "function_file": "functions/1800027d8_AddToChangedDestLists.md",
+    "matched_imports": [
+      "KERNEL32!CreateTimerQueueTimer",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection",
+      "WS2_32!__imp_htonl",
+      "ntdll!RtlIpv6AddressToStringA"
+    ],
+    "matched_strings": [],
+    "name": "AddToChangedDestLists",
+    "prototype": "__int64 __fastcall(PVOID Parameter)",
+    "rank_score": 1639,
+    "size": 1036,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 12,
+    "demangled": "DestroyEntity",
+    "ea": "0x180009adc",
+    "function_file": "functions/180009adc_DestroyEntity.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlDeleteResource",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "DestroyEntity",
+    "prototype": "__int64 __fastcall(LPVOID lpMem)",
+    "rank_score": 1627,
+    "size": 308,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtmRegisterForChangeNotification",
+    "ea": "0x180003fb0",
+    "function_file": "functions/180003fb0_RtmRegisterForChangeNotification.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!InitializeCriticalSection",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmRegisterForChangeNotification",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_VIEW_SET TargetViews, RTM_NOTIFY_FLAGS NotifyFlags, PVOID NotifyContext, PRTM_NOTIFY_HANDLE NotifyHandle)",
+    "rank_score": 1616,
+    "size": 608,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 0,
+    "demangled": "MgmNewPacketReceived",
+    "ea": "0x180018070",
+    "function_file": "functions/180018070_MgmNewPacketReceived.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "WS2_32!__imp_htonl",
+      "ntdll!NtQuerySystemTime",
+      "ntdll!RtlCreateTimer",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "Invoked Prune Alert for protocol %x, %x"
+    ],
+    "name": "MgmNewPacketReceived",
+    "prototype": "__int64 __usercall@<rax>(int@<ecx>, int@<edx>, int, __int64)",
+    "rank_score": 1508,
+    "size": 2956,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RouteHolddownTimeoutCallback",
+    "ea": "0x18000d9d0",
+    "function_file": "functions/18000d9d0_RouteHolddownTimeoutCallback.md",
+    "matched_imports": [
+      "KERNEL32!DeleteTimerQueueTimer",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RouteHolddownTimeoutCallback",
+    "prototype": "void __stdcall(PVOID, BOOLEAN)",
+    "rank_score": 1432,
+    "size": 492,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "CleanupAfterDeregister",
+    "ea": "0x180008ebc",
+    "function_file": "functions/180008ebc_CleanupAfterDeregister.md",
+    "matched_imports": [
+      "KERNEL32!DeleteTimerQueueTimer",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "CleanupAfterDeregister",
+    "prototype": "",
+    "rank_score": 1427,
+    "size": 596,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CreateEntity",
+    "ea": "0x1800094a8",
+    "function_file": "functions/1800094a8_CreateEntity.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!InitializeCriticalSection",
+      "ntdll!RtlInitializeResource"
+    ],
+    "matched_strings": [
+      "CreateEntity: ReserveOpaquePtr is passed as true, Address Family Instance %d",
+      "CreateEntity: NumOpaquePtrs(%d) >= MaxOpaquePtrs(%d). Address Family Instance %d. Returning error",
+      "CreateEntity: Incrementing NumOpaquePointers. Current count = %d, Address Family Instace: %d"
+    ],
+    "name": "CreateEntity",
+    "prototype": "__int64 __usercall@<rax>(LPVOID lpMem@<rcx>, __int64, LPTABLEDATA *)",
+    "rank_score": 1360,
+    "size": 1195,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x1800017b4",
+    "function_file": "functions/1800017b4_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RtmCleanupInstances",
+    "ea": "0x180007c50",
+    "function_file": "functions/180007c50_RtmCleanupInstances.md",
+    "matched_imports": [
+      "KERNEL32!DeleteTimerQueueEx",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmCleanupInstances",
+    "prototype": "",
+    "rank_score": 1217,
+    "size": 494,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RtmCreateDestEnum",
+    "ea": "0x180005a00",
+    "function_file": "functions/180005a00_RtmCreateDestEnum.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "RtmCreateDestEnum",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_VIEW_SET TargetViews, RTM_ENUM_FLAGS EnumFlags, PRTM_NET_ADDRESS NetAddress, ULONG ProtocolId, PRTM_ENUM_HANDLE RtmEnumHandle)",
+    "rank_score": 1216,
+    "size": 497,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RtmDeleteRouteList",
+    "ea": "0x180007530",
+    "function_file": "functions/180007530_RtmDeleteRouteList.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmDeleteRouteList",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_ROUTE_LIST_HANDLE RouteListHandle)",
+    "rank_score": 1215,
+    "size": 266,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RtmCreateNextHopEnum",
+    "ea": "0x180005c00",
+    "function_file": "functions/180005c00_RtmCreateNextHopEnum.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "RtmCreateNextHopEnum",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_ENUM_FLAGS EnumFlags, PRTM_NET_ADDRESS NetAddress, PRTM_ENUM_HANDLE RtmEnumHandle)",
+    "rank_score": 1206,
+    "size": 440,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtmCreateBestRouteEnum",
+    "ea": "0x1800058a0",
+    "function_file": "functions/1800058a0_RtmCreateBestRouteEnum.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "RtmCreateBestRouteEnum",
+    "prototype": "",
+    "rank_score": 1203,
+    "size": 345,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "InvokeCreationAlert",
+    "ea": "0x1800176bc",
+    "function_file": "functions/1800176bc_InvokeCreationAlert.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "CopyAndAppendIfList : Could not allocateout interface entry %x",
+      "Invoked Creation Alert for protocol %x, %x",
+      "CopyAndAppendIfList : Integer overflow %x"
+    ],
+    "name": "InvokeCreationAlert",
+    "prototype": "",
+    "rank_score": 1143,
+    "size": 895,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 26,
+    "demangled": "AcquireReadLock",
+    "ea": "0x180014bfc",
+    "function_file": "functions/180014bfc_AcquireReadLock.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [
+      "LEAVING AcquireReadLock, lock %x, error %x"
+    ],
+    "name": "AcquireReadLock",
+    "prototype": "",
+    "rank_score": 1073,
+    "size": 295,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "MgmRegisterMProtocol",
+    "ea": "0x180014200",
+    "function_file": "functions/180014200_MgmRegisterMProtocol.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "ENTERED MgmRegisterMProtocol %x, %x",
+      "Entry already present for protocol : %x, %x",
+      "Failed to create protocol entry %x",
+      "LEAVING MgmRegisterMProtocol : %x\n",
+      "CreateProtocolEntry : Could not allocate protocol entry %x"
+    ],
+    "name": "MgmRegisterMProtocol",
+    "prototype": "DWORD __stdcall(PROUTING_PROTOCOL_CONFIG prpiInfo, DWORD dwProtocolId, DWORD dwComponentId, HANDLE *phProtocol)",
+    "rank_score": 1037,
+    "size": 887,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 40,
+    "demangled": "AcquireWriteLock",
+    "ea": "0x180014d2c",
+    "function_file": "functions/180014d2c_AcquireWriteLock.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "AcquireWriteLock",
+    "prototype": "",
+    "rank_score": 1028,
+    "size": 165,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "CreateRouteNode",
+    "ea": "0x18000e260",
+    "function_file": "functions/18000e260_CreateRouteNode.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "ntdll!RtlQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "CreateRouteNode",
+    "prototype": "__int64 __usercall@<rax>(PVOID Context@<rcx>, __int64, void *Src)",
+    "rank_score": 1022,
+    "size": 601,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "MFETimerProc",
+    "ea": "0x180016d00",
+    "function_file": "functions/180016d00_MFETimerProc.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "MFETimerProc has invalid incoming interface : %x, %x"
+    ],
+    "name": "MFETimerProc",
+    "prototype": "void __stdcall(PVOID, BOOLEAN)",
+    "rank_score": 874,
+    "size": 1452,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "AddSourceGroupToRouteRefList",
+    "ea": "0x1800151ec",
+    "function_file": "functions/1800151ec_AddSourceGroupToRouteRefList.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Reference already exists for source %x"
+    ],
+    "name": "AddSourceGroupToRouteRefList",
+    "prototype": "",
+    "rank_score": 859,
+    "size": 1031,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RtmDeleteNextHop",
+    "ea": "0x180008ba0",
+    "function_file": "functions/180008ba0_RtmDeleteNextHop.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmDeleteNextHop",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_NEXTHOP_HANDLE NextHopHandle, PRTM_NEXTHOP_INFO NextHopInfo)",
+    "rank_score": 818,
+    "size": 406,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 11,
+    "demangled": "DestroyRoute",
+    "ea": "0x18000a298",
+    "function_file": "functions/18000a298_DestroyRoute.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DestroyRoute",
+    "prototype": "__int64 __fastcall(LPVOID lpMem)",
+    "rank_score": 816,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MgmDllStartup",
+    "ea": "0x180012ce4",
+    "function_file": "functions/180012ce4_MgmDllStartup.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "MgmDllStartup",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 149,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "RtmCreateEnumerationHandle",
+    "ea": "0x180010090",
+    "function_file": "functions/180010090_RtmCreateEnumerationHandle.md",
+    "matched_imports": [
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "RtmCreateEnumerationHandle",
+    "prototype": "",
+    "rank_score": 813,
+    "size": 567,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtmCreateRouteListEnum",
+    "ea": "0x180007470",
+    "function_file": "functions/180007470_RtmCreateRouteListEnum.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "ntdll!RtlAcquireResourceExclusive",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmCreateRouteListEnum",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_ROUTE_LIST_HANDLE RouteListHandle, PRTM_ENUM_HANDLE RtmEnumHandle)",
+    "rank_score": 812,
+    "size": 184,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 0,
+    "demangled": "MgmAddGroupMembershipEntry",
+    "ea": "0x180011850",
+    "function_file": "functions/180011850_MgmAddGroupMembershipEntry.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "Interface %d, %d is not owned by protocol %d, %d",
+      "IGMP join failed because owning protocol entry (%x, %x) not found",
+      "Forward state not updated as no memberships present on interface"
+    ],
+    "name": "MgmAddGroupMembershipEntry",
+    "prototype": "DWORD __stdcall(HANDLE hProtocol, DWORD dwSourceAddr, DWORD dwSourceMask, DWORD dwGroupAddr, DWORD dwGroupMask, DWORD dwIfIndex, DWORD dwIfNextHopIPAddr, DWORD dwFlags)",
+    "rank_score": 780,
+    "size": 2212,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GetMfeFromForwarder",
+    "ea": "0x18001f474",
+    "function_file": "functions/18001f474_GetMfeFromForwarder.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "GetMfeFromForwarder : Failed to create MFE, error in multiplication",
+      "GetMfeFromForwarder : Failed to create MFE, error in addition",
+      "GetMfeFromForwarder : Failed to create MFE of size : %x"
+    ],
+    "name": "GetMfeFromForwarder",
+    "prototype": "",
+    "rank_score": 732,
+    "size": 696,
+    "tags": []
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 3,
+    "demangled": "LookupAndDeleteYourMfe",
+    "ea": "0x18001decc",
+    "function_file": "functions/18001decc_LookupAndDeleteYourMfe.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree",
+      "ntdll!RtlDeleteTimer"
+    ],
+    "matched_strings": [
+      "LookupAndDeleteYourMfe : Could not find group entry%x, %x",
+      "LookupAndDeleteYourMfe : Could not find source entry%x, %x"
+    ],
+    "name": "LookupAndDeleteYourMfe",
+    "prototype": "",
+    "rank_score": 719,
+    "size": 1184,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x1800014e4",
+    "function_file": "functions/1800014e4_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "AddMfeToForwarder",
+    "ea": "0x18001f11c",
+    "function_file": "functions/18001f11c_AddMfeToForwarder.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "AddMfeToForwarder : Arithmatic Overflow error. Failed to create MFE ",
+      "AddMfeToForwarder : Failed to create MFE of size : %x"
+    ],
+    "name": "AddMfeToForwarder",
+    "prototype": "",
+    "rank_score": 694,
+    "size": 528,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DeleteMfeFromForwarder",
+    "ea": "0x18001f334",
+    "function_file": "functions/18001f334_DeleteMfeFromForwarder.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "DeleteMfeFromForwarder : Failed to create MFE of size : %x"
+    ],
+    "name": "DeleteMfeFromForwarder",
+    "prototype": "",
+    "rank_score": 648,
+    "size": 313,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ProcessRouteUpdate",
+    "ea": "0x180015a8c",
+    "function_file": "functions/180015a8c_ProcessRouteUpdate.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "ProcessRouteUpdate",
+    "prototype": "",
+    "rank_score": 632,
+    "size": 1218,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "RouteExpiryTimeoutCallback",
+    "ea": "0x18000d8c0",
+    "function_file": "functions/18000d8c0_RouteExpiryTimeoutCallback.md",
+    "matched_imports": [
+      "KERNEL32!DeleteTimerQueueTimer",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "RouteExpiryTimeoutCallback",
+    "prototype": "void __stdcall(PVOID, BOOLEAN)",
+    "rank_score": 607,
+    "size": 252,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "RtmReadInstanceConfig",
+    "ea": "0x180004920",
+    "function_file": "functions/180004920_RtmReadInstanceConfig.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA"
+    ],
+    "matched_strings": [
+      "Entered: RtmReadInstanceConfig",
+      "Instance Config: Error %d opening instance key",
+      "Leaving: RtmReadInstanceConfig",
+      "Leaving: RtmReadInstanceConfig"
+    ],
+    "name": "RtmReadInstanceConfig",
+    "prototype": "",
+    "rank_score": 593,
+    "size": 548,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RtmWriteInstanceConfig",
+    "ea": "0x180005530",
+    "function_file": "functions/180005530_RtmWriteInstanceConfig.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExA"
+    ],
+    "matched_strings": [
+      "Entered: RtmWriteInstanceConfig",
+      "Instance Config: Error %d creating instance key",
+      "Leaving: RtmWriteInstanceConfig",
+      "Leaving: RtmWriteInstanceConfig"
+    ],
+    "name": "RtmWriteInstanceConfig",
+    "prototype": "",
+    "rank_score": 592,
+    "size": 561,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MgmDeRegisterMProtocol",
+    "ea": "0x180012620",
+    "function_file": "functions/180012620_MgmDeRegisterMProtocol.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "ENTERED MgmDeRegisterMProtocol",
+      "%x interfaces present for this protocol",
+      "LEAVING MgmDeRegisterMProtocol %x\n"
+    ],
+    "name": "MgmDeRegisterMProtocol",
+    "prototype": "DWORD __stdcall(HANDLE hProtocol)",
+    "rank_score": 543,
+    "size": 463,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 26,
+    "demangled": "ReleaseReadLock",
+    "ea": "0x180015100",
+    "function_file": "functions/180015100_ReleaseReadLock.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ReleaseReadLock",
+    "prototype": "",
+    "rank_score": 526,
+    "size": 113,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 41,
+    "demangled": "ReleaseWriteLock",
+    "ea": "0x180015178",
+    "function_file": "functions/180015178_ReleaseWriteLock.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "ReleaseWriteLock",
+    "prototype": "",
+    "rank_score": 526,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 23,
+    "demangled": "LeaveMgmWorker",
+    "ea": "0x180015040",
+    "function_file": "functions/180015040_LeaveMgmWorker.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!ReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "LeaveMgmWorker",
+    "prototype": "",
+    "rank_score": 524,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "LeaveSyncList",
+    "ea": "0x180011800",
+    "function_file": "functions/180011800_LeaveSyncList.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "LeaveSyncList",
+    "prototype": "",
+    "rank_score": 522,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "VerifyProtocolHandle",
+    "ea": "0x18001b588",
+    "function_file": "functions/18001b588_VerifyProtocolHandle.md",
+    "matched_imports": [
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "Invalid protocol handle",
+      "Invalid protocol handle"
+    ],
+    "name": "VerifyProtocolHandle",
+    "prototype": "",
+    "rank_score": 499,
+    "size": 218,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "CreateGroupEntry",
+    "ea": "0x18001ca9c",
+    "function_file": "functions/18001ca9c_CreateGroupEntry.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "CreateGroupEntry : failed to allocate group entry %x",
+      "AddToGroupList Group Entry already exists for : %x, %x"
+    ],
+    "name": "CreateGroupEntry",
+    "prototype": "",
+    "rank_score": 497,
+    "size": 753,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "CreateSourceEntry",
+    "ea": "0x18001cf18",
+    "function_file": "functions/18001cf18_CreateSourceEntry.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "CreateSourceEntry : failed to allocate source entry %x",
+      "AddToGroupList Source Entry already exists for : %x, %x"
+    ],
+    "name": "CreateSourceEntry",
+    "prototype": "",
+    "rank_score": 495,
+    "size": 716,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "AddToOutstandingJoinList",
+    "ea": "0x180018dd4",
+    "function_file": "functions/180018dd4_AddToOutstandingJoinList.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Failed to create Join Entry : %x"
+    ],
+    "name": "AddToOutstandingJoinList",
+    "prototype": "",
+    "rank_score": 454,
+    "size": 697,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CopyAndMergeIfLists",
+    "ea": "0x18001740c",
+    "function_file": "functions/18001740c_CopyAndMergeIfLists.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "CreateOutInterfaceEntry : Could not allocateout interface entry %x"
+    ],
+    "name": "CopyAndMergeIfLists",
+    "prototype": "",
+    "rank_score": 451,
+    "size": 584,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CreateOutInterfaceEntry",
+    "ea": "0x18001cd94",
+    "function_file": "functions/18001cd94_CreateOutInterfaceEntry.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "CreateOutInterfaceEntry : Could not allocateout interface entry %x"
+    ],
+    "name": "CreateOutInterfaceEntry",
+    "prototype": "",
+    "rank_score": 449,
+    "size": 382,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CopyAndAppendIfList",
+    "ea": "0x1800172b4",
+    "function_file": "functions/1800172b4_CopyAndAppendIfList.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "CopyAndAppendIfList : Could not allocateout interface entry %x"
+    ],
+    "name": "CopyAndAppendIfList",
+    "prototype": "",
+    "rank_score": 448,
+    "size": 336,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CreateIfEntry",
+    "ea": "0x18001b840",
+    "function_file": "functions/18001b840_CreateIfEntry.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "CreateIfEntry : Failed to allocate entry %x"
+    ],
+    "name": "CreateIfEntry",
+    "prototype": "",
+    "rank_score": 448,
+    "size": 358,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 15,
+    "demangled": "GetInstance",
+    "ea": "0x180009d14",
+    "function_file": "functions/180009d14_GetInstance.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "GetInstance",
+    "prototype": "void __stdcall(LPSPropValue lpPropMv, LPSPropValue lpPropSv, ULONG uliInst)",
+    "rank_score": 440,
+    "size": 261,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "MgmReleaseInterfaceOwnership",
+    "ea": "0x180014580",
+    "function_file": "functions/180014580_MgmReleaseInterfaceOwnership.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [],
+    "name": "MgmReleaseInterfaceOwnership",
+    "prototype": "DWORD __stdcall(HANDLE hProtocol, DWORD dwIfIndex, DWORD dwIfNextHopAddr)",
+    "rank_score": 435,
+    "size": 1001,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "RtmGetMostSpecificDestination",
+    "ea": "0x18000a670",
+    "function_file": "functions/18000a670_RtmGetMostSpecificDestination.md",
+    "matched_imports": [
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmGetMostSpecificDestination",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, PRTM_NET_ADDRESS DestAddress, ULONG ProtocolId, RTM_VIEW_SET TargetViews, PRTM_DEST_INFO DestInfo)",
+    "rank_score": 428,
+    "size": 239,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RtmGetExactMatchDestination",
+    "ea": "0x18000a370",
+    "function_file": "functions/18000a370_RtmGetExactMatchDestination.md",
+    "matched_imports": [
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmGetExactMatchDestination",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, PRTM_NET_ADDRESS DestAddress, ULONG ProtocolId, RTM_VIEW_SET TargetViews, PRTM_DEST_INFO DestInfo)",
+    "rank_score": 424,
+    "size": 204,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "RtmGetLessSpecificDestination",
+    "ea": "0x18000a5b0",
+    "function_file": "functions/18000a5b0_RtmGetLessSpecificDestination.md",
+    "matched_imports": [
+      "ntdll!RtlAcquireResourceShared",
+      "ntdll!RtlReleaseResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmGetLessSpecificDestination",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_DEST_HANDLE DestHandle, ULONG ProtocolId, RTM_VIEW_SET TargetViews, PRTM_DEST_INFO DestInfo)",
+    "rank_score": 424,
+    "size": 180,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MgmGroupEnumerationStart",
+    "ea": "0x180013930",
+    "function_file": "functions/180013930_MgmGroupEnumerationStart.md",
+    "matched_imports": [
+      "KERNEL32!HeapAlloc",
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [],
+    "name": "MgmGroupEnumerationStart",
+    "prototype": "DWORD __stdcall(HANDLE hProtocol, MGM_ENUM_TYPES metEnumType, HANDLE *phEnumHandle)",
+    "rank_score": 423,
+    "size": 446,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "EnterMgmAPI",
+    "ea": "0x180014f98",
+    "function_file": "functions/180014f98_EnterMgmAPI.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "EnterMgmAPI",
+    "prototype": "",
+    "rank_score": 422,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ScheduleUpdate",
+    "ea": "0x180011580",
+    "function_file": "functions/180011580_ScheduleUpdate.md",
+    "matched_imports": [
+      "ntdll!NtSetTimer",
+      "ntdll!RtlQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "ScheduleUpdate",
+    "prototype": "__int64 __fastcall(PVOID TimerContext)",
+    "rank_score": 422,
+    "size": 113,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "RemoveRouteNode",
+    "ea": "0x18000ecec",
+    "function_file": "functions/18000ecec_RemoveRouteNode.md",
+    "matched_imports": [
+      "KERNEL32!GlobalFree",
+      "ntdll!RtlQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "RemoveRouteNode",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 420,
+    "size": 427,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CopyMfe",
+    "ea": "0x18001e5a0",
+    "function_file": "functions/18001e5a0_CopyMfe.md",
+    "matched_imports": [
+      "ntdll!NtQuerySystemTime"
+    ],
+    "matched_strings": [],
+    "name": "CopyMfe",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 469,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "DeleteMfeAndRefs",
+    "ea": "0x1800155fc",
+    "function_file": "functions/1800155fc_DeleteMfeAndRefs.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DeleteMfeAndRefs",
+    "prototype": "__int64 __fastcall(LPVOID lpMem)",
+    "rank_score": 416,
+    "size": 487,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "DestroyDest",
+    "ea": "0x18000a1bc",
+    "function_file": "functions/18000a1bc_DestroyDest.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DestroyDest",
+    "prototype": "__int64 __fastcall(LPVOID lpMem)",
+    "rank_score": 414,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "DeleteFromTable",
+    "ea": "0x180001de0",
+    "function_file": "functions/180001de0_DeleteFromTable.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DeleteFromTable",
+    "prototype": "",
+    "rank_score": 410,
+    "size": 270,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "DestroyNextHop",
+    "ea": "0x18000a230",
+    "function_file": "functions/18000a230_DestroyNextHop.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DestroyNextHop",
+    "prototype": "__int64 __fastcall(LPVOID lpMem)",
+    "rank_score": 409,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreateRoute",
+    "ea": "0x18000a0b0",
+    "function_file": "functions/18000a0b0_CreateRoute.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "CreateRoute",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 259,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "DeleteRouteFromRouteList",
+    "ea": "0x18000b224",
+    "function_file": "functions/18000b224_DeleteRouteFromRouteList.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DeleteRouteFromRouteList",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreateDest",
+    "ea": "0x180009ef0",
+    "function_file": "functions/180009ef0_CreateDest.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "CreateDest",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CreateNextHop",
+    "ea": "0x180009ff8",
+    "function_file": "functions/180009ff8_CreateNextHop.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "CreateNextHop",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 175,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CreateTable",
+    "ea": "0x180001d80",
+    "function_file": "functions/180001d80_CreateTable.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "CreateTable",
+    "prototype": "SCODE __stdcall(LPCIID lpInterface, ALLOCATEBUFFER *lpAllocateBuffer, ALLOCATEMORE *lpAllocateMore, FREEBUFFER *lpFreeBuffer, LPVOID lpvReserved, ULONG ulTableType, ULONG ulPropTagIndexColumn, LPSPropTagArray lpSPropTagArrayColumns, LPTABLEDATA *lppTableData)",
+    "rank_score": 403,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtmCreateRouteList",
+    "ea": "0x1800073f0",
+    "function_file": "functions/1800073f0_RtmCreateRouteList.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "RtmCreateRouteList",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, PRTM_ROUTE_LIST_HANDLE RouteListHandle)",
+    "rank_score": 401,
+    "size": 112,
+    "tags": []
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 0,
+    "demangled": "MgmDeleteGroupMembershipEntry",
+    "ea": "0x180012800",
+    "function_file": "functions/180012800_MgmDeleteGroupMembershipEntry.md",
+    "matched_imports": [
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "IGMP join failed because owning protocol entry (%x, %x) not found",
+      "ENTERED MgmDeleteGroupMembership : Interface %x, %x : Source : %x, %x : Group : %x, %x",
+      "LEAVING MgmDeleteGroupMembership %x\n"
+    ],
+    "name": "MgmDeleteGroupMembershipEntry",
+    "prototype": "DWORD __stdcall(HANDLE hProtocol, DWORD dwSourceAddr, DWORD dwSourceMask, DWORD dwGroupAddr, DWORD dwGroupMask, DWORD dwIfIndex, DWORD dwIfNextHopIPAddr, DWORD dwFlags)",
+    "rank_score": 359,
+    "size": 1244,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "AddInterfaceToSourceMfe",
+    "ea": "0x18001c790",
+    "function_file": "functions/18001c790_AddInterfaceToSourceMfe.md",
+    "matched_imports": [
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "Invoked Join Alert for protocol %x, %x",
+      "Group %lx scoped on incoming i/f %lx",
+      "AddInterfaceToSourceMfe : cannot find protocol component : %x, %x"
+    ],
+    "name": "AddInterfaceToSourceMfe",
+    "prototype": "",
+    "rank_score": 349,
+    "size": 773,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ScopeIfAndInvokeCallbacks",
+    "ea": "0x18001aa4c",
+    "function_file": "functions/18001aa4c_ScopeIfAndInvokeCallbacks.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Protocol (%d, %d) not present for interface %d",
+      "Interface (%d, %d) already present in the scoped list for (%x, %x)",
+      "Invoked Local Leave Alert for protocol %x, %x"
+    ],
+    "name": "ScopeIfAndInvokeCallbacks",
+    "prototype": "",
+    "rank_score": 344,
+    "size": 690,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "DeleteInterfaceFromSourceMfe",
+    "ea": "0x18001d908",
+    "function_file": "functions/18001d908_DeleteInterfaceFromSourceMfe.md",
+    "matched_imports": [
+      "ntdll!RtlUpdateTimer"
+    ],
+    "matched_strings": [
+      "Invoked Prune Alert for protocol %x, %x",
+      "DeleteInterfaceFromSourceMfe : Protocol not found%x, %x"
+    ],
+    "name": "DeleteInterfaceFromSourceMfe",
+    "prototype": "",
+    "rank_score": 326,
+    "size": 632,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 5,
+    "demangled": "InvokeOutstandingCallbacks",
+    "ea": "0x18001958c",
+    "function_file": "functions/18001958c_InvokeOutstandingCallbacks.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Invoked Prune Alert for protocol %x, %x",
+      "Invoked Join Alert for protocol %x, %x"
+    ],
+    "name": "InvokeOutstandingCallbacks",
+    "prototype": "",
+    "rank_score": 320,
+    "size": 1161,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 0,
+    "demangled": "MgmBlockGroups",
+    "ea": "0x180019de0",
+    "function_file": "functions/180019de0_MgmBlockGroups.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Invoked Prune Alert for protocol %x, %x",
+      "Protocol (%d, %d) not present for interface %d"
+    ],
+    "name": "MgmBlockGroups",
+    "prototype": "",
+    "rank_score": 320,
+    "size": 1390,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "InvokeRPFCallbacks",
+    "ea": "0x180017a44",
+    "function_file": "functions/180017a44_InvokeRPFCallbacks.md",
+    "matched_imports": [
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "InvokeRPFCallbacks : New incoming Interface not found : %x, %x, %x",
+      "InvokeRPFCallbacks : No protocol entry forincoming interface : %x, %x"
+    ],
+    "name": "InvokeRPFCallbacks",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, int, int, __int64, __int64, __int64, int, __int64, __int64, PRTM_DEST_INFO)",
+    "rank_score": 314,
+    "size": 1276,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 0,
+    "demangled": "MgmUnBlockGroups",
+    "ea": "0x18001a360",
+    "function_file": "functions/18001a360_MgmUnBlockGroups.md",
+    "matched_imports": [
+      "ntdll!RtlUpdateTimer"
+    ],
+    "matched_strings": [
+      "Ne protocol on interface (%lx-%lx)"
+    ],
+    "name": "MgmUnBlockGroups",
+    "prototype": "",
+    "rank_score": 307,
+    "size": 1763,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MgmGetProtocolOnInterface",
+    "ea": "0x1800134c0",
+    "function_file": "functions/1800134c0_MgmGetProtocolOnInterface.md",
+    "matched_imports": [
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "ENTERED MgmGetProtocolOnInterface : Interface %x, %x",
+      "LEAVING MgmGetProtocolOnInterface : %x\n"
+    ],
+    "name": "MgmGetProtocolOnInterface",
+    "prototype": "DWORD __stdcall(DWORD dwIfIndex, DWORD dwIfNextHopAddr, PDWORD pdwIfProtocolId, PDWORD pdwIfComponentId)",
+    "rank_score": 304,
+    "size": 512,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "MgmTakeInterfaceOwnership",
+    "ea": "0x180014970",
+    "function_file": "functions/180014970_MgmTakeInterfaceOwnership.md",
+    "matched_imports": [
+      "rtutils!RouterLogEventA"
+    ],
+    "matched_strings": [
+      "MgmTakeInterfaceOwnership : Already owned by routing protocol : %d, %d"
+    ],
+    "name": "MgmTakeInterfaceOwnership",
+    "prototype": "DWORD __stdcall(HANDLE hProtocol, DWORD dwIfIndex, DWORD dwIfNextHopAddr)",
+    "rank_score": 270,
+    "size": 644,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "UnScopeIfAndInvokeCallbacks",
+    "ea": "0x18001ad04",
+    "function_file": "functions/18001ad04_UnScopeIfAndInvokeCallbacks.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "Owning protocol(%d, %d) for interface(%d, %d) not found"
+    ],
+    "name": "UnScopeIfAndInvokeCallbacks",
+    "prototype": "",
+    "rank_score": 263,
+    "size": 522,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DeleteSourceFromRefList",
+    "ea": "0x18001bb28",
+    "function_file": "functions/18001bb28_DeleteSourceFromRefList.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "LEAVING DeleteSourceFromRefList : %x"
+    ],
+    "name": "DeleteSourceFromRefList",
+    "prototype": "",
+    "rank_score": 249,
+    "size": 284,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 75,
+    "demangled": "FormatRRASErrorString",
+    "ea": "0x18001f7e8",
+    "function_file": "functions/18001f7e8_FormatRRASErrorString.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "FormatRRASErrorString",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "UpdateAPC",
+    "ea": "0x180011600",
+    "function_file": "functions/180011600_UpdateAPC.md",
+    "matched_imports": [
+      "ntdll!RtlQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "UpdateAPC",
+    "prototype": "void __stdcall(PVOID TimerContext, ULONG TimerLowValue, LONG TimerHighValue)",
+    "rank_score": 222,
+    "size": 52,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "McGenEventWrite_EventWriteTransfer",
+    "ea": "0x180002c5c",
+    "function_file": "functions/180002c5c_McGenEventWrite_EventWriteTransfer.md",
+    "matched_imports": [
+      "ADVAPI32!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NsiGetRoutingDomainIdForCompartment",
+    "ea": "0x18001f734",
+    "function_file": "functions/18001f734_NsiGetRoutingDomainIdForCompartment.md",
+    "matched_imports": [
+      "NSI!NsiGetParameter"
+    ],
+    "matched_strings": [],
+    "name": "NsiGetRoutingDomainIdForCompartment",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 172,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "RtmBlockDeleteRoutes",
+    "ea": "0x18000fa20",
+    "function_file": "functions/18000fa20_RtmBlockDeleteRoutes.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "RtmBlockDeleteRoutes",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 636,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ProcessRouteDelete",
+    "ea": "0x1800158cc",
+    "function_file": "functions/1800158cc_ProcessRouteDelete.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "ProcessRouteDelete",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 440,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtmDllStartup",
+    "ea": "0x180007e44",
+    "function_file": "functions/180007e44_RtmDllStartup.md",
+    "matched_imports": [
+      "ntdll!RtlInitializeResource"
+    ],
+    "matched_strings": [],
+    "name": "RtmDllStartup",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 32,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DeleteOutInterfaceRefs",
+    "ea": "0x18001ba30",
+    "function_file": "functions/18001ba30_DeleteOutInterfaceRefs.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DeleteOutInterfaceRefs",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DeleteInInterfaceRefs",
+    "ea": "0x18001b9ac",
+    "function_file": "functions/18001b9ac_DeleteInInterfaceRefs.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DeleteInInterfaceRefs",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "StringCchPrintfA",
+    "ea": "0x180005768",
+    "function_file": "functions/180005768_StringCchPrintfA.md",
+    "matched_imports": [
+      "msvcrt!_vsnprintf"
+    ],
+    "matched_strings": [],
+    "name": "StringCchPrintfA",
+    "prototype": "HRESULT(STRSAFE_LPSTR pszDest, size_t cchDest, STRSAFE_LPCSTR pszFormat, ...)",
+    "rank_score": 205,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RtmWriteDefaultConfig",
+    "ea": "0x1800052d0",
+    "function_file": "functions/1800052d0_RtmWriteDefaultConfig.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Entered: RtmWriteDefaultConfig",
+      "Default Config: Error %d writing instance key",
+      "Leaving: RtmWriteDefaultConfig",
+      "Default Config: Error %d writing address family subkey"
+    ],
+    "name": "RtmWriteDefaultConfig",
+    "prototype": "",
+    "rank_score": 193,
+    "size": 591,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "InvokeJoinAlertCallbacks",
+    "ea": "0x18001928c",
+    "function_file": "functions/18001928c_InvokeJoinAlertCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Invoked Join Alert for protocol %x, %x",
+      "Invoked Join Alert for protocol %x, %x",
+      "InvokeJoinAlertCallbacks : Could notfind protocol %x, %x",
+      "Invoked Local Join Alert for protocol %x, %x"
+    ],
+    "name": "InvokeJoinAlertCallbacks",
+    "prototype": "",
+    "rank_score": 184,
+    "size": 759,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "DeleteFromForwarder",
+    "ea": "0x180016a40",
+    "function_file": "functions/180016a40_DeleteFromForwarder.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ENTERED DeleteFromForwarder, Entries %x",
+      "DeleteFromForwarder - Source Entry not found : ( %x, %x )",
+      "DeleteFromForwarder - Group Entry not found : ( %x )",
+      "LEAVING DeleteFromForwarder\n"
+    ],
+    "name": "DeleteFromForwarder",
+    "prototype": "",
+    "rank_score": 176,
+    "size": 684,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "InvokePruneAlertCallbacks",
+    "ea": "0x180019a1c",
+    "function_file": "functions/180019a1c_InvokePruneAlertCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Invoked Prune Alert for protocol %x, %x",
+      "Invoked Prune Alert for protocol %x, %x",
+      "InvokePruneAlertCallbacks : Could not find protocol (%x, %x)"
+    ],
+    "name": "InvokePruneAlertCallbacks",
+    "prototype": "",
+    "rank_score": 143,
+    "size": 623,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "InvokeCreationAlertForList",
+    "ea": "0x180019094",
+    "function_file": "functions/180019094_InvokeCreationAlertForList.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Invoked Creation Alert for protocol %x, %x",
+      "Could not invoke CREATION_ALERTs since protocol(%ld, %ld) not found",
+      "Protocol (%ld, %ld) does not have a CREATION_ALERT"
+    ],
+    "name": "InvokeCreationAlertForList",
+    "prototype": "",
+    "rank_score": 141,
+    "size": 498,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 80,
+    "demangled": "memset_0",
+    "ea": "0x18001f952",
+    "function_file": "functions/18001f952_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 15,
+    "demangled": "memcpy_0",
+    "ea": "0x18001f946",
+    "function_file": "functions/18001f946_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 115,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "DeleteGroupEntry",
+    "ea": "0x18001d1ec",
+    "function_file": "functions/18001d1ec_DeleteGroupEntry.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DeleteGroupEntry",
+    "prototype": "",
+    "rank_score": 107,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "DeleteOutInterfaceEntry",
+    "ea": "0x18001db88",
+    "function_file": "functions/18001db88_DeleteOutInterfaceEntry.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DeleteOutInterfaceEntry",
+    "prototype": "",
+    "rank_score": 105,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "DeleteSourceEntry",
+    "ea": "0x18001dbd0",
+    "function_file": "functions/18001dbd0_DeleteSourceEntry.md",
+    "matched_imports": [
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "DeleteSourceEntry",
+    "prototype": "",
+    "rank_score": 104,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CopyAddrFamilyInfo",
+    "ea": "0x1800080a4",
+    "function_file": "functions/1800080a4_CopyAddrFamilyInfo.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Entered: CopyAddrFamilyInfo",
+      "Leaving: CopyAddrFamilyInfo"
+    ],
+    "name": "CopyAddrFamilyInfo",
+    "prototype": "",
+    "rank_score": 98,
+    "size": 377,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "AddInterfaceToSourceEntry",
+    "ea": "0x18001c1a8",
+    "function_file": "functions/18001c1a8_AddInterfaceToSourceEntry.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Invoked Local Join Alert for protocol %x, %x"
+    ],
+    "name": "AddInterfaceToSourceEntry",
+    "prototype": "",
+    "rank_score": 80,
+    "size": 1504,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 2,
+    "demangled": "DeleteInterfaceFromSourceEntry",
+    "ea": "0x18001d378",
+    "function_file": "functions/18001d378_DeleteInterfaceFromSourceEntry.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Invoked Local Leave Alert for protocol %x, %x"
+    ],
+    "name": "DeleteInterfaceFromSourceEntry",
+    "prototype": "",
+    "rank_score": 79,
+    "size": 1415,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "TransferInterfaceOwnershipToIGMP",
+    "ea": "0x18001bce0",
+    "function_file": "functions/18001bce0_TransferInterfaceOwnershipToIGMP.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "TransferInterfaceOwnershipToProtocol : Could not find IGMP protocol entry"
+    ],
+    "name": "TransferInterfaceOwnershipToIGMP",
+    "prototype": "",
+    "rank_score": 61,
+    "size": 387,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "TransferInterfaceOwnershipToProtocol",
+    "ea": "0x18001be6c",
+    "function_file": "functions/18001be6c_TransferInterfaceOwnershipToProtocol.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "TransferInterfaceOwnershipToProtocol : Could not find IGMP protocol entry"
+    ],
+    "name": "TransferInterfaceOwnershipToProtocol",
+    "prototype": "",
+    "rank_score": 61,
+    "size": 352,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 91,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18001f980",
+    "function_file": "functions/18001f980_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 84,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180020010",
+    "function_file": "functions/180020010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "GetProtocolEntry",
+    "ea": "0x18001b548",
+    "function_file": "functions/18001b548_GetProtocolEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetProtocolEntry",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 56,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "RtmGetOpaqueInformationPointer",
+    "ea": "0x18000aa60",
+    "function_file": "functions/18000aa60_RtmGetOpaqueInformationPointer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtmGetOpaqueInformationPointer",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_DEST_HANDLE DestHandle, PVOID *OpaqueInfoPointer)",
+    "rank_score": 24,
+    "size": 436,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18001f860",
+    "function_file": "functions/18001f860_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001280",
+    "function_file": "functions/180001280_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 4,
+    "demangled": "GetNextMfe",
+    "ea": "0x18001ed64",
+    "function_file": "functions/18001ed64_GetNextMfe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetNextMfe",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 816,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 15,
+    "demangled": "McTemplateU0zjzz_EventWriteTransfer",
+    "ea": "0x180002cb0",
+    "function_file": "functions/180002cb0_McTemplateU0zjzz_EventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0zjzz_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x1800012c4",
+    "function_file": "functions/1800012c4_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "ComputeCNsToBeNotified",
+    "ea": "0x180002bec",
+    "function_file": "functions/180002bec_ComputeCNsToBeNotified.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ComputeCNsToBeNotified",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 106,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x18000dd00",
+    "function_file": "functions/18000dd00_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 15,
+    "size": 303,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "FindIfEntry",
+    "ea": "0x18001bc4c",
+    "function_file": "functions/18001bc4c_FindIfEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FindIfEntry",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "RtmGetDestInfo",
+    "ea": "0x180007050",
+    "function_file": "functions/180007050_RtmGetDestInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtmGetDestInfo",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_DEST_HANDLE DestHandle, ULONG ProtocolId, RTM_VIEW_SET TargetViews, PRTM_DEST_INFO DestInfo)",
+    "rank_score": 14,
+    "size": 112,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "DoEnumerate",
+    "ea": "0x18000e4c0",
+    "function_file": "functions/18000e4c0_DoEnumerate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DoEnumerate",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 673,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "FindOutInterfaceEntry",
+    "ea": "0x18001dcbc",
+    "function_file": "functions/18001dcbc_FindOutInterfaceEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FindOutInterfaceEntry",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "FindSourceEntry",
+    "ea": "0x18001dd8c",
+    "function_file": "functions/18001dd8c_FindSourceEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FindSourceEntry",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "RtmReleaseDestInfo",
+    "ea": "0x180007220",
+    "function_file": "functions/180007220_RtmReleaseDestInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtmReleaseDestInfo",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, PRTM_DEST_INFO DestInfo)",
+    "rank_score": 12,
+    "size": 171,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "SearchInTable",
+    "ea": "0x180002560",
+    "function_file": "functions/180002560_SearchInTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SearchInTable",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 314,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "FindGroupEntry",
+    "ea": "0x18001dc28",
+    "function_file": "functions/18001dc28_FindGroupEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FindGroupEntry",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "RtmDeleteRoute",
+    "ea": "0x1800102d0",
+    "function_file": "functions/1800102d0_RtmDeleteRoute.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtmDeleteRoute",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 620,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "EnumOverTable",
+    "ea": "0x180002150",
+    "function_file": "functions/180002150_EnumOverTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "EnumOverTable",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 550,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "GetDestInfo",
+    "ea": "0x180006e38",
+    "function_file": "functions/180006e38_GetDestInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetDestInfo",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 393,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "FindRefEntry",
+    "ea": "0x1800157ec",
+    "function_file": "functions/1800157ec_FindRefEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FindRefEntry",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 215,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "MergeTempAndMasterGroupLists",
+    "ea": "0x18001e374",
+    "function_file": "functions/18001e374_MergeTempAndMasterGroupLists.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MergeTempAndMasterGroupLists",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 309,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "GetGroupEntry",
+    "ea": "0x18001de20",
+    "function_file": "functions/18001de20_GetGroupEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetGroupEntry",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 46,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "RtmConvertNetAddressToIpv6AddressAndLength",
+    "ea": "0x18000dc60",
+    "function_file": "functions/18000dc60_RtmConvertNetAddressToIpv6AddressAndLength.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtmConvertNetAddressToIpv6AddressAndLength",
+    "prototype": "DWORD __stdcall(PRTM_NET_ADDRESS pNetAddress, PIN6_ADDR pAddress, PDWORD pLength, DWORD dwAddressSize)",
+    "rank_score": 8,
+    "size": 146,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "RtmMarkDestForChangeNotification",
+    "ea": "0x180003f10",
+    "function_file": "functions/180003f10_RtmMarkDestForChangeNotification.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtmMarkDestForChangeNotification",
+    "prototype": "DWORD __stdcall(RTM_ENTITY_HANDLE RtmRegHandle, RTM_NOTIFY_HANDLE NotifyHandle, RTM_DEST_HANDLE DestHandle, BOOL MarkDest)",
+    "rank_score": 8,
+    "size": 143,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "GetSourceEntry",
+    "ea": "0x18001de98",
+    "function_file": "functions/18001de98_GetSourceEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetSourceEntry",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 46,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "MergeTempAndMasterSourceLists",
+    "ea": "0x18001e4b0",
+    "function_file": "functions/18001e4b0_MergeTempAndMasterSourceLists.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MergeTempAndMasterSourceLists",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BalanceAfterDelete",
+    "ea": "0x1800019bc",
+    "function_file": "functions/1800019bc_BalanceAfterDelete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BalanceAfterDelete",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DeleteInterfaceFromGroupMfe",
+    "ea": "0x18001d2a0",
+    "function_file": "functions/18001d2a0_DeleteInterfaceFromGroupMfe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DeleteInterfaceFromGroupMfe",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0z_EventWriteTransfer",
+    "ea": "0x180004280",
+    "function_file": "functions/180004280_McTemplateU0z_EventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0z_EventWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 122,
+    "tags": []
+  }
+]

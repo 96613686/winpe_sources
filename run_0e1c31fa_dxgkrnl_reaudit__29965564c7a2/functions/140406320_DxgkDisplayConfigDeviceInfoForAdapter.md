@@ -1,0 +1,225 @@
+# DxgkDisplayConfigDeviceInfoForAdapter
+
+- ea: `0x140406320`
+- end: `0x1404088ab`
+- name: `DxgkDisplayConfigDeviceInfoForAdapter`
+- size: `9611`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `62`
+- tags: `registry_config`
+
+## callers
+
+- `0x140315020`
+
+## callees
+
+- `0x140012cd4`
+- `0x140013a20`
+- `0x14001b9c0`
+- `0x14001d214`
+- `0x1400371b0`
+- `0x14003d264`
+- `0x140046268`
+- `0x14004afcc`
+- `0x14004bf5c`
+- `0x14004d4a4`
+- `0x14004f8a0`
+- `0x140051f84`
+- `0x140058c68`
+- `0x140058ce0`
+- `0x14005c970`
+- `0x14006187c`
+- `0x140070ab4`
+- `0x140070b48`
+- `0x140089e54`
+- `0x1400a0cb0`
+- `0x1401920f4`
+- `0x140199040`
+- `0x14019de48`
+- `0x1401b9ff4`
+- `0x1401ce098`
+- `0x1401ce258`
+- `0x1401f5338`
+- `0x140226168`
+- `0x140228448`
+- `0x140228510`
+- `0x140228da8`
+- `0x14026ae2c`
+- `0x1402f3b64`
+- `0x1402f3cfc`
+- `0x1402f3dd8`
+- `0x1402f4228`
+- `0x1402f476c`
+- `0x1402f4828`
+- `0x1402f48c4`
+- `0x1402f4b94`
+- `0x1402f4c50`
+- `0x1402f5264`
+- `0x1402f58c4`
+- `0x1402f5be8`
+- `0x1402f5d08`
+- `0x1402f5dcc`
+- `0x1402f616c`
+- `0x140314800`
+- `0x140348378`
+- `0x140348478`
+
+## import_xrefs
+
+- `ntoskrnl!IoGetDeviceAttachmentBaseRef` at `0x1404066c2`
+- `ntoskrnl!IoGetDeviceAttachmentBaseRef` at `0x1404066c2`
+- `ntoskrnl!RtlInitUnicodeString` at `0x1404086c4`
+- `ntoskrnl!RtlInitUnicodeString` at `0x1404086c4`
+- `ntoskrnl!IoGetDeviceInterfaces` at `0x1404066f9`
+- `ntoskrnl!IoGetDeviceInterfaces` at `0x1404066f9`
+- `ntoskrnl!wcsncpy_s` at `0x14040676f`
+- `ntoskrnl!wcsncpy_s` at `0x14040676f`
+- `watchdog!WdLogSingleEntry4` at `0x140406890`
+- `watchdog!WdLogSingleEntry4` at `0x140406ac5`
+- `watchdog!WdLogSingleEntry4` at `0x140406d1e`
+- `watchdog!WdLogSingleEntry4` at `0x140406e22`
+- `watchdog!WdLogSingleEntry4` at `0x140406f28`
+- `watchdog!WdLogSingleEntry4` at `0x1404070f7`
+- `watchdog!WdLogSingleEntry4` at `0x1404071af`
+- `watchdog!WdLogSingleEntry4` at `0x14040721b`
+- `watchdog!WdLogSingleEntry4` at `0x14040757b`
+- `watchdog!WdLogSingleEntry4` at `0x1404075f9`
+- `watchdog!WdLogSingleEntry4` at `0x1404076db`
+- `watchdog!WdLogSingleEntry4` at `0x140407748`
+- `watchdog!WdLogSingleEntry4` at `0x140407844`
+- `watchdog!WdLogSingleEntry4` at `0x1404078de`
+- `watchdog!WdLogSingleEntry4` at `0x140407956`
+- `watchdog!WdLogSingleEntry4` at `0x140407aa0`
+- `watchdog!WdLogSingleEntry4` at `0x140407b9c`
+- `watchdog!WdLogSingleEntry4` at `0x140407c7b`
+- `watchdog!WdLogSingleEntry4` at `0x140407d66`
+- `watchdog!WdLogSingleEntry4` at `0x140407e24`
+- `watchdog!WdLogSingleEntry4` at `0x140407ea6`
+- `watchdog!WdLogSingleEntry4` at `0x140408048`
+- `watchdog!WdLogSingleEntry4` at `0x140408113`
+- `watchdog!WdLogSingleEntry4` at `0x1404082d7`
+- `watchdog!WdLogSingleEntry4` at `0x140408333`
+- `watchdog!WdLogSingleEntry4` at `0x1404085a3`
+- `watchdog!WdLogSingleEntry4` at `0x140406890`
+- `watchdog!WdLogSingleEntry4` at `0x140406ac5`
+- `watchdog!WdLogSingleEntry4` at `0x140406d1e`
+- `watchdog!WdLogSingleEntry4` at `0x140406e22`
+- `watchdog!WdLogSingleEntry4` at `0x140406f28`
+- `watchdog!WdLogSingleEntry4` at `0x1404070f7`
+- `watchdog!WdLogSingleEntry4` at `0x1404071af`
+- `watchdog!WdLogSingleEntry4` at `0x14040721b`
+- `watchdog!WdLogSingleEntry4` at `0x14040757b`
+- `watchdog!WdLogSingleEntry4` at `0x1404075f9`
+- `watchdog!WdLogSingleEntry4` at `0x1404076db`
+- `watchdog!WdLogSingleEntry4` at `0x140407748`
+- `watchdog!WdLogSingleEntry4` at `0x140407844`
+- `watchdog!WdLogSingleEntry4` at `0x1404078de`
+- `watchdog!WdLogSingleEntry4` at `0x140407956`
+- `watchdog!WdLogSingleEntry4` at `0x140407aa0`
+- `watchdog!WdLogSingleEntry4` at `0x140407b9c`
+- `watchdog!WdLogSingleEntry4` at `0x140407c7b`
+- `watchdog!WdLogSingleEntry4` at `0x140407d66`
+- `watchdog!WdLogSingleEntry4` at `0x140407e24`
+- `watchdog!WdLogSingleEntry4` at `0x140407ea6`
+- `watchdog!WdLogSingleEntry4` at `0x140408048`
+- `watchdog!WdLogSingleEntry4` at `0x140408113`
+- `watchdog!WdLogSingleEntry4` at `0x1404082d7`
+- `watchdog!WdLogSingleEntry4` at `0x140408333`
+- `watchdog!WdLogSingleEntry4` at `0x1404085a3`
+- `watchdog!WdLogSingleEntry2` at `0x140406717`
+- `watchdog!WdLogSingleEntry2` at `0x140406717`
+- `watchdog!WdLogNewEntry5_WdTrace` at `0x140408764`
+- `watchdog!WdLogNewEntry5_WdTrace` at `0x140408764`
+- `watchdog!SMgrGdiCallout` at `0x140407f48`
+- `watchdog!SMgrGdiCallout` at `0x140407f48`
+- `watchdog!WdLogSingleEntry3` at `0x14040643d`
+- `watchdog!WdLogSingleEntry3` at `0x140406575`
+- `watchdog!WdLogSingleEntry3` at `0x14040733b`
+- `watchdog!WdLogSingleEntry3` at `0x14040738d`
+- `watchdog!WdLogSingleEntry3` at `0x1404073e4`
+- `watchdog!WdLogSingleEntry3` at `0x14040643d`
+- `watchdog!WdLogSingleEntry3` at `0x140406575`
+- `watchdog!WdLogSingleEntry3` at `0x14040733b`
+- `watchdog!WdLogSingleEntry3` at `0x14040738d`
+- `watchdog!WdLogSingleEntry3` at `0x1404073e4`
+- `watchdog!WdLogSingleEntry0` at `0x1404063ab`
+- `watchdog!WdLogSingleEntry0` at `0x14040646c`
+- `watchdog!WdLogSingleEntry0` at `0x1404064f8`
+- `watchdog!WdLogSingleEntry0` at `0x1404065df`
+- `watchdog!WdLogSingleEntry0` at `0x1404067a1`
+- `watchdog!WdLogSingleEntry0` at `0x140406910`
+- `watchdog!WdLogSingleEntry0` at `0x140406b30`
+- `watchdog!WdLogSingleEntry0` at `0x140406bde`
+- `watchdog!WdLogSingleEntry0` at `0x140406c58`
+- `watchdog!WdLogSingleEntry0` at `0x140406d88`
+- `watchdog!WdLogSingleEntry0` at `0x140406e4d`
+- `watchdog!WdLogSingleEntry0` at `0x140406f53`
+- `watchdog!WdLogSingleEntry0` at `0x140407056`
+- `watchdog!WdLogSingleEntry0` at `0x14040711e`
+- `watchdog!WdLogSingleEntry0` at `0x14040740b`
+- `watchdog!WdLogSingleEntry0` at `0x1404077c5`
+- `watchdog!WdLogSingleEntry0` at `0x14040798f`
+- `watchdog!WdLogSingleEntry0` at `0x1404079fc`
+- `watchdog!WdLogSingleEntry0` at `0x140407b0c`
+- `watchdog!WdLogSingleEntry0` at `0x140407beb`
+- `watchdog!WdLogSingleEntry0` at `0x140407cd2`
+- `watchdog!WdLogSingleEntry0` at `0x140407da0`
+- `watchdog!WdLogSingleEntry0` at `0x140407fa7`
+- `watchdog!WdLogSingleEntry0` at `0x140408085`
+- `watchdog!WdLogSingleEntry0` at `0x14040825a`
+- `watchdog!WdLogSingleEntry0` at `0x1404085ff`
+- `watchdog!WdLogSingleEntry0` at `0x14040870a`
+- `watchdog!WdLogSingleEntry0` at `0x1404063ab`
+- `watchdog!WdLogSingleEntry0` at `0x14040646c`
+- `watchdog!WdLogSingleEntry0` at `0x1404064f8`
+- `watchdog!WdLogSingleEntry0` at `0x1404065df`
+- `watchdog!WdLogSingleEntry0` at `0x1404067a1`
+- `watchdog!WdLogSingleEntry0` at `0x140406910`
+- `watchdog!WdLogSingleEntry0` at `0x140406b30`
+- `watchdog!WdLogSingleEntry0` at `0x140406bde`
+- `watchdog!WdLogSingleEntry0` at `0x140406c58`
+- `watchdog!WdLogSingleEntry0` at `0x140406d88`
+- `watchdog!WdLogSingleEntry0` at `0x140406e4d`
+- `watchdog!WdLogSingleEntry0` at `0x140406f53`
+- `watchdog!WdLogSingleEntry0` at `0x140407056`
+- `watchdog!WdLogSingleEntry0` at `0x14040711e`
+- `watchdog!WdLogSingleEntry0` at `0x14040740b`
+- `watchdog!WdLogSingleEntry0` at `0x1404077c5`
+- `watchdog!WdLogSingleEntry0` at `0x14040798f`
+- `watchdog!WdLogSingleEntry0` at `0x1404079fc`
+- `watchdog!WdLogSingleEntry0` at `0x140407b0c`
+- `watchdog!WdLogSingleEntry0` at `0x140407beb`
+- `watchdog!WdLogSingleEntry0` at `0x140407cd2`
+- `watchdog!WdLogSingleEntry0` at `0x140407da0`
+- `watchdog!WdLogSingleEntry0` at `0x140407fa7`
+- `watchdog!WdLogSingleEntry0` at `0x140408085`
+- `watchdog!WdLogSingleEntry0` at `0x14040825a`
+- `watchdog!WdLogSingleEntry0` at `0x1404085ff`
+- `watchdog!WdLogSingleEntry0` at `0x14040870a`
+- `watchdog!WdLogSingleEntry1` at `0x140406648`
+- `watchdog!WdLogSingleEntry1` at `0x140406980`
+- `watchdog!WdLogSingleEntry1` at `0x140406eaf`
+- `watchdog!WdLogSingleEntry1` at `0x140406fb5`
+- `watchdog!WdLogSingleEntry1` at `0x140408166`
+- `watchdog!WdLogSingleEntry1` at `0x140408234`
+- `watchdog!WdLogSingleEntry1` at `0x140406648`
+- `watchdog!WdLogSingleEntry1` at `0x140406980`
+- `watchdog!WdLogSingleEntry1` at `0x140406eaf`
+- `watchdog!WdLogSingleEntry1` at `0x140406fb5`
+- `watchdog!WdLogSingleEntry1` at `0x140408166`
+- `watchdog!WdLogSingleEntry1` at `0x140408234`
+
+## string_xrefs
+
+- `0x140406509`: `(!i_bGetDeviceInfo)&& (io_pRequestPacket->type == DISPLAYCONFIG_DEVICE_INFO_SET_SUPPORT_VIRTUAL_RESOLUTION)`
+- `0x14040741c`: `DISPLAYCONFIG_DEVICE_INFO type not handled`
+- `0x140407850`: `MonitorIsMonitorAndLinkHDRCapable() failed on adapter:0x%I64x%08I64x target:0x%I64x (Status = 0x%I64x).`
+- `0x14040871b`: `DISPLAYCONFIG_DEVICE_INFO_SET_MONITOR_SPECIALIZATION was called with an invalid app name string.`
+
+## pseudocode
+
+```c
+
+```
