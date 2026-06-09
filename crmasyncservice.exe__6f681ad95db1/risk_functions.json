@@ -1,0 +1,5240 @@
+[
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::GetMailboxWrapper",
+    "ea": "0x8db0",
+    "function_file": "functions/8db0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_GetMailboxWrapper.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "mailboxstatisticsid",
+      "processanddeleteemails",
+      "testemailconfigurationscheduled",
+      "testemailconfigurationscheduled",
+      "postponetestemailconfigurationuntil",
+      "enabledforincomingemail",
+      "incomingemaildeliverymethod",
+      "isserviceaccount",
+      "officeappsdeploymentscheduled",
+      "incomingemailstatus",
+      "processinglastattemptedon",
+      "isexchangecontactsimportscheduled"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::GetMailboxWrapper",
+    "prototype": "",
+    "rank_score": 540,
+    "size": 1947,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::ShouldSkipOrgUpdates",
+    "ea": "0x3410",
+    "function_file": "functions/3410_Microsoft.Crm.Asynchronous.JobDataAccess_ShouldSkipOrgUpdates.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[DBUPDATES] DB Update Scheduling feature is enabled. Non-Business hours start: {0}, ",
+      "[DBUPDATES][ENABLED] Current time {0} is outside of business hours, will allow db updates to be run.",
+      "[DBUPDATES][DISABLED] Current time {0} is NOT outside of business hours, will NOT allow db updates to be run.",
+      "[DBUPDATES][DISABLED] Unable to determine if current time {0} is outside of business hours, will NOT allow db updates to be run.",
+      "[DBUPDATES][DISABLED] DB Update Scheduling feature is NOT enabled, will NOT allow db updates to be run.",
+      "[OrgDBUpdateThrottling] Feature is enabled.",
+      "[OrgDBUpdateThrottling] OrgDBUpdatesRunning = {0}, ",
+      "MaxConcurrentOrgDBUpdateJobsPerAsyncServer = {0}. Will NOT retrieve org db update jobs (type 44).",
+      "[OrgDBUpdateThrottling] Feature is disabled."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::ShouldSkipOrgUpdates",
+    "prototype": "",
+    "rank_score": 402,
+    "size": 356,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::SelectMailboxes",
+    "ea": "0x8b60",
+    "function_file": "functions/8b60_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_SelectMailboxes.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UPDATE Mailboxbase WITH (READPAST, READCOMMITTEDLOCK, UPDLOCK)\r\n\t\t\t\tSET \r\n\t\t\t\t\tHostId = @hostId,\r\n\t\t\t\t\tModifiedOn = @dateTimeNow,\r\n\t\t\t\t\tProcessingLastAttemptedOn = @dateTimeNow,",
+      "ProcessingStateCode = @lockedState,\r\n\t\t\t\t\tPostponeMailboxProcessingUntil = @maxDateTime\r\n\t\t\t\tOUTPUT\r\n\t\t\t\t\tINSERTED.MailboxId,\r\n\t\t\t\t\tINSERTED.CreatedOn,\r\n\t\t\t\t\tINSERTED.ModifiedOn,\r\n\t\t\t\t\tINSERTED.ReceivingPostponedUntil,\r\n\t\t\t\t\tINSERTED.NoEmailCount,\r\n\t\t\t\t\tINSERTED.ProcessEmailReceivedAfter,\r\n\t\t\t\t\tINSERTED.IsForwardMailbox,\r\n\t\t\t\t\tINSERTED.EmailAddress,\r\n\t\t\t\t\tINSERTED.ProcessAndDeleteEmails,\r\n\t\t\t\t\tINSERTED.LastMessageId,\r\n\t\t\t\t\tINSERTED.TestEmailConfigurationScheduled,\r\n\t\t\t\t\tINSERTED.PostponeTestEmai",
+      ",INSERTED.VerboseLoggingEnabled, INSERTED.IsServiceAccount",
+      ",INSERTED.OfficeAppsDeploymentScheduled, INSERTED.OfficeAppsDeploymentStatus",
+      ",INSERTED.IncomingEmailStatus",
+      ",INSERTED.ProcessingLastAttemptedOn",
+      ",INSERTED.IsExchangeContactsImportScheduled",
+      " WHERE \r\n\t\t\t\t\tMailboxId \r\n\t\t\t\t\tIN \r\n\t\t\t\t\t(SELECT \r\n\t\t\t\t\t\tTOP (@mailboxesToSelect) MailboxId \r\n\t\t\t\t\tFROM \r\n\t\t\t\t\t\tMailboxBase WITH (READPAST, READCOMMITTEDLOCK, UPDLOCK) \r\n\t\t\t\t\tWHERE\r\n\t\t\t\t\t\t( \r\n\t\t\t\t\t\t\tProcessingStateCode = @waitingState\r\n\t\t\t\t\t\t\tAND\r\n\t\t\t\t\t\t\tPostponeMailboxProcessingUntil <= @dateTimeNow\r\n\t\t\t\t\t\t)\r\n\t\t\t\t\tORDER BY \r\n\t\t\t\t\t\tPostponeMailboxProcessingUntil\r\n\t\t\t\t\t)"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::SelectMailboxes",
+    "prototype": "",
+    "rank_score": 367,
+    "size": 580,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::GetMailbox",
+    "ea": "0x9ac0",
+    "function_file": "functions/9ac0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug_GetMailbox.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "processanddeleteemails",
+      "testemailconfigurationscheduled",
+      "postponetestemailconfigurationuntil",
+      "enabledforincomingemail",
+      "incomingemaildeliverymethod"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::GetMailbox",
+    "prototype": "",
+    "rank_score": 239,
+    "size": 945,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateJobsTargetServer",
+    "ea": "0x3060",
+    "function_file": "functions/3060_Microsoft.Crm.Asynchronous.JobDataAccess_UpdateJobsTargetServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[DBUPDATES] Failed to add DB Update job for org {0} to queue. Error:{1}",
+      "[OrgDBUpdateThrottling] Decremented orgDBUpdatesRunning to {0} after failing to add org {1}.",
+      "[JOBPROCESSING] Exception occurred while attempting to process job {0} for org {1}. Error:{2}",
+      "Updated NextRunTime of job {0} for org {1} to {2}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateJobsTargetServer",
+    "prototype": "",
+    "rank_score": 191,
+    "size": 414,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::SetThreadPoolLimits",
+    "ea": "0x1120",
+    "function_file": "functions/1120_Microsoft.Crm.Asynchronous.AsyncService_SetThreadPoolLimits.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "AsyncMinWorkerThreads",
+      "AsyncMinIOThreads",
+      "CRMAsyncService - SetThreadPoolLimits failed to SetMinThreads. MinWorkerThreads:{0} -> {1}; MinIOThreads:{2} -> {3}",
+      "CrmAsyncService - SetThreadPoolLimits failed with exception: {0}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::SetThreadPoolLimits",
+    "prototype": "",
+    "rank_score": 184,
+    "size": 209,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "<>c__DisplayClass13_0::<LogHealthofMailboxes>b__1",
+    "ea": "0xb3a0",
+    "function_file": "functions/b3a0_c_DisplayClass13_0_LogHealthofMailboxes_b_1.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "enabledforincomingemail",
+      "incomingemaildeliverymethod",
+      "incomingemailstatus",
+      "lastsuccessfulsynccompletedon"
+    ],
+    "name": "<>c__DisplayClass13_0::<LogHealthofMailboxes>b__1",
+    "prototype": "",
+    "rank_score": 175,
+    "size": 533,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::StartServiceComponents",
+    "ea": "0xe20",
+    "function_file": "functions/e20_Microsoft.Crm.Asynchronous.AsyncService_StartServiceComponents.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Starting AsyncService: {0}",
+      "Started AsyncService: {0}",
+      "Exception while starting async service: {0} - {1}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::StartServiceComponents",
+    "prototype": "",
+    "rank_score": 161,
+    "size": 448,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::TryGetValidatedAsyncJob",
+    "ea": "0x2f70",
+    "function_file": "functions/2f70_Microsoft.Crm.Asynchronous.JobDataAccess_TryGetValidatedAsyncJob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\JobDataAccess.cs",
+      "[DBUPDATES] Succesfully added DB Update job for org {0} on target server {1} to queue.",
+      "[OrgDBUpdateThrottling] Incremented orgDBUpdatesRunning to {0} after adding org {1}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::TryGetValidatedAsyncJob",
+    "prototype": "",
+    "rank_score": 156,
+    "size": 239,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ConfigurationFactory::Create",
+    "ea": "0x1fc0",
+    "function_file": "functions/1fc0_Microsoft.Crm.Asynchronous.ConfigurationFactory_Create.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "service",
+      "service",
+      "Invalid context on the service"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.ConfigurationFactory::Create",
+    "prototype": "",
+    "rank_score": 154,
+    "size": 77,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateMaintenanceJobs",
+    "ea": "0x3600",
+    "function_file": "functions/3600_Microsoft.Crm.Asynchronous.JobDataAccess_UpdateMaintenanceJobs.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\JobDataAccess.cs",
+      "UPDATE ScaleGroupOrganizationMaintenanceJobs SET \r\n\t\t\t\t\t\t\t\tHostId = @hostId, State = @lockedState, ModifiedOn = @modifiedOn, StartedOn = @modifiedOn\r\n\t\t\t\t\t\t\t\tWHERE Id IN {0}",
+      "UpdateMaintenanceJobs"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateMaintenanceJobs",
+    "prototype": "",
+    "rank_score": 154,
+    "size": 155,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::SetServiceExecutableParameters",
+    "ea": "0x1bb0",
+    "function_file": "functions/1bb0_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_SetServiceExecutableParameters.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services",
+      "ImagePath",
+      "ImagePath"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::SetServiceExecutableParameters",
+    "prototype": "",
+    "rank_score": 153,
+    "size": 98,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceShortName",
+    "ea": "0x1e20",
+    "function_file": "functions/1e20_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceShortName.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "servicename",
+      "servicename",
+      "MSCRMAsyncService"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceShortName",
+    "prototype": "",
+    "rank_score": 152,
+    "size": 56,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::ResetActiveJobsForThisHost",
+    "ea": "0x2790",
+    "function_file": "functions/2790_Microsoft.Crm.Asynchronous.JobDataAccess_ResetActiveJobsForThisHost.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UPDATE ScaleGroupOrganizationMaintenanceJobs \r\n\t\t\t\t\t\t\tSET HostId = NULL, State = @readyState\r\n\t\t\t\t\t\t\tWHERE HostId = @hostId and State = @lockedState",
+      "@readyState",
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\JobDataAccess.cs"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::ResetActiveJobsForThisHost",
+    "prototype": "",
+    "rank_score": 151,
+    "size": 121,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobCreator::CreateDefaultJobsOnFirstRun",
+    "ea": "0x6d30",
+    "function_file": "functions/6d30_Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobCreator_CreateDefaultJobsOnFirstRun.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MaintenanceJobsVersionUpdate",
+      "CreateDefaultJobsOnFirstRun",
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\ScalegroupMaintenanceJobs\\ScalegroupMaintenanceJobCreator.cs"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobCreator::CreateDefaultJobsOnFirstRun",
+    "prototype": "",
+    "rank_score": 151,
+    "size": 124,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::TimeoutLocked",
+    "ea": "0x7ff0",
+    "function_file": "functions/7ff0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_TimeoutLocked.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "update MailboxBase  WITH  (READPAST,READCOMMITTEDLOCK,UPDLOCK)\r\n\t\t\t\t\t\t\t\t\tset\r\n\t\t\t\t\t\t\t\t\t\tProcessingStateCode = @waitingState,\r\n\t\t\t\t\t\t\t\t\t\tHostId = NULL,\r\n\t\t\t\t\t\t\t\t\t\tModifiedOn = @utcNow,\r\n\t\t\t\t\t\t\t\t\t\tPostponeMailboxProcessingUntil = @utcNow",
+      "ProcessingLastAttemptedOn < @maximumPermissibleIdleTime and HostId = @hostId",
+      "ProcessingLastAttemptedOn < @maximumPermissibleIdleTime"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::TimeoutLocked",
+    "prototype": "",
+    "rank_score": 150,
+    "size": 487,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::LogPendingOrgDBUpdateJobsInfo",
+    "ea": "0x3730",
+    "function_file": "functions/3730_Microsoft.Crm.Asynchronous.JobDataAccess_LogPendingOrgDBUpdateJobsInfo.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "@readyState",
+      "SELECT Count(*), MIN(NextRunTime) FROM ScaleGroupOrganizationMaintenanceJobs\r\n\t\t\t\t\t\t\t\t\t\tWHERE OperationType = 44\r\n\t\t\t\t\t\t\t\t\t\tAND NextRunTime < '9999-01-01 00:00:00.000'\r\n\t\t\t\t\t\t\t\t\t\tAND State = @readyState\r\n\t\t\t\t\t\t\t\t\t\tAND Enabled = 1\r\n\t\t\t\t\t\t\t\t\t\tGROUP BY OperationType",
+      "[DBUPDATES] Pending org db update jobs count = {0}, Min of NextRunTime = {1}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::LogPendingOrgDBUpdateJobsInfo",
+    "prototype": "",
+    "rank_score": 144,
+    "size": 178,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "<>c::<LogHealthofMailboxes>b__13_2",
+    "ea": "0xb5f0",
+    "function_file": "functions/b5f0_c_LogHealthofMailboxes_b_13_2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "enabledforincomingemail",
+      "incomingemaildeliverymethod",
+      "incomingemailstatus"
+    ],
+    "name": "<>c::<LogHealthofMailboxes>b__13_2",
+    "prototype": "",
+    "rank_score": 132,
+    "size": 195,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "<>c::<LogHealthofMailboxes>b__13_4",
+    "ea": "0xb6f0",
+    "function_file": "functions/b6f0_c_LogHealthofMailboxes_b_13_4.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "enabledforincomingemail",
+      "incomingemaildeliverymethod",
+      "incomingemailstatus"
+    ],
+    "name": "<>c::<LogHealthofMailboxes>b__13_4",
+    "prototype": "",
+    "rank_score": 131,
+    "size": 72,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::InvokeHandler",
+    "ea": "0x47b0",
+    "function_file": "functions/47b0_Microsoft.Crm.Asynchronous.JobManager_InvokeHandler.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[DBUPDATES] DB Update job for org {0} completed.",
+      "[OrgDBUpdateThrottling] Decremented orgDBUpdatesRunning to {0} after completing job for org {1}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::InvokeHandler",
+    "prototype": "",
+    "rank_score": 119,
+    "size": 143,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::GetNextJob",
+    "ea": "0x2b30",
+    "function_file": "functions/2b30_Microsoft.Crm.Asynchronous.JobDataAccess_GetNextJob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[JOBPROCESSING] Picked {0} org update jobs.",
+      "[JOBPROCESSING] Picked {0} non org update jobs."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::GetNextJob",
+    "prototype": "",
+    "rank_score": 115,
+    "size": 467,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::UpdateJobToCompleted",
+    "ea": "0x65f0",
+    "function_file": "functions/65f0_Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor_UpdateJobToCompleted.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UpdateJobToCompleted",
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\ScalegroupMaintenanceJobsMonitor.cs"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::UpdateJobToCompleted",
+    "prototype": "",
+    "rank_score": 115,
+    "size": 224,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::UpdateReadyJobsToExecuting",
+    "ea": "0x6930",
+    "function_file": "functions/6930_Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor_UpdateReadyJobsToExecuting.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\ScalegroupMaintenanceJobsMonitor.cs",
+      "UpdateReadyJobsToExecuting"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::UpdateReadyJobsToExecuting",
+    "prototype": "",
+    "rank_score": 115,
+    "size": 181,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::SetJobNextRunTime",
+    "ea": "0x3580",
+    "function_file": "functions/3580_Microsoft.Crm.Asynchronous.JobDataAccess_SetJobNextRunTime.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\JobDataAccess.cs",
+      "UPDATE ScaleGroupOrganizationMaintenanceJobs SET \r\n\t\t\t\t\t\t\tModifiedOn = @modifiedOn, NextRunTime = @nextRunTime\r\n\t\t\t\t\t\t\t\tWHERE Id = @jobId"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::SetJobNextRunTime",
+    "prototype": "",
+    "rank_score": 114,
+    "size": 128,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::AsyncServiceStop",
+    "ea": "0x12c0",
+    "function_file": "functions/12c0_Microsoft.Crm.Asynchronous.AsyncService_AsyncServiceStop.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Stopping service",
+      "AsyncService has been stopped: {0}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::AsyncServiceStop",
+    "prototype": "",
+    "rank_score": 109,
+    "size": 251,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::ReportEvents",
+    "ea": "0x81e0",
+    "function_file": "functions/81e0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_ReportEvents.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\MailboxQueue\\MailboxQueueDataAccess.cs",
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\MailboxQueue\\MailboxQueueDataAccess.cs"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::ReportEvents",
+    "prototype": "",
+    "rank_score": 108,
+    "size": 247,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::RetrieveJobs",
+    "ea": "0x2d10",
+    "function_file": "functions/2d10_Microsoft.Crm.Asynchronous.JobDataAccess_RetrieveJobs.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[JOBPROCESSING] Pre-Validation: OrgUpdate = {0}.Picked {1} out of {2}.",
+      "[JOBPROCESSING] Post-Validation: OrgUpdate = {0}.Picked {1} out of {2}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::RetrieveJobs",
+    "prototype": "",
+    "rank_score": 108,
+    "size": 171,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::GetCustomProperties",
+    "ea": "0x5940",
+    "function_file": "functions/5940_Microsoft.Crm.Asynchronous.WorkloadThrottler_GetCustomProperties.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ItemsInMemoryLow",
+      "ItemsInMemoryHigh"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::GetCustomProperties",
+    "prototype": "",
+    "rank_score": 108,
+    "size": 515,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::SetNonOrgUpdateJobsSql",
+    "ea": "0x3290",
+    "function_file": "functions/3290_Microsoft.Crm.Asynchronous.JobDataAccess_SetNonOrgUpdateJobsSql.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "@readyState",
+      "\r\n\t\t\tDECLARE @priorityTable table\r\n\t\t\t(\r\n\t\t\t\tOperationType int not null,\r\n\t\t\t\tPriority int not null,\r\n\t\t\t\tCapacityType int not null\r\n\t\t\t)\r\n\r\n\t\t\t{0}\r\n\r\n\t\t\tDECLARE @invalidIds table\r\n\t\t\t(\r\n\t\t\t\tId uniqueidentifier not null\r\n\t\t\t)\r\n\t\t\t\r\n\t\t\tINSERT INTO @invalidIds \r\n\t\t\t\tSELECT Id FROM ScaleGroupOrganizationMaintenanceJobs  \r\n\t\t\t\tINNER JOIN @priorityTable q ON q.OperationType = ScaleGroupOrganizationMaintenanceJobs.OperationType\r\n\t\t\t\tWHERE CapacityType = @limitedServer \r\n\t\t\t\tAND TargetServer IN\r\n\t\t\t\t(\r"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::SetNonOrgUpdateJobsSql",
+    "prototype": "",
+    "rank_score": 107,
+    "size": 257,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::InitializeComponents",
+    "ea": "0x13d0",
+    "function_file": "functions/13d0_Microsoft.Crm.Asynchronous.AsyncService_InitializeComponents.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Async service is ready for processing event.",
+      "Exception while initializing components: {0} - {1}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::InitializeComponents",
+    "prototype": "",
+    "rank_score": 106,
+    "size": 283,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::RetrieveAllReadyJobs",
+    "ea": "0x6770",
+    "function_file": "functions/6770_Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor_RetrieveAllReadyJobs.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\ScalegroupMaintenanceJobsMonitor.cs",
+      "RetrieveAllReadyJobs"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::RetrieveAllReadyJobs",
+    "prototype": "",
+    "rank_score": 105,
+    "size": 433,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::SetOrgUpdateJobsSql",
+    "ea": "0x3200",
+    "function_file": "functions/3200_Microsoft.Crm.Asynchronous.JobDataAccess_SetOrgUpdateJobsSql.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "@readyState",
+      "\r\n\t\t\tSELECT TOP {0}\r\n\t\t\t\tId, OrganizationId, TargetServer, OperationType as OpType, RecurrenceStartTime, RecurrencePattern, CapacityType = 2 {1}\r\n\t\t\tFROM \r\n\t\t\t\tScaleGroupOrganizationMaintenanceJobs j\r\n\t\t\tWHERE\r\n\t\t\t\tj.NextRunTime < @startCycleTime\r\n\t\t\t\tAND j.State=@readyState\r\n\t\t\t\tAND j.Enabled = 1\r\n\t\t\t\t{2}\r\n\t\t\t\tAND j.OrganizationId NOT IN\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\tSELECT DISTINCT OrganizationId FROM ScaleGroupOrganizationMaintenanceJobs\r\n\t\t\t\t\t\tWHERE ScaleGroupOrganizationMaintenanceJobs.State = @lockedStat"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::SetOrgUpdateJobsSql",
+    "prototype": "",
+    "rank_score": 104,
+    "size": 131,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::ExecuteSqlOrganizationScopeAndProcessRecords",
+    "ea": "0x2a10",
+    "function_file": "functions/2a10_Microsoft.Crm.Asynchronous.JobDataAccess_ExecuteSqlOrganizationScopeAndProcessRecords.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\JobDataAccess.cs",
+      "Exception while trying to open database connection for organization {0}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::ExecuteSqlOrganizationScopeAndProcessRecords",
+    "prototype": "",
+    "rank_score": 103,
+    "size": 206,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::.ctor",
+    "ea": "0x40b0",
+    "function_file": "functions/40b0_Microsoft.Crm.Asynchronous.JobManager_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "dataAccessFactory",
+      "config"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::.ctor",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 71,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::.cctor",
+    "ea": "0x3d10",
+    "function_file": "functions/3d10_Microsoft.Crm.Asynchronous.JobDataAccess_.cctor.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\r\nDeclare @tableResult table \r\n(\r\n\tOrganizationId uniqueidentifier not null,\r\n\tOperationType int not null,\r\n\tOperationStartTime datetime not null,\r\n\tOperationEndTime datetime not null\r\n)\r\n\r\nUpdate ScaleGroupOrganizationMaintenanceJobs\r\nSet \r\n\tHostId = null, \r\n\tState = @newState, \r\n\tLastResultCode = @errorCode, \r\n\tLastRunTime = @modifiedOn,\t\r\n\tModifiedOn = @modifiedOn,\t\r\n\tNextRunTime = @nextRunTime\r\n\t{0} {1}\r\noutput\r\n\tINSERTED.OrganizationId,\r\n\tINSERTED.OperationType,\r\n\tDELETED.ModifiedOn,\r\n\tINSE",
+      "\r\nDeclare @tableResult table \r\n(\r\n\tOrganizationId uniqueidentifier not null,\r\n\tOperationType int not null,\r\n\tOperationStartTime datetime not null,\r\n\tOperationEndTime datetime not null\r\n)\r\n\r\nUpdate ScaleGroupOrganizationMaintenanceJobs\r\nSet \r\n\tHostId = null, \r\n\tState = @newState, \r\n\tLastResultCode = @errorCode, \r\n\tLastResultData = @resultData,\r\n\tLastRunTime = @modifiedOn,\t\r\n\tModifiedOn = @modifiedOn,\t\r\n\tExecutionTime = @executionTime,\r\n\r\n\tNextRunTime = @nextRunTime\r\n\t{0} {1}\r\noutput\r\n\tINSERTED.Or"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::.cctor",
+    "prototype": "",
+    "rank_score": 100,
+    "size": 73,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::TryCheckIfIsOutsideOfBusinessHour",
+    "ea": "0x3b70",
+    "function_file": "functions/3b70_Microsoft.Crm.Asynchronous.JobDataAccess_TryCheckIfIsOutsideOfBusinessHour.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[DBUPDATES] Deployment settings for NonBusinessHourStartTimeOfDay ({0}) and/or NonBusinessHourEndTimeOfDay ({1}) have not been configured. Cannot determine if current time is outside of business hours."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::TryCheckIfIsOutsideOfBusinessHour",
+    "prototype": "",
+    "rank_score": 86,
+    "size": 217,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncHandlerHost::ExecuteAsync",
+    "ea": "0x480",
+    "function_file": "functions/480_Microsoft.Crm.Asynchronous.AsyncHandlerHost_ExecuteAsync.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Can't find organization configuration with organiationId: {0} "
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncHandlerHost::ExecuteAsync",
+    "prototype": "",
+    "rank_score": 77,
+    "size": 180,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::ExecuteJob",
+    "ea": "0x64c0",
+    "function_file": "functions/64c0_Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor_ExecuteJob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Exception while calling UpdateJobToCompleted for job id : {0}, ex: {1}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::ExecuteJob",
+    "prototype": "",
+    "rank_score": 76,
+    "size": 289,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncHandlerHost::RetrieveOrganizationConfiguration",
+    "ea": "0x620",
+    "function_file": "functions/620_Microsoft.Crm.Asynchronous.AsyncHandlerHost_RetrieveOrganizationConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Organization {0} under Scalegroup={1} was not found in cache."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncHandlerHost::RetrieveOrganizationConfiguration",
+    "prototype": "",
+    "rank_score": 74,
+    "size": 77,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::OrgDatabaseJobTimeoutTimerEvent",
+    "ea": "0x45d0",
+    "function_file": "functions/45d0_Microsoft.Crm.Asynchronous.JobManager_OrgDatabaseJobTimeoutTimerEvent.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[JOBTIMEOUT] Updated NextRunTime of job {0} for org {1} to {2}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::OrgDatabaseJobTimeoutTimerEvent",
+    "prototype": "",
+    "rank_score": 73,
+    "size": 274,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceDisplayNameRoot",
+    "ea": "0x1da0",
+    "function_file": "functions/1da0_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceDisplayNameRoot.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Microsoft CRM Asynchronous Processing Service"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceDisplayNameRoot",
+    "prototype": "",
+    "rank_score": 72,
+    "size": 56,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::ShouldScheduleOrgDBUpdates",
+    "ea": "0x42e0",
+    "function_file": "functions/42e0_Microsoft.Crm.Asynchronous.JobManager_ShouldScheduleOrgDBUpdates.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to identify if Org DB updates should be scheduled. Defaulting to true."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::ShouldScheduleOrgDBUpdates",
+    "prototype": "",
+    "rank_score": 72,
+    "size": 52,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::EndAsynchronousEventProcessing",
+    "ea": "0x4360",
+    "function_file": "functions/4360_Microsoft.Crm.Asynchronous.JobManager_EndAsynchronousEventProcessing.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[JOBCOMPLETED] Updated NextRunTime of job {0} for org {1} to {2}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::EndAsynchronousEventProcessing",
+    "prototype": "",
+    "rank_score": 71,
+    "size": 264,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateStateAndStatus",
+    "ea": "0x2400",
+    "function_file": "functions/2400_Microsoft.Crm.Asynchronous.JobDataAccess_UpdateStateAndStatus.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "{0}: Updated {1} jobs."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateStateAndStatus",
+    "prototype": "",
+    "rank_score": 70,
+    "size": 911,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.OperationBehaviors.FaultToleranceBehavior::ApplyBehavior",
+    "ea": "0x80",
+    "function_file": "functions/80_Microsoft.Crm.OperationBehaviors.FaultToleranceBehavior_ApplyBehavior.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "All service operations running inside a fault tolerant service must implement IMonitoredOperation"
+    ],
+    "name": "Microsoft.Crm.OperationBehaviors.FaultToleranceBehavior::ApplyBehavior",
+    "prototype": "",
+    "rank_score": 70,
+    "size": 38,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateJobTargetServer",
+    "ea": "0x22a0",
+    "function_file": "functions/22a0_Microsoft.Crm.Asynchronous.JobDataAccess_UpdateJobTargetServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\r\n\t\t\t\t\tUPDATE ScaleGroupOrganizationMaintenanceJobs\r\n\t\t\t\t\tSET \r\n\t\t\t\t\t\tTargetServer = @serverName,\r\n\t\t\t\t\t\tModifiedOn = @modifiedOn\t\r\n\t\t\t\t\tOUTPUT\r\n\t\t\t\t\t\tINSERTED.OrganizationId,\r\n\t\t\t\t\t\tINSERTED.OperationType,\r\n\t\t\t\t\t\tINSERTED.TargetServer\r\n\t\t\t\t\tWHERE \r\n\t\t\t\t\t\t OrganizationId = @orgId\r\n\r\n\t\t\t\t"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateJobTargetServer",
+    "prototype": "",
+    "rank_score": 68,
+    "size": 189,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::SelectOutgoingActivities",
+    "ea": "0x7520",
+    "function_file": "functions/7520_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess_SelectOutgoingActivities.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UPDATE ActivityPointerBase\r\n\t\tSET\r\n\t\t\tDeliveryAttempts = COALESCE(DeliveryAttempts, 0) + 1, \r\n\t\t\tDeliveryLastAttemptedOn = @dateTimeNow,\r\n\t\t\tPostponeActivityProcessingUntil = @sendingDelayAllowed\r\n\t\tOUTPUT\r\n\t\t\tINSERTED.ActivityId,\r\n\t\t\tINSERTED.ActivityTypeCode,\r\n\t\t\tINSERTED.Subject,\r\n\t\t\tINSERTED.Description,\r\n\t\t\tINSERTED.PriorityCode,\r\n\t\t\tINSERTED.EmailAttachmentCount,\r\n\t\t\tINSERTED.SenderMailboxId,\r\n\t\t\tINSERTED.DeliveryAttempts,\r\n\t\t\tINSERTED.ConversationIndex,\r\n\t\t\tINSERTED.MessageId,\r\n\t\t\tINSERTE"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::SelectOutgoingActivities",
+    "prototype": "",
+    "rank_score": 67,
+    "size": 360,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::LogLongProcessingMailboxes",
+    "ea": "0x82e0",
+    "function_file": "functions/82e0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_LogLongProcessingMailboxes.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SELECT MailboxId , ProcessingLastAttemptedOn, IsServiceAccount\r\n\t\t\t\t\t\t\t\t\t\t\t\tFROM MailboxBase WITH (NOLOCK) \r\n\t\t\t\t\t\t\t\t\t\t\t\tWHERE\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tProcessingStateCode = @lockedState\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tand HostId = @hostId"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::LogLongProcessingMailboxes",
+    "prototype": "",
+    "rank_score": 67,
+    "size": 299,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncHandlerHost::CreateCommand",
+    "ea": "0x540",
+    "function_file": "functions/540_Microsoft.Crm.Asynchronous.AsyncHandlerHost_CreateCommand.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Created AsyncEventHandlerCommand type: {0} for Operation type: {1}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncHandlerHost::CreateCommand",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 182,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::StartComponents",
+    "ea": "0x1650",
+    "function_file": "functions/1650_Microsoft.Crm.Asynchronous.AsyncService_StartComponents.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Exception while starting components: {0} - {1}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::StartComponents",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 80,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::StopComponents",
+    "ea": "0x16a0",
+    "function_file": "functions/16a0_Microsoft.Crm.Asynchronous.AsyncService_StopComponents.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Async service is stopping processing of events."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::StopComponents",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 115,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::GetConfigValue",
+    "ea": "0x3fc0",
+    "function_file": "functions/3fc0_Microsoft.Crm.Asynchronous.JobDataAccessConstants_GetConfigValue.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Reading setting {0}, returning {1}. Site Value: {2}, SG Value {3}, Default Value {4}, Min Value {5}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::GetConfigValue",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 200,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessUtility::GetOrganizationsAvailableForMaintenance",
+    "ea": "0x3e10",
+    "function_file": "functions/3e10_Microsoft.Crm.Asynchronous.JobDataAccessUtility_GetOrganizationsAvailableForMaintenance.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[DBUPDATES][PRE-SELECT] Found {0} enabled orgs in SG {1} in DC {2}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessUtility::GetOrganizationsAvailableForMaintenance",
+    "prototype": "",
+    "rank_score": 66,
+    "size": 214,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::KeepAlive",
+    "ea": "0x7f10",
+    "function_file": "functions/7f10_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_KeepAlive.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "update MailboxBase WITH  (READPAST,READCOMMITTEDLOCK,UPDLOCK)\r\n\t\t\t\t\tset\r\n\t\t\t\t\t\tModifiedOn = @modifiedOn\r\n\t\t\t\t\twhere \r\n\t\t\t\t\t\t\tProcessingStateCode = @lockedState\r\n\t\t\t\t\t\t\tand HostId = @hostId"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::KeepAlive",
+    "prototype": "",
+    "rank_score": 65,
+    "size": 217,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::SelectMailboxes",
+    "ea": "0x97f0",
+    "function_file": "functions/97f0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug_SelectMailboxes.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UPDATE Mailboxbase WITH (READPAST, READCOMMITTEDLOCK, UPDLOCK)\r\n\t\t\t\tSET \r\n\t\t\t\t\tHostId = @hostId,\r\n\t\t\t\t\tModifiedOn = @dateTimeNow,\r\n\t\t\t\t\tProcessingLastAttemptedOn = @dateTimeNow,"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::SelectMailboxes",
+    "prototype": "",
+    "rank_score": 65,
+    "size": 443,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::ShouldSkipProcessingJob",
+    "ea": "0x33a0",
+    "function_file": "functions/33a0_Microsoft.Crm.Asynchronous.JobDataAccess_ShouldSkipProcessingJob.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[OrgDBUpdateThrottling] OrgDBUpdatesRunning = {0}, MaxConcurrentOrgDBUpdateJobsPerAsyncServer = {1}. "
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::ShouldSkipProcessingJob",
+    "prototype": "",
+    "rank_score": 65,
+    "size": 108,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::KeepAlive",
+    "ea": "0x96d0",
+    "function_file": "functions/96d0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug_KeepAlive.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "update MailboxBase WITH  (READPAST,READCOMMITTEDLOCK,UPDLOCK)\r\n\t\t\t\t\t\t\t\tset\r\n\t\t\t\t\t\t\t\t\tModifiedOn = @modifiedOn\r\n\t\t\t\t\t\t\t\twhere \r\n\t\t\t\t\t\t\t\t\tHostId = @hostId and MailboxId = @mailboxId"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::KeepAlive",
+    "prototype": "",
+    "rank_score": 64,
+    "size": 258,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::UnlockMailboxes",
+    "ea": "0x99b0",
+    "function_file": "functions/99b0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug_UnlockMailboxes.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UPDATE Mailboxbase\r\n\t\t\t\t\tSET \r\n\t\t\t\t\t\tHostId = NULL, ProcessingStateCode = @waitingState, PostponeMailboxProcessingUntil = @utcNow\r\n\t\t\t\t\tWHERE \r\n\t\t\t\t\t\tHostId = @hostId and MailboxId = @mailboxId"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::UnlockMailboxes",
+    "prototype": "",
+    "rank_score": 64,
+    "size": 258,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_MaxConcurrentOrgDBUpdateJobsPerAsyncServer",
+    "ea": "0x3fa0",
+    "function_file": "functions/3fa0_Microsoft.Crm.Asynchronous.JobDataAccessConstants_get_MaxConcurrentOrgDBUpdateJobsPerAsyncServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MaxConcurrentOrgDBUpdateJobsPerAsyncServer"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_MaxConcurrentOrgDBUpdateJobsPerAsyncServer",
+    "prototype": "",
+    "rank_score": 64,
+    "size": 17,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "OrgDataAccess::RetrieveOrgSettingsLightFromDB",
+    "ea": "0xa930",
+    "function_file": "functions/a930_OrgDataAccess_RetrieveOrgSettingsLightFromDB.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Select Server Side Sync related Org Settings From OrgDatabase"
+    ],
+    "name": "OrgDataAccess::RetrieveOrgSettingsLightFromDB",
+    "prototype": "",
+    "rank_score": 64,
+    "size": 88,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::Main",
+    "ea": "0xd80",
+    "function_file": "functions/d80_Microsoft.Crm.Asynchronous.AsyncService_Main.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Exception while initializing the async service: {0} - {1}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::Main",
+    "prototype": "",
+    "rank_score": 63,
+    "size": 118,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::WaitForStartupSequenceComplete",
+    "ea": "0x1270",
+    "function_file": "functions/1270_Microsoft.Crm.Asynchronous.AsyncService_WaitForStartupSequenceComplete.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Service did not finish startup sequence in expected time"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::WaitForStartupSequenceComplete",
+    "prototype": "",
+    "rank_score": 63,
+    "size": 61,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::UnlockMailboxes",
+    "ea": "0x9550",
+    "function_file": "functions/9550_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_UnlockMailboxes.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UPDATE Mailboxbase\r\n\t\t\t\t\tSET \r\n\t\t\t\t\t\tHostId = NULL, ProcessingStateCode = @waitingState, PostponeMailboxProcessingUntil = @utcNow\r\n\t\t\t\t\r\n\t\t\t\t\tWHERE \r\n\t\t\t\t\t\tHostId = @hostId"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::UnlockMailboxes",
+    "prototype": "",
+    "rank_score": 63,
+    "size": 203,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::ShouldThrottleOrgDBUpdates",
+    "ea": "0x42a0",
+    "function_file": "functions/42a0_Microsoft.Crm.Asynchronous.JobManager_ShouldThrottleOrgDBUpdates.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to identify if Org DB updates should be throttled. Defaulting to true."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::ShouldThrottleOrgDBUpdates",
+    "prototype": "",
+    "rank_score": 63,
+    "size": 52,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJob::ReleaseHostLock",
+    "ea": "0x6c30",
+    "function_file": "functions/6c30_Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJob_ReleaseHostLock.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\ScalegroupMaintenanceJobs\\ScalegroupMaintenanceJob.cs"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJob::ReleaseHostLock",
+    "prototype": "",
+    "rank_score": 63,
+    "size": 131,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::ReleaseStuckJobs",
+    "ea": "0x66d0",
+    "function_file": "functions/66d0_Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor_ReleaseStuckJobs.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "d:\\dbs\\sh\\dccm2\\1101_190851\\cmd\\34\\src\\Core\\ObjectModel\\Async\\AsyncService\\ScalegroupMaintenanceJobsMonitor.cs"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::ReleaseStuckJobs",
+    "prototype": "",
+    "rank_score": 63,
+    "size": 147,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::OnOrganizationChanged",
+    "ea": "0x5bd0",
+    "function_file": "functions/5bd0_Microsoft.Crm.Asynchronous.WorkloadThrottler_OnOrganizationChanged.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Organization list of WorkloadThrottler {0} is updated. It is throttling work for {1} organizations."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::OnOrganizationChanged",
+    "prototype": "",
+    "rank_score": 63,
+    "size": 80,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::<InitializeComponents>b__38_0",
+    "ea": "0x1950",
+    "function_file": "functions/1950_Microsoft.Crm.Asynchronous.AsyncService_InitializeComponents_b_38_0.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Starting Async service {0} monitoring {1} active organizations out of {2} total."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::<InitializeComponents>b__38_0",
+    "prototype": "",
+    "rank_score": 62,
+    "size": 128,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::OnPause",
+    "ea": "0x1210",
+    "function_file": "functions/1210_Microsoft.Crm.Asynchronous.AsyncService_OnPause.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Pausing service"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::OnPause",
+    "prototype": "",
+    "rank_score": 62,
+    "size": 44,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncEventFactory::CreateFromAsyncOperation",
+    "ea": "0x6a0",
+    "function_file": "functions/6a0_Microsoft.Crm.Asynchronous.AsyncEventFactory_CreateFromAsyncOperation.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "organizationConfiguration"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncEventFactory::CreateFromAsyncOperation",
+    "prototype": "",
+    "rank_score": 61,
+    "size": 110,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::OnContinue",
+    "ea": "0x1240",
+    "function_file": "functions/1240_Microsoft.Crm.Asynchronous.AsyncService_OnContinue.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Resuming service"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::OnContinue",
+    "prototype": "",
+    "rank_score": 61,
+    "size": 38,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::StartLocatorCacheSync",
+    "ea": "0xfe0",
+    "function_file": "functions/fe0_Microsoft.Crm.Asynchronous.AsyncService_StartLocatorCacheSync.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "AsyncServiceLocatorCacheSync"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::StartLocatorCacheSync",
+    "prototype": "",
+    "rank_score": 61,
+    "size": 92,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::RetrieveAndQueueJobs",
+    "ea": "0x4480",
+    "function_file": "functions/4480_Microsoft.Crm.Asynchronous.JobManager_RetrieveAndQueueJobs.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "[JOBPROCESSING] Completed RetrieveAndQueueJobs for cycle time {0}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::RetrieveAndQueueJobs",
+    "prototype": "",
+    "rank_score": 61,
+    "size": 283,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::LogHealthofMailboxes",
+    "ea": "0x8540",
+    "function_file": "functions/8540_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_LogHealthofMailboxes.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SELECT MailboxId, LastSyncErrorCode, LastSyncErrorOccurredOn, LastSyncError, IncomingEmailDeliveryMethod, ACTDeliveryMethod, OutgoingEmailDeliveryMethod,\r\n\t\t\t\t\t\t\t\t\tEnabledForACT, EnabledForIncomingEmail, EnabledForOutgoingEmail, ACTStatus, IncomingEmailStatus, OutgoingEmailStatus, LastSuccessfulSyncCompletedOn\r\n\t\t\t\t\t\t\t\tFROM MailboxBase WITH (NOLOCK) \r\n\t\t\t\t\t\t\t\tWHERE\r\n\t\t\t\t\t\t\t\t\tProcessingStateCode = @lockedState\r\n\t\t\t\t\t\t\t\t\tOR\r\n\t\t\t\t\t\t\t\t\tPostponeMailboxProcessingUntil < @maxDateTime\r\n\t\t\t\t\t\t\t\tORDER BY "
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::LogHealthofMailboxes",
+    "prototype": "",
+    "rank_score": 60,
+    "size": 753,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "OrgDataAccess::get_Name",
+    "ea": "0xa9f0",
+    "function_file": "functions/a9f0_OrgDataAccess_get_Name.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "OrgServerSideSyncSettingsDataAccess"
+    ],
+    "name": "OrgDataAccess::get_Name",
+    "prototype": "",
+    "rank_score": 60,
+    "size": 6,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::GetActivity",
+    "ea": "0x7690",
+    "function_file": "functions/7690_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess_GetActivity.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "deliveryattempts"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::GetActivity",
+    "prototype": "",
+    "rank_score": 57,
+    "size": 709,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "<>c__DisplayClass48_0::<OnUnhandledException>b__0",
+    "ea": "0xa620",
+    "function_file": "functions/a620_c_DisplayClass48_0_OnUnhandledException_b_0.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Exception while executing async service: {0} - {1}"
+    ],
+    "name": "<>c__DisplayClass48_0::<OnUnhandledException>b__0",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 156,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::PrepareInstallConfiguration",
+    "ea": "0x1a80",
+    "function_file": "functions/1a80_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_PrepareInstallConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::PrepareInstallConfiguration",
+    "prototype": "",
+    "rank_score": 54,
+    "size": 269,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::LogUnpickedMailboxes",
+    "ea": "0x8490",
+    "function_file": "functions/8490_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_LogUnpickedMailboxes.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SELECT MailboxId , ProcessingLastAttemptedOn, PostponeMailboxProcessingUntil\r\n\t\t\t\t\t\tFROM MailboxBase WITH (NOLOCK) \r\n\t\t\t\t\t\tWHERE\r\n\t\t\t\t\t\t\tProcessingStateCode = @waitingState\r\n\t\t\t\t\t\t\tAND\r\n\t\t\t\t\t\t\tPostponeMailboxProcessingUntil <= @dateTime"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::LogUnpickedMailboxes",
+    "prototype": "",
+    "rank_score": 53,
+    "size": 173,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::CreateDefaultJobsOnFirstRun",
+    "ea": "0x6380",
+    "function_file": "functions/6380_Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor_CreateDefaultJobsOnFirstRun.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Exception while calling CreateDefaultJobsOnFirstRun : {0}"
+    ],
+    "name": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::CreateDefaultJobsOnFirstRun",
+    "prototype": "",
+    "rank_score": 53,
+    "size": 98,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.QueueManagerExecutionEngine::StopOperation",
+    "ea": "0x4f40",
+    "function_file": "functions/4f40_Microsoft.Crm.Asynchronous.QueueManagerExecutionEngine_StopOperation.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Completed waiting on shutdown events with signal: {1}."
+    ],
+    "name": "Microsoft.Crm.Asynchronous.QueueManagerExecutionEngine::StopOperation",
+    "prototype": "",
+    "rank_score": 52,
+    "size": 170,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "<>c::<.ctor>b__1_1",
+    "ea": "0xa580",
+    "function_file": "functions/a580_c_.ctor_b_1_1.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Handling an unobserved TPL Task exception: {0} to prevent Async Service from crashing"
+    ],
+    "name": "<>c::<.ctor>b__1_1",
+    "prototype": "",
+    "rank_score": 50,
+    "size": 30,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "<>c::<LogHealthofMailboxes>b__13_6",
+    "ea": "0xb790",
+    "function_file": "functions/b790_c_LogHealthofMailboxes_b_13_6.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "lastsuccessfulsynccompletedon"
+    ],
+    "name": "<>c::<LogHealthofMailboxes>b__13_6",
+    "prototype": "",
+    "rank_score": 50,
+    "size": 48,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::LogDBUpdateScheduledTelemetry",
+    "ea": "0x4340",
+    "function_file": "functions/4340_Microsoft.Crm.Asynchronous.JobManager_LogDBUpdateScheduledTelemetry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::LogDBUpdateScheduledTelemetry",
+    "prototype": "",
+    "rank_score": 43,
+    "size": 20,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::PrepareUninstallConfiguration",
+    "ea": "0x1b90",
+    "function_file": "functions/1b90_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_PrepareUninstallConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::PrepareUninstallConfiguration",
+    "prototype": "",
+    "rank_score": 42,
+    "size": 18,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::UpdateQueueSettings",
+    "ea": "0x4cd0",
+    "function_file": "functions/4cd0_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_UpdateQueueSettings.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::UpdateQueueSettings",
+    "prototype": "",
+    "rank_score": 42,
+    "size": 78,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::UpdateOrgSettingsLight",
+    "ea": "0x4cc0",
+    "function_file": "functions/4cc0_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_UpdateOrgSettingsLight.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::UpdateOrgSettingsLight",
+    "prototype": "",
+    "rank_score": 41,
+    "size": 12,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceName",
+    "ea": "0x1ce0",
+    "function_file": "functions/1ce0_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceName",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 49,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::ConfigureWebApp",
+    "ea": "0x1090",
+    "function_file": "functions/1090_Microsoft.Crm.Asynchronous.AsyncService_ConfigureWebApp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::ConfigureWebApp",
+    "prototype": "",
+    "rank_score": 35,
+    "size": 132,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::IsMailboxQueueEnabled",
+    "ea": "0x4e40",
+    "function_file": "functions/4e40_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_IsMailboxQueueEnabled.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::IsMailboxQueueEnabled",
+    "prototype": "",
+    "rank_score": 35,
+    "size": 52,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_Configuration",
+    "ea": "0xc70",
+    "function_file": "functions/c70_Microsoft.Crm.Asynchronous.AsyncService_get_Configuration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_Configuration",
+    "prototype": "",
+    "rank_score": 34,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceDisplayName",
+    "ea": "0x1d20",
+    "function_file": "functions/1d20_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceDisplayName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceDisplayName",
+    "prototype": "",
+    "rank_score": 34,
+    "size": 54,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::GetEmailConnectionChannel",
+    "ea": "0x4d20",
+    "function_file": "functions/4d20_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_GetEmailConnectionChannel.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::GetEmailConnectionChannel",
+    "prototype": "",
+    "rank_score": 34,
+    "size": 52,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::ReadTimeSpanParameter",
+    "ea": "0x1e60",
+    "function_file": "functions/1e60_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_ReadTimeSpanParameter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::ReadTimeSpanParameter",
+    "prototype": "",
+    "rank_score": 33,
+    "size": 48,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::IsMailboxForcedUnlockingEnabled",
+    "ea": "0x4da0",
+    "function_file": "functions/4da0_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_IsMailboxForcedUnlockingEnabled.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::IsMailboxForcedUnlockingEnabled",
+    "prototype": "",
+    "rank_score": 33,
+    "size": 95,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::OnOrganizationChanged",
+    "ea": "0x4c40",
+    "function_file": "functions/4c40_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_OnOrganizationChanged.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::OnOrganizationChanged",
+    "prototype": "",
+    "rank_score": 33,
+    "size": 81,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_ErrorHandler",
+    "ea": "0xcb0",
+    "function_file": "functions/cb0_Microsoft.Crm.Asynchronous.AsyncService_get_ErrorHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_ErrorHandler",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 7,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceConnectionRetryPolicy::.ctor",
+    "ea": "0x1ea0",
+    "function_file": "functions/1ea0_Microsoft.Crm.Asynchronous.AsyncServiceConnectionRetryPolicy_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceConnectionRetryPolicy::.ctor",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 28,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::Install",
+    "ea": "0x1a40",
+    "function_file": "functions/1a40_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_Install.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::Install",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 30,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceAccount",
+    "ea": "0x1c20",
+    "function_file": "functions/1c20_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceAccount.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceAccount",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 58,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceDescription",
+    "ea": "0x1de0",
+    "function_file": "functions/1de0_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceDescription.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceDescription",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 56,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceFailRestartDelay",
+    "ea": "0x1cc0",
+    "function_file": "functions/1cc0_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceFailRestartDelay.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceFailRestartDelay",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 26,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceFailureCountResetTime",
+    "ea": "0x1ca0",
+    "function_file": "functions/1ca0_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceFailureCountResetTime.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceFailureCountResetTime",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 26,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceSuffix",
+    "ea": "0x1d60",
+    "function_file": "functions/1d60_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceSuffix.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceSuffix",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 22,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::IsActivityQueueEnabled",
+    "ea": "0x4e00",
+    "function_file": "functions/4e00_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_IsActivityQueueEnabled.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::IsActivityQueueEnabled",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 52,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::IsMailboxInactiveBackOffEnabled",
+    "ea": "0x4d60",
+    "function_file": "functions/4d60_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_IsMailboxInactiveBackOffEnabled.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::IsMailboxInactiveBackOffEnabled",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 52,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::RemoveOrgFromOrgSettingsLightCache",
+    "ea": "0x4ca0",
+    "function_file": "functions/4ca0_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_RemoveOrgFromOrgSettingsLightCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::RemoveOrgFromOrgSettingsLightCache",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 15,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::RemoveOrgFromQueueSettingsCache",
+    "ea": "0x4cb0",
+    "function_file": "functions/4cb0_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_RemoveOrgFromQueueSettingsCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::RemoveOrgFromQueueSettingsCache",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 13,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::RegisterAsyncHandler",
+    "ea": "0xcd0",
+    "function_file": "functions/cd0_Microsoft.Crm.Asynchronous.AsyncService_RegisterAsyncHandler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::RegisterAsyncHandler",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 79,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::Uninstall",
+    "ea": "0x1a60",
+    "function_file": "functions/1a60_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_Uninstall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::Uninstall",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 24,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceAccountName",
+    "ea": "0x1c60",
+    "function_file": "functions/1c60_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceAccountName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceAccountName",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 22,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceAccountPassword",
+    "ea": "0x1c80",
+    "function_file": "functions/1c80_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_ServiceAccountPassword.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_ServiceAccountPassword",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 22,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_SqlServerName",
+    "ea": "0x1d80",
+    "function_file": "functions/1d80_Microsoft.Crm.Asynchronous.AsyncServiceInstaller_get_SqlServerName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::get_SqlServerName",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 22,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::Initialize",
+    "ea": "0x4be0",
+    "function_file": "functions/4be0_Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings_Initialize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OrgServerSideSyncSettings::Initialize",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 86,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 11,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::get_Configuration",
+    "ea": "0x5d10",
+    "function_file": "functions/5d10_Microsoft.Crm.Asynchronous.WorkloadThrottler_get_Configuration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::get_Configuration",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_Context",
+    "ea": "0xc40",
+    "function_file": "functions/c40_Microsoft.Crm.Asynchronous.AsyncService_get_Context.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_Context",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_PluginTypeCache",
+    "ea": "0xc90",
+    "function_file": "functions/c90_Microsoft.Crm.Asynchronous.AsyncService_get_PluginTypeCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_PluginTypeCache",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 7,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_WorkflowConfiguration",
+    "ea": "0xc80",
+    "function_file": "functions/c80_Microsoft.Crm.Asynchronous.AsyncService_get_WorkflowConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_WorkflowConfiguration",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceConnectionRetryPolicy::Microsoft.Crm.Core.DataServices.Connection.IConnectionRetryPolicy.Interval",
+    "ea": "0x1ed0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceConnectionRetryPolicy::Microsoft.Crm.Core.DataServices.Connection.IConnectionRetryPolicy.Interval",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 15,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceConnectionRetryPolicy::Microsoft.Crm.Core.DataServices.Connection.IConnectionRetryPolicy.RetryCount",
+    "ea": "0x1ee0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceConnectionRetryPolicy::Microsoft.Crm.Core.DataServices.Connection.IConnectionRetryPolicy.RetryCount",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 2,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceConnectionRetryPolicy::get_RetryStrategy",
+    "ea": "0x1ec0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceConnectionRetryPolicy::get_RetryStrategy",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::.ctor",
+    "ea": "0x19f0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceInstaller::.ctor",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 65,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::InitializeAsyncManagerGroup",
+    "ea": "0x14f0",
+    "function_file": "functions/14f0_Microsoft.Crm.Asynchronous.AsyncService_InitializeAsyncManagerGroup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::InitializeAsyncManagerGroup",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 115,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ConfigurationFactory::CreateConfigurationInternal",
+    "ea": "0x2010",
+    "function_file": "functions/2010_Microsoft.Crm.Asynchronous.ConfigurationFactory_CreateConfigurationInternal.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ConfigurationFactory::CreateConfigurationInternal",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 45,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::LogDBUpdateThrottlingTelemetry",
+    "ea": "0x4320",
+    "function_file": "functions/4320_Microsoft.Crm.Asynchronous.JobManager_LogDBUpdateThrottlingTelemetry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::LogDBUpdateThrottlingTelemetry",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 20,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncHandlerFactory::CreateHandlerGroups",
+    "ea": "0x860",
+    "function_file": "functions/860_Microsoft.Crm.Asynchronous.AsyncHandlerFactory_CreateHandlerGroups.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncHandlerFactory::CreateHandlerGroups",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 171,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::CreatePerformanceCounters",
+    "ea": "0x1570",
+    "function_file": "functions/1570_Microsoft.Crm.Asynchronous.AsyncService_CreatePerformanceCounters.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::CreatePerformanceCounters",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 165,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::WriteEventLog",
+    "ea": "0x1830",
+    "function_file": "functions/1830_Microsoft.Crm.Asynchronous.AsyncService_WriteEventLog.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::WriteEventLog",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 23,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::EnableOptionalFeatures",
+    "ea": "0x1040",
+    "function_file": "functions/1040_Microsoft.Crm.Asynchronous.AsyncService_EnableOptionalFeatures.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::EnableOptionalFeatures",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 70,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::OnUnhandledException",
+    "ea": "0x17a0",
+    "function_file": "functions/17a0_Microsoft.Crm.Asynchronous.AsyncService_OnUnhandledException.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::OnUnhandledException",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 142,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_HostName",
+    "ea": "0x1850",
+    "function_file": "functions/1850_Microsoft.Crm.Asynchronous.AsyncService_get_HostName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_HostName",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 6,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_OperationsFactory",
+    "ea": "0x1910",
+    "function_file": "functions/1910_Microsoft.Crm.Asynchronous.AsyncService_get_OperationsFactory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_OperationsFactory",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceBehaviorFactory::CreateBehaviors",
+    "ea": "0x51d0",
+    "function_file": "functions/51d0_Microsoft.Crm.Asynchronous.AsyncServiceBehaviorFactory_CreateBehaviors.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceBehaviorFactory::CreateBehaviors",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 26,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::get_FullConfiguration",
+    "ea": "0x9ec0",
+    "function_file": "functions/9ec0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager_get_FullConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::get_FullConfiguration",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::ExecuteInConfigApplock",
+    "ea": "0x69f0",
+    "function_file": "functions/69f0_Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor_ExecuteInConfigApplock.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::ExecuteInConfigApplock",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 68,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::.ctor",
+    "ea": "0xb70",
+    "function_file": "functions/b70_Microsoft.Crm.Asynchronous.AsyncService_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::.ctor",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 204,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::DetermineContext",
+    "ea": "0x1880",
+    "function_file": "functions/1880_Microsoft.Crm.Asynchronous.AsyncService_DetermineContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::DetermineContext",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 63,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::StartScalegroupMaintenanceJobsMonitor",
+    "ea": "0x1720",
+    "function_file": "functions/1720_Microsoft.Crm.Asynchronous.AsyncService_StartScalegroupMaintenanceJobsMonitor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::StartScalegroupMaintenanceJobsMonitor",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 30,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::StopScalegroupMaintenanceJobsMonitor",
+    "ea": "0x1740",
+    "function_file": "functions/1740_Microsoft.Crm.Asynchronous.AsyncService_StopScalegroupMaintenanceJobsMonitor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::StopScalegroupMaintenanceJobsMonitor",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 30,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_AsyncStartStopActivityId",
+    "ea": "0xc50",
+    "function_file": "functions/c50_Microsoft.Crm.Asynchronous.AsyncService_get_AsyncStartStopActivityId.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_AsyncStartStopActivityId",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::get_FullConfiguration",
+    "ea": "0x7b90",
+    "function_file": "functions/7b90_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager_get_FullConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::get_FullConfiguration",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncHandlerFactory::CreateHandlerGroup",
+    "ea": "0x910",
+    "function_file": "functions/910_Microsoft.Crm.Asynchronous.AsyncHandlerFactory_CreateHandlerGroup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncHandlerFactory::CreateHandlerGroup",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 47,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::InitializeServiceComponents",
+    "ea": "0x1200",
+    "function_file": "functions/1200_Microsoft.Crm.Asynchronous.AsyncService_InitializeServiceComponents.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::InitializeServiceComponents",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 13,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::StartKeyManager",
+    "ea": "0x1760",
+    "function_file": "functions/1760_Microsoft.Crm.Asynchronous.AsyncService_StartKeyManager.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::StartKeyManager",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::StopKeyManager",
+    "ea": "0x1780",
+    "function_file": "functions/1780_Microsoft.Crm.Asynchronous.AsyncService_StopKeyManager.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::StopKeyManager",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_CrmEventLog",
+    "ea": "0xca0",
+    "function_file": "functions/ca0_Microsoft.Crm.Asynchronous.AsyncService_get_CrmEventLog.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_CrmEventLog",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_DebugContext",
+    "ea": "0xc60",
+    "function_file": "functions/c60_Microsoft.Crm.Asynchronous.AsyncService_get_DebugContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_DebugContext",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_IsRunningInSafeMode",
+    "ea": "0x18d0",
+    "function_file": "functions/18d0_Microsoft.Crm.Asynchronous.AsyncService_get_IsRunningInSafeMode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_IsRunningInSafeMode",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 22,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_OperationCommandTypes",
+    "ea": "0x18f0",
+    "function_file": "functions/18f0_Microsoft.Crm.Asynchronous.AsyncService_get_OperationCommandTypes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_OperationCommandTypes",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_PerformanceCounters",
+    "ea": "0xcc0",
+    "function_file": "functions/cc0_Microsoft.Crm.Asynchronous.AsyncService_get_PerformanceCounters.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_PerformanceCounters",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::.ctor",
+    "ea": "0x2050",
+    "function_file": "functions/2050_Microsoft.Crm.Asynchronous.DynamicServerConfiguration_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::.ctor",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 67,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::InitializeFilters",
+    "ea": "0x20d0",
+    "function_file": "functions/20d0_Microsoft.Crm.Asynchronous.DynamicServerConfiguration_InitializeFilters.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::InitializeFilters",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 18,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.IJobDataAccess::UpdateStateAndStatus",
+    "ea": "0x2140",
+    "function_file": "functions/2140_Microsoft.Crm.Asynchronous.IJobDataAccess_UpdateStateAndStatus.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.IJobDataAccess::UpdateStateAndStatus",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 1,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::RetrieveJobs_0",
+    "ea": "0x2dc0",
+    "function_file": "functions/2dc0_Microsoft.Crm.Asynchronous.JobDataAccess_RetrieveJobs_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::RetrieveJobs_0",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 425,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateLastResultData",
+    "ea": "0x2360",
+    "function_file": "functions/2360_Microsoft.Crm.Asynchronous.JobDataAccess_UpdateLastResultData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::UpdateLastResultData",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 77,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::get_Configuration",
+    "ea": "0x4a50",
+    "function_file": "functions/4a50_Microsoft.Crm.Asynchronous.JobManager_get_Configuration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::get_Configuration",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncManagerFactory::CreateAsyncManagers",
+    "ea": "0xe0",
+    "function_file": "functions/e0_Microsoft.Crm.Asynchronous.AsyncManagerFactory_CreateAsyncManagers.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncManagerFactory::CreateAsyncManagers",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 156,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::CreateEventLog",
+    "ea": "0x1860",
+    "function_file": "functions/1860_Microsoft.Crm.Asynchronous.AsyncService_CreateEventLog.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::CreateEventLog",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 18,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::OnAsyncOperationStatusChanged",
+    "ea": "0x1620",
+    "function_file": "functions/1620_Microsoft.Crm.Asynchronous.AsyncService_OnAsyncOperationStatusChanged.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::OnAsyncOperationStatusChanged",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 45,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::OnStop",
+    "ea": "0x12b0",
+    "function_file": "functions/12b0_Microsoft.Crm.Asynchronous.AsyncService_OnStop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::OnStop",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::add_AsyncOperationStatusChanged",
+    "ea": "0xd20",
+    "function_file": "functions/d20_Microsoft.Crm.Asynchronous.AsyncService_add_AsyncOperationStatusChanged.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::add_AsyncOperationStatusChanged",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 41,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::get_ServiceBehavior",
+    "ea": "0x18c0",
+    "function_file": "functions/18c0_Microsoft.Crm.Asynchronous.AsyncService_get_ServiceBehavior.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::get_ServiceBehavior",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::remove_AsyncOperationStatusChanged",
+    "ea": "0xd50",
+    "function_file": "functions/d50_Microsoft.Crm.Asynchronous.AsyncService_remove_AsyncOperationStatusChanged.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::remove_AsyncOperationStatusChanged",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 41,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::set_OperationCommandTypes",
+    "ea": "0x1900",
+    "function_file": "functions/1900_Microsoft.Crm.Asynchronous.AsyncService_set_OperationCommandTypes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::set_OperationCommandTypes",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 8,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::set_OperationsFactory",
+    "ea": "0x1920",
+    "function_file": "functions/1920_Microsoft.Crm.Asynchronous.AsyncService_set_OperationsFactory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::set_OperationsFactory",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 8,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceTransientErrorDetectionStrategy::.ctor",
+    "ea": "0x1f50",
+    "function_file": "functions/1f50_Microsoft.Crm.Asynchronous.AsyncServiceTransientErrorDetectionStrategy_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceTransientErrorDetectionStrategy::.ctor",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceTransientErrorDetectionStrategy::IsTransient",
+    "ea": "0x1f00",
+    "function_file": "functions/1f00_Microsoft.Crm.Asynchronous.AsyncServiceTransientErrorDetectionStrategy_IsTransient.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceTransientErrorDetectionStrategy::IsTransient",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 65,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.Bridges.CrmRegistry::.ctor",
+    "ea": "0xa3f0",
+    "function_file": "functions/a3f0_Microsoft.Crm.Asynchronous.Bridges.CrmRegistry_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.Bridges.CrmRegistry::.ctor",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.ConfigurationFactory::.cctor",
+    "ea": "0x1f90",
+    "function_file": "functions/1f90_Microsoft.Crm.Asynchronous.ConfigurationFactory_.cctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ConfigurationFactory::.cctor",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ConfigurationFactory::get_IsDynamicAsync",
+    "ea": "0x1fa0",
+    "function_file": "functions/1fa0_Microsoft.Crm.Asynchronous.ConfigurationFactory_get_IsDynamicAsync.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ConfigurationFactory::get_IsDynamicAsync",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 6,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ConfigurationFactory::set_IsDynamicAsync",
+    "ea": "0x1fb0",
+    "function_file": "functions/1fb0_Microsoft.Crm.Asynchronous.ConfigurationFactory_set_IsDynamicAsync.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ConfigurationFactory::set_IsDynamicAsync",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::set_FullConfiguration",
+    "ea": "0x7ba0",
+    "function_file": "functions/7ba0_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager_set_FullConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::set_FullConfiguration",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 8,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::set_FullConfiguration",
+    "ea": "0x9ed0",
+    "function_file": "functions/9ed0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager_set_FullConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::set_FullConfiguration",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 8,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobsConfiguration::get_JobExpiredThresholdInSeconds",
+    "ea": "0x6f50",
+    "function_file": "functions/6f50_Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobsConfiguration_get_JobExpiredThresholdInSeconds.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobsConfiguration::get_JobExpiredThresholdInSeconds",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 21,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobsConfiguration::get_PollIntervalInSeconds",
+    "ea": "0x6f30",
+    "function_file": "functions/6f30_Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobsConfiguration_get_PollIntervalInSeconds.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobsConfiguration::get_PollIntervalInSeconds",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 18,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::set_Configuration",
+    "ea": "0x5d20",
+    "function_file": "functions/5d20_Microsoft.Crm.Asynchronous.WorkloadThrottler_set_Configuration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::set_Configuration",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 8,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncHandlerHost::CreateCommand_0",
+    "ea": "0x600",
+    "function_file": "functions/600_Microsoft.Crm.Asynchronous.AsyncHandlerHost_CreateCommand_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncHandlerHost::CreateCommand_0",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 31,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::Microsoft.Crm.Asynchronous.IAsyncService.get_ServiceName",
+    "ea": "0x1940",
+    "function_file": "functions/1940_Microsoft.Crm.Asynchronous.AsyncService_Microsoft.Crm.Asynchronous.IAsyncService.get_ServiceName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::Microsoft.Crm.Asynchronous.IAsyncService.get_ServiceName",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::Microsoft.Crm.Asynchronous.Operations.IOperationsBasedService.get_ServiceName",
+    "ea": "0x1930",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::Microsoft.Crm.Asynchronous.Operations.IOperationsBasedService.get_ServiceName",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::OnShutdown",
+    "ea": "0x13c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::OnShutdown",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncService::OnStart",
+    "ea": "0xe00",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncService::OnStart",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 19,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncServiceTransientErrorDetectionStrategy::.cctor",
+    "ea": "0x1f60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncServiceTransientErrorDetectionStrategy::.cctor",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 27,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.Bridges.CrmLocatorService::.ctor",
+    "ea": "0xa4c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.Bridges.CrmLocatorService::.ctor",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.Bridges.CrmLocatorService::GetSiteSetting",
+    "ea": "0xa4b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.Bridges.CrmLocatorService::GetSiteSetting",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 13,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.Bridges.CrmRegistry::GetValue",
+    "ea": "0xa3e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.Bridges.CrmRegistry::GetValue",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::Dispose",
+    "ea": "0x20b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::Dispose",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 1,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::HandleNotification",
+    "ea": "0x20c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::HandleNotification",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 8,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::get_OrganizationsToProcess",
+    "ea": "0x20a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.DynamicServerConfiguration::get_OrganizationsToProcess",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 7,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.OperationBehaviors.IReliableService::get_IsRunningInSafeMode",
+    "ea": "0x10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.OperationBehaviors.IReliableService::get_IsRunningInSafeMode",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 1,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncJob::CreateAsyncEvent",
+    "ea": "0xa50",
+    "function_file": "functions/a50_Microsoft.Crm.Asynchronous.AsyncJob_CreateAsyncEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncJob::CreateAsyncEvent",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 9,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncJob::get_OrganizationId",
+    "ea": "0x9d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncJob::get_OrganizationId",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::SegregateErrors",
+    "ea": "0x8840",
+    "function_file": "functions/8840_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_SegregateErrors.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::SegregateErrors",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 793,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobData::CreateInstance",
+    "ea": "0x6dd0",
+    "function_file": "functions/6dd0_Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobData_CreateInstance.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobData::CreateInstance",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::get_DebugContext",
+    "ea": "0x9ee0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::get_DebugContext",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::GetPriorityTable",
+    "ea": "0x3930",
+    "function_file": "functions/3930_Microsoft.Crm.Asynchronous.JobDataAccess_GetPriorityTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::GetPriorityTable",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 573,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.QueueManagerExecutionEngine::ExecuteAndEnsureAtleastOneQueueManagerIsInitialized",
+    "ea": "0x5080",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.QueueManagerExecutionEngine::ExecuteAndEnsureAtleastOneQueueManagerIsInitialized",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 178,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::.ctor",
+    "ea": "0x53c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::.ctor",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 113,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncJob::get_OperationType",
+    "ea": "0xa10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncJob::get_OperationType",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::SelectEvents",
+    "ea": "0x7490",
+    "function_file": "functions/7490_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess_SelectEvents.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::SelectEvents",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::ExecuteSelect",
+    "ea": "0x2980",
+    "function_file": "functions/2980_Microsoft.Crm.Asynchronous.JobDataAccess_ExecuteSelect.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::ExecuteSelect",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 144,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectTimedOutJobInternal",
+    "ea": "0x2860",
+    "function_file": "functions/2860_Microsoft.Crm.Asynchronous.JobDataAccess_SelectTimedOutJobInternal.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectTimedOutJobInternal",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 224,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::get_IsScaleGroupEnabled",
+    "ea": "0x4a60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::get_IsScaleGroupEnabled",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::get_ScaleGroupId",
+    "ea": "0x4a10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::get_ScaleGroupId",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 60,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::InitializeOrganizations",
+    "ea": "0x5c20",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::InitializeOrganizations",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 206,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "Microsoft.Crm.Asynchronous.AsyncJob::get_JobId",
+    "ea": "0x9e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.AsyncJob::get_JobId",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::GetEvents",
+    "ea": "0x7960",
+    "function_file": "functions/7960_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess_GetEvents.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::GetEvents",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 164,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::GetAsyncEventIdOfLongProcessingMailbox",
+    "ea": "0x8410",
+    "function_file": "functions/8410_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_GetAsyncEventIdOfLongProcessingMailbox.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::GetAsyncEventIdOfLongProcessingMailbox",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 118,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::CreateTimers",
+    "ea": "0x9f40",
+    "function_file": "functions/9f40_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager_CreateTimers.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::CreateTimers",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 209,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::GetOperationsMapping",
+    "ea": "0xa020",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::GetOperationsMapping",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::GetInClause",
+    "ea": "0x3850",
+    "function_file": "functions/3850_Microsoft.Crm.Asynchronous.JobDataAccess_GetInClause.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::GetInClause",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 219,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectJobs",
+    "ea": "0x2210",
+    "function_file": "functions/2210_Microsoft.Crm.Asynchronous.JobDataAccess_SelectJobs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectJobs",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.OutstandingOperationAwareWorkloadThrottler::HasThroughputCapReached",
+    "ea": "0x6150",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OutstandingOperationAwareWorkloadThrottler::HasThroughputCapReached",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 85,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::get_Name",
+    "ea": "0x5cf0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::get_Name",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::SelectEvents",
+    "ea": "0x7e40",
+    "function_file": "functions/7e40_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_SelectEvents.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::SelectEvents",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 120,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::GetQueueDataAccess",
+    "ea": "0xa1a0",
+    "function_file": "functions/a1a0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager_GetQueueDataAccess.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::GetQueueDataAccess",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 24,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Asynchronous.IJobDataAccessFactory::CreateInstance",
+    "ea": "0x2180",
+    "function_file": "functions/2180_Microsoft.Crm.Asynchronous.IJobDataAccessFactory_CreateInstance.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.IJobDataAccessFactory::CreateInstance",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::CreateConnection_0",
+    "ea": "0x2950",
+    "function_file": "functions/2950_Microsoft.Crm.Asynchronous.JobDataAccess_CreateConnection_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::CreateConnection_0",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 28,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::GetNextJobInAppLock",
+    "ea": "0x2ae0",
+    "function_file": "functions/2ae0_Microsoft.Crm.Asynchronous.JobDataAccess_GetNextJobInAppLock.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::GetNextJobInAppLock",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 78,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::ReadJobParameters",
+    "ea": "0x23b0",
+    "function_file": "functions/23b0_Microsoft.Crm.Asynchronous.JobDataAccess_ReadJobParameters.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::ReadJobParameters",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 77,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::RetrieveSqlServerName",
+    "ea": "0x37f0",
+    "function_file": "functions/37f0_Microsoft.Crm.Asynchronous.JobDataAccess_RetrieveSqlServerName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::RetrieveSqlServerName",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 86,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::CreateTimers",
+    "ea": "0x4110",
+    "function_file": "functions/4110_Microsoft.Crm.Asynchronous.JobManager_CreateTimers.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::CreateTimers",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 274,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJob::get_JobId",
+    "ea": "0x6cc0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJob::get_JobId",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobsEventSource::WriteEventIfEnabled",
+    "ea": "0x7180",
+    "function_file": "functions/7180_Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobsEventSource_WriteEventIfEnabled.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobsEventSource::WriteEventIfEnabled",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::TraceWorkloadThrottlingInformation",
+    "ea": "0x58a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::TraceWorkloadThrottlingInformation",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 160,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottlerFactory::CreateWorkloadThrottler",
+    "ea": "0x7340",
+    "function_file": "functions/7340_Microsoft.Crm.Asynchronous.WorkloadThrottlerFactory_CreateWorkloadThrottler.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottlerFactory::CreateWorkloadThrottler",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 172,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::CompareEmailsByProfile",
+    "ea": "0x7a10",
+    "function_file": "functions/7a10_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess_CompareEmailsByProfile.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::CompareEmailsByProfile",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 290,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::GetEvents",
+    "ea": "0x7ec0",
+    "function_file": "functions/7ec0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_GetEvents.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::GetEvents",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 69,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.EventTimeTracker::get_EndTime",
+    "ea": "0x7200",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EventTimeTracker::get_EndTime",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.EventTimeTracker::get_StartTime",
+    "ea": "0x71e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EventTimeTracker::get_StartTime",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::<.ctor>b__2_0",
+    "ea": "0x3d60",
+    "function_file": "functions/3d60_Microsoft.Crm.Asynchronous.JobDataAccess_.ctor_b_2_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::<.ctor>b__2_0",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::GetMappingsAndDefaultFromKeyValuePairs",
+    "ea": "0x3c50",
+    "function_file": "functions/3c50_Microsoft.Crm.Asynchronous.JobDataAccess_GetMappingsAndDefaultFromKeyValuePairs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::GetMappingsAndDefaultFromKeyValuePairs",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 192,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::GetNumJobsCurrentlyRunningPerServer",
+    "ea": "0x36a0",
+    "function_file": "functions/36a0_Microsoft.Crm.Asynchronous.JobDataAccess_GetNumJobsCurrentlyRunningPerServer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::GetNumJobsCurrentlyRunningPerServer",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_NonBusinessHourEndTimeOfDay",
+    "ea": "0x3f90",
+    "function_file": "functions/3f90_Microsoft.Crm.Asynchronous.JobDataAccessConstants_get_NonBusinessHourEndTimeOfDay.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_NonBusinessHourEndTimeOfDay",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 13,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_NonBusinessHourStartTimeOfDay",
+    "ea": "0x3f80",
+    "function_file": "functions/3f80_Microsoft.Crm.Asynchronous.JobDataAccessConstants_get_NonBusinessHourStartTimeOfDay.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_NonBusinessHourStartTimeOfDay",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 13,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobData::get_Id",
+    "ea": "0x6e60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ScaleGroupMaintenanceJobData::get_Id",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::get_QueueManagerName",
+    "ea": "0x5d30",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::get_QueueManagerName",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "OrgDataAccess::RetrieveQueueSettingsFromDB",
+    "ea": "0xa990",
+    "function_file": "functions/a990_OrgDataAccess_RetrieveQueueSettingsFromDB.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OrgDataAccess::RetrieveQueueSettingsFromDB",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 88,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::.ctor",
+    "ea": "0x7e00",
+    "function_file": "functions/7e00_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::.ctor",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 59,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::.ctor",
+    "ea": "0x96c0",
+    "function_file": "functions/96c0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::.ctor",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::CreateOnKeepAliveTimerOperation",
+    "ea": "0xa0b0",
+    "function_file": "functions/a0b0_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager_CreateOnKeepAliveTimerOperation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::CreateOnKeepAliveTimerOperation",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 72,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::CreateOnTimeoutLockedTimerOperation",
+    "ea": "0xa100",
+    "function_file": "functions/a100_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager_CreateOnTimeoutLockedTimerOperation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::CreateOnTimeoutLockedTimerOperation",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 72,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::CreateReportEventsOperation",
+    "ea": "0xa150",
+    "function_file": "functions/a150_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager_CreateReportEventsOperation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::CreateReportEventsOperation",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 72,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::CreateConnection",
+    "ea": "0x6a40",
+    "function_file": "functions/6a40_Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor_CreateConnection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.ScalegroupMaintenanceJobsMonitor::CreateConnection",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 28,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::.ctor",
+    "ea": "0x7470",
+    "function_file": "functions/7470_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 32,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccessFactory::.ctor",
+    "ea": "0x7450",
+    "function_file": "functions/7450_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccessFactory_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccessFactory::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccessFactory::CreateInstance",
+    "ea": "0x7440",
+    "function_file": "functions/7440_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccessFactory_CreateInstance.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccessFactory::CreateInstance",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::<CreateCancelWaitingOperation>b__8_0",
+    "ea": "0x7c80",
+    "function_file": "functions/7c80_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager_CreateCancelWaitingOperation_b_8_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::<CreateCancelWaitingOperation>b__8_0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 13,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::CreateCancelWaitingOperation",
+    "ea": "0x7c00",
+    "function_file": "functions/7c00_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager_CreateCancelWaitingOperation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::CreateCancelWaitingOperation",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 38,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::CreateTimers",
+    "ea": "0x7bc0",
+    "function_file": "functions/7bc0_Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager_CreateTimers.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::CreateTimers",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 53,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::<CreateTimers>b__14_0",
+    "ea": "0xa220",
+    "function_file": "functions/a220_Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager_CreateTimers_b_14_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueManager::<CreateTimers>b__14_0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 13,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.IAsyncManagerFactory::CreateAsyncManagers",
+    "ea": "0x760",
+    "function_file": "functions/760_Microsoft.Crm.Asynchronous.IAsyncManagerFactory_CreateAsyncManagers.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.IAsyncManagerFactory::CreateAsyncManagers",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.IJobDataAccess::ResetActiveJobsForThisHost",
+    "ea": "0x2150",
+    "function_file": "functions/2150_Microsoft.Crm.Asynchronous.IJobDataAccess_ResetActiveJobsForThisHost.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.IJobDataAccess::ResetActiveJobsForThisHost",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.IJobDataAccess::SelectJobs",
+    "ea": "0x2100",
+    "function_file": "functions/2100_Microsoft.Crm.Asynchronous.IJobDataAccess_SelectJobs.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.IJobDataAccess::SelectJobs",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.IJobDataAccess::SelectTimedOutJobExcludingType",
+    "ea": "0x2130",
+    "function_file": "functions/2130_Microsoft.Crm.Asynchronous.IJobDataAccess_SelectTimedOutJobExcludingType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.IJobDataAccess::SelectTimedOutJobExcludingType",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.IJobDataAccess::SelectTimedOutJobForType",
+    "ea": "0x2120",
+    "function_file": "functions/2120_Microsoft.Crm.Asynchronous.IJobDataAccess_SelectTimedOutJobForType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.IJobDataAccess::SelectTimedOutJobForType",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::.ctor",
+    "ea": "0x21d0",
+    "function_file": "functions/21d0_Microsoft.Crm.Asynchronous.JobDataAccess_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 49,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::CreateConnection",
+    "ea": "0x2940",
+    "function_file": "functions/2940_Microsoft.Crm.Asynchronous.JobDataAccess_CreateConnection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::CreateConnection",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectTimedOutJob",
+    "ea": "0x2810",
+    "function_file": "functions/2810_Microsoft.Crm.Asynchronous.JobDataAccess_SelectTimedOutJob.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectTimedOutJob",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectTimedOutJobExcludingType",
+    "ea": "0x2840",
+    "function_file": "functions/2840_Microsoft.Crm.Asynchronous.JobDataAccess_SelectTimedOutJobExcludingType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectTimedOutJobExcludingType",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 24,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectTimedOutJobForType",
+    "ea": "0x2820",
+    "function_file": "functions/2820_Microsoft.Crm.Asynchronous.JobDataAccess_SelectTimedOutJobForType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::SelectTimedOutJobForType",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 24,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_JobsToProcessAtOnce",
+    "ea": "0x3f00",
+    "function_file": "functions/3f00_Microsoft.Crm.Asynchronous.JobDataAccessConstants_get_JobsToProcessAtOnce.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_JobsToProcessAtOnce",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_JobsToReturnInSql",
+    "ea": "0x3f20",
+    "function_file": "functions/3f20_Microsoft.Crm.Asynchronous.JobDataAccessConstants_get_JobsToReturnInSql.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_JobsToReturnInSql",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_MaintenanceIntervalTimerFrequencyMultiplier",
+    "ea": "0x3f60",
+    "function_file": "functions/3f60_Microsoft.Crm.Asynchronous.JobDataAccessConstants_get_MaintenanceIntervalTimerFrequencyMultiplier.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_MaintenanceIntervalTimerFrequencyMultiplier",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 17,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_ModuloForNewJobRetrieval",
+    "ea": "0x3f40",
+    "function_file": "functions/3f40_Microsoft.Crm.Asynchronous.JobDataAccessConstants_get_ModuloForNewJobRetrieval.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::get_ModuloForNewJobRetrieval",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 17,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessFactory::.ctor",
+    "ea": "0x21b0",
+    "function_file": "functions/21b0_Microsoft.Crm.Asynchronous.JobDataAccessFactory_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessFactory::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessFactory::Microsoft.Crm.Asynchronous.IJobDataAccessFactory.CreateInstance",
+    "ea": "0x21a0",
+    "function_file": "functions/21a0_Microsoft.Crm.Asynchronous.JobDataAccessFactory_Microsoft.Crm.Asynchronous.IJobDataAccessFactory.CreateInstanc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessFactory::Microsoft.Crm.Asynchronous.IJobDataAccessFactory.CreateInstance",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::<CreateTimers>b__4_0",
+    "ea": "0x4a90",
+    "function_file": "functions/4a90_Microsoft.Crm.Asynchronous.JobManager_CreateTimers_b_4_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::<CreateTimers>b__4_0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 13,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::<CreateTimers>b__4_1",
+    "ea": "0x4aa0",
+    "function_file": "functions/4aa0_Microsoft.Crm.Asynchronous.JobManager_CreateTimers_b_4_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::<CreateTimers>b__4_1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 13,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::<CreateTimers>b__4_2",
+    "ea": "0x4ab0",
+    "function_file": "functions/4ab0_Microsoft.Crm.Asynchronous.JobManager_CreateTimers_b_4_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::<CreateTimers>b__4_2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 13,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobManager::<CreateTimers>b__4_3",
+    "ea": "0x4ac0",
+    "function_file": "functions/4ac0_Microsoft.Crm.Asynchronous.JobManager_CreateTimers_b_4_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobManager::<CreateTimers>b__4_3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 13,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.OutstandingOperationAwareWorkloadThrottler::TrackCompleteOutstandingOperation",
+    "ea": "0x5f50",
+    "function_file": "functions/5f50_Microsoft.Crm.Asynchronous.OutstandingOperationAwareWorkloadThrottler_TrackCompleteOutstandingOperation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.OutstandingOperationAwareWorkloadThrottler::TrackCompleteOutstandingOperation",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 77,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.QueueManagerExecutionEngine::remove_AsyncOperationStatusChanged",
+    "ea": "0x5020",
+    "function_file": "functions/5020_Microsoft.Crm.Asynchronous.QueueManagerExecutionEngine_remove_AsyncOperationStatusChanged.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.QueueManagerExecutionEngine::remove_AsyncOperationStatusChanged",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft.Crm.Asynchronous.UnrecognizedOperationTypeCommand::.ctor",
+    "ea": "0x5360",
+    "function_file": "functions/5360_Microsoft.Crm.Asynchronous.UnrecognizedOperationTypeCommand_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.UnrecognizedOperationTypeCommand::.ctor",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 10,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "<>c::<UpdateJobTargetServer>b__4_0",
+    "ea": "0xa7a0",
+    "function_file": "functions/a7a0_c_UpdateJobTargetServer_b_4_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "<>c::<UpdateJobTargetServer>b__4_0",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 1,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "<>c__DisplayClass11_0::<UpdateStateAndStatus>b__0",
+    "ea": "0xa7e0",
+    "function_file": "functions/a7e0_c_DisplayClass11_0_UpdateStateAndStatus_b_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "<>c__DisplayClass11_0::<UpdateStateAndStatus>b__0",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 69,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "<>c__DisplayClass29_0::<ConfigureWebApp>b__0",
+    "ea": "0xa5e0",
+    "function_file": "functions/a5e0_c_DisplayClass29_0_ConfigureWebApp_b_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "<>c__DisplayClass29_0::<ConfigureWebApp>b__0",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 19,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.DefaultWorkloadThrottler::TrackCompleteOutstandingOperation",
+    "ea": "0x5df0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.DefaultWorkloadThrottler::TrackCompleteOutstandingOperation",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 13,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::get_Name",
+    "ea": "0x7b40",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueDataAccess::get_Name",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::GetQueueDataAccess",
+    "ea": "0x7c30",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.ActivityQueueManager::GetQueueDataAccess",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 14,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::.cctor",
+    "ea": "0x9630",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::.cctor",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 31,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::<LogUnpickedMailboxes>b__12_1",
+    "ea": "0x9650",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::<LogUnpickedMailboxes>b__12_1",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 84,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::get_Name",
+    "ea": "0x9620",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccess::get_Name",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::TimeoutLocked",
+    "ea": "0x97e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.EmailConnector.MailboxQueueDataAccessDebug::TimeoutLocked",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.IAsyncEventFactory::CreateFromAsyncOperation",
+    "ea": "0x740",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.IAsyncEventFactory::CreateFromAsyncOperation",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.IJobDataAccess::SelectTimedOutJob",
+    "ea": "0x2110",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.IJobDataAccess::SelectTimedOutJob",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::<GetPriorityTable>b__41_0",
+    "ea": "0x3d80",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::<GetPriorityTable>b__41_0",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 56,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::<GetPriorityTable>b__41_1",
+    "ea": "0x3dc0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::<GetPriorityTable>b__41_1",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 56,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccess::get_Name",
+    "ea": "0x2970",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccess::get_Name",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::.cctor",
+    "ea": "0x4090",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.JobDataAccessConstants::.cctor",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.UnrecognizedOperationTypeCommand::Execute",
+    "ea": "0x5370",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.UnrecognizedOperationTypeCommand::Execute",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 55,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Crm.Asynchronous.WorkloadThrottler::TrackCompleteOutstandingOperation",
+    "ea": "0x5470",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Crm.Asynchronous.WorkloadThrottler::TrackCompleteOutstandingOperation",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 1,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "OrgDataAccess::.ctor",
+    "ea": "0xa920",
+    "function_file": "functions/a920_OrgDataAccess_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OrgDataAccess::.ctor",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "<>c::<CreateOnKeepAliveTimerOperation>b__16_1",
+    "ea": "0xbaf0",
+    "function_file": "functions/baf0_c_CreateOnKeepAliveTimerOperation_b_16_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "<>c::<CreateOnKeepAliveTimerOperation>b__16_1",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "<>c::<CreateOnTimeoutLockedTimerOperation>b__17_1",
+    "ea": "0xbb00",
+    "function_file": "functions/bb00_c_CreateOnTimeoutLockedTimerOperation_b_17_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "<>c::<CreateOnTimeoutLockedTimerOperation>b__17_1",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 21,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "<>c::<CreateReportEventsOperation>b__18_1",
+    "ea": "0xbb20",
+    "function_file": "functions/bb20_c_CreateReportEventsOperation_b_18_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "<>c::<CreateReportEventsOperation>b__18_1",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "<>c__DisplayClass16_0::<CreateOnKeepAliveTimerOperation>b__0",
+    "ea": "0xba80",
+    "function_file": "functions/ba80_c_DisplayClass16_0_CreateOnKeepAliveTimerOperation_b_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "<>c__DisplayClass16_0::<CreateOnKeepAliveTimerOperation>b__0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "<>c__DisplayClass17_0::<CreateOnTimeoutLockedTimerOperation>b__0",
+    "ea": "0xbb60",
+    "function_file": "functions/bb60_c_DisplayClass17_0_CreateOnTimeoutLockedTimerOperation_b_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "<>c__DisplayClass17_0::<CreateOnTimeoutLockedTimerOperation>b__0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "<>c__DisplayClass18_0::<CreateReportEventsOperation>b__0",
+    "ea": "0xbbc0",
+    "function_file": "functions/bbc0_c_DisplayClass18_0_CreateReportEventsOperation_b_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "<>c__DisplayClass18_0::<CreateReportEventsOperation>b__0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 55,
+    "tags": []
+  }
+]

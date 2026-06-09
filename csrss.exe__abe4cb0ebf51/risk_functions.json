@@ -1,0 +1,270 @@
+[
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "main",
+    "ea": "0x14000169c",
+    "function_file": "functions/14000169c_main.md",
+    "matched_imports": [
+      "CSRSRV!CsrFlushToBlackBoxRecorder",
+      "CSRSRV!CsrServerInitialization",
+      "CSRSRV!CsrUnhandledExceptionFilter",
+      "ntdll!NtSetInformationProcess",
+      "ntdll!NtTerminateProcess",
+      "ntdll!NtTerminateThread",
+      "ntdll!RtlSetHeapInformation",
+      "ntdll!RtlSetUnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "main",
+    "prototype": "int __fastcall(int argc, const char **argv, const char **envp)",
+    "rank_score": 2114,
+    "size": 326,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NtProcessStartup_AfterSecurityCookieInitialized",
+    "ea": "0x140001030",
+    "function_file": "functions/140001030_NtProcessStartup_AfterSecurityCookieInitialized.md",
+    "matched_imports": [
+      "ntdll!NtTerminateProcess",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeAnsiString",
+      "ntdll!RtlNormalizeProcessParams",
+      "ntdll!RtlUnicodeStringToAnsiString",
+      "ntdll!isspace"
+    ],
+    "matched_strings": [],
+    "name": "NtProcessStartup_AfterSecurityCookieInitialized",
+    "prototype": "",
+    "rank_score": 2040,
+    "size": 997,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "NtTerminateProcess_0",
+    "ea": "0x140001660",
+    "function_file": "functions/140001660_NtTerminateProcess_0.md",
+    "matched_imports": [
+      "ntdll!NtTerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "NtTerminateProcess_0",
+    "prototype": "NTSTATUS __stdcall(HANDLE ProcessHandle, NTSTATUS ExitStatus)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlCaptureContext_0",
+    "ea": "0x14000166c",
+    "function_file": "functions/14000166c_RtlCaptureContext_0.md",
+    "matched_imports": [
+      "ntdll!RtlCaptureContext"
+    ],
+    "matched_strings": [],
+    "name": "RtlCaptureContext_0",
+    "prototype": "void __stdcall(PCONTEXT ContextRecord)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlLookupFunctionEntry_0",
+    "ea": "0x140001678",
+    "function_file": "functions/140001678_RtlLookupFunctionEntry_0.md",
+    "matched_imports": [
+      "ntdll!RtlLookupFunctionEntry"
+    ],
+    "matched_strings": [],
+    "name": "RtlLookupFunctionEntry_0",
+    "prototype": "PRUNTIME_FUNCTION __stdcall(DWORD64 ControlPc, PDWORD64 ImageBase, PUNWIND_HISTORY_TABLE HistoryTable)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlUnhandledExceptionFilter_0",
+    "ea": "0x140001690",
+    "function_file": "functions/140001690_RtlUnhandledExceptionFilter_0.md",
+    "matched_imports": [
+      "ntdll!RtlUnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "RtlUnhandledExceptionFilter_0",
+    "prototype": "LONG __stdcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlVirtualUnwind_0",
+    "ea": "0x140001684",
+    "function_file": "functions/140001684_RtlVirtualUnwind_0.md",
+    "matched_imports": [
+      "ntdll!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "RtlVirtualUnwind_0",
+    "prototype": "PEXCEPTION_ROUTINE __stdcall(DWORD HandlerType, DWORD64 ImageBase, DWORD64 ControlPc, PRUNTIME_FUNCTION FunctionEntry, struct _CONTEXT *ContextRecord, PVOID *HandlerData, PDWORD64 EstablisherFrame, PKNONVOLATILE_CONTEXT_POINTERS ContextPointers)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x140001430",
+    "function_file": "functions/140001430_report_gsfailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 29,
+    "size": 375,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NtProcessStartup",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_NtProcessStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NtProcessStartup",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 23,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x1400015b0",
+    "function_file": "functions/1400015b0_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 68,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140001820",
+    "function_file": "functions/140001820_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 12,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie_ex",
+    "ea": "0x1400015fc",
+    "function_file": "functions/1400015fc_security_init_cookie_ex.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie_ex",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140001860",
+    "function_file": "functions/140001860_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_guard_xfg_dispatch_icall_nop",
+    "ea": "0x140001890",
+    "function_file": "functions/140001890_guard_xfg_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_xfg_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_guard_check_icall_nop",
+    "ea": "0x140001800",
+    "function_file": "functions/140001800_guard_check_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_check_icall_nop",
+    "prototype": "",
+    "rank_score": 0,
+    "size": 3,
+    "tags": []
+  }
+]

@@ -1,0 +1,81 @@
+# Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::System::IDispatcherQueueController,Microsoft::WRL::FtmBase>::GetIids(ulong *,_GUID * *)
+
+- ea: `0x1800c4510`
+- end: `0x1800c456f`
+- name: `?GetIids@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIDispatcherQueueController@System@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAJPEAKPEAPEAU_GUID@@@Z`
+- size: `95`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `2`
+- tags: `service_task, installer_update, broker_com_uri`
+
+## callees
+
+- `0x1800c41a8`
+- `0x1800c4510`
+
+## import_xrefs
+
+- `api-ms-win-core-com-l1-1-0!CoTaskMemAlloc` at `0x1800c4532`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemAlloc` at `0x1800c4532`
+
+## pseudocode
+
+```c
+__int64 __fastcall Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::System::IDispatcherQueueController,Microsoft::WRL::FtmBase>::GetIids(
+        __int64 a1,
+        _DWORD *a2,
+        _QWORD *a3)
+{
+  __int64 v5; // rcx
+  LPVOID v6; // r8
+  __int64 result; // rax
+  __int64 v8; // r8
+  int v9; // [rsp+38h] [rbp+10h] BYREF
+
+  *a3 = 0;
+  *a2 = 0;
+  v6 = CoTaskMemAlloc(0x20u);
+  if ( !v6 )
+    return 2147942414LL;
+  v9 = 0;
+  Microsoft::WRL::Details::ImplementsHelper<Microsoft::WRL::RuntimeClassFlags<1>,0,Windows::System::IDispatcherQueueController,IWeakReferenceSource,Microsoft::WRL::FtmBase>::FillArrayWithIid(
+    v5,
+    &v9,
+    v6);
+  *a2 = 2;
+  result = 0;
+  *a3 = v8;
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800c4510  mov     [rsp+arg_0], rbx
+0x1800c4515  push    rdi
+0x1800c4516  sub     rsp, 20h
+0x1800c451a  mov     qword ptr [r8], 0
+0x1800c4521  mov     ecx, 20h ; ' '; cb
+0x1800c4526  mov     dword ptr [rdx], 0
+0x1800c452c  mov     rbx, r8
+0x1800c452f  mov     rdi, rdx
+0x1800c4532  call    cs:__imp_CoTaskMemAlloc
+0x1800c4538  mov     r8, rax
+0x1800c453b  test    rax, rax
+0x1800c453e  jnz     short loc_1800C4547
+0x1800c4540  mov     eax, 8007000Eh
+0x1800c4545  jmp     short loc_1800C4564
+0x1800c4547  lea     rdx, [rsp+28h+arg_8]
+0x1800c454c  mov     [rsp+28h+arg_8], 0
+0x1800c4554  call    ?FillArrayWithIid@?$ImplementsHelper@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$0A@UIDispatcherQueueController@System@Windows@@UIWeakReferenceSource@@VFtmBase@23@@Details@WRL@Microsoft@@IEAAXPEAKPEAU_GUID@@@Z; Microsoft::WRL::Details::ImplementsHelper<Microsoft::WRL::RuntimeClassFlags<1>,0,Windows::System::IDispatcherQueueController,IWeakReferenceSource,Microsoft::WRL::FtmBase>::FillArrayWithIid(ulong *,_GUID *)
+0x1800c4559  mov     dword ptr [rdi], 2
+0x1800c455f  xor     eax, eax
+0x1800c4561  mov     [rbx], r8
+0x1800c4564  mov     rbx, [rsp+28h+arg_0]
+0x1800c4569  add     rsp, 20h
+0x1800c456d  pop     rdi
+0x1800c456e  retn
+```

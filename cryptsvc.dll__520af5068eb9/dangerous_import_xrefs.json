@@ -1,0 +1,3082 @@
+[
+  {
+    "import": "CRYPT32!CertFindExtension",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000169c",
+        "from_func": "0x1800015a4",
+        "from_func_name": "_GetHpkpCtls",
+        "import": "CRYPT32!CertFindExtension"
+      },
+      {
+        "from_ea": "0x18000169c",
+        "from_func": "0x1800015a4",
+        "from_func_name": "_GetHpkpCtls",
+        "import": "CRYPT32!CertFindExtension"
+      }
+    ]
+  },
+  {
+    "import": "CRYPT32!CertVerifyCertificateChainPolicy",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180010c9d",
+        "from_func": "0x180010ba4",
+        "from_func_name": "_ValidateInCerts",
+        "import": "CRYPT32!CertVerifyCertificateChainPolicy"
+      },
+      {
+        "from_ea": "0x180010cd2",
+        "from_func": "0x180010ba4",
+        "from_func_name": "_ValidateInCerts",
+        "import": "CRYPT32!CertVerifyCertificateChainPolicy"
+      },
+      {
+        "from_ea": "0x180010c9d",
+        "from_func": "0x180010ba4",
+        "from_func_name": "_ValidateInCerts",
+        "import": "CRYPT32!CertVerifyCertificateChainPolicy"
+      },
+      {
+        "from_ea": "0x180010cd2",
+        "from_func": "0x180010ba4",
+        "from_func_name": "_ValidateInCerts",
+        "import": "CRYPT32!CertVerifyCertificateChainPolicy"
+      }
+    ]
+  },
+  {
+    "import": "CRYPT32!CryptGetDefaultOIDDllList",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c201",
+        "from_func": "0x18000c18c",
+        "from_func_name": "CryptSvcCtrlInitFunc",
+        "import": "CRYPT32!CryptGetDefaultOIDDllList"
+      },
+      {
+        "from_ea": "0x18000c2b8",
+        "from_func": "0x18000c18c",
+        "from_func_name": "CryptSvcCtrlInitFunc",
+        "import": "CRYPT32!CryptGetDefaultOIDDllList"
+      },
+      {
+        "from_ea": "0x18000c201",
+        "from_func": "0x18000c18c",
+        "from_func_name": "CryptSvcCtrlInitFunc",
+        "import": "CRYPT32!CryptGetDefaultOIDDllList"
+      },
+      {
+        "from_ea": "0x18000c2b8",
+        "from_func": "0x18000c18c",
+        "from_func_name": "CryptSvcCtrlInitFunc",
+        "import": "CRYPT32!CryptGetDefaultOIDDllList"
+      }
+    ]
+  },
+  {
+    "import": "CRYPTNET!CryptRetrieveObjectByUrlW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180008bc8",
+        "from_func": "0x180008a10",
+        "from_func_name": "?ProcessRetrievalPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "CRYPTNET!CryptRetrieveObjectByUrlW"
+      },
+      {
+        "from_ea": "0x180008bc8",
+        "from_func": "0x180008a10",
+        "from_func_name": "?ProcessRetrievalPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "CRYPTNET!CryptRetrieveObjectByUrlW"
+      },
+      {
+        "from_ea": "0x18000f0ba",
+        "from_func": "0x18000f0ba",
+        "from_func_name": "__imp_load_CryptRetrieveObjectByUrlW",
+        "import": "CRYPTNET!CryptRetrieveObjectByUrlW"
+      }
+    ]
+  },
+  {
+    "import": "CRYPTNET!I_CryptNetSetUrlCacheFlushInfo",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800063e0",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "CRYPTNET!I_CryptNetSetUrlCacheFlushInfo"
+      },
+      {
+        "from_ea": "0x1800063e0",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "CRYPTNET!I_CryptNetSetUrlCacheFlushInfo"
+      },
+      {
+        "from_ea": "0x18000f0de",
+        "from_func": "0x18000f0de",
+        "from_func_name": "__imp_load_I_CryptNetSetUrlCacheFlushInfo",
+        "import": "CRYPTNET!I_CryptNetSetUrlCacheFlushInfo"
+      },
+      {
+        "from_ea": "0x18001da8c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "CRYPTNET!I_CryptNetSetUrlCacheFlushInfo"
+      }
+    ]
+  },
+  {
+    "import": "CRYPTNET!I_CryptNetSetUrlCachePreFetchInfo",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800063ab",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "CRYPTNET!I_CryptNetSetUrlCachePreFetchInfo"
+      },
+      {
+        "from_ea": "0x1800063ab",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "CRYPTNET!I_CryptNetSetUrlCachePreFetchInfo"
+      },
+      {
+        "from_ea": "0x18000f0cc",
+        "from_func": "0x18000f0cc",
+        "from_func_name": "__imp_load_I_CryptNetSetUrlCachePreFetchInfo",
+        "import": "CRYPTNET!I_CryptNetSetUrlCachePreFetchInfo"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcImpersonateClient",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180002040",
+        "from_func": "0x180001fc8",
+        "from_func_name": "_CertRegisterLogoffNotify",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x180008557",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x18000fd2a",
+        "from_func": "0x18000fcd8",
+        "from_func_name": "CryptnetUrlCacheSvcAddHpkp",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x180002040",
+        "from_func": "0x180001fc8",
+        "from_func_name": "_CertRegisterLogoffNotify",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x180008557",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "RPCRT4!RpcImpersonateClient"
+      },
+      {
+        "from_ea": "0x18000fd2a",
+        "from_func": "0x18000fcd8",
+        "from_func_name": "CryptnetUrlCacheSvcAddHpkp",
+        "import": "RPCRT4!RpcImpersonateClient"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcRevertToSelfEx",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x1800020a8",
+        "from_func": "0x180001fc8",
+        "from_func_name": "_CertRegisterLogoffNotify",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x1800021ed",
+        "from_func": "0x180001fc8",
+        "from_func_name": "_CertRegisterLogoffNotify",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x1800085d1",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x18000867e",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x18000fd59",
+        "from_func": "0x18000fcd8",
+        "from_func_name": "CryptnetUrlCacheSvcAddHpkp",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x18000fd8c",
+        "from_func": "0x18000fcd8",
+        "from_func_name": "CryptnetUrlCacheSvcAddHpkp",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x1800020a8",
+        "from_func": "0x180001fc8",
+        "from_func_name": "_CertRegisterLogoffNotify",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x1800021ed",
+        "from_func": "0x180001fc8",
+        "from_func_name": "_CertRegisterLogoffNotify",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x1800085d1",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x18000867e",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x18000fd59",
+        "from_func": "0x18000fcd8",
+        "from_func_name": "CryptnetUrlCacheSvcAddHpkp",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      },
+      {
+        "from_ea": "0x18000fd8c",
+        "from_func": "0x18000fcd8",
+        "from_func_name": "CryptnetUrlCacheSvcAddHpkp",
+        "import": "RPCRT4!RpcRevertToSelfEx"
+      }
+    ]
+  },
+  {
+    "import": "WINHTTP!WinHttpCrackUrl",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000a273",
+        "from_func": "0x18000a204",
+        "from_func_name": "?GetOcspRequestInfoFromOcspUrl@@YAPEAU_OCSP_REQUEST_INFO@@PEBG@Z",
+        "import": "WINHTTP!WinHttpCrackUrl"
+      },
+      {
+        "from_ea": "0x18000a273",
+        "from_func": "0x18000a204",
+        "from_func_name": "?GetOcspRequestInfoFromOcspUrl@@YAPEAU_OCSP_REQUEST_INFO@@PEBG@Z",
+        "import": "WINHTTP!WinHttpCrackUrl"
+      },
+      {
+        "from_ea": "0x18000ef80",
+        "from_func": "0x18000ef80",
+        "from_func_name": "__imp_load_WinHttpCrackUrl",
+        "import": "WINHTTP!WinHttpCrackUrl"
+      },
+      {
+        "from_ea": "0x18001da4c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "WINHTTP!WinHttpCrackUrl"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000f9e2",
+        "from_func": "0x18000f950",
+        "from_func_name": "?RetrievalPreFetchJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x18000f01d",
+        "from_func": "0x18000f01d",
+        "from_func_name": "__imp_load_CoCreateInstance",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x18000f9e2",
+        "from_func": "0x18000f950",
+        "from_func_name": "?RetrievalPreFetchJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x18001da6c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000f9ad",
+        "from_func": "0x18000f950",
+        "from_func_name": "?RetrievalPreFetchJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      },
+      {
+        "from_ea": "0x18000f00b",
+        "from_func": "0x18000f00b",
+        "from_func_name": "__imp_load_CoInitializeEx",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      },
+      {
+        "from_ea": "0x18000f9ad",
+        "from_func": "0x18000f950",
+        "from_func_name": "?RetrievalPreFetchJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoUninitialize",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000fa35",
+        "from_func": "0x18000f950",
+        "from_func_name": "?RetrievalPreFetchJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x18000f02f",
+        "from_func": "0x18000f02f",
+        "from_func_name": "__imp_load_CoUninitialize",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x18000fa35",
+        "from_func": "0x18000f950",
+        "from_func_name": "?RetrievalPreFetchJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!CompareFileTime",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 110,
+    "xrefs": [
+      {
+        "from_ea": "0x18000131c",
+        "from_func": "0x180001284",
+        "from_func_name": "_RemoveExpiredOrNotInUseHpkpEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180001339",
+        "from_func": "0x180001284",
+        "from_func_name": "_RemoveExpiredOrNotInUseHpkpEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180001384",
+        "from_func": "0x180001284",
+        "from_func_name": "_RemoveExpiredOrNotInUseHpkpEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000265a",
+        "from_func": "0x180002630",
+        "from_func_name": "AddTimeOrderedJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000270b",
+        "from_func": "0x1800026cc",
+        "from_func_name": "?NextRetryPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@PEAU_FILETIME@@1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000272c",
+        "from_func": "0x1800026cc",
+        "from_func_name": "?NextRetryPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@PEAU_FILETIME@@1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002744",
+        "from_func": "0x1800026cc",
+        "from_func_name": "?NextRetryPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@PEAU_FILETIME@@1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002a40",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002a63",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002e0c",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002e36",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002eca",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003082",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003126",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003209",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800035e0",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003613",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003637",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003650",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800036bf",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003788",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800037f7",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003895",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000391b",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800039aa",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180004e1a",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180005509",
+        "from_func": "0x180005460",
+        "from_func_name": "?ToBeRunJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180005537",
+        "from_func": "0x180005460",
+        "from_func_name": "?ToBeRunJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000554a",
+        "from_func": "0x180005460",
+        "from_func_name": "?ToBeRunJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180005ee6",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800062f4",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006320",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006337",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006575",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800066d6",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800066ed",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006700",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006962",
+        "from_func": "0x1800068f0",
+        "from_func_name": "AddToBeRunJobEx",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006b4f",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006bb1",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006c49",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006c7b",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800094c7",
+        "from_func": "0x180009428",
+        "from_func_name": "I_CertGetAutoUpdateLastSyncTime",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800097a0",
+        "from_func": "0x180009790",
+        "from_func_name": "I_CryptSubtractFileTimes",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180009f8e",
+        "from_func": "0x180009f28",
+        "from_func_name": "ValidateOcspPreFetchContent",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180009fa2",
+        "from_func": "0x180009f28",
+        "from_func_name": "ValidateOcspPreFetchContent",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000a58b",
+        "from_func": "0x18000a500",
+        "from_func_name": "?EnumFlushCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000a5fd",
+        "from_func": "0x18000a5e0",
+        "from_func_name": "I_CryptIsResetBackCurrentFileTime",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000c06a",
+        "from_func": "0x18000bfcc",
+        "from_func_name": "ValidateCrlPreFetchContent",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000c07e",
+        "from_func": "0x18000bfcc",
+        "from_func_name": "ValidateCrlPreFetchContent",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000ff44",
+        "from_func": "0x18000ff10",
+        "from_func_name": "_CompareDomainEntryLastAdd",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000ff64",
+        "from_func": "0x18000ff10",
+        "from_func_name": "_CompareDomainEntryLastAdd",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000ff8f",
+        "from_func": "0x18000ff10",
+        "from_func_name": "_CompareDomainEntryLastAdd",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180010ae2",
+        "from_func": "0x180010a7c",
+        "from_func_name": "_UpdateHpkpDomainEntryFromPendingEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180010b12",
+        "from_func": "0x180010a7c",
+        "from_func_name": "_UpdateHpkpDomainEntryFromPendingEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000131c",
+        "from_func": "0x180001284",
+        "from_func_name": "_RemoveExpiredOrNotInUseHpkpEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180001339",
+        "from_func": "0x180001284",
+        "from_func_name": "_RemoveExpiredOrNotInUseHpkpEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180001384",
+        "from_func": "0x180001284",
+        "from_func_name": "_RemoveExpiredOrNotInUseHpkpEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000265a",
+        "from_func": "0x180002630",
+        "from_func_name": "AddTimeOrderedJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000270b",
+        "from_func": "0x1800026cc",
+        "from_func_name": "?NextRetryPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@PEAU_FILETIME@@1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000272c",
+        "from_func": "0x1800026cc",
+        "from_func_name": "?NextRetryPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@PEAU_FILETIME@@1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002744",
+        "from_func": "0x1800026cc",
+        "from_func_name": "?NextRetryPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@PEAU_FILETIME@@1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002a40",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002a63",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002e0c",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002e36",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180002eca",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003082",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003126",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003209",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800035e0",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003613",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003637",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003650",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800036bf",
+        "from_func": "0x1800033e0",
+        "from_func_name": "CreatePreFetchJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003788",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800037f7",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180003895",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000391b",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800039aa",
+        "from_func": "0x180003760",
+        "from_func_name": "?SetRandomPreFetchTimes@@YAXPEAU_CRYPTNET_URL_CACHE_PRE_FETCH_INFO@@PEAU_FILETIME@@KPEAKQEAU2@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180004e1a",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180005509",
+        "from_func": "0x180005460",
+        "from_func_name": "?ToBeRunJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180005537",
+        "from_func": "0x180005460",
+        "from_func_name": "?ToBeRunJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000554a",
+        "from_func": "0x180005460",
+        "from_func_name": "?ToBeRunJobThreadProc@@YAKPEAX@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180005ee6",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800062f4",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006320",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006337",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006575",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800066d6",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800066ed",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006700",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006962",
+        "from_func": "0x1800068f0",
+        "from_func_name": "AddToBeRunJobEx",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006b4f",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006bb1",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006c49",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180006c7b",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800094c7",
+        "from_func": "0x180009428",
+        "from_func_name": "I_CertGetAutoUpdateLastSyncTime",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800097a0",
+        "from_func": "0x180009790",
+        "from_func_name": "I_CryptSubtractFileTimes",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180009f8e",
+        "from_func": "0x180009f28",
+        "from_func_name": "ValidateOcspPreFetchContent",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180009fa2",
+        "from_func": "0x180009f28",
+        "from_func_name": "ValidateOcspPreFetchContent",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000a58b",
+        "from_func": "0x18000a500",
+        "from_func_name": "?EnumFlushCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000a5fd",
+        "from_func": "0x18000a5e0",
+        "from_func_name": "I_CryptIsResetBackCurrentFileTime",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000c06a",
+        "from_func": "0x18000bfcc",
+        "from_func_name": "ValidateCrlPreFetchContent",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000c07e",
+        "from_func": "0x18000bfcc",
+        "from_func_name": "ValidateCrlPreFetchContent",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000ff44",
+        "from_func": "0x18000ff10",
+        "from_func_name": "_CompareDomainEntryLastAdd",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000ff64",
+        "from_func": "0x18000ff10",
+        "from_func_name": "_CompareDomainEntryLastAdd",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18000ff8f",
+        "from_func": "0x18000ff10",
+        "from_func_name": "_CompareDomainEntryLastAdd",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180010ae2",
+        "from_func": "0x180010a7c",
+        "from_func_name": "_UpdateHpkpDomainEntryFromPendingEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180010b12",
+        "from_func": "0x180010a7c",
+        "from_func_name": "_UpdateHpkpDomainEntryFromPendingEntry",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 19,
+    "xrefs": [
+      {
+        "from_ea": "0x180002b10",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180002de0",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180004dc3",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180004f93",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x18000623b",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800076c7",
+        "from_func": "0x180007370",
+        "from_func_name": "I_UrlCacheEnum",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180007cec",
+        "from_func": "0x180007af0",
+        "from_func_name": "I_UrlCacheCreateCacheFile",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180007fa6",
+        "from_func": "0x180007dc0",
+        "from_func_name": "I_UrlCacheReadCryptBlobArray",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800081a6",
+        "from_func": "0x180007dc0",
+        "from_func_name": "I_UrlCacheReadCryptBlobArray",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180002b10",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180002de0",
+        "from_func": "0x1800028f0",
+        "from_func_name": "?EnumUrlCacheEntryCallback@@YAHPEBU_CRYPTNET_URL_CACHE_ENTRY@@KPEAX1@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180004dc3",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180004f93",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x18000623b",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800076c7",
+        "from_func": "0x180007370",
+        "from_func_name": "I_UrlCacheEnum",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180007cec",
+        "from_func": "0x180007af0",
+        "from_func_name": "I_UrlCacheCreateCacheFile",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180007fa6",
+        "from_func": "0x180007dc0",
+        "from_func_name": "I_UrlCacheReadCryptBlobArray",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800081a6",
+        "from_func": "0x180007dc0",
+        "from_func_name": "I_UrlCacheReadCryptBlobArray",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x18001e060",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!DeleteFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002396",
+        "from_func": "0x18000237c",
+        "from_func_name": "I_UrlCacheDeleteFile",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      },
+      {
+        "from_ea": "0x180002396",
+        "from_func": "0x18000237c",
+        "from_func_name": "I_UrlCacheDeleteFile",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180006f20",
+        "from_func": "0x180006db0",
+        "from_func_name": "I_CryptGetLowIntegrityUserPath",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180009045",
+        "from_func": "0x180009030",
+        "from_func_name": "I_CryptRecursiveCreateLowIntegrityDirectory",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180009630",
+        "from_func": "0x18000961c",
+        "from_func_name": "I_RecursiveCreateDirectory",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180006f20",
+        "from_func": "0x180006db0",
+        "from_func_name": "I_CryptGetLowIntegrityUserPath",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180009045",
+        "from_func": "0x180009030",
+        "from_func_name": "I_CryptRecursiveCreateLowIntegrityDirectory",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180009630",
+        "from_func": "0x18000961c",
+        "from_func_name": "I_RecursiveCreateDirectory",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!ReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x18000713c",
+        "from_func": "0x1800070d0",
+        "from_func_name": "I_UrlCacheReadAndValidateMetaDataFile",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x1800071af",
+        "from_func": "0x1800070d0",
+        "from_func_name": "I_UrlCacheReadAndValidateMetaDataFile",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x180007214",
+        "from_func": "0x1800070d0",
+        "from_func_name": "I_UrlCacheReadAndValidateMetaDataFile",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x180008061",
+        "from_func": "0x180007dc0",
+        "from_func_name": "I_UrlCacheReadCryptBlobArray",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x18000713c",
+        "from_func": "0x1800070d0",
+        "from_func_name": "I_UrlCacheReadAndValidateMetaDataFile",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x1800071af",
+        "from_func": "0x1800070d0",
+        "from_func_name": "I_UrlCacheReadAndValidateMetaDataFile",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x180007214",
+        "from_func": "0x1800070d0",
+        "from_func_name": "I_UrlCacheReadAndValidateMetaDataFile",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x180008061",
+        "from_func": "0x180007dc0",
+        "from_func_name": "I_UrlCacheReadCryptBlobArray",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!SetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180009681",
+        "from_func": "0x18000961c",
+        "from_func_name": "I_RecursiveCreateDirectory",
+        "import": "api-ms-win-core-file-l1-1-0!SetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180009756",
+        "from_func": "0x18000961c",
+        "from_func_name": "I_RecursiveCreateDirectory",
+        "import": "api-ms-win-core-file-l1-1-0!SetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180009681",
+        "from_func": "0x18000961c",
+        "from_func_name": "I_RecursiveCreateDirectory",
+        "import": "api-ms-win-core-file-l1-1-0!SetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180009756",
+        "from_func": "0x18000961c",
+        "from_func_name": "I_RecursiveCreateDirectory",
+        "import": "api-ms-win-core-file-l1-1-0!SetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!SetFilePointer",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180004ea7",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!SetFilePointer"
+      },
+      {
+        "from_ea": "0x1800051b7",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!SetFilePointer"
+      },
+      {
+        "from_ea": "0x180004ea7",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!SetFilePointer"
+      },
+      {
+        "from_ea": "0x1800051b7",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!SetFilePointer"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!WriteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x180004ecf",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b58d",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b5dd",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b60f",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b645",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b669",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x180004ecf",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b58d",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b5dd",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b60f",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b645",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x18000b669",
+        "from_func": "0x18000b4a4",
+        "from_func_name": "I_UrlCacheWriteCryptBlobArray2",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-localization-obsolete-l1-2-0!CompareStringA",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800165a3",
+        "from_func": "0x180016580",
+        "from_func_name": "_CompareDirectiveString",
+        "import": "api-ms-win-core-localization-obsolete-l1-2-0!CompareStringA"
+      },
+      {
+        "from_ea": "0x1800165a3",
+        "from_func": "0x180016580",
+        "from_func_name": "_CompareDirectiveString",
+        "import": "api-ms-win-core-localization-obsolete-l1-2-0!CompareStringA"
+      },
+      {
+        "from_ea": "0x18001e1f0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-localization-obsolete-l1-2-0!CompareStringA"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x18000e363",
+        "from_func": "0x18000e314",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800121b4",
+        "from_func": "0x18001217c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18001231c",
+        "from_func": "0x1800122e4",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000e363",
+        "from_func": "0x18000e314",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800121b4",
+        "from_func": "0x18001217c",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18001231c",
+        "from_func": "0x1800122e4",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800099d9",
+        "from_func": "0x180009970",
+        "from_func_name": "GetUserTextualSidHKCU",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x1800099d9",
+        "from_func": "0x180009970",
+        "from_func_name": "GetUserTextualSidHKCU",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 21,
+    "xrefs": [
+      {
+        "from_ea": "0x1800050b3",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180005c54",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180006af8",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180006d35",
+        "from_func": "0x180006d00",
+        "from_func_name": "?ImpersonateToken@@YAHPEAXPEAPEAX@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18000857e",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180008a86",
+        "from_func": "0x180008a10",
+        "from_func_name": "?ProcessRetrievalPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180008e43",
+        "from_func": "0x180008df0",
+        "from_func_name": "ValidateAutoUpdateCabPreFetchContent",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18000930e",
+        "from_func": "0x1800092e0",
+        "from_func_name": "I_CryptGetToken",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180009357",
+        "from_func": "0x1800092e0",
+        "from_func_name": "I_CryptGetToken",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x1800099b2",
+        "from_func": "0x180009970",
+        "from_func_name": "GetUserTextualSidHKCU",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x1800050b3",
+        "from_func": "0x180004c90",
+        "from_func_name": "?UpdatePreFetchJobCacheFile@@YAHPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180005c54",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180006af8",
+        "from_func": "0x180006aa0",
+        "from_func_name": "ProcessToBeRunScanJob",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180006d35",
+        "from_func": "0x180006d00",
+        "from_func_name": "?ImpersonateToken@@YAHPEAXPEAPEAX@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18000857e",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180008a86",
+        "from_func": "0x180008a10",
+        "from_func_name": "?ProcessRetrievalPreFetchJob@@YAXPEAU_CUCS_PRE_FETCH_JOB_ENTRY@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180008e43",
+        "from_func": "0x180008df0",
+        "from_func_name": "ValidateAutoUpdateCabPreFetchContent",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18000930e",
+        "from_func": "0x1800092e0",
+        "from_func_name": "I_CryptGetToken",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x180009357",
+        "from_func": "0x1800092e0",
+        "from_func_name": "I_CryptGetToken",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x1800099b2",
+        "from_func": "0x180009970",
+        "from_func_name": "GetUserTextualSidHKCU",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      },
+      {
+        "from_ea": "0x18001df98",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 23,
+    "xrefs": [
+      {
+        "from_ea": "0x180001630",
+        "from_func": "0x1800015a4",
+        "from_func_name": "_GetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000234e",
+        "from_func": "0x180002220",
+        "from_func_name": "_SetPinRulesLastError",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800046fb",
+        "from_func": "0x180004530",
+        "from_func_name": "IsPreFetchDisabledForAutoUpdateUrl",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180005e0c",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180005f10",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800095fd",
+        "from_func": "0x1800095e0",
+        "from_func_name": "_CloseRegistryKey",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000c697",
+        "from_func": "0x18000c46c",
+        "from_func_name": "?InitPreFetchPara@@YAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000c777",
+        "from_func": "0x18000c6d4",
+        "from_func_name": "?GetPreFetchDebugFlags@@YAKXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000d774",
+        "from_func": "0x18000d760",
+        "from_func_name": "RegCloseHKCU",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800101ae",
+        "from_func": "0x1800100d4",
+        "from_func_name": "_EncodeAndSetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18001109f",
+        "from_func": "0x180010f90",
+        "from_func_name": "InitHpkpPara",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180001630",
+        "from_func": "0x1800015a4",
+        "from_func_name": "_GetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000234e",
+        "from_func": "0x180002220",
+        "from_func_name": "_SetPinRulesLastError",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800046fb",
+        "from_func": "0x180004530",
+        "from_func_name": "IsPreFetchDisabledForAutoUpdateUrl",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180005e0c",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180005f10",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800095fd",
+        "from_func": "0x1800095e0",
+        "from_func_name": "_CloseRegistryKey",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000c697",
+        "from_func": "0x18000c46c",
+        "from_func_name": "?InitPreFetchPara@@YAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000c777",
+        "from_func": "0x18000c6d4",
+        "from_func_name": "?GetPreFetchDebugFlags@@YAKXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000d774",
+        "from_func": "0x18000d760",
+        "from_func_name": "RegCloseHKCU",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800101ae",
+        "from_func": "0x1800100d4",
+        "from_func_name": "_EncodeAndSetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18001109f",
+        "from_func": "0x180010f90",
+        "from_func_name": "InitHpkpPara",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18001e0b0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800022cb",
+        "from_func": "0x180002220",
+        "from_func_name": "_SetPinRulesLastError",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x180010165",
+        "from_func": "0x1800100d4",
+        "from_func_name": "_EncodeAndSetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x1800022cb",
+        "from_func": "0x180002220",
+        "from_func_name": "_SetPinRulesLastError",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x180010165",
+        "from_func": "0x1800100d4",
+        "from_func_name": "_EncodeAndSetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c723",
+        "from_func": "0x18000c6d4",
+        "from_func_name": "?GetPreFetchDebugFlags@@YAKXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x18000c723",
+        "from_func": "0x18000c6d4",
+        "from_func_name": "?GetPreFetchDebugFlags@@YAKXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExA"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 18,
+    "xrefs": [
+      {
+        "from_ea": "0x180001604",
+        "from_func": "0x1800015a4",
+        "from_func_name": "_GetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800045f1",
+        "from_func": "0x180004530",
+        "from_func_name": "IsPreFetchDisabledForAutoUpdateUrl",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180005ce3",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180005e75",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180009569",
+        "from_func": "0x180009530",
+        "from_func_name": "_OpenAutoUpdateKey",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180009905",
+        "from_func": "0x180009854",
+        "from_func_name": "RegOpenHKCUEx",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000992d",
+        "from_func": "0x180009854",
+        "from_func_name": "RegOpenHKCUEx",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000c52c",
+        "from_func": "0x18000c46c",
+        "from_func_name": "?InitPreFetchPara@@YAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180010ff3",
+        "from_func": "0x180010f90",
+        "from_func_name": "InitHpkpPara",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180001604",
+        "from_func": "0x1800015a4",
+        "from_func_name": "_GetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800045f1",
+        "from_func": "0x180004530",
+        "from_func_name": "IsPreFetchDisabledForAutoUpdateUrl",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180005ce3",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180005e75",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180009569",
+        "from_func": "0x180009530",
+        "from_func_name": "_OpenAutoUpdateKey",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180009905",
+        "from_func": "0x180009854",
+        "from_func_name": "RegOpenHKCUEx",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000992d",
+        "from_func": "0x180009854",
+        "from_func_name": "RegOpenHKCUEx",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000c52c",
+        "from_func": "0x18000c46c",
+        "from_func_name": "?InitPreFetchPara@@YAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180010ff3",
+        "from_func": "0x180010f90",
+        "from_func_name": "InitHpkpPara",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExA",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c751",
+        "from_func": "0x18000c6d4",
+        "from_func_name": "?GetPreFetchDebugFlags@@YAKXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExA"
+      },
+      {
+        "from_ea": "0x18000c751",
+        "from_func": "0x18000c6d4",
+        "from_func_name": "?GetPreFetchDebugFlags@@YAKXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExA"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 18,
+    "xrefs": [
+      {
+        "from_ea": "0x180001787",
+        "from_func": "0x180001708",
+        "from_func_name": "I_CertReadBINARYValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x1800017d9",
+        "from_func": "0x180001708",
+        "from_func_name": "I_CertReadBINARYValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x18000488b",
+        "from_func": "0x180004850",
+        "from_func_name": "_ReadSZValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180004927",
+        "from_func": "0x180004850",
+        "from_func_name": "_ReadSZValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180005eb7",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x1800093de",
+        "from_func": "0x180009388",
+        "from_func_name": "I_CertGetAutoUpdateFlags",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x18000949c",
+        "from_func": "0x180009428",
+        "from_func_name": "I_CertGetAutoUpdateLastSyncTime",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180009dfb",
+        "from_func": "0x180009dc0",
+        "from_func_name": "_ReadDWORDValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x18000c3aa",
+        "from_func": "0x18000c370",
+        "from_func_name": "UpdatePreFetchParaFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180001787",
+        "from_func": "0x180001708",
+        "from_func_name": "I_CertReadBINARYValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x1800017d9",
+        "from_func": "0x180001708",
+        "from_func_name": "I_CertReadBINARYValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x18000488b",
+        "from_func": "0x180004850",
+        "from_func_name": "_ReadSZValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180004927",
+        "from_func": "0x180004850",
+        "from_func_name": "_ReadSZValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180005eb7",
+        "from_func": "0x180005bd0",
+        "from_func_name": "SetAutoUpdatePreFetchInfo",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x1800093de",
+        "from_func": "0x180009388",
+        "from_func_name": "I_CertGetAutoUpdateFlags",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x18000949c",
+        "from_func": "0x180009428",
+        "from_func_name": "I_CertGetAutoUpdateLastSyncTime",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180009dfb",
+        "from_func": "0x180009dc0",
+        "from_func_name": "_ReadDWORDValueFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x18000c3aa",
+        "from_func": "0x18000c370",
+        "from_func_name": "UpdatePreFetchParaFromRegistry",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180002340",
+        "from_func": "0x180002220",
+        "from_func_name": "_SetPinRulesLastError",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180010193",
+        "from_func": "0x1800100d4",
+        "from_func_name": "_EncodeAndSetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180002340",
+        "from_func": "0x180002220",
+        "from_func_name": "_SetPinRulesLastError",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180010193",
+        "from_func": "0x1800100d4",
+        "from_func_name": "_EncodeAndSetHpkpCtls",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000eb6e",
+        "from_func": "0x18000eb6e",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000eb86",
+        "from_func": "0x18000eb86",
+        "from_func_name": "_o___stdio_common_vswprintf_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000eb9e",
+        "from_func": "0x18000eb9e",
+        "from_func_name": "_o__configure_narrow_argv_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000ebf8",
+        "from_func": "0x18000ebf8",
+        "from_func_name": "_o__seh_filter_dll_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800091f1",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x1800113f4",
+        "from_func": "0x180011390",
+        "from_func_name": "I_CryptHasAppContainerUserCertCapability",
+        "import": "api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x1800091f1",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x1800113f4",
+        "from_func": "0x180011390",
+        "from_func_name": "I_CryptHasAppContainerUserCertCapability",
+        "import": "api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!CopySid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800170ef",
+        "from_func": "0x180017020",
+        "from_func_name": "GetTokenUserSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!CopySid"
+      },
+      {
+        "from_ea": "0x1800170ef",
+        "from_func": "0x180017020",
+        "from_func_name": "GetTokenUserSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!CopySid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!EqualSid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180005760",
+        "from_func": "0x180005700",
+        "from_func_name": "ProcessToBeRunTriggerJob",
+        "import": "api-ms-win-security-base-l1-1-0!EqualSid"
+      },
+      {
+        "from_ea": "0x1800058c3",
+        "from_func": "0x180005700",
+        "from_func_name": "ProcessToBeRunTriggerJob",
+        "import": "api-ms-win-security-base-l1-1-0!EqualSid"
+      },
+      {
+        "from_ea": "0x18000920b",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!EqualSid"
+      },
+      {
+        "from_ea": "0x180005760",
+        "from_func": "0x180005700",
+        "from_func_name": "ProcessToBeRunTriggerJob",
+        "import": "api-ms-win-security-base-l1-1-0!EqualSid"
+      },
+      {
+        "from_ea": "0x1800058c3",
+        "from_func": "0x180005700",
+        "from_func_name": "ProcessToBeRunTriggerJob",
+        "import": "api-ms-win-security-base-l1-1-0!EqualSid"
+      },
+      {
+        "from_ea": "0x18000920b",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!EqualSid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!FreeSid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180009240",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!FreeSid"
+      },
+      {
+        "from_ea": "0x180011428",
+        "from_func": "0x180011390",
+        "from_func_name": "I_CryptHasAppContainerUserCertCapability",
+        "import": "api-ms-win-security-base-l1-1-0!FreeSid"
+      },
+      {
+        "from_ea": "0x180009240",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!FreeSid"
+      },
+      {
+        "from_ea": "0x180011428",
+        "from_func": "0x180011390",
+        "from_func_name": "I_CryptHasAppContainerUserCertCapability",
+        "import": "api-ms-win-security-base-l1-1-0!FreeSid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetAce",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180009195",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!GetAce"
+      },
+      {
+        "from_ea": "0x180009195",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!GetAce"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetFileSecurityW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180009147",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!GetFileSecurityW"
+      },
+      {
+        "from_ea": "0x180009147",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!GetFileSecurityW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetLengthSid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800170cd",
+        "from_func": "0x180017020",
+        "from_func_name": "GetTokenUserSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetLengthSid"
+      },
+      {
+        "from_ea": "0x1800170cd",
+        "from_func": "0x180017020",
+        "from_func_name": "GetTokenUserSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorSacl",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180009164",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorSacl"
+      },
+      {
+        "from_ea": "0x180009164",
+        "from_func": "0x1800090b0",
+        "from_func_name": "_CheckLowIntegrityDir",
+        "import": "api-ms-win-security-base-l1-1-0!GetSecurityDescriptorSacl"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetSidIdentifierAuthority",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180016e6a",
+        "from_func": "0x180016e40",
+        "from_func_name": "GetTextualSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetSidIdentifierAuthority"
+      },
+      {
+        "from_ea": "0x180016e6a",
+        "from_func": "0x180016e40",
+        "from_func_name": "GetTextualSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetSidIdentifierAuthority"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetSidSubAuthority",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180016fa7",
+        "from_func": "0x180016e40",
+        "from_func_name": "GetTextualSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetSidSubAuthority"
+      },
+      {
+        "from_ea": "0x180016fa7",
+        "from_func": "0x180016e40",
+        "from_func_name": "GetTextualSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetSidSubAuthority"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetSidSubAuthorityCount",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180016e76",
+        "from_func": "0x180016e40",
+        "from_func_name": "GetTextualSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetSidSubAuthorityCount"
+      },
+      {
+        "from_ea": "0x180016e76",
+        "from_func": "0x180016e40",
+        "from_func_name": "GetTextualSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetSidSubAuthorityCount"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 16,
+    "xrefs": [
+      {
+        "from_ea": "0x18000678c",
+        "from_func": "0x180006760",
+        "from_func_name": "?GetTokenId@@YAPEAU_CUCS_TOKEN_ID@@PEAX@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x1800067f3",
+        "from_func": "0x180006760",
+        "from_func_name": "?GetTokenId@@YAPEAU_CUCS_TOKEN_ID@@PEAX@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180006843",
+        "from_func": "0x180006760",
+        "from_func_name": "?GetTokenId@@YAPEAU_CUCS_TOKEN_ID@@PEAX@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180006879",
+        "from_func": "0x180006760",
+        "from_func_name": "?GetTokenId@@YAPEAU_CUCS_TOKEN_ID@@PEAX@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180008367",
+        "from_func": "0x180008330",
+        "from_func_name": "I_CryptIsAppContainerToken",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x1800085b3",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x18001706f",
+        "from_func": "0x180017020",
+        "from_func_name": "GetTokenUserSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x1800170b5",
+        "from_func": "0x180017020",
+        "from_func_name": "GetTokenUserSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x18000678c",
+        "from_func": "0x180006760",
+        "from_func_name": "?GetTokenId@@YAPEAU_CUCS_TOKEN_ID@@PEAX@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x1800067f3",
+        "from_func": "0x180006760",
+        "from_func_name": "?GetTokenId@@YAPEAU_CUCS_TOKEN_ID@@PEAX@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180006843",
+        "from_func": "0x180006760",
+        "from_func_name": "?GetTokenId@@YAPEAU_CUCS_TOKEN_ID@@PEAX@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180006879",
+        "from_func": "0x180006760",
+        "from_func_name": "?GetTokenId@@YAPEAU_CUCS_TOKEN_ID@@PEAX@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180008367",
+        "from_func": "0x180008330",
+        "from_func_name": "I_CryptIsAppContainerToken",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x1800085b3",
+        "from_func": "0x1800084a0",
+        "from_func_name": "CryptnetUrlCacheSvcTriggerPreFetch",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x18001706f",
+        "from_func": "0x180017020",
+        "from_func_name": "GetTokenUserSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x1800170b5",
+        "from_func": "0x180017020",
+        "from_func_name": "GetTokenUserSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!ImpersonateSelf",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000933a",
+        "from_func": "0x1800092e0",
+        "from_func_name": "I_CryptGetToken",
+        "import": "api-ms-win-security-base-l1-1-0!ImpersonateSelf"
+      },
+      {
+        "from_ea": "0x18000933a",
+        "from_func": "0x1800092e0",
+        "from_func_name": "I_CryptGetToken",
+        "import": "api-ms-win-security-base-l1-1-0!ImpersonateSelf"
+      },
+      {
+        "from_ea": "0x18001e09c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-base-l1-1-0!ImpersonateSelf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!IsValidSid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180016e59",
+        "from_func": "0x180016e40",
+        "from_func_name": "GetTextualSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!IsValidSid"
+      },
+      {
+        "from_ea": "0x180016e59",
+        "from_func": "0x180016e40",
+        "from_func_name": "GetTextualSidHKCU",
+        "import": "api-ms-win-security-base-l1-1-0!IsValidSid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!RevertToSelf",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180009367",
+        "from_func": "0x1800092e0",
+        "from_func_name": "I_CryptGetToken",
+        "import": "api-ms-win-security-base-l1-1-0!RevertToSelf"
+      },
+      {
+        "from_ea": "0x180009367",
+        "from_func": "0x1800092e0",
+        "from_func_name": "I_CryptGetToken",
+        "import": "api-ms-win-security-base-l1-1-0!RevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!SetFileSecurityW",
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180011505",
+        "from_func": "0x1800114c4",
+        "from_func_name": "_SetLowIntegrityFile",
+        "import": "api-ms-win-security-base-l1-1-0!SetFileSecurityW"
+      },
+      {
+        "from_ea": "0x180011505",
+        "from_func": "0x1800114c4",
+        "from_func_name": "_SetLowIntegrityFile",
+        "import": "api-ms-win-security-base-l1-1-0!SetFileSecurityW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-2-0!CheckTokenCapability",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180011418",
+        "from_func": "0x180011390",
+        "from_func_name": "I_CryptHasAppContainerUserCertCapability",
+        "import": "api-ms-win-security-base-l1-2-0!CheckTokenCapability"
+      },
+      {
+        "from_ea": "0x180011418",
+        "from_func": "0x180011390",
+        "from_func_name": "I_CryptHasAppContainerUserCertCapability",
+        "import": "api-ms-win-security-base-l1-2-0!CheckTokenCapability"
+      },
+      {
+        "from_ea": "0x18001e164",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-base-l1-2-0!CheckTokenCapability"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x18000cbeb",
+        "from_func": "0x18000cb10",
+        "from_func_name": "CertProtectStart",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x18000f805",
+        "from_func": "0x18000f6c4",
+        "from_func_name": "ServiceStart",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x1800114f0",
+        "from_func": "0x1800114c4",
+        "from_func_name": "_SetLowIntegrityFile",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x18000cbeb",
+        "from_func": "0x18000cb10",
+        "from_func_name": "CertProtectStart",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x18000ed19",
+        "from_func": "0x18000ed19",
+        "from_func_name": "__imp_load_ConvertStringSecurityDescriptorToSecurityDescriptorW",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x18000f805",
+        "from_func": "0x18000f6c4",
+        "from_func_name": "ServiceStart",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x1800114f0",
+        "from_func": "0x1800114c4",
+        "from_func_name": "_SetLowIntegrityFile",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      },
+      {
+        "from_ea": "0x18001d9cc",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW",
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000f303",
+        "from_func": "0x18000f2b0",
+        "from_func_name": "?CryptServiceMain@@YAXKPEAPEAG@Z",
+        "import": "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW"
+      },
+      {
+        "from_ea": "0x18000edb6",
+        "from_func": "0x18000edb6",
+        "from_func_name": "__imp_load_RegisterServiceCtrlHandlerExW",
+        "import": "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW"
+      },
+      {
+        "from_ea": "0x18000f303",
+        "from_func": "0x18000f2b0",
+        "from_func_name": "?CryptServiceMain@@YAXKPEAPEAG@Z",
+        "import": "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180009c51",
+        "from_func": "0x180009bf0",
+        "from_func_name": "?service_ctrlEx@@YAKKKPEAX0@Z",
+        "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x18000b37c",
+        "from_func": "0x18000b324",
+        "from_func_name": "ReportStatusToSCMgr",
+        "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x180009c51",
+        "from_func": "0x180009bf0",
+        "from_func_name": "?service_ctrlEx@@YAKKKPEAX0@Z",
+        "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x18000b37c",
+        "from_func": "0x18000b324",
+        "from_func_name": "ReportStatusToSCMgr",
+        "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x18000eda4",
+        "from_func": "0x18000eda4",
+        "from_func_name": "__imp_load_SetServiceStatus",
+        "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x18001d9ec",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventRegister",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000f598",
+        "from_func": "0x18000f51c",
+        "from_func_name": "AddToMessageLog",
+        "import": "ntdll!EtwEventRegister"
+      },
+      {
+        "from_ea": "0x18000f598",
+        "from_func": "0x18000f51c",
+        "from_func_name": "AddToMessageLog",
+        "import": "ntdll!EtwEventRegister"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventUnregister",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000f5e5",
+        "from_func": "0x18000f51c",
+        "from_func_name": "AddToMessageLog",
+        "import": "ntdll!EtwEventUnregister"
+      },
+      {
+        "from_ea": "0x18000f5e5",
+        "from_func": "0x18000f51c",
+        "from_func_name": "AddToMessageLog",
+        "import": "ntdll!EtwEventUnregister"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EvtIntReportEventAndSourceAsync",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000f5da",
+        "from_func": "0x18000f51c",
+        "from_func_name": "AddToMessageLog",
+        "import": "ntdll!EvtIntReportEventAndSourceAsync"
+      },
+      {
+        "from_ea": "0x18000f5da",
+        "from_func": "0x18000f51c",
+        "from_func_name": "AddToMessageLog",
+        "import": "ntdll!EvtIntReportEventAndSourceAsync"
+      },
+      {
+        "from_ea": "0x18001e114",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!EvtIntReportEventAndSourceAsync"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlAllocateHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180011202",
+        "from_func": "0x1800111f0",
+        "from_func_name": "SafeAllocaAllocateFromHeap",
+        "import": "ntdll!RtlAllocateHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180011222",
+        "from_func": "0x180011210",
+        "from_func_name": "SafeAllocaFreeToHeap",
+        "import": "ntdll!RtlFreeHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlImageNtHeader",
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000c0d9",
+        "from_func": "0x18000c0c8",
+        "from_func_name": "SafeAllocaInitialize",
+        "import": "ntdll!RtlImageNtHeader"
+      },
+      {
+        "from_ea": "0x18000c0d9",
+        "from_func": "0x18000c0c8",
+        "from_func_name": "SafeAllocaInitialize",
+        "import": "ntdll!RtlImageNtHeader"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!memmove_s",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000dd70",
+        "from_func": "0x18000dc00",
+        "from_func_name": "?RecordUsageInternal@RawUsageIndex@details_abi@wil@@AEAA_NPEAX_K01I@Z",
+        "import": "ntdll!memmove_s"
+      },
+      {
+        "from_ea": "0x18000dd70",
+        "from_func": "0x18000dc00",
+        "from_func_name": "?RecordUsageInternal@RawUsageIndex@details_abi@wil@@AEAA_NPEAX_K01I@Z",
+        "import": "ntdll!memmove_s"
+      }
+    ]
+  },
+  {
+    "import": "profapi!__imp_GetAppContainerRegistryHandle",
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800095a4",
+        "from_func": "0x180009530",
+        "from_func_name": "_OpenAutoUpdateKey",
+        "import": "profapi!__imp_GetAppContainerRegistryHandle"
+      },
+      {
+        "from_ea": "0x1800095a4",
+        "from_func": "0x180009530",
+        "from_func_name": "_OpenAutoUpdateKey",
+        "import": "profapi!__imp_GetAppContainerRegistryHandle"
+      },
+      {
+        "from_ea": "0x18000f17b",
+        "from_func": "0x18000f17b",
+        "from_func_name": "__imp_load_GetAppContainerRegistryHandle",
+        "import": "profapi!__imp_GetAppContainerRegistryHandle"
+      },
+      {
+        "from_ea": "0x18001daac",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "profapi!__imp_GetAppContainerRegistryHandle"
+      }
+    ]
+  }
+]
