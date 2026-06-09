@@ -1,0 +1,6251 @@
+[
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicSettingsDumpNew",
+    "ea": "0x140043c80",
+    "function_file": "functions/140043c80_QuicSettingsDumpNew.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[sett] MtuCompleteTimeout     = %llu",
+      "[sett] DestCidUpdateIdleTimeoutMs = %u"
+    ],
+    "name": "QuicSettingsDumpNew",
+    "prototype": "",
+    "rank_score": 11339,
+    "size": 3999,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "QuicSettingsDump",
+    "ea": "0x140006a2c",
+    "function_file": "functions/140006a2c_QuicSettingsDump.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[sett] MtuCompleteTimeout     = %llu",
+      "[sett] DestCidUpdateIdleTimeoutMs = %u"
+    ],
+    "name": "QuicSettingsDump",
+    "prototype": "",
+    "rank_score": 11141,
+    "size": 3732,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "QuicCryptoTlsEncodeTransportParameters",
+    "ea": "0x14001a050",
+    "function_file": "functions/14001a050_QuicCryptoTlsEncodeTransportParameters.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "TP: Stateless Reset Token (%s)",
+      "TP: Version Negotiation Extension (%u bytes)"
+    ],
+    "name": "QuicCryptoTlsEncodeTransportParameters",
+    "prototype": "",
+    "rank_score": 6137,
+    "size": 4768,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "CxPlatTlsWriteDataToSchannel",
+    "ea": "0x140036f1c",
+    "function_file": "functions/140036f1c_CxPlatTlsWriteDataToSchannel.md",
+    "matched_imports": [
+      "ksecdd!AcceptSecurityContext",
+      "ksecdd!FreeContextBuffer",
+      "ksecdd!InitializeSecurityContextW",
+      "ksecdd!QueryContextAttributesW",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!PsImpersonateClient",
+      "ntoskrnl!PsRevertToSelf",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "PsImpersonateClient failed",
+      "Key Ready Type, %u [%hu to %hu]",
+      "Handshake complete (resume=%hu)",
+      "Reading Handshake data starts now",
+      "Reading 1-RTT data starts now",
+      "OutputTokenBuffer->cbBuffer <= 0xFFFF",
+      "Temporary Peer Transport Params",
+      "Accept/InitializeSecurityContext"
+    ],
+    "name": "CxPlatTlsWriteDataToSchannel",
+    "prototype": "__int64 __fastcall(char *, __int64, _DWORD *, unsigned __int8 *)",
+    "rank_score": 5779,
+    "size": 5789,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CxPlatDataPathQuerySockoptSupport",
+    "ea": "0x140039854",
+    "function_file": "functions/140039854_CxPlatDataPathQuerySockoptSupport.md",
+    "matched_imports": [
+      "ntoskrnl!IoCleanupIrp",
+      "ntoskrnl!IoInitializeIrp",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[data] UDP send segmentation helper socket failed to open, 0x%x",
+      "[data] UDP send segmentation helper socket failed to open (async), 0x%x"
+    ],
+    "name": "CxPlatDataPathQuerySockoptSupport",
+    "prototype": "",
+    "rank_score": 4107,
+    "size": 1467,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DataPathInitialize",
+    "ea": "0x14003aea0",
+    "function_file": "functions/14003aea0_DataPathInitialize.md",
+    "matched_imports": [
+      "NETIO!WskCaptureProviderNPI",
+      "NETIO!WskDeregister",
+      "NETIO!WskRegister",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExDeleteLookasideListEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeLookasideListEx"
+    ],
+    "matched_strings": [
+      "CXPLAT_DATAPATH"
+    ],
+    "name": "DataPathInitialize",
+    "prototype": "",
+    "rank_score": 3888,
+    "size": 1286,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CxPlatCryptInitialize",
+    "ea": "0x1400340c8",
+    "function_file": "functions/1400340c8_CxPlatCryptInitialize.md",
+    "matched_imports": [
+      "cng!BCryptCloseAlgorithmProvider",
+      "cng!BCryptOpenAlgorithmProvider",
+      "cng!BCryptSetProperty"
+    ],
+    "matched_strings": [
+      "Open HMAC_SHA256 algorithm",
+      "Open HMAC_SHA384 algorithm",
+      "Open HMAC_SHA512 algorithm",
+      "Open AES algorithm",
+      "Open ChaCha20-Poly1305 algorithm",
+      "Open SP800-108 CTR HMAC KDF algorithm"
+    ],
+    "name": "CxPlatCryptInitialize",
+    "prototype": "",
+    "rank_score": 3660,
+    "size": 939,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 1,
+    "demangled": "QuicFrameLog",
+    "ea": "0x140046ea8",
+    "function_file": "functions/140046ea8_QuicFrameLog.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[%c][%cX][%llu]   NEW_TOKEN [Invalid]",
+      "[%c][%cX][%llu]   NEW_TOKEN Length:%llu",
+      "[%c][%cX][%llu]   NEW_CONN_ID Seq:%llu RPT:%llu CID:%s Token:%s",
+      "[%c][%cX][%llu]   PATH_CHALLENGE [Invalid]",
+      "[%c][%cX][%llu]   PATH_CHALLENGE [%llu]",
+      "[%c][%cX][%llu]   PATH_RESPONSE [Invalid]",
+      "[%c][%cX][%llu]   PATH_RESPONSE [%llu]"
+    ],
+    "name": "QuicFrameLog",
+    "prototype": "",
+    "rank_score": 3530,
+    "size": 6565,
+    "tags": []
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "QuicLibrarySetGlobalParam",
+    "ea": "0x14003f350",
+    "function_file": "functions/14003f350_QuicLibrarySetGlobalParam.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[ lib] Updated retry memory limit = %hu",
+      "[ lib] Updated load balancing mode = %hu",
+      "Execution config",
+      "[ lib] Setting execution config"
+    ],
+    "name": "QuicLibrarySetGlobalParam",
+    "prototype": "",
+    "rank_score": 3419,
+    "size": 1628,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "MsQuicConfigurationOpen",
+    "ea": "0x1400258c0",
+    "function_file": "functions/1400258c0_MsQuicConfigurationOpen.md",
+    "matched_imports": [
+      "NDIS!NdisGetThreadObjectCompartmentId",
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ObfDereferenceObjectWithTag",
+      "ntoskrnl!ObfReferenceObjectWithTag",
+      "ntoskrnl!PsGetCurrentServerSilo",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "QUIC_CONFIGURATION",
+      "[cnfg][%p] Failed to open settings, 0x%x",
+      "[cnfg][%p] Failed to open app specific settings, 0x%x",
+      "C:\\__w\\1\\s\\msquic\\src\\core\\configuration.c"
+    ],
+    "name": "MsQuicConfigurationOpen",
+    "prototype": "",
+    "rank_score": 3204,
+    "size": 1188,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CxPlatDataPathQueryRssScalabilityInfo",
+    "ea": "0x1400394fc",
+    "function_file": "functions/1400394fc_CxPlatDataPathQueryRssScalabilityInfo.md",
+    "matched_imports": [
+      "ntoskrnl!IoCleanupIrp",
+      "ntoskrnl!IoInitializeIrp",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[data] RSS helper socket failed to open, 0x%x",
+      "[data] RSS helper socket failed to open (async), 0x%x"
+    ],
+    "name": "CxPlatDataPathQueryRssScalabilityInfo",
+    "prototype": "",
+    "rank_score": 2502,
+    "size": 847,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 56,
+    "caller_count": 1,
+    "demangled": "QuicConnRecvFrames",
+    "ea": "0x1400108c0",
+    "function_file": "functions/1400108c0_QuicConnRecvFrames.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Decoding NEW_TOKEN frame",
+      "Ignoring frame (%hhu) for already closed stream id = %llu",
+      "Decoding PATH_CHALLENGE frame",
+      "Decoding PATH_RESPONSE frame"
+    ],
+    "name": "QuicConnRecvFrames",
+    "prototype": "char __fastcall(__int64, __int64, __int64, int)",
+    "rank_score": 2431,
+    "size": 6884,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicPartitionInitialize",
+    "ea": "0x14002d550",
+    "function_file": "functions/14002d550_QuicPartitionInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeLookasideListEx",
+      "ntoskrnl!ExInitializePushLock",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "QuicPartitionInitialize",
+    "prototype": "",
+    "rank_score": 2419,
+    "size": 676,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "SocketCreateUdp",
+    "ea": "0x14003b850",
+    "function_file": "functions/14003b850_SocketCreateUdp.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeRundownProtection",
+      "ntoskrnl!IoInitializeIrp",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "WskSocket completion",
+      "WskBind completion",
+      "WskGetLocalAddress completion"
+    ],
+    "name": "SocketCreateUdp",
+    "prototype": "",
+    "rank_score": 2360,
+    "size": 2336,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CxPlatThreadCreate",
+    "ea": "0x14002e124",
+    "function_file": "functions/14002e124_CxPlatThreadCreate.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetProcessorNumberFromIndex",
+      "ntoskrnl!KeQueryLogicalProcessorRelationship",
+      "ntoskrnl!KeSetBasePriorityThread",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!PsThreadType",
+      "ntoskrnl!RtlUTF8ToUnicodeN",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetInformationThread",
+      "ntoskrnl!strnlen"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatThreadCreate",
+    "prototype": "",
+    "rank_score": 2308,
+    "size": 596,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "MsQuicRegistrationOpen",
+    "ea": "0x1400010b0",
+    "function_file": "functions/1400010b0_MsQuicRegistrationOpen.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializePushLock",
+      "ntoskrnl!ExInitializeRundownProtection",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!MmIsDriverVerifyingByAddress",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicRegistrationOpen",
+    "prototype": "",
+    "rank_score": 2228,
+    "size": 779,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "QuicPartitionUninitialize",
+    "ea": "0x14002d7fc",
+    "function_file": "functions/14002d7fc_QuicPartitionUninitialize.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "QuicPartitionUninitialize",
+    "prototype": "",
+    "rank_score": 2217,
+    "size": 295,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "QuicStreamProcessStreamFrame",
+    "ea": "0x14000fdb0",
+    "function_file": "functions/14000fdb0_QuicStreamProcessStreamFrame.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Received %hu bytes, offset=%llu Ready=%hhu",
+      "Tried to write beyond end of buffer!",
+      "Tried to write beyond flow control limit!"
+    ],
+    "name": "QuicStreamProcessStreamFrame",
+    "prototype": "__int64 __fastcall(__int64, char, char *)",
+    "rank_score": 2156,
+    "size": 1669,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DataPathUninitialize",
+    "ea": "0x14003b3ac",
+    "function_file": "functions/14003b3ac_DataPathUninitialize.md",
+    "matched_imports": [
+      "NETIO!WskDeregister",
+      "NETIO!WskReleaseProviderNPI",
+      "ntoskrnl!ExDeleteLookasideListEx",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DataPathUninitialize",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 2014,
+    "size": 287,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "QuicStreamOnAck",
+    "ea": "0x140014630",
+    "function_file": "functions/140014630_QuicStreamOnAck.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Indicating QUIC_STREAM_EVENT_SEND_COMPLETE [%p]",
+      "Updated sent 0RTT length to %llu",
+      "Send queue completely drained"
+    ],
+    "name": "QuicStreamOnAck",
+    "prototype": "",
+    "rank_score": 1971,
+    "size": 1857,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "QuicCryptoTlsDecodeTransportParameters",
+    "ea": "0x14000db70",
+    "function_file": "functions/14000db70_QuicCryptoTlsDecodeTransportParameters.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "TP: Stateless Reset Token (%s)",
+      "Invalid length of QUIC_TP_ID_STATELESS_RESET_TOKEN",
+      "Client incorrectly provided stateless reset token"
+    ],
+    "name": "QuicCryptoTlsDecodeTransportParameters",
+    "prototype": "char __fastcall(__int64, unsigned __int8, __int64, unsigned __int16, char *)",
+    "rank_score": 1968,
+    "size": 4499,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CxPlatTlsSecConfigCreate",
+    "ea": "0x140036138",
+    "function_file": "functions/140036138_CxPlatTlsSecConfigCreate.md",
+    "matched_imports": [
+      "ksecdd!SspiCreateAsyncContext",
+      "ksecdd!SspiSetAsyncNotifyCallback",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!PsReferenceImpersonationToken",
+      "ntoskrnl!PsReferencePrimaryToken",
+      "ntoskrnl!RtlUTF8ToUnicodeN",
+      "ntoskrnl!_snprintf_s",
+      "ntoskrnl!strnlen"
+    ],
+    "matched_strings": [
+      "CXPLAT_SEC_CONFIG",
+      "Invalid flags passed in to CxPlatTlsSecConfigCreate",
+      "SspiCreateAsyncContext"
+    ],
+    "name": "CxPlatTlsSecConfigCreate",
+    "prototype": "",
+    "rank_score": 1966,
+    "size": 1970,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 1,
+    "demangled": "QuicConnParamSet",
+    "ea": "0x140001d6c",
+    "function_file": "functions/140001d6c_QuicConnParamSet.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Updated ShareBinding = %hhu",
+      "Updated Stream Scheduling Scheme = %u",
+      "Updated datagram receive enabled to %hhu",
+      "Updated disable 1-RTT encrytption to %hhu",
+      "Forcing key update",
+      "Forced key update",
+      "Forcing destination CID update"
+    ],
+    "name": "QuicConnParamSet",
+    "prototype": "",
+    "rank_score": 1956,
+    "size": 2756,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 12,
+    "demangled": "QuicConnFree",
+    "ea": "0x1400200d8",
+    "function_file": "functions/1400200d8_QuicConnFree.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!ObfDereferenceObjectWithTag",
+      "ntoskrnl!ObfReferenceObjectWithTag",
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread"
+    ],
+    "matched_strings": [],
+    "name": "QuicConnFree",
+    "prototype": "",
+    "rank_score": 1847,
+    "size": 889,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MsQuicListenerOpen",
+    "ea": "0x140026770",
+    "function_file": "functions/140026770_MsQuicListenerOpen.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!ObfReferenceObjectWithTag",
+      "ntoskrnl!PsGetCurrentServerSilo"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicListenerOpen",
+    "prototype": "",
+    "rank_score": 1820,
+    "size": 515,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 1,
+    "demangled": "QuicConnStart",
+    "ea": "0x140003fac",
+    "function_file": "functions/140003fac_QuicConnStart.md",
+    "matched_imports": [
+      "NDIS!NdisGetThreadObjectCompartmentId",
+      "NDIS!NdisSetThreadObjectCompartmentId",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "Set current compartment Id",
+      "Path->Binding == ((void *)0)"
+    ],
+    "name": "QuicConnStart",
+    "prototype": "",
+    "rank_score": 1730,
+    "size": 1198,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 27,
+    "caller_count": 1,
+    "demangled": "QuicCryptoProcessTlsCompletion",
+    "ea": "0x1400099b4",
+    "function_file": "functions/1400099b4_QuicCryptoProcessTlsCompletion.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Crypto->TlsState.WriteKeys[Crypto->TlsState.WriteKey] != ((void *)0)",
+      "Crypto->TlsState.WriteKey >= Crypto->TlsState.ReadKey",
+      "Crypto->TlsState.ReadKeys[Crypto->TlsState.ReadKey] != ((void *)0)",
+      "Crypto->TlsState.ReadKeys[QUIC_PACKET_KEY_1_RTT] != ((void *)0)",
+      "Crypto->TlsState.WriteKeys[QUIC_PACKET_KEY_1_RTT] != ((void *)0)"
+    ],
+    "name": "QuicCryptoProcessTlsCompletion",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 1659,
+    "size": 1745,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "MsQuicStreamSend",
+    "ea": "0x14000bf30",
+    "function_file": "functions/14000bf30_MsQuicStreamSend.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicStreamSend",
+    "prototype": "",
+    "rank_score": 1635,
+    "size": 1290,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "CxPlatDataPathSocketReceive",
+    "ea": "0x14003a300",
+    "function_file": "functions/14003a300_CxPlatDataPathSocketReceive.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExQueryDepthSList",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatDataPathSocketReceive",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64 *)",
+    "rank_score": 1625,
+    "size": 1881,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QuicConfigurationUninitialize",
+    "ea": "0x140020a04",
+    "function_file": "functions/140020a04_QuicConfigurationUninitialize.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ObfDereferenceObjectWithTag"
+    ],
+    "matched_strings": [],
+    "name": "QuicConfigurationUninitialize",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1618,
+    "size": 280,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "QuicConnProcessPeerVersionNegotiationTP",
+    "ea": "0x14002b054",
+    "function_file": "functions/14002b054_QuicConnProcessPeerVersionNegotiationTP.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Compatible version upgrade! Old: 0x%x, New: 0x%x",
+      "Compatible version upgrade! Old: 0x%x, New: 0x%x",
+      "Compatible Version negotiation not compatible with client: original 0x%x, upgrade: 0x%x"
+    ],
+    "name": "QuicConnProcessPeerVersionNegotiationTP",
+    "prototype": "",
+    "rank_score": 1550,
+    "size": 1383,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "CxPlatStorageOpen",
+    "ea": "0x140033bfc",
+    "function_file": "functions/140033bfc_CxPlatStorageOpen.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializePushLock",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwNotifyChangeKey",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "CxPlatStorageCreateAppKey failed",
+      "ZwOpenKey failed"
+    ],
+    "name": "CxPlatStorageOpen",
+    "prototype": "",
+    "rank_score": 1521,
+    "size": 558,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 37,
+    "caller_count": 3,
+    "demangled": "QuicSendFlush",
+    "ea": "0x140016210",
+    "function_file": "functions/140016210_QuicSendFlush.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Flush complete flags=0x%x"
+    ],
+    "name": "QuicSendFlush",
+    "prototype": "",
+    "rank_score": 1312,
+    "size": 3085,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "QuicBindingInitialize",
+    "ea": "0x140002e8c",
+    "function_file": "functions/140002e8c_QuicBindingInitialize.md",
+    "matched_imports": [
+      "NDIS!NdisGetThreadObjectCompartmentId",
+      "NDIS!NdisSetThreadObjectCompartmentId",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [
+      "Set current compartment Id",
+      "Create datapath binding"
+    ],
+    "name": "QuicBindingInitialize",
+    "prototype": "",
+    "rank_score": 1308,
+    "size": 771,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 1,
+    "demangled": "QuicBindingProcessStatelessOperation",
+    "ea": "0x1400401b4",
+    "function_file": "functions/1400401b4_QuicBindingProcessStatelessOperation.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[S][TX][-] LH Ver:0x%x DestCid:%s SrcCid:%s Type:R OrigDestCid:%s (Token %hu bytes)"
+    ],
+    "name": "QuicBindingProcessStatelessOperation",
+    "prototype": "",
+    "rank_score": 1283,
+    "size": 1706,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 2,
+    "demangled": "QuicStreamReceiveComplete",
+    "ea": "0x14000a6f0",
+    "function_file": "functions/14000a6f0_QuicStreamReceiveComplete.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Indicating QUIC_STREAM_EVENT_SHUTDOWN_COMPLETE [Shutdown=%hhu, ShutdownByApp=%hhu, ClosedRemotely=%hhu, ErrorCode=0x%llx, CloseStatus=0x%x]"
+    ],
+    "name": "QuicStreamReceiveComplete",
+    "prototype": "",
+    "rank_score": 1276,
+    "size": 1368,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "QuicLibrarySetRetryKeyConfig",
+    "ea": "0x140028ce4",
+    "function_file": "functions/140028ce4_QuicLibrarySetRetryKeyConfig.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireSpinLockExclusive",
+      "ntoskrnl!ExReleaseSpinLockExclusive",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[ lib] Stateless Retry Key updated. Algorithm: %d, RotationMs: %u"
+    ],
+    "name": "QuicLibrarySetRetryKeyConfig",
+    "prototype": "",
+    "rank_score": 1271,
+    "size": 499,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CxPlatTlsParamGet",
+    "ea": "0x140035c4c",
+    "function_file": "functions/140035c4c_CxPlatTlsParamGet.md",
+    "matched_imports": [
+      "ksecdd!QueryContextAttributesExW",
+      "ksecdd!QueryContextAttributesW",
+      "ksecdd!QuerySecurityContextToken"
+    ],
+    "matched_strings": [
+      "Query Application Protocol"
+    ],
+    "name": "CxPlatTlsParamGet",
+    "prototype": "",
+    "rank_score": 1261,
+    "size": 746,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CxPlatInitialize",
+    "ea": "0x140063008",
+    "function_file": "functions/140063008_CxPlatInitialize.md",
+    "matched_imports": [
+      "cng!BCryptCloseAlgorithmProvider",
+      "cng!BCryptOpenAlgorithmProvider",
+      "ntoskrnl!KeQueryActiveProcessorCountEx",
+      "ntoskrnl!RtlGetVersion",
+      "ntoskrnl!ZwQuerySystemInformation",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "BCryptOpenAlgorithmProvider (RNG)"
+    ],
+    "name": "CxPlatInitialize",
+    "prototype": "",
+    "rank_score": 1260,
+    "size": 426,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QuicListenerStopComplete",
+    "ea": "0x14002be60",
+    "function_file": "functions/14002be60_QuicListenerStopComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[list][%p] Indicating STOP_COMPLETE"
+    ],
+    "name": "QuicListenerStopComplete",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1259,
+    "size": 368,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 2,
+    "demangled": "QuicConnSetConfiguration",
+    "ea": "0x14000524c",
+    "function_file": "functions/14000524c_QuicConnSetConfiguration.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Configuration != ((void *)0)",
+      "Configuration->SecurityConfig != ((void *)0)",
+      "Configuration set, %p"
+    ],
+    "name": "QuicConnSetConfiguration",
+    "prototype": "",
+    "rank_score": 1168,
+    "size": 760,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "QuicSettingsLoad",
+    "ea": "0x140024810",
+    "function_file": "functions/140024810_QuicSettingsLoad.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "MtuDiscoverySearchCompleteTimeoutUs",
+      "DestCidUpdateIdleTimeoutMs"
+    ],
+    "name": "QuicSettingsLoad",
+    "prototype": "",
+    "rank_score": 1144,
+    "size": 3526,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "QuicLossDetectionProcessAckBlocks",
+    "ea": "0x140013b30",
+    "function_file": "functions/140013b30_QuicLossDetectionProcessAckBlocks.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Updated Rtt=%u.%03u ms, Var=%u.%03u 1Way=%u.%03u ms",
+      "[%c][TX][%llu] Spurious loss detected"
+    ],
+    "name": "QuicLossDetectionProcessAckBlocks",
+    "prototype": "",
+    "rank_score": 1137,
+    "size": 2688,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "MsQuicLibraryInitialize",
+    "ea": "0x140023f20",
+    "function_file": "functions/140023f20_MsQuicLibraryInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmIsVerifierEnabled",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[ lib] Failed to open global settings, 0x%x",
+      "default compatibility list"
+    ],
+    "name": "MsQuicLibraryInitialize",
+    "prototype": "",
+    "rank_score": 1125,
+    "size": 791,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "QuicPacketLogHeader",
+    "ea": "0x140041de0",
+    "function_file": "functions/140041de0_QuicPacketLogHeader.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[%c][%cX][-] LH Ver:0x%x DestCid:%s SrcCid:%s Type:R (Token %hu bytes)",
+      "[%c][%cX][%llu] LH Ver:0x%x DestCid:%s SrcCid:%s Type:I (Token %hu bytes) (Payload %hu bytes)"
+    ],
+    "name": "QuicPacketLogHeader",
+    "prototype": "",
+    "rank_score": 1104,
+    "size": 1774,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "QuicLibraryGetBinding",
+    "ea": "0x140004460",
+    "function_file": "functions/140004460_QuicLibraryGetBinding.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Binding already in use",
+      "Binding already in use"
+    ],
+    "name": "QuicLibraryGetBinding",
+    "prototype": "",
+    "rank_score": 1096,
+    "size": 710,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QuicWorkerInitialize",
+    "ea": "0x140001510",
+    "function_file": "functions/140001510_QuicWorkerInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [
+      "CxPlatThreadCreate"
+    ],
+    "name": "QuicWorkerInitialize",
+    "prototype": "",
+    "rank_score": 1061,
+    "size": 581,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "QuicWorkerProcessConnection",
+    "ea": "0x14000edc0",
+    "function_file": "functions/14000edc0_QuicWorkerProcessConnection.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicWorkerProcessConnection",
+    "prototype": "",
+    "rank_score": 1032,
+    "size": 871,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "CxPlatDataPathResolveAddress",
+    "ea": "0x140039e18",
+    "function_file": "functions/140039e18_CxPlatDataPathResolveAddress.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlUTF8ToUnicodeN",
+      "ntoskrnl!_snprintf_s",
+      "ntoskrnl!strnlen"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatDataPathResolveAddress",
+    "prototype": "",
+    "rank_score": 1025,
+    "size": 576,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "CxPlatStorageReadValue",
+    "ea": "0x140033e30",
+    "function_file": "functions/140033e30_CxPlatStorageReadValue.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatStorageReadValue",
+    "prototype": "",
+    "rank_score": 1020,
+    "size": 427,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CxPlatDataPathGetLocalAddresses",
+    "ea": "0x1400392d0",
+    "function_file": "functions/1400392d0_CxPlatDataPathGetLocalAddresses.md",
+    "matched_imports": [
+      "NETIO!FreeMibTable",
+      "NETIO!GetIpInterfaceTable",
+      "NETIO!GetUnicastIpAddressTable",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatDataPathGetLocalAddresses",
+    "prototype": "",
+    "rank_score": 1017,
+    "size": 494,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CxPlatStorageCreateAppKey",
+    "ea": "0x140033a6c",
+    "function_file": "functions/140033a6c_CxPlatStorageCreateAppKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlUTF8ToUnicodeN"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatStorageCreateAppKey",
+    "prototype": "__int64 __fastcall(PCCH UTF8StringSource)",
+    "rank_score": 1017,
+    "size": 393,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MsQuicOpenVersion",
+    "ea": "0x140028200",
+    "function_file": "functions/140028200_MsQuicOpenVersion.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Only v2 is supported in MsQuicOpenVersion",
+      "[ api] MsQuicOpenVersion, NULL",
+      "[ api] MsQuicOpenVersion",
+      "[ api] MsQuicOpenVersion, status=0x%x"
+    ],
+    "name": "MsQuicOpenVersion",
+    "prototype": "",
+    "rank_score": 1003,
+    "size": 835,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 1,
+    "demangled": "QuicConnRecvHeader",
+    "ea": "0x140015b70",
+    "function_file": "functions/140015b70_QuicConnRecvHeader.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "SH packet during version negotiation",
+      "Retry token decrypt failure"
+    ],
+    "name": "QuicConnRecvHeader",
+    "prototype": "char __fastcall(__int64, __int64, _OWORD *)",
+    "rank_score": 927,
+    "size": 1686,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 2,
+    "demangled": "QuicConnRecvDatagrams",
+    "ea": "0x140015480",
+    "function_file": "functions/140015480_QuicConnRecvDatagrams.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Max paths already tracked",
+      "Removing invalid path[%hhu]"
+    ],
+    "name": "QuicConnRecvDatagrams",
+    "prototype": "char __fastcall(__int64, _QWORD *, __int64, __int64, char)",
+    "rank_score": 926,
+    "size": 1762,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "QuicStreamInitialize",
+    "ea": "0x14000bad0",
+    "function_file": "functions/14000bad0_QuicStreamInitialize.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Configured for delayed ID FC updates"
+    ],
+    "name": "QuicStreamInitialize",
+    "prototype": "",
+    "rank_score": 888,
+    "size": 1111,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 12,
+    "demangled": "QuicConnTryClose",
+    "ea": "0x14001c664",
+    "function_file": "functions/14001c664_QuicConnTryClose.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Connection close complete"
+    ],
+    "name": "QuicConnTryClose",
+    "prototype": "",
+    "rank_score": 887,
+    "size": 1035,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 2,
+    "demangled": "QuicLossDetectionOnPacketAcknowledged",
+    "ea": "0x140013550",
+    "function_file": "functions/140013550_QuicLossDetectionOnPacketAcknowledged.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] Minimum MTU validated"
+    ],
+    "name": "QuicLossDetectionOnPacketAcknowledged",
+    "prototype": "",
+    "rank_score": 879,
+    "size": 1258,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "QuicConnRecvVerNeg",
+    "ea": "0x1400430f0",
+    "function_file": "functions/1400430f0_QuicConnRecvVerNeg.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Failed to update crypto on ver neg"
+    ],
+    "name": "QuicConnRecvVerNeg",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 869,
+    "size": 624,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "QuicVersionNegotiationExtEncodeVersionInfo",
+    "ea": "0x14002a180",
+    "function_file": "functions/14002a180_QuicVersionNegotiationExtEncodeVersionInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Client VI Encoded: Current Ver:%x Prev Ver:%x Compat Ver Count:%u"
+    ],
+    "name": "QuicVersionNegotiationExtEncodeVersionInfo",
+    "prototype": "",
+    "rank_score": 863,
+    "size": 754,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "QuicConnRecvPostProcessing",
+    "ea": "0x140013200",
+    "function_file": "functions/140013200_QuicConnRecvPostProcessing.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "No unused CID for new path"
+    ],
+    "name": "QuicConnRecvPostProcessing",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 860,
+    "size": 842,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "MsQuicRelease",
+    "ea": "0x140025700",
+    "function_file": "functions/140025700_MsQuicRelease.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "MsQuicLib.OpenRefCount > 0"
+    ],
+    "name": "MsQuicRelease",
+    "prototype": "",
+    "rank_score": 856,
+    "size": 122,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "MsQuicListenerStart",
+    "ea": "0x140002840",
+    "function_file": "functions/140002840_MsQuicListenerStart.md",
+    "matched_imports": [
+      "NDIS!NdisGetThreadObjectCompartmentId",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeResetEvent"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicListenerStart",
+    "prototype": "",
+    "rank_score": 834,
+    "size": 1116,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MsQuicStreamClose",
+    "ea": "0x14001fc30",
+    "function_file": "functions/14001fc30_MsQuicStreamClose.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicStreamClose",
+    "prototype": "",
+    "rank_score": 829,
+    "size": 906,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "MsQuicStreamProvideReceiveBuffers",
+    "ea": "0x140029bb0",
+    "function_file": "functions/140029bb0_MsQuicStreamProvideReceiveBuffers.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExQueryDepthSList",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicStreamProvideReceiveBuffers",
+    "prototype": "",
+    "rank_score": 829,
+    "size": 826,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "QuicLibraryGenerateStatelessResetToken",
+    "ea": "0x140028658",
+    "function_file": "functions/140028658_QuicLibraryGenerateStatelessResetToken.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "QuicLibraryGenerateStatelessResetToken",
+    "prototype": "",
+    "rank_score": 817,
+    "size": 182,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 10,
+    "demangled": "QuicWorkerQueueConnection",
+    "ea": "0x14000c5b0",
+    "function_file": "functions/14000c5b0_QuicWorkerQueueConnection.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "QuicWorkerQueueConnection",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 817,
+    "size": 311,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CxPlatDataPathResolveAddressWithHint",
+    "ea": "0x14003a060",
+    "function_file": "functions/14003a060_CxPlatDataPathResolveAddressWithHint.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatDataPathResolveAddressWithHint",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 297,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicPartitionUpdateStatelessResetKey",
+    "ea": "0x140028ee0",
+    "function_file": "functions/140028ee0_QuicPartitionUpdateStatelessResetKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!ExReleasePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "QuicPartitionUpdateStatelessResetKey",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 134,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CxPlatTlsSecConfigDelete",
+    "ea": "0x1400368f0",
+    "function_file": "functions/1400368f0_CxPlatTlsSecConfigDelete.md",
+    "matched_imports": [
+      "ksecdd!FreeCredentialsHandle",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!PsDereferenceImpersonationToken",
+      "ntoskrnl!PsDereferencePrimaryToken"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatTlsSecConfigDelete",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 814,
+    "size": 102,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QuicLookupMoveLocalConnectionIDs",
+    "ea": "0x1400452d0",
+    "function_file": "functions/1400452d0_QuicLookupMoveLocalConnectionIDs.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireSpinLockExclusive",
+      "ntoskrnl!ExReleaseSpinLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "QuicLookupMoveLocalConnectionIDs",
+    "prototype": "",
+    "rank_score": 807,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CxPlatDataPathFreeRxIoBlock",
+    "ea": "0x140039218",
+    "function_file": "functions/140039218_CxPlatDataPathFreeRxIoBlock.md",
+    "matched_imports": [
+      "ntoskrnl!ExQueryDepthSList",
+      "ntoskrnl!ExpInterlockedPushEntrySList"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatDataPathFreeRxIoBlock",
+    "prototype": "",
+    "rank_score": 804,
+    "size": 176,
+    "tags": []
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "QuicStreamSetGetStreamForPeer",
+    "ea": "0x140010440",
+    "function_file": "functions/140010440_QuicStreamSetGetStreamForPeer.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Configured for delayed ID FC updates",
+      "Remote tried to open stream it wasn't allowed to open."
+    ],
+    "name": "QuicStreamSetGetStreamForPeer",
+    "prototype": "",
+    "rank_score": 732,
+    "size": 985,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CxPlatTlsInitialize",
+    "ea": "0x140035a24",
+    "function_file": "functions/140035a24_CxPlatTlsInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Mismatched SEC_CONFIG IsServer state",
+      "TLS context Created"
+    ],
+    "name": "CxPlatTlsInitialize",
+    "prototype": "",
+    "rank_score": 711,
+    "size": 544,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 1,
+    "demangled": "QuicConnRecvDecryptAndAuthenticate",
+    "ea": "0x140012630",
+    "function_file": "functions/140012630_QuicConnRecvDecryptAndAuthenticate.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Updating current read key phase and packet number[%llu]"
+    ],
+    "name": "QuicConnRecvDecryptAndAuthenticate",
+    "prototype": "char __fastcall(__int64, __int64, __int64)",
+    "rank_score": 682,
+    "size": 1606,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14006503c",
+    "function_file": "functions/14006503c_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread",
+      "ntoskrnl!PsGetHostSilo"
+    ],
+    "matched_strings": [
+      "WdfDriverCreate"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 670,
+    "size": 265,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "QuicBindingCreateStatelessOperation",
+    "ea": "0x14003ff2c",
+    "function_file": "functions/14003ff2c_QuicBindingCreateStatelessOperation.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "Already in stateless oper table"
+    ],
+    "name": "QuicBindingCreateStatelessOperation",
+    "prototype": "",
+    "rank_score": 667,
+    "size": 640,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QuicStreamOnBytesDelivered",
+    "ea": "0x14000acfc",
+    "function_file": "functions/14000acfc_QuicStreamOnBytesDelivered.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Increasing max RX buffer size to %u (MinRtt=%llu; TimeNow=%llu; LastUpdate=%llu)"
+    ],
+    "name": "QuicStreamOnBytesDelivered",
+    "prototype": "",
+    "rank_score": 661,
+    "size": 550,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "QuicStreamOnLoss",
+    "ea": "0x14001ec64",
+    "function_file": "functions/14001ec64_QuicStreamOnLoss.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Recovering open STREAM frame"
+    ],
+    "name": "QuicStreamOnLoss",
+    "prototype": "",
+    "rank_score": 652,
+    "size": 630,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QuicBindingRegisterListener",
+    "ea": "0x140002ca4",
+    "function_file": "functions/140002ca4_QuicBindingRegisterListener.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireSpinLockExclusive",
+      "ntoskrnl!ExReleaseSpinLockExclusive",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[bind][%p] Listener (%p) already registered on ALPN"
+    ],
+    "name": "QuicBindingRegisterListener",
+    "prototype": "",
+    "rank_score": 650,
+    "size": 482,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "QuicTimerWheelUpdateConnection",
+    "ea": "0x14000f400",
+    "function_file": "functions/14000f400_QuicTimerWheelUpdateConnection.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicTimerWheelUpdateConnection",
+    "prototype": "",
+    "rank_score": 624,
+    "size": 599,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MsQuicGetParam",
+    "ea": "0x140023350",
+    "function_file": "functions/140023350_MsQuicGetParam.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicGetParam",
+    "prototype": "",
+    "rank_score": 623,
+    "size": 614,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MsQuicSetParam",
+    "ea": "0x1400018a0",
+    "function_file": "functions/1400018a0_MsQuicSetParam.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicSetParam",
+    "prototype": "",
+    "rank_score": 623,
+    "size": 601,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 10,
+    "demangled": "QuicConnTimerCancel",
+    "ea": "0x14000d7a0",
+    "function_file": "functions/14000d7a0_QuicConnTimerCancel.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicConnTimerCancel",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 622,
+    "size": 694,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "QuicStreamWriteStreamFrames",
+    "ea": "0x1400183d0",
+    "function_file": "functions/1400183d0_QuicStreamWriteStreamFrames.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicStreamWriteStreamFrames",
+    "prototype": "",
+    "rank_score": 622,
+    "size": 1293,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MsQuicConnectionClose",
+    "ea": "0x14001d490",
+    "function_file": "functions/14001d490_MsQuicConnectionClose.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicConnectionClose",
+    "prototype": "",
+    "rank_score": 621,
+    "size": 544,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "QuicListenerClaimConnection",
+    "ea": "0x140003198",
+    "function_file": "functions/140003198_QuicListenerClaimConnection.md",
+    "matched_imports": [
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicListenerClaimConnection",
+    "prototype": "bool __fastcall(_QWORD *, __int64, __int64)",
+    "rank_score": 621,
+    "size": 424,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "QuicWorkerThread",
+    "ea": "0x14000f660",
+    "function_file": "functions/14000f660_QuicWorkerThread.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!PsTerminateSystemThread"
+    ],
+    "matched_strings": [],
+    "name": "QuicWorkerThread",
+    "prototype": "",
+    "rank_score": 619,
+    "size": 436,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QuicWorkerMoveConnection",
+    "ea": "0x140022528",
+    "function_file": "functions/140022528_QuicWorkerMoveConnection.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "QuicWorkerMoveConnection",
+    "prototype": "",
+    "rank_score": 618,
+    "size": 278,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CxPlatHpKeyCreate",
+    "ea": "0x14003495c",
+    "function_file": "functions/14003495c_CxPlatHpKeyCreate.md",
+    "matched_imports": [
+      "cng!BCryptGenerateSymmetricKey",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatHpKeyCreate",
+    "prototype": "",
+    "rank_score": 617,
+    "size": 374,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CxPlatDataPathSetControlSocket",
+    "ea": "0x14003a1f4",
+    "function_file": "functions/14003a1f4_CxPlatDataPathSetControlSocket.md",
+    "matched_imports": [
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!KeResetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatDataPathSetControlSocket",
+    "prototype": "__int64 __fastcall(int, int, int, int, PLARGE_INTEGER, __int64)",
+    "rank_score": 615,
+    "size": 262,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CxPlatTlsResetSchannel",
+    "ea": "0x14003609c",
+    "function_file": "functions/14003609c_CxPlatTlsResetSchannel.md",
+    "matched_imports": [
+      "ksecdd!SspiCreateAsyncContext",
+      "ksecdd!SspiDeleteSecurityContextAsync",
+      "ksecdd!SspiFreeAsyncContext"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatTlsResetSchannel",
+    "prototype": "",
+    "rank_score": 614,
+    "size": 148,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "CxPlatHashtableUninitialize",
+    "ea": "0x140038bf4",
+    "function_file": "functions/140038bf4_CxPlatHashtableUninitialize.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatHashtableUninitialize",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 610,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "QuicRetryTokenDecrypt",
+    "ea": "0x1400424d4",
+    "function_file": "functions/1400424d4_QuicRetryTokenDecrypt.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "QuicRetryTokenDecrypt",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 609,
+    "size": 371,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "QuicLookupRemoveRemoteHash",
+    "ea": "0x14001de64",
+    "function_file": "functions/14001de64_QuicLookupRemoveRemoteHash.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireSpinLockExclusive",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseSpinLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "QuicLookupRemoveRemoteHash",
+    "prototype": "",
+    "rank_score": 607,
+    "size": 159,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicLookupRemoveLocalCids",
+    "ea": "0x14001d6fc",
+    "function_file": "functions/14001d6fc_QuicLookupRemoveLocalCids.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireSpinLockExclusive",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseSpinLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "QuicLookupRemoveLocalCids",
+    "prototype": "",
+    "rank_score": 605,
+    "size": 204,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "EvtDriverUnload",
+    "ea": "0x140063360",
+    "function_file": "functions/140063360_EvtDriverUnload.md",
+    "matched_imports": [
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread",
+      "ntoskrnl!PsGetHostSilo"
+    ],
+    "matched_strings": [],
+    "name": "EvtDriverUnload",
+    "prototype": "",
+    "rank_score": 603,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QuicMtuDiscoveryOnAckedPacket",
+    "ea": "0x140030ad0",
+    "function_file": "functions/140030ad0_QuicMtuDiscoveryOnAckedPacket.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] Mtu Discovery Received Out of Order: expected=%u received=%u",
+      "Path[%hhu] MTU updated to %hu bytes"
+    ],
+    "name": "QuicMtuDiscoveryOnAckedPacket",
+    "prototype": "",
+    "rank_score": 508,
+    "size": 276,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 3,
+    "demangled": "QuicPacketBuilderFinalize",
+    "ea": "0x140017580",
+    "function_file": "functions/140017580_QuicPacketBuilderFinalize.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Send-triggered key update"
+    ],
+    "name": "QuicPacketBuilderFinalize",
+    "prototype": "",
+    "rank_score": 507,
+    "size": 2751,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "QuicPathUpdateQeo",
+    "ea": "0x14002fdc4",
+    "function_file": "functions/14002fdc4_QuicPathUpdateQeo.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] QEO enabled",
+      "Path[%hhu] QEO disabled"
+    ],
+    "name": "QuicPathUpdateQeo",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 503,
+    "size": 631,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "QuicStreamCompleteSendRequest",
+    "ea": "0x140026d9c",
+    "function_file": "functions/140026d9c_QuicStreamCompleteSendRequest.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Indicating QUIC_STREAM_EVENT_SEND_COMPLETE [%p] (Canceled)",
+      "Indicating QUIC_STREAM_EVENT_SEND_COMPLETE [%p]"
+    ],
+    "name": "QuicStreamCompleteSendRequest",
+    "prototype": "",
+    "rank_score": 502,
+    "size": 378,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QuicMtuDiscoveryProbePacketDiscarded",
+    "ea": "0x140030cd4",
+    "function_file": "functions/140030cd4_QuicMtuDiscoveryProbePacketDiscarded.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] Mtu Discovery Received Out of Order: expected=%u received=%u",
+      "Path[%hhu] Mtu Discovery Packet Discarded: size=%u, probe_count=%u"
+    ],
+    "name": "QuicMtuDiscoveryProbePacketDiscarded",
+    "prototype": "",
+    "rank_score": 498,
+    "size": 300,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "CxPlatSocketCreateUdp",
+    "ea": "0x14003501c",
+    "function_file": "functions/14003501c_CxPlatSocketCreateUdp.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[sock] Failed to create socket, status:%d",
+      "[sock] Failed to create raw socket, status:%d"
+    ],
+    "name": "CxPlatSocketCreateUdp",
+    "prototype": "",
+    "rank_score": 490,
+    "size": 366,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QuicCryptoProcessDataFrame",
+    "ea": "0x140009438",
+    "function_file": "functions/140009438_QuicCryptoProcessDataFrame.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Tried to write beyond crypto flow control limit.",
+      "Received %hu crypto bytes, offset=%llu Ready=%hhu"
+    ],
+    "name": "QuicCryptoProcessDataFrame",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, unsigned __int8 *)",
+    "rank_score": 487,
+    "size": 243,
+    "tags": []
+  },
+  {
+    "callee_count": 22,
+    "caller_count": 3,
+    "demangled": "QuicStreamStart",
+    "ea": "0x14000ca70",
+    "function_file": "functions/14000ca70_QuicStreamStart.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Indicating QUIC_STREAM_EVENT_START_COMPLETE [Status=0x%x ID=%llu Accepted=%hhu]"
+    ],
+    "name": "QuicStreamStart",
+    "prototype": "",
+    "rank_score": 487,
+    "size": 1583,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MsQuicConnectionSendResumptionTicket",
+    "ea": "0x140040e60",
+    "function_file": "functions/140040e60_MsQuicConnectionSendResumptionTicket.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "Resumption data copy"
+    ],
+    "name": "MsQuicConnectionSendResumptionTicket",
+    "prototype": "",
+    "rank_score": 473,
+    "size": 617,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CxPlatTlsSspiNotifyCallback",
+    "ea": "0x140036b90",
+    "function_file": "functions/140036b90_CxPlatTlsSspiNotifyCallback.md",
+    "matched_imports": [
+      "ksecdd!SspiGetAsyncCallStatus",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [
+      "Completion for SspiAcquireCredentialsHandleAsyncW"
+    ],
+    "name": "CxPlatTlsSspiNotifyCallback",
+    "prototype": "void __stdcall(SspiAsyncContext *Handle, PVOID CallbackData)",
+    "rank_score": 469,
+    "size": 314,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 5,
+    "demangled": "QuicLossDetectionRetransmitFrames",
+    "ea": "0x14001e3b0",
+    "function_file": "functions/14001e3b0_QuicLossDetectionRetransmitFrames.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] validation timed out"
+    ],
+    "name": "QuicLossDetectionRetransmitFrames",
+    "prototype": "",
+    "rank_score": 466,
+    "size": 982,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QuicConnRecvPrepareDecrypt",
+    "ea": "0x140012f10",
+    "function_file": "functions/140012f10_QuicConnRecvPrepareDecrypt.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Possible peer initiated key update [packet %llu]"
+    ],
+    "name": "QuicConnRecvPrepareDecrypt",
+    "prototype": "char __fastcall(__int64, __int64, char *)",
+    "rank_score": 461,
+    "size": 733,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "QuicMtuDiscoveryMoveToSearchComplete",
+    "ea": "0x140030940",
+    "function_file": "functions/140030940_QuicMtuDiscoveryMoveToSearchComplete.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] Mtu Discovery Entering Search Complete at MTU %hu"
+    ],
+    "name": "QuicMtuDiscoveryMoveToSearchComplete",
+    "prototype": "",
+    "rank_score": 458,
+    "size": 177,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "QuicConnRetireCurrentDestCid",
+    "ea": "0x1400228b8",
+    "function_file": "functions/1400228b8_QuicConnRetireCurrentDestCid.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Can't retire current CID because we don't have a replacement"
+    ],
+    "name": "QuicConnRetireCurrentDestCid",
+    "prototype": "",
+    "rank_score": 449,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "QuicConnRecvRetry",
+    "ea": "0x140042e10",
+    "function_file": "functions/140042e10_QuicConnRecvRetry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [
+      "Already received server response",
+      "No room for Retry Token",
+      "InitialToken",
+      "InitialToken alloc failed",
+      "Failed to create initial keys"
+    ],
+    "name": "QuicConnRecvRetry",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 440,
+    "size": 728,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "FxDriverEntryWorker",
+    "ea": "0x1400277d4",
+    "function_file": "functions/1400277d4_FxDriverEntryWorker.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrintEx",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "FxDriverEntryWorker",
+    "prototype": "__int64 __fastcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 430,
+    "size": 345,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "QuicConfigurationParamSet",
+    "ea": "0x140041588",
+    "function_file": "functions/140041588_QuicConfigurationParamSet.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicConfigurationParamSet",
+    "prototype": "",
+    "rank_score": 425,
+    "size": 591,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 19,
+    "demangled": "CxPlatPoolFree",
+    "ea": "0x140029104",
+    "function_file": "functions/140029104_CxPlatPoolFree.md",
+    "matched_imports": [
+      "ntoskrnl!ExQueryDepthSList",
+      "ntoskrnl!ExpInterlockedPushEntrySList"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatPoolFree",
+    "prototype": "",
+    "rank_score": 421,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QuicCryptoTlsReadExtensions",
+    "ea": "0x140020e98",
+    "function_file": "functions/140020e98_QuicCryptoTlsReadExtensions.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Parse error. ReadTlsExt #1",
+      "Parse error. ReadTlsExt #2",
+      "Duplicate SNI extension present",
+      "Duplicate ALPN extension present",
+      "Duplicate QUIC TP extension present",
+      "Duplicate QUIC (draft) TP extension present",
+      "No QUIC TP extension present",
+      "Parse error. ReadTlsAlpn #1",
+      "Parse error. ReadTlsAlpn #2",
+      "Parse error. ReadTlsAlpn #3"
+    ],
+    "name": "QuicCryptoTlsReadExtensions",
+    "prototype": "__int64 __fastcall(unsigned __int64, unsigned __int8 *, unsigned __int16, __int64)",
+    "rank_score": 420,
+    "size": 698,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "SocketDelete",
+    "ea": "0x14003c178",
+    "function_file": "functions/14003c178_SocketDelete.md",
+    "matched_imports": [
+      "ntoskrnl!ExWaitForRundownProtectionRelease",
+      "ntoskrnl!IoReuseIrp"
+    ],
+    "matched_strings": [],
+    "name": "SocketDelete",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 420,
+    "size": 229,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "QuicTimerWheelUpdate",
+    "ea": "0x14000da60",
+    "function_file": "functions/14000da60_QuicTimerWheelUpdate.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicTimerWheelUpdate",
+    "prototype": "",
+    "rank_score": 419,
+    "size": 258,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QuicStreamWriteOneFrame",
+    "ea": "0x1400188f0",
+    "function_file": "functions/1400188f0_QuicStreamWriteOneFrame.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicStreamWriteOneFrame",
+    "prototype": "",
+    "rank_score": 418,
+    "size": 1504,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MsQuicListenerClose",
+    "ea": "0x140043a00",
+    "function_file": "functions/140043a00_MsQuicListenerClose.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicListenerClose",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 417,
+    "size": 221,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QuicLibraryLoadRetryConfig",
+    "ea": "0x140028b3c",
+    "function_file": "functions/140028b3c_QuicLibraryLoadRetryConfig.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireSpinLockShared",
+      "ntoskrnl!ExReleaseSpinLockShared"
+    ],
+    "matched_strings": [],
+    "name": "QuicLibraryLoadRetryConfig",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 345,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "CxPlatHashCompute",
+    "ea": "0x1400346f8",
+    "function_file": "functions/1400346f8_CxPlatHashCompute.md",
+    "matched_imports": [
+      "cng!BCryptFinishHash",
+      "cng!BCryptHashData"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatHashCompute",
+    "prototype": "__int64 __usercall@<rax>(BCRYPT_HASH_HANDLE hHash@<rcx>, PUCHAR pbOutput)",
+    "rank_score": 416,
+    "size": 135,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CxPlatHpComputeMask",
+    "ea": "0x140034838",
+    "function_file": "functions/140034838_CxPlatHpComputeMask.md",
+    "matched_imports": [
+      "cng!BCryptEncrypt"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatHpComputeMask",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 416,
+    "size": 285,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QuicListenerHandleDosModeStateChange",
+    "ea": "0x14002bd08",
+    "function_file": "functions/14002bd08_QuicListenerHandleDosModeStateChange.md",
+    "matched_imports": [
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread"
+    ],
+    "matched_strings": [],
+    "name": "QuicListenerHandleDosModeStateChange",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 133,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MsQuicDeregisterNmrProvider",
+    "ea": "0x140027d54",
+    "function_file": "functions/140027d54_MsQuicDeregisterNmrProvider.md",
+    "matched_imports": [
+      "NETIO!NmrDeregisterProvider",
+      "NETIO!NmrWaitForProviderDeregisterComplete"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicDeregisterNmrProvider",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "CxPlatSocketDeleteComplete",
+    "ea": "0x14003ae64",
+    "function_file": "functions/14003ae64_CxPlatSocketDeleteComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCleanupIrp"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatSocketDeleteComplete",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 412,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QuicCryptoWriteOneFrame",
+    "ea": "0x14001ba44",
+    "function_file": "functions/14001ba44_QuicCryptoWriteOneFrame.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicCryptoWriteOneFrame",
+    "prototype": "",
+    "rank_score": 408,
+    "size": 381,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "QuicRangeRemoveSubranges",
+    "ea": "0x140021898",
+    "function_file": "functions/140021898_QuicRangeRemoveSubranges.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "QuicRangeRemoveSubranges",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 407,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QuicLookupCreateHashTable",
+    "ea": "0x140023d7c",
+    "function_file": "functions/140023d7c_QuicLookupCreateHashTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "QuicLookupCreateHashTable",
+    "prototype": "",
+    "rank_score": 406,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "QuicLookupRemoveLocalCidInt",
+    "ea": "0x14001d7f4",
+    "function_file": "functions/14001d7f4_QuicLookupRemoveLocalCidInt.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireSpinLockExclusive",
+      "ntoskrnl!ExReleaseSpinLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "QuicLookupRemoveLocalCidInt",
+    "prototype": "",
+    "rank_score": 406,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QuicWorkerProcessTimers",
+    "ea": "0x14000fac0",
+    "function_file": "functions/14000fac0_QuicWorkerProcessTimers.md",
+    "matched_imports": [
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread"
+    ],
+    "matched_strings": [],
+    "name": "QuicWorkerProcessTimers",
+    "prototype": "",
+    "rank_score": 406,
+    "size": 248,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicLookupRemoveLocalCid",
+    "ea": "0x14001dfec",
+    "function_file": "functions/14001dfec_QuicLookupRemoveLocalCid.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireSpinLockExclusive",
+      "ntoskrnl!ExReleaseSpinLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "QuicLookupRemoveLocalCid",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MsQuicConnectionPoolCreate",
+    "ea": "0x14002db50",
+    "function_file": "functions/14002db50_MsQuicConnectionPoolCreate.md",
+    "matched_imports": [
+      "ntoskrnl!strnlen"
+    ],
+    "matched_strings": [
+      "Connection Pool Config",
+      "Connection Pool SecurityConfig",
+      "Connection Pool CIBIR config"
+    ],
+    "name": "MsQuicConnectionPoolCreate",
+    "prototype": "",
+    "rank_score": 354,
+    "size": 715,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QuicCryptoTlsReadInitial",
+    "ea": "0x140020c50",
+    "function_file": "functions/140020c50_QuicCryptoTlsReadInitial.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Invalid message in TlsReadInitial",
+      "No ALPN list extension present",
+      "No SNI extension present"
+    ],
+    "name": "QuicCryptoTlsReadInitial",
+    "prototype": "__int64 __fastcall(__int64, _BYTE *, unsigned int, __int64)",
+    "rank_score": 336,
+    "size": 216,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "QuicPathRemove",
+    "ea": "0x140048c78",
+    "function_file": "functions/140048c78_QuicPathRemove.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Index < Connection->PathsCount",
+      "C:\\__w\\1\\s\\msquic\\src\\core\\path.c",
+      "Path[%hhu] Removed"
+    ],
+    "name": "QuicPathRemove",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 332,
+    "size": 282,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "QuicPathSetValid",
+    "ea": "0x14002157c",
+    "function_file": "functions/14002157c_QuicPathSetValid.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Initial Token",
+      "Path Response",
+      "Path[%hhu] Validated (%s)"
+    ],
+    "name": "QuicPathSetValid",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 329,
+    "size": 226,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicCryptoTlsReadClientHello",
+    "ea": "0x140020d30",
+    "function_file": "functions/140020d30_QuicCryptoTlsReadClientHello.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Parse error. ReadTlsClientHello #1",
+      "Parse error. ReadTlsClientHello #2",
+      "Parse error. ReadTlsClientHello #3",
+      "Parse error. ReadTlsClientHello #4",
+      "Parse error. ReadTlsClientHello #5",
+      "Parse error. ReadTlsClientHello #6",
+      "Parse error. ReadTlsClientHello #7"
+    ],
+    "name": "QuicCryptoTlsReadClientHello",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *, unsigned int)",
+    "rank_score": 296,
+    "size": 354,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QuicConnReplaceRetiredCids",
+    "ea": "0x140022950",
+    "function_file": "functions/140022950_QuicConnReplaceRetiredCids.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Active path has no replacement for retired CID",
+      "Non-active path has no replacement for retired CID."
+    ],
+    "name": "QuicConnReplaceRetiredCids",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 289,
+    "size": 325,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 17,
+    "demangled": "QuicConnIndicateEvent",
+    "ea": "0x14001dcd0",
+    "function_file": "functions/14001dcd0_QuicConnIndicateEvent.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Connection->State.HandleClosed || Connection->State.ShutdownComplete || !Connection->State.ExternalOwner"
+    ],
+    "name": "QuicConnIndicateEvent",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 283,
+    "size": 214,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 3,
+    "demangled": "QuicConnOnShutdownComplete",
+    "ea": "0x14001d88c",
+    "function_file": "functions/14001d88c_QuicConnOnShutdownComplete.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Indicating QUIC_CONNECTION_EVENT_SHUTDOWN_COMPLETE"
+    ],
+    "name": "QuicConnOnShutdownComplete",
+    "prototype": "",
+    "rank_score": 279,
+    "size": 442,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 4,
+    "demangled": "QuicCryptoProcessData",
+    "ea": "0x140009534",
+    "function_file": "functions/140009534_QuicCryptoProcessData.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "No complete TLS messages to process"
+    ],
+    "name": "QuicCryptoProcessData",
+    "prototype": "",
+    "rank_score": 275,
+    "size": 716,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "QuicCryptoDecodeClientTicket",
+    "ea": "0x140045e34",
+    "function_file": "functions/140045e34_QuicCryptoDecodeClientTicket.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [
+      "Resumption ticket copy"
+    ],
+    "name": "QuicCryptoDecodeClientTicket",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64, char *, _QWORD *, _DWORD *, _DWORD *)",
+    "rank_score": 272,
+    "size": 631,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MsQuicLibraryReadSettings",
+    "ea": "0x140024240",
+    "function_file": "functions/140024240_MsQuicLibraryReadSettings.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[ lib] Settings %p Updated"
+    ],
+    "name": "MsQuicLibraryReadSettings",
+    "prototype": "",
+    "rank_score": 270,
+    "size": 195,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "QuicConfigurationSettingsChanged",
+    "ea": "0x140025d70",
+    "function_file": "functions/140025d70_QuicConfigurationSettingsChanged.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[cnfg][%p] Settings %p Updated"
+    ],
+    "name": "QuicConfigurationSettingsChanged",
+    "prototype": "",
+    "rank_score": 270,
+    "size": 132,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "QuicConnRestart",
+    "ea": "0x140043368",
+    "function_file": "functions/140043368_QuicConnRestart.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Restart (CompleteReset=%hhu)"
+    ],
+    "name": "QuicConnRestart",
+    "prototype": "",
+    "rank_score": 269,
+    "size": 591,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "QuicConnRecvDatagramBatch",
+    "ea": "0x140012c80",
+    "function_file": "functions/140012c80_QuicConnRecvDatagramBatch.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Failed to compute HP mask"
+    ],
+    "name": "QuicConnRecvDatagramBatch",
+    "prototype": "char __fastcall(__int64, __int64, unsigned __int8, _QWORD *, __int64, __int64)",
+    "rank_score": 266,
+    "size": 646,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QuicStreamSetUpdateMaxCount",
+    "ea": "0x1400051c0",
+    "function_file": "functions/1400051c0_QuicStreamSetUpdateMaxCount.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "App configured max stream count of %hu (type=%hhu)."
+    ],
+    "name": "QuicStreamSetUpdateMaxCount",
+    "prototype": "",
+    "rank_score": 266,
+    "size": 131,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "QuicStreamSetUpdateMaxStreams",
+    "ea": "0x14001da4c",
+    "function_file": "functions/14001da4c_QuicStreamSetUpdateMaxStreams.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Peer updated max stream count (%hhu, %llu)."
+    ],
+    "name": "QuicStreamSetUpdateMaxStreams",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 263,
+    "size": 411,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "QuicConnProcessRouteCompletion",
+    "ea": "0x14002b5c4",
+    "function_file": "functions/14002b5c4_QuicConnProcessRouteCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Route resolution failed on Path[%hhu]. Switching paths..."
+    ],
+    "name": "QuicConnProcessRouteCompletion",
+    "prototype": "",
+    "rank_score": 262,
+    "size": 296,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "QuicMtuDiscoveryMoveToSearching",
+    "ea": "0x1400309f8",
+    "function_file": "functions/1400309f8_QuicMtuDiscoveryMoveToSearching.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] Mtu Discovery Search Packet Sending with MTU %hu"
+    ],
+    "name": "QuicMtuDiscoveryMoveToSearching",
+    "prototype": "",
+    "rank_score": 260,
+    "size": 208,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "CxPlatHashCreate",
+    "ea": "0x140034788",
+    "function_file": "functions/140034788_CxPlatHashCreate.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash"
+    ],
+    "matched_strings": [
+      "BCryptCreateHash"
+    ],
+    "name": "CxPlatHashCreate",
+    "prototype": "",
+    "rank_score": 259,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MsQuicConnectionShutdown",
+    "ea": "0x140022270",
+    "function_file": "functions/140022270_MsQuicConnectionShutdown.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [
+      "(Connection->WorkerThreadID == ((CXPLAT_THREAD_ID)PsGetCurrentThreadId())) || !Connection->State.HandleClosed"
+    ],
+    "name": "MsQuicConnectionShutdown",
+    "prototype": "",
+    "rank_score": 259,
+    "size": 458,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "QuicStreamIndicateSendShutdownComplete",
+    "ea": "0x14000b1f8",
+    "function_file": "functions/14000b1f8_QuicStreamIndicateSendShutdownComplete.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Indicating QUIC_STREAM_EVENT_SEND_SHUTDOWN_COMPLETE"
+    ],
+    "name": "QuicStreamIndicateSendShutdownComplete",
+    "prototype": "",
+    "rank_score": 259,
+    "size": 125,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QuicStreamSendBufferRequest",
+    "ea": "0x14000a120",
+    "function_file": "functions/14000a120_QuicStreamSendBufferRequest.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Indicating QUIC_STREAM_EVENT_SEND_COMPLETE [%p]"
+    ],
+    "name": "QuicStreamSendBufferRequest",
+    "prototype": "",
+    "rank_score": 259,
+    "size": 297,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "QuicStreamIndicateShutdownComplete",
+    "ea": "0x14000b098",
+    "function_file": "functions/14000b098_QuicStreamIndicateShutdownComplete.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Indicating QUIC_STREAM_EVENT_SHUTDOWN_COMPLETE [Shutdown=%hhu, ShutdownByApp=%hhu, ClosedRemotely=%hhu, ErrorCode=0x%llx, CloseStatus=0x%x]"
+    ],
+    "name": "QuicStreamIndicateShutdownComplete",
+    "prototype": "",
+    "rank_score": 258,
+    "size": 345,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "QuicStreamIndicateStartComplete",
+    "ea": "0x140026cb4",
+    "function_file": "functions/140026cb4_QuicStreamIndicateStartComplete.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Indicating QUIC_STREAM_EVENT_START_COMPLETE [Status=0x%x ID=%llu Accepted=%hhu]"
+    ],
+    "name": "QuicStreamIndicateStartComplete",
+    "prototype": "",
+    "rank_score": 258,
+    "size": 226,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CxPlatDataPathSendComplete",
+    "ea": "0x14003a190",
+    "function_file": "functions/14003a190_CxPlatDataPathSendComplete.md",
+    "matched_imports": [
+      "ntoskrnl!IoCleanupIrp"
+    ],
+    "matched_strings": [
+      "WskSendMessages completion"
+    ],
+    "name": "CxPlatDataPathSendComplete",
+    "prototype": "",
+    "rank_score": 253,
+    "size": 91,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "QuicPathSetActive",
+    "ea": "0x140048d98",
+    "function_file": "functions/140048d98_QuicPathSetActive.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] Set active (rebind=%hhu)"
+    ],
+    "name": "QuicPathSetActive",
+    "prototype": "",
+    "rank_score": 251,
+    "size": 688,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "QuicPathInitialize",
+    "ea": "0x1400078c8",
+    "function_file": "functions/1400078c8_QuicPathInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] Initialized"
+    ],
+    "name": "QuicPathInitialize",
+    "prototype": "",
+    "rank_score": 249,
+    "size": 276,
+    "tags": []
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 1,
+    "demangled": "QuicSendWriteFrames",
+    "ea": "0x140019040",
+    "function_file": "functions/140019040_QuicSendWriteFrames.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "QuicSendWriteFrames",
+    "prototype": "",
+    "rank_score": 249,
+    "size": 3005,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "QuicMtuDiscoveryPeerValidated",
+    "ea": "0x140030bec",
+    "function_file": "functions/140030bec_QuicMtuDiscoveryPeerValidated.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "Path[%hhu] Mtu Discovery Initialized: max_mtu=%u, cur/min_mtu=%u"
+    ],
+    "name": "QuicMtuDiscoveryPeerValidated",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 248,
+    "size": 223,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CxPlatDataPathInitialize",
+    "ea": "0x140034d44",
+    "function_file": "functions/140034d44_CxPlatDataPathInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [
+      "[  dp] Failed to initialize datapath, status:%d"
+    ],
+    "name": "CxPlatDataPathInitialize",
+    "prototype": "",
+    "rank_score": 246,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 25,
+    "demangled": "QuicSendSetSendFlag",
+    "ea": "0x14000d490",
+    "function_file": "functions/14000d490_QuicSendSetSendFlag.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicSendSetSendFlag",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 240,
+    "size": 416,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 45,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x14003e8c4",
+    "function_file": "functions/14003e8c4_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 236,
+    "size": 91,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "QuicSettingsCopyVersionSettings",
+    "ea": "0x14002c014",
+    "function_file": "functions/14002c014_QuicSettingsCopyVersionSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "QuicSettingsCopyVersionSettings",
+    "prototype": "",
+    "rank_score": 228,
+    "size": 348,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CxPlatTlsSecConfigSetTicketKeys",
+    "ea": "0x14003695c",
+    "function_file": "functions/14003695c_CxPlatTlsSecConfigSetTicketKeys.md",
+    "matched_imports": [
+      "ksecdd!SetCredentialsAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatTlsSecConfigSetTicketKeys",
+    "prototype": "__int64 __fastcall(PCredHandle phCredential)",
+    "rank_score": 227,
+    "size": 299,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "MsQuicStreamShutdown",
+    "ea": "0x14000b850",
+    "function_file": "functions/14000b850_MsQuicStreamShutdown.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "MsQuicStreamShutdown",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 619,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "QuicLossDetectionUpdateTimer",
+    "ea": "0x14000f130",
+    "function_file": "functions/14000f130_QuicLossDetectionUpdateTimer.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "QuicLossDetectionUpdateTimer",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 568,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "QuicBindingCreateConnection",
+    "ea": "0x1400038cc",
+    "function_file": "functions/1400038cc_QuicBindingCreateConnection.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "QuicBindingCreateConnection",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 567,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QuicSettingsCopy",
+    "ea": "0x140025dfc",
+    "function_file": "functions/140025dfc_QuicSettingsCopy.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "QuicSettingsCopy",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 1199,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 6,
+    "demangled": "CubicCongestionControlUpdateBlockedState",
+    "ea": "0x140031d60",
+    "function_file": "functions/140031d60_CubicCongestionControlUpdateBlockedState.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "CubicCongestionControlUpdateBlockedState",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 124,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 20,
+    "demangled": "CxPlatPoolAlloc",
+    "ea": "0x1400290b4",
+    "function_file": "functions/1400290b4_CxPlatPoolAlloc.md",
+    "matched_imports": [
+      "ntoskrnl!ExpInterlockedPopEntrySList"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatPoolAlloc",
+    "prototype": "PSLIST_ENTRY __fastcall(__int64)",
+    "rank_score": 222,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "QuicConnUpdateDestCid",
+    "ea": "0x140021e20",
+    "function_file": "functions/140021e20_QuicConnUpdateDestCid.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "QuicConnUpdateDestCid",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 222,
+    "size": 394,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 11,
+    "demangled": "QuicSendSetStreamSendFlag",
+    "ea": "0x14000d230",
+    "function_file": "functions/14000d230_QuicSendSetStreamSendFlag.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicSendSetStreamSendFlag",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 495,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "QuicCryptoCustomCertValidationComplete",
+    "ea": "0x14002efdc",
+    "function_file": "functions/14002efdc_QuicCryptoCustomCertValidationComplete.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicCryptoCustomCertValidationComplete",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 266,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "BbrCongestionControlUpdateBlockedState",
+    "ea": "0x1400332fc",
+    "function_file": "functions/1400332fc_BbrCongestionControlUpdateBlockedState.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "BbrCongestionControlUpdateBlockedState",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 124,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "QuicCryptoProcessDataComplete",
+    "ea": "0x1400098e8",
+    "function_file": "functions/1400098e8_QuicCryptoProcessDataComplete.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicCryptoProcessDataComplete",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 195,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "QuicPacketValidateInitialToken",
+    "ea": "0x14002a048",
+    "function_file": "functions/14002a048_QuicPacketValidateInitialToken.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "New Token not supported",
+      "Invalid Token Length",
+      "Retry Token Decryption Failure",
+      "Invalid Retry Token OrigConnId Length",
+      "Retry Token Addr Mismatch"
+    ],
+    "name": "QuicPacketValidateInitialToken",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 226,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "QuicTimerWheelRemoveConnection",
+    "ea": "0x140022644",
+    "function_file": "functions/140022644_QuicTimerWheelRemoveConnection.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicTimerWheelRemoveConnection",
+    "prototype": "",
+    "rank_score": 219,
+    "size": 197,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "QuicConnUpdatePeerPacketTolerance",
+    "ea": "0x14002ba00",
+    "function_file": "functions/14002ba00_QuicConnUpdatePeerPacketTolerance.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicConnUpdatePeerPacketTolerance",
+    "prototype": "",
+    "rank_score": 217,
+    "size": 188,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 8,
+    "demangled": "QuicStreamShutdown",
+    "ea": "0x14000b60c",
+    "function_file": "functions/14000b60c_QuicStreamShutdown.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicStreamShutdown",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 253,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CxPlatKeyCreate",
+    "ea": "0x140034c90",
+    "function_file": "functions/140034c90_CxPlatKeyCreate.md",
+    "matched_imports": [
+      "cng!BCryptGenerateSymmetricKey"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatKeyCreate",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 137,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicCryptoTlsCopyTransportParameters",
+    "ea": "0x140030388",
+    "function_file": "functions/140030388_QuicCryptoTlsCopyTransportParameters.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "QuicCryptoTlsCopyTransportParameters",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 238,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 11,
+    "demangled": "QuicStreamIndicateEvent",
+    "ea": "0x14000b27c",
+    "function_file": "functions/14000b27c_QuicStreamIndicateEvent.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicStreamIndicateEvent",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "QuicPacketKeyFree",
+    "ea": "0x140008ef0",
+    "function_file": "functions/140008ef0_QuicPacketKeyFree.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "QuicPacketKeyFree",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 214,
+    "size": 88,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 13,
+    "demangled": "QuicTimePlat",
+    "ea": "0x14003e884",
+    "function_file": "functions/14003e884_QuicTimePlat.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "QuicTimePlat",
+    "prototype": "__int64(void)",
+    "rank_score": 213,
+    "size": 24,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CxPlatSecConfigParamSet",
+    "ea": "0x140035648",
+    "function_file": "functions/140035648_CxPlatSecConfigParamSet.md",
+    "matched_imports": [
+      "ksecdd!SetCredentialsAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatSecConfigParamSet",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 93,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "QuicSendClearStreamSendFlag",
+    "ea": "0x14000b32c",
+    "function_file": "functions/14000b32c_QuicSendClearStreamSendFlag.md",
+    "matched_imports": [
+      "ntoskrnl!_snprintf_s"
+    ],
+    "matched_strings": [],
+    "name": "QuicSendClearStreamSendFlag",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 193,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QuicSentPacketPoolInitialize",
+    "ea": "0x14000175c",
+    "function_file": "functions/14000175c_QuicSentPacketPoolInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeLookasideListEx"
+    ],
+    "matched_strings": [],
+    "name": "QuicSentPacketPoolInitialize",
+    "prototype": "__int64 __fastcall(PLOOKASIDE_LIST_EX Lookaside)",
+    "rank_score": 212,
+    "size": 102,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 11,
+    "demangled": "CxPlatRandom",
+    "ea": "0x140033810",
+    "function_file": "functions/140033810_CxPlatRandom.md",
+    "matched_imports": [
+      "cng!BCryptGenRandom"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatRandom",
+    "prototype": "__int64 __fastcall(ULONG cbBuffer)",
+    "rank_score": 211,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CxPlatDataPathIoCompletion",
+    "ea": "0x1400394d0",
+    "function_file": "functions/1400394d0_CxPlatDataPathIoCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatDataPathIoCompletion",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "QuicWorkerThreadWake",
+    "ea": "0x14002e7a4",
+    "function_file": "functions/14002e7a4_QuicWorkerThreadWake.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "QuicWorkerThreadWake",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CxPlatMdlMapChain",
+    "ea": "0x14003aa60",
+    "function_file": "functions/14003aa60_CxPlatMdlMapChain.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "CxPlatMdlMapChain",
+    "prototype": "__int64 __fastcall(PMDL MemoryDescriptorList)",
+    "rank_score": 202,
+    "size": 76,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "QuicCryptoTlsReadSniExtension",
+    "ea": "0x1400494ec",
+    "function_file": "functions/1400494ec_QuicCryptoTlsReadSniExtension.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Parse error. ReadTlsSni #1",
+      "Parse error. ReadTlsSni #2",
+      "Parse error. ReadTlsSni #3",
+      "Parse error. ReadTlsSni #4"
+    ],
+    "name": "QuicCryptoTlsReadSniExtension",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *, unsigned __int16, __int64)",
+    "rank_score": 175,
+    "size": 305,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "QuicConnGenerateLocalTransportParameters",
+    "ea": "0x14000577c",
+    "function_file": "functions/14000577c_QuicConnGenerateLocalTransportParameters.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Connection->Configuration != ((void *)0)",
+      "QuicLibraryGenerateStatelessResetToken"
+    ],
+    "name": "QuicConnGenerateLocalTransportParameters",
+    "prototype": "",
+    "rank_score": 106,
+    "size": 799,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "QuicCryptoGenerateNewKeys",
+    "ea": "0x1400465f4",
+    "function_file": "functions/1400465f4_QuicCryptoGenerateNewKeys.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Failed to update read packet key.",
+      "Failed to update write packet key"
+    ],
+    "name": "QuicCryptoGenerateNewKeys",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 100,
+    "size": 272,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "QuicPacketValidateLongHeaderV1",
+    "ea": "0x140021340",
+    "function_file": "functions/140021340_QuicPacketValidateLongHeaderV1.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Long header has invalid token length",
+      "Long header has token length larger than buffer length"
+    ],
+    "name": "QuicPacketValidateLongHeaderV1",
+    "prototype": "char __fastcall(__int64, unsigned __int8, __int64, unsigned __int8 **, _WORD *, char)",
+    "rank_score": 90,
+    "size": 563,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MsQuicConnectionSetConfiguration",
+    "ea": "0x140022710",
+    "function_file": "functions/140022710_MsQuicConnectionSetConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CONN_SET_CONFIGURATION operation"
+    ],
+    "name": "MsQuicConnectionSetConfiguration",
+    "prototype": "",
+    "rank_score": 72,
+    "size": 416,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MsQuicStreamReceiveComplete",
+    "ea": "0x140041220",
+    "function_file": "functions/140041220_MsQuicStreamReceiveComplete.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RecvCompletionLength is overflow"
+    ],
+    "name": "MsQuicStreamReceiveComplete",
+    "prototype": "",
+    "rank_score": 62,
+    "size": 458,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "QuicPartitionGetStatelessRetryKey",
+    "ea": "0x14002d33c",
+    "function_file": "functions/14002d33c_QuicPartitionGetStatelessRetryKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Create stateless retry key"
+    ],
+    "name": "QuicPartitionGetStatelessRetryKey",
+    "prototype": "",
+    "rank_score": 60,
+    "size": 293,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MsQuicConnectionCertificateValidationComplete",
+    "ea": "0x140029810",
+    "function_file": "functions/140029810_MsQuicConnectionCertificateValidationComplete.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CONN_COMPLETE_CERTIFICATE_VALIDATION operation"
+    ],
+    "name": "MsQuicConnectionCertificateValidationComplete",
+    "prototype": "",
+    "rank_score": 59,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MsQuicConnectionResumptionTicketValidationComplete",
+    "ea": "0x140029a60",
+    "function_file": "functions/140029a60_MsQuicConnectionResumptionTicketValidationComplete.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CONN_COMPLETE_RESUMPTION_TICKET_VALIDATION operation"
+    ],
+    "name": "MsQuicConnectionResumptionTicketValidationComplete",
+    "prototype": "",
+    "rank_score": 59,
+    "size": 322,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "QuicCryptoOnVersionChange",
+    "ea": "0x14002f204",
+    "function_file": "functions/14002f204_QuicCryptoOnVersionChange.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Crypto->TlsState.WriteKeys[QUIC_PACKET_KEY_INITIAL] != ((void *)0)"
+    ],
+    "name": "QuicCryptoOnVersionChange",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 54,
+    "size": 439,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CxPlatDataPathCloseSocketIoCompletion",
+    "ea": "0x1400391c0",
+    "function_file": "functions/1400391c0_CxPlatDataPathCloseSocketIoCompletion.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "WskCloseSocket completion"
+    ],
+    "name": "CxPlatDataPathCloseSocketIoCompletion",
+    "prototype": "",
+    "rank_score": 53,
+    "size": 80,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "MsQuicLibraryUnload",
+    "ea": "0x14003ee80",
+    "function_file": "functions/14003ee80_MsQuicLibraryUnload.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MsQuicLib.OpenRefCount == 0"
+    ],
+    "name": "MsQuicLibraryUnload",
+    "prototype": "__int64(void)",
+    "rank_score": 48,
+    "size": 162,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 250,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14003c8e0",
+    "function_file": "functions/14003c8e0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 57,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x14003c980",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 71,
+    "demangled": "memmove",
+    "ea": "0x14003cb00",
+    "function_file": "functions/14003cb00_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 137,
+    "demangled": "McTemplateU0ps_EtwWriteTransfer",
+    "ea": "0x14003ec10",
+    "function_file": "functions/14003ec10_McTemplateU0ps_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0ps_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 29,
+    "size": 140,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 26,
+    "demangled": "McTemplateU0qs_EtwWriteTransfer",
+    "ea": "0x14003e928",
+    "function_file": "functions/14003e928_McTemplateU0qs_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0qs_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 29,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 76,
+    "demangled": "McTemplateU0sx_EtwWriteTransfer",
+    "ea": "0x14003ed00",
+    "function_file": "functions/14003ed00_McTemplateU0sx_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0sx_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 29,
+    "size": 149,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 61,
+    "demangled": "memset",
+    "ea": "0x14003ce00",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 24,
+    "demangled": "McTemplateU0pqs_EtwWriteTransfer",
+    "ea": "0x14003fdf8",
+    "function_file": "functions/14003fdf8_McTemplateU0pqs_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pqs_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 165,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 54,
+    "demangled": "McTemplateU0s_EtwWriteTransfer",
+    "ea": "0x14003ead8",
+    "function_file": "functions/14003ead8_McTemplateU0s_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0s_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 28,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 82,
+    "demangled": "CxPlatLogAssert",
+    "ea": "0x1400337e4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatLogAssert",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 27,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 28,
+    "demangled": "McTemplateU0p_EtwWriteTransfer",
+    "ea": "0x1400291f0",
+    "function_file": "functions/1400291f0_McTemplateU0p_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0p_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 27,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 30,
+    "demangled": "McTemplateU0qp_EtwWriteTransfer",
+    "ea": "0x140040c2c",
+    "function_file": "functions/140040c2c_McTemplateU0qp_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0qp_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 117,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MsQuicConfigurationLoadCredential",
+    "ea": "0x140020010",
+    "function_file": "functions/140020010_MsQuicConfigurationLoadCredential.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MsQuicConfigurationLoadCredential",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 191,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 29,
+    "demangled": "QuicConnCloseLocally",
+    "ea": "0x14001c638",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConnCloseLocally",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 27,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 32,
+    "demangled": "QuicTimePlatToUs64",
+    "ea": "0x140010820",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicTimePlatToUs64",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 27,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CubicCongestionControlOnSpuriousCongestionEvent",
+    "ea": "0x140031b70",
+    "function_file": "functions/140031b70_CubicCongestionControlOnSpuriousCongestionEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CubicCongestionControlOnSpuriousCongestionEvent",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 208,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 23,
+    "demangled": "McTemplateU0pu_EtwWriteTransfer",
+    "ea": "0x1400426e8",
+    "function_file": "functions/1400426e8_McTemplateU0pu_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pu_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 25,
+    "size": 110,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 23,
+    "demangled": "McTemplateU0q_EtwWriteTransfer",
+    "ea": "0x14003eca4",
+    "function_file": "functions/14003eca4_McTemplateU0q_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0q_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 22,
+    "demangled": "QuicConnQueueOper",
+    "ea": "0x14000c4b8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConnQueueOper",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 24,
+    "demangled": "QuicVarIntEncode",
+    "ea": "0x14001b360",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicVarIntEncode",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "QuicVarIntDecode",
+    "ea": "0x14000ed10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicVarIntDecode",
+    "prototype": "char __fastcall(unsigned __int16, __int64, _WORD *, unsigned __int64 *)",
+    "rank_score": 24,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MsQuicConfigurationLoadCredentialComplete",
+    "ea": "0x140026b30",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MsQuicConfigurationLoadCredentialComplete",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 36,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 20,
+    "demangled": "QuicPacketLogDrop",
+    "ea": "0x140026a88",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicPacketLogDrop",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 23,
+    "size": 155,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14003c78c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 96,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "QuicPacketKeyUpdate",
+    "ea": "0x14004a1f8",
+    "function_file": "functions/14004a1f8_QuicPacketKeyUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicPacketKeyUpdate",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 299,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "QuicRecvBufferWrite",
+    "ea": "0x14000fbc0",
+    "function_file": "functions/14000fbc0_QuicRecvBufferWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicRecvBufferWrite",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned __int16, __int64, unsigned __int64, _QWORD *, bool *, _QWORD *)",
+    "rank_score": 21,
+    "size": 372,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QuicConnGetPathForPacket",
+    "ea": "0x14002fbf8",
+    "function_file": "functions/14002fbf8_QuicConnGetPathForPacket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConnGetPathForPacket",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 20,
+    "size": 454,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "QuicCryptoCustomTicketValidationComplete",
+    "ea": "0x14002f0ec",
+    "function_file": "functions/14002f0ec_QuicCryptoCustomTicketValidationComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicCryptoCustomTicketValidationComplete",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 274,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 17,
+    "demangled": "QuicOperationAlloc",
+    "ea": "0x14000c440",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicOperationAlloc",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 112,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "QuicStreamTryCompleteShutdown",
+    "ea": "0x14000b710",
+    "function_file": "functions/14000b710_QuicStreamTryCompleteShutdown.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicStreamTryCompleteShutdown",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 98,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "QuicConfigurationRelease",
+    "ea": "0x1400207e0",
+    "function_file": "functions/1400207e0_QuicConfigurationRelease.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConfigurationRelease",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 36,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 19,
+    "demangled": "QuicConnIsClient",
+    "ea": "0x140029ef0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConnIsClient",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 19,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 13,
+    "demangled": "QuicSendQueueFlush",
+    "ea": "0x14000d638",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicSendQueueFlush",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 19,
+    "size": 144,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "McTemplateU0_EtwWriteTransfer",
+    "ea": "0x14003eb54",
+    "function_file": "functions/14003eb54_McTemplateU0_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "McTemplateU0pq_EtwWriteTransfer",
+    "ea": "0x14003fd84",
+    "function_file": "functions/14003fd84_McTemplateU0pq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 110,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "QuicCryptoUpdateKeyPhase",
+    "ea": "0x140046774",
+    "function_file": "functions/140046774_QuicCryptoUpdateKeyPhase.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicCryptoUpdateKeyPhase",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 18,
+    "size": 311,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "QuicPathSetAllowance",
+    "ea": "0x140021664",
+    "function_file": "functions/140021664_QuicPathSetAllowance.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicPathSetAllowance",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 18,
+    "size": 96,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "BbrCongestionControlUpdateCongestionWindow",
+    "ea": "0x140033380",
+    "function_file": "functions/140033380_BbrCongestionControlUpdateCongestionWindow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BbrCongestionControlUpdateCongestionWindow",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 237,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "CxPlatRefIncrement",
+    "ea": "0x14002974c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatRefIncrement",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 17,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MsQuicStreamOpen",
+    "ea": "0x14000af30",
+    "function_file": "functions/14000af30_MsQuicStreamOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MsQuicStreamOpen",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 351,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "QuicAddrCompare",
+    "ea": "0x140004840",
+    "function_file": "functions/140004840_QuicAddrCompare.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicAddrCompare",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 49,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "McTemplateU0pp_EtwWriteTransfer",
+    "ea": "0x140040de8",
+    "function_file": "functions/140040de8_McTemplateU0pp_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pp_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 16,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MsQuicConnectionOpenInPartition",
+    "ea": "0x140029970",
+    "function_file": "functions/140029970_MsQuicConnectionOpenInPartition.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MsQuicConnectionOpenInPartition",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 221,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 12,
+    "demangled": "QuicStreamRelease",
+    "ea": "0x1400145c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicStreamRelease",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "QuicStreamSendWrite",
+    "ea": "0x140018050",
+    "function_file": "functions/140018050_QuicStreamSendWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicStreamSendWrite",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 851,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BbrCongestionControlUpdateAckAggregation",
+    "ea": "0x140033220",
+    "function_file": "functions/140033220_BbrCongestionControlUpdateAckAggregation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BbrCongestionControlUpdateAckAggregation",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 213,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "FxStubDriverUnloadCommon(void)",
+    "ea": "0x140027760",
+    "function_file": "functions/140027760_FxStubDriverUnloadCommon_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FxStubDriverUnloadCommon@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 15,
+    "size": 48,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140049f70",
+    "function_file": "functions/140049f70_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 15,
+    "size": 321,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "QuicSendUpdateAckState",
+    "ea": "0x14001b700",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicSendUpdateAckState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 98,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QuicSlidingWindowExtremumUpdateMax",
+    "ea": "0x1400336a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicSlidingWindowExtremumUpdateMax",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 227,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "QuicWorkerIsIdle",
+    "ea": "0x14000c6f0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicWorkerIsIdle",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 31,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CxPlatToeplitzHashComputeAddr",
+    "ea": "0x14002dfd4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatToeplitzHashComputeAddr",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 152,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MsQuicConfigurationClose",
+    "ea": "0x14001ffc0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MsQuicConfigurationClose",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 60,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicConfigurationParamGet",
+    "ea": "0x140041508",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConfigurationParamGet",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 122,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "QuicMtuDiscoveryCheckSearchCompleteTimeout",
+    "ea": "0x1400300d4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicMtuDiscoveryCheckSearchCompleteTimeout",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 139,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "QuicSendPathChallenges",
+    "ea": "0x140049050",
+    "function_file": "functions/140049050_QuicSendPathChallenges.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicSendPathChallenges",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 480,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "QuicVersionNegotiationExtGenerateCompatibleVersionsList",
+    "ea": "0x14002a478",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicVersionNegotiationExtGenerateCompatibleVersionsList",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 219,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CxPlatSocketUpdateQeo",
+    "ea": "0x140039090",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatSocketUpdateQeo",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 45,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CxPlatToeplitzHashCompute",
+    "ea": "0x1400352d8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatToeplitzHashCompute",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 92,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CxPlatUpdateRoute",
+    "ea": "0x1400390c4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatUpdateRoute",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 13,
+    "size": 66,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "QuicConnOnRetirePriorToUpdated",
+    "ea": "0x140022ac8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConnOnRetirePriorToUpdated",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 13,
+    "size": 118,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "QuicRangeCompare",
+    "ea": "0x14001fbfc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicRangeCompare",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 13,
+    "size": 33,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "QuicVersionNegotiationExtAreVersionsCompatible",
+    "ea": "0x14002a130",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicVersionNegotiationExtAreVersionsCompatible",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 73,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "QuicVersionNegotiationExtIsVersionCompatible",
+    "ea": "0x14002a5b8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicVersionNegotiationExtIsVersionCompatible",
+    "prototype": "__int64(void)",
+    "rank_score": 13,
+    "size": 117,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BbrCongestionControlUpdateRecoveryWindow",
+    "ea": "0x140033474",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BbrCongestionControlUpdateRecoveryWindow",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 91,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "FxDriverEntry",
+    "ea": "0x1400277a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "FxDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 12,
+    "size": 44,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "McTemplateU0pxubr2_EtwWriteTransfer",
+    "ea": "0x1400427e0",
+    "function_file": "functions/1400427e0_McTemplateU0pxubr2_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxubr2_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 146,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QuicCongestionControlOnSpuriousCongestionEvent",
+    "ea": "0x140030300",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicCongestionControlOnSpuriousCongestionEvent",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 19,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QuicCryptoTlsGetCompleteTlsMessagesLength",
+    "ea": "0x14003047c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicCryptoTlsGetCompleteTlsMessagesLength",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 63,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "QuicPacketKeyCreateInitial",
+    "ea": "0x1400087bc",
+    "function_file": "functions/1400087bc_QuicPacketKeyCreateInitial.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicPacketKeyCreateInitial",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 386,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QuicSendUpdateStreamPriority",
+    "ea": "0x1400301b8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicSendUpdateStreamPriority",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 75,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140065008",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "memcmp",
+    "ea": "0x14003c9e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memcmp",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 12,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "BbrCongestionControlOnSpuriousCongestionEvent",
+    "ea": "0x140031180",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BbrCongestionControlOnSpuriousCongestionEvent",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "CxPlatRecvDataReturn",
+    "ea": "0x140034e44",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatRecvDataReturn",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 10,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "McTemplateU0pubr1_EtwWriteTransfer",
+    "ea": "0x14003fea4",
+    "function_file": "functions/14003fea4_McTemplateU0pubr1_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pubr1_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 127,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "QuicConnRemoveOutFlowBlockedReason",
+    "ea": "0x1400216cc",
+    "function_file": "functions/1400216cc_QuicConnRemoveOutFlowBlockedReason.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConnRemoveOutFlowBlockedReason",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 10,
+    "size": 284,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "QuicCryptoWriteFrames",
+    "ea": "0x14001bbc8",
+    "function_file": "functions/14001bbc8_QuicCryptoWriteFrames.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicCryptoWriteFrames",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 249,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "QuicStreamRemoveOutFlowBlockedReason",
+    "ea": "0x14000d6d0",
+    "function_file": "functions/14000d6d0_QuicStreamRemoveOutFlowBlockedReason.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicStreamRemoveOutFlowBlockedReason",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 202,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 9,
+    "demangled": "QuicConnIsServer",
+    "ea": "0x1400123b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConnIsServer",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 9,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QuicCryptoWriteCryptoFrames",
+    "ea": "0x14001b7ec",
+    "function_file": "functions/14001b7ec_QuicCryptoWriteCryptoFrames.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicCryptoWriteCryptoFrames",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 592,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QuicPacketKeyCreate",
+    "ea": "0x140008af8",
+    "function_file": "functions/140008af8_QuicPacketKeyCreate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicPacketKeyCreate",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "CxPlatHashtableRemove",
+    "ea": "0x140038bc8",
+    "function_file": "functions/140038bc8_CxPlatHashtableRemove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatHashtableRemove",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QuicDatagramWriteFrame",
+    "ea": "0x140045ccc",
+    "function_file": "functions/140045ccc_QuicDatagramWriteFrame.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicDatagramWriteFrame",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 351,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "McTemplateU0ppubr2ubr4_EtwWriteTransfer",
+    "ea": "0x14003fcc4",
+    "function_file": "functions/14003fcc4_McTemplateU0ppubr2ubr4_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0ppubr2ubr4_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 183,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "McTemplateU0psq_EtwWriteTransfer",
+    "ea": "0x140029624",
+    "function_file": "functions/140029624_McTemplateU0psq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0psq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 155,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pxqqxxqsq_EtwWriteTransfer",
+    "ea": "0x14002a9ec",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxqqxxqsq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 275,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "McTemplateU0pxuu_EtwWriteTransfer",
+    "ea": "0x14004290c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxuu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QuicRecvBufferCopyIntoChunks",
+    "ea": "0x14002ea74",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicRecvBufferCopyIntoChunks",
+    "prototype": "unsigned __int64 __fastcall(__int64, unsigned __int64, unsigned __int16, char *)",
+    "rank_score": 6,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "QuicRecvBufferHasUnreadData",
+    "ea": "0x140008778",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicRecvBufferHasUnreadData",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 6,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CxPlatIsRouteReady",
+    "ea": "0x140030044",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatIsRouteReady",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateU0ppxu_EtwWriteTransfer",
+    "ea": "0x140044c28",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0ppxu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pubr1ubr3s_EtwWriteTransfer",
+    "ea": "0x1400417e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pubr1ubr3s_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 216,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateU0pxqq_EtwWriteTransfer",
+    "ea": "0x140029770",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateU0pxqqxxxxx_EtwWriteTransfer",
+    "ea": "0x140031f28",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxqqxxxxx_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 232,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "McTemplateU0pxu_EtwWriteTransfer",
+    "ea": "0x14004275c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pxubr2ubr4s_EtwWriteTransfer",
+    "ea": "0x1400418c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxubr2ubr4s_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 230,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateU0pxuh_EtwWriteTransfer",
+    "ea": "0x140042878",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxuh_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateU0qqqq_EtwWriteTransfer",
+    "ea": "0x14002808c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0qqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 149,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0qss_EtwWriteTransfer",
+    "ea": "0x14004a12c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0qss_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 198,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicRecvBufferRead",
+    "ea": "0x140009808",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicRecvBufferRead",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 217,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CxPlatListMoveItems",
+    "ea": "0x1400296c8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatListMoveItems",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateU0hbr0_EtwWriteTransfer",
+    "ea": "0x14003eb98",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0hbr0_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 111,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0php_EtwWriteTransfer",
+    "ea": "0x1400453d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0php_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pqhubr3ubr5_EtwWriteTransfer",
+    "ea": "0x14004a32c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pqhubr3ubr5_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 198,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pqqq_EtwWriteTransfer",
+    "ea": "0x140031e8c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 149,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pqqqq_EtwWriteTransfer",
+    "ea": "0x140049ec0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pqqqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pqqqqqxxq_EtwWriteTransfer",
+    "ea": "0x1400334d8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pqqqqqxxq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 232,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pquhubr4ubr6_EtwWriteTransfer",
+    "ea": "0x14004a3f8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pquhubr4ubr6_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 222,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateU0pqx_EtwWriteTransfer",
+    "ea": "0x140042668",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pqx_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 121,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pqxxxiu_EtwWriteTransfer",
+    "ea": "0x14003020c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pqxxxiu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 178,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pubr1ubr3_EtwWriteTransfer",
+    "ea": "0x14003b4d4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pubr1ubr3_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0puq_EtwWriteTransfer",
+    "ea": "0x14004545c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0puq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0puqh_EtwWriteTransfer",
+    "ea": "0x140049238",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0puqh_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 149,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pux_EtwWriteTransfer",
+    "ea": "0x14002a960",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pux_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pxx_EtwWriteTransfer",
+    "ea": "0x1400429a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxx_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pxxxxxxxx_EtwWriteTransfer",
+    "ea": "0x140042a2c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pxxxxxxxx_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 232,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateU0u_EtwWriteTransfer",
+    "ea": "0x140028128",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0u_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuicBindingRemoveConnection",
+    "ea": "0x14001d6b8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicBindingRemoveConnection",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "QuicConnGetMaxMtuForPath",
+    "ea": "0x140030844",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConnGetMaxMtuForPath",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "QuicConnGetPathByID",
+    "ea": "0x140048c38",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicConnGetPathByID",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QuicCopyRouteInfo",
+    "ea": "0x140035258",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicCopyRouteInfo",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QuicNewTokenFrameDecode",
+    "ea": "0x140048920",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicNewTokenFrameDecode",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 4,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TlsWriteTransportParam",
+    "ea": "0x14001b3c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TlsWriteTransportParam",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0pqq_EtwWriteTransfer",
+    "ea": "0x14002a8dc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0pqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0xx_EtwWriteTransfer",
+    "ea": "0x140030e08",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0xx_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 112,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "QuicLibraryGetDatapathFeatures",
+    "ea": "0x140028714",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicLibraryGetDatapathFeatures",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 11,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "QuicPathChallengeFrameDecode",
+    "ea": "0x140048980",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicPathChallengeFrameDecode",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 3,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "QuicPathChallengeFrameEncode",
+    "ea": "0x1400489b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicPathChallengeFrameEncode",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "QuicStreamSendCanWriteDataFrames",
+    "ea": "0x140021158",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicStreamSendCanWriteDataFrames",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "TlsWriteTransportParamVarInt",
+    "ea": "0x14001b2f8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TlsWriteTransportParamVarInt",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CxPlatDataPathIsPaddingPreferred",
+    "ea": "0x140034e08",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatDataPathIsPaddingPreferred",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 26,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CxPlatDataPathUninitialize",
+    "ea": "0x140034e2c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatDataPathUninitialize",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CxPlatSocketDelete",
+    "ea": "0x140035190",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CxPlatSocketDelete",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MsQuicConnectionOpen",
+    "ea": "0x140003390",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MsQuicConnectionOpen",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QuicLibraryOnHandshakeConnectionRemoved",
+    "ea": "0x140028cc0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicLibraryOnHandshakeConnectionRemoved",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QuicPacketDecodeRetryTokenV1",
+    "ea": "0x1400419ac",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicPacketDecodeRetryTokenV1",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 2,
+    "size": 110,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QuicRecvBufferReadBufferNeededCount",
+    "ea": "0x14002ede4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QuicRecvBufferReadBufferNeededCount",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 113,
+    "tags": []
+  }
+]
