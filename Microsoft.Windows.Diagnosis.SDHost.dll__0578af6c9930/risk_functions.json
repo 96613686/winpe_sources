@@ -1,0 +1,192 @@
+[
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Windows.Diagnosis.ManagedHost::InitializeRunspace",
+    "ea": "0xf0",
+    "function_file": "functions/f0_Microsoft.Windows.Diagnosis.ManagedHost_InitializeRunspace.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "update-diagrootcause",
+      "update-diagreport",
+      "write-diagprogress",
+      "write-diagtelemetry",
+      "InteractivityAgent"
+    ],
+    "name": "Microsoft.Windows.Diagnosis.ManagedHost::InitializeRunspace",
+    "prototype": "",
+    "rank_score": 234,
+    "size": 265,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Windows.Diagnosis.ManagedHost::RunScript",
+    "ea": "0x330",
+    "function_file": "functions/330_Microsoft.Windows.Diagnosis.ManagedHost_RunScript.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\r\nfunction Test-Caller {\r\n    param(\r\n        [Parameter(Mandatory=$true)]\r\n        [System.Management.Automation.CallStackFrame[]]\r\n        $CallStack\r\n    )\r\n    $caller = $CallStack[1]\r\n    $location = $caller.Location\r\n    Write-Verbose -Message $('caller: ' + $location) -Verbose\r\n    if ($location -eq '<No file>') {\r\n        throw 'Invoke-Expression cannot be used in a script'\r\n    }\r\n}\r\n\r\nfunction Invoke-Expression {\r\n    [CmdletBinding(HelpUri='https://go.microsoft.com/fwlink/?LinkID=2097",
+      "(?i)(.*(invoke-expression|invoke-command|\\$\\([\\b\\s]*iex|\\$\\([\\b\\s]*icm|\\[char\\]).*)|(^[\\b\\s]*&.*)|(.*;[\\b\\s]*&.*)|(\\[system\\.)|(\"|')"
+    ],
+    "name": "Microsoft.Windows.Diagnosis.ManagedHost::RunScript",
+    "prototype": "",
+    "rank_score": 95,
+    "size": 486,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Windows.Diagnosis.ManagedHost::ConvertScriptErrorToXml",
+    "ea": "0x520",
+    "function_file": "functions/520_Microsoft.Windows.Diagnosis.ManagedHost_ConvertScriptErrorToXml.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Windows.Diagnosis.ManagedHost::ConvertScriptErrorToXml",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 620,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Windows.Diagnosis.ManagedHost::ConvertStringToXml",
+    "ea": "0x790",
+    "function_file": "functions/790_Microsoft.Windows.Diagnosis.ManagedHost_ConvertStringToXml.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Windows.Diagnosis.ManagedHost::ConvertStringToXml",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 81,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "System.Runtime.CompilerServices.RefSafetyRulesAttribute::.ctor",
+    "ea": "0x30",
+    "function_file": "functions/30_System.Runtime.CompilerServices.RefSafetyRulesAttribute_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "System.Runtime.CompilerServices.RefSafetyRulesAttribute::.ctor",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 14,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft.Windows.Diagnosis.ManagedHost::ExecuteCommand",
+    "ea": "0x200",
+    "function_file": "functions/200_Microsoft.Windows.Diagnosis.ManagedHost_ExecuteCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Windows.Diagnosis.ManagedHost::ExecuteCommand",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 297,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft.Windows.Diagnosis.ManagedHost::Initialize",
+    "ea": "0x70",
+    "function_file": "functions/70_Microsoft.Windows.Diagnosis.ManagedHost_Initialize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Windows.Diagnosis.ManagedHost::Initialize",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 123,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft.Windows.Diagnosis.ManagedHost::SendErrorToReport",
+    "ea": "0x840",
+    "function_file": "functions/840_Microsoft.Windows.Diagnosis.ManagedHost_SendErrorToReport.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Windows.Diagnosis.ManagedHost::SendErrorToReport",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 104,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft.Windows.Diagnosis.ManagedHost::Cancel",
+    "ea": "0x7f0",
+    "function_file": "functions/7f0_Microsoft.Windows.Diagnosis.ManagedHost_Cancel.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Windows.Diagnosis.ManagedHost::Cancel",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 67,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor",
+    "ea": "0x10",
+    "function_file": "functions/10_Microsoft.CodeAnalysis.EmbeddedAttribute_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft.Windows.Diagnosis.ManagedHost::.ctor",
+    "ea": "0x8b0",
+    "function_file": "functions/8b0_Microsoft.Windows.Diagnosis.ManagedHost_.ctor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Microsoft.Windows.Diagnosis.ManagedHost::.ctor",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  }
+]

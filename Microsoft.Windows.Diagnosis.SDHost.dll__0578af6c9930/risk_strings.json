@@ -1,0 +1,44 @@
+[
+  {
+    "from_ea": "0xfc",
+    "from_func": "0xf0",
+    "string_ea": "0x102a",
+    "text": "update-diagrootcause"
+  },
+  {
+    "from_ea": "0x13c",
+    "from_func": "0xf0",
+    "string_ea": "0x1070",
+    "text": "update-diagreport"
+  },
+  {
+    "from_ea": "0x15c",
+    "from_func": "0xf0",
+    "string_ea": "0x1094",
+    "text": "write-diagprogress"
+  },
+  {
+    "from_ea": "0x17c",
+    "from_func": "0xf0",
+    "string_ea": "0x10ba",
+    "text": "write-diagtelemetry"
+  },
+  {
+    "from_ea": "0x1c9",
+    "from_func": "0xf0",
+    "string_ea": "0x110a",
+    "text": "InteractivityAgent"
+  },
+  {
+    "from_ea": "0x3a6",
+    "from_func": "0x330",
+    "string_ea": "0x11a2",
+    "text": "\r\nfunction Test-Caller {\r\n    param(\r\n        [Parameter(Mandatory=$true)]\r\n        [System.Management.Automation.CallStackFrame[]]\r\n        $CallStack\r\n    )\r\n    $caller = $CallStack[1]\r\n    $location = $caller.Location\r\n    Write-Verbose -Message $('caller: ' + $location) -Verbose\r\n    if ($location -eq '<No file>') {\r\n        throw 'Invoke-Expression cannot be used in a script'\r\n    }\r\n}\r\n\r\nfunction Invoke-Expression {\r\n    [CmdletBinding(HelpUri='https://go.microsoft.com/fwlink/?LinkID=2097"
+  },
+  {
+    "from_ea": "0x3e4",
+    "from_func": "0x330",
+    "string_ea": "0x8ed0",
+    "text": "(?i)(.*(invoke-expression|invoke-command|\\$\\([\\b\\s]*iex|\\$\\([\\b\\s]*icm|\\[char\\]).*)|(^[\\b\\s]*&.*)|(.*;[\\b\\s]*&.*)|(\\[system\\.)|(\"|')"
+  }
+]

@@ -1,0 +1,62 @@
+# Microsoft.VisualStudio.Setup.Engine::Initialize
+
+- ea: `0x9fe0`
+- end: `0xa6b6`
+- name: `Microsoft.VisualStudio.Setup.Engine::Initialize`
+- size: `1750`
+- prototype: ``
+- caller_count: `14`
+- callee_count: `22`
+- tags: `service_task, installer_update, broker_com_uri`
+
+## callers
+
+- `0x8380`
+- `0x8460`
+- `0x8530`
+- `0x86e0`
+- `0x8eb0`
+- `0x8ff0`
+- `0x9030`
+- `0x9200`
+- `0x95c0`
+- `0x9760`
+- `0x98f0`
+- `0x9920`
+- `0xb750`
+- `0xc400`
+
+## callees
+
+- `0x7dc0`
+- `0x7e40`
+- `0x7e60`
+- `0x7ff0`
+- `0x8270`
+- `0x9fe0`
+- `0xa6c0`
+- `0xa7a0`
+- `0xab10`
+- `0xc810`
+- `0xc8d0`
+- `0xd360`
+- `0xd3a0`
+- `0xf480`
+- `0x18b00`
+- `0x1cda0`
+- `0x263e0`
+- `0x26470`
+- `0x3dec0`
+- `0x54640`
+- `0x5a180`
+- `0x5b490`
+
+## string_xrefs
+
+- `0xa022`: `services`
+
+## pseudocode
+
+```c
+
+```

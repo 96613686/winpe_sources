@@ -1,0 +1,242 @@
+# FH4::HandlerMap4::DecompHandler(void)
+
+- ea: `0x18001b754`
+- end: `0x18001b8dc`
+- name: `?DecompHandler@HandlerMap4@FH4@@AEAAXXZ`
+- size: `392`
+- prototype: `void __fastcall(FH4::HandlerMap4 *__hidden this)`
+- caller_count: `3`
+- callee_count: `1`
+- tags: `loader_planting, broker_com_uri`
+
+## callers
+
+- `0x18001a5ec`
+- `0x18001ab38`
+- `0x18001b39c`
+
+## callees
+
+- `0x18001b754`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=1
+void __fastcall FH4::HandlerMap4::DecompHandler(FH4::HandlerMap4 *this)
+{
+  char *v2; // rax
+  char v3; // r10
+  _BYTE *v4; // rdx
+  __int64 v5; // rcx
+  int v6; // eax
+  __int64 v7; // rcx
+  int *v8; // r9
+  char v9; // al
+  __int64 v10; // rcx
+  __int64 v11; // rax
+  __int64 v12; // rcx
+  __int64 v13; // rcx
+  char *v14; // r9
+  __int64 v15; // rax
+  int v16; // edx
+  __int64 v17; // rcx
+  _BYTE *v18; // r9
+  int v19; // eax
+  __int64 v20; // rcx
+  _BYTE *v21; // r9
+  int v22; // eax
+
+  *((_BYTE *)this + 24) = 0;
+  *(_QWORD *)((char *)this + 28) = 0;
+  *(_QWORD *)((char *)this + 36) = 0;
+  *((_OWORD *)this + 3) = 0;
+  v2 = (char *)*((_QWORD *)this + 1);
+  v3 = *v2;
+  v4 = v2 + 1;
+  *((_BYTE *)this + 24) = *v2;
+  *((_QWORD *)this + 1) = v2 + 1;
+  if ( (v3 & 1) != 0 )
+  {
+    v5 = *v4 & 0xF;
+    v4 -= *((char *)&FH4::s_negLengthTab + v5);
+    *((_DWORD *)this + 7) = *((_DWORD *)v4 - 1) >> *((_BYTE *)&FH4::s_shiftTab + v5);
+    *((_QWORD *)this + 1) = v4;
+  }
+  if ( (v3 & 2) != 0 )
+  {
+    v6 = *(_DWORD *)v4;
+    v4 += 4;
+    *((_QWORD *)this + 1) = v4;
+    *((_DWORD *)this + 8) = v6;
+  }
+  if ( (v3 & 4) != 0 )
+  {
+    v7 = *v4 & 0xF;
+    v4 -= *((char *)&FH4::s_negLengthTab + v7);
+    *((_DWORD *)this + 9) = *((_DWORD *)v4 - 1) >> *((_BYTE *)&FH4::s_shiftTab + v7);
+    *((_QWORD *)this + 1) = v4;
+  }
+  v8 = (int *)(v4 + 4);
+  *((_DWORD *)this + 10) = *(_DWORD *)v4;
+  v9 = v3 & 0x30;
+  *((_QWORD *)this + 1) = v4 + 4;
+  if ( (v3 & 8) != 0 )
+  {
+    if ( v9 == 16 )
+    {
+      v10 = *v8;
+      *((_QWORD *)this + 1) = v4 + 8;
+      *((_QWORD *)this + 6) = v10;
+      return;
+    }
+    if ( v9 == 32 )
+    {
+      v11 = *v8;
+      *((_QWORD *)this + 1) = v4 + 8;
+      *((_QWORD *)this + 6) = v11;
+      v12 = *((int *)v4 + 2);
+      *((_QWORD *)this + 1) = v4 + 12;
+LABEL_16:
+      *((_QWORD *)this + 7) = v12;
+    }
+  }
+  else
+  {
+    if ( v9 == 16 )
+    {
+      v13 = *(_BYTE *)v8 & 0xF;
+      v14 = (char *)v8 - *((char *)&FH4::s_negLengthTab + v13);
+      v15 = (unsigned int)((*((_DWORD *)v14 - 1) >> *((_BYTE *)&FH4::s_shiftTab + v13)) + *((_DWORD *)this + 18));
+      *((_QWORD *)this + 1) = v14;
+      *((_QWORD *)this + 6) = v15;
+      return;
+    }
+    if ( v9 == 32 )
+    {
+      v16 = *((_DWORD *)this + 18);
+      v17 = *(_BYTE *)v8 & 0xF;
+      v18 = (char *)v8 - *((char *)&FH4::s_negLengthTab + v17);
+      v19 = *((_DWORD *)v18 - 1) >> *((_BYTE *)&FH4::s_shiftTab + v17);
+      *((_QWORD *)this + 1) = v18;
+      *((_QWORD *)this + 6) = (unsigned int)(v16 + v19);
+      v20 = *v18 & 0xF;
+      v21 = &v18[-*((char *)&FH4::s_negLengthTab + v20)];
+      v22 = *((_DWORD *)v21 - 1) >> *((_BYTE *)&FH4::s_shiftTab + v20);
+      *((_QWORD *)this + 1) = v21;
+      v12 = (unsigned int)(v16 + v22);
+      goto LABEL_16;
+    }
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x18001b754  xor     eax, eax
+0x18001b756  lea     r11, cs:180000000h
+0x18001b75d  mov     [rcx+18h], al
+0x18001b760  xorps   xmm0, xmm0
+0x18001b763  mov     [rcx+1Ch], rax
+0x18001b767  mov     r8, rcx
+0x18001b76a  mov     [rcx+24h], rax
+0x18001b76e  movups  xmmword ptr [rcx+30h], xmm0
+0x18001b772  mov     rax, [rcx+8]
+0x18001b776  mov     r10b, [rax]
+0x18001b779  lea     rdx, [rax+1]
+0x18001b77d  mov     [rcx+18h], r10b
+0x18001b781  mov     [rcx+8], rdx
+0x18001b785  test    r10b, 1
+0x18001b789  jz      short loc_18001B7B2
+0x18001b78b  movzx   ecx, byte ptr [rdx]
+0x18001b78e  and     ecx, 0Fh
+0x18001b791  movsx   rax, byte ptr [rcx+r11+24098h]
+0x18001b79a  mov     cl, [rcx+r11+240A8h]
+0x18001b7a2  sub     rdx, rax
+0x18001b7a5  mov     eax, [rdx-4]
+0x18001b7a8  shr     eax, cl
+0x18001b7aa  mov     [r8+1Ch], eax
+0x18001b7ae  mov     [r8+8], rdx
+0x18001b7b2  test    r10b, 2
+0x18001b7b6  jz      short loc_18001B7C6
+0x18001b7b8  mov     eax, [rdx]
+0x18001b7ba  add     rdx, 4
+0x18001b7be  mov     [r8+8], rdx
+0x18001b7c2  mov     [r8+20h], eax
+0x18001b7c6  test    r10b, 4
+0x18001b7ca  jz      short loc_18001B7F3
+0x18001b7cc  movzx   ecx, byte ptr [rdx]
+0x18001b7cf  and     ecx, 0Fh
+0x18001b7d2  movsx   rax, byte ptr [rcx+r11+24098h]
+0x18001b7db  mov     cl, [rcx+r11+240A8h]
+0x18001b7e3  sub     rdx, rax
+0x18001b7e6  mov     eax, [rdx-4]
+0x18001b7e9  shr     eax, cl
+0x18001b7eb  mov     [r8+24h], eax
+0x18001b7ef  mov     [r8+8], rdx
+0x18001b7f3  mov     eax, [rdx]
+0x18001b7f5  lea     r9, [rdx+4]
+0x18001b7f9  mov     [r8+28h], eax
+0x18001b7fd  mov     al, r10b
+0x18001b800  and     al, 30h
+0x18001b802  mov     [r8+8], r9
+0x18001b806  test    r10b, 8
+0x18001b80a  jz      short loc_18001B847
+0x18001b80c  cmp     al, 10h
+0x18001b80e  jnz     short loc_18001B820
+0x18001b810  movsxd  rcx, dword ptr [r9]
+0x18001b813  lea     rax, [r9+4]
+0x18001b817  mov     [r8+8], rax
+0x18001b81b  mov     [r8+30h], rcx
+0x18001b81f  retn
+0x18001b820  cmp     al, 20h ; ' '
+0x18001b822  jnz     locret_18001B8DB
+0x18001b828  movsxd  rax, dword ptr [r9]
+0x18001b82b  lea     rdx, [r9+4]
+0x18001b82f  mov     [r8+8], rdx
+0x18001b833  mov     [r8+30h], rax
+0x18001b837  lea     rax, [rdx+4]
+0x18001b83b  movsxd  rcx, dword ptr [rdx]
+0x18001b83e  mov     [r8+8], rax
+0x18001b842  jmp     loc_18001B8D7
+0x18001b847  cmp     al, 10h
+0x18001b849  jnz     short loc_18001B87B
+0x18001b84b  movzx   ecx, byte ptr [r9]
+0x18001b84f  and     ecx, 0Fh
+0x18001b852  movsx   rax, byte ptr [rcx+r11+24098h]
+0x18001b85b  mov     cl, [rcx+r11+240A8h]
+0x18001b863  sub     r9, rax
+0x18001b866  mov     eax, [r8+48h]
+0x18001b86a  mov     edx, [r9-4]
+0x18001b86e  shr     edx, cl
+0x18001b870  add     eax, edx
+0x18001b872  mov     [r8+8], r9
+0x18001b876  mov     [r8+30h], rax
+0x18001b87a  retn
+0x18001b87b  cmp     al, 20h ; ' '
+0x18001b87d  jnz     short locret_18001B8DB
+0x18001b87f  movzx   ecx, byte ptr [r9]
+0x18001b883  mov     edx, [r8+48h]
+0x18001b887  and     ecx, 0Fh
+0x18001b88a  movsx   rax, byte ptr [rcx+r11+24098h]
+0x18001b893  mov     cl, [rcx+r11+240A8h]
+0x18001b89b  sub     r9, rax
+0x18001b89e  mov     eax, [r9-4]
+0x18001b8a2  shr     eax, cl
+0x18001b8a4  mov     [r8+8], r9
+0x18001b8a8  lea     ecx, [rdx+rax]
+0x18001b8ab  mov     [r8+30h], rcx
+0x18001b8af  movzx   ecx, byte ptr [r9]
+0x18001b8b3  and     ecx, 0Fh
+0x18001b8b6  movsx   rax, byte ptr [rcx+r11+24098h]
+0x18001b8bf  mov     cl, [rcx+r11+240A8h]
+0x18001b8c7  sub     r9, rax
+0x18001b8ca  mov     eax, [r9-4]
+0x18001b8ce  shr     eax, cl
+0x18001b8d0  mov     [r8+8], r9
+0x18001b8d4  lea     ecx, [rdx+rax]
+0x18001b8d7  mov     [r8+38h], rcx
+0x18001b8db  retn
+```

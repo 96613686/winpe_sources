@@ -1,0 +1,162 @@
+[
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800056af",
+        "from_func": "0x180005680",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180008085",
+        "from_func": "0x18000803c",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800056af",
+        "from_func": "0x180005680",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180008085",
+        "from_func": "0x18000803c",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b221",
+        "from_func": "0x18000b19c",
+        "from_func_name": "try_get_function",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x18000b259",
+        "from_func": "0x18000b19c",
+        "from_func_name": "try_get_function",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x18000b221",
+        "from_func": "0x18000b19c",
+        "from_func_name": "try_get_function",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x18000b259",
+        "from_func": "0x18000b19c",
+        "from_func_name": "try_get_function",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoCreateFreeThreadedMarshaler",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b819",
+        "from_func": "0x18000b819",
+        "from_func_name": "WINRT_IMPL_CoCreateFreeThreadedMarshaler",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateFreeThreadedMarshaler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc",
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b813",
+        "from_func": "0x18000b813",
+        "from_func_name": "WINRT_IMPL_CoTaskMemAlloc",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800127b0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-runtime-l1-1-0!_configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b5c8",
+        "from_func": "0x18000b5c8",
+        "from_func_name": "_configure_narrow_argv_0",
+        "import": "api-ms-win-crt-runtime-l1-1-0!_configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-runtime-l1-1-0!_seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000b5c2",
+        "from_func": "0x18000b5c2",
+        "from_func_name": "_seh_filter_dll_0",
+        "import": "api-ms-win-crt-runtime-l1-1-0!_seh_filter_dll"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002214",
+        "from_func": "0x1800021d0",
+        "from_func_name": "StringVPrintfWorkerW",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf"
+      },
+      {
+        "from_ea": "0x180002214",
+        "from_func": "0x1800021d0",
+        "from_func_name": "StringVPrintfWorkerW",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf"
+      },
+      {
+        "from_ea": "0x180012774",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf"
+      }
+    ]
+  }
+]
