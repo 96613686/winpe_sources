@@ -1,0 +1,389 @@
+[
+  {
+    "import": "ntoskrnl!IoCreateSymbolicLink",
+    "tags": [
+      "reparse_path"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e461",
+        "from_func": "0x14000e260",
+        "from_func_name": "HbAddDevice",
+        "import": "ntoskrnl!IoCreateSymbolicLink"
+      },
+      {
+        "from_ea": "0x14000e461",
+        "from_func": "0x14000e260",
+        "from_func_name": "HbAddDevice",
+        "import": "ntoskrnl!IoCreateSymbolicLink"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IoDeleteSymbolicLink",
+    "tags": [
+      "reparse_path"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e4a2",
+        "from_func": "0x14000e260",
+        "from_func_name": "HbAddDevice",
+        "import": "ntoskrnl!IoDeleteSymbolicLink"
+      },
+      {
+        "from_ea": "0x14001436b",
+        "from_func": "0x1400140f0",
+        "from_func_name": "HbPnpDispatch",
+        "import": "ntoskrnl!IoDeleteSymbolicLink"
+      },
+      {
+        "from_ea": "0x14000e4a2",
+        "from_func": "0x14000e260",
+        "from_func_name": "HbAddDevice",
+        "import": "ntoskrnl!IoDeleteSymbolicLink"
+      },
+      {
+        "from_ea": "0x14001436b",
+        "from_func": "0x1400140f0",
+        "from_func_name": "HbPnpDispatch",
+        "import": "ntoskrnl!IoDeleteSymbolicLink"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IofCompleteRequest",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 16,
+    "xrefs": [
+      {
+        "from_ea": "0x140001398",
+        "from_func": "0x140001340",
+        "from_func_name": "HbpPowerOnFinalizedDeviceIrp",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000ebeb",
+        "from_func": "0x14000ebb0",
+        "from_func_name": "HbIoDispatchCleanup",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000ec4b",
+        "from_func": "0x14000ec10",
+        "from_func_name": "HbIoDispatchClose",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000ecab",
+        "from_func": "0x14000ec70",
+        "from_func_name": "HbIoDispatchCreate",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000ee1f",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000fd7e",
+        "from_func": "0x14000fc48",
+        "from_func_name": "HbPnpStartDevice",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140010554",
+        "from_func": "0x1400104f0",
+        "from_func_name": "HbSysCtrlDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001419b",
+        "from_func": "0x1400140f0",
+        "from_func_name": "HbPnpDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140001398",
+        "from_func": "0x140001340",
+        "from_func_name": "HbpPowerOnFinalizedDeviceIrp",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000ebeb",
+        "from_func": "0x14000ebb0",
+        "from_func_name": "HbIoDispatchCleanup",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000ec4b",
+        "from_func": "0x14000ec10",
+        "from_func_name": "HbIoDispatchClose",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000ecab",
+        "from_func": "0x14000ec70",
+        "from_func_name": "HbIoDispatchCreate",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000ee1f",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000fd7e",
+        "from_func": "0x14000fc48",
+        "from_func_name": "HbPnpStartDevice",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140010554",
+        "from_func": "0x1400104f0",
+        "from_func_name": "HbSysCtrlDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001419b",
+        "from_func": "0x1400140f0",
+        "from_func_name": "HbPnpDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!KdDeregisterPowerHandler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400143cf",
+        "from_func": "0x1400140f0",
+        "from_func_name": "HbPnpDispatch",
+        "import": "ntoskrnl!KdDeregisterPowerHandler"
+      },
+      {
+        "from_ea": "0x1400143cf",
+        "from_func": "0x1400140f0",
+        "from_func_name": "HbPnpDispatch",
+        "import": "ntoskrnl!KdDeregisterPowerHandler"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!KdRegisterPowerHandler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000ea02",
+        "from_func": "0x14000e9a4",
+        "from_func_name": "HbHvpRegisterDebuggerPowerCallback",
+        "import": "ntoskrnl!KdRegisterPowerHandler"
+      },
+      {
+        "from_ea": "0x14000ea02",
+        "from_func": "0x14000e9a4",
+        "from_func_name": "HbHvpRegisterDebuggerPowerCallback",
+        "import": "ntoskrnl!KdRegisterPowerHandler"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400015dd",
+        "from_func": "0x1400015dd",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "ntoskrnl!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "winhvr!WinHvCommitSecFwSvn",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000f008",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvCommitSecFwSvn"
+      },
+      {
+        "from_ea": "0x14000f008",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvCommitSecFwSvn"
+      }
+    ]
+  },
+  {
+    "import": "winhvr!WinHvConfigureProfiler",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000edcf",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvConfigureProfiler"
+      },
+      {
+        "from_ea": "0x14000edcf",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvConfigureProfiler"
+      }
+    ]
+  },
+  {
+    "import": "winhvr!WinHvLogHypervisorSystemConfig",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000f588",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvLogHypervisorSystemConfig"
+      },
+      {
+        "from_ea": "0x14000f588",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvLogHypervisorSystemConfig"
+      }
+    ]
+  },
+  {
+    "import": "winhvr!WinHvSetEventLogCompletedNotificationRoutine",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e729",
+        "from_func": "0x14000e6fc",
+        "from_func_name": "HbHvInitializeHypervisor",
+        "import": "winhvr!WinHvSetEventLogCompletedNotificationRoutine"
+      },
+      {
+        "from_ea": "0x140014382",
+        "from_func": "0x1400140f0",
+        "from_func_name": "HbPnpDispatch",
+        "import": "winhvr!WinHvSetEventLogCompletedNotificationRoutine"
+      },
+      {
+        "from_ea": "0x14000e729",
+        "from_func": "0x14000e6fc",
+        "from_func_name": "HbHvInitializeHypervisor",
+        "import": "winhvr!WinHvSetEventLogCompletedNotificationRoutine"
+      },
+      {
+        "from_ea": "0x140014382",
+        "from_func": "0x1400140f0",
+        "from_func_name": "HbPnpDispatch",
+        "import": "winhvr!WinHvSetEventLogCompletedNotificationRoutine"
+      }
+    ]
+  },
+  {
+    "import": "winhvr!WinHvSetHwWatchdogConfig",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000f5c9",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvSetHwWatchdogConfig"
+      },
+      {
+        "from_ea": "0x14000f5c9",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvSetHwWatchdogConfig"
+      }
+    ]
+  },
+  {
+    "import": "winhvr!WinHvUpdateHvProcessorFeatures",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000f02d",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvUpdateHvProcessorFeatures"
+      },
+      {
+        "from_ea": "0x14000f19f",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvUpdateHvProcessorFeatures"
+      },
+      {
+        "from_ea": "0x14000f02d",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvUpdateHvProcessorFeatures"
+      },
+      {
+        "from_ea": "0x14000f19f",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvUpdateHvProcessorFeatures"
+      }
+    ]
+  },
+  {
+    "import": "winhvr!WinHvUpdateSecFw",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000efde",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvUpdateSecFw"
+      },
+      {
+        "from_ea": "0x14000efde",
+        "from_func": "0x14000ecd0",
+        "from_func_name": "HbIoDispatchIoctl",
+        "import": "winhvr!WinHvUpdateSecFw"
+      }
+    ]
+  }
+]

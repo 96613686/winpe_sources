@@ -1,0 +1,98 @@
+[
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001efb",
+        "from_func": "0x180001eb4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001efb",
+        "from_func": "0x180001eb4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CreateStreamOnHGlobal",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000115a",
+        "from_func": "0x180001010",
+        "from_func_name": "ConvertToDIBProc",
+        "import": "api-ms-win-core-com-l1-1-0!CreateStreamOnHGlobal"
+      },
+      {
+        "from_ea": "0x18000115a",
+        "from_func": "0x180001010",
+        "from_func_name": "ConvertToDIBProc",
+        "import": "api-ms-win-core-com-l1-1-0!CreateStreamOnHGlobal"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!GetHGlobalFromStream",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180001490",
+        "from_func": "0x180001010",
+        "from_func_name": "ConvertToDIBProc",
+        "import": "api-ms-win-core-com-l1-1-0!GetHGlobalFromStream"
+      },
+      {
+        "from_ea": "0x180001490",
+        "from_func": "0x180001010",
+        "from_func_name": "ConvertToDIBProc",
+        "import": "api-ms-win-core-com-l1-1-0!GetHGlobalFromStream"
+      },
+      {
+        "from_ea": "0x180004cec",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-com-l1-1-0!GetHGlobalFromStream"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000228b",
+        "from_func": "0x180002234",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180001db6",
+        "from_func": "0x180001db6",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x18000228b",
+        "from_func": "0x180002234",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  }
+]

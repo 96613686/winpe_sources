@@ -1,0 +1,1794 @@
+[
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "HbIoDispatchIoctl",
+    "ea": "0x14000ecd0",
+    "function_file": "functions/14000ecd0_HbIoDispatchIoctl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!HvlQueryActiveHypervisorProcessorCount",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeQueryActiveProcessorCountEx",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "winhvr!WinHvCommitSecFwSvn",
+      "winhvr!WinHvConfigureProfiler",
+      "winhvr!WinHvGetLogicalProcessorRegisters",
+      "winhvr!WinHvGetPartitionProperty",
+      "winhvr!WinHvGetPartitionPropertyEx",
+      "winhvr!WinHvGetSystemInformation",
+      "winhvr!WinHvLogHypervisorSystemConfig",
+      "winhvr!WinHvSetHwWatchdogConfig",
+      "winhvr!WinHvSetLogicalProcessorRegisters",
+      "winhvr!WinHvSetSystemInformation",
+      "winhvr!WinHvUpdateHvProcessorFeatures",
+      "winhvr!WinHvUpdateSecFw"
+    ],
+    "matched_strings": [
+      "MSR read exception for address 0x%x"
+    ],
+    "name": "HbIoDispatchIoctl",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 5504,
+    "size": 3185,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "HbEvtpInitializeSystemDiagLog",
+    "ea": "0x140011760",
+    "function_file": "functions/140011760_HbEvtpInitializeSystemDiagLog.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeDeregisterBugCheckReasonCallback",
+      "ntoskrnl!KeInitializeTriageDumpDataArray",
+      "ntoskrnl!KeRegisterBugCheckReasonCallback",
+      "ntoskrnl!MmFreePagesFromMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmUnmapLockedPages",
+      "winhvr!WinHvGetPartitionProperty",
+      "winhvr!WinHvUnmapEventLogBuffer"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpInitializeSystemDiagLog",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 5431,
+    "size": 1714,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HbEvtpDeleteEventLogWorker",
+    "ea": "0x140010c0c",
+    "function_file": "functions/140010c0c_HbEvtpDeleteEventLogWorker.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReInitializeRundownProtection",
+      "ntoskrnl!ExWaitForRundownProtectionRelease",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeDeregisterBugCheckReasonCallback",
+      "ntoskrnl!MmUnmapLockedPages",
+      "winhvr!WinHvDeleteEventLogBuffer",
+      "winhvr!WinHvFinalizeEventLogBufferGroup",
+      "winhvr!WinHvGetPartitionId",
+      "winhvr!WinHvReleaseEventLogBuffer",
+      "winhvr!WinHvUnmapEventLogBuffer",
+      "winhvr!WinHvWithdrawMemory"
+    ],
+    "matched_strings": [
+      "HbEvtpDeleteEventLogWorker",
+      "HbEvtpDeleteEventLogWorker",
+      "HbEvtpDeleteEventLogWorker",
+      "HbEvtpDeleteEventLogWorker",
+      "HbEvtpDeleteEventLogWorker",
+      "HbEvtpDeleteEventLogWorker",
+      "HbEvtpDeleteEventLogWorker",
+      "LocalDiagnostics average buffer delete time: %llu ms (%d buffers)",
+      "Freeing event log configuration for type %d"
+    ],
+    "name": "HbEvtpDeleteEventLogWorker",
+    "prototype": "void __fastcall(__int64, unsigned int)",
+    "rank_score": 5405,
+    "size": 1299,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "HbPnpDispatch",
+    "ea": "0x1400140f0",
+    "function_file": "functions/1400140f0_HbPnpDispatch.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoReleaseRemoveLockAndWaitEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KdDeregisterPowerHandler",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!ZwClose",
+      "winhvr!WinHvSetEventLogCompletedNotificationRoutine",
+      "winhvr!WinHvUnmapStatsPage"
+    ],
+    "matched_strings": [
+      "PnP dispatch: IoAcquireRemoveLock failed with 0x%x",
+      "Device removed"
+    ],
+    "name": "HbPnpDispatch",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, IRP *Tag)",
+    "rank_score": 5137,
+    "size": 1483,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "HbEvtpCreateEventLog",
+    "ea": "0x140014810",
+    "function_file": "functions/140014810_HbEvtpCreateEventLog.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!HvlQueryActiveHypervisorProcessorCount",
+      "ntoskrnl!InitializeSListHead",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "winhvr!WinHvInitializeEventLogBufferGroup"
+    ],
+    "matched_strings": [
+      "HbEvtpCreateEventLog",
+      "HbEvtpCreateEventLog",
+      "HbEvtpCreateEventLog",
+      "HbEvtpCreateEventLog"
+    ],
+    "name": "HbEvtpCreateEventLog",
+    "prototype": "__int64 __fastcall(char *DeferredContext, int, unsigned int, _DWORD *)",
+    "rank_score": 2586,
+    "size": 981,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "HbEvtpSetLocalDiagnosticsEventSources",
+    "ea": "0x14001320c",
+    "function_file": "functions/14001320c_HbEvtpSetLocalDiagnosticsEventSources.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey",
+      "winhvr!WinHvSetEventLogGranularSources",
+      "winhvr!WinHvSetEventLogGroupSources"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpSetLocalDiagnosticsEventSources",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 2436,
+    "size": 615,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HbAddDevice",
+    "ea": "0x14000e260",
+    "function_file": "functions/14000e260_HbAddDevice.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!IoAttachDeviceToDeviceStack",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoInitializeRemoveLockEx",
+      "ntoskrnl!KeInitializeTimerEx",
+      "ntoskrnl!PoSetPowerState",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoCreateDevice failed with 0x%x",
+      "\\DosDevices\\HvServiceDevice",
+      "IoCreateSymbolicLink failed with 0x%x",
+      "Completed with status 0x%x"
+    ],
+    "name": "HbAddDevice",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT TargetDevice)",
+    "rank_score": 2407,
+    "size": 698,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HbEvtpCreateEventLogBuffer",
+    "ea": "0x140010700",
+    "function_file": "functions/140010700_HbEvtpCreateEventLogBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!HvlQueryHypervisorProcessorNodeNumber",
+      "ntoskrnl!KeInitializeDpc",
+      "ntoskrnl!MmFreePagesFromMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "winhvr!WinHvCreateEventLogBuffer",
+      "winhvr!WinHvDeleteEventLogBuffer",
+      "winhvr!WinHvMapEventLogBuffer",
+      "winhvr!WinHvReleaseEventLogBuffer",
+      "winhvr!WinHvUnmapEventLogBuffer"
+    ],
+    "matched_strings": [
+      "HbEvtpCreateEventLogBuffer",
+      "HbEvtpCreateEventLogBuffer",
+      "HbEvtpCreateEventLogBuffer",
+      "HbEvtpCreateEventLogBuffer",
+      "WinHvCreateEventLogBuffer failed for %d - ntStatus: %X",
+      "MmMapLockedPagesSpecifyCache failed for %d"
+    ],
+    "name": "HbEvtpCreateEventLogBuffer",
+    "prototype": "__int64 __fastcall(PVOID DeferredContext, unsigned int, unsigned int, __int64)",
+    "rank_score": 2258,
+    "size": 523,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "HbEvtpLocalDiagnosticsEtwCallback",
+    "ea": "0x140012170",
+    "function_file": "functions/140012170_HbEvtpLocalDiagnosticsEtwCallback.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!WmiQueryTraceInformation"
+    ],
+    "matched_strings": [
+      "Failed to create local diagnostics log with code 0x%x",
+      "Local diagnostics session already existed; updating event sources"
+    ],
+    "name": "HbEvtpLocalDiagnosticsEtwCallback",
+    "prototype": "void __fastcall(__int64, char, unsigned __int16 *, __int64)",
+    "rank_score": 1915,
+    "size": 940,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HbPnpStartDevice",
+    "ea": "0x14000fc48",
+    "function_file": "functions/14000fc48_HbPnpStartDevice.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoRegisterDeviceInterface",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!PoSetPowerState"
+    ],
+    "matched_strings": [
+      "HvService loaded. Version: %s, Loaded in %llu ms",
+      "HvService device start failed with 0x%x. Version: %s"
+    ],
+    "name": "HbPnpStartDevice",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 1909,
+    "size": 666,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "HbEvtpGetTlMetadataFromHvBinary",
+    "ea": "0x140011178",
+    "function_file": "functions/140011178_HbEvtpGetTlMetadataFromHvBinary.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmMapViewInSystemSpace",
+      "ntoskrnl!MmUnmapViewInSystemSpace",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateSection"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpGetTlMetadataFromHvBinary",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1643,
+    "size": 667,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "HbEvtpLocalDiagEventsWorkItemRoutine",
+    "ea": "0x140001900",
+    "function_file": "functions/140001900_HbEvtpLocalDiagEventsWorkItemRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!ExpInterlockedFlushSList",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpLocalDiagEventsWorkItemRoutine",
+    "prototype": "void __fastcall(__int64, __int64 *, struct _IO_WORKITEM *)",
+    "rank_score": 1627,
+    "size": 486,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HbEvtpTraceCompletedDpcRoutine",
+    "ea": "0x140001e20",
+    "function_file": "functions/140001e20_HbEvtpTraceCompletedDpcRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [
+      "HbEvtpTraceCompletedDpcRoutine",
+      "HbEvtpTraceCompletedDpcRoutine",
+      "Remove lock not available"
+    ],
+    "name": "HbEvtpTraceCompletedDpcRoutine",
+    "prototype": "void __fastcall(struct _KDPC *Dpc, struct _IO_REMOVE_LOCK *DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)",
+    "rank_score": 1544,
+    "size": 324,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HbPnpDeleteAllEventLogs",
+    "ea": "0x14000f948",
+    "function_file": "functions/14000f948_HbPnpDeleteAllEventLogs.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "HbEvtpDeleteEventLog failed for log type %d with 0x%x",
+      "HbEvtpDeleteEventLog failed for log type %d with 0x%x",
+      "HbEvtpDeleteEventLog failed for log type %d with 0x%x",
+      "HbPnpDeleteAllEventLogs",
+      "HbPnpDeleteAllEventLogs",
+      "HbPnpDeleteAllEventLogs"
+    ],
+    "name": "HbPnpDeleteAllEventLogs",
+    "prototype": "LONG __fastcall(__int64)",
+    "rank_score": 1449,
+    "size": 759,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "HbEvtpLogProcessorFeatures",
+    "ea": "0x14001274c",
+    "function_file": "functions/14001274c_HbEvtpLogProcessorFeatures.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "winhvr!WinHvGetPartitionProperty",
+      "winhvr!WinHvGetPartitionPropertyEx"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpLogProcessorFeatures",
+    "prototype": "__int64 __fastcall(char)",
+    "rank_score": 1421,
+    "size": 673,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "HbEvtpTracePeriodicTimerDpcRoutine",
+    "ea": "0x140001460",
+    "function_file": "functions/140001460_HbEvtpTracePeriodicTimerDpcRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [
+      "Remove lock unavailable",
+      "Failed to get remove lock"
+    ],
+    "name": "HbEvtpTracePeriodicTimerDpcRoutine",
+    "prototype": "void __fastcall(struct _KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)",
+    "rank_score": 1295,
+    "size": 349,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HbHvpWithdrawMemoryWorker",
+    "ea": "0x14000eab0",
+    "function_file": "functions/14000eab0_HbHvpWithdrawMemoryWorker.md",
+    "matched_imports": [
+      "ext-ms-win-ntos-ksr-l1-1-7!KsrFreePersistedMemory",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "winhvr!WinHvGetPartitionId",
+      "winhvr!WinHvWaitForWithdrawAllowed",
+      "winhvr!WinHvWithdrawMemory"
+    ],
+    "matched_strings": [],
+    "name": "HbHvpWithdrawMemoryWorker",
+    "prototype": "void __fastcall(PVOID IoObject, struct _IO_REMOVE_LOCK *Context, PIO_WORKITEM IoWorkItem)",
+    "rank_score": 1204,
+    "size": 236,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "HbEvtpGlobalSystemEventsWorkItemRoutine",
+    "ea": "0x140011420",
+    "function_file": "functions/140011420_HbEvtpGlobalSystemEventsWorkItemRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "winhvr!WinHvReleaseEventLogBuffer"
+    ],
+    "matched_strings": [
+      "Failed to get config"
+    ],
+    "name": "HbEvtpGlobalSystemEventsWorkItemRoutine",
+    "prototype": "void __fastcall(_QWORD *IoObject, PVOID Context, PIO_WORKITEM IoWorkItem)",
+    "rank_score": 1066,
+    "size": 377,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "HbEvtpInitEventLog",
+    "ea": "0x1400115a0",
+    "function_file": "functions/1400115a0_HbEvtpInitEventLog.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeRundownProtection",
+      "ntoskrnl!KeInitializeDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeSetTimerEx",
+      "winhvr!WinHvSetEventLogGroupSources"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpInitEventLog",
+    "prototype": "BOOLEAN __fastcall(char *DeferredContext)",
+    "rank_score": 1026,
+    "size": 439,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "HbEvtpProcessSystemDiagLog",
+    "ea": "0x140013ef0",
+    "function_file": "functions/140013ef0_HbEvtpProcessSystemDiagLog.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!ExTryToAcquireFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpProcessSystemDiagLog",
+    "prototype": "void __fastcall(char)",
+    "rank_score": 1017,
+    "size": 359,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HbEvtpPeriodicGlobalSystemEventFlushWorkItemRoutine",
+    "ea": "0x140014bf0",
+    "function_file": "functions/140014bf0_HbEvtpPeriodicGlobalSystemEventFlushWorkItemRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "winhvr!WinHvFlushEventLogBuffer"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpPeriodicGlobalSystemEventFlushWorkItemRoutine",
+    "prototype": "void __fastcall(_QWORD *IoObject, PVOID Context, PIO_WORKITEM IoWorkItem)",
+    "rank_score": 1013,
+    "size": 200,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "HvStatspClientBufferUnshare",
+    "ea": "0x1400101d0",
+    "function_file": "functions/1400101d0_HvStatspClientBufferUnshare.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeStackAttachProcess",
+      "ntoskrnl!KeUnstackDetachProcess",
+      "ntoskrnl!MmUnmapLockedPages",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "HvStatspClientBufferUnshare",
+    "prototype": "__int64 __fastcall(__int64, __int64, PRKPROCESS *)",
+    "rank_score": 1009,
+    "size": 278,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "HbEvtpScheduleSystemDiagLogWorkItem",
+    "ea": "0x140001270",
+    "function_file": "functions/140001270_HbEvtpScheduleSystemDiagLogWorkItem.md",
+    "matched_imports": [
+      "ntoskrnl!EtwProviderEnabled",
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItemEx",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpScheduleSystemDiagLogWorkItem",
+    "prototype": "void __fastcall(PVOID Tag)",
+    "rank_score": 1004,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HbHvpOpenHypervisorBinaryFileHandles",
+    "ea": "0x14000e7b8",
+    "function_file": "functions/14000e7b8_HbHvpOpenHypervisorBinaryFileHandles.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwOpenFile"
+    ],
+    "matched_strings": [
+      "\\SystemRoot\\System32\\hvloader.dll",
+      "\\SystemRoot\\System32\\hvax64.exe",
+      "\\SystemRoot\\System32\\hvix64.exe"
+    ],
+    "name": "HbHvpOpenHypervisorBinaryFileHandles",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 968,
+    "size": 485,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HbEvtpLocalDiagWriteBuffer",
+    "ea": "0x140001bfc",
+    "function_file": "functions/140001bfc_HbEvtpLocalDiagWriteBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwSendTraceBuffer",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [
+      "HbEvtpLocalDiagWriteBuffer",
+      "HbEvtpLocalDiagWriteBuffer",
+      "HbEvtpLocalDiagWriteBuffer"
+    ],
+    "name": "HbEvtpLocalDiagWriteBuffer",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64 *)",
+    "rank_score": 936,
+    "size": 337,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HbSysCtrlDispatch",
+    "ea": "0x1400104f0",
+    "function_file": "functions/1400104f0_HbSysCtrlDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [
+      "SysCtrl dispatch: IoAcquireRemoveLock failed with 0x%x"
+    ],
+    "name": "HbSysCtrlDispatch",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 863,
+    "size": 220,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HbEvtpCompletedNotificationRoutine",
+    "ea": "0x1400017c0",
+    "function_file": "functions/1400017c0_HbEvtpCompletedNotificationRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!KeInsertQueueDpc"
+    ],
+    "matched_strings": [
+      "HbEvtpCompletedNotificationRoutine"
+    ],
+    "name": "HbEvtpCompletedNotificationRoutine",
+    "prototype": "void __fastcall(int, unsigned int)",
+    "rank_score": 854,
+    "size": 305,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "HbEvtpSecFwUpdateRegistry",
+    "ea": "0x1400130f8",
+    "function_file": "functions/1400130f8_HbEvtpSecFwUpdateRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateKey",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpSecFwUpdateRegistry",
+    "prototype": "__int64 __fastcall(int, __int64)",
+    "rank_score": 854,
+    "size": 267,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HbEvtpMapSystemDiagLogBuffer",
+    "ea": "0x140012abc",
+    "function_file": "functions/140012abc_HbEvtpMapSystemDiagLogBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "winhvr!WinHvMapEventLogBuffer",
+      "winhvr!WinHvMapPartitionEventLogBuffer",
+      "winhvr!WinHvUnmapEventLogBuffer"
+    ],
+    "matched_strings": [
+      "MmMapLockedPagesSpecifyCache failed"
+    ],
+    "name": "HbEvtpMapSystemDiagLogBuffer",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 847,
+    "size": 378,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HvStatspClientBufferShare",
+    "ea": "0x14000e0b0",
+    "function_file": "functions/14000e0b0_HvStatspClientBufferShare.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "HvStatspClientBufferShare",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, _QWORD *)",
+    "rank_score": 806,
+    "size": 375,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HbEvtpCreateLocalDiagnosticsEventLog",
+    "ea": "0x140010914",
+    "function_file": "functions/140010914_HbEvtpCreateLocalDiagnosticsEventLog.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!WmiQueryTraceInformation"
+    ],
+    "matched_strings": [
+      "HbEvtpCreateLocalDiagnosticsEventLog",
+      "HbEvtpCreateLocalDiagnosticsEventLog",
+      "LoggerId already set"
+    ],
+    "name": "HbEvtpCreateLocalDiagnosticsEventLog",
+    "prototype": "__int64 __fastcall(char *DeferredContext, PVOID Buffer, unsigned int)",
+    "rank_score": 737,
+    "size": 350,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "HbEvtpTraceMinrootConfig",
+    "ea": "0x140013510",
+    "function_file": "functions/140013510_HbEvtpTraceMinrootConfig.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwQuerySystemInformation"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpTraceMinrootConfig",
+    "prototype": "__int64()",
+    "rank_score": 621,
+    "size": 666,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HbEvtpWaitUntilAllBuffersAreFree",
+    "ea": "0x1400137b0",
+    "function_file": "functions/1400137b0_HbEvtpWaitUntilAllBuffersAreFree.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeDelayExecutionThread",
+      "winhvr!WinHvSetEventLogGroupSources"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpWaitUntilAllBuffersAreFree",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 618,
+    "size": 436,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "HbEvtpLocalDiagWriteBufferList",
+    "ea": "0x140011e18",
+    "function_file": "functions/140011e18_HbEvtpLocalDiagWriteBufferList.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseRundownProtection"
+    ],
+    "matched_strings": [
+      "Entering with cached logger ID 0x%x, mode %d, buffer %d, state %d",
+      "HbEvtpLocalDiagWriteBufferList",
+      "HbEvtpLocalDiagWriteBufferList",
+      "HbEvtpLocalDiagWriteBufferList",
+      "Invalid cached logger ID (0x%x)"
+    ],
+    "name": "HbEvtpLocalDiagWriteBufferList",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int)",
+    "rank_score": 610,
+    "size": 605,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HbHvpWithdrawMemory",
+    "ea": "0x14000ea28",
+    "function_file": "functions/14000ea28_HbHvpWithdrawMemory.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItemEx"
+    ],
+    "matched_strings": [],
+    "name": "HbHvpWithdrawMemory",
+    "prototype": "void __fastcall(PVOID Context)",
+    "rank_score": 603,
+    "size": 127,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "HbEvtpDeleteEventLog",
+    "ea": "0x140010a78",
+    "function_file": "functions/140010a78_HbEvtpDeleteEventLog.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "HbEvtpDeleteEventLog",
+      "HbEvtpDeleteEventLog",
+      "HbEvtpDeleteEventLog",
+      "HbEvtpDeleteEventLog"
+    ],
+    "name": "HbEvtpDeleteEventLog",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 583,
+    "size": 396,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "HbEvtpLocalDiagnosticsBufferCompletedCallback",
+    "ea": "0x140012080",
+    "function_file": "functions/140012080_HbEvtpLocalDiagnosticsBufferCompletedCallback.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtection",
+      "winhvr!WinHvReleaseEventLogBuffer"
+    ],
+    "matched_strings": [
+      "HbEvtpLocalDiagnosticsBufferCompletedCallback",
+      "HbEvtpLocalDiagnosticsBufferCompletedCallback",
+      "HbEvtpLocalDiagnosticsBufferCompletedCallback"
+    ],
+    "name": "HbEvtpLocalDiagnosticsBufferCompletedCallback",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int)",
+    "rank_score": 532,
+    "size": 231,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140015078",
+    "function_file": "functions/140015078_DriverEntry.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!IoReportRootDevice"
+    ],
+    "matched_strings": [
+      "HvService entry failed with 0x%x, driver will not load. Version: %s"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 490,
+    "size": 500,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "HbEvtpLogSecFwStatus",
+    "ea": "0x1400129f4",
+    "function_file": "functions/1400129f4_HbEvtpLogSecFwStatus.md",
+    "matched_imports": [
+      "winhvr!WinHvGetSystemInformation"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpLogSecFwStatus",
+    "prototype": "__int64()",
+    "rank_score": 437,
+    "size": 193,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "HbpEvtpFlushEventLog",
+    "ea": "0x14001396c",
+    "function_file": "functions/14001396c_HbpEvtpFlushEventLog.md",
+    "matched_imports": [
+      "winhvr!WinHvFlushEventLogBuffer"
+    ],
+    "matched_strings": [],
+    "name": "HbpEvtpFlushEventLog",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 417,
+    "size": 237,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "HbHvInitializeHypervisor",
+    "ea": "0x14000e6fc",
+    "function_file": "functions/14000e6fc_HbHvInitializeHypervisor.md",
+    "matched_imports": [
+      "winhvr!WinHvReportPresentHypervisor",
+      "winhvr!WinHvSetEventLogCompletedNotificationRoutine"
+    ],
+    "matched_strings": [],
+    "name": "HbHvInitializeHypervisor",
+    "prototype": "__int64 __fastcall(PVOID DeferredContext)",
+    "rank_score": 416,
+    "size": 90,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "HbpPowerOnFinalizedDeviceIrp",
+    "ea": "0x140001340",
+    "function_file": "functions/140001340_HbpPowerOnFinalizedDeviceIrp.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "HbpPowerOnFinalizedDeviceIrp",
+    "prototype": "void __fastcall(PDEVICE_OBJECT DeviceObject, UCHAR MinorFunction, POWER_STATE PowerState, IRP *Context, PIO_STATUS_BLOCK IoStatus)",
+    "rank_score": 413,
+    "size": 128,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "HvStatsMapHvStatsPage",
+    "ea": "0x14000fee8",
+    "function_file": "functions/14000fee8_HvStatsMapHvStatsPage.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "HvStatsMapHvStatsPage",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, unsigned int, _QWORD *)",
+    "rank_score": 413,
+    "size": 380,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "HbEvtpAllocateAndInitializeEventLogMdl",
+    "ea": "0x1400105d4",
+    "function_file": "functions/1400105d4_HbEvtpAllocateAndInitializeEventLogMdl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!MmAllocatePagesForMdlEx"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpAllocateAndInitializeEventLogMdl",
+    "prototype": "__int64 __fastcall(int, __int64)",
+    "rank_score": 406,
+    "size": 284,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "HvStatspUnmap",
+    "ea": "0x140010458",
+    "function_file": "functions/140010458_HvStatspUnmap.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeMdl",
+      "winhvr!WinHvUnmapStatsPage"
+    ],
+    "matched_strings": [],
+    "name": "HvStatspUnmap",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 406,
+    "size": 138,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "TraceLoggingRegisterEx_EtwRegister_EtwSetInformation",
+    "ea": "0x14000e61c",
+    "function_file": "functions/14000e61c_TraceLoggingRegisterEx_EtwRegister_EtwSetInformation.md",
+    "matched_imports": [
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!EtwSetInformation"
+    ],
+    "matched_strings": [],
+    "name": "TraceLoggingRegisterEx_EtwRegister_EtwSetInformation",
+    "prototype": "__int64 __fastcall(char *CallbackContext, __int64, __int64)",
+    "rank_score": 405,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "HbEvtpSystemDiagLogTraceLoggingCallback",
+    "ea": "0x140013480",
+    "function_file": "functions/140013480_HbEvtpSystemDiagLogTraceLoggingCallback.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpSystemDiagLogTraceLoggingCallback",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64, int, int, struct _IO_REMOVE_LOCK *Tag)",
+    "rank_score": 404,
+    "size": 135,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "HvStatspLockExclusive",
+    "ea": "0x14000e070",
+    "function_file": "functions/14000e070_HvStatspLockExclusive.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquirePushLockExclusiveEx",
+      "ntoskrnl!KeEnterCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "HvStatspLockExclusive",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 402,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "HvStatspUnlock",
+    "ea": "0x14000e230",
+    "function_file": "functions/14000e230_HvStatspUnlock.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleasePushLockEx",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "HvStatspUnlock",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 402,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "HbEvtpSysDiagLogWorkItemRoutine",
+    "ea": "0x14000e010",
+    "function_file": "functions/14000e010_HbEvtpSysDiagLogWorkItemRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockEx"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpSysDiagLogWorkItemRoutine",
+    "prototype": "void __fastcall(PVOID IoObject, struct _IO_REMOVE_LOCK *Context, PIO_WORKITEM IoWorkItem)",
+    "rank_score": 401,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "HbIoDispatchCreate",
+    "ea": "0x14000ec70",
+    "function_file": "functions/14000ec70_HbIoDispatchCreate.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [
+      "Create IRP: new handle opened",
+      "HbIoDispatchCreate"
+    ],
+    "name": "HbIoDispatchCreate",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 301,
+    "size": 80,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "HbEvtpTransferBufferOwnershipToEtw",
+    "ea": "0x140001f6c",
+    "function_file": "functions/140001f6c_HbEvtpTransferBufferOwnershipToEtw.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread"
+    ],
+    "matched_strings": [
+      "Timeout waiting for buffer %d to become available",
+      "Sleeping while waiting for buffer %d to become available"
+    ],
+    "name": "HbEvtpTransferBufferOwnershipToEtw",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 294,
+    "size": 208,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "HbDriverUnload",
+    "ea": "0x14000e520",
+    "function_file": "functions/14000e520_HbDriverUnload.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter"
+    ],
+    "matched_strings": [
+      "HvService teardown. Version: %s, Driver loaded in %llu ms, Driver unloaded in %llu ms"
+    ],
+    "name": "HbDriverUnload",
+    "prototype": "__int64()",
+    "rank_score": 254,
+    "size": 217,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 35,
+    "demangled": "HbpTraceEvent",
+    "ea": "0x140001600",
+    "function_file": "functions/140001600_HbpTraceEvent.md",
+    "matched_imports": [
+      "ntoskrnl!_vsnprintf"
+    ],
+    "matched_strings": [],
+    "name": "HbpTraceEvent",
+    "prototype": "char(int, const CHAR *, int, const char *, ...)",
+    "rank_score": 234,
+    "size": 386,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "HbIoDispatchCleanup",
+    "ea": "0x14000ebb0",
+    "function_file": "functions/14000ebb0_HbIoDispatchCleanup.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "HbIoDispatchCleanup",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 221,
+    "size": 80,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "HbIoDispatchClose",
+    "ea": "0x14000ec10",
+    "function_file": "functions/14000ec10_HbIoDispatchClose.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "HbIoDispatchClose",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 221,
+    "size": 80,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HbEvtpProcessSystemDiagLogBuffer",
+    "ea": "0x140012c40",
+    "function_file": "functions/140012c40_HbEvtpProcessSystemDiagLogBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpProcessSystemDiagLogBuffer",
+    "prototype": "char __fastcall(__int64, __int64 *, _QWORD *)",
+    "rank_score": 209,
+    "size": 597,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "HbEvtpWriteEventLog",
+    "ea": "0x1400020f8",
+    "function_file": "functions/1400020f8_HbEvtpWriteEventLog.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWrite"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpWriteEventLog",
+    "prototype": "NTSTATUS __fastcall(PCEVENT_DESCRIPTOR EventDescriptor, ULONG UserDataCount, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 209,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HbEvtpProcessSystemDiagLogEntry",
+    "ea": "0x140012e9c",
+    "function_file": "functions/140012e9c_HbEvtpProcessSystemDiagLogEntry.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWrite"
+    ],
+    "matched_strings": [],
+    "name": "HbEvtpProcessSystemDiagLogEntry",
+    "prototype": "int __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 207,
+    "size": 465,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001070",
+    "function_file": "functions/140001070_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, unsigned __int8 *, __int64, __int64, ULONG UserDataCount, struct _EVENT_DATA_DESCRIPTOR *)",
+    "rank_score": 207,
+    "size": 162,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x1400021ac",
+    "function_file": "functions/1400021ac_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, const EVENT_DESCRIPTOR *, __int64, ULONG UserDataCount, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 205,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "TraceLoggingUnregister_EtwUnregister",
+    "ea": "0x14000e6c8",
+    "function_file": "functions/14000e6c8_TraceLoggingUnregister_EtwUnregister.md",
+    "matched_imports": [
+      "ntoskrnl!EtwUnregister"
+    ],
+    "matched_strings": [],
+    "name": "TraceLoggingUnregister_EtwUnregister",
+    "prototype": "NTSTATUS __fastcall(__int64)",
+    "rank_score": 202,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 31,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140002ae0",
+    "function_file": "functions/140002ae0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14000292c",
+    "function_file": "functions/14000292c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140015010",
+    "function_file": "functions/140015010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "HbEvtpGetLogConfiguration",
+    "ea": "0x140001230",
+    "function_file": "functions/140001230_HbEvtpGetLogConfiguration.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HbEvtpGetLogConfiguration",
+    "prototype": "__int64 __fastcall(int, __int64 **)",
+    "rank_score": 22,
+    "size": 56,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "HviGetHypervisorFeatures",
+    "ea": "0x140002824",
+    "function_file": "functions/140002824_HviGetHypervisorFeatures.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HviGetHypervisorFeatures",
+    "prototype": "__int64()",
+    "rank_score": 14,
+    "size": 58,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "HviIsHypervisorMicrosoftCompatible",
+    "ea": "0x1400028a4",
+    "function_file": "functions/1400028a4_HviIsHypervisorMicrosoftCompatible.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HviIsHypervisorMicrosoftCompatible",
+    "prototype": "bool()",
+    "rank_score": 14,
+    "size": 53,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0q_EtwWriteTransfer",
+    "ea": "0x140002254",
+    "function_file": "functions/140002254_McTemplateK0q_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0q_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64, __int64, int)",
+    "rank_score": 13,
+    "size": 87,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140002b20",
+    "function_file": "functions/140002b20_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ImageCompareSectionNames",
+    "ea": "0x1400023b8",
+    "function_file": "functions/1400023b8_ImageCompareSectionNames.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ImageCompareSectionNames",
+    "prototype": "char __fastcall(__int64)",
+    "rank_score": 12,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140015044",
+    "function_file": "functions/140015044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140002b50",
+    "function_file": "functions/140002b50_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "memset",
+    "ea": "0x140002f00",
+    "function_file": "functions/140002f00_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 12,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "HbpLogHypervisorMsrAccessTelemetryEvent",
+    "ea": "0x140013c34",
+    "function_file": "functions/140013c34_HbpLogHypervisorMsrAccessTelemetryEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HbpLogHypervisorMsrAccessTelemetryEvent",
+    "prototype": "char __fastcall(__int64, __int64, __int64, __int64, __int64, __int64, unsigned int, unsigned int, const CHAR *)",
+    "rank_score": 9,
+    "size": 392,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "memmove",
+    "ea": "0x140002c00",
+    "function_file": "functions/140002c00_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 9,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "HbpLogHypervisorMsrAccessBitmapTelemetryEvent",
+    "ea": "0x140013a60",
+    "function_file": "functions/140013a60_HbpLogHypervisorMsrAccessBitmapTelemetryEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HbpLogHypervisorMsrAccessBitmapTelemetryEvent",
+    "prototype": "char()",
+    "rank_score": 6,
+    "size": 206,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "_tlgKeywordOn",
+    "ea": "0x140001040",
+    "function_file": "functions/140001040_tlgKeywordOn.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgKeywordOn",
+    "prototype": "bool __fastcall(__int64, __int64)",
+    "rank_score": 6,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "HbpLogHypervisorMsrAccessGlobalEvent",
+    "ea": "0x140013b34",
+    "function_file": "functions/140013b34_HbpLogHypervisorMsrAccessGlobalEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HbpLogHypervisorMsrAccessGlobalEvent",
+    "prototype": "NTSTATUS __fastcall(int, char, __int64, __int16, char, char, char, char, __int64)",
+    "rank_score": 5,
+    "size": 248,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140001120",
+    "function_file": "functions/140001120_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 4,
+    "size": 261,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0uIR0iq_EtwWriteTransfer",
+    "ea": "0x1400022b4",
+    "function_file": "functions/1400022b4_McTemplateK0uIR0iq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0uIR0iq_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, const EVENT_DESCRIPTOR *, __int64, unsigned __int8, __int64, char, char)",
+    "rank_score": 4,
+    "size": 143,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "HvStatspClientBufferLookupUserInstance",
+    "ea": "0x140010130",
+    "function_file": "functions/140010130_HvStatspClientBufferLookupUserInstance.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HvStatspClientBufferLookupUserInstance",
+    "prototype": "_QWORD *__fastcall(_QWORD *, __int64)",
+    "rank_score": 3,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "HvStatspLookupMapping",
+    "ea": "0x1400102f0",
+    "function_file": "functions/1400102f0_HvStatspLookupMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HvStatspLookupMapping",
+    "prototype": "__int64 *__fastcall(__int64, int, int)",
+    "rank_score": 3,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ImagepValidateNtHeaderGeneric",
+    "ea": "0x140002774",
+    "function_file": "functions/140002774_ImagepValidateNtHeaderGeneric.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ImagepValidateNtHeaderGeneric",
+    "prototype": "char __fastcall(__int64, unsigned __int64, unsigned __int64 *)",
+    "rank_score": 3,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ImagepValidateSectionHeader",
+    "ea": "0x1400027c0",
+    "function_file": "functions/1400027c0_ImagepValidateSectionHeader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ImagepValidateSectionHeader",
+    "prototype": "bool __fastcall(__int64, unsigned __int64)",
+    "rank_score": 3,
+    "size": 26,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0_EtwWriteTransfer",
+    "ea": "0x14000220c",
+    "function_file": "functions/14000220c_McTemplateK0_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64, __int64)",
+    "rank_score": 3,
+    "size": 66,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0x_EtwWriteTransfer",
+    "ea": "0x14000234c",
+    "function_file": "functions/14000234c_McTemplateK0x_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0x_EtwWriteTransfer",
+    "prototype": "NTSTATUS(__int64, __int64, __int64, ...)",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_tlgCreate1Sz_char",
+    "ea": "0x140001008",
+    "function_file": "functions/140001008_tlgCreate1Sz_char.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_char",
+    "prototype": "__int64 __fastcall(__int64, const CHAR *)",
+    "rank_score": 3,
+    "size": 48,
+    "tags": []
+  }
+]

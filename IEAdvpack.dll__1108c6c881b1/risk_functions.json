@@ -1,0 +1,4545 @@
+[
+  {
+    "callee_count": 22,
+    "caller_count": 1,
+    "demangled": "SaveRestoreInfo(ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x18000e060",
+    "function_file": "functions/18000e060_SaveRestoreInfo_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegFlushKey",
+      "ADVAPI32!RegLoadKeyW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW",
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RegSaveKeyW",
+      "ADVAPI32!RegSetValueExW",
+      "ADVAPI32!RegUnLoadKeyW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetShortPathNameW",
+      "KERNEL32!LocalFree",
+      "KERNEL32!SetFileAttributesW"
+    ],
+    "matched_strings": [
+      "InstallINFSection",
+      "ComponentName",
+      "CompName=%1 pszInf=%2 Sec=%3\r\n",
+      "BackupPath",
+      "BackupPath",
+      "BackupPath",
+      "Uninstall Information",
+      "Uninstall Information",
+      "InstallINFFile",
+      "BackupRegistry",
+      "BackupRegistry",
+      "ComponentVersion",
+      "ComponentVersion",
+      "ComponentVersion",
+      "BackupRegPathName",
+      "BackupRegPathName"
+    ],
+    "name": "?SaveRestoreInfo@@YAJPEBG00K@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, BYTE *lpAppName, PCWSTR SourceRootPath, char)",
+    "rank_score": 9537,
+    "size": 3122,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "InstallOCX(_REGOCXData *,int,int,int)",
+    "ea": "0x1800079c0",
+    "function_file": "functions/1800079c0_InstallOCX_REGOCXData_int_int_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegSetValueExW",
+      "ADVAPI32!RegSetValueW",
+      "KERNEL32!CompareStringW",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "SHLWAPI!StrChrW",
+      "USER32!CharNextW",
+      "USER32!CharUpperW"
+    ],
+    "matched_strings": [
+      "InstallOCX: %1 %2\r\n",
+      "InstallOCX: %1 Failed\r\n",
+      "LoadLibrary %1\r\n",
+      "Register: DoDllReg: %1\r\n",
+      "Register: DoDllInstall: %1\r\n",
+      "UnRegister: DoDllReg: %1\r\n",
+      "UnRegister: DoDllInstall: %1\r\n",
+      "DllRegisterServer",
+      "DllUnregisterServer",
+      "DllInstall",
+      "rundll32.exe advpack.dll,RegisterOCX %s,%s,%s",
+      "InstallOCX: End %1\r\n"
+    ],
+    "name": "?InstallOCX@@YAHPEAU_REGOCXData@@HHH@Z",
+    "prototype": "_BOOL8 __fastcall(struct _REGOCXData *, int, unsigned int, int)",
+    "rank_score": 4349,
+    "size": 1794,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "SetPerUserSecValuesW",
+    "ea": "0x180010d50",
+    "function_file": "functions/180010d50_SetPerUserSecValuesW.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegDeleteKeyW",
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [
+      "IsInstalled",
+      "StubPath",
+      "StubPath",
+      "StubPath",
+      "StubPath",
+      "Failure: Cannot open %1 key\r\n",
+      "Failure: Cannot create %1 key\r\n",
+      "DontAsk",
+      "rundll32.exe advpack.dll,UserInstStubWrapper %s",
+      "rundll32.exe advpack.dll,UserUnInstStubWrapper %s",
+      "RealStubPath",
+      "RealStubPath",
+      "RealStubPath",
+      "OldRealStubPath",
+      "OldRealStubPath",
+      "OldRealStubPath",
+      "OldStubPath",
+      "OldStubPath",
+      "OldStubPath",
+      "software\\microsoft\\Active Setup\\Installed Components",
+      "software\\microsoft\\Active Setup\\Installed Components"
+    ],
+    "name": "SetPerUserSecValuesW",
+    "prototype": "HRESULT __stdcall(PERUSERSECTIONW *pPerUser)",
+    "rank_score": 4313,
+    "size": 1550,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "RestoreFiles(HWND__ *,ushort *,ushort const *,ushort const *,ulong)",
+    "ea": "0x180016268",
+    "function_file": "functions/180016268_RestoreFiles_HWND_ushort_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CopyFileW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetWindowsDirectoryW",
+      "KERNEL32!LocalFree",
+      "KERNEL32!SetFileAttributesW",
+      "USER32!CreateDialogParamW",
+      "USER32!DestroyWindow",
+      "USER32!GetDlgItem",
+      "USER32!SendMessageW",
+      "USER32!ShowWindow",
+      "USER32!UpdateWindow"
+    ],
+    "matched_strings": [],
+    "name": "?RestoreFiles@@YAJPEAUHWND__@@PEAGPEBG2K@Z",
+    "prototype": "__int64 __fastcall(HWND, unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, __int16)",
+    "rank_score": 4241,
+    "size": 1115,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "BackupFiles(HWND__ *,ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x1800152d8",
+    "function_file": "functions/1800152d8_BackupFiles_HWND_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetPrivateProfileStringW",
+      "KERNEL32!WritePrivateProfileStringW",
+      "USER32!CreateDialogParamW",
+      "USER32!DestroyWindow",
+      "USER32!GetDlgItem",
+      "USER32!SendMessageW",
+      "USER32!ShowWindow",
+      "USER32!UpdateWindow"
+    ],
+    "matched_strings": [],
+    "name": "?BackupFiles@@YAJPEAUHWND__@@PEBG11K@Z",
+    "prototype": "__int64 __fastcall(HWND hWnd, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, char)",
+    "rank_score": 3239,
+    "size": 985,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "RestoreSingleFile(_FILELIST *,ushort const *,void *)",
+    "ea": "0x1800166cc",
+    "function_file": "functions/1800166cc_RestoreSingleFile_FILELIST_ushort_const_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!ReadFile",
+      "KERNEL32!SetFilePointer",
+      "KERNEL32!SetFileTime",
+      "KERNEL32!WriteFile",
+      "SHLWAPI!PathRemoveFileSpecW"
+    ],
+    "matched_strings": [],
+    "name": "?RestoreSingleFile@@YAHPEAU_FILELIST@@PEBGPEAX@Z",
+    "prototype": "__int64 __fastcall(FILETIME *, const unsigned __int16 *, void *)",
+    "rank_score": 3233,
+    "size": 862,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NTGetFileVersionInfo(ushort const *,void * *)",
+    "ea": "0x180009140",
+    "function_file": "functions/180009140_NTGetFileVersionInfo_ushort_const_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileMappingW",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!FindResourceW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LoadResource",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!MapViewOfFileEx",
+      "KERNEL32!SetLastError",
+      "KERNEL32!UnmapViewOfFile",
+      "VERSION!GetFileVersionInfoSizeW",
+      "VERSION!GetFileVersionInfoW",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?NTGetFileVersionInfo@@YAHPEBGPEAPEAX@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lptstrFilename, void **)",
+    "rank_score": 3215,
+    "size": 470,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DeleteOldBackupData(HKEY__ *)",
+    "ea": "0x18000c99c",
+    "function_file": "functions/18000c99c_DeleteOldBackupData_HKEY.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!SetFileAttributesW",
+      "SHLWAPI!StrRChrW"
+    ],
+    "matched_strings": [
+      "BackupPath",
+      "BackupRegPathName"
+    ],
+    "name": "?DeleteOldBackupData@@YAXPEAUHKEY__@@@Z",
+    "prototype": "void __fastcall(HKEY hKey)",
+    "rank_score": 3132,
+    "size": 731,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "UpdateHelpDlls(ushort const * *,int,ushort const *,ushort const *,ulong)",
+    "ea": "0x18000a918",
+    "function_file": "functions/18000a918_UpdateHelpDlls_ushort_const_int_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CopyFileW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!MoveFileW",
+      "KERNEL32!SetFileAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateHelpDlls@@YAHPEAPEBGHPEBG1K@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 **, int, size_t *, const unsigned __int16 *, char)",
+    "rank_score": 3072,
+    "size": 1352,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "RegSaveHelper(HKEY__ *,HKEY__ *,ushort const *,ushort const *,ushort const *)",
+    "ea": "0x1800135d8",
+    "function_file": "functions/1800135d8_RegSaveHelper_HKEY_HKEY_ushort_const_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!CompareStringW",
+      "KERNEL32!GetVersionExW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "SHLWAPI!PathRemoveFileSpecW"
+    ],
+    "matched_strings": [],
+    "name": "?RegSaveHelper@@YAHPEAUHKEY__@@0PEBG11@Z",
+    "prototype": "__int64 __fastcall(HKEY, HKEY, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 3050,
+    "size": 1259,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "RunCommands(ushort const *,ushort const *,ushort const *,ulong,int)",
+    "ea": "0x180009c14",
+    "function_file": "functions/180009c14_RunCommands_ushort_const_ushort_const_ushort_const_ulong_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "RunCommands: Sec=%1\r\n",
+      "RunCommands: Sec=%1 End hr=0x%2!x!\r\n"
+    ],
+    "name": "?RunCommands@@YAJPEBG00KH@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, LPCWSTR lpAppName, const unsigned __int16 *, char, int)",
+    "rank_score": 2936,
+    "size": 1188,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 3,
+    "demangled": "ExecuteCabW",
+    "ea": "0x18000f7b0",
+    "function_file": "functions/18000f7b0_ExecuteCabW.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!CopyFileW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetTempFileNameW",
+      "SHLWAPI!StrRChrW"
+    ],
+    "matched_strings": [
+      "ComponentName",
+      "InfFile Rename: %1 becomes %2\r\n",
+      "PreRollBack",
+      "InstallCabFile"
+    ],
+    "name": "ExecuteCabW",
+    "prototype": "HRESULT __stdcall(HWND hwnd, CABINFOW *pCab, LPVOID pReserved)",
+    "rank_score": 2844,
+    "size": 1915,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "UserInstStubWrapperW",
+    "ea": "0x1800115b0",
+    "function_file": "functions/1800115b0_UserInstStubWrapperW.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!ExpandEnvironmentStringsW",
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "RealStubPath",
+      "software\\microsoft\\Active Setup\\Installed Components",
+      "software\\microsoft\\Active Setup\\Installed Components"
+    ],
+    "name": "UserInstStubWrapperW",
+    "prototype": "HRESULT __stdcall(HWND hwnd, HINSTANCE hInstance, LPCWSTR pszParms, INT nShow)",
+    "rank_score": 2778,
+    "size": 789,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "UserUnInstStubWrapperW",
+    "ea": "0x180011940",
+    "function_file": "functions/180011940_UserUnInstStubWrapperW.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!ExpandEnvironmentStringsW",
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "RealStubPath",
+      "software\\microsoft\\Active Setup\\Installed Components",
+      "software\\microsoft\\Active Setup\\Installed Components"
+    ],
+    "name": "UserUnInstStubWrapperW",
+    "prototype": "HRESULT __stdcall(HWND hwnd, HINSTANCE hInstance, LPCWSTR pszParms, INT nShow)",
+    "rank_score": 2778,
+    "size": 842,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 30,
+    "caller_count": 4,
+    "demangled": "CoreInstall(ushort const *,ushort const *,ushort const *,ulong,ulong,ushort const *)",
+    "ea": "0x180004880",
+    "function_file": "functions/180004880_CoreInstall_ushort_const_ushort_const_ushort_const_ulong_ulong_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetWindowsDirectoryW",
+      "USER32!ExitWindowsEx"
+    ],
+    "matched_strings": [
+      "ComponentName",
+      "CoreInstall: InfFile=%1 ",
+      "InstallSection=%1\r\n",
+      "CoreInstall: SfpInstallCatalog returned=%1!lu!\r\n",
+      "GenInstall: Sec=%1\r\n",
+      "GenInstall return: Sec=%1 hr=0x%2!x!\r\n",
+      "CoreInstall: End InfFile=%1 hr=0x%2!x!\r\n",
+      "RunPostSetupCommands",
+      "RunPreSetupCommands"
+    ],
+    "name": "?CoreInstall@@YAJPEBG00KK0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 *, unsigned int, ULONG, const unsigned __int16 *)",
+    "rank_score": 2658,
+    "size": 2451,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "AddDelMapping(HKEY__ *,ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x1800121d8",
+    "function_file": "functions/1800121d8_AddDelMapping_HKEY_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegEnumKeyW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!CompareStringW",
+      "SHLWAPI!StrChrW"
+    ],
+    "matched_strings": [],
+    "name": "?AddDelMapping@@YAHPEAUHKEY__@@PEBG11K@Z",
+    "prototype": "__int64 __fastcall(HKEY, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, unsigned int)",
+    "rank_score": 2637,
+    "size": 1247,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "RegRestoreAllEx(HKEY__ *)",
+    "ea": "0x180012f48",
+    "function_file": "functions/180012f48_RegRestoreAllEx_HKEY.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteKeyW",
+      "ADVAPI32!RegEnumKeyW",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!CompareStringW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "SHLWAPI!StrChrW",
+      "msvcrt!_wtoi"
+    ],
+    "matched_strings": [],
+    "name": "?RegRestoreAllEx@@YAJPEAUHKEY__@@@Z",
+    "prototype": "__int64 __fastcall(HKEY)",
+    "rank_score": 2635,
+    "size": 815,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BackupSingleFile(_FILELIST *,_BAKDATA *)",
+    "ea": "0x1800156b8",
+    "function_file": "functions/1800156b8_BackupSingleFile_FILELIST_BAKDATA.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetFileSize",
+      "KERNEL32!GetFileTime",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!ReadFile",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?BackupSingleFile@@YAHPEAU_FILELIST@@PEAU_BAKDATA@@@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR *, struct _BAKDATA *)",
+    "rank_score": 2629,
+    "size": 611,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "RO_GetPrivateProfileSection(ushort const *,ushort *,ulong,ushort const *)",
+    "ea": "0x180009580",
+    "function_file": "functions/180009580_RO_GetPrivateProfileSection_ushort_const_ushort_ulong_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CopyFileW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetPrivateProfileSectionW",
+      "KERNEL32!GetTempFileNameW",
+      "KERNEL32!GetTempPath2W",
+      "KERNEL32!GetWindowsDirectoryW",
+      "KERNEL32!SetFileAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "?RO_GetPrivateProfileSection@@YAKPEBGPEAGK0@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpAppName, LPWSTR lpReturnedString, DWORD nSize, LPCWSTR lpFileName)",
+    "rank_score": 2617,
+    "size": 361,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ExtractFilesA",
+    "ea": "0x180011dc0",
+    "function_file": "functions/180011dc0_ExtractFilesA.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!lstrcmpiA"
+    ],
+    "matched_strings": [
+      "CABINET.DLL",
+      "DllGetVersion",
+      "URLMON.DLL"
+    ],
+    "name": "ExtractFilesA",
+    "prototype": "HRESULT __stdcall(LPCSTR pszCabName, LPCSTR pszExpandDir, DWORD dwFlags, LPCSTR pszFileList, LPVOID lpReserved, DWORD dwReserved)",
+    "rank_score": 2553,
+    "size": 827,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "RegSaveRestoreW",
+    "ea": "0x180014440",
+    "function_file": "functions/180014440_RegSaveRestoreW.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CompareStringW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "RegSaveRestoreW",
+    "prototype": "HRESULT __stdcall(HWND hWnd, LPCWSTR pszTitleString, HKEY hkBckupKey, LPCWSTR pcszRootKey, LPCWSTR pcszSubKey, LPCWSTR pcszValueName, DWORD dwFlags)",
+    "rank_score": 2439,
+    "size": 1102,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "GetVersionFromFileW",
+    "ea": "0x18000b710",
+    "function_file": "functions/18000b710_GetVersionFromFileW.md",
+    "matched_imports": [
+      "KERNEL32!CopyFileW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetTempFileNameW",
+      "KERNEL32!GetWindowsDirectoryW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "SHLWAPI!PathFileExistsW",
+      "VERSION!GetFileVersionInfoSizeW",
+      "VERSION!GetFileVersionInfoW",
+      "VERSION!VerQueryValueW"
+    ],
+    "matched_strings": [],
+    "name": "GetVersionFromFileW",
+    "prototype": "HRESULT __stdcall(LPCWSTR lpszFilename, LPDWORD pdwMSVer, LPDWORD pdwLSVer, BOOL bVersion)",
+    "rank_score": 2419,
+    "size": 458,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RegRestoreHelper(HKEY__ *,HKEY__ *,ushort const *,ushort const *,ushort const *)",
+    "ea": "0x180013280",
+    "function_file": "functions/180013280_RegRestoreHelper_HKEY_HKEY_ushort_const_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegDeleteKeyW",
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "SHLWAPI!PathRemoveFileSpecW"
+    ],
+    "matched_strings": [
+      "RemoveRegistryBackupData: ",
+      "\r\nBackup Value deleted"
+    ],
+    "name": "?RegRestoreHelper@@YAHPEAUHKEY__@@0PEBG11@Z",
+    "prototype": "__int64 __fastcall(HKEY, HKEY, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *lpValueName)",
+    "rank_score": 2314,
+    "size": 848,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "GetValueFromRegistry(ushort *,ulong,ushort const *,ushort const *,ushort const *)",
+    "ea": "0x1800076a8",
+    "function_file": "functions/1800076a8_GetValueFromRegistry_ushort_ulong_ushort_const_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!CompareStringW",
+      "KERNEL32!ExpandEnvironmentStringsW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?GetValueFromRegistry@@YAHPEAGKPEBG11@Z",
+    "prototype": "__int64 __fastcall(BYTE *, unsigned int, PCNZWCH lpString1, LPCWSTR lpSubKey, LPCWSTR lpValueName)",
+    "rank_score": 2229,
+    "size": 553,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "DelNodeW",
+    "ea": "0x18000b240",
+    "function_file": "functions/18000b240_DelNodeW.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "KERNEL32!FindNextFileW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!RemoveDirectoryW",
+      "KERNEL32!SetFileAttributesW",
+      "KERNEL32!lstrcmpW",
+      "SHLWAPI!PathAddBackslashW"
+    ],
+    "matched_strings": [],
+    "name": "DelNodeW",
+    "prototype": "HRESULT __stdcall(LPCWSTR pszFileOrDirName, DWORD dwFlags)",
+    "rank_score": 2224,
+    "size": 623,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CreateInfFile(HINSTANCE__ *,ushort *,ulong *)",
+    "ea": "0x180002928",
+    "function_file": "functions/180002928_CreateInfFile_HINSTANCE_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!FindResourceW",
+      "KERNEL32!GetTempFileNameW",
+      "KERNEL32!GetTempPath2W",
+      "KERNEL32!GetWindowsDirectoryW",
+      "KERNEL32!LoadResource",
+      "KERNEL32!LockResource",
+      "KERNEL32!SizeofResource",
+      "KERNEL32!WriteFile",
+      "KERNEL32!WritePrivateProfileStringW"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInfFile@@YAJPEAUHINSTANCE__@@PEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(HINSTANCE hModule, WCHAR *lpFileName, unsigned int *)",
+    "rank_score": 2218,
+    "size": 421,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "initcopy(ushort const *,ushort const *,ushort const *)",
+    "ea": "0x180016e3c",
+    "function_file": "functions/180016e3c_initcopy_ushort_const_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CompareStringW",
+      "KERNEL32!GetPrivateProfileSectionW",
+      "KERNEL32!GetShortPathNameW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!MoveFileExW",
+      "KERNEL32!WritePrivateProfileSectionW"
+    ],
+    "matched_strings": [
+      "Rename",
+      "Rename"
+    ],
+    "name": "?initcopy@@YAXPEBG00@Z",
+    "prototype": "void __fastcall(const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 2107,
+    "size": 465,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "EnumerateSubKey(void)",
+    "ea": "0x1800127bc",
+    "function_file": "functions/1800127bc_EnumerateSubKey_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumKeyW",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "SHLWAPI!PathRemoveFileSpecW"
+    ],
+    "matched_strings": [],
+    "name": "?EnumerateSubKey@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 2041,
+    "size": 1337,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 6,
+    "demangled": "GetTranslatedLine(ushort const *,ushort const *,ulong,ushort * *,ulong *)",
+    "ea": "0x180006e54",
+    "function_file": "functions/180006e54_GetTranslatedLine_ushort_const_ushort_const_ulong_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!LocalReAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetTranslatedLine@@YAJPEBG0KPEAPEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, LPCWSTR lpAppName, unsigned int, unsigned __int16 **, unsigned int *)",
+    "rank_score": 2031,
+    "size": 867,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "UpdateRefCount(HWND__ *,ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x180016c0c",
+    "function_file": "functions/180016c0c_UpdateRefCount_HWND_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetPrivateProfileStringW",
+      "KERNEL32!SetFileAttributesW",
+      "KERNEL32!WritePrivateProfileStringW",
+      "SHLWAPI!PathFileExistsW",
+      "SHLWAPI!StrChrW",
+      "USER32!CharNextW",
+      "msvcrt!_ultow_s",
+      "msvcrt!_wtol"
+    ],
+    "matched_strings": [],
+    "name": "?UpdateRefCount@@YAJPEAUHWND__@@PEBG11K@Z",
+    "prototype": "__int64 __fastcall(HWND, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, __int16)",
+    "rank_score": 2031,
+    "size": 553,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "AdvInstallFileW",
+    "ea": "0x180002450",
+    "function_file": "functions/180002450_AdvInstallFileW.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "SETUPAPI!SetupCloseFileQueue",
+      "SETUPAPI!SetupCommitFileQueueW",
+      "SETUPAPI!SetupInitDefaultQueueCallbackEx",
+      "SETUPAPI!SetupOpenFileQueue",
+      "SETUPAPI!SetupQueueCopyW",
+      "SETUPAPI!SetupTermDefaultQueueCallback"
+    ],
+    "matched_strings": [
+      "SETUPAPI.DLL",
+      "SetupOpenFileQueue"
+    ],
+    "name": "AdvInstallFileW",
+    "prototype": "HRESULT __stdcall(HWND hwnd, LPCWSTR lpszSourceDir, LPCWSTR lpszSourceFile, LPCWSTR lpszDestDir, LPCWSTR lpszDestFile, DWORD dwFlags, DWORD dwReserved)",
+    "rank_score": 1928,
+    "size": 835,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CheckGrpconvRegkey",
+    "ea": "0x180017434",
+    "function_file": "functions/180017434_CheckGrpconvRegkey.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumKeyW",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!GetFileAttributesW",
+      "SHLWAPI!StrChrW"
+    ],
+    "matched_strings": [],
+    "name": "CheckGrpconvRegkey",
+    "prototype": "_BOOL8 __fastcall(unsigned __int16 *)",
+    "rank_score": 1853,
+    "size": 747,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "CreateFullPath(ushort const *,int)",
+    "ea": "0x18000521c",
+    "function_file": "functions/18000521c_CreateFullPath_ushort_const_int.md",
+    "matched_imports": [
+      "KERNEL32!CreateDirectoryW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetFileAttributesW",
+      "USER32!CharNextW",
+      "USER32!CharPrevW"
+    ],
+    "matched_strings": [],
+    "name": "?CreateFullPath@@YAJPEBGH@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, int)",
+    "rank_score": 1824,
+    "size": 460,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "ValueDataHelper(HKEY__ *,ushort const *,uchar * *,ulong *,ulong)",
+    "ea": "0x180013fa4",
+    "function_file": "functions/180013fa4_ValueDataHelper_HKEY_ushort_const_uchar_ulong_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegEnumKeyW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!LocalAlloc",
+      "SHLWAPI!StrChrW"
+    ],
+    "matched_strings": [],
+    "name": "?ValueDataHelper@@YAHPEAUHKEY__@@PEBGPEAPEAEPEAKK@Z",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName, unsigned __int8 **, unsigned int *, unsigned int)",
+    "rank_score": 1819,
+    "size": 413,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "IsNTAdmin",
+    "ea": "0x180010350",
+    "function_file": "functions/180010350_IsNTAdmin.md",
+    "matched_imports": [
+      "ADVAPI32!AllocateAndInitializeSid",
+      "ADVAPI32!EqualSid",
+      "ADVAPI32!FreeSid",
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "IsNTAdmin",
+    "prototype": "BOOL __stdcall(DWORD dwReserved, DWORD *lpdwReserved)",
+    "rank_score": 1817,
+    "size": 354,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "RemoveBackupBaseOnVer(ushort const *,ushort const *)",
+    "ea": "0x18000de30",
+    "function_file": "functions/18000de30_RemoveBackupBaseOnVer_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "ComponentName",
+      "ComponentVersion",
+      "ComponentVersion"
+    ],
+    "name": "?RemoveBackupBaseOnVer@@YAHPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, LPCWSTR lpAppName)",
+    "rank_score": 1761,
+    "size": 554,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "SetSysPathsInReg(ulong)",
+    "ea": "0x18000ef90",
+    "function_file": "functions/18000ef90_SetSysPathsInReg_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!GetWindowsDirectoryW"
+    ],
+    "matched_strings": [
+      "ProgramFilesPath",
+      "ProgramFilesPath",
+      "SM_AccessoriesName",
+      "PF_AccessoriesName",
+      "Accessories"
+    ],
+    "name": "?SetSysPathsInReg@@YAXK@Z",
+    "prototype": "void __fastcall(int)",
+    "rank_score": 1646,
+    "size": 673,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "LaunchAndWait(ushort const *,ushort const *,void * *,ulong,ulong)",
+    "ea": "0x180008644",
+    "function_file": "functions/180008644_LaunchAndWait_ushort_const_ushort_const_void_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateProcessW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "USER32!DispatchMessageW",
+      "USER32!MsgWaitForMultipleObjects",
+      "USER32!PeekMessageW"
+    ],
+    "matched_strings": [],
+    "name": "?LaunchAndWait@@YAJPEBG0PEAPEAXKK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, LPCWSTR lpCurrentDirectory, void **, DWORD, char)",
+    "rank_score": 1634,
+    "size": 525,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DirSafe(ushort const *)",
+    "ea": "0x180005a8c",
+    "function_file": "functions/180005a8c_DirSafe_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CompareStringW",
+      "KERNEL32!GetShortPathNameW",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!GetWindowsDirectoryW"
+    ],
+    "matched_strings": [],
+    "name": "?DirSafe@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 1631,
+    "size": 635,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MySmartWrite(ushort const *,ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x180002eb0",
+    "function_file": "functions/180002eb0_MySmartWrite_ushort_const_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!SetFilePointer",
+      "KERNEL32!WriteFile",
+      "KERNEL32!WritePrivateProfileStringW"
+    ],
+    "matched_strings": [],
+    "name": "?MySmartWrite@@YAHPEBG000K@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, unsigned int)",
+    "rank_score": 1617,
+    "size": 381,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SetSecRegValues(HKEY__ *,_PERUSERSECTIONW *,int)",
+    "ea": "0x18000ed4c",
+    "function_file": "functions/18000ed4c_SetSecRegValues_HKEY_PERUSERSECTIONW_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [
+      "IsInstalled",
+      "StubPath",
+      "ComponentID",
+      "RealStubPath"
+    ],
+    "name": "?SetSecRegValues@@YAXPEAUHKEY__@@PEAU_PERUSERSECTIONW@@H@Z",
+    "prototype": "void __fastcall(HKEY hKey, struct _PERUSERSECTIONW *, int)",
+    "rank_score": 1598,
+    "size": 573,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RunPatchingCommands(ushort const *,ushort const *,ushort const *)",
+    "ea": "0x18000a24c",
+    "function_file": "functions/18000a24c_RunPatchingCommands_ushort_const_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryW",
+      "KERNEL32!LocalFree",
+      "SHLWAPI!__imp_SHUnicodeToAnsi"
+    ],
+    "matched_strings": [
+      "LoadAdvpackExtension"
+    ],
+    "name": "?RunPatchingCommands@@YAJPEBG00@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, LPCWSTR lpAppName, LPCWCH lpWideCharStr)",
+    "rank_score": 1481,
+    "size": 467,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "AddWinInit(ushort const *,ushort const *)",
+    "ea": "0x180003fb8",
+    "function_file": "functions/180003fb8_AddWinInit_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetWindowsDirectoryW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!MoveFileExW",
+      "KERNEL32!WritePrivateProfileStringW"
+    ],
+    "matched_strings": [
+      "Rename"
+    ],
+    "name": "?AddWinInit@@YAHPEBG0@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpString, LPCWSTR lpKeyName)",
+    "rank_score": 1476,
+    "size": 252,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "StartLogging(ushort const *)",
+    "ea": "0x180013c98",
+    "function_file": "functions/180013c98_StartLogging_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetProfileStringW",
+      "KERNEL32!GetWindowsDirectoryW",
+      "KERNEL32!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "?StartLogging@@YAXPEBG@Z",
+    "prototype": "void __fastcall(LPCWSTR lpValueName)",
+    "rank_score": 1460,
+    "size": 447,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VerifyBackupRegData(HKEY__ *)",
+    "ea": "0x18000f480",
+    "function_file": "functions/18000f480_VerifyBackupRegData_HKEY.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "BackupRegPathName"
+    ],
+    "name": "?VerifyBackupRegData@@YAHPEAUHKEY__@@@Z",
+    "prototype": "_BOOL8 __fastcall(HKEY hKey)",
+    "rank_score": 1457,
+    "size": 424,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 21,
+    "demangled": "GetTranslatedString(ushort const *,ushort const *,ushort const *,ushort *,ulong,ulong *)",
+    "ea": "0x180007454",
+    "function_file": "functions/180007454_GetTranslatedString_ushort_const_ushort_const_ushort_const_ushort_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?GetTranslatedString@@YAJPEBG00PEAGKPEAK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, LPCWSTR lpAppName, LPCWSTR lpKeyName, unsigned __int16 *, DWORD, unsigned int *)",
+    "rank_score": 1443,
+    "size": 587,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GetUniBackupName(HKEY__ *,ushort *,ulong,ushort const *,ushort const *)",
+    "ea": "0x18000ced8",
+    "function_file": "functions/18000ced8_GetUniBackupName_HKEY_ushort_ulong_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!CompareStringW",
+      "SHLWAPI!PathFileExistsW",
+      "SHLWAPI!StrRChrW",
+      "USER32!CharNextW"
+    ],
+    "matched_strings": [],
+    "name": "?GetUniBackupName@@YAHPEAUHKEY__@@PEAGKPEBG2@Z",
+    "prototype": "__int64 __fastcall(HKEY, unsigned __int16 *, __int64, const unsigned __int16 *, unsigned __int16 *pszMore)",
+    "rank_score": 1434,
+    "size": 675,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CtlSetLddPath(uint,ushort const *,ulong)",
+    "ea": "0x1800053f0",
+    "function_file": "functions/1800053f0_CtlSetLddPath_uint_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetShortPathNameW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "SETUPAPI!SetupSetDirectoryIdW"
+    ],
+    "matched_strings": [],
+    "name": "?CtlSetLddPath@@YAJIPEBGK@Z",
+    "prototype": "__int64 __fastcall(DWORD Id, const unsigned __int16 *, char)",
+    "rank_score": 1417,
+    "size": 398,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "RegDeleteKeyRecursivelyW",
+    "ea": "0x180017d98",
+    "function_file": "functions/180017d98_RegDeleteKeyRecursivelyW.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteKeyW",
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegEnumKeyW",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW"
+    ],
+    "matched_strings": [],
+    "name": "RegDeleteKeyRecursivelyW",
+    "prototype": "__int64 __fastcall(HKEY, const WCHAR *)",
+    "rank_score": 1417,
+    "size": 374,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "TranslateInfStringA",
+    "ea": "0x18000bf80",
+    "function_file": "functions/18000bf80_TranslateInfStringA.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "SHLWAPI!__imp_SHUnicodeToAnsi"
+    ],
+    "matched_strings": [],
+    "name": "TranslateInfStringA",
+    "prototype": "HRESULT __stdcall(LPCSTR pszInfFilename, LPCSTR pszInstallSection, LPCSTR pszTranslateSection, LPCSTR pszTranslateKey, LPSTR pszBuffer, DWORD cchBuffer, PDWORD pdwRequiredSize, PVOID pvReserved)",
+    "rank_score": 1415,
+    "size": 310,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "InstallOnNT(ushort const *,ushort const *)",
+    "ea": "0x180001c48",
+    "function_file": "functions/180001c48_InstallOnNT_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "SETUPAPI!SetupInitDefaultQueueCallbackEx",
+      "SETUPAPI!SetupInstallFromInfSectionW",
+      "SETUPAPI!SetupTermDefaultQueueCallback"
+    ],
+    "matched_strings": [],
+    "name": "?InstallOnNT@@YAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(PCWSTR SectionName, PCWSTR SourceRootPath)",
+    "rank_score": 1414,
+    "size": 364,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "UseRunOnceEx(void)",
+    "ea": "0x18000ae68",
+    "function_file": "functions/18000ae68_UseRunOnceEx_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!GetWindowsDirectoryW"
+    ],
+    "matched_strings": [
+      "iernonce.dll",
+      "iernonce.dll",
+      "rundll32.exe "
+    ],
+    "name": "?UseRunOnceEx@@YAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 1374,
+    "size": 607,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BrowseForDir(HWND__ *,ushort const *,ushort *,ulong)",
+    "ea": "0x1800042f8",
+    "function_file": "functions/1800042f8_BrowseForDir_HWND_ushort_const_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryExW"
+    ],
+    "matched_strings": [
+      "SHGetPathFromIDListW",
+      "SHELL32.DLL"
+    ],
+    "name": "?BrowseForDir@@YAHPEAUHWND__@@PEBGPEAGK@Z",
+    "prototype": "_BOOL8 __fastcall(HWND hWnd, const unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 1300,
+    "size": 408,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetUniHiveKeyName(HKEY__ *,ushort *,ulong,ushort const *)",
+    "ea": "0x18000d184",
+    "function_file": "functions/18000d184_GetUniHiveKeyName_HKEY_ushort_ulong_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!GetFileAttributesW",
+      "SHLWAPI!StrRChrW",
+      "USER32!CharNextW"
+    ],
+    "matched_strings": [
+      "BackupRegPathName"
+    ],
+    "name": "?GetUniHiveKeyName@@YAHPEAUHKEY__@@PEAGKPEBG@Z",
+    "prototype": "__int64 __fastcall(HKEY, unsigned __int16 *, __int64, const unsigned __int16 *)",
+    "rank_score": 1291,
+    "size": 478,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "AdvStartLogging(void)",
+    "ea": "0x18000c3b8",
+    "function_file": "functions/18000c3b8_AdvStartLogging_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetWindowsDirectoryW",
+      "KERNEL32!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "?AdvStartLogging@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 1260,
+    "size": 436,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MyNTReboot(void)",
+    "ea": "0x180009004",
+    "function_file": "functions/180009004_MyNTReboot_void.md",
+    "matched_imports": [
+      "ADVAPI32!AdjustTokenPrivileges",
+      "ADVAPI32!LookupPrivilegeValueW",
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "USER32!ExitWindowsEx"
+    ],
+    "matched_strings": [
+      "SeShutdownPrivilege"
+    ],
+    "name": "?MyNTReboot@@YAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 1256,
+    "size": 262,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MakeLFNPath",
+    "ea": "0x180017bcc",
+    "function_file": "functions/180017bcc_MakeLFNPath.md",
+    "matched_imports": [
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "SHLWAPI!PathBuildRootW",
+      "SHLWAPI!StrRChrW",
+      "USER32!CharNextW",
+      "USER32!CharUpperW"
+    ],
+    "matched_strings": [],
+    "name": "MakeLFNPath",
+    "prototype": "int __fastcall(PCWSTR pszStart, wchar_t *pszPathIn)",
+    "rank_score": 1232,
+    "size": 451,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MappingExists(HKEY__ *,ushort const *,ushort const *,ushort const *)",
+    "ea": "0x180012d50",
+    "function_file": "functions/180012d50_MappingExists_HKEY_ushort_const_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumKeyW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!CompareStringW",
+      "SHLWAPI!StrChrW"
+    ],
+    "matched_strings": [],
+    "name": "?MappingExists@@YAHPEAUHKEY__@@PEBG11@Z",
+    "prototype": "__int64 __fastcall(HKEY hKey, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1226,
+    "size": 328,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x1800019d4",
+    "function_file": "functions/1800019d4_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "RunningOnWin95BiDiLoc",
+    "ea": "0x1800179dc",
+    "function_file": "functions/1800179dc_RunningOnWin95BiDiLoc.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegQueryValueExA",
+      "KERNEL32!GetVersionExW",
+      "USER32!CharNextA",
+      "USER32!GetSystemMetrics"
+    ],
+    "matched_strings": [],
+    "name": "RunningOnWin95BiDiLoc",
+    "prototype": "__int64()",
+    "rank_score": 1217,
+    "size": 442,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalStorage<wil::details_abi::ThreadLocalData>::~ThreadLocalStorage<wil::details_abi::ThreadLocalData>(void)",
+    "ea": "0x1800188d0",
+    "function_file": "functions/1800188d0_wil_details_abi_ThreadLocalStorage_wil_details_abi_ThreadLocalData_ThreadLocalStorage_wil_details_abi_ThreadLo.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ThreadLocalStorage@UThreadLocalData@details_abi@wil@@@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(_QWORD *)",
+    "rank_score": 1203,
+    "size": 218,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CheckToken(int *)",
+    "ea": "0x18000c65c",
+    "function_file": "functions/18000c65c_CheckToken_int.md",
+    "matched_imports": [
+      "ADVAPI32!AllocateAndInitializeSid",
+      "ADVAPI32!FreeSid",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryW"
+    ],
+    "matched_strings": [
+      "advapi32.dll",
+      "CheckTokenMembership"
+    ],
+    "name": "?CheckToken@@YAHPEAH@Z",
+    "prototype": "__int64 __fastcall(int *)",
+    "rank_score": 1105,
+    "size": 252,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "LaunchINFSectionW",
+    "ea": "0x18000b8f0",
+    "function_file": "functions/18000b8f0_LaunchINFSectionW.md",
+    "matched_imports": [
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetFullPathNameW",
+      "KERNEL32!GetWindowsDirectoryW",
+      "msvcrt!_wtol"
+    ],
+    "matched_strings": [
+      "Advanced INF Install"
+    ],
+    "name": "LaunchINFSectionW",
+    "prototype": "INT __stdcall(HWND hwndOwner, HINSTANCE hInstance, LPWSTR pszParams, INT nShow)",
+    "rank_score": 1100,
+    "size": 851,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "MyLoadLibrary(ushort const *)",
+    "ea": "0x180008f2c",
+    "function_file": "functions/180008f2c_MyLoadLibrary_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!LoadLibraryW"
+    ],
+    "matched_strings": [
+      "SETUPAPI.DLL"
+    ],
+    "name": "?MyLoadLibrary@@YAPEAUHINSTANCE__@@PEBG@Z",
+    "prototype": "HINSTANCE __fastcall(const unsigned __int16 *)",
+    "rank_score": 1098,
+    "size": 208,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "RunCommandsSections(ushort const *,ushort const *,ushort const *,ushort const *,ulong,int)",
+    "ea": "0x18000a0c0",
+    "function_file": "functions/18000a0c0_RunCommandsSections_ushort_const_ushort_const_ushort_const_ushort_const_ulong_int.md",
+    "matched_imports": [
+      "KERNEL32!CompareStringW",
+      "SHLWAPI!StrChrW",
+      "USER32!CharNextW",
+      "USER32!CharPrevW",
+      "msvcrt!_wtol"
+    ],
+    "matched_strings": [
+      "RunPostSetupCommands"
+    ],
+    "name": "?RunCommandsSections@@YAJPEBG000KH@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, __int16, int)",
+    "rank_score": 1069,
+    "size": 388,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CleanRegLogFile(ushort const *)",
+    "ea": "0x18000c760",
+    "function_file": "functions/18000c760_CleanRegLogFile_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetWindowsDirectoryW"
+    ],
+    "matched_strings": [],
+    "name": "?CleanRegLogFile@@YAXPEBG@Z",
+    "prototype": "void __fastcall(LPCWSTR lpValueName)",
+    "rank_score": 1059,
+    "size": 354,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MakeBakName(ushort const *,ushort *,unsigned __int64)",
+    "ea": "0x180015ef8",
+    "function_file": "functions/180015ef8_MakeBakName_ushort_const_ushort_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetTempFileNameW",
+      "USER32!CharNextW",
+      "USER32!CharPrevW"
+    ],
+    "matched_strings": [],
+    "name": "?MakeBakName@@YAHPEBGPEAG_K@Z",
+    "prototype": "_BOOL8 __fastcall(const unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 1042,
+    "size": 404,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "NeedBackupData(ushort const *,ushort const *)",
+    "ea": "0x18000d564",
+    "function_file": "functions/18000d564_NeedBackupData_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CompareStringW",
+      "KERNEL32!GetEnvironmentVariableW",
+      "KERNEL32!GetModuleFileNameW",
+      "SHLWAPI!StrRChrW"
+    ],
+    "matched_strings": [],
+    "name": "?NeedBackupData@@YAHPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, LPCWSTR lpAppName)",
+    "rank_score": 1027,
+    "size": 351,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ProcessFileSections(ushort const *,ushort const *,uint (*)(void *,uint,unsigned __int64,unsigned __int64))",
+    "ea": "0x18000d90c",
+    "function_file": "functions/18000d90c_ProcessFileSections_ushort_const_ushort_const_uint_void_uint_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "SETUPAPI!SetupInitDefaultQueueCallbackEx",
+      "SETUPAPI!SetupInstallFromInfSectionW",
+      "SETUPAPI!SetupTermDefaultQueueCallback"
+    ],
+    "matched_strings": [],
+    "name": "?ProcessFileSections@@YAJPEBG0P6AIPEAXI_K2@Z@Z",
+    "prototype": "__int64 __fastcall(PCWSTR SectionName, PCWSTR SourceRootPath, PSP_FILE_CALLBACK_W MsgHandler)",
+    "rank_score": 1026,
+    "size": 283,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetTokenInformation_HeapFree<_TOKEN_GROUPS>(void *,void *,_TOKEN_INFORMATION_CLASS,_TOKEN_GROUPS * *)",
+    "ea": "0x18000c22c",
+    "function_file": "functions/18000c22c_GetTokenInformation_HeapFree_TOKEN_GROUPS_void_void_TOKEN_INFORMATION_CLASS_TOKEN_GROUPS.md",
+    "matched_imports": [
+      "ADVAPI32!GetTokenInformation",
+      "KERNEL32!GetLastError",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??$GetTokenInformation_HeapFree@U_TOKEN_GROUPS@@@@YAJPEAX0W4_TOKEN_INFORMATION_CLASS@@PEAPEAU_TOKEN_GROUPS@@@Z",
+    "prototype": "__int64 __fastcall(HANDLE hHeap, HANDLE TokenHandle, __int64, _QWORD *)",
+    "rank_score": 1005,
+    "size": 258,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "NeedToRunGrpconv",
+    "ea": "0x180017728",
+    "function_file": "functions/180017728_NeedToRunGrpconv.md",
+    "matched_imports": [
+      "KERNEL32!ExpandEnvironmentStringsW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetWindowsDirectoryW"
+    ],
+    "matched_strings": [
+      "RenameFiles",
+      "DeleteFiles",
+      "PreConvRenameFiles"
+    ],
+    "name": "NeedToRunGrpconv",
+    "prototype": "_BOOL8()",
+    "rank_score": 968,
+    "size": 272,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x18000b4b8",
+    "function_file": "functions/18000b4b8_DllMain.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!DisableThreadLibraryCalls",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [
+      "-------------------- advpack.dll is loaded or Attached ------------------------------\r\n",
+      "-------------------- advpack.dll is unloaded or Detached ----------------------------\r\n"
+    ],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 896,
+    "size": 162,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IsGoodAdvancedInfVersion(ushort const *)",
+    "ea": "0x180008330",
+    "function_file": "functions/180008330_IsGoodAdvancedInfVersion_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "msvcrt!_wtol"
+    ],
+    "matched_strings": [
+      "Advpack.dll Version check failed! InfFile=%1\r\n"
+    ],
+    "name": "?IsGoodAdvancedInfVersion@@YAHPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 859,
+    "size": 491,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GetFullInfNameAndSrcDir(ushort const *,ushort *,ulong,ushort *,ulong)",
+    "ea": "0x18000cc80",
+    "function_file": "functions/18000cc80_GetFullInfNameAndSrcDir_ushort_const_ushort_ulong_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetWindowsDirectoryW",
+      "SHLWAPI!PathRemoveFileSpecW"
+    ],
+    "matched_strings": [],
+    "name": "?GetFullInfNameAndSrcDir@@YAHPEBGPEAGK1K@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int16 *, __int64, unsigned __int16 *)",
+    "rank_score": 843,
+    "size": 561,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "IsGoodDir(ushort const *)",
+    "ea": "0x180008524",
+    "function_file": "functions/180008524_IsGoodDir_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetFileAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "?IsGoodDir@@YAHPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 840,
+    "size": 240,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 26,
+    "demangled": "AdvWriteToLog(ushort const *,...)",
+    "ea": "0x18000c574",
+    "function_file": "functions/18000c574_AdvWriteToLog_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!LocalFree",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?AdvWriteToLog@@YAXPEBGZZ",
+    "prototype": "void(LPCVOID lpSource, ...)",
+    "rank_score": 838,
+    "size": 223,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 40,
+    "demangled": "MsgBox2Param(HWND__ *,uint,ushort const *,ushort const *,uint,uint)",
+    "ea": "0x180008a6c",
+    "function_file": "functions/180008a6c_MsgBox2Param_HWND_uint_ushort_const_ushort_const_uint_uint.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!LocalFree",
+      "USER32!MessageBeep",
+      "USER32!MessageBoxW"
+    ],
+    "matched_strings": [],
+    "name": "?MsgBox2Param@@YAHPEAUHWND__@@IPEBG1II@Z",
+    "prototype": "__int64 __fastcall(HWND hWnd, UINT uID, const unsigned __int16 *, const unsigned __int16 *, UINT uType, unsigned int)",
+    "rank_score": 835,
+    "size": 531,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 10,
+    "demangled": "RestoreGlobalContext(void)",
+    "ea": "0x180003ce0",
+    "function_file": "functions/180003ce0_RestoreGlobalContext_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!LocalFree",
+      "KERNEL32!LocalReAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?RestoreGlobalContext@@YAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 835,
+    "size": 313,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "UninstallInfoInit(_BAKDATA *,ushort const *,ushort const *,int)",
+    "ea": "0x180016ad0",
+    "function_file": "functions/180016ad0_UninstallInfoInit_BAKDATA_ushort_const_ushort_const_int.md",
+    "matched_imports": [
+      "KERNEL32!CreateFileW",
+      "KERNEL32!SetFileAttributesW",
+      "KERNEL32!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "?UninstallInfoInit@@YAHPEAU_BAKDATA@@PEBG1H@Z",
+    "prototype": "__int64 __fastcall(struct _BAKDATA *, size_t *, const unsigned __int16 *, int)",
+    "rank_score": 829,
+    "size": 310,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RunSetupCommandA",
+    "ea": "0x18000bcb0",
+    "function_file": "functions/18000bcb0_RunSetupCommandA.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "RunSetupCommandA",
+    "prototype": "HRESULT __stdcall(HWND hWnd, LPCSTR szCmdName, LPCSTR szInfSection, LPCSTR szDir, LPCSTR lpszTitle, HANDLE *phEXE, DWORD dwFlags, LPVOID pvReserved)",
+    "rank_score": 824,
+    "size": 238,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MyFileCheckCallback(void *,uint,unsigned __int64,unsigned __int64)",
+    "ea": "0x18000d3e0",
+    "function_file": "functions/18000d3e0_MyFileCheckCallback_void_uint_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "SETUPAPI!SetupDefaultQueueCallbackW",
+      "SHLWAPI!PathFileExistsW"
+    ],
+    "matched_strings": [],
+    "name": "?MyFileCheckCallback@@YAIPEAXI_K1@Z",
+    "prototype": "UINT __fastcall(void *, UINT, UINT_PTR, UINT_PTR)",
+    "rank_score": 823,
+    "size": 167,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GenInstall(ushort const *,ushort const *,ushort const *)",
+    "ea": "0x18000616c",
+    "function_file": "functions/18000616c_GenInstall_ushort_const_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetShortPathNameW"
+    ],
+    "matched_strings": [],
+    "name": "?GenInstall@@YAJPEBG00@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpszLongPath, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 822,
+    "size": 423,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "LaunchINFSectionExW",
+    "ea": "0x1800104c0",
+    "function_file": "functions/1800104c0_LaunchINFSectionExW.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "SHLWAPI!PathRemoveFileSpecW",
+      "msvcrt!_wtol"
+    ],
+    "matched_strings": [],
+    "name": "LaunchINFSectionExW",
+    "prototype": "HRESULT __stdcall(HWND hwnd, HINSTANCE hInstance, LPWSTR pszParms, INT nShow)",
+    "rank_score": 821,
+    "size": 413,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "AddDelBackupEntryHelper(ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x1800151d8",
+    "function_file": "functions/1800151d8_AddDelBackupEntryHelper_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!SetFileAttributesW",
+      "KERNEL32!WritePrivateProfileStringW"
+    ],
+    "matched_strings": [],
+    "name": "?AddDelBackupEntryHelper@@YAJPEBG00K@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpKeyName, const unsigned __int16 *, const unsigned __int16 *, char)",
+    "rank_score": 819,
+    "size": 247,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "AdvInstallFileA",
+    "ea": "0x180002360",
+    "function_file": "functions/180002360_AdvInstallFileA.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "AdvInstallFileA",
+    "prototype": "HRESULT __stdcall(HWND hwnd, LPCSTR lpszSourceDir, LPCSTR lpszSourceFile, LPCSTR lpszDestDir, LPCSTR lpszDestFile, DWORD dwFlags, DWORD dwReserved)",
+    "rank_score": 814,
+    "size": 227,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DoInfInstallA(_ADVPACKARGSA *)",
+    "ea": "0x180005dc0",
+    "function_file": "functions/180005dc0_DoInfInstallA_ADVPACKARGSA.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?DoInfInstallA@@YAJPEAU_ADVPACKARGSA@@@Z",
+    "prototype": "__int64 __fastcall(struct _ADVPACKARGSA *)",
+    "rank_score": 814,
+    "size": 214,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RegKeyEmpty(HKEY__ *,ushort const *)",
+    "ea": "0x180012ea0",
+    "function_file": "functions/180012ea0_RegKeyEmpty_HKEY_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumKeyW",
+      "ADVAPI32!RegEnumValueW",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?RegKeyEmpty@@YAHPEAUHKEY__@@PEBG@Z",
+    "prototype": "_BOOL8 __fastcall(HKEY, const unsigned __int16 *)",
+    "rank_score": 814,
+    "size": 161,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "SaveGlobalContext(void)",
+    "ea": "0x180003e20",
+    "function_file": "functions/180003e20_SaveGlobalContext_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalReAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?SaveGlobalContext@@YAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 814,
+    "size": 354,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetThisModulePath(ushort *,int)",
+    "ea": "0x180006c80",
+    "function_file": "functions/180006c80_GetThisModulePath_ushort_int.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleFileNameW",
+      "USER32!CharNextW",
+      "USER32!CharPrevW"
+    ],
+    "matched_strings": [],
+    "name": "?GetThisModulePath@@YAHPEAGH@Z",
+    "prototype": "__int64 __fastcall(WCHAR *lpszStart)",
+    "rank_score": 804,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x1800015b8",
+    "function_file": "functions/1800015b8_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "BOOL __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetRollbackSection(ushort const *,ushort *,ulong)",
+    "ea": "0x180002d50",
+    "function_file": "functions/180002d50_GetRollbackSection_ushort_const_ushort_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "InstallINFSection"
+    ],
+    "name": "?GetRollbackSection@@YAHPEBGPEAGK@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, LPBYTE lpData)",
+    "rank_score": 689,
+    "size": 344,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetRefCountFrReg(ushort const *)",
+    "ea": "0x180015e48",
+    "function_file": "functions/180015e48_GetRefCountFrReg_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "Software\\Microsoft\\Windows\\CurrentVersion\\SharedDlls"
+    ],
+    "name": "?GetRefCountFrReg@@YAKPEBG@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpValueName)",
+    "rank_score": 674,
+    "size": 167,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GetNumberOfValues(ushort const *)",
+    "ea": "0x180006994",
+    "function_file": "functions/180006994_GetNumberOfValues_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Control\\Session Manager\\FileRenameOperations"
+    ],
+    "name": "?GetNumberOfValues@@YAKPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 663,
+    "size": 192,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GetRegValueSize(ushort const *,ushort const *)",
+    "ea": "0x180006a5c",
+    "function_file": "functions/180006a5c_GetRegValueSize_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "PendingFileRenameOperations"
+    ],
+    "name": "?GetRegValueSize@@YAKPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 663,
+    "size": 147,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VerifyBackupInfo(HKEY__ *,HKEY__ *)",
+    "ea": "0x18000f32c",
+    "function_file": "functions/18000f32c_VerifyBackupInfo_HKEY_HKEY.md",
+    "matched_imports": [
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "BackupRegistry"
+    ],
+    "name": "?VerifyBackupInfo@@YAHPEAUHKEY__@@0@Z",
+    "prototype": "__int64 __fastcall(HKEY hKey, HKEY)",
+    "rank_score": 657,
+    "size": 331,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "wil::details::ProcessHeapAlloc(ulong,unsigned __int64)",
+    "ea": "0x18001a760",
+    "function_file": "functions/18001a760_wil_details_ProcessHeapAlloc_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?ProcessHeapAlloc@details@wil@@YAPEAXK_K@Z",
+    "prototype": "LPVOID __fastcall(DWORD dwFlags, SIZE_T dwBytes)",
+    "rank_score": 657,
+    "size": 150,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 29,
+    "demangled": "PathCchCombineEx",
+    "ea": "0x18001b294",
+    "function_file": "functions/18001b294_PathCchCombineEx.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "msvcrt!iswalpha"
+    ],
+    "matched_strings": [],
+    "name": "PathCchCombineEx",
+    "prototype": "HRESULT __stdcall(PWSTR pszPathOut, size_t cchPathOut, PCWSTR pszPathIn, PCWSTR pszMore, ULONG dwFlags)",
+    "rank_score": 656,
+    "size": 650,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "MyFileQueueCallback2(void *,uint,unsigned __int64,unsigned __int64)",
+    "ea": "0x180001e40",
+    "function_file": "functions/180001e40_MyFileQueueCallback2_void_uint_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetDriveTypeW",
+      "SETUPAPI!SetupDefaultQueueCallbackW",
+      "SHLWAPI!PathFileExistsW"
+    ],
+    "matched_strings": [],
+    "name": "?MyFileQueueCallback2@@YAIPEAXI_K1@Z",
+    "prototype": "UINT __fastcall(PVOID Context, UINT Notification, UINT_PTR Param1, unsigned __int16 *Param2)",
+    "rank_score": 642,
+    "size": 400,
+    "tags": [
+      "reparse_path",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "PathCchCanonicalizeEx(ushort *,unsigned __int64,ushort const *,PATHCCH_OPTIONS)",
+    "ea": "0x180019fb8",
+    "function_file": "functions/180019fb8_PathCchCanonicalizeEx_ushort_unsigned_int64_ushort_const_PATHCCH_OPTIONS.md",
+    "matched_imports": [
+      "msvcrt!iswalpha",
+      "msvcrt!wcspbrk"
+    ],
+    "matched_strings": [],
+    "name": "?PathCchCanonicalizeEx@@YAJPEAG_KPEBGW4PATHCCH_OPTIONS@@@Z",
+    "prototype": "int __fastcall(STRSAFE_LPWSTR pszDest, unsigned __int64, unsigned __int16 *, enum PATHCCH_OPTIONS)",
+    "rank_score": 635,
+    "size": 1736,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ProcessOneRegSec(HWND__ *,ushort const *,ushort const *,ushort const *,HKEY__ *,HKEY__ *,ulong,int *)",
+    "ea": "0x18000da30",
+    "function_file": "functions/18000da30_ProcessOneRegSec_HWND_ushort_const_ushort_const_ushort_const_HKEY_HKEY_ulong_int.md",
+    "matched_imports": [
+      "KERNEL32!CompareStringW",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?ProcessOneRegSec@@YAJPEAUHWND__@@PEBG11PEAUHKEY__@@2KPEAH@Z",
+    "prototype": "__int64 __fastcall(HWND, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, HKEY, HKEY hkBckupKey, DWORD dwFlags, int *)",
+    "rank_score": 630,
+    "size": 437,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 5,
+    "demangled": "SetLDIDs(ushort const *,ushort const *,ulong,ushort const *)",
+    "ea": "0x18000a61c",
+    "function_file": "functions/18000a61c_SetLDIDs_ushort_const_ushort_const_ulong_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CompareStringW",
+      "SHLWAPI!StrChrW",
+      "USER32!CharNextW"
+    ],
+    "matched_strings": [],
+    "name": "?SetLDIDs@@YAJPEBG0K0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, unsigned int, const unsigned __int16 *)",
+    "rank_score": 630,
+    "size": 666,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 26,
+    "demangled": "ThunkToUnicode",
+    "ea": "0x1800173a0",
+    "function_file": "functions/1800173a0_ThunkToUnicode.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!MultiByteToWideChar"
+    ],
+    "matched_strings": [],
+    "name": "ThunkToUnicode",
+    "prototype": "__int64 __fastcall(LPCCH lpMultiByteStr, HLOCAL *)",
+    "rank_score": 627,
+    "size": 140,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::SemaphoreValue::TryGetValueInternal(ushort const *,bool,unsigned __int64 *,bool *)",
+    "ea": "0x18001ad74",
+    "function_file": "functions/18001ad74_wil_details_abi_SemaphoreValue_TryGetValueInternal_ushort_const_bool_unsigned_int64_bool.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!OpenSemaphoreW"
+    ],
+    "matched_strings": [],
+    "name": "?TryGetValueInternal@SemaphoreValue@details_abi@wil@@CAJPEBG_NPEA_KPEA_N@Z",
+    "prototype": "__int64 __fastcall(size_t *, __int64, unsigned __int64 *, bool *)",
+    "rank_score": 622,
+    "size": 418,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "BeginPrompt(ushort const *,ushort const *,ushort *,ulong)",
+    "ea": "0x1800040e0",
+    "function_file": "functions/1800040e0_BeginPrompt_ushort_const_ushort_const_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CompareStringW",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?BeginPrompt@@YAHPEBG0PEAGK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 618,
+    "size": 489,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 11,
+    "demangled": "GetStringField(ushort * *,ushort const *,ushort,int)",
+    "ea": "0x180006af8",
+    "function_file": "functions/180006af8_GetStringField_ushort_ushort_const_ushort_int.md",
+    "matched_imports": [
+      "USER32!CharNextW"
+    ],
+    "matched_strings": [],
+    "name": "?GetStringField@@YAPEAGPEAPEAGPEBGGH@Z",
+    "prototype": "unsigned __int16 *__fastcall(unsigned __int16 **, unsigned __int16 *, __int16, int)",
+    "rank_score": 618,
+    "size": 384,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "MySetupOpenInfFile(ushort const *)",
+    "ea": "0x1800021dc",
+    "function_file": "functions/1800021dc_MySetupOpenInfFile_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "SETUPAPI!SetupOpenAppendInfFileW",
+      "SETUPAPI!SetupOpenInfFileW"
+    ],
+    "matched_strings": [],
+    "name": "?MySetupOpenInfFile@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 617,
+    "size": 134,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PathCchSkipRoot",
+    "ea": "0x18001b634",
+    "function_file": "functions/18001b634_PathCchSkipRoot.md",
+    "matched_imports": [
+      "msvcrt!iswalpha",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "PathCchSkipRoot",
+    "prototype": "HRESULT __stdcall(PCWSTR pszPath, PCWSTR *ppszRootEnd)",
+    "rank_score": 617,
+    "size": 327,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SetPathForRegHiveUse(ushort const *,ulong *,int,int)",
+    "ea": "0x18000ec98",
+    "function_file": "functions/18000ec98_SetPathForRegHiveUse_ushort_const_ulong_int_int.md",
+    "matched_imports": [
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!SetFileAttributesW",
+      "SHLWAPI!PathRemoveFileSpecW"
+    ],
+    "matched_strings": [],
+    "name": "?SetPathForRegHiveUse@@YAXPEBGPEAKHH@Z",
+    "prototype": "void __fastcall(const unsigned __int16 *, unsigned int *, __int64, int)",
+    "rank_score": 616,
+    "size": 171,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SetValueData(HKEY__ *,ushort const *,uchar const *,ulong)",
+    "ea": "0x180013b88",
+    "function_file": "functions/180013b88_SetValueData_HKEY_ushort_const_uchar_const_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "?SetValueData@@YAHPEAUHKEY__@@PEBGPEBEK@Z",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName, BYTE *lpData, DWORD cbData)",
+    "rank_score": 616,
+    "size": 263,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "MyFileSize(ushort const *)",
+    "ea": "0x180008c88",
+    "function_file": "functions/180008c88_MyFileSize_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetFileSize"
+    ],
+    "matched_strings": [],
+    "name": "?MyFileSize@@YAKPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 615,
+    "size": 98,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WriteToLog(ushort const *,...)",
+    "ea": "0x180014148",
+    "function_file": "functions/180014148_WriteToLog_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!LocalFree",
+      "KERNEL32!WriteFile"
+    ],
+    "matched_strings": [],
+    "name": "?WriteToLog@@YAXPEBGZZ",
+    "prototype": "void(LPCVOID lpSource, ...)",
+    "rank_score": 615,
+    "size": 163,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalFailureInfo::Set(wil::FailureInfo const &,uint)",
+    "ea": "0x18001aa3c",
+    "function_file": "functions/18001aa3c_wil_details_abi_ThreadLocalFailureInfo_Set_wil_FailureInfo_const_uint.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?Set@ThreadLocalFailureInfo@details_abi@wil@@QEAAXAEBUFailureInfo@3@I@Z",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalFailureInfo *this, const struct wil::FailureInfo *, int)",
+    "rank_score": 609,
+    "size": 369,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "ThunkToAnsi",
+    "ea": "0x180017314",
+    "function_file": "functions/180017314_ThunkToAnsi.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "KERNEL32!WideCharToMultiByte"
+    ],
+    "matched_strings": [],
+    "name": "ThunkToAnsi",
+    "prototype": "__int64 __fastcall(LPCWCH lpWideCharStr, HLOCAL *)",
+    "rank_score": 606,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetSystemFont",
+    "ea": "0x180017ff0",
+    "function_file": "functions/180017ff0_GetSystemFont.md",
+    "matched_imports": [
+      "GDI32!CreateFontIndirectW",
+      "GDI32!GetStockObject",
+      "USER32!SystemParametersInfoW"
+    ],
+    "matched_strings": [],
+    "name": "GetSystemFont",
+    "prototype": "HFONT()",
+    "rank_score": 604,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UserDirPrompt(ushort const *,ushort const *,ushort *,ulong,ulong)",
+    "ea": "0x18000b0d0",
+    "function_file": "functions/18000b0d0_UserDirPrompt_ushort_const_ushort_const_ushort_ulong_ulong.md",
+    "matched_imports": [
+      "GDI32!DeleteObject",
+      "USER32!DialogBoxParamW",
+      "USER32!GetSystemMetrics"
+    ],
+    "matched_strings": [],
+    "name": "?UserDirPrompt@@YAHPEBG0PEAGKK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 *, __int64, unsigned int)",
+    "rank_score": 604,
+    "size": 143,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SelectSetupEngine(ushort const *,ushort const *,ulong)",
+    "ea": "0x18000a428",
+    "function_file": "functions/18000a428_SelectSetupEngine_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CompareStringW",
+      "KERNEL32!SearchPathW"
+    ],
+    "matched_strings": [
+      "SETUPAPI.DLL",
+      "SETUPAPI.DLL",
+      "UpdateINFEngine"
+    ],
+    "name": "?SelectSetupEngine@@YAHPEBG0K@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, __int16)",
+    "rank_score": 561,
+    "size": 493,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "RunSetupCommandW",
+    "ea": "0x18000bdb0",
+    "function_file": "functions/18000bdb0_RunSetupCommandW.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "USER32!IsWindow"
+    ],
+    "matched_strings": [
+      "RunSetupCommand:",
+      "RunSetupCommand: Cmd=%1 End hr=0x%2!x!\r\n"
+    ],
+    "name": "RunSetupCommandW",
+    "prototype": "HRESULT __stdcall(HWND hWnd, LPCWSTR szCmdName, LPCWSTR szInfSection, LPCWSTR szDir, LPCWSTR lpszTitle, HANDLE *phEXE, DWORD dwFlags, LPVOID pvReserved)",
+    "rank_score": 514,
+    "size": 447,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "RegInstallW",
+    "ea": "0x180003be0",
+    "function_file": "functions/180003be0_RegInstallW.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!WritePrivateProfileStringW"
+    ],
+    "matched_strings": [
+      "RegInstall: Section=%1\r\n",
+      "RegInstall: Section=%1 End hr=%2!x!\r\n"
+    ],
+    "name": "RegInstallW",
+    "prototype": "HRESULT __stdcall(HMODULE hmod, LPCWSTR pszSection, const STRTABLEW *pstTable)",
+    "rank_score": 509,
+    "size": 249,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AreOptionsValidAndOptInLongPathAwareProcess(PATHCCH_OPTIONS &)",
+    "ea": "0x180018bcc",
+    "function_file": "functions/180018bcc_AreOptionsValidAndOptInLongPathAwareProcess_PATHCCH_OPTIONS.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlAreLongPathsEnabled"
+    ],
+    "name": "?AreOptionsValidAndOptInLongPathAwareProcess@@YA_NAEAW4PATHCCH_OPTIONS@@@Z",
+    "prototype": "char __fastcall(enum PATHCCH_OPTIONS *)",
+    "rank_score": 504,
+    "size": 168,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "LoadSetupLib(ushort const *,ushort const *,int,ulong)",
+    "ea": "0x1800088c4",
+    "function_file": "functions/1800088c4_LoadSetupLib_ushort_const_ushort_const_int_ulong.md",
+    "matched_imports": [
+      "SHLWAPI!PathRemoveFileSpecW",
+      "USER32!PeekMessageW"
+    ],
+    "matched_strings": [
+      "UpdateINFEngine"
+    ],
+    "name": "?LoadSetupLib@@YAHPEBG0HK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, PCWSTR Section, int, unsigned int)",
+    "rank_score": 492,
+    "size": 360,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::MicrosoftInternalNotifyFailure(wil::FailureInfo *)",
+    "ea": "0x180019ea0",
+    "function_file": "functions/180019ea0_wil_details_MicrosoftInternalNotifyFailure_wil_FailureInfo.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?MicrosoftInternalNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct wil::FailureInfo *)",
+    "rank_score": 464,
+    "size": 272,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "FileSaveRestoreOnINFW",
+    "ea": "0x180010050",
+    "function_file": "functions/180010050_FileSaveRestoreOnINFW.md",
+    "matched_imports": [
+      "SHLWAPI!PathFileExistsW",
+      "SHLWAPI!PathRemoveFileSpecW"
+    ],
+    "matched_strings": [],
+    "name": "FileSaveRestoreOnINFW",
+    "prototype": "HRESULT __stdcall(HWND hWnd, LPCWSTR pszTitle, LPCWSTR pszINF, LPCWSTR pszSection, LPCWSTR pszBackupDir, LPCWSTR pszBaseBackupFile, DWORD dwFlags)",
+    "rank_score": 461,
+    "size": 748,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "CommonInstallCleanup(void)",
+    "ea": "0x180004700",
+    "function_file": "functions/180004700_CommonInstallCleanup_void.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "SETUPAPI!SetupCloseInfFile"
+    ],
+    "matched_strings": [],
+    "name": "?CommonInstallCleanup@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 430,
+    "size": 76,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "GetProgramFilesDir(ushort *,ulong)",
+    "ea": "0x180002c74",
+    "function_file": "functions/180002c74_GetProgramFilesDir_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetEnvironmentVariableW"
+    ],
+    "matched_strings": [],
+    "name": "?GetProgramFilesDir@@YAHPEAGK@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, DWORD)",
+    "rank_score": 429,
+    "size": 212,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MySetUninstallFileAttrib(ushort const *,ushort const *)",
+    "ea": "0x180016094",
+    "function_file": "functions/180016094_MySetUninstallFileAttrib_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!SetFileAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "?MySetUninstallFileAttrib@@YAXPEBG0@Z",
+    "prototype": "void __fastcall(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 425,
+    "size": 178,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "?create@?$semaphore_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@QEAAJJJPEBGKPEAU_SECURITY_ATTRIBUTES@@PEA_N@Z",
+    "ea": "0x18001b0d4",
+    "function_file": "functions/18001b0d4_create_semaphore_t_V_unique_storage_U_resource_policy_PEAXP6AXPEAX_E_1_CloseHandle_details_wil_YAX0_ZU_integra.md",
+    "matched_imports": [
+      "KERNEL32!CreateSemaphoreExW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?create@?$semaphore_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@QEAAJJJPEBGKPEAU_SECURITY_ATTRIBUTES@@PEA_N@Z",
+    "prototype": "__int64 __fastcall(__int64, LONG, LONG, const WCHAR *)",
+    "rank_score": 424,
+    "size": 82,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 6,
+    "demangled": "GetTranslatedInt(ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x180006d24",
+    "function_file": "functions/180006d24_GetTranslatedInt_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetPrivateProfileIntW",
+      "msvcrt!_wtol"
+    ],
+    "matched_strings": [],
+    "name": "?GetTranslatedInt@@YAKPEBG00K@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, PCWSTR Section, PCWSTR Key, unsigned int nDefault)",
+    "rank_score": 424,
+    "size": 297,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "PathCchIsRoot",
+    "ea": "0x18001b524",
+    "function_file": "functions/18001b524_PathCchIsRoot.md",
+    "matched_imports": [
+      "msvcrt!iswalpha"
+    ],
+    "matched_strings": [],
+    "name": "PathCchIsRoot",
+    "prototype": "BOOL __stdcall(PCWSTR pszPath)",
+    "rank_score": 419,
+    "size": 265,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "CopyRegValue(HKEY__ *,HKEY__ *,ushort const *,ushort const *)",
+    "ea": "0x18000c8c8",
+    "function_file": "functions/18000c8c8_CopyRegValue_HKEY_HKEY_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegQueryValueExW",
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [],
+    "name": "?CopyRegValue@@YAHPEAUHKEY__@@0PEBG1@Z",
+    "prototype": "__int64 __fastcall(HKEY, HKEY, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 416,
+    "size": 203,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "GetNextRunOnceExSubKey(HKEY__ *,ushort *,ulong,int *)",
+    "ea": "0x1800068ac",
+    "function_file": "functions/1800068ac_GetNextRunOnceExSubKey_HKEY_ushort_ulong_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?GetNextRunOnceExSubKey@@YAXPEAUHKEY__@@PEAGKPEAH@Z",
+    "prototype": "void __fastcall(HKEY hKey, unsigned __int16 *, unsigned int, int *)",
+    "rank_score": 414,
+    "size": 116,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "OpenINFEngineA",
+    "ea": "0x180010670",
+    "function_file": "functions/180010670_OpenINFEngineA.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "OpenINFEngineA",
+    "prototype": "HRESULT __stdcall(LPCSTR pszInfFilename, LPCSTR pszInstallSection, DWORD dwFlags, HINF *phInf, PVOID pvReserved)",
+    "rank_score": 414,
+    "size": 144,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "RebootCheckOnInstallA",
+    "ea": "0x180010810",
+    "function_file": "functions/180010810_RebootCheckOnInstallA.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "RebootCheckOnInstallA",
+    "prototype": "HRESULT __stdcall(HWND hwnd, LPCSTR pszINF, LPCSTR pszSec, DWORD dwReserved)",
+    "rank_score": 414,
+    "size": 137,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MyRemoveDirectory(ushort *)",
+    "ea": "0x180009110",
+    "function_file": "functions/180009110_MyRemoveDirectory_ushort.md",
+    "matched_imports": [
+      "KERNEL32!RemoveDirectoryW",
+      "SHLWAPI!PathRemoveFileSpecW"
+    ],
+    "matched_strings": [],
+    "name": "?MyRemoveDirectory@@YAXPEAG@Z",
+    "prototype": "void __fastcall(WCHAR *lpPathName)",
+    "rank_score": 413,
+    "size": 39,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "AddEnvInPath(ushort const *,ushort *,ulong)",
+    "ea": "0x18000279c",
+    "function_file": "functions/18000279c_AddEnvInPath_ushort_const_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetEnvironmentVariableW"
+    ],
+    "matched_strings": [],
+    "name": "?AddEnvInPath@@YAHPEBGPEAGK@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int16 *, unsigned int)",
+    "rank_score": 411,
+    "size": 388,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ReplaceSubString(ushort *,uint,ushort const *,ushort const *,ushort const *)",
+    "ea": "0x180003034",
+    "function_file": "functions/180003034_ReplaceSubString_ushort_uint_ushort_const_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "SHLWAPI!StrStrIW"
+    ],
+    "matched_strings": [],
+    "name": "?ReplaceSubString@@YAHPEAGIPEBG11@Z",
+    "prototype": "__int64 __fastcall(STRSAFE_LPWSTR pszDest, __int64, const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 406,
+    "size": 323,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>::~ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>(void)",
+    "ea": "0x180018878",
+    "function_file": "functions/180018878_wil_details_abi_ThreadLocalStorage_wil_details_ThreadFailureCallbackHolder_ThreadLocalStorage_wil_details_Thre.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ThreadLocalStorage@PEAVThreadFailureCallbackHolder@details@wil@@@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(_QWORD *)",
+    "rank_score": 402,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "FreeFileNode(sFNAME *)",
+    "ea": "0x180011c90",
+    "function_file": "functions/180011c90_FreeFileNode_sFNAME.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?FreeFileNode@@YAXPEAUsFNAME@@@Z",
+    "prototype": "void __fastcall(LPVOID *)",
+    "rank_score": 311,
+    "size": 33,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DoDllReg(HINSTANCE__ *,int)",
+    "ea": "0x180005d70",
+    "function_file": "functions/180005d70_DoDllReg_HINSTANCE_int.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "DllRegisterServer",
+      "DllUnregisterServer"
+    ],
+    "name": "?DoDllReg@@YAHPEAUHINSTANCE__@@H@Z",
+    "prototype": "__int64 __fastcall(HINSTANCE, int)",
+    "rank_score": 293,
+    "size": 62,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WritePredefinedStrings(ushort const *,HINSTANCE__ *,ulong)",
+    "ea": "0x180003a5c",
+    "function_file": "functions/180003a5c_WritePredefinedStrings_ushort_const_HINSTANCE_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleFileNameW"
+    ],
+    "matched_strings": [
+      "_MOD_PATH",
+      "_SYS_MOD_PATH"
+    ],
+    "name": "?WritePredefinedStrings@@YAJPEBGPEAUHINSTANCE__@@K@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, HINSTANCE hModule, unsigned int)",
+    "rank_score": 288,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "ExecuteInfSection(ushort const *,ushort const *)",
+    "ea": "0x180002ad4",
+    "function_file": "functions/180002ad4_ExecuteInfSection_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetTempPath2W"
+    ],
+    "matched_strings": [
+      "ComponentName"
+    ],
+    "name": "?ExecuteInfSection@@YAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, WCHAR *lpAppName)",
+    "rank_score": 275,
+    "size": 407,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ProcessPerUserSec(ushort const *,ushort const *)",
+    "ea": "0x18000dbec",
+    "function_file": "functions/18000dbec_ProcessPerUserSec_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "PerUserInstall",
+      "Inf=%1, InstallSec=%2, PerUserInstall=%3\r\n",
+      "IsInstalled",
+      "RollbackUninstall",
+      "StubPath",
+      "ComponentID"
+    ],
+    "name": "?ProcessPerUserSec@@YAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, LPCWSTR lpAppName)",
+    "rank_score": 272,
+    "size": 572,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DoDllInst(HINSTANCE__ *,int,ushort const *)",
+    "ea": "0x180005d10",
+    "function_file": "functions/180005d10_DoDllInst_HINSTANCE_int_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "DllInstall"
+    ],
+    "name": "?DoDllInst@@YAHPEAUHINSTANCE__@@HPEBG@Z",
+    "prototype": "__int64 __fastcall(HINSTANCE, unsigned int, const unsigned __int16 *)",
+    "rank_score": 263,
+    "size": 87,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wil::details::WilDynamicLoadRaiseFailFastException(_EXCEPTION_RECORD *,_CONTEXT *,ulong)",
+    "ea": "0x18001af20",
+    "function_file": "functions/18001af20_wil_details_WilDynamicLoadRaiseFailFastException_EXCEPTION_RECORD_CONTEXT_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?WilDynamicLoadRaiseFailFastException@details@wil@@YAXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@Z",
+    "prototype": "void __fastcall(wil::details *this, struct _EXCEPTION_RECORD *, struct _CONTEXT *)",
+    "rank_score": 263,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_GetNtDllModuleHandle(void)",
+    "ea": "0x18001b180",
+    "function_file": "functions/18001b180_wil_details_GetNtDllModuleHandle_void.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?wil_details_GetNtDllModuleHandle@@YAPEAUHINSTANCE__@@XZ",
+    "prototype": "HINSTANCE(void)",
+    "rank_score": 253,
+    "size": 41,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "ProcessAllFiles(HWND__ *,ushort const *,ushort const *,ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x18000d6cc",
+    "function_file": "functions/18000d6cc_ProcessAllFiles_HWND_ushort_const_ushort_const_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc"
+    ],
+    "matched_strings": [
+      "ProcessAllFiles: Sec=%1, SrcDir=%2, BackupPath=%3\r\n"
+    ],
+    "name": "?ProcessAllFiles@@YAJPEAUHWND__@@PEBG1111K@Z",
+    "prototype": "__int64 __fastcall(HWND hWnd, PCWSTR SectionName, PCWSTR SourceRootPath, LPCWSTR lpDir, LPCWSTR lpBaseName, const unsigned __int16 *, DWORD)",
+    "rank_score": 248,
+    "size": 216,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "RebootCheckOnInstallW",
+    "ea": "0x1800108a0",
+    "function_file": "functions/1800108a0_RebootCheckOnInstallW.md",
+    "matched_imports": [
+      "SHLWAPI!PathRemoveFileSpecW"
+    ],
+    "matched_strings": [],
+    "name": "RebootCheckOnInstallW",
+    "prototype": "HRESULT __stdcall(HWND hwnd, LPCWSTR pszINF, LPCWSTR pszSec, DWORD dwReserved)",
+    "rank_score": 241,
+    "size": 301,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 6,
+    "demangled": "CommonInstallInit(ushort const *,ushort const *,ushort *,ulong,ushort const *,int,ulong)",
+    "ea": "0x180004754",
+    "function_file": "functions/180004754_CommonInstallInit_ushort_const_ushort_const_ushort_ulong_ushort_const_int_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CommonInstallInit@@YAJPEBG0PEAGK0HK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 *, unsigned int, unsigned __int16 *, int, unsigned int)",
+    "rank_score": 237,
+    "size": 292,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData> * *)",
+    "ea": "0x180018a30",
+    "function_file": "functions/180018a30_wil_details_abi_ProcessLocalStorageData_wil_details_abi_ProcessLocalData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "KERNEL32!CreateMutexExW"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 236,
+    "size": 404,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetWininitSize(void)",
+    "ea": "0x1800078d8",
+    "function_file": "functions/1800078d8_GetWininitSize_void.md",
+    "matched_imports": [
+      "KERNEL32!GetWindowsDirectoryW"
+    ],
+    "matched_strings": [],
+    "name": "?GetWininitSize@@YAKXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 227,
+    "size": 136,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 18,
+    "demangled": "StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)",
+    "ea": "0x1800035c8",
+    "function_file": "functions/1800035c8_StringCchPrintfW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+    "prototype": "__int64(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, ...)",
+    "rank_score": 220,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 12,
+    "demangled": "CheckOSVersion(void)",
+    "ea": "0x1800045e8",
+    "function_file": "functions/1800045e8_CheckOSVersion_void.md",
+    "matched_imports": [
+      "KERNEL32!GetVersionExW"
+    ],
+    "matched_strings": [],
+    "name": "?CheckOSVersion@@YAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 218,
+    "size": 273,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "RegInstallA",
+    "ea": "0x180003b50",
+    "function_file": "functions/180003b50_RegInstallA.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "RegInstallA",
+    "prototype": "HRESULT __stdcall(HMODULE hmod, LPCSTR pszSection, const STRTABLEA *pstTable)",
+    "rank_score": 215,
+    "size": 126,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DelNodeRunDLL32W",
+    "ea": "0x18000b1d0",
+    "function_file": "functions/18000b1d0_DelNodeRunDLL32W.md",
+    "matched_imports": [
+      "msvcrt!_wtol"
+    ],
+    "matched_strings": [],
+    "name": "DelNodeRunDLL32W",
+    "prototype": "HRESULT __stdcall(HWND hwnd, HINSTANCE hInstance, LPWSTR pszParms, INT nShow)",
+    "rank_score": 214,
+    "size": 96,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DelNodeRunDLL32A(HWND__ *,HINSTANCE__ *,char const *,int)",
+    "ea": "0x180005660",
+    "function_file": "functions/180005660_DelNodeRunDLL32A_HWND_HINSTANCE_char_const_int.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?DelNodeRunDLL32A@@YAJPEAUHWND__@@PEAUHINSTANCE__@@PEBDH@Z",
+    "prototype": "HRESULT __stdcall(HWND hwnd, HINSTANCE hInstance, LPSTR pszParms, INT nShow)",
+    "rank_score": 213,
+    "size": 92,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WriteCallerStrings(ushort const *,HINSTANCE__ *,_StrTableW const *,ulong)",
+    "ea": "0x180003978",
+    "function_file": "functions/180003978_WriteCallerStrings_ushort_const_HINSTANCE_StrTableW_const_ulong.md",
+    "matched_imports": [
+      "USER32!LoadStringW"
+    ],
+    "matched_strings": [],
+    "name": "?WriteCallerStrings@@YAJPEBGPEAUHINSTANCE__@@PEBU_StrTableW@@K@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, HINSTANCE hInstance, const struct _StrTableW *, unsigned int)",
+    "rank_score": 206,
+    "size": 222,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DosPrintf(_BAKDATA *,_FILELIST *,ulong,_FILETIME,ulong,ulong)",
+    "ea": "0x180015924",
+    "function_file": "functions/180015924_DosPrintf_BAKDATA_FILELIST_ulong_FILETIME_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!WritePrivateProfileStringW"
+    ],
+    "matched_strings": [],
+    "name": "?DosPrintf@@YAHPEAU_BAKDATA@@PEAU_FILELIST@@KU_FILETIME@@KK@Z",
+    "prototype": "__int64 __fastcall(const WCHAR *, LPCWSTR *, int, struct _FILETIME, unsigned int, unsigned int)",
+    "rank_score": 205,
+    "size": 181,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::GetThreadContext(wil::FailureInfo *,wil::details::ThreadFailureCallbackHolder *,char *,unsigned __int64)",
+    "ea": "0x1800193e8",
+    "function_file": "functions/1800193e8_wil_details_ThreadFailureCallbackHolder_GetThreadContext_wil_FailureInfo_wil_details_ThreadFailureCallbackHold.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadContext@ThreadFailureCallbackHolder@details@wil@@SA_NPEAUFailureInfo@3@PEAV123@PEAD_K@Z",
+    "prototype": "bool __fastcall(struct wil::FailureInfo *, struct wil::details::ThreadFailureCallbackHolder **, char *, unsigned __int64)",
+    "rank_score": 204,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetNextToken",
+    "ea": "0x1800141f4",
+    "function_file": "functions/1800141f4_GetNextToken.md",
+    "matched_imports": [
+      "SHLWAPI!StrChrW"
+    ],
+    "matched_strings": [],
+    "name": "GetNextToken",
+    "prototype": "const WCHAR *__fastcall(const WCHAR **, WCHAR)",
+    "rank_score": 203,
+    "size": 94,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::WriteResultString<char const *>(uchar *,uchar *,char const *,char const * *)",
+    "ea": "0x18001878c",
+    "function_file": "functions/18001878c_wil_details_WriteResultString_char_const_uchar_uchar_char_const_char_const.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "??$WriteResultString@PEBD@details@wil@@YAPEAEPEAE0PEBDPEAPEBD@Z",
+    "prototype": "char *__fastcall(char *Destination, const char *, wil::details *, char **)",
+    "rank_score": 203,
+    "size": 113,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "BuildPath",
+    "ea": "0x180017fdc",
+    "function_file": "functions/180017fdc_BuildPath.md",
+    "matched_imports": [
+      "SHLWAPI!PathCombineW"
+    ],
+    "matched_strings": [],
+    "name": "BuildPath",
+    "prototype": "LPWSTR __fastcall(WCHAR *, __int64, const WCHAR *, const WCHAR *)",
+    "rank_score": 125,
+    "size": 13,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 35,
+    "demangled": "memset_0",
+    "ea": "0x18001b94e",
+    "function_file": "functions/18001b94e_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_GetNtDllProcedureAddress(char const *)",
+    "ea": "0x18001b1b0",
+    "function_file": "functions/18001b1b0_wil_details_GetNtDllProcedureAddress_char_const.md",
+    "matched_imports": [
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [],
+    "name": "?wil_details_GetNtDllProcedureAddress@@YAP6A_JXZPEBD@Z",
+    "prototype": "FARPROC __fastcall(const char *)",
+    "rank_score": 112,
+    "size": 32,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "GetCurrentProcessId_0",
+    "ea": "0x180001bd6",
+    "function_file": "functions/180001bd6_GetCurrentProcessId_0.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "GetCurrentProcessId_0",
+    "prototype": "DWORD __stdcall()",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180001ba1",
+    "function_file": "functions/180001ba1_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "GetCurrentThreadId_0",
+    "ea": "0x180001be2",
+    "function_file": "functions/180001be2_GetCurrentThreadId_0.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "GetCurrentThreadId_0",
+    "prototype": "DWORD __stdcall()",
+    "rank_score": 106,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "memmove_0",
+    "ea": "0x18001b942",
+    "function_file": "functions/18001b942_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DoInfInstallW(_ADVPACKARGSW *)",
+    "ea": "0x180005ea0",
+    "function_file": "functions/180005ea0_DoInfInstallW_ADVPACKARGSW.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DoInfInstall: InfFile=%1\r\n",
+      "DoInfInstall: %1 End hr=0x%2!x!\r\n"
+    ],
+    "name": "?DoInfInstallW@@YAJPEAU_ADVPACKARGSW@@@Z",
+    "prototype": "__int64 __fastcall(struct _ADVPACKARGSW *)",
+    "rank_score": 97,
+    "size": 217,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "InitializeSetupAPI(void)",
+    "ea": "0x180007968",
+    "function_file": "functions/180007968_InitializeSetupAPI_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SETUPAPI.DLL"
+    ],
+    "name": "?InitializeSetupAPI@@YAHXZ",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 68,
+    "size": 79,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "GetInfInstallSectionName(ushort const *,ushort *,ulong)",
+    "ea": "0x1800067dc",
+    "function_file": "functions/1800067dc_GetInfInstallSectionName_ushort_const_ushort_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DefaultInstall"
+    ],
+    "name": "?GetInfInstallSectionName@@YAKPEBGPEAGK@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, unsigned __int16 *, unsigned int)",
+    "rank_score": 58,
+    "size": 201,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlDllShutdownInProgress(void)",
+    "ea": "0x18001aa00",
+    "function_file": "functions/18001aa00_wil_details_RtlDllShutdownInProgress_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "RtlDllShutdownInProgress"
+    ],
+    "name": "?RtlDllShutdownInProgress@details@wil@@YAEXZ",
+    "prototype": "__int64 (*__fastcall(wil::details *this))(void)",
+    "rank_score": 53,
+    "size": 54,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_NoReturn<3>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions)",
+    "ea": "0x180018314",
+    "function_file": "functions/180018314_wil_details_ReportFailure_NoReturn_3_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_NoReturn@$02@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@@Z",
+    "prototype": "void __fastcall __noreturn(__int64, unsigned int, __int64, __int64, int, __int64, __int64)",
+    "rank_score": 46,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_GetLastError<3>(void *,uint,char const *,char const *,char const *,void *)",
+    "ea": "0x180018124",
+    "function_file": "functions/180018124_wil_details_ReportFailure_GetLastError_3_void_uint_char_const_char_const_char_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_GetLastError@$02@details@wil@@YAKPEAXIPEBD110@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *, void *, __int64, const char *, int, char *)",
+    "rank_score": 45,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 119,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18001b980",
+    "function_file": "functions/18001b980_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "TranslateInfStringW",
+    "ea": "0x18000c0c0",
+    "function_file": "functions/18000c0c0_TranslateInfStringW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TranslateInfStringW",
+    "prototype": "HRESULT __stdcall(LPCWSTR pszInfFilename, LPCWSTR pszInstallSection, LPCWSTR pszTranslateSection, LPCWSTR pszTranslateKey, LPWSTR pszBuffer, DWORD cchBuffer, PDWORD pdwRequiredSize, PVOID pvReserved)",
+    "rank_score": 32,
+    "size": 356,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 20,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18001c010",
+    "function_file": "functions/18001c010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 32,
+    "demangled": "PathIsUnc2",
+    "ea": "0x18001a688",
+    "function_file": "functions/18001a688_PathIsUnc2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PathIsUnc2",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, _QWORD *, unsigned __int8 (__fastcall *)(_QWORD))",
+    "rank_score": 30,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::SemaphoreValue::CreateFromValueInternal(ushort const *,bool,unsigned __int64)",
+    "ea": "0x180018ca8",
+    "function_file": "functions/180018ca8_wil_details_abi_SemaphoreValue_CreateFromValueInternal_ushort_const_bool_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateFromValueInternal@SemaphoreValue@details_abi@wil@@AEAAJPEBG_N_K@Z",
+    "prototype": "__int64 __fastcall(wil::details_abi::SemaphoreValue *this, const unsigned __int16 *, __int64, unsigned __int64)",
+    "rank_score": 30,
+    "size": 275,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "OpenINFEngineW",
+    "ea": "0x180010710",
+    "function_file": "functions/180010710_OpenINFEngineW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OpenINFEngineW",
+    "prototype": "HRESULT __stdcall(LPCWSTR pszInfFilename, LPCWSTR pszInstallSection, DWORD dwFlags, HINF *phInf, PVOID pvReserved)",
+    "rank_score": 29,
+    "size": 249,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 62,
+    "demangled": "StringCchCopyW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x1800022bc",
+    "function_file": "functions/1800022bc_StringCchCopyW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyW@@YAJPEAG_KPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, size_t, size_t *)",
+    "rank_score": 27,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 24,
+    "demangled": "IsExtendedLengthDosDevicePath(ushort const *)",
+    "ea": "0x1800198d0",
+    "function_file": "functions/1800198d0_IsExtendedLengthDosDevicePath_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsExtendedLengthDosDevicePath@@YA_NPEBG@Z",
+    "prototype": "bool __fastcall(const unsigned __int16 *)",
+    "rank_score": 25,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 22,
+    "demangled": "StringCchCatW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x180003180",
+    "function_file": "functions/180003180_StringCchCatW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCatW@@YAJPEAG_KPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, __int64, const unsigned __int16 *)",
+    "rank_score": 25,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Mrci1MaxCompress",
+    "ea": "0x180014e30",
+    "function_file": "functions/180014e30_Mrci1MaxCompress.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Mrci1MaxCompress",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, _DWORD *)",
+    "rank_score": 23,
+    "size": 930,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001360",
+    "function_file": "functions/180001360_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18001b8c4",
+    "function_file": "functions/18001b8c4_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "Convert2CRC(ushort const *,ushort const *,ushort const *,ushort *,ulong)",
+    "ea": "0x1800126c0",
+    "function_file": "functions/1800126c0_Convert2CRC_ushort_const_ushort_const_ushort_const_ushort_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Convert2CRC@@YAXPEBG00PEAGK@Z",
+    "prototype": "void __fastcall(const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 *, unsigned int)",
+    "rank_score": 21,
+    "size": 243,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x1800013a4",
+    "function_file": "functions/1800013a4_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, __int64 fdwReason, void *)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Mrci1Decompress",
+    "ea": "0x180014cb8",
+    "function_file": "functions/180014cb8_Mrci1Decompress.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Mrci1Decompress",
+    "prototype": "__int64 __fastcall(_BYTE *, unsigned int, _BYTE *, unsigned int)",
+    "rank_score": 18,
+    "size": 368,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PathCchStripToRoot",
+    "ea": "0x18001b784",
+    "function_file": "functions/18001b784_PathCchStripToRoot.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PathCchStripToRoot",
+    "prototype": "HRESULT __stdcall(PWSTR pszPath, size_t cchPath)",
+    "rank_score": 17,
+    "size": 275,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "ea": "0x1800189b0",
+    "function_file": "functions/1800189b0_1_unique_storage_U_resource_policy_PEAXP6AXPEAX_E_1_CloseHandle_details_wil_YAX0_ZU_integral_constant_K_0A_wis.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details **, void *)",
+    "rank_score": 16,
+    "size": 22,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18001b9c0",
+    "function_file": "functions/18001b9c0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CRC32Compute(uchar *,uint,ulong)",
+    "ea": "0x1800172dc",
+    "function_file": "functions/1800172dc_CRC32Compute_uchar_uint_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CRC32Compute@@YAKPEAEIK@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, int, int)",
+    "rank_score": 14,
+    "size": 47,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PathCchAddBackslashEx",
+    "ea": "0x18001b1d8",
+    "function_file": "functions/18001b1d8_PathCchAddBackslashEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PathCchAddBackslashEx",
+    "prototype": "HRESULT __stdcall(PWSTR pszPath, size_t cchPath, PWSTR *ppszEnd, size_t *pcchRemaining)",
+    "rank_score": 14,
+    "size": 181,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "IsFullPath(ushort const *)",
+    "ea": "0x1800082f0",
+    "function_file": "functions/1800082f0_IsFullPath_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsFullPath@@YAHPEBG@Z",
+    "prototype": "_BOOL8 __fastcall(const unsigned __int16 *)",
+    "rank_score": 13,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "StringCchCopyExW(ushort *,unsigned __int64,ushort const *,ushort * *,unsigned __int64 *,ulong)",
+    "ea": "0x180003218",
+    "function_file": "functions/180003218_StringCchCopyExW_ushort_unsigned_int64_ushort_const_ushort_unsigned_int64_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyExW@@YAJPEAG_KPEBGPEAPEAGPEA_KK@Z",
+    "prototype": "__int64 __fastcall(STRSAFE_LPWSTR pszDest, size_t, const unsigned __int16 *, unsigned __int16 **, unsigned __int64 *, DWORD dwFlags)",
+    "rank_score": 13,
+    "size": 391,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MayNeedExtendedLengthPrefix(PATHCCH_OPTIONS)",
+    "ea": "0x180019e84",
+    "function_file": "functions/180019e84_MayNeedExtendedLengthPrefix_PATHCCH_OPTIONS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?MayNeedExtendedLengthPrefix@@YA_NW4PATHCCH_OPTIONS@@@Z",
+    "prototype": "bool __fastcall(enum PATHCCH_OPTIONS)",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "StringCchCopyNExW(ushort *,unsigned __int64,ushort const *,unsigned __int64,ushort * *,unsigned __int64 *,ulong)",
+    "ea": "0x1800033a8",
+    "function_file": "functions/1800033a8_StringCchCopyNExW_ushort_unsigned_int64_ushort_const_unsigned_int64_ushort_unsigned_int64_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyNExW@@YAJPEAG_KPEBG1PEAPEAGPEA_KK@Z",
+    "prototype": "__int64 __fastcall(STRSAFE_LPWSTR pszDest, size_t cchDest, const unsigned __int16 *, size_t, unsigned __int16 **, unsigned __int64 *, DWORD dwFlags)",
+    "rank_score": 11,
+    "size": 409,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "ea": "0x18001bd90",
+    "function_file": "functions/18001bd90_wil_details_dynamic_atexit_destructor_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "prototype": "void()",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "ea": "0x1800010d0",
+    "function_file": "functions/1800010d0_wil_details_dynamic_initializer_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "prototype": "int()",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil::details::HrToNtStatus(long)",
+    "ea": "0x1800196dc",
+    "function_file": "functions/1800196dc_wil_details_HrToNtStatus_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HrToNtStatus@details@wil@@YAJJ@Z",
+    "prototype": "__int64 __fastcall(wil::details *this)",
+    "rank_score": 10,
+    "size": 444,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "InternalNeedRebootInit(ushort)",
+    "ea": "0x1800080f0",
+    "function_file": "functions/1800080f0_InternalNeedRebootInit_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalNeedRebootInit@@YAKG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 9,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "GetFieldString(ushort const *,int,ushort *,int)",
+    "ea": "0x180015c74",
+    "function_file": "functions/180015c74_GetFieldString_ushort_const_int_ushort_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFieldString@@YAHPEBGHPEAGH@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, int, unsigned __int16 *, int)",
+    "rank_score": 8,
+    "size": 183,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "InternalNeedReboot(ulong,ushort)",
+    "ea": "0x1800080c8",
+    "function_file": "functions/1800080c8_InternalNeedReboot_ulong_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalNeedReboot@@YAHKG@Z",
+    "prototype": "_BOOL8 __fastcall(int, unsigned __int16)",
+    "rank_score": 6,
+    "size": 31,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "PathIsVolumeGUIDWorker(ushort const *)",
+    "ea": "0x18001a720",
+    "function_file": "functions/18001a720_PathIsVolumeGUIDWorker_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PathIsVolumeGUIDWorker@@YA_NPEBG@Z",
+    "prototype": "bool __fastcall(const unsigned __int16 *)",
+    "rank_score": 6,
+    "size": 56,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::GetContextAndNotifyFailure(wil::FailureInfo *,char *,unsigned __int64)",
+    "ea": "0x180018eb4",
+    "function_file": "functions/180018eb4_wil_details_ThreadFailureCallbackHolder_GetContextAndNotifyFailure_wil_FailureInfo_char_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetContextAndNotifyFailure@ThreadFailureCallbackHolder@details@wil@@SAXPEAUFailureInfo@3@PEAD_K@Z",
+    "prototype": "void __fastcall(struct wil::FailureInfo *, char *, unsigned __int64)",
+    "rank_score": 6,
+    "size": 185,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)",
+    "ea": "0x18001a9d4",
+    "function_file": "functions/18001a9d4_wil_details_in1diag3_Return_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void __fastcall(wil::details::in1diag3 *this, void *, int, const char *)",
+    "rank_score": 6,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "StrIsEqualCaseInsensitive(ushort const *,ushort const *,int)",
+    "ea": "0x18001ac8c",
+    "function_file": "functions/18001ac8c_StrIsEqualCaseInsensitive_ushort_const_ushort_const_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StrIsEqualCaseInsensitive@@YA_NPEBG0H@Z",
+    "prototype": "bool __fastcall(const unsigned __int16 *, const unsigned __int16 *, int)",
+    "rank_score": 5,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "StringCopyWorkerW",
+    "ea": "0x180002308",
+    "function_file": "functions/180002308_StringCopyWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 5,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "_alloca_probe",
+    "ea": "0x18001ba10",
+    "function_file": "functions/18001ba10_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "unsigned __int64 __fastcall()",
+    "rank_score": 5,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::GetThreadLocalDataCache(bool)",
+    "ea": "0x1800194cc",
+    "function_file": "functions/1800194cc_wil_details_abi_GetThreadLocalDataCache_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetThreadLocalDataCache@details_abi@wil@@YAPEAUThreadLocalData@12@_N@Z",
+    "prototype": "struct wil::details_abi::ThreadLocalData *__fastcall(wil::details_abi *this)",
+    "rank_score": 5,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalData::SetLastError(wil::FailureInfo const &)",
+    "ea": "0x18001abb4",
+    "function_file": "functions/18001abb4_wil_details_abi_ThreadLocalData_SetLastError_wil_FailureInfo_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetLastError@ThreadLocalData@details_abi@wil@@QEAAXAEBUFailureInfo@3@@Z",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalData *this, const struct wil::FailureInfo *)",
+    "rank_score": 5,
+    "size": 207,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCchCopyA(char *,unsigned __int64,char const *)",
+    "ea": "0x180011d50",
+    "function_file": "functions/180011d50_StringCchCopyA_char_unsigned_int64_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyA@@YAJPEAD_KPEBD@Z",
+    "prototype": "__int64 __fastcall(char *, unsigned __int64, char *)",
+    "rank_score": 4,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "StringCchCopyNW(ushort *,unsigned __int64,ushort const *,unsigned __int64)",
+    "ea": "0x180002268",
+    "function_file": "functions/180002268_StringCchCopyNW_ushort_unsigned_int64_ushort_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyNW@@YAJPEAG_KPEBG1@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, size_t, size_t *, size_t cchToCopy)",
+    "rank_score": 4,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCchCopyW",
+    "ea": "0x180017840",
+    "function_file": "functions/180017840_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 4,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCopyWorkerW_0",
+    "ea": "0x180003654",
+    "function_file": "functions/180003654_StringCopyWorkerW_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCopyWorkerW_0",
+    "prototype": "static HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, size_t *pcchNewDestLength, STRSAFE_PCNZWCH pszSrc, size_t cchToCopy)",
+    "rank_score": 4,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "wil::details::in1diag3::_FailFastImmediate_Unexpected(void)",
+    "ea": "0x18001b054",
+    "function_file": "functions/18001b054_wil_details_in1diag3_FailFastImmediate_Unexpected_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFastImmediate_Unexpected@in1diag3@details@wil@@YAXXZ",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this)",
+    "rank_score": 4,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>::GetLocal(bool)",
+    "ea": "0x18001938c",
+    "function_file": "functions/18001938c_wil_details_abi_ThreadLocalStorage_wil_details_ThreadFailureCallbackHolder_GetLocal_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetLocal@?$ThreadLocalStorage@PEAVThreadFailureCallbackHolder@details@wil@@@details_abi@wil@@QEAAPEAPEAVThreadFailureCallbackHolder@details@3@_N@Z",
+    "prototype": "__int64()",
+    "rank_score": 3,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "StringExValidateSrcW",
+    "ea": "0x1800037d0",
+    "function_file": "functions/1800037d0_StringExValidateSrcW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringExValidateSrcW",
+    "prototype": "static HRESULT __stdcall(STRSAFE_PCNZWCH *ppszSrc, size_t *pcchToRead, const size_t cchMax, DWORD dwFlags)",
+    "rank_score": 2,
+    "size": 53,
+    "tags": []
+  }
+]

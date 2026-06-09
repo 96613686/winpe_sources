@@ -1,0 +1,128 @@
+[
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001d1b3",
+        "from_func": "0x18001d16c",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18001d1b3",
+        "from_func": "0x18001d16c",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18001d056",
+        "from_func": "0x18001d056",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001d2e0",
+        "from_func": "0x18001d2a0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x18001d2e0",
+        "from_func": "0x18001d2a0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLogUnexpectedCodepath",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001edc0",
+        "from_func": "0x18001e97c",
+        "from_func_name": "MyAdd_NL_SequenceDescTag",
+        "import": "ntdll!RtlLogUnexpectedCodepath"
+      },
+      {
+        "from_ea": "0x18001edc0",
+        "from_func": "0x18001e97c",
+        "from_func_name": "MyAdd_NL_SequenceDescTag",
+        "import": "ntdll!RtlLogUnexpectedCodepath"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18001d2ff",
+        "from_func": "0x18001d2a0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x18001d2ff",
+        "from_func": "0x18001d2a0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x180041df0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18001d34c",
+        "from_func": "0x18001d2a0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x18001d34c",
+        "from_func": "0x18001d2a0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+# _initterm_0
+
+- ea: `0x1800016cf`
+- end: `0x1800016d5`
+- name: `_initterm_0`
+- size: `6`
+- prototype: `void __cdecl(_PVFV *First, _PVFV *Last)`
+- caller_count: `1`
+- callee_count: `0`
+- tags: ``
+
+## callers
+
+- `0x180001050`
+
+## import_xrefs
+
+- `msvcrt!_initterm` at `0x1800016cf`
+
+## pseudocode
+
+```c
+// attributes: thunk
+void __cdecl initterm_0(_PVFV *First, _PVFV *Last)
+{
+  _initterm(First, Last);
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800016cf  jmp     cs:__imp__initterm
+```
